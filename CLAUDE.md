@@ -13,6 +13,18 @@ September 21, 2026. Navneet owns delivery end to end. Project completes
 Read the full plan before doing any work on this site. The summary below is a
 quick reference, not a replacement — Appendix A holds every one of the 968 URLs.
 
+**The plan document is kept verbatim as the signed-off record and is never edited.**
+Deviations from it are logged in [`docs/decisions.md`](docs/decisions.md) — read that
+too, since it overrides the plan where the two disagree.
+
+### Live decisions in force
+
+- **No staging.** `staging.corpnilfilingfor300.ca` is not built (decided 2026-09-21).
+  Everything is built on the live domain, so Rule 10's site-wide noindex is the only
+  thing keeping a half-built site out of the index. Set it in Rank Math, not just
+  WordPress Settings → Reading, and never guard it with `Disallow: /` in robots.txt.
+  Delete every test item from live once its done-when test passes.
+
 ## Targets
 
 | Thing | Target |
@@ -41,8 +53,8 @@ quick reference, not a replacement — Appendix A holds every one of the 968 URL
 8. Holding, rental and investment pages always state such a corporation is **not** nil.
    Quebec pages state CO-17 is a separate return; Alberta pages say the same for AT1.
 9. Every price reads **$300 including HST per tax year**.
-10. Staging stays noindexed. Live stays noindexed until Sharad Gondaliya confirms launch.
-    Build to the dates regardless.
+10. Live stays noindexed until Sharad Gondaliya confirms launch. Build to the dates
+    regardless. (There is no staging site — see the decision above.)
 
 The complete banned-phrases table with approved replacements is Section 7.4 of the plan.
 No emoji anywhere, including titles, meta descriptions and social copy.
