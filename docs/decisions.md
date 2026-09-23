@@ -144,3 +144,40 @@ All need Sharad Gondaliya's sign-off under the approval rules.
 Rank Math SEO PRO is now active, and Rank Math overrides the core "Discourage
 search engines" setting. The site-wide noindex must be set in **Rank Math →
 Titles & Meta → Global Meta**, not only Settings → Reading.
+
+---
+
+## 2026-09-23 — Friday 25 September acceptance test passed, two days early
+
+Build sheet step 6, run on live (no staging).
+
+| Line | Result |
+|---|---|
+| A test item in each of the 13 types returns 200 at its rewrite slug | Pass. 13 items published, all 13 URLs confirmed by Navneet in a browser. |
+| Each test item's `cnf_` meta is visible in the REST response | Pass. `nil_vertical` returned all 10 keys, `nil_guide` all 7, no bleed between types. |
+| All 28 `cnf_place` and 12 `cnf_service` terms present | Pass. 64 terms total across the four populated taxonomies. |
+| A page created with an F1, F3 or F4 slug is refused | Pass. `nil-t2-filing-toronto` refused with HTTP 409. |
+| `/pricing/`, `/tools/`, `/guides/`, `/blog/` still resolve as pages | Pass. A page took the slug `pricing` without being blocked, and `/` and `/blog/` both load. |
+| Site is still noindex | Set in Settings → Reading. **Rank Math global noindex still to be confirmed.** |
+
+Root routing verified: the three root types generate prefix-free permalinks
+(`/cnf-test-vertical/`), the ten folder types carry theirs (`/tools/…`,
+`/answers/…`). Boolean meta round-trips as a real boolean. The JSON sanitizer
+rejected a deliberately malformed `cnf_toc_json` value and stored an empty
+string rather than corrupt text, while a valid value in the same request was
+kept.
+
+All 13 test items permanently deleted after the test, along with two probe
+pages created while diagnosing the router. No test artifact remains, and no
+reserved slug is occupied.
+
+### Snags hit on the way
+
+- The router snippet silently did nothing at first. WPCode PHP snippets need
+  Insert Method = Auto Insert and Location = Run Everywhere; without a
+  location set they never execute and give no error. Both snippets now carry
+  those settings.
+- The router was briefly pasted into opencorporationfor35.ca by mistake. Its
+  catch-all rule captures every single-segment URL, so that site's posts
+  404ed. Fix is deactivate, then Settings → Permalinks → Save to regenerate
+  the cached rules. It leaves one inert option row, `cnf_router_version`.
