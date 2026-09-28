@@ -181,3 +181,50 @@ reserved slug is occupied.
   catch-all rule captures every single-segment URL, so that site's posts
   404ed. Fix is deactivate, then Settings → Permalinks → Save to regenerate
   the cached rules. It leaves one inert option row, `cnf_router_version`.
+
+---
+
+## 2026-09-28 — BLOCKER: the plan specifies two different Family 15 URL sets
+
+Section 6(a) and Appendix A each list 24 Family 15 URLs. Only **three** appear in
+both: `/privacy-policy/`, `/engagement-terms/`, `/refund-policy/`. The other 21 in
+each list are disjoint.
+
+Section 6(a) is transactional — `/contact/`, `/about/`, `/security/`,
+`/fee-schedule/`, `/identity-verification/`, `/not-a-nil-return/`, `/thank-you/`,
+`/payment-failed/`, `/signing-link-expired/`.
+
+Appendix A is editorial — `/contact-us/`, `/about-us/`, `/faq/`, `/cpa-faqs/`,
+`/glossary/`, `/resources/`, `/disclaimer/`, `/consultation/`, `/efile-status/`,
+and five `/team/` pages.
+
+### Why it blocks Friday 9 October
+
+That batch publishes 24 Family 15 URLs and the set is undetermined. Knock-ons:
+
+- **Schema.** Section 5.2 Block 2 emits `AccountingService` on `/`, `/contact/`,
+  `/about/` and `/nil-t2-filing-toronto/`. Two of those four do not exist in
+  Appendix A. The 18 November test requires `AccountingService` on exactly 4 URLs.
+- **Footer.** The legal links built on 2026-09-25 use Appendix A spellings
+  (`/terms-and-conditions/`, `/accessibility-statement/`, `/html-sitemap/`).
+  Under 6(a) they are `/terms-of-service/`, `/accessibility/`, `/sitemap/`.
+- **Sitemap.** `page-sitemap.xml` is specified as F8 15 + F15 24 + F16 5 + home 1.
+
+Sharad Gondaliya picks the set. Section 6(c) already assigns him all 24
+("Sharad Gondaliya reviews all 24, Navneet publishes"), so the page text was
+always his to supply.
+
+### Related smaller inconsistencies found the same day
+
+- Section 6(f) says 18 sitemap files plus an index; the dated build table says
+  16 sitemap URLs resolve. 16 is correct under the 13-type revision (13 CPTs
+  plus post plus page plus the index).
+- Section 2.8 gives a ten-step strip for the checkout screen; Section 6(c)
+  specifies a seven-step flow for the home page. Both are marked "never
+  reordered". Likely two different screens, but confirm which is shown where.
+
+### What the plan does mandate for a contact page
+
+Only one block of body copy — Section 5.1 "Office and hours", the sole trust
+element naming the contact page — plus the Family 15 rule that no trust page
+publishes without the CPA Ontario numbers and the firm address.
