@@ -228,3 +228,55 @@ always his to supply.
 Only one block of body copy — Section 5.1 "Office and hours", the sole trust
 element naming the contact page — plus the Family 15 rule that no trust page
 publishes without the CPA Ontario numbers and the firm address.
+
+---
+
+## 2026-09-30 — Price changed to $300.00 plus HST. Rule 9 no longer holds.
+
+**Reported by:** Navneet. **Sharad Gondaliya's confirmation outstanding.**
+
+The fee is now $300.00 **plus** HST per tax year, so the customer pays $339.00.
+The plan states the opposite throughout.
+
+### What the plan currently says
+
+- **Rule 9**: "Every price reads $300 including HST per tax year."
+- **Section 5.1**: "$300.00 including HST per tax year. One price for every year
+  and every province." Notes: "HST component is $34.51, net revenue $265.49."
+- **Section 2.8**: headline "Nil T2 filing, $300.00 including HST per tax year.";
+  button "Pay $300.00 including HST and start"; multi-year "Pay $900.00 including
+  HST for 3 tax years and start".
+- **Section 7.9**: a change to the $300.00 price or the $350.00 overflow price is
+  owned by **Sharad Gondaliya**, and the last-reviewed stamp "advances on every
+  price change without exception".
+
+### What the new pricing implies
+
+| | Old | New |
+|---|---|---|
+| Net revenue | $265.49 | $300.00 |
+| HST | $34.51 | $39.00 |
+| Customer pays, 1 year | $300.00 | $339.00 |
+| Customer pays, 3 years | $900.00 | $1,017.00 |
+
+### Consequences
+
+- Rule 9 and the Section 5.1 figures are wrong and need rewriting.
+- Section 2.8's button copy is wrong, including the three-year variant.
+- The domain **corpnilfilingfor300.ca** states $300 while the charge is $339.
+  A price-named domain that does not match the amount charged is the clearest
+  Rule 217 exposure on the project.
+- The $350.00 overflow to gondaliyacpa.ca is unresolved — including or plus HST.
+- Two live pages already carry the new wording (`/lookup/` title and both fee
+  sentences). Everything else on the site and in the plan still says "including".
+
+### Correction to earlier advice
+
+The JotForm payment form's $339.00 total was flagged in this session as a bug
+against the $300.00 including HST price. Under the new pricing it is correct.
+The 265.49 / 34.51 figures issued on 2026-09-30 should be disregarded.
+
+### Outstanding
+
+Sharad Gondaliya confirms the change, decides the overflow price, and the plan
+is reissued. Until then the site and the plan disagree on every price.
