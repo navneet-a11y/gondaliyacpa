@@ -1,0 +1,118 @@
+<!-- /lookup/ — the filing screen.
+     Copy verbatim from Section 2.8. Element order per Section 2.9.
+     Positions 4-23 and 27-28 are Deepak's form and are marked as placeholders. -->
+
+<!-- 2.9 #1 headline -->
+<h1>Nil T2 filing, $300.00 including HST per tax year.</h1>
+
+<!-- 2.9 #2 subhead -->
+<p class="cnf-subhead">Type your corporation name. We fill in your CRA Business Number and your incorporation date. Pick the years you have not filed, confirm there was no activity, and pay. We then prepare the return, generate Form T183CORP carrying that return's figures, you sign it on screen, a CPA reviews it, we transmit it, and your CRA confirmation arrives within 3 business days.</p>
+
+<!-- 2.9 #3 -->
+<p class="cnf-nomeeting"><strong>No meeting. No booking link. No email chain. One screen, start to finish.</strong></p>
+
+<!-- ================================================================
+     2.9 #4 to #23 — DEEPAK'S FORM. Field labels are 2.8's field block,
+     in 2.9's order. Do not reorder.
+     ================================================================ -->
+<div id="cnf-filing-form" data-owner="deepak" data-status="placeholder">
+
+  <!-- #4  Corporation legal name            (keyboard opens on load) -->
+  <!-- #5  Incorporated under                (select) -->
+  <!-- #6  Lookup result card: registry number, CRA Business Number and RC0001,
+           incorporation date, registry status -->
+  <!-- #7  Registered office postal code -->
+  <!-- #8  Fiscal year end, month and day + year-end confirmation checkbox -->
+  <!-- #9  Select the tax years you have not filed   (newest year first) -->
+  <!-- #10 Sticky total bar: Total including HST -->
+  <!-- #11 The corporation had no business activity in every year selected. -->
+  <!-- #12 No-revenue confirmation checkbox -->
+  <!-- #13 Eligibility questions, one Yes or No per row, screen positions 18 to 33 -->
+  <!-- #14 Books-and-records questions setting GIFI, Schedule 24, Schedule 50, Schedule 8 -->
+  <!-- #15 Account questions: GST/HST, payroll, dissolution, amalgamation,
+           year-end change, non-residency, foreign property -->
+  <!-- #16 Signing officer first name / last name / title / email / mobile -->
+  <!-- #17 Six-digit code emailed to you -->
+  <!-- #18 Six-digit code texted to you -->
+  <!-- #19 Upload government photo identification
+           + The name on the identification matches the signing officer name above. -->
+  <!-- #20 I am an authorized signing officer of this corporation and I can sign
+           Form T183CORP for it. -->
+  <!-- #21 I am completing this form myself. Nobody is completing it on my behalf. -->
+  <!-- #22 I accept the engagement terms and the privacy notice. -->
+  <!-- #23 I consent to the storage described in the privacy notice. -->
+
+  <p class="cnf-placeholder">The filing form is being built. It goes live on Friday 23 October 2026.</p>
+</div>
+
+<!-- 2.9 #24 scope of fee -->
+<h2>What your fee covers</h2>
+<p>The fee of $300.00 including HST per tax year covers one nil T2 return for one corporation for one tax year, including the T2 Short where the corporation qualifies, GIFI Schedules 100, 125 and 141 where they are required, Schedule 24 on a first return, Schedule 50 for every shareholder at 10% or more, Schedule 8, loss continuity, your Form T183CORP package, single-use secure e-signing, CPA review, electronic transmission to CRA by a registered EFILE electronic filer, one corrected transmission if CRA rejects the first one, and your CRA confirmation emailed within 3 business days.</p>
+
+<!-- 2.9 #25 exclusions -->
+<h2>What your fee does not cover</h2>
+<p>The fee of $300.00 including HST per tax year does not cover the Ontario annual return, the federal $12 annual return, the Alberta AT1, the Quebec CO-17, GST/HST nil returns, payroll nil returns, or RC145 closure of a GST/HST or payroll account.</p>
+
+<!-- 2.9 #26 late nil year. Both sentences publish together or neither publishes. -->
+<h2>What a late nil year actually costs you</h2>
+<p>A true nil return has no percentage late-filing penalty because that penalty is a percentage of tax owing and the corporation owes $0.00, but an unfiled year stays open forever, invites a demand to file and an arbitrary assessment, blocks a clearance certificate and dissolution, and costs a non-resident corporation $25 per day up to $2,500.</p>
+
+<!-- ================================================================
+     2.9 #27 and #28 — DEEPAK'S PAYMENT BLOCK
+     ================================================================ -->
+<div id="cnf-payment" data-owner="deepak" data-status="placeholder">
+  <!-- #27 Stripe payment element: cards, debit, Apple Pay, Google Pay -->
+  <!-- #28 Sticky button: "Pay $300.00 including HST and start"
+           Multi-year variant: "Pay $900.00 including HST for 3 tax years and start" -->
+</div>
+
+<!-- 2.9 #29 -->
+<p class="cnf-paymethods">Credit card, debit, Apple Pay and Google Pay. You pay once, on this screen, and nothing else is owed.</p>
+
+<!-- 2.9 #30 ten-step strip, collapsed, tappable. Never reordered. -->
+<details>
+  <summary>How it works, start to finish</summary>
+  <ol>
+    <li>Type your corporation name.</li>
+    <li>We fill in your CRA Business Number and incorporation date.</li>
+    <li>Pick the tax years you have not filed.</li>
+    <li>Confirm the corporation had no activity.</li>
+    <li>Attest that you are an authorized signing officer and pass the identity check.</li>
+    <li>Pay by credit card, debit, Apple Pay or Google Pay.</li>
+    <li>We prepare the return, generate your Form T183CORP, and send you a single-use signing link.</li>
+    <li>You sign on a secure access-controlled screen.</li>
+    <li>A CPA reviews it and files it electronically.</li>
+    <li>Your CRA confirmation arrives by email within 3 business days.</li>
+  </ol>
+</details>
+
+<!-- 2.9 #31 -->
+<details>
+  <summary>Why you have to file</summary>
+  <p>Every resident corporation, including an inactive one, must file a T2 within six months of its fiscal year-end, every year, until it is formally dissolved. A final T2 is due within six months of dissolution.</p>
+</details>
+
+<!-- 2.9 #32 -->
+<details>
+  <summary>Why you have to file electronically</summary>
+  <p>For tax years starting after 2023 e-filing is mandatory for virtually all corporations. A paper T2 draws a $1,000 penalty plus a $100 per-return preparer penalty. We file electronically only.</p>
+</details>
+
+<!-- 2.9 #33 -->
+<details>
+  <summary>When this is not a nil return</summary>
+  <p>Investment income, rental income, taxable dividends paid, taxable dividends received, a corporation that is not a Canadian-controlled private corporation, more than one permanent establishment, a reporting currency that is not the Canadian dollar, a refundable credit, an Ontario transitional debit, a section 34.2 amount, an amalgamation, a year-end change needing CRA approval, or a corporation already dissolved or struck. Answer the questions on this screen honestly and we route you to our sister office at <a href="https://gondaliyacpa.ca/">gondaliyacpa.ca</a> at $350.00 including HST per tax year before you pay. If we find it after you pay, we refund you in full.</p>
+</details>
+
+<!-- 2.9 #34 -->
+<details>
+  <summary>Your Form T183CORP</summary>
+  <p>Form T183CORP carries the figures on your own return. You sign it before we transmit, on a single-use access-controlled screen, with the date and the hour, minute and second recorded on our server in Eastern Time. It is never backdated. We keep it for six years. We do not send it to CRA unless CRA asks for it.</p>
+</details>
+
+<!-- 2.9 #35 who files it -->
+<h2>Who files it</h2>
+<p>Gondaliya CPA Professional Corporation, CPA Ontario Firm Registration 61330051. Your return is reviewed by Sharad Gondaliya, CPA, a registered EFILE electronic filer, and is prepared and transmitted in Canada.</p>
+
+<!-- 2.9 #36 footer line -->
+<p class="cnf-footerline">Gondaliya CPA Professional Corporation. 55 Queen St E, Suite 1205, Toronto, ON M5C 1R6. 647-212-9559. info@gondaliyacpa.ca. Open 9:00 AM to 8:30 PM, Monday to Sunday. corpnilfilingfor300.ca is a department of Gondaliya CPA Professional Corporation.</p>
