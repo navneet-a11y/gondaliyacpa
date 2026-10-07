@@ -752,3 +752,46 @@ Writing `_elementor_page_settings` through the database does not invalidate
 Elementor's generated per-post CSS file, and Tools, Regenerate CSS and Data did
 not pick it up either. Deleting the post's `_elementor_css` meta and re-saving
 the post does force the rebuild. Both steps were applied to page 321.
+
+## 2026-10-07 — Override approach abandoned; page 321 emptied for a clean import
+
+**Decided by:** Navneet.
+
+The CSS override was tried twice and failed twice. On the second attempt the
+whole page reverted to blue, including the headings that the first attempt had
+turned navy, even though the stored CSS was verified correct in the database —
+ten rules, braces balanced, every element covered, read back and confirmed after
+writing.
+
+The failure was never diagnosed. It could not be: this environment's proxy
+returns 403 for corpnilfilingfor300.ca, so the rendered page and its generated
+CSS file cannot be fetched, and every conclusion was inferred from screenshots.
+Three indirect fixes were attempted and only guessed at the cause:
+
+1. Scoping to `.elementor-321`, the page content wrapper
+2. Re-keying every rule to `.elementor-element-<id>`
+3. Deleting `_elementor_css` and re-saving to force a CSS rebuild
+
+Debugging blind against a cache, a CSS compiler and a page builder at once was
+the wrong approach, and it cost several rounds of Navneet's time.
+
+### What was done instead
+
+Page 321 emptied: `_elementor_data` set to `[]`, `_elementor_page_settings`
+cleared of the override, `_elementor_css` deleted, `_elementor_edit_mode` left
+as `builder`. The page now renders blank and takes a clean template insert.
+
+`build/elementor/services-navy-override.css` deleted from the repository. It
+described a patch that no longer exists and would mislead anyone reading it.
+
+All three import files verified: zero instances of the old `#2087C9` in any of
+them, navy present in all three. Pricing carries no `#28406F` because the hover
+values live only on the ElementsKit card widgets, which that page does not use;
+its buttons take Elementor's default hover behaviour.
+
+### The rule this establishes
+
+The Elementor templates are the single source of truth for these pages. Colour,
+contrast and copy are fixed in the transform scripts and delivered as import
+files. Nothing is layered on top through page CSS, because a patch over a stale
+import cannot be reviewed, cannot be diffed, and was not reliable in practice.
