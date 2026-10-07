@@ -610,3 +610,55 @@ Fixed two ways:
 
 Both import files regenerated. Elementor caches generated CSS, so after a change
 of this kind run Elementor, Tools, Regenerate CSS, then purge LiteSpeed.
+
+## 2026-10-07 — Navy applied to the templates, and /pricing/ built on the same design
+
+**Decided by:** Navneet. **Sharad Gondaliya's sign-off outstanding.**
+
+### Colour
+
+The gondaliyacpa templates carried `#2087C9` 77 times on Services and 68 on
+Reviews. All instances now use the corpnil homepage navy `#314D8A`, except
+hover states, which take `#28406F` so a hover remains visible rather than
+matching the resting colour.
+
+`#314D8A` on white measures 8.21:1 and white on `#314D8A` the same, both well
+past the WCAG 2.1 AA 4.5:1 floor the plan sets for the November 18, 2026 audit.
+The remaining `#636363` body grey on white is 5.74:1 and also passes.
+
+### /pricing/ — Family 8
+
+Built as a 13-section Elementor page composed from the already-cleaned Services
+sections, so the two pages share one design system rather than diverging.
+Delivered as `build/elementor/corpnil-pricing-elementor.json`, 82 KB. Every
+element ID is regenerated so nothing collides with the Services page.
+
+Page 323 pre-set to the full-width Elementor layout before import, same as 321
+and 326.
+
+Copy is the plan's, section by section:
+
+| Section | Source in the plan |
+|---|---|
+| Hero and fee figures | 5.1 Price, restated as $300.00 plus HST per the 2026-09-30 decision |
+| What you pay | $300.00 + $39.00 HST = $339.00, with the one-price-everywhere wording from 5.1 |
+| What the fee covers | 8-item accordion: GIFI schedules, CPA review, T183CORP wording from 5.1, EFILE sentence, 3-business-day turnaround, six-year retention |
+| Payment | 5.1 Payment security, verbatim |
+| Signing | 5.1 T183CORP signing and Signing security, verbatim |
+| Direct dealing | 5.1 Identity and direct dealing, verbatim |
+| What is not included | 5.1 Filings this does not cover, verbatim, plus the $12.00 government-fee note |
+| If your corporation is not nil | 5.1 Scope of a nil return and Overflow route, verbatim |
+
+The F8 rule "Both fee lines on every cost page" is satisfied: $300.00 plus HST
+and the $350.00 including HST overflow both appear.
+
+Two paragraphs were repeated across sections on the first build (six-year
+retention, and the excluded-filings list) and were replaced with distinct
+Section 5.1 content rather than left duplicated.
+
+### Still outstanding
+
+- H1 "Nil T2 Filing Price" and the title tag remain Navneet's wording, not the
+  plan's; 6(a) gives an exemplar only for the child `/pricing/nil-t2-filing-cost/`.
+- The $350.00 overflow price is still unconfirmed since the 2026-09-30 change.
+- Rank Math title and meta description on all three pages.
