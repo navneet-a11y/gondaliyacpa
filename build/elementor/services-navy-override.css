@@ -1,0 +1,15 @@
+/* Page 321 /services/ — Elementor page settings custom CSS.
+   Repaints the first (blue) import to the homepage navy without a re-import.
+   Scoped to .elementor-321 so the global header and footer are untouched.
+   Headings are listed by element ID because the hero's headings are white and
+   must stay white over the dark photograph. */
+.elementor-321 .elementor-button{background-color:#314D8A!important}
+.elementor-321 .elementor-button:hover,.elementor-321 .elementor-button:focus{background-color:#28406F!important}
+.elementor-321 .elementor-icon{color:#314D8A!important;fill:#314D8A!important}
+.elementor-321 .elementor-icon svg,.elementor-321 .elementor-icon svg *{fill:#314D8A!important}
+.elementor-321 .elementor-icon-box-title,.elementor-321 .elementor-icon-box-title a{color:#314D8A!important}
+.elementor-321 .elementskit-info-box-title,.elementor-321 .elementskit-info-box-title a{color:#314D8A!important}
+.elementor-321 .elementskit-btn{background-color:#314D8A!important}
+.elementor-321 .elementskit-btn:hover{background-color:#28406F!important}
+.elementor-element-2216484e .elementor-heading-title,.elementor-element-1c5683a4 .elementor-heading-title,.elementor-element-1d7e81f9 .elementor-heading-title,.elementor-element-1e0bbfe2 .elementor-heading-title,.elementor-element-69335d0 .elementor-heading-title,.elementor-element-4084464b .elementor-heading-title,.elementor-element-5da79789 .elementor-heading-title{color:#314D8A!important}
+.elementor-element-4b16a5ad,.elementor-element-4b16a5ad p,.elementor-element-4b16a5ad a{color:#FFFFFF!important}

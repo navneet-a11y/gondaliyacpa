@@ -662,3 +662,39 @@ Section 5.1 content rather than left duplicated.
   plan's; 6(a) gives an exemplar only for the child `/pricing/nil-t2-filing-cost/`.
 - The $350.00 overflow price is still unconfirmed since the 2026-09-30 change.
 - Rank Math title and meta description on all three pages.
+
+## 2026-10-07 — /services/ repainted navy in place, without a re-import
+
+The live page carried the blue from the first import, because the navy change
+was made to the source files after Navneet had already imported. Re-importing
+would have meant deleting the existing sections first, since Elementor appends
+rather than replaces.
+
+Repainted instead through `_elementor_page_settings.custom_css` on page 321,
+1,229 bytes, saved as `build/elementor/services-navy-override.css`. The 90 KB
+`_elementor_data` is untouched and verified intact after the write.
+
+Two deliberate choices in that CSS:
+
+- **Scoped to `.elementor-321`**, the page content wrapper, not to `body`. An
+  unscoped rule would also repaint the global header and footer buttons on this
+  one page, leaving them inconsistent with every other page.
+- **Headings are listed by element ID**, not matched generically. Five headings
+  on the page are white or black by design — three of them sit over the dark
+  hero photograph — so a blanket heading rule would have turned white hero text
+  navy on a dark background and destroyed the contrast fixed earlier today. Only
+  the seven headings that were blue are named.
+
+The import files remain the source of truth; the override exists so the live
+page matches them without rebuilding it. A future re-import makes the override
+redundant but not harmful, since it sets the same values the file already holds.
+
+**Elementor compiles page custom CSS into an external per-post CSS file.** Writing
+the meta directly does not invalidate that file, so the change appears only after
+Elementor, Tools, Regenerate CSS and Data, followed by a LiteSpeed purge.
+
+### On purging cache
+
+There is no cache tool on this connector; this was checked again today. What is
+available is saving the post, which makes LiteSpeed purge that single page. A
+site-wide purge stays a wp-admin action.
