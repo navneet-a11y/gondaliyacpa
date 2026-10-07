@@ -904,3 +904,48 @@ correct; the check was not — it stripped `_image` from the key and appended
 `size` rather than `_size`, so it looked up `backgroundsize`. Worth recording
 because a verifier that silently tests the wrong key is more dangerous than no
 verifier: it would have blocked a fix that already worked.
+
+## 2026-10-07 — "One screen, start to finish" is no longer true
+
+**Raised by:** Claude, while checking a homepage line Navneet proposed.
+**Needs Sharad Gondaliya's decision.**
+
+Section 2.8 line 91, repeated as item 3 of the 2.9 mobile element order, gives
+this approved line:
+
+> "No meeting. No booking link. No email chain. One screen, start to finish."
+
+The first three clauses hold and match launch gate item 33 ("No meeting, no
+scheduling, no booking widget, no Calendly link, no email-chain instruction"),
+so "booking link" is safe to publish: the gate bans the widget, not the word.
+
+**The fourth clause is now false.** Section 2.8 is titled "One-screen page copy,
+headline to button" and the plan assumed a single checkout screen. What was
+built is four steps across three pages plus a signing screen:
+
+`/form/` (page 201) to `/pay/` (209) to `/final-details/` (211) to the T183CORP
+signing link on gondaliyacpa.ca.
+
+Publishing "One screen, start to finish" on the home page would be a claim any
+visitor can disprove in thirty seconds, which is the kind of unsubstantiated
+statement Rule 217 exists to stop.
+
+### Decision taken for now
+
+Publish the first three clauses only:
+
+> "No meeting. No booking link. No email chain."
+
+### For Sharad Gondaliya
+
+Two ways to close this, and it is his call because it reaches into Deepak's
+scope:
+
+1. Accept the shortened line permanently, and treat the multi-step chain as the
+   design. The three remaining clauses still carry the differentiator.
+2. Have the filing form collapse to a single screen so the plan's line becomes
+   true again. This is form work owned by Deepak, not a copy change.
+
+Related: Section 2.9's 36-element order was written for one screen. If the
+three-page chain is accepted as final, that section no longer describes the
+build either, and the elements need reassigning across the three pages.
