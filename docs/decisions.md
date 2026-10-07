@@ -795,3 +795,68 @@ The Elementor templates are the single source of truth for these pages. Colour,
 contrast and copy are fixed in the transform scripts and delivered as import
 files. Nothing is layered on top through page CSS, because a patch over a stale
 import cannot be reviewed, cannot be diffed, and was not reliable in practice.
+
+## 2026-10-07 — Family 11 held: this site has no reviews of its own
+
+**Decided by:** Navneet. **To be raised with Sharad Gondaliya.**
+
+Navneet identified that the firm's Google reviews belong to Gondaliya CPA
+Professional Corporation's single Google Business Profile at 55 Queen St E.
+Those clients reviewed bookkeeping, payroll, corporate tax and incorporation.
+None reviewed a $300 nil T2 filing, because this service has no clients yet.
+
+The plan never intended those reviews to be republished here. Its own exemplar
+meta description at line 1172 reads "Verified reviews from Toronto corporations
+**that filed a nil T2 return with us** at $300.00 including HST per tax year",
+which is a specific claim about what was reviewed. Line 1219 names the data
+source as the "Trustindex collection feed, place tagged at collection time", and
+line 2222 sets the refresh trigger as "A new published review". The family is
+designed around reviews collected going forward, gated at five per place, which
+is also why line 1219 names "1300+ reviews" as this family's banned phrase.
+
+### Decision
+
+- `/reviews/` stays as built: publishing policy, no count, no star rating, no
+  review schema, no Trustindex widget.
+- **No city pages are created.** The November 6, 2026 date in the build table is
+  not reachable by effort; it depends on clients leaving reviews.
+- The Reviews Elementor template keeps its eight city labels unlinked.
+
+### For Sharad Gondaliya
+
+Three options, for the Friday update:
+
+1. Hold Family 11 until nil T2 clients leave reviews. Recommended: it matches the
+   plan and claims nothing untrue.
+2. Publish the firm's reviews clearly labelled as the firm's, not as nil T2
+   reviews. This reintroduces the unreconciled count (gondaliyacpa shows 500+ in
+   one place and 1300+ in another) and the Trustindex rich snippets that Rule 6
+   keeps off.
+3. Drop Family 11 from this site and link to gondaliyacpa.ca.
+
+## 2026-10-07 — CTA copy inventory
+
+Every piece of call-to-action copy the plan specifies, checked line by line.
+
+| Where | Exact text | Plan location |
+|---|---|---|
+| Checkout, one tax year | Pay $300.00 including HST and start | 2.8, and 2.9 item 28 as a sticky button |
+| Checkout, multiple years | Pay $900.00 including HST for 3 tax years and start | 2.8 |
+| Under the checkout button | Credit card, debit, Apple Pay and Google Pay. You pay once, on this screen, and nothing else is owed. | 2.8, and 2.9 item 29 |
+| Anywhere a page would say book a call, schedule a meeting, free consultation or contact us to start | Start now and enter your corporation name | 7.4 line 1942, approved replacement |
+
+That is the complete list. The plan contains no other button or link copy — no
+"Get started", no "Learn more", no "Request a quote".
+
+### Two consequences
+
+**"See the price" is not the plan's.** It was written for this session's
+secondary button on the Services, Pricing and Reviews templates. It breaks no
+rule, carrying no claim, but it is unapproved copy and goes to Sharad Gondaliya
+with the rest.
+
+**The checkout button text is stale on price.** Under the 2026-09-30 change the
+one-year button reads $300.00 plus HST, and the multi-year example recalculates:
+three years is $900.00 plus $117.00 HST, so $1,017.00 including HST. Whether the
+button states the plus-HST figure or the inclusive total is Sharad's call, and it
+affects the JotForm checkout as well as every page that quotes a total.
