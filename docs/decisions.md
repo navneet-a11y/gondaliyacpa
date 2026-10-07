@@ -353,3 +353,69 @@ The supplied plan contains Scope, the dated build schedule, and Sections 2, 4,
 There is consequently no home page copy specification anywhere in the document,
 only the checkout copy in Section 2. The home page is in the October 9 batch.
 Request the missing sections from Sharad Gondaliya.
+
+## 2026-10-07 — /reviews/ built today on Navneet's instruction
+
+**Decided by:** Navneet, overriding the deferral logged earlier the same day.
+**Sharad Gondaliya's sign-off outstanding.**
+
+Page 326, published at `/reviews/`, `cnf_family` term f11,
+`cnf_last_verified_et` 2026-10-07. The menu item that pointed at the dead
+`#reviews` anchor now points at this page.
+
+Family 11 is scheduled for November 6, 2026. Navneet asked for the hub today
+alongside `/services/` and `/pricing/`, so it was built in a form that breaks
+none of the ten hard rules:
+
+- **No star rating and no total review count** appear anywhere on the page. The
+  6(g) claim-consistency rule still stands, and gondaliyacpa.ca still shows
+  500+ in one place and 1300+ in another.
+- **No review or aggregateRating schema** is emitted (Rule 6). Rank Math's
+  schema type for this page must be left off or set to Article, never Review.
+- **No reviews are published**, because none are verified yet. The page states
+  the publishing policy instead.
+- **No Trustindex widget** is embedded. `cnf_trustindex_widget_id` has no value
+  and Trustindex rich snippets stay off when one is supplied.
+
+The page states the plan's own gate publicly: a city page publishes once five
+verified reviews exist for that city.
+
+### Family 11 city list conflict
+
+6(a) line 1153 and Appendix A line 3452 both give 11 URLs and agree on 8 cities,
+then diverge:
+
+| Source | Final two cities |
+|---|---|
+| 6(a) | Ottawa, Hamilton |
+| Appendix A | Richmond Hill, Oakville |
+
+The page lists only the 8 both sources agree on: Toronto, Mississauga, Brampton,
+Scarborough, Etobicoke, North York, Markham, Vaughan. Sharad Gondaliya settles
+the remaining two. This is the third list in Appendix A that contradicts 6(a),
+after Family 15 and Family 8.
+
+## 2026-10-07 — Correction: Family 8 and Family 11 are not blocked by post type
+
+The entry earlier today said the 14 remaining Family 8 URLs could not be built
+until the `page` versus `nil_cost` conflict was settled. That was wrong, and the
+build already settles it.
+
+`build/friday-2026-09-25/cptui-post-types.json` registers:
+
+| Post type | rewrite_slug | has_archive |
+|---|---|---|
+| `nil_cost` | `pricing` | false |
+| `nil_review_hub` | `reviews` | false |
+
+`nil_cost` was registered against 6(a)'s `/pricing/` base, not Section 4.2's
+`cost`. With `has_archive` false, a page at `/pricing/` and CPT items at
+`/pricing/<slug>/` coexist, which is the pattern proved on September 25. The
+same holds for `/reviews/` and `/reviews/<city>/`.
+
+So the hub is a page and the children are CPT items, in both families. The 14
+remaining Family 8 URLs and the 10 Family 11 city pages are unblocked.
+
+The price meta keys remain unwritable on the `/pricing/` page itself because
+they are registered against `nil_cost`. That is correct, not a defect: the
+figures belong on the `nil_cost` children. The page carries them in body copy.
