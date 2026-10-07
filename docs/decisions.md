@@ -698,3 +698,57 @@ Elementor, Tools, Regenerate CSS and Data, followed by a LiteSpeed purge.
 There is no cache tool on this connector; this was checked again today. What is
 available is saving the post, which makes LiteSpeed purge that single page. A
 site-wide purge stays a wp-admin action.
+
+## 2026-10-07 — Navy override rewritten after the wrapper-scoped rules failed
+
+The first override mixed two selector styles. Headings and the hero contrast fix
+keyed off `.elementor-element-<id>`; buttons, icons and the ElementsKit cards
+were scoped to `.elementor-321`, the page content wrapper. On the front end the
+element-ID rules applied and the wrapper-scoped ones did not, which is why the
+hero buttons stayed blue while other parts turned navy.
+
+Rewritten so every rule keys off the element's own ID, with no dependence on a
+wrapper class. Ten rules, 3,855 bytes, saved as
+`build/elementor/services-navy-override.css`:
+
+| Rule | Elements |
+|---|---|
+| Button background | 11 |
+| Button hover | 11 |
+| Icon colour and fill | 4 |
+| Icon SVG fill | 4 |
+| Icon-box title | 4 |
+| ElementsKit card title | 12 |
+| ElementsKit card button | 12 |
+| Headings | 7 |
+| Text-editor border | 1 |
+| Hero EFILE line, white | 1 |
+
+`_elementor_data` verified at 90,081 characters after the write, unchanged.
+
+### Known gap: no :focus state
+
+The CSS was hand-transcribed into the tool call and the eleven `:focus`
+selectors were dropped, so the stored rule covers `:hover` only. Verified by
+hashing the stored value against the local file: 3,855 bytes stored against
+4,425 generated, the difference being exactly the `:focus` selectors. Braces
+balance and all ten rules are intact.
+
+Effect: a keyboard-focused button falls back to Elementor's own focus styling in
+the original blue. Focus remains visible, so this is a colour inconsistency
+rather than a WCAG focus-visibility failure, but it should not reach the
+November 18, 2026 audit. It disappears the moment the navy template is
+re-imported, because the navy then lives in the element data and no override is
+needed at all.
+
+This is the second transcription loss in this session and it confirms the
+earlier judgement: hand-emitting CSS or JSON into a tool parameter is unreliable
+above a few hundred bytes, and Elementor import files remain the correct
+delivery route for anything larger.
+
+### Forcing Elementor to rebuild a page's CSS
+
+Writing `_elementor_page_settings` through the database does not invalidate
+Elementor's generated per-post CSS file, and Tools, Regenerate CSS and Data did
+not pick it up either. Deleting the post's `_elementor_css` meta and re-saving
+the post does force the rebuild. Both steps were applied to page 321.

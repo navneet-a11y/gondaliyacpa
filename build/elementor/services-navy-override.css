@@ -1,15 +1,16 @@
-/* Page 321 /services/ — Elementor page settings custom CSS.
-   Repaints the first (blue) import to the homepage navy without a re-import.
-   Scoped to .elementor-321 so the global header and footer are untouched.
-   Headings are listed by element ID because the hero's headings are white and
-   must stay white over the dark photograph. */
-.elementor-321 .elementor-button{background-color:#314D8A!important}
-.elementor-321 .elementor-button:hover,.elementor-321 .elementor-button:focus{background-color:#28406F!important}
-.elementor-321 .elementor-icon{color:#314D8A!important;fill:#314D8A!important}
-.elementor-321 .elementor-icon svg,.elementor-321 .elementor-icon svg *{fill:#314D8A!important}
-.elementor-321 .elementor-icon-box-title,.elementor-321 .elementor-icon-box-title a{color:#314D8A!important}
-.elementor-321 .elementskit-info-box-title,.elementor-321 .elementskit-info-box-title a{color:#314D8A!important}
-.elementor-321 .elementskit-btn{background-color:#314D8A!important}
-.elementor-321 .elementskit-btn:hover{background-color:#28406F!important}
+/* Page 321 /services/ — Elementor page settings custom CSS (live copy).
+   Every rule keys off the element's own ID. An earlier version scoped the
+   button, icon and ElementsKit rules to .elementor-321, the page content
+   wrapper, and those rules did not match on the front end while the
+   element-ID rules did. Nothing here depends on a wrapper class.
+   Buttons carry :hover but not :focus — see decisions.md. */
+.elementor-element-3f77371e .elementor-button,.elementor-element-4c61574b .elementor-button,.elementor-element-2a08d6d8 .elementor-button,.elementor-element-ae16632 .elementor-button,.elementor-element-6e6adbf2 .elementor-button,.elementor-element-5203570c .elementor-button,.elementor-element-fc4c0b8 .elementor-button,.elementor-element-20b50760 .elementor-button,.elementor-element-152a082e .elementor-button,.elementor-element-1595d71e .elementor-button,.elementor-element-18208e39 .elementor-button{background-color:#314D8A!important}
+.elementor-element-3f77371e .elementor-button:hover,.elementor-element-4c61574b .elementor-button:hover,.elementor-element-2a08d6d8 .elementor-button:hover,.elementor-element-ae16632 .elementor-button:hover,.elementor-element-6e6adbf2 .elementor-button:hover,.elementor-element-5203570c .elementor-button:hover,.elementor-element-fc4c0b8 .elementor-button:hover,.elementor-element-20b50760 .elementor-button:hover,.elementor-element-152a082e .elementor-button:hover,.elementor-element-1595d71e .elementor-button:hover,.elementor-element-18208e39 .elementor-button:hover{background-color:#28406F!important}
+.elementor-element-9506ab4 .elementor-icon,.elementor-element-180d1bdd .elementor-icon,.elementor-element-1719ca90 .elementor-icon,.elementor-element-542f3f2a .elementor-icon{color:#314D8A!important;fill:#314D8A!important}
+.elementor-element-9506ab4 .elementor-icon svg,.elementor-element-180d1bdd .elementor-icon svg,.elementor-element-1719ca90 .elementor-icon svg,.elementor-element-542f3f2a .elementor-icon svg,.elementor-element-9506ab4 .elementor-icon svg *,.elementor-element-180d1bdd .elementor-icon svg *,.elementor-element-1719ca90 .elementor-icon svg *,.elementor-element-542f3f2a .elementor-icon svg *{fill:#314D8A!important}
+.elementor-element-9506ab4 .elementor-icon-box-title,.elementor-element-180d1bdd .elementor-icon-box-title,.elementor-element-1719ca90 .elementor-icon-box-title,.elementor-element-542f3f2a .elementor-icon-box-title{color:#314D8A!important}
+.elementor-element-697c21bb .elementskit-info-box-title,.elementor-element-652fc258 .elementskit-info-box-title,.elementor-element-52848e2c .elementskit-info-box-title,.elementor-element-24e5f0 .elementskit-info-box-title,.elementor-element-57b4e95b .elementskit-info-box-title,.elementor-element-9f0f2b6 .elementskit-info-box-title,.elementor-element-5596c064 .elementskit-info-box-title,.elementor-element-4c27de86 .elementskit-info-box-title,.elementor-element-2e88d25c .elementskit-info-box-title,.elementor-element-983dd83 .elementskit-info-box-title,.elementor-element-34eaaeaa .elementskit-info-box-title,.elementor-element-5c8d1e7a .elementskit-info-box-title{color:#314D8A!important}
+.elementor-element-697c21bb .elementskit-btn,.elementor-element-652fc258 .elementskit-btn,.elementor-element-52848e2c .elementskit-btn,.elementor-element-24e5f0 .elementskit-btn,.elementor-element-57b4e95b .elementskit-btn,.elementor-element-9f0f2b6 .elementskit-btn,.elementor-element-5596c064 .elementskit-btn,.elementor-element-4c27de86 .elementskit-btn,.elementor-element-2e88d25c .elementskit-btn,.elementor-element-983dd83 .elementskit-btn,.elementor-element-34eaaeaa .elementskit-btn,.elementor-element-5c8d1e7a .elementskit-btn{background-color:#314D8A!important}
 .elementor-element-2216484e .elementor-heading-title,.elementor-element-1c5683a4 .elementor-heading-title,.elementor-element-1d7e81f9 .elementor-heading-title,.elementor-element-1e0bbfe2 .elementor-heading-title,.elementor-element-69335d0 .elementor-heading-title,.elementor-element-4084464b .elementor-heading-title,.elementor-element-5da79789 .elementor-heading-title{color:#314D8A!important}
+.elementor-element-6974397b{border-color:#314D8A!important}
 .elementor-element-4b16a5ad,.elementor-element-4b16a5ad p,.elementor-element-4b16a5ad a{color:#FFFFFF!important}
