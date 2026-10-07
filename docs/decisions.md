@@ -860,3 +860,47 @@ one-year button reads $300.00 plus HST, and the multi-year example recalculates:
 three years is $900.00 plus $117.00 HST, so $1,017.00 including HST. Whether the
 button states the plus-HST figure or the inclusive total is Sharad's call, and it
 affects the JotForm checkout as well as every page that quotes a total.
+
+## 2026-10-07 — Background images had no sizing keys; fixed at source
+
+Navneet reported the service-card photos rendering zoomed again after the
+re-import. The cause is in the gondaliyacpa template itself, not in anything
+done here.
+
+Thirty background images across the three templates carried a URL with **no
+`size`, `position` or `repeat` keys at all**. With no `background-size`, CSS
+falls back to `auto`, so each photo renders at its natural pixel dimensions
+inside its box, which reads as a zoomed crop. The worst case is the twelve
+ElementsKit service cards, whose `ekit_icon_box_infobox_bg_hover_group_image`
+puts a full-size scaled photograph behind a card a few hundred pixels wide.
+
+| Template | Backgrounds fixed |
+|---|---|
+| Services | 15 — hero, 12 service cards, 2 band containers |
+| Reviews | 13 — hero, 12 service cards |
+| Pricing | 2 — hero and one band |
+
+Fixed with a `fix_bg_sizing` pass in all three transform scripts, applied after
+every other transform. It fills `cover`, `center center` and `no-repeat` only
+where a key is absent or empty, using `setdefault`, so a deliberate value is
+never overwritten — the hero keeps its original `bottom center` framing.
+
+### Why this reappeared
+
+Any fix made by hand in the Elementor builder lives in `_elementor_data` on the
+page. Blanking that meta for the clean re-import discarded it. That was the
+right call for the colour problem but it silently reverted this one, and it will
+revert any other builder-side edit the same way.
+
+The rule from the earlier entry therefore holds in both directions: the
+transform scripts are the only durable place to fix these pages. Anything
+corrected in the builder is lost at the next import, so report it instead and it
+gets fixed at source.
+
+### A verification note
+
+The first check of this fix reported all thirty still broken. The transform was
+correct; the check was not — it stripped `_image` from the key and appended
+`size` rather than `_size`, so it looked up `backgroundsize`. Worth recording
+because a verifier that silently tests the wrong key is more dangerous than no
+verifier: it would have blocked a fix that already worked.
