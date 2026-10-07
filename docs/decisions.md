@@ -506,3 +506,60 @@ Importing through Elementor is lossless.
   Richmond Hill and Oakville).
 - Sharad Gondaliya signs off both pages, and the `/pricing/` H1 and title tag
   which are Navneet's, not the plan's.
+
+## 2026-10-07 — "Affordable" restored to the Services and Reviews copy
+
+**Decided by:** Navneet, reaffirming the instruction first given on the Contact
+Us page ("we are the cheapest so we want people to know").
+**Sharad Gondaliya's sign-off outstanding.**
+
+The word appears in three places on `/services/` and two on `/reviews/`:
+
+- "Browse Our Affordable Nil T2 Filing Services" (services, section heading)
+- "Affordable Nil T2 Filing" (services, section heading)
+- "We keep nil filing affordable on purpose: $300.00 plus HST per tax year, one
+  price for every year and every province, with no hourly billing and no add-on
+  fees." (services, body)
+- "Affordable Nil T2 Filing at $300.00 plus HST per tax year" (reviews, heading)
+- "We keep nil filing affordable on purpose. One price for every year and every
+  province..." (reviews, body)
+
+### How this sits against the rules, checked rather than assumed
+
+"Affordable" is **not** named anywhere in the plan, including the Section 7.4
+banned-phrases table. Line 1940 bans the specific terms "Cheapest, lowest price
+in Canada, best price, unbeatable"; line 1939 bans "Guaranteed, guarantee, we
+guarantee". CLAUDE.md Rule 4 reads "Never claim cheapest, best, fastest,
+guaranteed, risk-free."
+
+So the risk is softer than an earlier note in this session implied, when
+"Toronto's AFFORDABLE, Fully Licensed CPA" was flagged as a Rule 4 breach. The
+word itself is not banned. What Rule 217 bars is an unsubstantiated claim, and
+the wording used here attaches "affordable" to a stated, provable fact — the
+$300.00 plus HST price, one price in every province, no hourly billing — rather
+than to a comparison with any other provider. No competitor is named or implied,
+and no superlative is used.
+
+This remains a deviation to raise with Sharad Gondaliya, because he reviews every
+claim on an F15 and F16 page, not because the plan forbids the word.
+
+### Delivery of the two reworked templates
+
+Both import files rebuilt with the wording above:
+
+| File | Size | Sections |
+|---|---|---|
+| `build/elementor/corpnil-services-elementor.json` | 164 KB | 17 |
+| `build/elementor/corpnil-reviews-elementor.json` | 86 KB | 12 |
+
+Navneet asked for them written directly onto pages 321 and 326. Not done, for a
+mechanical reason worth recording: the minified payloads are 85 KB and 69 KB,
+and 53 to 66 per cent of each is the twelve ElementsKit icon-box widgets at
+about 3.8 KB of style keys apiece, which Elementor requires in full. Passing
+those through a tool parameter means hand-emitting roughly 190 KB of
+quote-escaped JSON with no way to pipe a file in, where a single wrong character
+breaks the page silently. Elementor's own import is lossless, so the files are
+the delivery route.
+
+`_elementor_data` itself is writable through the connector; the constraint is
+payload size, not permission.
