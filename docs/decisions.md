@@ -419,3 +419,90 @@ remaining Family 8 URLs and the 10 Family 11 city pages are unblocked.
 The price meta keys remain unwritable on the `/pricing/` page itself because
 they are registered against `nil_cost`. That is correct, not a defect: the
 figures belong on the `nil_cost` children. The page carries them in body copy.
+
+## 2026-10-07 — gondaliyacpa Services and Reviews templates reworked, not applied as-is
+
+**Decided by:** Navneet, after being shown the rule breaches. **Sharad Gondaliya's
+sign-off outstanding.**
+
+Navneet imported two Elementor templates copied from gondaliyacpa.ca — library
+items 334 "Gondaliya CPA Services" and 336 "Gondaliya CPA Reviews" — and asked
+for them on `/services/` and `/reviews/`. Applied unchanged they would have
+breached six of the ten hard rules. Navneet chose to keep the layouts and
+replace the content.
+
+### What was in template 334 (Services)
+
+| Content | Rule |
+|---|---|
+| "Book Your Free Consultation" x3, "Schedule Free Consultation Call", "SCHEDULE A FREE CONSULTATION CALL", "Free CPA Consultation", links to gondaliyacpa.ca/consultation/ | Rule 7, and the exact banned row at plan line 1942 |
+| "1300+ 5-Star Google Reviews", "1300+ (five stars) Google Reviews", "Trusted by More Than 1300 Happy Customers" | 6(g) claim-consistency freeze |
+| "30-Day Money-Back Guarantee", "60-Day Fees-Matching Policy" | Rule 4 |
+| 11-question "Frequently Asked Questions" accordion | Rule 6 |
+| "Tax Preparation (Corporation): From $400" | Rule 9 |
+| Check-mark emoji in "REGISTERED CPA FIRM", star characters | No-emoji rule |
+| One Trustindex shortcode | Rule 6 |
+
+Also 24 outbound links to gondaliyacpa.ca service pages, a 10-item industries
+block, and none of the plan's 12 nil service slugs. The cross-site rule at line
+1688 requires the three `/services/` hubs to carry different children; the
+template made them identical.
+
+### What was in template 336 (Reviews)
+
+Worse, because the banned element was the page's substance: **10 Trustindex
+shortcode widgets** across 10 city blocks. It also carried both contradictory
+counts — "1300+ Google Reviews" in the subtitle and "over 500 five-star" in the
+body, which is the exact contradiction 6(g) cites as its reason for the freeze —
+plus "15+ Years", the years-in-practice figure also frozen.
+
+Beyond the plan, the 11 "What Our <City> Clients Say" blocks are gondaliyacpa's
+own client reviews. Those clients reviewed gondaliyacpa, not a $300 nil T2
+service, so republishing them here would have misstated what was reviewed.
+
+### What was produced instead
+
+Two Elementor import files, built by transforming the originals:
+
+| File | From | Sections | Size |
+|---|---|---|---|
+| `build/elementor/corpnil-services-elementor.json` | 334 | 33 to 17 | 164 KB |
+| `build/elementor/corpnil-reviews-elementor.json` | 336 | 48 to 12 | 86 KB |
+
+Services: dropped 16 sections (review counts, guarantee badges, Official Partner
+and logo strip, location selector, industries, FAQ accordion, senior-CPA block,
+Google Reviews and Trustindex, consultation band). Rewrote the hero, the 8-item
+accordion, the 4 trust badges, the 3 availability items, the price block and all
+CTA bands. The 12 ElementsKit boxes now carry the plan's 12 `cnf_service` slugs.
+
+Reviews: dropped 36 sections, including all 10 Trustindex city blocks. Kept the
+hero, policy copy, city row, services grid and CTA. The 8 city buttons are the
+cities 6(a) and Appendix A agree on, rendered unlinked because no city page
+exists yet.
+
+Both files pass a 16-pattern banned-content scan (CRA wording, T183 vs
+T183CORP, standalone "no penalty", superlatives and guarantees, booking and
+consultation phrasing, review counts, years in practice, FAQ headings,
+Trustindex, gondaliyacpa links, emoji, "Affordable", $400, "$300.00 including
+HST"). Every URL in both files is internal, pointing at `/form/` or `/pricing/`.
+
+### Correction: _elementor_data IS writable through this connector
+
+An earlier claim in this session — that `_elementor_data` cannot be written via
+REST — was wrong. It was proved writable by creating a throwaway draft (page
+338), writing a probe widget, reading it back and deleting the page.
+
+The templates are still delivered as import files rather than written directly,
+for a different reason: at 164 KB and 86 KB the JSON cannot be passed through a
+tool parameter reliably, and a single corrupted character would break the page.
+Importing through Elementor is lossless.
+
+### Still outstanding on these two pages
+
+- Rank Math title tag and meta description on `/services/`, `/pricing/` and
+  `/reviews/`; the values are drafted and `/services/` has the plan's verbatim.
+- Rank Math schema on `/reviews/` must be off or Article, never Review.
+- Family 11's last two cities (6(a) says Ottawa and Hamilton; Appendix A says
+  Richmond Hill and Oakville).
+- Sharad Gondaliya signs off both pages, and the `/pricing/` H1 and title tag
+  which are Navneet's, not the plan's.
