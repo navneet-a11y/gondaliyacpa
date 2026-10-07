@@ -280,3 +280,76 @@ The 265.49 / 34.51 figures issued on 2026-09-30 should be disregarded.
 
 Sharad Gondaliya confirms the change, decides the overflow price, and the plan
 is reissued. Until then the site and the plan disagree on every price.
+
+## 2026-10-07 — /services/ and /pricing/ built early; /reviews/ deferred
+
+**Decided by:** Navneet. **Sharad Gondaliya's sign-off outstanding on both pages.**
+
+Both pages belong to the Friday, October 9, 2026 batch and were published two
+days early so the site has a working menu. Family 15 pages 1 through 24 and the
+home page are still outstanding for that date.
+
+### /services/ — page 321, published at /services/
+
+Family 16 hub. The 6(a) copy-paste exemplar is `/services/` itself, so the title
+tag, meta description and H1 are the plan's own words. Assigned `cnf_family`
+term f16, `cnf_child_count` 12, `cnf_last_verified_et` 2026-10-07.
+
+The plan's note for this hub reads "Links all 336 Family 4 children through 28
+place indexes." None of those 336 pages exist yet (150 due November 6, 186 due
+November 13). The 12 service slugs are therefore listed as copy with no child
+links. The link block is wired when Family 4 publishes.
+
+### /pricing/ — page 323, published at /pricing/
+
+`/pricing/` is the only Family 8 URL that appears in both 6(a) and Appendix A,
+so it is safe to build. Assigned `cnf_family` term f8.
+
+No copy-paste exemplar exists for `/pricing/` itself; the 6(a) exemplar is the
+child `/pricing/nil-t2-filing-cost/`. The page uses the Section 5.1 exact
+sentences for price, payment security, scope, overflow and excluded filings,
+plus the F8 rule "Both fee lines on every cost page". H1 and title tag are
+Navneet's, written to the exemplar's pattern, and need Sharad's sign-off.
+
+Fee table states $300.00 plus HST, $39.00 HST, $339.00 total, per the
+2026-09-30 price decision rather than the plan's "$300.00 including HST".
+
+### /reviews/ — NOT built. Four blockers.
+
+Navneet asked for the reviews hub in this round. It was not built because:
+
+1. Family 11 is due **November 6, 2026**, not October 9.
+2. The 6(a) exemplar is `/reviews/toronto/`, not the hub, and carries the gate
+   "Publishes at 5 verified reviews, no review schema."
+3. The 6(g) claim-consistency rule bars publishing any review count until a
+   single figure is agreed across all three sites and Sharad signs the audit.
+   gondaliyacpa.ca currently shows 500+ in one place and 1300+ in another.
+4. Rule 6 keeps Trustindex rich snippets off.
+
+`/guides/` is the better third page for this batch; it is in the October 9 set.
+
+### Plan conflicts found while building
+
+- **F8 post type.** 6(a) line 1146 and the sitemap table line 1308 both say
+  Family 8 is the native `page` type in `page-sitemap.xml`. Section 4.2 line 315
+  says it is a `nil_cost` custom post type with rewrite base `cost` and its own
+  `nil_cost-sitemap.xml`. Two of three say page, so `/pricing/` was built as a
+  page. The 15 Family 8 URLs cannot be built until this is settled.
+- **F8 URL scheme.** 6(a) uses `/pricing/<slug>/`. Appendix A uses
+  `/nil-t2-return-cost-<place>/` plus `/pricing/` and
+  `/price-transparency-promise/`. Only `/pricing/` is common to both.
+- **Price meta not writable on pages.** `cnf_price_incl_hst`,
+  `cnf_hst_component`, `cnf_net_revenue` and `cnf_overflow_price_incl_hst` are
+  registered against `nil_cost`, not `page`, so the REST call silently ignored
+  them. The figures are in the body copy instead. This resolves itself once the
+  F8 post-type conflict above is settled.
+- **`cnf_price_incl_hst` is now misnamed.** The price is HST-exclusive under the
+  2026-09-30 decision. The key name says the opposite.
+
+### Plan document is incomplete
+
+The supplied plan contains Scope, the dated build schedule, and Sections 2, 4,
+5, 6, 7, 8, 12, 13 and Appendix A. **Sections 1, 3, 9, 10 and 11 are absent.**
+There is consequently no home page copy specification anywhere in the document,
+only the checkout copy in Section 2. The home page is in the October 9 batch.
+Request the missing sections from Sharad Gondaliya.
