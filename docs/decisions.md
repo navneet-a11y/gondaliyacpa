@@ -563,3 +563,50 @@ the delivery route.
 
 `_elementor_data` itself is writable through the connector; the constraint is
 payload size, not permission.
+
+## 2026-10-07 — /services/ and /reviews/ set to full-width Elementor layout
+
+**Done by:** Claude on Navneet's instruction after the Services template was
+imported and rendered boxed.
+
+The imported hero showed white gutters left and right and a gap above the
+banner. The cause was not the template: every container in the hero already
+carries `content_width: full`. It was Astra wrapping the page in a normal-width
+container. Fixed on both pages 321 and 326:
+
+| Setting | Value |
+|---|---|
+| `template` | `elementor_header_footer` (Elementor Full Width, header and footer kept) |
+| `site-content-layout` | `page-builder` |
+| `ast-site-content-layout` | `full-width-container` |
+| `site-post-title` | `disabled` |
+| `ast-breadcrumbs-content` | `disabled` |
+| `site-sidebar-layout` | `no-sidebar` |
+
+`site-post-title` was previously unset, which meant Astra rendered the page title
+as a second H1 above the hero's own "Our Nil T2 Filing Services". Disabling it
+removes the duplicate heading as well as the space.
+
+Page 326 was configured the same way before its template is imported, so it
+renders full width from the first insert.
+
+### Contrast defect in the imported hero
+
+Hero widget `4b16a5ad`, carrying "Registered EFILE electronic filer. Your CRA
+confirmation is emailed within 3 business days.", had no `text_color` set. It
+inherited the global body grey and rendered low-contrast over the dark hero
+photograph, which fails the WCAG 2.1 AA 4.5:1 requirement the plan sets for the
+November 18, 2026 audit.
+
+Fixed two ways:
+
+1. **Live**, through `_elementor_page_settings.custom_css` on page 321, a small
+   payload that writes cleanly through the connector where the 90 KB
+   `_elementor_data` cannot. No re-import needed.
+2. **At source**, with a `force_contrast` pass added to both transform scripts.
+   Any hero text-editor, heading or image-box without an explicit colour is now
+   set to `#FFFFFF` before the import file is written, so a future re-import
+   carries the fix.
+
+Both import files regenerated. Elementor caches generated CSS, so after a change
+of this kind run Elementor, Tools, Regenerate CSS, then purge LiteSpeed.
