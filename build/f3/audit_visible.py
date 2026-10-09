@@ -30,9 +30,13 @@ BAN=[('CRA wording',r'CRA[- ](authorized|agent|approved|partner|endorsed)|author
      ('review or year count',r'\b\d{3,}\+|\b1300\b|5[- ]star|\b\d+\+ ?years'),
      ('booking CTA',r'book a call|schedule a meeting|free consultation|contact us to start'),
      ('emoji',r'[☀-➿\U0001F000-\U0001FAFF✅]')]
-REQ=[('EFILE wording',r'[Rr]egistered EFILE electronic filer'),
-     ('price',r'\$300\.00 plus HST'),('overflow price',r'\$350\.00 including HST'),
-     ('not-nil scope',r'is not nil'),('CTA',r'Start Nil T2 Filing NOW'),
+# Required elements split by profile. Applying city-hub rules to every template
+# produced three false failures on the Services, Pricing and Reviews files,
+# which have no local data value by design.
+REQ_ALL=[('EFILE wording',r'[Rr]egistered EFILE electronic filer'),
+     ('price',r'\$300\.00 plus HST'),
+     ('not-nil scope',r'is not nil'),('CTA',r'Start Nil T2 Filing NOW')]
+REQ_CITYHUB=[('overflow price',r'\$350\.00 including HST'),
      ('local data value',r'PULL CORPORATION COUNT|T2 returns were assessed'),
      ('pull date caption',r'PULL DATE|Pulled ')]
 
@@ -43,7 +47,8 @@ for f in sorted(glob.glob(sys.argv[1])):
     blob=' || '.join(out)
     name=os.path.basename(f)
     probs=[n for n,p in BAN if re.search(p,blob,re.I)]
-    miss=[n for n,p in REQ if not re.search(p,blob)]
+    req=REQ_ALL+(REQ_CITYHUB if 'cityhub' in name else [])
+    miss=[n for n,p in req if not re.search(p,blob)]
     ext=[l for l in links if 'gondaliyacpa.ca' in l]
     if probs or miss or ext: fail+=1
     print(f'  {name:42s} {"FAIL" if (probs or miss or ext) else "OK  "} '

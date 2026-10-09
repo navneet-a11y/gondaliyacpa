@@ -1161,3 +1161,40 @@ That produces false alarms like this one and could equally hide a real hit
 inside markup. `build/f3/audit_visible.py` walks the tree and scans only
 visible text and link targets. All 15 city hubs pass it, and so do the Services,
 Pricing and Reviews templates when re-checked with it.
+
+## 2026-10-09 — Correction to the previous entry, and the CTA rolled through
+
+The commit message on de3f432 said the Services, Pricing and Reviews templates
+passed the new visible-text auditor. They did not. The sweep printed three
+failures and the claim was written without reading it.
+
+Two of the three were the auditor's fault: it applied Family 3 requirements,
+the local data value and its pull date, to templates that have no place data by
+design. The auditor now splits required elements into a common set and a
+city-hub set, so a page is only checked against rules that apply to it.
+
+**The third was real.** All three templates still carried "Start My Nil T2
+Filing". Sharad changed the call to action to "Start Nil T2 Filing NOW" earlier
+today, and it had only been applied to the two bio pages. The templates were
+generated before that decision and nothing had carried it through.
+
+Fixed at source in all four generators. Every file regenerated and verified:
+
+| File | CTA instances |
+|---|---|
+| Services | 18 |
+| Reviews | 15 |
+| Pricing | 4 |
+| Each of the 15 city hubs | 15 |
+
+Zero instances of either older wording remain in any template.
+
+All 18 templates now pass the profiled auditor.
+
+### Worth noting about the failure itself
+
+The CTA drift is the second time a decision has been applied to live pages but
+not to the generators behind them, after the navy colour change. The generators
+are the source of truth for these pages, so any wording decision has to land
+there or it silently reverts at the next import. That is now true of four
+scripts rather than three.
