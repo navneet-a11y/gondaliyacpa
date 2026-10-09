@@ -1008,3 +1008,49 @@ stays on both pages. It needs one decision from Sharad covering /about/,
   Whether the bio pages become the canonical Person URL is a schema decision for
   the November 18 deployment, not a content one.
 - `/our-cpas/`, the third F15 page naming both, is not built.
+
+## 2026-10-09 — Site email is info@corpnilfilingfor300.ca, not the plan's address
+
+**Decided by:** Navneet, who confirmed the corpnil mailbox now exists.
+**Deviation from the plan. Sharad Gondaliya's sign-off outstanding.**
+
+The 6(g) entity-consistency table at line 1602 specifies `info@gondaliyacpa.ca`
+for this site, with the note "Same mailbox across all three sites", and Section
+5.1's Office and hours element carries that address inside its exact on-page
+copy. The site now uses `info@corpnilfilingfor300.ca` instead.
+
+Changed on the two bio pages built today, two occurrences each:
+
+| Page | ID |
+|---|---|
+| Sharad Gondaliya, CPA | 473 |
+| Vandana Goel, CPA | 475 |
+
+### What this means for the entity audit
+
+6(g) runs a claim and entity audit on the first business day of every month,
+and a split address across one organisation is exactly what it looks for. The
+address also sits inside the AccountingService JSON-LD on /about/, so it reaches
+search engines, not just readers.
+
+Where each address currently appears:
+
+| Address | Pages |
+|---|---|
+| `info@corpnilfilingfor300.ca` | /about/ including its JSON-LD, the six service pages, and now both bio pages |
+| `info@gondaliyacpa.ca` | the Services, Pricing and Reviews Elementor templates, and the Contact page copy |
+
+Those remaining places still need switching before the site is consistent. The
+Elementor templates are fixed in the transform scripts, so they change at source
+and need a re-import; the Contact page is plain content.
+
+Because Section 5.1's Office and hours copy is marked "Exact on-page copy", this
+is a change to signed copy and not only a configuration choice. Sharad confirms
+it, and the plan's entity table is reissued with the corpnil address, or the
+site reverts to the gondaliyacpa mailbox.
+
+### Also reverted today, on Navneet's instruction
+
+Vandana Goel's direct line 647-250-0242 stays on the six service pages, against
+6(g) line 1603 "One number, no tracking substitutes". Recorded as a deviation,
+not an error.
