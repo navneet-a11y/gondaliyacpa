@@ -1099,3 +1099,65 @@ Accessibility Statement (249) were not searched or changed. CLAUDE.md puts
 legal page text out of scope: supplied by Sharad Gondaliya and published as
 supplied. If any of them carries the gondaliyacpa address, that is his to
 change, not a consistency fix to apply here.
+
+## 2026-10-09 — Family 3 city-hub template built as a generator
+
+Navneet asked for a service-area template. Built as a generator rather than a
+single file, because Family 3 is 15 pages and each one must carry a different
+local data value. A static template would be copied 15 times and the data value
+would be the thing that gets forgotten.
+
+`build/f3/build_cityhub.py` composes a city hub from the already-cleaned
+Services sections, so place pages share the same design system as /services/,
+/pricing/ and /reviews/. Element IDs are regenerated per file so nothing
+collides. Output: `build/elementor/cityhubs/`, 15 files, about 137 KB each.
+
+### Structure, and why each block is there
+
+| Block | Source |
+|---|---|
+| Hero, H1 "Nil T2 Filing in <Place>" | 6(a) F3 exemplar for /toronto/ |
+| Local data value and its source caption | 6(c) line 1211, the publish gate |
+| Four trust badges | Section 5.1 |
+| Twelve Family 4 service links for that place | 4.4 "Loop Grid lists the 12 Family 4 pages for that city" |
+| Jurisdiction note | Rule 8, varies by place |
+| Federal annual return note | Section 5.1 filings not covered |
+| Price block | Section 5.1, both fee lines |
+| Not-nil scope and overflow | Section 5.1 |
+| Closing CTA | 7.4 approved replacement, with Sharad's NOW wording |
+
+### The publish gate is enforced in the output
+
+6(c) line 1211: "No city hub publishes without a named repeatable local data
+source and a current data value", and "Data value carries its pull date in the
+visible caption."
+
+The twelve city files therefore carry `[[PULL CORPORATION COUNT]]` and
+`[[PULL DATE]]` rather than a plausible-looking number. A missing value is
+meant to be impossible to miss on the page. Navneet pulls the active federal
+corporation count per city from the Corporations Canada open-data bulk file,
+registered-office city field, monthly.
+
+The three jurisdiction hubs carry the CRA T2 assessment counts the plan itself
+supplies at line 1743: Ontario 1,108,730, Alberta 365,890, British Columbia
+413,630. Their pull dates still need filling.
+
+### Jurisdiction notes vary, per Rule 8
+
+Ontario places state the Ontario annual return through the Ontario Business
+Registry. Alberta states the AT1 as a separate provincial return not covered by
+the fee. British Columbia states a provincial annual report. A Quebec variant is
+in the script for when Family 4 reaches the 13 jurisdictions.
+
+### The audit was wrong, and is now fixed
+
+The first sweep failed British Columbia for a review count. The match was
+"1300" inside two randomly generated element IDs, `a130065a` and `b7413006`,
+not in any copy.
+
+Every banned-phrase check in this session until now scanned the raw Elementor
+JSON, which contains element IDs, style keys and colour values as well as copy.
+That produces false alarms like this one and could equally hide a real hit
+inside markup. `build/f3/audit_visible.py` walks the tree and scans only
+visible text and link targets. All 15 city hubs pass it, and so do the Services,
+Pricing and Reviews templates when re-checked with it.
