@@ -949,3 +949,62 @@ scope:
 Related: Section 2.9's 36-element order was written for one screen. If the
 three-page chain is accepted as final, that section no longer describes the
 build either, and the elements need reassigning across the three pages.
+
+## 2026-10-09 — Two Family 15 CPA bio pages built
+
+**Built by:** Claude on Navneet's instruction. **Sharad Gondaliya's sign-off
+outstanding on both.**
+
+| Page | ID | URL |
+|---|---|---|
+| Sharad Gondaliya, CPA | 473 | /sharad-gondaliya-cpa/ |
+| Vandana Goel, CPA | 475 | /vandana-goel-cpa/ |
+
+Both are Family 15 slugs from the 6(a) list, tagged `cnf_family` f15, with
+`cnf_legal_version` 1.0 and `cnf_effective_date_et` and `cnf_last_verified_et`
+set to 2026-10-09. Family 15 was due October 9, 2026, so these land on date.
+
+### The constraint that shaped them
+
+**The plan supplies no biography for either person.** It gives credentials,
+specialisms and role, and nothing else. There is no career history, no
+education, no firm history, and 6(g) line 1611 explicitly marks years in
+practice "not published until reconciled", as it does client count.
+
+These are therefore credential-and-role pages, not life stories. Nothing was
+invented to fill the gap. Everything on both pages traces to one of:
+
+- Section 5.1 Reviewing CPA and Second CPA rows, verbatim in the lead block
+- Schema Block 4 and Block 5 `knowsAbout` arrays, as the specialism lists
+- Schema Block 4 and Block 5 `hasCredential` entries, as the registration tables
+  including each issuing body
+- 6(g) for Firm Registration 61330051
+- Section 5.1 for the EFILE sentence, turnaround, work-performed-in-Canada,
+  office and hours, and complaints routing
+
+The one sentence not drawn from the plan is on Vandana's page, explaining that
+GIFI schedules and Schedule 50 are where a nil return's detail sits. It states
+the 10 per cent Schedule 50 threshold, which the plan gives at 6(e) in the
+Schedule 50 shareholder threshold checker. Flagged for Sharad as the only
+interpretive line on either page.
+
+### US licences, again
+
+Sharad's page carries Washington 57629 and Montana PAC-CPAP-LIC-033176, per
+Section 5.1 and schema Block 4. The 6(g) entity table at line 1608 says US
+licences are "Not published" on corpnilfilingfor300.ca, gondaliyacpa.ca only,
+with the note that they "are not relevant to a Canadian T2 service".
+
+This is the same contradiction recorded on 2026-10-06 for the About page.
+Navneet has twice instructed that the Canada and USA designation stays, so it
+stays on both pages. It needs one decision from Sharad covering /about/,
+/sharad-gondaliya-cpa/ and /our-cpas/ together rather than page by page.
+
+### Still outstanding
+
+- Rank Math title and meta description on both. The plan gives no exemplar for
+  either page; the F15 exemplar is /t183corp-signing-explained/.
+- Person schema. Blocks 4 and 5 both set `url` to `/about/`, not to these pages.
+  Whether the bio pages become the canonical Person URL is a schema decision for
+  the November 18 deployment, not a content one.
+- `/our-cpas/`, the third F15 page naming both, is not built.
