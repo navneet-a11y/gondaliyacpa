@@ -1054,3 +1054,48 @@ site reverts to the gondaliyacpa mailbox.
 Vandana Goel's direct line 647-250-0242 stays on the six service pages, against
 6(g) line 1603 "One number, no tracking substitutes". Recorded as a deviation,
 not an error.
+
+## 2026-10-09 — corpnil mailbox rolled out, payment flow untouched
+
+Navneet: change the address everywhere except anything payment-related.
+
+### Done
+
+| Where | How |
+|---|---|
+| Bio pages 473 and 475 | 2 occurrences each, plain content |
+| Contact us, page 190 | 3 occurrences, plain content |
+| Services, Reviews and Pricing templates | fixed in the transform scripts, files regenerated |
+
+All three import files verified: zero instances of the old address.
+
+### Deliberately not touched
+
+`/form/` (201), `/pay/` (209) and `/final-details/` (211). These carry the
+JotForm chain and the Stripe payment step. A reply-to or notification address
+inside a form is a different thing from a contact address on a page, and
+changing one mid-flow can break receipts or route a customer reply nowhere.
+If the forms do need the new address, that is a change inside JotForm, not
+WordPress, and Deepak owns those rows.
+
+### Still showing the old address
+
+| Where | Why it needs a manual edit |
+|---|---|
+| `/services/` page 321 | renders from `_elementor_data`; the post_content fix would not display |
+| `/reviews/` page 326 | same |
+| Footer template 138, "Gondaliya CPA Footer" | sitewide, so this is the most visible one left |
+| Library templates 348 and 351, the superseded "(plan-compliant)" versions | not in use; worth deleting so nobody imports them by mistake |
+| Library template 181, "Gondaliya CPA Contact Us" | not in use |
+
+The footer matters most: it appears on every page, which makes it the single
+largest source of the split. Re-importing the regenerated Services and Reviews
+templates fixes 321 and 326 at the same time.
+
+### Legal pages left alone on purpose
+
+Privacy Policy (3), Terms and Conditions (247), Disclaimer (248) and
+Accessibility Statement (249) were not searched or changed. CLAUDE.md puts
+legal page text out of scope: supplied by Sharad Gondaliya and published as
+supplied. If any of them carries the gondaliyacpa address, that is his to
+change, not a consistency fix to apply here.
