@@ -4,7 +4,7 @@
 - **Title:** Accounting and Tax Services for Pet Grooming Businesses
 - **H1:** Tax Accountant for Pet Grooming Businesses in Ontario and Across Canada
 - **Slug:** `accountant-for-pet-grooming-businesses`
-- **WordPress page ID:** 57029 (draft)
+- **WordPress page ID:** 57029 (published 2026-10-12)
 - **Primary keyword:** accountant for pet grooming businesses
 - **Secondary keywords:** CPA for pet grooming businesses; pet grooming businesses accountant Ontario; pet grooming businesses tax accountant Canada; flat fee accountant for pet grooming businesses; bookkeeping for pet grooming businesses; corporate tax return for pet grooming businesses
 

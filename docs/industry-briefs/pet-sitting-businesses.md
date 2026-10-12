@@ -4,7 +4,7 @@
 - **Title:** Accounting and Tax Services for Pet Sitting Businesses
 - **H1:** Tax Accountant for Pet Sitting Businesses in Ontario and Across Canada
 - **Slug:** `accountant-for-pet-sitting-businesses`
-- **WordPress page ID:** 57031 (draft)
+- **WordPress page ID:** 57031 (published 2026-10-12)
 - **Primary keyword:** accountant for pet sitting businesses
 - **Secondary keywords:** CPA for pet sitting businesses; pet sitting businesses accountant Ontario; pet sitting businesses tax accountant Canada; flat fee accountant for pet sitting businesses; bookkeeping for pet sitting businesses; corporate tax return for pet sitting businesses
 

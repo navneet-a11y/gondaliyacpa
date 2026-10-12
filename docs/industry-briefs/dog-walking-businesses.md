@@ -4,7 +4,7 @@
 - **Title:** Accounting and Tax Services for Dog Walking Businesses
 - **H1:** Tax Accountant for Dog Walking Businesses in Ontario and Across Canada
 - **Slug:** `accountant-for-dog-walking-businesses`
-- **WordPress page ID:** 57027 (draft)
+- **WordPress page ID:** 57027 (published 2026-10-12)
 - **Primary keyword:** accountant for dog walking businesses
 - **Secondary keywords:** CPA for dog walking businesses; dog walking businesses accountant Ontario; dog walking businesses tax accountant Canada; flat fee accountant for dog walking businesses; bookkeeping for dog walking businesses; corporate tax return for dog walking businesses
 
