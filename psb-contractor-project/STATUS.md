@@ -1,37 +1,74 @@
-# PSB Contractor Project: Status as of Monday, October 12, 2026
+# PSB Contractor Project: Status
 
-Source of truth: `package/` (Sharad's package dated October 3, 2026). Slugs, titles and figures are used exactly as given.
+Last update: Monday, October 12, 2026 (evening). Source of truth: `package/`. Slugs, titles and figures are used exactly as given.
 
-## Week 1 (due October 5 to 9): behind schedule
+## The 20 drafts (all status: draft, built October 12)
 
-| Task | Due | Status |
+All 20 are in WordPress as raw HTML (the same build style as existing pages), wrapped in `.psb-cluster` with the table gridline CSS inline. Each has:
+- the H1
+- the "Written by" line and "Last updated" date
+- the copy, with internal links
+- the Trustindex widget (pages only, `loader.js?3d7613063935419a40268ae9f69`, the same widget as 114 existing pages)
+- the FAQs
+- the "Reviewed by" line
+- the JSON-LD inline
+
+Page 7 has the calculator. Posts: author Sharad, categories Blog and Corporate Tax.
+
+Checks:
+- The stored content length on the server matches the source file byte for byte on all 20.
+- The visible text matches the package copy word for word on all 20.
+- The FAQ text matches the FAQ JSON-LD on all 20.
+- Calculator: $18,144, $76,095 and 11.70%, with no horizontal scroll at 360px.
+
+The IDs, preview links, focus keywords, SEO titles and meta descriptions are in `build/drafts-table.md`.
+
+| # | ID | Slug |
 |---|---|---|
-| Keyword.com validation and "PSB Contractors" project (40 keywords) | Oct 6 | Not checkable from here (no Keyword.com access) |
-| Sharad approval: page drafts and fix before/afters | Oct 6 | No written approval on file in this project |
-| 23 existing page fixes live | Oct 8 | 8 done, 5 partial, 10 not done. See `2026-10-12-existing-fixes-audit.md` |
-| Table CSS (`.psb-cluster`) in Astra Custom CSS | Oct 9 | Not checked |
-| 10 pages built as drafts with calculator, schema and Rank Math settings | Oct 9 | Not started: none of the 10 slugs exist in WordPress under any status |
-| Sharad approval: post drafts | Oct 9 | No written approval on file in this project |
+| Page 1 | 57063 | /psb-risk-incorporated-contractors/ |
+| Page 2 | 57084 | /accountant-for-it-contractors/ |
+| Page 3 | 57086 | /accountant-for-finance-contractors/ |
+| Page 4 | 57087 | /40-hour-contract-psb-risk/ |
+| Page 5 | 57083 | /contract-review-psb-indicators/ |
+| Page 6 | 57085 | /staffing-agency-contractor-tax/ |
+| Page 7 | 57088 | /psb-tax-cost-calculator/ |
+| Page 8 | 57089 | /salary-vs-dividend-incorporated-contractor/ |
+| Page 9 | 57094 | /cra-psb-review-support/ |
+| Page 10 | 57096 | /incorporated-contractor-accountant-toronto/ |
+| Post 1 | 57095 | /what-is-a-personal-services-business-canada/ |
+| Post 2 | 57097 | /40-hour-contract-incorporated-employee/ |
+| Post 3 | 57099 | /contract-hours-cra-control-test/ |
+| Post 4 | 57098 | /psb-tax-rate-ontario-2026/ |
+| Post 5 | 57100 | /wiebe-door-sagaz-tests-contractors/ |
+| Post 6 | 57102 | /psb-more-than-five-employees-exception/ |
+| Post 7 | 57104 | /contract-clauses-psb-risk/ |
+| Post 8 | 57101 | /finance-contractor-bank-agency-psb/ |
+| Post 9 | 57103 | /psb-reassessment-denied-deductions/ |
+| Post 10 | 57105 | /psb-risk-reduction-checklist/ |
 
-## Checks done on the package (October 12)
+## Existing page fixes (approved by Sharad)
 
-- Calculator (`package/05-Calculator`) passes all 3 roadmap tests in Chromium: $18,144 and $76,095 (Dec 31, 2027 year-end), 11.70% (Dec 31, 2026 year-end). No horizontal scroll at 360px.
-- All 20 JSON-LD blocks parse as valid JSON. Pages: AccountingService, Person, Service, BreadcrumbList, FAQPage. Posts: same, with Article in place of Service.
-- All 10 pages have exactly one `[TRUSTINDEX WIDGET]` line. The posts have none.
-
-## Existing page fixes: what is left (details in the audit file)
-
-| Row | URL (ID) | Left to do |
+| Row | URL (ID) | Status |
 |---|---|---|
-| 1-2 | /employee-vs-contractor-cost-calculator/ (48088) | 33.5% to 44.5% (2 visible, 1 JSON-LD) |
-| 3-5 | /should-mortgage-broker-incorporate-canada/ (post 49284) | Row 3 label "Deduction" to "Rate"; add the "(… before July 1, 2026)" notes in rows 4-5 |
-| 6 | same | "$600K federally" to "$500K federally" |
-| 12-16 | /acupuncturist-tax-planning-canada/ (post 49693) | 12.5% to 11.5%, the callout, $600,000 to $500,000 (not by blind replace: one FAQ asks "$500,000 or $600,000?") |
-| 17 | /team/sharad-gondaliya-cpa/ (25185) | postalCode M5H 4C9 to M5C 1R6 (Elementor data only, 4 places) |
-| 22 | exact sentence: 2 URLs only, 56807 and 54736 | 11 more pages have the "owner," (singular) variant. Needs Sharad's ruling |
-| 23 | Template | All 17 accountant-for-* pages created Oct 5-9 still state 12.2% as current. The template was not updated |
+| 1-2 | /employee-vs-contractor-cost-calculator/ (48088) | Done Oct 12: 33.5% to 44.5%, 1 + 2 replacements (FAQ and JSON-LD) |
+| 3-6 | /should-mortgage-broker-incorporate-canada/ (49284) | Done Oct 12: "Rate" label, "(3.2% before July 1, 2026)", "(12.2% before July 1, 2026)", $600K to $500K |
+| 7-11 | same | Already done on Oct 8 |
+| 12 | /acupuncturist-tax-planning-canada/ (49693) | Done Oct 12: visible FAQ and JSON-LD, approved wording |
+| 13-15 | same | Done Oct 12 |
+| 16 | same | Done Oct 12: FAQ (visible and JSON-LD) and Key Numbers, 3 places. Left as is: the FAQ "Is the business limit $500,000 or $600,000?" and the 2026 Update callout's note "$600,000 in three others". Neither is in the approved locations. The callout note is now out of date; flagged for Sharad |
+| 17 | /team/sharad-gondaliya-cpa/ (25185) | Manual: postalCode sits only in Elementor data (4 places), which the connector can't edit. See `MANUAL-CHECKLIST.md` |
+| 18-21 | truck dispatch (54117), customs brokers (54086) | Already done on Oct 8 |
+| 22 | Dry run sent for Sharad's review | Exact sentence on 2 URLs only: /accountant-for-product-design-studios/ (56807) and /accountant-for-fertility-clinics/ (54736). 11 more pages use "for the owner," (singular), which an exact-sentence replace would skip; they are covered in the row 23 sheet. Not applied until Sharad confirms the list |
+| 23 | 17 pages created Oct 5-9 still state 12.2% | Before and after for 60 sentences in `existing-fixes/row-23-before-after.md`. Not applied until Sharad approves |
 
-## Fixed dates still ahead
+## Next dates
 
-- Oct 13: Sharad reviews the built pages. Oct 14: pages go live, plus the 301 redirect (also in `astro/redirects.csv`). Oct 16: posts 1-5. Oct 20: posts 6-10. Oct 23: QA done and final sign-off.
-- Oct 26 to Nov 6: rate correction, in daily batches of 50 URLs. Nov 19: 30-day review. Dec 18: 60-day review.
+- **Tue Oct 13:** Sharad reviews the 10 built pages on draft preview.
+- **Wed Oct 14:** publish pages 1 to 10, pillar first. You set the 301 in Rank Math Redirections and move page 53131 to draft (it is already in `astro/redirects.csv`). Add the rule 8 link once page 2 is live, so the link never points at a draft.
+- **Thu Oct 15:** Sharad reviews posts 1 to 5. Featured images are still to do.
+- **Fri Oct 16:** publish posts 1 to 5.
+- **Mon Oct 19:** Sharad reviews posts 6 to 10.
+- **Tue Oct 20:** publish posts 6 to 10.
+- **Wed Oct 21 to Thu Oct 22:** QA of all 20 URLs.
+- **Fri Oct 23:** final sign-off.
+- **Oct 26 to Nov 6:** rate correction in batches of 50.
