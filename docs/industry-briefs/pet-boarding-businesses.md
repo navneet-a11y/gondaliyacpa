@@ -4,7 +4,7 @@
 - **Title:** Accounting and Tax Services for Pet Boarding Businesses
 - **H1:** Tax Accountant for Pet Boarding Businesses in Ontario and Across Canada
 - **Slug:** `accountant-for-pet-boarding-businesses`
-- **WordPress page ID:** 57028 (draft)
+- **WordPress page ID:** 57028 (published 2026-10-12)
 - **Primary keyword:** accountant for pet boarding businesses
 - **Secondary keywords:** CPA for pet boarding businesses; pet boarding businesses accountant Ontario; pet boarding businesses tax accountant Canada; flat fee accountant for pet boarding businesses; bookkeeping for pet boarding businesses; corporate tax return for pet boarding businesses
 
