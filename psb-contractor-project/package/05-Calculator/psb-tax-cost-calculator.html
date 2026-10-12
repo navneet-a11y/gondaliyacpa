@@ -1,0 +1,349 @@
+<style>
+#gcpa-psbc{box-sizing:border-box;max-width:780px;margin:0 auto;padding:20px;background:#ffffff;color:#1f2933;border:1px solid #c5ced8;border-radius:8px;font-family:inherit;font-size:16px;line-height:1.5;text-align:left;overflow-wrap:break-word}
+#gcpa-psbc *,#gcpa-psbc *::before,#gcpa-psbc *::after{box-sizing:border-box}
+#gcpa-psbc p{margin:0 0 12px}
+#gcpa-psbc .gcpa-psbc-title{margin:0 0 4px;font-size:20px;font-weight:700;line-height:1.3;color:#12324f}
+#gcpa-psbc .gcpa-psbc-intro{color:#3e4c59;font-size:15px}
+#gcpa-psbc .gcpa-psbc-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+#gcpa-psbc .gcpa-psbc-field{display:flex;flex-direction:column;min-width:0}
+#gcpa-psbc label{display:block;margin:0 0 4px;padding:0;font-size:15px;font-weight:600;line-height:1.35;color:#1f2933}
+#gcpa-psbc input{display:block;width:100%;max-width:100%;min-height:44px;margin:0;padding:8px 10px;font-family:inherit;font-size:16px;line-height:1.4;color:#1f2933;background:#ffffff;border:1px solid #7b8794;border-radius:6px;box-shadow:none}
+#gcpa-psbc input:focus{outline:2px solid #12324f;outline-offset:1px;border-color:#12324f}
+#gcpa-psbc input[aria-invalid="true"]{border-color:#b42318;background:#fffbfa}
+#gcpa-psbc .gcpa-psbc-help{display:block;margin:4px 0 0;font-size:13px;line-height:1.4;color:#52606d}
+#gcpa-psbc .gcpa-psbc-actions{margin:16px 0 0}
+#gcpa-psbc .gcpa-psbc-btn{display:inline-block;min-height:44px;margin:0;padding:10px 22px;font-family:inherit;font-size:16px;font-weight:600;line-height:1.2;color:#ffffff;background:#12324f;border:1px solid #12324f;border-radius:6px;cursor:pointer;text-transform:none;letter-spacing:normal;box-shadow:none}
+#gcpa-psbc .gcpa-psbc-btn:hover,#gcpa-psbc .gcpa-psbc-btn:focus{color:#ffffff;background:#1d4a73;border-color:#1d4a73}
+#gcpa-psbc .gcpa-psbc-btn:focus-visible{outline:2px solid #12324f;outline-offset:2px}
+#gcpa-psbc .gcpa-psbc-error{margin:16px 0 0;padding:10px 12px;border:1px solid #b42318;border-radius:6px;background:#fef3f2;color:#7a271a;font-size:15px}
+#gcpa-psbc .gcpa-psbc-error p{margin:0 0 4px}
+#gcpa-psbc .gcpa-psbc-results{margin:20px 0 0}
+#gcpa-psbc .gcpa-psbc-rate{margin:0 0 16px;padding:10px 12px;border:1px solid #c5ced8;border-radius:6px;background:#f5f7fa;font-size:15px}
+#gcpa-psbc .gcpa-psbc-rate strong{font-size:17px;color:#12324f}
+#gcpa-psbc .gcpa-psbc-tablewrap{width:100%;margin:0 0 18px;overflow-x:auto;-webkit-overflow-scrolling:touch}
+#gcpa-psbc table{width:100%;margin:0;border-collapse:collapse;border-spacing:0;border:1px solid #7b8794;background:#ffffff;font-size:15px}
+#gcpa-psbc caption{caption-side:top;margin:0;padding:0 0 6px;text-align:left;font-size:16px;font-weight:700;color:#12324f}
+#gcpa-psbc th,#gcpa-psbc td{padding:8px 10px;border:1px solid #7b8794;text-align:left;vertical-align:top;background:#ffffff;color:#1f2933;font-size:15px;line-height:1.4}
+#gcpa-psbc thead th{background:#e4e9ef;font-weight:700}
+#gcpa-psbc tbody th{font-weight:600}
+#gcpa-psbc thead th.gcpa-psbc-num,#gcpa-psbc td.gcpa-psbc-num{text-align:right}
+#gcpa-psbc td.gcpa-psbc-num{white-space:nowrap;font-variant-numeric:tabular-nums}
+#gcpa-psbc tr.gcpa-psbc-extra th,#gcpa-psbc tr.gcpa-psbc-extra td{background:#fff4e5;font-weight:700}
+#gcpa-psbc .gcpa-psbc-note{margin:-8px 0 18px;font-size:14px;color:#3e4c59}
+#gcpa-psbc .gcpa-psbc-notes{font-size:14px;color:#3e4c59}
+#gcpa-psbc .gcpa-psbc-notes p{margin:0 0 8px}
+#gcpa-psbc .gcpa-psbc-disclaimer{margin:16px 0 0;padding:12px 14px;border:1px solid #b7791f;border-radius:6px;background:#fffaeb;color:#1f2933;font-size:14px}
+#gcpa-psbc .gcpa-psbc-disclaimer p{margin:0}
+#gcpa-psbc .gcpa-psbc-disclaimer a{color:#12324f;text-decoration:underline;word-break:break-all}
+#gcpa-psbc [hidden]{display:none !important}
+@media (max-width:600px){
+#gcpa-psbc{padding:14px}
+#gcpa-psbc .gcpa-psbc-grid{grid-template-columns:1fr;gap:14px}
+#gcpa-psbc th,#gcpa-psbc td{padding:6px 7px;font-size:14px}
+#gcpa-psbc .gcpa-psbc-btn{width:100%}
+}
+</style>
+<div id="gcpa-psbc" class="gcpa-psbc">
+  <p class="gcpa-psbc-title">PSB tax cost calculator (Ontario)</p>
+  <p class="gcpa-psbc-intro">Compare corporate tax at the Ontario small business rate with the 44.5% personal services business (PSB) rate on the same income, with and without salary.</p>
+  <div class="gcpa-psbc-grid">
+    <div class="gcpa-psbc-field">
+      <label for="gcpa-psbc-income">Corporate income for the year before salary (CAD)</label>
+      <input id="gcpa-psbc-income" name="gcpa-psbc-income" type="text" inputmode="decimal" autocomplete="off" value="171000" aria-describedby="gcpa-psbc-income-help">
+      <span class="gcpa-psbc-help" id="gcpa-psbc-income-help">Contract revenue for the taxation year, before salary and other expenses. Leave out GST/HST.</span>
+    </div>
+    <div class="gcpa-psbc-field">
+      <label for="gcpa-psbc-expenses">Business expenses other than salary (CAD)</label>
+      <input id="gcpa-psbc-expenses" name="gcpa-psbc-expenses" type="text" inputmode="decimal" autocomplete="off" value="9000" aria-describedby="gcpa-psbc-expenses-help">
+      <span class="gcpa-psbc-help" id="gcpa-psbc-expenses-help">Rent, software, equipment, phone, insurance, accounting fees and similar costs.</span>
+    </div>
+    <div class="gcpa-psbc-field">
+      <label for="gcpa-psbc-salary">Salary paid to you by your corporation (CAD)</label>
+      <input id="gcpa-psbc-salary" name="gcpa-psbc-salary" type="text" inputmode="decimal" autocomplete="off" value="0" aria-describedby="gcpa-psbc-salary-help">
+      <span class="gcpa-psbc-help" id="gcpa-psbc-salary-help">Gross salary for the year. Enter 0 if you take dividends only or leave the money in the corporation.</span>
+    </div>
+    <div class="gcpa-psbc-field">
+      <label for="gcpa-psbc-yearend">Taxation year-end date</label>
+      <input id="gcpa-psbc-yearend" name="gcpa-psbc-yearend" type="date" value="2026-12-31" min="2021-01-01" max="2027-12-31" aria-describedby="gcpa-psbc-yearend-help">
+      <span class="gcpa-psbc-help" id="gcpa-psbc-yearend-help">Last day of your corporation's taxation year. A 12-month year is assumed.</span>
+    </div>
+  </div>
+  <div class="gcpa-psbc-actions">
+    <button type="button" class="gcpa-psbc-btn" id="gcpa-psbc-calc">Calculate</button>
+  </div>
+  <div class="gcpa-psbc-error" id="gcpa-psbc-error" role="alert" hidden></div>
+  <div class="gcpa-psbc-results" id="gcpa-psbc-results" aria-live="polite">
+    <p class="gcpa-psbc-rate">Small business rate applied for this year-end: <strong data-out="sbrate"></strong><br><span data-out="period"></span></p>
+    <div class="gcpa-psbc-tablewrap">
+      <table>
+        <caption>Scenario 1: Same income, no salary</caption>
+        <thead>
+          <tr><th scope="col">Item</th><th scope="col" class="gcpa-psbc-num">Not a PSB</th><th scope="col" class="gcpa-psbc-num">PSB</th></tr>
+        </thead>
+        <tbody>
+          <tr><th scope="row">Taxable income</th><td class="gcpa-psbc-num" data-out="s1-np-taxable"></td><td class="gcpa-psbc-num" data-out="s1-p-taxable"></td></tr>
+          <tr><th scope="row">Corporate tax</th><td class="gcpa-psbc-num" data-out="s1-np-tax"></td><td class="gcpa-psbc-num" data-out="s1-p-tax"></td></tr>
+          <tr><th scope="row">Effective rate on taxable income</th><td class="gcpa-psbc-num" data-out="s1-np-rate"></td><td class="gcpa-psbc-num" data-out="s1-p-rate"></td></tr>
+          <tr class="gcpa-psbc-extra"><th scope="row">Extra corporate tax if CRA treats the corporation as a PSB</th><td class="gcpa-psbc-num" colspan="2" data-out="s1-extra"></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="gcpa-psbc-tablewrap">
+      <table>
+        <caption>Scenario 2: With the salary you entered</caption>
+        <thead>
+          <tr><th scope="col">Item</th><th scope="col" class="gcpa-psbc-num">Not a PSB</th><th scope="col" class="gcpa-psbc-num">PSB</th></tr>
+        </thead>
+        <tbody>
+          <tr><th scope="row">Taxable income</th><td class="gcpa-psbc-num" data-out="s2-np-taxable"></td><td class="gcpa-psbc-num" data-out="s2-p-taxable"></td></tr>
+          <tr><th scope="row">Corporate tax</th><td class="gcpa-psbc-num" data-out="s2-np-tax"></td><td class="gcpa-psbc-num" data-out="s2-p-tax"></td></tr>
+          <tr><th scope="row">Effective rate on taxable income</th><td class="gcpa-psbc-num" data-out="s2-np-rate"></td><td class="gcpa-psbc-num" data-out="s2-p-rate"></td></tr>
+          <tr class="gcpa-psbc-extra"><th scope="row">Extra corporate tax if CRA treats the corporation as a PSB</th><td class="gcpa-psbc-num" colspan="2" data-out="s2-extra"></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="gcpa-psbc-note" data-out="s2-note">You entered no salary, so Scenario 2 matches Scenario 1. Enter a salary to see how it changes the result.</p>
+    <div class="gcpa-psbc-notes">
+      <p>PSB column: business expenses other than salary are treated as denied under paragraph 18(1)(p) of the Income Tax Act. Salary paid to you is still deducted. If some costs are benefits or allowances for you or other allowed items, the real PSB figure would be lower.</p>
+      <p>Not a PSB column: the small business rate applies to the first $500,000 of taxable income and 26.5% applies to any amount above that.</p>
+      <p>Assumptions: an Ontario corporation, a 12-month taxation year, the full $500,000 small business limit (no associated corporations), a 9% federal small business rate, an Ontario small business rate of 3.2% before July 1, 2026 and 2.2% from July 1, 2026, and no change in current rates for later years.</p>
+    </div>
+  </div>
+  <div class="gcpa-psbc-disclaimer">
+    <p><strong>Please note:</strong> Results are estimates only and are not tax or legal advice. They do not tell you whether your corporation is a PSB. They cover corporate tax only and leave out personal tax on salary or dividends, CPP, EI and the passive income rules. Please book a consultation at <a href="https://gondaliyacpa.ca/consultation/">https://gondaliyacpa.ca/consultation/</a> for a review of your facts.</p>
+  </div>
+</div>
+<script>
+(function () {
+  'use strict';
+
+  var RATES = {
+    federalSmall: 0.09,
+    ontarioSmallBefore: 0.032,
+    ontarioSmallAfter: 0.022,
+    general: 0.265,
+    psb: 0.445,
+    smallBusinessLimit: 500000
+  };
+  var DAY_MS = 86400000;
+  var CUT_UTC = Date.UTC(2026, 6, 1);
+  var MIN_YEAR_END_UTC = Date.UTC(2021, 0, 1);
+  var MAX_YEAR_END_UTC = Date.UTC(2027, 11, 31);
+  var MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July',
+    'August', 'September', 'October', 'November', 'December'];
+
+  function parseIsoDate(value) {
+    var m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(String(value == null ? '' : value).trim());
+    if (!m) { return null; }
+    var y = Number(m[1]);
+    var mo = Number(m[2]);
+    var d = Number(m[3]);
+    var utc = Date.UTC(y, mo - 1, d);
+    var check = new Date(utc);
+    if (check.getUTCFullYear() !== y || check.getUTCMonth() !== mo - 1 || check.getUTCDate() !== d) {
+      return null;
+    }
+    return { y: y, m: mo, d: d, utc: utc };
+  }
+
+  function daysInMonth(year, month1to12) {
+    return new Date(Date.UTC(year, month1to12, 0)).getUTCDate();
+  }
+
+  /* Taxation year = year-end minus one year plus one day, through the year-end. */
+  function taxationYear(yearEnd) {
+    var e = parseIsoDate(yearEnd);
+    if (!e) { return null; }
+    var prevYear = e.y - 1;
+    var prevDay = Math.min(e.d, daysInMonth(prevYear, e.m));
+    var startUTC = Date.UTC(prevYear, e.m - 1, prevDay) + DAY_MS;
+    var endExclusiveUTC = e.utc + DAY_MS;
+    var totalDays = Math.round((endExclusiveUTC - startUTC) / DAY_MS);
+    var daysBefore = Math.round((CUT_UTC - startUTC) / DAY_MS);
+    daysBefore = Math.max(0, Math.min(totalDays, daysBefore));
+    var daysAfter = totalDays - daysBefore;
+    var smallRate = RATES.federalSmall +
+      (daysBefore * RATES.ontarioSmallBefore + daysAfter * RATES.ontarioSmallAfter) / totalDays;
+    return {
+      startUTC: startUTC,
+      endUTC: e.utc,
+      totalDays: totalDays,
+      daysBefore: daysBefore,
+      daysAfter: daysAfter,
+      smallRate: smallRate
+    };
+  }
+
+  function round2(x) {
+    return Math.round(x * 100) / 100;
+  }
+
+  function taxNotPSB(taxable, smallRate) {
+    var small = Math.min(taxable, RATES.smallBusinessLimit);
+    var above = Math.max(0, taxable - RATES.smallBusinessLimit);
+    return small * smallRate + above * RATES.general;
+  }
+
+  function scenario(income, expenses, salary, smallRate) {
+    var npTaxable = Math.max(0, income - expenses - salary);
+    var npTax = round2(taxNotPSB(npTaxable, smallRate));
+    var pTaxable = Math.max(0, income - salary);
+    var pTax = round2(pTaxable * RATES.psb);
+    return {
+      notPSB: { taxable: npTaxable, tax: npTax, effectiveRate: npTaxable > 0 ? npTax / npTaxable : 0 },
+      psb: { taxable: pTaxable, tax: pTax, effectiveRate: pTaxable > 0 ? pTax / pTaxable : 0 },
+      extra: round2(pTax - npTax)
+    };
+  }
+
+  /* Pure calculation. input: { income, expenses, salary (numbers), yearEnd ('YYYY-MM-DD') } */
+  function calculate(input) {
+    var errors = [];
+    var labels = { income: 'Corporate income', expenses: 'Business expenses', salary: 'Salary' };
+    var keys = ['income', 'expenses', 'salary'];
+    for (var i = 0; i < keys.length; i++) {
+      var v = input[keys[i]];
+      if (typeof v !== 'number' || !isFinite(v)) {
+        errors.push({ field: keys[i], message: labels[keys[i]] + ' must be a number. Please enter 0 if there is none.' });
+      } else if (v < 0) {
+        errors.push({ field: keys[i], message: labels[keys[i]] + ' cannot be a negative number.' });
+      }
+    }
+    if (!errors.length && input.salary > input.income) {
+      errors.push({ field: 'salary', message: 'Salary cannot be more than corporate income.' });
+    }
+    var ty = taxationYear(input.yearEnd);
+    if (!ty) {
+      errors.push({ field: 'yearend', message: 'Please enter a valid taxation year-end date.' });
+    } else if (ty.endUTC < MIN_YEAR_END_UTC || ty.endUTC > MAX_YEAR_END_UTC) {
+      errors.push({ field: 'yearend', message: 'Please choose a year-end on or after January 1, 2021 and no later than December 31, 2027. Rates after 2027 are not yet announced.' });
+    }
+    if (errors.length) { return { ok: false, errors: errors }; }
+    return {
+      ok: true,
+      taxYear: ty,
+      smallRate: ty.smallRate,
+      scenario1: scenario(input.income, input.expenses, 0, ty.smallRate),
+      scenario2: scenario(input.income, input.expenses, input.salary, ty.smallRate)
+    };
+  }
+
+  function parseAmount(value) {
+    var s = String(value == null ? '' : value).replace(/[\s,$]/g, '');
+    if (!/^-?(\d+\.?\d*|\.\d+)$/.test(s)) { return NaN; }
+    return Number(s);
+  }
+
+  function money(x) {
+    return x.toLocaleString('en-CA', { style: 'currency', currency: 'CAD' });
+  }
+
+  function pct(r) {
+    return (r * 100).toFixed(2) + '%';
+  }
+
+  function formatDate(utc) {
+    var d = new Date(utc);
+    return MONTHS[d.getUTCMonth()] + ' ' + d.getUTCDate() + ', ' + d.getUTCFullYear();
+  }
+
+  function periodText(ty) {
+    var before = ((RATES.federalSmall + RATES.ontarioSmallBefore) * 100).toFixed(1) + '%';
+    var after = ((RATES.federalSmall + RATES.ontarioSmallAfter) * 100).toFixed(1) + '%';
+    var parts = [];
+    if (ty.daysBefore > 0) { parts.push(ty.daysBefore + ' days at ' + before); }
+    if (ty.daysAfter > 0) { parts.push(ty.daysAfter + ' days at ' + after); }
+    return 'Taxation year ' + formatDate(ty.startUTC) + ' to ' + formatDate(ty.endUTC) +
+      ' (' + ty.totalDays + ' days): ' + parts.join(' and ') + '.';
+  }
+
+  function init() {
+    var k;
+    var root = document.getElementById('gcpa-psbc');
+    if (!root || root.getAttribute('data-gcpa-ready') === '1') { return; }
+    root.setAttribute('data-gcpa-ready', '1');
+
+    var fields = {
+      income: document.getElementById('gcpa-psbc-income'),
+      expenses: document.getElementById('gcpa-psbc-expenses'),
+      salary: document.getElementById('gcpa-psbc-salary'),
+      yearend: document.getElementById('gcpa-psbc-yearend')
+    };
+    var errorBox = document.getElementById('gcpa-psbc-error');
+    var results = document.getElementById('gcpa-psbc-results');
+    var button = document.getElementById('gcpa-psbc-calc');
+    if (!fields.income || !fields.expenses || !fields.salary || !fields.yearend || !errorBox || !results) { return; }
+
+    var outs = {};
+    var nodes = root.querySelectorAll('[data-out]');
+    for (var i = 0; i < nodes.length; i++) {
+      outs[nodes[i].getAttribute('data-out')] = nodes[i];
+    }
+    function setText(key, text) {
+      if (outs[key]) { outs[key].textContent = text; }
+    }
+    function fill(prefix, s) {
+      setText(prefix + '-np-taxable', money(s.notPSB.taxable));
+      setText(prefix + '-p-taxable', money(s.psb.taxable));
+      setText(prefix + '-np-tax', money(s.notPSB.tax));
+      setText(prefix + '-p-tax', money(s.psb.tax));
+      setText(prefix + '-np-rate', pct(s.notPSB.effectiveRate));
+      setText(prefix + '-p-rate', pct(s.psb.effectiveRate));
+      setText(prefix + '-extra', money(s.extra));
+    }
+
+    function run() {
+      var input = {
+        income: parseAmount(fields.income.value),
+        expenses: parseAmount(fields.expenses.value),
+        salary: parseAmount(fields.salary.value),
+        yearEnd: fields.yearend.value
+      };
+      var r = calculate(input);
+      for (k in fields) {
+        if (Object.prototype.hasOwnProperty.call(fields, k)) { fields[k].removeAttribute('aria-invalid'); }
+      }
+      if (!r.ok) {
+        while (errorBox.firstChild) { errorBox.removeChild(errorBox.firstChild); }
+        for (var j = 0; j < r.errors.length; j++) {
+          var p = document.createElement('p');
+          p.textContent = r.errors[j].message;
+          errorBox.appendChild(p);
+          if (fields[r.errors[j].field]) { fields[r.errors[j].field].setAttribute('aria-invalid', 'true'); }
+        }
+        errorBox.hidden = false;
+        results.hidden = true;
+        return;
+      }
+      errorBox.hidden = true;
+      results.hidden = false;
+      setText('sbrate', pct(r.smallRate));
+      setText('period', periodText(r.taxYear));
+      fill('s1', r.scenario1);
+      fill('s2', r.scenario2);
+      if (outs['s2-note']) { outs['s2-note'].hidden = input.salary !== 0; }
+    }
+
+    if (button) { button.addEventListener('click', run); }
+    for (k in fields) {
+      if (Object.prototype.hasOwnProperty.call(fields, k)) {
+        fields[k].addEventListener('input', run);
+        fields[k].addEventListener('change', run);
+      }
+    }
+    run();
+  }
+
+  if (typeof window === 'undefined' && typeof module === 'object' && module && module.exports) {
+    module.exports = { calculate: calculate, taxationYear: taxationYear, parseAmount: parseAmount, RATES: RATES };
+  }
+
+  if (typeof document !== 'undefined' && document.getElementById) {
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', init);
+    } else {
+      init();
+    }
+  }
+})();
+</script>

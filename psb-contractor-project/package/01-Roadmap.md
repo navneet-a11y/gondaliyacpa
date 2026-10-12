@@ -1,0 +1,35 @@
+# Output 1: Roadmap (3 weeks, Monday, October 5, 2026 to Friday, October 23, 2026)
+
+Responsible person for every build, publishing, SEO and reporting task: Navneet. CPA review and sign-off: Sharad. Monday, October 12, 2026 is Thanksgiving, so week 2 runs Tuesday to Friday. Pages go live on Wednesday, October 14, 2026. Posts 1 to 5 go live on Friday, October 16, 2026. Posts 6 to 10 go live on Tuesday, October 20, 2026. The 30-day and 60-day reviews stay time-based, because Google needs that time to index and rank the pages.
+
+| Week | Dates | Task | Owner | Deliverable | Done check |
+|---|---|---|---|---|---|
+| 1 | Mon Oct 5 to Tue Oct 6, 2026 | Validate the 20 primary keywords and the 20 secondary tracking keywords in Keyword.com (Google.ca, Toronto) | Navneet | Keyword validation sheet, one row per URL | 20 of 20 confirmed, or a swap sent to Sharad by Tue Oct 6 |
+| 1 | Mon Oct 5 to Tue Oct 6, 2026 | Keyword.com rank tracking setup: project "PSB Contractors", 40 keywords, Google.ca, Toronto, desktop and mobile | Navneet | Tracking project live | Baseline report saved on Tue Oct 6 |
+| 1 | Mon Oct 5 to Tue Oct 6, 2026 | CPA review of the 10 page drafts and the before and after of the 23 existing page fixes | Sharad | Written approval | Approved by Tue Oct 6 |
+| 1 | Wed Oct 7 to Thu Oct 8, 2026 | Existing page fixes 1 to 23 from the Existing Page Fixes file, FAQ JSON-LD matched to the visible text | Navneet | 23 fixes live | 23 of 23 live by Thu Oct 8 |
+| 1 | Mon Oct 5 to Fri Oct 9, 2026 | Add the table CSS from Output 5. Build pages 1 to 10 as Elementor drafts with the exact slugs, SEO titles, meta descriptions, H1s, copy and Trustindex widget. Load the page 7 calculator into an Elementor HTML widget | Navneet | 10 draft pages and a working calculator | Slug, title, meta and H1 match on 10 of 10. Calculator shows $18,144, $76,095 and 11.70% for the three test cases, with no horizontal scroll at 360px |
+| 1 | Mon Oct 5 to Fri Oct 9, 2026 | JSON-LD as Rank Math custom schema, focus keyword per URL, pillar content on page 1, breadcrumbs on | Navneet | Schema and Rank Math settings on 10 drafts | Rich Results Test shows 0 errors on 10 of 10 |
+| 1 | Wed Oct 7 to Fri Oct 9, 2026 | CPA review of the 10 post drafts | Sharad | Written approval | Approved by Fri Oct 9 |
+| 2 | Tue Oct 13, 2026 | CPA review of the 10 built pages on draft preview | Sharad | Sign-off on 10 built pages | 10 of 10 approved by Tue Oct 13 |
+| 2 | Tue Oct 13 to Wed Oct 14, 2026 | Build posts 1 to 5 with featured images (two-line headlines), schema and Rank Math settings | Navneet | 5 draft posts | Title, slug, meta and image headline match on 5 of 5 |
+| 2 | Wed Oct 14, 2026 | Publish pages 1 to 10, pillar first | Navneet | 10 live URLs | 10 of 10 load and appear in sitemap_index.xml |
+| 2 | Wed Oct 14, 2026 | 301 redirect from /personal-services-business-tax-calculator/ to /psb-tax-cost-calculator/ in Rank Math Redirections. Move the old page to draft, do not delete it. Add the redirect to the Astro migration redirect list | Navneet | Redirect live | Old URL returns 301 to page 7 |
+| 2 | Wed Oct 14, 2026 | Google Search Console submission of the 10 pages through the Make.com scenario "GSC Submit URL & Triple Check". Add the 10 page entries to llms.txt | Navneet | 10 scenario runs and updated llms.txt | Pass 3 logged for 10 of 10. 10 entries live at https://gondaliyacpa.ca/llms.txt |
+| 2 | Wed Oct 14 to Thu Oct 15, 2026 | Link Whisper: the 54 planned page links, one link from /software-development-it-consultants/ to /accountant-for-it-contractors/, and inbound links from existing pages (links only, no wording changes) | Navneet | Link Whisper report | Every new page has at least 5 inbound links. 0 broken links |
+| 2 | Thu Oct 15, 2026 | CPA review of built posts 1 to 5 | Sharad | Sign-off on 5 built posts | 5 of 5 approved by Thu Oct 15 |
+| 2 | Thu Oct 15 to Fri Oct 16, 2026 | Build posts 6 to 10 with featured images, schema and Rank Math settings | Navneet | 5 draft posts | Same checks as posts 1 to 5 |
+| 2 | Fri Oct 16, 2026 | Publish posts 1 to 5. Link Whisper links. GSC submission through the Make.com scenario. llms.txt entries | Navneet | 5 live posts | Pass 3 logged for 5 of 5 |
+| 2 | Fri Oct 16, 2026 | Short.io links for the 10 pages and posts 1 to 5. Blog2Social: schedule LinkedIn posts 1 to 5, one per weekday from Mon Oct 19 to Fri Oct 23 | Navneet | 15 Short.io links and 5 scheduled LinkedIn posts | Each LinkedIn post uses its Short.io link |
+| 3 | Mon Oct 19, 2026 | CPA review of built posts 6 to 10 | Sharad | Sign-off on 5 built posts | 5 of 5 approved by Mon Oct 19 |
+| 3 | Tue Oct 20, 2026 | Publish posts 6 to 10. Link Whisper links. GSC submission through the Make.com scenario. llms.txt entries | Navneet | 5 live posts and 20 llms.txt entries | Pass 3 logged for 5 of 5 |
+| 3 | Tue Oct 20, 2026 | Short.io links for posts 6 to 10. Blog2Social: schedule LinkedIn posts 6 to 10, one per weekday from Mon Oct 26 to Fri Oct 30 | Navneet | 5 Short.io links and 5 scheduled LinkedIn posts | Each LinkedIn post uses its Short.io link |
+| 3 | Mon Oct 19 to Wed Oct 21, 2026 | HubSpot "Source page" hidden field on the consultation form and Calendly utm_content, as set out in Output 5 | Navneet | Source-page tracking live | A test booking shows the source URL in HubSpot |
+| 3 | Wed Oct 21 to Thu Oct 22, 2026 | QA of all 20 URLs: schema, firm name, address and phone, tables with both gridlines, Trustindex widget, CTA links, mobile view, redirect | Navneet | QA sheet | 20 of 20 pass |
+| 3 | Fri Oct 23, 2026 | First ranking snapshot in Keyword.com and GSC query check | Navneet | Snapshot report | Sent to Sharad by Fri Oct 23 |
+| 3 | Fri Oct 23, 2026 | Final sign-off of the 3-week program | Sharad | Signed-off program | Every row above checked |
+| Rate correction | Mon Oct 26, 2026 | List of every existing URL that shows 12.2% or 3.2% as the current rate, with the before and after for each, in daily batches of 50 URLs | Navneet | Batch sheets | First batch sent Mon Oct 26 |
+| Rate correction | Mon Oct 26 to Thu Nov 5, 2026 | CPA review of each batch within one business day | Sharad | Approved batches | Every batch approved within one business day |
+| Rate correction | Tue Oct 27 to Fri Nov 6, 2026 | Apply the approved corrections using the rules in the Existing Page Fixes file. Replace 0.122 and 0.032 in calculator code with the day-prorated logic from page 7. Match FAQ JSON-LD | Navneet | Corrected URLs | 0 pages state 12.2% or 3.2% as the current rate by Fri Nov 6 |
+| 30-day review | Thu Nov 19, 2026 | 30-day review of all 20 URLs: Keyword.com ranks, GSC impressions, clicks and CTR, HubSpot and Calendly consultations by source page | Navneet | 30-day report with actions | Actions agreed with Sharad |
+| 60-day review | Fri Dec 18, 2026 | 60-day review: rankings, overlap check between page 4 and posts 2 and 3 and between page 5 and post 7, and a rate check of all 20 URLs and the calculator for 2027 | Navneet | Keep, merge or refresh decision for each URL | Decisions agreed with Sharad |
