@@ -72,3 +72,24 @@ The IDs, preview links, focus keywords, SEO titles and meta descriptions are in 
 - **Wed Oct 21 to Thu Oct 22:** QA of all 20 URLs.
 - **Fri Oct 23:** final sign-off.
 - **Oct 26 to Nov 6:** rate correction in batches of 50.
+
+## Featured images (October 13)
+
+All 10 images are 1200x630 JPEGs in the existing Security Company format. Files and template are in `featured/`.
+
+| Post | Post ID | Media ID | File size check |
+|---|---|---|---|
+| 1 | 57095 | 57125 | 75,663 bytes, matches |
+| 2 | 57097 | 57126 | 74,703 bytes, matches |
+| 3 | 57099 | 57127 | 68,716 bytes, matches |
+| 4 | 57098 | 57132 | 71,619 bytes, matches |
+| 5 | 57100 | 57133 | 67,098 bytes, matches |
+| 6 | 57102 | 57136 | 75,163 bytes, matches |
+| 7 | 57104 | 57137 | 68,729 bytes, matches |
+| 8 | 57101 | 57140 | 76,020 bytes, matches |
+| 9 | 57103 | 57141 | 72,634 bytes, matches |
+| 10 | 57105 | Not uploaded: the server kept refusing it. Upload `featured/jpg/PSB-Risk-Checklist-Featured-20-October-2026.jpg` by hand | |
+
+Cleanup for Navneet:
+- Delete media 57124. It is a broken partial upload from the first test.
+- The failed post 8 attempts may have left orphan files (Finance-Contractor-PSB-Featured-20-October-2026.jpg and -1.jpg) in wp-content/uploads/2026/10.
