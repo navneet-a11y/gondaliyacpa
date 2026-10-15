@@ -8,7 +8,7 @@
 - Governed by `docs/industry-briefs/cross-border-spine.md`. **Name the form and the mechanism,
   never state a United States figure.**
 - City-card label: `Snowbird Tax Accountant in`
-- Status: **DRAFT** created 2026-10-15, page ID **57362**, 115,963 bytes stored and byte-verified against the local build. Preview: https://gondaliyacpa.ca/?page_id=57362
+- Status: **PUBLISHED** 2026-10-15, page ID **57362**, 115,963 bytes stored and verified unchanged after publish. Live at https://gondaliyacpa.ca/accountant-for-snowbirds/
 
 ## The angle — three subjects no other page in this category touches
 

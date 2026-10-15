@@ -7,7 +7,7 @@
 - Governed by `docs/industry-briefs/cross-border-spine.md`. **Name the form and the mechanism,
   never state a United States figure.**
 - City-card label: `Dual Citizen Tax Accountant in`
-- Status: **DRAFT** created 2026-10-15, page ID **57368**, 115,726 bytes stored and byte-verified against the local build. Preview: https://gondaliyacpa.ca/?page_id=57368
+- Status: **PUBLISHED** 2026-10-15, page ID **57368**, 115,726 bytes stored and verified unchanged after publish. Live at https://gondaliyacpa.ca/accountant-for-dual-citizens/
 
 ## The overlap problem, stated honestly
 
