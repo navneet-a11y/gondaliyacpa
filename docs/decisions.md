@@ -1580,3 +1580,53 @@ strings and the survival of the JSON-LD block.
 
 Astra meta on both: `page-builder`, `full-width-container`, title and breadcrumbs
 disabled.
+
+## 2026-10-15 — Ontario hub and its six service pages given the service-page banner
+
+Navneet asked for the Ontario cluster to carry a banner like the other service pages.
+None of the seven had one: the hub opened with a navy H1 on white, and the six
+service x place pages opened with a breadcrumb and byline.
+
+The reference is the root service pages (436 and its siblings), whose Elementor hero
+is media 180, `business-executives-having-meeting_1098-18316.jpg`, `center center`,
+`cover`, with a `#0B1A33` overlay at 0.82. That is reproduced in CSS as a
+`linear-gradient(rgba(11,26,51,.82) ...)` over the same image, so the whole cluster
+matches without needing Elementor.
+
+| ID | URL | Type |
+|---|---|---|
+| 516 | /ontario/ | hub, was Elementor, now HTML |
+| 512 | /nil-t2-filing-ontario/ | nil_service_place |
+| 715 | /catch-up-nil-t2-filing-ontario/ | nil_service_place |
+| 716 | /dormant-corporation-filing-ontario/ | nil_service_place |
+| 717 | /final-t2-before-dissolution-ontario/ | nil_service_place |
+| 718 | /t2-short-filing-ontario/ | nil_service_place |
+| 719 | /inactive-holding-corporation-t2-filing-ontario/ | nil_service_place |
+
+The six service pages were already plain HTML, so the hero went in with two surgical
+replaces each, the CSS and the markup, rather than a full rewrite. The hub was
+Elementor, and since adding a banner there meant rewriting `_elementor_data` anyway,
+it was converted to HTML instead: the same change in a form that can be verified and
+that `wp_replace_in_post` can edit later. Published bytes match
+`build/ontario/516-hub.html` exactly at 8,306.
+
+The hero button is white with navy text rather than the site's `#2087c9`, because
+`#2087c9` with white text is 3.8:1, which fails AA for 16px bold. White on `#314d8a`
+is 8.21:1.
+
+Astra meta on all seven: `page-builder`, `full-width-container`, title and breadcrumbs
+disabled. The title had to go or Astra prints its own H1 above the hero. Verified
+after: exactly one `<h1>` on each of the six.
+
+### Two things worth noting
+
+- The hub previously linked to `/locations/`, which does not exist as a page. That
+  link was dropped in the conversion rather than left broken. If a locations index is
+  planned, it is unbuilt.
+- 715 to 719 were created at 10:04 today, outside this session. Their `cnf_` meta is
+  fully populated, but whether they carry the `cnf_family` f4 term, and whether the
+  hub should be f3 or f16, has not been checked. Worth confirming before the family
+  sitemaps are generated.
+
+**None of the seven should be reopened and saved in Elementor**, for the same reason
+as the lifecycle pages: it will take the page over and blank the content.
