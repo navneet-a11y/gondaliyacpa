@@ -53,3 +53,7 @@
 - Meta title: Virtual Office and Business Address in Toronto, Vancouver, Ottawa
 - Meta description: Dedicated business address in Toronto, Ottawa, Vancouver or North Vancouver from $75/month. Suitable for registries, banking, FINTRAC, MSB and iGaming.
 - Rank Math fields are not writable via the API; paste these in manually.
+
+## /corporation-centre-vs-open-corporation-for-35/ (page 10234, draft created 2026-10-15)
+- Meta title: Open Corporation for $35 vs Corporation Centre Compared
+- Meta description: We charge $35.00, HST included. Corporation Centre lists $99 plus filing fees. Government fees separate. A CPA is accountable after filing.
