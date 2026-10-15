@@ -9,7 +9,7 @@
 - Governed by `docs/industry-briefs/cross-border-spine.md`. **Name the form and the mechanism,
   never state a United States figure.**
 - City-card label: `Green Card Holder Tax Accountant in`
-- Status: **draft** on WordPress, page ID **57227**, not published. 117,925 bytes stored, byte-exact (one chunk landed a byte short on a dropped trailing newline and was repaired with a targeted insert, then re-verified at the join).
+- Status: **PUBLISHED** 2026-10-15, page ID **57227**, 117,925 bytes stored and verified unchanged after publish. Live at `https://gondaliyacpa.ca/accountant-for-green-card-holders-in-canada/`.
 
 ## The angle — why this is not row 608 with a different noun
 

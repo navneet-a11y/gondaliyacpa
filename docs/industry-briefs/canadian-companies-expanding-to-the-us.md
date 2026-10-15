@@ -9,7 +9,7 @@
 - Governed by `docs/industry-briefs/cross-border-spine.md`. **Its rule binds this page: name the
   form and the mechanism, never state a United States figure.**
 - City-card label: `US Expansion Accountant in`
-- Status: **draft** on WordPress, page ID **57195**, not published. 122,713 bytes stored, byte-exact.
+- Status: **PUBLISHED** 2026-10-15, page ID **57195**, 122,713 bytes stored and verified unchanged after publish. Live at `https://gondaliyacpa.ca/accountant-for-canadian-companies-expanding-to-the-us/`.
 
 ## The angle — what makes this page different from everything near it
 

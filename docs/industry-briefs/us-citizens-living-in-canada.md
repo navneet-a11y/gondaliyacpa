@@ -12,7 +12,7 @@
 - Governed by `docs/industry-briefs/cross-border-spine.md`. **Its rule binds this page: name the
   form and the mechanism, never state a United States figure.**
 - City-card label: `US Expat Tax Accountant in`
-- Status: **draft** on WordPress, page ID **57215**, not published. 119,452 bytes stored, byte-exact.
+- Status: **PUBLISHED** 2026-10-15, page ID **57215**, 119,452 bytes stored and verified unchanged after publish. Live at `https://gondaliyacpa.ca/accountant-for-us-citizens-living-in-canada/`.
 
 ## The angle — what makes this page different from its three siblings
 

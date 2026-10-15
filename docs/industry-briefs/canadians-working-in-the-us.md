@@ -8,7 +8,7 @@
 - Governed by `docs/industry-briefs/cross-border-spine.md`. **Name the form and the mechanism,
   never state a United States figure.**
 - City-card label: `Cross-Border Employment Accountant in`
-- Status: **draft** on WordPress, page ID **57261**, not published. 119,275 bytes stored, byte-exact.
+- Status: **PUBLISHED** 2026-10-15, page ID **57261**, 119,275 bytes stored and verified unchanged after publish. Live at `https://gondaliyacpa.ca/accountant-for-canadians-working-in-the-us/`.
 
 ## The angle — a different taxpayer from all three siblings
 
