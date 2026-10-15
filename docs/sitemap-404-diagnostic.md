@@ -188,6 +188,29 @@ not, that inconsistency is the real finding and belongs in the Friday update.
 - WordPress.org support, noindex in the Rank Math meta box removes a page from the
   sitemap — https://wordpress.org/support/?p=14194956
 
+## What actually fixed it, 2026-10-15
+
+Two separate faults, in sequence.
+
+1. **`sitemap_index.xml` returned 404.** Fixed by re-saving Settings > Permalinks.
+   Rank Math's first-line fix, as its KB says.
+
+2. **`nil_deadline-sitemap.xml` returned 404 while the index loaded.** "Include in
+   Sitemap" was already on for the post type. Fixed by **toggling it off, saving, then
+   on, and saving again**.
+
+The lesson from the second one: saving Sitemap Settings with the value unchanged does
+not make Rank Math regenerate a missing per-post-type sitemap. The value has to change
+for the regeneration to fire. So when a CPT sitemap 404s but the index loads, toggle the
+setting rather than re-saving it.
+
+Worth knowing the 404 itself was diagnostic. Because the index loaded, Rank Math's
+generic sitemap rewrite rule (`([^/]+?)-sitemap\.xml`) was already working, so the
+request was reaching Rank Math and Rank Math was declining to produce the file. A
+missing Rank Math sitemap is a 404, not an empty document, so this was never a permalink
+problem the second time.
+
+
 ## Specific to this project
 
 Once the index loads, confirm the Family 14 URLs are actually in it. The 23
