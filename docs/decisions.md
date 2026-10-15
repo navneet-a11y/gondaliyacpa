@@ -1518,3 +1518,65 @@ it. The pages built on October 9 stay where they are and the four internal links
 `/sharad-gondaliya-cpa/` stay valid. Sharad should confirm, since Appendix A implies a
 `/team/` hub and two more bios (Navneet, Deepak) plus a second reviewing CPA page that
 6(a) does not list at all.
+
+## 2026-10-15 — The two lifecycle pages published, with three claims removed
+
+**Decided by:** Navneet, asked directly, after the audit in
+[`docs/off-plan-drafts-audit.md`](off-plan-drafts-audit.md) was put to him.
+
+| ID | URL | Status |
+|---|---|---|
+| 523 | https://corpnilfilingfor300.ca/corporate-lifecycle/ | published |
+| 524 | https://corpnilfilingfor300.ca/when-your-corporation-starts-operating/ | published |
+| 521 | REVIEW ONLY: Home Page Ecosystem Section | trashed |
+
+Both are **off-plan URLs**. Neither slug is in 6(a), Appendix A or any family list,
+neither carries a `cnf_family` term, and every `cnf_` meta field is empty. They are a
+cross-site funnel positioning the nil years as stage 2 of a six-stage lifecycle across
+opencorporationfor35.ca, corpnilfilingfor300.ca and gondaliyacpa.ca. Sharad has not
+seen them. As with Family 14, the site-wide noindex under hard rule 10 bounds the
+exposure, and his sign-off is owed in the Friday update.
+
+### Three hard-rule breaches removed before publishing
+
+1. **FAQPage schema**, on both pages. Hard rule 6, plan line 37, launch gate 6 at line
+   1901. Line 1582 governs the fix: *"The question format stays, the markup goes."* The
+   six visible FAQ questions on each page are untouched; only the schema object was
+   dropped from the `@graph`.
+2. **"Lowest Price Guarantee in Canada"**, on 523, in the ecosystem table. Breaches two
+   rows of the 7.4 table at once: *cheapest, lowest price in Canada* (gate one item 31)
+   and *guaranteed, guarantee* (gate one item 34). The row now reads "Our fee from $35,
+   transparent pricing, one simple form, no email chains, no appointment needed".
+3. **"1300+ 5-star Google reviews"**, twice on 523 and once on 524. The 7.4 table names
+   this figure explicitly, gate one item 32, with the standing instruction that until
+   the claim-consistency audit closes, **no count claim is published at all**.
+
+### Left in place, for Sharad
+
+- "the only CPA firm in Canada where you see your final fee and sign your engagement
+  letter on the same screen" (523 and 524). Not in the 7.4 table and not a
+  cheapest/best/fastest claim, so not mine to strike, but it is an unverifiable
+  uniqueness claim of the kind Rule 217 covers.
+- "If a return turns out not to be nil, you get a full refund" (both). A refund
+  commitment, and `/refund-policy/` is an unbuilt Family 15 page.
+- "Multiple award-winning team", "2026 Xero Awarded Firm" (both trust boxes).
+
+### Moved off Elementor
+
+Both pages were a single Elementor HTML widget holding the whole page. Editing that
+means hand-escaping about 19KB of JSON inside `_elementor_data`, where one slip breaks
+the page — the same risk that cost this project a Services stylesheet earlier. The
+corrected HTML now lives in `post_content` with `_elementor_data`, `_elementor_edit_mode`
+and `_elementor_template_type` cleared, which is what Family 14 already does and which
+makes `wp_replace_in_post` usable for later edits.
+
+**They should not be reopened and saved in Elementor**, or it will take the page back
+over and blank the content, as it did to the Contact page on October 7.
+
+Source of truth is now `build/lifecycle/`, with `shared.css`, the two body files and the
+assembled `523-full.html` and `524-full.html`. Published bytes match those files exactly,
+20,773 and 16,711, verified after publishing along with the absence of all three banned
+strings and the survival of the JSON-LD block.
+
+Astra meta on both: `page-builder`, `full-width-container`, title and breadcrumbs
+disabled.
