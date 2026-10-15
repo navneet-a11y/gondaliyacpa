@@ -1959,3 +1959,31 @@ earlier version of the generator that published those pages:
 
 No live defect, and the generator was left as it is on these three points. Noted so that
 a future rebuild diff is not mistaken for corruption.
+
+### Byline placement on `/deadlines/` — corrected to match the rest of Family 14
+
+Navneet asked why the byline and last-reviewed lines sit at the top of the page body,
+and whether the plan called for it. It does, in 7.5:
+
+- **Byline rule 3** names Families 1, 8, 9, 10, 14 and 15 "in full" as carrying
+  *Written and reviewed by Sharad Gondaliya, CPA (Ontario), CPA Ontario Membership
+  61040184.*
+- **Last-reviewed rule 1**: the visible line "renders under the H1 above the first
+  paragraph on **every URL**", and rule 6 gives the reason — the stamp has to be a
+  rendered on-page line, not a hidden schema value, because AI Overviews favour pages
+  with visible update dates.
+
+So neither line can be removed. What was wrong was placement, and only on this one page.
+The 12 month pages and the calendar put the byline **in the banner** under the H1
+(`cnf-hero-by`) and leave only the short grey "Last reviewed" line in the body. Page 799
+had put both in the body, so it was the only one of the 23 reading breadcrumb → byline →
+last-reviewed before any content.
+
+Fixed by moving the byline into the hero and leaving the body to open with the
+breadcrumb and the last-reviewed line. Navneet chose this over a compact in-body meta
+strip or moving the byline to a reviewer block at the foot of the page.
+
+A CSS bug was making it worse: `.cnf-by` and `.cnf-rev` are single-class selectors and
+lost to Astra's `.entry-content p` (class + element), so Astra's paragraph margin applied
+and spread the two lines apart. The replacement rule is scoped `.cnf-w .cnf-rev`, which
+outranks it.
