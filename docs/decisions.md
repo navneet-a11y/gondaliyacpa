@@ -1388,3 +1388,57 @@ the author archive and the Article schema author field do.
 Elementor Pro caches its theme-builder condition map in an option this connector
 cannot write, so the condition on 573 may not take effect until the Theme Builder
 is opened once or Elementor → Tools → Regenerate CSS & Data is run.
+
+## 2026-10-15 — Family 14 banner: Theme Builder parked, hero moved into the body
+
+The Single – Deadline template (573) did not render. Clearing Elementor's
+"Clear Files & Data" does not help: that clears generated CSS and cached HTML,
+while theme-builder display conditions live in a separate cached option this
+connector cannot write.
+
+Checking the install first turned up the more important fact. **Elementor Pro
+Theme Builder has never been used on this site.** Header 38 is template type
+`page`, footer 138 is type `section`, both with empty `_elementor_conditions`,
+and they are applied through UAE (header-footer-elementor). Every page banner so
+far comes from Elementor data imported into that page, not from a theme template.
+So there was no working example to copy, the `include/singular/nil_deadline`
+condition string was a guess, and with no way to fetch a rendered page from here
+there was no way to tell a wrong condition from a stale cache.
+
+Rather than keep guessing at something unverifiable, the hero now renders as plain
+HTML inside `post_content`, which is the same mechanism the rest of each Family 14
+body already uses and which can be read back and checked.
+
+- `build_f14.py` gained `hero(title)` and the `.cnf-hero` CSS. It emits a
+  full-bleed band using the same hero image as the city hubs, a
+  `linear-gradient(rgba(10,10,10,.79) …)` overlay standing in for Elementor's
+  overlay layer, `bottom center` / `cover` / `no-repeat`, the H1, and the 7.5
+  rule 3 byline beneath it.
+- `.cnf-dl` now carries `max-width:860px;margin:0 auto` because
+  `site-content-layout: page-builder` removes Astra's container, which would
+  otherwise let body text run edge to edge.
+- All 23 live records were updated by two targeted replaces each rather than by
+  retyping the bodies, to avoid the transcription loss that bit the Services CSS
+  earlier in this project. Verified by search: 23 of 23 carry the hero byline.
+- Astra meta on all 23: `site-content-layout: page-builder`,
+  `ast-site-content-layout: full-width-container`, `site-post-title: disabled`,
+  `ast-breadcrumbs-content: disabled`. The title has to be disabled or Astra
+  prints its own H1 and the "By sharad7433" line above the hero.
+
+Template 573 is kept but **parked**: its `_elementor_conditions` is back to `[]`,
+so it cannot double up with the body hero. The generator and import file stay in
+`build/`.
+
+### This needs a decision from Sharad, and it is bigger than Family 14
+
+Section 4.4 gives all sixteen families an Elementor Pro template, and F1 through
+F14 are Single Post templates. If Theme Builder does not work on this install, or
+nobody ever wires it up, that affects 13 more families and not just this one. It
+should be proven once, on Family 14, before the other families are built against
+the assumption. Until then Family 14 renders from `post_content`, which is a
+deviation from 4.4 but visually matches the rest of the site.
+
+Caught while wiring the hero: the calendar body was passing `title`, a leftover
+loop variable from the catch-up-year loop, so its hero would have read "File Your
+2026 Nil T2 Return". An assertion comparing every `<h1>` against the record title
+caught it before publish; `cal_title` is now a named variable.

@@ -42,8 +42,22 @@ SCOPE = ('This service is for a corporation with no activity in the tax year. A 
 # each body. 7.5 last-reviewed rule 1 puts this line under the H1, which is
 # the first thing in post_content once the template owns the banner.
 LAST_REVIEWED = '<p class="cnf-lastrev">Last reviewed: October 15, 2026</p>\n'
+BYLINE = ('Written and reviewed by Sharad Gondaliya, CPA (Ontario), '
+          'CPA Ontario Membership 61040184.')
+
+def hero(title):
+    """7.5 rule 3 byline under the H1, one fixed wording for all of Family 14."""
+    return ('<div class="cnf-hero">\n<h1>' + title + '</h1>\n'
+            '<p class="cnf-hero-by">' + BYLINE + '</p>\n</div>\n')
 
 CSS = ("<style>\n"
+ ".cnf-hero{background-image:linear-gradient(rgba(10,10,10,.79),rgba(10,10,10,.79)),url('https://corpnilfilingfor300.ca/wp-content/uploads/2026/10/closeup-blueprint-architecture-layout-plan_53876-147790.jpg');background-size:cover;background-position:bottom center;background-repeat:no-repeat;"
+ "padding:100px 20px;text-align:center}\n"
+ ".cnf-hero h1{color:#FFFFFF;font-size:40px;font-weight:700;line-height:1.25;margin:0}\n"
+ ".cnf-hero .cnf-hero-by{color:#E8ECF4;font-size:14px;line-height:1.6;margin:14px auto 0;max-width:760px}\n"
+ "@media(max-width:1024px){.cnf-hero h1{font-size:32px}}\n"
+ "@media(max-width:767px){.cnf-hero{padding:64px 18px}.cnf-hero h1{font-size:26px}}\n"
+ ".cnf-dl{max-width:860px;margin:0 auto;padding:48px 20px 72px}\n"
  ".cnf-dl h2{color:#314D8A;margin-top:32px}\n"
  ".cnf-dl table{width:100%;border-collapse:collapse;margin:18px 0 26px}\n"
  ".cnf-dl th,.cnf-dl td{text-align:left;padding:10px 12px;border-bottom:1px solid #DDE1E8}\n"
@@ -82,7 +96,7 @@ for m in range(1, 13):
     title = f'T2 Due Date for a {ye_name} Year-End'
     meta  = (f'{article(ye_name)} {ye_name} year-end makes the T2 due {due_example.strftime("%B %d")}. '
              f'Filing is mandatory even with no activity. Nil T2 filing at {PRICE}.')
-    body = (CSS + '<div class="cnf-dl">\n' + LAST_REVIEWED
+    body = (CSS + hero(title) + '<div class="cnf-dl">\n' + LAST_REVIEWED
       + f'<div class="cnf-lead"><p>{article(ye_name)} {ye_name} year-end makes the T2 due '
         f'{due_example.strftime("%B %d")}, six months after the end of the tax year.</p></div>\n'
       + P(MUST_FILE)
@@ -111,7 +125,7 @@ for y in range(2017, 2027):
     title = f'File Your {y} Nil T2 Return'
     meta  = (f'File an outstanding {y} nil T2 return. An unfiled year stays open until it is filed. '
              f'{PRICE}, CPA reviewed and transmitted electronically.')
-    body = (CSS + '<div class="cnf-dl">\n' + LAST_REVIEWED
+    body = (CSS + hero(title) + '<div class="cnf-dl">\n' + LAST_REVIEWED
       + f'<div class="cnf-lead"><p>A {y} nil T2 return that has not been filed is still outstanding. '
         f'It does not expire and it does not resolve itself.</p></div>\n'
       + P(MUST_FILE)
@@ -140,7 +154,8 @@ for m in range(1, 13):
 hol = ontario_holidays(2027)
 hol_rows = ''.join(f'<tr><td>{d.strftime("%B %d, %Y")}</td><td>{n}</td></tr>'
                    for n, d in sorted(hol.items(), key=lambda x: x[1]))
-body = (CSS + '<div class="cnf-dl">\n' + LAST_REVIEWED
+cal_title = 'T2 Deadline Calendar for Canadian Corporations'
+body = (CSS + hero(cal_title) + '<div class="cnf-dl">\n' + LAST_REVIEWED
   + '<div class="cnf-lead"><p>Every T2 is due six months after the fiscal year-end. '
     'This calendar gives the due date for each of the twelve month-end dates.</p></div>\n'
   + P(MUST_FILE)
@@ -155,7 +170,7 @@ body = (CSS + '<div class="cnf-dl">\n' + LAST_REVIEWED
   + cta() + '</div>')
 records.append(dict(
     kind='calendar', slug='cra-t2-deadline-calendar',
-    title='T2 Deadline Calendar for Canadian Corporations',
+    title=cal_title,
     meta_description=('Every T2 due date by fiscal year-end, with the Ontario statutory holidays that '
                       f'move a deadline. Nil T2 filing at {PRICE}.'),
     content=body, terms={'cnf_family': ['f14']},
