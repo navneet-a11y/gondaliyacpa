@@ -1279,3 +1279,39 @@ says "12 month-end pages plus 11 rule pages".
 
 Sharad reviews Family 14, as he does every family. The pages are generated to
 draft by default for that reason.
+
+## 2026-10-15 — Family 14 published in full, ahead of Sharad's template sign-off
+
+All 23 Family 14 URLs are live at `publish` status under `/deadlines/`, on
+Navneet's instruction to complete the batch directly rather than hand back
+step-by-step instructions.
+
+This departs from the approvals rule in CLAUDE.md ("each family template goes to
+Sharad Gondaliya for sign-off before its batch publishes"). The exposure is
+bounded by live decision 1: the site carries a Rank Math site-wide noindex until
+Sharad confirms launch, so nothing is indexable. Sharad's Family 14 review is
+still owed and should be raised in the Friday update; any wording he changes is
+a content edit across 23 records, not a rebuild.
+
+| Post IDs | What |
+|---|---|
+| 527, 530–540 | 12 month-end pages (December was 527, built October 15 earlier) |
+| 529, 541–549 | 10 catch-up year pages, 2017 through 2026 |
+| 550 | `/deadlines/cra-t2-deadline-calendar/` |
+
+All 23 carry the `cnf_family: f14` term (term_taxonomy_id 27). The registered
+`cnf_` meta is set on every record: `cnf_fiscal_year_end`, `cnf_t2_due_date`,
+`cnf_dissolution_due_rule`, `cnf_business_day_rule`,
+`cnf_ontario_holiday_list_json` (calendar only) and `cnf_last_verified_et`.
+
+`cnf_primary_keyword` is **still not registered** for `nil_deadline`, so the
+manifest's keyword values were not written and were left out of the calls rather
+than sent and silently dropped. Add `'cnf_primary_keyword' => 'string'` to the
+`nil_deadline` row (line 34) of the `cnf-register-meta` WPCode snippet, then
+re-run the meta pass to backfill all 23.
+
+### Grammar fix caught before publishing
+
+`build_f14.py` produced "A April 30" and "A August 31" and "A October 31". Added
+an `article()` helper picking An before a vowel. The three affected titles and
+leads read correctly in the published records.

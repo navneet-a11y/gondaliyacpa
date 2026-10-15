@@ -53,6 +53,9 @@ CSS = ("<style>\n"
  ".cnf-dl .cnf-rev{font-size:.9em;margin-top:38px}\n"
  "</style>\n")
 
+def article(word):
+    return 'An' if word[0].upper() in 'AEIOU' else 'A'
+
 def P(*p): return ''.join(f'<p>{x}</p>\n' for x in p)
 def cta(): return f'<p><a class="cnf-cta" href="{FORM}">{CTA}</a></p>\n'
 
@@ -74,10 +77,10 @@ for m in range(1, 13):
     due_example = due_date(2026, m)
 
     title = f'T2 Due Date for a {ye_name} Year-End'
-    meta  = (f'A {ye_name} year-end makes the T2 due {due_example.strftime("%B %d")}. '
+    meta  = (f'{article(ye_name)} {ye_name} year-end makes the T2 due {due_example.strftime("%B %d")}. '
              f'Filing is mandatory even with no activity. Nil T2 filing at {PRICE}.')
     body = (CSS + '<div class="cnf-dl">\n'
-      + f'<div class="cnf-lead"><p>A {ye_name} year-end makes the T2 due '
+      + f'<div class="cnf-lead"><p>{article(ye_name)} {ye_name} year-end makes the T2 due '
         f'{due_example.strftime("%B %d")}, six months after the end of the tax year.</p></div>\n'
       + P(MUST_FILE)
       + '<h2>Due dates by tax year</h2>\n'
