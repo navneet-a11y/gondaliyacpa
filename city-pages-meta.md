@@ -11,3 +11,9 @@
 - /open-corporation-in-ottawa/ → /incorporation-services-ottawa/
 - /open-corporation-in-calgary/ → /incorporation-services-calgary/
 - /open-corporation-in-vancouver/ → /incorporation-services-vancouver/
+
+## Glossary (10170)
+
+| URL | Meta title | Meta description |
+|---|---|---|
+| /glossary/ | Canadian Incorporation Glossary: 61 Terms in Plain English | Plain-English definitions of 61 Canadian incorporation terms, from CBCA and OBCA to the NUANS report, articles of incorporation and the minute book. |
