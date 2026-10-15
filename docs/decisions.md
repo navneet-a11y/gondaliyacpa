@@ -1836,3 +1836,45 @@ built into the wrong one and have to be redone.
 Recommendation: keep `nil_cost`, because the CPT is already registered and carries the
 seven F8 meta keys that a plain page would not, and amend the sitemap table instead.
 But it is Sharad's call, and it is cheap now and expensive after 15 pages exist.
+
+## 2026-10-15 — Where the off-plan pages came from: other sessions, one still running
+
+Navneet asked whether he had given an instruction that produced the lifecycle pages.
+Checked rather than assumed, two ways.
+
+**This session's transcript**, 23 MB going back to September 28, contains no instruction
+that created them. The only occurrences of "lifecycle" or "ecosystem" in any user
+message are the two from today: the message showing the drafts and asking which task
+they belonged to, and the question about where the page sits in the site. So they were
+not built here.
+
+**The WordPress audit log** puts the creates at 2026-10-14 23:58 GMT via `wp_create_page`
+under OAuth client `84cf7f1b…`, while every write from this session carries
+`b3adca10…`. Different client, different session.
+
+Session titles on the account that line up:
+
+| Session | Title | Last active |
+|---|---|---|
+| `01DSk1nd7erQJi4XE9uc` | **Website plan for Corporation Operating page** | 2026-10-15 14:00 GMT |
+| `01GAs1qUtyrjhxjZXFSh` | CorpNil homepage template upload | 2026-10-14 21:40 GMT |
+| `01QjDNmajgxJbYfL4n3c` | **Corpnil broken links audit** | 2026-10-15 17:23 GMT |
+
+The first names page 524's subject almost exactly, so the instruction is most likely
+there. The second was active the evening the pages were created and fits, since the
+ecosystem table was built for the home page. Their transcripts are not readable from
+here, so this is inference from titles and timing, not proof.
+
+### A concurrent session is writing to this site
+
+`Corpnil broken links audit` was created today at 16:15 GMT and was still active at
+17:23, which is during this session's Ontario and Family 8 work. That also explains the
+six Ontario service pages appearing at 14:00 GMT with no instruction in this
+conversation: another session created them while this one was publishing the lifecycle
+pages.
+
+This is a real risk, not a curiosity. Two sessions editing the same posts can overwrite
+each other silently, and `wp_replace_in_post` has no optimistic locking. The byte-count
+checks used here would catch a clash only by accident. Worth deciding who owns which
+family before more parallel work, and worth knowing that a "broken links audit" session
+may be changing the same links this session has been fixing.
