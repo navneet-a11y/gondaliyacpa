@@ -2007,3 +2007,50 @@ open the body with `<p class="cnf-lastrev">` and nothing above it. Adding breadc
 them is a separate change worth making (it would give each child a semantic up-link to
 the pillar and a third anchor to `/deadlines/`), but it is scope beyond a styling fix
 and is not done here.
+
+## 2026-10-15 — Sitemap verified complete, and an 11th plan conflict
+
+### Live state is correct
+
+All four sitemaps that should exist, do. Published counts at the time of checking:
+
+| Post type | Published | Sitemap |
+|---|---|---|
+| `page` | 25 | `page-sitemap.xml` |
+| `nil_deadline` | 23 | `nil_deadline-sitemap.xml` |
+| `nil_service_place` | 6 | `nil_service_place-sitemap.xml` |
+| `nil_cost` | 1 | `nil_cost-sitemap.xml` |
+| `post` and the other 10 `nil_*` CPTs | 0 | none, correctly |
+
+55 published URLs. Rank Math omits a post type with no published items, so the ten empty
+CPTs and the blog are right to be absent.
+
+### 11th plan conflict: sitemap filenames
+
+The plan names the per-post-type sitemaps twice, differently.
+
+- The CPT registration table, lines 308 to 321, uses the **post type slug**:
+  `nil_service_place-sitemap.xml`, `nil_cost-sitemap.xml`, `nil_deadline-sitemap.xml`.
+- The sitemap inventory, lines 1309 to 1315, uses the **rewrite slug**:
+  `service-place-sitemap.xml`, `vertical-sitemap.xml`, `tool-sitemap.xml`,
+  `city-sitemap.xml`, `answer-sitemap.xml`.
+
+Resolved in favour of lines 308 to 321, because it is not a preference: Rank Math
+derives the sitemap filename from the post type slug and offers no setting to rename it.
+Live already matches. The inventory table's filenames cannot be produced without
+renaming the post types themselves, which would change nothing useful and would break
+every published URL.
+
+### A gate that cannot pass yet
+
+Line 63 and line 362 set a September 29 gate of "16 sitemap URLs resolve". Only four
+resolve, because only four post types have content. The gate is written as a
+configuration test but is really a content test, so it cannot close until all 16
+families have at least one published URL. Worth raising with Sharad Gondaliya rather
+than leaving it looking failed.
+
+Also worth noting the composition is behind the plan's own October 9 milestone (line
+367: "F8 15, F9 10, F15 24, F16 5 and the home page, 55 URLs"). The site happens to have
+55 published URLs today, but they are a different 55 — Family 14's 23, Family 4's 6,
+one Family 8 page and 25 pages. The coincidence in the total should not be read as the
+milestone being met.
