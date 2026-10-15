@@ -1679,3 +1679,36 @@ starts with `$`, so this will come up again.
 One probe along the way was useless and briefly looked like a failure: searching for
 `0.00 Plus HST` returns a hit on a correct page too, because it is a substring of
 `$300.00 Plus HST`. The positive probe is the one that means anything.
+
+## 2026-10-15 — Ontario body width: inline styles, because the stylesheet was not winning
+
+Navneet reported the six service pages still rendering full width after the padding
+fix. Reading page 715 back showed the stored content was already correct:
+`.cnf-w{max-width:1000px;margin:0 auto;padding:36px 20px 56px;...}` in the style block,
+and a single `<div class="cnf-w">` wrapping the body. So the markup was right and
+something at render time was dropping or overriding it.
+
+That could not be diagnosed from here. `corpnilfilingfor300.ca` is not reachable
+through this session's egress proxy, so the rendered HTML cannot be fetched and the
+cascade cannot be inspected. The two candidates are Astra's page-builder content
+layout and LiteSpeed's CSS optimisation, which can inline, combine or strip rules.
+
+Rather than guess a third time, the constraint was moved onto the elements themselves,
+where no stylesheet can reach it and no CSS optimiser can drop it:
+
+    <div class="cnf-w" style="max-width:1000px!important;margin:0 auto!important;
+         padding:36px 20px 56px!important;box-sizing:border-box">
+    <div class="cnf-hero-in" style="max-width:1140px;margin:0 auto;text-align:left">
+
+Applied to all seven: the hub uses `40px 20px 60px` to match what it already had. The
+class rules stay in the style block, so if the stylesheet is in fact applying, the two
+agree rather than fight.
+
+This is belt and braces rather than a root-cause fix, and it is worth saying so. If
+the cause is LiteSpeed dropping rules it will affect other pages built the same way,
+including Family 14 and the two lifecycle pages, so it is worth checking those once
+someone can view them. Finding the real cause needs either a rendered-HTML fetch from
+a machine that can reach the site, or LiteSpeed's CSS optimisation turned off long
+enough to compare.
+
+`build/ontario/516-hub.html` matches live byte for byte at 8,852.
