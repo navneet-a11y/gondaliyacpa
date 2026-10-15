@@ -98,6 +98,96 @@ add_action( 'admin_notices', function () {
 
 4. **Switch the Sitemap module on** if the snippet says it is off.
 
+## Step 3 — why a CPT is still missing after "Include in Sitemap" is on
+
+Two Rank Math settings decide whether a post type reaches the sitemap, and they live in
+different screens. Turning the sitemap one on is not enough if the robots one says
+noindex, because Rank Math drops noindexed URLs from its sitemaps.
+
+| Screen | Setting | Effect |
+|---|---|---|
+| Rank Math > Sitemap Settings > `<post type>` | Include in Sitemap | Creates `<post type>-sitemap.xml` |
+| Rank Math > Titles & Meta > `<post type>` | Robots Meta > noindex | Silently removes every URL of that type from the sitemap |
+
+Also remember CPT URLs never appear in `page-sitemap.xml`. Check `sitemap_index.xml`
+for a `nil_deadline-sitemap.xml` row.
+
+This snippet reports both settings for all three project CPTs at once. Same WPCode
+instructions as above, and it is equally read-only.
+
+```php
+add_action( 'admin_notices', function () {
+
+	if ( ! current_user_can( 'manage_options' ) ) {
+		return;
+	}
+
+	$sitemap = get_option( 'rank-math-options-sitemap', array() );
+	$titles  = get_option( 'rank-math-options-titles', array() );
+	$types   = array( 'page', 'post', 'nil_deadline', 'nil_cost', 'nil_service_place' );
+
+	echo '<div class="notice notice-info"><p><strong>Rank Math per-post-type sitemap state</strong></p>';
+	echo '<table class="widefat striped" style="max-width:860px"><thead><tr>'
+		. '<th>Post type</th><th>Published</th><th>In sitemap</th>'
+		. '<th>Custom robots</th><th>Robots value</th><th>Verdict</th></tr></thead><tbody>';
+
+	foreach ( $types as $pt ) {
+
+		if ( ! post_type_exists( $pt ) ) {
+			continue;
+		}
+
+		$in_sitemap = isset( $sitemap[ 'pt_' . $pt . '_sitemap' ] ) ? $sitemap[ 'pt_' . $pt . '_sitemap' ] : 'not set';
+		$custom     = isset( $titles[ 'pt_' . $pt . '_custom_robots' ] ) ? $titles[ 'pt_' . $pt . '_custom_robots' ] : 'not set';
+		$robots     = isset( $titles[ 'pt_' . $pt . '_robots' ] ) ? $titles[ 'pt_' . $pt . '_robots' ] : array();
+		$robots     = is_array( $robots ) ? implode( ', ', $robots ) : (string) $robots;
+
+		$noindexed = ( 'on' === $custom && false !== strpos( $robots, 'noindex' ) );
+
+		if ( 'on' !== $in_sitemap ) {
+			$verdict = 'EXCLUDED - Include in Sitemap is off';
+		} elseif ( $noindexed ) {
+			$verdict = 'EXCLUDED - post type is noindex, which beats the sitemap toggle';
+		} else {
+			$verdict = 'should appear';
+		}
+
+		$counts = wp_count_posts( $pt );
+
+		echo '<tr><td><code>' . esc_html( $pt ) . '</code></td>'
+			. '<td>' . esc_html( isset( $counts->publish ) ? $counts->publish : 0 ) . '</td>'
+			. '<td>' . esc_html( $in_sitemap ) . '</td>'
+			. '<td>' . esc_html( $custom ) . '</td>'
+			. '<td>' . esc_html( $robots ? $robots : 'none' ) . '</td>'
+			. '<td><strong>' . esc_html( $verdict ) . '</strong></td></tr>';
+	}
+
+	echo '</tbody></table></div>';
+} );
+```
+
+Expected published counts right now: `nil_deadline` 23, `nil_service_place` 6,
+`nil_cost` 1. If a row says "should appear" but the URLs are still absent from
+`sitemap_index.xml`, the cause is the sitemap cache — re-save Sitemap Settings and purge
+LiteSpeed.
+
+### If a CPT turns out to be noindexed
+
+Do not simply switch the noindex off to get the sitemap populated. Hard rule 10 keeps
+the whole site noindexed until Sharad Gondaliya confirms launch, so the correct end
+state before launch is **noindex on, and the URLs therefore absent from the sitemap**.
+An incomplete sitemap during the build is expected and harmless; what matters is that
+every post type flips together at launch. If the three CPTs are noindexed and pages are
+not, that inconsistency is the real finding and belongs in the Friday update.
+
+### Sources for the noindex/sitemap interaction
+
+- Rank Math, *URL not in sitemap* — https://rankmath.com/kb/url-not-in-sitemap/
+- Rank Math developer docs, `rank_math/sitemap/exclude_post_type` overrides the Include
+  in Sitemap option — https://rankmath.com/docs/filters-and-hooks/admin/sitemap
+- WordPress.org support, noindex in the Rank Math meta box removes a page from the
+  sitemap — https://wordpress.org/support/?p=14194956
+
 ## Specific to this project
 
 Once the index loads, confirm the Family 14 URLs are actually in it. The 23
