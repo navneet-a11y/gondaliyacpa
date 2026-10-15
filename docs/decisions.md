@@ -1630,3 +1630,52 @@ after: exactly one `<h1>` on each of the six.
 
 **None of the seven should be reopened and saved in Elementor**, for the same reason
 as the lifecycle pages: it will take the page over and blank the content.
+
+## 2026-10-15 — Ontario banner reworked to the real reference, and a price bug I caused
+
+### The banner now matches the actual service-page hero
+
+The first pass guessed at the design. Reading the Elementor settings off a root
+service page gives the real thing: H1 40px white **left-aligned**, the price as a
+25px line, the EFILE sentence, then a solid **#314D8A** button with white text at
+20px by 50px padding and a 35px radius, hover #2087C9. The hero container pads
+40px top and bottom.
+
+The first version was centred, had no EFILE line, and used a white button. All seven
+Ontario pages now carry the reference hero.
+
+### A regression I introduced, and fixed
+
+Setting `site-content-layout: page-builder` removed Astra's container, and `.cnf-w`
+on the six service x place pages had `max-width` and `margin:0 auto` but **no
+horizontal padding**, so body text ran to the viewport edge. Added
+`padding:36px 20px 56px`. The hub already had its own padding.
+
+The price, the EFILE sentence and the CTA pair were also removed from the top of each
+body, because the hero now carries all three and the repetition is what made the page
+read oddly.
+
+### The bug worth remembering: `$` in a regex replacement
+
+`wp_replace_in_post` with `regex: true` runs the replacement through PCRE, so `$n` in
+the **replacement** is a backreference. The hero markup replacement contained
+`$300.00`, which PHP read as group 30 followed by `0.00`. Group 30 does not exist, so
+it resolved to empty and **every hero rendered the price as `0.00 Plus HST Per Tax
+Year`** across all seven pages.
+
+It was caught by a 3-byte gap between the local source file (8,683) and what WordPress
+stored (8,680), while chasing down why the two no longer matched. Without that
+byte-count check it would have shipped: the pages otherwise looked right, and the
+wrong figure sits in the one place a visitor reads first.
+
+Fixed with plain, non-regex replaces, and verified on all seven by probing for
+`>$300.00 Plus HST Per Tax Year<` and getting exactly one hit each. 516 is back to
+8,683, matching `build/ontario/516-hub.html` byte for byte.
+
+**Rule for this project: never put a literal `$` in a `regex: true` replacement.**
+Either escape it as `\$`, or do that replace in plain mode. Every price on this site
+starts with `$`, so this will come up again.
+
+One probe along the way was useless and briefly looked like a failure: searching for
+`0.00 Plus HST` returns a hit on a correct page too, because it is a substring of
+`$300.00 Plus HST`. The positive probe is the one that means anything.
