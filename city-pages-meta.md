@@ -44,3 +44,7 @@
 ## /guides/share-structure-explained/ (page 9590, rewritten 2026-10-15)
 - Meta title: Share Structure for a New Corporation in Canada
 - Meta description: How share classes work in a new Canadian corporation: voting, dividend and property rights, common setups, who should hold which shares, and the cost of changing later.
+
+## /five-mistakes-first-time-incorporators-make/ (blog post 10219, published 2026-10-15)
+- Meta title: Five Mistakes First-Time Incorporators Make in Canada
+- Meta description: Incorporating too early, one class of shares, a missed Ontario Initial Return, late HST registration and mixing personal money: five costly mistakes and how to avoid them.

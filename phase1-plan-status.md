@@ -224,7 +224,7 @@ Checked against the live WordPress site on 14 October 2026. 201 pages in the pla
 | /blog/why-our-incorporation-fee-is-35-dollars/ | P1 | Not built |  |
 | /blog/first-year-filing-calendar-for-a-new-corporation/ | P1 | Not built |  |
 | /blog/incorporation-fee-changes-2026/ | P2 | Not built |  |
-| /blog/five-mistakes-first-time-incorporators-make/ | P2 | Not built |  |
+| /blog/five-mistakes-first-time-incorporators-make/ | P2 | Built (different URL) | /five-mistakes-first-time-incorporators-make/ |
 | /blog/how-long-does-incorporation-take-in-canada/ | P2 | Not built |  |
 | /blog/incorporating-as-a-newcomer-to-canada/ | P2 | Not built |  |
 | /blog/professional-corporation-versus-regular-corporation/ | P2 | Not built |  |
