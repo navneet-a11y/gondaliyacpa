@@ -1788,3 +1788,51 @@ Both go to Sharad with the Theme Builder question.
 `/pricing/what-is-not-included/` from the line 1146 list. The hub at `/pricing/`
 (page 323) exists but has not been checked against line 1201, which makes it the only
 hub allowed to carry both fee lines twice.
+
+## 2026-10-15 — Family 8 cannot be finished until two questions are answered
+
+Asked for the task name covering the cost pages. Checking the scope turned up a
+ninth plan conflict, and it is the largest one so far: **6(a) and Appendix A describe
+two completely different Family 8.**
+
+| | 6(a), line 1146 | Appendix A |
+|---|---|---|
+| Pattern | `/pricing/` and `/pricing/<slug>/` | 13 province pages at root, plus 2 |
+| Named slugs | `/pricing/`, `/pricing/nil-t2-filing-cost/`, `/pricing/cost-to-file-six-unfiled-nil-years/`, `/pricing/what-is-not-included/` (4 of 15 given as examples) | all 15 listed: `/nil-t2-return-cost-ontario/` through `/nil-t2-return-cost-nunavut/`, plus `/pricing/` and `/price-transparency-promise/` |
+
+Only `/pricing/` appears in both. The page built today,
+`/pricing/nil-t2-filing-cost/`, is in 6(a) and has its own exemplar at line 1169 with
+title and meta description, but **does not appear in Appendix A at all**.
+
+So the two lists do not merely disagree on URL shape, they disagree on what the pages
+are about: 6(a) is scenario-based (one cost, six unfiled years, what is not included),
+Appendix A is province-based (13 provinces and territories).
+
+Following the precedent set for the previous eight conflicts, 6(a) wins, and the
+exemplar at 1169 makes that reading concrete. But 6(a) names only 4 of its 15 slugs,
+so **the remaining 11 cannot be built without someone naming them.** Appendix A's 15
+are fully enumerated but under the other pattern.
+
+This is a scope question for Sharad, not something to resolve by guessing. Thirteen
+province cost pages and eleven unnamed scenario pages are different pieces of work.
+
+### Second question: is Family 8 a page or a CPT?
+
+Section 4.3 line 315 registers CPT `nil_cost` with sitemap `nil_cost-sitemap.xml`, and
+that CPT is live with rewrite base `pricing`. But section 6 says `page` twice:
+
+- 6(a) line 1146, "WordPress post type" column, gives **page**
+- the sitemap table at line 1308 puts F8's 15 URLs inside **page-sitemap.xml**
+  ("F8 15, F15 24, F16 5, home 1" = 45), and there is **no `cost` sitemap row anywhere
+  in that table**
+
+Page 794 was created as a `nil_cost` item, following the live registration. The URL is
+identical either way, because the CPT's rewrite base is `pricing` and a child page
+under `/pricing/` resolves to the same path. What differs is the sitemap slice, and the
+October 9 done-when test at line 367 is explicitly *"appear in the right sitemap
+slice"*. So this has to be settled before the remaining 14 are built, or they will be
+built into the wrong one and have to be redone.
+
+Recommendation: keep `nil_cost`, because the CPT is already registered and carries the
+seven F8 meta keys that a plain page would not, and amend the sitemap table instead.
+But it is Sharad's call, and it is cheap now and expensive after 15 pages exist.
