@@ -93,3 +93,15 @@ All 10 images are 1200x630 JPEGs in the existing Security Company format. Files 
 Cleanup for Navneet:
 - Delete media 57124. It is a broken partial upload from the first test.
 - The failed post 8 attempts may have left orphan files (Finance-Contractor-PSB-Featured-20-October-2026.jpg and -1.jpg) in wp-content/uploads/2026/10.
+
+## October 15: pages live
+
+All 10 pages were published on October 15, page 1 (the pillar) first, one day after the planned October 14. Following the package rule, the "Last updated" line on every page moved from October 14 to October 15. The pages carry no dates in their JSON-LD. Navneet published posts 1-5 the same day.
+
+Still to do for Navneet on the pages:
+- Rank Math fields
+- the 301 redirect, and moving page 53131 to draft
+- GSC submission through Make.com
+- llms.txt
+- Link Whisper
+- **Rule 8 link:** /software-development-it-consultants/ (30733) is an Elementor page, so add the link to /accountant-for-it-contractors/ with Link Whisper or the Elementor editor. Suggested anchor (existing text, no wording change): "IT consultants" in "At Gondaliya CPA, we help developers and IT consultants stay CRA-compliant".
