@@ -48,3 +48,8 @@
 ## /five-mistakes-first-time-incorporators-make/ (blog post 10219, published 2026-10-15)
 - Meta title: Five Mistakes First-Time Incorporators Make in Canada
 - Meta description: Incorporating too early, one class of shares, a missed Ontario Initial Return, late HST registration and mixing personal money: five costly mistakes and how to avoid them.
+
+## /address-service/ (page 1882, updated 2026-10-15)
+- Meta title: Virtual Office and Business Address in Toronto, Vancouver, Ottawa
+- Meta description: Dedicated business address in Toronto, Ottawa, Vancouver or North Vancouver from $75/month. Suitable for registries, banking, FINTRAC, MSB and iGaming.
+- Rank Math fields are not writable via the API; paste these in manually.
