@@ -1198,3 +1198,84 @@ not to the generators behind them, after the navy colour change. The generators
 are the source of truth for these pages, so any wording decision has to land
 there or it silently reverts at the next import. That is now true of four
 scripts rather than three.
+
+## 2026-10-15 — Family 14 built, and the publishing pipeline with it
+
+Navneet asked to start publishing through the custom post types in bulk. Family
+14 was chosen because it is the only batch due October 16 whose data source needs
+nothing from anyone else.
+
+### Why Family 14 and not the rest of tomorrow's batch
+
+6(c) names a data source per family. Checked against what exists today:
+
+| Due Oct 16 | Count | Source | Available |
+|---|---|---|---|
+| F5 questions | 45 | Sharad's answer bank, one entry per question | **No** |
+| F2 calculators | 50 | Navneet's JavaScript module library | **No** |
+| F7 comparisons | 20 | Competitor price pages, screenshot-dated | **No** |
+| F14 deadlines | 23 | Server-side date module, Ontario holiday table | **Yes, written today** |
+
+115 of tomorrow's 138 URLs are blocked on input that does not exist. F14's 23
+are not.
+
+The same test puts F8 cost pages (15, source is the internal fee schedule) and
+the 16 remaining F15 trust pages (source is the firm register record) next. That
+is 54 URLs buildable with no outside input, all overdue or due tomorrow.
+
+### What was built
+
+| File | What it is |
+|---|---|
+| `build/f14/dates.py` | The date module 6(c) names as the data source. Year-end to due date, Ontario statutory holidays computed from their rules, next-business-day shift. |
+| `build/f14/build_f14.py` | Generates all 23 records: 12 month-end, 10 catch-up year, 1 calendar. |
+| `build/f14/gate.py` | The banned-phrase refusal. |
+| `build/f14/publish.py` | REST publisher, runs on Navneet's machine with an application password. |
+| `build/f14/f14-manifest.json` | The 23 generated records. |
+
+The date module reproduces the plan's own exemplar independently: a December 31
+year-end gives June 30. That is the check that the arithmetic matches what Sharad
+signed.
+
+### The gate does what the plan's done-when asks
+
+October 7's done-when is "a 10-URL dry run publishes clean and a test page
+carrying a banned phrase is refused". Both demonstrated:
+
+- All 23 records pass.
+- Three records with planted violations were refused: a CRA wording breach, a
+  T183 without CORP with a superlative and a guarantee, and a bare penalty claim.
+- The publisher exits non-zero on any failure, and one failure stops the whole
+  batch rather than publishing the clean ones.
+
+Rule 3 is enforced by context rather than as a flat ban: "no percentage
+late-filing penalty" is permitted only where the full qualification block follows
+it within the same passage. The ten catch-up pages carry the block whole and
+pass; the planted bare claim does not.
+
+### Published as proof
+
+| ID | URL |
+|---|---|
+| 527 | /deadlines/t2-due-date-for-december-year-end/ |
+| 529 | /deadlines/file-your-2021-nil-t2-return/ |
+
+Both landed on the 6(a) exemplar URL shape, which confirms the nil_deadline
+rewrite base registered on September 25 works as designed.
+
+`cnf_primary_keyword` was rejected as not registered for this post type. The
+other six cnf_ keys persisted. Worth adding to the register_meta snippet before
+the full run.
+
+### Sixth Appendix A conflict
+
+6(a) gives `/deadlines/t2-due-date-for-december-year-end/`. Appendix A gives
+`/nil-t2-deadline-for-a-december-31-year-end/` at root. The CPT is registered
+with rewrite base `deadlines`, so the build follows 6(a). Appendix A also
+composes the 23 as 12 month-end plus 10 year pages plus a calendar, where 6(a)
+says "12 month-end pages plus 11 rule pages".
+
+### Still needed before the 21 remaining go live
+
+Sharad reviews Family 14, as he does every family. The pages are generated to
+draft by default for that reason.
