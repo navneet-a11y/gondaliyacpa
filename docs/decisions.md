@@ -1987,3 +1987,23 @@ A CSS bug was making it worse: `.cnf-by` and `.cnf-rev` are single-class selecto
 lost to Astra's `.entry-content p` (class + element), so Astra's paragraph margin applied
 and spread the two lines apart. The replacement rule is scoped `.cnf-w .cnf-rev`, which
 outranks it.
+
+### Breadcrumb and last-reviewed folded into one meta row on `/deadlines/`
+
+After the byline moved to the banner, the last-reviewed stamp was left stranded on its
+own line under the breadcrumb. Both are now one inline grey metadata row:
+
+`Nil T2 filing in Canada > T2 filing deadlines · Last reviewed: October 15, 2026`
+
+This still satisfies 7.5 last-reviewed rule 1 — the line renders above the first
+paragraph — and rule 6, since it is a visible on-page line rather than a schema value
+alone. The `<nav>` keeps its own element and `aria-label`, so the breadcrumb stays a
+landmark for assistive technology; only its `display` is set to inline inside the
+wrapper.
+
+**The other 22 Family 14 pages were not changed, because there is nothing to fold.**
+They carry no breadcrumb — the 12 month pages, the 10 catch-up pages and the calendar
+open the body with `<p class="cnf-lastrev">` and nothing above it. Adding breadcrumbs to
+them is a separate change worth making (it would give each child a semantic up-link to
+the pillar and a third anchor to `/deadlines/`), but it is scope beyond a styling fix
+and is not done here.
