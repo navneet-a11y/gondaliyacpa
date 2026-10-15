@@ -51,6 +51,8 @@ def hero(title):
             '<p class="cnf-hero-by">' + BYLINE + '</p>\n</div>\n')
 
 CSS = ("<style>\n"
+ ".entry-header{display:none!important}\n"
+ ".ast-article-single,.ast-article-single .entry-content{margin-top:0;padding-top:0}\n"
  ".cnf-hero{background-image:linear-gradient(rgba(10,10,10,.79),rgba(10,10,10,.79)),url('https://corpnilfilingfor300.ca/wp-content/uploads/2026/10/closeup-blueprint-architecture-layout-plan_53876-147790.jpg');background-size:cover;background-position:bottom center;background-repeat:no-repeat;"
  "padding:100px 20px;text-align:center}\n"
  ".cnf-hero h1{color:#FFFFFF;font-size:40px;font-weight:700;line-height:1.25;margin:0}\n"

@@ -1442,3 +1442,35 @@ Caught while wiring the hero: the calendar body was passing `title`, a leftover
 loop variable from the catch-up-year loop, so its hero would have read "File Your
 2026 Nil T2 Return". An assertion comparing every `<h1>` against the record title
 caught it before publish; `cal_title` is now a named variable.
+
+## 2026-10-15 — Astra's entry header was still printing above the hero
+
+Navneet's screenshot showed "By Sharad Gondaliya, CPA / October 15, 2026" above
+the banner, with whitespace pushing the hero down the page.
+
+`site-post-title: disabled` hides the H1 only. Astra's author/date line is a
+separate Customizer setting (Blog → Single Post → meta), stored as a theme mod,
+and the corpnil connector exposes no site-settings or theme-mod write tool — only
+`wp_get_site_settings` and `wp_get_active_theme`. So it cannot be switched off
+from here.
+
+Two rules were added to the top of the Family 14 style block instead, in the
+generator and on all 23 live records:
+
+    .entry-header{display:none!important}
+    .ast-article-single,.ast-article-single .entry-content{margin-top:0;padding-top:0}
+
+The first removes the leftover meta line, the second closes the gap so the hero
+sits flush under the site header. These load only on Family 14 pages, since the
+style block lives in each record's `post_content`.
+
+This is a workaround, not the fix. Unchecking the meta items in Astra →
+Customize → Blog → Single Post turns it off site-wide and would cover the other
+families as they are built; the CSS is harmless once that is done. Worth doing
+before Family 8 and the rest of Family 15 go up, so the problem is not repeated
+15 more times.
+
+Navneet fixed the WordPress display name separately — it now reads "Sharad
+Gondaliya, CPA" rather than "sharad7433". The author archive at
+`/author/sharad-gondaliya/` with a biography, credentials and photo, which 7.5
+byline rule 5 requires and which must not be noindexed, is still outstanding.
