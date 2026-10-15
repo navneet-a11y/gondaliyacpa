@@ -40,3 +40,7 @@
 - Meta title (52 chars): Professional Corporations in Ontario: Rules and Fees
 - Meta description (142 chars): Which Ontario regulators allow professional corporations, the OBCA conditions, certificate of authorization fees, and who may hold the shares.
 
+
+## /guides/share-structure-explained/ (page 9590, rewritten 2026-10-15)
+- Meta title: Share Structure for a New Corporation in Canada
+- Meta description: How share classes work in a new Canadian corporation: voting, dividend and property rights, common setups, who should hold which shares, and the cost of changing later.
