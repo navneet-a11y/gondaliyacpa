@@ -1712,3 +1712,79 @@ a machine that can reach the site, or LiteSpeed's CSS optimisation turned off lo
 enough to compare.
 
 `build/ontario/516-hub.html` matches live byte for byte at 8,852.
+
+## 2026-10-15 — /pricing/nil-t2-filing-cost/ built, and Single - Cost parked
+
+**Page 794**, `nil_cost`, live at https://corpnilfilingfor300.ca/pricing/nil-t2-filing-cost/
+
+This is 1 of the 15 Family 8 URLs that were due **October 9, 2026** (line 2245), so the
+family is overdue. It also closes a broken link: the six Ontario service pages already
+pointed at this URL and it did not exist.
+
+Built to the plan's own exemplar at line 1169, which covers this exact page: H1
+"Nil T2 Filing Cost", and the meta description reworded only for the price override.
+
+The line 1216 publish gate is met: *"No cost page publishes without the full fee line
+… and the overflow line …"*. Both are present, in the fee block directly under the
+byline and again in the "Work That Is Not Nil" section. The F8 banned phrase
+"starting from" does not appear; a generated check asserts that along with the whole
+7.4 list, no FAQPage, no EFILE number, one H1, and valid JSON-LD.
+
+7.5 rule 3 names Family 8, so the byline is the fixed CPA string, not "By Sharad
+Gondaliya, CPA" as the service pages use.
+
+All seven meta keys from line 315 persisted: `cnf_price_incl_hst` 339.00,
+`cnf_hst_component` 39.00, `cnf_net_revenue` 300.00, `cnf_overflow_price_incl_hst`
+395.50, the two `*_rows_json` arrays, and `cnf_last_verified_et`. Term `cnf_family` f8.
+
+### Price wording: the gate names a string the site no longer uses
+
+Line 1216 requires the fee line to read "$300.00 **including** HST per tax year" and
+the overflow "$350.00 **including** HST per year". Navneet's standing correction
+replaced "including" with "plus" site-wide, and every other page already published
+uses "plus". The page follows the live decision, so the gate is met in substance and
+not to the letter. Sharad should confirm, since this is the family where the exact fee
+wording matters most and he approves every fee change (line 2219).
+
+Also noted: the Ontario service pages say the overflow is "$350.00 plus HST per **tax**
+year", while CLAUDE.md and the plan both say "per year". This page follows CLAUDE.md.
+The six Ontario pages are inconsistent with it and should be reconciled.
+
+### Eighth Appendix A / 6(a) conflict
+
+Line 315 registers `nil_cost` with rewrite slug **`cost`**. Line 1146 gives the URLs as
+`/pricing/` and `/pricing/<slug>/`. The live CPT is registered with base `pricing`,
+which matches 1146 and the exemplar at 1169, so the URL is right and line 315 is the
+outlier. No change needed; recorded so it is not "fixed" later in the wrong direction.
+
+### Single - Cost, template 796, parked
+
+Plan line 342 specifies it, so it is built: `_elementor_template_type: single-post`,
+banner with the Post Title tag and the rule 3 byline, then one Post Content widget.
+Generator at `build/f8/build_single_cost.py`, import file at
+`build/elementor/corpnil-single-cost.json`.
+
+`_elementor_conditions` is left **empty**, exactly as Single - Deadline (573) is, because
+Theme Builder has not been shown to work on this install. Assigning it would risk the
+same silent non-render, and the page already works from `post_content`.
+
+**Two parts of line 342 were deliberately not built**, because they cannot be built
+honestly as specified:
+
+- `cnf_included_rows_json` and `cnf_excluded_rows_json` are JSON arrays. A Post Custom
+  Field dynamic tag prints a meta value verbatim, so these would render as raw JSON on
+  the page rather than as lists. Nothing in Elementor parses JSON into markup. This is
+  the same defect already noted for F4's `cnf_unique_data_block_json`.
+- The "price block is a single dynamic value" note assumed the "including HST" wording.
+  With the plus-HST override the visible figure is $300.00, which lives in
+  `cnf_net_revenue`, not `cnf_price_incl_hst`. Which field drives the block is a
+  decision, not a guess.
+
+Both go to Sharad with the Theme Builder question.
+
+### Still open on Family 8
+
+14 of the 15 URLs remain, including `/pricing/cost-to-file-six-unfiled-nil-years/` and
+`/pricing/what-is-not-included/` from the line 1146 list. The hub at `/pricing/`
+(page 323) exists but has not been checked against line 1201, which makes it the only
+hub allowed to carry both fee lines twice.

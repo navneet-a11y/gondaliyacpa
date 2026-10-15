@@ -1,0 +1,126 @@
+{
+ "version": "0.4",
+ "title": "Single - Cost",
+ "type": "single-post",
+ "content": [
+  {
+   "id": "f8ban01",
+   "elType": "container",
+   "settings": {
+    "flex_direction": "column",
+    "background_background": "classic",
+    "background_image": {
+     "id": 180,
+     "url": "https://corpnilfilingfor300.ca/wp-content/uploads/2026/09/business-executives-having-meeting_1098-18316.jpg"
+    },
+    "background_position": "center center",
+    "background_size": "cover",
+    "background_repeat": "no-repeat",
+    "background_overlay_background": "classic",
+    "background_overlay_color": "#0B1A33",
+    "background_overlay_opacity": {
+     "unit": "px",
+     "size": 0.82,
+     "sizes": []
+    },
+    "padding": {
+     "unit": "px",
+     "top": "40",
+     "right": "20",
+     "bottom": "40",
+     "left": "20",
+     "isLinked": false
+    }
+   },
+   "elements": [
+    {
+     "id": "f8ban02",
+     "elType": "container",
+     "settings": {
+      "flex_direction": "column",
+      "content_width": "boxed"
+     },
+     "elements": [
+      {
+       "id": "f8h1",
+       "elType": "widget",
+       "widgetType": "theme-post-title",
+       "settings": {
+        "header_size": "h1",
+        "align": "left",
+        "title_color": "#FFFFFF",
+        "typography_typography": "custom",
+        "typography_font_family": "Poppins",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 40
+        },
+        "typography_font_size_mobile": {
+         "unit": "px",
+         "size": 28
+        },
+        "typography_font_weight": "700",
+        "typography_line_height": {
+         "unit": "em",
+         "size": 1.25
+        }
+       }
+      },
+      {
+       "id": "f8byl",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<p>Written and reviewed by Sharad Gondaliya, CPA (Ontario), CPA Ontario Membership 61040184.</p>",
+        "text_color": "#E8ECF4",
+        "align": "left",
+        "typography_typography": "custom",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 15
+        },
+        "typography_line_height": {
+         "unit": "em",
+         "size": 1.6
+        },
+        "_margin": {
+         "unit": "px",
+         "top": "12",
+         "right": "0",
+         "bottom": "0",
+         "left": "0",
+         "isLinked": false
+        }
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "f8bod01",
+   "elType": "container",
+   "settings": {
+    "flex_direction": "column",
+    "content_width": "boxed",
+    "padding": {
+     "unit": "px",
+     "top": "0",
+     "right": "0",
+     "bottom": "0",
+     "left": "0",
+     "isLinked": true
+    }
+   },
+   "elements": [
+    {
+     "id": "f8cont",
+     "elType": "widget",
+     "widgetType": "theme-post-content",
+     "settings": {}
+    }
+   ]
+  }
+ ],
+ "page_settings": []
+}
