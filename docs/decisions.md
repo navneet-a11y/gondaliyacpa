@@ -1878,3 +1878,84 @@ each other silently, and `wp_replace_in_post` has no optimistic locking. The byt
 checks used here would catch a clash only by accident. Worth deciding who owns which
 family before more parallel work, and worth knowing that a "broken links audit" session
 may be changing the same links this session has been fixing.
+
+## 2026-10-15 — `/deadlines/` pillar published and Family 14 wired up
+
+### The pillar
+
+`/deadlines/` is live as **page 799**, published from `build/f14/deadlines-hub.html`
+(8,218 bytes locally; 8,217 stored, the one byte being the trailing newline WordPress
+strips). `cnf_family: f14`, Astra layout `page-builder` / `full-width-container`, title
+and breadcrumbs disabled, `cnf_child_count: 23`.
+
+Plan line 1202 makes `/deadlines/` the Family 14 pillar — "12 month-end pages and 9 date
+tools link up" — but the 6(a) table carries **no exemplar row for it**, unlike the cost
+page at line 1169. So the plan supplies the structure and the constraints and no copy.
+It was built anyway because every fact in it comes from the generator or from a
+plan-mandated string: the 12 due dates are computed by `build/f14/build_deadlines_hub.py`
+via `dates.py` and never typed (plan line 2225), and the business-day sentence, the
+EFILE line, the scope paragraph and the price are plan copy-paste blocks.
+
+**A page, not a CPT item.** Slug `deadlines` as a WordPress page, with the 23 `nil_deadline`
+children at `/deadlines/<slug>/`. That is the pattern already proven by page 323 at
+`/pricing/` with its `nil_cost` children: `has_archive: false` lets a page and the CPT
+children share a base.
+
+### Internal linking now satisfies the 6(g) Family 14 row
+
+6(g) (lines 1518–1540) gives Family 14 **4 minimum inbound** and **20 maximum body
+outbound**, with the anchor pattern "Month plus year-end phrase".
+
+| Page | Inbound | Outbound |
+|---|---|---|
+| `/deadlines/` (799) | 13 — calendar + 12 month pages | 17 distinct |
+| each of the 12 month pages | 4 — hub, previous month, next month, calendar | 5 |
+| calendar (550) | 13 — hub + 12 month pages | 15 |
+
+Added this session:
+
+- Each of the 12 month pages gained an **Other Year-Ends and the Full Calendar**
+  section: an up-link to `/deadlines/`, a link to the calendar, and previous/next
+  month links. The ring closes December to January, verified on all 12.
+- The calendar's "T2 due date by fiscal year-end" table had 12 plain-text year-ends;
+  each first-column cell is now a link to its month page with the 6(g) anchor
+  ("January 31 year-end"), plus a paragraph linking up to `/deadlines/` and across to
+  `/pricing/nil-t2-filing-cost/`.
+
+`build/f14/build_f14.py` was patched so a rebuild reproduces all of this rather than it
+living only on the server.
+
+### Still orphans
+
+`/deadlines/` itself has 13 inbound links, but all 13 are from its own children. Nothing
+in the site navigation or on the home page points to it, and it is deliberately **not**
+in the main menu: the F16 hub list (line 1154) is `/services/`, `/tools/`, `/locations/`,
+`/guides/`, `/blog/`, and `/deadlines/` is not among them. Where the pillar belongs in
+the nav is Sharad Gondaliya's call, not a change to make unasked.
+
+The 10 catch-up year pages still have no inbound links at all. They hang off
+`/catch-up-nil-t2-filing/` (page 436), which is the next linking job — the hub links to
+436 rather than to the 10 years directly, to stay inside the 20-outbound cap.
+
+### `/tools/nil-t2-deadline-calculator/` does not exist
+
+Plan line 1202 routes `/deadlines/` → `/tools/nil-t2-deadline-calculator/` → `/`. That
+tool page is not built, so the hub and the month pages link to the live calendar at
+`/deadlines/cra-t2-deadline-calendar/` instead. When the calculator is built, these
+links should be revisited.
+
+### Generator drift found while verifying
+
+Regenerating the manifest produced month pages 88 bytes larger than live and a calendar
+79 bytes larger. Reconciled exactly, and all three causes are cosmetic leftovers from an
+earlier version of the generator that published those pages:
+
+- the 89-byte `.cnf-dl .cnf-qual{...}` CSS rule, absent from the 12 month pages and the
+  calendar but present on the 10 catch-up pages (checked on page 544, which carries both
+  the rule and `class="cnf-qual"`). The month pages and the calendar never use the class,
+  so nothing is unstyled — the rule is simply dead CSS the generator would now add.
+- one extra newline before the closing `</div>` on live.
+- the calendar's 9 Ontario-holiday rows are newline-joined on live, not bare-joined.
+
+No live defect, and the generator was left as it is on these three points. Noted so that
+a future rebuild diff is not mistaken for corruption.

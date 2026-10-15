@@ -19,8 +19,26 @@ from dates import MONTHS, last_day, due_date, due_month_name, ontario_holidays, 
 
 TODAY = '2026-10-15'
 PRICE = '$300.00 plus HST per tax year'
-FORM  = 'https://corpnilfilingfor300.ca/form/'
+SITE  = 'https://corpnilfilingfor300.ca'
+FORM  = SITE + '/form/'
 CTA   = 'Start Nil T2 Filing NOW'
+
+# 6(g) internal linking, Family 14 row: minimum 4 inbound, maximum 20 body
+# outbound. HUB is the pillar at line 1202; CALENDAR is the live date tool
+# (6(a) names /tools/nil-t2-deadline-calculator/, which is not built yet).
+HUB      = SITE + '/deadlines/'
+CALENDAR = SITE + '/deadlines/cra-t2-deadline-calendar/'
+COST     = SITE + '/pricing/nil-t2-filing-cost/'
+
+def month_url(m):
+    """6(g) anchor pattern for Family 14 is "Month plus year-end phrase"."""
+    return '%s/deadlines/t2-due-date-for-%s-year-end/' % (SITE, MONTHS[m-1].lower())
+
+def month_anchor(m):
+    return '%s %d year-end' % (MONTHS[m-1], last_day(2026, m))
+
+def a(href, text):
+    return '<a href="%s">%s</a>' % (href, text)
 
 # Plan copy-paste blocks, used verbatim.
 MUST_FILE = ('Every resident corporation, including an inactive one, must file a T2 return within six '
@@ -84,6 +102,8 @@ records = []
 for m in range(1, 13):
     ye_day = last_day(2026, m)
     ye_name = f'{MONTHS[m-1]} {ye_day}'
+    prev_m = 12 if m == 1 else m - 1
+    next_m = 1 if m == 12 else m + 1
     due_name = due_month_name(m)
     # concrete due dates for the next three tax years, with weekend/holiday shift
     rows = []
@@ -106,6 +126,13 @@ for m in range(1, 13):
       + '<table><tr><th>Fiscal year-end</th><th>T2 due</th></tr>\n' + '\n'.join(rows) + '</table>\n'
       + P('Where a due date falls on a Saturday, a Sunday or a public holiday recognised by the Canada '
           'Revenue Agency, a return received the next business day is on time.')
+      + '<h2>Other Year-Ends and the Full Calendar</h2>\n'
+      + P('Every fiscal year-end and its T2 due date is listed on '
+          + a(HUB, 'T2 filing deadlines') + '. The ' + a(CALENDAR, 'T2 deadline calendar')
+          + ' shows which due dates move because they fall on a weekend or an Ontario '
+            'statutory holiday.',
+          'Nearby year-ends: ' + a(month_url(prev_m), month_anchor(prev_m)) + ' and '
+          + a(month_url(next_m), month_anchor(next_m)) + '.')
       + '<h2>Filing a nil return for this year-end</h2>\n'
       + P(SCOPE, EFILE)
       + f'<h2>What it costs</h2>\n'
@@ -151,7 +178,7 @@ for y in range(2017, 2027):
 cal_rows = []
 for m in range(1, 13):
     dd = due_date(2026, m)
-    cal_rows.append(f'<tr><td>{MONTHS[m-1]} {last_day(2026,m)}</td>'
+    cal_rows.append(f'<tr><td>{a(month_url(m), month_anchor(m))}</td>'
                     f'<td>{dd.strftime("%B %d")}</td></tr>')
 hol = ontario_holidays(2027)
 hol_rows = ''.join(f'<tr><td>{d.strftime("%B %d, %Y")}</td><td>{n}</td></tr>'
@@ -167,6 +194,9 @@ body = (CSS + hero(cal_title) + '<div class="cnf-dl">\n' + LAST_REVIEWED
       'Revenue Agency, a return received the next business day is on time.')
   + '<h2>Ontario statutory holidays, 2027</h2>\n'
   + '<table><tr><th>Date</th><th>Holiday</th></tr>' + hol_rows + '</table>\n'
+  + P('Each year-end above links to its own page. The full pillar is '
+      + a(HUB, 'T2 filing deadlines') + ', and the fee for every year is on '
+      + a(COST, 'nil T2 filing cost') + '.')
   + '<h2>Filing a nil return</h2>\n' + P(SCOPE, EFILE)
   + P(f'{PRICE}. One price for every year and every province. No hourly billing and no add-on fees.')
   + cta() + '</div>')
