@@ -1,0 +1,132 @@
+{
+ "version": "0.4",
+ "title": "Single - Deadline",
+ "type": "single-post",
+ "content": [
+  {
+   "id": "d14ban01",
+   "elType": "container",
+   "settings": {
+    "flex_direction": "column",
+    "background_background": "classic",
+    "background_image": {
+     "id": 328,
+     "url": "https://corpnilfilingfor300.ca/wp-content/uploads/2026/10/closeup-blueprint-architecture-layout-plan_53876-147790.jpg"
+    },
+    "background_position": "bottom center",
+    "background_size": "cover",
+    "background_repeat": "no-repeat",
+    "background_overlay_background": "classic",
+    "background_overlay_color": "#0A0A0A",
+    "background_overlay_opacity": {
+     "unit": "px",
+     "size": 0.79,
+     "sizes": []
+    },
+    "padding": {
+     "unit": "px",
+     "top": "100",
+     "right": "20",
+     "bottom": "100",
+     "left": "20",
+     "isLinked": false
+    }
+   },
+   "elements": [
+    {
+     "id": "d14ban02",
+     "elType": "container",
+     "settings": {
+      "flex_direction": "column",
+      "content_width": "boxed",
+      "width": {
+       "unit": "%",
+       "size": 100
+      }
+     },
+     "elements": [
+      {
+       "id": "d14h1",
+       "elType": "widget",
+       "widgetType": "theme-post-title",
+       "settings": {
+        "header_size": "h1",
+        "align": "center",
+        "title_color": "#FFFFFF",
+        "typography_typography": "custom",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 40
+        },
+        "typography_font_size_tablet": {
+         "unit": "px",
+         "size": 32
+        },
+        "typography_font_size_mobile": {
+         "unit": "px",
+         "size": 26
+        },
+        "typography_font_weight": "700",
+        "typography_line_height": {
+         "unit": "em",
+         "size": 1.25
+        }
+       }
+      },
+      {
+       "id": "d14byl",
+       "elType": "widget",
+       "widgetType": "text-editor",
+       "settings": {
+        "editor": "<p style=\"text-align:center\">Written and reviewed by Sharad Gondaliya, CPA (Ontario), CPA Ontario Membership 61040184.</p>",
+        "text_color": "#E8ECF4",
+        "typography_typography": "custom",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 14
+        },
+        "typography_line_height": {
+         "unit": "em",
+         "size": 1.6
+        },
+        "_margin": {
+         "unit": "px",
+         "top": "14",
+         "right": "0",
+         "bottom": "0",
+         "left": "0",
+         "isLinked": false
+        }
+       }
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d14bod01",
+   "elType": "container",
+   "settings": {
+    "flex_direction": "column",
+    "content_width": "boxed",
+    "padding": {
+     "unit": "px",
+     "top": "56",
+     "right": "20",
+     "bottom": "72",
+     "left": "20",
+     "isLinked": false
+    }
+   },
+   "elements": [
+    {
+     "id": "d14cont",
+     "elType": "widget",
+     "widgetType": "theme-post-content",
+     "settings": {}
+    }
+   ]
+  }
+ ],
+ "page_settings": []
+}

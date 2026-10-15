@@ -1315,3 +1315,76 @@ re-run the meta pass to backfill all 23.
 `build_f14.py` produced "A April 30" and "A August 31" and "A October 31". Added
 an `article()` helper picking An before a vowel. The three affected titles and
 leads read correctly in the published records.
+
+## 2026-10-15 — Family 14 was rendering Astra's default single-post chrome
+
+Navneet reported the deadline pages showing a bare title plus "By sharad7433 /
+October 15, 2026" and no banner. That is Astra's default single-post layout, not
+a design the plan asks for. Cause: 4.4 gives Family 14 an Elementor Pro template
+named **Single – Deadline** (Single Post type, condition Singular / nil_deadline
+/ all) and it had never been built, so nothing overrode the theme.
+
+As rendered, the pages failed two launch gates:
+
+- **Gate 8** (line 1905) — visible "Last reviewed:" line under the H1. The
+  generated bodies carried a combined "Reviewed by … Last reviewed …" line at
+  the *bottom*, which is also against 7.5 last-reviewed rule 1 and line 399
+  ("Top of every guide, blog post, deadline page and calculator").
+- **Gate 10** (line 1909) — byline renders a real named author. "sharad7433" is
+  a WordPress username, which 7.5 byline rule 1 rules out directly.
+
+### Built: Single – Deadline, post 573
+
+Generator `build/f14/build_single_deadline.py`, import file
+`build/elementor/corpnil-single-deadline.json`. Published as `elementor_library`
+573 with `_elementor_template_type: single-post` and
+`_elementor_conditions: ["include/singular/nil_deadline"]`.
+
+The banner reuses the city-hub hero so Family 14 matches the rest of the site:
+media 328, `#0A0A0A` overlay at 0.79, `bottom center`, `cover`, `no-repeat`,
+100px vertical padding. Inside it: the H1 from the Post Title dynamic tag, then
+the 7.5 rule 3 byline as static text, which is correct because the rule fixes one
+wording for the whole family rather than varying by author:
+
+> Written and reviewed by Sharad Gondaliya, CPA (Ontario), CPA Ontario Membership 61040184.
+
+Below the banner, one Post Content widget renders the body. One template serves
+all 23 and any Family 14 page added later.
+
+### 23 bodies rewritten to match
+
+The bottom `<p class="cnf-rev">` byline was removed from all 23 and replaced with
+`<p class="cnf-lastrev">Last reviewed: October 15, 2026</p>` immediately inside
+`<div class="cnf-dl">`, so it sits under the template's H1 and above the first
+paragraph. The orphaned `.cnf-rev` CSS rule became
+`.cnf-lastrev{font-size:.9em;color:#5A6478;margin:0 0 22px}` (#5A6478 on white is
+5.6:1, so AA holds for normal text). Verified by search: 0 records carry the old
+byline, 23 carry the new line.
+
+`build_f14.py` was patched the same way, so a rebuild reproduces this rather than
+reverting it. The gate still passes 23 of 23.
+
+### Deviation: where the last-reviewed date comes from
+
+7.5 last-reviewed rule 2 wants the date rendered from post meta `_cnf_last_reviewed`
+through an Elementor dynamic tag. Two problems: that key is not registered (4.3
+line 321 gives Family 14 `cnf_last_verified_et` instead, so the plan names two
+different keys for the same thing), and the stored value is ISO `2026-10-15`,
+which a dynamic tag would render as "2026-10-15" and not the "Month D, YYYY" the
+rule specifies. For now the generator writes the formatted line into the body
+from the same pipeline value that fills `cnf_last_verified_et`, so the two cannot
+drift. To close this properly, Sharad needs to settle which key is canonical;
+then the template can read it and the body line comes out.
+
+### Still open, needs wp-admin
+
+The corpnil connector exposes no user-write tool, so the author account cannot be
+fixed from here. In wp-admin, user 1 needs a display name of "Sharad Gondaliya,
+CPA" and a profile slug of `sharad-gondaliya`, because 7.5 byline rule 5 requires
+a live author archive at `/author/<first-last>/` with a biography, credentials and
+a photo, not noindexed. The template's own byline no longer depends on this, but
+the author archive and the Article schema author field do.
+
+Elementor Pro caches its theme-builder condition map in an option this connector
+cannot write, so the condition on 573 may not take effect until the Theme Builder
+is opened once or Elementor → Tools → Regenerate CSS & Data is run.

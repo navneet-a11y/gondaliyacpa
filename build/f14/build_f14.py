@@ -37,8 +37,11 @@ EFILE = ('We are a registered EFILE electronic filer. Your return is transmitted
          'days are Monday to Friday and exclude Ontario statutory holidays.')
 SCOPE = ('This service is for a corporation with no activity in the tax year. A corporation with '
          'investment income, rental income, or dividends paid or received is not nil.')
-REVIEWED = ('Reviewed by Sharad Gondaliya, CPA, CPA Ontario Membership 61040184. '
-            f'Last reviewed October 15, 2026.')
+# 7.5 byline rule 3: the CPA byline is rendered by the "Single - Deadline"
+# Elementor template (one fixed string for all of Family 14), not typed into
+# each body. 7.5 last-reviewed rule 1 puts this line under the H1, which is
+# the first thing in post_content once the template owns the banner.
+LAST_REVIEWED = '<p class="cnf-lastrev">Last reviewed: October 15, 2026</p>\n'
 
 CSS = ("<style>\n"
  ".cnf-dl h2{color:#314D8A;margin-top:32px}\n"
@@ -50,7 +53,7 @@ CSS = ("<style>\n"
  ".cnf-dl .cnf-cta{display:inline-block;background:#314D8A;color:#FFFFFF !important;text-decoration:none;"
  "padding:14px 28px;border-radius:6px;font-weight:600;margin:8px 0 28px}\n"
  ".cnf-dl .cnf-cta:hover,.cnf-dl .cnf-cta:focus{background:#28406F;color:#FFFFFF !important}\n"
- ".cnf-dl .cnf-rev{font-size:.9em;margin-top:38px}\n"
+ ".cnf-dl .cnf-lastrev{font-size:.9em;color:#5A6478;margin:0 0 22px}\n"
  "</style>\n")
 
 def article(word):
@@ -79,7 +82,7 @@ for m in range(1, 13):
     title = f'T2 Due Date for a {ye_name} Year-End'
     meta  = (f'{article(ye_name)} {ye_name} year-end makes the T2 due {due_example.strftime("%B %d")}. '
              f'Filing is mandatory even with no activity. Nil T2 filing at {PRICE}.')
-    body = (CSS + '<div class="cnf-dl">\n'
+    body = (CSS + '<div class="cnf-dl">\n' + LAST_REVIEWED
       + f'<div class="cnf-lead"><p>{article(ye_name)} {ye_name} year-end makes the T2 due '
         f'{due_example.strftime("%B %d")}, six months after the end of the tax year.</p></div>\n'
       + P(MUST_FILE)
@@ -91,8 +94,7 @@ for m in range(1, 13):
       + P(SCOPE, EFILE)
       + f'<h2>What it costs</h2>\n'
       + P(f'{PRICE}. One price for every year and every province. No hourly billing and no add-on fees.')
-      + cta()
-      + f'<p class="cnf-rev">{REVIEWED}</p>\n</div>')
+      + cta() + '</div>')
     records.append(dict(
         kind='month-end', slug=f't2-due-date-for-{MONTHS[m-1].lower()}-year-end',
         title=title, meta_description=meta, content=body,
@@ -109,7 +111,7 @@ for y in range(2017, 2027):
     title = f'File Your {y} Nil T2 Return'
     meta  = (f'File an outstanding {y} nil T2 return. An unfiled year stays open until it is filed. '
              f'{PRICE}, CPA reviewed and transmitted electronically.')
-    body = (CSS + '<div class="cnf-dl">\n'
+    body = (CSS + '<div class="cnf-dl">\n' + LAST_REVIEWED
       + f'<div class="cnf-lead"><p>A {y} nil T2 return that has not been filed is still outstanding. '
         f'It does not expire and it does not resolve itself.</p></div>\n'
       + P(MUST_FILE)
@@ -119,8 +121,7 @@ for y in range(2017, 2027):
       + P(f'Each tax year is a separate return at {PRICE}. If you have several years outstanding, you '
           f'pick every year you have not filed and each is prepared, reviewed and transmitted.',
           SCOPE, EFILE)
-      + cta()
-      + f'<p class="cnf-rev">{REVIEWED}</p>\n</div>')
+      + cta() + '</div>')
     records.append(dict(
         kind='catch-up-year', slug=f'file-your-{y}-nil-t2-return',
         title=title, meta_description=meta, content=body,
@@ -139,7 +140,7 @@ for m in range(1, 13):
 hol = ontario_holidays(2027)
 hol_rows = ''.join(f'<tr><td>{d.strftime("%B %d, %Y")}</td><td>{n}</td></tr>'
                    for n, d in sorted(hol.items(), key=lambda x: x[1]))
-body = (CSS + '<div class="cnf-dl">\n'
+body = (CSS + '<div class="cnf-dl">\n' + LAST_REVIEWED
   + '<div class="cnf-lead"><p>Every T2 is due six months after the fiscal year-end. '
     'This calendar gives the due date for each of the twelve month-end dates.</p></div>\n'
   + P(MUST_FILE)
@@ -151,7 +152,7 @@ body = (CSS + '<div class="cnf-dl">\n'
   + '<table><tr><th>Date</th><th>Holiday</th></tr>' + hol_rows + '</table>\n'
   + '<h2>Filing a nil return</h2>\n' + P(SCOPE, EFILE)
   + P(f'{PRICE}. One price for every year and every province. No hourly billing and no add-on fees.')
-  + cta() + f'<p class="cnf-rev">{REVIEWED}</p>\n</div>')
+  + cta() + '</div>')
 records.append(dict(
     kind='calendar', slug='cra-t2-deadline-calendar',
     title='T2 Deadline Calendar for Canadian Corporations',
