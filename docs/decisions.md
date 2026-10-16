@@ -2054,3 +2054,74 @@ Also worth noting the composition is behind the plan's own October 9 milestone (
 55 published URLs today, but they are a different 55 — Family 14's 23, Family 4's 6,
 one Family 8 page and 25 pages. The coincidence in the total should not be read as the
 milestone being met.
+
+## 2026-10-16 — Family 5 started: first 5 of 45 question pages
+
+Published as `nil_question` items at `/answers/<question>/`, IDs 831, 833, 834, 835, 836.
+All five byte-identical to `build/f5/` (8111, 7915, 8082, 7988, 8159).
+
+Chosen as Appendix A's own first five, the "what happens if" group. Deliberate: every
+one of them carries penalty claims, so the template is proved on the hardest case in the
+family before the other 40 are written.
+
+### What the plan supplied, and what it did not
+
+Supplied: all 45 URLs (Appendix A line 3092), the structural brief (line 1578), one
+worked exemplar (line 1166), the gate (line 1213), the linking row (line 1527), the CPT
+and meta keys (line 312).
+
+**Not supplied: the answers.** Line 1213 names the source as "Sharad's answer bank, one
+entry per question, written once" and the owner as "Sharad Gondaliya writes and
+reviews". No answer bank exists. Navneet was told this and asked for the five to be
+built anyway, so the five answer-first paragraphs are drafted to the plan's shape and
+**are pending Sharad Gondaliya's sign-off**. They are his text to approve or replace,
+not Navneet's or this session's to finalise.
+
+### Gate results
+
+`build/f5/gate.py` enforces line 1213 plus the CLAUDE.md hard rules. All five pass:
+answer paragraphs 47 to 52 words (the brief wants 40 to 60), one H1, exactly one table,
+the answer reused as the meta description, T183CORP never bare, the full 7.4
+qualification block present on every page that mentions a penalty, no FAQPage or HowTo,
+no banned phrase, price as "$300.00 plus HST per tax year" throughout.
+
+### Linking, and why these five are not orphans
+
+6(g) line 1527 gives Family 5 a minimum of 3 inbound and a maximum of 15 outbound. The
+five cross-link to each other, so each has **4 inbound** and **9 outbound** — inside both
+bounds from the day they were published, unlike Family 14, which had to be wired up
+afterwards.
+
+Anchors are the question text shortened, per the 6(g) anchor rule.
+
+### Two more plan conflicts, the 12th and 13th
+
+**12th.** The three Family 5 slugs named in 6(a) line 1143 appear nowhere in Appendix A's
+45: `/answers/does-an-inactive-corporation-have-to-file-a-t2/` (which is also the fully
+worked exemplar at line 1166), `/answers/can-i-e-sign-a-t183corp/` and
+`/answers/how-many-unfiled-t2-years-can-i-file-at-once/`. Appendix A's nearest
+equivalents are differently worded. So the one exemplar the plan works through in full
+is for a URL that is not in the family. Either it replaces one of the 45 or it is
+illustrative only. Sharad Gondaliya's call; not resolved here.
+
+**13th.** Appendix A gives these 45 at root level
+(`/what-happens-if-i-dont-file-a-nil-t2/`) while 6(a) and the CPT rewrite base both give
+`/answers/<question>/`. Resolved toward 6(a), as the six previous Appendix A conflicts
+were, and consistent with the registered rewrite base.
+
+### Byline reading worth recording
+
+7.5 byline rule 3 lists Families 1, 8, 9, 10, 14 and 15 as falling under the CPA byline
+"in full", and Family 5 is not among them. But the rule's own test is substantive —
+"every page that states a filing rule, a penalty figure, a schedule requirement or a
+T183CORP rule" — and these five state filing rules and penalty figures throughout. The
+CPA byline is therefore used. The family list says which families are covered entirely,
+not which pages the test reaches.
+
+### Still to do for Family 5
+
+- Rank Math: `nil_question` needs Include in Sitemap enabled, and per the 2026-10-15
+  note the setting must be **toggled**, not re-saved, or the sitemap 404s.
+- The remaining 40 questions, blocked on the answer bank.
+- No `/answers/` hub page exists. Family 16 lists five hubs and `/answers/` is not one,
+  so the question pages currently have no parent above them.
