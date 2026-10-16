@@ -69,3 +69,7 @@
 ## /compare/ontario-vs-alberta-vs-british-columbia-incorporation/ (page 10244, draft created 2026-10-16)
 - Meta title: Ontario vs Alberta vs BC Incorporation: $35 Fee
 - Meta description: Ontario $300.00, Alberta $291.75 plus an agent fee, BC $350.00 plus $30.00 for a named company. Our fee is $35.00 HST included, government fees at cost.
+
+## /company-formations-canada-vs-open-corporation-for-35/ (page 10247, draft created 2026-10-16)
+- Meta title: Open Corporation for $35 vs Company Formations Canada
+- Meta description: We charge $35.00, HST included. Company Formations Canada charges $199.99 plus tax. Government fees separate at cost. A CPA stays accountable after.
