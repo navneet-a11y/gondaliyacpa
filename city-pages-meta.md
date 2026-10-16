@@ -65,3 +65,7 @@
 ## /sole-proprietorship-vs-corporation/ (page 10241, draft created 2026-10-16)
 - Meta title: Sole Proprietorship vs Corporation: Cost and Tax Compared
 - Meta description: A sole proprietorship costs $60.00 in Ontario. A corporation costs $300.00 plus our $35.00 fee, HST included. Compared on cost, tax and liability.
+
+## /compare/ontario-vs-alberta-vs-british-columbia-incorporation/ (page 10244, draft created 2026-10-16)
+- Meta title: Ontario vs Alberta vs BC Incorporation: $35 Fee
+- Meta description: Ontario $300.00, Alberta $291.75 plus an agent fee, BC $350.00 plus $30.00 for a named company. Our fee is $35.00 HST included, government fees at cost.
