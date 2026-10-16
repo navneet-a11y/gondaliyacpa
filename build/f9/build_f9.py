@@ -114,9 +114,10 @@ CSS = """<style>
 .ei-tbl tr:nth-child(even){background:#f7f9fc}
 .ei-tbl tr:hover{background:#edf2f7}
 .ei-updated{color:#718096;font-size:.9em;margin:0 0 18px}
-.ei-toc{background:#fff;border:1px solid #e2e8f0;border-radius:10px;padding:22px 26px;margin:0 0 10px}
-.ei-toc h2{font-size:1.1em;font-weight:800;color:#1a2340;margin:0 0 12px;text-transform:uppercase;letter-spacing:.5px}
-.ei-toc ol{margin:0;padding-left:20px;color:#4a5568;line-height:2}
+.ei-toc{background:#fff;border:1px solid #e2e8f0;border-radius:10px;padding:16px 20px;margin:0 0 10px}
+.ei-toc h2{font-size:.95em;font-weight:800;color:#1a2340;margin:0 0 8px;text-transform:uppercase;letter-spacing:.5px}
+.ei-toc ol{margin:0;padding-left:20px;color:#4a5568;line-height:1.55;columns:2;column-gap:28px}
+.ei-toc li{break-inside:avoid;margin:0 0 2px}
 .ei-toc a{color:rgba(32,135,201,1);text-decoration:none}
 .ei-toc a:hover{text-decoration:underline}
 .ei-cta-inline{background:#1a2340;border-radius:10px;padding:24px 28px;margin:28px 0;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px}
@@ -132,7 +133,7 @@ CSS = """<style>
 .ei-cta-bottom p{color:rgba(255,255,255,0.72);max-width:600px;margin:0 auto 22px;line-height:1.75}
 .entry-header{display:none!important}
 .ast-article-single,.ast-article-single .entry-content{margin-top:0;padding-top:0}
-@media(max-width:900px){.ei-cta-inline{flex-direction:column;text-align:center}.ei-hero h1{font-size:1.6em}.ei-h2{font-size:1.3em}}
+@media(max-width:900px){.ei-cta-inline{flex-direction:column;text-align:center}.ei-hero h1{font-size:1.6em}.ei-h2{font-size:1.3em}.ei-toc ol{columns:1}}
 </style>
 """
 
