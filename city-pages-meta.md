@@ -93,3 +93,7 @@
 ## /industries/pharmacists/ (page 10305, published 2026-10-16)
 - Meta title: Pharmacy Professional Corporation Ontario | $35
 - Meta description: We prepare and file your Ontario pharmacy professional corporation for $35, HST included. Government fees separate. A department of Gondaliya CPA.
+
+## /industries/construction-and-skilled-trades/ (draft created 2026-10-16)
+- Meta title: Incorporate a Construction Company Ontario | $35
+- Meta description: We prepare and file your construction corporation for $35, HST included. Government fees separate. A CPA checks WSIB, T5018 and holdbacks first.
