@@ -273,6 +273,123 @@ for i, rec in enumerate(Q):
                               'cnf_primary_keyword': rec['keyword'],
                               'cnf_last_verified_et': '2026-10-16'}))
 
+# ---------------------------------------------------------------------------
+# Batch 2, Appendix A order: the last two "what happens if" questions and the
+# first three "do I need" questions. `related` indexes into Q (batch 1) and
+# ties the two batches into one cluster.
+# ---------------------------------------------------------------------------
+Q2 = [
+ dict(
+  slug='what-happens-if-i-dont-file-a-nil-t2-for-a-numbered-company',
+  h1="What Happens if I Don't File a Nil T2 for a Numbered Company?",
+  anchor='What happens for a numbered company',
+  keyword='nil t2 for a numbered company',
+  related=[0],
+  answer=('Nothing changes because the corporation has a number instead of a name. A '
+          'numbered company is an ordinary corporation and must file a T2 within six '
+          'months of each fiscal year-end until it is dissolved. The numbered name '
+          'affects nothing about the filing obligation or the due date.'),
+  head=('Point', 'Figure'),
+  rows=[('Months after the fiscal year-end to file', '6'),
+        ('Difference in obligation for a numbered company', 'None'),
+        ('Tax owing on a true nil return', '$0.00'),
+        ('Fee per tax year', '$300.00 plus HST')],
+  qual=True,
+  body=('Many holding and shelf corporations are numbered. The Canada Revenue Agency '
+        'identifies the corporation by its business number rather than its name, so a '
+        "numbered company's return is filed exactly like any other.")),
+ dict(
+  slug='what-happens-if-i-dont-file-t2-returns-after-my-corporation-is-dissolved',
+  h1="What Happens if I Don't File T2 Returns After My Corporation Is Dissolved?",
+  anchor='What happens after dissolution',
+  keyword='t2 returns after corporation dissolved',
+  related=[2],
+  answer=('The final return is still required and the years before dissolution stay '
+          'outstanding. A final T2 is due within six months of the dissolution date, '
+          'covering the period up to that date. Dissolving the corporation does not '
+          'close the earlier tax years or cancel the returns already missed.'),
+  head=('Requirement', 'Figure'),
+  rows=[('Months after dissolution the final T2 is due', '6'),
+        ('Earlier unfiled years cancelled by dissolution', 'None'),
+        ('Period the final return covers', 'Up to the dissolution date'),
+        ('Fee per tax year', '$300.00 plus HST')],
+  qual=True,
+  body=('A dissolved corporation can still be reassessed for a year that was never '
+        'filed. Filing the final return and any missed years is what closes the '
+        'corporate tax account.')),
+ dict(
+  slug='do-i-need-to-file-a-t2-if-my-corporation-had-no-activity',
+  h1='Do I Need to File a T2 if My Corporation Had No Activity?',
+  anchor='Do I need to file with no activity',
+  keyword='file t2 corporation no activity',
+  related=[0, 3],
+  answer=('Yes. Every resident corporation must file a T2 return within six months of '
+          'its fiscal year-end, every year, until it is formally dissolved. Having no '
+          'revenue, no bank activity and no employees does not remove the obligation, '
+          'although a corporation with investment or rental income is not nil.'),
+  head=('Point', 'Figure'),
+  rows=[('Months after the fiscal year-end to file', '6'),
+        ('Revenue threshold below which no return is needed', 'None'),
+        ('Tax owing on a true nil return', '$0.00'),
+        ('Fee per tax year', '$300.00 plus HST')],
+  qual=False,
+  body=('There is no minimum income below which the return can be skipped. The '
+        'obligation comes from being an incorporated resident corporation, not from '
+        'earning anything in the year.')),
+ dict(
+  slug='do-i-need-to-file-a-nil-t2-if-my-corporation-has-no-bank-account',
+  h1='Do I Need to File a Nil T2 if My Corporation Has No Bank Account?',
+  anchor='Do I need to file with no bank account',
+  keyword='nil t2 no bank account',
+  related=[3],
+  answer=("Yes. The T2 obligation follows the corporation's existence, not its "
+          'banking, so a return is due within six months of each fiscal year-end '
+          'regardless. A corporation with no bank account is usually a true nil '
+          'filer, unless income was received or paid some other way.'),
+  head=('Point', 'Figure'),
+  rows=[('Months after the fiscal year-end to file', '6'),
+        ('Bank account required in order to file', 'None'),
+        ('Tax owing on a true nil return', '$0.00'),
+        ('Fee per tax year', '$300.00 plus HST')],
+  qual=False,
+  body=('A corporation with no bank account still has a business number and a fiscal '
+        'year-end, and those are what the return is filed against. Income received on '
+        "the corporation's behalf some other way still belongs on the return.")),
+ dict(
+  slug='do-i-need-financial-statements-for-a-nil-t2-return',
+  h1='Do I Need Financial Statements for a Nil T2 Return?',
+  anchor='Do I need financial statements',
+  keyword='financial statements for a nil t2',
+  related=[0],
+  answer=('No audited or reviewed statements are needed, but the return still carries '
+          'GIFI schedules showing zero. A T2 includes the GIFI balance sheet and '
+          'income statement, which for a nil year report nil amounts. A corporation '
+          'with assets or liabilities still reports those balances.'),
+  head=('Point', 'Figure'),
+  rows=[('Audited financial statements required', 'None'),
+        ('GIFI schedules filed', 'Balance sheet and income statement'),
+        ('Income reported in a nil year', '$0.00'),
+        ('Fee per tax year', '$300.00 plus HST')],
+  qual=False,
+  body=('GIFI is the standard code set the Canada Revenue Agency uses for the balance '
+        'sheet and income statement inside the T2. A nil year still files those '
+        'schedules with nil amounts, which is what makes the return a nil return '
+        'rather than a missing one.')),
+]
+
+for i, rec in enumerate(Q2):
+    sibs = [s for j, s in enumerate(Q2) if j != i] + [Q[k] for k in rec['related']]
+    html, url = build(rec, sibs)
+    records.append(dict(slug=rec['slug'], title=rec['h1'],
+                        meta_description=rec['answer'], url=url, content=html,
+                        answer=rec['answer'], keyword=rec['keyword'],
+                        anchor=rec['anchor'],
+                        terms={'cnf_family': ['f5']},
+                        meta={'cnf_question_text': rec['h1'],
+                              'cnf_short_answer': rec['answer'],
+                              'cnf_primary_keyword': rec['keyword'],
+                              'cnf_last_verified_et': '2026-10-16'}))
+
 out = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'f5-manifest.json')
 json.dump(records, open(out, 'w'), ensure_ascii=False, indent=1)
 for r in records:

@@ -2158,3 +2158,36 @@ label for these families as "Updated <date>", while 7.5 rule 1 and launch-gate i
 reviewed:" was kept, because the launch gate tests for that string and a gate failure is
 the more expensive error; only the position was taken from 7.9. Sharad should settle
 which label he wants on these nine families.
+
+### Family 5 batch 2: questions 6 to 10 published
+
+IDs 856, 857, 858, 859, 860, byte-identical to `build/f5/` at 8243, 8376, 7970, 7872 and
+7807. Appendix A order: the last two "what happens if" questions and the first three
+"do I need" questions.
+
+The generator now holds both batches. Batch 1's records and `build()` were left
+untouched, so regenerating reproduces the five already-published pages byte for byte;
+only the new `Q2` list and its loop were added. Verified: batch 1 still builds to 8212,
+8016, 8183, 8089 and 8260.
+
+**Cluster linking.** Batch 2 pages cross-link to their four siblings and additionally to
+one or two topically related batch 1 pages, via a `related` field indexing into batch 1.
+That ties the two batches into one cluster rather than leaving two islands. Outbound is
+10 or 11 per page against the 6(g) cap of 15; inbound is 4 per page against the minimum
+of 3. Batch 1 pages gained inbound links as a side effect, from 4 up to 9 on the
+most-referenced one.
+
+**Qualification block only where penalties are discussed.** The two "what happens if"
+pages carry the full 7.4 block; the three "do I need" pages do not mention penalties at
+all, so they do not carry it. The gate enforces the conditional: the block is required
+if and only if the word "penalty" appears.
+
+**One transcription error, caught by the byte check.** Page 860 was first published at
+7691 bytes against an expected 7807. The `BreadcrumbList` had lost its home `ListItem`
+and the page item had been renumbered to position 1. Corrected in place; the page now
+matches the build file exactly. This is the second time the local-versus-stored byte
+comparison has caught an error that reads correctly to the eye, after the `$300.00`
+regex corruption on the Ontario heroes. The check earns its keep.
+
+Family 5 now stands at 10 of 45 published, all pending Sharad Gondaliya's sign-off on
+the answer text.
