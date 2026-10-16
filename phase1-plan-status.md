@@ -10,14 +10,14 @@ Checked against the live WordPress site on 14 October 2026, updated 16 October 2
 | Services | 26 | 11 | 1 | 14 |
 | Incorporate by Province and Federal | 13 | 11 | 0 | 2 |
 | Service Areas | 27 | 7 | 14 | 6 |
-| Industries | 34 | 20 | 0 | 14 |
+| Industries | 34 | 21 | 0 | 13 |
 | Pricing | 3 | 3 | 0 | 0 |
 | Compare | 14 | 11 | 0 | 3 |
 | Guides | 34 | 32 | 0 | 2 |
 | Blog | 13 | 4 | 0 | 9 |
 | About, Team, Reviews, Contact and Legal | 24 | 21 | 0 | 3 |
 | French Quebec | 10 | 0 | 0 | 10 |
-| **Total** | **201** | **123** | **15** | **63** |
+| **Total** | **201** | **124** | **15** | **62** |
 
 ## Home
 
@@ -113,7 +113,7 @@ Checked against the live WordPress site on 14 October 2026, updated 16 October 2
 | Planned URL | Priority | Status | Live URL |
 |---|---|---|---|
 | /industries/doctors-and-physicians/ | P1 | Built (different URL) | /industries/physicians/ |
-| /industries/pharmacists/ | P1 | Not built |  |
+| /industries/pharmacists/ | P1 | Built | /industries/pharmacists/ |
 | /industries/it-consultants-and-software-developers/ | P1 | Built (different URL) | /industries/it-consultants/ |
 | /industries/truck-drivers-and-owner-operators/ | P1 | Not built |  |
 | /industries/construction-and-skilled-trades/ | P1 | Not built |  |
