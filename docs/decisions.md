@@ -2284,3 +2284,26 @@ links, and each question page carries its own answer-first paragraph.
 
 If Sharad Gondaliya decides he wants the markup regardless, that is his deviation to
 authorise and it would be logged here. It was not added on this session's own judgement.
+
+### The gap was the Astra specificity trap again, not the padding
+
+Navneet reported the gaps were still too large after the first pass. The padding was
+only part of it. `.ei-h2` is a single class, specificity (0,1,0), and loses to Astra's
+`.entry-content h2` at (0,1,1) — so Astra's own top margin was being added back on top of
+the section padding, which is why trimming padding alone barely moved it.
+
+Fixed by scoping the rule as `.ei-art .ei-h2`, (0,2,0), which outranks Astra. Also added
+`.ei-art > *:last-child{margin-bottom:0}` so a trailing info box or table does not stack
+its own bottom margin onto the section padding, and brought section padding to 26px.
+
+**This is the third time this exact trap has bitten on this project**, after the hub's
+`.cnf-rev` and the Ontario pages' `.cnf-w`. Every single-class rule written inside
+`.entry-content` is vulnerable. Worth a sweep of the other families: the rule of thumb is
+that any rule meant to control margin, padding or display on a heading or paragraph needs
+two classes, not one.
+
+The contents block was also redesigned: list markers replaced with a CSS counter rendered
+as a blue numeral, each row a flex link with its own hover background, a subtle gradient
+and shadow on the card, and the label reduced to a muted 0.76em tracking-wide caption.
+Still 12 rows in two columns, collapsing to one under 900px, so the line 1217 gate is
+unaffected.

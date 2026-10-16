@@ -87,9 +87,10 @@ assert len(TOC) == 12
 CSS = """<style>
 .ei-wrap{max-width:1100px;margin:0 auto;padding:0 20px}
 .ei-btn-blue{background:rgba(32,135,201,1);color:#fff !important;padding:13px 26px;border-radius:6px;font-weight:700;font-size:0.95em;text-transform:uppercase;text-decoration:none !important;display:inline-block;line-height:1.4;text-align:center;min-width:120px}
-.ei-section{padding:30px 20px}
-.ei-section-alt{background:#f7f9fc;padding:30px 20px}
-.ei-h2{font-weight:800;color:#1a2340;margin:0 0 10px;font-size:1.45em;line-height:1.3}
+.ei-section{padding:26px 20px}
+.ei-section-alt{background:#f7f9fc;padding:26px 20px}
+.ei-art .ei-h2{font-weight:800;color:#1a2340;margin:0 0 10px;font-size:1.45em;line-height:1.3}
+.ei-art > *:last-child{margin-bottom:0}
 .ei-art p{color:#4a5568;line-height:1.8}
 .ei-art a{color:rgba(32,135,201,1)}
 .ei-art h3{font-weight:700;color:#1a2340;margin:18px 0 8px;font-size:1.15em}
@@ -114,12 +115,13 @@ CSS = """<style>
 .ei-tbl tr:nth-child(even){background:#f7f9fc}
 .ei-tbl tr:hover{background:#edf2f7}
 .ei-updated{color:#718096;font-size:.9em;margin:0 0 18px}
-.ei-toc{background:#fff;border:1px solid #e2e8f0;border-radius:10px;padding:16px 20px;margin:0 0 10px}
-.ei-toc h2{font-size:.95em;font-weight:800;color:#1a2340;margin:0 0 8px;text-transform:uppercase;letter-spacing:.5px}
-.ei-toc ol{margin:0;padding-left:20px;color:#4a5568;line-height:1.55;columns:2;column-gap:28px}
-.ei-toc li{break-inside:avoid;margin:0 0 2px}
-.ei-toc a{color:rgba(32,135,201,1);text-decoration:none}
-.ei-toc a:hover{text-decoration:underline}
+.ei-toc{background:linear-gradient(180deg,#ffffff,#f7f9fc);border:1px solid #e2e8f0;border-radius:12px;padding:18px 22px;margin:0 0 10px;box-shadow:0 1px 2px rgba(26,35,64,.05)}
+.ei-toc h2{font-size:.76em;font-weight:800;color:#8795ab;margin:0 0 10px;text-transform:uppercase;letter-spacing:1.3px}
+.ei-toc ol{margin:0;padding:0;list-style:none;counter-reset:toc;columns:2;column-gap:30px}
+.ei-toc li{break-inside:avoid;counter-increment:toc;margin:0}
+.ei-toc a{display:flex;gap:10px;align-items:baseline;padding:6px 9px;border-radius:6px;color:#1a2340;text-decoration:none;line-height:1.45}
+.ei-toc a::before{content:counter(toc);color:rgba(32,135,201,1);font-weight:800;font-size:.82em;min-width:15px;flex-shrink:0}
+.ei-toc a:hover{background:#eaf3fb;color:rgba(32,135,201,1);text-decoration:none}
 .ei-cta-inline{background:#1a2340;border-radius:10px;padding:24px 28px;margin:28px 0;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px}
 .ei-cta-inline h3{color:#fff;margin:0 0 4px;font-weight:700}
 .ei-cta-inline p{color:rgba(255,255,255,0.65);margin:0}
@@ -133,7 +135,7 @@ CSS = """<style>
 .ei-cta-bottom p{color:rgba(255,255,255,0.72);max-width:600px;margin:0 auto 22px;line-height:1.75}
 .entry-header{display:none!important}
 .ast-article-single,.ast-article-single .entry-content{margin-top:0;padding-top:0}
-@media(max-width:900px){.ei-cta-inline{flex-direction:column;text-align:center}.ei-hero h1{font-size:1.6em}.ei-h2{font-size:1.3em}.ei-toc ol{columns:1}}
+@media(max-width:900px){.ei-cta-inline{flex-direction:column;text-align:center}.ei-hero h1{font-size:1.6em}.ei-art .ei-h2{font-size:1.3em}.ei-toc ol{columns:1}}
 </style>
 """
 
