@@ -2404,3 +2404,19 @@ The pillar now links up to the hub from its footer line, so `/guides/` has 1 inb
 exist and the navigation and home page link to it. Flagged rather than faked.
 
 Hub outbound is 5, against a cap of 400. Hubs are exempt from the 40-link body cap.
+
+### Child count removed from /guides/ at Navneet's request, 2026-10-16
+
+The raw `[cnf_child_count type="nil_guide"]` was rendering on the page because the
+WPCode snippet is not installed, so Navneet asked for it to be removed. Done: the count
+pill and its CSS are gone from page 904 and from the generator, which now carries a
+comment marking exactly where the line goes back.
+
+**Consequence, recorded plainly: `/guides/` no longer satisfies its own publish gate.**
+Line 1224 is "No hub publishes without a live child count and links to every child
+family." The child links are there; the live count is not. This is a known, deliberate
+gap, not an oversight, and it closes the moment the snippet in
+`docs/hub-child-count-snippet.md` is activated.
+
+The same will apply to the other four hubs when they are built, so the snippet is worth
+installing once rather than deferring four more times.

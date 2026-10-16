@@ -78,8 +78,6 @@ CSS = """<style>
 .ei-hero-by{color:rgba(255,255,255,0.6);max-width:720px;margin:0 auto 22px;line-height:1.6;font-size:.86em}
 .ei-hero-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
 .ei-hero-btns a,.ei-hero-btns a:visited,.ei-hero-btns a:hover,.ei-cta-bottom a,.ei-cta-bottom a:visited,.ei-cta-bottom a:hover{color:#fff !important;text-decoration:none !important}
-.ei-count{display:inline-flex;align-items:baseline;gap:8px;background:#f0f7fd;border:1px solid #cfe4f6;border-radius:50px;padding:6px 16px;margin:0 0 14px;color:#1a2340;font-size:.9em}
-.ei-count b{color:rgba(32,135,201,1);font-size:1.15em;font-weight:800}
 .ei-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px;margin:16px 0 0}
 .ei-card{border:1px solid #e2e8f0;border-radius:10px;background:#fff;padding:18px 20px;transition:box-shadow .15s ease,border-color .15s ease}
 .ei-card:hover{border-color:#cfe4f6;box-shadow:0 2px 10px rgba(26,35,64,.07)}
@@ -113,8 +111,12 @@ p.append('<div class="ei-hero"><div class="ei-hero-inner">'
 guide_cards = '\n'.join(card(SITE + '/guides/' + s + '/', t, d) for s, t, d in GUIDES)
 p.append('<div class="ei-section"><div class="ei-wrap ei-art">\n'
  '<h2 class="ei-h2">Every Guide on This Site</h2>\n'
- # line 1224: the count is rendered live, never hand-typed.
- '<p class="ei-count"><b>[cnf_child_count type="nil_guide"]</b> guides published</p>\n'
+ # line 1224 requires a live child count here, rendered by
+ # [cnf_child_count type="nil_guide"]. Removed at Navneet's request on
+ # 2026-10-16 because the WPCode snippet is not installed yet and the raw
+ # shortcode was showing on the page. Restore this line once the snippet in
+ # docs/hub-child-count-snippet.md is active; until then the hub does not
+ # meet its own publish gate.
  '<p>Each guide covers one subject end to end, is reviewed by a CPA Ontario member, and '
  'carries the date it was last reviewed.</p>\n'
  '<div class="ei-cards">\n' + guide_cards + '\n</div>\n'
