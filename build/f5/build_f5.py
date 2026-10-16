@@ -72,6 +72,7 @@ CSS = """<style>.cnf-hero{background-image:linear-gradient(rgba(11,26,51,.82),rg
 .cnf-w .cnf-meta{font-size:14px;color:#636363;line-height:1.8;margin:0 0 26px}
 .cnf-w .cnf-meta .cnf-crumb,.cnf-w .cnf-meta .cnf-rev{display:inline;margin:0}
 .cnf-w .cnf-meta a{font-weight:400;text-decoration:none}
+.cnf-w .cnf-updated{font-size:14px;color:#636363;border-top:1px solid #dfe6ef;padding-top:16px;margin:28px 0 0}
 .cnf-w .cnf-answer{font-size:19px;line-height:1.6;border-left:5px solid #314d8a;background:#f5f8fc;border-radius:0 8px 8px 0;padding:18px 22px;margin:0 0 8px}
 .cnf-tbl{width:100%;border-collapse:collapse;font-size:16px;margin:16px 0}.cnf-tbl th,.cnf-tbl td{border:1px solid #dfe6ef;padding:12px 14px;text-align:left;vertical-align:top}
 .cnf-tbl th{background:#314d8a;color:#fff;font-family:Poppins,sans-serif;font-weight:600}.cnf-tbl td:last-child{font-weight:700;color:#314d8a}
@@ -210,8 +211,7 @@ def build(rec, siblings):
 
     crumb = ('<div class="cnf-meta"><nav class="cnf-crumb" aria-label="Breadcrumb">'
              + a(SITE + '/', 'Nil T2 filing in Canada') + ' &rsaquo; '
-             '<span aria-current="page">' + rec['h1'] + '</span></nav> '
-             '<span class="cnf-rev">&middot; Last reviewed: ' + TODAY + '</span></div>\n')
+             '<span aria-current="page">' + rec['h1'] + '</span></nav></div>\n')
 
     # 6(g): siblings give each page its inbound links; money pages are the outbound.
     sib = '\n'.join('<li>%s</li>' % a('%s/answers/%s/' % (SITE, s['slug']), s['anchor'])
@@ -237,6 +237,10 @@ def build(rec, siblings):
     body.append('<h2>Related Questions</h2>')
     body.append('<ul>' + sib + '</ul>')
     body.append('<p><a class="cnf-btn" href="' + FORM + '">' + CTA + '</a></p>')
+    # 7.9 line 1570: for F1, F2, F5, F8, F10, F11, F12, F15 and F16 the visible
+    # date sits in the footer of the article body, not under the H1 as 7.5 rule 1
+    # says generally. The per-family row is the more specific instruction.
+    body.append('<p class="cnf-updated">Last reviewed: ' + TODAY + '</p>')
     body.append('</div>')
 
     schema = {"@context": "https://schema.org", "@graph": [

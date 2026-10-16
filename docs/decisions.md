@@ -2125,3 +2125,36 @@ not which pages the test reaches.
 - The remaining 40 questions, blocked on the answer bank.
 - No `/answers/` hub page exists. Family 16 lists five hubs and `/answers/` is not one,
   so the question pages currently have no parent above them.
+
+### Visible date position: 7.9 line 1570 overrides 7.5 rule 1, per family
+
+Navneet asked a second time whether the breadcrumb and last-reviewed line are needed at
+the top of every page. The earlier answer, taken from 7.5 last-reviewed rule 1 ("renders
+under the H1 above the first paragraph on every URL"), was too broad.
+
+Section 7.9 carries a per-family table of visible update dates. Line 1570:
+
+> F1, F2, F5, F8, F10, F11, F12, F15, F16 | Updated September 20, 2026 |
+> **Footer of the article body** | Half-yearly
+
+Only F9 and F14 take the date under the H1. F13 puts it under the byline, F7 above the
+comparison table, F6 above the first entry, F3 under the data value and F4 under the
+place data row. The per-family row is the more specific instruction and governs.
+
+So on the five Family 5 pages the date moved to the foot of the body. It also reads
+better against the family's own brief, since line 1578 requires the answer paragraph to
+lead with "no preamble" and a date stamp above the answer is preamble. Family 14 and the
+`/deadlines/` hub are unchanged and correct: their row says under the H1.
+
+**The visible breadcrumb is not a plan requirement at all.** Line 1342 asks only for
+`BreadcrumbList` **schema** site-wide. The visible trail was this session's addition. It
+is kept because structured data should describe what is actually on the page, and a
+BreadcrumbList with no visible breadcrumb is weak; but it could be dropped without
+breaching anything.
+
+**14th conflict, unresolved and left for Sharad Gondaliya.** The 7.9 table also gives the
+label for these families as "Updated <date>", while 7.5 rule 1 and launch-gate item 8
+(line 1905) both name the exact string "Last reviewed: <date>". The wording "Last
+reviewed:" was kept, because the launch gate tests for that string and a gate failure is
+the more expensive error; only the position was taken from 7.9. Sharad should settle
+which label he wants on these nine families.
