@@ -82,14 +82,14 @@
 - Meta title: Engineering Corporation Ontario | $35
 - Meta description: We prepare and file your Ontario engineering corporation for $35, HST included. Government fees separate. A department of Gondaliya CPA.
 
-## /industries/insurance-brokers/ (page 10256, draft created 2026-10-16)
+## /industries/insurance-brokers/ (page 10256, published 2026-10-16)
 - Meta title: Insurance Broker Incorporation Ontario | $35
 - Meta description: We prepare and file your insurance corporation for $35, HST included. Government fees separate. A CPA checks the RIBO and FSRA position first.
 
-## /industries/nurses-and-nurse-practitioners/ (page 10302, draft created 2026-10-16)
+## /industries/nurses-and-nurse-practitioners/ (page 10302, published 2026-10-16)
 - Meta title: Nursing Professional Corporation Ontario | $35
 - Meta description: We prepare and file your Ontario nursing professional corporation for $35, HST included. Government fees separate. A department of Gondaliya CPA.
 
-## /industries/pharmacists/ (page 10305, draft created 2026-10-16)
+## /industries/pharmacists/ (page 10305, published 2026-10-16)
 - Meta title: Pharmacy Professional Corporation Ontario | $35
 - Meta description: We prepare and file your Ontario pharmacy professional corporation for $35, HST included. Government fees separate. A department of Gondaliya CPA.
