@@ -10,14 +10,14 @@ Checked against the live WordPress site on 14 October 2026, updated 16 October 2
 | Services | 26 | 11 | 1 | 14 |
 | Incorporate by Province and Federal | 13 | 11 | 0 | 2 |
 | Service Areas | 27 | 7 | 14 | 6 |
-| Industries | 34 | 17 | 0 | 17 |
+| Industries | 34 | 19 | 0 | 15 |
 | Pricing | 3 | 3 | 0 | 0 |
 | Compare | 14 | 11 | 0 | 3 |
 | Guides | 34 | 32 | 0 | 2 |
 | Blog | 13 | 4 | 0 | 9 |
 | About, Team, Reviews, Contact and Legal | 24 | 21 | 0 | 3 |
 | French Quebec | 10 | 0 | 0 | 10 |
-| **Total** | **201** | **120** | **15** | **66** |
+| **Total** | **201** | **122** | **15** | **64** |
 
 ## Home
 
@@ -120,12 +120,12 @@ Checked against the live WordPress site on 14 October 2026, updated 16 October 2
 | /industries/us-companies-expanding-to-canada/ | P1 | Not built |  |
 | /industries/nurses-and-nurse-practitioners/ | P2 | Not built |  |
 | /industries/lawyers-and-paralegals/ | P2 | Not built |  |
-| /industries/engineers/ | P2 | Not built |  |
+| /industries/engineers/ | P2 | Built | /industries/engineers/ |
 | /industries/mortgage-brokers/ | P2 | Not built |  |
 | /industries/uber-and-delivery-drivers/ | P2 | Not built |  |
 | /industries/shopify-stores/ | P2 | Not built |  |
 | /industries/content-creators-and-influencers/ | P2 | Not built |  |
-| /industries/insurance-brokers/ | P3 | Not built |  |
+| /industries/insurance-brokers/ | P3 | Built | /industries/insurance-brokers/ |
 | /industries/grocery-and-convenience-stores/ | P3 | Built (different URL) | /industries/grocery-convenience-stores/ |
 | /industries/salons-and-barbers/ | P3 | Not built |  |
 | /industries/daycare-operators/ | P3 | Not built |  |
