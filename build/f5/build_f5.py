@@ -197,6 +197,7 @@ Q = [
         'does, and it is replaced once the real return is assessed.')),
 ]
 
+PILLAR = SITE + '/guides/nil-t2-return-complete-guide/'
 MONEY = [SITE + '/pricing/nil-t2-filing-cost/', SITE + '/deadlines/',
          SITE + '/catch-up-nil-t2-filing/']
 
@@ -234,6 +235,10 @@ def build(rec, siblings):
                 + a(MONEY[0], 'nil T2 filing cost') + ', every '
                 + a(MONEY[1], 'T2 filing deadline') + ', and '
                 + a(MONEY[2], 'catch-up nil T2 filing') + ' for outstanding years.</p>')
+    # line 1194: every cluster URL links up once to the pillar with an
+    # exact-match anchor on the pillar's keyword, "nil t2 return".
+    body.append('<p>For the whole subject in one place, see the complete guide '
+                'to the ' + a(PILLAR, 'nil T2 return') + '.</p>')
     body.append('<h2>Related Questions</h2>')
     body.append('<ul>' + sib + '</ul>')
     body.append('<p><a class="cnf-btn" href="' + FORM + '">' + CTA + '</a></p>')

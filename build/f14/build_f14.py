@@ -29,6 +29,7 @@ CTA   = 'Start Nil T2 Filing NOW'
 HUB      = SITE + '/deadlines/'
 CALENDAR = SITE + '/deadlines/cra-t2-deadline-calendar/'
 COST     = SITE + '/pricing/nil-t2-filing-cost/'
+PILLAR   = SITE + '/guides/nil-t2-return-complete-guide/'
 
 def month_url(m):
     """6(g) anchor pattern for Family 14 is "Month plus year-end phrase"."""
@@ -194,7 +195,8 @@ body = (CSS + hero(cal_title) + '<div class="cnf-dl">\n' + LAST_REVIEWED
       'Revenue Agency, a return received the next business day is on time.')
   + '<h2>Ontario statutory holidays, 2027</h2>\n'
   + '<table><tr><th>Date</th><th>Holiday</th></tr>' + hol_rows + '</table>\n'
-  + P('Each year-end above links to its own page. The full pillar is '
+  + P('Each year-end above links to its own page. The complete guide to the '
+      + a(PILLAR, 'nil T2 return') + ' covers the whole subject. The full pillar is '
       + a(HUB, 'T2 filing deadlines') + ', and the fee for every year is on '
       + a(COST, 'nil T2 filing cost') + '.')
   + '<h2>Filing a nil return</h2>\n' + P(SCOPE, EFILE)

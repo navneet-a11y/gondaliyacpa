@@ -2191,3 +2191,72 @@ regex corruption on the Ontario heroes. The check earns its keep.
 
 Family 5 now stands at 10 of 45 published, all pending Sharad Gondaliya's sign-off on
 the answer text.
+
+## 2026-10-16 — Family 9 pillar published: /guides/nil-t2-return-complete-guide/
+
+Post 867, 21,097 bytes, byte-identical to `build/f9/`. This is the head of the site:
+line 1274 gives "nil t2 return" at 1,900 a month as the head term, and line 1194 calls it
+the largest cluster on the site, parent to Families 1, 5 and 13.
+
+**Authorship.** Line 1217 gives F9 as "Sharad Gondaliya reviews, Navneet publishes",
+unlike Family 5 where he writes. So this page was legitimately drafted here. It still
+needs his review before the family's remaining 29 guides follow.
+
+**Content sources, all from the plan.** Title, meta description and H1 verbatim from the
+6(a) exemplar at line 1170. The factual spine is the 14 REQUIRED QUALIFICATIONS in 7.6,
+used as written: the $1,000 paper-filing penalty plus $100 preparer penalty, the eight
+T2 Short conditions, the GIFI 100/125/141 rule and its exceptions, Schedules 24, 50 and
+8, the 53-week first year, the six T183CORP signing rules, the Ontario Business Registry
+annual return, the $12 federal annual return within 60 days, and AT1 and CO-17 as
+separate returns. The coverage table is line 177's fee sentence broken into rows. The
+three-sentence EFILE block is the 7.4 form reserved for Family 9 pillars.
+
+### Design: Navneet's ei-* system, with four breaches removed
+
+Navneet supplied the `ei-*` CSS from a gondaliyacpa.ca page that performs well. Adopted,
+with these elements stripped because they breach hard rules:
+
+| Removed | Rule |
+|---|---|
+| "Book Free Consultation", four instances | Hard rule 7, and 7.6 bans "free consultation" |
+| "1300+ Five-Star Reviews" | 7.4 names this figure; no count claim until the audit closes |
+| "30-Day Money-Back Guarantee" | "guarantee" is on the 7.4 banned list |
+| FAQ accordion with answers inline | Hard rule 6 bars FAQPage markup; the answers also belong on the Family 5 pages |
+
+The FAQ section became a linked list of the ten Family 5 question pages instead. That
+avoids cannibalising them and serves line 1194's "pillar links down to its children".
+The `::before{content:"2713"}` checkmark was dropped too, since a dingbat risks the
+no-emoji rule and would trip the gate.
+
+### The gate found a contradiction inside 7.6
+
+`build/f9/gate.py` failed the first run on the word "backdate", which the 7.6 banned list
+forbids outright. But 7.6's own REQUIRED QUALIFICATION 7 mandates the wording "a
+timestamp that is **never backdated**".
+
+**15th conflict.** Read sensibly, the ban is on offering to backdate and the
+qualification is the opposite, a compliance statement. The required wording was kept and
+the gate narrowed to permit "backdated" only when immediately preceded by "never".
+Flagged for Sharad Gondaliya, since it is his banned list that contradicts his own
+required sentence.
+
+### Linking
+
+6(g) line 1528 gives F9 a minimum of 12 inbound and a maximum of 40 outbound.
+
+- **Outbound: 17**, including all ten Family 5 question pages.
+- **Inbound: 12**, built the same day — the ten question pages, the `/deadlines/` hub and
+  the deadline calendar. Each question page links up once with the exact-match anchor
+  "nil T2 return", which is what line 1194 requires.
+
+Family 5 outbound rose to 10 to 12 per page, still inside its cap of 15. All ten
+regenerate byte-identical to live.
+
+### Still outstanding
+
+- The `/guides/` hub (F16) does not exist, so the pillar has no parent above it.
+- 29 of the 30 Family 9 guides are unbuilt.
+- `nil_guide` needs Include in Sitemap enabled in Rank Math, toggled not re-saved.
+- The pillar slug is in Section 6 five times but nowhere in Appendix A's Family 9 list,
+  which gives root-level slugs instead. Same Appendix A conflict as the others, and this
+  one is the site's head term, so it is worth Sharad confirming explicitly.
