@@ -73,3 +73,7 @@
 ## /company-formations-canada-vs-open-corporation-for-35/ (page 10247, draft created 2026-10-16)
 - Meta title: Open Corporation for $35 vs Company Formations Canada
 - Meta description: We charge $35.00, HST included. Company Formations Canada charges $199.99 plus tax. Government fees separate at cost. A CPA stays accountable after.
+
+## /diy-corporations-canada-vs-open-corporation-for-35/ (page 10250, draft created 2026-10-16)
+- Meta title: Federal Incorporation: $35 CPA vs DIY Filing
+- Meta description: We charge $35.00, HST included. Filing it yourself costs the same $200 Corporations Canada fee. Which route suits you, line by line.
