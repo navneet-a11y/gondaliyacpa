@@ -10,14 +10,14 @@ Checked against the live WordPress site on 14 October 2026, updated 16 October 2
 | Services | 26 | 11 | 1 | 14 |
 | Incorporate by Province and Federal | 13 | 11 | 0 | 2 |
 | Service Areas | 27 | 7 | 14 | 6 |
-| Industries | 34 | 19 | 0 | 15 |
+| Industries | 34 | 20 | 0 | 14 |
 | Pricing | 3 | 3 | 0 | 0 |
 | Compare | 14 | 11 | 0 | 3 |
 | Guides | 34 | 32 | 0 | 2 |
 | Blog | 13 | 4 | 0 | 9 |
 | About, Team, Reviews, Contact and Legal | 24 | 21 | 0 | 3 |
 | French Quebec | 10 | 0 | 0 | 10 |
-| **Total** | **201** | **122** | **15** | **64** |
+| **Total** | **201** | **123** | **15** | **63** |
 
 ## Home
 
@@ -118,7 +118,7 @@ Checked against the live WordPress site on 14 October 2026, updated 16 October 2
 | /industries/truck-drivers-and-owner-operators/ | P1 | Not built |  |
 | /industries/construction-and-skilled-trades/ | P1 | Not built |  |
 | /industries/us-companies-expanding-to-canada/ | P1 | Not built |  |
-| /industries/nurses-and-nurse-practitioners/ | P2 | Not built |  |
+| /industries/nurses-and-nurse-practitioners/ | P2 | Built | /industries/nurses-and-nurse-practitioners/ |
 | /industries/lawyers-and-paralegals/ | P2 | Not built |  |
 | /industries/engineers/ | P2 | Built | /industries/engineers/ |
 | /industries/mortgage-brokers/ | P2 | Not built |  |

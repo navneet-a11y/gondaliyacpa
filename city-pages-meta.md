@@ -85,3 +85,7 @@
 ## /industries/insurance-brokers/ (page 10256, draft created 2026-10-16)
 - Meta title: Insurance Broker Incorporation Ontario | $35
 - Meta description: We prepare and file your insurance corporation for $35, HST included. Government fees separate. A CPA checks the RIBO and FSRA position first.
+
+## /industries/nurses-and-nurse-practitioners/ (draft created 2026-10-16)
+- Meta title: Nursing Professional Corporation Ontario | $35
+- Meta description: We prepare and file your Ontario nursing professional corporation for $35, HST included. Government fees separate. A department of Gondaliya CPA.
