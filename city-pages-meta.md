@@ -118,6 +118,6 @@
 - Meta title: Not-for-Profit Incorporation Canada and Ontario | $35
 - Meta description: Incorporate a not-for-profit federally or in Ontario. Our fee is $35.00, HST included. Government fees at cost. Charity registration is separate.
 
-## /industries/truck-drivers-and-owner-operators/ (draft created 2026-10-16)
+## /industries/truck-drivers-and-owner-operators/ (page 10353, draft created 2026-10-16)
 - Meta title: Incorporate as a Truck Driver Ontario | $35
 - Meta description: We prepare and file your trucking corporation for $35, HST included. Government fees separate. A CPA checks your Driver Inc and PSB risk first.
