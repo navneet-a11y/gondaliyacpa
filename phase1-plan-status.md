@@ -10,14 +10,14 @@ Checked against the live WordPress site on 14 October 2026, updated 16 October 2
 | Services | 26 | 16 | 0 | 10 |
 | Incorporate by Province and Federal | 13 | 11 | 0 | 2 |
 | Service Areas | 27 | 7 | 14 | 6 |
-| Industries | 34 | 22 | 0 | 12 |
+| Industries | 34 | 23 | 0 | 11 |
 | Pricing | 3 | 3 | 0 | 0 |
 | Compare | 14 | 11 | 0 | 3 |
 | Guides | 34 | 32 | 0 | 2 |
 | Blog | 13 | 4 | 0 | 9 |
 | About, Team, Reviews, Contact and Legal | 24 | 21 | 0 | 3 |
 | French Quebec | 10 | 0 | 0 | 10 |
-| **Total** | **201** | **130** | **14** | **57** |
+| **Total** | **201** | **131** | **14** | **56** |
 
 ## Home
 
@@ -115,7 +115,7 @@ Checked against the live WordPress site on 14 October 2026, updated 16 October 2
 | /industries/doctors-and-physicians/ | P1 | Built (different URL) | /industries/physicians/ |
 | /industries/pharmacists/ | P1 | Built | /industries/pharmacists/ |
 | /industries/it-consultants-and-software-developers/ | P1 | Built (different URL) | /industries/it-consultants/ |
-| /industries/truck-drivers-and-owner-operators/ | P1 | Not built |  |
+| /industries/truck-drivers-and-owner-operators/ | P1 | Built | /industries/truck-drivers-and-owner-operators/ |
 | /industries/construction-and-skilled-trades/ | P1 | Built | /industries/construction-and-skilled-trades/ |
 | /industries/us-companies-expanding-to-canada/ | P1 | Not built |  |
 | /industries/nurses-and-nurse-practitioners/ | P2 | Built | /industries/nurses-and-nurse-practitioners/ |
