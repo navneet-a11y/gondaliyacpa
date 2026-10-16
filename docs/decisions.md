@@ -2420,3 +2420,17 @@ gap, not an oversight, and it closes the moment the snippet in
 
 The same will apply to the other four hubs when they are built, so the snippet is worth
 installing once rather than deferring four more times.
+
+### Count restored, 2026-10-16: /guides/ now meets its gate
+
+Navneet installed the WPCode shortcode, so the live child count is back on page 904 and
+in the generator. `/guides/` satisfies line 1224 in full: a live child count plus links
+to every child.
+
+The wording changed while restoring it. The original read
+`<b>[count]</b> guides published`, which renders "1 guides published" while only one
+guide exists. Rebuilt label-first as "Guides published: **1**", which is correct at one
+guide and at thirty. Worth remembering for the other four hubs: any count label that
+puts the number before a plural noun breaks at one.
+
+Live and build match at 6,384 bytes, and the F16 gate passes.
