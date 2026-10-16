@@ -7,7 +7,7 @@ Checked against the live WordPress site on 14 October 2026, updated 16 October 2
 | Group | Planned | Built | Old page only | Not built |
 |---|---|---|---|---|
 | Home | 3 | 3 | 0 | 0 |
-| Services | 26 | 14 | 1 | 11 |
+| Services | 26 | 15 | 1 | 10 |
 | Incorporate by Province and Federal | 13 | 11 | 0 | 2 |
 | Service Areas | 27 | 7 | 14 | 6 |
 | Industries | 34 | 22 | 0 | 12 |
@@ -17,7 +17,7 @@ Checked against the live WordPress site on 14 October 2026, updated 16 October 2
 | Blog | 13 | 4 | 0 | 9 |
 | About, Team, Reviews, Contact and Legal | 24 | 21 | 0 | 3 |
 | French Quebec | 10 | 0 | 0 | 10 |
-| **Total** | **201** | **128** | **15** | **58** |
+| **Total** | **201** | **129** | **15** | **57** |
 
 ## Home
 
@@ -37,7 +37,7 @@ Checked against the live WordPress site on 14 October 2026, updated 16 October 2
 | /convert-sole-proprietorship-corporation/ | P1 | Built | /convert-sole-proprietorship-corporation/ |
 | /partnership-registration/ | P2 | Built | /partnership-registration/ |
 | /minute-book-preparation/ | P2 | Built | /minute-book-preparation/ |
-| /corporate-changes-amendments/ | P2 | Not built |  |
+| /corporate-changes-amendments/ | P2 | Built | /corporate-changes-amendments/ |
 | /share-issuance-transfer/ | P2 | Not built |  |
 | /extra-provincial-registration/ | P2 | Not built |  |
 | /not-for-profit-incorporation/ | P2 | Old 2025 page only, rebuild | /open-not-for-profit-35/ |

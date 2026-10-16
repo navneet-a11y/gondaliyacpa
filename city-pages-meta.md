@@ -109,3 +109,7 @@
 ## /partnership-registration/ (page 10325, draft created 2026-10-16)
 - Meta title: Partnership Registration Ontario | CPA Prepared Filing
 - Meta description: Register an Ontario general or limited partnership. $60 or $210 registry fee at cost, CPA review of the agreement, tax and whether to incorporate.
+
+## /corporate-changes-amendments/ (draft created 2026-10-16)
+- Meta title: Corporate Changes: Directors, Officers, Address, Name
+- Meta description: Change directors, officers, the registered office or the corporate name. Federal and Ontario deadlines, the 15-day rule, and what each filing costs.
