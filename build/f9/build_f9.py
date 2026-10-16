@@ -87,12 +87,12 @@ assert len(TOC) == 12
 CSS = """<style>
 .ei-wrap{max-width:1100px;margin:0 auto;padding:0 20px}
 .ei-btn-blue{background:rgba(32,135,201,1);color:#fff !important;padding:13px 26px;border-radius:6px;font-weight:700;font-size:0.95em;text-transform:uppercase;text-decoration:none !important;display:inline-block;line-height:1.4;text-align:center;min-width:120px}
-.ei-section{padding:52px 20px}
-.ei-section-alt{background:#f7f9fc;padding:52px 20px}
-.ei-h2{font-weight:800;color:#1a2340;margin-bottom:10px;font-size:1.9em;line-height:1.25}
+.ei-section{padding:30px 20px}
+.ei-section-alt{background:#f7f9fc;padding:30px 20px}
+.ei-h2{font-weight:800;color:#1a2340;margin:0 0 10px;font-size:1.45em;line-height:1.3}
 .ei-art p{color:#4a5568;line-height:1.8}
 .ei-art a{color:rgba(32,135,201,1)}
-.ei-art h3{font-weight:700;color:#1a2340;margin:22px 0 8px}
+.ei-art h3{font-weight:700;color:#1a2340;margin:18px 0 8px;font-size:1.15em}
 .ei-art ul{color:#4a5568;line-height:1.8}
 .ei-info{background:#f0f7fd;border-left:4px solid rgba(32,135,201,1);border-radius:0 8px 8px 0;padding:14px 18px;margin:18px 0}
 .ei-info p{margin:0;color:#1a2340;line-height:1.7}
@@ -100,10 +100,10 @@ CSS = """<style>
 .ei-warn p{margin:0;color:#7c5800;line-height:1.7}
 .ei-danger{background:#fff5f5;border-left:4px solid #e53e3e;border-radius:0 8px 8px 0;padding:14px 18px;margin:18px 0}
 .ei-danger p{margin:0;color:#742a2a;line-height:1.7}
-.ei-hero{background:linear-gradient(135deg,#0f1624 0%,#1a2340 55%,#1e3a6e 100%);padding:52px 20px}
+.ei-hero{background:linear-gradient(135deg,#0f1624 0%,#1a2340 55%,#1e3a6e 100%);padding:40px 20px}
 .ei-hero-inner{max-width:860px;margin:0 auto;text-align:center}
 .ei-hero-eyebrow{display:inline-block;background:rgba(32,135,201,0.15);border:1px solid rgba(32,135,201,0.4);border-radius:50px;padding:5px 16px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:rgba(32,135,201,1);margin-bottom:16px;font-size:.8em}
-.ei-hero h1{color:#fff;font-weight:800;line-height:1.2;margin:0 0 14px;font-size:2.5em}
+.ei-hero h1{color:#fff;font-weight:800;line-height:1.2;margin:0 0 14px;font-size:2.1em}
 .ei-hero h1 span{color:#f6ad1a}
 .ei-hero-sub{color:rgba(255,255,255,0.78);max-width:720px;margin:0 auto 10px;line-height:1.75}
 .ei-hero-by{color:rgba(255,255,255,0.6);max-width:720px;margin:0 auto 22px;line-height:1.6;font-size:.86em}
@@ -127,12 +127,12 @@ CSS = """<style>
 .ei-qlist li{border:1px solid #e2e8f0;border-radius:8px;margin-bottom:10px;background:#fff}
 .ei-qlist a{display:block;padding:16px 20px;font-weight:600;color:#1a2340 !important;text-decoration:none !important}
 .ei-qlist a:hover{background:#f7f9fc;color:rgba(32,135,201,1) !important}
-.ei-cta-bottom{background:linear-gradient(135deg,#0f1624,#1a2340);padding:56px 20px;text-align:center}
-.ei-cta-bottom h2{color:#fff;font-weight:800;margin-bottom:10px;font-size:1.8em}
+.ei-cta-bottom{background:linear-gradient(135deg,#0f1624,#1a2340);padding:40px 20px;text-align:center}
+.ei-cta-bottom h2{color:#fff;font-weight:800;margin:0 0 10px;font-size:1.5em}
 .ei-cta-bottom p{color:rgba(255,255,255,0.72);max-width:600px;margin:0 auto 22px;line-height:1.75}
 .entry-header{display:none!important}
 .ast-article-single,.ast-article-single .entry-content{margin-top:0;padding-top:0}
-@media(max-width:900px){.ei-cta-inline{flex-direction:column;text-align:center}.ei-hero h1{font-size:1.8em}}
+@media(max-width:900px){.ei-cta-inline{flex-direction:column;text-align:center}.ei-hero h1{font-size:1.6em}.ei-h2{font-size:1.3em}}
 </style>
 """
 

@@ -2260,3 +2260,27 @@ regenerate byte-identical to live.
 - The pillar slug is in Section 6 five times but nowhere in Appendix A's Family 9 list,
   which gives root-level slugs instead. Same Appendix A conflict as the others, and this
   one is the site's head term, so it is worth Sharad confirming explicitly.
+
+### Pillar spacing and heading scale tightened; FAQ schema declined
+
+Navneet reported too much vertical gap between sections and headings that read too large.
+Section padding dropped from 52px to 30px (so the gap between two sections falls from
+104px to 60px), `.ei-h2` from 1.9em to 1.45em with its top margin zeroed so Astra cannot
+add its own, the hero H1 from 2.5em to 2.1em, the closing H2 from 1.8em to 1.5em, and
+hero and closing padding from 52px and 56px to 40px. A mobile rule now scales `.ei-h2`
+down to 1.3em as well. Live and build match at 21,131 bytes and the gate still passes.
+
+**FAQ schema was requested and not added.** It would breach hard rule 6 in CLAUDE.md, and
+the plan repeats the prohibition at line 37, in the schema checklist at line 1343, and as
+launch gate 6 at line 1901. Line 1582 also gives the reason:
+
+> "No FAQPage markup and no HowTo markup. FAQ rich results ended May 7, 2026 and HowTo
+> earns nothing. The question format stays, the markup goes."
+
+So it would earn nothing even if permitted, and it would fail the November 18 schema
+deployment test, which checks that no FAQPage block exists anywhere on the site. The
+question format is already preserved: the pillar lists the ten Family 5 questions as
+links, and each question page carries its own answer-first paragraph.
+
+If Sharad Gondaliya decides he wants the markup regardless, that is his deviation to
+authorise and it would be logged here. It was not added on this session's own judgement.
