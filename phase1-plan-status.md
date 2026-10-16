@@ -1,6 +1,6 @@
 # Open Corporation for $35: Phase 1 plan vs live site
 
-Checked against the live WordPress site on 14 October 2026. 201 pages in the plan.
+Checked against the live WordPress site on 14 October 2026, updated 16 October 2026. 201 pages in the plan.
 
 ## Summary
 
@@ -12,12 +12,12 @@ Checked against the live WordPress site on 14 October 2026. 201 pages in the pla
 | Service Areas | 27 | 7 | 14 | 6 |
 | Industries | 34 | 17 | 0 | 17 |
 | Pricing | 3 | 3 | 0 | 0 |
-| Compare | 14 | 4 | 0 | 10 |
-| Guides | 34 | 26 | 0 | 8 |
-| Blog | 13 | 3 | 0 | 10 |
+| Compare | 14 | 6 | 0 | 8 |
+| Guides | 34 | 32 | 0 | 2 |
+| Blog | 13 | 4 | 0 | 9 |
 | About, Team, Reviews, Contact and Legal | 24 | 21 | 0 | 3 |
 | French Quebec | 10 | 0 | 0 | 10 |
-| **Total** | **201** | **106** | **15** | **80** |
+| **Total** | **201** | **115** | **15** | **71** |
 
 ## Home
 
@@ -161,12 +161,12 @@ Checked against the live WordPress site on 14 October 2026. 201 pages in the pla
 |---|---|---|---|
 | /compare/ownr-alternative/ | P1 | Not built |  |
 | /compare/ontario-business-central-alternative/ | P1 | Not built |  |
-| /compare/cpa-vs-lawyer-incorporation/ | P1 | Not built |  |
+| /compare/cpa-vs-lawyer-incorporation/ | P1 | Built (different URL) | /lawyer-vs-open-corporation-for-35/ |
 | /compare/diy-ontario-business-registry/ | P1 | Built (different URL) | /diy-ontario-business-registry-vs-open-corporation-for-35/ |
 | /compare/diy-corporations-canada/ | P1 | Not built |  |
 | /compare/sole-proprietorship-vs-corporation/ | P1 | Not built |  |
 | /compare/federal-vs-provincial-incorporation/ | P1 | Not built |  |
-| /compare/corporation-centre-alternative/ | P2 | Not built |  |
+| /compare/corporation-centre-alternative/ | P2 | Built (different URL) | /corporation-centre-vs-open-corporation-for-35/ |
 | /compare/lawdepot-alternative/ | P2 | Not built |  |
 | /compare/corporation-vs-partnership/ | P2 | Built (different URL) | /corporation-vs-partnership/ |
 | /compare/ontario-vs-alberta-incorporation/ | P2 | Not built |  |
@@ -179,14 +179,14 @@ Checked against the live WordPress site on 14 October 2026. 201 pages in the pla
 | Planned URL | Priority | Status | Live URL |
 |---|---|---|---|
 | /guides/tosi-tax-on-split-income/ | P1 | Built (different URL) | /guides/tax-on-split-income/ |
-| /guides/hst-registration-guide/ | P1 | Not built |  |
+| /guides/hst-registration-guide/ | P1 | Built | /guides/hst-registration-guide/ |
 | /guides/corporate-tax-first-year/ | P1 | Built (different URL) | /guides/first-t2-return/ |
 | /guides/annual-return-filing/ | P1 | Built (different URL) | /guides/corporate-annual-return/ |
-| /guides/extra-provincial-registration/ | P1 | Not built |  |
-| /guides/section-85-rollover/ | P1 | Not built |  |
-| /guides/professional-corporations-ontario/ | P1 | Not built |  |
-| /guides/personal-services-business-risk/ | P1 | Not built |  |
-| /glossary/ | P1 | Not built |  |
+| /guides/extra-provincial-registration/ | P1 | Built | /guides/extra-provincial-registration/ |
+| /guides/section-85-rollover/ | P1 | Built | /guides/section-85-rollover/ |
+| /guides/professional-corporations-ontario/ | P1 | Built | /guides/professional-corporations-ontario/ |
+| /guides/personal-services-business-risk/ | P1 | Built | /guides/personal-services-business-risk/ |
+| /glossary/ | P1 | Built | /glossary/ |
 | /guides/business-number-and-cra-accounts/ | P2 | Built (different URL) | /guides/business-number-cra-accounts/ |
 | /guides/fiscal-year-end-selection/ | P2 | Built (different URL) | /guides/fiscal-year-end/ |
 | /guides/isc-register-requirements/ | P2 | Built (different URL) | /guides/individuals-with-significant-control/ |
