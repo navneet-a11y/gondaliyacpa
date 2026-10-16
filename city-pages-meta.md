@@ -77,3 +77,7 @@
 ## /diy-corporations-canada-vs-open-corporation-for-35/ (page 10250, draft created 2026-10-16)
 - Meta title: Federal Incorporation: $35 CPA vs DIY Filing
 - Meta description: We charge $35.00, HST included. Filing it yourself costs the same $200 Corporations Canada fee. Which route suits you, line by line.
+
+## /industries/engineers/ (page 10253, draft created 2026-10-16)
+- Meta title: Engineering Corporation Ontario | $35
+- Meta description: We prepare and file your Ontario engineering corporation for $35, HST included. Government fees separate. A department of Gondaliya CPA.
