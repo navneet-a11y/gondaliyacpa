@@ -90,6 +90,6 @@
 - Meta title: Nursing Professional Corporation Ontario | $35
 - Meta description: We prepare and file your Ontario nursing professional corporation for $35, HST included. Government fees separate. A department of Gondaliya CPA.
 
-## /industries/pharmacists/ (draft created 2026-10-16)
+## /industries/pharmacists/ (page 10305, draft created 2026-10-16)
 - Meta title: Pharmacy Professional Corporation Ontario | $35
 - Meta description: We prepare and file your Ontario pharmacy professional corporation for $35, HST included. Government fees separate. A department of Gondaliya CPA.
