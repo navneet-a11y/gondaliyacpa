@@ -177,7 +177,8 @@ parts.append(
 toc_rows = '\n'.join('<li>%s</li>' % a('#' + k, t) for k, t in TOC)
 parts.append(
  '<div class="ei-section"><div class="ei-wrap ei-art">\n'
- '<p class="ei-updated">Last reviewed: ' + TODAY + '</p>\n'
+ '<p class="ei-updated">Last reviewed: ' + TODAY + ' &nbsp;&middot;&nbsp; '
+ + a(SITE + '/guides/', 'All nil T2 filing guides') + '</p>\n'
  '<div class="ei-toc"><h2>On this page</h2>\n<ol>\n' + toc_rows + '\n</ol></div>\n'
  '<div class="ei-info"><p>' + EFILE_PILLAR + '</p></div>\n'
  '</div></div>\n')

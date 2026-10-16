@@ -2344,3 +2344,63 @@ the no-emoji rule.
 question format is what carries the value; line 1582 is explicit that the markup earns
 nothing since FAQ rich results ended May 7, 2026, and launch gate 6 tests for its
 absence.
+
+## 2026-10-16 — /guides/ hub published (Family 16)
+
+Page 904, 6,384 bytes, byte-identical to `build/f16/guides-hub.html`. Post type `page`
+with slug `guides`, so it coexists with the `nil_guide` children at `/guides/<slug>/` —
+the same pattern already proven by `/pricing/` and `/deadlines/`.
+
+### 16th conflict, and the largest so far
+
+Appendix A's Family 16 and 6(a) name **five entirely different hubs**:
+
+| 6(a) line 1154 | Appendix A |
+|---|---|
+| `/services/`, `/tools/`, `/locations/`, `/guides/`, `/blog/` | `/what-we-file/`, `/who-this-is-for/`, `/provinces/`, `/all-calculators/`, `/service-areas/` |
+
+`/guides/` does not appear in Appendix A at all. Every previous Appendix A conflict was
+a prefix or wording difference; this one is a different set of pages.
+
+Resolved toward 6(a), and for once there is independent corroboration rather than just
+precedent: the 6(g) **Home** row (line 1540) names those same five as the home page's
+mandatory link targets, and Family 9's registered rewrite base is `guides`, which makes
+`/guides/` the natural parent of `/guides/<guide>/`. Worth Sharad Gondaliya confirming,
+because if Appendix A is right then five hub URLs and the home page's link targets all
+move.
+
+### The child count is a shortcode, not a number
+
+Line 1224 is unusually specific: the hub's unique data block is a "Live child count for
+that family", sourced from a "WordPress query count, cached hourly by LiteSpeed Cache",
+and **"Child counts update automatically and are never hand-typed."**
+
+Line 350 intends an Elementor Loop Grid to render it. Theme Builder remains unproven on
+this install — `Single – Deadline` (573) and `Single – Cost` (796) are still parked for
+that reason — so the count is rendered by `[cnf_child_count type="nil_guide"]` instead,
+registered by the WPCode snippet in `docs/hub-child-count-snippet.md`.
+
+**Until that snippet is installed the page renders the literal shortcode text.** That is
+the deliberate choice: a visibly missing shortcode is better than a hand-typed number
+that silently goes stale and breaches the gate. The snippet is permanent, unlike the
+earlier one-off snippets, and serves all five hubs by post type.
+
+`cnf_child_count` post meta was left at 0 rather than set to 1. Nothing renders it, and
+writing a number there by hand is the thing line 1224 forbids. If that meta is ever
+rendered it must be populated by the pipeline.
+
+### What is dynamic and what is not
+
+The **count** is live. The **card list** is written by `build/f16/build_f16.py` and must
+be regenerated when a guide is added. That matches how every page on this site is
+produced, but it is not the Loop Grid line 350 describes. If Theme Builder is ever
+proven here, the list should move to a Loop Grid and the generator's `GUIDES` list can
+be deleted.
+
+### Linking
+
+The pillar now links up to the hub from its footer line, so `/guides/` has 1 inbound.
+6(g) requires **20 minimum** for F16, which cannot be met until the other 29 guides
+exist and the navigation and home page link to it. Flagged rather than faked.
+
+Hub outbound is 5, against a cap of 400. Hubs are exempt from the 40-link body cap.
