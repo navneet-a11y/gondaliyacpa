@@ -98,18 +98,18 @@
 - Meta title: Incorporate a Construction Company Ontario | $35
 - Meta description: We prepare and file your construction corporation for $35, HST included. Government fees separate. A CPA checks WSIB, T5018 and holdbacks first.
 
-## /convert-sole-proprietorship-corporation/ (page 10315, draft created 2026-10-16)
+## /convert-sole-proprietorship-corporation/ (page 10315, published 2026-10-16)
 - Meta title: Sole Proprietorship to Corporation, Section 85 Rollover
 - Meta description: Move your unincorporated business into a corporation on a section 85 rollover with Form T2057. Incorporation is $35.00, HST included. CPA prepared.
 
-## /minute-book-preparation/ (page 10320, draft created 2026-10-16)
+## /minute-book-preparation/ (page 10320, published 2026-10-16)
 - Meta title: Minute Book Preparation, Ontario and Federal | CPA Firm
 - Meta description: A complete corporate minute book, digital and physical, prepared under the CBCA and OBCA. Registers, resolutions and share certificates, CPA reviewed.
 
-## /partnership-registration/ (page 10325, draft created 2026-10-16)
+## /partnership-registration/ (page 10325, published 2026-10-16)
 - Meta title: Partnership Registration Ontario | CPA Prepared Filing
 - Meta description: Register an Ontario general or limited partnership. $60 or $210 registry fee at cost, CPA review of the agreement, tax and whether to incorporate.
 
-## /corporate-changes-amendments/ (page 10330, draft created 2026-10-16)
+## /corporate-changes-amendments/ (page 10330, published 2026-10-16)
 - Meta title: Corporate Changes: Directors, Officers, Address, Name
 - Meta description: Change directors, officers, the registered office or the corporate name. Federal and Ontario deadlines, the 15-day rule, and what each filing costs.
