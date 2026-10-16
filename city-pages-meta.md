@@ -57,3 +57,7 @@
 ## /corporation-centre-vs-open-corporation-for-35/ (page 10234, draft created 2026-10-15)
 - Meta title: Open Corporation for $35 vs Corporation Centre Compared
 - Meta description: We charge $35.00, HST included. Corporation Centre lists $99 plus filing fees. Government fees separate. A CPA is accountable after filing.
+
+## /open-corporation-for-35-vs-ontario-business-central/ (page 10238, draft created 2026-10-16)
+- Meta title: Open Corporation for $35 vs Ontario Business Central
+- Meta description: We charge $35.00, HST included. Ontario Business Central charges $54.99 plus HST. Price and feature comparison, government fees at cost.
