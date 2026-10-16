@@ -113,3 +113,7 @@
 ## /corporate-changes-amendments/ (page 10330, published 2026-10-16)
 - Meta title: Corporate Changes: Directors, Officers, Address, Name
 - Meta description: Change directors, officers, the registered office or the corporate name. Federal and Ontario deadlines, the 15-day rule, and what each filing costs.
+
+## /not-for-profit-incorporation/ (draft created 2026-10-16)
+- Meta title: Not-for-Profit Incorporation Canada and Ontario | $35
+- Meta description: Incorporate a not-for-profit federally or in Ontario. Our fee is $35.00, HST included. Government fees at cost. Charity registration is separate.
