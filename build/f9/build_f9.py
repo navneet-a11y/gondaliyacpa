@@ -93,7 +93,6 @@ CSS = """<style>
 .ei-art > *:last-child{margin-bottom:0}
 .ei-art p{color:#4a5568;line-height:1.8}
 .ei-art a{color:rgba(32,135,201,1)}
-.ei-art h3{font-weight:700;color:#1a2340;margin:18px 0 8px;font-size:1.15em}
 .ei-art ul{color:#4a5568;line-height:1.8}
 .ei-info{background:#f0f7fd;border-left:4px solid rgba(32,135,201,1);border-radius:0 8px 8px 0;padding:14px 18px;margin:18px 0}
 .ei-info p{margin:0;color:#1a2340;line-height:1.7}
@@ -126,7 +125,7 @@ CSS = """<style>
 .ei-cta-inline h3{color:#fff;margin:0 0 4px;font-weight:700}
 .ei-cta-inline p{color:rgba(255,255,255,0.65);margin:0}
 .ei-cta-inline a,.ei-cta-inline a:visited,.ei-cta-inline a:hover,.ei-cta-bottom a,.ei-cta-bottom a:visited,.ei-cta-bottom a:hover,.ei-hero-btns a,.ei-hero-btns a:visited,.ei-hero-btns a:hover{color:#fff !important;text-decoration:none !important}
-.ei-qlist{max-width:900px;margin:18px auto 0;padding:0;list-style:none}
+.ei-faq{max-width:900px;margin:16px auto 0}\n.ei-faq details{border:1px solid #e2e8f0;border-radius:8px;margin-bottom:9px;background:#fff}\n.ei-faq summary{padding:14px 18px;font-weight:600;color:#1a2340;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:14px;line-height:1.5}\n.ei-faq summary::-webkit-details-marker{display:none}\n.ei-faq summary::after{content:'+';color:rgba(32,135,201,1);font-weight:400;font-size:1.4em;line-height:1;flex-shrink:0;transition:transform .15s ease}\n.ei-faq details[open] summary{color:rgba(32,135,201,1)}\n.ei-faq details[open] summary::after{transform:rotate(45deg)}\n.ei-faq .ei-faq-a{padding:0 18px 15px}\n.ei-faq .ei-faq-a p{margin:0;color:#4a5568;line-height:1.75}\n.ei-art h3{font-weight:700;color:#1a2340;margin:26px 0 8px;font-size:1.15em}\n.ei-qlist{max-width:900px;margin:12px auto 0;padding:0;list-style:none}
 .ei-qlist li{border:1px solid #e2e8f0;border-radius:8px;margin-bottom:10px;background:#fff}
 .ei-qlist a{display:block;padding:16px 20px;font-weight:600;color:#1a2340 !important;text-decoration:none !important}
 .ei-qlist a:hover{background:#f7f9fc;color:rgba(32,135,201,1) !important}
@@ -343,12 +342,69 @@ parts.append(sec('fee', 'What the Fee Covers',
  + '\n<p>See the full ' + a(SITE + '/pricing/nil-t2-filing-cost/', 'nil T2 filing cost')
  + '.</p>'))
 
+
+# ---------------------------------------------------------------------------
+# Pillar FAQ. These eight questions are deliberately NOT among Appendix A's 45
+# Family 5 slugs, checked by token overlap, so the pillar adds coverage instead
+# of competing with its own children. Answers come from the 7.6 REQUIRED
+# QUALIFICATIONS. Rendered with <details>, so no JavaScript and no FAQPage
+# markup (hard rule 6, plan line 37, line 1582, launch gate 6).
+# ---------------------------------------------------------------------------
+FAQ = [
+ ('What Is a Nil T2 Return?',
+  'A nil T2 is the ordinary corporate return filed for a tax year in which the '
+  'corporation had no activity at all. It is a filed return reporting nil amounts, not '
+  'a missing return. The obligation and the form are the same as for an active '
+  'corporation.'),
+ ('Is Electronic Filing Mandatory for a Nil T2?',
+  'Yes. For tax years starting after 2023, e-filing is mandatory for virtually all '
+  'corporations. A paper T2 draws a $1,000 penalty plus a $100 per-return preparer '
+  'penalty.'),
+ ('What Is the Difference Between the T2 and the T2 Short?',
+  'The T2 Short is a two-page version of the same return. It is available only to a '
+  'Canadian-controlled private corporation with nil net income or a loss, one permanent '
+  'establishment, no taxable dividends paid or received, Canadian currency, no '
+  'refundable credits, no Ontario transitional debit and no section 34.2 amount. Where '
+  'the corporation qualifies, it is included in the fee.'),
+ ('Who Signs Form T183CORP, and When?',
+  'An authorized signing officer of the corporation signs it, before the return is '
+  'transmitted and never after. It carries a date and an HH:MM:SS timestamp that is '
+  'never backdated, may be e-signed through an access-controlled secure portal, is kept '
+  'by the firm for six years, and is not sent to the Canada Revenue Agency unless '
+  'requested.'),
+ ('Does Filing the T2 Cover My Ontario Annual Return?',
+  'No. The Ontario annual return has been filed through the Ontario Business Registry '
+  'since October 2021, separately from the T2. Federal corporations also file a separate '
+  '$12 Corporations Canada annual return within 60 days of their anniversary date, and '
+  'Alberta AT1 and Quebec CO-17 are separate provincial returns.'),
+ ('Does a Nil T2 Close My GST/HST or Payroll Account?',
+  'No. An open GST/HST account or an open payroll account still needs nil filings of its '
+  'own, or a closure using Form RC145. An inactive T2 does not close those accounts.'),
+ ('What Is an Arbitrary Assessment?',
+  'It is an assessment the Canada Revenue Agency raises on its own figures when no '
+  'return is filed, usually after a demand to file. It does not close the year the way a '
+  'filed return does, and it is replaced once the real return is assessed.'),
+ ('What Does the Fee Include?',
+  'The fee covers one nil T2 for one corporation for one tax year: the T2 Short where '
+  'the corporation qualifies, GIFI Schedules 100, 125 and 141 where required, Schedule '
+  '24 on a first return, Schedule 50 for every shareholder at 10% or more, Schedule 8 '
+  'and loss continuity, the Form T183CORP package with single-use secure e-signing, CPA '
+  'review, electronic transmission by a registered EFILE electronic filer, one corrected '
+  'transmission if the Agency rejects the first, and your CRA confirmation emailed '
+  'within 3 business days.'),
+]
+
+faq_items = '\n'.join(
+ '<details><summary>%s</summary><div class="ei-faq-a"><p>%s</p></div></details>'
+ % (q, ans) for q, ans in FAQ)
+
 # ---- cluster children ------------------------------------------------------
 qlinks = '\n'.join('<li>%s</li>' % a(A + s + '/', t) for s, t in QUESTIONS)
 parts.append(
  '<div class="ei-section-alt"><div class="ei-wrap ei-art">\n'
- '<h2 class="ei-h2">Common Questions About the Nil T2 Return</h2>\n'
- '<p>Each question is answered on its own page.</p>\n'
+ '<h2 class="ei-h2">Frequently Asked Questions</h2>\n'
+ '<div class="ei-faq">\n' + faq_items + '\n</div>\n'
+ '<h3>More Questions, Each Answered in Full</h3>\n'
  '<ul class="ei-qlist">\n' + qlinks + '\n</ul>\n'
  '</div></div>\n')
 

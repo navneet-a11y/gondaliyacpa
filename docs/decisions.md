@@ -2307,3 +2307,40 @@ as a blue numeral, each row a flex link with its own hover background, a subtle 
 and shadow on the card, and the label reduced to a muted 0.76em tracking-wide caption.
 Still 12 rows in two columns, collapsing to one under 900px, so the line 1217 gate is
 unaffected.
+
+### Pillar FAQ added: eight unique questions, still no FAQPage markup
+
+Navneet asked for real FAQs on the pillar, like the gondaliyacpa.ca sample, rather than
+only a list of links. The earlier objection here was cannibalisation, and the word
+"unique" resolves it: repeating the Family 5 questions would have the pillar bidding
+against its own children, but genuinely different questions add coverage.
+
+Eight were written and checked by token overlap against all 45 Appendix A Family 5
+slugs before use. None collides:
+
+1. What Is a Nil T2 Return?
+2. Is Electronic Filing Mandatory for a Nil T2?
+3. What Is the Difference Between the T2 and the T2 Short?
+4. Who Signs Form T183CORP, and When?
+5. Does Filing the T2 Cover My Ontario Annual Return?
+6. Does a Nil T2 Close My GST/HST or Payroll Account?
+7. What Is an Arbitrary Assessment?
+8. What Does the Fee Include?
+
+Every answer comes from the 7.6 REQUIRED QUALIFICATIONS, so the FAQ adds no new factual
+claims: the $1,000 paper penalty, the eight T2 Short conditions, the six T183CORP rules,
+the Ontario Business Registry and $12 federal returns, the RC145 account-closure rule,
+and line 177's fee inclusions.
+
+The ten Family 5 links remain beneath, under "More Questions, Each Answered in Full", so
+line 1194's pillar-links-down-to-children requirement is unaffected.
+
+**Rendered with `<details>` and `<summary>`**, which gives the sample's accordion
+behaviour with no JavaScript and no Elementor widget. The open and closed marker is a
+CSS `+` rotated 45 degrees rather than a dingbat, since a glyph above U+2100 would risk
+the no-emoji rule.
+
+**Still no FAQPage markup**, verified zero on the live page after publishing. The
+question format is what carries the value; line 1582 is explicit that the markup earns
+nothing since FAQ rich results ended May 7, 2026, and launch gate 6 tests for its
+absence.
