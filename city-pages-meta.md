@@ -61,3 +61,7 @@
 ## /open-corporation-for-35-vs-ontario-business-central/ (page 10238, draft created 2026-10-16)
 - Meta title: Open Corporation for $35 vs Ontario Business Central
 - Meta description: We charge $35.00, HST included. Ontario Business Central charges $54.99 plus HST. Price and feature comparison, government fees at cost.
+
+## /sole-proprietorship-vs-corporation/ (page 10241, draft created 2026-10-16)
+- Meta title: Sole Proprietorship vs Corporation: Cost and Tax Compared
+- Meta description: A sole proprietorship costs $60.00 in Ontario. A corporation costs $300.00 plus our $35.00 fee, HST included. Compared on cost, tax and liability.
