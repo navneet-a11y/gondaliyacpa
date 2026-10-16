@@ -106,6 +106,6 @@
 - Meta title: Minute Book Preparation, Ontario and Federal | CPA Firm
 - Meta description: A complete corporate minute book, digital and physical, prepared under the CBCA and OBCA. Registers, resolutions and share certificates, CPA reviewed.
 
-## /partnership-registration/ (draft created 2026-10-16)
+## /partnership-registration/ (page 10325, draft created 2026-10-16)
 - Meta title: Partnership Registration Ontario | CPA Prepared Filing
 - Meta description: Register an Ontario general or limited partnership. $60 or $210 registry fee at cost, CPA review of the agreement, tax and whether to incorporate.
