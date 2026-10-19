@@ -145,3 +145,7 @@
 ## /industries/daycare-operators/ (page 10389, draft created 2026-10-19)
 - Meta title: Incorporate a Daycare in Ontario | $35
 - Meta description: We prepare and file your daycare incorporation for $35, HST included. Government fees separate. A CPA checks CCEYA licensing, CWELCC funding and payroll.
+
+## /industries/salons-and-barbers/ (page 10392, draft created 2026-10-19)
+- Meta title: Incorporate a Salon or Barbershop | $35
+- Meta description: We prepare and file your salon or barbershop corporation for $35, HST included. Government fees separate. A CPA checks chair rental, tips and HST.
