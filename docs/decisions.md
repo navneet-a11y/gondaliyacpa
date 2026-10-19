@@ -2683,3 +2683,76 @@ bans outside the required "never backdated" form; the label became "Date integri
 
 Line 1217 owner is "Sharad Gondaliya reviews, Navneet publishes". These six are drafted
 to the plan's shape and are **pending his sign-off**, alongside the twenty F5 answers.
+
+## 2026-10-19 — SEO meta descriptions for the 16 items published today
+
+All 16 items published today (10 Family 5 answers, 925 to 934, and 6 Family 9 guides,
+945 to 955) went live with no meta description. Each had a schema `description` and a
+`<title>`, but nothing feeding the `<meta name="description">` tag. Now fixed.
+
+### Rank Math's own field is not writable through the connector
+
+`rank_math_description` and `rank_math_focus_keyword` were sent to post 945 and came
+back in `ignored_keys` with the notice "Meta fields must be registered by the theme or a
+plugin to be writable via the REST API". Rank Math does not register them with
+`show_in_rest`, so this session cannot write them at all.
+
+The writable lever is the **WordPress excerpt**, which Rank Math's description template
+falls back to. Page 904 and the twelve Ontario service pages already work this way.
+
+**Navneet to confirm** in Rank Math > Titles & Meta that the description template for
+`nil_question` and `nil_guide` is `%excerpt%` (the default). If a previous editor
+hard-coded something else there, the excerpts will not surface and the descriptions have
+to go in through Rank Math PRO's bulk edit or CSV import instead.
+
+One thing the excerpt also fixes regardless of Rank Math: with no excerpt, an
+auto-generated description is derived from the content, and every one of these pages
+opens with a `<style>` block. WordPress's own `wp_strip_all_tags` removes script and
+style blocks before trimming, so CSS should not have leaked, but an explicit excerpt
+removes the dependency on that behaviour entirely.
+
+### Length: a deliberate deviation from line 1166
+
+Plan line 1166 makes the answer-first paragraph the meta description. Those paragraphs
+are 40 to 60 words, which runs 250 to 300 characters. Google truncates at roughly 155,
+so the plan's own instruction produces a snippet cut mid-sentence.
+
+These 16 are capped at **155 characters** (actual range 131 to 154), front-loaded with
+the answer. The plan's intent, the answer visible in the snippet, is better served by a
+line that shows in full than by a longer one that does not. Logged as a deviation rather
+than a conflict, because the plan's goal is met and only its method changed.
+
+Validated by `build/f5/meta_desc.py`: length band, the 7.6 banned-phrase list, bare
+T183, "including HST", non-ASCII, and uniqueness across all 16.
+
+**Entry 18 needed special handling again.** A meta description cannot carry the 7.4
+qualification block, so `/answers/can-i-file-a-nil-t2-late-without-a-penalty/` describes
+what applies ("the open year, the demand to file, the blocked clearance certificate and
+the non-resident daily amount") rather than making the bare claim hard rule 3 forbids.
+Its description is the only one of the 16 that does not open with a direct answer, and
+that is intentional.
+
+### The first ten answer pages carry over-length descriptions
+
+Items 831, 833, 834, 835, 836, 856, 857, 858, 859 and 860 do have excerpts, but they are
+the full answer paragraph, 250 to 300 characters, exactly as line 1166 directs. Page 860
+measures 274. Every one of them will be truncated in search results.
+
+Not changed in this pass, because the ask was to add what was missing rather than rewrite
+what exists, and because line 1166 is what put them there. Flagged for Navneet: tightening
+those ten to the same 155-character standard is a meta-only edit that advances no stamp
+under 7.5 rule 4.
+
+### Current state of meta descriptions
+
+| Set | Count | Excerpt | Length |
+|---|---|---|---|
+| F5 answers 925 to 934 | 10 | Set today | 131 to 154 |
+| F9 guides 945 to 955 | 6 | Set today | 131 to 148 |
+| F9 pillar 867 | 1 | Already set | 142 |
+| F16 guides hub 904 | 1 | Already set | 155 |
+| Ontario service places | 12 | Already set | 131 (sampled 918) |
+| F5 answers 831 to 860 | 10 | Already set | 250 to 300, over-length |
+
+No stamp was advanced. A meta description is not visible on the page, so under 7.5 rule 4
+it is not "a number, a figure, a rule statement or a body sentence" changing on the page.
