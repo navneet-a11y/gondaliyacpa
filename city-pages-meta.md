@@ -142,22 +142,22 @@
 - Meta title: Trademark Search and Filing Referral | Ontario CPA
 - Meta description: Why a corporate name is not a trademark and what NUANS misses. We refer filing to a registered trademark agent. A department of Gondaliya CPA.
 
-## /industries/daycare-operators/ (page 10389, draft created 2026-10-19)
+## /industries/daycare-operators/ (page 10389, published 2026-10-19)
 - Meta title: Incorporate a Daycare in Ontario | $35
 - Meta description: We prepare and file your daycare incorporation for $35, HST included. Government fees separate. A CPA checks CCEYA licensing, CWELCC funding and payroll.
 
-## /industries/salons-and-barbers/ (page 10392, draft created 2026-10-19)
+## /industries/salons-and-barbers/ (page 10392, published 2026-10-19)
 - Meta title: Incorporate a Salon or Barbershop | $35
 - Meta description: We prepare and file your salon or barbershop corporation for $35, HST included. Government fees separate. A CPA checks chair rental, tips and HST.
 
-## /industries/photographers/ (page 10395, draft created 2026-10-19)
+## /industries/photographers/ (page 10395, published 2026-10-19)
 - Meta title: Incorporate a Photography Business Ontario | $35
 - Meta description: We prepare and file your photography or videography corporation for $35, HST included. Government fees are separate. A department of Gondaliya CPA.
 
-## /industries/lawyers-and-paralegals/ (page 10398, draft created 2026-10-19)
+## /industries/lawyers-and-paralegals/ (page 10398, published 2026-10-19)
 - Meta title: Law Professional Corporation Ontario | $35
 - Meta description: We prepare and file your Ontario law professional corporation for $35, HST included. Government fees separate. A department of Gondaliya CPA.
 
-## /industries/mortgage-brokers/ (page 10401, draft created 2026-10-19)
+## /industries/mortgage-brokers/ (page 10401, published 2026-10-19)
 - Meta title: Mortgage Broker Incorporation Ontario | $35
 - Meta description: We prepare and file your mortgage corporation for $35, HST included. Government fees separate. A CPA checks the FSRA licensing position first.
