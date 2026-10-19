@@ -27,7 +27,14 @@ for r in recs:
         fail.append('%s: bare T183' % s)
 
     # Hard rule 3: no standalone "no penalty"; the full block must be present.
-    if 'penalty' in low and QUAL_HEAD not in c:
+    # Appendix A entry 18 mandates the slug /can-i-file-a-nil-t2-late-without-a-
+    # penalty/, so the word reaches other pages inside an href even when nothing
+    # visible on them mentions it. Hard rule 3 governs wording, not URLs, so that
+    # one mandated URL is removed before the check. Every other occurrence,
+    # including any in visible text or an anchor, still has to carry the block.
+    MANDATED_SLUG = 'can-i-file-a-nil-t2-late-without-a-penalty'
+    visible = low.replace(MANDATED_SLUG, '')
+    if 'penalty' in visible and QUAL_HEAD not in c:
         fail.append('%s: penalty mentioned without the 7.4 qualification block' % s)
 
     # Hard rule 1: CRA wording.

@@ -2514,3 +2514,73 @@ The live page is correct and is the source of truth for the six links. The local
 not a reliable record of page 516 until someone reconciles the other 190 bytes. Flagged
 rather than silently overwritten, because overwriting would discard whatever the other
 session changed.
+
+## 2026-10-19 — Family 5 batch 3: question pages 11 to 20
+
+Appendix A entries 11 to 20 published as `nil_question` items 925 to 934: the last
+four "do I need" questions and the first six "can I" questions, in Appendix A order.
+All ten byte-verified against the local build with a zero-change probe
+(`wp_replace_in_post` with search equal to replace), so the stored content matches
+the generator output exactly. F5 now stands at 20 of 45.
+
+Built by extending `build/f5/build_f5.py` rather than writing a second generator, so
+all 20 pages run through one gate. The review date became a per-record field; the ten
+already-live pages re-render byte-identical, confirmed by `git status`.
+
+Linking follows 6(g) line 1527. In-batch siblings are the next five records modulo
+ten, which gives every page in this batch exactly five inbound links from its own
+batch, and three cross-batch links tie it back to the first ten. Outbound sits at 14
+unique URLs against the cap of 15.
+
+### 18th plan conflict: Appendix A entry 18 versus hard rule 3
+
+Appendix A mandates `/can-i-file-a-nil-t2-late-without-a-penalty/`. Hard rule 3 says
+"no penalty" and its variants never stand alone and always carry the full Section 7.4
+qualification block. A slug cannot carry a qualification block, and a SERP title is
+read on its own.
+
+The slug is not changeable without departing from Appendix A, so it stands. What was
+done instead:
+
+- The answer-first paragraph opens with the 7.4 qualification verbatim. Since line
+  1166 makes that paragraph the meta description, the SERP snippet carries the
+  qualification rather than the bare claim.
+- The WordPress title is "Can I File a Nil T2 Late Without a Penalty? What Actually
+  Applies", so the SERP title line is a question plus a hedge, not an assertion. The
+  H1 and the single H2 stay the plain question, as line 1578 requires.
+- The full 7.4 block also appears in the body qualification box.
+
+**Sharad Gondaliya should confirm this is acceptable before the same pattern is
+needed again.** Family 6 contains no comparable slug, so entry 18 is the only one.
+
+### Gate narrowed, not weakened
+
+The gate failed five pages for "penalty mentioned without the 7.4 qualification
+block". The word reached them only inside the `href` of entry 18's mandated URL;
+nothing visible on those pages mentions a penalty, and their anchor text is "Can I
+file late, what applies".
+
+Hard rule 3 governs wording, not URLs, so the check now removes that one mandated
+slug string before testing. Every other occurrence, in body text or anchor text,
+still has to carry the block. This is a carve-out for one plan-mandated URL, not a
+relaxation of the rule.
+
+### `cnf_short_answer` does persist — the first ten pages need a backfill
+
+The field was empty on page 860 and on the rest of batches 1 and 2, which looked like
+a field limit. It is not: the same key written on 926 came back populated. The earlier
+ten were published without it being sent.
+
+So `cnf_short_answer` is blank on items 831, 833, 834, 835, 836, 856, 857, 858, 859
+and 860. Nothing visible on those pages depends on it — the answer paragraph is in
+the content and in the schema description — but it is the structured record of
+Sharad's answer for each question, and it should be filled before the answer bank is
+reviewed. Meta-only edits, so under 7.5 rule 4 none of them advances a stamp.
+
+### Authorship still pending
+
+Line 1213 names the source as "Sharad's answer bank, one entry per question, written
+once" and the owner as "Sharad Gondaliya writes and reviews". No answer bank has been
+supplied. These ten answers, like the first ten, are drafted to the plan's shape and
+are **pending his sign-off**. Twenty of 45 questions are now live unsigned, which
+makes that sign-off the largest single item outstanding on this family.

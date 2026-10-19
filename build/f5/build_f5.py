@@ -245,13 +245,13 @@ def build(rec, siblings):
     # 7.9 line 1570: for F1, F2, F5, F8, F10, F11, F12, F15 and F16 the visible
     # date sits in the footer of the article body, not under the H1 as 7.5 rule 1
     # says generally. The per-family row is the more specific instruction.
-    body.append('<p class="cnf-updated">Last reviewed: ' + TODAY + '</p>')
+    body.append('<p class="cnf-updated">Last reviewed: ' + rec.get('date', TODAY) + '</p>')
     body.append('</div>')
 
     schema = {"@context": "https://schema.org", "@graph": [
         {"@type": "WebPage", "@id": url + "#webpage", "url": url, "name": rec['h1'],
          "description": rec['answer'], "inLanguage": "en-CA",
-         "dateModified": "2026-10-16",
+         "dateModified": rec.get('iso', '2026-10-16'),
          "author": {"@type": "Person", "name": "Sharad Gondaliya",
                     "honorificSuffix": "CPA",
                     "url": SITE + "/sharad-gondaliya-cpa/"}},
@@ -394,6 +394,250 @@ for i, rec in enumerate(Q2):
                               'cnf_short_answer': rec['answer'],
                               'cnf_primary_keyword': rec['keyword'],
                               'cnf_last_verified_et': '2026-10-16'}))
+
+
+# ---------------------------------------------------------------------------
+# Batch 3, Appendix A entries 11 to 20: the last four "do I need" questions
+# and the first six "can I" questions. Appendix A order kept.
+#
+# `related` indexes into EARLIER = Q + Q2 (the ten pages already live), so the
+# new ten tie back into the cluster instead of forming an island. In-batch
+# siblings are the next five records modulo ten, which gives every page in
+# this batch exactly five inbound links from its own batch and keeps the
+# outbound count at 14 against the 6(g) cap of 15.
+#
+# Slug 18 note. Appendix A mandates /can-i-file-a-nil-t2-late-without-a-penalty/
+# and hard rule 3 forbids the bare claim. The slug cannot be changed, so the
+# answer-first paragraph opens with the 7.4 qualification verbatim (which is
+# also the meta description, per line 1166) and the WordPress title carries a
+# qualifying tail so the SERP line never stands alone as a claim. Logged as an
+# 18th plan conflict for Sharad Gondaliya.
+# ---------------------------------------------------------------------------
+EARLIER = Q + Q2
+DATE3, ISO3 = 'October 19, 2026', '2026-10-19'
+
+Q3 = [
+ dict(
+  slug='do-i-need-to-file-a-t2-for-the-year-my-corporation-was-dissolved',
+  h1='Do I Need to File a T2 for the Year My Corporation Was Dissolved?',
+  anchor='Do I need a dissolution-year return',
+  keyword='t2 for the year my corporation was dissolved',
+  related=[6, 2, 0],
+  answer=('Yes. A final T2 covers the period from the start of that fiscal year to '
+          'the dissolution date, and it is due within six months of dissolution. The '
+          'return is still required even when the corporation had no activity at all '
+          'in its closing year.'),
+  head=('Requirement', 'Figure'),
+  rows=[('Period the final return covers',
+         'Start of the fiscal year to the dissolution date'),
+        ('Months after dissolution the final T2 is due', '6'),
+        ('Activity threshold that removes the requirement', 'None'),
+        ('Fee per tax year', '$300.00 plus HST')],
+  qual=False,
+  body=('The closing period is a short tax year, so the fiscal year-end on the return '
+        'is the dissolution date rather than the usual one. Earlier years that were '
+        'never filed are separate returns and stay due on their own.')),
+ dict(
+  slug='do-i-need-a-business-number-to-file-a-nil-t2',
+  h1='Do I Need a Business Number to File a Nil T2?',
+  anchor='Do I need a business number',
+  keyword='business number to file a nil t2',
+  related=[8, 7, 9],
+  answer=("Yes. The return is filed against the corporation's nine-digit business "
+          'number and its RC corporation income tax account, so the number has to '
+          'exist before anything is transmitted. Most corporations receive one at '
+          'incorporation; a corporation that was never registered must obtain one '
+          'from the Canada Revenue Agency first.'),
+  head=('Point', 'Figure'),
+  rows=[('Business number format', 'Nine digits plus a program account'),
+        ('Program account the T2 is filed under', 'RC'),
+        ('When most corporations receive the number', 'At incorporation'),
+        ('Fee per tax year', '$300.00 plus HST')],
+  qual=False,
+  body=('The business number identifies the corporation to the Canada Revenue Agency, '
+        'and the RC account is the corporation income tax part of it. Without that '
+        'account there is nothing for the return to attach to, which is why it is '
+        'confirmed before the return is prepared.')),
+ dict(
+  slug='do-i-need-to-file-a-nil-t2-if-i-never-started-operating',
+  h1='Do I Need to File a Nil T2 if I Never Started Operating?',
+  anchor='Do I file if never operating',
+  keyword='nil t2 never started operating',
+  related=[7, 8, 0],
+  answer=('Yes. The first tax year begins on the incorporation date, not on the day '
+          'the business starts trading, so a return is due within six months of that '
+          'first fiscal year-end. A corporation that never opened for business files '
+          'a nil return rather than no return.'),
+  head=('Point', 'Figure'),
+  rows=[('Date the first tax year begins', 'The incorporation date'),
+        ('Months after the first fiscal year-end to file', '6'),
+        ('Returns needed before trading starts', 'One for each fiscal year'),
+        ('Fee per tax year', '$300.00 plus HST')],
+  qual=False,
+  body=('Incorporating creates the obligation. A corporation that was registered and '
+        'then left unused still has a fiscal year-end every year, and each of those '
+        'years needs its own return until the corporation is dissolved.')),
+ dict(
+  slug='do-i-need-to-file-a-t2-every-year-if-my-corporation-is-inactive',
+  h1='Do I Need to File a T2 Every Year if My Corporation Is Inactive?',
+  anchor='Do I file every inactive year',
+  keyword='t2 every year corporation inactive',
+  related=[3, 7, 0],
+  answer=('Yes, every year. Inactive is a description rather than a filing status, so '
+          'the T2 falls due within six months of each fiscal year-end until the '
+          'corporation is formally dissolved. Skipping a year leaves that year open '
+          'indefinitely, whatever the corporation did or did not do.'),
+  head=('Point', 'Figure'),
+  rows=[('Returns required per fiscal year', '1'),
+        ('Months after each fiscal year-end to file', '6'),
+        ('When the obligation ends', 'On formal dissolution'),
+        ('Fee per tax year', '$300.00 plus HST')],
+  qual=False,
+  body=('There is no form that pauses the T2 while a corporation sits idle. The '
+        'return is filed each year with nil amounts, which keeps the corporate tax '
+        'account current and keeps dissolution available when the owner wants it.')),
+ dict(
+  slug='can-i-file-five-years-of-nil-t2-returns-at-once',
+  h1='Can I File Five Years of Nil T2 Returns at Once?',
+  anchor='Can I file five years together',
+  keyword='file five years of nil t2 returns',
+  related=[1, 0, 4],
+  answer=('Yes. Five missed fiscal year-ends mean five separate returns, and all five '
+          'can be prepared and transmitted in one pass. Each year keeps its own '
+          'fiscal year-end, its own figures and its own T183CORP signature, so there '
+          'is no combined five-year return.'),
+  head=('What five years needs', 'Count'),
+  rows=[('Separate T2 returns', '5'),
+        ('T183CORP signatures', '5'),
+        ('Combined five-year return available', 'None'),
+        ('Total fee at $300.00 plus HST per tax year', '$1,500.00 plus HST')],
+  qual=False,
+  body=('The years are filed oldest first, so each return reflects the balances '
+        'carried into the next. Filing them together is ordinary catch-up work, and '
+        'the corporation ends the process with every year assessed.')),
+ dict(
+  slug='can-i-file-a-nil-t2-myself-without-an-accountant',
+  h1='Can I File a Nil T2 Myself Without an Accountant?',
+  anchor='Can I file it myself',
+  keyword='file a nil t2 without an accountant',
+  related=[9, 7, 0],
+  answer=('Yes. Nothing in the Income Tax Act requires a corporation to use an '
+          'accountant, and a T2 can be prepared and transmitted by the corporation '
+          'itself using commercial tax software. A corporation that engages an '
+          'electronic filer instead signs Form T183CORP before the return is '
+          'transmitted.'),
+  head=('Point', 'Figure'),
+  rows=[('Requirement to use an accountant', 'None'),
+        ('What a self-filed return still needs',
+         'Correct fiscal year-end and GIFI schedules'),
+        ('Form signed when an electronic filer transmits', 'T183CORP'),
+        ('Fee per tax year', '$300.00 plus HST')],
+  qual=False,
+  body=('What a corporation takes on by filing itself is the GIFI coding, the '
+        'schedule selection and the year-end accuracy. Our fee covers a CPA preparing '
+        'and reviewing those and transmitting the return, which is what the fee buys '
+        'rather than something the rules demand.')),
+ dict(
+  slug='can-i-dissolve-my-corporation-with-unfiled-t2-returns',
+  h1='Can I Dissolve My Corporation With Unfiled T2 Returns?',
+  anchor='Can I dissolve with unfiled returns',
+  keyword='dissolve corporation with unfiled t2 returns',
+  related=[2, 6, 1],
+  answer=('Not cleanly. The corporate registry and the Canada Revenue Agency are '
+          'separate, so a registry may strike a corporation while its tax years '
+          'remain outstanding. A clearance certificate cannot be issued until every '
+          'return is filed, and the unfiled years stay due after dissolution.'),
+  head=('Requirement', 'Figure'),
+  rows=[('Returns filed before a clearance certificate', 'All of them'),
+        ('Months after dissolution the final T2 is due', '6'),
+        ('Unfiled years cancelled by dissolution', 'None'),
+        ('Fee per tax year', '$300.00 plus HST')],
+  qual=False,
+  body=('Dissolving first and filing later leaves the directors dealing with a closed '
+        'corporation and an open tax account. Filing the outstanding years before the '
+        'dissolution request is the order that avoids it.')),
+ dict(
+  slug='can-i-file-a-nil-t2-late-without-a-penalty',
+  h1='Can I File a Nil T2 Late Without a Penalty?',
+  title=('Can I File a Nil T2 Late Without a Penalty? What Actually Applies'),
+  anchor='Can I file late, what applies',
+  keyword='file a nil t2 late',
+  related=[0, 1, 4],
+  answer=('A true nil return carries no percentage late-filing penalty, because that '
+          'penalty is a percentage of tax owing and the corporation owes $0.00. The '
+          'unfiled year still stays open forever, invites a demand to file, blocks '
+          'dissolution, and costs a non-resident-owned corporation $25.00 per day.'),
+  head=('What applies', 'Figure'),
+  rows=[('Percentage late-filing penalty on a true nil return', '$0.00'),
+        ('Tax owing on a true nil return', '$0.00'),
+        ('How long the unfiled year stays open', 'Until it is filed'),
+        ('Non-resident-owned corporation penalty',
+         '$25.00 per day, to $2,500.00'),
+        ('Fee per tax year', '$300.00 plus HST')],
+  qual=True,
+  body=('The distinction matters because the common late-filing charge is calculated '
+        'on tax owing. Where there is no tax owing there is nothing for that '
+        'percentage to apply to, which is not the same as the year being closed or '
+        'the filing being optional.')),
+ dict(
+  slug='can-i-file-nil-t2-returns-for-a-corporation-i-forgot-about',
+  h1='Can I File Nil T2 Returns for a Corporation I Forgot About?',
+  anchor='Can I file a forgotten corporation',
+  keyword='nil t2 for a forgotten corporation',
+  related=[1, 5, 3],
+  answer=('Yes. A corporation that was registered and then left alone still has a '
+          'fiscal year-end for every year since incorporation, and each of those '
+          "years can be filed now. The first step is confirming the corporation's "
+          'status with its registry and its year-end with the Canada Revenue Agency.'),
+  head=('Point', 'Figure'),
+  rows=[('Years that can be filed', 'Every year since incorporation'),
+        ('First thing confirmed', 'Corporate status and fiscal year-end'),
+        ('Months after each fiscal year-end to file', '6'),
+        ('Fee per tax year', '$300.00 plus HST')],
+  qual=False,
+  body=('A forgotten corporation is often still active on the registry, or has been '
+        'struck for missing its annual return while the tax years stayed open. Either '
+        'way the year-end on file with the Canada Revenue Agency decides how many '
+        'returns are outstanding.')),
+ dict(
+  slug='can-i-still-file-a-t2-after-my-corporation-was-dissolved',
+  h1='Can I Still File a T2 After My Corporation Was Dissolved?',
+  anchor='Can I file after dissolution',
+  keyword='file a t2 after dissolution',
+  related=[6, 2, 0],
+  answer=('Yes. A final return is due within six months of the dissolution date, and '
+          'years left unfiled before dissolution can still be filed afterwards. The '
+          'corporate tax account stays open until those returns are assessed, so '
+          'dissolution does not end the ability or the need to file.'),
+  head=('Point', 'Figure'),
+  rows=[('Months after dissolution the final T2 is due', '6'),
+        ('Earlier unfiled years that can still be filed', 'All of them'),
+        ('When the corporate tax account closes',
+         'Once the outstanding returns are assessed'),
+        ('Fee per tax year', '$300.00 plus HST')],
+  qual=False,
+  body=('Filing after dissolution is also what allows the corporate tax account to be '
+        'closed properly. A dissolved corporation with an open year can still be '
+        'reassessed, so the returns are what finish the file rather than the '
+        'dissolution date.')),
+]
+
+for rec in Q3:
+    rec['date'], rec['iso'] = DATE3, ISO3
+
+for i, rec in enumerate(Q3):
+    sibs = ([Q3[(i + k) % len(Q3)] for k in range(1, 6)]
+            + [EARLIER[k] for k in rec['related']])
+    html, url = build(rec, sibs)
+    records.append(dict(slug=rec['slug'], title=rec.get('title', rec['h1']),
+                        meta_description=rec['answer'], url=url, content=html,
+                        answer=rec['answer'], keyword=rec['keyword'],
+                        anchor=rec['anchor'],
+                        terms={'cnf_family': ['f5']},
+                        meta={'cnf_question_text': rec['h1'],
+                              'cnf_short_answer': rec['answer'],
+                              'cnf_primary_keyword': rec['keyword'],
+                              'cnf_last_verified_et': ISO3}))
 
 out = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'f5-manifest.json')
 json.dump(records, open(out, 'w'), ensure_ascii=False, indent=1)
