@@ -141,3 +141,7 @@
 ## /trademark-search-filing-referral/ (page 10381, published 2026-10-19)
 - Meta title: Trademark Search and Filing Referral | Ontario CPA
 - Meta description: Why a corporate name is not a trademark and what NUANS misses. We refer filing to a registered trademark agent. A department of Gondaliya CPA.
+
+## /industries/daycare-operators/ (page 10389, draft created 2026-10-19)
+- Meta title: Incorporate a Daycare in Ontario | $35
+- Meta description: We prepare and file your daycare incorporation for $35, HST included. Government fees separate. A CPA checks CCEYA licensing, CWELCC funding and payroll.
