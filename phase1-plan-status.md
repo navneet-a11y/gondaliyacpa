@@ -10,14 +10,14 @@ Checked against the live WordPress site on 14 October 2026, updated 16 October 2
 | Services | 26 | 21 | 0 | 5 |
 | Incorporate by Province and Federal | 13 | 11 | 0 | 2 |
 | Service Areas | 27 | 7 | 14 | 6 |
-| Industries | 34 | 27 | 0 | 7 |
+| Industries | 34 | 28 | 0 | 6 |
 | Pricing | 3 | 3 | 0 | 0 |
 | Compare | 14 | 11 | 0 | 3 |
 | Guides | 34 | 32 | 0 | 2 |
 | Blog | 13 | 4 | 0 | 9 |
 | About, Team, Reviews, Contact and Legal | 24 | 21 | 0 | 3 |
 | French Quebec | 10 | 0 | 0 | 10 |
-| **Total** | **201** | **140** | **14** | **47** |
+| **Total** | **201** | **141** | **14** | **46** |
 
 ## Home
 
@@ -121,7 +121,7 @@ Checked against the live WordPress site on 14 October 2026, updated 16 October 2
 | /industries/nurses-and-nurse-practitioners/ | P2 | Built | /industries/nurses-and-nurse-practitioners/ |
 | /industries/lawyers-and-paralegals/ | P2 | Built | /industries/lawyers-and-paralegals/ |
 | /industries/engineers/ | P2 | Built | /industries/engineers/ |
-| /industries/mortgage-brokers/ | P2 | Not built |  |
+| /industries/mortgage-brokers/ | P2 | Built | /industries/mortgage-brokers/ |
 | /industries/uber-and-delivery-drivers/ | P2 | Not built |  |
 | /industries/shopify-stores/ | P2 | Not built |  |
 | /industries/content-creators-and-influencers/ | P2 | Not built |  |
