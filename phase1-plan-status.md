@@ -7,7 +7,7 @@ Checked against the live WordPress site on 14 October 2026, updated 16 October 2
 | Group | Planned | Built | Old page only | Not built |
 |---|---|---|---|---|
 | Home | 3 | 3 | 0 | 0 |
-| Services | 26 | 17 | 0 | 9 |
+| Services | 26 | 18 | 0 | 8 |
 | Incorporate by Province and Federal | 13 | 11 | 0 | 2 |
 | Service Areas | 27 | 7 | 14 | 6 |
 | Industries | 34 | 23 | 0 | 11 |
@@ -17,7 +17,7 @@ Checked against the live WordPress site on 14 October 2026, updated 16 October 2
 | Blog | 13 | 4 | 0 | 9 |
 | About, Team, Reviews, Contact and Legal | 24 | 21 | 0 | 3 |
 | French Quebec | 10 | 0 | 0 | 10 |
-| **Total** | **201** | **132** | **14** | **55** |
+| **Total** | **201** | **133** | **14** | **54** |
 
 ## Home
 
@@ -43,7 +43,7 @@ Checked against the live WordPress site on 14 October 2026, updated 16 October 2
 | /not-for-profit-incorporation/ | P2 | Built | /not-for-profit-incorporation/ |
 | /corporate-compliance-subscription/ | P2 | Not built |  |
 | /incorporation-bookkeeping-bundle/ | P2 | Not built |  |
-| /incorporation-corporate-tax-return-bundle/ | P2 | Not built |  |
+| /incorporation-corporate-tax-return-bundle/ | P2 | Built | /incorporation-corporate-tax-return-bundle/ |
 | /shareholder-agreement-template/ | P3 | Not built |  |
 | /corporation-revival/ | P3 | Not built |  |
 | /trademark-search-filing-referral/ | P3 | Not built |  |
