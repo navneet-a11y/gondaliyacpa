@@ -1,0 +1,210 @@
+<style>
+.ei-wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+.ei-btn-blue{background:rgba(32,135,201,1);color:#fff !important;padding:13px 26px;border-radius:6px;font-weight:700;font-size:0.95em;text-transform:uppercase;text-decoration:none !important;display:inline-block;line-height:1.4;text-align:center;min-width:120px}
+.ei-section{padding:26px 20px}
+.ei-section-alt{background:#f7f9fc;padding:26px 20px}
+.ei-art .ei-h2{font-weight:800;color:#1a2340;margin:0 0 10px;font-size:1.45em;line-height:1.3}
+.ei-art > *:last-child{margin-bottom:0}
+.ei-art p{color:#4a5568;line-height:1.8}
+.ei-art a{color:rgba(32,135,201,1)}
+.ei-art ul{color:#4a5568;line-height:1.8}
+.ei-info{background:#f0f7fd;border-left:4px solid rgba(32,135,201,1);border-radius:0 8px 8px 0;padding:14px 18px;margin:18px 0}
+.ei-info p{margin:0;color:#1a2340;line-height:1.7}
+.ei-warn{background:#fffbf0;border-left:4px solid #f6ad1a;border-radius:0 8px 8px 0;padding:14px 18px;margin:18px 0}
+.ei-warn p{margin:0;color:#7c5800;line-height:1.7}
+.ei-danger{background:#fff5f5;border-left:4px solid #e53e3e;border-radius:0 8px 8px 0;padding:14px 18px;margin:18px 0}
+.ei-danger p{margin:0;color:#742a2a;line-height:1.7}
+.ei-hero{background:linear-gradient(135deg,#0f1624 0%,#1a2340 55%,#1e3a6e 100%);padding:40px 20px}
+.ei-hero-inner{max-width:860px;margin:0 auto;text-align:center}
+.ei-hero-eyebrow{display:inline-block;background:rgba(32,135,201,0.15);border:1px solid rgba(32,135,201,0.4);border-radius:50px;padding:5px 16px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:rgba(32,135,201,1);margin-bottom:16px;font-size:.8em}
+.ei-hero h1{color:#fff;font-weight:800;line-height:1.2;margin:0 0 14px;font-size:2.1em}
+.ei-hero h1 span{color:#f6ad1a}
+.ei-hero-sub{color:rgba(255,255,255,0.78);max-width:720px;margin:0 auto 10px;line-height:1.75}
+.ei-hero-by{color:rgba(255,255,255,0.6);max-width:720px;margin:0 auto 22px;line-height:1.6;font-size:.86em}
+.ei-hero-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.ei-tbl{width:100%;border-collapse:collapse;margin:18px 0;border:1px solid #d1d5db}
+.ei-tbl th{background:#1a2340;color:#fff;font-weight:700;padding:12px 14px;text-align:left;border:1px solid #374151}
+.ei-tbl td{padding:10px 14px;border:1px solid #d1d5db;color:#2d3748;line-height:1.5}
+.ei-tbl tr:nth-child(even){background:#f7f9fc}
+.ei-tbl tr:hover{background:#edf2f7}
+.ei-updated{color:#718096;font-size:.9em;margin:0 0 18px}
+.ei-toc{background:linear-gradient(180deg,#ffffff,#f7f9fc);border:1px solid #e2e8f0;border-radius:12px;padding:18px 22px;margin:0 0 10px;box-shadow:0 1px 2px rgba(26,35,64,.05)}
+.ei-toc h2{font-size:.76em;font-weight:800;color:#8795ab;margin:0 0 10px;text-transform:uppercase;letter-spacing:1.3px}
+.ei-toc ol{margin:0;padding:0;list-style:none;counter-reset:toc;columns:2;column-gap:30px}
+.ei-toc li{break-inside:avoid;counter-increment:toc;margin:0}
+.ei-toc a{display:flex;gap:10px;align-items:baseline;padding:6px 9px;border-radius:6px;color:#1a2340;text-decoration:none;line-height:1.45}
+.ei-toc a::before{content:counter(toc);color:rgba(32,135,201,1);font-weight:800;font-size:.82em;min-width:15px;flex-shrink:0}
+.ei-toc a:hover{background:#eaf3fb;color:rgba(32,135,201,1);text-decoration:none}
+.ei-cta-inline{background:#1a2340;border-radius:10px;padding:24px 28px;margin:28px 0;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px}
+.ei-cta-inline h3{color:#fff;margin:0 0 4px;font-weight:700}
+.ei-cta-inline p{color:rgba(255,255,255,0.65);margin:0}
+.ei-cta-inline a,.ei-cta-inline a:visited,.ei-cta-inline a:hover,.ei-cta-bottom a,.ei-cta-bottom a:visited,.ei-cta-bottom a:hover,.ei-hero-btns a,.ei-hero-btns a:visited,.ei-hero-btns a:hover{color:#fff !important;text-decoration:none !important}
+.ei-faq{max-width:900px;margin:16px auto 0}
+.ei-faq details{border:1px solid #e2e8f0;border-radius:8px;margin-bottom:9px;background:#fff}
+.ei-faq summary{padding:14px 18px;font-weight:600;color:#1a2340;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:14px;line-height:1.5}
+.ei-faq summary::-webkit-details-marker{display:none}
+.ei-faq summary::after{content:'+';color:rgba(32,135,201,1);font-weight:400;font-size:1.4em;line-height:1;flex-shrink:0;transition:transform .15s ease}
+.ei-faq details[open] summary{color:rgba(32,135,201,1)}
+.ei-faq details[open] summary::after{transform:rotate(45deg)}
+.ei-faq .ei-faq-a{padding:0 18px 15px}
+.ei-faq .ei-faq-a p{margin:0;color:#4a5568;line-height:1.75}
+.ei-art h3{font-weight:700;color:#1a2340;margin:26px 0 8px;font-size:1.15em}
+.ei-qlist{max-width:900px;margin:12px auto 0;padding:0;list-style:none}
+.ei-qlist li{border:1px solid #e2e8f0;border-radius:8px;margin-bottom:10px;background:#fff}
+.ei-qlist a{display:block;padding:16px 20px;font-weight:600;color:#1a2340 !important;text-decoration:none !important}
+.ei-qlist a:hover{background:#f7f9fc;color:rgba(32,135,201,1) !important}
+.ei-cta-bottom{background:linear-gradient(135deg,#0f1624,#1a2340);padding:40px 20px;text-align:center}
+.ei-cta-bottom h2{color:#fff;font-weight:800;margin:0 0 10px;font-size:1.5em}
+.ei-cta-bottom p{color:rgba(255,255,255,0.72);max-width:600px;margin:0 auto 22px;line-height:1.75}
+.entry-header{display:none!important}
+.ast-article-single,.ast-article-single .entry-content{margin-top:0;padding-top:0}
+@media(max-width:900px){.ei-cta-inline{flex-direction:column;text-align:center}.ei-hero h1{font-size:1.6em}.ei-art .ei-h2{font-size:1.3em}.ei-toc ol{columns:1}}
+</style>
+<div class="ei-hero"><div class="ei-hero-inner"><span class="ei-hero-eyebrow">T2 Short Guide</span><h1>The Complete Guide to <span>T2 Short Eligibility</span></h1><p class="ei-hero-sub">The eight conditions for the T2 Short, what disqualifies a corporation, how it differs from the full T2, and which schedules are still required. Nil T2 filing is $300.00 plus HST per tax year.</p><p class="ei-hero-by">Written and reviewed by Sharad Gondaliya, CPA (Ontario), CPA Ontario Membership 61040184.</p><div class="ei-hero-btns"><a class="ei-btn-blue" href="https://corpnilfilingfor300.ca/form/">Start Nil T2 Filing NOW</a><a class="ei-btn-blue" style="background:transparent;border:2px solid rgba(255,255,255,0.4)" href="https://corpnilfilingfor300.ca/t2-short-filing/">T2 Short Filing</a></div></div></div>
+<div class="ei-section"><div class="ei-wrap ei-art">
+<p class="ei-updated">Last reviewed: October 19, 2026 &nbsp;&middot;&nbsp; <a href="https://corpnilfilingfor300.ca/guides/">All nil T2 filing guides</a></p>
+<div class="ei-toc"><h2>On this page</h2>
+<ol>
+<li><a href="#what-it-is">What the T2 Short Is</a></li>
+<li><a href="#eight-conditions">The Eight Conditions</a></li>
+<li><a href="#ccpc">The Canadian-Controlled Private Corporation Test</a></li>
+<li><a href="#nil-or-loss">Nil Net Income or a Loss</a></li>
+<li><a href="#one-pe">One Permanent Establishment</a></li>
+<li><a href="#dividends">No Taxable Dividends Paid or Received</a></li>
+<li><a href="#currency-credits">Canadian Currency and No Refundable Credits</a></li>
+<li><a href="#ontario-342">Ontario Transitional Debit and Section 34.2</a></li>
+<li><a href="#disqualifies">What Disqualifies a Corporation</a></li>
+<li><a href="#vs-full">T2 Short Against the Full T2</a></li>
+<li><a href="#schedules">Schedules Still Required</a></li>
+<li><a href="#fee">What the Fee Covers</a></li>
+</ol></div>
+<div class="ei-info"><p>Gondaliya CPA Professional Corporation is a registered EFILE electronic filer. Returns are prepared and transmitted in Canada. Credentials are never shared and never used offshore.</p></div>
+</div></div>
+<div class="ei-section-alt" id="what-it-is"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">What the T2 Short Is</h2>
+<p>The T2 Short is a two-page version of the corporate return. It is the same filing obligation discharged on a shorter form, available only to a corporation that meets every one of eight conditions.</p>
+<p>It is not a different kind of return and not a lighter obligation. A T2 Short is a filed T2.</p>
+</div></div>
+<div class="ei-section" id="eight-conditions"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">The Eight Conditions</h2>
+<table class="ei-tbl"><thead><tr><th scope="col">Condition</th><th scope="col">Requirement</th></tr></thead><tbody>
+<tr><td>Corporation type</td><td>Canadian-controlled private corporation</td></tr>
+<tr><td>Net income</td><td>Nil net income or a loss for the year</td></tr>
+<tr><td>Permanent establishments</td><td>One only</td></tr>
+<tr><td>Taxable dividends</td><td>None paid and none received</td></tr>
+<tr><td>Currency</td><td>Canadian</td></tr>
+<tr><td>Refundable credits</td><td>None claimed</td></tr>
+<tr><td>Ontario transitional debit</td><td>None</td></tr>
+<tr><td>Section 34.2 amount</td><td>None</td></tr>
+</tbody></table>
+<div class="ei-warn"><p>All eight must hold. Failing any one of them puts the corporation on the full T2 for that year.</p></div>
+</div></div>
+<div class="ei-section-alt" id="ccpc"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">The Canadian-Controlled Private Corporation Test</h2>
+<p>The corporation must be a Canadian-controlled private corporation throughout the tax year. A corporation controlled by non-residents is not one, which is why a non-resident-owned corporation files the full return.</p>
+<p>Control is tested on the facts rather than on where the directors happen to live in a given month, and a change in control during the year affects the test.</p>
+</div></div>
+<div class="ei-section" id="nil-or-loss"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">Nil Net Income or a Loss</h2>
+<p>Net income for the year must be nil or negative. A corporation with no activity at all has nil net income and meets this condition.</p>
+<p>A corporation with a loss also meets it, which is why the T2 Short is not limited to dormant corporations. A trading corporation that lost money in the year can qualify on this condition, though it will usually fail another one.</p>
+</div></div>
+<div class="ei-wrap"><div class="ei-cta-inline"><div><h3>Nil T2 Filing, $300.00 plus HST per tax year</h3><p>One price for every year and every province. CPA reviewed and transmitted electronically.</p></div><a class="ei-btn-blue" href="https://corpnilfilingfor300.ca/form/">Start Nil T2 Filing NOW</a></div></div>
+<div class="ei-section-alt" id="one-pe"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">One Permanent Establishment</h2>
+<p>The corporation must have a single permanent establishment, in one province or territory. A corporation with establishments in two provinces allocates income between them, and that allocation does not fit on the short form.</p>
+<div class="ei-info"><p>A dormant corporation generally has one establishment, being its registered office. Where that office is the only Canadian address, the condition is met.</p></div>
+</div></div>
+<div class="ei-section" id="dividends"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">No Taxable Dividends Paid or Received</h2>
+<p>No taxable dividend may have been paid and none received during the year. A single dividend in either direction puts the corporation on the full T2.</p>
+<p>It also takes the corporation outside a nil return altogether. A holding corporation with investment income, a rental corporation and a corporation that paid or received a dividend are not nil. Those are handled by Gondaliya CPA Professional Corporation at gondaliyacpa.ca at $350.00 plus HST per year.</p>
+</div></div>
+<div class="ei-section-alt" id="currency-credits"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">Canadian Currency and No Refundable Credits</h2>
+<p>The return must be reported in Canadian dollars, and no refundable tax credit may be claimed for the year.</p>
+<p>A corporation that functions in United States dollars files the full return. A corporation claiming a refundable credit does too, because the credit calculation has no place on the short form.</p>
+</div></div>
+<div class="ei-section" id="ontario-342"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">Ontario Transitional Debit and Section 34.2</h2>
+<p>Two residual conditions rule out particular histories. There must be no Ontario transitional tax debit, and no amount arising under section 34.2 of the Income Tax Act, which deals with a corporate partner and a partnership whose fiscal period differs from the corporation&rsquo;s.</p>
+<p>Neither applies to an ordinary dormant corporation. Both are worth checking on a corporation that once traded through a partnership.</p>
+</div></div>
+<div class="ei-section-alt" id="disqualifies"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">What Disqualifies a Corporation</h2>
+<table class="ei-tbl"><thead><tr><th scope="col">Fact in the tax year</th><th scope="col">Effect</th></tr></thead><tbody>
+<tr><td>Controlled by non-residents</td><td>Full T2</td></tr>
+<tr><td>Positive net income</td><td>Full T2</td></tr>
+<tr><td>Establishments in two or more provinces</td><td>Full T2</td></tr>
+<tr><td>Any taxable dividend paid or received</td><td>Full T2, and not a nil return</td></tr>
+<tr><td>Reporting currency other than Canadian</td><td>Full T2</td></tr>
+<tr><td>Any refundable credit claimed</td><td>Full T2</td></tr>
+<tr><td>Ontario transitional tax debit</td><td>Full T2</td></tr>
+<tr><td>A section 34.2 amount</td><td>Full T2</td></tr>
+</tbody></table>
+</div></div>
+<div class="ei-section" id="vs-full"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">T2 Short Against the Full T2</h2>
+<table class="ei-tbl"><thead><tr><th scope="col"></th><th scope="col">T2 Short</th><th scope="col">Full T2</th></tr></thead><tbody>
+<tr><td>Length</td><td>Two pages</td><td>Eight pages plus schedules</td></tr>
+<tr><td>Who may use it</td><td>A CCPC meeting all eight conditions</td><td>Any corporation</td></tr>
+<tr><td>GIFI schedules</td><td>Required where there is anything to report</td><td>Required where there is anything to report</td></tr>
+<tr><td>Schedule 24 on a first return</td><td>Required</td><td>Required</td></tr>
+<tr><td>Electronic filing</td><td>Mandatory for virtually all corporations</td><td>Mandatory for virtually all corporations</td></tr>
+<tr><td>Included in our fee</td><td>Yes, where the corporation qualifies</td><td>Yes, where the corporation does not</td></tr>
+</tbody></table>
+</div></div>
+<div class="ei-section-alt" id="schedules"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">Schedules Still Required</h2>
+<p>The short form shortens the return, not the schedules. GIFI Schedules 100, 125 and 141 are required wherever there is anything to report, Schedule 24 is required on the first return after incorporation, and Schedule 50 is required for every shareholder holding 10% or more.</p>
+<div class="ei-warn"><p>Any share capital, cash, shareholder loan, incorporation cost or bank charge makes the GIFI schedules required, even on a T2 Short and even with no activity in the year.</p></div>
+<p>See <a href="https://corpnilfilingfor300.ca/answers/do-i-need-financial-statements-for-a-nil-t2-return/">whether financial statements are needed for a nil T2 return</a>.</p>
+</div></div>
+<div class="ei-section" id="fee"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">What the Fee Covers</h2>
+<p>The fee is $300.00 plus HST per tax year, covering one nil T2 return for one corporation for one tax year:</p>
+<table class="ei-tbl"><thead><tr><th scope="col">Included</th><th scope="col">Detail</th></tr></thead><tbody>
+<tr><td>The T2 return</td><td>Including the T2 Short where the corporation qualifies</td></tr>
+<tr><td>GIFI Schedules 100, 125 and 141</td><td>Where they are required</td></tr>
+<tr><td>Schedule 24</td><td>On a first return</td></tr>
+<tr><td>Schedule 50</td><td>For every shareholder at 10% or more</td></tr>
+<tr><td>Schedule 8 and loss continuity</td><td>Recorded</td></tr>
+<tr><td>Form T183CORP package</td><td>With single-use secure e-signing</td></tr>
+<tr><td>CPA review</td><td>Before transmission</td></tr>
+<tr><td>Electronic transmission</td><td>By a registered EFILE electronic filer</td></tr>
+<tr><td>One corrected transmission</td><td>If the Agency rejects the first one</td></tr>
+<tr><td>CRA confirmation</td><td>Emailed within 3 business days</td></tr>
+</tbody></table>
+<p>See the full <a href="https://corpnilfilingfor300.ca/pricing/nil-t2-filing-cost/">nil T2 filing cost</a>.</p>
+</div></div>
+<div class="ei-section-alt"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">Frequently Asked Questions</h2>
+<div class="ei-faq">
+<details><summary>Is the T2 Short the Same as a Nil Return?</summary><div class="ei-faq-a"><p>No. A nil return describes a year with no activity; the T2 Short describes a form. Most nil years qualify for the short form, but a corporation with a loss and real trading activity can also qualify, and a dormant corporation that fails one of the eight conditions cannot.</p></div></details>
+<details><summary>Who Decides Which Form Is Used?</summary><div class="ei-faq-a"><p>The eight conditions decide it. Where the corporation meets all of them the T2 Short is filed, and where it fails any one the full T2 is filed. Both are included in the fee of $300.00 plus HST per tax year.</p></div></details>
+<details><summary>Can a Non-Resident-Owned Corporation File the T2 Short?</summary><div class="ei-faq-a"><p>No. The first condition requires a Canadian-controlled private corporation, and a corporation controlled by non-residents is not one.</p></div></details>
+<details><summary>Does the T2 Short Skip the GIFI Schedules?</summary><div class="ei-faq-a"><p>No. The short form shortens the return, not the schedules. GIFI Schedules 100, 125 and 141 are required wherever there is anything at all to report.</p></div></details>
+<details><summary>What Is a Permanent Establishment for This Test?</summary><div class="ei-faq-a"><p>A fixed place through which the corporation carries on business, which for a dormant corporation is generally its registered office. The condition requires exactly one, in one province or territory.</p></div></details>
+<details><summary>Does Filing the T2 Short Change the Deadline?</summary><div class="ei-faq-a"><p>No. The return is due within six months of the fiscal year-end whichever form is used.</p></div></details>
+</div>
+<h3>Questions Answered in Full</h3>
+<ul class="ei-qlist">
+<li><a href="https://corpnilfilingfor300.ca/answers/do-i-need-financial-statements-for-a-nil-t2-return/">Do I Need Financial Statements for a Nil T2 Return?</a></li>
+<li><a href="https://corpnilfilingfor300.ca/answers/do-i-need-to-file-a-t2-if-my-corporation-had-no-activity/">Do I Need to File a T2 if My Corporation Had No Activity?</a></li>
+<li><a href="https://corpnilfilingfor300.ca/answers/do-i-need-to-file-a-nil-t2-if-i-never-started-operating/">Do I Need to File a Nil T2 if I Never Started Operating?</a></li>
+<li><a href="https://corpnilfilingfor300.ca/answers/do-i-need-to-file-a-t2-every-year-if-my-corporation-is-inactive/">Do I Need to File a T2 Every Year if My Corporation Is Inactive?</a></li>
+<li><a href="https://corpnilfilingfor300.ca/answers/can-i-file-a-nil-t2-myself-without-an-accountant/">Can I File a Nil T2 Myself Without an Accountant?</a></li>
+<li><a href="https://corpnilfilingfor300.ca/answers/do-i-need-to-file-a-nil-t2-if-my-corporation-has-no-bank-account/">Do I Need to File a Nil T2 if My Corporation Has No Bank Account?</a></li>
+</ul>
+<h3>The Other Nil T2 Filing Guides</h3>
+<ul class="ei-qlist">
+<li><a href="https://corpnilfilingfor300.ca/guides/nil-t2-return-complete-guide/">The Complete Guide to the Nil T2 Return</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/dormant-and-inactive-corporations/">The Complete Guide to Dormant and Inactive Corporations</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/catch-up-unfiled-corporate-tax-returns/">The Complete Guide to Catching Up on Unfiled Corporate Tax Returns</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/final-t2-and-dissolution/">The Complete Guide to the Final T2 and Dissolution</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/provincial-and-federal-annual-returns/">The Complete Guide to Provincial and Federal Annual Returns</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/t183corp-signing-and-transmission/">The Complete Guide to Form T183CORP Signing and Transmission</a></li>
+</ul>
+</div></div>
+<div class="ei-cta-bottom"><div class="ei-wrap"><h2>Nil T2 Filing, $300.00 plus HST per tax year</h2><p>Type your corporation name, pick your unfiled years, pay, and sign Form T183CORP on a secure screen. Your CRA confirmation is emailed within 3 business days.</p><a class="ei-btn-blue" href="https://corpnilfilingfor300.ca/form/">Start Nil T2 Filing NOW</a></div></div>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Article", "@id": "https://corpnilfilingfor300.ca/guides/t2-short-eligibility/#article", "headline": "The Complete Guide to T2 Short Eligibility", "name": "T2 Short | Eligibility Guide for Canadian Corporations", "description": "The eight conditions for the T2 Short, what disqualifies a corporation, how it differs from the full T2, and which schedules are still required.", "inLanguage": "en-CA", "datePublished": "2026-10-19", "dateModified": "2026-10-19", "mainEntityOfPage": "https://corpnilfilingfor300.ca/guides/t2-short-eligibility/", "author": {"@type": "Person", "name": "Sharad Gondaliya", "honorificSuffix": "CPA", "url": "https://corpnilfilingfor300.ca/sharad-gondaliya-cpa/"}, "publisher": {"@type": "Organization", "name": "Gondaliya CPA Professional Corporation"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Nil T2 filing in Canada", "item": "https://corpnilfilingfor300.ca/"}, {"@type": "ListItem", "position": 2, "name": "Guides", "item": "https://corpnilfilingfor300.ca/guides/"}, {"@type": "ListItem", "position": 3, "name": "The Complete Guide to T2 Short Eligibility", "item": "https://corpnilfilingfor300.ca/guides/t2-short-eligibility/"}]}]}</script>

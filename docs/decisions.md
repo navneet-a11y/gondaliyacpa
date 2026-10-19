@@ -2584,3 +2584,102 @@ once" and the owner as "Sharad Gondaliya writes and reviews". No answer bank has
 supplied. These ten answers, like the first ten, are drafted to the plan's shape and
 are **pending his sign-off**. Twenty of 45 questions are now live unsigned, which
 makes that sign-off the largest single item outstanding on this family.
+
+## 2026-10-19 — Family 9 batch 2: the six remaining 6(b) pillars
+
+Published as `nil_guide` items 945, 947, 949, 951, 953 and 955, completing all seven
+pillars named in 6(b). All six byte-verified against the local build with a zero-change
+probe. F9 now stands at 7 of 30, against a schedule (gate row 1217) of 10 by October 9
+and 20 more by October 30.
+
+| Guide | ID | 6(b) cluster | Entry keyword |
+|---|---|---|---|
+| `/guides/dormant-and-inactive-corporations/` | 945 | 271 | dormant corporation |
+| `/guides/catch-up-unfiled-corporate-tax-returns/` | 947 | 126 | unfiled corporate tax returns |
+| `/guides/final-t2-and-dissolution/` | 949 | 66 | final t2 before dissolution |
+| `/guides/t2-short-eligibility/` | 951 | 223 | t2 short |
+| `/guides/provincial-and-federal-annual-returns/` | 953 | 179 | ontario annual return |
+| `/guides/t183corp-signing-and-transmission/` | 955 | 69 | t183corp |
+
+Design is the pillar's `ei-*` system, and the generator slices the CSS out of the built
+pillar rather than copying it, so the seven cannot drift apart. Each guide carries the
+line 1217 gate (a visible update date and a 12-row contents block, every row anchored to
+a real section), the 7.4 three-sentence EFILE block, the 7.5 byline, Article schema per
+line 1487, and six `<details>` FAQs with no FAQPage markup.
+
+### 19th plan conflict: Appendix A's Family 9 list is unusable
+
+Appendix A lists 30 Family 9 slugs at root level with no `/guides/` base, and ten of them
+carry a 2026 token (`/2026-canadian-nil-t2-filing-guide/` and nine more). Two separate
+places in the plan body forbid exactly that:
+
+- 6(a) line 1147, notes column: "No year token in any guide URL; see the year-stamp rule
+  in 6(k)."
+- 6(k) year-stamp rule: "No Family 9 URL contains a year.
+  /guides/nil-t2-return-complete-guide/ is correct. **A guide URL with 2026 or 2027 in the
+  slug is never created.**"
+
+6(k) also names the pillar URL that Appendix A does not contain at all. So the body wins
+and Appendix A's F9 list is set aside, consistent with how the previous eighteen Appendix
+A conflicts were resolved.
+
+**Consequence, and it is the real blocker on October 30.** 6(b) gives authoritative slugs
+for seven guides and the 6(d) keyword list at line 1246 implies three more, which covers
+the ten due October 9. **The remaining twenty guides have no non-conflicting slug source
+anywhere in the plan.** Nobody can build the October 30 batch until Sharad Gondaliya
+defines those twenty topics. That is a decision, not a build task.
+
+### Three conversion paths point at URLs that do not exist
+
+6(b) names a conversion step per pillar. Three are not built, so a live substitute is
+used and the real target is recorded here:
+
+| Pillar | 6(b) conversion step | Status | Substitute used |
+|---|---|---|---|
+| t2-short-eligibility | `/tools/t2-short-eligibility-checker/` | F2, 0 of 150 tools live | `/t2-short-filing/` |
+| catch-up-unfiled... | `/pricing/cost-to-file-six-unfiled-nil-years/` | F8, not built | `/catch-up-nil-t2-filing/` |
+| t183corp-signing... | `/security/` | F15, not built | `/sharad-gondaliya-cpa/` |
+| final-t2-and-dissolution | `/case-studies/dormant-holding-corporation-cleared-for-dissolution/` | F13, not built | `/final-t2-before-dissolution/` |
+
+Each substitute should be swapped for the real target once it exists.
+
+### The 6(g) inbound minimum of 12 cannot yet be met, and that is structural
+
+6(g) line 1528 sets Family 9 at a minimum of 12 inbound links. The new guides have the
+hub plus five sibling guides plus the pillar, which is six or seven. The rest is supposed
+to come from the cluster families 6(b) assigns to each pillar: F1 (0 of 215 live), F4 (12
+of 336), F12, F13, F14. Those families barely exist, so the shortfall is not a defect in
+these six pages.
+
+Note that F5 is **not** a cluster family of any of these six. 6(b) assigns F5 only to the
+main pillar, which the twenty answer pages already link up to. So the gap closes as F1
+and F4 are built, not by editing the answer pages.
+
+The twelve Ontario F4 pages could legitimately link up now (6(b): "All 56 dormant and
+no-activity place URLs link up"), which would add one inbound each to the dormant,
+catch-up, final and t2-short guides. Not done in this pass; flagged for Navneet.
+
+### 7.5 rule 4 applied in the opposite direction on the guides hub
+
+Page 904 went 6,384 to 8,343 bytes with six new cards, and **the stamp was advanced** to
+October 19, with the schema `dateModified` matched to the day. This is the reverse of the
+Ontario hub decision on the same day, and deliberately so: rule 4 exempts "a link-only
+edit", but each card carries a new descriptive sentence and the live child count moved
+from 1 to 7. Body sentences and a figure changed, so the stamp moves. `cnf_child_count`
+went 0 to 7; the visible count uses the `cnf_child_count` shortcode and needs no edit.
+
+`build/f16/guides-hub.html` was synced to live and matches at 8,343 bytes.
+
+### Gate note: the duplication check was wrong on the first run
+
+A cross-guide check I added flagged four paragraphs as repeated on three or more guides.
+All four are blocks the plan requires **verbatim** on every Family 9 pillar: the 7.4 EFILE
+block, the hard-rule-3 late qualification, the 7.6 nil-status rule, and the shared CTA
+copy. The check now exempts those four and still polices topical body prose. It also
+caught one real problem, a bare "Backdating" table label on the T183CORP guide, which 7.6
+bans outside the required "never backdated" form; the label became "Date integrity".
+
+### Authorship still pending
+
+Line 1217 owner is "Sharad Gondaliya reviews, Navneet publishes". These six are drafted
+to the plan's shape and are **pending his sign-off**, alongside the twenty F5 answers.

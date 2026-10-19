@@ -1,0 +1,198 @@
+<style>
+.ei-wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+.ei-btn-blue{background:rgba(32,135,201,1);color:#fff !important;padding:13px 26px;border-radius:6px;font-weight:700;font-size:0.95em;text-transform:uppercase;text-decoration:none !important;display:inline-block;line-height:1.4;text-align:center;min-width:120px}
+.ei-section{padding:26px 20px}
+.ei-section-alt{background:#f7f9fc;padding:26px 20px}
+.ei-art .ei-h2{font-weight:800;color:#1a2340;margin:0 0 10px;font-size:1.45em;line-height:1.3}
+.ei-art > *:last-child{margin-bottom:0}
+.ei-art p{color:#4a5568;line-height:1.8}
+.ei-art a{color:rgba(32,135,201,1)}
+.ei-art ul{color:#4a5568;line-height:1.8}
+.ei-info{background:#f0f7fd;border-left:4px solid rgba(32,135,201,1);border-radius:0 8px 8px 0;padding:14px 18px;margin:18px 0}
+.ei-info p{margin:0;color:#1a2340;line-height:1.7}
+.ei-warn{background:#fffbf0;border-left:4px solid #f6ad1a;border-radius:0 8px 8px 0;padding:14px 18px;margin:18px 0}
+.ei-warn p{margin:0;color:#7c5800;line-height:1.7}
+.ei-danger{background:#fff5f5;border-left:4px solid #e53e3e;border-radius:0 8px 8px 0;padding:14px 18px;margin:18px 0}
+.ei-danger p{margin:0;color:#742a2a;line-height:1.7}
+.ei-hero{background:linear-gradient(135deg,#0f1624 0%,#1a2340 55%,#1e3a6e 100%);padding:40px 20px}
+.ei-hero-inner{max-width:860px;margin:0 auto;text-align:center}
+.ei-hero-eyebrow{display:inline-block;background:rgba(32,135,201,0.15);border:1px solid rgba(32,135,201,0.4);border-radius:50px;padding:5px 16px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:rgba(32,135,201,1);margin-bottom:16px;font-size:.8em}
+.ei-hero h1{color:#fff;font-weight:800;line-height:1.2;margin:0 0 14px;font-size:2.1em}
+.ei-hero h1 span{color:#f6ad1a}
+.ei-hero-sub{color:rgba(255,255,255,0.78);max-width:720px;margin:0 auto 10px;line-height:1.75}
+.ei-hero-by{color:rgba(255,255,255,0.6);max-width:720px;margin:0 auto 22px;line-height:1.6;font-size:.86em}
+.ei-hero-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.ei-tbl{width:100%;border-collapse:collapse;margin:18px 0;border:1px solid #d1d5db}
+.ei-tbl th{background:#1a2340;color:#fff;font-weight:700;padding:12px 14px;text-align:left;border:1px solid #374151}
+.ei-tbl td{padding:10px 14px;border:1px solid #d1d5db;color:#2d3748;line-height:1.5}
+.ei-tbl tr:nth-child(even){background:#f7f9fc}
+.ei-tbl tr:hover{background:#edf2f7}
+.ei-updated{color:#718096;font-size:.9em;margin:0 0 18px}
+.ei-toc{background:linear-gradient(180deg,#ffffff,#f7f9fc);border:1px solid #e2e8f0;border-radius:12px;padding:18px 22px;margin:0 0 10px;box-shadow:0 1px 2px rgba(26,35,64,.05)}
+.ei-toc h2{font-size:.76em;font-weight:800;color:#8795ab;margin:0 0 10px;text-transform:uppercase;letter-spacing:1.3px}
+.ei-toc ol{margin:0;padding:0;list-style:none;counter-reset:toc;columns:2;column-gap:30px}
+.ei-toc li{break-inside:avoid;counter-increment:toc;margin:0}
+.ei-toc a{display:flex;gap:10px;align-items:baseline;padding:6px 9px;border-radius:6px;color:#1a2340;text-decoration:none;line-height:1.45}
+.ei-toc a::before{content:counter(toc);color:rgba(32,135,201,1);font-weight:800;font-size:.82em;min-width:15px;flex-shrink:0}
+.ei-toc a:hover{background:#eaf3fb;color:rgba(32,135,201,1);text-decoration:none}
+.ei-cta-inline{background:#1a2340;border-radius:10px;padding:24px 28px;margin:28px 0;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px}
+.ei-cta-inline h3{color:#fff;margin:0 0 4px;font-weight:700}
+.ei-cta-inline p{color:rgba(255,255,255,0.65);margin:0}
+.ei-cta-inline a,.ei-cta-inline a:visited,.ei-cta-inline a:hover,.ei-cta-bottom a,.ei-cta-bottom a:visited,.ei-cta-bottom a:hover,.ei-hero-btns a,.ei-hero-btns a:visited,.ei-hero-btns a:hover{color:#fff !important;text-decoration:none !important}
+.ei-faq{max-width:900px;margin:16px auto 0}
+.ei-faq details{border:1px solid #e2e8f0;border-radius:8px;margin-bottom:9px;background:#fff}
+.ei-faq summary{padding:14px 18px;font-weight:600;color:#1a2340;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:14px;line-height:1.5}
+.ei-faq summary::-webkit-details-marker{display:none}
+.ei-faq summary::after{content:'+';color:rgba(32,135,201,1);font-weight:400;font-size:1.4em;line-height:1;flex-shrink:0;transition:transform .15s ease}
+.ei-faq details[open] summary{color:rgba(32,135,201,1)}
+.ei-faq details[open] summary::after{transform:rotate(45deg)}
+.ei-faq .ei-faq-a{padding:0 18px 15px}
+.ei-faq .ei-faq-a p{margin:0;color:#4a5568;line-height:1.75}
+.ei-art h3{font-weight:700;color:#1a2340;margin:26px 0 8px;font-size:1.15em}
+.ei-qlist{max-width:900px;margin:12px auto 0;padding:0;list-style:none}
+.ei-qlist li{border:1px solid #e2e8f0;border-radius:8px;margin-bottom:10px;background:#fff}
+.ei-qlist a{display:block;padding:16px 20px;font-weight:600;color:#1a2340 !important;text-decoration:none !important}
+.ei-qlist a:hover{background:#f7f9fc;color:rgba(32,135,201,1) !important}
+.ei-cta-bottom{background:linear-gradient(135deg,#0f1624,#1a2340);padding:40px 20px;text-align:center}
+.ei-cta-bottom h2{color:#fff;font-weight:800;margin:0 0 10px;font-size:1.5em}
+.ei-cta-bottom p{color:rgba(255,255,255,0.72);max-width:600px;margin:0 auto 22px;line-height:1.75}
+.entry-header{display:none!important}
+.ast-article-single,.ast-article-single .entry-content{margin-top:0;padding-top:0}
+@media(max-width:900px){.ei-cta-inline{flex-direction:column;text-align:center}.ei-hero h1{font-size:1.6em}.ei-art .ei-h2{font-size:1.3em}.ei-toc ol{columns:1}}
+</style>
+<div class="ei-hero"><div class="ei-hero-inner"><span class="ei-hero-eyebrow">T183CORP Guide</span><h1>The Complete Guide to <span>Form T183CORP</span> Signing and Transmission</h1><p class="ei-hero-sub">What Form T183CORP authorises, who may sign it, when it must be signed, how it is e-signed, how long it is kept, and what EFILE transmission involves.</p><p class="ei-hero-by">Written and reviewed by Sharad Gondaliya, CPA (Ontario), CPA Ontario Membership 61040184.</p><div class="ei-hero-btns"><a class="ei-btn-blue" href="https://corpnilfilingfor300.ca/form/">Start Nil T2 Filing NOW</a><a class="ei-btn-blue" style="background:transparent;border:2px solid rgba(255,255,255,0.4)" href="https://corpnilfilingfor300.ca/sharad-gondaliya-cpa/">Sharad Gondaliya, CPA</a></div></div></div>
+<div class="ei-section"><div class="ei-wrap ei-art">
+<p class="ei-updated">Last reviewed: October 19, 2026 &nbsp;&middot;&nbsp; <a href="https://corpnilfilingfor300.ca/guides/">All nil T2 filing guides</a></p>
+<div class="ei-toc"><h2>On this page</h2>
+<ol>
+<li><a href="#what-it-is">What Form T183CORP Is</a></li>
+<li><a href="#who-signs">Who May Sign It</a></li>
+<li><a href="#when">When It Must Be Signed</a></li>
+<li><a href="#timestamp">The Date and Timestamp</a></li>
+<li><a href="#e-signing">How It May Be E-Signed</a></li>
+<li><a href="#retention">Retention for Six Years</a></li>
+<li><a href="#not-sent">It Is Not Sent to the Agency</a></li>
+<li><a href="#efile">What EFILE Transmission Involves</a></li>
+<li><a href="#not-authorization">T183CORP Is Not Representative Authorization</a></li>
+<li><a href="#mandatory">Mandatory Electronic Filing</a></li>
+<li><a href="#rejected">If a Transmission Is Rejected</a></li>
+<li><a href="#fee">What the Fee Covers</a></li>
+</ol></div>
+<div class="ei-info"><p>Gondaliya CPA Professional Corporation is a registered EFILE electronic filer. Returns are prepared and transmitted in Canada. Credentials are never shared and never used offshore.</p></div>
+</div></div>
+<div class="ei-section-alt" id="what-it-is"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">What Form T183CORP Is</h2>
+<p>Form T183CORP is the authorisation that lets a registered EFILE electronic filer transmit a corporate return on behalf of a corporation. It records that the corporation has seen the return and agreed that it may be sent.</p>
+<p>It is not the return and it is not a tax form in its own right. It is the consent that stands behind the transmission.</p>
+</div></div>
+<div class="ei-section" id="who-signs"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">Who May Sign It</h2>
+<p>An authorized signing officer of the corporation signs it. That is a director or an officer with authority to bind the corporation, not an employee, not a bookkeeper and not the accountant preparing the return.</p>
+<div class="ei-info"><p>On a single-director corporation this is almost always the sole director. On a corporation with several directors, any one of them with signing authority may sign.</p></div>
+</div></div>
+<div class="ei-section-alt" id="when"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">When It Must Be Signed</h2>
+<p>Before the return is transmitted, never after. The sequence is fixed: the return is prepared, the signing officer reviews it, the form is signed, and only then is the return sent.</p>
+<p>A form signed after transmission does not authorise what has already happened.</p>
+</div></div>
+<div class="ei-section" id="timestamp"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">The Date and Timestamp</h2>
+<table class="ei-tbl"><thead><tr><th scope="col">Element</th><th scope="col">Requirement</th></tr></thead><tbody>
+<tr><td>Date</td><td>The actual date of signature</td></tr>
+<tr><td>Time</td><td>An HH:MM:SS timestamp</td></tr>
+<tr><td>Date integrity</td><td>The date is never backdated</td></tr>
+<tr><td>Order</td><td>The timestamp precedes the transmission</td></tr>
+</tbody></table>
+<p>The timestamp exists so the order of events can be proved. A form whose timestamp falls after the transmission it authorises is a record of a process run in the wrong order.</p>
+</div></div>
+<div class="ei-wrap"><div class="ei-cta-inline"><div><h3>Nil T2 Filing, $300.00 plus HST per tax year</h3><p>One price for every year and every province. CPA reviewed and transmitted electronically.</p></div><a class="ei-btn-blue" href="https://corpnilfilingfor300.ca/form/">Start Nil T2 Filing NOW</a></div></div>
+<div class="ei-section-alt" id="e-signing"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">How It May Be E-Signed</h2>
+<p>Form T183CORP may be e-signed. We use an access-controlled secure portal with a single-use link, so the form is opened and signed by the person it was sent to rather than by whoever receives a forwarded email.</p>
+<p>A scanned wet signature is equally valid. The portal exists because it is faster and because it produces the timestamp automatically.</p>
+</div></div>
+<div class="ei-section" id="retention"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">Retention for Six Years</h2>
+<p>The signed form is kept by the firm for six years. The corporation does not have to keep its own copy for the filing to stand, though keeping one is sensible.</p>
+<p>Six years is the retention period that runs alongside the corporate books and records the Canada Revenue Agency expects a corporation to hold.</p>
+</div></div>
+<div class="ei-section-alt" id="not-sent"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">It Is Not Sent to the Agency</h2>
+<p>Form T183CORP is not transmitted with the return and is not filed anywhere. It is held by the electronic filer and produced only if the Canada Revenue Agency asks for it.</p>
+<div class="ei-warn"><p>Because it is never sent, nothing in the Agency&rsquo;s records shows whether a valid form exists. The discipline around signing it properly rests entirely with the filer.</p></div>
+</div></div>
+<div class="ei-section" id="efile"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">What EFILE Transmission Involves</h2>
+<p>Gondaliya CPA Professional Corporation is a registered EFILE electronic filer. Returns are prepared and transmitted in Canada. Credentials are never shared and never used offshore.</p>
+<p>Transmission sends the completed return to the Canada Revenue Agency electronically. The Agency responds with either an acceptance or a rejection, and the CRA confirmation is emailed to the corporation within 3 business days.</p>
+</div></div>
+<div class="ei-section-alt" id="not-authorization"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">T183CORP Is Not Representative Authorization</h2>
+<p>Two separate things are often taken for one. Form T183CORP authorises a single transmission. Representative authorization gives an adviser ongoing access to a corporation's account with the Canada Revenue Agency.</p>
+<table class="ei-tbl"><thead><tr><th scope="col"></th><th scope="col">Form T183CORP</th><th scope="col">Representative authorization</th></tr></thead><tbody>
+<tr><td>What it permits</td><td>One transmission of one return</td><td>Ongoing access to the account</td></tr>
+<tr><td>Required to file</td><td>Yes</td><td>No</td></tr>
+<tr><td>Sent to the Agency</td><td>No, unless requested</td><td>Yes</td></tr>
+<tr><td>When it matters</td><td>Before transmission</td><td>After filing</td></tr>
+</tbody></table>
+<p>An EFILE number plus a signed T183CORP are enough to transmit. Representative authorization is optional and post-filing only.</p>
+</div></div>
+<div class="ei-section" id="mandatory"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">Mandatory Electronic Filing</h2>
+<p>For tax years starting after 2023, e-filing is mandatory for virtually all corporations. A paper T2 draws a $1,000.00 penalty plus a $100.00 per-return preparer penalty.</p>
+<div class="ei-danger"><p>A true nil return carries no percentage late-filing penalty, because that penalty is a percentage of tax owing and the corporation owes $0.00. The unfiled year still stays open forever, invites a demand to file and an arbitrary assessment, blocks a clearance certificate and dissolution, and costs a non-resident-owned corporation $25.00 per day up to $2,500.00.</p></div>
+<p>Because transmission is now the normal route rather than the optional one, Form T183CORP is part of virtually every corporate filing.</p>
+</div></div>
+<div class="ei-section-alt" id="rejected"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">If a Transmission Is Rejected</h2>
+<p>The Canada Revenue Agency rejects a transmission where the return does not match its records. The most common cause is a fiscal year-end that differs from the one the Agency holds from the incorporation record.</p>
+<div class="ei-info"><p>One corrected transmission is included in the fee where the Agency rejects the first one. A rejection is not a failed filing; it is a filing that has not landed yet.</p></div>
+</div></div>
+<div class="ei-section" id="fee"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">What the Fee Covers</h2>
+<p>The fee is $300.00 plus HST per tax year, covering one nil T2 return for one corporation for one tax year:</p>
+<table class="ei-tbl"><thead><tr><th scope="col">Included</th><th scope="col">Detail</th></tr></thead><tbody>
+<tr><td>The T2 return</td><td>Including the T2 Short where the corporation qualifies</td></tr>
+<tr><td>GIFI Schedules 100, 125 and 141</td><td>Where they are required</td></tr>
+<tr><td>Schedule 24</td><td>On a first return</td></tr>
+<tr><td>Schedule 50</td><td>For every shareholder at 10% or more</td></tr>
+<tr><td>Schedule 8 and loss continuity</td><td>Recorded</td></tr>
+<tr><td>Form T183CORP package</td><td>With single-use secure e-signing</td></tr>
+<tr><td>CPA review</td><td>Before transmission</td></tr>
+<tr><td>Electronic transmission</td><td>By a registered EFILE electronic filer</td></tr>
+<tr><td>One corrected transmission</td><td>If the Agency rejects the first one</td></tr>
+<tr><td>CRA confirmation</td><td>Emailed within 3 business days</td></tr>
+</tbody></table>
+<p>See the full <a href="https://corpnilfilingfor300.ca/pricing/nil-t2-filing-cost/">nil T2 filing cost</a>.</p>
+</div></div>
+<div class="ei-section-alt"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">Frequently Asked Questions</h2>
+<div class="ei-faq">
+<details><summary>Who Is an Authorized Signing Officer?</summary><div class="ei-faq-a"><p>A director or an officer with authority to bind the corporation. Not an employee, not a bookkeeper and not the accountant who prepared the return.</p></div></details>
+<details><summary>Can Form T183CORP Be Signed Electronically?</summary><div class="ei-faq-a"><p>Yes, through an access-controlled secure portal with a single-use link. A scanned wet signature is equally valid.</p></div></details>
+<details><summary>Does the CRA Receive Form T183CORP?</summary><div class="ei-faq-a"><p>No, not unless it asks for it. The form is held by the electronic filer for six years and is never transmitted with the return.</p></div></details>
+<details><summary>What Happens if the Form Is Signed After Transmission?</summary><div class="ei-faq-a"><p>The sequence is fixed: the form is signed before the return is sent, never after. A form signed afterwards does not authorise what has already happened, and the date is never backdated to make it appear that it did.</p></div></details>
+<details><summary>Do I Need to Give You Representative Access to My CRA Account?</summary><div class="ei-faq-a"><p>No. An EFILE number plus a signed T183CORP are enough to transmit. Representative authorization is optional and post-filing only.</p></div></details>
+<details><summary>How Many Forms Are Needed for a Multi-Year Catch-Up?</summary><div class="ei-faq-a"><p>One for each tax year, because each year is a separate return with its own transmission. Five outstanding years means five signatures.</p></div></details>
+</div>
+<h3>Questions Answered in Full</h3>
+<ul class="ei-qlist">
+<li><a href="https://corpnilfilingfor300.ca/answers/can-i-file-a-nil-t2-myself-without-an-accountant/">Can I File a Nil T2 Myself Without an Accountant?</a></li>
+<li><a href="https://corpnilfilingfor300.ca/answers/do-i-need-a-business-number-to-file-a-nil-t2/">Do I Need a Business Number to File a Nil T2?</a></li>
+<li><a href="https://corpnilfilingfor300.ca/answers/do-i-need-financial-statements-for-a-nil-t2-return/">Do I Need Financial Statements for a Nil T2 Return?</a></li>
+<li><a href="https://corpnilfilingfor300.ca/answers/can-i-file-five-years-of-nil-t2-returns-at-once/">Can I File Five Years of Nil T2 Returns at Once?</a></li>
+<li><a href="https://corpnilfilingfor300.ca/answers/do-i-need-to-file-a-nil-t2-if-i-never-started-operating/">Do I Need to File a Nil T2 if I Never Started Operating?</a></li>
+<li><a href="https://corpnilfilingfor300.ca/answers/what-happens-if-i-dont-file-a-nil-t2/">What Happens if I Don't File a Nil T2?</a></li>
+</ul>
+<h3>The Other Nil T2 Filing Guides</h3>
+<ul class="ei-qlist">
+<li><a href="https://corpnilfilingfor300.ca/guides/nil-t2-return-complete-guide/">The Complete Guide to the Nil T2 Return</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/dormant-and-inactive-corporations/">The Complete Guide to Dormant and Inactive Corporations</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/catch-up-unfiled-corporate-tax-returns/">The Complete Guide to Catching Up on Unfiled Corporate Tax Returns</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/final-t2-and-dissolution/">The Complete Guide to the Final T2 and Dissolution</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/t2-short-eligibility/">The Complete Guide to T2 Short Eligibility</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/provincial-and-federal-annual-returns/">The Complete Guide to Provincial and Federal Annual Returns</a></li>
+</ul>
+</div></div>
+<div class="ei-cta-bottom"><div class="ei-wrap"><h2>Start Your Nil T2 Filing</h2><p>Type your corporation name, pick your unfiled years, pay, and sign Form T183CORP on a secure screen. Your CRA confirmation is emailed within 3 business days.</p><a class="ei-btn-blue" href="https://corpnilfilingfor300.ca/form/">Start Nil T2 Filing NOW</a></div></div>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Article", "@id": "https://corpnilfilingfor300.ca/guides/t183corp-signing-and-transmission/#article", "headline": "The Complete Guide to Form T183CORP Signing and Transmission", "name": "Form T183CORP | Signing and Transmission Guide", "description": "What Form T183CORP authorises, who may sign it, when it must be signed, how it is e-signed, how long it is kept, and what EFILE transmission involves.", "inLanguage": "en-CA", "datePublished": "2026-10-19", "dateModified": "2026-10-19", "mainEntityOfPage": "https://corpnilfilingfor300.ca/guides/t183corp-signing-and-transmission/", "author": {"@type": "Person", "name": "Sharad Gondaliya", "honorificSuffix": "CPA", "url": "https://corpnilfilingfor300.ca/sharad-gondaliya-cpa/"}, "publisher": {"@type": "Organization", "name": "Gondaliya CPA Professional Corporation"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Nil T2 filing in Canada", "item": "https://corpnilfilingfor300.ca/"}, {"@type": "ListItem", "position": 2, "name": "Guides", "item": "https://corpnilfilingfor300.ca/guides/"}, {"@type": "ListItem", "position": 3, "name": "The Complete Guide to Form T183CORP Signing and Transmission", "item": "https://corpnilfilingfor300.ca/guides/t183corp-signing-and-transmission/"}]}]}</script>
