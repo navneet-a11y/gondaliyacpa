@@ -1,0 +1,149 @@
+RANK MATH FIELDS -- 28 URLs
+Title target 60 chars, description target 155. T = title length, D = description length.
+
+URL   /guides/nil-t2-return-complete-guide/
+T56   Nil T2 Return | Complete Guide for Canadian Corporations
+D125  Who must file, what a nil return is, which schedules are required, how T183CORP is signed, and what happens to unfiled years.
+KW    nil t2 return
+
+URL   /guides/dormant-and-inactive-corporations/
+T55   Dormant Corporations | Complete Filing Guide for Canada
+D142  What dormant means to the CRA, which returns a dormant corporation still files, what keeps it compliant, and when to wind it up. CPA reviewed.
+KW    dormant corporation
+
+URL   /guides/catch-up-unfiled-corporate-tax-returns/
+T57   Unfiled Corporate Tax Returns | Catch-Up Guide for Canada
+D148  How many years can still be filed, the order to file them in, what a demand to file means, and what the catch-up costs at $300.00 plus HST per year.
+KW    unfiled corporate tax returns
+
+URL   /guides/final-t2-and-dissolution/
+T58   Final T2 and Dissolution | Guide for Canadian Corporations
+T50   Final T2 and Dissolution | Complete Canadian Guide   (alternative)
+D140  When the final T2 is due, what period it covers, why a clearance certificate matters, and what must be filed before a corporation can close.
+KW    final t2 before dissolution
+
+URL   /guides/t2-short-eligibility/
+T54   T2 Short | Eligibility Guide for Canadian Corporations
+D131  The eight conditions for the two-page T2 Short, what disqualifies a corporation, and which schedules are still required either way.
+KW    t2 short
+
+URL   /guides/provincial-and-federal-annual-returns/
+T54   Provincial and Federal Annual Returns | Canadian Guide
+T48   Annual Returns | Ontario, Federal, AT1 and CO-17   (alternative)
+D138  The Ontario annual return, the $12.00 Corporations Canada annual return, Alberta AT1 and Quebec CO-17, and why the T2 covers none of them.
+KW    ontario annual return
+
+URL   /guides/t183corp-signing-and-transmission/
+T46   Form T183CORP | Signing and Transmission Guide
+D133  What Form T183CORP authorises, who may sign it, when and how it is signed, how long it is kept, and what EFILE transmission involves.
+KW    t183corp
+
+URL   /guides/
+T46   Nil T2 Filing Guides for Canadian Corporations
+D139  In-depth guides to filing a nil T2 corporate return in Canada, written and reviewed by a CPA Ontario member. $300.00 plus HST per tax year.
+KW    nil t2 filing guide
+
+URL   /answers/do-i-need-to-file-a-t2-for-the-year-my-corporation-was-dissolved/
+T65   Do I Need to File a T2 for the Year My Corporation Was Dissolved?  <-- over 60, tightened option below
+T53   Do I File a T2 for the Year My Corporation Dissolved?   (alternative)
+D150  Yes. A final T2 covers the fiscal year up to the dissolution date and is due within six months of dissolution. Filed at $300.00 plus HST per tax year.
+KW    t2 for the year my corporation was dissolved
+
+URL   /answers/do-i-need-a-business-number-to-file-a-nil-t2/
+T45   Do I Need a Business Number to File a Nil T2?
+D151  Yes. The return is filed against the corporation's nine-digit business number and its RC corporation income tax account. $300.00 plus HST per tax year.
+KW    business number to file a nil t2
+
+URL   /answers/do-i-need-to-file-a-nil-t2-if-i-never-started-operating/
+T56   Do I Need to File a Nil T2 if I Never Started Operating?
+D140  Yes. The first tax year begins on the incorporation date, not the day trading starts, so a nil return is due. $300.00 plus HST per tax year.
+KW    nil t2 never started operating
+
+URL   /answers/do-i-need-to-file-a-t2-every-year-if-my-corporation-is-inactive/
+T64   Do I Need to File a T2 Every Year if My Corporation Is Inactive?  <-- over 60, tightened option below
+T56   Do I File a T2 Every Year if My Corporation Is Inactive?   (alternative)
+D131  Yes, every year. Inactive is a description, not a filing status, so the T2 is due until dissolution. $300.00 plus HST per tax year.
+KW    t2 every year corporation inactive
+
+URL   /answers/can-i-file-five-years-of-nil-t2-returns-at-once/
+T48   Can I File Five Years of Nil T2 Returns at Once?
+D147  Yes. Five missed year-ends mean five separate returns, transmitted in one pass, oldest first. $300.00 plus HST per tax year, so $1,500.00 for five.
+KW    file five years of nil t2 returns
+
+URL   /answers/can-i-file-a-nil-t2-myself-without-an-accountant/
+T49   Can I File a Nil T2 Myself Without an Accountant?
+D137  Yes. Nothing requires a corporation to use an accountant. What a self-filed T2 still needs, and what CPA review at $300.00 plus HST adds.
+KW    file a nil t2 without an accountant
+
+URL   /answers/can-i-dissolve-my-corporation-with-unfiled-t2-returns/
+T54   Can I Dissolve My Corporation With Unfiled T2 Returns?
+D132  Not cleanly. A clearance certificate cannot be issued until every return is filed, and the unfiled years stay due after dissolution.
+KW    dissolve corporation with unfiled t2 returns
+
+URL   /answers/can-i-file-a-nil-t2-late-without-a-penalty/
+T56   Can I File a Nil T2 Late Without a Penalty? What Applies
+D154  What actually applies when a nil T2 is filed late: the open year, the demand to file, the blocked clearance certificate and the non-resident daily amount.
+KW    file a nil t2 late
+
+URL   /answers/can-i-file-nil-t2-returns-for-a-corporation-i-forgot-about/
+T59   Can I File Nil T2 Returns for a Corporation I Forgot About?
+T54   Can I File Nil T2 Returns for a Forgotten Corporation?   (alternative)
+D145  Yes. Every year since incorporation can still be filed. Confirm the registry status and the fiscal year-end first. $300.00 plus HST per tax year.
+KW    nil t2 for a forgotten corporation
+
+URL   /answers/can-i-still-file-a-t2-after-my-corporation-was-dissolved/
+T57   Can I Still File a T2 After My Corporation Was Dissolved?
+D148  Yes. The final return is due within six months of the dissolution date, and earlier unfiled years can still be filed. $300.00 plus HST per tax year.
+KW    file a t2 after dissolution
+
+URL   /answers/what-happens-if-i-dont-file-a-nil-t2/
+T38   What Happens if I Don't File a Nil T2?
+D138  The tax year stays open and the CRA can demand the return and assess the corporation arbitrarily. What follows, and how to close the year.
+KW    what happens if i dont file a nil t2
+
+URL   /answers/what-happens-if-i-dont-file-my-t2-for-five-years/
+T50   What Happens if I Don't File My T2 for Five Years?
+D135  All five returns stay outstanding and each one is filed separately. Five missed year-ends, five returns, $300.00 plus HST per tax year.
+KW    what happens if i dont file my t2 for five years
+
+URL   /answers/what-happens-if-i-dont-file-a-t2-before-dissolving-my-corporation/
+T52   What Happens if I Don't File a T2 Before Dissolving?
+D133  Dissolution can be held up and the outstanding years remain due. A clearance certificate cannot be issued while any tax year is open.
+KW    file t2 before dissolving corporation
+
+URL   /answers/what-happens-if-i-dont-report-a-dormant-corporation-to-cra/
+T53   What Happens if I Don't Report a Dormant Corporation?
+D135  There is no dormancy filing, so the obligation is the annual T2. A dormant corporation files every year until it is formally dissolved.
+KW    report dormant corporation to cra
+
+URL   /answers/what-happens-if-i-dont-respond-to-a-cra-demand-to-file-a-t2/
+T51   What Happens if I Ignore a CRA Demand to File a T2?
+D146  The CRA can assess the corporation arbitrarily without waiting for the return. Filing the real return replaces that figure with the corporation's.
+KW    cra demand to file a t2
+
+URL   /answers/what-happens-if-i-dont-file-a-nil-t2-for-a-numbered-company/
+T61   What Happens if I Don't File a Nil T2 for a Numbered Company?  <-- over 60, tightened option below
+T48   Numbered Company: What if I Don't File a Nil T2?   (alternative)
+D148  Nothing changes because the corporation has a number instead of a name. A numbered company files a T2 like any other, $300.00 plus HST per tax year.
+KW    nil t2 for a numbered company
+
+URL   /answers/what-happens-if-i-dont-file-t2-returns-after-my-corporation-is-dissolved/
+T58   What Happens if I Don't File T2 Returns After Dissolution?
+D140  The final return is still required and the years before dissolution stay outstanding. Dissolving does not cancel the returns already missed.
+KW    t2 returns after corporation dissolved
+
+URL   /answers/do-i-need-to-file-a-t2-if-my-corporation-had-no-activity/
+T57   Do I Need to File a T2 if My Corporation Had No Activity?
+D143  Yes. Every resident corporation files a T2 within six months of its year-end, every year, until it is dissolved. $300.00 plus HST per tax year.
+KW    file t2 corporation no activity
+
+URL   /answers/do-i-need-to-file-a-nil-t2-if-my-corporation-has-no-bank-account/
+T65   Do I Need to File a Nil T2 if My Corporation Has No Bank Account?  <-- over 60, tightened option below
+T50   Do I File a Nil T2 With No Corporate Bank Account?   (alternative)
+D135  Yes. The T2 obligation follows the corporation's existence, not its banking. A return is due within six months of each fiscal year-end.
+KW    nil t2 no bank account
+
+URL   /answers/do-i-need-financial-statements-for-a-nil-t2-return/
+T51   Do I Need Financial Statements for a Nil T2 Return?
+D143  No audited statements are needed, but the return still carries GIFI schedules showing zero. What a nil year reports, and when GIFI is required.
+KW    financial statements for a nil t2
