@@ -163,3 +163,7 @@
 - Meta description: We prepare and file your mortgage corporation for $35, HST included. Government fees separate. A CPA checks the FSRA licensing position first.
 
 > 2026-10-19: rank_math_title and rank_math_description are now writable through the REST API (snippet registered on opencorporationfor35.ca). Meta for pages 10353, 10358, 10363, 10368, 10376, 10381, 10389, 10392, 10395, 10398 and 10401 was written by connector, not pasted by hand.
+
+## /incorporate-by-province/ (page 10410, draft created 2026-10-19, meta set by connector)
+- Meta title: Incorporate by Province in Canada | Open Corporation for $35
+- Meta description: Compare incorporating federally and in every province: government fees, name steps, annual filings and director residency. Our fee is $35, HST included.
