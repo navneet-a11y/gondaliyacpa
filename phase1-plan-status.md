@@ -274,3 +274,8 @@ Checked against the live WordPress site on 14 October 2026, updated 16 October 2
 | /fr/declaration-de-mise-a-jour-annuelle/ | P3 | Not built |  |
 | /fr/societe-par-actions-ou-entreprise-individuelle/ | P3 | Not built |  |
 | /fr/incorporation-federale-ou-provinciale/ | P3 | Not built |  |
+
+## 2026-10-19: WealthBamboo removed site-wide
+- Removed "The platform is operated by WealthBamboo Inc., a federal corporation." and schema legalName "WealthBamboo Inc." from 34 published pages (post_content and Elementor data) and 6 drafts (9948, 9929, 9915, 9824, 9818, 9811).
+- Non-standard edit: 9854 fee table cell "Open Corporation for $35, operated by WealthBamboo Inc." became "Open Corporation for $35".
+- Site search for "WealthBamboo" returns 0. Remaining for the owner: trashed page 9338 (empty trash), and Rank Math Knowledge Graph / theme options, which the connector cannot read.
