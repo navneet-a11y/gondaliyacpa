@@ -2434,3 +2434,56 @@ guide and at thirty. Worth remembering for the other four hubs: any count label 
 puts the number before a plural noun breaks at one.
 
 Live and build match at 6,384 bytes, and the F16 gate passes.
+
+## 2026-10-19 — Ontario Family 4 completed: the remaining 6 of 12
+
+Published as `nil_service_place`, IDs 912, 914, 915, 916, 917, 918, each
+byte-identical to `build/f4/` at 9453, 9184, 8907, 9270, 9077 and 9936. Ontario now
+has all 12 of its service slugs. Family 4 overall stands at 12 of 336.
+
+Template copied from page 715 verbatim, so all twelve Ontario pages share one
+structure, CSS and schema shape.
+
+### Byline brought up to 7.5 rule 3
+
+The six already live carry "By Sharad Gondaliya, CPA". Rule 3 requires the full form —
+"Written and reviewed by Sharad Gondaliya, CPA (Ontario), CPA Ontario Membership
+61040184." — on "every page that states a filing rule, a penalty figure, a schedule
+requirement or a T183CORP rule", and all twelve do all four. The six new pages use the
+compliant form.
+
+**The six originals still carry the short byline and should be updated**, otherwise the
+set is internally inconsistent and six of them under-comply. Not done in this pass.
+
+### The place data row is still two fields short
+
+Line 1212 requires the row to carry corporation count, incorporation-date median,
+registry name and filing route. The six new pages carry the same four rows the originals
+do: T2 returns assessed (1,108,730), first-time T2 filers in 2023 (87,990 of 199,800),
+registry name, and filing route.
+
+**Corporation count and incorporation-date median remain absent**, because they come
+from the Corporations Canada open-data bulk file, which cannot be fetched from this
+session. `cnf_unique_data_block_json` on page 512 has both as null, marked "(pending)".
+The numbers were not invented to fill the row. All twelve Ontario pages, and the other
+144 jurisdiction URLs when they are built, need that one data pull.
+
+### 17th conflict: the non-resident-owned slug contradicts the service scope
+
+`/nil-t2-filing-for-non-resident-owned-corporations-<place>/` is one of the 12 fixed
+service slugs, so the plan expects 13 of these pages. But a corporation controlled by
+non-residents is by definition not a Canadian-controlled private corporation, and the
+scope text already live on the Ontario pages routes any non-CCPC to gondaliyacpa.ca at
+$350.00 plus HST per year.
+
+So the plan asks for a service page for a case the service does not take. Handled by
+writing the page as the explanation and the hand-off: it states the T2 obligation, the
+$25.00-per-day exposure that makes it urgent, and then routes the reader. That is useful
+rather than contradictory, but Sharad Gondaliya should confirm it is what he intended
+before the same page is written for twelve more jurisdictions.
+
+### Scheduling note
+
+Family 4 is not due this week. The plan puts it at 150 URLs on November 6 and 186 on
+November 13. These six were built at Navneet's request to complete Ontario while the
+data for the other jurisdictions is still outstanding.
