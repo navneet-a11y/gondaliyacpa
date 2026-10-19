@@ -164,6 +164,16 @@
 
 > 2026-10-19: rank_math_title and rank_math_description are now writable through the REST API (snippet registered on opencorporationfor35.ca). Meta for pages 10353, 10358, 10363, 10368, 10376, 10381, 10389, 10392, 10395, 10398 and 10401 was written by connector, not pasted by hand.
 
-## /incorporate-by-province/ (page 10410, draft created 2026-10-19, meta set by connector)
+## /incorporate-by-province/ (page 10410, published 2026-10-19, meta set by connector)
 - Meta title: Incorporate by Province in Canada | Open Corporation for $35
 - Meta description: Compare incorporating federally and in every province: government fees, name steps, annual filings and director residency. Our fee is $35, HST included.
+
+## Province page meta written by connector (2026-10-19)
+- /federal-incorporation/ (9933): Federal Incorporation in Canada | Open Corporation for $35 / Incorporate federally under the CBCA for $35, HST included, plus the $200 government fee. Your name protected across Canada and a $12 annual return.
+- /incorporate-in-quebec/ (9911, fixed stray ": "): Incorporate in Quebec | Open Corporation for $35 / Incorporate a business in Quebec for $35, HST included. A CPA checks your French name and files everything. The $397 government fee is charged at cost.
+- /incorporate-in-manitoba/ (9975): Incorporate in Manitoba | Open Corporation for $35 / Incorporate in Manitoba for $35, HST included, plus the $350 Companies Office fee. Name reservation, the 25% resident director rule and annual return.
+- /incorporate-in-saskatchewan/ (9961): Incorporate in Saskatchewan | Open Corporation for $35 / Incorporate in Saskatchewan for $35, HST included, plus the $255 registry fee. Name reservation, the Saskatchewan connection rule and annual return.
+- /incorporate-in-nova-scotia/ (9995): Incorporate in Nova Scotia | Open Corporation for $35 / Incorporate a Nova Scotia company for $35, HST included, plus the $200 registry fee. Memorandum and articles, recognized agent and annual renewal.
+- /incorporate-in-new-brunswick/ (9979): Incorporate in New Brunswick | Open Corporation for $35 / Incorporate in New Brunswick for $35, HST included, plus the $262 e-filing fee with the Royal Gazette charge. NUANS, annual return and first steps.
+- /incorporate-in-newfoundland-and-labrador/ (9964): Incorporate in Newfoundland and Labrador | $35 / Incorporate in Newfoundland and Labrador for $35, HST included, plus the $270 e-filing fee. A $10 name reservation, no NUANS and the annual return.
+- /incorporate-in-prince-edward-island/ (9827): Incorporate in PEI | Open Corporation for $35 / Incorporate in Prince Edward Island for $35, HST included, plus the $215 registry fee. Name approval, the lawyer's certificate rule and annual return.
