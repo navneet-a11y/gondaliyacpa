@@ -126,6 +126,6 @@
 - Meta title: CRA Business Number, HST, Payroll and Import Accounts
 - Meta description: We open your CRA business number and the RC, RT, RP and RM accounts. HST at the $30,000 threshold, payroll remitter type, import-export set up.
 
-## /incorporation-corporate-tax-return-bundle/ (draft created 2026-10-19)
+## /incorporation-corporate-tax-return-bundle/ (page 10363, draft created 2026-10-19)
 - Meta title: Incorporation Plus First-Year T2 Return Bundle
 - Meta description: Incorporate for $35 with HST included and have a CPA prepare your first T2 return. Six-month filing deadline, GIFI statements, government fees at cost.
