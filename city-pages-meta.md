@@ -157,3 +157,7 @@
 ## /industries/lawyers-and-paralegals/ (page 10398, draft created 2026-10-19)
 - Meta title: Law Professional Corporation Ontario | $35
 - Meta description: We prepare and file your Ontario law professional corporation for $35, HST included. Government fees separate. A department of Gondaliya CPA.
+
+## /industries/mortgage-brokers/ (page 10401, draft created 2026-10-19)
+- Meta title: Mortgage Broker Incorporation Ontario | $35
+- Meta description: We prepare and file your mortgage corporation for $35, HST included. Government fees separate. A CPA checks the FSRA licensing position first.
