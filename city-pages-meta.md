@@ -133,3 +133,7 @@
 ## /incorporation-bookkeeping-bundle/ (page 10368, published 2026-10-19)
 - Meta title: Incorporation Plus First-Year Bookkeeping Bundle
 - Meta description: Incorporate for $35 including HST, then a CPA firm keeps the books for year one: clean records for your first T2 and HST filed on time.
+
+## /extra-provincial-registration/ (draft created 2026-10-19)
+- Meta title: Extra-Provincial Registration in Canada: Rules and Fees
+- Meta description: When a corporation must register in another province, what carrying on business means, the agent for service rule, and the fee in each province.
