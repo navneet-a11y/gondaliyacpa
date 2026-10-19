@@ -10,14 +10,14 @@ Checked against the live WordPress site on 14 October 2026, updated 16 October 2
 | Services | 26 | 21 | 0 | 5 |
 | Incorporate by Province and Federal | 13 | 11 | 0 | 2 |
 | Service Areas | 27 | 7 | 14 | 6 |
-| Industries | 34 | 23 | 0 | 11 |
+| Industries | 34 | 24 | 0 | 10 |
 | Pricing | 3 | 3 | 0 | 0 |
 | Compare | 14 | 11 | 0 | 3 |
 | Guides | 34 | 32 | 0 | 2 |
 | Blog | 13 | 4 | 0 | 9 |
 | About, Team, Reviews, Contact and Legal | 24 | 21 | 0 | 3 |
 | French Quebec | 10 | 0 | 0 | 10 |
-| **Total** | **201** | **136** | **14** | **51** |
+| **Total** | **201** | **137** | **14** | **50** |
 
 ## Home
 
@@ -128,7 +128,7 @@ Checked against the live WordPress site on 14 October 2026, updated 16 October 2
 | /industries/insurance-brokers/ | P3 | Built | /industries/insurance-brokers/ |
 | /industries/grocery-and-convenience-stores/ | P3 | Built (different URL) | /industries/grocery-convenience-stores/ |
 | /industries/salons-and-barbers/ | P3 | Not built |  |
-| /industries/daycare-operators/ | P3 | Not built |  |
+| /industries/daycare-operators/ | P3 | Built | /industries/daycare-operators/ |
 | /industries/photographers/ | P3 | Not built |  |
 | /industries/marketing-agencies/ | P3 | Not built |  |
 | /industries/staffing-agencies/ | P3 | Not built |  |
