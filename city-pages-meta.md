@@ -122,14 +122,14 @@
 - Meta title: Incorporate as a Truck Driver Ontario | $35
 - Meta description: We prepare and file your trucking corporation for $35, HST included. Government fees separate. A CPA checks your Driver Inc and PSB risk first.
 
-## /business-number-cra-account-registration/ (page 10358, draft created 2026-10-19)
+## /business-number-cra-account-registration/ (page 10358, published 2026-10-19)
 - Meta title: CRA Business Number, HST, Payroll and Import Accounts
 - Meta description: We open your CRA business number and the RC, RT, RP and RM accounts. HST at the $30,000 threshold, payroll remitter type, import-export set up.
 
-## /incorporation-corporate-tax-return-bundle/ (page 10363, draft created 2026-10-19)
+## /incorporation-corporate-tax-return-bundle/ (page 10363, published 2026-10-19)
 - Meta title: Incorporation Plus First-Year T2 Return Bundle
 - Meta description: Incorporate for $35 with HST included and have a CPA prepare your first T2 return. Six-month filing deadline, GIFI statements, government fees at cost.
 
-## /incorporation-bookkeeping-bundle/ (page 10368, draft created 2026-10-19)
+## /incorporation-bookkeeping-bundle/ (page 10368, published 2026-10-19)
 - Meta title: Incorporation Plus First-Year Bookkeeping Bundle
 - Meta description: Incorporate for $35 including HST, then a CPA firm keeps the books for year one: clean records for your first T2 and HST filed on time.
