@@ -129,3 +129,7 @@
 ## /incorporation-corporate-tax-return-bundle/ (page 10363, draft created 2026-10-19)
 - Meta title: Incorporation Plus First-Year T2 Return Bundle
 - Meta description: Incorporate for $35 with HST included and have a CPA prepare your first T2 return. Six-month filing deadline, GIFI statements, government fees at cost.
+
+## /incorporation-bookkeeping-bundle/ (draft created 2026-10-19)
+- Meta title: Incorporation Plus First-Year Bookkeeping Bundle
+- Meta description: Incorporate for $35 including HST, then a CPA firm keeps the books for year one: clean records for your first T2 and HST filed on time.
