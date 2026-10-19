@@ -149,3 +149,7 @@
 ## /industries/salons-and-barbers/ (page 10392, draft created 2026-10-19)
 - Meta title: Incorporate a Salon or Barbershop | $35
 - Meta description: We prepare and file your salon or barbershop corporation for $35, HST included. Government fees separate. A CPA checks chair rental, tips and HST.
+
+## /industries/photographers/ (page 10395, draft created 2026-10-19)
+- Meta title: Incorporate a Photography Business Ontario | $35
+- Meta description: We prepare and file your photography or videography corporation for $35, HST included. Government fees are separate. A department of Gondaliya CPA.
