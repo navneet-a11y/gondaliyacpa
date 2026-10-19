@@ -7,7 +7,7 @@ Checked against the live WordPress site on 14 October 2026, updated 16 October 2
 | Group | Planned | Built | Old page only | Not built |
 |---|---|---|---|---|
 | Home | 3 | 3 | 0 | 0 |
-| Services | 26 | 16 | 0 | 10 |
+| Services | 26 | 17 | 0 | 9 |
 | Incorporate by Province and Federal | 13 | 11 | 0 | 2 |
 | Service Areas | 27 | 7 | 14 | 6 |
 | Industries | 34 | 23 | 0 | 11 |
@@ -17,7 +17,7 @@ Checked against the live WordPress site on 14 October 2026, updated 16 October 2
 | Blog | 13 | 4 | 0 | 9 |
 | About, Team, Reviews, Contact and Legal | 24 | 21 | 0 | 3 |
 | French Quebec | 10 | 0 | 0 | 10 |
-| **Total** | **201** | **131** | **14** | **56** |
+| **Total** | **201** | **132** | **14** | **55** |
 
 ## Home
 
@@ -33,7 +33,7 @@ Checked against the live WordPress site on 14 October 2026, updated 16 October 2
 |---|---|---|---|
 | /nuans-name-search-report/ | P1 | Built (different URL) | /nuans-report-20/ |
 | /annual-return-filing/ | P1 | Built (different URL) | /corporate-annual-filing/ |
-| /business-number-cra-account-registration/ | P1 | Not built |  |
+| /business-number-cra-account-registration/ | P1 | Built | /business-number-cra-account-registration/ |
 | /convert-sole-proprietorship-corporation/ | P1 | Built | /convert-sole-proprietorship-corporation/ |
 | /partnership-registration/ | P2 | Built | /partnership-registration/ |
 | /minute-book-preparation/ | P2 | Built | /minute-book-preparation/ |
