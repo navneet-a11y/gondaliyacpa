@@ -2487,3 +2487,30 @@ before the same page is written for twelve more jurisdictions.
 Family 4 is not due this week. The plan puts it at 150 URLs on November 6 and 186 on
 November 13. These six were built at Navneet's request to complete Ontario while the
 data for the other jurisdictions is still outstanding.
+
+### Ontario hub updated with the six new children
+
+Page 516's `cnf-kids` grid now lists all 12 Ontario service pages, verified at 12
+`cnf-kid` links on the live page. `cnf_child_count` meta moved from 6 to 12.
+
+**The last-reviewed date was deliberately left at October 15, 2026.** 7.5 last-reviewed
+rule 4: "The stamp advances only when a number, a figure, a rule statement or a body
+sentence changed. **A link-only edit**, an image swap or a cache purge **never advances
+the stamp**." Adding six links is exactly that, so the stamp stays.
+
+Each of the six new pages links back up to the hub, and the hub now links down to all
+twelve, so 6(g)'s "parent city hub or jurisdiction pillar" requirement is met in both
+directions for the whole Ontario set.
+
+### `build/ontario/516-hub.html` is 190 bytes out of sync with live
+
+After applying the same insert to both, the local file is 9,773 bytes and the live page
+is 9,583. The 190-byte gap predates this edit: it was already there before the six links
+went in, so the hub was changed on the server by something other than this session's
+build file — most likely the concurrent "Corpnil broken links audit" session recorded on
+2026-10-15.
+
+The live page is correct and is the source of truth for the six links. The local file is
+not a reliable record of page 516 until someone reconciles the other 190 bytes. Flagged
+rather than silently overwritten, because overwriting would discard whatever the other
+session changed.
