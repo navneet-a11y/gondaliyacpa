@@ -8,7 +8,7 @@ Checked against the live WordPress site on 14 October 2026, updated 16 October 2
 |---|---|---|---|---|
 | Home | 3 | 3 | 0 | 0 |
 | Services | 26 | 21 | 0 | 5 |
-| Incorporate by Province and Federal | 13 | 11 | 0 | 2 |
+| Incorporate by Province and Federal | 13 | 12 | 0 | 1 |
 | Service Areas | 27 | 7 | 14 | 6 |
 | Industries | 34 | 28 | 0 | 6 |
 | Pricing | 3 | 3 | 0 | 0 |
@@ -17,7 +17,7 @@ Checked against the live WordPress site on 14 October 2026, updated 16 October 2
 | Blog | 13 | 4 | 0 | 9 |
 | About, Team, Reviews, Contact and Legal | 24 | 21 | 0 | 3 |
 | French Quebec | 10 | 0 | 0 | 10 |
-| **Total** | **201** | **141** | **14** | **46** |
+| **Total** | **201** | **142** | **14** | **45** |
 
 ## Home
 
@@ -62,7 +62,7 @@ Checked against the live WordPress site on 14 October 2026, updated 16 October 2
 
 | Planned URL | Priority | Status | Live URL |
 |---|---|---|---|
-| /incorporate-by-province/ | P1 | Not built |  |
+| /incorporate-by-province/ | P1 | Built | /incorporate-by-province/ |
 | /which-province-should-i-incorporate-in/ | P1 | Not built |  |
 | /federal-incorporation/ | P1 | Built | /federal-incorporation/ |
 | /incorporate-in-ontario/ | P1 | Built | /incorporate-in-ontario/ |
