@@ -137,3 +137,7 @@
 ## /extra-provincial-registration/ (page 10376, draft created 2026-10-19)
 - Meta title: Extra-Provincial Registration in Canada: Rules and Fees
 - Meta description: When a corporation must register in another province, what carrying on business means, the agent for service rule, and the fee in each province.
+
+## /trademark-search-filing-referral/ (page 10381, draft created 2026-10-19)
+- Meta title: Trademark Search and Filing Referral | Ontario CPA
+- Meta description: Why a corporate name is not a trademark and what NUANS misses. We refer filing to a registered trademark agent. A department of Gondaliya CPA.
