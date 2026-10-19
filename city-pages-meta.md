@@ -153,3 +153,7 @@
 ## /industries/photographers/ (page 10395, draft created 2026-10-19)
 - Meta title: Incorporate a Photography Business Ontario | $35
 - Meta description: We prepare and file your photography or videography corporation for $35, HST included. Government fees are separate. A department of Gondaliya CPA.
+
+## /industries/lawyers-and-paralegals/ (page 10398, draft created 2026-10-19)
+- Meta title: Law Professional Corporation Ontario | $35
+- Meta description: We prepare and file your Ontario law professional corporation for $35, HST included. Government fees separate. A department of Gondaliya CPA.
