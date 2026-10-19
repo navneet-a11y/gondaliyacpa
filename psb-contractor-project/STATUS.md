@@ -105,3 +105,20 @@ Still to do for Navneet on the pages:
 - llms.txt
 - Link Whisper
 - **Rule 8 link:** /software-development-it-consultants/ (30733) is an Elementor page, so add the link to /accountant-for-it-contractors/ with Link Whisper or the Elementor editor. Suggested anchor (existing text, no wording change): "IT consultants" in "At Gondaliya CPA, we help developers and IT consultants stay CRA-compliant".
+
+## October 19: wp-admin 503 incident (fixed)
+
+Symptom: every wp-admin page (and the Edit button) returned LiteSpeed's "503 Service Unavailable. The server is temporarily busy, try again later!" right after login. Public pages, uncached front-end requests (`/?s=tax`) and the login page itself all worked. It started the same day Wordfence was installed and several plugins were updated.
+
+Cause: **Link Whisper Premium 4.0.5.** Found by renaming `wp-content/plugins` to `plugins-off` (wp-admin then worked), opening Plugins so WordPress deactivated everything, renaming the folder back and reactivating in groups.
+
+Ruled out on the way: Hostinger maintenance (that notice was for mum2-web2220; this site is on server1457, USA), Wordfence, Astra Pro, Elementor Pro, Rank Math Pro, the LiteSpeed object cache drop-in.
+
+State after the fix: all plugins active except Link Whisper Premium, which is still in `wp-content/plugins/link-whisper-premium-off`. Easy MCP AI updated to 2.2.1.
+
+Next time: try the plugins-folder test first. Allowing `wp_get_error_log` and `wp_get_site_health` for the MCP connection would show the error directly.
+
+Still to do:
+- Link Whisper: install the previous version from linkwhisper.com or wait for a fix, then rename the folder back. The Link Whisper tasks above (including the Rule 8 link) are on hold until then, or do the Rule 8 link in Elementor.
+- Pending updates: Astra theme 4.14.0 -> 4.14.1, Elementor Pro 4.2.2 -> 4.3.2 (behind Elementor 4.3.5), Rank Math Pro 3.0.98 -> 3.0.124, UpdraftPlus 2.26.12. WordPress core is 6.8.11 (Contact Form 7 6.2.2 needs 7.1).
+- WP-Optimize page cache runs alongside LiteSpeed Cache; turn the WP-Optimize page cache off.
