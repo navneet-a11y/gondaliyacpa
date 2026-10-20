@@ -1,0 +1,8 @@
+{
+  "@id": "https://gondaliyacpa.ca/#organization",
+  "memberOf": {
+    "@type": "Organization",
+    "name": "Mississauga Board of Trade",
+    "url": "https://mbot.com/"
+  }
+}
