@@ -9,7 +9,7 @@ Checked against the live WordPress site on 14 October 2026, updated 16 October 2
 | Home | 3 | 3 | 0 | 0 |
 | Services | 26 | 21 | 0 | 5 |
 | Incorporate by Province and Federal | 13 | 12 | 0 | 1 |
-| Service Areas | 27 | 10 | 11 | 6 |
+| Service Areas | 27 | 12 | 11 | 4 |
 | Industries | 34 | 33 | 0 | 1 |
 | Pricing | 3 | 3 | 0 | 0 |
 | Compare | 14 | 11 | 0 | 3 |
@@ -17,7 +17,7 @@ Checked against the live WordPress site on 14 October 2026, updated 16 October 2
 | Blog | 13 | 4 | 0 | 9 |
 | About, Team, Reviews, Contact and Legal | 24 | 21 | 0 | 3 |
 | French Quebec | 10 | 0 | 0 | 10 |
-| **Total** | **201** | **150** | **11** | **40** |
+| **Total** | **201** | **152** | **11** | **38** |
 
 ## Home
 
@@ -83,10 +83,10 @@ Checked against the live WordPress site on 14 October 2026, updated 16 October 2
 | /incorporation-services-ottawa/ | P1 | Built | /incorporation-services-ottawa/ |
 | /incorporation-services-calgary/ | P1 | Built | /incorporation-services-calgary/ |
 | /incorporation-services-vancouver/ | P1 | Built | /incorporation-services-vancouver/ |
-| /incorporation-services-vaughan/ | P2 | Not built |  |
+| /incorporation-services-vaughan/ | P2 | Built | /incorporation-services-vaughan/ |
 | /incorporation-services-oshawa/ | P2 | Old 2025 page only, rebuild | /open-corporation-in-oshawa/ |
 | /incorporation-services-hamilton/ | P2 | Old 2025 page only, rebuild | /open-corporation-in-hamilton/ |
-| /incorporation-services-markham/ | P2 | Not built |  |
+| /incorporation-services-markham/ | P2 | Built | /incorporation-services-markham/ |
 | /incorporation-services-edmonton/ | P2 | Old 2025 page only, rebuild | /open-corporation-in-edmonton/ |
 | /incorporation-services-winnipeg/ | P2 | Old 2025 page only, rebuild | /open-corporation-in-winnipeg/ |
 | /incorporation-services-montreal/ | P2 | Old 2025 page only, rebuild | /open-corporation-in-montreal/ |
