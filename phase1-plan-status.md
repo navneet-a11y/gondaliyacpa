@@ -10,14 +10,14 @@ Checked against the live WordPress site on 14 October 2026, updated 16 October 2
 | Services | 26 | 21 | 0 | 5 |
 | Incorporate by Province and Federal | 13 | 12 | 0 | 1 |
 | Service Areas | 27 | 7 | 14 | 6 |
-| Industries | 34 | 28 | 0 | 6 |
+| Industries | 34 | 29 | 0 | 5 |
 | Pricing | 3 | 3 | 0 | 0 |
 | Compare | 14 | 11 | 0 | 3 |
 | Guides | 34 | 32 | 0 | 2 |
 | Blog | 13 | 4 | 0 | 9 |
 | About, Team, Reviews, Contact and Legal | 24 | 21 | 0 | 3 |
 | French Quebec | 10 | 0 | 0 | 10 |
-| **Total** | **201** | **142** | **14** | **45** |
+| **Total** | **201** | **143** | **14** | **44** |
 
 ## Home
 
@@ -131,7 +131,7 @@ Checked against the live WordPress site on 14 October 2026, updated 16 October 2
 | /industries/daycare-operators/ | P3 | Built | /industries/daycare-operators/ |
 | /industries/photographers/ | P3 | Built | /industries/photographers/ |
 | /industries/marketing-agencies/ | P3 | Not built |  |
-| /industries/staffing-agencies/ | P3 | Not built |  |
+| /industries/staffing-agencies/ | P3 | Built | /industries/staffing-agencies/ |
 | /industries/ | P1 | Built | /industries/ |
 | /industries/dentists/ | P1 | Built | /industries/dentists/ |
 | /industries/real-estate-agents-prec/ | P1 | Built | /industries/real-estate-agents-prec/ |
