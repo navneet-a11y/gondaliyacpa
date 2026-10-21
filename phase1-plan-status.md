@@ -9,7 +9,7 @@ Checked against the live WordPress site on 14 October 2026, updated 16 October 2
 | Home | 3 | 3 | 0 | 0 |
 | Services | 26 | 21 | 0 | 5 |
 | Incorporate by Province and Federal | 13 | 12 | 0 | 1 |
-| Service Areas | 27 | 14 | 9 | 4 |
+| Service Areas | 27 | 15 | 9 | 3 |
 | Industries | 34 | 33 | 0 | 1 |
 | Pricing | 3 | 3 | 0 | 0 |
 | Compare | 14 | 11 | 0 | 3 |
@@ -17,7 +17,7 @@ Checked against the live WordPress site on 14 October 2026, updated 16 October 2
 | Blog | 13 | 4 | 0 | 9 |
 | About, Team, Reviews, Contact and Legal | 24 | 21 | 0 | 3 |
 | French Quebec | 10 | 0 | 0 | 10 |
-| **Total** | **201** | **154** | **9** | **38** |
+| **Total** | **201** | **155** | **9** | **37** |
 
 ## Home
 
@@ -97,7 +97,7 @@ Checked against the live WordPress site on 14 October 2026, updated 16 October 2
 | /incorporation-services-surrey/ | P3 | Old 2025 page only, rebuild | /open-corporation-in-surrey/ |
 | /incorporation-services-halifax/ | P3 | Old 2025 page only, rebuild | /open-corporation-in-halifax/ |
 | /incorporation-services-saskatoon/ | P3 | Old 2025 page only, rebuild | /open-corporation-in-saskatoon/ |
-| /incorporation-services-regina/ | P3 | Draft (page 10532) | /incorporation-services-regina/ |
+| /incorporation-services-regina/ | P3 | Built | /incorporation-services-regina/ |
 | /incorporation-services-barrie/ | P3 | Not built |  |
 | /incorporation-services-kingston/ | P3 | Not built |  |
 | /service-areas/ | P1 | Built | /service-areas/ |
