@@ -10,14 +10,14 @@ Checked against the live WordPress site on 14 October 2026, updated 16 October 2
 | Services | 26 | 21 | 0 | 5 |
 | Incorporate by Province and Federal | 13 | 12 | 0 | 1 |
 | Service Areas | 27 | 7 | 14 | 6 |
-| Industries | 34 | 32 | 0 | 2 |
+| Industries | 34 | 33 | 0 | 1 |
 | Pricing | 3 | 3 | 0 | 0 |
 | Compare | 14 | 11 | 0 | 3 |
 | Guides | 34 | 32 | 0 | 2 |
 | Blog | 13 | 4 | 0 | 9 |
 | About, Team, Reviews, Contact and Legal | 24 | 21 | 0 | 3 |
 | French Quebec | 10 | 0 | 0 | 10 |
-| **Total** | **201** | **146** | **14** | **41** |
+| **Total** | **201** | **147** | **14** | **40** |
 
 ## Home
 
@@ -117,7 +117,7 @@ Checked against the live WordPress site on 14 October 2026, updated 16 October 2
 | /industries/it-consultants-and-software-developers/ | P1 | Built (different URL) | /industries/it-consultants/ |
 | /industries/truck-drivers-and-owner-operators/ | P1 | Built | /industries/truck-drivers-and-owner-operators/ |
 | /industries/construction-and-skilled-trades/ | P1 | Built | /industries/construction-and-skilled-trades/ |
-| /industries/us-companies-expanding-to-canada/ | P1 | Not built |  |
+| /industries/us-companies-expanding-to-canada/ | P1 | Built | /industries/us-companies-expanding-to-canada/ |
 | /industries/nurses-and-nurse-practitioners/ | P2 | Built | /industries/nurses-and-nurse-practitioners/ |
 | /industries/lawyers-and-paralegals/ | P2 | Built | /industries/lawyers-and-paralegals/ |
 | /industries/engineers/ | P2 | Built | /industries/engineers/ |
