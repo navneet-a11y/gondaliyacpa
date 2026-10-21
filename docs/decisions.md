@@ -3258,3 +3258,51 @@ grows. Raise with Sharad Gondaliya if the 6(g) inbound minimums matter for them.
 Verified by applying both removals to the previous build locally and diffing
 against the generator output: byte-identical at 34,329. Page 996 finished at
 34,329.
+
+## 2026-10-21 — /ontario/ (page 516) restyled to the same card design
+
+Navneet asked whether Ontario had been fixed too. It had not — only BC had ever
+been built. Ontario is a different page: twelve Ontario child links rather than
+BC's six generic service cards, a CRA figures table rather than an obligations
+table, and five questions rather than six.
+
+Restyled by `build/jurisdictions/build_ontario.py`, which reuses the stylesheet
+sliced from the BC build and the six live /services/ icons, so the two hubs
+cannot drift apart. Presentation only. Verified before publishing that every
+sentence, both CRA figures, all twelve child links, all five questions, the
+closing links and the schema survive, plus hard rules 1, 2, 3, 4, 6 and 9 and
+an ASCII check.
+
+Three things added, nothing removed: the trust strip, a heading over the
+question block, and a one-line description and icon per card, which the card
+design requires. Six of the twelve cards reuse the icon and the approved
+/services/ copy; the other six are Ontario-only children and needed new icons
+in the same filled 32x32 style and new one-line descriptions. **That new card
+copy is the only new wording on the page and should go to Sharad Gondaliya with
+the next batch.**
+
+Left alone deliberately, because Navneet asked for design only:
+
+- The byline still reads "By Sharad Gondaliya, CPA, registered EFILE electronic
+  filer", which does not satisfy 7.5 rule 3. Still open, with the twelve
+  Ontario `nil_service_place` items.
+- The two CRA figures (1,108,730 and 87,990) keep their existing sourcing.
+- "With 13 per cent HST, that is $339.00" stays. Ontario is an HST province so
+  this one is correct, unlike the BC case.
+
+### A real defect caught only by reading the page back
+
+The card block was published with a PCRE replacement, and four card
+descriptions came back reading "0.00 plus HST". In a PHP replacement string
+`$300` is parsed as backreference `$30`, which does not exist, so `$30` was
+eaten and `0.00` left behind. I had used a placeholder to avoid exactly this on
+the BC page and then did not use it here.
+
+Caught by comparing the live length against the local build: 37,274 against
+37,287. Fixed with a plain, non-regex replacement, 4 occurrences, and confirmed
+by re-reading the page. **Rule: never put a literal `$` in a regex replacement.
+Use a placeholder and a second plain pass, as the BC publish did.**
+
+The remaining 2-byte gap was two cosmetic blank lines the generator emitted
+after `</style>` and after the hero, plus a trailing newline; the generator now
+matches the page exactly. Local and live both 37,286.
