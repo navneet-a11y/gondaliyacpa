@@ -2756,3 +2756,115 @@ under 7.5 rule 4.
 
 No stamp was advanced. A meta description is not visible on the page, so under 7.5 rule 4
 it is not "a number, a figure, a rule statement or a body sentence" changing on the page.
+
+## 2026-10-21 — Family 9 batch 3: guides 8 to 12, and the 6(g) inbound gap closed
+
+Published as `nil_guide` items 976, 978, 980, 982 and 984. All five byte-verified.
+F9 now stands at 12 of 30, which **completes the batch of 10 that gate row 1217
+scheduled for October 9** (twelve days late) and puts two into the batch of 20 due
+October 30.
+
+| Guide | ID | Source | Bytes |
+|---|---|---|---|
+| `/guides/how-to-file-a-nil-t2-return/` | 976 | 6(d) line 1246 keyword | 23,902 |
+| `/guides/gifi-schedules-100-125-141/` | 978 | 6(d) line 1246 keyword | 21,557 |
+| `/guides/schedule-8-and-loss-continuity/` | 980 | 6(d) line 1246 keyword | 22,390 |
+| `/guides/first-year-t2-filing/` | 982 | Appendix A topic, slug corrected | 22,255 |
+| `/guides/numbered-company-tax-filing/` | 984 | Appendix A topic, slug corrected | 22,133 |
+
+Guides 8, 9 and 10 are the last three topics in the 6(d) Family 9 keyword list, so
+they needed no new naming decision. Guides 11 and 12 did, and the resolution is
+below.
+
+### Resolving the 19th conflict enough to keep building
+
+Appendix A's thirty Family 9 slugs stay unusable: root-level, no `/guides/` base,
+and ten carrying a year token that 6(a) line 1147 and the 6(k) year-stamp rule both
+forbid. But those rules forbid the **URL shapes**, not the **topics**. So guides 11
+and 12 take two Appendix A topics and give them compliant slugs:
+
+- `/first-year-t2-filing-guide/` becomes `/guides/first-year-t2-filing/`
+- `/numbered-company-tax-filing-guide/` becomes `/guides/numbered-company-tax-filing/`
+
+Chosen as the two Appendix A topics with the least overlap against the seven 6(b)
+pillars and real cluster support already live. **Sharad Gondaliya to confirm both
+the topics and the slug correction**, and this reading does not fix the other
+eighteen.
+
+**A second reason Appendix A's F9 list cannot be built verbatim**, found while
+picking these two: it duplicates itself and the pillars heavily. Three separate
+entries are a general nil T2 guide (`/nil-t2-filing-guide/`,
+`/the-ultimate-guide-to-nil-t2-returns/`, `/2026-canadian-nil-t2-filing-guide/`) and
+four more restate pillars already live. Building it as written would have produced
+near-duplicate pages competing with each other. That strengthens the case that the
+remaining eighteen topics need redefining rather than slug-patching.
+
+### The 6(g) inbound minimum is met for the first time
+
+Every guide now lists all eleven others, so each of the twelve carries eleven
+sibling inbound links plus the hub: **12, which is exactly the 6(g) line 1528
+minimum for Family 9.** The seven already live were backfilled by surgical edit,
+and the pillar gained the sibling-list section it never had (25,752 to 27,394
+bytes).
+
+To stop that list going stale again, the registry moved into
+`build/f9/f9_registry.py`, imported by all three generators. Adding guide 13 now
+updates the sibling list on all twelve at once. All three generators were rebuilt
+and every one of the twelve files matches live byte-for-byte.
+
+Backfilling the seven was a **link-only edit, so no stamp advanced** on any of them
+(7.5 rule 4). The hub did advance, to October 21, because its five new cards each
+carry a descriptive sentence and the child count moved 7 to 12.
+
+### A factual correction the plan does not make
+
+The plan pairs Schedule 8 with loss continuity throughout ("Schedule 8 and loss
+continuity | Recorded" in the 6(c) fee table). They are two schedules: **Schedule 8
+is capital cost allowance; Schedule 4 is Corporation Loss Continuity and
+Application.** Guide 10 names both correctly. Not logged as a conflict, because the
+plan never says loss continuity sits on Schedule 8, only that the two travel
+together, which is true.
+
+### Two gate checks added, one of which caught a real leak
+
+`gate3.py` adds to `gate2.py`:
+
+1. The review date is read from the batch rather than hardcoded, and every guide in
+   a batch must carry the same one. The hardcoded version failed all five on the
+   first run purely because the date had moved on.
+2. **Internal references to the plan document are blocked from public copy.** This
+   caught a real leak: the Schedule 8 guide said "the plan refers to them as a
+   pair", which would have shipped an internal document reference to readers. Now
+   "are often spoken of as one". The check also covers "Appendix A", 6(x) section
+   references, line numbers, decisions.md and sign-off notes.
+
+### Container re-provisioned onto a different branch history mid-task
+
+Between publishing guide 10 and guide 11, this container was replaced. The new
+checkout held a **different project entirely** (PSB content, Astro redirects) on the
+**same branch name** `claude/nice-meitner-xyq53s`, with `CLAUDE.md`, `docs/` and
+`build/` absent and HEAD at `0c314a4`, which is not in this session's history.
+
+What was established before touching anything:
+
+- This session's twelve commits were safe on the remote at `868065d`.
+- The local branch pointed at the other project's history, which was **not** on the
+  remote any more, so this container held the only copy. It was preserved as local
+  branch `psb-local-backup-0c314a4` **before** the reset, not after.
+- `build_f9_batch3.py`, `gate3.py` and the five HTML files existed only on the lost
+  disk, never committed. Guides 8, 9 and 10 were already live, so their published
+  byte counts became the check on the rebuild: the rewritten generator reproduces
+  23,902, 21,557 and 22,390 exactly.
+
+**Two separate projects are force-pushing over each other on one branch name.** The
+branch has moved non-linearly in both directions. That is a process problem, not a
+content one, and it needs a decision from Navneet before more work lands on this
+branch. Nothing was pushed from the foreign checkout.
+
+The lesson applied: batch 3's generator was committed **before** publishing guides
+11 and 12, rather than after.
+
+### Authorship still pending
+
+All twelve guides and all twenty answer pages remain **pending Sharad Gondaliya's
+sign-off**. Line 1217 owner is "Sharad Gondaliya reviews, Navneet publishes".

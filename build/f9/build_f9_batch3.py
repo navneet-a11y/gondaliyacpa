@@ -72,27 +72,7 @@ FEE_ROWS = [('The T2 return', 'Including the T2 Short where the corporation qual
             ('One corrected transmission', 'If the Agency rejects the first one'),
             ('CRA confirmation', 'Emailed within 3 business days')]
 
-REGISTRY = [
- ('nil-t2-return-complete-guide', 'The Complete Guide to the Nil T2 Return'),
- ('dormant-and-inactive-corporations',
-  'The Complete Guide to Dormant and Inactive Corporations'),
- ('catch-up-unfiled-corporate-tax-returns',
-  'The Complete Guide to Catching Up on Unfiled Corporate Tax Returns'),
- ('final-t2-and-dissolution', 'The Complete Guide to the Final T2 and Dissolution'),
- ('t2-short-eligibility', 'The Complete Guide to T2 Short Eligibility'),
- ('provincial-and-federal-annual-returns',
-  'The Complete Guide to Provincial and Federal Annual Returns'),
- ('t183corp-signing-and-transmission',
-  'The Complete Guide to Form T183CORP Signing and Transmission'),
- ('how-to-file-a-nil-t2-return', 'How to File a Nil T2 Return'),
- ('gifi-schedules-100-125-141',
-  'The Complete Guide to GIFI Schedules 100, 125 and 141'),
- ('schedule-8-and-loss-continuity',
-  'The Complete Guide to Schedule 8 and Loss Continuity'),
- ('first-year-t2-filing', 'The Complete Guide to First-Year T2 Filing'),
- ('numbered-company-tax-filing',
-  'The Complete Guide to Numbered Company Tax Filing'),
-]
+from f9_registry import REGISTRY, sibling_links
 assert len(REGISTRY) == 12
 
 def a(href, text):
@@ -863,8 +843,7 @@ def render(g):
      % (q, ans) for q, ans in g['faq'])
     kid_links = '\n'.join('<li>%s</li>' % a(A + s + '/', KID_TITLES[s])
                           for s in g['kids'])
-    sib_links = '\n'.join('<li>%s</li>' % a(HUB + s + '/', t)
-                          for s, t in REGISTRY if s != g['slug'])
+    sib_links = sibling_links(g['slug'])
     parts.append(
      '<div class="ei-section-alt"><div class="ei-wrap ei-art">\n'
      '<h2 class="ei-h2">Frequently Asked Questions</h2>\n'

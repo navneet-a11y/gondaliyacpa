@@ -30,6 +30,8 @@ correction. The plan's own line 177 says "including HST"; logged for Sharad.
 """
 import json, os, re
 
+from f9_registry import sibling_links
+
 SITE = 'https://corpnilfilingfor300.ca'
 FORM = SITE + '/form/'
 SLUG = 'nil-t2-return-complete-guide'
@@ -407,6 +409,10 @@ parts.append(
  '<div class="ei-faq">\n' + faq_items + '\n</div>\n'
  '<h3>More Questions, Each Answered in Full</h3>\n'
  '<ul class="ei-qlist">\n' + qlinks + '\n</ul>\n'
+ # 6(g) line 1528: the pillar carries the same eleven-sibling list as every
+ # other Family 9 guide, so all twelve reach the minimum of 12 inbound.
+ '<h3>The Other Nil T2 Filing Guides</h3>\n'
+ '<ul class="ei-qlist">\n' + sibling_links(SLUG) + '\n</ul>\n'
  '</div></div>\n')
 
 # ---- bottom CTA ------------------------------------------------------------

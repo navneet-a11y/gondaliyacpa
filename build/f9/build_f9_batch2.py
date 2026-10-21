@@ -37,6 +37,8 @@ These six are drafted to the plan's shape and are pending his sign-off.
 """
 import json, os, re
 
+from f9_registry import sibling_links
+
 HERE  = os.path.dirname(os.path.abspath(__file__))
 SITE  = 'https://corpnilfilingfor300.ca'
 FORM  = SITE + '/form/'
@@ -963,9 +965,9 @@ def render(g):
      % (q, ans) for q, ans in g['faq'])
     kid_links = '\n'.join('<li>%s</li>' % a(A + s + '/', KID_TITLES[s])
                           for s in g['kids'])
-    sibs = [('nil-t2-return-complete-guide', 'The Complete Guide to the Nil T2 Return')]
-    sibs += [(o['slug'], o['h1']) for o in GUIDES if o['slug'] != g['slug']]
-    sib_links = '\n'.join('<li>%s</li>' % a(HUB + s + '/', t) for s, t in sibs)
+    # 6(g) line 1528: all eleven others, from the shared registry, so these
+    # six stay in step as later guides are added.
+    sib_links = sibling_links(g['slug'])
     parts.append(
      '<div class="ei-section-alt"><div class="ei-wrap ei-art">\n'
      '<h2 class="ei-h2">Frequently Asked Questions</h2>\n'
