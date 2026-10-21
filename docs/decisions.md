@@ -3082,3 +3082,45 @@ Still open from before, unchanged by this: the HST price-string question (BC is
 not an HST province, and "Tax is added at the rate for your province" is the
 interim wording), and the byline sweep on page 516 and the twelve Ontario
 `nil_service_place` items.
+
+## 2026-10-21 — BC hub cards rebuilt from the live /services/ markup
+
+My first pass at "closer to /services/" was wrong: I wrote my own card
+descriptions and my own thin stroke icons, and styled the cards bordered and
+left-aligned. Navneet sent a screenshot of the real cards. They are centred,
+shadowed, borderless, 16px-radius, with a 48px filled icon and a 22px title.
+
+Corrected by taking the cards from page 321 itself rather than approximating
+them. `build/jurisdictions/services-cards.json` is extracted from that page's
+markup and holds the six titles, the six descriptions and the inline SVGs
+verbatim; `build_jurisdiction.py` renders from it, so no jurisdiction hub can
+drift from /services/. Card CSS rewritten to match the screenshot.
+
+Two deliberate departures from /services/, both visible in the diff:
+
+1. **Card links.** /services/ points all six cards at `/form/`. A jurisdiction
+   hub exists to pass authority to the service pages, so each card points at
+   its own page instead. This does not change the design.
+2. **T2 Short icon.** /services/ ships that card with no `<svg>` at all, which
+   is why its title sits higher than its neighbours in the screenshot. One is
+   supplied here in the same filled 32x32 style.
+
+Cost, deadlines and guides are navigation rather than services, and /services/
+has no card for them, so they are a centred link row under the grid rather than
+three invented cards.
+
+Page 996 is 16,272 to 33,418 bytes, almost all of it the 19KB of inline icon
+paths — the same weight /services/ already carries, and it gzips well.
+
+Published as a delta (CSS region, then the card grid, then restoring the dollar
+signs from a placeholder, since a `$` in a PCRE replacement is a backreference).
+Verified: live length 33,418 exactly matches the local build, the placeholder
+pass replaced exactly 3, and a zero-change probe on an interior fragment of each
+of the six icon paths returned 1 match each, so no equal-length transcription
+slip got through.
+
+### Two defects on /services/ worth fixing there
+
+- The T2 Short card has no icon.
+- All six cards link to `/form/` rather than to the six service pages, so the
+  section passes no internal link equity to them.

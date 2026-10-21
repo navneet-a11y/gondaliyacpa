@@ -44,6 +44,7 @@ Sources for the British Columbia rules, checked 2026-10-21:
   https://www.corporateonline.gov.bc.ca/WebHelp/good_standing.htm
   https://www2.gov.bc.ca/assets/gov/employment-business-and-economic-development/business-management/permits-licences-and-registration/registries-forms/form06com-annualreport.pdf
 """
+import io
 import json, os, re
 
 SITE  = 'https://corpnilfilingfor300.ca'
@@ -63,49 +64,25 @@ NOT_NIL = ('This service is for a corporation with no activity in the tax year. 
 
 # The six live root service pages, plus the three live hubs. Replaced per
 # jurisdiction by the real F4 children once they exist.
-# Icon, title and description per box, matching the /services/ card pattern.
-# The descriptions are the ones already approved and live on /services/ where
-# one exists, so this is not new trust-strip or service wording.
-ICO = ('<svg class="cnf-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" '
-       'stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" '
-       'aria-hidden="true">%s</svg>')
-I_DOC   = ICO % '<path d="M14 3H7a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V7z"/><path d="M14 3v4h4"/>'
-I_CLOCK = ICO % '<circle cx="12" cy="12" r="8"/><path d="M12 8v4l3 2"/>'
-I_PAUSE = ICO % '<circle cx="12" cy="12" r="8"/><path d="M10 9v6M14 9v6"/>'
-I_CHECK = ICO % '<circle cx="12" cy="12" r="8"/><path d="M8.5 12.5l2.5 2.5 4.5-5"/>'
-I_TWO   = ICO % '<path d="M9 3h8v14H9z"/><path d="M6 6v15h11"/>'
-I_STACK = ICO % '<path d="M12 3l9 5-9 5-9-5z"/><path d="M3 13l9 5 9-5"/>'
-I_COIN  = ICO % '<circle cx="12" cy="12" r="8"/><path d="M12 7v10"/><path d="M14.5 9.6A2.4 2.4 0 0 0 12.2 8h-.7a2 2 0 0 0 0 4h1a2 2 0 0 1 0 4h-.7a2.4 2.4 0 0 1-2.3-1.6"/>'
-I_CAL   = ICO % '<rect x="4" y="5" width="16" height="16" rx="1.5"/><path d="M8 3v4M16 3v4M4 10h16"/>'
-I_BOOK  = ICO % '<path d="M4 5a2 2 0 0 1 2-2h12v18H6a2 2 0 0 1-2-2z"/><path d="M8 7h7"/>'
+# The six service cards are taken verbatim from the live /services/ page:
+# its titles, its descriptions and its inline SVG icons, so the two pages carry
+# one design and one set of words. Loaded from services-cards.json, which was
+# extracted from that page rather than retyped.
+# Two deliberate departures, both logged in docs/decisions.md:
+#  1. /services/ points every card at /form/. A jurisdiction hub exists to pass
+#     authority to the service pages, so each card points at its own page.
+#  2. /services/ ships the T2 Short card with no icon at all, which is why its
+#     title sits higher than its neighbours on the live page. One is supplied.
+SERVICE_CARDS = json.load(io.open(
+    os.path.join(os.path.dirname(os.path.abspath(__file__)), 'services-cards.json'),
+    encoding='utf-8'))
 
-GENERIC_SERVICES = [
- ('/nil-t2-filing/', 'Nil T2 Filing', I_DOC,
-  'A T2 return for a corporation with no activity in the tax year, prepared, CPA '
-  'reviewed and transmitted electronically to the Canada Revenue Agency.'),
- ('/catch-up-nil-t2-filing/', 'Catch-Up Nil T2 Filing', I_CLOCK,
-  'Several unfiled years filed together, oldest year first. Each year is $300.00 '
-  'plus HST, because each year is a separate return.'),
- ('/dormant-corporation-filing/', 'Dormant Corporation Filing', I_PAUSE,
-  'A corporation that did nothing in the year still files a T2 every year until it '
-  'is formally dissolved.'),
- ('/final-t2-before-dissolution/', 'Final T2 Before Dissolution', I_CHECK,
-  'A final T2 is due within six months of dissolution. Unfiled years block a '
-  'clearance certificate and the dissolution itself.'),
- ('/t2-short-filing/', 'T2 Short Filing', I_TWO,
-  'The two-page T2 Short, used where the corporation meets every one of the eight '
-  'conditions. It is included in the fee.'),
- ('/inactive-holding-corporation-t2-filing/', 'Inactive Holding Corporation T2 Filing',
-  I_STACK,
-  'A holding corporation with no investment income and no dividends paid or '
-  'received in the year files a nil T2.'),
- ('/pricing/nil-t2-filing-cost/', 'Nil T2 Filing Cost', I_COIN,
-  'What the fee covers in full, and what falls outside a nil return.'),
- ('/deadlines/', 'T2 Filing Deadlines', I_CAL,
-  'Every fiscal year-end and its due date, with the business-day rule applied.'),
- ('/guides/', 'Nil T2 Filing Guides', I_BOOK,
-  'Twelve guides to the nil T2, each written and reviewed by a CPA Ontario '
-  'member.'),
+# Cost, deadlines and guides are navigation, not services. /services/ has no
+# card for them, so they stay a link row rather than inventing three cards.
+NAV_LINKS = [
+ ('/pricing/nil-t2-filing-cost/', 'Nil T2 filing cost'),
+ ('/deadlines/', 'T2 filing deadlines'),
+ ('/guides/', 'Nil T2 filing guides'),
 ]
 
 CSS = """<style>.cnf-hero{background-image:linear-gradient(rgba(11,26,51,.82),rgba(11,26,51,.82)),url('""" + HERO_IMG + """');background-size:cover;background-position:center center;background-repeat:no-repeat;padding:40px 20px}
@@ -129,20 +106,22 @@ CSS = """<style>.cnf-hero{background-image:linear-gradient(rgba(11,26,51,.82),rg
 .cnf-btn{display:inline-block;background:#314d8a;color:#fff!important;padding:16px 36px;border-radius:35px;font-family:Poppins,sans-serif;font-weight:600;text-decoration:none;margin:20px 12px 8px 0}.cnf-btn:hover{background:#2087c9}
 .cnf-trust{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:28px 0 8px;list-style:none;padding:0}
 .cnf-trust li{background:#f5f8fc;border:1px solid #dfe6ef;border-radius:10px;padding:18px 20px;font-family:Poppins,sans-serif;font-weight:600;color:#314d8a;font-size:16px;line-height:1.45}
-.cnf-boxes{list-style:none;margin:18px 0 0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-.cnf-box{display:block;height:100%;box-sizing:border-box;padding:24px 22px;border:1px solid #dfe6ef;border-top:4px solid #314d8a;border-radius:10px;background:#fff;text-decoration:none!important;transition:box-shadow .15s ease,border-color .15s ease}
-.cnf-box:hover{border-color:#cfe0f3;box-shadow:0 2px 12px rgba(49,77,138,.10)}
-.cnf-box .cnf-ico{width:34px;height:34px;color:#314d8a;display:block;margin:0 0 12px}
-.cnf-box h3{font-family:Poppins,sans-serif;font-size:17px;font-weight:600;color:#314d8a;margin:0 0 8px;line-height:1.35}
-.cnf-box p{margin:0;color:#4a5568;font-size:15px;line-height:1.6;font-weight:400}
+.cnf-boxes{list-style:none;margin:26px 0 0;padding:6px;display:grid;grid-template-columns:repeat(3,1fr);gap:32px}
+.cnf-box{display:block;height:100%;box-sizing:border-box;padding:40px 30px;border:0;border-radius:16px;background:#fff;text-align:center;text-decoration:none!important;box-shadow:0 2px 16px rgba(17,34,68,.09);transition:box-shadow .2s ease,transform .2s ease}
+.cnf-box:hover{box-shadow:0 8px 26px rgba(17,34,68,.14);transform:translateY(-3px)}
+.cnf-box svg{width:48px;height:48px;display:block;margin:0 auto 22px;fill:#3f4652}
+.cnf-box h3{font-family:Poppins,sans-serif;font-size:22px;font-weight:700;color:#314d8a;margin:0 0 12px;line-height:1.3}
+.cnf-box p{margin:0;color:#6b7280;font-size:17px;line-height:1.7;font-weight:400}
+.cnf-nav{list-style:none;margin:26px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:12px 28px;justify-content:center}
+.cnf-nav li{font-family:Poppins,sans-serif;font-weight:600;font-size:16px}
 .cnf-faq{margin:18px 0 0}
-.cnf-faq details{border:1px solid #dfe6ef;border-radius:10px;background:#fff;margin:0 0 12px}
-.cnf-faq summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:18px 22px}
-.cnf-faq summary h3{margin:0;font-family:Poppins,sans-serif;font-weight:600;font-size:17px;color:#314d8a;line-height:1.4}
+.cnf-faq details{border:0;border-radius:14px;background:#fff;margin:0 0 14px;box-shadow:0 2px 14px rgba(17,34,68,.08)}
+.cnf-faq summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:22px 28px}
+.cnf-faq summary h3{margin:0;font-family:Poppins,sans-serif;font-weight:700;font-size:19px;color:#314d8a;line-height:1.4}
 .cnf-faq summary::-webkit-details-marker{display:none}
-.cnf-faq summary::after{content:'+';font-weight:400;font-size:24px;line-height:1;color:#2087c9;flex-shrink:0;transition:transform .15s ease}
+.cnf-faq summary::after{content:'+';font-weight:400;font-size:28px;line-height:1;color:#2087c9;flex-shrink:0;transition:transform .15s ease}
 .cnf-faq details[open] summary::after{transform:rotate(45deg)}
-.cnf-faq .cnf-faq-a{padding:0 22px 18px}
+.cnf-faq .cnf-faq-a{padding:0 28px 24px}
 .cnf-faq .cnf-faq-a p{margin:0;line-height:1.7}
 @media(max-width:900px){.cnf-trust,.cnf-boxes{grid-template-columns:1fr}}</style>
 """
@@ -275,9 +254,13 @@ def build(j):
     # ---- service boxes, in the /services/ card pattern --------------------
     b.append('<h2>Browse Our Affordable Nil T2 Filing Services in ' + name + '</h2>')
     b.append('<ul class="cnf-boxes">')
-    for href, label, ico, desc in GENERIC_SERVICES:
+    for c in SERVICE_CARDS:
         b.append('<li><a class="cnf-box" href="%s%s">%s<h3>%s</h3><p>%s</p></a></li>'
-                 % (SITE, href, ico, label, desc))
+                 % (SITE, c['href'], c['svg'], c['title'], c['desc']))
+    b.append('</ul>')
+    b.append('<ul class="cnf-nav">')
+    for href, label in NAV_LINKS:
+        b.append('<li>' + a(SITE + href, label) + '</li>')
     b.append('</ul>')
 
     # ---- FAQ accordion ----------------------------------------------------
