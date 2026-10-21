@@ -194,6 +194,6 @@
 - Meta title: Incorporate a Marketing Agency Ontario | $35
 - Meta description: We prepare and file your marketing or advertising agency corporation for $35, HST included. Government fees separate. A CPA checks your media billing.
 
-## /industries/us-companies-expanding-to-canada/ (page 10504, draft created 2026-10-21, meta set by connector)
+## /industries/us-companies-expanding-to-canada/ (page 10504, published 2026-10-21, meta set by connector)
 - Meta title: US Company Expanding to Canada | Incorporate for $35
 - Meta description: We incorporate your Canadian subsidiary for $35, HST included. Government fees separate. A CPA settles branch versus subsidiary before you file.
