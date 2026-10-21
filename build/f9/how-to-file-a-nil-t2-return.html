@@ -1,0 +1,220 @@
+<style>
+.ei-wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+.ei-btn-blue{background:rgba(32,135,201,1);color:#fff !important;padding:13px 26px;border-radius:6px;font-weight:700;font-size:0.95em;text-transform:uppercase;text-decoration:none !important;display:inline-block;line-height:1.4;text-align:center;min-width:120px}
+.ei-section{padding:26px 20px}
+.ei-section-alt{background:#f7f9fc;padding:26px 20px}
+.ei-art .ei-h2{font-weight:800;color:#1a2340;margin:0 0 10px;font-size:1.45em;line-height:1.3}
+.ei-art > *:last-child{margin-bottom:0}
+.ei-art p{color:#4a5568;line-height:1.8}
+.ei-art a{color:rgba(32,135,201,1)}
+.ei-art ul{color:#4a5568;line-height:1.8}
+.ei-info{background:#f0f7fd;border-left:4px solid rgba(32,135,201,1);border-radius:0 8px 8px 0;padding:14px 18px;margin:18px 0}
+.ei-info p{margin:0;color:#1a2340;line-height:1.7}
+.ei-warn{background:#fffbf0;border-left:4px solid #f6ad1a;border-radius:0 8px 8px 0;padding:14px 18px;margin:18px 0}
+.ei-warn p{margin:0;color:#7c5800;line-height:1.7}
+.ei-danger{background:#fff5f5;border-left:4px solid #e53e3e;border-radius:0 8px 8px 0;padding:14px 18px;margin:18px 0}
+.ei-danger p{margin:0;color:#742a2a;line-height:1.7}
+.ei-hero{background:linear-gradient(135deg,#0f1624 0%,#1a2340 55%,#1e3a6e 100%);padding:40px 20px}
+.ei-hero-inner{max-width:860px;margin:0 auto;text-align:center}
+.ei-hero-eyebrow{display:inline-block;background:rgba(32,135,201,0.15);border:1px solid rgba(32,135,201,0.4);border-radius:50px;padding:5px 16px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:rgba(32,135,201,1);margin-bottom:16px;font-size:.8em}
+.ei-hero h1{color:#fff;font-weight:800;line-height:1.2;margin:0 0 14px;font-size:2.1em}
+.ei-hero h1 span{color:#f6ad1a}
+.ei-hero-sub{color:rgba(255,255,255,0.78);max-width:720px;margin:0 auto 10px;line-height:1.75}
+.ei-hero-by{color:rgba(255,255,255,0.6);max-width:720px;margin:0 auto 22px;line-height:1.6;font-size:.86em}
+.ei-hero-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.ei-tbl{width:100%;border-collapse:collapse;margin:18px 0;border:1px solid #d1d5db}
+.ei-tbl th{background:#1a2340;color:#fff;font-weight:700;padding:12px 14px;text-align:left;border:1px solid #374151}
+.ei-tbl td{padding:10px 14px;border:1px solid #d1d5db;color:#2d3748;line-height:1.5}
+.ei-tbl tr:nth-child(even){background:#f7f9fc}
+.ei-tbl tr:hover{background:#edf2f7}
+.ei-updated{color:#718096;font-size:.9em;margin:0 0 18px}
+.ei-toc{background:linear-gradient(180deg,#ffffff,#f7f9fc);border:1px solid #e2e8f0;border-radius:12px;padding:18px 22px;margin:0 0 10px;box-shadow:0 1px 2px rgba(26,35,64,.05)}
+.ei-toc h2{font-size:.76em;font-weight:800;color:#8795ab;margin:0 0 10px;text-transform:uppercase;letter-spacing:1.3px}
+.ei-toc ol{margin:0;padding:0;list-style:none;counter-reset:toc;columns:2;column-gap:30px}
+.ei-toc li{break-inside:avoid;counter-increment:toc;margin:0}
+.ei-toc a{display:flex;gap:10px;align-items:baseline;padding:6px 9px;border-radius:6px;color:#1a2340;text-decoration:none;line-height:1.45}
+.ei-toc a::before{content:counter(toc);color:rgba(32,135,201,1);font-weight:800;font-size:.82em;min-width:15px;flex-shrink:0}
+.ei-toc a:hover{background:#eaf3fb;color:rgba(32,135,201,1);text-decoration:none}
+.ei-cta-inline{background:#1a2340;border-radius:10px;padding:24px 28px;margin:28px 0;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px}
+.ei-cta-inline h3{color:#fff;margin:0 0 4px;font-weight:700}
+.ei-cta-inline p{color:rgba(255,255,255,0.65);margin:0}
+.ei-cta-inline a,.ei-cta-inline a:visited,.ei-cta-inline a:hover,.ei-cta-bottom a,.ei-cta-bottom a:visited,.ei-cta-bottom a:hover,.ei-hero-btns a,.ei-hero-btns a:visited,.ei-hero-btns a:hover{color:#fff !important;text-decoration:none !important}
+.ei-faq{max-width:900px;margin:16px auto 0}
+.ei-faq details{border:1px solid #e2e8f0;border-radius:8px;margin-bottom:9px;background:#fff}
+.ei-faq summary{padding:14px 18px;font-weight:600;color:#1a2340;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:14px;line-height:1.5}
+.ei-faq summary::-webkit-details-marker{display:none}
+.ei-faq summary::after{content:'+';color:rgba(32,135,201,1);font-weight:400;font-size:1.4em;line-height:1;flex-shrink:0;transition:transform .15s ease}
+.ei-faq details[open] summary{color:rgba(32,135,201,1)}
+.ei-faq details[open] summary::after{transform:rotate(45deg)}
+.ei-faq .ei-faq-a{padding:0 18px 15px}
+.ei-faq .ei-faq-a p{margin:0;color:#4a5568;line-height:1.75}
+.ei-art h3{font-weight:700;color:#1a2340;margin:26px 0 8px;font-size:1.15em}
+.ei-qlist{max-width:900px;margin:12px auto 0;padding:0;list-style:none}
+.ei-qlist li{border:1px solid #e2e8f0;border-radius:8px;margin-bottom:10px;background:#fff}
+.ei-qlist a{display:block;padding:16px 20px;font-weight:600;color:#1a2340 !important;text-decoration:none !important}
+.ei-qlist a:hover{background:#f7f9fc;color:rgba(32,135,201,1) !important}
+.ei-cta-bottom{background:linear-gradient(135deg,#0f1624,#1a2340);padding:40px 20px;text-align:center}
+.ei-cta-bottom h2{color:#fff;font-weight:800;margin:0 0 10px;font-size:1.5em}
+.ei-cta-bottom p{color:rgba(255,255,255,0.72);max-width:600px;margin:0 auto 22px;line-height:1.75}
+.entry-header{display:none!important}
+.ast-article-single,.ast-article-single .entry-content{margin-top:0;padding-top:0}
+@media(max-width:900px){.ei-cta-inline{flex-direction:column;text-align:center}.ei-hero h1{font-size:1.6em}.ei-art .ei-h2{font-size:1.3em}.ei-toc ol{columns:1}}
+</style>
+<div class="ei-hero"><div class="ei-hero-inner"><span class="ei-hero-eyebrow">Filing Guide</span><h1>How to File a <span>Nil T2 Return</span></h1><p class="ei-hero-sub">What you need before you start, how the fiscal year-end is confirmed, which schedules are filed, how Form T183CORP is signed, and how the return is sent. Nil T2 filing is $300.00 plus HST per tax year.</p><p class="ei-hero-by">Written and reviewed by Sharad Gondaliya, CPA (Ontario), CPA Ontario Membership 61040184.</p><div class="ei-hero-btns"><a class="ei-btn-blue" href="https://corpnilfilingfor300.ca/form/">Start Nil T2 Filing NOW</a><a class="ei-btn-blue" style="background:transparent;border:2px solid rgba(255,255,255,0.4)" href="https://corpnilfilingfor300.ca/pricing/nil-t2-filing-cost/">See the Full Cost</a></div></div></div>
+<div class="ei-section"><div class="ei-wrap ei-art">
+<p class="ei-updated">Last reviewed: October 21, 2026 &nbsp;&middot;&nbsp; <a href="https://corpnilfilingfor300.ca/guides/">All nil T2 filing guides</a></p>
+<div class="ei-toc"><h2>On this page</h2>
+<ol>
+<li><a href="#what-you-need">What You Need Before You Start</a></li>
+<li><a href="#year-end">Confirming the Fiscal Year-End</a></li>
+<li><a href="#business-number">The Business Number and RC Account</a></li>
+<li><a href="#nil-test">Checking the Year Is Actually Nil</a></li>
+<li><a href="#form-choice">T2 Short or the Full T2</a></li>
+<li><a href="#gifi">The GIFI Schedules</a></li>
+<li><a href="#schedules">Schedules 24, 50 and 8</a></li>
+<li><a href="#review">CPA Review Before Transmission</a></li>
+<li><a href="#t183corp">Signing Form T183CORP</a></li>
+<li><a href="#transmit">Transmission and CRA Confirmation</a></li>
+<li><a href="#multi-year">Filing More Than One Year</a></li>
+<li><a href="#fee">What the Fee Covers</a></li>
+</ol></div>
+<div class="ei-info"><p>Gondaliya CPA Professional Corporation is a registered EFILE electronic filer. Returns are prepared and transmitted in Canada. Credentials are never shared and never used offshore.</p></div>
+</div></div>
+<div class="ei-section-alt" id="what-you-need"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">What You Need Before You Start</h2>
+<table class="ei-tbl"><thead><tr><th scope="col">Item</th><th scope="col">Why it is needed</th></tr></thead><tbody>
+<tr><td>The exact legal corporation name</td><td>It must match the registry record</td></tr>
+<tr><td>The nine-digit business number</td><td>The return is filed against it and its RC account</td></tr>
+<tr><td>The fiscal year-end on record with the Canada Revenue Agency</td><td>A mismatch rejects the transmission</td></tr>
+<tr><td>Which tax years are outstanding</td><td>Each year is a separate return</td></tr>
+<tr><td>Any balances on the books</td><td>Share capital, cash or a shareholder loan make GIFI schedules required</td></tr>
+<tr><td>A signing officer available to sign</td><td>Form T183CORP is signed before transmission</td></tr>
+</tbody></table>
+<p>Nothing else is needed for a true nil year. There are no receipts to gather and no statements to prepare, because there was no activity to report.</p>
+</div></div>
+<div class="ei-section" id="year-end"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">Confirming the Fiscal Year-End</h2>
+<p>This is the first step and the one that most often goes wrong. The Canada Revenue Agency already holds a fiscal year-end for the corporation, taken from the incorporation record, and the return must carry that same date.</p>
+<div class="ei-warn"><p>Owners usually remember the date the business started trading rather than the date on the incorporation record. A year-end that differs from the one the Agency holds rejects the transmission.</p></div>
+</div></div>
+<div class="ei-section-alt" id="business-number"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">The Business Number and RC Account</h2>
+<p>The return is filed against the nine-digit business number and its RC corporation income tax account. Most corporations receive the number at incorporation.</p>
+<p>A corporation that was never registered with the Canada Revenue Agency has to obtain one before anything can be transmitted. See <a href="https://corpnilfilingfor300.ca/answers/do-i-need-a-business-number-to-file-a-nil-t2/">whether a business number is needed to file a nil T2</a>.</p>
+</div></div>
+<div class="ei-section" id="nil-test"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">Checking the Year Is Actually Nil</h2>
+<p>A holding corporation with investment income, a rental corporation and a corporation that paid or received a dividend are not nil. Those are handled by Gondaliya CPA Professional Corporation at gondaliyacpa.ca at $350.00 plus HST per year.</p>
+<table class="ei-tbl"><thead><tr><th scope="col">Was there any of this in the year</th><th scope="col">Still nil</th></tr></thead><tbody>
+<tr><td>Revenue of any amount</td><td>No</td></tr>
+<tr><td>An expense claimed</td><td>No</td></tr>
+<tr><td>Payroll</td><td>No</td></tr>
+<tr><td>An asset purchase</td><td>No</td></tr>
+<tr><td>An inter-company transaction</td><td>No</td></tr>
+<tr><td>Investment or rental income</td><td>No</td></tr>
+<tr><td>A dividend paid or received</td><td>No</td></tr>
+<tr><td>None of the above</td><td>Yes</td></tr>
+</tbody></table>
+</div></div>
+<div class="ei-wrap"><div class="ei-cta-inline"><div><h3>Nil T2 Filing, $300.00 plus HST per tax year</h3><p>One price for every year and every province. CPA reviewed and transmitted electronically.</p></div><a class="ei-btn-blue" href="https://corpnilfilingfor300.ca/form/">Start Nil T2 Filing NOW</a></div></div>
+<div class="ei-section-alt" id="form-choice"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">T2 Short or the Full T2</h2>
+<p>The T2 Short is a two-page version of the return, available to a Canadian-controlled private corporation that meets eight conditions. Most nil years qualify.</p>
+<div class="ei-info"><p>Either form is included in the fee. The choice is made from the facts of the year rather than by the corporation, and it changes nothing about the deadline.</p></div>
+<p>The conditions are set out in the guide to <a href="https://corpnilfilingfor300.ca/guides/t2-short-eligibility/">T2 Short eligibility</a>.</p>
+</div></div>
+<div class="ei-section" id="gifi"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">The GIFI Schedules</h2>
+<p>A corporation inactive all year with nothing at all to report may omit GIFI Schedules 100, 125 and 141. Any share capital, cash, shareholder loan, incorporation cost or bank charge makes them required.</p>
+<p>This is where a return that looks nil is most often filed incorrectly. The detail is in the guide to <a href="https://corpnilfilingfor300.ca/guides/gifi-schedules-100-125-141/">GIFI Schedules 100, 125 and 141</a>.</p>
+</div></div>
+<div class="ei-section-alt" id="schedules"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">Schedules 24, 50 and 8</h2>
+<table class="ei-tbl"><thead><tr><th scope="col">Schedule</th><th scope="col">When it is required</th></tr></thead><tbody>
+<tr><td>Schedule 24</td><td>On the first return after incorporation</td></tr>
+<tr><td>Schedule 50</td><td>For every shareholder holding 10% or more</td></tr>
+<tr><td>Schedule 8</td><td>Capital cost allowance, recorded with loss continuity</td></tr>
+</tbody></table>
+<p>Schedule 8 and the loss continuity that travels with it are covered in the guide to <a href="https://corpnilfilingfor300.ca/guides/schedule-8-and-loss-continuity/">Schedule 8 and loss continuity</a>.</p>
+</div></div>
+<div class="ei-section" id="review"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">CPA Review Before Transmission</h2>
+<p>A CPA Ontario member reviews the completed return before it is transmitted: the year-end against the Agency record, the GIFI coding, the schedule selection and the nil status itself.</p>
+<p>That review is what the fee buys. A corporation filing on its own with commercial tax software takes on the same checks. See <a href="https://corpnilfilingfor300.ca/answers/can-i-file-a-nil-t2-myself-without-an-accountant/">whether a nil T2 can be filed without an accountant</a>.</p>
+</div></div>
+<div class="ei-section-alt" id="t183corp"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">Signing Form T183CORP</h2>
+<p>An authorized signing officer signs Form T183CORP before the return is transmitted, never after. It carries a date and an HH:MM:SS timestamp that is never backdated, and may be e-signed through an access-controlled secure portal.</p>
+<div class="ei-info"><p>One form is signed per tax year, because each year is a separate return with its own transmission. The form is kept by the firm for six years and is not sent to the Agency unless requested.</p></div>
+<p>The full detail is in the guide to <a href="https://corpnilfilingfor300.ca/guides/t183corp-signing-and-transmission/">Form T183CORP signing and transmission</a>.</p>
+</div></div>
+<div class="ei-section" id="transmit"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">Transmission and CRA Confirmation</h2>
+<p>Gondaliya CPA Professional Corporation is a registered EFILE electronic filer. Returns are prepared and transmitted in Canada. Credentials are never shared and never used offshore.</p>
+<p>For tax years starting after 2023, e-filing is mandatory for virtually all corporations, and a paper T2 draws a $1,000.00 penalty plus a $100.00 per-return preparer penalty. Your CRA confirmation is emailed within 3 business days. One corrected transmission is included where the Agency rejects the first.</p>
+<div class="ei-danger"><p>A true nil return carries no percentage late-filing penalty, because that penalty is a percentage of tax owing and the corporation owes $0.00. The unfiled year still stays open forever, invites a demand to file and an arbitrary assessment, blocks a clearance certificate and dissolution, and costs a non-resident-owned corporation $25.00 per day up to $2,500.00.</p></div>
+</div></div>
+<div class="ei-section-alt" id="multi-year"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">Filing More Than One Year</h2>
+<p>Each outstanding year is its own return, with its own fiscal year-end, its own figures and its own T183CORP signature. They are filed oldest first, so the balances carry forward correctly.</p>
+<table class="ei-tbl"><thead><tr><th scope="col">Tax years outstanding</th><th scope="col">Fee at $300.00 plus HST per tax year</th></tr></thead><tbody>
+<tr><td>1 year</td><td>$300.00 plus HST</td></tr>
+<tr><td>3 years</td><td>$900.00 plus HST</td></tr>
+<tr><td>5 years</td><td>$1,500.00 plus HST</td></tr>
+<tr><td>10 years</td><td>$3,000.00 plus HST</td></tr>
+</tbody></table>
+<p>The sequence for a catch-up is set out in the guide to <a href="https://corpnilfilingfor300.ca/guides/catch-up-unfiled-corporate-tax-returns/">catching up on unfiled corporate tax returns</a>.</p>
+</div></div>
+<div class="ei-section" id="fee"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">What the Fee Covers</h2>
+<p>The fee is $300.00 plus HST per tax year, covering one nil T2 return for one corporation for one tax year:</p>
+<table class="ei-tbl"><thead><tr><th scope="col">Included</th><th scope="col">Detail</th></tr></thead><tbody>
+<tr><td>The T2 return</td><td>Including the T2 Short where the corporation qualifies</td></tr>
+<tr><td>GIFI Schedules 100, 125 and 141</td><td>Where they are required</td></tr>
+<tr><td>Schedule 24</td><td>On a first return</td></tr>
+<tr><td>Schedule 50</td><td>For every shareholder at 10% or more</td></tr>
+<tr><td>Schedule 8 and loss continuity</td><td>Recorded</td></tr>
+<tr><td>Form T183CORP package</td><td>With single-use secure e-signing</td></tr>
+<tr><td>CPA review</td><td>Before transmission</td></tr>
+<tr><td>Electronic transmission</td><td>By a registered EFILE electronic filer</td></tr>
+<tr><td>One corrected transmission</td><td>If the Agency rejects the first one</td></tr>
+<tr><td>CRA confirmation</td><td>Emailed within 3 business days</td></tr>
+</tbody></table>
+<p>See the full <a href="https://corpnilfilingfor300.ca/pricing/nil-t2-filing-cost/">nil T2 filing cost</a>.</p>
+</div></div>
+<div class="ei-section-alt"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">Frequently Asked Questions</h2>
+<div class="ei-faq">
+<details><summary>How Long Does Filing a Nil T2 Take?</summary><div class="ei-faq-a"><p>The return itself is short, and the usual wait is for the fiscal year-end to be confirmed and for the signing officer to sign Form T183CORP. The CRA confirmation is emailed within 3 business days of transmission.</p></div></details>
+<details><summary>What Do I Have to Send You?</summary><div class="ei-faq-a"><p>The legal corporation name, the business number, the fiscal year-end, which years are outstanding, and any balances sitting on the books. For a true nil year there are no receipts and no statements to prepare.</p></div></details>
+<details><summary>Can I File Without Knowing My Fiscal Year-End?</summary><div class="ei-faq-a"><p>No. The year-end must match the record the Canada Revenue Agency holds or the transmission is rejected, so it is confirmed before the return is prepared rather than guessed.</p></div></details>
+<details><summary>Do I Have to Sign Anything?</summary><div class="ei-faq-a"><p>Yes. An authorized signing officer signs Form T183CORP before the return is transmitted, one for each tax year being filed. It can be e-signed through a secure portal with a single-use link.</p></div></details>
+<details><summary>What if the CRA Rejects the Return?</summary><div class="ei-faq-a"><p>One corrected transmission is included in the fee. A rejection is usually a year-end that does not match the Agency record, and it is a filing that has not landed yet rather than a failed one.</p></div></details>
+<details><summary>Is a Paper T2 Still an Option?</summary><div class="ei-faq-a"><p>Not in practice. For tax years starting after 2023, e-filing is mandatory for virtually all corporations, and a paper T2 draws a $1,000.00 penalty plus a $100.00 per-return preparer penalty.</p></div></details>
+</div>
+<h3>Questions Answered in Full</h3>
+<ul class="ei-qlist">
+<li><a href="https://corpnilfilingfor300.ca/answers/can-i-file-a-nil-t2-myself-without-an-accountant/">Can I File a Nil T2 Myself Without an Accountant?</a></li>
+<li><a href="https://corpnilfilingfor300.ca/answers/do-i-need-a-business-number-to-file-a-nil-t2/">Do I Need a Business Number to File a Nil T2?</a></li>
+<li><a href="https://corpnilfilingfor300.ca/answers/do-i-need-financial-statements-for-a-nil-t2-return/">Do I Need Financial Statements for a Nil T2 Return?</a></li>
+<li><a href="https://corpnilfilingfor300.ca/answers/do-i-need-to-file-a-t2-if-my-corporation-had-no-activity/">Do I Need to File a T2 if My Corporation Had No Activity?</a></li>
+<li><a href="https://corpnilfilingfor300.ca/answers/can-i-file-five-years-of-nil-t2-returns-at-once/">Can I File Five Years of Nil T2 Returns at Once?</a></li>
+<li><a href="https://corpnilfilingfor300.ca/answers/do-i-need-to-file-a-nil-t2-if-i-never-started-operating/">Do I Need to File a Nil T2 if I Never Started Operating?</a></li>
+</ul>
+<h3>The Other Nil T2 Filing Guides</h3>
+<ul class="ei-qlist">
+<li><a href="https://corpnilfilingfor300.ca/guides/nil-t2-return-complete-guide/">The Complete Guide to the Nil T2 Return</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/dormant-and-inactive-corporations/">The Complete Guide to Dormant and Inactive Corporations</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/catch-up-unfiled-corporate-tax-returns/">The Complete Guide to Catching Up on Unfiled Corporate Tax Returns</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/final-t2-and-dissolution/">The Complete Guide to the Final T2 and Dissolution</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/t2-short-eligibility/">The Complete Guide to T2 Short Eligibility</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/provincial-and-federal-annual-returns/">The Complete Guide to Provincial and Federal Annual Returns</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/t183corp-signing-and-transmission/">The Complete Guide to Form T183CORP Signing and Transmission</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/gifi-schedules-100-125-141/">The Complete Guide to GIFI Schedules 100, 125 and 141</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/schedule-8-and-loss-continuity/">The Complete Guide to Schedule 8 and Loss Continuity</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/first-year-t2-filing/">The Complete Guide to First-Year T2 Filing</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/numbered-company-tax-filing/">The Complete Guide to Numbered Company Tax Filing</a></li>
+</ul>
+</div></div>
+<div class="ei-cta-bottom"><div class="ei-wrap"><h2>Nil T2 Filing, $300.00 plus HST per tax year</h2><p>Type your corporation name, pick your unfiled years, pay, and sign Form T183CORP on a secure screen. Your CRA confirmation is emailed within 3 business days.</p><a class="ei-btn-blue" href="https://corpnilfilingfor300.ca/form/">Start Nil T2 Filing NOW</a></div></div>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Article", "@id": "https://corpnilfilingfor300.ca/guides/how-to-file-a-nil-t2-return/#article", "headline": "How to File a Nil T2 Return", "name": "How to File a Nil T2 Return | Step by Step for Canada", "description": "What you need before you start, how the fiscal year-end is confirmed, which schedules are filed, how Form T183CORP is signed, and how the return is sent.", "inLanguage": "en-CA", "datePublished": "2026-10-21", "dateModified": "2026-10-21", "mainEntityOfPage": "https://corpnilfilingfor300.ca/guides/how-to-file-a-nil-t2-return/", "author": {"@type": "Person", "name": "Sharad Gondaliya", "honorificSuffix": "CPA", "url": "https://corpnilfilingfor300.ca/sharad-gondaliya-cpa/"}, "publisher": {"@type": "Organization", "name": "Gondaliya CPA Professional Corporation"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Nil T2 filing in Canada", "item": "https://corpnilfilingfor300.ca/"}, {"@type": "ListItem", "position": 2, "name": "Guides", "item": "https://corpnilfilingfor300.ca/guides/"}, {"@type": "ListItem", "position": 3, "name": "How to File a Nil T2 Return", "item": "https://corpnilfilingfor300.ca/guides/how-to-file-a-nil-t2-return/"}]}]}</script>

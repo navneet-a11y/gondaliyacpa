@@ -1,0 +1,202 @@
+<style>
+.ei-wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+.ei-btn-blue{background:rgba(32,135,201,1);color:#fff !important;padding:13px 26px;border-radius:6px;font-weight:700;font-size:0.95em;text-transform:uppercase;text-decoration:none !important;display:inline-block;line-height:1.4;text-align:center;min-width:120px}
+.ei-section{padding:26px 20px}
+.ei-section-alt{background:#f7f9fc;padding:26px 20px}
+.ei-art .ei-h2{font-weight:800;color:#1a2340;margin:0 0 10px;font-size:1.45em;line-height:1.3}
+.ei-art > *:last-child{margin-bottom:0}
+.ei-art p{color:#4a5568;line-height:1.8}
+.ei-art a{color:rgba(32,135,201,1)}
+.ei-art ul{color:#4a5568;line-height:1.8}
+.ei-info{background:#f0f7fd;border-left:4px solid rgba(32,135,201,1);border-radius:0 8px 8px 0;padding:14px 18px;margin:18px 0}
+.ei-info p{margin:0;color:#1a2340;line-height:1.7}
+.ei-warn{background:#fffbf0;border-left:4px solid #f6ad1a;border-radius:0 8px 8px 0;padding:14px 18px;margin:18px 0}
+.ei-warn p{margin:0;color:#7c5800;line-height:1.7}
+.ei-danger{background:#fff5f5;border-left:4px solid #e53e3e;border-radius:0 8px 8px 0;padding:14px 18px;margin:18px 0}
+.ei-danger p{margin:0;color:#742a2a;line-height:1.7}
+.ei-hero{background:linear-gradient(135deg,#0f1624 0%,#1a2340 55%,#1e3a6e 100%);padding:40px 20px}
+.ei-hero-inner{max-width:860px;margin:0 auto;text-align:center}
+.ei-hero-eyebrow{display:inline-block;background:rgba(32,135,201,0.15);border:1px solid rgba(32,135,201,0.4);border-radius:50px;padding:5px 16px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:rgba(32,135,201,1);margin-bottom:16px;font-size:.8em}
+.ei-hero h1{color:#fff;font-weight:800;line-height:1.2;margin:0 0 14px;font-size:2.1em}
+.ei-hero h1 span{color:#f6ad1a}
+.ei-hero-sub{color:rgba(255,255,255,0.78);max-width:720px;margin:0 auto 10px;line-height:1.75}
+.ei-hero-by{color:rgba(255,255,255,0.6);max-width:720px;margin:0 auto 22px;line-height:1.6;font-size:.86em}
+.ei-hero-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.ei-tbl{width:100%;border-collapse:collapse;margin:18px 0;border:1px solid #d1d5db}
+.ei-tbl th{background:#1a2340;color:#fff;font-weight:700;padding:12px 14px;text-align:left;border:1px solid #374151}
+.ei-tbl td{padding:10px 14px;border:1px solid #d1d5db;color:#2d3748;line-height:1.5}
+.ei-tbl tr:nth-child(even){background:#f7f9fc}
+.ei-tbl tr:hover{background:#edf2f7}
+.ei-updated{color:#718096;font-size:.9em;margin:0 0 18px}
+.ei-toc{background:linear-gradient(180deg,#ffffff,#f7f9fc);border:1px solid #e2e8f0;border-radius:12px;padding:18px 22px;margin:0 0 10px;box-shadow:0 1px 2px rgba(26,35,64,.05)}
+.ei-toc h2{font-size:.76em;font-weight:800;color:#8795ab;margin:0 0 10px;text-transform:uppercase;letter-spacing:1.3px}
+.ei-toc ol{margin:0;padding:0;list-style:none;counter-reset:toc;columns:2;column-gap:30px}
+.ei-toc li{break-inside:avoid;counter-increment:toc;margin:0}
+.ei-toc a{display:flex;gap:10px;align-items:baseline;padding:6px 9px;border-radius:6px;color:#1a2340;text-decoration:none;line-height:1.45}
+.ei-toc a::before{content:counter(toc);color:rgba(32,135,201,1);font-weight:800;font-size:.82em;min-width:15px;flex-shrink:0}
+.ei-toc a:hover{background:#eaf3fb;color:rgba(32,135,201,1);text-decoration:none}
+.ei-cta-inline{background:#1a2340;border-radius:10px;padding:24px 28px;margin:28px 0;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px}
+.ei-cta-inline h3{color:#fff;margin:0 0 4px;font-weight:700}
+.ei-cta-inline p{color:rgba(255,255,255,0.65);margin:0}
+.ei-cta-inline a,.ei-cta-inline a:visited,.ei-cta-inline a:hover,.ei-cta-bottom a,.ei-cta-bottom a:visited,.ei-cta-bottom a:hover,.ei-hero-btns a,.ei-hero-btns a:visited,.ei-hero-btns a:hover{color:#fff !important;text-decoration:none !important}
+.ei-faq{max-width:900px;margin:16px auto 0}
+.ei-faq details{border:1px solid #e2e8f0;border-radius:8px;margin-bottom:9px;background:#fff}
+.ei-faq summary{padding:14px 18px;font-weight:600;color:#1a2340;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:14px;line-height:1.5}
+.ei-faq summary::-webkit-details-marker{display:none}
+.ei-faq summary::after{content:'+';color:rgba(32,135,201,1);font-weight:400;font-size:1.4em;line-height:1;flex-shrink:0;transition:transform .15s ease}
+.ei-faq details[open] summary{color:rgba(32,135,201,1)}
+.ei-faq details[open] summary::after{transform:rotate(45deg)}
+.ei-faq .ei-faq-a{padding:0 18px 15px}
+.ei-faq .ei-faq-a p{margin:0;color:#4a5568;line-height:1.75}
+.ei-art h3{font-weight:700;color:#1a2340;margin:26px 0 8px;font-size:1.15em}
+.ei-qlist{max-width:900px;margin:12px auto 0;padding:0;list-style:none}
+.ei-qlist li{border:1px solid #e2e8f0;border-radius:8px;margin-bottom:10px;background:#fff}
+.ei-qlist a{display:block;padding:16px 20px;font-weight:600;color:#1a2340 !important;text-decoration:none !important}
+.ei-qlist a:hover{background:#f7f9fc;color:rgba(32,135,201,1) !important}
+.ei-cta-bottom{background:linear-gradient(135deg,#0f1624,#1a2340);padding:40px 20px;text-align:center}
+.ei-cta-bottom h2{color:#fff;font-weight:800;margin:0 0 10px;font-size:1.5em}
+.ei-cta-bottom p{color:rgba(255,255,255,0.72);max-width:600px;margin:0 auto 22px;line-height:1.75}
+.entry-header{display:none!important}
+.ast-article-single,.ast-article-single .entry-content{margin-top:0;padding-top:0}
+@media(max-width:900px){.ei-cta-inline{flex-direction:column;text-align:center}.ei-hero h1{font-size:1.6em}.ei-art .ei-h2{font-size:1.3em}.ei-toc ol{columns:1}}
+</style>
+<div class="ei-hero"><div class="ei-hero-inner"><span class="ei-hero-eyebrow">Schedules Guide</span><h1>The Complete Guide to <span>Schedule 8 and Loss Continuity</span></h1><p class="ei-hero-sub">What Schedule 8 records, how capital cost allowance works in a nil year, why loss continuity has to be carried forward, and what a skipped year costs. Nil T2 filing is $300.00 plus HST per tax year.</p><p class="ei-hero-by">Written and reviewed by Sharad Gondaliya, CPA (Ontario), CPA Ontario Membership 61040184.</p><div class="ei-hero-btns"><a class="ei-btn-blue" href="https://corpnilfilingfor300.ca/form/">Start Nil T2 Filing NOW</a><a class="ei-btn-blue" style="background:transparent;border:2px solid rgba(255,255,255,0.4)" href="https://corpnilfilingfor300.ca/pricing/nil-t2-filing-cost/">See the Full Cost</a></div></div></div>
+<div class="ei-section"><div class="ei-wrap ei-art">
+<p class="ei-updated">Last reviewed: October 21, 2026 &nbsp;&middot;&nbsp; <a href="https://corpnilfilingfor300.ca/guides/">All nil T2 filing guides</a></p>
+<div class="ei-toc"><h2>On this page</h2>
+<ol>
+<li><a href="#what-s8">What Schedule 8 Is</a></li>
+<li><a href="#cca">Capital Cost Allowance in a Nil Year</a></li>
+<li><a href="#claim-or-not">Claiming It or Leaving It</a></li>
+<li><a href="#pools">The Pools Carry Forward</a></li>
+<li><a href="#loss-continuity">What Loss Continuity Is</a></li>
+<li><a href="#carryforward">How Long Losses Carry Forward</a></li>
+<li><a href="#skipped-year">What a Skipped Year Does to the Continuity</a></li>
+<li><a href="#s4-and-s8">Schedule 4 and Schedule 8 Together</a></li>
+<li><a href="#nil-vs-loss">A Nil Year Is Not a Loss Year</a></li>
+<li><a href="#catch-up">Rebuilding Continuity on a Catch-Up</a></li>
+<li><a href="#order">Why the Years Are Filed Oldest First</a></li>
+<li><a href="#fee">What the Fee Covers</a></li>
+</ol></div>
+<div class="ei-info"><p>Gondaliya CPA Professional Corporation is a registered EFILE electronic filer. Returns are prepared and transmitted in Canada. Credentials are never shared and never used offshore.</p></div>
+</div></div>
+<div class="ei-section-alt" id="what-s8"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">What Schedule 8 Is</h2>
+<p>Schedule 8 is the capital cost allowance schedule. It records the corporation&rsquo;s depreciable property, the class each asset sits in, and how much depreciation is claimed for the year.</p>
+<p>A corporation with no depreciable property has no Schedule 8 to file. One that still holds equipment, a vehicle or a computer from its trading days does, even in a year when nothing happened.</p>
+</div></div>
+<div class="ei-section" id="cca"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">Capital Cost Allowance in a Nil Year</h2>
+<p>Capital cost allowance is the tax version of depreciation. Each class of asset has a rate, and the undepreciated capital cost of the class is what remains to be claimed in future years.</p>
+<div class="ei-info"><p>Capital cost allowance is discretionary. A corporation may claim anything from nil up to the maximum the class allows, and the choice is made each year.</p></div>
+</div></div>
+<div class="ei-section-alt" id="claim-or-not"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">Claiming It or Leaving It</h2>
+<p>On a nil year the usual answer is to claim nil. Claiming capital cost allowance against no income creates a non-capital loss, and a non-capital loss expires. Leaving the claim unmade keeps the undepreciated capital cost in the pool, where it does not expire at all.</p>
+<table class="ei-tbl"><thead><tr><th scope="col">Choice in a nil year</th><th scope="col">What happens</th></tr></thead><tbody>
+<tr><td>Claim nil capital cost allowance</td><td>The undepreciated capital cost stays in the pool for a future year</td></tr>
+<tr><td>Claim the maximum</td><td>A non-capital loss is created, which expires 20 years later</td></tr>
+</tbody></table>
+</div></div>
+<div class="ei-section" id="pools"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">The Pools Carry Forward</h2>
+<p>Each class is a pool rather than a list of individual assets. The pool carries forward from year to year, reduced by what is claimed and by anything sold, and increased by anything bought.</p>
+<p>That carry-forward is why the years are filed in order. A pool balance on one return is the opening balance on the next.</p>
+</div></div>
+<div class="ei-wrap"><div class="ei-cta-inline"><div><h3>Nil T2 Filing, $300.00 plus HST per tax year</h3><p>One price for every year and every province. CPA reviewed and transmitted electronically.</p></div><a class="ei-btn-blue" href="https://corpnilfilingfor300.ca/form/">Start Nil T2 Filing NOW</a></div></div>
+<div class="ei-section-alt" id="loss-continuity"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">What Loss Continuity Is</h2>
+<p>Loss continuity is the running record of the losses a corporation has and has not yet used. It is reported on Schedule 4, Corporation Loss Continuity and Application, not on Schedule 8.</p>
+<div class="ei-info"><p>The two are filed together and are often spoken of as one, but they are separate schedules. Schedule 8 is the asset pools; Schedule 4 is the losses.</p></div>
+</div></div>
+<div class="ei-section" id="carryforward"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">How Long Losses Carry Forward</h2>
+<table class="ei-tbl"><thead><tr><th scope="col">Type of loss</th><th scope="col">Carry back</th><th scope="col">Carry forward</th></tr></thead><tbody>
+<tr><td>Non-capital loss</td><td>3 years</td><td>20 years</td></tr>
+<tr><td>Net capital loss</td><td>3 years</td><td>Indefinitely</td></tr>
+<tr><td>Undepreciated capital cost in a pool</td><td>Not applicable</td><td>Indefinitely, while the pool exists</td></tr>
+</tbody></table>
+<p>A non-capital loss is the ordinary kind, from expenses exceeding revenue. A net capital loss comes from selling capital property for less than it cost.</p>
+</div></div>
+<div class="ei-section-alt" id="skipped-year"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">What a Skipped Year Does to the Continuity</h2>
+<p>A year that was never filed is a gap in the record. The losses and pools from the year before it have no filed return carrying them into the year after, so the continuity has to be rebuilt before the later years can be assessed correctly.</p>
+<div class="ei-danger"><p>A true nil return carries no percentage late-filing penalty, because that penalty is a percentage of tax owing and the corporation owes $0.00. The unfiled year still stays open forever, invites a demand to file and an arbitrary assessment, blocks a clearance certificate and dissolution, and costs a non-resident-owned corporation $25.00 per day up to $2,500.00.</p></div>
+<p>On a true nil year the figures themselves are simple, which is what makes rebuilding the continuity straightforward rather than forensic.</p>
+</div></div>
+<div class="ei-section" id="s4-and-s8"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">Schedule 4 and Schedule 8 Together</h2>
+<table class="ei-tbl"><thead><tr><th scope="col">Schedule</th><th scope="col">Name</th><th scope="col">What it carries forward</th></tr></thead><tbody>
+<tr><td>Schedule 8</td><td>Capital Cost Allowance</td><td>Undepreciated capital cost, by class</td></tr>
+<tr><td>Schedule 4</td><td>Corporation Loss Continuity and Application</td><td>Non-capital and net capital losses</td></tr>
+</tbody></table>
+<p>Both are included in the fee of $300.00 plus HST per tax year where the corporation has anything to record on them.</p>
+</div></div>
+<div class="ei-section-alt" id="nil-vs-loss"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">A Nil Year Is Not a Loss Year</h2>
+<p>These two are often confused. A nil year had no activity at all, so net income is nil and no loss arises. A loss year had real expenses exceeding real revenue, which creates a non-capital loss to carry forward.</p>
+<div class="ei-warn"><p>A corporation that claims expenses is not nil, and this service is for a corporation with no activity in the tax year. A holding corporation with investment income, a rental corporation and a corporation that paid or received a dividend are not nil. Those are handled by Gondaliya CPA Professional Corporation at gondaliyacpa.ca at $350.00 plus HST per year.</p></div>
+</div></div>
+<div class="ei-section" id="catch-up"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">Rebuilding Continuity on a Catch-Up</h2>
+<p>Where several years are outstanding, the pools and losses are carried through each return in turn. The earliest outstanding year is prepared first, its closing balances become the next year&rsquo;s opening balances, and so on to the present.</p>
+<p>The full sequence is in the guide to <a href="https://corpnilfilingfor300.ca/guides/catch-up-unfiled-corporate-tax-returns/">catching up on unfiled corporate tax returns</a>.</p>
+</div></div>
+<div class="ei-section-alt" id="order"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">Why the Years Are Filed Oldest First</h2>
+<p>Because continuity only runs forwards. A return filed out of order has opening balances that do not match the closing balances of the year before it, and that mismatch is what draws a query rather than a clean assessment.</p>
+<p>It is the single practical reason the order matters on a multi-year filing.</p>
+</div></div>
+<div class="ei-section" id="fee"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">What the Fee Covers</h2>
+<p>The fee is $300.00 plus HST per tax year, covering one nil T2 return for one corporation for one tax year:</p>
+<table class="ei-tbl"><thead><tr><th scope="col">Included</th><th scope="col">Detail</th></tr></thead><tbody>
+<tr><td>The T2 return</td><td>Including the T2 Short where the corporation qualifies</td></tr>
+<tr><td>GIFI Schedules 100, 125 and 141</td><td>Where they are required</td></tr>
+<tr><td>Schedule 24</td><td>On a first return</td></tr>
+<tr><td>Schedule 50</td><td>For every shareholder at 10% or more</td></tr>
+<tr><td>Schedule 8 and loss continuity</td><td>Recorded</td></tr>
+<tr><td>Form T183CORP package</td><td>With single-use secure e-signing</td></tr>
+<tr><td>CPA review</td><td>Before transmission</td></tr>
+<tr><td>Electronic transmission</td><td>By a registered EFILE electronic filer</td></tr>
+<tr><td>One corrected transmission</td><td>If the Agency rejects the first one</td></tr>
+<tr><td>CRA confirmation</td><td>Emailed within 3 business days</td></tr>
+</tbody></table>
+<p>See the full <a href="https://corpnilfilingfor300.ca/pricing/nil-t2-filing-cost/">nil T2 filing cost</a>.</p>
+</div></div>
+<div class="ei-section-alt"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">Frequently Asked Questions</h2>
+<div class="ei-faq">
+<details><summary>Does a Nil Return Need Schedule 8?</summary><div class="ei-faq-a"><p>Only where the corporation holds depreciable property. A corporation with no assets of that kind has no Schedule 8 to file.</p></div></details>
+<details><summary>Should I Claim Capital Cost Allowance in a Nil Year?</summary><div class="ei-faq-a"><p>Usually nil. Claiming against no income creates a non-capital loss that expires in 20 years, while claiming nothing keeps the undepreciated capital cost in the pool, where it does not expire.</p></div></details>
+<details><summary>Is Loss Continuity on Schedule 8?</summary><div class="ei-faq-a"><p>No. Schedule 8 is capital cost allowance. Loss continuity is reported on Schedule 4, Corporation Loss Continuity and Application. The two are filed together, which is why they are often spoken of as one.</p></div></details>
+<details><summary>How Long Can a Non-Capital Loss Be Carried Forward?</summary><div class="ei-faq-a"><p>Twenty years forward and three years back. A net capital loss carries forward indefinitely and back three years.</p></div></details>
+<details><summary>Does a Nil Year Create a Loss I Can Use Later?</summary><div class="ei-faq-a"><p>No. A nil year had no activity, so net income is nil and no loss arises. A loss needs real expenses exceeding real revenue, and a corporation claiming expenses is not a nil filer.</p></div></details>
+<details><summary>What if an Unfiled Year Breaks the Continuity?</summary><div class="ei-faq-a"><p>The gap is rebuilt by filing the missing years oldest first, so each return&rsquo;s closing balances become the next one&rsquo;s opening balances. On nil years the figures are simple enough that this is routine.</p></div></details>
+</div>
+<h3>Questions Answered in Full</h3>
+<ul class="ei-qlist">
+<li><a href="https://corpnilfilingfor300.ca/answers/do-i-need-financial-statements-for-a-nil-t2-return/">Do I Need Financial Statements for a Nil T2 Return?</a></li>
+<li><a href="https://corpnilfilingfor300.ca/answers/what-happens-if-i-dont-file-my-t2-for-five-years/">What Happens if I Don't File My T2 for Five Years?</a></li>
+<li><a href="https://corpnilfilingfor300.ca/answers/can-i-file-five-years-of-nil-t2-returns-at-once/">Can I File Five Years of Nil T2 Returns at Once?</a></li>
+<li><a href="https://corpnilfilingfor300.ca/answers/can-i-dissolve-my-corporation-with-unfiled-t2-returns/">Can I Dissolve My Corporation With Unfiled T2 Returns?</a></li>
+<li><a href="https://corpnilfilingfor300.ca/answers/do-i-need-to-file-a-t2-if-my-corporation-had-no-activity/">Do I Need to File a T2 if My Corporation Had No Activity?</a></li>
+<li><a href="https://corpnilfilingfor300.ca/answers/what-happens-if-i-dont-file-a-t2-before-dissolving-my-corporation/">What Happens if I Don't File a T2 Before Dissolving My Corporation?</a></li>
+</ul>
+<h3>The Other Nil T2 Filing Guides</h3>
+<ul class="ei-qlist">
+<li><a href="https://corpnilfilingfor300.ca/guides/nil-t2-return-complete-guide/">The Complete Guide to the Nil T2 Return</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/dormant-and-inactive-corporations/">The Complete Guide to Dormant and Inactive Corporations</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/catch-up-unfiled-corporate-tax-returns/">The Complete Guide to Catching Up on Unfiled Corporate Tax Returns</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/final-t2-and-dissolution/">The Complete Guide to the Final T2 and Dissolution</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/t2-short-eligibility/">The Complete Guide to T2 Short Eligibility</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/provincial-and-federal-annual-returns/">The Complete Guide to Provincial and Federal Annual Returns</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/t183corp-signing-and-transmission/">The Complete Guide to Form T183CORP Signing and Transmission</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/how-to-file-a-nil-t2-return/">How to File a Nil T2 Return</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/gifi-schedules-100-125-141/">The Complete Guide to GIFI Schedules 100, 125 and 141</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/first-year-t2-filing/">The Complete Guide to First-Year T2 Filing</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/numbered-company-tax-filing/">The Complete Guide to Numbered Company Tax Filing</a></li>
+</ul>
+</div></div>
+<div class="ei-cta-bottom"><div class="ei-wrap"><h2>Nil T2 Filing, $300.00 plus HST per tax year</h2><p>Type your corporation name, pick your unfiled years, pay, and sign Form T183CORP on a secure screen. Your CRA confirmation is emailed within 3 business days.</p><a class="ei-btn-blue" href="https://corpnilfilingfor300.ca/form/">Start Nil T2 Filing NOW</a></div></div>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Article", "@id": "https://corpnilfilingfor300.ca/guides/schedule-8-and-loss-continuity/#article", "headline": "The Complete Guide to Schedule 8 and Loss Continuity", "name": "Schedule 8 and Loss Continuity | Nil T2 Guide", "description": "What Schedule 8 records, how capital cost allowance works in a nil year, why loss continuity has to be carried forward, and what a skipped year costs.", "inLanguage": "en-CA", "datePublished": "2026-10-21", "dateModified": "2026-10-21", "mainEntityOfPage": "https://corpnilfilingfor300.ca/guides/schedule-8-and-loss-continuity/", "author": {"@type": "Person", "name": "Sharad Gondaliya", "honorificSuffix": "CPA", "url": "https://corpnilfilingfor300.ca/sharad-gondaliya-cpa/"}, "publisher": {"@type": "Organization", "name": "Gondaliya CPA Professional Corporation"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Nil T2 filing in Canada", "item": "https://corpnilfilingfor300.ca/"}, {"@type": "ListItem", "position": 2, "name": "Guides", "item": "https://corpnilfilingfor300.ca/guides/"}, {"@type": "ListItem", "position": 3, "name": "The Complete Guide to Schedule 8 and Loss Continuity", "item": "https://corpnilfilingfor300.ca/guides/schedule-8-and-loss-continuity/"}]}]}</script>
