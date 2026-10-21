@@ -97,7 +97,7 @@ Checked against the live WordPress site on 14 October 2026, updated 16 October 2
 | /incorporation-services-surrey/ | P3 | Old 2025 page only, rebuild | /open-corporation-in-surrey/ |
 | /incorporation-services-halifax/ | P3 | Old 2025 page only, rebuild | /open-corporation-in-halifax/ |
 | /incorporation-services-saskatoon/ | P3 | Old 2025 page only, rebuild | /open-corporation-in-saskatoon/ |
-| /incorporation-services-regina/ | P3 | Not built |  |
+| /incorporation-services-regina/ | P3 | Draft (page 10532) | /incorporation-services-regina/ |
 | /incorporation-services-barrie/ | P3 | Not built |  |
 | /incorporation-services-kingston/ | P3 | Not built |  |
 | /service-areas/ | P1 | Built | /service-areas/ |

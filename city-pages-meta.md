@@ -213,3 +213,7 @@
 ## /incorporation-services-kitchener-waterloo/ (page 10525, published 2026-10-21, meta set by connector)
 - Meta title: Incorporate in Kitchener-Waterloo | $35 + Government Fees
 - Meta description: Incorporate in Kitchener, Waterloo or Cambridge for $35, HST included, plus the $300 Ontario fee. A CPA checks your shares, IP and any City licence first.
+
+## /incorporation-services-regina/ (page 10532, draft created 2026-10-21, meta set by connector)
+- Meta title: Incorporate a Business in Regina | $35 + Government Fees
+- Meta description: Incorporate in Saskatchewan from Regina for $35, HST included, plus the $255 ISC fee. A CPA checks your shares, Saskatchewan contact and City licence first.
