@@ -9,7 +9,7 @@
 .entry-header{display:none!important}
 .ast-article-single,.ast-article-single .entry-content{margin-top:0;padding-top:0}
 .cnf-w{max-width:1000px;margin:0 auto;padding:40px 20px 60px;font-family:Lato,sans-serif;color:#333;font-size:17px;line-height:1.65}
-.cnf-w h2{font-family:Poppins,sans-serif;color:#314d8a;font-size:24px;font-weight:600;margin:34px 0 10px}
+.cnf-w h2{font-family:Poppins,sans-serif;color:#314d8a;font-size:24px;font-weight:600;text-align:center;margin:60px 0 30px}
 .cnf-w a{color:#314d8a;font-weight:600}.cnf-w a:hover{color:#2087c9}
 .cnf-crumb{font-size:14px;color:#636363}.cnf-crumb a{font-weight:400;text-decoration:none}
 .cnf-by{font-size:15px;margin:6px 0 0}.cnf-rev{font-size:15px;color:#636363;margin:2px 0 18px}
@@ -17,23 +17,26 @@
 .cnf-tbl th{background:#314d8a;color:#fff;font-family:Poppins,sans-serif;font-weight:600}.cnf-tbl td:last-child{font-weight:700;color:#314d8a}
 .cnf-cap{font-size:14px;color:#636363;margin-top:8px}
 .cnf-btn{display:inline-block;background:#314d8a;color:#fff!important;padding:16px 36px;border-radius:35px;font-family:Poppins,sans-serif;font-weight:600;text-decoration:none;margin:20px 12px 8px 0}.cnf-btn:hover{background:#2087c9}
-.cnf-trust{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:28px 0 8px;list-style:none;padding:0}
+.cnf-trust{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:30px 0 0;list-style:none;padding:0}
 .cnf-trust li{background:#f5f8fc;border:1px solid #dfe6ef;border-radius:10px;padding:18px 20px;font-family:Poppins,sans-serif;font-weight:600;color:#314d8a;font-size:16px;line-height:1.45}
-.cnf-boxes{list-style:none;margin:26px 0 0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-.cnf-box{position:relative;z-index:0;overflow:hidden;display:flex;flex-direction:column;height:100%;box-sizing:border-box;padding:30px 20px;border:0;border-radius:20px;background:#fff;text-align:center;text-decoration:none!important;box-shadow:0 4px 20px rgba(0,0,0,.08)}
-.cnf-box::before{content:'';position:absolute;z-index:-1;left:0;right:0;bottom:0;height:0;background-image:linear-gradient(rgba(0,0,0,.541),rgba(0,0,0,.541)),url('https://corpnilfilingfor300.ca/wp-content/uploads/2026/09/gondaliya-cpa-office.jpg');background-color:#2087c9;background-size:cover;background-position:center center;background-repeat:no-repeat;transition:height .3s ease}
+.cnf-boxes{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:20px;align-items:stretch}
+.cnf-boxes>li{display:flex;float:none;list-style:none;margin:0;padding:0;min-width:0}
+.cnf-box{position:relative;isolation:isolate;overflow:hidden;flex:1 1 auto;display:flex;flex-direction:column;box-sizing:border-box;padding:30px 20px;border:0;border-radius:20px;background:#fff;text-align:center;text-decoration:none!important;box-shadow:0 4px 20px rgba(0,0,0,.08)}
+.cnf-box::before{content:'';position:absolute;z-index:0;left:0;right:0;bottom:0;height:0;background-image:linear-gradient(rgba(0,0,0,.541),rgba(0,0,0,.541)),url('https://corpnilfilingfor300.ca/wp-content/uploads/2026/09/gondaliya-cpa-office.jpg');background-color:#2087c9;background-size:cover;background-position:center center;background-repeat:no-repeat;transition:height .3s ease}
 .cnf-box:hover::before,.cnf-box:focus::before{height:100%}
+.cnf-box>*{position:relative;z-index:1}
 .cnf-box svg{width:48px;height:48px;display:block;margin:0 auto;padding:15px;box-sizing:content-box;fill:#314d8a;transition:fill .3s ease}
 .cnf-box h3{font-family:Poppins,sans-serif;font-size:20px;font-weight:600;color:#314d8a;margin:15px 0 0;padding:10px 20px;line-height:1.35;transition:color .3s ease}
 .cnf-box p{margin:0;padding:0 20px 10px;color:#636363;font-family:Lato,sans-serif;font-size:16px;line-height:1.7;font-weight:400;transition:color .3s ease}
-.cnf-box .cnf-more{margin:auto auto 0;display:inline-block;background:#2087c9;color:#fff;font-family:Poppins,sans-serif;font-weight:500;font-size:15px;padding:10px 26px;border-radius:30px;border:0}
+.cnf-box .cnf-more{margin:auto auto 0;align-self:center;display:inline-block;background:#2087c9;color:#fff;font-family:Poppins,sans-serif;font-weight:500;font-size:15px;padding:10px 26px;border-radius:30px;border:0}
 .cnf-box:hover svg{fill:#fff}
 .cnf-box:hover h3,.cnf-box:hover p{color:#fff}
 @media(max-width:1024px){.cnf-boxes{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:900px){.cnf-boxes{grid-template-columns:1fr}}
 @media(max-width:767px){.cnf-box h3{font-size:22px}}
-.cnf-nav{list-style:none;margin:26px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:12px 28px;justify-content:center}
+.cnf-nav{list-style:none;margin:30px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:12px 28px;justify-content:center}
 .cnf-nav li{font-family:Poppins,sans-serif;font-weight:600;font-size:16px}
-.cnf-faq{margin:18px 0 0}
+.cnf-faq{margin:0}
 .cnf-faq details{border:0;border-radius:14px;background:#fff;margin:0 0 14px;box-shadow:0 2px 14px rgba(17,34,68,.08)}
 .cnf-faq summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:22px 28px}
 .cnf-faq summary h3{margin:0;font-family:Poppins,sans-serif;font-weight:700;font-size:19px;color:#314d8a;line-height:1.4}
@@ -42,7 +45,7 @@
 .cnf-faq details[open] summary::after{transform:rotate(45deg)}
 .cnf-faq .cnf-faq-a{padding:0 28px 24px}
 .cnf-faq .cnf-faq-a p{margin:0;line-height:1.7}
-@media(max-width:900px){.cnf-trust,.cnf-boxes{grid-template-columns:1fr}}</style>
+@media(max-width:900px){.cnf-trust{grid-template-columns:1fr}}</style>
 <div class="cnf-hero"><div class="cnf-hero-in"><h1>Nil T2 Filing in British Columbia</h1><p class="cnf-hero-sub">$300.00 Plus HST Per Tax Year</p><p class="cnf-hero-lede">We are a registered EFILE electronic filer. Your return is transmitted to the Canada Revenue Agency electronically.</p><p><a class="cnf-hero-btn" href="https://corpnilfilingfor300.ca/form/">Start Nil T2 Filing NOW</a></p></div></div>
 <div class="cnf-w">
 <nav class="cnf-crumb" aria-label="Breadcrumb"><a href="https://corpnilfilingfor300.ca/">Nil T2 filing in Canada</a> &rsaquo; <span aria-current="page">Nil T2 filing in British Columbia</span></nav>

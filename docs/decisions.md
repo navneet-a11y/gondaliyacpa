@@ -3168,3 +3168,41 @@ the card section as its own Elementor template and embedding it with
 `[elementor-template id="..."]` would end the drift and bring the real icon
 font, the real hover and the real buttons with it. Worth doing before the
 remaining 11 hubs and the 144 F4 jurisdiction pages are built.
+
+## 2026-10-21 — card layout fault fixed; headings centred; section rhythm 60/30
+
+Navneet sent a screenshot showing the cards overlapping the nav row and the FAQ
+heading below them. Two faults in the CSS I shipped, both mine:
+
+1. **The overlap.** `.cnf-box` carried `height:100%` while its `<li>` had auto
+   height, so the percentage resolved against an indefinite height and the cards
+   escaped their grid rows, painting over everything after the grid. The `<li>`
+   is now the flex parent (`display:flex`) and the card fills it with
+   `flex:1 1 auto` — the ordinary way to get equal-height grid cards, with no
+   percentage height anywhere.
+2. **The hover never showed.** `::before` sat at `z-index:-1` inside the
+   stacking context `z-index:0` created on the card, so it painted behind the
+   card's own white background. It now sits at `z-index:0` with
+   `isolation:isolate` on the card and the content lifted to `z-index:1`.
+
+Also found while reading the shipped stylesheet: the media queries ran
+1024 -> 767 -> 900, so the one-column rule sat after the font-size rule and the
+grid breakpoints were split across two separate blocks. Reordered to
+1024 -> 900 -> 767, with `.cnf-trust` left in its own query.
+
+Separately, Navneet asked for centred headings and more space between sections.
+Both taken from template 1004 rather than chosen: every section heading in it is
+`align: center`, and the repeated section rhythm on sections /1, /4 and /14 is
+`margin-top: 60px; margin-bottom: 30px`. So `.cnf-w h2` is now centred at 60/30
+and the blocks below it (`.cnf-trust`, `.cnf-boxes`, `.cnf-nav`, `.cnf-faq`) sit
+flush rather than each carrying its own top margin. Hero and body copy stay left
+aligned, matching the template, where only headings are centred.
+
+Live length 34,832 matches the local build exactly.
+
+**Standing limitation.** This container has no outbound access to the site
+(`CONNECT tunnel failed, 403`), so I cannot render the page and am working from
+markup and the template JSON alone. Both faults above were visible in the
+stylesheet once read back, but neither would have shipped if the page could be
+rendered here. The Elementor-section approach noted in the previous entry would
+remove this class of error entirely.
