@@ -3040,3 +3040,45 @@ is right, the twenty answer pages and the guides hub are each missing a line rat
 having moved one. **Flagged for Sharad Gondaliya rather than acted on**: it would change
 twenty-one live URLs on a re-reading, and the plan is genuinely ambiguous between 7.5
 rule 1's "every URL" and 7.9's per-family positions.
+
+## 2026-10-21 — BC hub restyled to the /services/ visual language
+
+Navneet asked for the British Columbia hub (page 996) to sit closer to
+`/services/` in style — "service boxes etc FAQ heading" — while keeping all of
+its content. Done; no sentence was removed.
+
+What changed on page 996 (10,900 to 16,272 bytes):
+
+- **Service boxes.** The nine-link `cnf-kids` grid became nine `cnf-box` cards,
+  each an inline SVG icon, an `<h3>` title and a one-sentence description,
+  matching the card pattern on `/services/`. The descriptions are the wording
+  already live on `/services/` for the six services; the three navigation cards
+  (cost, deadlines, guides) are new one-liners. Section heading follows
+  `/services/`: "Browse Our Affordable Nil T2 Filing Services in British
+  Columbia".
+- **FAQ section.** The six question `<h2>`s are now a `cnf-faq` disclosure list
+  under one heading, "Nil T2 Filing in British Columbia: Frequently Asked
+  Questions". Each `<details>` is rendered `open`, so nothing that was visible
+  before is now hidden; the disclosure only lets a reader collapse what they
+  have read.
+- **Heading outline preserved.** The question text sits in an `<h3>` inside each
+  `<summary>`. Dropping the questions to bare summary text would have taken six
+  keyword headings out of the outline, so it was not done that way. Outline is
+  now one H1, four H2, fifteen H3, no skipped levels.
+- **Trust strip.** A three-up strip above the intro, reproducing verbatim the
+  three strings already approved and live on `/services/`: "Registered EFILE
+  electronic filer", "CRA confirmation within 3 business days", "$300.00 plus
+  HST per tax year". Reproducing approved wording, not a trust-strip wording
+  change, so this does not need separate approval under the approvals section
+  of CLAUDE.md.
+
+Hard rules held: no FAQPage, HowTo, Review or aggregateRating schema anywhere on
+the page (rule 6) — the accordion is presentational only; no emoji; no non-ASCII;
+CRA wording unchanged; T183CORP written in full; price reads "$300.00 plus HST".
+Gate clear, and the published page byte-verified at 16,272 against the local
+build, so WordPress stripped none of the `<style>`, SVG or `<details>` markup.
+
+Still open from before, unchanged by this: the HST price-string question (BC is
+not an HST province, and "Tax is added at the rate for your province" is the
+interim wording), and the byline sweep on page 516 and the twelve Ontario
+`nil_service_place` items.
