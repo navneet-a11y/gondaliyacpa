@@ -3306,3 +3306,55 @@ Use a placeholder and a second plain pass, as the BC publish did.**
 The remaining 2-byte gap was two cosmetic blank lines the generator emitted
 after `</style>` and after the hero, plus a trailing newline; the generator now
 matches the page exactly. Local and live both 37,286.
+
+## 2026-10-21 — five British Columbia F4 service pages published
+
+Built by `build/f4/build_f4_bc.py`, modelled on the twelve Ontario
+`nil_service_place` items: same stylesheet, same section order, same schema
+shape, same closing furniture. Gated by `build/f4/gate.py` and proofread as
+rendered text before publishing.
+
+| Page | ID | Bytes |
+|---|---|---|
+| /nil-t2-filing-british-columbia/ | 1025 | 10,095 |
+| /catch-up-nil-t2-filing-british-columbia/ | 1027 | 9,844 |
+| /dormant-corporation-filing-british-columbia/ | 1029 | 10,470 |
+| /final-t2-before-dissolution-british-columbia/ | 1031 | 9,878 |
+| /t2-short-filing-british-columbia/ | 1033 | 9,634 |
+
+All five verified byte-identical to the local build after publishing, and all
+five carry the full F4 meta set.
+
+### Three deliberate differences from the Ontario siblings
+
+1. **No HST computation.** The Ontario pages carry "plus $39.00 HST at 13 per
+   cent, so $339.00". British Columbia is not an HST province, so that
+   arithmetic would be wrong. These pages carry the price string only and say
+   tax is added at the rate for the province. The gate blocks any HST
+   computation from being reintroduced. The underlying "plus HST" wording
+   question is still open.
+2. **The 7.5 rule 3 byline**, with the membership number. The Ontario siblings
+   carry the shorter "By Sharad Gondaliya, CPA", which does not satisfy that
+   rule. New pages are written to the rule rather than to the defect, so the
+   two sets differ by one clause until the Ontario sweep happens.
+3. **No CRA counts in the data table.** Ontario quotes 1,108,730 and 87,990.
+   The CRA publishes dollar amounts by jurisdiction rather than counts, so
+   those could not be reproduced for BC and were not invented. The BC table
+   carries verifiable registry rules instead, and the gate rejects any
+   thousands-separated number appearing in a data cell.
+
+`cnf_price_incl_hst` and `cnf_overflow_price_incl_hst` are left empty on all
+five, for the same reason as (1): a tax-inclusive figure for BC would
+contradict the visible "plus HST" wording.
+
+### Hub updated so the five are not orphans
+
+The BC hub's six service cards pointed at the national service pages. The five
+with a BC child now point at it and carry the BC title, matching how the
+Ontario hub links its twelve. The sixth, inactive holding, has no BC page yet
+and still points at the national page. The generator takes this from a
+`children` map on the jurisdiction record, so the next province works the same
+way. Hub now 34,514 bytes, verified against the local build before publishing.
+
+**All new copy on these five pages needs sign-off** with the Ontario card copy
+from the previous entry.
