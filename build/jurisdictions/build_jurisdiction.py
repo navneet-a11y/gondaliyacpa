@@ -158,9 +158,15 @@ def build(j):
     b.append('<nav class="cnf-crumb" aria-label="Breadcrumb">'
              + a(SITE + '/', 'Nil T2 filing in Canada') + ' &rsaquo; '
              '<span aria-current="page">Nil T2 filing in ' + name + '</span></nav>')
-    b.append('<p class="cnf-by">By '
-             + a(SITE + '/sharad-gondaliya-cpa/', 'Sharad Gondaliya, CPA')
-             + ', registered EFILE electronic filer</p>')
+    # 7.5 byline rule 3: a page stating a filing rule, a penalty figure, a
+    # schedule requirement or a T183CORP rule carries this exact byline, with
+    # the membership number. A jurisdiction hub states filing rules, so it does.
+    # Page 516 and the twelve Ontario service pages still carry the older
+    # "By Sharad Gondaliya, CPA, registered EFILE electronic filer" form, which
+    # does not satisfy rule 3. Logged for a sweep.
+    b.append('<p class="cnf-by">Written and reviewed by '
+             + a(SITE + '/sharad-gondaliya-cpa/', 'Sharad Gondaliya, CPA (Ontario)')
+             + ', CPA Ontario Membership 61040184.</p>')
     b.append('<p class="cnf-rev">Last reviewed: ' + TODAY + '</p>')
 
     b.append('<p>Nil T2 filing in ' + name + ' is the annual T2 return a corporation '

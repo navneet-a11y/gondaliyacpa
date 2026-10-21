@@ -54,8 +54,19 @@ for r in recs:
         fail.append('%s: %d H1' % (s, c.count('<h1>')))
     if 'Last reviewed:' not in c:
         fail.append('%s: no last-reviewed line' % s)
-    if 'Sharad Gondaliya, CPA' not in c:
-        fail.append('%s: no byline' % s)
+    # 7.5 byline rule 3: exact wording, including the membership number, on any
+    # page stating a filing rule, a penalty figure, a schedule requirement or a
+    # T183CORP rule. A jurisdiction hub states filing rules.
+    if 'Written and reviewed by' not in c:
+        fail.append('%s: byline is not the 7.5 rule 3 form' % s)
+    if 'CPA Ontario Membership 61040184' not in c:
+        fail.append('%s: byline missing the membership number' % s)
+    if re.search(r'By <a[^>]*>Sharad Gondaliya, CPA</a>, registered EFILE', c):
+        fail.append('%s: superseded byline form' % s)
+    # 7.5 last-reviewed rule 1: the visible line renders under the H1, above the
+    # first paragraph, on every URL.
+    if not re.search(r'cnf-rev">Last reviewed: [A-Z][a-z]+ \d{1,2}, \d{4}', c):
+        fail.append('%s: no Last reviewed line in the position 7.5 rule 1 gives' % s)
     if any(ord(ch) > 0x2100 for ch in c):
         fail.append('%s: non-ASCII symbol that may be an emoji' % s)
     # no invented statistics: a bare thousands-separated integer in a data cell

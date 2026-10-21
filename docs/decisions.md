@@ -2982,3 +2982,61 @@ months after each anniversary...") and a subject-verb problem ("Two consecutive 
 non-filing allows the registrar..."). Both came from splicing a data field into mid
 sentence. Fixed in the generator, not the output. Worth noting that no gate catches
 this: reading the rendered page as plain text is still necessary.
+
+### 2026-10-21 — What the top-of-body block is actually required to contain
+
+Navneet asked whether the breadcrumb, byline and last-reviewed block the BC hub opens
+with is required by the plan. Checked against 7.5 and 7.9 rather than answered from
+memory. Three different answers:
+
+**Visible breadcrumb: not required.** The only breadcrumb requirement in the plan is
+schema, at line 1342: "Schema: Organization, WebSite, BreadcrumbList site-wide". There
+is no rule anywhere requiring a rendered breadcrumb trail in the body. Page 996 has the
+BreadcrumbList schema, which is the requirement. The visible `cnf-crumb` nav is a
+design choice, kept because Astra's own breadcrumbs are disabled on these pages and it
+is the only visible trail.
+
+**Byline: required, and the wording was wrong.** 7.5 byline rule 3: "Every page that
+states a filing rule, a penalty figure, a schedule requirement or a T183CORP rule is
+bylined to the reviewing CPA directly: **Written and reviewed by Sharad Gondaliya, CPA
+(Ontario), CPA Ontario Membership 61040184.**" A jurisdiction hub states filing rules
+(the six-month T2 deadline, that BC has no separate provincial return, the T183CORP
+signing sequence), so rule 3 applies whatever family it is in.
+
+Page 996 shipped with the older form, "By Sharad Gondaliya, CPA, registered EFILE
+electronic filer", inherited from page 516. That is not rule 3: it drops "Written and
+reviewed by", drops "(Ontario)" and drops the membership number, which rule 4 makes the
+point of the line. **Corrected on page 996 and in the generator.** The gate now rejects
+the superseded form and requires the membership number.
+
+**The same defect is live on thirteen other URLs.** Probed and confirmed: page 516
+carries the old form, and item 512 has no membership number at all. On the same pattern
+that is page 516 plus the twelve Ontario `nil_service_place` items (512, 715 to 719,
+912, 914 to 918). Not swept in this pass, because Navneet asked a question rather than
+for a sweep. It is a text-only edit and, under 7.5 rule 4, advances no stamp.
+
+**Last reviewed: required, and its position here is right.** 7.5 last-reviewed rule 1 is
+categorical: "The visible line is Last reviewed: <Month D, YYYY> and renders under the
+H1 above the first paragraph **on every URL**." Page 996's H1 is in the hero and the
+line sits above the first paragraph, so it satisfies rule 1.
+
+7.9's per-family table does **not** override that here, because the two are different
+stamps. 7.9's second column is the date's own wording, and for F3 and F4 that wording is
+"Local data pulled <date>", positioned under the place data row. Page 516 carries both,
+with different dates: "Last reviewed: October 15, 2026" at the top and "Local data
+pulled October 14, 2026" in the table caption. A review date and a data-freshness date
+are not the same thing.
+
+Page 996 carries the rule 1 line plus a caption under the data table, worded "British
+Columbia registry rules confirmed October 21, 2026" rather than "Local data pulled",
+because no data was pulled: the row is rules, not counts.
+
+**One open question this raises about the twenty Family 5 answer pages.** Earlier in
+this session the 7.9 row for F1, F2, F5, F8, F10, F11, F12, F15 and F16, "Footer of the
+article body", was read as moving the "Last reviewed" line to the footer. On the reading
+above, that row governs the "Updated <date>" freshness stamp, and 7.5 rule 1's "Last
+reviewed" line is a separate line still due under the H1 on every URL. If that reading
+is right, the twenty answer pages and the guides hub are each missing a line rather than
+having moved one. **Flagged for Sharad Gondaliya rather than acted on**: it would change
+twenty-one live URLs on a re-reading, and the plan is genuinely ambiguous between 7.5
+rule 1's "every URL" and 7.9's per-family positions.
