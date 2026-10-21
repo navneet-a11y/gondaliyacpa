@@ -197,3 +197,11 @@
 ## /industries/us-companies-expanding-to-canada/ (page 10504, published 2026-10-21, meta set by connector)
 - Meta title: US Company Expanding to Canada | Incorporate for $35
 - Meta description: We incorporate your Canadian subsidiary for $35, HST included. Government fees separate. A CPA settles branch versus subsidiary before you file.
+
+## /incorporation-services-vaughan/ (page 10508, draft created 2026-10-21, meta set by connector)
+- Meta title: Incorporate a Business in Vaughan | $35 + Government Fees
+- Meta description: Incorporate in Vaughan for $35, HST included, plus the $300 Ontario fee. A CPA at our Woodbridge office checks your shares and any City licence first.
+
+## /incorporation-services-markham/ (page 10513, draft created 2026-10-21, meta set by connector)
+- Meta title: Incorporate a Business in Markham | $35 + Government Fees
+- Meta description: Incorporate in Markham for $35, HST included, plus the $300 Ontario fee. A CPA checks your shares, investors and any City licence before we file.
