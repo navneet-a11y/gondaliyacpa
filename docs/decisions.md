@@ -2868,3 +2868,117 @@ The lesson applied: batch 3's generator was committed **before** publishing guid
 
 All twelve guides and all twenty answer pages remain **pending Sharad Gondaliya's
 sign-off**. Line 1217 owner is "Sharad Gondaliya reviews, Navneet publishes".
+
+## 2026-10-21 — British Columbia jurisdiction hub, and three problems it exposed
+
+`/british-columbia/` published as page 996, 10,870 bytes, byte-verified. Built from a
+new parameterised generator (`build/jurisdictions/`) so the remaining eleven
+jurisdictions are a data change rather than a template change.
+
+### 20th plan conflict: jurisdiction hubs are not in the plan at all
+
+Checked before replicating the pattern eleven more times. The 6(a) family table has no
+jurisdiction-hub family:
+
+| Family | Pattern | Count | Note |
+|---|---|---|---|
+| F3 | `/<city>/` | 15 | City hubs. Every listed slug is an Ontario city |
+| F4 | 12 service slugs x place | 336 | Jurisdictions appear here, as `/nil-t2-filing-ontario/` |
+| F16 | `/<hub>/` | 5 | Named: `/services/`, `/tools/`, `/locations/`, `/guides/`, `/blog/` |
+
+A bare `/ontario/` or `/british-columbia/` belongs to none of them. Page 516 was built
+anyway, before this session, and `docs/decisions.md` records only its banner and its
+children, never a plan basis.
+
+**Worse, page 516 shares its exact title with its own child.** Page 516 is "Nil T2
+Filing in Ontario" at `/ontario/`; item 512 is "Nil T2 Filing in Ontario" at
+`/nil-t2-filing-ontario/`. Two URLs, one title, one intent. That is self-competition,
+and it is live.
+
+Built as Navneet asked, with the title and H1 differentiated from the F4 child so the
+BC pair will not repeat the Ontario mistake:
+
+- page 996 title "Nil T2 Filing for British Columbia Corporations", H1 "Nil T2 Filing
+  in British Columbia"
+- the future `/nil-t2-filing-british-columbia/` keeps the plain service title
+
+**Ontario should be fixed the same way**, and Sharad Gondaliya should decide whether
+jurisdiction hubs exist as a family at all before the other eleven are built. If they
+do, they are eleven more unplanned URLs on top of the 968.
+
+### The price string is factually wrong for eight of thirteen jurisdictions
+
+Page 516 says: "With 13 per cent HST, that is $339.00 in total per tax year." That is
+the Ontario rate.
+
+**British Columbia is not an HST province.** Nor are Alberta, Saskatchewan, Manitoba,
+Quebec, Yukon, the Northwest Territories or Nunavut. A BC client is charged 5 per cent
+GST, not 13 per cent HST; a Quebec client is charged GST plus QST. HST applies in only
+five jurisdictions: Ontario at 13 per cent, and New Brunswick, Nova Scotia, Newfoundland
+and Labrador and Prince Edward Island at 15 per cent.
+
+So the standing price string "$300.00 plus HST per tax year" names the wrong tax for
+eight of the thirteen jurisdictions, and hard rule 9 mandates that string on every page.
+On a CPA firm's own site that is a tax-accuracy problem, not a style one.
+
+What was done on page 996, and the line between the two:
+
+- **The computation was dropped.** "13 per cent HST, that is $339.00" is a factual claim
+  and it is false in BC. Page 996 says "Tax is added at the rate for your province."
+- **The price string was kept.** "$300.00 plus HST per tax year" stays, for consistency
+  with the other 94 live URLs. Changing a pricing string across the whole site is
+  Sharad Gondaliya's decision, not this generator's.
+
+**This needs deciding before the other eleven hubs and the 144 remaining F4 jurisdiction
+pages are built**, because every one of them will carry the string. A wording that works
+everywhere, for example "$300.00 plus applicable sales tax per tax year", would need
+hard rule 9 amended.
+
+The gate now blocks an HST rate or an HST-inclusive total on any non-HST jurisdiction
+page, so this cannot be reintroduced by copying Ontario.
+
+### No corporation counts were invented
+
+Page 516 carries "T2 returns assessed 1,108,730" and "first-time T2 filers in 2023
+87,990", sourced to a Canada Revenue Agency assessment table. The equivalent BC figures
+could not be found: the CRA T2 statistics tables report dollar amounts by jurisdiction,
+not counts of returns. Searched 2026-10-21.
+
+Rather than invent them or leave a placeholder on a live page, the data row became a
+table of **verifiable BC filing rules**, which is a better place data row for a reader
+anyway: the T2 due date, that there is no separate BC corporate return, the annual
+report deadline, where it is filed, its statutory authority, and the dissolution risk.
+The gate now rejects any bare thousands-separated integer in a data cell, so an
+unsourced count cannot be added by copying.
+
+**Where page 516's two figures came from needs confirming** so BC and the other eleven
+can be sourced the same way, or so Ontario's can be removed if they cannot be.
+
+### BC facts and their sources, checked 2026-10-21
+
+- BC corporate income tax is collected through the federal T2; Alberta (AT1) and Quebec
+  (CO-17) are the only provinces administering their own. This is the mirror of hard
+  rule 8, which requires the AT1 and CO-17 statements; the correct statement for the
+  other eleven is the opposite one, and it is now made explicitly.
+- Annual report due within two months after each anniversary of the date of
+  incorporation, filed online with BC Registries and Online Services, under section 51
+  of the Business Corporations Act. The registrar may dissolve a company after two
+  consecutive years of non-filing, and a certificate of good standing will not issue.
+  https://www.corporateonline.gov.bc.ca/WebHelp/overview_annbc.htm
+  https://www.corporateonline.gov.bc.ca/WebHelp/good_standing.htm
+- The BC registry filing fee was deliberately omitted: the official Form 06 COM lists a
+  paper fee that differs from the online fee, and a quoted fee dates quickly.
+
+### Services grid: live pages, not placeholders
+
+No BC F4 service pages exist, so the grid links the six live root service pages plus
+the cost, deadlines and guides hubs. `cnf_child_count` is 0, honestly. The grid is
+replaced by the real children as the twelve BC service pages are built.
+
+### Two sentence defects caught on proofread, not by the gate
+
+The first build produced a fragment ("...not covered by the $300.00 fee. Within two
+months after each anniversary...") and a subject-verb problem ("Two consecutive years of
+non-filing allows the registrar..."). Both came from splicing a data field into mid
+sentence. Fixed in the generator, not the output. Worth noting that no gate catches
+this: reading the rendered page as plain text is still necessary.
