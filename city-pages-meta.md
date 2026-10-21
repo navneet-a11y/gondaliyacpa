@@ -206,10 +206,10 @@
 - Meta title: Incorporate a Business in Markham | $35 + Government Fees
 - Meta description: Incorporate in Markham for $35, HST included, plus the $300 Ontario fee. A CPA checks your shares, investors and any City licence before we file.
 
-## /incorporation-services-winnipeg/ (page 10520, draft created 2026-10-21, meta set by connector)
+## /incorporation-services-winnipeg/ (page 10520, published 2026-10-21, meta set by connector)
 - Meta title: Incorporate a Business in Winnipeg | $35 + Government Fees
 - Meta description: Incorporate in Manitoba from Winnipeg for $35, HST included, plus the $350 Companies Office fee. A CPA checks your board and shares before we file.
 
-## /incorporation-services-kitchener-waterloo/ (page 10525, draft created 2026-10-21, meta set by connector)
+## /incorporation-services-kitchener-waterloo/ (page 10525, published 2026-10-21, meta set by connector)
 - Meta title: Incorporate in Kitchener-Waterloo | $35 + Government Fees
 - Meta description: Incorporate in Kitchener, Waterloo or Cambridge for $35, HST included, plus the $300 Ontario fee. A CPA checks your shares, IP and any City licence first.

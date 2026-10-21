@@ -9,7 +9,7 @@ Checked against the live WordPress site on 14 October 2026, updated 16 October 2
 | Home | 3 | 3 | 0 | 0 |
 | Services | 26 | 21 | 0 | 5 |
 | Incorporate by Province and Federal | 13 | 12 | 0 | 1 |
-| Service Areas | 27 | 12 | 11 | 4 |
+| Service Areas | 27 | 14 | 9 | 4 |
 | Industries | 34 | 33 | 0 | 1 |
 | Pricing | 3 | 3 | 0 | 0 |
 | Compare | 14 | 11 | 0 | 3 |
@@ -88,9 +88,9 @@ Checked against the live WordPress site on 14 October 2026, updated 16 October 2
 | /incorporation-services-hamilton/ | P2 | Old 2025 page only, rebuild | /open-corporation-in-hamilton/ |
 | /incorporation-services-markham/ | P2 | Built | /incorporation-services-markham/ |
 | /incorporation-services-edmonton/ | P2 | Old 2025 page only, rebuild | /open-corporation-in-edmonton/ |
-| /incorporation-services-winnipeg/ | P2 | Draft (page 10520) | /incorporation-services-winnipeg/ |
+| /incorporation-services-winnipeg/ | P2 | Built | /incorporation-services-winnipeg/ |
 | /incorporation-services-montreal/ | P2 | Old 2025 page only, rebuild | /open-corporation-in-montreal/ |
-| /incorporation-services-kitchener-waterloo/ | P2 | Draft (page 10525) | /incorporation-services-kitchener-waterloo/ |
+| /incorporation-services-kitchener-waterloo/ | P2 | Built | /incorporation-services-kitchener-waterloo/ |
 | /incorporation-services-london/ | P2 | Old 2025 page only, rebuild | /open-corporation-in-london-ontario/ |
 | /incorporation-services-guelph/ | P3 | Not built |  |
 | /incorporation-services-windsor/ | P3 | Old 2025 page only, rebuild | /open-corporation-in-windsor/ |
