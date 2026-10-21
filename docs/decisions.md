@@ -3206,3 +3206,40 @@ markup and the template JSON alone. Both faults above were visible in the
 stylesheet once read back, but neither would have shipped if the page could be
 rendered here. The Elementor-section approach noted in the previous entry would
 remove this class of error entirely.
+
+## 2026-10-21 — root cause of the broken cards: block elements inside an anchor
+
+The second screenshot showed the real fault, which my previous entry diagnosed
+wrongly. The "Learn more" buttons were sitting in boxes of their own, beside the
+card content: six cards were rendering as twelve grid items.
+
+**Cause.** The card was `<li><a class="cnf-box"><svg><h3><p><span></a></li>`.
+An `<a>` wrapping block-level elements does not survive WordPress's content
+filters — the anchor is split, so the trailing `<span class="cnf-more">` ended
+up a sibling of the card rather than a child, and `.cnf-box` applied to two
+fragments instead of one card. That also explains the first screenshot: the
+fragments overlapped the content below because they were never one box.
+
+**Fix.** The `<li>` is now the card itself and the only anchor contains text:
+
+    <li class="cnf-box"><svg/><h3>..</h3><p>..</p>
+      <a class="cnf-more" href="..">Learn more</a></li>
+
+No block element is inside an anchor anywhere, so there is nothing for the
+filters to split. The whole card stays clickable through a stretched
+`.cnf-more::after` covering the card, which is why the card keeps
+`position:relative`. `height:100%` is gone with the wrapper, and `.cnf-boxes>li`
+merged into `.cnf-box` since the list item is now the card.
+
+The `height:100%` and `z-index` corrections in the previous entry were real
+improvements but were not the cause; this was.
+
+**Verified before publishing.** The transform was applied locally to the exact
+previous build and compared against the new generator output: 6 markup
+replacements, byte-identical result at 34,817. The same three replacements then
+ran against page 996, which finished at 34,817.
+
+**Rule for every future template.** Never wrap `<h1>`-`<h6>`, `<p>`, `<div>`,
+`<ul>` or `<table>` in an `<a>` in content published through the REST API. Link
+a text-only element and stretch it with a pseudo-element when the whole block
+should be clickable.

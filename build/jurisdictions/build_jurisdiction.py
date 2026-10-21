@@ -108,15 +108,15 @@ CSS = """<style>.cnf-hero{background-image:linear-gradient(rgba(11,26,51,.82),rg
 .cnf-trust{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:30px 0 0;list-style:none;padding:0}
 .cnf-trust li{background:#f5f8fc;border:1px solid #dfe6ef;border-radius:10px;padding:18px 20px;font-family:Poppins,sans-serif;font-weight:600;color:#314d8a;font-size:16px;line-height:1.45}
 .cnf-boxes{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:20px;align-items:stretch}
-.cnf-boxes>li{display:flex;float:none;list-style:none;margin:0;padding:0;min-width:0}
-.cnf-box{position:relative;isolation:isolate;overflow:hidden;flex:1 1 auto;display:flex;flex-direction:column;box-sizing:border-box;padding:30px 20px;border:0;border-radius:20px;background:#fff;text-align:center;text-decoration:none!important;box-shadow:0 4px 20px rgba(0,0,0,.08)}
+.cnf-box{position:relative;isolation:isolate;overflow:hidden;display:flex;flex-direction:column;box-sizing:border-box;min-width:0;float:none;list-style:none;margin:0;padding:30px 20px;border:0;border-radius:20px;background:#fff;text-align:center;box-shadow:0 4px 20px rgba(0,0,0,.08)}
 .cnf-box::before{content:'';position:absolute;z-index:0;left:0;right:0;bottom:0;height:0;background-image:linear-gradient(rgba(0,0,0,.541),rgba(0,0,0,.541)),url('https://corpnilfilingfor300.ca/wp-content/uploads/2026/09/gondaliya-cpa-office.jpg');background-color:#2087c9;background-size:cover;background-position:center center;background-repeat:no-repeat;transition:height .3s ease}
 .cnf-box:hover::before,.cnf-box:focus::before{height:100%}
 .cnf-box>*{position:relative;z-index:1}
 .cnf-box svg{width:48px;height:48px;display:block;margin:0 auto;padding:15px;box-sizing:content-box;fill:#314d8a;transition:fill .3s ease}
 .cnf-box h3{font-family:Poppins,sans-serif;font-size:20px;font-weight:600;color:#314d8a;margin:15px 0 0;padding:10px 20px;line-height:1.35;transition:color .3s ease}
 .cnf-box p{margin:0;padding:0 20px 10px;color:#636363;font-family:Lato,sans-serif;font-size:16px;line-height:1.7;font-weight:400;transition:color .3s ease}
-.cnf-box .cnf-more{margin:auto auto 0;align-self:center;display:inline-block;background:#2087c9;color:#fff;font-family:Poppins,sans-serif;font-weight:500;font-size:15px;padding:10px 26px;border-radius:30px;border:0}
+.cnf-box .cnf-more{margin:auto auto 0;align-self:center;display:inline-block;background:#2087c9;color:#fff!important;font-family:Poppins,sans-serif;font-weight:500;font-size:15px;padding:10px 26px;border-radius:30px;border:0;text-decoration:none!important;white-space:nowrap}
+.cnf-box .cnf-more::after{content:'';position:absolute;left:0;top:0;right:0;bottom:0}
 .cnf-box:hover svg{fill:#fff}
 .cnf-box:hover h3,.cnf-box:hover p{color:#fff}
 @media(max-width:1024px){.cnf-boxes{grid-template-columns:repeat(2,1fr)}}
@@ -265,9 +265,9 @@ def build(j):
     b.append('<h2>Browse Our Affordable Nil T2 Filing Services in ' + name + '</h2>')
     b.append('<ul class="cnf-boxes">')
     for c in SERVICE_CARDS:
-        b.append('<li><a class="cnf-box" href="%s%s">%s<h3>%s</h3><p>%s</p>'
-                 '<span class="cnf-more">Learn more</span></a></li>'
-                 % (SITE, c['href'], c['svg'], c['title'], c['desc']))
+        b.append('<li class="cnf-box">%s<h3>%s</h3><p>%s</p>'
+                 '<a class="cnf-more" href="%s%s">Learn more</a></li>'
+                 % (c['svg'], c['title'], c['desc'], SITE, c['href']))
     b.append('</ul>')
     b.append('<ul class="cnf-nav">')
     for href, label in NAV_LINKS:
