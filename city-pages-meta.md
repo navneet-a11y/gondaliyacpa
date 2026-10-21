@@ -185,3 +185,7 @@
 ## /industries/uber-and-delivery-drivers/ (page 10491, draft created 2026-10-21, meta set by connector)
 - Meta title: Incorporate as an Uber Driver Ontario | $35
 - Meta description: We prepare and file your ride-share or delivery corporation for $35, HST included. Government fees separate. A CPA checks your HST position first.
+
+## /industries/shopify-stores/ (page 10494, draft created 2026-10-21, meta set by connector)
+- Meta title: Incorporate a Shopify Store Ontario | $35
+- Meta description: We prepare and file your Shopify store's corporation for $35, HST included. Government fees separate. A CPA checks your payouts and HST first.
