@@ -69,10 +69,11 @@ NOT_NIL = ('This service is for a corporation with no activity in the tax year. 
 # one design and one set of words. Loaded from services-cards.json, which was
 # extracted from that page rather than retyped.
 # Two deliberate departures, both logged in docs/decisions.md:
-#  1. /services/ points every card at /form/. A jurisdiction hub exists to pass
-#     authority to the service pages, so each card points at its own page.
-#  2. /services/ ships the T2 Short card with no icon at all, which is why its
-#     title sits higher than its neighbours on the live page. One is supplied.
+#  1. Card links come from the template, which points each card at its own
+#     service page. The older rendered page pointed all six at /form/.
+#  2. The template gives T2 Short the glyph "icon icon-money". That glyph is
+#     ElementsKit's and is not reachable from here, and no page on the site
+#     renders it yet, so a document icon stands in. Swap it when available.
 SERVICE_CARDS = json.load(io.open(
     os.path.join(os.path.dirname(os.path.abspath(__file__)), 'services-cards.json'),
     encoding='utf-8'))
@@ -106,12 +107,18 @@ CSS = """<style>.cnf-hero{background-image:linear-gradient(rgba(11,26,51,.82),rg
 .cnf-btn{display:inline-block;background:#314d8a;color:#fff!important;padding:16px 36px;border-radius:35px;font-family:Poppins,sans-serif;font-weight:600;text-decoration:none;margin:20px 12px 8px 0}.cnf-btn:hover{background:#2087c9}
 .cnf-trust{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:28px 0 8px;list-style:none;padding:0}
 .cnf-trust li{background:#f5f8fc;border:1px solid #dfe6ef;border-radius:10px;padding:18px 20px;font-family:Poppins,sans-serif;font-weight:600;color:#314d8a;font-size:16px;line-height:1.45}
-.cnf-boxes{list-style:none;margin:26px 0 0;padding:6px;display:grid;grid-template-columns:repeat(3,1fr);gap:32px}
-.cnf-box{display:block;height:100%;box-sizing:border-box;padding:40px 30px;border:0;border-radius:16px;background:#fff;text-align:center;text-decoration:none!important;box-shadow:0 2px 16px rgba(17,34,68,.09);transition:box-shadow .2s ease,transform .2s ease}
-.cnf-box:hover{box-shadow:0 8px 26px rgba(17,34,68,.14);transform:translateY(-3px)}
-.cnf-box svg{width:48px;height:48px;display:block;margin:0 auto 22px;fill:#3f4652}
-.cnf-box h3{font-family:Poppins,sans-serif;font-size:22px;font-weight:700;color:#314d8a;margin:0 0 12px;line-height:1.3}
-.cnf-box p{margin:0;color:#6b7280;font-size:17px;line-height:1.7;font-weight:400}
+.cnf-boxes{list-style:none;margin:26px 0 0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.cnf-box{position:relative;z-index:0;overflow:hidden;display:flex;flex-direction:column;height:100%;box-sizing:border-box;padding:30px 20px;border:0;border-radius:20px;background:#fff;text-align:center;text-decoration:none!important;box-shadow:0 4px 20px rgba(0,0,0,.08)}
+.cnf-box::before{content:'';position:absolute;z-index:-1;left:0;right:0;bottom:0;height:0;background-image:linear-gradient(rgba(0,0,0,.541),rgba(0,0,0,.541)),url('https://corpnilfilingfor300.ca/wp-content/uploads/2026/09/gondaliya-cpa-office.jpg');background-color:#2087c9;background-size:cover;background-position:center center;background-repeat:no-repeat;transition:height .3s ease}
+.cnf-box:hover::before,.cnf-box:focus::before{height:100%}
+.cnf-box svg{width:48px;height:48px;display:block;margin:0 auto;padding:15px;box-sizing:content-box;fill:#314d8a;transition:fill .3s ease}
+.cnf-box h3{font-family:Poppins,sans-serif;font-size:20px;font-weight:600;color:#314d8a;margin:15px 0 0;padding:10px 20px;line-height:1.35;transition:color .3s ease}
+.cnf-box p{margin:0;padding:0 20px 10px;color:#636363;font-family:Lato,sans-serif;font-size:16px;line-height:1.7;font-weight:400;transition:color .3s ease}
+.cnf-box .cnf-more{margin:auto auto 0;display:inline-block;background:#2087c9;color:#fff;font-family:Poppins,sans-serif;font-weight:500;font-size:15px;padding:10px 26px;border-radius:30px;border:0}
+.cnf-box:hover svg{fill:#fff}
+.cnf-box:hover h3,.cnf-box:hover p{color:#fff}
+@media(max-width:1024px){.cnf-boxes{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:767px){.cnf-box h3{font-size:22px}}
 .cnf-nav{list-style:none;margin:26px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:12px 28px;justify-content:center}
 .cnf-nav li{font-family:Poppins,sans-serif;font-weight:600;font-size:16px}
 .cnf-faq{margin:18px 0 0}
@@ -255,7 +262,8 @@ def build(j):
     b.append('<h2>Browse Our Affordable Nil T2 Filing Services in ' + name + '</h2>')
     b.append('<ul class="cnf-boxes">')
     for c in SERVICE_CARDS:
-        b.append('<li><a class="cnf-box" href="%s%s">%s<h3>%s</h3><p>%s</p></a></li>'
+        b.append('<li><a class="cnf-box" href="%s%s">%s<h3>%s</h3><p>%s</p>'
+                 '<span class="cnf-more">Learn more</span></a></li>'
                  % (SITE, c['href'], c['svg'], c['title'], c['desc']))
     b.append('</ul>')
     b.append('<ul class="cnf-nav">')

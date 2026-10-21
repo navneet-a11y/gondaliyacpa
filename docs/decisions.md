@@ -3124,3 +3124,47 @@ slip got through.
 - The T2 Short card has no icon.
 - All six cards link to `/form/` rather than to the six service pages, so the
   section passes no internal link equity to them.
+
+## 2026-10-21 — card design taken from the saved Elementor template, not a screenshot
+
+Navneet saved the services page as the Elementor template "services page"
+(elementor_library 1004, 11:05 today) and told me to work from it. Doing that
+corrected three things I had guessed wrong from the rendered page and the
+screenshot, and settled one I had flagged as a deliberate departure.
+
+Read from widget `elementskit-icon-box` in that template, not estimated:
+
+| Property | Template | What I had |
+|---|---|---|
+| Card radius | 20px | 16px |
+| Grid gap | 20px | 32px |
+| Title | Poppins 20px #314D8A (22px mobile) | Poppins 22px 700 |
+| Description | Lato 16px #636363 | 17px #6b7280 |
+| Icon | 15px padding | 22px bottom margin |
+| Text box | padding 10/20, margin-top 15 | none |
+| Hover | bg #2087C9 + gondaliya-cpa-office.jpg under a #0000008A overlay, rising from the bottom; title, text and icon to #FFFFFF | a shadow lift |
+| Button | "Learn more", #2087C9 on #FFFFFF, radius 30px, no border | none |
+| Equal height | enabled | implicit |
+
+**Card links resolved.** I had logged "cards point at their own service pages"
+as a departure from /services/, which pointed all six at /form/. The template
+points each card at its own service page, so this is no longer a departure —
+the rendered page I first scraped was simply older than the template.
+
+**One gap remains.** The template gives the T2 Short card the glyph
+`icon icon-money`. That is an ElementsKit icon, this container has no outbound
+access to the site, and no page on the site renders that glyph yet, so neither
+page 321 nor template 1004 carries its SVG. A document icon stands in. It
+should be swapped for the real glyph.
+
+Applied to page 996 as a delta, since the 19KB of icon paths did not change:
+the CSS region, then the six buttons. Live length 34,605 matches the local
+build exactly and the button pass replaced exactly 6.
+
+**Open architectural point, not yet acted on.** These six cards carry no
+province-specific text, so every jurisdiction hub renders the same six. Hand-
+matched CSS will drift from /services/ whenever that page is restyled. Saving
+the card section as its own Elementor template and embedding it with
+`[elementor-template id="..."]` would end the drift and bring the real icon
+font, the real hover and the real buttons with it. Worth doing before the
+remaining 11 hubs and the 144 F4 jurisdiction pages are built.
