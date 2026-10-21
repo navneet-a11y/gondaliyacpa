@@ -189,3 +189,7 @@
 ## /industries/shopify-stores/ (page 10494, draft created 2026-10-21, meta set by connector)
 - Meta title: Incorporate a Shopify Store Ontario | $35
 - Meta description: We prepare and file your Shopify store's corporation for $35, HST included. Government fees separate. A CPA checks your payouts and HST first.
+
+## /industries/marketing-agencies/ (page 10497, draft created 2026-10-21, meta set by connector)
+- Meta title: Incorporate a Marketing Agency Ontario | $35
+- Meta description: We prepare and file your marketing or advertising agency corporation for $35, HST included. Government fees separate. A CPA checks your media billing.
