@@ -177,3 +177,7 @@
 - /incorporate-in-new-brunswick/ (9979): Incorporate in New Brunswick | Open Corporation for $35 / Incorporate in New Brunswick for $35, HST included, plus the $262 e-filing fee with the Royal Gazette charge. NUANS, annual return and first steps.
 - /incorporate-in-newfoundland-and-labrador/ (9964): Incorporate in Newfoundland and Labrador | $35 / Incorporate in Newfoundland and Labrador for $35, HST included, plus the $270 e-filing fee. A $10 name reservation, no NUANS and the annual return.
 - /incorporate-in-prince-edward-island/ (9827): Incorporate in PEI | Open Corporation for $35 / Incorporate in Prince Edward Island for $35, HST included, plus the $215 registry fee. Name approval, the lawyer's certificate rule and annual return.
+
+## /industries/staffing-agencies/ (page 10488, draft created 2026-10-21, meta set by connector)
+- Meta title: Incorporate a Staffing Agency Ontario | $35
+- Meta description: We prepare and file your staffing agency incorporation for $35, HST included. Government fees separate. A CPA checks your ESA licence and payroll first.
