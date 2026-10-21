@@ -78,13 +78,6 @@ SERVICE_CARDS = json.load(io.open(
     os.path.join(os.path.dirname(os.path.abspath(__file__)), 'services-cards.json'),
     encoding='utf-8'))
 
-# Cost, deadlines and guides are navigation, not services. /services/ has no
-# card for them, so they stay a link row rather than inventing three cards.
-NAV_LINKS = [
- ('/pricing/nil-t2-filing-cost/', 'Nil T2 filing cost'),
- ('/deadlines/', 'T2 filing deadlines'),
- ('/guides/', 'Nil T2 filing guides'),
-]
 
 CSS = """<style>.cnf-hero{background-image:linear-gradient(rgba(11,26,51,.82),rgba(11,26,51,.82)),url('""" + HERO_IMG + """');background-size:cover;background-position:center center;background-repeat:no-repeat;padding:40px 20px}
 .cnf-hero-in{max-width:1140px;margin:0 auto;text-align:left}
@@ -122,8 +115,6 @@ CSS = """<style>.cnf-hero{background-image:linear-gradient(rgba(11,26,51,.82),rg
 @media(max-width:1024px){.cnf-boxes{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:900px){.cnf-boxes{grid-template-columns:1fr}}
 @media(max-width:767px){.cnf-box h3{font-size:22px}}
-.cnf-nav{list-style:none;margin:30px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:12px 28px;justify-content:center}
-.cnf-nav li{font-family:Poppins,sans-serif;font-weight:600;font-size:16px}
 .cnf-faq{margin:0}
 .cnf-faq details{border:0;border-radius:14px;background:#fff;margin:0 0 14px;box-shadow:0 2px 14px rgba(17,34,68,.08)}
 .cnf-faq summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:22px 28px}
@@ -268,10 +259,6 @@ def build(j):
         b.append('<li class="cnf-box">%s<h3>%s</h3><p>%s</p>'
                  '<a class="cnf-more" href="%s%s">Learn more</a></li>'
                  % (c['svg'], c['title'], c['desc'], SITE, c['href']))
-    b.append('</ul>')
-    b.append('<ul class="cnf-nav">')
-    for href, label in NAV_LINKS:
-        b.append('<li>' + a(SITE + href, label) + '</li>')
     b.append('</ul>')
 
     # ---- FAQ accordion ----------------------------------------------------

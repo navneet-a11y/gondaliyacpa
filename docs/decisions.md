@@ -3243,3 +3243,18 @@ ran against page 996, which finished at 34,817.
 `<ul>` or `<table>` in an `<a>` in content published through the REST API. Link
 a text-only element and stretch it with a pseudo-element when the whole block
 should be clickable.
+
+## 2026-10-21 — cost/deadlines/guides link row removed from jurisdiction hubs
+
+Navneet asked for the centred link row under the service cards to go. Removed
+from the generator, so no jurisdiction hub will carry it, along with its CSS.
+
+Side effect worth knowing: `/pricing/nil-t2-filing-cost/`, `/deadlines/` and
+`/guides/` now have no inbound link from this page. The closing paragraph still
+links two individual guides and the form, so the page is not orphaned, but
+those three hubs lose one inbound link per jurisdiction page as the family
+grows. Raise with Sharad Gondaliya if the 6(g) inbound minimums matter for them.
+
+Verified by applying both removals to the previous build locally and diffing
+against the generator output: byte-identical at 34,329. Page 996 finished at
+34,329.
