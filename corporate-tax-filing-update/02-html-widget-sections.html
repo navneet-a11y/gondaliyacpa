@@ -1,27 +1,27 @@
 <style>
 /* Only the styles these sections use. Every rule is scoped to .gcf, so nothing else on the page changes. */
-.gcf{--ink:#111827;--text:#374151;--muted:#4b5563;--line:#e5e7eb;--tint:#f5f8fb;--brand:#2087c9;--brand-d:#1a72ad;--brand-dd:#155f8f;font-family:Lato,system-ui,-apple-system,"Segoe UI",sans-serif;font-size:17px;line-height:1.7;color:var(--text)}
+.gcf{--ink:#333333;--text:#636363;--muted:#4b5563;--line:#e5e7eb;--tint:#f5f8fb;--brand:#2087c9;--brand-d:#1a72ad;--brand-dd:#155f8f;font-family:Lato,sans-serif;font-size:16px;line-height:1.7;color:var(--text)}
 .gcf,.gcf *{box-sizing:border-box}
 .gcf [id]{scroll-margin-top:24px}
 .gcf.gcf-s{display:block;width:100%;margin:0;padding:56px 0}
 .gcf.gcf-s.gcf-s-tight{padding:28px 0}
 .gcf.gcf-s-line{border-top:1px solid var(--line)}
 .gcf .gcf-w{max-width:1140px;margin:0 auto;padding:0 20px}
-.gcf p{margin:0 0 16px;font-size:17px;line-height:1.7;color:var(--text)}
+.gcf p{margin:0 0 16px;font-family:Lato,sans-serif;font-size:16px;line-height:1.7;color:var(--text)}
 .gcf p:last-child{margin-bottom:0}
 .gcf a{color:var(--brand-d);text-decoration:underline;text-underline-offset:3px}
 .gcf a:hover{color:var(--brand-dd)}
 .gcf strong{color:var(--ink);font-weight:700}
-.gcf .gcf-h2{font-family:Poppins,system-ui,sans-serif;color:var(--ink);font-size:30px;line-height:1.3;font-weight:600;margin:0;padding:0;text-transform:none}
+.gcf .gcf-h2{font-family:Poppins,sans-serif;color:#2087C9;font-size:30px;line-height:1.3;font-weight:600;margin:0;padding:0;text-transform:none}
 .gcf ul{margin:0;padding:0;list-style:none}
 .gcf .gcf-list{margin:0 0 20px}
-.gcf .gcf-list li{position:relative;padding:0 0 0 22px;margin:0 0 14px;font-size:17px;line-height:1.7;color:var(--text)}
+.gcf .gcf-list li{position:relative;padding:0 0 0 22px;margin:0 0 14px;font-family:Lato,sans-serif;font-size:16px;line-height:1.7;color:var(--text)}
 .gcf .gcf-list li:last-child{margin-bottom:0}
 .gcf .gcf-list li:before{content:"";position:absolute;left:2px;top:.72em;width:7px;height:7px;border-radius:50%;background:var(--brand)}
 .gcf .gcf-ed{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,8fr);gap:56px;align-items:start}
 .gcf .gcf-ed-b{max-width:760px}
 .gcf .gcf-table{width:100%;overflow-x:auto;margin:24px 0 0;border:1px solid var(--line);border-radius:12px}
-.gcf .gcf-table table{width:100%;border-collapse:collapse;margin:0;border:0;font-size:15px;line-height:1.5}
+.gcf .gcf-table table{width:100%;border-collapse:collapse;margin:0;border:0;font-family:Lato,sans-serif;font-size:15px;line-height:1.5}
 .gcf .gcf-table th,.gcf .gcf-table td{border:0;border-bottom:1px solid var(--line);border-right:1px solid var(--line);padding:12px 16px;text-align:left;vertical-align:top;color:var(--text);background:#fff}
 .gcf .gcf-table tr>*:last-child{border-right:0}
 .gcf .gcf-table tbody tr:last-child>*{border-bottom:0}
@@ -30,7 +30,7 @@
 .gcf .gcf-panel{border:1px solid var(--line);border-radius:16px;padding:32px}
 .gcf .gcf-panel .gcf-h2{margin:0 0 20px}
 .gcf .gcf-cta-card{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px 32px;background:var(--tint);border-radius:16px;padding:28px 32px}
-.gcf .gcf-cta-card p{margin:0;font-weight:700;color:var(--ink)}
+.gcf .gcf-cta-card p{margin:0;font-size:17px;font-weight:700;color:var(--ink)}
 .gcf .gcf-btns{display:flex;flex-wrap:wrap;align-items:center;gap:12px 14px;margin:0}
 .gcf a.gcf-btn{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:12px 26px;border-radius:999px;font-family:Poppins,sans-serif;font-size:16px;font-weight:600;line-height:1.25;text-decoration:none;border:1.5px solid var(--brand-d)}
 .gcf a.gcf-btn-p{background:var(--brand-d);color:#fff}
@@ -38,11 +38,18 @@
 .gcf a.gcf-btn-s{background:#fff;color:var(--brand-d)}
 .gcf a.gcf-tel{display:inline-flex;align-items:center;gap:8px;min-height:44px;font-weight:700;color:var(--ink);text-decoration:none}
 .gcf .gcf-i{width:18px;height:18px;flex:0 0 18px;color:var(--brand)}
+.gcf .gcf-eyebrow{font-family:Poppins,sans-serif;font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#2087C9;margin:0 0 12px}
+.gcf .gcf-toc ul{display:flex;flex-wrap:wrap;gap:8px}
+.gcf .gcf-toc li{margin:0;padding:0}
+.gcf .gcf-toc a{display:inline-flex;align-items:center;min-height:36px;padding:6px 14px;border:1px solid var(--line);border-radius:999px;font-family:Lato,sans-serif;font-size:14px;color:var(--text);text-decoration:none;background:#fff}
+.gcf .gcf-toc a:hover{border-color:var(--brand);color:var(--brand-d)}
 @media (min-width:768px){.gcf .gcf-cta-card p{flex:1 1 360px}}
 @media (max-width:1024px){.gcf .gcf-ed{grid-template-columns:1fr;gap:20px}.gcf .gcf-ed-b{max-width:none}}
 @media (max-width:860px){.gcf .gcf-two{grid-template-columns:1fr}}
-@media (max-width:767px){.gcf.gcf-s{padding:40px 0}.gcf .gcf-h2{font-size:24px}.gcf p,.gcf .gcf-list li{font-size:16px}.gcf .gcf-panel,.gcf .gcf-cta-card{padding:22px}.gcf .gcf-table table{font-size:14px}.gcf .gcf-table th,.gcf .gcf-table td{padding:10px 9px}.gcf a.gcf-btn,.gcf .gcf-tel{width:100%;justify-content:center}}
+@media (max-width:767px){.gcf.gcf-s{padding:40px 0}.gcf .gcf-h2{font-size:24px}.gcf p,.gcf .gcf-list li{font-size:15px}.gcf .gcf-panel,.gcf .gcf-cta-card{padding:22px}.gcf .gcf-table table{font-size:14px}.gcf .gcf-table th,.gcf .gcf-table td{padding:10px 9px}.gcf a.gcf-btn,.gcf .gcf-tel{width:100%;justify-content:center}}
 </style>
+
+<section class="gcf gcf-s gcf-s-tight"><div class="gcf-w"><nav class="gcf-toc" aria-label="On this page"><p class="gcf-eyebrow">On this page</p><ul><li><a href="#calendar">Filing deadlines</a></li><li><a href="#year-end-close">Year-end close</a></li><li><a href="#statements">Financial statements</a></li><li><a href="#t2-cross-checks">T2 cross-checks</a></li><li><a href="#gst-hst">GST/HST</a></li><li><a href="#payroll">Payroll year-end</a></li><li><a href="#dividends-t5">Dividends and T5</a></li><li><a href="#t4a-t5018">T4A and T5018</a></li><li><a href="#ontario">Ontario filings</a></li><li><a href="#owners">Owners' returns</a></li><li><a href="#instalments">Instalments</a></li><li><a href="#cra-accounts">CRA accounts</a></li><li><a href="#switching">Switching accountants</a></li><li><a href="#late-filings">Late filings</a></li><li><a href="#need">What we need from you</a></li><li><a href="#receive">What you receive</a></li></ul></nav></div></section>
 
 <section class="gcf gcf-s gcf-s-line"><div class="gcf-w"><div class="gcf-ed"><div class="gcf-ed-h"><h2 class="gcf-h2" id="calendar">1. Corporate Filing Deadlines: Your Annual Calendar</h2></div><div class="gcf-ed-b"><ul class="gcf-list"><li><strong>Key dates.</strong> For a December 31, 2026 year-end, we calendar the tax balance for February 28, 2027 (on time if received March 1) or March 31 under the three-month rule, T4 and T5 slips for March 1, the annual GST/HST return for March 31, personal returns for April 30, and the T2 and Ontario annual return for June 30.</li><li><strong>Non-December year-ends.</strong> A corporation with a year-end other than December 31 runs on two clocks. Corporate deadlines follow the fiscal year, while payroll slips, T5 slips and the owners' personal returns follow the calendar year. We map both clocks, so the February slip deadlines that fall in the middle of a June 30 company's fiscal year are on its calendar.</li><li><strong>Four CRA accounts.</strong> Each filing lands in a program account under one business number: RC for corporate income tax, RT for GST/HST, RP for payroll deductions and RZ for information returns such as T5 and T5018. We build the calendar account by account and check each account's statement, so every open account has its due dates and balance checked.</li><li><strong>First-year set-up.</strong> A new corporation needs only the program accounts its activities require: RT once it is no longer a small supplier or chooses to register, and RP when it starts a payroll. We confirm each account, the GST/HST reporting period CRA has on file and the first year-end date, then calendar each first return.</li><li><strong>Next year's calendar.</strong> Each engagement ends with a calendar for the next twelve months: the balance-due date, instalment dates where required, the GST/HST filing dates for your reporting period, the slip deadlines, the T2 date and the Ontario annual return. Every deadline for the filings in your engagement is listed in one place.</li></ul><p>Key dates for a December 31, 2026 year-end:</p><div class="gcf-table"><table><thead><tr><th scope="col">Date</th><th scope="col">What is due</th></tr></thead><tbody><tr><td>February 28, 2027 (on time if received Monday, March 1), or March 31 if the three-month rule applies</td><td>Corporate tax balance</td></tr><tr><td>March 1, 2027 (February 28 is a Sunday)</td><td>T4, T4A and T5 slips and summaries</td></tr><tr><td>March 15, 2027</td><td>Ontario EHT annual return, if Ontario payroll is over the exemption</td></tr><tr><td>March 31, 2027</td><td>Annual GST/HST return and payment</td></tr><tr><td>April 30, 2027</td><td>Owners' personal returns and balances owing</td></tr><tr><td>June 30, 2027</td><td>T2 return and Ontario annual return</td></tr></tbody></table></div></div></div></div></section>
 
