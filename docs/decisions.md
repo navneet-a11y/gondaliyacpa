@@ -3643,3 +3643,18 @@ later switched back on.
 **Guides and Blog are missing from the rendered menu** although both items are
 live in the Primary menu (1074, 1075, verified by listing it back). LiteSpeed
 Cache is almost certainly serving the old header.
+
+## 2026-10-22 — post column set to 1100px, matching the guides
+
+Navneet chose the guides' measure over the 860px first cut and over the ~1200px
+of the gondaliyacpa.ca post he sent as a reference. `.cnf-post` is now
+`max-width:1100px`, the same as `.ei-wrap` on every F9 guide, so blog and guides
+read at one width.
+
+Generator and live agree: +1 char each, post 1039 10,184 -> 10,185 and post
+1041 9,821 -> 9,822.
+
+Note for later: at 17px this runs near 110 characters a line, long for pure
+prose. The guides carry it because tables, cards and a TOC break the column up.
+Worth watching as later batches publish -- posts that are mostly prose may read
+better narrower, and the measure lives in one place in posts.py.
