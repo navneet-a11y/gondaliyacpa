@@ -4,7 +4,7 @@
 - `<h1>`: `Tax Accountant for Print-on-Demand Businesses in Ontario and Across Canada`
 - WordPress page title (site convention): `Accounting and Tax Services for Print-on-Demand Businesses`
 - City-card label: `Print-on-Demand Tax Accountant in`
-- Status: **DRAFT** 2026-10-22, page ID **57633**, 115,138 bytes stored and verified byte-for-byte against the local build. Awaiting instruction to publish.
+- Status: **PUBLISHED** 2026-10-22, page ID **57633**, 115,138 bytes stored and verified unchanged after publish. Live at https://gondaliyacpa.ca/accountant-for-print-on-demand-businesses/
 
 ## The angle — the business that owns no inventory
 

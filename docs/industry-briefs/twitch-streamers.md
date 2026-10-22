@@ -4,7 +4,7 @@
 - `<h1>`: `Tax Accountant for Twitch Streamers in Ontario and Across Canada`
 - WordPress page title (site convention): `Accounting and Tax Services for Twitch Streamers`
 - City-card label: `Twitch Streamer Tax Accountant in`
-- Status: **DRAFT** 2026-10-22, page ID **57639**, 114,480 bytes stored and verified byte-for-byte against the local build. Awaiting instruction to publish.
+- Status: **PUBLISHED** 2026-10-22, page ID **57639**, 114,480 bytes stored and verified unchanged after publish. Live at https://gondaliyacpa.ca/accountant-for-twitch-streamers/
 
 ## The angle — the cleanest gap on the site
 

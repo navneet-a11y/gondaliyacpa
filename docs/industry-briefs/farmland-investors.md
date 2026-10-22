@@ -5,7 +5,7 @@
 - WordPress page title (site convention): `Accounting and Tax Services for Farmland Investors`
 - **H1 note:** the source row omits "Tax"; the standing rule adds it.
 - City-card label: `Farmland Investor Tax Accountant in`
-- Status: **DRAFT** 2026-10-22, page ID **57627**, 116,406 bytes stored and verified byte-for-byte against the local build. Awaiting instruction to publish.
+- Status: **PUBLISHED** 2026-10-22, page ID **57627**, 116,406 bytes stored and verified unchanged after publish. Live at https://gondaliyacpa.ca/accountant-for-farmland-investors/
 
 ## The angle — investor, not operator
 
