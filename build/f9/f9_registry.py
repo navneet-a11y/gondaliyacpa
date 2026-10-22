@@ -1,10 +1,11 @@
-"""The Family 9 guide registry, shared by all three generators.
+"""The Family 9 guide registry, shared by every generator.
 
-Every guide lists all eleven others, so each of the twelve carries eleven
+Every guide lists all the others, so each of the seventeen carries sixteen
 sibling inbound links plus the hub. That is what meets the 6(g) line 1528
 minimum of 12 inbound for Family 9. Keeping the list in one module means
-adding guide 13 updates the sibling list on all twelve at once, rather than
-leaving the earlier ones stale.
+adding a guide updates the sibling list on every earlier one at once, rather
+than leaving them stale. Earlier batches must then be regenerated and the live
+guides updated, or the new entries are missing from their sibling lists.
 
 Order is publication order.
 """
@@ -29,11 +30,20 @@ REGISTRY = [
  ('first-year-t2-filing', 'The Complete Guide to First-Year T2 Filing'),
  ('numbered-company-tax-filing',
   'The Complete Guide to Numbered Company Tax Filing'),
+ ('t2-late-filing-penalties', 'The Complete Guide to T2 Late Filing Penalties'),
+ ('cra-demand-to-file-response',
+  'The Complete Guide to Responding to a CRA Demand to File'),
+ ('inactive-holding-company-filing',
+  'The Complete Guide to Inactive Holding Company Filing'),
+ ('t2-schedules-on-a-nil-return',
+  'The Complete Guide to T2 Schedules on a Nil Return'),
+ ('shelf-corporation-compliance',
+  'The Complete Guide to Shelf Corporation Compliance'),
 ]
 
 HUB = 'https://corpnilfilingfor300.ca/guides/'
 
 def sibling_links(own_slug):
-    """The eleven <li> rows every guide carries, excluding itself."""
+    """The sixteen <li> rows every guide carries, excluding itself."""
     return '\n'.join('<li><a href="%s%s/">%s</a></li>' % (HUB, s, t)
                      for s, t in REGISTRY if s != own_slug)

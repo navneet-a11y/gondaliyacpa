@@ -1,0 +1,210 @@
+<style>
+.ei-wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+.ei-btn-blue{background:rgba(32,135,201,1);color:#fff !important;padding:13px 26px;border-radius:6px;font-weight:700;font-size:0.95em;text-transform:uppercase;text-decoration:none !important;display:inline-block;line-height:1.4;text-align:center;min-width:120px}
+.ei-section{padding:26px 20px}
+.ei-section-alt{background:#f7f9fc;padding:26px 20px}
+.ei-art .ei-h2{font-weight:800;color:#1a2340;margin:0 0 10px;font-size:1.45em;line-height:1.3}
+.ei-art > *:last-child{margin-bottom:0}
+.ei-art p{color:#4a5568;line-height:1.8}
+.ei-art a{color:rgba(32,135,201,1)}
+.ei-art ul{color:#4a5568;line-height:1.8}
+.ei-info{background:#f0f7fd;border-left:4px solid rgba(32,135,201,1);border-radius:0 8px 8px 0;padding:14px 18px;margin:18px 0}
+.ei-info p{margin:0;color:#1a2340;line-height:1.7}
+.ei-warn{background:#fffbf0;border-left:4px solid #f6ad1a;border-radius:0 8px 8px 0;padding:14px 18px;margin:18px 0}
+.ei-warn p{margin:0;color:#7c5800;line-height:1.7}
+.ei-danger{background:#fff5f5;border-left:4px solid #e53e3e;border-radius:0 8px 8px 0;padding:14px 18px;margin:18px 0}
+.ei-danger p{margin:0;color:#742a2a;line-height:1.7}
+.ei-hero{background:linear-gradient(135deg,#0f1624 0%,#1a2340 55%,#1e3a6e 100%);padding:40px 20px}
+.ei-hero-inner{max-width:860px;margin:0 auto;text-align:center}
+.ei-hero-eyebrow{display:inline-block;background:rgba(32,135,201,0.15);border:1px solid rgba(32,135,201,0.4);border-radius:50px;padding:5px 16px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:rgba(32,135,201,1);margin-bottom:16px;font-size:.8em}
+.ei-hero h1{color:#fff;font-weight:800;line-height:1.2;margin:0 0 14px;font-size:2.1em}
+.ei-hero h1 span{color:#f6ad1a}
+.ei-hero-sub{color:rgba(255,255,255,0.78);max-width:720px;margin:0 auto 10px;line-height:1.75}
+.ei-hero-by{color:rgba(255,255,255,0.6);max-width:720px;margin:0 auto 22px;line-height:1.6;font-size:.86em}
+.ei-hero-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.ei-tbl{width:100%;border-collapse:collapse;margin:18px 0;border:1px solid #d1d5db}
+.ei-tbl th{background:#1a2340;color:#fff;font-weight:700;padding:12px 14px;text-align:left;border:1px solid #374151}
+.ei-tbl td{padding:10px 14px;border:1px solid #d1d5db;color:#2d3748;line-height:1.5}
+.ei-tbl tr:nth-child(even){background:#f7f9fc}
+.ei-tbl tr:hover{background:#edf2f7}
+.ei-updated{color:#718096;font-size:.9em;margin:0 0 18px}
+.ei-toc{background:linear-gradient(180deg,#ffffff,#f7f9fc);border:1px solid #e2e8f0;border-radius:12px;padding:18px 22px;margin:0 0 10px;box-shadow:0 1px 2px rgba(26,35,64,.05)}
+.ei-toc h2{font-size:.76em;font-weight:800;color:#8795ab;margin:0 0 10px;text-transform:uppercase;letter-spacing:1.3px}
+.ei-toc ol{margin:0;padding:0;list-style:none;counter-reset:toc;columns:2;column-gap:30px}
+.ei-toc li{break-inside:avoid;counter-increment:toc;margin:0}
+.ei-toc a{display:flex;gap:10px;align-items:baseline;padding:6px 9px;border-radius:6px;color:#1a2340;text-decoration:none;line-height:1.45}
+.ei-toc a::before{content:counter(toc);color:rgba(32,135,201,1);font-weight:800;font-size:.82em;min-width:15px;flex-shrink:0}
+.ei-toc a:hover{background:#eaf3fb;color:rgba(32,135,201,1);text-decoration:none}
+.ei-cta-inline{background:#1a2340;border-radius:10px;padding:24px 28px;margin:28px 0;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px}
+.ei-cta-inline h3{color:#fff;margin:0 0 4px;font-weight:700}
+.ei-cta-inline p{color:rgba(255,255,255,0.65);margin:0}
+.ei-cta-inline a,.ei-cta-inline a:visited,.ei-cta-inline a:hover,.ei-cta-bottom a,.ei-cta-bottom a:visited,.ei-cta-bottom a:hover,.ei-hero-btns a,.ei-hero-btns a:visited,.ei-hero-btns a:hover{color:#fff !important;text-decoration:none !important}
+.ei-faq{max-width:900px;margin:16px auto 0}
+.ei-faq details{border:1px solid #e2e8f0;border-radius:8px;margin-bottom:9px;background:#fff}
+.ei-faq summary{padding:14px 18px;font-weight:600;color:#1a2340;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:14px;line-height:1.5}
+.ei-faq summary::-webkit-details-marker{display:none}
+.ei-faq summary::after{content:'+';color:rgba(32,135,201,1);font-weight:400;font-size:1.4em;line-height:1;flex-shrink:0;transition:transform .15s ease}
+.ei-faq details[open] summary{color:rgba(32,135,201,1)}
+.ei-faq details[open] summary::after{transform:rotate(45deg)}
+.ei-faq .ei-faq-a{padding:0 18px 15px}
+.ei-faq .ei-faq-a p{margin:0;color:#4a5568;line-height:1.75}
+.ei-art h3{font-weight:700;color:#1a2340;margin:26px 0 8px;font-size:1.15em}
+.ei-qlist{max-width:900px;margin:12px auto 0;padding:0;list-style:none}
+.ei-qlist li{border:1px solid #e2e8f0;border-radius:8px;margin-bottom:10px;background:#fff}
+.ei-qlist a{display:block;padding:16px 20px;font-weight:600;color:#1a2340 !important;text-decoration:none !important}
+.ei-qlist a:hover{background:#f7f9fc;color:rgba(32,135,201,1) !important}
+.ei-cta-bottom{background:linear-gradient(135deg,#0f1624,#1a2340);padding:40px 20px;text-align:center}
+.ei-cta-bottom h2{color:#fff;font-weight:800;margin:0 0 10px;font-size:1.5em}
+.ei-cta-bottom p{color:rgba(255,255,255,0.72);max-width:600px;margin:0 auto 22px;line-height:1.75}
+.entry-header{display:none!important}
+.ast-article-single,.ast-article-single .entry-content{margin-top:0;padding-top:0}
+@media(max-width:900px){.ei-cta-inline{flex-direction:column;text-align:center}.ei-hero h1{font-size:1.6em}.ei-art .ei-h2{font-size:1.3em}.ei-toc ol{columns:1}}
+</style>
+<div class="ei-hero"><div class="ei-hero-inner"><span class="ei-hero-eyebrow">Schedules Guide</span><h1>The Complete Guide to <span>T2 Schedules on a Nil Return</span></h1><p class="ei-hero-sub">Which schedules a nil T2 needs and which it can omit, what makes the GIFI schedules required, and how each one is decided. Nil T2 filing is $300.00 plus HST per tax year.</p><p class="ei-hero-by">Written and reviewed by Sharad Gondaliya, CPA (Ontario), CPA Ontario Membership 61040184.</p><div class="ei-hero-btns"><a class="ei-btn-blue" href="https://corpnilfilingfor300.ca/form/">Start Nil T2 Filing NOW</a><a class="ei-btn-blue" style="background:transparent;border:2px solid rgba(255,255,255,0.4)" href="https://corpnilfilingfor300.ca/nil-t2-filing/">Nil T2 Filing Services</a></div></div></div>
+<div class="ei-section"><div class="ei-wrap ei-art">
+<p class="ei-updated">Last reviewed: October 22, 2026 &nbsp;&middot;&nbsp; <a href="https://corpnilfilingfor300.ca/guides/">All nil T2 filing guides</a></p>
+<div class="ei-toc"><h2>On this page</h2>
+<ol>
+<li><a href="#what-decides">What Decides Which Schedules Are Needed</a></li>
+<li><a href="#gifi-rule">The GIFI Rule, Stated Exactly</a></li>
+<li><a href="#five-triggers">The Five Things That Make GIFI Required</a></li>
+<li><a href="#s100">Schedule 100, the Balance Sheet</a></li>
+<li><a href="#s125">Schedule 125, the Income Statement</a></li>
+<li><a href="#s141">Schedule 141, the Notes Checklist</a></li>
+<li><a href="#s50">Schedule 50, Shareholders at 10% or More</a></li>
+<li><a href="#s24">Schedule 24, First Return Only</a></li>
+<li><a href="#s8">Schedule 8 and Loss Continuity</a></li>
+<li><a href="#short">The T2 Short and Its Schedules</a></li>
+<li><a href="#included">Every Schedule Above Is in the Price</a></li>
+<li><a href="#fee">What the Fee Covers</a></li>
+</ol></div>
+<div class="ei-info"><p>Gondaliya CPA Professional Corporation is a registered EFILE electronic filer. Returns are prepared and transmitted in Canada. Credentials are never shared and never used offshore.</p></div>
+</div></div>
+<div class="ei-section-alt" id="what-decides"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">What Decides Which Schedules Are Needed</h2>
+<p>Not the amount of income, which is $0.00 on every nil return. What the corporation holds, who owns it, and whether this is its first return.</p>
+<table class="ei-tbl"><thead><tr><th scope="col">Schedule</th><th scope="col">Decided by</th></tr></thead><tbody>
+<tr><td>GIFI 100, 125 and 141</td><td>What sits on the balance sheet</td></tr>
+<tr><td>Schedule 50</td><td>Who owns 10% or more</td></tr>
+<tr><td>Schedule 24</td><td>Whether this is the first return after incorporation</td></tr>
+<tr><td>Schedule 8 and loss continuity</td><td>Whether there is anything to carry forward</td></tr>
+</tbody></table>
+<p>Three of the four have nothing to do with trading, which is why a corporation that did nothing all year still files schedules.</p>
+</div></div>
+<div class="ei-section" id="gifi-rule"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">The GIFI Rule, Stated Exactly</h2>
+<p>A corporation inactive all year with nothing to report may omit GIFI Schedules 100, 125 and 141, but any share capital, cash, shareholder loan, incorporation cost or bank charge makes them required.</p>
+<div class="ei-warn"><p>Read the second half carefully. The exemption needs <em>nothing at all</em> to report. A corporation holding $100.00 of share capital issued at incorporation has something to report, and the schedules are required.</p></div>
+<p>The full treatment is in the guide to <a href="https://corpnilfilingfor300.ca/guides/gifi-schedules-100-125-141/">GIFI Schedules 100, 125 and 141</a>.</p>
+</div></div>
+<div class="ei-section-alt" id="five-triggers"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">The Five Things That Make GIFI Required</h2>
+<table class="ei-tbl"><thead><tr><th scope="col">Trigger</th><th scope="col">Why it counts</th></tr></thead><tbody>
+<tr><td>Share capital</td><td>Issued at incorporation and sits on the balance sheet</td></tr>
+<tr><td>Cash</td><td>A balance in an account is an asset</td></tr>
+<tr><td>A shareholder loan</td><td>A balance either owed to or by the corporation</td></tr>
+<tr><td>An incorporation cost</td><td>Capitalised, so it remains on the balance sheet</td></tr>
+<tr><td>A bank charge</td><td>An expense, so there is something on the income statement</td></tr>
+</tbody></table>
+<p>Four of the five are present in most corporations from the day they are registered, which is why the exemption is narrower in practice than it reads.</p>
+</div></div>
+<div class="ei-section" id="s100"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">Schedule 100, the Balance Sheet</h2>
+<p>The balance sheet in GIFI codes: what the corporation owns, what it owes, and the share capital and retained earnings that make up the difference.</p>
+<p>On a nil return it is usually short. Share capital on one line, perhaps a bank balance, perhaps a shareholder loan. Short is not the same as omitted.</p>
+</div></div>
+<div class="ei-wrap"><div class="ei-cta-inline"><div><h3>Nil T2 Filing, $300.00 plus HST per tax year</h3><p>One price for every year and every province. CPA reviewed and transmitted electronically.</p></div><a class="ei-btn-blue" href="https://corpnilfilingfor300.ca/form/">Start Nil T2 Filing NOW</a></div></div>
+<div class="ei-section-alt" id="s125"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">Schedule 125, the Income Statement</h2>
+<p>Revenue and expenses in GIFI codes. On a genuinely nil year both sides are $0.00, and the schedule says so explicitly rather than being left out.</p>
+<div class="ei-info"><p>A single bank charge is an expense, and it belongs on Schedule 125. It does not stop the year being nil for this service, but it does mean the schedule is filed.</p></div>
+</div></div>
+<div class="ei-section" id="s141"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">Schedule 141, the Notes Checklist</h2>
+<p>The notes checklist records who prepared the financial information and what level of involvement they had. It accompanies Schedules 100 and 125 and is filed with them.</p>
+<p>See <a href="https://corpnilfilingfor300.ca/answers/do-i-need-financial-statements-for-a-nil-t2-return/">whether financial statements are needed for a nil T2 return</a>.</p>
+</div></div>
+<div class="ei-section-alt" id="s50"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">Schedule 50, Shareholders at 10% or More</h2>
+<p>Schedule 50 is needed for any shareholder at 10% or more. It lists each of them, their percentage of common and preferred shares, and their identification number.</p>
+<p>The test is ownership of the shares, not involvement in the company. A shareholder who has never attended a meeting still appears where the holding reaches the threshold. The detail is on the <a href="https://corpnilfilingfor300.ca/blog/schedule-50-and-the-10-percent-shareholder-rule/">Schedule 50 and the 10% shareholder rule</a> post.</p>
+</div></div>
+<div class="ei-section" id="s24"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">Schedule 24, First Return Only</h2>
+<p>Schedule 24 is needed on the first return after incorporation. It reports the corporation&rsquo;s shareholders, its related corporations and how it came into existence, and it is filed once.</p>
+<p>Where a first year was never filed, Schedule 24 is still filed, late, on whichever return turns out to be the first one transmitted. The detail is in the guide to <a href="https://corpnilfilingfor300.ca/guides/first-year-t2-filing/">first-year T2 filing</a>.</p>
+</div></div>
+<div class="ei-section-alt" id="s8"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">Schedule 8 and Loss Continuity</h2>
+<p>Schedule 8 and loss continuity must be recorded. A nil year adds nothing to either, but the continuity has to be carried forward intact so a later year can use it.</p>
+<div class="ei-warn"><p>This is the schedule most often skipped on a nil return, and the one that costs the most to skip. A break in loss continuity is discovered in the year the corporation finally has income to apply it against.</p></div>
+<p>The full treatment is in the guide to <a href="https://corpnilfilingfor300.ca/guides/schedule-8-and-loss-continuity/">Schedule 8 and loss continuity</a>.</p>
+</div></div>
+<div class="ei-section" id="short"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">The T2 Short and Its Schedules</h2>
+<p>The T2 Short is available only to a CCPC with nil net income or a loss, one permanent establishment, no taxable dividends paid or received, Canadian currency, no refundable credits, no Ontario transitional debit and no section 34.2 amount.</p>
+<p>Qualifying for the shorter form does not remove a schedule that is otherwise required. Eligibility is covered in the guide to <a href="https://corpnilfilingfor300.ca/guides/t2-short-eligibility/">T2 Short eligibility</a>.</p>
+</div></div>
+<div class="ei-section-alt" id="included"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">Every Schedule Above Is in the Price</h2>
+<p>There is no per-schedule charge. The fee of $300.00 plus HST per tax year covers one nil T2 return for one corporation for one tax year, with whichever of these schedules that return requires.</p>
+<p>A holding corporation with investment income, a rental corporation and a corporation that paid or received a dividend are not nil. Those are handled by Gondaliya CPA Professional Corporation at gondaliyacpa.ca at $350.00 plus HST per year.</p>
+</div></div>
+<div class="ei-section" id="fee"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">What the Fee Covers</h2>
+<p>The fee is $300.00 plus HST per tax year, covering one nil T2 return for one corporation for one tax year:</p>
+<table class="ei-tbl"><thead><tr><th scope="col">Included</th><th scope="col">Detail</th></tr></thead><tbody>
+<tr><td>The T2 return</td><td>Including the T2 Short where the corporation qualifies</td></tr>
+<tr><td>GIFI Schedules 100, 125 and 141</td><td>Where they are required</td></tr>
+<tr><td>Schedule 24</td><td>On a first return</td></tr>
+<tr><td>Schedule 50</td><td>For every shareholder at 10% or more</td></tr>
+<tr><td>Schedule 8 and loss continuity</td><td>Recorded</td></tr>
+<tr><td>Form T183CORP package</td><td>With single-use secure e-signing</td></tr>
+<tr><td>CPA review</td><td>Before transmission</td></tr>
+<tr><td>Electronic transmission</td><td>By a registered EFILE electronic filer</td></tr>
+<tr><td>One corrected transmission</td><td>If the Agency rejects the first one</td></tr>
+<tr><td>CRA confirmation</td><td>Emailed within 3 business days</td></tr>
+</tbody></table>
+<p>See the full <a href="https://corpnilfilingfor300.ca/pricing/nil-t2-filing-cost/">nil T2 filing cost</a>.</p>
+</div></div>
+<div class="ei-section-alt"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">Frequently Asked Questions</h2>
+<div class="ei-faq">
+<details><summary>Which Schedules Does a Nil T2 Need?</summary><div class="ei-faq-a"><p>It depends on what the corporation holds rather than what it earned. GIFI Schedules 100, 125 and 141 where there is anything on the balance sheet, Schedule 50 for any shareholder at 10% or more, Schedule 24 on a first return, and Schedule 8 with loss continuity recorded.</p></div></details>
+<details><summary>Can a Nil Return Skip the GIFI Schedules?</summary><div class="ei-faq-a"><p>Only where the corporation was inactive all year with nothing at all to report. Any share capital, cash, shareholder loan, incorporation cost or bank charge makes Schedules 100, 125 and 141 required.</p></div></details>
+<details><summary>Does Share Capital Alone Make GIFI Required?</summary><div class="ei-faq-a"><p>Yes. Share capital issued at incorporation sits on the balance sheet, which is something to report, so the schedules are required.</p></div></details>
+<details><summary>Do I Need Schedule 24 Every Year?</summary><div class="ei-faq-a"><p>No. Schedule 24 is filed once, on the first return after incorporation.</p></div></details>
+<details><summary>Why File Schedule 8 on a Year With Nothing in It?</summary><div class="ei-faq-a"><p>To carry the continuity forward intact. A break is only discovered in the year the corporation finally has income to apply a loss against.</p></div></details>
+<details><summary>Is There an Extra Charge for Schedules?</summary><div class="ei-faq-a"><p>No. The fee is $300.00 plus HST per tax year and covers whichever schedules the return requires.</p></div></details>
+</div>
+<h3>Questions Answered in Full</h3>
+<ul class="ei-qlist">
+<li><a href="https://corpnilfilingfor300.ca/answers/do-i-need-financial-statements-for-a-nil-t2-return/">Do I Need Financial Statements for a Nil T2 Return?</a></li>
+<li><a href="https://corpnilfilingfor300.ca/answers/do-i-need-to-file-a-t2-if-my-corporation-had-no-activity/">Do I Need to File a T2 if My Corporation Had No Activity?</a></li>
+<li><a href="https://corpnilfilingfor300.ca/answers/do-i-need-to-file-a-nil-t2-if-my-corporation-has-no-bank-account/">Do I Need to File a Nil T2 if My Corporation Has No Bank Account?</a></li>
+<li><a href="https://corpnilfilingfor300.ca/answers/do-i-need-to-file-a-nil-t2-if-i-never-started-operating/">Do I Need to File a Nil T2 if I Never Started Operating?</a></li>
+<li><a href="https://corpnilfilingfor300.ca/answers/can-i-file-a-nil-t2-myself-without-an-accountant/">Can I File a Nil T2 Myself Without an Accountant?</a></li>
+<li><a href="https://corpnilfilingfor300.ca/answers/do-i-need-a-business-number-to-file-a-nil-t2/">Do I Need a Business Number to File a Nil T2?</a></li>
+</ul>
+<h3>The Other Nil T2 Filing Guides</h3>
+<ul class="ei-qlist">
+<li><a href="https://corpnilfilingfor300.ca/guides/nil-t2-return-complete-guide/">The Complete Guide to the Nil T2 Return</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/dormant-and-inactive-corporations/">The Complete Guide to Dormant and Inactive Corporations</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/catch-up-unfiled-corporate-tax-returns/">The Complete Guide to Catching Up on Unfiled Corporate Tax Returns</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/final-t2-and-dissolution/">The Complete Guide to the Final T2 and Dissolution</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/t2-short-eligibility/">The Complete Guide to T2 Short Eligibility</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/provincial-and-federal-annual-returns/">The Complete Guide to Provincial and Federal Annual Returns</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/t183corp-signing-and-transmission/">The Complete Guide to Form T183CORP Signing and Transmission</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/how-to-file-a-nil-t2-return/">How to File a Nil T2 Return</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/gifi-schedules-100-125-141/">The Complete Guide to GIFI Schedules 100, 125 and 141</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/schedule-8-and-loss-continuity/">The Complete Guide to Schedule 8 and Loss Continuity</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/first-year-t2-filing/">The Complete Guide to First-Year T2 Filing</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/numbered-company-tax-filing/">The Complete Guide to Numbered Company Tax Filing</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/t2-late-filing-penalties/">The Complete Guide to T2 Late Filing Penalties</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/cra-demand-to-file-response/">The Complete Guide to Responding to a CRA Demand to File</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/inactive-holding-company-filing/">The Complete Guide to Inactive Holding Company Filing</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/shelf-corporation-compliance/">The Complete Guide to Shelf Corporation Compliance</a></li>
+</ul>
+</div></div>
+<div class="ei-cta-bottom"><div class="ei-wrap"><h2>Nil T2 Filing, $300.00 plus HST per tax year</h2><p>Type your corporation name, pick your unfiled years, pay, and sign Form T183CORP on a secure screen. Your CRA confirmation is emailed within 3 business days.</p><a class="ei-btn-blue" href="https://corpnilfilingfor300.ca/form/">Start Nil T2 Filing NOW</a></div></div>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Article", "@id": "https://corpnilfilingfor300.ca/guides/t2-schedules-on-a-nil-return/#article", "headline": "The Complete Guide to T2 Schedules on a Nil Return", "name": "T2 Schedules on a Nil Return | Guide for Canadian Corporations", "description": "Which schedules a nil T2 needs and which it can omit, what makes the GIFI schedules required, and how each one is decided.", "inLanguage": "en-CA", "datePublished": "2026-10-22", "dateModified": "2026-10-22", "mainEntityOfPage": "https://corpnilfilingfor300.ca/guides/t2-schedules-on-a-nil-return/", "author": {"@type": "Person", "name": "Sharad Gondaliya", "honorificSuffix": "CPA", "url": "https://corpnilfilingfor300.ca/sharad-gondaliya-cpa/"}, "publisher": {"@type": "Organization", "name": "Gondaliya CPA Professional Corporation"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Nil T2 filing in Canada", "item": "https://corpnilfilingfor300.ca/"}, {"@type": "ListItem", "position": 2, "name": "Guides", "item": "https://corpnilfilingfor300.ca/guides/"}, {"@type": "ListItem", "position": 3, "name": "The Complete Guide to T2 Schedules on a Nil Return", "item": "https://corpnilfilingfor300.ca/guides/t2-schedules-on-a-nil-return/"}]}]}</script>

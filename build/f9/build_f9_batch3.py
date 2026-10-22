@@ -73,7 +73,7 @@ FEE_ROWS = [('The T2 return', 'Including the T2 Short where the corporation qual
             ('CRA confirmation', 'Emailed within 3 business days')]
 
 from f9_registry import REGISTRY, sibling_links
-assert len(REGISTRY) == 12
+assert len(REGISTRY) >= 12
 
 def a(href, text):
     return '<a href="%s">%s</a>' % (href, text)
