@@ -10,14 +10,14 @@ Checked against the live WordPress site on 14 October 2026, updated 16 October 2
 | Services | 26 | 21 | 0 | 5 |
 | Incorporate by Province and Federal | 13 | 12 | 0 | 1 |
 | Service Areas | 27 | 15 | 9 | 3 |
-| Industries | 34 | 33 | 0 | 1 |
+| Industries | 34 | 34 | 0 | 0 |
 | Pricing | 3 | 3 | 0 | 0 |
 | Compare | 14 | 14 | 0 | 0 |
 | Guides | 34 | 32 | 0 | 2 |
 | Blog | 13 | 4 | 0 | 9 |
 | About, Team, Reviews, Contact and Legal | 24 | 21 | 0 | 3 |
 | French Quebec | 10 | 0 | 0 | 10 |
-| **Total** | **201** | **158** | **9** | **34** |
+| **Total** | **201** | **159** | **9** | **33** |
 
 ## Home
 
@@ -124,7 +124,7 @@ Checked against the live WordPress site on 14 October 2026, updated 16 October 2
 | /industries/mortgage-brokers/ | P2 | Built | /industries/mortgage-brokers/ |
 | /industries/uber-and-delivery-drivers/ | P2 | Built | /industries/uber-and-delivery-drivers/ |
 | /industries/shopify-stores/ | P2 | Built | /industries/shopify-stores/ |
-| /industries/content-creators-and-influencers/ | P2 | Draft (page 10552) | /industries/content-creators-and-influencers/ |
+| /industries/content-creators-and-influencers/ | P2 | Built | /industries/content-creators-and-influencers/ |
 | /industries/insurance-brokers/ | P3 | Built | /industries/insurance-brokers/ |
 | /industries/grocery-and-convenience-stores/ | P3 | Built (different URL) | /industries/grocery-convenience-stores/ |
 | /industries/salons-and-barbers/ | P3 | Built | /industries/salons-and-barbers/ |
