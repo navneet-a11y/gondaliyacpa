@@ -3658,3 +3658,31 @@ Note for later: at 17px this runs near 110 characters a line, long for pure
 prose. The guides carry it because tables, cards and a TOC break the column up.
 Worth watching as later batches publish -- posts that are mostly prose may read
 better narrower, and the measure lives in one place in posts.py.
+
+## 2026-10-22 — the post width needed !important
+
+The 1100px change did not render. Verified by zero-change probe that the live
+content was right: `.cnf-post{max-width:1100px;...}` present once and
+`<div class="cnf-post">` present once in post 1041. The screenshot also showed
+the descendant rules working -- blue lead block, navy Poppins H2 -- so the
+wrapper and the style block were both rendering, and only `max-width` was being
+discarded.
+
+That points at Astra's page-builder template CSS, which forces direct children
+of `.entry-content` to full width at two classes of specificity against
+`.cnf-post`'s one. Setting `ast-site-content-layout: full-width-container`
+earlier today is what brought that rule into play, which is why the width never
+mattered before.
+
+Used `max-width:1100px!important` rather than climbing the specificity ladder,
+because the rendered stylesheet cannot be read from this container (the host is
+blocked by the egress proxy and the corpnil connector exposes no theme-mod or
+custom-CSS tool). `!important` wins whatever the overriding rule turns out to
+be. The guides do not need this -- their `.ei-wrap` is nested inside section
+divs, not a direct child of `.entry-content`.
+
+Generator and live agree: +10 chars each, post 1039 10,185 -> 10,195 and post
+1041 9,822 -> 9,832.
+
+Menu confirmed fixed after the LiteSpeed purge: Guides and Blog both render in
+the header.
