@@ -53,8 +53,8 @@ Page 7 "Home (old Astra demo)" is a draft with no public URL: delete it.
 | Step | Action | Who | Status |
 | --- | --- | --- | --- |
 | 1 | Full backup (files and database) in Hostinger | Navneet (hPanel) | Not started |
-| 2 to 3 | Create /wp-content/uploads/ws/ and /ws/people/; upload CSS and JS | Navneet (File Manager) | Not started |
-| 4 | Upload the 4 headshots to /ws/people/ | Navneet (File Manager) | Neha's ready in package/site-wide/images; Sharad's still to export |
+| 2 to 3 | Create /wp-content/uploads/ws/ and /ws/people/; upload CSS and JS | Navneet (File Manager) | Done Oct 22, URLs open |
+| 4 | Upload the 4 headshots to /ws/people/ | Navneet (File Manager) | Done Oct 22 (Sharad's 400 px is upscaled from a 240 x 360 photo; replace when a larger original arrives) |
 | 5 | Code Snippets PHP snippet | Can be done through the WordPress connection | Not started |
 | 6 | LiteSpeed JS excludes | Can be done through the WordPress connection | Not started |
 | 7 | Author user "Sharad Gondaliya, CPA"; rename "admin" display name | Navneet (user creation) | Not started |
