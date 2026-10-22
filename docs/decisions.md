@@ -3519,3 +3519,21 @@ dynamic grid looks identical to the cards it replaces.
 
 **Page 1037 becomes Elementor-controlled once saved.** `build_blog_hub.py`
 must not be run against it again — a regeneration would wipe the widget.
+
+## 2026-10-22 — Posts widget settings
+
+Widget is in and rendering. Navneet wants 12 posts across 3 columns.
+
+Two image faults, separate causes. Image Resolution was "Medium - 300 x 300"
+against a render width of ~357px (3 columns in 1100px, 14px gaps), so the file
+was being upscaled: blurry. Image Ratio was 0.66 against the cards' true
+630/1200 = 0.525, so the box sat 26% taller than the image and object-fit:cover
+sliced the left and right edges off -- the titles read "edule 50" and
+"datory T2". Large (1024) and ratio 0.525 fix both.
+
+Meta Data was showing Date + Comments; set to Date only.
+
+Elementor's per-widget kit styles outrank the part 1 selectors, so post titles
+and the read-more link kept the global colours. blog-posts-widget.css restates
+the .ei-card values behind Elementor's "selector" token, which is scoped to the
+one widget and wins. The part 1 copies are left in place as a harmless fallback.
