@@ -3358,3 +3358,67 @@ way. Hub now 34,514 bytes, verified against the local build before publishing.
 
 **All new copy on these five pages needs sign-off** with the Ontario card copy
 from the previous entry.
+
+## 2026-10-22 — /blog/ hub published; first two F13 posts written and scheduled
+
+**/blog/ (page 1037)** completes Family 16: all five hubs now exist. Built by
+`build/f16/build_blog_hub.py`, stylesheet sliced from the built /guides/ hub so
+the two cannot drift. The child count uses `[cnf_child_count type="post"]`
+rather than a typed number, as line 1224 requires.
+
+**Two posts**, both titles taken from Section 7.8's first 40 and both checked
+against the 20 live /answers/ and 12 live /guides/ so neither duplicates an
+existing URL:
+
+| Post | ID | Words |
+|---|---|---|
+| Mandatory T2 E-Filing for Tax Years Starting After 2023 | 1039 | 940 |
+| Schedule 50 and the 10% Shareholder Rule | 1041 | 904 |
+
+Written to the 7.6 brief and gated by `build/f13/gate.py`: answer inside the
+first 40 words, no h1 in the body (the theme renders the title), four or more
+h2 questions, 900 to 1,400 words, one original table plus one original
+checklist each, nine internal links each against the six required, no external
+links, the 7.5 two-line byline and the Last reviewed line.
+
+The gate pairs penalties and the 1590 qualification sentence **both ways**: post
+1039 mentions penalties and carries the sentence verbatim; post 1041 mentions
+none and must not carry it. It caught one real defect before publishing, the
+word "cheapest" in post 1041, banned by rule 4 and by the 7.6 list.
+
+**Scheduled, not live.** Both are `future` at 2026-10-23 20:30 America/Toronto,
+which is the plan's cadence: batch to Sharad Gondaliya on Thursday, live Friday
+by 8:30 PM. They auto-publish then unless pulled.
+
+### Three things that need a person
+
+1. **BLOCKING before Friday 20:30. The permalink structure is wrong.** A probe
+   post published at `/zz-permalink-probe/`, so the structure is
+   `/%postname%/` and posts land at the ROOT. The plan puts F13 at
+   `/blog/<slug>/` (line 1151), and line 325 reserves the root namespace for
+   the 336 Family 4 slugs. Settings, Permalinks, Custom Structure must become
+   `/blog/%postname%/` before these go live, or both posts resolve at the root
+   and every hub link and schema URL 404s. The probe post was deleted.
+2. **Featured images are built but not attached.** `build/f13/og-*.jpg`,
+   1200x630, rendered by headless Chromium in Poppins and Lato. This container
+   cannot reach the site, and the connector only accepts base64, which is about
+   100KB per image through the conversation. Sent to Navneet to approve first.
+3. **The author archive is still not live.** 7.5 rule 5 needs
+   `/author/sharad-gondaliya/` with a biography, credentials and a photo, not
+   noindexed. `docs/author-archive-setup.md` has the WPCode step; it cannot be
+   done from this session.
+
+### The featured cards drop one line from the supplied example
+
+The example card carries "1300+ 5-star Google reviews". Line 1615 bars
+corpnilfilingfor300.ca from publishing any review count, client count or
+years-in-practice figure until the claim-consistency audit is signed, and line
+2053 lists them among the banned items. Replaced with "Registered EFILE
+electronic filer".
+
+### Section 7.8 is usable but needs a pass
+
+It gives 40 titles, and 60 are needed by November 20. About ten of the 40 are
+close duplicates of live /answers/ or /guides/ URLs. The 7.6 brief also says
+"$300.00 including HST" throughout, against Navneet's standing "plus HST"
+correction; the posts use "plus HST".
