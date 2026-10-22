@@ -159,7 +159,7 @@ Checked against the live WordPress site on 14 October 2026, updated 16 October 2
 
 | Planned URL | Priority | Status | Live URL |
 |---|---|---|---|
-| /compare/ownr-alternative/ | P1 | Not built |  |
+| /compare/ownr-alternative/ | P1 | Draft (page 10538, different URL) | /compare/vs-ownr/ |
 | /compare/ontario-business-central-alternative/ | P1 | Built (different URL) | /open-corporation-for-35-vs-ontario-business-central/ |
 | /compare/cpa-vs-lawyer-incorporation/ | P1 | Built (different URL) | /lawyer-vs-open-corporation-for-35/ |
 | /compare/diy-ontario-business-registry/ | P1 | Built (different URL) | /diy-ontario-business-registry-vs-open-corporation-for-35/ |
