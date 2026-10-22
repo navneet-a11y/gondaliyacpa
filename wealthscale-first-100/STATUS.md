@@ -57,7 +57,7 @@ Page 7 "Home (old Astra demo)" is a draft with no public URL: delete it.
 | 4 | Upload the 4 headshots to /ws/people/ | Navneet (File Manager) | Done Oct 22 (Sharad's 400 px is upscaled from a 240 x 360 photo; replace when a larger original arrives) |
 | 5 | Code Snippets PHP snippet | Can be done through the WordPress connection | Not started |
 | 6 | LiteSpeed JS excludes | Can be done through the WordPress connection | Not started |
-| 7 | Author user "Sharad Gondaliya, CPA"; rename "admin" display name | Navneet (user creation) | Not started |
+| 7 | Author "Sharad Gondaliya, CPA" | Navneet + Claude | Done Oct 22: user 1 display name, bio and names set by Navneet; author slug changed from admin to sharad-gondaliya. Login username stays admin. Still to do Friday: Rank Math author archives off |
 | 8 | Rank Math schema, breadcrumbs, Instant Indexing | Rank Math settings | Not started |
 | 9 | Delete Hello world!, sample comment, Sample Page | Can be done through the WordPress connection | Not started |
 | 10 | Redirects (above) | Rank Math | Not started |
