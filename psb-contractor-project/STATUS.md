@@ -111,3 +111,11 @@ Still to do for Navneet on the pages:
 - **Dates:** the dates in all five posts ("Last updated" lines and JSON-LD datePublished/dateModified) moved from October 20 to October 22.
 - **Images:** re-made with "Published 22 October 2026", uploaded as media 57709-57713 (all five file sizes match) and attached.
 - **Published:** posts 6, 7, 8, 9 and 10 on October 22. All 20 URLs are now live.
+
+## October 22 (later): posts 6-10 dated October 20
+
+Per Navneet, posts 6-10 now carry October 20 everywhere to match the plan and the images:
+- **Publish date:** WordPress date set to 2026-10-20, 09:00-09:20.
+- **Text and JSON-LD:** "Last updated" lines and datePublished/dateModified back to October 20.
+- **Images:** the original "Published 20 October 2026" images: 57136, 57137, 57140, 57141, and 57724 (post 10, newly uploaded, size matches).
+- **Unused:** the Oct 22 images (57709-57713) are not attached to any post and can be deleted.
