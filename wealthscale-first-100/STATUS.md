@@ -52,7 +52,7 @@ Page 7 "Home (old Astra demo)" is a draft with no public URL: delete it.
 
 | Step | Action | Who | Status |
 | --- | --- | --- | --- |
-| 1 | Full backup (files and database) in Hostinger | Navneet (hPanel) | Not started |
+| 1 | Full backup (files and database) | Navneet | Done Oct 22: UpdraftPlus to Google Drive (Hostinger allows weekly backups only) |
 | 2 to 3 | Create /wp-content/uploads/ws/ and /ws/people/; upload CSS and JS | Navneet (File Manager) | Done Oct 22, URLs open |
 | 4 | Upload the 4 headshots to /ws/people/ | Navneet (File Manager) | Done Oct 22 (Sharad's 400 px is upscaled from a 240 x 360 photo; replace when a larger original arrives) |
 | 5 | Code Snippets PHP snippet | Can be done through the WordPress connection | Not started |
@@ -81,7 +81,7 @@ The full list (20 items, owners Sharad and Navneet) is in the workbook, sheet "O
 
 | No. | Item | By | Status |
 | --- | --- | --- | --- |
-| 1 | Ask Neha (Upwork) for an 800 x 800 px headshot and to confirm "investing and account pages" scope | Fri Oct 23 | Open |
+| 1 | Ask Neha (Upwork) for an 800 x 800 px headshot and to confirm "investing and account pages" scope | Fri Oct 23 | Done Oct 22: Sharad says use her existing headshot, and she is okay with the wording |
 | 2 | Privacy policy and terms drafts to the lawyer | Fri Oct 23 | Open |
 | 3 | Update each offer the day after it ends (TD Easy Trade ends October 23) | From Oct 24 | Open |
 | 4 | Re-check savings, GIC, USD savings rates and CSA crypto list every 7 days | From Oct 29 | Open |
