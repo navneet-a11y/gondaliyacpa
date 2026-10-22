@@ -226,6 +226,10 @@
 - Meta title: Open Corporation for $35 vs LawDepot: Cost Compared
 - Meta description: We charge $35.00, HST included, government fees at cost. LawDepot sells legal templates from $131.88 a year. A CPA firm is accountable after filing.
 
-## /compare/federal-vs-provincial-incorporation/ (page 10547, draft created 2026-10-22, meta set by connector)
+## /compare/federal-vs-provincial-incorporation/ (page 10547, published 2026-10-22, meta set by connector)
 - Meta title: Federal vs Provincial Incorporation: $200 or $300 Fee
 - Meta description: Federal or Ontario incorporation? Government fee $200 or $300, our fee $35.00 HST included. Directors, name protection and annual returns compared.
+
+## /compare/ hub (page 9273, meta set by connector 2026-10-22, 13 comparison cards)
+- Meta title: Incorporation Comparisons: Costs Compared Line by Line
+- Meta description: Federal vs provincial, numbered vs named, and Open Corporation for $35 against Ownr, LawDepot and others. Our fee $35.00 HST included, government fees at cost.

@@ -12,12 +12,12 @@ Checked against the live WordPress site on 14 October 2026, updated 16 October 2
 | Service Areas | 27 | 15 | 9 | 3 |
 | Industries | 34 | 33 | 0 | 1 |
 | Pricing | 3 | 3 | 0 | 0 |
-| Compare | 14 | 13 | 0 | 1 |
+| Compare | 14 | 14 | 0 | 0 |
 | Guides | 34 | 32 | 0 | 2 |
 | Blog | 13 | 4 | 0 | 9 |
 | About, Team, Reviews, Contact and Legal | 24 | 21 | 0 | 3 |
 | French Quebec | 10 | 0 | 0 | 10 |
-| **Total** | **201** | **157** | **9** | **35** |
+| **Total** | **201** | **158** | **9** | **34** |
 
 ## Home
 
@@ -165,7 +165,7 @@ Checked against the live WordPress site on 14 October 2026, updated 16 October 2
 | /compare/diy-ontario-business-registry/ | P1 | Built (different URL) | /diy-ontario-business-registry-vs-open-corporation-for-35/ |
 | /compare/diy-corporations-canada/ | P1 | Built (different URL) | /diy-corporations-canada-vs-open-corporation-for-35/ |
 | /compare/sole-proprietorship-vs-corporation/ | P1 | Built (different URL) | /sole-proprietorship-vs-corporation/ |
-| /compare/federal-vs-provincial-incorporation/ | P1 | Draft (page 10547) | /compare/federal-vs-provincial-incorporation/ |
+| /compare/federal-vs-provincial-incorporation/ | P1 | Built | /compare/federal-vs-provincial-incorporation/ |
 | /compare/corporation-centre-alternative/ | P2 | Built (different URL) | /corporation-centre-vs-open-corporation-for-35/ |
 | /compare/lawdepot-alternative/ | P2 | Built (different URL) | /lawdepot-vs-open-corporation-for-35/ |
 | /compare/corporation-vs-partnership/ | P2 | Built (different URL) | /corporation-vs-partnership/ |
