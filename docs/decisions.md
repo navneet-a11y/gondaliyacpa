@@ -3686,3 +3686,34 @@ Generator and live agree: +10 chars each, post 1039 10,185 -> 10,195 and post
 
 Menu confirmed fixed after the LiteSpeed purge: Guides and Blog both render in
 the header.
+
+## 2026-10-22 — Family 9 batch 4 published, guides 13 to 17
+
+| Guide | ID | Bytes | Verified |
+|---|---|---|---|
+| /guides/t2-late-filing-penalties/ | 1094 | 24,118 | matches build |
+| /guides/cra-demand-to-file-response/ | 1096 | 23,392 | matches build |
+| /guides/inactive-holding-company-filing/ | 1098 | 24,399 | matches build |
+| /guides/t2-schedules-on-a-nil-return/ | 1100 | 23,126 | matches build |
+| /guides/shelf-corporation-compliance/ | 1102 | 23,284 | matches build |
+
+Each was probed live with a zero-change replacement and returned the byte count
+its generated file carries, so all five transferred exactly.
+
+All five carry the guides' Astra layout meta (page-builder,
+full-width-container, title disabled) and cnf_last_verified_et 2026-10-22.
+
+Family 9 is now 17 of 30. The twelve earlier guides were updated first so every
+one of the seventeen carries sixteen sibling links plus the hub, keeping the
+6(g) line 1528 minimum of 12 inbound satisfied across the family.
+
+### Open for sign-off
+
+- The two Appendix A topics that carry "the ultimate guide to". The superlative
+  was dropped from both title and slug. Eight more in that set remain unbuilt
+  and need the same decision.
+- Appendix A's ten year-token guide slugs (2026 Canadian ...) stay unbuildable
+  as written under 6(k) line 1749. A third of the family's remaining topics are
+  in that set, so this needs resolving before the batch of 20 due October 30.
+- New guide copy needs Sharad Gondaliya's review before it counts as published
+  under the approvals rule at line 45.
