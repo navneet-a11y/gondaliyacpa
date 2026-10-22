@@ -3422,3 +3422,39 @@ It gives 40 titles, and 60 are needed by November 20. About ten of the 40 are
 close duplicates of live /answers/ or /guides/ URLs. The 7.6 brief also says
 "$300.00 including HST" throughout, against Navneet's standing "plus HST"
 correction; the posts use "plus HST".
+
+## 2026-10-22 — the two posts published today, dates moved back a day
+
+Navneet asked to publish rather than wait for the Friday slot, so both posts
+went live today.
+
+That forced a date change. Both were written for Friday and carried "Last
+reviewed: October 23, 2026" with matching schema. 7.5 rule 5 says the stamp is
+written in Eastern Time and **is never set to a future date**, so publishing on
+the 22nd with a 23rd stamp would have broken it. The visible line, both schema
+dates and the "Published" line on each featured card were moved to October 22,
+2026, and the generators updated so a rebuild stays consistent.
+
+Live URLs:
+
+- https://corpnilfilingfor300.ca/mandatory-t2-e-filing-after-2023/ (1039)
+- https://corpnilfilingfor300.ca/schedule-50-and-the-10-percent-shareholder-rule/ (1041)
+
+**Those URLs are at the root, which is not where they belong.** The permalink
+structure is still `/%postname%/`. The connector cannot change it: its settings
+tool refuses permalinks explicitly, so this is a wp-admin change. Until
+Settings, Permalinks, Custom Structure becomes `/blog/%postname%/`:
+
+- both posts sit in the root namespace that line 325 reserves for the 336
+  Family 4 slugs, and
+- the two cards on /blog/ and every schema URL point at `/blog/<slug>/` and
+  return 404.
+
+The hub and the schema were deliberately left pointing at the target
+`/blog/<slug>/` URLs rather than retargeted at the root, because the root URLs
+stop working the moment the structure is corrected and nothing redirects them.
+The fix is seconds of work in wp-admin and makes everything consistent at once.
+
+Still outstanding on these two posts: the featured images are built and
+approved-pending but not attached, and `/author/sharad-gondaliya/` is still not
+live for 7.5 rule 5.

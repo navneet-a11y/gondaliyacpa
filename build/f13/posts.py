@@ -25,7 +25,7 @@ import io, json, os
 
 SITE = 'https://corpnilfilingfor300.ca'
 FORM = SITE + '/form/'
-TODAY, ISO = 'October 23, 2026', '2026-10-23'
+TODAY, ISO = 'October 22, 2026', '2026-10-22'
 
 BYLINE = ('<p class="cnf-by">Written by <a href="%s/sharad-gondaliya-cpa/">Sharad '
           'Gondaliya, CPA</a></p>\n'

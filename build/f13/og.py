@@ -100,7 +100,7 @@ TPL = """<!doctype html><html><head><meta charset="utf-8"><style>%(css)s</style>
   <div class="ring"><img src="data:image/png;base64,%(portrait)s" alt=""></div>
   <p class="wb">Written by</p>
   <span class="name">Sharad Gondaliya, CPA</span>
-  <p class="pub">Published 23 October 2026</p>
+  <p class="pub">Published 22 October 2026</p>
 </div>
 </div></body></html>"""
 
