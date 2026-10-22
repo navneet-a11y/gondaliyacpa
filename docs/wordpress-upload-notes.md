@@ -55,6 +55,37 @@ continue from the next chunk. If it equals the previous target, re-send safely.
    on precisely that byte. A matching length alone does not.
 3. Only then split the remainder and resume.
 
+## `wp_replace_in_post` has no dry run
+
+There is **no `dry_run` parameter**. The tool declares only `id`, `field`,
+`search`, `replace`, `regex` and `max_replacements`, and it accepts unknown keys
+silently instead of rejecting them — so a call passing `dry_run: true` executes
+as a normal write and the flag is discarded without a warning.
+
+A probe is therefore only safe when `replace` is **byte-identical** to `search`.
+That is the whole reason the sections above say "no-op replace (sentinel for
+itself)": the safety comes from the two strings matching, never from a flag.
+
+This cost a live page. A probe shaped as `search: '<h1>[^<]{0,200}</h1>'`,
+`replace: 'X'`, `regex: true`, `dry_run: true`, intended to read page 47834's H1,
+instead deleted it — 108,780 bytes to 108,690. Recovery path, in order:
+
+1. `wp_list_revisions` was no help. WordPress saves the revision *after* the
+   update, so the only revision held the damaged body.
+2. `wp_history_list` with `object_id` found the MCP write, and
+   `wp_history_get` on that row carries `content_before` (pre-change) alongside
+   `revision_content` (post-change).
+3. That payload overflows context, so let the harness spill it to disk and pull
+   the original out with Python rather than reading it in. A
+   `difflib.SequenceMatcher` over the two fields prints the exact opcode, which
+   is what proves only one span changed.
+4. Restore with a unique anchor spanning the wound — the surrounding markup plus
+   the damaged byte — not the bare damaged byte, which recurs all over the body.
+5. Confirm the stored length returns to the logged original exactly.
+
+Never read a value by writing over it. If a page's text is needed, fetch the
+page and grep the spilled file.
+
 ## Verifying what landed
 
 - Read back with `wp_get_post_full`, `post_type: "pages"`, **`context: "edit"`**.
