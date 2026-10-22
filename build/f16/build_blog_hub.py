@@ -71,11 +71,6 @@ p.append('<div class="ei-hero"><div class="ei-hero-inner">'
 post_cards = '\n'.join(card(SITE + '/blog/' + s + '/', t, d) for s, t, d in POSTS)
 p.append('<div class="ei-section"><div class="ei-wrap ei-art">\n'
  '<h2 class="ei-h2">Every Post on This Site</h2>\n'
- # line 1224: live count, never hand-typed
- '<p class="ei-count">Posts published: <b>[cnf_child_count type="post"]</b></p>\n'
- '<p>Each post answers one question in its first 40 words, carries one original '
- 'table or checklist, and shows the date it was last reviewed. New posts publish '
- 'every Friday.</p>\n'
  '<div class="ei-cards">\n' + post_cards + '\n</div>\n'
  '</div></div>\n')
 
