@@ -4,7 +4,7 @@
 - `<h1>`: `Tax Accountant for Online Resellers in Ontario and Across Canada`
 - WordPress page title (site convention): `Accounting and Tax Services for Online Resellers`
 - City-card label: `Online Reseller Tax Accountant in`
-- Status: **DRAFT** 2026-10-22, page ID **57645**, 117,927 bytes stored and verified byte-for-byte against the local build. Awaiting instruction to publish.
+- Status: **PUBLISHED** 2026-10-22, page ID **57645**, 117,927 bytes stored and verified unchanged after publish. Live at https://gondaliyacpa.ca/accountant-for-online-resellers/
 
 Note on the H1: the source row reads `Accountant for Online Resellers in Ontario and Across
 Canada`, without "Tax". The standing H1 rule overrides the row, so the H1 opens `Tax Accountant
