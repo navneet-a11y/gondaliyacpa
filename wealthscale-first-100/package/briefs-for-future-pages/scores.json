@@ -1,0 +1,2502 @@
+{
+ "as_of": "2026-10-22",
+ "brokers": [
+  {
+   "id": "wealthsimple",
+   "name": "Wealthsimple",
+   "review": "/reviews/wealthsimple/trade/",
+   "sub": {
+    "cost": 4.44,
+    "accounts": 5.0,
+    "us": 3.0,
+    "cash_margin": 2.0,
+    "platform": 4,
+    "beginner_platform": 5.0,
+    "safety": 4.0,
+    "options_cost": 5.0
+   },
+   "profile_costs": {
+    "active": 90.0,
+    "hold": 0.0,
+    "options": 0
+   },
+   "score_overall": 3.954,
+   "score_us_stocks": 3.71,
+   "score_beginners": 4.504,
+   "score_options": 4.35,
+   "display_overall": 4.0,
+   "display_us_stocks": 3.7,
+   "display_beginners": 4.5,
+   "display_options": 4.3
+  },
+  {
+   "id": "questrade",
+   "name": "Questrade",
+   "review": "/reviews/questrade/",
+   "sub": {
+    "cost": 4.44,
+    "accounts": 5.0,
+    "us": 4.0,
+    "cash_margin": 0.5,
+    "platform": 4.5,
+    "beginner_platform": 3.75,
+    "safety": 3.5,
+    "options_cost": 5.0
+   },
+   "profile_costs": {
+    "active": 90.0,
+    "hold": 0.0,
+    "options": 0
+   },
+   "score_overall": 3.979,
+   "score_us_stocks": 4.035,
+   "score_beginners": 4.141,
+   "score_options": 4.275,
+   "display_overall": 4.0,
+   "display_us_stocks": 4.0,
+   "display_beginners": 4.1,
+   "display_options": 4.3
+  },
+  {
+   "id": "interactive-brokers",
+   "name": "Interactive Brokers Canada",
+   "review": "/reviews/interactive-brokers/",
+   "sub": {
+    "cost": 4.65,
+    "accounts": 4.0,
+    "us": 3.25,
+    "cash_margin": 5.0,
+    "platform": 5,
+    "beginner_platform": 5.0,
+    "safety": 4.0,
+    "options_cost": 4.48
+   },
+   "profile_costs": {
+    "active": 44.0,
+    "hold": 12.0,
+    "options": 62.4
+   },
+   "score_overall": 4.365,
+   "score_us_stocks": 4.013,
+   "score_beginners": 4.44,
+   "score_options": 4.59,
+   "display_overall": 4.4,
+   "display_us_stocks": 4.0,
+   "display_beginners": 4.4,
+   "display_options": 4.6
+  },
+  {
+   "id": "moomoo",
+   "name": "moomoo Canada",
+   "review": "/reviews/moomoo/",
+   "sub": {
+    "cost": 3.95,
+    "accounts": 2.0,
+    "us": 3.25,
+    "cash_margin": 2.5,
+    "platform": 3,
+    "beginner_platform": 2.5,
+    "safety": 4.0,
+    "options_cost": 4.48
+   },
+   "profile_costs": {
+    "active": 149.64,
+    "hold": 17.88,
+    "options": 62.4
+   },
+   "score_overall": 3.27,
+   "score_us_stocks": 3.312,
+   "score_beginners": 3.27,
+   "score_options": 3.74,
+   "display_overall": 3.3,
+   "display_us_stocks": 3.3,
+   "display_beginners": 3.3,
+   "display_options": 3.7
+  },
+  {
+   "id": "webull",
+   "name": "Webull Canada",
+   "review": "/reviews/webull/",
+   "sub": {
+    "cost": 4.33,
+    "accounts": 1.5,
+    "us": 2.5,
+    "cash_margin": 0.5,
+    "platform": 3,
+    "beginner_platform": 2.5,
+    "safety": 4.0,
+    "options_cost": 4.21
+   },
+   "profile_costs": {
+    "active": 98.4,
+    "hold": 8.4,
+    "options": 95.04
+   },
+   "score_overall": 3.015,
+   "score_us_stocks": 2.958,
+   "score_beginners": 3.29,
+   "score_options": 3.38,
+   "display_overall": 3.0,
+   "display_us_stocks": 3.0,
+   "display_beginners": 3.3,
+   "display_options": 3.4
+  },
+  {
+   "id": "qtrade",
+   "name": "Qtrade Direct Investing",
+   "review": "/reviews/qtrade/",
+   "sub": {
+    "cost": 4.44,
+    "accounts": 5.0,
+    "us": 2.5,
+    "cash_margin": 1.5,
+    "platform": 3,
+    "beginner_platform": 3.5,
+    "safety": 4.0,
+    "options_cost": 4.4
+   },
+   "profile_costs": {
+    "active": 90.0,
+    "hold": 0.0,
+    "options": 72.0
+   },
+   "score_overall": 3.679,
+   "score_us_stocks": 3.385,
+   "score_beginners": 4.104,
+   "score_options": 3.75,
+   "display_overall": 3.7,
+   "display_us_stocks": 3.4,
+   "display_beginners": 4.1,
+   "display_options": 3.8
+  },
+  {
+   "id": "national-bank",
+   "name": "National Bank Direct Brokerage",
+   "review": null,
+   "sub": {
+    "cost": 4.36,
+    "accounts": 4.5,
+    "us": 3.75,
+    "cash_margin": 1.0,
+    "platform": 3.0,
+    "beginner_platform": 2.75,
+    "safety": 4.5,
+    "options_cost": 2.5
+   },
+   "profile_costs": {
+    "active": 102.0,
+    "hold": 0.0,
+    "options": 300.0
+   },
+   "score_overall": 3.764,
+   "score_us_stocks": 3.84,
+   "score_beginners": 3.976,
+   "score_options": 2.775,
+   "display_overall": 3.8,
+   "display_us_stocks": 3.8,
+   "display_beginners": 4.0,
+   "display_options": 2.8
+  },
+  {
+   "id": "cibc",
+   "name": "CIBC Investor's Edge",
+   "review": null,
+   "sub": {
+    "cost": 2.31,
+    "accounts": 4.5,
+    "us": 1.25,
+    "cash_margin": 1.0,
+    "platform": 3,
+    "beginner_platform": 4.0,
+    "safety": 4.5,
+    "options_cost": 1.22
+   },
+   "profile_costs": {
+    "active": 346.2,
+    "hold": 83.4,
+    "options": 453.6
+   },
+   "score_overall": 2.671,
+   "score_us_stocks": 2.328,
+   "score_beginners": 3.446,
+   "score_options": 2.135,
+   "display_overall": 2.7,
+   "display_us_stocks": 2.3,
+   "display_beginners": 3.4,
+   "display_options": 2.1
+  },
+  {
+   "id": "td",
+   "name": "TD Direct Investing",
+   "review": "/reviews/td-direct-investing/",
+   "sub": {
+    "cost": 1.53,
+    "accounts": 2.0,
+    "us": 1.75,
+    "cash_margin": 0.5,
+    "platform": 5,
+    "beginner_platform": 4.5,
+    "safety": 4.5,
+    "options_cost": 0.0
+   },
+   "profile_costs": {
+    "active": 435.24,
+    "hold": 119.88,
+    "options": 599.52
+   },
+   "score_overall": 2.348,
+   "score_us_stocks": 2.258,
+   "score_beginners": 2.948,
+   "score_options": 1.85,
+   "display_overall": 2.3,
+   "display_us_stocks": 2.3,
+   "display_beginners": 2.9,
+   "display_options": 1.9
+  },
+  {
+   "id": "rbc",
+   "name": "RBC Direct Investing",
+   "review": "/reviews/rbc-direct-investing/",
+   "sub": {
+    "cost": 1.42,
+    "accounts": 5.0,
+    "us": 1.25,
+    "cash_margin": 0.5,
+    "platform": 4,
+    "beginner_platform": 3.5,
+    "safety": 5.0,
+    "options_cost": 0.02
+   },
+   "profile_costs": {
+    "active": 454.2,
+    "hold": 119.4,
+    "options": 597.6
+   },
+   "score_overall": 2.584,
+   "score_us_stocks": 2.28,
+   "score_beginners": 3.184,
+   "score_options": 1.81,
+   "display_overall": 2.6,
+   "display_us_stocks": 2.3,
+   "display_beginners": 3.2,
+   "display_options": 1.8
+  },
+  {
+   "id": "bmo",
+   "name": "BMO InvestorLine",
+   "review": null,
+   "sub": {
+    "cost": 4.4,
+    "accounts": 4.5,
+    "us": 2.25,
+    "cash_margin": 0.5,
+    "platform": 3,
+    "beginner_platform": 2.5,
+    "safety": 5.0,
+    "options_cost": 4.28
+   },
+   "profile_costs": {
+    "active": 96.0,
+    "hold": 0.0,
+    "options": 86.4
+   },
+   "score_overall": 3.552,
+   "score_us_stocks": 3.275,
+   "score_beginners": 3.953,
+   "score_options": 3.665,
+   "display_overall": 3.6,
+   "display_us_stocks": 3.3,
+   "display_beginners": 4.0,
+   "display_options": 3.7
+  },
+  {
+   "id": "scotia",
+   "name": "Scotia iTRADE",
+   "review": null,
+   "sub": {
+    "cost": 1.44,
+    "accounts": 4.0,
+    "us": 2.5,
+    "cash_margin": 1.0,
+    "platform": 2.0,
+    "beginner_platform": 1.25,
+    "safety": 5.0,
+    "options_cost": 0.0
+   },
+   "profile_costs": {
+    "active": 449.64,
+    "hold": 119.88,
+    "options": 599.52
+   },
+   "score_overall": 2.379,
+   "score_us_stocks": 2.51,
+   "score_beginners": 2.542,
+   "score_options": 1.3,
+   "display_overall": 2.4,
+   "display_us_stocks": 2.5,
+   "display_beginners": 2.5,
+   "display_options": 1.3
+  },
+  {
+   "id": "desjardins",
+   "name": "Desjardins Online Brokerage (Disnat)",
+   "review": null,
+   "sub": {
+    "cost": 4.44,
+    "accounts": 4.5,
+    "us": 3.5,
+    "cash_margin": 1.5,
+    "platform": 3,
+    "beginner_platform": 2.5,
+    "safety": 5.0,
+    "options_cost": 1.5
+   },
+   "profile_costs": {
+    "active": 90.0,
+    "hold": 0.0,
+    "options": 420.0
+   },
+   "score_overall": 3.854,
+   "score_us_stocks": 3.835,
+   "score_beginners": 4.029,
+   "score_options": 2.375,
+   "display_overall": 3.9,
+   "display_us_stocks": 3.8,
+   "display_beginners": 4.0,
+   "display_options": 2.4
+  }
+ ],
+ "broker_lists": {
+  "best-online-brokers": [
+   {
+    "rank": 1,
+    "id": "interactive-brokers",
+    "name": "Interactive Brokers Canada",
+    "score": 4.4,
+    "review": "/reviews/interactive-brokers/"
+   },
+   {
+    "rank": 2,
+    "id": "questrade",
+    "name": "Questrade",
+    "score": 4.0,
+    "review": "/reviews/questrade/"
+   },
+   {
+    "rank": 3,
+    "id": "wealthsimple",
+    "name": "Wealthsimple",
+    "score": 4.0,
+    "review": "/reviews/wealthsimple/trade/"
+   },
+   {
+    "rank": 4,
+    "id": "desjardins",
+    "name": "Desjardins Online Brokerage (Disnat)",
+    "score": 3.9,
+    "review": null
+   },
+   {
+    "rank": 5,
+    "id": "national-bank",
+    "name": "National Bank Direct Brokerage",
+    "score": 3.8,
+    "review": null
+   },
+   {
+    "rank": 6,
+    "id": "qtrade",
+    "name": "Qtrade Direct Investing",
+    "score": 3.7,
+    "review": "/reviews/qtrade/"
+   },
+   {
+    "rank": 7,
+    "id": "bmo",
+    "name": "BMO InvestorLine",
+    "score": 3.6,
+    "review": null
+   },
+   {
+    "rank": 8,
+    "id": "moomoo",
+    "name": "moomoo Canada",
+    "score": 3.3,
+    "review": "/reviews/moomoo/"
+   },
+   {
+    "rank": 9,
+    "id": "webull",
+    "name": "Webull Canada",
+    "score": 3.0,
+    "review": "/reviews/webull/"
+   },
+   {
+    "rank": 10,
+    "id": "cibc",
+    "name": "CIBC Investor's Edge",
+    "score": 2.7,
+    "review": null
+   },
+   {
+    "rank": 11,
+    "id": "rbc",
+    "name": "RBC Direct Investing",
+    "score": 2.6,
+    "review": "/reviews/rbc-direct-investing/"
+   },
+   {
+    "rank": 12,
+    "id": "scotia",
+    "name": "Scotia iTRADE",
+    "score": 2.4,
+    "review": null
+   },
+   {
+    "rank": 13,
+    "id": "td",
+    "name": "TD Direct Investing",
+    "score": 2.3,
+    "review": "/reviews/td-direct-investing/"
+   }
+  ],
+  "best-brokers-for-us-stocks": [
+   {
+    "rank": 1,
+    "id": "questrade",
+    "name": "Questrade",
+    "score": 4.0,
+    "review": "/reviews/questrade/"
+   },
+   {
+    "rank": 2,
+    "id": "interactive-brokers",
+    "name": "Interactive Brokers Canada",
+    "score": 4.0,
+    "review": "/reviews/interactive-brokers/"
+   },
+   {
+    "rank": 3,
+    "id": "national-bank",
+    "name": "National Bank Direct Brokerage",
+    "score": 3.8,
+    "review": null
+   },
+   {
+    "rank": 4,
+    "id": "desjardins",
+    "name": "Desjardins Online Brokerage (Disnat)",
+    "score": 3.8,
+    "review": null
+   },
+   {
+    "rank": 5,
+    "id": "wealthsimple",
+    "name": "Wealthsimple",
+    "score": 3.7,
+    "review": "/reviews/wealthsimple/trade/"
+   },
+   {
+    "rank": 6,
+    "id": "qtrade",
+    "name": "Qtrade Direct Investing",
+    "score": 3.4,
+    "review": "/reviews/qtrade/"
+   },
+   {
+    "rank": 7,
+    "id": "moomoo",
+    "name": "moomoo Canada",
+    "score": 3.3,
+    "review": "/reviews/moomoo/"
+   },
+   {
+    "rank": 8,
+    "id": "bmo",
+    "name": "BMO InvestorLine",
+    "score": 3.3,
+    "review": null
+   },
+   {
+    "rank": 9,
+    "id": "webull",
+    "name": "Webull Canada",
+    "score": 3.0,
+    "review": "/reviews/webull/"
+   },
+   {
+    "rank": 10,
+    "id": "scotia",
+    "name": "Scotia iTRADE",
+    "score": 2.5,
+    "review": null
+   },
+   {
+    "rank": 11,
+    "id": "cibc",
+    "name": "CIBC Investor's Edge",
+    "score": 2.3,
+    "review": null
+   },
+   {
+    "rank": 12,
+    "id": "rbc",
+    "name": "RBC Direct Investing",
+    "score": 2.3,
+    "review": "/reviews/rbc-direct-investing/"
+   },
+   {
+    "rank": 13,
+    "id": "td",
+    "name": "TD Direct Investing",
+    "score": 2.3,
+    "review": "/reviews/td-direct-investing/"
+   }
+  ],
+  "best-brokers-for-beginners": [
+   {
+    "rank": 1,
+    "id": "wealthsimple",
+    "name": "Wealthsimple",
+    "score": 4.5,
+    "review": "/reviews/wealthsimple/trade/"
+   },
+   {
+    "rank": 2,
+    "id": "interactive-brokers",
+    "name": "Interactive Brokers Canada",
+    "score": 4.4,
+    "review": "/reviews/interactive-brokers/"
+   },
+   {
+    "rank": 3,
+    "id": "questrade",
+    "name": "Questrade",
+    "score": 4.1,
+    "review": "/reviews/questrade/"
+   },
+   {
+    "rank": 4,
+    "id": "qtrade",
+    "name": "Qtrade Direct Investing",
+    "score": 4.1,
+    "review": "/reviews/qtrade/"
+   },
+   {
+    "rank": 5,
+    "id": "desjardins",
+    "name": "Desjardins Online Brokerage (Disnat)",
+    "score": 4.0,
+    "review": null
+   },
+   {
+    "rank": 6,
+    "id": "national-bank",
+    "name": "National Bank Direct Brokerage",
+    "score": 4.0,
+    "review": null
+   },
+   {
+    "rank": 7,
+    "id": "bmo",
+    "name": "BMO InvestorLine",
+    "score": 4.0,
+    "review": null
+   },
+   {
+    "rank": 8,
+    "id": "cibc",
+    "name": "CIBC Investor's Edge",
+    "score": 3.4,
+    "review": null
+   },
+   {
+    "rank": 9,
+    "id": "webull",
+    "name": "Webull Canada",
+    "score": 3.3,
+    "review": "/reviews/webull/"
+   },
+   {
+    "rank": 10,
+    "id": "moomoo",
+    "name": "moomoo Canada",
+    "score": 3.3,
+    "review": "/reviews/moomoo/"
+   },
+   {
+    "rank": 11,
+    "id": "rbc",
+    "name": "RBC Direct Investing",
+    "score": 3.2,
+    "review": "/reviews/rbc-direct-investing/"
+   },
+   {
+    "rank": 12,
+    "id": "td",
+    "name": "TD Direct Investing",
+    "score": 2.9,
+    "review": "/reviews/td-direct-investing/"
+   },
+   {
+    "rank": 13,
+    "id": "scotia",
+    "name": "Scotia iTRADE",
+    "score": 2.5,
+    "review": null
+   }
+  ],
+  "best-options-trading-platforms": [
+   {
+    "rank": 1,
+    "id": "interactive-brokers",
+    "name": "Interactive Brokers Canada",
+    "score": 4.6,
+    "review": "/reviews/interactive-brokers/"
+   },
+   {
+    "rank": 2,
+    "id": "wealthsimple",
+    "name": "Wealthsimple",
+    "score": 4.3,
+    "review": "/reviews/wealthsimple/trade/"
+   },
+   {
+    "rank": 3,
+    "id": "questrade",
+    "name": "Questrade",
+    "score": 4.3,
+    "review": "/reviews/questrade/"
+   },
+   {
+    "rank": 4,
+    "id": "qtrade",
+    "name": "Qtrade Direct Investing",
+    "score": 3.8,
+    "review": "/reviews/qtrade/"
+   },
+   {
+    "rank": 5,
+    "id": "moomoo",
+    "name": "moomoo Canada",
+    "score": 3.7,
+    "review": "/reviews/moomoo/"
+   },
+   {
+    "rank": 6,
+    "id": "bmo",
+    "name": "BMO InvestorLine",
+    "score": 3.7,
+    "review": null
+   },
+   {
+    "rank": 7,
+    "id": "webull",
+    "name": "Webull Canada",
+    "score": 3.4,
+    "review": "/reviews/webull/"
+   },
+   {
+    "rank": 8,
+    "id": "national-bank",
+    "name": "National Bank Direct Brokerage",
+    "score": 2.8,
+    "review": null
+   },
+   {
+    "rank": 9,
+    "id": "desjardins",
+    "name": "Desjardins Online Brokerage (Disnat)",
+    "score": 2.4,
+    "review": null
+   },
+   {
+    "rank": 10,
+    "id": "cibc",
+    "name": "CIBC Investor's Edge",
+    "score": 2.1,
+    "review": null
+   },
+   {
+    "rank": 11,
+    "id": "td",
+    "name": "TD Direct Investing",
+    "score": 1.9,
+    "review": "/reviews/td-direct-investing/"
+   },
+   {
+    "rank": 12,
+    "id": "rbc",
+    "name": "RBC Direct Investing",
+    "score": 1.8,
+    "review": "/reviews/rbc-direct-investing/"
+   },
+   {
+    "rank": 13,
+    "id": "scotia",
+    "name": "Scotia iTRADE",
+    "score": 1.3,
+    "review": null
+   }
+  ],
+  "best-commission-free-brokers": [
+   {
+    "rank": 1,
+    "id": "questrade",
+    "name": "Questrade",
+    "score": 4.0,
+    "review": "/reviews/questrade/"
+   },
+   {
+    "rank": 2,
+    "id": "wealthsimple",
+    "name": "Wealthsimple",
+    "score": 4.0,
+    "review": "/reviews/wealthsimple/trade/"
+   },
+   {
+    "rank": 3,
+    "id": "desjardins",
+    "name": "Desjardins Online Brokerage (Disnat)",
+    "score": 3.9,
+    "review": null
+   },
+   {
+    "rank": 4,
+    "id": "national-bank",
+    "name": "National Bank Direct Brokerage",
+    "score": 3.8,
+    "review": null
+   },
+   {
+    "rank": 5,
+    "id": "qtrade",
+    "name": "Qtrade Direct Investing",
+    "score": 3.7,
+    "review": "/reviews/qtrade/"
+   },
+   {
+    "rank": 6,
+    "id": "bmo",
+    "name": "BMO InvestorLine",
+    "score": 3.6,
+    "review": null
+   },
+   {
+    "rank": 7,
+    "id": "webull",
+    "name": "Webull Canada",
+    "score": 3.0,
+    "review": "/reviews/webull/"
+   }
+  ],
+  "best-investing-apps": [
+   {
+    "rank": 1,
+    "id": "wealthsimple",
+    "name": "Wealthsimple",
+    "score": 4.5,
+    "review": "/reviews/wealthsimple/trade/"
+   },
+   {
+    "rank": 2,
+    "id": "interactive-brokers",
+    "name": "Interactive Brokers Canada",
+    "score": 4.4,
+    "review": "/reviews/interactive-brokers/"
+   },
+   {
+    "rank": 3,
+    "id": "qtrade",
+    "name": "Qtrade Direct Investing",
+    "score": 4.1,
+    "review": "/reviews/qtrade/"
+   },
+   {
+    "rank": 4,
+    "id": "desjardins",
+    "name": "Desjardins Online Brokerage (Disnat)",
+    "score": 4.0,
+    "review": null
+   },
+   {
+    "rank": 5,
+    "id": "bmo",
+    "name": "BMO InvestorLine",
+    "score": 4.0,
+    "review": null
+   },
+   {
+    "rank": 6,
+    "id": "cibc",
+    "name": "CIBC Investor's Edge",
+    "score": 3.4,
+    "review": null
+   },
+   {
+    "rank": 7,
+    "id": "webull",
+    "name": "Webull Canada",
+    "score": 3.3,
+    "review": "/reviews/webull/"
+   },
+   {
+    "rank": 8,
+    "id": "moomoo",
+    "name": "moomoo Canada",
+    "score": 3.3,
+    "review": "/reviews/moomoo/"
+   },
+   {
+    "rank": 9,
+    "id": "rbc",
+    "name": "RBC Direct Investing",
+    "score": 3.2,
+    "review": "/reviews/rbc-direct-investing/"
+   },
+   {
+    "rank": 10,
+    "id": "td",
+    "name": "TD Direct Investing",
+    "score": 2.9,
+    "review": "/reviews/td-direct-investing/"
+   }
+  ],
+  "brokers-offering-tfsa": [
+   {
+    "rank": 1,
+    "id": "interactive-brokers",
+    "name": "Interactive Brokers Canada",
+    "score": 4.4,
+    "review": "/reviews/interactive-brokers/"
+   },
+   {
+    "rank": 2,
+    "id": "questrade",
+    "name": "Questrade",
+    "score": 4.0,
+    "review": "/reviews/questrade/"
+   },
+   {
+    "rank": 3,
+    "id": "wealthsimple",
+    "name": "Wealthsimple",
+    "score": 4.0,
+    "review": "/reviews/wealthsimple/trade/"
+   },
+   {
+    "rank": 4,
+    "id": "desjardins",
+    "name": "Desjardins Online Brokerage (Disnat)",
+    "score": 3.9,
+    "review": null
+   },
+   {
+    "rank": 5,
+    "id": "national-bank",
+    "name": "National Bank Direct Brokerage",
+    "score": 3.8,
+    "review": null
+   },
+   {
+    "rank": 6,
+    "id": "qtrade",
+    "name": "Qtrade Direct Investing",
+    "score": 3.7,
+    "review": "/reviews/qtrade/"
+   },
+   {
+    "rank": 7,
+    "id": "bmo",
+    "name": "BMO InvestorLine",
+    "score": 3.6,
+    "review": null
+   },
+   {
+    "rank": 8,
+    "id": "moomoo",
+    "name": "moomoo Canada",
+    "score": 3.3,
+    "review": "/reviews/moomoo/"
+   },
+   {
+    "rank": 9,
+    "id": "webull",
+    "name": "Webull Canada",
+    "score": 3.0,
+    "review": "/reviews/webull/"
+   },
+   {
+    "rank": 10,
+    "id": "cibc",
+    "name": "CIBC Investor's Edge",
+    "score": 2.7,
+    "review": null
+   },
+   {
+    "rank": 11,
+    "id": "rbc",
+    "name": "RBC Direct Investing",
+    "score": 2.6,
+    "review": "/reviews/rbc-direct-investing/"
+   },
+   {
+    "rank": 12,
+    "id": "scotia",
+    "name": "Scotia iTRADE",
+    "score": 2.4,
+    "review": null
+   },
+   {
+    "rank": 13,
+    "id": "td",
+    "name": "TD Direct Investing",
+    "score": 2.3,
+    "review": "/reviews/td-direct-investing/"
+   }
+  ],
+  "brokers-offering-rrsp": [
+   {
+    "rank": 1,
+    "id": "interactive-brokers",
+    "name": "Interactive Brokers Canada",
+    "score": 4.4,
+    "review": "/reviews/interactive-brokers/"
+   },
+   {
+    "rank": 2,
+    "id": "questrade",
+    "name": "Questrade",
+    "score": 4.0,
+    "review": "/reviews/questrade/"
+   },
+   {
+    "rank": 3,
+    "id": "wealthsimple",
+    "name": "Wealthsimple",
+    "score": 4.0,
+    "review": "/reviews/wealthsimple/trade/"
+   },
+   {
+    "rank": 4,
+    "id": "desjardins",
+    "name": "Desjardins Online Brokerage (Disnat)",
+    "score": 3.9,
+    "review": null
+   },
+   {
+    "rank": 5,
+    "id": "national-bank",
+    "name": "National Bank Direct Brokerage",
+    "score": 3.8,
+    "review": null
+   },
+   {
+    "rank": 6,
+    "id": "qtrade",
+    "name": "Qtrade Direct Investing",
+    "score": 3.7,
+    "review": "/reviews/qtrade/"
+   },
+   {
+    "rank": 7,
+    "id": "bmo",
+    "name": "BMO InvestorLine",
+    "score": 3.6,
+    "review": null
+   },
+   {
+    "rank": 8,
+    "id": "moomoo",
+    "name": "moomoo Canada",
+    "score": 3.3,
+    "review": "/reviews/moomoo/"
+   },
+   {
+    "rank": 9,
+    "id": "webull",
+    "name": "Webull Canada",
+    "score": 3.0,
+    "review": "/reviews/webull/"
+   },
+   {
+    "rank": 10,
+    "id": "cibc",
+    "name": "CIBC Investor's Edge",
+    "score": 2.7,
+    "review": null
+   },
+   {
+    "rank": 11,
+    "id": "rbc",
+    "name": "RBC Direct Investing",
+    "score": 2.6,
+    "review": "/reviews/rbc-direct-investing/"
+   },
+   {
+    "rank": 12,
+    "id": "scotia",
+    "name": "Scotia iTRADE",
+    "score": 2.4,
+    "review": null
+   },
+   {
+    "rank": 13,
+    "id": "td",
+    "name": "TD Direct Investing",
+    "score": 2.3,
+    "review": "/reviews/td-direct-investing/"
+   }
+  ],
+  "brokers-offering-fhsa": [
+   {
+    "rank": 1,
+    "id": "interactive-brokers",
+    "name": "Interactive Brokers Canada",
+    "score": 4.4,
+    "review": "/reviews/interactive-brokers/"
+   },
+   {
+    "rank": 2,
+    "id": "questrade",
+    "name": "Questrade",
+    "score": 4.0,
+    "review": "/reviews/questrade/"
+   },
+   {
+    "rank": 3,
+    "id": "wealthsimple",
+    "name": "Wealthsimple",
+    "score": 4.0,
+    "review": "/reviews/wealthsimple/trade/"
+   },
+   {
+    "rank": 4,
+    "id": "desjardins",
+    "name": "Desjardins Online Brokerage (Disnat)",
+    "score": 3.9,
+    "review": null
+   },
+   {
+    "rank": 5,
+    "id": "national-bank",
+    "name": "National Bank Direct Brokerage",
+    "score": 3.8,
+    "review": null
+   },
+   {
+    "rank": 6,
+    "id": "qtrade",
+    "name": "Qtrade Direct Investing",
+    "score": 3.7,
+    "review": "/reviews/qtrade/"
+   },
+   {
+    "rank": 7,
+    "id": "bmo",
+    "name": "BMO InvestorLine",
+    "score": 3.6,
+    "review": null
+   },
+   {
+    "rank": 8,
+    "id": "cibc",
+    "name": "CIBC Investor's Edge",
+    "score": 2.7,
+    "review": null
+   },
+   {
+    "rank": 9,
+    "id": "rbc",
+    "name": "RBC Direct Investing",
+    "score": 2.6,
+    "review": "/reviews/rbc-direct-investing/"
+   },
+   {
+    "rank": 10,
+    "id": "scotia",
+    "name": "Scotia iTRADE",
+    "score": 2.4,
+    "review": null
+   },
+   {
+    "rank": 11,
+    "id": "td",
+    "name": "TD Direct Investing",
+    "score": 2.3,
+    "review": "/reviews/td-direct-investing/"
+   }
+  ],
+  "brokers-offering-resp": [
+   {
+    "rank": 1,
+    "id": "questrade",
+    "name": "Questrade",
+    "score": 4.0,
+    "review": "/reviews/questrade/"
+   },
+   {
+    "rank": 2,
+    "id": "wealthsimple",
+    "name": "Wealthsimple",
+    "score": 4.0,
+    "review": "/reviews/wealthsimple/trade/"
+   },
+   {
+    "rank": 3,
+    "id": "desjardins",
+    "name": "Desjardins Online Brokerage (Disnat)",
+    "score": 3.9,
+    "review": null
+   },
+   {
+    "rank": 4,
+    "id": "national-bank",
+    "name": "National Bank Direct Brokerage",
+    "score": 3.8,
+    "review": null
+   },
+   {
+    "rank": 5,
+    "id": "qtrade",
+    "name": "Qtrade Direct Investing",
+    "score": 3.7,
+    "review": "/reviews/qtrade/"
+   },
+   {
+    "rank": 6,
+    "id": "bmo",
+    "name": "BMO InvestorLine",
+    "score": 3.6,
+    "review": null
+   },
+   {
+    "rank": 7,
+    "id": "cibc",
+    "name": "CIBC Investor's Edge",
+    "score": 2.7,
+    "review": null
+   },
+   {
+    "rank": 8,
+    "id": "rbc",
+    "name": "RBC Direct Investing",
+    "score": 2.6,
+    "review": "/reviews/rbc-direct-investing/"
+   },
+   {
+    "rank": 9,
+    "id": "scotia",
+    "name": "Scotia iTRADE",
+    "score": 2.4,
+    "review": null
+   }
+  ],
+  "brokers-offering-rrif": [
+   {
+    "rank": 1,
+    "id": "interactive-brokers",
+    "name": "Interactive Brokers Canada",
+    "score": 4.4,
+    "review": "/reviews/interactive-brokers/"
+   },
+   {
+    "rank": 2,
+    "id": "questrade",
+    "name": "Questrade",
+    "score": 4.0,
+    "review": "/reviews/questrade/"
+   },
+   {
+    "rank": 3,
+    "id": "wealthsimple",
+    "name": "Wealthsimple",
+    "score": 4.0,
+    "review": "/reviews/wealthsimple/trade/"
+   },
+   {
+    "rank": 4,
+    "id": "desjardins",
+    "name": "Desjardins Online Brokerage (Disnat)",
+    "score": 3.9,
+    "review": null
+   },
+   {
+    "rank": 5,
+    "id": "national-bank",
+    "name": "National Bank Direct Brokerage",
+    "score": 3.8,
+    "review": null
+   },
+   {
+    "rank": 6,
+    "id": "qtrade",
+    "name": "Qtrade Direct Investing",
+    "score": 3.7,
+    "review": "/reviews/qtrade/"
+   },
+   {
+    "rank": 7,
+    "id": "bmo",
+    "name": "BMO InvestorLine",
+    "score": 3.6,
+    "review": null
+   },
+   {
+    "rank": 8,
+    "id": "cibc",
+    "name": "CIBC Investor's Edge",
+    "score": 2.7,
+    "review": null
+   },
+   {
+    "rank": 9,
+    "id": "rbc",
+    "name": "RBC Direct Investing",
+    "score": 2.6,
+    "review": "/reviews/rbc-direct-investing/"
+   },
+   {
+    "rank": 10,
+    "id": "scotia",
+    "name": "Scotia iTRADE",
+    "score": 2.4,
+    "review": null
+   }
+  ],
+  "brokers-offering-lira": [
+   {
+    "rank": 1,
+    "id": "questrade",
+    "name": "Questrade",
+    "score": 4.0,
+    "review": "/reviews/questrade/"
+   },
+   {
+    "rank": 2,
+    "id": "wealthsimple",
+    "name": "Wealthsimple",
+    "score": 4.0,
+    "review": "/reviews/wealthsimple/trade/"
+   },
+   {
+    "rank": 3,
+    "id": "desjardins",
+    "name": "Desjardins Online Brokerage (Disnat)",
+    "score": 3.9,
+    "review": null
+   },
+   {
+    "rank": 4,
+    "id": "national-bank",
+    "name": "National Bank Direct Brokerage",
+    "score": 3.8,
+    "review": null
+   },
+   {
+    "rank": 5,
+    "id": "qtrade",
+    "name": "Qtrade Direct Investing",
+    "score": 3.7,
+    "review": "/reviews/qtrade/"
+   },
+   {
+    "rank": 6,
+    "id": "bmo",
+    "name": "BMO InvestorLine",
+    "score": 3.6,
+    "review": null
+   },
+   {
+    "rank": 7,
+    "id": "cibc",
+    "name": "CIBC Investor's Edge",
+    "score": 2.7,
+    "review": null
+   },
+   {
+    "rank": 8,
+    "id": "rbc",
+    "name": "RBC Direct Investing",
+    "score": 2.6,
+    "review": "/reviews/rbc-direct-investing/"
+   },
+   {
+    "rank": 9,
+    "id": "scotia",
+    "name": "Scotia iTRADE",
+    "score": 2.4,
+    "review": null
+   }
+  ],
+  "best-tfsa-for-us-stocks": [
+   {
+    "rank": 1,
+    "id": "questrade",
+    "name": "Questrade",
+    "score": 4.0,
+    "review": "/reviews/questrade/"
+   },
+   {
+    "rank": 2,
+    "id": "interactive-brokers",
+    "name": "Interactive Brokers Canada",
+    "score": 4.0,
+    "review": "/reviews/interactive-brokers/"
+   },
+   {
+    "rank": 3,
+    "id": "national-bank",
+    "name": "National Bank Direct Brokerage",
+    "score": 3.8,
+    "review": null
+   },
+   {
+    "rank": 4,
+    "id": "desjardins",
+    "name": "Desjardins Online Brokerage (Disnat)",
+    "score": 3.8,
+    "review": null
+   },
+   {
+    "rank": 5,
+    "id": "wealthsimple",
+    "name": "Wealthsimple",
+    "score": 3.7,
+    "review": "/reviews/wealthsimple/trade/"
+   },
+   {
+    "rank": 6,
+    "id": "qtrade",
+    "name": "Qtrade Direct Investing",
+    "score": 3.4,
+    "review": "/reviews/qtrade/"
+   },
+   {
+    "rank": 7,
+    "id": "moomoo",
+    "name": "moomoo Canada",
+    "score": 3.3,
+    "review": "/reviews/moomoo/"
+   },
+   {
+    "rank": 8,
+    "id": "bmo",
+    "name": "BMO InvestorLine",
+    "score": 3.3,
+    "review": null
+   },
+   {
+    "rank": 9,
+    "id": "webull",
+    "name": "Webull Canada",
+    "score": 3.0,
+    "review": "/reviews/webull/"
+   },
+   {
+    "rank": 10,
+    "id": "scotia",
+    "name": "Scotia iTRADE",
+    "score": 2.5,
+    "review": null
+   },
+   {
+    "rank": 11,
+    "id": "cibc",
+    "name": "CIBC Investor's Edge",
+    "score": 2.3,
+    "review": null
+   },
+   {
+    "rank": 12,
+    "id": "rbc",
+    "name": "RBC Direct Investing",
+    "score": 2.3,
+    "review": "/reviews/rbc-direct-investing/"
+   },
+   {
+    "rank": 13,
+    "id": "td",
+    "name": "TD Direct Investing",
+    "score": 2.3,
+    "review": "/reviews/td-direct-investing/"
+   }
+  ],
+  "best-rrsp-for-us-stocks": [
+   {
+    "rank": 1,
+    "id": "questrade",
+    "name": "Questrade",
+    "score": 4.0,
+    "review": "/reviews/questrade/"
+   },
+   {
+    "rank": 2,
+    "id": "interactive-brokers",
+    "name": "Interactive Brokers Canada",
+    "score": 4.0,
+    "review": "/reviews/interactive-brokers/"
+   },
+   {
+    "rank": 3,
+    "id": "national-bank",
+    "name": "National Bank Direct Brokerage",
+    "score": 3.8,
+    "review": null
+   },
+   {
+    "rank": 4,
+    "id": "desjardins",
+    "name": "Desjardins Online Brokerage (Disnat)",
+    "score": 3.8,
+    "review": null
+   },
+   {
+    "rank": 5,
+    "id": "wealthsimple",
+    "name": "Wealthsimple",
+    "score": 3.7,
+    "review": "/reviews/wealthsimple/trade/"
+   },
+   {
+    "rank": 6,
+    "id": "qtrade",
+    "name": "Qtrade Direct Investing",
+    "score": 3.4,
+    "review": "/reviews/qtrade/"
+   },
+   {
+    "rank": 7,
+    "id": "moomoo",
+    "name": "moomoo Canada",
+    "score": 3.3,
+    "review": "/reviews/moomoo/"
+   },
+   {
+    "rank": 8,
+    "id": "bmo",
+    "name": "BMO InvestorLine",
+    "score": 3.3,
+    "review": null
+   },
+   {
+    "rank": 9,
+    "id": "webull",
+    "name": "Webull Canada",
+    "score": 3.0,
+    "review": "/reviews/webull/"
+   },
+   {
+    "rank": 10,
+    "id": "scotia",
+    "name": "Scotia iTRADE",
+    "score": 2.5,
+    "review": null
+   },
+   {
+    "rank": 11,
+    "id": "cibc",
+    "name": "CIBC Investor's Edge",
+    "score": 2.3,
+    "review": null
+   },
+   {
+    "rank": 12,
+    "id": "rbc",
+    "name": "RBC Direct Investing",
+    "score": 2.3,
+    "review": "/reviews/rbc-direct-investing/"
+   },
+   {
+    "rank": 13,
+    "id": "td",
+    "name": "TD Direct Investing",
+    "score": 2.3,
+    "review": "/reviews/td-direct-investing/"
+   }
+  ],
+  "lowest-fx-fees_by_cost_on_10000": [
+   {
+    "rank": 1,
+    "id": "interactive-brokers",
+    "name": "Interactive Brokers Canada",
+    "cost_on_10000": 2.0,
+    "fx_text": "0.20 basis points, minimum US$2 per conversion"
+   },
+   {
+    "rank": 2,
+    "id": "td",
+    "name": "TD Direct Investing",
+    "cost_on_10000": 126.0,
+    "fx_text": "1.26% under $25,000"
+   },
+   {
+    "rank": 3,
+    "id": "wealthsimple",
+    "name": "Wealthsimple",
+    "cost_on_10000": 150.0,
+    "fx_text": "1.5% (all tiers; lower inside a USD account on large conversions)"
+   },
+   {
+    "rank": 4,
+    "id": "questrade",
+    "name": "Questrade",
+    "cost_on_10000": 150.0,
+    "fx_text": "1.5%"
+   },
+   {
+    "rank": 5,
+    "id": "webull",
+    "name": "Webull Canada",
+    "cost_on_10000": 150.0,
+    "fx_text": "1.5%"
+   },
+   {
+    "rank": 6,
+    "id": "cibc",
+    "name": "CIBC Investor's Edge",
+    "cost_on_10000": 160.0,
+    "fx_text": "About 1.6% under $25,000"
+   },
+   {
+    "rank": 7,
+    "id": "rbc",
+    "name": "RBC Direct Investing",
+    "cost_on_10000": 160.0,
+    "fx_text": "About 1.6% under $25,000"
+   },
+   {
+    "rank": 8,
+    "id": "bmo",
+    "name": "BMO InvestorLine",
+    "cost_on_10000": 160.0,
+    "fx_text": "About 1.6% under US$25,000"
+   },
+   {
+    "rank": 9,
+    "id": "national-bank",
+    "name": "National Bank Direct Brokerage",
+    "cost_on_10000": 170.0,
+    "fx_text": "About 1.70% under US$25,000"
+   }
+  ],
+  "lowest-fx-fees_not_published": [
+   {
+    "id": "moomoo",
+    "name": "moomoo Canada",
+    "fx_text": "0% fee; spread of undisclosed size"
+   },
+   {
+    "id": "qtrade",
+    "name": "Qtrade Direct Investing",
+    "fx_text": "Not published"
+   },
+   {
+    "id": "scotia",
+    "name": "Scotia iTRADE",
+    "fx_text": "Not published"
+   },
+   {
+    "id": "desjardins",
+    "name": "Desjardins Online Brokerage (Disnat)",
+    "fx_text": "Up to 1.90%, depending on the amount"
+   }
+  ],
+  "margin-rates_by_rate": [
+   {
+    "rank": 1,
+    "id": "interactive-brokers",
+    "name": "Interactive Brokers Canada",
+    "cad_margin_rate": 3.675,
+    "margin_text": "3.675% up to CAD 130,000 (IBKR Pro)"
+   },
+   {
+    "rank": 2,
+    "id": "moomoo",
+    "name": "moomoo Canada",
+    "cad_margin_rate": 3.85,
+    "margin_text": "From 3.85% (as of November 3, 2025)"
+   },
+   {
+    "rank": 3,
+    "id": "wealthsimple",
+    "name": "Wealthsimple",
+    "cad_margin_rate": 4.95,
+    "margin_text": "4.95% Core, 4.45% Premium, 3.95% Generation"
+   },
+   {
+    "rank": 4,
+    "id": "desjardins",
+    "name": "Desjardins Online Brokerage (Disnat)",
+    "cad_margin_rate": 5.7,
+    "margin_text": "Prime + 1.25% under $100,000 (5.70%)"
+   },
+   {
+    "rank": 5,
+    "id": "qtrade",
+    "name": "Qtrade Direct Investing",
+    "cad_margin_rate": 6.0,
+    "margin_text": "Prime + 1.55% under $100,000 (6.00%)"
+   },
+   {
+    "rank": 6,
+    "id": "scotia",
+    "name": "Scotia iTRADE",
+    "cad_margin_rate": 6.1,
+    "margin_text": "Prime + 1.65% under $25,000 (6.10%)"
+   },
+   {
+    "rank": 7,
+    "id": "national-bank",
+    "name": "National Bank Direct Brokerage",
+    "cad_margin_rate": 6.25,
+    "margin_text": "6.25%"
+   },
+   {
+    "rank": 8,
+    "id": "cibc",
+    "name": "CIBC Investor's Edge",
+    "cad_margin_rate": 6.25,
+    "margin_text": "6.25% under $100,000"
+   },
+   {
+    "rank": 9,
+    "id": "webull",
+    "name": "Webull Canada",
+    "cad_margin_rate": 7.45,
+    "margin_text": "Prime + 3% under $100,000 (7.45%)"
+   },
+   {
+    "rank": 10,
+    "id": "questrade",
+    "name": "Questrade",
+    "cad_margin_rate": 8.7,
+    "margin_text": "Prime + 4.25% under $100,000 (8.70%)"
+   }
+  ],
+  "margin-rates_not_published": [
+   "TD Direct Investing",
+   "RBC Direct Investing",
+   "BMO InvestorLine"
+  ]
+ },
+ "robos": [
+  {
+   "id": "wealthsimple-managed",
+   "name": "Wealthsimple Managed Investing",
+   "review": "/reviews/wealthsimple/managed-investing/",
+   "total_cost_pct_at_50000": 0.65,
+   "sub": {
+    "fees": 3.5,
+    "accounts": 4.5,
+    "portfolios": 5.0,
+    "minimum": 5.0,
+    "advice": 4.5
+   },
+   "score": 4.175,
+   "rank": 1,
+   "score_1dp": 4.2
+  },
+  {
+   "id": "questwealth",
+   "name": "Questwealth Portfolios",
+   "review": "/reviews/questrade/",
+   "total_cost_pct_at_50000": 0.37,
+   "sub": {
+    "fees": 4.9,
+    "accounts": 4.5,
+    "portfolios": 3.0,
+    "minimum": 4.5,
+    "advice": 2.0
+   },
+   "score": 4.08,
+   "rank": 2,
+   "score_1dp": 4.1
+  },
+  {
+   "id": "ci-direct",
+   "name": "CI Direct Investing",
+   "review": null,
+   "total_cost_pct_at_50000": 0.83,
+   "sub": {
+    "fees": 2.6,
+    "accounts": 4.5,
+    "portfolios": 4.0,
+    "minimum": 5.0,
+    "advice": 5.0
+   },
+   "score": 3.695,
+   "rank": 3,
+   "score_1dp": 3.7
+  },
+  {
+   "id": "rbc-investease",
+   "name": "RBC InvestEase",
+   "review": "/reviews/rbc-direct-investing/",
+   "total_cost_pct_at_50000": 0.7,
+   "sub": {
+    "fees": 3.25,
+    "accounts": 2.0,
+    "portfolios": 3.0,
+    "minimum": 5.0,
+    "advice": 4.5
+   },
+   "score": 3.388,
+   "rank": 4,
+   "score_1dp": 3.4
+  }
+ ],
+ "robos_not_ranked": [
+  {
+   "name": "BMO SmartFolio",
+   "reason": "Advisory fee of 0.4% to 0.7% with breakpoints not published, and fund costs not published."
+  },
+  {
+   "name": "Justwealth",
+   "reason": "Fee tiers are published only as an image; minimum fee $4.99 a month ($2.50 for RESP, FHSA and RDSP); $5,000 minimum except RESP and FHSA."
+  },
+  {
+   "name": "TD Automated Investing",
+   "reason": "Not listed among TD's current investing services; could not confirm it accepts new clients."
+  },
+  {
+   "name": "Nest Wealth",
+   "reason": "Website shows it is temporarily unavailable; could not confirm it accepts retail clients."
+  },
+  {
+   "name": "Qtrade Guided Portfolios",
+   "reason": "No longer shown on Qtrade's site; could not confirm it is offered."
+  }
+ ],
+ "crypto": [
+  {
+   "name": "Wealthsimple Crypto",
+   "link": "/reviews/wealthsimple/crypto/",
+   "fee_text": "0.5% plus a spread (no spread on limit orders)",
+   "sub": {
+    "fees": 4.25,
+    "coins": 5,
+    "features": 5,
+    "funding": 4.0,
+    "regulation": 5.0
+   },
+   "score": 4.587,
+   "rank": 1,
+   "score_1dp": 4.6
+  },
+  {
+   "name": "NDAX",
+   "link": null,
+   "fee_text": "0.20% flat",
+   "sub": {
+    "fees": 5.0,
+    "coins": 2.5,
+    "features": 5,
+    "funding": 4.0,
+    "regulation": 4.0
+   },
+   "score": 4.275,
+   "rank": 2,
+   "score_1dp": 4.3
+  },
+  {
+   "name": "Newton",
+   "link": null,
+   "fee_text": "Up to 1.15% on BTC, ETH and USDC; up to 1.60% on other coins",
+   "sub": {
+    "fees": 2.62,
+    "coins": 3,
+    "features": 5,
+    "funding": 5.0,
+    "regulation": 5.0
+   },
+   "score": 3.867,
+   "rank": 3,
+   "score_1dp": 3.9
+  },
+  {
+   "name": "Coinbase Canada",
+   "link": null,
+   "fee_text": "Varies by payment method and order size; spread included in the price",
+   "sub": {
+    "fees": 2.5,
+    "coins": 5,
+    "features": 5,
+    "funding": 4.0,
+    "regulation": 3.0
+   },
+   "score": 3.575,
+   "rank": 4,
+   "score_1dp": 3.6
+  },
+  {
+   "name": "Crypto.com",
+   "link": null,
+   "fee_text": "No app trading fee up to Level Up limits; spread may apply",
+   "sub": {
+    "fees": 2.5,
+    "coins": 5,
+    "features": 3,
+    "funding": 4.0,
+    "regulation": 3.0
+   },
+   "score": 3.275,
+   "rank": 5,
+   "score_1dp": 3.3
+  },
+  {
+   "name": "Netcoins",
+   "link": null,
+   "fee_text": "No separate fee; spread of undisclosed size",
+   "sub": {
+    "fees": 2.5,
+    "coins": 3,
+    "features": 5,
+    "funding": 4.0,
+    "regulation": 3.0
+   },
+   "score": 3.275,
+   "rank": 6,
+   "score_1dp": 3.3
+  },
+  {
+   "name": "Shakepay",
+   "link": null,
+   "fee_text": "No commission; spread of undisclosed size",
+   "sub": {
+    "fees": 2.5,
+    "coins": 1,
+    "features": 2,
+    "funding": 5.0,
+    "regulation": 5.0
+   },
+   "score": 3.075,
+   "rank": 7,
+   "score_1dp": 3.1
+  },
+  {
+   "name": "Robinhood Canada (Coinsquare)",
+   "link": null,
+   "fee_text": "Fee schedule not published on the pages checked",
+   "sub": {
+    "fees": 2.5,
+    "coins": 3,
+    "features": 2,
+    "funding": 2.5,
+    "regulation": 5.0
+   },
+   "score": 3.0,
+   "rank": 8,
+   "score_1dp": 3.0
+  },
+  {
+   "name": "Kraken",
+   "link": null,
+   "fee_text": "1% on app instant buys; Kraken Pro 0.40% maker, 0.80% taker",
+   "sub": {
+    "fees": 3.0,
+    "coins": 2.5,
+    "features": 0,
+    "funding": 2.5,
+    "regulation": 3.0
+   },
+   "score": 2.4,
+   "rank": 9,
+   "score_1dp": 2.4
+  }
+ ],
+ "tax_software": [
+  {
+   "name": "Wealthsimple Tax",
+   "link": "/reviews/wealthsimple/tax/",
+   "sub": {
+    "price": 5.0,
+    "features": 5.0,
+    "support": 4.0,
+    "qc": 5.0
+   },
+   "score": 4.85,
+   "rank": 1,
+   "score_1dp": 4.8
+  },
+  {
+   "name": "H&R Block Canada",
+   "link": null,
+   "sub": {
+    "price": 3.5,
+    "features": 5.0,
+    "support": 5.0,
+    "qc": 5.0
+   },
+   "score": 4.475,
+   "rank": 2,
+   "score_1dp": 4.5
+  },
+  {
+   "name": "TurboTax Canada",
+   "link": null,
+   "sub": {
+    "price": 3.5,
+    "features": 5.0,
+    "support": 5.0,
+    "qc": 5.0
+   },
+   "score": 4.475,
+   "rank": 3,
+   "score_1dp": 4.5
+  },
+  {
+   "name": "CloudTax",
+   "link": null,
+   "sub": {
+    "price": 5.0,
+    "features": 4.0,
+    "support": 5.0,
+    "qc": 2.5
+   },
+   "score": 4.275,
+   "rank": 4,
+   "score_1dp": 4.3
+  },
+  {
+   "name": "UFile",
+   "link": null,
+   "sub": {
+    "price": 3.5,
+    "features": 4.0,
+    "support": 3.0,
+    "qc": 5.0
+   },
+   "score": 3.825,
+   "rank": 5,
+   "score_1dp": 3.8
+  },
+  {
+   "name": "GenuTax",
+   "link": null,
+   "sub": {
+    "price": 5.0,
+    "features": 3.0,
+    "support": 1.0,
+    "qc": 2.5
+   },
+   "score": 3.325,
+   "rank": 6,
+   "score_1dp": 3.3
+  },
+  {
+   "name": "StudioTax",
+   "link": null,
+   "sub": {
+    "price": 3.0,
+    "features": 3.0,
+    "support": 1.0,
+    "qc": 2.5
+   },
+   "score": 2.625,
+   "rank": 7,
+   "score_1dp": 2.6
+  }
+ ],
+ "chequing": [
+  {
+   "name": "EQ Bank Personal Account",
+   "review": "/reviews/eq-bank/",
+   "monthly_fee": 0,
+   "fee_text": "$0",
+   "waive_balance": null,
+   "base_rate": 0.01,
+   "rate_text": "1.00%; 2.75% when you direct deposit your pay",
+   "sub": {
+    "fees": 5.0,
+    "interest": 3.81,
+    "transactions": 5.0,
+    "atm": 5.0,
+    "protection_features": 4.0
+   },
+   "score": 4.6,
+   "score_exact": 4.612,
+   "rank": 1
+  },
+  {
+   "name": "Wealthsimple Chequing",
+   "review": "/reviews/wealthsimple/chequing/",
+   "monthly_fee": 0,
+   "fee_text": "$0",
+   "waive_balance": null,
+   "base_rate": 0.0125,
+   "rate_text": "Core 1.25%; 1.75% with $2,000+ direct deposit in 30 days; Premium 1.75% (2.25% with direct deposit); Generation 2.25%",
+   "sub": {
+    "fees": 5.0,
+    "interest": 3.25,
+    "transactions": 5.0,
+    "atm": 5.0,
+    "protection_features": 3.5
+   },
+   "score": 4.4,
+   "score_exact": 4.425,
+   "rank": 2
+  },
+  {
+   "name": "Manulife Bank Advantage Account",
+   "review": null,
+   "monthly_fee": 0,
+   "fee_text": "$0; transaction fees below a $1,000 balance",
+   "waive_balance": 1000,
+   "base_rate": 0.015,
+   "rate_text": "1.50% (3.00% promotional for 2 years on new accounts opened by October 30, 2026)",
+   "sub": {
+    "fees": 4.5,
+    "interest": 3.25,
+    "transactions": 4.5,
+    "atm": 2.5,
+    "protection_features": 5.0
+   },
+   "score": 4.0,
+   "score_exact": 4.025,
+   "rank": 3
+  },
+  {
+   "name": "KOHO Essential",
+   "review": null,
+   "monthly_fee": 0,
+   "fee_text": "$7 a month, $0 with direct deposit or $1,000 a month in deposits",
+   "waive_balance": null,
+   "base_rate": 0.02,
+   "rate_text": "2% (Essential plan)",
+   "sub": {
+    "fees": 4.5,
+    "interest": 4.0,
+    "transactions": 5.0,
+    "atm": 2.5,
+    "protection_features": 3.0
+   },
+   "score": 4.0,
+   "score_exact": 3.95,
+   "rank": 4
+  },
+  {
+   "name": "Simplii No Fee Chequing Account",
+   "review": null,
+   "monthly_fee": 0,
+   "fee_text": "$0",
+   "waive_balance": null,
+   "base_rate": 0.0,
+   "rate_text": "Not published",
+   "sub": {
+    "fees": 5.0,
+    "interest": 0,
+    "transactions": 5.0,
+    "atm": 4.0,
+    "protection_features": 5.0
+   },
+   "score": 3.9,
+   "score_exact": 3.85,
+   "rank": 5
+  },
+  {
+   "name": "Tangerine No-Fee Daily Chequing Account",
+   "review": null,
+   "monthly_fee": 0,
+   "fee_text": "$0",
+   "waive_balance": null,
+   "base_rate": 0.0,
+   "rate_text": "Not published",
+   "sub": {
+    "fees": 5.0,
+    "interest": 0,
+    "transactions": 5.0,
+    "atm": 4.0,
+    "protection_features": 5.0
+   },
+   "score": 3.9,
+   "score_exact": 3.85,
+   "rank": 6
+  },
+  {
+   "name": "PC Money Account",
+   "review": null,
+   "monthly_fee": 0,
+   "fee_text": "$0",
+   "waive_balance": null,
+   "base_rate": 0.0,
+   "rate_text": "Not published",
+   "sub": {
+    "fees": 5.0,
+    "interest": 0,
+    "transactions": 5.0,
+    "atm": 3.5,
+    "protection_features": 5.0
+   },
+   "score": 3.8,
+   "score_exact": 3.775,
+   "rank": 7
+  },
+  {
+   "name": "Neo Chequing",
+   "review": null,
+   "monthly_fee": 0,
+   "fee_text": "$0",
+   "waive_balance": null,
+   "base_rate": 0.001,
+   "rate_text": "0.1%",
+   "sub": {
+    "fees": 5.0,
+    "interest": 0.25,
+    "transactions": 4.5,
+    "atm": 2.5,
+    "protection_features": 3.0
+   },
+   "score": 3.3,
+   "score_exact": 3.3,
+   "rank": 8
+  },
+  {
+   "name": "National Bank The Connected",
+   "review": null,
+   "monthly_fee": 15.95,
+   "fee_text": "$15.95 a month, $0 with a $4,500 balance",
+   "waive_balance": 4500,
+   "base_rate": 0.0,
+   "rate_text": "Not published",
+   "sub": {
+    "fees": 2.5,
+    "interest": 0,
+    "transactions": 5.0,
+    "atm": 4.0,
+    "protection_features": 5.0
+   },
+   "score": 3.0,
+   "score_exact": 2.975,
+   "rank": 9
+  },
+  {
+   "name": "TD Unlimited Chequing Account",
+   "review": null,
+   "monthly_fee": 17.95,
+   "fee_text": "$17.95 a month, $0 with a $4,000 daily balance",
+   "waive_balance": 4000,
+   "base_rate": 0.0,
+   "rate_text": "0.000%",
+   "sub": {
+    "fees": 2.5,
+    "interest": 0,
+    "transactions": 5.0,
+    "atm": 4.0,
+    "protection_features": 5.0
+   },
+   "score": 3.0,
+   "score_exact": 2.975,
+   "rank": 10
+  },
+  {
+   "name": "BMO Performance Chequing",
+   "review": null,
+   "monthly_fee": 17.95,
+   "fee_text": "$17.95 a month, $0 with a $4,000 daily balance",
+   "waive_balance": 4000,
+   "base_rate": 0.0,
+   "rate_text": "Not published",
+   "sub": {
+    "fees": 2.5,
+    "interest": 0,
+    "transactions": 5.0,
+    "atm": 3.5,
+    "protection_features": 5.0
+   },
+   "score": 2.9,
+   "score_exact": 2.9,
+   "rank": 11
+  },
+  {
+   "name": "CIBC Smart Account",
+   "review": null,
+   "monthly_fee": 16.95,
+   "fee_text": "$16.95 a month, rebate with $4,000 every day",
+   "waive_balance": 4000,
+   "base_rate": 0.0,
+   "rate_text": "Not published",
+   "sub": {
+    "fees": 2.5,
+    "interest": 0,
+    "transactions": 5.0,
+    "atm": 3.5,
+    "protection_features": 5.0
+   },
+   "score": 2.9,
+   "score_exact": 2.9,
+   "rank": 12
+  },
+  {
+   "name": "Scotiabank Preferred Package",
+   "review": null,
+   "monthly_fee": 16.95,
+   "fee_text": "$16.95 a month, $0 with $4,000 every day",
+   "waive_balance": 4000,
+   "base_rate": 0.0,
+   "rate_text": "No interest",
+   "sub": {
+    "fees": 2.5,
+    "interest": 0,
+    "transactions": 5.0,
+    "atm": 3.5,
+    "protection_features": 5.0
+   },
+   "score": 2.9,
+   "score_exact": 2.9,
+   "rank": 13
+  },
+  {
+   "name": "National Bank The Minimalist",
+   "review": null,
+   "monthly_fee": 3.95,
+   "fee_text": "$3.95 a month (ages 25 and up)",
+   "waive_balance": null,
+   "base_rate": 0.0,
+   "rate_text": "Not published",
+   "sub": {
+    "fees": 3.0,
+    "interest": 0,
+    "transactions": 3.0,
+    "atm": 4.0,
+    "protection_features": 5.0
+   },
+   "score": 2.8,
+   "score_exact": 2.85,
+   "rank": 14
+  },
+  {
+   "name": "CIBC Everyday Chequing Account",
+   "review": null,
+   "monthly_fee": 4.0,
+   "fee_text": "$4 a month",
+   "waive_balance": null,
+   "base_rate": 0.0,
+   "rate_text": "Not published",
+   "sub": {
+    "fees": 3.0,
+    "interest": 0,
+    "transactions": 3.0,
+    "atm": 3.5,
+    "protection_features": 5.0
+   },
+   "score": 2.8,
+   "score_exact": 2.775,
+   "rank": 15
+  },
+  {
+   "name": "Scotiabank Basic Bank Account",
+   "review": null,
+   "monthly_fee": 3.95,
+   "fee_text": "$3.95 a month",
+   "waive_balance": null,
+   "base_rate": 0.0,
+   "rate_text": "No interest",
+   "sub": {
+    "fees": 3.0,
+    "interest": 0,
+    "transactions": 3.0,
+    "atm": 3.5,
+    "protection_features": 5.0
+   },
+   "score": 2.8,
+   "score_exact": 2.775,
+   "rank": 16
+  },
+  {
+   "name": "BMO Practical Chequing",
+   "review": null,
+   "monthly_fee": 4.0,
+   "fee_text": "$4 a month",
+   "waive_balance": null,
+   "base_rate": 0.0,
+   "rate_text": "Not published",
+   "sub": {
+    "fees": 3.0,
+    "interest": 0,
+    "transactions": 2.5,
+    "atm": 3.5,
+    "protection_features": 5.0
+   },
+   "score": 2.7,
+   "score_exact": 2.7,
+   "rank": 17
+  },
+  {
+   "name": "RBC Day to Day Banking",
+   "review": null,
+   "monthly_fee": 4.0,
+   "fee_text": "$4 a month",
+   "waive_balance": null,
+   "base_rate": 0.0,
+   "rate_text": "Not published",
+   "sub": {
+    "fees": 3.0,
+    "interest": 0,
+    "transactions": 2.5,
+    "atm": 3.5,
+    "protection_features": 5.0
+   },
+   "score": 2.7,
+   "score_exact": 2.7,
+   "rank": 18
+  },
+  {
+   "name": "TD Minimum Chequing Account",
+   "review": null,
+   "monthly_fee": 3.95,
+   "fee_text": "$3.95 a month",
+   "waive_balance": null,
+   "base_rate": 0.0,
+   "rate_text": "0.000%",
+   "sub": {
+    "fees": 3.0,
+    "interest": 0,
+    "transactions": 2.5,
+    "atm": 3.5,
+    "protection_features": 5.0
+   },
+   "score": 2.7,
+   "score_exact": 2.7,
+   "rank": 19
+  },
+  {
+   "name": "RBC Signature No Limit Banking",
+   "review": null,
+   "monthly_fee": 16.95,
+   "fee_text": "$16.95 a month",
+   "waive_balance": null,
+   "base_rate": 0.0,
+   "rate_text": "No interest",
+   "sub": {
+    "fees": 1.5,
+    "interest": 0,
+    "transactions": 5.0,
+    "atm": 3.5,
+    "protection_features": 5.0
+   },
+   "score": 2.5,
+   "score_exact": 2.55,
+   "rank": 20
+  }
+ ],
+ "no_fee_chequing_order": [
+  "EQ Bank Personal Account",
+  "Wealthsimple Chequing",
+  "Manulife Bank Advantage Account",
+  "KOHO Essential",
+  "Simplii No Fee Chequing Account",
+  "Tangerine No-Fee Daily Chequing Account",
+  "PC Money Account",
+  "Neo Chequing"
+ ],
+ "methodology": {
+  "brokers": {
+   "weights_overall": {
+    "cost": 0.35,
+    "accounts": 0.15,
+    "us": 0.15,
+    "cash_margin": 0.1,
+    "platform": 0.15,
+    "safety": 0.1
+   },
+   "category_weights": {
+    "overall": {
+     "cost": 0.35,
+     "accounts": 0.15,
+     "us": 0.15,
+     "cash_margin": 0.1,
+     "platform": 0.15,
+     "safety": 0.1
+    },
+    "us_stocks": {
+     "cost": 0.25,
+     "accounts": 0.1,
+     "us": 0.4,
+     "cash_margin": 0.05,
+     "platform": 0.1,
+     "safety": 0.1
+    },
+    "beginners": {
+     "cost": 0.35,
+     "accounts": 0.15,
+     "us": 0.05,
+     "cash_margin": 0.0,
+     "beginner_platform": 0.25,
+     "safety": 0.2
+    },
+    "options": {
+     "options_cost": 0.5,
+     "platform": 0.25,
+     "cash_margin": 0.1,
+     "safety": 0.1,
+     "accounts": 0.05
+    }
+   },
+   "cost": "Average yearly cost of two profiles at published prices for a TFSA with $20,000: active (two Canadian and one US trade a month, $6,000 converted to US dollars a year in four conversions) and buy-and-hold (one Canadian trade a month). Trades are $2,000 orders of 40 shares; US-dollar fees are counted at par. Where a broker publishes no conversion rate or only an undisclosed spread, its conversion cost is counted at the median published rate of 1.5%. Score = 5 minus the average cost divided by $80, from 0 to 5.",
+   "accounts": "Half a point for each of 10 account types: TFSA, RRSP, spousal RRSP, FHSA, RESP, RRIF, LIRA or LIF, margin, joint and corporate.",
+   "us": "USD in registered accounts: 2 if offered with no fee, 1 if a fee applies, 0.5 if not stated. Conversion fee: 2 at 0.1% or less, 1.25 up to 1.3%, 1 at 1.5%, 0.75 above 1.5%, 0.5 if not published. US commission: 1 at $0, 0.75 at $2 or less, 0 above.",
+   "cash_margin": "CAD margin rate under $100,000: 2.5 at 4% or less, 2 up to 5%, 1.5 up to 6%, 1 up to 6.5%, 0.5 above 6.5% or not published. Headline interest on uninvested CAD cash: 2.5 at 1% or more, 1 above 0%, 0 otherwise; rates paid only on balances above $1,000,000 are not counted.",
+   "platform": "One point each for fractional shares, DRIP, options, an advanced trading platform and a mobile app; half a point where only partly offered or not named.",
+   "safety": "4 when CIRO and CIPF membership are both stated by the broker, 3.5 when CIPF membership is confirmed and CIRO membership follows from it; plus 1 when the broker is owned by a bank or a financial cooperative group.",
+   "beginner_platform": "Fractional shares 1.5, a mobile app 1.5, DRIP 1 and no account minimum 1 (0.5 where the minimum is not stated).",
+   "ties": "Scores are shown to one decimal. Ties are ordered by the unrounded score, then by name.",
+   "options_cost": "Yearly cost of four US equity options trades a month of two contracts each; score = 5 minus cost divided by $120, from 0 to 5."
+  },
+  "robos": {
+   "weights": {
+    "fees": 0.45,
+    "accounts": 0.15,
+    "portfolios": 0.15,
+    "minimum": 0.1,
+    "advice": 0.15
+   },
+   "fees": "Management fee plus the highest published fund cost (MER) for the core portfolios, on $50,000: score = 5 minus (total % minus 0.35) x 5.",
+   "accounts": "Half a point for each of 10 account types.",
+   "portfolios": "Portfolio families: 1 = 2, 2 = 3, 3 = 4, 4 or more = 5.",
+   "minimum": "The stated minimum, or where none is stated, the lowest balance in the published fee schedule (Wealthsimple Core starts at $1; Questwealth's lowest fee tier starts at $250): 5 at $100 or less, 4.5 up to $500, 4 above.",
+   "advice": "5 = planners or advisors for every client; 4.5 = advisors by phone or email; 2 = no client advice described.",
+   "not_ranked_rule": "A robo-advisor is ranked only when both its management fee schedule and its fund costs are published in text we can verify."
+  },
+  "crypto": {
+   "weights": {
+    "fees": 0.35,
+    "coins": 0.15,
+    "features": 0.15,
+    "funding": 0.15,
+    "regulation": 0.2
+   },
+   "fees": "Published trading fee f%: 5 minus (f minus 0.2) x 2.5; 2.5 where only an undisclosed spread or no fee schedule is published.",
+   "coins": "5 at 150 or more, 4 at 100, 3 at 50, 2 at 10, 1 below; 2.5 if not published.",
+   "features": "3 for staking available in Canada, 2 for crypto withdrawals to outside wallets.",
+   "funding": "5 = free CAD deposits and withdrawals; 4 = free deposits, fees or no statement on withdrawals; 2.5 = not published.",
+   "regulation": "5 = CIRO investment dealer and CIPF member; 4 = on CIPF's member list; 3 = registered with securities regulators (for example as a restricted dealer) but not on CIPF's list. Only platforms on the CSA list of authorized crypto trading platforms are included."
+  },
+  "tax_software": {
+   "weights": {
+    "price": 0.35,
+    "features": 0.35,
+    "support": 0.15,
+    "qc": 0.15
+   },
+   "price": "5 = a full-featured free tier; 3.5 = free only for simple returns; 3 = price not published.",
+   "features": "5 = all income types including self-employment and investments; 4 = most; 3 = basic or not confirmed.",
+   "support": "5 = expert review or full service available; 4 = expert consultation on a paid tier; 3 = phone support; 1 = none.",
+   "qc": "5 = files Quebec returns; 2.5 = not confirmed."
+  },
+  "chequing": {
+   "weights": {
+    "fees": 0.35,
+    "interest": 0.2,
+    "transactions": 0.15,
+    "atm": 0.15,
+    "protection_features": 0.15
+   },
+   "fees": "5.0 = $0 monthly fee with no conditions; 4.5 = $0 monthly fee but per-transaction fees below a balance of $1,000 or less; 3.0 = fee of $4 or less a month; 2.5 = fee over $15 a month waived at a daily balance of $4,500 or less; 1.5 = fee over $15 a month with no balance waiver",
+   "interest": "Everyday interest rate on the chequing balance with no paid plan, interpolated: 0% = 0, 1% = 2.5, 2% = 4.0, 2.75% or more = 5.0. Rate not published = 0. Direct-deposit bonus rates count at half their extra value",
+   "transactions": "5.0 = unlimited transactions and free e-Transfers; 3.0 = 18 transactions a month with e-Transfers included; 2.5 = 12 transactions a month; minus 0.5 if sending an e-Transfer costs a fee",
+   "atm": "5.0 = no ATM fee anywhere in Canada (or fees reimbursed); 4.0 = large own network plus a shared network, fees elsewhere; 3.5 = own network, fees elsewhere; 2.5 = fees at all ATMs or not published",
+   "protection_features": "5.0 = CDIC member (in its own right or through its parent bank) whose account does not rule out cheques; 4.0 = CDIC member whose account offers no cheques; 3.5 = deposits held in trust at CDIC members (provider not a member) with a chequebook available; 3.0 = held in trust at CDIC members, with cheques not offered or not stated"
+  }
+ }
+}

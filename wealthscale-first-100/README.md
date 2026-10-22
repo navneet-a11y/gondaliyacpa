@@ -6,9 +6,9 @@ This folder is the only active WealthScale plan. It replaces every earlier Wealt
 | --- | --- |
 | first-100-rebuild.md | Package contents, 5-day schedule, page model, rules, current scores |
 | decisions-update-oct22.md | Decisions 26 to 30 (site rebuild, CPA and CFA byline, Neha's review status, no outbound links, figures) |
-| STYLE-GUIDE.md | Writer's style guide: hard rules, page anatomy, snippets, CSS classes, widgets |
+| package/ | The full WealthScale-First-100 package as received (pages-paste, pages-source, workbook, site-wide, research, briefs) |
 | STATUS.md | Setup and publishing tracker |
 
 ## Package status
 
-The package WealthScale-First-100.zip (pages-paste, site-wide CSS/JS/PHP, workbook, research, briefs) arrived truncated on October 22 (8,952 bytes, only part of the style guide). Nothing from the package is in this repo yet. A full copy is needed before setup or Day 1 publishing.
+The full package (WealthScale-First-100_1.zip, 247 files) arrived on October 22 and is in package/. The style guide is package/briefs-for-future-pages/STYLE-GUIDE.md. The publishing guide is package/PUBLISHING-GUIDE.md.

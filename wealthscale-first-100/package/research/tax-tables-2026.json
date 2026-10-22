@@ -1,0 +1,535 @@
+{
+  "_meta": {
+    "tax_year": 2026,
+    "checked_on": "2026-10-22",
+    "rates": "decimals",
+    "bracket_format": "[upper_limit_or_null, rate]; brackets apply from previous upper limit (0 for first)",
+    "source_register": "facts-tax-benefits.json"
+  },
+  "federal": {
+    "brackets": [
+      [
+        58523,
+        0.14
+      ],
+      [
+        117045,
+        0.205
+      ],
+      [
+        181440,
+        0.26
+      ],
+      [
+        258482,
+        0.29
+      ],
+      [
+        null,
+        0.33
+      ]
+    ],
+    "bpa": 16452,
+    "bpa_min": 14829,
+    "bpa_phase": [
+      181440,
+      258482
+    ],
+    "lowest_rate_2025_blended": 0.145,
+    "quebec_abatement": 0.165
+  },
+  "provinces": {
+    "AB": {
+      "name": "Alberta",
+      "brackets": [
+        [
+          61200,
+          0.08
+        ],
+        [
+          154259,
+          0.1
+        ],
+        [
+          185111,
+          0.12
+        ],
+        [
+          246813,
+          0.13
+        ],
+        [
+          370220,
+          0.14
+        ],
+        [
+          null,
+          0.15
+        ]
+      ],
+      "bpa": 22769
+    },
+    "BC": {
+      "name": "British Columbia",
+      "brackets": [
+        [
+          50363,
+          0.056
+        ],
+        [
+          100728,
+          0.077
+        ],
+        [
+          115648,
+          0.105
+        ],
+        [
+          140430,
+          0.1229
+        ],
+        [
+          190405,
+          0.147
+        ],
+        [
+          265545,
+          0.168
+        ],
+        [
+          null,
+          0.205
+        ]
+      ],
+      "bpa": 13216,
+      "tax_reduction": {
+        "base": 690,
+        "threshold": 25570,
+        "rate": 0.0356,
+        "eliminated_at": 44952
+      }
+    },
+    "MB": {
+      "name": "Manitoba",
+      "brackets": [
+        [
+          47000,
+          0.108
+        ],
+        [
+          100000,
+          0.1275
+        ],
+        [
+          null,
+          0.174
+        ]
+      ],
+      "bpa": 15780,
+      "bpa_phase": [
+        200000,
+        400000
+      ],
+      "note": "Thresholds not indexed (T4127/T4032MB). CRA 2026 rates page shows 47,564/101,200 - conflict flagged."
+    },
+    "NB": {
+      "name": "New Brunswick",
+      "brackets": [
+        [
+          52333,
+          0.094
+        ],
+        [
+          104666,
+          0.14
+        ],
+        [
+          193861,
+          0.16
+        ],
+        [
+          null,
+          0.195
+        ]
+      ],
+      "bpa": 13664
+    },
+    "NL": {
+      "name": "Newfoundland and Labrador",
+      "brackets": [
+        [
+          44678,
+          0.087
+        ],
+        [
+          89354,
+          0.145
+        ],
+        [
+          159528,
+          0.158
+        ],
+        [
+          223340,
+          0.178
+        ],
+        [
+          285319,
+          0.198
+        ],
+        [
+          570638,
+          0.208
+        ],
+        [
+          1141275,
+          0.213
+        ],
+        [
+          null,
+          0.218
+        ]
+      ],
+      "bpa": 13094,
+      "note": "Annual BPA $13,094 (payroll uses prorated $15,000 from July 2026)."
+    },
+    "NS": {
+      "name": "Nova Scotia",
+      "brackets": [
+        [
+          30995,
+          0.0879
+        ],
+        [
+          61991,
+          0.1495
+        ],
+        [
+          97417,
+          0.1667
+        ],
+        [
+          157124,
+          0.175
+        ],
+        [
+          null,
+          0.21
+        ]
+      ],
+      "bpa": 11932
+    },
+    "NT": {
+      "name": "Northwest Territories",
+      "brackets": [
+        [
+          53003,
+          0.059
+        ],
+        [
+          106009,
+          0.086
+        ],
+        [
+          172346,
+          0.122
+        ],
+        [
+          null,
+          0.1405
+        ]
+      ],
+      "bpa": 18198
+    },
+    "NU": {
+      "name": "Nunavut",
+      "brackets": [
+        [
+          55801,
+          0.04
+        ],
+        [
+          111602,
+          0.07
+        ],
+        [
+          181439,
+          0.09
+        ],
+        [
+          null,
+          0.115
+        ]
+      ],
+      "bpa": 19659
+    },
+    "ON": {
+      "name": "Ontario",
+      "brackets": [
+        [
+          53891,
+          0.0505
+        ],
+        [
+          107785,
+          0.0915
+        ],
+        [
+          150000,
+          0.1116
+        ],
+        [
+          220000,
+          0.1216
+        ],
+        [
+          null,
+          0.1316
+        ]
+      ],
+      "bpa": 12989,
+      "surtax": [
+        [
+          5818,
+          0.2
+        ],
+        [
+          7446,
+          0.36
+        ]
+      ],
+      "surtax_note": "Applied to basic Ontario tax: 20% of excess over $5,818 plus 36% of excess over $7,446.",
+      "health_premium": "Taxable income: <=20,000: $0; 20,000-36,000: min(300, 6% x (TI-20,000)); 36,000-48,000: min(450, 300 + 6% x (TI-36,000)); 48,000-72,000: min(600, 450 + 25% x (TI-48,000)); 72,000-200,000: min(750, 600 + 25% x (TI-72,000)); >200,000: min(900, 750 + 25% x (TI-200,000))",
+      "health_premium_bands": [
+        [
+          20000,
+          0,
+          0.0,
+          0
+        ],
+        [
+          36000,
+          0,
+          0.06,
+          300
+        ],
+        [
+          48000,
+          300,
+          0.06,
+          450
+        ],
+        [
+          72000,
+          450,
+          0.25,
+          600
+        ],
+        [
+          200000,
+          600,
+          0.25,
+          750
+        ],
+        [
+          null,
+          750,
+          0.25,
+          900
+        ]
+      ],
+      "health_premium_bands_format": "[upper_taxable_income_or_null, base, rate_on_excess_over_previous_upper, cap]"
+    },
+    "PE": {
+      "name": "Prince Edward Island",
+      "brackets": [
+        [
+          33928,
+          0.095
+        ],
+        [
+          65820,
+          0.1347
+        ],
+        [
+          106890,
+          0.166
+        ],
+        [
+          142520,
+          0.1762
+        ],
+        [
+          200000,
+          0.19
+        ],
+        [
+          null,
+          0.2
+        ]
+      ],
+      "bpa": 15000,
+      "note": "New 20% bracket over $200,000 from 2026."
+    },
+    "QC": {
+      "name": "Quebec",
+      "brackets": [
+        [
+          54345,
+          0.14
+        ],
+        [
+          108680,
+          0.19
+        ],
+        [
+          132245,
+          0.24
+        ],
+        [
+          null,
+          0.2575
+        ]
+      ],
+      "bpa": 18952,
+      "note": "Quebec residents also get the 16.5% refundable Quebec abatement of basic federal tax."
+    },
+    "SK": {
+      "name": "Saskatchewan",
+      "brackets": [
+        [
+          54532,
+          0.105
+        ],
+        [
+          155805,
+          0.125
+        ],
+        [
+          null,
+          0.145
+        ]
+      ],
+      "bpa": 20381
+    },
+    "YT": {
+      "name": "Yukon",
+      "brackets": [
+        [
+          58523,
+          0.064
+        ],
+        [
+          117045,
+          0.09
+        ],
+        [
+          181440,
+          0.109
+        ],
+        [
+          500000,
+          0.128
+        ],
+        [
+          null,
+          0.15
+        ]
+      ],
+      "bpa": 16452,
+      "bpa_min": 14829,
+      "bpa_phase": [
+        181440,
+        258482
+      ]
+    }
+  },
+  "dividends": {
+    "eligible_grossup": 0.38,
+    "noneligible_grossup": 0.15,
+    "federal_dtc_eligible": 0.150198,
+    "federal_dtc_noneligible": 0.090301,
+    "dtc_basis": "fraction of grossed-up (taxable) dividend",
+    "provincial_dtc": {
+      "ON": [
+        0.1,
+        0.029863
+      ],
+      "BC": [
+        0.12,
+        0.0196
+      ],
+      "QC": [
+        0.117,
+        0.0342
+      ],
+      "AB": null,
+      "SK": null,
+      "MB": null,
+      "NB": null,
+      "NS": null,
+      "PE": null,
+      "NL": null,
+      "YT": null,
+      "NT": null,
+      "NU": null
+    },
+    "provincial_dtc_note": "null = not verified from an official page in this session; do not use until filled. ON non-eligible drops to 0.019863 in 2027."
+  },
+  "capital_gains_inclusion": 0.5,
+  "capital_gains_inclusion_note": "1/2 verified through 2025 (CRA); 2026 value carried forward, explicit 2026 confirmation pending.",
+  "oas": {
+    "clawback_threshold_2026_income": 95323,
+    "clawback_rate": 0.15,
+    "full_recovery_2026_income": {
+      "65_74": 155320,
+      "75_plus": 161320
+    },
+    "max_monthly_2026q4": {
+      "65_74": 762.5,
+      "75_plus": 838.75
+    },
+    "deferral_per_month": 0.006,
+    "deferral_max": 0.36
+  },
+  "cpp": {
+    "max_monthly_65_2026": 1507.65,
+    "avg_monthly_65_jul2026": 858.34,
+    "early_per_month": 0.006,
+    "early_max": 0.36,
+    "late_per_month": 0.007,
+    "late_max": 0.42
+  },
+  "withholding": {
+    "lump_sum_outside_qc": [
+      [
+        5000,
+        0.1
+      ],
+      [
+        15000,
+        0.2
+      ],
+      [
+        null,
+        0.3
+      ]
+    ],
+    "lump_sum_qc_federal": [
+      [
+        5000,
+        0.05
+      ],
+      [
+        15000,
+        0.1
+      ],
+      [
+        null,
+        0.15
+      ]
+    ],
+    "qc_provincial_rrsp_lump_sum": 0.14,
+    "rrif_minimum_withholding": 0.0
+  }
+}

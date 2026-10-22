@@ -1,0 +1,409 @@
+{
+ "as_of": "2026-10-22",
+ "rubric": {
+  "weights": {
+   "fees": 0.35,
+   "interest": 0.2,
+   "transactions": 0.15,
+   "atm": 0.15,
+   "protection_features": 0.15
+  },
+  "fees": "5.0 = $0 monthly fee with no conditions; 4.5 = $0 monthly fee but per-transaction fees below a balance of $1,000 or less; 3.0 = fee of $4 or less a month; 2.5 = fee over $15 a month waived at a daily balance of $4,500 or less; 1.5 = fee over $15 a month with no balance waiver",
+  "interest": "Everyday interest rate on the chequing balance with no paid plan, interpolated: 0% = 0, 1% = 2.5, 2% = 4.0, 2.75% or more = 5.0. Rate not published = 0. Direct-deposit bonus rates count at half their extra value",
+  "transactions": "5.0 = unlimited transactions and free e-Transfers; 3.0 = 18 transactions a month with e-Transfers included; 2.5 = 12 transactions a month; minus 0.5 if sending an e-Transfer costs a fee",
+  "atm": "5.0 = no ATM fee anywhere in Canada (or fees reimbursed); 4.0 = large own network plus a shared network, fees elsewhere; 3.5 = own network, fees elsewhere; 2.5 = fees at all ATMs or not published",
+  "protection_features": "5.0 = CDIC member (in its own right or through its parent bank) whose account does not rule out cheques; 4.0 = CDIC member whose account offers no cheques; 3.5 = deposits held in trust at CDIC members (provider not a member) with a chequebook available; 3.0 = held in trust at CDIC members, with cheques not offered or not stated"
+ },
+ "chequing": [
+  {
+   "name": "EQ Bank Personal Account",
+   "review": "/reviews/eq-bank/",
+   "monthly_fee": 0,
+   "fee_text": "$0",
+   "waive_balance": null,
+   "base_rate": 0.01,
+   "rate_text": "1.00%; 2.75% when you direct deposit your pay",
+   "sub": {
+    "fees": 5.0,
+    "interest": 3.81,
+    "transactions": 5.0,
+    "atm": 5.0,
+    "protection_features": 4.0
+   },
+   "score": 4.6,
+   "score_exact": 4.612,
+   "rank": 1
+  },
+  {
+   "name": "Wealthsimple Chequing",
+   "review": "/reviews/wealthsimple/chequing/",
+   "monthly_fee": 0,
+   "fee_text": "$0",
+   "waive_balance": null,
+   "base_rate": 0.0125,
+   "rate_text": "Core 1.25%; 1.75% with $2,000+ direct deposit in 30 days; Premium 1.75% (2.25% with direct deposit); Generation 2.25%",
+   "sub": {
+    "fees": 5.0,
+    "interest": 3.25,
+    "transactions": 5.0,
+    "atm": 5.0,
+    "protection_features": 3.5
+   },
+   "score": 4.4,
+   "score_exact": 4.425,
+   "rank": 2
+  },
+  {
+   "name": "Manulife Bank Advantage Account",
+   "review": null,
+   "monthly_fee": 0,
+   "fee_text": "$0; transaction fees below a $1,000 balance",
+   "waive_balance": 1000,
+   "base_rate": 0.015,
+   "rate_text": "1.50% (3.00% promotional for 2 years on new accounts opened by October 30, 2026)",
+   "sub": {
+    "fees": 4.5,
+    "interest": 3.25,
+    "transactions": 4.5,
+    "atm": 2.5,
+    "protection_features": 5.0
+   },
+   "score": 4.0,
+   "score_exact": 4.025,
+   "rank": 3
+  },
+  {
+   "name": "KOHO Essential",
+   "review": null,
+   "monthly_fee": 0,
+   "fee_text": "$7 a month, $0 with direct deposit or $1,000 a month in deposits",
+   "waive_balance": null,
+   "base_rate": 0.02,
+   "rate_text": "2% (Essential plan)",
+   "sub": {
+    "fees": 4.5,
+    "interest": 4.0,
+    "transactions": 5.0,
+    "atm": 2.5,
+    "protection_features": 3.0
+   },
+   "score": 4.0,
+   "score_exact": 3.95,
+   "rank": 4
+  },
+  {
+   "name": "Simplii No Fee Chequing Account",
+   "review": null,
+   "monthly_fee": 0,
+   "fee_text": "$0",
+   "waive_balance": null,
+   "base_rate": 0.0,
+   "rate_text": "Not published",
+   "sub": {
+    "fees": 5.0,
+    "interest": 0,
+    "transactions": 5.0,
+    "atm": 4.0,
+    "protection_features": 5.0
+   },
+   "score": 3.9,
+   "score_exact": 3.85,
+   "rank": 5
+  },
+  {
+   "name": "Tangerine No-Fee Daily Chequing Account",
+   "review": null,
+   "monthly_fee": 0,
+   "fee_text": "$0",
+   "waive_balance": null,
+   "base_rate": 0.0,
+   "rate_text": "Not published",
+   "sub": {
+    "fees": 5.0,
+    "interest": 0,
+    "transactions": 5.0,
+    "atm": 4.0,
+    "protection_features": 5.0
+   },
+   "score": 3.9,
+   "score_exact": 3.85,
+   "rank": 6
+  },
+  {
+   "name": "PC Money Account",
+   "review": null,
+   "monthly_fee": 0,
+   "fee_text": "$0",
+   "waive_balance": null,
+   "base_rate": 0.0,
+   "rate_text": "Not published",
+   "sub": {
+    "fees": 5.0,
+    "interest": 0,
+    "transactions": 5.0,
+    "atm": 3.5,
+    "protection_features": 5.0
+   },
+   "score": 3.8,
+   "score_exact": 3.775,
+   "rank": 7
+  },
+  {
+   "name": "Neo Chequing",
+   "review": null,
+   "monthly_fee": 0,
+   "fee_text": "$0",
+   "waive_balance": null,
+   "base_rate": 0.001,
+   "rate_text": "0.1%",
+   "sub": {
+    "fees": 5.0,
+    "interest": 0.25,
+    "transactions": 4.5,
+    "atm": 2.5,
+    "protection_features": 3.0
+   },
+   "score": 3.3,
+   "score_exact": 3.3,
+   "rank": 8
+  },
+  {
+   "name": "National Bank The Connected",
+   "review": null,
+   "monthly_fee": 15.95,
+   "fee_text": "$15.95 a month, $0 with a $4,500 balance",
+   "waive_balance": 4500,
+   "base_rate": 0.0,
+   "rate_text": "Not published",
+   "sub": {
+    "fees": 2.5,
+    "interest": 0,
+    "transactions": 5.0,
+    "atm": 4.0,
+    "protection_features": 5.0
+   },
+   "score": 3.0,
+   "score_exact": 2.975,
+   "rank": 9
+  },
+  {
+   "name": "TD Unlimited Chequing Account",
+   "review": null,
+   "monthly_fee": 17.95,
+   "fee_text": "$17.95 a month, $0 with a $4,000 daily balance",
+   "waive_balance": 4000,
+   "base_rate": 0.0,
+   "rate_text": "0.000%",
+   "sub": {
+    "fees": 2.5,
+    "interest": 0,
+    "transactions": 5.0,
+    "atm": 4.0,
+    "protection_features": 5.0
+   },
+   "score": 3.0,
+   "score_exact": 2.975,
+   "rank": 10
+  },
+  {
+   "name": "BMO Performance Chequing",
+   "review": null,
+   "monthly_fee": 17.95,
+   "fee_text": "$17.95 a month, $0 with a $4,000 daily balance",
+   "waive_balance": 4000,
+   "base_rate": 0.0,
+   "rate_text": "Not published",
+   "sub": {
+    "fees": 2.5,
+    "interest": 0,
+    "transactions": 5.0,
+    "atm": 3.5,
+    "protection_features": 5.0
+   },
+   "score": 2.9,
+   "score_exact": 2.9,
+   "rank": 11
+  },
+  {
+   "name": "CIBC Smart Account",
+   "review": null,
+   "monthly_fee": 16.95,
+   "fee_text": "$16.95 a month, rebate with $4,000 every day",
+   "waive_balance": 4000,
+   "base_rate": 0.0,
+   "rate_text": "Not published",
+   "sub": {
+    "fees": 2.5,
+    "interest": 0,
+    "transactions": 5.0,
+    "atm": 3.5,
+    "protection_features": 5.0
+   },
+   "score": 2.9,
+   "score_exact": 2.9,
+   "rank": 12
+  },
+  {
+   "name": "Scotiabank Preferred Package",
+   "review": null,
+   "monthly_fee": 16.95,
+   "fee_text": "$16.95 a month, $0 with $4,000 every day",
+   "waive_balance": 4000,
+   "base_rate": 0.0,
+   "rate_text": "No interest",
+   "sub": {
+    "fees": 2.5,
+    "interest": 0,
+    "transactions": 5.0,
+    "atm": 3.5,
+    "protection_features": 5.0
+   },
+   "score": 2.9,
+   "score_exact": 2.9,
+   "rank": 13
+  },
+  {
+   "name": "National Bank The Minimalist",
+   "review": null,
+   "monthly_fee": 3.95,
+   "fee_text": "$3.95 a month (ages 25 and up)",
+   "waive_balance": null,
+   "base_rate": 0.0,
+   "rate_text": "Not published",
+   "sub": {
+    "fees": 3.0,
+    "interest": 0,
+    "transactions": 3.0,
+    "atm": 4.0,
+    "protection_features": 5.0
+   },
+   "score": 2.8,
+   "score_exact": 2.85,
+   "rank": 14
+  },
+  {
+   "name": "CIBC Everyday Chequing Account",
+   "review": null,
+   "monthly_fee": 4.0,
+   "fee_text": "$4 a month",
+   "waive_balance": null,
+   "base_rate": 0.0,
+   "rate_text": "Not published",
+   "sub": {
+    "fees": 3.0,
+    "interest": 0,
+    "transactions": 3.0,
+    "atm": 3.5,
+    "protection_features": 5.0
+   },
+   "score": 2.8,
+   "score_exact": 2.775,
+   "rank": 15
+  },
+  {
+   "name": "Scotiabank Basic Bank Account",
+   "review": null,
+   "monthly_fee": 3.95,
+   "fee_text": "$3.95 a month",
+   "waive_balance": null,
+   "base_rate": 0.0,
+   "rate_text": "No interest",
+   "sub": {
+    "fees": 3.0,
+    "interest": 0,
+    "transactions": 3.0,
+    "atm": 3.5,
+    "protection_features": 5.0
+   },
+   "score": 2.8,
+   "score_exact": 2.775,
+   "rank": 16
+  },
+  {
+   "name": "BMO Practical Chequing",
+   "review": null,
+   "monthly_fee": 4.0,
+   "fee_text": "$4 a month",
+   "waive_balance": null,
+   "base_rate": 0.0,
+   "rate_text": "Not published",
+   "sub": {
+    "fees": 3.0,
+    "interest": 0,
+    "transactions": 2.5,
+    "atm": 3.5,
+    "protection_features": 5.0
+   },
+   "score": 2.7,
+   "score_exact": 2.7,
+   "rank": 17
+  },
+  {
+   "name": "RBC Day to Day Banking",
+   "review": null,
+   "monthly_fee": 4.0,
+   "fee_text": "$4 a month",
+   "waive_balance": null,
+   "base_rate": 0.0,
+   "rate_text": "Not published",
+   "sub": {
+    "fees": 3.0,
+    "interest": 0,
+    "transactions": 2.5,
+    "atm": 3.5,
+    "protection_features": 5.0
+   },
+   "score": 2.7,
+   "score_exact": 2.7,
+   "rank": 18
+  },
+  {
+   "name": "TD Minimum Chequing Account",
+   "review": null,
+   "monthly_fee": 3.95,
+   "fee_text": "$3.95 a month",
+   "waive_balance": null,
+   "base_rate": 0.0,
+   "rate_text": "0.000%",
+   "sub": {
+    "fees": 3.0,
+    "interest": 0,
+    "transactions": 2.5,
+    "atm": 3.5,
+    "protection_features": 5.0
+   },
+   "score": 2.7,
+   "score_exact": 2.7,
+   "rank": 19
+  },
+  {
+   "name": "RBC Signature No Limit Banking",
+   "review": null,
+   "monthly_fee": 16.95,
+   "fee_text": "$16.95 a month",
+   "waive_balance": null,
+   "base_rate": 0.0,
+   "rate_text": "No interest",
+   "sub": {
+    "fees": 1.5,
+    "interest": 0,
+    "transactions": 5.0,
+    "atm": 3.5,
+    "protection_features": 5.0
+   },
+   "score": 2.5,
+   "score_exact": 2.55,
+   "rank": 20
+  }
+ ],
+ "no_fee_chequing_order": [
+  "EQ Bank Personal Account",
+  "Wealthsimple Chequing",
+  "Manulife Bank Advantage Account",
+  "KOHO Essential",
+  "Simplii No Fee Chequing Account",
+  "Tangerine No-Fee Daily Chequing Account",
+  "PC Money Account",
+  "Neo Chequing"
+ ]
+}

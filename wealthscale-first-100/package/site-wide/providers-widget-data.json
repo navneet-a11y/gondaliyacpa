@@ -1,0 +1,1139 @@
+{
+ "brokers": [
+  {
+   "id": "wealthsimple",
+   "name": "Wealthsimple",
+   "review": "/reviews/wealthsimple/trade/",
+   "cad_trade": 0,
+   "us_trade": 0,
+   "fx_pct": 0.015,
+   "fx_fixed": 0,
+   "fx_text": "1.5% (all tiers; lower inside a USD account on large conversions)",
+   "fx_tiers": null,
+   "fx_note": "US trades from a CAD account pay 1.5%.",
+   "usd_reg_text": "TFSA, FHSA, RRSP, spousal RRSP, LIRA and RESP: $10 a month on Core, included on Premium and Generation",
+   "annual_fee": 0,
+   "opt_base": 0,
+   "opt_contract": 0,
+   "opt_min": 0,
+   "opt_text": "$0 per contract on US equity and ETF options",
+   "margin_cad": 0.0495,
+   "margin_text": "4.95% Core, 4.45% Premium, 3.95% Generation",
+   "transfer_in_text": "Reimburses the other institution's transfer-out fee, up to $150 per account, on transfers of $25,000 or more",
+   "transfer_min": 25000,
+   "transfer_max": 150,
+   "per_client": false,
+   "cad_text": "$0",
+   "us_text": "$0",
+   "flags": [
+    "tfsa",
+    "rrsp",
+    "spousal",
+    "fhsa",
+    "resp",
+    "rrif",
+    "lira",
+    "margin",
+    "joint",
+    "corporate",
+    "fractional",
+    "drip",
+    "zero_commission",
+    "usd_reg"
+   ],
+   "score": 4.0,
+   "usd_acct_tiers": [
+    [
+     9999.99,
+     0.015
+    ],
+    [
+     24999.99,
+     0.01
+    ],
+    [
+     99999.99,
+     0.005
+    ],
+    [
+     null,
+     0.0
+    ]
+   ],
+   "tiers_ccy": "CAD"
+  },
+  {
+   "id": "questrade",
+   "name": "Questrade",
+   "review": "/reviews/questrade/",
+   "cad_trade": 0,
+   "us_trade": 0,
+   "fx_pct": 0.015,
+   "fx_fixed": 0,
+   "fx_text": "1.5%",
+   "fx_tiers": null,
+   "fx_note": null,
+   "usd_reg_text": "USD held in registered accounts at no extra cost",
+   "annual_fee": 0,
+   "opt_base": 0,
+   "opt_contract": 0,
+   "opt_min": 0,
+   "opt_text": "$0 on US equity options; Canadian options $0.99 per contract",
+   "margin_cad": 0.087,
+   "margin_text": "Prime + 4.25% under $100,000 (8.70%)",
+   "transfer_in_text": "Rebates the other institution's fee, up to $150 per account, on eligible transfers",
+   "transfer_min": null,
+   "transfer_max": 150,
+   "per_client": false,
+   "cad_text": "$0",
+   "us_text": "$0",
+   "flags": [
+    "tfsa",
+    "rrsp",
+    "spousal",
+    "fhsa",
+    "resp",
+    "rrif",
+    "lira",
+    "margin",
+    "joint",
+    "corporate",
+    "fractional",
+    "drip",
+    "zero_commission",
+    "usd_reg"
+   ],
+   "score": 4.0,
+   "usd_acct_tiers": null,
+   "tiers_ccy": "CAD"
+  },
+  {
+   "id": "interactive-brokers",
+   "name": "Interactive Brokers Canada",
+   "review": "/reviews/interactive-brokers/",
+   "cad_trade": 1.0,
+   "us_trade": 1.0,
+   "fx_pct": 2e-05,
+   "fx_fixed": 2.0,
+   "fx_text": "0.20 basis points, minimum US$2 per conversion",
+   "fx_tiers": [
+    [
+     null,
+     2e-05
+    ]
+   ],
+   "fx_note": null,
+   "usd_reg_text": "Not stated for registered accounts",
+   "annual_fee": 0,
+   "opt_base": 0,
+   "opt_contract": 0.65,
+   "opt_min": 1.0,
+   "opt_text": "US$0.65 per contract, minimum US$1",
+   "margin_cad": 0.03675,
+   "margin_text": "3.675% up to CAD 130,000 (IBKR Pro)",
+   "transfer_in_text": null,
+   "transfer_min": null,
+   "transfer_max": null,
+   "per_client": false,
+   "cad_text": "CAD 0.01 a share, minimum CAD 1",
+   "us_text": "USD 0.005 a share, minimum USD 1",
+   "flags": [
+    "tfsa",
+    "rrsp",
+    "spousal",
+    "fhsa",
+    "rrif",
+    "margin",
+    "joint",
+    "corporate",
+    "fractional",
+    "drip"
+   ],
+   "score": 4.4,
+   "usd_acct_tiers": null,
+   "tiers_ccy": "CAD"
+  },
+  {
+   "id": "moomoo",
+   "name": "moomoo Canada",
+   "review": "/reviews/moomoo/",
+   "cad_trade": 1.49,
+   "us_trade": 1.99,
+   "fx_pct": null,
+   "fx_fixed": 0,
+   "fx_text": "0% fee; spread of undisclosed size",
+   "fx_tiers": null,
+   "fx_note": null,
+   "usd_reg_text": "TFSA and RRSP can hold CAD and USD; no fee stated",
+   "annual_fee": 0,
+   "opt_base": 0,
+   "opt_contract": 0.65,
+   "opt_min": 1.0,
+   "opt_text": "US$0.65 per contract, minimum US$1",
+   "margin_cad": 0.0385,
+   "margin_text": "From 3.85% (as of November 3, 2025)",
+   "transfer_in_text": "Promotion: typically reimburses $100 on transfers of $10,000 or more",
+   "transfer_min": 10000,
+   "transfer_max": 100,
+   "per_client": true,
+   "cad_text": "CA$0.0149 a share, minimum CA$1.49",
+   "us_text": "US$0.0099 a share, minimum US$1.99",
+   "flags": [
+    "tfsa",
+    "rrsp",
+    "spousal",
+    "margin",
+    "usd_reg"
+   ],
+   "score": 3.3,
+   "usd_acct_tiers": null,
+   "tiers_ccy": "CAD"
+  },
+  {
+   "id": "webull",
+   "name": "Webull Canada",
+   "review": "/reviews/webull/",
+   "cad_trade": 0,
+   "us_trade": 0,
+   "fx_pct": 0.015,
+   "fx_fixed": 0,
+   "fx_text": "1.5%",
+   "fx_tiers": null,
+   "fx_note": null,
+   "usd_reg_text": "Not stated",
+   "annual_fee": 8.4,
+   "opt_base": 0,
+   "opt_contract": 0.99,
+   "opt_min": 0,
+   "opt_text": "US$0.99 per contract",
+   "margin_cad": 0.0745,
+   "margin_text": "Prime + 3% under $100,000 (7.45%)",
+   "transfer_in_text": "Transfer bonus of $150 (terms not published)",
+   "transfer_min": null,
+   "transfer_max": null,
+   "per_client": true,
+   "cad_text": "$0",
+   "us_text": "$0",
+   "flags": [
+    "tfsa",
+    "rrsp",
+    "margin",
+    "zero_commission"
+   ],
+   "score": 3.0,
+   "usd_acct_tiers": null,
+   "tiers_ccy": "CAD"
+  },
+  {
+   "id": "qtrade",
+   "name": "Qtrade Direct Investing",
+   "review": "/reviews/qtrade/",
+   "cad_trade": 0,
+   "us_trade": 0,
+   "fx_pct": null,
+   "fx_fixed": 0,
+   "fx_text": "Not published",
+   "fx_tiers": null,
+   "fx_note": null,
+   "usd_reg_text": "RRSP, RRIF and TFSA: US$15 a quarter per account (free with Investor Plus)",
+   "annual_fee": 0,
+   "opt_base": 0,
+   "opt_contract": 0.75,
+   "opt_min": 0,
+   "opt_text": "$0.75 per contract",
+   "margin_cad": 0.06,
+   "margin_text": "Prime + 1.55% under $100,000 (6.00%)",
+   "transfer_in_text": "Fall Offer 2026: up to $150 per client on transfers of $15,000 or more",
+   "transfer_min": 15000,
+   "transfer_max": 150,
+   "per_client": true,
+   "cad_text": "$0",
+   "us_text": "$0",
+   "flags": [
+    "tfsa",
+    "rrsp",
+    "spousal",
+    "fhsa",
+    "resp",
+    "rrif",
+    "lira",
+    "margin",
+    "joint",
+    "corporate",
+    "drip",
+    "zero_commission",
+    "usd_reg"
+   ],
+   "score": 3.7,
+   "usd_acct_tiers": null,
+   "tiers_ccy": "CAD"
+  },
+  {
+   "id": "national-bank",
+   "name": "National Bank Direct Brokerage",
+   "review": "/compare/best-online-brokers/",
+   "cad_trade": 0,
+   "us_trade": 0,
+   "fx_pct": 0.017,
+   "fx_fixed": 0,
+   "fx_text": "About 1.70% under US$25,000",
+   "fx_tiers": [
+    [
+     24999.99,
+     0.017
+    ],
+    [
+     249999.99,
+     0.012
+    ],
+    [
+     499999.99,
+     0.009
+    ],
+    [
+     999999.99,
+     0.007
+    ],
+    [
+     null,
+     0.006
+    ]
+   ],
+   "fx_note": "Tiers are set in US dollars.",
+   "usd_reg_text": "TFSA, RRSP, RRIF, spousal RRSP and LIRA (not FHSA); no USD fee listed",
+   "annual_fee": 0,
+   "opt_base": 0,
+   "opt_contract": 1.25,
+   "opt_min": 6.25,
+   "opt_text": "$1.25 per contract, minimum $6.25",
+   "margin_cad": 0.0625,
+   "margin_text": "6.25%",
+   "transfer_in_text": "Reimburses transfer fees depending on the amount (threshold not published)",
+   "transfer_min": null,
+   "transfer_max": null,
+   "per_client": false,
+   "cad_text": "$0",
+   "us_text": "$0",
+   "flags": [
+    "tfsa",
+    "rrsp",
+    "spousal",
+    "fhsa",
+    "resp",
+    "rrif",
+    "lira",
+    "margin",
+    "corporate",
+    "drip",
+    "zero_commission",
+    "usd_reg"
+   ],
+   "score": 3.8,
+   "usd_acct_tiers": null,
+   "tiers_ccy": "USD"
+  },
+  {
+   "id": "cibc",
+   "name": "CIBC Investor's Edge",
+   "review": "/compare/best-online-brokers/",
+   "cad_trade": 6.95,
+   "us_trade": 6.95,
+   "fx_pct": 0.016,
+   "fx_fixed": 0,
+   "fx_text": "About 1.6% under $25,000",
+   "fx_tiers": [
+    [
+     24999.99,
+     0.016
+    ],
+    [
+     99999.99,
+     0.009
+    ],
+    [
+     249999.99,
+     0.005
+    ]
+   ],
+   "fx_note": "Above $250,000 CIBC publishes its spread in basis points of the rate, not as a percentage; the cost shown uses 0.5%, so the real cost is lower.",
+   "usd_reg_text": "Not stated",
+   "annual_fee": 0,
+   "opt_base": 6.95,
+   "opt_contract": 1.25,
+   "opt_min": 0,
+   "opt_text": "$6.95 + $1.25 per contract",
+   "margin_cad": 0.0625,
+   "margin_text": "6.25% under $100,000",
+   "transfer_in_text": null,
+   "transfer_min": null,
+   "transfer_max": null,
+   "per_client": false,
+   "cad_text": "$6.95 ($0 under 25 with Smart Start)",
+   "us_text": "$6.95",
+   "flags": [
+    "tfsa",
+    "rrsp",
+    "fhsa",
+    "resp",
+    "rrif",
+    "lira",
+    "margin",
+    "joint",
+    "corporate",
+    "fractional"
+   ],
+   "score": 2.7,
+   "usd_acct_tiers": null,
+   "tiers_ccy": "CAD"
+  },
+  {
+   "id": "td",
+   "name": "TD Direct Investing",
+   "review": "/reviews/td-direct-investing/",
+   "cad_trade": 9.99,
+   "us_trade": 9.99,
+   "fx_pct": 0.0126,
+   "fx_fixed": 0,
+   "fx_text": "1.26% under $25,000",
+   "fx_tiers": [
+    [
+     24999,
+     0.0126
+    ],
+    [
+     99999,
+     0.0078
+    ],
+    [
+     499999,
+     0.0046
+    ],
+    [
+     999999,
+     0.0027
+    ],
+    [
+     null,
+     0.0019
+    ]
+   ],
+   "fx_note": null,
+   "usd_reg_text": "TD Easy Trade: no fee for USD in TFSA and RRSP; TD Direct Investing not stated",
+   "annual_fee": 0,
+   "opt_base": 9.99,
+   "opt_contract": 1.25,
+   "opt_min": 0,
+   "opt_text": "$9.99 + $1.25 per contract",
+   "margin_cad": null,
+   "margin_text": "Not published",
+   "transfer_in_text": null,
+   "transfer_min": null,
+   "transfer_max": null,
+   "per_client": false,
+   "cad_text": "$9.99 (TD Easy Trade: 100 free trades a year)",
+   "us_text": "$9.99",
+   "flags": [
+    "tfsa",
+    "rrsp",
+    "fhsa",
+    "margin",
+    "fractional",
+    "drip"
+   ],
+   "score": 2.3,
+   "usd_acct_tiers": null,
+   "tiers_ccy": "CAD"
+  },
+  {
+   "id": "rbc",
+   "name": "RBC Direct Investing",
+   "review": "/reviews/rbc-direct-investing/",
+   "cad_trade": 9.95,
+   "us_trade": 9.95,
+   "fx_pct": 0.016,
+   "fx_fixed": 0,
+   "fx_text": "About 1.6% under $25,000",
+   "fx_tiers": [
+    [
+     24999,
+     0.016
+    ],
+    [
+     99999,
+     0.01
+    ],
+    [
+     499999,
+     0.006
+    ],
+    [
+     999999,
+     0.004
+    ],
+    [
+     1999999,
+     0.002
+    ],
+    [
+     null,
+     0.001
+    ]
+   ],
+   "fx_note": "From $2,000,000 the spread is no more than 10 basis points.",
+   "usd_reg_text": "Accounts can hold CAD and USD; USD registered pricing not stated",
+   "annual_fee": 0,
+   "opt_base": 9.95,
+   "opt_contract": 1.25,
+   "opt_min": 0,
+   "opt_text": "$9.95 + $1.25 per contract",
+   "margin_cad": null,
+   "margin_text": "Not published",
+   "transfer_in_text": "Reimburses up to $200 of transfer fees on transfers of $15,000 or more",
+   "transfer_min": 15000,
+   "transfer_max": 200,
+   "per_client": true,
+   "cad_text": "$9.95",
+   "us_text": "$9.95",
+   "flags": [
+    "tfsa",
+    "rrsp",
+    "spousal",
+    "fhsa",
+    "resp",
+    "rrif",
+    "lira",
+    "margin",
+    "joint",
+    "corporate",
+    "drip"
+   ],
+   "score": 2.6,
+   "usd_acct_tiers": null,
+   "tiers_ccy": "CAD"
+  },
+  {
+   "id": "bmo",
+   "name": "BMO InvestorLine",
+   "review": "/compare/best-online-brokers/",
+   "cad_trade": 0,
+   "us_trade": 0,
+   "fx_pct": 0.016,
+   "fx_fixed": 0,
+   "fx_text": "About 1.6% under US$25,000",
+   "fx_tiers": [
+    [
+     24999.99,
+     0.016
+    ],
+    [
+     74999.99,
+     0.009
+    ],
+    [
+     99999.99,
+     0.008
+    ],
+    [
+     249999.99,
+     0.005
+    ],
+    [
+     null,
+     0.004
+    ]
+   ],
+   "fx_note": "Tiers are set in US dollars; above US$250,000 the spread is no more than 0.4%.",
+   "usd_reg_text": "Not stated",
+   "annual_fee": 0,
+   "opt_base": 0,
+   "opt_contract": 0.9,
+   "opt_min": 0,
+   "opt_text": "$0.90 per contract",
+   "margin_cad": null,
+   "margin_text": "Not published",
+   "transfer_in_text": null,
+   "transfer_min": null,
+   "transfer_max": null,
+   "per_client": false,
+   "cad_text": "$0",
+   "us_text": "$0",
+   "flags": [
+    "tfsa",
+    "rrsp",
+    "fhsa",
+    "resp",
+    "rrif",
+    "lira",
+    "margin",
+    "joint",
+    "corporate",
+    "zero_commission"
+   ],
+   "score": 3.6,
+   "usd_acct_tiers": null,
+   "tiers_ccy": "USD"
+  },
+  {
+   "id": "scotia",
+   "name": "Scotia iTRADE",
+   "review": "/compare/best-online-brokers/",
+   "cad_trade": 9.99,
+   "us_trade": 9.99,
+   "fx_pct": null,
+   "fx_fixed": 0,
+   "fx_text": "Not published",
+   "fx_tiers": null,
+   "fx_note": null,
+   "usd_reg_text": "USD RRSP and RRIF available; no USD fee listed (TFSA and FHSA not stated)",
+   "annual_fee": 0,
+   "opt_base": 9.99,
+   "opt_contract": 1.25,
+   "opt_min": 0,
+   "opt_text": "$9.99 + $1.25 per contract",
+   "margin_cad": 0.061,
+   "margin_text": "Prime + 1.65% under $25,000 (6.10%)",
+   "transfer_in_text": "Newcomers (StartRight): credit of up to $150",
+   "transfer_min": null,
+   "transfer_max": null,
+   "per_client": true,
+   "cad_text": "$9.99",
+   "us_text": "$9.99",
+   "flags": [
+    "tfsa",
+    "rrsp",
+    "fhsa",
+    "resp",
+    "rrif",
+    "lira",
+    "margin",
+    "corporate",
+    "usd_reg"
+   ],
+   "score": 2.4,
+   "usd_acct_tiers": null,
+   "tiers_ccy": "CAD"
+  },
+  {
+   "id": "desjardins",
+   "name": "Desjardins Online Brokerage (Disnat)",
+   "review": "/compare/best-online-brokers/",
+   "cad_trade": 0,
+   "us_trade": 0,
+   "fx_pct": null,
+   "fx_fixed": 0,
+   "fx_text": "Up to 1.90%, depending on the amount",
+   "fx_tiers": null,
+   "fx_note": null,
+   "usd_reg_text": "USD RRSP, TFSA, LIRA, RRIF and LIF; no fee stated",
+   "annual_fee": 0,
+   "opt_base": 0,
+   "opt_contract": 1.25,
+   "opt_min": 8.75,
+   "opt_text": "$1.25 per contract, minimum $8.75",
+   "margin_cad": 0.056999999999999995,
+   "margin_text": "Prime + 1.25% under $100,000 (5.70%)",
+   "transfer_in_text": null,
+   "transfer_min": null,
+   "transfer_max": null,
+   "per_client": false,
+   "cad_text": "$0",
+   "us_text": "$0",
+   "flags": [
+    "tfsa",
+    "rrsp",
+    "spousal",
+    "fhsa",
+    "resp",
+    "rrif",
+    "lira",
+    "margin",
+    "corporate",
+    "zero_commission",
+    "usd_reg"
+   ],
+   "score": 3.9,
+   "usd_acct_tiers": null,
+   "tiers_ccy": "CAD"
+  }
+ ],
+ "robos": [
+  {
+   "name": "Questwealth Portfolios",
+   "review": "/reviews/questrade/",
+   "tiers": [
+    [
+     99999.99,
+     0.0025
+    ],
+    [
+     null,
+     0.002
+    ]
+   ],
+   "tier_mode": "flat",
+   "mer": 0.0012,
+   "mer_text": "up to 0.12% (standard portfolios)",
+   "fee_text": "0.25%; 0.20% from $100,000",
+   "min": 250
+  },
+  {
+   "name": "Wealthsimple Managed Investing",
+   "review": "/reviews/wealthsimple/managed-investing/",
+   "tiers": [
+    [
+     99999.99,
+     0.005
+    ],
+    [
+     null,
+     0.004
+    ]
+   ],
+   "tier_mode": "flat",
+   "mer": 0.0015,
+   "mer_text": "up to 0.15% (Classic portfolios)",
+   "fee_text": "0.5% Core; 0.4% Premium ($100,000+); 0.4% falling to 0.2% at $10M+ on Generation",
+   "min": 1
+  },
+  {
+   "name": "RBC InvestEase",
+   "review": "/reviews/rbc-direct-investing/",
+   "tiers": [
+    [
+     null,
+     0.005
+    ]
+   ],
+   "tier_mode": "flat",
+   "mer": 0.002,
+   "mer_text": "up to 0.20% (Core portfolios)",
+   "fee_text": "0.50% flat",
+   "min": 100
+  },
+  {
+   "name": "CI Direct Investing",
+   "review": null,
+   "tiers": [
+    [
+     150000,
+     0.006
+    ],
+    [
+     500000,
+     0.004
+    ],
+    [
+     null,
+     0.0035
+    ]
+   ],
+   "tier_mode": "marginal",
+   "mer": 0.0023,
+   "mer_text": "up to 0.23% (ETF portfolios)",
+   "fee_text": "0.60% on the first $150,000; 0.40% on the next $350,000; 0.35% above $500,000",
+   "min": 100
+  }
+ ],
+ "crypto": [
+  {
+   "name": "NDAX",
+   "link": null,
+   "fee_pct": 0.002,
+   "fee_text": "0.20% flat"
+  },
+  {
+   "name": "Wealthsimple Crypto",
+   "link": "/reviews/wealthsimple/crypto/",
+   "fee_pct": 0.005,
+   "fee_text": "0.5% plus a spread (no spread on limit orders)"
+  },
+  {
+   "name": "Kraken",
+   "link": null,
+   "fee_pct": 0.01,
+   "fee_text": "1% on app instant buys; Kraken Pro 0.40% maker, 0.80% taker"
+  },
+  {
+   "name": "Newton",
+   "link": null,
+   "fee_pct": 0.0115,
+   "fee_text": "Up to 1.15% on BTC, ETH and USDC; up to 1.60% on other coins"
+  },
+  {
+   "name": "Coinbase Canada",
+   "link": null,
+   "fee_pct": null,
+   "fee_text": "Varies by payment method and order size; spread included in the price"
+  },
+  {
+   "name": "Shakepay",
+   "link": null,
+   "fee_pct": null,
+   "fee_text": "No commission; spread of undisclosed size"
+  },
+  {
+   "name": "Netcoins",
+   "link": null,
+   "fee_pct": null,
+   "fee_text": "No separate fee; spread of undisclosed size"
+  },
+  {
+   "name": "Crypto.com",
+   "link": null,
+   "fee_pct": null,
+   "fee_text": "No app trading fee up to Level Up limits; spread may apply"
+  },
+  {
+   "name": "Robinhood Canada (Coinsquare)",
+   "link": null,
+   "fee_pct": null,
+   "fee_text": "Fee schedule not published on the pages checked"
+  }
+ ],
+ "tax_software_year": 2025,
+ "broker_features": [
+  [
+   "tfsa",
+   "TFSA"
+  ],
+  [
+   "rrsp",
+   "RRSP"
+  ],
+  [
+   "spousal",
+   "Spousal RRSP"
+  ],
+  [
+   "fhsa",
+   "FHSA"
+  ],
+  [
+   "resp",
+   "RESP"
+  ],
+  [
+   "rrif",
+   "RRIF"
+  ],
+  [
+   "lira",
+   "LIRA or LIF"
+  ],
+  [
+   "margin",
+   "Margin"
+  ],
+  [
+   "joint",
+   "Joint account"
+  ],
+  [
+   "corporate",
+   "Corporate account"
+  ],
+  [
+   "usd_reg",
+   "USD in registered accounts"
+  ],
+  [
+   "zero_commission",
+   "$0 stock and ETF commissions"
+  ],
+  [
+   "fractional",
+   "Fractional shares"
+  ],
+  [
+   "drip",
+   "DRIP"
+  ]
+ ],
+ "tax_software": [
+  {
+   "name": "Wealthsimple Tax",
+   "link": "/reviews/wealthsimple/tax/",
+   "netfile": true,
+   "qc": true,
+   "tiers": [
+    {
+     "name": "Basic",
+     "price_text": "Pay what you want, including $0 (up to 2 returns)",
+     "self": true,
+     "rent": null,
+     "inv": true,
+     "help": false,
+     "qc": true
+    },
+    {
+     "name": "Plus",
+     "price_text": "$40 plus tax (included for Premium clients)",
+     "self": true,
+     "rent": null,
+     "inv": true,
+     "help": false,
+     "qc": true
+    },
+    {
+     "name": "Pro",
+     "price_text": "$80 plus tax (included for Generation clients); 30-minute expert consultation",
+     "self": true,
+     "rent": null,
+     "inv": true,
+     "help": true,
+     "qc": false
+    }
+   ]
+  },
+  {
+   "name": "TurboTax Canada",
+   "netfile": true,
+   "qc": true,
+   "tiers": [
+    {
+     "name": "TurboTax Free",
+     "price_text": "$0 for simple returns",
+     "self": false,
+     "rent": false,
+     "inv": false,
+     "help": false,
+     "qc": true
+    },
+    {
+     "name": "Do It Yourself",
+     "price_text": "Price depends on the complexity of your return",
+     "self": true,
+     "rent": null,
+     "inv": true,
+     "help": false,
+     "qc": true
+    },
+    {
+     "name": "Expert Assist",
+     "price_text": "Price depends on the complexity of your return",
+     "self": true,
+     "rent": null,
+     "inv": true,
+     "help": true,
+     "qc": true
+    }
+   ]
+  },
+  {
+   "name": "H&R Block Canada",
+   "netfile": true,
+   "qc": true,
+   "tiers": [
+    {
+     "name": "Free",
+     "price_text": "$0 for returns that qualify",
+     "self": false,
+     "rent": null,
+     "inv": null,
+     "help": false,
+     "qc": true
+    },
+    {
+     "name": "Self Employed",
+     "price_text": "Paid tier (price for the 2025 tax year not confirmed)",
+     "self": true,
+     "rent": null,
+     "inv": null,
+     "help": false,
+     "qc": true
+    }
+   ]
+  },
+  {
+   "name": "UFile",
+   "netfile": true,
+   "qc": true,
+   "tiers": [
+    {
+     "name": "UFile ONLINE",
+     "price_text": "From $20.95; free for students, first-time filers and family income under $20,000",
+     "self": null,
+     "rent": null,
+     "inv": null,
+     "help": false,
+     "qc": true
+    },
+    {
+     "name": "UFile PREMIUM",
+     "price_text": "From $32.95",
+     "self": null,
+     "rent": null,
+     "inv": null,
+     "help": false,
+     "qc": true
+    }
+   ]
+  },
+  {
+   "name": "CloudTax",
+   "netfile": true,
+   "qc": null,
+   "tiers": [
+    {
+     "name": "Free",
+     "price_text": "$0 or pay what you want (up to 2 returns)",
+     "self": null,
+     "rent": null,
+     "inv": null,
+     "help": false,
+     "qc": null
+    },
+    {
+     "name": "Review & File",
+     "price_text": "From $49 per return",
+     "self": null,
+     "rent": null,
+     "inv": null,
+     "help": true,
+     "qc": null
+    }
+   ]
+  },
+  {
+   "name": "GenuTax",
+   "netfile": true,
+   "qc": null,
+   "tiers": [
+    {
+     "name": "GenuTax Standard",
+     "price_text": "Free (donations optional)",
+     "self": null,
+     "rent": null,
+     "inv": null,
+     "help": false,
+     "qc": null
+    }
+   ]
+  },
+  {
+   "name": "StudioTax",
+   "netfile": true,
+   "qc": null,
+   "tiers": [
+    {
+     "name": "Mobile app",
+     "price_text": "Free",
+     "self": null,
+     "rent": null,
+     "inv": null,
+     "help": false,
+     "qc": null
+    },
+    {
+     "name": "Computer download",
+     "price_text": "Paid; price not published",
+     "self": null,
+     "rent": null,
+     "inv": null,
+     "help": false,
+     "qc": null
+    }
+   ]
+  }
+ ],
+ "ws_tiers": {
+  "household": true,
+  "list": [
+   {
+    "name": "Core",
+    "from": 1,
+    "perks": [
+     "Chequing interest 1.25% (1.75% with $2,000+ direct deposit in 30 days)",
+     "Managed investing fee 0.5%",
+     "USD account $10 a month",
+     "CAD margin 4.95%",
+     "Instant deposits up to $50,000"
+    ]
+   },
+   {
+    "name": "Premium",
+    "from": 100000,
+    "perks": [
+     "Chequing interest 1.75% (2.25% with $2,000+ direct deposit in 30 days)",
+     "Managed investing fee 0.4% and tax-loss harvesting",
+     "USD account included",
+     "CAD margin 4.45%",
+     "Wealthsimple Tax Plus included",
+     "Priority phone support",
+     "Credit card monthly fee waived ($100,000+ in assets)"
+    ]
+   },
+   {
+    "name": "Generation",
+    "from": 500000,
+    "perks": [
+     "Chequing interest 2.25%",
+     "Managed investing fee 0.4%, falling to 0.2% at $10,000,000+",
+     "USD account included",
+     "CAD margin 3.95%",
+     "Wealthsimple Tax Pro included",
+     "Priority phone and email support",
+     "Domestic wire fee waived"
+    ]
+   }
+  ],
+  "rows": [
+   [
+    "Assets needed",
+    "$1",
+    "$100,000",
+    "$500,000"
+   ],
+   [
+    "Chequing interest",
+    "1.25%",
+    "1.75%",
+    "2.25%"
+   ],
+   [
+    "With $2,000+ direct deposit",
+    "1.75%",
+    "2.25%",
+    "2.25%"
+   ],
+   [
+    "Managed investing fee",
+    "0.5%",
+    "0.4%",
+    "0.4%, down to 0.2%"
+   ],
+   [
+    "USD account",
+    "$10 a month",
+    "Included",
+    "Included"
+   ],
+   [
+    "FX fee on US trades from a CAD account",
+    "1.5%",
+    "1.5%",
+    "1.5%"
+   ],
+   [
+    "CAD margin rate",
+    "4.95%",
+    "4.45%",
+    "3.95%"
+   ],
+   [
+    "Wealthsimple Tax",
+    "Basic",
+    "Plus included",
+    "Pro included"
+   ]
+  ]
+ },
+ "cards": [
+  {
+   "name": "Wealthsimple Visa Infinite+",
+   "rate": 0.02,
+   "fee_month": 20,
+   "fee_note": "$20 a month, waived with $100,000+ in assets or $4,000+ a month in direct deposits"
+  }
+ ]
+}

@@ -1,0 +1,2808 @@
+{
+  "meta": {
+    "title": "Canadian investing provider register (brokers, robo-advisors, crypto platforms, tax software)",
+    "checked_on": "2026-10-22",
+    "method": "Values come only from provider pages or regulator pages (CIPF member list, CIRO dealer directory, CSA authorized crypto platform list, CRA NETFILE certified-software list) opened with WebFetch on 2026-10-22. 'unknown' means not confirmed on a page actually opened.",
+    "regulator_sources": {
+      "csa_authorized_crypto_platforms": {
+        "url": "https://www.securities-administrators.ca/crypto-trading-platforms-authorized-to-do-business-with-canadians",
+        "page_last_refreshed": "September 18, 2025 (per page)"
+      },
+      "cipf_members": {
+        "url": "https://www.cipf.ca/member-directory/current-cipf-members",
+        "page_date": "not shown"
+      },
+      "ciro_dealers": {
+        "url": "https://www.ciro.ca/office-investor/dealers-we-regulate",
+        "page_last_updated": "October 13, 2026 (per metadata); full directory not paginated by fetch"
+      },
+      "cra_netfile_certified_software": {
+        "url": "https://www.canada.ca/en/revenue-agency/services/e-services/e-services-individuals/netfile-overview/certified-software-netfile-program.html",
+        "date_modified": "2026-04-07"
+      }
+    }
+  },
+  "brokers": [
+    {
+      "name": {
+        "value": "Wealthsimple (self-directed trading)",
+        "source_url": "https://wealthsimple.com/trade",
+        "checked_on": "2026-10-22"
+      },
+      "legal_entity": {
+        "value": "Wealthsimple Investments Inc.",
+        "source_url": "https://www.cipf.ca/member-directory/current-cipf-members",
+        "checked_on": "2026-10-22"
+      },
+      "commission_canadian_stocks_etfs": {
+        "value": "$0 commission on listed Canadian stocks and ETFs.",
+        "source_url": "https://www.wealthsimple.com/legal/fees/trade",
+        "checked_on": "2026-10-22"
+      },
+      "commission_us_stocks_etfs": {
+        "value": "$0 commission. Pass-through exchange, ECN, TAF or ORF fees may apply to some US-listed orders and appear on trade confirmations.",
+        "source_url": "https://www.wealthsimple.com/legal/fees/trade",
+        "checked_on": "2026-10-22"
+      },
+      "options_commission": {
+        "value": "No base fee. Equity and ETF options: US$0 per contract on Core, Premium and Generation. Index options per contract: SPX/SPXW US$1, VIX US$1, NDX US$1, RUT/RUTW US$0.50, XSP US$0.25, DJX US$0.25. Early exercise or do-not-exercise instruction US$45; auto-exercise and assignment $0.",
+        "source_url": "https://www.wealthsimple.com/legal/fees/trade",
+        "checked_on": "2026-10-22",
+        "additional_sources": [
+          "https://www.wealthsimple.com/pricing"
+        ]
+      },
+      "currency_conversion": {
+        "value": "US-listed trades in a CAD account: 1.5% on top of the WSII Corporate Exchange Rate, on every plan tier. Conversions inside a USD account: 1.5% under $10,000; 1.0% from $10,000 to $24,999.99; 0.5% from $25,000 to $99,999.99; 0% at $100,000 and above (per transaction).",
+        "source_url": "https://www.wealthsimple.com/legal/fees/trade",
+        "checked_on": "2026-10-22",
+        "additional_sources": [
+          "https://www.wealthsimple.com/pricing"
+        ]
+      },
+      "usd_registered_accounts": {
+        "value": "Yes. A USD account can be added to TFSA, FHSA, RRSP, spousal RRSP, LIRA, RESP, non-registered, margin, corporate and crypto accounts. Not available for RRIF, spousal RRIF or LIF. Cost: $10 + tax per month after a 30-day free trial on Core; free for Premium ($100,000+) and Generation ($500,000+).",
+        "source_url": "https://help.wealthsimple.com/hc/en-ca/articles/4414660979355",
+        "checked_on": "2026-10-22",
+        "additional_sources": [
+          "https://www.wealthsimple.com/pricing"
+        ]
+      },
+      "account_types": {
+        "value": "TFSA, RRSP, spousal RRSP, FHSA, RESP (family plan and individual plan for yourself; an individual plan for someone else is 'coming soon'; self-directed RESP transfers are in beta), RRIF, LIRA, LIF and pension transfers in, non-registered, margin, joint non-registered, corporate, crypto. Spousal RRIF is currently unavailable.",
+        "source_url": "https://help.wealthsimple.com/hc/en-ca/articles/35041277137691",
+        "checked_on": "2026-10-22",
+        "additional_sources": [
+          "https://help.wealthsimple.com/hc/en-ca/articles/360059463873",
+          "https://wealthsimple.com/trade"
+        ]
+      },
+      "admin_inactivity_fees": {
+        "value": "$0 to open, close or keep an inactive account. The only recurring fee is the Core-tier USD account fee ($10/month).",
+        "source_url": "https://www.wealthsimple.com/legal/fees/trade",
+        "checked_on": "2026-10-22"
+      },
+      "transfer_out_fee": {
+        "value": "$0 for outgoing transfers to another institution.",
+        "source_url": "https://www.wealthsimple.com/legal/fees/trade",
+        "checked_on": "2026-10-22"
+      },
+      "transfer_in_rebate": {
+        "value": "Automatically reimburses the transfer-out fee charged by the other institution on transfers of $25,000 or more. No cap is stated; the page cites typical fees of $50 to $150.",
+        "source_url": "https://www.wealthsimple.com/en-ca/transfers",
+        "checked_on": "2026-10-22"
+      },
+      "minimum_to_open": {
+        "value": "No account minimum stated. The Core tier starts at $1 in assets.",
+        "source_url": "https://wealthsimple.com/trade",
+        "checked_on": "2026-10-22"
+      },
+      "fractional_shares": {
+        "value": "Yes. Thousands of Canadian and US stocks and ETFs, from $1, traded in real time during market hours.",
+        "source_url": "https://www.wealthsimple.com/en-ca/fractional-shares",
+        "checked_on": "2026-10-22"
+      },
+      "drip": {
+        "value": "Yes. Dividend reinvestment is switched on or off for a whole trading account, not per security. No reinvestment fee is listed; the FX fee applies when USD dividends are reinvested in a non-USD account.",
+        "source_url": "https://help.wealthsimple.com/hc/en-ca/articles/34484761789723-Turn-dividend-reinvestments-on-or-off",
+        "checked_on": "2026-10-22"
+      },
+      "cash_interest": {
+        "value": "Chequing account: Core 1.25%, Premium 1.75%, Generation 2.25%. Interest on cash held in self-directed trading accounts: unknown (not stated).",
+        "source_url": "https://www.wealthsimple.com/pricing",
+        "checked_on": "2026-10-22"
+      },
+      "margin_rates": {
+        "value": "Core 4.95% CAD / 7.5% USD (prime + 0.5%); Premium 4.45% / 7% (prime); Generation 3.95% / 6.5% (prime - 0.5%).",
+        "source_url": "https://www.wealthsimple.com/pricing",
+        "checked_on": "2026-10-22"
+      },
+      "ciro_member": {
+        "value": "Yes. The site footer shows 'CIRO Member', and CIRO's Dealers We Regulate page lists Wealthsimple Investments Inc.",
+        "source_url": "https://wealthsimple.com/trade",
+        "checked_on": "2026-10-22",
+        "additional_sources": [
+          "https://www.ciro.ca/office-investor/dealers-we-regulate"
+        ]
+      },
+      "cipf_member": {
+        "value": "Yes. 'Wealthsimple Investments Inc.' is on CIPF's current member list. Crypto holdings are not CIPF-protected.",
+        "source_url": "https://www.cipf.ca/member-directory/current-cipf-members",
+        "checked_on": "2026-10-22",
+        "additional_sources": [
+          "https://www.wealthsimple.com/en-ca/crypto"
+        ]
+      },
+      "platforms_apps": {
+        "value": "Wealthsimple app (mobile) and the web app at app.wealthsimple.com (the page is titled 'Wealthsimple Trade').",
+        "source_url": "https://wealthsimple.com/trade",
+        "checked_on": "2026-10-22"
+      },
+      "current_signup_offer": {
+        "value": "1% Match: a cash bonus of 1% of net qualifying transfers of $25,000 or more, initiated within 30 days of registering. Funding cap $2,000,000 (maximum bonus $20,000), paid in 24 monthly instalments, with a 730-day hold. Effective May 4, 2026, with no fixed end date. A $25 refer-a-friend reward is also listed.",
+        "source_url": "https://promotions.wealthsimple.com/hc/en-ca/articles/48885448101787",
+        "checked_on": "2026-10-22",
+        "additional_sources": [
+          "https://www.wealthsimple.com/en-ca/promotions"
+        ]
+      }
+    },
+    {
+      "name": {
+        "value": "Questrade",
+        "source_url": "https://www.questrade.com/pricing/self-directed-investing/commissions",
+        "checked_on": "2026-10-22"
+      },
+      "legal_entity": {
+        "value": "Questrade, Inc.",
+        "source_url": "https://www.cipf.ca/member-directory/current-cipf-members",
+        "checked_on": "2026-10-22"
+      },
+      "commission_canadian_stocks_etfs": {
+        "value": "$0 to buy or sell Canadian-listed stocks and ETFs online. No ECN fees on Canadian securities.",
+        "source_url": "https://www.questrade.com/pricing/self-directed-investing/commissions",
+        "checked_on": "2026-10-22",
+        "additional_sources": [
+          "https://www.questrade.com/pricing/self-directed-commissions-plans-fees/transaction"
+        ]
+      },
+      "commission_us_stocks_etfs": {
+        "value": "$0 commission. ECN fees apply only to direct-routed orders (for example US$0.003 to US$0.004 per share removing liquidity); overnight-session fills US$0.003 per share; SEC fee on US sales of 0.0000206 x trade value.",
+        "source_url": "https://www.questrade.com/pricing/self-directed-commissions-plans-fees/transaction",
+        "checked_on": "2026-10-22"
+      },
+      "options_commission": {
+        "value": "US equity options: $0 base and $0 per contract (Questrade Plus subscribers get CA$0.05/contract cashback). Canadian options: $0 + CA$0.99 per contract. US index options: $0 + US$0.99 per contract from September 28, 2026 (volume tiers before that). Exercise $24.95; assignment free; $45 service fee if Questrade liquidates an option on expiry day.",
+        "source_url": "https://www.questrade.com/pricing/self-directed-commissions-plans-fees/transaction",
+        "checked_on": "2026-10-22",
+        "additional_sources": [
+          "https://www.questrade.com/learning/using-questrade/options-faq"
+        ]
+      },
+      "currency_conversion": {
+        "value": "1.5% USD/CAD currency conversion.",
+        "source_url": "https://www.questrade.com/pricing/self-directed-commissions-plans-fees/transaction",
+        "checked_on": "2026-10-22",
+        "additional_sources": [
+          "https://www.questrade.com/pricing/self-directed-commissions-plans-fees"
+        ]
+      },
+      "usd_registered_accounts": {
+        "value": "Yes. USD can be held directly in registered accounts ('Dual-currency enabled for free'; no forced conversions on US stocks and ETFs). No separate USD registered account fee is listed.",
+        "source_url": "https://www.questrade.com/pricing/self-directed-investing/commissions",
+        "checked_on": "2026-10-22"
+      },
+      "account_types": {
+        "value": "RRSP, spousal RRSP, LIRA, locked-in RRSP, RRIF, LIF, RESP, family RESP, TFSA, FHSA, individual cash, individual margin, joint margin, corporate cash and margin, partnership, sole proprietorship, individual and joint informal trust, formal trust, estate, and Forex & CFD accounts.",
+        "source_url": "https://www.questrade.com/self-directed-investing/account-types",
+        "checked_on": "2026-10-22"
+      },
+      "admin_inactivity_fees": {
+        "value": "No annual account fees. Inactivity fee: free both over and under $1,000 combined equity. Questrade Plus (optional) costs $19.99/month.",
+        "source_url": "https://www.questrade.com/pricing/self-directed-commissions-plans-fees/administrative",
+        "checked_on": "2026-10-22",
+        "additional_sources": [
+          "https://www.questrade.com/pricing/self-directed-investing/commissions"
+        ]
+      },
+      "transfer_out_fee": {
+        "value": "$150 for a full or partial transfer to another institution.",
+        "source_url": "https://www.questrade.com/pricing/self-directed-commissions-plans-fees/administrative",
+        "checked_on": "2026-10-22"
+      },
+      "transfer_in_rebate": {
+        "value": "Rebates the fee charged by the other institution, up to $150 per account, applied automatically to eligible transfers.",
+        "source_url": "https://www.questrade.com/about-us/programs-promotions-offers",
+        "checked_on": "2026-10-22"
+      },
+      "minimum_to_open": {
+        "value": "unknown (the 'How much do I need to start investing?' FAQ answer did not load)",
+        "source_url": "https://www.questrade.com/self-directed-investing/account-types",
+        "checked_on": "2026-10-22"
+      },
+      "fractional_shares": {
+        "value": "Yes. Eligible Canadian and US stocks and ETFs, commission-free, in real time. Minimum not stated.",
+        "source_url": "https://www.questrade.com/self-directed-investing/fractional-shares",
+        "checked_on": "2026-10-22"
+      },
+      "drip": {
+        "value": "Yes. 'Almost every stock or ETF' is eligible; free with no transaction fees; reinvests fractionally when fractional shares are enabled.",
+        "source_url": "https://www.questrade.com/learning/platform-tutorials/how-to-set-up-drip",
+        "checked_on": "2026-10-22"
+      },
+      "cash_interest": {
+        "value": "Effectively 0%. The published formula is CAD prime - 8.50% and USD prime - 10.00%, and with Questrade's CAD prime of 4.45% and USD prime of 7.00% every tier is negative. The page states a negative result means 0% interest.",
+        "source_url": "https://www.questrade.com/pricing/self-directed-investing/margin-interest",
+        "checked_on": "2026-10-22"
+      },
+      "margin_rates": {
+        "value": "Non-registered CAD: prime + 4.25% under $100,000, prime + 3.25% at $100,000+. Non-registered USD: prime + 4.50% and + 3.50%. Registered debit balances: CAD prime + 8.10%, USD prime + 8.35%. Questrade CAD prime is 4.45% (as of Oct 30, 2025) and USD prime 7.00% (as of Sep 17, 2026), which works out to about 8.70% / 7.70% CAD and 11.50% / 10.50% USD (our arithmetic).",
+        "source_url": "https://www.questrade.com/pricing/self-directed-investing/margin-interest",
+        "checked_on": "2026-10-22"
+      },
+      "ciro_member": {
+        "value": "Likely yes, not directly confirmed. CIPF lists Questrade, Inc. as a member, but no Questrade page fetched quoted a CIRO statement and the CIRO directory could not be paginated by fetch.",
+        "source_url": "https://www.cipf.ca/member-directory/current-cipf-members",
+        "checked_on": "2026-10-22"
+      },
+      "cipf_member": {
+        "value": "Yes. 'Questrade, Inc.' is on CIPF's current member list.",
+        "source_url": "https://www.cipf.ca/member-directory/current-cipf-members",
+        "checked_on": "2026-10-22"
+      },
+      "platforms_apps": {
+        "value": "Questrade Pro (active trading platform) is named on the trading-platforms page. Other app names (Questrade Edge, mobile app) were not confirmed on pages fetched.",
+        "source_url": "https://www.questrade.com/self-directed-investing/trading-platforms",
+        "checked_on": "2026-10-22"
+      },
+      "current_signup_offer": {
+        "value": "GET1000, October 13 to November 2, 2026: $100 at $20,000+, $300 at $50,000+, $1,000 at $100,000+ net funding (one tier only). Deposits must settle by November 2, 2026 and transfers in by December 14, 2026. Paid about June 11, 2027 and December 10, 2027 if funding is held. A transfer-fee rebate of up to $150 per account is ongoing, and the referral reward is $50 per friend.",
+        "source_url": "https://www.questrade.com/learning/using-questrade/get1000-offer-frequently-asked-questions",
+        "checked_on": "2026-10-22",
+        "additional_sources": [
+          "https://www.questrade.com/about-us/programs-promotions-offers"
+        ]
+      }
+    },
+    {
+      "name": {
+        "value": "Interactive Brokers Canada",
+        "source_url": "https://www.interactivebrokers.ca/en/index.php?f=49761",
+        "checked_on": "2026-10-22"
+      },
+      "legal_entity": {
+        "value": "Interactive Brokers Canada Inc.",
+        "source_url": "https://www.interactivebrokers.ca/en/index.php?f=49761",
+        "checked_on": "2026-10-22",
+        "additional_sources": [
+          "https://www.cipf.ca/member-directory/current-cipf-members"
+        ]
+      },
+      "commission_canadian_stocks_etfs": {
+        "value": "Fixed: CAD 0.01 per share, minimum CAD 1.00, maximum 0.5% of trade value. Tiered (300,000 shares/month or fewer): CAD 0.008 per share, minimum CAD 1.00, maximum 0.5%, plus exchange and regulatory fees.",
+        "source_url": "https://www.interactivebrokers.ca/en/index.php?f=49637",
+        "checked_on": "2026-10-22"
+      },
+      "commission_us_stocks_etfs": {
+        "value": "Fixed: USD 0.005 per share, minimum USD 1.00, maximum 1% of trade value. Tiered: USD 0.0035 per share, minimum USD 0.35, maximum 1%, plus exchange and regulatory fees.",
+        "source_url": "https://www.interactivebrokers.ca/en/index.php?f=49637",
+        "checked_on": "2026-10-22",
+        "additional_sources": [
+          "https://www.interactivebrokers.ca/en/trading/us-stock-trading-costs-for-canadian-resi.php"
+        ]
+      },
+      "options_commission": {
+        "value": "No base fee. US options (tiered, up to 10,000 contracts/month): USD 0.65 per contract for premiums of USD 0.10 or more (USD 0.50 for 0.05 to 0.10, USD 0.25 under 0.05), minimum USD 1.00 per order. Canadian options: CAD 1.25 per contract (up to 10,000/month), minimum CAD 1.50 per order. Exchange and clearing fees extra.",
+        "source_url": "https://interactivebrokers.ca/en/index.php?f=49623",
+        "checked_on": "2026-10-22"
+      },
+      "currency_conversion": {
+        "value": "No markup on FX quotes. Conversion commission of 0.20 basis points x trade value, minimum USD 2.00 per order.",
+        "source_url": "https://www.interactivebrokers.ca/en/trading/us-stock-trading-costs-for-canadian-resi.php",
+        "checked_on": "2026-10-22"
+      },
+      "usd_registered_accounts": {
+        "value": "unknown (multi-currency holding in TFSA, RRSP or FHSA is not stated on the pages checked)",
+        "source_url": "https://www.interactivebrokers.ca/en/accounts/account-guide.php",
+        "checked_on": "2026-10-22"
+      },
+      "account_types": {
+        "value": "Individual (cash, Reg T margin, portfolio margin), joint, trust, RRSP and spousal RRSP (SRSP), TFSA, FHSA, small-business/corporate accounts. RRIF launched per IBKR's February 3, 2026 release. RESP, LIRA and LIF are not described on the pages checked.",
+        "source_url": "https://www.interactivebrokers.ca/en/accounts/account-guide.php",
+        "checked_on": "2026-10-22",
+        "additional_sources": [
+          "https://www.businesswire.com/news/home/20260203105030/en"
+        ]
+      },
+      "admin_inactivity_fees": {
+        "value": "No inactivity fee is listed and the site claims no account minimums. Two free withdrawals per calendar month; after that, CAD 2.00 by EFT or CAD 12.00 by wire.",
+        "source_url": "https://www.interactivebrokers.ca/en/pricing/other-fees.php",
+        "checked_on": "2026-10-22",
+        "additional_sources": [
+          "https://www.interactivebrokers.ca/en/index.php?f=49761"
+        ]
+      },
+      "transfer_out_fee": {
+        "value": "unknown for Canadian ATON transfers (not listed). ACATS transfers are free; Canada/US northbound or southbound transfers cost USD 10 per ISIN.",
+        "source_url": "https://www.interactivebrokers.ca/en/pricing/other-fees.php",
+        "checked_on": "2026-10-22"
+      },
+      "transfer_in_rebate": {
+        "value": "unknown (no rebate policy found)",
+        "source_url": "https://www.interactivebrokers.ca/en/pricing/other-fees.php",
+        "checked_on": "2026-10-22"
+      },
+      "minimum_to_open": {
+        "value": "No account minimum ('No added spreads, account minimums, or hidden fees').",
+        "source_url": "https://www.interactivebrokers.ca/en/index.php?f=49761",
+        "checked_on": "2026-10-22"
+      },
+      "fractional_shares": {
+        "value": "Yes. TSX and Cboe Canada stocks and ETFs (since August 1, 2023) plus US stocks; fractional trades follow the whole-share commission schedule.",
+        "source_url": "https://www.interactivebrokers.ca/en/general/about/mediaRelations/8-1-23.php",
+        "checked_on": "2026-10-22",
+        "additional_sources": [
+          "https://www.interactivebrokers.ca/en/index.php?f=49761"
+        ]
+      },
+      "drip": {
+        "value": "Yes. US- and Canada-listed common and preferred stocks paying cash dividends, for IB CAN clients. Standard commissions apply; fractional reinvestment requires fractional permissions.",
+        "source_url": "https://ibkb.interactivebrokers.com/es/node/2730",
+        "checked_on": "2026-10-22"
+      },
+      "cash_interest": {
+        "value": "CAD: 1.675% (benchmark - 0.5%) on balances above CAD 13,000. USD: 3.380% on balances above USD 10,000. Full rates require NAV above USD 100,000 (lower below that).",
+        "source_url": "https://www.interactivebrokers.ca/en/accounts/fees/pricing-interest-rates.php",
+        "checked_on": "2026-10-22"
+      },
+      "margin_rates": {
+        "value": "IBKR Pro CAD: 3.675% (benchmark + 1.5%) up to CAD 130,000; 3.175% from CAD 130,000 to 1,300,000. USD: 5.380% (benchmark + 1.5%) up to USD 100,000; 4.880% from USD 100,000 to 1,000,000. The rate table is undated.",
+        "source_url": "https://interactivebrokers.ca/en/accounts/fees/pricing-margin-rates.php",
+        "checked_on": "2026-10-22"
+      },
+      "ciro_member": {
+        "value": "Yes. 'Interactive Brokers Canada Inc. is a member of the Canadian Investment Regulatory Organization (CIRO)'.",
+        "source_url": "https://www.interactivebrokers.ca/en/index.php?f=49761",
+        "checked_on": "2026-10-22"
+      },
+      "cipf_member": {
+        "value": "Yes. The site says 'Member - Canadian Investor Protection Fund', and CIPF's list includes Interactive Brokers Canada Inc.",
+        "source_url": "https://www.interactivebrokers.ca/en/index.php?f=49761",
+        "checked_on": "2026-10-22",
+        "additional_sources": [
+          "https://www.cipf.ca/member-directory/current-cipf-members"
+        ]
+      },
+      "platforms_apps": {
+        "value": "Trader Workstation (TWS), IBKR Mobile, IBKR Desktop, and the Client Portal (web 'Portal Login').",
+        "source_url": "https://www.interactivebrokers.ca/en/index.php?f=49761",
+        "checked_on": "2026-10-22"
+      },
+      "current_signup_offer": {
+        "value": "unknown (no Canadian sign-up offer found on the pages checked)",
+        "source_url": "https://www.interactivebrokers.ca/en/index.php?f=49761",
+        "checked_on": "2026-10-22"
+      }
+    },
+    {
+      "name": {
+        "value": "moomoo Canada",
+        "source_url": "https://moomoo.com/ca/pricing/us-stock",
+        "checked_on": "2026-10-22"
+      },
+      "legal_entity": {
+        "value": "Moomoo Financial Canada Inc.",
+        "source_url": "https://www.cipf.ca/member-directory/current-cipf-members",
+        "checked_on": "2026-10-22"
+      },
+      "commission_canadian_stocks_etfs": {
+        "value": "CA$0.0049 per share commission + CA$0.01 per share platform fee (CA$0.0149/share combined), minimum CA$1.49 per order.",
+        "source_url": "https://www.moomoo.com/ca/learn/moomoo-canada-fees",
+        "checked_on": "2026-10-22",
+        "additional_sources": [
+          "https://moomoo.com/ca/pricing/us-stock"
+        ]
+      },
+      "commission_us_stocks_etfs": {
+        "value": "For stocks priced US$1 or more: US$0.0049 per share commission (minimum US$0.99) + US$0.005 per share platform fee (minimum US$1.00). Headline: US$0.0099/share, minimum US$1.99/order. SEC fee on sells.",
+        "source_url": "https://moomoo.com/ca/support/topic10_122",
+        "checked_on": "2026-10-22",
+        "additional_sources": [
+          "https://moomoo.com/ca/pricing/us-stock"
+        ]
+      },
+      "options_commission": {
+        "value": "No base fee. US options: US$0.65 per contract, minimum US$1.00 per order; the platform fee is waived until further notice; no fee on exercise or assignment. Canadian options: not listed (unknown).",
+        "source_url": "https://moomoo.com/ca/support/topic10_122",
+        "checked_on": "2026-10-22"
+      },
+      "currency_conversion": {
+        "value": "0% currency exchange fee, 'waived until further notice'. Conversions use the Moomoo Preferred Rate, which includes a spread of undisclosed size.",
+        "source_url": "https://moomoo.com/ca/support/topic10_125",
+        "checked_on": "2026-10-22"
+      },
+      "usd_registered_accounts": {
+        "value": "moomoo says TFSA and RRSP holders can hold both CAD and USD; no fee is stated. FHSA is not offered.",
+        "source_url": "https://www.moomoo.com/ca/learn/moomoo-canada-fees",
+        "checked_on": "2026-10-22",
+        "additional_sources": [
+          "https://www.moomoo.com/ca/learn/moomoo-vs-wealthsimple"
+        ]
+      },
+      "account_types": {
+        "value": "Cash, margin, TFSA, RRSP, spousal RRSP. moomoo's own article (dated Jul 9, page copyright 2026) says FHSA, RESP, joint and corporate accounts are not available.",
+        "source_url": "https://www.moomoo.com/ca/learn/moomoo-vs-wealthsimple",
+        "checked_on": "2026-10-22",
+        "additional_sources": [
+          "https://www.moomoo.com/ca/learn/moomoo-canada-fees"
+        ]
+      },
+      "admin_inactivity_fees": {
+        "value": "No monthly or annual maintenance fees and no inactivity fees. RRSP withdrawal (deregistration) costs CA$50 per withdrawal.",
+        "source_url": "https://www.moomoo.com/ca/learn/moomoo-canada-fees",
+        "checked_on": "2026-10-22"
+      },
+      "transfer_out_fee": {
+        "value": "Full transfer: $75 CAD and/or $75 USD. Partial: $50 CAD and/or $50 USD. Charged per currency of the assets, plus sales tax.",
+        "source_url": "https://www.moomoo.com/ca/support/topic10_288",
+        "checked_on": "2026-10-22"
+      },
+      "transfer_in_rebate": {
+        "value": "Incoming ATON and FOP transfers are 'Free*'. moomoo's promotion article says it 'typically' reimburses $100 in transfer fees on transfers of $10,000+ under Transfer Rewards; not confirmed in formal terms.",
+        "source_url": "https://www.moomoo.com/ca/support/topic10_287",
+        "checked_on": "2026-10-22",
+        "additional_sources": [
+          "https://www.moomoo.com/ca/learn/moomoo-canada-promotion"
+        ]
+      },
+      "minimum_to_open": {
+        "value": "No minimum deposit (per moomoo FAQ). The same article elsewhere cites $100 for Level 2 data access.",
+        "source_url": "https://www.moomoo.com/ca/learn/moomoo-vs-wealthsimple",
+        "checked_on": "2026-10-22"
+      },
+      "fractional_shares": {
+        "value": "No. moomoo 'does not support ... fractional shares' (per moomoo's own comparison article).",
+        "source_url": "https://www.moomoo.com/ca/learn/moomoo-vs-wealthsimple",
+        "checked_on": "2026-10-22"
+      },
+      "drip": {
+        "value": "No. 'DRIP is not available' (auto-invest is available).",
+        "source_url": "https://www.moomoo.com/ca/learn/moomoo-vs-wealthsimple",
+        "checked_on": "2026-10-22"
+      },
+      "cash_interest": {
+        "value": "A Cash Sweep program exists; the welcome promotion cites 6% APY for 30 days after activation. The standard rate is unknown.",
+        "source_url": "https://www.moomoo.com/ca/learn/moomoo-canada-promotion",
+        "checked_on": "2026-10-22"
+      },
+      "margin_rates": {
+        "value": "From 6.4% USD; from 3.85% CAD (as of November 3, 2025).",
+        "source_url": "https://moomoo.com/ca/pricing/us-stock",
+        "checked_on": "2026-10-22"
+      },
+      "ciro_member": {
+        "value": "Yes. moomoo states it is regulated by CIRO.",
+        "source_url": "https://www.moomoo.com/ca/learn/moomoo-vs-wealthsimple",
+        "checked_on": "2026-10-22"
+      },
+      "cipf_member": {
+        "value": "Yes. 'Moomoo Financial Canada Inc.' is on CIPF's current member list.",
+        "source_url": "https://www.cipf.ca/member-directory/current-cipf-members",
+        "checked_on": "2026-10-22"
+      },
+      "platforms_apps": {
+        "value": "moomoo app (mobile and desktop).",
+        "source_url": "https://www.moomoo.com/ca/learn/moomoo-vs-wealthsimple",
+        "checked_on": "2026-10-22"
+      },
+      "current_signup_offer": {
+        "value": "September 1 to October 31, 2026 (ends in 9 days): first-time account openers who deposit at least CA$100 get a $100 trading coupon (ten $10 coupons, usable on transactions of $100+), combinable with the Welcome Bonus. moomoo's article also describes welcome free shares at CA$1,000 or CA$8,000 net deposits and transfer rewards of up to $2,300; those dates are not stated.",
+        "source_url": "https://www.moomoo.com/ca/support/topic10_315",
+        "checked_on": "2026-10-22",
+        "additional_sources": [
+          "https://www.moomoo.com/ca/learn/moomoo-canada-promotion"
+        ]
+      }
+    },
+    {
+      "name": {
+        "value": "Webull Canada",
+        "source_url": "https://webull.ca/",
+        "checked_on": "2026-10-22"
+      },
+      "legal_entity": {
+        "value": "Webull Securities (Canada) Limited. Registered-plan and transfer fees are charged by CI Investment Services.",
+        "source_url": "https://webull.ca/",
+        "checked_on": "2026-10-22",
+        "additional_sources": [
+          "https://www.webull.ca/help/faq/356-Fee-Breakdown"
+        ]
+      },
+      "commission_canadian_stocks_etfs": {
+        "value": "$0 commission; regulatory and exchange fees may apply.",
+        "source_url": "https://www.webull.ca/pricing",
+        "checked_on": "2026-10-22",
+        "additional_sources": [
+          "https://www.webull.ca/help/faq/356-Fee-Breakdown"
+        ]
+      },
+      "commission_us_stocks_etfs": {
+        "value": "$0 commission. ADR custody fee US$0.01 to US$0.03 per share; FINRA TAF $0.000195 per share (max $9.79); SEC fee on sells.",
+        "source_url": "https://www.webull.ca/help/faq/356-Fee-Breakdown",
+        "checked_on": "2026-10-22"
+      },
+      "options_commission": {
+        "value": "No base fee. US options: US$0.99 per contract, $0 for the first 3 months for clients who activate options on or after August 1, 2026. Exercise or assignment: $1 per line item (charged by CI). Plus options regulatory ($0.02), OCC clearing ($0.025) and FINRA TAF fees. Canadian options: not stated.",
+        "source_url": "https://www.webull.ca/help/faq/356-Fee-Breakdown",
+        "checked_on": "2026-10-22",
+        "additional_sources": [
+          "https://www.webull.ca/pricing"
+        ]
+      },
+      "currency_conversion": {
+        "value": "Exchange rate + 1.5% markup.",
+        "source_url": "https://www.webull.ca/help/faq/355-What-is-the-fee-standard-for-foreign-exchange-on-Webull",
+        "checked_on": "2026-10-22",
+        "additional_sources": [
+          "https://www.webull.ca/help/faq/356-Fee-Breakdown"
+        ]
+      },
+      "usd_registered_accounts": {
+        "value": "unknown (not stated)",
+        "source_url": "https://www.webull.ca/help/faq/356-Fee-Breakdown",
+        "checked_on": "2026-10-22"
+      },
+      "account_types": {
+        "value": "Cash, margin, TFSA, RRSP. FHSA, RESP, RRIF, joint and corporate are not listed.",
+        "source_url": "https://webull.ca/",
+        "checked_on": "2026-10-22",
+        "additional_sources": [
+          "https://www.webull.ca/offers-promotions/deposit"
+        ]
+      },
+      "admin_inactivity_fees": {
+        "value": "Administrative/maintenance fee of $0.70 per month per account (charged by Webull). No inactivity fee listed.",
+        "source_url": "https://www.webull.ca/help/faq/356-Fee-Breakdown",
+        "checked_on": "2026-10-22"
+      },
+      "transfer_out_fee": {
+        "value": "Partial $50, full $150 (plus tax; charged by CI Investment Services).",
+        "source_url": "https://www.webull.ca/help/faq/356-Fee-Breakdown",
+        "checked_on": "2026-10-22"
+      },
+      "transfer_in_rebate": {
+        "value": "Transfer Bonus: 'Get $150 CAD when You Transfer Assets to Webull' (terms not shown).",
+        "source_url": "https://webull.ca/",
+        "checked_on": "2026-10-22"
+      },
+      "minimum_to_open": {
+        "value": "No general minimum stated.",
+        "source_url": "https://webull.ca/",
+        "checked_on": "2026-10-22"
+      },
+      "fractional_shares": {
+        "value": "unknown (not mentioned)",
+        "source_url": "https://webull.ca/",
+        "checked_on": "2026-10-22"
+      },
+      "drip": {
+        "value": "unknown (not mentioned)",
+        "source_url": "https://webull.ca/",
+        "checked_on": "2026-10-22"
+      },
+      "cash_interest": {
+        "value": "unknown (a Cash Management page exists; rate not shown)",
+        "source_url": "https://webull.ca/",
+        "checked_on": "2026-10-22"
+      },
+      "margin_rates": {
+        "value": "USD positions: USD prime + 3% under $100,000, + 2% at $100,000+. CAD positions: CAD prime + 3% / + 2%. Registered-account negative balances: prime + 7.5%.",
+        "source_url": "https://www.webull.ca/help/faq/356-Fee-Breakdown",
+        "checked_on": "2026-10-22"
+      },
+      "ciro_member": {
+        "value": "Yes. 'Webull Securities (Canada) Limited and Webull Canada Crypto Limited are each regulated by CIRO and a member of CIPF.'",
+        "source_url": "https://webull.ca/",
+        "checked_on": "2026-10-22"
+      },
+      "cipf_member": {
+        "value": "Yes. 'Webull Securities (Canada) Limited' is on CIPF's list. Crypto is not CIPF-covered.",
+        "source_url": "https://www.cipf.ca/member-directory/current-cipf-members",
+        "checked_on": "2026-10-22",
+        "additional_sources": [
+          "https://webull.ca/"
+        ]
+      },
+      "platforms_apps": {
+        "value": "Webull Desktop (Mac, Windows, Linux Ubuntu) and Webull Mobile App.",
+        "source_url": "https://webull.ca/",
+        "checked_on": "2026-10-22"
+      },
+      "current_signup_offer": {
+        "value": "$50 cashback on an initial deposit or transfer of $500+, plus $200 once Net Qualifying Funding reaches $20,000 and is held for 90 days (up to $250). Eligible: cash, margin, TFSA, RRSP. No end date stated. Options contracts are free for 3 months on activation from August 1, 2026.",
+        "source_url": "https://www.webull.ca/offers-promotions/deposit",
+        "checked_on": "2026-10-22",
+        "additional_sources": [
+          "https://www.webull.ca/pricing"
+        ]
+      }
+    },
+    {
+      "name": {
+        "value": "Qtrade Direct Investing",
+        "source_url": "https://www.qtrade.ca/en/investor.html",
+        "checked_on": "2026-10-22"
+      },
+      "legal_entity": {
+        "value": "Aviso Financial Inc. (Qtrade Direct Investing is a division).",
+        "source_url": "https://www.qtrade.ca/en/investor.html",
+        "checked_on": "2026-10-22",
+        "additional_sources": [
+          "https://www.cipf.ca/member-directory/current-cipf-members"
+        ]
+      },
+      "commission_canadian_stocks_etfs": {
+        "value": "$0 online equity and ETF commissions (standard and Investor Plus).",
+        "source_url": "https://www.qtrade.ca/en/investor/client-site/commission-and-fee-schedule.html",
+        "checked_on": "2026-10-22",
+        "additional_sources": [
+          "https://www.qtrade.ca/en/investor/pricing.html"
+        ]
+      },
+      "commission_us_stocks_etfs": {
+        "value": "$0 online; an SEC-based fee is charged on US sales.",
+        "source_url": "https://www.qtrade.ca/en/investor/client-site/commission-and-fee-schedule.html",
+        "checked_on": "2026-10-22"
+      },
+      "options_commission": {
+        "value": "$0 base + $0.75 per contract. Assignment is a flat $30; exercise is charged on the phone commission schedule.",
+        "source_url": "https://www.qtrade.ca/en/investor/client-site/commission-and-fee-schedule.html",
+        "checked_on": "2026-10-22",
+        "additional_sources": [
+          "https://www.qtrade.ca/en/investor/pricing.html"
+        ]
+      },
+      "currency_conversion": {
+        "value": "unknown. No rate is published: 'currency conversions may apply and Qtrade may earn revenue on these transactions'.",
+        "source_url": "https://www.qtrade.ca/en/investor/client-site/commission-and-fee-schedule.html",
+        "checked_on": "2026-10-22"
+      },
+      "usd_registered_accounts": {
+        "value": "Yes for RSP, RIF and TFSA (not FHSA): US$15 per quarter per account; free for Investor Plus.",
+        "source_url": "https://www.qtrade.ca/en/investor/client-site/commission-and-fee-schedule.html",
+        "checked_on": "2026-10-22",
+        "additional_sources": [
+          "https://www.qtrade.ca/en/investor/pricing/fees.html"
+        ]
+      },
+      "account_types": {
+        "value": "Cash (individual, joint, group), margin (short selling, options), TFSA, FHSA, RRSP (individual or spousal, CAD or USD), RESP (individual or family), RRIF, LIRA/LRSP, LIF, formal trust. Corporate accounts are referenced in offer terms.",
+        "source_url": "https://www.qtrade.ca/en/investor/accounts.html",
+        "checked_on": "2026-10-22",
+        "additional_sources": [
+          "https://www.qtrade.ca/en/investor/accounts/registered.html",
+          "https://qtrade.ca/en/investor/campaign/summerfall2026/tc.html"
+        ]
+      },
+      "admin_inactivity_fees": {
+        "value": "No quarterly administration fee: Qtrade's release says it is 'eliminating quarterly administration fees for all new and existing clients', and none appears on the current fee schedule. Other fees: formal trust $100 setup + $50/year; account closure $100 within the first year; paper statements $6/quarter (waived for Investor Plus). Conflict: the older offers page still cites a $25 quarterly admin fee.",
+        "source_url": "https://www.qtrade.ca/en/investor/about/news/Qtrade-moves-to-0-commission-trading.html",
+        "checked_on": "2026-10-22",
+        "additional_sources": [
+          "https://www.qtrade.ca/en/investor/client-site/commission-and-fee-schedule.html",
+          "https://www.qtrade.ca/en/investor/pricing/offers.html"
+        ]
+      },
+      "transfer_out_fee": {
+        "value": "$150.",
+        "source_url": "https://www.qtrade.ca/en/investor/client-site/commission-and-fee-schedule.html",
+        "checked_on": "2026-10-22",
+        "additional_sources": [
+          "https://www.qtrade.ca/en/investor/pricing/fees.html"
+        ]
+      },
+      "transfer_in_rebate": {
+        "value": "Under the Fall Offer 2026: up to CAD/USD $150 per client for transfers of $15,000+, with documentation.",
+        "source_url": "https://qtrade.ca/en/investor/campaign/summerfall2026/tc.html",
+        "checked_on": "2026-10-22"
+      },
+      "minimum_to_open": {
+        "value": "No minimum ('There is no minimum deposit to begin trading in a Qtrade account').",
+        "source_url": "https://www.qtrade.ca/en/investor/accounts.html",
+        "checked_on": "2026-10-22"
+      },
+      "fractional_shares": {
+        "value": "unknown (not mentioned)",
+        "source_url": "https://www.qtrade.ca/en/investor/trading/platform.html",
+        "checked_on": "2026-10-22"
+      },
+      "drip": {
+        "value": "Yes. Self-serve DRIP enrolment is mentioned on the investor homepage.",
+        "source_url": "https://www.qtrade.ca/en/investor.html",
+        "checked_on": "2026-10-22"
+      },
+      "cash_interest": {
+        "value": "CAD: 0.00% from $0 to $2,000,000, 0.10% above. USD: 0.00% (effective April 1, 2020).",
+        "source_url": "https://www.qtrade.ca/en/investor/pricing/interest-rates.html",
+        "checked_on": "2026-10-22"
+      },
+      "margin_rates": {
+        "value": "Standard: prime + 1.55% under $100,000, prime + 1.0% at $100,000+. Investor Plus: prime + 1.25% / + 0.75%. Applies to CAD and USD; effective October 30, 2025 (CDN prime 4.45%, USD prime 7.00%).",
+        "source_url": "https://www.qtrade.ca/en/investor/pricing/interest-rates.html",
+        "checked_on": "2026-10-22"
+      },
+      "ciro_member": {
+        "value": "Yes. A CIRO logo appears in the footer for Aviso Financial Inc.",
+        "source_url": "https://www.qtrade.ca/en/investor.html",
+        "checked_on": "2026-10-22"
+      },
+      "cipf_member": {
+        "value": "Yes. 'Aviso Financial Inc.' is on CIPF's list.",
+        "source_url": "https://www.cipf.ca/member-directory/current-cipf-members",
+        "checked_on": "2026-10-22"
+      },
+      "platforms_apps": {
+        "value": "Qtrade Direct Investing web trading platform, Qtrade mobile app (iOS and Android), Portfolio Analytics, Portfolio Creator.",
+        "source_url": "https://www.qtrade.ca/en/investor/trading/platform.html",
+        "checked_on": "2026-10-22",
+        "additional_sources": [
+          "https://www.qtrade.ca/en/investor.html"
+        ]
+      },
+      "current_signup_offer": {
+        "value": "Fall Offer 2026 (code OFFER2026): open an account September 1, 2026 to January 5, 2027; fund by February 5, 2027; hold until February 5, 2028. Rewards: 5% of net new deposits from $1,000 to $10,000, then flat $550 to $5,000 by tier, plus $100 if $25,000 is funded within 30 days. Transfer-fee reimbursement up to $150.",
+        "source_url": "https://qtrade.ca/en/investor/campaign/summerfall2026/tc.html",
+        "checked_on": "2026-10-22",
+        "additional_sources": [
+          "https://www.qtrade.ca/en/investor/campaign/cashbackoffer.html"
+        ]
+      }
+    },
+    {
+      "name": {
+        "value": "National Bank Direct Brokerage (NBDB)",
+        "source_url": "https://www.nbc.ca/en/direct-brokerage/pricing.html",
+        "checked_on": "2026-10-22"
+      },
+      "legal_entity": {
+        "value": "unknown on the NBDB pages fetched. National Bank Financial Inc. is on CIPF's list.",
+        "source_url": "https://www.cipf.ca/member-directory/current-cipf-members",
+        "checked_on": "2026-10-22"
+      },
+      "commission_canadian_stocks_etfs": {
+        "value": "$0: 'Always $0 commission on all online stock and ETF transactions'. No minimum order size listed.",
+        "source_url": "https://www.nbc.ca/en/direct-brokerage/pricing.html",
+        "checked_on": "2026-10-22"
+      },
+      "commission_us_stocks_etfs": {
+        "value": "$0 on all online stock and ETF transactions.",
+        "source_url": "https://www.nbc.ca/en/direct-brokerage/pricing.html",
+        "checked_on": "2026-10-22"
+      },
+      "options_commission": {
+        "value": "$1.25 per contract, minimum $6.25 per trade; trades under $2,000 capped at $19.95. Assignment or automatic exercise $28.95; agent-assisted +$60.",
+        "source_url": "https://www.nbc.ca/en/direct-brokerage/pricing.html",
+        "checked_on": "2026-10-22"
+      },
+      "currency_conversion": {
+        "value": "Spread by USD amount: under $25,000 230 bps (~1.70%); $25,000 to $249,999 160 bps (~1.20%); $250,000 to $499,999 125 bps (~0.90%); $500,000 to $999,999 100 bps (~0.70%); $1,000,000+ 75 bps (~0.60%). Percentages are illustrative as of July 21, 2026.",
+        "source_url": "https://www.nbc.ca/en/direct-brokerage/pricing.html",
+        "checked_on": "2026-10-22"
+      },
+      "usd_registered_accounts": {
+        "value": "USD available for TFSA, RRSP/RRIF, spousal RRSP (RRSP only) and LIRA; not FHSA. No separate USD account fee is listed.",
+        "source_url": "https://www.nbc.ca/en/direct-brokerage/accounts/types.html",
+        "checked_on": "2026-10-22"
+      },
+      "account_types": {
+        "value": "TFSA, FHSA, RRSP/RRIF, spousal RRSP/RRIF, RESP (individual and family not distinguished), cash, margin, short selling, company, sole proprietorship, estate, in-trust (not in Quebec), LIRA, LRSP, LIF. Joint is not mentioned.",
+        "source_url": "https://www.nbc.ca/en/direct-brokerage/accounts/types.html",
+        "checked_on": "2026-10-22"
+      },
+      "admin_inactivity_fees": {
+        "value": "$100 per account root per year, split across the accounts in that root. Waived if any applies on May 31: eligible assets of $20,000+, an InvestCube account as the only account, age 30 or under, or enrolment in the professionals or newcomers offer. Unclaimed accounts $100/year.",
+        "source_url": "https://www.nbc.ca/en/direct-brokerage/pricing.html",
+        "checked_on": "2026-10-22"
+      },
+      "transfer_out_fee": {
+        "value": "$150 per account (total or partial), plus commissions if applicable.",
+        "source_url": "https://www.nbc.ca/en/direct-brokerage/pricing.html",
+        "checked_on": "2026-10-22"
+      },
+      "transfer_in_rebate": {
+        "value": "Free to transfer in. 'Depending on the amount invested, we'll reimburse the transfer fees' (threshold not stated).",
+        "source_url": "https://www.nbc.ca/en/direct-brokerage/pricing.html",
+        "checked_on": "2026-10-22"
+      },
+      "minimum_to_open": {
+        "value": "No minimum deposit stated; opening an account is free.",
+        "source_url": "https://www.nbc.ca/en/direct-brokerage/pricing.html",
+        "checked_on": "2026-10-22"
+      },
+      "fractional_shares": {
+        "value": "unknown (not mentioned)",
+        "source_url": "https://www.nbc.ca/en/direct-brokerage/accounts/types.html",
+        "checked_on": "2026-10-22"
+      },
+      "drip": {
+        "value": "Yes. On request for 2,000+ eligible securities via secure messaging; zero commission; full shares only.",
+        "source_url": "https://www.nbc.ca/en/direct-brokerage/learning-centre/understanding-stock-market/understanding-dividends/dividend-reinvestment-plan.html",
+        "checked_on": "2026-10-22"
+      },
+      "cash_interest": {
+        "value": "0% on credit balances.",
+        "source_url": "https://www.nbc.ca/en/direct-brokerage/pricing.html",
+        "checked_on": "2026-10-22"
+      },
+      "margin_rates": {
+        "value": "CAD margin 6.25%; USD margin 8.75%; registered and cash-account debit balances 21.00%.",
+        "source_url": "https://www.nbc.ca/en/direct-brokerage/pricing.html",
+        "checked_on": "2026-10-22"
+      },
+      "ciro_member": {
+        "value": "Likely yes, not directly confirmed (inferred from CIPF membership of National Bank Financial Inc.).",
+        "source_url": "https://www.cipf.ca/member-directory/current-cipf-members",
+        "checked_on": "2026-10-22"
+      },
+      "cipf_member": {
+        "value": "Yes for National Bank Financial Inc., which is on CIPF's list. NBDB's link to that entity is not stated on the pages fetched.",
+        "source_url": "https://www.cipf.ca/member-directory/current-cipf-members",
+        "checked_on": "2026-10-22"
+      },
+      "platforms_apps": {
+        "value": "NBDB online platform with My Investment Dashboard, Wealthscope, Trading Central, OptionsPlay. The mobile app name is not given. InvestCube is an account type.",
+        "source_url": "https://www.nbc.ca/en/direct-brokerage/pricing.html",
+        "checked_on": "2026-10-22"
+      },
+      "current_signup_offer": {
+        "value": "unknown. No dated promotion is on the pricing page, and the offers page failed to load.",
+        "source_url": "https://www.nbc.ca/en/direct-brokerage/pricing.html",
+        "checked_on": "2026-10-22"
+      }
+    },
+    {
+      "name": {
+        "value": "CIBC Investor's Edge",
+        "source_url": "https://www.investorsedge.cibc.com/en/pricing.html",
+        "checked_on": "2026-10-22"
+      },
+      "legal_entity": {
+        "value": "CIBC Investor Services Inc. (on CIPF's list; the Investor's Edge entity is not stated on the pages fetched).",
+        "source_url": "https://www.cipf.ca/member-directory/current-cipf-members",
+        "checked_on": "2026-10-22"
+      },
+      "commission_canadian_stocks_etfs": {
+        "value": "$6.95 per online trade (under 150 trades/quarter); $4.95 for active investors (150+/quarter); $0 for young investors under 25 with CIBC Smart Start chequing; $5.95 for students with Smart for Students; $0 on 180+ ETFs.",
+        "source_url": "https://www.investorsedge.cibc.com/en/pricing.html",
+        "checked_on": "2026-10-22"
+      },
+      "commission_us_stocks_etfs": {
+        "value": "Same schedule as Canadian: $6.95, $4.95 active, $0 young investor, $5.95 student.",
+        "source_url": "https://www.investorsedge.cibc.com/en/pricing.html",
+        "checked_on": "2026-10-22"
+      },
+      "options_commission": {
+        "value": "$6.95 + $1.25 per contract (active $4.95 + $1.25; student $5.95 + $1.25; young investor $6.95 + $1.25).",
+        "source_url": "https://www.investorsedge.cibc.com/en/pricing.html",
+        "checked_on": "2026-10-22"
+      },
+      "currency_conversion": {
+        "value": "Spread over the Bank of Canada rate: $0 to $24,999.99 225 bps (1.6%); $25,000 to $99,999.99 130 bps (0.9%); $100,000 to $249,999.99 75 bps (0.5%); $250,000 to $499,999.99 40 bps; $500,000 to $999,999.99 35 bps; $1,000,000+ 25 bps. RESP 10 bps.",
+        "source_url": "https://www.investorsedge.cibc.com/en/pricing.html",
+        "checked_on": "2026-10-22"
+      },
+      "usd_registered_accounts": {
+        "value": "unknown (only USD registered interest rates are shown)",
+        "source_url": "https://www.investorsedge.cibc.com/en/pricing.html",
+        "checked_on": "2026-10-22"
+      },
+      "account_types": {
+        "value": "TFSA, FHSA, RRSP, RESP, RRIF, locked-in accounts, cash (individual, joint, corporate), margin, corporate/partnership, formal trust, investment club, estate. Spousal RRSP, LIRA and LIF are not named.",
+        "source_url": "https://investorsedge.cibc.com/en/accounts-and-investments.html",
+        "checked_on": "2026-10-22"
+      },
+      "admin_inactivity_fees": {
+        "value": "$100/year if the total market balance is $10,000 or less (split across active accounts excluding FHSA, charged each September); $0 above $10,000. FHSA has no annual fee. New clients are exempt in the first year; young and student investors with qualifying chequing are exempt.",
+        "source_url": "https://www.investorsedge.cibc.com/en/pricing.html",
+        "checked_on": "2026-10-22"
+      },
+      "transfer_out_fee": {
+        "value": "unknown (not listed)",
+        "source_url": "https://www.investorsedge.cibc.com/en/pricing.html",
+        "checked_on": "2026-10-22"
+      },
+      "transfer_in_rebate": {
+        "value": "unknown (not listed)",
+        "source_url": "https://www.investorsedge.cibc.com/en/pricing.html",
+        "checked_on": "2026-10-22"
+      },
+      "minimum_to_open": {
+        "value": "No minimum stated.",
+        "source_url": "https://investorsedge.cibc.com/en/accounts-and-investments.html",
+        "checked_on": "2026-10-22"
+      },
+      "fractional_shares": {
+        "value": "Yes. Fractional shares are advertised; details are on a separate page.",
+        "source_url": "https://investorsedge.cibc.com/en/accounts-and-investments.html",
+        "checked_on": "2026-10-22"
+      },
+      "drip": {
+        "value": "unknown (not mentioned)",
+        "source_url": "https://investorsedge.cibc.com/en/accounts-and-investments.html",
+        "checked_on": "2026-10-22"
+      },
+      "cash_interest": {
+        "value": "0.00% credit interest in all account types (effective September 17, 2026).",
+        "source_url": "https://www.investorsedge.cibc.com/en/pricing.html",
+        "checked_on": "2026-10-22"
+      },
+      "margin_rates": {
+        "value": "Non-registered CAD: 6.25% ($0 to $99,999.99), 6.00% ($100,000 to $999,999.99), 4.75% ($1M+). USD: 8.75%, 8.75%, 7.25%. Registered debit balances: 7.00% CAD / 9.25% USD (effective September 17, 2026).",
+        "source_url": "https://www.investorsedge.cibc.com/en/pricing.html",
+        "checked_on": "2026-10-22"
+      },
+      "ciro_member": {
+        "value": "Likely yes, not directly confirmed (inferred from CIPF membership of CIBC Investor Services Inc.).",
+        "source_url": "https://www.cipf.ca/member-directory/current-cipf-members",
+        "checked_on": "2026-10-22"
+      },
+      "cipf_member": {
+        "value": "Yes. 'CIBC Investor Services Inc.' is on CIPF's list.",
+        "source_url": "https://www.cipf.ca/member-directory/current-cipf-members",
+        "checked_on": "2026-10-22"
+      },
+      "platforms_apps": {
+        "value": "Investor's Edge online and mobile trading platform (iOS and Android app).",
+        "source_url": "https://investorsedge.cibc.com/en/accounts-and-investments.html",
+        "checked_on": "2026-10-22"
+      },
+      "current_signup_offer": {
+        "value": "Young-investor free trading (since February 8, 2024): ages 18 to 24 with CIBC Smart Start chequing get unlimited $0 online Canadian and US stock and ETF trades and waived admin fees until the end of the year they turn 24. No general sign-up offer with an end date was found.",
+        "source_url": "https://www.investorsedge.cibc.com/en/special-offers/free-trading.html",
+        "checked_on": "2026-10-22"
+      }
+    },
+    {
+      "name": {
+        "value": "TD Direct Investing / TD Easy Trade",
+        "source_url": "https://www.td.com/ca/en/investing/direct-investing/pricing",
+        "checked_on": "2026-10-22"
+      },
+      "legal_entity": {
+        "value": "unknown on the TD pages fetched. TD Waterhouse Canada Inc. is on CIPF's list.",
+        "source_url": "https://www.cipf.ca/member-directory/current-cipf-members",
+        "checked_on": "2026-10-22"
+      },
+      "commission_canadian_stocks_etfs": {
+        "value": "TD Direct Investing: $9.99 per trade (Standard), $7.00 (Active Trader, 150+ trades/quarter); select ETFs $0 (digital trades); partial shares $1.99 per trade. TD Easy Trade: first 100 stock and ETF trades per calendar year free (per client), then $9.99; partial-share orders (under one share) $1.99.",
+        "source_url": "https://www.td.com/ca/en/investing/direct-investing/pricing",
+        "checked_on": "2026-10-22",
+        "additional_sources": [
+          "https://www.td.com/ca/document/PDF/forms/521778GA.pdf",
+          "https://www.td.com/ca/en/investing/direct-investing/services/easytrade"
+        ]
+      },
+      "commission_us_stocks_etfs": {
+        "value": "TD Direct Investing: $9.99 Standard / $7.00 Active Trader. TD Easy Trade: free within the 100-trade annual allotment, then US$9.99; partial shares US$1.99.",
+        "source_url": "https://www.td.com/ca/en/investing/direct-investing/pricing",
+        "checked_on": "2026-10-22",
+        "additional_sources": [
+          "https://www.td.com/ca/document/PDF/forms/521778GA.pdf"
+        ]
+      },
+      "options_commission": {
+        "value": "TD Direct Investing: $9.99 + $1.25 per contract (Standard); $7.00 + $1.25 (Active Trader). TD Easy Trade options: not stated.",
+        "source_url": "https://www.td.com/ca/en/investing/direct-investing/pricing",
+        "checked_on": "2026-10-22"
+      },
+      "currency_conversion": {
+        "value": "TD Direct Investing illustrative spreads: $0 to $24,999 1.26%; $25,000 to $99,999 0.78%; $100,000 to $499,999 0.46%; $500,000 to $999,999 0.27%; $1,000,000+ 0.19%.",
+        "source_url": "https://www.td.com/ca/en/investing/direct-investing/pricing/fx-pricing",
+        "checked_on": "2026-10-22"
+      },
+      "usd_registered_accounts": {
+        "value": "TD Easy Trade: TFSA, RSP and cash have USD components (FHSA is CAD only); 'no fees for U.S. dollar accounts'. TD Direct Investing USD registered pricing: not stated.",
+        "source_url": "https://www.td.com/ca/en/investing/direct-investing/services/easytrade",
+        "checked_on": "2026-10-22",
+        "additional_sources": [
+          "https://www.td.com/ca/document/PDF/forms/521778GA.pdf"
+        ]
+      },
+      "account_types": {
+        "value": "TD Direct Investing (as listed): cash, FHSA, TFSA, RRSP, margin, Active Trader margin. Other types (spousal RRSP, RESP, RRIF, LIRA, LIF, joint, corporate) are not listed on the page checked. TD Easy Trade: cash, TFSA, RRSP, FHSA.",
+        "source_url": "https://www.td.com/ca/en/investing/direct-investing/articles/which-investing-account-types-are-right-for-me",
+        "checked_on": "2026-10-22",
+        "additional_sources": [
+          "https://www.td.com/ca/en/investing/direct-investing/services/easytrade"
+        ]
+      },
+      "admin_inactivity_fees": {
+        "value": "TD Direct Investing: $25/quarter if the household balance is under $15,000. Waived if household assets exceed $15,000, $100+/month pre-authorized contributions, 3+ commissionable trades in the prior quarter, an RDSP, the first 6 months, or FHSA-only. TD Easy Trade: no maintenance fees.",
+        "source_url": "https://www.td.com/ca/en/investing/direct-investing/pricing",
+        "checked_on": "2026-10-22",
+        "additional_sources": [
+          "https://www.td.com/ca/en/investing/direct-investing/services/easytrade"
+        ]
+      },
+      "transfer_out_fee": {
+        "value": "$150 (full or partial) for both TD Direct Investing and TD Easy Trade.",
+        "source_url": "https://www.td.com/content/dam/wealth/document/pdf/direct-investing/521778et-en.pdf",
+        "checked_on": "2026-10-22",
+        "additional_sources": [
+          "https://www.td.com/ca/document/PDF/forms/521778GA.pdf"
+        ]
+      },
+      "transfer_in_rebate": {
+        "value": "unknown (none stated)",
+        "source_url": "https://www.td.com/ca/en/investing/direct-investing/pricing",
+        "checked_on": "2026-10-22"
+      },
+      "minimum_to_open": {
+        "value": "TD Easy Trade: start with $1. TD Direct Investing: unknown.",
+        "source_url": "https://www.td.com/ca/en/investing/direct-investing/services/easytrade",
+        "checked_on": "2026-10-22"
+      },
+      "fractional_shares": {
+        "value": "Yes. Partial shares on TD Direct Investing and TD Easy Trade at $1.99 per partial-share trade; TD Easy Trade dollar-amount orders from $1.",
+        "source_url": "https://www.td.com/ca/en/investing/direct-investing/articles/fractional-shares",
+        "checked_on": "2026-10-22",
+        "additional_sources": [
+          "https://www.td.com/ca/en/investing/direct-investing/services/easytrade"
+        ]
+      },
+      "drip": {
+        "value": "Yes (TD Direct Investing). Enrol by phone; no commission; whole shares only.",
+        "source_url": "https://www.td.com/ca/en/investing/direct-investing/learn-to-invest/drip-investing",
+        "checked_on": "2026-10-22"
+      },
+      "cash_interest": {
+        "value": "unknown (not stated)",
+        "source_url": "https://www.td.com/ca/en/investing/direct-investing/pricing",
+        "checked_on": "2026-10-22"
+      },
+      "margin_rates": {
+        "value": "unknown (not stated)",
+        "source_url": "https://www.td.com/ca/en/investing/direct-investing/pricing",
+        "checked_on": "2026-10-22"
+      },
+      "ciro_member": {
+        "value": "Likely yes, not directly confirmed (inferred from CIPF membership of TD Waterhouse Canada Inc.).",
+        "source_url": "https://www.cipf.ca/member-directory/current-cipf-members",
+        "checked_on": "2026-10-22"
+      },
+      "cipf_member": {
+        "value": "Yes. 'TD Waterhouse Canada Inc.' is on CIPF's list.",
+        "source_url": "https://www.cipf.ca/member-directory/current-cipf-members",
+        "checked_on": "2026-10-22"
+      },
+      "platforms_apps": {
+        "value": "WebBroker, TD app, Advanced Dashboard, TD Active Trader; TD Easy Trade app (mobile and tablet only).",
+        "source_url": "https://www.td.com/ca/en/investing/direct-investing/pricing",
+        "checked_on": "2026-10-22",
+        "additional_sources": [
+          "https://www.td.com/ca/en/investing/direct-investing/services/easytrade"
+        ]
+      },
+      "current_signup_offer": {
+        "value": "TD Easy Trade: 3% cash back on assets transferred into registered accounts, 1% into non-registered accounts. Valid until October 23, 2026 (ends tomorrow).",
+        "source_url": "https://www.td.com/ca/en/investing/direct-investing/services/easytrade",
+        "checked_on": "2026-10-22"
+      }
+    },
+    {
+      "name": {
+        "value": "RBC Direct Investing",
+        "source_url": "https://www.rbcdirectinvesting.com/",
+        "checked_on": "2026-10-22"
+      },
+      "legal_entity": {
+        "value": "RBC Direct Investing Inc.",
+        "source_url": "https://www.rbcdirectinvesting.com/",
+        "checked_on": "2026-10-22",
+        "additional_sources": [
+          "https://www.cipf.ca/member-directory/current-cipf-members"
+        ]
+      },
+      "commission_canadian_stocks_etfs": {
+        "value": "$9.95 per online or mobile trade (under 150 trades/quarter); $6.95 Active Trader (150+); GoSmart: 50 free stock and ETF trades per year across GoSmart TFSA, FHSA and RRSP; unlimited $0 on 50+ select ETFs in all accounts. Schedule effective August 1, 2025.",
+        "source_url": "https://www.rbcdirectinvesting.com/pricing/index.html",
+        "checked_on": "2026-10-22"
+      },
+      "commission_us_stocks_etfs": {
+        "value": "$9.95 (CAD or USD) per online trade; $6.95 Active Trader.",
+        "source_url": "https://www.rbcdirectinvesting.com/pricing/index.html",
+        "checked_on": "2026-10-22"
+      },
+      "options_commission": {
+        "value": "$9.95 + $1.25 per contract; Active Trader $6.95 + $1.25. Not available in GoSmart.",
+        "source_url": "https://www.rbcdirectinvesting.com/pricing/index.html",
+        "checked_on": "2026-10-22"
+      },
+      "currency_conversion": {
+        "value": "USD spread: $0 to $24,999 230 bps (1.6%); $25,000 to $99,999 145 bps (1.0%); $100,000 to $499,999 85 bps (0.6%); $500,000 to $999,999 50 bps (0.4%); $1M to $1,999,999 25 bps (0.2%); $2M+ no more than 10 bps. Dividends and interest 60 bps (as of March 9, 2026).",
+        "source_url": "https://www.rbcdirectinvesting.com/pricing/index.html",
+        "checked_on": "2026-10-22"
+      },
+      "usd_registered_accounts": {
+        "value": "Investment accounts can hold CAD and USD balances. USD registered account pricing is not stated.",
+        "source_url": "https://www.rbcdirectinvesting.com/pricing/index.html",
+        "checked_on": "2026-10-22"
+      },
+      "account_types": {
+        "value": "TFSA, FHSA, RRSP, spousal RRSP, RRIF, RESP, cash (individual or joint), margin, business/trust/other. LIRA, LIF, spousal RRSP, RIF and Group RSP are named as eligible in the cash-offer terms.",
+        "source_url": "https://www.rbcdirectinvesting.com/accounts-investments/",
+        "checked_on": "2026-10-22",
+        "additional_sources": [
+          "https://www.rbcdirectinvesting.com/dms/cashback/conditions/offer.html"
+        ]
+      },
+      "admin_inactivity_fees": {
+        "value": "$0: 'no quarterly maintenance fee or annual maintenance fee'; no minimum balance.",
+        "source_url": "https://www.rbcdirectinvesting.com/pricing/index.html",
+        "checked_on": "2026-10-22"
+      },
+      "transfer_out_fee": {
+        "value": "$150 for all account types, excluding donation of shares.",
+        "source_url": "https://www.rbcdirectinvesting.com/pricing/index.html",
+        "checked_on": "2026-10-22"
+      },
+      "transfer_in_rebate": {
+        "value": "Free to transfer in. Reimburses up to $200 of transfer fees on transfers of $15,000+ (up to $500 for Royal Circle and Royal Distinction members).",
+        "source_url": "https://www.rbcdirectinvesting.com/pricing/index.html",
+        "checked_on": "2026-10-22"
+      },
+      "minimum_to_open": {
+        "value": "No minimum stated.",
+        "source_url": "https://www.rbcdirectinvesting.com/accounts-investments/",
+        "checked_on": "2026-10-22"
+      },
+      "fractional_shares": {
+        "value": "unknown (not mentioned)",
+        "source_url": "https://www.rbcdirectinvesting.com/",
+        "checked_on": "2026-10-22"
+      },
+      "drip": {
+        "value": "Yes. Stocks: '100s are dividend reinvestment plan (DRIP) eligible'.",
+        "source_url": "https://www.rbcdirectinvesting.com/",
+        "checked_on": "2026-10-22"
+      },
+      "cash_interest": {
+        "value": "unknown (not on pages checked)",
+        "source_url": "https://www.rbcdirectinvesting.com/pricing/index.html",
+        "checked_on": "2026-10-22"
+      },
+      "margin_rates": {
+        "value": "unknown (not on pages checked)",
+        "source_url": "https://www.rbcdirectinvesting.com/pricing/index.html",
+        "checked_on": "2026-10-22"
+      },
+      "ciro_member": {
+        "value": "Yes. RBC Direct Investing Inc. 'is a Member of the Canadian Investment Regulatory Organization and the Canadian Investor Protection Fund'.",
+        "source_url": "https://www.rbcdirectinvesting.com/",
+        "checked_on": "2026-10-22"
+      },
+      "cipf_member": {
+        "value": "Yes. Stated on site; 'RBC Direct Investing Inc.' is on CIPF's list.",
+        "source_url": "https://www.rbcdirectinvesting.com/",
+        "checked_on": "2026-10-22",
+        "additional_sources": [
+          "https://www.cipf.ca/member-directory/current-cipf-members"
+        ]
+      },
+      "platforms_apps": {
+        "value": "Online Investing platform, Trading Dashboard, RBC Mobile app, GoSmart (mobile-first, via the RBC Mobile app).",
+        "source_url": "https://www.rbcdirectinvesting.com/",
+        "checked_on": "2026-10-22"
+      },
+      "current_signup_offer": {
+        "value": "Summer-Fall 2026 Cash Offer: open July 31 to November 2, 2026 via a promo link; fund at least $2,500 by November 30, 2026; up to 3% (registered) / 1% (non-registered) of net transferred assets, capped at $15,000; hold until November 30, 2028; paid by December 31, 2027 and December 31, 2028. GoSmart: $100 for a $2,000 deposit (open August 4 to November 2, 2026; fund by February 2, 2027).",
+        "source_url": "https://www.rbcdirectinvesting.com/dms/cashback/conditions/offer.html",
+        "checked_on": "2026-10-22",
+        "additional_sources": [
+          "https://www.rbcdirectinvesting.com/"
+        ]
+      }
+    },
+    {
+      "name": {
+        "value": "BMO InvestorLine (self-directed)",
+        "source_url": "https://www.bmo.com/en-ca/main/personal/investments/direct-investing/investorline/self-directed/",
+        "checked_on": "2026-10-22"
+      },
+      "legal_entity": {
+        "value": "BMO InvestorLine Inc.",
+        "source_url": "https://www.cipf.ca/member-directory/current-cipf-members",
+        "checked_on": "2026-10-22"
+      },
+      "commission_canadian_stocks_etfs": {
+        "value": "$0: 'unlimited $0 commission trades on Stocks and ETFs' on Canadian and US exchanges. The effective date and the September 2026 change are not stated on the pages fetched.",
+        "source_url": "https://www.bmo.com/en-ca/main/personal/investments/direct-investing/investorline/self-directed/pricing/",
+        "checked_on": "2026-10-22",
+        "additional_sources": [
+          "https://www.bmo.com/en-ca/main/personal/investments/direct-investing/investorline/self-directed/"
+        ]
+      },
+      "commission_us_stocks_etfs": {
+        "value": "$0 (same unlimited $0 stock and ETF pricing).",
+        "source_url": "https://www.bmo.com/en-ca/main/personal/investments/direct-investing/investorline/self-directed/pricing/",
+        "checked_on": "2026-10-22"
+      },
+      "options_commission": {
+        "value": "$0.90 per contract; no base fee listed.",
+        "source_url": "https://www.bmo.com/en-ca/main/personal/investments/direct-investing/investorline/self-directed/pricing/",
+        "checked_on": "2026-10-22"
+      },
+      "currency_conversion": {
+        "value": "Under US$25,000 220 bps (1.6%); $25,000 to $74,999.99 130 bps (0.9%); $75,000 to $99,999.99 105 bps (0.8%); $100,000 to $249,999.99 75 bps (0.5%); $250,000+ no more than 55 bps (no more than 0.4%).",
+        "source_url": "https://www.bmo.com/en-ca/main/personal/investments/direct-investing/investorline/self-directed/pricing/",
+        "checked_on": "2026-10-22"
+      },
+      "usd_registered_accounts": {
+        "value": "unknown (not stated)",
+        "source_url": "https://www.bmo.com/en-ca/main/personal/investments/direct-investing/investorline/self-directed/pricing/",
+        "checked_on": "2026-10-22"
+      },
+      "account_types": {
+        "value": "TFSA, FHSA, RRSP, RESP, RRIF; individual, joint, cash, margin; LIRA, LRSP, RLSP, LRIF, LIF; trusts, estates, associations, corporations, investment clubs, partnerships, personal holding companies.",
+        "source_url": "https://www.bmo.com/en-ca/main/personal/investments/direct-investing/investorline/self-directed/",
+        "checked_on": "2026-10-22"
+      },
+      "admin_inactivity_fees": {
+        "value": "Non-registered: 'There are no account minimum fees for any account.' Registered: 'Annual Fee (Portfolio Balance < $25,000)' is $0; LLP, HBP and RRSP/RRIF deregistration $0.",
+        "source_url": "https://www.bmo.com/en-ca/main/personal/investments/direct-investing/investorline/self-directed/pricing/",
+        "checked_on": "2026-10-22"
+      },
+      "transfer_out_fee": {
+        "value": "unknown (in a Commission & Fee schedule PDF that was not accessible)",
+        "source_url": "https://www.bmo.com/en-ca/main/personal/investments/direct-investing/investorline/self-directed/pricing/",
+        "checked_on": "2026-10-22"
+      },
+      "transfer_in_rebate": {
+        "value": "unknown (not stated)",
+        "source_url": "https://www.bmo.com/en-ca/main/personal/investments/direct-investing/investorline/self-directed/pricing/",
+        "checked_on": "2026-10-22"
+      },
+      "minimum_to_open": {
+        "value": "No account minimum fees stated.",
+        "source_url": "https://www.bmo.com/en-ca/main/personal/investments/direct-investing/investorline/self-directed/pricing/",
+        "checked_on": "2026-10-22"
+      },
+      "fractional_shares": {
+        "value": "unknown (not mentioned)",
+        "source_url": "https://www.bmo.com/en-ca/main/personal/investments/direct-investing/investorline/self-directed/",
+        "checked_on": "2026-10-22"
+      },
+      "drip": {
+        "value": "unknown (not mentioned)",
+        "source_url": "https://www.bmo.com/en-ca/main/personal/investments/direct-investing/investorline/self-directed/",
+        "checked_on": "2026-10-22"
+      },
+      "cash_interest": {
+        "value": "unknown (in an Interest Rates PDF that was not accessible)",
+        "source_url": "https://www.bmo.com/en-ca/main/personal/investments/direct-investing/investorline/self-directed/pricing/",
+        "checked_on": "2026-10-22"
+      },
+      "margin_rates": {
+        "value": "unknown (in an Interest Rates PDF that was not accessible)",
+        "source_url": "https://www.bmo.com/en-ca/main/personal/investments/direct-investing/investorline/self-directed/pricing/",
+        "checked_on": "2026-10-22"
+      },
+      "ciro_member": {
+        "value": "Yes. 'Member of the Canadian Investment Regulatory Organization'.",
+        "source_url": "https://www.bmo.com/en-ca/main/personal/investments/direct-investing/investorline/self-directed/",
+        "checked_on": "2026-10-22"
+      },
+      "cipf_member": {
+        "value": "Yes. 'BMO InvestorLine Inc.' is on CIPF's list.",
+        "source_url": "https://www.cipf.ca/member-directory/current-cipf-members",
+        "checked_on": "2026-10-22"
+      },
+      "platforms_apps": {
+        "value": "BMO InvestorLine Self-Directed, BMO Invest App, BMO Active Trader, My Financial Progress.",
+        "source_url": "https://www.bmo.com/en-ca/main/personal/investments/direct-investing/investorline/self-directed/",
+        "checked_on": "2026-10-22"
+      },
+      "current_signup_offer": {
+        "value": "'Get up to $30,000 cash back + a chance to win a $300,000 cash prize'. Terms and end date not verified (offers page failed to load).",
+        "source_url": "https://www.bmo.com/en-ca/main/personal/investments/direct-investing/investorline/self-directed/",
+        "checked_on": "2026-10-22"
+      }
+    },
+    {
+      "name": {
+        "value": "Scotia iTRADE",
+        "source_url": "https://www.scotiaitrade.com/en/home.html",
+        "checked_on": "2026-10-22"
+      },
+      "legal_entity": {
+        "value": "Scotia Capital Inc. (Scotia iTRADE is an order-execution-only division).",
+        "source_url": "https://www.scotiaitrade.com/en/home.html",
+        "checked_on": "2026-10-22"
+      },
+      "commission_canadian_stocks_etfs": {
+        "value": "$9.99 flat; $4.99 with 150+ commission-generating trades in the prior quarter; 200+ commission-free ETFs. Up to 100 $0 trades/year with a Scotiabank Ultimate Package (50 with Preferred), effective September 1, 2026.",
+        "source_url": "https://www.scotiaitrade.com/en/home.html",
+        "checked_on": "2026-10-22",
+        "additional_sources": [
+          "https://www.scotiaitrade.com/en/home/special-offers-programs.html"
+        ]
+      },
+      "commission_us_stocks_etfs": {
+        "value": "$9.99 flat ($4.99 if qualified), charged in USD.",
+        "source_url": "https://www.scotiaitrade.com/en/home.html",
+        "checked_on": "2026-10-22"
+      },
+      "options_commission": {
+        "value": "$9.99 + $1.25 per contract; $4.99 + $1.25 if qualified.",
+        "source_url": "https://www.scotiaitrade.com/en/home.html",
+        "checked_on": "2026-10-22"
+      },
+      "currency_conversion": {
+        "value": "unknown. No spread is published on the pricing page; it refers to section 1.7 of the Relationship Disclosure Document.",
+        "source_url": "https://www.scotiaitrade.com/en/home/pricing.html",
+        "checked_on": "2026-10-22"
+      },
+      "usd_registered_accounts": {
+        "value": "USD-denominated registered plans are available (for example RRSP, RRIF); RESP is CAD only. TFSA and FHSA USD versions are not stated. No USD account fee listed; U.S.-Friendly RESP is $30/quarter.",
+        "source_url": "https://www.scotiaitrade.com/en/home/trading-account-types/registered.html",
+        "checked_on": "2026-10-22",
+        "additional_sources": [
+          "https://www.scotiaitrade.com/en/home/pricing.html"
+        ]
+      },
+      "account_types": {
+        "value": "FHSA, TFSA, RRSP, RRIF, RESP, LIF (FAQ), non-registered (cash, margin) and non-personal accounts. LIRA appears in the fee schedule; spousal RRSP is not named.",
+        "source_url": "https://www.scotiaitrade.com/en/home/trading-account-types/registered.html",
+        "checked_on": "2026-10-22",
+        "additional_sources": [
+          "https://www.scotiaitrade.com/en/home.html"
+        ]
+      },
+      "admin_inactivity_fees": {
+        "value": "Low Activity Account Admin Fee $25/quarter on investment accounts, waived if equity exceeds $10,000, a commission trade in the prior 3 months, under 26, registered accounts, or the first 6 months. Registered RSP/RIF/LIRA/LIF: $100/year if aggregate assets are under $25,000 and fewer than 12 trades/year. RESP: $25/year under $15,000. Unclaimed accounts $60/quarter.",
+        "source_url": "https://www.scotiaitrade.com/en/home/pricing.html",
+        "checked_on": "2026-10-22"
+      },
+      "transfer_out_fee": {
+        "value": "$150 per transfer (full or partial).",
+        "source_url": "https://www.scotiaitrade.com/en/home/pricing.html",
+        "checked_on": "2026-10-22"
+      },
+      "transfer_in_rebate": {
+        "value": "No fee to transfer in. A credit of up to $150 per client applies only under the StartRight newcomer offer.",
+        "source_url": "https://www.scotiaitrade.com/en/home/pricing.html",
+        "checked_on": "2026-10-22",
+        "additional_sources": [
+          "https://www.scotiaitrade.com/en/home/special-offers-programs.html"
+        ]
+      },
+      "minimum_to_open": {
+        "value": "unknown",
+        "source_url": "https://www.scotiaitrade.com/en/home.html",
+        "checked_on": "2026-10-22"
+      },
+      "fractional_shares": {
+        "value": "unknown (not mentioned)",
+        "source_url": "https://www.scotiaitrade.com/en/home.html",
+        "checked_on": "2026-10-22"
+      },
+      "drip": {
+        "value": "unknown (not mentioned)",
+        "source_url": "https://www.scotiaitrade.com/en/home.html",
+        "checked_on": "2026-10-22"
+      },
+      "cash_interest": {
+        "value": "No interest on cash, except Cash Optimizer Investment Accounts at 0.25% (existing clients only).",
+        "source_url": "https://www.scotiaitrade.com/en/home/pricing.html",
+        "checked_on": "2026-10-22"
+      },
+      "margin_rates": {
+        "value": "Standard tier: prime + 1.65% ($0 to $24,999), + 1.60% ($25,000 to $99,999), + 1.55% ($100,000+), same for CAD and USD. Registered debit balances: prime + 5.00%. CAD prime 4.45%, USD prime 7.00%.",
+        "source_url": "https://www.scotiaitrade.com/en/home/pricing.html",
+        "checked_on": "2026-10-22"
+      },
+      "ciro_member": {
+        "value": "Yes. 'Scotia Capital Inc. is regulated by the Canadian Investment Regulatory Organization (CIRO)'.",
+        "source_url": "https://www.scotiaitrade.com/en/home.html",
+        "checked_on": "2026-10-22"
+      },
+      "cipf_member": {
+        "value": "Yes. Stated on site; 'Scotia Capital Inc.' is on CIPF's list.",
+        "source_url": "https://www.scotiaitrade.com/en/home.html",
+        "checked_on": "2026-10-22",
+        "additional_sources": [
+          "https://www.cipf.ca/member-directory/current-cipf-members"
+        ]
+      },
+      "platforms_apps": {
+        "value": "Three online trading platforms (not named on the homepage); single sign-on from the Scotia banking apps.",
+        "source_url": "https://www.scotiaitrade.com/en/home.html",
+        "checked_on": "2026-10-22"
+      },
+      "current_signup_offer": {
+        "value": "Banking-package free trades (effective September 1, 2026). StartRight newcomers (code SRPE15/SRPF15): 10 free trades plus a transfer-fee credit of up to $150; no end date stated. Refer-a-friend: up to 50 free trades or $50/$100.",
+        "source_url": "https://www.scotiaitrade.com/en/home/special-offers-programs.html",
+        "checked_on": "2026-10-22"
+      }
+    },
+    {
+      "name": {
+        "value": "Desjardins Online Brokerage (Disnat)",
+        "source_url": "https://www.disnat.com/en",
+        "checked_on": "2026-10-22"
+      },
+      "legal_entity": {
+        "value": "Desjardins Securities Inc. (trade name Desjardins Online Brokerage).",
+        "source_url": "https://www.disnat.com/en",
+        "checked_on": "2026-10-22"
+      },
+      "commission_canadian_stocks_etfs": {
+        "value": "$0 online (Disnat Classic and Disnat Direct); no order-size threshold stated. Representative-placed trades have a $45 minimum.",
+        "source_url": "https://www.disnat.com/en/platforms-and-fees/pricing",
+        "checked_on": "2026-10-22"
+      },
+      "commission_us_stocks_etfs": {
+        "value": "$0 online.",
+        "source_url": "https://www.disnat.com/en/platforms-and-fees/pricing",
+        "checked_on": "2026-10-22"
+      },
+      "options_commission": {
+        "value": "Online: $1.25 per contract, minimum $8.75. Representative: $2.50 per contract, minimum $35.",
+        "source_url": "https://www.disnat.com/en/platforms-and-fees/pricing",
+        "checked_on": "2026-10-22"
+      },
+      "currency_conversion": {
+        "value": "Desjardins acts as principal; its income margin is 0.15% to 1.90% depending on the conversion value.",
+        "source_url": "https://www.disnat.com/en/platforms-and-fees/pricing",
+        "checked_on": "2026-10-22"
+      },
+      "usd_registered_accounts": {
+        "value": "US plans are available for RRSP, TFSA, LIRA, RRIF and LIF. No fee stated.",
+        "source_url": "https://www.disnat.com/en/platforms-and-fees/accounts",
+        "checked_on": "2026-10-22"
+      },
+      "account_types": {
+        "value": "Cash, margin, margin option, short-selling, RRSP (including spousal), TFSA, FHSA, LIRA, RRIF, LIF, RESP, corporation, sole proprietorship, partnership, trust, estate, in-trust for a minor, non-profit and others. Joint is not listed.",
+        "source_url": "https://www.disnat.com/en/platforms-and-fees/accounts",
+        "checked_on": "2026-10-22"
+      },
+      "admin_inactivity_fees": {
+        "value": "Inactivity fee $30/quarter, waived with 6+ trades in the prior 12 months, a portfolio of $15,000+, a registered account, or age 18 to 30. Annual admin: RRSP/LIRA $100 under $15,000; RRIF/LIF $100 under $25,000; RESP $50 under $15,000; no admin fee on TFSA or FHSA.",
+        "source_url": "https://www.disnat.com/en/platforms-and-fees/pricing",
+        "checked_on": "2026-10-22"
+      },
+      "transfer_out_fee": {
+        "value": "$150 for a total transfer; partial transfers $25 per security.",
+        "source_url": "https://www.disnat.com/en/platforms-and-fees/pricing",
+        "checked_on": "2026-10-22"
+      },
+      "transfer_in_rebate": {
+        "value": "unknown (not stated)",
+        "source_url": "https://www.disnat.com/en/platforms-and-fees/pricing",
+        "checked_on": "2026-10-22"
+      },
+      "minimum_to_open": {
+        "value": "No minimum stated.",
+        "source_url": "https://www.disnat.com/en/platforms-and-fees/accounts",
+        "checked_on": "2026-10-22"
+      },
+      "fractional_shares": {
+        "value": "unknown (not mentioned)",
+        "source_url": "https://www.disnat.com/en/platforms-and-fees/accounts",
+        "checked_on": "2026-10-22"
+      },
+      "drip": {
+        "value": "unknown (not mentioned)",
+        "source_url": "https://www.disnat.com/en/platforms-and-fees/accounts",
+        "checked_on": "2026-10-22"
+      },
+      "cash_interest": {
+        "value": "CAD: prime - 5.50% ($0 to $49,999) up to prime - 4.75% ($500,000+). USD: prime - 7.80% up to prime - 7.05%.",
+        "source_url": "https://www.disnat.com/en/platforms-and-fees/pricing",
+        "checked_on": "2026-10-22"
+      },
+      "margin_rates": {
+        "value": "CAD margin: prime + 1.25% (under $100,000), + 0.5% ($100,000 to $499,999), prime ($500,000+). USD: prime + 1% / + 1% / + 0.5%. Cash-account debit balances: prime + 9%.",
+        "source_url": "https://www.disnat.com/en/platforms-and-fees/pricing",
+        "checked_on": "2026-10-22"
+      },
+      "ciro_member": {
+        "value": "Yes. Desjardins Securities Inc. is stated to be a CIRO member.",
+        "source_url": "https://www.disnat.com/en",
+        "checked_on": "2026-10-22"
+      },
+      "cipf_member": {
+        "value": "Yes. Stated on site; 'Desjardins Securities Inc.' is on CIPF's list.",
+        "source_url": "https://www.disnat.com/en",
+        "checked_on": "2026-10-22",
+        "additional_sources": [
+          "https://www.cipf.ca/member-directory/current-cipf-members"
+        ]
+      },
+      "platforms_apps": {
+        "value": "Disnat Classic (web), Disnat Direct (advanced), Disnat mobile app.",
+        "source_url": "https://www.disnat.com/en",
+        "checked_on": "2026-10-22"
+      },
+      "current_signup_offer": {
+        "value": "unknown (no offers page linked)",
+        "source_url": "https://www.disnat.com/en",
+        "checked_on": "2026-10-22"
+      }
+    }
+  ],
+  "robo_advisors": [
+    {
+      "name": {
+        "value": "Wealthsimple Managed Investing",
+        "source_url": "https://www.wealthsimple.com/en-ca/managed-investing",
+        "checked_on": "2026-10-22"
+      },
+      "status": {
+        "value": "Active (Wealthsimple Investments Inc.).",
+        "source_url": "https://www.wealthsimple.com/en-ca/managed-investing",
+        "checked_on": "2026-10-22"
+      },
+      "management_fee": {
+        "value": "Core (from $1): 0.5%. Premium ($100,000+): 0.4%. Generation ($500,000+): 0.2% to 0.4% (0.4% at $500,000, falling to 0.2% at $10,000,000+). Automated Investing (US direct indexing): 0.25%, capped at $250 + tax per account per year.",
+        "source_url": "https://www.wealthsimple.com/pricing",
+        "checked_on": "2026-10-22",
+        "additional_sources": [
+          "https://www.wealthsimple.com/legal/fees/trade"
+        ]
+      },
+      "etf_mer_range": {
+        "value": "unknown (not stated)",
+        "source_url": "https://www.wealthsimple.com/en-ca/managed-investing",
+        "checked_on": "2026-10-22"
+      },
+      "minimum": {
+        "value": "No minimum stated for managed portfolios (Core tier from $1); the Private Market fund needs $10,000.",
+        "source_url": "https://www.wealthsimple.com/en-ca/managed-investing",
+        "checked_on": "2026-10-22"
+      },
+      "accounts_offered": {
+        "value": "TFSA, RRSP, spousal RRSP, non-registered, FHSA, RESP, RRIF, LIRA.",
+        "source_url": "https://www.wealthsimple.com/en-ca/managed-investing",
+        "checked_on": "2026-10-22"
+      },
+      "portfolio_types": {
+        "value": "Summit (private markets), Classic, Income, Private Market fund, Automated Investing. Socially Responsible and Halal portfolios are NOT named on current pages (unverified whether still offered).",
+        "source_url": "https://www.wealthsimple.com/en-ca/managed-investing",
+        "checked_on": "2026-10-22"
+      },
+      "tax_loss_harvesting": {
+        "value": "Premium and Generation only.",
+        "source_url": "https://www.wealthsimple.com/pricing",
+        "checked_on": "2026-10-22"
+      },
+      "human_advice": {
+        "value": "Yes. An Advice option and 'Work with an advisor'; priority phone support for Premium and Generation.",
+        "source_url": "https://www.wealthsimple.com/en-ca/managed-investing",
+        "checked_on": "2026-10-22",
+        "additional_sources": [
+          "https://www.wealthsimple.com/pricing"
+        ]
+      },
+      "other_fees_notes": {
+        "value": "Automated Investing: no FX fee on trades or transfers; dividend conversions up to 0.4%.",
+        "source_url": "https://www.wealthsimple.com/legal/fees/trade",
+        "checked_on": "2026-10-22"
+      }
+    },
+    {
+      "name": {
+        "value": "Questwealth Portfolios",
+        "source_url": "https://www.questrade.com/pricing/questwealth-portfolios-fees",
+        "checked_on": "2026-10-22"
+      },
+      "status": {
+        "value": "Active (Questrade Wealth Management Inc.).",
+        "source_url": "https://www.questrade.com/self-directed-investing/trading-platforms",
+        "checked_on": "2026-10-22"
+      },
+      "management_fee": {
+        "value": "0.25% on balances of $250 to $99,999; 0.20% at $100,000+.",
+        "source_url": "https://www.questrade.com/pricing/questwealth-portfolios-fees",
+        "checked_on": "2026-10-22"
+      },
+      "etf_mer_range": {
+        "value": "Standard portfolios 0.09% to 0.12%; SRI portfolios 0.20% to 0.24%.",
+        "source_url": "https://www.questrade.com/pricing/questwealth-portfolios-fees",
+        "checked_on": "2026-10-22"
+      },
+      "minimum": {
+        "value": "Not stated explicitly; the lowest fee tier starts at a $250 balance.",
+        "source_url": "https://www.questrade.com/pricing/questwealth-portfolios-fees",
+        "checked_on": "2026-10-22"
+      },
+      "accounts_offered": {
+        "value": "Per Questwealth account-types page: RRSP, spousal RRSP, LIRA, locked-in RRSP, RRIF, LIF, RESP, family RESP, TFSA, individual cash, individual and joint margin, corporate cash and margin, partnership, sole proprietorship, informal and formal trusts, estate. FHSA appears in site navigation.",
+        "source_url": "https://www.questrade.com/questwealth-portfolios/account-types",
+        "checked_on": "2026-10-22"
+      },
+      "portfolio_types": {
+        "value": "Standard Questwealth Portfolios and Questwealth SRI Portfolios. Halal not mentioned.",
+        "source_url": "https://www.questrade.com/pricing/questwealth-portfolios-fees",
+        "checked_on": "2026-10-22"
+      },
+      "tax_loss_harvesting": {
+        "value": "unknown (not mentioned)",
+        "source_url": "https://www.questrade.com/pricing/questwealth-portfolios-fees",
+        "checked_on": "2026-10-22"
+      },
+      "human_advice": {
+        "value": "A 'team of experts' does active portfolio management; client-facing advice is not described.",
+        "source_url": "https://www.questrade.com/pricing/questwealth-portfolios-fees",
+        "checked_on": "2026-10-22"
+      },
+      "other_fees_notes": {
+        "value": "Currency exchange: 100 pips (0.01) added to the exchange rate when USD is needed for ETFs. No opening fees, trading commissions or EFT fees.",
+        "source_url": "https://www.questrade.com/pricing/questwealth-portfolios-fees",
+        "checked_on": "2026-10-22"
+      }
+    },
+    {
+      "name": {
+        "value": "Justwealth",
+        "source_url": "https://www.justwealth.com/",
+        "checked_on": "2026-10-22"
+      },
+      "status": {
+        "value": "Active. Custodian: CI Investment Services Inc.",
+        "source_url": "https://www.justwealth.com/faqs/",
+        "checked_on": "2026-10-22"
+      },
+      "management_fee": {
+        "value": "unknown. The tier schedule appears only as an image; the page's worked example uses 0.50%. Minimum fee $4.99/month ($2.50/month for RESP, FHSA and RDSP).",
+        "source_url": "https://www.justwealth.com/pricing/",
+        "checked_on": "2026-10-22"
+      },
+      "etf_mer_range": {
+        "value": "unknown (the example assumes an average 0.20%)",
+        "source_url": "https://www.justwealth.com/pricing/",
+        "checked_on": "2026-10-22"
+      },
+      "minimum": {
+        "value": "$5,000; no minimum for RESP and FHSA (or RDSP per the pricing page).",
+        "source_url": "https://www.justwealth.com/faqs/",
+        "checked_on": "2026-10-22",
+        "additional_sources": [
+          "https://www.justwealth.com/pricing/"
+        ]
+      },
+      "accounts_offered": {
+        "value": "Non-registered, RRSP, spousal RRSP, TFSA, FHSA, RESP, RDSP, LIRA, RRIF, LIF; CAD and USD accounts; a corporate accounts page is linked.",
+        "source_url": "https://www.justwealth.com/faqs/",
+        "checked_on": "2026-10-22",
+        "additional_sources": [
+          "https://www.justwealth.com/"
+        ]
+      },
+      "portfolio_types": {
+        "value": "80+ portfolios: Growth, Income, Preservation, Target Date (RESP), and an ESG suite. Halal not mentioned.",
+        "source_url": "https://www.justwealth.com/pricing/",
+        "checked_on": "2026-10-22",
+        "additional_sources": [
+          "https://www.justwealth.com/faqs/",
+          "https://www.justwealth.com/"
+        ]
+      },
+      "tax_loss_harvesting": {
+        "value": "Yes, for all clients with non-registered accounts.",
+        "source_url": "https://www.justwealth.com/faqs/",
+        "checked_on": "2026-10-22"
+      },
+      "human_advice": {
+        "value": "Yes. Each client gets a Personal Portfolio Advisor (phone or email).",
+        "source_url": "https://www.justwealth.com/",
+        "checked_on": "2026-10-22"
+      },
+      "other_fees_notes": {
+        "value": "Reimburses up to $150 of transfer fees for accounts of $25,000+. Transfer out: $50 partial, $150 full.",
+        "source_url": "https://www.justwealth.com/faqs/",
+        "checked_on": "2026-10-22"
+      }
+    },
+    {
+      "name": {
+        "value": "CI Direct Investing",
+        "source_url": "https://www.cifinancial.com/ci-di/ca/en/invest.html",
+        "checked_on": "2026-10-22"
+      },
+      "status": {
+        "value": "Active. CI Investment Services Inc. is on CIPF's list.",
+        "source_url": "https://www.cifinancial.com/ci-di/ca/en/invest.html",
+        "checked_on": "2026-10-22",
+        "additional_sources": [
+          "https://www.cipf.ca/member-directory/current-cipf-members"
+        ]
+      },
+      "management_fee": {
+        "value": "0.60% on the first $150,000; 0.40% on the next $350,000; 0.35% above $500,000 (blended across all the client's accounts).",
+        "source_url": "https://www.cifinancial.com/ci-di/ca/en/invest/pricing.html",
+        "checked_on": "2026-10-22",
+        "additional_sources": [
+          "https://help.cidirectinvesting.com/fees-and-minimums/fee-schedule"
+        ]
+      },
+      "etf_mer_range": {
+        "value": "ETF portfolios 0.17% to 0.23%; Private Investment portfolios 0.49% to 2.92%; Impact portfolio 0.53% (mapping unclear). As of April 30, 2024.",
+        "source_url": "https://www.cifinancial.com/ci-di/ca/en/invest/pricing.html",
+        "checked_on": "2026-10-22"
+      },
+      "minimum": {
+        "value": "$100.",
+        "source_url": "https://help.cidirectinvesting.com/fees-and-minimums/is-there-a-minimum-amount-needed-to-invest",
+        "checked_on": "2026-10-22"
+      },
+      "accounts_offered": {
+        "value": "TFSA, RRSP, spousal RRSP, RESP, RRIF, LIRA, locked-in RRSP, RIF, spousal RIF, LIF; non-registered individual, joint and entity; IPP and PPP; high-interest savings. FHSA not mentioned.",
+        "source_url": "https://www.cifinancial.com/ci-di/ca/en/invest/account-types.html",
+        "checked_on": "2026-10-22"
+      },
+      "portfolio_types": {
+        "value": "ETF Portfolios, ESG/Impact Portfolios, Private Portfolios (private and alternative assets). Halal not mentioned.",
+        "source_url": "https://www.cifinancial.com/ci-di/ca/en/invest.html",
+        "checked_on": "2026-10-22",
+        "additional_sources": [
+          "https://www.cifinancial.com/ci-di/ca/en/invest/pricing.html"
+        ]
+      },
+      "tax_loss_harvesting": {
+        "value": "unknown (not mentioned)",
+        "source_url": "https://www.cifinancial.com/ci-di/ca/en/invest/pricing.html",
+        "checked_on": "2026-10-22"
+      },
+      "human_advice": {
+        "value": "Yes. Financial planners and 'unlimited advice'.",
+        "source_url": "https://www.cifinancial.com/ci-di/ca/en/invest.html",
+        "checked_on": "2026-10-22"
+      },
+      "other_fees_notes": {
+        "value": "Covers the other institution's transfer fee (up to $150) on transfers of $25,000+. Product MERs and transfer-out/closure fees are not included in the management fee.",
+        "source_url": "https://www.cifinancial.com/ci-di/ca/en/invest/pricing.html",
+        "checked_on": "2026-10-22",
+        "additional_sources": [
+          "https://help.cidirectinvesting.com/fees-and-minimums/fee-schedule"
+        ]
+      }
+    },
+    {
+      "name": {
+        "value": "RBC InvestEase",
+        "source_url": "https://www.rbcinvestease.com/",
+        "checked_on": "2026-10-22"
+      },
+      "status": {
+        "value": "Active.",
+        "source_url": "https://www.rbcinvestease.com/",
+        "checked_on": "2026-10-22"
+      },
+      "management_fee": {
+        "value": "0.50% + tax, flat (no tiers), billed monthly.",
+        "source_url": "https://www.rbcinvestease.com/pricing-fees.html",
+        "checked_on": "2026-10-22"
+      },
+      "etf_mer_range": {
+        "value": "Core portfolios 0.12% to 0.20%; Responsible Investing portfolios 0.17% to 0.25% (weighted averages).",
+        "source_url": "https://www.rbcinvestease.com/pricing-fees.html",
+        "checked_on": "2026-10-22"
+      },
+      "minimum": {
+        "value": "Money is invested once the balance reaches $100; balances under $1,500 may go to a Starter Portfolio.",
+        "source_url": "https://www.rbcinvestease.com/",
+        "checked_on": "2026-10-22"
+      },
+      "accounts_offered": {
+        "value": "TFSA, FHSA, RRSP, non-registered.",
+        "source_url": "https://www.rbcinvestease.com/",
+        "checked_on": "2026-10-22"
+      },
+      "portfolio_types": {
+        "value": "Six ETF portfolios (Short-Term Bond to Aggressive Growth), each in Core and Responsible Investing versions. Halal not mentioned.",
+        "source_url": "https://www.rbcinvestease.com/",
+        "checked_on": "2026-10-22"
+      },
+      "tax_loss_harvesting": {
+        "value": "unknown (not mentioned)",
+        "source_url": "https://www.rbcinvestease.com/pricing-fees.html",
+        "checked_on": "2026-10-22"
+      },
+      "human_advice": {
+        "value": "Yes. Portfolio Advisors by phone or email.",
+        "source_url": "https://www.rbcinvestease.com/",
+        "checked_on": "2026-10-22"
+      },
+      "other_fees_notes": {
+        "value": "Transfer out to a non-RBC account: $150 + tax. Reimburses up to $200 of transfer fees on transfers of $15,000+.",
+        "source_url": "https://www.rbcinvestease.com/pricing-fees.html",
+        "checked_on": "2026-10-22"
+      }
+    },
+    {
+      "name": {
+        "value": "BMO SmartFolio",
+        "source_url": "https://www.bmo.com/en-ca/main/personal/investments/direct-investing/smartfolio/",
+        "checked_on": "2026-10-22"
+      },
+      "status": {
+        "value": "Active.",
+        "source_url": "https://www.bmo.com/en-ca/main/personal/investments/direct-investing/smartfolio/",
+        "checked_on": "2026-10-22"
+      },
+      "management_fee": {
+        "value": "Advisory fee 0.4% to 0.7%, falling as assets grow (breakpoints not shown); charged quarterly.",
+        "source_url": "https://www.bmo.com/en-ca/main/personal/investments/direct-investing/smartfolio/",
+        "checked_on": "2026-10-22"
+      },
+      "etf_mer_range": {
+        "value": "unknown ('low-cost ETFs'; no figure)",
+        "source_url": "https://www.bmo.com/en-ca/main/personal/investments/direct-investing/smartfolio/",
+        "checked_on": "2026-10-22"
+      },
+      "minimum": {
+        "value": "unknown (the $1,000+ figure on the page is for a different service)",
+        "source_url": "https://www.bmo.com/en-ca/main/personal/investments/direct-investing/smartfolio/",
+        "checked_on": "2026-10-22"
+      },
+      "accounts_offered": {
+        "value": "TFSA, RRSP, RESP, RRIF, individual, joint.",
+        "source_url": "https://www.bmo.com/en-ca/main/personal/investments/direct-investing/smartfolio/",
+        "checked_on": "2026-10-22"
+      },
+      "portfolio_types": {
+        "value": "Model portfolio matched to goals and risk tolerance. ESG and halal not mentioned.",
+        "source_url": "https://www.bmo.com/en-ca/main/personal/investments/direct-investing/smartfolio/",
+        "checked_on": "2026-10-22"
+      },
+      "tax_loss_harvesting": {
+        "value": "unknown (not mentioned)",
+        "source_url": "https://www.bmo.com/en-ca/main/personal/investments/direct-investing/smartfolio/",
+        "checked_on": "2026-10-22"
+      },
+      "human_advice": {
+        "value": "Yes. Dedicated advisors manage the portfolio; chat Mon to Fri 8am to 8pm ET; phone 1-844-895-3721 Mon to Fri 8am to 6pm ET.",
+        "source_url": "https://www.bmo.com/en-ca/main/personal/investments/direct-investing/smartfolio/",
+        "checked_on": "2026-10-22"
+      },
+      "other_fees_notes": {
+        "value": "Transfers in must be in cash.",
+        "source_url": "https://www.bmo.com/en-ca/main/personal/investments/direct-investing/smartfolio/",
+        "checked_on": "2026-10-22"
+      }
+    },
+    {
+      "name": {
+        "value": "TD Automated Investing",
+        "source_url": "https://www.td.com/ca/en/investing",
+        "checked_on": "2026-10-22"
+      },
+      "status": {
+        "value": "UNVERIFIED, possibly discontinued. It is not listed among TD's investing services on td.com/ca/en/investing (which lists Direct Investing, TD Easy Trade, TD Wealth and Invest with a Personal Banker), and the product URLs tried returned errors.",
+        "source_url": "https://www.td.com/ca/en/investing",
+        "checked_on": "2026-10-22"
+      },
+      "management_fee": {
+        "value": "unknown",
+        "source_url": "https://www.td.com/ca/en/investing",
+        "checked_on": "2026-10-22"
+      },
+      "etf_mer_range": {
+        "value": "unknown",
+        "source_url": "https://www.td.com/ca/en/investing",
+        "checked_on": "2026-10-22"
+      },
+      "minimum": {
+        "value": "unknown",
+        "source_url": "https://www.td.com/ca/en/investing",
+        "checked_on": "2026-10-22"
+      },
+      "accounts_offered": {
+        "value": "unknown",
+        "source_url": "https://www.td.com/ca/en/investing",
+        "checked_on": "2026-10-22"
+      },
+      "portfolio_types": {
+        "value": "unknown",
+        "source_url": "https://www.td.com/ca/en/investing",
+        "checked_on": "2026-10-22"
+      },
+      "tax_loss_harvesting": {
+        "value": "unknown",
+        "source_url": "https://www.td.com/ca/en/investing",
+        "checked_on": "2026-10-22"
+      },
+      "human_advice": {
+        "value": "unknown",
+        "source_url": "https://www.td.com/ca/en/investing",
+        "checked_on": "2026-10-22"
+      },
+      "other_fees_notes": {
+        "value": "Confirm with TD before publishing any TD robo listing.",
+        "source_url": "https://www.td.com/ca/en/investing",
+        "checked_on": "2026-10-22"
+      }
+    },
+    {
+      "name": {
+        "value": "Nest Wealth",
+        "source_url": "https://www.nestwealth.com/",
+        "checked_on": "2026-10-22"
+      },
+      "status": {
+        "value": "UNVERIFIED. The website shows 'temporarily unavailable while we complete some updates' but still links 'Investor - Nest Wealth Direct' (login), 'Professional - Nest Wealth Plus' and 'Sign Up and Get Invested' (join.nestwealth.com, which returned no readable content). Whether retail clients are still accepted could not be confirmed. Nest Wealth is not on CIPF's member list (it is a portfolio manager; custodian not confirmed).",
+        "source_url": "https://www.nestwealth.com/",
+        "checked_on": "2026-10-22",
+        "additional_sources": [
+          "https://www.cipf.ca/member-directory/current-cipf-members"
+        ]
+      },
+      "management_fee": {
+        "value": "unknown",
+        "source_url": "https://www.nestwealth.com/",
+        "checked_on": "2026-10-22"
+      },
+      "etf_mer_range": {
+        "value": "unknown",
+        "source_url": "https://www.nestwealth.com/",
+        "checked_on": "2026-10-22"
+      },
+      "minimum": {
+        "value": "unknown",
+        "source_url": "https://www.nestwealth.com/",
+        "checked_on": "2026-10-22"
+      },
+      "accounts_offered": {
+        "value": "unknown",
+        "source_url": "https://www.nestwealth.com/",
+        "checked_on": "2026-10-22"
+      },
+      "portfolio_types": {
+        "value": "unknown",
+        "source_url": "https://www.nestwealth.com/",
+        "checked_on": "2026-10-22"
+      },
+      "tax_loss_harvesting": {
+        "value": "unknown",
+        "source_url": "https://www.nestwealth.com/",
+        "checked_on": "2026-10-22"
+      },
+      "human_advice": {
+        "value": "unknown",
+        "source_url": "https://www.nestwealth.com/",
+        "checked_on": "2026-10-22"
+      },
+      "other_fees_notes": {
+        "value": "Do not list as accepting retail clients until confirmed.",
+        "source_url": "https://www.nestwealth.com/",
+        "checked_on": "2026-10-22"
+      }
+    },
+    {
+      "name": {
+        "value": "Qtrade Guided Portfolios",
+        "source_url": "https://www.qtrade.ca/en/investor.html",
+        "checked_on": "2026-10-22"
+      },
+      "status": {
+        "value": "UNVERIFIED, possibly discontinued or renamed. Not found on the qtrade.ca investor homepage or account pages (the homepage instead mentions a 'Portfolio Creator' ETF tool), and guided-portfolio URLs returned errors.",
+        "source_url": "https://www.qtrade.ca/en/investor.html",
+        "checked_on": "2026-10-22",
+        "additional_sources": [
+          "https://www.qtrade.ca/en/investor/accounts.html"
+        ]
+      },
+      "management_fee": {
+        "value": "unknown",
+        "source_url": "https://www.qtrade.ca/en/investor.html",
+        "checked_on": "2026-10-22"
+      },
+      "etf_mer_range": {
+        "value": "unknown",
+        "source_url": "https://www.qtrade.ca/en/investor.html",
+        "checked_on": "2026-10-22"
+      },
+      "minimum": {
+        "value": "unknown",
+        "source_url": "https://www.qtrade.ca/en/investor.html",
+        "checked_on": "2026-10-22"
+      },
+      "accounts_offered": {
+        "value": "unknown",
+        "source_url": "https://www.qtrade.ca/en/investor.html",
+        "checked_on": "2026-10-22"
+      },
+      "portfolio_types": {
+        "value": "unknown",
+        "source_url": "https://www.qtrade.ca/en/investor.html",
+        "checked_on": "2026-10-22"
+      },
+      "tax_loss_harvesting": {
+        "value": "unknown",
+        "source_url": "https://www.qtrade.ca/en/investor.html",
+        "checked_on": "2026-10-22"
+      },
+      "human_advice": {
+        "value": "unknown",
+        "source_url": "https://www.qtrade.ca/en/investor.html",
+        "checked_on": "2026-10-22"
+      },
+      "other_fees_notes": {
+        "value": "Confirm with Qtrade/Aviso before publishing.",
+        "source_url": "https://www.qtrade.ca/en/investor.html",
+        "checked_on": "2026-10-22"
+      }
+    }
+  ],
+  "crypto": [
+    {
+      "name": {
+        "value": "Wealthsimple Crypto",
+        "source_url": "https://www.wealthsimple.com/en-ca/crypto",
+        "checked_on": "2026-10-22"
+      },
+      "csa_listed_entity": {
+        "value": "Wealthsimple Investments Inc. (on the CSA list; the Wealthsimple Digital Assets Inc. entry is marked expired January 1, 2024).",
+        "source_url": "https://www.securities-administrators.ca/crypto-trading-platforms-authorized-to-do-business-with-canadians",
+        "checked_on": "2026-10-22"
+      },
+      "trading_fee_or_spread": {
+        "value": "Flat 0.5% fee plus a spread (limit orders have no spread). $1 surcharge on orders under $100. Recurring/automated crypto buys have no fee or spread. USD trades add a 1.5% FX fee.",
+        "source_url": "https://www.wealthsimple.com/en-ca/crypto",
+        "checked_on": "2026-10-22",
+        "additional_sources": [
+          "https://www.wealthsimple.com/pricing"
+        ]
+      },
+      "number_of_coins": {
+        "value": "170+.",
+        "source_url": "https://www.wealthsimple.com/en-ca/crypto",
+        "checked_on": "2026-10-22"
+      },
+      "staking": {
+        "value": "Yes: ETH, SOL, ADA, DOT, 'up to 5%' per year (up to 3.8% Core/Premium, up to 5% Generation); Wealthsimple keeps a percentage of rewards.",
+        "source_url": "https://www.wealthsimple.com/en-ca/crypto",
+        "checked_on": "2026-10-22",
+        "additional_sources": [
+          "https://www.wealthsimple.com/pricing"
+        ]
+      },
+      "cad_funding_methods_and_fees": {
+        "value": "EFT deposits $0; instant deposits up to $50,000 (Core) or $250,000 (Premium/Generation); no account minimum.",
+        "source_url": "https://www.wealthsimple.com/en-ca/crypto",
+        "checked_on": "2026-10-22",
+        "additional_sources": [
+          "https://www.wealthsimple.com/legal/fees/trade"
+        ]
+      },
+      "crypto_withdrawals": {
+        "value": "Yes. Crypto transfers in and out supported; coin-to-coin swaps (beta); DEX trading.",
+        "source_url": "https://www.wealthsimple.com/en-ca/crypto",
+        "checked_on": "2026-10-22"
+      },
+      "custody_insurance": {
+        "value": "Most coins are in offline cold storage with regulated custodians, each said to carry $75M+ insurance; the remainder is in hot wallets with Coincover recovery. Assets are held in trust.",
+        "source_url": "https://www.wealthsimple.com/en-ca/crypto",
+        "checked_on": "2026-10-22"
+      },
+      "ciro_cipf": {
+        "value": "Offered by Wealthsimple Investments Inc., a CIRO member. Crypto is NOT CIPF-protected.",
+        "source_url": "https://www.wealthsimple.com/en-ca/crypto",
+        "checked_on": "2026-10-22"
+      }
+    },
+    {
+      "name": {
+        "value": "Kraken",
+        "source_url": "https://www.kraken.com/en-ca",
+        "checked_on": "2026-10-22"
+      },
+      "csa_listed_entity": {
+        "value": "Payward Canada Inc. (on the CSA list).",
+        "source_url": "https://www.securities-administrators.ca/crypto-trading-platforms-authorized-to-do-business-with-canadians",
+        "checked_on": "2026-10-22"
+      },
+      "trading_fee_or_spread": {
+        "value": "Kraken Pro spot, lowest-volume tier: 0.40% maker / 0.80% taker. App instant and recurring buy/sell: 1%; custom orders 1.5%; spread included in price. Kraken+ members: zero trading fee on up to US$10,000/month.",
+        "source_url": "https://www.kraken.com/en-ca/features/fee-schedule",
+        "checked_on": "2026-10-22"
+      },
+      "number_of_coins": {
+        "value": "unknown (Kraken Pro cites '600+ crypto pairs', a pair count)",
+        "source_url": "https://www.kraken.com/en-ca",
+        "checked_on": "2026-10-22"
+      },
+      "staking": {
+        "value": "Staking Rewards are listed with 'Geographic restrictions apply'; availability in Canada is unconfirmed.",
+        "source_url": "https://www.kraken.com/en-ca",
+        "checked_on": "2026-10-22"
+      },
+      "cad_funding_methods_and_fees": {
+        "value": "unknown. Fees depend on method and currency; CAD fee amounts are in support articles that were not accessible.",
+        "source_url": "https://www.kraken.com/en-ca/features/fee-schedule",
+        "checked_on": "2026-10-22"
+      },
+      "crypto_withdrawals": {
+        "value": "unknown (not on pages checked)",
+        "source_url": "https://www.kraken.com/en-ca",
+        "checked_on": "2026-10-22"
+      },
+      "custody_insurance": {
+        "value": "unknown (not on pages checked)",
+        "source_url": "https://www.kraken.com/en-ca",
+        "checked_on": "2026-10-22"
+      },
+      "ciro_cipf": {
+        "value": "Restricted dealer with the OSC and other provincial and territorial regulators; FINTRAC MSB. Not on CIPF's list.",
+        "source_url": "https://www.kraken.com/en-ca",
+        "checked_on": "2026-10-22",
+        "additional_sources": [
+          "https://www.cipf.ca/member-directory/current-cipf-members"
+        ]
+      }
+    },
+    {
+      "name": {
+        "value": "Newton",
+        "source_url": "https://www.newton.co/",
+        "checked_on": "2026-10-22"
+      },
+      "csa_listed_entity": {
+        "value": "Newton Crypto Ltd. (on the CSA list).",
+        "source_url": "https://www.securities-administrators.ca/crypto-trading-platforms-authorized-to-do-business-with-canadians",
+        "checked_on": "2026-10-22"
+      },
+      "trading_fee_or_spread": {
+        "value": "Tier 1 (BTC, ETH, USDC): 1.00% to 1.15%. Tier 2 (LTC, SOL, XLM): 1.25% to 1.45%. Tier 3 (all others): 1.50% to 1.60%. Signature Program 'as low as 0.05%'. No separate spread disclosed.",
+        "source_url": "https://www.newton.co/fees",
+        "checked_on": "2026-10-22"
+      },
+      "number_of_coins": {
+        "value": "50+.",
+        "source_url": "https://www.newton.co/",
+        "checked_on": "2026-10-22"
+      },
+      "staking": {
+        "value": "Yes: ETH up to 1.5% APY, SOL up to 4.5%, ADA up to 2.2% ('and more'); Newton keeps a fee from rewards; lock-up during warm-up and cool-down.",
+        "source_url": "https://www.newton.co/staking",
+        "checked_on": "2026-10-22"
+      },
+      "cad_funding_methods_and_fees": {
+        "value": "E-transfer (free) and wire for large deposits; 'Zero fee funding options'. CAD withdrawal by e-transfer or direct bank deposit, no fee listed.",
+        "source_url": "https://www.newton.co/funding-and-withdrawals",
+        "checked_on": "2026-10-22",
+        "additional_sources": [
+          "https://www.newton.co/"
+        ]
+      },
+      "crypto_withdrawals": {
+        "value": "Yes. Fast lane $10 CAD + network fee; standard lane network fee only; free lane (slower). Newton covers up to $5 of network fees on the first withdrawal each day.",
+        "source_url": "https://www.newton.co/funding-and-withdrawals",
+        "checked_on": "2026-10-22"
+      },
+      "custody_insurance": {
+        "value": "unknown ('Institutional-grade safeguards'; no detail)",
+        "source_url": "https://www.newton.co/",
+        "checked_on": "2026-10-22"
+      },
+      "ciro_cipf": {
+        "value": "Dealer member of CIRO and CIPF ('Newton Crypto Ltd.' is on CIPF's list). Crypto assets are NOT CIPF-protected.",
+        "source_url": "https://www.newton.co/fees",
+        "checked_on": "2026-10-22",
+        "additional_sources": [
+          "https://www.cipf.ca/member-directory/current-cipf-members"
+        ]
+      }
+    },
+    {
+      "name": {
+        "value": "Shakepay",
+        "source_url": "https://shakepay.com/",
+        "checked_on": "2026-10-22"
+      },
+      "csa_listed_entity": {
+        "value": "Shakepay Inc. (on the CSA list).",
+        "source_url": "https://www.securities-administrators.ca/crypto-trading-platforms-authorized-to-do-business-with-canadians",
+        "checked_on": "2026-10-22"
+      },
+      "trading_fee_or_spread": {
+        "value": "Commission-free; earns a spread (size not disclosed). No fee and no spread on bitcoin recurring buys.",
+        "source_url": "https://shakepay.com/fees",
+        "checked_on": "2026-10-22",
+        "additional_sources": [
+          "https://shakepay.com/"
+        ]
+      },
+      "number_of_coins": {
+        "value": "Bitcoin and Ethereum (USDC supported for funding and withdrawals, auto-converted to USD).",
+        "source_url": "https://shakepay.com/fees",
+        "checked_on": "2026-10-22",
+        "additional_sources": [
+          "https://shakepay.com/"
+        ]
+      },
+      "staking": {
+        "value": "Not mentioned (bitcoin rewards program instead).",
+        "source_url": "https://shakepay.com/",
+        "checked_on": "2026-10-22"
+      },
+      "cad_funding_methods_and_fees": {
+        "value": "Free: Interac e-Transfer ($5 to $10,000), wire ($10,000+), BTC/ETH/USDC deposits, Shakepay-a-friend. CAD withdrawals by e-Transfer or wire are free.",
+        "source_url": "https://shakepay.com/fees",
+        "checked_on": "2026-10-22"
+      },
+      "crypto_withdrawals": {
+        "value": "Yes (BTC, ETH, USDC). Normal speed (~12 hours) is free with Shakepay covering network fees; fast speed carries fees.",
+        "source_url": "https://shakepay.com/fees",
+        "checked_on": "2026-10-22"
+      },
+      "custody_insurance": {
+        "value": "Digital currencies are kept 'in secure, offline storage' and 'backed by insurance' (insurer and amount not stated).",
+        "source_url": "https://shakepay.com/",
+        "checked_on": "2026-10-22"
+      },
+      "ciro_cipf": {
+        "value": "CIRO member, registered as an investment dealer; 'Shakepay Inc.' is on CIPF's list. Shakepay says cash is CIPF-protected up to $1M; crypto coverage is not stated.",
+        "source_url": "https://shakepay.com/",
+        "checked_on": "2026-10-22",
+        "additional_sources": [
+          "https://www.cipf.ca/member-directory/current-cipf-members"
+        ]
+      }
+    },
+    {
+      "name": {
+        "value": "NDAX",
+        "source_url": "https://ndax.io/",
+        "checked_on": "2026-10-22"
+      },
+      "csa_listed_entity": {
+        "value": "Ndax Canada Inc. (on the CSA list; exchange and clearing relief noted from ASC and BCSC).",
+        "source_url": "https://www.securities-administrators.ca/crypto-trading-platforms-authorized-to-do-business-with-canadians",
+        "checked_on": "2026-10-22"
+      },
+      "trading_fee_or_spread": {
+        "value": "Flat 0.20% on every buy and sell; no maker/taker split or volume tiers.",
+        "source_url": "https://ndax.io/fees",
+        "checked_on": "2026-10-22"
+      },
+      "number_of_coins": {
+        "value": "unknown (not stated)",
+        "source_url": "https://ndax.io/",
+        "checked_on": "2026-10-22"
+      },
+      "staking": {
+        "value": "Yes: staking and Auto-Earn ('up to 13% APY' for ETH and ADA); NDAX keeps a 20% administration fee on rewards.",
+        "source_url": "https://ndax.io/",
+        "checked_on": "2026-10-22",
+        "additional_sources": [
+          "https://ndax.io/fees"
+        ]
+      },
+      "cad_funding_methods_and_fees": {
+        "value": "Deposits: Interac e-Transfer free, wire free. Withdrawals: Interac e-Transfer $1.50 (max $10,000 per transaction); EFT/direct bank deposit $4.99.",
+        "source_url": "https://ndax.io/fees",
+        "checked_on": "2026-10-22"
+      },
+      "crypto_withdrawals": {
+        "value": "Yes. Flat per-asset network fees (example: 0.00005 BTC).",
+        "source_url": "https://ndax.io/fees",
+        "checked_on": "2026-10-22"
+      },
+      "custody_insurance": {
+        "value": "unknown (not stated)",
+        "source_url": "https://ndax.io/",
+        "checked_on": "2026-10-22"
+      },
+      "ciro_cipf": {
+        "value": "'NDAX Canada Inc.' is on CIPF's member list; no CIRO/CIPF statement on the NDAX pages checked. Crypto coverage is unconfirmed.",
+        "source_url": "https://www.cipf.ca/member-directory/current-cipf-members",
+        "checked_on": "2026-10-22"
+      }
+    },
+    {
+      "name": {
+        "value": "Coinbase Canada",
+        "source_url": "https://www.coinbase.com/en-ca",
+        "checked_on": "2026-10-22"
+      },
+      "csa_listed_entity": {
+        "value": "Coinbase Canada Inc. (on the CSA list).",
+        "source_url": "https://www.securities-administrators.ca/crypto-trading-platforms-authorized-to-do-business-with-canadians",
+        "checked_on": "2026-10-22"
+      },
+      "trading_fee_or_spread": {
+        "value": "Spread included in quoted price (not stated); Coinbase fee varies by payment method and order size, and 'may' be 1.875% depending on payment method; simple limit orders 1%. Coinbase Advanced has no spread (maker/taker schedule not checked).",
+        "source_url": "https://help.coinbase.com/en-ca/coinbase/trading-and-funding/pricing-and-fees/fees",
+        "checked_on": "2026-10-22"
+      },
+      "number_of_coins": {
+        "value": "200+ assets.",
+        "source_url": "https://www.coinbase.com/en-ca",
+        "checked_on": "2026-10-22"
+      },
+      "staking": {
+        "value": "Yes: 'Earn up to 10% APY' (eligible assets not stated).",
+        "source_url": "https://www.coinbase.com/en-ca",
+        "checked_on": "2026-10-22"
+      },
+      "cad_funding_methods_and_fees": {
+        "value": "Free CAD deposits by Interac e-Transfer and EFT; also PayPal and debit/credit card purchases (fees vary by method).",
+        "source_url": "https://www.coinbase.com/en-ca",
+        "checked_on": "2026-10-22",
+        "additional_sources": [
+          "https://help.coinbase.com/en-ca/coinbase/trading-and-funding/pricing-and-fees/fees"
+        ]
+      },
+      "crypto_withdrawals": {
+        "value": "Yes. Network fee estimate on sends; Lightning 0.2%; USDT 0.01% (max 20 USDT) + network fee.",
+        "source_url": "https://help.coinbase.com/en-ca/coinbase/trading-and-funding/pricing-and-fees/fees",
+        "checked_on": "2026-10-22"
+      },
+      "custody_insurance": {
+        "value": "unknown ('Your crypto is your crypto'; no insurance details)",
+        "source_url": "https://www.coinbase.com/en-ca",
+        "checked_on": "2026-10-22"
+      },
+      "ciro_cipf": {
+        "value": "Restricted dealer in all provinces and territories; FINTRAC MSB. Not on CIPF's list.",
+        "source_url": "https://www.coinbase.com/en-ca",
+        "checked_on": "2026-10-22",
+        "additional_sources": [
+          "https://www.cipf.ca/member-directory/current-cipf-members"
+        ]
+      }
+    },
+    {
+      "name": {
+        "value": "Crypto.com",
+        "source_url": "https://crypto.com/ca",
+        "checked_on": "2026-10-22"
+      },
+      "csa_listed_entity": {
+        "value": "Foris DAX CAN ULC (on the CSA list).",
+        "source_url": "https://www.securities-administrators.ca/crypto-trading-platforms-authorized-to-do-business-with-canadians",
+        "checked_on": "2026-10-22"
+      },
+      "trading_fee_or_spread": {
+        "value": "App: zero trading fees up to Level Up tier limits (Level Up from $6.99/month), other fees and spread may apply. Advanced (Exchange): maker/taker 'as low as' 0.08% / 0.18% (base tier not stated).",
+        "source_url": "https://crypto.com/ca",
+        "checked_on": "2026-10-22"
+      },
+      "number_of_coins": {
+        "value": "400+ available with CAD.",
+        "source_url": "https://crypto.com/ca",
+        "checked_on": "2026-10-22"
+      },
+      "staking": {
+        "value": "On-chain staking is offered; Canadian-eligible assets not listed.",
+        "source_url": "https://crypto.com/ca",
+        "checked_on": "2026-10-22"
+      },
+      "cad_funding_methods_and_fees": {
+        "value": "Interac e-Transfer and Apple/Google Pay; 'Zero-fee CAD deposit' (other fees and spread may apply).",
+        "source_url": "https://crypto.com/ca",
+        "checked_on": "2026-10-22"
+      },
+      "crypto_withdrawals": {
+        "value": "unknown (not described on the Canadian page)",
+        "source_url": "https://crypto.com/ca",
+        "checked_on": "2026-10-22"
+      },
+      "custody_insurance": {
+        "value": "unknown (security certification badges only; insurance not stated)",
+        "source_url": "https://crypto.com/ca",
+        "checked_on": "2026-10-22"
+      },
+      "ciro_cipf": {
+        "value": "Restricted dealer registered with the OSC and CSA; FINTRAC MSB. Not on CIPF's list.",
+        "source_url": "https://crypto.com/ca",
+        "checked_on": "2026-10-22",
+        "additional_sources": [
+          "https://www.cipf.ca/member-directory/current-cipf-members"
+        ]
+      }
+    },
+    {
+      "name": {
+        "value": "Netcoins",
+        "source_url": "https://netcoins.com/",
+        "checked_on": "2026-10-22"
+      },
+      "csa_listed_entity": {
+        "value": "Netcoins Inc. (on the CSA list).",
+        "source_url": "https://www.securities-administrators.ca/crypto-trading-platforms-authorized-to-do-business-with-canadians",
+        "checked_on": "2026-10-22"
+      },
+      "trading_fee_or_spread": {
+        "value": "'We do not charge any separate trading fees'; spread is built into the price (amount not stated).",
+        "source_url": "https://netcoins.com/fees",
+        "checked_on": "2026-10-22"
+      },
+      "number_of_coins": {
+        "value": "60+.",
+        "source_url": "https://netcoins.com/",
+        "checked_on": "2026-10-22"
+      },
+      "staking": {
+        "value": "Yes: ATOM 11% to 15% APR, SOL 11% to 15% APR, ETH 3% to 4% APR (daily payout).",
+        "source_url": "https://netcoins.com/",
+        "checked_on": "2026-10-22"
+      },
+      "cad_funding_methods_and_fees": {
+        "value": "Interac e-Transfer and crypto deposits free; bank wire free over $3,000. Interac withdrawals free; '$50 CAD processing fee applied for withdrawals under $25,000 CAD' (method unclear, likely wire).",
+        "source_url": "https://netcoins.com/fees",
+        "checked_on": "2026-10-22"
+      },
+      "crypto_withdrawals": {
+        "value": "Yes. Flat per-coin withdrawal fees (amounts not rendered on page).",
+        "source_url": "https://netcoins.com/fees",
+        "checked_on": "2026-10-22"
+      },
+      "custody_insurance": {
+        "value": "Fireblocks hot wallets and BitGo custody; insurance not mentioned.",
+        "source_url": "https://netcoins.com/",
+        "checked_on": "2026-10-22"
+      },
+      "ciro_cipf": {
+        "value": "Registered with the BCSC; FINTRAC MSB M15560893. Not on CIPF's list. Ownership statements conflict on the page (BIGG Digital Assets vs Surge Digital Inc.).",
+        "source_url": "https://netcoins.com/",
+        "checked_on": "2026-10-22",
+        "additional_sources": [
+          "https://www.cipf.ca/member-directory/current-cipf-members"
+        ]
+      }
+    },
+    {
+      "name": {
+        "value": "Robinhood Canada (crypto)",
+        "source_url": "https://robinhood.com/ca/en/",
+        "checked_on": "2026-10-22"
+      },
+      "csa_listed_entity": {
+        "value": "Coinsquare Capital Markets Ltd. (wholly owned subsidiary of Robinhood Markets, Inc.); the CSA list shows 'Coinsquare Capital Markets Limited'. Bitbuy Technologies Inc. is separately on the CSA list, but its link to Robinhood is not confirmed on pages fetched.",
+        "source_url": "https://robinhood.com/ca/en/",
+        "checked_on": "2026-10-22",
+        "additional_sources": [
+          "https://www.securities-administrators.ca/crypto-trading-platforms-authorized-to-do-business-with-canadians"
+        ]
+      },
+      "trading_fee_or_spread": {
+        "value": "unknown. It claims 'one of the lowest costs in Canada', and the fee schedule was not checked.",
+        "source_url": "https://robinhood.com/ca/en/",
+        "checked_on": "2026-10-22"
+      },
+      "number_of_coins": {
+        "value": "50+.",
+        "source_url": "https://robinhood.com/ca/en/",
+        "checked_on": "2026-10-22"
+      },
+      "staking": {
+        "value": "Not yet; ETH and SOL staking 'Coming soon'.",
+        "source_url": "https://robinhood.com/ca/en/",
+        "checked_on": "2026-10-22"
+      },
+      "cad_funding_methods_and_fees": {
+        "value": "unknown",
+        "source_url": "https://robinhood.com/ca/en/",
+        "checked_on": "2026-10-22"
+      },
+      "crypto_withdrawals": {
+        "value": "Yes. Transfers to and from external wallets with 'no Robinhood fees' (network fees may apply).",
+        "source_url": "https://robinhood.com/ca/en/",
+        "checked_on": "2026-10-22"
+      },
+      "custody_insurance": {
+        "value": "Assets 'held in trust with approved custodians'; insurance not stated.",
+        "source_url": "https://robinhood.com/ca/en/",
+        "checked_on": "2026-10-22"
+      },
+      "ciro_cipf": {
+        "value": "Coinsquare Capital Markets Ltd. is a CIRO dealer member and is on CIPF's list, but 'Crypto ... is not covered by CIPF insurance'.",
+        "source_url": "https://robinhood.com/ca/en/",
+        "checked_on": "2026-10-22",
+        "additional_sources": [
+          "https://www.cipf.ca/member-directory/current-cipf-members"
+        ]
+      }
+    }
+  ],
+  "tax_software": [
+    {
+      "name": {
+        "value": "Wealthsimple Tax",
+        "source_url": "https://www.wealthsimple.com/en-ca/tax",
+        "checked_on": "2026-10-22"
+      },
+      "price_tiers_2025_tax_year": {
+        "value": "Basic: pay what you want (including $0), up to 2 returns. Plus: $40 + tax (free for Premium clients), up to 8 returns, priority support and audit protection. Pro: $80 + tax (free for Generation clients), 9+ returns, year-round tax experts.",
+        "source_url": "https://www.wealthsimple.com/en-ca/tax",
+        "checked_on": "2026-10-22"
+      },
+      "free_tier_conditions": {
+        "value": "Basic can be $0 with 'no restrictions on income types or deductions'; limited to 2 returns.",
+        "source_url": "https://www.wealthsimple.com/en-ca/tax",
+        "checked_on": "2026-10-22"
+      },
+      "netfile_certified_2025": {
+        "value": "Yes. On CRA's NETFILE-certified list for 2025 (free; optional paid services; online). The site says it is certified by CRA and Revenu Quebec for 2023 to 2025.",
+        "source_url": "https://www.canada.ca/en/revenue-agency/services/e-services/e-services-individuals/netfile-overview/certified-software-netfile-program.html",
+        "checked_on": "2026-10-22",
+        "additional_sources": [
+          "https://www.wealthsimple.com/en-ca/tax"
+        ]
+      },
+      "quebec_support": {
+        "value": "Basic and Plus support Quebec returns; Pro does not (and Pro's live consultation is not available to Quebec residents).",
+        "source_url": "https://www.wealthsimple.com/en-ca/tax",
+        "checked_on": "2026-10-22"
+      },
+      "expert_help_options": {
+        "value": "Email support on all plans (priority on Plus and Pro); Pro includes a 30-minute live consultation with a tax expert (guaranteed only if booked before April 6, 2026) and year-round support.",
+        "source_url": "https://www.wealthsimple.com/en-ca/tax",
+        "checked_on": "2026-10-22"
+      },
+      "notes": {
+        "value": "Auto-fill imports slips from CRA and Revenu Quebec on all plans.",
+        "source_url": "https://www.wealthsimple.com/en-ca/tax",
+        "checked_on": "2026-10-22"
+      }
+    },
+    {
+      "name": {
+        "value": "TurboTax Canada",
+        "source_url": "https://turbotax.intuit.ca/",
+        "checked_on": "2026-10-22"
+      },
+      "price_tiers_2025_tax_year": {
+        "value": "TurboTax Free: $0. Paid lines: Do It Yourself, Expert Assist and Expert Full Service, each with four complexity-based prices. The pricing page publishes $30, $50, $70, $70, $100, $120, $150, $120, $165, $215 and $315, but the per-tier mapping is not machine-readable (UNVERIFIED mapping). A limited-time switch offer gives Expert Assist for $60. Full Service price rises after April 15.",
+        "source_url": "https://turbotax.intuit.ca/tax/pricing",
+        "checked_on": "2026-10-22",
+        "additional_sources": [
+          "https://turbotax.intuit.ca/"
+        ]
+      },
+      "free_tier_conditions": {
+        "value": "Simple returns only: limited income types and credits; excludes donations, medical expenses, investment and rental income, and self-employment.",
+        "source_url": "https://turbotax.intuit.ca/tax/pricing",
+        "checked_on": "2026-10-22",
+        "additional_sources": [
+          "https://turbotax.intuit.ca/"
+        ]
+      },
+      "netfile_certified_2025": {
+        "value": "Yes. 'All TurboTax software products for tax year 2025 are CRA NETFILE-certified', and TurboTax is on CRA's list.",
+        "source_url": "https://turbotax.intuit.ca/",
+        "checked_on": "2026-10-22",
+        "additional_sources": [
+          "https://www.canada.ca/en/revenue-agency/services/e-services/e-services-individuals/netfile-overview/certified-software-netfile-program.html"
+        ]
+      },
+      "quebec_support": {
+        "value": "Yes for Do It Yourself, Expert Assist and Desktop (both returns); Expert Full Service is not available in Quebec.",
+        "source_url": "https://turbotax.intuit.ca/",
+        "checked_on": "2026-10-22"
+      },
+      "expert_help_options": {
+        "value": "Expert Assist (unlimited questions plus final review); Expert Full Service (dedicated expert does the return).",
+        "source_url": "https://turbotax.intuit.ca/",
+        "checked_on": "2026-10-22"
+      },
+      "notes": {
+        "value": "Paid DIY: pay only when you file.",
+        "source_url": "https://turbotax.intuit.ca/tax/pricing",
+        "checked_on": "2026-10-22"
+      }
+    },
+    {
+      "name": {
+        "value": "H&R Block Canada",
+        "source_url": "https://www.hrblock.ca/",
+        "checked_on": "2026-10-22"
+      },
+      "price_tiers_2025_tax_year": {
+        "value": "Free $0; Deluxe $29.99; Premier $49.99; Self Employed $69.99 (per return). The tax year is NOT labelled on the page (FAQ mentions '2023 software'), so confirm these are 2025 prices.",
+        "source_url": "https://www.hrblock.ca/online-tax-software",
+        "checked_on": "2026-10-22"
+      },
+      "free_tier_conditions": {
+        "value": "'Free for returns that qualify'; 'ideal for straightforward returns with T4 income and standard deductions'.",
+        "source_url": "https://www.hrblock.ca/online-tax-software",
+        "checked_on": "2026-10-22"
+      },
+      "netfile_certified_2025": {
+        "value": "Yes. On CRA's 2025 list as 'H&R Block Tax Software Free' (paid, with free offerings based on tax situation; online).",
+        "source_url": "https://www.canada.ca/en/revenue-agency/services/e-services/e-services-individuals/netfile-overview/certified-software-netfile-program.html",
+        "checked_on": "2026-10-22",
+        "additional_sources": [
+          "https://www.hrblock.ca/online-tax-software"
+        ]
+      },
+      "quebec_support": {
+        "value": "Yes. Imports slips from Revenu Quebec and files electronically with Revenu Quebec.",
+        "source_url": "https://www.hrblock.ca/online-tax-software",
+        "checked_on": "2026-10-22"
+      },
+      "expert_help_options": {
+        "value": "Purchasable Expert Help add-on (price not shown); Audit Protection; in-office, drop-off and remote tax-expert services.",
+        "source_url": "https://www.hrblock.ca/online-tax-software",
+        "checked_on": "2026-10-22",
+        "additional_sources": [
+          "https://www.hrblock.ca/"
+        ]
+      },
+      "notes": {
+        "value": "Instant Refund applies only to the federal portion for Quebec returns.",
+        "source_url": "https://www.hrblock.ca/",
+        "checked_on": "2026-10-22"
+      }
+    },
+    {
+      "name": {
+        "value": "UFile",
+        "source_url": "https://www.ufile.ca/",
+        "checked_on": "2026-10-22"
+      },
+      "price_tiers_2025_tax_year": {
+        "value": "UFile ONLINE 'starting at $20.95'; UFile PREMIUM 'starting at $32.95' (adds priority email, phone and chat support). Per-return vs family basis and the tax-year label are not stated. Windows prices not shown.",
+        "source_url": "https://www.ufile.ca/products/ufile-online-or-premium",
+        "checked_on": "2026-10-22"
+      },
+      "free_tier_conditions": {
+        "value": "Free for: post-secondary students (code CFS1981); simple returns with only one T4 or government pension (OAS/CPP/QPP) and standard credits; first-time filers; total family income under $20,000.",
+        "source_url": "https://www.ufile.ca/tips-and-tools/file-for-free",
+        "checked_on": "2026-10-22"
+      },
+      "netfile_certified_2025": {
+        "value": "Yes. On CRA's 2025 list (paid, with free offerings; online and computer download).",
+        "source_url": "https://www.canada.ca/en/revenue-agency/services/e-services/e-services-individuals/netfile-overview/certified-software-netfile-program.html",
+        "checked_on": "2026-10-22",
+        "additional_sources": [
+          "https://www.ufile.ca/"
+        ]
+      },
+      "quebec_support": {
+        "value": "Files electronically with Revenu Quebec; ImpotExpert is the Quebec/French brand (details not verified).",
+        "source_url": "https://www.ufile.ca/",
+        "checked_on": "2026-10-22"
+      },
+      "expert_help_options": {
+        "value": "Free telephone support; Help Centre; 'Ask UFile'. No paid expert review listed.",
+        "source_url": "https://www.ufile.ca/",
+        "checked_on": "2026-10-22"
+      },
+      "notes": {
+        "value": "Pay only when ready to file.",
+        "source_url": "https://www.ufile.ca/tips-and-tools/file-for-free",
+        "checked_on": "2026-10-22"
+      }
+    },
+    {
+      "name": {
+        "value": "StudioTax",
+        "source_url": "https://www.canada.ca/en/revenue-agency/services/e-services/e-services-individuals/netfile-overview/certified-software-netfile-program.html",
+        "checked_on": "2026-10-22"
+      },
+      "price_tiers_2025_tax_year": {
+        "value": "Per CRA's 2025 list: free mobile app; paid computer download; free offerings based on tax situation. Exact desktop price unknown (the provider page fetched describes StudioTax 2015 and is outdated).",
+        "source_url": "https://www.canada.ca/en/revenue-agency/services/e-services/e-services-individuals/netfile-overview/certified-software-netfile-program.html",
+        "checked_on": "2026-10-22",
+        "additional_sources": [
+          "https://www.studiotax.com/en/"
+        ]
+      },
+      "free_tier_conditions": {
+        "value": "unknown for 2025 beyond 'free (mobile app)' per CRA.",
+        "source_url": "https://www.canada.ca/en/revenue-agency/services/e-services/e-services-individuals/netfile-overview/certified-software-netfile-program.html",
+        "checked_on": "2026-10-22"
+      },
+      "netfile_certified_2025": {
+        "value": "Yes. On CRA's 2025 NETFILE-certified list (computer download and mobile app).",
+        "source_url": "https://www.canada.ca/en/revenue-agency/services/e-services/e-services-individuals/netfile-overview/certified-software-netfile-program.html",
+        "checked_on": "2026-10-22"
+      },
+      "quebec_support": {
+        "value": "unknown for 2025 (the outdated 2015 page said Windows supported Quebec and Mac did not).",
+        "source_url": "https://www.studiotax.com/en/",
+        "checked_on": "2026-10-22"
+      },
+      "expert_help_options": {
+        "value": "None offered (per the provider page).",
+        "source_url": "https://www.studiotax.com/en/",
+        "checked_on": "2026-10-22"
+      },
+      "notes": {
+        "value": "The pricing model appears to have changed from donation-ware; verify before publishing.",
+        "source_url": "https://www.canada.ca/en/revenue-agency/services/e-services/e-services-individuals/netfile-overview/certified-software-netfile-program.html",
+        "checked_on": "2026-10-22"
+      }
+    },
+    {
+      "name": {
+        "value": "CloudTax",
+        "source_url": "https://www.cloudtax.ca/",
+        "checked_on": "2026-10-22"
+      },
+      "price_tiers_2025_tax_year": {
+        "value": "Free: $0 / pay what you want, up to 2 returns. Plus: $39 per account. Review & File: $49 / $99 / $149 per return. Done For You: $69 / $149 / $249 per return. The page has no 2025 label (tax-year selector shows 2018 to 2023).",
+        "source_url": "https://www.cloudtax.ca/pricing",
+        "checked_on": "2026-10-22"
+      },
+      "free_tier_conditions": {
+        "value": "'Completely free tax filing', up to 2 returns.",
+        "source_url": "https://www.cloudtax.ca/pricing",
+        "checked_on": "2026-10-22",
+        "additional_sources": [
+          "https://www.cloudtax.ca/"
+        ]
+      },
+      "netfile_certified_2025": {
+        "value": "Yes. On CRA's 2025 list (free with optional paid services; online and mobile app).",
+        "source_url": "https://www.canada.ca/en/revenue-agency/services/e-services/e-services-individuals/netfile-overview/certified-software-netfile-program.html",
+        "checked_on": "2026-10-22",
+        "additional_sources": [
+          "https://www.cloudtax.ca/"
+        ]
+      },
+      "quebec_support": {
+        "value": "unknown (not mentioned)",
+        "source_url": "https://www.cloudtax.ca/pricing",
+        "checked_on": "2026-10-22"
+      },
+      "expert_help_options": {
+        "value": "Plus: live chat with a tax professional; Review & File; Done For You (expert prepares the return).",
+        "source_url": "https://www.cloudtax.ca/pricing",
+        "checked_on": "2026-10-22",
+        "additional_sources": [
+          "https://www.cloudtax.ca/"
+        ]
+      },
+      "notes": {
+        "value": "The Plus return limit conflicts on the page (20 vs unlimited).",
+        "source_url": "https://www.cloudtax.ca/pricing",
+        "checked_on": "2026-10-22"
+      }
+    },
+    {
+      "name": {
+        "value": "GenuTax",
+        "source_url": "https://www.genutax.ca/",
+        "checked_on": "2026-10-22"
+      },
+      "price_tiers_2025_tax_year": {
+        "value": "Free ('GenuTax Standard software is completely free'; donations optional).",
+        "source_url": "https://www.genutax.ca/",
+        "checked_on": "2026-10-22"
+      },
+      "free_tier_conditions": {
+        "value": "Free for all users.",
+        "source_url": "https://www.genutax.ca/",
+        "checked_on": "2026-10-22"
+      },
+      "netfile_certified_2025": {
+        "value": "Yes. 'GenuTax Standard' is on CRA's 2025 list (free, computer download). The provider page is stale and still says certification had not yet been obtained.",
+        "source_url": "https://www.canada.ca/en/revenue-agency/services/e-services/e-services-individuals/netfile-overview/certified-software-netfile-program.html",
+        "checked_on": "2026-10-22",
+        "additional_sources": [
+          "https://www.genutax.ca/"
+        ]
+      },
+      "quebec_support": {
+        "value": "unknown (not mentioned)",
+        "source_url": "https://www.genutax.ca/",
+        "checked_on": "2026-10-22"
+      },
+      "expert_help_options": {
+        "value": "None mentioned.",
+        "source_url": "https://www.genutax.ca/",
+        "checked_on": "2026-10-22"
+      },
+      "notes": {
+        "value": "The 2025 update was scheduled for download by February 23, 2026.",
+        "source_url": "https://www.genutax.ca/",
+        "checked_on": "2026-10-22"
+      }
+    }
+  ]
+}
