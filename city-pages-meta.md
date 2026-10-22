@@ -221,3 +221,7 @@
 ## /compare/vs-ownr/ (page 10538, draft created 2026-10-22, meta set by connector)
 - Meta title: Open Corporation for $35 vs Ownr: Price Compared
 - Meta description: We charge $35.00, HST included. Ownr's own blog lists $499 federal and $599 Ontario, plus tax. Government fees separate. A CPA is accountable after.
+
+## /lawdepot-vs-open-corporation-for-35/ (page 10542, draft created 2026-10-22, meta set by connector)
+- Meta title: Open Corporation for $35 vs LawDepot: Cost Compared
+- Meta description: We charge $35.00, HST included, government fees at cost. LawDepot sells legal templates from $131.88 a year. A CPA firm is accountable after filing.

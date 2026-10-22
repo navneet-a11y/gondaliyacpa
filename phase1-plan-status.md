@@ -167,7 +167,7 @@ Checked against the live WordPress site on 14 October 2026, updated 16 October 2
 | /compare/sole-proprietorship-vs-corporation/ | P1 | Built (different URL) | /sole-proprietorship-vs-corporation/ |
 | /compare/federal-vs-provincial-incorporation/ | P1 | Not built |  |
 | /compare/corporation-centre-alternative/ | P2 | Built (different URL) | /corporation-centre-vs-open-corporation-for-35/ |
-| /compare/lawdepot-alternative/ | P2 | Not built |  |
+| /compare/lawdepot-alternative/ | P2 | Draft (page 10542, different URL) | /lawdepot-vs-open-corporation-for-35/ |
 | /compare/corporation-vs-partnership/ | P2 | Built (different URL) | /corporation-vs-partnership/ |
 | /compare/ontario-vs-alberta-incorporation/ | P2 | Built (different URL) | /compare/ontario-vs-alberta-vs-british-columbia-incorporation/ |
 | /compare/ontario-vs-british-columbia-incorporation/ | P2 | Built (different URL) | /compare/ontario-vs-alberta-vs-british-columbia-incorporation/ |
