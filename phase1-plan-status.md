@@ -13,11 +13,11 @@ Checked against the live WordPress site on 14 October 2026, updated 16 October 2
 | Industries | 34 | 34 | 0 | 0 |
 | Pricing | 3 | 3 | 0 | 0 |
 | Compare | 14 | 14 | 0 | 0 |
-| Guides | 34 | 32 | 0 | 2 |
+| Guides | 34 | 34 | 0 | 0 |
 | Blog | 13 | 4 | 0 | 9 |
 | About, Team, Reviews, Contact and Legal | 24 | 21 | 0 | 3 |
 | French Quebec | 10 | 0 | 0 | 10 |
-| **Total** | **201** | **159** | **9** | **33** |
+| **Total** | **201** | **161** | **9** | **31** |
 
 ## Home
 
@@ -191,8 +191,8 @@ Checked against the live WordPress site on 14 October 2026, updated 16 October 2
 | /guides/fiscal-year-end-selection/ | P2 | Built (different URL) | /guides/fiscal-year-end/ |
 | /guides/isc-register-requirements/ | P2 | Built (different URL) | /guides/individuals-with-significant-control/ |
 | /guides/business-bank-account-new-corporation/ | P2 | Built (different URL) | /guides/business-bank-account/ |
-| /guides/us-sales-and-canadian-corporations/ | P2 | Draft (page 10556) | /guides/us-sales-and-canadian-corporations/ |
-| /guides/dissolving-a-corporation/ | P3 | Draft (page 10557) | /guides/dissolving-a-corporation/ |
+| /guides/us-sales-and-canadian-corporations/ | P2 | Built | /guides/us-sales-and-canadian-corporations/ |
+| /guides/dissolving-a-corporation/ | P3 | Built | /guides/dissolving-a-corporation/ |
 | /guides/ | P1 | Built | /guides/ |
 | /guides/how-to-incorporate-in-canada/ | P1 | Built | /guides/how-to-incorporate-in-canada/ |
 | /guides/cost-to-incorporate-in-canada/ | P1 | Built | /guides/cost-to-incorporate-in-canada/ |
