@@ -165,7 +165,7 @@ Checked against the live WordPress site on 14 October 2026, updated 16 October 2
 | /compare/diy-ontario-business-registry/ | P1 | Built (different URL) | /diy-ontario-business-registry-vs-open-corporation-for-35/ |
 | /compare/diy-corporations-canada/ | P1 | Built (different URL) | /diy-corporations-canada-vs-open-corporation-for-35/ |
 | /compare/sole-proprietorship-vs-corporation/ | P1 | Built (different URL) | /sole-proprietorship-vs-corporation/ |
-| /compare/federal-vs-provincial-incorporation/ | P1 | Not built |  |
+| /compare/federal-vs-provincial-incorporation/ | P1 | Draft (page 10547) | /compare/federal-vs-provincial-incorporation/ |
 | /compare/corporation-centre-alternative/ | P2 | Built (different URL) | /corporation-centre-vs-open-corporation-for-35/ |
 | /compare/lawdepot-alternative/ | P2 | Built (different URL) | /lawdepot-vs-open-corporation-for-35/ |
 | /compare/corporation-vs-partnership/ | P2 | Built (different URL) | /corporation-vs-partnership/ |
