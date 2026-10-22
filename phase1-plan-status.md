@@ -124,7 +124,7 @@ Checked against the live WordPress site on 14 October 2026, updated 16 October 2
 | /industries/mortgage-brokers/ | P2 | Built | /industries/mortgage-brokers/ |
 | /industries/uber-and-delivery-drivers/ | P2 | Built | /industries/uber-and-delivery-drivers/ |
 | /industries/shopify-stores/ | P2 | Built | /industries/shopify-stores/ |
-| /industries/content-creators-and-influencers/ | P2 | Not built |  |
+| /industries/content-creators-and-influencers/ | P2 | Draft (page 10552) | /industries/content-creators-and-influencers/ |
 | /industries/insurance-brokers/ | P3 | Built | /industries/insurance-brokers/ |
 | /industries/grocery-and-convenience-stores/ | P3 | Built (different URL) | /industries/grocery-convenience-stores/ |
 | /industries/salons-and-barbers/ | P3 | Built | /industries/salons-and-barbers/ |

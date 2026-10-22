@@ -233,3 +233,7 @@
 ## /compare/ hub (page 9273, meta set by connector 2026-10-22, 13 comparison cards)
 - Meta title: Incorporation Comparisons: Costs Compared Line by Line
 - Meta description: Federal vs provincial, numbered vs named, and Open Corporation for $35 against Ownr, LawDepot and others. Our fee $35.00 HST included, government fees at cost.
+
+## /industries/content-creators-and-influencers/ (page 10552, draft created 2026-10-22, meta set by connector)
+- Meta title: Incorporate a Content Creator Business | $35
+- Meta description: We prepare and file your content creation corporation for $35, HST included. Government fees separate. A CPA checks your HST and gifted product first.
