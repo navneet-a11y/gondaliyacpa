@@ -3458,3 +3458,26 @@ The fix is seconds of work in wp-admin and makes everything consistent at once.
 Still outstanding on these two posts: the featured images are built and
 approved-pending but not attached, and `/author/sharad-gondaliya/` is still not
 live for 7.5 rule 5.
+
+## 2026-10-22 — featured images attached; posts stay at the root
+
+Navneet uploaded the two cards and decided against changing the permalink
+structure, so posts stay at `/<slug>/` rather than `/blog/<slug>/`.
+
+- media 1047 attached to post 1039, media 1048 to post 1041, both with alt text
+- the two Article schemas and their breadcrumbs now point at the root URLs
+- the /blog/ cards lead with the featured image and link to the root URLs
+
+**Deviation from the plan, accepted by Navneet.** Line 1151 puts F13 at
+`/blog/<slug>/`, and line 325 reserves the root namespace for the 336 Family 4
+slugs, enforced by a WPCode reserved-slug list. Blog posts now share that
+namespace. Neither current slug collides with an F4 slug, but **every new post
+slug must be checked against the Family 4 list before publishing**, or a post
+and a service page will fight for the same URL. Worth adding to the F13 gate.
+
+**The uploaded cards are a day stale.** They were sent before the publish date
+moved, so both read "Published 23 October 2026" while the posts went live on
+the 22nd. The regenerated files in build/f13/ carry the right date and need to
+replace media 1047 and 1048.
+
+Hub is 7,474 bytes live, matching the local build.

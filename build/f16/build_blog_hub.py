@@ -32,17 +32,25 @@ BYLINE = ('Written and reviewed by Sharad Gondaliya, CPA (Ontario), '
           'CPA Ontario Membership 61040184.')
 
 _g = io.open(os.path.join(HERE, 'guides-hub.html'), encoding='utf-8').read()
-CSS = _g[:_g.index('</style>') + len('</style>')] + '\n'
+CSS = (_g[:_g.index('</style>')]
+       + '.ei-card{padding:0;overflow:hidden}\n'
+         '.ei-card-body{padding:18px 20px}\n'
+         '.ei-card-img{display:block;line-height:0;'
+         'border-bottom:1px solid #e2e8f0}\n'
+         '.ei-card-img img{width:100%;height:auto;display:block}\n'
+       + '</style>\n')
 
 POSTS = [
  ('mandatory-t2-e-filing-after-2023',
   'Mandatory T2 E-Filing for Tax Years Starting After 2023',
   'Electronic filing is mandatory for virtually all corporations for tax years '
-  'starting after 2023. What a paper T2 costs, and why a nil return is not exempt.'),
+  'starting after 2023. What a paper T2 costs, and why a nil return is not exempt.',
+  'og-mandatory-t2-e-filing-after-2023.jpg'),
  ('schedule-50-and-the-10-percent-shareholder-rule',
   'Schedule 50 and the 10% Shareholder Rule',
   'Which shareholders must appear, what each row records, and why a dormant '
-  'corporation still files Schedule 50 in a year of zeros.'),
+  'corporation still files Schedule 50 in a year of zeros.',
+  'og-schedule-50-and-the-10-percent-shareholder-rule.jpg'),
 ]
 
 RELATED = [
@@ -54,9 +62,18 @@ RELATED = [
   'What ' + PRICE + ' covers, and what falls outside a nil return.'),
 ]
 
-def card(href, title, desc):
-    return ('<div class="ei-card"><h3><a href="%s">%s</a></h3><p>%s</p></div>'
+UPLOADS = SITE + '/wp-content/uploads/2026/10/'
+
+def card(href, title, desc, img=None):
+    """Post cards lead with the featured image; the 'Also on this site' row
+    links pages, which have none, so those stay text-only."""
+    body = ('<div class="ei-card-body"><h3><a href="%s">%s</a></h3><p>%s</p></div>'
             % (href, title, desc))
+    if img is None:
+        return '<div class="ei-card">' + body + '</div>'
+    return ('<div class="ei-card"><a class="ei-card-img" href="%s">'
+            '<img src="%s%s" alt="%s" width="1200" height="630" loading="lazy">'
+            '</a>%s</div>' % (href, UPLOADS, img, title, body))
 
 p = [CSS]
 p.append('<div class="ei-hero"><div class="ei-hero-inner">'
@@ -68,7 +85,8 @@ p.append('<div class="ei-hero"><div class="ei-hero-inner">'
  + '">Start Nil T2 Filing NOW</a></div>'
  '</div></div>\n')
 
-post_cards = '\n'.join(card(SITE + '/blog/' + s + '/', t, d) for s, t, d in POSTS)
+post_cards = '\n'.join(card(SITE + '/' + s + '/', t, d, i)
+                       for s, t, d, i in POSTS)
 p.append('<div class="ei-section"><div class="ei-wrap ei-art">\n'
  '<h2 class="ei-h2">Every Post on This Site</h2>\n'
  '<div class="ei-cards">\n' + post_cards + '\n</div>\n'
