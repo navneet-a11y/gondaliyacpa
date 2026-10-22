@@ -3605,3 +3605,41 @@ Still open, not done because Navneet asked only for Guides and Blog:
 - Which menu the header actually uses could not be read -- the corpnil
   connector exposes no theme-mod tool, so `nav_menu_locations` is unreadable
   from here.
+
+## 2026-10-22 — blog posts given the guides' full-width layout
+
+Navneet: the post "is not full width". It rendered as a narrow white card on a
+grey field, unlike the guides.
+
+Cause: guide 984 carries `site-content-layout: page-builder` and
+`ast-site-content-layout: full-width-container`, while both posts had
+`site-content-layout` empty, so Astra applied its default boxed single-post
+layout. Set both posts to the guides' values.
+
+`.cnf-post` had no width of its own -- it relied entirely on Astra's container,
+which is why removing that container would otherwise have thrown the prose
+across the full viewport. Added `max-width:860px;margin:0 auto;padding:0 20px`,
+so the band now runs edge to edge while the text column stays readable. 860px
+is the existing house measure from `.ei-hero-inner`; the guides' `.ei-wrap` is
+1100px, but guides break that width up with tables, cards and a TOC, and a
+pure-prose post at 1100px is about 110 characters a line. Easy to widen if
+Navneet prefers the exact guide width.
+
+Generator and live agree: posts.py +45 chars, post 1039 10,139 -> 10,184 and
+post 1041 9,776 -> 9,821, one replacement each.
+
+### Two findings from the same screenshot, not yet fixed
+
+**No H1 on the post.** The page goes straight from the header to the byline.
+Neither post's HTML contains an `<h1>` -- they were written to let Astra render
+the post title -- and `site-post-title` is empty on both, which is Astra's
+default. So the title is being suppressed by an Astra global setting this
+connector cannot read (no theme-mod tool on corpnil). This breaks plan line
+1959, which puts the two byline lines **under the H1**, and leaves the post
+with no H1 at all. Fix in Customizer -> Blog -> Single Post rather than by
+adding an `<h1>` to the content, which would double up if the theme setting is
+later switched back on.
+
+**Guides and Blog are missing from the rendered menu** although both items are
+live in the Primary menu (1074, 1075, verified by listing it back). LiteSpeed
+Cache is almost certainly serving the old header.

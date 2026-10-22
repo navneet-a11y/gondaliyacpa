@@ -46,7 +46,7 @@ EFILE_RULE = ('For tax years starting after 2023 electronic filing is mandatory 
               'a $100.00 per-return preparer penalty.')
 
 CSS = """<style>
-.cnf-post{font-family:Lato,sans-serif;color:#333;font-size:17px;line-height:1.75}
+.cnf-post{max-width:860px;margin:0 auto;padding:0 20px;font-family:Lato,sans-serif;color:#333;font-size:17px;line-height:1.75}
 .cnf-post h2{font-family:Poppins,sans-serif;color:#314d8a;font-size:25px;font-weight:600;margin:38px 0 12px;line-height:1.3}
 .cnf-post p{margin:0 0 16px}
 .cnf-post a{color:#314d8a;font-weight:600}.cnf-post a:hover{color:#2087c9}
