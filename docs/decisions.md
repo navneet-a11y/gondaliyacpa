@@ -3572,3 +3572,36 @@ Supersedes the "posts stay at the root" decision logged earlier today.
 
 In the 900-1,400 band, but both sit near the floor. Later batches should aim
 for the middle of the band.
+
+## 2026-10-22 — Guides and Blog added to the Primary menu
+
+The plan does not specify the menu. The only mention of navigation anywhere is
+line 1553, "Footer and navigation links do not count toward the minimum inbound
+requirement for F1, F4, F13." A `Header – Global` Elementor template is listed
+at line 352 and was built on October 2, but its contents are nowhere set out.
+Footer copy is fixed by Section 5; the menu is not, and line 45's approval list
+does not cover navigation, so this needed no sign-off.
+
+Placed both at top level, since F16 defines `/services/`, `/tools/`,
+`/locations/`, `/guides/` and `/blog/` as the site's five index pages -- they
+are peers, not children of Services. Guides sits before Blog: F9 requires 12
+inbound internal links against F13's 2.
+
+Primary menu (id 2) top level is now Home 1, Services 2, Pricing 3, Guides 4,
+Blog 5, Reviews 6, About 7, Contact 8. Items 1074 and 1075 are new; Reviews,
+About and Contact shifted from 4/5/6 so top-level positions stay unique. The
+six children under Services keep positions 1-6 in their own scope and were not
+touched.
+
+Still open, not done because Navneet asked only for Guides and Blog:
+
+- No path to checkout from the header. A `/form/` CTA button is the single
+  highest-value addition left. Rule 7 is not in the way -- it is a filing form,
+  not a booking widget.
+- `/tools/` and `/locations/` join the top level when those two F16 hubs exist.
+- Menu "Primary (2)" (id 3) is dead: six anchor links (#services, #about,
+  #whyus) left from the original one-page template. Left alone until Navneet
+  confirms nothing renders it.
+- Which menu the header actually uses could not be read -- the corpnil
+  connector exposes no theme-mod tool, so `nav_menu_locations` is unreadable
+  from here.
