@@ -237,3 +237,11 @@
 ## /industries/content-creators-and-influencers/ (page 10552, published 2026-10-22, meta set by connector)
 - Meta title: Incorporate a Content Creator Business | $35
 - Meta description: We prepare and file your content creation corporation for $35, HST included. Government fees separate. A CPA checks your HST and gifted product first.
+
+## /guides/us-sales-and-canadian-corporations/ (page 10556, draft created 2026-10-22, meta set by connector)
+- Meta title: US Sales and Canadian Corporations: HST, Treaty, Sales Tax
+- Meta description: How a Canadian corporation selling to US customers handles GST/HST on exports, US tax under the treaty, state sales tax, customs and currency.
+
+## /guides/dissolving-a-corporation/ (page 10557, draft created 2026-10-22, meta set by connector)
+- Meta title: Dissolving a Corporation in Canada: Steps, Fees and Tax
+- Meta description: How to dissolve a federal or Ontario corporation: registry filings and fees, closing CRA accounts, the final T2, wind-up tax and director liability.

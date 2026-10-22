@@ -191,8 +191,8 @@ Checked against the live WordPress site on 14 October 2026, updated 16 October 2
 | /guides/fiscal-year-end-selection/ | P2 | Built (different URL) | /guides/fiscal-year-end/ |
 | /guides/isc-register-requirements/ | P2 | Built (different URL) | /guides/individuals-with-significant-control/ |
 | /guides/business-bank-account-new-corporation/ | P2 | Built (different URL) | /guides/business-bank-account/ |
-| /guides/us-sales-and-canadian-corporations/ | P2 | Not built |  |
-| /guides/dissolving-a-corporation/ | P3 | Not built |  |
+| /guides/us-sales-and-canadian-corporations/ | P2 | Draft (page 10556) | /guides/us-sales-and-canadian-corporations/ |
+| /guides/dissolving-a-corporation/ | P3 | Draft (page 10557) | /guides/dissolving-a-corporation/ |
 | /guides/ | P1 | Built | /guides/ |
 | /guides/how-to-incorporate-in-canada/ | P1 | Built | /guides/how-to-incorporate-in-canada/ |
 | /guides/cost-to-incorporate-in-canada/ | P1 | Built | /guides/cost-to-incorporate-in-canada/ |
