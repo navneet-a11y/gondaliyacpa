@@ -193,6 +193,210 @@ SERVICES = [
            'electronically to the Canada Revenue Agency.'])],
   excerpt='T2 Short filing for British Columbia corporations that meet every CRA '
           'condition for the short return. $300.00 plus HST per tax year.'),
+ dict(
+  slug='unfiled-corporate-tax-returns-british-columbia',
+  service='unfiled-corporate-tax-returns',
+  title='Unfiled Corporate Tax Returns in British Columbia',
+  keyword='unfiled corporate tax returns british columbia',
+  national=('/catch-up-nil-t2-filing/', 'catch-up nil T2 filing'),
+  lead_h2='Unfiled Years for a British Columbia Corporation',
+  lead=['An unfiled T2 year does not close itself. It stays open on the '
+        'corporation&rsquo;s record indefinitely, and no number of later filings '
+        'settles it. A British Columbia corporation with four unfiled years owes '
+        'four returns, each for its own tax year, at $300.00 plus HST per tax '
+        'year.'],
+  extra=[('What an Unfiled Year Costs',
+          ['A true nil return carries no percentage late-filing penalty, because '
+           'that penalty is a percentage of tax owing and the corporation owes '
+           '$0.00. The unfiled year still stays open forever, invites a demand to '
+           'file and an arbitrary assessment, blocks a clearance certificate and '
+           'dissolution, and costs a non-resident-owned corporation $25.00 per day '
+           'up to $2,500.00.',
+           'The cost of leaving a nil year unfiled is almost never a penalty. It is '
+           'the demand letter, the arbitrary assessment raised on an estimate the '
+           'corporation did not provide, and the dissolution that cannot complete '
+           'until every year is filed.']),
+         ('The Registry Filing Is Separate',
+          ['Two consecutive years without a British Columbia annual report lets the '
+           'registrar dissolve the company, and that is a separate failure from an '
+           'unfiled T2. A corporation can be fully current with the Canada Revenue '
+           'Agency and still be struck from the register.'])],
+  excerpt='Bring every unfiled year up to date for a British Columbia corporation. '
+          '$300.00 plus HST per tax year.'),
+
+ dict(
+  slug='no-activity-corporation-tax-return-british-columbia',
+  service='no-activity-corporation-tax-return',
+  title='No Activity Corporation Tax Return in British Columbia',
+  keyword='no activity corporation tax return british columbia',
+  national=('/dormant-corporation-filing/', 'dormant corporation filing'),
+  lead_h2='Filing a Year With No Activity in British Columbia',
+  lead=['A British Columbia corporation that did nothing at all in a tax year still '
+        'files a T2 for that year, within six months of its fiscal year-end. There '
+        'is no status to elect that pauses the obligation, and no threshold below '
+        'which it stops. The return reports no income and no expenses, and it costs '
+        '$300.00 plus HST per tax year.'],
+  extra=[('What Counts as No Activity',
+          ['No revenue of any kind, no expense claimed, no payroll, no asset bought '
+           'or sold, no dividend paid or received, and no inter-company '
+           'transaction. Interest credited on a bank balance is income, so a year '
+           'with interest in it is not a no-activity year, however small the '
+           'amount.',
+           'Share capital, cash, a shareholder loan, an incorporation cost or a '
+           'bank charge does not stop the year being nil. It does make GIFI '
+           'Schedules 100, 125 and 141 required, and those are included in the '
+           'fee.'])],
+  excerpt='File a no-activity T2 for a British Columbia corporation. $300.00 plus '
+          'HST per tax year.'),
+
+ dict(
+  slug='numbered-corporation-nil-filing-british-columbia',
+  service='numbered-corporation-nil-filing',
+  title='Numbered Corporation Nil Filing in British Columbia',
+  keyword='numbered corporation nil filing british columbia',
+  national=('/nil-t2-filing/', 'nil T2 filing'),
+  lead_h2='Nil Filing for a Numbered British Columbia Company',
+  lead=['A numbered British Columbia company files exactly as a named one does. The '
+        'absence of a trading name changes nothing about the obligation: the T2 is '
+        'due within six months of the fiscal year-end, every year, until the '
+        'company is formally dissolved. The fee is $300.00 plus HST per tax '
+        'year.'],
+  extra=[('Why Numbered Companies Fall Behind',
+          ['A numbered company is often incorporated to hold a name, a future '
+           'structure or a single asset, and then left. Nothing arrives to prompt '
+           'anyone, so the first contact is usually a demand to file covering '
+           'several years at once.',
+           'We file them together, oldest year first, so the Canada Revenue Agency '
+           'assesses them in the order they fell due.']),
+         ('The Company Number Is the Filing Name',
+          ['The return carries the exact legal name as the register holds it, '
+           'including the company number and the suffix. A name that does not match '
+           'the register is one of the common causes of a rejected transmission, '
+           'and one corrected transmission is included in the fee.'])],
+  excerpt='Nil T2 filing for a numbered British Columbia company. $300.00 plus HST '
+          'per tax year.'),
+
+ dict(
+  slug='nil-t2-filing-deadline-british-columbia',
+  service='nil-t2-filing-deadline',
+  title='Nil T2 Filing Deadline in British Columbia',
+  keyword='nil t2 filing deadline british columbia',
+  national=('/deadlines/', 'T2 filing deadlines'),
+  lead_h2='When a British Columbia Nil T2 Is Due',
+  lead=['Within six months of the corporation&rsquo;s fiscal year-end. The deadline '
+        'comes from the Income Tax Act and does not vary by province, so a British '
+        'Columbia corporation is on the same timetable as one in any other '
+        'province. A December 31 year-end is due the following June 30.'],
+  extra=[('The Year-End Must Match the Agency&rsquo;s Record',
+          ['The Canada Revenue Agency holds a fiscal year-end taken from the '
+           'incorporation record. The first tax year cannot exceed 53 weeks and the '
+           'year-end must match the Agency&rsquo;s record or the transmission is '
+           'rejected.',
+           'Where the year-end on file is not the one intended, it is settled with '
+           'the Agency before the return is transmitted rather than by filing a '
+           'different date.']),
+         ('The British Columbia Annual Report Has Its Own Date',
+          ['The annual report is filed with ' + REGISTRY + ' ' + ANNUAL_DUE
+           + '. It runs from the anniversary of incorporation rather than from the '
+           'fiscal year-end, so the two deadlines rarely fall together and missing '
+           'one does not show up in the other.'])],
+  excerpt='When a nil T2 is due for a British Columbia corporation, and how it '
+          'differs from the annual report. $300.00 plus HST per tax year.'),
+
+ dict(
+  slug='nil-t2-filing-cost-in-british-columbia',
+  service='nil-t2-filing-cost',
+  title='Nil T2 Filing Cost in British Columbia',
+  keyword='nil t2 filing cost british columbia',
+  national=('/pricing/nil-t2-filing-cost/', 'nil T2 filing cost'),
+  lead_h2='What a Nil T2 Return Costs a British Columbia Corporation',
+  lead=['$300.00 plus HST per tax year. Two years is $600.00, three is $900.00 and '
+        'five is $1,500.00, each before tax, because each tax year is a separate '
+        'return carrying the same preparation and the same CPA review. There is no '
+        'reduced rate for filing several years together.',
+        'British Columbia is not an HST province, so tax is added at the rate that '
+        'applies to your province rather than at a single harmonised rate. British '
+        'Columbia corporate income tax is reported on the federal T2, so there is '
+        'no second provincial filing fee of the kind an Alberta or Quebec '
+        'corporation faces.'],
+  extra=[('What the Fee Includes',
+          ['One nil T2 for one corporation for one tax year, including the T2 Short '
+           'where the corporation qualifies, GIFI Schedules 100, 125 and 141 where '
+           'they are required, Schedule 24 on a first return, Schedule 50 for every '
+           'shareholder at 10 per cent or more, Schedule 8 and loss continuity, '
+           'your Form T183CORP package with single-use secure e-signing, CPA '
+           'review, electronic transmission by a registered EFILE electronic filer, '
+           'one corrected transmission if the Agency rejects the first one, and '
+           'your CRA confirmation emailed within 3 business days.',
+           'The price does not change with the age of the year, the size of the '
+           'corporation or the number of shareholders.'])],
+  excerpt='What a nil T2 return costs a British Columbia corporation. $300.00 plus '
+          'HST per tax year.'),
+
+ dict(
+  slug='nil-t2-filing-for-non-resident-owned-corporations-british-columbia',
+  service='nil-t2-filing-for-non-resident-owned-corporations',
+  title='Nil T2 Filing for Non-Resident-Owned Corporations in British Columbia',
+  keyword='non-resident owned corporation nil t2 british columbia',
+  national=('/nil-t2-filing/', 'nil T2 filing'),
+  lead_h2='Non-Resident-Owned British Columbia Corporations',
+  lead=['A British Columbia corporation owned from outside Canada files a T2 on the '
+        'same timetable as any other: within six months of its fiscal year-end, '
+        'every year, until it is formally dissolved. The fee is $300.00 plus HST '
+        'per tax year, and the whole process is completed online.'],
+  extra=[('The Penalty That Does Not Depend on Tax Owing',
+          ['A true nil return carries no percentage late-filing penalty, because '
+           'that penalty is a percentage of tax owing and the corporation owes '
+           '$0.00. The unfiled year still stays open forever, invites a demand to '
+           'file and an arbitrary assessment, blocks a clearance certificate and '
+           'dissolution, and costs a non-resident-owned corporation $25.00 per day '
+           'up to $2,500.00.',
+           'That daily charge is built on days rather than on tax owing, so a nil '
+           'year reaches the maximum exactly as a trading year does. It is the '
+           'largest single exposure a dormant non-resident-owned corporation '
+           'carries.']),
+         ('Signing From Outside Canada',
+          ['Form T183CORP is signed by an authorized signing officer before '
+           'transmission, and it may be signed through an access-controlled secure '
+           'portal. There is no requirement to be in Canada, and no meeting is '
+           'needed at any point.'])],
+  excerpt='Nil T2 filing for a non-resident-owned British Columbia corporation, and '
+          'the $25.00 a day exposure. $300.00 plus HST per tax year.'),
+
+ dict(
+  slug='inactive-holding-corporation-t2-filing-british-columbia',
+  service='inactive-holding-corporation-t2-filing',
+  title='Inactive Holding Corporation T2 Filing in British Columbia',
+  keyword='inactive holding corporation t2 filing british columbia',
+  national=('/inactive-holding-corporation-t2-filing/',
+            'inactive holding corporation T2 filing'),
+  lead_h2='When a British Columbia Holding Corporation Is Nil',
+  lead=['A holding corporation with investment income, a rental corporation and a '
+        'corporation that paid or received a dividend are not nil. Those are '
+        'handled by Gondaliya CPA Professional Corporation at gondaliyacpa.ca at '
+        '$350.00 plus HST per year.',
+        'A British Columbia holding corporation is nil for this service only where '
+        'it held its assets through the whole tax year and they earned nothing at '
+        'all: no dividend received, no dividend paid, no rent, no interest and no '
+        'inter-company transaction. That corporation still files a T2 within six '
+        'months of its fiscal year-end, at $300.00 plus HST per tax year.'],
+  extra=[('The Interest a Holding Corporation Forgets',
+          ['The most common reason a holding corporation believed to be nil is not '
+           'nil is a few dollars of interest credited on a bank balance nobody '
+           'looked at. There is no minimum. Interest credited across the year is '
+           'investment income, and the year is not nil.',
+           'We check the position before you pay. If the year turns out not to be '
+           'nil, we tell you first, and if it is found after you pay we refund you '
+           'in full.']),
+         ('Schedules a Holding Corporation Still Files',
+          ['A holding corporation holds assets by definition, so GIFI Schedules '
+           '100, 125 and 141 are required on most of its returns despite there '
+           'being no activity. Schedule 50 is required for every shareholder at 10 '
+           'per cent or more, and holding structures concentrate ownership, so it '
+           'is almost always needed.'])],
+  excerpt='When a British Columbia holding corporation is nil and when it is not. '
+          '$300.00 plus HST per tax year.'),
+
 ]
 
 

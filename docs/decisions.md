@@ -3717,3 +3717,43 @@ one of the seventeen carries sixteen sibling links plus the hub, keeping the
   in that set, so this needs resolving before the batch of 20 due October 30.
 - New guide copy needs Sharad Gondaliya's review before it counts as published
   under the approvals rule at line 45.
+
+## 2026-10-22 — the seven pending British Columbia service pages
+
+Ontario carries all 12 Family 4 service slugs; British Columbia carried 5. The
+seven missing ones were added to `build_f4_bc.py` rather than a second
+generator, so BC has one source of truth the way Ontario does. The render
+carries no sibling cross-links, so the five already published regenerated
+byte-identical against their committed versions, checked before anything went
+live.
+
+  unfiled-corporate-tax-returns          10,349
+  no-activity-corporation-tax-return     10,024
+  numbered-corporation-nil-filing        10,113
+  nil-t2-filing-deadline                 10,110
+  nil-t2-filing-cost-in                  10,293
+  nil-t2-filing-for-non-resident-owned   10,474
+  inactive-holding-corporation-t2-filing 10,663
+
+The cost page carries no HST arithmetic, unlike its Ontario sibling. BC is not
+an HST province, so Ontario's "$339.00 at 13 per cent" would be wrong. It gives
+the multi-year figures before tax and says tax is added at the province's rate.
+
+The holding page leads with hard rule 8 rather than burying it: the first
+paragraph is the not-nil sentence and the route to gondaliyacpa.ca.
+
+### The gate was wrong in two ways, both corrected
+
+**It banned a phrase the plan requires.** Rule 1 tested for "authorized"
+anywhere, but 7.6 says "Authorized signing officer" is permitted and required,
+on and about Form T183CORP. It had never fired because no BC page had reached
+the signing rules yet. The permitted phrase is now removed before the test, so
+"CRA authorized" and "authorized by CRA" are still caught.
+
+**Its money check silently skipped every figure with a thousands separator.**
+The pattern was `\$(\d+\.\d\d)`, and `\d+` stops at a comma, so `$2,500.00` and
+`$1,000.00` were never tested at all -- the check that exists to catch invented
+figures could not see the larger ones. Widened to accept separators, and the
+allowlist now records why each figure is permitted. $0.00, $25.00 and $2,500.00
+are the plan's own qualification sentence; $600.00, $900.00 and $1,500.00 are
+multiples of the price, which the Ontario cost page already publishes.
