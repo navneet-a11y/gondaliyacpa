@@ -3481,3 +3481,41 @@ the 22nd. The regenerated files in build/f13/ carry the right date and need to
 replace media 1047 and 1048.
 
 Hub is 7,474 bytes live, matching the local build.
+
+## 2026-10-22 — /blog/ listing goes dynamic (Elementor Posts widget)
+
+Navneet wants the listing to update itself as posts publish, the way
+gondaliyacpa.ca's does. A hand-written hub cannot carry 10 new posts a Friday.
+
+How gondaliyacpa.ca actually does it, checked over the connector: page 19082
+(`/blogs/`) has **empty content**, no Elementor data, and every Astra blog
+theme mod is null. It is the native WordPress posts page on stock Astra
+defaults — `page_for_posts: 19082` in Settings - Reading.
+
+**Not copied here, deliberately.** corpnilfilingfor300.ca's `page_for_posts`
+is 0 and should stay 0. WordPress ignores a posts page's own content, so
+making page 1037 the posts page would hide the hero, the three "Also on This
+Site" links into /guides/, /answers/ and /deadlines/, and the bottom CTA. That
+hero-plus-CTA shell is the house layout on all 16 family hubs, and those three
+links are silo plumbing the plan's internal-linking rules require. Bare is fine
+on gondaliyacpa.ca because its blog page carries nothing else.
+
+**Chosen instead:** Elementor Pro's Posts widget in place of the card grid on
+page 1037, keeping the shell. Server-rendered, so the post links stay
+crawlable, and it brings its own pagination, which 60+ posts need.
+
+Rejected: a WPCode PHP shortcode (`wpcode` is not REST-exposed, so it cannot be
+installed from here, and it would put the listing outside Navneet's reach); a
+client-side fetch of /wp-json/wp/v2/posts (deliverable from here with no action
+from Navneet, but it renders the post links in JavaScript, which is the wrong
+trade on an SEO build).
+
+`build/f16/elementor-parts.py` slices the generated hub into the two pieces
+that survive the rebuild and asserts the only dropped markup is the card grid
+(1,382 bytes, tags a/div/h3/img/p). Part 1 carries the CSS, the hero and the
+"Every Post on This Site" heading; part 2 the links and the CTA. Part 1's CSS
+also dresses `.elementor-posts .elementor-post` to match `.ei-card`, so the
+dynamic grid looks identical to the cards it replaces.
+
+**Page 1037 becomes Elementor-controlled once saved.** `build_blog_hub.py`
+must not be run against it again — a regeneration would wipe the widget.
