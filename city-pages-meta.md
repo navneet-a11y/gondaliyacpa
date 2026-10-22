@@ -218,10 +218,10 @@
 - Meta title: Incorporate a Business in Regina | $35 + Government Fees
 - Meta description: Incorporate in Saskatchewan from Regina for $35, HST included, plus the $255 ISC fee. A CPA checks your shares, Saskatchewan contact and City licence first.
 
-## /compare/vs-ownr/ (page 10538, draft created 2026-10-22, meta set by connector)
+## /compare/vs-ownr/ (page 10538, published 2026-10-22, meta set by connector)
 - Meta title: Open Corporation for $35 vs Ownr: Price Compared
 - Meta description: We charge $35.00, HST included. Ownr's own blog lists $499 federal and $599 Ontario, plus tax. Government fees separate. A CPA is accountable after.
 
-## /lawdepot-vs-open-corporation-for-35/ (page 10542, draft created 2026-10-22, meta set by connector)
+## /lawdepot-vs-open-corporation-for-35/ (page 10542, published 2026-10-22, meta set by connector)
 - Meta title: Open Corporation for $35 vs LawDepot: Cost Compared
 - Meta description: We charge $35.00, HST included, government fees at cost. LawDepot sells legal templates from $131.88 a year. A CPA firm is accountable after filing.

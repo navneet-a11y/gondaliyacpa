@@ -12,12 +12,12 @@ Checked against the live WordPress site on 14 October 2026, updated 16 October 2
 | Service Areas | 27 | 15 | 9 | 3 |
 | Industries | 34 | 33 | 0 | 1 |
 | Pricing | 3 | 3 | 0 | 0 |
-| Compare | 14 | 11 | 0 | 3 |
+| Compare | 14 | 13 | 0 | 1 |
 | Guides | 34 | 32 | 0 | 2 |
 | Blog | 13 | 4 | 0 | 9 |
 | About, Team, Reviews, Contact and Legal | 24 | 21 | 0 | 3 |
 | French Quebec | 10 | 0 | 0 | 10 |
-| **Total** | **201** | **155** | **9** | **37** |
+| **Total** | **201** | **157** | **9** | **35** |
 
 ## Home
 
@@ -159,7 +159,7 @@ Checked against the live WordPress site on 14 October 2026, updated 16 October 2
 
 | Planned URL | Priority | Status | Live URL |
 |---|---|---|---|
-| /compare/ownr-alternative/ | P1 | Draft (page 10538, different URL) | /compare/vs-ownr/ |
+| /compare/ownr-alternative/ | P1 | Built (different URL) | /compare/vs-ownr/ |
 | /compare/ontario-business-central-alternative/ | P1 | Built (different URL) | /open-corporation-for-35-vs-ontario-business-central/ |
 | /compare/cpa-vs-lawyer-incorporation/ | P1 | Built (different URL) | /lawyer-vs-open-corporation-for-35/ |
 | /compare/diy-ontario-business-registry/ | P1 | Built (different URL) | /diy-ontario-business-registry-vs-open-corporation-for-35/ |
@@ -167,7 +167,7 @@ Checked against the live WordPress site on 14 October 2026, updated 16 October 2
 | /compare/sole-proprietorship-vs-corporation/ | P1 | Built (different URL) | /sole-proprietorship-vs-corporation/ |
 | /compare/federal-vs-provincial-incorporation/ | P1 | Not built |  |
 | /compare/corporation-centre-alternative/ | P2 | Built (different URL) | /corporation-centre-vs-open-corporation-for-35/ |
-| /compare/lawdepot-alternative/ | P2 | Draft (page 10542, different URL) | /lawdepot-vs-open-corporation-for-35/ |
+| /compare/lawdepot-alternative/ | P2 | Built (different URL) | /lawdepot-vs-open-corporation-for-35/ |
 | /compare/corporation-vs-partnership/ | P2 | Built (different URL) | /corporation-vs-partnership/ |
 | /compare/ontario-vs-alberta-incorporation/ | P2 | Built (different URL) | /compare/ontario-vs-alberta-vs-british-columbia-incorporation/ |
 | /compare/ontario-vs-british-columbia-incorporation/ | P2 | Built (different URL) | /compare/ontario-vs-alberta-vs-british-columbia-incorporation/ |
