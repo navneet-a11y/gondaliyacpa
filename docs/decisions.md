@@ -3537,3 +3537,38 @@ Elementor's per-widget kit styles outrank the part 1 selectors, so post titles
 and the read-more link kept the global colours. blog-posts-widget.css restates
 the .ei-card values behind Elementor's "selector" token, which is scoped to the
 one widget and wins. The part 1 copies are left in place as a harmless fallback.
+
+## 2026-10-22 — posts move back to /blog/<slug>/, as the plan always had them
+
+The root permalink broke. /mandatory-t2-e-filing-after-2023/ returned 404 even
+though WordPress reported that exact URL as the post's link.
+
+Cause: Family 4's `nil_service_place` is registered with its rewrite slug set
+to a single forward slash (plan line 325), which makes a catch-all rule for
+every single-segment URL. 17 F4 items are live at root today. A request for a
+post at root is handed to that CPT, which has no item with the slug, so it
+404s. No post slug can live at root, whatever it is called -- this is broader
+than the slug collision logged earlier today.
+
+Plan line 325 anticipated it: the WPCode Lite snippet is meant to register the
+catch-all rule **last** and enforce a reserved-slug list. That snippet is still
+not installed -- the same outstanding WPCode task as the author archive.
+
+Navneet set the permalink structure to /blog/%postname%/. That is plan line
+1151's structure, and it also flushed the rewrite rules. The JSON-LD @id, url
+and breadcrumb item in both posts are back on /blog/<slug>/: post 1039
+10,124 -> 10,139 bytes and post 1041 9,761 -> 9,776, each 3 replacements,
+exactly reversing this morning's change. The /blog/ cards needed nothing, as
+the Posts widget builds its links from the permalink.
+
+Supersedes the "posts stay at the root" decision logged earlier today.
+
+### Both posts checked against 7.6 and 1221
+
+| Post | Prose words | Table | Byline | Answer in first 40 words |
+|---|---|---|---|---|
+| Mandatory T2 E-Filing | 940 | 1 | yes | yes |
+| Schedule 50 | 904 | 1 | yes | yes |
+
+In the 900-1,400 band, but both sit near the floor. Later batches should aim
+for the middle of the band.
