@@ -239,9 +239,9 @@ Checked against the live WordPress site on 14 October 2026, updated 16 October 2
 | /author/sharad-gondaliya/ | P2 | Built (different URL) | /team/sharad-gondaliya/ |
 | /author/vandana-goel/ | P2 | Built (different URL) | /team/vandana-goel/ |
 | /sitemap/ | P2 | Built (different URL) | /html-sitemap/ |
-| /reviews/vaughan/ | P3 | Not built |  |
-| /reviews/north-york/ | P3 | Not built |  |
-| /reviews/markham/ | P3 | Not built |  |
+| /reviews/vaughan/ | P3 | Draft (page 10563) | /reviews/vaughan/ |
+| /reviews/north-york/ | P3 | Draft (page 10565) | /reviews/north-york/ |
+| /reviews/markham/ | P3 | Draft (page 10567) | /reviews/markham/ |
 | /reviews/ | P1 | Built | /reviews/ |
 | /contact/ | P1 | Built | /contact/ |
 | /disclaimer/ | P1 | Built | /disclaimer/ |
