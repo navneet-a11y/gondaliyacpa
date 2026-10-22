@@ -88,3 +88,27 @@ The full list (20 items, owners Sharad and Navneet) is in the workbook, sheet "O
 | 5 | Re-check Wealthsimple figures after the November 5 event | Thu Nov 12 | Open |
 
 Rule: never set ws_neha_reviewed_on before Neha confirms her review in writing in the Upwork thread.
+
+## Decisions on October 22 (Navneet: "follow this plan exactly")
+
+- Plan dates hold: setup and Day 1 on Friday, October 23; nothing goes live before then.
+- Header (synced pattern 35) and footer (synced pattern 40): every link must be one of the 101 URLs in links.csv. Friday changes:
+  - /savings/1-year-gic-rates/ to /savings/gic-rates/
+  - /learn/how-to-buy-stocks/ to /markets/how-to-buy-us-stocks/ ("How to buy US stocks")
+  - /learn/open-a-brokerage-account/ to /learn/how-to-invest/ ("How to invest")
+  - Tax and Benefits menu: drop /benefits/canada-child-benefit/, /tax/capital-gains-tax/ and /tax/; add the capital gains tax calculator and best tax software
+  - Remove the Retirement menu (no retirement pages in the plan)
+  - Footer: remove /research/, /retirement/ and /tax/; add /about/neha-gupta/ ("Our CFA reviewer")
+  - Footer: remove the LinkedIn button (no links to other websites except on the two profile pages)
+- Analytics: the site has no Google Analytics today. Per setup step 11, add a cookie banner (Complianz) and load GA4 only after consent; needs a GA4 Measurement ID (G-...).
+
+## Friday batch (after Navneet confirms "backup done")
+
+1. Add and activate the PHP snippet; check a page loads without errors
+2. LiteSpeed JS excludes (wealthscale-widgets); purge
+3. Rank Math: Article schema for pages, breadcrumbs on, author archives off, Instant Indexing on
+4. Delete Hello world!, sample comment, Sample Page, old Astra demo draft
+5. Redirects: /hello-world/ to /, /methodology/ to /methodology/brokers/
+6. Header and footer link changes above
+7. Publish the 20 Day 1 pages (author Sharad, user 1), Rank Math fields from the workbook; static front page = Home
+8. Purge, check /page-sitemap.xml, submit IndexNow
