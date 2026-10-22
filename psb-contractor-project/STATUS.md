@@ -105,3 +105,9 @@ Still to do for Navneet on the pages:
 - llms.txt
 - Link Whisper
 - **Rule 8 link:** /software-development-it-consultants/ (30733) is an Elementor page, so add the link to /accountant-for-it-contractors/ with Link Whisper or the Elementor editor. Suggested anchor (existing text, no wording change): "IT consultants" in "At Gondaliya CPA, we help developers and IT consultants stay CRA-compliant".
+
+## October 22: posts 6-10 live
+
+- **Dates:** the dates in all five posts ("Last updated" lines and JSON-LD datePublished/dateModified) moved from October 20 to October 22.
+- **Images:** re-made with "Published 22 October 2026", uploaded as media 57709-57713 (all five file sizes match) and attached.
+- **Published:** posts 6, 7, 8, 9 and 10 on October 22. All 20 URLs are now live.
