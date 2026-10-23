@@ -287,22 +287,27 @@
 - /incorporate-by-province/ (10410): emoji icons replaced with SVG icons; CSS added to remove gap above hero (2026-10-23)
 - Main menu: "Which Province Should I Choose?" (item 10621) added as first item under Jurisdictions; hub 10410 intro links to it (2026-10-23)
 
-## /incorporation-services-oshawa/ (page 10622, draft 2026-10-23, meta set by connector)
+## /incorporation-services-oshawa/ (page 10622, published 2026-10-23, meta set by connector)
 - Meta title: Incorporate a Business in Oshawa | $35 + Government Fees
 - Meta description: Incorporate in Oshawa or Durham Region for $35, HST included, plus the $300 Ontario fee. A CPA checks your shares, year end and any City licence first.
 
-## /incorporation-services-hamilton/ (page 10627, draft 2026-10-23, meta set by connector)
+## /incorporation-services-hamilton/ (page 10627, published 2026-10-23, meta set by connector)
 - Meta title: Incorporate a Business in Hamilton | $35 + Government Fees
 - Meta description: Incorporate in Hamilton, Stoney Creek or Ancaster for $35, HST included, plus the $300 Ontario fee. A CPA checks your shares, College rules and City licence first.
 
-## /incorporation-services-london/ (page 10632, draft 2026-10-23, meta set by connector)
+## /incorporation-services-london/ (page 10632, published 2026-10-23, meta set by connector)
 - Meta title: Incorporate a Business in London, Ontario | $35 + Government Fees
 - Meta description: Incorporate in London, Ontario for $35, HST included, plus the $300 Ontario fee. A CPA checks your shares, year end and any City of London licence first.
 
-## /incorporation-services-edmonton/ (page 10637, draft 2026-10-23, meta set by connector)
+## /incorporation-services-edmonton/ (page 10637, published 2026-10-23, meta set by connector)
 - Meta title: Incorporate a Business in Edmonton | $35 + Government Fees
 - Meta description: Incorporate in Alberta from Edmonton for $35, HST included, plus the $291.75 Alberta fee. A CPA checks your shares, registered office and City licence first.
 
-## /incorporation-services-montreal/ (page 10642, draft 2026-10-23, meta set by connector)
+## /incorporation-services-montreal/ (page 10642, published 2026-10-23, meta set by connector)
 - Meta title: Incorporate a Business in Montreal | $35 + Government Fees
 - Meta description: Incorporate in Quebec from Montreal for $35, HST included, plus the $397 Registraire fee. A CPA checks your French name, head office and shares first.
+
+## Service Areas hub 9550 update (2026-10-23)
+- Linked Oshawa and Hamilton table cells and list entries; linked London, Edmonton and Montreal in the city lists.
+- ItemList "City incorporation pages" extended to 19 entries (added Oshawa, Hamilton, London, Edmonton, Montreal, Vaughan, Markham, Kitchener-Waterloo, Winnipeg, Regina).
+- Old pages to redirect: /open-corporation-in-oshawa/ (850), /open-corporation-in-hamilton/ (836), /open-corporation-in-london-ontario/, /open-corporation-in-edmonton/, /open-corporation-in-montreal/.

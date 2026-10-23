@@ -84,14 +84,14 @@ Checked against the live WordPress site on 14 October 2026, updated 16 October 2
 | /incorporation-services-calgary/ | P1 | Built | /incorporation-services-calgary/ |
 | /incorporation-services-vancouver/ | P1 | Built | /incorporation-services-vancouver/ |
 | /incorporation-services-vaughan/ | P2 | Built | /incorporation-services-vaughan/ |
-| /incorporation-services-oshawa/ | P2 | Built, draft 10622 (old page /open-corporation-in-oshawa/ 850 to redirect) | /incorporation-services-oshawa/ |
-| /incorporation-services-hamilton/ | P2 | Built, draft 10627 (old page /open-corporation-in-hamilton/ 836 to redirect) | /incorporation-services-hamilton/ |
+| /incorporation-services-oshawa/ | P2 | Built, published 10622 (old page /open-corporation-in-oshawa/ 850 to redirect) | /incorporation-services-oshawa/ |
+| /incorporation-services-hamilton/ | P2 | Built, published 10627 (old page /open-corporation-in-hamilton/ 836 to redirect) | /incorporation-services-hamilton/ |
 | /incorporation-services-markham/ | P2 | Built | /incorporation-services-markham/ |
-| /incorporation-services-edmonton/ | P2 | Built, draft 10637 (old page /open-corporation-in-edmonton/ to redirect) | /incorporation-services-edmonton/ |
+| /incorporation-services-edmonton/ | P2 | Built, published 10637 (old page /open-corporation-in-edmonton/ to redirect) | /incorporation-services-edmonton/ |
 | /incorporation-services-winnipeg/ | P2 | Built | /incorporation-services-winnipeg/ |
-| /incorporation-services-montreal/ | P2 | Built, draft 10642 (old page /open-corporation-in-montreal/ to redirect) | /incorporation-services-montreal/ |
+| /incorporation-services-montreal/ | P2 | Built, published 10642 (old page /open-corporation-in-montreal/ to redirect) | /incorporation-services-montreal/ |
 | /incorporation-services-kitchener-waterloo/ | P2 | Built | /incorporation-services-kitchener-waterloo/ |
-| /incorporation-services-london/ | P2 | Built, draft 10632 (old page /open-corporation-in-london-ontario/ to redirect) | /incorporation-services-london/ |
+| /incorporation-services-london/ | P2 | Built, published 10632 (old page /open-corporation-in-london-ontario/ to redirect) | /incorporation-services-london/ |
 | /incorporation-services-guelph/ | P3 | Not built |  |
 | /incorporation-services-windsor/ | P3 | Old 2025 page only, rebuild | /open-corporation-in-windsor/ |
 | /incorporation-services-surrey/ | P3 | Old 2025 page only, rebuild | /open-corporation-in-surrey/ |
