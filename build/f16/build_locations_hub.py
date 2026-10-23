@@ -150,22 +150,18 @@ def jump():
             + '</ul>')
 
 
-# Verbatim from the service page templates, where this copy is already signed
-# off. Writing fresh copy here would put new unapproved claims on the page for
-# no gain; the four steps are the same four steps wherever you start from.
+# Verbatim from the home page, which states these four more plainly than the
+# service templates do: no sub-bullets, no payment-method list, no signing
+# mechanics. A locations index is a signpost, so the shorter four are the right
+# ones. The heading is the home page's too, "(Complete Within 10 Minutes)"
+# included, so the same promise is worded the same way in both places.
+STEPS_HEADING = 'How It Works, in Four Steps (Complete Within 10 Minutes)'
 STEPS = [
- ('Give basic details like your corporation name.',
-  ['We auto-fill your CRA Business Number and incorporation date',
-   'Pick the tax years you have not filed',
-   'Confirm the corporation had no activity in those years',
-   'Attest that you are an authorized signing officer and pass the identity '
-   'check.']),
- ('Pay $300.00 plus HST per tax year by credit card, debit, Apple Pay '
-  'or Google Pay.', []),
+ ('Give basic details like your corporation name.', []),
+ ('Pay $300.00 plus HST per tax year.', []),
  ('Confirm your tax year dates, shareholder details and the rest of your '
   'filing information.', []),
- ('Sign your Form T183CORP as the authorized signing officer, on a secure '
-  'single-use screen.', []),
+ ('Sign your Form T183CORP.', []),
 ]
 
 REVIEWERS = [
@@ -211,10 +207,11 @@ FAQ = [
   'way. Province pages are being added over time. Start from the filing form '
   'or from the service you need.'),
  ('Do you have an office in my city?',
-  'Filing is handled remotely, so there is no office visit and no appointment '
-  'to arrange. Your return is prepared, reviewed and transmitted by Sharad '
-  'Gondaliya, CPA, a registered EFILE electronic filer, wherever in Canada the '
-  'corporation is registered.'),
+  'There is one office, at 55 Queen St E, Suite 1205, Toronto. Filing does '
+  'not require a visit to it. Details are given on the form, Form T183CORP '
+  'is signed on a secure screen, and the return is prepared, reviewed and '
+  'transmitted by Sharad Gondaliya, CPA, a registered EFILE electronic '
+  'filer, wherever in Canada the corporation is registered.'),
 ]
 
 
@@ -273,9 +270,9 @@ def render():
              + '\n</div></div>\n')
 
     p.append('<div class="ei-section-alt"><div class="ei-wrap ei-art">\n'
-             '<h2 class="ei-h2">How Filing Works, in Four Steps</h2>\n'
+             '<h2 class="ei-h2">' + STEPS_HEADING + '</h2>\n'
              '<p>The process is the same in every province, because the return '
-             'is federal. Nothing on this page needs an appointment.</p>\n'
+             'is federal.</p>\n'
              + steps_html()
              + '\n<div class="ei-mid-cta"><a class="ei-btn-blue" href="' + FORM
              + '">Start Nil T2 Filing NOW</a></div>\n</div></div>\n')

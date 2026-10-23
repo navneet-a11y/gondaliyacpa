@@ -4845,3 +4845,46 @@ length matching the prediction. No service-place URL changed; the only links
 added are two anchors, two bios and a mailto.
 
 Not verified visually. The egress proxy blocks corpnilfilingfor300.ca.
+
+### /locations/ four steps switched to the home page wording
+
+Navneet asked for the home page's four steps rather than the service
+templates'. The home page states them plainly, with no sub-bullets, no payment
+method list and no signing mechanics:
+
+1. Give basic details like your corporation name.
+2. Pay $300.00 plus HST per tax year.
+3. Confirm your tax year dates, shareholder details and the rest of your filing
+   information.
+4. Sign your Form T183CORP.
+
+The heading came across too, "(Complete Within 10 Minutes)" included, so the
+same promise is worded identically in both places. This also fixes the uneven
+step cards flagged in the previous entry: the service version's step 1 carried
+four sub-bullets while steps 2 to 4 carried none, so the first card was roughly
+three times the height of its neighbours. All four are now one line each.
+
+### Office FAQ answer corrected: there is a Toronto office
+
+Reading the home page for its steps turned up an "Our Office" section
+publishing a street address and opening hours: 55 Queen St E, Suite 1205,
+Toronto, ON M5C 1R6, open 9:00 AM to 8:30 PM Monday to Sunday.
+
+The FAQ answer I had written for /locations/ said filing "is handled remotely,
+so there is no office visit and no appointment to arrange". The second half was
+wrong and contradicted the home page. A visitor asking "do you have an office
+in my city" would have been told there is no office at all while the home page
+showed one with opening hours.
+
+Rewritten to state the one office and its address, that filing does not require
+visiting it, and that the return is transmitted for corporations registered
+anywhere in Canada. The claim that drew the near-me intent is kept; the false
+part is gone.
+
+Worth noting for the remaining Family 16 pages: this was my error, introduced
+by writing a plausible answer instead of checking the site first. Any further
+"do you have an office" or "are you local" copy should be checked against the
+home page's Our Office section.
+
+Live went 19,332 to 19,018 bytes across five patches, each intermediate length
+matching the prediction, and the result is byte-identical to the generator.
