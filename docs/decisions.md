@@ -4731,3 +4731,14 @@ Six top-level items, twenty in total:
 
 Both Contact items point at page 190. If the duplicate is unwanted, deleting
 317 leaves the top-level one and shortens the About dropdown to two children.
+
+### "All services" removed from the Services dropdown
+
+Item 1194 deleted. The Services dropdown is seven items now: the six service
+pages, then Locations. The parent "Services" still links `/services/`, so the
+overview page is still one click away, from the top-level item rather than from
+a child that duplicated it.
+
+Nineteen menu items. Note that the remaining children keep menu_order 2 to 8
+with no 1; WordPress sorts ascending and renumbers on the next wp-admin save,
+so the gap changes nothing about the rendered order.
