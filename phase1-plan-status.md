@@ -45,7 +45,7 @@ Checked against the live WordPress site on 14 October 2026, updated 16 October 2
 | /incorporation-bookkeeping-bundle/ | P2 | Built | /incorporation-bookkeeping-bundle/ |
 | /incorporation-corporate-tax-return-bundle/ | P2 | Built | /incorporation-corporate-tax-return-bundle/ |
 | /shareholder-agreement-template/ | P3 | Built | /shareholder-agreement-template/ |
-| /corporation-revival/ | P3 | Not built |  |
+| /corporation-revival/ | P3 | Draft (page 10594) | /corporation-revival/ |
 | /trademark-search-filing-referral/ | P3 | Built | /trademark-search-filing-referral/ |
 | /business-bank-account-setup/ | P3 | Not built |  |
 | /services/ | P1 | Built | /services/ |
