@@ -115,6 +115,20 @@ EXTRA = """
 .ei-faq details[open] summary:after{transform:rotate(-135deg);margin-top:-2px}
 .ei-faq .ei-a{padding:0 18px 16px;color:#4a5568;line-height:1.75;margin:0}
 @media(max-width:700px){.ei-pgrid{grid-template-columns:1fr}}
+/* Centred section headers, as the service pages have them, and more air
+   between sections. Page-local on purpose: hub.css still left-aligns the
+   headings on the other four hubs, so this is the only hub that centres them
+   until they are republished too.
+   The media query has to be restated here. hub.css sets .ei-art .ei-h2 to
+   1.3em inside its own @media, and a media query adds no specificity, so a
+   plain rule placed after it would otherwise win at every width and leave
+   mobile at the desktop size. */
+.ei-art .ei-h2{text-align:center;font-size:1.6em;margin:0 0 14px}
+.ei-art .ei-lead{text-align:center;max-width:700px;margin:0 auto 16px}
+.ei-section,.ei-section-alt{padding:48px 20px}
+.ei-count{display:flex;width:fit-content;margin:0 auto 18px}
+.ei-jump{justify-content:center;margin:4px 0 0}
+@media(max-width:900px){.ei-art .ei-h2{font-size:1.38em}.ei-section,.ei-section-alt{padding:34px 18px}}
 """
 
 
@@ -261,7 +275,7 @@ def render():
              '<h2 class="ei-h2">Every Province Page on This Site</h2>\n'
              '<p class="ei-count">Place pages published: '
              '<b>[cnf_child_count type="nil_service_place"]</b></p>\n'
-             '<p>The T2 is a federal return, so the filing itself does not '
+             '<p class="ei-lead">The T2 is a federal return, so the filing itself does not '
              'change with the province. What changes is the registry filing '
              'that sits beside it, and each province page states that filing '
              'and its deadline.</p>\n'
@@ -271,7 +285,7 @@ def render():
 
     p.append('<div class="ei-section-alt"><div class="ei-wrap ei-art">\n'
              '<h2 class="ei-h2">' + STEPS_HEADING + '</h2>\n'
-             '<p>The process is the same in every province, because the return '
+             '<p class="ei-lead">The process is the same in every province, because the return '
              'is federal.</p>\n'
              + steps_html()
              + '\n<div class="ei-mid-cta"><a class="ei-btn-blue" href="' + FORM
@@ -279,7 +293,7 @@ def render():
 
     p.append('<div class="ei-section"><div class="ei-wrap ei-art">\n'
              '<h2 class="ei-h2">Who Reviews and Files Your Return</h2>\n'
-             '<p>The same two people handle every province.</p>\n'
+             '<p class="ei-lead">The same two people handle every province.</p>\n'
              + reviewers_html() + '\n</div></div>\n')
 
     p.append('<div class="ei-section-alt"><div class="ei-wrap ei-art">\n'

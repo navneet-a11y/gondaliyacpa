@@ -76,12 +76,26 @@
 .ei-faq details[open] summary:after{transform:rotate(-135deg);margin-top:-2px}
 .ei-faq .ei-a{padding:0 18px 16px;color:#4a5568;line-height:1.75;margin:0}
 @media(max-width:700px){.ei-pgrid{grid-template-columns:1fr}}
+/* Centred section headers, as the service pages have them, and more air
+   between sections. Page-local on purpose: hub.css still left-aligns the
+   headings on the other four hubs, so this is the only hub that centres them
+   until they are republished too.
+   The media query has to be restated here. hub.css sets .ei-art .ei-h2 to
+   1.3em inside its own @media, and a media query adds no specificity, so a
+   plain rule placed after it would otherwise win at every width and leave
+   mobile at the desktop size. */
+.ei-art .ei-h2{text-align:center;font-size:1.6em;margin:0 0 14px}
+.ei-art .ei-lead{text-align:center;max-width:700px;margin:0 auto 16px}
+.ei-section,.ei-section-alt{padding:48px 20px}
+.ei-count{display:flex;width:fit-content;margin:0 auto 18px}
+.ei-jump{justify-content:center;margin:4px 0 0}
+@media(max-width:900px){.ei-art .ei-h2{font-size:1.38em}.ei-section,.ei-section-alt{padding:34px 18px}}
 </style>
 <div class="ei-hero"><div class="ei-hero-inner"><span class="ei-hero-eyebrow">Locations</span><h1>Nil T2 Filing by Province</h1><p class="ei-hero-sub">Nil T2 filing wherever your corporation is registered. Every province page and every service we file, at $300.00 plus HST per tax year.</p><p class="ei-hero-by">Written and reviewed by Sharad Gondaliya, CPA (Ontario), CPA Ontario Membership 61040184.</p><div class="ei-hero-btns"><a class="ei-btn-blue" href="https://corpnilfilingfor300.ca/form/">Start Nil T2 Filing NOW</a></div></div></div>
 <div class="ei-section"><div class="ei-wrap ei-art">
 <h2 class="ei-h2">Every Province Page on This Site</h2>
 <p class="ei-count">Place pages published: <b>[cnf_child_count type="nil_service_place"]</b></p>
-<p>The T2 is a federal return, so the filing itself does not change with the province. What changes is the registry filing that sits beside it, and each province page states that filing and its deadline.</p>
+<p class="ei-lead">The T2 is a federal return, so the filing itself does not change with the province. What changes is the registry filing that sits beside it, and each province page states that filing and its deadline.</p>
 <ul class="ei-jump"><li><a href="#p-ontario">Ontario</a></li><li><a href="#p-british-columbia">British Columbia</a></li></ul>
 <div class="ei-pcard" id="p-ontario">
 <h3><a href="https://corpnilfilingfor300.ca/ontario/">Nil T2 Filing in Ontario</a></h3>
@@ -98,13 +112,13 @@
 </div></div>
 <div class="ei-section-alt"><div class="ei-wrap ei-art">
 <h2 class="ei-h2">How It Works, in Four Steps (Complete Within 10 Minutes)</h2>
-<p>The process is the same in every province, because the return is federal.</p>
+<p class="ei-lead">The process is the same in every province, because the return is federal.</p>
 <ol class="ei-steps"><li>Give basic details like your corporation name.</li><li>Pay $300.00 plus HST per tax year.</li><li>Confirm your tax year dates, shareholder details and the rest of your filing information.</li><li>Sign your Form T183CORP.</li></ol>
 <div class="ei-mid-cta"><a class="ei-btn-blue" href="https://corpnilfilingfor300.ca/form/">Start Nil T2 Filing NOW</a></div>
 </div></div>
 <div class="ei-section"><div class="ei-wrap ei-art">
 <h2 class="ei-h2">Who Reviews and Files Your Return</h2>
-<p>The same two people handle every province.</p>
+<p class="ei-lead">The same two people handle every province.</p>
 <div class="ei-cpa"><div class="ei-cpac"><img loading="lazy" width="118" height="143" src="https://corpnilfilingfor300.ca/wp-content/uploads/2026/09/sharad-gondaliya-cpa.png" alt="Sharad Gondaliya, CPA"><div class="ei-cpat"><h3>Sharad Gondaliya, CPA</h3><p><a href="https://gondaliyacpa.ca/team/sharad-gondaliya-cpa/">Bio</a></p><p class="ei-role">Principal, Registered EFILE Electronic Filer</p><p>647-212-9559</p><p><a href="mailto:info@corpnilfilingfor300.ca">info@corpnilfilingfor300.ca</a></p></div></div><div class="ei-cpac"><img loading="lazy" width="118" height="143" src="https://corpnilfilingfor300.ca/wp-content/uploads/2026/09/vandana-goel-cpa.png" alt="Vandana Goel, CPA"><div class="ei-cpat"><h3>Vandana Goel, CPA</h3><p><a href="https://gondaliyacpa.ca/vandana-goel-cpa/">Bio</a></p><p class="ei-role">Accounting Specialist</p><p>647-250-0242</p><p><a href="mailto:info@corpnilfilingfor300.ca">info@corpnilfilingfor300.ca</a></p></div></div></div>
 </div></div>
 <div class="ei-section-alt"><div class="ei-wrap ei-art">

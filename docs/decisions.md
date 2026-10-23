@@ -4924,3 +4924,46 @@ generous cost nothing: `#7f94ad` is the lightest shade on the ramp that clears
 
 Live 19,018 to 19,120 bytes across four patches, byte-identical to the
 generator. No markup changed, CSS only.
+
+### /locations/ section headings centred, section padding increased
+
+Navneet asked for centred section headings like the service pages, with more
+gap. The service pages set their headings centred at 28 to 32px, so the hub
+heading goes to `text-align:center` at 1.6em, and section padding goes from
+26px to 48px top and bottom.
+
+Three things had to move with the heading or the centring would have looked
+accidental rather than designed:
+
+- The lead paragraph under each heading now carries `.ei-lead`, centred and
+  capped at 700px. Three paragraphs got the class. Longer body text and card
+  contents stay left-aligned, which is correct: centred text is for one or two
+  lines, not for paragraphs people read.
+- `.ei-count`, the published-count pill, is `display:inline-flex`, so
+  `text-align` on it does nothing. Changed to `display:flex;width:fit-content`
+  with auto side margins.
+- `.ei-jump` is a flex row, so it needed `justify-content:center`.
+
+Two decisions worth recording.
+
+**The media query had to be restated.** hub.css sets `.ei-art .ei-h2` to 1.3em
+inside `@media(max-width:900px)`. A media query adds no specificity, and the
+page-local block is emitted after hub.css, so a plain `font-size:1.6em` rule
+would have beaten it at every width and left mobile showing the desktop size.
+The override therefore carries its own `@media(max-width:900px)` block after
+it, dropping to 1.38em and 34px padding. This is the same ordering trap as the
+`.ei-wrap` width earlier in the project, but it does not need `!important`,
+because no theme CSS competes for a custom class; later source order at equal
+specificity is enough.
+
+**Page-local, not in hub.css.** Putting this in hub.css would centre the
+headings on all five hubs, which is the consistent outcome, but hub.css is
+inlined at build time, so the other four would not change until they are
+republished, and the file would disagree with what is live on them. So the
+rules sit in this page's own block and /locations/ is for now the only hub with
+centred headings. Rolling it to the other four is a hub.css edit plus four
+republishes, and would pair naturally with the `#2087c9` contrast fix logged
+above, which needs exactly the same republish.
+
+Live 19,120 to 20,085 bytes across four patches, byte-identical to the
+generator.
