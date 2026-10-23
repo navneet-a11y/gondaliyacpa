@@ -4380,3 +4380,49 @@ The 53-week and federal calculators also carry the full `DATE_JS` helper set
 including the statutory-holiday and business-day functions, which only the
 deadline calculator uses, costing about 1.5 KB of dead code each. Harmless, and
 splitting `DATE_JS` into parts was judged not worth the divergence.
+
+## 2026-10-23 — Rank Math meta is not writable through the connector
+
+Navneet asked whether the new tool pages carry meta tags. They do not, and
+neither do the three published earlier.
+
+Tested directly on post 1172: `wp_update_post_meta` returned
+`ignored_keys: [rank_math_description, rank_math_focus_keyword,
+rank_math_title]` with the notice that the keys are not registered with
+`show_in_rest=true`. Rank Math stores them as ordinary post meta but does not
+expose them to the REST API, so **no Rank Math field on this site can be set
+from here.** This is a connector limitation, not an omission in this batch.
+
+What the pages do carry:
+
+| Field | State |
+|---|---|
+| `<title>` | The post title, written in SEO form |
+| Meta description | The post excerpt, which Rank Math's default `%excerpt%` description template renders. A fallback, not a value written for the page |
+| `cnf_primary_keyword` | Set on all ten. The plan's own field; Rank Math does not read it |
+
+`docs/snippets/rank-math-meta-rest.php` registers `rank_math_title`,
+`rank_math_description`, `rank_math_focus_keyword` and
+`rank_math_canonical_url` with `show_in_rest` across the fifteen post types
+this site uses, behind an `edit_post` auth callback. Installing it in WPCode
+unlocks those fields for all 968 URLs.
+
+**`rank_math_robots` is deliberately left out of that snippet.** It holds the
+site-wide noindex that hard rule 10 depends on until launch, and the
+2026-09-21 decision records that with no staging site it is the only thing
+keeping a half-built site out of the index. Leaving it unwritable means no
+automated edit can flip it by accident.
+
+### Unlogged deviation found while checking this
+
+Plan line 1163 gives an exact title tag and meta description for
+`/tools/t2-short-eligibility-checker/`:
+
+- Title: `T2 Short Eligibility Checker | Free, No Sign-Up`
+- Description: "Check in 8 questions whether your corporation can use the T2
+  Short. Free. No sign-up. Built by a CPA Ontario firm in Toronto."
+
+What is live is neither: `T2 Short Eligibility Checker | All Eight Conditions`
+with an excerpt written at the time. That was my deviation and it was never
+logged. Awaiting Navneet's decision on whether to align to the plan exemplar or
+keep the current wording as a logged departure.
