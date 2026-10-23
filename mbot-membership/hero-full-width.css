@@ -1,0 +1,19 @@
+/* Appended to Appearance > Customize > Additional CSS on October 23, 2026
+   (Customizer revision 57743). To undo, delete this block there. */
+.page-id-39680 .tp-hero,
+.page-id-40986 .am-hero,
+.page-id-43235 .pc-hero,
+.page-id-45335 .pc-hero,
+.page-id-37777 .biz-hero,
+.page-id-41927 .pc-hero {
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+}
+.page-id-39680,
+.page-id-40986,
+.page-id-43235,
+.page-id-45335,
+.page-id-37777,
+.page-id-41927 {
+  overflow-x: clip;
+}
