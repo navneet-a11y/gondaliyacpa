@@ -1,34 +1,30 @@
 <?php
-/**
- * Expose Rank Math's SEO title, meta description and focus keyword to the
- * WordPress REST API.
+/*
+ * Exposes Rank Math's SEO title, meta description, focus keyword and canonical
+ * to the WordPress REST API, so they can be set programmatically.
  *
- * Rank Math stores these as ordinary post meta but does not register them with
- * show_in_rest, so the REST API cannot read or write them. Without this, every
- * page on this site falls back to Rank Math's %excerpt% template for its meta
- * description instead of carrying one written for it, and the SEO title cannot
- * differ from the post title.
+ * rank_math_robots is NOT exposed on purpose. It holds the site-wide noindex
+ * that hard rule 10 depends on until launch, and leaving it unwritable means no
+ * automated edit can flip it by accident. Set that one by hand in Rank Math.
  *
- * NOT exposed, deliberately: rank_math_robots. That is the field holding the
- * site-wide noindex that hard rule 10 depends on until Sharad Gondaliya
- * confirms launch. Leaving it unwritable means no automated edit can flip it by
- * accident. Set it in Rank Math by hand, as the decision of 2026-09-21 says.
- *
- * Install: WPCode, Add Snippet, Add Your Custom Code, PHP Snippet.
- * Insert Method: Auto Insert. Location: Run Everywhere. Then Save and Activate.
- * Paste everything BELOW this comment block, without the opening <?php tag if
- * WPCode supplies its own.
- *
- * @package corpnilfilingfor300
+ * Named functions, not closures, and every declaration is guarded with
+ * function_exists so the snippet is safe if it ever loads twice.
  */
 
-add_action(
-	'init',
-	function () {
+if ( ! function_exists( 'cnf_rank_math_meta_keys' ) ) {
+	function cnf_rank_math_meta_keys() {
+		return array(
+			'rank_math_title',
+			'rank_math_description',
+			'rank_math_focus_keyword',
+			'rank_math_canonical_url',
+		);
+	}
+}
 
-		// Every post type this site publishes structural URLs from, plus the
-		// two built-in ones. A key has to be registered per post type.
-		$post_types = array(
+if ( ! function_exists( 'cnf_rank_math_post_types' ) ) {
+	function cnf_rank_math_post_types() {
+		return array(
 			'post',
 			'page',
 			'nil_vertical',
@@ -45,35 +41,42 @@ add_action(
 			'nil_case_study',
 			'nil_deadline',
 		);
+	}
+}
 
-		$keys = array(
-			'rank_math_title'         => 'wp_strip_all_tags',
-			'rank_math_description'   => 'wp_strip_all_tags',
-			'rank_math_focus_keyword' => 'wp_strip_all_tags',
-			'rank_math_canonical_url' => 'esc_url_raw',
+if ( ! function_exists( 'cnf_rank_math_meta_sanitize' ) ) {
+	function cnf_rank_math_meta_sanitize( $value ) {
+		return wp_strip_all_tags( (string) $value );
+	}
+}
+
+if ( ! function_exists( 'cnf_rank_math_meta_auth' ) ) {
+	function cnf_rank_math_meta_auth( $allowed, $meta_key, $post_id ) {
+		return current_user_can( 'edit_post', $post_id );
+	}
+}
+
+if ( ! function_exists( 'cnf_rank_math_register_rest_meta' ) ) {
+	function cnf_rank_math_register_rest_meta() {
+
+		$post_types = cnf_rank_math_post_types();
+		$meta_keys  = cnf_rank_math_meta_keys();
+
+		$args = array(
+			'type'              => 'string',
+			'single'            => true,
+			'show_in_rest'      => true,
+			'sanitize_callback' => 'cnf_rank_math_meta_sanitize',
+			'auth_callback'     => 'cnf_rank_math_meta_auth',
 		);
 
 		foreach ( $post_types as $post_type ) {
-			foreach ( $keys as $key => $sanitizer ) {
-				register_post_meta(
-					$post_type,
-					$key,
-					array(
-						'type'              => 'string',
-						'single'            => true,
-						'show_in_rest'      => true,
-						'sanitize_callback' => $sanitizer,
-						// Only someone who can already edit the post may change
-						// its SEO fields. This is the same check wp-admin makes.
-						'auth_callback'     => function ( $allowed, $meta_key, $post_id ) {
-							return current_user_can( 'edit_post', $post_id );
-						},
-					)
-				);
+			foreach ( $meta_keys as $meta_key ) {
+				register_post_meta( $post_type, $meta_key, $args );
 			}
 		}
-	},
-	// Priority 20, so this runs after Rank Math has registered its own meta on
-	// the default priority and this registration is the one that stands.
-	20
-);
+	}
+}
+
+/* Priority 20 so this runs after Rank Math registers its own meta. */
+add_action( 'init', 'cnf_rank_math_register_rest_meta', 20 );
