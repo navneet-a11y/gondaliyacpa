@@ -41,7 +41,7 @@ Checked against the live WordPress site on 14 October 2026, updated 16 October 2
 | /share-issuance-transfer/ | P2 | Built | /share-issuance-transfer/ |
 | /extra-provincial-registration/ | P2 | Built | /extra-provincial-registration/ |
 | /not-for-profit-incorporation/ | P2 | Built | /not-for-profit-incorporation/ |
-| /corporate-compliance-subscription/ | P2 | Not built |  |
+| /corporate-compliance-subscription/ | P2 | Draft (page 10586) | /corporate-compliance-subscription/ |
 | /incorporation-bookkeeping-bundle/ | P2 | Built | /incorporation-bookkeeping-bundle/ |
 | /incorporation-corporate-tax-return-bundle/ | P2 | Built | /incorporation-corporate-tax-return-bundle/ |
 | /shareholder-agreement-template/ | P3 | Built | /shareholder-agreement-template/ |

@@ -265,3 +265,7 @@
 ## /shareholder-agreement-template/ (page 10578, published 2026-10-23, meta set by connector)
 - Meta title: Shareholder Agreement Template, Ontario | CPA Firm
 - Meta description: A shareholder agreement template with the tax consequences explained by a CPA firm. We are not a law firm. Have a lawyer review it before you sign.
+
+## /corporate-compliance-subscription/ (page 10586, draft created 2026-10-23, meta set by connector)
+- Meta title: Corporate Compliance Subscription: Annual Plan
+- Meta description: One annual plan for the filings a corporation must make each year: annual return, notice of change, minute book, compliance calendar.
