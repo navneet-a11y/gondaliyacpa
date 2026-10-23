@@ -4348,3 +4348,35 @@ doubling "tax year" inside the price phrase. All three were rewritten before
 anything went live.
 
 Gate clear on all ten. One H1 each, no FAQPage, no HowTo, no non-ASCII.
+
+### Batch 2 published
+
+| Tool | Post | Bytes |
+|---|---|---|
+| unfiled-years-cost-calculator | 1172 | 22,256 |
+| schedule-50-shareholder-threshold-checker | 1174 | 22,119 |
+| 53-week-first-tax-year-checker | 1176 | 24,125 |
+| schedule-24-first-return-checker | 1178 | 22,170 |
+| federal-annual-return-anniversary-calculator | 1180 | 23,760 |
+| dormant-corporation-test | 1182 | 24,938 |
+| gst-hst-nil-filing-checker | 1184 | 22,628 |
+
+Every one byte-identical to its build, confirmed by a zero-change probe after
+creation. Astra layout meta set on each: no sidebar, page-builder, full-width
+container, title, breadcrumbs and featured image disabled, plus
+`cnf_primary_keyword` and `cnf_last_verified_et`.
+
+Posts 1124, 1122 and 1120 were patched with their new sibling links in the same
+pass, at 25,724, 28,299 and 24,056, matching their rebuilt files.
+
+**Known inefficiency, recorded rather than fixed.** The ~9 KB stylesheet is
+duplicated in all ten tool pages' post content, so a style change means ten
+patches and roughly 90 KB is stored ten times. Moving it to the Customizer's
+additional CSS or a WPCode snippet would make it one copy and one edit, but the
+corpnil connector exposes neither `wp_update_custom_css` nor the `wpcode` post
+type, so it cannot be done from here; it needs Navneet to paste it once.
+
+The 53-week and federal calculators also carry the full `DATE_JS` helper set
+including the statutory-holiday and business-day functions, which only the
+deadline calculator uses, costing about 1.5 KB of dead code each. Harmless, and
+splitting `DATE_JS` into parts was judged not worth the divergence.
