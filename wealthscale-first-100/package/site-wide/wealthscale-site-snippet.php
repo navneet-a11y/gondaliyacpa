@@ -9,8 +9,8 @@ if ( ! defined( 'ABSPATH' ) ) { return; }
 
 /* 1. Load the shared widget CSS and JS on every page, plus the Manrope font. */
 add_action( 'wp_enqueue_scripts', function () {
-	$base = content_url( '/uploads/ws/' );
-	$ver  = '1.0.0'; // Change this number every time you upload new widget files, so caches refresh.
+	$base = set_url_scheme( content_url( '/uploads/ws/' ), 'https' ); // Site Address is http; force https so browsers do not block the files as mixed content.
+	$ver  = '1.0.1'; // Change this number every time you upload new widget files, so caches refresh.
 	wp_enqueue_style( 'ws-manrope', 'https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap', array(), null );
 	wp_enqueue_style( 'ws-widgets', $base . 'wealthscale-widgets.css', array(), $ver );
 	wp_enqueue_script( 'ws-widgets', $base . 'wealthscale-widgets.js', array(), $ver, array( 'in_footer' => true, 'strategy' => 'defer' ) );
