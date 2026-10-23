@@ -3986,3 +3986,69 @@ Live and build agree at 17,113, 17,805 and 16,372. The first live patch came
 out 35 bytes above the build because the comment I typed into the replacement
 differed from the generator's; the generator was rewritten to the text that is
 actually live rather than leaving the two to drift.
+
+## 2026-10-23 — Tool pages: FAQ block and sibling cross-links, no FAQPage markup
+
+Navneet sent the gondaliyacpa.ca salary-vs-dividend calculator page and asked
+which sections could be copied across for SEO, naming the FAQ, with the body
+width left as it is and the banner untouched.
+
+**The FAQPage schema in that sample was not copied.** It is the one section of
+it that hard rule 6 forbids outright, and the ban is repeated at plan lines 37,
+1121 and 1582, in launch gates at lines 1343 and 1901, and in the November 18
+deployment test at line 370. This is the third time the schema has been
+declined on this site; the earlier two are at lines 1542 and 2273 above, where
+an already-published FAQPage block was removed from two pages. Nothing is lost
+by declining it: line 1121 records that FAQ rich results ended May 7, 2026, so
+the markup returns nothing and only adds a compliance surface. The question
+format is what carries the value, and that is what was copied.
+
+Four other parts of the sample could not come over either:
+
+| Sample element | Why not |
+|---|---|
+| "EFILE #AT273" in the CTA | Hard rule 5, the EFILE number appears nowhere |
+| "Book Free Tax Planning Consultation" | Hard rule 7, no booking anywhere |
+| "1450+ Five-Star Reviews" | Hard rule 6 and the claim-consistency audit at line 1121 |
+| "flat-fee from $400" | Hard rule 9, every price reads $300.00 plus HST per tax year |
+
+What was added to all three Family 2 tools (1124, 1122, 1120):
+
+- **Six questions each, as a `<details>` disclosure list** under one
+  "Frequently Asked Questions" H2. Eighteen questions in total. This reuses the
+  `.ei-faq` CSS the F2 template already carried unused from the Family 9
+  guides, so **no stylesheet change was needed** and the accordion matches the
+  guides exactly. Bare `<summary>` text, as the F9 guides use, rather than the
+  `<h3>`-in-summary form the Family 4 hubs use: there were no existing headings
+  to lose here, so the F9 pattern was kept for consistency across the one
+  template family.
+- **Every answer restates a claim already in that page's own body copy**, so the
+  block introduces no new factual claim. This is the same basis on which the
+  pillar FAQ was accepted at line 2330. The passed-deadline answer carries the
+  7.4 qualification block in full, verbatim from the page's own danger box.
+- **Sibling cross-links.** Each tool now links to the other two from Read Next.
+  The three tools had **zero** inbound links, against the minimum of three in
+  6(g); this gives each of them two, and the `/tools/` hub will supply the third
+  when Family 16 is built. Outbound went from 4 to 6 per page, well under the
+  6(g) cap of 20.
+
+Checked by token overlap against all 45 Appendix A Family 5 slugs, the test used
+for the pillar FAQ at line 2318. Highest Jaccard overlap is 0.27, on "Does a Nil
+Corporation Still File GIFI Schedules?" against
+`can-i-still-file-a-t2-after-my-corporation-was-dissolved`. No question
+cannibalises a Family 5 page.
+
+**The body width and the banner were not touched**, as asked. The stylesheet is
+byte-identical to the previous version on all three pages: `.ei-wrap` stays at
+1000px and `.ei-hero` is unchanged, so the banner still spans and the FAQ sits
+inside the 1000px column with everything else.
+
+Gate clear on all three. Live byte counts 19,747, 19,914 and 18,510 match the
+rebuilt files exactly, and the rendered output was re-fetched to confirm all six
+`<details>` survive the filter, that `wpautop` did no damage inside the
+`<!-- wp:html -->` wrapper, and that the JSON-LD still holds only WebPage and
+BreadcrumbList.
+
+**Still owed:** Sharad Gondaliya's sign-off on the FAQ copy. The 6(e) math
+review of the three tools was already outstanding and this adds eighteen answers
+to it, though none states anything the page did not already state.

@@ -333,6 +333,20 @@ render();
 TOOLS = [
  dict(
   slug='nil-t2-deadline-calculator',
+  faq=[
+   ('Does the Due Date Move If It Falls on a Weekend?',
+    'Yes. Where the due date falls on a Saturday, a Sunday or a public holiday, a return received on the next business day is on time. The calculator shows that next business day whenever it applies.'),
+   ('My Year-End Is the Last Day of a Month. How Is Six Months Counted?',
+    'From the last day of a month, the due date is the last day of the sixth month after it, so a year-end of August 31 is due the last day of February. From any other day it is the same day of the sixth month after, so a year-end of August 15 is due February 15.'),
+   ('Which Public Holidays Does the Business Days Count Use?',
+    'The nine Ontario public holidays under the Employment Standards Act: New Year&rsquo;s Day, Family Day, Good Friday, Victoria Day, Canada Day, Labour Day, Thanksgiving, Christmas Day and Boxing Day. The August civic holiday is not among them and is not applied.'),
+   ('Is the Due Date Different for a Nil Return?',
+    'No. The deadline comes from the Income Tax Act and does not vary with the amounts on the return or by province. A nil T2 is due within six months of the fiscal year-end, the same as any other T2.'),
+   ('What Happens to a Due Date That Has Already Passed?',
+    'A true nil return carries no percentage late-filing penalty, because that penalty is a percentage of tax owing and the corporation owes $0.00. The unfiled year still stays open forever, invites a demand to file and an arbitrary assessment, blocks a clearance certificate and dissolution, and costs a non-resident-owned corporation $25.00 per day up to $2,500.00. Unfiled years are filed oldest first, one return per tax year.'),
+   ('When Is the Final T2 Due After Dissolution?',
+    'Within six months of dissolution. Until the corporation is formally dissolved a T2 remains due within six months of every fiscal year-end.'),
+  ],
   title='Nil T2 Deadline Calculator | When Your T2 Is Due',
   h1_pre='Nil T2 ', h1_span='Deadline Calculator',
   h1='Nil T2 Deadline Calculator',
@@ -374,13 +388,31 @@ TOOLS = [
     '$2,500.00.</p></div>\n'
     '<p>Unfiled years are filed oldest first, one return per tax year.</p>'),
   ],
-  related=[(SITE + '/deadlines/', 'Every fiscal year-end and its due date'),
+  related=[(HUB + 't2-short-eligibility-checker/',
+            'T2 Short eligibility checker, all eight conditions'),
+           (HUB + 'gifi-schedule-requirement-checker/',
+            'GIFI schedule requirement checker'),
+           (SITE + '/deadlines/', 'Every fiscal year-end and its due date'),
            (SITE + '/guides/first-year-t2-filing/',
             'The complete guide to first-year T2 filing'),
            (SITE + '/pricing/nil-t2-filing-cost/', 'Nil T2 filing cost')]),
 
  dict(
   slug='t2-short-eligibility-checker',
+  faq=[
+   ('Does Qualifying for the T2 Short Change the Price?',
+    'No. Nil T2 filing is $300.00 plus HST per tax year whichever form the corporation files on. Qualifying for the shorter form does not lower it, and failing to qualify does not raise it.'),
+   ('What Happens If the Corporation Fails One Condition?',
+    'One failure puts the corporation on the full T2. The T2 Short is available only to a corporation that meets every one of the eight conditions.'),
+   ('Does the T2 Short Remove Schedules That Would Otherwise Be Required?',
+    'No. Qualifying does not remove a schedule that is otherwise required. The schedules are decided by what the corporation holds and who owns it, not by which form carries them.'),
+   ('Must the Corporation Be a CCPC for the Whole Year?',
+    'Yes. The condition is that the corporation is a Canadian-controlled private corporation throughout the tax year, not merely at the year-end.'),
+   ('Do Taxable Dividends Disqualify the T2 Short?',
+    'Yes, in either direction. A corporation with taxable dividends received fails the T2 Short test and is also outside a nil return altogether, so the checker returning not eligible on that condition is worth reading twice.'),
+   ('Does Nil Net Income Mean Nil for Accounting Purposes?',
+    'No. The condition is nil net income or a loss for income tax purposes, not for accounting purposes.'),
+  ],
   title='T2 Short Eligibility Checker | All Eight Conditions',
   h1_pre='T2 Short ', h1_span='Eligibility Checker',
   h1='T2 Short Eligibility Checker',
@@ -425,7 +457,11 @@ TOOLS = [
     'is also outside a nil return altogether, so the checker returning "not '
     'eligible" on that condition is worth reading twice.</p>'),
   ],
-  related=[(SITE + '/guides/t2-short-eligibility/',
+  related=[(HUB + 'nil-t2-deadline-calculator/',
+            'Nil T2 deadline calculator'),
+           (HUB + 'gifi-schedule-requirement-checker/',
+            'GIFI schedule requirement checker'),
+           (SITE + '/guides/t2-short-eligibility/',
             'The complete guide to T2 Short eligibility'),
            (SITE + '/guides/t2-schedules-on-a-nil-return/',
             'T2 schedules on a nil return'),
@@ -433,6 +469,20 @@ TOOLS = [
 
  dict(
   slug='gifi-schedule-requirement-checker',
+  faq=[
+   ('Does a Nil Corporation Still File GIFI Schedules?',
+    'Usually yes. A corporation inactive all year with nothing at all to report may omit Schedules 100, 125 and 141, but any share capital, cash, shareholder loan, incorporation cost or bank charge makes all three required.'),
+   ('Are the Three Schedules Included in the Fee?',
+    'Yes. All three are included in the fee of $300.00 plus HST per tax year where they are required. There is no per-schedule charge.'),
+   ('Does $100.00 of Share Capital Make the Schedules Required?',
+    'Yes. The exemption needs nothing at all to report. A corporation holding $100.00 of share capital issued at incorporation has something to report, so the schedules are required.'),
+   ('What Are Schedules 100, 125 and 141?',
+    'Schedule 100 is the balance sheet in GIFI codes. Schedule 125 is the income statement, which on a genuinely nil year reports $0.00 on both sides rather than being left out. Schedule 141 is the notes checklist that records who prepared the financial information.'),
+   ('How Many of the Five Triggers Does It Take?',
+    'One. Any one of the five on its own makes all three schedules required.'),
+   ('Why Is the Exemption Narrower Than It Reads?',
+    'Four of the five triggers are present in most corporations from the day they are registered. Most hold share capital, which on its own makes the schedules required.'),
+  ],
   title='GIFI Schedule Requirement Checker | Schedules 100, 125, 141',
   h1_pre='GIFI Schedule ', h1_span='Requirement Checker',
   h1='GIFI Schedule Requirement Checker',
@@ -474,7 +524,11 @@ TOOLS = [
     '<p>All three are included in the fee of ' + PRICE + ' where they are '
     'required. There is no per-schedule charge.</p>'),
   ],
-  related=[(SITE + '/guides/gifi-schedules-100-125-141/',
+  related=[(HUB + 'nil-t2-deadline-calculator/',
+            'Nil T2 deadline calculator'),
+           (HUB + 't2-short-eligibility-checker/',
+            'T2 Short eligibility checker, all eight conditions'),
+           (SITE + '/guides/gifi-schedules-100-125-141/',
             'The complete guide to GIFI Schedules 100, 125 and 141'),
            (SITE + '/guides/t2-schedules-on-a-nil-return/',
             'T2 schedules on a nil return'),
@@ -520,6 +574,14 @@ def render(t):
         cls = 'ei-section-alt' if i % 2 == 0 else 'ei-section'
         p.append('<div class="%s" id="%s"><div class="ei-wrap ei-art">\n'
                  '<h2 class="ei-h2">%s</h2>\n%s\n</div></div>\n' % (cls, k, h2, body))
+
+    p.append('<div class="ei-section"><div class="ei-wrap ei-art">\n'
+             '<h2 class="ei-h2">Frequently Asked Questions</h2>\n'
+             '<div class="ei-faq">\n'
+             + '\n'.join(
+               '<details><summary>%s</summary><div class="ei-faq-a">'
+               '<p>%s</p></div></details>' % (q, ans) for q, ans in t['faq'])
+             + '\n</div>\n</div></div>\n')
 
     p.append('<div class="ei-section"><div class="ei-wrap ei-art">\n'
              '<h2 class="ei-h2">Read Next</h2>\n<ul class="ei-qlist">\n'
