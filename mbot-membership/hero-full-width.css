@@ -17,3 +17,26 @@
 .page-id-41927 {
   overflow-x: clip;
 }
+
+/* Second block, same day (Customizer revision 57746): the other 8 Mississauga pages. */
+.page-id-36145 .mis-hero,
+.page-id-39260 .mg-hero,
+.page-id-39655 .cm-hero,
+.page-id-40351 .im-hero,
+.page-id-41405 .cm-hero,
+.page-id-43695 .rg-hero,
+.page-id-44383 .nm-hero,
+.page-id-44896 .vd-hero {
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+}
+.page-id-36145,
+.page-id-39260,
+.page-id-39655,
+.page-id-40351,
+.page-id-41405,
+.page-id-43695,
+.page-id-44383,
+.page-id-44896 {
+  overflow-x: clip;
+}
