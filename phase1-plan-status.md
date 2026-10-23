@@ -7,7 +7,7 @@ Checked against the live WordPress site on 14 October 2026, updated 16 October 2
 | Group | Planned | Built | Old page only | Not built |
 |---|---|---|---|---|
 | Home | 3 | 3 | 0 | 0 |
-| Services | 26 | 25 | 0 | 1 |
+| Services | 26 | 26 | 0 | 0 |
 | Incorporate by Province and Federal | 13 | 12 | 0 | 1 |
 | Service Areas | 27 | 15 | 9 | 3 |
 | Industries | 34 | 34 | 0 | 0 |
@@ -17,7 +17,7 @@ Checked against the live WordPress site on 14 October 2026, updated 16 October 2
 | Blog | 13 | 4 | 0 | 9 |
 | About, Team, Reviews, Contact and Legal | 24 | 21 | 0 | 3 |
 | French Quebec | 10 | 0 | 0 | 10 |
-| **Total** | **201** | **165** | **9** | **27** |
+| **Total** | **201** | **166** | **9** | **26** |
 
 ## Home
 
@@ -47,7 +47,7 @@ Checked against the live WordPress site on 14 October 2026, updated 16 October 2
 | /shareholder-agreement-template/ | P3 | Built | /shareholder-agreement-template/ |
 | /corporation-revival/ | P3 | Built | /corporation-revival/ |
 | /trademark-search-filing-referral/ | P3 | Built | /trademark-search-filing-referral/ |
-| /business-bank-account-setup/ | P3 | Draft (page 10602) | /business-bank-account-setup/ |
+| /business-bank-account-setup/ | P3 | Built | /business-bank-account-setup/ |
 | /services/ | P1 | Built | /services/ |
 | /numbered-company-incorporation/ | P1 | Built | /numbered-company-incorporation/ |
 | /named-company-incorporation-nuans/ | P1 | Built | /named-company-incorporation-nuans/ |
