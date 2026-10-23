@@ -4540,3 +4540,47 @@ Math title, description and focus keyword; and the F16 fields line 323 requires,
 `cnf_hub_children_query_json`, `cnf_child_count` and `cnf_last_verified_et`.
 
 `/locations/` is now the only one of the five F16 hubs still missing.
+
+## 2026-10-23 — /locations/ published; all five F16 hubs now exist
+
+Page 1191, slug `locations`, 10,621 bytes, byte-identical to
+`build/f16/locations-hub.html`. Entry keyword "nil t2 filing near me" from plan
+line 1203. Rendered output confirms the count line resolving to
+`Place pages published: 24` and no wpautop artifacts: the `wp:html` wrapper was
+carried from the start this time rather than patched in afterwards.
+
+**Links all 24 live Family 4 URLs**, twelve Ontario and twelve British
+Columbia, each under its jurisdiction hub. Every generated URL was checked
+against the live list before publishing: 24 generated, 24 live, none that would
+404 and none live but unlinked. Worth checking rather than composing, because
+the cost slug carries an "in" that the other eleven do not
+(`nil-t2-filing-cost-in-ontario`, not `nil-t2-filing-cost-ontario`).
+
+**No city section was rendered.** Line 1203 feeds this hub from Families 3 and
+4, but zero Family 3 city hubs are built, and a hub that links a family with
+nothing in it is a promise the site cannot keep. The section appears when the
+city hubs do.
+
+The page title first read "Nil T2 Filing by Province and City in Canada" and
+was corrected to drop "and City" before publishing, for the same reason: a
+title cannot promise a section the page does not have. Caught by the link check
+rather than by eye.
+
+### Family 16 is now complete
+
+| Hub | Page | State |
+|---|---|---|
+| `/services/` | 321 | live |
+| `/guides/` | 904 | live |
+| `/blog/` | 1037 | live |
+| `/tools/` | 1187 | live today |
+| `/locations/` | 1191 | live today |
+
+All five were due October 9, 2026, so the family closes fourteen days late.
+Line 1224's contract holds on both new hubs: a live child count from the
+`[cnf_child_count]` shortcode, and links to every child in the family.
+
+**Still open on the older hubs:** pages 904, 321, 1037 and 323 carry no
+`wp:html` wrapper, so wpautop is inserting the same stray tags on them that it
+inserted on `/tools/` before it was wrapped. One-line fix each, not applied
+because it was out of scope.
