@@ -67,7 +67,7 @@ Page 7 "Home (old Astra demo)" is a draft with no public URL: delete it.
 
 | Day | Date | Pages | Status |
 | --- | --- | --- | --- |
-| 1 | Fri Oct 23 | 20 | Live Oct 23: all 20 published, each verified byte for byte (file size + 34). Rank Math title, description and focus keyword still to set once the Rank Math integration is on in Easy MCP AI |
+| 1 | Fri Oct 23 | 20 | Live Oct 23: all 20 published, each verified byte for byte (file size + 34). Rank Math title, description and focus keyword set Oct 23 for all 20 (through Rank Math's own updateMeta route; the Easy MCP integration switch is not needed). Widget CSS and JS were missing from /uploads/ws/; Navneet moved them there and pages now render. Site Address switched to https |
 | 2 | Sat Oct 24 | 20 | Not started |
 | 3 | Sun Oct 25 | 20 | Not started |
 | 4 | Mon Oct 26 | 20 | Not started |
