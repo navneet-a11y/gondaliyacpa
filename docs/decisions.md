@@ -4711,3 +4711,23 @@ nineteen items in total.
 
 That withdraws the "dropped in favour of All services" note above: All services
 is now the overview at the top of the group, not a replacement for it.
+
+### Contact added to the top level
+
+Navneet asked for Contact in the main menu "as well", so it was added at the
+top level rather than moved out of the About dropdown. Contact now appears
+twice, item 1205 at top level and item 317 under About, which is the same
+pattern already used for Services and "All services", and for About and
+"About us".
+
+Six top-level items, twenty in total:
+
+1. Home, `/`
+2. Services, `/services/` — eight children, All services through Locations
+3. Pricing, `/pricing/nil-t2-filing-cost/`
+4. Resources, no link — Guides, Tools, Blog
+5. About, `/about/` — About us, Reviews, Contact
+6. Contact, `/contact-us/`
+
+Both Contact items point at page 190. If the duplicate is unwanted, deleting
+317 leaves the top-level one and shortens the About dropdown to two children.
