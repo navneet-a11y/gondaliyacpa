@@ -4268,3 +4268,83 @@ Two mechanical notes:
 Live byte counts 25,480, 28,027 and 23,790 match the rebuilt files. Gate clear.
 One H1 each, no FAQPage, no HowTo, no non-ASCII, 6 outbound links per page
 against the cap of 20, and the `wp:html` wrapper intact on all three.
+
+## 2026-10-23 — Family 2 batch 2: tools 4 to 10
+
+Seven more tools built from the 6(e) table, which specifies twelve in full.
+Three were already live, so this takes Family 2 to ten of the twelve
+link-earning tools and ten of Appendix A's 150 F2 URLs.
+
+Built: unfiled years cost calculator, Schedule 50 shareholder threshold
+checker, 53-week first tax year checker, Schedule 24 first return checker,
+federal annual return anniversary calculator, dormant corporation test, and
+GST/HST nil filing checker.
+
+### The Ontario annual return calculator was not built, deliberately
+
+6(e) lists an Ontario annual return due date calculator taking the Ontario
+incorporation date and returning the due date. **The plan never states that due
+date.** It says only that the Ontario annual return is filed through the
+Ontario Business Registry, that it moved there in October 2021, and that it is
+not covered by the fee. Line 1212 reserves every jurisdiction claim for Sharad
+Gondaliya's review, and building the calculator would have meant inventing the
+rule to put in it.
+
+The GST/HST nil filing checker, also from 6(e) and fully grounded in line 181
+and the RC145 wording already live, takes its place in this batch. The Ontario
+calculator is **blocked pending Sharad confirming the due-date rule**, and is
+the only one of the twelve not now built or scheduled.
+
+By contrast the federal calculator is well grounded: 60 days after the
+anniversary of incorporation, $12.00, a government fee to which HST does not
+apply, at plan lines 396, 1869, 2125 and 1296.
+
+### Tenth Appendix A conflict, resolved the same way as before
+
+Appendix A names these tools `/catch-up-nil-filing-cost-calculator/`,
+`/unfiled-years-checker/` and `/first-tax-year-53-week-checker/`; 6(e) names
+them `/tools/unfiled-years-cost-calculator/` and
+`/tools/53-week-first-tax-year-checker/`. Resolved in favour of 6(e), as every
+earlier Appendix A conflict in this family was, because the `nil_calculator`
+rewrite base decides the URL.
+
+### Structure shared, not copied
+
+`build_f2b.py` imports `render`, `meta`, `yn`, `a` and `DATE_JS` from
+`build_f2`, so the two batches cannot drift. The navy panel, the 1000px column,
+the FAQ accordion, the stat cards and the `wp:html` wrapper all arrive
+automatically, and a future change to any of them reaches all ten tools.
+
+### 6(g) satisfied without the hub
+
+The three live tools had zero inbound links. The ten now form a link graph in
+which **every tool is linked from at least three others** (range 3 to 5),
+verified programmatically. That clears 6(g)'s minimum before the `/tools/` hub
+exists rather than depending on it, and outbound stays at 7 to 9 per page
+against the cap of 20. The three original tools gained two sibling links each
+to make this work.
+
+### Testing
+
+38 assertions under node across all seven modules, each loaded in its own
+scope so a hoisted `render()` in one cannot replace another's. Boundaries
+exercised: 53 weeks valid at exactly 371 days and invalid at 372; a February 29
+incorporation clamping to February 28 in a non-leap anniversary year; Schedule
+50 required at exactly 10% and not at 9.9%; holdings summing above 100%
+warned; 1, 6 and 20 unfiled years at $300.00, $1,800.00 and $6,000.00; and
+every tool's unanswered, empty and unparseable states.
+
+35 new FAQ questions, overlap-checked against all 45 Appendix A Family 5 slugs
+at 0.43 maximum Jaccard, and no question is duplicated across the ten tools.
+No links in any answer and nothing pointing at `/answers/`, per the standing
+rule.
+
+### A copy defect caught before publishing
+
+The unfiled-years FAQ concatenated the shared `NOT_NIL` string with a sentence
+of its own, so the sister-office routing and the $350.00 price were both stated
+twice in one answer. Two other answers in the same tool read awkwardly, one
+doubling "tax year" inside the price phrase. All three were rewritten before
+anything went live.
+
+Gate clear on all ten. One H1 each, no FAQPage, no HowTo, no non-ASCII.

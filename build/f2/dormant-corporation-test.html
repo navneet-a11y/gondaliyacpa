@@ -1,0 +1,282 @@
+<!-- wp:html -->
+<style>
+.ei-wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+.ei-btn-blue{background:rgba(32,135,201,1);color:#fff !important;padding:13px 26px;border-radius:6px;font-weight:700;font-size:0.95em;text-transform:uppercase;text-decoration:none !important;display:inline-block;line-height:1.4;text-align:center;min-width:120px}
+.ei-section{padding:26px 20px}
+.ei-section-alt{background:#f7f9fc;padding:26px 20px}
+.ei-art .ei-h2{font-weight:800;color:#1a2340;margin:0 0 10px;font-size:1.45em;line-height:1.3}
+.ei-art > *:last-child{margin-bottom:0}
+.ei-art p{color:#4a5568;line-height:1.8}
+.ei-art a{color:rgba(32,135,201,1)}
+.ei-art ul{color:#4a5568;line-height:1.8}
+.ei-info{background:#f0f7fd;border-left:4px solid rgba(32,135,201,1);border-radius:0 8px 8px 0;padding:14px 18px;margin:18px 0}
+.ei-info p{margin:0;color:#1a2340;line-height:1.7}
+.ei-warn{background:#fffbf0;border-left:4px solid #f6ad1a;border-radius:0 8px 8px 0;padding:14px 18px;margin:18px 0}
+.ei-warn p{margin:0;color:#7c5800;line-height:1.7}
+.ei-danger{background:#fff5f5;border-left:4px solid #e53e3e;border-radius:0 8px 8px 0;padding:14px 18px;margin:18px 0}
+.ei-danger p{margin:0;color:#742a2a;line-height:1.7}
+.ei-hero{background:linear-gradient(135deg,#0f1624 0%,#1a2340 55%,#1e3a6e 100%);padding:40px 20px}
+.ei-hero-inner{max-width:860px;margin:0 auto;text-align:center}
+.ei-hero-eyebrow{display:inline-block;background:rgba(32,135,201,0.15);border:1px solid rgba(32,135,201,0.4);border-radius:50px;padding:5px 16px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:rgba(32,135,201,1);margin-bottom:16px;font-size:.8em}
+.ei-hero h1{color:#fff;font-weight:800;line-height:1.2;margin:0 0 14px;font-size:2.1em}
+.ei-hero h1 span{color:#f6ad1a}
+.ei-hero-sub{color:rgba(255,255,255,0.78);max-width:720px;margin:0 auto 10px;line-height:1.75}
+.ei-hero-by{color:rgba(255,255,255,0.6);max-width:720px;margin:0 auto 22px;line-height:1.6;font-size:.86em}
+.ei-hero-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.ei-tbl{width:100%;border-collapse:collapse;margin:18px 0;border:1px solid #d1d5db}
+.ei-tbl th{background:#1a2340;color:#fff;font-weight:700;padding:12px 14px;text-align:left;border:1px solid #374151}
+.ei-tbl td{padding:10px 14px;border:1px solid #d1d5db;color:#2d3748;line-height:1.5}
+.ei-tbl tr:nth-child(even){background:#f7f9fc}
+.ei-tbl tr:hover{background:#edf2f7}
+.ei-updated{color:#718096;font-size:.9em;margin:0 0 18px}
+.ei-toc{background:linear-gradient(180deg,#ffffff,#f7f9fc);border:1px solid #e2e8f0;border-radius:12px;padding:18px 22px;margin:0 0 10px;box-shadow:0 1px 2px rgba(26,35,64,.05)}
+.ei-toc h2{font-size:.76em;font-weight:800;color:#8795ab;margin:0 0 10px;text-transform:uppercase;letter-spacing:1.3px}
+.ei-toc ol{margin:0;padding:0;list-style:none;counter-reset:toc;columns:2;column-gap:30px}
+.ei-toc li{break-inside:avoid;counter-increment:toc;margin:0}
+.ei-toc a{display:flex;gap:10px;align-items:baseline;padding:6px 9px;border-radius:6px;color:#1a2340;text-decoration:none;line-height:1.45}
+.ei-toc a::before{content:counter(toc);color:rgba(32,135,201,1);font-weight:800;font-size:.82em;min-width:15px;flex-shrink:0}
+.ei-toc a:hover{background:#eaf3fb;color:rgba(32,135,201,1);text-decoration:none}
+.ei-cta-inline{background:#1a2340;border-radius:10px;padding:24px 28px;margin:28px 0;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px}
+.ei-cta-inline h3{color:#fff;margin:0 0 4px;font-weight:700}
+.ei-cta-inline p{color:rgba(255,255,255,0.65);margin:0}
+.ei-cta-inline a,.ei-cta-inline a:visited,.ei-cta-inline a:hover,.ei-cta-bottom a,.ei-cta-bottom a:visited,.ei-cta-bottom a:hover,.ei-hero-btns a,.ei-hero-btns a:visited,.ei-hero-btns a:hover{color:#fff !important;text-decoration:none !important}
+.ei-faq{max-width:900px;margin:16px auto 0}
+.ei-faq details{border:1px solid #e2e8f0;border-radius:8px;margin-bottom:9px;background:#fff}
+.ei-faq summary{padding:14px 18px;font-weight:600;color:#1a2340;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:14px;line-height:1.5}
+.ei-faq summary::-webkit-details-marker{display:none}
+.ei-faq summary::after{content:'+';color:rgba(32,135,201,1);font-weight:400;font-size:1.4em;line-height:1;flex-shrink:0;transition:transform .15s ease}
+.ei-faq details[open] summary{color:rgba(32,135,201,1)}
+.ei-faq details[open] summary::after{transform:rotate(45deg)}
+.ei-faq .ei-faq-a{padding:0 18px 15px}
+.ei-faq .ei-faq-a p{margin:0;color:#4a5568;line-height:1.75}
+.ei-art h3{font-weight:700;color:#1a2340;margin:26px 0 8px;font-size:1.15em}
+.ei-qlist{max-width:900px;margin:12px auto 0;padding:0;list-style:none}
+.ei-qlist li{border:1px solid #e2e8f0;border-radius:8px;margin-bottom:10px;background:#fff}
+.ei-qlist a{display:block;padding:16px 20px;font-weight:600;color:#1a2340 !important;text-decoration:none !important}
+.ei-qlist a:hover{background:#f7f9fc;color:rgba(32,135,201,1) !important}
+.ei-cta-bottom{background:linear-gradient(135deg,#0f1624,#1a2340);padding:40px 20px;text-align:center}
+.ei-cta-bottom h2{color:#fff;font-weight:800;margin:0 0 10px;font-size:1.5em}
+.ei-cta-bottom p{color:rgba(255,255,255,0.72);max-width:600px;margin:0 auto 22px;line-height:1.75}
+.entry-header{display:none!important}
+.ast-article-single,.ast-article-single .entry-content{margin-top:0;padding-top:0}
+@media(max-width:900px){.ei-cta-inline{flex-direction:column;text-align:center}.ei-hero h1{font-size:1.6em}.ei-art .ei-h2{font-size:1.3em}.ei-toc ol{columns:1}}
+
+/* Narrower than the guides' 1100px, at Navneet's request. 1000px is the
+   measure the Family 4 service pages already use, so this is a house value
+   rather than a new one. The hero band stays full-bleed: it is .ei-hero that
+   spans, and .ei-hero-inner caps its text at 860px, so neither is touched.
+
+   A service page has exactly one band that spans the viewport, the hero. The
+   guides alternate white and grey .ei-section bands, which span whatever the
+   window is and make the body read full width even with the text capped at
+   1000px. Dropping the grey leaves one continuous column, which is what a
+   service page looks like. The hero still spans. */
+.ei-wrap{max-width:1000px}
+.ei-section-alt{background:none}
+/* The FAQ and Read Next lists come from the guides capped at 900px and
+   centred with auto margins. In the guides' 1100px column that reads as a
+   deliberate inset; in this 1000px one it just leaves them narrower than,
+   and off-axis from, their own H2 and the body copy above. Run them the
+   full measure of the column instead. */
+.ei-faq,.ei-qlist{max-width:none;margin-left:0;margin-right:0}
+/* 1000px, the same measure as .cnf-w on the Family 4 service pages, which
+   Navneet confirmed read correctly.
+
+   !important, which is not decoration here. Measured against a service
+   page screenshot at the same window, the tool body was rendering around
+   1250px: wider than the 1100px base AND wider than the 1000px override,
+   so neither .ei-wrap rule was binding. Two successive specificity levels
+   (0,1,0 then 0,2,0) changed nothing on the front end. Whatever sets the
+   width wins on specificity or carries !important itself, so this does
+   too. The margins are forced with it so the column still centres if the
+   same rule also set a margin.
+
+   The hero is not in the selector and does not move. */
+.ei-wrap.ei-art,.ei-cta-bottom .ei-wrap{max-width:1000px!important;margin-left:auto!important;margin-right:auto!important}
+/* Dark navy calculator panel, after the gondaliyacpa.ca sample Navneet sent.
+
+   The panel is the only thing on the page that asks for input, and as a white
+   card on a white body it read as more body copy. Navy separates the thing you
+   do from the thing you read, which is the whole point of the sample's design.
+
+   Every selector below carries one class more than the base rule it replaces,
+   because the base rules sit earlier in this same stylesheet and some of them
+   (.ei-yn label) are already two-class. The result box is deliberately left
+   light: on navy it reads as the answer card, and its green and red variants
+   still carry the eligible / not eligible meaning. */
+.ei-art .ei-tool{background:#1a2340;border:0;border-radius:14px;
+  padding:28px 30px;box-shadow:0 10px 30px rgba(15,22,36,.18)}
+.ei-art .ei-tool legend{color:#f6ad1a;font-size:1.15em;padding:0 0 14px}
+.ei-art .ei-f label{color:rgba(255,255,255,.82)}
+.ei-art .ei-f input[type=date]{background:rgba(255,255,255,.09);
+  border:1.5px solid rgba(255,255,255,.28);color:#fff;font-weight:700;
+  color-scheme:dark;padding:11px 13px}
+.ei-art .ei-f input[type=date]:focus{border-color:rgba(32,135,201,1);
+  background:rgba(32,135,201,.2);outline:none}
+/* No filter here. color-scheme:dark above already makes Chrome draw the
+   picker glyph light; inverting it on top turned it black again, which is
+   what Navneet's screenshot showed. Opacity only. */
+.ei-art .ei-f input[type=date]::-webkit-calendar-picker-indicator{
+  opacity:.9;cursor:pointer}
+.ei-art .ei-yn{border:1.5px solid rgba(255,255,255,.28)}
+.ei-art .ei-yn label{background:transparent;color:rgba(255,255,255,.75)}
+/* #1a7ab5, not the #2087c9 the base rule uses. White on #2087c9 is 3.91:1,
+   under the 4.5 that bold text at this size needs, and it was already that
+   way on the white card. #1a7ab5 is 4.67:1 and is not a new colour, it is
+   the hover shade .ei-btn-blue already uses. */
+.ei-art .ei-yn input:checked+span{background:#1a7ab5;color:#fff}
+.ei-art .ei-yn label:focus-within span{outline:2px solid #fff;outline-offset:-2px}
+.ei-art .ei-tool .ei-err{color:#ffb4ab}
+.ei-art .ei-tool .ei-out{box-shadow:0 2px 10px rgba(15,22,36,.22)}
+
+/* Hero tags, summary stats and the two-column compare, all after the
+   gondaliyacpa.ca sample. */
+.ei-hero-tags{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;
+  margin:0 0 16px}
+.ei-hero-tag{background:rgba(255,255,255,.08);
+  border:1px solid rgba(255,255,255,.18);border-radius:50px;padding:5px 14px;
+  color:rgba(255,255,255,.78);font-size:.85em;line-height:1.5}
+/* Stat cards sit inside .ei-out, which stays light, so these are white cards
+   on a pale result box rather than on the navy panel. */
+.ei-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;
+  margin:0 0 14px}
+.ei-stat{background:#fff;border:1px solid #e2e8f0;border-radius:10px;
+  padding:13px 15px}
+.ei-stat-l{display:block;color:#718096;font-size:.8em;margin:0 0 5px;
+  line-height:1.4}
+.ei-stat-v{display:block;font-weight:800;color:#1a2340;font-size:1.12em;
+  line-height:1.3}
+.ei-cmp{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:18px 0}
+.ei-cmp-col{border:1px solid #e2e8f0;border-radius:12px;overflow:hidden;
+  background:#fff}
+.ei-cmp-col.a{border-top:3px solid rgba(32,135,201,1)}
+.ei-cmp-col.b{border-top:3px solid #f6ad1a}
+.ei-cmp-hdr{padding:14px 18px;font-weight:800;color:#1a2340}
+.ei-cmp-col.a .ei-cmp-hdr{background:rgba(32,135,201,.07)}
+.ei-cmp-col.b .ei-cmp-hdr{background:rgba(246,173,26,.07)}
+.ei-cmp-row{padding:11px 18px;border-top:1px solid #f0f0f0}
+.ei-cmp-l{display:block;color:#718096;font-size:.84em;margin:0 0 2px}
+.ei-cmp-v{display:block;color:#1a2340;line-height:1.55}
+@media(max-width:700px){.ei-stats{grid-template-columns:1fr}
+  .ei-cmp{grid-template-columns:1fr}}
+.ei-tool{background:#fff;border:1px solid #e2e8f0;border-radius:12px;padding:22px 24px;margin:18px 0;box-shadow:0 1px 2px rgba(26,35,64,.05)}
+.ei-tool legend{font-weight:800;color:#1a2340;font-size:1.05em;padding:0 0 6px}
+.ei-tool fieldset{border:0;margin:0;padding:0}
+.ei-f{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:0 0 14px}
+.ei-f label{font-weight:600;color:#1a2340;flex:1 1 320px;line-height:1.5}
+.ei-f input[type=date]{font:inherit;padding:9px 11px;border:1px solid #cbd5e0;border-radius:7px;color:#1a2340;background:#fff}
+.ei-yn{display:inline-flex;border:1px solid #cbd5e0;border-radius:7px;overflow:hidden;flex:0 0 auto}
+.ei-yn label{flex:0 0 auto;margin:0;padding:8px 16px;cursor:pointer;font-weight:700;color:#4a5568;background:#fff;line-height:1.2}
+.ei-yn input{position:absolute;opacity:0;width:0;height:0}
+.ei-yn input:checked+span{background:rgba(32,135,201,1);color:#fff}
+.ei-yn span{display:block;padding:8px 16px;margin:-8px -16px}
+.ei-yn label:focus-within span{outline:2px solid #1a2340;outline-offset:-2px}
+.ei-out{margin:16px 0 0;padding:16px 18px;border-radius:9px;border-left:5px solid #cbd5e0;background:#f7f9fc}
+.ei-out.ok{border-left-color:#2f855a;background:#f0fff4}
+.ei-out.no{border-left-color:#c53030;background:#fff5f5}
+.ei-out h3{margin:0 0 6px;font-size:1.1em;color:#1a2340}
+.ei-out p{margin:0 0 8px;color:#4a5568;line-height:1.7}
+.ei-out ul{margin:6px 0 8px 20px;color:#4a5568;line-height:1.7}
+.ei-out .ei-note{font-size:.88em;color:#718096;margin:10px 0 0}
+.ei-big{font-size:1.5em;font-weight:800;color:rgba(32,135,201,1);display:block;margin:2px 0 6px}
+.ei-tool .ei-err{color:#c53030;font-weight:600;margin:6px 0 0}
+</style>
+<div class="ei-hero"><div class="ei-hero-inner"><span class="ei-hero-eyebrow">Eligibility Tool</span><h1>Dormant <span>Corporation Test</span></h1><p class="ei-hero-sub">Ten questions decide whether your corporation is nil for the tax year or has activity that puts it outside a nil return.</p><div class="ei-hero-tags"><span class="ei-hero-tag">Ten activity questions</span><span class="ei-hero-tag">Names the disqualifying item</span><span class="ei-hero-tag">Interest counts as income</span><span class="ei-hero-tag">Checked before you pay</span></div><p class="ei-hero-by">Written and reviewed by Sharad Gondaliya, CPA (Ontario), CPA Ontario Membership 61040184.</p><div class="ei-hero-btns"><a class="ei-btn-blue" href="https://corpnilfilingfor300.ca/form/">Start Nil T2 Filing NOW</a></div></div></div>
+<div class="ei-section"><div class="ei-wrap ei-art">
+<p class="ei-updated">Last reviewed: October 23, 2026</p>
+<div class="ei-tool">
+<fieldset><legend>What the corporation did in the tax year</legend>
+<div class="ei-f"><label id="ld1">Revenue or sales of any amount in the tax year.</label><span class="ei-yn" role="radiogroup" aria-labelledby="ld1"><label><input type="radio" name="d1" value="y"><span>Yes</span></label><label><input type="radio" name="d1" value="n"><span>No</span></label></span></div>
+<div class="ei-f"><label id="ld2">Interest credited on a bank balance, however small.</label><span class="ei-yn" role="radiogroup" aria-labelledby="ld2"><label><input type="radio" name="d2" value="y"><span>Yes</span></label><label><input type="radio" name="d2" value="n"><span>No</span></label></span></div>
+<div class="ei-f"><label id="ld3">A dividend paid to a shareholder.</label><span class="ei-yn" role="radiogroup" aria-labelledby="ld3"><label><input type="radio" name="d3" value="y"><span>Yes</span></label><label><input type="radio" name="d3" value="n"><span>No</span></label></span></div>
+<div class="ei-f"><label id="ld4">A dividend received from another corporation.</label><span class="ei-yn" role="radiogroup" aria-labelledby="ld4"><label><input type="radio" name="d4" value="y"><span>Yes</span></label><label><input type="radio" name="d4" value="n"><span>No</span></label></span></div>
+<div class="ei-f"><label id="ld5">Rental income from property the corporation owns.</label><span class="ei-yn" role="radiogroup" aria-labelledby="ld5"><label><input type="radio" name="d5" value="y"><span>Yes</span></label><label><input type="radio" name="d5" value="n"><span>No</span></label></span></div>
+<div class="ei-f"><label id="ld6">Investment income of any kind.</label><span class="ei-yn" role="radiogroup" aria-labelledby="ld6"><label><input type="radio" name="d6" value="y"><span>Yes</span></label><label><input type="radio" name="d6" value="n"><span>No</span></label></span></div>
+<div class="ei-f"><label id="ld7">Wages, salary or any payroll paid.</label><span class="ei-yn" role="radiogroup" aria-labelledby="ld7"><label><input type="radio" name="d7" value="y"><span>Yes</span></label><label><input type="radio" name="d7" value="n"><span>No</span></label></span></div>
+<div class="ei-f"><label id="ld8">An asset bought or sold.</label><span class="ei-yn" role="radiogroup" aria-labelledby="ld8"><label><input type="radio" name="d8" value="y"><span>Yes</span></label><label><input type="radio" name="d8" value="n"><span>No</span></label></span></div>
+<div class="ei-f"><label id="ld9">A transaction with a related or associated corporation.</label><span class="ei-yn" role="radiogroup" aria-labelledby="ld9"><label><input type="radio" name="d9" value="y"><span>Yes</span></label><label><input type="radio" name="d9" value="n"><span>No</span></label></span></div>
+<div class="ei-f"><label id="ld10">GST/HST charged or collected on anything.</label><span class="ei-yn" role="radiogroup" aria-labelledby="ld10"><label><input type="radio" name="d10" value="y"><span>Yes</span></label><label><input type="radio" name="d10" value="n"><span>No</span></label></span></div>
+</fieldset>
+<div class="ei-out" id="out" role="status" aria-live="polite"><p>Answer all ten and the result appears here.</p></div>
+</div>
+<div class="ei-info"><p>Gondaliya CPA Professional Corporation is a registered EFILE electronic filer. Returns are prepared and transmitted in Canada. Credentials are never shared and never used offshore.</p></div>
+</div></div>
+<div class="ei-section-alt" id="counts"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">What Counts as Activity</h2>
+<p>No revenue of any kind, no expense claimed, no payroll, no asset bought or sold, no dividend paid or received, and no inter-company transaction. Interest credited on a bank balance is income, so a year with interest in it is not a no-activity year, however small the amount.</p>
+<div class="ei-info"><p>Share capital, cash, a shareholder loan, an incorporation cost or a bank charge does not stop the year being nil. It does make GIFI Schedules 100, 125 and 141 required, and those are included in the fee.</p></div>
+</div></div>
+<div class="ei-section" id="not-nil"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">Where the Corporation Is Not Nil</h2>
+<div class="ei-warn"><p>A holding corporation with investment income, a rental corporation and a corporation that paid or received a dividend are not nil. Those are handled by Gondaliya CPA Professional Corporation at gondaliyacpa.ca at $350.00 plus HST per year.</p></div>
+<p>Other cases that are not nil include a corporation that is not a Canadian-controlled private corporation, an amalgamation, or a corporation already dissolved or struck. We route you to our sister office at gondaliyacpa.ca at $350.00 plus HST per year before you pay. If we find it after you pay, we refund you in full.</p>
+</div></div>
+<div class="ei-section-alt" id="obligation"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">Dormant Does Not Mean Exempt</h2>
+<p>A dormant corporation files a T2 within six months of each fiscal year-end, every year, until it is formally dissolved. There is no dormancy form, no status to elect and no threshold below which the obligation stops.</p>
+</div></div>
+<div class="ei-section"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">Frequently Asked Questions</h2>
+<div class="ei-faq">
+<details><summary>Does Bank Interest Make a Year Not Nil?</summary><div class="ei-faq-a"><p>Yes. Interest credited on a bank balance is income, so a year with interest in it is not a no-activity year, however small the amount.</p></div></details>
+<details><summary>Is There a Form That Tells CRA a Corporation Is Dormant?</summary><div class="ei-faq-a"><p>No. There is no dormancy form and no way to pause the T2. The annual return is the only thing that reports the year, and it reports nil amounts where there was no activity.</p></div></details>
+<details><summary>Does Share Capital Stop a Year Being Nil?</summary><div class="ei-faq-a"><p>No. Share capital, cash, a shareholder loan, an incorporation cost or a bank charge does not stop a year being nil. It does make GIFI Schedules 100, 125 and 141 required, and those are included in the fee.</p></div></details>
+<details><summary>What Happens If the Test Says Not Nil?</summary><div class="ei-faq-a"><p>We route the work to our sister office at gondaliyacpa.ca at $350.00 plus HST per year, before you pay. If we find it after you pay, we refund you in full.</p></div></details>
+<details><summary>Can a Corporation Be Dormant for Many Years?</summary><div class="ei-faq-a"><p>Yes. There is no limit on consecutive nil years. What causes trouble is a dormant year left unfiled, not the dormancy itself.</p></div></details>
+</div>
+</div></div>
+<div class="ei-section"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">Read Next</h2>
+<ul class="ei-qlist">
+<li><a href="https://corpnilfilingfor300.ca/tools/gst-hst-nil-filing-checker/">GST/HST nil filing checker</a></li>
+<li><a href="https://corpnilfilingfor300.ca/tools/nil-t2-deadline-calculator/">Nil T2 deadline calculator</a></li>
+<li><a href="https://corpnilfilingfor300.ca/tools/t2-short-eligibility-checker/">T2 Short eligibility checker, all eight conditions</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/dormant-and-inactive-corporations/">The complete guide to dormant and inactive corporations</a></li>
+<li><a href="https://corpnilfilingfor300.ca/pricing/nil-t2-filing-cost/">Nil T2 filing cost</a></li>
+</ul>
+</div></div>
+<div class="ei-cta-bottom"><div class="ei-wrap"><h2>Nil T2 Filing, $300.00 plus HST per tax year</h2><p>Type your corporation name, pick your unfiled years, pay, and sign Form T183CORP on a secure screen. Your CRA confirmation is emailed within 3 business days.</p><a class="ei-btn-blue" href="https://corpnilfilingfor300.ca/form/">Start Nil T2 Filing NOW</a></div></div>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebPage", "@id": "https://corpnilfilingfor300.ca/tools/dormant-corporation-test/#webpage", "url": "https://corpnilfilingfor300.ca/tools/dormant-corporation-test/", "name": "Dormant Corporation Test | Is Your Corporation Nil?", "description": "Ten questions decide whether your corporation is nil for the tax year or has activity that puts it outside a nil return.", "inLanguage": "en-CA", "dateModified": "2026-10-23", "author": {"@type": "Person", "name": "Sharad Gondaliya", "honorificSuffix": "CPA", "url": "https://corpnilfilingfor300.ca/sharad-gondaliya-cpa/"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Nil T2 filing in Canada", "item": "https://corpnilfilingfor300.ca/"}, {"@type": "ListItem", "position": 2, "name": "Tools", "item": "https://corpnilfilingfor300.ca/tools/"}, {"@type": "ListItem", "position": 3, "name": "Dormant Corporation Test", "item": "https://corpnilfilingfor300.ca/tools/dormant-corporation-test/"}]}]}</script>
+<script>
+(function(){
+var PRICE_JS="$300.00 plus HST per tax year";
+var DISC_JS="This tool gives general information and is not a filed return.";
+function pick(n){var e=document.querySelector('input[name="'+n+'"]:checked');
+  return e?e.value:null;}
+
+var ITEMS=[["d1", "revenue or sales"], ["d2", "interest credited on a bank balance"], ["d3", "a dividend paid"], ["d4", "a dividend received"], ["d5", "rental income"], ["d6", "investment income"], ["d7", "payroll paid"], ["d8", "an asset bought or sold"], ["d9", "an inter-company transaction"], ["d10", "GST/HST charged or collected"]];
+var out=document.getElementById('out');
+function render(){
+  var hits=[],un=0;
+  ITEMS.forEach(function(g){var v=pick(g[0]);
+    if(v===null){un++;}else if(v==='y'){hits.push(g[1]);}});
+  if(un>0){out.className='ei-out';
+    out.innerHTML='<p>'+un+' of 10 still to answer.</p>';return;}
+  var h;
+  if(hits.length===0){
+    h='<h3>This corporation looks nil for the tax year</h3>'+
+      '<span class="ei-big">Nil</span>'+
+      '<p>Nothing you have reported is activity, so the year is reported as a nil '+
+      'T2 at '+PRICE_JS+'. Share capital, cash, a shareholder loan, an '+
+      'incorporation cost or a bank charge does not stop a year being nil, though '+
+      'it does make GIFI Schedules 100, 125 and 141 required.</p>';
+  }else{
+    h='<h3>This corporation is not nil for the tax year</h3>'+
+      '<span class="ei-big">Not nil</span>'+
+      '<p>Because the corporation has '+
+      hits.join(', ').replace(/,([^,]*)$/,(hits.length>1?' and':'')+'$1')+
+      '. Any one of the ten on its own is enough.</p>'+
+      '<p>A corporation like this is routed to our sister office at '+
+      'gondaliyacpa.ca at $350.00 plus HST per year, before you pay. If we find '+
+      'it after you pay, we refund you in full.</p>';
+  }
+  h+='<p class="ei-note">'+DISC_JS+'</p>';
+  out.className='ei-out '+(hits.length>0?'no':'ok');out.innerHTML=h;
+}
+Array.prototype.forEach.call(document.querySelectorAll('.ei-tool input[type=radio]'),
+  function(r){r.addEventListener('change',render);});
+render();
+
+})();
+</script>
+<!-- /wp:html -->
