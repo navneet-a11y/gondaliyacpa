@@ -139,3 +139,5 @@ Rule: never set ws_neha_reviewed_on before Neha confirms her review in writing i
 | Broker Rating Methodology | 92 | 87 | 86346 |
 
 All by user 1 (Sharad Gondaliya, CPA), comments closed. ws_neha_reviewed_on not set on any page.
+
+Oct 23 evening: search engine visibility turned on (Settings > Reading, by Navneet); all 20 URLs submitted to IndexNow through Rank Math Instant Indexing ("Successfully submitted 20 URLs").
