@@ -102,8 +102,11 @@ TOOL_CSS = """
   color-scheme:dark;padding:11px 13px}
 .ei-art .ei-f input[type=date]:focus{border-color:rgba(32,135,201,1);
   background:rgba(32,135,201,.2);outline:none}
+/* No filter here. color-scheme:dark above already makes Chrome draw the
+   picker glyph light; inverting it on top turned it black again, which is
+   what Navneet's screenshot showed. Opacity only. */
 .ei-art .ei-f input[type=date]::-webkit-calendar-picker-indicator{
-  filter:invert(1);opacity:.8;cursor:pointer}
+  opacity:.9;cursor:pointer}
 .ei-art .ei-yn{border:1.5px solid rgba(255,255,255,.28)}
 .ei-art .ei-yn label{background:transparent;color:rgba(255,255,255,.75)}
 /* #1a7ab5, not the #2087c9 the base rule uses. White on #2087c9 is 3.91:1,

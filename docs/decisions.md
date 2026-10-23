@@ -4192,3 +4192,21 @@ Navneet asked for unique FAQs with no links to other FAQ pages. Both already
 hold and are now a standing rule: the eighteen questions were overlap-checked
 against all 45 Family 5 slugs at 0.27 maximum, and the answers contain zero
 links of any kind, with nothing on these pages pointing at `/answers/`.
+
+### Calendar icon: the two dark-mode fixes were cancelling each other
+
+The picker glyph came out black on the navy field. Cause was mine: the rule set
+`color-scheme:dark` on the input *and* `filter:invert(1)` on
+`::-webkit-calendar-picker-indicator`. `color-scheme:dark` already makes Chrome
+draw the glyph light, so inverting it on top turned it black again.
+
+The screenshot is what identifies this rather than a guess. Had `color-scheme`
+not been taking effect, the native glyph would be dark and the invert would have
+rendered it white, the opposite of what appeared. A dark glyph with the invert
+applied therefore proves the pre-invert glyph was already light.
+
+Filter dropped, `color-scheme:dark` kept, opacity only. Keeping `color-scheme`
+rather than keeping the filter also gives a dark popup calendar panel, which
+matches the navy field.
+
+Live 23,176, 23,343 and 21,939 match the rebuilt files. Gate clear.
