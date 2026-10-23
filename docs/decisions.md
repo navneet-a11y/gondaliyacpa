@@ -4630,3 +4630,46 @@ home page, the menu, `/locations/`, `/guides/`, and the Family 9 guides that
 match a tool. For `/locations/`: the two jurisdiction hubs, the 24 Family 4
 pages, the home page and the menu. Neither needs anything unbuilt, unlike the
 city hubs Family 3 still owes.
+
+## 2026-10-23 — Primary menu restructured to Navneet's four-item spec
+
+Menu 2, "Primary", rebuilt to the structure Navneet supplied. Twelve items,
+four top level:
+
+| # | Top level | Links to | Dropdown |
+|---|---|---|---|
+| 1 | Services | `/services/` | All services `/services/`, Locations `/locations/` |
+| 2 | Pricing | `/pricing/nil-t2-filing-cost/` | none |
+| 3 | Resources | not a link | Guides `/guides/`, Tools `/tools/`, Blog `/blog/` |
+| 4 | About | `/about/` | About us `/about/`, Reviews `/reviews/`, Contact `/contact-us/` |
+
+Three departures from the spec as written, all forced:
+
+- **`/contact/` does not exist.** The live page is `/contact-us/`, page 190.
+  Pointed there; the spec's URL would have been a 404.
+- **Resources has no page to point at.** There is no `/resources/` URL, so it is
+  a custom item with `#`, a parent that opens the dropdown rather than
+  navigating. If a Resources landing page is ever wanted, the item re-points in
+  one call.
+- **Home was removed**, because the spec is four items and Home is not among
+  them. Astra's logo links to the home page, so the route survives, but this is
+  the one change worth a second look. Re-adding it is one call.
+
+Pricing now points at the Family 8 cost page, post 794, not at `/pricing/`
+page 323. That is what the spec asked for and it matches the Home row's
+mandatory target in 6(g), which names `/pricing/nil-t2-filing-cost/` and not
+`/pricing/`. Page 323 is now unlinked from the menu.
+
+Also removed: the six service pages that hung under Services (Nil T2 Filing,
+Catch-Up, Dormant, Final T2, T2 Short, Inactive Holding). They are reachable
+through `/services/`, which is what "All services" is for.
+
+**Side effect worth noting against the entry above.** `/tools/` and
+`/locations/` each gain a navigation link. Line 1553 excludes navigation links
+from the inbound minimum for F1, F4 and F13 only, so these do count toward
+F16's 20. That takes `/tools/` from 1 to 2 and `/locations/` from 0 to 1. Still
+far short; the up-links from the ten tool pages and the home page row are the
+real work.
+
+Menu 3, "Primary (2)", is a leftover starter menu of `#services`-style anchors
+and was left alone.
