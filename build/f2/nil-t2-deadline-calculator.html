@@ -64,8 +64,15 @@
 /* Narrower than the guides' 1100px, at Navneet's request. 1000px is the
    measure the Family 4 service pages already use, so this is a house value
    rather than a new one. The hero band stays full-bleed: it is .ei-hero that
-   spans, and .ei-hero-inner caps its text at 860px, so neither is touched. */
+   spans, and .ei-hero-inner caps its text at 860px, so neither is touched.
+
+   A service page has exactly one band that spans the viewport, the hero. The
+   guides alternate white and grey .ei-section bands, which span whatever the
+   window is and make the body read full width even with the text capped at
+   1000px. Dropping the grey leaves one continuous column, which is what a
+   service page looks like. The hero still spans. */
 .ei-wrap{max-width:1000px}
+.ei-section-alt{background:none}
 .ei-tool{background:#fff;border:1px solid #e2e8f0;border-radius:12px;padding:22px 24px;margin:18px 0;box-shadow:0 1px 2px rgba(26,35,64,.05)}
 .ei-tool legend{font-weight:800;color:#1a2340;font-size:1.05em;padding:0 0 6px}
 .ei-tool fieldset{border:0;margin:0;padding:0}

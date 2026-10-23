@@ -3964,3 +3964,25 @@ everywhere, that is a separate decision across four generators, not a side
 effect of this one.
 
 Live matches the build: 1124 16,722, 1122 17,414, 1120 15,981.
+
+### 2026-10-23 — tool pages: the grey bands were what read as full width
+
+Navneet, after the 1000px change: make the width like the other service pages.
+
+The text column was already 1000px, the same as `.cnf-w` on every Family 4
+page, so the width was not the difference. The difference was that the guides'
+stylesheet alternates white and grey `.ei-section` bands, and those span the
+viewport. The body read full width even with the text capped. A service page
+has exactly one band that spans: the hero.
+
+Dropped the grey with `.ei-section-alt{background:none}`, leaving one
+continuous column. The hero still spans, which Navneet said was right.
+
+`.ei-cta-bottom` also still spans. Left alone deliberately: it bookends the
+hero, and a Family 4 page has no equivalent band to match against, so there is
+nothing to copy. Easy to constrain if it should go too.
+
+Live and build agree at 17,113, 17,805 and 16,372. The first live patch came
+out 35 bytes above the build because the comment I typed into the replacement
+differed from the generator's; the generator was rewritten to the text that is
+actually live rather than leaving the two to drift.
