@@ -4105,3 +4105,45 @@ Width on these pages has now gone 1100 to 1000 to 860 over three rounds. If 860
 is still wide, the next step is not another guess: the cap only bites when the
 window is wider than it, so the browser width is what decides what Navneet
 actually sees.
+
+### Width forced with !important at 1000px, after two specificity levels failed
+
+The 860px change made no difference on the front end, and Navneet confirmed the
+Family 4 service pages read correctly.
+
+Measuring the two screenshots against each other settles what is happening. On
+the service page the content runs about 230 to 1690 of a 1920-wide capture; on
+the tool page about 50 to 1880. Taking the service page's `.cnf-w` as its known
+1000px, the tool body was rendering around **1250px** at the same window. That
+is wider than the 1100px base rule and wider than the 1000px override, so
+**neither `.ei-wrap` max-width was binding at all.** The three width rounds
+(1100 to 1000 to 860) were changing a declaration that never applied, which is
+why nothing moved.
+
+The live page could not be fetched to find the competing rule: the egress proxy
+returns 403 on corpnilfilingfor300.ca, so the cause is still unidentified. What
+is established is that 0,1,0 and then 0,2,0 both lost, so the competitor either
+outranks 0,2,0 or carries `!important`.
+
+Set to the service pages' own measure and forced:
+
+```
+.ei-wrap.ei-art,.ei-cta-bottom .ei-wrap{max-width:1000px!important;
+  margin-left:auto!important;margin-right:auto!important}
+```
+
+`!important` is evidence-led here rather than habit. The margins are forced
+alongside the width so the column still centres if whatever sets the width also
+set a margin. The hero is not in the selector; `.ei-hero`, `.ei-hero-inner` and
+`.ei-hero h1` were checked byte-identical against the previous build.
+
+Live byte counts 20,988, 21,155 and 19,751 match the rebuilt files. Gate clear.
+
+The first live patch landed 365 bytes short of the build because the rule was
+replaced without the comment above it; the comment was patched in a second pass
+rather than leaving live and build to drift.
+
+**If this still shows no change, the remaining explanation is the LiteSpeed page
+cache**, since `!important` removes the override hypothesis. Appending an unknown
+query string to the URL bypasses the cache and tests it in one click without
+purging anything.

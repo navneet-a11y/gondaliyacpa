@@ -68,12 +68,20 @@ TOOL_CSS = """
    and off-axis from, their own H2 and the body copy above. Run them the
    full measure of the column instead. */
 .ei-faq,.ei-qlist{max-width:none;margin-left:0;margin-right:0}
-/* Narrower again, at Navneet's request. 860px is not a new number: it is
-   .ei-hero-inner's measure, so the body column now sits exactly under the
-   hero text instead of running wider than it. Specificity 0,2,0 rather
-   than a bare .ei-wrap, so nothing single-class outranks it. The hero
-   band itself is untouched and still spans the viewport. */
-.ei-wrap.ei-art,.ei-cta-bottom .ei-wrap{max-width:860px}
+/* 1000px, the same measure as .cnf-w on the Family 4 service pages, which
+   Navneet confirmed read correctly.
+
+   !important, which is not decoration here. Measured against a service
+   page screenshot at the same window, the tool body was rendering around
+   1250px: wider than the 1100px base AND wider than the 1000px override,
+   so neither .ei-wrap rule was binding. Two successive specificity levels
+   (0,1,0 then 0,2,0) changed nothing on the front end. Whatever sets the
+   width wins on specificity or carries !important itself, so this does
+   too. The margins are forced with it so the column still centres if the
+   same rule also set a margin.
+
+   The hero is not in the selector and does not move. */
+.ei-wrap.ei-art,.ei-cta-bottom .ei-wrap{max-width:1000px!important;margin-left:auto!important;margin-right:auto!important}
 .ei-tool{background:#fff;border:1px solid #e2e8f0;border-radius:12px;padding:22px 24px;margin:18px 0;box-shadow:0 1px 2px rgba(26,35,64,.05)}
 .ei-tool legend{font-weight:800;color:#1a2340;font-size:1.05em;padding:0 0 6px}
 .ei-tool fieldset{border:0;margin:0;padding:0}
