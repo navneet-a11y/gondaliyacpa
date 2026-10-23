@@ -4496,3 +4496,47 @@ Page 904 carries `cnf_child_count: 12` while **17** Family 9 guides are live.
 Line 1224 requires a live count and says counts are never hand-typed; this one
 is hand-typed and five behind. Not fixed here because the field is a symptom:
 the hub needs the automatic count the plan specifies, not a corrected number.
+
+## 2026-10-23 — /tools/ hub published (Family 16)
+
+Page 1187, slug `tools`, 9,133 bytes, byte-identical to
+`build/f16/tools-hub.html`. The link confirms `https://corpnilfilingfor300.ca/tools/`,
+so a page occupies the `nil_calculator` rewrite base without collision, exactly
+as page 904 does on the `nil_guide` base.
+
+Links all ten children, which satisfies line 1154's "Each hub links every child
+in its family" and closes the last 6(g) dependency: the tools now have their
+third inbound link from somewhere other than each other. Structure, CSS and
+card pattern are taken from page 904 so the two hubs cannot drift; the only
+addition is the proven width override.
+
+### Correction to the note above about a stale child count
+
+The earlier entry said the guides hub carries a hand-typed stale count. **That
+was wrong and is withdrawn.** Page 904's visible count line is
+`[cnf_child_count type="nil_guide"]`, a shortcode, and it resolves: the new hub
+rendered `Tools published: <b>10</b>` from the same shortcode. The displayed
+count is live and always has been, which is what line 1224 requires. Only the
+stored `cnf_child_count` meta field is stale at 12 against 17 guides, and that
+field is pipeline data, not the number anyone sees.
+
+### wpautop was damaging the hub markup
+
+Published first without a `wp:html` wrapper, matching page 904. The rendered
+output came back with a stray `</p>` after the hero eyebrow, an unclosed `<p>`
+around the CTA button, and the JSON-LD wrapped in a `<p>`. `has_blocks()` is
+false without a `wp:` comment, so wpautop ran.
+
+Wrapped in `<!-- wp:html -->` and re-fetched. All three artifacts gone, and the
+shortcode still resolves, because `do_shortcode` runs on `the_content` at
+priority 11, after `do_blocks` at 9. Both facts were checked against the
+rendered page rather than reasoned about.
+
+**Page 904 carries the same three artifacts** and the same one-line fix applies.
+Not done here, since it was not in scope.
+
+Meta set: Astra page-builder, full-width, title and breadcrumbs disabled; Rank
+Math title, description and focus keyword; and the F16 fields line 323 requires,
+`cnf_hub_children_query_json`, `cnf_child_count` and `cnf_last_verified_et`.
+
+`/locations/` is now the only one of the five F16 hubs still missing.
