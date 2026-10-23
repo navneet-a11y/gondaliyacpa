@@ -1,0 +1,24 @@
+{
+ "id": 57195,
+ "url": "https://gondaliyacpa.ca/accountant-for-canadian-companies-expanding-to-the-us/",
+ "title": "Accounting and Tax Services for Canadian Companies Expanding to the US",
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "expertise/service card",
+   "rule": "R1",
+   "before": "We set the salary and dividend mix for the owners, paying enough T4 salary to build RRSP room while the balance flows as dividends, keeping combined tax near the 12.2% Ontario small-business rate rather than 53.53%.",
+   "after": "We set the salary and dividend mix for the owners, paying enough T4 salary to build RRSP room while the balance flows as dividends, keeping combined tax near the 11.2% (12.2% before July 1, 2026) Ontario small-business rate rather than 53.53%.",
+   "note": "First R1 change on page; parenthetical added."
+  },
+  {
+   "location": "Visible",
+   "section": "expertise/service card",
+   "rule": "R1",
+   "before": "We incorporate under the Ontario Business Corporations Act, giving you a separate legal entity and roughly the 12.2% Ontario small-business rate on active income against a top personal rate of 53.53%.",
+   "after": "We incorporate under the Ontario Business Corporations Act, giving you a separate legal entity and roughly the 11.2% Ontario small-business rate on active income against a top personal rate of 53.53%.",
+   "note": ""
+  }
+ ],
+ "page_note": ""
+}

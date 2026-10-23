@@ -1,0 +1,32 @@
+{
+ "id": 57256,
+ "url": "https://gondaliyacpa.ca/accountant-for-digital-nomads/",
+ "title": "Accounting and Tax Services for Digital Nomads",
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "expertise/service card",
+   "rule": "R1",
+   "before": " brings the Ontario combined charge on active business income down to about 12.2% within a $500,000 ceiling, read against profit and never against billings.",
+   "after": " brings the Ontario combined charge on active business income down to about 11.2% (12.2% before July 1, 2026) within a $500,000 ceiling, read against profit and never against billings.",
+   "note": "First R1 change on page; parenthetical added."
+  },
+  {
+   "location": "Visible",
+   "section": "FAQ",
+   "rule": "R1",
+   "before": "\">It depends on how much profit genuinely stays behind, which is the same test as for anybody else. The arithmetic is the familiar one. Amounts that stay inside a Canadian corporation meet a combined Ontario charge of something near 12.2% while they sit within the $500,000 active-business ceiling; take the same amounts out to live on and they run up a personal scale whose top is 53.53%.",
+   "after": "\">It depends on how much profit genuinely stays behind, which is the same test as for anybody else. The arithmetic is the familiar one. Amounts that stay inside a Canadian corporation meet a combined Ontario charge of something near 11.2% while they sit within the $500,000 active-business ceiling; take the same amounts out to live on and they run up a personal scale whose top is 53.53%.",
+   "note": "Visible and JSON-LD copies are identical over a long span, so before starts at the distinguishing markup to stay unique."
+  },
+  {
+   "location": "JSON-LD",
+   "section": "FAQ",
+   "rule": "R1",
+   "before": ":\"It depends on how much profit genuinely stays behind, which is the same test as for anybody else. The arithmetic is the familiar one. Amounts that stay inside a Canadian corporation meet a combined Ontario charge of something near 12.2% while they sit within the $500,000 active-business ceiling; take the same amounts out to live on and they run up a personal scale whose top is 53.53%.",
+   "after": ":\"It depends on how much profit genuinely stays behind, which is the same test as for anybody else. The arithmetic is the familiar one. Amounts that stay inside a Canadian corporation meet a combined Ontario charge of something near 11.2% while they sit within the $500,000 active-business ceiling; take the same amounts out to live on and they run up a personal scale whose top is 53.53%.",
+   "note": "Visible and JSON-LD copies are identical over a long span, so before starts at the distinguishing markup to stay unique. JSON-LD copy of the visible FAQ answer; mirrors the visible change."
+  }
+ ],
+ "page_note": ""
+}

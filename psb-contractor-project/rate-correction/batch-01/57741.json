@@ -7,17 +7,17 @@
    "location": "Visible",
    "section": "FAQ",
    "rule": "R1",
-   "before": "; is a specified investment business, and the income it earns is not active business income. The practical effect is that the roughly 12.2% Ontario combined rate on the first $500,000 of active business income is out of reach, and the income is taxed at the ordinary corporate rate instead.",
-   "after": "; is a specified investment business, and the income it earns is not active business income. The practical effect is that the roughly 11.2% (12.2% before July 1, 2026) Ontario combined rate on the first $500,000 of active business income is out of reach, and the income is taxed at the ordinary corporate rate instead.",
-   "note": "First R1 change on page; parenthetical added."
+   "before": "2; is a specified investment business, and the income it earns is not active business income. The practical effect is that the roughly 12.2% Ontario combined rate on the first $500,000 of active business income is out of reach, and the income is taxed at the ordinary corporate rate instead.",
+   "after": "2; is a specified investment business, and the income it earns is not active business income. The practical effect is that the roughly 11.2% (12.2% before July 1, 2026) Ontario combined rate on the first $500,000 of active business income is out of reach, and the income is taxed at the ordinary corporate rate instead.",
+   "note": "Visible and JSON-LD copies are identical over a long span, so before starts at the distinguishing markup to stay unique. First R1 change on page; parenthetical added."
   },
   {
    "location": "JSON-LD",
    "section": "FAQ",
    "rule": "R1",
-   "before": "- is a specified investment business, and the income it earns is not active business income. The practical effect is that the roughly 12.2% Ontario combined rate on the first $500,000 of active business income is out of reach, and the income is taxed at the ordinary corporate rate instead.",
-   "after": "- is a specified investment business, and the income it earns is not active business income. The practical effect is that the roughly 11.2% (12.2% before July 1, 2026) Ontario combined rate on the first $500,000 of active business income is out of reach, and the income is taxed at the ordinary corporate rate instead.",
-   "note": "JSON-LD copy of the visible FAQ answer; mirror the visible change."
+   "before": " - is a specified investment business, and the income it earns is not active business income. The practical effect is that the roughly 12.2% Ontario combined rate on the first $500,000 of active business income is out of reach, and the income is taxed at the ordinary corporate rate instead.",
+   "after": " - is a specified investment business, and the income it earns is not active business income. The practical effect is that the roughly 11.2% (12.2% before July 1, 2026) Ontario combined rate on the first $500,000 of active business income is out of reach, and the income is taxed at the ordinary corporate rate instead.",
+   "note": "Visible and JSON-LD copies are identical over a long span, so before starts at the distinguishing markup to stay unique. JSON-LD copy of the visible FAQ answer; mirrors the visible change including the parenthetical."
   }
  ],
  "page_note": ""

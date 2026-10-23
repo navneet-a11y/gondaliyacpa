@@ -5,11 +5,11 @@
  "rows": [
   {
    "location": "Visible",
-   "section": "body paragraph",
+   "section": "intro",
    "rule": "R1",
-   "before": "12.2%<",
-   "after": "11.2% (12.2% before July 1, 2026)<",
-   "note": "First R1 change on page; parenthetical added."
+   "before": "g>12.2%",
+   "after": "g>11.2% (12.2% before July 1, 2026)",
+   "note": "Visible and JSON-LD copies are identical over a long span, so before starts at the distinguishing markup to stay unique. First R1 change on page; parenthetical added."
   },
   {
    "location": "Visible",
@@ -29,7 +29,7 @@
   },
   {
    "location": "Visible",
-   "section": "body paragraph",
+   "section": "FAQ",
    "rule": "R1",
    "before": "Corporate returns built from that reconciliation, with about 12.2% combined Ontario reaching the first $500,000 of active business income under section 125 and read against profit rather than against a dashboard figure.",
    "after": "Corporate returns built from that reconciliation, with about 11.2% combined Ontario reaching the first $500,000 of active business income under section 125 and read against profit rather than against a dashboard figure.",

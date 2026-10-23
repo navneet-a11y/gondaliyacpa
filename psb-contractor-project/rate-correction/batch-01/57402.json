@@ -1,0 +1,40 @@
+{
+ "id": 57402,
+ "url": "https://gondaliyacpa.ca/accountant-for-foreign-investors-in-canadian-real-estate/",
+ "title": "Accounting and Tax Services for Foreign Investors in Canadian Real Estate",
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "expertise/service card",
+   "rule": "R1",
+   "before": "The combined Ontario rate of about 12.2% on the first $500,000 of active business income is the figure most owners have in mind when they incorporate, and more than one condition stands between a non-resident-owned property company and it.",
+   "after": "The combined Ontario rate of about 11.2% (12.2% before July 1, 2026) on the first $500,000 of active business income is the figure most owners have in mind when they incorporate, and more than one condition stands between a non-resident-owned property company and it.",
+   "note": "First R1 change on page; parenthetical added."
+  },
+  {
+   "location": "Visible",
+   "section": "case study card",
+   "rule": "R1",
+   "before": " A non-resident investor registered an Ontario corporation to buy a Thornbury property, having been told abroad that a Canadian company would pay around 12.2% on its first $500,000.",
+   "after": " A non-resident investor registered an Ontario corporation to buy a Thornbury property, having been told abroad that a Canadian company would pay around 11.2% on its first $500,000.",
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "FAQ",
+   "rule": "R1",
+   "before": "\">It depends on the exit you have in mind, and it is costed rather than assumed. Two points come up on nearly every call. First, incorporating does not by itself answer the Non-Resident Speculation Tax question, because whether a corporation counts as a foreign entity under Ontario's rules is decided by those rules read against your share register, and many owners incorporate expecting that to settle it. Second, the combined Ontario rate of about 12.2%",
+   "after": "\">It depends on the exit you have in mind, and it is costed rather than assumed. Two points come up on nearly every call. First, incorporating does not by itself answer the Non-Resident Speculation Tax question, because whether a corporation counts as a foreign entity under Ontario's rules is decided by those rules read against your share register, and many owners incorporate expecting that to settle it. Second, the combined Ontario rate of about 11.2%",
+   "note": "Visible and JSON-LD copies are identical over a long span, so before starts at the distinguishing markup to stay unique."
+  },
+  {
+   "location": "JSON-LD",
+   "section": "FAQ",
+   "rule": "R1",
+   "before": ":\"It depends on the exit you have in mind, and it is costed rather than assumed. Two points come up on nearly every call. First, incorporating does not by itself answer the Non-Resident Speculation Tax question, because whether a corporation counts as a foreign entity under Ontario's rules is decided by those rules read against your share register, and many owners incorporate expecting that to settle it. Second, the combined Ontario rate of about 12.2%",
+   "after": ":\"It depends on the exit you have in mind, and it is costed rather than assumed. Two points come up on nearly every call. First, incorporating does not by itself answer the Non-Resident Speculation Tax question, because whether a corporation counts as a foreign entity under Ontario's rules is decided by those rules read against your share register, and many owners incorporate expecting that to settle it. Second, the combined Ontario rate of about 11.2%",
+   "note": "Visible and JSON-LD copies are identical over a long span, so before starts at the distinguishing markup to stay unique. JSON-LD copy of the visible FAQ answer; mirrors the visible change."
+  }
+ ],
+ "page_note": ""
+}

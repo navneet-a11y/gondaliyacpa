@@ -1,0 +1,48 @@
+{
+ "id": 57215,
+ "url": "https://gondaliyacpa.ca/accountant-for-us-citizens-living-in-canada/",
+ "title": "Accounting and Tax Services for US Citizens Living in Canada",
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "expertise/service card",
+   "rule": "R1",
+   "before": "We keep your Canadian active income under the $500,000 Small Business Deduction limit using ITA section 125, so the Canadian side stays near 12.2% rather than a top personal rate of 53.53%.",
+   "after": "We keep your Canadian active income under the $500,000 Small Business Deduction limit using ITA section 125, so the Canadian side stays near 11.2% (12.2% before July 1, 2026) rather than a top personal rate of 53.53%.",
+   "note": "First R1 change on page; parenthetical added."
+  },
+  {
+   "location": "Visible",
+   "section": "expertise/service card",
+   "rule": "R1",
+   "before": "We protect the Small Business Deduction under ITA section 125 so active income stays near the 12.2% Ontario combined rate, and watch the associated-corporation rules where you control more than one company.",
+   "after": "We protect the Small Business Deduction under ITA section 125 so active income stays near the 11.2% Ontario combined rate, and watch the associated-corporation rules where you control more than one company.",
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "case study card",
+   "rule": "R1",
+   "before": "It worked exactly as intended here: active income taxed near 12.2%, surplus retained in the company, salary and dividends split to manage the personal rate.",
+   "after": "It worked exactly as intended here: active income taxed near 11.2%, surplus retained in the company, salary and dividends split to manage the personal rate.",
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "FAQ",
+   "rule": "R1",
+   "before": "\">Substantially, and this is the one place where the standard Canadian answer can be actively wrong for you. On the Canadian side a CCPC is attractive for the usual reasons: roughly a 12.2% Ontario combined rate on the first $500,000 of active income under ITA section 125 against a top personal rate of 53.53%, with surplus retained in the company.",
+   "after": "\">Substantially, and this is the one place where the standard Canadian answer can be actively wrong for you. On the Canadian side a CCPC is attractive for the usual reasons: roughly an 11.2% Ontario combined rate on the first $500,000 of active income under ITA section 125 against a top personal rate of 53.53%, with surplus retained in the company.",
+   "note": "Visible and JSON-LD copies are identical over a long span, so before starts at the distinguishing markup to stay unique. Article changed from \"a\" to \"an\"."
+  },
+  {
+   "location": "JSON-LD",
+   "section": "FAQ",
+   "rule": "R1",
+   "before": ":\"Substantially, and this is the one place where the standard Canadian answer can be actively wrong for you. On the Canadian side a CCPC is attractive for the usual reasons: roughly a 12.2% Ontario combined rate on the first $500,000 of active income under ITA section 125 against a top personal rate of 53.53%, with surplus retained in the company.",
+   "after": ":\"Substantially, and this is the one place where the standard Canadian answer can be actively wrong for you. On the Canadian side a CCPC is attractive for the usual reasons: roughly an 11.2% Ontario combined rate on the first $500,000 of active income under ITA section 125 against a top personal rate of 53.53%, with surplus retained in the company.",
+   "note": "Visible and JSON-LD copies are identical over a long span, so before starts at the distinguishing markup to stay unique. JSON-LD copy of the visible FAQ answer; mirrors the visible change. Article changed from \"a\" to \"an\"."
+  }
+ ],
+ "page_note": ""
+}
