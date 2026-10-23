@@ -3862,3 +3862,29 @@ bundle would collide. Worth knowing before 150 of these exist.
   built correctly without a province input, and the "plus HST" correction has to
   settle first.
 - Sharad Gondaliya checks the math and reviews the wording on every tool page.
+
+## 2026-10-23 — the three tools are drafted, not published
+
+Navneet asked for draft links before anything goes live, which also suits 6(e)'s
+own rule that Sharad Gondaliya checks the math on every tool page.
+
+| Tool | ID | Bytes |
+|---|---|---|
+| nil-t2-deadline-calculator | 1124 | 16,354 |
+| t2-short-eligibility-checker | 1122 | 17,046 |
+| gifi-schedule-requirement-checker | 1120 | 15,613 |
+
+Each probed live and returned its generated file's byte count, so all three
+transferred exactly. All carry the Astra layout meta and a last-verified date.
+
+Preview, logged in to wp-admin:
+  https://corpnilfilingfor300.ca/?post_type=nil_calculator&p=1124
+  https://corpnilfilingfor300.ca/?post_type=nil_calculator&p=1122
+  https://corpnilfilingfor300.ca/?post_type=nil_calculator&p=1120
+
+A draft is not reachable logged out, which is the point of sharing these first.
+On publish they take their /tools/<slug>/ URLs.
+
+Note for the review: the tools are the one family where reading the page is not
+enough. The maths runs in the browser, so the thing to check is the result
+screen changing as answers change, not the prose around it.
