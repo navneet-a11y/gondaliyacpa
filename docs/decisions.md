@@ -4453,3 +4453,46 @@ description carrying a price states it as $300.00 plus HST per tax year.
 
 `rank_math_robots` stays unexposed, so the launch noindex is still hand-set
 only.
+
+## 2026-10-23 — Hub meta set, and where the plan puts the tools hub
+
+SEO title, description and focus keyword written to the four live hub pages:
+`/services/` (321), `/guides/` (904), `/blog/` (1037) and `/pricing/` (323).
+`/services/` carries plan line 1177's exemplar text, with "including HST per
+year" changed to "plus HST per tax year" per Navneet's standing override and
+hard rule 9. `/pricing/` is not one of the five F16 hubs but is a live index, so
+it was done in the same pass. Its focus keyword is "nil t2 filing price", not
+"nil t2 filing cost", because line 1550 reserves that exact phrase for
+`/pricing/nil-t2-filing-cost/` and to no other URL.
+
+### Where the plan puts the tools hub
+
+**Plan line 1154.** Family 16, hub and index pages, five URLs on the `page` post
+type: `/services/`, `/tools/`, `/locations/`, `/guides/`, `/blog/`, with the
+contract "Each hub links every child in its family". Line 1224 adds that no hub
+publishes without a live child count, that counts "update automatically and are
+never hand-typed", and that **all five were due live on October 9, 2026.**
+
+**Three exist. `/tools/` and `/locations/` do not, and are two weeks overdue.**
+
+### Eleventh Appendix A conflict
+
+Appendix A Family 16 names a different five: `/what-we-file/`,
+`/who-this-is-for/`, `/provinces/`, `/all-calculators/`, `/service-areas/`. So
+Appendix A calls the tools hub `/all-calculators/` where line 1154 calls it
+`/tools/`.
+
+Resolved in favour of **`/tools/`**, on the same reasoning as every earlier
+conflict in this family. The `nil_calculator` rewrite base is `tools`, so all
+ten tool URLs already are `/tools/<slug>/`, and the BreadcrumbList on every one
+of them already names `https://corpnilfilingfor300.ca/tools/` at position 2. A
+hub at `/all-calculators/` would sit outside the tree its own children live in.
+Page 904 at `/guides/`, alongside the `nil_guide` base `guides`, is the proof
+that a page can occupy a CPT rewrite base without collision.
+
+### Stale child count found on the guides hub
+
+Page 904 carries `cnf_child_count: 12` while **17** Family 9 guides are live.
+Line 1224 requires a live count and says counts are never hand-typed; this one
+is hand-typed and five behind. Not fixed here because the field is a symptom:
+the hub needs the automatic count the plan specifies, not a corrected number.
