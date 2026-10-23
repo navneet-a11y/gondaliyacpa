@@ -4,7 +4,7 @@
 - `<h1>`: `Tax Accountant for Digital Platforms in Ontario and Across Canada`
 - WordPress page title (site convention): `Accounting and Tax Services for Digital Platforms`
 - City-card label: `Digital Platform Tax Accountant in`
-- Status: **DRAFT** 2026-10-23, page ID **57752**, 117,455 bytes stored and verified byte-for-byte against the local build. Awaiting instruction to publish.
+- Status: **PUBLISHED** 2026-10-23, page ID **57752**, 117,455 bytes stored and verified unchanged after publish. Live at https://gondaliyacpa.ca/accountant-for-digital-platforms/
 
 Note on the H1: the source row reads `Accountant for Digital Platforms in Ontario and Across
 Canada`, without "Tax". The standing H1 rule overrides the row, so the H1 opens `Tax Accountant

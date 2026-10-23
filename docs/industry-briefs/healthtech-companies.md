@@ -4,7 +4,7 @@
 - `<h1>`: `Tax Accountant for Healthtech Companies in Ontario and Across Canada`
 - WordPress page title (site convention): `Accounting and Tax Services for Healthtech Companies`
 - City-card label: `Healthtech Tax Accountant in`
-- Status: **DRAFT** 2026-10-23, page ID **57751**, 116,608 bytes stored and verified byte-for-byte against the local build. Awaiting instruction to publish.
+- Status: **PUBLISHED** 2026-10-23, page ID **57751**, 116,608 bytes stored and verified unchanged after publish. Live at https://gondaliyacpa.ca/accountant-for-healthtech-companies/
 
 Note on the H1: the source row reads `Accountant for Healthtech Companies in Ontario and Across
 Canada`, without "Tax". The standing H1 rule overrides the row, so the H1 opens `Tax Accountant
