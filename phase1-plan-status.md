@@ -63,7 +63,7 @@ Checked against the live WordPress site on 14 October 2026, updated 16 October 2
 | Planned URL | Priority | Status | Live URL |
 |---|---|---|---|
 | /incorporate-by-province/ | P1 | Built | /incorporate-by-province/ |
-| /which-province-should-i-incorporate-in/ | P1 | Not built |  |
+| /which-province-should-i-incorporate-in/ | P1 | Draft (page 10611) | /which-province-should-i-incorporate-in/ |
 | /federal-incorporation/ | P1 | Built | /federal-incorporation/ |
 | /incorporate-in-ontario/ | P1 | Built | /incorporate-in-ontario/ |
 | /incorporate-in-alberta/ | P1 | Built | /incorporate-in-alberta/ |
