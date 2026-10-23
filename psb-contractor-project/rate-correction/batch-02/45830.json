@@ -1,0 +1,24 @@
+{
+ "id": 45830,
+ "url": "https://gondaliyacpa.ca/accounting-and-tax-services-for-small-businesses/",
+ "title": "Accounting and Tax Services for Small Businesses",
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "Case study - results (Vaughan marketing agency)",
+   "rule": "R1",
+   "before": "<li>Kept income taxed at 12.2% instead of 26.5%</li>",
+   "after": "<li>Kept income taxed at 11.2% (12.2% before July 1, 2026) instead of 26.5%</li>",
+   "note": "Case-study result stated without a date as the current SBD-taxed rate; treated as current. If Sharad dates this engagement before July 1, 2026, switch to R3 (leave)."
+  },
+  {
+   "location": "Visible",
+   "section": "Case study - results (Vaughan marketing agency)",
+   "rule": "R4",
+   "before": "<li>Saved $5,005 in corporate tax</li>",
+   "after": "<li>Saved $5,355 in corporate tax</li>",
+   "note": "Sharad to confirm figure. $5,005 = $35,000 x (26.5% - 12.2% = 14.3%), so the implied income kept under the limit is $35,000. At 11.2%: $35,000 x (26.5% - 11.2% = 15.3%) = $5,355. If the engagement predates July 1, 2026, leave both this and the 12.2% row as is."
+  }
+ ],
+ "page_note": "Both occurrences are in one case-study card; no JSON-LD, meta or calculator occurrences. No 3.2%, 0.122, 0.032 or $600K. Other savings figures on the page ($8,200 etc.) have no stated base and are not clearly computed from 12.2%."
+}

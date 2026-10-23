@@ -1,0 +1,16 @@
+{
+ "id": 47825,
+ "url": "https://gondaliyacpa.ca/accountant-for-plumbers/",
+ "title": "Accounting and Tax Services for Plumbers",
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "Case study - what we did (plumbing job costing and pay mix)",
+   "rule": "R1",
+   "before": "and modelled a salary-and-dividend mix that held the 12.2% small-business rate on the first $500,000 of active income.",
+   "after": "and modelled a salary-and-dividend mix that held the 11.2% (12.2% before July 1, 2026) small-business rate on the first $500,000 of active income.",
+   "note": "Case-study result stated without a date as the current SBD-taxed rate; treated as current. If Sharad dates this engagement before July 1, 2026, switch to R3 (leave)."
+  }
+ ],
+ "page_note": "Only one 12.2% occurrence, in a case-study card; no JSON-LD, meta or calculator occurrences. No 3.2%, 0.122, 0.032 or $600K. 'Saved $23,600 per year in combined corporate and personal tax' has no stated base; not clearly computed from 12.2%."
+}

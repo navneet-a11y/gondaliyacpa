@@ -1,0 +1,32 @@
+{
+ "id": 45030,
+ "url": "https://gondaliyacpa.ca/medical-professional-corporations-mpc-passive-income-tosi-rules/",
+ "title": "Medical Professional Corporations (MPC) — Passive Income & TOSI Rules",
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "The passive income grind section",
+   "rule": "R1",
+   "before": "that active practice income is taxed at the general rate of about 26.5% in Ontario instead of the low 12.2%.",
+   "after": "that active practice income is taxed at the general rate of about 26.5% in Ontario instead of the low 11.2% (12.2% before July 1, 2026).",
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "FAQ - What happens to my tax rate if I lose the small business deduction?",
+   "rule": "R1",
+   "before": "The active income that would have been taxed at the low combined rate of about 12.2% in Ontario is instead taxed at the general rate",
+   "after": "The active income that would have been taxed at the low combined rate of about 11.2% in Ontario is instead taxed at the general rate",
+   "note": ""
+  },
+  {
+   "location": "JSON-LD",
+   "section": "FAQ schema - What happens to my tax rate if I lose the small business deduction?",
+   "rule": "R1",
+   "before": "\"text\":\"The active income that would have been taxed at the low combined rate of about 12.2% in Ontario is instead taxed at the general rate",
+   "after": "\"text\":\"The active income that would have been taxed at the low combined rate of about 11.2% in Ontario is instead taxed at the general rate",
+   "note": "JSON-LD copy, in _elementor_data only."
+  }
+ ],
+ "page_note": "Elementor page: the live source is the _elementor_data post meta (widget 'html'); post_content is a stripped fallback copy. Visible 'before' strings are exact, unique substrings of post_content and also occur in the decoded _elementor_data html; the JSON-LD FAQPage copy exists only in _elementor_data (decoded), and its 'before' strings are verified unique there. Apply the edits to _elementor_data, not just post_content. No 3.2%, 0.122, 0.032 or $600K."
+}

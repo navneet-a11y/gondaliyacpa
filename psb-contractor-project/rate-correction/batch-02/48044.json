@@ -1,0 +1,16 @@
+{
+ "id": 48044,
+ "url": "https://gondaliyacpa.ca/accountant-for-walk-in-clinics/",
+ "title": "Accounting and Tax Services for Walk-In Clinics",
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "Case study - what we did (MPC purification and IPP)",
+   "rule": "R1",
+   "before": "and restructured the salary needed to support it, protecting the 12.2% small-business rate on active income.",
+   "after": "and restructured the salary needed to support it, protecting the 11.2% (12.2% before July 1, 2026) small-business rate on active income.",
+   "note": "Case-study result stated without a date as the current SBD-taxed rate; treated as current. If Sharad dates this engagement before July 1, 2026, switch to R3 (leave)."
+  }
+ ],
+ "page_note": "Only one 12.2% occurrence, in a case-study card; no JSON-LD, meta or calculator occurrences. No 3.2%, 0.122, 0.032 or $600K. The same card's 'Saved $31,800 in tax by restoring the small business deduction' has no stated base, so it is not clearly computed from 12.2%; Sharad may want to confirm it."
+}

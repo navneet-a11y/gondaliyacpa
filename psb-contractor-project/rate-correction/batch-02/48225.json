@@ -1,0 +1,16 @@
+{
+ "id": 48225,
+ "url": "https://gondaliyacpa.ca/accountant-for-commercial-landlords/",
+ "title": "Accounting and Tax Services for Commercial Landlords",
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "Case study - what we did (Ottawa industrial landlord)",
+   "rule": "R1",
+   "before": "then documented the active management and services to defend the 12.2% rate on the first $500,000 under section 125(7).",
+   "after": "then documented the active management and services to defend the 11.2% (12.2% before July 1, 2026) rate on the first $500,000 under section 125(7).",
+   "note": "Case-study result stated without a date as the current SBD-taxed rate; treated as current. If Sharad dates this engagement before July 1, 2026, switch to R3 (leave)."
+  }
+ ],
+ "page_note": "Only one 12.2% occurrence, in a case-study card; no JSON-LD, meta or calculator occurrences. No 3.2%, 0.122, 0.032 or $600K. The same card says 'Saved $22,800 a year at the corporate small-business rate' - base amount not shown, so not clearly computed from 12.2%; Sharad may want to confirm it."
+}

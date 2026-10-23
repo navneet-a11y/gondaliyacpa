@@ -1,0 +1,16 @@
+{
+ "id": 47606,
+ "url": "https://gondaliyacpa.ca/accountant-for-incorporated-businesses/",
+ "title": "Accounting and Tax Services for Incorporated Businesses",
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "Case study - result",
+   "rule": "R1",
+   "before": "<li>Kept the full $500,000 SBD at the 12.2% rate</li>",
+   "after": "<li>Kept the full $500,000 SBD at the 11.2% (12.2% before July 1, 2026) rate</li>",
+   "note": "Case-study result stated without a date as the current SBD-taxed rate; treated as current. If Sharad dates this engagement before July 1, 2026, switch to R3 (leave)."
+  }
+ ],
+ "page_note": "Only one 12.2% occurrence, in a case-study result list; no JSON-LD, meta or calculator occurrences. No 3.2%, 0.122, 0.032 or $600K. 'Saved $21,300 per year' in the same card has no stated base; not clearly computed from 12.2%."
+}

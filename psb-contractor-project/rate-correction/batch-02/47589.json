@@ -1,0 +1,16 @@
+{
+ "id": 47589,
+ "url": "https://gondaliyacpa.ca/accountant-for-side-hustle-businesses/",
+ "title": "Accounting and Tax Services for Side-Hustle Businesses",
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "Case study - results",
+   "rule": "R1",
+   "before": "<li>Retained profit taxed at about 12.2% instead of a top personal rate</li>",
+   "after": "<li>Retained profit taxed at about 11.2% (12.2% before July 1, 2026) instead of a top personal rate</li>",
+   "note": "Case-study result stated without a date as the current SBD-taxed rate; treated as current. If Sharad dates this engagement before July 1, 2026, switch to R3 (leave)."
+  }
+ ],
+ "page_note": "Only one 12.2% occurrence, in a case-study result list; no JSON-LD, meta or calculator occurrences. No 3.2%, 0.122, 0.032 or $600K. 'Saved $11,400 in the first year' has no stated base; not clearly computed from 12.2%."
+}

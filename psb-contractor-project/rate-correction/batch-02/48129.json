@@ -1,0 +1,16 @@
+{
+ "id": 48129,
+ "url": "https://gondaliyacpa.ca/accountant-for-parking-lot-businesses/",
+ "title": "Accounting and Tax Services for Parking Lot Businesses",
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "Case study - problem (specified investment business risk)",
+   "rule": "R1",
+   "before": "a characterization that would strip the $500,000 Small Business Deduction and tax the first dollar of parking income at the high rate instead of 12.2%.",
+   "after": "a characterization that would strip the $500,000 Small Business Deduction and tax the first dollar of parking income at the high rate instead of 11.2% (12.2% before July 1, 2026).",
+   "note": "Case-study result stated without a date as the current SBD-taxed rate; treated as current. If Sharad dates this engagement before July 1, 2026, switch to R3 (leave)."
+  }
+ ],
+ "page_note": "Only one 12.2% occurrence, in a case-study card; no JSON-LD, meta or calculator occurrences. No 3.2%, 0.122, 0.032 or $600K."
+}

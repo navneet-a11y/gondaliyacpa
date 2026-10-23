@@ -1,0 +1,56 @@
+{
+ "id": 45409,
+ "url": "https://gondaliyacpa.ca/should-i-buy-assets-personally-or-through-my-corporation/",
+ "title": "Should I Buy Assets Personally or Through My Corporation?",
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "Quick Answer",
+   "rule": "R1",
+   "before": "Assets that earn business income belong in the corporation: bought with pre-tax dollars taxed near 12.2%, depreciated, HST recovered.",
+   "after": "Assets that earn business income belong in the corporation: bought with pre-tax dollars taxed near 11.2% (12.2% before July 1, 2026), depreciated, HST recovered.",
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Investments: The Deferral and Its Two Prices",
+   "rule": "R1",
+   "before": "money that would have shrunk past 53% on the way out instead compounds from a base taxed near 12.2%.",
+   "after": "money that would have shrunk past 53% on the way out instead compounds from a base taxed near 11.2%.",
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "FAQ - Why do people say corporate dollars are cheaper?",
+   "rule": "R1 + R4",
+   "before": "Because the corporation keeps roughly 87.8 cents of each active dollar after the small business rate of about 12.2%, while a top-bracket owner keeps under 47 cents after personal tax above 53%.",
+   "after": "Because the corporation keeps roughly 88.8 cents of each active dollar after the small business rate of about 11.2%, while a top-bracket owner keeps under 47 cents after personal tax above 53%.",
+   "note": "R4: 87.8 cents = 100 - 12.2; at 11.2% it is 100 - 11.2 = 88.8 cents. Sharad to confirm figure."
+  },
+  {
+   "location": "JSON-LD",
+   "section": "FAQ schema - Why do people say corporate dollars are cheaper?",
+   "rule": "R1 + R4",
+   "before": "\"text\":\"Because the corporation keeps roughly 87.8 cents of each active dollar after the small business rate of about 12.2%, while a top-bracket owner keeps under 47 cents after personal tax above 53%.",
+   "after": "\"text\":\"Because the corporation keeps roughly 88.8 cents of each active dollar after the small business rate of about 11.2%, while a top-bracket owner keeps under 47 cents after personal tax above 53%.",
+   "note": "JSON-LD copy, in _elementor_data only. R4: 100 - 11.2 = 88.8 cents. Sharad to confirm figure."
+  },
+  {
+   "location": "Visible",
+   "section": "FAQ - How do the corporate tax rates figure into all this?",
+   "rule": "R1",
+   "before": "They are the engine of the whole question: the gap between roughly 12.2% on the first $500,000 of active income and personal rates above 53% is what makes corporate dollars cheaper",
+   "after": "They are the engine of the whole question: the gap between roughly 11.2% on the first $500,000 of active income and personal rates above 53% is what makes corporate dollars cheaper",
+   "note": ""
+  },
+  {
+   "location": "JSON-LD",
+   "section": "FAQ schema - How do the corporate tax rates figure into all this?",
+   "rule": "R1",
+   "before": "\"text\":\"They are the engine of the whole question: the gap between roughly 12.2% on the first $500,000 of active income and personal rates above 53% is what makes corporate dollars cheaper",
+   "after": "\"text\":\"They are the engine of the whole question: the gap between roughly 11.2% on the first $500,000 of active income and personal rates above 53% is what makes corporate dollars cheaper",
+   "note": "JSON-LD copy, in _elementor_data only."
+  }
+ ],
+ "page_note": "Elementor page: the live source is the _elementor_data post meta (widget 'html'); post_content is a stripped fallback copy. Visible 'before' strings are exact, unique substrings of post_content and also occur in the decoded _elementor_data html; the JSON-LD FAQPage copy exists only in _elementor_data (decoded), and its 'before' strings are verified unique there. Apply the edits to _elementor_data, not just post_content. No 3.2%, 0.122, 0.032 or $600K."
+}

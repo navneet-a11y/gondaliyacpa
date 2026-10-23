@@ -1,0 +1,32 @@
+{
+ "id": 44973,
+ "url": "https://gondaliyacpa.ca/small-business-accounting-services/",
+ "title": "Small Business Accounting Services",
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "2026 rate table - row to June 30, 2026",
+   "rule": "R3",
+   "before": "<td>First $500,000 active income (to June 30, 2026)</td><td>12.2%</td><td>3.2% provincial + 9% federal, with the Small Business Deduction</td>",
+   "after": "<td>First $500,000 active income (to June 30, 2026)</td><td>12.2%</td><td>3.2% provincial + 9% federal, with the Small Business Deduction</td>",
+   "note": "Both 12.2% and 3.2% are tied to income to June 30, 2026; leave. In _elementor_data this row is <tr class=\"dp-hl\"> (highlighted); Sharad may want the highlight moved to the July 1, 2026 row."
+  },
+  {
+   "location": "Visible",
+   "section": "FAQ - What tax rate does my small corporation pay in Ontario?",
+   "rule": "R1 + R2",
+   "before": "A qualifying Ontario CCPC pays a combined 12.2% on the first $500,000 of active business income, made up of 3.2% provincial and 9% federal.",
+   "after": "A qualifying Ontario CCPC pays a combined 11.2% (12.2% before July 1, 2026) on the first $500,000 of active business income, made up of 2.2% (3.2% before July 1, 2026) provincial and 9% federal.",
+   "note": "Stated as the current rate. The next sentence ('On July 1, 2026 the provincial rate drops to 2.2%, bringing the combined rate to 11.2%.') becomes redundant after this change; Sharad may want to delete it."
+  },
+  {
+   "location": "JSON-LD",
+   "section": "FAQ schema - What tax rate does my small corporation pay in Ontario?",
+   "rule": "R1 + R2",
+   "before": "\"text\":\"A qualifying Ontario CCPC pays a combined 12.2% on the first $500,000 of active business income, made up of 3.2% provincial and 9% federal.",
+   "after": "\"text\":\"A qualifying Ontario CCPC pays a combined 11.2% (12.2% before July 1, 2026) on the first $500,000 of active business income, made up of 2.2% (3.2% before July 1, 2026) provincial and 9% federal.",
+   "note": "JSON-LD copy, in _elementor_data only. Same redundant-next-sentence note as the visible FAQ."
+  }
+ ],
+ "page_note": "Elementor page: the live source is the _elementor_data post meta (widget 'html'); post_content is a stripped fallback copy. Visible 'before' strings are exact, unique substrings of post_content and also occur in the decoded _elementor_data html; the JSON-LD FAQPage copy exists only in _elementor_data (decoded), and its 'before' strings are verified unique there. Apply the edits to _elementor_data, not just post_content. No 0.122, 0.032 or $600K."
+}
