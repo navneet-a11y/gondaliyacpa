@@ -58,9 +58,9 @@ Page 7 "Home (old Astra demo)" is a draft with no public URL: delete it.
 | 5 | Code Snippets PHP snippet | Claude | Done Oct 23: snippet 8 active, no PHP errors |
 | 6 | LiteSpeed JS excludes | Can be done through the WordPress connection | Not started |
 | 7 | Author "Sharad Gondaliya, CPA" | Navneet + Claude | Done Oct 22: user 1 display name, bio and names set by Navneet; author slug changed from admin to sharad-gondaliya. Login username stays admin. Still to do Friday: Rank Math author archives off |
-| 8 | Rank Math schema, breadcrumbs, Instant Indexing | Rank Math settings | Not started |
+| 8 | Rank Math schema, breadcrumbs, Instant Indexing | Navneet | Done Oct 23: Article schema for pages, breadcrumbs on, author archives off, Instant Indexing on; checked in browser and Rich Results test |
 | 9 | Delete Hello world!, sample comment, Sample Page | Claude | Done Oct 23: post 1, comment 1 and page 7 trashed |
-| 10 | Redirects (above) | Rank Math | Not started |
+| 10 | Redirects (above) | Navneet (Claude switched on the Redirections module) | Done Oct 23: both 301, exact match; checked in browser |
 | 11 | Cookie banner, GA after consent | Navneet | Not started |
 
 ## Schedule
