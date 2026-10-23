@@ -4426,3 +4426,30 @@ What is live is neither: `T2 Short Eligibility Checker | All Eight Conditions`
 with an excerpt written at the time. That was my deviation and it was never
 logged. Awaiting Navneet's decision on whether to align to the plan exemplar or
 keep the current wording as a logged departure.
+
+### Snippet installed; SEO meta written to all ten tools
+
+Navneet installed the WPCode snippet. The first version was deactivated by
+WPCode with "Undefined variable $post_type" on a variable the code does define,
+so a line was lost in the paste; the likely culprit was the long docblock, which
+contained a literal opening PHP tag in its own install instructions. Rewritten
+with named functions instead of closures, every declaration guarded by
+`function_exists`, no opening tag outside line 1, and a paste-ready copy with no
+opening tag at all.
+
+Rank Math meta is now writable. Title, description and focus keyword set on all
+ten Family 2 tools, following the 6(e) exemplar pattern at plan line 1163,
+`<Tool> | Free, No Sign-Up` with "Free. No sign-up. Built by a CPA Ontario firm
+in Toronto." closing each description.
+
+`/tools/t2-short-eligibility-checker/` now carries the plan's exact title and
+description verbatim, which closes the unlogged deviation recorded above. The
+post title still reads "All Eight Conditions"; only the SEO title changed,
+which is the field the plan specifies.
+
+Checked before writing: every title 43 to 52 characters, every description 125
+to 159, no banned phrase from 7.4, no bare T183, no non-ASCII, and the one
+description carrying a price states it as $300.00 plus HST per tax year.
+
+`rank_math_robots` stays unexposed, so the launch noindex is still hand-set
+only.
