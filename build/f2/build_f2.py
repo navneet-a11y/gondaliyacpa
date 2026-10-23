@@ -50,6 +50,11 @@ _pillar = io.open(os.path.join(HERE, '..', 'f9', 'nil-t2-return-complete-guide.h
 BASE_CSS = _pillar[:_pillar.index('</style>')]
 
 TOOL_CSS = """
+/* Narrower than the guides' 1100px, at Navneet's request. 1000px is the
+   measure the Family 4 service pages already use, so this is a house value
+   rather than a new one. The hero band stays full-bleed: it is .ei-hero that
+   spans, and .ei-hero-inner caps its text at 860px, so neither is touched. */
+.ei-wrap{max-width:1000px}
 .ei-tool{background:#fff;border:1px solid #e2e8f0;border-radius:12px;padding:22px 24px;margin:18px 0;box-shadow:0 1px 2px rgba(26,35,64,.05)}
 .ei-tool legend{font-weight:800;color:#1a2340;font-size:1.05em;padding:0 0 6px}
 .ei-tool fieldset{border:0;margin:0;padding:0}

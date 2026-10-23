@@ -3947,3 +3947,20 @@ Applied live by patching the two anchors rather than re-uploading: 1124
 16,354 -> 16,389, 1122 17,046 -> 17,081, 1120 15,613 -> 15,648, each matching
 its rebuilt file. Re-fetched the rendered output for 1120 afterwards and the
 module is intact on one line.
+
+### 2026-10-23 — tool pages narrowed to 1000px
+
+Navneet: the banner is right full-bleed, the body should be narrower. Set
+`.ei-wrap` to 1000px on the three tool pages, overriding the 1100px the rule
+inherits from the guides' stylesheet. 1000px is not a new value: it is
+`.cnf-w` on every Family 4 service page.
+
+The hero is untouched and stays full-bleed. `.ei-hero` is the band and
+`.ei-hero-inner` caps its text at 860px, so neither depends on `.ei-wrap`.
+
+Scoped to Family 2 only. Each page carries its own inline stylesheet, so the
+guides and the blog keep 1100px. If the narrower measure is preferred
+everywhere, that is a separate decision across four generators, not a side
+effect of this one.
+
+Live matches the build: 1124 16,722, 1122 17,414, 1120 15,981.
