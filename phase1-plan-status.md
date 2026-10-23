@@ -32,7 +32,7 @@ Checked against the live WordPress site on 14 October 2026, updated 16 October 2
 | Planned URL | Priority | Status | Live URL |
 |---|---|---|---|
 | /nuans-name-search-report/ | P1 | Old page only, rebuild (old page /nuans-report-20/ 34) | /nuans-report-20/ |
-| /annual-return-filing/ | P1 | Built, draft 10655 (old page /corporate-annual-filing/ 2015 to redirect) | /annual-return-filing/ |
+| /annual-return-filing/ | P1 | Built, published 10655 (old page /corporate-annual-filing/ 2015 to redirect) | /annual-return-filing/ |
 | /business-number-cra-account-registration/ | P1 | Built | /business-number-cra-account-registration/ |
 | /convert-sole-proprietorship-corporation/ | P1 | Built | /convert-sole-proprietorship-corporation/ |
 | /partnership-registration/ | P2 | Built | /partnership-registration/ |
