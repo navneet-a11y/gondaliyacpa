@@ -4584,3 +4584,49 @@ Line 1224's contract holds on both new hubs: a live child count from the
 `wp:html` wrapper, so wpautop is inserting the same stray tags on them that it
 inserted on `/tools/` before it was wrapped. One-line fix each, not applied
 because it was out of scope.
+
+## 2026-10-23 — The plan has no menu instruction, and both new hubs are under the F16 inbound minimum
+
+Navneet asked whether the plan says to add the hubs to the menu.
+
+**It does not.** There is no menu or navigation build task anywhere in the
+document. The only mention of navigation is line 1553, and it is a restriction
+rather than an instruction: "Footer and navigation links do not count toward the
+minimum inbound requirement for F1, F4, F13." Note which families that names.
+F16 is not among them, so a navigation link does count toward an F16 hub's
+inbound total.
+
+**What the plan requires instead is the home page.** The Home row of the 6(g)
+table gives its mandatory link targets as `/services/`, `/tools/`,
+`/locations/`, `/guides/`, `/blog/` and `/pricing/nil-t2-filing-cost/`. That is
+where the five hubs are contractually linked from, at a minimum of 30 inbound
+and a maximum of 60 outbound.
+
+### The finding that matters more
+
+The same table sets **F16 at a minimum of 20 inbound internal links**, the
+second highest on the site after F8's 10... in fact higher than every family
+except itself. Measured today:
+
+| Hub | Real inbound HTML links |
+|---|---|
+| `/tools/` | 1, from `/locations/` |
+| `/locations/` | 0 |
+
+A search for pages containing `corpnilfilingfor300.ca/tools/` returns twelve,
+but ten of those are the tool pages themselves matching on their sibling
+`/tools/<slug>/` links. **None of the ten links up to the hub.** Their
+BreadcrumbList names `/tools/` at position 2, but that is JSON-LD, not an
+anchor.
+
+So both hubs published today sit far below their family minimum, and the plan is
+explicit about what should have happened: "the Python pipeline refuses to
+publish any URL whose payload does not already contain the minimum inbound link
+count for its family." Publishing them first was my call and it breached that
+rule. Recording it rather than quietly backfilling.
+
+A realistic route to 20 for `/tools/`: ten up-links from the tool pages, the
+home page, the menu, `/locations/`, `/guides/`, and the Family 9 guides that
+match a tool. For `/locations/`: the two jurisdiction hubs, the 24 Family 4
+pages, the home page and the menu. Neither needs anything unbuilt, unlike the
+city hubs Family 3 still owes.
