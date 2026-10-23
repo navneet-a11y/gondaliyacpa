@@ -55,11 +55,11 @@ Page 7 "Home (old Astra demo)" is a draft with no public URL: delete it.
 | 1 | Full backup (files and database) | Navneet | Done Oct 22: UpdraftPlus to Google Drive (Hostinger allows weekly backups only) |
 | 2 to 3 | Create /wp-content/uploads/ws/ and /ws/people/; upload CSS and JS | Navneet (File Manager) | Done Oct 22, URLs open |
 | 4 | Upload the 4 headshots to /ws/people/ | Navneet (File Manager) | Done Oct 22 (Sharad's 400 px is upscaled from a 240 x 360 photo; replace when a larger original arrives) |
-| 5 | Code Snippets PHP snippet | Can be done through the WordPress connection | Not started |
+| 5 | Code Snippets PHP snippet | Claude | Done Oct 23: snippet 8 active, no PHP errors |
 | 6 | LiteSpeed JS excludes | Can be done through the WordPress connection | Not started |
 | 7 | Author "Sharad Gondaliya, CPA" | Navneet + Claude | Done Oct 22: user 1 display name, bio and names set by Navneet; author slug changed from admin to sharad-gondaliya. Login username stays admin. Still to do Friday: Rank Math author archives off |
 | 8 | Rank Math schema, breadcrumbs, Instant Indexing | Rank Math settings | Not started |
-| 9 | Delete Hello world!, sample comment, Sample Page | Can be done through the WordPress connection | Not started |
+| 9 | Delete Hello world!, sample comment, Sample Page | Claude | Done Oct 23: post 1, comment 1 and page 7 trashed |
 | 10 | Redirects (above) | Rank Math | Not started |
 | 11 | Cookie banner, GA after consent | Navneet | Not started |
 
@@ -67,7 +67,7 @@ Page 7 "Home (old Astra demo)" is a draft with no public URL: delete it.
 
 | Day | Date | Pages | Status |
 | --- | --- | --- | --- |
-| 1 | Fri Oct 23 | 20 | Ready to publish after setup steps 1 to 5 |
+| 1 | Fri Oct 23 | 20 | Live Oct 23: all 20 published, each verified byte for byte (file size + 34). Rank Math title, description and focus keyword still to set once the Rank Math integration is on in Easy MCP AI |
 | 2 | Sat Oct 24 | 20 | Not started |
 | 3 | Sun Oct 25 | 20 | Not started |
 | 4 | Mon Oct 26 | 20 | Not started |
@@ -112,3 +112,30 @@ Rule: never set ws_neha_reviewed_on before Neha confirms her review in writing i
 6. Header and footer link changes above
 7. Publish the 20 Day 1 pages (author Sharad, user 1), Rank Math fields from the workbook; static front page = Home
 8. Purge, check /page-sitemap.xml, submit IndexNow
+
+## Day 1 live (Friday, October 23)
+
+| Page | WP ID | Parent | Length on site |
+| --- | --- | --- | --- |
+| Contact | 90 | 0 | 22014 |
+| How We Make Money | 89 | 0 | 23313 |
+| Neha Gupta, CFA | 198 | 86 | 24512 |
+| Sharad Gondaliya, CPA | 91 | 86 | 26327 |
+| Editorial Standards | 88 | 0 | 27363 |
+| About | 86 | 0 | 27940 |
+| Benefits | 119 | 0 | 38193 |
+| TFSA calculator | 182 | 118 | 38222 |
+| Banking | 117 | 0 | 42654 |
+| Markets | 120 | 0 | 43062 |
+| Savings | 111 | 0 | 43995 |
+| Learn | 121 | 0 | 44364 |
+| Reviews | 101 | 0 | 45383 |
+| Calculators | 118 | 0 | 49980 |
+| Vs | 110 | 0 | 50375 |
+| Accounts | 99 | 0 | 50971 |
+| Compare | 100 | 0 | 55282 |
+| TFSA Guide | 139 | 99 | 63180 |
+| Home | 25 | 0 (front page) | 66606 |
+| Broker Rating Methodology | 92 | 87 | 86346 |
+
+All by user 1 (Sharad Gondaliya, CPA), comments closed. ws_neha_reviewed_on not set on any page.
