@@ -257,3 +257,7 @@
 ## /reviews/markham/ (page 10567, draft created 2026-10-22, meta set by connector)
 - Meta title: Markham Client Reviews - Open Corporation for $35
 - Meta description: See what our clients say, then incorporate your Markham company for $35, HST included. Filed by a licensed CPA firm from our North York office.
+
+## /share-issuance-transfer/ (page 10569, published 2026-10-23, meta set by connector)
+- Meta title: Share Issuance and Transfer, Ontario and Federal | CPA
+- Meta description: Issue or transfer shares in an Ontario or federal corporation. Directors' resolutions, certificates, share register and ISC register, CPA reviewed.
