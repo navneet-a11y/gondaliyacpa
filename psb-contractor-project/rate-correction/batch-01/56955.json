@@ -1,0 +1,16 @@
+{
+ "id": 56955,
+ "url": "https://gondaliyacpa.ca/denturist-tax-mistakes-canada/",
+ "title": "Common Tax and Accounting Mistakes Denturists Make in Canada",
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "Denturist Business Taxes: Overview (Corporate Income Tax bullet)",
+   "rule": "R1",
+   "before": "Active business income gets the <strong>small business deduction</strong> under section <strong>125</strong> on the first <strong>$500,000</strong>, which in Ontario is roughly <strong>12.2%</strong> against 26.5% above it.",
+   "after": "Active business income gets the <strong>small business deduction</strong> under section <strong>125</strong> on the first <strong>$500,000</strong>, which in Ontario is roughly <strong>11.2%</strong> (12.2% before July 1, 2026) against 26.5% above it.",
+   "note": "12.2% stated as current combined Ontario small business rate; 11.2% from July 1, 2026. First R1 change on page: parenthetical added."
+  }
+ ],
+ "page_note": "All 12.2% occurrences are current-rate R1. No 3.2%, 0.122/0.032, $600,000/$600K or 12.2%-derived dollar figures found. No 12.2% in this post's JSON-LD."
+}

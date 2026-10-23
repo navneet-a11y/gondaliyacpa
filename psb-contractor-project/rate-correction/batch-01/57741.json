@@ -7,16 +7,16 @@
    "location": "Visible",
    "section": "FAQ",
    "rule": "R1",
-   "before": "A business whose principal purpose is to derive income from property &#8212; interest, dividends, rents, royalties &#8212; is a specified investment business, and the income it earns is not active business income. The practical effect is that the roughly 12.2% Ontario combined rate on the first $500,000 of active business income is out of reach, and the income is taxed at the ordinary corporate rate instead.",
-   "after": "A business whose principal purpose is to derive income from property &#8212; interest, dividends, rents, royalties &#8212; is a specified investment business, and the income it earns is not active business income. The practical effect is that the roughly 11.2% (12.2% before July 1, 2026) Ontario combined rate on the first $500,000 of active business income is out of reach, and the income is taxed at the ordinary corporate rate instead.",
+   "before": "; is a specified investment business, and the income it earns is not active business income. The practical effect is that the roughly 12.2% Ontario combined rate on the first $500,000 of active business income is out of reach, and the income is taxed at the ordinary corporate rate instead.",
+   "after": "; is a specified investment business, and the income it earns is not active business income. The practical effect is that the roughly 11.2% (12.2% before July 1, 2026) Ontario combined rate on the first $500,000 of active business income is out of reach, and the income is taxed at the ordinary corporate rate instead.",
    "note": "First R1 change on page; parenthetical added."
   },
   {
    "location": "JSON-LD",
    "section": "FAQ",
    "rule": "R1",
-   "before": "A business whose principal purpose is to derive income from property - interest, dividends, rents, royalties - is a specified investment business, and the income it earns is not active business income. The practical effect is that the roughly 12.2% Ontario combined rate on the first $500,000 of active business income is out of reach, and the income is taxed at the ordinary corporate rate instead.",
-   "after": "A business whose principal purpose is to derive income from property - interest, dividends, rents, royalties - is a specified investment business, and the income it earns is not active business income. The practical effect is that the roughly 11.2% (12.2% before July 1, 2026) Ontario combined rate on the first $500,000 of active business income is out of reach, and the income is taxed at the ordinary corporate rate instead.",
+   "before": "- is a specified investment business, and the income it earns is not active business income. The practical effect is that the roughly 12.2% Ontario combined rate on the first $500,000 of active business income is out of reach, and the income is taxed at the ordinary corporate rate instead.",
+   "after": "- is a specified investment business, and the income it earns is not active business income. The practical effect is that the roughly 11.2% (12.2% before July 1, 2026) Ontario combined rate on the first $500,000 of active business income is out of reach, and the income is taxed at the ordinary corporate rate instead.",
    "note": "JSON-LD copy of the visible FAQ answer; mirror the visible change."
   }
  ],

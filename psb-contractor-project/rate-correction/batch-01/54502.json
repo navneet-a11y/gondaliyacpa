@@ -1,0 +1,72 @@
+{
+ "id": 54502,
+ "url": "https://gondaliyacpa.ca/salary-vs-dividend-2027/",
+ "title": "Salary vs Dividend in 2027: The CPP Cut and Ontario's Lower Dividend Tax Credit",
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "2026 vs 2027 comparison table (combined small business rate row)",
+   "rule": "R3",
+   "before": "<td>12.2% before July 1, 2026; 11.2% from July 1, 2026</td>",
+   "after": "<td>12.2% before July 1, 2026; 11.2% from July 1, 2026</td>",
+   "note": "States 12.2% only for the period before July 1, 2026; already correct."
+  },
+  {
+   "location": "Visible",
+   "section": "The corporate side: 11.2% on the first $500,000",
+   "rule": "R3",
+   "before": "Ontario cut its small business rate from 3.2% to 2.2% on July 1, 2026.",
+   "after": "Ontario cut its small business rate from 3.2% to 2.2% on July 1, 2026.",
+   "note": "3.2% described as the former rate, before July 1, 2026; already correct."
+  },
+  {
+   "location": "Visible",
+   "section": "The corporate side: 11.2% on the first $500,000",
+   "rule": "R3",
+   "before": "The combined federal and Ontario rate on the first $500,000 of active business income fell from 12.2% to 11.2%, and associated corporations share that $500,000 limit.",
+   "after": "The combined federal and Ontario rate on the first $500,000 of active business income fell from 12.2% to 11.2%, and associated corporations share that $500,000 limit.",
+   "note": "12.2% described as the former rate; already correct."
+  },
+  {
+   "location": "Visible",
+   "section": "Salary vs dividend comparison table (2026 pre-July row)",
+   "rule": "R3",
+   "before": "<td>2026 non-eligible dividend from income earned before July 1, 2026 (taxed at 12.2%); dividend rate 47.74%</td>",
+   "after": "<td>2026 non-eligible dividend from income earned before July 1, 2026 (taxed at 12.2%); dividend rate 47.74%</td>",
+   "note": "Tied to income earned before July 1, 2026; already correct."
+  },
+  {
+   "location": "Visible",
+   "section": "Salary vs dividend comparison table (2026 pre-July row)",
+   "rule": "R3",
+   "before": "<td>$12,200</td><td>$87,800</td>",
+   "after": "<td>$12,200</td><td>$87,800</td>",
+   "note": "Corporate tax at 12.2% on $100,000 for income earned before July 1, 2026 (R3 row, not R4); leave."
+  },
+  {
+   "location": "Visible",
+   "section": "Salary vs dividend comparison discussion",
+   "rule": "R3",
+   "before": "And income taxed at 12.2% before July 1, 2026 does a little worse as a dividend, because more corporate tax was paid first.",
+   "after": "And income taxed at 12.2% before July 1, 2026 does a little worse as a dividend, because more corporate tax was paid first.",
+   "note": "Tied to income before July 1, 2026; already correct."
+  },
+  {
+   "location": "Visible",
+   "section": "Straddling taxation year paragraph",
+   "rule": "R3",
+   "before": "If your corporation has a taxation year that straddles July 1, 2026, its rate for that year is a blend of 12.2% and 11.2%, prorated by days.",
+   "after": "If your corporation has a taxation year that straddles July 1, 2026, its rate for that year is a blend of 12.2% and 11.2%, prorated by days.",
+   "note": "Blended-rate explanation for straddle years; already correct."
+  },
+  {
+   "location": "Visible",
+   "section": "Action checklist",
+   "rule": "R3",
+   "before": "A year that straddles July 1, 2026 pays a blend of 12.2% and 11.2%, prorated by days.",
+   "after": "A year that straddles July 1, 2026 pays a blend of 12.2% and 11.2%, prorated by days.",
+   "note": "Blended-rate explanation for straddle years; already correct."
+  }
+ ],
+ "page_note": "Post already reflects the July 1, 2026 change (11.2% current; 12.2%/3.2% only as former or pre-July 1, 2026 rates). All occurrences R3, no changes needed. No 0.122/0.032 or $600,000 found."
+}

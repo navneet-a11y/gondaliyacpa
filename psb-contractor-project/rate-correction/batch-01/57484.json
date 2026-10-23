@@ -23,16 +23,16 @@
    "location": "Visible",
    "section": "FAQ",
    "rule": "R1",
-   "before": "<div class=\"sb-faq-a\">Usually not yet. A corporation looks attractive on paper because active business income of a Canadian-controlled private corporation is taxed at roughly 12.2% combined in Ontario on the first $500,000, against a top combined personal rate of 53.53%.",
-   "after": "<div class=\"sb-faq-a\">Usually not yet. A corporation looks attractive on paper because active business income of a Canadian-controlled private corporation is taxed at roughly 11.2% combined in Ontario on the first $500,000, against a top combined personal rate of 53.53%.",
+   "before": ">Usually not yet. A corporation looks attractive on paper because active business income of a Canadian-controlled private corporation is taxed at roughly 12.2% combined in Ontario on the first $500,000, against a top combined personal rate of 53.53%.",
+   "after": ">Usually not yet. A corporation looks attractive on paper because active business income of a Canadian-controlled private corporation is taxed at roughly 11.2% combined in Ontario on the first $500,000, against a top combined personal rate of 53.53%.",
    "note": ""
   },
   {
    "location": "JSON-LD",
    "section": "FAQ",
    "rule": "R1",
-   "before": "\"text\":\"Usually not yet. A corporation looks attractive on paper because active business income of a Canadian-controlled private corporation is taxed at roughly 12.2% combined in Ontario on the first $500,000, against a top combined personal rate of 53.53%.",
-   "after": "\"text\":\"Usually not yet. A corporation looks attractive on paper because active business income of a Canadian-controlled private corporation is taxed at roughly 11.2% combined in Ontario on the first $500,000, against a top combined personal rate of 53.53%.",
+   "before": "\"Usually not yet. A corporation looks attractive on paper because active business income of a Canadian-controlled private corporation is taxed at roughly 12.2% combined in Ontario on the first $500,000, against a top combined personal rate of 53.53%.",
+   "after": "\"Usually not yet. A corporation looks attractive on paper because active business income of a Canadian-controlled private corporation is taxed at roughly 11.2% combined in Ontario on the first $500,000, against a top combined personal rate of 53.53%.",
    "note": "JSON-LD copy of the visible FAQ answer; mirror the visible change."
   }
  ],

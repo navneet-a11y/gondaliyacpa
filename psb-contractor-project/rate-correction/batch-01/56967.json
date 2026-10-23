@@ -1,0 +1,16 @@
+{
+ "id": 56967,
+ "url": "https://gondaliyacpa.ca/software-reseller-taxes-canada/",
+ "title": "The Ultimate Guide to Software Reseller Taxes and Accounting in Canada",
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "Income Reporting Requirements table (Corporation row)",
+   "rule": "R1",
+   "before": "<td>Small business deduction under section <strong>125</strong> on the first <strong>$500,000</strong> &mdash; roughly 12.2% in Ontario against 26.5% above it</td>",
+   "after": "<td>Small business deduction under section <strong>125</strong> on the first <strong>$500,000</strong> &mdash; roughly 11.2% (12.2% before July 1, 2026) in Ontario against 26.5% above it</td>",
+   "note": "12.2% stated as current combined Ontario small business rate; 11.2% from July 1, 2026. First R1 change on page: parenthetical added."
+  }
+ ],
+ "page_note": "All 12.2% occurrences are current-rate R1. No 3.2%, 0.122/0.032, $600,000/$600K or 12.2%-derived dollar figures found. No 12.2% in this post's JSON-LD."
+}

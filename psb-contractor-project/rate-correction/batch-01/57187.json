@@ -1,0 +1,32 @@
+{
+ "id": 57187,
+ "url": "https://gondaliyacpa.ca/accountant-for-international-students-with-businesses/",
+ "title": "Accounting and Tax Services for International Students With Businesses",
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "Incorporation services card",
+   "rule": "R1",
+   "before": "Where profit genuinely stays behind in the company, section 125 brings the combined Ontario charge on its first $500,000 of active business income down to roughly 12.2%; where every dollar leaves to live on, you have bought a second return.",
+   "after": "Where profit genuinely stays behind in the company, section 125 brings the combined Ontario charge on its first $500,000 of active business income down to roughly 11.2% (12.2% before July 1, 2026); where every dollar leaves to live on, you have bought a second return.",
+   "note": "12.2% stated as current combined Ontario small business rate; 11.2% from July 1, 2026. First R1 change on page: parenthetical added."
+  },
+  {
+   "location": "Visible",
+   "section": "FAQ: Should I incorporate?",
+   "rule": "R1",
+   "before": "<div class=\"sb-faq-a\">It depends on where the profit is going, and here there is an extra factor most comparisons leave out. Where profit stays in the company, section 125 of the Income Tax Act applies a combined Ontario rate of about 12.2% to its first $500,000 of active business income, and the deferral that buys is real money.",
+   "after": "<div class=\"sb-faq-a\">It depends on where the profit is going, and here there is an extra factor most comparisons leave out. Where profit stays in the company, section 125 of the Income Tax Act applies a combined Ontario rate of about 11.2% to its first $500,000 of active business income, and the deferral that buys is real money.",
+   "note": "12.2% stated as current combined Ontario small business rate; 11.2% from July 1, 2026."
+  },
+  {
+   "location": "JSON-LD",
+   "section": "FAQ schema: Should I incorporate?",
+   "rule": "R1",
+   "before": "\"text\":\"It depends on where the profit is going, and here there is an extra factor most comparisons leave out. Where profit stays in the company, section 125 of the Income Tax Act applies a combined Ontario rate of about 12.2% to its first $500,000 of active business income, and the deferral that buys is real money.",
+   "after": "\"text\":\"It depends on where the profit is going, and here there is an extra factor most comparisons leave out. Where profit stays in the company, section 125 of the Income Tax Act applies a combined Ontario rate of about 11.2% to its first $500,000 of active business income, and the deferral that buys is real money.",
+   "note": "12.2% stated as current combined Ontario small business rate; 11.2% from July 1, 2026. JSON-LD copy of the visible FAQ above; keep identical to visible wording."
+  }
+ ],
+ "page_note": "All 12.2% occurrences are current-rate R1. No 3.2%, 0.122/0.032, $600,000/$600K or 12.2%-derived dollar figures found."
+}

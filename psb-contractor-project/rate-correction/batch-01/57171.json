@@ -1,0 +1,16 @@
+{
+ "id": 57171,
+ "url": "https://gondaliyacpa.ca/accountant-for-foreign-shareholders-of-canadian-corporations/",
+ "title": "Accounting and Tax Services for Foreign Shareholders of Canadian Corporations",
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "Tax planning card",
+   "rule": "R1",
+   "before": "Section 125 gives a corporation that qualifies for the small business deduction a combined Ontario rate near 12.2% on its first $500,000 of active business income, a figure read off active business income and not off turnover.",
+   "after": "Section 125 gives a corporation that qualifies for the small business deduction a combined Ontario rate near 11.2% (12.2% before July 1, 2026) on its first $500,000 of active business income, a figure read off active business income and not off turnover.",
+   "note": "12.2% stated as current combined Ontario small business rate; 11.2% from July 1, 2026. First R1 change on page: parenthetical added."
+  }
+ ],
+ "page_note": "All 12.2% occurrences are current-rate R1. No 3.2%, 0.122/0.032, $600,000/$600K or 12.2%-derived dollar figures found."
+}

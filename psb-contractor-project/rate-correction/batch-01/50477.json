@@ -21,7 +21,7 @@
   },
   {
    "location": "Visible",
-   "section": "Body callout/note",
+   "section": "Risk Warning callout",
    "rule": "R3",
    "before": "The federal small business deduction limit is $500,000, not $600,000. The higher figure belongs to the provincial limits in Saskatchewan, Prince Edward Island and Nova Scotia. Please plan against $500,000 federally.",
    "after": "The federal small business deduction limit is $500,000, not $600,000. The higher figure belongs to the provincial limits in Saskatchewan, Prince Edward Island and Nova Scotia. Please plan against $500,000 federally.",
@@ -29,7 +29,7 @@
   },
   {
    "location": "Visible",
-   "section": "Body callout/note",
+   "section": "FAQ",
    "rule": "R3",
    "before": "<p>$500,000 of active business income for an eligible Canadian-controlled private corporation, shared across associated corporations. The $600,000 figure belongs to the provincial limits in Saskatchewan, Prince Edward Island and Nova Scotia.</p>",
    "after": "<p>$500,000 of active business income for an eligible Canadian-controlled private corporation, shared across associated corporations. The $600,000 figure belongs to the provincial limits in Saskatchewan, Prince Edward Island and Nova Scotia.</p>",
@@ -37,7 +37,7 @@
   },
   {
    "location": "Visible",
-   "section": "Body callout/note",
+   "section": "Disclaimer/notes",
    "rule": "R3",
    "before": "Please note that the federal business limit is $500,000 rather than $600,000; that the T5018 return is due six months after your reporting period ends rather than on 31 March; that records are retained for six years rather than seven; and that an eligible dividend is reported on a T5 rather than a TD1.",
    "after": "Please note that the federal business limit is $500,000 rather than $600,000; that the T5018 return is due six months after your reporting period ends rather than on 31 March; that records are retained for six years rather than seven; and that an eligible dividend is reported on a T5 rather than a TD1.",
@@ -45,12 +45,12 @@
   },
   {
    "location": "JSON-LD",
-   "section": "Body callout/note",
+   "section": "FAQ",
    "rule": "R3",
    "before": "\"text\": \"$500,000 of active business income for an eligible Canadian-controlled private corporation, shared across associated corporations. The $600,000 figure belongs to the provincial limits in Saskatchewan, Prince Edward Island and Nova Scotia.\"",
    "after": "\"text\": \"$500,000 of active business income for an eligible Canadian-controlled private corporation, shared across associated corporations. The $600,000 figure belongs to the provincial limits in Saskatchewan, Prince Edward Island and Nova Scotia.\"",
    "note": "Contrasts $500,000 federal limit with $600,000 provincial figure; already correct, leave."
   }
  ],
- "page_note": ""
+ "page_note": "Fetched as post_type \"posts\" (not a page)."
 }

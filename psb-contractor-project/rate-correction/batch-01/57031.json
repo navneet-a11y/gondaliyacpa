@@ -1,0 +1,40 @@
+{
+ "id": 57031,
+ "url": "https://gondaliyacpa.ca/accountant-for-pet-sitting-businesses/",
+ "title": "Accounting and Tax Services for Pet Sitting Businesses",
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "Tax planning service card",
+   "rule": "R1",
+   "before": "We set the salary and dividend mix for the owner, paying enough T4 salary to build RRSP room while the balance flows as dividends, so combined tax stays near the 12.2% Ontario small-business rate rather than 53.53%.",
+   "after": "We set the salary and dividend mix for the owner, paying enough T4 salary to build RRSP room while the balance flows as dividends, so combined tax stays near the 11.2% (12.2% before July 1, 2026) Ontario small-business rate rather than 53.53%.",
+   "note": "12.2% stated as current combined Ontario small business rate; 11.2% from July 1, 2026. First R1 change on page: parenthetical added."
+  },
+  {
+   "location": "Visible",
+   "section": "Incorporation services card",
+   "rule": "R1",
+   "before": "We incorporate your sitting business under the Ontario Business Corporations Act, giving you a separate legal entity and roughly the 12.2% Ontario small-business rate on active income against a top personal rate of 53.53%.",
+   "after": "We incorporate your sitting business under the Ontario Business Corporations Act, giving you a separate legal entity and roughly the 11.2% Ontario small-business rate on active income against a top personal rate of 53.53%.",
+   "note": "12.2% stated as current combined Ontario small business rate; 11.2% from July 1, 2026."
+  },
+  {
+   "location": "Visible",
+   "section": "FAQ: Should I incorporate my pet sitting business?",
+   "rule": "R1",
+   "before": "<div class=\"sb-faq-a\">Incorporating gives you a separate legal entity, which matters in a business that holds client keys and works unsupervised inside occupied homes, plus roughly a 12.2% Ontario combined rate on the first $500,000 of active income under ITA section 125 against a personal rate up to 53.53% when unincorporated.",
+   "after": "<div class=\"sb-faq-a\">Incorporating gives you a separate legal entity, which matters in a business that holds client keys and works unsupervised inside occupied homes, plus roughly an 11.2% Ontario combined rate on the first $500,000 of active income under ITA section 125 against a personal rate up to 53.53% when unincorporated.",
+   "note": "12.2% stated as current combined Ontario small business rate; 11.2% from July 1, 2026."
+  },
+  {
+   "location": "JSON-LD",
+   "section": "FAQ schema: Should I incorporate my pet sitting business?",
+   "rule": "R1",
+   "before": "\"text\":\"Incorporating gives you a separate legal entity, which matters in a business that holds client keys and works unsupervised inside occupied homes, plus roughly a 12.2% Ontario combined rate on the first $500,000 of active income under ITA section 125 against a personal rate up to 53.53% when unincorporated.",
+   "after": "\"text\":\"Incorporating gives you a separate legal entity, which matters in a business that holds client keys and works unsupervised inside occupied homes, plus roughly an 11.2% Ontario combined rate on the first $500,000 of active income under ITA section 125 against a personal rate up to 53.53% when unincorporated.",
+   "note": "12.2% stated as current combined Ontario small business rate; 11.2% from July 1, 2026. JSON-LD copy of the visible FAQ above; keep identical to visible wording."
+  }
+ ],
+ "page_note": "All 12.2% occurrences are current-rate R1. No 3.2%, 0.122/0.032, $600,000/$600K or 12.2%-derived dollar figures found."
+}
