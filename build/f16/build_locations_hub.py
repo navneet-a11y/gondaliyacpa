@@ -51,11 +51,12 @@ SERVICES = [
 ]
 
 PROVINCES = [
- ('Ontario', 'ontario', 'ontario',
+ ('Ontario', 'ontario', 'ontario', 'Registry filing: Ontario annual return',
   'Ontario corporations file the T2 federally. The Ontario annual return is '
   'filed separately through the Ontario Business Registry and is not covered '
   'by the fee.'),
  ('British Columbia', 'british-columbia', 'british-columbia',
+  'Registry filing: BC annual report',
   'British Columbia corporate income tax is collected through the federal T2. '
   'The BC annual report is filed separately with BC Registries and Online '
   'Services.'),
@@ -71,16 +72,50 @@ ALSO = [
 ]
 
 CSS = io.open(os.path.join(HERE, 'hub.css'), encoding='utf-8').read()
-EXTRA = (".ei-plist{columns:2;column-gap:26px;margin:12px 0 0;padding:0 0 0 20px}\n"
-         ".ei-plist li{break-inside:avoid;margin:0 0 7px;color:#4a5568;"
-         "line-height:1.6}\n"
-         ".ei-prov{margin:0 0 26px}\n"
-         ".ei-prov:last-child{margin-bottom:0}\n"
-         ".ei-prov h3{margin:0 0 4px;font-size:1.15em;font-weight:700;"
-         "color:#1a2340}\n"
-         ".ei-prov h3 a{color:#1a2340;text-decoration:none}\n"
-         ".ei-prov h3 a:hover{color:rgba(32,135,201,1)}\n"
-         "@media(max-width:700px){.ei-plist{columns:1}}\n")
+EXTRA = """
+/* Province jump nav, so a thirteen-province index stays navigable. */
+.ei-jump{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0 0;padding:0;list-style:none}
+.ei-jump a{display:inline-block;background:#f0f7fd;border:1px solid #cfe4f6;border-radius:50px;padding:6px 15px;font-size:.9em;font-weight:600;color:#1a2340;text-decoration:none}
+.ei-jump a:hover{background:rgba(32,135,201,1);border-color:rgba(32,135,201,1);color:#fff}
+/* Province card: the left accent rule is the service pages' .cnf-lic pattern,
+   recoloured to the hub palette so all five hubs still match each other. */
+.ei-pcard{background:#fff;border:1px solid #e2e8f0;border-left:4px solid rgba(32,135,201,1);border-radius:10px;padding:20px 22px;margin:18px 0 0;box-shadow:0 4px 14px rgba(26,35,64,.05);scroll-margin-top:90px}
+.ei-pcard h3{margin:0 0 8px;font-size:1.18em;font-weight:800;color:#1a2340;line-height:1.3}
+.ei-pcard h3 a{color:#1a2340;text-decoration:none}
+.ei-pcard h3 a:hover{color:rgba(32,135,201,1)}
+.ei-badge{display:inline-block;background:#fff6e6;border:1px solid #f6d79a;border-radius:5px;padding:3px 10px;font-size:.76em;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:#8a5a00;margin:0 0 10px}
+.ei-pgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:0 24px;margin:12px 0 0;padding:0;list-style:none}
+.ei-pgrid li{margin:0}
+.ei-pgrid a{display:block;padding:8px 0 8px 18px;position:relative;color:rgba(32,135,201,1);text-decoration:none;font-size:.95em;line-height:1.5;border-bottom:1px solid #f1f5f9}
+.ei-pgrid a:before{content:"";position:absolute;left:2px;top:50%;width:5px;height:5px;margin-top:-5px;border-right:2px solid #9fb3cd;border-bottom:2px solid #9fb3cd;transform:rotate(-45deg)}
+.ei-pgrid a:hover{color:#1a2340}
+.ei-pgrid a:hover:before{border-color:rgba(32,135,201,1)}
+/* Numbered steps, from the service pages' .cnf-steps. */
+.ei-steps{list-style:none;counter-reset:s;display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px;margin:16px 0 0;padding:0}
+.ei-steps>li{counter-increment:s;position:relative;background:#fff;border:1px solid #e9eff7;border-radius:12px;padding:18px 18px 18px 60px;color:#4a5568;line-height:1.6;font-size:.96em}
+.ei-steps>li:before{content:counter(s);position:absolute;left:16px;top:16px;width:32px;height:32px;border-radius:50%;background:#1a2340;color:#fff;font-weight:800;line-height:32px;text-align:center;font-size:.95em}
+.ei-steps>li ul{margin:9px 0 0;padding-left:16px;font-size:.92em}
+.ei-steps>li ul li{margin:0 0 4px}
+.ei-mid-cta{text-align:center;margin:22px 0 0}
+/* Reviewer cards, from the service pages' .cpa-card. */
+.ei-cpa{display:grid;grid-template-columns:repeat(auto-fit,minmax(310px,1fr));gap:16px;margin:16px 0 0}
+.ei-cpac{display:flex;gap:18px;align-items:center;background:#fff;border:1px solid #e2e8f0;border-radius:14px;padding:18px;box-shadow:0 4px 14px rgba(26,35,64,.05)}
+.ei-cpac img{width:118px;height:143px;object-fit:cover;border-radius:10px;flex-shrink:0}
+.ei-cpat h3{margin:0 0 3px;font-size:1.08em;font-weight:800;color:#1a2340;line-height:1.3}
+.ei-cpat p{margin:0 0 5px;font-size:.9em;line-height:1.5;color:#4a5568}
+.ei-cpat .ei-role{color:#1a2340;font-weight:700}
+.ei-cpat a{text-decoration:none}
+@media(max-width:600px){.ei-cpac{flex-direction:column;text-align:center}.ei-cpac img{width:100%;max-width:210px;height:auto}}
+/* FAQ. Visual only: hard rule 6 forbids FAQPage schema. */
+.ei-faq{margin:16px 0 0}
+.ei-faq details{border:1px solid #e2e8f0;border-radius:10px;background:#fff;margin:0 0 10px}
+.ei-faq summary{cursor:pointer;list-style:none;padding:15px 46px 15px 18px;font-weight:700;color:#1a2340;position:relative;line-height:1.45}
+.ei-faq summary::-webkit-details-marker{display:none}
+.ei-faq summary:after{content:"";position:absolute;right:20px;top:50%;width:8px;height:8px;margin-top:-6px;border-right:2px solid rgba(32,135,201,1);border-bottom:2px solid rgba(32,135,201,1);transform:rotate(45deg);transition:transform .15s ease}
+.ei-faq details[open] summary:after{transform:rotate(-135deg);margin-top:-2px}
+.ei-faq .ei-a{padding:0 18px 16px;color:#4a5568;line-height:1.75;margin:0}
+@media(max-width:700px){.ei-pgrid{grid-template-columns:1fr}}
+"""
 
 
 def card(href, title, desc):
@@ -88,13 +123,130 @@ def card(href, title, desc):
             + '</a></h3><p>' + desc + '</p></div>')
 
 
-def province(name, hub_slug, suffix, note):
+def province(name, hub_slug, suffix, badge, note):
+    """One province as a card: heading, registry badge, note, link grid.
+
+    Was a bare <ul> in two CSS columns. Thirteen of those stacked is a wall of
+    identical blue text with nothing to fix the eye on, which is what looked
+    wrong. The card gives each province an edge, the badge surfaces the one
+    fact that actually differs between provinces, and the grid rows get a
+    divider and a chevron so they read as a list of destinations.
+    """
     items = ''.join(
         '<li><a href="%s/%s/">%s in %s</a></li>'
         % (SITE, slug % suffix, label, name) for label, slug in SERVICES)
-    return ('<div class="ei-prov">\n<h3><a href="' + SITE + '/' + hub_slug
-            + '/">Nil T2 Filing in ' + name + '</a></h3>\n<p>' + note + '</p>\n'
-            '<ul class="ei-plist">' + items + '</ul>\n</div>')
+    return ('<div class="ei-pcard" id="p-' + hub_slug + '">\n'
+            '<h3><a href="' + SITE + '/' + hub_slug + '/">Nil T2 Filing in '
+            + name + '</a></h3>\n'
+            '<span class="ei-badge">' + badge + '</span>\n'
+            '<p>' + note + '</p>\n'
+            '<ul class="ei-pgrid">' + items + '</ul>\n</div>')
+
+
+def jump():
+    return ('<ul class="ei-jump">'
+            + ''.join('<li><a href="#p-%s">%s</a></li>' % (q[1], q[0])
+                      for q in PROVINCES)
+            + '</ul>')
+
+
+# Verbatim from the service page templates, where this copy is already signed
+# off. Writing fresh copy here would put new unapproved claims on the page for
+# no gain; the four steps are the same four steps wherever you start from.
+STEPS = [
+ ('Give basic details like your corporation name.',
+  ['We auto-fill your CRA Business Number and incorporation date',
+   'Pick the tax years you have not filed',
+   'Confirm the corporation had no activity in those years',
+   'Attest that you are an authorized signing officer and pass the identity '
+   'check.']),
+ ('Pay $300.00 plus HST per tax year by credit card, debit, Apple Pay '
+  'or Google Pay.', []),
+ ('Confirm your tax year dates, shareholder details and the rest of your '
+  'filing information.', []),
+ ('Sign your Form T183CORP as the authorized signing officer, on a secure '
+  'single-use screen.', []),
+]
+
+REVIEWERS = [
+ ('sharad-gondaliya-cpa.png', 'Sharad Gondaliya, CPA',
+  'https://gondaliyacpa.ca/team/sharad-gondaliya-cpa/',
+  'Principal, Registered EFILE Electronic Filer', '647-212-9559'),
+ ('vandana-goel-cpa.png', 'Vandana Goel, CPA',
+  'https://gondaliyacpa.ca/vandana-goel-cpa/',
+  'Accounting Specialist', '647-250-0242'),
+]
+
+# Unique to this hub: every question is about province and place, which is what
+# someone arriving on a locations index is actually asking. No links out to
+# other question pages. Visual accordion only, no FAQPage schema (hard rule 6).
+FAQ = [
+ ('Does the province my corporation is registered in change the T2 return?',
+  'No. The T2 is a federal return filed with the Canada Revenue Agency, and a '
+  'nil T2 is prepared the same way wherever the corporation is registered. '
+  'What changes is the registry filing that sits beside it, and in some '
+  'provinces a separate provincial return. Each province page states which '
+  'applies there.'),
+ ('Is the provincial annual return included in the fee?',
+  'No. $300.00 plus HST per tax year covers the nil T2 return to '
+  'CRA. Provincial registry filings are filed separately and are not covered, '
+  'including the Ontario annual return through the Ontario Business Registry '
+  'and the British Columbia annual report through BC Registries and Online '
+  'Services.'),
+ ('My corporation is federally incorporated but operates from one province. '
+  'Which page applies?',
+  'Use the page for the province the corporation is registered or '
+  'extra-provincially registered in, because that registration is what decides '
+  'the registry filing beside the T2. The federal annual return under the '
+  'Canada Business Corporations Act is a separate filing again, and is also '
+  'not covered by the fee.'),
+ ('Do you file the Quebec CO-17 or the Alberta AT1?',
+  'Neither is part of a federal T2 filing. The CO-17 is a separate return '
+  'filed with Revenu Quebec and the AT1 is a separate return filed with '
+  'Alberta Tax and Revenue Administration, so neither is covered by the fee '
+  'for the nil T2.'),
+ ('There is no page for my province yet. Can the return still be filed?',
+  'Yes. The T2 is federal, so a nil return for a corporation registered in a '
+  'province without its own page here is prepared and transmitted the same '
+  'way. Province pages are being added over time. Start from the filing form '
+  'or from the service you need.'),
+ ('Do you have an office in my city?',
+  'Filing is handled remotely, so there is no office visit and no appointment '
+  'to arrange. Your return is prepared, reviewed and transmitted by Sharad '
+  'Gondaliya, CPA, a registered EFILE electronic filer, wherever in Canada the '
+  'corporation is registered.'),
+]
+
+
+def steps_html():
+    out = []
+    for text, subs in STEPS:
+        sub = ('<ul>' + ''.join('<li>' + x + '</li>' for x in subs) + '</ul>'
+               ) if subs else ''
+        out.append('<li>' + text + sub + '</li>')
+    return '<ol class="ei-steps">' + ''.join(out) + '</ol>'
+
+
+def reviewers_html():
+    out = []
+    for img, nm, bio, role, tel in REVIEWERS:
+        out.append(
+            '<div class="ei-cpac">'
+            '<img loading="lazy" width="118" height="143" src="' + SITE
+            + '/wp-content/uploads/2026/09/' + img + '" alt="' + nm + '">'
+            '<div class="ei-cpat"><h3>' + nm + '</h3>'
+            '<p><a href="' + bio + '">Bio</a></p>'
+            '<p class="ei-role">' + role + '</p>'
+            '<p>' + tel + '</p>'
+            '<p><a href="mailto:info@corpnilfilingfor300.ca">'
+            'info@corpnilfilingfor300.ca</a></p></div></div>')
+    return '<div class="ei-cpa">' + ''.join(out) + '</div>'
+
+
+def faq_html():
+    return ('<div class="ei-faq">' + ''.join(
+        '<details><summary>' + q + '</summary><p class="ei-a">' + a
+        + '</p></details>' for q, a in FAQ) + '</div>')
 
 
 def render():
@@ -116,10 +268,28 @@ def render():
              'change with the province. What changes is the registry filing '
              'that sits beside it, and each province page states that filing '
              'and its deadline.</p>\n'
+             + jump() + '\n'
              + '\n'.join(province(*q) for q in PROVINCES)
              + '\n</div></div>\n')
 
     p.append('<div class="ei-section-alt"><div class="ei-wrap ei-art">\n'
+             '<h2 class="ei-h2">How Filing Works, in Four Steps</h2>\n'
+             '<p>The process is the same in every province, because the return '
+             'is federal. Nothing on this page needs an appointment.</p>\n'
+             + steps_html()
+             + '\n<div class="ei-mid-cta"><a class="ei-btn-blue" href="' + FORM
+             + '">Start Nil T2 Filing NOW</a></div>\n</div></div>\n')
+
+    p.append('<div class="ei-section"><div class="ei-wrap ei-art">\n'
+             '<h2 class="ei-h2">Who Reviews and Files Your Return</h2>\n'
+             '<p>The same two people handle every province.</p>\n'
+             + reviewers_html() + '\n</div></div>\n')
+
+    p.append('<div class="ei-section-alt"><div class="ei-wrap ei-art">\n'
+             '<h2 class="ei-h2">Questions About Filing by Province</h2>\n'
+             + faq_html() + '\n</div></div>\n')
+
+    p.append('<div class="ei-section"><div class="ei-wrap ei-art">\n'
              '<h2 class="ei-h2">Also on This Site</h2>\n<div class="ei-cards">\n'
              + '\n'.join(card(h, t, d) for h, t, d in ALSO)
              + '\n</div>\n<p class="ei-updated">Last reviewed: ' + TODAY

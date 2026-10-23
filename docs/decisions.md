@@ -4792,3 +4792,56 @@ CSS is one step and verifiable on sight, so it goes to Navneet instead.
 Unverified by me for the same proxy reason: the selectors match Astra 4.0.0's
 submenu markup for both the classic and header-builder menus, but the rendered
 result has not been seen.
+
+### /locations/ redesigned with service-page components
+
+The hub looked poor and the cause was structural, not cosmetic: two provinces
+times twelve services rendered as bare `<ul>` bullets in two CSS columns, which
+is 24 lines of identical blue text with nothing to fix the eye on. At thirteen
+provinces that becomes 156. It read as a sitemap, not a page.
+
+Changed, at Navneet's request to borrow from the service pages:
+
+- **Province cards.** Each province is now a card with a left accent rule, the
+  pattern lifted from the service pages' `.cnf-lic` boxes. Replaces `.ei-prov`.
+- **Registry badge.** Each card carries a badge naming the one fact that
+  actually differs between provinces: "Registry filing: Ontario annual return",
+  "Registry filing: BC annual report". The information was already in the note
+  paragraph; the badge surfaces it where it can be scanned.
+- **Link grid.** `.ei-plist` CSS columns became `.ei-pgrid`, a real grid with a
+  hairline divider and a chevron per row, so the links read as destinations.
+- **Province jump nav.** Pill links to `#p-<slug>` anchors. Pointless at two
+  provinces, necessary at thirteen, and free to add now.
+- **Four-step process**, from the service pages' `.cnf-steps` numbered circles.
+- **Reviewer cards**, from `.cpa-card`: Sharad Gondaliya and Vandana Goel.
+- **Six FAQs**, unique to this hub and all about province and place, which is
+  what someone landing on a locations index is asking. No links out to other
+  question pages.
+
+Palette: the borrowed blocks were recoloured from the service pages' `#314d8a`
+to the hub palette (`#1a2340`, `rgba(32,135,201,1)`). Keeping `#314d8a` would
+have made this hub the only one of the five that did not match the others, and
+hub-to-hub consistency matters more than matching the service templates.
+
+Step copy is verbatim from the service page templates, where it is already
+signed off, rather than rewritten. It duplicates those pages, which is accepted:
+a process strip is boilerplate, and writing fresh copy would have put new
+unapproved claims on the page for no gain.
+
+Compliance, checked by script before publishing and after: schema is still only
+CollectionPage and BreadcrumbList, so no FAQPage despite the new accordion and
+no HowTo despite the new steps (hard rule 6). T183CORP never bare. Every price
+reads $300.00 plus HST per tax year. No banned superlative. No "no penalty".
+"Registered EFILE Electronic Filer" is the only CRA-adjacent wording, carried
+over from the service page. No emoji.
+
+"Do you have an office in my city?" answers the near-me intent honestly —
+filing is remote, no office visit — rather than implying local premises.
+
+Method: patches were derived from the committed file, proven locally to
+reproduce the generator output byte for byte, then applied live as six
+`wp_replace_in_post` calls. Live went 10,621 to 19,332 bytes, each intermediate
+length matching the prediction. No service-place URL changed; the only links
+added are two anchors, two bios and a mailto.
+
+Not verified visually. The egress proxy blocks corpnilfilingfor300.ca.
