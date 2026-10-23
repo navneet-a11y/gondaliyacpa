@@ -4673,3 +4673,19 @@ real work.
 
 Menu 3, "Primary (2)", is a leftover starter menu of `#services`-style anchors
 and was left alone.
+
+### Home added back
+
+Navneet asked for Home back, so the menu is five top-level items, not four, and
+the note above about Astra's logo carrying the route no longer applies:
+
+1. Home, `/`
+2. Services, `/services/` — All services, Locations
+3. Pricing, `/pricing/nil-t2-filing-cost/`
+4. Resources, no link — Guides, Tools, Blog
+5. About, `/about/` — About us, Reviews, Contact
+
+Thirteen items. The other four departures from the written spec stand:
+`/contact-us/` for the nonexistent `/contact/`, Resources as a non-navigating
+parent, Pricing on the Family 8 cost page rather than `/pricing/`, and the six
+service children dropped in favour of "All services".
