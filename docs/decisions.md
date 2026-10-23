@@ -4147,3 +4147,48 @@ rather than leaving live and build to drift.
 cache**, since `!important` removes the override hypothesis. Appending an unknown
 query string to the URL bypasses the cache and tests it in one click without
 purging anything.
+
+## 2026-10-23 — Calculator panel restyled dark navy
+
+Navneet asked whether the sample's dark navy calculator was not the better
+design, meaning the input panel itself. It is, for a reason worth stating: the
+panel is the only thing on these pages that asks for input, and as a white card
+on a white body it read as more body copy. Navy separates the thing you do from
+the thing you read.
+
+`.ei-tool` is now `#1a2340` with the legend in `#f6ad1a`, labels at 82% white,
+the date field translucent white-on-navy, and the Yes/No pills outlined rather
+than filled. Flat navy, as the sample's `.svd-panel` has it, not the hero's
+gradient; two gradients stacked would have competed.
+
+Three details that are not in the sample:
+
+- **`color-scheme:dark` and `filter:invert(1)` on the date picker indicator.**
+  The native calendar icon is near-black and would have vanished on navy. The
+  sample has no date input, so it does not face this.
+- **The result box stays light.** `.ei-out` sits inside the panel; left light it
+  reads as the answer card against the navy, and its green and red variants
+  still carry eligible / not eligible.
+- **The selected pill moved from `#2087c9` to `#1a7ab5`.** White on `#2087c9` is
+  3.91:1, under the 4.5 that bold text at this size needs, and it was already
+  that way on the white card, so this fixes a pre-existing contrast failure
+  rather than one the restyle introduced. `#1a7ab5` is 4.67:1 and is not a new
+  colour: it is the hover shade `.ei-btn-blue` already uses.
+
+Contrast checked on all panel text against `#1a2340`: legend 8.03, labels 10.79,
+pill text 9.25, date text 15.46. All pass AA for normal text.
+
+Every selector carries one class more than the base rule it replaces, since the
+base rules sit earlier in the same stylesheet and `.ei-yn label` is already
+two-class.
+
+The change is a pure 2,003-byte insertion, identical on all three pages, with
+`.ei-hero` and `.ei-hero-inner` verified unchanged. Live byte counts 22,991,
+23,158 and 21,754 match the rebuilt files. Gate clear.
+
+### FAQ rule confirmed
+
+Navneet asked for unique FAQs with no links to other FAQ pages. Both already
+hold and are now a standing rule: the eighteen questions were overlap-checked
+against all 45 Family 5 slugs at 0.27 maximum, and the answers contain zero
+links of any kind, with nothing on these pages pointing at `/answers/`.
