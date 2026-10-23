@@ -15,8 +15,8 @@
    "location": "Visible",
    "section": "case study card",
    "rule": "R1",
-   "before": " A non-resident investor registered an Ontario corporation to buy a Thornbury property, having been told abroad that a Canadian company would pay around 12.2% on its first $500,000.",
-   "after": " A non-resident investor registered an Ontario corporation to buy a Thornbury property, having been told abroad that a Canadian company would pay around 11.2% on its first $500,000.",
+   "before": "A non-resident investor registered an Ontario corporation to buy a Thornbury property, having been told abroad that a Canadian company would pay around 12.2% on its first $500,000.",
+   "after": "A non-resident investor registered an Ontario corporation to buy a Thornbury property, having been told abroad that a Canadian company would pay around 11.2% on its first $500,000.",
    "note": ""
   },
   {
@@ -25,7 +25,7 @@
    "rule": "R1",
    "before": "\">It depends on the exit you have in mind, and it is costed rather than assumed. Two points come up on nearly every call. First, incorporating does not by itself answer the Non-Resident Speculation Tax question, because whether a corporation counts as a foreign entity under Ontario's rules is decided by those rules read against your share register, and many owners incorporate expecting that to settle it. Second, the combined Ontario rate of about 12.2%",
    "after": "\">It depends on the exit you have in mind, and it is costed rather than assumed. Two points come up on nearly every call. First, incorporating does not by itself answer the Non-Resident Speculation Tax question, because whether a corporation counts as a foreign entity under Ontario's rules is decided by those rules read against your share register, and many owners incorporate expecting that to settle it. Second, the combined Ontario rate of about 11.2%",
-   "note": "Visible and JSON-LD copies are identical over a long span, so before starts at the distinguishing markup to stay unique."
+   "note": "Visible and JSON-LD copies are identical over a long span, so before starts at the distinguishing markup to stay unique. Before ends at the rate because the visible and JSON-LD answers match word for word for ~450 chars on each side; length slightly over 400."
   },
   {
    "location": "JSON-LD",
@@ -33,7 +33,7 @@
    "rule": "R1",
    "before": ":\"It depends on the exit you have in mind, and it is costed rather than assumed. Two points come up on nearly every call. First, incorporating does not by itself answer the Non-Resident Speculation Tax question, because whether a corporation counts as a foreign entity under Ontario's rules is decided by those rules read against your share register, and many owners incorporate expecting that to settle it. Second, the combined Ontario rate of about 12.2%",
    "after": ":\"It depends on the exit you have in mind, and it is costed rather than assumed. Two points come up on nearly every call. First, incorporating does not by itself answer the Non-Resident Speculation Tax question, because whether a corporation counts as a foreign entity under Ontario's rules is decided by those rules read against your share register, and many owners incorporate expecting that to settle it. Second, the combined Ontario rate of about 11.2%",
-   "note": "Visible and JSON-LD copies are identical over a long span, so before starts at the distinguishing markup to stay unique. JSON-LD copy of the visible FAQ answer; mirrors the visible change."
+   "note": "Visible and JSON-LD copies are identical over a long span, so before starts at the distinguishing markup to stay unique. JSON-LD copy of the visible FAQ answer; mirrors the visible change. Before ends at the rate (identical text both sides)."
   }
  ],
  "page_note": ""

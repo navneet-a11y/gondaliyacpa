@@ -39,7 +39,12 @@ WRAP = Alignment(wrap_text=True, vertical="top")
 def clean(s):
     s = re.sub(r"<[^>]+>", "", s or "")
     s = html.unescape(s)
-    return re.sub(r"\s+", " ", s).strip()
+    s = re.sub(r"\s+", " ", s).strip()
+    # drop fragments of markup or entities where the exact-match text starts or ends mid-code
+    s = re.sub(r'^"?[@\w]*"\s*:\s*"', "", s)
+    s = re.sub(r"^(?:[#\w]*;|[-\"'>:,.)\]}]+)\s*", "", s)
+    s = re.sub(r"\s*(?:&[#\w]*|[<\"{\[(]+)$", "", s)
+    return s
 
 
 def style_table(ws, ncols, nrows, widths):

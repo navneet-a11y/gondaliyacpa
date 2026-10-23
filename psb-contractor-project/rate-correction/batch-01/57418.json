@@ -5,11 +5,11 @@
  "rows": [
   {
    "location": "Visible",
-   "section": "intro",
+   "section": "CRA obligations card",
    "rule": "R1",
-   "before": "g>12.2%",
-   "after": "g>11.2% (12.2% before July 1, 2026)",
-   "note": "Visible and JSON-LD copies are identical over a long span, so before starts at the distinguishing markup to stay unique. First R1 change on page; parenthetical added."
+   "before": "a combined Ontario rate of about <strong>12.2%</strong> &mdash; a band that answers to profit and never to the gross figure on a marketplace dashboard.",
+   "after": "a combined Ontario rate of about <strong>11.2%</strong> (12.2% before July 1, 2026) &mdash; a band that answers to profit and never to the gross figure on a marketplace dashboard.",
+   "note": "First R1 change on page; parenthetical placed after the closing </strong> tag."
   },
   {
    "location": "Visible",
@@ -29,7 +29,7 @@
   },
   {
    "location": "Visible",
-   "section": "FAQ",
+   "section": "final CTA",
    "rule": "R1",
    "before": "Corporate returns built from that reconciliation, with about 12.2% combined Ontario reaching the first $500,000 of active business income under section 125 and read against profit rather than against a dashboard figure.",
    "after": "Corporate returns built from that reconciliation, with about 11.2% combined Ontario reaching the first $500,000 of active business income under section 125 and read against profit rather than against a dashboard figure.",
