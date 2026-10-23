@@ -56,7 +56,7 @@ Page 7 "Home (old Astra demo)" is a draft with no public URL: delete it.
 | 2 to 3 | Create /wp-content/uploads/ws/ and /ws/people/; upload CSS and JS | Navneet (File Manager) | Done Oct 22, URLs open |
 | 4 | Upload the 4 headshots to /ws/people/ | Navneet (File Manager) | Done Oct 22 (Sharad's 400 px is upscaled from a 240 x 360 photo; replace when a larger original arrives) |
 | 5 | Code Snippets PHP snippet | Claude | Done Oct 23: snippet 8 active, no PHP errors |
-| 6 | LiteSpeed JS excludes | Can be done through the WordPress connection | Not started |
+| 6 | LiteSpeed JS excludes | Navneet | Done Oct 23: wealthscale-widgets in JS Excludes and JS Deferred/Delayed Excludes; cache purged |
 | 7 | Author "Sharad Gondaliya, CPA" | Navneet + Claude | Done Oct 22: user 1 display name, bio and names set by Navneet; author slug changed from admin to sharad-gondaliya. Login username stays admin. Still to do Friday: Rank Math author archives off |
 | 8 | Rank Math schema, breadcrumbs, Instant Indexing | Navneet | Done Oct 23: Article schema for pages, breadcrumbs on, author archives off, Instant Indexing on; checked in browser and Rich Results test |
 | 9 | Delete Hello world!, sample comment, Sample Page | Claude | Done Oct 23: post 1, comment 1 and page 7 trashed |
