@@ -262,6 +262,6 @@
 - Meta title: Share Issuance and Transfer, Ontario and Federal | CPA
 - Meta description: Issue or transfer shares in an Ontario or federal corporation. Directors' resolutions, certificates, share register and ISC register, CPA reviewed.
 
-## /shareholder-agreement-template/ (page 10578, draft created 2026-10-23, meta set by connector)
+## /shareholder-agreement-template/ (page 10578, published 2026-10-23, meta set by connector)
 - Meta title: Shareholder Agreement Template, Ontario | CPA Firm
 - Meta description: A shareholder agreement template with the tax consequences explained by a CPA firm. We are not a law firm. Have a lawyer review it before you sign.
