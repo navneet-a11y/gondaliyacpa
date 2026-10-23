@@ -286,3 +286,11 @@
 - Main menu: top-level "Jurisdictions" (item 10087) now links to /incorporate-by-province/ instead of "#" (2026-10-23)
 - /incorporate-by-province/ (10410): emoji icons replaced with SVG icons; CSS added to remove gap above hero (2026-10-23)
 - Main menu: "Which Province Should I Choose?" (item 10621) added as first item under Jurisdictions; hub 10410 intro links to it (2026-10-23)
+
+## /incorporation-services-oshawa/ (page 10622, draft 2026-10-23, meta set by connector)
+- Meta title: Incorporate a Business in Oshawa | $35 + Government Fees
+- Meta description: Incorporate in Oshawa or Durham Region for $35, HST included, plus the $300 Ontario fee. A CPA checks your shares, year end and any City licence first.
+
+## /incorporation-services-hamilton/ (page 10627, draft 2026-10-23, meta set by connector)
+- Meta title: Incorporate a Business in Hamilton | $35 + Government Fees
+- Meta description: Incorporate in Hamilton, Stoney Creek or Ancaster for $35, HST included, plus the $300 Ontario fee. A CPA checks your shares, College rules and City licence first.
