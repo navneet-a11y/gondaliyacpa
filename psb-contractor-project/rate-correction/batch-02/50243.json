@@ -1,0 +1,16 @@
+{
+ "id": 50243,
+ "url": "https://gondaliyacpa.ca/accountant-for-fire-protection-contractors/",
+ "title": "Accounting and Tax Services for Fire Protection Contractors",
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "Case study - what we did",
+   "rule": "R1",
+   "before": "applied the $500,000 Small Business Deduction at the 12.2% rate, filed every outstanding T5018, and set up section 10 materials inventory for pipe, heads, panels and extinguishers so cost of materials matched what was installed.",
+   "after": "applied the $500,000 Small Business Deduction at the 11.2% (12.2% before July 1, 2026) rate, filed every outstanding T5018, and set up section 10 materials inventory for pipe, heads, panels and extinguishers so cost of materials matched what was installed.",
+   "note": "Case-study result stated without a date as the current SBD-taxed rate; treated as current. If Sharad dates this engagement before July 1, 2026, switch to R3 (leave)."
+  }
+ ],
+ "page_note": "Other rate mentions (service cards, FAQs and JSON-LD) already show 11.2%. No 3.2%, 0.122/0.032 or 12.2%-derived dollar figures found. No $600,000/$600K found. Case-study '$27,000 a year' saving is not shown as computed from 12.2% - left as is."
+}

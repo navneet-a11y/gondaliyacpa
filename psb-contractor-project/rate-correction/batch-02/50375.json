@@ -1,0 +1,16 @@
+{
+ "id": 50375,
+ "url": "https://gondaliyacpa.ca/accountant-for-lawn-care-businesses/",
+ "title": "Accounting and Tax Services for Lawn Care Businesses",
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "Case study - result",
+   "rule": "R1",
+   "before": "<li>Cut the combined tax rate from personal levels toward 12.2%</li>",
+   "after": "<li>Cut the combined tax rate from personal levels toward 11.2% (12.2% before July 1, 2026)</li>",
+   "note": "Case-study result stated without a date as the current SBD-taxed rate; treated as current. If Sharad dates this engagement before July 1, 2026, switch to R3 (leave)."
+  }
+ ],
+ "page_note": "Other rate mentions (service cards, FAQs and JSON-LD) already show 11.2%. No 3.2%, 0.122/0.032 or 12.2%-derived dollar figures found. '$600,000 operation' in the incorporation card is a business-sale value, not the small business limit - no change."
+}

@@ -1,0 +1,16 @@
+{
+ "id": 50245,
+ "url": "https://gondaliyacpa.ca/accountant-for-insulation-contractors/",
+ "title": "Accounting and Tax Services for Insulation Contractors",
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "Case study - what we did",
+   "rule": "R1",
+   "before": "applied the $500,000 Small Business Deduction so active income is taxed near 12.2%, filed Schedule 31 for the apprentices, and prepared the outstanding T5018 returns before CRA raised them.",
+   "after": "applied the $500,000 Small Business Deduction so active income is taxed near 11.2% (12.2% before July 1, 2026), filed Schedule 31 for the apprentices, and prepared the outstanding T5018 returns before CRA raised them.",
+   "note": "Case-study result stated without a date as the current SBD-taxed rate; treated as current. If Sharad dates this engagement before July 1, 2026, switch to R3 (leave)."
+  }
+ ],
+ "page_note": "Other rate mentions (service cards, FAQs and JSON-LD) already show 11.2%. No 3.2%, 0.122/0.032 or 12.2%-derived dollar figures found. No $600,000/$600K found."
+}
