@@ -4079,3 +4079,29 @@ Live byte counts 20,147, 20,314 and 18,910 match the rebuilt files. Gate clear.
 The Family 9 guides still carry the 900px cap against their 1100px column. That
 is the original design and it was left alone, but if the inset is not wanted
 there either it is the same one-line override.
+
+### Body column narrowed again, to 860px
+
+Navneet asked for less width again, with a screenshot showing the tool form
+running nearly edge to edge.
+
+Set to **860px**, which is `.ei-hero-inner`'s existing measure, so the body
+column now sits exactly under the hero text rather than running wider than it.
+No new number was introduced.
+
+Two details worth recording:
+
+- **Specificity 0,2,0**, `.ei-wrap.ei-art,.ei-cta-bottom .ei-wrap`, not a bare
+  `.ei-wrap`. The earlier 1000px rule is a single class and would be outranked
+  by any two-class rule in the theme or kit CSS; this one will not be. It also
+  targets the body sections by name, so the hero is structurally out of reach.
+- **The hero band is untouched** and still spans the viewport, as asked. Only
+  `.ei-wrap.ei-art` (the six body sections) and the bottom CTA's inner wrap move.
+
+Live byte counts 20,557, 20,724 and 19,320 match the rebuilt files. Gate clear.
+Verified in the build that `.ei-hero` and `.ei-hero-inner` are unchanged.
+
+Width on these pages has now gone 1100 to 1000 to 860 over three rounds. If 860
+is still wide, the next step is not another guess: the cap only bites when the
+window is wider than it, so the browser width is what decides what Navneet
+actually sees.

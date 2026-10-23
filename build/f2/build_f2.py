@@ -68,6 +68,12 @@ TOOL_CSS = """
    and off-axis from, their own H2 and the body copy above. Run them the
    full measure of the column instead. */
 .ei-faq,.ei-qlist{max-width:none;margin-left:0;margin-right:0}
+/* Narrower again, at Navneet's request. 860px is not a new number: it is
+   .ei-hero-inner's measure, so the body column now sits exactly under the
+   hero text instead of running wider than it. Specificity 0,2,0 rather
+   than a bare .ei-wrap, so nothing single-class outranks it. The hero
+   band itself is untouched and still spans the viewport. */
+.ei-wrap.ei-art,.ei-cta-bottom .ei-wrap{max-width:860px}
 .ei-tool{background:#fff;border:1px solid #e2e8f0;border-radius:12px;padding:22px 24px;margin:18px 0;box-shadow:0 1px 2px rgba(26,35,64,.05)}
 .ei-tool legend{font-weight:800;color:#1a2340;font-size:1.05em;padding:0 0 6px}
 .ei-tool fieldset{border:0;margin:0;padding:0}
