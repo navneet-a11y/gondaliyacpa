@@ -3888,3 +3888,24 @@ On publish they take their /tools/<slug>/ URLs.
 Note for the review: the tools are the one family where reading the page is not
 enough. The maths runs in the browser, so the thing to check is the result
 screen changing as answers change, not the prose around it.
+
+### Published 2026-10-23
+
+All three moved from draft to publish and now resolve at their /tools/ URLs:
+
+  https://corpnilfilingfor300.ca/tools/nil-t2-deadline-calculator/        1124
+  https://corpnilfilingfor300.ca/tools/t2-short-eligibility-checker/      1122
+  https://corpnilfilingfor300.ca/tools/gifi-schedule-requirement-checker/ 1120
+
+Content unchanged through the status transition, checked by probe: 1124 still
+16,354 bytes. Family 2 is 3 of 150.
+
+Still open on these three, unchanged by publishing:
+
+- **Inbound links are zero.** 6(g) sets a minimum of 3 per Family 2 page. The
+  /tools/ hub (F16) does not exist and the matching guides do not link down.
+  Until that is fixed these three are orphans, which 6(g) treats as a defect
+  rather than a delay.
+- **Sharad Gondaliya checks the math.** 6(e) assigns that on every tool page and
+  it has not happened. The pages are live and the site is still noindexed under
+  hard rule 10, so nothing is exposed, but the review is outstanding.
