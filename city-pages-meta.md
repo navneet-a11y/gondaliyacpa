@@ -246,15 +246,15 @@
 - Meta title: Dissolving a Corporation in Canada: Steps, Fees and Tax
 - Meta description: How to dissolve a federal or Ontario corporation: registry filings and fees, closing CRA accounts, the final T2, wind-up tax and director liability.
 
-## /reviews/vaughan/ (page 10563, draft created 2026-10-22, meta set by connector)
+## /reviews/vaughan/ (page 10563, published 2026-10-23, meta set by connector)
 - Meta title: Vaughan Client Reviews - Open Corporation for $35
 - Meta description: See what Vaughan business owners say about us, then incorporate your own company for $35, HST included. Filed by a licensed CPA firm.
 
-## /reviews/north-york/ (page 10565, draft created 2026-10-22, meta set by connector)
+## /reviews/north-york/ (page 10565, published 2026-10-23, meta set by connector)
 - Meta title: North York Client Reviews - Open Corporation for $35
 - Meta description: See what North York business owners say about us, then incorporate your own company for $35, HST included. Filed by a licensed CPA firm.
 
-## /reviews/markham/ (page 10567, draft created 2026-10-22, meta set by connector)
+## /reviews/markham/ (page 10567, published 2026-10-23, meta set by connector)
 - Meta title: Markham Client Reviews - Open Corporation for $35
 - Meta description: See what our clients say, then incorporate your Markham company for $35, HST included. Filed by a licensed CPA firm from our North York office.
 

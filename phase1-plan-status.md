@@ -15,9 +15,9 @@ Checked against the live WordPress site on 14 October 2026, updated 16 October 2
 | Compare | 14 | 14 | 0 | 0 |
 | Guides | 34 | 34 | 0 | 0 |
 | Blog | 13 | 4 | 0 | 9 |
-| About, Team, Reviews, Contact and Legal | 24 | 21 | 0 | 3 |
+| About, Team, Reviews, Contact and Legal | 24 | 24 | 0 | 0 |
 | French Quebec | 10 | 0 | 0 | 10 |
-| **Total** | **201** | **167** | **9** | **25** |
+| **Total** | **201** | **170** | **9** | **22** |
 
 ## Home
 
@@ -239,9 +239,9 @@ Checked against the live WordPress site on 14 October 2026, updated 16 October 2
 | /author/sharad-gondaliya/ | P2 | Built (different URL) | /team/sharad-gondaliya/ |
 | /author/vandana-goel/ | P2 | Built (different URL) | /team/vandana-goel/ |
 | /sitemap/ | P2 | Built (different URL) | /html-sitemap/ |
-| /reviews/vaughan/ | P3 | Draft (page 10563) | /reviews/vaughan/ |
-| /reviews/north-york/ | P3 | Draft (page 10565) | /reviews/north-york/ |
-| /reviews/markham/ | P3 | Draft (page 10567) | /reviews/markham/ |
+| /reviews/vaughan/ | P3 | Built | /reviews/vaughan/ |
+| /reviews/north-york/ | P3 | Built | /reviews/north-york/ |
+| /reviews/markham/ | P3 | Built | /reviews/markham/ |
 | /reviews/ | P1 | Built | /reviews/ |
 | /contact/ | P1 | Built | /contact/ |
 | /disclaimer/ | P1 | Built | /disclaimer/ |
