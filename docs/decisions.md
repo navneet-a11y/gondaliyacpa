@@ -4689,3 +4689,25 @@ Thirteen items. The other four departures from the written spec stand:
 `/contact-us/` for the nonexistent `/contact/`, Resources as a non-navigating
 parent, Pricing on the Family 8 cost page rather than `/pricing/`, and the six
 service children dropped in favour of "All services".
+
+### The six service pages restored to the Services dropdown
+
+Navneet asked for them back. The Services dropdown is now eight items, in this
+order: All services, then the six services as they were, then Locations last.
+
+1. All services, `/services/`
+2. Nil T2 Filing, `/nil-t2-filing/`
+3. Catch-Up Nil T2 Filing, `/catch-up-nil-t2-filing/`
+4. Dormant Corporation Filing, `/dormant-corporation-filing/`
+5. Final T2 Before Dissolution, `/final-t2-before-dissolution/`
+6. T2 Short Filing, `/t2-short-filing/`
+7. Inactive Holding Corporation T2 Filing,
+   `/inactive-holding-corporation-t2-filing/`
+8. Locations, `/locations/`
+
+Locations sits last rather than second, so the six services read as one group
+under the overview rather than being split by a place link. The menu is
+nineteen items in total.
+
+That withdraws the "dropped in favour of All services" note above: All services
+is now the overview at the top of the group, not a replacement for it.
