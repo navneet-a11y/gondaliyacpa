@@ -4742,3 +4742,53 @@ a child that duplicated it.
 Nineteen menu items. Note that the remaining children keep menu_order 2 to 8
 with no 1; WordPress sorts ascending and renumbers on the next wp-admin save,
 so the gap changes nothing about the rendered order.
+
+### Locations promoted to top level
+
+Asked where `/locations/` belonged after it looked wrong inside the Services
+dropdown. Moved item 1195 to top level at position 3, directly after Services,
+and shifted Pricing to 4, Resources to 5, About to 6, Contact to 7.
+
+Reasons, all from the plan rather than taste. Section 6(g)'s Home row treats the
+five hubs as peers, so burying one under another family's dropdown contradicts
+it. Line 1203 gives `/locations/` its own conversion path, `/locations/` to city
+hub to the service x place page, and its own entry keyword, "nil t2 filing near
+me" — a path with its own entry keyword needs a reachable entry point. And the
+hub is destined to carry the 351 cluster URLs of Family 3 plus Family 6.
+
+Resources was considered and rejected: that dropdown is informational (Guides,
+Tools, Blog) and Locations is commercial intent. Mixing the two makes the menu
+harder to scan.
+
+Top level is now: Home, Services, Locations, Pricing, Resources, About, Contact.
+
+### Services dropdown widened rather than its labels shortened
+
+"Inactive Holding Corporation T2 Filing" (item 1204) wraps onto a second line
+in the Services dropdown. It is the longest label there by eleven characters —
+the next longest is "Final T2 Before Dissolution" at 27.
+
+The label was briefly shortened to "Inactive Holding Corporation" and then
+reverted on instruction: the dropdown gets wider, the wording does not get cut.
+This is consistent with the standing rule against shortening footer labels.
+Dropping "T2 Filing" would also have lost the parallel with the five siblings
+that all carry "Filing", and "Inactive" is the qualifier that makes the
+corporation nil at all, so neither half of the phrase is spare.
+
+Fix is CSS, in `docs/snippets/submenu-width.css`: desktop dropdowns get
+`width:auto` with Astra's 240px kept as `min-width`, and labels get
+`white-space:nowrap`. Auto width means no magic number and no dead space on the
+short dropdowns.
+
+Not installed by me. The corpnil connector cannot write site-wide CSS — core's
+`custom_css` post type is not REST-exposed and the connector has no
+`wp_update_custom_css` or theme-mod tool, unlike the gondaliyacpa connector.
+Elementor Pro's `elementor_snippet` type is reachable and empty, so using it
+would have meant guessing `_elementor_location` and `_elementor_conditions`
+blind, and the egress proxy blocks corpnilfilingfor300.ca so the result could
+not be verified from here. Pasting into Appearance -> Customize -> Additional
+CSS is one step and verifiable on sight, so it goes to Navneet instead.
+
+Unverified by me for the same proxy reason: the selectors match Astra 4.0.0's
+submenu markup for both the classic and header-builder menus, but the rendered
+result has not been seen.

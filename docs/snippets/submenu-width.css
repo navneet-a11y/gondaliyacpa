@@ -1,0 +1,33 @@
+/*
+ * corpnilfilingfor300.ca — primary menu dropdown width
+ *
+ * Problem: the Services dropdown is hard-coded to 240px by Astra, so the
+ * longest child label, "Inactive Holding Corporation T2 Filing" (38
+ * characters), wraps onto a second line.
+ *
+ * Fix: let each desktop dropdown size itself to its widest label and stop
+ * labels wrapping. width:auto means no magic number to maintain and no dead
+ * space on the short dropdowns (Resources, About); min-width keeps Astra's
+ * 240px as the floor so nothing gets narrower than it is today.
+ *
+ * Desktop only. The .ast-desktop prefix leaves the mobile off-canvas menu
+ * alone, where items are full-width and wrapping is correct.
+ *
+ * !important is deliberate: Astra emits its 240px as dynamic inline CSS and
+ * the same selector at equal specificity does not reliably win.
+ *
+ * Install: Appearance -> Customize -> Additional CSS. Paste, Publish.
+ */
+
+.ast-desktop .main-header-menu .sub-menu,
+.ast-desktop .ast-builder-menu .sub-menu,
+.ast-desktop .ast-builder-menu-1 .sub-menu {
+	width: auto !important;
+	min-width: 240px !important;
+}
+
+.ast-desktop .main-header-menu .sub-menu .menu-link,
+.ast-desktop .ast-builder-menu .sub-menu .menu-link,
+.ast-desktop .ast-builder-menu-1 .sub-menu .menu-link {
+	white-space: nowrap !important;
+}
