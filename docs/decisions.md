@@ -4888,3 +4888,39 @@ home page's Our Office section.
 
 Live went 19,332 to 19,018 bytes across five patches, each intermediate length
 matching the prediction, and the result is byte-identical to the generator.
+
+### Province link grid restyled, and a contrast failure found in the hub palette
+
+The 24 links per province card were bright blue at .95em, which is what looked
+wrong: in a dense list, colour on every row carries no information, because
+every row is a link. Colour that marks everything marks nothing.
+
+Restyled so the colour is spent on state rather than on the default:
+
+- Default `#3a4a63`, a dark slate, at .875em and weight 500. 8.98:1 on white.
+- Hover `#1a7ab5` with a 4px left nudge, so the row that responds is the one
+  under the cursor. 4.67:1.
+- Chevron down from 2px to 1.5px, and the row divider lightened to `#eef2f7`.
+
+**The old colour was an accessibility failure.** `rgba(32,135,201,1)`, which is
+`#2087c9`, measures **3.91:1 on white**, under the 4.5:1 that normal body text
+needs. The restyle fixes it on this grid by accident rather than by design, but
+the same value is set site-wide on hub pages by `hub.css`:
+
+    .ei-art a{color:rgba(32,135,201,1)}
+
+so every body link on every hub page is currently at 3.91:1. That is a real
+WCAG 1.4.3 failure and it is not fixed. `#1a7ab5` is the drop-in replacement,
+already in the palette as a hover shade, and already used for this reason on
+the Family 2 calculators, where the same failure was found and fixed earlier
+today. Fixing it properly means one change in `hub.css` and a republish of all
+five hubs, which is a bigger change than was asked for here, so it is logged
+rather than done.
+
+The chevron was first set to `#c2cfe0` at 1.58:1. Arguably exempt as decorative,
+since it duplicates what the link text and hover already say, but being
+generous cost nothing: `#7f94ad` is the lightest shade on the ramp that clears
+3:1, at 3.11:1.
+
+Live 19,018 to 19,120 bytes across four patches, byte-identical to the
+generator. No markup changed, CSS only.
