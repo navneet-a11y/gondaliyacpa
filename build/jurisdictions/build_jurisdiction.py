@@ -167,25 +167,11 @@ BC = dict(
  # The Ontario page computes the HST total. British Columbia is not an HST
  # province, so no tax computation appears on this page at all.
  quote_tax_total=False,
- # The five F4 British Columbia service pages published 2026-10-21. Where a
- # jurisdiction has its own child page the hub card points at it rather than at
- # the national service page. The sixth, inactive holding, has no BC page yet,
- # so that card still points at the national page.
- children={
-  '/nil-t2-filing/':
-    ('/nil-t2-filing-british-columbia/', 'Nil T2 Filing in British Columbia'),
-  '/catch-up-nil-t2-filing/':
-    ('/catch-up-nil-t2-filing-british-columbia/',
-     'Catch-Up Nil T2 Filing in British Columbia'),
-  '/dormant-corporation-filing/':
-    ('/dormant-corporation-filing-british-columbia/',
-     'Dormant Corporation Filing in British Columbia'),
-  '/final-t2-before-dissolution/':
-    ('/final-t2-before-dissolution-british-columbia/',
-     'Final T2 Before Dissolution in British Columbia'),
-  '/t2-short-filing/':
-    ('/t2-short-filing-british-columbia/', 'T2 Short Filing in British Columbia'),
- },
+ # All twelve F4 British Columbia service pages are live: five published
+ # 2026-10-21 and the remaining seven 2026-10-23. The hub links its own twelve
+ # children directly, so the children map that pointed the gaps at national
+ # service pages is no longer needed.
+ cards='british-columbia-cards.json',
 )
 
 JURISDICTIONS = [BC]
@@ -274,8 +260,14 @@ def build(j):
     # ---- service boxes, in the /services/ card pattern --------------------
     b.append('<h2>Browse Our Affordable Nil T2 Filing Services in ' + name + '</h2>')
     b.append('<ul class="cnf-boxes">')
+    # A jurisdiction with its own full card file links its own twelve children
+    # directly. The children map stays for a jurisdiction that has only some of
+    # them, where the rest still point at the national service page.
+    cards = SERVICE_CARDS
+    if j.get('cards'):
+        cards = json.load(io.open(os.path.join(HERE, j['cards']), encoding='utf-8'))
     kids = j.get('children', {})
-    for c in SERVICE_CARDS:
+    for c in cards:
         href, title = kids.get(c['href'], (c['href'], c['title']))
         b.append('<li class="cnf-box">%s<h3>%s</h3><p>%s</p>'
                  '<a class="cnf-more" href="%s%s">Learn more</a></li>'

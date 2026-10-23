@@ -3757,3 +3757,48 @@ figures could not see the larger ones. Widened to accept separators, and the
 allowlist now records why each figure is permitted. $0.00, $25.00 and $2,500.00
 are the plan's own qualification sentence; $600.00, $900.00 and $1,500.00 are
 multiples of the price, which the Ontario cost page already publishes.
+
+## 2026-10-23 — the seven British Columbia service pages are live, hub updated
+
+| Page | ID | Bytes |
+|---|---|---|
+| /unfiled-corporate-tax-returns-british-columbia/ | 1104 | 10,349 |
+| /no-activity-corporation-tax-return-british-columbia/ | 1106 | 10,024 |
+| /numbered-corporation-nil-filing-british-columbia/ | 1108 | 10,113 |
+| /nil-t2-filing-deadline-british-columbia/ | 1110 | 10,110 |
+| /nil-t2-filing-cost-in-british-columbia/ | 1112 | 10,282 |
+| /nil-t2-filing-for-non-resident-owned-corporations-british-columbia/ | 1114 | 10,474 |
+| /inactive-holding-corporation-t2-filing-british-columbia/ | 1116 | 10,663 |
+
+Each probed live and returned its generated file's byte count. British Columbia
+now carries all 12 Family 4 services, matching Ontario. Family 4 is 24 of 336.
+
+**The stamp.** These were written on the 22nd and published on the 23rd, but
+the generator stamped them October 21, the date the first five were reviewed --
+a review date before the page existed. 7.9 says the stamp advances only when a
+body sentence or a number changed, so the five keep October 21 and the seven
+carry October 23 through a per-service override. Verified the five regenerated
+byte-identical afterwards.
+
+**A heading defect caught before publishing.** The cost section heading is
+built as "<service> Cost in <place>", which on the cost page itself produced
+"Nil T2 Filing Cost Cost in British Columbia". Simply dropping the word would
+have repeated the H1 verbatim, so that page names its own heading, "What You
+Pay in British Columbia". Ontario has the same generator shape and should be
+checked for the same fault on /nil-t2-filing-cost-in-ontario/.
+
+### Hub
+
+Page 996 went 34,514 -> 39,833 bytes, matching the build. It carried six cards,
+five pointing at BC pages and one at a national page; it now carries twelve,
+each pointing at its own BC child.
+
+The twelve cards are derived from `ontario-cards.json`, which already covers
+exactly these twelve services, with the place swapped. Five descriptions say
+"an Ontario corporation", so the article is swapped before the name to give
+"a British Columbia corporation". Checked afterwards that no card still says
+Ontario and that every href matches a page published today.
+
+`build_jurisdiction.py` now takes an optional `cards` file per jurisdiction. The
+`children` map stays for a jurisdiction holding only some of its twelve, where
+the remaining cards still point at national service pages.

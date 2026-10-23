@@ -195,6 +195,7 @@ SERVICES = [
           'condition for the short return. $300.00 plus HST per tax year.'),
  dict(
   slug='unfiled-corporate-tax-returns-british-columbia',
+  reviewed='October 23, 2026', reviewed_iso='2026-10-23',
   service='unfiled-corporate-tax-returns',
   title='Unfiled Corporate Tax Returns in British Columbia',
   keyword='unfiled corporate tax returns british columbia',
@@ -226,6 +227,7 @@ SERVICES = [
 
  dict(
   slug='no-activity-corporation-tax-return-british-columbia',
+  reviewed='October 23, 2026', reviewed_iso='2026-10-23',
   service='no-activity-corporation-tax-return',
   title='No Activity Corporation Tax Return in British Columbia',
   keyword='no activity corporation tax return british columbia',
@@ -251,6 +253,7 @@ SERVICES = [
 
  dict(
   slug='numbered-corporation-nil-filing-british-columbia',
+  reviewed='October 23, 2026', reviewed_iso='2026-10-23',
   service='numbered-corporation-nil-filing',
   title='Numbered Corporation Nil Filing in British Columbia',
   keyword='numbered corporation nil filing british columbia',
@@ -278,6 +281,7 @@ SERVICES = [
 
  dict(
   slug='nil-t2-filing-deadline-british-columbia',
+  reviewed='October 23, 2026', reviewed_iso='2026-10-23',
   service='nil-t2-filing-deadline',
   title='Nil T2 Filing Deadline in British Columbia',
   keyword='nil t2 filing deadline british columbia',
@@ -305,6 +309,8 @@ SERVICES = [
 
  dict(
   slug='nil-t2-filing-cost-in-british-columbia',
+  cost_h2='What You Pay in British Columbia',
+  reviewed='October 23, 2026', reviewed_iso='2026-10-23',
   service='nil-t2-filing-cost',
   title='Nil T2 Filing Cost in British Columbia',
   keyword='nil t2 filing cost british columbia',
@@ -335,6 +341,7 @@ SERVICES = [
 
  dict(
   slug='nil-t2-filing-for-non-resident-owned-corporations-british-columbia',
+  reviewed='October 23, 2026', reviewed_iso='2026-10-23',
   service='nil-t2-filing-for-non-resident-owned-corporations',
   title='Nil T2 Filing for Non-Resident-Owned Corporations in British Columbia',
   keyword='non-resident owned corporation nil t2 british columbia',
@@ -365,6 +372,7 @@ SERVICES = [
 
  dict(
   slug='inactive-holding-corporation-t2-filing-british-columbia',
+  reviewed='October 23, 2026', reviewed_iso='2026-10-23',
   service='inactive-holding-corporation-t2-filing',
   title='Inactive Holding Corporation T2 Filing in British Columbia',
   keyword='inactive holding corporation t2 filing british columbia',
@@ -417,7 +425,8 @@ def build(s):
     b.append('<p class="cnf-by">Written and reviewed by '
              + a(SITE + '/sharad-gondaliya-cpa/', 'Sharad Gondaliya, CPA (Ontario)')
              + ', CPA Ontario Membership 61040184.</p>')
-    b.append('<p class="cnf-rev">Last reviewed: ' + TODAY + '</p>')
+    b.append('<p class="cnf-rev">Last reviewed: ' + s.get('reviewed', TODAY)
+             + '</p>')
 
     b.append('<h2>' + s['lead_h2'] + '</h2>')
     for p in s['lead']:
@@ -463,8 +472,11 @@ def build(s):
              'days are Monday to Friday and exclude ' + PLACE
              + ' statutory holidays.</p>')
 
-    b.append('<h2>' + s['title'].replace(' in ' + PLACE, '') + ' Cost in ' + PLACE
-             + '</h2>')
+    # The generic heading is "<service> Cost in <place>", which doubles the word
+    # on a service already named "... Cost" and repeats the H1 verbatim if the
+    # word is simply dropped. Those pages name their own heading instead.
+    b.append('<h2>' + s.get('cost_h2', s['title'].replace(' in ' + PLACE, '')
+                            + ' Cost in ' + PLACE) + '</h2>')
     b.append('<p>$300.00 plus HST per tax year. Each tax year is a separate return '
              'and carries the same fee. Tax is added at the rate for your province. '
              'See the full ' + a(SITE + '/pricing/nil-t2-filing-cost/',
@@ -543,7 +555,7 @@ def meta(s):
             'CRA publishes dollar amounts by jurisdiction, not counts; not available '
             'for BC',
         'hst_rate': None}),
-     'cnf_last_verified_et': ISO,
+     'cnf_last_verified_et': s.get('reviewed_iso', ISO),
      'cnf_primary_keyword': s['keyword'],
     }
 
