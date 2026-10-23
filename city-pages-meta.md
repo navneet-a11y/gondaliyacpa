@@ -311,3 +311,8 @@
 - Linked Oshawa and Hamilton table cells and list entries; linked London, Edmonton and Montreal in the city lists.
 - ItemList "City incorporation pages" extended to 19 entries (added Oshawa, Hamilton, London, Edmonton, Montreal, Vaughan, Markham, Kitchener-Waterloo, Winnipeg, Regina).
 - Old pages to redirect: /open-corporation-in-oshawa/ (850), /open-corporation-in-hamilton/ (836), /open-corporation-in-london-ontario/, /open-corporation-in-edmonton/, /open-corporation-in-montreal/.
+
+## /annual-return-filing/ (page 10655, draft 2026-10-23, meta set by connector)
+- Meta title: Annual Return Filing: Federal and Ontario Deadlines
+- Meta description: The federal annual return is due 60 days after your anniversary date. The Ontario annual return is due 6 months after year end. Neither is your T2.
+- Replaces old page /corporate-annual-filing/ (2015); redirect after publishing.
