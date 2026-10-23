@@ -4052,3 +4052,30 @@ BreadcrumbList.
 **Still owed:** Sharad Gondaliya's sign-off on the FAQ copy. The 6(e) math
 review of the three tools was already outstanding and this adds eighteen answers
 to it, though none states anything the page did not already state.
+
+### FAQ and Read Next lists widened to the full column
+
+Navneet's screenshot showed the FAQ cards inset from their own "Frequently
+Asked Questions" heading and from the body copy above, not lining up with the
+column.
+
+The cause was inherited, not new. The base template carries
+`.ei-faq{max-width:900px;margin:16px auto 0}` and
+`.ei-qlist{max-width:900px;margin:12px auto 0}` from the Family 9 guides, where
+the column is 1100px and a 900px centred list reads as a deliberate inset. These
+pages were narrowed to 1000px earlier today, which left the same two rules
+looking like a mistake rather than a choice: narrower than their own H2 and
+off its axis, since the H2 is not inset.
+
+Overridden in the F2 tail rather than edited in the base, so the guides are
+untouched:
+
+```
+.ei-faq,.ei-qlist{max-width:none;margin-left:0;margin-right:0}
+```
+
+Live byte counts 20,147, 20,314 and 18,910 match the rebuilt files. Gate clear.
+
+The Family 9 guides still carry the 900px cap against their 1100px column. That
+is the original design and it was left alone, but if the inset is not wanted
+there either it is the same one-line override.

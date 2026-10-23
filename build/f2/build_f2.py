@@ -62,6 +62,12 @@ TOOL_CSS = """
    service page looks like. The hero still spans. */
 .ei-wrap{max-width:1000px}
 .ei-section-alt{background:none}
+/* The FAQ and Read Next lists come from the guides capped at 900px and
+   centred with auto margins. In the guides' 1100px column that reads as a
+   deliberate inset; in this 1000px one it just leaves them narrower than,
+   and off-axis from, their own H2 and the body copy above. Run them the
+   full measure of the column instead. */
+.ei-faq,.ei-qlist{max-width:none;margin-left:0;margin-right:0}
 .ei-tool{background:#fff;border:1px solid #e2e8f0;border-radius:12px;padding:22px 24px;margin:18px 0;box-shadow:0 1px 2px rgba(26,35,64,.05)}
 .ei-tool legend{font-weight:800;color:#1a2340;font-size:1.05em;padding:0 0 6px}
 .ei-tool fieldset{border:0;margin:0;padding:0}
