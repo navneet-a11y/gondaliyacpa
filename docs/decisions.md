@@ -3909,3 +3909,41 @@ Still open on these three, unchanged by publishing:
 - **Sharad Gondaliya checks the math.** 6(e) assigns that on every tool page and
   it has not happened. The pages are live and the site is still noindexed under
   hard rule 10, so nothing is exposed, but the review is outstanding.
+
+### 2026-10-23 — the tools did not run: wpautop was rewriting the JavaScript
+
+Navneet reported the deadline calculator did nothing when a date was picked.
+All three were broken, not one.
+
+Fetched the rendered content through the REST API rather than guessing, and the
+cause was plain. `wpautop` treated the literal `<p>` and `</p>` **inside the
+module's own JavaScript strings** as markup and rewrote them with newlines
+around them, so this:
+
+    out.innerHTML='<p>Enter a fiscal year-end above and the due date appears here.</p>';
+
+came back as a string literal split across four lines. That is a syntax error,
+the module never parsed, and nothing ran. The same filter also split the
+stylesheet at the blank line between the base rules and the tool rules,
+inserting `</p><p>` into the CSS.
+
+**Fix: wrap the content in a `<!-- wp:html -->` block.** `has_blocks()` is true
+as soon as a `<!-- wp:` comment is present, and `do_blocks` then removes
+`wpautop` from `the_content` for that render.
+
+**This was avoidable and I should have carried it over.** The Family 4
+generator has used that wrapper since the first Ontario page. The Family 9
+guides do not, and look fine only because wpautop mangling plain prose markup
+is invisible; the moment a page carried JavaScript it mattered. Any generator
+that emits a `<script>` or a `<style>` with a blank line in it needs the
+wrapper.
+
+The gate did not catch it because every check reads the generated file, which
+was correct. The defect only existed in WordPress's rendered output. Added
+nothing to the gate for this, because the right check is on the rendered
+content, not the source.
+
+Applied live by patching the two anchors rather than re-uploading: 1124
+16,354 -> 16,389, 1122 17,046 -> 17,081, 1120 15,613 -> 15,648, each matching
+its rebuilt file. Re-fetched the rendered output for 1120 afterwards and the
+module is intact on one line.

@@ -473,8 +473,22 @@ TOOLS = [
 # Render
 # ---------------------------------------------------------------------------
 def render(t):
+    """Wrapped in a wp:html block, which is not optional here.
+
+    Without it the content is classic content and wpautop runs over it. That
+    filter does not just add paragraphs: it treats the literal "<p>" and "</p>"
+    inside the module's own JavaScript strings as markup, rewrites them with
+    newlines around them, and leaves string literals broken across lines. The
+    module then fails to parse and nothing runs. It also splits the stylesheet
+    at the blank line between the base and tool rules.
+
+    `has_blocks()` is true as soon as the content holds a "<!-- wp:" comment,
+    and do_blocks then removes wpautop from the_content for that render. The
+    Family 4 pages have used this wrapper from the start, which is why their
+    markup survives and these pages did not.
+    """
     url = HUB + t['slug'] + '/'
-    p = [CSS]
+    p = ['<!-- wp:html -->\n', CSS]
     p.append(
      '<div class="ei-hero"><div class="ei-hero-inner">'
      '<span class="ei-hero-eyebrow">' + t['eyebrow'] + '</span>'
@@ -526,7 +540,7 @@ def render(t):
     # 6(c) disclaimer are passed in rather than repeated inside the module.
     p.append('<script>\n(function(){\nvar PRICE_JS=' + json.dumps(PRICE)
              + ';\nvar DISC_JS=' + json.dumps(TOOL_DISCLAIMER) + ';\n'
-             + t['js'] + '\n})();\n</script>')
+             + t['js'] + '\n})();\n</script>\n<!-- /wp:html -->')
     return ''.join(p), url
 
 
