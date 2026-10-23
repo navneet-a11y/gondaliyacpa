@@ -1,0 +1,24 @@
+{
+ "id": 50247,
+ "url": "https://gondaliyacpa.ca/accountant-for-garage-door-companies/",
+ "title": "Accounting and Tax Services for Garage Door Companies",
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "Case study - what we did",
+   "rule": "R1",
+   "before": "applied the $500,000 Small Business Deduction so active income is taxed near 12.2%, filed Schedule 31 for the apprenticeship credit, and filed the outstanding T5018 returns.",
+   "after": "applied the $500,000 Small Business Deduction so active income is taxed near 11.2% (12.2% before July 1, 2026), filed Schedule 31 for the apprenticeship credit, and filed the outstanding T5018 returns.",
+   "note": "Case-study result stated without a date as the current SBD-taxed rate; treated as current. If Sharad dates this engagement before July 1, 2026, switch to R3 (leave)."
+  },
+  {
+   "location": "Visible",
+   "section": "Case study - result",
+   "rule": "R1",
+   "before": "<li>Cut the combined tax bill materially at the 12.2% rate</li>",
+   "after": "<li>Cut the combined tax bill materially at the 11.2% rate</li>",
+   "note": "Case-study result stated without a date as the current SBD-taxed rate; treated as current. If Sharad dates this engagement before July 1, 2026, switch to R3 (leave)."
+  }
+ ],
+ "page_note": "Other rate mentions (service cards, FAQs and JSON-LD) already show 11.2%. No 3.2%, 0.122/0.032, $600,000/$600K or 12.2%-derived dollar figures found."
+}
