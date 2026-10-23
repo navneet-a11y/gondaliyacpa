@@ -1,0 +1,216 @@
+<style>
+.ei-wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+.ei-btn-blue{background:rgba(32,135,201,1);color:#fff !important;padding:13px 26px;border-radius:6px;font-weight:700;font-size:0.95em;text-transform:uppercase;text-decoration:none !important;display:inline-block;line-height:1.4;text-align:center;min-width:120px}
+.ei-section{padding:26px 20px}
+.ei-section-alt{background:#f7f9fc;padding:26px 20px}
+.ei-art .ei-h2{font-weight:800;color:#1a2340;margin:0 0 10px;font-size:1.45em;line-height:1.3}
+.ei-art > *:last-child{margin-bottom:0}
+.ei-art p{color:#4a5568;line-height:1.8}
+.ei-art a{color:rgba(32,135,201,1)}
+.ei-art ul{color:#4a5568;line-height:1.8}
+.ei-info{background:#f0f7fd;border-left:4px solid rgba(32,135,201,1);border-radius:0 8px 8px 0;padding:14px 18px;margin:18px 0}
+.ei-info p{margin:0;color:#1a2340;line-height:1.7}
+.ei-warn{background:#fffbf0;border-left:4px solid #f6ad1a;border-radius:0 8px 8px 0;padding:14px 18px;margin:18px 0}
+.ei-warn p{margin:0;color:#7c5800;line-height:1.7}
+.ei-danger{background:#fff5f5;border-left:4px solid #e53e3e;border-radius:0 8px 8px 0;padding:14px 18px;margin:18px 0}
+.ei-danger p{margin:0;color:#742a2a;line-height:1.7}
+.ei-hero{background:linear-gradient(135deg,#0f1624 0%,#1a2340 55%,#1e3a6e 100%);padding:40px 20px}
+.ei-hero-inner{max-width:860px;margin:0 auto;text-align:center}
+.ei-hero-eyebrow{display:inline-block;background:rgba(32,135,201,0.15);border:1px solid rgba(32,135,201,0.4);border-radius:50px;padding:5px 16px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:rgba(32,135,201,1);margin-bottom:16px;font-size:.8em}
+.ei-hero h1{color:#fff;font-weight:800;line-height:1.2;margin:0 0 14px;font-size:2.1em}
+.ei-hero h1 span{color:#f6ad1a}
+.ei-hero-sub{color:rgba(255,255,255,0.78);max-width:720px;margin:0 auto 10px;line-height:1.75}
+.ei-hero-by{color:rgba(255,255,255,0.6);max-width:720px;margin:0 auto 22px;line-height:1.6;font-size:.86em}
+.ei-hero-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.ei-tbl{width:100%;border-collapse:collapse;margin:18px 0;border:1px solid #d1d5db}
+.ei-tbl th{background:#1a2340;color:#fff;font-weight:700;padding:12px 14px;text-align:left;border:1px solid #374151}
+.ei-tbl td{padding:10px 14px;border:1px solid #d1d5db;color:#2d3748;line-height:1.5}
+.ei-tbl tr:nth-child(even){background:#f7f9fc}
+.ei-tbl tr:hover{background:#edf2f7}
+.ei-updated{color:#718096;font-size:.9em;margin:0 0 18px}
+.ei-toc{background:linear-gradient(180deg,#ffffff,#f7f9fc);border:1px solid #e2e8f0;border-radius:12px;padding:18px 22px;margin:0 0 10px;box-shadow:0 1px 2px rgba(26,35,64,.05)}
+.ei-toc h2{font-size:.76em;font-weight:800;color:#8795ab;margin:0 0 10px;text-transform:uppercase;letter-spacing:1.3px}
+.ei-toc ol{margin:0;padding:0;list-style:none;counter-reset:toc;columns:2;column-gap:30px}
+.ei-toc li{break-inside:avoid;counter-increment:toc;margin:0}
+.ei-toc a{display:flex;gap:10px;align-items:baseline;padding:6px 9px;border-radius:6px;color:#1a2340;text-decoration:none;line-height:1.45}
+.ei-toc a::before{content:counter(toc);color:rgba(32,135,201,1);font-weight:800;font-size:.82em;min-width:15px;flex-shrink:0}
+.ei-toc a:hover{background:#eaf3fb;color:rgba(32,135,201,1);text-decoration:none}
+.ei-cta-inline{background:#1a2340;border-radius:10px;padding:24px 28px;margin:28px 0;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px}
+.ei-cta-inline h3{color:#fff;margin:0 0 4px;font-weight:700}
+.ei-cta-inline p{color:rgba(255,255,255,0.65);margin:0}
+.ei-cta-inline a,.ei-cta-inline a:visited,.ei-cta-inline a:hover,.ei-cta-bottom a,.ei-cta-bottom a:visited,.ei-cta-bottom a:hover,.ei-hero-btns a,.ei-hero-btns a:visited,.ei-hero-btns a:hover{color:#fff !important;text-decoration:none !important}
+.ei-faq{max-width:900px;margin:16px auto 0}
+.ei-faq details{border:1px solid #e2e8f0;border-radius:8px;margin-bottom:9px;background:#fff}
+.ei-faq summary{padding:14px 18px;font-weight:600;color:#1a2340;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:14px;line-height:1.5}
+.ei-faq summary::-webkit-details-marker{display:none}
+.ei-faq summary::after{content:'+';color:rgba(32,135,201,1);font-weight:400;font-size:1.4em;line-height:1;flex-shrink:0;transition:transform .15s ease}
+.ei-faq details[open] summary{color:rgba(32,135,201,1)}
+.ei-faq details[open] summary::after{transform:rotate(45deg)}
+.ei-faq .ei-faq-a{padding:0 18px 15px}
+.ei-faq .ei-faq-a p{margin:0;color:#4a5568;line-height:1.75}
+.ei-art h3{font-weight:700;color:#1a2340;margin:26px 0 8px;font-size:1.15em}
+.ei-qlist{max-width:900px;margin:12px auto 0;padding:0;list-style:none}
+.ei-qlist li{border:1px solid #e2e8f0;border-radius:8px;margin-bottom:10px;background:#fff}
+.ei-qlist a{display:block;padding:16px 20px;font-weight:600;color:#1a2340 !important;text-decoration:none !important}
+.ei-qlist a:hover{background:#f7f9fc;color:rgba(32,135,201,1) !important}
+.ei-cta-bottom{background:linear-gradient(135deg,#0f1624,#1a2340);padding:40px 20px;text-align:center}
+.ei-cta-bottom h2{color:#fff;font-weight:800;margin:0 0 10px;font-size:1.5em}
+.ei-cta-bottom p{color:rgba(255,255,255,0.72);max-width:600px;margin:0 auto 22px;line-height:1.75}
+.entry-header{display:none!important}
+.ast-article-single,.ast-article-single .entry-content{margin-top:0;padding-top:0}
+@media(max-width:900px){.ei-cta-inline{flex-direction:column;text-align:center}.ei-hero h1{font-size:1.6em}.ei-art .ei-h2{font-size:1.3em}.ei-toc ol{columns:1}}
+
+.ei-tool{background:#fff;border:1px solid #e2e8f0;border-radius:12px;padding:22px 24px;margin:18px 0;box-shadow:0 1px 2px rgba(26,35,64,.05)}
+.ei-tool legend{font-weight:800;color:#1a2340;font-size:1.05em;padding:0 0 6px}
+.ei-tool fieldset{border:0;margin:0;padding:0}
+.ei-f{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:0 0 14px}
+.ei-f label{font-weight:600;color:#1a2340;flex:1 1 320px;line-height:1.5}
+.ei-f input[type=date]{font:inherit;padding:9px 11px;border:1px solid #cbd5e0;border-radius:7px;color:#1a2340;background:#fff}
+.ei-yn{display:inline-flex;border:1px solid #cbd5e0;border-radius:7px;overflow:hidden;flex:0 0 auto}
+.ei-yn label{flex:0 0 auto;margin:0;padding:8px 16px;cursor:pointer;font-weight:700;color:#4a5568;background:#fff;line-height:1.2}
+.ei-yn input{position:absolute;opacity:0;width:0;height:0}
+.ei-yn input:checked+span{background:rgba(32,135,201,1);color:#fff}
+.ei-yn span{display:block;padding:8px 16px;margin:-8px -16px}
+.ei-yn label:focus-within span{outline:2px solid #1a2340;outline-offset:-2px}
+.ei-out{margin:16px 0 0;padding:16px 18px;border-radius:9px;border-left:5px solid #cbd5e0;background:#f7f9fc}
+.ei-out.ok{border-left-color:#2f855a;background:#f0fff4}
+.ei-out.no{border-left-color:#c53030;background:#fff5f5}
+.ei-out h3{margin:0 0 6px;font-size:1.1em;color:#1a2340}
+.ei-out p{margin:0 0 8px;color:#4a5568;line-height:1.7}
+.ei-out ul{margin:6px 0 8px 20px;color:#4a5568;line-height:1.7}
+.ei-out .ei-note{font-size:.88em;color:#718096;margin:10px 0 0}
+.ei-big{font-size:1.5em;font-weight:800;color:rgba(32,135,201,1);display:block;margin:2px 0 6px}
+.ei-tool .ei-err{color:#c53030;font-weight:600;margin:6px 0 0}
+</style>
+<div class="ei-hero"><div class="ei-hero-inner"><span class="ei-hero-eyebrow">Deadline Tool</span><h1>Nil T2 <span>Deadline Calculator</span></h1><p class="ei-hero-sub">Enter your fiscal year-end and get the T2 due date, the next business day where it falls on a weekend, and the business days remaining.</p><p class="ei-hero-by">Written and reviewed by Sharad Gondaliya, CPA (Ontario), CPA Ontario Membership 61040184.</p><div class="ei-hero-btns"><a class="ei-btn-blue" href="https://corpnilfilingfor300.ca/form/">Start Nil T2 Filing NOW</a></div></div></div>
+<div class="ei-section"><div class="ei-wrap ei-art">
+<p class="ei-updated">Last reviewed: October 23, 2026</p>
+<div class="ei-tool">
+<fieldset><legend>Your fiscal year-end</legend>
+<div class="ei-f"><label for="ye">The last day of your corporation&rsquo;s tax year</label>
+<input type="date" id="ye" name="ye"></div>
+</fieldset>
+<div class="ei-out" id="out" role="status" aria-live="polite">
+<p>Enter a fiscal year-end above and the due date appears here.</p></div>
+</div>
+<div class="ei-info"><p>Gondaliya CPA Professional Corporation is a registered EFILE electronic filer. Returns are prepared and transmitted in Canada. Credentials are never shared and never used offshore.</p></div>
+</div></div>
+<div class="ei-section-alt" id="rule"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">The Rule This Applies</h2>
+<p>A T2 is due within six months of the corporation&rsquo;s fiscal year-end, every year, until the corporation is formally dissolved. A final T2 is due within six months of dissolution.</p>
+<p>Six months is counted two ways, and the difference matters:</p>
+<table class="ei-tbl"><thead><tr><th scope="col">Where the year-end falls</th><th scope="col">The due date</th><th scope="col">Example</th></tr></thead><tbody>
+<tr><td>On the last day of a month</td><td>The last day of the sixth month after</td><td>Year-end August 31 is due the last day of February</td></tr>
+<tr><td>On any other day</td><td>The same day of the sixth month after</td><td>Year-end August 15 is due February 15</td></tr>
+</tbody></table>
+<p>The deadline comes from the Income Tax Act and does not vary by province.</p>
+</div></div>
+<div class="ei-section" id="holidays"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">Weekends and Ontario Statutory Holidays</h2>
+<p>Where the due date falls on a Saturday, a Sunday or a public holiday, a return received on the next business day is on time. The calculator shows that next business day whenever it applies.</p>
+<p>The business days remaining count excludes weekends and the nine Ontario public holidays under the Employment Standards Act: New Year&rsquo;s Day, Family Day, Good Friday, Victoria Day, Canada Day, Labour Day, Thanksgiving, Christmas Day and Boxing Day. The August civic holiday is not among them and is not applied.</p>
+</div></div>
+<div class="ei-section-alt" id="missed"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">A Deadline Already Passed</h2>
+<div class="ei-danger"><p>A true nil return carries no percentage late-filing penalty, because that penalty is a percentage of tax owing and the corporation owes $0.00. The unfiled year still stays open forever, invites a demand to file and an arbitrary assessment, blocks a clearance certificate and dissolution, and costs a non-resident-owned corporation $25.00 per day up to $2,500.00.</p></div>
+<p>Unfiled years are filed oldest first, one return per tax year.</p>
+</div></div>
+<div class="ei-section"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">Read Next</h2>
+<ul class="ei-qlist">
+<li><a href="https://corpnilfilingfor300.ca/deadlines/">Every fiscal year-end and its due date</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/first-year-t2-filing/">The complete guide to first-year T2 filing</a></li>
+<li><a href="https://corpnilfilingfor300.ca/pricing/nil-t2-filing-cost/">Nil T2 filing cost</a></li>
+</ul>
+</div></div>
+<div class="ei-cta-bottom"><div class="ei-wrap"><h2>Nil T2 Filing, $300.00 plus HST per tax year</h2><p>Type your corporation name, pick your unfiled years, pay, and sign Form T183CORP on a secure screen. Your CRA confirmation is emailed within 3 business days.</p><a class="ei-btn-blue" href="https://corpnilfilingfor300.ca/form/">Start Nil T2 Filing NOW</a></div></div>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebPage", "@id": "https://corpnilfilingfor300.ca/tools/nil-t2-deadline-calculator/#webpage", "url": "https://corpnilfilingfor300.ca/tools/nil-t2-deadline-calculator/", "name": "Nil T2 Deadline Calculator | When Your T2 Is Due", "description": "Enter your fiscal year-end and get the T2 due date, the next business day where it falls on a weekend, and the business days remaining.", "inLanguage": "en-CA", "dateModified": "2026-10-23", "author": {"@type": "Person", "name": "Sharad Gondaliya", "honorificSuffix": "CPA", "url": "https://corpnilfilingfor300.ca/sharad-gondaliya-cpa/"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Nil T2 filing in Canada", "item": "https://corpnilfilingfor300.ca/"}, {"@type": "ListItem", "position": 2, "name": "Tools", "item": "https://corpnilfilingfor300.ca/tools/"}, {"@type": "ListItem", "position": 3, "name": "Nil T2 Deadline Calculator", "item": "https://corpnilfilingfor300.ca/tools/nil-t2-deadline-calculator/"}]}]}</script>
+<script>
+(function(){
+var PRICE_JS="$300.00 plus HST per tax year";
+var DISC_JS="This tool gives general information and is not a filed return.";
+
+var MON=['January','February','March','April','May','June','July','August',
+         'September','October','November','December'];
+var DAY=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+function u(y,m,d){return new Date(Date.UTC(y,m,d));}
+function lastDay(y,m){return new Date(Date.UTC(y,m+1,0)).getUTCDate();}
+function fmt(dt){return MON[dt.getUTCMonth()]+' '+dt.getUTCDate()+', '+dt.getUTCFullYear();}
+function nthMon(y,m,n){var d=u(y,m,1);return u(y,m,1+((1-d.getUTCDay()+7)%7)+7*(n-1));}
+function monOnOrBefore(y,m,day){var d=u(y,m,day);return u(y,m,day-((d.getUTCDay()+6)%7));}
+function easter(y){
+  var a=y%19,b=Math.floor(y/100),c=y%100,d=Math.floor(b/4),e=b%4,
+      f=Math.floor((b+8)/25),g=Math.floor((b-f+1)/3),h=(19*a+b-d-g+15)%30,
+      i=Math.floor(c/4),k=c%4,l=(32+2*e+2*i-h-k)%7,
+      m=Math.floor((a+11*h+22*l)/451),
+      mo=Math.floor((h+l-7*m+114)/31),da=((h+l-7*m+114)%31)+1;
+  return u(y,mo-1,da);
+}
+function holidays(y){
+  var e=easter(y),gf=new Date(e.getTime()-2*86400000);
+  return [u(y,0,1),nthMon(y,1,3),gf,monOnOrBefore(y,4,24),u(y,6,1),
+          nthMon(y,8,1),nthMon(y,9,2),u(y,11,25),u(y,11,26)];
+}
+var HCACHE={};
+function isHoliday(dt){
+  var y=dt.getUTCFullYear();
+  if(!HCACHE[y]){HCACHE[y]={};holidays(y).forEach(function(h){HCACHE[y][h.getTime()]=1;});}
+  return !!HCACHE[y][dt.getTime()];
+}
+function isBusiness(dt){
+  var w=dt.getUTCDay();
+  return w!==0&&w!==6&&!isHoliday(dt);
+}
+function nextBusiness(dt){
+  var d=new Date(dt.getTime());
+  while(!isBusiness(d)){d=new Date(d.getTime()+86400000);}
+  return d;
+}
+function businessBetween(from,to){
+  var n=0,d=new Date(from.getTime()+86400000);
+  while(d.getTime()<=to.getTime()){if(isBusiness(d)){n++;}d=new Date(d.getTime()+86400000);}
+  return n;
+}
+function today(){var n=new Date();return u(n.getFullYear(),n.getMonth(),n.getDate());}
+
+function dueDate(ye){
+  var y=ye.getUTCFullYear(),m=ye.getUTCMonth(),d=ye.getUTCDate();
+  var endOfMonth=(d===lastDay(y,m));
+  var tm=m+6,ty=y+Math.floor(tm/12);tm=((tm%12)+12)%12;
+  if(endOfMonth){return u(ty,tm+1,0);}
+  return u(ty,tm,Math.min(d,lastDay(ty,tm)));
+}
+function render(){
+  var v=document.getElementById('ye').value,out=document.getElementById('out');
+  if(!v){out.className='ei-out';
+    out.innerHTML='<p>Enter a fiscal year-end above and the due date appears here.</p>';
+    return;}
+  var p=v.split('-'),ye=u(+p[0],+p[1]-1,+p[2]);
+  if(isNaN(ye.getTime())){out.className='ei-out no';
+    out.innerHTML='<p class="ei-err">That is not a date we can read.</p>';return;}
+  var due=dueDate(ye),eff=nextBusiness(due),t=today();
+  var h='<h3>Your nil T2 for the year ended '+fmt(ye)+'</h3>';
+  h+='<span class="ei-big">Due '+fmt(due)+'</span>';
+  if(eff.getTime()!==due.getTime()){
+    h+='<p>'+fmt(due)+' is a '+DAY[due.getUTCDay()]+
+       (isHoliday(due)?' and an Ontario statutory holiday':'')+
+       ', so the next business day is '+fmt(eff)+'.</p>';
+  }
+  var n=businessBetween(t,eff);
+  if(eff.getTime()<t.getTime()){
+    h+='<p><strong>This deadline has passed.</strong> An unfiled year stays open '+
+       'indefinitely, and each unfiled year is its own return at '+PRICE_JS+'.</p>';
+  }else{
+    h+='<p><strong>'+n+' business day'+(n===1?'':'s')+' remaining</strong>, counting '+
+       'from today and excluding weekends and Ontario statutory holidays.</p>';
+  }
+  h+='<p class="ei-note">'+DISC_JS+'</p>';
+  out.className='ei-out '+(eff.getTime()<t.getTime()?'no':'ok');
+  out.innerHTML=h;
+}
+document.getElementById('ye').addEventListener('input',render);
+document.getElementById('ye').addEventListener('change',render);
+render();
+
+})();
+</script>

@@ -3802,3 +3802,63 @@ Ontario and that every href matches a page published today.
 `build_jurisdiction.py` now takes an optional `cards` file per jurisdiction. The
 `children` map stays for a jurisdiction holding only some of its twelve, where
 the remaining cards still point at national service pages.
+
+## 2026-10-23 — Family 2: the first three tools built
+
+The three highest-value entries from the 6(e) link-earning table, which is the
+only part of Family 2 the plan briefs in any detail.
+
+  /tools/nil-t2-deadline-calculator/        16,354 bytes
+  /tools/t2-short-eligibility-checker/      17,046 bytes
+  /tools/gifi-schedule-requirement-checker/ 15,613 bytes
+
+6(c) makes the deliverable working JavaScript rather than prose -- "a working
+calculation and a result screen that changes with input" -- so each page carries
+its own self-contained module with no external script. Every result screen
+carries the sentence 6(c) requires.
+
+**URL base.** Built at `/tools/<tool>/`, which is what 6(a) and 6(e) both give
+and what the CPT's registered rewrite base is. Appendix A lists Family 2 at root
+instead, which would drop 150 pages into the Family 4 catch-all -- the same
+conflict resolved the same way seven times before, and the thing that 404'd a
+blog post yesterday.
+
+### The maths is tested, not asserted
+
+Ran the real modules under node rather than eyeballing them.
+
+The due-date rule follows the Income Tax Act as the Canada Revenue Agency
+publishes it: a year-end on the last day of a month is due the last day of the
+sixth month after, any other year-end is due the same day of the sixth month
+after. Checked against six cases including the leap-year one (year-end
+August 31, 2027 is due February 29, 2028).
+
+Ontario's nine Employment Standards Act public holidays are computed, not
+tabulated, so the tool stays right in future years without a data file. Good
+Friday derives from Easter. Verified all nine for 2026. The August civic holiday
+and Remembrance Day are not ESA public holidays and are not applied.
+
+Weekend and holiday roll-forward verified: a due date of June 30, 2029 (a
+Saturday) reports July 2, and January 1, 2027 reports January 4.
+
+Both checkers verified across answered, part-answered and every-failure cases,
+including that each failing condition is named, and that the 6(c) disclaimer
+appears on every branch.
+
+**One finding from the test harness, worth recording.** The first harness loaded
+both checker modules into one scope. Both declare `function render()`, so the
+hoisted second declaration replaced the first and every "T2 Short" assertion was
+silently running the GIFI module. The published pages are unaffected -- each
+module is wrapped in its own IIFE and each sits on its own page -- but a shared
+bundle would collide. Worth knowing before 150 of these exist.
+
+### Open
+
+- **Inbound links are zero.** 6(g) sets a minimum of 3 inbound for Family 2.
+  Nothing links to these yet: the `/tools/` hub (F16) is not built, and the
+  matching guides do not link down to their tools. Both are small jobs.
+- 6(e)'s unfiled-years calculator and Appendix A's
+  `/nil-t2-price-with-hst-calculator/` both assume one HST rate. They cannot be
+  built correctly without a province input, and the "plus HST" correction has to
+  settle first.
+- Sharad Gondaliya checks the math and reviews the wording on every tool page.

@@ -1,0 +1,178 @@
+<style>
+.ei-wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+.ei-btn-blue{background:rgba(32,135,201,1);color:#fff !important;padding:13px 26px;border-radius:6px;font-weight:700;font-size:0.95em;text-transform:uppercase;text-decoration:none !important;display:inline-block;line-height:1.4;text-align:center;min-width:120px}
+.ei-section{padding:26px 20px}
+.ei-section-alt{background:#f7f9fc;padding:26px 20px}
+.ei-art .ei-h2{font-weight:800;color:#1a2340;margin:0 0 10px;font-size:1.45em;line-height:1.3}
+.ei-art > *:last-child{margin-bottom:0}
+.ei-art p{color:#4a5568;line-height:1.8}
+.ei-art a{color:rgba(32,135,201,1)}
+.ei-art ul{color:#4a5568;line-height:1.8}
+.ei-info{background:#f0f7fd;border-left:4px solid rgba(32,135,201,1);border-radius:0 8px 8px 0;padding:14px 18px;margin:18px 0}
+.ei-info p{margin:0;color:#1a2340;line-height:1.7}
+.ei-warn{background:#fffbf0;border-left:4px solid #f6ad1a;border-radius:0 8px 8px 0;padding:14px 18px;margin:18px 0}
+.ei-warn p{margin:0;color:#7c5800;line-height:1.7}
+.ei-danger{background:#fff5f5;border-left:4px solid #e53e3e;border-radius:0 8px 8px 0;padding:14px 18px;margin:18px 0}
+.ei-danger p{margin:0;color:#742a2a;line-height:1.7}
+.ei-hero{background:linear-gradient(135deg,#0f1624 0%,#1a2340 55%,#1e3a6e 100%);padding:40px 20px}
+.ei-hero-inner{max-width:860px;margin:0 auto;text-align:center}
+.ei-hero-eyebrow{display:inline-block;background:rgba(32,135,201,0.15);border:1px solid rgba(32,135,201,0.4);border-radius:50px;padding:5px 16px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:rgba(32,135,201,1);margin-bottom:16px;font-size:.8em}
+.ei-hero h1{color:#fff;font-weight:800;line-height:1.2;margin:0 0 14px;font-size:2.1em}
+.ei-hero h1 span{color:#f6ad1a}
+.ei-hero-sub{color:rgba(255,255,255,0.78);max-width:720px;margin:0 auto 10px;line-height:1.75}
+.ei-hero-by{color:rgba(255,255,255,0.6);max-width:720px;margin:0 auto 22px;line-height:1.6;font-size:.86em}
+.ei-hero-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.ei-tbl{width:100%;border-collapse:collapse;margin:18px 0;border:1px solid #d1d5db}
+.ei-tbl th{background:#1a2340;color:#fff;font-weight:700;padding:12px 14px;text-align:left;border:1px solid #374151}
+.ei-tbl td{padding:10px 14px;border:1px solid #d1d5db;color:#2d3748;line-height:1.5}
+.ei-tbl tr:nth-child(even){background:#f7f9fc}
+.ei-tbl tr:hover{background:#edf2f7}
+.ei-updated{color:#718096;font-size:.9em;margin:0 0 18px}
+.ei-toc{background:linear-gradient(180deg,#ffffff,#f7f9fc);border:1px solid #e2e8f0;border-radius:12px;padding:18px 22px;margin:0 0 10px;box-shadow:0 1px 2px rgba(26,35,64,.05)}
+.ei-toc h2{font-size:.76em;font-weight:800;color:#8795ab;margin:0 0 10px;text-transform:uppercase;letter-spacing:1.3px}
+.ei-toc ol{margin:0;padding:0;list-style:none;counter-reset:toc;columns:2;column-gap:30px}
+.ei-toc li{break-inside:avoid;counter-increment:toc;margin:0}
+.ei-toc a{display:flex;gap:10px;align-items:baseline;padding:6px 9px;border-radius:6px;color:#1a2340;text-decoration:none;line-height:1.45}
+.ei-toc a::before{content:counter(toc);color:rgba(32,135,201,1);font-weight:800;font-size:.82em;min-width:15px;flex-shrink:0}
+.ei-toc a:hover{background:#eaf3fb;color:rgba(32,135,201,1);text-decoration:none}
+.ei-cta-inline{background:#1a2340;border-radius:10px;padding:24px 28px;margin:28px 0;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px}
+.ei-cta-inline h3{color:#fff;margin:0 0 4px;font-weight:700}
+.ei-cta-inline p{color:rgba(255,255,255,0.65);margin:0}
+.ei-cta-inline a,.ei-cta-inline a:visited,.ei-cta-inline a:hover,.ei-cta-bottom a,.ei-cta-bottom a:visited,.ei-cta-bottom a:hover,.ei-hero-btns a,.ei-hero-btns a:visited,.ei-hero-btns a:hover{color:#fff !important;text-decoration:none !important}
+.ei-faq{max-width:900px;margin:16px auto 0}
+.ei-faq details{border:1px solid #e2e8f0;border-radius:8px;margin-bottom:9px;background:#fff}
+.ei-faq summary{padding:14px 18px;font-weight:600;color:#1a2340;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:14px;line-height:1.5}
+.ei-faq summary::-webkit-details-marker{display:none}
+.ei-faq summary::after{content:'+';color:rgba(32,135,201,1);font-weight:400;font-size:1.4em;line-height:1;flex-shrink:0;transition:transform .15s ease}
+.ei-faq details[open] summary{color:rgba(32,135,201,1)}
+.ei-faq details[open] summary::after{transform:rotate(45deg)}
+.ei-faq .ei-faq-a{padding:0 18px 15px}
+.ei-faq .ei-faq-a p{margin:0;color:#4a5568;line-height:1.75}
+.ei-art h3{font-weight:700;color:#1a2340;margin:26px 0 8px;font-size:1.15em}
+.ei-qlist{max-width:900px;margin:12px auto 0;padding:0;list-style:none}
+.ei-qlist li{border:1px solid #e2e8f0;border-radius:8px;margin-bottom:10px;background:#fff}
+.ei-qlist a{display:block;padding:16px 20px;font-weight:600;color:#1a2340 !important;text-decoration:none !important}
+.ei-qlist a:hover{background:#f7f9fc;color:rgba(32,135,201,1) !important}
+.ei-cta-bottom{background:linear-gradient(135deg,#0f1624,#1a2340);padding:40px 20px;text-align:center}
+.ei-cta-bottom h2{color:#fff;font-weight:800;margin:0 0 10px;font-size:1.5em}
+.ei-cta-bottom p{color:rgba(255,255,255,0.72);max-width:600px;margin:0 auto 22px;line-height:1.75}
+.entry-header{display:none!important}
+.ast-article-single,.ast-article-single .entry-content{margin-top:0;padding-top:0}
+@media(max-width:900px){.ei-cta-inline{flex-direction:column;text-align:center}.ei-hero h1{font-size:1.6em}.ei-art .ei-h2{font-size:1.3em}.ei-toc ol{columns:1}}
+
+.ei-tool{background:#fff;border:1px solid #e2e8f0;border-radius:12px;padding:22px 24px;margin:18px 0;box-shadow:0 1px 2px rgba(26,35,64,.05)}
+.ei-tool legend{font-weight:800;color:#1a2340;font-size:1.05em;padding:0 0 6px}
+.ei-tool fieldset{border:0;margin:0;padding:0}
+.ei-f{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:0 0 14px}
+.ei-f label{font-weight:600;color:#1a2340;flex:1 1 320px;line-height:1.5}
+.ei-f input[type=date]{font:inherit;padding:9px 11px;border:1px solid #cbd5e0;border-radius:7px;color:#1a2340;background:#fff}
+.ei-yn{display:inline-flex;border:1px solid #cbd5e0;border-radius:7px;overflow:hidden;flex:0 0 auto}
+.ei-yn label{flex:0 0 auto;margin:0;padding:8px 16px;cursor:pointer;font-weight:700;color:#4a5568;background:#fff;line-height:1.2}
+.ei-yn input{position:absolute;opacity:0;width:0;height:0}
+.ei-yn input:checked+span{background:rgba(32,135,201,1);color:#fff}
+.ei-yn span{display:block;padding:8px 16px;margin:-8px -16px}
+.ei-yn label:focus-within span{outline:2px solid #1a2340;outline-offset:-2px}
+.ei-out{margin:16px 0 0;padding:16px 18px;border-radius:9px;border-left:5px solid #cbd5e0;background:#f7f9fc}
+.ei-out.ok{border-left-color:#2f855a;background:#f0fff4}
+.ei-out.no{border-left-color:#c53030;background:#fff5f5}
+.ei-out h3{margin:0 0 6px;font-size:1.1em;color:#1a2340}
+.ei-out p{margin:0 0 8px;color:#4a5568;line-height:1.7}
+.ei-out ul{margin:6px 0 8px 20px;color:#4a5568;line-height:1.7}
+.ei-out .ei-note{font-size:.88em;color:#718096;margin:10px 0 0}
+.ei-big{font-size:1.5em;font-weight:800;color:rgba(32,135,201,1);display:block;margin:2px 0 6px}
+.ei-tool .ei-err{color:#c53030;font-weight:600;margin:6px 0 0}
+</style>
+<div class="ei-hero"><div class="ei-hero-inner"><span class="ei-hero-eyebrow">Eligibility Tool</span><h1>T2 Short <span>Eligibility Checker</span></h1><p class="ei-hero-sub">All eight T2 Short conditions on one screen. Answer them and the checker names the condition that fails, where one does.</p><p class="ei-hero-by">Written and reviewed by Sharad Gondaliya, CPA (Ontario), CPA Ontario Membership 61040184.</p><div class="ei-hero-btns"><a class="ei-btn-blue" href="https://corpnilfilingfor300.ca/form/">Start Nil T2 Filing NOW</a></div></div></div>
+<div class="ei-section"><div class="ei-wrap ei-art">
+<p class="ei-updated">Last reviewed: October 23, 2026</p>
+<div class="ei-tool">
+<fieldset><legend>The eight T2 Short conditions</legend>
+<div class="ei-f"><label id="lc1">The corporation is a Canadian-controlled private corporation throughout the tax year.</label><span class="ei-yn" role="radiogroup" aria-labelledby="lc1"><label><input type="radio" name="c1" value="y"><span>Yes</span></label><label><input type="radio" name="c1" value="n"><span>No</span></label></span></div>
+<div class="ei-f"><label id="lc2">It has nil net income, or a loss, for income tax purposes this year.</label><span class="ei-yn" role="radiogroup" aria-labelledby="lc2"><label><input type="radio" name="c2" value="y"><span>Yes</span></label><label><input type="radio" name="c2" value="n"><span>No</span></label></span></div>
+<div class="ei-f"><label id="lc3">It has one permanent establishment only.</label><span class="ei-yn" role="radiogroup" aria-labelledby="lc3"><label><input type="radio" name="c3" value="y"><span>Yes</span></label><label><input type="radio" name="c3" value="n"><span>No</span></label></span></div>
+<div class="ei-f"><label id="lc4">It paid no taxable dividends and received none in the year.</label><span class="ei-yn" role="radiogroup" aria-labelledby="lc4"><label><input type="radio" name="c4" value="y"><span>Yes</span></label><label><input type="radio" name="c4" value="n"><span>No</span></label></span></div>
+<div class="ei-f"><label id="lc5">It reports in Canadian currency.</label><span class="ei-yn" role="radiogroup" aria-labelledby="lc5"><label><input type="radio" name="c5" value="y"><span>Yes</span></label><label><input type="radio" name="c5" value="n"><span>No</span></label></span></div>
+<div class="ei-f"><label id="lc6">It is claiming no refundable credits.</label><span class="ei-yn" role="radiogroup" aria-labelledby="lc6"><label><input type="radio" name="c6" value="y"><span>Yes</span></label><label><input type="radio" name="c6" value="n"><span>No</span></label></span></div>
+<div class="ei-f"><label id="lc7">It has no Ontario transitional tax debit.</label><span class="ei-yn" role="radiogroup" aria-labelledby="lc7"><label><input type="radio" name="c7" value="y"><span>Yes</span></label><label><input type="radio" name="c7" value="n"><span>No</span></label></span></div>
+<div class="ei-f"><label id="lc8">It has no amount calculated under section 34.2.</label><span class="ei-yn" role="radiogroup" aria-labelledby="lc8"><label><input type="radio" name="c8" value="y"><span>Yes</span></label><label><input type="radio" name="c8" value="n"><span>No</span></label></span></div>
+</fieldset>
+<div class="ei-out" id="out" role="status" aria-live="polite"><p>Answer all eight and the result appears here.</p></div>
+</div>
+<div class="ei-info"><p>Gondaliya CPA Professional Corporation is a registered EFILE electronic filer. Returns are prepared and transmitted in Canada. Credentials are never shared and never used offshore.</p></div>
+</div></div>
+<div class="ei-section-alt" id="conditions"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">The Eight Conditions</h2>
+<p>The T2 Short is available only to a corporation that meets every one of these. One failure puts the corporation on the full T2.</p>
+<table class="ei-tbl"><thead><tr><th scope="col">Condition</th><th scope="col">What it means</th></tr></thead><tbody>
+<tr><td>Canadian-controlled private corporation</td><td>Throughout the tax year, not merely at the year-end</td></tr>
+<tr><td>Nil net income or a loss</td><td>For income tax purposes, not for accounting purposes</td></tr>
+<tr><td>One permanent establishment</td><td>A second province or a second fixed place of business ends it</td></tr>
+<tr><td>No taxable dividends paid or received</td><td>Either direction disqualifies</td></tr>
+<tr><td>Canadian currency</td><td>A functional currency election ends it</td></tr>
+<tr><td>No refundable credits</td><td>Claiming one puts the corporation on the full return</td></tr>
+<tr><td>No Ontario transitional tax debit</td><td>Applies to certain Ontario corporations</td></tr>
+<tr><td>No section 34.2 amount</td><td>Applies where a corporation has a stub-period accrual</td></tr>
+</tbody></table>
+</div></div>
+<div class="ei-section" id="either-way"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">The Fee Is the Same Either Way</h2>
+<p>Qualifying for the shorter form does not change the price, and failing to qualify does not raise it. Nil T2 filing is $300.00 plus HST per tax year whichever form the corporation files on.</p>
+<p>Qualifying also does not remove a schedule that is otherwise required. The schedules are decided by what the corporation holds and who owns it, not by which form carries them.</p>
+</div></div>
+<div class="ei-section-alt" id="not-nil"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">Where the Corporation Is Not Nil at All</h2>
+<div class="ei-warn"><p>A holding corporation with investment income, a rental corporation and a corporation that paid or received a dividend are not nil. Those are handled by Gondaliya CPA Professional Corporation at gondaliyacpa.ca at $350.00 plus HST per year.</p></div>
+<p>A corporation with taxable dividends received fails the T2 Short test and is also outside a nil return altogether, so the checker returning "not eligible" on that condition is worth reading twice.</p>
+</div></div>
+<div class="ei-section"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">Read Next</h2>
+<ul class="ei-qlist">
+<li><a href="https://corpnilfilingfor300.ca/guides/t2-short-eligibility/">The complete guide to T2 Short eligibility</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/t2-schedules-on-a-nil-return/">T2 schedules on a nil return</a></li>
+<li><a href="https://corpnilfilingfor300.ca/pricing/nil-t2-filing-cost/">Nil T2 filing cost</a></li>
+</ul>
+</div></div>
+<div class="ei-cta-bottom"><div class="ei-wrap"><h2>Nil T2 Filing, $300.00 plus HST per tax year</h2><p>Type your corporation name, pick your unfiled years, pay, and sign Form T183CORP on a secure screen. Your CRA confirmation is emailed within 3 business days.</p><a class="ei-btn-blue" href="https://corpnilfilingfor300.ca/form/">Start Nil T2 Filing NOW</a></div></div>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebPage", "@id": "https://corpnilfilingfor300.ca/tools/t2-short-eligibility-checker/#webpage", "url": "https://corpnilfilingfor300.ca/tools/t2-short-eligibility-checker/", "name": "T2 Short Eligibility Checker | All Eight Conditions", "description": "All eight T2 Short conditions on one screen. Answer them and the checker names the condition that fails, where one does.", "inLanguage": "en-CA", "dateModified": "2026-10-23", "author": {"@type": "Person", "name": "Sharad Gondaliya", "honorificSuffix": "CPA", "url": "https://corpnilfilingfor300.ca/sharad-gondaliya-cpa/"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Nil T2 filing in Canada", "item": "https://corpnilfilingfor300.ca/"}, {"@type": "ListItem", "position": 2, "name": "Tools", "item": "https://corpnilfilingfor300.ca/tools/"}, {"@type": "ListItem", "position": 3, "name": "T2 Short Eligibility Checker", "item": "https://corpnilfilingfor300.ca/tools/t2-short-eligibility-checker/"}]}]}</script>
+<script>
+(function(){
+var PRICE_JS="$300.00 plus HST per tax year";
+var DISC_JS="This tool gives general information and is not a filed return.";
+
+var CONDS=[["c1", "it is not a Canadian-controlled private corporation throughout the tax year"], ["c2", "it does not have nil net income or a loss"], ["c3", "it has more than one permanent establishment"], ["c4", "it paid or received taxable dividends"], ["c5", "it does not report in Canadian currency"], ["c6", "it is claiming refundable credits"], ["c7", "it has an Ontario transitional tax debit"], ["c8", "it has a section 34.2 amount"]];
+function pick(n){var e=document.querySelector('input[name="'+n+'"]:checked');
+  return e?e.value:null;}
+function render(){
+  var out=document.getElementById('out'),fails=[],unanswered=0;
+  CONDS.forEach(function(c){
+    var v=pick(c[0]);
+    if(v===null){unanswered++;}else if(v==='n'){fails.push(c[1]);}
+  });
+  if(unanswered>0){
+    out.className='ei-out';
+    out.innerHTML='<p>'+unanswered+' of 8 still to answer.</p>';
+    return;
+  }
+  var h;
+  if(fails.length===0){
+    h='<h3>The T2 Short can be used</h3><span class="ei-big">Eligible</span>'+
+      '<p>All eight conditions are met, so this corporation may file on the T2 '+
+      'Short rather than the full T2. The T2 Short is included in the fee of '+
+      PRICE_JS+'.</p>';
+  }else{
+    h='<h3>The T2 Short cannot be used</h3><span class="ei-big">Not eligible</span>'+
+      '<p>The full T2 is filed instead, because '+
+      (fails.length===1?'':'each of the following applies: ')+'</p><ul>';
+    fails.forEach(function(f){h+='<li>'+f+'</li>';});
+    h+='</ul><p>The full T2 carries the same fee of '+PRICE_JS+'.</p>';
+  }
+  h+='<p class="ei-note">'+DISC_JS+'</p>';
+  out.className='ei-out '+(fails.length===0?'ok':'no');
+  out.innerHTML=h;
+}
+Array.prototype.forEach.call(document.querySelectorAll('.ei-tool input[type=radio]'),
+  function(r){r.addEventListener('change',render);});
+render();
+
+})();
+</script>
