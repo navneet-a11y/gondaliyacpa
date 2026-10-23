@@ -273,3 +273,7 @@
 ## /corporation-revival/ (page 10594, published 2026-10-23, meta set by connector)
 - Meta title: Corporation Revival Ontario and Canada | CPA Filed
 - Meta description: Revive a dissolved Ontario or federal corporation. We file the articles of revival, catch up the missed annual returns and the T2 returns.
+
+## /business-bank-account-setup/ (page 10602, draft created 2026-10-23, meta set by connector)
+- Meta title: Business Bank Account Setup for a New Corporation
+- Meta description: We prepare the documents your bank asks for: articles, certificate of incorporation, directors banking resolution, minute book and business number.

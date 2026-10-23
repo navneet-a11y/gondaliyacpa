@@ -47,7 +47,7 @@ Checked against the live WordPress site on 14 October 2026, updated 16 October 2
 | /shareholder-agreement-template/ | P3 | Built | /shareholder-agreement-template/ |
 | /corporation-revival/ | P3 | Built | /corporation-revival/ |
 | /trademark-search-filing-referral/ | P3 | Built | /trademark-search-filing-referral/ |
-| /business-bank-account-setup/ | P3 | Not built |  |
+| /business-bank-account-setup/ | P3 | Draft (page 10602) | /business-bank-account-setup/ |
 | /services/ | P1 | Built | /services/ |
 | /numbered-company-incorporation/ | P1 | Built | /numbered-company-incorporation/ |
 | /named-company-incorporation-nuans/ | P1 | Built | /named-company-incorporation-nuans/ |
