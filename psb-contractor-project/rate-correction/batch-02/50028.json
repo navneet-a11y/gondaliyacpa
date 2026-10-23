@@ -1,0 +1,24 @@
+{
+ "id": 50028,
+ "url": "https://gondaliyacpa.ca/year-end-bonus-tax-calculator/",
+ "title": "Year-End Bonus Calculator: Cut Income to the $500,000 SBD Limit",
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "Guide - The Ontario Rate Cut Changes the Baseline",
+   "rule": "R3",
+   "before": "<p>Ontario reduced its small business rate from 3.2% to 2.2% effective 1 July 2026, so the combined small business rate is now 11.2% rather than 12.2%.",
+   "after": "<p>Ontario reduced its small business rate from 3.2% to 2.2% effective 1 July 2026, so the combined small business rate is now 11.2% rather than 12.2%.",
+   "note": "States 12.2%/3.2% only as the former rate replaced on July 1, 2026; already correct."
+  },
+  {
+   "location": "Calculator code",
+   "section": "Calculator flags list (addItem string in run())",
+   "rule": "R3",
+   "before": "Ontario cut its small business rate to 2.2% on 1 July 2026, so the combined small business rate is now 11.2% rather than 12.2%.",
+   "after": "Ontario cut its small business rate to 2.2% on 1 July 2026, so the combined small business rate is now 11.2% rather than 12.2%.",
+   "note": "States 12.2%/3.2% only as the former rate replaced on July 1, 2026; already correct."
+  }
+ ],
+ "page_note": "Post already reflects the July 1, 2026 change (11.2% current; 12.2%/3.2% only as former rates). All occurrences R3, no changes needed. No 0.122/0.032, $600,000/$600K or 12.2% in JSON-LD. Note for Sharad: calculator uses a flat SBD = 0.112 for every year end (no day-proration for years straddling July 1, 2026, e.g. a 31 December 2026 year end would be ~11.70% blended); not a 0.122 occurrence, flagged only."
+}

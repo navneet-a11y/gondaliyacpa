@@ -1,0 +1,16 @@
+{
+ "id": 48994,
+ "url": "https://gondaliyacpa.ca/accountant-for-occupational-therapists/",
+ "title": "Accounting and Tax Services for Occupational Therapists",
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "Case study - result",
+   "rule": "R1",
+   "before": "Surplus taxed at ~12.2%, not top personal rates",
+   "after": "Surplus taxed at ~11.2% (12.2% before July 1, 2026), not top personal rates",
+   "note": "Case-study result stated without a date as the current SBD-taxed rate; treated as current. If Sharad dates this engagement before July 1, 2026, switch to R3 (leave)."
+  }
+ ],
+ "page_note": "All 12.2% occurrences are in case-study cards; no JSON-LD, meta or calculator occurrences. No 3.2%, 0.122, 0.032 or $600K found."
+}

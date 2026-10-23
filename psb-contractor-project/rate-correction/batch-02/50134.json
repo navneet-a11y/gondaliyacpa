@@ -1,0 +1,24 @@
+{
+ "id": 50134,
+ "url": "https://gondaliyacpa.ca/accountant-for-driving-schools/",
+ "title": "Accounting and Tax Services for Driving Schools",
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "Case study - what we did",
+   "rule": "R1",
+   "before": "We split taxable car lessons from the exempt commercial courses, corrected the HST filings, apportioned the ITCs, and incorporated the school via a section 85 rollover so active income fell under the $500,000 Small Business Deduction near 12.2%.",
+   "after": "We split taxable car lessons from the exempt commercial courses, corrected the HST filings, apportioned the ITCs, and incorporated the school via a section 85 rollover so active income fell under the $500,000 Small Business Deduction near 11.2% (12.2% before July 1, 2026).",
+   "note": "Case-study result stated without a date as the current SBD-taxed rate; treated as current. If Sharad dates this engagement before July 1, 2026, switch to R3 (leave)."
+  },
+  {
+   "location": "Visible",
+   "section": "Case study - result",
+   "rule": "R1",
+   "before": "Incorporated at the 12.2% small-business rate",
+   "after": "Incorporated at the 11.2% small-business rate",
+   "note": "Case-study result stated without a date as the current SBD-taxed rate; treated as current. If Sharad dates this engagement before July 1, 2026, switch to R3 (leave)."
+  }
+ ],
+ "page_note": "No JSON-LD or meta occurrences; no R4 dollar figures computed from 12.2%."
+}

@@ -1,0 +1,32 @@
+{
+ "id": 48320,
+ "url": "https://gondaliyacpa.ca/accountant-for-house-flippers/",
+ "title": "Accounting and Tax Services for House Flippers",
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "Expertise list - corporate tax",
+   "rule": "R3",
+   "before": "We complete a section 85 rollover on Form T2057 to move a property you hold personally into the flipping corporation at an elected amount, deferring the business income a straight sale of that property inventory would trigger, so incorporating mid-project on a $600,000 flip creates no immediate CRA liability.",
+   "after": "We complete a section 85 rollover on Form T2057 to move a property you hold personally into the flipping corporation at an elected amount, deferring the business income a straight sale of that property inventory would trigger, so incorporating mid-project on a $600,000 flip creates no immediate CRA liability.",
+   "note": "$600,000 here is the value of a flip property, not the small business limit; R7 does not apply. Leave as is."
+  },
+  {
+   "location": "Visible",
+   "section": "Case study - what we did",
+   "rule": "R1",
+   "before": "We established that a fix-and-flip corporation earns active business income &mdash; an adventure in the nature of trade &mdash; not property income, restated the flips to 100% business income under section 9 on amended T2 returns, and claimed the section 125 small business deduction so the first $500,000 was taxed at 12.2%.",
+   "after": "We established that a fix-and-flip corporation earns active business income &mdash; an adventure in the nature of trade &mdash; not property income, restated the flips to 100% business income under section 9 on amended T2 returns, and claimed the section 125 small business deduction so the first $500,000 was taxed at 11.2% (12.2% before July 1, 2026).",
+   "note": "Case-study result stated without a date as the current SBD-taxed rate; treated as current. If Sharad dates this engagement before July 1, 2026, switch to R3 (leave)."
+  },
+  {
+   "location": "Visible",
+   "section": "Case study - result",
+   "rule": "R1",
+   "before": "Captured the $500,000 small business deduction at 12.2%",
+   "after": "Captured the $500,000 small business deduction at 11.2%",
+   "note": "Case-study result stated without a date as the current SBD-taxed rate; treated as current. If Sharad dates this engagement before July 1, 2026, switch to R3 (leave)."
+  }
+ ],
+ "page_note": "All 12.2% occurrences are in case-study cards; no JSON-LD, meta or calculator occurrences. No 3.2%, 0.122, 0.032 or $600K found."
+}

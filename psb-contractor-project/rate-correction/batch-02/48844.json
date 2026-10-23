@@ -1,0 +1,24 @@
+{
+ "id": 48844,
+ "url": "https://gondaliyacpa.ca/accountant-for-family-doctors/",
+ "title": "Accounting and Tax Services for Family Doctors",
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "Case study - what we did",
+   "rule": "R1",
+   "before": "We incorporated a Medical Professional Corporation with a CPSO Certificate of Authorization, rolled the practice in on a section 85 election, built a monthly capitation and OHIP reconciliation workflow in QuickBooks Online, set a salary-and-dividend mix using the $500,000 small business deduction at 12.2%, and established an Individual Pension Plan the MPC deducts.",
+   "after": "We incorporated a Medical Professional Corporation with a CPSO Certificate of Authorization, rolled the practice in on a section 85 election, built a monthly capitation and OHIP reconciliation workflow in QuickBooks Online, set a salary-and-dividend mix using the $500,000 small business deduction at 11.2% (12.2% before July 1, 2026), and established an Individual Pension Plan the MPC deducts.",
+   "note": "Case-study result stated without a date as the current SBD-taxed rate; treated as current. If Sharad dates this engagement before July 1, 2026, switch to R3 (leave)."
+  },
+  {
+   "location": "Visible",
+   "section": "Case study - what we did",
+   "rule": "R1",
+   "before": "We purified the MPC of the passive assets, issued non-voting shares to her spouse within the TOSI rules on Form T1206, modelled dividends against her salary, and restored the full 12.2% small-business rate on active income while documenting the excluded-business tests.",
+   "after": "We purified the MPC of the passive assets, issued non-voting shares to her spouse within the TOSI rules on Form T1206, modelled dividends against her salary, and restored the full 11.2% small-business rate on active income while documenting the excluded-business tests.",
+   "note": "Case-study result stated without a date as the current SBD-taxed rate; treated as current. If Sharad dates this engagement before July 1, 2026, switch to R3 (leave)."
+  }
+ ],
+ "page_note": "All 12.2% occurrences are in case-study cards; no JSON-LD, meta or calculator occurrences. No 3.2%, 0.122, 0.032 or $600K found."
+}

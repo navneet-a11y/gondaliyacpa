@@ -1,0 +1,16 @@
+{
+ "id": 49788,
+ "url": "https://gondaliyacpa.ca/accountant-for-personal-support-worker-businesses/",
+ "title": "Accounting and Tax Services for Personal Support Worker Businesses",
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "Case study - result",
+   "rule": "R1",
+   "before": "<li>Cut the tax bill materially at the 12.2% small-business rate</li>",
+   "after": "<li>Cut the tax bill materially at the 11.2% (12.2% before July 1, 2026) small-business rate</li>",
+   "note": "Case-study result stated without a date as the current SBD-taxed rate; treated as current. If Sharad dates this engagement before July 1, 2026, switch to R3 (leave)."
+  }
+ ],
+ "page_note": "All 12.2% occurrences are current-rate R1. No 3.2%, 0.122/0.032, $600,000/$600K or 12.2%-derived dollar figures found. No 12.2% in this page's JSON-LD. '$600,000 wage bill' (WSIB premium example) is not the small business limit - no change."
+}

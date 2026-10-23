@@ -1,0 +1,24 @@
+{
+ "id": 49912,
+ "url": "https://gondaliyacpa.ca/accountant-for-towing-companies/",
+ "title": "Accounting and Tax Services for Towing Companies",
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "Case study - what we did",
+   "rule": "R1",
+   "before": "applied the $500,000 Small Business Deduction so active income is taxed near 12.2%, set storage revenue to be recognized over the storage period, and claimed a bad-debt deduction under paragraph 20(1)(p) on the uncollectible contract receivables.",
+   "after": "applied the $500,000 Small Business Deduction so active income is taxed near 11.2% (12.2% before July 1, 2026), set storage revenue to be recognized over the storage period, and claimed a bad-debt deduction under paragraph 20(1)(p) on the uncollectible contract receivables.",
+   "note": "Case-study result stated without a date as the current SBD-taxed rate; treated as current. If Sharad dates this engagement before July 1, 2026, switch to R3 (leave)."
+  },
+  {
+   "location": "Visible",
+   "section": "Case study - result",
+   "rule": "R1",
+   "before": "<li>Cut the combined tax bill materially at the 12.2% rate</li><li>Wrote off $9,400",
+   "after": "<li>Cut the combined tax bill materially at the 11.2% rate</li><li>Wrote off $9,400",
+   "note": "Case-study result stated without a date as the current SBD-taxed rate; treated as current. If Sharad dates this engagement before July 1, 2026, switch to R3 (leave)."
+  }
+ ],
+ "page_note": "All 12.2% occurrences are current-rate R1. No 3.2%, 0.122/0.032, $600,000/$600K or 12.2%-derived dollar figures found. No 12.2% in this page's JSON-LD."
+}

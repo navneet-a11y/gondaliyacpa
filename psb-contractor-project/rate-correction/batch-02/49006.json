@@ -1,0 +1,24 @@
+{
+ "id": 49006,
+ "url": "https://gondaliyacpa.ca/accountant-for-dietitians/",
+ "title": "Accounting and Tax Services for Dietitians",
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "Case study - what we did",
+   "rule": "R1",
+   "before": "We modelled the break-even, incorporated a Dietetic Professional Corporation with the CDO Certificate of Authorization, moved her goodwill and equipment across on a section 85 rollover, then set a salary-and-dividend mix within the TOSI rules and funded an Individual Pension Plan so active income taxed at 12.2% under the $500,000 small business deduction stayed working for her.",
+   "after": "We modelled the break-even, incorporated a Dietetic Professional Corporation with the CDO Certificate of Authorization, moved her goodwill and equipment across on a section 85 rollover, then set a salary-and-dividend mix within the TOSI rules and funded an Individual Pension Plan so active income taxed at 11.2% (12.2% before July 1, 2026) under the $500,000 small business deduction stayed working for her.",
+   "note": "Case-study result stated without a date as the current SBD-taxed rate; treated as current. If Sharad dates this engagement before July 1, 2026, switch to R3 (leave)."
+  },
+  {
+   "location": "Visible",
+   "section": "Case study - result",
+   "rule": "R1",
+   "before": "Deferred tax on surplus left in the corporation at 12.2%",
+   "after": "Deferred tax on surplus left in the corporation at 11.2%",
+   "note": "Case-study result stated without a date as the current SBD-taxed rate; treated as current. If Sharad dates this engagement before July 1, 2026, switch to R3 (leave)."
+  }
+ ],
+ "page_note": "All 12.2% occurrences are in case-study cards; no JSON-LD, meta or calculator occurrences. No 3.2%, 0.122, 0.032 or $600K found."
+}

@@ -1,0 +1,24 @@
+{
+ "id": 50183,
+ "url": "https://gondaliyacpa.ca/accountant-for-shoe-stores/",
+ "title": "Accounting and Tax Services for Shoe Stores",
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "Case study - what we did",
+   "rule": "R1",
+   "before": "We incorporated the boutique under the Ontario Business Corporations Act, moved inventory, fixtures and goodwill across on a section 85 rollover with no gain triggered, applied the $500,000 Small Business Deduction so active income is taxed near 12.2%, wrote deadstock down to net realizable value under section 10, and moved gift cards to deferred revenue with breakage.",
+   "after": "We incorporated the boutique under the Ontario Business Corporations Act, moved inventory, fixtures and goodwill across on a section 85 rollover with no gain triggered, applied the $500,000 Small Business Deduction so active income is taxed near 11.2% (12.2% before July 1, 2026), wrote deadstock down to net realizable value under section 10, and moved gift cards to deferred revenue with breakage.",
+   "note": "Case-study result stated without a date as the current SBD-taxed rate; treated as current. If Sharad dates this engagement before July 1, 2026, switch to R3 (leave)."
+  },
+  {
+   "location": "Visible",
+   "section": "Case study - result",
+   "rule": "R1",
+   "before": "Cut the combined tax bill materially at the 12.2% rate",
+   "after": "Cut the combined tax bill materially at the 11.2% rate",
+   "note": "Case-study result stated without a date as the current SBD-taxed rate; treated as current. If Sharad dates this engagement before July 1, 2026, switch to R3 (leave)."
+  }
+ ],
+ "page_note": "No JSON-LD or meta occurrences; no R4 dollar figures computed from 12.2%."
+}

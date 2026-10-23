@@ -1,0 +1,16 @@
+{
+ "id": 49930,
+ "url": "https://gondaliyacpa.ca/accountant-for-immigration-consultants/",
+ "title": "Accounting and Tax Services for Immigration Consultants",
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "Case study - what we did",
+   "rule": "R1",
+   "before": "applied the $500,000 Small Business Deduction so active profit is taxed near 12.2%, and rebuilt the books so government filing fees flow through as disbursements rather than income, with the domestic and zero-rated HST streams split.",
+   "after": "applied the $500,000 Small Business Deduction so active profit is taxed near 11.2% (12.2% before July 1, 2026), and rebuilt the books so government filing fees flow through as disbursements rather than income, with the domestic and zero-rated HST streams split.",
+   "note": "Case-study result stated without a date as the current SBD-taxed rate; treated as current. If Sharad dates this engagement before July 1, 2026, switch to R3 (leave)."
+  }
+ ],
+ "page_note": "All 12.2% occurrences are current-rate R1. No 3.2%, 0.122/0.032, $600,000/$600K or 12.2%-derived dollar figures found. No 12.2% in this page's JSON-LD."
+}

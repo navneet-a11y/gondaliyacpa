@@ -1,0 +1,24 @@
+{
+ "id": 50094,
+ "url": "https://gondaliyacpa.ca/accountant-for-used-car-dealerships/",
+ "title": "Accounting and Tax Services for Used-Car Dealerships",
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "Case study - what we did",
+   "rule": "R1",
+   "before": "We incorporated the dealership under the Ontario Business Corporations Act, moved the inventory, equipment and goodwill across on a section 85 rollover with no gain triggered, applied the $500,000 Small Business Deduction so active income is taxed near 12.2%, separated F&amp;I reserve and warranty revenue into their own accounts, and set a salary-and-dividend mix so surplus could stay in the company and defer tax.",
+   "after": "We incorporated the dealership under the Ontario Business Corporations Act, moved the inventory, equipment and goodwill across on a section 85 rollover with no gain triggered, applied the $500,000 Small Business Deduction so active income is taxed near 11.2% (12.2% before July 1, 2026), separated F&amp;I reserve and warranty revenue into their own accounts, and set a salary-and-dividend mix so surplus could stay in the company and defer tax.",
+   "note": "Case-study result stated without a date as the current SBD-taxed rate; treated as current. If Sharad dates this engagement before July 1, 2026, switch to R3 (leave)."
+  },
+  {
+   "location": "Visible",
+   "section": "Case study - result",
+   "rule": "R1",
+   "before": "Cut the combined tax bill materially at the 12.2% rate",
+   "after": "Cut the combined tax bill materially at the 11.2% rate",
+   "note": "Case-study result stated without a date as the current SBD-taxed rate; treated as current. If Sharad dates this engagement before July 1, 2026, switch to R3 (leave)."
+  }
+ ],
+ "page_note": "One '$600,000' occurrence refers to inventory rotated on a dealer lot (floor-plan example), not the small business limit; not R7, left as is. No JSON-LD or meta occurrences."
+}

@@ -1,0 +1,16 @@
+{
+ "id": 50100,
+ "url": "https://gondaliyacpa.ca/accountant-for-nail-salons/",
+ "title": "Accounting and Tax Services for Nail Salons",
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "Case study - what we did",
+   "rule": "R1",
+   "before": "We reviewed each nail tech against the RC4110 tests, corrected the ones that met the employee test onto T4 payroll with WSIB, then incorporated the salon and moved the assets across on a section 85 rollover, applying the $500,000 small business deduction at 12.2%.",
+   "after": "We reviewed each nail tech against the RC4110 tests, corrected the ones that met the employee test onto T4 payroll with WSIB, then incorporated the salon and moved the assets across on a section 85 rollover, applying the $500,000 small business deduction at 11.2% (12.2% before July 1, 2026).",
+   "note": "Case-study result stated without a date as the current SBD-taxed rate; treated as current. If Sharad dates this engagement before July 1, 2026, switch to R3 (leave)."
+  }
+ ],
+ "page_note": "The '$16,000' annual tax saving in the case study is not shown as computed from 12.2%; left as is (no R4). No JSON-LD or meta occurrences."
+}

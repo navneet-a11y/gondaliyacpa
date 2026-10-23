@@ -1,0 +1,40 @@
+{
+ "id": 49701,
+ "url": "https://gondaliyacpa.ca/passive-income-sbd-grind-calculator/",
+ "title": "Passive Income SBD Grind Calculator for Ontario CCPCs",
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "Guide - Ontario Also Cut the Rate",
+   "rule": "R3",
+   "before": "<p>Ontario reduced its small business rate from 3.2% to 2.2% effective 1 July 2026, so the combined small business rate is now 11.2% rather than the 12.2% you will still see quoted almost everywhere.</p>",
+   "after": "<p>Ontario reduced its small business rate from 3.2% to 2.2% effective 1 July 2026, so the combined small business rate is now 11.2% rather than the 12.2% you will still see quoted almost everywhere.</p>",
+   "note": "States 12.2%/3.2% only as the former rate replaced on July 1, 2026; already correct."
+  },
+  {
+   "location": "Visible",
+   "section": "FAQ - Does the grind really take me from 11.2% to 26.5%?",
+   "rule": "R3",
+   "before": "The combined small business rate is also 11.2% now rather than 12.2%, following Ontario's rate cut on 1 July 2026.",
+   "after": "The combined small business rate is also 11.2% now rather than 12.2%, following Ontario's rate cut on 1 July 2026.",
+   "note": "States 12.2%/3.2% only as the former rate replaced on July 1, 2026; already correct."
+  },
+  {
+   "location": "JSON-LD",
+   "section": "FAQ - Does the grind really take me from 11.2% to 26.5%?",
+   "rule": "R3",
+   "before": "The combined small business rate is also 11.2 percent now rather than 12.2 percent, following Ontario's rate cut on 1 July 2026.",
+   "after": "The combined small business rate is also 11.2 percent now rather than 12.2 percent, following Ontario's rate cut on 1 July 2026.",
+   "note": "States 12.2%/3.2% only as the former rate replaced on July 1, 2026; already correct."
+  },
+  {
+   "location": "Calculator code",
+   "section": "Calculator flags list (addItem string in run())",
+   "rule": "R3",
+   "before": "Ontario reduced its small business rate from 3.2% to 2.2% on 1 July 2026, so the combined small business rate is now \" + pct(sbdRate) + \" rather than the 12.2% still quoted in most places.",
+   "after": "Ontario reduced its small business rate from 3.2% to 2.2% on 1 July 2026, so the combined small business rate is now \" + pct(sbdRate) + \" rather than the 12.2% still quoted in most places.",
+   "note": "States 12.2%/3.2% only as the former rate replaced on July 1, 2026; already correct."
+  }
+ ],
+ "page_note": "Post already reflects the July 1, 2026 change (11.2% current, calendar-2026 day-weighted 0.02696 in code; 12.2%/3.2% only as former rates). All occurrences R3, no changes needed. No 0.122/0.032 or $600,000/$600K found."
+}

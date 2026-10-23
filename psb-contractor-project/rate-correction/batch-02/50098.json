@@ -1,0 +1,24 @@
+{
+ "id": 50098,
+ "url": "https://gondaliyacpa.ca/accountant-for-barbershops/",
+ "title": "Accounting and Tax Services for Barbershops",
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "Case study - what we did",
+   "rule": "R1",
+   "before": "We incorporated the shop under the Ontario Business Corporations Act, moved the assets across on a section 85 rollover with no gain triggered, applied the $500,000 Small Business Deduction so active income is taxed near 12.2%, capitalized the fit-out as Class 13 leasehold improvements amortized over the lease, and placed the chairs and stations in Class 8 and the clippers in Class 12 so every asset was deducted in the right pool.",
+   "after": "We incorporated the shop under the Ontario Business Corporations Act, moved the assets across on a section 85 rollover with no gain triggered, applied the $500,000 Small Business Deduction so active income is taxed near 11.2% (12.2% before July 1, 2026), capitalized the fit-out as Class 13 leasehold improvements amortized over the lease, and placed the chairs and stations in Class 8 and the clippers in Class 12 so every asset was deducted in the right pool.",
+   "note": "Case-study result stated without a date as the current SBD-taxed rate; treated as current. If Sharad dates this engagement before July 1, 2026, switch to R3 (leave)."
+  },
+  {
+   "location": "Visible",
+   "section": "Case study - result",
+   "rule": "R1",
+   "before": "Cut the combined tax bill materially at the 12.2% rate",
+   "after": "Cut the combined tax bill materially at the 11.2% rate",
+   "note": "Case-study result stated without a date as the current SBD-taxed rate; treated as current. If Sharad dates this engagement before July 1, 2026, switch to R3 (leave)."
+  }
+ ],
+ "page_note": "No JSON-LD or meta occurrences; no R4 dollar figures computed from 12.2%."
+}

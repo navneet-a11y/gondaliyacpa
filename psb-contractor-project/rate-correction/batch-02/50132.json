@@ -1,0 +1,32 @@
+{
+ "id": 50132,
+ "url": "https://gondaliyacpa.ca/accountant-for-dance-schools/",
+ "title": "Accounting and Tax Services for Dance Schools",
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "Expertise list item",
+   "rule": "R1",
+   "before": "On one growing school we shifted $40,000 of surplus off the owner's personal return into the corporation, deferring roughly the gap between the 12.2% small-business rate and the top 53.53% personal rate until the funds were drawn.",
+   "after": "On one growing school we shifted $40,000 of surplus off the owner's personal return into the corporation, deferring roughly the gap between the 11.2% (12.2% before July 1, 2026) small-business rate and the top 53.53% personal rate until the funds were drawn.",
+   "note": "Current small-business rate in the deferral comparison; 53.53% top personal rate left unchanged."
+  },
+  {
+   "location": "Visible",
+   "section": "Case study - what we did",
+   "rule": "R1",
+   "before": "We incorporated the studio and moved the assets across on a section 85 rollover with no gain triggered, applied the $500,000 Small Business Deduction so active income is taxed near 12.2%, capitalized the fit-out as a Class 13 leasehold improvement over the lease, and corrected worker status under RC4110.",
+   "after": "We incorporated the studio and moved the assets across on a section 85 rollover with no gain triggered, applied the $500,000 Small Business Deduction so active income is taxed near 11.2%, capitalized the fit-out as a Class 13 leasehold improvement over the lease, and corrected worker status under RC4110.",
+   "note": "Case-study result stated without a date as the current SBD-taxed rate; treated as current. If Sharad dates this engagement before July 1, 2026, switch to R3 (leave)."
+  },
+  {
+   "location": "Visible",
+   "section": "Case study - result",
+   "rule": "R1",
+   "before": "Cut the combined tax bill materially at the 12.2% rate",
+   "after": "Cut the combined tax bill materially at the 11.2% rate",
+   "note": "Case-study result stated without a date as the current SBD-taxed rate; treated as current. If Sharad dates this engagement before July 1, 2026, switch to R3 (leave)."
+  }
+ ],
+ "page_note": "No JSON-LD or meta occurrences; no R4 dollar figures computed from 12.2%."
+}

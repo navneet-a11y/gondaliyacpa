@@ -1,0 +1,16 @@
+{
+ "id": 48932,
+ "url": "https://gondaliyacpa.ca/accountant-for-optometrists/",
+ "title": "Accounting and Tax Services for Optometrists",
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "Case study - what we did",
+   "rule": "R1",
+   "before": "We incorporated an Optometry Professional Corporation with a COO Certificate of Authorization, rolled the practice in on a section 85 election, set a salary-and-dividend mix using the $500,000 small business deduction at 12.2%, issued non-voting family shares within the TOSI rules, and established an Individual Pension Plan the OPC deducts.",
+   "after": "We incorporated an Optometry Professional Corporation with a COO Certificate of Authorization, rolled the practice in on a section 85 election, set a salary-and-dividend mix using the $500,000 small business deduction at 11.2% (12.2% before July 1, 2026), issued non-voting family shares within the TOSI rules, and established an Individual Pension Plan the OPC deducts.",
+   "note": "Case-study result stated without a date as the current SBD-taxed rate; treated as current. If Sharad dates this engagement before July 1, 2026, switch to R3 (leave)."
+  }
+ ],
+ "page_note": "All 12.2% occurrences are in case-study cards; no JSON-LD, meta or calculator occurrences. No 3.2%, 0.122, 0.032 or $600K found."
+}

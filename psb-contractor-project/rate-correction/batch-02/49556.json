@@ -1,0 +1,32 @@
+{
+ "id": 49556,
+ "url": "https://gondaliyacpa.ca/accountant-for-specialist-physicians/",
+ "title": "Accounting and Tax Services for Specialist Physicians",
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "Case study - what we did",
+   "rule": "R1",
+   "before": "We incorporated a Medicine Professional Corporation with a CPSO Certificate of Authorization, rolled the practice in on a section 85 election, moved retained earnings to the 12.2% small-business rate, restructured the portfolio to keep aggregate investment income under the $50,000 passive-income threshold, and established an Individual Pension Plan the MPC deducts on its T2.",
+   "after": "We incorporated a Medicine Professional Corporation with a CPSO Certificate of Authorization, rolled the practice in on a section 85 election, moved retained earnings to the 11.2% (12.2% before July 1, 2026) small-business rate, restructured the portfolio to keep aggregate investment income under the $50,000 passive-income threshold, and established an Individual Pension Plan the MPC deducts on its T2.",
+   "note": "Case-study result stated without a date as the current SBD-taxed rate; treated as current. If Sharad dates this engagement before July 1, 2026, switch to R3 (leave)."
+  },
+  {
+   "location": "Visible",
+   "section": "Case study - what we did",
+   "rule": "R1",
+   "before": "We restructured the share ownership, documented the excluded-business and return-on-capital tests, set a salary-and-dividend mix that kept active income under the $500,000 limit taxed at 12.2%, and deferred the surplus corporately rather than drawing it, capturing the spread between the corporate and top personal rates.",
+   "after": "We restructured the share ownership, documented the excluded-business and return-on-capital tests, set a salary-and-dividend mix that kept active income under the $500,000 limit taxed at 11.2%, and deferred the surplus corporately rather than drawing it, capturing the spread between the corporate and top personal rates.",
+   "note": "Case-study result stated without a date as the current SBD-taxed rate; treated as current. If Sharad dates this engagement before July 1, 2026, switch to R3 (leave)."
+  },
+  {
+   "location": "Visible",
+   "section": "Case study - result",
+   "rule": "R1",
+   "before": "Deferred tax on retained earnings at roughly 12.2%",
+   "after": "Deferred tax on retained earnings at roughly 11.2%",
+   "note": "Case-study result stated without a date as the current SBD-taxed rate; treated as current. If Sharad dates this engagement before July 1, 2026, switch to R3 (leave)."
+  }
+ ],
+ "page_note": "All 12.2% occurrences are in case-study cards; no JSON-LD, meta or calculator occurrences. No 3.2%, 0.122, 0.032 or $600K found."
+}
