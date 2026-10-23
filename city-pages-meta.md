@@ -283,3 +283,4 @@
 - Meta description: Where to incorporate in Canada: the province you work in, or federal. Fees, small business tax rates and director rules compared, $35 to file.
 
 ## Main menu (menu 3): added "All Provinces" (item 10610) under Jurisdictions, linking /incorporate-by-province/ (2026-10-23)
+- Main menu: top-level "Jurisdictions" (item 10087) now links to /incorporate-by-province/ instead of "#" (2026-10-23)
