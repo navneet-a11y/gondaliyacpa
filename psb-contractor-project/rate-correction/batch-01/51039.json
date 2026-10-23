@@ -1,0 +1,24 @@
+{
+  "id": 51039,
+  "url": "https://gondaliyacpa.ca/accountant-for-exporters/",
+  "title": "Accounting and Tax Services for Exporters",
+  "rows": [
+    {
+      "location": "Visible",
+      "section": "Case study - What we did",
+      "rule": "R1",
+      "before": "applied the $500,000 Small Business Deduction so active income is taxed near 12.2%,",
+      "after": "applied the $500,000 Small Business Deduction so active income is taxed near 11.2% (12.2% before July 1, 2026),",
+      "note": "Undated client case study stated in present terms, treated as current rate; if Sharad knows the engagement predates July 1, 2026 it could be left as is (R3)."
+    },
+    {
+      "location": "Visible",
+      "section": "Case study - Result",
+      "rule": "R1",
+      "before": "<li>Combined tax bill cut materially at the 12.2% rate</li>",
+      "after": "<li>Combined tax bill cut materially at the 11.2% rate</li>",
+      "note": "Undated client case study stated in present terms, treated as current rate; if Sharad knows the engagement predates July 1, 2026 it could be left as is (R3)."
+    }
+  ],
+  "page_note": "'$600,000 of intercompany sales' (transfer pricing) is not the small business limit - no change."
+}

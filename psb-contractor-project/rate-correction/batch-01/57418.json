@@ -1,0 +1,40 @@
+{
+ "id": 57418,
+ "url": "https://gondaliyacpa.ca/accountant-for-amazon-us-sellers-based-in-canada/",
+ "title": "Accounting and Tax Services for Amazon US Sellers Based in Canada",
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "body paragraph",
+   "rule": "R1",
+   "before": "12.2%<",
+   "after": "11.2% (12.2% before July 1, 2026)<",
+   "note": "First R1 change on page; parenthetical added."
+  },
+  {
+   "location": "Visible",
+   "section": "expertise/service card",
+   "rule": "R1",
+   "before": "Active business income up to $500,000 attracts a combined Ontario rate near 12.2% under section 125 of the Income Tax Act, and that band attaches to reconciled profit rather than to whatever figure a seller dashboard displays.",
+   "after": "Active business income up to $500,000 attracts a combined Ontario rate near 11.2% under section 125 of the Income Tax Act, and that band attaches to reconciled profit rather than to whatever figure a seller dashboard displays.",
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "expertise/service card",
+   "rule": "R1",
+   "before": "How you take money out is settled once reconciled profit is known, with the first $500,000 of active business income attracting about 12.2% combined Ontario under section 125 of the Income Tax Act.",
+   "after": "How you take money out is settled once reconciled profit is known, with the first $500,000 of active business income attracting about 11.2% combined Ontario under section 125 of the Income Tax Act.",
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "body paragraph",
+   "rule": "R1",
+   "before": "Corporate returns built from that reconciliation, with about 12.2% combined Ontario reaching the first $500,000 of active business income under section 125 and read against profit rather than against a dashboard figure.",
+   "after": "Corporate returns built from that reconciliation, with about 11.2% combined Ontario reaching the first $500,000 of active business income under section 125 and read against profit rather than against a dashboard figure.",
+   "note": ""
+  }
+ ],
+ "page_note": ""
+}

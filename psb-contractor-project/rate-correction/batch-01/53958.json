@@ -1,0 +1,40 @@
+{
+ "id": 53958,
+ "url": "https://gondaliyacpa.ca/accountant-for-virtual-assistants/",
+ "title": "Accounting and Tax Services for Virtual Assistants",
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "Service card 1 (accounting/tax) bullet",
+   "rule": "R1",
+   "before": "Section 125 holds roughly 12.2% combined in Ontario on the first $500,000 of active business income, and since the limit is measured on that income rather than on what you invoiced, large billings never touch it.",
+   "after": "Section 125 holds roughly 11.2% (12.2% before July 1, 2026) combined in Ontario on the first $500,000 of active business income, and since the limit is measured on that income rather than on what you invoiced, large billings never touch it.",
+   "note": "First R1 on page."
+  },
+  {
+   "location": "Visible",
+   "section": "Service card 9 (Incorporation Services) bullet",
+   "rule": "R1",
+   "before": "Profit retained by an Ontario corporation is charged at about 12.2% combined within the section 125 ceiling of $500,000, where identical earnings taken in your own name climb a scale ending at 53.53%.",
+   "after": "Profit retained by an Ontario corporation is charged at about 11.2% combined within the section 125 ceiling of $500,000, where identical earnings taken in your own name climb a scale ending at 53.53%.",
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "FAQ: Should I incorporate my virtual assistant business?",
+   "rule": "R1",
+   "before": "<div class=\"sb-faq-a\">It turns on how much profit stays behind. An Ontario corporation is charged about 12.2% combined on active business income within the $500,000 ceiling set by section 125 of the Income Tax Act;",
+   "after": "<div class=\"sb-faq-a\">It turns on how much profit stays behind. An Ontario corporation is charged about 11.2% combined on active business income within the $500,000 ceiling set by section 125 of the Income Tax Act;",
+   "note": ""
+  },
+  {
+   "location": "JSON-LD",
+   "section": "FAQPage schema: Should I incorporate my virtual assistant business?",
+   "rule": "R1",
+   "before": "\"text\":\"It turns on how much profit stays behind. An Ontario corporation is charged about 12.2% combined on active business income within the $500,000 ceiling set by section 125 of the Income Tax Act;",
+   "after": "\"text\":\"It turns on how much profit stays behind. An Ontario corporation is charged about 11.2% combined on active business income within the $500,000 ceiling set by section 125 of the Income Tax Act;",
+   "note": "JSON-LD copy of the visible FAQ above."
+  }
+ ],
+ "page_note": ""
+}

@@ -1,0 +1,40 @@
+{
+ "id": 51027,
+ "url": "https://gondaliyacpa.ca/accountant-for-chemical-manufacturers/",
+ "title": "Accounting and Tax Services for Chemical Manufacturers",
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "Service list",
+   "rule": "R3",
+   "before": "We claim capital cost allowance on Schedule 8, placing reactors, mixing vessels and filling lines bought before 2026 in Class 53 at 50% and later purchases in Class 43 at 30%; reclassifying one $600,000 reactor and filling line accelerated $150,000 of first-year CCA.",
+   "after": "We claim capital cost allowance on Schedule 8, placing reactors, mixing vessels and filling lines bought before 2026 in Class 53 at 50% and later purchases in Class 43 at 30%; reclassifying one $600,000 reactor and filling line accelerated $150,000 of first-year CCA.",
+   "note": "$600,000 here is an illustrative dollar amount (not the small business limit); leave as is."
+  },
+  {
+   "location": "Visible",
+   "section": "Case study",
+   "rule": "R3",
+   "before": "Accelerated roughly $150,000 of first-year Class 53 CCA on the $600,000 line",
+   "after": "Accelerated roughly $150,000 of first-year Class 53 CCA on the $600,000 line",
+   "note": "$600,000 here is an illustrative dollar amount (not the small business limit); leave as is."
+  },
+  {
+   "location": "Visible",
+   "section": "Case study - what we did",
+   "rule": "R1",
+   "before": "We incorporated the business and moved the mixers, tanks, inventory and formulations across on a section 85 rollover, applied the $500,000 Small Business Deduction so active income is taxed near 12.2%, set up raw-chemical, reactor-WIP and finished-goods inventory under section 10, and wrote the expired stock down to net realizable value.",
+   "after": "We incorporated the business and moved the mixers, tanks, inventory and formulations across on a section 85 rollover, applied the $500,000 Small Business Deduction so active income is taxed near 11.2% (12.2% before July 1, 2026), set up raw-chemical, reactor-WIP and finished-goods inventory under section 10, and wrote the expired stock down to net realizable value.",
+   "note": "Case-study result stated without a date as the current SBD-taxed rate; treated as current. If Sharad dates this engagement before July 1, 2026, switch to R3 (leave)."
+  },
+  {
+   "location": "Visible",
+   "section": "Case study - result",
+   "rule": "R1",
+   "before": "Cut the combined tax bill materially at the 12.2% rate",
+   "after": "Cut the combined tax bill materially at the 11.2% rate",
+   "note": "Case-study result stated without a date as the current SBD-taxed rate; treated as current. If Sharad dates this engagement before July 1, 2026, switch to R3 (leave)."
+  }
+ ],
+ "page_note": ""
+}

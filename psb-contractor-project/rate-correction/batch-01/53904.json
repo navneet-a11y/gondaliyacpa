@@ -1,0 +1,24 @@
+{
+ "id": 53904,
+ "url": "https://gondaliyacpa.ca/wholesale-ecommerce-accounting-canada/",
+ "title": "Wholesale E-Commerce Accounting in Canada: Accounts Receivable, Credit Sales & Cash Flow",
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "What changed callout",
+   "rule": "R3",
+   "before": "The 2026 Ontario Budget, tabled 26 March 2026, reduced the provincial small business corporate income tax rate from 3.2% to 2.2% effective 1 July 2026, taking the combined rate on the first $500,000 of active business income from 12.2% to 11.2%, with a blended rate for year-ends straddling that date.",
+   "after": "The 2026 Ontario Budget, tabled 26 March 2026, reduced the provincial small business corporate income tax rate from 3.2% to 2.2% effective 1 July 2026, taking the combined rate on the first $500,000 of active business income from 12.2% to 11.2%, with a blended rate for year-ends straddling that date.",
+   "note": "Already updated for the 2026 Ontario Budget; historical \"from 12.2% to 11.2%\" statement. Leave as is."
+  },
+  {
+   "location": "Visible",
+   "section": "What changed callout (doubtful debt reserve)",
+   "rule": "R3",
+   "before": "the deferral is worth 11.2% rather than 12.2% of the reserve.",
+   "after": "the deferral is worth 11.2% rather than 12.2% of the reserve.",
+   "note": "Contrast of new vs old rate; already correct. Leave as is."
+  }
+ ],
+ "page_note": "Page already reflects the July 1, 2026 rate cut; no changes needed."
+}

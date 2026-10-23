@@ -1,0 +1,56 @@
+{
+ "id": 50477,
+ "url": "https://gondaliyacpa.ca/millwork-company-tax-planning-canada/",
+ "title": "How Millwork Companies in Canada Can Reduce Taxes and Improve Cash Flow With Strategic Tax Planning",
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "2026 Update callout",
+   "rule": "R3",
+   "before": "Ontario reduced its small business rate to 2.2% effective 1 July 2026, giving a blended provincial rate near 2.7% for a calendar-year corporation and a combined rate near 11.7% rather than the 12.2% that applied before.",
+   "after": "Ontario reduced its small business rate to 2.2% effective 1 July 2026, giving a blended provincial rate near 2.7% for a calendar-year corporation and a combined rate near 11.7% rather than the 12.2% that applied before.",
+   "note": "12.2% expressly tied to the period before the July 1, 2026 cut; leave as is."
+  },
+  {
+   "location": "Visible",
+   "section": "Body - business structure section",
+   "rule": "R7",
+   "before": "Incorporated millwork companies get a federal small business deduction limit of $600,000 starting 2026. This reduces federal taxes on active business income below that amount. Watch out though:",
+   "after": "Incorporated millwork companies get a federal small business deduction limit of $500,000 starting 2026. This reduces federal taxes on active business income below that amount. Watch out though:",
+   "note": "Federal SBD limit stated as $600,000; correct to $500,000. The Risk Warning callout immediately after (\"is $500,000, not $600,000\") then becomes redundant; Sharad may wish to delete that callout."
+  },
+  {
+   "location": "Visible",
+   "section": "Body callout/note",
+   "rule": "R3",
+   "before": "The federal small business deduction limit is $500,000, not $600,000. The higher figure belongs to the provincial limits in Saskatchewan, Prince Edward Island and Nova Scotia. Please plan against $500,000 federally.",
+   "after": "The federal small business deduction limit is $500,000, not $600,000. The higher figure belongs to the provincial limits in Saskatchewan, Prince Edward Island and Nova Scotia. Please plan against $500,000 federally.",
+   "note": "Contrasts $500,000 federal limit with $600,000 provincial figure; already correct, leave."
+  },
+  {
+   "location": "Visible",
+   "section": "Body callout/note",
+   "rule": "R3",
+   "before": "<p>$500,000 of active business income for an eligible Canadian-controlled private corporation, shared across associated corporations. The $600,000 figure belongs to the provincial limits in Saskatchewan, Prince Edward Island and Nova Scotia.</p>",
+   "after": "<p>$500,000 of active business income for an eligible Canadian-controlled private corporation, shared across associated corporations. The $600,000 figure belongs to the provincial limits in Saskatchewan, Prince Edward Island and Nova Scotia.</p>",
+   "note": "Contrasts $500,000 federal limit with $600,000 provincial figure; already correct, leave."
+  },
+  {
+   "location": "Visible",
+   "section": "Body callout/note",
+   "rule": "R3",
+   "before": "Please note that the federal business limit is $500,000 rather than $600,000; that the T5018 return is due six months after your reporting period ends rather than on 31 March; that records are retained for six years rather than seven; and that an eligible dividend is reported on a T5 rather than a TD1.",
+   "after": "Please note that the federal business limit is $500,000 rather than $600,000; that the T5018 return is due six months after your reporting period ends rather than on 31 March; that records are retained for six years rather than seven; and that an eligible dividend is reported on a T5 rather than a TD1.",
+   "note": "Contrasts $500,000 federal limit with $600,000 provincial figure; already correct, leave."
+  },
+  {
+   "location": "JSON-LD",
+   "section": "Body callout/note",
+   "rule": "R3",
+   "before": "\"text\": \"$500,000 of active business income for an eligible Canadian-controlled private corporation, shared across associated corporations. The $600,000 figure belongs to the provincial limits in Saskatchewan, Prince Edward Island and Nova Scotia.\"",
+   "after": "\"text\": \"$500,000 of active business income for an eligible Canadian-controlled private corporation, shared across associated corporations. The $600,000 figure belongs to the provincial limits in Saskatchewan, Prince Edward Island and Nova Scotia.\"",
+   "note": "Contrasts $500,000 federal limit with $600,000 provincial figure; already correct, leave."
+  }
+ ],
+ "page_note": ""
+}

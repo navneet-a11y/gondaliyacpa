@@ -1,0 +1,24 @@
+{
+ "id": 50438,
+ "url": "https://gondaliyacpa.ca/accountant-for-scaffolding-companies/",
+ "title": "Accounting and Tax Services for Scaffolding Companies",
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "Case study - what we did",
+   "rule": "R1",
+   "before": "We incorporated the company under the Ontario Business Corporations Act, moved the fleet, trucks and goodwill across on a section 85 rollover with no gain triggered, applied the $500,000 Small Business Deduction so active income is taxed near 12.2%, deducted the fleet-financing interest under section 20, and filed the outstanding T5018 slips.",
+   "after": "We incorporated the company under the Ontario Business Corporations Act, moved the fleet, trucks and goodwill across on a section 85 rollover with no gain triggered, applied the $500,000 Small Business Deduction so active income is taxed near 11.2% (12.2% before July 1, 2026), deducted the fleet-financing interest under section 20, and filed the outstanding T5018 slips.",
+   "note": "Case-study result stated without a date as the current SBD-taxed rate; treated as current. If Sharad dates this engagement before July 1, 2026, switch to R3 (leave)."
+  },
+  {
+   "location": "Visible",
+   "section": "Case study - result",
+   "rule": "R1",
+   "before": "Active income taxed near the 12.2% small-business rate",
+   "after": "Active income taxed near the 11.2% small-business rate",
+   "note": "Case-study result stated without a date as the current SBD-taxed rate; treated as current. If Sharad dates this engagement before July 1, 2026, switch to R3 (leave)."
+  }
+ ],
+ "page_note": ""
+}

@@ -1,0 +1,16 @@
+{
+ "id": 54352,
+ "url": "https://gondaliyacpa.ca/newcomer-business-owner-tax-filing-canada/",
+ "title": "Newcomer Business Owner Tax Filing in Canada: What New Entrepreneurs Need to Know",
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "Summary table row: Small business deduction",
+   "rule": "R1",
+   "before": "<td>Section <strong>125</strong>, giving <strong>12.2%</strong> combined in Ontario on the first $500,000 of active business income</td>",
+   "after": "<td>Section <strong>125</strong>, giving <strong>11.2%</strong> (12.2% before July 1, 2026) combined in Ontario on the first $500,000 of active business income</td>",
+   "note": "First R1 on page."
+  }
+ ],
+ "page_note": ""
+}

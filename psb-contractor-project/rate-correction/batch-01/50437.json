@@ -1,0 +1,32 @@
+{
+ "id": 50437,
+ "url": "https://gondaliyacpa.ca/accountant-for-interlocking-and-hardscape-contractors/",
+ "title": "Accounting and Tax Services for Interlocking and Hardscape Contractors",
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "Service list",
+   "rule": "R3",
+   "before": "We prepare your T2 with GIFI on Schedule 100 and Schedule 125, splitting your interlock and paver install revenue from your retaining-wall and repair work on their correct lines, so CRA's automated matching never bills tax on a $600,000 file it misreads.",
+   "after": "We prepare your T2 with GIFI on Schedule 100 and Schedule 125, splitting your interlock and paver install revenue from your retaining-wall and repair work on their correct lines, so CRA's automated matching never bills tax on a $600,000 file it misreads.",
+   "note": "$600,000 here is an illustrative dollar amount (not the small business limit); leave as is."
+  },
+  {
+   "location": "Visible",
+   "section": "Case study - what we did",
+   "rule": "R1",
+   "before": "We incorporated the company under the Ontario Business Corporations Act, moved the trucks, skid steers, inventory and goodwill across on a section 85 rollover with no gain triggered, applied the $500,000 Small Business Deduction so active income is taxed near 12.2%, filed the outstanding T5018 slips, and captured the missed material and fuel input tax credits.",
+   "after": "We incorporated the company under the Ontario Business Corporations Act, moved the trucks, skid steers, inventory and goodwill across on a section 85 rollover with no gain triggered, applied the $500,000 Small Business Deduction so active income is taxed near 11.2% (12.2% before July 1, 2026), filed the outstanding T5018 slips, and captured the missed material and fuel input tax credits.",
+   "note": "Case-study result stated without a date as the current SBD-taxed rate; treated as current. If Sharad dates this engagement before July 1, 2026, switch to R3 (leave)."
+  },
+  {
+   "location": "Visible",
+   "section": "Case study - result",
+   "rule": "R1",
+   "before": "Active income taxed near the 12.2% small-business rate",
+   "after": "Active income taxed near the 11.2% small-business rate",
+   "note": "Case-study result stated without a date as the current SBD-taxed rate; treated as current. If Sharad dates this engagement before July 1, 2026, switch to R3 (leave)."
+  }
+ ],
+ "page_note": ""
+}

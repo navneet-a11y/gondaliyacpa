@@ -1,0 +1,32 @@
+{
+ "id": 50441,
+ "url": "https://gondaliyacpa.ca/accountant-for-fine-dining-restaurants/",
+ "title": "Accounting and Tax Services for Fine Dining Restaurants",
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "Service list",
+   "rule": "R3",
+   "before": "We run tip pooling correctly: controlled tips distributed by the house are pensionable and insurable, so we put them through payroll for CPP and EI; on one $600,000 annual tip pool we corrected the controlled-tip source deductions.",
+   "after": "We run tip pooling correctly: controlled tips distributed by the house are pensionable and insurable, so we put them through payroll for CPP and EI; on one $600,000 annual tip pool we corrected the controlled-tip source deductions.",
+   "note": "$600,000 here is an illustrative dollar amount (not the small business limit); leave as is."
+  },
+  {
+   "location": "Visible",
+   "section": "Case study - what we did",
+   "rule": "R1",
+   "before": "We incorporated under the Ontario Business Corporations Act, moved the cellar, equipment and goodwill across on a section 85 rollover, applied the $500,000 Small Business Deduction so active income is taxed near 12.2%, put the controlled tips through payroll for CPP and EI, and booked gift cards as a deferred liability.",
+   "after": "We incorporated under the Ontario Business Corporations Act, moved the cellar, equipment and goodwill across on a section 85 rollover, applied the $500,000 Small Business Deduction so active income is taxed near 11.2% (12.2% before July 1, 2026), put the controlled tips through payroll for CPP and EI, and booked gift cards as a deferred liability.",
+   "note": "Case-study result stated without a date as the current SBD-taxed rate; treated as current. If Sharad dates this engagement before July 1, 2026, switch to R3 (leave)."
+  },
+  {
+   "location": "Visible",
+   "section": "Case study - result",
+   "rule": "R1",
+   "before": "Cut the combined tax bill materially at the 12.2% rate",
+   "after": "Cut the combined tax bill materially at the 11.2% rate",
+   "note": "Case-study result stated without a date as the current SBD-taxed rate; treated as current. If Sharad dates this engagement before July 1, 2026, switch to R3 (leave)."
+  }
+ ],
+ "page_note": ""
+}

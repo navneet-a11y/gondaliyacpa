@@ -1,0 +1,24 @@
+{
+ "id": 50443,
+ "url": "https://gondaliyacpa.ca/accountant-for-pizzerias/",
+ "title": "Accounting and Tax Services for Pizzerias",
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "Case study - what we did",
+   "rule": "R1",
+   "before": "We incorporated under the Ontario Business Corporations Act, moved the equipment, inventory and goodwill across on a section 85 rollover, applied the $500,000 Small Business Deduction so active income is taxed near 12.2%, reclassified the drivers correctly using CRA's RC4110 factors, set up mileage records, and built clean cash and POS reporting.",
+   "after": "We incorporated under the Ontario Business Corporations Act, moved the equipment, inventory and goodwill across on a section 85 rollover, applied the $500,000 Small Business Deduction so active income is taxed near 11.2% (12.2% before July 1, 2026), reclassified the drivers correctly using CRA's RC4110 factors, set up mileage records, and built clean cash and POS reporting.",
+   "note": "Case-study result stated without a date as the current SBD-taxed rate; treated as current. If Sharad dates this engagement before July 1, 2026, switch to R3 (leave)."
+  },
+  {
+   "location": "Visible",
+   "section": "Case study - result",
+   "rule": "R1",
+   "before": "Cut the combined tax bill materially at the 12.2% rate",
+   "after": "Cut the combined tax bill materially at the 11.2% rate",
+   "note": "Case-study result stated without a date as the current SBD-taxed rate; treated as current. If Sharad dates this engagement before July 1, 2026, switch to R3 (leave)."
+  }
+ ],
+ "page_note": ""
+}

@@ -1,0 +1,24 @@
+{
+ "id": 50608,
+ "url": "https://gondaliyacpa.ca/accountant-for-sawmills/",
+ "title": "Accounting and Tax Services for Sawmills",
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "Case study - what we did",
+   "rule": "R1",
+   "before": "We incorporated the mill and moved the machinery, kilns, inventory and goodwill across on a section 85 rollover, applied the $500,000 Small Business Deduction so active income is taxed near 12.2%, set section 10 raw-log, finished-lumber and kiln-WIP inventory, and filed Schedule 31 for the apprenticeship credit.",
+   "after": "We incorporated the mill and moved the machinery, kilns, inventory and goodwill across on a section 85 rollover, applied the $500,000 Small Business Deduction so active income is taxed near 11.2% (12.2% before July 1, 2026), set section 10 raw-log, finished-lumber and kiln-WIP inventory, and filed Schedule 31 for the apprenticeship credit.",
+   "note": "Case-study result stated without a date as the current SBD-taxed rate; treated as current. If Sharad dates this engagement before July 1, 2026, switch to R3 (leave)."
+  },
+  {
+   "location": "Visible",
+   "section": "Case study - result",
+   "rule": "R1",
+   "before": "Cut the combined tax bill materially at the 12.2% rate",
+   "after": "Cut the combined tax bill materially at the 11.2% rate",
+   "note": "Case-study result stated without a date as the current SBD-taxed rate; treated as current. If Sharad dates this engagement before July 1, 2026, switch to R3 (leave)."
+  }
+ ],
+ "page_note": ""
+}

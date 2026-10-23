@@ -1,0 +1,24 @@
+{
+ "id": 53925,
+ "url": "https://gondaliyacpa.ca/land-surveying-company-tax-planning-canada/",
+ "title": "Land Surveying Company Tax Planning in Canada: Strategies to Manage Income, Equipment & Business Taxes",
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "Recent changes list: Ontario small business rate",
+   "rule": "R3",
+   "before": "cut the provincial rate from 3.2% to 2.2% effective 1 July 2026, taking the combined rate on the first $500,000 of active business income from 12.2% to 11.2%.</li>",
+   "after": "cut the provincial rate from 3.2% to 2.2% effective 1 July 2026, taking the combined rate on the first $500,000 of active business income from 12.2% to 11.2%.</li>",
+   "note": "Already updated for the 2026 Ontario Budget; historical \"from 12.2% to 11.2%\" statement. Leave as is."
+  },
+  {
+   "location": "Visible",
+   "section": "Impact analysis / recent changes paragraph",
+   "rule": "R3",
+   "before": "And the 2026 Ontario Budget, tabled 26 March 2026, cut the provincial small business rate from 3.2% to 2.2% effective 1 July 2026, taking the combined rate on the first $500,000 of active business income from 12.2% to 11.2%.</p>",
+   "after": "And the 2026 Ontario Budget, tabled 26 March 2026, cut the provincial small business rate from 3.2% to 2.2% effective 1 July 2026, taking the combined rate on the first $500,000 of active business income from 12.2% to 11.2%.</p>",
+   "note": "Already updated for the 2026 Ontario Budget; historical \"from 12.2% to 11.2%\" statement. Leave as is."
+  }
+ ],
+ "page_note": "Page already reflects the July 1, 2026 rate cut; no changes needed."
+}

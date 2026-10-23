@@ -1,0 +1,16 @@
+{
+ "id": 53228,
+ "url": "https://gondaliyacpa.ca/first-year-corporate-taxes-canada/",
+ "title": "First-Year Corporate Taxes in Canada: What New Business Owners Need to Know",
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "Quick reference table: Ontario small business rate",
+   "rule": "R3",
+   "before": "<td>11.2% combined on the first $500,000 from July 1, 2026 (12.2% before)</td>",
+   "after": "<td>11.2% combined on the first $500,000 from July 1, 2026 (12.2% before)</td>",
+   "note": "Already updated; 12.2% tied to pre-July 1, 2026. Leave as is."
+  }
+ ],
+ "page_note": "Page already reflects the July 1, 2026 rate cut; no changes needed."
+}

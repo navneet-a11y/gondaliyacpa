@@ -1,0 +1,16 @@
+{
+  "id": 51161,
+  "url": "https://gondaliyacpa.ca/accountant-for-marine-repair-businesses/",
+  "title": "Accounting and Tax Services for Marine Repair Businesses",
+  "rows": [
+    {
+      "location": "Visible",
+      "section": "Case study - Result",
+      "rule": "R1",
+      "before": "<li>Active income taxed near 12.2% instead of 53.53%</li>",
+      "after": "<li>Active income taxed near 11.2% (12.2% before July 1, 2026) instead of 53.53%</li>",
+      "note": "Undated client case study stated in present terms, treated as current rate; if Sharad knows the engagement predates July 1, 2026 it could be left as is (R3)."
+    }
+  ],
+  "page_note": "Other rate mentions on the page already show 11.2%."
+}

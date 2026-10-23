@@ -1,0 +1,32 @@
+{
+ "id": 50577,
+ "url": "https://gondaliyacpa.ca/accountant-for-forestry-companies/",
+ "title": "Accounting and Tax Services for Forestry Companies",
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "Service list",
+   "rule": "R3",
+   "before": "We rebuild months or years of neglected books from bank deposits, log-buyer settlement statements and scaling tickets, so a forestry company that let its records slide through three cutting seasons gets a clean ledger instead of a $600,000 shoebox of paper.",
+   "after": "We rebuild months or years of neglected books from bank deposits, log-buyer settlement statements and scaling tickets, so a forestry company that let its records slide through three cutting seasons gets a clean ledger instead of a $600,000 shoebox of paper.",
+   "note": "$600,000 here is an illustrative dollar amount (not the small business limit); leave as is."
+  },
+  {
+   "location": "Visible",
+   "section": "Case study - what we did",
+   "rule": "R1",
+   "before": "We incorporated the company under the Ontario Business Corporations Act, moved the equipment and goodwill across on a section 85 rollover, applied the $500,000 Small Business Deduction so active income is taxed near 12.2%, and filed the outstanding T5018 slips.",
+   "after": "We incorporated the company under the Ontario Business Corporations Act, moved the equipment and goodwill across on a section 85 rollover, applied the $500,000 Small Business Deduction so active income is taxed near 11.2% (12.2% before July 1, 2026), and filed the outstanding T5018 slips.",
+   "note": "Case-study result stated without a date as the current SBD-taxed rate; treated as current. If Sharad dates this engagement before July 1, 2026, switch to R3 (leave)."
+  },
+  {
+   "location": "Visible",
+   "section": "Case study - result",
+   "rule": "R1",
+   "before": "Active income taxed near the 12.2% small-business rate",
+   "after": "Active income taxed near the 11.2% small-business rate",
+   "note": "Case-study result stated without a date as the current SBD-taxed rate; treated as current. If Sharad dates this engagement before July 1, 2026, switch to R3 (leave)."
+  }
+ ],
+ "page_note": ""
+}

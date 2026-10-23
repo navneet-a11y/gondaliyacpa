@@ -1,0 +1,16 @@
+{
+ "id": 53768,
+ "url": "https://gondaliyacpa.ca/engineering-consultant-tax-deductions-canada/",
+ "title": "Engineering Consultant Tax Deductions in Canada: Professional Fees, Software, Equipment & Business Expenses",
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "Provincial rates table, Quebec row",
+   "rule": "R3",
+   "before": "<td>Quebec</td><td>3.2% (12.2%); 2.2% (11.2%) announced for tax years beginning after April 29, 2026</td>",
+   "after": "<td>Quebec</td><td>3.2% (12.2%); 2.2% (11.2%) announced for tax years beginning after April 29, 2026</td>",
+   "note": "Quebec rate, not Ontario; Ontario row already shows 2.2% (11.2% combined). Leave as is."
+  }
+ ],
+ "page_note": "Ontario figures already current; only Quebec row mentions 3.2%/12.2%."
+}

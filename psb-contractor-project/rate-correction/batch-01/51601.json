@@ -1,0 +1,16 @@
+{
+  "id": 51601,
+  "url": "https://gondaliyacpa.ca/marine-repair-business-taxes-canada/",
+  "title": "The Ultimate Guide to Marine Repair Business Taxes and Accounting in Canada",
+  "rows": [
+    {
+      "location": "Visible",
+      "section": "Small business deduction paragraph",
+      "rule": "R3",
+      "before": "In Ontario the combined rate on that income has been around 12.2%, and moves lower as the provincial rate drops to 2.2% from 1 July 2026.",
+      "after": "In Ontario the combined rate on that income has been around 12.2%, and moves lower as the provincial rate drops to 2.2% from 1 July 2026.",
+      "note": "12.2% described as the historical rate before the July 1, 2026 cut, which the sentence already explains. Leave as is."
+    }
+  ],
+  "page_note": ""
+}

@@ -1,0 +1,40 @@
+{
+ "id": 57475,
+ "url": "https://gondaliyacpa.ca/accountant-for-musicians/",
+ "title": "Accounting and Tax Services for Musicians",
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "expertise/service card",
+   "rule": "R1",
+   "before": "Under section 125 the first $500,000 of active business income carries a combined Ontario rate near 12.2%, where the top personal rate reaches 53.53%.",
+   "after": "Under section 125 the first $500,000 of active business income carries a combined Ontario rate near 11.2% (12.2% before July 1, 2026), where the top personal rate reaches 53.53%.",
+   "note": "First R1 change on page; parenthetical added."
+  },
+  {
+   "location": "Visible",
+   "section": "expertise/service card",
+   "rule": "R1",
+   "before": "Where the freelance half has genuinely grown and retains profit, the section 125 small business deduction puts around 12.2% of combined Ontario tax on a corporation&#8217;s first $500,000, and that arithmetic repays examining carefully.",
+   "after": "Where the freelance half has genuinely grown and retains profit, the section 125 small business deduction puts around 11.2% of combined Ontario tax on a corporation&#8217;s first $500,000, and that arithmetic repays examining carefully.",
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "FAQ",
+   "rule": "R1",
+   "before": "Where it does begin to make sense is a freelance half that has grown and is retaining profit: section 125 holds a corporation&#8217;s first $500,000 of active business income at a combined Ontario rate of roughly 12.2%, while the top personal rate in this province reaches 53.53%.",
+   "after": "Where it does begin to make sense is a freelance half that has grown and is retaining profit: section 125 holds a corporation&#8217;s first $500,000 of active business income at a combined Ontario rate of roughly 11.2%, while the top personal rate in this province reaches 53.53%.",
+   "note": ""
+  },
+  {
+   "location": "JSON-LD",
+   "section": "FAQ",
+   "rule": "R1",
+   "before": "Where it does begin to make sense is a freelance half that has grown and is retaining profit: section 125 holds a corporation's first $500,000 of active business income at a combined Ontario rate of roughly 12.2%, while the top personal rate in this province reaches 53.53%.",
+   "after": "Where it does begin to make sense is a freelance half that has grown and is retaining profit: section 125 holds a corporation's first $500,000 of active business income at a combined Ontario rate of roughly 11.2%, while the top personal rate in this province reaches 53.53%.",
+   "note": "JSON-LD copy of the visible FAQ answer; mirror the visible change."
+  }
+ ],
+ "page_note": ""
+}

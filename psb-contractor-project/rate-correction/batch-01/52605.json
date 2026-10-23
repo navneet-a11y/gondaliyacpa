@@ -1,0 +1,16 @@
+{
+  "id": 52605,
+  "url": "https://gondaliyacpa.ca/gutter-cleaning-business-taxes-canada/",
+  "title": "The Ultimate Guide to Gutter Cleaning Business Taxes and Accounting in Canada",
+  "rows": [
+    {
+      "location": "Visible",
+      "section": "Our Actual Experience callout (business structure)",
+      "rule": "R1",
+      "before": "After incorporating, the owner drew $70,000 in salary and left the rest in the company at 12.2%.",
+      "after": "After incorporating, the owner drew $70,000 in salary and left the rest in the company at 11.2% (12.2% before July 1, 2026).",
+      "note": "Undated client anecdote, treated as current rate. Following 'That deferred roughly $20,000 of tax a year' still holds approximately: $70,000 retained x (personal ~40% - 12.2%) = ~$19,460; at 11.2% = ~$20,160, so 'roughly $20,000' can stay. Sharad to confirm figure. If the anecdote predates July 2026, R3 leave is an option."
+    }
+  ],
+  "page_note": ""
+}
