@@ -278,10 +278,11 @@
 - Meta title: Business Bank Account Setup for a New Corporation
 - Meta description: We prepare the documents your bank asks for: articles, certificate of incorporation, directors banking resolution, minute book and business number.
 
-## /which-province-should-i-incorporate-in/ (page 10611, draft created 2026-10-23, meta set by connector)
+## /which-province-should-i-incorporate-in/ (page 10611, published 2026-10-23, meta set by connector)
 - Meta title: Which Province Should I Incorporate In? | Canada Guide
 - Meta description: Where to incorporate in Canada: the province you work in, or federal. Fees, small business tax rates and director rules compared, $35 to file.
 
 ## Main menu (menu 3): added "All Provinces" (item 10610) under Jurisdictions, linking /incorporate-by-province/ (2026-10-23)
 - Main menu: top-level "Jurisdictions" (item 10087) now links to /incorporate-by-province/ instead of "#" (2026-10-23)
 - /incorporate-by-province/ (10410): emoji icons replaced with SVG icons; CSS added to remove gap above hero (2026-10-23)
+- Main menu: "Which Province Should I Choose?" (item 10621) added as first item under Jurisdictions; hub 10410 intro links to it (2026-10-23)
