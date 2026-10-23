@@ -294,3 +294,15 @@
 ## /incorporation-services-hamilton/ (page 10627, draft 2026-10-23, meta set by connector)
 - Meta title: Incorporate a Business in Hamilton | $35 + Government Fees
 - Meta description: Incorporate in Hamilton, Stoney Creek or Ancaster for $35, HST included, plus the $300 Ontario fee. A CPA checks your shares, College rules and City licence first.
+
+## /incorporation-services-london/ (page 10632, draft 2026-10-23, meta set by connector)
+- Meta title: Incorporate a Business in London, Ontario | $35 + Government Fees
+- Meta description: Incorporate in London, Ontario for $35, HST included, plus the $300 Ontario fee. A CPA checks your shares, year end and any City of London licence first.
+
+## /incorporation-services-edmonton/ (page 10637, draft 2026-10-23, meta set by connector)
+- Meta title: Incorporate a Business in Edmonton | $35 + Government Fees
+- Meta description: Incorporate in Alberta from Edmonton for $35, HST included, plus the $291.75 Alberta fee. A CPA checks your shares, registered office and City licence first.
+
+## /incorporation-services-montreal/ (page 10642, draft 2026-10-23, meta set by connector)
+- Meta title: Incorporate a Business in Montreal | $35 + Government Fees
+- Meta description: Incorporate in Quebec from Montreal for $35, HST included, plus the $397 Registraire fee. A CPA checks your French name, head office and shares first.
