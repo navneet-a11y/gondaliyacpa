@@ -128,6 +128,37 @@
 .ei-art .ei-yn label:focus-within span{outline:2px solid #fff;outline-offset:-2px}
 .ei-art .ei-tool .ei-err{color:#ffb4ab}
 .ei-art .ei-tool .ei-out{box-shadow:0 2px 10px rgba(15,22,36,.22)}
+
+/* Hero tags, summary stats and the two-column compare, all after the
+   gondaliyacpa.ca sample. */
+.ei-hero-tags{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;
+  margin:0 0 16px}
+.ei-hero-tag{background:rgba(255,255,255,.08);
+  border:1px solid rgba(255,255,255,.18);border-radius:50px;padding:5px 14px;
+  color:rgba(255,255,255,.78);font-size:.85em;line-height:1.5}
+/* Stat cards sit inside .ei-out, which stays light, so these are white cards
+   on a pale result box rather than on the navy panel. */
+.ei-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;
+  margin:0 0 14px}
+.ei-stat{background:#fff;border:1px solid #e2e8f0;border-radius:10px;
+  padding:13px 15px}
+.ei-stat-l{display:block;color:#718096;font-size:.8em;margin:0 0 5px;
+  line-height:1.4}
+.ei-stat-v{display:block;font-weight:800;color:#1a2340;font-size:1.12em;
+  line-height:1.3}
+.ei-cmp{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:18px 0}
+.ei-cmp-col{border:1px solid #e2e8f0;border-radius:12px;overflow:hidden;
+  background:#fff}
+.ei-cmp-col.a{border-top:3px solid rgba(32,135,201,1)}
+.ei-cmp-col.b{border-top:3px solid #f6ad1a}
+.ei-cmp-hdr{padding:14px 18px;font-weight:800;color:#1a2340}
+.ei-cmp-col.a .ei-cmp-hdr{background:rgba(32,135,201,.07)}
+.ei-cmp-col.b .ei-cmp-hdr{background:rgba(246,173,26,.07)}
+.ei-cmp-row{padding:11px 18px;border-top:1px solid #f0f0f0}
+.ei-cmp-l{display:block;color:#718096;font-size:.84em;margin:0 0 2px}
+.ei-cmp-v{display:block;color:#1a2340;line-height:1.55}
+@media(max-width:700px){.ei-stats{grid-template-columns:1fr}
+  .ei-cmp{grid-template-columns:1fr}}
 .ei-tool{background:#fff;border:1px solid #e2e8f0;border-radius:12px;padding:22px 24px;margin:18px 0;box-shadow:0 1px 2px rgba(26,35,64,.05)}
 .ei-tool legend{font-weight:800;color:#1a2340;font-size:1.05em;padding:0 0 6px}
 .ei-tool fieldset{border:0;margin:0;padding:0}
@@ -150,7 +181,7 @@
 .ei-big{font-size:1.5em;font-weight:800;color:rgba(32,135,201,1);display:block;margin:2px 0 6px}
 .ei-tool .ei-err{color:#c53030;font-weight:600;margin:6px 0 0}
 </style>
-<div class="ei-hero"><div class="ei-hero-inner"><span class="ei-hero-eyebrow">Eligibility Tool</span><h1>T2 Short <span>Eligibility Checker</span></h1><p class="ei-hero-sub">All eight T2 Short conditions on one screen. Answer them and the checker names the condition that fails, where one does.</p><p class="ei-hero-by">Written and reviewed by Sharad Gondaliya, CPA (Ontario), CPA Ontario Membership 61040184.</p><div class="ei-hero-btns"><a class="ei-btn-blue" href="https://corpnilfilingfor300.ca/form/">Start Nil T2 Filing NOW</a></div></div></div>
+<div class="ei-hero"><div class="ei-hero-inner"><span class="ei-hero-eyebrow">Eligibility Tool</span><h1>T2 Short <span>Eligibility Checker</span></h1><p class="ei-hero-sub">All eight T2 Short conditions on one screen. Answer them and the checker names the condition that fails, where one does.</p><div class="ei-hero-tags"><span class="ei-hero-tag">All eight conditions</span><span class="ei-hero-tag">CCPC throughout the year</span><span class="ei-hero-tag">Same fee either way</span><span class="ei-hero-tag">Names the failing condition</span></div><p class="ei-hero-by">Written and reviewed by Sharad Gondaliya, CPA (Ontario), CPA Ontario Membership 61040184.</p><div class="ei-hero-btns"><a class="ei-btn-blue" href="https://corpnilfilingfor300.ca/form/">Start Nil T2 Filing NOW</a></div></div></div>
 <div class="ei-section"><div class="ei-wrap ei-art">
 <p class="ei-updated">Last reviewed: October 23, 2026</p>
 <div class="ei-tool">
@@ -187,7 +218,13 @@
 <p>Qualifying for the shorter form does not change the price, and failing to qualify does not raise it. Nil T2 filing is $300.00 plus HST per tax year whichever form the corporation files on.</p>
 <p>Qualifying also does not remove a schedule that is otherwise required. The schedules are decided by what the corporation holds and who owns it, not by which form carries them.</p>
 </div></div>
-<div class="ei-section-alt" id="not-nil"><div class="ei-wrap ei-art">
+<div class="ei-section-alt" id="vs-full"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">What Changes If the T2 Short Cannot Be Used</h2>
+<p>Only the first row below changes. Everything the fee covers, every schedule the corporation needs and the route the return takes are the same on either form.</p>
+<div class="ei-cmp"><div class="ei-cmp-col a"><div class="ei-cmp-hdr">T2 Short</div><div class="ei-cmp-row"><span class="ei-cmp-l">Who can use it</span><span class="ei-cmp-v">Every one of the eight conditions is met</span></div><div class="ei-cmp-row"><span class="ei-cmp-l">The fee</span><span class="ei-cmp-v">$300.00 plus HST per tax year</span></div><div class="ei-cmp-row"><span class="ei-cmp-l">GIFI Schedules 100, 125 and 141</span><span class="ei-cmp-v">Required where the corporation has something to report</span></div><div class="ei-cmp-row"><span class="ei-cmp-l">Schedule 24 on a first return, Schedule 50 at 10% or more</span><span class="ei-cmp-v">Included in the fee where they apply</span></div><div class="ei-cmp-row"><span class="ei-cmp-l">Form T183CORP</span><span class="ei-cmp-v">Signed before the return is transmitted</span></div><div class="ei-cmp-row"><span class="ei-cmp-l">Filing route</span><span class="ei-cmp-v">Transmitted electronically by a registered EFILE electronic filer</span></div><div class="ei-cmp-row"><span class="ei-cmp-l">CRA confirmation</span><span class="ei-cmp-v">Emailed within 3 business days</span></div></div><div class="ei-cmp-col b"><div class="ei-cmp-hdr">Full T2</div><div class="ei-cmp-row"><span class="ei-cmp-l">Who can use it</span><span class="ei-cmp-v">Any one of the eight conditions fails</span></div><div class="ei-cmp-row"><span class="ei-cmp-l">The fee</span><span class="ei-cmp-v">$300.00 plus HST per tax year, unchanged</span></div><div class="ei-cmp-row"><span class="ei-cmp-l">GIFI Schedules 100, 125 and 141</span><span class="ei-cmp-v">The same. The schedules follow what the corporation holds, not the form</span></div><div class="ei-cmp-row"><span class="ei-cmp-l">Schedule 24 on a first return, Schedule 50 at 10% or more</span><span class="ei-cmp-v">Included in the fee where they apply</span></div><div class="ei-cmp-row"><span class="ei-cmp-l">Form T183CORP</span><span class="ei-cmp-v">Signed before the return is transmitted</span></div><div class="ei-cmp-row"><span class="ei-cmp-l">Filing route</span><span class="ei-cmp-v">Transmitted electronically by a registered EFILE electronic filer</span></div><div class="ei-cmp-row"><span class="ei-cmp-l">CRA confirmation</span><span class="ei-cmp-v">Emailed within 3 business days</span></div></div></div>
+<p>That is why the checker is worth running before anything else: it tells you which form your return goes on, and nothing else about your filing moves with the answer.</p>
+</div></div>
+<div class="ei-section" id="not-nil"><div class="ei-wrap ei-art">
 <h2 class="ei-h2">Where the Corporation Is Not Nil at All</h2>
 <div class="ei-warn"><p>A holding corporation with investment income, a rental corporation and a corporation that paid or received a dividend are not nil. Those are handled by Gondaliya CPA Professional Corporation at gondaliyacpa.ca at $350.00 plus HST per year.</p></div>
 <p>A corporation with taxable dividends received fails the T2 Short test and is also outside a nil return altogether, so the checker returning "not eligible" on that condition is worth reading twice.</p>

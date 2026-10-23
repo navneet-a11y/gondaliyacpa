@@ -117,6 +117,37 @@ TOOL_CSS = """
 .ei-art .ei-yn label:focus-within span{outline:2px solid #fff;outline-offset:-2px}
 .ei-art .ei-tool .ei-err{color:#ffb4ab}
 .ei-art .ei-tool .ei-out{box-shadow:0 2px 10px rgba(15,22,36,.22)}
+
+/* Hero tags, summary stats and the two-column compare, all after the
+   gondaliyacpa.ca sample. */
+.ei-hero-tags{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;
+  margin:0 0 16px}
+.ei-hero-tag{background:rgba(255,255,255,.08);
+  border:1px solid rgba(255,255,255,.18);border-radius:50px;padding:5px 14px;
+  color:rgba(255,255,255,.78);font-size:.85em;line-height:1.5}
+/* Stat cards sit inside .ei-out, which stays light, so these are white cards
+   on a pale result box rather than on the navy panel. */
+.ei-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;
+  margin:0 0 14px}
+.ei-stat{background:#fff;border:1px solid #e2e8f0;border-radius:10px;
+  padding:13px 15px}
+.ei-stat-l{display:block;color:#718096;font-size:.8em;margin:0 0 5px;
+  line-height:1.4}
+.ei-stat-v{display:block;font-weight:800;color:#1a2340;font-size:1.12em;
+  line-height:1.3}
+.ei-cmp{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:18px 0}
+.ei-cmp-col{border:1px solid #e2e8f0;border-radius:12px;overflow:hidden;
+  background:#fff}
+.ei-cmp-col.a{border-top:3px solid rgba(32,135,201,1)}
+.ei-cmp-col.b{border-top:3px solid #f6ad1a}
+.ei-cmp-hdr{padding:14px 18px;font-weight:800;color:#1a2340}
+.ei-cmp-col.a .ei-cmp-hdr{background:rgba(32,135,201,.07)}
+.ei-cmp-col.b .ei-cmp-hdr{background:rgba(246,173,26,.07)}
+.ei-cmp-row{padding:11px 18px;border-top:1px solid #f0f0f0}
+.ei-cmp-l{display:block;color:#718096;font-size:.84em;margin:0 0 2px}
+.ei-cmp-v{display:block;color:#1a2340;line-height:1.55}
+@media(max-width:700px){.ei-stats{grid-template-columns:1fr}
+  .ei-cmp{grid-template-columns:1fr}}
 .ei-tool{background:#fff;border:1px solid #e2e8f0;border-radius:12px;padding:22px 24px;margin:18px 0;box-shadow:0 1px 2px rgba(26,35,64,.05)}
 .ei-tool legend{font-weight:800;color:#1a2340;font-size:1.05em;padding:0 0 6px}
 .ei-tool fieldset{border:0;margin:0;padding:0}
@@ -226,15 +257,22 @@ function render(){
   if(isNaN(ye.getTime())){out.className='ei-out no';
     out.innerHTML='<p class="ei-err">That is not a date we can read.</p>';return;}
   var due=dueDate(ye),eff=nextBusiness(due),t=today();
+  var passed=eff.getTime()<t.getTime(),n=businessBetween(t,eff);
   var h='<h3>Your nil T2 for the year ended '+fmt(ye)+'</h3>';
-  h+='<span class="ei-big">Due '+fmt(due)+'</span>';
+  h+='<div class="ei-stats">'+
+     '<div class="ei-stat"><span class="ei-stat-l">Tax year ended</span>'+
+     '<span class="ei-stat-v">'+fmt(ye)+'</span></div>'+
+     '<div class="ei-stat"><span class="ei-stat-l">Filing deadline</span>'+
+     '<span class="ei-stat-v">'+fmt(eff)+'</span></div>'+
+     '<div class="ei-stat"><span class="ei-stat-l">'+
+     (passed?'Status':'Business days remaining')+'</span>'+
+     '<span class="ei-stat-v">'+(passed?'Passed':n)+'</span></div></div>';
   if(eff.getTime()!==due.getTime()){
     h+='<p>'+fmt(due)+' is a '+DAY[due.getUTCDay()]+
        (isHoliday(due)?' and an Ontario statutory holiday':'')+
        ', so the next business day is '+fmt(eff)+'.</p>';
   }
-  var n=businessBetween(t,eff);
-  if(eff.getTime()<t.getTime()){
+  if(passed){
     h+='<p><strong>This deadline has passed.</strong> An unfiled year stays open '+
        'indefinitely, and each unfiled year is its own return at '+PRICE_JS+'.</p>';
   }else{
@@ -242,7 +280,7 @@ function render(){
        'from today and excluding weekends and Ontario statutory holidays.</p>';
   }
   h+='<p class="ei-note">'+DISC_JS+'</p>';
-  out.className='ei-out '+(eff.getTime()<t.getTime()?'no':'ok');
+  out.className='ei-out '+(passed?'no':'ok');
   out.innerHTML=h;
 }
 document.getElementById('ye').addEventListener('input',render);
@@ -388,6 +426,12 @@ render();
 TOOLS = [
  dict(
   slug='nil-t2-deadline-calculator',
+  tags=[
+   'Six months after year-end',
+   'Weekends and holidays applied',
+   'Ontario public holidays',
+   'Final T2 after dissolution',
+  ],
   faq=[
    ('Does the Due Date Move If It Falls on a Weekend?',
     'Yes. Where the due date falls on a Saturday, a Sunday or a public holiday, a return received on the next business day is on time. The calculator shows that next business day whenever it applies.'),
@@ -454,6 +498,12 @@ TOOLS = [
 
  dict(
   slug='t2-short-eligibility-checker',
+  tags=[
+   'All eight conditions',
+   'CCPC throughout the year',
+   'Same fee either way',
+   'Names the failing condition',
+  ],
   faq=[
    ('Does Qualifying for the T2 Short Change the Price?',
     'No. Nil T2 filing is $300.00 plus HST per tax year whichever form the corporation files on. Qualifying for the shorter form does not lower it, and failing to qualify does not raise it.'),
@@ -506,6 +556,8 @@ TOOLS = [
     '<p>Qualifying also does not remove a schedule that is otherwise required. The '
     'schedules are decided by what the corporation holds and who owns it, not by '
     'which form carries them.</p>'),
+   ('vs-full', 'What Changes If the T2 Short Cannot Be Used',
+    '<p>Only the first row below changes. Everything the fee covers, every schedule the corporation needs and the route the return takes are the same on either form.</p>\n<div class="ei-cmp"><div class="ei-cmp-col a"><div class="ei-cmp-hdr">T2 Short</div><div class="ei-cmp-row"><span class="ei-cmp-l">Who can use it</span><span class="ei-cmp-v">Every one of the eight conditions is met</span></div><div class="ei-cmp-row"><span class="ei-cmp-l">The fee</span><span class="ei-cmp-v">$300.00 plus HST per tax year</span></div><div class="ei-cmp-row"><span class="ei-cmp-l">GIFI Schedules 100, 125 and 141</span><span class="ei-cmp-v">Required where the corporation has something to report</span></div><div class="ei-cmp-row"><span class="ei-cmp-l">Schedule 24 on a first return, Schedule 50 at 10% or more</span><span class="ei-cmp-v">Included in the fee where they apply</span></div><div class="ei-cmp-row"><span class="ei-cmp-l">Form T183CORP</span><span class="ei-cmp-v">Signed before the return is transmitted</span></div><div class="ei-cmp-row"><span class="ei-cmp-l">Filing route</span><span class="ei-cmp-v">Transmitted electronically by a registered EFILE electronic filer</span></div><div class="ei-cmp-row"><span class="ei-cmp-l">CRA confirmation</span><span class="ei-cmp-v">Emailed within 3 business days</span></div></div><div class="ei-cmp-col b"><div class="ei-cmp-hdr">Full T2</div><div class="ei-cmp-row"><span class="ei-cmp-l">Who can use it</span><span class="ei-cmp-v">Any one of the eight conditions fails</span></div><div class="ei-cmp-row"><span class="ei-cmp-l">The fee</span><span class="ei-cmp-v">$300.00 plus HST per tax year, unchanged</span></div><div class="ei-cmp-row"><span class="ei-cmp-l">GIFI Schedules 100, 125 and 141</span><span class="ei-cmp-v">The same. The schedules follow what the corporation holds, not the form</span></div><div class="ei-cmp-row"><span class="ei-cmp-l">Schedule 24 on a first return, Schedule 50 at 10% or more</span><span class="ei-cmp-v">Included in the fee where they apply</span></div><div class="ei-cmp-row"><span class="ei-cmp-l">Form T183CORP</span><span class="ei-cmp-v">Signed before the return is transmitted</span></div><div class="ei-cmp-row"><span class="ei-cmp-l">Filing route</span><span class="ei-cmp-v">Transmitted electronically by a registered EFILE electronic filer</span></div><div class="ei-cmp-row"><span class="ei-cmp-l">CRA confirmation</span><span class="ei-cmp-v">Emailed within 3 business days</span></div></div></div>\n<p>That is why the checker is worth running before anything else: it tells you which form your return goes on, and nothing else about your filing moves with the answer.</p>'),
    ('not-nil', 'Where the Corporation Is Not Nil at All',
     '<div class="ei-warn"><p>' + NOT_NIL + '</p></div>\n'
     '<p>A corporation with taxable dividends received fails the T2 Short test and '
@@ -524,6 +576,12 @@ TOOLS = [
 
  dict(
   slug='gifi-schedule-requirement-checker',
+  tags=[
+   'Schedules 100, 125 and 141',
+   'Five triggers',
+   'Share capital counts',
+   'Included in the fee',
+  ],
   faq=[
    ('Does a Nil Corporation Still File GIFI Schedules?',
     'Usually yes. A corporation inactive all year with nothing at all to report may omit Schedules 100, 125 and 141, but any share capital, cash, shareholder loan, incorporation cost or bank charge makes all three required.'),
@@ -615,6 +673,10 @@ def render(t):
      '<span class="ei-hero-eyebrow">' + t['eyebrow'] + '</span>'
      '<h1>' + t['h1_pre'] + '<span>' + t['h1_span'] + '</span></h1>'
      '<p class="ei-hero-sub">' + t['meta'] + '</p>'
+     + ''.join(['<div class="ei-hero-tags">']
+               + ['<span class="ei-hero-tag">%s</span>' % x
+                  for x in t.get('tags', [])]
+               + ['</div>']) +
      '<p class="ei-hero-by">' + BYLINE + '</p>'
      '<div class="ei-hero-btns"><a class="ei-btn-blue" href="' + FORM + '">'
      'Start Nil T2 Filing NOW</a></div></div></div>\n')

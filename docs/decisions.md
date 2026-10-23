@@ -4210,3 +4210,61 @@ rather than keeping the filter also gives a dark popup calendar panel, which
 matches the navy field.
 
 Live 23,176, 23,343 and 21,939 match the rebuilt files. Gate clear.
+
+## 2026-10-23 — Three more sections taken from the gondaliyacpa.ca sample
+
+Navneet approved all three remaining candidates.
+
+**1. Hero tags** (`.svd-hero-tags`), four per tool, directly from the sample.
+Keyword-bearing text high on the page at no content cost. Checked against the
+hero gradient at its lightest end, `#1e3a6e`: 7.46:1, and 11.23:1 at the dark
+end. The hero's structure and width are untouched; only the tag row is new.
+
+**2. Summary stat cards** (`.svd-sumgrid`), on the deadline calculator only.
+The result now opens with three cards, tax year ended, filing deadline, and
+business days remaining, which becomes "Status: Passed" on a deadline already
+gone. Replaces the single `.ei-big` line.
+
+The cards deliberately carry no fee. A fee card would have split
+"$300.00" from "plus HST per tax year" across two elements, and hard rule 9
+wants the price read whole. The third card is a calculated figure instead.
+
+The date module itself was not touched, only what the result prints. Re-tested
+under node across month-end, mid-month, both leap and non-leap February,
+passed deadlines, empty input and unparseable input. Two cases worth recording
+because they exercise the rollover: a year-end of August 15, 2026 gives
+February 16, 2027, because February 15 is Family Day; and February 29, 2024
+gives September 3, 2024, rolling through a weekend and then Labour Day.
+
+**3. Two-column comparison** (`.svd-compare`), on the T2 Short checker only,
+headed "What Changes If the T2 Short Cannot Be Used".
+
+**Scoped deliberately to avoid cannibalising Family 7.** Appendix A has
+`/compare/nil-t2-filing-vs-t2-short-filing/` at line 1272. A section headed
+"T2 Short vs Full T2" would have bid against it. Framing it as what the
+checker's two outcomes mean in practice keeps the comparison keyword with the
+Family 7 page where it belongs.
+
+Seven rows, and only the first differs: eligibility. Fee, GIFI schedules,
+Schedule 24 and Schedule 50, T183CORP, filing route and CRA confirmation are
+identical on both sides, which is the page's own argument made visible. Rows
+are sourced from plan line 177, which lists everything the fee covers.
+
+Not taken: the rate bars, which need two numbers to compare where these tools
+answer yes or no, and the footer bar, which duplicates the CTA already there.
+
+Two mechanical notes:
+
+- Adding a section shifted `not-nil` from index 2 to 3 on the T2 Short page,
+  flipping its band class from `ei-section-alt` to `ei-section`. Invisible,
+  since `.ei-section-alt` has `background:none` on these pages, but the live
+  patch had to carry the class change or live and build would have drifted.
+- The first attempt to derive the live patches over-counted by 1,673 bytes.
+  The CSS block was extracted by scanning to `</style>`, but the base
+  `.ei-tool` rules sit *after* the override block in source order; the
+  overrides win on specificity, not position. Extracted by its real end marker
+  instead.
+
+Live byte counts 25,480, 28,027 and 23,790 match the rebuilt files. Gate clear.
+One H1 each, no FAQPage, no HowTo, no non-ASCII, 6 outbound links per page
+against the cap of 20, and the `wp:html` wrapper intact on all three.
