@@ -270,6 +270,6 @@
 - Meta title: Corporate Compliance Subscription: Annual Plan
 - Meta description: One annual plan for the filings a corporation must make each year: annual return, notice of change, minute book, compliance calendar.
 
-## /corporation-revival/ (page 10594, draft created 2026-10-23, meta set by connector)
+## /corporation-revival/ (page 10594, published 2026-10-23, meta set by connector)
 - Meta title: Corporation Revival Ontario and Canada | CPA Filed
 - Meta description: Revive a dissolved Ontario or federal corporation. We file the articles of revival, catch up the missed annual returns and the T2 returns.
