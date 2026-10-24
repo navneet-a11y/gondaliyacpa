@@ -141,3 +141,7 @@ Rule: never set ws_neha_reviewed_on before Neha confirms her review in writing i
 All by user 1 (Sharad Gondaliya, CPA), comments closed. ws_neha_reviewed_on not set on any page.
 
 Oct 23 evening: search engine visibility turned on (Settings > Reading, by Navneet); all 20 URLs submitted to IndexNow through Rank Math Instant Indexing ("Successfully submitted 20 URLs").
+
+## Offer updates
+
+- Oct 24: TD Easy Trade transfer cash-back offer ended Oct 23. Removed from the offer tables on pages 53 and 55 and from the detail paragraphs on pages 56 and 58; page 83 now says the offer ended (body, cons list, FAQ and FAQ schema). None of these pages was live yet (days 4 and 5). Schema re-validated.
