@@ -68,7 +68,7 @@ Page 7 "Home (old Astra demo)" is a draft with no public URL: delete it.
 | Day | Date | Pages | Status |
 | --- | --- | --- | --- |
 | 1 | Fri Oct 23 | 20 | Live Oct 23: all 20 published, each verified byte for byte (file size + 34). Rank Math title, description and focus keyword set Oct 23 for all 20 (through Rank Math's own updateMeta route; the Easy MCP integration switch is not needed). Widget CSS and JS were missing from /uploads/ws/; Navneet moved them there and pages now render. Site Address switched to https |
-| 2 | Sat Oct 24 | 20 | Not started |
+| 2 | Sat Oct 24 | 20 | Live Oct 24: all 20 published and verified byte for byte, Rank Math fields set, submitted to IndexNow |
 | 3 | Sun Oct 25 | 20 | Not started |
 | 4 | Mon Oct 26 | 20 | Not started |
 | 5 | Tue Oct 27 | 21 | Not started |
@@ -145,3 +145,30 @@ Oct 23 evening: search engine visibility turned on (Settings > Reading, by Navne
 ## Offer updates
 
 - Oct 24: TD Easy Trade transfer cash-back offer ended Oct 23. Removed from the offer tables on pages 53 and 55 and from the detail paragraphs on pages 56 and 58; page 83 now says the offer ended (body, cons list, FAQ and FAQ schema). None of these pages was live yet (days 4 and 5). Schema re-validated.
+
+## Day 2 live (Saturday, October 24)
+
+| Page | WP ID | Parent | Length on site |
+| --- | --- | --- | --- |
+| RRSP Calculator | 183 | 118 | 41524 |
+| FHSA Calculator | 184 | 118 | 40530 |
+| RESP Grant Calculator | 185 | 118 | 39610 |
+| RRIF Minimum Withdrawal Calculator | 186 | 118 | 41592 |
+| Compound Interest Calculator | 187 | 118 | 49302 |
+| Capital Gains Tax Calculator | 188 | 118 | 43698 |
+| Currency Conversion Fee Calculator | 189 | 118 | 42728 |
+| TFSA Contribution Limit | 152 | 99 | 52777 |
+| TFSA Withdrawal Rules | 153 | 99 | 49632 |
+| US Stocks in a TFSA | 154 | 99 | 71231 |
+| RRSP Guide | 140 | 99 | 65748 |
+| RRSP Contribution Limit | 155 | 99 | 55392 |
+| Home Buyers' Plan | 156 | 99 | 66019 |
+| FHSA Guide | 138 | 99 | 69375 |
+| FHSA Eligibility | 141 | 99 | 64518 |
+| RESP Guide | 157 | 99 | 66545 |
+| RESP Grants | 137 | 99 | 59059 |
+| RRIF Minimum Withdrawal Table | 158 | 99 | 58089 |
+| How to Buy US Stocks in Canada | 263 (new) | 120 | 64750 |
+| How to Invest in Canada | 265 (new) | 121 | 64236 |
+
+All by user 1, comments closed, ws_neha_reviewed_on not set. Lengths re-checked independently after publishing; no duplicate pages created. 20 URLs submitted to IndexNow ("Successfully submitted 20 URLs").
