@@ -5167,9 +5167,13 @@ a branch whose subject it does not match.
 |---|---|---|---|
 | 1259 | corporate-fiscal-year-end-calculator | yes | 25,778 |
 | 1261 | nil-t2-eligibility-checker | yes | 24,909 |
-| — | unfiled-years-checker | pending | 26,475 expected |
-| — | non-resident-t2-penalty-calculator | pending | 26,027 expected |
-| — | dissolution-readiness-checker | pending | 25,175 expected |
+| 1263 | unfiled-years-checker | yes | 26,475 |
+| 1266 | non-resident-t2-penalty-calculator | yes | 25,873 |
+| 1268 | dissolution-readiness-checker | yes | 25,175 |
+
+All five live and byte-identical to their build files. nil_calculator count is
+15 of 150. 1259 was patched after publishing, when the page-source comment
+cleanup shortened it from 25,778 to 25,727; it now matches too.
 
 Each published page is created with `wp_create_cpt_item` (rest_base
 nil_calculator), then its meta set with `wp_update_cpt_item` and its
@@ -5196,3 +5200,30 @@ anywhere, so the ten already live are clean.
 
 Three of the five are published and byte-verified at this point: 1259, 1261
 and 1263.
+
+### Family 2 batch 3: a note on what the tests did and did not catch
+
+Six defects were found in this batch. Worth recording which mechanism caught
+each, because the pattern matters for the remaining 135 tools.
+
+| Defect | Caught by |
+|---|---|
+| Success state used `.ei-out yes`, a class with no CSS rule | reading the rendered output |
+| Review date and dateModified three days stale | reading the rendered output |
+| Four JS variables where two were needed | reading the rendered output |
+| Decision trees compared `'yes'`/`'no'` against a form emitting `y`/`n` | reading the rendered output |
+| Section anchor `id="due"` colliding with the date input | reading the rendered output |
+| Internal plan section number and build-file names in page-source comments | reading the rendered output |
+
+None were caught by the hard-rule gate, which checks wording and schema, and
+none by the 50 node assertions, which tested arithmetic. Every one was found by
+reading the generated page before publishing it. The two guards added as a
+result, the y/n alphabet assertion and the anchor-collision assertion, now run
+at build time; the gate and the assertions remain necessary but are not
+sufficient on their own.
+
+The y/n bug is the one to remember. It made the eligibility checker tell every
+visitor their year was nil, including one who had just said otherwise, and the
+tests passed throughout because they exercised the logic in an alphabet no form
+produces. A test that agrees with the code about the wrong thing is worse than
+no test, because it buys confidence.

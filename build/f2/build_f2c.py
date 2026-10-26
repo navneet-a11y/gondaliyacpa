@@ -69,9 +69,9 @@ PARSE_JS = r"""function parse(id){var v=document.getElementById(id).value;
 
 # --------------------------------------------- 11. corporate fiscal year end
 L11 = r"""
-// The first tax year may not exceed 53 weeks. build_f2b.T6_JS states that as a
-// maximum inclusive length of 371 days, so the latest permitted year-end is
-// the incorporation date plus 370 days. Restated here identically.
+// A first tax year may not exceed 53 weeks, which is a maximum inclusive
+// length of 371 days, so the latest permitted year-end is the incorporation
+// date plus 370 days.
 function latestFirstYE(inc){return new Date(inc.getTime()+370*86400000);}
 function firstYearDays(inc,ye){
   return Math.round((ye.getTime()-inc.getTime())/86400000)+1;}
@@ -255,8 +255,8 @@ render();
 
 # ------------------------------------- 14. non-resident T2 penalty calculator
 L14 = r"""
-// 7.4 states the figure for a non-resident-owned corporation: $25.00 per day
-// up to $2,500.00. The cap is therefore reached on day 100.
+// $25.00 per day to a maximum of $2,500.00 for a non-resident-owned
+// corporation, so the maximum is reached on day 100.
 function daysLate(due,filed){
   var n=Math.round((filed.getTime()-due.getTime())/86400000);
   return n>0?n:0;
@@ -292,9 +292,7 @@ function render(){
        '<div class="ei-stat"><span class="ei-stat-l">Rate per day</span>'+
        '<span class="ei-stat-v">$25.00</span></div>'+
        '<div class="ei-stat"><span class="ei-stat-l">Amount</span>'+
-       '<span class="ei-stat-v">'+money(cents)+'</span></div>'+
-       '<div class="ei-stat"><span class="ei-stat-l">Maximum</span>'+
-       '<span class="ei-stat-v">$2,500.00</span></div></div>';
+       '<span class="ei-stat-v">'+money(cents)+'</span></div></div>';
     h+='<p>'+(cents>=250000
         ? 'The $2,500.00 maximum was reached on day 100 and the figure does not grow after that.'
         : 'The maximum of $2,500.00 is reached on day 100, which is '+left+
@@ -302,7 +300,7 @@ function render(){
     out.className='ei-out no';
   }
   h+='<div class="ei-danger"><p>'+QUALJS+'</p></div>';
-  h+='<p>This figure is the one 7.4 states for a <strong>non-resident-owned '+
+  h+='<p>This figure applies to a <strong>non-resident-owned '+
      'corporation</strong>. A corporation owned by residents of Canada filing a '+
      'true nil return is not charged a percentage late-filing penalty, because '+
      'that penalty is a percentage of tax owing and the corporation owes '+

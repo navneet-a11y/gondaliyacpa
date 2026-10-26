@@ -284,9 +284,9 @@ function dueDate(ye){
   return u(ty,tm,Math.min(d,lastDay(ty,tm)));
 }
 
-// The first tax year may not exceed 53 weeks. build_f2b.T6_JS states that as a
-// maximum inclusive length of 371 days, so the latest permitted year-end is
-// the incorporation date plus 370 days. Restated here identically.
+// A first tax year may not exceed 53 weeks, which is a maximum inclusive
+// length of 371 days, so the latest permitted year-end is the incorporation
+// date plus 370 days.
 function latestFirstYE(inc){return new Date(inc.getTime()+370*86400000);}
 function firstYearDays(inc,ye){
   return Math.round((ye.getTime()-inc.getTime())/86400000)+1;}
