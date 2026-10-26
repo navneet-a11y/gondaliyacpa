@@ -1,0 +1,340 @@
+<!--
+  Open Corporation for $35 house format (gcpa-post).
+  Paste everything below into a Custom HTML block in WordPress.
+  Replace every {{PLACEHOLDER}}. Delete optional blocks you do not use.
+  See README.md in this folder for the rules.
+-->
+<style>.gcpa-post{--navy:#0f2a4a;--navy-2:#15355c;--blue:#1c6dd0;--blue-soft:#e8f1fc;--teal:#0c8f8f;--teal-soft:#e3f4f4;--gold:#c9991f;--gold-soft:#fbf3dc;--green:#1f8a4c;--green-soft:#e6f5ec;--red:#c0392b;--red-soft:#fbeae8;--ink:#1d2733;--muted:#5a6b7b;--line:#d8e0e8;--bg:#ffffff;--bg-alt:#f5f8fb;--radius:14px;--shadow:0 6px 22px rgba(15,42,74,.08);--shadow-lg:0 14px 40px rgba(15,42,74,.14);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);line-height:1.7;font-size:17px;max-width:1080px;margin:0 auto;padding:0 18px 60px;} .gcpa-post *{box-sizing:border-box;} .gcpa-hero{background:linear-gradient(135deg,var(--navy) 0%,var(--navy-2) 60%,#1c4a78 100%);color:#fff;border-radius:20px;padding:46px 40px 42px;margin:26px 0 34px;position:relative;overflow:hidden;} .gcpa-hero::after{content:"";position:absolute;right:-80px;top:-80px;width:280px;height:280px;z-index:0;background:radial-gradient(circle,rgba(28,109,208,.45),transparent 70%);} .gcpa-post .gcpa-eyebrow{display:inline-block;font-size:13px;letter-spacing:1.4px;text-transform:uppercase;font-weight:700;color:#cfe2f8 !important;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.3);padding:7px 15px;border-radius:30px;margin-bottom:18px;} .gcpa-post .gcpa-hero h1{font-size:34px;line-height:1.25;margin:0 0 16px;font-weight:800;color:#fff !important;letter-spacing:-.3px;position:relative;z-index:2;} .gcpa-post .gcpa-hero p{font-size:18px;color:#eaf3fc !important;margin:0;max-width:760px;position:relative;z-index:2;} .gcpa-eyebrow{position:relative;z-index:2;} .gcpa-post h2{font-size:27px;font-weight:800;color:var(--navy);line-height:1.3;margin:48px 0 18px;padding-bottom:14px;border-bottom:3px solid var(--blue-soft);letter-spacing:-.2px;position:relative;} .gcpa-post h2::after{content:"";position:absolute;left:0;bottom:-3px;width:70px;height:3px;background:var(--blue);} .gcpa-post h3{font-size:22px;font-weight:800;color:var(--navy-2);margin:40px 0 14px;line-height:1.35;} .gcpa-post h4{font-size:19px;font-weight:700;color:var(--navy-2);margin:36px 0 12px;line-height:1.4;padding-left:16px;border-left:4px solid var(--teal);} .gcpa-post p{margin:0 0 16px;color:#1d2733 !important;} .gcpa-post li{color:#1d2733;} .gcpa-post a{color:var(--blue);text-decoration:none;font-weight:600;} .gcpa-post a:hover{text-decoration:underline;} .gcpa-post ul,.gcpa-post ol{margin:0 0 18px !important;padding-left:0 !important;list-style:none !important;} .gcpa-post ul{list-style-type:none !important;} .gcpa-post ul li{position:relative;padding:8px 0 8px 34px;margin:0;border-bottom:1px solid var(--line);color:var(--ink);list-style:none !important;list-style-type:none !important;} .gcpa-post ul li::marker{content:"" !important;font-size:0 !important;} .gcpa-post ul li:last-child{border-bottom:none;} .gcpa-post ul li::before{content:"";position:absolute;left:6px;top:15px;width:9px;height:9px;border-radius:2px;background:var(--teal);transform:rotate(45deg);} .gcpa-post ol{counter-reset:gcpa;} .gcpa-post ol li{position:relative;padding:10px 0 10px 44px;margin:0 0 10px;counter-increment:gcpa;list-style:none !important;list-style-type:none !important;} .gcpa-post ol li::marker{content:"" !important;font-size:0 !important;} .gcpa-post ol li::before{content:counter(gcpa);position:absolute;left:0;top:9px;width:28px;height:28px;border-radius:8px;background:var(--navy);color:#fff;font-weight:700;font-size:14px;display:flex;align-items:center;justify-content:center;} .gcpa-post .wp-block-table,.gcpa-post figure.wp-block-table{margin:22px 0 26px;overflow-x:auto;} .gcpa-post table{width:100%;border-collapse:collapse;font-size:15.5px;background:#fff;border:1px solid var(--navy);border-radius:10px;overflow:hidden;box-shadow:var(--shadow);} .gcpa-post thead th{background:var(--navy);color:#fff;text-align:left;padding:13px 15px;font-weight:700;font-size:15px;border:1px solid var(--navy-2);} .gcpa-post tbody td{padding:12px 15px;border:1px solid var(--line);vertical-align:top;color:var(--ink);} .gcpa-post tbody tr:nth-child(even){background:var(--bg-alt);} .gcpa-post tbody tr:hover{background:var(--blue-soft);} .gcpa-post tbody td:first-child{font-weight:600;color:var(--navy-2);} .gcpa-metrics{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin:30px 0 36px;clear:both;} .gcpa-metric{background:#fff;border:1px solid var(--line);border-top:4px solid var(--blue);border-radius:var(--radius);padding:22px 18px;box-shadow:var(--shadow);transition:transform .2s,box-shadow .2s;} .gcpa-metric:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg);} .gcpa-metric:nth-child(2){border-top-color:var(--teal);} .gcpa-metric:nth-child(3){border-top-color:var(--gold);} .gcpa-metric:nth-child(4){border-top-color:var(--green);} .gcpa-metric .ic{width:46px;height:46px;border-radius:11px;background:var(--blue-soft);display:flex;align-items:center;justify-content:center;margin-bottom:14px;color:var(--blue);} .gcpa-metric:nth-child(2) .ic{background:var(--teal-soft);color:var(--teal);} .gcpa-metric:nth-child(3) .ic{background:var(--gold-soft);color:var(--gold);} .gcpa-metric:nth-child(4) .ic{background:var(--green-soft);color:var(--green);} .gcpa-metric .big{font-size:22px;font-weight:800;color:var(--navy);line-height:1.2;margin-bottom:4px;} .gcpa-metric .lbl{font-size:14px;color:var(--muted);line-height:1.45;} .gcpa-numhead{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin:46px 0 8px;clear:both;} .gcpa-numhead h4{margin:0 !important;} .gcpa-numhead .gcpa-pill{margin:0 !important;} .gcpa-numhead .num{flex:0 0 auto;width:48px;height:48px;border-radius:12px;background:var(--navy);color:#fff;font-size:22px;font-weight:800;display:flex;align-items:center;justify-content:center;box-shadow:var(--shadow);} .gcpa-callout{border-radius:var(--radius);padding:20px 22px;margin:22px 0;border:1px solid var(--line);background:var(--bg-alt);position:relative;} .gcpa-callout.blue{background:var(--blue-soft);border-color:#bcd9f6;} .gcpa-callout.teal{background:var(--teal-soft);border-color:#b7e3e3;} .gcpa-callout.gold{background:var(--gold-soft);border-color:#ecd79a;} .gcpa-callout.green{background:var(--green-soft);border-color:#b6e2c6;} .gcpa-callout.red{background:var(--red-soft);border-color:#f0c4be;} .gcpa-callout .co-tag{display:inline-block;font-size:12.5px;font-weight:700;letter-spacing:.6px;text-transform:uppercase;padding:4px 11px;border-radius:20px;margin-bottom:10px;color:#fff;} .gcpa-callout.blue .co-tag{background:var(--blue);} .gcpa-callout.teal .co-tag{background:var(--teal);} .gcpa-callout.gold .co-tag{background:var(--gold);} .gcpa-callout.green .co-tag{background:var(--green);} .gcpa-callout.red .co-tag{background:var(--red);} .gcpa-callout p:last-child{margin-bottom:0;} .gcpa-cta{background:linear-gradient(135deg,var(--navy) 0%,#1c4a78 100%);color:#fff;border-radius:18px;padding:34px 32px;margin:38px 0;text-align:center;box-shadow:var(--shadow-lg);position:relative;overflow:hidden;} .gcpa-cta::before{content:"";position:absolute;left:-60px;bottom:-60px;width:220px;height:220px;background:radial-gradient(circle,rgba(12,143,143,.4),transparent 70%);} .gcpa-post .gcpa-cta h4{color:#fff !important;border:none;padding:0;margin:0 0 12px;font-size:22px;font-weight:800;position:relative;z-index:1;} .gcpa-post .gcpa-cta p{color:#eaf3fc !important;max-width:680px;margin:0 auto 22px;position:relative;z-index:1;} .gcpa-post .gcpa-cta .btn{display:inline-block;background:#fff !important;color:var(--navy) !important;font-weight:700;padding:13px 26px;border-radius:30px;margin:6px;font-size:16px;position:relative;z-index:1;transition:transform .15s;text-decoration:none !important;} .gcpa-post .gcpa-cta .btn:hover{transform:translateY(-2px);text-decoration:none !important;} .gcpa-post .gcpa-cta .btn.primary{background:var(--teal) !important;color:#fff !important;} .gcpa-btnrow{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;align-items:center;position:relative;z-index:1;} .gcpa-trust{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-bottom:22px;position:relative;z-index:1;} .gcpa-post .gcpa-trust span{font-size:13px;font-weight:700;background:rgba(255,255,255,.18) !important;border:1px solid rgba(255,255,255,.45);padding:7px 14px;border-radius:20px;color:#ffffff !important;} .gcpa-post svg{display:block;} .gcpa-pill{display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:700;padding:8px 16px;border-radius:30px;margin:10px 0 6px;line-height:1.2;} .gcpa-pill svg{width:16px;height:16px;flex:0 0 auto;} .gcpa-pill.green{background:var(--green-soft);color:var(--green);border:1px solid #b6e2c6;} .gcpa-pill.blue{background:var(--blue-soft);color:var(--blue);border:1px solid #bcd9f6;} .gcpa-pill.teal{background:var(--teal-soft);color:var(--teal);border:1px solid #b7e3e3;} .gcpa-pill.gold{background:var(--gold-soft);color:#9a7416;border:1px solid #ecd79a;} .gcpa-pill.red{background:var(--red-soft);color:var(--red);border:1px solid #f0c4be;} .gcpa-pillhead{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin:38px 0 12px;clear:both;} .gcpa-pillhead h4{margin:0 !important;} .gcpa-pillhead .gcpa-pill{margin:0 !important;} @media(max-width:560px){.gcpa-pillhead{gap:8px;}} .gcpa-toc{background:var(--bg-alt);border:1px solid var(--line);border-left:5px solid var(--blue);border-radius:var(--radius);padding:24px 26px;margin:30px 0 36px;box-shadow:var(--shadow);} .gcpa-toc h5{margin:0 0 14px;font-size:16px;font-weight:800;color:var(--navy);letter-spacing:.4px;text-transform:uppercase;display:flex;align-items:center;gap:9px;} .gcpa-toc h5 svg{width:20px;height:20px;color:var(--blue);} .gcpa-toc ol{counter-reset:toc;margin:0 !important;padding:0 !important;columns:2;column-gap:36px;list-style:none !important;} .gcpa-toc ol li{counter-increment:toc;position:relative;padding:7px 0 7px 30px;margin:0;border-bottom:1px dashed var(--line);break-inside:avoid;list-style:none !important;} .gcpa-toc ol li::before{content:counter(toc);position:absolute;left:0;top:7px;width:21px;height:21px;border-radius:6px;background:var(--blue-soft);color:var(--blue);font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;} .gcpa-toc ol li::marker{content:"" !important;font-size:0 !important;} .gcpa-toc a{color:var(--navy-2);font-weight:600;font-size:15px;} .gcpa-toc a:hover{color:var(--blue);} .gcpa-post [id^="toc-"]{scroll-margin-top:90px;} .gcpa-banner{display:block;background:linear-gradient(135deg,#0d3b66 0%,#0c7a7a 100%);color:#fff;border-radius:16px;padding:30px 32px;margin:36px 0;box-shadow:var(--shadow-lg);} .gcpa-banner .bt{font-size:20px;font-weight:800;line-height:1.45;margin:0 0 20px;max-width:760px;} .gcpa-banner .bb{display:flex;flex-wrap:wrap;gap:14px;align-items:center;} .gcpa-banner a{display:inline-block;background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.6);color:#fff !important;font-weight:700;padding:13px 24px;border-radius:30px;font-size:15px;text-decoration:none !important;} .gcpa-banner a.solid{background:#ffffff !important;color:#0d3b66 !important;border-color:#fff;} .gcpa-disclaimer{background:var(--bg-alt);border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:34px 0 10px;font-size:14.5px;color:var(--muted);line-height:1.6;} .gcpa-disclaimer strong{color:var(--navy-2);} .gcpa-byline{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin:0 0 22px;font-size:15px;} .gcpa-byline .av{width:42px;height:42px;border-radius:50%;background:var(--navy);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:16px;flex:0 0 auto;} .gcpa-byline .nm{font-weight:700;color:var(--navy-2);} .gcpa-byline .rl{color:var(--teal);font-weight:700;} .gcpa-byline .sep{color:var(--line);} .gcpa-author{display:flex;gap:18px;align-items:flex-start;background:var(--bg-alt);border:1px solid var(--line);border-left:5px solid var(--teal);border-radius:14px;padding:24px 26px;margin:34px 0 40px;} .gcpa-author .ava{width:64px;height:64px;border-radius:50%;background:linear-gradient(135deg,var(--navy),var(--teal));color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:22px;flex:0 0 auto;} .gcpa-author .info h5{margin:0 0 6px;font-size:17px;font-weight:800;color:var(--navy);line-height:1.4;} .gcpa-author .info .role{font-size:14px;color:var(--teal);font-weight:700;margin:0 0 12px;} .gcpa-author .info p{font-size:14.5px;color:var(--muted) !important;margin:0;line-height:1.65;} .gcpa-faq{margin:18px 0 26px;border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:var(--shadow);} .gcpa-faq details{border-bottom:1px solid var(--line);background:#fff;} .gcpa-faq details:last-child{border-bottom:none;} .gcpa-faq summary{list-style:none;cursor:pointer;padding:18px 22px;font-weight:700;color:var(--navy-2);font-size:16px;display:flex;justify-content:space-between;align-items:center;gap:14px;transition:background .15s;} .gcpa-faq summary::-webkit-details-marker{display:none;} .gcpa-faq summary:hover{background:var(--bg-alt);} .gcpa-faq summary .pl{flex:0 0 auto;width:24px;height:24px;border-radius:50%;background:var(--blue-soft);color:var(--blue);display:flex;align-items:center;justify-content:center;font-size:18px;font-weight:700;transition:transform .2s;} .gcpa-faq details[open] summary{background:var(--bg-alt);color:var(--navy);} .gcpa-faq details[open] summary .pl{transform:rotate(45deg);background:var(--blue);color:#fff;} .gcpa-faq .ans{padding:0 22px 20px;color:#1d2733;font-size:15.5px;line-height:1.7;} .gcpa-img-right{float:right;max-width:250px;width:32%;margin:6px 0 24px 28px;border-radius:12px;box-shadow:var(--shadow-lg);border:1px solid var(--line);} .gcpa-img-right img{display:block;width:100%;height:auto;border-radius:12px;} @media(max-width:560px){.gcpa-img-right{float:none;width:70%;max-width:260px;margin:14px auto 18px;}} .gcpa-closing{font-size:24px;font-weight:800;color:var(--navy);margin:48px 0 14px;padding-bottom:12px;border-bottom:3px solid var(--teal-soft);position:relative;} .gcpa-closing::after{content:"";position:absolute;left:0;bottom:-3px;width:70px;height:3px;background:var(--teal);} @media(max-width:560px){.gcpa-post{font-size:16px;} .gcpa-hero{padding:32px 22px;} .gcpa-hero h1{font-size:26px;} .gcpa-post h2{font-size:23px;} .gcpa-cta{padding:26px 20px;} .gcpa-banner .bb{width:100%;} .gcpa-banner .bb a{flex:1 1 auto;text-align:center;}}</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"Open Corporation for $35","alternateName":"Open Corporation For $35","url":"https://opencorporationfor35.ca/","description":"Open Corporation for $35 is a department of Gondaliya CPA.","parentOrganization":{"@type":"Organization","name":"Gondaliya CPA Professional Corporation","url":"https://gondaliyacpa.ca","identifier":"CPA Ontario Firm Registration 61330051"},"legalName":"WealthBamboo Inc.","telephone":"+1-647-212-9559","email":"info@gondaliyacpa.ca","areaServed":"CA","openingHours":"Mo-Su 09:00-20:30","award":"Xero Partner Award Winner 2026","aggregateRating":{"@type":"AggregateRating","ratingValue":"5","reviewCount":"1300"}}
+</script>
+<div class="gcpa-post">
+
+<!-- 1. HERO -->
+<div class="gcpa-hero" style="background:linear-gradient(135deg,#0f2a4a 0%,#15355c 60%,#1c4a78 100%) !important;">
+<span class="gcpa-eyebrow">{{KEYWORD_1}} · {{KEYWORD_2}} · {{KEYWORD_3}} · {{KEYWORD_4}} · {{YEAR}}</span>
+<h1 style="color:#ffffff !important;position:relative;z-index:2;font-size:34px;line-height:1.25;font-weight:800;margin:0 0 14px;">{{H1_TITLE}}</h1>
+<div class="gcpa-hero-sub" style="margin:0 0 18px;"><span style="color:#eaf3fc !important;font-size:18px;line-height:1.6;display:block;max-width:840px;position:relative;z-index:2;">{{ONE_LINE_SUBTITLE}}</span></div>
+<div style="position:relative;z-index:2;font-size:15px;line-height:1.5;"><span style="color:#ffffff;font-weight:bold;">By Sharad Gondaliya, CPA</span><span style="color:#9fd0d0;font-weight:bold;">  |  <a href="https://opencorporationfor35.ca/">Open Corporation For $35</a> and <a href="https://opencorporationfor35.ca/address-service-100/">Address Service</a></span></div>
+<div style="position:relative;z-index:2;font-size:14.5px;line-height:1.5;margin-top:12px;"><span style="color:#cfe2f8 !important;font-weight:600;">Open Corporation for $35 is a department of Gondaliya CPA.</span></div>
+</div>
+
+<!-- 2. SEO H2 + OPENING (department line first, in bold) -->
+<h2>{{SEO_H2_WITH_FOCUS_KEYWORD}}</h2>
+<p><strong>Open Corporation for $35 is a department of Gondaliya CPA.</strong> {{OPENING_PARAGRAPH}}</p>
+
+<!-- 3. QUICK SUMMARY -->
+<h3 id="toc-summary" style="margin-top:38px;">Quick Summary</h3>
+<p>{{SUMMARY_PARAGRAPH}}</p>
+<figure class="wp-block-table">
+<table>
+<thead><tr><th>Aspect</th><th>Details</th></tr></thead>
+<tbody>
+<tr><td>{{ASPECT_1}}</td><td>{{DETAIL_1}}</td></tr>
+<tr><td>{{ASPECT_2}}</td><td>{{DETAIL_2}}</td></tr>
+<tr><td>{{ASPECT_3}}</td><td>{{DETAIL_3}}</td></tr>
+<tr><td>{{ASPECT_4}}</td><td>{{DETAIL_4}}</td></tr>
+</tbody>
+</table>
+</figure>
+
+<!-- 4. AUTHOR BOX (TOP) -->
+<div class="gcpa-author">
+<div class="ava" style="background:linear-gradient(135deg,#0f2a4a,#0c8f8f) !important;color:#ffffff !important;">SG</div>
+<div class="info">
+<h5>Author: Sharad Gondaliya, CPA (Canada &amp; USA) — Founder &amp; Managing Director, Gondaliya CPA Professional Corporation, Toronto, Ontario.</h5>
+<div class="role">Reviewed and fact-checked by Sharad Gondaliya, CPA (Canada &amp; USA)</div>
+<p style="font-size:14.5px;color:#15355c !important;font-weight:700;margin:0 0 8px;">Open Corporation for $35 is a department of Gondaliya CPA.</p>
+<p>Gondaliya CPA is a Toronto-based team providing incorporation, CRA registrations, corporate tax, bookkeeping, GST/HST, and payroll for Canadian corporations. Verify our firm on the <a href="https://www.cpaontario.ca/protecting-the-public/directories/firm/gondaliya-5sqvmj">CPA Ontario public firm directory</a>, firm registration 61330051.</p>
+<p style="font-size:13.5px;color:#15355c !important;font-weight:700;margin-top:10px;">CPA Ontario | CPA USA (Washington &amp; Montana) | Xero Partner Award Winner 2026 | 1300+ 5-star Google reviews</p>
+</div>
+</div>
+<p style="font-size:14px;color:#5a6b7b;margin:-26px 0 26px;">Reading time: {{MINUTES}} minutes.</p>
+
+<!-- 5. TABLE OF CONTENTS (one entry per numbered section, then FAQ) -->
+<div class="gcpa-toc">
+<h5>Table of Contents</h5>
+<ol>
+<li><a href="#toc-{{ANCHOR_1}}">{{SECTION_1_TITLE}}</a></li>
+<li><a href="#toc-{{ANCHOR_2}}">{{SECTION_2_TITLE}}</a></li>
+<li><a href="#toc-{{ANCHOR_3}}">{{SECTION_3_TITLE}}</a></li>
+<li><a href="#toc-faq">Frequently Asked Questions</a></li>
+</ol>
+</div>
+
+<!-- 6. METRICS (optional, 4 to 5 cards, exact numbers only) -->
+<span class="gcpa-pill green">The Numbers That Matter</span>
+<div class="gcpa-metrics">
+<div class="gcpa-metric">
+<div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+<div class="big">{{METRIC_1}}</div>
+<div class="lbl">{{METRIC_1_LABEL}}</div>
+</div>
+<div class="gcpa-metric">
+<div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+<div class="big">{{METRIC_2}}</div>
+<div class="lbl">{{METRIC_2_LABEL}}</div>
+</div>
+<div class="gcpa-metric">
+<div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="M19 9l-5 5-4-4-3 3"/></svg></div>
+<div class="big">{{METRIC_3}}</div>
+<div class="lbl">{{METRIC_3_LABEL}}</div>
+</div>
+<div class="gcpa-metric">
+<div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
+<div class="big">$35</div>
+<div class="lbl">Our incorporation fee, including HST</div>
+</div>
+</div>
+
+<!-- 7. SCOPE CALLOUT -->
+<div class="gcpa-callout blue">
+<span class="co-tag">Scope &amp; Assumptions</span>
+<p>This article uses {{PROVINCE}} rates and federal rules for {{YEAR}}, in Canadian dollars. {{WHAT_CAN_CHANGE}} This is educational information only and not tax, legal, or financial advice. Please speak with a CPA about your own situation before {{ACTION}}.</p>
+</div>
+
+<!-- 8. NUMBERED SECTION (repeat per section; increment the number) -->
+<h2>{{SECTION_1_SEO_H2}}</h2>
+<div class="gcpa-numhead">
+<div class="num" style="background:#0f2a4a !important;color:#ffffff !important;">1</div>
+<h4 id="toc-{{ANCHOR_1}}" style="border:none;padding:0;margin:0;">{{SECTION_1_TITLE}}</h4>
+<span class="gcpa-pill blue">{{SECTION_1_PILL}}</span>
+</div>
+<p>{{BODY}}</p>
+
+<!-- Optional image -->
+<figure style="margin:22px 0;"><img src="{{IMAGE_URL}}" alt="{{IMAGE_ALT}}" style="width:100%;border-radius:12px;border:1px solid #d8e0e8;" /><figcaption style="font-size:13px;color:#5a6b7b;text-align:center;padding:6px;">{{CAPTION}}</figcaption></figure>
+
+<!-- Optional sub-heading with a pill -->
+<div class="gcpa-pillhead"><h4 style="border:none;padding:0;margin:0;">{{SUBHEADING}}</h4><span class="gcpa-pill teal">{{PILL}}</span></div>
+
+<!-- Callouts: pick the one that fits -->
+<div class="gcpa-callout gold">
+<span class="co-tag">Our Actual Experience</span>
+<p>{{FIRST_HAND_EXAMPLE}}</p>
+</div>
+<div class="gcpa-callout teal">
+<span class="co-tag">Key Stat</span>
+<p>{{KEY_STAT}}</p>
+</div>
+<div class="gcpa-callout blue">
+<span class="co-tag">Worth Knowing</span>
+<p>{{WORTH_KNOWING}}</p>
+</div>
+<div class="gcpa-callout red">
+<span class="co-tag">Watch For</span>
+<p>{{WATCH_FOR}}</p>
+</div>
+<div class="gcpa-callout green">
+<span class="co-tag">Tip</span>
+<p>{{TIP}}</p>
+</div>
+
+<!-- 9. MID-POST BANNER (once, after section 3 or 4) -->
+<div class="gcpa-banner" style="background:linear-gradient(135deg,#0d3b66 0%,#0c7a7a 100%) !important;">
+<div class="bt">{{BANNER_LINE}}</div>
+<div class="bb"><a class="solid" href="https://gondaliyacpa.ca/consultation/">Book Free Consultation</a><a href="mailto:info@gondaliyacpa.ca">info@gondaliyacpa.ca</a><a href="tel:+16472129559">647-212-9559</a></div>
+</div>
+
+<!-- 10. MID-POST CTA BOX (once, about two-thirds down) -->
+<div class="gcpa-cta" style="background:linear-gradient(135deg,#0f2a4a 0%,#1c4a78 100%) !important;">
+<h4>{{CTA_HEADING}}</h4>
+<p>Incorporation from $35 including HST plus government fees, with a free CPA consultation before you commit. Please book a free consultation.</p>
+<div class="gcpa-trust"><span>1300+ 5-star Google reviews</span><span>Xero Partner Award Winner 2026</span><span>CPA Ontario Firm 61330051</span><span>30-Day Money-Back Guarantee</span></div>
+<div class="gcpa-btnrow"><a class="solid" href="https://gondaliyacpa.ca/consultation/">Book Free Consultation</a><a href="https://opencorporationfor35.ca/">Open Corporation For $35</a><a href="tel:+16472129559">647-212-9559</a></div>
+</div>
+
+<!-- 11. FAQ (numbered section; same questions go into the FAQPage schema below) -->
+<h2>{{FAQ_SEO_H2}}</h2>
+<div class="gcpa-numhead">
+<div class="num" style="background:#0f2a4a !important;color:#ffffff !important;">{{N}}</div>
+<h4 id="toc-faq" style="border:none;padding:0;margin:0;">Frequently Asked Questions</h4>
+<span class="gcpa-pill teal">FAQ</span>
+</div>
+<div class="gcpa-faq">
+<details><summary>{{QUESTION_1}}<span class="pl">+</span></summary>
+<div class="ans"><p>{{ANSWER_1}}</p></div></details>
+<details><summary>{{QUESTION_2}}<span class="pl">+</span></summary>
+<div class="ans"><p>{{ANSWER_2}}</p></div></details>
+<details><summary>{{QUESTION_3}}<span class="pl">+</span></summary>
+<div class="ans"><p>{{ANSWER_3}}</p></div></details>
+</div>
+
+<!-- 12. CLOSING NUMBERED SECTION: honest answer, quick answers, fit check, people also ask -->
+<h2>{{GUIDANCE_SEO_H2}}</h2>
+<div class="gcpa-numhead">
+<div class="num" style="background:#0f2a4a !important;color:#ffffff !important;">{{N}}</div>
+<h4 id="toc-guidance" style="border:none;padding:0;margin:0;">Professional Guidance and Quick Reference</h4>
+<span class="gcpa-pill blue">Guidance</span>
+</div>
+<p>{{HONEST_ANSWER_TO_TITLE_QUESTION}}</p>
+<p>Open Corporation for $35 is a department of Gondaliya CPA. {{HOW_WE_HELP}}</p>
+<p>Everything is done remotely, across all 13 provinces and territories.</p>
+
+<div class="gcpa-pillhead">
+<h4 style="border:none;padding:0;margin:0;">Quick Answers: Key Numbers &amp; Concepts at a Glance</h4>
+<span class="gcpa-pill gold">At a Glance</span>
+</div>
+<ul>
+<li><strong>{{LABEL}}:</strong> {{EXACT_VALUE}}</li>
+<li><strong>Our fee:</strong> $35 including HST, plus government fees</li>
+</ul>
+
+<div class="gcpa-pillhead">
+<h4 style="border:none;padding:0;margin:0;">Who This Is For / Not For</h4>
+<span class="gcpa-pill teal">Fit Check</span>
+</div>
+<ul>
+<li><strong>For:</strong> {{WHO_FOR}}</li>
+<li><strong>Not For:</strong> {{WHO_NOT_FOR}}</li>
+</ul>
+
+<div class="gcpa-pillhead">
+<h4 style="border:none;padding:0;margin:0;">People Also Ask</h4>
+<span class="gcpa-pill blue">Quick Answers</span>
+</div>
+<div class="gcpa-faq">
+<details><summary>{{PAA_QUESTION_1}}<span class="pl">+</span></summary>
+<div class="ans"><p>{{PAA_ANSWER_1}}</p></div></details>
+<details><summary>{{PAA_QUESTION_2}}<span class="pl">+</span></summary>
+<div class="ans"><p>{{PAA_ANSWER_2}}</p></div></details>
+<details><summary>{{PAA_QUESTION_3}}<span class="pl">+</span></summary>
+<div class="ans"><p>{{PAA_ANSWER_3}}</p></div></details>
+</div>
+
+<!-- 13. VERDICT -->
+<div class="gcpa-callout green">
+<span class="co-tag">Verdict</span>
+<p>{{VERDICT}}</p>
+</div>
+
+<!-- 14. READINESS CHECK (optional). Six yes/no questions; each FLAG message shows when the answer matches data-flag. -->
+<h5 style="color:#15355c;margin:24px 0 8px;">{{CHECK_TITLE}}</h5>
+<p>This quick self-check flags what to work through before {{ACTION}}. Please answer the six questions below.</p>
+<div id="ocf-chk">
+  <style>
+    #ocf-chk{--n:#0f2a4a;--n2:#15355c;--bl:#1c6dd0;--tl:#0c8f8f;--gd:#c9991f;--rd:#c0392b;--ink:#1d2733;--mut:#5a6b7b;--ln:#d8e0e8;--alt:#f5f8fb;
+      border:1px solid var(--ln);border-radius:14px;overflow:hidden;background:#fff;box-shadow:0 10px 30px rgba(15,42,74,.08);font-family:inherit;color:var(--ink);margin:24px 0;}
+    #ocf-chk *{box-sizing:border-box;}
+    #ocf-chk .s-head{background:linear-gradient(135deg,var(--n),var(--n2));color:#fff;padding:18px 22px;}
+    #ocf-chk .s-head h5{margin:0;font-size:19px;font-weight:700;color:#fff!important;}
+    #ocf-chk .s-head p{margin:4px 0 0;font-size:13px;color:#cfe2f8!important;}
+    #ocf-chk .s-body{padding:20px 22px;}
+    #ocf-chk .s-q{padding:13px 0;border-bottom:1px solid var(--ln);display:flex;justify-content:space-between;align-items:center;gap:14px;}
+    #ocf-chk .s-q:first-child{padding-top:2px;}
+    #ocf-chk .s-q span.s-lab{font-weight:600;font-size:14.5px;color:var(--n);}
+    #ocf-chk .s-seg{display:inline-flex;border:1px solid var(--ln);border-radius:10px;overflow:hidden;flex:0 0 auto;}
+    #ocf-chk .s-seg label{cursor:pointer;padding:8px 18px;font-size:14px;font-weight:600;color:var(--mut);background:var(--alt);transition:.15s;user-select:none;}
+    #ocf-chk .s-seg label+label{border-left:1px solid var(--ln);}
+    #ocf-chk .s-seg input{position:absolute;opacity:0;width:0;height:0;}
+    #ocf-chk .s-seg input:checked+label{background:var(--n);color:#fff!important;}
+    #ocf-chk .s-go{margin-top:18px;width:100%;border:none;border-radius:11px;padding:14px 18px;font-size:15.5px;font-weight:700;color:#fff!important;cursor:pointer;background:linear-gradient(135deg,var(--bl),var(--tl));font-family:inherit;}
+    #ocf-chk .s-go:hover{filter:brightness(1.05);}
+    #ocf-chk .s-msg{display:none;margin-top:12px;font-size:13.5px;color:var(--rd);font-weight:600;}
+    #ocf-chk .s-out{display:none;margin-top:18px;border-radius:12px;border:1px solid var(--ln);overflow:hidden;}
+    #ocf-chk .s-out .s-status{padding:14px 18px;font-weight:700;font-size:16px;color:#fff!important;background:linear-gradient(135deg,var(--n),var(--n2));}
+    #ocf-chk .s-out .s-inner{padding:16px 18px;background:var(--alt);}
+    #ocf-chk .s-row{font-size:14.5px;margin:0 0 10px;line-height:1.5;}
+    #ocf-chk .s-count{display:inline-block;background:#fff;border:1px solid var(--ln);border-radius:9px;padding:8px 14px;font-weight:700;color:var(--n);font-size:14.5px;}
+    #ocf-chk .s-list{margin:8px 0 0;padding-left:18px;}
+    #ocf-chk .s-list li{font-size:13.5px;color:var(--ink);margin:4px 0;border:none;padding:0 0 0 4px;}
+    #ocf-chk .s-list li::before{display:none;}
+    #ocf-chk .s-cta{display:inline-block;margin-top:14px;background:var(--gd);color:#fff!important;font-weight:700;font-size:14.5px;text-decoration:none;padding:11px 20px;border-radius:10px;}
+    #ocf-chk .s-note{font-size:12.5px;color:var(--mut);margin:12px 0 0;}
+    @media(max-width:560px){#ocf-chk .s-q{flex-direction:column;align-items:flex-start;gap:8px;}}
+  </style>
+  <div class="s-head" style="background:linear-gradient(135deg,#0f2a4a,#15355c) !important;">
+    <h5>{{CHECK_TITLE}}</h5>
+    <p>Six quick questions. No tax calculation, no figure quoted.</p>
+  </div>
+  <div class="s-body">
+    <div class="s-q" data-flag="1" data-msg="{{FLAG_1}}"><span class="s-lab">1. {{CHECK_Q1}}</span>
+      <span class="s-seg"><input type="radio" id="c-a-y" name="c-a" value="1"><label for="c-a-y">Yes</label><input type="radio" id="c-a-n" name="c-a" value="0"><label for="c-a-n">No</label></span></div>
+    <div class="s-q" data-flag="1" data-msg="{{FLAG_2}}"><span class="s-lab">2. {{CHECK_Q2}}</span>
+      <span class="s-seg"><input type="radio" id="c-b-y" name="c-b" value="1"><label for="c-b-y">Yes</label><input type="radio" id="c-b-n" name="c-b" value="0"><label for="c-b-n">No</label></span></div>
+    <div class="s-q" data-flag="1" data-msg="{{FLAG_3}}"><span class="s-lab">3. {{CHECK_Q3}}</span>
+      <span class="s-seg"><input type="radio" id="c-c-y" name="c-c" value="1"><label for="c-c-y">Yes</label><input type="radio" id="c-c-n" name="c-c" value="0"><label for="c-c-n">No</label></span></div>
+    <div class="s-q" data-flag="1" data-msg="{{FLAG_4}}"><span class="s-lab">4. {{CHECK_Q4}}</span>
+      <span class="s-seg"><input type="radio" id="c-d-y" name="c-d" value="1"><label for="c-d-y">Yes</label><input type="radio" id="c-d-n" name="c-d" value="0"><label for="c-d-n">No</label></span></div>
+    <div class="s-q" data-flag="1" data-msg="{{FLAG_5}}"><span class="s-lab">5. {{CHECK_Q5}}</span>
+      <span class="s-seg"><input type="radio" id="c-e-y" name="c-e" value="1"><label for="c-e-y">Yes</label><input type="radio" id="c-e-n" name="c-e" value="0"><label for="c-e-n">No</label></span></div>
+    <div class="s-q" data-flag="1" data-msg="{{FLAG_6}}"><span class="s-lab">6. {{CHECK_Q6}}</span>
+      <span class="s-seg"><input type="radio" id="c-f-y" name="c-f" value="1"><label for="c-f-y">Yes</label><input type="radio" id="c-f-n" name="c-f" value="0"><label for="c-f-n">No</label></span></div>
+    <button type="button" class="s-go" id="c-go">Check my readiness</button>
+    <div class="s-msg" id="c-msg">Please answer all six questions to continue.</div>
+    <div class="s-out" id="c-out">
+      <div class="s-status" id="c-status" style="background:linear-gradient(135deg,#0f2a4a,#15355c) !important;">Your profile</div>
+      <div class="s-inner">
+        <p class="s-row"><b>Points to work through:</b> <span class="s-count" id="c-count"></span></p>
+        <div id="c-listwrap" style="display:none;"><p class="s-row" style="margin-bottom:4px;"><b>Worth reviewing with us:</b></p><ul class="s-list" id="c-list"></ul></div>
+        <p class="s-row" id="c-clean" style="display:none;"><b>Nothing flagged.</b> The usual complications do not appear to apply to you.</p>
+        <a class="s-cta" href="https://gondaliyacpa.ca/consultation/">Book a free consultation</a>
+        <p class="s-note">This is a general prompt, not tax advice, and it does not calculate your tax. Your outcome depends on your full facts, so please book a free consultation.</p>
+      </div>
+    </div>
+  </div>
+  <script>
+  (function(){
+    var root=document.getElementById('ocf-chk');
+    root.querySelector('#c-go').addEventListener('click',function(){
+      var qs=root.querySelectorAll('.s-q'), items=[], missing=false;
+      qs.forEach(function(q){
+        var x=q.querySelector('input:checked');
+        if(!x){missing=true;return;}
+        if(x.value===q.getAttribute('data-flag')) items.push(q.getAttribute('data-msg'));
+      });
+      var msg=root.querySelector('#c-msg'), out=root.querySelector('#c-out');
+      if(missing){msg.style.display='block';out.style.display='none';return;}
+      msg.style.display='none';
+      var list=root.querySelector('#c-list'), lw=root.querySelector('#c-listwrap'), clean=root.querySelector('#c-clean');
+      root.querySelector('#c-count').textContent=items.length+' to work through';
+      list.innerHTML='';
+      if(items.length){lw.style.display='block';clean.style.display='none';items.forEach(function(t){var li=document.createElement('li');li.textContent=t;list.appendChild(li);});}
+      else{lw.style.display='none';clean.style.display='block';}
+      root.querySelector('#c-status').textContent = items.length>=3 ? 'Several points need attention' : (items.length>=1 ? 'A few points to work through' : 'A straightforward case');
+      out.style.display='block';
+    });
+  })();
+  </script>
+</div>
+
+<!-- 15. CHECKLIST DOWNLOAD + WHY CHOOSE US IMAGE (optional) -->
+<p>Want a checklist to work from? Please <a href="{{CHECKLIST_PDF_URL}}">download our free {{TOPIC}} checklist</a> before your consultation.</p>
+<figure style="margin:26px 0;"><img src="{{WHY_CHOOSE_US_IMAGE_URL}}" alt="Why Canadian business owners choose Open Corporation For $35 for {{TOPIC}}" style="width:100%;border-radius:12px;border:1px solid #d8e0e8;" /><figcaption style="font-size:13px;color:#5a6b7b;text-align:center;padding:6px;">Why business owners choose us.</figcaption></figure>
+
+<!-- 16. CLOSING CTA BOX -->
+<div class="gcpa-cta" style="background:linear-gradient(135deg,#0f2a4a 0%,#1c4a78 100%) !important;">
+<h4>{{CLOSING_CTA_HEADING}}</h4>
+<p>Incorporation from $35 including HST plus government fees, with a free CPA consultation on whether it actually helps you. Please book a free consultation.</p>
+<div class="gcpa-trust"><span>1300+ 5-star Google reviews</span><span>Xero Partner Award Winner 2026</span><span>30-Day Money-Back Guarantee</span><span>60-Day Fee Matching</span></div>
+<div class="gcpa-btnrow"><a class="solid" href="https://gondaliyacpa.ca/consultation/">Book Free Consultation</a><a href="https://opencorporationfor35.ca/address-service-100/">Address Service</a><a href="https://opencorporationfor35.ca/contact-us/">Contact Us</a></div>
+</div>
+
+<!-- 17. WHAT TO SEND US -->
+<h3 class="gcpa-closing" id="toc-closing">What to Send Us</h3>
+<p>{{WHAT_TO_SEND_US}}</p>
+
+<!-- 18. AUTHOR BOX (BOTTOM) -->
+<div class="gcpa-author">
+<div class="ava" style="background:linear-gradient(135deg,#0f2a4a,#0c8f8f) !important;color:#ffffff !important;">SG</div>
+<div class="info">
+<h5>Sharad Gondaliya, CPA (Canada &amp; USA) — Founder &amp; Managing Director, Gondaliya CPA Professional Corporation</h5>
+<div class="role">Reviewed and fact-checked by Sharad Gondaliya, CPA (Canada &amp; USA)</div>
+<p style="font-size:14.5px;color:#15355c !important;font-weight:700;margin:0 0 8px;">Open Corporation for $35 is a department of Gondaliya CPA.</p>
+<p>We incorporate and support companies in all 13 provinces and territories, handling CRA registrations, corporate tax filing, bookkeeping, GST/HST, payroll and audit support. Verify our firm on the <a href="https://www.cpaontario.ca/protecting-the-public/directories/firm/gondaliya-5sqvmj">CPA Ontario public firm directory</a>, firm registration 61330051.</p>
+<p style="font-size:13.5px;color:#15355c !important;font-weight:700;margin-top:10px;">CPA Ontario | CPA USA (Washington &amp; Montana) | Xero Partner Award Winner 2026 | 1300+ 5-star Google reviews</p>
+</div>
+</div>
+
+<!-- 19. FOOTER -->
+<p style="font-size:13px;color:#5a6b7b;border-top:1px solid #e3e9f0;padding-top:16px;margin-top:8px;"><strong>Published:</strong> {{PUBLISHED_DATE}} &nbsp;·&nbsp; <strong>Last updated:</strong> {{UPDATED_DATE}}</p>
+<p style="font-size:13px;color:#5a6b7b;"><strong>Editorial policy:</strong> Our content is prepared by our team and reviewed by Sharad Gondaliya, CPA, and we update it as {{WHAT_WE_MONITOR}} change.</p>
+<p style="font-size:13px;color:#5a6b7b;"><strong>Disclaimer:</strong> This article is educational information only and is not tax, legal, or financial advice. Tax outcomes depend entirely on your own circumstances. Please consult a CPA before acting.</p>
+<p style="font-size:14.5px;color:#15355c;font-weight:700;border-top:2px solid #e3e9f0;padding-top:16px;margin-top:20px;">Open Corporation for $35 is a department of Gondaliya CPA.</p>
+<p style="font-size:13px;color:#5a6b7b;">Operated by WealthBamboo Inc. Parent firm Gondaliya CPA Professional Corporation, CPA Ontario firm registration 61330051. Xero Partner Award Winner 2026. 1300+ five-star Google reviews. 30-day money-back guarantee and 60-day fee-matching policy. Phone 647-212-9559, email info@gondaliyacpa.ca, open 9:00 AM to 8:30 PM Monday to Sunday. Payment by Interac e-Transfer to info@gondaliyacpa.ca only, security question "Not Applicable" as auto-deposit is enabled. Card is also accepted.</p>
+</div>
+
+<!-- 20. ARTICLE + FAQ SCHEMA (FAQ text must match section 11 word for word) -->
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[{"@type":"BlogPosting","@id":"https://opencorporationfor35.ca/{{SLUG}}/#article","headline":"{{H1_TITLE}}","description":"{{META_DESCRIPTION}}","datePublished":"{{YYYY-MM-DD}}","dateModified":"{{YYYY-MM-DD}}","author":{"@type":"Person","name":"Sharad Gondaliya, CPA"},"publisher":{"@type":"Organization","name":"Open Corporation for $35","description":"Open Corporation for $35 is a department of Gondaliya CPA.","parentOrganization":{"@type":"AccountingService","name":"Gondaliya CPA Professional Corporation","identifier":"CPA Ontario Firm Registration 61330051"}},"mainEntityOfPage":"https://opencorporationfor35.ca/{{SLUG}}/"},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"{{QUESTION_1}}","acceptedAnswer":{"@type":"Answer","text":"{{ANSWER_1}}"}},{"@type":"Question","name":"{{QUESTION_2}}","acceptedAnswer":{"@type":"Answer","text":"{{ANSWER_2}}"}},{"@type":"Question","name":"{{QUESTION_3}}","acceptedAnswer":{"@type":"Answer","text":"{{ANSWER_3}}"}}]}]}
+</script>
