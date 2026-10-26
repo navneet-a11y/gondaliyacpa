@@ -5289,3 +5289,36 @@ with the form field `gifi`. Renamed to `gifiwhy`.
 41 assertions in `test_f2d.js`, all passing. Gate clear on all five. No
 duplicate ids, no internal plan or build-file references in page source,
 correct review date and dateModified.
+
+### Family 2 batch 4 publish log
+
+| ID | Slug | Bytes verified |
+|---|---|---|
+| 1270 | business-number-status-checker | 24,863 |
+| 1272 | inactive-corporation-filing-checker | 24,821 |
+| 1274 | nil-return-vs-full-return-checker | 24,873 |
+| 1276 | nil-t2-document-checklist-checker | 24,236 |
+| 1278 | due-date-weekend-holiday-shift-calculator | 25,810 |
+
+All five live, each byte-identical to its build file by zero-change probe.
+cnf_family f2 and the Rank Math fields set on each. nil_calculator count is 20
+of 150.
+
+### Open for Sharad after four F2 batches
+
+1. **The math on all twenty tools.** 6(e) names him as the reviewer and he has
+   seen none of them.
+2. **The four refused Appendix A slugs**, and the synonym clustering behind
+   them. `/dormant-corporation-obligation-checker/`,
+   `/zero-activity-corporation-checker/`, `/t2-filing-requirement-checker/` and
+   `/nil-t2-price-with-hst-calculator/` are not built, with reasons in the entry
+   above. The same pattern recurs through the remaining 130 slots, so the 150
+   total and line 1210's "unique to that tool" cannot both hold without a
+   decision.
+3. **The tax rate per province** for the price-with-HST calculator, which is
+   the single fact blocking that tool.
+4. **The Ontario annual return due date**, still blocking that 6(e) tool since
+   batch 2.
+5. **The October 30 target of 150 tools.** Twenty are live. Four batches of
+   five, each with real per-tool logic and tests, is the sustainable rate
+   observed; 130 in four days is not reachable at that standard.
