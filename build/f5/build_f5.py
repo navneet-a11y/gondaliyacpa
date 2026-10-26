@@ -1,4 +1,4 @@
-"""Family 5 content generator: question pages (first 5 of 45).
+"""Family 5 content generator: question pages (first 30 of 45).
 
 Every structural rule here comes from the plan, not from invention:
 
@@ -262,6 +262,16 @@ def build(rec, siblings):
 
     html = (CSS + hero + '\n'.join(body) + '\n<script type="application/ld+json">'
             + json.dumps(schema, ensure_ascii=False) + '</script>')
+    # Batches 1 to 3 were published with no block wrapper. Without a wp: comment
+    # has_blocks() is false and wpautop runs on the_content, which is what put a
+    # stray close tag and a paragraph around the JSON-LD on the hub pages. The
+    # rendered output of a nil_question is not readable through this connector,
+    # so it cannot be tested here; the wrapper is harmless when unnecessary and
+    # fixes the schema when it is not, so batch 4 carries it. Opted in per record
+    # rather than globally so the twenty already live stay byte-true to their
+    # build files until they are patched too.
+    if rec.get('wrap'):
+        html = '<!-- wp:html -->\n' + html + '\n<!-- /wp:html -->'
     return html, url
 
 records = []
@@ -638,6 +648,262 @@ for i, rec in enumerate(Q3):
                               'cnf_short_answer': rec['answer'],
                               'cnf_primary_keyword': rec['keyword'],
                               'cnf_last_verified_et': ISO3}))
+
+# ---------------------------------------------------------------------------
+# Batch 4, Appendix A items 21 to 30: the last "can I" question, all seven
+# "how do I" questions and the first two "when should I" questions. Appendix
+# order is the signed-off order, so it is followed rather than regrouped.
+#
+# `related` indexes into EARLIER2, the twenty already live, which keeps this
+# batch tied into the existing cluster instead of forming an island. Three
+# related entries each holds outbound at 14 against the 6(g) cap of 15:
+# home 1, three money pages, the pillar, the form, five same-batch siblings.
+#
+# Authorship note, as for batches 1 to 3. Line 1213 names the source as
+# "Sharad's answer bank, one entry per question" with "Sharad Gondaliya writes
+# and reviews". No answer bank has been supplied, so these ten are drafted to
+# the plan's shape and are pending his sign-off. Item 28 in particular states
+# what a wrong fiscal year-end needs, which is a procedural claim, so its body
+# paragraph names him as the reviewer of the route rather than asserting one.
+# ---------------------------------------------------------------------------
+EARLIER2 = Q + Q2 + Q3
+DATE4, ISO4 = 'October 26, 2026', '2026-10-26'
+
+Q4 = [
+ dict(
+  slug='can-i-catch-up-on-unfiled-t2-returns-without-an-audit',
+  h1='Can I Catch Up on Unfiled T2 Returns Without an Audit?',
+  anchor='Can I catch up without an audit',
+  keyword='catch up on unfiled t2 returns without an audit',
+  related=[4, 14, 16],
+  answer=('Catching up is an ordinary filing, not an audit. Each outstanding year is '
+          'filed as its own T2 return and assessed in the normal way. No one can say '
+          'in advance how the Canada Revenue Agency will treat a particular file, but '
+          'an unfiled year left open invites a demand to file and an arbitrary '
+          'assessment.'),
+  head=('Point', 'Position'),
+  rows=[('Returns filed per outstanding year', 'One T2 each'),
+        ('Months after each fiscal year-end to file', '6'),
+        ('Tax owing on a true nil return', '$0.00'),
+        ('What an unfiled year invites',
+         'A demand to file and an arbitrary assessment'),
+        ('Fee to file', '$300.00 plus HST per tax year')],
+  qual=True,
+  body=('An audit and an assessment are not the same thing. Every return that '
+        'arrives is assessed, which is the routine processing of the figures filed. '
+        "Filing the outstanding years replaces an arbitrary assessment with the "
+        "corporation's own numbers.")),
+ dict(
+  slug='how-do-i-file-a-nil-t2-return-in-canada',
+  h1='How Do I File a Nil T2 Return in Canada?',
+  anchor='How do I file a nil T2',
+  keyword='how do i file a nil t2 return in canada',
+  related=[7, 15, 9],
+  answer=('You file a T2 return for the tax year showing no income and no expenses, '
+          'then transmit it to the Canada Revenue Agency electronically. The return '
+          "still needs the corporation's identification, its fiscal year dates and "
+          'the GIFI schedules. A signing officer signs Form T183CORP before the '
+          'return is transmitted.'),
+  head=('Step', 'What happens'),
+  rows=[('1. Corporation details', 'Name, Business Number and fiscal year dates'),
+        ('2. Tax years', 'Pick each year that has not been filed'),
+        ('3. Payment', '$300.00 plus HST per tax year'),
+        ('4. Form T183CORP', 'Signed by a signing officer on a secure screen'),
+        ('5. Transmission',
+         'Filed electronically, CRA confirmation emailed within 3 business days')],
+  qual=True,
+  body=('A nil return is a complete T2, not a shorter form. The figures are zero, '
+        'but the identification, the fiscal year dates and the GIFI schedules are '
+        'all still required for the return to be accepted.')),
+ dict(
+  slug='how-do-i-catch-up-on-years-of-unfiled-t2-returns',
+  h1='How Do I Catch Up on Years of Unfiled T2 Returns?',
+  anchor='How do I catch up on unfiled years',
+  keyword='how do i catch up on years of unfiled t2 returns',
+  related=[1, 14, 18],
+  answer=('You file one T2 return for each outstanding tax year, oldest first, each '
+          'with its own fiscal year dates. There is no combined return that covers '
+          'several years. Filing them together in one pass is routine, and each year '
+          'is assessed separately once the Canada Revenue Agency receives it.'),
+  head=('Tax years outstanding', 'Fee at $300.00 plus HST per tax year'),
+  rows=[('2 years', '$600.00 plus HST'),
+        ('3 years', '$900.00 plus HST'),
+        ('4 years', '$1,200.00 plus HST'),
+        ('5 years', '$1,500.00 plus HST'),
+        ('6 years', '$1,800.00 plus HST')],
+  qual=True,
+  body=("Oldest first matters because each year's closing position carries into the "
+        'next return. Filing out of order means going back over earlier years, so '
+        'the oldest outstanding year is the one to start from.')),
+ dict(
+  slug='how-do-i-know-if-my-corporation-counts-as-dormant',
+  h1='How Do I Know if My Corporation Counts as Dormant?',
+  anchor='How do I know if we are dormant',
+  keyword='how do i know if my corporation counts as dormant',
+  related=[3, 13, 7],
+  answer=('A corporation is treated as dormant for a tax year when it carried on no '
+          'business, earned nothing and paid nothing out during that year. '
+          'Investment income, rental income, and dividends paid or received all '
+          'break it. A dormant corporation still files a T2 for every year until it '
+          'is formally dissolved.'),
+  head=('Activity in the tax year', 'Still nil?'),
+  rows=[('No revenue, no expenses, no bank movement', 'Yes'),
+        ('Bank account open but unused', 'Yes'),
+        ('Interest or investment income received', 'No'),
+        ('Rental income received', 'No'),
+        ('Dividends paid or received', 'No'),
+        ('Assets held but earning nothing', 'Yes')],
+  qual=True,
+  body=("Dormant is decided year by year, not once for the corporation's life. A "
+        'corporation can be nil for several years, operate for one, and be nil '
+        'again, and each year is judged on what happened inside it.')),
+ dict(
+  slug='how-do-i-find-out-which-t2-years-are-outstanding',
+  h1='How Do I Find Out Which T2 Years Are Outstanding?',
+  anchor='How do I find outstanding T2 years',
+  keyword='how do i find out which t2 years are outstanding',
+  related=[4, 18, 1],
+  answer=("Your corporate tax account in the Canada Revenue Agency's My Business "
+          'Account lists every tax year and whether a return has been assessed. '
+          'Correspondence from the Agency, including any demand to file, names the '
+          'years it is asking for. The incorporation date sets the first year that '
+          'can be outstanding.'),
+  head=('Where to look', 'What it shows'),
+  rows=[('My Business Account, corporation income tax',
+         'Each tax year and its assessment status'),
+        ('Correspondence from the Agency', 'The years named in a demand to file'),
+        ('Certificate of incorporation', 'The date the first tax year starts from'),
+        ('Fiscal year-end on record', 'Where each later tax year ends')],
+  qual=True,
+  body=('A year with no return on record is an outstanding year, whether or not the '
+        'Canada Revenue Agency has written about it. Silence from the Agency is not '
+        'confirmation that a year was filed.')),
+ dict(
+  slug='how-do-i-dissolve-a-corporation-that-has-never-filed-a-t2',
+  h1='How Do I Dissolve a Corporation That Has Never Filed a T2?',
+  anchor='How do I dissolve with nothing filed',
+  keyword='how do i dissolve a corporation that has never filed a t2',
+  related=[16, 2, 10],
+  answer=('Every outstanding T2 is filed first, including a final return to the '
+          'dissolution date, and then dissolution is applied for through the '
+          'registry the corporation was incorporated with. An open tax year blocks '
+          'a clearance certificate, so the returns are the step that has to come '
+          'before the application.'),
+  head=('Order', 'Step'),
+  rows=[('1', 'File every outstanding T2 year'),
+        ('2', 'File the final T2 to the dissolution date'),
+        ('3', 'Request a clearance certificate'),
+        ('4', 'Apply to dissolve through the incorporating registry'),
+        ('5', 'Close the corporate tax account')],
+  qual=True,
+  body=('The registry that dissolves the corporation is the one it was incorporated '
+        'with, federally through Corporations Canada or provincially. The T2 returns '
+        'go to the Canada Revenue Agency either way, and the two are separate '
+        'processes with separate timelines.')),
+ dict(
+  slug='how-do-i-close-my-corporate-tax-account-after-dissolution',
+  h1='How Do I Close My Corporate Tax Account After Dissolution?',
+  anchor='How do I close the tax account',
+  keyword='how do i close my corporate tax account after dissolution',
+  related=[10, 6, 19],
+  answer=('The corporate income tax account is closed by asking the Canada Revenue '
+          'Agency to close the Business Number programme accounts, using Form RC145. '
+          'Every return is filed first, including the final T2 to the dissolution '
+          'date. An account left open can still draw correspondence after the '
+          'corporation itself is gone.'),
+  head=('Account', 'Closed by'),
+  rows=[('Corporation income tax', 'Form RC145, after the final T2 is filed'),
+        ('GST/HST', 'Form RC145, after the final return for that account'),
+        ('Payroll', 'Form RC145, after the final remittance'),
+        ('Order of events',
+         'Returns filed, then dissolution, then the accounts closed')],
+  qual=True,
+  body=('Closing the account and dissolving the corporation are separate steps with '
+        'separate bodies. Dissolution goes through the incorporating registry, and '
+        'the Business Number accounts are closed with the Canada Revenue Agency.')),
+ dict(
+  slug='how-do-i-fix-a-nil-t2-return-i-filed-with-the-wrong-year-end',
+  h1='How Do I Fix a Nil T2 Return I Filed With the Wrong Year-End?',
+  anchor='How do I fix a wrong year-end',
+  keyword='how do i fix a nil t2 return i filed with the wrong year end',
+  related=[9, 7, 11],
+  answer=('A return filed for the wrong period is corrected by filing for the '
+          'correct period, because the fiscal year dates are what define which year '
+          'a return covers. A fiscal year-end already on record cannot be moved '
+          'without the Canada Revenue Agency agreeing to the change. Which route '
+          'applies depends on what was assessed.'),
+  head=('Situation', 'What it needs'),
+  rows=[('Return filed for a period the corporation did not have',
+         'A return for the correct period'),
+        ('Fiscal year-end recorded incorrectly',
+         'The agreement of the Canada Revenue Agency to change it'),
+        ('Figures wrong, period right', 'An adjustment to the return as filed'),
+        ('Year already assessed',
+         'The correction is handled against that assessment')],
+  qual=True,
+  body=('The fiscal year dates are what identify a T2, so a wrong year-end is not a '
+        'small error in the figures. Sharad Gondaliya, CPA, reviews which route a '
+        'particular corporation needs before anything is filed.')),
+ dict(
+  slug='when-should-i-file-my-first-t2-after-incorporating',
+  h1='When Should I File My First T2 After Incorporating?',
+  anchor='When is the first T2 due',
+  keyword='when should i file my first t2 after incorporating',
+  related=[12, 11, 7],
+  answer=('The first T2 is due within six months of the first fiscal year-end, and '
+          'the corporation chooses that year-end itself when it files. The first tax '
+          'year starts on the incorporation date and cannot run longer than 53 '
+          'weeks. A first return also carries Schedule 24.'),
+  head=('Point', 'Rule'),
+  rows=[('First tax year starts', 'The incorporation date'),
+        ('Longest a first tax year can run', '53 weeks'),
+        ('First T2 due', 'Within 6 months of the first fiscal year-end'),
+        ('Schedule required on a first return', 'Schedule 24'),
+        ('Fee to file a nil first return', '$300.00 plus HST per tax year')],
+  qual=True,
+  body=('The year-end is chosen once and then fixed, so the choice made on the first '
+        'return sets every due date after it. A first year in which nothing happened '
+        'is still a filing year.')),
+ dict(
+  slug='when-should-i-file-a-nil-t2-for-a-short-first-tax-year',
+  h1='When Should I File a Nil T2 for a Short First Tax Year?',
+  anchor='When is a short first year due',
+  keyword='when should i file a nil t2 for a short first tax year',
+  related=[12, 11, 10],
+  answer=('Within six months of the short year-end, on the same rule as a full year. '
+          'A first tax year that runs less than twelve months is still a complete '
+          'tax year and still needs its own T2. The next tax year then runs from the '
+          'day after that short year-end.'),
+  head=('Example', 'Date'),
+  rows=[('Incorporated', 'March 15, 2026'),
+        ('Short first year-end chosen', 'December 31, 2026'),
+        ('First tax year', 'March 15 to December 31, 2026'),
+        ('First T2 due', 'June 30, 2027'),
+        ('Second tax year starts', 'January 1, 2027'),
+        ('Fee to file', '$300.00 plus HST per tax year')],
+  qual=True,
+  body=('A short first year is common, because the year-end is chosen to suit the '
+        'corporation rather than to fill twelve months. The shorter period does not '
+        'reduce the fee and does not change the six-month rule.')),
+]
+
+for rec in Q4:
+    rec['date'], rec['iso'] = DATE4, ISO4
+    rec['wrap'] = True
+
+for i, rec in enumerate(Q4):
+    sibs = ([Q4[(i + k) % len(Q4)] for k in range(1, 6)]
+            + [EARLIER2[k] for k in rec['related']])
+    html, url = build(rec, sibs)
+    records.append(dict(slug=rec['slug'], title=rec.get('title', rec['h1']),
+                        meta_description=rec['answer'], url=url, content=html,
+                        answer=rec['answer'], keyword=rec['keyword'],
+                        anchor=rec['anchor'],
+                        terms={'cnf_family': ['f5']},
+                        meta={'cnf_question_text': rec['h1'],
+                              'cnf_short_answer': rec['answer'],
+                              'cnf_primary_keyword': rec['keyword'],
+                              'cnf_last_verified_et': ISO4}))
 
 out = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'f5-manifest.json')
 json.dump(records, open(out, 'w'), ensure_ascii=False, indent=1)

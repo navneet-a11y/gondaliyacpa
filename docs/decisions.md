@@ -4967,3 +4967,76 @@ above, which needs exactly the same republish.
 
 Live 19,120 to 20,085 bytes across four patches, byte-identical to the
 generator.
+
+### Family 5 batch 4 published: Appendix A items 21 to 30
+
+Ten question pages live, taking F5 from 20 to 30 of 45. Appendix order was
+followed rather than regrouped, since it is the signed-off order, so the batch
+is the last "can I", all seven "how do I" and the first two "when should I".
+
+| ID | Slug |
+|---|---|
+| 1232 | can-i-catch-up-on-unfiled-t2-returns-without-an-audit |
+| 1234 | how-do-i-file-a-nil-t2-return-in-canada |
+| 1236 | how-do-i-catch-up-on-years-of-unfiled-t2-returns |
+| 1238 | how-do-i-know-if-my-corporation-counts-as-dormant |
+| 1240 | how-do-i-find-out-which-t2-years-are-outstanding |
+| 1242 | how-do-i-dissolve-a-corporation-that-has-never-filed-a-t2 |
+| 1244 | how-do-i-close-my-corporate-tax-account-after-dissolution |
+| 1246 | how-do-i-fix-a-nil-t2-return-i-filed-with-the-wrong-year-end |
+| 1248 | when-should-i-file-my-first-t2-after-incorporating |
+| 1250 | when-should-i-file-a-nil-t2-for-a-short-first-tax-year |
+
+Gate clear on all 30. Answers run 42 to 56 words against the 40 to 60 the line
+1213 gate requires, each page has exactly one H1 and one table, 5 inbound
+sibling links against the minimum 3, and 14 outbound against the 6(g) cap of
+15. Schema is WebPage plus BreadcrumbList only, so no FAQPage on a family of
+question pages, which line 1143 requires explicitly.
+
+Three things worth recording.
+
+**The connector silently drops `meta` on create.** `wp_create_cpt_item` accepts
+only rest_base, title, content, status, slug and excerpt; its own description
+says unsupported fields are "silently ignored", and that is what happened to
+the meta passed on the first create. Nothing errored and the page published
+clean, so this would have gone unnoticed across all ten. Publishing an F5 page
+is therefore three calls, not one: create, then `wp_update_cpt_item` with meta,
+then `wp_add_post_terms` for cnf_family. Verified on 1232 by reading the meta
+back: rank_math_title, rank_math_description, rank_math_focus_keyword and the
+four cnf_ keys all present.
+
+**`cnf_family` has to be set separately too**, for the same reason. Term
+taxonomy id 18 on all ten.
+
+**Batch 4 carries the `<!-- wp:html -->` wrapper and batches 1 to 3 do not.**
+Without a wp: comment has_blocks() is false and wpautop runs on the_content,
+which is what damaged the JSON-LD on the hub pages. The rendered output of a
+nil_question cannot be read through this connector (`wp_get_cpt_item` returns
+stored content and `wp_get_post_full` rejects a CPT id), so whether the twenty
+live pages are actually affected could not be tested. The wrapper is harmless
+when unnecessary and fixes the schema when it is not, so it was added, as an
+opt-in flag per record rather than globally, which keeps the twenty already
+live byte-true to their build files. Patching them is one
+`wp_replace_in_post` each, twenty calls, not done here.
+
+Authorship, carried forward from batches 1 to 3: line 1213 names the source as
+"Sharad's answer bank, one entry per question" with Sharad Gondaliya writing
+and reviewing. No answer bank has been supplied, so these ten are drafted to
+the plan's shape and are pending his sign-off. Item 1246 states what a wrong
+fiscal year-end needs, which is procedural, so its body paragraph names him as
+the reviewer of the route rather than asserting one.
+
+Rank Math fields were drafted by hand for this batch: every SEO title is 40 to
+58 characters and every description 130 to 147, inside the 60 and 155 targets
+`rank_math_sheet.py` sets. Item 1246's question is 61 characters, so its SEO
+title is the tightened "How Do I Fix a Nil T2 Filed With the Wrong Year-End?"
+while the H1 keeps the exact-match question, which is the same treatment
+`rank_math_sheet.py` already applies to four earlier answers. Those ten rows
+are not yet added to that script.
+
+Each page was verified byte-identical to its build file with a zero-change
+`wp_replace_in_post` probe, because the shared CSS block was pasted by hand ten
+times. All ten match.
+
+F5 now stands at 30 of 45. The remaining 15 are the rest of the "when should I"
+set and all eleven "how long" and "how many years" questions.
