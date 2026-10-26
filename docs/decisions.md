@@ -5160,3 +5160,19 @@ Replaced with a plain hand-off to Gondaliya CPA Professional Corporation at
 gondaliyacpa.ca, with no figure attached. Same class of defect as the
 unfiled-years FAQ caught earlier in the project: a reusable block pasted onto
 a branch whose subject it does not match.
+
+### Family 2 batch 3 publish log
+
+| ID | Slug | Published | Bytes verified |
+|---|---|---|---|
+| 1259 | corporate-fiscal-year-end-calculator | yes | 25,778 |
+| 1261 | nil-t2-eligibility-checker | yes | 24,909 |
+| — | unfiled-years-checker | pending | 26,475 expected |
+| — | non-resident-t2-penalty-calculator | pending | 26,027 expected |
+| — | dissolution-readiness-checker | pending | 25,175 expected |
+
+Each published page is created with `wp_create_cpt_item` (rest_base
+nil_calculator), then its meta set with `wp_update_cpt_item` and its
+cnf_family term with `wp_add_post_terms`, because create accepts neither, then
+checked byte-identical to its build file with a zero-change
+`wp_replace_in_post` probe. cnf_family f2 is term taxonomy id 15.
