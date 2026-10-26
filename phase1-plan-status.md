@@ -92,14 +92,14 @@ Checked against the live WordPress site on 14 October 2026, updated 16 October 2
 | /incorporation-services-montreal/ | P2 | Built, published 10642 (old page /open-corporation-in-montreal/ to redirect) | /incorporation-services-montreal/ |
 | /incorporation-services-kitchener-waterloo/ | P2 | Built | /incorporation-services-kitchener-waterloo/ |
 | /incorporation-services-london/ | P2 | Built, published 10632 (old page /open-corporation-in-london-ontario/ to redirect) | /incorporation-services-london/ |
-| /incorporation-services-guelph/ | P3 | Built, draft 10688 | /incorporation-services-guelph/ |
-| /incorporation-services-windsor/ | P3 | Built, draft 10678 (old page /open-corporation-in-windsor/ to redirect) | /incorporation-services-windsor/ |
-| /incorporation-services-surrey/ | P3 | Built, draft 10668 (old page /open-corporation-in-surrey/ 838 to redirect) | /incorporation-services-surrey/ |
-| /incorporation-services-halifax/ | P3 | Built, draft 10673 (old page /open-corporation-in-halifax/ 842 to redirect) | /incorporation-services-halifax/ |
-| /incorporation-services-saskatoon/ | P3 | Built, draft 10683 (old page /open-corporation-in-saskatoon/ to redirect) | /incorporation-services-saskatoon/ |
+| /incorporation-services-guelph/ | P3 | Built, published 10688 | /incorporation-services-guelph/ |
+| /incorporation-services-windsor/ | P3 | Built, published 10678 (old page /open-corporation-in-windsor/ to redirect) | /incorporation-services-windsor/ |
+| /incorporation-services-surrey/ | P3 | Built, published 10668 (old page /open-corporation-in-surrey/ 838 to redirect) | /incorporation-services-surrey/ |
+| /incorporation-services-halifax/ | P3 | Built, published 10673 (old page /open-corporation-in-halifax/ 842 to redirect) | /incorporation-services-halifax/ |
+| /incorporation-services-saskatoon/ | P3 | Built, published 10683 (old page /open-corporation-in-saskatoon/ to redirect) | /incorporation-services-saskatoon/ |
 | /incorporation-services-regina/ | P3 | Built | /incorporation-services-regina/ |
-| /incorporation-services-barrie/ | P3 | Built, draft 10663 | /incorporation-services-barrie/ |
-| /incorporation-services-kingston/ | P3 | Built, draft 10693 | /incorporation-services-kingston/ |
+| /incorporation-services-barrie/ | P3 | Built, published 10663 | /incorporation-services-barrie/ |
+| /incorporation-services-kingston/ | P3 | Built, published 10693 | /incorporation-services-kingston/ |
 | /service-areas/ | P1 | Built | /service-areas/ |
 | /incorporation-services-toronto/ | P1 | Built | /incorporation-services-toronto/ |
 | /incorporation-services-mississauga/ | P1 | Built | /incorporation-services-mississauga/ |

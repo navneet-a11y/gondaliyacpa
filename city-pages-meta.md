@@ -318,30 +318,36 @@
 - Replaces old page /corporate-annual-filing/ (2015); redirect after publishing.
 - Services hub 9923: accordion, card and ItemList entry 5 repointed from /corporate-annual-filing/ to /annual-return-filing/.
 
-## /incorporation-services-barrie/ (page 10663, draft 2026-10-26, meta set by connector)
+## /incorporation-services-barrie/ (page 10663, published 2026-10-26, meta set by connector)
 - Meta title: Incorporate a Business in Barrie | $35 + Government Fees
 - Meta description: Incorporate in Barrie or Simcoe County for $35, HST included, plus the $300 Ontario fee. A CPA checks your shares, year end and any City licence first.
 
-## /incorporation-services-surrey/ (page 10668, draft 2026-10-26, meta set by connector)
+## /incorporation-services-surrey/ (page 10668, published 2026-10-26, meta set by connector)
 - Meta title: Incorporate a Business in Surrey, BC | $35 + Government Fees
 - Meta description: Incorporate in British Columbia from Surrey for $35, HST included, plus the $350 BC fee. A CPA checks your shares, registered office and City licence first.
 
-## /incorporation-services-halifax/ (page 10673, draft 2026-10-26, meta set by connector)
+## /incorporation-services-halifax/ (page 10673, published 2026-10-26, meta set by connector)
 - Meta title: Incorporate a Business in Halifax | $35 + Government Fees
 - Meta description: Incorporate in Nova Scotia from Halifax for $35, HST included, plus the $200 registry fee. A CPA checks your shares, recognized agent and year end first.
 
-## /incorporation-services-windsor/ (page 10678, draft 2026-10-26, meta set by connector)
+## /incorporation-services-windsor/ (page 10678, published 2026-10-26, meta set by connector)
 - Meta title: Incorporate a Business in Windsor | $35 + Government Fees
 - Meta description: Incorporate in Windsor or Essex County for $35, HST included, plus the $300 Ontario fee. A CPA at our Windsor office checks your shares and year end first.
 
-## /incorporation-services-saskatoon/ (page 10683, draft 2026-10-26, meta set by connector)
+## /incorporation-services-saskatoon/ (page 10683, published 2026-10-26, meta set by connector)
 - Meta title: Incorporate a Business in Saskatoon | $35 + Government Fees
 - Meta description: Incorporate in Saskatchewan from Saskatoon for $35, HST included, plus the $255 ISC fee. A CPA checks your shares, registered office and City licence first.
 
-## /incorporation-services-guelph/ (page 10688, draft 2026-10-26, meta set by connector)
+## /incorporation-services-guelph/ (page 10688, published 2026-10-26, meta set by connector)
 - Meta title: Incorporate a Business in Guelph | $35 + Government Fees
 - Meta description: Incorporate in Guelph or Wellington County for $35, HST included, plus the $300 Ontario fee. A CPA at our Guelph office checks your shares and year end first.
 
-## /incorporation-services-kingston/ (page 10693, draft 2026-10-26, meta set by connector)
+## /incorporation-services-kingston/ (page 10693, published 2026-10-26, meta set by connector)
 - Meta title: Incorporate a Business in Kingston | $35 + Government Fees
 - Meta description: Incorporate in Kingston for $35, HST included, plus the $300 Ontario fee. A CPA checks your shares, year end and any City licence before anything is filed.
+
+## Service Areas hub 9550 update (2026-10-26)
+- Linked Guelph and Windsor office-table cells and the Barrie, Surrey, Halifax, Windsor, Saskatoon, Guelph and Kingston city-list entries.
+- ItemList "City incorporation pages" extended to 26 entries.
+- Old pages to redirect: /open-corporation-in-surrey/ (838), /open-corporation-in-halifax/ (842), /open-corporation-in-windsor/, /open-corporation-in-saskatoon/.
+- Noted, not changed: hub title says "13 Ontario Offices" but the office FAQ lists 12 cities.
