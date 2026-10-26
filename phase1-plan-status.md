@@ -9,7 +9,7 @@ Checked against the live WordPress site on 14 October 2026, updated 16 October 2
 | Home | 3 | 3 | 0 | 0 |
 | Services | 26 | 25 | 1 | 0 |
 | Incorporate by Province and Federal | 13 | 13 | 0 | 0 |
-| Service Areas | 27 | 23 | 2 | 2 |
+| Service Areas | 27 | 27 | 0 | 0 |
 | Industries | 34 | 34 | 0 | 0 |
 | Pricing | 3 | 3 | 0 | 0 |
 | Compare | 14 | 14 | 0 | 0 |
@@ -17,7 +17,7 @@ Checked against the live WordPress site on 14 October 2026, updated 16 October 2
 | Blog | 13 | 4 | 0 | 9 |
 | About, Team, Reviews, Contact and Legal | 24 | 24 | 0 | 0 |
 | French Quebec | 10 | 0 | 0 | 10 |
-| **Total** | **201** | **177** | **3** | **21** |
+| **Total** | **201** | **181** | **1** | **19** |
 
 ## Home
 
@@ -92,14 +92,14 @@ Checked against the live WordPress site on 14 October 2026, updated 16 October 2
 | /incorporation-services-montreal/ | P2 | Built, published 10642 (old page /open-corporation-in-montreal/ to redirect) | /incorporation-services-montreal/ |
 | /incorporation-services-kitchener-waterloo/ | P2 | Built | /incorporation-services-kitchener-waterloo/ |
 | /incorporation-services-london/ | P2 | Built, published 10632 (old page /open-corporation-in-london-ontario/ to redirect) | /incorporation-services-london/ |
-| /incorporation-services-guelph/ | P3 | Not built |  |
-| /incorporation-services-windsor/ | P3 | Old 2025 page only, rebuild | /open-corporation-in-windsor/ |
+| /incorporation-services-guelph/ | P3 | Built, draft 10688 | /incorporation-services-guelph/ |
+| /incorporation-services-windsor/ | P3 | Built, draft 10678 (old page /open-corporation-in-windsor/ to redirect) | /incorporation-services-windsor/ |
 | /incorporation-services-surrey/ | P3 | Built, draft 10668 (old page /open-corporation-in-surrey/ 838 to redirect) | /incorporation-services-surrey/ |
 | /incorporation-services-halifax/ | P3 | Built, draft 10673 (old page /open-corporation-in-halifax/ 842 to redirect) | /incorporation-services-halifax/ |
-| /incorporation-services-saskatoon/ | P3 | Old 2025 page only, rebuild | /open-corporation-in-saskatoon/ |
+| /incorporation-services-saskatoon/ | P3 | Built, draft 10683 (old page /open-corporation-in-saskatoon/ to redirect) | /incorporation-services-saskatoon/ |
 | /incorporation-services-regina/ | P3 | Built | /incorporation-services-regina/ |
 | /incorporation-services-barrie/ | P3 | Built, draft 10663 | /incorporation-services-barrie/ |
-| /incorporation-services-kingston/ | P3 | Not built |  |
+| /incorporation-services-kingston/ | P3 | Built, draft 10693 | /incorporation-services-kingston/ |
 | /service-areas/ | P1 | Built | /service-areas/ |
 | /incorporation-services-toronto/ | P1 | Built | /incorporation-services-toronto/ |
 | /incorporation-services-mississauga/ | P1 | Built | /incorporation-services-mississauga/ |

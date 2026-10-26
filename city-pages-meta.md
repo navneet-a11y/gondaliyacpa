@@ -329,3 +329,19 @@
 ## /incorporation-services-halifax/ (page 10673, draft 2026-10-26, meta set by connector)
 - Meta title: Incorporate a Business in Halifax | $35 + Government Fees
 - Meta description: Incorporate in Nova Scotia from Halifax for $35, HST included, plus the $200 registry fee. A CPA checks your shares, recognized agent and year end first.
+
+## /incorporation-services-windsor/ (page 10678, draft 2026-10-26, meta set by connector)
+- Meta title: Incorporate a Business in Windsor | $35 + Government Fees
+- Meta description: Incorporate in Windsor or Essex County for $35, HST included, plus the $300 Ontario fee. A CPA at our Windsor office checks your shares and year end first.
+
+## /incorporation-services-saskatoon/ (page 10683, draft 2026-10-26, meta set by connector)
+- Meta title: Incorporate a Business in Saskatoon | $35 + Government Fees
+- Meta description: Incorporate in Saskatchewan from Saskatoon for $35, HST included, plus the $255 ISC fee. A CPA checks your shares, registered office and City licence first.
+
+## /incorporation-services-guelph/ (page 10688, draft 2026-10-26, meta set by connector)
+- Meta title: Incorporate a Business in Guelph | $35 + Government Fees
+- Meta description: Incorporate in Guelph or Wellington County for $35, HST included, plus the $300 Ontario fee. A CPA at our Guelph office checks your shares and year end first.
+
+## /incorporation-services-kingston/ (page 10693, draft 2026-10-26, meta set by connector)
+- Meta title: Incorporate a Business in Kingston | $35 + Government Fees
+- Meta description: Incorporate in Kingston for $35, HST included, plus the $300 Ontario fee. A CPA checks your shares, year end and any City licence before anything is filed.
