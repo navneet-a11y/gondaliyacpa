@@ -5040,3 +5040,77 @@ times. All ten match.
 
 F5 now stands at 30 of 45. The remaining 15 are the rest of the "when should I"
 set and all eleven "how long" and "how many years" questions.
+
+### Family 2 batch 3 built: tools 11 to 15
+
+Five calculators built, tested and gate-cleared, taking F2 from 10 to 15 of 150.
+
+Selection. Appendix A order, skipping the entries already live under their 6(e)
+names, which gives Appendix A items 1, 4, 5, 7 and 8:
+
+| Tool | Appendix A | Source |
+|---|---|---|
+| /tools/corporate-fiscal-year-end-calculator/ | item 5 | 6(e) slug |
+| /tools/nil-t2-eligibility-checker/ | item 1 | Appendix A |
+| /tools/unfiled-years-checker/ | item 4 | Appendix A |
+| /tools/non-resident-t2-penalty-calculator/ | item 7 | Appendix A |
+| /tools/dissolution-readiness-checker/ | item 8 | Appendix A |
+
+Appendix A item 5, /fiscal-year-end-calculator/, is the same tool as 6(e)'s
+corporate fiscal year end calculator and is built at the 6(e) slug. That is the
+eleventh Appendix A conflict and resolves as the previous ten did, because the
+nil_calculator rewrite base decides the URL. Items 2, 3 and 6 were skipped as
+already live under 6(e) names.
+
+This finishes the buildable part of 6(e). The Ontario annual return due date
+calculator is the one 6(e) tool still unbuilt, for the reason first recorded in
+build_f2b: the plan nowhere states the Ontario annual return due date, and line
+1212 reserves every jurisdiction claim for Sharad Gondaliya. It stays unbuilt
+rather than inventing the rule.
+
+Arithmetic held to what is already live. dueDate() is asserted at build time to
+be character-identical to the copy inside build_f2.T1_JS, so the deadline
+calculator and these tools cannot disagree about the same date; the build fails
+if either is edited. The 53-week limit reuses T6_JS's statement of it, a
+maximum inclusive length of 371 days with the latest permitted year-end at
+incorporation plus 370 days.
+
+`test_f2c.js`, 50 assertions, all passing. Boundaries covered: the cap at
+exactly day 100 and day 101, a first tax year at exactly 371 days,
+incorporation on a month-end, a February month-end year-end rolling to Feb 29
+in a leap year and back, and the precedence order of both decision trees.
+
+Three defects found and fixed before publishing, none of which the hard-rule
+gate would have caught.
+
+**The success class did not exist.** The result box was being set to
+`ei-out yes` in all five tools, but build_f2's stylesheet defines only
+`.ei-out.ok` and `.ei-out.no`. Every success screen would have rendered in the
+neutral grey instead of green, on all five pages.
+
+**The review date was three days stale.** render() reads TODAY and ISO from
+build_f2's globals, which still hold the batch-2 date, so the pages carried
+"Last reviewed: October 23, 2026" and dateModified 2026-10-23 on the 26th.
+Set for this batch only, inside build_f2c's main block, so build_f2 and
+build_f2b keep their own values and the ten pages already live stay byte-true
+to their build files.
+
+**Four JS variables where two were needed.** render() already emits PRICE_JS
+and DISC_JS into every tool page; the batch prelude was shadowing both under
+second names. Now only NOTNILJS and QUALJS are added.
+
+One test expectation was wrong rather than the code: addYear() on a February
+month-end returns Feb 29 in a leap year, which is correct, because a month-end
+year-end means the last day of that month and that is the same rule dueDate()
+uses. The expectation was corrected and the February series is now asserted in
+full.
+
+Cannibalisation. /nil-t2-eligibility-checker/ sits close to the live
+/tools/dormant-corporation-test/, so the two are separated explicitly on the
+page: the eligibility checker runs four service-fit gates (kind of return, year
+ended, year nil, already filed) and the dormant test asks ten activity
+questions and names the disqualifying item. Each links the other and says which
+question it answers.
+
+Still pending: Sharad Gondaliya checks the math on every tool under 6(e), and
+has not yet reviewed any of the fifteen.
