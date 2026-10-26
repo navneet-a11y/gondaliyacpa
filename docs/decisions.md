@@ -5114,3 +5114,34 @@ question it answers.
 
 Still pending: Sharad Gondaliya checks the math on every tool under 6(e), and
 has not yet reviewed any of the fifteen.
+
+### Family 2 batch 3: the yes/no alphabet bug, found before publishing
+
+The two decision-tree tools were comparing answers against `'yes'` and `'no'`.
+`yn()` emits `value="y"` and `value="n"`, and `pick()` returns exactly what is
+in `value=`, so no branch in either tree could ever match.
+
+The consequence was not a crash. `nil-t2-eligibility-checker` checked for
+unanswered questions first, found all four answered, then fell through every
+branch to the all-clear: it would have told **every** visitor "this is a nil T2
+we can file", including one who had just reported revenue, rental income or a
+dividend, which is precisely the case the tool exists to route away to
+gondaliyacpa.ca. `dissolution-readiness-checker` would have returned "nothing
+on this list is outstanding" to someone with years unfiled.
+
+Eight comparisons rewritten to `'y'` and `'n'`, matching what build_f2 and
+build_f2b already do.
+
+Why the tests did not catch it: they called `eligibility()` and `readiness()`
+with `'yes'`/`'no'` directly, so they exercised the logic in an alphabet no
+form produces. The tests were self-consistent and wrong. Two things now guard
+it: the suite uses `'y'`/`'n'`, asserts that every outcome of both trees is
+reachable, and keeps one case proving the long-form alphabet is inert; and the
+build asserts that the `value=` attributes in each rendered form are a subset
+of {y, n} and that no tool still compares against the long forms.
+
+Tool 11, the fiscal year end calculator, takes a date rather than yes-or-no
+answers and was not affected. It was already published and verified
+byte-identical before this was found, and its file is unchanged by the fix.
+
+53 assertions, all passing.

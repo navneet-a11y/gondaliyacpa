@@ -134,10 +134,10 @@ function eligibility(a){
   // asks for all four. Then the gates in the order they actually decide.
   if(a.corp===null||a.ended===null||a.activity===null||a.filed===null){
     return 'incomplete';}
-  if(a.corp==='no'){return 'notcorp';}
-  if(a.ended==='no'){return 'notdue';}
-  if(a.activity==='yes'){return 'notnil';}
-  if(a.filed==='yes'){return 'alreadyfiled';}
+  if(a.corp==='n'){return 'notcorp';}
+  if(a.ended==='n'){return 'notdue';}
+  if(a.activity==='y'){return 'notnil';}
+  if(a.filed==='y'){return 'alreadyfiled';}
   return 'eligible';
 }
 """
@@ -316,10 +316,10 @@ L15 = r"""
 function readiness(a){
   if(a.allyears===null||a.finalt2===null||a.clearance===null||a.accounts===null){
     return 'incomplete';}
-  if(a.allyears==='no'){return 'years';}
-  if(a.finalt2==='no'){return 'final';}
-  if(a.clearance==='no'){return 'clearance';}
-  if(a.accounts==='no'){return 'accounts';}
+  if(a.allyears==='n'){return 'years';}
+  if(a.finalt2==='n'){return 'final';}
+  if(a.clearance==='n'){return 'clearance';}
+  if(a.accounts==='n'){return 'accounts';}
   return 'ready';
 }
 """

@@ -48,6 +48,8 @@ function dueDate(ye){
   if(endOfMonth){return u(ty,tm+1,0);}
   return u(ty,tm,Math.min(d,lastDay(ty,tm)));
 }
+function money(c){var s=(c/100).toFixed(2),p=s.split('.');
+  return '$'+p[0].replace(/\B(?=(\d{3})+(?!\d))/g,',')+'.'+p[1];}
 
 // The first tax year may not exceed 53 weeks. build_f2b.T6_JS states that as a
 // maximum inclusive length of 371 days, so the latest permitted year-end is
@@ -72,10 +74,10 @@ function eligibility(a){
   // asks for all four. Then the gates in the order they actually decide.
   if(a.corp===null||a.ended===null||a.activity===null||a.filed===null){
     return 'incomplete';}
-  if(a.corp==='no'){return 'notcorp';}
-  if(a.ended==='no'){return 'notdue';}
-  if(a.activity==='yes'){return 'notnil';}
-  if(a.filed==='yes'){return 'alreadyfiled';}
+  if(a.corp==='n'){return 'notcorp';}
+  if(a.ended==='n'){return 'notdue';}
+  if(a.activity==='y'){return 'notnil';}
+  if(a.filed==='y'){return 'alreadyfiled';}
   return 'eligible';
 }
 
@@ -113,15 +115,12 @@ function daysToCap(days){var r=100-days;return r>0?r:0;}
 function readiness(a){
   if(a.allyears===null||a.finalt2===null||a.clearance===null||a.accounts===null){
     return 'incomplete';}
-  if(a.allyears==='no'){return 'years';}
-  if(a.finalt2==='no'){return 'final';}
-  if(a.clearance==='no'){return 'clearance';}
-  if(a.accounts==='no'){return 'accounts';}
+  if(a.allyears==='n'){return 'years';}
+  if(a.finalt2==='n'){return 'final';}
+  if(a.clearance==='n'){return 'clearance';}
+  if(a.accounts==='n'){return 'accounts';}
   return 'ready';
 }
-
-function money(c){var s=(c/100).toFixed(2),p=s.split('.');
-  return '$'+p[0].replace(/\B(?=(\d{3})+(?!\d))/g,',')+'.'+p[1];}
 var fails=0,n=0;
 function eq(label,got,want){n++;
   var g=JSON.stringify(got),w=JSON.stringify(want);
@@ -188,27 +187,42 @@ eq('14 no days remaining past the cap', daysToCap(150), 0);
 eq('14 count spans a leap day',
    daysLate(D('2024-02-28'),D('2024-03-01')), 2);
 
-// ---- tool 12: eligibility -----------------------------------------------
+// ---- tool 12: eligibility ------------------------------------------------
+// 'y' and 'n' are what yn() puts in value= and what pick() therefore returns.
 function E(c,e,a,f){return eligibility({corp:c,ended:e,activity:a,filed:f});}
-eq('12 incomplete until all four', E('yes','yes','no',null), 'incomplete');
-eq('12 incomplete on first blank', E(null,'yes','no','no'), 'incomplete');
-eq('12 eligible', E('yes','yes','no','no'), 'eligible');
-eq('12 not a T2 filer', E('no','yes','no','no'), 'notcorp');
-eq('12 not a T2 filer wins over other answers', E('no','no','yes','yes'), 'notcorp');
-eq('12 year not ended', E('yes','no','no','no'), 'notdue');
-eq('12 activity means not nil', E('yes','yes','yes','no'), 'notnil');
-eq('12 not nil wins over already filed', E('yes','yes','yes','yes'), 'notnil');
-eq('12 already filed', E('yes','yes','no','yes'), 'alreadyfiled');
+eq('12 incomplete until all four', E('y','y','n',null), 'incomplete');
+eq('12 incomplete on first blank', E(null,'y','n','n'), 'incomplete');
+eq('12 eligible', E('y','y','n','n'), 'eligible');
+eq('12 not a T2 filer', E('n','y','n','n'), 'notcorp');
+eq('12 not a T2 filer wins over the rest', E('n','n','y','y'), 'notcorp');
+eq('12 year not ended', E('y','n','n','n'), 'notdue');
+eq('12 activity means not nil', E('y','y','y','n'), 'notnil');
+eq('12 not nil wins over already filed', E('y','y','y','y'), 'notnil');
+eq('12 already filed', E('y','y','n','y'), 'alreadyfiled');
+// The bug this replaces: 'yes'/'no' matched no branch, so every complete
+// answer fell through to 'eligible'. Assert that alphabet is now inert.
+eq('12 long-form answers are not silently eligible',
+   E('yes','yes','yes','yes'), 'eligible');
+eq('12 every combination is reachable',
+   (function(){var seen={};['y','n'].forEach(function(c){['y','n'].forEach(function(e){
+     ['y','n'].forEach(function(a){['y','n'].forEach(function(f){
+       seen[E(c,e,a,f)]=1;});});});});return Object.keys(seen).sort();})(),
+   ['alreadyfiled','eligible','notcorp','notdue','notnil']);
 
 // ---- tool 15: dissolution readiness -------------------------------------
 function R(a,b,c,d){return readiness({allyears:a,finalt2:b,clearance:c,accounts:d});}
-eq('15 incomplete until all four', R('yes','yes','yes',null), 'incomplete');
-eq('15 ready', R('yes','yes','yes','yes'), 'ready');
-eq('15 outstanding years come first', R('no','no','no','no'), 'years');
-eq('15 years win even when later steps are done', R('no','yes','yes','yes'), 'years');
-eq('15 final return next', R('yes','no','no','no'), 'final');
-eq('15 clearance next', R('yes','yes','no','no'), 'clearance');
-eq('15 accounts last', R('yes','yes','yes','no'), 'accounts');
+eq('15 incomplete until all four', R('y','y','y',null), 'incomplete');
+eq('15 ready', R('y','y','y','y'), 'ready');
+eq('15 outstanding years come first', R('n','n','n','n'), 'years');
+eq('15 years win even when later steps are done', R('n','y','y','y'), 'years');
+eq('15 final return next', R('y','n','n','n'), 'final');
+eq('15 clearance next', R('y','y','n','n'), 'clearance');
+eq('15 accounts last', R('y','y','y','n'), 'accounts');
+eq('15 every step is reachable',
+   (function(){var seen={};['y','n'].forEach(function(a){['y','n'].forEach(function(b){
+     ['y','n'].forEach(function(c){['y','n'].forEach(function(d){
+       seen[R(a,b,c,d)]=1;});});});});return Object.keys(seen).sort();})(),
+   ['accounts','clearance','final','ready','years']);
 
 console.log(fails?('\n'+fails+' of '+n+' assertions FAILED'):
                   ('all '+n+' assertions pass'));

@@ -249,10 +249,10 @@ function pick(n){var e=document.querySelector('input[name="'+n+'"]:checked');
 function readiness(a){
   if(a.allyears===null||a.finalt2===null||a.clearance===null||a.accounts===null){
     return 'incomplete';}
-  if(a.allyears==='no'){return 'years';}
-  if(a.finalt2==='no'){return 'final';}
-  if(a.clearance==='no'){return 'clearance';}
-  if(a.accounts==='no'){return 'accounts';}
+  if(a.allyears==='n'){return 'years';}
+  if(a.finalt2==='n'){return 'final';}
+  if(a.clearance==='n'){return 'clearance';}
+  if(a.accounts==='n'){return 'accounts';}
   return 'ready';
 }
 

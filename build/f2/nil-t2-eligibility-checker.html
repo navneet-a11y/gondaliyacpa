@@ -245,10 +245,10 @@ function eligibility(a){
   // asks for all four. Then the gates in the order they actually decide.
   if(a.corp===null||a.ended===null||a.activity===null||a.filed===null){
     return 'incomplete';}
-  if(a.corp==='no'){return 'notcorp';}
-  if(a.ended==='no'){return 'notdue';}
-  if(a.activity==='yes'){return 'notnil';}
-  if(a.filed==='yes'){return 'alreadyfiled';}
+  if(a.corp==='n'){return 'notcorp';}
+  if(a.ended==='n'){return 'notdue';}
+  if(a.activity==='y'){return 'notnil';}
+  if(a.filed==='y'){return 'alreadyfiled';}
   return 'eligible';
 }
 
