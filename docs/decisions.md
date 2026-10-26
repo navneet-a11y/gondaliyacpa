@@ -5227,3 +5227,65 @@ visitor their year was nil, including one who had just said otherwise, and the
 tests passed throughout because they exercised the logic in an alphabet no form
 produces. A test that agrees with the code about the wrong thing is worse than
 no test, because it buys confidence.
+
+### Family 2 batch 4 built: tools 16 to 20, and four Appendix A entries refused
+
+Five more calculators, taking F2 from 15 to 20 of 150.
+
+| Tool | Appendix A |
+|---|---|
+| /tools/business-number-status-checker/ | item 12 |
+| /tools/inactive-corporation-filing-checker/ | item 13 |
+| /tools/nil-return-vs-full-return-checker/ | item 16 |
+| /tools/nil-t2-document-checklist-checker/ | item 17 |
+| /tools/due-date-weekend-holiday-shift-calculator/ | item 24, brought forward |
+
+**Four Appendix A entries were not built, and this is the first time the list
+itself is the problem rather than a slug conflict.**
+
+`/dormant-corporation-obligation-checker/`, `/zero-activity-corporation-checker/`
+and `/t2-filing-requirement-checker/` all ask what
+`/tools/dormant-corporation-test/` already answers with ten activity questions,
+or what `/tools/nil-t2-eligibility-checker/` answers with four gates. Line 1210
+requires a calculator logic block and result strings unique to that tool. Three
+further screens asking the same question in synonyms cannot meet that, and
+publishing them would be thin duplication of pages already live.
+
+`/nil-t2-price-with-hst-calculator/` needs the tax rate that applies to this
+service in each province. The plan states the price and nothing about the rate,
+the price is itself under a standing correction from including HST to plus HST,
+and whether a provincial sales tax applies to an accounting service supplied
+from Ontario is a tax determination that line 1212 reserves for Sharad
+Gondaliya. Not built, for the same reason the Ontario annual return due date
+calculator is not built.
+
+Item 24 was brought forward in their place because it is fully grounded in the
+holiday engine the deadline calculator already uses and tests.
+
+This is the twelfth Appendix A conflict and the one worth a decision rather
+than a log line. Scanning the rest of the 150, the same pattern recurs: the
+list contains several clusters of synonyms for one question. At the current
+rate that will cost roughly one slot in five. Sharad needs to decide whether
+those slots are differentiated, dropped, or refilled from elsewhere, because
+the 150 total and the "unique to that tool" gate cannot both hold otherwise.
+
+Two defects found by reading the generated pages, as last batch.
+
+**Tool 16 reported a missing income tax account as clear.** It only listed
+accounts that were open, so answering no to "is there a corporation income tax
+account on record" produced no item, and a corporation with no such account was
+told nothing was outstanding. That is the account a T2 is transmitted against.
+Rewritten to report all four accounts always, with the asymmetry made explicit:
+a missing income tax account needs action, an open GST/HST or payroll account
+needs action. Six assertions now cover it, including the exact case that was
+wrong.
+
+**Tool 18 had a ternary whose two branches were the same string.** Removed.
+
+The anchor-collision guard added last batch earned itself immediately: it
+refused the first build of tool 19, where the section anchor `gifi` collided
+with the form field `gifi`. Renamed to `gifiwhy`.
+
+41 assertions in `test_f2d.js`, all passing. Gate clear on all five. No
+duplicate ids, no internal plan or build-file references in page source,
+correct review date and dateModified.
