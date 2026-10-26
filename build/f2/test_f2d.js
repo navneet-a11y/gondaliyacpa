@@ -212,6 +212,70 @@ eq('20 every holiday in a year is named',
 eq('20 the chain always ends on a business day',
    isBusiness(nextBusiness(D('2026-12-25'))), true);
 
+// ---------------------------------------------------------------- drift guard
+// The worked-examples table in due-date-weekend-holiday-shift-calculator.html
+// is written into the page source by hand. Re-derive every row from the engine
+// here, so the table can never quietly disagree with the calculator beside it.
+(function(){
+  var fs=require('fs');
+  var h=fs.readFileSync('due-date-weekend-holiday-shift-calculator.html','utf8');
+  // dueDate() is not redefined here on purpose: pull the exact function the
+  // deadline calculator ships, so this guard tests shipped code and not a copy
+  // of it. Page 20 itself only shifts a date it is given -- the six-month step
+  // is the deadline calculator's, and the table spans both.
+  var dh=fs.readFileSync('nil-t2-deadline-calculator.html','utf8');
+  var m=dh.match(/function dueDate\(ye\)\{[\s\S]*?\n\}/);
+  eq('20 dueDate() found in page source', !!m, true);
+  if(!m){return;}
+  var callDue=function(ye){
+    return new Function('ye','u','lastDay', m[0]+'\nreturn dueDate(ye);')
+      (ye,u,lastDay);
+  };
+  var i=h.indexOf('id="worked"');
+  eq('20 worked section is present', i>=0, true);
+  if(i<0){return;}
+  var seg=h.slice(i), t0=seg.indexOf('<tbody>'), t1=seg.indexOf('</tbody>');
+  var rows=seg.slice(t0+7,t1).split('</tr>').filter(function(r){
+    return r.indexOf('<td>')>=0;});
+  eq('20 worked table has 8 rows', rows.length, 8);
+  rows.forEach(function(r){
+    var c=r.split(/<td>/).slice(1).map(function(x){
+      return x.replace(/<\/td>.*$/,'').replace(/&rsquo;/g,'’').trim();});
+    var p=c[0].replace(',','').split(' ');
+    var ye=u(+p[2], MON.indexOf(p[0]), +p[1]);
+    eq('20 worked: '+c[0]+' parses', isNaN(ye.getTime()), false);
+    var due=callDue(ye), ch=shiftChain(due);
+    eq('20 worked: '+c[0]+' due date', c[1], fmt(due));
+    eq('20 worked: '+c[0]+' weekday', c[2], DAY[due.getUTCDay()]);
+    eq('20 worked: '+c[0]+' skipped days',
+       c[3], ch.map(function(x){return x.why;}).join(', ')
+               .replace(/&rsquo;/g,'’'));
+    eq('20 worked: '+c[0]+' filing due', c[4], fmt(nextBusiness(due)));
+  });
+})();
+
+
+// The 'cases' heading states a row count in words. Assert it matches reality,
+// so adding or dropping a row cannot leave the heading lying.
+(function(){
+  var fs=require('fs');
+  var h=fs.readFileSync('nil-return-vs-full-return-checker.html','utf8');
+  var WORDS={Ten:10,Eleven:11,Twelve:12,Thirteen:13,Fourteen:14,Fifteen:15,
+             Sixteen:16,Seventeen:17,Eighteen:18,Nineteen:19,Twenty:20};
+  var m=h.match(/id="cases"[\s\S]{0,200}?<h2[^>]*>([A-Z][a-z]+) Situations/);
+  eq('18 cases heading found', !!m, true);
+  if(!m){return;}
+  var seg=h.slice(h.indexOf('id="cases"'));
+  seg=seg.slice(seg.indexOf('<tbody>'), seg.indexOf('</tbody>'));
+  var rows=seg.split('</tr>').filter(function(r){return r.indexOf('<td>')>=0;});
+  eq('18 cases heading count matches rows', WORDS[m[1]], rows.length);
+  var nil=rows.filter(function(r){return /<td>Nil<\/td>/.test(r);}).length;
+  var full=rows.filter(function(r){return /<td>Full<\/td>/.test(r);}).length;
+  eq('18 every case row is either Nil or Full', nil+full, rows.length);
+  eq('18 both outcomes appear', nil>0&&full>0, true);
+})();
+
+
 console.log(fails?('\n'+fails+' of '+n+' assertions FAILED'):
                   ('all '+n+' assertions pass'));
 if(fails){process.exit(1);}

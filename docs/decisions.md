@@ -5322,3 +5322,97 @@ of 150.
 5. **The October 30 target of 150 tools.** Twenty are live. Four batches of
    five, each with real per-tool logic and tests, is the sustainable rate
    observed; 130 in four days is not reachable at that standard.
+
+## 2026-10-26 — Reference tables added to Family 2 tools 16-20
+
+Navneet asked for more content on the calculator pages, "some table like we did
+in this for seo", with the gondaliyacpa.ca salary-vs-dividend calculator page
+pasted as the model.
+
+The structural pattern was taken: long-form sections carrying static comparison
+tables, plus `.ei-info` / `.ei-warn` callouts. No new CSS was needed — the
+13,054-byte shared prefix already defines `.ei-tbl` with the same dark navy
+header the sample uses.
+
+**Four things in the sample were deliberately not carried over**, each a hard
+rule breach on this site:
+
+| In the sample | Rule |
+|---|---|
+| `"@type":"FAQPage"` JSON-LD | 6 — no FAQPage, HowTo or review schema |
+| `EFILE #AT273` in the CTA | 5 — the EFILE number appears nowhere |
+| "Book Free Tax Planning Consultation" | 7 — no booking, no "book a call" |
+| "1450+ Five-Star Reviews" | trust-strip wording needs approval first |
+
+The sample's `$400` flat fee is the other site's pricing and was not used.
+
+### What was added
+
+One section per tool, inserted before the FAQ block:
+
+| Page | Section | Table |
+|---|---|---|
+| 1270 business-number-status-checker | `#accounts` | Each account, what it carries, what is owed while dormant, how it ends; plus where the Business Number is recorded |
+| 1272 inactive-corporation-filing-checker | `#every` | All seven filings a dormant corporation can owe, with fee and whether the fee covers it |
+| 1274 nil-return-vs-full-return-checker | `#cases` | Fourteen situations and whether each is nil or full |
+| 1276 nil-t2-document-checklist-checker | `#carries` | Every checklist item, what it is, and what puts it on the list |
+| 1278 due-date-weekend-holiday-shift-calculator | `#worked` | Eight worked year-end to filing-date examples |
+
+Pages went from ~2,100 to ~2,600-2,800 words of prose, and from 0 static tables
+to 7 across the five.
+
+### Two defects caught by reading the generated page
+
+1. **Tool 17's Fee column** said "Or close the account with Form RC145" on the
+   GST/HST and payroll rows. That is not a fee. The cells now say there is no
+   government fee to file or remit, and the RC145 alternative moved to a
+   sentence under the table.
+
+2. **Tool 18 contradicted its own calculator.** The row "A shareholder loan was
+   advanced or repaid" was marked **Full**, but `whichReturn()` on that same
+   page gates only on revenue or expenses, investment or rental income, a
+   dividend, and a disposition. A loan movement hits none of them, so the tool
+   would have answered **nil** while the table printed directly beneath it said
+   full. Corrected to nil, with the reason naming the GIFI consequence.
+
+The second one is the pattern from the previous two batches holding for a third:
+the hard-rule gate passed, all node assertions passed, and the defect was found
+only by reading the rendered prose.
+
+### Two new guards
+
+Both were checked by corrupting the page and confirming the test fails.
+
+- **Worked-examples drift guard** (`test_f2d.js`). The eight rows in `#worked`
+  are written into the page by hand. The test now re-derives every cell from the
+  engine and compares. `dueDate()` is not redefined in the test: it is pulled
+  out of `nil-t2-deadline-calculator.html` with a regex and run, so the guard
+  tests shipped code rather than a copy of it. Page 1278 itself does not ship
+  `dueDate()` — it shifts a date it is given, and the six-month step belongs to
+  the deadline calculator, so the table spans both pages.
+- **Heading-count guard.** "Fourteen Situations" is now asserted against the
+  actual row count, and every row asserted to read either Nil or Full.
+
+Test count went from 41 to 88 assertions.
+
+### Publish log
+
+Patched by single `wp_replace_in_post` insertion before the FAQ anchor, each one
+proved locally to reproduce generator output byte-for-byte before being sent:
+
+| ID | Before | After | Build file |
+|---|---|---|---|
+| 1270 | 24,863 | 27,017 | 27,017 |
+| 1272 | 24,821 | 26,783 | 26,783 |
+| 1274 | 24,873 | 27,525 | 27,525 |
+| 1276 | 24,236 | 26,005 | 26,005 |
+| 1278 | 25,810 | 28,017 | 28,017 |
+
+Zero-change probes confirmed exact byte presence of the engine-derived table
+row on 1278 and the corrected shareholder-loan row on 1274.
+
+### Not done
+
+Tools 1-15 have not had reference tables added. The same treatment applies but
+each needs its own unique table — a table repeated across twenty pages would be
+duplicate content and would work against the SEO this was asked for.
