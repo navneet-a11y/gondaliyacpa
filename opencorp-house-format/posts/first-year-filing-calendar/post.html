@@ -1,0 +1,756 @@
+<style>.gcpa-post{--navy:#0f2a4a;--navy-2:#15355c;--blue:#1c6dd0;--blue-soft:#e8f1fc;--teal:#0c8f8f;--teal-soft:#e3f4f4;--gold:#c9991f;--gold-soft:#fbf3dc;--green:#1f8a4c;--green-soft:#e6f5ec;--red:#c0392b;--red-soft:#fbeae8;--ink:#1d2733;--muted:#5a6b7b;--line:#d8e0e8;--bg:#ffffff;--bg-alt:#f5f8fb;--radius:14px;--shadow:0 6px 22px rgba(15,42,74,.08);--shadow-lg:0 14px 40px rgba(15,42,74,.14);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);line-height:1.7;font-size:17px;max-width:1080px;margin:0 auto;padding:0 18px 60px;} .gcpa-post *{box-sizing:border-box;} .gcpa-hero{background:linear-gradient(135deg,var(--navy) 0%,var(--navy-2) 60%,#1c4a78 100%);color:#fff;border-radius:20px;padding:46px 40px 42px;margin:26px 0 34px;position:relative;overflow:hidden;} .gcpa-hero::after{content:"";position:absolute;right:-80px;top:-80px;width:280px;height:280px;z-index:0;background:radial-gradient(circle,rgba(28,109,208,.45),transparent 70%);} .gcpa-post .gcpa-eyebrow{display:inline-block;font-size:13px;letter-spacing:1.4px;text-transform:uppercase;font-weight:700;color:#cfe2f8 !important;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.3);padding:7px 15px;border-radius:30px;margin-bottom:18px;} .gcpa-post .gcpa-hero h1{font-size:34px;line-height:1.25;margin:0 0 16px;font-weight:800;color:#fff !important;letter-spacing:-.3px;position:relative;z-index:2;} .gcpa-post .gcpa-hero p{font-size:18px;color:#eaf3fc !important;margin:0;max-width:760px;position:relative;z-index:2;} .gcpa-eyebrow{position:relative;z-index:2;} .gcpa-post h2{font-size:27px;font-weight:800;color:var(--navy);line-height:1.3;margin:48px 0 18px;padding-bottom:14px;border-bottom:3px solid var(--blue-soft);letter-spacing:-.2px;position:relative;} .gcpa-post h2::after{content:"";position:absolute;left:0;bottom:-3px;width:70px;height:3px;background:var(--blue);} .gcpa-post h3{font-size:22px;font-weight:800;color:var(--navy-2);margin:40px 0 14px;line-height:1.35;} .gcpa-post h4{font-size:19px;font-weight:700;color:var(--navy-2);margin:36px 0 12px;line-height:1.4;padding-left:16px;border-left:4px solid var(--teal);} .gcpa-post p{margin:0 0 16px;color:#1d2733 !important;} .gcpa-post li{color:#1d2733;} .gcpa-post a{color:var(--blue);text-decoration:none;font-weight:600;} .gcpa-post a:hover{text-decoration:underline;} .gcpa-post ul,.gcpa-post ol{margin:0 0 18px !important;padding-left:0 !important;list-style:none !important;} .gcpa-post ul{list-style-type:none !important;} .gcpa-post ul li{position:relative;padding:8px 0 8px 34px;margin:0;border-bottom:1px solid var(--line);color:var(--ink);list-style:none !important;list-style-type:none !important;} .gcpa-post ul li::marker{content:"" !important;font-size:0 !important;} .gcpa-post ul li:last-child{border-bottom:none;} .gcpa-post ul li::before{content:"";position:absolute;left:6px;top:15px;width:9px;height:9px;border-radius:2px;background:var(--teal);transform:rotate(45deg);} .gcpa-post ol{counter-reset:gcpa;} .gcpa-post ol li{position:relative;padding:10px 0 10px 44px;margin:0 0 10px;counter-increment:gcpa;list-style:none !important;list-style-type:none !important;} .gcpa-post ol li::marker{content:"" !important;font-size:0 !important;} .gcpa-post ol li::before{content:counter(gcpa);position:absolute;left:0;top:9px;width:28px;height:28px;border-radius:8px;background:var(--navy);color:#fff;font-weight:700;font-size:14px;display:flex;align-items:center;justify-content:center;} .gcpa-post .wp-block-table,.gcpa-post figure.wp-block-table{margin:22px 0 26px;overflow-x:auto;} .gcpa-post table{width:100%;border-collapse:collapse;font-size:15.5px;background:#fff;border:1px solid var(--navy);border-radius:10px;overflow:hidden;box-shadow:var(--shadow);} .gcpa-post thead th{background:var(--navy);color:#fff;text-align:left;padding:13px 15px;font-weight:700;font-size:15px;border:1px solid var(--navy-2);} .gcpa-post tbody td{padding:12px 15px;border:1px solid var(--line);vertical-align:top;color:var(--ink);} .gcpa-post tbody tr:nth-child(even){background:var(--bg-alt);} .gcpa-post tbody tr:hover{background:var(--blue-soft);} .gcpa-post tbody td:first-child{font-weight:600;color:var(--navy-2);} .gcpa-metrics{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin:30px 0 36px;clear:both;} .gcpa-metric{background:#fff;border:1px solid var(--line);border-top:4px solid var(--blue);border-radius:var(--radius);padding:22px 18px;box-shadow:var(--shadow);transition:transform .2s,box-shadow .2s;} .gcpa-metric:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg);} .gcpa-metric:nth-child(2){border-top-color:var(--teal);} .gcpa-metric:nth-child(3){border-top-color:var(--gold);} .gcpa-metric:nth-child(4){border-top-color:var(--green);} .gcpa-metric .ic{width:46px;height:46px;border-radius:11px;background:var(--blue-soft);display:flex;align-items:center;justify-content:center;margin-bottom:14px;color:var(--blue);} .gcpa-metric:nth-child(2) .ic{background:var(--teal-soft);color:var(--teal);} .gcpa-metric:nth-child(3) .ic{background:var(--gold-soft);color:var(--gold);} .gcpa-metric:nth-child(4) .ic{background:var(--green-soft);color:var(--green);} .gcpa-metric .big{font-size:22px;font-weight:800;color:var(--navy);line-height:1.2;margin-bottom:4px;} .gcpa-metric .lbl{font-size:14px;color:var(--muted);line-height:1.45;} .gcpa-numhead{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin:46px 0 8px;clear:both;} .gcpa-numhead h4{margin:0 !important;} .gcpa-numhead .gcpa-pill{margin:0 !important;} .gcpa-numhead .num{flex:0 0 auto;width:48px;height:48px;border-radius:12px;background:var(--navy);color:#fff;font-size:22px;font-weight:800;display:flex;align-items:center;justify-content:center;box-shadow:var(--shadow);} .gcpa-callout{border-radius:var(--radius);padding:20px 22px;margin:22px 0;border:1px solid var(--line);background:var(--bg-alt);position:relative;} .gcpa-callout.blue{background:var(--blue-soft);border-color:#bcd9f6;} .gcpa-callout.teal{background:var(--teal-soft);border-color:#b7e3e3;} .gcpa-callout.gold{background:var(--gold-soft);border-color:#ecd79a;} .gcpa-callout.green{background:var(--green-soft);border-color:#b6e2c6;} .gcpa-callout.red{background:var(--red-soft);border-color:#f0c4be;} .gcpa-callout .co-tag{display:inline-block;font-size:12.5px;font-weight:700;letter-spacing:.6px;text-transform:uppercase;padding:4px 11px;border-radius:20px;margin-bottom:10px;color:#fff;} .gcpa-callout.blue .co-tag{background:var(--blue);} .gcpa-callout.teal .co-tag{background:var(--teal);} .gcpa-callout.gold .co-tag{background:var(--gold);} .gcpa-callout.green .co-tag{background:var(--green);} .gcpa-callout.red .co-tag{background:var(--red);} .gcpa-callout p:last-child{margin-bottom:0;} .gcpa-cta{background:linear-gradient(135deg,var(--navy) 0%,#1c4a78 100%);color:#fff;border-radius:18px;padding:34px 32px;margin:38px 0;text-align:center;box-shadow:var(--shadow-lg);position:relative;overflow:hidden;} .gcpa-cta::before{content:"";position:absolute;left:-60px;bottom:-60px;width:220px;height:220px;background:radial-gradient(circle,rgba(12,143,143,.4),transparent 70%);} .gcpa-post .gcpa-cta h4{color:#fff !important;border:none;padding:0;margin:0 0 12px;font-size:22px;font-weight:800;position:relative;z-index:1;} .gcpa-post .gcpa-cta p{color:#eaf3fc !important;max-width:680px;margin:0 auto 22px;position:relative;z-index:1;} .gcpa-post .gcpa-cta .btn{display:inline-block;background:#fff !important;color:var(--navy) !important;font-weight:700;padding:13px 26px;border-radius:30px;margin:6px;font-size:16px;position:relative;z-index:1;transition:transform .15s;text-decoration:none !important;} .gcpa-post .gcpa-cta .btn:hover{transform:translateY(-2px);text-decoration:none !important;} .gcpa-post .gcpa-cta .btn.primary{background:var(--teal) !important;color:#fff !important;} .gcpa-btnrow{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;align-items:center;position:relative;z-index:1;} .gcpa-trust{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-bottom:22px;position:relative;z-index:1;} .gcpa-post .gcpa-trust span{font-size:13px;font-weight:700;background:rgba(255,255,255,.18) !important;border:1px solid rgba(255,255,255,.45);padding:7px 14px;border-radius:20px;color:#ffffff !important;} .gcpa-post svg{display:block;} .gcpa-pill{display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:700;padding:8px 16px;border-radius:30px;margin:10px 0 6px;line-height:1.2;} .gcpa-pill svg{width:16px;height:16px;flex:0 0 auto;} .gcpa-pill.green{background:var(--green-soft);color:var(--green);border:1px solid #b6e2c6;} .gcpa-pill.blue{background:var(--blue-soft);color:var(--blue);border:1px solid #bcd9f6;} .gcpa-pill.teal{background:var(--teal-soft);color:var(--teal);border:1px solid #b7e3e3;} .gcpa-pill.gold{background:var(--gold-soft);color:#9a7416;border:1px solid #ecd79a;} .gcpa-pill.red{background:var(--red-soft);color:var(--red);border:1px solid #f0c4be;} .gcpa-pillhead{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin:38px 0 12px;clear:both;} .gcpa-pillhead h4{margin:0 !important;} .gcpa-pillhead .gcpa-pill{margin:0 !important;} @media(max-width:560px){.gcpa-pillhead{gap:8px;}} .gcpa-toc{background:var(--bg-alt);border:1px solid var(--line);border-left:5px solid var(--blue);border-radius:var(--radius);padding:24px 26px;margin:30px 0 36px;box-shadow:var(--shadow);} .gcpa-toc h5{margin:0 0 14px;font-size:16px;font-weight:800;color:var(--navy);letter-spacing:.4px;text-transform:uppercase;display:flex;align-items:center;gap:9px;} .gcpa-toc h5 svg{width:20px;height:20px;color:var(--blue);} .gcpa-toc ol{counter-reset:toc;margin:0 !important;padding:0 !important;columns:2;column-gap:36px;list-style:none !important;} .gcpa-toc ol li{counter-increment:toc;position:relative;padding:7px 0 7px 30px;margin:0;border-bottom:1px dashed var(--line);break-inside:avoid;list-style:none !important;} .gcpa-toc ol li::before{content:counter(toc);position:absolute;left:0;top:7px;width:21px;height:21px;border-radius:6px;background:var(--blue-soft);color:var(--blue);font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;} .gcpa-toc ol li::marker{content:"" !important;font-size:0 !important;} .gcpa-toc a{color:var(--navy-2);font-weight:600;font-size:15px;} .gcpa-toc a:hover{color:var(--blue);} .gcpa-post [id^="toc-"]{scroll-margin-top:90px;} .gcpa-banner{display:block;background:linear-gradient(135deg,#0d3b66 0%,#0c7a7a 100%);color:#fff;border-radius:16px;padding:30px 32px;margin:36px 0;box-shadow:var(--shadow-lg);} .gcpa-banner .bt{font-size:20px;font-weight:800;line-height:1.45;margin:0 0 20px;max-width:760px;} .gcpa-banner .bb{display:flex;flex-wrap:wrap;gap:14px;align-items:center;} .gcpa-banner a{display:inline-block;background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.6);color:#fff !important;font-weight:700;padding:13px 24px;border-radius:30px;font-size:15px;text-decoration:none !important;} .gcpa-banner a.solid{background:#ffffff !important;color:#0d3b66 !important;border-color:#fff;} .gcpa-disclaimer{background:var(--bg-alt);border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:34px 0 10px;font-size:14.5px;color:var(--muted);line-height:1.6;} .gcpa-disclaimer strong{color:var(--navy-2);} .gcpa-byline{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin:0 0 22px;font-size:15px;} .gcpa-byline .av{width:42px;height:42px;border-radius:50%;background:var(--navy);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:16px;flex:0 0 auto;} .gcpa-byline .nm{font-weight:700;color:var(--navy-2);} .gcpa-byline .rl{color:var(--teal);font-weight:700;} .gcpa-byline .sep{color:var(--line);} .gcpa-author{display:flex;gap:18px;align-items:flex-start;background:var(--bg-alt);border:1px solid var(--line);border-left:5px solid var(--teal);border-radius:14px;padding:24px 26px;margin:34px 0 40px;} .gcpa-author .ava{width:64px;height:64px;border-radius:50%;background:linear-gradient(135deg,var(--navy),var(--teal));color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:22px;flex:0 0 auto;} .gcpa-author .info h5{margin:0 0 6px;font-size:17px;font-weight:800;color:var(--navy);line-height:1.4;} .gcpa-author .info .role{font-size:14px;color:var(--teal);font-weight:700;margin:0 0 12px;} .gcpa-author .info p{font-size:14.5px;color:var(--muted) !important;margin:0;line-height:1.65;} .gcpa-faq{margin:18px 0 26px;border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:var(--shadow);} .gcpa-faq details{border-bottom:1px solid var(--line);background:#fff;} .gcpa-faq details:last-child{border-bottom:none;} .gcpa-faq summary{list-style:none;cursor:pointer;padding:18px 22px;font-weight:700;color:var(--navy-2);font-size:16px;display:flex;justify-content:space-between;align-items:center;gap:14px;transition:background .15s;} .gcpa-faq summary::-webkit-details-marker{display:none;} .gcpa-faq summary:hover{background:var(--bg-alt);} .gcpa-faq summary .pl{flex:0 0 auto;width:24px;height:24px;border-radius:50%;background:var(--blue-soft);color:var(--blue);display:flex;align-items:center;justify-content:center;font-size:18px;font-weight:700;transition:transform .2s;} .gcpa-faq details[open] summary{background:var(--bg-alt);color:var(--navy);} .gcpa-faq details[open] summary .pl{transform:rotate(45deg);background:var(--blue);color:#fff;} .gcpa-faq .ans{padding:0 22px 20px;color:#1d2733;font-size:15.5px;line-height:1.7;} .gcpa-img-right{float:right;max-width:250px;width:32%;margin:6px 0 24px 28px;border-radius:12px;box-shadow:var(--shadow-lg);border:1px solid var(--line);} .gcpa-img-right img{display:block;width:100%;height:auto;border-radius:12px;} @media(max-width:560px){.gcpa-img-right{float:none;width:70%;max-width:260px;margin:14px auto 18px;}} .gcpa-closing{font-size:24px;font-weight:800;color:var(--navy);margin:48px 0 14px;padding-bottom:12px;border-bottom:3px solid var(--teal-soft);position:relative;} .gcpa-closing::after{content:"";position:absolute;left:0;bottom:-3px;width:70px;height:3px;background:var(--teal);} @media(max-width:560px){.gcpa-post{font-size:16px;} .gcpa-hero{padding:32px 22px;} .gcpa-hero h1{font-size:26px;} .gcpa-post h2{font-size:23px;} .gcpa-cta{padding:26px 20px;} .gcpa-banner .bb{width:100%;} .gcpa-banner .bb a{flex:1 1 auto;text-align:center;}}</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"Open Corporation for $35","alternateName":"Open Corporation For $35","url":"https://opencorporationfor35.ca/","description":"Open Corporation for $35 is a department of Gondaliya CPA.","parentOrganization":{"@type":"Organization","name":"Gondaliya CPA Professional Corporation","url":"https://gondaliyacpa.ca","identifier":"CPA Ontario Firm Registration 61330051"},"legalName":"WealthBamboo Inc.","telephone":"+1-647-212-9559","email":"info@gondaliyacpa.ca","areaServed":"CA","openingHours":"Mo-Su 09:00-20:30","award":"Xero Partner Award Winner 2026","aggregateRating":{"@type":"AggregateRating","ratingValue":"5","reviewCount":"1300"}}
+</script>
+<div class="gcpa-post">
+<div class="gcpa-hero" style="background:linear-gradient(135deg,#0f2a4a 0%,#15355c 60%,#1c4a78 100%) !important;">
+<span class="gcpa-eyebrow">T2 Filing · Balance-Due Day · Instalments · GST/HST · Payroll · 2026</span>
+<h1 style="color:#ffffff !important;position:relative;z-index:2;font-size:34px;line-height:1.25;font-weight:800;margin:0 0 14px;">First-Year Filing Calendar for a New Corporation</h1>
+<div class="gcpa-hero-sub" style="margin:0 0 18px;"><span style="color:#eaf3fc !important;font-size:18px;line-height:1.6;display:block;max-width:840px;position:relative;z-index:2;">Every date a new Canadian corporation meets in its first year, and which ones are filing dates and which are payment dates</span></div>
+<div style="position:relative;z-index:2;font-size:15px;line-height:1.5;"><span style="color:#ffffff;font-weight:bold;">By Sharad Gondaliya, CPA</span><span style="color:#9fd0d0;font-weight:bold;">  |  <a href="https://opencorporationfor35.ca/">Open Corporation For $35</a> and <a href="https://opencorporationfor35.ca/address-service-100/">Address Service</a></span></div>
+<div style="position:relative;z-index:2;font-size:14.5px;line-height:1.5;margin-top:12px;"><span style="color:#cfe2f8 !important;font-weight:600;">Open Corporation for $35 is a department of Gondaliya CPA.</span></div>
+</div>
+<h2>First Year Corporation Filing Requirements Canada: Key Deadlines, T2 Filing, and Compliance Calendar for New Corporations</h2>
+<p><strong>Open Corporation for $35 is a department of Gondaliya CPA.</strong> TLDR: The first year corporation filing requirements Canada include meeting key T2 filing deadlines and following the new corporation compliance calendar to satisfy CRA filing requirements. Open Corporation for $35 guides new businesses through annual corporate tax filing, GST/HST filing, payroll remittance deadlines, and mandatory electronic submissions to stay compliant under federal tax rules and Ontario Business Registry regulations.</p>
+<h3 id="toc-summary" style="margin-top:38px;">Quick Summary</h3>
+<p>A new corporation's first year has two kinds of deadline: filing dates and payment dates. Tax is due before the return is, and most first-year interest charges come from treating the two as the same date.</p>
+<figure class="wp-block-table">
+<table>
+<thead><tr><th>Aspect</th><th>Details</th></tr></thead>
+<tbody>
+<tr><td>T2 return</td><td>Due six months after the fiscal year-end, filed electronically.</td></tr>
+<tr><td>Balance of tax</td><td>Due two months after the year-end, or three months for a qualifying CCPC.</td></tr>
+<tr><td>Instalments</td><td>Not usually due in year one. Required once tax is over $3,000 in both the current and the previous year.</td></tr>
+<tr><td>GST/HST</td><td>Register within 29 days of passing $30,000 in taxable sales.</td></tr>
+<tr><td>Payroll and slips</td><td>Remit by the 15th of the next month. T4 and T5 slips by the last day of February.</td></tr>
+<tr><td>Ontario registry</td><td>Initial Return within 60 days of incorporating. Annual Return within six months of each year-end.</td></tr>
+</tbody>
+</table>
+</figure>
+<div class="gcpa-author">
+<div class="ava" style="background:linear-gradient(135deg,#0f2a4a,#0c8f8f) !important;color:#ffffff !important;">SG</div>
+<div class="info">
+<h5>Author: Sharad Gondaliya, CPA (Canada &amp; USA) — Founder &amp; Managing Director, Gondaliya CPA Professional Corporation, Toronto, Ontario.</h5>
+<div class="role">Reviewed and fact-checked by Sharad Gondaliya, CPA (Canada &amp; USA)</div>
+<p style="font-size:14.5px;color:#15355c !important;font-weight:700;margin:0 0 8px;">Open Corporation for $35 is a department of Gondaliya CPA.</p>
+<p>Gondaliya CPA is a Toronto-based team providing incorporation, CRA registrations, corporate tax, bookkeeping, GST/HST, and payroll for Canadian corporations. Verify our firm on the <a href="https://www.cpaontario.ca/protecting-the-public/directories/firm/gondaliya-5sqvmj">CPA Ontario public firm directory</a>, firm registration 61330051.</p>
+<p style="font-size:13.5px;color:#15355c !important;font-weight:700;margin-top:10px;">CPA Ontario | CPA USA (Washington &amp; Montana) | Xero Partner Award Winner 2026 | 1300+ 5-star Google reviews</p>
+</div>
+</div>
+<p style="font-size:14px;color:#5a6b7b;margin:-26px 0 26px;">Reading time: 34 minutes.</p>
+<div class="gcpa-toc">
+<h5>Table of Contents</h5>
+<ol>
+<li><a href="#toc-deadlines">Filing Requirements and Deadlines</a></li>
+<li><a href="#toc-t2">Filing Your First T2 Return</a></li>
+<li><a href="#toc-instalments">Tax Payments and Instalments</a></li>
+<li><a href="#toc-penalties">Penalties and Interest</a></li>
+<li><a href="#toc-calendar">Compliance Calendar and Annual Filings</a></li>
+<li><a href="#toc-resources">Resources and Support</a></li>
+<li><a href="#toc-faq">Frequently Asked Questions</a></li>
+<li><a href="#toc-insights">Additional Insights and Next Steps</a></li>
+</ol>
+</div>
+<span class="gcpa-pill green">The Numbers That Matter</span>
+<div class="gcpa-metrics">
+<div class="gcpa-metric">
+<div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></div>
+<div class="big">6 months</div>
+<div class="lbl">T2 filing deadline after year-end</div>
+</div>
+<div class="gcpa-metric">
+<div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+<div class="big">3 months</div>
+<div class="lbl">Balance-due day for a qualifying CCPC</div>
+</div>
+<div class="gcpa-metric">
+<div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+<div class="big">$3,000</div>
+<div class="lbl">Instalment threshold, tested on two years</div>
+</div>
+<div class="gcpa-metric">
+<div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="M19 9l-5 5-4-4-3 3"/></svg></div>
+<div class="big">$30,000</div>
+<div class="lbl">GST/HST small supplier threshold</div>
+</div>
+<div class="gcpa-metric">
+<div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
+<div class="big">$35</div>
+<div class="lbl">Our incorporation fee, including HST</div>
+</div>
+</div>
+<div class="gcpa-callout blue">
+<span class="co-tag">Scope &amp; Assumptions</span>
+<p>This article uses federal rules and Ontario rules for 2026, in Canadian dollars, with notes on federal, BC and Alberta registry filings. Deadlines, thresholds, payroll rates and forms change, and your own dates depend on your incorporation date and fiscal year-end. This is educational information only and not tax, legal, or financial advice. Please speak with a CPA about your own situation before filing.</p>
+</div>
+
+<h2>First Year Corporation Filing Requirements and Deadlines in Canada</h2>
+<div class="gcpa-numhead">
+<div class="num" style="background:#0f2a4a !important;color:#ffffff !important;">1</div>
+<h4 id="toc-deadlines" style="border:none;padding:0;margin:0;">Filing Requirements and Deadlines</h4>
+<span class="gcpa-pill blue">Deadlines</span>
+</div>
+<h3>Understanding Corporate Tax Filing Deadlines for New Corporations</h3>
+<p>New corporations in Canada face a few important filing deadlines to keep in mind. The main one is the T2 Corporate Tax Return. You need to file it within six months after your corporation’s fiscal year ends. For example, if your company started on January 1st, your first T2 would usually be due by June 30th that same year.</p>
+<div class="gcpa-callout red">
+<span class="co-tag">Risk Warning</span>
+<p><strong>Risk Warning:</strong> The example is wrong. The T2 is due six months after the fiscal year-end, not six months after the start date. A corporation that starts on January 1 with a December 31 year-end files its first T2 by June 30 of the following year. As written, a reader would think the return is due before the first year has ended. Please correct the example.</p>
+</div>
+<p>Here are some key dates to remember:</p>
+<ul>
+<li><strong>T2 Due Date:</strong> Six months after your fiscal year-end</li>
+<li><strong>Balance-Due Day:</strong> Usually two or three months after the fiscal year-end, depending on your corporate type</li>
+</ul>
+<p>Missing these dates can cause penalties. So, knowing when to file is really important for any new business.</p>
+<h3>Defining the Fiscal Year and Its Impact on Filing Dates</h3>
+<p>Your fiscal year-end date affects when you have to file your taxes. You can pick a fiscal year that fits your business cycle. But, the first tax year can’t be longer than 53 weeks.</p>
+<p>Here’s what that means:</p>
+<ul>
+<li>If you pick December 31 as your fiscal year-end at incorporation, then all filings follow that date.</li>
+<li>Your first tax period might be shorter or longer, but never over 53 weeks.</li>
+</ul>
+<p>Choosing the right fiscal year-end makes it easier to plan and track your finances.</p>
+<div class="gcpa-callout gold">
+<span class="co-tag">Our Actual Experience</span>
+<p>The fiscal year-end is the one first-year choice that sets every later date. We usually suggest a year-end in a quieter month for the business, so the T2 and the year-end bookkeeping do not land in the busiest season. Changing the year-end later needs CRA approval, so please decide it before the first return, not after.</p>
+</div>
+<h3>Adjustments to Deadlines for Weekends and Public Holidays</h3>
+<p>Deadlines can change if they land on weekends or public holidays. When this happens, you get until the next business day to file or pay.</p>
+<p>This applies to:</p>
+<ul>
+<li>T2 Corporate Tax Returns</li>
+<li>Payroll remittances</li>
+<li>Other payments like GST/HST</li>
+</ul>
+<p>For example, if your balance-due day falls on a Saturday, pay by Monday noon at the latest to avoid late fees.</p>
+<div class="gcpa-callout blue">
+<span class="co-tag">Worth Knowing</span>
+<p>There is no noon cut-off in the CRA rule. A payment or return due on a Saturday, Sunday or public holiday is on time if CRA receives it on the next business day. Bank processing still takes time, so paying a few business days early is the safe habit. Please consider removing the word noon.</p>
+</div>
+<p>Knowing these rules helps you avoid surprises and extra charges.</p>
+<h3>Difference Between Filing Deadlines and Payment Deadlines</h3>
+<p>It’s easy to mix up filing deadlines and payment deadlines. But they are different things.</p>
+<ul>
+<li><strong>Filing Deadline:</strong> When you must send in forms like the T2 return. For most new corporations, this is six months after their fiscal year ends.</li>
+<li><strong>Payment Deadline:</strong> When you must pay any taxes owed. This could be two or three months after your fiscal year ends, depending on whether you're a Canadian-controlled private corporation (CCPC) or not.</li>
+</ul>
+<p>Missing either deadline can lead to fines or interest charges from the CRA.</p>
+<p>Getting these dates right helps keep your business in good standing with tax authorities during its first year.</p>
+<div class="gcpa-callout teal">
+<span class="co-tag">Key Stat</span>
+<p><strong>Key Stat:</strong> For a December 31 year-end, a qualifying CCPC pays its balance of tax by March 31 and files its T2 by June 30. Interest runs from March 31, three months before the return is due.</p>
+</div>
+
+<h2>Preparing and Filing Your First Corporate Income Tax Return (T2)</h2>
+<div class="gcpa-numhead">
+<div class="num" style="background:#0f2a4a !important;color:#ffffff !important;">2</div>
+<h4 id="toc-t2" style="border:none;padding:0;margin:0;">Filing Your First T2 Return</h4>
+<span class="gcpa-pill teal">T2 Return</span>
+</div>
+<p>If you just started a corporation in Canada, you’ll need to follow certain first year corporation filing requirements Canada. Filing your T2 corporate income tax return on time matters. Missing deadlines could bring penalties. So, you should learn the new corporation filing deadlines Canada. The first year corporate tax filing Canada involves steps that meet both federal and provincial rules under the Income Tax Act (ITA).</p>
+<h3>Mandatory Electronic Filing Requirements for New Corporations</h3>
+<p>Starting in 2026, all Canadian corporations must file their T2 returns electronically. This applies no matter how big or small your company is or where it’s located. It’s part of the new corporation compliance calendar Canada.</p>
+<div class="gcpa-callout red">
+<span class="co-tag">Risk Warning</span>
+<p><strong>Risk Warning:</strong> Mandatory electronic filing did not start in 2026. It applies to tax years that start after 2023, so it already covers every new corporation. It is also not universal: insurance corporations, non-resident corporations, corporations reporting in a functional currency and a few others are exempt. The same 2026 date appears in the Resources section and in footnote 7. Please correct all three.</p>
+</div>
+<p>Electronic filing speeds up processing and cuts down errors compared to paper forms. You have to use certified software or CRA-approved service providers to submit online. If you don’t comply, you risk penalties or delays.</p>
+<p>It’s a good idea to sign up for a CRA My Business Account soon after incorporation. This lets you get notices and file securely online.</p>
+<h3>Required Forms and Publications for First-Year Filings</h3>
+<p>You’ll mainly need the T2 Corporation Income Tax Return form. Along with this, expect to complete:</p>
+<ul>
+<li><strong>Schedule 50:</strong> Info about your shareholders.</li>
+<li><strong>Schedule 24:</strong> Declaration if this is your first-time filing.</li>
+<li><strong>GIFI forms:</strong> These cover your financial statements.</li>
+<li>Provincial schedules depending on your province (like Ontario’s Schedule ON428).</li>
+</ul>
+<div class="gcpa-callout red">
+<span class="co-tag">Risk Warning</span>
+<p><strong>Risk Warning:</strong> ON428 is the Ontario schedule on a personal T1 return, not a corporate one. An Ontario corporation calculates its provincial tax on Schedule 500 of the T2. Naming a personal form in a corporate filing guide published under a CPA firm's name is worth fixing before anyone checks it.</p>
+</div>
+<p>The CRA’s T4012 – T2 Corporation – Guide helps first-year filers understand what to do. It explains how to report income, even if you had no business activity or profit in that fiscal year.</p>
+<p>Keep proper records supporting all figures reported. This follows ITA recordkeeping rules.</p>
+<h3>Step-by-Step Guide to Filing Your T2 Return</h3>
+<ol>
+<li><strong>Pick Fiscal Year-End:</strong> Choose your fiscal year-end within 53 weeks of starting your company. This sets your reporting period length.</li>
+<li><strong>Prepare Financial Statements:</strong> Make sure statements follow GAAP standards since they back up GIFI info.</li>
+<li><strong>Fill Out Schedules:</strong> Complete Schedule 50 with shareholder details, Schedule 24 if it applies, plus any provincial forms needed.</li>
+<li><strong>Calculate Taxable Income &amp; Credits:</strong> Deduct things like the small business deduction if you're eligible as a Canadian-controlled private corporation (CCPC). Check current rates for 2026.</li>
+<li><strong>Use Certified Software:</strong> File electronically before your deadline—usually six months after fiscal year-end.</li>
+<li><strong>Save Confirmation:</strong> Keep CRA receipt numbers as proof you filed on time.</li>
+<li><strong>Plan Payment If Needed:</strong> Remember payment deadlines are different; usually due two or three months after fiscal year-end (see next section).</li>
+</ol>
+<p>Following these steps helps you meet new corporation filing deadlines Canada smoothly and avoid problems with the CRA.</p>
+<div class="gcpa-callout blue">
+<span class="co-tag">Worth Knowing</span>
+<p>For a Canadian private corporation, the GAAP that applies is usually Accounting Standards for Private Enterprises (ASPE). A first-year corporation with no audit requirement normally has its statements prepared under a compilation engagement, which is enough to support the GIFI schedules.</p>
+</div>
+<h3>Eligibility and Procedures for Extended Payment Deadlines</h3>
+<p>Your T2 return is due six months after your fiscal year ends but when you pay taxes depends on your situation:</p>
+<ul>
+<li>If you're a CCPC with less than $500,000 active business limit and owe under $3,000 in taxes annually, payment is due three months after fiscal year-end.</li>
+<li>Other corporations must pay within two months of fiscal year-end.</li>
+</ul>
+<div class="gcpa-callout red">
+<span class="co-tag">Risk Warning</span>
+<p><strong>Risk Warning:</strong> The $3,000 figure does not belong in the first bullet. It is the instalment threshold, not a condition for the three-month balance-due day. A corporation gets three months if it is a CCPC throughout the year, claims the small business deduction for the year or the previous year, and its taxable income for the previous year, with associated corporations, was not more than the $500,000 business limit. A CCPC owing $40,000 can still have three months. Please correct the first bullet.</p>
+</div>
+<p>If you can’t pay by the balance-due day, interest starts adding up right away. It’s best to talk to a CPA quickly who can check your case. Just know that getting extra time to pay isn’t automatic; you have to arrange it directly with CRA.</p>
+<p>This difference between filing and payment deadlines means keeping an updated new corporation compliance calendar Canada is key during your first tax cycle.</p>
+<div class="gcpa-banner" style="background:linear-gradient(135deg,#0d3b66 0%,#0c7a7a 100%) !important;">
+<div class="bt">Not sure which of these dates apply to your corporation? Please book a free consultation and we will go through your first-year dates with you.</div>
+<div class="bb"><a class="solid" href="https://gondaliyacpa.ca/consultation/">Book Free Consultation</a><a href="mailto:info@gondaliyacpa.ca">info@gondaliyacpa.ca</a><a href="tel:+16472129559">647-212-9559</a></div>
+</div>
+
+<h2>Corporate Income Tax Payments and Instalment Obligations</h2>
+<div class="gcpa-numhead">
+<div class="num" style="background:#0f2a4a !important;color:#ffffff !important;">3</div>
+<h4 id="toc-instalments" style="border:none;padding:0;margin:0;">Tax Payments and Instalments</h4>
+<span class="gcpa-pill gold">Payments</span>
+</div>
+<p>If your corporation just started in Canada, you need to know about corporate income tax payments. The first year corporation filing requirements Canada include sending in the T2 return and following instalment payment rules set by the CRA. These instalments help make sure you pay your taxes on time and avoid extra charges.</p>
+<h3>Determining Instalment Requirements for New Corporations</h3>
+<p>Corporations must pay instalments if their net tax owed goes over $3,000 in the current or previous year[1]. This rule is key when setting up a new corporation compliance calendar Canada because it adds more deadlines beyond just filing returns.</p>
+<div class="gcpa-callout red">
+<span class="co-tag">Risk Warning</span>
+<p><strong>Risk Warning:</strong> The test is the other way round. A corporation does not have to pay instalments if its tax for either the current year or the previous year is $3,000 or less. Instalments are required only when both years are over $3,000. That is why the next paragraph is right that most new corporations start in their second year. Please change "the current or previous year" to "both the current and the previous year".</p>
+</div>
+<p>Usually, new corporations start paying instalments in their second tax year unless special cases apply. But sometimes, businesses might have to pay earlier. This depends on projected income or related companies’ past tax amounts.</p>
+<p>The CRA checks your business number (BN) and past filings to decide. So, keep a close eye on new corporation filing deadlines Canada to avoid missing any instalment notices.</p>
+<ul>
+<li>Instalments start if net tax payable &gt; $3,000 per year.</li>
+<li>First-year payments usually don’t happen but can vary.</li>
+<li>Compliance calendars add quarterly or monthly payment dates.</li>
+</ul>
+<figure class="wp-block-table">
+<table>
+<thead><tr><th>Factor</th><th>Threshold/Rule</th><th>Source</th></tr></thead>
+<tbody>
+<tr><td>Instalment requirement trigger</td><td>Net tax payable &gt; $3,000/year</td><td>CRA - Instalments</td></tr>
+<tr><td>First-year obligation</td><td>Usually none; depends on facts</td><td>CRA guidance</td></tr>
+<tr><td>Compliance calendar impact</td><td>Adds quarterly/monthly payment dates</td><td>CRA / ITA</td></tr>
+</tbody>
+</table>
+</figure>
+<div class="gcpa-callout gold">
+<span class="co-tag">House Style</span>
+<p>This table has a Source column, and the post uses three different reference styles. House style is to state numbers without sources in the body. The wording is kept here unchanged. Please decide whether to keep the Source column and the reference lists, and use one style across the post.</p>
+</div>
+<h3>Instalment Due Dates and Payment Schedules</h3>
+<p>The balance-due day for paying corporate income tax is different from the T2 return deadline.</p>
+<ul>
+<li>Most corporations pay two months after fiscal year-end.</li>
+<li>If your company is a Canadian-controlled private corporation (CCPC), you have three months instead[2].</li>
+</ul>
+<p>For example, if your fiscal year ends December 31 and you’re a CCPC, you have until March 31 to pay without penalties.</p>
+<p>Once instalments kick in, they’re due monthly or quarterly depending on what CRA assigns. Knowing this helps you build a solid new corporation compliance calendar Canada that fits both filings and payments.</p>
+<div class="gcpa-callout blue">
+<span class="co-tag">Worth Knowing</span>
+<p>CRA does not assign quarterly instalments. A small CCPC can choose them if it meets CRA's conditions: taxable income and taxable capital within the limits, the small business deduction claimed, and a clean filing and payment record for the past 12 months. Every other corporation pays monthly, on the last day of each month.</p>
+</div>
+<figure class="wp-block-table">
+<table>
+<thead><tr><th>Fiscal Year-End Month</th><th>Balance-Due Day (Non-CCPC)</th><th>Balance-Due Day (CCPC)</th></tr></thead>
+<tbody>
+<tr><td>December</td><td>February 28</td><td>March 31</td></tr>
+<tr><td>June</td><td>August 31</td><td>September 30</td></tr>
+</tbody>
+</table>
+</figure>
+<p>Dates shown are examples; always check official info yearly.</p>
+<h3>Calculating Instalment Amounts and Avoiding Underpayments</h3>
+<p>If your estimated corporate tax over $3,000, instalments may start in your second tax year[1]. You can pick from three ways to figure out how much to pay:</p>
+<ul>
+<li><strong>No-calculation:</strong> Pay equal parts based on last year's taxes.</li>
+<li><strong>Prior-year amount:</strong> Use actual taxes paid last year.</li>
+<li><strong>Current-year estimate:</strong> Guess this year’s taxes but watch carefully.</li>
+</ul>
+<div class="gcpa-callout blue">
+<span class="co-tag">Worth Knowing</span>
+<p>CRA's three options differ slightly from the list above. Option 1 is one-twelfth of this year's estimated tax each month. Option 2 is one-twelfth of last year's tax. Option 3 bases the first two payments on the year before last and the other ten on last year. The no-calculation option is the amount on CRA's instalment reminders, which uses option 3. Please align the labels.</p>
+</div>
+<p>Paying less than needed can lead to interest even if you catch up later[3]. To avoid this:</p>
+<ul>
+<li>Check taxable income often.</li>
+<li>Change instalments as estimates change.</li>
+<li>Get advice before finalizing amounts—things like small business deductions or dividends affect your tax owed.</li>
+</ul>
+<p>Following these tips matches first year corporate tax filing Canada rules while helping cash flow stay smooth inside your new corporation compliance calendar Canada plan.</p>
+<h3>How to Make Payments on Time to Avoid Interest and Penalties</h3>
+<p>Paying late costs you interest every day after the balance-due day until full payment arrives[4]. You might also face penalties for repeated late payments. There’s no legal extension for these dates.</p>
+<p>To keep on track:</p>
+<ul>
+<li>Mark T2 filing dates and balance-due days separately.</li>
+<li>Set reminders before each instalment deadline.</li>
+<li>Pay online via “My Business Account” at CRA for fast processing.</li>
+</ul>
+<p>Missing these can add costs that hurt your startup funds when you least want it.</p>
+<p>Sharad Gondaliya, CPA (Canada &amp; USA), has over 10 years helping many Canadian business owners.</p>
+<div class="gcpa-disclaimer">
+<p><strong>References</strong></p>
+<p>CRA - Corporation Income Tax Installments</p>
+<p>Income Tax Act - Section regarding CCPC Payment Deadlines</p>
+<p>CRA - Interest Charges On Late Payments</p>
+<p>CRA - Penalties For Late Filing And Payment</p>
+</div>
+
+<h2>Penalties, Interest, and Consequences of Late Filing or Payment</h2>
+<div class="gcpa-numhead">
+<div class="num" style="background:#0f2a4a !important;color:#ffffff !important;">4</div>
+<h4 id="toc-penalties" style="border:none;padding:0;margin:0;">Penalties and Interest</h4>
+<span class="gcpa-pill red">Penalties</span>
+</div>
+<p>When a corporation starts in Canada, it has to follow the first year corporation filing requirements Canada and meet new corporation filing deadlines Canada. Missing these can cause penalties and interest to pile up. This means the tax bill grows bigger. Knowing what happens if you file or pay late helps owners avoid these extra costs.</p>
+<h3>Interest Charges on Late or Insufficient Instalment Payments</h3>
+<p>Interest builds up every day on any unpaid tax after the due date. Usually, that date is two months after your fiscal year ends for most Canadian-controlled private corporations (CCPCs). For other corporations, it’s three months.<sup>1</sup> If instalments are required but paid late or not enough during the year, interest applies from each instalment due date until you pay in full.</p>
+<div class="gcpa-callout red">
+<span class="co-tag">Risk Warning</span>
+<p><strong>Risk Warning:</strong> The two periods are reversed. A qualifying CCPC has three months and other corporations have two. Section 1 and the table in section 3 say it correctly, so the page contradicts itself on the date that starts the interest. Please swap them.</p>
+</div>
+<p>The CRA sets the interest rates based on government bond yields. They update these rates every quarter.<sup>2</sup> A new corporation following its first year corporate tax filing Canada rules faces growing interest charges if instalments are missed according to the new corporation compliance calendar Canada.</p>
+<div class="gcpa-callout blue">
+<span class="co-tag">Worth Knowing</span>
+<p>The prescribed rate is set each quarter from the 90-day Treasury bill rate, not bond yields. CRA adds 4 percentage points on overdue tax, and the interest compounds daily.</p>
+</div>
+<p>Corporations should track their income closely. Guessing too low on instalments may cause surprise interest charges even when annual taxes get paid by the deadline.</p>
+<h3>Penalty Rates for Late Filing and Repeated Non-Compliance</h3>
+<p>Filing a T2 return late triggers immediate penalties under federal law. This happens even if you don’t owe taxes.<sup>3</sup> The basic penalty is 5% of unpaid tax at the deadline plus 1% per month after that, up to 12 months. If you’ve been penalized before within three years, penalties go higher: 10% upfront plus 2% monthly up to 20 months.</p>
+<div class="gcpa-callout red">
+<span class="co-tag">Risk Warning</span>
+<p><strong>Risk Warning:</strong> The penalty is a percentage of the tax unpaid at the filing deadline, so a corporation that owes nothing then has no late-filing penalty under this rule. The sentence saying it applies even with no tax owing contradicts the formula right after it. The rule is subsection 162(1), and the repeat penalty is 162(2), not 162(7) as footnote 3 says. File on time anyway, because a late return holds up refunds and can cost the dividend refund and SR&amp;ED claims.</p>
+</div>
+<p>New businesses must watch new corporation filing deadlines Canada closely because one missed deadline can start these penalties. These fines add up on top of any interest owing.</p>
+<p>If a company keeps missing deadlines, CRA may audit more often. That can make future filings harder and relief programs less accessible. Keep in mind that registry filings like Ontario annual returns have different deadlines than CRA filings.<sup>4</sup></p>
+<h3>Options for Reducing or Avoiding Instalment Interest and Penalties</h3>
+<p>There’s no automatic forgiveness for late payments or filings. Still, some actions can reduce penalties:</p>
+<ul>
+<li>Contact CRA quickly if you see a payment problem; voluntary disclosure programs might cut penalties but need expert advice.</li>
+<li>Estimate income carefully early in your first year corporate tax filing Canada so instalments don’t fall short.</li>
+<li>File electronically; this prevents delays that could count as late.</li>
+<li>Work with a CPA to check your numbers and rules before sending forms—especially with tricky items like shareholder loans.</li>
+</ul>
+<div class="gcpa-callout blue">
+<span class="co-tag">Worth Knowing</span>
+<p>Relief from penalties and interest for a missed deadline is requested under the taxpayer relief provisions on Form RC4288, for reasons such as illness or a CRA error, within 10 calendar years. The Voluntary Disclosures Program is for correcting unreported income or errors, not for late filing on its own. Please consider naming the relief form here.</p>
+</div>
+<p>Following a clear new corporation compliance calendar Canada helps keep payments aligned with rules. That way, you avoid mixing CRA deadlines with registry ones.<sup>5</sup></p>
+<h3>Impact of Missing Corporate Tax Return Deadlines on New Corporations</h3>
+<p>Not filing your T2 return on time—usually six months after fiscal year-end—can cause more than fines:</p>
+<ul>
+<li>You might lose credits like small business deductions.</li>
+<li>The chance of an audit goes up for coming years.</li>
+<li>Getting clearance certificates for selling assets could take longer.</li>
+<li>Provincial tax rates might get complicated, especially in places like Ontario.</li>
+</ul>
+<div class="gcpa-callout red">
+<span class="co-tag">Risk Warning</span>
+<p><strong>Risk Warning:</strong> A late T2 does not by itself cost the small business deduction. A late return can cost the dividend refund, if the T2 is filed more than three years late, and SR&amp;ED credits, if the claim misses its deadline of 18 months after the year-end. Any refund also waits until the return is assessed. Please replace the first bullet.</p>
+</div>
+<p>Filing is important even if your return shows zero balance under first year corporation filing requirements Canada.<sup>6</sup> Also remember, ignoring either CRA or registry filings risks your good standing across jurisdictions such as Ontario Business Registry rules.</p>
+<div class="gcpa-disclaimer">
+<p><strong>Notes</strong></p>
+<p><sup>1</sup> Income Tax Act (ITA), Section 159(1); CRA - Balance Due Day</p>
+<p><sup>2</sup> CRA Prescribed Interest Rates</p>
+<p><sup>3</sup> ITA Section 162(7); CRA Late-Filing Penalties</p>
+<p><sup>4</sup> Ontario Business Registry Annual Return Requirements; Corporations Canada Annual Return Rules</p>
+<p><sup>5</sup> CRA Voluntary Disclosures Program</p>
+<p><sup>6</sup> ITA Section 150(1); Schedule 24 First-Time Filer Requirement</p>
+</div>
+<div class="gcpa-callout red">
+<span class="co-tag">Risk Warning</span>
+<p><strong>Risk Warning:</strong> Note 1 cites section 159(1), which deals with a taxpayer's legal representatives. The balance-due day is set in paragraph 157(1)(b) and defined in subsection 248(1). Note 3 should cite 162(1) and 162(2). Please correct both citations.</p>
+</div>
+<div class="gcpa-cta" style="background:linear-gradient(135deg,#0f2a4a 0%,#1c4a78 100%) !important;">
+<h4>Get your first-year dates right from day one</h4>
+<p>Incorporation from $35 including HST plus government fees, with a free CPA consultation on your fiscal year-end and first-year deadlines. Please book a free consultation.</p>
+<div class="gcpa-trust"><span>1300+ 5-star Google reviews</span><span>Xero Partner Award Winner 2026</span><span>CPA Ontario Firm 61330051</span><span>30-Day Money-Back Guarantee</span></div>
+<div class="gcpa-btnrow"><a class="solid" href="https://gondaliyacpa.ca/consultation/">Book Free Consultation</a><a href="https://opencorporationfor35.ca/">Open Corporation For $35</a><a href="tel:+16472129559">647-212-9559</a></div>
+</div>
+
+<h2>Compliance Calendar and Additional Annual Filing Requirements for New Corporations</h2>
+<div class="gcpa-numhead">
+<div class="num" style="background:#0f2a4a !important;color:#ffffff !important;">5</div>
+<h4 id="toc-calendar" style="border:none;padding:0;margin:0;">Compliance Calendar and Annual Filings</h4>
+<span class="gcpa-pill green">Calendar</span>
+</div>
+<p>Starting a new corporation in Canada means you have several deadlines to keep track of. Beyond just taxes, you’ll need to register and file for GST/HST if you pass certain sales limits. You also have payroll remittance dates and must file T4 and T5 slips by set times. Plus, don’t forget annual returns with federal or provincial corporate registries. Knowing these dates helps you handle your first year corporation filing requirements Canada without headaches.</p>
+<h3>GST/HST Filing Deadlines and Thresholds for New Businesses</h3>
+<p>Your new corporation needs to watch its sales closely. If your taxable supplies go over $30,000 in any four consecutive calendar quarters, you must register for GST/HST. That’s the small supplier threshold. You have 29 days from passing that limit to sign up with the CRA.</p>
+<div class="gcpa-callout blue">
+<span class="co-tag">Worth Knowing</span>
+<p>There is a second test. If taxable sales go over $30,000 in a single calendar quarter, you must charge GST/HST on the sale that takes you over, and register within 29 days of that sale.</p>
+</div>
+<p>Once registered, how often you file depends on how much you make annually:</p>
+<ul>
+<li>If annual taxable supplies are $1,500,000 or less: file once a year.</li>
+<li>Between $1,500,001 and $6 million: file quarterly.</li>
+<li>Over $6 million: file every month.</li>
+</ul>
+<p>Here’s a quick look:</p>
+<figure class="wp-block-table">
+<table>
+<thead><tr><th>Annual Taxable Supplies</th><th>Filing Frequency</th><th>Return Due Date</th><th>Authority</th></tr></thead>
+<tbody>
+<tr><td>≤ $1,500,000</td><td>Annual</td><td>Within 3 months after fiscal year-end</td><td>CRA</td></tr>
+<tr><td>&gt; $1,500,000 ≤ $6M</td><td>Quarterly</td><td>Last month of quarter + 1 month</td><td>CRA</td></tr>
+<tr><td>&gt; $6M</td><td>Monthly</td><td>Following month end</td><td>CRA</td></tr>
+</tbody>
+</table>
+</figure>
+<p>You can register before reaching the threshold if it suits your business. But it’s smart to check with a CPA first.</p>
+<p><strong>Key point:</strong> Surpassing $30,000 in taxable sales within four quarters means you must register for GST/HST within 29 days<sup>1</sup>.</p>
+<h3>Payroll Remittance Deadlines and Reporting Obligations (T4/T5 Slips)</h3>
+<p>Once you pay your first employee or dividends that need reporting slips, payroll rules kick in fast.</p>
+<ul>
+<li><strong>Payroll Remittances:</strong> You must send source deductions like CPP and EI premiums monthly by the 15th of the next month if you’re a regular remitter. Some remitters pay more often.</li>
+<li><strong>T4 Slips:</strong> These report employee earnings and are due by February 28 each year.</li>
+<li><strong>T5 Slips:</strong> Needed if dividends or investment income were paid; also due by February 28.</li>
+</ul>
+<p>Missing deadlines can lead to penalties from CRA. In Ontario, WSIB coverage starts when hiring employees unless exempted<sup>3</sup>. Employer Health Tax applies once payroll hits certain limits.</p>
+<div class="gcpa-callout blue">
+<span class="co-tag">Worth Knowing</span>
+<p>An owner-manager who controls more than 40% of the voting shares is not insurable for EI, so no EI is deducted from their own salary. CPP still applies. T4 and T5 slips are due on the last day of February, which is February 29 in a leap year.</p>
+</div>
+<div class="gcpa-pillhead"><h4 style="border:none;padding:0;margin:0;">Pay Types and Slips</h4><span class="gcpa-pill teal">Salary or Dividends</span></div>
+<figure class="wp-block-table">
+<table>
+<thead><tr><th>Factor</th><th>Salary</th><th>Dividends</th><th>Notes</th></tr></thead>
+<tbody>
+<tr><td>Payroll Account Needed?</td><td>Yes</td><td>No</td><td>For source deduction remits</td></tr>
+<tr><td>Slip Type</td><td>T4</td><td>T5</td><td></td></tr>
+</tbody>
+</table>
+</figure>
+<p><strong>Note:</strong> Make payroll remittances right after your first paycheck to avoid fines or interest charges.</p>
+<h3>Annual Return Filing Requirements under the CBCA and Ontario Business Registry</h3>
+<p>If your corporation is federal (CBCA), you must file an annual return within 60 days after your incorporation anniversary date. Ontario corporations get six months from their anniversary date through the Ontario Business Registry<sup>4</sup><sup>5</sup>.</p>
+<div class="gcpa-callout red">
+<span class="co-tag">Risk Warning</span>
+<p><strong>Risk Warning:</strong> The Ontario Annual Return is due within six months after the end of each tax year, not six months from the anniversary date. Ontario corporations also file an Initial Return within 60 days of incorporating, which this post does not mention and which is the filing new owners miss most often. The same anniversary wording appears in the comparison table, the Ontario section and the FAQ. Please correct all four.</p>
+</div>
+<p>Annual returns update info like directors’ names and office addresses.</p>
+<p>Changes like appointing new directors or altering share structure require filings too — usually within fifteen days of the change.</p>
+<div class="gcpa-callout red">
+<span class="co-tag">Risk Warning</span>
+<p><strong>Risk Warning:</strong> The 15-day notice applies to changes of directors and registered office. A change to the share structure is different: it needs a special resolution and articles of amendment, and it takes effect only when the articles are filed. Please separate the two.</p>
+</div>
+<p>Here’s how filings compare across provinces:</p>
+<figure class="wp-block-table">
+<table>
+<thead><tr><th>Requirement</th><th>Ontario Corporation</th><th>BC Corporation</th><th>Alberta Corporation</th><th>Federal Corporation (CBCA)</th></tr></thead>
+<tbody>
+<tr><td>Annual Return Window</td><td>Within six months post-anniversary</td><td>Within two months post-anniversary</td><td>Within three months post-anniversary</td><td>Within sixty days post-incorporation anniversary</td></tr>
+<tr><td>Filed With</td><td>Ontario Business Registry</td><td>BC Corporate Registry</td><td>Alberta Corporate Registry</td><td>Corporations Canada/ISED</td></tr>
+<tr><td>Notice of Change Deadline</td><td>Fifteen days from change occurrence</td><td>Fifteen days from change occurrence</td><td>Fifteen days from change occurrence</td><td>Fifteen days from change occurrence</td></tr>
+</tbody>
+</table>
+</figure>
+<div class="gcpa-callout blue">
+<span class="co-tag">Worth Knowing</span>
+<p>The BC and federal windows in the table match the registries. Please confirm the Alberta window with the Alberta Corporate Registry before publishing, because it is the only column we have not checked.</p>
+</div>
+<p><strong>Bottom line:</strong> Stay on top of both registry deadlines and tax filings to keep your corporation in good standing and avoid fines.</p>
+<h3>Corporate Filing Obligations Specific to Ontario Corporations</h3>
+<p>Ontario companies face some extra steps:</p>
+<ul>
+<li>File an annual return via the Ontario Business Registry anytime from day two after your anniversary date up to six months later.</li>
+<li>Pay Employer Health Tax once payroll passes exemption limits.</li>
+<li>Register for WSIB coverage when hiring workers unless specifically exempted.</li>
+</ul>
+<p>The EHT rate changes depending on total wages paid yearly<sup>6</sup>. These requirements sit alongside federal payroll deductions but are handled by different agencies — Ministry of Finance manages EHT; CRA handles deductions like CPP/EI.</p>
+<div class="gcpa-callout teal">
+<span class="co-tag">Key Stat</span>
+<p><strong>Key Stat:</strong> An eligible Ontario employer pays no Employer Health Tax on its first $1,000,000 of Ontario payroll. Above that, the rate runs from 0.98% to 1.95%, depending on total payroll.</p>
+</div>
+<h3>Resources and Support for Managing Corporate Filing Obligations</h3>
+<p>Handling first year corporation filing requirements Canada means juggling multiple agencies. You’ll deal with CRA for taxes and payroll accounts; provincial business registries; WSIB; Ministry of Finance offices — all with different forms and timelines.</p>
+<p>Many business owners find keeping a tailored new corporation compliance calendar Canada handy. It tracks key dates linked to incorporation anniversaries and fiscal year ends.</p>
+<p>Professional help is useful for understanding tricky parts like when instalment payments start (over $3,000 owed), mandatory electronic filing since 2026,<sup>7</sup> updated CPP rates,<sup>2</sup> and other key factors that affect timing or amounts due.</p>
+<p>It pays to check in with CPAs who know Canadian corporate tax rules before locking down your compliance schedule or making voluntary elections.<sup>8</sup></p>
+<h3>Encouragement to Plan Ahead Using a New Corporation Compliance Calendar</h3>
+<p>Setting up a detailed new corporation compliance calendar Canada early on helps avoid missed deadlines that bring penalties or risk losing good standing status with regulators.</p>
+<p>Track every important date—from GST/HST registration deadlines after hitting small supplier threshold; monthly payroll remittances starting soon after your first salary payment; T4/T5 slip submissions each February; through annual returns windows mid-year—and add reminders for registry updates during the year.<sup>9</sup></p>
+<p>Open Corporation for $35 offers affordable online tools plus expert advice built around these needs — helping businesses stay compliant during their critical first year.</p>
+<div class="gcpa-callout gold">
+<span class="co-tag">House Style</span>
+<p>This paragraph, the Resources section and the deliverables under Additional Insights describe online tools, a tailored compliance calendar, filing reminders and electronic filing support. Please confirm each one is a service we offer today, with a final annual fee, before publishing.</p>
+</div>
+<div class="gcpa-disclaimer">
+<p><strong>Notes</strong></p>
+<p><sup>1</sup> Canada Revenue Agency - Registering For GST/HST</p>
+<p><sup>2</sup> Department of Finance Canada Budget Measures Update – CPP Contribution Rates &amp; YMPE/YAMPE Changes Effective January 2026</p>
+<p><sup>3</sup> Workplace Safety &amp; Insurance Board – Employer Registration Guidelines <a href="https://www.wsib.ca/" rel="nofollow noopener" target="_blank">https://www.wsib.ca/</a></p>
+<p><sup>4</sup> Ontario Ministry Of Government And Consumer Services - Annual Returns <a href="https://ontario.ca/page/corporate-filings" rel="nofollow noopener" target="_blank">https://ontario.ca/page/corporate-filings</a></p>
+<p><sup>5</sup> Corporations Canada - Federal Annual Returns <a href="https://corporationscanada.ic.gc.ca/eic/site/cd-dgc.nsf/eng/h_cs04954.html" rel="nofollow noopener" target="_blank">https://corporationscanada.ic.gc.ca/eic/site/cd-dgc.nsf/eng/h_cs04954.html</a></p>
+<p><sup>6</sup> Ontario Employer Health Tax Rate Schedule <a href="https://fin.gov.on.ca/en/tax/eht/rates.html" rel="nofollow noopener" target="_blank">https://fin.gov.on.ca/en/tax/eht/rates.html</a></p>
+<p><sup>7</sup> CRA Notice – Mandatory Electronic T2 Filings Starting In Fiscal Year Ending After December 31, 2025</p>
+<p><sup>8</sup> Chartered Professional Accountants Of Canada Guidance On First-Year Incorporation Compliance Responsibilities</p>
+<p><sup>9</sup> Open Corporation For $35 Client Resource Library — Sample First-Year Compliance Calendars</p>
+</div>
+<figure style="margin:22px 0;"><img src="https://opencorporationfor35.ca/wp-content/uploads/2026/10/first-year-calendar-timeline.png" alt="Compliance timeline showing key dates including GST/HST registration deadline at surpassing small supplier threshold; monthly payroll remittance due dates starting next month after first salary payment; February deadline for submitting T4/T5 slips; June window opening for Ontario annual return submission." style="width:100%;border-radius:12px;border:1px solid #d8e0e8;" /><figcaption style="font-size:13px;color:#5a6b7b;text-align:center;padding:6px;">Typical compliance milestones mapped out across one-year span following incorporation illustrating interconnected federal-provincial regulatory timelines.</figcaption></figure>
+<div class="gcpa-callout gold">
+<span class="co-tag">House Style</span>
+<p>Notes 7, 8 and 9 need checking before publishing. Note 7 gives the wrong start date for electronic filing. Note 8 does not name a specific CPA Canada publication. Note 9 points to a client resource library, so please confirm it exists and link it, or the note should come out. Please also check the four links above still open, because government pages move.</p>
+</div>
+
+<h2>Resources and Support for First-Year Corporate Filers</h2>
+<div class="gcpa-numhead">
+<div class="num" style="background:#0f2a4a !important;color:#ffffff !important;">6</div>
+<h4 id="toc-resources" style="border:none;padding:0;margin:0;">Resources and Support</h4>
+<span class="gcpa-pill blue">Resources</span>
+</div>
+<p>Starting a new corporation means dealing with a lot of rules. You have to know about CRA program accounts, the GST/HST small supplier threshold, and corporate tax instalments. These rules help you meet your first year corporation filing requirements Canada without trouble.</p>
+<p>Here’s what you should keep in mind:</p>
+<ul>
+<li>CRA program accounts for different tax types</li>
+<li>GST/HST small supplier threshold rules</li>
+<li>When you need to start paying corporate tax instalments</li>
+</ul>
+<p>Keeping these points clear makes filing easier and less confusing.</p>
+<h3>Official CRA Resources, Forms, and Publications</h3>
+<p>The Income Tax Act (ITA), Excise Tax Act (ETA), and Canada Revenue Agency (CRA) guides explain your tax duties. The ITA tells you when to file T2 returns and pay instalments. The ETA sets GST/HST rules, including the $30,000 small supplier threshold.</p>
+<p>You’ll want to use forms like Schedule 24 for first-time filers or Form RC1 to register your business number. These forms help you follow the law right.</p>
+<div class="gcpa-callout blue">
+<span class="co-tag">Worth Knowing</span>
+<p>A corporation incorporated in Ontario, BC or federally usually receives its business number automatically when it is incorporated. Form RC1 is then used to add program accounts such as GST/HST (RT) and payroll (RP), which can also be opened online.</p>
+</div>
+<p>Don’t forget provincial info! The Ontario Ministry of Finance covers Ontario’s corporate taxes and employer health taxes. New laws say that from 2026, T2 returns must be filed electronically — that’s another thing to prepare for.</p>
+<p>Important points here:</p>
+<ul>
+<li>ITA defines T2 deadlines and payments</li>
+<li>ETA explains GST/HST registration limits</li>
+<li>Use Schedule 24 and RC1 forms from CRA</li>
+<li>Ontario Ministry of Finance covers provincial taxes</li>
+<li>Electronic filing of T2 starts in 2026</li>
+</ul>
+<h3>Expert Guidance and Online Tools for Corporate Tax Filings</h3>
+<p>Starting in 2026, corporations have to file T2 returns online unless the CRA says otherwise. This can be tricky if you’re new.</p>
+<p>Open Corporation for $35 is part of Gondaliya CPA. They offer services designed just for new businesses across Canada. They can help set up a new corporation compliance calendar Canada so you don’t miss any deadlines—from day one through your annual filings.</p>
+<p>There are also online tools that:</p>
+<ul>
+<li>Calculate your instalment payments using your income estimates</li>
+<li>Help manage payroll remittances with updated CPP contribution rates starting in 2026</li>
+</ul>
+<p>These tools make managing your filings smoother and less stressful.</p>
+<h3>Key Contacts for Assistance and Compliance Questions</h3>
+<p>If you have questions about federal filings or program accounts like RP (payroll) or RT (GST/HST), contact the Canada Revenue Agency directly at Canada.ca. They give clear info about your fiscal year-end deadlines.</p>
+<p>For questions on Ontario taxes such as Employer Health Tax or WSIB registrations, check with the Ontario Ministry of Finance (ontario.ca/finance) or WSIB.</p>
+<p>Open Corporation for $35, part of Gondaliya CPA, helps new owners handle their first-year paperwork smoothly. You can call them at 647-212-9559 or email info@gondaliyacpa.ca Monday through Sunday from 9:00 AM to 8:30 PM for personal support.</p>
+
+<h2>Frequently Asked Questions</h2>
+<div class="gcpa-numhead">
+<div class="num" style="background:#0f2a4a !important;color:#ffffff !important;">7</div>
+<h4 id="toc-faq" style="border:none;padding:0;margin:0;">First-Year Filing FAQ</h4>
+<span class="gcpa-pill teal">FAQ</span>
+</div>
+<div class="gcpa-faq" id="faq-main">
+<details><summary>What are the Key Numbers at a Glance for new corporations in Canada?<span class="pl">+</span></summary>
+<div class="ans"><p>New corporations must note key numbers such as the $30,000 GST/HST small supplier threshold and the $3,000 corporate tax instalment threshold. These trigger registration and payment obligations.</p></div></details>
+<details><summary>When is the Payroll Remittance Due Date for new Ontario corporations?<span class="pl">+</span></summary>
+<div class="ans"><p>Payroll remittances are generally due monthly by the 15th of the following month after salary payments start. Some businesses may require more frequent remittance.</p></div></details>
+<details><summary>What is the T4/T5 Slip Filing Deadline?<span class="pl">+</span></summary>
+<div class="ans"><p>T4 and T5 slips must be filed with CRA by February 28 each year. These report employee earnings and dividend payments, respectively.</p></div></details>
+<details><summary>How does the CBCA Annual Return Filing Window work?<span class="pl">+</span></summary>
+<div class="ans"><p>Federal corporations under CBCA must file annual returns within 60 days after their incorporation anniversary date to maintain good standing.</p></div></details>
+<details><summary>What is the Ontario Annual Return Filing Window?<span class="pl">+</span></summary>
+<div class="ans"><p>Ontario corporations have up to six months after their anniversary date to file an annual return via the Ontario Business Registry.</p></div></details>
+<details><summary>How do first-year compliance calendars differ across industries?<span class="pl">+</span></summary>
+<div class="ans"><p>First-year calendars vary by industry due to differences in revenue cycles, payroll needs, and regulatory filings. Professional advice ensures calendar accuracy.</p></div></details>
+<details><summary>What Does First-Year Compliance Cost and What Drives the Fee?<span class="pl">+</span></summary>
+<div class="ans"><p>Costs vary depending on business size, complexity of filings, and need for professional services. More complex filings typically increase fees.</p></div></details>
+<details><summary>What Are the Risks, Compliance Issues and Prevention Controls?<span class="pl">+</span></summary>
+<div class="ans"><p>Risks include missed deadlines, penalties, interest charges, and audits. Controls involve tracking deadlines closely, using CPA guidance, and electronic filing compliance.</p></div></details>
+</div>
+<div class="gcpa-callout red">
+<span class="co-tag">Risk Warning</span>
+<p><strong>Risk Warning:</strong> The Ontario answer repeats the anniversary error. The Annual Return is due within six months after each fiscal year-end. The cost answer gives no figure, so a reader who opens it learns nothing. House style is to quote an exact annual fee before tax once it is final. Because the FAQ schema copies these answers word for word, please fix them in both places.</p>
+</div>
+
+<h2>Additional Insights for New Corporation Compliance</h2>
+<div class="gcpa-numhead">
+<div class="num" style="background:#0f2a4a !important;color:#ffffff !important;">8</div>
+<h4 id="toc-insights" style="border:none;padding:0;margin:0;">Additional Insights and Next Steps</h4>
+<span class="gcpa-pill gold">Insights</span>
+</div>
+<ul>
+<li><strong>DIY vs Tax Software vs CPA — Tradeoffs:</strong> DIY saves costs but risks errors; software aids accuracy but requires user knowledge; CPAs provide expert guidance ensuring full compliance.</li>
+<li><strong>How Do We Build Your First-Year Filing Calendar?</strong> We analyze your incorporation date, fiscal year-end, industry specifics, and regulatory obligations to create a customized calendar.</li>
+<li><strong>What Deliverables Do You Get?</strong> Clients receive a tailored compliance calendar, filing reminders, electronic filing support, and access to expert consultation from Open Corporation for $35.</li>
+<li><strong>What Should You Prepare Before Your First Year-End?</strong> Gather financial statements, shareholder info, payroll records, GST/HST reports, and confirm your fiscal year-end date.</li>
+<li><strong>How Should You Choose a CPA for First-Year Corporate Compliance?</strong> Look for experience with new corporations in Canada, transparent pricing like Open Corporation for $35 offers, and clear communication.</li>
+<li><strong>Why Trust Open Corporation for $35 (a department of Gondaliya CPA)?</strong> We specialize in affordable compliance solutions for startups with expert CPA support across all Canadian provinces including Ontario.</li>
+</ul>
+<div class="gcpa-pillhead">
+<h4 style="border:none;padding:0;margin:0;">Quick Answers: Key Dates at a Glance</h4>
+<span class="gcpa-pill gold">At a Glance</span>
+</div>
+<ul>
+<li><strong>T2 filing deadline:</strong> Six months after the fiscal year-end</li>
+<li><strong>Balance-due day, qualifying CCPC:</strong> Three months after the year-end</li>
+<li><strong>Balance-due day, other corporations:</strong> Two months after the year-end</li>
+<li><strong>Instalments:</strong> Once tax is over $3,000 in both the current and the previous year</li>
+<li><strong>GST/HST registration:</strong> Within 29 days of passing $30,000</li>
+<li><strong>Payroll remittance, regular remitter:</strong> 15th of the following month</li>
+<li><strong>T4 and T5 slips:</strong> Last day of February</li>
+<li><strong>Ontario Initial Return:</strong> Within 60 days of incorporating</li>
+<li><strong>Ontario Annual Return:</strong> Within six months of each fiscal year-end</li>
+<li><strong>Federal annual return:</strong> Within 60 days of the anniversary date</li>
+<li><strong>Our fee:</strong> $35 including HST, plus government fees</li>
+</ul>
+<div class="gcpa-pillhead">
+<h4 style="border:none;padding:0;margin:0;">Who This Is For / Not For</h4>
+<span class="gcpa-pill teal">Fit Check</span>
+</div>
+<ul>
+<li><strong>For:</strong> Corporations in their first 12 months, sole proprietors about to incorporate, and owners who have not yet chosen a fiscal year-end.</li>
+<li><strong>Not For:</strong> Corporations past their second year-end with a settled calendar, and non-resident or insurance corporations, which follow different filing rules.</li>
+</ul>
+<div class="gcpa-pillhead">
+<h4 style="border:none;padding:0;margin:0;">People Also Ask</h4>
+<span class="gcpa-pill blue">Quick Answers</span>
+</div>
+<div class="gcpa-faq">
+<details><summary>How early should I start planning my first-year corporate tax filings?<span class="pl">+</span></summary>
+<div class="ans"><p>At incorporation. The fiscal year-end, the Ontario Initial Return, GST/HST registration and the payroll account are all settled in the first weeks, and each one fixes later dates.</p></div></details>
+<details><summary>What happens if I miss my Ontario Annual Return Filing Window?<span class="pl">+</span></summary>
+<div class="ans"><p>There is no government fee for the annual return, but the registry record falls out of date, and a corporation that keeps failing to file can eventually be dissolved. Please file it as soon as you notice it was missed.</p></div></details>
+<details><summary>Can I file my T2 return without professional help?<span class="pl">+</span></summary>
+<div class="ans"><p>Yes, using CRA-certified software. The return is still yours to get right, including the GIFI financial statements and schedules, and errors in a first return carry into the opening balances of the next one.</p></div></details>
+<details><summary>When will I know if I need to pay corporate tax instalments?<span class="pl">+</span></summary>
+<div class="ans"><p>Generally not in the first year. Instalments start once tax is over $3,000 in both the current and the previous year, so most new corporations first owe them in year two. CRA usually starts sending reminders once it has a prior-year return.</p></div></details>
+</div>
+<div class="gcpa-pillhead">
+<h4 style="border:none;padding:0;margin:0;">Glossary</h4>
+<span class="gcpa-pill gold">Terms</span>
+</div>
+<ul>
+<li><strong>CBCA:</strong> Canada Business Corporations Act governing federal corporations.</li>
+<li><strong>CCPC:</strong> Canadian-controlled private corporation eligible for special tax rates.</li>
+<li><strong>GST/HST Small Supplier Threshold:</strong> $30,000 annual taxable supplies triggering mandatory registration.</li>
+<li><strong>Instalments:</strong> Periodic corporate tax payments based on estimated taxes owed.</li>
+</ul>
+<div class="gcpa-pillhead">
+<h4 style="border:none;padding:0;margin:0;">Next Steps</h4>
+<span class="gcpa-pill green">Get Started</span>
+</div>
+<p>Contact Open Corporation for $35 to get started on your new corporation compliance calendar today. Early planning avoids penalties and streamlines your first year of business in Canada.</p>
+<div class="gcpa-callout green">
+<span class="co-tag">Verdict</span>
+<p>Put two dates in the calendar before anything else: the balance-due day and the T2 filing date, three months apart for a qualifying CCPC. Then add the Ontario Initial Return at 60 days, GST/HST registration as sales approach $30,000, and payroll from the first salary. Everything else in year one follows from the fiscal year-end you choose.</p>
+</div>
+<h5 style="color:#15355c;margin:24px 0 8px;">First-Year Filing Readiness Check</h5>
+<p>This quick self-check flags what to work through before your first year-end. Please answer the six questions below.</p>
+<div id="ocf-chk">
+  <style>
+    #ocf-chk{--n:#0f2a4a;--n2:#15355c;--bl:#1c6dd0;--tl:#0c8f8f;--gd:#c9991f;--rd:#c0392b;--ink:#1d2733;--mut:#5a6b7b;--ln:#d8e0e8;--alt:#f5f8fb;
+      border:1px solid var(--ln);border-radius:14px;overflow:hidden;background:#fff;box-shadow:0 10px 30px rgba(15,42,74,.08);font-family:inherit;color:var(--ink);margin:24px 0;}
+    #ocf-chk *{box-sizing:border-box;}
+    #ocf-chk .s-head{background:linear-gradient(135deg,var(--n),var(--n2));color:#fff;padding:18px 22px;}
+    #ocf-chk .s-head h5{margin:0;font-size:19px;font-weight:700;color:#fff!important;}
+    #ocf-chk .s-head p{margin:4px 0 0;font-size:13px;color:#cfe2f8!important;}
+    #ocf-chk .s-body{padding:20px 22px;}
+    #ocf-chk .s-q{padding:13px 0;border-bottom:1px solid var(--ln);display:flex;justify-content:space-between;align-items:center;gap:14px;}
+    #ocf-chk .s-q:first-child{padding-top:2px;}
+    #ocf-chk .s-q span.s-lab{font-weight:600;font-size:14.5px;color:var(--n);}
+    #ocf-chk .s-seg{display:inline-flex;border:1px solid var(--ln);border-radius:10px;overflow:hidden;flex:0 0 auto;}
+    #ocf-chk .s-seg label{cursor:pointer;padding:8px 18px;font-size:14px;font-weight:600;color:var(--mut);background:var(--alt);transition:.15s;user-select:none;}
+    #ocf-chk .s-seg label+label{border-left:1px solid var(--ln);}
+    #ocf-chk .s-seg input{position:absolute;opacity:0;width:0;height:0;}
+    #ocf-chk .s-seg input:checked+label{background:var(--n);color:#fff!important;}
+    #ocf-chk .s-go{margin-top:18px;width:100%;border:none;border-radius:11px;padding:14px 18px;font-size:15.5px;font-weight:700;color:#fff!important;cursor:pointer;background:linear-gradient(135deg,var(--bl),var(--tl));font-family:inherit;}
+    #ocf-chk .s-go:hover{filter:brightness(1.05);}
+    #ocf-chk .s-msg{display:none;margin-top:12px;font-size:13.5px;color:var(--rd);font-weight:600;}
+    #ocf-chk .s-out{display:none;margin-top:18px;border-radius:12px;border:1px solid var(--ln);overflow:hidden;}
+    #ocf-chk .s-out .s-status{padding:14px 18px;font-weight:700;font-size:16px;color:#fff!important;background:linear-gradient(135deg,var(--n),var(--n2));}
+    #ocf-chk .s-out .s-inner{padding:16px 18px;background:var(--alt);}
+    #ocf-chk .s-row{font-size:14.5px;margin:0 0 10px;line-height:1.5;}
+    #ocf-chk .s-count{display:inline-block;background:#fff;border:1px solid var(--ln);border-radius:9px;padding:8px 14px;font-weight:700;color:var(--n);font-size:14.5px;}
+    #ocf-chk .s-list{margin:8px 0 0;padding-left:18px;}
+    #ocf-chk .s-list li{font-size:13.5px;color:var(--ink);margin:4px 0;border:none;padding:0 0 0 4px;}
+    #ocf-chk .s-list li::before{display:none;}
+    #ocf-chk .s-cta{display:inline-block;margin-top:14px;background:var(--gd);color:#fff!important;font-weight:700;font-size:14.5px;text-decoration:none;padding:11px 20px;border-radius:10px;}
+    #ocf-chk .s-note{font-size:12.5px;color:var(--mut);margin:12px 0 0;}
+    @media(max-width:560px){#ocf-chk .s-q{flex-direction:column;align-items:flex-start;gap:8px;}}
+  </style>
+  <div class="s-head" style="background:linear-gradient(135deg,#0f2a4a,#15355c) !important;">
+    <h5>First-Year Filing Readiness Check</h5>
+    <p>Six quick questions. No tax calculation, no figure quoted.</p>
+  </div>
+  <div class="s-body">
+    <div class="s-q" data-flag="0" data-msg="Choosing a fiscal year-end, which fixes your T2 and balance-due dates and needs CRA approval to change later"><span class="s-lab">1. Have you chosen and recorded your fiscal year-end?</span>
+      <span class="s-seg"><input type="radio" id="c-a-y" name="c-a" value="1"><label for="c-a-y">Yes</label><input type="radio" id="c-a-n" name="c-a" value="0"><label for="c-a-n">No</label></span></div>
+    <div class="s-q" data-flag="0" data-msg="Setting up CRA online access, since the T2 is filed electronically and CRA notices arrive there"><span class="s-lab">2. Do you have CRA My Business Account access, or have you authorised a representative?</span>
+      <span class="s-seg"><input type="radio" id="c-b-y" name="c-b" value="1"><label for="c-b-y">Yes</label><input type="radio" id="c-b-n" name="c-b" value="0"><label for="c-b-n">No</label></span></div>
+    <div class="s-q" data-flag="1" data-msg="The Ontario Initial Return within 60 days of incorporating, and the Annual Return within six months of each year-end"><span class="s-lab">3. Is your corporation incorporated in Ontario?</span>
+      <span class="s-seg"><input type="radio" id="c-c-y" name="c-c" value="1"><label for="c-c-y">Yes</label><input type="radio" id="c-c-n" name="c-c" value="0"><label for="c-c-n">No</label></span></div>
+    <div class="s-q" data-flag="1" data-msg="GST/HST registration within 29 days of passing $30,000, and your filing frequency"><span class="s-lab">4. Do you expect taxable sales over $30,000 in the next four quarters?</span>
+      <span class="s-seg"><input type="radio" id="c-d-y" name="c-d" value="1"><label for="c-d-y">Yes</label><input type="radio" id="c-d-n" name="c-d" value="0"><label for="c-d-n">No</label></span></div>
+    <div class="s-q" data-flag="1" data-msg="A payroll account, remittances by the 15th of the following month, and T4 slips by the last day of February"><span class="s-lab">5. Will the corporation pay you or anyone else a salary this year?</span>
+      <span class="s-seg"><input type="radio" id="c-e-y" name="c-e" value="1"><label for="c-e-y">Yes</label><input type="radio" id="c-e-n" name="c-e" value="0"><label for="c-e-n">No</label></span></div>
+    <div class="s-q" data-flag="1" data-msg="T5 slips and the T5 summary by the last day of February after the year of payment"><span class="s-lab">6. Will the corporation pay dividends this year?</span>
+      <span class="s-seg"><input type="radio" id="c-f-y" name="c-f" value="1"><label for="c-f-y">Yes</label><input type="radio" id="c-f-n" name="c-f" value="0"><label for="c-f-n">No</label></span></div>
+    <button type="button" class="s-go" id="c-go">Check my readiness</button>
+    <div class="s-msg" id="c-msg">Please answer all six questions to continue.</div>
+    <div class="s-out" id="c-out">
+      <div class="s-status" id="c-status" style="background:linear-gradient(135deg,#0f2a4a,#15355c) !important;">Your profile</div>
+      <div class="s-inner">
+        <p class="s-row"><b>Points to work through:</b> <span class="s-count" id="c-count"></span></p>
+        <div id="c-listwrap" style="display:none;"><p class="s-row" style="margin-bottom:4px;"><b>Worth reviewing with us:</b></p><ul class="s-list" id="c-list"></ul></div>
+        <p class="s-row" id="c-clean" style="display:none;"><b>Nothing flagged.</b> The usual complications do not appear to apply to you.</p>
+        <a class="s-cta" href="https://gondaliyacpa.ca/consultation/">Book a free consultation</a>
+        <p class="s-note">This is a general prompt, not tax advice, and it does not calculate your tax. Your outcome depends on your full facts, so please book a free consultation.</p>
+      </div>
+    </div>
+  </div>
+  <script>
+  (function(){
+    var root=document.getElementById('ocf-chk');
+    root.querySelector('#c-go').addEventListener('click',function(){
+      var qs=root.querySelectorAll('.s-q'), items=[], missing=false;
+      qs.forEach(function(q){
+        var x=q.querySelector('input:checked');
+        if(!x){missing=true;return;}
+        if(x.value===q.getAttribute('data-flag')) items.push(q.getAttribute('data-msg'));
+      });
+      var msg=root.querySelector('#c-msg'), out=root.querySelector('#c-out');
+      if(missing){msg.style.display='block';out.style.display='none';return;}
+      msg.style.display='none';
+      var list=root.querySelector('#c-list'), lw=root.querySelector('#c-listwrap'), clean=root.querySelector('#c-clean');
+      root.querySelector('#c-count').textContent=items.length+' to work through';
+      list.innerHTML='';
+      if(items.length){lw.style.display='block';clean.style.display='none';items.forEach(function(t){var li=document.createElement('li');li.textContent=t;list.appendChild(li);});}
+      else{lw.style.display='none';clean.style.display='block';}
+      root.querySelector('#c-status').textContent = items.length>=3 ? 'Several points need attention' : (items.length>=1 ? 'A few points to work through' : 'A straightforward case');
+      out.style.display='block';
+    });
+  })();
+  </script>
+</div>
+<div class="gcpa-cta" style="background:linear-gradient(135deg,#0f2a4a 0%,#1c4a78 100%) !important;">
+<h4>Map your first-year dates before the first one arrives</h4>
+<p>Incorporation from $35 including HST plus government fees, with a free CPA consultation on your fiscal year-end and first-year filings. Please book a free consultation.</p>
+<div class="gcpa-trust"><span>1300+ 5-star Google reviews</span><span>Xero Partner Award Winner 2026</span><span>30-Day Money-Back Guarantee</span><span>60-Day Fee Matching</span></div>
+<div class="gcpa-btnrow"><a class="solid" href="https://gondaliyacpa.ca/consultation/">Book Free Consultation</a><a href="https://opencorporationfor35.ca/address-service-100/">Address Service</a><a href="https://opencorporationfor35.ca/contact-us/">Contact Us</a></div>
+</div>
+<h3 class="gcpa-closing" id="toc-closing">What to Send Us</h3>
+<p>Send us your incorporation date and jurisdiction, the fiscal year-end you want, whether you will pay salary or dividends in the first year, and your expected sales for the first 12 months. That is enough for us to list your first-year dates. Please start on our <a href="https://opencorporationfor35.ca/incorporation-form/">incorporation form</a> or see every fee on our <a href="https://opencorporationfor35.ca/pricing/">pricing page</a>.</p>
+<div class="gcpa-author">
+<div class="ava" style="background:linear-gradient(135deg,#0f2a4a,#0c8f8f) !important;color:#ffffff !important;">SG</div>
+<div class="info">
+<h5>Sharad Gondaliya, CPA (Canada &amp; USA) — Founder &amp; Managing Director, Gondaliya CPA Professional Corporation</h5>
+<div class="role">Reviewed and fact-checked by Sharad Gondaliya, CPA (Canada &amp; USA)</div>
+<p style="font-size:14.5px;color:#15355c !important;font-weight:700;margin:0 0 8px;">Open Corporation for $35 is a department of Gondaliya CPA.</p>
+<p>We incorporate and support companies in all 13 provinces and territories, handling CRA registrations, corporate tax filing, bookkeeping, GST/HST, payroll and audit support. Verify our firm on the <a href="https://www.cpaontario.ca/protecting-the-public/directories/firm/gondaliya-5sqvmj">CPA Ontario public firm directory</a>, firm registration 61330051.</p>
+<p style="font-size:13.5px;color:#15355c !important;font-weight:700;margin-top:10px;">CPA Ontario | CPA USA (Washington &amp; Montana) | Xero Partner Award Winner 2026 | 1300+ 5-star Google reviews</p>
+</div>
+</div>
+<p style="font-size:13px;color:#5a6b7b;border-top:1px solid #e3e9f0;padding-top:16px;margin-top:8px;"><strong>Published:</strong> October 26, 2026 &nbsp;·&nbsp; <strong>Last updated:</strong> October 26, 2026</p>
+<p style="font-size:13px;color:#5a6b7b;"><strong>Editorial policy:</strong> Our content is prepared by our team and reviewed by Sharad Gondaliya, CPA, and we update it as CRA deadlines, GST/HST thresholds, payroll rates and registry rules change.</p>
+<p style="font-size:13px;color:#5a6b7b;"><strong>Disclaimer:</strong> This article is educational information only and is not tax, legal, or financial advice. Filing dates depend on your own incorporation date, fiscal year-end and jurisdiction. Please consult a CPA before acting.</p>
+<p style="font-size:14.5px;color:#15355c;font-weight:700;border-top:2px solid #e3e9f0;padding-top:16px;margin-top:20px;">Open Corporation for $35 is a department of Gondaliya CPA.</p>
+<p style="font-size:13px;color:#5a6b7b;">Operated by WealthBamboo Inc. Parent firm Gondaliya CPA Professional Corporation, CPA Ontario firm registration 61330051. Xero Partner Award Winner 2026. 1300+ five-star Google reviews. 30-day money-back guarantee and 60-day fee-matching policy. Phone 647-212-9559, email info@gondaliyacpa.ca, open 9:00 AM to 8:30 PM Monday to Sunday. Payment by Interac e-Transfer to info@gondaliyacpa.ca only, security question "Not Applicable" as auto-deposit is enabled. Card is also accepted.</p>
+</div>
+
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@graph": [{"@type": "BlogPosting", "@id": "https://opencorporationfor35.ca/first-year-filing-calendar-new-corporation/#article", "headline": "First-Year Filing Calendar for a New Corporation", "description": "Every first-year deadline for a new Canadian corporation: T2 filing, balance-due day, instalments, GST/HST, payroll slips and annual returns, in one calendar.", "datePublished": "2026-10-26", "dateModified": "2026-10-26", "author": {"@type": "Person", "name": "Sharad Gondaliya, CPA"}, "publisher": {"@type": "Organization", "name": "Open Corporation for $35", "description": "Open Corporation for $35 is a department of Gondaliya CPA.", "parentOrganization": {"@type": "AccountingService", "name": "Gondaliya CPA Professional Corporation", "identifier": "CPA Ontario Firm Registration 61330051"}}, "mainEntityOfPage": "https://opencorporationfor35.ca/first-year-filing-calendar-new-corporation/"}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What are the Key Numbers at a Glance for new corporations in Canada?", "acceptedAnswer": {"@type": "Answer", "text": "New corporations must note key numbers such as the $30,000 GST/HST small supplier threshold and the $3,000 corporate tax instalment threshold. These trigger registration and payment obligations."}}, {"@type": "Question", "name": "When is the Payroll Remittance Due Date for new Ontario corporations?", "acceptedAnswer": {"@type": "Answer", "text": "Payroll remittances are generally due monthly by the 15th of the following month after salary payments start. Some businesses may require more frequent remittance."}}, {"@type": "Question", "name": "What is the T4/T5 Slip Filing Deadline?", "acceptedAnswer": {"@type": "Answer", "text": "T4 and T5 slips must be filed with CRA by February 28 each year. These report employee earnings and dividend payments, respectively."}}, {"@type": "Question", "name": "How does the CBCA Annual Return Filing Window work?", "acceptedAnswer": {"@type": "Answer", "text": "Federal corporations under CBCA must file annual returns within 60 days after their incorporation anniversary date to maintain good standing."}}, {"@type": "Question", "name": "What is the Ontario Annual Return Filing Window?", "acceptedAnswer": {"@type": "Answer", "text": "Ontario corporations have up to six months after their anniversary date to file an annual return via the Ontario Business Registry."}}, {"@type": "Question", "name": "How do first-year compliance calendars differ across industries?", "acceptedAnswer": {"@type": "Answer", "text": "First-year calendars vary by industry due to differences in revenue cycles, payroll needs, and regulatory filings. Professional advice ensures calendar accuracy."}}, {"@type": "Question", "name": "What Does First-Year Compliance Cost and What Drives the Fee?", "acceptedAnswer": {"@type": "Answer", "text": "Costs vary depending on business size, complexity of filings, and need for professional services. More complex filings typically increase fees."}}, {"@type": "Question", "name": "What Are the Risks, Compliance Issues and Prevention Controls?", "acceptedAnswer": {"@type": "Answer", "text": "Risks include missed deadlines, penalties, interest charges, and audits. Controls involve tracking deadlines closely, using CPA guidance, and electronic filing compliance."}}]}]}
+</script>
