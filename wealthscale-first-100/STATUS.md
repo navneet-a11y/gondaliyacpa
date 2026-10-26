@@ -69,8 +69,8 @@ Page 7 "Home (old Astra demo)" is a draft with no public URL: delete it.
 | --- | --- | --- | --- |
 | 1 | Fri Oct 23 | 20 | Live Oct 23: all 20 published, each verified byte for byte (file size + 34). Rank Math title, description and focus keyword set Oct 23 for all 20 (through Rank Math's own updateMeta route; the Easy MCP integration switch is not needed). Widget CSS and JS were missing from /uploads/ws/; Navneet moved them there and pages now render. Site Address switched to https |
 | 2 | Sat Oct 24 | 20 | Live Oct 24: all 20 published and verified byte for byte, Rank Math fields set, submitted to IndexNow |
-| 3 | Sun Oct 25 | 20 | Not started |
-| 4 | Mon Oct 26 | 20 | Not started |
+| 3 | Sun Oct 25 | 20 | Live Oct 26 (one day late, published together with Day 4): all 20 verified, Rank Math fields set, IndexNow |
+| 4 | Mon Oct 26 | 20 | Live Oct 26: all 20 verified, Rank Math fields set, IndexNow |
 | 5 | Tue Oct 27 | 21 | Not started |
 | 6 | Wed Oct 28 | 0 (QA) | Not started |
 | 7 | Thu Oct 29 | 0 (Rich Results, indexing, workbook back) | Not started |
@@ -172,3 +172,54 @@ Oct 23 evening: search engine visibility turned on (Settings > Reading, by Navne
 | How to Invest in Canada | 265 (new) | 121 | 64236 |
 
 All by user 1, comments closed, ws_neha_reviewed_on not set. Lengths re-checked independently after publishing; no duplicate pages created. 20 URLs submitted to IndexNow ("Successfully submitted 20 URLs").
+
+## Days 3 and 4 live (Monday, October 26)
+
+Day 3 slipped from Sunday; both days were published on Monday so Day 5 stays on Tuesday. All 40 pages were new: created first as empty drafts (IDs 278 to 317), then filled and published. Lengths re-checked independently; no duplicates; only page 87 (Methodology parent) remains a draft by design.
+
+| Page | WP ID | Day | Length on site |
+| --- | --- | --- | --- |
+| Wealthsimple Review | 278 | 3 | 79489 |
+| Wealthsimple Trade Review | 279 | 3 | 67678 |
+| Wealthsimple Managed Investing Review | 280 | 3 | 70950 |
+| Wealthsimple Chequing Review | 281 | 3 | 53079 |
+| Wealthsimple Credit Card Review: Visa Infinite+ | 282 | 3 | 57553 |
+| Wealthsimple Crypto Review | 283 | 3 | 65766 |
+| Wealthsimple Tax Review | 284 | 3 | 62685 |
+| Wealthsimple Fees | 285 | 3 | 66797 |
+| Is Wealthsimple Safe? | 286 | 3 | 67881 |
+| Wealthsimple Core vs Premium vs Generation | 287 | 3 | 64759 |
+| Wealthsimple USD Accounts Review | 288 | 3 | 64842 |
+| Wealthsimple FHSA Review | 289 | 3 | 64991 |
+| Wealthsimple TFSA Review | 290 | 3 | 64840 |
+| Wealthsimple vs Questrade | 291 | 3 | 65468 |
+| Wealthsimple vs Interactive Brokers | 292 | 3 | 62656 |
+| Wealthsimple vs moomoo | 293 | 3 | 58359 |
+| Wealthsimple vs EQ Bank | 294 | 3 | 52935 |
+| Norbert's Gambit | 295 | 3 | 63947 |
+| Transfer an Investment Account | 296 | 3 | 62068 |
+| CPP and OAS Payment Dates | 297 | 3 | 48846 |
+| Best Online Brokers in Canada | 298 | 4 | 120537 |
+| Best Robo-Advisors in Canada | 299 | 4 | 84210 |
+| Best Investing Apps in Canada | 300 | 4 | 99991 |
+| Best TFSA Accounts in Canada | 301 | 4 | 103333 |
+| Best RRSP Accounts in Canada | 302 | 4 | 99187 |
+| Best FHSA Accounts in Canada | 303 | 4 | 85021 |
+| Best RESP Providers in Canada | 304 | 4 | 91148 |
+| Best Brokers for US Stocks in Canada | 305 | 4 | 110711 |
+| Best Commission-Free Trading Platforms in Canada | 306 | 4 | 89117 |
+| Best Crypto Exchanges and Platforms in Canada | 307 | 4 | 89763 |
+| Best Online Brokers for Beginners in Canada | 308 | 4 | 101896 |
+| Brokers With the Lowest Currency Conversion Fees | 309 | 4 | 87089 |
+| Best Options Trading Platforms in Canada | 310 | 4 | 108708 |
+| Lowest Margin Rates in Canada | 311 | 4 | 90315 |
+| Best Tax Software in Canada | 312 | 4 | 81644 |
+| Best TFSA Accounts for US Stocks | 313 | 4 | 88565 |
+| Best RRSP Accounts for US Stocks | 314 | 4 | 92494 |
+| Best Self-Directed RESP Accounts | 315 | 4 | 77580 |
+| Best RRIF Accounts in Canada | 316 | 4 | 81327 |
+| Best LIRA Accounts in Canada | 317 | 4 | 73970 |
+
+40 URLs submitted to IndexNow ("Successfully submitted 40 URLs"). Page 44 (credit card) and page 46 (tax) use the general reviewer line because Neha's scope is "No" for them in the workbook.
+
+Note: the old Privacy Policy (ID 3) and Terms of Use (ID 45) from October 16 are still published; the plan's new versions wait for the lawyer (Day 5).
