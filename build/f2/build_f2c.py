@@ -588,7 +588,7 @@ TOOLS3 = [
     '<p>A corporation owned by residents of Canada filing a true nil return is '
     'in a different position, and the block below is the whole of it.</p>\n'
     '<div class="ei-danger"><p>' + QUAL + '</p></div>'),
-   ('due', 'Working Out the Due Date First',
+   ('duedate', 'Working Out the Due Date First',
     '<p>The figure depends entirely on the due date, which is six months after '
     'the fiscal year-end, shifted to the next business day where it lands on a '
     'weekend or a statutory holiday. The '
@@ -729,6 +729,18 @@ GUIDES3 = {
  'dissolution-readiness-checker': [
    ('final-t2-and-dissolution', 'The final T2 and dissolution')],
 }
+
+# A section anchor and a form field sharing an id is valid-looking and
+# silently wrong: getElementById returns whichever comes first in the
+# document, so the calculator reads a div and sees no value. Refuse to build.
+for t in TOOLS3:
+    import re as _re
+    _sec = {sid for sid, _, _ in t['sections']}
+    _fld = set(_re.findall(r'id="([\w-]+)"', t['form']))
+    _fld |= set(_re.findall(r'name="([\w-]+)"', t['form']))
+    _clash = _sec & _fld
+    assert not _clash, ('%s: section anchor collides with a form id: %s'
+                        % (t['slug'], sorted(_clash)))
 
 for t in TOOLS3:
     i = ORDER3.index(t['slug'])

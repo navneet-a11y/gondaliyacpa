@@ -5176,3 +5176,23 @@ nil_calculator), then its meta set with `wp_update_cpt_item` and its
 cnf_family term with `wp_add_post_terms`, because create accepts neither, then
 checked byte-identical to its build file with a zero-change
 `wp_replace_in_post` probe. cnf_family f2 is term taxonomy id 15.
+
+### Family 2 batch 3: duplicate id in the penalty calculator
+
+/tools/non-resident-t2-penalty-calculator/ gave its "Working Out the Due Date
+First" section the anchor `id="due"`, which is also the id of the due-date
+input. Two elements in one document claimed the same id.
+
+It happened to work: `getElementById` returns whichever comes first in the
+document, and the input sits in the first section while the anchor is further
+down, so the calculator read the input. One reordering of the sections and it
+would have read a div, found `.value` undefined and treated every entry as
+empty, with no error anywhere.
+
+Anchor renamed to `duedate`. A build-time assertion now refuses to build any
+tool whose section anchors intersect its form ids or names, so the collision
+cannot come back. A scan of all fifteen tool files finds no duplicate id
+anywhere, so the ten already live are clean.
+
+Three of the five are published and byte-verified at this point: 1259, 1261
+and 1263.
