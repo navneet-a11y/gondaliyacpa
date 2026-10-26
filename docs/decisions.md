@@ -5145,3 +5145,18 @@ answers and was not affected. It was already published and verified
 byte-identical before this was found, and its file is unchanged by the fix.
 
 53 assertions, all passing.
+
+### Family 2 batch 3: non-sequitur removed from the eligibility checker
+
+The "not a T2 filer" branch of /tools/nil-t2-eligibility-checker/ appended the
+7.4 not-nil block. That block is about holding corporations with investment
+income, rental corporations and corporations that paid or received a dividend,
+and says nothing to a sole proprietor, a partnership or a trust, which is who
+that branch is answering. It also quotes $350.00 plus HST per year, which is
+the figure for non-nil corporate work, not for a personal or partnership
+return.
+
+Replaced with a plain hand-off to Gondaliya CPA Professional Corporation at
+gondaliyacpa.ca, with no figure attached. Same class of defect as the
+unfiled-years FAQ caught earlier in the project: a reusable block pasted onto
+a branch whose subject it does not match.

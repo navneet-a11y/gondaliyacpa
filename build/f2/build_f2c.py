@@ -157,9 +157,13 @@ function render(){
       'in that year and no return filed for it yet is exactly what this service '+
       'is for. The fee is '+PRICE_JS+'.</p>';
   }else if(r==='notcorp'){
+    // NOTNILJS is about holding, rental and dividend corporations and says
+    // nothing to a sole proprietor, so it does not belong on this branch, and
+    // its $350.00 figure is for non-nil corporate work specifically.
     h='<h3>This service files corporate T2 returns only</h3>'+
       '<p>A sole proprietorship, a partnership and a trust do not file a T2, so '+
-      'there is no nil T2 to file. '+NOTNILJS+'</p>';
+      'there is no nil T2 to file. Those returns are handled by Gondaliya CPA '+
+      'Professional Corporation at gondaliyacpa.ca.</p>';
   }else if(r==='notdue'){
     h='<h3>That tax year has not ended yet</h3>'+
       '<p>A T2 covers a tax year that has finished, and it is due within six '+
