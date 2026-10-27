@@ -509,7 +509,7 @@ function latePenalty(a){
   return {truly:a.nil==='y',nonres:a.nr==='y',demand:a.dem==='y'};
 }
 """
-T27_JS = PICK + PRELUDE + L27 + r"""
+T27_JS = PICK + L27 + r"""
 var out=document.getElementById('out');
 var IDS=['nil','nr','dem'];
 function render(){
@@ -574,7 +574,7 @@ function clearance(a){
           wanted:a.dist==='y'||a.dis==='y'};
 }
 """
-T28_JS = PICK + PRELUDE + L28 + r"""
+T28_JS = PICK + L28 + r"""
 var out=document.getElementById('out');
 var IDS=['dist','dis','unf'];
 function render(){
@@ -640,7 +640,7 @@ function payroll(a){
   return {kind:'nil',close:a.clo==='y'};
 }
 """
-T29_JS = PICK + PRELUDE + L29 + r"""
+T29_JS = PICK + L29 + r"""
 var out=document.getElementById('out');
 var IDS=['acct','wag','clo'];
 function render(){
@@ -707,7 +707,7 @@ function gstClose(a){
   return {kind:a.fin==='y'?'ready':'returns'};
 }
 """
-T30_JS = PICK + PRELUDE + L30 + r"""
+T30_JS = PICK + L30 + r"""
 var out=document.getElementById('out');
 var IDS=['acct','sales','fin'];
 function render(){
@@ -1756,6 +1756,15 @@ for t in TOOLS5:
     _vals = set(_re.findall(r'value="([^"]*)"', t['form']))
     assert _vals <= {'y', 'n'}, ('%s: form emits values outside {y,n}: %s'
                                  % (t['slug'], sorted(_vals - {'y', 'n'})))
+
+# The prelude carries the not-nil and qualification strings. The wiring loop
+# above prepends it, so a per-tool JS constant that already includes it ends up
+# declaring both strings twice. Harmless to run, but it is duplication in
+# shipped source and it reads like a bug.
+for t in TOOLS5:
+    assert t['js'].count(PRELUDE) == 1, (
+        '%s: the prelude appears %d times in its script'
+        % (t['slug'], t['js'].count(PRELUDE)))
 
 # Every slug here is an Appendix A entry, and none of them is already live.
 _LIVE = set(ORDER4)

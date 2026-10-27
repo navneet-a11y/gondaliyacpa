@@ -5416,3 +5416,110 @@ row on 1278 and the corrected shareholder-loan row on 1274.
 Tools 1-15 have not had reference tables added. The same treatment applies but
 each needs its own unique table — a table repeated across twenty pages would be
 duplicate content and would work against the SEO this was asked for.
+
+## 2026-10-27 — Family 2 tools 21 to 30 built and published
+
+Family 2 goes from 20 to 30 of the 150 in Appendix A. IDs 1285 to 1303 (odd),
+all byte-verified against their build files.
+
+| # | Slug | ID | Bytes |
+|---|---|---|---|
+| 21 | tax-years-since-incorporation-calculator | 1285 | 29,302 |
+| 22 | days-overdue-calculator | 1287 | 28,100 |
+| 23 | next-t2-due-date-checker | 1289 | 27,721 |
+| 24 | final-t2-return-due-date-calculator | 1291 | 28,256 |
+| 25 | amalgamation-t2-due-date-calculator | 1293 | 28,264 |
+| 26 | short-tax-year-deadline-calculator | 1295 | 28,061 |
+| 27 | nil-return-late-penalty-checker | 1297 | 27,126 |
+| 28 | clearance-certificate-requirement-checker | 1299 | 26,753 |
+| 29 | payroll-nil-remittance-checker | 1301 | 26,286 |
+| 30 | gst-hst-account-closure-checker | 1303 | 26,416 |
+
+Six are date arithmetic on the holiday engine already built and tested for the
+deadline calculator. Four are decision trees over facts the plan states
+outright. Every one carries a reference table from the start, continuing the
+table work from the previous batch.
+
+### Why these ten and not the first ten unbuilt
+
+Appendix A runs long on near-synonyms and line 1210 requires logic unique to
+each tool, so the batch was chosen for distinct logic rather than list order.
+The build file header records every skipped slug and the reason. The groups:
+
+- **Four penalty calculators need statutory rates the plan never states.**
+  `/t2-late-filing-penalty-calculator/`,
+  `/repeated-failure-to-file-penalty-calculator/`,
+  `/demand-to-file-penalty-calculator/` and
+  `/failure-to-comply-penalty-calculator/` all turn on a percentage and a
+  monthly rate. The plan grounds exactly two penalty figures: the non-resident
+  $25.00 per day up to $2,500.00, and the qualification that a true nil return
+  carries no percentage penalty because the penalty is a percentage of tax
+  owing. The percentages themselves are nowhere in it. Putting a dollar figure
+  a visitor may rely on in front of them from memory is the same class of
+  invention as the per-province tax rate reserved for Sharad Gondaliya.
+- **Two Ontario annual return tools are still blocked** on the due date
+  outstanding since batch 2. The plan gives the federal 60-day rule and the
+  October 2021 registry move, never the Ontario date.
+- **Four duplicate live tools:** `/t2-six-month-deadline-calculator/`,
+  `/still-required-to-file-checker/`, `/back-year-t2-cost-calculator/`,
+  `/outstanding-returns-count-checker/`.
+- **Four turn on a statutory dollar threshold** the plan does not state.
+
+### Six defects, none caught by the gate or the assertions
+
+1. `PRICE.capitalize()` in three places. Python lowercases the rest of the
+   string, so all three would have published "plus hst per tax year", breaking
+   the price wording rule.
+2. A cell built as `PRICE + ' per year'` read "$300.00 plus HST per tax year
+   per year".
+3. The late penalty page claimed the percentage was the only row where a nil
+   year differs, while its own table has two such rows.
+4. A cell in the clearance sequence table answered a different question from
+   its column heading.
+5. With one tax year the heading read "1 tax year have ended", and the overdue
+   sentence was a tautology: "6 nil returns at ... is 6 returns transmitted in
+   one sitting".
+6. Tools 27 to 30 emitted the shared prelude twice. Caught between publishing
+   tool 26 and tool 27, so nothing wrong went live; tools 21 to 26 were
+   unaffected and their byte counts did not move.
+
+Also corrected before publishing: a reference to `r.st` that the short-year
+logic never returned, which would have printed the same date twice in one
+sentence, and one hand-written filing date. **February 20, 2028 is a Sunday and
+the Monday after it is Family Day**, so that date shifts twice, to the Tuesday.
+Every hand-written date in every new table was re-derived from the engine
+before it shipped.
+
+That is three batches running in which the hard-rule gate passed, every node
+assertion passed, and every defect was found by reading the generated page.
+
+### Guards added
+
+- Integrity asserts tie `addYear` and the two 53-week constants to the tools
+  that already use them.
+- The build refuses a section anchor colliding with a form id, a form emitting
+  values outside {y,n}, a slug already live, the bare phrase "no penalty" in
+  any body or answer, and now a prelude appearing more than once per tool.
+- `test_f2e.js` lifts each function under test out of the built page at run
+  time rather than keeping a copy, so it exercises shipped code. A field-use
+  guard evaluates each date tool's logic and asserts the render layer reads no
+  field the logic does not return, which is defect 5's whole class.
+- 195 assertions, each guard verified to fail when a page is corrupted.
+
+### Open item found while publishing
+
+The `cnf_family` term f2 (term id 15) has a count of 20 against 30 live
+calculators, so ten of the earlier tools were never given the family term. The
+three-call publish flow (create, then meta, then terms) was only established in
+batch 3, so the ten from batches 1 and 2 are the likely gap, but that needs
+checking per post rather than assuming. Needs a sweep: list nil_calculator,
+read each item's cnf_family, add f2 where missing.
+
+### Also noted
+
+Publishing a page costs its full byte count through the connector, because
+there is no generic REST writer on this site and no way to copy content between
+posts. The 12,976-byte CSS prefix is byte-identical across all thirty tool
+pages. Moving it into a reusable block, or into the theme, would cut every
+future tool publish by about half and would make a style fix one edit rather
+than thirty. Worth a decision before the next batch.
