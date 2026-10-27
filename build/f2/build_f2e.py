@@ -135,7 +135,8 @@ function render(){
   if(r.err==='order'){out.className='ei-out no';
     out.innerHTML='<p class="ei-err">The first fiscal year-end must fall '+
       'after the incorporation date.</p>';return;}
-  var h='<h3>'+plural(r.rows.length,'tax year')+' have ended, '+
+  var h='<h3>'+plural(r.rows.length,'tax year')+
+        (r.rows.length===1?' has ended, ':' have ended, ')+
         (r.late===0?'none of them overdue':plural(r.late,'return')+' overdue')+
         '</h3>';
   h+='<div class="ei-stats">'+
@@ -162,8 +163,10 @@ function render(){
   h+='<p>The next tax year ends '+fmt(r.next.ye)+' and its return is due '+
      fmt(r.next.due)+'.</p>';
   if(r.late>0){
-    h+='<p>'+plural(r.late,'nil return')+' at '+PRICE_JS+
-       ' is '+plural(r.late,'return')+' transmitted in one sitting.</p>';
+    h+='<p>'+(r.late===1
+       ?'That one overdue return can be transmitted now, at '+PRICE_JS+'.'
+       :'All '+r.late+' overdue returns can be transmitted in one sitting, '+
+        'each at '+PRICE_JS+'.')+'</p>';
     h+='<div class="ei-info"><p>'+QUALJS+'</p></div>';
   }
   h+='<p class="ei-note">'+DISC_JS+'</p>';

@@ -348,4 +348,39 @@ eq('30 ready to close', Q.gstClose({acct:'y',sales:'n',fin:'y'}).kind,
      Object.keys(kinds).sort(), ['none','ready','returns','trading']);
 })();
 
+// ------------------------------------------------------- field-use guard
+// A render layer reading a field its logic function never returns prints
+// "undefined" into the page and nothing else complains. One such bug was
+// written and caught by hand in this batch; this makes the class automatic.
+(function(){
+  var CASES={
+   'tax-years-since-incorporation-calculator':
+     ['taxYears', function(f){return f(D('2020-03-12'),D('2020-12-31'),NOW);}],
+   'days-overdue-calculator':
+     ['overdueBy', function(f){return f(D('2024-12-31'),NOW);}],
+   'next-t2-due-date-checker':
+     ['nextDue', function(f){return f(D('2026-06-30'),NOW);}],
+   'final-t2-return-due-date-calculator':
+     ['finalReturn', function(f){return f(D('2026-12-31'),D('2027-03-15'));}],
+   'amalgamation-t2-due-date-calculator':
+     ['amalgDates', function(f){return f(D('2026-12-31'),D('2027-07-01'));}],
+   'short-tax-year-deadline-calculator':
+     ['shortYear', function(f){return f(D('2027-04-01'),D('2027-08-20'));}]
+  };
+  Object.keys(CASES).forEach(function(slug){
+    var h=fs.readFileSync(slug+'.html','utf8');
+    var i=h.lastIndexOf('var PRICE_JS=');
+    var j=h.indexOf("var out=document.getElementById", i);
+    var fn=new Function(h.slice(i,j)+'\nreturn '+CASES[slug][0]+';')();
+    var keys=Object.keys(CASES[slug][1](fn));
+    var render=h.slice(j, h.indexOf('\n})();', j));
+    var refs={};
+    (render.match(/\br\.([A-Za-z_]\w*)/g)||[]).forEach(function(m){
+      refs[m.slice(2)]=1;});
+    var missing=Object.keys(refs).filter(function(k){
+      return keys.indexOf(k)<0 && k!=='err';});
+    eq('fields '+slug+' reads only what its logic returns', missing, []);
+  });
+})();
+
 console.log(fails?("\n"+fails+" of "+n+" assertions FAILED"):("all "+n+" assertions pass"));if(fails){process.exit(1);}
