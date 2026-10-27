@@ -566,5 +566,148 @@
     "id": 1250
    }
   ]
+ },
+ "nil_deadline": {
+  "rest_base": "nil_deadline",
+  "items": [
+   {
+    "desc": "A January 31 year-end makes the T2 due July 31. Filing is mandatory even with no activity. Nil T2 filing at $300.00 plus HST per tax year.",
+    "id": 530,
+    "kw": "t2 due date for january year end",
+    "title": "T2 Due Date for a January 31 Year-End"
+   },
+   {
+    "desc": "A February 28 year-end makes the T2 due August 31. Filing is mandatory even with no activity. Nil T2 filing at $300.00 plus HST per tax year.",
+    "id": 531,
+    "kw": "t2 due date for february year end",
+    "title": "T2 Due Date for a February 28 Year-End"
+   },
+   {
+    "desc": "A March 31 year-end makes the T2 due September 30. Filing is mandatory even with no activity. Nil T2 filing at $300.00 plus HST per tax year.",
+    "id": 532,
+    "kw": "t2 due date for march year end",
+    "title": "T2 Due Date for a March 31 Year-End"
+   },
+   {
+    "desc": "An April 30 year-end makes the T2 due October 31. Filing is mandatory even with no activity. Nil T2 filing at $300.00 plus HST per tax year.",
+    "id": 533,
+    "kw": "t2 due date for april year end",
+    "title": "T2 Due Date for an April 30 Year-End"
+   },
+   {
+    "desc": "A May 31 year-end makes the T2 due November 30. Filing is mandatory even with no activity. Nil T2 filing at $300.00 plus HST per tax year.",
+    "id": 534,
+    "kw": "t2 due date for may year end",
+    "title": "T2 Due Date for a May 31 Year-End"
+   },
+   {
+    "desc": "A June 30 year-end makes the T2 due December 31. Filing is mandatory even with no activity. Nil T2 filing at $300.00 plus HST per tax year.",
+    "id": 535,
+    "kw": "t2 due date for june year end",
+    "title": "T2 Due Date for a June 30 Year-End"
+   },
+   {
+    "desc": "A July 31 year-end makes the T2 due January 31. Filing is mandatory even with no activity. Nil T2 filing at $300.00 plus HST per tax year.",
+    "id": 536,
+    "kw": "t2 due date for july year end",
+    "title": "T2 Due Date for a July 31 Year-End"
+   },
+   {
+    "desc": "An August 31 year-end makes the T2 due February 28. Filing is mandatory even with no activity. Nil T2 filing at $300.00 plus HST per tax year.",
+    "id": 537,
+    "kw": "t2 due date for august year end",
+    "title": "T2 Due Date for an August 31 Year-End"
+   },
+   {
+    "desc": "A September 30 year-end makes the T2 due March 31. Filing is mandatory even with no activity. Nil T2 filing at $300.00 plus HST per tax year.",
+    "id": 538,
+    "kw": "t2 due date for september year end",
+    "title": "T2 Due Date for a September 30 Year-End"
+   },
+   {
+    "desc": "An October 31 year-end makes the T2 due April 30. Filing is mandatory even with no activity. Nil T2 filing at $300.00 plus HST per tax year.",
+    "id": 539,
+    "kw": "t2 due date for october year end",
+    "title": "T2 Due Date for an October 31 Year-End"
+   },
+   {
+    "desc": "A November 30 year-end makes the T2 due May 31. Filing is mandatory even with no activity. Nil T2 filing at $300.00 plus HST per tax year.",
+    "id": 540,
+    "kw": "t2 due date for november year end",
+    "title": "T2 Due Date for a November 30 Year-End"
+   },
+   {
+    "desc": "A December 31 year-end makes the T2 due June 30. Filing is mandatory even with no activity. Nil T2 filing at $300.00 plus HST per tax year.",
+    "id": 527,
+    "kw": "t2 due date for december year end",
+    "title": "T2 Due Date for a December 31 Year-End"
+   },
+   {
+    "desc": "File an outstanding 2017 nil T2 return. An unfiled year stays open until filed. $300.00 plus HST per tax year, CPA reviewed and transmitted electronically.",
+    "id": 541,
+    "kw": "file your 2017 nil t2 return",
+    "title": "File Your 2017 Nil T2 Return"
+   },
+   {
+    "desc": "File an outstanding 2018 nil T2 return. An unfiled year stays open until filed. $300.00 plus HST per tax year, CPA reviewed and transmitted electronically.",
+    "id": 542,
+    "kw": "file your 2018 nil t2 return",
+    "title": "File Your 2018 Nil T2 Return"
+   },
+   {
+    "desc": "File an outstanding 2019 nil T2 return. An unfiled year stays open until filed. $300.00 plus HST per tax year, CPA reviewed and transmitted electronically.",
+    "id": 543,
+    "kw": "file your 2019 nil t2 return",
+    "title": "File Your 2019 Nil T2 Return"
+   },
+   {
+    "desc": "File an outstanding 2020 nil T2 return. An unfiled year stays open until filed. $300.00 plus HST per tax year, CPA reviewed and transmitted electronically.",
+    "id": 544,
+    "kw": "file your 2020 nil t2 return",
+    "title": "File Your 2020 Nil T2 Return"
+   },
+   {
+    "desc": "File an outstanding 2021 nil T2 return. An unfiled year stays open until filed. $300.00 plus HST per tax year, CPA reviewed and transmitted electronically.",
+    "id": 529,
+    "kw": "file your 2021 nil t2 return",
+    "title": "File Your 2021 Nil T2 Return"
+   },
+   {
+    "desc": "File an outstanding 2022 nil T2 return. An unfiled year stays open until filed. $300.00 plus HST per tax year, CPA reviewed and transmitted electronically.",
+    "id": 545,
+    "kw": "file your 2022 nil t2 return",
+    "title": "File Your 2022 Nil T2 Return"
+   },
+   {
+    "desc": "File an outstanding 2023 nil T2 return. An unfiled year stays open until filed. $300.00 plus HST per tax year, CPA reviewed and transmitted electronically.",
+    "id": 546,
+    "kw": "file your 2023 nil t2 return",
+    "title": "File Your 2023 Nil T2 Return"
+   },
+   {
+    "desc": "File an outstanding 2024 nil T2 return. An unfiled year stays open until filed. $300.00 plus HST per tax year, CPA reviewed and transmitted electronically.",
+    "id": 547,
+    "kw": "file your 2024 nil t2 return",
+    "title": "File Your 2024 Nil T2 Return"
+   },
+   {
+    "desc": "File an outstanding 2025 nil T2 return. An unfiled year stays open until filed. $300.00 plus HST per tax year, CPA reviewed and transmitted electronically.",
+    "id": 548,
+    "kw": "file your 2025 nil t2 return",
+    "title": "File Your 2025 Nil T2 Return"
+   },
+   {
+    "desc": "File an outstanding 2026 nil T2 return. An unfiled year stays open until filed. $300.00 plus HST per tax year, CPA reviewed and transmitted electronically.",
+    "id": 549,
+    "kw": "file your 2026 nil t2 return",
+    "title": "File Your 2026 Nil T2 Return"
+   },
+   {
+    "desc": "Every T2 due date by fiscal year-end, with the Ontario statutory holidays that move a deadline. Nil T2 filing at $300.00 plus HST per tax year.",
+    "id": 550,
+    "kw": "cra t2 deadline calendar",
+    "title": "T2 Deadline Calendar for Canadian Corporations"
+   }
+  ]
  }
 }
