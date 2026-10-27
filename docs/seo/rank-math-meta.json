@@ -381,5 +381,190 @@
     "kw": "due date weekend holiday shift calculator"
    }
   ]
+ },
+ "nil_question": {
+  "rest_base": "nil_question",
+  "items": [
+   {
+    "title": "What Happens if I Don't File a Nil T2?",
+    "desc": "The tax year stays open and the Canada Revenue Agency can demand the return and assess the corporation arbitrarily.",
+    "kw": "what happens if i dont file a nil t2",
+    "id": 831
+   },
+   {
+    "title": "What Happens if I Don't File My T2 for Five Years?",
+    "desc": "All five returns stay outstanding and each year is filed separately. Filing all five at once is routine and closes the years in a single pass.",
+    "kw": "what happens if i dont file my t2 for five years",
+    "id": 833
+   },
+   {
+    "title": "What Happens if I Don't File a T2 Before Dissolving?",
+    "desc": "Dissolution can be held up and the outstanding years remain owed. An unfiled year blocks the clearance certificate that lets a corporation close.",
+    "kw": "what happens if i dont file a t2 before dissolving",
+    "id": 834
+   },
+   {
+    "title": "What Happens if a Dormant Corporation Is Not Reported?",
+    "desc": "There is no separate dormancy filing, so the obligation is simply the annual T2. Telling the CRA a corporation is inactive does not replace it.",
+    "kw": "what happens if a dormant corporation is not reported",
+    "id": 835
+   },
+   {
+    "title": "What Happens if I Ignore a CRA Demand to File a T2?",
+    "desc": "The Canada Revenue Agency can assess the corporation arbitrarily, without waiting for the return. Filing the real return replaces that assessment.",
+    "kw": "what happens if i ignore a cra demand to file a t2",
+    "id": 836
+   },
+   {
+    "title": "What Happens if a Numbered Company Does Not File?",
+    "desc": "Nothing changes because the corporation has a number instead of a name. A numbered company files a T2 within six months of each fiscal year-end.",
+    "kw": "what happens if a numbered company does not file",
+    "id": 856
+   },
+   {
+    "title": "What Happens if I Don't File After Dissolution?",
+    "desc": "The final return is still required and the years before dissolution stay outstanding. Dissolving does not close earlier years or cancel the returns.",
+    "kw": "what happens if i dont file after dissolution",
+    "id": 857
+   },
+   {
+    "title": "Do I Need to File a T2 if My Corporation Had No Activity?",
+    "desc": "Yes. Every resident corporation must file a T2 return within six months of its fiscal year-end, every year, until it is formally dissolved.",
+    "kw": "do i need to file a t2 if my corporation had no activity",
+    "id": 858
+   },
+   {
+    "title": "Do I Need to File a Nil T2 With No Bank Account?",
+    "desc": "Yes. The T2 obligation follows the corporation's existence, not its banking, so a return is due within six months of each fiscal year-end regardless.",
+    "kw": "do i need to file a nil t2 with no bank account",
+    "id": 859
+   },
+   {
+    "title": "Do I Need Financial Statements for a Nil T2 Return?",
+    "desc": "No audited or reviewed statements are needed, but the return still carries GIFI schedules showing zero.",
+    "kw": "do i need financial statements for a nil t2 return",
+    "id": 860
+   },
+   {
+    "title": "Do I Need to File a T2 for the Year of Dissolution?",
+    "desc": "Yes. A final T2 covers the period from the start of that fiscal year to the dissolution date, and it is due within six months of dissolution.",
+    "kw": "do i need to file a t2 for the year of dissolution",
+    "id": 925
+   },
+   {
+    "title": "Do I Need a Business Number to File a Nil T2?",
+    "desc": "Yes. The return is filed against the corporation's nine-digit business number and its corporation income tax account, so the number must exist.",
+    "kw": "do i need a business number to file a nil t2",
+    "id": 926
+   },
+   {
+    "title": "Do I Need to File a Nil T2 if I Never Started Operating?",
+    "desc": "Yes. The first tax year begins on the incorporation date, not the day trading starts, so a return is due six months after that first year-end.",
+    "kw": "do i need to file a nil t2 if i never started operating",
+    "id": 927
+   },
+   {
+    "title": "Do I Need to File a T2 Every Year When Inactive?",
+    "desc": "Yes, every year. Inactive is a description, not a filing status, so a T2 falls due six months after each year-end until the corporation is closed.",
+    "kw": "do i need to file a t2 every year when inactive",
+    "id": 928
+   },
+   {
+    "title": "Can I File Five Years of Nil T2 Returns at Once?",
+    "desc": "Yes. Five missed fiscal year-ends mean five separate returns, and all five can be prepared and transmitted in one pass.",
+    "kw": "can i file five years of nil t2 returns at once",
+    "id": 929
+   },
+   {
+    "title": "Can I File a Nil T2 Myself Without an Accountant?",
+    "desc": "Yes. Nothing requires a corporation to use an accountant. A corporation that engages an electronic filer signs Form T183CORP before transmission.",
+    "kw": "can i file a nil t2 myself without an accountant",
+    "id": 930
+   },
+   {
+    "title": "Can I Dissolve My Corporation With Unfiled T2 Returns?",
+    "desc": "Not cleanly. The corporate registry and the Canada Revenue Agency are separate, so a registry may strike a corporation while its tax years remain outstanding.",
+    "kw": "can i dissolve my corporation with unfiled t2 returns",
+    "id": 931
+   },
+   {
+    "title": "Can I File a Nil T2 Late Without a Penalty?",
+    "desc": "What actually applies to a late nil T2: the percentage penalty, the year that stays open, a demand to file, and the non-resident per-day charge.",
+    "kw": "can i file a nil t2 late without a penalty",
+    "id": 932
+   },
+   {
+    "title": "Can I File Nil T2 Returns for a Corporation I Forgot About?",
+    "desc": "Yes. A corporation left alone still has a fiscal year-end for every year since incorporation, and each of those years can be filed now.",
+    "kw": "can i file nil t2 returns for a corporation i forgot about",
+    "id": 933
+   },
+   {
+    "title": "Can I Still File a T2 After My Corporation Was Dissolved?",
+    "desc": "Yes. A final return is due within six months of the dissolution date, and years left unfiled before dissolution can still be filed afterwards.",
+    "kw": "can i still file a t2 after my corporation was dissolved",
+    "id": 934
+   },
+   {
+    "title": "Can I Catch Up on Unfiled T2 Returns Without an Audit?",
+    "desc": "Catching up is an ordinary filing, not an audit. Each outstanding year is filed as its own T2 return and assessed in the normal way.",
+    "kw": "can i catch up on unfiled t2 returns without an audit",
+    "id": 1232
+   },
+   {
+    "title": "How Do I File a Nil T2 Return in Canada?",
+    "desc": "You file a T2 return for the tax year showing no income and no expenses, then transmit it to the Canada Revenue Agency electronically.",
+    "kw": "how do i file a nil t2 return in canada",
+    "id": 1234
+   },
+   {
+    "title": "How Do I Catch Up on Years of Unfiled T2 Returns?",
+    "desc": "You file one T2 return for each outstanding tax year, oldest first, each with its own fiscal year dates. There is no combined return that covers several years.",
+    "kw": "how do i catch up on years of unfiled t2 returns",
+    "id": 1236
+   },
+   {
+    "title": "How Do I Know if My Corporation Counts as Dormant?",
+    "desc": "A corporation is treated as dormant for a tax year when it carried on no business, earned nothing and paid nothing out during that year.",
+    "kw": "how do i know if my corporation counts as dormant",
+    "id": 1238
+   },
+   {
+    "title": "How Do I Find Out Which T2 Years Are Outstanding?",
+    "desc": "Your corporate tax account in the Canada Revenue Agency's My Business Account lists every tax year and whether a return has been assessed.",
+    "kw": "how do i find out which t2 years are outstanding",
+    "id": 1240
+   },
+   {
+    "title": "How Do I Dissolve a Corporation That Has Never Filed a T2?",
+    "desc": "Every outstanding T2 is filed first, including a final return to the dissolution date, and then dissolution is applied for through the registry.",
+    "kw": "how do i dissolve a corporation that has never filed a t2",
+    "id": 1242
+   },
+   {
+    "title": "How Do I Close My Corporate Tax Account After Dissolution?",
+    "desc": "The corporate income tax account is closed by asking the Canada Revenue Agency to close the Business Number programme accounts, using Form RC145.",
+    "kw": "how do i close my corporate tax account after dissolution",
+    "id": 1244
+   },
+   {
+    "title": "How Do I Fix a Nil T2 Filed With the Wrong Year-End?",
+    "desc": "A return filed for the wrong period is corrected by filing for the correct period, because the fiscal year dates are what define which year a return covers.",
+    "kw": "how do i fix a nil t2 filed with the wrong year-end",
+    "id": 1246
+   },
+   {
+    "title": "When Should I File My First T2 After Incorporating?",
+    "desc": "The first T2 is due within six months of the first fiscal year-end, and the corporation chooses that year-end itself when it files.",
+    "kw": "when should i file my first t2 after incorporating",
+    "id": 1248
+   },
+   {
+    "title": "When Should I File a Nil T2 for a Short First Tax Year?",
+    "desc": "Within six months of the short year-end, on the same rule as a full year. A short first year is still a complete tax year and needs its own T2.",
+    "kw": "when should i file a nil t2 for a short first tax year",
+    "id": 1250
+   }
+  ]
  }
 }
