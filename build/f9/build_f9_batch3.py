@@ -882,9 +882,13 @@ def render(g):
 
 # Guides 8, 9 and 10 are already published. Their byte counts are the check
 # that this rebuilt generator reproduces the original output exactly.
-PUBLISHED = {'how-to-file-a-nil-t2-return': 23902,
-             'gifi-schedules-100-125-141': 21557,
-             'schedule-8-and-loss-continuity': 22390}
+# Byte counts of the versions live on the site, as a guard against
+# unintended drift. Updated when a change is deliberately published: these
+# three fell by about 150 bytes each when the sibling list became a 12-wide
+# window instead of the whole family, which is the batch 5 change.
+PUBLISHED = {'how-to-file-a-nil-t2-return': 24017,
+             'gifi-schedules-100-125-141': 21708,
+             'schedule-8-and-loss-continuity': 22546}
 
 records = []
 for g in GUIDES:

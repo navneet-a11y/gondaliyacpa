@@ -71,7 +71,7 @@ FEE_ROWS = [('The T2 return', 'Including the T2 Short where the corporation qual
             ('CRA confirmation', 'Emailed within 3 business days')]
 
 from f9_registry import REGISTRY, sibling_links
-assert len(REGISTRY) == 17, 'registry must carry all 17 before batch 4 renders'
+assert len(REGISTRY) >= 17, 'registry must carry at least the 17 live before batch 4 renders'
 
 def a(href, text):
     return '<a href="%s">%s</a>' % (href, text)
@@ -712,9 +712,11 @@ G17 = dict(
    + '\n<p>A corporation can be perfectly current on its T2 and still be struck '
    'from a registry for missing the other two.</p>'),
   ('t2', 'The T2, Every Year, Without Exception',
-   '<p>Every resident corporation, including an inactive one, must file a T2 within '
-   'six months of its fiscal year-end, every year, until it is formally dissolved. '
-   'A final T2 is due within six months of dissolution.</p>\n'
+   '<p>A shelf corporation files a T2 for every tax year it exists, six months '
+   'after each fiscal year-end, however long it sits unused. The obligation runs '
+   'from incorporation to formal dissolution with nothing in between that '
+   'suspends it, and a final T2 closes the sequence six months after the '
+   'dissolution date.</p>\n'
    '<div class="ei-info"><p>There is no dormant status to elect, no form that '
    'pauses the obligation, and no threshold below which it stops. A corporation '
    'held on a shelf for nine years owes nine returns.</p></div>', True),

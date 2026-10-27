@@ -1,0 +1,225 @@
+<style>
+.ei-wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+.ei-btn-blue{background:rgba(32,135,201,1);color:#fff !important;padding:13px 26px;border-radius:6px;font-weight:700;font-size:0.95em;text-transform:uppercase;text-decoration:none !important;display:inline-block;line-height:1.4;text-align:center;min-width:120px}
+.ei-section{padding:26px 20px}
+.ei-section-alt{background:#f7f9fc;padding:26px 20px}
+.ei-art .ei-h2{font-weight:800;color:#1a2340;margin:0 0 10px;font-size:1.45em;line-height:1.3}
+.ei-art > *:last-child{margin-bottom:0}
+.ei-art p{color:#4a5568;line-height:1.8}
+.ei-art a{color:rgba(32,135,201,1)}
+.ei-art ul{color:#4a5568;line-height:1.8}
+.ei-info{background:#f0f7fd;border-left:4px solid rgba(32,135,201,1);border-radius:0 8px 8px 0;padding:14px 18px;margin:18px 0}
+.ei-info p{margin:0;color:#1a2340;line-height:1.7}
+.ei-warn{background:#fffbf0;border-left:4px solid #f6ad1a;border-radius:0 8px 8px 0;padding:14px 18px;margin:18px 0}
+.ei-warn p{margin:0;color:#7c5800;line-height:1.7}
+.ei-danger{background:#fff5f5;border-left:4px solid #e53e3e;border-radius:0 8px 8px 0;padding:14px 18px;margin:18px 0}
+.ei-danger p{margin:0;color:#742a2a;line-height:1.7}
+.ei-hero{background:linear-gradient(135deg,#0f1624 0%,#1a2340 55%,#1e3a6e 100%);padding:40px 20px}
+.ei-hero-inner{max-width:860px;margin:0 auto;text-align:center}
+.ei-hero-eyebrow{display:inline-block;background:rgba(32,135,201,0.15);border:1px solid rgba(32,135,201,0.4);border-radius:50px;padding:5px 16px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:rgba(32,135,201,1);margin-bottom:16px;font-size:.8em}
+.ei-hero h1{color:#fff;font-weight:800;line-height:1.2;margin:0 0 14px;font-size:2.1em}
+.ei-hero h1 span{color:#f6ad1a}
+.ei-hero-sub{color:rgba(255,255,255,0.78);max-width:720px;margin:0 auto 10px;line-height:1.75}
+.ei-hero-by{color:rgba(255,255,255,0.6);max-width:720px;margin:0 auto 22px;line-height:1.6;font-size:.86em}
+.ei-hero-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.ei-tbl{width:100%;border-collapse:collapse;margin:18px 0;border:1px solid #d1d5db}
+.ei-tbl th{background:#1a2340;color:#fff;font-weight:700;padding:12px 14px;text-align:left;border:1px solid #374151}
+.ei-tbl td{padding:10px 14px;border:1px solid #d1d5db;color:#2d3748;line-height:1.5}
+.ei-tbl tr:nth-child(even){background:#f7f9fc}
+.ei-tbl tr:hover{background:#edf2f7}
+.ei-updated{color:#718096;font-size:.9em;margin:0 0 18px}
+.ei-toc{background:linear-gradient(180deg,#ffffff,#f7f9fc);border:1px solid #e2e8f0;border-radius:12px;padding:18px 22px;margin:0 0 10px;box-shadow:0 1px 2px rgba(26,35,64,.05)}
+.ei-toc h2{font-size:.76em;font-weight:800;color:#8795ab;margin:0 0 10px;text-transform:uppercase;letter-spacing:1.3px}
+.ei-toc ol{margin:0;padding:0;list-style:none;counter-reset:toc;columns:2;column-gap:30px}
+.ei-toc li{break-inside:avoid;counter-increment:toc;margin:0}
+.ei-toc a{display:flex;gap:10px;align-items:baseline;padding:6px 9px;border-radius:6px;color:#1a2340;text-decoration:none;line-height:1.45}
+.ei-toc a::before{content:counter(toc);color:rgba(32,135,201,1);font-weight:800;font-size:.82em;min-width:15px;flex-shrink:0}
+.ei-toc a:hover{background:#eaf3fb;color:rgba(32,135,201,1);text-decoration:none}
+.ei-cta-inline{background:#1a2340;border-radius:10px;padding:24px 28px;margin:28px 0;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px}
+.ei-cta-inline h3{color:#fff;margin:0 0 4px;font-weight:700}
+.ei-cta-inline p{color:rgba(255,255,255,0.65);margin:0}
+.ei-cta-inline a,.ei-cta-inline a:visited,.ei-cta-inline a:hover,.ei-cta-bottom a,.ei-cta-bottom a:visited,.ei-cta-bottom a:hover,.ei-hero-btns a,.ei-hero-btns a:visited,.ei-hero-btns a:hover{color:#fff !important;text-decoration:none !important}
+.ei-faq{max-width:900px;margin:16px auto 0}
+.ei-faq details{border:1px solid #e2e8f0;border-radius:8px;margin-bottom:9px;background:#fff}
+.ei-faq summary{padding:14px 18px;font-weight:600;color:#1a2340;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:14px;line-height:1.5}
+.ei-faq summary::-webkit-details-marker{display:none}
+.ei-faq summary::after{content:'+';color:rgba(32,135,201,1);font-weight:400;font-size:1.4em;line-height:1;flex-shrink:0;transition:transform .15s ease}
+.ei-faq details[open] summary{color:rgba(32,135,201,1)}
+.ei-faq details[open] summary::after{transform:rotate(45deg)}
+.ei-faq .ei-faq-a{padding:0 18px 15px}
+.ei-faq .ei-faq-a p{margin:0;color:#4a5568;line-height:1.75}
+.ei-art h3{font-weight:700;color:#1a2340;margin:26px 0 8px;font-size:1.15em}
+.ei-qlist{max-width:900px;margin:12px auto 0;padding:0;list-style:none}
+.ei-qlist li{border:1px solid #e2e8f0;border-radius:8px;margin-bottom:10px;background:#fff}
+.ei-qlist a{display:block;padding:16px 20px;font-weight:600;color:#1a2340 !important;text-decoration:none !important}
+.ei-qlist a:hover{background:#f7f9fc;color:rgba(32,135,201,1) !important}
+.ei-cta-bottom{background:linear-gradient(135deg,#0f1624,#1a2340);padding:40px 20px;text-align:center}
+.ei-cta-bottom h2{color:#fff;font-weight:800;margin:0 0 10px;font-size:1.5em}
+.ei-cta-bottom p{color:rgba(255,255,255,0.72);max-width:600px;margin:0 auto 22px;line-height:1.75}
+.entry-header{display:none!important}
+.ast-article-single,.ast-article-single .entry-content{margin-top:0;padding-top:0}
+@media(max-width:900px){.ei-cta-inline{flex-direction:column;text-align:center}.ei-hero h1{font-size:1.6em}.ei-art .ei-h2{font-size:1.3em}.ei-toc ol{columns:1}}
+</style>
+<div class="ei-hero"><div class="ei-hero-inner"><span class="ei-hero-eyebrow">Small Business Guide</span><h1>The Complete Guide to <span>Small Business Corporate Filing</span></h1><p class="ei-hero-sub">Everything a small Canadian corporation files each year, which of it is tax and which is registry, and how to tell a nil year from a trading one. Nil T2 filing is $300.00 plus HST per tax year.</p><p class="ei-hero-by">Written and reviewed by Sharad Gondaliya, CPA (Ontario), CPA Ontario Membership 61040184.</p><div class="ei-hero-btns"><a class="ei-btn-blue" href="https://corpnilfilingfor300.ca/form/">Start Nil T2 Filing NOW</a><a class="ei-btn-blue" style="background:transparent;border:2px solid rgba(255,255,255,0.4)" href="https://corpnilfilingfor300.ca/nil-t2-filing/">Nil T2 Filing Services</a></div></div></div>
+<div class="ei-section"><div class="ei-wrap ei-art">
+<p class="ei-updated">Last reviewed: October 27, 2026 &nbsp;&middot;&nbsp; <a href="https://corpnilfilingfor300.ca/guides/">All nil T2 filing guides</a></p>
+<div class="ei-toc"><h2>On this page</h2>
+<ol>
+<li><a href="#obligation">What Every Small Corporation Owes Each Year</a></li>
+<li><a href="#nil-or-not">Deciding Whether Your Year Is Nil</a></li>
+<li><a href="#t2-short">The T2 Short and Who Qualifies</a></li>
+<li><a href="#schedules">The Schedules a Small Corporation Files</a></li>
+<li><a href="#ccpc">Canadian-Controlled Private Corporation Status</a></li>
+<li><a href="#annual-returns">The Annual Return Is a Separate Filing</a></li>
+<li><a href="#gst-payroll">GST/HST and Payroll Accounts</a></li>
+<li><a href="#records">Records a Small Corporation Keeps</a></li>
+<li><a href="#first-year">The First Year After Incorporating</a></li>
+<li><a href="#dormant-years">Dormant Years Between Active Ones</a></li>
+<li><a href="#growing">When the Corporation Outgrows a Nil Return</a></li>
+<li><a href="#fee">What the Fee Covers</a></li>
+</ol></div>
+<div class="ei-info"><p>Gondaliya CPA Professional Corporation is a registered EFILE electronic filer. Returns are prepared and transmitted in Canada. Credentials are never shared and never used offshore.</p></div>
+</div></div>
+<div class="ei-section-alt" id="obligation"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">What Every Small Corporation Owes Each Year</h2>
+<p>A small corporation faces a short list of recurring obligations. Not all of them are tax, and the ones that are not catch people out more often than the ones that are.</p>
+<table class="ei-tbl"><thead><tr><th scope="col">Filing</th><th scope="col">Type</th><th scope="col">Applies</th></tr></thead><tbody>
+<tr><td>The T2 corporate income tax return</td><td>Tax</td><td>Every year, always</td></tr>
+<tr><td>The annual return</td><td>Registry</td><td>Every year in most jurisdictions</td></tr>
+<tr><td>Provincial corporate return</td><td>Tax</td><td>Alberta and Quebec, separately</td></tr>
+<tr><td>GST/HST return</td><td>Tax</td><td>Where the corporation has an account</td></tr>
+<tr><td>Payroll remittances and T4s</td><td>Tax</td><td>Where the corporation has an account</td></tr>
+</tbody></table>
+<p>The first row is the only one that applies to every corporation in every year without exception.</p>
+</div></div>
+<div class="ei-section" id="nil-or-not"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">Deciding Whether Your Year Is Nil</h2>
+<p>The return is nil where the corporation had no revenue, no expenses, no income of any kind and no disposition of property in the tax year. Amount does not come into it.</p>
+<p>A holding corporation with investment income, a rental corporation and a corporation that paid or received a dividend are not nil. Those are handled by Gondaliya CPA Professional Corporation at gondaliyacpa.ca at $350.00 plus HST per year.</p>
+<p>The entries that most often take a year out of nil are bank interest credited to a corporate account and a registry fee paid from it. The full test is in the guide to <a href="https://corpnilfilingfor300.ca/guides/zero-activity-corporate-tax-returns/">zero-activity corporate tax returns</a>.</p>
+</div></div>
+<div class="ei-section-alt" id="t2-short"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">The T2 Short and Who Qualifies</h2>
+<p>The T2 Short is a two-page return available to a Canadian-controlled private corporation meeting a list of conditions. A small corporation with a quiet year commonly meets them.</p>
+<table class="ei-tbl"><thead><tr><th scope="col">Condition</th><th scope="col">Requirement</th></tr></thead><tbody>
+<tr><td>Corporation type</td><td>Canadian-controlled private corporation</td></tr>
+<tr><td>Permanent establishments</td><td>One only</td></tr>
+<tr><td>Reporting currency</td><td>Canadian dollars</td></tr>
+<tr><td>Refundable credits claimed</td><td>None</td></tr>
+<tr><td>Amalgamation in the year</td><td>None</td></tr>
+</tbody></table>
+<p>Eligibility is tested year by year. See the guide to <a href="https://corpnilfilingfor300.ca/guides/t2-short-eligibility/">T2 Short eligibility</a>.</p>
+</div></div>
+<div class="ei-section" id="schedules"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">The Schedules a Small Corporation Files</h2>
+<p>The return is not the whole filing. Several schedules accompany it, and one of them appears only on a first return.</p>
+<table class="ei-tbl"><thead><tr><th scope="col">Schedule</th><th scope="col">Reports</th><th scope="col">When</th></tr></thead><tbody>
+<tr><td>100</td><td>The balance sheet</td><td>Every year</td></tr>
+<tr><td>125</td><td>The income statement</td><td>Every year</td></tr>
+<tr><td>141</td><td>The notes checklist</td><td>Every year</td></tr>
+<tr><td>24</td><td>First-time filer information</td><td>The first return only</td></tr>
+<tr><td>50</td><td>Shareholders at 10% or more</td><td>Where there are any</td></tr>
+<tr><td>8</td><td>Capital cost allowance</td><td>Where depreciable property is held</td></tr>
+</tbody></table>
+<p>Full detail is in the guide to <a href="https://corpnilfilingfor300.ca/guides/t2-schedules-on-a-nil-return/">T2 schedules on a nil return</a>.</p>
+</div></div>
+<div class="ei-wrap"><div class="ei-cta-inline"><div><h3>Nil T2 Filing, $300.00 plus HST per tax year</h3><p>One price for every year and every province. CPA reviewed and transmitted electronically.</p></div><a class="ei-btn-blue" href="https://corpnilfilingfor300.ca/form/">Start Nil T2 Filing NOW</a></div></div>
+<div class="ei-section-alt" id="ccpc"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">Canadian-Controlled Private Corporation Status</h2>
+<p>Most small Canadian corporations are Canadian-controlled private corporations, and the status matters on a nil return for one reason: it is a condition of the T2 Short.</p>
+<p>The status turns on who controls the corporation and whether its shares are publicly traded. A corporation controlled by non-residents or by a public corporation does not have it.</p>
+<div class="ei-info"><p>Where the status is absent the return is a full T2 rather than the short form, and the figures reported are the same.</p></div>
+</div></div>
+<div class="ei-section" id="annual-returns"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">The Annual Return Is a Separate Filing</h2>
+<p>The annual return is filed with the registry the corporation was incorporated under. It confirms the directors, the registered office and the corporation's continued existence. It reports no income and it is not a tax return.</p>
+<p>Missing it is what gets a corporation struck from a registry, which is a different and more abrupt problem than an unfiled T2.</p>
+<p>It is not covered by the fee on this page. See the guide to <a href="https://corpnilfilingfor300.ca/guides/provincial-and-federal-annual-returns/">provincial and federal annual returns</a>.</p>
+</div></div>
+<div class="ei-section-alt" id="gst-payroll"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">GST/HST and Payroll Accounts</h2>
+<p>These exist only where the corporation registered for them, and once they exist they generate obligations independently of the T2.</p>
+<table class="ei-tbl"><thead><tr><th scope="col">Account</th><th scope="col">Obligation while open</th><th scope="col">Closed by</th></tr></thead><tbody>
+<tr><td>GST/HST</td><td>Returns remain due, nil ones included</td><td>Form RC145</td></tr>
+<tr><td>Payroll</td><td>Remittances remain expected, nil ones included</td><td>Form RC145</td></tr>
+</tbody></table>
+<p>A dormant corporation with an open GST/HST account owes nil GST/HST returns as well as its nil T2. Neither closure is covered by the fee on this page.</p>
+</div></div>
+<div class="ei-section" id="records"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">Records a Small Corporation Keeps</h2>
+<p>Books and records are kept whether or not the corporation traded, and a nil year still has records: the bank statements that show no movement, the registry filings and the minute book.</p>
+<p>A nil T2 does not require prepared financial statements. The balance sheet and income statement are reported through the coded GIFI format on the return itself.</p>
+<p>See <a href="https://corpnilfilingfor300.ca/answers/do-i-need-financial-statements-for-a-nil-t2-return/">whether financial statements are needed</a>.</p>
+</div></div>
+<div class="ei-section-alt" id="first-year"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">The First Year After Incorporating</h2>
+<p>The first tax year runs from incorporation to the chosen year-end and may not exceed 53 weeks. The first return filed is what fixes the year-end, and Schedule 24 appears on it.</p>
+<p>Many first years are nil, because the corporation was set up before trading began. A nil first year is filed exactly as any other.</p>
+<p>See the guide to <a href="https://corpnilfilingfor300.ca/guides/first-year-t2-filing/">first-year T2 filing</a> and <a href="https://corpnilfilingfor300.ca/answers/when-should-i-file-my-first-t2-after-incorporating/">when the first T2 is due</a>.</p>
+</div></div>
+<div class="ei-section" id="dormant-years"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">Dormant Years Between Active Ones</h2>
+<p>A corporation that traded, stopped and may trade again files a nil return for each quiet year. The earlier trading does not change what the quiet year is.</p>
+<p>Each year is assessed on its own facts, so a nil year sitting between two trading years is still a nil year.</p>
+<p>See the guide to <a href="https://corpnilfilingfor300.ca/guides/dormant-and-inactive-corporations/">dormant and inactive corporations</a>.</p>
+</div></div>
+<div class="ei-section-alt" id="growing"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">When the Corporation Outgrows a Nil Return</h2>
+<p>The year revenue arrives is a trading year, whatever month it arrives in. From that point the return carries real figures and real schedules.</p>
+<p>Filing then moves to Gondaliya CPA Professional Corporation at gondaliyacpa.ca, at $350.00 plus HST per year.</p>
+<p>The handover is described at <a href="https://corpnilfilingfor300.ca/when-your-corporation-starts-operating/">when your corporation starts operating</a>.</p>
+</div></div>
+<div class="ei-section" id="fee"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">What the Fee Covers</h2>
+<p>The fee is $300.00 plus HST per tax year, covering one nil T2 return for one corporation for one tax year:</p>
+<table class="ei-tbl"><thead><tr><th scope="col">Included</th><th scope="col">Detail</th></tr></thead><tbody>
+<tr><td>The T2 return</td><td>Including the T2 Short where the corporation qualifies</td></tr>
+<tr><td>GIFI Schedules 100, 125 and 141</td><td>Where they are required</td></tr>
+<tr><td>Schedule 24</td><td>On a first return</td></tr>
+<tr><td>Schedule 50</td><td>For every shareholder at 10% or more</td></tr>
+<tr><td>Schedule 8 and loss continuity</td><td>Recorded</td></tr>
+<tr><td>Form T183CORP package</td><td>With single-use secure e-signing</td></tr>
+<tr><td>CPA review</td><td>Before transmission</td></tr>
+<tr><td>Electronic transmission</td><td>By a registered EFILE electronic filer</td></tr>
+<tr><td>One corrected transmission</td><td>If the Agency rejects the first one</td></tr>
+<tr><td>CRA confirmation</td><td>Emailed within 3 business days</td></tr>
+</tbody></table>
+<p>See the full <a href="https://corpnilfilingfor300.ca/pricing/nil-t2-filing-cost/">nil T2 filing cost</a>.</p>
+</div></div>
+<div class="ei-section-alt"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">Frequently Asked Questions</h2>
+<div class="ei-faq">
+<details><summary>What Does a Small Corporation Have to File Every Year?</summary><div class="ei-faq-a"><p>The T2 corporate income tax return, always. In most jurisdictions an annual return with the registry as well, and separately the Alberta AT1 or the Quebec CO-17 where the corporation is in those provinces.</p></div></details>
+<details><summary>Is the Annual Return the Same as the T2?</summary><div class="ei-faq-a"><p>No. The annual return is a registry filing confirming the directors, the registered office and the corporation's existence. It reports no income and missing it is what gets a corporation struck from a registry.</p></div></details>
+<details><summary>Do I Need Financial Statements for a Nil T2?</summary><div class="ei-faq-a"><p>No. The balance sheet and income statement are reported through the coded GIFI format on the return itself, so no separately prepared statements are required.</p></div></details>
+<details><summary>Can I File a Nil T2 Myself?</summary><div class="ei-faq-a"><p>A director can, but for tax years starting after 2023 electronic filing is mandatory for virtually all corporations, and a paper return draws a flat charge. Returns here are transmitted electronically by a registered EFILE electronic filer.</p></div></details>
+<details><summary>Does an Open GST/HST Account Matter on a Dormant Corporation?</summary><div class="ei-faq-a"><p>Yes. While the account is open, GST/HST returns remain due including nil ones, separately from the T2. It is closed with Form RC145.</p></div></details>
+<details><summary>What Happens When the Corporation Starts Trading?</summary><div class="ei-faq-a"><p>That whole year is a trading year, whatever month the revenue arrives in. Filing moves to Gondaliya CPA Professional Corporation at gondaliyacpa.ca at $350.00 plus HST per year.</p></div></details>
+</div>
+<h3>Questions Answered in Full</h3>
+<ul class="ei-qlist">
+<li><a href="https://corpnilfilingfor300.ca/answers/can-i-file-a-nil-t2-myself-without-an-accountant/">Can I File a Nil T2 Myself Without an Accountant?</a></li>
+<li><a href="https://corpnilfilingfor300.ca/answers/do-i-need-financial-statements-for-a-nil-t2-return/">Do I Need Financial Statements for a Nil T2 Return?</a></li>
+<li><a href="https://corpnilfilingfor300.ca/answers/do-i-need-a-business-number-to-file-a-nil-t2/">Do I Need a Business Number to File a Nil T2?</a></li>
+<li><a href="https://corpnilfilingfor300.ca/answers/do-i-need-to-file-a-t2-if-my-corporation-had-no-activity/">Do I Need to File a T2 if My Corporation Had No Activity?</a></li>
+<li><a href="https://corpnilfilingfor300.ca/answers/when-should-i-file-my-first-t2-after-incorporating/">When Should I File My First T2 After Incorporating?</a></li>
+<li><a href="https://corpnilfilingfor300.ca/answers/how-do-i-file-a-nil-t2-return-in-canada/">How Do I File a Nil T2 Return in Canada?</a></li>
+</ul>
+<h3>The Other Nil T2 Filing Guides</h3>
+<ul class="ei-qlist">
+<li><a href="https://corpnilfilingfor300.ca/guides/corporate-compliance-calendar/">The Complete Guide to the Corporate Compliance Calendar</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/numbered-company-maintenance/">The Complete Guide to Numbered Company Maintenance</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/mandatory-t2-electronic-filing/">The Complete Guide to Mandatory T2 Electronic Filing</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/schedule-50-and-shareholder-reporting/">The Complete Guide to Schedule 50 and Shareholder Reporting</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/non-resident-owned-corporation-nil-filing/">The Complete Guide to Non-Resident-Owned Corporation Nil Filing</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/nil-t2-return-complete-guide/">The Complete Guide to the Nil T2 Return</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/dormant-and-inactive-corporations/">The Complete Guide to Dormant and Inactive Corporations</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/catch-up-unfiled-corporate-tax-returns/">The Complete Guide to Catching Up on Unfiled Corporate Tax Returns</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/final-t2-and-dissolution/">The Complete Guide to the Final T2 and Dissolution</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/t2-short-eligibility/">The Complete Guide to T2 Short Eligibility</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/provincial-and-federal-annual-returns/">The Complete Guide to Provincial and Federal Annual Returns</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/t183corp-signing-and-transmission/">The Complete Guide to Form T183CORP Signing and Transmission</a></li>
+</ul>
+</div></div>
+<div class="ei-cta-bottom"><div class="ei-wrap"><h2>Nil T2 Filing, $300.00 plus HST per tax year</h2><p>Type your corporation name, pick your unfiled years, pay, and sign Form T183CORP on a secure screen. Your CRA confirmation is emailed within 3 business days.</p><a class="ei-btn-blue" href="https://corpnilfilingfor300.ca/form/">Start Nil T2 Filing NOW</a></div></div>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Article", "@id": "https://corpnilfilingfor300.ca/guides/small-business-corporate-filing/#article", "headline": "The Complete Guide to Small Business Corporate Filing", "name": "Small Business Corporate Filing | Canadian Guide", "description": "Everything a small Canadian corporation files each year, which of it is tax and which is registry, and how to tell a nil year from a trading one.", "inLanguage": "en-CA", "datePublished": "2026-10-27", "dateModified": "2026-10-27", "mainEntityOfPage": "https://corpnilfilingfor300.ca/guides/small-business-corporate-filing/", "author": {"@type": "Person", "name": "Sharad Gondaliya", "honorificSuffix": "CPA", "url": "https://corpnilfilingfor300.ca/sharad-gondaliya-cpa/"}, "publisher": {"@type": "Organization", "name": "Gondaliya CPA Professional Corporation"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Nil T2 filing in Canada", "item": "https://corpnilfilingfor300.ca/"}, {"@type": "ListItem", "position": 2, "name": "Guides", "item": "https://corpnilfilingfor300.ca/guides/"}, {"@type": "ListItem", "position": 3, "name": "The Complete Guide to Small Business Corporate Filing", "item": "https://corpnilfilingfor300.ca/guides/small-business-corporate-filing/"}]}]}</script>

@@ -1,14 +1,26 @@
 """The Family 9 guide registry, shared by every generator.
 
-Every guide lists all the others, so each of the seventeen carries sixteen
-sibling inbound links plus the hub. That is what meets the 6(g) line 1528
-minimum of 12 inbound for Family 9. Keeping the list in one module means
-adding a guide updates the sibling list on every earlier one at once, rather
-than leaving them stale. Earlier batches must then be regenerated and the live
-guides updated, or the new entries are missing from their sibling lists.
+Order is publication order. Adding a guide here changes the sibling list on
+every earlier guide, so all batches must be regenerated and the live guides
+updated, or their sibling lists silently omit the new entries.
 
-Order is publication order.
+Why the sibling list is a window rather than the whole family
+------------------------------------------------------------
+Until guide 17 every guide listed all the others. That met the 6(g) minimum of
+12 inbound comfortably, but it does not scale: the sibling list grows with the
+family while 6(g) also caps outbound links at 40. Measured at 17 guides, the
+pillar already carried 34 outbound links, and ten more guides would have taken
+it to 44 -- over the cap. At the full 30 the design is unbuildable.
+
+So each guide now links the next WINDOW guides in registry order, wrapping
+round. That is a circulant digraph: every guide links out to exactly 12 and is
+linked to by exactly 12, whatever the family's size. With the hub that is 13
+inbound against a minimum of 12, and outbound drops by 14 links on every guide,
+leaving headroom to 30 and beyond. assert_regular() below proves the inbound
+count rather than trusting the construction.
 """
+
+WINDOW = 12
 
 REGISTRY = [
  ('nil-t2-return-complete-guide', 'The Complete Guide to the Nil T2 Return'),
@@ -39,11 +51,73 @@ REGISTRY = [
   'The Complete Guide to T2 Schedules on a Nil Return'),
  ('shelf-corporation-compliance',
   'The Complete Guide to Shelf Corporation Compliance'),
+ # Batch 5, guides 18 to 27.
+ ('t2-filing-deadlines', 'The Complete Guide to T2 Filing Deadlines'),
+ ('zero-activity-corporate-tax-returns',
+  'The Complete Guide to Zero-Activity Corporate Tax Returns'),
+ ('corporate-tax-arrears-and-interest',
+  'The Complete Guide to Corporate Tax Arrears and Interest'),
+ ('winding-up-an-inactive-corporation',
+  'The Complete Guide to Winding Up an Inactive Corporation'),
+ ('small-business-corporate-filing',
+  'The Complete Guide to Small Business Corporate Filing'),
+ ('corporate-compliance-calendar',
+  'The Complete Guide to the Corporate Compliance Calendar'),
+ ('numbered-company-maintenance',
+  'The Complete Guide to Numbered Company Maintenance'),
+ ('mandatory-t2-electronic-filing',
+  'The Complete Guide to Mandatory T2 Electronic Filing'),
+ ('schedule-50-and-shareholder-reporting',
+  'The Complete Guide to Schedule 50 and Shareholder Reporting'),
+ ('non-resident-owned-corporation-nil-filing',
+  'The Complete Guide to Non-Resident-Owned Corporation Nil Filing'),
 ]
 
 HUB = 'https://corpnilfilingfor300.ca/guides/'
 
+SLUGS = [s for s, _t in REGISTRY]
+assert len(set(SLUGS)) == len(SLUGS), 'duplicate slug in the registry'
+assert len(REGISTRY) > WINDOW, 'the window must be smaller than the family'
+for _s, _t in REGISTRY:
+    assert '2026' not in _s and '2027' not in _s, (
+        'year token in guide slug %r; 6(k) forbids it outright' % _s)
+
+
+def siblings(own_slug):
+    """The WINDOW guides this one links to: the next ones in order, wrapping."""
+    i = SLUGS.index(own_slug)
+    n = len(REGISTRY)
+    return [REGISTRY[(i + k) % n] for k in range(1, WINDOW + 1)]
+
+
 def sibling_links(own_slug):
-    """The sixteen <li> rows every guide carries, excluding itself."""
+    """The WINDOW <li> rows every guide carries, excluding itself."""
     return '\n'.join('<li><a href="%s%s/">%s</a></li>' % (HUB, s, t)
-                     for s, t in REGISTRY if s != own_slug)
+                     for s, t in siblings(own_slug))
+
+
+def assert_regular():
+    """Prove every guide receives exactly WINDOW sibling links.
+
+    6(g) sets a minimum of 12 inbound for Family 9. The window only satisfies
+    it if the digraph really is regular, so count it rather than assume it.
+    """
+    inbound = {s: 0 for s in SLUGS}
+    for s in SLUGS:
+        for t, _title in siblings(s):
+            assert t != s, 'guide %r links to itself' % s
+            inbound[t] += 1
+    bad = {s: n for s, n in inbound.items() if n != WINDOW}
+    assert not bad, 'uneven inbound: %r' % bad
+    return inbound
+
+
+assert_regular()
+
+if __name__ == '__main__':
+    inbound = assert_regular()
+    print('%d guides, window %d' % (len(REGISTRY), WINDOW))
+    print('every guide: %d sibling inbound + 1 hub = %d, against a 6(g) minimum of 12'
+          % (WINDOW, WINDOW + 1))
+    print('outbound sibling links per guide: %d (was %d with a full list)'
+          % (WINDOW, len(REGISTRY) - 1))

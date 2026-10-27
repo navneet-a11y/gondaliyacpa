@@ -1,0 +1,226 @@
+<style>
+.ei-wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+.ei-btn-blue{background:rgba(32,135,201,1);color:#fff !important;padding:13px 26px;border-radius:6px;font-weight:700;font-size:0.95em;text-transform:uppercase;text-decoration:none !important;display:inline-block;line-height:1.4;text-align:center;min-width:120px}
+.ei-section{padding:26px 20px}
+.ei-section-alt{background:#f7f9fc;padding:26px 20px}
+.ei-art .ei-h2{font-weight:800;color:#1a2340;margin:0 0 10px;font-size:1.45em;line-height:1.3}
+.ei-art > *:last-child{margin-bottom:0}
+.ei-art p{color:#4a5568;line-height:1.8}
+.ei-art a{color:rgba(32,135,201,1)}
+.ei-art ul{color:#4a5568;line-height:1.8}
+.ei-info{background:#f0f7fd;border-left:4px solid rgba(32,135,201,1);border-radius:0 8px 8px 0;padding:14px 18px;margin:18px 0}
+.ei-info p{margin:0;color:#1a2340;line-height:1.7}
+.ei-warn{background:#fffbf0;border-left:4px solid #f6ad1a;border-radius:0 8px 8px 0;padding:14px 18px;margin:18px 0}
+.ei-warn p{margin:0;color:#7c5800;line-height:1.7}
+.ei-danger{background:#fff5f5;border-left:4px solid #e53e3e;border-radius:0 8px 8px 0;padding:14px 18px;margin:18px 0}
+.ei-danger p{margin:0;color:#742a2a;line-height:1.7}
+.ei-hero{background:linear-gradient(135deg,#0f1624 0%,#1a2340 55%,#1e3a6e 100%);padding:40px 20px}
+.ei-hero-inner{max-width:860px;margin:0 auto;text-align:center}
+.ei-hero-eyebrow{display:inline-block;background:rgba(32,135,201,0.15);border:1px solid rgba(32,135,201,0.4);border-radius:50px;padding:5px 16px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:rgba(32,135,201,1);margin-bottom:16px;font-size:.8em}
+.ei-hero h1{color:#fff;font-weight:800;line-height:1.2;margin:0 0 14px;font-size:2.1em}
+.ei-hero h1 span{color:#f6ad1a}
+.ei-hero-sub{color:rgba(255,255,255,0.78);max-width:720px;margin:0 auto 10px;line-height:1.75}
+.ei-hero-by{color:rgba(255,255,255,0.6);max-width:720px;margin:0 auto 22px;line-height:1.6;font-size:.86em}
+.ei-hero-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.ei-tbl{width:100%;border-collapse:collapse;margin:18px 0;border:1px solid #d1d5db}
+.ei-tbl th{background:#1a2340;color:#fff;font-weight:700;padding:12px 14px;text-align:left;border:1px solid #374151}
+.ei-tbl td{padding:10px 14px;border:1px solid #d1d5db;color:#2d3748;line-height:1.5}
+.ei-tbl tr:nth-child(even){background:#f7f9fc}
+.ei-tbl tr:hover{background:#edf2f7}
+.ei-updated{color:#718096;font-size:.9em;margin:0 0 18px}
+.ei-toc{background:linear-gradient(180deg,#ffffff,#f7f9fc);border:1px solid #e2e8f0;border-radius:12px;padding:18px 22px;margin:0 0 10px;box-shadow:0 1px 2px rgba(26,35,64,.05)}
+.ei-toc h2{font-size:.76em;font-weight:800;color:#8795ab;margin:0 0 10px;text-transform:uppercase;letter-spacing:1.3px}
+.ei-toc ol{margin:0;padding:0;list-style:none;counter-reset:toc;columns:2;column-gap:30px}
+.ei-toc li{break-inside:avoid;counter-increment:toc;margin:0}
+.ei-toc a{display:flex;gap:10px;align-items:baseline;padding:6px 9px;border-radius:6px;color:#1a2340;text-decoration:none;line-height:1.45}
+.ei-toc a::before{content:counter(toc);color:rgba(32,135,201,1);font-weight:800;font-size:.82em;min-width:15px;flex-shrink:0}
+.ei-toc a:hover{background:#eaf3fb;color:rgba(32,135,201,1);text-decoration:none}
+.ei-cta-inline{background:#1a2340;border-radius:10px;padding:24px 28px;margin:28px 0;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px}
+.ei-cta-inline h3{color:#fff;margin:0 0 4px;font-weight:700}
+.ei-cta-inline p{color:rgba(255,255,255,0.65);margin:0}
+.ei-cta-inline a,.ei-cta-inline a:visited,.ei-cta-inline a:hover,.ei-cta-bottom a,.ei-cta-bottom a:visited,.ei-cta-bottom a:hover,.ei-hero-btns a,.ei-hero-btns a:visited,.ei-hero-btns a:hover{color:#fff !important;text-decoration:none !important}
+.ei-faq{max-width:900px;margin:16px auto 0}
+.ei-faq details{border:1px solid #e2e8f0;border-radius:8px;margin-bottom:9px;background:#fff}
+.ei-faq summary{padding:14px 18px;font-weight:600;color:#1a2340;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:14px;line-height:1.5}
+.ei-faq summary::-webkit-details-marker{display:none}
+.ei-faq summary::after{content:'+';color:rgba(32,135,201,1);font-weight:400;font-size:1.4em;line-height:1;flex-shrink:0;transition:transform .15s ease}
+.ei-faq details[open] summary{color:rgba(32,135,201,1)}
+.ei-faq details[open] summary::after{transform:rotate(45deg)}
+.ei-faq .ei-faq-a{padding:0 18px 15px}
+.ei-faq .ei-faq-a p{margin:0;color:#4a5568;line-height:1.75}
+.ei-art h3{font-weight:700;color:#1a2340;margin:26px 0 8px;font-size:1.15em}
+.ei-qlist{max-width:900px;margin:12px auto 0;padding:0;list-style:none}
+.ei-qlist li{border:1px solid #e2e8f0;border-radius:8px;margin-bottom:10px;background:#fff}
+.ei-qlist a{display:block;padding:16px 20px;font-weight:600;color:#1a2340 !important;text-decoration:none !important}
+.ei-qlist a:hover{background:#f7f9fc;color:rgba(32,135,201,1) !important}
+.ei-cta-bottom{background:linear-gradient(135deg,#0f1624,#1a2340);padding:40px 20px;text-align:center}
+.ei-cta-bottom h2{color:#fff;font-weight:800;margin:0 0 10px;font-size:1.5em}
+.ei-cta-bottom p{color:rgba(255,255,255,0.72);max-width:600px;margin:0 auto 22px;line-height:1.75}
+.entry-header{display:none!important}
+.ast-article-single,.ast-article-single .entry-content{margin-top:0;padding-top:0}
+@media(max-width:900px){.ei-cta-inline{flex-direction:column;text-align:center}.ei-hero h1{font-size:1.6em}.ei-art .ei-h2{font-size:1.3em}.ei-toc ol{columns:1}}
+</style>
+<div class="ei-hero"><div class="ei-hero-inner"><span class="ei-hero-eyebrow">Zero-Activity Guide</span><h1>The Complete Guide to <span>Zero-Activity Corporate Tax Returns</span></h1><p class="ei-hero-sub">What counts as zero activity, the entries that quietly take a year out of it, and which schedules a zero-activity return still carries. Nil T2 filing is $300.00 plus HST per tax year.</p><p class="ei-hero-by">Written and reviewed by Sharad Gondaliya, CPA (Ontario), CPA Ontario Membership 61040184.</p><div class="ei-hero-btns"><a class="ei-btn-blue" href="https://corpnilfilingfor300.ca/form/">Start Nil T2 Filing NOW</a><a class="ei-btn-blue" style="background:transparent;border:2px solid rgba(255,255,255,0.4)" href="https://corpnilfilingfor300.ca/nil-t2-filing/">Nil T2 Filing Services</a></div></div></div>
+<div class="ei-section"><div class="ei-wrap ei-art">
+<p class="ei-updated">Last reviewed: October 27, 2026 &nbsp;&middot;&nbsp; <a href="https://corpnilfilingfor300.ca/guides/">All nil T2 filing guides</a></p>
+<div class="ei-toc"><h2>On this page</h2>
+<ol>
+<li><a href="#definition">What Zero Activity Means on a Return</a></li>
+<li><a href="#still-file">Why a Zero-Activity Corporation Still Files</a></li>
+<li><a href="#tests">The Tests That Decide Whether a Year Is Nil</a></li>
+<li><a href="#not-zero">What Looks Like Zero Activity and Is Not</a></li>
+<li><a href="#bank">No Bank Account and No Business Number</a></li>
+<li><a href="#schedules">Which Schedules a Zero-Activity Return Carries</a></li>
+<li><a href="#gifi">Reporting Zeroes Through the GIFI</a></li>
+<li><a href="#short-form">The T2 Short on a Zero-Activity Year</a></li>
+<li><a href="#multiple">Several Zero-Activity Years at Once</a></li>
+<li><a href="#consequences">Leaving a Zero-Activity Year Unfiled</a></li>
+<li><a href="#moving-on">When Activity Starts</a></li>
+<li><a href="#fee">What the Fee Covers</a></li>
+</ol></div>
+<div class="ei-info"><p>Gondaliya CPA Professional Corporation is a registered EFILE electronic filer. Returns are prepared and transmitted in Canada. Credentials are never shared and never used offshore.</p></div>
+</div></div>
+<div class="ei-section-alt" id="definition"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">What Zero Activity Means on a Return</h2>
+<p>Zero activity means the corporation had no revenue, no expenses, no income of any kind and no disposition of property during the tax year. The return is filed showing those amounts as $0.00.</p>
+<p>It is a statement about the tax year, not about the corporation. The same corporation can have a zero-activity year, then a trading year, then another zero-activity year, and each is assessed on its own.</p>
+<div class="ei-info"><p>Zero activity is a property of the twelve months, which is why the question is always asked year by year and never once for the life of the corporation.</p></div>
+</div></div>
+<div class="ei-section" id="still-file"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">Why a Zero-Activity Corporation Still Files</h2>
+<p>Every resident corporation files a T2 for every tax year, whether or not it did anything. The obligation attaches to existing as a corporation, not to earning income.</p>
+<p>The return is how the Agency learns the year was zero. Without it the year is not recorded as zero, it is recorded as missing.</p>
+<p>See <a href="https://corpnilfilingfor300.ca/answers/do-i-need-to-file-a-t2-if-my-corporation-had-no-activity/">whether a corporation with no activity files</a>.</p>
+</div></div>
+<div class="ei-section-alt" id="tests"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">The Tests That Decide Whether a Year Is Nil</h2>
+<p>Six questions settle it. A single yes takes the year out of zero activity, and the questions are asked about the tax year rather than about today.</p>
+<table class="ei-tbl"><thead><tr><th scope="col">Question</th><th scope="col">If yes</th></tr></thead><tbody>
+<tr><td>Was there any revenue?</td><td>Not a zero-activity year</td></tr>
+<tr><td>Were there any expenses?</td><td>Not a zero-activity year</td></tr>
+<tr><td>Was there investment income of any amount?</td><td>Not a zero-activity year</td></tr>
+<tr><td>Was there rental income?</td><td>Not a zero-activity year</td></tr>
+<tr><td>Was a dividend paid or received?</td><td>Not a zero-activity year</td></tr>
+<tr><td>Was any property disposed of?</td><td>Not a zero-activity year</td></tr>
+</tbody></table>
+<p>Amount is irrelevant to every row. Four dollars of interest answers the third question yes exactly as four thousand would.</p>
+</div></div>
+<div class="ei-section" id="not-zero"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">What Looks Like Zero Activity and Is Not</h2>
+<p>These are the entries that most often turn up on a year the directors believed was empty.</p>
+<table class="ei-tbl"><thead><tr><th scope="col">Entry</th><th scope="col">Why it is not zero activity</th></tr></thead><tbody>
+<tr><td>Bank interest credited to a corporate account</td><td>Investment income, whatever the amount</td></tr>
+<tr><td>An annual registry fee paid from the corporate account</td><td>An expense</td></tr>
+<tr><td>Accounting or filing fees paid by the corporation</td><td>An expense</td></tr>
+<tr><td>Rent received on a property the corporation owns</td><td>Rental income</td></tr>
+<tr><td>A dividend received from another corporation</td><td>Income, and it changes the schedules</td></tr>
+<tr><td>Sale of equipment the corporation still held</td><td>A disposition</td></tr>
+</tbody></table>
+<p>A holding corporation with investment income, a rental corporation and a corporation that paid or received a dividend are not nil. Those are handled by Gondaliya CPA Professional Corporation at gondaliyacpa.ca at $350.00 plus HST per year.</p>
+<p>A shareholder paying the registry fee personally, from a personal account, and not charging it to the corporation, leaves the year zero.</p>
+</div></div>
+<div class="ei-wrap"><div class="ei-cta-inline"><div><h3>Nil T2 Filing, $300.00 plus HST per tax year</h3><p>One price for every year and every province. CPA reviewed and transmitted electronically.</p></div><a class="ei-btn-blue" href="https://corpnilfilingfor300.ca/form/">Start Nil T2 Filing NOW</a></div></div>
+<div class="ei-section-alt" id="bank"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">No Bank Account and No Business Number</h2>
+<p>Neither changes the filing obligation. A corporation with no bank account files, and a corporation that was never given a business number files once it has one.</p>
+<p>A corporation with no bank account has one advantage on this page: with no account there is no credited interest, so the most common accidental entry cannot arise.</p>
+<p>See <a href="https://corpnilfilingfor300.ca/answers/do-i-need-to-file-a-nil-t2-if-my-corporation-has-no-bank-account/">filing with no bank account</a> and <a href="https://corpnilfilingfor300.ca/answers/do-i-need-a-business-number-to-file-a-nil-t2/">whether a business number is needed</a>.</p>
+</div></div>
+<div class="ei-section" id="schedules"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">Which Schedules a Zero-Activity Return Carries</h2>
+<p>A zero-activity return is not an empty return. Several schedules are filed carrying zeroes, and one of them is filed only once.</p>
+<table class="ei-tbl"><thead><tr><th scope="col">Schedule</th><th scope="col">On a zero-activity year</th></tr></thead><tbody>
+<tr><td>Schedule 100, the balance sheet</td><td>Filed, carrying the balances</td></tr>
+<tr><td>Schedule 125, the income statement</td><td>Filed, carrying zeroes</td></tr>
+<tr><td>Schedule 141, the notes checklist</td><td>Filed</td></tr>
+<tr><td>Schedule 24</td><td>On a first return only</td></tr>
+<tr><td>Schedule 50</td><td>For every shareholder at 10% or more</td></tr>
+<tr><td>Schedule 8</td><td>Filed where the corporation holds depreciable property</td></tr>
+</tbody></table>
+<p>The full set is in the guide to <a href="https://corpnilfilingfor300.ca/guides/t2-schedules-on-a-nil-return/">T2 schedules on a nil return</a>.</p>
+</div></div>
+<div class="ei-section-alt" id="gifi"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">Reporting Zeroes Through the GIFI</h2>
+<p>The General Index of Financial Information is the coded format the balance sheet and income statement are filed in. A zero-activity year reports through it the same way a trading year does, with zeroes in the income statement codes.</p>
+<p>The balance sheet is rarely all zeroes. Share capital issued on incorporation, a shareholder loan and retained earnings carried forward all sit on Schedule 100 whether or not anything happened during the year.</p>
+<div class="ei-warn"><p>A balance sheet filed as entirely zero when share capital was issued is wrong, and it is wrong in a way that persists: the next return opens from the closing balances this one reports.</p></div>
+<p>See the guide to <a href="https://corpnilfilingfor300.ca/guides/gifi-schedules-100-125-141/">GIFI Schedules 100, 125 and 141</a>.</p>
+</div></div>
+<div class="ei-section" id="short-form"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">The T2 Short on a Zero-Activity Year</h2>
+<p>The T2 Short is a two-page version of the return available to a Canadian-controlled private corporation that meets a list of conditions. A zero-activity year commonly meets them.</p>
+<p>Meeting the conditions is not automatic. A second permanent establishment, a reporting currency other than the Canadian dollar, a refundable credit or an amalgamation in the year each rule it out.</p>
+<p>Eligibility is set out in the guide to <a href="https://corpnilfilingfor300.ca/guides/t2-short-eligibility/">T2 Short eligibility</a>.</p>
+</div></div>
+<div class="ei-section-alt" id="multiple"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">Several Zero-Activity Years at Once</h2>
+<p>Each year is its own return on its own form for its own tax year. Six zero-activity years are six returns, and they are prepared oldest first so the closing balances of one open the next.</p>
+<p>They can be prepared and transmitted together. Each is $300.00 plus HST per tax year.</p>
+<p>See <a href="https://corpnilfilingfor300.ca/answers/can-i-file-five-years-of-nil-t2-returns-at-once/">filing five years at once</a> and the guide to <a href="https://corpnilfilingfor300.ca/guides/catch-up-unfiled-corporate-tax-returns/">catching up on unfiled corporate tax returns</a>.</p>
+</div></div>
+<div class="ei-section" id="consequences"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">Leaving a Zero-Activity Year Unfiled</h2>
+<div class="ei-danger"><p>A true nil return carries no percentage late-filing penalty, because that penalty is a percentage of tax owing and the corporation owes $0.00. The unfiled year still stays open forever, invites a demand to file and an arbitrary assessment, blocks a clearance certificate and dissolution, and costs a non-resident-owned corporation $25.00 per day up to $2,500.00.</p></div>
+<p>The year with nothing in it is the one most often left, and it is the one that blocks a dissolution years later. A corporation cannot be wound up with an open year on its record, however empty that year was.</p>
+<p>See <a href="https://corpnilfilingfor300.ca/answers/what-happens-if-i-dont-file-a-nil-t2/">what happens if a nil T2 is not filed</a>.</p>
+</div></div>
+<div class="ei-section" id="moving-on"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">When Activity Starts</h2>
+<p>The year activity begins is not a zero-activity year, even if it begins in the last week of it. Revenue in December makes the whole year a trading year.</p>
+<p>From that point the return carries real figures, and preparation moves to Gondaliya CPA Professional Corporation at gondaliyacpa.ca.</p>
+<p>The transition is covered at <a href="https://corpnilfilingfor300.ca/when-your-corporation-starts-operating/">when your corporation starts operating</a>.</p>
+</div></div>
+<div class="ei-section" id="fee"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">What the Fee Covers</h2>
+<p>The fee is $300.00 plus HST per tax year, covering one nil T2 return for one corporation for one tax year:</p>
+<table class="ei-tbl"><thead><tr><th scope="col">Included</th><th scope="col">Detail</th></tr></thead><tbody>
+<tr><td>The T2 return</td><td>Including the T2 Short where the corporation qualifies</td></tr>
+<tr><td>GIFI Schedules 100, 125 and 141</td><td>Where they are required</td></tr>
+<tr><td>Schedule 24</td><td>On a first return</td></tr>
+<tr><td>Schedule 50</td><td>For every shareholder at 10% or more</td></tr>
+<tr><td>Schedule 8 and loss continuity</td><td>Recorded</td></tr>
+<tr><td>Form T183CORP package</td><td>With single-use secure e-signing</td></tr>
+<tr><td>CPA review</td><td>Before transmission</td></tr>
+<tr><td>Electronic transmission</td><td>By a registered EFILE electronic filer</td></tr>
+<tr><td>One corrected transmission</td><td>If the Agency rejects the first one</td></tr>
+<tr><td>CRA confirmation</td><td>Emailed within 3 business days</td></tr>
+</tbody></table>
+<p>See the full <a href="https://corpnilfilingfor300.ca/pricing/nil-t2-filing-cost/">nil T2 filing cost</a>.</p>
+</div></div>
+<div class="ei-section-alt"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">Frequently Asked Questions</h2>
+<div class="ei-faq">
+<details><summary>What Counts as Zero Activity?</summary><div class="ei-faq-a"><p>No revenue, no expenses, no income of any kind and no disposition of property during the tax year. The return is filed showing those amounts as $0.00.</p></div></details>
+<details><summary>Does Bank Interest Take a Year Out of Zero Activity?</summary><div class="ei-faq-a"><p>Yes. Interest credited to a corporate account is investment income whatever the amount, and a few dollars answers the question the same way a few thousand would.</p></div></details>
+<details><summary>Is a Zero-Activity Return an Empty Return?</summary><div class="ei-faq-a"><p>No. The income statement carries zeroes, but the balance sheet carries share capital, any shareholder loan and retained earnings brought forward, and Schedule 50 still reports every shareholder at 10% or more.</p></div></details>
+<details><summary>Does a Corporation With No Bank Account Still File?</summary><div class="ei-faq-a"><p>Yes. The obligation attaches to existing as a corporation. With no account there is no credited interest, so the year is more likely to be genuinely zero.</p></div></details>
+<details><summary>Can Six Zero-Activity Years Be Filed Together?</summary><div class="ei-faq-a"><p>Yes. They are six separate returns prepared oldest first, so the closing balances of each open the next, and they can be transmitted in one sitting at $300.00 plus HST per tax year each.</p></div></details>
+<details><summary>What if Activity Started Late in the Year?</summary><div class="ei-faq-a"><p>The whole year is a trading year. Revenue in December means the return for that year is not a zero-activity return.</p></div></details>
+</div>
+<h3>Questions Answered in Full</h3>
+<ul class="ei-qlist">
+<li><a href="https://corpnilfilingfor300.ca/answers/do-i-need-to-file-a-t2-if-my-corporation-had-no-activity/">Do I Need to File a T2 if My Corporation Had No Activity?</a></li>
+<li><a href="https://corpnilfilingfor300.ca/answers/do-i-need-to-file-a-nil-t2-if-my-corporation-has-no-bank-account/">Do I Need to File a Nil T2 if My Corporation Has No Bank Account?</a></li>
+<li><a href="https://corpnilfilingfor300.ca/answers/do-i-need-to-file-a-nil-t2-if-i-never-started-operating/">Do I Need to File a Nil T2 if I Never Started Operating?</a></li>
+<li><a href="https://corpnilfilingfor300.ca/answers/how-do-i-know-if-my-corporation-counts-as-dormant/">How Do I Know if My Corporation Counts as Dormant?</a></li>
+<li><a href="https://corpnilfilingfor300.ca/answers/do-i-need-financial-statements-for-a-nil-t2-return/">Do I Need Financial Statements for a Nil T2 Return?</a></li>
+<li><a href="https://corpnilfilingfor300.ca/answers/do-i-need-to-file-a-t2-every-year-if-my-corporation-is-inactive/">Do I Need to File a T2 Every Year if My Corporation Is Inactive?</a></li>
+</ul>
+<h3>The Other Nil T2 Filing Guides</h3>
+<ul class="ei-qlist">
+<li><a href="https://corpnilfilingfor300.ca/guides/corporate-tax-arrears-and-interest/">The Complete Guide to Corporate Tax Arrears and Interest</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/winding-up-an-inactive-corporation/">The Complete Guide to Winding Up an Inactive Corporation</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/small-business-corporate-filing/">The Complete Guide to Small Business Corporate Filing</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/corporate-compliance-calendar/">The Complete Guide to the Corporate Compliance Calendar</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/numbered-company-maintenance/">The Complete Guide to Numbered Company Maintenance</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/mandatory-t2-electronic-filing/">The Complete Guide to Mandatory T2 Electronic Filing</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/schedule-50-and-shareholder-reporting/">The Complete Guide to Schedule 50 and Shareholder Reporting</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/non-resident-owned-corporation-nil-filing/">The Complete Guide to Non-Resident-Owned Corporation Nil Filing</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/nil-t2-return-complete-guide/">The Complete Guide to the Nil T2 Return</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/dormant-and-inactive-corporations/">The Complete Guide to Dormant and Inactive Corporations</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/catch-up-unfiled-corporate-tax-returns/">The Complete Guide to Catching Up on Unfiled Corporate Tax Returns</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/final-t2-and-dissolution/">The Complete Guide to the Final T2 and Dissolution</a></li>
+</ul>
+</div></div>
+<div class="ei-cta-bottom"><div class="ei-wrap"><h2>Nil T2 Filing, $300.00 plus HST per tax year</h2><p>Type your corporation name, pick your unfiled years, pay, and sign Form T183CORP on a secure screen. Your CRA confirmation is emailed within 3 business days.</p><a class="ei-btn-blue" href="https://corpnilfilingfor300.ca/form/">Start Nil T2 Filing NOW</a></div></div>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Article", "@id": "https://corpnilfilingfor300.ca/guides/zero-activity-corporate-tax-returns/#article", "headline": "The Complete Guide to Zero-Activity Corporate Tax Returns", "name": "Zero-Activity Corporate Tax Returns | Canadian Guide", "description": "What counts as zero activity, the entries that quietly take a year out of it, and which schedules a zero-activity return still carries.", "inLanguage": "en-CA", "datePublished": "2026-10-27", "dateModified": "2026-10-27", "mainEntityOfPage": "https://corpnilfilingfor300.ca/guides/zero-activity-corporate-tax-returns/", "author": {"@type": "Person", "name": "Sharad Gondaliya", "honorificSuffix": "CPA", "url": "https://corpnilfilingfor300.ca/sharad-gondaliya-cpa/"}, "publisher": {"@type": "Organization", "name": "Gondaliya CPA Professional Corporation"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Nil T2 filing in Canada", "item": "https://corpnilfilingfor300.ca/"}, {"@type": "ListItem", "position": 2, "name": "Guides", "item": "https://corpnilfilingfor300.ca/guides/"}, {"@type": "ListItem", "position": 3, "name": "The Complete Guide to Zero-Activity Corporate Tax Returns", "item": "https://corpnilfilingfor300.ca/guides/zero-activity-corporate-tax-returns/"}]}]}</script>

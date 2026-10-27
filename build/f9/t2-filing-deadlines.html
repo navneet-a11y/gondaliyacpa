@@ -1,0 +1,230 @@
+<style>
+.ei-wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+.ei-btn-blue{background:rgba(32,135,201,1);color:#fff !important;padding:13px 26px;border-radius:6px;font-weight:700;font-size:0.95em;text-transform:uppercase;text-decoration:none !important;display:inline-block;line-height:1.4;text-align:center;min-width:120px}
+.ei-section{padding:26px 20px}
+.ei-section-alt{background:#f7f9fc;padding:26px 20px}
+.ei-art .ei-h2{font-weight:800;color:#1a2340;margin:0 0 10px;font-size:1.45em;line-height:1.3}
+.ei-art > *:last-child{margin-bottom:0}
+.ei-art p{color:#4a5568;line-height:1.8}
+.ei-art a{color:rgba(32,135,201,1)}
+.ei-art ul{color:#4a5568;line-height:1.8}
+.ei-info{background:#f0f7fd;border-left:4px solid rgba(32,135,201,1);border-radius:0 8px 8px 0;padding:14px 18px;margin:18px 0}
+.ei-info p{margin:0;color:#1a2340;line-height:1.7}
+.ei-warn{background:#fffbf0;border-left:4px solid #f6ad1a;border-radius:0 8px 8px 0;padding:14px 18px;margin:18px 0}
+.ei-warn p{margin:0;color:#7c5800;line-height:1.7}
+.ei-danger{background:#fff5f5;border-left:4px solid #e53e3e;border-radius:0 8px 8px 0;padding:14px 18px;margin:18px 0}
+.ei-danger p{margin:0;color:#742a2a;line-height:1.7}
+.ei-hero{background:linear-gradient(135deg,#0f1624 0%,#1a2340 55%,#1e3a6e 100%);padding:40px 20px}
+.ei-hero-inner{max-width:860px;margin:0 auto;text-align:center}
+.ei-hero-eyebrow{display:inline-block;background:rgba(32,135,201,0.15);border:1px solid rgba(32,135,201,0.4);border-radius:50px;padding:5px 16px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:rgba(32,135,201,1);margin-bottom:16px;font-size:.8em}
+.ei-hero h1{color:#fff;font-weight:800;line-height:1.2;margin:0 0 14px;font-size:2.1em}
+.ei-hero h1 span{color:#f6ad1a}
+.ei-hero-sub{color:rgba(255,255,255,0.78);max-width:720px;margin:0 auto 10px;line-height:1.75}
+.ei-hero-by{color:rgba(255,255,255,0.6);max-width:720px;margin:0 auto 22px;line-height:1.6;font-size:.86em}
+.ei-hero-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.ei-tbl{width:100%;border-collapse:collapse;margin:18px 0;border:1px solid #d1d5db}
+.ei-tbl th{background:#1a2340;color:#fff;font-weight:700;padding:12px 14px;text-align:left;border:1px solid #374151}
+.ei-tbl td{padding:10px 14px;border:1px solid #d1d5db;color:#2d3748;line-height:1.5}
+.ei-tbl tr:nth-child(even){background:#f7f9fc}
+.ei-tbl tr:hover{background:#edf2f7}
+.ei-updated{color:#718096;font-size:.9em;margin:0 0 18px}
+.ei-toc{background:linear-gradient(180deg,#ffffff,#f7f9fc);border:1px solid #e2e8f0;border-radius:12px;padding:18px 22px;margin:0 0 10px;box-shadow:0 1px 2px rgba(26,35,64,.05)}
+.ei-toc h2{font-size:.76em;font-weight:800;color:#8795ab;margin:0 0 10px;text-transform:uppercase;letter-spacing:1.3px}
+.ei-toc ol{margin:0;padding:0;list-style:none;counter-reset:toc;columns:2;column-gap:30px}
+.ei-toc li{break-inside:avoid;counter-increment:toc;margin:0}
+.ei-toc a{display:flex;gap:10px;align-items:baseline;padding:6px 9px;border-radius:6px;color:#1a2340;text-decoration:none;line-height:1.45}
+.ei-toc a::before{content:counter(toc);color:rgba(32,135,201,1);font-weight:800;font-size:.82em;min-width:15px;flex-shrink:0}
+.ei-toc a:hover{background:#eaf3fb;color:rgba(32,135,201,1);text-decoration:none}
+.ei-cta-inline{background:#1a2340;border-radius:10px;padding:24px 28px;margin:28px 0;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px}
+.ei-cta-inline h3{color:#fff;margin:0 0 4px;font-weight:700}
+.ei-cta-inline p{color:rgba(255,255,255,0.65);margin:0}
+.ei-cta-inline a,.ei-cta-inline a:visited,.ei-cta-inline a:hover,.ei-cta-bottom a,.ei-cta-bottom a:visited,.ei-cta-bottom a:hover,.ei-hero-btns a,.ei-hero-btns a:visited,.ei-hero-btns a:hover{color:#fff !important;text-decoration:none !important}
+.ei-faq{max-width:900px;margin:16px auto 0}
+.ei-faq details{border:1px solid #e2e8f0;border-radius:8px;margin-bottom:9px;background:#fff}
+.ei-faq summary{padding:14px 18px;font-weight:600;color:#1a2340;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:14px;line-height:1.5}
+.ei-faq summary::-webkit-details-marker{display:none}
+.ei-faq summary::after{content:'+';color:rgba(32,135,201,1);font-weight:400;font-size:1.4em;line-height:1;flex-shrink:0;transition:transform .15s ease}
+.ei-faq details[open] summary{color:rgba(32,135,201,1)}
+.ei-faq details[open] summary::after{transform:rotate(45deg)}
+.ei-faq .ei-faq-a{padding:0 18px 15px}
+.ei-faq .ei-faq-a p{margin:0;color:#4a5568;line-height:1.75}
+.ei-art h3{font-weight:700;color:#1a2340;margin:26px 0 8px;font-size:1.15em}
+.ei-qlist{max-width:900px;margin:12px auto 0;padding:0;list-style:none}
+.ei-qlist li{border:1px solid #e2e8f0;border-radius:8px;margin-bottom:10px;background:#fff}
+.ei-qlist a{display:block;padding:16px 20px;font-weight:600;color:#1a2340 !important;text-decoration:none !important}
+.ei-qlist a:hover{background:#f7f9fc;color:rgba(32,135,201,1) !important}
+.ei-cta-bottom{background:linear-gradient(135deg,#0f1624,#1a2340);padding:40px 20px;text-align:center}
+.ei-cta-bottom h2{color:#fff;font-weight:800;margin:0 0 10px;font-size:1.5em}
+.ei-cta-bottom p{color:rgba(255,255,255,0.72);max-width:600px;margin:0 auto 22px;line-height:1.75}
+.entry-header{display:none!important}
+.ast-article-single,.ast-article-single .entry-content{margin-top:0;padding-top:0}
+@media(max-width:900px){.ei-cta-inline{flex-direction:column;text-align:center}.ei-hero h1{font-size:1.6em}.ei-art .ei-h2{font-size:1.3em}.ei-toc ol{columns:1}}
+</style>
+<div class="ei-hero"><div class="ei-hero-inner"><span class="ei-hero-eyebrow">Deadlines Guide</span><h1>The Complete Guide to <span>T2 Filing Deadlines</span></h1><p class="ei-hero-sub">The six-month rule, how a weekend or a statutory holiday moves a due date, short and first tax years, and the deadlines that run separately. Nil T2 filing is $300.00 plus HST per tax year.</p><p class="ei-hero-by">Written and reviewed by Sharad Gondaliya, CPA (Ontario), CPA Ontario Membership 61040184.</p><div class="ei-hero-btns"><a class="ei-btn-blue" href="https://corpnilfilingfor300.ca/form/">Start Nil T2 Filing NOW</a><a class="ei-btn-blue" style="background:transparent;border:2px solid rgba(255,255,255,0.4)" href="https://corpnilfilingfor300.ca/deadlines/">Every T2 Deadline by Year-End</a></div></div></div>
+<div class="ei-section"><div class="ei-wrap ei-art">
+<p class="ei-updated">Last reviewed: October 27, 2026 &nbsp;&middot;&nbsp; <a href="https://corpnilfilingfor300.ca/guides/">All nil T2 filing guides</a></p>
+<div class="ei-toc"><h2>On this page</h2>
+<ol>
+<li><a href="#six-month">The Six-Month Rule</a></li>
+<li><a href="#year-end">Finding Your Fiscal Year-End</a></li>
+<li><a href="#weekend">When the Due Date Falls on a Weekend or Holiday</a></li>
+<li><a href="#first">The First Tax Year and the 53-Week Limit</a></li>
+<li><a href="#short">Short Tax Years and Their Deadlines</a></li>
+<li><a href="#final">The Final Return After Dissolution</a></li>
+<li><a href="#payment">The Payment Deadline Is Not the Filing Deadline</a></li>
+<li><a href="#nil-same">A Nil Return Has the Same Deadline</a></li>
+<li><a href="#missed">What Happens After the Deadline Passes</a></li>
+<li><a href="#provincial">Provincial Deadlines That Run Separately</a></li>
+<li><a href="#calendar">Working Out Every Deadline You Owe</a></li>
+<li><a href="#fee">What the Fee Covers</a></li>
+</ol></div>
+<div class="ei-info"><p>Gondaliya CPA Professional Corporation is a registered EFILE electronic filer. Returns are prepared and transmitted in Canada. Credentials are never shared and never used offshore.</p></div>
+</div></div>
+<div class="ei-section-alt" id="six-month"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">The Six-Month Rule</h2>
+<p>A T2 is due six months after the day the tax year ends. That is the whole rule, and every other date on this page is produced by applying it to a particular year-end and then adjusting for the calendar.</p>
+<table class="ei-tbl"><thead><tr><th scope="col">Fiscal year-end</th><th scope="col">Six months later</th><th scope="col">T2 due</th></tr></thead><tbody>
+<tr><td>December 31</td><td>June 30</td><td>June 30</td></tr>
+<tr><td>March 31</td><td>September 30</td><td>September 30</td></tr>
+<tr><td>June 30</td><td>December 31</td><td>December 31</td></tr>
+<tr><td>August 31</td><td>February 28 or 29</td><td>The last day of February</td></tr>
+</tbody></table>
+<p>The six months are counted to the same day number in the later month. Where that day does not exist, the deadline is the last day of that month, which is why an August 31 year-end lands on the end of February rather than on a non-existent February 31.</p>
+</div></div>
+<div class="ei-section" id="year-end"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">Finding Your Fiscal Year-End</h2>
+<p>A corporation chooses its first fiscal year-end by filing its first T2 with that date on it. Once filed, the year-end is fixed and changing it needs the written approval of the Canada Revenue Agency.</p>
+<p>The year-end is not the incorporation anniversary and it is not December 31 by default. If no return has ever been filed, the year-end is still unsettled, and the first return to be filed sets it.</p>
+<div class="ei-info"><p>A corporation that has never filed can still choose. A corporation that has filed once cannot, and a return carrying a different year-end from the one on record is the single most common reason a transmission is rejected.</p></div>
+<p>See <a href="https://corpnilfilingfor300.ca/answers/how-do-i-fix-a-nil-t2-return-i-filed-with-the-wrong-year-end/">how to fix a return filed with the wrong year-end</a>.</p>
+</div></div>
+<div class="ei-section-alt" id="weekend"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">When the Due Date Falls on a Weekend or Holiday</h2>
+<p>Where the calculated due date is a Saturday, a Sunday or a public holiday, the return is on time if the Agency receives it on the next business day.</p>
+<p>The holidays that matter are the ones observed where the return is filed, and a provincial holiday can move a date for a corporation in that province while leaving it unmoved elsewhere.</p>
+<table class="ei-tbl"><thead><tr><th scope="col">Calculated due date</th><th scope="col">Why it moves</th><th scope="col">Return due</th></tr></thead><tbody>
+<tr><td>Saturday</td><td>Not a business day</td><td>The following Monday</td></tr>
+<tr><td>Sunday</td><td>Not a business day</td><td>The following Monday</td></tr>
+<tr><td>A statutory holiday</td><td>Not a business day</td><td>The next business day</td></tr>
+<tr><td>A holiday followed by a weekend</td><td>Three days in a row</td><td>The first business day after all three</td></tr>
+</tbody></table>
+<p>The shift can be more than one day. A due date landing on a Sunday followed by a Monday holiday moves to the Tuesday.</p>
+</div></div>
+<div class="ei-section" id="first"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">The First Tax Year and the 53-Week Limit</h2>
+<p>A first tax year runs from the date of incorporation to the chosen year-end, and it may not exceed 53 weeks. That is 371 days, counting the day of incorporation.</p>
+<p>A year-end chosen more than 53 weeks after incorporation is not available, and the first year has to end earlier, which produces a short first year and then a full one.</p>
+<p>See <a href="https://corpnilfilingfor300.ca/answers/when-should-i-file-my-first-t2-after-incorporating/">when the first T2 is due after incorporating</a> and the guide to <a href="https://corpnilfilingfor300.ca/guides/first-year-t2-filing/">first-year T2 filing</a>.</p>
+</div></div>
+<div class="ei-wrap"><div class="ei-cta-inline"><div><h3>Nil T2 Filing, $300.00 plus HST per tax year</h3><p>One price for every year and every province. CPA reviewed and transmitted electronically.</p></div><a class="ei-btn-blue" href="https://corpnilfilingfor300.ca/form/">Start Nil T2 Filing NOW</a></div></div>
+<div class="ei-section-alt" id="short"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">Short Tax Years and Their Deadlines</h2>
+<p>A short tax year is any year shorter than twelve months. It arises on a first year, on an approved change of year-end, on an amalgamation and on a final year ending at dissolution.</p>
+<p>A short year does not get a short deadline. The six-month rule applies to the day the short year ends, so a three-month year still has six months after it to file.</p>
+<table class="ei-tbl"><thead><tr><th scope="col">Short year arises from</th><th scope="col">Year ends on</th><th scope="col">Deadline measured from</th></tr></thead><tbody>
+<tr><td>Incorporation</td><td>The chosen first year-end</td><td>That year-end</td></tr>
+<tr><td>An approved year-end change</td><td>The new year-end</td><td>That year-end</td></tr>
+<tr><td>An amalgamation</td><td>The day before amalgamating</td><td>That day</td></tr>
+<tr><td>Dissolution</td><td>The date of dissolution</td><td>That date</td></tr>
+</tbody></table>
+<p>Two returns can therefore be due within a few months of each other, and both are separate filings at $300.00 plus HST per tax year.</p>
+</div></div>
+<div class="ei-section" id="final"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">The Final Return After Dissolution</h2>
+<p>A final T2 covers the period from the start of the last tax year to the date of dissolution, and it is due six months after that date.</p>
+<p>Every earlier year has to be filed before a corporation can be wound up, so the final return is the last of a sequence rather than a substitute for it.</p>
+<p>The sequence is set out in the guide to <a href="https://corpnilfilingfor300.ca/guides/final-t2-and-dissolution/">the final T2 and dissolution</a>.</p>
+</div></div>
+<div class="ei-section-alt" id="payment"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">The Payment Deadline Is Not the Filing Deadline</h2>
+<p>Filing is due at six months. A balance of tax is due earlier: two months after the year-end, or three months for a Canadian-controlled private corporation that meets the conditions.</p>
+<table class="ei-tbl"><thead><tr><th scope="col">Obligation</th><th scope="col">Due</th><th scope="col">On a nil year</th></tr></thead><tbody>
+<tr><td>Filing the T2</td><td>Six months after year-end</td><td>Still due</td></tr>
+<tr><td>Paying the balance</td><td>Two or three months after year-end</td><td>Nothing to pay</td></tr>
+<tr><td>Instalments</td><td>Monthly or quarterly through the year</td><td>Not required</td></tr>
+</tbody></table>
+<p>A corporation with no activity has no balance and no instalments, which leaves the filing deadline as the only one it has to meet.</p>
+</div></div>
+<div class="ei-section" id="nil-same"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">A Nil Return Has the Same Deadline</h2>
+<p>There is no separate deadline for a corporation with no activity. The six-month rule applies in full, every year, until the corporation is formally dissolved.</p>
+<div class="ei-warn"><p>Dormancy is not an exemption and it is not a deferral. A corporation that has done nothing for nine years owes nine returns, each on its own six-month deadline, all of which have passed.</p></div>
+<p>See <a href="https://corpnilfilingfor300.ca/answers/do-i-need-to-file-a-t2-every-year-if-my-corporation-is-inactive/">whether an inactive corporation files every year</a>.</p>
+</div></div>
+<div class="ei-section-alt" id="missed"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">What Happens After the Deadline Passes</h2>
+<div class="ei-danger"><p>A true nil return carries no percentage late-filing penalty, because that penalty is a percentage of tax owing and the corporation owes $0.00. The unfiled year still stays open forever, invites a demand to file and an arbitrary assessment, blocks a clearance certificate and dissolution, and costs a non-resident-owned corporation $25.00 per day up to $2,500.00.</p></div>
+<p>The deadline does not stop mattering once it has gone. It is the date from which the year counts as outstanding, and that is what a demand to file, an arbitrary assessment and a blocked dissolution all follow from.</p>
+<p>The full picture is in the guide to <a href="https://corpnilfilingfor300.ca/guides/t2-late-filing-penalties/">T2 late filing penalties</a>.</p>
+</div></div>
+<div class="ei-section" id="provincial"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">Provincial Deadlines That Run Separately</h2>
+<p>Three filings are commonly mistaken for part of the T2 and are not. Each has its own form, its own deadline and its own filing channel.</p>
+<table class="ei-tbl"><thead><tr><th scope="col">Filing</th><th scope="col">Applies to</th><th scope="col">Relationship to the T2</th></tr></thead><tbody>
+<tr><td>Alberta AT1</td><td>Alberta corporations</td><td>A separate return</td></tr>
+<tr><td>Quebec CO-17</td><td>Quebec corporations</td><td>A separate return</td></tr>
+<tr><td>The annual return</td><td>Corporations in most registries</td><td>A registry filing, not a tax return</td></tr>
+</tbody></table>
+<p>An Alberta corporation files the AT1 as well as the T2, and a Quebec corporation files the CO-17 as well as the T2. Neither is covered by the federal filing and neither is covered by the fee on this page.</p>
+<p>See the guide to <a href="https://corpnilfilingfor300.ca/guides/provincial-and-federal-annual-returns/">provincial and federal annual returns</a>.</p>
+</div></div>
+<div class="ei-section" id="calendar"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">Working Out Every Deadline You Owe</h2>
+<p>Start from the year-end on record, add a year at a time up to the present, and apply the six-month rule to each. Every year whose six months have elapsed and which has not been filed is outstanding.</p>
+<p>A holding corporation with investment income, a rental corporation and a corporation that paid or received a dividend are not nil. Those are handled by Gondaliya CPA Professional Corporation at gondaliyacpa.ca at $350.00 plus HST per year.</p>
+<p>The due date for every fiscal year-end is listed on <a href="https://corpnilfilingfor300.ca/deadlines/">the deadlines page</a>, and <a href="https://corpnilfilingfor300.ca/answers/how-do-i-find-out-which-t2-years-are-outstanding/">finding out which years are outstanding</a> covers reading it off your own record.</p>
+</div></div>
+<div class="ei-section" id="fee"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">What the Fee Covers</h2>
+<p>The fee is $300.00 plus HST per tax year, covering one nil T2 return for one corporation for one tax year:</p>
+<table class="ei-tbl"><thead><tr><th scope="col">Included</th><th scope="col">Detail</th></tr></thead><tbody>
+<tr><td>The T2 return</td><td>Including the T2 Short where the corporation qualifies</td></tr>
+<tr><td>GIFI Schedules 100, 125 and 141</td><td>Where they are required</td></tr>
+<tr><td>Schedule 24</td><td>On a first return</td></tr>
+<tr><td>Schedule 50</td><td>For every shareholder at 10% or more</td></tr>
+<tr><td>Schedule 8 and loss continuity</td><td>Recorded</td></tr>
+<tr><td>Form T183CORP package</td><td>With single-use secure e-signing</td></tr>
+<tr><td>CPA review</td><td>Before transmission</td></tr>
+<tr><td>Electronic transmission</td><td>By a registered EFILE electronic filer</td></tr>
+<tr><td>One corrected transmission</td><td>If the Agency rejects the first one</td></tr>
+<tr><td>CRA confirmation</td><td>Emailed within 3 business days</td></tr>
+</tbody></table>
+<p>See the full <a href="https://corpnilfilingfor300.ca/pricing/nil-t2-filing-cost/">nil T2 filing cost</a>.</p>
+</div></div>
+<div class="ei-section-alt"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">Frequently Asked Questions</h2>
+<div class="ei-faq">
+<details><summary>When Is a T2 Due?</summary><div class="ei-faq-a"><p>Six months after the day the tax year ends. A December 31 year-end makes the T2 due June 30, and a March 31 year-end makes it due September 30.</p></div></details>
+<details><summary>Does a Nil T2 Have a Later Deadline?</summary><div class="ei-faq-a"><p>No. The six-month rule applies in full to a corporation with no activity, every year, until the corporation is formally dissolved.</p></div></details>
+<details><summary>What if the Deadline Is a Saturday?</summary><div class="ei-faq-a"><p>The return is on time if the Canada Revenue Agency receives it on the next business day. The same applies to a Sunday and to a public holiday, and the shift can be more than one day.</p></div></details>
+<details><summary>How Long Can a First Tax Year Be?</summary><div class="ei-faq-a"><p>Up to 53 weeks, which is 371 days counting the day of incorporation. A year-end chosen beyond that is not available.</p></div></details>
+<details><summary>Is the Payment Deadline the Same as the Filing Deadline?</summary><div class="ei-faq-a"><p>No. Filing is due at six months, while a balance of tax is due two months after the year-end, or three for a Canadian-controlled private corporation that meets the conditions. A nil year has no balance to pay.</p></div></details>
+<details><summary>Does a Short Tax Year Get a Shorter Deadline?</summary><div class="ei-faq-a"><p>No. The six-month rule is measured from the day the short year ends, so a three-month year still has six months after it to file.</p></div></details>
+</div>
+<h3>Questions Answered in Full</h3>
+<ul class="ei-qlist">
+<li><a href="https://corpnilfilingfor300.ca/answers/when-should-i-file-my-first-t2-after-incorporating/">When Should I File My First T2 After Incorporating?</a></li>
+<li><a href="https://corpnilfilingfor300.ca/answers/when-should-i-file-a-nil-t2-for-a-short-first-tax-year/">When Should I File a Nil T2 for a Short First Tax Year?</a></li>
+<li><a href="https://corpnilfilingfor300.ca/answers/how-do-i-find-out-which-t2-years-are-outstanding/">How Do I Find Out Which T2 Years Are Outstanding?</a></li>
+<li><a href="https://corpnilfilingfor300.ca/answers/do-i-need-to-file-a-t2-every-year-if-my-corporation-is-inactive/">Do I Need to File a T2 Every Year if My Corporation Is Inactive?</a></li>
+<li><a href="https://corpnilfilingfor300.ca/answers/what-happens-if-i-dont-file-a-nil-t2/">What Happens if I Don't File a Nil T2?</a></li>
+<li><a href="https://corpnilfilingfor300.ca/answers/do-i-need-to-file-a-t2-for-the-year-my-corporation-was-dissolved/">Do I Need to File a T2 for the Year My Corporation Was Dissolved?</a></li>
+</ul>
+<h3>The Other Nil T2 Filing Guides</h3>
+<ul class="ei-qlist">
+<li><a href="https://corpnilfilingfor300.ca/guides/zero-activity-corporate-tax-returns/">The Complete Guide to Zero-Activity Corporate Tax Returns</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/corporate-tax-arrears-and-interest/">The Complete Guide to Corporate Tax Arrears and Interest</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/winding-up-an-inactive-corporation/">The Complete Guide to Winding Up an Inactive Corporation</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/small-business-corporate-filing/">The Complete Guide to Small Business Corporate Filing</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/corporate-compliance-calendar/">The Complete Guide to the Corporate Compliance Calendar</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/numbered-company-maintenance/">The Complete Guide to Numbered Company Maintenance</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/mandatory-t2-electronic-filing/">The Complete Guide to Mandatory T2 Electronic Filing</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/schedule-50-and-shareholder-reporting/">The Complete Guide to Schedule 50 and Shareholder Reporting</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/non-resident-owned-corporation-nil-filing/">The Complete Guide to Non-Resident-Owned Corporation Nil Filing</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/nil-t2-return-complete-guide/">The Complete Guide to the Nil T2 Return</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/dormant-and-inactive-corporations/">The Complete Guide to Dormant and Inactive Corporations</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/catch-up-unfiled-corporate-tax-returns/">The Complete Guide to Catching Up on Unfiled Corporate Tax Returns</a></li>
+</ul>
+</div></div>
+<div class="ei-cta-bottom"><div class="ei-wrap"><h2>Nil T2 Filing, $300.00 plus HST per tax year</h2><p>Type your corporation name, pick your unfiled years, pay, and sign Form T183CORP on a secure screen. Your CRA confirmation is emailed within 3 business days.</p><a class="ei-btn-blue" href="https://corpnilfilingfor300.ca/form/">Start Nil T2 Filing NOW</a></div></div>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Article", "@id": "https://corpnilfilingfor300.ca/guides/t2-filing-deadlines/#article", "headline": "The Complete Guide to T2 Filing Deadlines", "name": "T2 Filing Deadlines | Complete Guide for Canadian Corporations", "description": "The six-month rule, how a weekend or a statutory holiday moves a due date, short and first tax years, and the deadlines that run separately.", "inLanguage": "en-CA", "datePublished": "2026-10-27", "dateModified": "2026-10-27", "mainEntityOfPage": "https://corpnilfilingfor300.ca/guides/t2-filing-deadlines/", "author": {"@type": "Person", "name": "Sharad Gondaliya", "honorificSuffix": "CPA", "url": "https://corpnilfilingfor300.ca/sharad-gondaliya-cpa/"}, "publisher": {"@type": "Organization", "name": "Gondaliya CPA Professional Corporation"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Nil T2 filing in Canada", "item": "https://corpnilfilingfor300.ca/"}, {"@type": "ListItem", "position": 2, "name": "Guides", "item": "https://corpnilfilingfor300.ca/guides/"}, {"@type": "ListItem", "position": 3, "name": "The Complete Guide to T2 Filing Deadlines", "item": "https://corpnilfilingfor300.ca/guides/t2-filing-deadlines/"}]}]}</script>

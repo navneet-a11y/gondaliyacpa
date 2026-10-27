@@ -1,0 +1,223 @@
+<style>
+.ei-wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+.ei-btn-blue{background:rgba(32,135,201,1);color:#fff !important;padding:13px 26px;border-radius:6px;font-weight:700;font-size:0.95em;text-transform:uppercase;text-decoration:none !important;display:inline-block;line-height:1.4;text-align:center;min-width:120px}
+.ei-section{padding:26px 20px}
+.ei-section-alt{background:#f7f9fc;padding:26px 20px}
+.ei-art .ei-h2{font-weight:800;color:#1a2340;margin:0 0 10px;font-size:1.45em;line-height:1.3}
+.ei-art > *:last-child{margin-bottom:0}
+.ei-art p{color:#4a5568;line-height:1.8}
+.ei-art a{color:rgba(32,135,201,1)}
+.ei-art ul{color:#4a5568;line-height:1.8}
+.ei-info{background:#f0f7fd;border-left:4px solid rgba(32,135,201,1);border-radius:0 8px 8px 0;padding:14px 18px;margin:18px 0}
+.ei-info p{margin:0;color:#1a2340;line-height:1.7}
+.ei-warn{background:#fffbf0;border-left:4px solid #f6ad1a;border-radius:0 8px 8px 0;padding:14px 18px;margin:18px 0}
+.ei-warn p{margin:0;color:#7c5800;line-height:1.7}
+.ei-danger{background:#fff5f5;border-left:4px solid #e53e3e;border-radius:0 8px 8px 0;padding:14px 18px;margin:18px 0}
+.ei-danger p{margin:0;color:#742a2a;line-height:1.7}
+.ei-hero{background:linear-gradient(135deg,#0f1624 0%,#1a2340 55%,#1e3a6e 100%);padding:40px 20px}
+.ei-hero-inner{max-width:860px;margin:0 auto;text-align:center}
+.ei-hero-eyebrow{display:inline-block;background:rgba(32,135,201,0.15);border:1px solid rgba(32,135,201,0.4);border-radius:50px;padding:5px 16px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:rgba(32,135,201,1);margin-bottom:16px;font-size:.8em}
+.ei-hero h1{color:#fff;font-weight:800;line-height:1.2;margin:0 0 14px;font-size:2.1em}
+.ei-hero h1 span{color:#f6ad1a}
+.ei-hero-sub{color:rgba(255,255,255,0.78);max-width:720px;margin:0 auto 10px;line-height:1.75}
+.ei-hero-by{color:rgba(255,255,255,0.6);max-width:720px;margin:0 auto 22px;line-height:1.6;font-size:.86em}
+.ei-hero-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.ei-tbl{width:100%;border-collapse:collapse;margin:18px 0;border:1px solid #d1d5db}
+.ei-tbl th{background:#1a2340;color:#fff;font-weight:700;padding:12px 14px;text-align:left;border:1px solid #374151}
+.ei-tbl td{padding:10px 14px;border:1px solid #d1d5db;color:#2d3748;line-height:1.5}
+.ei-tbl tr:nth-child(even){background:#f7f9fc}
+.ei-tbl tr:hover{background:#edf2f7}
+.ei-updated{color:#718096;font-size:.9em;margin:0 0 18px}
+.ei-toc{background:linear-gradient(180deg,#ffffff,#f7f9fc);border:1px solid #e2e8f0;border-radius:12px;padding:18px 22px;margin:0 0 10px;box-shadow:0 1px 2px rgba(26,35,64,.05)}
+.ei-toc h2{font-size:.76em;font-weight:800;color:#8795ab;margin:0 0 10px;text-transform:uppercase;letter-spacing:1.3px}
+.ei-toc ol{margin:0;padding:0;list-style:none;counter-reset:toc;columns:2;column-gap:30px}
+.ei-toc li{break-inside:avoid;counter-increment:toc;margin:0}
+.ei-toc a{display:flex;gap:10px;align-items:baseline;padding:6px 9px;border-radius:6px;color:#1a2340;text-decoration:none;line-height:1.45}
+.ei-toc a::before{content:counter(toc);color:rgba(32,135,201,1);font-weight:800;font-size:.82em;min-width:15px;flex-shrink:0}
+.ei-toc a:hover{background:#eaf3fb;color:rgba(32,135,201,1);text-decoration:none}
+.ei-cta-inline{background:#1a2340;border-radius:10px;padding:24px 28px;margin:28px 0;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px}
+.ei-cta-inline h3{color:#fff;margin:0 0 4px;font-weight:700}
+.ei-cta-inline p{color:rgba(255,255,255,0.65);margin:0}
+.ei-cta-inline a,.ei-cta-inline a:visited,.ei-cta-inline a:hover,.ei-cta-bottom a,.ei-cta-bottom a:visited,.ei-cta-bottom a:hover,.ei-hero-btns a,.ei-hero-btns a:visited,.ei-hero-btns a:hover{color:#fff !important;text-decoration:none !important}
+.ei-faq{max-width:900px;margin:16px auto 0}
+.ei-faq details{border:1px solid #e2e8f0;border-radius:8px;margin-bottom:9px;background:#fff}
+.ei-faq summary{padding:14px 18px;font-weight:600;color:#1a2340;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:14px;line-height:1.5}
+.ei-faq summary::-webkit-details-marker{display:none}
+.ei-faq summary::after{content:'+';color:rgba(32,135,201,1);font-weight:400;font-size:1.4em;line-height:1;flex-shrink:0;transition:transform .15s ease}
+.ei-faq details[open] summary{color:rgba(32,135,201,1)}
+.ei-faq details[open] summary::after{transform:rotate(45deg)}
+.ei-faq .ei-faq-a{padding:0 18px 15px}
+.ei-faq .ei-faq-a p{margin:0;color:#4a5568;line-height:1.75}
+.ei-art h3{font-weight:700;color:#1a2340;margin:26px 0 8px;font-size:1.15em}
+.ei-qlist{max-width:900px;margin:12px auto 0;padding:0;list-style:none}
+.ei-qlist li{border:1px solid #e2e8f0;border-radius:8px;margin-bottom:10px;background:#fff}
+.ei-qlist a{display:block;padding:16px 20px;font-weight:600;color:#1a2340 !important;text-decoration:none !important}
+.ei-qlist a:hover{background:#f7f9fc;color:rgba(32,135,201,1) !important}
+.ei-cta-bottom{background:linear-gradient(135deg,#0f1624,#1a2340);padding:40px 20px;text-align:center}
+.ei-cta-bottom h2{color:#fff;font-weight:800;margin:0 0 10px;font-size:1.5em}
+.ei-cta-bottom p{color:rgba(255,255,255,0.72);max-width:600px;margin:0 auto 22px;line-height:1.75}
+.entry-header{display:none!important}
+.ast-article-single,.ast-article-single .entry-content{margin-top:0;padding-top:0}
+@media(max-width:900px){.ei-cta-inline{flex-direction:column;text-align:center}.ei-hero h1{font-size:1.6em}.ei-art .ei-h2{font-size:1.3em}.ei-toc ol{columns:1}}
+</style>
+<div class="ei-hero"><div class="ei-hero-inner"><span class="ei-hero-eyebrow">Non-Resident Guide</span><h1>The Complete Guide to <span>Non-Resident-Owned Corporation Nil Filing</span></h1><p class="ei-hero-sub">Why the daily charge is the largest exposure a dormant corporation carries, who it reaches, and how a nil year is filed from outside Canada. Nil T2 filing is $300.00 plus HST per tax year.</p><p class="ei-hero-by">Written and reviewed by Sharad Gondaliya, CPA (Ontario), CPA Ontario Membership 61040184.</p><div class="ei-hero-btns"><a class="ei-btn-blue" href="https://corpnilfilingfor300.ca/form/">Start Nil T2 Filing NOW</a><a class="ei-btn-blue" style="background:transparent;border:2px solid rgba(255,255,255,0.4)" href="https://corpnilfilingfor300.ca/pricing/nil-t2-filing-cost/">Nil T2 Filing Cost</a></div></div></div>
+<div class="ei-section"><div class="ei-wrap ei-art">
+<p class="ei-updated">Last reviewed: October 27, 2026 &nbsp;&middot;&nbsp; <a href="https://corpnilfilingfor300.ca/guides/">All nil T2 filing guides</a></p>
+<div class="ei-toc"><h2>On this page</h2>
+<ol>
+<li><a href="#who">Which Corporations This Covers</a></li>
+<li><a href="#residence">Corporate Residence and Where It Is Decided</a></li>
+<li><a href="#still-file">The Filing Obligation</a></li>
+<li><a href="#daily-penalty">The Penalty Built on Days, Not Tax Owing</a></li>
+<li><a href="#nil-exposure">Why a Nil Year Carries the Full Exposure</a></li>
+<li><a href="#t106-t1134">Other Returns That May Be Due</a></li>
+<li><a href="#treaty">Treaty-Based Returns</a></li>
+<li><a href="#signing">Signing From Outside Canada</a></li>
+<li><a href="#bn">Getting a Business Number Without a Canadian Address</a></li>
+<li><a href="#catch-up">Catching Up Several Non-Resident Years</a></li>
+<li><a href="#dissolution">Dissolving a Non-Resident-Owned Corporation</a></li>
+<li><a href="#fee">What the Fee Covers</a></li>
+</ol></div>
+<div class="ei-info"><p>Gondaliya CPA Professional Corporation is a registered EFILE electronic filer. Returns are prepared and transmitted in Canada. Credentials are never shared and never used offshore.</p></div>
+</div></div>
+<div class="ei-section-alt" id="who"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">Which Corporations This Covers</h2>
+<p>This guide is about a corporation incorporated in Canada whose shares are held by people or entities outside Canada. It is a Canadian corporation with non-resident owners.</p>
+<p>That is a different thing from a corporation incorporated abroad, and the distinction decides which rules apply.</p>
+<table class="ei-tbl"><thead><tr><th scope="col">Corporation</th><th scope="col">What it is here</th></tr></thead><tbody>
+<tr><td>Incorporated in Canada, Canadian owners</td><td>An ordinary resident corporation</td></tr>
+<tr><td>Incorporated in Canada, owners abroad</td><td>Resident, and the subject of this guide</td></tr>
+<tr><td>Incorporated abroad, managed from Canada</td><td>Residence is a question of fact and is not decided here</td></tr>
+<tr><td>Incorporated abroad, no Canadian presence</td><td>Outside what this site files</td></tr>
+</tbody></table>
+<p>Only the second row is straightforward, and it is the common case: a Canadian corporation set up by someone who has since left, or who never lived here.</p>
+</div></div>
+<div class="ei-section" id="residence"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">Corporate Residence and Where It Is Decided</h2>
+<p>A corporation incorporated in Canada is a resident of Canada. Where a corporation was incorporated elsewhere, residence turns on where it is centrally managed and controlled, which is a question of fact.</p>
+<p>Residence is the corporation's own, not its shareholders'. Owners living abroad do not make a Canadian corporation non-resident.</p>
+<div class="ei-info"><p>This site files for corporations incorporated in Canada. Where residence is genuinely in question, that is a determination for Gondaliya CPA Professional Corporation at gondaliyacpa.ca rather than a form on this one.</p></div>
+</div></div>
+<div class="ei-section" id="still-file"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">The Filing Obligation</h2>
+<p>A Canadian corporation with non-resident owners files a T2 for every tax year, six months after each year-end, until it is dissolved. Having no activity does not change that and neither does having no Canadian resident involved in it.</p>
+<p>The return is the same return. The owners' location changes who signs and how, not what is filed.</p>
+<p>See <a href="https://corpnilfilingfor300.ca/answers/do-i-need-to-file-a-t2-if-my-corporation-had-no-activity/">whether a corporation with no activity files</a>.</p>
+</div></div>
+<div class="ei-section-alt" id="daily-penalty"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">The Penalty Built on Days, Not Tax Owing</h2>
+<div class="ei-danger"><p>A true nil return carries no percentage late-filing penalty, because that penalty is a percentage of tax owing and the corporation owes $0.00. The unfiled year still stays open forever, invites a demand to file and an arbitrary assessment, blocks a clearance certificate and dissolution, and costs a non-resident-owned corporation $25.00 per day up to $2,500.00.</p></div>
+<p>The last clause of that block is this guide's subject. A non-resident-owned corporation that fails to file faces a charge of $25.00 per day, to a maximum of $2,500.00, and it is built on days rather than on tax owing.</p>
+<table class="ei-tbl"><thead><tr><th scope="col">Days late</th><th scope="col">Charge at $25.00 a day</th></tr></thead><tbody>
+<tr><td>10 days</td><td>$250.00</td></tr>
+<tr><td>30 days</td><td>$750.00</td></tr>
+<tr><td>60 days</td><td>$1,500.00</td></tr>
+<tr><td>100 days</td><td>$2,500.00, the maximum</td></tr>
+<tr><td>A year or more</td><td>$2,500.00, the maximum</td></tr>
+</tbody></table>
+<p>The maximum is reached in a little over three months. After that the charge stops growing while everything else about the open year continues.</p>
+</div></div>
+<div class="ei-wrap"><div class="ei-cta-inline"><div><h3>Nil T2 Filing, $300.00 plus HST per tax year</h3><p>One price for every year and every province. CPA reviewed and transmitted electronically.</p></div><a class="ei-btn-blue" href="https://corpnilfilingfor300.ca/form/">Start Nil T2 Filing NOW</a></div></div>
+<div class="ei-section" id="nil-exposure"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">Why a Nil Year Carries the Full Exposure</h2>
+<p>A percentage of $0.00 is $0.00. Twenty-five dollars a day for a hundred days is $2,500.00 whether the corporation earned millions or nothing at all.</p>
+<div class="ei-warn"><p>This is the one charge in this family of rules that reaches its maximum on a completely empty year. A dormant Canadian corporation owned from abroad is the single most exposed thing this site files for, and the exposure comes from the calendar rather than from anything it did.</p></div>
+<p>Filing the year is what stops the days counting. See <a href="https://corpnilfilingfor300.ca/answers/can-i-file-a-nil-t2-late-without-a-penalty/">filing a nil T2 late</a>.</p>
+</div></div>
+<div class="ei-section" id="t106-t1134"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">Other Returns That May Be Due</h2>
+<p>A corporation with non-resident connections can owe information returns beyond the T2. They are separate filings with their own deadlines and their own charges for lateness.</p>
+<table class="ei-tbl"><thead><tr><th scope="col">Return</th><th scope="col">Concerns</th></tr></thead><tbody>
+<tr><td>T106</td><td>Transactions with non-arm's length non-residents</td></tr>
+<tr><td>T1134</td><td>Interests in foreign affiliates</td></tr>
+<tr><td>T1135</td><td>Specified foreign property above the threshold</td></tr>
+<tr><td>NR4</td><td>Amounts paid or credited to non-residents</td></tr>
+</tbody></table>
+<p>None of these is covered by the fee on this page and none is a nil T2. A corporation that may owe one is handled by Gondaliya CPA Professional Corporation at gondaliyacpa.ca at $350.00 plus HST per year.</p>
+<p>A genuinely dormant corporation with no transactions and no foreign holdings generally owes none of them, but that is a conclusion to reach deliberately rather than to assume.</p>
+</div></div>
+<div class="ei-section-alt" id="treaty"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">Treaty-Based Returns</h2>
+<p>Where a tax treaty affects a corporation's Canadian tax position, the return may need to disclose the treaty relied on. That is a trading-return matter: a corporation with no income has no treaty position to take.</p>
+<p>A nil year reports $0.00 of income from every source, so there is nothing for a treaty to exempt or reduce.</p>
+<p>Where a treaty position is in play, the return is not nil and is not filed here.</p>
+</div></div>
+<div class="ei-section" id="signing"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">Signing From Outside Canada</h2>
+<p>Form T183CORP is signed by an authorized signing officer of the corporation. The officer's location is irrelevant: a director abroad signs the same form in the same way.</p>
+<p>It is signed here on a single-use access-controlled screen, with the date and the time recorded on the server in Eastern Time. It is never backdated. Time zones do not change the recorded moment.</p>
+<p>The signing rules are in the guide to <a href="https://corpnilfilingfor300.ca/guides/t183corp-signing-and-transmission/">Form T183CORP signing and transmission</a>.</p>
+</div></div>
+<div class="ei-section-alt" id="bn"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">Getting a Business Number Without a Canadian Address</h2>
+<p>A business number is needed before a return can be transmitted. A corporation obtains one whether or not its directors live in Canada.</p>
+<p>The registered office address on the registry record is the corporation's own, and keeping it current matters more here than anywhere, because correspondence has further to travel and the directors are not nearby to collect it.</p>
+<p>See <a href="https://corpnilfilingfor300.ca/answers/do-i-need-a-business-number-to-file-a-nil-t2/">whether a business number is needed to file</a>.</p>
+</div></div>
+<div class="ei-section" id="catch-up"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">Catching Up Several Non-Resident Years</h2>
+<p>Each outstanding year is its own return for its own tax year, prepared oldest first. Six unfiled years are six returns, each at $300.00 plus HST per tax year.</p>
+<p>The daily charge is per return rather than per corporation, which is why several open years are worth dealing with together rather than one at a time.</p>
+<p>See <a href="https://corpnilfilingfor300.ca/answers/can-i-file-five-years-of-nil-t2-returns-at-once/">filing five years at once</a> and the guide to <a href="https://corpnilfilingfor300.ca/guides/catch-up-unfiled-corporate-tax-returns/">catching up on unfiled corporate tax returns</a>.</p>
+</div></div>
+<div class="ei-section-alt" id="dissolution"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">Dissolving a Non-Resident-Owned Corporation</h2>
+<p>The sequence is the same as for any other corporation: every outstanding year filed, a clearance certificate, articles of dissolution, then the final T2 running to the dissolution date.</p>
+<p>Non-resident ownership gives it more urgency rather than a different shape. Each year the corporation is left standing is another year able to attract the daily charge.</p>
+<p>A holding corporation with investment income, a rental corporation and a corporation that paid or received a dividend are not nil. Those are handled by Gondaliya CPA Professional Corporation at gondaliyacpa.ca at $350.00 plus HST per year.</p>
+<p>See the guide to <a href="https://corpnilfilingfor300.ca/guides/winding-up-an-inactive-corporation/">winding up an inactive corporation</a>.</p>
+</div></div>
+<div class="ei-section" id="fee"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">What the Fee Covers</h2>
+<p>The fee is $300.00 plus HST per tax year, covering one nil T2 return for one corporation for one tax year:</p>
+<table class="ei-tbl"><thead><tr><th scope="col">Included</th><th scope="col">Detail</th></tr></thead><tbody>
+<tr><td>The T2 return</td><td>Including the T2 Short where the corporation qualifies</td></tr>
+<tr><td>GIFI Schedules 100, 125 and 141</td><td>Where they are required</td></tr>
+<tr><td>Schedule 24</td><td>On a first return</td></tr>
+<tr><td>Schedule 50</td><td>For every shareholder at 10% or more</td></tr>
+<tr><td>Schedule 8 and loss continuity</td><td>Recorded</td></tr>
+<tr><td>Form T183CORP package</td><td>With single-use secure e-signing</td></tr>
+<tr><td>CPA review</td><td>Before transmission</td></tr>
+<tr><td>Electronic transmission</td><td>By a registered EFILE electronic filer</td></tr>
+<tr><td>One corrected transmission</td><td>If the Agency rejects the first one</td></tr>
+<tr><td>CRA confirmation</td><td>Emailed within 3 business days</td></tr>
+</tbody></table>
+<p>See the full <a href="https://corpnilfilingfor300.ca/pricing/nil-t2-filing-cost/">nil T2 filing cost</a>.</p>
+</div></div>
+<div class="ei-section-alt"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">Frequently Asked Questions</h2>
+<div class="ei-faq">
+<details><summary>Does a Canadian Corporation With Owners Abroad Still File a T2?</summary><div class="ei-faq-a"><p>Yes, for every tax year, six months after each year-end, until it is formally dissolved. Owners living abroad do not change the obligation.</p></div></details>
+<details><summary>What Is the $25.00 a Day Charge?</summary><div class="ei-faq-a"><p>A non-resident-owned corporation that fails to file faces $25.00 per day to a maximum of $2,500.00. It is built on days rather than on tax owing, so the maximum is reached in a little over three months.</p></div></details>
+<details><summary>Does It Apply to a Year With No Activity?</summary><div class="ei-faq-a"><p>Yes, in full. It is calculated on days, so an entirely empty year reaches the same $2,500.00 maximum a trading year would.</p></div></details>
+<details><summary>Does Owning a Canadian Corporation From Abroad Make It Non-Resident?</summary><div class="ei-faq-a"><p>No. A corporation incorporated in Canada is a resident of Canada. Residence is the corporation's own, not its shareholders'.</p></div></details>
+<details><summary>Can Form T183CORP Be Signed From Outside Canada?</summary><div class="ei-faq-a"><p>Yes. An authorized signing officer signs it wherever they are, on a single-use access-controlled screen, with the date and time recorded on the server in Eastern Time.</p></div></details>
+<details><summary>Are the T106, T1134 and T1135 Covered by the Fee?</summary><div class="ei-faq-a"><p>No. Those are separate information returns with their own deadlines, and a corporation that may owe one is handled by Gondaliya CPA Professional Corporation at gondaliyacpa.ca at $350.00 plus HST per year.</p></div></details>
+</div>
+<h3>Questions Answered in Full</h3>
+<ul class="ei-qlist">
+<li><a href="https://corpnilfilingfor300.ca/answers/what-happens-if-i-dont-file-a-nil-t2/">What Happens if I Don't File a Nil T2?</a></li>
+<li><a href="https://corpnilfilingfor300.ca/answers/what-happens-if-i-dont-file-my-t2-for-five-years/">What Happens if I Don't File My T2 for Five Years?</a></li>
+<li><a href="https://corpnilfilingfor300.ca/answers/do-i-need-a-business-number-to-file-a-nil-t2/">Do I Need a Business Number to File a Nil T2?</a></li>
+<li><a href="https://corpnilfilingfor300.ca/answers/can-i-file-five-years-of-nil-t2-returns-at-once/">Can I File Five Years of Nil T2 Returns at Once?</a></li>
+<li><a href="https://corpnilfilingfor300.ca/answers/can-i-file-a-nil-t2-late-without-a-penalty/">Can I File a Nil T2 Late Without a Penalty?</a></li>
+<li><a href="https://corpnilfilingfor300.ca/answers/do-i-need-to-file-a-t2-if-my-corporation-had-no-activity/">Do I Need to File a T2 if My Corporation Had No Activity?</a></li>
+</ul>
+<h3>The Other Nil T2 Filing Guides</h3>
+<ul class="ei-qlist">
+<li><a href="https://corpnilfilingfor300.ca/guides/nil-t2-return-complete-guide/">The Complete Guide to the Nil T2 Return</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/dormant-and-inactive-corporations/">The Complete Guide to Dormant and Inactive Corporations</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/catch-up-unfiled-corporate-tax-returns/">The Complete Guide to Catching Up on Unfiled Corporate Tax Returns</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/final-t2-and-dissolution/">The Complete Guide to the Final T2 and Dissolution</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/t2-short-eligibility/">The Complete Guide to T2 Short Eligibility</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/provincial-and-federal-annual-returns/">The Complete Guide to Provincial and Federal Annual Returns</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/t183corp-signing-and-transmission/">The Complete Guide to Form T183CORP Signing and Transmission</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/how-to-file-a-nil-t2-return/">How to File a Nil T2 Return</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/gifi-schedules-100-125-141/">The Complete Guide to GIFI Schedules 100, 125 and 141</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/schedule-8-and-loss-continuity/">The Complete Guide to Schedule 8 and Loss Continuity</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/first-year-t2-filing/">The Complete Guide to First-Year T2 Filing</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/numbered-company-tax-filing/">The Complete Guide to Numbered Company Tax Filing</a></li>
+</ul>
+</div></div>
+<div class="ei-cta-bottom"><div class="ei-wrap"><h2>Nil T2 Filing, $300.00 plus HST per tax year</h2><p>Type your corporation name, pick your unfiled years, pay, and sign Form T183CORP on a secure screen. Your CRA confirmation is emailed within 3 business days.</p><a class="ei-btn-blue" href="https://corpnilfilingfor300.ca/form/">Start Nil T2 Filing NOW</a></div></div>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Article", "@id": "https://corpnilfilingfor300.ca/guides/non-resident-owned-corporation-nil-filing/#article", "headline": "The Complete Guide to Non-Resident-Owned Corporation Nil Filing", "name": "Non-Resident-Owned Corporation Nil Filing | Canadian Guide", "description": "Why the daily charge is the largest exposure a dormant corporation carries, who it reaches, and how a nil year is filed from outside Canada.", "inLanguage": "en-CA", "datePublished": "2026-10-27", "dateModified": "2026-10-27", "mainEntityOfPage": "https://corpnilfilingfor300.ca/guides/non-resident-owned-corporation-nil-filing/", "author": {"@type": "Person", "name": "Sharad Gondaliya", "honorificSuffix": "CPA", "url": "https://corpnilfilingfor300.ca/sharad-gondaliya-cpa/"}, "publisher": {"@type": "Organization", "name": "Gondaliya CPA Professional Corporation"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Nil T2 filing in Canada", "item": "https://corpnilfilingfor300.ca/"}, {"@type": "ListItem", "position": 2, "name": "Guides", "item": "https://corpnilfilingfor300.ca/guides/"}, {"@type": "ListItem", "position": 3, "name": "The Complete Guide to Non-Resident-Owned Corporation Nil Filing", "item": "https://corpnilfilingfor300.ca/guides/non-resident-owned-corporation-nil-filing/"}]}]}</script>

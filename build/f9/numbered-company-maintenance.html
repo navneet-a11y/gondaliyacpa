@@ -1,0 +1,220 @@
+<style>
+.ei-wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+.ei-btn-blue{background:rgba(32,135,201,1);color:#fff !important;padding:13px 26px;border-radius:6px;font-weight:700;font-size:0.95em;text-transform:uppercase;text-decoration:none !important;display:inline-block;line-height:1.4;text-align:center;min-width:120px}
+.ei-section{padding:26px 20px}
+.ei-section-alt{background:#f7f9fc;padding:26px 20px}
+.ei-art .ei-h2{font-weight:800;color:#1a2340;margin:0 0 10px;font-size:1.45em;line-height:1.3}
+.ei-art > *:last-child{margin-bottom:0}
+.ei-art p{color:#4a5568;line-height:1.8}
+.ei-art a{color:rgba(32,135,201,1)}
+.ei-art ul{color:#4a5568;line-height:1.8}
+.ei-info{background:#f0f7fd;border-left:4px solid rgba(32,135,201,1);border-radius:0 8px 8px 0;padding:14px 18px;margin:18px 0}
+.ei-info p{margin:0;color:#1a2340;line-height:1.7}
+.ei-warn{background:#fffbf0;border-left:4px solid #f6ad1a;border-radius:0 8px 8px 0;padding:14px 18px;margin:18px 0}
+.ei-warn p{margin:0;color:#7c5800;line-height:1.7}
+.ei-danger{background:#fff5f5;border-left:4px solid #e53e3e;border-radius:0 8px 8px 0;padding:14px 18px;margin:18px 0}
+.ei-danger p{margin:0;color:#742a2a;line-height:1.7}
+.ei-hero{background:linear-gradient(135deg,#0f1624 0%,#1a2340 55%,#1e3a6e 100%);padding:40px 20px}
+.ei-hero-inner{max-width:860px;margin:0 auto;text-align:center}
+.ei-hero-eyebrow{display:inline-block;background:rgba(32,135,201,0.15);border:1px solid rgba(32,135,201,0.4);border-radius:50px;padding:5px 16px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:rgba(32,135,201,1);margin-bottom:16px;font-size:.8em}
+.ei-hero h1{color:#fff;font-weight:800;line-height:1.2;margin:0 0 14px;font-size:2.1em}
+.ei-hero h1 span{color:#f6ad1a}
+.ei-hero-sub{color:rgba(255,255,255,0.78);max-width:720px;margin:0 auto 10px;line-height:1.75}
+.ei-hero-by{color:rgba(255,255,255,0.6);max-width:720px;margin:0 auto 22px;line-height:1.6;font-size:.86em}
+.ei-hero-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.ei-tbl{width:100%;border-collapse:collapse;margin:18px 0;border:1px solid #d1d5db}
+.ei-tbl th{background:#1a2340;color:#fff;font-weight:700;padding:12px 14px;text-align:left;border:1px solid #374151}
+.ei-tbl td{padding:10px 14px;border:1px solid #d1d5db;color:#2d3748;line-height:1.5}
+.ei-tbl tr:nth-child(even){background:#f7f9fc}
+.ei-tbl tr:hover{background:#edf2f7}
+.ei-updated{color:#718096;font-size:.9em;margin:0 0 18px}
+.ei-toc{background:linear-gradient(180deg,#ffffff,#f7f9fc);border:1px solid #e2e8f0;border-radius:12px;padding:18px 22px;margin:0 0 10px;box-shadow:0 1px 2px rgba(26,35,64,.05)}
+.ei-toc h2{font-size:.76em;font-weight:800;color:#8795ab;margin:0 0 10px;text-transform:uppercase;letter-spacing:1.3px}
+.ei-toc ol{margin:0;padding:0;list-style:none;counter-reset:toc;columns:2;column-gap:30px}
+.ei-toc li{break-inside:avoid;counter-increment:toc;margin:0}
+.ei-toc a{display:flex;gap:10px;align-items:baseline;padding:6px 9px;border-radius:6px;color:#1a2340;text-decoration:none;line-height:1.45}
+.ei-toc a::before{content:counter(toc);color:rgba(32,135,201,1);font-weight:800;font-size:.82em;min-width:15px;flex-shrink:0}
+.ei-toc a:hover{background:#eaf3fb;color:rgba(32,135,201,1);text-decoration:none}
+.ei-cta-inline{background:#1a2340;border-radius:10px;padding:24px 28px;margin:28px 0;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px}
+.ei-cta-inline h3{color:#fff;margin:0 0 4px;font-weight:700}
+.ei-cta-inline p{color:rgba(255,255,255,0.65);margin:0}
+.ei-cta-inline a,.ei-cta-inline a:visited,.ei-cta-inline a:hover,.ei-cta-bottom a,.ei-cta-bottom a:visited,.ei-cta-bottom a:hover,.ei-hero-btns a,.ei-hero-btns a:visited,.ei-hero-btns a:hover{color:#fff !important;text-decoration:none !important}
+.ei-faq{max-width:900px;margin:16px auto 0}
+.ei-faq details{border:1px solid #e2e8f0;border-radius:8px;margin-bottom:9px;background:#fff}
+.ei-faq summary{padding:14px 18px;font-weight:600;color:#1a2340;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:14px;line-height:1.5}
+.ei-faq summary::-webkit-details-marker{display:none}
+.ei-faq summary::after{content:'+';color:rgba(32,135,201,1);font-weight:400;font-size:1.4em;line-height:1;flex-shrink:0;transition:transform .15s ease}
+.ei-faq details[open] summary{color:rgba(32,135,201,1)}
+.ei-faq details[open] summary::after{transform:rotate(45deg)}
+.ei-faq .ei-faq-a{padding:0 18px 15px}
+.ei-faq .ei-faq-a p{margin:0;color:#4a5568;line-height:1.75}
+.ei-art h3{font-weight:700;color:#1a2340;margin:26px 0 8px;font-size:1.15em}
+.ei-qlist{max-width:900px;margin:12px auto 0;padding:0;list-style:none}
+.ei-qlist li{border:1px solid #e2e8f0;border-radius:8px;margin-bottom:10px;background:#fff}
+.ei-qlist a{display:block;padding:16px 20px;font-weight:600;color:#1a2340 !important;text-decoration:none !important}
+.ei-qlist a:hover{background:#f7f9fc;color:rgba(32,135,201,1) !important}
+.ei-cta-bottom{background:linear-gradient(135deg,#0f1624,#1a2340);padding:40px 20px;text-align:center}
+.ei-cta-bottom h2{color:#fff;font-weight:800;margin:0 0 10px;font-size:1.5em}
+.ei-cta-bottom p{color:rgba(255,255,255,0.72);max-width:600px;margin:0 auto 22px;line-height:1.75}
+.entry-header{display:none!important}
+.ast-article-single,.ast-article-single .entry-content{margin-top:0;padding-top:0}
+@media(max-width:900px){.ei-cta-inline{flex-direction:column;text-align:center}.ei-hero h1{font-size:1.6em}.ei-art .ei-h2{font-size:1.3em}.ei-toc ol{columns:1}}
+</style>
+<div class="ei-hero"><div class="ei-hero-inner"><span class="ei-hero-eyebrow">Numbered Company Guide</span><h1>The Complete Guide to <span>Numbered Company Maintenance</span></h1><p class="ei-hero-sub">Keeping a numbered company current between returns: the registry, the registered office, the minute book and the years nobody filed. Nil T2 filing is $300.00 plus HST per tax year.</p><p class="ei-hero-by">Written and reviewed by Sharad Gondaliya, CPA (Ontario), CPA Ontario Membership 61040184.</p><div class="ei-hero-btns"><a class="ei-btn-blue" href="https://corpnilfilingfor300.ca/form/">Start Nil T2 Filing NOW</a><a class="ei-btn-blue" style="background:transparent;border:2px solid rgba(255,255,255,0.4)" href="https://corpnilfilingfor300.ca/dormant-corporation-filing/">Dormant Corporation Filing</a></div></div></div>
+<div class="ei-section"><div class="ei-wrap ei-art">
+<p class="ei-updated">Last reviewed: October 27, 2026 &nbsp;&middot;&nbsp; <a href="https://corpnilfilingfor300.ca/guides/">All nil T2 filing guides</a></p>
+<div class="ei-toc"><h2>On this page</h2>
+<ol>
+<li><a href="#what">What a Numbered Company Is</a></li>
+<li><a href="#same-rules">A Number Changes Nothing About Filing</a></li>
+<li><a href="#finding">Finding Your Corporation Number and Business Number</a></li>
+<li><a href="#annual">The Annual Return and the Registry</a></li>
+<li><a href="#registered-office">Keeping the Registered Office Current</a></li>
+<li><a href="#directors">Director Records</a></li>
+<li><a href="#minute-book">The Minute Book</a></li>
+<li><a href="#nil-years">Nil Years on a Numbered Company</a></li>
+<li><a href="#forgotten">The Forgotten Numbered Company</a></li>
+<li><a href="#name">Adding an Operating Name Later</a></li>
+<li><a href="#closing">Closing a Numbered Company</a></li>
+<li><a href="#fee">What the Fee Covers</a></li>
+</ol></div>
+<div class="ei-info"><p>Gondaliya CPA Professional Corporation is a registered EFILE electronic filer. Returns are prepared and transmitted in Canada. Credentials are never shared and never used offshore.</p></div>
+</div></div>
+<div class="ei-section-alt" id="what"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">What a Numbered Company Is</h2>
+<p>A numbered company is a corporation that was incorporated without choosing a name, so the registry assigned it a number instead. In Ontario that reads as a seven-digit number followed by Ontario Inc.</p>
+<p>The number is the corporation's legal name. It is not a placeholder and it does not need replacing.</p>
+<div class="ei-info"><p>Incorporating with a number is a deliberate choice, often because a name search was not wanted or the corporation was set up to hold something rather than to trade under a brand.</p></div>
+</div></div>
+<div class="ei-section" id="same-rules"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">A Number Changes Nothing About Filing</h2>
+<p>Every obligation a named corporation has, a numbered one has identically. The return, the schedules, the deadlines and the annual return are the same.</p>
+<table class="ei-tbl"><thead><tr><th scope="col">Obligation</th><th scope="col">Named corporation</th><th scope="col">Numbered corporation</th></tr></thead><tbody>
+<tr><td>Annual T2</td><td>Yes</td><td>Yes</td></tr>
+<tr><td>Nil return when inactive</td><td>Yes</td><td>Yes</td></tr>
+<tr><td>Six-month deadline</td><td>Yes</td><td>Yes</td></tr>
+<tr><td>Annual return with the registry</td><td>Yes</td><td>Yes</td></tr>
+<tr><td>Dissolution to end the obligations</td><td>Yes</td><td>Yes</td></tr>
+</tbody></table>
+<p>The guide to <a href="https://corpnilfilingfor300.ca/guides/numbered-company-tax-filing/">numbered company tax filing</a> covers the return itself.</p>
+</div></div>
+<div class="ei-section-alt" id="finding"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">Finding Your Corporation Number and Business Number</h2>
+<p>Two different numbers are in play, issued by two different bodies, and they are routinely confused.</p>
+<table class="ei-tbl"><thead><tr><th scope="col">Number</th><th scope="col">Issued by</th><th scope="col">Used for</th></tr></thead><tbody>
+<tr><td>Corporation number</td><td>The incorporating registry</td><td>Registry filings and the corporation's identity</td></tr>
+<tr><td>Business number</td><td>The Canada Revenue Agency</td><td>Tax accounts, including the T2</td></tr>
+</tbody></table>
+<p>A corporation can have a corporation number and no business number if it never registered for anything. The business number is obtained before the first return is transmitted.</p>
+<p>See <a href="https://corpnilfilingfor300.ca/answers/do-i-need-a-business-number-to-file-a-nil-t2/">whether a business number is needed to file</a>.</p>
+</div></div>
+<div class="ei-section" id="annual"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">The Annual Return and the Registry</h2>
+<p>The annual return keeps the corporation on the register. It confirms the directors, the registered office and that the corporation still exists, and it reports no income.</p>
+<p>A numbered company is the most common casualty of a missed annual return, because there is no trading activity reminding anyone it exists.</p>
+<div class="ei-warn"><p>Missing it does not produce a charge. It produces a striking: the registry dissolves the corporation involuntarily, while its tax years stay open and unsettled.</p></div>
+<p>See the guide to <a href="https://corpnilfilingfor300.ca/guides/provincial-and-federal-annual-returns/">provincial and federal annual returns</a>.</p>
+</div></div>
+<div class="ei-wrap"><div class="ei-cta-inline"><div><h3>Nil T2 Filing, $300.00 plus HST per tax year</h3><p>One price for every year and every province. CPA reviewed and transmitted electronically.</p></div><a class="ei-btn-blue" href="https://corpnilfilingfor300.ca/form/">Start Nil T2 Filing NOW</a></div></div>
+<div class="ei-section-alt" id="registered-office"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">Keeping the Registered Office Current</h2>
+<p>The registered office is the address the registry and the Agency write to. A change has to be filed within the period the registry sets.</p>
+<p>A numbered holding company whose registered office is a former accountant's address, or a home the shareholder moved out of, receives nothing. The warning that it is about to be struck goes to an address nobody reads.</p>
+<p>This is the least demanding piece of maintenance there is, and the one most often left.</p>
+</div></div>
+<div class="ei-section" id="directors"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">Director Records</h2>
+<p>Directors are recorded with the registry and changes are filed when they happen. A corporation whose sole director has died or resigned without a replacement is not properly constituted.</p>
+<p>Directors remain exposed to certain corporate amounts, including payroll source deductions and net GST/HST, which makes an accurate record a matter of personal interest rather than paperwork.</p>
+<table class="ei-tbl"><thead><tr><th scope="col">Event</th><th scope="col">Filed with the registry</th><th scope="col">Timing</th></tr></thead><tbody>
+<tr><td>A director appointed</td><td>Yes</td><td>Within the registry's period</td></tr>
+<tr><td>A director resigned</td><td>Yes</td><td>Within the registry's period</td></tr>
+<tr><td>A director's address changed</td><td>Yes</td><td>Within the registry's period</td></tr>
+</tbody></table>
+<p>None of these are tax filings and none are covered by the fee on this page.</p>
+</div></div>
+<div class="ei-section-alt" id="minute-book"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">The Minute Book</h2>
+<p>The minute book holds the articles, the registers of directors and shareholders, the share certificates and the resolutions. It is the corporation's own record of itself.</p>
+<p>It is maintained through dormant years. Annual resolutions are still passed, and the shareholdings recorded in it are what Schedule 50 reports on the return.</p>
+<p>See the guide to <a href="https://corpnilfilingfor300.ca/guides/schedule-50-and-shareholder-reporting/">Schedule 50 and shareholder reporting</a>.</p>
+</div></div>
+<div class="ei-section" id="nil-years"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">Nil Years on a Numbered Company</h2>
+<p>A numbered company that holds nothing and does nothing files a nil T2 for every tax year, six months after each year-end, until it is dissolved.</p>
+<p>A holding corporation with investment income, a rental corporation and a corporation that paid or received a dividend are not nil. Those are handled by Gondaliya CPA Professional Corporation at gondaliyacpa.ca at $350.00 plus HST per year.</p>
+<p>Each year is $300.00 plus HST per tax year. See <a href="https://corpnilfilingfor300.ca/answers/what-happens-if-i-dont-file-a-nil-t2-for-a-numbered-company/">what happens when a numbered company does not file</a>.</p>
+</div></div>
+<div class="ei-section-alt" id="forgotten"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">The Forgotten Numbered Company</h2>
+<p>A numbered company set up years ago for a purpose that never materialised is the commonest version of this. Nobody traded through it, nobody filed for it, and it has been quietly accruing open years.</p>
+<p>Those years can all be filed. They are prepared oldest first and transmitted together, and a corporation nobody used has the simplest possible set of figures.</p>
+<div class="ei-info"><p>Finding the corporation number, the year-end on record and the list of open years is the first step, and it is usually the only part that takes any effort.</p></div>
+<p>See <a href="https://corpnilfilingfor300.ca/answers/can-i-file-nil-t2-returns-for-a-corporation-i-forgot-about/">filing for a corporation you forgot about</a> and the guide to <a href="https://corpnilfilingfor300.ca/guides/catch-up-unfiled-corporate-tax-returns/">catching up on unfiled corporate tax returns</a>.</p>
+</div></div>
+<div class="ei-section" id="name"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">Adding an Operating Name Later</h2>
+<p>A numbered company can register a business name to trade under without changing its legal name. The number remains the corporation's name on every filing.</p>
+<p>Registering a business name is a registry matter and has no effect on the T2. The return continues to be filed in the corporation's numbered name.</p>
+<p>Trading under the new name is, of course, trading. That year is not a nil year.</p>
+</div></div>
+<div class="ei-section-alt" id="closing"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">Closing a Numbered Company</h2>
+<p>Maintenance ends only at dissolution. Until then the corporation exists and acquires a new filing obligation every year, whether or not anyone is attending to it.</p>
+<p>Every outstanding year is filed first, then a clearance certificate, then articles of dissolution, then the final T2 running to the dissolution date.</p>
+<p>The sequence is in the guide to <a href="https://corpnilfilingfor300.ca/guides/winding-up-an-inactive-corporation/">winding up an inactive corporation</a>.</p>
+</div></div>
+<div class="ei-section" id="fee"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">What the Fee Covers</h2>
+<p>The fee is $300.00 plus HST per tax year, covering one nil T2 return for one corporation for one tax year:</p>
+<table class="ei-tbl"><thead><tr><th scope="col">Included</th><th scope="col">Detail</th></tr></thead><tbody>
+<tr><td>The T2 return</td><td>Including the T2 Short where the corporation qualifies</td></tr>
+<tr><td>GIFI Schedules 100, 125 and 141</td><td>Where they are required</td></tr>
+<tr><td>Schedule 24</td><td>On a first return</td></tr>
+<tr><td>Schedule 50</td><td>For every shareholder at 10% or more</td></tr>
+<tr><td>Schedule 8 and loss continuity</td><td>Recorded</td></tr>
+<tr><td>Form T183CORP package</td><td>With single-use secure e-signing</td></tr>
+<tr><td>CPA review</td><td>Before transmission</td></tr>
+<tr><td>Electronic transmission</td><td>By a registered EFILE electronic filer</td></tr>
+<tr><td>One corrected transmission</td><td>If the Agency rejects the first one</td></tr>
+<tr><td>CRA confirmation</td><td>Emailed within 3 business days</td></tr>
+</tbody></table>
+<p>See the full <a href="https://corpnilfilingfor300.ca/pricing/nil-t2-filing-cost/">nil T2 filing cost</a>.</p>
+</div></div>
+<div class="ei-section-alt"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">Frequently Asked Questions</h2>
+<div class="ei-faq">
+<details><summary>Is a Numbered Company Treated Differently by the Agency?</summary><div class="ei-faq-a"><p>No. Every obligation a named corporation has, a numbered one has identically: the return, the schedules, the deadlines and the annual return.</p></div></details>
+<details><summary>What Is the Difference Between a Corporation Number and a Business Number?</summary><div class="ei-faq-a"><p>The corporation number is issued by the incorporating registry and is used for registry filings. The business number is issued by the Canada Revenue Agency and is used for tax accounts, including the T2.</p></div></details>
+<details><summary>What Happens if a Numbered Company Misses Its Annual Return?</summary><div class="ei-faq-a"><p>The registry can dissolve it involuntarily. That is a striking rather than a charge, and the corporation's tax years stay open and unsettled afterwards.</p></div></details>
+<details><summary>Does a Numbered Company That Holds Nothing Still File?</summary><div class="ei-faq-a"><p>Yes, a nil T2 for every tax year, six months after each year-end, until it is formally dissolved.</p></div></details>
+<details><summary>Can I File for a Numbered Company I Forgot I Had?</summary><div class="ei-faq-a"><p>Yes. The open years are prepared oldest first and can be transmitted together. A corporation nobody used has the simplest possible set of figures.</p></div></details>
+<details><summary>Can a Numbered Company Trade Under a Name?</summary><div class="ei-faq-a"><p>It can register a business name to trade under while its legal name remains the number. Registering the name has no effect on the T2, though trading under it means that year is not nil.</p></div></details>
+</div>
+<h3>Questions Answered in Full</h3>
+<ul class="ei-qlist">
+<li><a href="https://corpnilfilingfor300.ca/answers/what-happens-if-i-dont-file-a-nil-t2-for-a-numbered-company/">What Happens if I Don't File a Nil T2 for a Numbered Company?</a></li>
+<li><a href="https://corpnilfilingfor300.ca/answers/can-i-file-nil-t2-returns-for-a-corporation-i-forgot-about/">Can I File Nil T2 Returns for a Corporation I Forgot About?</a></li>
+<li><a href="https://corpnilfilingfor300.ca/answers/do-i-need-a-business-number-to-file-a-nil-t2/">Do I Need a Business Number to File a Nil T2?</a></li>
+<li><a href="https://corpnilfilingfor300.ca/answers/how-do-i-know-if-my-corporation-counts-as-dormant/">How Do I Know if My Corporation Counts as Dormant?</a></li>
+<li><a href="https://corpnilfilingfor300.ca/answers/do-i-need-to-file-a-t2-every-year-if-my-corporation-is-inactive/">Do I Need to File a T2 Every Year if My Corporation Is Inactive?</a></li>
+<li><a href="https://corpnilfilingfor300.ca/answers/how-do-i-find-out-which-t2-years-are-outstanding/">How Do I Find Out Which T2 Years Are Outstanding?</a></li>
+</ul>
+<h3>The Other Nil T2 Filing Guides</h3>
+<ul class="ei-qlist">
+<li><a href="https://corpnilfilingfor300.ca/guides/mandatory-t2-electronic-filing/">The Complete Guide to Mandatory T2 Electronic Filing</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/schedule-50-and-shareholder-reporting/">The Complete Guide to Schedule 50 and Shareholder Reporting</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/non-resident-owned-corporation-nil-filing/">The Complete Guide to Non-Resident-Owned Corporation Nil Filing</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/nil-t2-return-complete-guide/">The Complete Guide to the Nil T2 Return</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/dormant-and-inactive-corporations/">The Complete Guide to Dormant and Inactive Corporations</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/catch-up-unfiled-corporate-tax-returns/">The Complete Guide to Catching Up on Unfiled Corporate Tax Returns</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/final-t2-and-dissolution/">The Complete Guide to the Final T2 and Dissolution</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/t2-short-eligibility/">The Complete Guide to T2 Short Eligibility</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/provincial-and-federal-annual-returns/">The Complete Guide to Provincial and Federal Annual Returns</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/t183corp-signing-and-transmission/">The Complete Guide to Form T183CORP Signing and Transmission</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/how-to-file-a-nil-t2-return/">How to File a Nil T2 Return</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/gifi-schedules-100-125-141/">The Complete Guide to GIFI Schedules 100, 125 and 141</a></li>
+</ul>
+</div></div>
+<div class="ei-cta-bottom"><div class="ei-wrap"><h2>Nil T2 Filing, $300.00 plus HST per tax year</h2><p>Type your corporation name, pick your unfiled years, pay, and sign Form T183CORP on a secure screen. Your CRA confirmation is emailed within 3 business days.</p><a class="ei-btn-blue" href="https://corpnilfilingfor300.ca/form/">Start Nil T2 Filing NOW</a></div></div>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Article", "@id": "https://corpnilfilingfor300.ca/guides/numbered-company-maintenance/#article", "headline": "The Complete Guide to Numbered Company Maintenance", "name": "Numbered Company Maintenance | Canadian Guide", "description": "Keeping a numbered company current between returns: the registry, the registered office, the minute book and the years nobody filed.", "inLanguage": "en-CA", "datePublished": "2026-10-27", "dateModified": "2026-10-27", "mainEntityOfPage": "https://corpnilfilingfor300.ca/guides/numbered-company-maintenance/", "author": {"@type": "Person", "name": "Sharad Gondaliya", "honorificSuffix": "CPA", "url": "https://corpnilfilingfor300.ca/sharad-gondaliya-cpa/"}, "publisher": {"@type": "Organization", "name": "Gondaliya CPA Professional Corporation"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Nil T2 filing in Canada", "item": "https://corpnilfilingfor300.ca/"}, {"@type": "ListItem", "position": 2, "name": "Guides", "item": "https://corpnilfilingfor300.ca/guides/"}, {"@type": "ListItem", "position": 3, "name": "The Complete Guide to Numbered Company Maintenance", "item": "https://corpnilfilingfor300.ca/guides/numbered-company-maintenance/"}]}]}</script>
