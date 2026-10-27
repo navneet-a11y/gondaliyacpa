@@ -135,17 +135,33 @@ function render(){
   if(r.err==='order'){out.className='ei-out no';
     out.innerHTML='<p class="ei-err">The first fiscal year-end must fall '+
       'after the incorporation date.</p>';return;}
-  var h='<h3>'+plural(r.rows.length,'tax year')+
-        (r.rows.length===1?' has ended, ':' have ended, ')+
-        (r.late===0?'none of them overdue':plural(r.late,'return')+' overdue')+
-        '</h3>';
-  h+='<div class="ei-stats">'+
-     '<div class="ei-stat"><span class="ei-stat-l">Tax years ended</span>'+
-     '<span class="ei-stat-v">'+r.rows.length+'</span></div>'+
-     '<div class="ei-stat"><span class="ei-stat-l">Returns now overdue</span>'+
-     '<span class="ei-stat-v">'+r.late+'</span></div>'+
-     '<div class="ei-stat"><span class="ei-stat-l">Length of the first year</span>'+
-     '<span class="ei-stat-v">'+plural(r.first,'day')+'</span></div></div>';
+  // A corporation whose first year-end has not arrived yet has no ended tax
+  // year, so there are no rows. Printing a table with a header and no body
+  // reads as a broken tool, so the empty case gets its own wording and its
+  // own three figures, which are the ones that actually apply to it.
+  var none=(r.rows.length===0);
+  var h='<h3>'+(none?'No tax year has ended yet'
+        :plural(r.rows.length,'tax year')+
+         (r.rows.length===1?' has ended, ':' have ended, ')+
+         (r.late===0?'none of them overdue'
+                    :plural(r.late,'return')+' overdue'))+'</h3>';
+  h+='<div class="ei-stats">';
+  if(none){
+    h+='<div class="ei-stat"><span class="ei-stat-l">Length of the first tax year</span>'+
+       '<span class="ei-stat-v">'+plural(r.first,'day')+'</span></div>'+
+       '<div class="ei-stat"><span class="ei-stat-l">First year-end</span>'+
+       '<span class="ei-stat-v">'+fmt(r.next.ye)+'</span></div>'+
+       '<div class="ei-stat"><span class="ei-stat-l">First return due</span>'+
+       '<span class="ei-stat-v">'+fmt(r.next.due)+'</span></div>';
+  }else{
+    h+='<div class="ei-stat"><span class="ei-stat-l">Tax years ended</span>'+
+       '<span class="ei-stat-v">'+r.rows.length+'</span></div>'+
+       '<div class="ei-stat"><span class="ei-stat-l">Returns now overdue</span>'+
+       '<span class="ei-stat-v">'+r.late+'</span></div>'+
+       '<div class="ei-stat"><span class="ei-stat-l">Length of the first year</span>'+
+       '<span class="ei-stat-v">'+plural(r.first,'day')+'</span></div>';
+  }
+  h+='</div>';
   if(r.over53){
     h+='<div class="ei-warn"><p>The first tax year is '+plural(r.first,'day')+
        ', which is longer than the 53 weeks a first tax year may not exceed. '+
@@ -153,15 +169,23 @@ function render(){
        'one entered here, and a transmission against the wrong year-end is '+
        'rejected.</p></div>';
   }
-  h+='<table class="ei-tbl"><thead><tr><th scope="col">Tax year ended</th>'+
-     '<th scope="col">Filing due</th><th scope="col">Status</th>'+
-     '</tr></thead><tbody>';
-  r.rows.forEach(function(w){
-    h+='<tr><td>'+fmt(w.ye)+'</td><td>'+fmt(w.due)+'</td><td>'+
-       (w.late?'Overdue':'Not yet due')+'</td></tr>';});
-  h+='</tbody></table>';
-  h+='<p>The next tax year ends '+fmt(r.next.ye)+' and its return is due '+
-     fmt(r.next.due)+'.</p>';
+  if(none){
+    h+='<p>The first fiscal year-end is '+fmt(r.next.ye)+', which has not '+
+       'arrived yet, so no tax year has ended and no T2 is owed. A return '+
+       'cannot be transmitted until the tax year is over.</p>';
+    h+='<p>Once that year ends, its return is due '+fmt(r.next.due)+
+       ', and it can be transmitted any time from the year-end onwards.</p>';
+  }else{
+    h+='<table class="ei-tbl"><thead><tr><th scope="col">Tax year ended</th>'+
+       '<th scope="col">Filing due</th><th scope="col">Status</th>'+
+       '</tr></thead><tbody>';
+    r.rows.forEach(function(w){
+      h+='<tr><td>'+fmt(w.ye)+'</td><td>'+fmt(w.due)+'</td><td>'+
+         (w.late?'Overdue':'Not yet due')+'</td></tr>';});
+    h+='</tbody></table>';
+    h+='<p>The next tax year ends '+fmt(r.next.ye)+' and its return is due '+
+       fmt(r.next.due)+'.</p>';
+  }
   if(r.late>0){
     h+='<p>'+(r.late===1
        ?'That one overdue return can be transmitted now, at '+PRICE_JS+'.'
@@ -1675,6 +1699,20 @@ TOOLS5 += [
 ]
 
 
+# Rank Math title and description, written to its length guidance (60 and
+# 160) rather than reusing the page title, which runs long on most of these.
+# The focus keyword is the record's own `keyword`.
+SEO = {'tax-years-since-incorporation-calculator': ('Tax Years Since Incorporation Calculator | Nil T2', 'List every tax year since incorporation, each T2 filing date and which returns are overdue. A nil T2 is $300.00 plus HST per tax year.'), 'days-overdue-calculator': ('Days Overdue Calculator for a Late T2 Return', 'See how many calendar days and business days a T2 is overdue, counted on the same holiday calendar as the deadline itself.'), 'next-t2-due-date-checker': ('Next T2 Due Date Checker | Which Date Comes Next', 'Enter any past fiscal year-end to see which T2 filing date comes next, how far away it is, and whether the return can be transmitted already.'), 'final-t2-return-due-date-calculator': ('Final T2 Return Due Date Calculator | Dissolution', 'Dissolution ends the tax year on its own date. Enter the last year-end and the dissolution date for the final T2 period and when it is due.'), 'amalgamation-t2-due-date-calculator': ('Amalgamation T2 Due Date Calculator | Final Returns', 'A predecessor tax year ends the day before the amalgamation. Get the final return period, its due date and the new first-year window.'), 'short-tax-year-deadline-calculator': ('Short Tax Year Deadline Calculator | Stub Period', 'A short tax year still gets six months from its year-end. Enter the first and last day for the period length and the filing date.'), 'nil-return-late-penalty-checker': ('Nil Return Late Penalty Checker | Late Nil T2', 'What applies to a late nil T2: why the percentage has nothing to apply to, and what still follows from leaving the year unfiled.'), 'clearance-certificate-requirement-checker': ('Clearance Certificate Requirement Checker | T2', 'Three questions on whether a clearance certificate belongs in your wind-down, what must be filed first, and why an unfiled year blocks it.'), 'payroll-nil-remittance-checker': ('Payroll Nil Remittance Checker | Open Account', 'An open payroll account still needs nil remittances. What is owed, what the nil T2 fee does not cover, and how Form RC145 closes it.'), 'gst-hst-account-closure-checker': ('GST/HST Account Closure Checker | Form RC145', 'Is the GST/HST account ready to close with Form RC145? What must be filed first, and why closing it does nothing about the T2.')}
+
+for t in TOOLS5:
+    t['seo_title'], t['seo_desc'] = SEO[t['slug']]
+    assert len(t['seo_title']) <= 60, (
+        '%s: SEO title is %d characters' % (t['slug'], len(t['seo_title'])))
+    assert len(t['seo_desc']) <= 160, (
+        '%s: SEO description is %d characters'
+        % (t['slug'], len(t['seo_desc'])))
+assert set(SEO) == {t['slug'] for t in TOOLS5}, 'SEO map does not match TOOLS5'
+
 for t, js in zip(TOOLS5, [T21_JS, T22_JS, T23_JS, T24_JS, T25_JS, T26_JS,
                           T27_JS, T28_JS, T29_JS, T30_JS]):
     t['js'] = js if js.startswith(PRELUDE) else PRELUDE + js
@@ -1797,7 +1835,11 @@ if __name__ == '__main__':
         io.open(os.path.join(HERE, t['slug'] + '.html'), 'w',
                 encoding='utf-8').write(html)
         recs.append(dict(slug=t['slug'], title=t['title'], url=url,
-                         content=html, **meta(t)))
+                         content=html,
+                         rank_math_title=t['seo_title'],
+                         rank_math_description=t['seo_desc'],
+                         rank_math_focus_keyword=t['keyword'],
+                         **meta(t)))
     json.dump(recs, io.open(os.path.join(HERE, 'f2e-manifest.json'), 'w',
                             encoding='utf-8'), ensure_ascii=False, indent=1)
     for r in recs:

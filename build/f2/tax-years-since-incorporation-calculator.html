@@ -342,17 +342,33 @@ function render(){
   if(r.err==='order'){out.className='ei-out no';
     out.innerHTML='<p class="ei-err">The first fiscal year-end must fall '+
       'after the incorporation date.</p>';return;}
-  var h='<h3>'+plural(r.rows.length,'tax year')+
-        (r.rows.length===1?' has ended, ':' have ended, ')+
-        (r.late===0?'none of them overdue':plural(r.late,'return')+' overdue')+
-        '</h3>';
-  h+='<div class="ei-stats">'+
-     '<div class="ei-stat"><span class="ei-stat-l">Tax years ended</span>'+
-     '<span class="ei-stat-v">'+r.rows.length+'</span></div>'+
-     '<div class="ei-stat"><span class="ei-stat-l">Returns now overdue</span>'+
-     '<span class="ei-stat-v">'+r.late+'</span></div>'+
-     '<div class="ei-stat"><span class="ei-stat-l">Length of the first year</span>'+
-     '<span class="ei-stat-v">'+plural(r.first,'day')+'</span></div></div>';
+  // A corporation whose first year-end has not arrived yet has no ended tax
+  // year, so there are no rows. Printing a table with a header and no body
+  // reads as a broken tool, so the empty case gets its own wording and its
+  // own three figures, which are the ones that actually apply to it.
+  var none=(r.rows.length===0);
+  var h='<h3>'+(none?'No tax year has ended yet'
+        :plural(r.rows.length,'tax year')+
+         (r.rows.length===1?' has ended, ':' have ended, ')+
+         (r.late===0?'none of them overdue'
+                    :plural(r.late,'return')+' overdue'))+'</h3>';
+  h+='<div class="ei-stats">';
+  if(none){
+    h+='<div class="ei-stat"><span class="ei-stat-l">Length of the first tax year</span>'+
+       '<span class="ei-stat-v">'+plural(r.first,'day')+'</span></div>'+
+       '<div class="ei-stat"><span class="ei-stat-l">First year-end</span>'+
+       '<span class="ei-stat-v">'+fmt(r.next.ye)+'</span></div>'+
+       '<div class="ei-stat"><span class="ei-stat-l">First return due</span>'+
+       '<span class="ei-stat-v">'+fmt(r.next.due)+'</span></div>';
+  }else{
+    h+='<div class="ei-stat"><span class="ei-stat-l">Tax years ended</span>'+
+       '<span class="ei-stat-v">'+r.rows.length+'</span></div>'+
+       '<div class="ei-stat"><span class="ei-stat-l">Returns now overdue</span>'+
+       '<span class="ei-stat-v">'+r.late+'</span></div>'+
+       '<div class="ei-stat"><span class="ei-stat-l">Length of the first year</span>'+
+       '<span class="ei-stat-v">'+plural(r.first,'day')+'</span></div>';
+  }
+  h+='</div>';
   if(r.over53){
     h+='<div class="ei-warn"><p>The first tax year is '+plural(r.first,'day')+
        ', which is longer than the 53 weeks a first tax year may not exceed. '+
@@ -360,15 +376,23 @@ function render(){
        'one entered here, and a transmission against the wrong year-end is '+
        'rejected.</p></div>';
   }
-  h+='<table class="ei-tbl"><thead><tr><th scope="col">Tax year ended</th>'+
-     '<th scope="col">Filing due</th><th scope="col">Status</th>'+
-     '</tr></thead><tbody>';
-  r.rows.forEach(function(w){
-    h+='<tr><td>'+fmt(w.ye)+'</td><td>'+fmt(w.due)+'</td><td>'+
-       (w.late?'Overdue':'Not yet due')+'</td></tr>';});
-  h+='</tbody></table>';
-  h+='<p>The next tax year ends '+fmt(r.next.ye)+' and its return is due '+
-     fmt(r.next.due)+'.</p>';
+  if(none){
+    h+='<p>The first fiscal year-end is '+fmt(r.next.ye)+', which has not '+
+       'arrived yet, so no tax year has ended and no T2 is owed. A return '+
+       'cannot be transmitted until the tax year is over.</p>';
+    h+='<p>Once that year ends, its return is due '+fmt(r.next.due)+
+       ', and it can be transmitted any time from the year-end onwards.</p>';
+  }else{
+    h+='<table class="ei-tbl"><thead><tr><th scope="col">Tax year ended</th>'+
+       '<th scope="col">Filing due</th><th scope="col">Status</th>'+
+       '</tr></thead><tbody>';
+    r.rows.forEach(function(w){
+      h+='<tr><td>'+fmt(w.ye)+'</td><td>'+fmt(w.due)+'</td><td>'+
+         (w.late?'Overdue':'Not yet due')+'</td></tr>';});
+    h+='</tbody></table>';
+    h+='<p>The next tax year ends '+fmt(r.next.ye)+' and its return is due '+
+       fmt(r.next.due)+'.</p>';
+  }
   if(r.late>0){
     h+='<p>'+(r.late===1
        ?'That one overdue return can be transmitted now, at '+PRICE_JS+'.'
