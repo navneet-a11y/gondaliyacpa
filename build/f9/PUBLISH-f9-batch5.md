@@ -15,13 +15,13 @@ cnf_family ["f9"] (term_taxonomy_id 22).
 | 18 | t2-filing-deadlines | 25893 | 1377 | verified | set | f9 |
 | 19 | zero-activity-corporate-tax-returns | 25231 | 1379 | verified | set | f9 |
 | 20 | corporate-tax-arrears-and-interest | 25309 | 1381 | verified | set | f9 |
-| 21 | winding-up-an-inactive-corporation | 26159 | | | | |
-| 22 | small-business-corporate-filing | 24443 | | | | |
-| 23 | corporate-compliance-calendar | 24605 | | | | |
-| 24 | numbered-company-maintenance | 24298 | | | | |
-| 25 | mandatory-t2-electronic-filing | 24713 | | | | |
-| 26 | schedule-50-and-shareholder-reporting | 24239 | | | | |
-| 27 | non-resident-owned-corporation-nil-filing | 25030 | | | | |
+| 21 | winding-up-an-inactive-corporation | 26159 | 1383 | verified | set | f9 |
+| 22 | small-business-corporate-filing | 24443 | 1385 | verified | set | f9 |
+| 23 | corporate-compliance-calendar | 24605 | 1387 | verified | set | f9 |
+| 24 | numbered-company-maintenance | 24298 | 1389 | verified | set | f9 |
+| 25 | mandatory-t2-electronic-filing | 24713 | 1391 | verified | set | f9 |
+| 26 | schedule-50-and-shareholder-reporting | 24239 | 1393 | verified | set | f9 |
+| 27 | non-resident-owned-corporation-nil-filing | 25030 | 1395 | verified | set | f9 |
 
 ## The 17 earlier guides: DONE
 
@@ -55,3 +55,29 @@ it has room to do because the chunk size is 460 against the tool's own limit
 of 500. Moving the boundary backward was tried first and was worse: it
 shortened each following chunk until the last was a single character, and a
 one-character search matched hundreds of times.
+
+## Complete
+
+All ten published 2026-10-27, IDs 1377 to 1395 (odd numbers). Every page's
+content_length came back equal to its build file on a zero-change probe, so
+all ten transferred exactly. nil_guide total is now 27. Family 9 stands at 27
+of the 30 in the plan.
+
+### cnf_family f9 backfilled
+
+The f9 term stood at 11 against 27 live guides once this batch was tagged, so
+sixteen of the seventeen earlier guides had never been given it. All
+seventeen were tagged, and the term now reads 27. The same gap is still open
+on cnf_family f2 for the calculators.
+
+### Open for sign-off
+
+- All ten topics. Seven are Appendix A topics with corrected slugs; three
+  (mandatory-t2-electronic-filing, schedule-50-and-shareholder-reporting,
+  non-resident-owned-corporation-nil-filing) are not in Appendix A at all,
+  because its Family 9 list cannot supply ten more distinct topics.
+- The sibling window. Every guide now links twelve siblings rather than all
+  the others, which is what keeps the family inside the 40-outbound cap as it
+  grows to 30.
+- New guide copy needs Sharad Gondaliya's review before it counts as
+  published under the approvals rule.

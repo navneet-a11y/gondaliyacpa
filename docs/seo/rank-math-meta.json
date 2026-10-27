@@ -1,6 +1,6 @@
 {
   "applied": "2026-10-27",
-  "coverage": "145 items given meta in this pass: 30 pages, 30 questions, 24 service places, 23 deadlines, 20 calculators (tools 1-20), 17 guides, 1 cost page. Calculators 21-30 (IDs 1285-1303) carry meta set at publish time by build/f2/build_f2e.py and are not repeated here. Every published item on the site now has a Rank Math title and description.",
+  "coverage": "155 items given meta: 30 pages, 30 questions, 24 service places, 23 deadlines, 20 calculators (tools 1-20), 17 guides (1-17), 1 cost page, and the 10 new guides (18-27, IDs 1377-1395). Calculators 21-30 (IDs 1285-1303) carry meta set at publish time by build/f9 and build/f2 generators and are not repeated here. Every published item on the site now has a Rank Math title and description.",
   "nil_calculator_1_to_20": {
     "items": [
       {
@@ -383,6 +383,71 @@
         "id": 1102,
         "kw": "shelf corporation compliance",
         "title": "Shelf Corporation Compliance | Filing Guide for Canada"
+      }
+    ],
+    "rest_base": "nil_guide"
+  },
+  "nil_guide_batch5": {
+    "items": [
+      {
+        "desc": "The six-month rule, how a weekend or statutory holiday moves a due date, short and first tax years, and the deadlines that run separately.",
+        "id": 1377,
+        "kw": "t2 filing deadlines",
+        "title": "T2 Filing Deadlines | Complete Guide for Canada"
+      },
+      {
+        "desc": "What counts as zero activity, the entries that quietly take a year out of it, and which schedules a zero-activity return still carries.",
+        "id": 1379,
+        "kw": "zero activity corporate tax returns",
+        "title": "Zero-Activity Corporate Tax Returns | Guide"
+      },
+      {
+        "desc": "What arrears are, what interest attaches to, why a nil year creates none, and how an unfiled year manufactures a balance that was never owed.",
+        "id": 1381,
+        "kw": "corporate tax arrears",
+        "title": "Corporate Tax Arrears and Interest | Guide"
+      },
+      {
+        "desc": "The order the steps have to happen in, every return due first, the clearance certificate, closing the accounts and the registry filing.",
+        "id": 1383,
+        "kw": "winding up an inactive corporation",
+        "title": "Winding Up an Inactive Corporation | Guide"
+      },
+      {
+        "desc": "Everything a small Canadian corporation files each year, which of it is tax and which is registry, and how to tell a nil year from a trading one.",
+        "id": 1385,
+        "kw": "small business corporate filing",
+        "title": "Small Business Corporate Filing | Canadian Guide"
+      },
+      {
+        "desc": "Every recurring date a Canadian corporation owes, which ones derive from your year-end, and the shortest calendar a dormant corporation keeps.",
+        "id": 1387,
+        "kw": "corporate compliance calendar",
+        "title": "Corporate Compliance Calendar | Canadian Guide"
+      },
+      {
+        "desc": "Keeping a numbered company current between returns: the registry, the registered office, the minute book and the years nobody filed.",
+        "id": 1389,
+        "kw": "numbered company maintenance",
+        "title": "Numbered Company Maintenance | Canadian Guide"
+      },
+      {
+        "desc": "The rule for tax years starting after 2023, the flat charge for filing on paper, why a nil return is not exempt, and how transmission works.",
+        "id": 1391,
+        "kw": "mandatory t2 electronic filing",
+        "title": "Mandatory T2 Electronic Filing | Canadian Guide"
+      },
+      {
+        "desc": "What Schedule 50 reports, the 10% threshold, what goes in each row, and why a nil return still files it in full.",
+        "id": 1393,
+        "kw": "schedule 50",
+        "title": "Schedule 50 and Shareholder Reporting | Nil T2"
+      },
+      {
+        "desc": "Why the daily charge is the largest exposure a dormant corporation carries, who it reaches, and how a nil year is filed from outside Canada.",
+        "id": 1395,
+        "kw": "non-resident-owned corporation",
+        "title": "Non-Resident-Owned Corporation Nil T2 Filing"
       }
     ],
     "rest_base": "nil_guide"

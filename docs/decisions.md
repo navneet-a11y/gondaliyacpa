@@ -5523,3 +5523,115 @@ posts. The 12,976-byte CSS prefix is byte-identical across all thirty tool
 pages. Moving it into a reusable block, or into the theme, would cut every
 future tool publish by about half and would make a style fix one edit rather
 than thirty. Worth a decision before the next batch.
+
+## 2026-10-27 — Family 9 batch 5 published, guides 18 to 27
+
+| Guide | ID | Bytes | Verified |
+|---|---|---|---|
+| /guides/t2-filing-deadlines/ | 1377 | 25,893 | matches build |
+| /guides/zero-activity-corporate-tax-returns/ | 1379 | 25,231 | matches build |
+| /guides/corporate-tax-arrears-and-interest/ | 1381 | 25,309 | matches build |
+| /guides/winding-up-an-inactive-corporation/ | 1383 | 26,159 | matches build |
+| /guides/small-business-corporate-filing/ | 1385 | 24,443 | matches build |
+| /guides/corporate-compliance-calendar/ | 1387 | 24,605 | matches build |
+| /guides/numbered-company-maintenance/ | 1389 | 24,298 | matches build |
+| /guides/mandatory-t2-electronic-filing/ | 1391 | 24,713 | matches build |
+| /guides/schedule-50-and-shareholder-reporting/ | 1393 | 24,239 | matches build |
+| /guides/non-resident-owned-corporation-nil-filing/ | 1395 | 25,030 | matches build |
+
+Family 9 is now 27 of 30. Each carries the guides' Astra layout meta, the
+Rank Math fields, `cnf_last_verified_et` 2026-10-27 and the `cnf_family` f9
+term.
+
+### The sibling list had to stop being the whole family
+
+Until guide 17 every guide listed all the others. That met the 6(g) line 1528
+minimum of 12 inbound, but it does not scale, because the same line caps
+outbound at 40. Measured at seventeen guides the pillar already carried 34
+outbound links, and ten more siblings would have taken it to 44. At the full
+thirty the design is unbuildable.
+
+The registry now hands out a **12-wide circulant window**: each guide links
+the next twelve in registry order, wrapping. Every guide is therefore linked
+to by exactly twelve, which with the hub is 13 inbound against a minimum of
+12, while outbound falls by fourteen links on every page. `assert_regular()`
+counts the inbound from the construction rather than trusting it, and
+`gate_f9_all.py` counts it again from the rendered pages.
+
+All seventeen earlier guides were regenerated and updated live. Measured
+after the change: inbound 12 on every guide, outbound at most 30 against the
+cap of 40, with room to reach thirty guides.
+
+### 19th plan conflict, continued: Appendix A runs out
+
+Seven of the ten topics are Appendix A Family 9 topics with slugs corrected
+to the `/guides/` base, continuing the batch 3 reading. **Three are not in
+Appendix A at all**, and that is a deviation rather than a slug correction:
+
+- `/guides/mandatory-t2-electronic-filing/`
+- `/guides/schedule-50-and-shareholder-reporting/`
+- `/guides/non-resident-owned-corporation-nil-filing/`
+
+Appendix A's Family 9 list cannot supply ten more distinct topics. Eleven of
+its thirty entries are built, and every remaining one is either a naming
+variant of a live guide — the three general nil T2 entries, three dormant,
+three catch-up, three dissolution, two deadline, two penalty and the holding
+company entry all collapse onto pages that exist — or `/final-t2-return-guide/`,
+which restates `/guides/final-t2-and-dissolution/`. Building them as written
+would have put near-identical pages into competition with each other.
+
+The three additions were chosen on the basis batch 3 used: live cluster
+support and least overlap. Each covers a rule the site states repeatedly and
+explains nowhere — the e-filing mandate and its flat charges, the 10%
+shareholder threshold, and the non-resident daily charge — and each has a
+Family 13 post or a Family 4 set already live with no pillar above it.
+**Sharad Gondaliya to confirm all ten topics, the seven slug corrections and
+the three additions.**
+
+### A transport bug in wp_replace_in_post, and the two live pages it broke
+
+Patching seventeen pages with chunked replacements rather than re-uploading
+23KB each exposed this: **the tool received two characters fewer than were
+sent whenever the `search` string ENDED with `</`.** The fragment reads as the
+opening of a closing tag and is eaten in transit, so the deletion stopped two
+characters short and left `</` behind:
+
+    /guides/</t2-late-filing-penalties/
+
+Found on guide 984 because its final byte count came out two over target;
+reading the live content showed the broken URL. Fixed there and on 1094, and
+confirmed absent from 1096, 1098 and 1100, which were the other three pages
+whose plans had an at-risk chunk before they were regenerated. A `search`
+ending with a bare `<` came through intact, so only the two-character form is
+affected.
+
+The patch builder now moves a chunk boundary **forward** to a safe character,
+which it has room to do because the chunk size is 460 against the tool's own
+limit of 500. Moving it backward was tried first and was worse: it shortened
+each following chunk until the last was a single character, and a
+one-character search matched hundreds of times.
+
+### The cross-batch gate, and what it caught
+
+`build/f9/gate_f9_all.py` is new. The five batch gates only ever compared a
+guide against its own manifest, so nothing had checked a new guide against
+the ones published before it — which at twenty-seven guides on closely
+related topics is the likeliest place for a real defect. It checks duplicate
+titles, descriptions and headings across the whole family, recycled body
+paragraphs, link integrity, and the 6(g) inbound and outbound counts measured
+on the rendered pages.
+
+It caught one: a paragraph shared by the pillar, the holding-company guide
+and the shelf-corporation guide. The shelf-corporation instance was rewritten
+in its own terms.
+
+Two generator guards caught my own errors while the batch was written: a
+visible H1 that disagreed with its schema headline on the compliance calendar
+guide, and "cheapest" used figuratively twice against hard rule 4.
+
+### cnf_family f9 backfilled across the family
+
+Tagging this batch put the f9 term at 11 against 27 live guides, which showed
+that sixteen of the seventeen earlier guides had never been given it. All
+seventeen were tagged and the term now reads 27. **The same gap is still open
+on `cnf_family` f2**, which reads 20 against 30 live calculators.
