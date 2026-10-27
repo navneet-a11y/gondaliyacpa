@@ -1,0 +1,319 @@
+<!-- wp:html -->
+<style>
+.ei-wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+.ei-btn-blue{background:rgba(32,135,201,1);color:#fff !important;padding:13px 26px;border-radius:6px;font-weight:700;font-size:0.95em;text-transform:uppercase;text-decoration:none !important;display:inline-block;line-height:1.4;text-align:center;min-width:120px}
+.ei-section{padding:26px 20px}
+.ei-section-alt{background:#f7f9fc;padding:26px 20px}
+.ei-art .ei-h2{font-weight:800;color:#1a2340;margin:0 0 10px;font-size:1.45em;line-height:1.3}
+.ei-art > *:last-child{margin-bottom:0}
+.ei-art p{color:#4a5568;line-height:1.8}
+.ei-art a{color:rgba(32,135,201,1)}
+.ei-art ul{color:#4a5568;line-height:1.8}
+.ei-info{background:#f0f7fd;border-left:4px solid rgba(32,135,201,1);border-radius:0 8px 8px 0;padding:14px 18px;margin:18px 0}
+.ei-info p{margin:0;color:#1a2340;line-height:1.7}
+.ei-warn{background:#fffbf0;border-left:4px solid #f6ad1a;border-radius:0 8px 8px 0;padding:14px 18px;margin:18px 0}
+.ei-warn p{margin:0;color:#7c5800;line-height:1.7}
+.ei-danger{background:#fff5f5;border-left:4px solid #e53e3e;border-radius:0 8px 8px 0;padding:14px 18px;margin:18px 0}
+.ei-danger p{margin:0;color:#742a2a;line-height:1.7}
+.ei-hero{background:linear-gradient(135deg,#0f1624 0%,#1a2340 55%,#1e3a6e 100%);padding:40px 20px}
+.ei-hero-inner{max-width:860px;margin:0 auto;text-align:center}
+.ei-hero-eyebrow{display:inline-block;background:rgba(32,135,201,0.15);border:1px solid rgba(32,135,201,0.4);border-radius:50px;padding:5px 16px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:rgba(32,135,201,1);margin-bottom:16px;font-size:.8em}
+.ei-hero h1{color:#fff;font-weight:800;line-height:1.2;margin:0 0 14px;font-size:2.1em}
+.ei-hero h1 span{color:#f6ad1a}
+.ei-hero-sub{color:rgba(255,255,255,0.78);max-width:720px;margin:0 auto 10px;line-height:1.75}
+.ei-hero-by{color:rgba(255,255,255,0.6);max-width:720px;margin:0 auto 22px;line-height:1.6;font-size:.86em}
+.ei-hero-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.ei-tbl{width:100%;border-collapse:collapse;margin:18px 0;border:1px solid #d1d5db}
+.ei-tbl th{background:#1a2340;color:#fff;font-weight:700;padding:12px 14px;text-align:left;border:1px solid #374151}
+.ei-tbl td{padding:10px 14px;border:1px solid #d1d5db;color:#2d3748;line-height:1.5}
+.ei-tbl tr:nth-child(even){background:#f7f9fc}
+.ei-tbl tr:hover{background:#edf2f7}
+.ei-updated{color:#718096;font-size:.9em;margin:0 0 18px}
+.ei-toc{background:linear-gradient(180deg,#ffffff,#f7f9fc);border:1px solid #e2e8f0;border-radius:12px;padding:18px 22px;margin:0 0 10px;box-shadow:0 1px 2px rgba(26,35,64,.05)}
+.ei-toc h2{font-size:.76em;font-weight:800;color:#8795ab;margin:0 0 10px;text-transform:uppercase;letter-spacing:1.3px}
+.ei-toc ol{margin:0;padding:0;list-style:none;counter-reset:toc;columns:2;column-gap:30px}
+.ei-toc li{break-inside:avoid;counter-increment:toc;margin:0}
+.ei-toc a{display:flex;gap:10px;align-items:baseline;padding:6px 9px;border-radius:6px;color:#1a2340;text-decoration:none;line-height:1.45}
+.ei-toc a::before{content:counter(toc);color:rgba(32,135,201,1);font-weight:800;font-size:.82em;min-width:15px;flex-shrink:0}
+.ei-toc a:hover{background:#eaf3fb;color:rgba(32,135,201,1);text-decoration:none}
+.ei-cta-inline{background:#1a2340;border-radius:10px;padding:24px 28px;margin:28px 0;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px}
+.ei-cta-inline h3{color:#fff;margin:0 0 4px;font-weight:700}
+.ei-cta-inline p{color:rgba(255,255,255,0.65);margin:0}
+.ei-cta-inline a,.ei-cta-inline a:visited,.ei-cta-inline a:hover,.ei-cta-bottom a,.ei-cta-bottom a:visited,.ei-cta-bottom a:hover,.ei-hero-btns a,.ei-hero-btns a:visited,.ei-hero-btns a:hover{color:#fff !important;text-decoration:none !important}
+.ei-faq{max-width:900px;margin:16px auto 0}
+.ei-faq details{border:1px solid #e2e8f0;border-radius:8px;margin-bottom:9px;background:#fff}
+.ei-faq summary{padding:14px 18px;font-weight:600;color:#1a2340;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:14px;line-height:1.5}
+.ei-faq summary::-webkit-details-marker{display:none}
+.ei-faq summary::after{content:'+';color:rgba(32,135,201,1);font-weight:400;font-size:1.4em;line-height:1;flex-shrink:0;transition:transform .15s ease}
+.ei-faq details[open] summary{color:rgba(32,135,201,1)}
+.ei-faq details[open] summary::after{transform:rotate(45deg)}
+.ei-faq .ei-faq-a{padding:0 18px 15px}
+.ei-faq .ei-faq-a p{margin:0;color:#4a5568;line-height:1.75}
+.ei-art h3{font-weight:700;color:#1a2340;margin:26px 0 8px;font-size:1.15em}
+.ei-qlist{max-width:900px;margin:12px auto 0;padding:0;list-style:none}
+.ei-qlist li{border:1px solid #e2e8f0;border-radius:8px;margin-bottom:10px;background:#fff}
+.ei-qlist a{display:block;padding:16px 20px;font-weight:600;color:#1a2340 !important;text-decoration:none !important}
+.ei-qlist a:hover{background:#f7f9fc;color:rgba(32,135,201,1) !important}
+.ei-cta-bottom{background:linear-gradient(135deg,#0f1624,#1a2340);padding:40px 20px;text-align:center}
+.ei-cta-bottom h2{color:#fff;font-weight:800;margin:0 0 10px;font-size:1.5em}
+.ei-cta-bottom p{color:rgba(255,255,255,0.72);max-width:600px;margin:0 auto 22px;line-height:1.75}
+.entry-header{display:none!important}
+.ast-article-single,.ast-article-single .entry-content{margin-top:0;padding-top:0}
+@media(max-width:900px){.ei-cta-inline{flex-direction:column;text-align:center}.ei-hero h1{font-size:1.6em}.ei-art .ei-h2{font-size:1.3em}.ei-toc ol{columns:1}}
+
+/* Narrower than the guides' 1100px, at Navneet's request. 1000px is the
+   measure the Family 4 service pages already use, so this is a house value
+   rather than a new one. The hero band stays full-bleed: it is .ei-hero that
+   spans, and .ei-hero-inner caps its text at 860px, so neither is touched.
+
+   A service page has exactly one band that spans the viewport, the hero. The
+   guides alternate white and grey .ei-section bands, which span whatever the
+   window is and make the body read full width even with the text capped at
+   1000px. Dropping the grey leaves one continuous column, which is what a
+   service page looks like. The hero still spans. */
+.ei-wrap{max-width:1000px}
+.ei-section-alt{background:none}
+/* The FAQ and Read Next lists come from the guides capped at 900px and
+   centred with auto margins. In the guides' 1100px column that reads as a
+   deliberate inset; in this 1000px one it just leaves them narrower than,
+   and off-axis from, their own H2 and the body copy above. Run them the
+   full measure of the column instead. */
+.ei-faq,.ei-qlist{max-width:none;margin-left:0;margin-right:0}
+/* 1000px, the same measure as .cnf-w on the Family 4 service pages, which
+   Navneet confirmed read correctly.
+
+   !important, which is not decoration here. Measured against a service
+   page screenshot at the same window, the tool body was rendering around
+   1250px: wider than the 1100px base AND wider than the 1000px override,
+   so neither .ei-wrap rule was binding. Two successive specificity levels
+   (0,1,0 then 0,2,0) changed nothing on the front end. Whatever sets the
+   width wins on specificity or carries !important itself, so this does
+   too. The margins are forced with it so the column still centres if the
+   same rule also set a margin.
+
+   The hero is not in the selector and does not move. */
+.ei-wrap.ei-art,.ei-cta-bottom .ei-wrap{max-width:1000px!important;margin-left:auto!important;margin-right:auto!important}
+/* Dark navy calculator panel, after the gondaliyacpa.ca sample Navneet sent.
+
+   The panel is the only thing on the page that asks for input, and as a white
+   card on a white body it read as more body copy. Navy separates the thing you
+   do from the thing you read, which is the whole point of the sample's design.
+
+   Every selector below carries one class more than the base rule it replaces,
+   because the base rules sit earlier in this same stylesheet and some of them
+   (.ei-yn label) are already two-class. The result box is deliberately left
+   light: on navy it reads as the answer card, and its green and red variants
+   still carry the eligible / not eligible meaning. */
+.ei-art .ei-tool{background:#1a2340;border:0;border-radius:14px;
+  padding:28px 30px;box-shadow:0 10px 30px rgba(15,22,36,.18)}
+.ei-art .ei-tool legend{color:#f6ad1a;font-size:1.15em;padding:0 0 14px}
+.ei-art .ei-f label{color:rgba(255,255,255,.82)}
+.ei-art .ei-f input[type=date]{background:rgba(255,255,255,.09);
+  border:1.5px solid rgba(255,255,255,.28);color:#fff;font-weight:700;
+  color-scheme:dark;padding:11px 13px}
+.ei-art .ei-f input[type=date]:focus{border-color:rgba(32,135,201,1);
+  background:rgba(32,135,201,.2);outline:none}
+/* No filter here. color-scheme:dark above already makes Chrome draw the
+   picker glyph light; inverting it on top turned it black again, which is
+   what Navneet's screenshot showed. Opacity only. */
+.ei-art .ei-f input[type=date]::-webkit-calendar-picker-indicator{
+  opacity:.9;cursor:pointer}
+.ei-art .ei-yn{border:1.5px solid rgba(255,255,255,.28)}
+.ei-art .ei-yn label{background:transparent;color:rgba(255,255,255,.75)}
+/* #1a7ab5, not the #2087c9 the base rule uses. White on #2087c9 is 3.91:1,
+   under the 4.5 that bold text at this size needs, and it was already that
+   way on the white card. #1a7ab5 is 4.67:1 and is not a new colour, it is
+   the hover shade .ei-btn-blue already uses. */
+.ei-art .ei-yn input:checked+span{background:#1a7ab5;color:#fff}
+.ei-art .ei-yn label:focus-within span{outline:2px solid #fff;outline-offset:-2px}
+.ei-art .ei-tool .ei-err{color:#ffb4ab}
+.ei-art .ei-tool .ei-out{box-shadow:0 2px 10px rgba(15,22,36,.22)}
+
+/* Hero tags, summary stats and the two-column compare, all after the
+   gondaliyacpa.ca sample. */
+.ei-hero-tags{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;
+  margin:0 0 16px}
+.ei-hero-tag{background:rgba(255,255,255,.08);
+  border:1px solid rgba(255,255,255,.18);border-radius:50px;padding:5px 14px;
+  color:rgba(255,255,255,.78);font-size:.85em;line-height:1.5}
+/* Stat cards sit inside .ei-out, which stays light, so these are white cards
+   on a pale result box rather than on the navy panel. */
+.ei-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;
+  margin:0 0 14px}
+.ei-stat{background:#fff;border:1px solid #e2e8f0;border-radius:10px;
+  padding:13px 15px}
+.ei-stat-l{display:block;color:#718096;font-size:.8em;margin:0 0 5px;
+  line-height:1.4}
+.ei-stat-v{display:block;font-weight:800;color:#1a2340;font-size:1.12em;
+  line-height:1.3}
+.ei-cmp{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:18px 0}
+.ei-cmp-col{border:1px solid #e2e8f0;border-radius:12px;overflow:hidden;
+  background:#fff}
+.ei-cmp-col.a{border-top:3px solid rgba(32,135,201,1)}
+.ei-cmp-col.b{border-top:3px solid #f6ad1a}
+.ei-cmp-hdr{padding:14px 18px;font-weight:800;color:#1a2340}
+.ei-cmp-col.a .ei-cmp-hdr{background:rgba(32,135,201,.07)}
+.ei-cmp-col.b .ei-cmp-hdr{background:rgba(246,173,26,.07)}
+.ei-cmp-row{padding:11px 18px;border-top:1px solid #f0f0f0}
+.ei-cmp-l{display:block;color:#718096;font-size:.84em;margin:0 0 2px}
+.ei-cmp-v{display:block;color:#1a2340;line-height:1.55}
+@media(max-width:700px){.ei-stats{grid-template-columns:1fr}
+  .ei-cmp{grid-template-columns:1fr}}
+.ei-tool{background:#fff;border:1px solid #e2e8f0;border-radius:12px;padding:22px 24px;margin:18px 0;box-shadow:0 1px 2px rgba(26,35,64,.05)}
+.ei-tool legend{font-weight:800;color:#1a2340;font-size:1.05em;padding:0 0 6px}
+.ei-tool fieldset{border:0;margin:0;padding:0}
+.ei-f{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:0 0 14px}
+.ei-f label{font-weight:600;color:#1a2340;flex:1 1 320px;line-height:1.5}
+.ei-f input[type=date]{font:inherit;padding:9px 11px;border:1px solid #cbd5e0;border-radius:7px;color:#1a2340;background:#fff}
+.ei-yn{display:inline-flex;border:1px solid #cbd5e0;border-radius:7px;overflow:hidden;flex:0 0 auto}
+.ei-yn label{flex:0 0 auto;margin:0;padding:8px 16px;cursor:pointer;font-weight:700;color:#4a5568;background:#fff;line-height:1.2}
+.ei-yn input{position:absolute;opacity:0;width:0;height:0}
+.ei-yn input:checked+span{background:rgba(32,135,201,1);color:#fff}
+.ei-yn span{display:block;padding:8px 16px;margin:-8px -16px}
+.ei-yn label:focus-within span{outline:2px solid #1a2340;outline-offset:-2px}
+.ei-out{margin:16px 0 0;padding:16px 18px;border-radius:9px;border-left:5px solid #cbd5e0;background:#f7f9fc}
+.ei-out.ok{border-left-color:#2f855a;background:#f0fff4}
+.ei-out.no{border-left-color:#c53030;background:#fff5f5}
+.ei-out h3{margin:0 0 6px;font-size:1.1em;color:#1a2340}
+.ei-out p{margin:0 0 8px;color:#4a5568;line-height:1.7}
+.ei-out ul{margin:6px 0 8px 20px;color:#4a5568;line-height:1.7}
+.ei-out .ei-note{font-size:.88em;color:#718096;margin:10px 0 0}
+.ei-big{font-size:1.5em;font-weight:800;color:rgba(32,135,201,1);display:block;margin:2px 0 6px}
+.ei-tool .ei-err{color:#c53030;font-weight:600;margin:6px 0 0}
+</style>
+<div class="ei-hero"><div class="ei-hero-inner"><span class="ei-hero-eyebrow">Clearance</span><h1>Clearance Certificate <span>Requirement Checker</span></h1><p class="ei-hero-sub">Three questions that set out whether a clearance certificate belongs in the plan and what has to be filed before one can be issued.</p><div class="ei-hero-tags"><span class="ei-hero-tag">Three questions</span><span class="ei-hero-tag">Names the actual blocker</span><span class="ei-hero-tag">Covers personal exposure</span><span class="ei-hero-tag">No sign-up to use it</span></div><p class="ei-hero-by">Written and reviewed by Sharad Gondaliya, CPA (Ontario), CPA Ontario Membership 61040184.</p><div class="ei-hero-btns"><a class="ei-btn-blue" href="https://corpnilfilingfor300.ca/form/">Start Nil T2 Filing NOW</a></div></div></div>
+<div class="ei-section"><div class="ei-wrap ei-art">
+<p class="ei-updated">Last reviewed: October 27, 2026</p>
+<div class="ei-tool">
+<fieldset><legend>Three questions about the wind-down</legend>
+<div class="ei-f"><label id="ldist">Will property be distributed to shareholders</label><span class="ei-yn" role="radiogroup" aria-labelledby="ldist"><label><input type="radio" name="dist" value="y"><span>Yes</span></label><label><input type="radio" name="dist" value="n"><span>No</span></label></span></div>
+<div class="ei-f"><label id="ldis">Is the corporation being dissolved</label><span class="ei-yn" role="radiogroup" aria-labelledby="ldis"><label><input type="radio" name="dis" value="y"><span>Yes</span></label><label><input type="radio" name="dis" value="n"><span>No</span></label></span></div>
+<div class="ei-f"><label id="lunf">Is any tax year still unfiled</label><span class="ei-yn" role="radiogroup" aria-labelledby="lunf"><label><input type="radio" name="unf" value="y"><span>Yes</span></label><label><input type="radio" name="unf" value="n"><span>No</span></label></span></div>
+</fieldset>
+<div class="ei-out" id="out" role="status" aria-live="polite"><p>Answer all three and the position appears here.</p></div>
+</div>
+<div class="ei-info"><p>Gondaliya CPA Professional Corporation is a registered EFILE electronic filer. Returns are prepared and transmitted in Canada. Credentials are never shared and never used offshore.</p></div>
+</div></div>
+<div class="ei-section-alt" id="what"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">What the Certificate Is For</h2>
+<p>A clearance certificate confirms the Canada Revenue Agency has no further claim against the corporation before its property is handed out. It is not a filing and it is not a tax return. It is a confirmation sought at the end, once everything that had to be filed has been.</p>
+<p>Its purpose is personal rather than corporate. Distributing property without one leaves the person who distributed it exposed for amounts the corporation turns out to owe, and the corporation is by then gone or going.</p>
+</div></div>
+<div class="ei-section" id="block"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">An Unfiled Year Is the Usual Blocker</h2>
+<p>A certificate cannot be issued while a tax year is outstanding, because the position it is confirming is not yet known. That applies to nil years exactly as to any other: a year with nothing in it still has to be filed before it stops being outstanding.</p>
+<p>The <a href="https://corpnilfilingfor300.ca/tools/unfiled-years-checker/">unfiled years checker</a> lists which years are owed and the <a href="https://corpnilfilingfor300.ca/tools/tax-years-since-incorporation-calculator/">tax years since incorporation calculator</a> lists every year the corporation has ever had. Each outstanding nil year is $300.00 plus HST per tax year, and several are transmitted in one sitting.</p>
+<div class="ei-info"><p>A true nil return carries no percentage late-filing penalty, because that penalty is a percentage of tax owing and the corporation owes $0.00. The unfiled year still stays open forever, invites a demand to file and an arbitrary assessment, blocks a clearance certificate and dissolution, and costs a non-resident-owned corporation $25.00 per day up to $2,500.00.</p></div>
+</div></div>
+<div class="ei-section-alt" id="order"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">The Order These Steps Fall In</h2>
+<p>Filing comes first, the certificate second, distribution third and dissolution last. Taken out of order the sequence stalls: a distribution made before the certificate cannot be undone by getting the certificate afterwards.</p>
+<p>The <a href="https://corpnilfilingfor300.ca/tools/dissolution-readiness-checker/">dissolution readiness checker</a> runs the full list, and the <a href="https://corpnilfilingfor300.ca/tools/final-t2-return-due-date-calculator/">final T2 return due date calculator</a> dates the last return.</p>
+</div></div>
+<div class="ei-section" id="seq"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">Each Step, What It Needs First and What Goes Wrong Without It</h2>
+<p>The sequence only works in one direction. This is what each step depends on and what happens when it is taken early.</p>
+<table class="ei-tbl"><thead><tr><th scope="col">Step</th><th scope="col">Cannot happen until</th><th scope="col">Taken out of order</th></tr></thead><tbody>
+<tr><td>File every outstanding tax year</td><td>Nothing. This is the first step</td><td>Everything after it stalls</td></tr>
+<tr><td>File the final T2 for the period ending on dissolution</td><td>The dissolution date is known</td><td>The corporation has an unfiled final year</td></tr>
+<tr><td>Request the clearance certificate</td><td>Every year, the final one included, is filed</td><td>The request cannot be granted while a year is outstanding</td></tr>
+<tr><td>Distribute property to shareholders</td><td>The certificate is issued</td><td>Personal exposure for whatever the corporation turns out to owe</td></tr>
+<tr><td>Complete the dissolution</td><td>The property is distributed</td><td>Property is left in a corporation that no longer exists, and recovering it means reviving the corporation first</td></tr>
+</tbody></table>
+<p>The second row is the one most often missed. The final T2 covers the period ending on the dissolution date, so it cannot be filed before that date is fixed, and the certificate cannot be requested before that return is in.</p>
+</div></div>
+<div class="ei-section"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">Frequently Asked Questions</h2>
+<div class="ei-faq">
+<details><summary>Is a Clearance Certificate Always Needed?</summary><div class="ei-faq-a"><p>It belongs in any wind-down where property is being distributed, because that is the step it protects. With no distribution and no dissolution there is nothing for it to clear.</p></div></details>
+<details><summary>Do Nil Years Have to Be Filed First?</summary><div class="ei-faq-a"><p>Yes. A nil year is an outstanding year until it is filed, and an outstanding year blocks the certificate.</p></div></details>
+<details><summary>Can Property Be Distributed First and Cleared Afterwards?</summary><div class="ei-faq-a"><p>The exposure arises at the distribution, so a certificate obtained afterwards does not undo it. The order is the point.</p></div></details>
+<details><summary>How Many Returns Does a Dissolution Need?</summary><div class="ei-faq-a"><p>Every unfiled earlier year, plus a final return for the short period ending on the dissolution date. Each nil one is $300.00 plus HST per tax year.</p></div></details>
+<details><summary>Does the Certificate Cover the Annual Return as Well?</summary><div class="ei-faq-a"><p>No. The federal and Ontario annual returns go to a registry rather than to the Canada Revenue Agency and are separate from this. The <a href="https://corpnilfilingfor300.ca/tools/inactive-corporation-filing-checker/">inactive corporation filing checker</a> sets out which filings go where.</p></div></details>
+</div>
+</div></div>
+<div class="ei-section"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">Read Next</h2>
+<ul class="ei-qlist">
+<li><a href="https://corpnilfilingfor300.ca/tools/dissolution-readiness-checker/">Dissolution readiness checker</a></li>
+<li><a href="https://corpnilfilingfor300.ca/tools/final-t2-return-due-date-calculator/">Final T2 return due date calculator</a></li>
+<li><a href="https://corpnilfilingfor300.ca/tools/unfiled-years-checker/">Unfiled years checker, every outstanding year</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/final-t2-and-dissolution/">The final T2 and dissolution</a></li>
+<li><a href="https://corpnilfilingfor300.ca/pricing/nil-t2-filing-cost/">Nil T2 filing cost</a></li>
+</ul>
+</div></div>
+<div class="ei-cta-bottom"><div class="ei-wrap"><h2>Nil T2 Filing, $300.00 plus HST per tax year</h2><p>Type your corporation name, pick your unfiled years, pay, and sign Form T183CORP on a secure screen. Your CRA confirmation is emailed within 3 business days.</p><a class="ei-btn-blue" href="https://corpnilfilingfor300.ca/form/">Start Nil T2 Filing NOW</a></div></div>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebPage", "@id": "https://corpnilfilingfor300.ca/tools/clearance-certificate-requirement-checker/#webpage", "url": "https://corpnilfilingfor300.ca/tools/clearance-certificate-requirement-checker/", "name": "Clearance Certificate Requirement Checker | Before Assets Are Distributed", "description": "Three questions that set out whether a clearance certificate belongs in the plan and what has to be filed before one can be issued.", "inLanguage": "en-CA", "dateModified": "2026-10-27", "author": {"@type": "Person", "name": "Sharad Gondaliya", "honorificSuffix": "CPA", "url": "https://corpnilfilingfor300.ca/sharad-gondaliya-cpa/"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Nil T2 filing in Canada", "item": "https://corpnilfilingfor300.ca/"}, {"@type": "ListItem", "position": 2, "name": "Tools", "item": "https://corpnilfilingfor300.ca/tools/"}, {"@type": "ListItem", "position": 3, "name": "Clearance Certificate Requirement Checker", "item": "https://corpnilfilingfor300.ca/tools/clearance-certificate-requirement-checker/"}]}]}</script>
+<script>
+(function(){
+var PRICE_JS="$300.00 plus HST per tax year";
+var DISC_JS="This tool gives general information and is not a filed return.";
+var NOTNILJS="A holding corporation with investment income, a rental corporation and a corporation that paid or received a dividend are not nil. Those are handled by Gondaliya CPA Professional Corporation at gondaliyacpa.ca at $350.00 plus HST per year.";var QUALJS="A true nil return carries no percentage late-filing penalty, because that penalty is a percentage of tax owing and the corporation owes $0.00. The unfiled year still stays open forever, invites a demand to file and an arbitrary assessment, blocks a clearance certificate and dissolution, and costs a non-resident-owned corporation $25.00 per day up to $2,500.00.";
+function pick(n){var e=document.querySelector('input[name="'+n+'"]:checked');
+  return e?e.value:null;}
+var NOTNILJS="A holding corporation with investment income, a rental corporation and a corporation that paid or received a dividend are not nil. Those are handled by Gondaliya CPA Professional Corporation at gondaliyacpa.ca at $350.00 plus HST per year.";var QUALJS="A true nil return carries no percentage late-filing penalty, because that penalty is a percentage of tax owing and the corporation owes $0.00. The unfiled year still stays open forever, invites a demand to file and an arbitrary assessment, blocks a clearance certificate and dissolution, and costs a non-resident-owned corporation $25.00 per day up to $2,500.00.";
+
+function clearance(a){
+  if(a.dist===null||a.dis===null||a.unf===null){return null;}
+  return {dist:a.dist==='y',dis:a.dis==='y',unf:a.unf==='y',
+          wanted:a.dist==='y'||a.dis==='y'};
+}
+
+var out=document.getElementById('out');
+var IDS=['dist','dis','unf'];
+function render(){
+  var a={};IDS.forEach(function(k){a[k]=pick(k);});
+  var r=clearance(a);
+  if(r===null){out.className='ei-out';
+    out.innerHTML='<p>Answer all three and the position appears here.</p>';
+    return;}
+  var h='';
+  if(!r.wanted){
+    h+='<h3>Nothing here calls for a clearance certificate yet</h3>';
+    h+='<p>A clearance certificate confirms the Canada Revenue Agency has '+
+       'no further claim before property is distributed. With no '+
+       'distribution and no dissolution in progress, there is nothing for it '+
+       'to clear.</p>';
+  }else{
+    h+='<h3>A clearance certificate belongs in this plan</h3>';
+    h+='<table class="ei-tbl"><thead><tr><th scope="col">Step</th>'+
+       '<th scope="col">Where it stands</th></tr></thead><tbody>';
+    h+='<tr><td>Property to be distributed to shareholders</td><td>'+
+       (r.dist?'Yes':'No')+'</td></tr>';
+    h+='<tr><td>Dissolution in progress</td><td>'+(r.dis?'Yes':'No')+
+       '</td></tr>';
+    h+='<tr><td>Every tax year filed</td><td>'+(r.unf?'No':'Yes')+
+       '</td></tr></tbody></table>';
+    if(r.dist){
+      h+='<p>Distributing property without a clearance certificate leaves '+
+         'the person who distributed it personally exposed for amounts the '+
+         'corporation turns out to owe. That is the reason the certificate '+
+         'exists.</p>';
+    }
+  }
+  if(r.unf){
+    h+='<div class="ei-danger"><p>There is at least one unfiled tax year, '+
+       'and that is the blocker. An unfiled year blocks a clearance '+
+       'certificate and blocks the dissolution behind it. Every outstanding '+
+       'year has to be filed first, nil years included.</p></div>';
+    h+='<p>Each outstanding nil year is '+PRICE_JS+
+       ', and several years can be transmitted in one sitting. The '+
+       '<a href="https://corpnilfilingfor300.ca/tools/unfiled-years-checker/">'+
+       'unfiled years checker</a> lists which years are outstanding.</p>';
+    h+='<div class="ei-info"><p>'+QUALJS+'</p></div>';
+  }else if(r.wanted){
+    h+='<p>With every year filed, the filing history is not what holds the '+
+       'certificate up.</p>';
+  }
+  h+='<p class="ei-note">'+DISC_JS+'</p>';
+  out.className=r.unf?'ei-out no':'ei-out ok';
+  out.innerHTML=h;
+}
+IDS.forEach(function(k){
+  Array.prototype.forEach.call(document.querySelectorAll('input[name="'+k+'"]'),
+    function(e){e.addEventListener('change',render);});});
+render();
+
+})();
+</script>
+<!-- /wp:html -->
