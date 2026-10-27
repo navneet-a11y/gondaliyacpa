@@ -1,713 +1,911 @@
 {
- "note": "Rank Math title/description/focus keyword applied to corpnilfilingfor300.ca. Titles <=60 characters, descriptions <=160, no price outside the full \"$300.00 plus HST per tax year\" form, checked against the banned phrases.",
- "applied": "2026-10-27",
- "nil_guide": {
-  "rest_base": "nil_guide",
-  "items": [
-   {
-    "id": 867,
-    "title": "Nil T2 Return | Complete Guide for Canadian Corporations",
-    "desc": "Who must file, what a nil return is, which schedules are required, how T183CORP is signed, and what happens to unfiled years. Updated monthly.",
-    "kw": "nil t2 return"
-   },
-   {
-    "id": 945,
-    "title": "Dormant Corporations | Complete Filing Guide for Canada",
-    "desc": "What dormant means to the Canada Revenue Agency, which returns a dormant corporation still files, what keeps it compliant, and when to wind it up.",
-    "kw": "dormant corporations"
-   },
-   {
-    "id": 947,
-    "title": "Unfiled Corporate Tax Returns | Catch-Up Guide for Canada",
-    "desc": "How many years can be filed, which order to file them in, what a demand to file means, what an arbitrary assessment is, and what the catch-up costs.",
-    "kw": "unfiled corporate tax returns"
-   },
-   {
-    "id": 949,
-    "title": "Final T2 and Dissolution | Guide for Canadian Corporations",
-    "desc": "When the final T2 is due, what period it covers, why a clearance certificate matters, and everything that must be filed before a corporation can close.",
-    "kw": "final t2 and dissolution"
-   },
-   {
-    "id": 951,
-    "title": "T2 Short | Eligibility Guide for Canadian Corporations",
-    "desc": "The eight conditions for the T2 Short, what disqualifies a corporation, how it differs from the full T2, and which schedules are still required.",
-    "kw": "t2 short"
-   },
-   {
-    "id": 953,
-    "title": "Provincial and Federal Annual Returns | Canada Guide",
-    "desc": "The Ontario annual return, the $12.00 Corporations Canada annual return, Alberta AT1 and Quebec CO-17, and why the T2 covers none of them.",
-    "kw": "provincial and federal annual returns"
-   },
-   {
-    "id": 955,
-    "title": "Form T183CORP | Signing and Transmission Guide",
-    "desc": "What Form T183CORP authorises, who may sign it, when it must be signed, how it is e-signed, how long it is kept, and what EFILE transmission involves.",
-    "kw": "form t183corp"
-   },
-   {
-    "id": 976,
-    "title": "How to File a Nil T2 Return | Step by Step for Canada",
-    "desc": "What you need before you start, how the fiscal year-end is confirmed, which schedules are filed, how Form T183CORP is signed, and how the return is sent.",
-    "kw": "how to file a nil t2 return"
-   },
-   {
-    "id": 978,
-    "title": "GIFI Schedules 100, 125 and 141 | Nil T2 Guide",
-    "desc": "What GIFI is, what Schedules 100, 125 and 141 report, when a nil return may omit them, and why share capital or a shareholder loan makes them required.",
-    "kw": "gifi schedules 100, 125 and 141"
-   },
-   {
-    "id": 980,
-    "title": "Schedule 8 and Loss Continuity | Nil T2 Guide",
-    "desc": "What Schedule 8 records, how capital cost allowance works in a nil year, why loss continuity has to be carried forward, and what a skipped year costs.",
-    "kw": "schedule 8 and loss continuity"
-   },
-   {
-    "id": 982,
-    "title": "First-Year T2 Filing | Guide for New Canadian Corporations",
-    "desc": "When the first tax year starts and ends, the 53-week rule, Schedule 24, choosing a year-end, and why first transmissions are the ones rejected.",
-    "kw": "first-year t2 filing"
-   },
-   {
-    "id": 984,
-    "title": "Numbered Company Tax Filing | Nil T2 Guide for Canada",
-    "desc": "Why a numbered company files exactly like a named one, how the CRA identifies it, what shelf and holding corporations need, and what the filing costs.",
-    "kw": "numbered company tax filing"
-   },
-   {
-    "id": 1094,
-    "title": "T2 Late Filing Penalties | Guide for Canadian Corporations",
-    "desc": "How the percentage penalty is calculated, why a nil return is different, the paper and preparer penalties, and what an unfiled year costs.",
-    "kw": "t2 late filing penalties"
-   },
-   {
-    "id": 1096,
-    "title": "CRA Demand to File | Response Guide for Corporations",
-    "desc": "What a demand to file is, the deadline it sets, what happens if it is ignored, and how an arbitrary assessment is displaced by filing.",
-    "kw": "cra demand to file"
-   },
-   {
-    "id": 1098,
-    "title": "Inactive Holding Company Filing | Nil T2 Guide for Canada",
-    "desc": "When a holding corporation is nil and when it is not, what investment income does to the return, and which schedules a holding company needs.",
-    "kw": "inactive holding company filing"
-   },
-   {
-    "id": 1100,
-    "title": "T2 Schedules on a Nil Return | Canada Guide",
-    "desc": "Which schedules a nil T2 needs and which it can omit, what makes the GIFI schedules required, and how each one is decided.",
-    "kw": "t2 schedules on a nil return"
-   },
-   {
-    "id": 1102,
-    "title": "Shelf Corporation Compliance | Filing Guide for Canada",
-    "desc": "What a corporation held in reserve still has to file each year, the annual returns that are not the T2, and what lapses first.",
-    "kw": "shelf corporation compliance"
-   }
-  ]
- },
- "nil_service_place": {
-  "rest_base": "nil_service_place",
-  "items": [
-   {
-    "id": 512,
-    "title": "Nil T2 Filing in Ontario | Corporate Tax Return",
-    "desc": "Filing a nil T2 for an Ontario corporation with no activity in the tax year, prepared and transmitted by a CPA at $300.00 plus HST per tax year.",
-    "kw": "nil t2 filing in ontario"
-   },
-   {
-    "id": 715,
-    "title": "Catch-Up Nil T2 Filing in Ontario",
-    "desc": "Several unfiled nil years for an Ontario corporation, transmitted in one sitting. Each year is $300.00 plus HST per tax year.",
-    "kw": "catch-up nil t2 filing in ontario"
-   },
-   {
-    "id": 716,
-    "title": "Dormant Corporation Filing in Ontario",
-    "desc": "A dormant Ontario corporation still files a T2 for every tax year until it is dissolved. A nil year is $300.00 plus HST per tax year.",
-    "kw": "dormant corporation filing in ontario"
-   },
-   {
-    "id": 717,
-    "title": "Final T2 Before Dissolution in Ontario",
-    "desc": "The final T2 for an Ontario corporation covers the period ending on the date of dissolution, and every earlier year has to be filed first.",
-    "kw": "final t2 before dissolution in ontario"
-   },
-   {
-    "id": 718,
-    "title": "T2 Short Filing in Ontario | Eligibility",
-    "desc": "Whether an Ontario corporation qualifies for the T2 Short, what disqualifies it, and which schedules are still required on a nil return.",
-    "kw": "t2 short filing in ontario"
-   },
-   {
-    "id": 719,
-    "title": "Inactive Holding Corporation T2 Filing in Ontario",
-    "desc": "An Ontario holding corporation is not nil once it receives investment income or a dividend. What it files and what the return needs.",
-    "kw": "inactive holding corporation t2 filing in ontario"
-   },
-   {
-    "id": 912,
-    "title": "Nil T2 Filing Cost in Ontario | What the Fee Covers",
-    "desc": "What a nil T2 costs for an Ontario corporation: $300.00 plus HST per tax year, what the fee covers, and what is filed separately.",
-    "kw": "nil t2 filing cost in ontario"
-   },
-   {
-    "id": 914,
-    "title": "Unfiled Corporate Tax Returns in Ontario",
-    "desc": "Unfiled T2 years for an Ontario corporation: what stays open, what a demand to file means, and what catching up costs per year.",
-    "kw": "unfiled corporate tax returns in ontario"
-   },
-   {
-    "id": 915,
-    "title": "No Activity Corporation Tax Return in Ontario",
-    "desc": "An Ontario corporation with no activity in the tax year still files a T2. What a nil return reports and what it costs to file.",
-    "kw": "no activity corporation tax return in ontario"
-   },
-   {
-    "id": 916,
-    "title": "Numbered Corporation Nil Filing in Ontario",
-    "desc": "A numbered Ontario corporation files exactly like a named one. How the Canada Revenue Agency identifies it and what a nil year needs.",
-    "kw": "numbered corporation nil filing in ontario"
-   },
-   {
-    "id": 917,
-    "title": "Nil T2 Filing Deadline in Ontario",
-    "desc": "When the T2 for an Ontario corporation is due: six months after the fiscal year-end, moved to the next business day where it lands on a closed day.",
-    "kw": "nil t2 filing deadline in ontario"
-   },
-   {
-    "id": 918,
-    "title": "Non-Resident-Owned Corporation Nil T2 | Ontario",
-    "desc": "Nil T2 filing for a non-resident-owned Ontario corporation, including the $25.00 per day charge up to $2,500.00 on an unfiled year.",
-    "kw": "non-resident-owned corporation nil t2"
-   },
-   {
-    "id": 1025,
-    "title": "Nil T2 Filing in British Columbia | Corporate Tax Return",
-    "desc": "Filing a nil T2 for a British Columbia corporation with no activity in the tax year, prepared and transmitted by a CPA at $300.00 plus HST per tax year.",
-    "kw": "nil t2 filing in british columbia"
-   },
-   {
-    "id": 1027,
-    "title": "Catch-Up Nil T2 Filing in British Columbia",
-    "desc": "Several unfiled nil years for a British Columbia corporation, transmitted in one sitting. Each year is $300.00 plus HST per tax year.",
-    "kw": "catch-up nil t2 filing in british columbia"
-   },
-   {
-    "id": 1029,
-    "title": "Dormant Corporation Filing in British Columbia",
-    "desc": "A dormant British Columbia corporation still files a T2 for every tax year until it is dissolved. A nil year is $300.00 plus HST per tax year.",
-    "kw": "dormant corporation filing in british columbia"
-   },
-   {
-    "id": 1031,
-    "title": "Final T2 Before Dissolution in British Columbia",
-    "desc": "The final T2 for a British Columbia corporation covers the period ending on the date of dissolution, and every earlier year has to be filed first.",
-    "kw": "final t2 before dissolution in british columbia"
-   },
-   {
-    "id": 1033,
-    "title": "T2 Short Filing in British Columbia | Eligibility",
-    "desc": "Whether a British Columbia corporation qualifies for the T2 Short, what disqualifies it, and which schedules are still required on a nil return.",
-    "kw": "t2 short filing in british columbia"
-   },
-   {
-    "id": 1116,
-    "title": "Inactive Holding Corporation T2 Filing in British Columbia",
-    "desc": "A British Columbia holding corporation is not nil once it receives investment income or a dividend. What it files and what the return needs.",
-    "kw": "inactive holding corporation t2 filing in british columbia"
-   },
-   {
-    "id": 1112,
-    "title": "Nil T2 Filing Cost in British Columbia",
-    "desc": "What a nil T2 costs for a British Columbia corporation: $300.00 plus HST per tax year, what the fee covers, and what is filed separately.",
-    "kw": "nil t2 filing cost in british columbia"
-   },
-   {
-    "id": 1104,
-    "title": "Unfiled Corporate Tax Returns in British Columbia",
-    "desc": "Unfiled T2 years for a British Columbia corporation: what stays open, what a demand to file means, and what catching up costs per year.",
-    "kw": "unfiled corporate tax returns in british columbia"
-   },
-   {
-    "id": 1106,
-    "title": "No Activity Corporation Tax Return in British Columbia",
-    "desc": "A British Columbia corporation with no activity in the tax year still files a T2. What a nil return reports and what it costs to file.",
-    "kw": "no activity corporation tax return in british columbia"
-   },
-   {
-    "id": 1108,
-    "title": "Numbered Corporation Nil Filing in British Columbia",
-    "desc": "A numbered British Columbia corporation files exactly like a named one. How the Canada Revenue Agency identifies it and what a nil year needs.",
-    "kw": "numbered corporation nil filing in british columbia"
-   },
-   {
-    "id": 1110,
-    "title": "Nil T2 Filing Deadline in British Columbia",
-    "desc": "When the T2 for a British Columbia corporation is due: six months after the fiscal year-end, moved to the next business day where it lands on a closed day.",
-    "kw": "nil t2 filing deadline in british columbia"
-   },
-   {
-    "id": 1114,
-    "title": "Non-Resident-Owned Corporation Nil T2 | British Columbia",
-    "desc": "Nil T2 filing for a non-resident-owned British Columbia corporation, including the $25.00 per day charge up to $2,500.00 on an unfiled year.",
-    "kw": "non-resident-owned corporation nil t2"
-   }
-  ]
- },
- "nil_calculator_1_to_20": {
-  "rest_base": "nil_calculator",
-  "items": [
-   {
-    "id": 1120,
-    "title": "GIFI Schedule Requirement Checker | Schedules 100, 125, 141",
-    "desc": "Five questions decide whether a nil T2 needs GIFI Schedules 100, 125 and 141. Any one yes makes all three required.",
-    "kw": "gifi schedule requirement checker"
-   },
-   {
-    "id": 1122,
-    "title": "T2 Short Eligibility Checker | All Eight Conditions",
-    "desc": "All eight T2 Short conditions on one screen. Answer them and the checker names the condition that fails, where one does.",
-    "kw": "t2 short eligibility checker"
-   },
-   {
-    "id": 1124,
-    "title": "Nil T2 Deadline Calculator | When Your T2 Is Due",
-    "desc": "Enter your fiscal year-end and get the T2 due date, the next business day where it falls on a weekend, and the business days remaining.",
-    "kw": "nil t2 deadline calculator"
-   },
-   {
-    "id": 1172,
-    "title": "Unfiled Years Cost Calculator | Nil T2 Catch-Up Total",
-    "desc": "Enter how many tax years are unfiled and the calculator returns the total at $300.00 plus HST per tax year.",
-    "kw": "unfiled years cost calculator"
-   },
-   {
-    "id": 1174,
-    "title": "Schedule 50 Shareholder Threshold Checker | The 10% Rule",
-    "desc": "Enter each shareholding and the checker names every shareholder at 10% or more, who must be listed on Schedule 50.",
-    "kw": "schedule 50 shareholder threshold checker"
-   },
-   {
-    "id": 1176,
-    "title": "53-Week First Tax Year Checker | First T2 Year-End",
-    "desc": "Enter the incorporation date and a proposed year-end. The checker returns whether the first tax year is within the 53 weeks it may not exceed.",
-    "kw": "53 week first tax year checker"
-   },
-   {
-    "id": 1178,
-    "title": "Schedule 24 First Return Checker | First T2",
-    "desc": "Three questions decide whether your T2 is the corporation&rsquo;s first return and therefore needs Schedule 24.",
-    "kw": "schedule 24 first return checker"
-   },
-   {
-    "id": 1180,
-    "title": "Federal Annual Return Calculator | 60-Day Due Date",
-    "desc": "Enter your federal incorporation date and the calculator returns the anniversary and the annual return due date 60 days after it.",
-    "kw": "federal annual return anniversary calculator"
-   },
-   {
-    "id": 1182,
-    "title": "Dormant Corporation Test | Is Your Corporation Nil?",
-    "desc": "Ten questions decide whether your corporation is nil for the tax year or has activity that puts it outside a nil return.",
-    "kw": "dormant corporation test"
-   },
-   {
-    "id": 1184,
-    "title": "GST/HST Nil Filing Checker | Open Accounts and RC145",
-    "desc": "Three questions decide whether an open GST/HST or payroll account still needs nil filings, or whether Form RC145 closes it.",
-    "kw": "gst hst nil filing checker"
-   },
-   {
-    "id": 1259,
-    "title": "Corporate Fiscal Year End Calculator | Permitted Year-Ends",
-    "desc": "Enter your incorporation date and the calculator lists every month-end a first tax year may use, with the T2 due date for each.",
-    "kw": "corporate fiscal year end calculator"
-   },
-   {
-    "id": 1261,
-    "title": "Nil T2 Eligibility Checker | Can We File Your Return",
-    "desc": "Four questions that say whether a nil T2 is the return you need and whether this service can file it, at $300.00 plus HST per tax year.",
-    "kw": "nil t2 eligibility checker"
-   },
-   {
-    "id": 1263,
-    "title": "Unfiled Years Checker | Which T2 Years Are Outstanding",
-    "desc": "Enter your first fiscal year-end and the last year you filed, and the checker lists every T2 year still outstanding and what each was due.",
-    "kw": "unfiled years checker"
-   },
-   {
-    "id": 1266,
-    "title": "Non-Resident T2 Penalty Calculator | $25.00 a Day",
-    "desc": "For a non-resident-owned corporation, a late T2 costs $25.00 per day to a maximum of $2,500.00. Enter the dates and the calculator counts it.",
-    "kw": "non resident t2 penalty calculator"
-   },
-   {
-    "id": 1268,
-    "title": "Dissolution Readiness Checker | Before You Wind Up",
-    "desc": "Four questions in the order the steps actually run, naming the first one still outstanding before a corporation is dissolved.",
-    "kw": "dissolution readiness checker"
-   },
-   {
-    "id": 1270,
-    "title": "Business Number Status Checker | Which Accounts Are Open",
-    "desc": "Four questions that set out which of your Business Number accounts are open and what each one still needs beyond the nil T2.",
-    "kw": "business number status checker"
-   },
-   {
-    "id": 1272,
-    "title": "Inactive Corporation Filing Checker | What You Owe",
-    "desc": "Four questions that list every filing an inactive corporation still owes beside the nil T2, and which of them the fee covers.",
-    "kw": "inactive corporation filing checker"
-   },
-   {
-    "id": 1274,
-    "title": "Nil Return vs Full Return Checker | Which One Applies",
-    "desc": "Four questions that say whether the year is a nil T2 or a full T2, side by side, and name what pushed it over.",
-    "kw": "nil return vs full return checker"
-   },
-   {
-    "id": 1276,
-    "title": "Nil T2 Document Checklist | What Goes Into the Return",
-    "desc": "Four questions that build the list of what actually goes into your nil T2, schedule by schedule, all of it inside the fee.",
-    "kw": "nil t2 document checklist checker"
-   },
-   {
-    "id": 1278,
-    "title": "Due Date Weekend and Holiday Shift Calculator",
-    "desc": "Enter a due date and the calculator says whether it moves, which weekend day or statutory holiday moved it, and the date it lands on.",
-    "kw": "due date weekend holiday shift calculator"
-   }
-  ]
- },
- "nil_question": {
-  "rest_base": "nil_question",
-  "items": [
-   {
-    "title": "What Happens if I Don't File a Nil T2?",
-    "desc": "The tax year stays open and the Canada Revenue Agency can demand the return and assess the corporation arbitrarily.",
-    "kw": "what happens if i dont file a nil t2",
-    "id": 831
-   },
-   {
-    "title": "What Happens if I Don't File My T2 for Five Years?",
-    "desc": "All five returns stay outstanding and each year is filed separately. Filing all five at once is routine and closes the years in a single pass.",
-    "kw": "what happens if i dont file my t2 for five years",
-    "id": 833
-   },
-   {
-    "title": "What Happens if I Don't File a T2 Before Dissolving?",
-    "desc": "Dissolution can be held up and the outstanding years remain owed. An unfiled year blocks the clearance certificate that lets a corporation close.",
-    "kw": "what happens if i dont file a t2 before dissolving",
-    "id": 834
-   },
-   {
-    "title": "What Happens if a Dormant Corporation Is Not Reported?",
-    "desc": "There is no separate dormancy filing, so the obligation is simply the annual T2. Telling the CRA a corporation is inactive does not replace it.",
-    "kw": "what happens if a dormant corporation is not reported",
-    "id": 835
-   },
-   {
-    "title": "What Happens if I Ignore a CRA Demand to File a T2?",
-    "desc": "The Canada Revenue Agency can assess the corporation arbitrarily, without waiting for the return. Filing the real return replaces that assessment.",
-    "kw": "what happens if i ignore a cra demand to file a t2",
-    "id": 836
-   },
-   {
-    "title": "What Happens if a Numbered Company Does Not File?",
-    "desc": "Nothing changes because the corporation has a number instead of a name. A numbered company files a T2 within six months of each fiscal year-end.",
-    "kw": "what happens if a numbered company does not file",
-    "id": 856
-   },
-   {
-    "title": "What Happens if I Don't File After Dissolution?",
-    "desc": "The final return is still required and the years before dissolution stay outstanding. Dissolving does not close earlier years or cancel the returns.",
-    "kw": "what happens if i dont file after dissolution",
-    "id": 857
-   },
-   {
-    "title": "Do I Need to File a T2 if My Corporation Had No Activity?",
-    "desc": "Yes. Every resident corporation must file a T2 return within six months of its fiscal year-end, every year, until it is formally dissolved.",
-    "kw": "do i need to file a t2 if my corporation had no activity",
-    "id": 858
-   },
-   {
-    "title": "Do I Need to File a Nil T2 With No Bank Account?",
-    "desc": "Yes. The T2 obligation follows the corporation's existence, not its banking, so a return is due within six months of each fiscal year-end regardless.",
-    "kw": "do i need to file a nil t2 with no bank account",
-    "id": 859
-   },
-   {
-    "title": "Do I Need Financial Statements for a Nil T2 Return?",
-    "desc": "No audited or reviewed statements are needed, but the return still carries GIFI schedules showing zero.",
-    "kw": "do i need financial statements for a nil t2 return",
-    "id": 860
-   },
-   {
-    "title": "Do I Need to File a T2 for the Year of Dissolution?",
-    "desc": "Yes. A final T2 covers the period from the start of that fiscal year to the dissolution date, and it is due within six months of dissolution.",
-    "kw": "do i need to file a t2 for the year of dissolution",
-    "id": 925
-   },
-   {
-    "title": "Do I Need a Business Number to File a Nil T2?",
-    "desc": "Yes. The return is filed against the corporation's nine-digit business number and its corporation income tax account, so the number must exist.",
-    "kw": "do i need a business number to file a nil t2",
-    "id": 926
-   },
-   {
-    "title": "Do I Need to File a Nil T2 if I Never Started Operating?",
-    "desc": "Yes. The first tax year begins on the incorporation date, not the day trading starts, so a return is due six months after that first year-end.",
-    "kw": "do i need to file a nil t2 if i never started operating",
-    "id": 927
-   },
-   {
-    "title": "Do I Need to File a T2 Every Year When Inactive?",
-    "desc": "Yes, every year. Inactive is a description, not a filing status, so a T2 falls due six months after each year-end until the corporation is closed.",
-    "kw": "do i need to file a t2 every year when inactive",
-    "id": 928
-   },
-   {
-    "title": "Can I File Five Years of Nil T2 Returns at Once?",
-    "desc": "Yes. Five missed fiscal year-ends mean five separate returns, and all five can be prepared and transmitted in one pass.",
-    "kw": "can i file five years of nil t2 returns at once",
-    "id": 929
-   },
-   {
-    "title": "Can I File a Nil T2 Myself Without an Accountant?",
-    "desc": "Yes. Nothing requires a corporation to use an accountant. A corporation that engages an electronic filer signs Form T183CORP before transmission.",
-    "kw": "can i file a nil t2 myself without an accountant",
-    "id": 930
-   },
-   {
-    "title": "Can I Dissolve My Corporation With Unfiled T2 Returns?",
-    "desc": "Not cleanly. The corporate registry and the Canada Revenue Agency are separate, so a registry may strike a corporation while its tax years remain outstanding.",
-    "kw": "can i dissolve my corporation with unfiled t2 returns",
-    "id": 931
-   },
-   {
-    "title": "Can I File a Nil T2 Late Without a Penalty?",
-    "desc": "What actually applies to a late nil T2: the percentage penalty, the year that stays open, a demand to file, and the non-resident per-day charge.",
-    "kw": "can i file a nil t2 late without a penalty",
-    "id": 932
-   },
-   {
-    "title": "Can I File Nil T2 Returns for a Corporation I Forgot About?",
-    "desc": "Yes. A corporation left alone still has a fiscal year-end for every year since incorporation, and each of those years can be filed now.",
-    "kw": "can i file nil t2 returns for a corporation i forgot about",
-    "id": 933
-   },
-   {
-    "title": "Can I Still File a T2 After My Corporation Was Dissolved?",
-    "desc": "Yes. A final return is due within six months of the dissolution date, and years left unfiled before dissolution can still be filed afterwards.",
-    "kw": "can i still file a t2 after my corporation was dissolved",
-    "id": 934
-   },
-   {
-    "title": "Can I Catch Up on Unfiled T2 Returns Without an Audit?",
-    "desc": "Catching up is an ordinary filing, not an audit. Each outstanding year is filed as its own T2 return and assessed in the normal way.",
-    "kw": "can i catch up on unfiled t2 returns without an audit",
-    "id": 1232
-   },
-   {
-    "title": "How Do I File a Nil T2 Return in Canada?",
-    "desc": "You file a T2 return for the tax year showing no income and no expenses, then transmit it to the Canada Revenue Agency electronically.",
-    "kw": "how do i file a nil t2 return in canada",
-    "id": 1234
-   },
-   {
-    "title": "How Do I Catch Up on Years of Unfiled T2 Returns?",
-    "desc": "You file one T2 return for each outstanding tax year, oldest first, each with its own fiscal year dates. There is no combined return that covers several years.",
-    "kw": "how do i catch up on years of unfiled t2 returns",
-    "id": 1236
-   },
-   {
-    "title": "How Do I Know if My Corporation Counts as Dormant?",
-    "desc": "A corporation is treated as dormant for a tax year when it carried on no business, earned nothing and paid nothing out during that year.",
-    "kw": "how do i know if my corporation counts as dormant",
-    "id": 1238
-   },
-   {
-    "title": "How Do I Find Out Which T2 Years Are Outstanding?",
-    "desc": "Your corporate tax account in the Canada Revenue Agency's My Business Account lists every tax year and whether a return has been assessed.",
-    "kw": "how do i find out which t2 years are outstanding",
-    "id": 1240
-   },
-   {
-    "title": "How Do I Dissolve a Corporation That Has Never Filed a T2?",
-    "desc": "Every outstanding T2 is filed first, including a final return to the dissolution date, and then dissolution is applied for through the registry.",
-    "kw": "how do i dissolve a corporation that has never filed a t2",
-    "id": 1242
-   },
-   {
-    "title": "How Do I Close My Corporate Tax Account After Dissolution?",
-    "desc": "The corporate income tax account is closed by asking the Canada Revenue Agency to close the Business Number programme accounts, using Form RC145.",
-    "kw": "how do i close my corporate tax account after dissolution",
-    "id": 1244
-   },
-   {
-    "title": "How Do I Fix a Nil T2 Filed With the Wrong Year-End?",
-    "desc": "A return filed for the wrong period is corrected by filing for the correct period, because the fiscal year dates are what define which year a return covers.",
-    "kw": "how do i fix a nil t2 filed with the wrong year-end",
-    "id": 1246
-   },
-   {
-    "title": "When Should I File My First T2 After Incorporating?",
-    "desc": "The first T2 is due within six months of the first fiscal year-end, and the corporation chooses that year-end itself when it files.",
-    "kw": "when should i file my first t2 after incorporating",
-    "id": 1248
-   },
-   {
-    "title": "When Should I File a Nil T2 for a Short First Tax Year?",
-    "desc": "Within six months of the short year-end, on the same rule as a full year. A short first year is still a complete tax year and needs its own T2.",
-    "kw": "when should i file a nil t2 for a short first tax year",
-    "id": 1250
-   }
-  ]
- },
- "nil_deadline": {
-  "rest_base": "nil_deadline",
-  "items": [
-   {
-    "desc": "A January 31 year-end makes the T2 due July 31. Filing is mandatory even with no activity. Nil T2 filing at $300.00 plus HST per tax year.",
-    "id": 530,
-    "kw": "t2 due date for january year end",
-    "title": "T2 Due Date for a January 31 Year-End"
-   },
-   {
-    "desc": "A February 28 year-end makes the T2 due August 31. Filing is mandatory even with no activity. Nil T2 filing at $300.00 plus HST per tax year.",
-    "id": 531,
-    "kw": "t2 due date for february year end",
-    "title": "T2 Due Date for a February 28 Year-End"
-   },
-   {
-    "desc": "A March 31 year-end makes the T2 due September 30. Filing is mandatory even with no activity. Nil T2 filing at $300.00 plus HST per tax year.",
-    "id": 532,
-    "kw": "t2 due date for march year end",
-    "title": "T2 Due Date for a March 31 Year-End"
-   },
-   {
-    "desc": "An April 30 year-end makes the T2 due October 31. Filing is mandatory even with no activity. Nil T2 filing at $300.00 plus HST per tax year.",
-    "id": 533,
-    "kw": "t2 due date for april year end",
-    "title": "T2 Due Date for an April 30 Year-End"
-   },
-   {
-    "desc": "A May 31 year-end makes the T2 due November 30. Filing is mandatory even with no activity. Nil T2 filing at $300.00 plus HST per tax year.",
-    "id": 534,
-    "kw": "t2 due date for may year end",
-    "title": "T2 Due Date for a May 31 Year-End"
-   },
-   {
-    "desc": "A June 30 year-end makes the T2 due December 31. Filing is mandatory even with no activity. Nil T2 filing at $300.00 plus HST per tax year.",
-    "id": 535,
-    "kw": "t2 due date for june year end",
-    "title": "T2 Due Date for a June 30 Year-End"
-   },
-   {
-    "desc": "A July 31 year-end makes the T2 due January 31. Filing is mandatory even with no activity. Nil T2 filing at $300.00 plus HST per tax year.",
-    "id": 536,
-    "kw": "t2 due date for july year end",
-    "title": "T2 Due Date for a July 31 Year-End"
-   },
-   {
-    "desc": "An August 31 year-end makes the T2 due February 28. Filing is mandatory even with no activity. Nil T2 filing at $300.00 plus HST per tax year.",
-    "id": 537,
-    "kw": "t2 due date for august year end",
-    "title": "T2 Due Date for an August 31 Year-End"
-   },
-   {
-    "desc": "A September 30 year-end makes the T2 due March 31. Filing is mandatory even with no activity. Nil T2 filing at $300.00 plus HST per tax year.",
-    "id": 538,
-    "kw": "t2 due date for september year end",
-    "title": "T2 Due Date for a September 30 Year-End"
-   },
-   {
-    "desc": "An October 31 year-end makes the T2 due April 30. Filing is mandatory even with no activity. Nil T2 filing at $300.00 plus HST per tax year.",
-    "id": 539,
-    "kw": "t2 due date for october year end",
-    "title": "T2 Due Date for an October 31 Year-End"
-   },
-   {
-    "desc": "A November 30 year-end makes the T2 due May 31. Filing is mandatory even with no activity. Nil T2 filing at $300.00 plus HST per tax year.",
-    "id": 540,
-    "kw": "t2 due date for november year end",
-    "title": "T2 Due Date for a November 30 Year-End"
-   },
-   {
-    "desc": "A December 31 year-end makes the T2 due June 30. Filing is mandatory even with no activity. Nil T2 filing at $300.00 plus HST per tax year.",
-    "id": 527,
-    "kw": "t2 due date for december year end",
-    "title": "T2 Due Date for a December 31 Year-End"
-   },
-   {
-    "desc": "File an outstanding 2017 nil T2 return. An unfiled year stays open until filed. $300.00 plus HST per tax year, CPA reviewed and transmitted electronically.",
-    "id": 541,
-    "kw": "file your 2017 nil t2 return",
-    "title": "File Your 2017 Nil T2 Return"
-   },
-   {
-    "desc": "File an outstanding 2018 nil T2 return. An unfiled year stays open until filed. $300.00 plus HST per tax year, CPA reviewed and transmitted electronically.",
-    "id": 542,
-    "kw": "file your 2018 nil t2 return",
-    "title": "File Your 2018 Nil T2 Return"
-   },
-   {
-    "desc": "File an outstanding 2019 nil T2 return. An unfiled year stays open until filed. $300.00 plus HST per tax year, CPA reviewed and transmitted electronically.",
-    "id": 543,
-    "kw": "file your 2019 nil t2 return",
-    "title": "File Your 2019 Nil T2 Return"
-   },
-   {
-    "desc": "File an outstanding 2020 nil T2 return. An unfiled year stays open until filed. $300.00 plus HST per tax year, CPA reviewed and transmitted electronically.",
-    "id": 544,
-    "kw": "file your 2020 nil t2 return",
-    "title": "File Your 2020 Nil T2 Return"
-   },
-   {
-    "desc": "File an outstanding 2021 nil T2 return. An unfiled year stays open until filed. $300.00 plus HST per tax year, CPA reviewed and transmitted electronically.",
-    "id": 529,
-    "kw": "file your 2021 nil t2 return",
-    "title": "File Your 2021 Nil T2 Return"
-   },
-   {
-    "desc": "File an outstanding 2022 nil T2 return. An unfiled year stays open until filed. $300.00 plus HST per tax year, CPA reviewed and transmitted electronically.",
-    "id": 545,
-    "kw": "file your 2022 nil t2 return",
-    "title": "File Your 2022 Nil T2 Return"
-   },
-   {
-    "desc": "File an outstanding 2023 nil T2 return. An unfiled year stays open until filed. $300.00 plus HST per tax year, CPA reviewed and transmitted electronically.",
-    "id": 546,
-    "kw": "file your 2023 nil t2 return",
-    "title": "File Your 2023 Nil T2 Return"
-   },
-   {
-    "desc": "File an outstanding 2024 nil T2 return. An unfiled year stays open until filed. $300.00 plus HST per tax year, CPA reviewed and transmitted electronically.",
-    "id": 547,
-    "kw": "file your 2024 nil t2 return",
-    "title": "File Your 2024 Nil T2 Return"
-   },
-   {
-    "desc": "File an outstanding 2025 nil T2 return. An unfiled year stays open until filed. $300.00 plus HST per tax year, CPA reviewed and transmitted electronically.",
-    "id": 548,
-    "kw": "file your 2025 nil t2 return",
-    "title": "File Your 2025 Nil T2 Return"
-   },
-   {
-    "desc": "File an outstanding 2026 nil T2 return. An unfiled year stays open until filed. $300.00 plus HST per tax year, CPA reviewed and transmitted electronically.",
-    "id": 549,
-    "kw": "file your 2026 nil t2 return",
-    "title": "File Your 2026 Nil T2 Return"
-   },
-   {
-    "desc": "Every T2 due date by fiscal year-end, with the Ontario statutory holidays that move a deadline. Nil T2 filing at $300.00 plus HST per tax year.",
-    "id": 550,
-    "kw": "cra t2 deadline calendar",
-    "title": "T2 Deadline Calendar for Canadian Corporations"
-   }
-  ]
- }
+  "applied": "2026-10-27",
+  "coverage": "145 items given meta in this pass: 30 pages, 30 questions, 24 service places, 23 deadlines, 20 calculators (tools 1-20), 17 guides, 1 cost page. Calculators 21-30 (IDs 1285-1303) carry meta set at publish time by build/f2/build_f2e.py and are not repeated here. Every published item on the site now has a Rank Math title and description.",
+  "nil_calculator_1_to_20": {
+    "items": [
+      {
+        "desc": "Five questions decide whether a nil T2 needs GIFI Schedules 100, 125 and 141. Any one yes makes all three required.",
+        "id": 1120,
+        "kw": "gifi schedule requirement checker",
+        "title": "GIFI Schedule Requirement Checker | Schedules 100, 125, 141"
+      },
+      {
+        "desc": "All eight T2 Short conditions on one screen. Answer them and the checker names the condition that fails, where one does.",
+        "id": 1122,
+        "kw": "t2 short eligibility checker",
+        "title": "T2 Short Eligibility Checker | All Eight Conditions"
+      },
+      {
+        "desc": "Enter your fiscal year-end and get the T2 due date, the next business day where it falls on a weekend, and the business days remaining.",
+        "id": 1124,
+        "kw": "nil t2 deadline calculator",
+        "title": "Nil T2 Deadline Calculator | When Your T2 Is Due"
+      },
+      {
+        "desc": "Enter how many tax years are unfiled and the calculator returns the total at $300.00 plus HST per tax year.",
+        "id": 1172,
+        "kw": "unfiled years cost calculator",
+        "title": "Unfiled Years Cost Calculator | Nil T2 Catch-Up Total"
+      },
+      {
+        "desc": "Enter each shareholding and the checker names every shareholder at 10% or more, who must be listed on Schedule 50.",
+        "id": 1174,
+        "kw": "schedule 50 shareholder threshold checker",
+        "title": "Schedule 50 Shareholder Threshold Checker | The 10% Rule"
+      },
+      {
+        "desc": "Enter the incorporation date and a proposed year-end. The checker returns whether the first tax year is within the 53 weeks it may not exceed.",
+        "id": 1176,
+        "kw": "53 week first tax year checker",
+        "title": "53-Week First Tax Year Checker | First T2 Year-End"
+      },
+      {
+        "desc": "Three questions decide whether your T2 is the corporation&rsquo;s first return and therefore needs Schedule 24.",
+        "id": 1178,
+        "kw": "schedule 24 first return checker",
+        "title": "Schedule 24 First Return Checker | First T2"
+      },
+      {
+        "desc": "Enter your federal incorporation date and the calculator returns the anniversary and the annual return due date 60 days after it.",
+        "id": 1180,
+        "kw": "federal annual return anniversary calculator",
+        "title": "Federal Annual Return Calculator | 60-Day Due Date"
+      },
+      {
+        "desc": "Ten questions decide whether your corporation is nil for the tax year or has activity that puts it outside a nil return.",
+        "id": 1182,
+        "kw": "dormant corporation test",
+        "title": "Dormant Corporation Test | Is Your Corporation Nil?"
+      },
+      {
+        "desc": "Three questions decide whether an open GST/HST or payroll account still needs nil filings, or whether Form RC145 closes it.",
+        "id": 1184,
+        "kw": "gst hst nil filing checker",
+        "title": "GST/HST Nil Filing Checker | Open Accounts and RC145"
+      },
+      {
+        "desc": "Enter your incorporation date and the calculator lists every month-end a first tax year may use, with the T2 due date for each.",
+        "id": 1259,
+        "kw": "corporate fiscal year end calculator",
+        "title": "Corporate Fiscal Year End Calculator | Permitted Year-Ends"
+      },
+      {
+        "desc": "Four questions that say whether a nil T2 is the return you need and whether this service can file it, at $300.00 plus HST per tax year.",
+        "id": 1261,
+        "kw": "nil t2 eligibility checker",
+        "title": "Nil T2 Eligibility Checker | Can We File Your Return"
+      },
+      {
+        "desc": "Enter your first fiscal year-end and the last year you filed, and the checker lists every T2 year still outstanding and what each was due.",
+        "id": 1263,
+        "kw": "unfiled years checker",
+        "title": "Unfiled Years Checker | Which T2 Years Are Outstanding"
+      },
+      {
+        "desc": "For a non-resident-owned corporation, a late T2 costs $25.00 per day to a maximum of $2,500.00. Enter the dates and the calculator counts it.",
+        "id": 1266,
+        "kw": "non resident t2 penalty calculator",
+        "title": "Non-Resident T2 Penalty Calculator | $25.00 a Day"
+      },
+      {
+        "desc": "Four questions in the order the steps actually run, naming the first one still outstanding before a corporation is dissolved.",
+        "id": 1268,
+        "kw": "dissolution readiness checker",
+        "title": "Dissolution Readiness Checker | Before You Wind Up"
+      },
+      {
+        "desc": "Four questions that set out which of your Business Number accounts are open and what each one still needs beyond the nil T2.",
+        "id": 1270,
+        "kw": "business number status checker",
+        "title": "Business Number Status Checker | Which Accounts Are Open"
+      },
+      {
+        "desc": "Four questions that list every filing an inactive corporation still owes beside the nil T2, and which of them the fee covers.",
+        "id": 1272,
+        "kw": "inactive corporation filing checker",
+        "title": "Inactive Corporation Filing Checker | What You Owe"
+      },
+      {
+        "desc": "Four questions that say whether the year is a nil T2 or a full T2, side by side, and name what pushed it over.",
+        "id": 1274,
+        "kw": "nil return vs full return checker",
+        "title": "Nil Return vs Full Return Checker | Which One Applies"
+      },
+      {
+        "desc": "Four questions that build the list of what actually goes into your nil T2, schedule by schedule, all of it inside the fee.",
+        "id": 1276,
+        "kw": "nil t2 document checklist checker",
+        "title": "Nil T2 Document Checklist | What Goes Into the Return"
+      },
+      {
+        "desc": "Enter a due date and the calculator says whether it moves, which weekend day or statutory holiday moved it, and the date it lands on.",
+        "id": 1278,
+        "kw": "due date weekend holiday shift calculator",
+        "title": "Due Date Weekend and Holiday Shift Calculator"
+      }
+    ],
+    "rest_base": "nil_calculator"
+  },
+  "nil_cost": {
+    "items": [
+      {
+        "desc": "A nil T2 return is $300.00 plus HST per tax year. What the fee covers, what is filed separately, and what a corporation with activity pays instead.",
+        "id": 794,
+        "kw": "nil t2 filing cost",
+        "title": "Nil T2 Filing Cost | $300.00 plus HST per tax year"
+      }
+    ],
+    "rest_base": "nil_cost"
+  },
+  "nil_deadline": {
+    "items": [
+      {
+        "desc": "A January 31 year-end makes the T2 due July 31. Filing is mandatory even with no activity. Nil T2 filing at $300.00 plus HST per tax year.",
+        "id": 530,
+        "kw": "t2 due date for january year end",
+        "title": "T2 Due Date for a January 31 Year-End"
+      },
+      {
+        "desc": "A February 28 year-end makes the T2 due August 31. Filing is mandatory even with no activity. Nil T2 filing at $300.00 plus HST per tax year.",
+        "id": 531,
+        "kw": "t2 due date for february year end",
+        "title": "T2 Due Date for a February 28 Year-End"
+      },
+      {
+        "desc": "A March 31 year-end makes the T2 due September 30. Filing is mandatory even with no activity. Nil T2 filing at $300.00 plus HST per tax year.",
+        "id": 532,
+        "kw": "t2 due date for march year end",
+        "title": "T2 Due Date for a March 31 Year-End"
+      },
+      {
+        "desc": "An April 30 year-end makes the T2 due October 31. Filing is mandatory even with no activity. Nil T2 filing at $300.00 plus HST per tax year.",
+        "id": 533,
+        "kw": "t2 due date for april year end",
+        "title": "T2 Due Date for an April 30 Year-End"
+      },
+      {
+        "desc": "A May 31 year-end makes the T2 due November 30. Filing is mandatory even with no activity. Nil T2 filing at $300.00 plus HST per tax year.",
+        "id": 534,
+        "kw": "t2 due date for may year end",
+        "title": "T2 Due Date for a May 31 Year-End"
+      },
+      {
+        "desc": "A June 30 year-end makes the T2 due December 31. Filing is mandatory even with no activity. Nil T2 filing at $300.00 plus HST per tax year.",
+        "id": 535,
+        "kw": "t2 due date for june year end",
+        "title": "T2 Due Date for a June 30 Year-End"
+      },
+      {
+        "desc": "A July 31 year-end makes the T2 due January 31. Filing is mandatory even with no activity. Nil T2 filing at $300.00 plus HST per tax year.",
+        "id": 536,
+        "kw": "t2 due date for july year end",
+        "title": "T2 Due Date for a July 31 Year-End"
+      },
+      {
+        "desc": "An August 31 year-end makes the T2 due February 28. Filing is mandatory even with no activity. Nil T2 filing at $300.00 plus HST per tax year.",
+        "id": 537,
+        "kw": "t2 due date for august year end",
+        "title": "T2 Due Date for an August 31 Year-End"
+      },
+      {
+        "desc": "A September 30 year-end makes the T2 due March 31. Filing is mandatory even with no activity. Nil T2 filing at $300.00 plus HST per tax year.",
+        "id": 538,
+        "kw": "t2 due date for september year end",
+        "title": "T2 Due Date for a September 30 Year-End"
+      },
+      {
+        "desc": "An October 31 year-end makes the T2 due April 30. Filing is mandatory even with no activity. Nil T2 filing at $300.00 plus HST per tax year.",
+        "id": 539,
+        "kw": "t2 due date for october year end",
+        "title": "T2 Due Date for an October 31 Year-End"
+      },
+      {
+        "desc": "A November 30 year-end makes the T2 due May 31. Filing is mandatory even with no activity. Nil T2 filing at $300.00 plus HST per tax year.",
+        "id": 540,
+        "kw": "t2 due date for november year end",
+        "title": "T2 Due Date for a November 30 Year-End"
+      },
+      {
+        "desc": "A December 31 year-end makes the T2 due June 30. Filing is mandatory even with no activity. Nil T2 filing at $300.00 plus HST per tax year.",
+        "id": 527,
+        "kw": "t2 due date for december year end",
+        "title": "T2 Due Date for a December 31 Year-End"
+      },
+      {
+        "desc": "File an outstanding 2017 nil T2 return. An unfiled year stays open until filed. $300.00 plus HST per tax year, CPA reviewed and transmitted electronically.",
+        "id": 541,
+        "kw": "file your 2017 nil t2 return",
+        "title": "File Your 2017 Nil T2 Return"
+      },
+      {
+        "desc": "File an outstanding 2018 nil T2 return. An unfiled year stays open until filed. $300.00 plus HST per tax year, CPA reviewed and transmitted electronically.",
+        "id": 542,
+        "kw": "file your 2018 nil t2 return",
+        "title": "File Your 2018 Nil T2 Return"
+      },
+      {
+        "desc": "File an outstanding 2019 nil T2 return. An unfiled year stays open until filed. $300.00 plus HST per tax year, CPA reviewed and transmitted electronically.",
+        "id": 543,
+        "kw": "file your 2019 nil t2 return",
+        "title": "File Your 2019 Nil T2 Return"
+      },
+      {
+        "desc": "File an outstanding 2020 nil T2 return. An unfiled year stays open until filed. $300.00 plus HST per tax year, CPA reviewed and transmitted electronically.",
+        "id": 544,
+        "kw": "file your 2020 nil t2 return",
+        "title": "File Your 2020 Nil T2 Return"
+      },
+      {
+        "desc": "File an outstanding 2021 nil T2 return. An unfiled year stays open until filed. $300.00 plus HST per tax year, CPA reviewed and transmitted electronically.",
+        "id": 529,
+        "kw": "file your 2021 nil t2 return",
+        "title": "File Your 2021 Nil T2 Return"
+      },
+      {
+        "desc": "File an outstanding 2022 nil T2 return. An unfiled year stays open until filed. $300.00 plus HST per tax year, CPA reviewed and transmitted electronically.",
+        "id": 545,
+        "kw": "file your 2022 nil t2 return",
+        "title": "File Your 2022 Nil T2 Return"
+      },
+      {
+        "desc": "File an outstanding 2023 nil T2 return. An unfiled year stays open until filed. $300.00 plus HST per tax year, CPA reviewed and transmitted electronically.",
+        "id": 546,
+        "kw": "file your 2023 nil t2 return",
+        "title": "File Your 2023 Nil T2 Return"
+      },
+      {
+        "desc": "File an outstanding 2024 nil T2 return. An unfiled year stays open until filed. $300.00 plus HST per tax year, CPA reviewed and transmitted electronically.",
+        "id": 547,
+        "kw": "file your 2024 nil t2 return",
+        "title": "File Your 2024 Nil T2 Return"
+      },
+      {
+        "desc": "File an outstanding 2025 nil T2 return. An unfiled year stays open until filed. $300.00 plus HST per tax year, CPA reviewed and transmitted electronically.",
+        "id": 548,
+        "kw": "file your 2025 nil t2 return",
+        "title": "File Your 2025 Nil T2 Return"
+      },
+      {
+        "desc": "File an outstanding 2026 nil T2 return. An unfiled year stays open until filed. $300.00 plus HST per tax year, CPA reviewed and transmitted electronically.",
+        "id": 549,
+        "kw": "file your 2026 nil t2 return",
+        "title": "File Your 2026 Nil T2 Return"
+      },
+      {
+        "desc": "Every T2 due date by fiscal year-end, with the Ontario statutory holidays that move a deadline. Nil T2 filing at $300.00 plus HST per tax year.",
+        "id": 550,
+        "kw": "cra t2 deadline calendar",
+        "title": "T2 Deadline Calendar for Canadian Corporations"
+      }
+    ],
+    "rest_base": "nil_deadline"
+  },
+  "nil_guide": {
+    "items": [
+      {
+        "desc": "Who must file, what a nil return is, which schedules are required, how T183CORP is signed, and what happens to unfiled years. Updated monthly.",
+        "id": 867,
+        "kw": "nil t2 return",
+        "title": "Nil T2 Return | Complete Guide for Canadian Corporations"
+      },
+      {
+        "desc": "What dormant means to the Canada Revenue Agency, which returns a dormant corporation still files, what keeps it compliant, and when to wind it up.",
+        "id": 945,
+        "kw": "dormant corporations",
+        "title": "Dormant Corporations | Complete Filing Guide for Canada"
+      },
+      {
+        "desc": "How many years can be filed, which order to file them in, what a demand to file means, what an arbitrary assessment is, and what the catch-up costs.",
+        "id": 947,
+        "kw": "unfiled corporate tax returns",
+        "title": "Unfiled Corporate Tax Returns | Catch-Up Guide for Canada"
+      },
+      {
+        "desc": "When the final T2 is due, what period it covers, why a clearance certificate matters, and everything that must be filed before a corporation can close.",
+        "id": 949,
+        "kw": "final t2 and dissolution",
+        "title": "Final T2 and Dissolution | Guide for Canadian Corporations"
+      },
+      {
+        "desc": "The eight conditions for the T2 Short, what disqualifies a corporation, how it differs from the full T2, and which schedules are still required.",
+        "id": 951,
+        "kw": "t2 short",
+        "title": "T2 Short | Eligibility Guide for Canadian Corporations"
+      },
+      {
+        "desc": "The Ontario annual return, the $12.00 Corporations Canada annual return, Alberta AT1 and Quebec CO-17, and why the T2 covers none of them.",
+        "id": 953,
+        "kw": "provincial and federal annual returns",
+        "title": "Provincial and Federal Annual Returns | Canada Guide"
+      },
+      {
+        "desc": "What Form T183CORP authorises, who may sign it, when it must be signed, how it is e-signed, how long it is kept, and how the signed return is transmitted.",
+        "id": 955,
+        "kw": "form t183corp",
+        "title": "Form T183CORP | Signing and Transmission Guide"
+      },
+      {
+        "desc": "What you need before you start, how the fiscal year-end is confirmed, which schedules are filed, how Form T183CORP is signed, and how the return is sent.",
+        "id": 976,
+        "kw": "how to file a nil t2 return",
+        "title": "How to File a Nil T2 Return | Step by Step for Canada"
+      },
+      {
+        "desc": "What GIFI is, what Schedules 100, 125 and 141 report, when a nil return may omit them, and why share capital or a shareholder loan makes them required.",
+        "id": 978,
+        "kw": "gifi schedules 100, 125 and 141",
+        "title": "GIFI Schedules 100, 125 and 141 | Nil T2 Guide"
+      },
+      {
+        "desc": "What Schedule 8 records, how capital cost allowance works in a nil year, why loss continuity has to be carried forward, and what a skipped year costs.",
+        "id": 980,
+        "kw": "schedule 8 and loss continuity",
+        "title": "Schedule 8 and Loss Continuity | Nil T2 Guide"
+      },
+      {
+        "desc": "When the first tax year starts and ends, the 53-week rule, Schedule 24, choosing a year-end, and why first transmissions are the ones rejected.",
+        "id": 982,
+        "kw": "first-year t2 filing",
+        "title": "First-Year T2 Filing | Guide for New Canadian Corporations"
+      },
+      {
+        "desc": "Why a numbered company files exactly like a named one, how the CRA identifies it, what shelf and holding corporations need, and what the filing costs.",
+        "id": 984,
+        "kw": "numbered company tax filing",
+        "title": "Numbered Company Tax Filing | Nil T2 Guide for Canada"
+      },
+      {
+        "desc": "How the percentage penalty is calculated, why a nil return is different, the paper and preparer penalties, and what an unfiled year costs.",
+        "id": 1094,
+        "kw": "t2 late filing penalties",
+        "title": "T2 Late Filing Penalties | Guide for Canadian Corporations"
+      },
+      {
+        "desc": "What a demand to file is, the deadline it sets, what happens if it is ignored, and how an arbitrary assessment is displaced by filing.",
+        "id": 1096,
+        "kw": "cra demand to file",
+        "title": "CRA Demand to File | Response Guide for Corporations"
+      },
+      {
+        "desc": "When a holding corporation is nil and when it is not, what investment income does to the return, and which schedules a holding company needs.",
+        "id": 1098,
+        "kw": "inactive holding company filing",
+        "title": "Inactive Holding Company Filing | Nil T2 Guide for Canada"
+      },
+      {
+        "desc": "Which schedules a nil T2 needs and which it can omit, what makes the GIFI schedules required, and how each one is decided.",
+        "id": 1100,
+        "kw": "t2 schedules on a nil return",
+        "title": "T2 Schedules on a Nil Return | Canada Guide"
+      },
+      {
+        "desc": "What a corporation held in reserve still has to file each year, the annual returns that are not the T2, and what lapses first.",
+        "id": 1102,
+        "kw": "shelf corporation compliance",
+        "title": "Shelf Corporation Compliance | Filing Guide for Canada"
+      }
+    ],
+    "rest_base": "nil_guide"
+  },
+  "nil_question": {
+    "items": [
+      {
+        "desc": "The tax year stays open and the Canada Revenue Agency can demand the return and assess the corporation arbitrarily.",
+        "id": 831,
+        "kw": "what happens if i dont file a nil t2",
+        "title": "What Happens if I Don't File a Nil T2?"
+      },
+      {
+        "desc": "All five returns stay outstanding and each year is filed separately. Filing all five at once is routine and closes the years in a single pass.",
+        "id": 833,
+        "kw": "what happens if i dont file my t2 for five years",
+        "title": "What Happens if I Don't File My T2 for Five Years?"
+      },
+      {
+        "desc": "Dissolution can be held up and the outstanding years remain owed. An unfiled year blocks the clearance certificate that lets a corporation close.",
+        "id": 834,
+        "kw": "what happens if i dont file a t2 before dissolving",
+        "title": "What Happens if I Don't File a T2 Before Dissolving?"
+      },
+      {
+        "desc": "There is no separate dormancy filing, so the obligation is simply the annual T2. Telling the CRA a corporation is inactive does not replace it.",
+        "id": 835,
+        "kw": "what happens if a dormant corporation is not reported",
+        "title": "What Happens if a Dormant Corporation Is Not Reported?"
+      },
+      {
+        "desc": "The Canada Revenue Agency can assess the corporation arbitrarily, without waiting for the return. Filing the real return replaces that assessment.",
+        "id": 836,
+        "kw": "what happens if i ignore a cra demand to file a t2",
+        "title": "What Happens if I Ignore a CRA Demand to File a T2?"
+      },
+      {
+        "desc": "Nothing changes because the corporation has a number instead of a name. A numbered company files a T2 within six months of each fiscal year-end.",
+        "id": 856,
+        "kw": "what happens if a numbered company does not file",
+        "title": "What Happens if a Numbered Company Does Not File?"
+      },
+      {
+        "desc": "The final return is still required and the years before dissolution stay outstanding. Dissolving does not close earlier years or cancel the returns.",
+        "id": 857,
+        "kw": "what happens if i dont file after dissolution",
+        "title": "What Happens if I Don't File After Dissolution?"
+      },
+      {
+        "desc": "Yes. Every resident corporation must file a T2 return within six months of its fiscal year-end, every year, until it is formally dissolved.",
+        "id": 858,
+        "kw": "do i need to file a t2 if my corporation had no activity",
+        "title": "Do I Need to File a T2 if My Corporation Had No Activity?"
+      },
+      {
+        "desc": "Yes. The T2 obligation follows the corporation's existence, not its banking, so a return is due within six months of each fiscal year-end regardless.",
+        "id": 859,
+        "kw": "do i need to file a nil t2 with no bank account",
+        "title": "Do I Need to File a Nil T2 With No Bank Account?"
+      },
+      {
+        "desc": "No audited or reviewed statements are needed, but the return still carries GIFI schedules showing zero.",
+        "id": 860,
+        "kw": "do i need financial statements for a nil t2 return",
+        "title": "Do I Need Financial Statements for a Nil T2 Return?"
+      },
+      {
+        "desc": "Yes. A final T2 covers the period from the start of that fiscal year to the dissolution date, and it is due within six months of dissolution.",
+        "id": 925,
+        "kw": "do i need to file a t2 for the year of dissolution",
+        "title": "Do I Need to File a T2 for the Year of Dissolution?"
+      },
+      {
+        "desc": "Yes. The return is filed against the corporation's nine-digit business number and its corporation income tax account, so the number must exist.",
+        "id": 926,
+        "kw": "do i need a business number to file a nil t2",
+        "title": "Do I Need a Business Number to File a Nil T2?"
+      },
+      {
+        "desc": "Yes. The first tax year begins on the incorporation date, not the day trading starts, so a return is due six months after that first year-end.",
+        "id": 927,
+        "kw": "do i need to file a nil t2 if i never started operating",
+        "title": "Do I Need to File a Nil T2 if I Never Started Operating?"
+      },
+      {
+        "desc": "Yes, every year. Inactive is a description, not a filing status, so a T2 falls due six months after each year-end until the corporation is closed.",
+        "id": 928,
+        "kw": "do i need to file a t2 every year when inactive",
+        "title": "Do I Need to File a T2 Every Year When Inactive?"
+      },
+      {
+        "desc": "Yes. Five missed fiscal year-ends mean five separate returns, and all five can be prepared and transmitted in one pass.",
+        "id": 929,
+        "kw": "can i file five years of nil t2 returns at once",
+        "title": "Can I File Five Years of Nil T2 Returns at Once?"
+      },
+      {
+        "desc": "Yes. Nothing requires a corporation to use an accountant. A corporation that engages an electronic filer signs Form T183CORP before transmission.",
+        "id": 930,
+        "kw": "can i file a nil t2 myself without an accountant",
+        "title": "Can I File a Nil T2 Myself Without an Accountant?"
+      },
+      {
+        "desc": "Not cleanly. The corporate registry and the Canada Revenue Agency are separate, so a registry may strike a corporation while its tax years remain outstanding.",
+        "id": 931,
+        "kw": "can i dissolve my corporation with unfiled t2 returns",
+        "title": "Can I Dissolve My Corporation With Unfiled T2 Returns?"
+      },
+      {
+        "desc": "What actually applies to a late nil T2: the percentage penalty, the year that stays open, a demand to file, and the non-resident per-day charge.",
+        "id": 932,
+        "kw": "can i file a nil t2 late without a penalty",
+        "title": "Can I File a Nil T2 Late Without a Penalty?"
+      },
+      {
+        "desc": "Yes. A corporation left alone still has a fiscal year-end for every year since incorporation, and each of those years can be filed now.",
+        "id": 933,
+        "kw": "can i file nil t2 returns for a corporation i forgot about",
+        "title": "Can I File Nil T2 Returns for a Corporation I Forgot About?"
+      },
+      {
+        "desc": "Yes. A final return is due within six months of the dissolution date, and years left unfiled before dissolution can still be filed afterwards.",
+        "id": 934,
+        "kw": "can i still file a t2 after my corporation was dissolved",
+        "title": "Can I Still File a T2 After My Corporation Was Dissolved?"
+      },
+      {
+        "desc": "Catching up is an ordinary filing, not an audit. Each outstanding year is filed as its own T2 return and assessed in the normal way.",
+        "id": 1232,
+        "kw": "can i catch up on unfiled t2 returns without an audit",
+        "title": "Can I Catch Up on Unfiled T2 Returns Without an Audit?"
+      },
+      {
+        "desc": "You file a T2 return for the tax year showing no income and no expenses, then transmit it to the Canada Revenue Agency electronically.",
+        "id": 1234,
+        "kw": "how do i file a nil t2 return in canada",
+        "title": "How Do I File a Nil T2 Return in Canada?"
+      },
+      {
+        "desc": "You file one T2 return for each outstanding tax year, oldest first, each with its own fiscal year dates. There is no combined return that covers several years.",
+        "id": 1236,
+        "kw": "how do i catch up on years of unfiled t2 returns",
+        "title": "How Do I Catch Up on Years of Unfiled T2 Returns?"
+      },
+      {
+        "desc": "A corporation is treated as dormant for a tax year when it carried on no business, earned nothing and paid nothing out during that year.",
+        "id": 1238,
+        "kw": "how do i know if my corporation counts as dormant",
+        "title": "How Do I Know if My Corporation Counts as Dormant?"
+      },
+      {
+        "desc": "Your corporate tax account in the Canada Revenue Agency's My Business Account lists every tax year and whether a return has been assessed.",
+        "id": 1240,
+        "kw": "how do i find out which t2 years are outstanding",
+        "title": "How Do I Find Out Which T2 Years Are Outstanding?"
+      },
+      {
+        "desc": "Every outstanding T2 is filed first, including a final return to the dissolution date, and then dissolution is applied for through the registry.",
+        "id": 1242,
+        "kw": "how do i dissolve a corporation that has never filed a t2",
+        "title": "How Do I Dissolve a Corporation That Has Never Filed a T2?"
+      },
+      {
+        "desc": "The corporate income tax account is closed by asking the Canada Revenue Agency to close the Business Number programme accounts, using Form RC145.",
+        "id": 1244,
+        "kw": "how do i close my corporate tax account after dissolution",
+        "title": "How Do I Close My Corporate Tax Account After Dissolution?"
+      },
+      {
+        "desc": "A return filed for the wrong period is corrected by filing for the correct period, because the fiscal year dates are what define which year a return covers.",
+        "id": 1246,
+        "kw": "how do i fix a nil t2 filed with the wrong year-end",
+        "title": "How Do I Fix a Nil T2 Filed With the Wrong Year-End?"
+      },
+      {
+        "desc": "The first T2 is due within six months of the first fiscal year-end, and the corporation chooses that year-end itself when it files.",
+        "id": 1248,
+        "kw": "when should i file my first t2 after incorporating",
+        "title": "When Should I File My First T2 After Incorporating?"
+      },
+      {
+        "desc": "Within six months of the short year-end, on the same rule as a full year. A short first year is still a complete tax year and needs its own T2.",
+        "id": 1250,
+        "kw": "when should i file a nil t2 for a short first tax year",
+        "title": "When Should I File a Nil T2 for a Short First Tax Year?"
+      }
+    ],
+    "rest_base": "nil_question"
+  },
+  "nil_service_place": {
+    "items": [
+      {
+        "desc": "Filing a nil T2 for an Ontario corporation with no activity in the tax year, prepared and transmitted by a CPA at $300.00 plus HST per tax year.",
+        "id": 512,
+        "kw": "nil t2 filing in ontario",
+        "title": "Nil T2 Filing in Ontario | Corporate Tax Return"
+      },
+      {
+        "desc": "Several unfiled nil years for an Ontario corporation, transmitted in one sitting. Each year is $300.00 plus HST per tax year.",
+        "id": 715,
+        "kw": "catch-up nil t2 filing in ontario",
+        "title": "Catch-Up Nil T2 Filing in Ontario"
+      },
+      {
+        "desc": "A dormant Ontario corporation still files a T2 for every tax year until it is dissolved. A nil year is $300.00 plus HST per tax year.",
+        "id": 716,
+        "kw": "dormant corporation filing in ontario",
+        "title": "Dormant Corporation Filing in Ontario"
+      },
+      {
+        "desc": "The final T2 for an Ontario corporation covers the period ending on the date of dissolution, and every earlier year has to be filed first.",
+        "id": 717,
+        "kw": "final t2 before dissolution in ontario",
+        "title": "Final T2 Before Dissolution in Ontario"
+      },
+      {
+        "desc": "Whether an Ontario corporation qualifies for the T2 Short, what disqualifies it, and which schedules are still required on a nil return.",
+        "id": 718,
+        "kw": "t2 short filing in ontario",
+        "title": "T2 Short Filing in Ontario | Eligibility"
+      },
+      {
+        "desc": "An Ontario holding corporation is not nil once it receives investment income or a dividend. What it files and what the return needs.",
+        "id": 719,
+        "kw": "inactive holding corporation t2 filing in ontario",
+        "title": "Inactive Holding Corporation T2 Filing in Ontario"
+      },
+      {
+        "desc": "What a nil T2 costs for an Ontario corporation: $300.00 plus HST per tax year, what the fee covers, and what is filed separately.",
+        "id": 912,
+        "kw": "nil t2 filing cost in ontario",
+        "title": "Nil T2 Filing Cost in Ontario | What the Fee Covers"
+      },
+      {
+        "desc": "Unfiled T2 years for an Ontario corporation: what stays open, what a demand to file means, and what catching up costs per year.",
+        "id": 914,
+        "kw": "unfiled corporate tax returns in ontario",
+        "title": "Unfiled Corporate Tax Returns in Ontario"
+      },
+      {
+        "desc": "An Ontario corporation with no activity in the tax year still files a T2. What a nil return reports and what it costs to file.",
+        "id": 915,
+        "kw": "no activity corporation tax return in ontario",
+        "title": "No Activity Corporation Tax Return in Ontario"
+      },
+      {
+        "desc": "A numbered Ontario corporation files exactly like a named one. How the Canada Revenue Agency identifies it and what a nil year needs.",
+        "id": 916,
+        "kw": "numbered corporation nil filing in ontario",
+        "title": "Numbered Corporation Nil Filing in Ontario"
+      },
+      {
+        "desc": "When the T2 for an Ontario corporation is due: six months after the fiscal year-end, moved to the next business day where it lands on a closed day.",
+        "id": 917,
+        "kw": "nil t2 filing deadline in ontario",
+        "title": "Nil T2 Filing Deadline in Ontario"
+      },
+      {
+        "desc": "Nil T2 filing for a non-resident-owned Ontario corporation, including the $25.00 per day charge up to $2,500.00 on an unfiled year.",
+        "id": 918,
+        "kw": "non-resident-owned corporation nil t2",
+        "title": "Non-Resident-Owned Corporation Nil T2 | Ontario"
+      },
+      {
+        "desc": "Filing a nil T2 for a British Columbia corporation with no activity in the tax year, prepared and transmitted by a CPA at $300.00 plus HST per tax year.",
+        "id": 1025,
+        "kw": "nil t2 filing in british columbia",
+        "title": "Nil T2 Filing in British Columbia | Corporate Tax Return"
+      },
+      {
+        "desc": "Several unfiled nil years for a British Columbia corporation, transmitted in one sitting. Each year is $300.00 plus HST per tax year.",
+        "id": 1027,
+        "kw": "catch-up nil t2 filing in british columbia",
+        "title": "Catch-Up Nil T2 Filing in British Columbia"
+      },
+      {
+        "desc": "A dormant British Columbia corporation still files a T2 for every tax year until it is dissolved. A nil year is $300.00 plus HST per tax year.",
+        "id": 1029,
+        "kw": "dormant corporation filing in british columbia",
+        "title": "Dormant Corporation Filing in British Columbia"
+      },
+      {
+        "desc": "The final T2 for a British Columbia corporation covers the period ending on the date of dissolution, and every earlier year has to be filed first.",
+        "id": 1031,
+        "kw": "final t2 before dissolution in british columbia",
+        "title": "Final T2 Before Dissolution in British Columbia"
+      },
+      {
+        "desc": "Whether a British Columbia corporation qualifies for the T2 Short, what disqualifies it, and which schedules are still required on a nil return.",
+        "id": 1033,
+        "kw": "t2 short filing in british columbia",
+        "title": "T2 Short Filing in British Columbia | Eligibility"
+      },
+      {
+        "desc": "A British Columbia holding corporation is not nil once it receives investment income or a dividend. What it files and what the return needs.",
+        "id": 1116,
+        "kw": "inactive holding corporation t2 filing in british columbia",
+        "title": "Inactive Holding Corporation T2 Filing in British Columbia"
+      },
+      {
+        "desc": "What a nil T2 costs for a British Columbia corporation: $300.00 plus HST per tax year, what the fee covers, and what is filed separately.",
+        "id": 1112,
+        "kw": "nil t2 filing cost in british columbia",
+        "title": "Nil T2 Filing Cost in British Columbia"
+      },
+      {
+        "desc": "Unfiled T2 years for a British Columbia corporation: what stays open, what a demand to file means, and what catching up costs per year.",
+        "id": 1104,
+        "kw": "unfiled corporate tax returns in british columbia",
+        "title": "Unfiled Corporate Tax Returns in British Columbia"
+      },
+      {
+        "desc": "A British Columbia corporation with no activity in the tax year still files a T2. What a nil return reports and what it costs to file.",
+        "id": 1106,
+        "kw": "no activity corporation tax return in british columbia",
+        "title": "No Activity Corporation Tax Return in British Columbia"
+      },
+      {
+        "desc": "A numbered British Columbia corporation files exactly like a named one. How the Canada Revenue Agency identifies it and what a nil year needs.",
+        "id": 1108,
+        "kw": "numbered corporation nil filing in british columbia",
+        "title": "Numbered Corporation Nil Filing in British Columbia"
+      },
+      {
+        "desc": "When the T2 for a British Columbia corporation is due: six months after the fiscal year-end, moved to the next business day where it lands on a closed day.",
+        "id": 1110,
+        "kw": "nil t2 filing deadline in british columbia",
+        "title": "Nil T2 Filing Deadline in British Columbia"
+      },
+      {
+        "desc": "Nil T2 filing for a non-resident-owned British Columbia corporation, including the $25.00 per day charge up to $2,500.00 on an unfiled year.",
+        "id": 1114,
+        "kw": "non-resident-owned corporation nil t2",
+        "title": "Non-Resident-Owned Corporation Nil T2 | British Columbia"
+      }
+    ],
+    "rest_base": "nil_service_place"
+  },
+  "note": "Rank Math title/description/focus keyword applied to corpnilfilingfor300.ca. Titles <=60 characters, descriptions 70-160, no price outside the full \"$300.00 plus HST per tax year\" form, no bare T183, no bare EFILE outside \"registered EFILE electronic filer\", no superlatives, no unqualified penalty claim, no emoji, every title and description unique. Run build/f2/gate_rank_math.py to re-check this file against all of that.",
+  "open_item": "Pages 201 (/form/), 209 (/pay/) and 211 (/final-details/) are funnel steps. They have titles and descriptions but no robots directive; whether they should be noindex is Navneet's call and is not set here.",
+  "pages": {
+    "items": [
+      {
+        "desc": "How Gondaliya CPA Professional Corporation collects, uses and protects information submitted through the nil T2 filing service.",
+        "id": 3,
+        "kw": "privacy policy",
+        "title": "Privacy Policy | Nil T2 Filing"
+      },
+      {
+        "desc": "Nil T2 corporate tax filing for Canadian corporations with no activity, prepared and transmitted by a CPA at $300.00 plus HST per tax year.",
+        "id": 6,
+        "kw": "nil t2 filing",
+        "title": "Nil T2 Filing in Canada | $300.00 plus HST per tax year"
+      },
+      {
+        "desc": "Reach Gondaliya CPA Professional Corporation about nil T2 corporate filing by email or phone, or start a return online.",
+        "id": 190,
+        "kw": "contact",
+        "title": "Contact Gondaliya CPA | Nil T2 Filing"
+      },
+      {
+        "desc": "Enter your corporation name, pick the unfiled tax years, pay, and sign Form T183CORP on a secure screen. $300.00 plus HST per tax year.",
+        "id": 201,
+        "kw": "nil t2 filing form",
+        "title": "Start Your Nil T2 Filing | Secure Online Form"
+      },
+      {
+        "desc": "Secure payment for nil T2 corporate tax filing at $300.00 plus HST per tax year. Your CRA confirmation is emailed within 3 business days.",
+        "id": 209,
+        "kw": "nil t2 filing payment",
+        "title": "Payment | Nil T2 Filing"
+      },
+      {
+        "desc": "The last details needed before your nil T2 return is prepared, reviewed by a CPA and transmitted to the Canada Revenue Agency.",
+        "id": 211,
+        "kw": "final details",
+        "title": "Final Details | Nil T2 Filing"
+      },
+      {
+        "desc": "The terms on which Gondaliya CPA Professional Corporation prepares and transmits nil T2 corporate tax returns.",
+        "id": 247,
+        "kw": "terms and conditions",
+        "title": "Terms and Conditions | Nil T2 Filing"
+      },
+      {
+        "desc": "What the information on this site is and is not. Nothing here is a filed return or advice on a specific corporation.",
+        "id": 248,
+        "kw": "disclaimer",
+        "title": "Disclaimer | Nil T2 Filing"
+      },
+      {
+        "desc": "How this site approaches accessibility, the standard it works to, and how to report a barrier you encounter.",
+        "id": 249,
+        "kw": "accessibility statement",
+        "title": "Accessibility Statement | Nil T2 Filing"
+      },
+      {
+        "desc": "Who prepares and transmits the returns: a CPA firm filing nil T2 corporate returns for Canadian corporations with no activity.",
+        "id": 319,
+        "kw": "about",
+        "title": "About Gondaliya CPA | Nil T2 Filing Service"
+      },
+      {
+        "desc": "Every nil T2 service: a single year, catch-up for several years, dormant corporations, a final return before dissolution and the T2 Short.",
+        "id": 321,
+        "kw": "nil t2 filing services",
+        "title": "Our Nil T2 Filing Services | What We File"
+      },
+      {
+        "desc": "A nil T2 return is $300.00 plus HST per tax year. What the fee includes, and which filings are separate from it.",
+        "id": 323,
+        "kw": "nil t2 filing price",
+        "title": "Nil T2 Filing Price | $300.00 plus HST per tax year"
+      },
+      {
+        "desc": "What clients say about the nil T2 corporate filing service at Gondaliya CPA Professional Corporation.",
+        "id": 326,
+        "kw": "client reviews",
+        "title": "Client Reviews | Gondaliya CPA"
+      },
+      {
+        "desc": "Filing a nil T2 for a corporation with no activity in the tax year, prepared and transmitted by a CPA at $300.00 plus HST per tax year.",
+        "id": 434,
+        "kw": "nil t2 filing services",
+        "title": "Nil T2 Filing Services | Corporate Tax Return"
+      },
+      {
+        "desc": "Several unfiled nil T2 years transmitted in one sitting. Each year is $300.00 plus HST per tax year, CPA reviewed before it is sent.",
+        "id": 436,
+        "kw": "catch-up nil t2 filing",
+        "title": "Catch-Up Nil T2 Filing | Several Unfiled Years"
+      },
+      {
+        "desc": "A dormant corporation still files a T2 for every tax year until it is dissolved. A nil year is $300.00 plus HST per tax year.",
+        "id": 438,
+        "kw": "dormant corporation filing",
+        "title": "Dormant Corporation Filing | Nil T2 Return"
+      },
+      {
+        "desc": "The final T2 covers the period ending on the date of dissolution, and every earlier year has to be filed before a corporation can close.",
+        "id": 440,
+        "kw": "final t2 before dissolution",
+        "title": "Final T2 Before Dissolution | Last Return"
+      },
+      {
+        "desc": "Whether a corporation qualifies for the T2 Short, what disqualifies it, and which schedules are still required on a nil return.",
+        "id": 442,
+        "kw": "t2 short filing",
+        "title": "T2 Short Filing | Eligibility and Schedules"
+      },
+      {
+        "desc": "A holding corporation is not nil once it receives investment income or a dividend. What it files and what the return needs.",
+        "id": 449,
+        "kw": "inactive holding corporation t2 filing",
+        "title": "Inactive Holding Corporation T2 Filing"
+      },
+      {
+        "desc": "Sharad Gondaliya, CPA, who reviews every nil T2 return before it is transmitted to the Canada Revenue Agency.",
+        "id": 473,
+        "kw": "sharad gondaliya cpa",
+        "title": "Sharad Gondaliya, CPA | Gondaliya CPA"
+      },
+      {
+        "desc": "Vandana Goel, CPA, part of the team preparing nil T2 corporate tax returns at Gondaliya CPA Professional Corporation.",
+        "id": 475,
+        "kw": "vandana goel cpa",
+        "title": "Vandana Goel, CPA | Gondaliya CPA"
+      },
+      {
+        "desc": "Nil T2 filing for Ontario corporations: every service, the Ontario annual return, filing deadlines and what each one costs.",
+        "id": 516,
+        "kw": "nil t2 filing in ontario",
+        "title": "Nil T2 Filing in Ontario | Province Hub"
+      },
+      {
+        "desc": "Where nil years sit in a corporation's life, from incorporation through dormancy to dissolution, and what each stage has to file.",
+        "id": 523,
+        "kw": "corporate lifecycle",
+        "title": "Corporate Lifecycle | Nil Years in Context"
+      },
+      {
+        "desc": "What changes once a corporation starts trading: the return is no longer nil, and filing moves to Gondaliya CPA at gondaliyacpa.ca.",
+        "id": 524,
+        "kw": "when your corporation starts operating",
+        "title": "When Your Corporation Starts Operating"
+      },
+      {
+        "desc": "Every T2 filing deadline by fiscal year-end, the six-month rule, and the statutory holidays that move a due date.",
+        "id": 799,
+        "kw": "t2 filing deadlines",
+        "title": "T2 Filing Deadlines | Every Year-End"
+      },
+      {
+        "desc": "Complete guides to nil T2 filing: what a nil return is, which schedules apply, catching up on unfiled years and dissolution.",
+        "id": 904,
+        "kw": "nil t2 filing guides",
+        "title": "Nil T2 Filing Guides for Canadian Corporations"
+      },
+      {
+        "desc": "Nil T2 filing for British Columbia corporations: every service, filing deadlines and what each one costs.",
+        "id": 996,
+        "kw": "nil t2 filing in british columbia",
+        "title": "Nil T2 Filing in British Columbia | Province Hub"
+      },
+      {
+        "desc": "Articles on nil T2 corporate tax filing in Canada: deadlines, schedules, dormant corporations, catching up and dissolution.",
+        "id": 1037,
+        "kw": "nil t2 filing blog",
+        "title": "Nil T2 Filing Blog | Corporate Tax Articles"
+      },
+      {
+        "desc": "Calculators and checkers for nil T2 filing: deadlines, eligibility, unfiled years, schedules and dissolution readiness.",
+        "id": 1187,
+        "kw": "nil t2 filing tools",
+        "title": "Nil T2 Filing Tools and Calculators"
+      },
+      {
+        "desc": "Nil T2 filing by province: Ontario, British Columbia and the rest of Canada, with the provincial returns that are separate from the T2.",
+        "id": 1191,
+        "kw": "nil t2 filing by province",
+        "title": "Nil T2 Filing by Province in Canada"
+      }
+    ],
+    "rest_base": "pages"
+  }
 }
