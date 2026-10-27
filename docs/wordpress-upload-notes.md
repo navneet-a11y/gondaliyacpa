@@ -117,3 +117,37 @@ H1 are unchanged once the page is live.
 74 commits were lost when a container was reclaimed while `git push` was
 returning 403. The published pages survived on the live site; the sources,
 briefs, spines, scripts and chrome did not. Push after every batch.
+
+## WordPress escapes `<` as `\x3c` inside `<script>` blocks
+
+The byte ledger can legitimately drift **upward by 3 bytes per `<`** that sits
+inside a JavaScript string literal in a `<script>` block. WordPress (or the
+Easy MCP AI sanitiser) rewrites those as `\x3c`, so
+
+    innerHTML='<div class="sb-quiz-bar"><span ...></span></div>'
+
+is stored as
+
+    innerHTML='\x3cdiv class="sb-quiz-bar">\x3cspan ...>\x3c/span>\x3c/div>'
+
+**This is benign and must not be "corrected".** In a JS string literal `\x3c`
+is exactly `<`, so the readiness-quiz widget renders and behaves identically;
+the escaped form is the safer one, since it cannot terminate the script tag
+early. Writing the raw `<` back only invites the sanitiser to redo it.
+
+Two consequences worth remembering:
+
+- The drift does **not** appear on every page, and may land on a *later* save
+  rather than on the write that introduced the script. On the trade-schools
+  page it appeared between the chunk-2 and chunk-3 writes (across an MCP
+  reconnect); on the health-and-safety page it never appeared at all and the
+  final length matched the local file exactly.
+- It also lowers the `<div` and `</div>` counts, because `\x3cdiv` and
+  `\x3c/div>` no longer match those literals. A div count that is short by one
+  or two with a positive byte drift is this, not lost markup.
+
+**Diagnosing a drift properly.** Do not reach for `difflib.SequenceMatcher` on
+a 100KB+ body; it does not finish. Fetch the page with `wp_get_page` (the
+harness spills an oversized result to a file), then find the common prefix and
+common suffix in a single O(n) pass and print only the divergent slice between
+them. That localises any drift to a handful of characters immediately.
