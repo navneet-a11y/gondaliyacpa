@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Check that a built post keeps every word and heading of its draft.
 
-Usage: check_no_words_removed.py SOURCE.md HEADINGS.txt POST.html
+Usage: check_no_words_removed.py SOURCE.md HEADINGS.txt POST.html [CORRECTIONS.json]
 
 1. Every word of SOURCE.md appears in POST.html, in the same order
    (visible text plus image alt text). Words may be added, never removed.
@@ -10,6 +10,10 @@ Usage: check_no_words_removed.py SOURCE.md HEADINGS.txt POST.html
    and "Caption:" (their text becomes the image alt and caption).
 2. Every line in HEADINGS.txt is the exact text of an h1 to h5 element.
 3. The FAQPage schema matches the visible FAQ word for word.
+
+CORRECTIONS.json lists approved fact fixes as {"from", "to"} pairs. Each
+"from" must occur exactly once in SOURCE.md; it is replaced by "to" before
+the word check, so only those sentences may differ from the draft.
 """
 import html
 import json
@@ -72,19 +76,24 @@ def tokens(text):
     return out
 
 
-def source_tokens(path):
+def source_tokens(path, corrections=None):
+    text = open(path, encoding="utf-8").read()
+    for c in json.load(open(corrections, encoding="utf-8")) if corrections else []:
+        if text.count(c["from"]) != 1:
+            sys.exit(f"FAIL correction does not match the draft exactly once: {c['from'][:60]}")
+        text = text.replace(c["from"], c["to"])
     lines = []
-    for line in open(path, encoding="utf-8"):
+    for line in text.splitlines(keepends=True):
         line = re.sub(r"^(Alt text suggestion:|Caption:)\s*", "", line)
         lines.append(line)
     return tokens("".join(lines))
 
 
-def main(src, heads, post):
+def main(src, heads, post, corrections=None):
     page = Extract()
     page.feed(open(post, encoding="utf-8").read())
     have = tokens("".join(page.text))
-    want = source_tokens(src)
+    want = source_tokens(src, corrections)
     fails = 0
 
     i = 0
@@ -135,4 +144,4 @@ def main(src, heads, post):
 
 
 if __name__ == "__main__":
-    sys.exit(main(*sys.argv[1:4]))
+    sys.exit(main(*sys.argv[1:5]))
