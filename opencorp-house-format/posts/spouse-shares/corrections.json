@@ -1,0 +1,174 @@
+[
+ {
+  "from": "2: CRA Interpretation Bulletin IT-419R3 – Definition of Spouse",
+  "to": "2: Income Tax Act s. 248(1) – Definition of Common-Law Partner"
+ },
+ {
+  "from": "6: Income Tax Regulations SOR/86-146 Part I(III)(b) definition CCPC",
+  "to": "6: Income Tax Act s. 125(7) – definition of Canadian-controlled private corporation"
+ },
+ {
+  "from": "8: CRA Guide T4037 Capital Dividends & Eligible Dividends",
+  "to": "8: CRA – Eligible Dividends, Income Tax Act s. 89(1)"
+ },
+ {
+  "from": "9: OBCA s109 - Unanimous Agreement Provisions",
+  "to": "9: OBCA s108 - Unanimous Agreement Provisions"
+ },
+ {
+  "from": "11: Corporate statute issuance authority e.g., CBCA s42(2)",
+  "to": "11: Corporate statute issuance authority e.g., CBCA s25"
+ },
+ {
+  "from": "12: Dividend declaration procedures CBCA s41(2)",
+  "to": "12: Dividend declaration procedures CBCA s42"
+ },
+ {
+  "from": "13: Class Rights alteration OBCA s24(2)(a)",
+  "to": "13: Class Rights alteration OBCA s170"
+ },
+ {
+  "from": "It lists all major shareholders including any new spouse shareholder(s)15. This keeps things transparent and avoids penalties under subsection 237(6).",
+  "to": "It lists every shareholder holding 10% or more of the shares, including any new spouse shareholder(s)15. This keeps things transparent and avoids penalties under subsection 162(7)."
+ },
+ {
+  "from": "CRA wants updates on big changes that affect taxpayer info—like transfers between owner-spouses causing attribution issues under ss 73(1), 56(2). Missing these notifications risks reassessments tied to TOSI from fiscal year 2026.1617",
+  "to": "CRA expects big changes to be reported correctly on the next returns—like transfers between owner-spouses causing attribution issues under ss 73(1), 74.2 and 56(2). Reporting these transfers wrongly risks reassessments under the TOSI rules, which have applied since 2018.1617"
+ },
+ {
+  "from": "Provinces also require annual returns updating directors/shareholders which",
+  "to": "Provinces also require annual returns updating directors and officers, and the share register and minute book"
+ },
+ {
+  "from": "Annual filing listing beneficial owners\tITA Regulation SOR/2000‑96 Sec III",
+  "to": "Annual filing listing shareholders holding 10% or more\tT2 Schedule 50, ITA s. 150"
+ },
+ {
+  "from": "Keep current shareholder list\tOBCA / Provincial equivalents",
+  "to": "Keep current director and officer information\tOBCA / Provincial equivalents"
+ },
+ {
+  "from": "Income Tax Regulations SOR/2000‑96 Part III — Schedule 50 Filing Rules",
+  "to": "CRA T2 Schedule 50 — Shareholder Information"
+ },
+ {
+  "from": "Age 65 Reasonable Return Rule: If either you or your spouse is 65 or older at year-end and receives dividends that match a reasonable return on invested capital without needing active work involvement[^2].",
+  "to": "Age 65 Spousal Rule: If you, the business owner, are 65 or older in the year, dividends your spouse receives are excluded from TOSI to the extent they would have been excluded in your hands, without your spouse needing active work involvement[^2]."
+ },
+ {
+  "from": "Your spouse can qualify if they work at least 20 hours per week most weeks doing real duties connected to an excluded business[^3].",
+  "to": "Your spouse can qualify if they work an average of at least 20 hours per week, during the part of the year the business operates, in the current year or any five earlier years, doing real duties connected to an excluded business[^3]."
+ },
+ {
+  "from": "Age 65 Reasonable Return\tOwner/spouse age ≥ 65\tProof of age\tITA s.120(4)(d), CRA",
+  "to": "Age 65 Spousal Rule\tBusiness owner age ≥ 65\tProof of age\tITA s.120.4(1.1)(c), CRA"
+ },
+ {
+  "from": "Timesheets or role details\tITA s.120(4)(e), CRA",
+  "to": "Timesheets or role details\tITA s.120.4(1) excluded business, CRA"
+ },
+ {
+  "from": "[^2]: Department of Finance Canada Budget 2026",
+  "to": "[^2]: Department of Finance Canada – 2018 TOSI measures"
+ },
+ {
+  "from": "[^3]: CRA Interpretation Bulletin IT-533R5",
+  "to": "[^3]: CRA – Tax on split income (TOSI) guidance"
+ },
+ {
+  "from": "Dividends caught by TOSI get taxed at highest rates federally and provincially with no dividend gross-up or tax credit relief.",
+  "to": "Dividends caught by TOSI get taxed at highest rates federally and provincially, though the dividend gross-up and tax credit still apply."
+ },
+ {
+  "from": "compared to eligible dividends from public firms.",
+  "to": "compared to eligible dividends, which come from income taxed at the general corporate rate."
+ },
+ {
+  "from": "Eligible\t38%\t~15%\t~10%",
+  "to": "Eligible\t38%\t15.0198%\t10%"
+ },
+ {
+  "from": "Non‑Eligible\t15%\t~9%\t~5%",
+  "to": "Non‑Eligible\t15%\t9.0301%\t2.9863%"
+ },
+ {
+  "from": "Transferring shares improperly between spouses without rolling over under section 73(1) loses this benefit.",
+  "to": "Shares transferred to a spouse move at your cost under the automatic section 73(1) rollover, and later gains can be attributed back to you under section 74.2."
+ },
+ {
+  "from": "[^7]: Income Tax Act ss112(1); Small Business Deduction Limits [CRA]",
+  "to": "[^7]: Income Tax Act s125; Small Business Deduction Limits [CRA]"
+ },
+ {
+  "from": "[9] CRA Guide RC4080 – Family Businesses & Attribution Rules",
+  "to": "[9] CRA – Tax on Split Income and Attribution Rules"
+ },
+ {
+  "from": "[10] Department Finance Canada – Budget Measures Impacting Family Businesses [2026]",
+  "to": "[10] Department Finance Canada – Budget Measures Impacting Family Businesses [2018]"
+ },
+ {
+  "from": "Ontario's specific rates.11][12]",
+  "to": "Ontario's specific rates.[11][12]"
+ },
+ {
+  "from": "Transferring shares can cause tax problems unless done using s. 73(1) rollover election. Attribution rules (ss. 74(1)) might apply.",
+  "to": "Transferring shares can cause tax problems unless the automatic s. 73(1) rollover applies. Attribution rules (ss. 74.1 and 74.2) might apply."
+ },
+ {
+  "from": "Separation: Shares usually count as family property subject to equal sharing unless there’s another deal.",
+  "to": "Separation: Shares usually count toward net family property, which is equalized unless there’s another deal."
+ },
+ {
+  "from": "follow new filing rules like Schedule 50 starting in 2026.",
+  "to": "follow filing rules like Schedule 50 every year."
+ },
+ {
+  "from": "Schedule 50 requires listing all shareholders every year without fail.",
+  "to": "Schedule 50 requires listing every shareholder holding 10% or more of the shares every year without fail."
+ },
+ {
+  "from": "This helps with Schedule 50 filings since 2026.",
+  "to": "This helps with Schedule 50 filings each year."
+ },
+ {
+  "from": "Income Tax Act sections cited: ss.73(1), ss74(1–5), s120(4) – CRA official publications",
+  "to": "Income Tax Act sections cited: ss.73(1), ss.74.1–74.5, s.120.4 – CRA official publications"
+ },
+ {
+  "from": "Schedule 50 Filing Requirements – Canada Revenue Agency Notice CG‑027",
+  "to": "Schedule 50 Filing Requirements – Canada Revenue Agency, T2 Corporation Income Tax Guide"
+ },
+ {
+  "from": "Registered office services across all provinces and territories",
+  "to": "Registered office address service in downtown Toronto"
+ },
+ {
+  "from": "Spouses aged 65 or older may receive dividends taxed at normal rates if dividends reflect a reasonable return on invested capital without needing active work.",
+  "to": "Where the business owner is 65 or older, dividends to the spouse are taxed at normal rates if they would have been excluded in the owner's hands, without the spouse needing active work."
+ },
+ {
+  "from": "Open Corporation offers incorporation and share structuring services starting at $35, including minute book preparation and basic legal documents.",
+  "to": "Open Corporation files your incorporation for $35, HST included; minute book preparation and share issuance are separate services, quoted before any work starts."
+ },
+ {
+  "from": "Prepare documentation for Schedule 50 filings to disclose beneficial owners annually.",
+  "to": "Prepare documentation for Schedule 50 filings to disclose shareholders holding 10% or more annually."
+ },
+ {
+  "from": "attribution of income under sections 74(1) ITA",
+  "to": "attribution of income under sections 74.1 and 74.2 ITA"
+ },
+ {
+  "from": "Dividends taxed at top marginal rate ~54% (federal + Ontario combined) due to TOSI.",
+  "to": "Dividends taxed at the top marginal rate for non-eligible dividends, 47.74% (federal + Ontario combined), due to TOSI."
+ },
+ {
+  "from": "Resulting tax payable could exceed $27,000 instead of typical lower rates if active involvement confirmed.",
+  "to": "Resulting tax payable would be $23,870 instead of typical lower rates if active involvement confirmed."
+ },
+ {
+  "from": "Schedule 50\tCRA filing disclosing major shareholders",
+  "to": "Schedule 50\tCRA filing disclosing shareholders holding 10% or more"
+ }
+]

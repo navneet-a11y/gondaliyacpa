@@ -1,0 +1,837 @@
+<style>.gcpa-post{--navy:#0f2a4a;--navy-2:#15355c;--blue:#1c6dd0;--blue-soft:#e8f1fc;--teal:#0c8f8f;--teal-soft:#e3f4f4;--gold:#c9991f;--gold-soft:#fbf3dc;--green:#1f8a4c;--green-soft:#e6f5ec;--red:#c0392b;--red-soft:#fbeae8;--ink:#1d2733;--muted:#5a6b7b;--line:#d8e0e8;--bg:#ffffff;--bg-alt:#f5f8fb;--radius:14px;--shadow:0 6px 22px rgba(15,42,74,.08);--shadow-lg:0 14px 40px rgba(15,42,74,.14);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);line-height:1.7;font-size:17px;max-width:1080px;margin:0 auto;padding:0 18px 60px;} .gcpa-post *{box-sizing:border-box;} .gcpa-hero{background:linear-gradient(135deg,var(--navy) 0%,var(--navy-2) 60%,#1c4a78 100%);color:#fff;border-radius:20px;padding:46px 40px 42px;margin:26px 0 34px;position:relative;overflow:hidden;} .gcpa-hero::after{content:"";position:absolute;right:-80px;top:-80px;width:280px;height:280px;z-index:0;background:radial-gradient(circle,rgba(28,109,208,.45),transparent 70%);} .gcpa-post .gcpa-eyebrow{display:inline-block;font-size:13px;letter-spacing:1.4px;text-transform:uppercase;font-weight:700;color:#cfe2f8 !important;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.3);padding:7px 15px;border-radius:30px;margin-bottom:18px;} .gcpa-post .gcpa-hero h1{font-size:34px;line-height:1.25;margin:0 0 16px;font-weight:800;color:#fff !important;letter-spacing:-.3px;position:relative;z-index:2;} .gcpa-post .gcpa-hero p{font-size:18px;color:#eaf3fc !important;margin:0;max-width:760px;position:relative;z-index:2;} .gcpa-eyebrow{position:relative;z-index:2;} .gcpa-post h2{font-size:27px;font-weight:800;color:var(--navy);line-height:1.3;margin:48px 0 18px;padding-bottom:14px;border-bottom:3px solid var(--blue-soft);letter-spacing:-.2px;position:relative;} .gcpa-post h2::after{content:"";position:absolute;left:0;bottom:-3px;width:70px;height:3px;background:var(--blue);} .gcpa-post h3{font-size:22px;font-weight:800;color:var(--navy-2);margin:40px 0 14px;line-height:1.35;} .gcpa-post h4{font-size:19px;font-weight:700;color:var(--navy-2);margin:36px 0 12px;line-height:1.4;padding-left:16px;border-left:4px solid var(--teal);} .gcpa-post p{margin:0 0 16px;color:#1d2733 !important;} .gcpa-post li{color:#1d2733;} .gcpa-post a{color:var(--blue);text-decoration:none;font-weight:600;} .gcpa-post a:hover{text-decoration:underline;} .gcpa-post ul,.gcpa-post ol{margin:0 0 18px !important;padding-left:0 !important;list-style:none !important;} .gcpa-post ul{list-style-type:none !important;} .gcpa-post ul li{position:relative;padding:8px 0 8px 34px;margin:0;border-bottom:1px solid var(--line);color:var(--ink);list-style:none !important;list-style-type:none !important;} .gcpa-post ul li::marker{content:"" !important;font-size:0 !important;} .gcpa-post ul li:last-child{border-bottom:none;} .gcpa-post ul li::before{content:"";position:absolute;left:6px;top:15px;width:9px;height:9px;border-radius:2px;background:var(--teal);transform:rotate(45deg);} .gcpa-post ol{counter-reset:gcpa;} .gcpa-post ol li{position:relative;padding:10px 0 10px 44px;margin:0 0 10px;counter-increment:gcpa;list-style:none !important;list-style-type:none !important;} .gcpa-post ol li::marker{content:"" !important;font-size:0 !important;} .gcpa-post ol li::before{content:counter(gcpa);position:absolute;left:0;top:9px;width:28px;height:28px;border-radius:8px;background:var(--navy);color:#fff;font-weight:700;font-size:14px;display:flex;align-items:center;justify-content:center;} .gcpa-post .wp-block-table,.gcpa-post figure.wp-block-table{margin:22px 0 26px;overflow-x:auto;} .gcpa-post table{width:100%;border-collapse:collapse;font-size:15.5px;background:#fff;border:1px solid var(--navy);border-radius:10px;overflow:hidden;box-shadow:var(--shadow);} .gcpa-post thead th{background:var(--navy);color:#fff;text-align:left;padding:13px 15px;font-weight:700;font-size:15px;border:1px solid var(--navy-2);} .gcpa-post tbody td{padding:12px 15px;border:1px solid var(--line);vertical-align:top;color:var(--ink);} .gcpa-post tbody tr:nth-child(even){background:var(--bg-alt);} .gcpa-post tbody tr:hover{background:var(--blue-soft);} .gcpa-post tbody td:first-child{font-weight:600;color:var(--navy-2);} .gcpa-metrics{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin:30px 0 36px;clear:both;} .gcpa-metric{background:#fff;border:1px solid var(--line);border-top:4px solid var(--blue);border-radius:var(--radius);padding:22px 18px;box-shadow:var(--shadow);transition:transform .2s,box-shadow .2s;} .gcpa-metric:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg);} .gcpa-metric:nth-child(2){border-top-color:var(--teal);} .gcpa-metric:nth-child(3){border-top-color:var(--gold);} .gcpa-metric:nth-child(4){border-top-color:var(--green);} .gcpa-metric .ic{width:46px;height:46px;border-radius:11px;background:var(--blue-soft);display:flex;align-items:center;justify-content:center;margin-bottom:14px;color:var(--blue);} .gcpa-metric:nth-child(2) .ic{background:var(--teal-soft);color:var(--teal);} .gcpa-metric:nth-child(3) .ic{background:var(--gold-soft);color:var(--gold);} .gcpa-metric:nth-child(4) .ic{background:var(--green-soft);color:var(--green);} .gcpa-metric .big{font-size:22px;font-weight:800;color:var(--navy);line-height:1.2;margin-bottom:4px;} .gcpa-metric .lbl{font-size:14px;color:var(--muted);line-height:1.45;} .gcpa-numhead{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin:46px 0 8px;clear:both;} .gcpa-numhead h4{margin:0 !important;} .gcpa-numhead .gcpa-pill{margin:0 !important;} .gcpa-numhead .num{flex:0 0 auto;width:48px;height:48px;border-radius:12px;background:var(--navy);color:#fff;font-size:22px;font-weight:800;display:flex;align-items:center;justify-content:center;box-shadow:var(--shadow);} .gcpa-callout{border-radius:var(--radius);padding:20px 22px;margin:22px 0;border:1px solid var(--line);background:var(--bg-alt);position:relative;} .gcpa-callout.blue{background:var(--blue-soft);border-color:#bcd9f6;} .gcpa-callout.teal{background:var(--teal-soft);border-color:#b7e3e3;} .gcpa-callout.gold{background:var(--gold-soft);border-color:#ecd79a;} .gcpa-callout.green{background:var(--green-soft);border-color:#b6e2c6;} .gcpa-callout.red{background:var(--red-soft);border-color:#f0c4be;} .gcpa-callout .co-tag{display:inline-block;font-size:12.5px;font-weight:700;letter-spacing:.6px;text-transform:uppercase;padding:4px 11px;border-radius:20px;margin-bottom:10px;color:#fff;} .gcpa-callout.blue .co-tag{background:var(--blue);} .gcpa-callout.teal .co-tag{background:var(--teal);} .gcpa-callout.gold .co-tag{background:var(--gold);} .gcpa-callout.green .co-tag{background:var(--green);} .gcpa-callout.red .co-tag{background:var(--red);} .gcpa-callout p:last-child{margin-bottom:0;} .gcpa-cta{background:linear-gradient(135deg,var(--navy) 0%,#1c4a78 100%);color:#fff;border-radius:18px;padding:34px 32px;margin:38px 0;text-align:center;box-shadow:var(--shadow-lg);position:relative;overflow:hidden;} .gcpa-cta::before{content:"";position:absolute;left:-60px;bottom:-60px;width:220px;height:220px;background:radial-gradient(circle,rgba(12,143,143,.4),transparent 70%);} .gcpa-post .gcpa-cta h4{color:#fff !important;border:none;padding:0;margin:0 0 12px;font-size:22px;font-weight:800;position:relative;z-index:1;} .gcpa-post .gcpa-cta p{color:#eaf3fc !important;max-width:680px;margin:0 auto 22px;position:relative;z-index:1;} .gcpa-post .gcpa-cta .btn{display:inline-block;background:#fff !important;color:var(--navy) !important;font-weight:700;padding:13px 26px;border-radius:30px;margin:6px;font-size:16px;position:relative;z-index:1;transition:transform .15s;text-decoration:none !important;} .gcpa-post .gcpa-cta .btn:hover{transform:translateY(-2px);text-decoration:none !important;} .gcpa-post .gcpa-cta .btn.primary{background:var(--teal) !important;color:#fff !important;} .gcpa-btnrow{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;align-items:center;position:relative;z-index:1;} .gcpa-trust{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-bottom:22px;position:relative;z-index:1;} .gcpa-post .gcpa-trust span{font-size:13px;font-weight:700;background:rgba(255,255,255,.18) !important;border:1px solid rgba(255,255,255,.45);padding:7px 14px;border-radius:20px;color:#ffffff !important;} .gcpa-post svg{display:block;} .gcpa-pill{display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:700;padding:8px 16px;border-radius:30px;margin:10px 0 6px;line-height:1.2;} .gcpa-pill svg{width:16px;height:16px;flex:0 0 auto;} .gcpa-pill.green{background:var(--green-soft);color:var(--green);border:1px solid #b6e2c6;} .gcpa-pill.blue{background:var(--blue-soft);color:var(--blue);border:1px solid #bcd9f6;} .gcpa-pill.teal{background:var(--teal-soft);color:var(--teal);border:1px solid #b7e3e3;} .gcpa-pill.gold{background:var(--gold-soft);color:#9a7416;border:1px solid #ecd79a;} .gcpa-pill.red{background:var(--red-soft);color:var(--red);border:1px solid #f0c4be;} .gcpa-pillhead{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin:38px 0 12px;clear:both;} .gcpa-pillhead h4{margin:0 !important;} .gcpa-pillhead .gcpa-pill{margin:0 !important;} @media(max-width:560px){.gcpa-pillhead{gap:8px;}} .gcpa-toc{background:var(--bg-alt);border:1px solid var(--line);border-left:5px solid var(--blue);border-radius:var(--radius);padding:24px 26px;margin:30px 0 36px;box-shadow:var(--shadow);} .gcpa-toc h5{margin:0 0 14px;font-size:16px;font-weight:800;color:var(--navy);letter-spacing:.4px;text-transform:uppercase;display:flex;align-items:center;gap:9px;} .gcpa-toc h5 svg{width:20px;height:20px;color:var(--blue);} .gcpa-toc ol{counter-reset:toc;margin:0 !important;padding:0 !important;columns:2;column-gap:36px;list-style:none !important;} .gcpa-toc ol li{counter-increment:toc;position:relative;padding:7px 0 7px 30px;margin:0;border-bottom:1px dashed var(--line);break-inside:avoid;list-style:none !important;} .gcpa-toc ol li::before{content:counter(toc);position:absolute;left:0;top:7px;width:21px;height:21px;border-radius:6px;background:var(--blue-soft);color:var(--blue);font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;} .gcpa-toc ol li::marker{content:"" !important;font-size:0 !important;} .gcpa-toc a{color:var(--navy-2);font-weight:600;font-size:15px;} .gcpa-toc a:hover{color:var(--blue);} .gcpa-post [id^="toc-"]{scroll-margin-top:90px;} .gcpa-banner{display:block;background:linear-gradient(135deg,#0d3b66 0%,#0c7a7a 100%);color:#fff;border-radius:16px;padding:30px 32px;margin:36px 0;box-shadow:var(--shadow-lg);} .gcpa-banner .bt{font-size:20px;font-weight:800;line-height:1.45;margin:0 0 20px;max-width:760px;} .gcpa-banner .bb{display:flex;flex-wrap:wrap;gap:14px;align-items:center;} .gcpa-banner a{display:inline-block;background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.6);color:#fff !important;font-weight:700;padding:13px 24px;border-radius:30px;font-size:15px;text-decoration:none !important;} .gcpa-banner a.solid{background:#ffffff !important;color:#0d3b66 !important;border-color:#fff;} .gcpa-disclaimer{background:var(--bg-alt);border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:34px 0 10px;font-size:14.5px;color:var(--muted);line-height:1.6;} .gcpa-disclaimer strong{color:var(--navy-2);} .gcpa-byline{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin:0 0 22px;font-size:15px;} .gcpa-byline .av{width:42px;height:42px;border-radius:50%;background:var(--navy);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:16px;flex:0 0 auto;} .gcpa-byline .nm{font-weight:700;color:var(--navy-2);} .gcpa-byline .rl{color:var(--teal);font-weight:700;} .gcpa-byline .sep{color:var(--line);} .gcpa-author{display:flex;gap:18px;align-items:flex-start;background:var(--bg-alt);border:1px solid var(--line);border-left:5px solid var(--teal);border-radius:14px;padding:24px 26px;margin:34px 0 40px;} .gcpa-author .ava{width:64px;height:64px;border-radius:50%;background:linear-gradient(135deg,var(--navy),var(--teal));color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:22px;flex:0 0 auto;} .gcpa-author .info h5{margin:0 0 6px;font-size:17px;font-weight:800;color:var(--navy);line-height:1.4;} .gcpa-author .info .role{font-size:14px;color:var(--teal);font-weight:700;margin:0 0 12px;} .gcpa-author .info p{font-size:14.5px;color:var(--muted) !important;margin:0;line-height:1.65;} .gcpa-faq{margin:18px 0 26px;border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:var(--shadow);} .gcpa-faq details{border-bottom:1px solid var(--line);background:#fff;} .gcpa-faq details:last-child{border-bottom:none;} .gcpa-faq summary{list-style:none;cursor:pointer;padding:18px 22px;font-weight:700;color:var(--navy-2);font-size:16px;display:flex;justify-content:space-between;align-items:center;gap:14px;transition:background .15s;} .gcpa-faq summary::-webkit-details-marker{display:none;} .gcpa-faq summary:hover{background:var(--bg-alt);} .gcpa-faq summary .pl{flex:0 0 auto;width:24px;height:24px;border-radius:50%;background:var(--blue-soft);color:var(--blue);display:flex;align-items:center;justify-content:center;font-size:18px;font-weight:700;transition:transform .2s;} .gcpa-faq details[open] summary{background:var(--bg-alt);color:var(--navy);} .gcpa-faq details[open] summary .pl{transform:rotate(45deg);background:var(--blue);color:#fff;} .gcpa-faq .ans{padding:0 22px 20px;color:#1d2733;font-size:15.5px;line-height:1.7;} .gcpa-img-right{float:right;max-width:250px;width:32%;margin:6px 0 24px 28px;border-radius:12px;box-shadow:var(--shadow-lg);border:1px solid var(--line);} .gcpa-img-right img{display:block;width:100%;height:auto;border-radius:12px;} @media(max-width:560px){.gcpa-img-right{float:none;width:70%;max-width:260px;margin:14px auto 18px;}} .gcpa-closing{font-size:24px;font-weight:800;color:var(--navy);margin:48px 0 14px;padding-bottom:12px;border-bottom:3px solid var(--teal-soft);position:relative;} .gcpa-closing::after{content:"";position:absolute;left:0;bottom:-3px;width:70px;height:3px;background:var(--teal);} @media(max-width:560px){.gcpa-post{font-size:16px;} .gcpa-hero{padding:32px 22px;} .gcpa-hero h1{font-size:26px;} .gcpa-post h2{font-size:23px;} .gcpa-cta{padding:26px 20px;} .gcpa-banner .bb{width:100%;} .gcpa-banner .bb a{flex:1 1 auto;text-align:center;}}</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"Open Corporation for $35","alternateName":"Open Corporation For $35","url":"https://opencorporationfor35.ca/","description":"Open Corporation for $35 is a department of Gondaliya CPA.","parentOrganization":{"@type":"Organization","name":"Gondaliya CPA Professional Corporation","url":"https://gondaliyacpa.ca","identifier":"CPA Ontario Firm Registration 61330051"},"legalName":"WealthBamboo Inc.","telephone":"+1-647-212-9559","email":"info@gondaliyacpa.ca","areaServed":"CA","openingHours":"Mo-Su 09:00-20:30","award":"Xero Partner Award Winner 2026","aggregateRating":{"@type":"AggregateRating","ratingValue":"5","reviewCount":"1300"}}
+</script>
+<div class="gcpa-post">
+<div class="gcpa-hero" style="background:linear-gradient(135deg,#0f2a4a 0%,#15355c 60%,#1c4a78 100%) !important;">
+<span class="gcpa-eyebrow">Spouse Shares · TOSI · Attribution · Share Classes · 2026</span>
+<h1 style="color:#ffffff !important;position:relative;z-index:2;font-size:34px;line-height:1.25;font-weight:800;margin:0 0 14px;">Can My Spouse Own Shares in My Corporation in Canada? Tax Rules and Considerations</h1>
+<div class="gcpa-hero-sub" style="margin:0 0 18px;"><span style="color:#eaf3fc !important;font-size:18px;line-height:1.6;display:block;max-width:840px;position:relative;z-index:2;">Owning shares is allowed. Whether it saves tax depends on the TOSI exclusions, the attribution rules and the share class you choose</span></div>
+<div style="position:relative;z-index:2;font-size:15px;line-height:1.5;"><span style="color:#ffffff;font-weight:bold;">By Sharad Gondaliya, CPA</span><span style="color:#9fd0d0;font-weight:bold;">  |  <a href="https://opencorporationfor35.ca/">Open Corporation For $35</a> and <a href="https://opencorporationfor35.ca/address-service-100/">Address Service</a></span></div>
+<div style="position:relative;z-index:2;font-size:14.5px;line-height:1.5;margin-top:12px;"><span style="color:#cfe2f8 !important;font-weight:600;">Open Corporation for $35 is a department of Gondaliya CPA.</span></div>
+</div>
+<h2>Spouse Owning Shares in Corporation Canada: Can My Spouse Own Shares in My Corporation with Open Corporation?</h2>
+<p><strong>Open Corporation for $35 is a department of Gondaliya CPA.</strong> TLDR: Spouse owning shares in corporation Canada is common and allowed, making it possible for your spouse to be a shareholder in your business. Open Corporation for $35 helps you easily <a href="https://opencorporationfor35.ca/guides/share-structure-explained/">set up share structures</a> that include spouse shares in Canadian corporations without complications.</p>
+<h3 id="toc-summary" style="margin-top:38px;">Quick Summary</h3>
+<p>A spouse can own shares in most private corporations. The tax result is a separate question: dividends to a spouse are taxed at the top rate under the TOSI rules unless an exclusion applies, and shares paid for with your money can send income back to you.</p>
+<figure class="wp-block-table">
+<table>
+<thead><tr><th>Aspect</th><th>Details</th></tr></thead>
+<tbody>
+<tr><td>Can a spouse own shares</td><td>Yes, in most private corporations. Professional corporations have limits.</td></tr>
+<tr><td>Common-law partner</td><td>Counts as a spouse after 12 months of living together, or sooner with a child.</td></tr>
+<tr><td>Dividends to a spouse</td><td>Taxed at the top rate under TOSI unless an exclusion applies.</td></tr>
+<tr><td>Main exclusions</td><td>Spouse works an average of 20 hours a week in the business, or the business owner is 65 or older.</td></tr>
+<tr><td>Transfers between spouses</td><td>Automatic rollover at cost; attribution can send income and gains back to you.</td></tr>
+<tr><td>Reporting</td><td><a href="https://opencorporationfor35.ca/guides/first-t2-return/">Schedule 50 lists shareholders holding 10% or more</a>; the minute book and share register are updated.</td></tr>
+</tbody>
+</table>
+</figure>
+<div class="gcpa-author">
+<div class="ava" style="background:linear-gradient(135deg,#0f2a4a,#0c8f8f) !important;color:#ffffff !important;">SG</div>
+<div class="info">
+<h5>Author: Sharad Gondaliya, CPA (Canada &amp; USA) — Founder &amp; Managing Director, Gondaliya CPA Professional Corporation, Toronto, Ontario.</h5>
+<div class="role">Reviewed and fact-checked by Sharad Gondaliya, CPA (Canada &amp; USA)</div>
+<p style="font-size:14.5px;color:#15355c !important;font-weight:700;margin:0 0 8px;">Open Corporation for $35 is a department of Gondaliya CPA.</p>
+<p>Gondaliya CPA is a Toronto-based team providing incorporation, CRA registrations, corporate tax, bookkeeping, GST/HST, and payroll for Canadian corporations. Verify our firm on the <a href="https://www.cpaontario.ca/protecting-the-public/directories/firm/gondaliya-5sqvmj">CPA Ontario public firm directory</a>, firm registration 61330051.</p>
+<p style="font-size:13.5px;color:#15355c !important;font-weight:700;margin-top:10px;">CPA Ontario | CPA USA (Washington &amp; Montana) | Xero Partner Award Winner 2026 | 1300+ 5-star Google reviews</p>
+</div>
+</div>
+<p style="font-size:14px;color:#5a6b7b;margin:-26px 0 26px;">Reading time: 35 minutes.</p>
+<div class="gcpa-toc">
+<h5>Table of Contents</h5>
+<ol>
+<li><a href="#toc-overview">Spouse as a Shareholder: Overview</a></li>
+<li><a href="#toc-laws">Laws Governing Spouse Shareholders</a></li>
+<li><a href="#toc-tosi">TOSI and Spouse Shareholders</a></li>
+<li><a href="#toc-structures">Designing Share Structures</a></li>
+<li><a href="#toc-evaluate">Pros, Cons and Compliance</a></li>
+<li><a href="#toc-takeaways">Key Takeaways and Next Steps</a></li>
+<li><a href="#toc-faq">Frequently Asked Questions</a></li>
+<li><a href="#toc-considerations">Key Considerations and Quick Reference</a></li>
+</ol>
+</div>
+<span class="gcpa-pill green">The Numbers That Matter</span>
+<div class="gcpa-metrics">
+<div class="gcpa-metric">
+<div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></div>
+<div class="big">12 months</div>
+<div class="lbl">Living together for a common-law partner</div>
+</div>
+<div class="gcpa-metric">
+<div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+<div class="big">20 hours</div>
+<div class="lbl">Average weekly work for the TOSI labour exclusion</div>
+</div>
+<div class="gcpa-metric">
+<div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="M19 9l-5 5-4-4-3 3"/></svg></div>
+<div class="big">47.74%</div>
+<div class="lbl">Top Ontario rate on non-eligible dividends</div>
+</div>
+<div class="gcpa-metric">
+<div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+<div class="big">65</div>
+<div class="lbl">Business owner's age for the spousal exclusion</div>
+</div>
+<div class="gcpa-metric">
+<div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
+<div class="big">$35</div>
+<div class="lbl">Our incorporation fee, including HST</div>
+</div>
+</div>
+<div class="gcpa-callout blue">
+<span class="co-tag">Scope &amp; Assumptions</span>
+<p>This article uses federal tax rules and Ontario rates and corporate law for 2026, in Canadian dollars. Dividend tax rates, the TOSI exclusions and professional corporation rules change, and the right structure depends on your family's facts. This is educational information only and not tax, legal, or financial advice. Please speak with a CPA, and a family lawyer where needed, before issuing shares to a spouse.</p>
+</div>
+
+<h2>Spouse as a Shareholder in a Canadian Corporation: Overview and Importance</h2>
+<div class="gcpa-numhead">
+<div class="num" style="background:#0f2a4a !important;color:#ffffff !important;">1</div>
+<h4 id="toc-overview" style="border:none;padding:0;margin:0;">Spouse as a Shareholder: Overview</h4>
+<span class="gcpa-pill blue">The Basics</span>
+</div>
+<p>In Canada, many business owners ask if their spouse can own shares in their corporation. This question matters a lot. Spouses owning shares can change tax planning and family roles in the business. Knowing how it works helps you <a href="https://opencorporationfor35.ca/guides/what-happens-after-you-incorporate/">run your company better</a>.</p>
+<h3>Understanding why spouses become shareholders and the benefits for family businesses</h3>
+<p>Spouses often get shares to take part in family businesses. Sharing ownership helps with <a href="https://opencorporationfor35.ca/guides/tax-on-split-income/">income splitting through dividends</a>. This can reduce the family's overall taxes. When both partners hold shares, they share financial risks and rewards.</p>
+<div class="gcpa-callout red">
+<span class="co-tag">Risk Warning</span>
+<p><strong>Risk Warning:</strong> Giving your spouse shares does not by itself split income. Please do not pay dividends to a spouse before checking the TOSI exclusions.</p>
+</div>
+<p>Think about one partner running a small business while the other manages home duties. Giving shares to the spouse acknowledges their support. It also encourages teamwork and shared goals.</p>
+<h3>Understanding Who Can Be a Shareholder in Your Corporation</h3>
+<p>In Canada, spouses can hold shares in privately held companies. But some rules apply depending on the type of corporation:</p>
+<ul>
+<li>Canadian-Controlled Private Corporations (CCPCs) have specific shareholder rules.</li>
+<li><a href="https://opencorporationfor35.ca/professional-corporation-incorporation/">Professional Corporations face extra shareholding limits</a> set by their governing bodies.</li>
+</ul>
+<p>Knowing these details helps keep your company legal and lets you use spousal share ownership wisely.</p>
+<h3>Defining Spouse Shareholder and Family Member in Canadian Corporate Law</h3>
+<p>Canadian law defines who counts as a spouse or family member for tax reasons:</p>
+<ul>
+<li>A spouse means someone you’re legally married to or living with as common-law for at least 12 months.</li>
+<li>The 12-Month Common-Law Cohabitation Rule applies when partners live together continuously that long.</li>
+<li>Tax laws may also look at other factors, like having children together.</li>
+</ul>
+<p>These rules affect taxes on dividends and <a href="https://opencorporationfor35.ca/share-issuance-transfer/">selling shares between spouses</a>.</p>
+<div class="gcpa-callout blue">
+<span class="co-tag">Worth Knowing</span>
+<p>For tax, a common-law partner is someone you have lived with in a conjugal relationship for at least 12 continuous months, or the parent of your child who lives with you. A separation of less than 90 days does not break the 12 months.</p>
+</div>
+<h3>Types of Shares: Voting Shares vs Non-Voting Shares for Spouses</h3>
+<p>Choosing the right shares for spouses matters. Here’s a simple comparison:</p>
+<figure class="wp-block-table">
+<table>
+<thead><tr><th>Type</th><th>Description</th><th>Control Effects</th></tr></thead>
+<tbody>
+<tr><td>Voting Shares</td><td>Let holders vote on company issues</td><td>Gives more say in decisions</td></tr>
+<tr><td>Non-Voting Shares</td><td>No voting rights</td><td>Limits influence; good for passive owners</td></tr>
+</tbody>
+</table>
+</figure>
+<p>The type of share changes <a href="https://opencorporationfor35.ca/guides/articles-of-incorporation-explained/">who controls the company</a>. Pick what fits your goals best — control or investment.</p>
+<h3>Basic Rights and Responsibilities of Shareholders</h3>
+<p>Shareholders have basic rights like:</p>
+<ul>
+<li>Getting dividends based on how many shares they own</li>
+<li><a href="https://opencorporationfor35.ca/guides/minute-book-requirements/">Joining votes on big company choices</a></li>
+</ul>
+<p>But some share classes limit these rights:</p>
+<ul>
+<li>Families sometimes give non-voting shares to less active members, such as spouses not involved day-to-day.</li>
+</ul>
+<p>Using different share classes helps families keep control where needed. It also lowers chances of fights about who runs the business.</p>
+
+<h2>Applicable Laws Governing Spouse Shareholders in Canada</h2>
+<div class="gcpa-numhead">
+<div class="num" style="background:#0f2a4a !important;color:#ffffff !important;">2</div>
+<h4 id="toc-laws" style="border:none;padding:0;margin:0;">Laws Governing Spouse Shareholders</h4>
+<span class="gcpa-pill teal">The Law</span>
+</div>
+<p>When a spouse owns shares in a corporation Canada, several laws come into play. The main rules come from federal and provincial corporate and tax laws. For example, the Canada Business Corporations Act (CBCA) or the <a href="https://opencorporationfor35.ca/how-to-incorporate-in-ontario/">Ontario Business Corporations Act (OBCA)</a> set out who can own shares, what rights they have, and what must be reported.</p>
+<p>On the tax side, the Income Tax Act (ITA) controls how dividends paid to a spouse shareholder corporation Canada get taxed. This includes attribution rules under sections 74.1 to 74.5 and the Tax on Split Income (TOSI) rules under section 120.4 ITA<sup>1</sup>. Just owning shares does not mean the taxes will be simple or favorable.</p>
+<p>Also, common-law partners who live together for at least 12 months or have a child together count as spouses for shareholding purposes<sup>2</sup>. Family law affects ownership rights but does not change federal corporate or income tax laws.</p>
+<p>Here’s what you need to keep in mind:</p>
+<ul>
+<li>Corporate law governs share ownership rules</li>
+<li>Tax law sets how dividends are taxed for spouses</li>
+<li>Common-law partners usually qualify too</li>
+<li>Family law impacts ownership but not tax or corporate rules</li>
+</ul>
+<p>Knowing these laws helps owner-managers decide if their spouse can own shares while understanding tax and compliance needs.</p>
+<div class="gcpa-disclaimer">
+<p>1: Income Tax Act RSC 1985 c 1 (5th Supp), ss. 74.1–74.5, s.120.4</p>
+<p>2: Income Tax Act s. 248(1) – Definition of Common-Law Partner</p>
+</div>
+<h3>Restrictions and Eligibility for Spouse Ownership in Professional Corporations</h3>
+<p>Professional corporations have tighter rules for spousal share ownership. This is because regulatory bodies oversee these businesses under acts like Ontario’s Regulated Health Professions Act (RHPA)<sup>3</sup>. Only licensed professionals in fields like medicine, law, or accounting can hold voting shares here.</p>
+<p>The professional corporation share ownership rules usually block non-professionals from holding voting or controlling shares—this includes spouses without proper credentials<sup>4</sup>. This keeps control with qualified professionals who must follow ethical standards.</p>
+<p>Sometimes, spouses may own non-voting or limited classes of shares if both the corporate documents and professional regulations allow it<sup>5</sup>. But this changes depending on the profession and province.</p>
+<div class="gcpa-callout blue">
+<span class="co-tag">Worth Knowing</span>
+<p>In Ontario, physicians and dentists may have family members, including a spouse, hold non-voting shares of their professional corporation. Law and accounting professional corporations generally may not issue shares to anyone who is not a licensee.</p>
+</div>
+<p>If you want your spouse to be a <a href="https://opencorporationfor35.ca/guides/professional-corporations-ontario/">shareholder in a professional corporation</a>, talk to an expert CPA who knows these restrictions well. Otherwise, you risk breaking licensing rules that can affect your business.</p>
+<div class="gcpa-callout red">
+<span class="co-tag">Risk Warning</span>
+<p><strong>Risk Warning:</strong> A professional corporation that issues shares to someone the rules do not allow can lose its certificate of authorization. Please do not issue shares to a spouse before confirming the class is permitted for your profession.</p>
+</div>
+<p>Key points:</p>
+<ul>
+<li>Only licensed professionals can usually hold voting shares</li>
+<li>Non-professional spouses often cannot hold control</li>
+<li>Some professions allow non-voting shares for spouses</li>
+<li>Rules vary widely by field and location</li>
+</ul>
+<div class="gcpa-disclaimer">
+<p>3: Regulated Health Professions Act SO 1991 c18</p>
+<p>4: College of Physicians &amp; Surgeons of Ontario – Professional Corporation Guidelines</p>
+<p>5: Law Society of Ontario – Rules on Professional Corporation Ownership</p>
+</div>
+<h3>The Impact of Incorporation Type on Spouse Shareholding</h3>
+<p>The kind of corporation you form affects whether your spouse can own shares and how much control they have.</p>
+<ul>
+<li><strong>Private Canadian-Controlled Corporations (CCPCs):</strong> These are common for family businesses. Spouses often own shares freely here without special limits beyond normal corporate rules.<sup>6</sup> CCPC status offers tax benefits but watch out for TOSI risks when adding shareholders.</li>
+<li><strong>Professional Corporations:</strong> As said before, these limit spouse ownership based on specific professional laws.<sup>7</sup></li>
+</ul>
+<p>Whether you <a href="https://opencorporationfor35.ca/guides/how-to-incorporate-in-canada/">incorporate federally or provincially</a> changes some processes but doesn't affect core eligibility for spouse shareholders.</p>
+<p>Keep in mind:</p>
+<ul>
+<li>CCPCs allow more freedom in spouse ownership</li>
+<li>Professional corporations restrict spousal involvement strongly</li>
+<li>CCPC status affects dividend types—eligible vs non-eligible</li>
+<li>Federal vs provincial incorporation matters more for filings than share rules</li>
+</ul>
+<p>Choose your incorporation type carefully since it shapes control rights and tax plans around income splitting with spouses in Canada.</p>
+<div class="gcpa-disclaimer">
+<p>6: Income Tax Act s. 125(7) – definition of Canadian-controlled private corporation</p>
+<p>7: See previous section references [Regulated Health Professions Acts]</p>
+<p>8: CRA – Eligible Dividends, Income Tax Act s. 89(1)</p>
+</div>
+<h3>Role of Unanimous Shareholder Agreements and Shareholder Resolutions</h3>
+<p>Unanimous shareholder agreements (USAs) matter when spouses hold shares in family corporations. They set clear decision-making rules that go beyond basic law.<sup>9</sup> USAs explain how voting power works between owners including spouses—important if there’s a separation or conflict.<sup>10</sup></p>
+<p>Shareholder resolutions officially record decisions like:</p>
+<ul>
+<li>Issuing new shares to a spouse shareholder corporation Canada,<sup>11</sup></li>
+<li>Approving dividend payments,<sup>12</sup></li>
+<li>Changing class rights affecting spouses’ entitlements.<sup>13</sup></li>
+</ul>
+<p>These help manage things like:</p>
+<ul>
+<li>Who has what voting power</li>
+<li>How dividends get decided fairly</li>
+<li>Limits on transferring shares during family splits</li>
+</ul>
+<p>You should get <a href="https://opencorporationfor35.ca/guides/shareholder-agreement-what-a-cpa-checks/">legal advice to draft USAs</a> that fit family needs and address taxes like TOSI exclusions linked to documented roles.<sup>14</sup></p>
+<p>Also, good resolutions keep records straight for Schedule 50 filings showing current beneficial owners per CRA rules below.</p>
+<p><strong>Summary:</strong></p>
+<ul>
+<li>USAs define voting and control among shareholders including spouses</li>
+<li>Resolutions handle share issues, dividends, class rights changes</li>
+<li>They protect against problems during marital breakdowns</li>
+<li>Proper docs aid TOSI compliance and CRA reporting</li>
+</ul>
+<div class="gcpa-disclaimer">
+<p>9: OBCA s108 - Unanimous Agreement Provisions</p>
+<p>10: Family Law Act RSO 1990 c F3 context only — no legal advice provided here</p>
+<p>11: Corporate statute issuance authority e.g., CBCA s25</p>
+<p>12: Dividend declaration procedures CBCA s42</p>
+<p>13: Class Rights alteration OBCA s170</p>
+<p>14: ITA Section120.4 Exclusion Evidence Requirements</p>
+</div>
+<h3>Compliance Requirements: Reporting Shareholder Changes and Notification Obligations</h3>
+<p>When spouses become shareholders or change their stake, corporations must <a href="https://opencorporationfor35.ca/guides/corporate-annual-return/">report these changes quickly</a> following federal and provincial rules:</p>
+<div class="gcpa-pillhead"><h4 style="border:none;padding:0;margin:0;">Schedule 50 Filing Requirements</h4><span class="gcpa-pill blue">T2 Return</span></div>
+<p>Each year companies file Schedule 50 with their <a href="https://opencorporationfor35.ca/corporate-tax-filing-from-300/">T2 return</a>. It lists every shareholder holding 10% or more of the shares, including any new spouse shareholder(s)<sup>15</sup>. This keeps things transparent and avoids penalties under subsection 162(7).</p>
+<div class="gcpa-pillhead"><h4 style="border:none;padding:0;margin:0;">Other Reporting Obligations</h4><span class="gcpa-pill teal">Registers</span></div>
+<p>CRA expects big changes to be reported correctly on the next returns—like transfers between owner-spouses causing attribution issues under ss 73(1), 74.2 and 56(2). Reporting these transfers wrongly risks reassessments under the TOSI rules, which have applied since 2018.<sup>16</sup><sup>17</sup></p>
+<p>Provinces also require annual returns updating directors and officers, and the share register and minute book should reflect any spousal additions/removals promptly<sup>18</sup>.</p>
+<p>Keeping minute books updated with resolutions about share issues/transfers helps defend against audits<sup>19</sup>.</p>
+<div class="gcpa-callout red">
+<span class="co-tag">Risk Warning</span>
+<p><strong>Risk Warning:</strong> Shares issued without a directors' resolution and a register entry are open to challenge. Please do not issue shares to a spouse informally.</p>
+</div>
+<p>Open Corporation for $35 helps clients meet these filing duties across Canada including Toronto offices serving all provinces.</p>
+<p>Quick compliance checklist:</p>
+<figure class="wp-block-table">
+<table>
+<thead><tr><th>Compliance Aspect</th><th>Requirement</th><th>Authority / Reference</th></tr></thead>
+<tbody>
+<tr><td>Schedule 50 Disclosure</td><td>Annual filing listing shareholders holding 10% or more</td><td>T2 Schedule 50, ITA s. 150</td></tr>
+<tr><td>Corporate Annual Return Update</td><td>Keep current director and officer information</td><td>OBCA / Provincial equivalents</td></tr>
+<tr><td>Minute Book Documentation</td><td>Record all shareholder-related resolutions</td><td>CBCA / OBCA</td></tr>
+<tr><td>Notification Timing</td><td>Update promptly after share transfer/addition</td><td>CRA Guidance &amp; ITA Sections</td></tr>
+</tbody>
+</table>
+</figure>
+<div class="gcpa-disclaimer">
+<p><strong>References:</strong></p>
+<p>CRA T2 Schedule 50 — Shareholder Information</p>
+<p>ITA ss73(1), ss56(2); Attribution Rules Overview - CRA Interpretive Bulletins</p>
+<p>Department Finance Budget Measures Update January 2026</p>
+<p>Ministry Finance Ontario e-Laws - Corporate Filings Procedures</p>
+<p>CBCA Best Practices Manual - Minute Books</p>
+</div>
+<div class="gcpa-banner" style="background:linear-gradient(135deg,#0d3b66 0%,#0c7a7a 100%) !important;">
+<div class="bt">Thinking about adding your spouse as a shareholder? Please book a free consultation and we will check the TOSI exclusions with you first.</div>
+<div class="bb"><a class="solid" href="https://gondaliyacpa.ca/consultation/">Book Free Consultation</a><a href="mailto:info@gondaliyacpa.ca">info@gondaliyacpa.ca</a><a href="tel:+16472129559">647-212-9559</a></div>
+</div>
+
+<h2>Understanding Tax on Split Income (TOSI) Rules Affecting Spouse Shareholders</h2>
+<div class="gcpa-numhead">
+<div class="num" style="background:#0f2a4a !important;color:#ffffff !important;">3</div>
+<h4 id="toc-tosi" style="border:none;padding:0;margin:0;">TOSI and Spouse Shareholders</h4>
+<span class="gcpa-pill gold">TOSI</span>
+</div>
+<p>In Canada, the Tax on Split Income (TOSI) rules apply when a spouse owns shares in a corporation. These rules kick in to stop people from shifting income to family members who pay less tax. So, if your spouse is owning shares in corporation Canada, TOSI could affect the dividends they get.</p>
+<p>Even if your spouse holds voting or non-voting shares, the CRA can tax dividends at the top marginal rate under section 120.4 of the Income Tax Act. It’s not just about owning shares; it’s about who really benefits from them.</p>
+<div class="gcpa-callout red">
+<span class="co-tag">Risk Warning</span>
+<p><strong>Risk Warning:</strong> A dividend caught by TOSI is taxed at the top rate from the first dollar. Please do not rely on your spouse's low income to keep the rate down.</p>
+</div>
+<p>You might wonder, "Can my spouse own shares in my corporation?" The answer is yes. But watch out—dividend payments can lead to high taxes unless some exceptions apply. Having spouse shares in Canadian corporation needs good planning because TOSI and attribution rules may override the tax benefits you'd expect.</p>
+<p>The CRA looks closely at things like how involved your spouse is in the business, what kind of shares they hold, and where the money to buy those shares came from. Before adding your spouse as a shareholder, it’s smart to get <a href="https://opencorporationfor35.ca/services/">advice from a CPA specialist</a>.</p>
+<div class="gcpa-disclaimer">
+<p><sup>1</sup> CRA ITA s. 120.4; https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/corporations/income-splitting.html</p>
+</div>
+<h3>TOSI Exemptions Relevant to Spouse Shareholders, Including Age and Labour Tests</h3>
+<p>Some exemptions help spouses avoid paying top tax rates on dividends under TOSI rules:</p>
+<ul>
+<li><strong>Age 65 Spousal Rule:</strong> If you, the business owner, are 65 or older in the year, dividends your spouse receives are excluded from TOSI to the extent they would have been excluded in your hands, without your spouse needing active work involvement<sup>2</sup>.</li>
+<li><strong>Labour Test / Reasonable Return:</strong> Your spouse can qualify if they work an average of at least 20 hours per week, during the part of the year the business operates, in the current year or any five earlier years, doing real duties connected to an excluded business<sup>3</sup>.</li>
+<li><strong>12-Month Common-Law Cohabitation Rule:</strong> If common-law partners have lived together continuously for 12 months before getting dividends, they get treated like married spouses for spousal attribution<sup>4</sup>.</li>
+</ul>
+<p>You need proof like timesheets showing hours worked or documents proving dividends reflect fair returns—not just ways to dodge taxes.</p>
+<figure class="wp-block-table">
+<table>
+<thead><tr><th>Exemption</th><th>Key Requirement</th><th>Evidence Needed</th><th>Reference</th></tr></thead>
+<tbody>
+<tr><td>Age 65 Spousal Rule</td><td>Business owner age ≥ 65</td><td>Proof of age</td><td>ITA s.120.4(1.1)(c), CRA</td></tr>
+<tr><td>Labour Test</td><td>Work ≥20 hrs/week</td><td>Timesheets or role details</td><td>ITA s.120.4(1) excluded business, CRA</td></tr>
+<tr><td>Common-Law Cohabitation</td><td>Cohabitation ≥12 months continuously</td><td>Joint lease or similar proof</td><td>ITA s.248(1), CRA</td></tr>
+</tbody>
+</table>
+</figure>
+<p>If these conditions aren’t met, TOSI applies fully and your spouse pays top taxes on dividends from their shares.</p>
+<div class="gcpa-disclaimer">
+<p><sup>2</sup> Department of Finance Canada – 2018 TOSI measures</p>
+<p><sup>3</sup> CRA – Tax on split income (TOSI) guidance</p>
+<p><sup>4</sup> Income Tax Act ss.248(1); https://laws-lois.justice.gc.ca/eng/acts/I-3/</p>
+</div>
+<h3>Dividend Payments to Spouses: Tax Implications and Planning Strategies</h3>
+<p>Dividends paid to spouses affect their personal taxes—especially under TOSI:</p>
+<ul>
+<li>Dividends caught by TOSI get taxed at highest rates federally and provincially, though the dividend gross-up and tax credit still apply.</li>
+<li>Private Canadian-Controlled Private Corporations (CCPCs) usually pay non-eligible dividends. These have lower gross-ups but smaller tax credits compared to eligible dividends, which come from income taxed at the general corporate rate.</li>
+</ul>
+<p>In Ontario (2026):</p>
+<figure class="wp-block-table">
+<table>
+<thead><tr><th>Dividend Type</th><th>Gross-Up %</th><th>Federal Credit %</th><th>Ontario Credit %</th></tr></thead>
+<tbody>
+<tr><td>Eligible</td><td>38%</td><td>15.0198%</td><td>10%</td></tr>
+<tr><td>Non‑Eligible</td><td>15%</td><td>9.0301%</td><td>2.9863%</td></tr>
+</tbody>
+</table>
+</figure>
+<div class="gcpa-callout teal">
+<span class="co-tag">Key Stat</span>
+<p><strong>Key Stat:</strong> The credits in the table are percentages of the grossed-up dividend. In Ontario, the top combined federal and provincial rate is 47.74% on non-eligible dividends and 39.34% on eligible dividends.</p>
+</div>
+<p>If dividends go just because someone owns shares—without labour tests being met—TOSI will treat those payments as split income taxed fully.<sup>5</sup></p>
+<p>Planning means making sure dividend payouts fit into allowed exceptions like reasonable return tests. You can’t rely just on having your spouse as a shareholder for tax savings. Each case needs careful review since laws and attribution rules change often.<sup>6</sup></p>
+<p><strong>Note:</strong> <a href="https://opencorporationfor35.ca/guides/salary-vs-dividends/">Paying salary instead</a> might create RRSP room and CPP contributions but requires payroll compliance versus simpler dividend payments.[See Salary vs Dividends section.]</p>
+<div class="gcpa-disclaimer">
+<p><sup>5</sup> Ontario Ministry Finance Personal Rates &amp; Credits Table [2026]</p>
+<p><sup>6</sup> Open Corporation for $35 consultation recommended</p>
+</div>
+<h3>Corporate Tax Considerations When Issuing Shares to a Spouse</h3>
+<p>Issuing shares to your spouse brings some important Canadian tax points:</p>
+<ul>
+<li><strong><a href="https://opencorporationfor35.ca/guides/lifetime-capital-gains-exemption/">Lifetime Capital Gains Exemption (LCGE)</a>:</strong> This exemption works only when you sell qualified small business corporation shares personally. Shares transferred to a spouse move at your cost under the automatic section 73(1) rollover, and later gains can be attributed back to you under section 74.2.</li>
+<li><strong>Small Business Limit &amp; CCPC Status:</strong> If spouses control the corporation together, it remains a Canadian-Controlled Private Corporation eligible for small business deductions—unless associated corporations’ rules bundle incomes past limits.<sup>7</sup></li>
+<li><strong>Associated Corporations Rules:</strong> Related owners including spouses may cause different companies within one family to be treated as linked corporations for deduction eligibility.<sup>8</sup></li>
+</ul>
+<p>Think about how new share classes or voting rights affect control and possible LCGE eligibility later on. Bad structuring can cost you valuable exemptions.</p>
+<div class="gcpa-callout red">
+<span class="co-tag">Risk Warning</span>
+<p><strong>Risk Warning:</strong> Paying for your spouse's shares with your own money can send the income and gains back to you for tax. Please do not fund the subscription before planning how it will be paid for.</p>
+</div>
+<p>Get advice from CPAs who know family shareholdings well so you stay legal and keep max benefits under federal and provincial laws including Ontario specifics.</p>
+<div class="gcpa-disclaimer">
+<p><sup>7</sup> Income Tax Act s125; Small Business Deduction Limits [CRA]</p>
+<p><sup>8</sup> Associated Corporations Definition - ITA ss256; https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/t4012/t4012-corporation-incomes-tax-guide.html#P230_13996</p>
+</div>
+<h3>Income Splitting Opportunities and Limitations Through Spouse Share Ownership</h3>
+<p>Income splitting depends mostly on whether your spouse actively helps run the business or fits other legal exclusions:</p>
+<p>If your spouse works over twenty hours weekly doing real tasks linked to the business, paying them dividends can be seen as fair compensation. This may lower household taxes based on combined brackets.<sup>9</sup></p>
+<p>But,</p>
+<p>If they don’t work much or no exclusion fits, most dividends will be hit with top-rate TOSI tax. This kills usual income splitting benefits many expect just by giving shares to their partner.<sup>10</sup></p>
+<p>So when asking "can my spouse own shares in my corporation," remember it’s not simple ownership but active roles and timing that matter most.</p>
+<p>You’ll need proof of work done, <a href="https://opencorporationfor35.ca/incorporation-bookkeeping-bundle/">clear records of investments</a> used for buying stock, plus attention to cohabitation status changes if common-law applies—all watched carefully by CRA auditors across Canada including Ontario's specific rates.[11][12]</p>
+<div class="gcpa-callout blue">
+<span class="co-tag">Worth Knowing</span>
+<p>Salary paid to a spouse is outside TOSI, but it must be reasonable for the work actually done for the corporation to deduct it.</p>
+</div>
+<p>Always seek expert advice before setting up spousal shareholdings if you want legit after-tax gains that fit current laws nationwide.</p>
+<div class="gcpa-disclaimer">
+<p><strong>References:</strong></p>
+<p>[9] CRA – Tax on Split Income and Attribution Rules</p>
+<p>[10] Department Finance Canada – Budget Measures Impacting Family Businesses [2018]</p>
+<p>[11] Ontario Ministry Finance – Personal Marginal Rates Update [2026];</p>
+<p>[12] Open Corporation for $35 free CPA consultation offer</p>
+</div>
+
+<h2>Designing Share Structures That Include Spouse Shares</h2>
+<div class="gcpa-numhead">
+<div class="num" style="background:#0f2a4a !important;color:#ffffff !important;">4</div>
+<h4 id="toc-structures" style="border:none;padding:0;margin:0;">Designing Share Structures</h4>
+<span class="gcpa-pill green">Structure</span>
+</div>
+<p>When you design share structures with spouse shares in a Canadian corporation, you need to think about ownership and taxes. Spouse shareholder corporation Canada setups can change control, how income is shared, and must follow the Income Tax Act (ITA). Knowing how to handle spouse shares helps you match business goals while dealing with risks like TOSI rules and attribution.</p>
+<p>Open Corporation for $35 works under Gondaliya CPA. We help owner-managers in Toronto and across Canada deal with these issues clearly.</p>
+<div class="gcpa-callout gold">
+<span class="co-tag">Our Actual Experience</span>
+<p>The structure we see work best is a separate non-voting class for the spouse, written into the articles at incorporation. Adding a class later needs <a href="https://opencorporationfor35.ca/corporate-changes-amendments/">articles of amendment</a> and a government fee of $150 in Ontario or $200 federally, while setting it up on day one costs nothing extra.</p>
+</div>
+<h3>Choosing Between Voting and Non-Voting Shares for Spouse Shareholders</h3>
+<p>Picking the right share class for a spouse affects who controls the company, who gets dividends, and family law matters. The main choices are:</p>
+<figure class="wp-block-table">
+<table>
+<thead><tr><th>Factor</th><th>Owner-Only Shares</th><th>Spouse Voting Shares</th><th>Spouse Non-Voting Shares</th></tr></thead>
+<tbody>
+<tr><td>Control</td><td>Owner has full control</td><td>Voting power shared</td><td>No voting power</td></tr>
+<tr><td>Dividend entitlement</td><td>Dividends to owner only</td><td>Dividends shared</td><td>Dividends shared</td></tr>
+<tr><td>Exposure to TOSI</td><td>Not applicable</td><td>Possible if dividends paid</td><td>Possible if dividends paid</td></tr>
+<tr><td>Family Law Considerations</td><td>Simpler</td><td>Possible vote conflicts</td><td>Less risk of conflicts</td></tr>
+<tr><td>Compliance Complexity</td><td>Low</td><td>Moderate</td><td>Moderate</td></tr>
+</tbody>
+</table>
+</figure>
+<p>You should pick voting or non-voting shares based on control needs versus how you want to divide income. It’s wise to talk with a specialist before deciding. Spousal share ownership tax implications can be tricky.</p>
+<h3>Transfer of Shares: Restrictions, Procedures, and Shareholder Consent</h3>
+<p>Can my spouse own shares in my corporation? Yes, but transferring shares has rules. <a href="https://opencorporationfor35.ca/shareholder-agreement-template/">Corporate bylaws or shareholder agreements</a> may limit transfers.</p>
+<p>Here’s what you should know:</p>
+<ul>
+<li><strong>Shareholder consent:</strong> Usually, others must approve before you transfer shares.</li>
+<li><strong>Corporate articles:</strong> Some companies only allow transfers within family or have first-right options.</li>
+<li><strong>Tax matters:</strong> Transferring shares can cause tax problems unless the automatic s. 73(1) rollover applies. Attribution rules (ss. 74.1 and 74.2) might apply.</li>
+</ul>
+<p>You’ll need formal papers like transfer agreements and updated corporate records.</p>
+<div class="gcpa-callout red">
+<span class="co-tag">Risk Warning</span>
+<p><strong>Risk Warning:</strong> A share transfer that the articles or a shareholder agreement do not permit can be set aside. Please do not sign a transfer before the directors approve it.</p>
+</div>
+<p>Always check your corporation’s rules first. Speak with a CPA about tax steps and spousal rollover details to avoid surprises.</p>
+<h3>Role of Holding Companies and Trusts in Managing Spouse Shares</h3>
+<p>Holding companies or trusts can help manage family corporation shares but come with complex tax effects for spouses owning shares.</p>
+<ul>
+<li><a href="https://opencorporationfor35.ca/guides/holding-company-canada/">Holding companies may help split income</a> through corporation Canada by sharing dividends among family members.</li>
+<li>Trusts add layers that might affect TOSI rule exemptions depending on who benefits.</li>
+</ul>
+<p>The CRA watches related-party deals closely under split-income taxation (TOSI) rules (s.120.4 ITA).</p>
+<div class="gcpa-callout blue">
+<span class="co-tag">Worth Knowing</span>
+<p>Dividends that reach a spouse through a holding company or a trust are still tested under TOSI when the spouse receives them.</p>
+</div>
+<p>Because of this complexity, get advice specific to your situation if your spouse owns shares directly or indirectly through trusts or holding companies.</p>
+<h3>Managing Shareholders’ Meetings with Spouse Shareholders Involved</h3>
+<p>When spouses hold shares in a Canadian corporation, running shareholder meetings needs care under Ontario corporate governance laws (OBCA) and family dynamics.</p>
+<ul>
+<li>Give proper notice following OBCA rules regardless of who owns the shares.</li>
+<li>Record resolutions clearly showing each shareholder’s rights—even spouses’—to avoid confusion later.</li>
+<li>Family Law Ontario may influence decisions during separation, so clear records protect everyone involved.</li>
+</ul>
+<p>Spouses should act based on their legal rights, not just because they’re married. Keeping things official helps prevent conflicts down the road.</p>
+<p>Open Corporation for $35 is part of Gondaliya CPA. We work with you to set up share structures including spouse shareholders while handling governance details carefully.</p>
+
+<h2>Evaluating Whether Your Spouse Should Be a Shareholder: Pros and Cons</h2>
+<div class="gcpa-numhead">
+<div class="num" style="background:#0f2a4a !important;color:#ffffff !important;">5</div>
+<h4 id="toc-evaluate" style="border:none;padding:0;margin:0;">Pros, Cons and Compliance</h4>
+<span class="gcpa-pill teal">Both Sides</span>
+</div>
+<p>Having your spouse own shares in your corporation in Canada can bring some benefits, but it’s not always simple. When your spouse is a shareholder in a Canadian corporation, they may receive income from dividends. But whether that helps or hurts depends on many things, like how involved they are and how the shares were acquired. So, if you’re asking, "Can my spouse own shares in my corporation?" you need to look closely at both the good and the bad sides.</p>
+<p><strong>Pros of Spouse Share Ownership:</strong></p>
+<ul>
+<li>You might save on taxes by splitting income through dividends if TOSI rules don’t apply.</li>
+<li>Your spouse could have a say in company decisions if they hold voting shares.</li>
+<li>It can help with planning who gets what when estate matters come up.</li>
+</ul>
+<p><strong>Cons of Spouse Share Ownership:</strong></p>
+<ul>
+<li>Dividends given to your spouse might trigger extra taxes under TOSI unless certain conditions are met.</li>
+<li>The law might make income earned from gifted or transferred shares count as yours for tax purposes.</li>
+<li>Family law issues can get tricky if you separate or one of you dies.</li>
+</ul>
+<p>You should weigh these points carefully. Adding your spouse as a shareholder may fit some goals but cause headaches if not done right.</p>
+<h3>Drafting and Implementing Shareholder Agreements to Protect All Parties</h3>
+<p>When spouses own shares in a Canadian corporation, having a clear shareholder agreement is key. It spells out who gets what and how to settle disagreements.</p>
+<p>Here’s a quick comparison of share types involving spouses:</p>
+<figure class="wp-block-table">
+<table>
+<thead><tr><th>Factor</th><th>Owner-only Shares</th><th>Spouse Voting Shares</th><th>Spouse Non-Voting Shares</th></tr></thead>
+<tbody>
+<tr><td>Control</td><td>Owner makes all decisions</td><td>Shared voting rights</td><td>No or limited voting rights</td></tr>
+<tr><td>Exposure to TOSI</td><td>None</td><td>Possible if dividends paid</td><td>Possible depending on dividend type</td></tr>
+<tr><td>Flexibility</td><td>High</td><td>Medium</td><td>High</td></tr>
+<tr><td>Family Law Risks</td><td>Lower</td><td>Higher due to ownership</td><td>Moderate</td></tr>
+<tr><td>Compliance Complexity</td><td>Low</td><td>Medium</td><td>Medium</td></tr>
+</tbody>
+</table>
+</figure>
+<p>Good agreements cover voting rules, dividends, how shares can be sold or transferred, and what happens if family situations change—like separation. Ontario’s Family Law Act matters here. Lawyers help a lot because these documents get complicated fast.</p>
+<h3>Handling Complex Scenarios: Separation, Death, and Shareholder Exit</h3>
+<p>Things get tricky when spouses who own corporate shares face separation or death. Ontario’s family law plays a big role here.</p>
+<p>Key points to keep in mind:</p>
+<ul>
+<li><strong>Separation:</strong> Shares usually count toward net family property, which is equalized unless there’s another deal.</li>
+<li><strong>Death:</strong> Shares move through estate processes. Good paperwork makes this smoother and avoids surprise taxes.</li>
+<li><strong>Tax on Transfers:</strong> Giving shares between spouses can sometimes avoid immediate capital gains tax by using rollover relief — but this needs careful planning.</li>
+</ul>
+<div class="gcpa-callout red">
+<span class="co-tag">Risk Warning</span>
+<p><strong>Risk Warning:</strong> A marriage contract can change how shares are treated on separation. Please do not rely on corporate documents alone to protect the business.</p>
+</div>
+<p>To handle these tough cases, it pays off to get advice from both tax pros and family lawyers familiar with local laws.</p>
+<h3>Ensuring Compliance To Avoid Jeopardizing Corporation Status or Certificates</h3>
+<p>Keeping things legal is crucial when your spouse owns shares. You’ve got to watch the TOSI rules closely and follow filing rules like Schedule 50 every year.</p>
+<p>Some must-knows:</p>
+<ul>
+<li>CRA looks hard at split income under section 120.4 — this includes dividends paid to related people like spouses.</li>
+<li>Schedule 50 requires listing every shareholder holding 10% or more of the shares every year without fail. Missing this could bring penalties that hurt your corporation’s standing.</li>
+<li>Attribution rules mean income made from money one spouse uses to buy another’s shares might be taxed back to the original owner.</li>
+</ul>
+<p>Keeping records current helps you dodge audits that might threaten certificates issued by Corporations Canada or provincial offices like Ontario’s finance ministry.</p>
+<h3>Best Practices For Documentation And Corporate Governance Regarding Spouse Shares</h3>
+<p>Good recordkeeping protects your business when spouses hold shares together.</p>
+<ul>
+<li>Hold regular shareholder meetings including all shareholders. Write down who was there — especially spouses.</li>
+<li>Update the corporate minute book quickly after any changes involving spouse shareholders.</li>
+<li>Note dividend declarations clearly so it’s obvious which payments go where.</li>
+<li>Keep separate lists showing each shareholder’s percentage of ownership. This helps with Schedule 50 filings each year.</li>
+</ul>
+<p>Following these tips avoids confusion among owners and keeps you aligned with corporate governance standards expected in Ontario and across Canada.</p>
+<p>Sharad Gondaliya, CPA (Canada &amp; USA), has over 10 years helping Canadian business owners manage their companies right.</p>
+<p>Open Corporation for $35 is part of Gondaliya CPA.</p>
+<div class="gcpa-disclaimer">
+<p>Income Tax Act sections cited: ss.73(1), ss.74.1–74.5, s.120.4 – CRA official publications</p>
+<p>Ontario e-Laws – Family Law Act</p>
+<p>Schedule 50 Filing Requirements – Canada Revenue Agency, T2 Corporation Income Tax Guide</p>
+</div>
+<div class="gcpa-cta" style="background:linear-gradient(135deg,#0f2a4a 0%,#1c4a78 100%) !important;">
+<h4>Set up spouse shares the right way from day one</h4>
+<p>Incorporation from $35 including HST plus government fees, with a free CPA consultation on share classes and the TOSI exclusions before anything is filed. Please book a free consultation.</p>
+<div class="gcpa-trust"><span>1300+ 5-star Google reviews</span><span>Xero Partner Award Winner 2026</span><span>CPA Ontario Firm 61330051</span><span>30-Day Money-Back Guarantee</span></div>
+<div class="gcpa-btnrow"><a class="solid" href="https://gondaliyacpa.ca/consultation/">Book Free Consultation</a><a href="https://opencorporationfor35.ca/">Open Corporation For $35</a><a href="tel:+16472129559">647-212-9559</a></div>
+</div>
+
+<h2>Key Takeaways on Spouse Ownership of Shares in Canadian Corporations</h2>
+<div class="gcpa-numhead">
+<div class="num" style="background:#0f2a4a !important;color:#ffffff !important;">6</div>
+<h4 id="toc-takeaways" style="border:none;padding:0;margin:0;">Key Takeaways and Next Steps</h4>
+<span class="gcpa-pill blue">Takeaways</span>
+</div>
+<p>In Canada, your spouse can own shares in a corporation. But tax rules can get tricky. If you wonder, "can my spouse own shares in my corporation?" the answer is yes—but with some catches. The tax treatment depends on things like how dividends are paid and if income splitting applies under TOSI rules.</p>
+<p>Here are the main points:</p>
+<ul>
+<li>A spouse owning shares in a corporation Canada must follow Income Tax Act rules for dividend taxes.</li>
+<li>Dividends to a spouse shareholder may trigger TOSI unless certain exceptions apply.</li>
+<li>Attribution rules might apply if the shares were bought using your money.</li>
+<li>Owning shares legally doesn’t mean you’ll always get good tax results; you need to check carefully.</li>
+</ul>
+<p>Knowing this helps you manage spousal share ownership while staying within Canadian corporate law.</p>
+<h3>How Open Corporation for $35 Can Help Set Up Spouse Share Structures Efficiently</h3>
+<p>Open Corporation for $35 offers a straightforward way to set up spouse shares in Canadian corporations. It’s a service from Gondaliya CPA that focuses on simple, affordable incorporation and share structuring.</p>
+<p>What we offer:</p>
+<ul>
+<li>Online incorporation with same-day filing and <a href="https://opencorporationfor35.ca/nuans-report-20/">instant NUANS reports</a></li>
+<li>Registered office address service in downtown Toronto</li>
+<li>Free CPA consultation about setting up spouse shareholder corporation Canada</li>
+<li>Preparation of corporate minute books with accurate shareholder info</li>
+<li>Help with documents for issuing or transferring spouse shares in Canadian corporation</li>
+</ul>
+<p>This makes it easier for business owners to create clear family share structures that follow 2026 Ontario personal tax rates and federal laws.</p>
+<h3>Recommended Next Steps: Consulting Corporate and Tax Professionals</h3>
+<p>TOSI rules spouse shareholder Canada can get complicated fast. How your spouse owns shares affects taxes based on business activity, work hours, funding source, age limits, and more.</p>
+<p>Here’s what you should do next:</p>
+<ul>
+<li><a href="https://opencorporationfor35.ca/consultation/">Talk to a CPA firm that knows family corporations well</a>.</li>
+<li>Review your unique situation before issuing or transferring shares.</li>
+<li>Get legal advice about shareholder agreements or marriage contracts.</li>
+<li>Keep documentation handy to support any split-income tax exceptions.</li>
+<li>Stay updated on changes like dividend rates or interest rates through 2026.</li>
+</ul>
+<p>Getting expert help avoids surprises like high taxes or attribution problems from paying dividends incorrectly to your spouse.</p>
+<h3>Links to Official Government Resources and Regulatory Bodies</h3>
+<p>For official info on spouses owning corporate shares, check these sites:</p>
+<figure class="wp-block-table">
+<table>
+<thead><tr><th>Resource</th><th>Description</th><th>Link</th></tr></thead>
+<tbody>
+<tr><td>Income Tax Act (Canada)</td><td>Governs taxes including TOSI</td><td><a href="https://laws-lois.justice.gc.ca/eng/acts/I-3/" rel="nofollow noopener" target="_blank">https://laws-lois.justice.gc.ca/eng/acts/I-3/</a></td></tr>
+<tr><td>Department of Finance Canada</td><td>Budget updates affecting personal taxes</td><td><a href="https://www.canada.ca/en/department-finance.html" rel="nofollow noopener" target="_blank">https://www.canada.ca/en/department-finance.html</a></td></tr>
+<tr><td>Ontario Ministry of Finance (2026)</td><td>Personal income brackets &amp; credits</td><td><a href="https://www.fin.gov.on.ca/en/tax/index.html" rel="nofollow noopener" target="_blank">https://www.fin.gov.on.ca/en/tax/index.html</a></td></tr>
+</tbody>
+</table>
+</figure>
+<p>These provide current laws, guides, rate tables updated yearly, and CRA policies important when planning spousal share ownership.</p>
+<h3>Contact Information for Personalized Assistance and Further Advice</h3>
+<p>If you want advice about whether your spouse should hold company shares under changing 2026 tax rules, contact Open Corporation for $35 in Toronto. We offer <a href="https://opencorporationfor35.ca/contact-us/">free consultations</a> every day from 9 AM to 8:30 PM EST by phone or email:</p>
+<p><strong>Phone:</strong> 647‑212‑9559<br><strong>Email:</strong> info@gondaliyacpa.ca</p>
+<p>Open Corporation for $35 is part of Gondaliya CPA. We specialize in helping family corporations set up share structures that follow current federal Income Tax Act rules and Ontario guidelines involving spouses.</p>
+
+<h2>Frequently Asked Questions on Spouse Share Ownership in Canadian Corporations</h2>
+<div class="gcpa-numhead">
+<div class="num" style="background:#0f2a4a !important;color:#ffffff !important;">7</div>
+<h4 id="toc-faq" style="border:none;padding:0;margin:0;">Spouse Shares FAQ</h4>
+<span class="gcpa-pill teal">FAQ</span>
+</div>
+<div class="gcpa-faq" id="faq-main">
+<details><summary>Can my spouse own shares in my corporation legally in Canada?<span class="pl">+</span></summary>
+<div class="ans"><p>Yes. Spouses can legally own shares in private Canadian corporations, including CCPCs. However, tax and corporate rules apply.</p></div></details>
+<details><summary>What are the main tax implications of spouse share ownership related to TOSI?<span class="pl">+</span></summary>
+<div class="ans"><p>TOSI rules may tax dividends paid to spouse shareholders at the highest rate unless exceptions like labour tests or age thresholds apply.</p></div></details>
+<details><summary>How does the 12-Month Common-Law Cohabitation Rule affect spouse shareholding?<span class="pl">+</span></summary>
+<div class="ans"><p>Common-law partners living together continuously for 12 months qualify as spouses for tax purposes, affecting dividend attribution and TOSI.</p></div></details>
+<details><summary>What is the TOSI Reasonable Return Age Threshold for spouses?<span class="pl">+</span></summary>
+<div class="ans"><p>Where the business owner is 65 or older, dividends to the spouse are taxed at normal rates if they would have been excluded in the owner's hands, without the spouse needing active work.</p></div></details>
+<details><summary>How does the Prescribed Interest Rate (2026) influence spousal share transfers?<span class="pl">+</span></summary>
+<div class="ans"><p>The prescribed interest rate impacts loans or shareholder advances but does not directly affect share ownership; it can influence tax planning around share transfers.</p></div></details>
+<details><summary>What are the restrictions on professional corporation shareholding by spouses?<span class="pl">+</span></summary>
+<div class="ans"><p>Professional corporations often restrict non-licensed spouses from holding voting shares; non-voting shares might be allowed depending on regulations.</p></div></details>
+<details><summary>How does family law impact spouse shares in a Canadian corporation?<span class="pl">+</span></summary>
+<div class="ans"><p>Family law treats shares as family property during separation or death, influencing ownership division and requiring clear shareholder agreements.</p></div></details>
+<details><summary>What is the difference between owner-only, spouse voting, and spouse non-voting shares?<span class="pl">+</span></summary>
+<div class="ans"><p>Owner-only shares confer full control; spouse voting shares share decision rights; spouse non-voting shares provide dividend rights without control.</p></div></details>
+<details><summary>What costs are involved in setting up a spouse shareholder structure with Open Corporation for $35?<span class="pl">+</span></summary>
+<div class="ans"><p>Open Corporation files your incorporation for $35, HST included; minute book preparation and share issuance are separate services, quoted before any work starts.</p></div></details>
+<details><summary>Should I use DIY methods, tax software, or hire a CPA for spouse share ownership planning?<span class="pl">+</span></summary>
+<div class="ans"><p>Hiring a CPA ensures compliance with complex tax laws like TOSI and proper structuring. DIY may risk errors; software lacks tailored advice.</p></div></details>
+</div>
+<div class="gcpa-callout red">
+<span class="co-tag">Risk Warning</span>
+<p><strong>Risk Warning:</strong> A spouse who stops working in the business can still qualify through the five-year rule, but only if the earlier hours are documented. Please do not discard old timesheets.</p>
+</div>
+
+<h2>Key Considerations When Planning Spouse Share Ownership</h2>
+<div class="gcpa-numhead">
+<div class="num" style="background:#0f2a4a !important;color:#ffffff !important;">8</div>
+<h4 id="toc-considerations" style="border:none;padding:0;margin:0;">Key Considerations and Quick Reference</h4>
+<span class="gcpa-pill gold">Planning</span>
+</div>
+<ul>
+<li>Review your corporation’s articles and shareholder agreements before adding a spouse shareholder.</li>
+<li>Understand risks of non-compliance with TOSI and attribution rules to prevent penalties.</li>
+<li>Prepare documentation for Schedule 50 filings to disclose shareholders holding 10% or more annually.</li>
+<li>Assess industry-specific rules if operating as a professional corporation.</li>
+<li>Weigh pros and cons of dividend gross-up versus salary payments for tax efficiency.</li>
+<li>Get clear deliverables from your CPA including advice on LCGE eligibility and <a href="https://opencorporationfor35.ca/guides/small-business-deduction/">small business limits</a>.</li>
+<li>Maintain updated corporate minute books reflecting all shareholder resolutions involving your spouse.</li>
+<li>Use buy-sell provisions in agreements to handle potential family law disputes or exits smoothly.</li>
+</ul>
+<div class="gcpa-pillhead"><h4 style="border:none;padding:0;margin:0;">Selecting a CPA for Spouse Shareholder Planning</h4><span class="gcpa-pill blue">Your CPA</span></div>
+<ul>
+<li>Choose CPAs experienced in family-owned corporations and Canadian tax laws.</li>
+<li>Look for firms offering consultation on TOSI exemptions and common-law rules.</li>
+<li>Ensure your CPA helps with <a href="https://opencorporationfor35.ca/corporate-compliance-subscription/">compliance requirements</a> like Schedule 50 and minute book maintenance.</li>
+<li>Verify expertise in professional corporation regulations if applicable to your business sector.</li>
+</ul>
+<div class="gcpa-pillhead"><h4 style="border:none;padding:0;margin:0;">Process to Review Suitability of Adding Spouse as Shareholder</h4><span class="gcpa-pill teal">Process</span></div>
+<ol>
+<li>Analyze financial goals related to income splitting under current laws.</li>
+<li>Confirm eligibility under corporate bylaws and professional restrictions.</li>
+<li>Evaluate potential tax exposure from dividends due to TOSI rules.</li>
+<li>Discuss implications of family law on ownership rights with legal counsel.</li>
+<li>Draft or update shareholder agreements incorporating spousal roles and buy-sell terms.</li>
+</ol>
+<div class="gcpa-pillhead"><h4 style="border:none;padding:0;margin:0;">Deliverables in Spouse Share Ownership Planning</h4><span class="gcpa-pill green">Deliverables</span></div>
+<ul>
+<li>Customized shareholder agreement reflecting spousal ownership structure.</li>
+<li>Documentation outlining voting rights versus dividend entitlements per share class.</li>
+<li>Tax planning memo covering TOSI exemptions, LCGE impact, and attribution risks.</li>
+<li><a href="https://opencorporationfor35.ca/minute-book-preparation/">Minute book preparation</a> recording all shareholder meetings and resolutions about spousal shares.</li>
+</ul>
+<div class="gcpa-pillhead"><h4 style="border:none;padding:0;margin:0;">Risks, Compliance Issues, and Prevention Controls</h4><span class="gcpa-pill red">Risks</span></div>
+<ul>
+<li><strong>Risk:</strong> Incorrect dividend payments triggering full TOSI taxation—prevent by adhering to labour or age tests.</li>
+<li><strong>Risk:</strong> Failure to file Schedule 50 listing new spouse shareholders—prevent by timely annual filings with CRA.</li>
+<li><strong>Risk:</strong> Unclear transfer restrictions causing disputes—prevent with robust shareholder agreements specifying consent processes.</li>
+<li><strong>Risk:</strong> Non-compliance with professional corporation rules—prevent by consulting regulatory bodies before issuing shares to spouses.</li>
+</ul>
+<div class="gcpa-pillhead"><h4 style="border:none;padding:0;margin:0;">Preparation Before Adding Spouse as Shareholder</h4><span class="gcpa-pill gold">Preparation</span></div>
+<ul>
+<li>Review your corporation’s articles for transfer limitations or preemptive rights clauses affecting spouses.</li>
+<li>Obtain professional advice about potential attribution of income under sections 74.1 and 74.2 ITA when transferring shares using personal funds.</li>
+<li>Assess whether your spouse meets labour test criteria or qualifies for age-based TOSI exemptions before issuing dividends post-transfer.</li>
+<li>Ensure accurate records are maintained about source of funds used to purchase shares from you or third parties.</li>
+</ul>
+<div class="gcpa-pillhead"><h4 style="border:none;padding:0;margin:0;">Spouse Share Ownership Across Industries</h4><span class="gcpa-pill blue">Industries</span></div>
+<p>Industries such as healthcare with professional corporations impose strict limits on spousal voting rights due to licensing rules, unlike most private CCPCs where more flexibility exists.</p>
+<div class="gcpa-pillhead"><h4 style="border:none;padding:0;margin:0;">Numeric Walkthrough of Spouse Share Ownership Tax Impact Example</h4><span class="gcpa-pill teal">Example</span></div>
+<p>If a CCPC pays $50,000 dividends to a non-active spouse shareholder below age 65 who fails the labour test:</p>
+<ul>
+<li>Dividends taxed at the top marginal rate for non-eligible dividends, 47.74% (federal + Ontario combined), due to TOSI.</li>
+<li>Resulting tax payable would be $23,870 instead of typical lower rates if active involvement confirmed.</li>
+</ul>
+<p>This illustrates why proper planning matters before adding a spouse as shareholder.</p>
+<div class="gcpa-pillhead"><h4 style="border:none;padding:0;margin:0;">People Also Ask</h4><span class="gcpa-pill blue">Quick Answers</span></div>
+<div class="gcpa-faq">
+<details><summary>Does my spouse need to work in the business to avoid high taxes on dividends?<span class="pl">+</span></summary>
+<div class="ans"><p>Usually yes; meeting the labour test avoids TOSI applying fully.</p></div></details>
+<details><summary>Can my common-law partner hold shares just like my legally married spouse?<span class="pl">+</span></summary>
+<div class="ans"><p>Yes, after cohabitating continuously for at least 12 months they qualify similarly under tax law.</p></div></details>
+</div>
+<div class="gcpa-pillhead"><h4 style="border:none;padding:0;margin:0;">Glossary</h4><span class="gcpa-pill gold">Terms</span></div>
+<figure class="wp-block-table">
+<table>
+<thead><tr><th>Term</th><th>Definition</th></tr></thead>
+<tbody>
+<tr><td>TOSI</td><td>Tax on Split Income - special high tax rate on split income</td></tr>
+<tr><td>LCGE</td><td>Lifetime Capital Gains Exemption - limit on capital gains tax</td></tr>
+<tr><td>CCPC</td><td>Canadian-Controlled Private Corporation</td></tr>
+<tr><td>Prescribed Interest Rate</td><td>Government-set interest rate affecting certain loans/transfers</td></tr>
+<tr><td>Schedule 50</td><td>CRA filing disclosing shareholders holding 10% or more</td></tr>
+<tr><td>Buy-Sell Provisions</td><td>Agreement clauses managing share transfers among owners</td></tr>
+</tbody>
+</table>
+</figure>
+<div class="gcpa-pillhead"><h4 style="border:none;padding:0;margin:0;">Quick Answers: Key Numbers at a Glance</h4><span class="gcpa-pill gold">At a Glance</span></div>
+<ul>
+<li><strong>Common-law partner:</strong> 12 continuous months living together, or a child together</li>
+<li><strong>TOSI labour exclusion:</strong> An average of 20 hours a week, in the current year or any five earlier years</li>
+<li><strong>Age-based spousal exclusion:</strong> Business owner aged 65 or older in the year</li>
+<li><strong>Top Ontario rate on non-eligible dividends:</strong> 47.74%</li>
+<li><strong>Top Ontario rate on eligible dividends:</strong> 39.34%</li>
+<li><strong>Schedule 50 threshold:</strong> Shareholders holding 10% or more</li>
+<li><strong>Adding a share class later:</strong> $150 in Ontario or $200 federally, plus a special resolution</li>
+<li><strong>Our fee:</strong> $35 including HST, plus government fees</li>
+</ul>
+<div class="gcpa-pillhead"><h4 style="border:none;padding:0;margin:0;">Who This Is For / Not For</h4><span class="gcpa-pill teal">Fit Check</span></div>
+<ul>
+<li><strong>For:</strong> Owners whose spouse works in the business, owners aged 65 or older, and anyone <a href="https://opencorporationfor35.ca/incorporation-service-35/">setting up a new corporation</a> who wants a spouse class in the articles from day one.</li>
+<li><strong>Not For:</strong> Owners hoping shares alone will split income with a spouse who does not work in the business, and professionals whose college does not allow non-licensee shareholders.</li>
+</ul>
+<div class="gcpa-callout green">
+<span class="co-tag">Verdict</span>
+<p>A spouse can own shares in almost any private corporation, and in some professional corporations. Whether it saves tax depends on one question: does a TOSI exclusion apply to the dividends? If your spouse works in the business an average of 20 hours a week, or you are 65 or older, the answer may be yes. If not, the shares change ownership and control but not the tax bill.</p>
+</div>
+<div class="gcpa-callout blue">
+<span class="co-tag">2026 Update</span>
+<p><strong>2026 Update &mdash; what is current:</strong> This article reflects rules current to 2026. The TOSI rules introduced in 2018, the spousal attribution rules in sections 74.1 to 74.5, the automatic spousal rollover in section 73(1), the 12-month common-law partner test and the Schedule 50 requirement to list shareholders holding 10% or more are unchanged. In Ontario, the top combined rate is 47.74% on non-eligible dividends and 39.34% on eligible dividends, and a dividend caught by TOSI is taxed at that rate from the first dollar. Please note that the age-65 rule looks at the business owner's age and <strong>not</strong> the spouse's; that the excluded business test counts work in the current year or any five earlier years, so records of past hours matter; that salary paid to a spouse is outside TOSI but must be reasonable for the work done; and that Ontario lets physicians and dentists have family members hold non-voting shares of a professional corporation, while law and accounting professional corporations generally do not.</p>
+</div>
+<h5 style="color:#15355c;margin:24px 0 8px;">Spouse Shareholder Readiness Check</h5>
+<p>This quick self-check flags what to work through before your spouse becomes a shareholder. Please answer the six questions below.</p>
+<div id="ocf-chk">
+  <style>
+    #ocf-chk{--n:#0f2a4a;--n2:#15355c;--bl:#1c6dd0;--tl:#0c8f8f;--gd:#c9991f;--rd:#c0392b;--ink:#1d2733;--mut:#5a6b7b;--ln:#d8e0e8;--alt:#f5f8fb;
+      border:1px solid var(--ln);border-radius:14px;overflow:hidden;background:#fff;box-shadow:0 10px 30px rgba(15,42,74,.08);font-family:inherit;color:var(--ink);margin:24px 0;}
+    #ocf-chk *{box-sizing:border-box;}
+    #ocf-chk .s-head{background:linear-gradient(135deg,var(--n),var(--n2));color:#fff;padding:18px 22px;}
+    #ocf-chk .s-head h5{margin:0;font-size:19px;font-weight:700;color:#fff!important;}
+    #ocf-chk .s-head p{margin:4px 0 0;font-size:13px;color:#cfe2f8!important;}
+    #ocf-chk .s-body{padding:20px 22px;}
+    #ocf-chk .s-q{padding:13px 0;border-bottom:1px solid var(--ln);display:flex;justify-content:space-between;align-items:center;gap:14px;}
+    #ocf-chk .s-q:first-child{padding-top:2px;}
+    #ocf-chk .s-q span.s-lab{font-weight:600;font-size:14.5px;color:var(--n);}
+    #ocf-chk .s-seg{display:inline-flex;border:1px solid var(--ln);border-radius:10px;overflow:hidden;flex:0 0 auto;}
+    #ocf-chk .s-seg label{cursor:pointer;padding:8px 18px;font-size:14px;font-weight:600;color:var(--mut);background:var(--alt);transition:.15s;user-select:none;}
+    #ocf-chk .s-seg label+label{border-left:1px solid var(--ln);}
+    #ocf-chk .s-seg input{position:absolute;opacity:0;width:0;height:0;}
+    #ocf-chk .s-seg input:checked+label{background:var(--n);color:#fff!important;}
+    #ocf-chk .s-go{margin-top:18px;width:100%;border:none;border-radius:11px;padding:14px 18px;font-size:15.5px;font-weight:700;color:#fff!important;cursor:pointer;background:linear-gradient(135deg,var(--bl),var(--tl));font-family:inherit;}
+    #ocf-chk .s-go:hover{filter:brightness(1.05);}
+    #ocf-chk .s-msg{display:none;margin-top:12px;font-size:13.5px;color:var(--rd);font-weight:600;}
+    #ocf-chk .s-out{display:none;margin-top:18px;border-radius:12px;border:1px solid var(--ln);overflow:hidden;}
+    #ocf-chk .s-out .s-status{padding:14px 18px;font-weight:700;font-size:16px;color:#fff!important;background:linear-gradient(135deg,var(--n),var(--n2));}
+    #ocf-chk .s-out .s-inner{padding:16px 18px;background:var(--alt);}
+    #ocf-chk .s-row{font-size:14.5px;margin:0 0 10px;line-height:1.5;}
+    #ocf-chk .s-count{display:inline-block;background:#fff;border:1px solid var(--ln);border-radius:9px;padding:8px 14px;font-weight:700;color:var(--n);font-size:14.5px;}
+    #ocf-chk .s-list{margin:8px 0 0;padding-left:18px;}
+    #ocf-chk .s-list li{font-size:13.5px;color:var(--ink);margin:4px 0;border:none;padding:0 0 0 4px;}
+    #ocf-chk .s-list li::before{display:none;}
+    #ocf-chk .s-cta{display:inline-block;margin-top:14px;background:var(--gd);color:#fff!important;font-weight:700;font-size:14.5px;text-decoration:none;padding:11px 20px;border-radius:10px;}
+    #ocf-chk .s-note{font-size:12.5px;color:var(--mut);margin:12px 0 0;}
+    @media(max-width:560px){#ocf-chk .s-q{flex-direction:column;align-items:flex-start;gap:8px;}}
+  </style>
+  <div class="s-head" style="background:linear-gradient(135deg,#0f2a4a,#15355c) !important;">
+    <h5>Spouse Shareholder Readiness Check</h5>
+    <p>Six quick questions. No tax calculation, no figure quoted.</p>
+  </div>
+  <div class="s-body">
+    <div class="s-q" data-flag="0" data-msg="Whether a TOSI exclusion applies, because dividends to a spouse who does not work in the business are usually taxed at the top rate"><span class="s-lab">1. Does your spouse work in the business an average of 20 hours a week or more?</span>
+      <span class="s-seg"><input type="radio" id="c-a-y" name="c-a" value="1"><label for="c-a-y">Yes</label><input type="radio" id="c-a-n" name="c-a" value="0"><label for="c-a-n">No</label></span></div>
+    <div class="s-q" data-flag="0" data-msg="Which TOSI exclusion your spouse can rely on, since the age-based spousal rule needs the owner to be 65 or older"><span class="s-lab">2. Are you, the business owner, 65 or older this year?</span>
+      <span class="s-seg"><input type="radio" id="c-b-y" name="c-b" value="1"><label for="c-b-y">Yes</label><input type="radio" id="c-b-n" name="c-b" value="0"><label for="c-b-n">No</label></span></div>
+    <div class="s-q" data-flag="1" data-msg="Attribution, because income and gains on shares bought with your money can be taxed back to you"><span class="s-lab">3. Will your spouse's shares be paid for with your money?</span>
+      <span class="s-seg"><input type="radio" id="c-c-y" name="c-c" value="1"><label for="c-c-y">Yes</label><input type="radio" id="c-c-n" name="c-c" value="0"><label for="c-c-n">No</label></span></div>
+    <div class="s-q" data-flag="1" data-msg="Whether your college allows a spouse to hold shares, and in which class"><span class="s-lab">4. Is the corporation a professional corporation?</span>
+      <span class="s-seg"><input type="radio" id="c-d-y" name="c-d" value="1"><label for="c-d-y">Yes</label><input type="radio" id="c-d-n" name="c-d" value="0"><label for="c-d-n">No</label></span></div>
+    <div class="s-q" data-flag="1" data-msg="A non-voting class for your spouse, which must be in the articles or added by articles of amendment"><span class="s-lab">5. Do you want to keep full voting control?</span>
+      <span class="s-seg"><input type="radio" id="c-e-y" name="c-e" value="1"><label for="c-e-y">Yes</label><input type="radio" id="c-e-n" name="c-e" value="0"><label for="c-e-n">No</label></span></div>
+    <div class="s-q" data-flag="0" data-msg="A shareholder agreement and, where needed, a marriage contract covering separation and death"><span class="s-lab">6. Do you have a shareholder agreement or marriage contract in place?</span>
+      <span class="s-seg"><input type="radio" id="c-f-y" name="c-f" value="1"><label for="c-f-y">Yes</label><input type="radio" id="c-f-n" name="c-f" value="0"><label for="c-f-n">No</label></span></div>
+    <button type="button" class="s-go" id="c-go">Check my readiness</button>
+    <div class="s-msg" id="c-msg">Please answer all six questions to continue.</div>
+    <div class="s-out" id="c-out">
+      <div class="s-status" id="c-status" style="background:linear-gradient(135deg,#0f2a4a,#15355c) !important;">Your profile</div>
+      <div class="s-inner">
+        <p class="s-row"><b>Points to work through:</b> <span class="s-count" id="c-count"></span></p>
+        <div id="c-listwrap" style="display:none;"><p class="s-row" style="margin-bottom:4px;"><b>Worth reviewing with us:</b></p><ul class="s-list" id="c-list"></ul></div>
+        <p class="s-row" id="c-clean" style="display:none;"><b>Nothing flagged.</b> The usual complications do not appear to apply to you.</p>
+        <a class="s-cta" href="https://gondaliyacpa.ca/consultation/">Book a free consultation</a>
+        <p class="s-note">This is a general prompt, not tax advice, and it does not calculate your tax. Your outcome depends on your full facts, so please book a free consultation.</p>
+      </div>
+    </div>
+  </div>
+  <script>
+  (function(){
+    var root=document.getElementById('ocf-chk');
+    root.querySelector('#c-go').addEventListener('click',function(){
+      var qs=root.querySelectorAll('.s-q'), items=[], missing=false;
+      qs.forEach(function(q){
+        var x=q.querySelector('input:checked');
+        if(!x){missing=true;return;}
+        if(x.value===q.getAttribute('data-flag')) items.push(q.getAttribute('data-msg'));
+      });
+      var msg=root.querySelector('#c-msg'), out=root.querySelector('#c-out');
+      if(missing){msg.style.display='block';out.style.display='none';return;}
+      msg.style.display='none';
+      var list=root.querySelector('#c-list'), lw=root.querySelector('#c-listwrap'), clean=root.querySelector('#c-clean');
+      root.querySelector('#c-count').textContent=items.length+' to work through';
+      list.innerHTML='';
+      if(items.length){lw.style.display='block';clean.style.display='none';items.forEach(function(t){var li=document.createElement('li');li.textContent=t;list.appendChild(li);});}
+      else{lw.style.display='none';clean.style.display='block';}
+      root.querySelector('#c-status').textContent = items.length>=3 ? 'Several points need attention' : (items.length>=1 ? 'A few points to work through' : 'A straightforward case');
+      out.style.display='block';
+    });
+  })();
+  </script>
+</div>
+<div class="gcpa-cta" style="background:linear-gradient(135deg,#0f2a4a 0%,#1c4a78 100%) !important;">
+<h4>Check the TOSI exclusions before the first dividend</h4>
+<p>Incorporation from $35 including HST plus government fees, with a free CPA consultation on whether spouse shares help you. Please book a free consultation.</p>
+<div class="gcpa-trust"><span>1300+ 5-star Google reviews</span><span>Xero Partner Award Winner 2026</span><span>30-Day Money-Back Guarantee</span><span>60-Day Fee Matching</span></div>
+<div class="gcpa-btnrow"><a class="solid" href="https://gondaliyacpa.ca/consultation/">Book Free Consultation</a><a href="https://opencorporationfor35.ca/address-service-100/">Address Service</a><a href="https://opencorporationfor35.ca/contact-us/">Contact Us</a></div>
+</div>
+<h3 class="gcpa-closing" id="toc-closing">What to Send Us</h3>
+<p>Send us your corporation's articles, the current share register, what your spouse does in the business and roughly how many hours a week, both of your ages, and whether you have a shareholder agreement or marriage contract. That is enough for us to tell you whether spouse shares help and which class fits. Please start on our <a href="https://opencorporationfor35.ca/incorporation-form/">incorporation form</a> or see every fee on our <a href="https://opencorporationfor35.ca/pricing/">pricing page</a>.</p>
+<div class="gcpa-author">
+<div class="ava" style="background:linear-gradient(135deg,#0f2a4a,#0c8f8f) !important;color:#ffffff !important;">SG</div>
+<div class="info">
+<h5>Sharad Gondaliya, CPA (Canada &amp; USA) — Founder &amp; Managing Director, Gondaliya CPA Professional Corporation</h5>
+<div class="role">Reviewed and fact-checked by Sharad Gondaliya, CPA (Canada &amp; USA)</div>
+<p style="font-size:14.5px;color:#15355c !important;font-weight:700;margin:0 0 8px;">Open Corporation for $35 is a department of Gondaliya CPA.</p>
+<p>We incorporate and support companies in all 13 provinces and territories, handling CRA registrations, corporate tax filing, bookkeeping, GST/HST, payroll and audit support. Verify our firm on the <a href="https://www.cpaontario.ca/protecting-the-public/directories/firm/gondaliya-5sqvmj">CPA Ontario public firm directory</a>, firm registration 61330051.</p>
+<p style="font-size:13.5px;color:#15355c !important;font-weight:700;margin-top:10px;">CPA Ontario | CPA USA (Washington &amp; Montana) | Xero Partner Award Winner 2026 | 1300+ 5-star Google reviews</p>
+</div>
+</div>
+<p style="font-size:13px;color:#5a6b7b;border-top:1px solid #e3e9f0;padding-top:16px;margin-top:8px;"><strong>Published:</strong> October 27, 2026 &nbsp;·&nbsp; <strong>Last updated:</strong> October 27, 2026</p>
+<p style="font-size:13px;color:#5a6b7b;"><strong>Editorial policy:</strong> Our content is prepared by our team and reviewed by Sharad Gondaliya, CPA, and we update it as dividend tax rates, the TOSI rules and professional corporation rules change.</p>
+<p style="font-size:13px;color:#5a6b7b;"><strong>Disclaimer:</strong> This article is educational information only and is not tax, legal, or financial advice. Gondaliya CPA Professional Corporation is a firm of Chartered Professional Accountants, not a law firm. Please consult a CPA before acting, and a lawyer for shareholder agreements, marriage contracts and family law advice.</p>
+<p style="font-size:14.5px;color:#15355c;font-weight:700;border-top:2px solid #e3e9f0;padding-top:16px;margin-top:20px;">Open Corporation for $35 is a department of Gondaliya CPA.</p>
+<p style="font-size:13px;color:#5a6b7b;">Operated by WealthBamboo Inc. Parent firm Gondaliya CPA Professional Corporation, CPA Ontario firm registration 61330051. Xero Partner Award Winner 2026. 1300+ five-star Google reviews. 30-day money-back guarantee and 60-day fee-matching policy. Phone 647-212-9559, email info@gondaliyacpa.ca, open 9:00 AM to 8:30 PM Monday to Sunday. Payment by Interac e-Transfer to info@gondaliyacpa.ca only, security question "Not Applicable" as auto-deposit is enabled. Card is also accepted.</p>
+</div>
+
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@graph": [{"@type": "BlogPosting", "@id": "https://opencorporationfor35.ca/spouse-own-shares-corporation-canada/#article", "headline": "Can My Spouse Own Shares in My Corporation in Canada? Tax Rules and Considerations", "description": "Your spouse can own shares in your corporation. Learn how TOSI, attribution, share classes and professional corporation rules decide whether it saves tax.", "datePublished": "2026-10-27", "dateModified": "2026-10-27", "author": {"@type": "Person", "name": "Sharad Gondaliya, CPA"}, "publisher": {"@type": "Organization", "name": "Open Corporation for $35", "description": "Open Corporation for $35 is a department of Gondaliya CPA.", "parentOrganization": {"@type": "AccountingService", "name": "Gondaliya CPA Professional Corporation", "identifier": "CPA Ontario Firm Registration 61330051"}}, "mainEntityOfPage": "https://opencorporationfor35.ca/spouse-own-shares-corporation-canada/"}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Can my spouse own shares in my corporation legally in Canada?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Spouses can legally own shares in private Canadian corporations, including CCPCs. However, tax and corporate rules apply."}}, {"@type": "Question", "name": "What are the main tax implications of spouse share ownership related to TOSI?", "acceptedAnswer": {"@type": "Answer", "text": "TOSI rules may tax dividends paid to spouse shareholders at the highest rate unless exceptions like labour tests or age thresholds apply."}}, {"@type": "Question", "name": "How does the 12-Month Common-Law Cohabitation Rule affect spouse shareholding?", "acceptedAnswer": {"@type": "Answer", "text": "Common-law partners living together continuously for 12 months qualify as spouses for tax purposes, affecting dividend attribution and TOSI."}}, {"@type": "Question", "name": "What is the TOSI Reasonable Return Age Threshold for spouses?", "acceptedAnswer": {"@type": "Answer", "text": "Where the business owner is 65 or older, dividends to the spouse are taxed at normal rates if they would have been excluded in the owner's hands, without the spouse needing active work."}}, {"@type": "Question", "name": "How does the Prescribed Interest Rate (2026) influence spousal share transfers?", "acceptedAnswer": {"@type": "Answer", "text": "The prescribed interest rate impacts loans or shareholder advances but does not directly affect share ownership; it can influence tax planning around share transfers."}}, {"@type": "Question", "name": "What are the restrictions on professional corporation shareholding by spouses?", "acceptedAnswer": {"@type": "Answer", "text": "Professional corporations often restrict non-licensed spouses from holding voting shares; non-voting shares might be allowed depending on regulations."}}, {"@type": "Question", "name": "How does family law impact spouse shares in a Canadian corporation?", "acceptedAnswer": {"@type": "Answer", "text": "Family law treats shares as family property during separation or death, influencing ownership division and requiring clear shareholder agreements."}}, {"@type": "Question", "name": "What is the difference between owner-only, spouse voting, and spouse non-voting shares?", "acceptedAnswer": {"@type": "Answer", "text": "Owner-only shares confer full control; spouse voting shares share decision rights; spouse non-voting shares provide dividend rights without control."}}, {"@type": "Question", "name": "What costs are involved in setting up a spouse shareholder structure with Open Corporation for $35?", "acceptedAnswer": {"@type": "Answer", "text": "Open Corporation files your incorporation for $35, HST included; minute book preparation and share issuance are separate services, quoted before any work starts."}}, {"@type": "Question", "name": "Should I use DIY methods, tax software, or hire a CPA for spouse share ownership planning?", "acceptedAnswer": {"@type": "Answer", "text": "Hiring a CPA ensures compliance with complex tax laws like TOSI and proper structuring. DIY may risk errors; software lacks tailored advice."}}]}]}
+</script>
