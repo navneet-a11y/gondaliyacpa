@@ -221,10 +221,12 @@ templates for the post type, so those pages still render head tags — just
 generated ones rather than per-page copy. A stored value overrides the
 template for that page.
 
-**House style for the values** (what the four above use): title opens with the
-focus keyword and stays at or under about 60 characters, in the form
-`Accountant for X | Ontario … CPA`; description runs to about 150 characters,
-leads with `Ontario CPA for X:` and then names the two or three provisions that
-actually differentiate the page; focus keyword is the row's primary keyword,
-`accountant for <industry>`. AFFORDABLE stays capitalised in a description as
-it does in page prose.
+**House style for the values** (what the four above use): title opens
+`Tax Accountant for X | Ontario … CPA`, matching the page's own `<h1>`. The
+focus keyword stays `accountant for <industry>` without "Tax", which still
+gives an exact match because that phrase is contained verbatim inside
+`Tax Accountant for X`. Titles run 48–62 characters.
+
+The description runs to about 150 characters, leads with `Ontario CPA for X:`
+and then names the two or three provisions that actually differentiate the
+page. AFFORDABLE stays capitalised in a description as it does in page prose.
