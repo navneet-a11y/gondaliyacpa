@@ -105,7 +105,7 @@ FEE_ROWS = [('The T2 return', 'Including the T2 Short where the corporation qual
             ('CRA confirmation', 'Emailed within 3 business days')]
 
 from f9_registry import REGISTRY, sibling_links, assert_regular
-assert len(REGISTRY) == 27, 'batch 5 renders against the 27-guide registry'
+assert len(REGISTRY) == 30, 'batch 5 renders against the 30-guide registry'
 assert_regular()
 
 def a(href, text):

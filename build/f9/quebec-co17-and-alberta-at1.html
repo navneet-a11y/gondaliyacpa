@@ -1,0 +1,203 @@
+<style>
+.ei-wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+.ei-btn-blue{background:rgba(32,135,201,1);color:#fff !important;padding:13px 26px;border-radius:6px;font-weight:700;font-size:0.95em;text-transform:uppercase;text-decoration:none !important;display:inline-block;line-height:1.4;text-align:center;min-width:120px}
+.ei-section{padding:26px 20px}
+.ei-section-alt{background:#f7f9fc;padding:26px 20px}
+.ei-art .ei-h2{font-weight:800;color:#1a2340;margin:0 0 10px;font-size:1.45em;line-height:1.3}
+.ei-art > *:last-child{margin-bottom:0}
+.ei-art p{color:#4a5568;line-height:1.8}
+.ei-art a{color:rgba(32,135,201,1)}
+.ei-art ul{color:#4a5568;line-height:1.8}
+.ei-info{background:#f0f7fd;border-left:4px solid rgba(32,135,201,1);border-radius:0 8px 8px 0;padding:14px 18px;margin:18px 0}
+.ei-info p{margin:0;color:#1a2340;line-height:1.7}
+.ei-warn{background:#fffbf0;border-left:4px solid #f6ad1a;border-radius:0 8px 8px 0;padding:14px 18px;margin:18px 0}
+.ei-warn p{margin:0;color:#7c5800;line-height:1.7}
+.ei-danger{background:#fff5f5;border-left:4px solid #e53e3e;border-radius:0 8px 8px 0;padding:14px 18px;margin:18px 0}
+.ei-danger p{margin:0;color:#742a2a;line-height:1.7}
+.ei-hero{background:linear-gradient(135deg,#0f1624 0%,#1a2340 55%,#1e3a6e 100%);padding:40px 20px}
+.ei-hero-inner{max-width:860px;margin:0 auto;text-align:center}
+.ei-hero-eyebrow{display:inline-block;background:rgba(32,135,201,0.15);border:1px solid rgba(32,135,201,0.4);border-radius:50px;padding:5px 16px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:rgba(32,135,201,1);margin-bottom:16px;font-size:.8em}
+.ei-hero h1{color:#fff;font-weight:800;line-height:1.2;margin:0 0 14px;font-size:2.1em}
+.ei-hero h1 span{color:#f6ad1a}
+.ei-hero-sub{color:rgba(255,255,255,0.78);max-width:720px;margin:0 auto 10px;line-height:1.75}
+.ei-hero-by{color:rgba(255,255,255,0.6);max-width:720px;margin:0 auto 22px;line-height:1.6;font-size:.86em}
+.ei-hero-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.ei-tbl{width:100%;border-collapse:collapse;margin:18px 0;border:1px solid #d1d5db}
+.ei-tbl th{background:#1a2340;color:#fff;font-weight:700;padding:12px 14px;text-align:left;border:1px solid #374151}
+.ei-tbl td{padding:10px 14px;border:1px solid #d1d5db;color:#2d3748;line-height:1.5}
+.ei-tbl tr:nth-child(even){background:#f7f9fc}
+.ei-tbl tr:hover{background:#edf2f7}
+.ei-updated{color:#718096;font-size:.9em;margin:0 0 18px}
+.ei-toc{background:linear-gradient(180deg,#ffffff,#f7f9fc);border:1px solid #e2e8f0;border-radius:12px;padding:18px 22px;margin:0 0 10px;box-shadow:0 1px 2px rgba(26,35,64,.05)}
+.ei-toc h2{font-size:.76em;font-weight:800;color:#8795ab;margin:0 0 10px;text-transform:uppercase;letter-spacing:1.3px}
+.ei-toc ol{margin:0;padding:0;list-style:none;counter-reset:toc;columns:2;column-gap:30px}
+.ei-toc li{break-inside:avoid;counter-increment:toc;margin:0}
+.ei-toc a{display:flex;gap:10px;align-items:baseline;padding:6px 9px;border-radius:6px;color:#1a2340;text-decoration:none;line-height:1.45}
+.ei-toc a::before{content:counter(toc);color:rgba(32,135,201,1);font-weight:800;font-size:.82em;min-width:15px;flex-shrink:0}
+.ei-toc a:hover{background:#eaf3fb;color:rgba(32,135,201,1);text-decoration:none}
+.ei-cta-inline{background:#1a2340;border-radius:10px;padding:24px 28px;margin:28px 0;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px}
+.ei-cta-inline h3{color:#fff;margin:0 0 4px;font-weight:700}
+.ei-cta-inline p{color:rgba(255,255,255,0.65);margin:0}
+.ei-cta-inline a,.ei-cta-inline a:visited,.ei-cta-inline a:hover,.ei-cta-bottom a,.ei-cta-bottom a:visited,.ei-cta-bottom a:hover,.ei-hero-btns a,.ei-hero-btns a:visited,.ei-hero-btns a:hover{color:#fff !important;text-decoration:none !important}
+.ei-faq{max-width:900px;margin:16px auto 0}
+.ei-faq details{border:1px solid #e2e8f0;border-radius:8px;margin-bottom:9px;background:#fff}
+.ei-faq summary{padding:14px 18px;font-weight:600;color:#1a2340;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:14px;line-height:1.5}
+.ei-faq summary::-webkit-details-marker{display:none}
+.ei-faq summary::after{content:'+';color:rgba(32,135,201,1);font-weight:400;font-size:1.4em;line-height:1;flex-shrink:0;transition:transform .15s ease}
+.ei-faq details[open] summary{color:rgba(32,135,201,1)}
+.ei-faq details[open] summary::after{transform:rotate(45deg)}
+.ei-faq .ei-faq-a{padding:0 18px 15px}
+.ei-faq .ei-faq-a p{margin:0;color:#4a5568;line-height:1.75}
+.ei-art h3{font-weight:700;color:#1a2340;margin:26px 0 8px;font-size:1.15em}
+.ei-qlist{max-width:900px;margin:12px auto 0;padding:0;list-style:none}
+.ei-qlist li{border:1px solid #e2e8f0;border-radius:8px;margin-bottom:10px;background:#fff}
+.ei-qlist a{display:block;padding:16px 20px;font-weight:600;color:#1a2340 !important;text-decoration:none !important}
+.ei-qlist a:hover{background:#f7f9fc;color:rgba(32,135,201,1) !important}
+.ei-cta-bottom{background:linear-gradient(135deg,#0f1624,#1a2340);padding:40px 20px;text-align:center}
+.ei-cta-bottom h2{color:#fff;font-weight:800;margin:0 0 10px;font-size:1.5em}
+.ei-cta-bottom p{color:rgba(255,255,255,0.72);max-width:600px;margin:0 auto 22px;line-height:1.75}
+.entry-header{display:none!important}
+.ast-article-single,.ast-article-single .entry-content{margin-top:0;padding-top:0}
+@media(max-width:900px){.ei-cta-inline{flex-direction:column;text-align:center}.ei-hero h1{font-size:1.6em}.ei-art .ei-h2{font-size:1.3em}.ei-toc ol{columns:1}}
+</style>
+<div class="ei-hero"><div class="ei-hero-inner"><span class="ei-hero-eyebrow">Provincial</span><h1>The Complete Guide to <span>Quebec CO-17 and Alberta AT1</span></h1><p class="ei-hero-sub">Quebec and Alberta each collect their own corporate tax, so each has a separate return. CO-17 and AT1 are not part of the federal T2 and are not covered by the fee. Nil T2 filing is $300.00 plus HST per tax year.</p><p class="ei-hero-by">Written and reviewed by Sharad Gondaliya, CPA (Ontario), CPA Ontario Membership 61040184.</p><div class="ei-hero-btns"><a class="ei-btn-blue" href="https://corpnilfilingfor300.ca/form/">Start Nil T2 Filing NOW</a><a class="ei-btn-blue" style="background:transparent;border:2px solid rgba(255,255,255,0.4)" href="https://corpnilfilingfor300.ca/tools/provincial-return-requirement-checker/">Check which apply</a></div></div></div>
+<div class="ei-section"><div class="ei-wrap ei-art">
+<p class="ei-updated">Last reviewed: October 29, 2026 &nbsp;&middot;&nbsp; <a href="https://corpnilfilingfor300.ca/guides/">All nil T2 filing guides</a></p>
+<div class="ei-toc"><h2>On this page</h2>
+<ol>
+<li><a href="#two-exceptions">Most Provinces Collect Through the Federal Return</a></li>
+<li><a href="#separate-means-separate">Separate Means Separate</a></li>
+<li><a href="#a-quiet-year">A Quiet Year Is Quiet on Both Returns</a></li>
+<li><a href="#not-covered">Neither Is Covered by the Fee</a></li>
+<li><a href="#permanent-establishment">What Decides Whether a Province Is Involved</a></li>
+<li><a href="#not-the-registry">The Registry Annual Return Is a Different Thing</a></li>
+<li><a href="#alberta">Alberta: AT1</a></li>
+<li><a href="#quebec">Quebec: CO-17</a></li>
+<li><a href="#what-the-t2-still-does">The Federal T2 Is Still Required</a></li>
+<li><a href="#dissolution">Both Matter at a Wind-Up</a></li>
+<li><a href="#summary">The Whole of It, in Five Lines</a></li>
+<li><a href="#fee">What the Fee Covers</a></li>
+</ol></div>
+<div class="ei-info"><p>Gondaliya CPA Professional Corporation is a registered EFILE electronic filer. Returns are prepared and transmitted in Canada. Credentials are never shared and never used offshore.</p></div>
+</div></div>
+<div class="ei-section" id="two-exceptions"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">Most Provinces Collect Through the Federal Return</h2>
+<p>In most of Canada a corporation files one corporate income tax return. The province levies its own corporate tax, but it is collected through the federal T2, so the federal return settles both and there is nothing separate to send.</p>
+<p>Quebec and Alberta are the exceptions. Each administers its own corporate income tax and each has its own return. Quebec&#8217;s is CO-17, filed with Revenu Quebec. Alberta&#8217;s is AT1.</p>
+<table class="ei-tbl"><thead><tr><th scope="col">Where the corporation operates</th><th scope="col">Corporate income tax returns</th></tr></thead><tbody>
+<tr><td>Quebec</td><td>The federal T2 and CO-17</td></tr>
+<tr><td>Alberta</td><td>The federal T2 and AT1</td></tr>
+<tr><td>Everywhere else</td><td>The federal T2 on its own</td></tr>
+</tbody></table>
+</div></div>
+<div class="ei-section" id="separate-means-separate"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">Separate Means Separate</h2>
+<p>CO-17 is a separate provincial return. AT1 is a separate provincial return. That phrasing is deliberate and it is worth taking literally: neither is a schedule attached to the T2, neither is produced as a by-product of filing federally, and filing the T2 does not file either.</p>
+<p>Each has its own form, its own filing, and its own deadline. A corporation that files a perfect T2 and nothing else has met one of its two obligations.</p>
+<div class="ei-info"><p>The <a href="https://corpnilfilingfor300.ca/tools/provincial-return-requirement-checker/">provincial return requirement checker</a> answers which of them apply to a particular corporation, in two questions.</p></div>
+</div></div>
+<div class="ei-section-alt" id="a-quiet-year"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">A Quiet Year Is Quiet on Both Returns</h2>
+True
+</div></div>
+<div class="ei-section" id="not-covered"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">Neither Is Covered by the Fee</h2>
+<p>The fee of $300.00 plus HST per tax year covers one nil federal T2 return for one corporation for one tax year. CO-17 is not covered by it, and neither is AT1.</p>
+<p>Stating that plainly is better than leaving it to be discovered. A corporation with a Quebec or Alberta permanent establishment needs work this service does not price, and pretending otherwise would be worse than saying so.</p>
+<p>Where a provincial return is needed it is handled by Gondaliya CPA Professional Corporation at gondaliyacpa.ca at $350.00 plus HST per year. The <a href="https://corpnilfilingfor300.ca/pricing/nil-t2-filing-cost/">nil T2 filing cost</a> page sets out the whole boundary of what sits inside the fee.</p>
+</div></div>
+<div class="ei-wrap"><div class="ei-cta-inline"><div><h3>Nil T2 Filing, $300.00 plus HST per tax year</h3><p>One price for every year and every province. CPA reviewed and transmitted electronically.</p></div><a class="ei-btn-blue" href="https://corpnilfilingfor300.ca/form/">Start Nil T2 Filing NOW</a></div></div>
+<div class="ei-section-alt" id="permanent-establishment"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">What Decides Whether a Province Is Involved</h2>
+True
+</div></div>
+<div class="ei-section" id="not-the-registry"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">The Registry Annual Return Is a Different Thing</h2>
+<p>This is the commonest confusion on the subject, and it is worth separating carefully, because the two obligations share the words "annual" and "provincial" and nothing else.</p>
+<table class="ei-tbl"><thead><tr><th scope="col"></th><th scope="col">A provincial tax return</th><th scope="col">A registry annual return</th></tr></thead><tbody>
+<tr><td>What it is</td><td>CO-17 in Quebec, AT1 in Alberta</td><td>A filing confirming the directors and the registered office</td></tr>
+<tr><td>What it reports</td><td>Income and provincial corporate tax</td><td>No income at all</td></tr>
+<tr><td>Who it goes to</td><td>The provincial tax administration</td><td>The registry the corporation is incorporated with</td></tr>
+<tr><td>What missing it does</td><td>An outstanding return</td><td>A striking: the registry dissolves the corporation</td></tr>
+</tbody></table>
+<p>Every corporation owes a registry annual return somewhere, including the 11 provinces and territories that have no separate tax return. The <a href="https://corpnilfilingfor300.ca/guides/provincial-and-federal-annual-returns/">guide to provincial and federal annual returns</a> covers that obligation, and the <a href="https://corpnilfilingfor300.ca/tools/involuntary-dissolution-risk-checker/">involuntary dissolution risk checker</a> covers what missing it produces.</p>
+</div></div>
+<div class="ei-section-alt" id="alberta"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">Alberta: AT1</h2>
+True
+</div></div>
+<div class="ei-section" id="quebec"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">Quebec: CO-17</h2>
+<p>CO-17 is Quebec&#8217;s corporate income tax return, filed with Revenu Quebec. It is a separate provincial return, not a schedule of the federal T2 and not produced by filing federally.</p>
+<p>A corporation with a Quebec permanent establishment files both. A nil year produces a nil CO-17 rather than no CO-17.</p>
+<p>CO-17 is not covered by the fee of $300.00 plus HST per tax year.</p>
+<div class="ei-warn"><p>Quebec is also the province where the two obligations on this page are most often conflated, because the registry filing and the tax return both sit with Quebec institutions. They remain separate filings with separate consequences.</p></div>
+</div></div>
+<div class="ei-section-alt" id="what-the-t2-still-does"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">The Federal T2 Is Still Required</h2>
+True
+</div></div>
+<div class="ei-section" id="dissolution"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">Both Matter at a Wind-Up</h2>
+<p>A corporation being wound up has to be current on everything, and a provincial return is part of everything. An outstanding CO-17 or AT1 is an outstanding return in the same way an unfiled T2 is.</p>
+<p>Where a clearance certificate is being sought, the request rests on a complete filing record. The federal side of that is what this service covers; the provincial side, where it exists, is handled at gondaliyacpa.ca.</p>
+<p>The <a href="https://corpnilfilingfor300.ca/guides/winding-up-an-inactive-corporation/">guide to winding up an inactive corporation</a> sets out the order the steps have to happen in, and the <a href="https://corpnilfilingfor300.ca/tools/clearance-certificate-requirement-checker/">clearance certificate requirement checker</a> covers the certificate itself.</p>
+</div></div>
+<div class="ei-section-alt" id="summary"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">The Whole of It, in Five Lines</h2>
+True
+</div></div>
+<div class="ei-section" id="fee"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">What the Fee Covers</h2>
+<p>The fee is $300.00 plus HST per tax year, covering one nil T2 return for one corporation for one tax year:</p>
+<table class="ei-tbl"><thead><tr><th scope="col">Included</th><th scope="col">Detail</th></tr></thead><tbody>
+<tr><td>The T2 return</td><td>Including the T2 Short where the corporation qualifies</td></tr>
+<tr><td>GIFI Schedules 100, 125 and 141</td><td>Where they are required</td></tr>
+<tr><td>Schedule 24</td><td>On a first return</td></tr>
+<tr><td>Schedule 50</td><td>For every shareholder at 10% or more</td></tr>
+<tr><td>Schedule 8 and loss continuity</td><td>Recorded</td></tr>
+<tr><td>Form T183CORP package</td><td>With single-use secure e-signing</td></tr>
+<tr><td>CPA review</td><td>Before transmission</td></tr>
+<tr><td>Electronic transmission</td><td>By a registered EFILE electronic filer</td></tr>
+<tr><td>One corrected transmission</td><td>If the Agency rejects the first one</td></tr>
+<tr><td>CRA confirmation</td><td>Emailed within 3 business days</td></tr>
+</tbody></table>
+<p>See the full <a href="https://corpnilfilingfor300.ca/pricing/nil-t2-filing-cost/">nil T2 filing cost</a>.</p>
+</div></div>
+<div class="ei-section-alt"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">Frequently Asked Questions</h2>
+<div class="ei-faq">
+<details><summary>Does Quebec have a separate corporate tax return?</summary><div class="ei-faq-a"><p>Yes. CO-17 is a separate provincial return, filed with Revenu Quebec. It is not part of the federal T2, and filing the T2 does not file it.</p></div></details>
+<details><summary>Does Alberta have a separate corporate tax return?</summary><div class="ei-faq-a"><p>Yes. AT1 is a separate provincial return in the same way, filed with Alberta rather than as part of the federal T2.</p></div></details>
+<details><summary>What about the other provinces and territories?</summary><div class="ei-faq-a"><p>Elsewhere the province or territory collects its corporate income tax through the federal return, so the T2 is the only corporate income tax return the corporation files.</p></div></details>
+<details><summary>Is a nil CO-17 or AT1 still required?</summary><div class="ei-faq-a"><p>The obligation follows from having a permanent establishment in the province rather than from there being something to report, so a nil year still produces a return on each one that applies.</p></div></details>
+<details><summary>Are CO-17 and AT1 covered by the fee?</summary><div class="ei-faq-a"><p>No. The fee of $300.00 plus HST per tax year covers one nil federal T2 return for one corporation for one tax year. Provincial returns are handled by Gondaliya CPA Professional Corporation at gondaliyacpa.ca at $350.00 plus HST per year.</p></div></details>
+<details><summary>Is this the same as the provincial annual return?</summary><div class="ei-faq-a"><p>No, and they are easy to confuse. A registry annual return confirms the directors and the registered office and reports no income; a provincial tax return reports income and tax. Missing the registry one gets a corporation struck.</p></div></details>
+</div>
+<h3>Questions Answered in Full</h3>
+<ul class="ei-qlist">
+<li><a href="https://corpnilfilingfor300.ca/answers/do-i-need-to-file-a-t2-if-my-corporation-had-no-activity/">Do I Need to File a T2 if My Corporation Had No Activity?</a></li>
+<li><a href="https://corpnilfilingfor300.ca/answers/how-do-i-file-a-nil-t2-return-in-canada/">How Do I File a Nil T2 Return in Canada?</a></li>
+<li><a href="https://corpnilfilingfor300.ca/answers/do-i-need-to-file-a-t2-every-year-if-my-corporation-is-inactive/">Do I Need to File a T2 Every Year if My Corporation Is Inactive?</a></li>
+<li><a href="https://corpnilfilingfor300.ca/answers/can-i-file-a-nil-t2-myself-without-an-accountant/">Can I File a Nil T2 Myself Without an Accountant?</a></li>
+<li><a href="https://corpnilfilingfor300.ca/answers/do-i-need-financial-statements-for-a-nil-t2-return/">Do I Need Financial Statements for a Nil T2 Return?</a></li>
+<li><a href="https://corpnilfilingfor300.ca/answers/how-do-i-know-if-my-corporation-counts-as-dormant/">How Do I Know if My Corporation Counts as Dormant?</a></li>
+</ul>
+<h3>The Other Nil T2 Filing Guides</h3>
+<ul class="ei-qlist">
+<li><a href="https://corpnilfilingfor300.ca/guides/nil-t2-return-complete-guide/">The Complete Guide to the Nil T2 Return</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/dormant-and-inactive-corporations/">The Complete Guide to Dormant and Inactive Corporations</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/catch-up-unfiled-corporate-tax-returns/">The Complete Guide to Catching Up on Unfiled Corporate Tax Returns</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/final-t2-and-dissolution/">The Complete Guide to the Final T2 and Dissolution</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/t2-short-eligibility/">The Complete Guide to T2 Short Eligibility</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/provincial-and-federal-annual-returns/">The Complete Guide to Provincial and Federal Annual Returns</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/t183corp-signing-and-transmission/">The Complete Guide to Form T183CORP Signing and Transmission</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/how-to-file-a-nil-t2-return/">How to File a Nil T2 Return</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/gifi-schedules-100-125-141/">The Complete Guide to GIFI Schedules 100, 125 and 141</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/schedule-8-and-loss-continuity/">The Complete Guide to Schedule 8 and Loss Continuity</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/first-year-t2-filing/">The Complete Guide to First-Year T2 Filing</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/numbered-company-tax-filing/">The Complete Guide to Numbered Company Tax Filing</a></li>
+</ul>
+</div></div>
+<div class="ei-cta-bottom"><div class="ei-wrap"><h2>Nil T2 Filing, $300.00 plus HST per tax year</h2><p>Type your corporation name, pick your unfiled years, pay, and sign Form T183CORP on a secure screen. Your CRA confirmation is emailed within 3 business days.</p><a class="ei-btn-blue" href="https://corpnilfilingfor300.ca/form/">Start Nil T2 Filing NOW</a></div></div>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Article", "@id": "https://corpnilfilingfor300.ca/guides/quebec-co17-and-alberta-at1/#article", "headline": "The Complete Guide to Quebec CO-17 and Alberta AT1", "name": "Quebec CO-17 and Alberta AT1 | Complete Guide", "description": "Quebec and Alberta each collect their own corporate tax, so each has a separate return. CO-17 and AT1 are not part of the federal T2 and are not covered by the fee.", "inLanguage": "en-CA", "datePublished": "2026-10-29", "dateModified": "2026-10-29", "mainEntityOfPage": "https://corpnilfilingfor300.ca/guides/quebec-co17-and-alberta-at1/", "author": {"@type": "Person", "name": "Sharad Gondaliya", "honorificSuffix": "CPA", "url": "https://corpnilfilingfor300.ca/sharad-gondaliya-cpa/"}, "publisher": {"@type": "Organization", "name": "Gondaliya CPA Professional Corporation"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Nil T2 filing in Canada", "item": "https://corpnilfilingfor300.ca/"}, {"@type": "ListItem", "position": 2, "name": "Guides", "item": "https://corpnilfilingfor300.ca/guides/"}, {"@type": "ListItem", "position": 3, "name": "The Complete Guide to Quebec CO-17 and Alberta AT1", "item": "https://corpnilfilingfor300.ca/guides/quebec-co17-and-alberta-at1/"}]}]}</script>

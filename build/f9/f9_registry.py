@@ -71,6 +71,29 @@ REGISTRY = [
   'The Complete Guide to Schedule 50 and Shareholder Reporting'),
  ('non-resident-owned-corporation-nil-filing',
   'The Complete Guide to Non-Resident-Owned Corporation Nil Filing'),
+ # Batch 6, guides 28 to 30, which complete the family at the plan's 30.
+ #
+ # Appendix A's F9 list could not supply these: it was exhausted at 27, and
+ # what remained in it were naming variants of guides already live. All three
+ # topics below are instead backed by approved blog topics in the plan's
+ # section at line 2206, so every fact they assert has a source:
+ #
+ #   28  "Open GST/HST Accounts Still Need Nil Filings", "Closing a GST/HST
+ #       Account With Form RC145", "Nil Payroll Accounts and Your Remittance
+ #       Obligation"
+ #   29  "Your First Tax Year Cannot Exceed 53 Weeks", "Why a Wrong Year-End
+ #       Gets Your T2 Transmission Rejected"
+ #   30  "Quebec CO-17 Is a Separate Provincial Return", "Alberta AT1 Is a
+ #       Separate Provincial Return", and hard rule 8
+ #
+ # Each also has live Family 2 tools to link down to, which is what the
+ # pillar-to-tool-to-form path in 6(g) wants.
+ ('cra-accounts-on-a-dormant-corporation',
+  'The Complete Guide to CRA Accounts on a Dormant Corporation'),
+ ('choosing-and-changing-a-fiscal-year-end',
+  'The Complete Guide to Choosing and Changing a Fiscal Year-End'),
+ ('quebec-co17-and-alberta-at1',
+  'The Complete Guide to Quebec CO-17 and Alberta AT1'),
 ]
 
 HUB = 'https://corpnilfilingfor300.ca/guides/'

@@ -1,0 +1,222 @@
+<style>
+.ei-wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+.ei-btn-blue{background:rgba(32,135,201,1);color:#fff !important;padding:13px 26px;border-radius:6px;font-weight:700;font-size:0.95em;text-transform:uppercase;text-decoration:none !important;display:inline-block;line-height:1.4;text-align:center;min-width:120px}
+.ei-section{padding:26px 20px}
+.ei-section-alt{background:#f7f9fc;padding:26px 20px}
+.ei-art .ei-h2{font-weight:800;color:#1a2340;margin:0 0 10px;font-size:1.45em;line-height:1.3}
+.ei-art > *:last-child{margin-bottom:0}
+.ei-art p{color:#4a5568;line-height:1.8}
+.ei-art a{color:rgba(32,135,201,1)}
+.ei-art ul{color:#4a5568;line-height:1.8}
+.ei-info{background:#f0f7fd;border-left:4px solid rgba(32,135,201,1);border-radius:0 8px 8px 0;padding:14px 18px;margin:18px 0}
+.ei-info p{margin:0;color:#1a2340;line-height:1.7}
+.ei-warn{background:#fffbf0;border-left:4px solid #f6ad1a;border-radius:0 8px 8px 0;padding:14px 18px;margin:18px 0}
+.ei-warn p{margin:0;color:#7c5800;line-height:1.7}
+.ei-danger{background:#fff5f5;border-left:4px solid #e53e3e;border-radius:0 8px 8px 0;padding:14px 18px;margin:18px 0}
+.ei-danger p{margin:0;color:#742a2a;line-height:1.7}
+.ei-hero{background:linear-gradient(135deg,#0f1624 0%,#1a2340 55%,#1e3a6e 100%);padding:40px 20px}
+.ei-hero-inner{max-width:860px;margin:0 auto;text-align:center}
+.ei-hero-eyebrow{display:inline-block;background:rgba(32,135,201,0.15);border:1px solid rgba(32,135,201,0.4);border-radius:50px;padding:5px 16px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:rgba(32,135,201,1);margin-bottom:16px;font-size:.8em}
+.ei-hero h1{color:#fff;font-weight:800;line-height:1.2;margin:0 0 14px;font-size:2.1em}
+.ei-hero h1 span{color:#f6ad1a}
+.ei-hero-sub{color:rgba(255,255,255,0.78);max-width:720px;margin:0 auto 10px;line-height:1.75}
+.ei-hero-by{color:rgba(255,255,255,0.6);max-width:720px;margin:0 auto 22px;line-height:1.6;font-size:.86em}
+.ei-hero-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.ei-tbl{width:100%;border-collapse:collapse;margin:18px 0;border:1px solid #d1d5db}
+.ei-tbl th{background:#1a2340;color:#fff;font-weight:700;padding:12px 14px;text-align:left;border:1px solid #374151}
+.ei-tbl td{padding:10px 14px;border:1px solid #d1d5db;color:#2d3748;line-height:1.5}
+.ei-tbl tr:nth-child(even){background:#f7f9fc}
+.ei-tbl tr:hover{background:#edf2f7}
+.ei-updated{color:#718096;font-size:.9em;margin:0 0 18px}
+.ei-toc{background:linear-gradient(180deg,#ffffff,#f7f9fc);border:1px solid #e2e8f0;border-radius:12px;padding:18px 22px;margin:0 0 10px;box-shadow:0 1px 2px rgba(26,35,64,.05)}
+.ei-toc h2{font-size:.76em;font-weight:800;color:#8795ab;margin:0 0 10px;text-transform:uppercase;letter-spacing:1.3px}
+.ei-toc ol{margin:0;padding:0;list-style:none;counter-reset:toc;columns:2;column-gap:30px}
+.ei-toc li{break-inside:avoid;counter-increment:toc;margin:0}
+.ei-toc a{display:flex;gap:10px;align-items:baseline;padding:6px 9px;border-radius:6px;color:#1a2340;text-decoration:none;line-height:1.45}
+.ei-toc a::before{content:counter(toc);color:rgba(32,135,201,1);font-weight:800;font-size:.82em;min-width:15px;flex-shrink:0}
+.ei-toc a:hover{background:#eaf3fb;color:rgba(32,135,201,1);text-decoration:none}
+.ei-cta-inline{background:#1a2340;border-radius:10px;padding:24px 28px;margin:28px 0;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px}
+.ei-cta-inline h3{color:#fff;margin:0 0 4px;font-weight:700}
+.ei-cta-inline p{color:rgba(255,255,255,0.65);margin:0}
+.ei-cta-inline a,.ei-cta-inline a:visited,.ei-cta-inline a:hover,.ei-cta-bottom a,.ei-cta-bottom a:visited,.ei-cta-bottom a:hover,.ei-hero-btns a,.ei-hero-btns a:visited,.ei-hero-btns a:hover{color:#fff !important;text-decoration:none !important}
+.ei-faq{max-width:900px;margin:16px auto 0}
+.ei-faq details{border:1px solid #e2e8f0;border-radius:8px;margin-bottom:9px;background:#fff}
+.ei-faq summary{padding:14px 18px;font-weight:600;color:#1a2340;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:14px;line-height:1.5}
+.ei-faq summary::-webkit-details-marker{display:none}
+.ei-faq summary::after{content:'+';color:rgba(32,135,201,1);font-weight:400;font-size:1.4em;line-height:1;flex-shrink:0;transition:transform .15s ease}
+.ei-faq details[open] summary{color:rgba(32,135,201,1)}
+.ei-faq details[open] summary::after{transform:rotate(45deg)}
+.ei-faq .ei-faq-a{padding:0 18px 15px}
+.ei-faq .ei-faq-a p{margin:0;color:#4a5568;line-height:1.75}
+.ei-art h3{font-weight:700;color:#1a2340;margin:26px 0 8px;font-size:1.15em}
+.ei-qlist{max-width:900px;margin:12px auto 0;padding:0;list-style:none}
+.ei-qlist li{border:1px solid #e2e8f0;border-radius:8px;margin-bottom:10px;background:#fff}
+.ei-qlist a{display:block;padding:16px 20px;font-weight:600;color:#1a2340 !important;text-decoration:none !important}
+.ei-qlist a:hover{background:#f7f9fc;color:rgba(32,135,201,1) !important}
+.ei-cta-bottom{background:linear-gradient(135deg,#0f1624,#1a2340);padding:40px 20px;text-align:center}
+.ei-cta-bottom h2{color:#fff;font-weight:800;margin:0 0 10px;font-size:1.5em}
+.ei-cta-bottom p{color:rgba(255,255,255,0.72);max-width:600px;margin:0 auto 22px;line-height:1.75}
+.entry-header{display:none!important}
+.ast-article-single,.ast-article-single .entry-content{margin-top:0;padding-top:0}
+@media(max-width:900px){.ei-cta-inline{flex-direction:column;text-align:center}.ei-hero h1{font-size:1.6em}.ei-art .ei-h2{font-size:1.3em}.ei-toc ol{columns:1}}
+</style>
+<div class="ei-hero"><div class="ei-hero-inner"><span class="ei-hero-eyebrow">Accounts</span><h1>The Complete Guide to <span>CRA Accounts on a Dormant Corporation</span></h1><p class="ei-hero-sub">A business number carries separate accounts, and each one keeps its own obligations until it is closed. What a dormant corporation still owes, and how to end it. Nil T2 filing is $300.00 plus HST per tax year.</p><p class="ei-hero-by">Written and reviewed by Sharad Gondaliya, CPA (Ontario), CPA Ontario Membership 61040184.</p><div class="ei-hero-btns"><a class="ei-btn-blue" href="https://corpnilfilingfor300.ca/form/">Start Nil T2 Filing NOW</a><a class="ei-btn-blue" style="background:transparent;border:2px solid rgba(255,255,255,0.4)" href="https://corpnilfilingfor300.ca/tools/cra-account-closure-sequencer/">Sequence the closures</a></div></div></div>
+<div class="ei-section"><div class="ei-wrap ei-art">
+<p class="ei-updated">Last reviewed: October 29, 2026 &nbsp;&middot;&nbsp; <a href="https://corpnilfilingfor300.ca/guides/">All nil T2 filing guides</a></p>
+<div class="ei-toc"><h2>On this page</h2>
+<ol>
+<li><a href="#three-accounts">A Business Number Is Not One Account</a></li>
+<li><a href="#obligation-follows-account">The Obligation Follows the Account, Not the Activity</a></li>
+<li><a href="#gst-hst">The GST/HST Account: Nil Returns Until It Is Closed</a></li>
+<li><a href="#payroll">The Payroll Account: Remittances and an Annual T4</a></li>
+<li><a href="#rc145">Form RC145 Closes Both of Them</a></li>
+<li><a href="#directors">Why These Two Accounts Reach the Directors</a></li>
+<li><a href="#income-tax-account">The Corporate Income Tax Account Is Different</a></li>
+<li><a href="#order">The Order to Deal With Them In</a></li>
+<li><a href="#dissolution">What Has to Be Closed Before a Dissolution</a></li>
+<li><a href="#not-covered">What Sits Outside the Fee, Said Plainly</a></li>
+<li><a href="#mistakes">The Four Mistakes Worth Avoiding</a></li>
+<li><a href="#fee">What the Fee Covers</a></li>
+</ol></div>
+<div class="ei-info"><p>Gondaliya CPA Professional Corporation is a registered EFILE electronic filer. Returns are prepared and transmitted in Canada. Credentials are never shared and never used offshore.</p></div>
+</div></div>
+<div class="ei-section" id="three-accounts"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">A Business Number Is Not One Account</h2>
+<p>A corporation has one business number, and that number carries separate program accounts. The corporate income tax account is the one everybody knows about, because it is the one the T2 is filed against. It is rarely the one that causes trouble.</p>
+<p>A corporation that ever had staff has a payroll account. One that ever registered for GST/HST has a GST/HST account. Each was opened for a reason, and each stays open until somebody closes it, whatever happened to the reason.</p>
+<table class="ei-tbl"><thead><tr><th scope="col">Account</th><th scope="col">Opened because</th><th scope="col">What it expects</th><th scope="col">How it ends</th></tr></thead><tbody>
+<tr><td>Corporate income tax</td><td>The corporation exists</td><td>A T2 return for every tax year</td><td>It ends with the corporation</td></tr>
+<tr><td>Payroll</td><td>Someone was going to be paid</td><td>Remittances through the year and an annual T4 information return</td><td>Form RC145</td></tr>
+<tr><td>GST/HST</td><td>The corporation registered</td><td>A GST/HST return for every reporting period</td><td>Form RC145</td></tr>
+</tbody></table>
+<p>The <a href="https://corpnilfilingfor300.ca/tools/business-number-status-checker/">business number status checker</a> works through which of them a given corporation is likely to have open.</p>
+</div></div>
+<div class="ei-section" id="obligation-follows-account"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">The Obligation Follows the Account, Not the Activity</h2>
+<p>This is the sentence that explains almost every unpleasant surprise a dormant corporation gets. The Canada Revenue Agency expects a return on an open account because the account is open. It does not wait to see whether anything happened first.</p>
+<p>So a corporation that stopped trading four years ago, paid nobody and sold nothing, still has returns falling due on every account nobody closed. Each one is a separate filing with its own deadline, and none of them is the T2.</p>
+<div class="ei-warn"><p>Being dormant is not a status you register. There is no form that tells the Agency a corporation has gone quiet and no notification that pauses an account. Nothing happens until an account is closed, and until then the dates keep arriving.</p></div>
+<p>The <a href="https://corpnilfilingfor300.ca/guides/dormant-and-inactive-corporations/">guide to dormant and inactive corporations</a> covers what being dormant does and does not change.</p>
+</div></div>
+<div class="ei-section-alt" id="gst-hst"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">The GST/HST Account: Nil Returns Until It Is Closed</h2>
+True
+</div></div>
+<div class="ei-section" id="payroll"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">The Payroll Account: Remittances and an Annual T4</h2>
+<p>An open payroll account expects two separate things, which is why it is the account most often underestimated. Through the year it expects remittances, including nil ones where nobody was paid. After the calendar year it expects a T4 information return.</p>
+<p>The T4 deadline is the one that surprises accountants as well as owners, because it does not derive from the fiscal year-end at all. It reports a calendar year and is due at the end of the following February, whatever year-end the corporation uses.</p>
+<table class="ei-tbl"><thead><tr><th scope="col">What the payroll account expects</th><th scope="col">Measured from</th><th scope="col">Due</th></tr></thead><tbody>
+<tr><td>Remittances, including nil ones</td><td>Each remittance period</td><td>For as long as the account is open</td></tr>
+<tr><td>The T4 information return</td><td>The calendar year</td><td>The end of the following February</td></tr>
+</tbody></table>
+<p>So a corporation with a June 30 year-end has a T2 date in December and a T4 date at the end of February, four months apart, neither derived from the other. The <a href="https://corpnilfilingfor300.ca/tools/t4-nil-filing-requirement-checker/">T4 nil filing requirement checker</a> gives the date, and the <a href="https://corpnilfilingfor300.ca/tools/payroll-nil-remittance-checker/">payroll nil remittance checker</a> covers the remittances.</p>
+</div></div>
+<div class="ei-wrap"><div class="ei-cta-inline"><div><h3>Nil T2 Filing, $300.00 plus HST per tax year</h3><p>One price for every year and every province. CPA reviewed and transmitted electronically.</p></div><a class="ei-btn-blue" href="https://corpnilfilingfor300.ca/form/">Start Nil T2 Filing NOW</a></div></div>
+<div class="ei-section-alt" id="rc145"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">Form RC145 Closes Both of Them</h2>
+True
+</div></div>
+<div class="ei-section" id="directors"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">Why These Two Accounts Reach the Directors</h2>
+<p>The corporate income tax account is the corporation&#8217;s own liability. The other two are not, and that distinction is the practical reason an unused payroll or GST/HST account is worth closing rather than ignoring.</p>
+<p>Payroll source deductions are money withheld from someone&#8217;s pay. Net GST/HST is money collected from customers. Neither was ever the corporation&#8217;s to keep, and amounts of that kind can be assessed against a corporation&#8217;s directors personally. Corporate income tax, on its own, cannot.</p>
+<table class="ei-tbl"><thead><tr><th scope="col">Amount</th><th scope="col">Whose money it was</th><th scope="col">Can be assessed against a director</th></tr></thead><tbody>
+<tr><td>Payroll source deductions</td><td>Withheld from someone&#8217;s pay</td><td>Yes</td></tr>
+<tr><td>Net GST/HST</td><td>Collected from customers</td><td>Yes</td></tr>
+<tr><td>Corporate income tax</td><td>The corporation&#8217;s own liability</td><td>No, not on its own</td></tr>
+</tbody></table>
+<p>A dormant corporation rarely owes corporate income tax, because a nil year assesses at $0.00. What it may have is an open account generating exactly the amounts that do reach a director. The <a href="https://corpnilfilingfor300.ca/tools/director-liability-exposure-checker/">director liability exposure checker</a> sorts which is which.</p>
+</div></div>
+<div class="ei-section-alt" id="income-tax-account"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">The Corporate Income Tax Account Is Different</h2>
+True
+</div></div>
+<div class="ei-section" id="order"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">The Order to Deal With Them In</h2>
+<p>The sequence is not arbitrary, because each step rests on the one before it. Returns first, because a closure does not file anything. Closures next, because they stop the dates recurring. Anything to do with dissolution last, because it rests on a complete filing record.</p>
+<table class="ei-tbl"><thead><tr><th scope="col">Order</th><th scope="col">Step</th><th scope="col">Why it sits here</th></tr></thead><tbody>
+<tr><td>1</td><td>File every outstanding T2 return, oldest first</td><td>Each year opens from the closing balances of the one before it</td></tr>
+<tr><td>2</td><td>File the outstanding GST/HST and payroll returns</td><td>A closure does not file what fell due while the account was open</td></tr>
+<tr><td>3</td><td>Close the payroll account with Form RC145</td><td>Ends the remittances and the annual T4</td></tr>
+<tr><td>4</td><td>Close the GST/HST account with Form RC145</td><td>Ends the reporting periods</td></tr>
+<tr><td>5</td><td>The final T2, clearance and the registry filing</td><td>Only where the corporation is being wound up</td></tr>
+</tbody></table>
+<p>The <a href="https://corpnilfilingfor300.ca/tools/cra-account-closure-sequencer/">CRA account closure sequencer</a> produces this list for a particular corporation, naming which steps apply and which sit outside the fee.</p>
+</div></div>
+<div class="ei-section-alt" id="dissolution"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">What Has to Be Closed Before a Dissolution</h2>
+True
+</div></div>
+<div class="ei-section" id="not-covered"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">What Sits Outside the Fee, Said Plainly</h2>
+<p>The fee of $300.00 plus HST per tax year covers one nil T2 return for one corporation for one tax year. It is worth being direct about what that does not include, because the accounts on this page are the commonest place the boundary gets found the hard way.</p>
+<table class="ei-tbl"><thead><tr><th scope="col">Item</th><th scope="col">Covered by the fee</th></tr></thead><tbody>
+<tr><td>A nil T2 return for a tax year</td><td>Yes</td></tr>
+<tr><td>A GST/HST return, nil or otherwise</td><td>No</td></tr>
+<tr><td>A payroll remittance, nil or otherwise</td><td>No</td></tr>
+<tr><td>The T4 information return</td><td>No</td></tr>
+<tr><td>Closing an account with Form RC145</td><td>No</td></tr>
+<tr><td>The registry annual return</td><td>No</td></tr>
+<tr><td>A clearance certificate request</td><td>No</td></tr>
+</tbody></table>
+<p>Where any of those are needed, they are handled by Gondaliya CPA Professional Corporation at gondaliyacpa.ca rather than priced here. The full boundary is on the <a href="https://corpnilfilingfor300.ca/pricing/nil-t2-filing-cost/">nil T2 filing cost</a> page.</p>
+</div></div>
+<div class="ei-section-alt" id="mistakes"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">The Four Mistakes Worth Avoiding</h2>
+True
+</div></div>
+<div class="ei-section" id="fee"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">What the Fee Covers</h2>
+<p>The fee is $300.00 plus HST per tax year, covering one nil T2 return for one corporation for one tax year:</p>
+<table class="ei-tbl"><thead><tr><th scope="col">Included</th><th scope="col">Detail</th></tr></thead><tbody>
+<tr><td>The T2 return</td><td>Including the T2 Short where the corporation qualifies</td></tr>
+<tr><td>GIFI Schedules 100, 125 and 141</td><td>Where they are required</td></tr>
+<tr><td>Schedule 24</td><td>On a first return</td></tr>
+<tr><td>Schedule 50</td><td>For every shareholder at 10% or more</td></tr>
+<tr><td>Schedule 8 and loss continuity</td><td>Recorded</td></tr>
+<tr><td>Form T183CORP package</td><td>With single-use secure e-signing</td></tr>
+<tr><td>CPA review</td><td>Before transmission</td></tr>
+<tr><td>Electronic transmission</td><td>By a registered EFILE electronic filer</td></tr>
+<tr><td>One corrected transmission</td><td>If the Agency rejects the first one</td></tr>
+<tr><td>CRA confirmation</td><td>Emailed within 3 business days</td></tr>
+</tbody></table>
+<p>See the full <a href="https://corpnilfilingfor300.ca/pricing/nil-t2-filing-cost/">nil T2 filing cost</a>.</p>
+</div></div>
+<div class="ei-section-alt"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">Frequently Asked Questions</h2>
+<div class="ei-faq">
+<details><summary>Does a dormant corporation still have to file GST/HST returns?</summary><div class="ei-faq-a"><p>While the account is open, yes. A period with no sales is reported as a nil return rather than skipped, because the obligation follows the open account rather than the activity.</p></div></details>
+<details><summary>Do I have to make payroll remittances if nobody was paid?</summary><div class="ei-faq-a"><p>While the payroll account is open the Agency expects the remittances, including nil ones, and a T4 information return after each calendar year. Form RC145 closes the account and ends both.</p></div></details>
+<details><summary>How do I close a GST/HST or payroll account?</summary><div class="ei-faq-a"><p>With Form RC145, which closes either one. Closing it does not file the returns that fell due while it was open, so the outstanding returns come first.</p></div></details>
+<details><summary>Which of these can be assessed against me personally?</summary><div class="ei-faq-a"><p>Payroll source deductions and net GST/HST can be assessed against directors personally, because neither was ever the corporation&#8217;s money. Corporate income tax, on its own, cannot.</p></div></details>
+<details><summary>Is any of this covered by the nil T2 fee?</summary><div class="ei-faq-a"><p>The nil T2 return is. The GST/HST returns, the payroll remittances, the T4 return and the account closures all sit outside the fee of $300.00 plus HST per tax year.</p></div></details>
+<details><summary>Can I dissolve the corporation instead of dealing with these?</summary><div class="ei-faq-a"><p>Not cleanly. A clearance certificate request rests on a complete filing record, so an outstanding period blocks it, and dissolving anyway leaves the tax years open behind the corporation.</p></div></details>
+</div>
+<h3>Questions Answered in Full</h3>
+<ul class="ei-qlist">
+<li><a href="https://corpnilfilingfor300.ca/answers/do-i-need-a-business-number-to-file-a-nil-t2/">Do I Need a Business Number to File a Nil T2?</a></li>
+<li><a href="https://corpnilfilingfor300.ca/answers/how-do-i-close-my-corporate-tax-account-after-dissolution/">How Do I Close My Corporate Tax Account After Dissolution?</a></li>
+<li><a href="https://corpnilfilingfor300.ca/answers/do-i-need-to-file-a-nil-t2-if-my-corporation-has-no-bank-account/">Do I Need to File a Nil T2 if My Corporation Has No Bank Account?</a></li>
+<li><a href="https://corpnilfilingfor300.ca/answers/what-happens-if-i-dont-report-a-dormant-corporation-to-cra/">What Happens if I Don't Report a Dormant Corporation to the CRA?</a></li>
+<li><a href="https://corpnilfilingfor300.ca/answers/how-do-i-know-if-my-corporation-counts-as-dormant/">How Do I Know if My Corporation Counts as Dormant?</a></li>
+<li><a href="https://corpnilfilingfor300.ca/answers/do-i-need-to-file-a-t2-every-year-if-my-corporation-is-inactive/">Do I Need to File a T2 Every Year if My Corporation Is Inactive?</a></li>
+</ul>
+<h3>The Other Nil T2 Filing Guides</h3>
+<ul class="ei-qlist">
+<li><a href="https://corpnilfilingfor300.ca/guides/choosing-and-changing-a-fiscal-year-end/">The Complete Guide to Choosing and Changing a Fiscal Year-End</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/quebec-co17-and-alberta-at1/">The Complete Guide to Quebec CO-17 and Alberta AT1</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/nil-t2-return-complete-guide/">The Complete Guide to the Nil T2 Return</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/dormant-and-inactive-corporations/">The Complete Guide to Dormant and Inactive Corporations</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/catch-up-unfiled-corporate-tax-returns/">The Complete Guide to Catching Up on Unfiled Corporate Tax Returns</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/final-t2-and-dissolution/">The Complete Guide to the Final T2 and Dissolution</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/t2-short-eligibility/">The Complete Guide to T2 Short Eligibility</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/provincial-and-federal-annual-returns/">The Complete Guide to Provincial and Federal Annual Returns</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/t183corp-signing-and-transmission/">The Complete Guide to Form T183CORP Signing and Transmission</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/how-to-file-a-nil-t2-return/">How to File a Nil T2 Return</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/gifi-schedules-100-125-141/">The Complete Guide to GIFI Schedules 100, 125 and 141</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/schedule-8-and-loss-continuity/">The Complete Guide to Schedule 8 and Loss Continuity</a></li>
+</ul>
+</div></div>
+<div class="ei-cta-bottom"><div class="ei-wrap"><h2>Nil T2 Filing, $300.00 plus HST per tax year</h2><p>Type your corporation name, pick your unfiled years, pay, and sign Form T183CORP on a secure screen. Your CRA confirmation is emailed within 3 business days.</p><a class="ei-btn-blue" href="https://corpnilfilingfor300.ca/form/">Start Nil T2 Filing NOW</a></div></div>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Article", "@id": "https://corpnilfilingfor300.ca/guides/cra-accounts-on-a-dormant-corporation/#article", "headline": "The Complete Guide to CRA Accounts on a Dormant Corporation", "name": "CRA Accounts on a Dormant Corporation | Complete Guide", "description": "A business number carries separate accounts, and each one keeps its own obligations until it is closed. What a dormant corporation still owes, and how to end it.", "inLanguage": "en-CA", "datePublished": "2026-10-29", "dateModified": "2026-10-29", "mainEntityOfPage": "https://corpnilfilingfor300.ca/guides/cra-accounts-on-a-dormant-corporation/", "author": {"@type": "Person", "name": "Sharad Gondaliya", "honorificSuffix": "CPA", "url": "https://corpnilfilingfor300.ca/sharad-gondaliya-cpa/"}, "publisher": {"@type": "Organization", "name": "Gondaliya CPA Professional Corporation"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Nil T2 filing in Canada", "item": "https://corpnilfilingfor300.ca/"}, {"@type": "ListItem", "position": 2, "name": "Guides", "item": "https://corpnilfilingfor300.ca/guides/"}, {"@type": "ListItem", "position": 3, "name": "The Complete Guide to CRA Accounts on a Dormant Corporation", "item": "https://corpnilfilingfor300.ca/guides/cra-accounts-on-a-dormant-corporation/"}]}]}</script>

@@ -15,7 +15,7 @@ import json, re, sys, os, collections
 HERE = os.path.dirname(os.path.abspath(__file__))
 MANIFESTS = ['f9-manifest.json', 'f9-batch2-manifest.json',
              'f9-batch3-manifest.json', 'f9-batch4-manifest.json',
-             'f9-batch5-manifest.json']
+             'f9-batch5-manifest.json', 'f9-batch6-manifest.json']
 INBOUND_MIN = 12   # 6(g) line 1528
 OUTBOUND_MAX = 40  # 6(g) line 1528
 

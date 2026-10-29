@@ -1,0 +1,198 @@
+<style>
+.ei-wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+.ei-btn-blue{background:rgba(32,135,201,1);color:#fff !important;padding:13px 26px;border-radius:6px;font-weight:700;font-size:0.95em;text-transform:uppercase;text-decoration:none !important;display:inline-block;line-height:1.4;text-align:center;min-width:120px}
+.ei-section{padding:26px 20px}
+.ei-section-alt{background:#f7f9fc;padding:26px 20px}
+.ei-art .ei-h2{font-weight:800;color:#1a2340;margin:0 0 10px;font-size:1.45em;line-height:1.3}
+.ei-art > *:last-child{margin-bottom:0}
+.ei-art p{color:#4a5568;line-height:1.8}
+.ei-art a{color:rgba(32,135,201,1)}
+.ei-art ul{color:#4a5568;line-height:1.8}
+.ei-info{background:#f0f7fd;border-left:4px solid rgba(32,135,201,1);border-radius:0 8px 8px 0;padding:14px 18px;margin:18px 0}
+.ei-info p{margin:0;color:#1a2340;line-height:1.7}
+.ei-warn{background:#fffbf0;border-left:4px solid #f6ad1a;border-radius:0 8px 8px 0;padding:14px 18px;margin:18px 0}
+.ei-warn p{margin:0;color:#7c5800;line-height:1.7}
+.ei-danger{background:#fff5f5;border-left:4px solid #e53e3e;border-radius:0 8px 8px 0;padding:14px 18px;margin:18px 0}
+.ei-danger p{margin:0;color:#742a2a;line-height:1.7}
+.ei-hero{background:linear-gradient(135deg,#0f1624 0%,#1a2340 55%,#1e3a6e 100%);padding:40px 20px}
+.ei-hero-inner{max-width:860px;margin:0 auto;text-align:center}
+.ei-hero-eyebrow{display:inline-block;background:rgba(32,135,201,0.15);border:1px solid rgba(32,135,201,0.4);border-radius:50px;padding:5px 16px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:rgba(32,135,201,1);margin-bottom:16px;font-size:.8em}
+.ei-hero h1{color:#fff;font-weight:800;line-height:1.2;margin:0 0 14px;font-size:2.1em}
+.ei-hero h1 span{color:#f6ad1a}
+.ei-hero-sub{color:rgba(255,255,255,0.78);max-width:720px;margin:0 auto 10px;line-height:1.75}
+.ei-hero-by{color:rgba(255,255,255,0.6);max-width:720px;margin:0 auto 22px;line-height:1.6;font-size:.86em}
+.ei-hero-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.ei-tbl{width:100%;border-collapse:collapse;margin:18px 0;border:1px solid #d1d5db}
+.ei-tbl th{background:#1a2340;color:#fff;font-weight:700;padding:12px 14px;text-align:left;border:1px solid #374151}
+.ei-tbl td{padding:10px 14px;border:1px solid #d1d5db;color:#2d3748;line-height:1.5}
+.ei-tbl tr:nth-child(even){background:#f7f9fc}
+.ei-tbl tr:hover{background:#edf2f7}
+.ei-updated{color:#718096;font-size:.9em;margin:0 0 18px}
+.ei-toc{background:linear-gradient(180deg,#ffffff,#f7f9fc);border:1px solid #e2e8f0;border-radius:12px;padding:18px 22px;margin:0 0 10px;box-shadow:0 1px 2px rgba(26,35,64,.05)}
+.ei-toc h2{font-size:.76em;font-weight:800;color:#8795ab;margin:0 0 10px;text-transform:uppercase;letter-spacing:1.3px}
+.ei-toc ol{margin:0;padding:0;list-style:none;counter-reset:toc;columns:2;column-gap:30px}
+.ei-toc li{break-inside:avoid;counter-increment:toc;margin:0}
+.ei-toc a{display:flex;gap:10px;align-items:baseline;padding:6px 9px;border-radius:6px;color:#1a2340;text-decoration:none;line-height:1.45}
+.ei-toc a::before{content:counter(toc);color:rgba(32,135,201,1);font-weight:800;font-size:.82em;min-width:15px;flex-shrink:0}
+.ei-toc a:hover{background:#eaf3fb;color:rgba(32,135,201,1);text-decoration:none}
+.ei-cta-inline{background:#1a2340;border-radius:10px;padding:24px 28px;margin:28px 0;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px}
+.ei-cta-inline h3{color:#fff;margin:0 0 4px;font-weight:700}
+.ei-cta-inline p{color:rgba(255,255,255,0.65);margin:0}
+.ei-cta-inline a,.ei-cta-inline a:visited,.ei-cta-inline a:hover,.ei-cta-bottom a,.ei-cta-bottom a:visited,.ei-cta-bottom a:hover,.ei-hero-btns a,.ei-hero-btns a:visited,.ei-hero-btns a:hover{color:#fff !important;text-decoration:none !important}
+.ei-faq{max-width:900px;margin:16px auto 0}
+.ei-faq details{border:1px solid #e2e8f0;border-radius:8px;margin-bottom:9px;background:#fff}
+.ei-faq summary{padding:14px 18px;font-weight:600;color:#1a2340;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:14px;line-height:1.5}
+.ei-faq summary::-webkit-details-marker{display:none}
+.ei-faq summary::after{content:'+';color:rgba(32,135,201,1);font-weight:400;font-size:1.4em;line-height:1;flex-shrink:0;transition:transform .15s ease}
+.ei-faq details[open] summary{color:rgba(32,135,201,1)}
+.ei-faq details[open] summary::after{transform:rotate(45deg)}
+.ei-faq .ei-faq-a{padding:0 18px 15px}
+.ei-faq .ei-faq-a p{margin:0;color:#4a5568;line-height:1.75}
+.ei-art h3{font-weight:700;color:#1a2340;margin:26px 0 8px;font-size:1.15em}
+.ei-qlist{max-width:900px;margin:12px auto 0;padding:0;list-style:none}
+.ei-qlist li{border:1px solid #e2e8f0;border-radius:8px;margin-bottom:10px;background:#fff}
+.ei-qlist a{display:block;padding:16px 20px;font-weight:600;color:#1a2340 !important;text-decoration:none !important}
+.ei-qlist a:hover{background:#f7f9fc;color:rgba(32,135,201,1) !important}
+.ei-cta-bottom{background:linear-gradient(135deg,#0f1624,#1a2340);padding:40px 20px;text-align:center}
+.ei-cta-bottom h2{color:#fff;font-weight:800;margin:0 0 10px;font-size:1.5em}
+.ei-cta-bottom p{color:rgba(255,255,255,0.72);max-width:600px;margin:0 auto 22px;line-height:1.75}
+.entry-header{display:none!important}
+.ast-article-single,.ast-article-single .entry-content{margin-top:0;padding-top:0}
+@media(max-width:900px){.ei-cta-inline{flex-direction:column;text-align:center}.ei-hero h1{font-size:1.6em}.ei-art .ei-h2{font-size:1.3em}.ei-toc ol{columns:1}}
+</style>
+<div class="ei-hero"><div class="ei-hero-inner"><span class="ei-hero-eyebrow">Year-End</span><h1>The Complete Guide to <span>Choosing and Changing a Fiscal Year-End</span></h1><p class="ei-hero-sub">A corporation picks its own year-end, the first return fixes it, and changing it needs written approval. How to choose it and what a change costs. Nil T2 filing is $300.00 plus HST per tax year.</p><p class="ei-hero-by">Written and reviewed by Sharad Gondaliya, CPA (Ontario), CPA Ontario Membership 61040184.</p><div class="ei-hero-btns"><a class="ei-btn-blue" href="https://corpnilfilingfor300.ca/form/">Start Nil T2 Filing NOW</a><a class="ei-btn-blue" style="background:transparent;border:2px solid rgba(255,255,255,0.4)" href="https://corpnilfilingfor300.ca/tools/first-t2-year-end-options-generator/">See every date available</a></div></div></div>
+<div class="ei-section"><div class="ei-wrap ei-art">
+<p class="ei-updated">Last reviewed: October 29, 2026 &nbsp;&middot;&nbsp; <a href="https://corpnilfilingfor300.ca/guides/">All nil T2 filing guides</a></p>
+<div class="ei-toc"><h2>On this page</h2>
+<ol>
+<li><a href="#a-choice">Nothing Assigns You a Year-End</a></li>
+<li><a href="#fifty-three-weeks">The First Tax Year Cannot Exceed 53 Weeks</a></li>
+<li><a href="#what-follows">Everything Else Is Measured From It</a></li>
+<li><a href="#short-first-year">A Short First Year Is a Return for Almost Nothing</a></li>
+<li><a href="#short-not-early">A Short Year Does Not Get an Early Deadline</a></li>
+<li><a href="#changing">Changing It Needs Written Approval</a></li>
+<li><a href="#wrong-year-end">A Wrong Year-End Gets the Transmission Rejected</a></li>
+<li><a href="#the-371-ceiling">A Change Cannot Reach More Than 53 Weeks Out</a></li>
+<li><a href="#catch-up">Why the Year-End Matters Most on a Catch-Up</a></li>
+<li><a href="#nil-years">None of This Changes for a Nil Year</a></li>
+<li><a href="#practical">How to Decide, in Practice</a></li>
+<li><a href="#fee">What the Fee Covers</a></li>
+</ol></div>
+<div class="ei-info"><p>Gondaliya CPA Professional Corporation is a registered EFILE electronic filer. Returns are prepared and transmitted in Canada. Credentials are never shared and never used offshore.</p></div>
+</div></div>
+<div class="ei-section" id="a-choice"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">Nothing Assigns You a Year-End</h2>
+<p>A corporation picks its own fiscal year-end. There is no default, nothing is allocated at incorporation, and December 31 is a convention rather than a rule. The articles of incorporation do not set it either.</p>
+<p>What sets it is the first T2 return filed. From then on the date is on the record, it recurs annually, and every other date in the corporation&#8217;s tax life is measured from it. That makes this the one decision that is free to make now and awkward to revisit.</p>
+<p>The <a href="https://corpnilfilingfor300.ca/tools/first-t2-year-end-options-generator/">first T2 year-end options generator</a> lists every date available from a given incorporation date, with the filing deadline each one produces.</p>
+</div></div>
+<div class="ei-section" id="fifty-three-weeks"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">The First Tax Year Cannot Exceed 53 Weeks</h2>
+<p>This is the one hard limit on the choice. A first tax year runs from the date of incorporation to the chosen year-end and may not exceed 53 weeks, which is 371 days counting the day of incorporation.</p>
+<p>A year-end beyond that point is not available at all. Where someone wants one anyway, the consequence is not a longer first year: it is a first year ending earlier, then a full year, and two returns due within months of each other.</p>
+<div class="ei-info"><p>Counting it by eye from two dates in different years is where the mistakes come from, because 371 days does not line up with any month boundary. The <a href="https://corpnilfilingfor300.ca/tools/53-week-first-tax-year-checker/">53-week first tax year checker</a> tests one proposed date and the <a href="https://corpnilfilingfor300.ca/tools/fiscal-period-length-calculator/">fiscal period length calculator</a> measures a period you already have.</p></div>
+</div></div>
+<div class="ei-section-alt" id="what-follows"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">Everything Else Is Measured From It</h2>
+True
+</div></div>
+<div class="ei-section" id="short-first-year"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">A Short First Year Is a Return for Almost Nothing</h2>
+<p>Choose the earliest month-end after incorporating and the first tax year might be three weeks long. It is still a tax year, it still gets a return, and that return is $300.00 plus HST per tax year like any other. There is no part-year rate.</p>
+<p>So an early first year-end means paying for a return covering almost nothing, and then a second return for the first full year. A year-end closer to twelve months out produces one return instead of two over the same stretch of time.</p>
+<p>Short years also arise for reasons nobody chooses: an approved change of year-end, an amalgamation, and a final period ending at dissolution. The <a href="https://corpnilfilingfor300.ca/tools/short-tax-year-deadline-calculator/">short tax year deadline calculator</a> covers the deadline on any of them, and the <a href="https://corpnilfilingfor300.ca/guides/first-year-t2-filing/">guide to first-year T2 filing</a> covers the first return itself.</p>
+</div></div>
+<div class="ei-wrap"><div class="ei-cta-inline"><div><h3>Nil T2 Filing, $300.00 plus HST per tax year</h3><p>One price for every year and every province. CPA reviewed and transmitted electronically.</p></div><a class="ei-btn-blue" href="https://corpnilfilingfor300.ca/form/">Start Nil T2 Filing NOW</a></div></div>
+<div class="ei-section-alt" id="short-not-early"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">A Short Year Does Not Get an Early Deadline</h2>
+True
+</div></div>
+<div class="ei-section" id="changing"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">Changing It Needs Written Approval</h2>
+<p>A fiscal year-end is fixed by the first return filed, and changing it needs the written approval of the Canada Revenue Agency. The request is made before the change rather than demonstrated by filing.</p>
+<p>That sequence is the part most often got wrong, and the next section is about what happens when it is.</p>
+<p>An approved change closes a period on the new date. That period is a tax year in its own right with its own return and its own deadline, so the cost of a change is an extra return that would not otherwise exist. The <a href="https://corpnilfilingfor300.ca/tools/year-end-change-impact-calculator/">year-end change impact calculator</a> shows the period a given change creates, its length and both filing dates.</p>
+</div></div>
+<div class="ei-section-alt" id="wrong-year-end"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">A Wrong Year-End Gets the Transmission Rejected</h2>
+True
+</div></div>
+<div class="ei-section" id="the-371-ceiling"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">A Change Cannot Reach More Than 53 Weeks Out</h2>
+<p>The same 53-week limit that bounds a first tax year bounds the period a change creates. Where the gap between the current year-end and the proposed one is longer than 371 days, that gap is not a single tax year and cannot be reported as one.</p>
+<p>Reaching a year-end that far out needs an intervening year-end first, which means two returns rather than one. It is the same arithmetic as the first-year limit, applied at a different moment.</p>
+<table class="ei-tbl"><thead><tr><th scope="col">Length of the period a change creates</th><th scope="col">What it is</th></tr></thead><tbody>
+<tr><td>Under twelve months</td><td>A short tax year, with its own return</td></tr>
+<tr><td>Twelve months</td><td>A full tax year</td></tr>
+<tr><td>Up to 371 days</td><td>Still one tax year</td></tr>
+<tr><td>More than 371 days</td><td>Not one tax year; an intervening year-end is needed</td></tr>
+</tbody></table>
+</div></div>
+<div class="ei-section-alt" id="catch-up"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">Why the Year-End Matters Most on a Catch-Up</h2>
+True
+</div></div>
+<div class="ei-section" id="nil-years"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">None of This Changes for a Nil Year</h2>
+<p>A corporation that has never traded still has a year-end, still has it fixed by its first return, and still needs written approval to change it. Being nil affects the figures on the return and nothing about the calendar.</p>
+<p>A holding corporation with investment income, a rental corporation and a corporation that paid or received a dividend are not nil. Those are handled by Gondaliya CPA Professional Corporation at gondaliyacpa.ca at $350.00 plus HST per year.</p>
+<p>So the year-end decision is made at incorporation whether or not anything is happening yet, and a corporation registered and left dormant has already made it by the time its first return goes in.</p>
+</div></div>
+<div class="ei-section-alt" id="practical"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">How to Decide, in Practice</h2>
+True
+</div></div>
+<div class="ei-section" id="fee"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">What the Fee Covers</h2>
+<p>The fee is $300.00 plus HST per tax year, covering one nil T2 return for one corporation for one tax year:</p>
+<table class="ei-tbl"><thead><tr><th scope="col">Included</th><th scope="col">Detail</th></tr></thead><tbody>
+<tr><td>The T2 return</td><td>Including the T2 Short where the corporation qualifies</td></tr>
+<tr><td>GIFI Schedules 100, 125 and 141</td><td>Where they are required</td></tr>
+<tr><td>Schedule 24</td><td>On a first return</td></tr>
+<tr><td>Schedule 50</td><td>For every shareholder at 10% or more</td></tr>
+<tr><td>Schedule 8 and loss continuity</td><td>Recorded</td></tr>
+<tr><td>Form T183CORP package</td><td>With single-use secure e-signing</td></tr>
+<tr><td>CPA review</td><td>Before transmission</td></tr>
+<tr><td>Electronic transmission</td><td>By a registered EFILE electronic filer</td></tr>
+<tr><td>One corrected transmission</td><td>If the Agency rejects the first one</td></tr>
+<tr><td>CRA confirmation</td><td>Emailed within 3 business days</td></tr>
+</tbody></table>
+<p>See the full <a href="https://corpnilfilingfor300.ca/pricing/nil-t2-filing-cost/">nil T2 filing cost</a>.</p>
+</div></div>
+<div class="ei-section-alt"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">Frequently Asked Questions</h2>
+<div class="ei-faq">
+<details><summary>Who decides my corporation&#8217;s fiscal year-end?</summary><div class="ei-faq-a"><p>The corporation does. There is no default and nothing is assigned at incorporation. The first T2 return filed is what fixes the date on the record.</p></div></details>
+<details><summary>How long can my first tax year be?</summary><div class="ei-faq-a"><p>Up to 53 weeks, which is 371 days counting the day of incorporation. A year-end beyond that is not available, so the first year has to end earlier.</p></div></details>
+<details><summary>Can I change my fiscal year-end later?</summary><div class="ei-faq-a"><p>With the written approval of the Canada Revenue Agency. The request is made before the change, and filing a return carrying a different date does not change the date on record.</p></div></details>
+<details><summary>What happens if I file against the wrong year-end?</summary><div class="ei-faq-a"><p>The transmission is rejected against the year-end on record. A refused transmission is not a filed return, so the year stays outstanding.</p></div></details>
+<details><summary>Does changing a year-end cost an extra return?</summary><div class="ei-faq-a"><p>Usually. The change closes a period on the new date, that period is a tax year in its own right, and it gets its own return at $300.00 plus HST per tax year.</p></div></details>
+<details><summary>Does a short tax year have an earlier deadline?</summary><div class="ei-faq-a"><p>No. The six-month rule runs from the day the period ends, so a three-month period gets the same six months as a full year.</p></div></details>
+</div>
+<h3>Questions Answered in Full</h3>
+<ul class="ei-qlist">
+<li><a href="https://corpnilfilingfor300.ca/answers/when-should-i-file-my-first-t2-after-incorporating/">When Should I File My First T2 After Incorporating?</a></li>
+<li><a href="https://corpnilfilingfor300.ca/answers/when-should-i-file-a-nil-t2-for-a-short-first-tax-year/">When Should I File a Nil T2 for a Short First Tax Year?</a></li>
+<li><a href="https://corpnilfilingfor300.ca/answers/how-do-i-fix-a-nil-t2-return-i-filed-with-the-wrong-year-end/">How Do I Fix a Nil T2 Return I Filed With the Wrong Year-End?</a></li>
+<li><a href="https://corpnilfilingfor300.ca/answers/do-i-need-to-file-a-nil-t2-if-i-never-started-operating/">Do I Need to File a Nil T2 if I Never Started Operating?</a></li>
+<li><a href="https://corpnilfilingfor300.ca/answers/how-do-i-file-a-nil-t2-return-in-canada/">How Do I File a Nil T2 Return in Canada?</a></li>
+<li><a href="https://corpnilfilingfor300.ca/answers/do-i-need-to-file-a-t2-if-my-corporation-had-no-activity/">Do I Need to File a T2 if My Corporation Had No Activity?</a></li>
+</ul>
+<h3>The Other Nil T2 Filing Guides</h3>
+<ul class="ei-qlist">
+<li><a href="https://corpnilfilingfor300.ca/guides/quebec-co17-and-alberta-at1/">The Complete Guide to Quebec CO-17 and Alberta AT1</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/nil-t2-return-complete-guide/">The Complete Guide to the Nil T2 Return</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/dormant-and-inactive-corporations/">The Complete Guide to Dormant and Inactive Corporations</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/catch-up-unfiled-corporate-tax-returns/">The Complete Guide to Catching Up on Unfiled Corporate Tax Returns</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/final-t2-and-dissolution/">The Complete Guide to the Final T2 and Dissolution</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/t2-short-eligibility/">The Complete Guide to T2 Short Eligibility</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/provincial-and-federal-annual-returns/">The Complete Guide to Provincial and Federal Annual Returns</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/t183corp-signing-and-transmission/">The Complete Guide to Form T183CORP Signing and Transmission</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/how-to-file-a-nil-t2-return/">How to File a Nil T2 Return</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/gifi-schedules-100-125-141/">The Complete Guide to GIFI Schedules 100, 125 and 141</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/schedule-8-and-loss-continuity/">The Complete Guide to Schedule 8 and Loss Continuity</a></li>
+<li><a href="https://corpnilfilingfor300.ca/guides/first-year-t2-filing/">The Complete Guide to First-Year T2 Filing</a></li>
+</ul>
+</div></div>
+<div class="ei-cta-bottom"><div class="ei-wrap"><h2>Nil T2 Filing, $300.00 plus HST per tax year</h2><p>Type your corporation name, pick your unfiled years, pay, and sign Form T183CORP on a secure screen. Your CRA confirmation is emailed within 3 business days.</p><a class="ei-btn-blue" href="https://corpnilfilingfor300.ca/form/">Start Nil T2 Filing NOW</a></div></div>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Article", "@id": "https://corpnilfilingfor300.ca/guides/choosing-and-changing-a-fiscal-year-end/#article", "headline": "The Complete Guide to Choosing and Changing a Fiscal Year-End", "name": "Choosing and Changing a Fiscal Year-End | Complete Guide", "description": "A corporation picks its own year-end, the first return fixes it, and changing it needs written approval. How to choose it and what a change costs.", "inLanguage": "en-CA", "datePublished": "2026-10-29", "dateModified": "2026-10-29", "mainEntityOfPage": "https://corpnilfilingfor300.ca/guides/choosing-and-changing-a-fiscal-year-end/", "author": {"@type": "Person", "name": "Sharad Gondaliya", "honorificSuffix": "CPA", "url": "https://corpnilfilingfor300.ca/sharad-gondaliya-cpa/"}, "publisher": {"@type": "Organization", "name": "Gondaliya CPA Professional Corporation"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Nil T2 filing in Canada", "item": "https://corpnilfilingfor300.ca/"}, {"@type": "ListItem", "position": 2, "name": "Guides", "item": "https://corpnilfilingfor300.ca/guides/"}, {"@type": "ListItem", "position": 3, "name": "The Complete Guide to Choosing and Changing a Fiscal Year-End", "item": "https://corpnilfilingfor300.ca/guides/choosing-and-changing-a-fiscal-year-end/"}]}]}</script>
