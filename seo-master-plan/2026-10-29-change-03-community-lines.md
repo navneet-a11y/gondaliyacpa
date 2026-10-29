@@ -1,6 +1,12 @@
 # Change 3: Community lines linked to tax risk
 
-Dry run: Thursday, October 29, 2026. **Nothing has been edited yet.** Each edit below waits for the UpdraftPlus backup.
+**Applied Thursday, October 29, 2026:** A1, A2 and B1 to B10, plus one more Scarborough line found while editing, B11: "Scarborough's diaspora business communities frequently maintain bank accounts… in India, China, the Caribbean, the Philippines and East Africa." (deleted). B5 was applied as proposed. Every edit had a dry run first and is logged in CHANGE-LOG.csv. The Elementor data from before the edits is in backups/.
+
+**Kept (descriptive, no tax-risk link):** /how-to-start-business-in-scarborough/: "Scarborough's diverse diaspora communities have built trade networks connecting Canada to South Asia, East Asia, the Caribbean, Africa and the Middle East." Tell me if you want it reworded.
+
+**CPA flags still open:**
+- Markham page: "penalties of $25 to $500 per month".
+- Scarborough T1135 card: "Non-filing penalties start at $2,500 per year and can reach $25,000".
 
 **How I searched:** the WordPress site search over all published pages and posts (the text shown on the page, including Elementor pages). I searched these terms: Chinese, Chinese-Canadian, Korean, Iranian, Persian, South Asian, Indian, Punjabi, Tamil, Sikh, Gujarati, Pakistani, Filipino, Vietnamese, Caribbean, Caribbean-Canadian, African, Somali, Middle Eastern, Arab, Jewish, Muslim, Hispanic, Portuguese, Italian, Greek, diaspora, immigrant, communities, "countries of origin" and "cash economy".
 
