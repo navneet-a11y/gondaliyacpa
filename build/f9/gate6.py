@@ -27,6 +27,14 @@ for rec in recs:
 
               'five-star','5-star','money-back']
 
+    # No section may render as a bare Python repr. Batch 6 shipped five
+    # sections per guide reading "True" because the alt flag sat in the body
+    # position, and every structural check still passed.
+    for _m in re.finditer(r'<h2 class="ei-h2">[^<]*</h2>\s*\n([^\n]*)\n', c):
+        if _m.group(1).strip() in ('True', 'False', 'None', ''):
+            fail.append(s + ': a section body renders as %r'
+                        % _m.group(1).strip())
+
     # line 1217 gate: visible update date AND a 12-row contents block
     if 'Last reviewed:' not in c:
         fail.append(s + ': ' + 'no visible update date')

@@ -180,8 +180,7 @@ G28 = dict(
                 'guide to dormant and inactive corporations')
   + ' covers what being dormant does and does not change.</p>'),
 
- ('gst-hst', 'The GST/HST Account: Nil Returns Until It Is Closed', True,
-  '<p>An open GST/HST account expects a return for every reporting period, and '
+ ('gst-hst', 'The GST/HST Account: Nil Returns Until It Is Closed', '<p>An open GST/HST account expects a return for every reporting period, and '
   'a period with no sales and no tax collected is reported as a nil return '
   'rather than skipped. The return is what the account expects; having nothing '
   'to report changes the figures on it, not whether it is filed.</p>\n'
@@ -194,7 +193,7 @@ G28 = dict(
   + ' tests whether an account is in that position, and the '
   + a(SITE + '/tools/gst-hst-account-closure-checker/',
       'GST/HST account closure checker')
-  + ' covers ending it.</p>'),
+  + ' covers ending it.</p>', True),
 
  ('payroll', 'The Payroll Account: Remittances and an Annual T4',
   '<p>An open payroll account expects two separate things, which is why it is '
@@ -220,8 +219,7 @@ G28 = dict(
       'payroll nil remittance checker')
   + ' covers the remittances.</p>'),
 
- ('rc145', 'Form RC145 Closes Both of Them', True,
-  '<p>One form closes a payroll account and the same form closes a GST/HST '
+ ('rc145', 'Form RC145 Closes Both of Them', '<p>One form closes a payroll account and the same form closes a GST/HST '
   'account. It is the only thing that ends the obligations on either: not '
   'inactivity, not telling an accountant, not letting the returns lapse.</p>\n'
   '<p>Until the account is closed, nil returns and nil remittances remain due '
@@ -232,7 +230,7 @@ G28 = dict(
   '<div class="ei-info"><p>This is why the order matters, and the order is '
   'the outstanding returns first, then the closure. A closure stacked on top '
   'of unfiled periods leaves the unfiled periods exactly where they '
-  'were.</p></div>'),
+  'were.</p></div>', True),
 
  ('directors', 'Why These Two Accounts Reach the Directors',
   '<p>The corporate income tax account is the corporation&#8217;s own '
@@ -258,7 +256,6 @@ G28 = dict(
   + ' sorts which is which.</p>'),
 
  ('income-tax-account', 'The Corporate Income Tax Account Is Different',
-  True,
   '<p>There is no form that closes it while the corporation exists, and '
   'nothing to close: the account is the corporation&#8217;s relationship with '
   'the Agency for income tax, and it ends when the corporation does.</p>\n'
@@ -269,7 +266,7 @@ G28 = dict(
   '<p>' + LATE_QUAL + '</p>\n'
   '<p>The ' + a(HUB + 'nil-t2-return-complete-guide/',
                 'complete guide to the nil T2 return')
-  + ' is the pillar for that side of it.</p>'),
+  + ' is the pillar for that side of it.</p>', True),
 
  ('order', 'The Order to Deal With Them In',
   '<p>The sequence is not arbitrary, because each step rests on the one '
@@ -292,8 +289,7 @@ G28 = dict(
   + ' produces this list for a particular corporation, naming which steps '
   'apply and which sit outside the fee.</p>'),
 
- ('dissolution', 'What Has to Be Closed Before a Dissolution', True,
-  '<p>A corporation cannot be cleanly wound up with accounts still open and '
+ ('dissolution', 'What Has to Be Closed Before a Dissolution', '<p>A corporation cannot be cleanly wound up with accounts still open and '
   'returns still outstanding. The clearance certificate is the step that '
   'makes this concrete: the request rests on a complete filing record, so an '
   'outstanding GST/HST or payroll period blocks it as surely as an unfiled '
@@ -306,7 +302,7 @@ G28 = dict(
   + ' sets out the whole sequence, and the '
   + a(SITE + '/tools/dissolution-readiness-checker/',
       'dissolution readiness checker')
-  + ' tests whether a corporation is ready for the last step.</p>'),
+  + ' tests whether a corporation is ready for the last step.</p>', True),
 
  ('not-covered', 'What Sits Outside the Fee, Said Plainly',
   '<p>The fee of ' + PRICE + ' covers one nil T2 return for one corporation '
@@ -325,8 +321,7 @@ G28 = dict(
   'Professional Corporation at gondaliyacpa.ca rather than priced here. The '
   'full boundary is on the ' + a(COST, 'nil T2 filing cost') + ' page.</p>'),
 
- ('mistakes', 'The Four Mistakes Worth Avoiding', True,
-  '<p>Each of these is common enough to be worth naming, and each one costs '
+ ('mistakes', 'The Four Mistakes Worth Avoiding', '<p>Each of these is common enough to be worth naming, and each one costs '
   'more to undo than to avoid.</p>\n'
   + tbl(('The mistake', 'What it actually does'),
         [('Assuming no activity means no return',
@@ -344,7 +339,7 @@ G28 = dict(
   'standing obligation, and only a closure ends it. The '
   + a(HUB + 'corporate-compliance-calendar/',
       'guide to the corporate compliance calendar')
-  + ' sets out the dates each open account generates.</p>'),
+  + ' sets out the dates each open account generates.</p>', True),
  ],
  faq=[
   ('Does a dormant corporation still have to file GST/HST returns?',
@@ -428,8 +423,7 @@ G29 = dict(
       'fiscal period length calculator')
   + ' measures a period you already have.</p></div>'),
 
- ('what-follows', 'Everything Else Is Measured From It', True,
-  '<p>Picking the year-end picks the rest of the calendar, which is the real '
+ ('what-follows', 'Everything Else Is Measured From It', '<p>Picking the year-end picks the rest of the calendar, which is the real '
   'reason it deserves a decision rather than a default. Two of these dates '
   'follow from it directly and one deliberately does not.</p>\n'
   + tbl(('Obligation', 'Measured from the year-end', 'When'),
@@ -446,7 +440,7 @@ G29 = dict(
   'after. The '
   + a(SITE + '/tools/corporate-deadline-calendar-generator/',
       'corporate deadline calendar generator')
-  + ' shows the whole calendar one year-end produces.</p>'),
+  + ' shows the whole calendar one year-end produces.</p>', True),
 
  ('short-first-year', 'A Short First Year Is a Return for Almost Nothing',
   '<p>Choose the earliest month-end after incorporating and the first tax year '
@@ -466,8 +460,7 @@ G29 = dict(
       'guide to first-year T2 filing')
   + ' covers the first return itself.</p>'),
 
- ('short-not-early', 'A Short Year Does Not Get an Early Deadline', True,
-  '<p>Worth stating on its own because the intuition runs the other way. The '
+ ('short-not-early', 'A Short Year Does Not Get an Early Deadline', '<p>Worth stating on its own because the intuition runs the other way. The '
   'six-month rule is measured from the day the period ends, whatever the '
   'period&#8217;s length. A three-month stub period has six months after it '
   'to file, which is twice the period itself.</p>\n'
@@ -477,7 +470,7 @@ G29 = dict(
   'obligation. The '
   + a(SITE + '/tools/two-t2-returns-in-one-year-checker/',
       'two T2 returns in one year checker')
-  + ' shows both dates and the gap between them.</p>'),
+  + ' shows both dates and the gap between them.</p>', True),
 
  ('changing', 'Changing It Needs Written Approval',
   '<p>A fiscal year-end is fixed by the first return filed, and changing it '
@@ -493,8 +486,7 @@ G29 = dict(
   + ' shows the period a given change creates, its length and both filing '
   'dates.</p>'),
 
- ('wrong-year-end', 'A Wrong Year-End Gets the Transmission Rejected', True,
-  '<p>Filing a return carrying a year-end that does not match the record is '
+ ('wrong-year-end', 'A Wrong Year-End Gets the Transmission Rejected', '<p>Filing a return carrying a year-end that does not match the record is '
   'not read as a change of year-end. It is rejected against the date on '
   'record.</p>\n'
   '<p>The consequence is worse than it first sounds, because a rejection is '
@@ -509,7 +501,7 @@ G29 = dict(
   'transmitted rather than assumed from the incorporation papers. The '
   + a(SITE + '/tools/corporate-fiscal-year-end-calculator/',
       'corporate fiscal year end calculator')
-  + ' works from the date on record.</p>'),
+  + ' works from the date on record.</p>', True),
 
  ('the-371-ceiling', 'A Change Cannot Reach More Than 53 Weeks Out',
   '<p>The same 53-week limit that bounds a first tax year bounds the period a '
@@ -526,20 +518,18 @@ G29 = dict(
          ('More than 371 days',
           'Not one tax year; an intervening year-end is needed')])),
 
- ('catch-up', 'Why the Year-End Matters Most on a Catch-Up', True,
-  '<p>A corporation with one year to file has one date to get right. A '
+ ('catch-up', 'Why the Year-End Matters Most on a Catch-Up', '<p>A corporation with one year to file has one date to get right. A '
   'corporation with six has the same date six times, and every one of those '
   'returns is rejected if the date is wrong.</p>\n'
   '<p>The years are also prepared oldest first, because each one opens from '
-  'the closing balances of the one before it. A wrong year-end does not just '
-  'produce six rejections; it produces a sequence that cannot be '
-  'reconciled.</p>\n'
+  'the closing balances of the one before it. A wrong year-end does not stop '
+  'at six rejections; it produces a sequence that cannot be reconciled.</p>\n'
   '<p>The ' + a(HUB + 'catch-up-unfiled-corporate-tax-returns/',
                 'guide to catching up on unfiled corporate tax returns')
   + ' covers the sequence, and the '
   + a(SITE + '/tools/catch-up-filing-schedule-generator/',
       'catch-up filing schedule generator')
-  + ' produces the dated schedule once the year-end is known.</p>'),
+  + ' produces the dated schedule once the year-end is known.</p>', True),
 
  ('nil-years', 'None of This Changes for a Nil Year',
   '<p>A corporation that has never traded still has a year-end, still has it '
@@ -551,8 +541,7 @@ G29 = dict(
   'anything is happening yet, and a corporation registered and left dormant '
   'has already made it by the time its first return goes in.</p>'),
 
- ('practical', 'How to Decide, in Practice', True,
-  '<p>There is no answer that fits every corporation, and anyone offering one '
+ ('practical', 'How to Decide, in Practice', '<p>There is no answer that fits every corporation, and anyone offering one '
   'does not know the facts. What can be said is which considerations actually '
   'bear on it.</p>\n'
   + tbl(('Consideration', 'What it argues for'),
@@ -570,7 +559,7 @@ G29 = dict(
   'final return will be measured from. The '
   + a(HUB + 'final-t2-and-dissolution/',
       'guide to the final T2 and dissolution')
-  + ' covers that end of it.</p>'),
+  + ' covers that end of it.</p>', True),
  ],
  faq=[
   ('Who decides my corporation&#8217;s fiscal year-end?',
@@ -650,8 +639,7 @@ G30 = dict(
   + ' answers which of them apply to a particular corporation, in two '
   'questions.</p></div>'),
 
- ('a-quiet-year', 'A Quiet Year Is Quiet on Both Returns', True,
-  '<p>A corporation with no activity has nothing to report provincially '
+ ('a-quiet-year', 'A Quiet Year Is Quiet on Both Returns', '<p>A corporation with no activity has nothing to report provincially '
   'either, so the provincial return for that year is nil in the same way the '
   'federal one is.</p>\n'
   '<p>Being nil does not make it optional. The obligation follows from the '
@@ -664,7 +652,7 @@ G30 = dict(
   'whether an obligation exists. The '
   + a(HUB + 'zero-activity-corporate-tax-returns/',
       'guide to zero-activity corporate tax returns')
-  + ' works through that distinction.</p>'),
+  + ' works through that distinction.</p>', True),
 
  ('not-covered', 'Neither Is Covered by the Fee',
   '<p>The fee of ' + PRICE + ' covers one nil federal T2 return for one '
@@ -680,7 +668,6 @@ G30 = dict(
   + ' page sets out the whole boundary of what sits inside the fee.</p>'),
 
  ('permanent-establishment', 'What Decides Whether a Province Is Involved',
-  True,
   '<p>The test is a permanent establishment in the province, not where the '
   'corporation was incorporated and not where the director happens to live. '
   'A federally incorporated corporation operating only in Quebec files CO-17; '
@@ -692,7 +679,7 @@ G30 = dict(
   '<p>A dormant corporation is usually the straightforward case: a '
   'corporation that has never operated anywhere has no permanent '
   'establishment anywhere, and the federal T2 is the whole of its corporate '
-  'income tax filing.</p>'),
+  'income tax filing.</p>', True),
 
  ('not-the-registry', 'The Registry Annual Return Is a Different Thing',
   '<p>This is the commonest confusion on the subject, and it is worth '
@@ -717,15 +704,14 @@ G30 = dict(
       'involuntary dissolution risk checker')
   + ' covers what missing it produces.</p>'),
 
- ('alberta', 'Alberta: AT1', True,
-  '<p>AT1 is Alberta&#8217;s corporate income tax return, and it is a '
+ ('alberta', 'Alberta: AT1', '<p>AT1 is Alberta&#8217;s corporate income tax return, and it is a '
   'separate provincial return filed with Alberta rather than part of the '
   'federal T2.</p>\n'
   '<p>A corporation with an Alberta permanent establishment files both. A nil '
   'year produces a nil AT1 rather than no AT1, on the same reasoning as '
   'everything else here: the obligation follows the permanent establishment '
   'rather than the activity.</p>\n'
-  '<p>AT1 is not covered by the fee of ' + PRICE + '.</p>'),
+  '<p>AT1 is not covered by the fee of ' + PRICE + '.</p>', True),
 
  ('quebec', 'Quebec: CO-17',
   '<p>CO-17 is Quebec&#8217;s corporate income tax return, filed with Revenu '
@@ -739,15 +725,14 @@ G30 = dict(
   'filing and the tax return both sit with Quebec institutions. They remain '
   'separate filings with separate consequences.</p></div>'),
 
- ('what-the-t2-still-does', 'The Federal T2 Is Still Required', True,
-  '<p>Worth saying because the logic occasionally runs backwards: a '
+ ('what-the-t2-still-does', 'The Federal T2 Is Still Required', '<p>Worth saying because the logic occasionally runs backwards: a '
   'corporation that files CO-17 or AT1 has not thereby dealt with the federal '
   'return. The T2 is required of every resident corporation, in every '
   'province, every tax year, until the corporation is dissolved.</p>\n'
   '<p>So a Quebec corporation files two returns and an Alberta corporation '
   'files two returns. Neither replaces the other, and a nil year means two '
   'nil returns rather than one.</p>\n'
-  '<p>' + LATE_QUAL + '</p>'),
+  '<p>' + LATE_QUAL + '</p>', True),
 
  ('dissolution', 'Both Matter at a Wind-Up',
   '<p>A corporation being wound up has to be current on everything, and a '
@@ -764,8 +749,7 @@ G30 = dict(
       'clearance certificate requirement checker')
   + ' covers the certificate itself.</p>'),
 
- ('summary', 'The Whole of It, in Five Lines', True,
-  '<p>If nothing else on this page is remembered, these are the five facts '
+ ('summary', 'The Whole of It, in Five Lines', '<p>If nothing else on this page is remembered, these are the five facts '
   'that matter.</p>\n'
   + tbl(('', 'The fact'),
         [('1', 'Quebec collects its own corporate tax: CO-17 is a separate '
@@ -780,7 +764,7 @@ G30 = dict(
                'CO-17 and AT1 are handled at gondaliyacpa.ca')])
   + '\n<p>The ' + a(HUB + 'nil-t2-return-complete-guide/',
                     'complete guide to the nil T2 return')
-  + ' is the pillar for the federal return this service does cover.</p>'),
+  + ' is the pillar for the federal return this service does cover.</p>', True),
  ],
  faq=[
   ('Does Quebec have a separate corporate tax return?',
@@ -835,6 +819,34 @@ for _g in GUIDES:
     assert _g['slug'] in _registry_slugs, (
         '%s is not in the registry, so no other guide will link to it'
         % _g['slug'])
+    # Section bodies are real HTML, and the alt flag is last.
+    #
+    # This batch shipped five sections per guide reading the single word
+    # "True" because the alt flag was written in the body's position. render
+    # takes (key, title, body, alt), so a 3-element tuple gets alt=False
+    # appended and a 4-element one supplies it; putting the flag third makes
+    # body=True and alt=the-body-string, which is truthy, so the section even
+    # came out correctly styled. Nothing caught it: the batch gate counted
+    # twelve contents rows and twelve sections, and there were twelve.
+    #
+    # Caught by reading a built page before publishing it. These two asserts
+    # are what should have caught it.
+    for _t in _g['sections']:
+        assert len(_t) in (3, 4), (
+            '%s: section %r has %d elements; render takes (key, title, body) '
+            'or (key, title, body, alt)' % (_g['slug'], _t[0], len(_t)))
+        assert isinstance(_t[2], str) and _t[2].lstrip().startswith('<'), (
+            '%s: section %r has a non-HTML body %r. The alt flag goes LAST, '
+            'after the body, not in the body position.'
+            % (_g['slug'], _t[0], _t[2]))
+        assert len(_t[2]) > 200, (
+            '%s: section %r has a %d-character body, which is too short to '
+            'be the real one' % (_g['slug'], _t[0], len(_t[2])))
+        if len(_t) == 4:
+            assert isinstance(_t[3], bool), (
+                '%s: section %r has a non-boolean alt flag %r'
+                % (_g['slug'], _t[0], _t[3]))
+
     assert len(_g['sections']) == 11, (
         '%s has %d sections; render adds the fee section to make the 12 the '
         'gate requires' % (_g['slug'], len(_g['sections'])))
