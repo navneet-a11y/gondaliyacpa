@@ -119,3 +119,7 @@ Per Navneet, posts 6-10 now carry October 20 everywhere to match the plan and th
 - **Text and JSON-LD:** "Last updated" lines and datePublished/dateModified back to October 20.
 - **Images:** the original "Published 20 October 2026" images: 57136, 57137, 57140, 57141, and 57724 (post 10, newly uploaded, size matches).
 - **Unused:** the Oct 22 images (57709-57713) are not attached to any post and can be deleted.
+
+## Page width fix (October 29)
+
+The 10 PSB pages ran edge to edge on wide screens. Added `.psb-cluster{box-sizing:border-box;max-width:1140px;margin:0 auto;padding:0 20px}` to the inline style on all 10 live pages (57063, 57084, 57086, 57087, 57083, 57085, 57088, 57089, 57094, 57096) and to `build/out/Page-*.html`. Caches cleared. Posts were not changed.
