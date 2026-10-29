@@ -1,6 +1,6 @@
 {
   "applied": "2026-10-29",
-  "coverage": "168 items given meta: 30 pages, 30 questions, 24 service places, 23 deadlines, 20 calculators (tools 1-20), 17 guides (1-17), 1 cost page, the 10 guides 18-27 (IDs 1377-1395), the 10 calculators 31-40 (IDs 1413-1434) and the 3 guides 28-30 (IDs 1464-1468) that complete Family 9. Calculators 21-30 (IDs 1285-1303) carry meta set at publish time by the build/f2 generator and are not repeated here. Every published item on the site has a Rank Math title and description.",
+  "coverage": "178 items given meta: 30 pages, 30 questions, 24 service places, 23 deadlines, 20 calculators (tools 1-20), 17 guides (1-17), 1 cost page, the 10 guides 18-27 (IDs 1377-1395), the 10 calculators 31-40 (IDs 1413-1434), the 3 guides 28-30 (IDs 1464-1468) that complete Family 9, and the 10 calculators 41-50 (IDs 1444-1508) that complete the fifty. Calculators 21-30 (IDs 1285-1303) carry meta set at publish time by the build/f2 generator and are not repeated here. Every published item on the site has a Rank Math title and description.",
   "nil_calculator_1_to_20": {
     "items": [
       {
@@ -191,6 +191,70 @@
     ],
     "note": "Family 2 tools 31-40, published 2026-10-29. Meta set at publish time by the same pass that created each page, and recorded here so the gate covers it.",
     "rest_base": "nil_calculator"
+  },
+  "nil_calculator_batch7": {
+    "items": [
+      {
+        "desc": "Enter the incorporation date and every month-end available as a first year-end appears, with its T2 deadline.",
+        "id": 1444,
+        "kw": "first t2 year-end options generator",
+        "title": "First T2 Year-End Options Generator | Every Date"
+      },
+      {
+        "desc": "Moving a fiscal year-end creates a period and a return. Enter both dates for its length and its T2 deadline.",
+        "id": 1450,
+        "kw": "year-end change impact calculator",
+        "title": "Year-End Change Impact Calculator | CRA Approval"
+      },
+      {
+        "desc": "Two tax years can both come due in one calendar year. Enter the two year-ends for both deadlines and the gap.",
+        "id": 1494,
+        "kw": "two t2 returns in one year checker",
+        "title": "Two T2 Returns in One Year Checker | Both Dates"
+      },
+      {
+        "desc": "Electronic filing is mandatory for tax years starting after 2023. Enter the first day of the tax year to test it.",
+        "id": 1496,
+        "kw": "mandatory t2 efile checker",
+        "title": "Mandatory T2 E-Filing Checker | Tax Years After 2023"
+      },
+      {
+        "desc": "Enter two dates for the calendar days, the business days, the weekend days and every Ontario public holiday between.",
+        "id": 1498,
+        "kw": "business days between dates calculator",
+        "title": "Business Days Between Dates Calculator | Ontario"
+      },
+      {
+        "desc": "Form T183CORP needs an authorized signing officer, signed before transmission. Three answers test those conditions.",
+        "id": 1500,
+        "kw": "t183corp signature requirement checker",
+        "title": "Form T183CORP Signature Requirement Checker"
+      },
+      {
+        "desc": "Quebec and Alberta each collect their own corporate tax. Two answers show whether CO-17 or AT1 is a separate return.",
+        "id": 1502,
+        "kw": "provincial return requirement checker",
+        "title": "Provincial Return Requirement Checker | CO-17, AT1"
+      },
+      {
+        "desc": "Payroll and GST/HST accounts outlive the activity that opened them. Three answers give the order and what it costs.",
+        "id": 1504,
+        "kw": "cra account closure sequencer",
+        "title": "CRA Account Closure Sequencer | Payroll and GST/HST"
+      },
+      {
+        "desc": "One year-end in, the whole corporate calendar out: the balance date, the T2 date, the T4 date and the annual return.",
+        "id": 1506,
+        "kw": "corporate deadline calendar generator",
+        "title": "Corporate Deadline Calendar Generator | One Input"
+      },
+      {
+        "desc": "Enter the earliest unfiled year-end and how many years are outstanding for a dated schedule and the total.",
+        "id": 1508,
+        "kw": "catch-up filing schedule generator",
+        "title": "Catch-Up Filing Schedule Generator | Dated Rows"
+      }
+    ]
   },
   "nil_cost": {
     "items": [
@@ -539,7 +603,7 @@
         "title": "Quebec CO-17 and Alberta AT1 | Complete Guide"
       }
     ],
-    "note": "Family 9 guides 28 to 30, published 2026-10-29, completing the family at the plan’s 30. Meta set at publish time and recorded here so the gate covers it.",
+    "note": "Family 9 guides 28 to 30, published 2026-10-29, completing the family at the plan\u2019s 30. Meta set at publish time and recorded here so the gate covers it.",
     "rest_base": "nil_guide"
   },
   "nil_question": {

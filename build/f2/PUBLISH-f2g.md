@@ -15,14 +15,14 @@ cnf_family ["f2"] (term_taxonomy_id 15).
 |---|---|---|---|---|---|---|
 | 41 | first-t2-year-end-options-generator | 27582 | 1444 | verified | set | f2 |
 | 42 | year-end-change-impact-calculator | 28412 | 1450 | verified | set | f2 |
-| 43 | two-t2-returns-in-one-year-checker | 27713 | | | | |
-| 44 | mandatory-t2-efile-checker | 26981 | | | | |
-| 45 | business-days-between-dates-calculator | 28064 | | | | |
-| 46 | t183corp-signature-requirement-checker | 28578 | | | | |
-| 47 | provincial-return-requirement-checker | 27590 | | | | |
-| 48 | cra-account-closure-sequencer | 28580 | | | | |
-| 49 | corporate-deadline-calendar-generator | 29571 | | | | |
-| 50 | catch-up-filing-schedule-generator | 28023 | | | | |
+| 43 | two-t2-returns-in-one-year-checker | 27713 | 1494 | verified | set | f2 |
+| 44 | mandatory-t2-efile-checker | 26981 | 1496 | verified | set | f2 |
+| 45 | business-days-between-dates-calculator | 28064 | 1498 | verified | set | f2 |
+| 46 | t183corp-signature-requirement-checker | 28578 | 1500 | verified | set | f2 |
+| 47 | provincial-return-requirement-checker | 27590 | 1502 | verified | set | f2 |
+| 48 | cra-account-closure-sequencer | 28580 | 1504 | verified | set | f2 |
+| 49 | corporate-deadline-calendar-generator | 29571 | 1506 | verified | set | f2 |
+| 50 | catch-up-filing-schedule-generator | 28023 | 1508 | verified | set | f2 |
 
 All ten share the same 12,975-byte CSS prefix as batches 5 and 6
 (sha256 prefix `8b978623a4fb`), so the publish call for each one is that
@@ -111,3 +111,38 @@ What the tables are is worth recording, because none of them is filler:
 Tool 45's is the clearest case for the change: a visitor who wants to know how
 Victoria Day or Good Friday is set now gets it from the page without entering
 a date at all.
+
+## The publish run, October 29, 2026
+
+All ten are live. Tools 41 and 42 went up earlier in the session; 43 to 50
+followed in one run. Every page's `content_length_before` from the zero-change
+probe equalled the build file byte for byte, so the table above records
+`verified` for each rather than an assumption.
+
+The per-page call was the shared 12,975-byte CSS prefix plus the page body.
+Checked before the run: `head -c 12975` of all ten build files hashes to the
+same sha256 prefix `8b978623a4fb`, so one prefix served every call.
+
+Live meta cannot be read back. `wp_get_post_meta` answers "Invalid post ID"
+for a `nil_calculator` item, `wp_get_cpt_item` returns the content and no meta
+at all, and a `wp_rest_read` of `/wp/v2/nil_calculator` with `_fields=meta`
+answers Forbidden. The record of what each page carries is therefore the
+`wp_update_cpt_item` acknowledgement plus the ledger entry, which is the same
+method the earlier batches used.
+
+One correction during the run: tool 46 was first given the `rank_math_title`
+"T183CORP Signature Requirement Checker | Who Signs", typed from the page
+title rather than read from the manifest. The manifest value is
+"Form T183CORP Signature Requirement Checker", and that is what the page now
+carries. Everything in `docs/seo/rank-math-meta.json` for this batch is copied
+from `f2g-manifest.json` by script, not retyped, so the ledger cannot drift
+from the gated values that way again.
+
+Counts after the run, read from the site rather than inferred:
+`wp_count_posts` for `nil_calculator` is 50 published, and the `cnf_family`
+term `f2` has a count of 50. Family 2 is complete at fifty of the plan's
+108 calculator URLs.
+
+`docs/seo/rank-math-meta.json` now holds 178 items and
+`build/f2/gate_rank_math.py` passes on it: hard rules clean, every title and
+description unique across the whole site.
