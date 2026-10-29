@@ -13,7 +13,7 @@ three Rank Math fields -> `wp_add_post_terms` cnf_family ["f2"]
 | # | slug | bytes | ID | content | meta | term |
 |---|---|---|---|---|---|---|
 | 31 | corporate-balance-due-date-calculator | 27275 | 1413 | verified | set | f2 |
-| 32 | fiscal-period-length-calculator | 27173 | 1415 | verified | set | f2 |
+| 32 | fiscal-period-length-calculator | 27176 | 1415 | verified | set | f2 |
 | 33 | cra-demand-to-file-deadline-calculator | 27485 | 1417 | verified | set | f2 |
 | 34 | t4-nil-filing-requirement-checker | 27897 | 1419 | verified | set | f2 |
 | 35 | retained-earnings-rollforward-calculator | 27398 | 1421 | verified | set | f2 |
@@ -25,6 +25,12 @@ three Rank Math fields -> `wp_add_post_terms` cnf_family ["f2"]
 
 Every one of the ten `content_length_before` readings equalled the build
 file's byte count exactly, so nothing was lost or transformed in transit.
+
+Tool 32 was published at 27,173 bytes and is now 27,176. The cross-batch gate
+written during batch 7 (`build/f2/gate_f2_all.py`) found that its third
+section heading, "A Short Year Does Not Get a Short Deadline", was the same
+heading tool 26 already used. It is now "A Short Period Still Gets the Full
+Six Months" in the generator and on the live page, which both read 27,176.
 The ten SEO entries are recorded in `docs/seo/rank-math-meta.json` under
 `nil_calculator_batch6`, and `build/f2/gate_rank_math.py` passes on 165
 items.

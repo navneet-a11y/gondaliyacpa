@@ -790,7 +790,7 @@ TOOLS6 = [
     'The ' + a(T + '53-week-first-tax-year-checker/',
                 '53-week first tax year checker')
     + ' tests that question on its own.</p>'),
-   ('short-years', 'A Short Year Does Not Get a Short Deadline',
+   ('short-years', 'A Short Period Still Gets the Full Six Months',
     '<p>The six-month rule is measured from the day the period ends, whatever '
     'its length. A three-month stub period still has six months after it to '
     'file, which is longer than the period itself.</p>\n'
