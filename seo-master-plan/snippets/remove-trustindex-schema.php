@@ -13,10 +13,14 @@ add_action( 'template_redirect', function () {
 		return;
 	}
 	ob_start( function ( $html ) {
-		return preg_replace(
+		if ( strpos( $html, 'data-trustindex' ) === false ) {
+			return $html;
+		}
+		$clean = preg_replace(
 			'#<script\b[^>]*\bdata-trustindex=(["\']?)1\1[^>]*>.*?</script>#is',
 			'',
 			$html
 		);
+		return ( null === $clean ) ? $html : $clean;
 	} );
 } );
