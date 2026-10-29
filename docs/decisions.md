@@ -5699,3 +5699,67 @@ reads 40. Both family terms are now complete.
 `wp_rest_read` on the CPT with a taxonomy query answers Forbidden for this
 key. Comparing the term's own `count` against the CPT total is the check that
 works.
+
+## 2026-10-29 — Family 9 complete at 30 guides
+
+Guides 28 to 30 published: IDs 1464, 1466 and 1468. The publish record is
+`build/f9/PUBLISH-f9-batch6.md`, the generator is
+`build/f9/build_f9_batch6.py`.
+
+### The topics did not come from Appendix A, and could not have
+
+Appendix A's F9 list was exhausted at guide 27, as the batch 5 entry recorded.
+What remained in it were naming variants of guides already live. All three
+topics here come from the plan's approved blog-topic list instead, so every
+fact they assert still has a source in the signed plan:
+
+- **28, CRA accounts on a dormant corporation.** From "Open GST/HST Accounts
+  Still Need Nil Filings", "Closing a GST/HST Account With Form RC145" and
+  "Nil Payroll Accounts and Your Remittance Obligation". A real gap: the
+  family had guides on the T2 and on the registry annual return, and nothing
+  on the other two accounts a business number carries, which is where a
+  dormant corporation's surprise obligations actually come from.
+- **29, choosing and changing a fiscal year-end.** From "Your First Tax Year
+  Cannot Exceed 53 Weeks" and "Why a Wrong Year-End Gets Your T2 Transmission
+  Rejected". `first-year-t2-filing` covers the first return and
+  `t2-filing-deadlines` covers the dates that follow from a year-end; neither
+  covered the year-end as a decision.
+- **30, Quebec CO-17 and Alberta AT1.** From the two approved provincial
+  topics and hard rule 8, which requires this wording on any page touching
+  either province. `provincial-and-federal-annual-returns` is about REGISTRY
+  annual returns, a different obligation entirely.
+
+### The defect worth remembering
+
+Fifteen sections across the three guides rendered as the word "True", because
+the alt flag was written in the body's position and a non-empty string is
+truthy. Each guide lost about 4KB of body, and every structural check in the
+repo passed: twelve contents rows, twelve sections, links fine, inbound
+counts fine. It was caught by reading a built page before publishing it.
+
+A page can pass every check in this repo while five of its eleven written
+sections are missing. Both gaps are now closed, in the generator and in
+gate6.py, and the lesson is recorded in the publish file: a gate cannot check
+copy it is not being shown.
+
+### Adding three guides changed twelve live pages
+
+The sibling window is circulant, so appending three guides moves the wrap
+point. Exactly 12 live guides, indices 15 to 26, needed their sibling lists
+changed, and leaving them stale would have given each new guide 0 sibling
+inbound against the 6(g) minimum of 12.
+
+The patch method matters enough to record. Positional chunked replacement is
+wrong here, because the new list is a rotation of the old one: replacing a
+tail row with a row that still exists earlier creates a duplicate and the
+next search matches twice. The verification caught it before anything was
+sent. What works is deleting the dropped rows and inserting the added ones,
+anchored on the rows surrounding the insertion point, simulated end to end
+against a reconstruction of the live content first.
+
+### Open: the guides hub links 15 of 30
+
+`/guides/` carries 15 guide links against 30 live guides, so it is 15 short
+and Family 16's rule that a hub links every child in its family is not met.
+This predates this batch. It needs approval because bringing the hub to 30
+changes a live page's visible content.

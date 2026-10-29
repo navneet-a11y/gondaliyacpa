@@ -1,6 +1,6 @@
 {
   "applied": "2026-10-29",
-  "coverage": "165 items given meta: 30 pages, 30 questions, 24 service places, 23 deadlines, 20 calculators (tools 1-20), 17 guides (1-17), 1 cost page, the 10 guides 18-27 (IDs 1377-1395), and the 10 calculators 31-40 (IDs 1413-1434). Calculators 21-30 (IDs 1285-1303) carry meta set at publish time by the build/f2 generator and are not repeated here. Every published item on the site has a Rank Math title and description.",
+  "coverage": "168 items given meta: 30 pages, 30 questions, 24 service places, 23 deadlines, 20 calculators (tools 1-20), 17 guides (1-17), 1 cost page, the 10 guides 18-27 (IDs 1377-1395), the 10 calculators 31-40 (IDs 1413-1434) and the 3 guides 28-30 (IDs 1464-1468) that complete Family 9. Calculators 21-30 (IDs 1285-1303) carry meta set at publish time by the build/f2 generator and are not repeated here. Every published item on the site has a Rank Math title and description.",
   "nil_calculator_1_to_20": {
     "items": [
       {
@@ -516,6 +516,30 @@
         "title": "Non-Resident-Owned Corporation Nil T2 Filing"
       }
     ],
+    "rest_base": "nil_guide"
+  },
+  "nil_guide_batch6": {
+    "items": [
+      {
+        "desc": "A business number carries separate accounts, and each keeps its own obligations until it is closed. What is still owed, and how to end it.",
+        "id": 1464,
+        "kw": "cra accounts dormant corporation",
+        "title": "CRA Accounts on a Dormant Corporation | Guide"
+      },
+      {
+        "desc": "A corporation picks its own year-end and the first return fixes it. How to choose it, the 53-week limit, and what a change costs.",
+        "id": 1466,
+        "kw": "changing a fiscal year end",
+        "title": "Choosing and Changing a Fiscal Year-End | Guide"
+      },
+      {
+        "desc": "Quebec and Alberta each collect their own corporate tax, so each has a separate return. CO-17 and AT1 are not part of the federal T2.",
+        "id": 1468,
+        "kw": "quebec co-17 and alberta at1",
+        "title": "Quebec CO-17 and Alberta AT1 | Complete Guide"
+      }
+    ],
+    "note": "Family 9 guides 28 to 30, published 2026-10-29, completing the family at the plan’s 30. Meta set at publish time and recorded here so the gate covers it.",
     "rest_base": "nil_guide"
   },
   "nil_question": {
