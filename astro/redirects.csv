@@ -1,2 +1,3 @@
 source,destination,status,effective_date,note
 /personal-services-business-tax-calculator/,/psb-tax-cost-calculator/,301,2026-10-14,"PSB project rule 7: page 7 replaces old calculator. Old WP page 53131 moved to draft, not deleted."
+/ei-premium-rates-2026-employer-employee-guide/,/ei-premium-rates-employer-employee-guide/,301,2027-03-01,"Change 23: SCHEDULED, not live yet. Keep the 2026 page live until Monday March 1 2027, then 301 to the evergreen EI page."

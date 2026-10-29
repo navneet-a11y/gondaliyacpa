@@ -14,7 +14,7 @@ Plan: Sharad's email, which replaces all earlier SEO change lists. Rules: see th
 | 3 | Markham community sentence + sitewide check | **Done.** 14 edits on 8 pages: Markham ×2, Etobicoke, Scarborough corporate tax, Scarborough start-up, and 3 restaurant pages. Caches purged; a site search finds no remaining community-risk lines. One descriptive Scarborough trade sentence kept (see the change 3 file). |
 | 4 | Review markup about ourselves | Found on 617 published items as inline JSON-LD (`2026-10-29-change-04-review-markup.md`). Waiting on backup, Privileged tools switch, Trustindex toggle. |
 | 5 | llms.txt | Draft ready for review (`drafts/05-llms.txt`). 6 pages wait on Sharad's decision. |
-| 23 | 2027 EI page | In WordPress as **Pending Review**, page 57974 (not public). Waiting on Sharad's CPA review. To do after approval: Rank Math title and description (the Rank Math abilities need switching on), byline date, publish, links from the 2026 page and the payroll calculator. |
+| 23 | 2027 EI page | Page 57974 is in WordPress as Pending Review, waiting on Sharad. **Payroll calculator 2027 mode is live**: tax-year selector; 2027 EI at 1.64% / $70,800 / $1,161.12; CPP, CPP2 and federal brackets updated to the change 8 2026 values. Still to do after Sharad approves: publish, then add the links from the 2026 EI page and the calculator. The 301 is logged for 2027-03-01 in astro/redirects.csv. |
 
 ## Blockers
 
