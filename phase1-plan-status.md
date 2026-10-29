@@ -7,7 +7,7 @@ Checked against the live WordPress site on 14 October 2026, updated 16 October 2
 | Group | Planned | Built | Old page only | Not built |
 |---|---|---|---|---|
 | Home | 3 | 3 | 0 | 0 |
-| Services | 26 | 25 | 1 | 0 |
+| Services | 26 | 26 | 0 | 0 |
 | Incorporate by Province and Federal | 13 | 13 | 0 | 0 |
 | Service Areas | 27 | 27 | 0 | 0 |
 | Industries | 34 | 34 | 0 | 0 |
@@ -17,7 +17,7 @@ Checked against the live WordPress site on 14 October 2026, updated 16 October 2
 | Blog | 13 | 4 | 0 | 9 |
 | About, Team, Reviews, Contact and Legal | 24 | 24 | 0 | 0 |
 | French Quebec | 10 | 0 | 0 | 10 |
-| **Total** | **201** | **181** | **1** | **19** |
+| **Total** | **201** | **182** | **0** | **19** |
 
 ## Home
 
@@ -31,7 +31,7 @@ Checked against the live WordPress site on 14 October 2026, updated 16 October 2
 
 | Planned URL | Priority | Status | Live URL |
 |---|---|---|---|
-| /nuans-name-search-report/ | P1 | Old page only, rebuild (old page /nuans-report-20/ 34) | /nuans-report-20/ |
+| /nuans-name-search-report/ | P1 | Built, published 10863 (old page /nuans-report-20/ 34 to redirect) | /nuans-name-search-report/ |
 | /annual-return-filing/ | P1 | Built, published 10655 (old page /corporate-annual-filing/ 2015 to redirect) | /annual-return-filing/ |
 | /business-number-cra-account-registration/ | P1 | Built | /business-number-cra-account-registration/ |
 | /convert-sole-proprietorship-corporation/ | P1 | Built | /convert-sole-proprietorship-corporation/ |

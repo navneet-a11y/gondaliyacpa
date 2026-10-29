@@ -351,3 +351,9 @@
 - ItemList "City incorporation pages" extended to 26 entries.
 - Old pages to redirect: /open-corporation-in-surrey/ (838), /open-corporation-in-halifax/ (842), /open-corporation-in-windsor/, /open-corporation-in-saskatoon/.
 - Noted, not changed: hub title says "13 Ontario Offices" but the office FAQ lists 12 cities.
+
+## /nuans-name-search-report/ (page 10863, published 2026-10-29, meta set by connector)
+- Meta title: NUANS Name Search and Report | Ontario and Federal
+- Meta description: What a NUANS report searches, the 90-day rule, and why it is not permission to use a name. A department of Gondaliya CPA.
+- Services hub 9923: accordion, panel list, card and ItemList position 1 repointed from /nuans-report-20/ to /nuans-name-search-report/.
+- Old page /nuans-report-20/ (34) to redirect.
