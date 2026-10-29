@@ -1,6 +1,6 @@
 {
-  "applied": "2026-10-27",
-  "coverage": "155 items given meta: 30 pages, 30 questions, 24 service places, 23 deadlines, 20 calculators (tools 1-20), 17 guides (1-17), 1 cost page, and the 10 new guides (18-27, IDs 1377-1395). Calculators 21-30 (IDs 1285-1303) carry meta set at publish time by build/f9 and build/f2 generators and are not repeated here. Every published item on the site now has a Rank Math title and description.",
+  "applied": "2026-10-29",
+  "coverage": "165 items given meta: 30 pages, 30 questions, 24 service places, 23 deadlines, 20 calculators (tools 1-20), 17 guides (1-17), 1 cost page, the 10 guides 18-27 (IDs 1377-1395), and the 10 calculators 31-40 (IDs 1413-1434). Calculators 21-30 (IDs 1285-1303) carry meta set at publish time by the build/f2 generator and are not repeated here. Every published item on the site has a Rank Math title and description.",
   "nil_calculator_1_to_20": {
     "items": [
       {
@@ -124,6 +124,72 @@
         "title": "Due Date Weekend and Holiday Shift Calculator"
       }
     ],
+    "rest_base": "nil_calculator"
+  },
+  "nil_calculator_batch6": {
+    "items": [
+      {
+        "desc": "Paying a balance of tax is due before the return is. Enter the fiscal year-end for both dates, on the same holiday calendar.",
+        "id": 1413,
+        "kw": "corporate balance due date calculator",
+        "title": "Corporate Balance Due Date Calculator | Two Months"
+      },
+      {
+        "desc": "Enter the first and last day of a fiscal period for its length in days and weeks, whether it clears 371 days, and its T2 date.",
+        "id": 1415,
+        "kw": "fiscal period length calculator",
+        "title": "Fiscal Period Length Calculator | The 53-Week Limit"
+      },
+      {
+        "desc": "A demand to file names a date. Enter the letter date and the days it allows for the deadline, the days left and the business days left.",
+        "id": 1417,
+        "kw": "cra demand to file deadline calculator",
+        "title": "CRA Demand to File Deadline Calculator"
+      },
+      {
+        "desc": "An open payroll account expects a T4 information return even where nobody was paid. Three answers give the date and what is owed.",
+        "id": 1419,
+        "kw": "t4 nil filing requirement checker",
+        "title": "T4 Nil Filing Requirement Checker | Payroll"
+      },
+      {
+        "desc": "Opening, plus net income, less dividends, gives closing. The figure the next return opens from, and what it says about nil status.",
+        "id": 1421,
+        "kw": "retained earnings rollforward calculator",
+        "title": "Retained Earnings Rollforward Calculator"
+      },
+      {
+        "desc": "Assets must equal liabilities plus equity or Schedule 100 will not validate. Enter the three totals to see the difference.",
+        "id": 1423,
+        "kw": "balance sheet balancing checker",
+        "title": "Balance Sheet Balancing Checker | Schedule 100"
+      },
+      {
+        "desc": "A nil return is not an empty return. Four answers show which balances Schedule 100 has to carry, and which end the nil year.",
+        "id": 1425,
+        "kw": "nil gifi balance sheet checker",
+        "title": "Nil GIFI Balance Sheet Checker | Schedule 100"
+      },
+      {
+        "desc": "Three answers on whether Schedule 8 belongs on the return, why a carried balance is enough on its own, and what a disposal changes.",
+        "id": 1427,
+        "kw": "schedule 8 cca requirement checker",
+        "title": "Schedule 8 CCA Requirement Checker | Nil T2"
+      },
+      {
+        "desc": "A missed annual return gets a corporation struck, not charged. Three answers on the exposure and why the tax years survive it.",
+        "id": 1432,
+        "kw": "involuntary dissolution risk checker",
+        "title": "Involuntary Dissolution Risk Checker | Struck"
+      },
+      {
+        "desc": "Payroll source deductions and net GST/HST can be assessed against directors personally. Corporate income tax on its own cannot.",
+        "id": 1434,
+        "kw": "director liability exposure checker",
+        "title": "Director Liability Exposure Checker | Nil T2"
+      }
+    ],
+    "note": "Family 2 tools 31-40, published 2026-10-29. Meta set at publish time by the same pass that created each page, and recorded here so the gate covers it.",
     "rest_base": "nil_calculator"
   },
   "nil_cost": {

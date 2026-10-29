@@ -5635,3 +5635,67 @@ Tagging this batch put the f9 term at 11 against 27 live guides, which showed
 that sixteen of the seventeen earlier guides had never been given it. All
 seventeen were tagged and the term now reads 27. **The same gap is still open
 on `cnf_family` f2**, which reads 20 against 30 live calculators.
+
+## 2026-10-29 — Family 2 tools 31 to 40
+
+Ten more calculators, bringing Family 2 to forty live. IDs 1413, 1415, 1417,
+1419, 1421, 1423, 1425, 1427, 1432 and 1434; the publish record with byte
+counts is `build/f2/PUBLISH-f2f.md`, the generator is `build/f2/build_f2f.py`.
+
+### Three Appendix A slugs refused, and why
+
+`build_f2f.py` opens with every unbuilt Appendix A slug grouped by the reason
+it was not built. Three groups are refusals rather than deferrals, because
+the pages would have to assert a figure this project has no approved source
+for: the late-filing **penalty rates**, the prescribed **interest rates**, and
+the **statutory thresholds** that decide a filing requirement. A calculator
+that is wrong about a rate is worse than no calculator, and hard rule 4 means
+these pages cannot hedge their way out of it.
+
+A fourth group is a single missing fact: the **Ontario annual return due
+date**, which now blocks eight Appendix A slugs. One answer unblocks all
+eight.
+
+A fifth is the **province-neutral HST calculator**, which needs a per-province
+rate table nobody has approved.
+
+### Family 2 will not reach 150 from Appendix A alone
+
+Twenty-seven of the 130 unbuilt F2 slugs in Appendix A are naming variants of
+tools already live — "nil t2 due date calculator" against the published "nil
+t2 deadline calculator", and so on. Building them would produce duplicate
+pages competing with each other, which is the opposite of what the family is
+for. Reaching the family's target will need topics sourced outside Appendix A,
+as the last two guide batches already did.
+
+### The DOM test is the part worth keeping
+
+`build/f2/test_f2f_dom.js` executes each page's shipped IIFE against a minimal
+DOM stub and reads the rendered result, rather than inspecting the source.
+Thirty-six checks pass. It rejects any screen containing `undefined`, `NaN`,
+`null` or an empty `<tbody>`, and it proves `addMonths` and `dueDate` agree
+across 672 year-ends.
+
+It caught two defects that reading the source had not: `r.reach.some` used as
+a truthy value on tool 40 — a function reference, so always true — with the
+render then re-reading `pick()` after the result was computed, and tool 31
+calling `pick()` while built on a prelude that does not carry it. Both are now
+generator asserts, as is a ghost `getElementById` whose id no form field
+emits.
+
+Three of the test's own expectations turned out to be mine rather than the
+pages': October 31 2026 is a Saturday, the last day of February 2027 is a
+Sunday, and a cleft sentence I had misread. Each was verified independently
+before the test was changed, not the page.
+
+### cnf_family f2 backfilled, closing the gap carried from October 27
+
+Tagging this batch put f2 at 30 against 40 live, confirming the ten-item gap
+recorded in the last entry. All ten earlier tools are now tagged and the term
+reads 40. Both family terms are now complete.
+
+`wp_list_cpt_items` silently ignores a `cnf_family` argument — filtering by
+`f9` returned all forty calculators, none of which carries it — and
+`wp_rest_read` on the CPT with a taxonomy query answers Forbidden for this
+key. Comparing the term's own `count` against the CPT total is the check that
+works.
