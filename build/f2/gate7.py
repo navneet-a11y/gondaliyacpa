@@ -64,6 +64,14 @@ for t in TOOLS:
     # the module must react to input, not just render once
     if 'addEventListener' not in c: bad('6(c) result does not change with input')
 
+    # A static reference table in the body prose, which tools 1 to 30 all
+    # carry and batches 6 and 7 originally shipped without. A table drawn
+    # only by the module does not count: a visitor who has entered nothing
+    # should still get the shape of the answer.
+    _body_only = re.sub(r'<script.*?</script>', '', c, flags=re.S)
+    if '<table class="ei-tbl"' not in _body_only:
+        bad('no static reference table in the body')
+
     # structure
     if c.count('<h1') != 1: bad('h1 count %d' % c.count('<h1'))
     if 'nil-t2-filing-cost' not in c: bad('6(g) no link to the cost page')

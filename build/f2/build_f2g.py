@@ -1439,6 +1439,137 @@ TOOLS7 += [
   ]),
 ]
 
+# ---------------------------------------------------------------------------
+# Static reference tables.
+#
+# Tools 1 to 30 each carry a table in the body prose that a visitor can read
+# without touching the form: tool 21's is "What happened / Effect on the count
+# / Returns owed". Batches 6 and 7 shipped without one and only drew a table
+# after input, which Navneet spotted by comparing a new page against tool 21.
+#
+# Each table below is a reference a visitor wants before they have entered
+# anything, built from facts already approved or already on the site. None of
+# them is padding: where a page had nothing worth tabulating it would not get
+# a table, and the guard below would fail the build rather than let one ship
+# with a filler table.
+#
+# They attach to a named section so the position is explicit rather than
+# implied by list order.
+# ---------------------------------------------------------------------------
+
+def _tbl(head, rows):
+    h = ('<table class="ei-tbl"><thead><tr>'
+         + ''.join('<th scope="col">%s</th>' % c for c in head)
+         + '</tr></thead><tbody>')
+    for r in rows:
+        h += '<tr>' + ''.join('<td>%s</td>' % c for c in r) + '</tr>'
+    return h + '</tbody></table>'
+
+
+TABLES = {
+ 'first-t2-year-end-options-generator': ('late-or-early', _tbl(
+   ['Where the first year-end falls', 'First tax year',
+    'Returns in the first two years', 'What it costs you'],
+   [['The earliest month-end available', 'A few weeks', 'Two',
+     'A return for a few weeks of nothing'],
+    ['A month-end around twelve months out', 'Close to a full year', 'One',
+     'The usual choice'],
+    ['The latest month-end inside 53 weeks', 'Up to 371 days', 'One',
+     'The latest first deadline, and that date every year after']])),
+
+ 'year-end-change-impact-calculator': ('what-it-creates', _tbl(
+   ['How a year-end moves', 'What creates the period', 'Approval needed'],
+   [['An approved change', 'The new date closes a period early',
+     'Written approval from the Canada Revenue Agency'],
+    ['An amalgamation', 'Each predecessor&#8217;s year ends the day before',
+     'None, the amalgamation sets it'],
+    ['A dissolution', 'The final period ends on the dissolution date',
+     'None, the dissolution sets it']])),
+
+ 'two-t2-returns-in-one-year-checker': ('how-it-happens', _tbl(
+   ['How it happens', 'The two periods', 'Returns owed'],
+   [['Incorporated part-way through a year',
+     'A short first tax year, then a full one', 'One for each'],
+    ['An approved change of year-end',
+     'A stub period at the changeover, then full years', 'One for each'],
+    ['Dissolved part-way through a year',
+     'A full year, then a short final period', 'One for each']])),
+
+ 'mandatory-t2-efile-checker': ('the-rule', _tbl(
+   ['Tax year begins', 'Electronic filing', 'What it means on a catch-up'],
+   [['Before January 1, 2024', 'Not mandatory',
+     'Paper was an option for these years'],
+    ['On or after January 1, 2024', 'Mandatory',
+     'Filing on paper carries a penalty']])),
+
+ 'business-days-between-dates-calculator': ('the-nine', _tbl(
+   ['Public holiday', 'How the date is set'],
+   [['New Year&#8217;s Day', 'January 1'],
+    ['Family Day', 'The third Monday in February'],
+    ['Good Friday', 'Two days before Easter Sunday, so it moves each year'],
+    ['Victoria Day', 'The Monday on or before May 24'],
+    ['Canada Day', 'July 1'],
+    ['Labour Day', 'The first Monday in September'],
+    ['Thanksgiving Day', 'The second Monday in October'],
+    ['Christmas Day', 'December 25'],
+    ['Boxing Day', 'December 26']])),
+
+ 't183corp-signature-requirement-checker': ('who-signs', _tbl(
+   ['Who it is', 'Can sign Form T183CORP'],
+   [['An authorized signing officer of the corporation', 'Yes'],
+    ['A shareholder who is not an officer', 'No'],
+    ['The bookkeeper', 'No'],
+    ['The accountant who prepared the return', 'No'],
+    ['A spouse or family member who is not an officer', 'No']])),
+
+ 'provincial-return-requirement-checker': ('two-provinces', _tbl(
+   ['Where the corporation operates', 'Corporate income tax returns',
+    'Covered by the fee'],
+   [['Quebec', 'The federal T2 and CO-17', 'The T2 only'],
+    ['Alberta', 'The federal T2 and AT1', 'The T2 only'],
+    ['Everywhere else', 'The federal T2 on its own', 'The T2']])),
+
+ 'cra-account-closure-sequencer': ('accounts-outlive', _tbl(
+   ['Account on the business number', 'What it is for', 'How it closes',
+    'Covered by the fee'],
+   [['Corporate income tax', 'The T2 return',
+    'It ends with the corporation', 'The nil return is'],
+    ['Payroll', 'T4 returns and remittances, including nil ones',
+     'Form RC145', 'No'],
+    ['GST/HST', 'GST/HST returns, including nil ones', 'Form RC145',
+     'No']])),
+
+ 'corporate-deadline-calendar-generator': ('not-all-from-year-end', _tbl(
+   ['Obligation', 'Measured from', 'Covered by the fee'],
+   [['Balance of tax', 'Two months after the fiscal year-end, or three for a '
+     'qualifying CCPC', 'Nothing is owed on a nil year'],
+    ['The T2 return', 'Six months after the fiscal year-end', 'Yes'],
+    ['The T4 information return',
+     'The calendar year, due at the end of the following February', 'No'],
+    ['The federal annual return',
+     '60 days after the incorporation anniversary', 'No']])),
+
+ 'catch-up-filing-schedule-generator': ('three-tools', _tbl(
+   ['What you want to know', 'The tool that answers it'],
+   [['Which years are outstanding', 'Unfiled years checker'],
+    ['What the whole catch-up costs', 'Unfiled years cost calculator'],
+    ['The dated schedule, a row per year', 'This page']])),
+}
+
+assert set(TABLES) == {t['slug'] for t in TOOLS7}, (
+    'every tool in the batch carries a reference table; TABLES does not '
+    'match TOOLS7')
+
+for t in TOOLS7:
+    _sid, _html = TABLES[t['slug']]
+    _ids = [s for s, _, _ in t['sections']]
+    assert _sid in _ids, (
+        '%s: table is attached to section %r, which the page does not have '
+        '(it has %r)' % (t['slug'], _sid, _ids))
+    t['sections'] = [(s, h, (b + '\n' + _html) if s == _sid else b)
+                     for s, h, b in t['sections']]
+
+
 SEO = {
  'first-t2-year-end-options-generator': (
    'First T2 Year-End Options Generator | Every Date',

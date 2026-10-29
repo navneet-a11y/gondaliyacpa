@@ -13,16 +13,16 @@ cnf_family ["f2"] (term_taxonomy_id 15).
 
 | # | slug | bytes | ID | content | meta | term |
 |---|---|---|---|---|---|---|
-| 41 | first-t2-year-end-options-generator | 26936 | | | | |
-| 42 | year-end-change-impact-calculator | 27833 | | | | |
-| 43 | two-t2-returns-in-one-year-checker | 27171 | | | | |
-| 44 | mandatory-t2-efile-checker | 26578 | | | | |
-| 45 | business-days-between-dates-calculator | 27360 | | | | |
-| 46 | t183corp-signature-requirement-checker | 28107 | | | | |
-| 47 | provincial-return-requirement-checker | 27146 | | | | |
-| 48 | cra-account-closure-sequencer | 28019 | | | | |
-| 49 | corporate-deadline-calendar-generator | 28934 | | | | |
-| 50 | catch-up-filing-schedule-generator | 27636 | | | | |
+| 41 | first-t2-year-end-options-generator | 27582 | 1444 | verified | set | f2 |
+| 42 | year-end-change-impact-calculator | 28412 | 1450 | verified | set | f2 |
+| 43 | two-t2-returns-in-one-year-checker | 27713 | | | | |
+| 44 | mandatory-t2-efile-checker | 26981 | | | | |
+| 45 | business-days-between-dates-calculator | 28064 | | | | |
+| 46 | t183corp-signature-requirement-checker | 28578 | | | | |
+| 47 | provincial-return-requirement-checker | 27590 | | | | |
+| 48 | cra-account-closure-sequencer | 28580 | | | | |
+| 49 | corporate-deadline-calendar-generator | 29571 | | | | |
+| 50 | catch-up-filing-schedule-generator | 28023 | | | | |
 
 All ten share the same 12,975-byte CSS prefix as batches 5 and 6
 (sha256 prefix `8b978623a4fb`), so the publish call for each one is that
@@ -80,3 +80,34 @@ Recorded in full in the docstring of `build/f2/build_f2g.py`. In short:
 Appendix A cannot supply ten more distinct F2 tools, and three topics I
 drafted were dropped on reading the plan rather than on taste, because the
 plan does not approve the figures they would have had to assert.
+
+## Reference tables added before the rest of the batch published
+
+Navneet compared a new page against tool 21 and found the new ones shorter and
+without a table. Measured across the family, tools 1 to 30 carry 0.8 static
+tables in the body on average and batches 6 and 7 carried none: both only drew
+a table after input.
+
+All ten now carry one, listed as `TABLES` in `build/f2/build_f2g.py`, and the
+byte counts above are the new ones. Tools 41 and 42 were already live and were
+patched in place with a single `wp_replace_in_post` each, reading back at the
+rebuilt byte count. Both batch gates now require a static table in the body.
+
+What the tables are is worth recording, because none of them is filler:
+
+| Tool | Its reference table |
+|---|---|
+| 41 | What each first year-end choice costs, three rows |
+| 42 | The three ways a year-end moves, and which need CRA approval |
+| 43 | The three ways two tax years end in one calendar year |
+| 44 | Which tax years the e-filing requirement reaches |
+| 45 | All nine Ontario public holidays and how each date is set |
+| 46 | Who can and cannot sign Form T183CORP, five rows |
+| 47 | Corporate income tax returns by province, and what the fee covers |
+| 48 | The three CRA accounts, how each closes, and which are in the fee |
+| 49 | Which obligation is measured from which date |
+| 50 | Which of the three catch-up tools answers which question |
+
+Tool 45's is the clearest case for the change: a visitor who wants to know how
+Victoria Day or Good Friday is set now gets it from the page without entering
+a date at all.

@@ -1427,6 +1427,129 @@ TOOLS6 = [
   ]),
 ]
 
+# ---------------------------------------------------------------------------
+# Static reference tables, added 2026-10-29 after publication.
+#
+# Tools 1 to 30 each carry a table in the body prose that a visitor can read
+# without touching the form. This batch shipped without one and only drew a
+# table after input. Navneet caught it by comparing a new page against tool
+# 21, whose table is "What happened / Effect on the count / Returns owed".
+#
+# Each table restates facts the page already asserts, which is what the
+# earlier batches' tables do: the value is that a visitor gets the shape of
+# the answer before entering anything. gate6.py now requires one.
+# ---------------------------------------------------------------------------
+
+def _tbl(head, rows):
+    h = ('<table class="ei-tbl"><thead><tr>'
+         + ''.join('<th scope="col">%s</th>' % c for c in head)
+         + '</tr></thead><tbody>')
+    for r in rows:
+        h += '<tr>' + ''.join('<td>%s</td>' % c for c in r) + '</tr>'
+    return h + '</tbody></table>'
+
+
+TABLES6 = {
+ 'corporate-balance-due-date-calculator': ('two-dates', _tbl(
+   ['Obligation', 'When it falls', 'On a nil year'],
+   [['A balance of tax', 'Two months after the year-end, or three for a '
+     'qualifying CCPC', 'Nothing is owed on it'],
+    ['The T2 return', 'Six months after the year-end', 'Still due'],
+    ['Instalments', 'Through the year, from the previous year&#8217;s tax',
+     'None, because a nil year sets that at $0.00']])),
+
+ 'fiscal-period-length-calculator': ('why-length', _tbl(
+   ['Length of the period', 'What it is', 'What follows from it'],
+   [['Up to 371 days', 'Available as a first tax year', 'One return'],
+    ['Under twelve months', 'A short tax year',
+     'A separate return, on the same six-month rule'],
+    ['Twelve months', 'A full tax year', 'The ordinary case'],
+    ['More than 371 days', 'Not a tax year at all',
+     'The year-end being used is not the one on record']])),
+
+ 'cra-demand-to-file-deadline-calculator': ('what-changes', _tbl(
+   ['Stage', 'What it is', 'What ends it'],
+   [['An overdue return', 'The year is simply unfiled', 'Filing it'],
+    ['A demand to file',
+     'A written requirement to file a named return by a named date',
+     'Filing the named return'],
+    ['An arbitrary assessment',
+     'The Agency&#8217;s own estimate of income, which is collectible',
+     'A filed return displacing it']])),
+
+ 't4-nil-filing-requirement-checker': ('calendar', _tbl(
+   ['Obligation', 'Measured from', 'When it falls'],
+   [['The T2 return', 'The fiscal year-end', 'Six months after it'],
+    ['The T4 information return', 'The calendar year',
+     'The end of the following February'],
+    ['Nil payroll remittances', 'Each remittance period',
+     'For as long as the account is open']])),
+
+ 'retained-earnings-rollforward-calculator': ('one-line', _tbl(
+   ['Line', 'What it does to the figure'],
+   [['Opening retained earnings', 'The starting point'],
+    ['Net income for the year', 'Added'],
+    ['Dividends declared', 'Subtracted'],
+    ['Closing retained earnings',
+     'The result, and what the next return opens from']])),
+
+ 'balance-sheet-balancing-checker': ('usual-causes', _tbl(
+   ['Cause', 'Where the item belongs', 'How it goes wrong'],
+   [['Share capital issued on incorporation', 'Equity',
+     'Left off, because nobody thinks of it as money'],
+    ['A balance owed to a shareholder', 'A liability',
+     'Put on the asset side'],
+    ['A balance owed by a shareholder', 'An asset',
+     'Put on the liability side'],
+    ['Retained earnings brought forward', 'Equity',
+     'Not carried from last year&#8217;s closing figure']])),
+
+ 'nil-gifi-balance-sheet-checker': ('other-schedules', _tbl(
+   ['Schedule', 'What it reports', 'On a nil year'],
+   [['100', 'The balance sheet',
+     'Filed, carrying whatever the corporation holds'],
+    ['125', 'The income statement', 'Filed, reporting zeroes'],
+    ['141', 'The notes checklist', 'Filed where required'],
+    ['24', 'First-return information', 'A first return only'],
+    ['50', 'Every shareholder at 10% or more',
+     'Filed where there is one'],
+    ['8', 'Capital cost allowance',
+     'Where depreciable property is held']])),
+
+ 'schedule-8-cca-requirement-checker': ('carried-balance', _tbl(
+   ['The position', 'Schedule 8 required', 'Effect on nil status'],
+   [['Depreciable property is held', 'Yes', 'None'],
+    ['An undepreciated balance is carried forward', 'Yes', 'None'],
+    ['Property was disposed of during the year', 'Yes',
+     'The year is not nil'],
+    ['Neither held nor carried forward', 'No', 'None']])),
+
+ 'involuntary-dissolution-risk-checker': ('not-a-charge', _tbl(
+   ['Filing', 'What it reports', 'What missing it produces'],
+   [['The registry annual return',
+     'The directors, the registered office, and that the corporation exists',
+     'A striking: the registry dissolves the corporation'],
+    ['The T2 return', 'The tax year',
+     'An unfiled year that stays open and does not expire']])),
+
+ 'director-liability-exposure-checker': ('the-pattern', _tbl(
+   ['Amount', 'Whose money it was', 'Can be assessed against a director'],
+   [['Payroll source deductions', 'Withheld from someone&#8217;s pay',
+     'Yes'],
+    ['Net GST/HST', 'Collected from customers', 'Yes'],
+    ['Corporate income tax', 'The corporation&#8217;s own liability',
+     'No, not on its own']])),
+}
+
+assert set(TABLES6) == {t['slug'] for t in TOOLS6}, 'TABLES6 vs TOOLS6'
+for t in TOOLS6:
+    _sid, _html = TABLES6[t['slug']]
+    _ids = [s for s, _, _ in t['sections']]
+    assert _sid in _ids, '%s: no section %r (has %r)' % (t['slug'], _sid, _ids)
+    t['sections'] = [(s, h, (b + '\n' + _html) if s == _sid else b)
+                     for s, h, b in t['sections']]
+
+
 SEO = {
  'corporate-balance-due-date-calculator': (
    'Corporate Balance Due Date Calculator | Two Months',
