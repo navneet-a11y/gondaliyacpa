@@ -1,0 +1,165 @@
+{
+ "id": 56948,
+ "editor": "post_content",
+ "sha256_after": "401c05ff8612e6a8e3b4949d2933066ce0e30209cce1a99635fefd361a9f0d28",
+ "ops": [
+  {
+   "row": 1,
+   "search": "decade. Gondaliya CPA helps <",
+   "replace": "decade. This guide helps <",
+   "regex": false
+  },
+  {
+   "row": 2,
+   "search": " missing it.</p>",
+   "replace": " missing it.</p>\n<p class=\"sred-notice\"><strong>Gondaliya CPA does not prepare SR&amp;ED claims. This page explains how the SR&amp;ED program works, for general information only.</strong></p>",
+   "regex": false
+  },
+  {
+   "row": 3,
+   "search": "came to us",
+   "replace": "looked at its claim",
+   "regex": false
+  },
+  {
+   "row": 4,
+   "search": "brought us a claim prepared elsewhere",
+   "replace": "had a claim prepared",
+   "regex": false
+  },
+  {
+   "row": 5,
+   "search": "We filed the three weeks, it",
+   "replace": "Only the three weeks were filed, the claim",
+   "regex": false
+  },
+  {
+   "row": 6,
+   "search": "asked us",
+   "replace": "wanted",
+   "regex": false
+  },
+  {
+   "row": 7,
+   "search": "e filed it",
+   "replace": "as filed",
+   "regex": false
+  },
+  {
+   "row": 8,
+   "search": " we touch",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 9,
+   "search": "and SR&amp;ED ",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 11,
+   "search": "We assess eligibility first and tell you plainly where a project does not qualify, because an overstated claim costs more than an unclaimed one. Where it does qualify we carve out the eligible work, build the expenditure pool with the reductions under subsection <strong>127(18)</strong> applied correctly, prepare the T661 and Schedule 31, and file with the T2 inside the reporting deadline. If a technical or financial review opens, we represent you through it",
+   "replace": "Assess eligibility first and be plain about where a project does not qualify, because an overstated claim costs more than an unclaimed one. Where it does qualify, carve out the eligible work, build the expenditure pool with the reductions under subsection <strong>127(18)</strong> applied correctly, prepare the T661 and Schedule 31, and file with the T2 inside the reporting deadline",
+   "regex": false
+  },
+  {
+   "row": 14,
+   "search": "A flat annual fee including HST, agreed in writing before any work begins, covering bookkeeping, the T2, the SR&amp;ED claim and routine CRA correspondence. Integrating the bookkeeping matters here more than in most engagements, because the claim has to reconcile to the general ledger and the payroll records line by line",
+   "replace": "The claim has to reconcile to the general ledger and the payroll records line by line, which is why integrated bookkeeping matters more here than in most engagements",
+   "regex": false
+  },
+  {
+   "row": 16,
+   "search": "Reach us at <strong>647-212-9559</strong> or <strong>info@gondaliyacpa.ca</strong>, with a one-business-day response. If you have a year end approaching eighteen months, say so",
+   "replace": "If you have a year end approaching eighteen months, deal with it",
+   "regex": false
+  },
+  {
+   "row": 18,
+   "search": "Please\\ book\\ a\\ free\\ consultation\\ with\\ Gondaliya\\ CPA\\ and\\ bring[\\s\\S]*?and\\ the\\ rest\\ of\\ Ontario,\\ and\\ work\\ with\\ studios\\ across\\ Canada",
+   "replace": "Before preparing a claim, gather three things: a list of the projects worked on in the year, whatever time records exist for them, and your fiscal year-end date. The third of those shows how much time is left, and on a year that closed more than a year ago that is the only question that matters. If any of the work was funded by a client or a grant, gather those agreements too, because the reductions change the arithmetic more than the rate does",
+   "regex": true
+  },
+  {
+   "row": 19,
+   "search": "to raise with us:</b>",
+   "replace": "to raise:</b>",
+   "regex": false
+  },
+  {
+   "row": 20,
+   "search": "eviewing with us:</b>",
+   "replace": "eviewing:</b>",
+   "regex": false
+  },
+  {
+   "row": 21,
+   "search": " A free review can confirm nothing is being missed.",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 22,
+   "search": "\n    <a class=\"p-cta\" href=\"https://gondaliyacpa.ca/consultation/\">Book a free consultation</a>",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 23,
+   "search": " please book a free consultation.</p>",
+   "replace": " please consult a licensed CPA.</p>",
+   "regex": false
+  },
+  {
+   "row": 24,
+   "search": " before your consultation",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 25,
+   "search": "<figure style=\"margin:18px 0;\"><img src=\"https://gondaliyacpa.ca/wp-content/uploads/2026/10/why-gondaliya-cpa-product-design-studio.png\" alt=\"Why Canadian product design studios choose Gondaliya CPA\" style=\"width:100%;border-radius:12px;border:1px solid #d8e0e8;\" /><figcaption style=\"font-size:13px;color:#5a6b7b;text-align:center;padding:6px;\">Why small businesses choose us.</figcaption></figure>\n",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 26,
+   "search": "<div\\ class=\"gcpa\\-cta\">\\\n<h4>Start\\ with\\ your\\ project\\ list,\\ you[\\s\\S]*?info@gondaliyacpa\\.ca\">info@gondaliyacpa\\.ca</a></div>\\\n</div>\\\n",
+   "replace": "",
+   "regex": true
+  },
+  {
+   "row": 27,
+   "search": ",\\\n\\ \\ \\ \\ \\{\\ \"@type\":\\ \"Service\",\\\n\\ \\ \\ \\ \\ \\ \"name\":\\ \"Accounting\\ and\\ SR[\\s\\S]*?velopment\\ businesses\\ across\\ Toronto,\\ Ontario\\ and\\ Canada\"\\ \\}\\ \\}",
+   "replace": "",
+   "regex": true
+  }
+ ],
+ "skipped": [
+  {
+   "row": 0,
+   "why": "needs_sharad"
+  },
+  {
+   "row": 10,
+   "why": "needs_sharad"
+  },
+  {
+   "row": 12,
+   "why": "needs_sharad"
+  },
+  {
+   "row": 13,
+   "why": "needs_sharad"
+  },
+  {
+   "row": 15,
+   "why": "needs_sharad"
+  },
+  {
+   "row": 17,
+   "why": "needs_sharad"
+  }
+ ]
+}

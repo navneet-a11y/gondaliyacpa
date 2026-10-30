@@ -9,6 +9,7 @@ meta_keys _elementor_edit_mode,_elementor_data). Writes apply/ops/<id>.json:
 Each op is checked in order against the current string: a literal search occurs exactly once,
 a regex search matches exactly once and covers the same span. Replaying the ops gives the same
 result as applying the audit rows in full. Rows flagged needs_sharad, manual and rank_math are skipped.
+With --sharad, approved needs_sharad rows are included too and ops go to apply/ops-sharad/<id>.json.
 """
 import hashlib, json, re, sys, os
 
@@ -65,10 +66,12 @@ def main():
     limit = int(sys.argv[sys.argv.index("--max") + 1]) if "--max" in sys.argv else 480
     audit = json.load(open(os.path.join(HERE, "audit", f"{pid}.json")))
     editor, s = load_source(src)
+    sharad = "--sharad" in sys.argv
+    outdir = os.path.join(HERE, "apply", "ops-sharad" if sharad else "ops")
     full = s
     ops, skipped = [], []
     for n, r in enumerate(audit["rows"]):
-        if r.get("needs_sharad") or r["editor"] not in ("elementor", "post_content"):
+        if (r.get("needs_sharad") and not sharad) or r["editor"] not in ("elementor", "post_content"):
             skipped.append({"row": n, "why": "needs_sharad" if r.get("needs_sharad") else r["editor"]})
             continue
         if r["editor"] != editor:
@@ -88,10 +91,10 @@ def main():
     assert s == full, "replayed ops differ from the audit result"
     if editor == "elementor":
         json.loads(s)  # the edited Elementor data must still parse
-    os.makedirs(os.path.join(HERE, "apply", "ops"), exist_ok=True)
+    os.makedirs(outdir, exist_ok=True)
     out = {"id": int(pid), "editor": editor, "sha256_after": hashlib.sha256(s.encode()).hexdigest(),
            "ops": ops, "skipped": skipped}
-    json.dump(out, open(os.path.join(HERE, "apply", "ops", f"{pid}.json"), "w"), indent=1, ensure_ascii=False)
+    json.dump(out, open(os.path.join(outdir, f"{pid}.json"), "w"), indent=1, ensure_ascii=False)
     print(f"{pid} {editor} ops={len(ops)} skipped={len(skipped)} regex={sum(o['regex'] for o in ops)}")
 
 

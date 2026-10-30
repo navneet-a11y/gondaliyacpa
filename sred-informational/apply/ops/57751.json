@@ -4,90 +4,6 @@
  "sha256_after": "759052d6019354d97b74316031fe4a04fbf9d2ebd022a6083a61a4c937504078",
  "ops": [
   {
-   "row": 0,
-   "search": "the credits claimed while you are still pre-revenue, and an SR&amp;ED claim that survives contact with a technical reviewer",
-   "replace": "and the credits claimed while you are still pre-revenue",
-   "regex": false
-  },
-  {
-   "row": 1,
-   "search": "the SR&amp;ED pool under ITA section 37 and credits under ITA section 127, ",
-   "replace": "",
-   "regex": false
-  },
-  {
-   "row": 2,
-   "search": "Consulting &mdash; The SR&amp;ED Record</h3><p>We set up the project record in the first month, because it",
-   "replace": "The SR&amp;ED Record</h3><p>The project record",
-   "regex": false
-  },
-  {
-   "row": 3,
-   "search": "SR&amp;ED Claims</a></h3><p>The ITA section 37 pool and ITA section 127 credits,",
-   "replace": "How SR&amp;ED Credits Work</a></h3><p>The ITA section 37 pool and ITA section 127 credits, which hold up when",
-   "regex": false
-  },
-  {
-   "row": 4,
-   "search": "the contractor-versus-employee question answered honestly, and time records that support the SR&amp;ED claim",
-   "replace": "and the contractor-versus-employee question answered honestly",
-   "regex": false
-  },
-  {
-   "row": 5,
-   "search": "SR&amp;ED technical reviews, ",
-   "replace": "",
-   "regex": false
-  },
-  {
-   "row": 6,
-   "search": "SR&amp;ED Claims for Cl",
-   "replace": "How SR&amp;ED Works for Cl",
-   "regex": false
-  },
-  {
-   "row": 7,
-   "search": "ealthtech claim we review goes wrong, beca",
-   "replace": "ealthtech claim goes wrong, beca",
-   "regex": false
-  },
-  {
-   "row": 8,
-   "search": "So we set up contemporaneous records",
-   "replace": "Contemporaneous records need to be kept",
-   "regex": false
-  },
-  {
-   "row": 9,
-   "search": "We read the funding agreements before the claim rather than after, and we model the net benefit of taking a particular grant against the credit it will cost you, which is a conversation worth having early.</li><li>We also keep the claim and the grant reporting",
-   "replace": "Funding agreements are best read before the claim rather than after, and the net benefit of taking a particular grant is worth modelling against the credit it will cost you, early.</li><li>The claim and the grant reporting need to stay",
-   "regex": false
-  },
-  {
-   "row": 10,
-   "search": "We keep the payroll records SR&amp;ED needs, which means",
-   "replace": "Payroll records for SR&amp;ED need",
-   "regex": false
-  },
-  {
-   "row": 11,
-   "search": "<li>When an SR&amp;ED claim goes to technical review, we produce the contemporaneous project records and we handle the correspondence, including the awkward part where some of the claim was clinical validation.</li>",
-   "replace": "",
-   "regex": false
-  },
-  {
-   "row": 12,
-   "search": "redits, SR&amp;ED records, grant tr",
-   "replace": "redits, grant tr",
-   "regex": false
-  },
-  {
-   "row": 13,
-   "search": ", credits and SR&amp;ED documentation",
-   "replace": " and credits",
-   "regex": false
-  },
-  {
    "row": 15,
    "search": " and SR&amp;ED claims",
    "replace": "",
@@ -161,6 +77,62 @@
   }
  ],
  "skipped": [
+  {
+   "row": 0,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 1,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 2,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 3,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 4,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 5,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 6,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 7,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 8,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 9,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 10,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 11,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 12,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 13,
+   "why": "before found 0 times now"
+  },
   {
    "row": 14,
    "why": "needs_sharad"

@@ -1,0 +1,107 @@
+{
+ "id": 29286,
+ "editor": "post_content",
+ "sha256_after": "250b9a041e67b2d1e72c41e81d46c30e61160634284671fadbfafd9199f2beff",
+ "ops": [
+  {
+   "row": 1,
+   "search": "with Gondaliya CPA ",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 2,
+   "search": "vely.</p>\n<!-- /wp:paragraph -->",
+   "replace": "vely.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"sred-notice\"><strong>Gondaliya CPA does not prepare SR&amp;ED claims. This page explains how the SR&amp;ED program works, for general information only.</strong></p>\n<!-- /wp:paragraph -->",
+   "regex": false
+  },
+  {
+   "row": 3,
+   "search": "<!-- wp:list-item -->\n<li>Companies working on projects that can claim SR&amp;ED credits.</li>\n<!-- /wp:list-item -->\n\n",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 4,
+   "search": "— including SR&amp;ED credits — ",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 5,
+   "search": "SR&amp;ED and other ",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 6,
+   "search": " — including accurate SR&amp;ED credit claims —",
+   "replace": ",",
+   "regex": false
+  },
+  {
+   "row": 7,
+   "search": " like Gondaliya CPA",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 8,
+   "search": " or claim SR&amp;ED tax credits",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 9,
+   "search": "<tr><td>SR&amp;ED Claim Package</td><td>All paperwork proving R&amp;D costs for CRA. Has technical stories and financial summaries.</td><td>Businesses with qualifying research projects</td><td>Before T2 filing deadline (about 18 months after year-end)</td></tr>",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 10,
+   "search": " and SR&amp;ED claims",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 12,
+   "search": "<a href=\"https://gondaliyacpa.ca/pricing-calculation/\">price for corporate tax planning</a> plus SR&amp;ED credit help",
+   "replace": "price for corporate tax planning",
+   "regex": false
+  },
+  {
+   "row": 13,
+   "search": "<tr><td>R&amp;D Activity Complexity</td><td>Big or complex R&amp;D projects need careful technical reviews for correct SR&amp;ED claims.</td><td>Keep detailed project notes as you go; involve CPAs early in R&amp;D stages.</td></tr>",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 14,
+   "search": "—including important SR&amp;ED ones—",
+   "replace": " ",
+   "regex": false
+  },
+  {
+   "row": 15,
+   "search": "<!-- wp:list-item -->\n<li>R&amp;D activity complexity demands expert technical reviews to maximize eligible claims properly.</li>\n<!-- /wp:list-item -->\n\n",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 16,
+   "search": "<!\\-\\-\\ wp:paragraph\\ \\-\\->\\\n<p>Maximize\\ every\\ available\\ tax\\ advant[\\s\\S]*?\\ smart,\\ proactive\\ tax\\ planning\\.</p>\\\n<!\\-\\-\\ /wp:paragraph\\ \\-\\->\\\n\\\n",
+   "replace": "",
+   "regex": true
+  }
+ ],
+ "skipped": [
+  {
+   "row": 0,
+   "why": "needs_sharad"
+  },
+  {
+   "row": 11,
+   "why": "needs_sharad"
+  }
+ ]
+}
