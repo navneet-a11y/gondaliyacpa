@@ -31,6 +31,17 @@ META  = ('Posts on filing a nil T2 corporate return in Canada, each written to o
 BYLINE = ('Written and reviewed by Sharad Gondaliya, CPA (Ontario), '
           'CPA Ontario Membership 61040184.')
 
+# Posts live under /blog/<slug>/, not at the site root. The cards used to be
+# built from SITE + '/' + slug, so every one of them pointed at a URL that does
+# not exist. The live page never showed it because its list is an Elementor
+# Posts loop, which builds its own links.
+BLOG = SITE + '/blog/'
+
+# Line 1224: the count is rendered live and never hand-typed. The docstring
+# below has always said so, but the markup was missing: only the .ei-count CSS
+# came across when the stylesheet was sliced from the guides hub.
+COUNT = '[cnf_child_count type="post"]'
+
 _g = io.open(os.path.join(HERE, 'guides-hub.html'), encoding='utf-8').read()
 CSS = (_g[:_g.index('</style>')]
        + '.ei-card{padding:0;overflow:hidden}\n'
@@ -62,6 +73,15 @@ RELATED = [
   'What ' + PRICE + ' covers, and what falls outside a nil return.'),
 ]
 
+# Every published post must have a card here, the same guard that /tools/
+# went four batches without. blog-hub-children.json is read from the site.
+_LIVE = set(json.load(io.open(os.path.join(HERE, 'blog-hub-children.json'),
+                             encoding='utf-8'))['slugs'])
+_missing = _LIVE - set(s for s, _t, _d, _i in POSTS)
+assert not _missing, (
+    '%d published posts have no hub card, which breaches line 1224: %s'
+    % (len(_missing), sorted(_missing)))
+
 UPLOADS = SITE + '/wp-content/uploads/2026/10/'
 
 def card(href, title, desc, img=None):
@@ -85,10 +105,11 @@ p.append('<div class="ei-hero"><div class="ei-hero-inner">'
  + '">Start Nil T2 Filing NOW</a></div>'
  '</div></div>\n')
 
-post_cards = '\n'.join(card(SITE + '/' + s + '/', t, d, i)
+post_cards = '\n'.join(card(BLOG + s + '/', t, d, i)
                        for s, t, d, i in POSTS)
 p.append('<div class="ei-section"><div class="ei-wrap ei-art">\n'
  '<h2 class="ei-h2">Every Post on This Site</h2>\n'
+ '<p class="ei-count">Posts published: <b>' + COUNT + '</b></p>\n'
  '<div class="ei-cards">\n' + post_cards + '\n</div>\n'
  '</div></div>\n')
 

@@ -26,8 +26,12 @@ POSTS_CSS = """
 close = src.index('</style>')                      # line 38, zero-based 37
 head = '\n'.join(src[:close]) + POSTS_CSS + '</style>\n'
 
-# Part 1: everything down to the "Every Post on This Site" heading, wrappers closed.
-hero = '\n'.join(src[close + 1:close + 4])         # hero div, section open, h2
+# Part 1: everything down to the "Every Post on This Site" heading, wrappers
+# closed. Sliced to wherever the card grid starts rather than to a fixed
+# three-line offset, which silently dropped any line added to the section --
+# as it did when the live child count was put back in.
+cards_open = src.index('<div class="ei-cards">')
+hero = '\n'.join(src[close + 1:cards_open])
 part1 = head + hero + '\n</div></div>\n'
 
 # Part 2: the "Also on This Site" links and the bottom CTA, untouched.
@@ -39,7 +43,7 @@ open('blog-part2-links.html', 'w').write(part2)
 
 # The two parts plus the Posts widget must account for the whole hub: what is
 # dropped should be exactly the hand-written card grid and nothing else.
-dropped = '\n'.join(src[close + 4:alt])
+dropped = '\n'.join(src[cards_open:alt])
 print('part1  %5d bytes' % len(part1))
 print('part2  %5d bytes' % len(part2))
 print('dropped %4d bytes:' % len(dropped))

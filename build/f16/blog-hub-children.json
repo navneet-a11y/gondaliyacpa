@@ -1,0 +1,9 @@
+{
+  "note": "Published post slugs read from the live site on 2026-10-30. build_blog_hub.py asserts its POSTS list covers these, so a post published without a hub card fails the build instead of going quietly unlinked. The live /blog/ renders its list through an Elementor Posts loop, which picks up new posts by itself; this guard protects the generated blog-hub.html, which does not.",
+  "post_type": "post",
+  "read_on": "2026-10-30",
+  "slugs": [
+    "mandatory-t2-e-filing-after-2023",
+    "schedule-50-and-the-10-percent-shareholder-rule"
+  ]
+}

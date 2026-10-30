@@ -5857,3 +5857,133 @@ Two things to settle, neither of them this batch's work:
 Bringing /guides/ and /deadlines/ up to full changes visible content on two
 live pages, so it goes to Sharad Gondaliya in the Friday update rather than
 being done unannounced.
+
+## 2026-10-30 — the other four hubs: what was actually wrong, and what my own audit got wrong
+
+Navneet: "UPDATE OTHER HUBS AS WELL", after the /tools/ hub was brought to 60
+of 60.
+
+**The audit table in the entry above is wrong in three places.** Correcting it
+first, because two of its three "open" items were not defects at all:
+
+| Hub | Family | Child links | Children live | Live count | Verdict |
+|---|---|---|---|---|---|
+| /tools/ | F16 | 60 | 60 nil_calculator | yes | done 2026-10-29 |
+| /guides/ | F16 | **30** | 30 nil_guide | yes | **fixed today** |
+| /locations/ | F16 | **24** | 24 nil_service_place | yes | was already complete |
+| /blog/ | F16 | all, by Posts loop | 2 posts | **no** | count blocked, see below |
+| /services/ | F16 | 12 services | 0 nil_vertical | no | **open question, see below** |
+| /deadlines/ | **F14** | 19 outbound | 23 nil_deadline | not required | correct as built |
+
+1. **/deadlines/ is not a Family 16 hub,** so line 1224 never applied to it. Line
+   1154 lists F16 as exactly five pages: /services/, /tools/, /locations/,
+   /guides/, /blog/. /deadlines/ is one of F14's own 23 URLs, and F14's gate
+   (line 1222) asks for a computed date and the business-day rule sentence, not
+   a child count. It also sits at 19 internal links against the 20-outbound cap
+   6(g) gives F14, so the 10 catch-up year pages it leaves out cannot be added:
+   linking all 23 children plus the money pages would put it at 29. The
+   docstring in `build/f14/build_deadlines_hub.py` had already reasoned this out
+   and sent those pages to /catch-up-nil-t2-filing/ instead. Nothing to do.
+2. **/locations/ was already complete.** It links all 24 service-place children,
+   12 under Ontario and 12 under British Columbia, and carries the shortcode
+   with `cnf_child_count` 24. My "26" counted the two province pillar pages,
+   /ontario/ and /british-columbia/, as children. They are not children; they
+   are the cards the children hang under. Nothing to do.
+3. **/services/ was missing from the table entirely,** though it is one of the
+   five.
+
+### /guides/, the one real gap: 12 of 30
+
+Same shape as /tools/, same cause: nothing compared the hub's cards to the live
+child list. `build_f16.py` had diverged to a single card in `GUIDES` while 30
+guides were live, and the page carried `cnf_child_count` 12.
+
+Rebuilt with all 30 in seven subject groups (Start Here 5; Dormant, Inactive and
+Numbered 5; Deadlines, Year-Ends and the Calendar 4; The Forms, Schedules and
+Transmission 6; Unfiled Years, Penalties and CRA Letters 4; CRA Accounts, Annual
+Returns and the Provinces 4; Winding Up and Dissolution 2). The 12 descriptions
+already live are kept word for word, with one exception: "What Form T183CORP
+**authorises**" became "permits", because the site is written in Canadian
+English and that was the only British spelling on the page. 18 descriptions are
+new. `build/f16/guides-hub-children.json` now holds the 30 slugs read from the
+site and the builder asserts its card list matches, so guide 31 fails the build
+rather than going unlinked. Published to page 904 at 16,092 bytes, byte-verified
+on live, `cnf_child_count` 30 and `cnf_last_verified_et` 2026-10-30.
+
+Page 904 has no `<!-- wp:html -->` wrapper, unlike /tools/ on page 1187. The
+built file matches that, so the page keeps rendering as it did.
+
+### Two builder bugs on /blog/, neither visible on the live page
+
+1. **Every card link was missing the `/blog/` prefix.** The cards were built from
+   `SITE + '/' + slug`, but posts live at `/blog/<slug>/`, so all of them pointed
+   at URLs that do not exist. The live page never showed it because its list is
+   an Elementor Posts loop that builds its own links. `blog-hub.html` would have
+   gone up with every post link 404ing.
+2. **The live count line was missing** although the docstring has always claimed
+   it. Only the `.ei-count` CSS came across when the stylesheet was sliced from
+   the guides hub; the markup never did.
+
+`elementor-parts.py` also sliced part 1 by a counted three-line offset, which
+silently swallowed any line added to that section — including the count line
+when I put it back. It now slices to wherever the card grid starts.
+
+`blog-hub-children.json` is read from the site and asserted against, so the blog
+cannot drift as it scales to ten posts every Friday.
+
+### What I could not do: /blog/ and /services/ are Elementor pages
+
+Both are built with Elementor, so their `post_content` is not what renders and
+the count has to live in the layout.
+
+- **/blog/ (1037)** reports `editable: false` — Elementor refuses layout edits
+  for this account. The page's three parts are two HTML widgets with the Posts
+  loop between them, and the count belongs in the first HTML widget.
+  `blog-part1-hero.html` is rebuilt and ready to paste, but only Navneet can
+  paste it.
+  **One thing to check when it goes in:** Elementor's HTML widget echoes its
+  markup raw and does not run shortcodes, so `[cnf_child_count type="post"]` may
+  render as literal text there. Elementor's Text Editor and Shortcode widgets do
+  run shortcodes. If the literal text appears, the count line needs to be its
+  own Shortcode widget rather than part of the HTML block.
+  Meta is writable without Elementor, so `cnf_child_count` 2,
+  `cnf_hub_children_query_json` and `cnf_last_verified_et` 2026-10-30 are set.
+- **/services/ (321)** is editable, but `wp_update_page_layout` only changes
+  existing elements — it cannot add a widget, and a count line would be a new
+  one. So this is Navneet's to add too.
+
+Separately, **page 904's Astra meta is not the usual six**:
+`site-sidebar-layout` reads `default` rather than `no-sidebar` and
+`ast-featured-img` is empty rather than `disabled`. It renders correctly today
+because `site-content-layout` is `page-builder` with a full-width container, so
+I left it as it is rather than changing a live page's layout meta outside what
+was asked. Worth aligning when the page is next touched.
+
+### Open question for Sharad Gondaliya: what does /services/ count?
+
+/services/ is the only F16 hub with no live count, and it is not obvious what
+its count should be:
+
+- Its child family on the plan's reading is F1, the 215 industry and entity
+  verticals at `/nil-t2-filing-for-<vertical>/`. **Zero are published**, so
+  `[cnf_child_count type="nil_vertical"]` would render 0.
+- `docs/hub-child-count-snippet.md` says /services/ should use
+  `type="nil_service_place"`, which is 24 — but those 24 are what /locations/
+  counts, and counting them here would say the same number twice for two
+  different things.
+- The page itself presents **12 services** and carries a hand-set
+  `cnf_child_count` of 12. Those 12 are F4's "12 fixed service slugs", a fixed
+  editorial set rather than a growing family, which is why nothing has been
+  updating it.
+
+A fixed 12 does not breach "counts update automatically and are never
+hand-typed" in spirit, since it cannot go stale. But it is hand-typed, and the
+three readings give three different numbers. Sharad Gondaliya should pick one
+before /services/ is republished.
+
+### Also worth flagging, outside this task
+
+The blog is at **2 posts on October 30**. The plan wants 10 every Friday from
+October 16, which would put roughly 30 live by now, and 60 by November 20. The
+hub will track whatever is published, but the publishing schedule itself is
+behind.

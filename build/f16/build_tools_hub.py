@@ -367,7 +367,11 @@ def render():
                  + '\n'.join(card(HUB + sl + '/', t, d) for sl, t, d in items)
                  + '\n</div>\n</div></div>\n')
 
-    p.append('<div class="ei-section-alt"><div class="ei-wrap ei-art">\n'
+    # Keep the bands alternating, as the guides hub does. At ten groups this
+    # is ei-section-alt, which is what it hardcoded, so the published page is
+    # unchanged by the switch to a computed class.
+    also_cls = 'ei-section' if (len(GROUPS) - 1) % 2 == 0 else 'ei-section-alt'
+    p.append('<div class="' + also_cls + '"><div class="ei-wrap ei-art">\n'
              '<h2 class="ei-h2">Also on This Site</h2>\n<div class="ei-cards">\n'
              + '\n'.join(card(h, t, d) for h, t, d in ALSO)
              + '\n</div>\n<p class="ei-updated">Last reviewed: ' + TODAY
