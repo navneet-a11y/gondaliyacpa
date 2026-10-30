@@ -5763,3 +5763,45 @@ against a reconstruction of the live content first.
 and Family 16's rule that a hub links every child in its family is not met.
 This predates this batch. It needs approval because bringing the hub to 30
 changes a live page's visible content.
+
+---
+
+## 2026-10-30 — Family 2 is 150 URLs in the plan, and 20 built tools are not in Appendix A
+
+Recorded because two different counts of Family 2 have been in use and only one
+of them is the plan's.
+
+Appendix A lists **150** F2 slugs. The plan's own tables say the same at lines
+309, 1140 and 2239, and line 2239 schedules them 50 each on October 16,
+October 23 and October 30, 2026. An earlier gap analysis in this project put
+F2 at 108 URLs. That figure was wrong and any planning that used it understates
+the family by 42 URLs.
+
+Of the 60 tool pages now built, **40 are Appendix A entries and 20 are slugs
+chosen outside it.** So against the plan Family 2 is 40 of 150, while the site
+will show 60 live tools once batch 8 publishes. Both numbers are true and they
+answer different questions.
+
+The 20 off-appendix slugs were each built because the appendix group they would
+have come from needed a figure the plan does not state, and the reasons are
+recorded in the `build_f2f.py` and `build_f2g.py` docstrings. Batch 8 returns to
+the appendix for all ten, which also corrects `build_f2g.py`'s claim that the
+appendix could not supply ten more distinct tools: the groups I had been drawing
+from were exhausted, the appendix was not.
+
+**For Sharad Gondaliya, in a Friday update:** whether the 20 off-appendix tools
+count toward the 150, or sit beside it as additions, changes the remaining F2
+work by 20 URLs. The plan does not say, and the answer is his.
+
+Nothing about this changes a hard rule or a live page.
+
+### Open: 110 Appendix A F2 slugs remain, and some cannot be built as specified
+
+Of the 110 unbuilt appendix slugs, a known subset needs a penalty rate, an
+interest rate, a statutory threshold or a filing fee that the plan never
+states. Those are listed with their reasons in the `build_f2h.py` docstring
+and they cannot be built without either an approved source from Sharad
+Gondaliya or a decision to drop them. The plan gives exactly two figures of
+that kind, the $25.00 per day up to $2,500.00 for a non-resident-owned
+corporation and the $12.00 federal annual return fee, and both are already on
+live pages.
