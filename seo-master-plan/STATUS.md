@@ -35,3 +35,20 @@ Plan: Sharad's email, which replaces all earlier SEO change lists. Rules: see th
 - **No staging:** the security updates (change 1) are done live, after a backup. Content edits wait until Navneet confirms the updates are finished.
 - **Change 6 (services we do not offer): ON HOLD in this session.** Navneet is handling it in a different session. Do not edit SR&ED or review/audit content here.
 - **Rate changes for changes 8 and 9 approved by Navneet (October 30):** the 2026 payroll values, the Ontario 2026 brackets and BPA, the federal BPA, the EI guide totals, the corporate tax rates (Ontario 2.2% from July 1, 2026, and the other provinces from CRA's table), and the calculator logic.
+
+## Handoff (Friday, October 30, 2026): agents stopped to switch sessions
+
+The three agents applying changes 8 to 11 were stopped partway to avoid per-call permission prompts. `.claude/settings.json` was added to the default branch so a new session runs without prompts.
+
+**State when stopped:**
+- **Change 8 (pages 38443, 39590): PARTLY applied, not logged.** Before-copies are in `backups/*-before-change08.json`. Compare the live `_elementor_data` with the prep list (`2026-10-30-prep-changes-08-09.md`, 8A/8B) to see which replacements are done. Log them, then finish the rest.
+- **Change 9 (pages 35514, 36029): PARTLY applied, not logged.** It was working on the 36029 province cards (Ontario/Quebec) when stopped. Before-copies are in `backups/*-before-change09.json`. Compare and finish the same way as change 8. Calculator check: run `drafts/09-corporate-tax-calculator.test.js` against the live code.
+- **Change 10: most link fixes done and logged** (see `CHANGE-LOG.csv`, change_no 10). Still to confirm or do:
+  - set 36489, 22 and 21763 to draft
+  - noindex /thank-you/ and /tax-intake-form/
+  - retitle 44209 to Oshawa
+  - rename 43679 ("windor") with a 301
+  - add the 301 for the nested best-bookkeeping URL
+- **Change 11: started.** Before-copies were taken for 14878, 16, 1707, 17951 and 6621. Check the live pages for the H1 to H2 changes, then do the rest from the prep file. /about-us/ is a manual Elementor edit.
+- **Holds still apply:** changes 6, 7 and 12. /review-engagement-services/ stays as is.
+- **Every edit must:** be dry-run first, be checked to hit only the intended page, run one at a time, keep a before-copy, be logged in `CHANGE-LOG.csv`, and purge the cache.
