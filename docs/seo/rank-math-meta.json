@@ -1,6 +1,6 @@
 {
   "applied": "2026-10-29",
-  "coverage": "188 items given meta: 30 pages, 30 questions, 24 service places, 23 deadlines, 20 calculators (tools 1-20), 17 guides (1-17), 1 cost page, the 10 guides 18-27 (IDs 1377-1395), the 10 calculators 31-40 (IDs 1413-1434), the 3 guides 28-30 (IDs 1464-1468) that complete Family 9, and the 10 calculators 41-50 (IDs 1444-1508) that complete the fifty, and the 10 calculators 51-60 built on October 30 and awaiting publish. Calculators 21-30 (IDs 1285-1303) carry meta set at publish time by the build/f2 generator and are not repeated here. Every published item on the site has a Rank Math title and description.",
+  "coverage": "188 items given meta: 30 pages, 30 questions, 24 service places, 23 deadlines, 20 calculators (tools 1-20), 17 guides (1-17), 1 cost page, the 10 guides 18-27 (IDs 1377-1395), the 10 calculators 31-40 (IDs 1413-1434), the 3 guides 28-30 (IDs 1464-1468) that complete Family 9, and the 10 calculators 41-50 (IDs 1444-1508) that complete the fifty, and the 10 calculators 51-60 (IDs 1510-1528) that take Family 2 to sixty. Calculators 21-30 (IDs 1285-1303) carry meta set at publish time by the build/f2 generator and are not repeated here. Every published item on the site has a Rank Math title and description.",
   "nil_calculator_1_to_20": {
     "items": [
       {
@@ -260,76 +260,66 @@
     "items": [
       {
         "desc": "A corporation files a T2 every year until it is formally dissolved. Three answers test whether this year is owed.",
-        "id": null,
+        "id": 1510,
         "kw": "t2 filing requirement checker",
-        "slug": "t2-filing-requirement-checker",
         "title": "T2 Filing Requirement Checker | Is a Return Owed"
       },
       {
         "desc": "Seven answers give the whole schedule set a nil return carries: the GIFI schedules, Schedule 24, 50 and 8.",
-        "id": null,
+        "id": 1512,
         "kw": "required schedules checker",
-        "slug": "required-schedules-checker",
         "title": "Required Schedules Checker | Nil T2 Schedules"
       },
       {
         "desc": "Share capital makes the GIFI schedules required even with no activity. Three answers show what yours triggers.",
-        "id": null,
+        "id": 1514,
         "kw": "share capital reporting checker",
-        "slug": "share-capital-reporting-checker",
         "title": "Share Capital Reporting Checker | GIFI, Schedule 50"
       },
       {
         "desc": "A shareholder loan balance makes the GIFI schedules required even with no activity. Either direction counts.",
-        "id": null,
+        "id": 1516,
         "kw": "shareholder loan balance checker",
-        "slug": "shareholder-loan-balance-checker",
         "title": "Shareholder Loan Balance Checker | Nil Returns"
       },
       {
         "desc": "Schedule 125 is the income statement. Three answers show whether it goes on a nil return and what it carries.",
-        "id": null,
+        "id": 1518,
         "kw": "gifi schedule 125 checker",
-        "slug": "gifi-schedule-125-checker",
         "title": "GIFI Schedule 125 Checker | The Income Statement"
       },
       {
         "desc": "Schedule 141 records who prepared the statements and what work stands behind them. Three answers test it.",
-        "id": null,
+        "id": 1520,
         "kw": "gifi schedule 141 checker",
-        "slug": "gifi-schedule-141-checker",
         "title": "GIFI Schedule 141 Checker | The Notes Checklist"
       },
       {
         "desc": "A dormant corporation still owes filings. Three answers list every one and say which the fee covers.",
-        "id": null,
+        "id": 1522,
         "kw": "dormant corporation obligation checker",
-        "slug": "dormant-corporation-obligation-checker",
         "title": "Dormant Corporation Obligation Checker | Still Owed"
       },
       {
         "desc": "The annual return and the T2 are unrelated filings to different bodies. Two answers set them side by side.",
-        "id": null,
+        "id": 1524,
         "kw": "annual return vs tax return checker",
-        "slug": "annual-return-vs-tax-return-checker",
         "title": "Annual Return vs Tax Return Checker | Two Filings"
       },
       {
         "desc": "Keeping a dormant corporation costs a return every year. Enter the years to compare that with winding it up.",
-        "id": null,
+        "id": 1526,
         "kw": "dissolve or keep filing cost calculator",
-        "slug": "dissolve-or-keep-filing-cost-calculator",
         "title": "Dissolve or Keep Filing Cost Calculator | Compared"
       },
       {
         "desc": "The federal annual return is $12.00 within 60 days of the anniversary. Enter the incorporation date for a schedule.",
-        "id": null,
+        "id": 1528,
         "kw": "federal annual return fee calculator",
-        "slug": "federal-annual-return-fee-calculator",
         "title": "Federal Annual Return Fee Calculator | 12 Dollars"
       }
     ],
-    "note": "Built and gated October 30, 2026. Post IDs are filled in at publish time; the slug identifies each item until then."
+    "note": "Published October 30, 2026 as IDs 1510 to 1528. Values taken from build/f2/f2h-manifest.json, not retyped."
   },
   "nil_cost": {
     "items": [

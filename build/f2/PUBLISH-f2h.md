@@ -1,8 +1,8 @@
 # Family 2 batch 8 publish state (tools 51 to 60)
 
-BUILT, GATED and DOM-TESTED on October 30, 2026. NOT YET PUBLISHED: the
-corpnil connector dropped out of the session before the publish step and
-needs re-authorizing, so this file is the handover.
+BUILT, GATED, DOM-TESTED and PUBLISHED on October 30, 2026. The connector
+dropped out of the session between the build and the publish; it came back and
+all ten went up in one run.
 
 - `gate8.py` clear on all ten pages
 - `gate_f2_all.py` clear across all sixty Family 2 pages (5 known pre-existing)
@@ -23,16 +23,16 @@ are measuring different things.
 
 | # | slug | bytes | ID | content | meta | term |
 |---|---|---|---|---|---|---|
-| 51 | t2-filing-requirement-checker | 29070 | | | | |
-| 52 | required-schedules-checker | 30848 | | | | |
-| 53 | share-capital-reporting-checker | 29166 | | | | |
-| 54 | shareholder-loan-balance-checker | 28659 | | | | |
-| 55 | gifi-schedule-125-checker | 28908 | | | | |
-| 56 | gifi-schedule-141-checker | 28383 | | | | |
-| 57 | dormant-corporation-obligation-checker | 28734 | | | | |
-| 58 | annual-return-vs-tax-return-checker | 28877 | | | | |
-| 59 | dissolve-or-keep-filing-cost-calculator | 29705 | | | | |
-| 60 | federal-annual-return-fee-calculator | 27645 | | | | |
+| 51 | t2-filing-requirement-checker | 29070 | 1510 | verified | set | f2 |
+| 52 | required-schedules-checker | 30848 | 1512 | verified | set | f2 |
+| 53 | share-capital-reporting-checker | 29166 | 1514 | verified | set | f2 |
+| 54 | shareholder-loan-balance-checker | 28659 | 1516 | verified | set | f2 |
+| 55 | gifi-schedule-125-checker | 28908 | 1518 | verified | set | f2 |
+| 56 | gifi-schedule-141-checker | 28383 | 1520 | verified | set | f2 |
+| 57 | dormant-corporation-obligation-checker | 28734 | 1522 | verified | set | f2 |
+| 58 | annual-return-vs-tax-return-checker | 28877 | 1524 | verified | set | f2 |
+| 59 | dissolve-or-keep-filing-cost-calculator | 29705 | 1526 | verified | set | f2 |
+| 60 | federal-annual-return-fee-calculator | 27645 | 1528 | verified | set | f2 |
 
 All ten share the same 12,975-byte CSS prefix as batches 5 to 7 (sha256
 prefix `8b978623a4fb`), so the publish call for each one is that prefix plus
@@ -100,3 +100,28 @@ already live), the three shareholder loan tax calculators (statutory periods
 and prescribed rates), two permanent establishment tests (no definition) and
 corporate revival (not in the plan). The generator docstring records each one
 with its reason.
+
+## The publish run, October 30, 2026
+
+All ten are live. Every page's `content_length_before` from the zero-change
+probe equalled the build file byte for byte, so the table above records
+`verified` for each rather than an assumption. Each call was the shared
+12,975-byte CSS prefix (sha256 prefix `8b978623a4fb`, re-checked across all
+ten build files before the run) plus the page body.
+
+Rank Math values were taken from `f2h-manifest.json` rather than retyped,
+which is the instruction this file carried from batch 7's one hand-typed
+title. No correction was needed this time.
+
+Counts after the run, read from the site rather than inferred:
+`wp_count_posts` for `nil_calculator` is 60 published, and the `cnf_family`
+term `f2` has a count of 60.
+
+Against Appendix A, Family 2 now stands at 40 of the plan's 150 F2 slugs,
+with 20 further tools built outside the appendix. See `docs/decisions.md`
+for why those two numbers differ and what needs Sharad Gondaliya's call.
+
+One stale figure to note rather than rewrite: the commit message for the
+build listed tool 52 at 30,801 bytes. The file was 30,848 after a late FAQ
+fix, and 30,848 is what the table above, the manifest and the live page all
+carry. Nothing shipped wrong; the prose in that commit was a moment behind.
