@@ -1,0 +1,483 @@
+{
+ "id": 24687,
+ "editor": "elementor",
+ "sha256_after": "50cfa64f7fb5e1579a21435dcd8c7b0f356fc1badf0794cac82fc2fd77c18dc2",
+ "ops": [
+  {
+   "row": 0,
+   "search": "Maximize your innovation funding with CPA-led SR&amp;ED claim preparation and",
+   "replace": "Learn how SR&amp;ED tax credits fund innovation, from claim preparation to",
+   "regex": false
+  },
+  {
+   "row": 1,
+   "search": "audit-ready documentation.<\\/p>",
+   "replace": "audit-ready documentation.<\\/p><p class=\\\"sred-notice\\\"><strong>Gondaliya CPA does not prepare SR&amp;ED claims. This page explains how the SR&amp;ED program works, for general information only.<\\/strong><\\/p>",
+   "regex": false
+  },
+  {
+   "row": 5,
+   "search": "AFFORDABLE SR&ED Tax Credit Services",
+   "replace": "How the SR&ED Tax Credit Program Works",
+   "regex": false
+  },
+  {
+   "row": 6,
+   "search": "Gondaliya CPA helps innovative companies identify eligible R&amp;D activities, document expenses accurately, and prepare compliant claims, maximizing potential refunds",
+   "replace": "A compliant claim requires identifying eligible R&amp;D activities and documenting expenses accurately",
+   "regex": false
+  },
+  {
+   "row": 7,
+   "search": "With years of experience working with ",
+   "replace": "The program is used by ",
+   "regex": false
+  },
+  {
+   "row": 8,
+   "search": ", we guide clients through the complex SR&amp;ED rules, from",
+   "replace": ", and the SR&amp;ED rules are complex, from",
+   "regex": false
+  },
+  {
+   "row": 9,
+   "search": " Our affordable, professional approach helps innovators focus on growth while benefiting from every tax credit available.",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 21,
+   "search": "\"title\":\"SR&ED Tax Credit Claims Experts\"",
+   "replace": "\"title\":\"About Gondaliya CPA\"",
+   "regex": false
+  },
+  {
+   "row": 25,
+   "search": " Gondaliya CPA helps identify eligible activities and ensures claims are fully compliant with CRA requirements.",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 26,
+   "search": "We work closely with innovators to ",
+   "replace": "Understanding the program helps ",
+   "regex": false
+  },
+  {
+   "row": 27,
+   "search": ", helping your business recover eligible costs, maximize credits, and reinvest in growt",
+   "replace": ", so your business can recover eligible costs, maximize credits, and reinvest in growt",
+   "regex": false
+  },
+  {
+   "row": 28,
+   "search": "Gondaliya CPA helps document these elements accurately, ensuring that",
+   "replace": "Documenting these elements accurately helps ensure that",
+   "regex": false
+  },
+  {
+   "row": 29,
+   "search": "\"title\":\"Our SR&ED Tax Credit Services",
+   "replace": "\"title\":\"What an SR&ED Claim Involves",
+   "regex": false
+  },
+  {
+   "row": 35,
+   "search": "Your SR&ED Claim in 4 Simple Steps",
+   "replace": "The SR&ED Claim Process in 4 Steps",
+   "regex": false
+  },
+  {
+   "row": 38,
+   "search": "\"title\":\"Discovery & Consultation\"",
+   "replace": "\"title\":\"Discovery\"",
+   "regex": false
+  },
+  {
+   "row": 39,
+   "search": "\"title\":\"CPA Review & Filing",
+   "replace": "\"title\":\"Review & Filing",
+   "regex": false
+  },
+  {
+   "row": 40,
+   "search": "\"title\":\"CRA Support",
+   "replace": "\"title\":\"CRA Review",
+   "regex": false
+  },
+  {
+   "row": 41,
+   "search": "We represent you through any review or audit.",
+   "replace": "The CRA may review or audit the claim.",
+   "regex": false
+  },
+  {
+   "row": 48,
+   "search": "Toronto, GTA & Ontario SR&ED Tax Credit Coverage",
+   "replace": "SR&ED Tax Credits in Toronto, the GTA and Ontario",
+   "regex": false
+  },
+  {
+   "row": 49,
+   "search": "Our SR&amp;ED Tax Credit Claims service helps companies identify eligible R&amp;D activities, prepare technical documentation, and maximize their",
+   "replace": "An SR&amp;ED claim involves identifying eligible R&amp;D activities, preparing technical documentation, and calculating",
+   "regex": false
+  },
+  {
+   "row": 50,
+   "search": "<p data-start=\\\"617\\\" data-end=\\\"729\\\">We guide businesses across Ontario through every step, ensuring accurate submissions and faster claim approvals. SR&amp;ED tax credit claim services are available in-person at our Toronto office and virtually for businesses across Ontario and Canada.<\\/p>",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 51,
+   "search": "toronto\\/\\\"><span class=\\\"card-sub\\\">SR&ED Tax Credit Claims in ",
+   "replace": "toronto\\/\\\"><span class=\\\"card-sub\\\">CPA Services in ",
+   "regex": false
+  },
+  {
+   "row": 52,
+   "search": "mississauga\\/\\\"><span class=\\\"card-sub\\\">SR&ED Tax Credit Claims in ",
+   "replace": "mississauga\\/\\\"><span class=\\\"card-sub\\\">CPA Services in ",
+   "regex": false
+  },
+  {
+   "row": 53,
+   "search": "brampton\\/\\\"><span class=\\\"card-sub\\\">SR&ED Tax Credit Claims in ",
+   "replace": "brampton\\/\\\"><span class=\\\"card-sub\\\">CPA Services in ",
+   "regex": false
+  },
+  {
+   "row": 54,
+   "search": "etobicoke\\/\\\"><span class=\\\"card-sub\\\">SR&ED Tax Credit Claims in ",
+   "replace": "etobicoke\\/\\\"><span class=\\\"card-sub\\\">CPA Services in ",
+   "regex": false
+  },
+  {
+   "row": 55,
+   "search": "scarborough\\/\\\"><span class=\\\"card-sub\\\">SR&ED Tax Credit Claims in ",
+   "replace": "scarborough\\/\\\"><span class=\\\"card-sub\\\">CPA Services in ",
+   "regex": false
+  },
+  {
+   "row": 56,
+   "search": "markham\\/\\\"><span class=\\\"card-sub\\\">SR&ED Tax Credit Claims in ",
+   "replace": "markham\\/\\\"><span class=\\\"card-sub\\\">CPA Services in ",
+   "regex": false
+  },
+  {
+   "row": 57,
+   "search": "vaughan\\/\\\"><span class=\\\"card-sub\\\">SR&ED Tax Credit Claims in ",
+   "replace": "vaughan\\/\\\"><span class=\\\"card-sub\\\">CPA Services in ",
+   "regex": false
+  },
+  {
+   "row": 58,
+   "search": "richmond-hill\\/\\\"><span class=\\\"card-sub\\\">SR&ED Tax Credit Claims in ",
+   "replace": "richmond-hill\\/\\\"><span class=\\\"card-sub\\\">CPA Services in ",
+   "regex": false
+  },
+  {
+   "row": 59,
+   "search": "north-york\\/\\\"><span class=\\\"card-sub\\\">SR&ED Tax Credit Claims in ",
+   "replace": "north-york\\/\\\"><span class=\\\"card-sub\\\">CPA Services in ",
+   "regex": false
+  },
+  {
+   "row": 60,
+   "search": "oakville\\/\\\"><span class=\\\"card-sub\\\">SR&ED Tax Credit Claims in ",
+   "replace": "oakville\\/\\\"><span class=\\\"card-sub\\\">CPA Services in ",
+   "regex": false
+  },
+  {
+   "row": 61,
+   "search": "hamilton\\/\\\"><span class=\\\"card-sub\\\">SR&ED Tax Credit Claims in ",
+   "replace": "hamilton\\/\\\"><span class=\\\"card-sub\\\">CPA Services in ",
+   "regex": false
+  },
+  {
+   "row": 62,
+   "search": "guelph\\/\\\"><span class=\\\"card-sub\\\">SR&ED Tax Credit Claims in ",
+   "replace": "guelph\\/\\\"><span class=\\\"card-sub\\\">CPA Services in ",
+   "regex": false
+  },
+  {
+   "row": 63,
+   "search": "oshawa\\/\\\"><span class=\\\"card-sub\\\">SR&ED Tax Credit Claims in ",
+   "replace": "oshawa\\/\\\"><span class=\\\"card-sub\\\">CPA Services in ",
+   "regex": false
+  },
+  {
+   "row": 64,
+   "search": "ottawa\\/\\\"><span class=\\\"card-sub\\\">SR&ED Tax Credit Claims in ",
+   "replace": "ottawa\\/\\\"><span class=\\\"card-sub\\\">CPA Services in ",
+   "regex": false
+  },
+  {
+   "row": 65,
+   "search": "windsor\\/\\\"><span class=\\\"card-sub\\\">SR&ED Tax Credit Claims in ",
+   "replace": "windsor\\/\\\"><span class=\\\"card-sub\\\">CPA Services in ",
+   "regex": false
+  },
+  {
+   "row": 66,
+   "search": "Industries We Serve With Our SR&ED Tax Credit Services",
+   "replace": "Industries That Commonly Claim SR&ED Tax Credits",
+   "regex": false
+  },
+  {
+   "row": 67,
+   "search": "\"title_text\":\"SR&ED Tax Credit Claims for Startups\"",
+   "replace": "\"title_text\":\"SR&ED Tax Credits for Startups\"",
+   "regex": false
+  },
+  {
+   "row": 68,
+   "search": "\"title_text\":\"SR&ED Tax Credit Claims  for Healthcare\"",
+   "replace": "\"title_text\":\"SR&ED Tax Credits for Healthcare\"",
+   "regex": false
+  },
+  {
+   "row": 69,
+   "search": "\"title_text\":\"SR&ED Tax Credit Claims for  Consultants\"",
+   "replace": "\"title_text\":\"SR&ED Tax Credits for Consultants\"",
+   "regex": false
+  },
+  {
+   "row": 70,
+   "search": "\"title_text\":\"SR&ED Tax Credit Claims for  Small Businesses\"",
+   "replace": "\"title_text\":\"SR&ED Tax Credits for Small Businesses\"",
+   "regex": false
+  },
+  {
+   "row": 71,
+   "search": "\"title_text\":\"SR&ED Tax Credit Claims for  Restaurants\"",
+   "replace": "\"title_text\":\"SR&ED Tax Credits for Restaurants\"",
+   "regex": false
+  },
+  {
+   "row": 72,
+   "search": "\"title_text\":\"SR&ED Tax Credit Claims for  Franchises\"",
+   "replace": "\"title_text\":\"SR&ED Tax Credits for Franchises\"",
+   "regex": false
+  },
+  {
+   "row": 73,
+   "search": "\"title_text\":\"SR&ED Tax Credit Claims for Self-Employed\"",
+   "replace": "\"title_text\":\"SR&ED Tax Credits for Self-Employed\"",
+   "regex": false
+  },
+  {
+   "row": 74,
+   "search": "\"title_text\":\"SR&ED Tax Credit Claims for Manufacturing\"",
+   "replace": "\"title_text\":\"SR&ED Tax Credits for Manufacturing\"",
+   "regex": false
+  },
+  {
+   "row": 75,
+   "search": "\"title_text\":\"SR&ED Tax Credit Claims for Grocery Stores\"",
+   "replace": "\"title_text\":\"SR&ED Tax Credits for Grocery Stores\"",
+   "regex": false
+  },
+  {
+   "row": 76,
+   "search": "\"title_text\":\"SR&ED Tax Credit Claims for Import & Export\"",
+   "replace": "\"title_text\":\"SR&ED Tax Credits for Import & Export\"",
+   "regex": false
+  },
+  {
+   "row": 77,
+   "search": "Our CPA-led team provides eligibility assessment, project identification, documentation review, T661 schedule preparation, electronic filing, and CRA support. We work with your engineers, developers, or product teams to draft",
+   "replace": "Gondaliya CPA does not prepare SR&ED claims. A claim generally involves eligibility assessment, project identification, documentation review, T661 schedule preparation, electronic filing, and CRA support, with your engineers, developers, or product teams drafting",
+   "regex": false
+  },
+  {
+   "row": 78,
+   "search": "Gondaliya CPA can review past projects to recover potential credits you may have ",
+   "replace": "A review of past projects can recover potential credits you may have ",
+   "regex": false
+  },
+  {
+   "row": 87,
+   "search": "sred-tax-credit-claims\\/\\\">SR&amp;ED Tax Credit Claims<\\/a>",
+   "replace": "sred-tax-credit-claims\\/\\\">How SR&amp;ED Tax Credits Work<\\/a>",
+   "regex": false
+  },
+  {
+   "row": 88,
+   "search": "Verified SR&ED Tax Credit CPA Firm in Ontario",
+   "replace": "Verified CPA Firm in Ontario",
+   "regex": false
+  }
+ ],
+ "skipped": [
+  {
+   "row": 2,
+   "why": "manual"
+  },
+  {
+   "row": 3,
+   "why": "manual"
+  },
+  {
+   "row": 4,
+   "why": "manual"
+  },
+  {
+   "row": 10,
+   "why": "manual"
+  },
+  {
+   "row": 11,
+   "why": "manual"
+  },
+  {
+   "row": 12,
+   "why": "manual"
+  },
+  {
+   "row": 13,
+   "why": "manual"
+  },
+  {
+   "row": 14,
+   "why": "manual"
+  },
+  {
+   "row": 15,
+   "why": "manual"
+  },
+  {
+   "row": 16,
+   "why": "manual"
+  },
+  {
+   "row": 17,
+   "why": "manual"
+  },
+  {
+   "row": 18,
+   "why": "manual"
+  },
+  {
+   "row": 19,
+   "why": "manual"
+  },
+  {
+   "row": 20,
+   "why": "manual"
+  },
+  {
+   "row": 22,
+   "why": "manual"
+  },
+  {
+   "row": 23,
+   "why": "manual"
+  },
+  {
+   "row": 24,
+   "why": "manual"
+  },
+  {
+   "row": 30,
+   "why": "manual"
+  },
+  {
+   "row": 31,
+   "why": "manual"
+  },
+  {
+   "row": 32,
+   "why": "manual"
+  },
+  {
+   "row": 33,
+   "why": "manual"
+  },
+  {
+   "row": 34,
+   "why": "manual"
+  },
+  {
+   "row": 36,
+   "why": "manual"
+  },
+  {
+   "row": 37,
+   "why": "manual"
+  },
+  {
+   "row": 42,
+   "why": "manual"
+  },
+  {
+   "row": 43,
+   "why": "manual"
+  },
+  {
+   "row": 44,
+   "why": "manual"
+  },
+  {
+   "row": 45,
+   "why": "manual"
+  },
+  {
+   "row": 46,
+   "why": "manual"
+  },
+  {
+   "row": 47,
+   "why": "manual"
+  },
+  {
+   "row": 79,
+   "why": "manual"
+  },
+  {
+   "row": 80,
+   "why": "manual"
+  },
+  {
+   "row": 81,
+   "why": "manual"
+  },
+  {
+   "row": 82,
+   "why": "manual"
+  },
+  {
+   "row": 83,
+   "why": "manual"
+  },
+  {
+   "row": 84,
+   "why": "manual"
+  },
+  {
+   "row": 85,
+   "why": "manual"
+  },
+  {
+   "row": 86,
+   "why": "manual"
+  },
+  {
+   "row": 89,
+   "why": "manual"
+  },
+  {
+   "row": 90,
+   "why": "manual"
+  },
+  {
+   "row": 91,
+   "why": "manual"
+  },
+  {
+   "row": 92,
+   "why": "needs_sharad"
+  }
+ ]
+}

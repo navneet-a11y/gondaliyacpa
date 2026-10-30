@@ -1,0 +1,281 @@
+{
+ "id": 48297,
+ "editor": "post_content",
+ "sha256_after": "83a3d04b21327d04b504ad1bec219e7716acc397a7f470f9331e6c902ba7b211",
+ "ops": [
+  {
+   "row": 0,
+   "search": "file your SR&amp;ED claim and protect it in a CRA review, ",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 1,
+   "search": "SR&amp;ED and R&amp;D credits, the ",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 2,
+   "search": "SR&amp;ED tax credit claims and ",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 3,
+   "search": "SR&amp;ED claim, your ",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 4,
+   "search": "claiming the SR&amp;ED credit, ",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 5,
+   "search": ", deferred revenue and SR&amp;ED eligibility",
+   "replace": " and deferred revenue",
+   "regex": false
+  },
+  {
+   "row": 6,
+   "search": "&mdash; SR&amp;ED &amp; Growth E",
+   "replace": "&mdash; Growth E",
+   "regex": false
+  },
+  {
+   "row": 7,
+   "search": "35% refundable SR&amp;ED credit and Ontario OITC, the ",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 8,
+   "search": "&mdash; SR&amp;ED &amp; Corporat",
+   "replace": "&mdash; Corporat",
+   "regex": false
+  },
+  {
+   "row": 9,
+   "search": "opens a SR&amp;ED science review, ",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 10,
+   "search": "end the T661 and section ",
+   "replace": "end the section ",
+   "regex": false
+  },
+  {
+   "row": 11,
+   "search": "the T661 SR&amp;ED claim, Schedule 31 ITC and ",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 12,
+   "search": "R&amp;ED credit, the S",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 13,
+   "search": ", recover missed SR&amp;ED windows,",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 14,
+   "search": "classify SR&amp;ED costs, re",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 15,
+   "search": "SR&amp;ED science reviews, ",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 16,
+   "search": "<li>We prepare the annual T2 corporate return for your scale-up with the T661 SR&amp;ED claim attached, converting your qualified R&amp;D expenditure into a 35% refundable investment tax credit, so CRA processes the refund instead of opening a review that strands your cash.</li>",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 17,
+   "search": "<li>We claim the credit on Schedule 31 investment tax credit and take the section 37 SR&amp;ED deduction against income, so your CCPC earns the full 35% refundable credit on the first $3 million of expenditures and CRA cannot deny it over a filing error.</li>",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 18,
+   "search": "<li>We configure NetSuite ERP scale-up ledgers to tag SR&amp;ED eligible salaries and software development costs to each R&amp;D project as incurred, so your T661 is built from contemporaneous records and CRA cannot reduce the 35% credit for a weak cost trail.</li>",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 19,
+   "search": "<li>We recover missed SR&amp;ED windows where a prior year went unclaimed, because the T661 SR&amp;ED expenditures schedule must be filed within eighteen months of year-end and CRA lets a scale-up that misses it forfeit a 35% refundable credit on that year forever.</li>",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 20,
+   "search": "<li>We reclassify SR&amp;ED costs a prior preparer buried in general expenses, rebuilding the T661 so the section 37 pool and the 35% refundable SR&amp;ED credit are claimed correctly, and file an amended T2 before CRA's reassessment window closes on the missed refund.</li>",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 21,
+   "search": "<li>When CRA opens a CRA scientific research audit, we defend the T661 with project descriptions, time records and the technological-uncertainty narrative a reviewer expects, so your 35% refundable credit on up to $3 million of expenditures survives rather than being reduced to nil.</li>",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 22,
+   "search": "nd the SR&amp;ED cost trail across each unfiled year in QuickBooks Online, so every catch-up T2 is defensible and a $40,000 refundable credit is not lost to weak records CRA rejects",
+   "replace": "cross each unfiled year in QuickBooks Online, so every catch-up T2 is defensible",
+   "regex": false
+  },
+  {
+   "row": 23,
+   "search": "and SR&amp;ED base are",
+   "replace": "is",
+   "regex": false
+  },
+  {
+   "row": 24,
+   "search": "sts and SR&amp;ED CRA comp",
+   "replace": "sts and CRA comp",
+   "regex": false
+  },
+  {
+   "row": 25,
+   "search": "SR&amp;ED-eligible costs to the T661 and",
+   "replace": "costs to the",
+   "regex": false
+  },
+  {
+   "row": 26,
+   "search": "and the SR&amp;ED position ",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 27,
+   "search": "35% refundable SR&amp;ED credit and the 11.2% small business rate from its first T2, so CRA cannot deny the credit later",
+   "replace": "11.2% small business rate from its first T2",
+   "regex": false
+  },
+  {
+   "row": 28,
+   "search": "Your SR&amp;ED claim, stock options, the taxable-capital SBD grind and investor-ready reporting can al",
+   "replace": "Your stock options, the taxable-capital SBD grind and investor-ready reporting can al",
+   "regex": false
+  },
+  {
+   "row": 29,
+   "search": "A review of your SR&amp;ED, reporting and T2 positio",
+   "replace": "A review of your reporting and T2 positio",
+   "regex": false
+  },
+  {
+   "row": 30,
+   "search": "Your SR&amp;ED claim, stock op",
+   "replace": "Your stock op",
+   "regex": false
+  },
+  {
+   "row": 31,
+   "search": "of your SR&amp;ED, reportin",
+   "replace": "of your reportin",
+   "regex": false
+  },
+  {
+   "row": 33,
+   "search": "start SR&amp;ED tracking, ",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 34,
+   "search": "SR&amp;ED, t",
+   "replace": "T",
+   "regex": false
+  },
+  {
+   "row": 35,
+   "search": " with the T661 SR&amp;ED claim",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 36,
+   "search": "SR&amp;ED, ",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 37,
+   "search": "the SR&amp;ED claim and ",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 38,
+   "search": "the SR&ED claim and ",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 39,
+   "search": " Most scale-ups either miss the claim or file it in a way that triggers a review; we prepare and defend it.</div>",
+   "replace": " Many scale-ups either miss the claim or file it in a way that triggers a review.</div>",
+   "regex": false
+  },
+  {
+   "row": 40,
+   "search": "ost scale-ups either miss the claim or file it in a way that triggers a review; we prepare and defend it",
+   "replace": "any scale-ups either miss the claim or file it in a way that triggers a review",
+   "regex": false
+  },
+  {
+   "row": 41,
+   "search": " and SR&amp;ED tracking",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 42,
+   "search": " and SR&ED tracking",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 43,
+   "search": "the T661 SR&amp;ED claim, ",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 44,
+   "search": "SR&ED tax credits, ",
+   "replace": "",
+   "regex": false
+  }
+ ],
+ "skipped": [
+  {
+   "row": 32,
+   "why": "needs_sharad"
+  },
+  {
+   "row": 45,
+   "why": "needs_sharad"
+  }
+ ]
+}

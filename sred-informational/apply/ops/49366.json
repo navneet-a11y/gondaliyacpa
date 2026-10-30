@@ -1,0 +1,299 @@
+{
+ "id": 49366,
+ "editor": "post_content",
+ "sha256_after": "6a53b5e3cea2de78bc721a6ce243d284470bc59198e2daaae74b456e74936e3d",
+ "ops": [
+  {
+   "row": 0,
+   "search": "Gondaliya CPA assists businesses in",
+   "replace": "This guide covers",
+   "regex": false
+  },
+  {
+   "row": 1,
+   "search": "tly.</p>",
+   "replace": "tly.</p>\n<p class=\"sred-notice\"><strong>Gondaliya CPA does not prepare SR&amp;ED claims. This page explains how the SR&amp;ED program works, for general information only.</strong></p>",
+   "regex": false
+  },
+  {
+   "row": 7,
+   "search": "Gondaliya CPA helps Canadian manufacturers figure out and claim their best possible manufacturing R&amp;D taxes. They know the rules well and make sure clients follow",
+   "replace": "Canadian manufacturers get their best possible manufacturing R&amp;D credits by knowing the rules well and following",
+   "regex": false
+  },
+  {
+   "row": 8,
+   "search": "<div class=\"gcpa-banner\">\n<div class=\"bt\">Solving technical problems on the floor? The first conversation is free.</div>\n<div class=\"bb\"><a class=\"solid\" href=\"https://gondaliyacpa.ca/consultation/\">Book Free Consultation</a><a href=\"mailto:info@gondaliyacpa.ca\">info@gondaliyacpa.ca</a><a href=\"tel:+16472129559\">647-212-9559</a></div>\n</div>\n",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 9,
+   "search": "Gondaliya CPA helps clients in Ontario organize their tech info well. They don't write engineering opinions but check",
+   "replace": "Organize your technical information well and check the",
+   "regex": false
+  },
+  {
+   "row": 10,
+   "search": "Hiring Gondaliya CPA means experts handle data collection through",
+   "replace": "Data collection should run through to",
+   "regex": false
+  },
+  {
+   "row": 11,
+   "search": "&mdash;services firms like Gondaliya CPA provide this help for manufacturers in Canada",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 12,
+   "search": "<p>For personalized advice on making solid SR&amp;ED manufacturing Canada claims that follow current rules <a class=\"wpil_keyword_link\" href=\"https://gondaliyacpa.ca/contact-us/\"   title=\"contact Gondaliya CPA\" data-wpil-keyword-link=\"linked\"  data-wpil-monitor-id=\"9042\">contact Gondaliya CPA</a> at info@gondaliyacpa.ca or call 647&#8209;212&#8209;9559 for a free consultation today.</p>\n",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 15,
+   "search": "<p>When you team up with Gondaliya CPA, Canadian manufacturers get the most from their SR&amp;ED manufacturing Canada tax credits. They know manufacturing tax credits inside and out. With more than 1450 5-star Google reviews, Gondaliya CPA offers licensed, affordable help that fits CRA rules. This cuts audit chances and boosts your eligible expenses.</p>\n",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 16,
+   "search": "Gondaliya CPA gets how tricky it is to prove technological uncertainty and systematic investigation in manufacturing R&amp;D tax credits. They spot projects others miss&mdash;like process upgrades or automation tests. Serving Toronto and Ontario manufacturers, they share clear plans to help you claim the highest SR&amp;ED tax credit Canada benefits fast",
+   "replace": "Proving technological uncertainty and systematic investigation is the tricky part of manufacturing R&amp;D tax credits. Eligible projects are often missed&mdash;like process upgrades or automation tests",
+   "regex": false
+  },
+  {
+   "row": 17,
+   "search": "Gondaliya CPA uses a step-by-step way to boost SR&amp;ED claims. They mix technical know-how with strict CRA paperwork rules. They team up with engineers and plant controllers to check if",
+   "replace": "A step-by-step approach mixes technical know-how with strict CRA paperwork rules: engineers and plant controllers check whether",
+   "regex": false
+  },
+  {
+   "row": 18,
+   "search": "y dig deep into costs like",
+   "replace": " cost review covers",
+   "regex": false
+  },
+  {
+   "row": 19,
+   "search": "etal fab client claimed",
+   "replace": "etal fabricator claimed",
+   "regex": false
+  },
+  {
+   "row": 20,
+   "search": "Gondaliya CPA gets clients ready by",
+   "replace": "Audit readiness means",
+   "regex": false
+  },
+  {
+   "row": 21,
+   "search": "They meet with clients before audits to explain",
+   "replace": "Before an audit, prepare answers to",
+   "regex": false
+  },
+  {
+   "row": 22,
+   "search": "having Gondaliya CPA helps ",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 23,
+   "search": "Gondaliya CPA finds",
+   "replace": "Check",
+   "regex": false
+  },
+  {
+   "row": 24,
+   "search": "nd weaves them in",
+   "replace": "nd weave them in",
+   "regex": false
+  },
+  {
+   "row": 25,
+   "search": "Manufacturers get planned help capturing",
+   "replace": "Planning lets manufacturers capture",
+   "regex": false
+  },
+  {
+   "row": 26,
+   "search": "You need ongoing help changing documents",
+   "replace": "Documents need updating",
+   "regex": false
+  },
+  {
+   "row": 27,
+   "search": "Gondaliya CPA offers post-claim services such a",
+   "replace": "Post-claim follow-up include",
+   "regex": false
+  },
+  {
+   "row": 28,
+   "search": "Clients get practical tips that",
+   "replace": "Practical habits",
+   "regex": false
+  },
+  {
+   "row": 29,
+   "search": "<p>For one-on-one help with SR&amp;ED manufacturing Canada benefits through careful claim prep backed by industry know-how, contact us at info@gondaliyacpa.ca or call 647&#8209;212&#8209;9559 today for a free consult focused on incorporated manufacturers in Toronto/Ontario serving all main sectors listed earlier.</p>\n",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 30,
+   "search": " served by Gondaliya CPA Professional Corporation",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 31,
+   "search": "<p>If you want expert advice specific to your incorporated manufacturer's needs about using all available supports including provincial additions contact Gondaliya CPA at info@gondaliyacpa.ca or call 647-212-9559 today for a free consult focused on boosting your business growth using Canadian manufacturing R&amp;D tax credits.</p>\n",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 33,
+   "search": "call is while the work is still being done. Once the year has closed we are reconstructing evidence rather than collecting it",
+   "replace": "document is while the work is still being done. Once the year has closed, evidence is being reconstructed rather than collected",
+   "regex": false
+  },
+  {
+   "row": 38,
+   "search": " Gondaliya CPA prepares claims that hold up under technical review, on a fixed fee agreed before we start.",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 39,
+   "search": "e handle w",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 40,
+   "search": "<p>Our team works with your engineers and plant staff rather than around them, and will tell you plainly when a project will not survive review. Whether this is your first claim or your tenth, you get clear advice and a fixed price before we start.</p>\n",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 41,
+   "search": "to raise with us:</b>",
+   "replace": "to raise:</b>",
+   "regex": false
+  },
+  {
+   "row": 42,
+   "search": " with us",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 43,
+   "search": " A free review can confirm nothing is being left unclaimed.",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 44,
+   "search": "\n        <a class=\"p-cta\" href=\"https://gondaliyacpa.ca/consultation/\">Book a free consultation</a>",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 45,
+   "search": " please book a free consultation.</p>",
+   "replace": " please consult a licensed CPA.</p>",
+   "regex": false
+  },
+  {
+   "row": 46,
+   "search": " before your consultation",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 47,
+   "search": "<figure style=\"margin:18px 0;\"><img src=\"https://gondaliyacpa.ca/wp-content/uploads/2026/08/why-gondaliya-cpa-sred.png\" alt=\"Why Canadian manufacturers choose Gondaliya CPA for SR&amp;ED claims\" style=\"width:100%;border-radius:12px;border:1px solid #d8e0e8;\" /><figcaption style=\"font-size:13px;color:#5a6b7b;text-align:center;padding:6px;\">Why manufacturers choose us.</figcaption></figure>\n",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 49,
+   "search": "<div\\ class=\"gcpa\\-cta\">\\\n<h4>Write\\ it\\ down\\ while\\ you\\ are\\ doing[\\s\\S]*?info@gondaliyacpa\\.ca\">info@gondaliyacpa\\.ca</a></div>\\\n</div>\\\n",
+   "replace": "",
+   "regex": true
+  },
+  {
+   "row": 50,
+   "search": "Please book a free consultation with Gondaliya CPA and bring a short description of the technical problems you worked on this year, any notes or test data your team kept, and your payroll records for the staff involved. Those three tell us immediately whether a claim is there and how much of it will survive review. Calling during the year is better than after it. You will get a fixed fee before any work begins",
+   "replace": "Before preparing a claim, gather a short description of the technical problems you worked on this year, any notes or test data your team kept, and your payroll records for the staff involved. Those three show whether a claim is there and how much of it will survive review. Gathering them during the year is better than after it",
+   "regex": false
+  },
+  {
+   "row": 52,
+   "search": ",\\\n\\ \\ \\ \\ \\{\\\n\\ \\ \\ \\ \\ \\ \"@type\":\\ \"Service\",\\\n\\ \\ \\ \\ \\ \\ \"name\":\\ \"SR\\&amp;ED\\ C[\\s\\S]*?velopment,\\ first\\-time\\ or\\ repeat\\ SR\\&amp;ED\\ claimants\"\\ \\}\\\n\\ \\ \\ \\ \\}",
+   "replace": "",
+   "regex": true
+  }
+ ],
+ "skipped": [
+  {
+   "row": 2,
+   "why": "needs_sharad"
+  },
+  {
+   "row": 3,
+   "why": "needs_sharad"
+  },
+  {
+   "row": 4,
+   "why": "needs_sharad"
+  },
+  {
+   "row": 5,
+   "why": "needs_sharad"
+  },
+  {
+   "row": 6,
+   "why": "needs_sharad"
+  },
+  {
+   "row": 13,
+   "why": "needs_sharad"
+  },
+  {
+   "row": 14,
+   "why": "needs_sharad"
+  },
+  {
+   "row": 32,
+   "why": "needs_sharad"
+  },
+  {
+   "row": 34,
+   "why": "needs_sharad"
+  },
+  {
+   "row": 35,
+   "why": "needs_sharad"
+  },
+  {
+   "row": 36,
+   "why": "needs_sharad"
+  },
+  {
+   "row": 37,
+   "why": "needs_sharad"
+  },
+  {
+   "row": 48,
+   "why": "needs_sharad"
+  },
+  {
+   "row": 51,
+   "why": "needs_sharad"
+  }
+ ]
+}

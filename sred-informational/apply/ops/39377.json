@@ -1,0 +1,290 @@
+{
+ "id": 39377,
+ "editor": "elementor",
+ "sha256_after": "84a775e77e35c1f6d338126f4aadc0f3c8fd2e658cb8ddd843231500b71a5220",
+ "ops": [
+  {
+   "row": 0,
+   "search": "We identify the eligible work, prepare the technical narrative, calculate the expenditures and file the SR&amp;ED claim",
+   "replace": "An SR&amp;ED claim identifies the eligible work, sets out the technical narrative, calculates the expenditures and is filed",
+   "regex": false
+  },
+  {
+   "row": 1,
+   "search": "Real cash back.<\\/p>",
+   "replace": "Real cash back.<\\/p><p class=\\\"sred-notice\\\"><strong>Gondaliya CPA does not prepare SR&amp;ED claims. This page explains how the SR&amp;ED program works, for general information only.<\\/strong><\\/p>",
+   "regex": false
+  },
+  {
+   "row": 2,
+   "search": "consultation\\/\\\" class=\\\"sr-btn-blue\\\">Free SR&amp;ED Assessment<\\/a><a href=\\\"https:\\/\\/gondaliyacpa.ca\\/sred-tax-credit-claims\\/\\\" class=\\\"sr-btn-dark\\\">SR&amp;ED Services",
+   "replace": "sred-tax-credit-claims\\/\\\" class=\\\"sr-btn-dark\\\">How SR&amp;ED Credits Work",
+   "regex": false
+  },
+  {
+   "row": 3,
+   "search": "For a complete overview of our SR&amp;ED service across all industries, visit our ",
+   "replace": "For a complete overview of how SR&amp;ED works across all industries, visit the ",
+   "regex": false
+  },
+  {
+   "row": 4,
+   "search": "How Our SR&amp;ED Claim Process Works for Tech Startups",
+   "replace": "How the SR&amp;ED Claim Process Works for Tech Startups",
+   "regex": false
+  },
+  {
+   "row": 5,
+   "search": "Four steps. We handle CRA. You keep building.",
+   "replace": "Four steps, from assessment to filing.",
+   "regex": false
+  },
+  {
+   "row": 6,
+   "search": "We review your codebase, architecture decisions, sprint logs and technical challenges to identify all qualifying SR&amp;ED projects. Free assessment",
+   "replace": "Review the codebase, architecture decisions, sprint logs and technical challenges to identify all qualifying SR&amp;ED projects",
+   "regex": false
+  },
+  {
+   "row": 7,
+   "search": "<p>We prepare the technical narrative for each project:",
+   "replace": "<p>Prepare the technical narrative for each project:",
+   "regex": false
+  },
+  {
+   "row": 8,
+   "search": "<p>We calculate eligible expenditures:",
+   "replace": "<p>Calculate eligible expenditures:",
+   "regex": false
+  },
+  {
+   "row": 9,
+   "search": "We file Form T661 with CRA, respond to any review or audit requests and defend the cla",
+   "replace": "File Form T661 with CRA, respond to any review or audit requests and support the cla",
+   "regex": false
+  },
+  {
+   "row": 10,
+   "search": "<div class=\\\"sr-cta-inline\\\"><div><h3>Free SR&amp;ED Eligibility Assessment for Tech Startups<\\/h3><p>We review your development work and tell you if you qualify. No obligation. No upfront fee.<\\/p><\\/div><a href=\\\"https:\\/\\/gondaliyacpa.ca\\/consultation\\/\\\" class=\\\"sr-btn-blue\\\">Book Free Assessment<\\/a><\\/div>",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 11,
+   "search": "<th>How We Calculate It<\\/th>",
+   "replace": "<th>How It Is Calculated<\\/th>",
+   "regex": false
+  },
+  {
+   "row": 12,
+   "search": "We review sprint logs, commit history, Jira\\/Linear tickets, time tracking and developer interviews",
+   "replace": "Sprint logs, commit history, Jira\\/Linear tickets, time tracking and developer interviews are used",
+   "regex": false
+  },
+  {
+   "row": 13,
+   "search": "<strong>We Write the Technical Narrative With Your Engineering Team:<\\/strong>",
+   "replace": "<strong>The Technical Narrative Is Written With the Engineering Team:<\\/strong>",
+   "regex": false
+  },
+  {
+   "row": 14,
+   "search": "We interview your developers, review your architecture decisions, examine your commit history and sprint logs, and translate",
+   "replace": "It draws on developer interviews, architecture decisions, commit history and sprint logs, and translates",
+   "regex": false
+  },
+  {
+   "row": 15,
+   "search": " Our narratives are written by a team that understands both the technology and CRA's evaluation criteria.",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 16,
+   "search": "Types of Tech Startups We File SR&amp;ED Claims For",
+   "replace": "Types of Tech Startups That Claim SR&amp;ED",
+   "regex": false
+  },
+  {
+   "row": 17,
+   "search": "We work with tech startups across all stages, from pre-revenue to growth. ",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 18,
+   "search": "<div class=\\\"sr-cta-inline\\\"><div><h3>Not Sure If Your Startup Qualifies? We Assess for Free.<\\/h3><p>30-minute call. We review your technical work and tell you whether it meets CRA's SR&amp;ED criteria. No cost. No obligation.<\\/p><\\/div><a href=\\\"https:\\/\\/gondaliyacpa.ca\\/consultation\\/\\\" class=\\\"sr-btn-blue\\\">Book Free Assessment<\\/a><\\/div>",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 19,
+   "search": "What to Expect and How We Defend Your Claim",
+   "replace": "What to Expect and How Claims Are Defended",
+   "regex": false
+  },
+  {
+   "row": 20,
+   "search": "<th>How We Handle It<\\/th>",
+   "replace": "<th>How It Is Handled<\\/th>",
+   "regex": false
+  },
+  {
+   "row": 21,
+   "search": "We prepare a review package with supporting evidence (commit history, architecture diagrams, experiment logs). We attend the RTA meeting with your CTO or lead developer",
+   "replace": "A review package with supporting evidence (commit history, architecture diagrams, experiment logs) is prepared. The CTO or lead developer attends the RTA meeting",
+   "regex": false
+  },
+  {
+   "row": 22,
+   "search": "We provide detailed time allocation worksheets, payroll records, subcontractor invoices and the calculation methodology",
+   "replace": "Detailed time allocation worksheets, payroll records, subcontractor invoices and the calculation methodology are provided",
+   "regex": false
+  },
+  {
+   "row": 23,
+   "search": "We prepare your engineering team for the RTA meeting. We provide a review preparation guide with expected questions and optimal responses. We attend the meeting alongside your team",
+   "replace": "The engineering team prepares for the RTA meeting using a review preparation guide with expected questions and responses",
+   "regex": false
+  },
+  {
+   "row": 24,
+   "search": "We negotiate with the RTA and financial reviewer. If the reduction is unreasonable, we file a formal Notice of Objection with CRA Appeals. We defend every claim through to resolution",
+   "replace": "The reduction can be discussed with the RTA and financial reviewer. If the reduction is unreasonable, a formal Notice of Objection can be filed with CRA Appeals",
+   "regex": false
+  },
+  {
+   "row": 25,
+   "search": "<th>How We Prevent It<\\/th>",
+   "replace": "<th>How to Prevent It<\\/th>",
+   "regex": false
+  },
+  {
+   "row": 26,
+   "search": "Free eligibility assessment at onboarding. Every qualifying project identified an",
+   "replace": "Eligibility review up front. Every qualifying project identified an",
+   "regex": false
+  },
+  {
+   "row": 27,
+   "search": "We set up a lightweight documentation process at onboarding:",
+   "replace": "A lightweight documentation process set up from the start:",
+   "regex": false
+  },
+  {
+   "row": 28,
+   "search": "We screen every project against CRA's five-question SR&amp;ED eligibility test before including it",
+   "replace": "Every project screened against CRA's five-question SR&amp;ED eligibility test before it is included",
+   "regex": false
+  },
+  {
+   "row": 29,
+   "search": "Every claim prepared by our SR&amp;ED team with technical and financial expertise.",
+   "replace": "Claim prepared with technical and financial SR&amp;ED expertise.",
+   "regex": false
+  },
+  {
+   "row": 30,
+   "search": "<h2 class=\\\"sr-h2c\\\">SR&amp;ED Pricing for Tech Startups<\\/h2><p style=\\\"color:#718096;max-width:640px;margin:0 auto 28px;text-align:center;\\\">Contingency-based. You pay only when CRA approves your refund.<\\/p>\\r\\n\\r\\n<table class=\\\"sr-tbl\\\"><thead><tr><th>Service<\\/th><th>Fee<\\/th><th>Includes<\\/th><\\/tr><\\/thead><tbody>\\r\\n<tr class=\\\"sr-hl\\\"><td>SR&amp;ED claim preparation and filing<\\/td><td>15% to 20% of the approved credit (contingency)<\\/td><td>Eligibility assessment, project identification, technical narrative preparation, expenditure calculation, Form T661 filing, CRA correspondence<\\/td><\\/tr>\\r\\n<tr><td>Retainer (for complex or large claims)<\\/td><td>$1,000 upfront + contingency on approval<\\/td><td>Same as above, plus dedicated SR&amp;ED specialist, multi-project narrative coordination and CRA review preparation<\\/td><\\/tr>\\r\\n<tr><td>Free eligibility assessment<\\/td><td>$0<\\/td><td>30-minute call. We review your technical work and tell you if you qualify. No obligation.<\\/td><\\/tr>\\r\\n<tr><td>CRA review and audit defence<\\/td><td>Included<\\/td><td>RTA meeting preparation, team coaching, financial documentation package, objection filing if claim is reduced<\\/td><\\/tr>\\r\\n<tr class=\\\"sr-hl\\\"><td>Documentation setup (ongoing support)<\\/td><td>Included for bookkeeping clients<\\/td><td>We configure a lightweight SR&amp;ED documentation process: tagged Jira\\/Linear tickets, architecture decision records, experiment logs<\\/td><\\/tr>\\r\\n<tr><td>Annual T2 corporate tax return<\\/td><td>FREE<\\/td><td>Included for every SR&amp;ED and bookkeeping client. SR&amp;ED claim filed alongside the T2.<\\/td><\\/tr>\\r\\n<\\/tbody><\\/table>\\r\\n\\r\\n",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 31,
+   "search": "For details on our SR&amp;ED process across all industries, visit our ",
+   "replace": "For details on how SR&amp;ED works across all industries, visit the ",
+   "regex": false
+  },
+  {
+   "row": 32,
+   "search": "<div class=\\\"sr-cta-inline\\\"><div><h3>No Upfront Cost. We Get Paid When You Get Paid.<\\/h3><p>Contingency-based SR&amp;ED. 15% to 20% of the approved credit. Free eligibility assessment. CRA defence included.<\\/p><\\/div><a href=\\\"https:\\/\\/gondaliyacpa.ca\\/consultation\\/\\\" class=\\\"sr-btn-blue\\\">Book Free Assessment<\\/a><\\/div>",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 33,
+   "search": "SR&amp;ED Claims for Tech Startups: Cities We Serve",
+   "replace": "SR&amp;ED for Tech Startups Across Ontario",
+   "regex": false
+  },
+  {
+   "row": 34,
+   "search": "We file SR&amp;ED claims for tech startups across every Ontario city and Canada. No distance limits, no extra fees",
+   "replace": "SR&amp;ED credits are available to qualifying tech startups in every Ontario city and across Canada",
+   "regex": false
+  },
+  {
+   "row": 35,
+   "search": " We assess eligibility for free in a 30-minute call. <a href=\\\"https:\\/\\/gondaliyacpa.ca\\/consultation\\/\\\">Book Free Assessment &#8594;<\\/a>",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 36,
+   "search": " We set up a lightweight documentation process at onboarding so your team capture",
+   "replace": " A lightweight documentation process set up from the start capture",
+   "regex": false
+  },
+  {
+   "row": 37,
+   "search": "15% to 20% of the approved credit on a contingency basis. You pay nothing upfront. We get paid when CRA approves your refund. Free eligibility assessment. CRA review defence included. T2 filed FREE for bookkeeping clients. <a href=\\\"https:\\/\\/gondaliyacpa.ca\\/pricing-calculation\\/\\\">Know Your Exact Fee &#8594;<\\/a>",
+   "replace": "Gondaliya CPA does not prepare SR&amp;ED claims. Fees for SR&amp;ED claim preparation vary by provider; many charge a percentage of the approved credit on a contingency basis.",
+   "regex": false
+  },
+  {
+   "row": 38,
+   "search": " We track the deadline and file well in advance.",
+   "replace": " Track the deadline and file well in advance.",
+   "regex": false
+  },
+  {
+   "row": 39,
+   "search": "We advise putting founding CTOs and technical co-founders on payroll specificall",
+   "replace": "Putting founding CTOs and technical co-founders on payroll is a common wa",
+   "regex": false
+  },
+  {
+   "row": 40,
+   "search": "We prepare your team for the RTA meeting, provide a review preparation guide, attend the meeting with you and negotiate any proposed reductions. If CRA reduces the claim unreasonably, we file a formal objection",
+   "replace": "The team should be prepared for the RTA meeting, and any proposed reductions can be discussed with the reviewers. If CRA reduces the claim unreasonably, a formal objection can be filed",
+   "regex": false
+  },
+  {
+   "row": 41,
+   "search": "we can file claims for the current year and the prior year",
+   "replace": "claims can be filed for the current year and the prior year",
+   "regex": false
+  },
+  {
+   "row": 42,
+   "search": "<!-- CTA BOTTOM -->\\r\\n<div class=\\\"sr-cta-bottom\\\"><h2>Your Startup Is Building Technology. Get Paid for It.<\\/h2><p>Gondaliya CPA files SR&amp;ED claims for tech startups across Canada. 35% refundable credit. Pre-revenue eligible. Contingency pricing. CRA defence included. 1450+ five-star reviews.<\\/p><div class=\\\"sr-cta-feats\\\"><div class=\\\"sr-cta-feat\\\">Licensed CPA Ontario<\\/div><div class=\\\"sr-cta-feat\\\">1450+ Five-Star Reviews<\\/div><div class=\\\"sr-cta-feat\\\">35% Refundable Credit<\\/div><div class=\\\"sr-cta-feat\\\">Contingency Pricing<\\/div><\\/div><a href=\\\"https:\\/\\/gondaliyacpa.ca\\/consultation\\/\\\" class=\\\"sr-btn-blue\\\" style=\\\"margin:0 6px;\\\">Free SR&amp;ED Assessment<\\/a><a href=\\\"https:\\/\\/gondaliyacpa.ca\\/technology-startups-saas-companies\\/\\\" style=\\\"margin:0 6px;background:transparent;color:#fff !important;padding:11px 24px;border-radius:6px;font-weight:700;font-size:0.95em;text-transform:uppercase;border:2px solid rgba(255,255,255,0.4);text-decoration:none !important;display:inline-block;line-height:1.4;text-align:center;\\\">Tech Startup Accounting<\\/a><\\/div>\\r\\n\\r\\n",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 43,
+   "search": "Pre-revenue qualifies. Free assessment.",
+   "replace": "Pre-revenue qualifies.",
+   "regex": false
+  },
+  {
+   "row": 44,
+   "search": "15-20% contingency on approved credit. Nothing upfront. Free assessment. CRA defence included. T2 filed free",
+   "replace": "Gondaliya CPA does not prepare SR&ED claims. Fees vary by provider; many charge a percentage of the approved credit on a contingency basis",
+   "regex": false
+  },
+  {
+   "row": 45,
+   "search": "We prepare team, attend meeting, negotiate reductions, file objection if needed.",
+   "replace": "Prepare the team; a formal objection can be filed if needed.",
+   "regex": false
+  },
+  {
+   "row": 46,
+   "search": "<script type=\\\"application\\/ld+json\\\">{\\\"@context\\\":\\\"https:\\/\\/schema.org\\\",\\\"@type\\\":\\\"AccountingService\\\",\\\"name\\\":\\\"Gondaliya CPA, SR&ED Claims for Tech Startups\\\",\\\"url\\\":\\\"https:\\/\\/gondaliyacpa.ca\\/sred-claims-for-tech-startups\\/\\\",\\\"telephone\\\":\\\"+16472129559\\\",\\\"serviceType\\\":\\\"SR&ED Tax Credit Claims for Technology Startups\\\",\\\"priceRange\\\":\\\"$$\\\"}<\\/script>",
+   "replace": "",
+   "regex": false
+  }
+ ],
+ "skipped": []
+}
