@@ -1,0 +1,14 @@
+{
+ "id": 57935,
+ "editor": "post_content",
+ "sha256_after": "9fb202147b4cb834165eef8bf8742cfa396759103772991b5c5f0d8fa2123c1c",
+ "ops": [
+  {
+   "row": 0,
+   "search": "client building their own adaptive delivery system had a defensible claim, and the claim was about the software, not the teaching.</p>\n<p>We would rather tell someone no in October than help them file something that comes apart under review two years later. Figures changed for privacy",
+   "replace": "business building its own adaptive delivery system can have a defensible claim, and the claim is about the software, not the teaching",
+   "regex": false
+  }
+ ],
+ "skipped": []
+}
