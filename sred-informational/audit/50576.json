@@ -1,0 +1,30 @@
+{
+ "id": 50576,
+ "url": "https://gondaliyacpa.ca/accountant-for-oil-and-gas-companies/",
+ "title": "Accounting and Tax Services for Oil and Gas Companies",
+ "type": "page",
+ "elementor": false,
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "FAQ: Can I claim SR&ED? (visible)",
+   "editor": "post_content",
+   "action": "replace",
+   "before": " We review your technical projects, identify eligible work, and prepare the SR&ED claim with the supporting records CRA requires.<",
+   "after": "<",
+   "needs_sharad": false,
+   "note": "Deletes the sentence offering SR&ED claim preparation."
+  },
+  {
+   "location": "JSON-LD",
+   "section": "FAQPage: Can I claim SR&ED?",
+   "editor": "post_content",
+   "action": "replace",
+   "before": " We review your technical projects, identify eligible work, and prepare the SR&ED claim with the supporting records CRA requires.\"",
+   "after": "\"",
+   "needs_sharad": false,
+   "note": "Deletes the sentence offering SR&ED claim preparation."
+  }
+ ],
+ "page_note": "Oil and gas service page; only SR&ED mention is one FAQ (visible + FAQPage). Eligibility text kept."
+}

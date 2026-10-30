@@ -184,6 +184,16 @@
    "after": "platform-operator and instructor payouts, OIDMTC credits, cross-border",
    "needs_sharad": false,
    "note": ""
+  },
+  {
+   "location": "Meta",
+   "section": "Rank Math meta description",
+   "editor": "rank_math",
+   "action": "replace",
+   "before": "E-learning platform accountant in Canada. HST on online courses, deferred subscriptions, instructor payouts, SR&amp;ED and OIDMTC. Book a free consultation.",
+   "after": "E-learning platform accountant in Canada. HST on online courses, deferred subscriptions, instructor payouts and OIDMTC. Book a free consultation.",
+   "needs_sharad": true,
+   "note": "Service-page meta description lists SR&ED as a service next to 'Book a free consultation'. Meta description change needs Sharad."
   }
  ],
  "page_note": "E-learning industry service page with SR&ED offered throughout. Informational SR&ED kept: card 'SR&ED, OIDMTC & Instructor Payouts', 'Genuine platform R&D earns the 35% refundable SR&ED credit' statements, SR&ED receivable in statements, quiz questions, 'We understand how ... SR&ED ... claims flow' expertise line, FAQ 'Does platform development qualify for SR&ED?' (visible + FAQPage)."

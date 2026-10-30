@@ -164,6 +164,16 @@
    "after": "plant and dried-flower inventory and incorporation advice.",
    "needs_sharad": false,
    "note": ""
+  },
+  {
+   "location": "Meta",
+   "section": "Rank Math meta description",
+   "editor": "rank_math",
+   "action": "replace",
+   "before": "Cannabis producer accountant in Canada. Excise duty and B300 returns, excise stamps, OCS receivables, plant inventory and SR&amp;ED. Book a free consultation.",
+   "after": "Cannabis producer accountant in Canada. Excise duty and B300 returns, excise stamps, OCS receivables and plant inventory. Book a free consultation.",
+   "needs_sharad": true,
+   "note": "Service-page meta description lists SR&ED as a service next to 'Book a free consultation'. Meta description change needs Sharad."
   }
  ],
  "page_note": "Cannabis producer service page with SR&ED offered throughout. Informational SR&ED kept: quiz subtitle/question, 'We understand how ... SR&ED actually flow' line, FAQ eligibility text, related-industry card 'Class 53 processing lines and SR&ED'."

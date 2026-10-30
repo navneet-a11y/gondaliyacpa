@@ -1,0 +1,470 @@
+{
+ "id": 48297,
+ "url": "https://gondaliyacpa.ca/accountant-for-scale-up-companies/",
+ "title": "Accounting and Tax Services for Scale-Up Companies",
+ "type": "page",
+ "elementor": false,
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "Hero intro",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "We file your SR&amp;ED claim and protect it in a CRA review, plan your stock options",
+   "after": "We plan your stock options",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Hero intro (we handle)",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "we handle the corporate books, the SR&amp;ED and R&amp;D credits, the payroll",
+   "after": "we handle the corporate books, the payroll",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Intro paragraph (we specialize)",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "we specialize in SR&amp;ED tax credit claims and corporate tax planning for scale-up companies",
+   "after": "we specialize in corporate tax planning for scale-up companies",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Intro paragraph (where the real tax sits)",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "where the real tax sits across your SR&amp;ED claim, your stock option pool",
+   "after": "where the real tax sits across your stock option pool",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Compliance intro",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "while claiming the SR&amp;ED credit, planning your stock options",
+   "after": "while planning your stock options",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Compliance card (audit exposure)",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "contractor development costs, deferred revenue and SR&amp;ED eligibility &mdash;",
+   "after": "contractor development costs and deferred revenue &mdash;",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "How we work step 1 heading",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "Tax Planning &mdash; SR&amp;ED &amp; Growth Expertise",
+   "after": "Tax Planning &mdash; Growth Expertise",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "How we work step 1 text",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "We know the file: the 35% refundable SR&amp;ED credit and Ontario OITC, the section 125(5.1)",
+   "after": "We know the file: the section 125(5.1)",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "How we work step 3 heading",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "CRA Representation &mdash; SR&amp;ED &amp; Corporate Audit",
+   "after": "CRA Representation &mdash; Corporate Audit",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "How we work step 3 text",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "When CRA opens a SR&amp;ED science review, questions your contractor-versus-employee developers",
+   "after": "When CRA questions your contractor-versus-employee developers",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "How we work step 3 text (defend)",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "defend the T661 and section 247 positions",
+   "after": "defend the section 247 positions",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Services grid: T2 card",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "Professional T2 preparation with the T661 SR&amp;ED claim, Schedule 31 ITC and Schedule 33 taxable capital",
+   "after": "Professional T2 preparation with Schedule 33 taxable capital",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Services grid: Tax planning card",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "Smart tax planning for the SR&amp;ED credit, the SBD grind",
+   "after": "Smart tax planning for the SBD grind",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Services grid: Catch-up card",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "File overdue T2 years, recover missed SR&amp;ED windows, and get back",
+   "after": "File overdue T2 years and get back",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Services grid: Amendments card",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "Reclassify SR&amp;ED costs, restate revenue recognition",
+   "after": "Restate revenue recognition",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Services grid: CRA audit card",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "Expert support for SR&amp;ED science reviews, contractor-versus-employee audits",
+   "after": "Expert support for contractor-versus-employee audits",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Tailored services expanded bullet - T2 with T661 SR&ED claim",
+   "editor": "post_content",
+   "action": "delete",
+   "before": "<li>We prepare the annual T2 corporate return for your scale-up with the T661 SR&amp;ED claim attached, converting your qualified R&amp;D expenditure into a 35% refundable investment tax credit, so CRA processes the refund instead of opening a review that strands your cash.</li>",
+   "after": "",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Tailored services expanded bullet - Schedule 31 / section 37 claim",
+   "editor": "post_content",
+   "action": "delete",
+   "before": "<li>We claim the credit on Schedule 31 investment tax credit and take the section 37 SR&amp;ED deduction against income, so your CCPC earns the full 35% refundable credit on the first $3 million of expenditures and CRA cannot deny it over a filing error.</li>",
+   "after": "",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Tailored services expanded bullet - NetSuite SR&ED tagging",
+   "editor": "post_content",
+   "action": "delete",
+   "before": "<li>We configure NetSuite ERP scale-up ledgers to tag SR&amp;ED eligible salaries and software development costs to each R&amp;D project as incurred, so your T661 is built from contemporaneous records and CRA cannot reduce the 35% credit for a weak cost trail.</li>",
+   "after": "",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Tailored services expanded bullet - recover missed SR&ED windows",
+   "editor": "post_content",
+   "action": "delete",
+   "before": "<li>We recover missed SR&amp;ED windows where a prior year went unclaimed, because the T661 SR&amp;ED expenditures schedule must be filed within eighteen months of year-end and CRA lets a scale-up that misses it forfeit a 35% refundable credit on that year forever.</li>",
+   "after": "",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Tailored services expanded bullet - reclassify SR&ED costs / amended T2",
+   "editor": "post_content",
+   "action": "delete",
+   "before": "<li>We reclassify SR&amp;ED costs a prior preparer buried in general expenses, rebuilding the T661 so the section 37 pool and the 35% refundable SR&amp;ED credit are claimed correctly, and file an amended T2 before CRA's reassessment window closes on the missed refund.</li>",
+   "after": "",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Tailored services expanded bullet - defend T661 in scientific research audit",
+   "editor": "post_content",
+   "action": "delete",
+   "before": "<li>When CRA opens a CRA scientific research audit, we defend the T661 with project descriptions, time records and the technological-uncertainty narrative a reviewer expects, so your 35% refundable credit on up to $3 million of expenditures survives rather than being reduced to nil.</li>",
+   "after": "",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Tailored services expanded bullet - catch-up books",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "rebuilding accrual records and the SR&amp;ED cost trail across each unfiled year in QuickBooks Online, so every catch-up T2 is defensible and a $40,000 refundable credit is not lost to weak records CRA rejects.",
+   "after": "rebuilding accrual records across each unfiled year in QuickBooks Online, so every catch-up T2 is defensible.",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Tailored services expanded bullet - software costs",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "so your CCPC's income and SR&amp;ED base are right",
+   "after": "so your CCPC's income is right",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Tailored services expanded bullet - contractor audit",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "with contracts, control tests and SR&amp;ED CRA compliance records",
+   "after": "with contracts, control tests and CRA compliance records",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Tailored services expanded bullet - grant statements",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "tying revenue and SR&amp;ED-eligible costs to the T661 and T2",
+   "after": "tying revenue and costs to the T2",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Tailored services expanded bullet - valuation",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "tying share value and the SR&amp;ED position to the T2",
+   "after": "tying share value to the T2",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Tailored services expanded bullet - incorporation",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "structuring it so it qualifies for the 35% refundable SR&amp;ED credit and the 11.2% small business rate from its first T2, so CRA cannot deny the credit later.",
+   "after": "structuring it so it qualifies for the 11.2% small business rate from its first T2.",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Readiness quiz result 5+ (escaped copy)",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "Your SR&amp;ED claim, stock options, the taxable-capital SBD grind and investor-ready reporting can all be",
+   "after": "Your stock options, the taxable-capital SBD grind and investor-ready reporting can all be",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Readiness quiz result 3-4 (escaped copy)",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "A review of your SR&amp;ED, reporting and T2 position",
+   "after": "A review of your reporting and T2 position",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Readiness quiz result 5+ (inline JS)",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "Your SR&amp;ED claim, stock options, the taxable-capital SBD grind and investor-ready reporting could all be",
+   "after": "Your stock options, the taxable-capital SBD grind and investor-ready reporting could all be",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Readiness quiz result 3-4 (inline JS)",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "A short review of your SR&amp;ED, reporting and T2 position",
+   "after": "A short review of your reporting and T2 position",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Case study card: Toronto SaaS Scale-Up (SR&ED claim recovered and defended)",
+   "editor": "post_content",
+   "action": "delete",
+   "before": "<div class=\"sb-case-card\"><h3>Toronto SaaS Scale-Up &mdash; SR&amp;ED Claim Recovered and Defended in a CRA Review</h3><p><strong>The problem:</strong> A Toronto SaaS company had grown to roughly $6 million of recurring revenue and a large engineering team, but its prior accountant had never filed a T661 SR&amp;ED claim, so two years of eligible development salaries and contractor development costs went unclaimed. When we filed the recovery claim, CRA opened a science review challenging the technological-uncertainty narrative and the time allocations, putting the entire refundable credit at risk.</p><p><strong>What we did:</strong> We rebuilt the SR&amp;ED cost base from payroll and project records, prepared the T661 with a defensible section 37 pool and Schedule 31 ITC, layered on the Ontario OITC, and represented the company through the CRA science review with project descriptions and engineer time logs that stood up.</p><p><strong>The result:</strong></p><ul class=\"sb-case-res\"><li>Recovered $312,000 in refundable SR&amp;ED credits across two years</li><li>Full claim defended with no reduction on CRA review</li><li>SR&amp;ED tracking built into the monthly close</li></ul></div>\n",
+   "after": "",
+   "needs_sharad": true,
+   "note": "Sales-proof case study entirely about the firm's SR&ED claim ($312,000)."
+  },
+  {
+   "location": "Visible",
+   "section": "Onboarding Step 1",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "convert to accrual and revenue recognition, start SR&amp;ED tracking, and build",
+   "after": "convert to accrual and revenue recognition, and build",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Onboarding Step 4 Planning Review",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "<p>SR&amp;ED, the SBD grind, stock options",
+   "after": "<p>The SBD grind, stock options",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Onboarding Step 5 Year-End",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "T2 with the T661 SR&amp;ED claim, and CRA preparation",
+   "after": "T2, and CRA preparation",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Team intro",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "As your SR&amp;ED, corporate tax and investor-reporting adviser",
+   "after": "As your corporate tax and investor-reporting adviser",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "FAQ: What is a scale-up (visible)",
+   "editor": "post_content",
+   "action": "replace",
+   "before": " We support the whole journey, from the SR&amp;ED claim and stock options to investor-ready reporting",
+   "after": " We support the whole journey, from stock options to investor-ready reporting",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "JSON-LD",
+   "section": "FAQPage: What is a scale-up",
+   "editor": "post_content",
+   "action": "replace",
+   "before": " We support the whole journey, from the SR&ED claim and stock options to investor-ready reporting and multi-province structuring.\"}}",
+   "after": " We support the whole journey, from stock options to investor-ready reporting and multi-province structuring.\"}}",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "FAQ: How do SR&ED tax credits work (visible)",
+   "editor": "post_content",
+   "action": "replace",
+   "before": " Most scale-ups either miss the claim or file it in a way that triggers a review; we prepare and defend it.</div>",
+   "after": " Many scale-ups either miss the claim or file it in a way that triggers a review.</div>",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "JSON-LD",
+   "section": "FAQPage: How do SR&ED tax credits work",
+   "editor": "post_content",
+   "action": "replace",
+   "before": " Most scale-ups either miss the claim or file it in a way that triggers a review; we prepare and defend it.\"}",
+   "after": " Many scale-ups either miss the claim or file it in a way that triggers a review.\"}",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "FAQ: accounting system (visible)",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "built for KPIs and SR&amp;ED tracking",
+   "after": "built for KPIs",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "JSON-LD",
+   "section": "FAQPage: accounting system",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "built for KPIs and SR&ED tracking",
+   "after": "built for KPIs",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Final CTA paragraph",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "T2 filing, the T661 SR&amp;ED claim, stock options",
+   "after": "T2 filing, stock options",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "JSON-LD",
+   "section": "AccountingService schema description",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "T2 filing, SR&ED tax credits, stock option planning",
+   "after": "T2 filing, stock option planning",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Meta",
+   "section": "Rank Math meta description",
+   "editor": "rank_math",
+   "action": "replace",
+   "before": "Scale-up company accountant in Canada. SR&amp;ED credits, stock option planning, investor-ready financials and the SBD grind. Book a free consultation.",
+   "after": "Scale-up company accountant in Canada. Stock option planning, investor-ready financials and the SBD grind. Book a free consultation.",
+   "needs_sharad": true,
+   "note": "Service-page meta description lists SR&ED as a service next to 'Book a free consultation'. Meta description change needs Sharad."
+  }
+ ],
+ "page_note": "Scale-up service page built heavily around SR&ED as a firm service. Informational SR&ED kept: 'SR&ED left on the table' problem text, CCPC 35% refundable explanation, 'Your development work can generate a 35% refundable SR&ED credit', quiz heading/subtitle/questions, 'We understand ... what CRA looks at on a SR&ED claim', FAQ eligibility/records text (visible + FAQPage) and the informational link 'SR&ED tax credits'. Sharad may prefer an editor pass on the whole page given the volume."
+}

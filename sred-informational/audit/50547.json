@@ -1,0 +1,20 @@
+{
+ "id": 50547,
+ "url": "https://gondaliyacpa.ca/heavy-equipment-operator-accounting-mistakes/",
+ "title": "Common Tax and Accounting Mistakes Heavy Equipment Operators Make in Canada and How to Avoid Costly Problems",
+ "type": "post",
+ "elementor": false,
+ "rows": [
+  {
+   "location": "JSON-LD",
+   "section": "Service schema serviceType",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "shop equipment disposals, SR&ED identification and claim support on jig and fixture development, owner",
+   "after": "shop equipment disposals, owner",
+   "needs_sharad": false,
+   "note": "Service schema lists SR&ED claim support (schema appears copied from a machine-shop page)."
+  }
+ ],
+ "page_note": "No visible SR&ED text. JSON-LD Service offer (row) and informational DefinedTerm (kept)."
+}

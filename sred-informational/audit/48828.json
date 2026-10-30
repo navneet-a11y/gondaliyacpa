@@ -1,0 +1,100 @@
+{
+ "id": 48828,
+ "url": "https://gondaliyacpa.ca/accountant-for-breweries/",
+ "title": "Accounting and Tax Services for Breweries",
+ "type": "page",
+ "elementor": false,
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "Deductions paragraph",
+   "editor": "post_content",
+   "action": "replace",
+   "before": " &#8212; plus SR&amp;ED where your recipe and process work qualifies.",
+   "after": ".",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Services grid: Corporate Tax Planning card",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "<p>CCA timing, SR&amp;ED, the small business deduction",
+   "after": "<p>CCA timing, the small business deduction",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Tailored services: corporate tax bullet",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "every eligible credit &#8212; including SR&amp;ED where your recipe and process work qualifies &#8212; so your corporation",
+   "after": "every eligible credit so your corporation",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Tailored services: SR&ED bullet",
+   "editor": "post_content",
+   "action": "delete",
+   "before": "<li>We identify and document SR&amp;ED-eligible work, because developing new recipes, scaling a process or solving fermentation and stability problems can qualify for federal and Ontario research tax credits.</li>",
+   "after": "",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Readiness quiz result (3+ yes, inline JS)",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "inventory costing, HST across channels and SR&amp;ED could all affect",
+   "after": "inventory costing and HST across channels could all affect",
+   "needs_sharad": false,
+   "note": "Quiz question 'possible SR&ED' kept as informational."
+  },
+  {
+   "location": "Visible",
+   "section": "Case study card: Hamilton Microbrewery (SR&ED & Incorporation)",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "<div class=\"sb-case-card\"><h3>Hamilton Microbrewery &#8211; SR&amp;ED &amp; Incorporation</h3><p><strong>Problem:</strong> A microbrewery experimenting with new sour and barrel-aged recipes was doing genuine development work but claiming nothing for it, and was still operating as a sole proprietor at high personal tax rates with a valuable brand and equipment exposed.</p><p><strong>Solution:</strong> We documented and filed an SR&amp;ED claim for the qualifying recipe and process development, incorporated the brewery, used a section 85 rollover to move the equipment and brand in tax-deferred, and set up a clean share structure.</p><p><strong>Results:</strong></p><ul class=\"sb-case-res\"><li>SR&amp;ED credits claimed on development work</li><li>Incorporated with no tax on the asset transfer</li><li>Equipment and brand rolled in under section 85</li><li>Corporate tax reduced with a compliant structure</li></ul></div>",
+   "after": "<div class=\"sb-case-card\"><h3>Hamilton Microbrewery &#8211; Incorporation</h3><p><strong>Problem:</strong> A microbrewery was still operating as a sole proprietor at high personal tax rates with a valuable brand and equipment exposed.</p><p><strong>Solution:</strong> We incorporated the brewery, used a section 85 rollover to move the equipment and brand in tax-deferred, and set up a clean share structure.</p><p><strong>Results:</strong></p><ul class=\"sb-case-res\"><li>Incorporated with no tax on the asset transfer</li><li>Equipment and brand rolled in under section 85</li><li>Corporate tax reduced with a compliant structure</li></ul></div>",
+   "needs_sharad": true,
+   "note": "Removes the SR&ED claim the firm filed; keeps the incorporation part."
+  },
+  {
+   "location": "Visible",
+   "section": "FAQ: Can my brewery claim SR&ED for recipe and process development? (visible)",
+   "editor": "post_content",
+   "action": "replace",
+   "before": " We assess your development work, document it properly and file the SR&amp;ED claim so you recover the credits you are entitled to. <a",
+   "after": " <a",
+   "needs_sharad": false,
+   "note": "Removes the filing offer; the Tax Planning link stays."
+  },
+  {
+   "location": "JSON-LD",
+   "section": "FAQPage: Can my brewery claim SR&ED...?",
+   "editor": "post_content",
+   "action": "replace",
+   "before": " We assess, document and file the claim.\"}",
+   "after": "\"}",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "JSON-LD",
+   "section": "AccountingService schema description",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "HST, taproom payroll and SR&ED, at AFFORDABLE flat fees.",
+   "after": "HST and taproom payroll, at AFFORDABLE flat fees.",
+   "needs_sharad": false,
+   "note": ""
+  }
+ ],
+ "page_note": "Brewery service page. Informational SR&ED kept: quiz question, FAQ eligibility text (visible + FAQPage)."
+}

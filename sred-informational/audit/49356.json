@@ -1,0 +1,140 @@
+{
+ "id": 49356,
+ "url": "https://gondaliyacpa.ca/accounting-tax-services-manufacturing-companies-canada/",
+ "title": "The Ultimate Guide to Accounting and Tax Services for Manufacturing Companies in Canada",
+ "type": "post",
+ "elementor": false,
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "Why choose us paragraph",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "We focus on things like capital equipment classification and SR&amp;ED claims for process improvements.",
+   "after": "We focus on things like capital equipment classification.",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Why choose us bullet list",
+   "editor": "post_content",
+   "action": "delete",
+   "before": "<li>Help maximize SR&amp;ED tax credits</li>\n",
+   "after": "",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "How we work bullet list",
+   "editor": "post_content",
+   "action": "delete",
+   "before": "<li>Assist with SR&amp;ED claim preparation when needed</li>\n",
+   "after": "",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Case studies list: Food Processing Manufacturer - SR&ED Claim Optimization",
+   "editor": "post_content",
+   "action": "delete",
+   "before": "<li><strong>Food Processing Manufacturer &ndash; SR&amp;ED Claim Optimization</strong><br />\nAn Ontario food maker lost out on SR&amp;ED credits because they didn't keep good records. Gondaliya CPA's manufacturing tax accountant team helped rebuild proper records following Form T661 guidelines<sup style=\"font-size:11px;color:#5a6b7b;\">[^3]</sup>. This got them $120,000 back as investment tax credits for process improvements. We also helped with provincial research credits.</li>\n",
+   "after": "",
+   "needs_sharad": true,
+   "note": "Sales-proof case study of SR&ED work by the firm ($120,000)."
+  },
+  {
+   "location": "Visible",
+   "section": "Benefits bullet list",
+   "editor": "post_content",
+   "action": "delete",
+   "before": "<li>Support for SR&amp;ED claims increases chances for tax credits.</li>\n",
+   "after": "",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Benefits table row (Optimized Tax Credits)",
+   "editor": "post_content",
+   "action": "delete",
+   "before": "<tr><td>Optimized Tax Credits</td><td>Adds cash flow from SR&amp;ED claims</td><td>CRA Form T661</td></tr>\n",
+   "after": "",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Testimonial (SR&ED claims)",
+   "editor": "post_content",
+   "action": "delete",
+   "before": "<blockquote style=\"border-left:4px solid #0c8f8f;padding:8px 0 8px 18px;margin:18px 0;color:#1d2733;font-style:italic;\"><p>&ldquo;Their hands-on help with SR&amp;ED claims made us feel sure about the process.&rdquo; &mdash; Owner, Food Processor (Mississauga)</p></blockquote>",
+   "after": "",
+   "needs_sharad": true,
+   "note": "Client testimonial about the firm's SR&ED claim help."
+  },
+  {
+   "location": "Visible",
+   "section": "Team section (Sharad bio paragraph)",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "He also handles SR&amp;ED claims about process improvements and GST/HST rules specific to manufacturing.",
+   "after": "He also handles GST/HST rules specific to manufacturing.",
+   "needs_sharad": true,
+   "note": "About Sharad himself."
+  },
+  {
+   "location": "Visible",
+   "section": "Services list",
+   "editor": "post_content",
+   "action": "delete",
+   "before": "<li>Support for SR&amp;ED claims on process upgrades</li>\n",
+   "after": "",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "We handle what decides the outcome paragraph",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "the manufacturing and processing profits deduction on Schedule 27, preparing SR&amp;ED claims on process work, and filing",
+   "after": "the manufacturing and processing profits deduction on Schedule 27, and filing",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Planning quiz result list (inline JS)",
+   "editor": "post_content",
+   "action": "delete",
+   "before": "if(rv('p-e')===1) items.push('A possible SR&ED claim on Form T661');\n      ",
+   "after": "",
+   "needs_sharad": false,
+   "note": "Quiz question on SR&ED then has no effect; optionally remove it manually."
+  },
+  {
+   "location": "Visible",
+   "section": "Closing paragraph (Gondaliya CPA sets...)",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "claims the Schedule 27 deduction, prepares SR&amp;ED on process work, and files",
+   "after": "claims the Schedule 27 deduction, and files",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "JSON-LD",
+   "section": "Service schema serviceType",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "capital cost allowance planning, SR&amp;ED claim preparation, GST/HST returns",
+   "after": "capital cost allowance planning, GST/HST returns",
+   "needs_sharad": false,
+   "note": ""
+  }
+ ],
+ "page_note": "Manufacturing services guide (post) with many SR&ED offer lines. Informational SR&ED kept: intro, ITC rate explanation and example, references, documentation callout, levers list, FAQs, tips, glossary, HowTo step, BlogPosting description, author bio lines."
+}

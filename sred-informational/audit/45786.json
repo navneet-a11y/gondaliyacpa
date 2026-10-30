@@ -1,0 +1,60 @@
+{
+ "id": 45786,
+ "url": "https://gondaliyacpa.ca/?elementor_library=tax-planning",
+ "title": "tax planning",
+ "type": "elementor_library",
+ "elementor": true,
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "Card 2 Tax Credit & Deduction Maximization - description",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "SR&ED claims, Investment Tax Credits, and sector-specific credits identified and structured in advance.",
+   "after": "Investment Tax Credits and sector-specific credits identified and structured in advance.",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Card 2 bullet: We structure SR&ED projects",
+   "editor": "elementor",
+   "action": "delete",
+   "before": "<li>We structure SR&ED projects so the eligible work is documented contemporaneously through the year, supporting the Form T661 claim and the 35% refundable Investment Tax Credit rather than reconstructing evidence after the fact.<\\/li>\\r\\n        ",
+   "after": "",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Card 2 bullet: We layer the Ontario Innovation Tax Credit ... on top of federal SR&ED",
+   "editor": "elementor",
+   "action": "delete",
+   "before": "<li>We layer the Ontario Innovation Tax Credit and Ontario Business-Research Institute Tax Credit on top of federal SR&ED, mapping each to the correct provincial schedule for a complete corporate tax planning claim.<\\/li>\\r\\n        ",
+   "after": "",
+   "needs_sharad": false,
+   "note": "Ontario OITC/OBRITC are SR&ED-based credits; whole bullet offers SR&ED claim work."
+  },
+  {
+   "location": "Visible",
+   "section": "Related services link list (item #3)",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "<a href=\\\"https:\\/\\/gondaliyacpa.ca\\/sred-tax-credit-claims\\/\\\">SR&amp;ED Tax Credit Claims<\\/a>",
+   "after": "<a href=\\\"https:\\/\\/gondaliyacpa.ca\\/sred-tax-credit-claims\\/\\\">How SR&amp;ED Credits Work<\\/a>",
+   "needs_sharad": false,
+   "note": "SR&ED listed among our services with a link; neutral anchor, URL kept. Alternatively remove the list item manually."
+  },
+  {
+   "location": "Visible",
+   "section": "Icon box: Tax Credit & Deduction Maximization (description)",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "\"ekit_icon_box_description_text\":\"SR&ED, ITCs, sector-specific credits\"",
+   "after": "\"ekit_icon_box_description_text\":\"ITCs, sector-specific credits\"",
+   "needs_sharad": false,
+   "note": "ElementsKit icon box service card listing SR&ED."
+  }
+ ],
+ "page_note": "Year-end intro line (risk missing credits such as SR&ED) is informational. Elementor template 'tax-planning' (corporate tax planning content). 'Maximize SR&ED Tax Credits' tip section is informational advice to the reader and kept."
+}

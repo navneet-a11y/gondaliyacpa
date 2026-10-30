@@ -1,0 +1,50 @@
+{
+ "id": 45516,
+ "url": "https://gondaliyacpa.ca/resident-director-services-for-technology-companies/",
+ "title": "Resident Director Services for Technology Companies",
+ "type": "page",
+ "elementor": true,
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "Services expanded item 6 (Growth and Graceful Exit) bullet",
+   "editor": "elementor",
+   "action": "delete",
+   "before": "<li>SR&ED claims prepared honestly under your corporation's actual status.<\\/li>",
+   "after": "",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "FAQ: Can my Canadian subsidiary still claim SR&ED? (visible)",
+   "editor": "elementor",
+   "action": "replace",
+   "before": " We prepare the claim honestly under the correct status and never dress a subsidiary up as something it is not.<\\/div>",
+   "after": " A claim has to be prepared under the correct status, never dressing a subsidiary up as something it is not.<\\/div>",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "JSON-LD",
+   "section": "FAQPage: Can my Canadian subsidiary still claim SR&ED?",
+   "editor": "elementor",
+   "action": "replace",
+   "before": " We prepare the claim honestly under the correct status and never dress a subsidiary up as something it is not.\\\"}}",
+   "after": " A claim has to be prepared under the correct status, never dressing a subsidiary up as something it is not.\\\"}}",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Related industries card: Startups",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "SR&amp;ED claims under the correct status<\\/li>",
+   "after": "How SR&amp;ED depends on CCPC status<\\/li>",
+   "needs_sharad": false,
+   "note": "Industry card bullet listing SR&ED claims as a service; rewritten informational."
+  }
+ ],
+ "page_note": "Elementor page (Resident Director services). Informational SR&ED kept: CCPC vs foreign-controlled rate explanation, FAQ eligibility text, subsidiary-vs-EOR answer."
+}

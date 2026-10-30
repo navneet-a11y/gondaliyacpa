@@ -1,0 +1,20 @@
+{
+ "id": 50510,
+ "url": "https://gondaliyacpa.ca/masonry-contractor-accountant-canada/",
+ "title": "The Ultimate Guide to Accounting and Tax Services for Masonry Contractors in Canada",
+ "type": "post",
+ "elementor": false,
+ "rows": [
+  {
+   "location": "JSON-LD",
+   "section": "Service schema serviceType",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "shop equipment disposals, SR&ED identification and claim support on jig and fixture development, owner",
+   "after": "shop equipment disposals, owner",
+   "needs_sharad": false,
+   "note": "Service schema lists SR&ED claim support (schema appears copied from a machine-shop page)."
+  }
+ ],
+ "page_note": "No visible SR&ED text. JSON-LD: Service offer (row); BlogPosting description mention and DefinedTerm are informational (kept)."
+}

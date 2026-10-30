@@ -364,6 +364,16 @@
    "after": "T2 filing, manufacturing (Class 53) CCA",
    "needs_sharad": false,
    "note": ""
+  },
+  {
+   "location": "Meta",
+   "section": "Rank Math meta description",
+   "editor": "rank_math",
+   "action": "replace",
+   "before": "Chemical manufacturer accountant in Canada. SR&amp;ED on formulation R&amp;D, Class 53 CCA, batch inventory costing and export HST. Book a free consultation.",
+   "after": "Chemical manufacturer accountant in Canada. Class 53 CCA, batch inventory costing and export HST. Book a free consultation.",
+   "needs_sharad": true,
+   "note": "Service-page meta description lists SR&ED as a service next to 'Book a free consultation'. Meta description change needs Sharad."
   }
  ],
  "page_note": "Chemical manufacturer service page with SR&ED offered throughout. Informational SR&ED kept: hero explanation of formulation as SR&ED, 'You run formulation trials that qualify', SR&ED receivable in statements (x2), quiz heading/subtitle/question, 'We understand how SR&ED ... flow' line, FAQs on eligibility, amounts and CCPC (visible + FAQPage), related-industry card. Quiz title 'Chemical Manufacturer Tax & SR&ED Check' kept as a topic label."

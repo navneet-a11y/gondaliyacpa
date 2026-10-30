@@ -1,0 +1,30 @@
+{
+ "id": 50477,
+ "url": "https://gondaliyacpa.ca/millwork-company-tax-planning-canada/",
+ "title": "How Millwork Companies in Canada Can Reduce Taxes and Improve Cash Flow With Strategic Tax Planning",
+ "type": "post",
+ "elementor": false,
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "How we work paragraph (At Gondaliya CPA, we start...)",
+   "editor": "post_content",
+   "action": "delete",
+   "before": " We also check if you qualify for programs like SR&amp;ED.",
+   "after": "",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "JSON-LD",
+   "section": "Service schema serviceType",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "shop equipment disposals, SR&ED identification and claim support on jig and fixture development, owner",
+   "after": "shop equipment disposals, owner",
+   "needs_sharad": false,
+   "note": ""
+  }
+ ],
+ "page_note": "Millwork post. Informational SR&ED kept (SR&ED program section, experience callout tip, records, FAQ generic 'A CPA firm is required for ... SR&ED support', glossary, Article description, author bio)."
+}

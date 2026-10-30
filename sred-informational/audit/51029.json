@@ -304,6 +304,16 @@
    "after": "T2 filing, manufacturing (Class 53) CCA",
    "needs_sharad": false,
    "note": ""
+  },
+  {
+   "location": "Meta",
+   "section": "Rank Math meta description",
+   "editor": "rank_math",
+   "action": "replace",
+   "before": "Cosmetics manufacturer accountant in Canada. SR&amp;ED on formulations, Class 53 CCA, shelf-life inventory and retailer chargebacks. Book a free consultation.",
+   "after": "Cosmetics manufacturer accountant in Canada. Class 53 CCA, shelf-life inventory and retailer chargebacks. Book a free consultation.",
+   "needs_sharad": true,
+   "note": "Service-page meta description lists SR&ED as a service next to 'Book a free consultation'. Meta description change needs Sharad."
   }
  ],
  "page_note": "Cosmetics manufacturer service page with SR&ED offered throughout. Informational SR&ED kept: hero explanation that formulation work is SR&ED, 'You run formulation trials that qualify for SR&ED', quiz subtitle/question, 'We understand how SR&ED on formulation ... flow' line, FAQs incl. CCPC unlocks the 35% SR&ED rate (visible + FAQPage). Ontario OITC/ORDTC (SR&ED-based credits) still mentioned in step 1 text ('We claim the M&P deduction and the Ontario OITC and ORDTC on Schedule 31') - Sharad may want that trimmed too."
