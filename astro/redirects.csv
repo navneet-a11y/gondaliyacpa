@@ -1,3 +1,5 @@
 source,destination,status,effective_date,note
 /personal-services-business-tax-calculator/,/psb-tax-cost-calculator/,301,2026-10-14,"PSB project rule 7: page 7 replaces old calculator. Old WP page 53131 moved to draft, not deleted."
 /ei-premium-rates-2026-employer-employee-guide/,/ei-premium-rates-employer-employee-guide/,301,2027-03-01,"Change 23: SCHEDULED, not live yet. Keep the 2026 page live until Monday March 1 2027, then 301 to the evergreen EI page."
+/catch-up-corporate-tax-filing-windor/,/catch-up-corporate-tax-filing-windsor/,301,2026-10-30,Change 10.7: page 43679 slug typo fixed (windor -> windsor). Rank Math 301 NOT yet created (no usable API; pages get no _wp_old_slug) - Navneet to add in Rank Math > Redirections.
+/best-bookkeeping-services-for-small-business-in-toronto/accountant-for-retirement-homes/,/accountant-for-retirement-homes/,301,2026-10-30,Change 10.4: stale nested URL of page 49017 (parent removed). Rank Math 301 NOT yet created (no usable API) - Navneet to add in Rank Math > Redirections.
