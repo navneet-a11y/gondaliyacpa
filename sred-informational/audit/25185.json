@@ -1,0 +1,20 @@
+{
+ "id": 25185,
+ "url": "https://gondaliyacpa.ca/team/sharad-gondaliya-cpa/",
+ "title": "Sharad Gondaliya CPA",
+ "type": "page",
+ "elementor": true,
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "Bio text",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "Trust and Estate Tax Returns (T3), and SR&ED Tax Credit Claims.",
+   "after": "and Trust and Estate Tax Returns (T3).",
+   "needs_sharad": false,
+   "note": "SR&ED claims listed among the services Sharad provides"
+  }
+ ],
+ "page_note": "Sharad Gondaliya team/profile page (Elementor). Single SR&ED mention: listed among the services he provides in the bio."
+}

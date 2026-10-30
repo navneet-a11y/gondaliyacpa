@@ -1,0 +1,60 @@
+{
+ "id": 16388,
+ "url": "https://gondaliyacpa.ca/accounting-for-software-companies/",
+ "title": "Accounting for Software Companies",
+ "type": "page",
+ "elementor": true,
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "Services grid - T2 card bullet",
+   "editor": "elementor",
+   "action": "delete",
+   "before": "<li>We prepare Form T661 alongside your software company T2 return to claim <a class=\\\"wpil_keyword_link\\\" href=\\\"https:\\/\\/gondaliyacpa.ca\\/claiming-sred-tax-credits-what-canadian-businesses-need-to-know\\/\\\"   title=\\\"SR&amp;ED tax credits\\\" data-wpil-keyword-link=\\\"linked\\\"  data-wpil-monitor-id=\\\"7794\\\">SR&ED tax credits<\\/a> on eligible developer salaries, contractor costs, and cloud hosting expenses used for experimental development \\u2014 missing the 18-month filing deadline permanently forfeits the refundable credit.<\\/li>\\r\\n",
+   "after": "",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Services grid - tax planning card bullet",
+   "editor": "elementor",
+   "action": "delete",
+   "before": "<li>We plan your software company's SR&ED claim timing so the 35% refundable investment tax credit on the first $3 million in qualified developer expenditures is captured in the optimal fiscal year, coordinating with your SaaS company's runway and cash flow needs.<\\/li>\\r\\n",
+   "after": "",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Services grid - catch-up card bullet",
+   "editor": "elementor",
+   "action": "delete",
+   "before": "<li>We identify SR&ED-eligible developer expenses in prior unfiled years and prepare retroactive Form T661 claims alongside each catch-up T2 return \\u2014 each unfiled year within the 18-month window represents tens of thousands in forfeited refundable credits for your software company.<\\/li>\\r\\n",
+   "after": "",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Services grid - CRA audit card bullet",
+   "editor": "elementor",
+   "action": "delete",
+   "before": "<li>Software companies face frequent CRA audits on SR&ED claims \\u2014 we defend your Form T661 technical narratives by documenting technological uncertainty, systematic investigation, and eligible developer hours that meet CRA's three-prong SR&ED eligibility test.<\\/li>\\r\\n",
+   "after": "",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Case study card - Solution",
+   "editor": "elementor",
+   "action": "replace",
+   "before": " Implemented proper accounting and R&amp;D tax credit claims.",
+   "after": " Implemented proper accounting.",
+   "needs_sharad": false,
+   "note": "Firm case study claiming R&D credits for the client"
+  }
+ ],
+ "page_note": "Accounting for software companies industry page (Elementor, industry template). Rows remove four SR&ED service bullets (prepare T661, plan claim timing, retroactive T661 claims, defend in CRA audit) and R&D credit claims in a case study. Informational lines (R&D credits as an industry issue, SR&ED-eligible cost allocation in bookkeeping, FAQ on SR&ED eligibility) stay."
+}

@@ -1,0 +1,30 @@
+{
+ "id": 20017,
+ "url": "https://gondaliyacpa.ca/business-plan-writing-service/",
+ "title": "Business Plan Writing Service",
+ "type": "page",
+ "elementor": true,
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "FAQ (grant-ready plans)",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "non-dilutive funding through programs like SR&amp;ED, IRAP, CanExport",
+   "after": "non-dilutive funding through programs like IRAP, CanExport",
+   "needs_sharad": false,
+   "note": "Sales proof listing SR&ED among funding the firm secured for clients"
+  },
+  {
+   "location": "Visible",
+   "section": "Related services list",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "<li><a href=\\\"https:\\/\\/gondaliyacpa.ca\\/sred-tax-credit-claims\\/\\\">SR&amp;ED Tax Credit Claims<\\/a><\\/li>",
+   "after": "<li><a href=\\\"https:\\/\\/gondaliyacpa.ca\\/sred-tax-credit-claims\\/\\\">How SR&amp;ED Tax Credits Work<\\/a><\\/li>",
+   "needs_sharad": false,
+   "note": "SR&ED listed among services with link; neutral anchor, URL kept"
+  }
+ ],
+ "page_note": "Business plan writing service page (Elementor). Informational SR&ED lines (clients preparing SR&ED claims, SR&ED-eligible expenditures compliance, tip \"Include SR&ED Eligibility Assessment\" in your plan) stay. Rows remove SR&ED from the funding-secured sales claim and neutralize the related-services link anchor."
+}

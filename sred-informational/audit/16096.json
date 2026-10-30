@@ -1,0 +1,90 @@
+{
+ "id": 16096,
+ "url": "https://gondaliyacpa.ca/accounting-for-startups/",
+ "title": "Accounting for startups",
+ "type": "page",
+ "elementor": true,
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "Services grid - T2 card bullet",
+   "editor": "elementor",
+   "action": "delete",
+   "before": "<li>We file your startup corporation T2 return with SR&ED eligible expenditures identified and separated on Form T661 alongside Schedule 1 \\u2014 the 35% refundable ITC on the first $3 million in qualifying R&D expenditures can recover a significant portion of your development costs, and the claim must be filed within 18 months of fiscal year-end or the refund is permanently forfeited.<\\/li>\\r\\n        ",
+   "after": "",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Services grid - tax planning card bullet",
+   "editor": "elementor",
+   "action": "delete",
+   "before": "<li>We plan SR&ED claims within CRA's 18-month filing deadline and coordinate the timing with your startup's fiscal year-end to maximize the refundable ITC \\u2014 for CCPCs with taxable capital under $10 million, the 35% refundable rate applies to the first $3 million in qualifying expenditures, and we ensure your claim captures all eligible developer salaries, contractor costs, and materials.<\\/li>\\r\\n        ",
+   "after": "",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Services grid - catch-up card bullet",
+   "editor": "elementor",
+   "action": "replace",
+   "before": " We prioritize catch-up T2 returns where the 18-month window has not yet closed to recover those credits before the deadline passes.",
+   "after": "",
+   "needs_sharad": false,
+   "note": "SR&ED deadline fact stays"
+  },
+  {
+   "location": "Visible",
+   "section": "Services grid - amended returns bullet",
+   "editor": "elementor",
+   "action": "delete",
+   "before": "<li>We correct misclassified R&D expenses where your previous accountant lumped SR&ED eligible development labour with general operating expenses on prior startup T2 returns \\u2014 properly separating qualifying expenditures and filing amended Form T661 claims recovers SR&ED refunds that were never claimed for each affected fiscal year.<\\/li>\\r\\n        ",
+   "after": "",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Services grid - CRA audit card bullet",
+   "editor": "elementor",
+   "action": "delete",
+   "before": "<li>We defend SR&ED claims during a CRA audit on your startup corporation by presenting Form T661 project descriptions, developer time-tracking records, sprint documentation, and evidence of technological uncertainty \\u2014 CRA denies SR&ED when no contemporaneous records support the qualifying experimental development work claimed.<\\/li>\\r\\n        ",
+   "after": "",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Services grid - CRA audit card bullet",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "support your startup's SR&ED claim, expense deductions, and tax treatment",
+   "after": "support your startup's expense deductions and tax treatment",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "VDP / catch-up section bullet",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "\\u2014 we quantify the correct figure and disclose it, which",
+   "after": "\\u2014 the correct figure should be quantified and disclosed, which",
+   "needs_sharad": false,
+   "note": "Firm reviewing/correcting SR&ED claims; reworded to informational"
+  },
+  {
+   "location": "Visible",
+   "section": "Case study \"Tech Startup Optimized Tax Credits – Toronto, ON\"",
+   "editor": "manual",
+   "action": "manual",
+   "before": "Tech Startup Optimized Tax Credits – Toronto, ON",
+   "after": "",
+   "needs_sharad": false,
+   "note": "Case study card (heading widget \"Tech Startup Optimized Tax Credits – Toronto, ON\" + text-editor widget: \"Problem: Missed opportunities for SR&ED and other startup tax credits. Solution: Implemented proper bookkeeping, claim preparation, and strategic tax planning. Results: $35K+ in tax credits recovered...\"). Sales proof for SR&ED claim preparation; delete both widgets, or edit the text to drop SR&ED and claim preparation."
+  }
+ ],
+ "page_note": "Accounting for startups industry page (Elementor, industry template). Rows remove SR&ED claim prep/planning/amendment/audit-defence bullets, credit-recovery sentence, SR&ED claim in objection support, firm correction of SR&ED claims, and a case study built on SR&ED claim preparation (manual). Informational lines (deadline fact, grant netting, bookkeeping separation, year-end timing, transfer pricing risk, NTR receivables/notes) stay."
+}

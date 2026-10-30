@@ -241,7 +241,7 @@
    "editor": "post_content",
    "action": "replace",
    "before": "We confirm CCPC status at incorporation, because only a Canadian-controlled private corporation earns the 35% refundable SR&amp;ED rate on Form T661 rather than the 15% non-refundable credit; on one $300,000 formulation program the structure was worth $60,000 of extra refund.",
-   "after": "We confirm CCPC status at incorporation, because a Canadian-controlled private corporation gets the small business deduction and other CCPC-only benefits.",
+   "after": "We confirm CCPC status at incorporation.",
    "needs_sharad": false,
    "note": "Rewritten to drop the SR&ED-claim result; Sharad may prefer to delete the bullet."
   },

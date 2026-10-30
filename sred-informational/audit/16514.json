@@ -1,0 +1,80 @@
+{
+ "id": 16514,
+ "url": "https://gondaliyacpa.ca/manufacturing/",
+ "title": "Manufacturing",
+ "type": "page",
+ "elementor": true,
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "Intro",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "manufacturing inventory tracking, SR&amp;ED credits for manufacturers, and ",
+   "after": "manufacturing inventory tracking, and ",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Services grid - T2 card bullet",
+   "editor": "elementor",
+   "action": "delete",
+   "before": "<li>We prepare the SR&ED claim on Form T661 alongside your manufacturing corporation T2 return for qualifying experimental development work \\u2014 the 35% refundable ITC on the first $3 million in eligible expenditures can recover a significant portion of your factory's R&D costs on new production processes, material formulations, and tooling innovations each fiscal year.<\\/li>\\r\\n        ",
+   "after": "",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Services grid - catch-up card bullet",
+   "editor": "elementor",
+   "action": "replace",
+   "before": " We prioritize catch-up T2 returns where the 18-month window has not yet closed to recover those credits.",
+   "after": "",
+   "needs_sharad": false,
+   "note": "SR&ED deadline fact stays"
+  },
+  {
+   "location": "Visible",
+   "section": "Services grid - CRA audit card bullet",
+   "editor": "elementor",
+   "action": "delete",
+   "before": "<li>We defend SR&ED claims during a CRA audit on your manufacturing corporation by presenting Form T661 project descriptions, production trial records, time-tracking for qualifying experimental development work, and documentation of technological uncertainty \\u2014 CRA denies SR&ED when no contemporaneous records support the claimed process innovation.<\\/li>\\r\\n        ",
+   "after": "",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Services grid - CRA audit card bullet",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "support your factory's inventory valuation, CCA classifications, and SR&ED claims, preventing",
+   "after": "support your factory's inventory valuation and CCA classifications, preventing",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "VDP / catch-up section bullet",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "\\u2014 we recalculate the supportable claim and correct it through the disclosure.",
+   "after": "\\u2014 the supportable claim has to be recalculated and corrected through the disclosure.",
+   "needs_sharad": false,
+   "note": "Firm recalculating SR&ED claims; reworded to informational"
+  },
+  {
+   "location": "Visible",
+   "section": "FAQ (tax savings)",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "We identify tax-saving opportunities such as R&amp;D credits, equipment incentives, and optimal entity structure.",
+   "after": "We identify tax-saving opportunities such as equipment incentives and optimal entity structure.",
+   "needs_sharad": false,
+   "note": ""
+  }
+ ],
+ "page_note": "Manufacturing industry page (Elementor, industry template). Rows remove SR&ED from the intro service list, SR&ED claim prep/audit-defence bullets, credit-recovery sentence, SR&ED claims in objection support, firm recalculation of SR&ED claims, and R&D credits in an FAQ answer. Informational SR&ED lines (deadline fact, catch-up bookkeeping separation, NTR receivables/notes) stay."
+}

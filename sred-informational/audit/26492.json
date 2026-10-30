@@ -1,0 +1,60 @@
+{
+ "id": 26492,
+ "url": "https://gondaliyacpa.ca/animators-media-production-studios/",
+ "title": "Animators &amp; Media Production Studios",
+ "type": "page",
+ "elementor": true,
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "\"How we help\" icon list",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "Help you claim software, equipment, and R&amp;D tax credits.",
+   "after": "Help you claim software and equipment tax credits.",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Services grid - T2 card bullet",
+   "editor": "elementor",
+   "action": "delete",
+   "before": "<li>We prepare the SR&ED claim on Form T661 alongside your animation studio T2 return for qualifying experimental development work \\u2014 the 35% refundable ITC on the first $3 million in eligible expenditures can recover a significant portion of your VFX or animation R&D costs each year.<\\/li>\\r\\n",
+   "after": "",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Services grid - catch-up card bullet",
+   "editor": "elementor",
+   "action": "replace",
+   "before": " We prioritize catch-up T2 returns where the 18-month window has not yet closed to recover those credits.",
+   "after": "",
+   "needs_sharad": false,
+   "note": "SR&ED deadline fact stays"
+  },
+  {
+   "location": "Visible",
+   "section": "Services grid - CRA audit card bullet",
+   "editor": "elementor",
+   "action": "delete",
+   "before": "<li>We defend SR&ED claims during a CRA audit on your animation studio by presenting Form T661 project descriptions, time-tracking records for qualifying experimental development work, and documentation of technological uncertainty \\u2014 CRA denies SR&ED when no contemporaneous records support the claim.<\\/li>\\r\\n",
+   "after": "",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Case study card - Solution",
+   "editor": "elementor",
+   "action": "replace",
+   "before": " Implemented project-based bookkeeping and claimed eligible software R&amp;D credits.",
+   "after": " Implemented project-based bookkeeping.",
+   "needs_sharad": false,
+   "note": "Firm case study claiming R&D credits for the client"
+  }
+ ],
+ "page_note": "Animators & media production industry page (Elementor, industry template). Rows remove SR&ED claim prep and audit-defence bullets, catch-up credit-recovery sentence, R&D credit-claiming in the help list and a case study. Informational lines (studios claim SR&ED/OIDMTC, lose eligibility if unfiled, deadline fact, NTR receivables/notes, incorporate to claim SR&ED credits) stay."
+}

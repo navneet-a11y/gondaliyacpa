@@ -1,0 +1,20 @@
+{
+ "id": 50550,
+ "url": "https://gondaliyacpa.ca/scaffolding-business-tax-planning-canada/",
+ "title": "How Scaffolding Companies in Canada Can Reduce Taxes and Improve Cash Flow With Strategic Tax Planning",
+ "type": "post",
+ "elementor": false,
+ "rows": [
+  {
+   "location": "JSON-LD",
+   "section": "Service schema serviceType",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "shop equipment disposals, SR&ED identification and claim support on jig and fixture development, owner",
+   "after": "shop equipment disposals, owner",
+   "needs_sharad": false,
+   "note": "Service schema lists SR&ED claim support (schema appears copied from a machine-shop page)."
+  }
+ ],
+ "page_note": "Visible mention informational (SR&ED usually does not fit scaffolding work). DefinedTerm kept."
+}
