@@ -1,0 +1,100 @@
+{
+ "id": 38328,
+ "url": "https://gondaliyacpa.ca/corporate-tax-filing-guelph/",
+ "title": "Corporate Tax Filing Guelph",
+ "type": "page",
+ "elementor": true,
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "Hero intro",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "Agri-food CCA, SR&amp;ED, food HST classification.",
+   "after": "Agri-food CCA, food HST classification.",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Services grid card \"SR&ED Tax Credits\"",
+   "editor": "elementor",
+   "action": "delete",
+   "before": "<div class=\\\"gu-svc\\\"><div class=\\\"gu-svc-icon\\\">&#128451;<\\/div><h3>SR&amp;ED Tax Credits<\\/h3><p>SR&amp;ED assessment and filing for Guelph technology and agri-tech companies. University of Guelph research partnerships, precision agriculture software, food science R&amp;D and veterinary product development qualify for 35% refundable credit.<\\/p><\\/div>\\r\\n",
+   "after": "",
+   "needs_sharad": false,
+   "note": "Service card: SR&ED assessment and filing"
+  },
+  {
+   "location": "Visible",
+   "section": "Expertise item - SR&ED bullets (assess, prepare T661, calculate, file, respond to CRA)",
+   "editor": "elementor",
+   "action": "delete",
+   "before": "<li>Assess SR&amp;ED eligibility for University of Guelph spinoffs, precision agriculture software, crop yield optimisation algorithms, soil sensor development, livestock health monitoring and food science R&amp;D.<\\/li><li>Prepare the technical narrative describing the systematic investigation, technological uncertainties and advancement in agricultural or food science knowledge.<\\/li><li>Calculate eligible expenditures including software development salaries, algorithm design, field trial costs, materials and overhead allocations.<\\/li><li>File the T661 SR&amp;ED form with the T2 return to claim the 35% refundable investment tax credit for qualifying Guelph CCPCs.<\\/li><li>Respond to CRA SR&amp;ED reviewer inquiries and provide technical documentation supporting the agri-tech or food science claim.<\\/li>",
+   "after": "",
+   "needs_sharad": false,
+   "note": "All bullets are SR&ED service tasks; the item heading and informational subheading stay"
+  },
+  {
+   "location": "Visible",
+   "section": "Case card \"(SR&ED Credit Recovery)\"",
+   "editor": "elementor",
+   "action": "delete",
+   "before": "<div class=\\\"gu-case-card\\\"><h3>Agri-Tech Startup, University of Guelph Corridor (SR&amp;ED Recovery)<\\/h3><p>A University of Guelph spinoff developing precision agriculture software for crop yield optimisation had never claimed SR&amp;ED credits in its first two years of operation. The company assumed SR&amp;ED was only for lab research. Our review identified $340,000 in eligible expenditures including software development salaries, algorithm design for satellite data analysis and field trial costs. We filed T661 forms for both years. <a href=\\\"https:\\/\\/gondaliyacpa.ca\\/tax-preparation-filing\\/\\\">Corporate Tax Filing &#8594;<\\/a><\\/p><div class=\\\"gu-case-stat\\\">$119,000 SR&amp;ED refund. 35% refundable credit on two years of R&amp;D.<\\/div><\\/div>\\r\\n",
+   "after": "",
+   "needs_sharad": false,
+   "note": "Sales-proof case where the firm filed T661 and recovered SR&ED credits"
+  },
+  {
+   "location": "Visible",
+   "section": "Comparison table - SR&ED credits row",
+   "editor": "elementor",
+   "action": "delete",
+   "before": "<tr><td>SR&amp;ED credits<\\/td><td>Not assessed.<\\/td><td>Every tech and manufacturing client assessed for SR&amp;ED eligibility.<\\/td><\\/tr>\\r\\n",
+   "after": "",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Pricing table - SR&ED Tax Credit fee row",
+   "editor": "elementor",
+   "action": "delete",
+   "before": "<tr><td>SR&amp;ED Tax Credit<\\/td><td>15-20% contingency<\\/td><td>6 to 8 weeks<\\/td><td>Agri-tech, food science, precision agriculture. Technical narrative + expenditure calculation. $1,000 retainer.<\\/td><\\/tr>\\r\\n",
+   "after": "",
+   "needs_sharad": false,
+   "note": "SR&ED contingency fee + retainer"
+  },
+  {
+   "location": "Visible",
+   "section": "FAQ \"Can ... technology companies claim SR&ED?\"",
+   "editor": "elementor",
+   "action": "replace",
+   "before": " We assess SR&amp;ED eligibility for every Guelph technology and agri-food client. <a href=\\\"https:\\/\\/gondaliyacpa.ca\\/sred-tax-credits\\/\\\">SR&amp;ED Assessment &#8594;",
+   "after": " <a href=\\\"https:\\/\\/gondaliyacpa.ca\\/sred-tax-credits\\/\\\">How SR&amp;ED works &#8594;",
+   "needs_sharad": false,
+   "note": "Eligibility answer stays; offer sentence dropped, anchor neutralized"
+  },
+  {
+   "location": "Visible",
+   "section": "FAQ \"How do I get started?\"",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "(CCA, SR&amp;ED, Clean Tech ITC)",
+   "after": "(CCA, Clean Tech ITC)",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Team bio - Sharad",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "Agri-food manufacturing, agricultural CCA and SR&amp;ED expertise.",
+   "after": "Agri-food manufacturing and agricultural CCA expertise.",
+   "needs_sharad": false,
+   "note": ""
+  }
+ ],
+ "page_note": "Corporate tax filing Guelph (Elementor city template). SR&ED offered via hero, service card, expertise bullets, case study, contingency fee, comparison row, team bio, FAQ. Rows strip offer/fee items; informational lines (\"most under-claimed credit\" subheading, \"SR&ED not claimed\" mistakes row, FAQ eligibility answer + JSON-LD) stay. HTML comment at top holds a draft meta description (not rendered)."
+}

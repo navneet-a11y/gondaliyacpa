@@ -1,0 +1,40 @@
+{
+ "id": 51819,
+ "url": "https://gondaliyacpa.ca/accountant-for-call-centres/",
+ "title": "Accounting and Tax Services for Call Centres",
+ "type": "page",
+ "elementor": false,
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "Services expanded list (tax planning bullets)",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "<li>We assess whether any of your IVR, routing or automation development meets the technological-uncertainty test for SR&amp;ED, because some contact-centre engineering qualifies and a great deal of ordinary configuration does not.</li>",
+   "after": "<li>Some IVR, routing or automation development can meet the technological-uncertainty test for SR&amp;ED, but a great deal of ordinary contact-centre configuration does not.</li>",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "FAQ: Can I claim SR&ED on IVR or automation work? (visible)",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "We assess the actual development work against the test before anything is claimed, because a weak claim invites scrutiny across the whole return.</div>",
+   "after": "The actual development work needs to be assessed against the test before anything is claimed, because a weak claim invites scrutiny across the whole return.</div>",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "JSON-LD",
+   "section": "FAQPage: Can I claim SR&ED on IVR or automation work?",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "We assess the actual development work against the test before anything is claimed, because a weak claim invites scrutiny across the whole return.\"}",
+   "after": "The actual development work needs to be assessed against the test before anything is claimed, because a weak claim invites scrutiny across the whole return.\"}",
+   "needs_sharad": false,
+   "note": ""
+  }
+ ],
+ "page_note": "Call centre service page; SR&ED appears only in one service bullet and one FAQ, both rewritten to drop 'we assess'."
+}

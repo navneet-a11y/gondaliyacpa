@@ -1,0 +1,190 @@
+{
+ "id": 31952,
+ "url": "https://gondaliyacpa.ca/expert-cpa-accounting-and-bookkeeping-services-maximize-sred-credits-and-tax-savings/",
+ "title": "Expert CPA Accounting and Bookkeeping Services: Maximize SR&amp;ED Credits and Tax Savings",
+ "type": "post",
+ "elementor": false,
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "H1 (post title)",
+   "editor": "manual",
+   "action": "manual",
+   "before": "Expert CPA Accounting and Bookkeeping Services: Maximize SR&amp;ED Credits and Tax Savings",
+   "after": "",
+   "needs_sharad": true,
+   "note": "post_title field (rendered as H1), not in content. Suggested: \"CPA Accounting and Bookkeeping for SR&amp;ED Credits and Tax Savings\". Current title presents SR&ED help as an \"Expert CPA ... Service\"."
+  },
+  {
+   "location": "Meta",
+   "section": "Rank Math meta description",
+   "editor": "rank_math",
+   "action": "replace",
+   "before": "Maximize SR&ED tax credits with expert CPA accounting and bookkeeping. Reduce taxes, improve compliance, and grow your business confidently.",
+   "after": "How SR&ED tax credits connect to CPA accounting and bookkeeping: eligible expenses, records, CRA compliance and what affects claim costs in Canada.",
+   "needs_sharad": true,
+   "note": "Current description sells SR&ED help (\"Maximize SR&ED tax credits with expert CPA accounting\")"
+  },
+  {
+   "location": "Visible",
+   "section": "intro paragraph",
+   "editor": "post_content",
+   "action": "replace",
+   "before": " Gondaliya CPA specializes in assisting clients with Research and Development Tax Credit applications and ongoing",
+   "after": " It covers Research and Development Tax Credit applications and ongoing",
+   "needs_sharad": false,
+   "note": "Sentence now: \"It covers Research and Development Tax Credit applications and ongoing tax credit accounting needs.\""
+  },
+  {
+   "location": "Visible",
+   "section": "after intro paragraph (block editor)",
+   "editor": "post_content",
+   "action": "insert_after",
+   "before": " tax credit accounting needs.</p>\n<!-- /wp:paragraph -->",
+   "after": " tax credit accounting needs.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"sred-notice\"><strong>Gondaliya CPA does not prepare SR&amp;ED claims. This page explains how the SR&amp;ED program works, for general information only.</strong></p>\n<!-- /wp:paragraph -->",
+   "needs_sharad": false,
+   "note": "Informational notice per RULES.md, inserted as its own paragraph block"
+  },
+  {
+   "location": "Visible",
+   "section": "after Quick Comparison Table",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "<p>This service works best for incorporated SMBs in Canada and startups that want help with SR&amp;ED claims.</p>",
+   "after": "<p>SR&amp;ED help of this kind is typically used by incorporated SMBs in Canada and startups.</p>",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Your Options (SR&ED DIY vs CPA vs non-CPA)",
+   "editor": "post_content",
+   "action": "delete",
+   "before": "<p>For example, Gondaliya CPA offers fixed pricing plus CRA representation if you get audited. This keeps costs clear and lowers stress during reviews.</p>",
+   "after": "",
+   "needs_sharad": false,
+   "note": "Firm pricing/representation offer in the SR&ED options section. Leaves an empty paragraph block; remove the wp:paragraph comments around it in the editor if desired"
+  },
+  {
+   "location": "Visible",
+   "section": "H2 \"How the Service Works at Gondaliya CPA\"",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "How the Service Works at Gondaliya CPA</h2>",
+   "after": "How an SR&amp;ED Accounting Engagement Typically Works</h2>",
+   "needs_sharad": true,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "How it works: intro paragraph",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "<p>When you pick Gondaliya CPA for&nbsp;<a href=\"https://gondaliyacpa.ca/affordable-accounting-and-bookkeeping-services-for-startups-and-small-businesses/\" data-type=\"post\" data-id=\"31895\"><strong>accounting services</strong>&nbsp;and&nbsp;<strong>bookkeeping services</strong></a>&nbsp;with a focus on&nbsp;<strong>SR&amp;ED accounting</strong>, you get a clear, step-by-step process. It’s made for Canadian incorporated SMBs who want to claim incentives smoothly.</p>",
+   "after": "<p>An engagement for&nbsp;<a href=\"https://gondaliyacpa.ca/affordable-accounting-and-bookkeeping-services-for-startups-and-small-businesses/\" data-type=\"post\" data-id=\"31895\"><strong>accounting services</strong>&nbsp;and&nbsp;<strong>bookkeeping services</strong></a>&nbsp;with a focus on&nbsp;<strong>SR&amp;ED accounting</strong> usually follows a clear, step-by-step process for Canadian incorporated SMBs that want to claim incentives smoothly.</p>",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "How it works: What You Need To Do",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "<p>Working together lets Gondaliya CPAs prepare correct filings",
+   "after": "<p>Working together lets a CPA prepare correct filings",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Deliverables intro",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "We focus on making sure your documents are correct, claims are done right, filings happen on time, and you get support that fits your business.",
+   "after": "The focus is on making sure your documents are correct, claims are done right, filings happen on time, and support fits your business.",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Deliverables: Optimization Recommendations",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "Besides filing claims, we suggest ways to lower taxes legally.",
+   "after": "Besides filing claims, a consultant can suggest ways to lower taxes legally.",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Deliverables: Optimization Recommendations",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "<p>Here’s what we focus on:</p>",
+   "after": "<p>Typical focus areas:</p>",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Deliverables: Ongoing Monitoring",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "We update bookkeeping to fit new SR&amp;ED needs or financial reports.",
+   "after": "Bookkeeping should be updated to fit new SR&amp;ED needs or financial reports.",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Deliverables closing line",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "through ongoing help, this package gives Canadian SMBs",
+   "after": "through ongoing help, a full-service package gives Canadian SMBs",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Pricing section closing paragraph",
+   "editor": "post_content",
+   "action": "delete",
+   "before": "<p>Gondaliya CPA offers <a href=\"https://gondaliyacpa.ca/pricing-calculation/\" data-type=\"page\" data-id=\"28600\">fixed pricing</a> that stays the same each year for small and medium incorporated businesses across Canada. This means no surprise bills later on. We support clients from start to finish — checking claims, talking with CRA, making sure you get your credits without hidden costs.</p>",
+   "after": "",
+   "needs_sharad": false,
+   "note": "SR&ED pricing offer with /pricing-calculation/ link (\"We support clients from start to finish - checking claims, talking with CRA\"). Leaves an empty paragraph block"
+  },
+  {
+   "location": "Visible",
+   "section": "FAQ 2 (visible; no FAQ schema on this post)",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "<strong>How does Gondaliya CPA ensure CRA compliance in SR&amp;ED claims?</strong><br>We perform detailed eligibility assessments, expense categorization, and prepare claims following CRA rules. Our Registered CPAs offer audit support and defense.</p>",
+   "after": "<strong>How does Gondaliya CPA ensure CRA compliance in SR&amp;ED claims?</strong><br>Gondaliya CPA does not prepare SR&amp;ED claims. CRA compliance in an SR&amp;ED claim depends on detailed eligibility assessments, careful expense categorization, and a claim prepared following CRA rules.</p>",
+   "needs_sharad": false,
+   "note": "Answer offered SR&ED claim preparation and defence; question kept"
+  },
+  {
+   "location": "Visible",
+   "section": "Unique Advantages list",
+   "editor": "post_content",
+   "action": "delete",
+   "before": "<li>Detailed technical documentation supports SR&amp;ED claims.</li>\n",
+   "after": "",
+   "needs_sharad": false,
+   "note": "SR&ED claim support listed as a firm advantage"
+  },
+  {
+   "location": "Button",
+   "section": "closing CTA (question + paragraph with Schedule a free consultation link)",
+   "editor": "post_content",
+   "action": "delete",
+   "before": "<p>Ready to maximize your SR&amp;ED credits and reduce your tax burden?</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Our experienced CPA team is here to help you identify eligible expenses, ensure full CRA compliance, and implement smart accounting strategies that increase your tax savings. Whether you're a startup, tech company, or growing business, we provide clear guidance and reliable bookkeeping support tailored to your needs. <strong><a href=\"https://gondaliyacpa.ca/consultation/\">Schedule a free consultation today</a></strong> and discover how we can help you maximize your SR&amp;ED credits and tax savings.</p>",
+   "after": "",
+   "needs_sharad": false,
+   "note": "Pure SR&ED CTA; leaves empty paragraph blocks"
+  }
+ ],
+ "page_note": "Non-Elementor (block editor) post written as an SR&ED accounting service page. Generic descriptions of what a CPA-led SR&ED service does (third person) are kept as information. Other-service FAQs and lists (payroll, cross-border, incorporation) kept. No JSON-LD on this post."
+}

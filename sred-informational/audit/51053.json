@@ -1,0 +1,30 @@
+{
+ "id": 51053,
+ "url": "https://gondaliyacpa.ca/chemical-manufacturer-bookkeeping-canada/",
+ "title": "Chemical Manufacturer Bookkeeping Guide: How to Track Raw Materials, Production Costs, Inventory, Labour, and Manufacturing Expenses",
+ "type": "post",
+ "elementor": false,
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "Flat annual fee paragraph (We support incorporated producers...)",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "measures reviewed, SR&amp;ED assessment, GST/HST",
+   "after": "measures reviewed, GST/HST",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "JSON-LD",
+   "section": "Service schema description",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "eligibility, SR&ED assessment on formulation and process development, monthly",
+   "after": "eligibility, monthly",
+   "needs_sharad": false,
+   "note": ""
+  }
+ ],
+ "page_note": "Chemical manufacturer post. Informational SR&ED kept (equipment/M&P/SR&ED section, links to SR&ED pages with informational anchors, FAQ, tip, Bill C-15 note, author bio)."
+}

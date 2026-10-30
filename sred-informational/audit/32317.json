@@ -1,0 +1,130 @@
+{
+ "id": 32317,
+ "url": "https://gondaliyacpa.ca/technology-startups-saas-companies/",
+ "title": "Technology Startups &amp; SaaS Companies",
+ "type": "page",
+ "elementor": true,
+ "rows": [
+  {
+   "location": "Meta",
+   "section": "Meta description",
+   "editor": "rank_math",
+   "action": "replace",
+   "before": "SR&amp;ED claims, HST compliance &amp; corporate tax planning.",
+   "after": "HST compliance &amp; corporate tax planning.",
+   "needs_sharad": true,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Intro",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "manage corporate taxes, R&amp;D tax credits, subscription revenue reporting",
+   "after": "manage corporate taxes, subscription revenue reporting",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Intro paragraph 2",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "From corporate structuring and revenue recognition to SR&amp;ED tax credits and cross-border compliance, we ensure",
+   "after": "From corporate structuring and revenue recognition to cross-border compliance, we ensure",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Services grid - T2 card bullet",
+   "editor": "elementor",
+   "action": "delete",
+   "before": "<li>We prepare the SR&ED claim on Form T661 alongside your technology startup T2 return for qualifying experimental software development \\u2014 the 35% refundable ITC on the first $3 million in eligible expenditures can recover a significant portion of your developer salaries, cloud compute costs for R&D environments, and contractor development fees each fiscal year.<\\/li>\\r\\n        ",
+   "after": "",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Services grid - tax planning card bullet",
+   "editor": "elementor",
+   "action": "delete",
+   "before": "<li>We plan SR&ED claims within CRA's 18-month filing deadline and coordinate the timing with your tech startup's fiscal year-end to maximize the refundable ITC \\u2014 for CCPCs with taxable capital under $10 million, the 35% refundable rate applies to the first $3 million in qualifying expenditures, and we ensure your claim captures all eligible developer time, cloud R&D compute, and contractor costs.<\\/li>\\r\\n        ",
+   "after": "",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Services grid - catch-up card bullet",
+   "editor": "elementor",
+   "action": "replace",
+   "before": " We prioritize catch-up T2 returns where the 18-month window has not yet closed to recover those credits before the deadline passes.",
+   "after": "",
+   "needs_sharad": false,
+   "note": "SR&ED deadline fact stays; offer to recover SR&ED credits dropped"
+  },
+  {
+   "location": "Visible",
+   "section": "Services grid - amended returns bullet",
+   "editor": "elementor",
+   "action": "delete",
+   "before": "<li>We correct misclassified SR&ED expenditures where your previous accountant lumped qualifying development labour with general operating expenses on prior T2 returns \\u2014 properly separating eligible costs and filing amended Form T661 claims recovers SR&ED refunds that were never claimed for each affected fiscal year within the 18-month deadline.<\\/li>\\r\\n        ",
+   "after": "",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Services grid - CRA audit card bullet",
+   "editor": "elementor",
+   "action": "delete",
+   "before": "<li>We defend SR&ED claims during a CRA audit on your SaaS corporation by presenting Form T661 project descriptions, developer time-tracking records, Git commit history, sprint documentation, and evidence of technological uncertainty \\u2014 CRA denies SR&ED when no contemporaneous records support the qualifying experimental software development work claimed.<\\/li>\\r\\n        ",
+   "after": "",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Services grid - CRA audit card bullet",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "support your tech startup's SR&ED claim, subscription revenue treatment, and expense deductions",
+   "after": "support your tech startup's subscription revenue treatment and expense deductions",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Case studies - \"Early-Stage Tech Startup, Mississauga\" card",
+   "editor": "manual",
+   "action": "manual",
+   "before": "Early-Stage Tech Startup, Mississauga",
+   "after": "",
+   "needs_sharad": false,
+   "note": "Heading widget \"Early-Stage Tech Startup, Mississauga\" + text-editor widget (case-study-card: \"Problem: Startup was unsure how to claim R&D expenses... Solution: Reviewed development activities and structured SR&ED claim with proper documentation. Results: Increased tax credits...\") in the Case Studies row. Delete both widgets (or the card container) in Elementor."
+  },
+  {
+   "location": "Visible",
+   "section": "FAQ (accordion item #1)",
+   "editor": "elementor",
+   "action": "replace",
+   "before": " We help identify qualifying expenses, prepare documentation, and submit claims.",
+   "after": "",
+   "needs_sharad": false,
+   "note": "Eligibility sentence stays"
+  },
+  {
+   "location": "JSON-LD",
+   "section": "Service schema description",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "in Toronto and Ontario, including SR&ED claims, subscription revenue recognition",
+   "after": "in Toronto and Ontario, including subscription revenue recognition",
+   "needs_sharad": false,
+   "note": "Service schema stays for the startup/SaaS accounting service; SR&ED removed from it"
+  }
+ ],
+ "page_note": "Technology startups & SaaS industry page (Elementor). SR&ED offered in intro, services grid bullets (prepare T661, plan claims, amend T661, defend in audit), case study, FAQ, Service schema and Rank Math description. Rows strip offer items; informational SR&ED lines (grant netting, bookkeeping separation of eligible costs, CCPC rate, NTR receivables/notes, deadline fact, OIDMTC coordination) stay. Meta description flagged needs_sharad."
+}

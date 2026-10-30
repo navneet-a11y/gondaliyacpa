@@ -1,0 +1,30 @@
+{
+  "id": 26791,
+  "url": "https://gondaliyacpa.ca/how-professional-accounting-and-bookkeeping-services-can-maximize-your-tax-savings/",
+  "title": "How Professional Accounting and Bookkeeping Services Can Maximize Your Tax Savings",
+  "type": "post",
+  "elementor": false,
+  "rows": [
+    {
+      "location": "Visible",
+      "section": "\"Extras\" list (add-on services)",
+      "editor": "post_content",
+      "action": "delete",
+      "before": "<!-- wp:list-item -->\n<li>SR&amp;ED Credit Claims: Help to <a href=\"https://gondaliyacpa.ca/claiming-sred-tax-credits-what-canadian-businesses-need-to-know/\" data-type=\"post\" data-id=\"18000\">claim Scientific Research &amp; Experimental Development credits</a>.</li>\n<!-- /wp:list-item -->\n\n",
+      "after": "",
+      "needs_sharad": false,
+      "note": "Add-on service item offering SR&ED claims; whole list-item block removed (includes line breaks). Removes one internal link to the SR&ED blog guide."
+    },
+    {
+      "location": "Visible",
+      "section": "FAQ \"Do you assist with SR&ED credit claims?\" answer",
+      "editor": "post_content",
+      "action": "replace",
+      "before": "Our experts guide you through <a href=\"https://gondaliyacpa.ca/claiming-sred-tax-credits-what-canadian-businesses-need-to-know/\" data-type=\"post\" data-id=\"18000\">claiming SR&amp;ED credits</a> accurately to maximize tax benefits.",
+      "after": "No. Gondaliya CPA does not prepare SR&amp;ED claims. Our guide explains <a href=\"https://gondaliyacpa.ca/claiming-sred-tax-credits-what-canadian-businesses-need-to-know/\" data-type=\"post\" data-id=\"18000\">claiming SR&amp;ED credits</a>.",
+      "needs_sharad": false,
+      "note": "Question kept; answer rewritten; link kept. No FAQPage JSON-LD in this post."
+    }
+  ],
+  "page_note": "Accounting/bookkeeping tax savings post. Add-on service item and FAQ answer offering SR&ED claims rewritten. Generic mentions (paperwork needs, accountants spot credits like SR&ED, mistakes tables) kept as informational."
+}

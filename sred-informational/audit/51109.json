@@ -1,0 +1,50 @@
+{
+ "id": 51109,
+ "url": "https://gondaliyacpa.ca/e-learning-platform-tax-deductions-canada/",
+ "title": "Tax Deductions for E-Learning Platforms in Canada: What Online Education Businesses Can Legally Claim",
+ "type": "post",
+ "elementor": false,
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "Flat annual fee paragraph (We support incorporated platforms...)",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "reviewed, SR&amp;ED assessment, instructor classification",
+   "after": "reviewed, instructor classification",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "We handle what decides the outcome paragraph",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "the correct classes, assessing SR&amp;ED on technology work only, and classifying instructors",
+   "after": "the correct classes, and classifying instructors",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Closing paragraph (Gondaliya CPA confirms...)",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "the correct classes, assesses SR&amp;ED on technology work only and classifies instructors",
+   "after": "the correct classes and classifies instructors",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "JSON-LD",
+   "section": "Service schema description",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "incentive, SR&ED assessment on platform technology with development documentation, instructor",
+   "after": "incentive, instructor",
+   "needs_sharad": false,
+   "note": ""
+  }
+ ],
+ "page_note": "E-learning post. Informational SR&ED kept (SR&ED on platform technology section and link, mistakes list, FAQ, checklist tips, glossary, Bill C-15 note, author bio)."
+}

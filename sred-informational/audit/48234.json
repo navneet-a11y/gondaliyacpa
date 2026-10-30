@@ -1,0 +1,410 @@
+{
+ "id": 48234,
+ "url": "https://gondaliyacpa.ca/how-healthcare-practices-can-maximize-sred-tax-credits/",
+ "title": "How Healthcare Practices Can Maximize SR&amp;ED Tax Credits and Recover Eligible Innovation Costs",
+ "type": "post",
+ "elementor": false,
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "intro paragraph",
+   "editor": "post_content",
+   "action": "replace",
+   "before": " Gondaliya CPA provides expert guidance on Form T661, systematic investigation criteria, and CRA review to maximize",
+   "after": " The key areas are Form T661, systematic investigation criteria, and CRA review, which together maximize",
+   "needs_sharad": false,
+   "note": "Sentence now: \"The key areas are Form T661, systematic investigation criteria, and CRA review, which together maximize healthcare SR&ED tax credits and medical R&D benefits.\""
+  },
+  {
+   "location": "Visible",
+   "section": "after intro paragraph",
+   "editor": "post_content",
+   "action": "insert_after",
+   "before": " healthcare SR&amp;ED tax credits and medical R&amp;D benefits.</p>",
+   "after": " healthcare SR&amp;ED tax credits and medical R&amp;D benefits.</p>\n<p class=\"sred-notice\"><strong>Gondaliya CPA does not prepare SR&amp;ED claims. This page explains how the SR&amp;ED program works, for general information only.</strong></p>",
+   "needs_sharad": false,
+   "note": "Informational notice per RULES.md"
+  },
+  {
+   "location": "Visible",
+   "section": "author box (top)",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "He leads a Toronto-based team providing corporate tax, SR&amp;ED claims, bookkeeping",
+   "after": "He leads a Toronto-based team providing corporate tax, bookkeeping",
+   "needs_sharad": true,
+   "note": "Author bio lists SR&ED claims as a firm service"
+  },
+  {
+   "location": "Visible",
+   "section": "section 3 \"Text CTA\" paragraph",
+   "editor": "post_content",
+   "action": "delete",
+   "before": "<p>Text CTA: For expert guidance navigating your healthcare practice's SR&amp;ED claim process&mdash;including precise identification of qualifying projects&mdash;contact Gondaliya CPA today at 647&#8209;212&#8209;9559 or info@gondaliyacpa.ca for a free consultation focused on maximizing your medical R&amp;D tax credits without surprises.</p>\n",
+   "after": "",
+   "needs_sharad": false,
+   "note": "Free consultation phone/email CTA"
+  },
+  {
+   "location": "Visible",
+   "section": "section 4 Pre-Claim Consultation: firm offer + contact paragraphs",
+   "editor": "post_content",
+   "action": "delete",
+   "before": "<p>Gondaliya CPA offers fixed-fee consultations tailored for Ontario clinics working on health tech innovations. This helps clients make smart choices based on current CRA rules.</p>\n<p>Contact Gondaliya CPA today at 647&#8209;212&#8209;9559 or info@gondaliyacpa.ca for a free chat about making sure your healthcare practice gets the right Canadian innovation tax credits through proper SR&amp;ED claims.</p>\n",
+   "after": "",
+   "needs_sharad": false,
+   "note": "Fixed-fee consultations offer and free chat CTA; the list of pre-claim benefits above stays"
+  },
+  {
+   "location": "Visible",
+   "section": "section 4 \"Suggested internal links\" line",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "<a class=\"wpil_keyword_link\" href=\"https://gondaliyacpa.ca/contact-us/\" title=\"CRA representation\">CRA representation</a> &rarr; <a class=\"wpil_keyword_link\" href=\"https://gondaliyacpa.ca/consultation/\" title=\"Service areas\">Service Areas</a>",
+   "after": "CRA representation &rarr; Service Areas",
+   "needs_sharad": false,
+   "note": "Unlinks the /contact-us/ and /consultation/ links (CTAs on a dedicated URL); text kept"
+  },
+  {
+   "location": "Visible",
+   "section": "section 5 provincial stacking",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "<p>Gondaliya CPA helps clients handle both filings right and follows each level's reporting rules",
+   "after": "<p>Handle both filings right and follow each level's reporting rules",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "section 5 case studies intro",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "<p>Our experience shows that knowing how to prepare claims speeds up",
+   "after": "<p>Knowing how to prepare claims speeds up",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "section 5 case study (medical device)",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "<p>We found qualifying work improving sensor accuracy by using design notes and test results submitted via updated Form T661 narratives. These matched CRA rules closely<sup style=\"font-size:11px;color:#5a6b7b;\">[6]</sup>. We adjusted overhead costs using optimized proxy methods fit for startups partly funded through university deals, lowering net claimable expenses per assistance rules.</p>",
+   "after": "<p>Qualifying work improving sensor accuracy was supported by design notes and test results submitted via updated Form T661 narratives. These matched CRA rules closely<sup style=\"font-size:11px;color:#5a6b7b;\">[6]</sup>. Overhead costs were adjusted using optimized proxy methods fit for startups partly funded through university deals, lowering net claimable expenses per assistance rules.</p>",
+   "needs_sharad": false,
+   "note": "Removes \"We found/We adjusted\" (firm sales proof); example kept"
+  },
+  {
+   "location": "Visible",
+   "section": "section 5 case studies conclusion",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "<p>These examples show why an SR&amp;ED accountant Canada trusts us &mdash; we help get maximum refunds while reducing audit risks with solid record checks plus clear technical stories showing real advances.",
+   "after": "<p>These examples show how solid record checks plus clear technical stories showing real advances reduce audit risks.",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "section 5 case studies closing line",
+   "editor": "post_content",
+   "action": "delete",
+   "before": "<p>Clients get full help during preparation including interviews about projects and support after filing if CRA reviews happen locally around Toronto/Ontario where we work a lot.</p>\n",
+   "after": "",
+   "needs_sharad": false,
+   "note": "Firm offer; nothing informational"
+  },
+  {
+   "location": "Visible",
+   "section": "section 6 H5",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "How Gondaliya CPA Supports Healthcare Clients Through the Entire Claim Process</h5>",
+   "after": "What Full Claim Support Involves</h5>",
+   "needs_sharad": true,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "section 6 firm support paragraph",
+   "editor": "post_content",
+   "action": "delete",
+   "before": "<p>Gondaliya CPA helps healthcare clients every step of the way when filing SR&amp;ED for healthcare Canada claims. They start by checking if you qualify, then guide you through filing till the end. Their team works with clinics and medical tech companies focused on healthcare innovation.</p>\n",
+   "after": "",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "section 6 list intro",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "<p>Here's what they do:</p>",
+   "after": "<p>Full claim support typically covers:</p>",
+   "needs_sharad": false,
+   "note": "List items kept as neutral description"
+  },
+  {
+   "location": "Visible",
+   "section": "section 6 representation/fees paragraph",
+   "editor": "post_content",
+   "action": "delete",
+   "before": "<p>Clients get updates throughout CRA reviews. Gondaliya CPA offers representation to handle financial checks and technical audits smoothly. They charge fixed prices yearly&mdash;no surprise fees&mdash;and are available on weekends or evenings in Toronto areas like Etobicoke or Vaughan. This mix of expertise and service makes claiming easier.</p>\n",
+   "after": "",
+   "needs_sharad": false,
+   "note": "Representation offer, fixed yearly prices, availability"
+  },
+  {
+   "location": "Visible",
+   "section": "section 6 H5",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "Contact Information and Steps for a Free Eligibility Assessment</h5>",
+   "after": "Steps for an Eligibility Assessment</h5>",
+   "needs_sharad": true,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "section 6 free check offer + phone/email",
+   "editor": "post_content",
+   "action": "delete",
+   "before": "<p>Want to see if your practice can claim healthcare SR&amp;ED tax credits in Canada? Gondaliya CPA offers a free check with no pressure:</p>\n<p>Phone: 647&#8209;212&#8209;9559<br />\nEmail: info@gondaliyacpa.ca</p>\n",
+   "after": "",
+   "needs_sharad": false,
+   "note": "Free check offer and contact details"
+  },
+  {
+   "location": "Visible",
+   "section": "section 6 assessment steps intro",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "<p>Here's how it works:</p>",
+   "after": "<p>An eligibility assessment usually works like this:</p>",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "section 6 Additional Services intro",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "<p>Gondaliya CPA does more than just help with SR&amp;ED accounting across Canada including",
+   "after": "<p>Gondaliya CPA also offers these services across Canada including",
+   "needs_sharad": false,
+   "note": "Other services stay; drops the implication that the firm does SR&ED accounting"
+  },
+  {
+   "location": "Visible",
+   "section": "section 6 Additional Services list (bookkeeping)",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "Keeps clean records that separate R&amp;D costs properly; helps decide best overhead methods based on your case.",
+   "after": "Keeps clean records that separate R&amp;D costs properly.",
+   "needs_sharad": false,
+   "note": "Drops SR&ED overhead-method advice from the service description"
+  },
+  {
+   "location": "Visible",
+   "section": "section 6 internal links list",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "<li><a class=\"wpil_keyword_link\" href=\"https://gondaliyacpa.ca/contact-us/\" title=\"CRA representation\">CRA Representation &ndash; anchor \"CRA representation\"</a></li>",
+   "after": "<li>CRA Representation &ndash; anchor \"CRA representation\"</li>",
+   "needs_sharad": false,
+   "note": "Unlinks /contact-us/ (CTA on a dedicated URL)"
+  },
+  {
+   "location": "JSON-LD",
+   "section": "FAQPage: Does Gondaliya CPA serve ... for SRandED claims?",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "\"text\": \"Yes, Gondaliya CPA specializes in helping healthcare providers across Toronto and Ontario with tailored SRandED tax credit services.\"",
+   "after": "\"text\": \"No. Gondaliya CPA does not prepare SRandED claims. This article explains how SRandED works for healthcare providers across Toronto and Ontario, for general information only.\"",
+   "needs_sharad": false,
+   "note": "Same rewrite as the visible FAQ answer"
+  },
+  {
+   "location": "Visible",
+   "section": "Key Points closing CTA paragraph",
+   "editor": "post_content",
+   "action": "delete",
+   "before": "<p>For precise guidance on these complex topics, contact Gondaliya CPA at 647&#8209;212&#8209;9559 or info@gondaliyacpa.ca to maximize your medical R&amp;D tax credits effectively.</p>\n",
+   "after": "",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Guidance H2",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "<h2>Professional Guidance on Healthcare SR&amp;ED: How Gondaliya CPA Supports Canadian Innovators</h2>",
+   "after": "<h2>Professional Guidance on Healthcare SR&amp;ED: What Decides the Outcome</h2>",
+   "needs_sharad": true,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Guidance paragraph 1",
+   "editor": "post_content",
+   "action": "replace",
+   "before": " Gondaliya CPA sets that up before the year ends and prepares the claim on a fixed fee.</p>",
+   "after": "</p>",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Guidance paragraph 2",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "<p>We handle what decides the outcome: separating",
+   "after": "<p>What decides the outcome: separating",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Guidance paragraph 3",
+   "editor": "post_content",
+   "action": "delete",
+   "before": "<p>Our team works from your own project records rather than a template, and will tell you plainly which work qualifies and which does not. Whether this is a first claim or a fifth, you get clear advice and a fixed price before we start.</p>\n",
+   "after": "",
+   "needs_sharad": false,
+   "note": "Firm offer + fixed price"
+  },
+  {
+   "location": "Visible",
+   "section": "closing H2",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "Medical R&amp;D Tax Benefits with Gondaliya CPA</h2>",
+   "after": "Medical R&amp;D Tax Benefits</h2>",
+   "needs_sharad": true,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Next Steps paragraph",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "<p>Please book a free consultation with Gondaliya CPA and bring a short description of what you built or tried to build, whatever project notes exist, and your last T2 return. That is usually enough to tell you whether a claim is worth preparing. You will get a fixed fee before any work begins.",
+   "after": "<p>Before preparing a claim, gather a short description of what you built or tried to build, whatever project notes exist, and your last T2 return. That is usually enough to show whether a claim is worth preparing.",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "author box (bottom)",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "medical technology companies with SR&amp;ED claims, corporate tax,",
+   "after": "medical technology companies with corporate tax,",
+   "needs_sharad": true,
+   "note": ""
+  },
+  {
+   "location": "Button",
+   "section": "mid-article CTA banner #1",
+   "editor": "post_content",
+   "action": "delete",
+   "before": "<div class=\"gcpa-banner\">\n<div class=\"bt\">Building software, devices or new methods in your practice? The eligibility check is free.</div>\n<div class=\"bb\"><a class=\"solid\" href=\"https://gondaliyacpa.ca/consultation/\">Book Free Consultation</a><a href=\"mailto:info@gondaliyacpa.ca\">info@gondaliyacpa.ca</a><a href=\"tel:+16472129559\">647-212-9559</a></div>\n</div>\n",
+   "after": "",
+   "needs_sharad": false,
+   "note": "Banner: \"\nBuilding software, devices or new methods in your practice? The eligibility check is free.\" + Book Free Consultation / mailto / tel buttons"
+  },
+  {
+   "location": "Visible",
+   "section": "self-check widget (result panel)",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "<b>Points to raise with us:</b>",
+   "after": "<b>Points to raise:</b>",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "self-check widget (result panel)",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "<b>Worth reviewing with us:</b>",
+   "after": "<b>Worth reviewing:</b>",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "self-check widget (result panel)",
+   "editor": "post_content",
+   "action": "replace",
+   "before": " A free review can confirm which projects and costs actually qualify.</p>",
+   "after": "</p>",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Button",
+   "section": "self-check widget (result panel)",
+   "editor": "post_content",
+   "action": "delete",
+   "before": "\n        <a class=\"p-cta\" href=\"https://gondaliyacpa.ca/consultation/\">Book a free consultation</a>",
+   "after": "",
+   "needs_sharad": false,
+   "note": "\"Book a free consultation\" button"
+  },
+  {
+   "location": "Visible",
+   "section": "self-check widget (note)",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "For a real review, please book a free consultation.</p>",
+   "after": "For a real review, please consult a licensed CPA.</p>",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "checklist download line",
+   "editor": "post_content",
+   "action": "replace",
+   "before": " before your consultation.</p>",
+   "after": ".</p>",
+   "needs_sharad": false,
+   "note": "Keeps the checklist link; drops the consultation reference"
+  },
+  {
+   "location": "Visible",
+   "section": "\"why choose us\" image (before Verdict callout)",
+   "editor": "post_content",
+   "action": "delete",
+   "before": "<figure style=\"margin:18px 0;\"><img src=\"https://gondaliyacpa.ca/wp-content/uploads/2026/08/why-gondaliya-cpa-healthcare-sred.png\" alt=\"Why Canadian healthcare innovators choose Gondaliya CPA for SR&amp;ED claims\" style=\"width:100%;border-radius:12px;border:1px solid #d8e0e8;\" /><figcaption style=\"font-size:13px;color:#5a6b7b;text-align:center;padding:6px;\">Why Canadian healthcare innovators choose us.</figcaption></figure>\n",
+   "after": "",
+   "needs_sharad": false,
+   "note": "Sales-proof image: alt \"Why Canadian healthcare innovators choose Gondaliya CPA for SR&amp;ED claims\""
+  },
+  {
+   "location": "Button",
+   "section": "closing CTA box",
+   "editor": "post_content",
+   "action": "delete",
+   "before": "<div class=\"gcpa-cta\">\n<h4>Recover what the innovation actually cost</h4>\n<p>Gondaliya CPA identifies which projects qualify, sets up the time tracking and records the CRA will ask for, writes the Form T661 narrative, prepares Schedule T2SCH31 and the Ontario Innovation Tax Credit claim, and represents you through any technical or financial review, on a fixed fee with a one-business-day response. Please book a free consultation.</p>\n<div class=\"gcpa-trust\"><span>1450+ 5-star Google reviews</span><span>CPA Ontario Registered Firm</span><span>Fixed-Fee Pricing</span><span>Clinics, Labs &amp; Medical Technology</span></div>\n<div class=\"gcpa-btnrow\"><a class=\"solid\" href=\"https://gondaliyacpa.ca/consultation/\">Book Free Consultation</a><a href=\"tel:+16472129559\">647-212-9559</a><a href=\"mailto:info@gondaliyacpa.ca\">info@gondaliyacpa.ca</a></div>\n</div>\n",
+   "after": "",
+   "needs_sharad": false,
+   "note": "CTA box: H4 \"Recover what the innovation actually cost\", offer paragraph (firm prepares/defends the claim, fixed fee, book a free consultation), trust strip (1450+ reviews ...), Book/tel/mailto buttons"
+  },
+  {
+   "location": "JSON-LD",
+   "section": "Service schema node",
+   "editor": "post_content",
+   "action": "delete",
+   "before": ",\n    {\n      \"@type\": \"Service\",\n      \"name\": \"SR and ED Claims for Healthcare Canada\",\n      \"serviceType\": \"Eligibility assessment, project identification and grouping, technical narrative preparation, Form T661 and Schedule T2SCH31 filing, Ontario Innovation Tax Credit claims, CRA review representation\",\n      \"provider\": { \"@id\": \"https://gondaliyacpa.ca/#organization\" },\n      \"areaServed\": \"CA\",\n      \"audience\": { \"@type\": \"Audience\", \"audienceType\": \"Canadian incorporated healthcare practices, clinics, laboratories and medical technology companies\" }\n    }",
+   "after": "",
+   "needs_sharad": false,
+   "note": "Service node with provider = Gondaliya CPA for SR&ED claim work; removed with its leading comma (Article/FAQPage/HowTo kept)"
+  }
+ ],
+ "page_note": "Non-Elementor post. FAQ (visible + JSON-LD): one answer offering SR&ED services rewritten in both places; others informational. Rank Math title/description informational."
+}

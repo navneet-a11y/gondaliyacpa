@@ -256,6 +256,16 @@
    "note": "Author bio lists SR&ED claims as a firm service"
   },
   {
+   "location": "Visible",
+   "section": "self-check widget script (result list text)",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "the single weakest point in most claims we review');",
+   "after": "the single weakest point in most claims');",
+   "needs_sharad": false,
+   "note": "JS string shown to the visitor; drops \"we review\""
+  },
+  {
    "location": "Button",
    "section": "mid-article CTA banner #1",
    "editor": "post_content",

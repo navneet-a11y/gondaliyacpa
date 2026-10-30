@@ -29,7 +29,7 @@
       "location": "Visible",
       "section": "Testimonials intro",
       "editor": "post_content",
-      "action": "replace",
+      "action": "delete",
       "before": " while maximizing credits such as SR&amp;ED refunds during product development phases",
       "after": "",
       "needs_sharad": false,

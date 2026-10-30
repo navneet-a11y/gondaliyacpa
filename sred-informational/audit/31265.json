@@ -1,0 +1,20 @@
+{
+ "id": 31265,
+ "url": "https://gondaliyacpa.ca/digital-marketing-agencies/",
+ "title": "Digital Marketing Agencies",
+ "type": "page",
+ "elementor": true,
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "Services grid - tax planning card bullet",
+   "editor": "elementor",
+   "action": "delete",
+   "before": "<li>We advise digital marketing agency owners on SR&ED eligibility for experimental development of proprietary marketing automation tools or internal software \\u2014 the 35% refundable ITC on the first $3 million in qualified expenditures can recover a significant portion of your agency's development costs.<\\/li>\\r\\n",
+   "after": "",
+   "needs_sharad": false,
+   "note": "Bullet offering SR&ED eligibility advice"
+  }
+ ],
+ "page_note": "Digital marketing agencies industry page (Elementor). Single SR&ED mention: a services-grid bullet where the firm advises on SR&ED eligibility. Deleted."
+}

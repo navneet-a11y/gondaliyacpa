@@ -1,0 +1,20 @@
+{
+ "id": 31877,
+ "url": "https://gondaliyacpa.ca/best-tax-accountants-for-corporate-tax-filing-in-toronto/",
+ "title": "Best Tax Accountants for Corporate Tax Filing in Toronto",
+ "type": "post",
+ "elementor": true,
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "#1 Gondaliya CPA services list",
+   "editor": "elementor",
+   "action": "delete",
+   "before": "<li><a class=\\\"wpil_keyword_link\\\" href=\\\"https:\\/\\/gondaliyacpa.ca\\/claiming-sred-tax-credits-what-canadian-businesses-need-to-know\\/\\\"   title=\\\"SR&amp;ED Tax Credits\\\" data-wpil-keyword-link=\\\"linked\\\"  data-wpil-monitor-id=\\\"4700\\\">SR&ED Tax Credits<\\/a><\\/li>",
+   "after": "",
+   "needs_sharad": true,
+   "note": "\"SR&ED Tax Credits\" listed among the firm's services (linked to an SR&ED blog post). Best-of ranking post, treated like the Best page."
+  }
+ ],
+ "page_note": "Best tax accountants for corporate tax filing in Toronto (ranking post built from the ranking template). Single SR&ED mention: in Gondaliya CPA's services list."
+}

@@ -1,0 +1,30 @@
+{
+ "id": 35004,
+ "url": "https://gondaliyacpa.ca/?elementor_library=sharadcpa",
+ "title": "sharadcpa",
+ "type": "elementor_library",
+ "elementor": true,
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "Author bio text",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "Trust and Estate Tax Returns (T3), and SR&ED Tax Credit Claims.",
+   "after": "and Trust and Estate Tax Returns (T3).",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "\"Sharad Gondaliya's Professional Tax & Accounting Services\" grid - SR&ED icon box",
+   "editor": "manual",
+   "action": "manual",
+   "before": "SR&ED Tax Credit Claims",
+   "after": "",
+   "needs_sharad": false,
+   "note": "ElementsKit icon box widget (title \"SR&ED Tax Credit Claims \", badge \"EXCLUSIVE\", text \"Maximize your R&D incentives with accurate Scientific Research & Experimental Development (SR&ED) claims.\", links to /sred-tax-credit-claims/) in the services grid. Delete the widget in the Elementor editor."
+  }
+ ],
+ "page_note": "Elementor library template \"sharadcpa\" (Sharad author/profile block). Offers SR&ED claims in the bio text and as an icon box in the services grid. Template is reused wherever inserted."
+}

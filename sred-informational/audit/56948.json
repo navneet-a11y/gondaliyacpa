@@ -1,0 +1,290 @@
+{
+ "id": 56948,
+ "url": "https://gondaliyacpa.ca/product-design-studio-tax-credits-canada/",
+ "title": "Product Design Studio Tax Credits in Canada: SR&amp;ED, Prototyping &amp; Product Development Incentives",
+ "type": "post",
+ "elementor": false,
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "intro H3 under H1",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "and Development Incentives with Gondaliya CPA</h3>",
+   "after": "and Development Incentives</h3>",
+   "needs_sharad": true,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "intro paragraph",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "decade. Gondaliya CPA helps <a class=\"wpil_keyword_link\"",
+   "after": "decade. This guide helps <a class=\"wpil_keyword_link\"",
+   "needs_sharad": false,
+   "note": "Sentence now: \"This guide helps product design studios work out which parts of a project actually qualify...\""
+  },
+  {
+   "location": "Visible",
+   "section": "after intro paragraph",
+   "editor": "post_content",
+   "action": "insert_after",
+   "before": "a deadline that carries no relief for missing it.</p>",
+   "after": "a deadline that carries no relief for missing it.</p>\n<p class=\"sred-notice\"><strong>Gondaliya CPA does not prepare SR&amp;ED claims. This page explains how the SR&amp;ED program works, for general information only.</strong></p>",
+   "needs_sharad": false,
+   "note": "Informational notice per RULES.md"
+  },
+  {
+   "location": "Visible",
+   "section": "Our Actual Experience (deadline)",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "<p>A studio came to us nineteen months after its year end",
+   "after": "<p>A studio looked at its claim nineteen months after its year end",
+   "needs_sharad": false,
+   "note": "Drops \"came to us\" (implies the firm takes SR&ED claims)"
+  },
+  {
+   "location": "Visible",
+   "section": "Our Actual Experience (hinge mechanism)",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "<p>A studio brought us a claim prepared elsewhere covering",
+   "after": "<p>A studio had a claim prepared covering",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Our Actual Experience (hinge mechanism)",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "We filed the three weeks, it was accepted",
+   "after": "Only the three weeks were filed, the claim was accepted",
+   "needs_sharad": false,
+   "note": "Removes \"We filed\" (firm filing SR&ED claims)"
+  },
+  {
+   "location": "Visible",
+   "section": "Our Actual Experience (four years back)",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "<p>A studio asked us to go back four years and recover",
+   "after": "<p>A studio wanted to go back four years and recover",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Our Actual Experience (four years back)",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "One year was still inside the eighteen months and we filed it.",
+   "after": "One year was still inside the eighteen months and was filed.",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "industries intro",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "decide every SR&amp;ED claim we touch.",
+   "after": "decide every SR&amp;ED claim.",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Guidance: common-mistakes paragraph",
+   "editor": "post_content",
+   "action": "replace",
+   "before": " Gondaliya CPA handles product design studio accounting and SR&amp;ED on a flat annual fee.</p>",
+   "after": " Gondaliya CPA handles product design studio accounting on a flat annual fee.</p>",
+   "needs_sharad": false,
+   "note": "Drops SR&ED from the firm's flat-fee services"
+  },
+  {
+   "location": "Visible",
+   "section": "Guidance H5",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "How Gondaliya CPA Supports Product Design Businesses with SR&amp;ED</h5>",
+   "after": "What a Defensible Product Design SR&amp;ED Claim Involves</h5>",
+   "needs_sharad": true,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Guidance: firm support paragraph",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "<p>We assess eligibility first and tell you plainly where a project does not qualify, because an overstated claim costs more than an unclaimed one. Where it does qualify we carve out the eligible work, build the expenditure pool with the reductions under subsection <strong>127(18)</strong> applied correctly, prepare the T661 and Schedule 31, and file with the T2 inside the reporting deadline. If a technical or financial review opens, we represent you through it.</p>",
+   "after": "<p>Assess eligibility first and be plain about where a project does not qualify, because an overstated claim costs more than an unclaimed one. Where it does qualify, carve out the eligible work, build the expenditure pool with the reductions under subsection <strong>127(18)</strong> applied correctly, prepare the T661 and Schedule 31, and file with the T2 inside the reporting deadline.</p>",
+   "needs_sharad": false,
+   "note": "\"We assess/carve/prepare/file/represent\" rewritten as neutral steps"
+  },
+  {
+   "location": "Visible",
+   "section": "Guidance H5",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "Expert Eligibility Assessments Tailored to Product Design Studios</h5>",
+   "after": "Eligibility Questions for Product Design Studios</h5>",
+   "needs_sharad": true,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Guidance H5",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "Comprehensive Claim Preparation, Filing, and Audit Support Services</h5>",
+   "after": "Reconciling the Claim to the Books</h5>",
+   "needs_sharad": true,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Guidance: fee paragraph",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "<p>A flat annual fee including HST, agreed in writing before any work begins, covering bookkeeping, the T2, the SR&amp;ED claim and routine CRA correspondence. Integrating the bookkeeping matters here more than in most engagements, because the claim has to reconcile to the general ledger and the payroll records line by line.</p>",
+   "after": "<p>The claim has to reconcile to the general ledger and the payroll records line by line, which is why integrated bookkeeping matters more here than in most engagements.</p>",
+   "needs_sharad": false,
+   "note": "Drops the flat-fee SR&ED package; keeps the reconciliation point"
+  },
+  {
+   "location": "Visible",
+   "section": "Guidance H5",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "Encouragement To Contact Gondaliya CPA For Personalized Consultation And Assistance With Maximizing Product Development Tax Credits</h5>",
+   "after": "Watch the Eighteen-Month Deadline</h5>",
+   "needs_sharad": true,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Guidance: contact paragraph",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "<p>Reach us at <strong>647-212-9559</strong> or <strong>info@gondaliyacpa.ca</strong>, with a one-business-day response. If you have a year end approaching eighteen months, say so first &mdash;",
+   "after": "<p>If you have a year end approaching eighteen months, deal with it first &mdash;",
+   "needs_sharad": false,
+   "note": "Drops phone/email/response time; keeps the deadline warning"
+  },
+  {
+   "location": "Visible",
+   "section": "closing H2",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "<h2>Product Design Studio Tax Credits Canada: How Gondaliya CPA Can Help</h2>",
+   "after": "<h2>Product Design Studio Tax Credits Canada: Getting Ready to Claim</h2>",
+   "needs_sharad": true,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Next Steps paragraph",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "<p>Please book a free consultation with Gondaliya CPA and bring three things: a list of the projects worked on in the year, whatever time records exist for them, and your fiscal year-end date. The third of those tells us immediately how much time is left, and on a year that closed more than a year ago that is the only question that matters. If any of the work was funded by a client or a grant, bring those agreements too, because the reductions change the arithmetic more than the rate does. You will get a flat annual fee including HST before any work begins. We serve Toronto, Mississauga, Vaughan, Brampton, Etobicoke, Scarborough, Ottawa and the rest of Ontario, and work with studios across Canada.",
+   "after": "<p>Before preparing a claim, gather three things: a list of the projects worked on in the year, whatever time records exist for them, and your fiscal year-end date. The third of those shows how much time is left, and on a year that closed more than a year ago that is the only question that matters. If any of the work was funded by a client or a grant, gather those agreements too, because the reductions change the arithmetic more than the rate does.",
+   "needs_sharad": false,
+   "note": "Keeps the preparation list; drops consultation, fee and service-area lines"
+  },
+  {
+   "location": "Visible",
+   "section": "self-check widget (result panel)",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "<b>Points to raise with us:</b>",
+   "after": "<b>Points to raise:</b>",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "self-check widget (result panel)",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "<b>Worth reviewing with us:</b>",
+   "after": "<b>Worth reviewing:</b>",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "self-check widget (result panel)",
+   "editor": "post_content",
+   "action": "replace",
+   "before": " A free review can confirm nothing is being missed.</p>",
+   "after": "</p>",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Button",
+   "section": "self-check widget (result panel)",
+   "editor": "post_content",
+   "action": "delete",
+   "before": "\n    <a class=\"p-cta\" href=\"https://gondaliyacpa.ca/consultation/\">Book a free consultation</a>",
+   "after": "",
+   "needs_sharad": false,
+   "note": "\"Book a free consultation\" button"
+  },
+  {
+   "location": "Visible",
+   "section": "self-check widget (note)",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "For a real review, please book a free consultation.</p>",
+   "after": "For a real review, please consult a licensed CPA.</p>",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "checklist download line",
+   "editor": "post_content",
+   "action": "replace",
+   "before": " before your consultation.</p>",
+   "after": ".</p>",
+   "needs_sharad": false,
+   "note": "Keeps the checklist link; drops the consultation reference"
+  },
+  {
+   "location": "Visible",
+   "section": "\"why choose us\" image (before Verdict callout)",
+   "editor": "post_content",
+   "action": "delete",
+   "before": "<figure style=\"margin:18px 0;\"><img src=\"https://gondaliyacpa.ca/wp-content/uploads/2026/10/why-gondaliya-cpa-product-design-studio.png\" alt=\"Why Canadian product design studios choose Gondaliya CPA\" style=\"width:100%;border-radius:12px;border:1px solid #d8e0e8;\" /><figcaption style=\"font-size:13px;color:#5a6b7b;text-align:center;padding:6px;\">Why small businesses choose us.</figcaption></figure>\n",
+   "after": "",
+   "needs_sharad": false,
+   "note": "Sales-proof image: alt \"Why Canadian product design studios choose Gondaliya CPA\""
+  },
+  {
+   "location": "Button",
+   "section": "closing CTA box",
+   "editor": "post_content",
+   "action": "delete",
+   "before": "<div class=\"gcpa-cta\">\n<h4>Start with your project list, your time records and your year-end date</h4>\n<p>Gondaliya CPA identifies where the technological uncertainty actually sits in each project and tells you plainly where it does not, carves the eligible work out from the design and production around it, builds the expenditure pool with the contract payment and assistance reductions applied in the right order, elects the overhead method deliberately rather than by default, checks whether the restored capital rules change a purchase you are about to make, prepares the T661 and Schedule 31, files inside the reporting deadline, and represents you through any technical or financial review &mdash; on a flat annual fee including HST with a one-business-day response. Please book a free consultation.</p>\n<div class=\"gcpa-trust\"><span>1450+ 5-star Google reviews</span><span>Registered Ontario CPA Firm since 2013</span><span>Fixed-Fee Pricing</span><span>SR&amp;ED and Innovation Experience</span></div>\n<div class=\"gcpa-btnrow\"><a class=\"solid\" href=\"https://gondaliyacpa.ca/consultation/\">Book Free Consultation</a><a href=\"tel:+16472129559\">647-212-9559</a><a href=\"mailto:info@gondaliyacpa.ca\">info@gondaliyacpa.ca</a></div>\n</div>\n",
+   "after": "",
+   "needs_sharad": false,
+   "note": "CTA box: H4 \"Start with your project list, your time records and your year-end date\", offer paragraph (firm prepares/defends the claim, fixed fee, book a free consultation), trust strip (1450+ reviews ...), Book/tel/mailto buttons"
+  },
+  {
+   "location": "JSON-LD",
+   "section": "Service schema node",
+   "editor": "post_content",
+   "action": "delete",
+   "before": ",\n    { \"@type\": \"Service\",\n      \"name\": \"Accounting and SR&ED Services for Product Design Studios\",\n      \"serviceType\": \"SR&ED eligibility assessment against the subsection 248(1) definition, carve-out of eligible work from design and production activity, qualified expenditure pools covering salary, materials, arm's-length contract payments at 80%, the 55% prescribed proxy overhead and restored capital expenditures, reductions for contract payments and government assistance under subsection 127(18), T661 and Schedule 31 preparation, provincial credit coordination, CRA technical and financial review representation, compilation engagements and T2 filing for Canadian product design studios.\",\n      \"provider\": { \"@id\": \"https://gondaliyacpa.ca/#organization\" }, \"areaServed\": \"CA\",\n      \"audience\": { \"@type\": \"Audience\", \"audienceType\": \"Incorporated product design studios, industrial and mechanical design firms and product development businesses across Toronto, Ontario and Canada\" } }",
+   "after": "",
+   "needs_sharad": false,
+   "note": "Service node with provider = Gondaliya CPA for SR&ED claim work; removed with its leading comma (Article/FAQPage/HowTo kept)"
+  }
+ ],
+ "page_note": "Non-Elementor post. FAQ (visible + JSON-LD) is informational, including \"File it ourselves or engage a CPA firm?\". Author bios (\"correcting tax errors ... covering SR&ED eligibility\") and \"Businesses We Serve\" industries section kept. Rank Math title/description informational."
+}

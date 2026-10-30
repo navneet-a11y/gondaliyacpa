@@ -1,0 +1,140 @@
+{
+ "id": 52987,
+ "url": "https://gondaliyacpa.ca/furniture-manufacturing-tax-credits-canada/",
+ "title": "Furniture Manufacturing Tax Credits in Canada: SR&amp;ED, Investment Incentives &amp; Government Programs",
+ "type": "post",
+ "elementor": false,
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "after intro paragraph",
+   "editor": "post_content",
+   "action": "insert_after",
+   "before": "designed to support growth in the furniture manufacturing sector.</p>",
+   "after": "designed to support growth in the furniture manufacturing sector.</p>\n<p class=\"sred-notice\"><strong>Gondaliya CPA does not prepare SR&amp;ED claims. This page explains how the SR&amp;ED program works, for general information only.</strong></p>",
+   "needs_sharad": false,
+   "note": "Informational notice per RULES.md"
+  },
+  {
+   "location": "Visible",
+   "section": "author box (top)",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "the proxy and traditional overhead methods, T661 and Schedule 31 preparation, the Ontario Made",
+   "after": "the proxy and traditional overhead methods, the Ontario Made",
+   "needs_sharad": true,
+   "note": "Author bio lists T661/Schedule 31 (SR&ED claim) preparation"
+  },
+  {
+   "location": "Visible",
+   "section": "Contact Information for Government Tax Credit Programs list",
+   "editor": "post_content",
+   "action": "delete",
+   "before": "<li><strong>Gondaliya CPA:</strong> 647-212-9559, info@gondaliyacpa.ca</li>\n",
+   "after": "",
+   "needs_sharad": false,
+   "note": "Firm phone/email line in a list of official support channels"
+  },
+  {
+   "location": "Visible",
+   "section": "closing H2",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "<h2>Manufacturing Credits: How Gondaliya CPA Supports You</h2>",
+   "after": "<h2>Manufacturing Credits: Getting Ready to Claim</h2>",
+   "needs_sharad": true,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Next Steps paragraph",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "<p>Book a free consultation with Gondaliya CPA. Bring your last two filed returns, a list of equipment purchased with available-for-use dates, and a short description of any production problem you solved by testing. Those three establish which credits are open, which years are still inside the 18-month window, and what the claim is worth. You'll get a flat fee before any work begins.</p>",
+   "after": "<p>Before claiming, gather your last two filed returns, a list of equipment purchased with available-for-use dates, and a short description of any production problem you solved by testing. Those three establish which credits are open, which years are still inside the 18-month window, and what the claim is worth.</p>",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "author box (bottom)",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "arm's length contract payment rules, T661 and Schedule 31 preparation and CRA review defence, the Ontario Made",
+   "after": "arm's length contract payment rules, the Ontario Made",
+   "needs_sharad": true,
+   "note": "Author bio lists T661/Schedule 31 preparation and CRA review defence"
+  },
+  {
+   "location": "Visible",
+   "section": "self-check widget (result panel)",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "<b>Points to raise with us:</b>",
+   "after": "<b>Points to raise:</b>",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "self-check widget (result panel)",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "<b>Worth reviewing with us:</b>",
+   "after": "<b>Worth reviewing:</b>",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "self-check widget (result panel)",
+   "editor": "post_content",
+   "action": "replace",
+   "before": " A free review can confirm nothing is being missed.</p>",
+   "after": "</p>",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Button",
+   "section": "self-check widget (result panel)",
+   "editor": "post_content",
+   "action": "delete",
+   "before": "\n    <a class=\"p-cta\" href=\"https://gondaliyacpa.ca/consultation/\">Book a free consultation</a>",
+   "after": "",
+   "needs_sharad": false,
+   "note": "\"Book a free consultation\" button"
+  },
+  {
+   "location": "Visible",
+   "section": "self-check widget (note)",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "For a real review, please book a free consultation.</p>",
+   "after": "For a real review, please consult a licensed CPA.</p>",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Button",
+   "section": "closing CTA box",
+   "editor": "post_content",
+   "action": "delete",
+   "before": "<div class=\"gcpa-cta\">\n<h4>Machinery bought, a process problem solved by trial, or a year-end approaching its 18-month limit?</h4>\n<p>For a flat annual fee stated before the work starts, we screen your projects against the uncertainty test, cost them by project with the proxy or traditional method, and prepare the T661 and Schedule 31 alongside Schedule 572 for the Ontario credit. We classify each asset so the machinery lands in Class 43 and the building in Class 1 at the manufacturing rate, apply the assistance grind correctly so nothing is reassessed later, coordinate the Ontario and BC credits where you operate in both, and represent you if <a class=\"wpil_keyword_link\" href=\"https://gondaliyacpa.ca/resolve-cra-audit-issues-and-restore-tax-compliance-for-your-business/\" title=\"How to Resolve CRA Audit Issues and Restore Tax Compliance\">CRA review</a>s the claim.</p>\n<div class=\"gcpa-trust\"><span>1450+ 5-star Google reviews</span><span>Registered Ontario CPA Firm</span><span>Flat-fee pricing</span><span>CPA Firm Registration 61330051</span></div>\n<div class=\"gcpa-btnrow\"><a class=\"solid\" href=\"https://gondaliyacpa.ca/consultation/\">Book a Consultation</a><a href=\"tel:+16472129559\">647-212-9559</a><a href=\"mailto:info@gondaliyacpa.ca\">info@gondaliyacpa.ca</a></div>\n</div>\n",
+   "after": "",
+   "needs_sharad": false,
+   "note": "CTA box: H4 \"Machinery bought, a process problem solved by trial, or a year-end approaching its 18-month limit?\", offer paragraph (firm prepares/defends the claim, fixed fee, book a free consultation), trust strip (1450+ reviews ...), Book/tel/mailto buttons"
+  },
+  {
+   "location": "JSON-LD",
+   "section": "Service schema node",
+   "editor": "post_content",
+   "action": "delete",
+   "before": ",\n    { \"@type\": \"Service\",\n      \"name\": \"Manufacturing Tax Credit and SR&ED Claim Services\",\n      \"serviceType\": \"Tax credit services for Canadian furniture and wood products manufacturers, including SR&ED project screening and costing, T661 and Schedule 31 preparation, Ontario Made Manufacturing Investment Tax Credit claims on Schedule 572, Ontario innovation credits, British Columbia SR&ED and manufacturing credits, capital cost allowance classification, government assistance analysis, and CRA review representation.\",\n      \"provider\": { \"@id\": \"https://gondaliyacpa.ca/#organization\" }, \"areaServed\": \"CA\",\n      \"audience\": { \"@type\": \"Audience\", \"audienceType\": \"Furniture, cabinetry and millwork manufacturers across Ontario, British Columbia and Canada\" } }",
+   "after": "",
+   "needs_sharad": false,
+   "note": "Service node with provider = Gondaliya CPA for SR&ED claim work; removed with its leading comma (Article/FAQPage/HowTo kept)"
+  }
+ ],
+ "page_note": "Non-Elementor post covering several manufacturing credits; SR&ED is one section. Intro (\"Gondaliya CPA highlights key benefits\") is editorial, kept. FAQ (visible + JSON-LD) informational. Rank Math title/description informational."
+}

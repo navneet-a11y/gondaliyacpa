@@ -1,0 +1,50 @@
+{
+ "id": 51048,
+ "url": "https://gondaliyacpa.ca/cannabis-producer-tax-planning-canada/",
+ "title": "How Cannabis Producers in Canada Can Reduce Taxes and Improve Cash Flow With Strategic Tax Planning",
+ "type": "post",
+ "elementor": false,
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "Flat annual fee paragraph (We support incorporated producers...)",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "measures reviewed, SR&amp;ED assessment, related-party",
+   "after": "measures reviewed, related-party",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "We handle what decides the outcome paragraph",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "expensing measures, assessing SR&amp;ED on extraction and technical work, and documenting",
+   "after": "expensing measures, and documenting",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Closing paragraph (Gondaliya CPA claims...)",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "expensing measures, assesses SR&amp;ED on extraction and technical work and documents",
+   "after": "expensing measures and documents",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "JSON-LD",
+   "section": "Service schema description",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "classification, SR&ED assessment on extraction and cultivation development with documentation setup, ",
+   "after": "classification, ",
+   "needs_sharad": false,
+   "note": ""
+  }
+ ],
+ "page_note": "Cannabis producer post. Informational SR&ED kept (Equipment/M&P/SR&ED section and link, document checklist, FAQ, tips, glossary, Bill C-15 note, author bio)."
+}

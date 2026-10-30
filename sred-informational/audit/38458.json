@@ -1,0 +1,130 @@
+{
+ "id": 38458,
+ "url": "https://gondaliyacpa.ca/corporate-tax-filing-richmond-hills/",
+ "title": "Corporate Tax Filing Richmond Hills",
+ "type": "page",
+ "elementor": true,
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "Hero intro",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "healthcare holdco, Highway 7 SR&amp;ED. AFFORDABLE",
+   "after": "healthcare holdco. AFFORDABLE",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Services grid card \"SR&ED Tax Credits\"",
+   "editor": "elementor",
+   "action": "delete",
+   "before": "<div class=\\\"rh-svc\\\"><div class=\\\"rh-svc-icon\\\">&#128451;<\\/div><h3>SR&amp;ED Tax Credits<\\/h3><p>SR&amp;ED assessment and filing for Highway 7 corridor technology companies. SaaS, fintech, cybersecurity, AI and engineering firms in Richmond Hill frequently qualify for the 35% refundable credit. Custom software development and algorithm design both qualify.<\\/p><\\/div>\\r\\n",
+   "after": "",
+   "needs_sharad": false,
+   "note": "Service card: SR&ED assessment and filing"
+  },
+  {
+   "location": "Visible",
+   "section": "Expertise item - SR&ED bullets (assess, prepare T661, calculate, file, respond to CRA)",
+   "editor": "elementor",
+   "action": "delete",
+   "before": "<li>Assess SR&amp;ED eligibility for SaaS, fintech, cybersecurity, AI, machine learning and engineering companies along the Highway 7 corridor.<\\/li><li>Prepare the T661 technical narrative demonstrating technological uncertainty and systematic investigation, not routine feature development.<\\/li><li>Calculate eligible expenditures including software developer salaries, algorithm design costs, ML model training and cloud computing for R&amp;D environments.<\\/li><li>File the SR&amp;ED claim with the T2 return to claim the 35% refundable investment tax credit for qualifying Richmond Hill CCPCs.<\\/li><li>Respond to CRA SR&amp;ED reviewer inquiries with technical documentation supporting the systematic investigation claim.<\\/li>",
+   "after": "",
+   "needs_sharad": false,
+   "note": "All bullets are SR&ED service tasks; the item heading and informational subheading stay"
+  },
+  {
+   "location": "Visible",
+   "section": "Case card \"(SR&ED Credit Recovery)\"",
+   "editor": "elementor",
+   "action": "delete",
+   "before": "<div class=\\\"rh-case-card\\\"><h3>Fintech Company, Highway 7 Corridor (SR&amp;ED Credit Recovery)<\\/h3><p>A fintech company on Highway 7 developing proprietary payment processing and fraud detection algorithms had never claimed SR&amp;ED in its first two years. The founder believed only lab research qualified. Our review identified $620,000 in eligible expenditures including software developer salaries, algorithm design for real-time transaction scoring, ML model training costs and cloud computing expenses. We filed T661 forms for both years. <a href=\\\"https:\\/\\/gondaliyacpa.ca\\/tax-preparation-filing\\/\\\">Corporate Tax Filing &#8594;<\\/a><\\/p><div class=\\\"rh-case-stat\\\">$217,000 SR&amp;ED refund. 35% refundable credit on two years of eligible development.<\\/div><\\/div>\\r\\n",
+   "after": "",
+   "needs_sharad": false,
+   "note": "Sales-proof case where the firm filed T661 and recovered SR&ED credits"
+  },
+  {
+   "location": "Visible",
+   "section": "Comparison table - SR&ED credits row",
+   "editor": "elementor",
+   "action": "delete",
+   "before": "<tr><td>SR&amp;ED credits<\\/td><td>Not assessed.<\\/td><td>Every tech and manufacturing client assessed for SR&amp;ED eligibility.<\\/td><\\/tr>\\r\\n",
+   "after": "",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Pricing table - SR&ED Tax Credit fee row",
+   "editor": "elementor",
+   "action": "delete",
+   "before": "<tr><td>SR&amp;ED Tax Credit<\\/td><td>15-20% contingency<\\/td><td>6 to 8 weeks<\\/td><td>Highway 7 SaaS, fintech, cybersecurity, AI. Technical narrative + expenditure calculation. $1,000 retainer.<\\/td><\\/tr>\\r\\n",
+   "after": "",
+   "needs_sharad": false,
+   "note": "SR&ED contingency fee + retainer"
+  },
+  {
+   "location": "Visible",
+   "section": "FAQ \"Can ... technology companies claim SR&ED?\"",
+   "editor": "elementor",
+   "action": "replace",
+   "before": " We assess SR&amp;ED eligibility for every Richmond Hill technology client. <a href=\\\"https:\\/\\/gondaliyacpa.ca\\/sred-tax-credits\\/\\\">SR&amp;ED Assessment &#8594;",
+   "after": " <a href=\\\"https:\\/\\/gondaliyacpa.ca\\/sred-tax-credits\\/\\\">How SR&amp;ED works &#8594;",
+   "needs_sharad": false,
+   "note": "Eligibility answer stays; offer sentence dropped, anchor neutralized"
+  },
+  {
+   "location": "Visible",
+   "section": "FAQ \"How do I get started?\"",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "(CCA, SR&amp;ED, Clean Tech ITC)",
+   "after": "(CCA, Clean Tech ITC)",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Services grid - CRA card",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "management fee audits, SR&amp;ED technical reviews and income classification disputes.",
+   "after": "management fee audits and income classification disputes.",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "CRA audit list",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "HST self-supply reviews, capital gains vs. business income challenges and SR&amp;ED technical audits.",
+   "after": "HST self-supply reviews and capital gains vs. business income challenges.",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Why choose card",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "healthcare holdco planning, Highway 7 SR&amp;ED. Richmond",
+   "after": "healthcare holdco planning. Richmond",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Team bio - Sharad",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "healthcare holdco and Highway 7 technology SR&amp;ED expertise.",
+   "after": "and healthcare holdco expertise.",
+   "needs_sharad": false,
+   "note": ""
+  }
+ ],
+ "page_note": "Corporate tax filing Richmond Hill (Elementor city template). SR&ED offered via service card, expertise bullets, case study, contingency fee, comparison row, why-choose, team bio, FAQ. Rows strip offer/fee items; informational lines (Highway 7 tech companies may qualify, \"SR&ED not claimed\" mistakes row, FAQ eligibility answer + JSON-LD) stay. HTML comment at top holds a draft meta description (not rendered)."
+}

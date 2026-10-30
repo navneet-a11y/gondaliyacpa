@@ -1,0 +1,30 @@
+{
+ "id": 36015,
+ "url": "https://gondaliyacpa.ca/small-business-tax-deductions-canada-complete-list/",
+ "title": "Small Business Tax Deductions Canada: Complete List",
+ "type": "page",
+ "elementor": true,
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "Section 12 SR&ED tip box",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "Gondaliya CPA handles SR&amp;ED claims on a contingency basis (15\\u201320% of the refund). ",
+   "after": "",
+   "needs_sharad": false,
+   "note": "SR&ED fee/offer sentence; explanation and \"Learn more about SR&ED claims\" link stay"
+  },
+  {
+   "location": "Visible",
+   "section": "Related services card \"SR&ED Tax Credits\"",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "<p>35% refundable SR&amp;ED credits \\u2014 contingency basis, no upfront cost.<\\/p>",
+   "after": "<p>How the 35% refundable SR&amp;ED credit works.<\\/p>",
+   "needs_sharad": false,
+   "note": "Card offered SR&ED on contingency; card title and link stay"
+  }
+ ],
+ "page_note": "Small business tax deductions complete list (Elementor). SR&ED section, summary table, tips, FAQs and JSON-LD are informational and stay. Rows remove the contingency-fee offer sentence and the related-services card fee text."
+}

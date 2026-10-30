@@ -1,0 +1,190 @@
+{
+ "id": 51049,
+ "url": "https://gondaliyacpa.ca/accountant-for-e-learning-platforms/",
+ "title": "Accounting and Tax Services for E-Learning Platforms",
+ "type": "page",
+ "elementor": false,
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "Hero intro paragraph",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "and claim the 35% refundable SR&amp;ED credit on genuine platform R&amp;D and the 40% OIDMTC on Ontario",
+   "after": "and claim the 40% OIDMTC on Ontario",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Compliance intro paragraph",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "claiming every input tax credit, SR&amp;ED and OIDMTC dollar and CCA claim",
+   "after": "claiming every input tax credit, OIDMTC dollar and CCA claim",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "How we work step (tax planning)",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "We claim the 35% refundable SR&amp;ED credit and the 40% OIDMTC through Ontario Creates",
+   "after": "We claim the 40% OIDMTC through Ontario Creates",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "How we work step 3 heading",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "CRA Representation &mdash; HST, Reserve &amp; SR&amp;ED Reviews</h3>",
+   "after": "CRA Representation &mdash; HST &amp; Reserve Reviews</h3>",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "How we work step 3 text",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "your deferred revenue reserve, your SR&amp;ED project narratives or your instructor T4A compliance",
+   "after": "your deferred revenue reserve or your instructor T4A compliance",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Services grid: T2 preparation card",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "Schedule 8 CCA on software and servers, T661 and Schedule 31 where SR&amp;ED applies, and CRA compliance",
+   "after": "Schedule 8 CCA on software and servers, and CRA compliance",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Services grid: Tax planning card",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "time the 20(1)(m) reserve, claim SR&amp;ED and the OIDMTC, structure",
+   "after": "time the 20(1)(m) reserve, claim the OIDMTC, structure",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Services grid: Catch-up filing card",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "payout records, rescue SR&amp;ED claims still inside the 18-month deadline, and get back",
+   "after": "payout records, and get back",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Services grid: CRA audit resolution card",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "deferred revenue reserve, SR&amp;ED and instructor T4A reviews",
+   "after": "deferred revenue reserve and instructor T4A reviews",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Tailored services expanded: tax planning bullet",
+   "editor": "post_content",
+   "action": "delete",
+   "before": "<li>We claim SR&amp;ED on Form T661 and Schedule 31 for genuine platform R&amp;D like adaptive-assessment engines, securing the 35% refundable credit on the first $3,000,000 plus the 8% OITC and 3.5% ORDTC, excluding content and UI work CRA rejects; one claim recovered $95,000.</li>",
+   "after": "",
+   "needs_sharad": false,
+   "note": "Offer to claim SR&ED with a $95,000 result."
+  },
+  {
+   "location": "Visible",
+   "section": "Tailored services expanded: catch-up bullet",
+   "editor": "post_content",
+   "action": "delete",
+   "before": "<li>We file the SR&amp;ED claim on Form T661 and Schedule 31 for any unfiled year still inside the 18-month reporting deadline under subsection 37(11), because CRA denies claims filed one day late without exception; on one platform this rescued a $60,000 refundable credit.</li>",
+   "after": "",
+   "needs_sharad": false,
+   "note": "Offer to file SR&ED claims ($60,000 result)."
+  },
+  {
+   "location": "Visible",
+   "section": "Tailored services expanded: CRA audit bullet",
+   "editor": "post_content",
+   "action": "delete",
+   "before": "<li>We defend SR&amp;ED claims under review by walking CRA's research and technology adviser through the Form T661 project narratives, sprint records, commit logs and developer timesheets, because unsupported hours are disallowed under section 37; on one review this preserved a $95,000 refundable credit.</li>",
+   "after": "",
+   "needs_sharad": false,
+   "note": "Offer to defend SR&ED claims ($95,000 result)."
+  },
+  {
+   "location": "Visible",
+   "section": "Readiness quiz result (5+ yes, inline JS, escaped copy)",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "withholding compliance, SR&amp;ED and OIDMTC claims and the incorporation break-even can all be",
+   "after": "withholding compliance, OIDMTC claims and the incorporation break-even can all be",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Readiness quiz result (5+ yes, inline JS)",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "withholding compliance, SR&amp;ED and OIDMTC claims and the incorporation break-even could all be",
+   "after": "withholding compliance, OIDMTC claims and the incorporation break-even could all be",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Case study card: Toronto Professional-Certification Platform (SR&ED & OIDMTC)",
+   "editor": "post_content",
+   "action": "delete",
+   "before": "<div class=\"sb-case-card\"><h3>Toronto Professional-Certification Platform &mdash; SR&amp;ED &amp; OIDMTC</h3><p><strong>The problem:</strong> A Toronto platform selling professional-certification prep courses had spent two years building an adaptive-assessment engine that adjusts question difficulty to each learner, yet no SR&amp;ED claim had ever been filed and nobody had applied for the Ontario Interactive Digital Media Tax Credit. The developers were on payroll, sprint records lived in Jira and GitHub, and the previous accountant treated every dollar as ordinary expense.</p><p><strong>What we did:</strong> We assembled Form T661 project narratives from sprint and commit records, separated eligible engine work from routine content and UI updates, claimed the 35% refundable federal credit plus the 8% OITC on Schedule 31, and secured Ontario Creates certification so the 40% OIDMTC on Ontario development and marketing labour was claimed on Schedule 560.</p><p><strong>The result:</strong></p><ul class=\"sb-case-res\"><li>$95,000 refundable SR&amp;ED credit recovered</li><li>$70,000 OIDMTC refund on Ontario labour</li><li>A six-figure swing with a repeatable annual claim process</li></ul></div>\n",
+   "after": "",
+   "needs_sharad": true,
+   "note": "Sales-proof case study of the firm preparing an SR&ED claim ($95,000) bundled with OIDMTC. Alternative: keep card and rewrite to OIDMTC only. Sharad to decide."
+  },
+  {
+   "location": "Visible",
+   "section": "Onboarding Step 4 Quarterly Planning Review",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "Salary and dividend mix, SR&amp;ED and OIDMTC claim tracking",
+   "after": "Salary and dividend mix, OIDMTC claim tracking",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Final CTA paragraph",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "instructor T4A and Regulation 105 compliance, SR&amp;ED and OIDMTC claims, US state",
+   "after": "instructor T4A and Regulation 105 compliance, OIDMTC claims, US state",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "JSON-LD",
+   "section": "AccountingService schema description",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "platform-operator and instructor payouts, SR&ED and OIDMTC credits, cross-border",
+   "after": "platform-operator and instructor payouts, OIDMTC credits, cross-border",
+   "needs_sharad": false,
+   "note": ""
+  }
+ ],
+ "page_note": "E-learning industry service page with SR&ED offered throughout. Informational SR&ED kept: card 'SR&ED, OIDMTC & Instructor Payouts', 'Genuine platform R&D earns the 35% refundable SR&ED credit' statements, SR&ED receivable in statements, quiz questions, 'We understand how ... SR&ED ... claims flow' expertise line, FAQ 'Does platform development qualify for SR&ED?' (visible + FAQPage)."
+}

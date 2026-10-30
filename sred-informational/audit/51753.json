@@ -1,0 +1,80 @@
+{
+ "id": 51753,
+ "url": "https://gondaliyacpa.ca/oidmtc-tax-credit-calculator/",
+ "title": "OIDMTC Digital Media Tax Credit Calculator (Ontario Studios)",
+ "type": "page",
+ "elementor": false,
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "Info box below calculator",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "Our <a href=\"https://gondaliyacpa.ca/sred-tax-credit-claims/\">tax credit service</a> covers the OIDMTC claim, the SR&amp;ED split and the certification.</p>",
+   "after": "Our service covers the OIDMTC claim and the certification. For how the OIDMTC and SR&amp;ED split works, see <a href=\"https://gondaliyacpa.ca/sred-tax-credit-claims/\">how SR&amp;ED credits work</a>.</p>",
+   "needs_sharad": false,
+   "note": "Anchor 'tax credit service' points to the SR&ED claims page; neutral anchor, URL kept; SR&ED split removed from offered service."
+  },
+  {
+   "location": "Visible",
+   "section": "Related calculators card (to /sred-tax-credit-claims/)",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "<span class=\"svd-rel-t\">Tax Credit Claims</span><span class=\"svd-rel-d\">OIDMTC, SR&amp;ED and the certification.</span>",
+   "after": "<span class=\"svd-rel-t\">How SR&amp;ED Credits Work</span><span class=\"svd-rel-d\">The federal credit beside OIDMTC.</span>",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Final CTA paragraph",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "We will confirm the stream, set up the labour tracking, split OIDMTC and SR&amp;ED deliberately, and handle the certification and the claim.</p>",
+   "after": "We will confirm the stream, set up the labour tracking, and handle the certification and the OIDMTC claim.</p>",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Button",
+   "section": "Final CTA outline button to /sred-tax-credit-claims/",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "<a class=\"svd-btn-outline\" href=\"https://gondaliyacpa.ca/sred-tax-credit-claims/\">Tax Credit Claims</a>",
+   "after": "<a class=\"svd-btn-outline\" href=\"https://gondaliyacpa.ca/sred-tax-credit-claims/\">How SR&amp;ED Works</a>",
+   "needs_sharad": false,
+   "note": "Button to the SR&ED claims page labelled as a service; neutral label, URL kept (or remove the button)."
+  },
+  {
+   "location": "Visible",
+   "section": "Footer bar heading",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "<h3>Ontario Digital Media and SR&amp;ED Credits &#8212; Registered CPA Ontario</h3>",
+   "after": "<h3>Ontario Digital Media Tax Credit &#8212; Registered CPA Ontario</h3>",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Button",
+   "section": "Footer bar white button to /sred-tax-credit-claims/",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "style=\"color:#1a2340;\">Tax Credit Claims</a>",
+   "after": "style=\"color:#1a2340;\">How SR&amp;ED Works</a>",
+   "needs_sharad": false,
+   "note": "Neutral label, URL kept (or remove the button)."
+  },
+  {
+   "location": "Visible",
+   "section": "Calculator next-step message (inline JS)",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "we will confirm the stream and split OIDMTC against SR&ED deliberately.",
+   "after": "we will confirm the stream for the OIDMTC claim.",
+   "needs_sharad": false,
+   "note": ""
+  }
+ ],
+ "page_note": "OIDMTC calculator. SR&ED overlap/anti-duplication explanation, SR&ED labour input field, result rows, FAQ and the Software SR&ED calculator card are informational and kept."
+}

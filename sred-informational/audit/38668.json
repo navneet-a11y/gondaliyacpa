@@ -1,0 +1,210 @@
+{
+ "id": 38668,
+ "url": "https://gondaliyacpa.ca/corporate-tax-filing-markham/",
+ "title": "corporate tax filing markham",
+ "type": "page",
+ "elementor": true,
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "Hero intro",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "licensed CPA team. Technology SR&amp;ED, import\\/export HST",
+   "after": "licensed CPA team. Import\\/export HST",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Services grid - T2 card",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "healthcare schedules reviewed for SR&amp;ED, transfer pricing and correct CCA.",
+   "after": "healthcare schedules reviewed for transfer pricing and correct CCA.",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Services grid card \"SR&ED Tax Credits: Technology\"",
+   "editor": "elementor",
+   "action": "delete",
+   "before": "<div class=\\\"mk-svc\\\"><div class=\\\"mk-svc-icon\\\">&#128196;<\\/div><h3>SR&amp;ED Tax Credits: Technology<\\/h3><p>SR&amp;ED assessment and filing for Markham technology companies. SaaS, AI, semiconductor, cybersecurity, fintech and IoT firms conducting custom software development, algorithm design, chip testing and engineering prototyping qualify for the 35% refundable credit. Markham generates the highest SR&amp;ED volume in York Region.<\\/p><\\/div>\\r\\n",
+   "after": "",
+   "needs_sharad": false,
+   "note": "Service card: SR&ED assessment and filing"
+  },
+  {
+   "location": "Visible",
+   "section": "Services grid - CRA card",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "Responding to SR&amp;ED technical reviews, transfer pricing inquiries",
+   "after": "Responding to transfer pricing inquiries",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Expertise item 1 (T2) subheading",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "including SR&amp;ED assessment and foreign affiliate forms.",
+   "after": "including foreign affiliate forms.",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Expertise item 2 bullets (assess, prepare T661, calculate, file, respond to CRA SR&ED)",
+   "editor": "elementor",
+   "action": "delete",
+   "before": "<li>Assess SR&amp;ED eligibility for SaaS, AI, semiconductor, cybersecurity, fintech and IoT companies along the Highway 7 and Highway 404 corridors.<\\/li><li>Prepare T661 technical narratives demonstrating technological uncertainty and systematic investigation, not routine feature development or bug fixes.<\\/li><li>Calculate eligible expenditures including ML engineer salaries, GPU cloud computing for model training, algorithm design and dataset annotation development.<\\/li><li>File SR&amp;ED claims with the T2 to claim the 35% refundable investment tax credit for qualifying Markham CCPCs.<\\/li><li>Respond to CRA SR&amp;ED reviewer inquiries with technical documentation supporting the systematic investigation claim.<\\/li>",
+   "after": "",
+   "needs_sharad": false,
+   "note": "Five SR&ED service bullets; the informational subheading about Markham SR&ED volume stays. Item heading \"Automotive and Clean Tech CCA\" appears mismatched with its content - check in editor."
+  },
+  {
+   "location": "Visible",
+   "section": "Expertise item 4 heading",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "<h3>SR&amp;ED Tax Credits<\\/h3><\\/div><p class=\\\"mk-exp-sub\\\">Markham Stouffville",
+   "after": "<h3>Healthcare Professional Corporations<\\/h3><\\/div><p class=\\\"mk-exp-sub\\\">Markham Stouffville",
+   "needs_sharad": false,
+   "note": "Heading lists SR&ED as an expertise area but the item content is about healthcare professional corporations; heading appears mislabeled. Replacement text is a suggestion."
+  },
+  {
+   "location": "Visible",
+   "section": "CRA audit list",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "for SR&amp;ED technical reviews, transfer pricing inquiries and import HST audits.",
+   "after": "for transfer pricing inquiries and import HST audits.",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "CRA audit list",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "documentation packages for SR&amp;ED eligibility reviews, foreign affiliate",
+   "after": "documentation packages for foreign affiliate",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "CRA audit list",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "corporation through SR&amp;ED audits, transfer pricing reviews",
+   "after": "corporation through transfer pricing reviews",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "CRA audit list",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "when CRA denies SR&amp;ED claims, reverses import HST ITCs",
+   "after": "when CRA reverses import HST ITCs",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Case card \"AI Company, Highway 7 (SR&ED Credit Recovery)\"",
+   "editor": "elementor",
+   "action": "delete",
+   "before": "<div class=\\\"mk-case-card\\\"><h3>AI Company, Highway 7 (SR&amp;ED Credit Recovery)<\\/h3><p>A Markham AI company developing natural language processing and computer vision models for the logistics industry had never claimed SR&amp;ED in three years. The CTO assumed only hardware R&amp;D in a lab qualified. Our review identified $890,000 in eligible expenditures including ML engineer salaries, GPU cloud computing costs for model training, algorithm design for route optimisation and dataset annotation development. We prepared T661 technical narratives and filed for all three years. <a href=\\\"https:\\/\\/gondaliyacpa.ca\\/markham\\/\\\">Markham CPA Services &#8594;<\\/a><\\/p><div class=\\\"mk-case-stat\\\">$311,500 SR&amp;ED refund. 35% refundable credit on three years of eligible R&amp;D.<\\/div><\\/div>\\r\\n",
+   "after": "",
+   "needs_sharad": false,
+   "note": "Sales-proof case: firm prepared T661 and recovered $311,500"
+  },
+  {
+   "location": "Visible",
+   "section": "Comparison table - SR&ED credits row",
+   "editor": "elementor",
+   "action": "delete",
+   "before": "<tr><td>SR&amp;ED credits<\\/td><td>Not assessed.<\\/td><td>Every tech and manufacturing client assessed for SR&amp;ED eligibility.<\\/td><\\/tr>\\r\\n",
+   "after": "",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Why choose card",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "<h3>Tech SR&amp;ED and International Tax<\\/h3><p>SR&amp;ED claims for Markham tech, transfer pricing,",
+   "after": "<h3>International Tax<\\/h3><p>Transfer pricing,",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Pricing table - SR&ED Tax Credit fee row",
+   "editor": "elementor",
+   "action": "delete",
+   "before": "<tr><td>SR&amp;ED Tax Credit<\\/td><td>15-20% contingency<\\/td><td>6 to 8 weeks<\\/td><td>SaaS, AI, semiconductor, cybersecurity, fintech. T661 narrative + expenditure calculation. $1,000 retainer.<\\/td><\\/tr>\\r\\n",
+   "after": "",
+   "needs_sharad": false,
+   "note": "SR&ED contingency fee + retainer"
+  },
+  {
+   "location": "Visible",
+   "section": "Closing paragraph (other services)",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "incorporation, SR&amp;ED, foreign reporting",
+   "after": "incorporation, foreign reporting",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "FAQ \"Do Markham tech companies qualify for SR&ED?\"",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "York Region. <a href=\\\"https:\\/\\/gondaliyacpa.ca\\/sred-tax-credits\\/\\\">SR&amp;ED Assessment &#8594;",
+   "after": "York Region. <a href=\\\"https:\\/\\/gondaliyacpa.ca\\/sred-tax-credits\\/\\\">How SR&amp;ED works &#8594;",
+   "needs_sharad": false,
+   "note": "Neutral anchor, URL kept"
+  },
+  {
+   "location": "Visible",
+   "section": "FAQ \"How do I get started?\"",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "identify deduction opportunities (CCA, SR&amp;ED, Clean Tech ITC)",
+   "after": "identify deduction opportunities (CCA, Clean Tech ITC)",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Team bio - Sharad",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "Technology SR&amp;ED, international transfer pricing",
+   "after": "International transfer pricing",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Team bio - Vandana",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "prepares T2 returns, SR&amp;ED T661 forms, foreign affiliate",
+   "after": "prepares T2 returns, foreign affiliate",
+   "needs_sharad": false,
+   "note": ""
+  }
+ ],
+ "page_note": "Corporate tax filing Markham (Elementor). SR&ED offered heavily (service card, expertise bullets, CRA list, case study, contingency fee, why-choose, team bios). Rows strip offer/fee items; informational lines (Markham SR&ED volume, compliance-demands table row on SR&ED documentation, FAQ eligibility answer + JSON-LD) stay. Note: the HTML comment at the top holds a draft meta description mentioning \"technology SR&ED\" (not rendered; Rank Math fields have no SR&ED). Expertise item headings look mismatched (item 2/4)."
+}

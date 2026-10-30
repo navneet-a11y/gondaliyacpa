@@ -1,0 +1,20 @@
+{
+ "id": 34672,
+ "url": "https://gondaliyacpa.ca/best-cpa-ontario/",
+ "title": "Best CPA Ontario",
+ "type": "page",
+ "elementor": true,
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "Category 04 - SR&ED Tax Credits description",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "These guides cover eligibility, claim preparation, and CRA defence at a fixed flat fee.",
+   "after": "These guides cover eligibility, claim preparation, and CRA defence.",
+   "needs_sharad": false,
+   "note": "\"at a fixed flat fee\" presents SR&ED claim work as a firm service with a fee"
+  }
+ ],
+ "page_note": "Best CPA Ontario hub page. SR&ED category, guide card, jump link, \"always hire a licensed CPA firm\" advice and FAQ (visible + JSON-LD) are informational and stay. Only the fee clause in the SR&ED category description is removed."
+}

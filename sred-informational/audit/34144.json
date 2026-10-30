@@ -1,0 +1,20 @@
+{
+ "id": 34144,
+ "url": "https://gondaliyacpa.ca/?elementor_library=ranking-post-template",
+ "title": "ranking post template",
+ "type": "elementor_library",
+ "elementor": true,
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "#1 Gondaliya CPA services list",
+   "editor": "elementor",
+   "action": "delete",
+   "before": "<li><a class=\\\"wpil_keyword_link\\\" href=\\\"https:\\/\\/gondaliyacpa.ca\\/claiming-sred-tax-credits-what-canadian-businesses-need-to-know\\/\\\"   title=\\\"SR&amp;ED Tax Credits\\\" data-wpil-keyword-link=\\\"linked\\\"  data-wpil-monitor-id=\\\"4700\\\">SR&ED Tax Credits<\\/a><\\/li>",
+   "after": "",
+   "needs_sharad": true,
+   "note": "\"SR&ED Tax Credits\" listed among the firm's services (linked to an SR&ED blog post). Ranking-post template, treated like the Best page."
+  }
+ ],
+ "page_note": "Elementor library \"ranking post template\". Single SR&ED mention: listed in Gondaliya CPA's services list. Template content is reused by ranking posts."
+}

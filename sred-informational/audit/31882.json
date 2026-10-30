@@ -1,0 +1,60 @@
+{
+ "id": 31882,
+ "url": "https://gondaliyacpa.ca/technology-communications-companies/",
+ "title": "Technology &amp; Communications Companies",
+ "type": "page",
+ "elementor": true,
+ "rows": [
+  {
+   "location": "Meta",
+   "section": "Meta description",
+   "editor": "rank_math",
+   "action": "replace",
+   "before": "cloud hosting costs, SR&amp;ED claims and contractor classification.",
+   "after": "cloud hosting costs and contractor classification.",
+   "needs_sharad": true,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Services grid - T2 card bullet",
+   "editor": "elementor",
+   "action": "delete",
+   "before": "<li>We prepare the SR&ED claim on Form T661 alongside your technology corporation T2 return for qualifying experimental software development work \\u2014 the 35% refundable ITC on the first $3 million in eligible expenditures can recover a significant portion of your tech company's R&D investment each year.<\\/li>\\r\\n",
+   "after": "",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Services grid - catch-up card bullet",
+   "editor": "elementor",
+   "action": "replace",
+   "before": " We prioritize catch-up T2 returns where the 18-month window has not yet closed to recover those credits.",
+   "after": "",
+   "needs_sharad": false,
+   "note": "SR&ED deadline fact stays; offer to recover SR&ED credits dropped"
+  },
+  {
+   "location": "Visible",
+   "section": "Services grid - CRA audit card bullet",
+   "editor": "elementor",
+   "action": "delete",
+   "before": "<li>We defend SR&ED claims during a CRA audit on your technology corporation by presenting Form T661 project descriptions, developer time-tracking records, and documentation of technological uncertainty \\u2014 CRA denies SR&ED when no contemporaneous records support the qualifying experimental development work.<\\/li>\\r\\n",
+   "after": "",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "FAQ (accordion)",
+   "editor": "elementor",
+   "action": "replace",
+   "before": " We assist with documentation and claims.",
+   "after": "",
+   "needs_sharad": false,
+   "note": "Eligibility sentence stays"
+  }
+ ],
+ "page_note": "Technology & communications industry page (Elementor, same template as 32317). Rows remove SR&ED claim preparation/audit-defence bullets, catch-up credit-recovery sentence, FAQ assist sentence, and SR&ED in the Rank Math description (needs_sharad). Informational lines (\"built for how tech businesses ... claim SR&ED credits\", unfiled returns lose SR&ED eligibility, deadline fact, \"R&D tax credits\" in we-understand list, case study on R&D-driven tax planning) stay. Service schema has no SR&ED."
+}

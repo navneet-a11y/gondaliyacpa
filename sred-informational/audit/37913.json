@@ -1,0 +1,20 @@
+{
+ "id": 37913,
+ "url": "https://gondaliyacpa.ca/cpa-corporate-tax-cleanup-canada/",
+ "title": "Why Hiring a CPA for Corporate Tax Cleanup Can Save Your Business Thousands in Taxes",
+ "type": "post",
+ "elementor": false,
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "FAQ \"Are tax planning services part of Gondaliya CPA offerings?\"",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "That includes remuneration mix, capital cost allowance timing and, for eligible companies, SR&amp;ED claims, which must be filed within 18 months of the year-end.",
+   "after": "That includes remuneration mix and capital cost allowance timing. For eligible companies, SR&amp;ED claims must be filed within 18 months of the year-end.",
+   "needs_sharad": false,
+   "note": "Answer listed SR&ED claims among the firm's offerings; deadline fact kept. No FAQPage JSON-LD copy of this answer found."
+  }
+ ],
+ "page_note": "Corporate tax cleanup post. \"SR&ED claims: prepared with the T661...\" bullet (auto keyword link) is informational and stays. Only the FAQ answer listing SR&ED claims among Gondaliya CPA offerings is rewritten."
+}

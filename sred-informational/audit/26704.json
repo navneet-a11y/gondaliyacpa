@@ -1,0 +1,30 @@
+{
+  "id": 26704,
+  "url": "https://gondaliyacpa.ca/?elementor_library=shopifybook",
+  "title": "Shopifybook",
+  "type": "elementor_library",
+  "elementor": true,
+  "rows": [
+    {
+      "location": "Visible",
+      "section": "Icon box title (service card)",
+      "editor": "elementor",
+      "action": "replace",
+      "before": "\"ekit_icon_box_title_text\":\"SR&ED Tax Credit Claims for Shopify Store Owners\",\"ekit_icon_box_badge_title\":\"EXCLUSIVE\"",
+      "after": "\"ekit_icon_box_title_text\":\"How SR&ED Tax Credits Work for Shopify Store Owners\",\"ekit_icon_box_badge_title\":\"\"",
+      "needs_sharad": false,
+      "note": "Service card offering SR&ED claims with EXCLUSIVE badge; neutral title, badge cleared, link to SR&ED page kept."
+    },
+    {
+      "location": "Visible",
+      "section": "Icon box description (service card)",
+      "editor": "elementor",
+      "action": "replace",
+      "before": "\"ekit_icon_box_description_text\":\"Maximize your R&D incentives with accurate Scientific Research & Experimental Development (SR&ED) claims.\"",
+      "after": "\"ekit_icon_box_description_text\":\"How Scientific Research & Experimental Development (SR&ED) credits support R&D spending.\"",
+      "needs_sharad": false,
+      "note": ""
+    }
+  ],
+  "page_note": "Elementor template 'Shopifybook'. EXCLUSIVE icon-box card selling SR&ED claims; retitled neutrally, link kept."
+}

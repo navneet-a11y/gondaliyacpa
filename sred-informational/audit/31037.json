@@ -1,0 +1,50 @@
+{
+ "id": 31037,
+ "url": "https://gondaliyacpa.ca/?elementor_library=review-pages",
+ "title": "review pages",
+ "type": "elementor_library",
+ "elementor": true,
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "Intro text",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "Trust &amp; Estate Tax Returns (T3), and SR&amp;ED Tax Credit Claims, our Scarborough clients",
+   "after": "and Trust &amp; Estate Tax Returns (T3), our Scarborough clients",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "FAQ answer (text-editor, item #1)",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "We also handle T3 Trust & Estate Tax Returns and SR&ED Tax Credit Claims, ensuring",
+   "after": "We also handle T3 Trust & Estate Tax Returns, ensuring",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Services text block 1 (\"We provide bookkeeping...\")",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "g<\\/a>, payroll management, consulting, <strong data-start=\\\"1155\\\" data-end=\\\"1190\\\">Trust &amp; Estate Tax Returns (T3)<\\/strong>, and <strong data-start=\\\"1196\\\" data-end=\\\"1223\\\">SR&amp;ED Tax Credit Claims<\\/strong>, helping",
+   "after": "g<\\/a>, payroll management, consulting, and <strong data-start=\\\"1155\\\" data-end=\\\"1190\\\">Trust &amp; Estate Tax Returns (T3)<\\/strong>, helping",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Services text block 2 (\"We provide bookkeeping...\")",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "filing, payroll management, consulting, <strong data-start=\\\"1155\\\" data-end=\\\"1190\\\">Trust &amp; Estate Tax Returns (T3)<\\/strong>, and <strong data-start=\\\"1196\\\" data-end=\\\"1223\\\">SR&amp;ED Tax Credit Claims<\\/strong>, helping",
+   "after": "filing, payroll management, consulting, and <strong data-start=\\\"1155\\\" data-end=\\\"1190\\\">Trust &amp; Estate Tax Returns (T3)<\\/strong>, helping",
+   "needs_sharad": false,
+   "note": ""
+  }
+ ],
+ "page_note": "Elementor library \"review pages\" template. SR&ED Tax Credit Claims listed among the firm's services in the intro, an FAQ answer and two services text blocks. Template is reused wherever inserted."
+}

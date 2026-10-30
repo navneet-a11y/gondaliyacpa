@@ -1,0 +1,40 @@
+{
+  "id": 30724,
+  "url": "https://gondaliyacpa.ca/corporate-tax-planning-for-startups-save-money-from-day-one/",
+  "title": "Corporate Tax Planning for Startups: Save Money from Day One",
+  "type": "post",
+  "elementor": false,
+  "rows": [
+    {
+      "location": "Visible",
+      "section": "\"How we help\" paragraph",
+      "editor": "post_content",
+      "action": "replace",
+      "before": "For example, research &amp; development credits (SR&amp;ED), small business deduction, and investment tax credits matter a lot for startups.",
+      "after": "For example, small business deduction and investment tax credits matter a lot for startups.",
+      "needs_sharad": false,
+      "note": "Follows \"We look for ways to save money by using deductions and credits\", so it presents SR&ED as part of the firm's work."
+    },
+    {
+      "location": "Visible",
+      "section": "Pricing factors list \"Advisory Depth\"",
+      "editor": "post_content",
+      "action": "replace",
+      "before": "full strategy on investments or R&amp;D claims.",
+      "after": "full strategy on investments.",
+      "needs_sharad": false,
+      "note": "R&D (SR&ED) claims listed as a fee driver."
+    },
+    {
+      "location": "Visible",
+      "section": "\"Our accountants\" paragraph",
+      "editor": "post_content",
+      "action": "replace",
+      "before": "can advise on things like SR&amp;ED claims or financial plans for your first year",
+      "after": "can advise on things like financial plans for your first year",
+      "needs_sharad": false,
+      "note": ""
+    }
+  ],
+  "page_note": "Startup corporate tax planning post. Firm-offer lines (we look for SR&ED, pricing factor R&D claims, our accountants advise on SR&ED claims) rewritten. Generic CPA-help tables, checklist 'Doing R&D? Don't miss SR&ED claims', Tax Strategy Report link and informational lists kept."
+}

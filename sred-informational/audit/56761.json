@@ -244,6 +244,16 @@
    "after": "",
    "needs_sharad": false,
    "note": "Service node with provider = organization for SR&ED claim preparation; removed including its leading comma"
+  },
+  {
+   "location": "Visible",
+   "section": "Our Actual Experience (deadline)",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "<p>An analytics firm came to us four months after its reporting deadline",
+   "after": "<p>An analytics firm looked at its claim four months after its reporting deadline",
+   "needs_sharad": false,
+   "note": "Drops \"came to us\" (implies the firm takes SR&ED claims)"
   }
  ],
  "page_note": "Non-Elementor post. Author boxes, \"Our Actual Experience\" cases, route comparison table and FAQ (visible + JSON-LD) are informational and kept. Rank Math title/description are informational; no change."

@@ -1,0 +1,20 @@
+{
+  "id": 25312,
+  "url": "https://gondaliyacpa.ca/small-business-tax-credits-toronto-federal-incentives-deductions-for-entrepreneurs/",
+  "title": "Small Business Tax Credits Toronto: Federal Incentives &amp; Deductions for Entrepreneurs",
+  "type": "post",
+  "elementor": false,
+  "rows": [
+    {
+      "location": "Visible",
+      "section": "Conclusion paragraph",
+      "editor": "post_content",
+      "action": "replace",
+      "before": "From investment tax credits to scientific research credits, proper planning helps",
+      "after": "With investment tax credits and other incentives, proper planning helps",
+      "needs_sharad": false,
+      "note": "Next sentence says Gondaliya CPA helps businesses \"apply these programs\", which would include SR&ED; borderline, low priority."
+    }
+  ],
+  "page_note": "Small business tax credits Toronto post. Informational SR&ED sections and links kept. Only the conclusion ties scientific research credits to the firm's service; softened."
+}

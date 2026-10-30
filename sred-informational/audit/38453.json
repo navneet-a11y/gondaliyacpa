@@ -1,0 +1,190 @@
+{
+ "id": 38453,
+ "url": "https://gondaliyacpa.ca/corporate-tax-filing-ottawa/",
+ "title": "Corporate Tax Filing Ottawa",
+ "type": "page",
+ "elementor": true,
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "Hero intro",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "PSB defence, SR&amp;ED for Kanata tech, inter-provincial",
+   "after": "PSB defence, inter-provincial",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Services grid - T2 card",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "reviewed for PSB risk and SR&amp;ED eligibility.",
+   "after": "reviewed for PSB risk.",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Services grid card \"SR&ED Tax Credits\"",
+   "editor": "elementor",
+   "action": "delete",
+   "before": "<div class=\\\"ot-svc\\\"><div class=\\\"ot-svc-icon\\\">&#128221;<\\/div><h3>SR&amp;ED Tax Credits<\\/h3><p>SR&amp;ED assessment and filing for Ottawa technology companies. Kanata North SaaS, cybersecurity, AI, cleantech and defence technology corporations frequently qualify for the 35% refundable credit. Custom software development, algorithm design and engineering prototyping all qualify.<\\/p><\\/div>\\r\\n",
+   "after": "",
+   "needs_sharad": false,
+   "note": "Service card: SR&ED assessment and filing"
+  },
+  {
+   "location": "Visible",
+   "section": "Expertise item - SR&ED bullets (assess, prepare T661, calculate, file, respond to CRA)",
+   "editor": "elementor",
+   "action": "delete",
+   "before": "<li>Assess SR&amp;ED eligibility for SaaS development, cybersecurity research, AI\\/ML algorithm design, cleantech engineering and defence technology prototyping.<\\/li><li>Prepare the T661 technical narrative demonstrating technological uncertainty and systematic investigation, not just routine feature development.<\\/li><li>Calculate eligible expenditures including software developer salaries, algorithm design costs, cloud infrastructure for R&amp;D environments and subcontracted development.<\\/li><li>File the SR&amp;ED claim with the T2 to claim the 35% refundable investment tax credit for qualifying Ottawa CCPCs.<\\/li><li>Respond to CRA SR&amp;ED reviewer inquiries with technical documentation supporting the systematic investigation claim.<\\/li>",
+   "after": "",
+   "needs_sharad": false,
+   "note": "All bullets are SR&ED service tasks; the item heading and informational subheading stay"
+  },
+  {
+   "location": "Visible",
+   "section": "Case card \"(SR&ED Credit Recovery)\"",
+   "editor": "elementor",
+   "action": "delete",
+   "before": "<div class=\\\"ot-case-card\\\"><h3>SaaS Company, Kanata North (SR&amp;ED Credit Recovery)<\\/h3><p>A Kanata North cybersecurity SaaS company had never claimed SR&amp;ED in its first three years despite spending $480,000 annually on software development, threat detection algorithm design and automated penetration testing platform engineering. The founder assumed SR&amp;ED was only for hardware R&amp;D in a lab. Our review identified $1,440,000 in eligible expenditures across three years and filed T661 forms for each year.<\\/p><div class=\\\"ot-case-stat\\\">$504,000 SR&amp;ED refund. 35% refundable credit on three years of eligible R&amp;D.<\\/div><\\/div>\\r\\n",
+   "after": "",
+   "needs_sharad": false,
+   "note": "Sales-proof case where the firm filed T661 and recovered SR&ED credits"
+  },
+  {
+   "location": "Visible",
+   "section": "Comparison table - SR&ED credits row",
+   "editor": "elementor",
+   "action": "delete",
+   "before": "<tr><td>SR&amp;ED credits<\\/td><td>Not assessed.<\\/td><td>Every tech and manufacturing client assessed for SR&amp;ED eligibility.<\\/td><\\/tr>\\r\\n",
+   "after": "",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Pricing table - SR&ED Tax Credit fee row",
+   "editor": "elementor",
+   "action": "delete",
+   "before": "<tr><td>SR&amp;ED Tax Credit<\\/td><td>15-20% contingency<\\/td><td>6 to 8 weeks<\\/td><td>Kanata North tech, cybersecurity, AI, defence. Technical narrative + expenditure calculation. $1,000 retainer.<\\/td><\\/tr>\\r\\n",
+   "after": "",
+   "needs_sharad": false,
+   "note": "SR&ED contingency fee + retainer"
+  },
+  {
+   "location": "Visible",
+   "section": "FAQ \"Can ... technology companies claim SR&ED?\"",
+   "editor": "elementor",
+   "action": "replace",
+   "before": " We assess SR&amp;ED eligibility for every Ottawa technology client. <a href=\\\"https:\\/\\/gondaliyacpa.ca\\/sred-tax-credits\\/\\\">SR&amp;ED Assessment &#8594;",
+   "after": " <a href=\\\"https:\\/\\/gondaliyacpa.ca\\/sred-tax-credits\\/\\\">How SR&amp;ED works &#8594;",
+   "needs_sharad": false,
+   "note": "Eligibility answer stays; offer sentence dropped, anchor neutralized"
+  },
+  {
+   "location": "Visible",
+   "section": "FAQ \"How do I get started?\"",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "(CCA, SR&amp;ED, Clean Tech ITC)",
+   "after": "(CCA, Clean Tech ITC)",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Services grid - CRA card",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "Responding to PSB reviews, SR&amp;ED audits, management fee challenges and inter-provincial allocation inquiries.",
+   "after": "Responding to PSB reviews, management fee challenges and inter-provincial allocation inquiries.",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "CRA audit list",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "for PSB reviews, SR&amp;ED audits, management fee challenges and inter-provincial inquiries.",
+   "after": "for PSB reviews, management fee challenges and inter-provincial inquiries.",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "CRA audit list",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "with PSB four-part test evidence, SR&amp;ED technical narratives and Schedule 5 calculations.",
+   "after": "with PSB four-part test evidence and Schedule 5 calculations.",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "CRA audit list",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "through PSB reclassification reviews, SR&amp;ED eligibility audits and management fee deduction challenges.",
+   "after": "through PSB reclassification reviews and management fee deduction challenges.",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "CRA audit list",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "when CRA issues PSB reclassification or denies SR&amp;ED claims,",
+   "after": "when CRA issues PSB reclassification,",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Why choose card",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "<h3>PSB Defence and SR&amp;ED Expertise<\\/h3><p>PSB four-part test documentation for federal contractors. SR&amp;ED claims for Kanata North tech. Inter-provincial",
+   "after": "<h3>PSB Defence Expertise<\\/h3><p>PSB four-part test documentation for federal contractors. Inter-provincial",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Closing paragraph (other services)",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "incorporation, PSB defence, SR&amp;ED and CRA audit resolution.",
+   "after": "incorporation, PSB defence and CRA audit resolution.",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Team bio - Sharad",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "Federal contracting PSB defence, SR&amp;ED and inter-provincial allocation expertise.",
+   "after": "Federal contracting PSB defence and inter-provincial allocation expertise.",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Team bio - Vandana",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "PSB documentation, SR&amp;ED T661 forms and CRA audit response",
+   "after": "PSB documentation and CRA audit response",
+   "needs_sharad": false,
+   "note": ""
+  }
+ ],
+ "page_note": "Corporate tax filing Ottawa (Elementor city template). SR&ED offered via hero, service cards, expertise bullets, CRA list, case study, contingency fee, comparison row, why-choose, closing paragraph, team bios, FAQ. Rows strip offer/fee items; informational lines (Kanata SR&ED volume, compliance-risk paragraph, SR&ED documentation table row, FAQ eligibility answer + JSON-LD) stay. HTML comment at top holds a draft meta description (not rendered)."
+}

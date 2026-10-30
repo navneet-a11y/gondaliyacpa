@@ -1,0 +1,30 @@
+{
+  "id": 25594,
+  "url": "https://gondaliyacpa.ca/?elementor_library=taxreturn",
+  "title": "taxreturn",
+  "type": "elementor_library",
+  "elementor": true,
+  "rows": [
+    {
+      "location": "Visible",
+      "section": "Services list item",
+      "editor": "elementor",
+      "action": "replace",
+      "before": "Maximize credits and deductions (Small Business Deduction, SR&amp;ED, digital adoption, etc.)",
+      "after": "Maximize credits and deductions (Small Business Deduction, digital adoption, etc.)",
+      "needs_sharad": false,
+      "note": ""
+    },
+    {
+      "location": "Visible",
+      "section": "Deductions/credits paragraph (\"We also guide you...\")",
+      "editor": "elementor",
+      "action": "replace",
+      "before": "SR&amp;ED (Scientific Research &amp; Experimental Development), digital adoption",
+      "after": "digital adoption",
+      "needs_sharad": false,
+      "note": "\"We also guide you to valuable credits like ... SR&ED ... Our expertise ensures you maximize savings\"."
+    }
+  ],
+  "page_note": "Elementor template 'taxreturn'. SR&ED listed among credits the firm maximizes/guides clients to (service list + paragraph); removed from those lists."
+}

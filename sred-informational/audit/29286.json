@@ -1,0 +1,180 @@
+{
+ "id": 29286,
+ "url": "https://gondaliyacpa.ca/advanced-corporate-tax-planning-maximize-deductions-credits-and-sred-opportunities/",
+ "title": "Advanced Corporate Tax Planning: Maximize Deductions, Credits, and SR&amp;ED Opportunities",
+ "type": "post",
+ "elementor": false,
+ "rows": [
+  {
+   "location": "Meta",
+   "section": "Rank Math meta description",
+   "editor": "rank_math",
+   "action": "replace",
+   "before": "Learn advanced corporate tax planning strategies to maximize deductions, credits, and SR&amp;ED opportunities. Schedule a free consultation today.",
+   "after": "Learn advanced corporate tax planning strategies to maximize deductions, credits, and SR&amp;ED opportunities for Canadian corporations.",
+   "needs_sharad": true,
+   "note": "Drops the \"Schedule a free consultation today\" CTA from the meta description"
+  },
+  {
+   "location": "Visible",
+   "section": "intro paragraph",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "<p>Advanced Corporate Tax Planning with Gondaliya CPA focuses on using SR&amp;ED",
+   "after": "<p>Advanced Corporate Tax Planning focuses on using SR&amp;ED",
+   "needs_sharad": false,
+   "note": "Drops \"with Gondaliya CPA\" from the SR&ED sentence"
+  },
+  {
+   "location": "Visible",
+   "section": "after intro paragraph (block editor)",
+   "editor": "post_content",
+   "action": "insert_after",
+   "before": "improve cash flow effectively.</p>\n<!-- /wp:paragraph -->",
+   "after": "improve cash flow effectively.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"sred-notice\"><strong>Gondaliya CPA does not prepare SR&amp;ED claims. This page explains how the SR&amp;ED program works, for general information only.</strong></p>\n<!-- /wp:paragraph -->",
+   "needs_sharad": false,
+   "note": "Informational notice per RULES.md, inserted as its own paragraph block"
+  },
+  {
+   "location": "Visible",
+   "section": "Who This Service Is For list",
+   "editor": "post_content",
+   "action": "delete",
+   "before": "<!-- wp:list-item -->\n<li>Companies working on projects that can claim SR&amp;ED credits.</li>\n<!-- /wp:list-item -->\n\n",
+   "after": "",
+   "needs_sharad": false,
+   "note": "Lists SR&ED claimants as an audience for the firm service"
+  },
+  {
+   "location": "Visible",
+   "section": "How the Service Works intro",
+   "editor": "post_content",
+   "action": "replace",
+   "before": " We look for all chances to save taxes — including SR&amp;ED credits — while keeping you inside CRA rules.",
+   "after": " We look for all chances to save taxes while keeping you inside CRA rules.",
+   "needs_sharad": false,
+   "note": "Tax planning service stays; drops SR&ED from the firm offer"
+  },
+  {
+   "location": "Visible",
+   "section": "How the Service Works: step 3 Review Data",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "to see what fits the CRA rules for SR&amp;ED and other deductions.",
+   "after": "to see what fits the CRA rules for deductions.",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "What We Need from You",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "for your corporate tax planning — including accurate SR&amp;ED credit claims — here’s what helps:",
+   "after": "for your corporate tax planning, here’s what helps:",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "options summary paragraph",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "Registered CPAs like Gondaliya CPA, or non-certified providers",
+   "after": "Registered CPAs, or non-certified providers",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Deliverables intro",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "<p>When you work on advanced corporate tax planning or claim SR&amp;ED tax credits, you get clear deliverables.",
+   "after": "<p>When you work on advanced corporate tax planning, you get clear deliverables.",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Deliverables table",
+   "editor": "post_content",
+   "action": "delete",
+   "before": "<tr><td>SR&amp;ED Claim Package</td><td>All paperwork proving R&amp;D costs for CRA. Has technical stories and financial summaries.</td><td>Businesses with qualifying research projects</td><td>Before T2 filing deadline (about 18 months after year-end)</td></tr>",
+   "after": "",
+   "needs_sharad": false,
+   "note": "\"SR&ED Claim Package\" deliverable row (technical stories, financial summaries)"
+  },
+  {
+   "location": "Visible",
+   "section": "Deliverables table (Compliance Checklist)",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "steps to stay CRA-compliant with taxes and SR&amp;ED claims.</td>",
+   "after": "steps to stay CRA-compliant with taxes.</td>",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Pricing H2",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "Pricing: What Affects the Cost of Corporate Tax Planning and SR&amp;ED Tax Credits in Canada</h2>",
+   "after": "Pricing: What Affects the Cost of Corporate Tax Planning in Canada</h2>",
+   "needs_sharad": true,
+   "note": "SR&ED fees in heading"
+  },
+  {
+   "location": "Visible",
+   "section": "Pricing intro",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "<p>The <a href=\"https://gondaliyacpa.ca/pricing-calculation/\">price for corporate tax planning</a> plus SR&amp;ED credit help depends",
+   "after": "<p>The price for corporate tax planning depends",
+   "needs_sharad": false,
+   "note": "Drops SR&ED credit help from the fee statement and unlinks /pricing-calculation/ (CTA on a dedicated URL)"
+  },
+  {
+   "location": "Visible",
+   "section": "Pricing drivers table",
+   "editor": "post_content",
+   "action": "delete",
+   "before": "<tr><td>R&amp;D Activity Complexity</td><td>Big or complex R&amp;D projects need careful technical reviews for correct SR&amp;ED claims.</td><td>Keep detailed project notes as you go; involve CPAs early in R&amp;D stages.</td></tr>",
+   "after": "",
+   "needs_sharad": false,
+   "note": "SR&ED claim complexity as a fee driver"
+  },
+  {
+   "location": "Visible",
+   "section": "Pricing closing paragraph",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "all deductions and credits—including important SR&amp;ED ones—to optimize",
+   "after": "all deductions and credits to optimize",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Key Points list",
+   "editor": "post_content",
+   "action": "delete",
+   "before": "<!-- wp:list-item -->\n<li>R&amp;D activity complexity demands expert technical reviews to maximize eligible claims properly.</li>\n<!-- /wp:list-item -->\n\n",
+   "after": "",
+   "needs_sharad": false,
+   "note": "SR&ED claim review as a service element"
+  },
+  {
+   "location": "Button",
+   "section": "closing CTA paragraph (Schedule a free consultation)",
+   "editor": "post_content",
+   "action": "delete",
+   "before": "<!-- wp:paragraph -->\n<p>Maximize every available tax advantage while staying fully compliant with evolving regulations and CRA requirements. Our experts help you uncover hidden savings and optimize your long-term corporate tax strategy. <strong><a href=\"https://gondaliyacpa.ca/consultation/\" data-type=\"page\" data-id=\"15736\">Schedule a free consultation today</a></strong> to discover how much your business can save with smart, proactive tax planning.</p>\n<!-- /wp:paragraph -->\n\n",
+   "after": "",
+   "needs_sharad": false,
+   "note": "CTA on a dedicated SR&ED URL; whole paragraph block removed"
+  }
+ ],
+ "page_note": "Non-Elementor (block editor) post about corporate tax planning with SR&ED as one credit. Tax-planning service text kept; only SR&ED offer clauses, SR&ED deliverable/fee rows and CTAs changed. Comparison tables, industry notes and FAQ (no schema) informational. No JSON-LD on this post."
+}

@@ -1,0 +1,20 @@
+{
+ "id": 51083,
+ "url": "https://gondaliyacpa.ca/exporter-tax-planning-canada/",
+ "title": "How Exporters in Canada Can Reduce Taxes and Improve Cash Flow With Strategic Tax Planning",
+ "type": "post",
+ "elementor": false,
+ "rows": [
+  {
+   "location": "JSON-LD",
+   "section": "Service schema serviceType",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "passive income review, SR&ED assessment with Canadian and foreign expenditure separation, T2 corporate return",
+   "after": "passive income review, T2 corporate return",
+   "needs_sharad": false,
+   "note": ""
+  }
+ ],
+ "page_note": "Exporter post. Visible SR&ED mentions informational (eligibility paragraph with link, checklist tip, Bill C-15 note)."
+}

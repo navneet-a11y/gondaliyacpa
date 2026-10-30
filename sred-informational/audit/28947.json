@@ -1,0 +1,50 @@
+{
+  "id": 28947,
+  "url": "https://gondaliyacpa.ca/corporate-tax-planning-strategies-for-small-and-medium-businesses-in-canada/",
+  "title": "Corporate Tax Planning Strategies for Small and Medium Businesses in Canada ",
+  "type": "post",
+  "elementor": false,
+  "rows": [
+    {
+      "location": "Visible",
+      "section": "Advanced planning paragraph",
+      "editor": "post_content",
+      "action": "replace",
+      "before": "Help with SR&amp;ED claims fits into advanced planning but demands precise paperwork",
+      "after": "SR&amp;ED claims fit into advanced planning but demand precise paperwork",
+      "needs_sharad": false,
+      "note": ""
+    },
+    {
+      "location": "Visible",
+      "section": "\"Extra help\" list",
+      "editor": "post_content",
+      "action": "replace",
+      "before": "If you qualify, we assist with Scientific Research &amp; Experimental Development (SR&amp;ED) credit claims. This can bring back money for your innovation work.",
+      "after": "If you qualify, Scientific Research &amp; Experimental Development (SR&amp;ED) credits can bring back money for your innovation work.",
+      "needs_sharad": false,
+      "note": ""
+    },
+    {
+      "location": "Visible",
+      "section": "Deliverables Table row \"SR&ED Credit Claim Support*\"",
+      "editor": "post_content",
+      "action": "delete",
+      "before": "<tr><td><a href=\"https://gondaliyacpa.ca/sred-tax-credit-claims/\" data-type=\"page\" data-id=\"24687\">SR&amp;ED Credit Claim Support*</a></td><td>Help with R&amp;D tax credit claims</td><td>Eligible innovators/startups</td><td>During claim period</td><td>Project docs; technical summaries</td></tr>",
+      "after": "",
+      "needs_sharad": false,
+      "note": "Row lists SR&ED claim support as a firm deliverable; nothing informational left. Removes one internal link to /sred-tax-credit-claims/ (alternative: keep row with neutral anchor if link equity matters). Check for a footnote explaining the \"*\"."
+    },
+    {
+      "location": "Visible",
+      "section": "FAQ \"Can Gondaliya CPA assist with SR&ED claims for innovation projects?\" answer",
+      "editor": "post_content",
+      "action": "replace",
+      "before": "Yes. We support <a href=\"https://gondaliyacpa.ca/claiming-sred-tax-credits-what-canadian-businesses-need-to-know/\"",
+      "after": "No. Gondaliya CPA does not prepare SR&amp;ED claims. Our guide explains <a href=\"https://gondaliyacpa.ca/claiming-sred-tax-credits-what-canadian-businesses-need-to-know/\"",
+      "needs_sharad": false,
+      "note": "Question kept; answer rewritten. Resulting sentence: \"...Our guide explains Scientific Research & Experimental Development claims to recover R&D expenses.\" Check wording. No FAQPage JSON-LD on this post."
+    }
+  ],
+  "page_note": "SMB corporate tax planning post. Offer lines (we assist with SR&ED claims, deliverables row, FAQ answer 'Yes. We support...') rewritten/removed."
+}

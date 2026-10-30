@@ -1,0 +1,40 @@
+{
+ "id": 37387,
+ "url": "https://gondaliyacpa.ca/corporate-tax-filing-hamilton/",
+ "title": "Corporate Tax Filing Hamilton",
+ "type": "page",
+ "elementor": true,
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "Expertise item 4 heading",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "<h3>SR&amp;ED Tax Credits<\\/h3><\\/div><p class=\\\"hm-exp-sub\\\">Proactive planning",
+   "after": "<h3>Tax Planning<\\/h3><\\/div><p class=\\\"hm-exp-sub\\\">Proactive planning",
+   "needs_sharad": false,
+   "note": "Heading names SR&ED as an expertise area but the item content is tax planning; heading appears mislabeled. Replacement text is a suggestion."
+  },
+  {
+   "location": "Visible",
+   "section": "Comparison table - SR&ED credits row",
+   "editor": "elementor",
+   "action": "delete",
+   "before": "<tr><td>SR&amp;ED credits<\\/td><td>Not assessed.<\\/td><td>Every tech and manufacturing client assessed for SR&amp;ED eligibility.<\\/td><\\/tr>\\r\\n",
+   "after": "",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "FAQ \"How do I get started?\"",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "(CCA, SR&amp;ED, Clean Tech ITC)",
+   "after": "(CCA, Clean Tech ITC)",
+   "needs_sharad": false,
+   "note": ""
+  }
+ ],
+ "page_note": "Corporate tax filing Hamilton (Elementor city template). Only SR&ED items: mislabeled expertise heading \"SR&ED Tax Credits\" over tax-planning content, comparison-table row \"Every tech and manufacturing client assessed for SR&ED eligibility\", and SR&ED in the consultation FAQ. HTML comment at top holds a draft meta description (not rendered)."
+}

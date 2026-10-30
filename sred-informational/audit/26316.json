@@ -1,0 +1,50 @@
+{
+  "id": 26316,
+  "url": "https://gondaliyacpa.ca/?elementor_library=constneww",
+  "title": "constneww",
+  "type": "elementor_library",
+  "elementor": true,
+  "rows": [
+    {
+      "location": "Visible",
+      "section": "Icon box title (service card)",
+      "editor": "elementor",
+      "action": "replace",
+      "before": "\"ekit_icon_box_title_text\":\"SR&ED Tax Credit Claims for Construction Companies\",\"ekit_icon_box_badge_title\":\"EXCLUSIVE\"",
+      "after": "\"ekit_icon_box_title_text\":\"How SR&ED Tax Credits Work for Construction Companies\",\"ekit_icon_box_badge_title\":\"\"",
+      "needs_sharad": false,
+      "note": "Service card offering SR&ED claims with EXCLUSIVE badge; neutral title, badge cleared, link to SR&ED page kept."
+    },
+    {
+      "location": "Visible",
+      "section": "Icon box description (service card)",
+      "editor": "elementor",
+      "action": "replace",
+      "before": "\"ekit_icon_box_description_text\":\"Maximize your R&D incentives with accurate Scientific Research & Experimental Development (SR&ED) claims.\"",
+      "after": "\"ekit_icon_box_description_text\":\"How Scientific Research & Experimental Development (SR&ED) credits support R&D spending.\"",
+      "needs_sharad": false,
+      "note": ""
+    },
+    {
+      "location": "Visible",
+      "section": "Case study card \"Problem\"",
+      "editor": "elementor",
+      "action": "replace",
+      "before": "Missed opportunities for R&amp;D tax credits and other construction-related tax incentives.",
+      "after": "Missed opportunities for construction-related tax incentives.",
+      "needs_sharad": true,
+      "note": "Client case study implying the firm claimed R&D (SR&ED) credits; \"$28K+ in tax credits claimed\" then refers to other incentives - Sharad to confirm."
+    },
+    {
+      "location": "Visible",
+      "section": "Tax planning text widget",
+      "editor": "elementor",
+      "action": "replace",
+      "before": "incentives like GST\\/HST adjustments and R&amp;D claims.",
+      "after": "incentives like GST\\/HST adjustments.",
+      "needs_sharad": false,
+      "note": ""
+    }
+  ],
+  "page_note": "Elementor template 'constneww' (construction). EXCLUSIVE SR&ED icon-box card, R&D credits in a case study and 'we identify ... R&D claims' line rewritten."
+}

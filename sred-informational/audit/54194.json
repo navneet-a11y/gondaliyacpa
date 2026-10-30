@@ -1,0 +1,250 @@
+{
+ "id": 54194,
+ "url": "https://gondaliyacpa.ca/hardware-startup-tax-credits-canada/",
+ "title": "Hardware Startup Tax Credits in Canada: SR&amp;ED, Investment Incentives &amp; Eligible Development Costs",
+ "type": "post",
+ "elementor": false,
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "intro paragraph",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "for hardware firms. Gondaliya CPA provides <a class=\"wpil_keyword_link\"",
+   "after": "for hardware firms. This guide gives <a class=\"wpil_keyword_link\"",
+   "needs_sharad": false,
+   "note": "Sentence now: \"This guide gives expert advice to help hardware startups in Canada navigate these tax options...\" (link kept)"
+  },
+  {
+   "location": "Visible",
+   "section": "after intro paragraph",
+   "editor": "post_content",
+   "action": "insert_after",
+   "before": " navigate these tax options and optimize their financial benefits.</p>",
+   "after": " navigate these tax options and optimize their financial benefits.</p>\n<p class=\"sred-notice\"><strong>Gondaliya CPA does not prepare SR&amp;ED claims. This page explains how the SR&amp;ED program works, for general information only.</strong></p>",
+   "needs_sharad": false,
+   "note": "Informational notice per RULES.md"
+  },
+  {
+   "location": "Visible",
+   "section": "section 7 \"Working with a CPA Firm\" pill label",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "<span class=\"gcpa-pill teal\">Why Us</span>",
+   "after": "<span class=\"gcpa-pill teal\">The Role</span>",
+   "needs_sharad": false,
+   "note": "\"Why Us\" sales label on the SR&ED section"
+  },
+  {
+   "location": "Visible",
+   "section": "section 7 Ongoing Compliance list",
+   "editor": "post_content",
+   "action": "replace",
+   "before": " prepared under CSRS 4200 alongside the claim, with CRA review support on eligibility, cost allocation and technical narratives, with <a",
+   "after": " prepared under CSRS 4200, with <a",
+   "needs_sharad": false,
+   "note": "Drops SR&ED claim review support from the firm service line; compiled statements and CRA representation stay"
+  },
+  {
+   "location": "Visible",
+   "section": "section 7 \"Further Information and Support Channels\" (H5 + contact paragraph)",
+   "editor": "post_content",
+   "action": "delete",
+   "before": "<h5 style=\"color:#15355c;margin:24px 0 8px;\">Further Information and Support Channels</h5>\n<p>Call <strong>647-212-9559</strong> or email <strong>info@gondaliyacpa.ca</strong>. We reply within one business day and offer a <a class=\"wpil_keyword_link\" href=\"https://gondaliyacpa.ca/consultation/\" title=\"Book a Consultation\">free initial consultation</a>. Gondaliya CPA is a CPA Ontario Registered Firm, verifiable on the <a href=\"https://www.cpaontario.ca/protecting-the-public/directories/firm/gondaliya-5sqvmj\">CPA Ontario public firm directory</a>, serving Toronto, Vaughan, Mississauga, Brampton, Ottawa and clients across Canada.</p>\n",
+   "after": "",
+   "needs_sharad": true,
+   "note": "Phone/email, free initial consultation link, firm credentials; nothing informational. Removes an H5"
+  },
+  {
+   "location": "Visible",
+   "section": "FAQ \"Why choose Gondaliya CPA for a hardware startup claim?\" (visible only; not in JSON-LD)",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "<div class=\"ans\"><p>We work the mechanics that decide the outcome: the consumed-versus-transformed split, specified employee caps, the 80% contract rule, the overhead election modelled both ways, assistance deducted in the right order, and the capital restoration applied to the right acquisition dates. Narratives are written",
+   "after": "<div class=\"ans\"><p>Gondaliya CPA does not prepare SR&amp;ED claims. What decides the outcome of a hardware claim is the mechanics: the consumed-versus-transformed split, specified employee caps, the 80% contract rule, the overhead election modelled both ways, assistance deducted in the right order, and the capital restoration applied to the right acquisition dates. Narratives should be written",
+   "needs_sharad": false,
+   "note": "FAQ answer offered the service; question kept per RULES"
+  },
+  {
+   "location": "Visible",
+   "section": "FAQ \"What deliverables do you receive?\" (visible only)",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "<div class=\"ans\"><p>A project eligibility assessment against the three criteria, Form",
+   "after": "<div class=\"ans\"><p>A complete claim package usually includes a project eligibility assessment against the three criteria, Form",
+   "needs_sharad": false,
+   "note": "Answer listed the firm's SR&ED deliverables; now a neutral description"
+  },
+  {
+   "location": "Visible",
+   "section": "FAQ \"How much does startup accounting cost in Canada?\" (visible only)",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "What moves it is the number of SR&amp;ED projects, how many provinces,",
+   "after": "What moves it is how many provinces,",
+   "needs_sharad": false,
+   "note": "Drops SR&ED projects from the firm fee drivers (SR&ED fees)"
+  },
+  {
+   "location": "Visible",
+   "section": "Guidance H2",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "<h2>Professional Guidance: How Gondaliya CPA Handles Your Hardware Claim</h2>",
+   "after": "<h2>Professional Guidance: What Decides a Hardware Claim</h2>",
+   "needs_sharad": true,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Guidance paragraph 1",
+   "editor": "post_content",
+   "action": "replace",
+   "before": " Gondaliya CPA handles hardware startup SR&amp;ED on a flat annual fee.</p>",
+   "after": "</p>",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Guidance paragraph 2",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "<p>We handle what decides the outcome: testing",
+   "after": "<p>What decides the outcome: testing",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Guidance paragraph 3",
+   "editor": "post_content",
+   "action": "delete",
+   "before": "<p>Our team starts with one project, one month of time records and your last T2. Whatever you build, you get clear advice and a fixed price before we start.</p>\n",
+   "after": "",
+   "needs_sharad": false,
+   "note": "Firm offer + fixed price"
+  },
+  {
+   "location": "Visible",
+   "section": "closing H2",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "<h2>Hardware Startup Tax Canada: How Gondaliya CPA Supports Innovators</h2>",
+   "after": "<h2>Hardware Startup Tax Canada: Getting Ready to Claim</h2>",
+   "needs_sharad": true,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Next Steps paragraph",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "<p>Please book a free consultation with Gondaliya CPA and bring one project description, one month of time records, and your last T2 with any prior T661. Those three settle the eligibility question, the cost allocation question and the deadline question, which is where most of the value sits for a hardware startup. You will get a flat annual fee including HST before any work begins. We serve Toronto, Vaughan, Mississauga, Brampton, Ottawa and the rest of Ontario, and work with startups across Canada.",
+   "after": "<p>Before preparing a claim, gather one project description, one month of time records, and your last T2 with any prior T661. Those three settle the eligibility question, the cost allocation question and the deadline question, which is where most of the value sits for a hardware startup.",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Button",
+   "section": "mid-article CTA banner #1",
+   "editor": "post_content",
+   "action": "delete",
+   "before": "<div class=\"gcpa-banner\">\n<div class=\"bt\">Building hardware in Canada and want your SR&amp;ED position checked before you file? The first conversation is free.</div>\n<div class=\"bb\"><a class=\"solid\" href=\"https://gondaliyacpa.ca/consultation/\">Book Free Consultation</a><a href=\"mailto:info@gondaliyacpa.ca\">info@gondaliyacpa.ca</a><a href=\"tel:+16472129559\">647-212-9559</a></div>\n</div>\n",
+   "after": "",
+   "needs_sharad": false,
+   "note": "Banner: \"\nBuilding hardware in Canada and want your SR&amp;ED position checked before you file? The first conversation is free.\" + Book Free Consultation / mailto / tel buttons"
+  },
+  {
+   "location": "Visible",
+   "section": "self-check widget (result panel)",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "<b>Points to raise with us:</b>",
+   "after": "<b>Points to raise:</b>",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "self-check widget (result panel)",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "<b>Worth reviewing with us:</b>",
+   "after": "<b>Worth reviewing:</b>",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "self-check widget (result panel)",
+   "editor": "post_content",
+   "action": "replace",
+   "before": " A free review can confirm nothing is being missed.</p>",
+   "after": "</p>",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Button",
+   "section": "self-check widget (result panel)",
+   "editor": "post_content",
+   "action": "delete",
+   "before": "\n    <a class=\"p-cta\" href=\"https://gondaliyacpa.ca/consultation/\">Book a free consultation</a>",
+   "after": "",
+   "needs_sharad": false,
+   "note": "\"Book a free consultation\" button"
+  },
+  {
+   "location": "Visible",
+   "section": "self-check widget (note)",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "For a real review, please book a free consultation.</p>",
+   "after": "For a real review, please consult a licensed CPA.</p>",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "checklist download line",
+   "editor": "post_content",
+   "action": "replace",
+   "before": " before your consultation.</p>",
+   "after": ".</p>",
+   "needs_sharad": false,
+   "note": "Keeps the checklist link; drops the consultation reference"
+  },
+  {
+   "location": "Visible",
+   "section": "\"why choose us\" image (before Verdict callout)",
+   "editor": "post_content",
+   "action": "delete",
+   "before": "<figure style=\"margin:18px 0;\"><img src=\"https://gondaliyacpa.ca/wp-content/uploads/2026/10/why-gondaliya-cpa-hardware.png\" alt=\"Why Canadian hardware startups choose Gondaliya CPA\" style=\"width:100%;border-radius:12px;border:1px solid #d8e0e8;\" /><figcaption style=\"font-size:13px;color:#5a6b7b;text-align:center;padding:6px;\">Why small businesses choose us.</figcaption></figure>\n",
+   "after": "",
+   "needs_sharad": false,
+   "note": "Sales-proof image: alt \"Why Canadian hardware startups choose Gondaliya CPA\""
+  },
+  {
+   "location": "Button",
+   "section": "closing CTA box",
+   "editor": "post_content",
+   "action": "delete",
+   "before": "<div class=\"gcpa-cta\">\n<h4>Start with one project and one month of time records</h4>\n<p>Gondaliya CPA tests your projects against technological uncertainty, systematic investigation and advancement, splits materials consumed from materials transformed, applies the specified employee cap at five times the YMPE, takes arm's length contracts in at 80%, models the overhead election both ways, deducts grants and provincial credits from the pool in the right order, reassesses capital purchases against the 16 December 2024 restoration, and files Form T661 with Schedule 31 and Ontario Schedule 508 by the 18-month deadline &mdash; on a flat annual fee including HST with a one-business-day response. Please book a free consultation.</p>\n<div class=\"gcpa-trust\"><span>1450+ 5-star Google reviews</span><span>CPA Ontario Registered Firm</span><span>Fixed-Fee Pricing</span><span>SR&amp;ED Eligibility Reviews</span></div>\n<div class=\"gcpa-btnrow\"><a class=\"solid\" href=\"https://gondaliyacpa.ca/consultation/\">Book Free Consultation</a><a href=\"tel:+16472129559\">647-212-9559</a><a href=\"mailto:info@gondaliyacpa.ca\">info@gondaliyacpa.ca</a></div>\n</div>\n",
+   "after": "",
+   "needs_sharad": false,
+   "note": "CTA box: H4 \"Start with one project and one month of time records\", offer paragraph (firm prepares/defends the claim, fixed fee, book a free consultation), trust strip (1450+ reviews ...), Book/tel/mailto buttons"
+  },
+  {
+   "location": "JSON-LD",
+   "section": "Service schema node",
+   "editor": "post_content",
+   "action": "delete",
+   "before": ",\n    { \"@type\": \"Service\",\n      \"name\": \"Hardware Startup SR&ED and Tax Credit Services\",\n      \"serviceType\": \"SR&ED claim preparation and accounting services for Canadian hardware startups, including project eligibility assessment, technical narratives on Form T661, cost allocation across salaries, materials consumed and transformed, contract payments and overhead, specified employee caps, government assistance reductions, provincial credit schedules, clean economy investment tax credits, T2 filing and CRA review representation.\",\n      \"provider\": { \"@id\": \"https://gondaliyacpa.ca/#organization\" }, \"areaServed\": \"CA\",\n      \"audience\": { \"@type\": \"Audience\", \"audienceType\": \"Incorporated Canadian hardware startups in electronics, devices, instruments, robotics and clean technology across Toronto, Ontario and Canada\" } }",
+   "after": "",
+   "needs_sharad": false,
+   "note": "Service node with provider = Gondaliya CPA for SR&ED claim work; removed with its leading comma (Article/FAQPage/HowTo kept)"
+  }
+ ],
+ "page_note": "Non-Elementor post. JSON-LD FAQPage is informational; three visible-only FAQ answers rewritten. \"Businesses We Serve\" sections, \"What a CPA Firm Actually Adds\" list and author bios kept. Rank Math title/description informational."
+}

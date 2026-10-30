@@ -1,0 +1,60 @@
+{
+ "id": 51042,
+ "url": "https://gondaliyacpa.ca/cosmetics-manufacturer-accounting-mistakes-canada/",
+ "title": "Common Tax and Accounting Mistakes Cosmetics Manufacturers Make in Canada and How to Avoid Costly Problems",
+ "type": "post",
+ "elementor": false,
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "Flat annual fee paragraph (We support incorporated manufacturers...)",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "incentive review, SR&amp;ED assessment and documentation, GST/HST",
+   "after": "incentive review, GST/HST",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "We handle what decides the outcome paragraph",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "expensing measures, assessing SR&amp;ED on formulation work and setting up the documentation, proving",
+   "after": "expensing measures, proving",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Planning quiz result list (inline JS)",
+   "editor": "post_content",
+   "action": "delete",
+   "before": "if(rv('p-d')===1) items.push('An SR&amp;ED assessment, before the claim window closes');\n      ",
+   "after": "",
+   "needs_sharad": false,
+   "note": "Quiz question on formulation/SR&ED then has no effect; optionally remove it manually."
+  },
+  {
+   "location": "Visible",
+   "section": "Closing paragraph (Gondaliya CPA separates...)",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "expensing measures, assesses SR&amp;ED on formulation work and sets up the documentation, proves",
+   "after": "expensing measures, proves",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "JSON-LD",
+   "section": "Service schema description",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "credit eligibility, SR&ED assessment on formulation work with documentation setup, GST/HST",
+   "after": "credit eligibility, GST/HST",
+   "needs_sharad": false,
+   "note": ""
+  }
+ ],
+ "page_note": "Cosmetics manufacturer post. Informational SR&ED kept (SR&ED on Formulation Work section and link, experience callout about discarded evidence, situations table, FAQs, checklist tips, glossary, Bill C-15 note, author bio)."
+}
