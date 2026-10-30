@@ -4,7 +4,7 @@ Source package: WealthScale-201-Pages.zip (re-attach it to the new session). Pla
 
 ## State at October 30, 2026 (morning)
 - Done: Step 1, Step 2, Step 3 (all 101 first pages, verified by checksum), October 29 check. See STATUS-2026-10-27.md.
-- Next: Day 6 (Friday, October 30): pages 102-117, 186-188, 198. All are new pages. Create 102 /tax/ first (top-level), then use its ID as parent for 104-117.
+- Day 6 done October 30 except page 105 (see STATUS). Next: Day 7 (Saturday, October 31). /tax/ is page ID 482.
 - Parent IDs on the live site: /calculators/ 118, /compare/ 100, /banking/ 117, /accounts/ 99, /benefits/ 119, /reviews/ 101, /reviews/wealthsimple/ 278, /vs/ 110, /learn/ 121, /savings/ 111, /about/ 86.
 - Page 198 offers checked October 30: all four still open by their stated end dates (Neo and KOHO no end date, Tangerine April 30, 2027, Simplii January 31, 2027).
 - Open item 1 (Sharad's CPA review of pages 102-201 "before Day 6") is still Open in the workbook: ask Navneet whether to publish anyway.
