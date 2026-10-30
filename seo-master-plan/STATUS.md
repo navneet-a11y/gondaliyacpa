@@ -26,3 +26,10 @@ Plan: Sharad's email, which replaces all earlier SEO change lists. Rules: see th
   - today's site audit email (the 51 pages)
   - the expert prompt
 - **This container cannot reach gondaliyacpa.ca over HTTP** (the proxy refuses it). Live-page checks and the Rich Results Test need a browser.
+
+## Decisions (Friday, October 30, 2026, from Navneet with Sharad's confirmation)
+
+- **Change 7 (one address and one phone): ON HOLD. Do not apply.** The prep report is kept for later.
+- **Change 12 (Best/Top pages, noindex and rewrites): ON HOLD. Do not apply.**
+- **/review-engagement-services/:** keep its current redirect to /cpa-compilation-report-notice-to-reader/.
+- **No staging:** the security updates (change 1) are done live, after a backup. Content edits wait until Navneet confirms the updates are finished.
