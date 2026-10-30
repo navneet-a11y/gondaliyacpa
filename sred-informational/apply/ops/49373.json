@@ -1,0 +1,32 @@
+{
+ "id": 49373,
+ "editor": "post_content",
+ "sha256_after": "822602514a12f1e8565d303fa2ac0b758605c37f6fcb388a6a4bb1d963893f5e",
+ "ops": [
+  {
+   "row": 0,
+   "search": "identifying SR&amp;ED on process work, ",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 1,
+   "search": "identifies SR&amp;ED on process work, ",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 2,
+   "search": "R&amp;ED credit identification, S",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 3,
+   "search": " or SR&amp;ED claims",
+   "replace": "",
+   "regex": false
+  }
+ ],
+ "skipped": []
+}

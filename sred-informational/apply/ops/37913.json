@@ -1,0 +1,14 @@
+{
+ "id": 37913,
+ "editor": "post_content",
+ "sha256_after": "db1aefab2fb9f55102d07ae6313c76801b2d217219ebdecda33b307256a01aab",
+ "ops": [
+  {
+   "row": 0,
+   "search": ", capital cost allowance timing and, for eligible companies, SR&amp;ED claims, which",
+   "replace": " and capital cost allowance timing. For eligible companies, SR&amp;ED claims",
+   "regex": false
+  }
+ ],
+ "skipped": []
+}

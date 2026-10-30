@@ -1,0 +1,62 @@
+{
+ "id": 46088,
+ "editor": "post_content",
+ "sha256_after": "7f53806d7c9896f7e92c9f0e8fa6c812cbd4a48373d835a5844823e8eb8d828e",
+ "ops": [
+  {
+   "row": 0,
+   "search": "SR&amp;ED claims assistance, ",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 1,
+   "search": "SRandED claims assistance, ",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 2,
+   "search": "including SR&amp;ED claims support ",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 3,
+   "search": "identifying and documenting SR&amp;ED-eligible activity, ",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 4,
+   "search": ", filing a first SR&amp;ED claim,",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 5,
+   "search": "identifies SR&amp;ED-eligible work, ",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 6,
+   "search": "SR&amp;ED support, ",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 7,
+   "search": "SR and ED claim support, ",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 8,
+   "search": " happens');",
+   "replace": " happens (Gondaliya CPA does not prepare SR and ED claims)');",
+   "regex": false
+  }
+ ],
+ "skipped": []
+}

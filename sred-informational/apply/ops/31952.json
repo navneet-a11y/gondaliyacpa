@@ -1,0 +1,111 @@
+{
+ "id": 31952,
+ "editor": "post_content",
+ "sha256_after": "35789d859b85e1f8addd1fe49be589c642926b0925cfb5a1ebf31f77abc13770",
+ "ops": [
+  {
+   "row": 2,
+   "search": "Gondaliya CPA specializes in assisting clients with",
+   "replace": "It covers",
+   "regex": false
+  },
+  {
+   "row": 3,
+   "search": "unting needs.</p>\n<!-- /wp:paragraph -->",
+   "replace": "unting needs.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"sred-notice\"><strong>Gondaliya CPA does not prepare SR&amp;ED claims. This page explains how the SR&amp;ED program works, for general information only.</strong></p>\n<!-- /wp:paragraph -->",
+   "regex": false
+  },
+  {
+   "row": 4,
+   "search": "This service works best for incorporated SMBs in Canada and startups that want help with SR&amp;ED claim",
+   "replace": "SR&amp;ED help of this kind is typically used by incorporated SMBs in Canada and startup",
+   "regex": false
+  },
+  {
+   "row": 5,
+   "search": "<p>For example, Gondaliya CPA offers fixed pricing plus CRA representation if you get audited. This keeps costs clear and lowers stress during reviews.</p>",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 7,
+   "search": "When you pick Gondaliya CPA for&nbsp;<a href=\"https://gondaliyacpa.ca/affordable-accounting-and-bookkeeping-services-for-startups-and-small-businesses/\" data-type=\"post\" data-id=\"31895\"><strong>accounting services</strong>&nbsp;and&nbsp;<strong>bookkeeping services</strong></a>&nbsp;with a focus on&nbsp;<strong>SR&amp;ED accounting</strong>, you get a clear, step-by-step process. It’s made for Canadian incorporated SMBs who",
+   "replace": "An engagement for&nbsp;<a href=\"https://gondaliyacpa.ca/affordable-accounting-and-bookkeeping-services-for-startups-and-small-businesses/\" data-type=\"post\" data-id=\"31895\"><strong>accounting services</strong>&nbsp;and&nbsp;<strong>bookkeeping services</strong></a>&nbsp;with a focus on&nbsp;<strong>SR&amp;ED accounting</strong> usually follows a clear, step-by-step process for Canadian incorporated SMBs that",
+   "regex": false
+  },
+  {
+   "row": 8,
+   "search": "Gondaliya CPAs",
+   "replace": "a CPA",
+   "regex": false
+  },
+  {
+   "row": 9,
+   "search": "We focus on making sure your documents are correct, claims are done right, filings happen on time, and you get support tha",
+   "replace": "The focus is on making sure your documents are correct, claims are done right, filings happen on time, and suppor",
+   "regex": false
+  },
+  {
+   "row": 10,
+   "search": "claims, we suggest",
+   "replace": "claims, a consultant can suggest",
+   "regex": false
+  },
+  {
+   "row": 11,
+   "search": "Here’s what we focus on",
+   "replace": "Typical focus areas",
+   "regex": false
+  },
+  {
+   "row": 12,
+   "search": "We update bookkeeping",
+   "replace": "Bookkeeping should be updated",
+   "regex": false
+  },
+  {
+   "row": 13,
+   "search": "g help, this package",
+   "replace": "g help, a full-service package",
+   "regex": false
+  },
+  {
+   "row": 14,
+   "search": "<p>Gondaliya CPA offers <a href=\"https://gondaliyacpa.ca/pricing-calculation/\" data-type=\"page\" data-id=\"28600\">fixed pricing</a> that stays the same each year for small and medium incorporated businesses across Canada. This means no surprise bills later on. We support clients from start to finish — checking claims, talking with CRA, making sure you get your credits without hidden costs.</p>",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 15,
+   "search": "We perform detailed eligibility assessments, expense categorization, and prepare claims following CRA rules. Our Registered CPAs offer audit support and defense",
+   "replace": "Gondaliya CPA does not prepare SR&amp;ED claims. CRA compliance in an SR&amp;ED claim depends on detailed eligibility assessments, careful expense categorization, and a claim prepared following CRA rules",
+   "regex": false
+  },
+  {
+   "row": 16,
+   "search": "<li>Detailed technical documentation supports SR&amp;ED claims.</li>\n",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 17,
+   "search": "<p>Ready\\ to\\ maximize\\ your\\ SR\\&amp;ED\\ credits\\ and\\ reduce\\ your\\ [\\s\\S]*?elp\\ you\\ maximize\\ your\\ SR\\&amp;ED\\ credits\\ and\\ tax\\ savings\\.</p>",
+   "replace": "",
+   "regex": true
+  }
+ ],
+ "skipped": [
+  {
+   "row": 0,
+   "why": "needs_sharad"
+  },
+  {
+   "row": 1,
+   "why": "needs_sharad"
+  },
+  {
+   "row": 6,
+   "why": "needs_sharad"
+  }
+ ]
+}

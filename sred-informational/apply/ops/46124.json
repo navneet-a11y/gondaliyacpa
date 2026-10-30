@@ -1,0 +1,68 @@
+{
+ "id": 46124,
+ "editor": "post_content",
+ "sha256_after": "73b8e43696795fad7a790d7b5ff2621cb9d821d06622790548ac27ac8c86f83b",
+ "ops": [
+  {
+   "row": 0,
+   "search": "te tax, SR&amp;ED support, GST/HST",
+   "replace": "te tax, GST/HST",
+   "regex": false
+  },
+  {
+   "row": 1,
+   "search": "pecialized Services: S",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 2,
+   "search": " while maximizing credits such as SR&amp;ED refunds during product development phases",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 3,
+   "search": "need help with SR&amp;ED claims",
+   "replace": "have SR&amp;ED-eligible work",
+   "regex": false
+  },
+  {
+   "row": 4,
+   "search": "SR&amp;ED &amp;",
+   "replace": "Tax",
+   "regex": false
+  },
+  {
+   "row": 5,
+   "search": ", SR&amp;ED claims",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 6,
+   "search": "SR&amp;ED claim support, ",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 7,
+   "search": " happens');",
+   "replace": " happens (Gondaliya CPA does not prepare SR and ED claims)');",
+   "regex": false
+  },
+  {
+   "row": 8,
+   "search": "SR&amp;ED support, ",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 9,
+   "search": ", SR and ED claims",
+   "replace": "",
+   "regex": false
+  }
+ ],
+ "skipped": []
+}

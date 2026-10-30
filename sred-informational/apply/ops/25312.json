@@ -1,0 +1,14 @@
+{
+ "id": 25312,
+ "editor": "post_content",
+ "sha256_after": "8b54c865bb13ab2722ba275cf42a1dcd6445fc13d0c2dca7266017269b81bb93",
+ "ops": [
+  {
+   "row": 0,
+   "search": "From investment tax credits to scientific research credit",
+   "replace": "With investment tax credits and other incentive",
+   "regex": false
+  }
+ ],
+ "skipped": []
+}

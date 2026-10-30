@@ -1,0 +1,81 @@
+{
+ "id": 49356,
+ "editor": "post_content",
+ "sha256_after": "5f0a5e9ae65a4056427bd3f37d4daa139e2e85b000990f7dd180cbff893d37ff",
+ "ops": [
+  {
+   "row": 0,
+   "search": " and SR&amp;ED claims for process improvements",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 1,
+   "search": "<li>Help maximize SR&amp;ED tax credits</li>\n",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 2,
+   "search": "<li>Assist with SR&amp;ED claim preparation when needed</li>\n",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 4,
+   "search": "<li>Support for SR&amp;ED claims increases chances for tax credits.</li>\n",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 5,
+   "search": "<tr><td>Optimized Tax Credits</td><td>Adds cash flow from SR&amp;ED claims</td><td>CRA Form T661</td></tr>\n",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 8,
+   "search": "<li>Support for SR&amp;ED claims on process upgrades</li>\n",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 9,
+   "search": "preparing SR&amp;ED claims on process work, ",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 10,
+   "search": "if(rv('p-e')===1) items.push('A possible SR&ED claim on Form T661');\n      ",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 11,
+   "search": "prepares SR&amp;ED on process work, ",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 12,
+   "search": "SR&amp;ED claim preparation, ",
+   "replace": "",
+   "regex": false
+  }
+ ],
+ "skipped": [
+  {
+   "row": 3,
+   "why": "needs_sharad"
+  },
+  {
+   "row": 6,
+   "why": "needs_sharad"
+  },
+  {
+   "row": 7,
+   "why": "needs_sharad"
+  }
+ ]
+}

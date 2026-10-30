@@ -38,3 +38,9 @@ Append one JSON line per page to `apply/log-<batch>.jsonl`:
 {"id":..,"editor":..,"ops":n,"applied":n,"shared":[{"row":..,"rows":[..]}],"failed":[..],"check":"MATCH|DIFFERS|-"}
 
 Final answer: one line per page `id | applied/ops | shared | check`, then any problems. Under 250 words. Do not commit.
+
+## Approved held items (`--sharad` mode)
+Navneet approved every needs_sharad row (see RULES.md, "Approval update"). For a sharad batch, follow the same steps with
+these changes: run `python3 plan.py <id> <file> --sharad` (ops go to `apply/ops-sharad/<id>.json`; rows already live are
+skipped, and manual and rank_math rows are still skipped), verify with `python3 check.py <id> <file> --sharad`, and log to
+`apply/log-sharad-<batch>.jsonl`. If a page plans 0 ops, log it with ops 0 and move on.

@@ -1,0 +1,20 @@
+{
+ "id": 51053,
+ "editor": "post_content",
+ "sha256_after": "0198dc8719b315cc29693e09e9583beaeec99dde8491f3fca23550853510c1ad",
+ "ops": [
+  {
+   "row": 0,
+   "search": "SR&amp;ED assessment, ",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 1,
+   "search": "SR&ED assessment on formulation and process development, ",
+   "replace": "",
+   "regex": false
+  }
+ ],
+ "skipped": []
+}

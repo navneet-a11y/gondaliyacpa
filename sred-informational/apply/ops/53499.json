@@ -1,0 +1,50 @@
+{
+ "id": 53499,
+ "editor": "post_content",
+ "sha256_after": "1ae076fc27e88ac6b07839cb7ebf1481f4f71fcabf559b24d9ee0624c93e9a04",
+ "ops": [
+  {
+   "row": 0,
+   "search": "an SR&amp;ED summary where one applies, ",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 1,
+   "search": " The second year was filed with eight weeks to spare.",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 2,
+   "search": "<li>SR&amp;ED scheduled from the year-end, because the 18-month deadline cannot be fixed later.</li>\n",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 3,
+   "search": "if(rv('p-c')===0) items.push('An SR&ED eligibility and deadline review');\n   ",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 4,
+   "search": "chedule any SR&amp;ED claim from the year-end so the 18-month limitation is never the reason it fails, s",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 5,
+   "search": ", the classification question and the SR&amp;ED",
+   "replace": " and the classification",
+   "regex": false
+  },
+  {
+   "row": 6,
+   "search": "SR&ED claims, ",
+   "replace": "",
+   "regex": false
+  }
+ ],
+ "skipped": []
+}

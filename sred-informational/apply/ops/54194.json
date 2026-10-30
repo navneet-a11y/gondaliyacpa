@@ -1,0 +1,147 @@
+{
+ "id": 54194,
+ "editor": "post_content",
+ "sha256_after": "3af2a9cf5a7930e2f6debbd00c4377a85850ad4946b001e468f125fbf31bbf39",
+ "ops": [
+  {
+   "row": 0,
+   "search": "Gondaliya CPA provid",
+   "replace": "This guide giv",
+   "regex": false
+  },
+  {
+   "row": 1,
+   "search": "al benefits.</p>",
+   "replace": "al benefits.</p>\n<p class=\"sred-notice\"><strong>Gondaliya CPA does not prepare SR&amp;ED claims. This page explains how the SR&amp;ED program works, for general information only.</strong></p>",
+   "regex": false
+  },
+  {
+   "row": 2,
+   "search": "Why Us",
+   "replace": "The Role",
+   "regex": false
+  },
+  {
+   "row": 3,
+   "search": " alongside the claim, with CRA review support on eligibility, cost allocation and technical narratives",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 5,
+   "search": "We work the mechanics that decide the outcome: the consumed-versus-transformed split, specified employee caps, the 80% contract rule, the overhead election modelled both ways, assistance deducted in the right order, and the capital restoration applied to the right acquisition dates. Narratives ar",
+   "replace": "Gondaliya CPA does not prepare SR&amp;ED claims. What decides the outcome of a hardware claim is the mechanics: the consumed-versus-transformed split, specified employee caps, the 80% contract rule, the overhead election modelled both ways, assistance deducted in the right order, and the capital restoration applied to the right acquisition dates. Narratives should b",
+   "regex": false
+  },
+  {
+   "row": 6,
+   "search": "s\"><p>A project ",
+   "replace": "s\"><p>A complete claim package usually includes a project ",
+   "regex": false
+  },
+  {
+   "row": 7,
+   "search": "the number of SR&amp;ED projects, ",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 9,
+   "search": " Gondaliya CPA handles hardware startup SR&amp;ED on a flat annual fee.",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 10,
+   "search": "e handle w",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 11,
+   "search": "<p>Our team starts with one project, one month of time records and your last T2. Whatever you build, you get clear advice and a fixed price before we start.</p>\n",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 13,
+   "search": "Please\\ book\\ a\\ free\\ consultation\\ with\\ Gondaliya\\ CPA\\ and\\ bring[\\s\\S]*?nd\\ the\\ rest\\ of\\ Ontario,\\ and\\ work\\ with\\ startups\\ across\\ Canada",
+   "replace": "Before preparing a claim, gather one project description, one month of time records, and your last T2 with any prior T661. Those three settle the eligibility question, the cost allocation question and the deadline question, which is where most of the value sits for a hardware startup",
+   "regex": true
+  },
+  {
+   "row": 14,
+   "search": "<div class=\"gcpa-banner\">\n<div class=\"bt\">Building hardware in Canada and want your SR&amp;ED position checked before you file? The first conversation is free.</div>\n<div class=\"bb\"><a class=\"solid\" href=\"https://gondaliyacpa.ca/consultation/\">Book Free Consultation</a><a href=\"mailto:info@gondaliyacpa.ca\">info@gondaliyacpa.ca</a><a href=\"tel:+16472129559\">647-212-9559</a></div>\n</div>\n",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 15,
+   "search": "to raise with us:</b>",
+   "replace": "to raise:</b>",
+   "regex": false
+  },
+  {
+   "row": 16,
+   "search": " with us",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 17,
+   "search": " A free review can confirm nothing is being missed.",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 18,
+   "search": "\n    <a class=\"p-cta\" href=\"https://gondaliyacpa.ca/consultation/\">Book a free consultation</a>",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 19,
+   "search": " please book a free consultation.</p>",
+   "replace": " please consult a licensed CPA.</p>",
+   "regex": false
+  },
+  {
+   "row": 20,
+   "search": " before your consultation",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 21,
+   "search": "<figure style=\"margin:18px 0;\"><img src=\"https://gondaliyacpa.ca/wp-content/uploads/2026/10/why-gondaliya-cpa-hardware.png\" alt=\"Why Canadian hardware startups choose Gondaliya CPA\" style=\"width:100%;border-radius:12px;border:1px solid #d8e0e8;\" /><figcaption style=\"font-size:13px;color:#5a6b7b;text-align:center;padding:6px;\">Why small businesses choose us.</figcaption></figure>\n",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 22,
+   "search": "<div\\ class=\"gcpa\\-cta\">\\\n<h4>Start\\ with\\ one\\ project\\ and\\ one\\ mo[\\s\\S]*?info@gondaliyacpa\\.ca\">info@gondaliyacpa\\.ca</a></div>\\\n</div>\\\n",
+   "replace": "",
+   "regex": true
+  },
+  {
+   "row": 23,
+   "search": ",\\\n\\ \\ \\ \\ \\{\\ \"@type\":\\ \"Service\",\\\n\\ \\ \\ \\ \\ \\ \"name\":\\ \"Hardware\\ Startup\\ [\\s\\S]*?and\\ clean\\ technology\\ across\\ Toronto,\\ Ontario\\ and\\ Canada\"\\ \\}\\ \\}",
+   "replace": "",
+   "regex": true
+  }
+ ],
+ "skipped": [
+  {
+   "row": 4,
+   "why": "needs_sharad"
+  },
+  {
+   "row": 8,
+   "why": "needs_sharad"
+  },
+  {
+   "row": 12,
+   "why": "needs_sharad"
+  }
+ ]
+}

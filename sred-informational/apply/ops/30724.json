@@ -1,0 +1,26 @@
+{
+ "id": 30724,
+ "editor": "post_content",
+ "sha256_after": "2c81d657e513a0f1e8cc3a22fd910770aac6633789c48dc3df95b9bb25314877",
+ "ops": [
+  {
+   "row": 0,
+   "search": "research &amp; development credits (SR&amp;ED), small business deduction,",
+   "replace": "small business deduction",
+   "regex": false
+  },
+  {
+   "row": 1,
+   "search": " or R&amp;D claims",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 2,
+   "search": "SR&amp;ED claims or ",
+   "replace": "",
+   "regex": false
+  }
+ ],
+ "skipped": []
+}

@@ -1,0 +1,14 @@
+{
+ "id": 39469,
+ "editor": "post_content",
+ "sha256_after": "af6415f84630bc7d95ecabae7a12b799979975007d1ff11b6942b4d83bc7fd3e",
+ "ops": [
+  {
+   "row": 0,
+   "search": "SR&amp;ED credits, ",
+   "replace": "",
+   "regex": false
+  }
+ ],
+ "skipped": []
+}

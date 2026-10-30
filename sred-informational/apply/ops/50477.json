@@ -1,0 +1,20 @@
+{
+ "id": 50477,
+ "editor": "post_content",
+ "sha256_after": "8096a16b5cc9b20d95e366a7dc974fe7d97855e876ffac94d0c73a16a3708eb5",
+ "ops": [
+  {
+   "row": 0,
+   "search": " We also check if you qualify for programs like SR&amp;ED.",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 1,
+   "search": "SR&ED identification and claim support on jig and fixture development, ",
+   "replace": "",
+   "regex": false
+  }
+ ],
+ "skipped": []
+}

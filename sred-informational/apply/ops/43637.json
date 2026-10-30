@@ -1,0 +1,20 @@
+{
+ "id": 43637,
+ "editor": "post_content",
+ "sha256_after": "c70d9ecf0ea5a7c4e7b123e4d10c8481c57192dc2ee0bc8998874d8ab177cb09",
+ "ops": [
+  {
+   "row": 0,
+   "search": "s with corporate tax, year-end planning, bookkeeping, GST/HST, payroll, SR&amp;ED, and CRA representation.",
+   "replace": "s with corporate tax, year-end planning, bookkeeping, GST/HST, payroll, and CRA representation.",
+   "regex": false
+  },
+  {
+   "row": 1,
+   "search": "SR&amp;ED, ",
+   "replace": "",
+   "regex": false
+  }
+ ],
+ "skipped": []
+}

@@ -1,0 +1,56 @@
+{
+ "id": 52814,
+ "editor": "post_content",
+ "sha256_after": "f599772943ee4045d98420a430fa3086d8767e4269601e943db1ff9bddedd3c4",
+ "ops": [
+  {
+   "row": 0,
+   "search": "ile.</p>",
+   "replace": "ile.</p>\n    <p class=\"sred-notice\"><strong>This calculator gives an estimate for general information only. Gondaliya CPA does not prepare SR&amp;ED claims.</strong></p>",
+   "regex": false
+  },
+  {
+   "row": 1,
+   "search": "Our <a href=\"https://gondaliyacpa.ca/sred-tax-credit-claims/\">SR&amp;ED claim service</a> cover",
+   "replace": "A full claim, explained in <a href=\"https://gondaliyacpa.ca/sred-tax-credit-claims/\">how SR&amp;ED claims work</a>, involve",
+   "regex": false
+  },
+  {
+   "row": 2,
+   "search": "-rel-t\">SR&amp;ED Claim Service</span>",
+   "replace": "-rel-t\">How SR&amp;ED Claims Work</span>",
+   "regex": false
+  },
+  {
+   "row": 3,
+   "search": "<a class=\"svd-rel-card\" href=\"https://gondaliyacpa.ca/consultation/\"><span class=\"svd-rel-t\">Book a Consultation</span><span class=\"svd-rel-d\">Tell us what you tried and failed at.</span></a>",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 4,
+   "search": "<div\\ class=\"svd\\-cta\">\\\n\\ \\ <div\\ class=\"svd\\-wrap\">\\\n\\ \\ \\ \\ <h2>Eight[\\s\\S]*?ms/\">SR\\&amp;ED\\ Claim\\ Service</a>\\\n\\ \\ \\ \\ </div>\\\n\\ \\ </div>\\\n</div>\\\n",
+   "replace": "",
+   "regex": true
+  },
+  {
+   "row": 5,
+   "search": "<div class=\"svd-footer-bar\">\n  <h3>SR&amp;ED Claims, Ontario Innovation Credits and T2 Filing &#8212; Registered CPA Ontario</h3>\n  <div class=\"svd-btn-row\">\n    <a class=\"svd-btn-white\" href=\"https://gondaliyacpa.ca/consultation/\">Book Free Consultation</a>\n    <a class=\"svd-btn-white\" href=\"https://gondaliyacpa.ca/sred-tax-credit-claims/\" style=\"color:#1a2340;\">SR&amp;ED Claim Service</a>\n  </div>\n</div>\n",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 6,
+   "search": "end us what you have now rather than assembling it",
+   "replace": "tart gathering what you have now rather than assembling it all",
+   "regex": false
+  },
+  {
+   "row": 7,
+   "search": "Send us a description of what the shop tried to do, what went wrong and roughly what it cost in time and material. We will c",
+   "replace": "Write down what the shop tried to do, what went wrong and roughly what it cost in time and material. C",
+   "regex": false
+  }
+ ],
+ "skipped": []
+}

@@ -1,0 +1,26 @@
+{
+ "id": 40079,
+ "editor": "post_content",
+ "sha256_after": "e60b18fac5cea3d4838f55ce4d8a21d2ea7ded53cc162cb6b95327c21c6a6cec",
+ "ops": [
+  {
+   "row": 0,
+   "search": "ngs 15+ years of experience preparing corporate returns for incorporated Canadian businesses, covering instalment calculation and overpayment recovery, non-capital and capital loss carryback and carryforward elections, refundable tax accounts and the dividend refund, refundable and non-refundable investment tax credits including SR&amp;ED, the small",
+   "replace": "ngs 15+ years of experience preparing corporate returns for incorporated Canadian businesses, covering instalment calculation and overpayment recovery, non-capital and capital loss carryback and carryforward elections, refundable tax accounts and the dividend refund, refundable and non-refundable investment tax credits, the small",
+   "regex": false
+  },
+  {
+   "row": 1,
+   "search": " including SR&amp;ED",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 2,
+   "search": "SR&ED for qualifying CCPCs and ",
+   "replace": "",
+   "regex": false
+  }
+ ],
+ "skipped": []
+}

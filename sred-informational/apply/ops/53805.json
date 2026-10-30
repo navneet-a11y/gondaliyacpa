@@ -1,0 +1,32 @@
+{
+ "id": 53805,
+ "editor": "post_content",
+ "sha256_after": "1aa11262eb055c0bd09b1b13ec2f63ebeecccf60970b5d13ab7bb3292ae98ca4",
+ "ops": [
+  {
+   "row": 0,
+   "search": ">Sometimes, and we would rather say so plainly than sell you a claim.",
+   "replace": ">Sometimes, and it is worth saying so plainly.",
+   "regex": false
+  },
+  {
+   "row": 1,
+   "search": "We do not promise eligibility before we have seen the records.</div>",
+   "replace": "Eligibility cannot be confirmed before the records have been reviewed.</div>",
+   "regex": false
+  },
+  {
+   "row": 2,
+   "search": "we would rather say so plainly than sell you a claim",
+   "replace": "it is worth saying so plainly",
+   "regex": false
+  },
+  {
+   "row": 3,
+   "search": "We do not promise eligibility before we have seen the records",
+   "replace": "Eligibility cannot be confirmed before the records have been reviewed",
+   "regex": false
+  }
+ ],
+ "skipped": []
+}

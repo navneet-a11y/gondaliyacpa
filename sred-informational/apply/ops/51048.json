@@ -1,0 +1,32 @@
+{
+ "id": 51048,
+ "editor": "post_content",
+ "sha256_after": "d45d927fde01cde84e9607faff8d110fd403cf71a595dfd5523cb8a30c1c96a8",
+ "ops": [
+  {
+   "row": 0,
+   "search": "SR&amp;ED assessment, ",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 1,
+   "search": "ssessing SR&amp;ED on extraction and technical work, a",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 2,
+   "search": ", assesses SR&amp;ED on extraction and technical work",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 3,
+   "search": "SR&ED assessment on extraction and cultivation development with documentation setup, ",
+   "replace": "",
+   "regex": false
+  }
+ ],
+ "skipped": []
+}

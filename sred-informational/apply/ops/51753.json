@@ -1,0 +1,50 @@
+{
+ "id": 51753,
+ "editor": "post_content",
+ "sha256_after": "53ec0aa49b81f4742bb89be5e4c3e3e3ac9807118811ac8b6ff491855a5f77f3",
+ "ops": [
+  {
+   "row": 0,
+   "search": "<a href=\"https://gondaliyacpa.ca/sred-tax-credit-claims/\">tax credit service</a> covers the OIDMTC claim, the SR&amp;ED split and the certification",
+   "replace": "service covers the OIDMTC claim and the certification. For how the OIDMTC and SR&amp;ED split works, see <a href=\"https://gondaliyacpa.ca/sred-tax-credit-claims/\">how SR&amp;ED credits work</a>",
+   "regex": false
+  },
+  {
+   "row": 1,
+   "search": "Tax Credit Claims</span><span class=\"svd-rel-d\">OIDMTC, SR&amp;ED and the certification",
+   "replace": "How SR&amp;ED Credits Work</span><span class=\"svd-rel-d\">The federal credit beside OIDMTC",
+   "regex": false
+  },
+  {
+   "row": 2,
+   "search": "split OIDMTC and SR&amp;ED deliberately, and handle the certification and the",
+   "replace": "and handle the certification and the OIDMTC",
+   "regex": false
+  },
+  {
+   "row": 3,
+   "search": "laims/\">Tax Credit Claims</a>",
+   "replace": "laims/\">How SR&amp;ED Works</a>",
+   "regex": false
+  },
+  {
+   "row": 4,
+   "search": "and SR&amp;ED Credits",
+   "replace": "Tax Credit",
+   "regex": false
+  },
+  {
+   "row": 5,
+   "search": "Tax Credit Claim",
+   "replace": "How SR&amp;ED Work",
+   "regex": false
+  },
+  {
+   "row": 6,
+   "search": "and split OIDMTC against SR&ED deliberately",
+   "replace": "for the OIDMTC claim",
+   "regex": false
+  }
+ ],
+ "skipped": []
+}

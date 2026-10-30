@@ -1,0 +1,26 @@
+{
+ "id": 51819,
+ "editor": "post_content",
+ "sha256_after": "621370f6b2f282eb4a026444eaf0c1411c5f03c390decf3100de13e1f29b55ea",
+ "ops": [
+  {
+   "row": 0,
+   "search": "We assess whether any of your IVR, routing or automation development meets the technological-uncertainty test for SR&amp;ED, because some contact-centre engineering qualifies and a great deal of ordinary",
+   "replace": "Some IVR, routing or automation development can meet the technological-uncertainty test for SR&amp;ED, but a great deal of ordinary contact-centre",
+   "regex": false
+  },
+  {
+   "row": 1,
+   "search": "We assess the actual development work against the test before anything is claimed, because a weak claim invites scrutiny across the whole return.</di",
+   "replace": "The actual development work needs to be assessed against the test before anything is claimed, because a weak claim invites scrutiny across the whole return.</di",
+   "regex": false
+  },
+  {
+   "row": 2,
+   "search": "We assess the actual development work",
+   "replace": "The actual development work needs to be assessed",
+   "regex": false
+  }
+ ],
+ "skipped": []
+}

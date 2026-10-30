@@ -1,0 +1,26 @@
+{
+ "id": 53915,
+ "editor": "post_content",
+ "sha256_after": "46a57a3337c74314bae13b35a67a40e51055ef3dfeb155e1fd5ad1459374b587",
+ "ops": [
+  {
+   "row": 0,
+   "search": "g the deduction alongside the investment credit and any SR&amp;ED in the same year.</p>",
+   "replace": "g the deduction alongside the investment credit in the same year.</p>",
+   "regex": false
+  },
+  {
+   "row": 1,
+   "search": "and any SR&amp;ED ",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 2,
+   "search": "nd SR&ED a",
+   "replace": "",
+   "regex": false
+  }
+ ],
+ "skipped": []
+}

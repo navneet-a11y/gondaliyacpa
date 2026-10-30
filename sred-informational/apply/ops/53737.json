@@ -1,0 +1,50 @@
+{
+ "id": 53737,
+ "editor": "post_content",
+ "sha256_after": "14e8bd5cda9de32649d47fc80aa9eb5b0d7491c379824c5cbc29ad3d123bdf5e",
+ "ops": [
+  {
+   "row": 0,
+   "search": " the accrued pay, SR&amp;ED and payroll dat",
+   "replace": " the accrued pay and payroll dat",
+   "regex": false
+  },
+  {
+   "row": 1,
+   "search": ", the T2 and SR&amp;ED timing",
+   "replace": " and the T2",
+   "regex": false
+  },
+  {
+   "row": 2,
+   "search": "issuing the <a class=\"wpil_keyword_link\" href=\"https://gondaliyacpa.ca/payroll-tax-remittance-canada/\" title=\"Payroll Tax Remittance\">T4A slips</a> your subcontractor payments require, and keeping the SR&amp;ED documentation contemporaneous so the claim survives a technical review",
+   "replace": "and issuing the <a class=\"wpil_keyword_link\" href=\"https://gondaliyacpa.ca/payroll-tax-remittance-canada/\" title=\"Payroll Tax Remittance\">T4A slips</a> your subcontractor payments require",
+   "regex": false
+  },
+  {
+   "row": 3,
+   "search": "if(rv('p-b')===1) items.push('An SR&ED eligibility and 18-month deadline review');\n   ",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 4,
+   "search": "issues the T4A slips your subcontractor payments require, and keeps SR&amp;ED documentation contemporaneous",
+   "replace": "and issues the T4A slips your subcontractor payments require",
+   "regex": false
+  },
+  {
+   "row": 5,
+   "search": "SR&amp;ED &amp; ",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 6,
+   "search": "SR&ED claims and deadlines, ",
+   "replace": "",
+   "regex": false
+  }
+ ],
+ "skipped": []
+}

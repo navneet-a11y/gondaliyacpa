@@ -1,0 +1,61 @@
+{
+ "id": 48828,
+ "editor": "post_content",
+ "sha256_after": "d8243c11b9fd80e524588114c0e27ba88901bd384e163e5e6a3dcd64340d3aef",
+ "ops": [
+  {
+   "row": 0,
+   "search": " &#8212; plus SR&amp;ED where your recipe and process work qualifies",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 1,
+   "search": "SR&amp;ED, ",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 2,
+   "search": "&#8212; including SR&amp;ED where your recipe and process work qualifies &#8212; ",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 3,
+   "search": "<li>We identify and document SR&amp;ED-eligible work, because developing new recipes, scaling a process or solving fermentation and stability problems can qualify for federal and Ontario research tax credits.</li>",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 4,
+   "search": ", HST across channels and SR&amp;ED",
+   "replace": " and HST across channels",
+   "regex": false
+  },
+  {
+   "row": 6,
+   "search": "We assess your development work, document it properly and file the SR&amp;ED claim so you recover the credits you are entitled to. ",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 7,
+   "search": " We assess, document and file the claim.",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 8,
+   "search": ", taproom payroll and SR&ED",
+   "replace": " and taproom payroll",
+   "regex": false
+  }
+ ],
+ "skipped": [
+  {
+   "row": 5,
+   "why": "needs_sharad"
+  }
+ ]
+}

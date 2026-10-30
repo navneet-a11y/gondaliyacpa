@@ -1,0 +1,56 @@
+{
+ "id": 50184,
+ "editor": "post_content",
+ "sha256_after": "8207cfff67eaeffff7a1e2700a6cff48a2dfff17f5d89df292ff64ef94797e59",
+ "ops": [
+  {
+   "row": 0,
+   "search": "ile.</p>",
+   "replace": "ile.</p>\n    <p class=\"sred-notice\"><strong>This calculator gives an estimate for general information only. Gondaliya CPA does not prepare SR&amp;ED claims.</strong></p>",
+   "regex": false
+  },
+  {
+   "row": 1,
+   "search": "Our <a href=\"https://gondaliyacpa.ca/sred-tax-credit-claims/\">SR&amp;ED service</a>",
+   "replace": "A full claim, explained in <a href=\"https://gondaliyacpa.ca/sred-tax-credit-claims/\">how SR&amp;ED claims work</a>,",
+   "regex": false
+  },
+  {
+   "row": 2,
+   "search": "<div\\ class=\"svd\\-cta\">\\\n\\ \\ <div\\ class=\"svd\\-wrap\">\\\n\\ \\ \\ \\ <h2>Two\\ Y[\\s\\S]*?it\\-claims/\">SR\\&amp;ED\\ Claims</a>\\\n\\ \\ \\ \\ </div>\\\n\\ \\ </div>\\\n</div>\\\n",
+   "replace": "",
+   "regex": true
+  },
+  {
+   "row": 3,
+   "search": "<div class=\"svd-footer-bar\">\n  <h3>SR&amp;ED Claims for Software and SaaS Companies &#8212; Registered CPA Ontario</h3>\n  <div class=\"svd-btn-row\">\n    <a class=\"svd-btn-white\" href=\"https://gondaliyacpa.ca/consultation/\">Book Free Consultation</a>\n    <a class=\"svd-btn-white\" href=\"https://gondaliyacpa.ca/sred-tax-credit-claims/\" style=\"color:#1a2340;\">SR&amp;ED Claims</a>\n  </div>\n</div>\n",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 4,
+   "search": "the part we work through",
+   "replace": "worked out",
+   "regex": false
+  },
+  {
+   "row": 5,
+   "search": "Send us the payroll register and a short description of what the team built, and we will",
+   "replace": "Gather the payroll register and a short description of what the team built, and",
+   "regex": false
+  },
+  {
+   "row": 6,
+   "search": "send us the payroll register and your repository acces",
+   "replace": "gather the payroll register and repository record",
+   "regex": false
+  },
+  {
+   "row": 7,
+   "search": "Please send us the payroll register, your year end and a short description of what the team was building. We will",
+   "replace": "Gather the payroll register, your year end and a short description of what the team was building, then",
+   "regex": false
+  }
+ ],
+ "skipped": []
+}

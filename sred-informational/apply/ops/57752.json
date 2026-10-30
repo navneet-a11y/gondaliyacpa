@@ -1,0 +1,86 @@
+{
+ "id": 57752,
+ "editor": "post_content",
+ "sha256_after": "bb29717bb3369c6cb2dc78267d9f64b35c5a4ba3aa4737a4db6ad809124848f1",
+ "ops": [
+  {
+   "row": 0,
+   "search": "the SR&amp;ED pool under ITA section 37 and credits under ITA section 127, ",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 1,
+   "search": "SR&amp;ED on Platform Engineering</a></h3><p>The ITA section 37 pool and ITA section 127 credits for the work where known techniques ran out, kept apart from",
+   "replace": "How SR&amp;ED Credits Work for Platform Engineering</a></h3><p>The ITA section 37 pool and ITA section 127 credits apply only to the work where known techniques ran out, not to",
+   "regex": false
+  },
+  {
+   "row": 2,
+   "search": ", Part XX questions and SR&amp;ED technical review",
+   "replace": " and Part XX question",
+   "regex": false
+  },
+  {
+   "row": 3,
+   "search": "lator/\">SR&amp;ED on Platfor",
+   "replace": "lator/\">How SR&amp;ED Credits Work for Platfor",
+   "regex": false
+  },
+  {
+   "row": 4,
+   "search": "So we set up the project record while the work happens &mdash; what was uncertain, what was tried, what failed &mdash; and you can model the arithmetic with our calculator before we even speak",
+   "replace": "The project record is best kept while the work happens &mdash; what was uncertain, what was tried, what failed &mdash; and you can model the arithmetic with the calculator",
+   "regex": false
+  },
+  {
+   "row": 5,
+   "search": "<li>When an SR&amp;ED claim goes to technical review, we produce the contemporaneous project records and handle the correspondence, including the part where some of the claim was ordinary development.</li>",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 6,
+   "search": "SR&amp;ED timing, ",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 7,
+   "search": "We document that work while it happens, because reconstructing it afterwards reads like marketing.</d",
+   "replace": "That work is best documented while it happens, because reconstructing it afterwards reads like marketing.</d",
+   "regex": false
+  },
+  {
+   "row": 8,
+   "search": "We document that work",
+   "replace": "That work is best documented",
+   "regex": false
+  },
+  {
+   "row": 9,
+   "search": "build the SR&amp;ED claim from contemporaneous records, ",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 10,
+   "search": "build the SR&ED claim from contemporaneous records, ",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 11,
+   "search": "settlement bridged back to gross transaction value, and SR&amp;ED claimed only where the known techniques genuinely ran out",
+   "replace": "and settlement bridged back to gross transaction value",
+   "regex": false
+  },
+  {
+   "row": 12,
+   "search": "settlement reconciled to gross transaction value, and SR&ED on platform engineering",
+   "replace": "and settlement reconciled to gross transaction value",
+   "regex": false
+  }
+ ],
+ "skipped": []
+}

@@ -1,0 +1,158 @@
+{
+ "id": 43101,
+ "editor": "post_content",
+ "sha256_after": "a68a726cf6aa38bc3c109341b676f2d787a5da9096b85284a80dbacc862c4007",
+ "ops": [
+  {
+   "row": 0,
+   "search": "eporting, SR&amp;ED and fun",
+   "replace": "eporting and fun",
+   "regex": false
+  },
+  {
+   "row": 1,
+   "search": ", burn, SR&amp;ED, fundrais",
+   "replace": ", burn, fundrais",
+   "regex": false
+  },
+  {
+   "row": 2,
+   "search": "<div class=\"cr-svc\"><div class=\"cr-svc-icon\">&#129516;</div><h3>SR&amp;ED &amp; Tax Credits</h3><p>Identify and support SR&amp;ED claims and other credits so the government funds part of your R&amp;D and extends your runway.</p></div>\n",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 3,
+   "search": "SR&amp;ED or other",
+   "replace": "tax",
+   "regex": false
+  },
+  {
+   "row": 4,
+   "search": "Keep SR&amp;ED, bookkeep",
+   "replace": "Keep bookkeep",
+   "regex": false
+  },
+  {
+   "row": 5,
+   "search": "<div class=\"cr-case-card\"><h3>Pre-Seed Tech Startup, Ontario</h3><p>An early startup had never claimed SR&amp;ED despite significant R&amp;D. We set up the books to capture eligible work and supported the claim, recovering credits that extended the runway by months without raising a dollar.</p><span class=\"cr-case-stat\">SR&amp;ED claimed. Runway extended.</span></div>\n",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 6,
+   "search": ", SR&amp;ED setup",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 7,
+   "search": "<tr><td>SR&amp;ED &amp; tax credits</td><td>Identifying and supporting SR&amp;ED and other credits to extend your runway.</td></tr>\n",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 8,
+   "search": "We make sure the books capture it and the claim is supported. <a href=\"https://gondaliyacpa.ca/sred-tax-credit-claims/\">SR&amp;ED Claim",
+   "replace": "<a href=\"https://gondaliyacpa.ca/sred-tax-credit-claims/\">How SR&amp;ED work",
+   "regex": false
+  },
+  {
+   "row": 9,
+   "search": "<li>You are developing software or technology and have never claimed SR&amp;ED</li>\n",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 10,
+   "search": "le CFO, SR&amp;ED, bookkeep",
+   "replace": "le CFO, bookkeep",
+   "regex": false
+  },
+  {
+   "row": 11,
+   "search": " metrics, SR&amp;ED and fun",
+   "replace": " metrics and fun",
+   "regex": false
+  },
+  {
+   "row": 12,
+   "search": "We set up the books to capture eligible work and support the claim, which can directly extend your runway. <a href=\"https://gondaliyacpa.ca/sred-tax-credit-claims/\">SR&amp;ED Claim",
+   "replace": "Gondaliya CPA does not prepare SR&amp;ED claims, but a properly supported claim can directly extend your runway. <a href=\"https://gondaliyacpa.ca/sred-tax-credit-claims/\">How SR&amp;ED work",
+   "regex": false
+  },
+  {
+   "row": 13,
+   "search": "We set up the books to capture eligible work and support the claim, which can directly extend your runway. SR&ED Claim",
+   "replace": "Gondaliya CPA does not prepare SR&ED claims, but a properly supported claim can directly extend your runway. How SR&ED work",
+   "regex": false
+  },
+  {
+   "row": 14,
+   "search": "ing, HST, SR&amp;ED and cor",
+   "replace": "ing, HST and cor",
+   "regex": false
+  },
+  {
+   "row": 15,
+   "search": "ing, HST, SR&ED and cor",
+   "replace": "ing, HST and cor",
+   "regex": false
+  },
+  {
+   "row": 16,
+   "search": "and SR&amp;ED ",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 17,
+   "search": "and SR&ED ",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 18,
+   "search": "e models, SR&amp;ED and fun",
+   "replace": "e models and fun",
+   "regex": false
+  },
+  {
+   "row": 19,
+   "search": "Keep CFO, SR&amp;ED and tax",
+   "replace": "Keep CFO and tax",
+   "regex": false
+  },
+  {
+   "row": 20,
+   "search": ", the SR&amp;ED claim",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 21,
+   "search": "SR&amp;ED Tax Credit Claims",
+   "replace": "How SR&amp;ED Tax Credits Work",
+   "regex": false
+  },
+  {
+   "row": 22,
+   "search": "le model, SR&amp;ED and inv",
+   "replace": "le model and inv",
+   "regex": false
+  },
+  {
+   "row": 23,
+   "search": "SR&amp;ED Claim",
+   "replace": "How SR&amp;ED Work",
+   "regex": false
+  },
+  {
+   "row": 24,
+   "search": "SR&ED, ",
+   "replace": "",
+   "regex": false
+  }
+ ],
+ "skipped": []
+}

@@ -1,0 +1,149 @@
+{
+ "id": 56761,
+ "editor": "post_content",
+ "sha256_after": "e7b7c595aade71c099daa0ceb5ad1f052f1ec932c00dad52e2fa46514bc78d33",
+ "ops": [
+  {
+   "row": 0,
+   "search": "Gondaliya CPA helps",
+   "replace": "In practice,",
+   "regex": false
+  },
+  {
+   "row": 1,
+   "search": "while handling corporate tax filing and",
+   "replace": "through the corporate tax return, together with",
+   "regex": false
+  },
+  {
+   "row": 2,
+   "search": "urn.</p>",
+   "replace": "urn.</p>\n<p class=\"sred-notice\"><strong>Gondaliya CPA does not prepare SR&amp;ED claims. This page explains how the SR&amp;ED program works, for general information only.</strong></p>",
+   "regex": false
+  },
+  {
+   "row": 3,
+   "search": "<div class=\"gcpa-banner\">\n<div class=\"bt\">Running analytics development and want the eligibility, the expenditure limit and the documentation reviewed before your filing window closes? The first conversation is free.</div>\n<div class=\"bb\"><a class=\"solid\" href=\"https://gondaliyacpa.ca/consultation/\">Book Free Consultation</a><a href=\"mailto:info@gondaliyacpa.ca\">info@gondaliyacpa.ca</a><a href=\"tel:+16472129559\">647-212-9559</a></div>\n</div>\n",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 4,
+   "search": "with its SR&amp;ED schedules",
+   "replace": "corporate return",
+   "regex": false
+  },
+  {
+   "row": 5,
+   "search": "to raise with us:</b>",
+   "replace": "to raise:</b>",
+   "regex": false
+  },
+  {
+   "row": 6,
+   "search": " with us",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 7,
+   "search": " A free review can confirm nothing is being missed.",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 8,
+   "search": "\n    <a class=\"p-cta\" href=\"https://gondaliyacpa.ca/consultation/\">Book a free consultation</a>",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 9,
+   "search": " please book a free consultation.</p>",
+   "replace": " please consult a licensed CPA.</p>",
+   "regex": false
+  },
+  {
+   "row": 11,
+   "search": " Gondaliya CPA handles analytics company accounting and tax on a flat annual fee.",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 13,
+   "search": "We test each project against the three statutory criteria before anything is written up, draw the project boundary around the experimental work and its commensurate support work, and document the uncertainty, the investigation and the advancement from the records your team already generates. We separate eligible development from client-paid delivery, allocate salaries by project from time records, and model",
+   "replace": "A well-prepared claim tests each project against the three statutory criteria before anything is written up, draws the project boundary around the experimental work and its commensurate support work, and documents the uncertainty, the investigation and the advancement from the records the team already generates. It separates eligible development from client-paid delivery, allocates salaries by project from time records, and models",
+   "regex": false
+  },
+  {
+   "row": 14,
+   "search": "We prepare the <strong>T2</strong> with Form <strong>T661</strong> and Schedule <strong>T2SCH31</strong>, reconcile the claim to the trial balance before filing, and handl",
+   "replace": "The <strong>T2</strong> is filed with Form <strong>T661</strong> and Schedule <strong>T2SCH31</strong>, the claim should reconcile to the trial balance before filing, and it runs alongside th",
+   "regex": false
+  },
+  {
+   "row": 15,
+   "search": "We separate the salary base from total payroll so bonuses and benefits do not inflate the proxy amount, apply the specified employee caps in Regulations 2900(7) and 2900(8), establish the Canadian portion of contractor work before applying the <strong>80%</strong> inclusion, and test cloud and subscription costs for whether they are genuinely incremental before claiming them",
+   "replace": "The salary base is separated from total payroll so bonuses and benefits do not inflate the proxy amount, the specified employee caps in Regulations 2900(7) and 2900(8) apply, the Canadian portion of contractor work is established before applying the <strong>80%</strong> inclusion, and cloud and subscription costs are tested for whether they are genuinely incremental before they are claimed",
+   "regex": false
+  },
+  {
+   "row": 18,
+   "search": " before your consultation",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 19,
+   "search": "<figure style=\"margin:18px 0;\"><img src=\"https://gondaliyacpa.ca/wp-content/uploads/2026/10/why-gondaliya-cpa-data-analytics.png\" alt=\"Why Canadian data analytics companies choose Gondaliya CPA\" style=\"width:100%;border-radius:12px;border:1px solid #d8e0e8;\" /><figcaption style=\"font-size:13px;color:#5a6b7b;text-align:center;padding:6px;\">Why small businesses choose us.</figcaption></figure>",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 21,
+   "search": "<div\\ class=\"gcpa\\-cta\">\\\n<h4>Start\\ with\\ your\\ project\\ list,\\ you[\\s\\S]*?info@gondaliyacpa\\.ca\">info@gondaliyacpa\\.ca</a></div>\\\n</div>\\\n",
+   "replace": "",
+   "regex": true
+  },
+  {
+   "row": 22,
+   "search": "Please\\ book\\ a\\ free\\ consultation\\ with\\ Gondaliya\\ CPA\\ and\\ bring[\\s\\S]*?,\\ and\\ work\\ with\\ analytics\\ and\\ technology\\ firms\\ across\\ Canada",
+   "replace": "Before preparing a claim, gather your project list with the technological problem each one addressed, your time records however they are kept, and your last filed return. Those three settle the eligibility question, the quantum and the expenditure limit, which is where almost all of the value and almost all of the risk sits. If any of the work was client-funded, gather the engagement letters too",
+   "regex": true
+  },
+  {
+   "row": 23,
+   "search": ",\\\n\\ \\ \\ \\ \\{\\ \"@type\":\\ \"Service\",\\\n\\ \\ \\ \\ \\ \\ \"name\":\\ \"SR\\&ED\\ and\\ Technol[\\s\\S]*?technology\\ companies\\ across\\ Toronto,\\ Ontario\\ and\\ Canada\"\\ \\}\\ \\}",
+   "replace": "",
+   "regex": true
+  },
+  {
+   "row": 24,
+   "search": "came to us",
+   "replace": "looked at its claim",
+   "regex": false
+  }
+ ],
+ "skipped": [
+  {
+   "row": 10,
+   "why": "needs_sharad"
+  },
+  {
+   "row": 12,
+   "why": "needs_sharad"
+  },
+  {
+   "row": 16,
+   "why": "needs_sharad"
+  },
+  {
+   "row": 17,
+   "why": "needs_sharad"
+  },
+  {
+   "row": 20,
+   "why": "needs_sharad"
+  }
+ ]
+}

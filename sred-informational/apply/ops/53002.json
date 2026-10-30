@@ -1,0 +1,26 @@
+{
+ "id": 53002,
+ "editor": "post_content",
+ "sha256_after": "ae332e78f73a9cd33bdc7a1d17f82212ba46930630c9d891f690c4d57daa12bb",
+ "ops": [
+  {
+   "row": 0,
+   "search": " Consulting and Claims Support",
+   "replace": "s for Manufacturers",
+   "regex": false
+  },
+  {
+   "row": 1,
+   "search": "prepare the SR&amp;ED claim inside the 18-month window, ",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 2,
+   "search": "fits deduction, SR&ED and provincial inves",
+   "replace": "fits deduction, provincial inves",
+   "regex": false
+  }
+ ],
+ "skipped": []
+}

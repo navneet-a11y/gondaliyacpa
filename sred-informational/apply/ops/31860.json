@@ -1,0 +1,14 @@
+{
+ "id": 31860,
+ "editor": "post_content",
+ "sha256_after": "14160da9ef0513c637791e58f16e472abc5aa79ccb051dc656b50542d31c37ff",
+ "ops": [
+  {
+   "row": 0,
+   "search": "&amp;ED claim support</a>",
+   "replace": "&amp;ED tax credits</a>",
+   "regex": false
+  }
+ ],
+ "skipped": []
+}

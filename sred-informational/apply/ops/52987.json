@@ -1,0 +1,81 @@
+{
+ "id": 52987,
+ "editor": "post_content",
+ "sha256_after": "10f42312b4b235d47186bedc8025606c04e131dca3de77fee20ca8fe901c9d9e",
+ "ops": [
+  {
+   "row": 0,
+   "search": "tor.</p>",
+   "replace": "tor.</p>\n<p class=\"sred-notice\"><strong>Gondaliya CPA does not prepare SR&amp;ED claims. This page explains how the SR&amp;ED program works, for general information only.</strong></p>",
+   "regex": false
+  },
+  {
+   "row": 2,
+   "search": "<li><strong>Gondaliya CPA:</strong> 647-212-9559, info@gondaliyacpa.ca</li>\n",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 4,
+   "search": "ook a free consultation with Gondaliya CPA. Bring your last two filed returns, a list of equipment purchased with available-for-use dates, and a short description of any production problem you solved by testing. Those three establish which credits are open, which years are still inside the 18-month window, and what the claim is worth. You'll get a flat fee before any work begins",
+   "replace": "efore claiming, gather your last two filed returns, a list of equipment purchased with available-for-use dates, and a short description of any production problem you solved by testing. Those three establish which credits are open, which years are still inside the 18-month window, and what the claim is worth",
+   "regex": false
+  },
+  {
+   "row": 6,
+   "search": "to raise with us:</b>",
+   "replace": "to raise:</b>",
+   "regex": false
+  },
+  {
+   "row": 7,
+   "search": " with us",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 8,
+   "search": " A free review can confirm nothing is being missed.",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 9,
+   "search": "\n    <a class=\"p-cta\" href=\"https://gondaliyacpa.ca/consultation/\">Book a free consultation</a>",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 10,
+   "search": "book a free consultation",
+   "replace": "consult a licensed CPA",
+   "regex": false
+  },
+  {
+   "row": 11,
+   "search": "<div\\ class=\"gcpa\\-cta\">\\\n<h4>Machinery\\ bought,\\ a\\ process\\ probl[\\s\\S]*?info@gondaliyacpa\\.ca\">info@gondaliyacpa\\.ca</a></div>\\\n</div>\\\n",
+   "replace": "",
+   "regex": true
+  },
+  {
+   "row": 12,
+   "search": ",\\\n\\ \\ \\ \\ \\{\\ \"@type\":\\ \"Service\",\\\n\\ \\ \\ \\ \\ \\ \"name\":\\ \"Manufacturing\\ Tax[\\s\\S]*?nufacturers\\ across\\ Ontario,\\ British\\ Columbia\\ and\\ Canada\"\\ \\}\\ \\}",
+   "replace": "",
+   "regex": true
+  }
+ ],
+ "skipped": [
+  {
+   "row": 1,
+   "why": "needs_sharad"
+  },
+  {
+   "row": 3,
+   "why": "needs_sharad"
+  },
+  {
+   "row": 5,
+   "why": "needs_sharad"
+  }
+ ]
+}

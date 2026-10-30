@@ -1,0 +1,107 @@
+{
+ "id": 51032,
+ "editor": "post_content",
+ "sha256_after": "f72ae0dececedfc85b6e2e1838a756844129831bf6bac4e1d8fcd919077474b5",
+ "ops": [
+  {
+   "row": 0,
+   "search": "cost every lot from mother plant to packaged unit under section 10, and claim SR&amp;ED on your genetics and extraction work",
+   "replace": "and cost every lot from mother plant to packaged unit under section 10",
+   "regex": false
+  },
+  {
+   "row": 1,
+   "search": "ecords, SR&amp;ED on genetics and extraction, and 13% ",
+   "replace": "ecords, and 13% ",
+   "regex": false
+  },
+  {
+   "row": 2,
+   "search": "payroll source deductions on the PD7A remittance, and SR&amp;ED claims on Form T661 and Schedule 31",
+   "replace": "and payroll source deductions on the PD7A remittance",
+   "regex": false
+  },
+  {
+   "row": 3,
+   "search": ", CCA &amp; SR&amp;ED",
+   "replace": " &amp; CCA",
+   "regex": false
+  },
+  {
+   "row": 4,
+   "search": "claim SR&amp;ED on genetics and extraction R&amp;D at the 35% refundable rate and ",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 5,
+   "search": "claim SR&amp;ED on genetics and extraction, ",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 6,
+   "search": "<li>We file the T661 and Schedule 31 for SR&amp;ED on genetics, cultivation-method and extraction R&amp;D, claiming the 35% refundable federal credit on the first $3 million plus the 8% Ontario OITC; one claim returned $87,000 in cash.</li>",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 7,
+   "search": ", lot costing and SR&amp;ED",
+   "replace": " and lot costing",
+   "regex": false
+  },
+  {
+   "row": 8,
+   "search": ", lot costing and SR&ED",
+   "replace": " and lot costing",
+   "regex": false
+  },
+  {
+   "row": 10,
+   "search": "SR&amp;ED project tracking, ",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 11,
+   "search": "661 where SR&amp;ED applies, T",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 12,
+   "search": "We identify the eligible projects and document them contemporaneously so the claim holds up.</div>",
+   "replace": "Eligible projects need to be documented contemporaneously so the claim holds up.</div>",
+   "regex": false
+  },
+  {
+   "row": 13,
+   "search": "We identify the eligible projects and document them",
+   "replace": "Eligible projects need to be documented",
+   "regex": false
+  },
+  {
+   "row": 14,
+   "search": "SR&amp;ED on genetics and extraction, ",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 15,
+   "search": ", SR&ED",
+   "replace": "",
+   "regex": false
+  }
+ ],
+ "skipped": [
+  {
+   "row": 9,
+   "why": "needs_sharad"
+  },
+  {
+   "row": 16,
+   "why": "needs_sharad"
+  }
+ ]
+}

@@ -1,0 +1,20 @@
+{
+ "id": 53185,
+ "editor": "post_content",
+ "sha256_after": "4e95a3f7f8950f979f38401d821e894de5453605c47004c7b77d3174b836fc03",
+ "ops": [
+  {
+   "row": 0,
+   "search": " Send us the year ends for the open years and we will make sure the claim information goes in on time for those.",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 1,
+   "search": " Send us the project descriptions and the expenditure detail and we will get the claim information in.",
+   "replace": "",
+   "regex": false
+  }
+ ],
+ "skipped": []
+}
