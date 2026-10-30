@@ -1,0 +1,19 @@
+24687 page /sred-tax-credit-claims/ (main SR&ED page)
+39382 page /sred-for-manufacturing-companies/ (service)
+39377 page /sred-claims-for-tech-startups/ (service)
+52814 page /sred-tax-credit-calculator/ (calculator)
+50184 page /software-sred-tax-credit-calculator/ (calculator)
+28025 page /case-studies/toronto-sred-tax-credits/ (case study)
+34598 page /the-best-cpas-for-sred-tax-credits-in-toronto/ (Best page)
+56761 post /data-analytics-company-tax-credits-canada/
+49366 post /manufacturing-sred-tax-credits-canada/
+48840 post /sred-tax-planning-strategies-maximize-credits-reduce-rd-costs/
+48794 post /sr-ed-eligibility-canada/
+46096 post /how-canadian-startups-can-maximize-sred-tax-credits/
+48234 post /how-healthcare-practices-can-maximize-sred-tax-credits/
+56948 post /product-design-studio-tax-credits-canada/
+54194 post /hardware-startup-tax-credits-canada/
+52987 post /furniture-manufacturing-tax-credits-canada/
+31952 post /expert-cpa-accounting-and-bookkeeping-services-maximize-sred-credits-and-tax-savings/
+29286 post /advanced-corporate-tax-planning-maximize-deductions-credits-and-sred-opportunities/
+27594 post /affordable-and-efficient-sred-tax-credit-claim-services-for-startups/
