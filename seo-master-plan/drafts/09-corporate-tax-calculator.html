@@ -1,0 +1,258 @@
+<!-- ══════════════════════════════════
+     CALCULATOR  (DRAFT for Change 09 - replaces the block from
+     "<!-- CALCULATOR -->" down to the closing </div></div></div> before
+     "<!-- RATE QUICK REFERENCE -->" on page 35514)
+     ══════════════════════════════════ -->
+<div style="padding: 0 20px;" id="ctc-calculator">
+  <div class="ctc-calc-wrap">
+    <div class="ctc-calc-card">
+      <div class="ctc-calc-header">
+        <h2>Ontario Corporate Tax Estimator — 2026</h2>
+        <p>Enter your corporation's income, expenses, tax year-end and taxable capital to estimate your tax. Results are estimates only — please consult a licensed CPA for exact figures.</p>
+      </div>
+      <div class="ctc-calc-body">
+        <div class="ctc-input-grid">
+          <div class="ctc-input-group">
+            <label>Gross Revenue (CAD)</label>
+            <div class="ctc-input-wrap">
+              <span>$</span>
+              <input type="number" class="ctc-input" id="ctc-revenue" placeholder="500,000" min="0" step="100">
+            </div>
+          </div>
+          <div class="ctc-input-group">
+            <label>Total Deductible Expenses (CAD)</label>
+            <div class="ctc-input-wrap">
+              <span>$</span>
+              <input type="number" class="ctc-input" id="ctc-expenses" placeholder="350,000" min="0" step="100">
+            </div>
+          </div>
+          <div class="ctc-input-group">
+            <label>Tax Year-End</label>
+            <div class="ctc-input-wrap">
+              <span>&#128197;</span>
+              <input type="date" class="ctc-input" id="ctc-yearend" value="2026-12-31" min="2024-01-01" max="2028-12-31">
+            </div>
+          </div>
+          <div class="ctc-input-group">
+            <label>Taxable Capital Employed in Canada (CAD, prior year, associated group)</label>
+            <div class="ctc-input-wrap">
+              <span>$</span>
+              <input type="number" class="ctc-input" id="ctc-capital" placeholder="500,000" min="0" step="1000">
+            </div>
+          </div>
+          <div style="grid-column: 1 / -1;">
+            <label style="display:block;font-weight:600;color:#1a2340;margin-bottom:10px;">Corporation Type</label>
+            <div style="display:flex;gap:14px;flex-wrap:wrap;">
+              <label style="display:flex;align-items:center;gap:10px;padding:12px 20px;border:2px solid rgba(32,135,201,1);border-radius:8px;cursor:pointer;background:#f0f7fd;font-weight:600;color:#1a2340;flex:1;min-width:200px;">
+                <input type="radio" name="ctc-type" id="ctc-type-ccpc" value="ccpc" checked style="width:16px;height:16px;accent-color:rgba(32,135,201,1);">
+                CCPC (Canadian-Controlled Private Corporation)
+              </label>
+              <label style="display:flex;align-items:center;gap:10px;padding:12px 20px;border:2px solid #e2e8f0;border-radius:8px;cursor:pointer;background:#fff;font-weight:600;color:#1a2340;flex:1;min-width:200px;">
+                <input type="radio" name="ctc-type" id="ctc-type-public" value="public" style="width:16px;height:16px;accent-color:rgba(32,135,201,1);">
+                Non-CCPC (Public Corporation)
+              </label>
+            </div>
+          </div>
+        </div>
+        <button class="ctc-calc-btn" onclick="calcCorpTax()">Calculate Corporate Tax</button>
+
+        <div class="ctc-results" id="ctc-results">
+          <div class="ctc-results-header">
+            <h3 id="r-title">Your 2026 Ontario Corporate Tax Estimate</h3>
+          </div>
+          <div class="ctc-results-body">
+            <div class="ctc-result-row">
+              <span class="ctc-result-label">Gross Revenue</span>
+              <span class="ctc-result-value" id="r-revenue">—</span>
+            </div>
+            <div class="ctc-result-row">
+              <span class="ctc-result-label">Deductible Expenses</span>
+              <span class="ctc-result-value" id="r-expenses">—</span>
+            </div>
+            <div class="ctc-result-row">
+              <span class="ctc-result-label">Net Taxable Income</span>
+              <span class="ctc-result-value" id="r-income">—</span>
+            </div>
+            <div class="ctc-result-row">
+              <span class="ctc-result-label">Taxation Year</span>
+              <span class="ctc-result-value" id="r-period">—</span>
+            </div>
+            <div class="ctc-result-row">
+              <span class="ctc-result-label">Small Business Deduction Eligible</span>
+              <span class="ctc-result-value" id="r-sbd">—</span>
+            </div>
+            <div class="ctc-result-row">
+              <span class="ctc-result-label">Business Limit After Taxable Capital Reduction</span>
+              <span class="ctc-result-value" id="r-limit">—</span>
+            </div>
+            <div class="ctc-result-row">
+              <span class="ctc-result-label">SBD Limit Applied</span>
+              <span class="ctc-result-value" id="r-sbd-limit">—</span>
+            </div>
+            <div class="ctc-result-row" style="background:#f7f9fc;">
+              <span class="ctc-result-label" style="font-weight:600;">Federal Tax (on SBD income @ 9%)</span>
+              <span class="ctc-result-value" id="r-fed-sbd" style="color:rgba(32,135,201,1);">—</span>
+            </div>
+            <div class="ctc-result-row" style="background:#f7f9fc;">
+              <span class="ctc-result-label" style="font-weight:600;">Federal Tax (on income above SBD @ 15%)</span>
+              <span class="ctc-result-value" id="r-fed-gen" style="color:rgba(32,135,201,1);">—</span>
+            </div>
+            <div class="ctc-result-row">
+              <span class="ctc-result-label">Total Federal Tax</span>
+              <span class="ctc-result-value" id="r-fed-total">—</span>
+            </div>
+            <div class="ctc-result-row">
+              <span class="ctc-result-label" id="r-ont-sbd-label">Ontario Provincial Tax (on SBD income)</span>
+              <span class="ctc-result-value" id="r-ont-sbd">—</span>
+            </div>
+            <div class="ctc-result-row">
+              <span class="ctc-result-label">Ontario Provincial Tax (on income above SBD @ 11.5%)</span>
+              <span class="ctc-result-value" id="r-ont-gen">—</span>
+            </div>
+            <div class="ctc-result-row">
+              <span class="ctc-result-label">Total Ontario Tax</span>
+              <span class="ctc-result-value" id="r-ont-total">—</span>
+            </div>
+            <div class="ctc-result-row ctc-result-total">
+              <span class="ctc-result-label">Combined Tax Owing (Federal + Ontario)</span>
+              <span class="ctc-result-value" id="r-combined">—</span>
+            </div>
+            <div class="ctc-result-row">
+              <span class="ctc-result-label">Effective Combined Rate</span>
+              <span class="ctc-result-value" id="r-eff-rate" style="color:#2d9c4b;">—</span>
+            </div>
+            <div class="ctc-result-row">
+              <span class="ctc-result-label">After-Tax Income</span>
+              <span class="ctc-result-value" id="r-after-tax">—</span>
+            </div>
+          </div>
+          <div class="ctc-disclaimer">
+            &#9888; This calculator provides estimates for planning purposes only. It assumes a 12-month taxation year ending on the date you enter, applies Ontario's small business rate of 3.2% to days before July 1, 2026 and 2.2% to days on or after July 1, 2026 (prorated by days), and reduces the $500,000 business limit on a straight line between $10 million and $50 million of taxable capital. It does not account for short taxation years, associated corporations sharing the limit, the passive income grind, refundable taxes, credits or personal circumstances. Please consult a licensed CPA at Gondaliya CPA for your exact corporate tax liability before filing. <a href="https://gondaliyacpa.ca/consultation/" style="color:rgba(32,135,201,1);font-weight:600;">Book a free consultation here.</a>
+          </div>
+        </div>
+      </div>
+      <div style="background:#f7f9fc;padding:18px 28px;border-top:1px solid #e2e8f0;text-align:center;">
+        <p style="color:#718096;margin:0 0 10px;">Want an exact T2 corporate tax calculation from a licensed CPA? We file virtually across Ontario and Canada — flat-fee from $400 before tax (HST shown on its own line).</p>
+        <a href="https://gondaliyacpa.ca/consultation/" class="ctc-btn-blue">Book Free CPA Consultation</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════
+     CALCULATOR JAVASCRIPT  (DRAFT for Change 09 - replaces the existing
+     "CALCULATOR JAVASCRIPT" script block on page 35514)
+     ══════════════════════════════════ -->
+<script>
+var CTC = {
+  FED_SBD: 0.09,
+  FED_GEN: 0.15,
+  ONT_SBD_OLD: 0.032,          // before July 1, 2026
+  ONT_SBD_NEW: 0.022,          // on or after July 1, 2026
+  ONT_GEN: 0.115,
+  ONT_CHANGE: Date.UTC(2026, 6, 1), // July 1, 2026
+  LIMIT: 500000,
+  CAP_LOW: 10000000,
+  CAP_HIGH: 50000000,
+  DAY: 86400000
+};
+
+function ctcFmt(n) {
+  return (n < 0 ? '-$' : '$') + Math.abs(n).toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+}
+function ctcPct(n, d) {
+  return n.toFixed(d === undefined ? 2 : d) + '%';
+}
+function ctcIso(t) {
+  return new Date(t).toISOString().slice(0, 10);
+}
+
+// Taxation year: 12 months ending on yearEnd (YYYY-MM-DD). Start = same date one year earlier + 1 day.
+function ctcTaxYear(yearEnd) {
+  var p = String(yearEnd).split('-');
+  var y = parseInt(p[0], 10), m = parseInt(p[1], 10) - 1, d = parseInt(p[2], 10);
+  var end = Date.UTC(y, m, d);
+  var prev = Date.UTC(y - 1, m, d);
+  // Feb 29 year-end: previous year has no Feb 29, Date.UTC rolls to Mar 1; use Feb 28 instead
+  if (new Date(prev).getUTCMonth() !== m) prev = Date.UTC(y - 1, m + 1, 0);
+  var start = prev + CTC.DAY;
+  var total = Math.round((end - start) / CTC.DAY) + 1;
+  var before = Math.round((Math.min(end + CTC.DAY, CTC.ONT_CHANGE) - start) / CTC.DAY);
+  before = Math.max(0, Math.min(total, before));
+  return { start: start, end: end, total: total, before: before, after: total - before };
+}
+
+// Ontario small business rate prorated by days before / on-or-after July 1, 2026
+function ctcOntSbdRate(ty) {
+  return (CTC.ONT_SBD_OLD * ty.before + CTC.ONT_SBD_NEW * ty.after) / ty.total;
+}
+
+// Business limit reduced on a straight line between $10M and $50M of taxable capital
+function ctcBusinessLimit(capital) {
+  if (capital <= CTC.CAP_LOW) return CTC.LIMIT;
+  if (capital >= CTC.CAP_HIGH) return 0;
+  return CTC.LIMIT * (CTC.CAP_HIGH - capital) / (CTC.CAP_HIGH - CTC.CAP_LOW);
+}
+
+function ctcCompute(inp) {
+  var netIncome = Math.max(0, inp.revenue - inp.expenses);
+  var ty = ctcTaxYear(inp.yearEnd);
+  var ontSbdRate = ctcOntSbdRate(ty);
+  var isCcpc = inp.type === 'ccpc';
+  var limit = isCcpc ? ctcBusinessLimit(inp.capital) : 0;
+  var sbdApplied = isCcpc ? Math.min(netIncome, limit) : 0;
+  var aboveSBD = netIncome - sbdApplied;
+  var r = {
+    netIncome: netIncome, taxYear: ty, ontSbdRate: ontSbdRate, isCcpc: isCcpc,
+    limit: limit, sbdApplied: sbdApplied, aboveSBD: aboveSBD,
+    fedTaxSBD: sbdApplied * CTC.FED_SBD,
+    fedTaxGen: aboveSBD * CTC.FED_GEN,
+    ontTaxSBD: sbdApplied * ontSbdRate,
+    ontTaxGen: aboveSBD * CTC.ONT_GEN
+  };
+  r.fedTotal = r.fedTaxSBD + r.fedTaxGen;
+  r.ontTotal = r.ontTaxSBD + r.ontTaxGen;
+  r.combined = r.fedTotal + r.ontTotal;
+  r.effRate = netIncome > 0 ? (r.combined / netIncome) * 100 : 0;
+  r.afterTax = netIncome - r.combined;
+  return r;
+}
+
+function calcCorpTax() {
+  var revenue  = parseFloat(document.getElementById('ctc-revenue').value) || 0;
+  var expenses = parseFloat(document.getElementById('ctc-expenses').value) || 0;
+  var capital  = parseFloat(document.getElementById('ctc-capital').value) || 0;
+  var yearEnd  = document.getElementById('ctc-yearend').value;
+  var type     = document.querySelector('input[name="ctc-type"]:checked').value;
+
+  if (revenue <= 0) { alert('Please enter a gross revenue amount.'); return; }
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(yearEnd)) { alert('Please enter your tax year-end date.'); return; }
+
+  var r = ctcCompute({ revenue: revenue, expenses: expenses, capital: capital, yearEnd: yearEnd, type: type });
+  var ty = r.taxYear;
+
+  document.getElementById('r-title').textContent     = 'Your Ontario Corporate Tax Estimate — Year Ending ' + ctcIso(ty.end);
+  document.getElementById('r-revenue').textContent   = ctcFmt(revenue);
+  document.getElementById('r-expenses').textContent  = ctcFmt(expenses);
+  document.getElementById('r-income').textContent    = ctcFmt(r.netIncome);
+  document.getElementById('r-period').textContent    = ctcIso(ty.start) + ' to ' + ctcIso(ty.end) + ' (' + ty.before + ' days before July 1, 2026; ' + ty.after + ' days on or after)';
+  document.getElementById('r-sbd').innerHTML         = r.isCcpc
+    ? '<span class="ctc-sbd-badge ctc-sbd-yes">&#10003; Yes — CCPC qualifies</span>'
+    : '<span class="ctc-sbd-badge ctc-sbd-no">&#10007; No — General rate applies</span>';
+  document.getElementById('r-limit').textContent     = r.isCcpc ? ctcFmt(r.limit) + ' (of $500,000)' : 'N/A';
+  document.getElementById('r-sbd-limit').textContent = r.isCcpc ? ctcFmt(r.sbdApplied) : 'N/A';
+  document.getElementById('r-fed-sbd').textContent   = r.isCcpc ? ctcFmt(r.fedTaxSBD) : 'N/A';
+  document.getElementById('r-fed-gen').textContent   = ctcFmt(r.fedTaxGen);
+  document.getElementById('r-fed-total').textContent = ctcFmt(r.fedTotal);
+  document.getElementById('r-ont-sbd-label').textContent = 'Ontario Provincial Tax (on SBD income @ ' + ctcPct(r.ontSbdRate * 100, 3) + ' blended)';
+  document.getElementById('r-ont-sbd').textContent   = r.isCcpc ? ctcFmt(r.ontTaxSBD) : 'N/A';
+  document.getElementById('r-ont-gen').textContent   = ctcFmt(r.ontTaxGen);
+  document.getElementById('r-ont-total').textContent = ctcFmt(r.ontTotal);
+  document.getElementById('r-combined').textContent  = ctcFmt(r.combined);
+  document.getElementById('r-eff-rate').textContent  = ctcPct(r.effRate);
+  document.getElementById('r-after-tax').textContent = ctcFmt(r.afterTax);
+
+  document.getElementById('ctc-results').classList.add('show');
+  document.getElementById('ctc-results').scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+</script>
