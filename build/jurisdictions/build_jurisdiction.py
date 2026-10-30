@@ -18,12 +18,23 @@ the title and H1 from the F4 child so the two do not compete.
 Template is page 516's, reproduced in the same CSS, with three departures that
 the Ontario page gets wrong or cannot carry for another province:
 
-1. No corporation-count table. Page 516 carries "T2 returns assessed
+1. The corporation-count table. Page 516 carries "T2 returns assessed
    1,108,730" and "first-time T2 filers 87,990" sourced to a Canada Revenue
-   Agency assessment table. No per-province count table was findable, so the
-   equivalent British Columbia figures cannot be sourced and are NOT invented.
-   What replaces it is a table of verifiable British Columbia filing rules,
-   which is the more useful place data row anyway.
+   Agency assessment table. This generator originally carried no count table at
+   all, on the grounds that no per-province count was findable.
+
+   That was wrong, and it was wrong about the plan rather than about the web:
+   line 1743 states the CRA T2 assessment count for each of the three
+   jurisdiction hubs outright -- 1,108,730 Ontario, 413,630 British Columbia,
+   365,890 Alberta -- and names it as the repeatable source each hub passes the
+   6(k) local-data test on. It is the reason these three hubs replaced the three
+   failing city hubs, so omitting it removed the page's whole justification.
+   Restored 2026-10-30 on Navneet's instruction, as the `t2_assessed` field.
+
+   First-time filers are a separate figure and the plan gives it for Ontario
+   only, so no other jurisdiction carries that row. It is not interpolated.
+
+   The table of verifiable filing rules stays; it sits below the counts.
 
 2. No HST computation. Page 516 says "With 13 per cent HST, that is $339.00 in
    total per tax year". That is the Ontario rate. **British Columbia is not an
@@ -49,7 +60,7 @@ import json, os, re
 
 SITE  = 'https://corpnilfilingfor300.ca'
 FORM  = SITE + '/form/'
-TODAY, ISO = 'October 21, 2026', '2026-10-21'
+TODAY, ISO = 'October 30, 2026', '2026-10-30'
 PRICE = '$300.00 plus HST per tax year'
 HERO_IMG = (SITE + '/wp-content/uploads/2026/09/'
             'business-executives-having-meeting_1098-18316.jpg')
@@ -127,6 +138,13 @@ CSS = """<style>.cnf-hero{background-image:linear-gradient(rgba(11,26,51,.82),rg
 @media(max-width:900px){.cnf-trust{grid-template-columns:1fr}}</style>
 """
 
+def art(word):
+    """"a" or "an" for a place name. British Columbia never exposed this, so
+    the template said "a " + name throughout and Alberta rendered "a Alberta".
+    Ontario, Alberta and Prince Edward Island all need "an" or a vowel test."""
+    return 'an' if word[:1].upper() in 'AEIOU' else 'a'
+
+
 def a(href, text):
     return '<a href="%s">%s</a>' % (href, text)
 
@@ -164,6 +182,9 @@ BC = dict(
  annual_statute='Section 51 of the Business Corporations Act',
  annual_online=True,
  strike_after='Two consecutive years of non-filing',
+ # Line 1743, the 6(k) local-data source for this hub. Not findable on the web
+ # as a per-province table; stated in the plan itself.
+ t2_assessed='413,630',
  # The Ontario page computes the HST total. British Columbia is not an HST
  # province, so no tax computation appears on this page at all.
  quote_tax_total=False,
@@ -215,6 +236,7 @@ AB = dict(
  meta=('The nil T2 an Alberta corporation files every year, why the Alberta AT1 '
        'is a separate return, and how the Alberta annual return differs.'),
  separate_return='Alberta AT1',
+ t2_assessed='365,890',          # line 1743, as above
  registry=UNVERIFIED,
  annual_filing=UNVERIFIED,
  annual_due=UNVERIFIED,
@@ -223,38 +245,57 @@ AB = dict(
  strike_after=UNVERIFIED,
  quote_tax_total=False,
  cards='alberta-cards.json',
+ # The first five, matching the five British Columbia opened with. Extend this
+ # list as the remaining seven publish; the assertion above catches a typo.
+ cards_live=['/nil-t2-filing-alberta/',
+             '/catch-up-nil-t2-filing-alberta/',
+             '/dormant-corporation-filing-alberta/',
+             '/final-t2-before-dissolution-alberta/',
+             '/t2-short-filing-alberta/'],
 )
 
-JURISDICTIONS = [BC]
-
-# Alberta stays here until its six fields are real. To finish it: replace every
-# UNVERIFIED with the sourced value, add the source URL and the date checked to
-# the note above, then move AB into JURISDICTIONS. The second guard below makes
-# that move mandatory rather than optional.
-PENDING = [AB]
+# The registry annual-return block. These six always travel together: a table
+# that sourced three of them and guessed the rest would be worse than one that
+# omits the subject, so the guard below enforces all-or-nothing.
+ANNUAL_FIELDS = ('registry', 'annual_filing', 'annual_due', 'annual_statute',
+                 'annual_online', 'strike_after')
 
 
-def _guard(jurisdictions, pending):
+def has_annual(j):
+    """True when every annual-return field is sourced, so the block renders."""
+    return all(j.get(k) != UNVERIFIED for k in ANNUAL_FIELDS)
+
+
+JURISDICTIONS = [BC, AB]
+
+
+def _guard(jurisdictions):
     """Keep an unsourced jurisdiction fact from ever reaching a page.
 
     Nothing was comparing claims against their sources, which is the same shape
     of gap that let the /tools/ hub sit four batches out of date: the defect is
     not the missing fact, it is that nothing refuses to ship without it.
+
+    A jurisdiction may publish with the annual-return block missing, because
+    omitting a subject asserts nothing. It may not publish with that block half
+    filled, and it may not publish with anything else unsourced: the title, the
+    provincial-return answer and the local-data count all have to be real.
     """
     for j in jurisdictions:
-        bad = sorted(k for k, v in j.items() if v == UNVERIFIED)
-        assert not bad, (
-            '%s is in JURISDICTIONS with %d unsourced field(s): %s. '
-            'Line 1212 has Sharad Gondaliya reviewing every jurisdiction claim, '
-            'so an unsourced one does not render.' % (j['slug'], len(bad), bad))
-    for j in pending:
-        if not any(v == UNVERIFIED for v in j.values()):
-            raise AssertionError(
-                '%s has no unsourced fields left, so it belongs in '
-                'JURISDICTIONS rather than PENDING.' % j['slug'])
+        outside = sorted(k for k, v in j.items()
+                         if v == UNVERIFIED and k not in ANNUAL_FIELDS)
+        assert not outside, (
+            '%s cannot publish with %s unsourced. Line 1212 has Sharad '
+            'Gondaliya reviewing every jurisdiction claim.'
+            % (j['slug'], outside))
+        got = [k for k in ANNUAL_FIELDS if j.get(k) != UNVERIFIED]
+        assert len(got) in (0, len(ANNUAL_FIELDS)), (
+            '%s has a half-sourced annual-return block (%d of %d: %s). It is '
+            'all or nothing, so a sourced row never sits beside a guessed one.'
+            % (j['slug'], len(got), len(ANNUAL_FIELDS), sorted(got)))
 
 
-_guard(JURISDICTIONS, PENDING)
+_guard(JURISDICTIONS)
 
 def build(j):
     url = '%s/%s/' % (SITE, j['slug'])
@@ -295,34 +336,62 @@ def build(j):
              'investment income, rental income, or dividends paid or received is not '
              'nil.</p>')
 
+    # ---- the counts, in page 516's markup and page 516's position ----------
+    if j.get('t2_assessed'):
+        b.append('<h2>' + name + ' corporations in numbers</h2>')
+        b.append('<table class="cnf-tbl"><thead><tr><th scope="col">Measure</th>'
+                 '<th scope="col">Source</th><th scope="col">' + name + '</th>'
+                 '</tr></thead><tbody>')
+        b.append('<tr><td>T2 returns assessed</td><td>Canada Revenue Agency T2 '
+                 'assessment table</td><td>' + j['t2_assessed'] + '</td></tr>')
+        b.append('</tbody></table>')
+        b.append('<p class="cnf-cap">Local data pulled ' + TODAY + '. The T2 '
+                 'assessment count is refreshed when the Canada Revenue Agency '
+                 'reissues its annual table.</p>')
+
     # ---- the place data row: verifiable rules, not invented counts ----------
     sep = ('Yes, the ' + j['separate_return'] if j['separate_return']
            else 'None, collected through the federal T2')
     b.append('<h2>' + name + ' filing obligations at a glance</h2>')
-    b.append(tbl(('Obligation', 'Detail', name),
-      [('T2 corporate tax return', 'Filed with the Canada Revenue Agency',
-        'Within 6 months of the fiscal year-end'),
-       ('Separate provincial corporate income tax return',
-        'A second income tax return, filed with the province', sep),
-       ('Corporate ' + j['annual_filing'], 'A registry filing, not a tax return',
-        j['annual_due']),
-       ('Where the ' + j['annual_filing'] + ' is filed', j['registry'],
-        'Online' if j['annual_online'] else 'With the registry'),
-       ('Authority for the ' + j['annual_filing'], j['annual_statute'],
-        'Provincial'),
-       ('Registrar may dissolve the company after', 'Missed registry filings',
-        j['strike_after']),
-       ('Our fee', 'One nil T2 for one corporation for one tax year',
-        '$300.00 plus HST')]))
-    b.append('<p class="cnf-cap">' + name + ' registry rules confirmed '
-             + TODAY + ' against ' + j['registry'] + '. The T2 due date comes from '
-             'the Income Tax Act and does not vary by province.</p>')
+    rows = [('T2 corporate tax return', 'Filed with the Canada Revenue Agency',
+             'Within 6 months of the fiscal year-end'),
+            ('Separate provincial corporate income tax return',
+             'A second income tax return, filed with the province', sep)]
+    if has_annual(j):
+        rows += [
+          ('Corporate ' + j['annual_filing'], 'A registry filing, not a tax return',
+           j['annual_due']),
+          ('Where the ' + j['annual_filing'] + ' is filed', j['registry'],
+           'Online' if j['annual_online'] else 'With the registry'),
+          ('Authority for the ' + j['annual_filing'], j['annual_statute'],
+           'Provincial'),
+          ('Registrar may dissolve the company after', 'Missed registry filings',
+           j['strike_after'])]
+    else:
+        # Existence and fee coverage only. No due date, no statute, no registry
+        # name, no strike timeline: see the Alberta note above for why each of
+        # those is withheld rather than estimated.
+        rows.append(('Corporate annual return',
+                     'A registry filing, not a tax return',
+                     'Required, and not covered by the fee'))
+    rows.append(('Our fee', 'One nil T2 for one corporation for one tax year',
+                 '$300.00 plus HST'))
+    b.append(tbl(('Obligation', 'Detail', name), rows))
+    if has_annual(j):
+        b.append('<p class="cnf-cap">' + name + ' registry rules confirmed '
+                 + TODAY + ' against ' + j['registry'] + '. The T2 due date comes '
+                 'from the Income Tax Act and does not vary by province.</p>')
+    else:
+        b.append('<p class="cnf-cap">The T2 due date comes from the Income Tax Act '
+                 'and does not vary by province. ' + name + ' registry filing dates '
+                 'are confirmed for your corporation before you pay.</p>')
 
     # ---- the filing note ---------------------------------------------------
     b.append('<h2>' + name + ' Filing Note</h2>')
     if j['separate_return']:
-        b.append('<p>' + name + ' administers its own corporate income tax, so a '
-                 + name + ' corporation files the ' + j['separate_return'] + ', a '
+        b.append('<p>' + name + ' administers its own corporate income tax, so '
+                 + art(name) + ' ' + name + ' corporation files the '
+                 + j['separate_return'] + ', a '
                  'separate provincial income tax return, in addition to the federal '
                  'T2. The ' + j['separate_return'] + ' is not covered by the $300.00 '
                  'fee.</p>')
@@ -331,11 +400,23 @@ def build(j):
                  'return, so there is no separate ' + name + ' corporate tax return. '
                  'Alberta and Quebec are the two provinces that do administer their '
                  'own, through the AT1 and the CO-17.</p>')
-    b.append('<p>The ' + name + ' ' + j['annual_filing'] + ' is a different filing. It '
-             'is a registry filing that confirms the company&rsquo;s directors and '
-             'registered office, it carries no tax, and it is not covered by the '
-             '$300.00 fee. It is due '
-             + j['annual_due'][0].lower() + j['annual_due'][1:] + '.</p>')
+    if has_annual(j):
+        b.append('<p>The ' + name + ' ' + j['annual_filing'] + ' is a different '
+                 'filing. It is a registry filing that confirms the '
+                 'company&rsquo;s directors and registered office, it carries no '
+                 'tax, and it is not covered by the $300.00 fee. It is due '
+                 + j['annual_due'][0].lower() + j['annual_due'][1:] + '.</p>')
+    else:
+        # Saying nothing here would leave a reader thinking the T2, and the
+        # provincial return where there is one, are the whole obligation. That
+        # would be a misleading omission, so existence is stated and timing is
+        # not: every province requires an annual registry filing, and that much
+        # needs no provincial source.
+        b.append('<p>The ' + name + ' annual return is a different filing again. '
+                 'It is a registry filing that confirms the company&rsquo;s '
+                 'directors and registered office, it carries no tax, and it is '
+                 'not covered by the $300.00 fee. We confirm its date for your '
+                 'corporation before you pay.</p>')
 
     # ---- service boxes, in the /services/ card pattern --------------------
     b.append('<h2>Browse Our Affordable Nil T2 Filing Services in ' + name + '</h2>')
@@ -346,6 +427,15 @@ def build(j):
     cards = SERVICE_CARDS
     if j.get('cards'):
         cards = json.load(io.open(os.path.join(HERE, j['cards']), encoding='utf-8'))
+    # A province part-way through its twelve cards only the children that are
+    # live, so the hub never points at a URL that does not exist yet. Drop
+    # cards_live once all twelve are published and the whole file is used.
+    if j.get('cards_live'):
+        by_href = {c['href']: c for c in cards}
+        missing = [h for h in j['cards_live'] if h not in by_href]
+        assert not missing, ('%s: cards_live names %d href(s) absent from %s: %s'
+                             % (j['slug'], len(missing), j['cards'], missing))
+        cards = [by_href[h] for h in j['cards_live']]
     kids = j.get('children', {})
     for c in cards:
         href, title = kids.get(c['href'], (c['href'], c['title']))
@@ -371,22 +461,39 @@ def build(j):
             ' Tax is added at the rate for your province.')
 
     faq = [
-      ('Does a ' + name + ' corporation file a separate provincial corporate '
-       'tax return?', a_sep),
-      ('Is the ' + name + ' ' + j['annual_filing'] + ' covered by the nil T2 fee?',
-       'No. It is filed with ' + j['registry'] + ', '
-       + j['annual_due'][0].lower() + j['annual_due'][1:]
-       + '. It is not covered by the $300.00 fee, and we tell you if you still '
-         'owe it.'),
-      ('What happens if the ' + name + ' ' + j['annual_filing'] + ' is not filed?',
-       'The company stops being in good standing, so the registry will not '
-       'issue a certificate of good standing for it. After '
-       + j['strike_after'][0].lower() + j['strike_after'][1:]
-       + ' the registrar may dissolve the company. None of that cancels an '
-         'outstanding T2: the corporate tax account and the registry record are '
-         'separate trails.'),
+      ('Does ' + art(name) + ' ' + name + ' corporation file a separate '
+       'provincial corporate tax return?', a_sep),
+    ]
+    if has_annual(j):
+        faq += [
+          ('Is the ' + name + ' ' + j['annual_filing']
+           + ' covered by the nil T2 fee?',
+           'No. It is filed with ' + j['registry'] + ', '
+           + j['annual_due'][0].lower() + j['annual_due'][1:]
+           + '. It is not covered by the $300.00 fee, and we tell you if you '
+             'still owe it.'),
+          ('What happens if the ' + name + ' ' + j['annual_filing']
+           + ' is not filed?',
+           'The company stops being in good standing, so the registry will not '
+           'issue a certificate of good standing for it. After '
+           + j['strike_after'][0].lower() + j['strike_after'][1:]
+           + ' the registrar may dissolve the company. None of that cancels an '
+             'outstanding T2: the corporate tax account and the registry record '
+             'are separate trails.'),
+        ]
+    else:
+        # The fee question answered without a date, and the strike-timeline
+        # question dropped rather than answered vaguely. A reader asking how
+        # long they have deserves a number, not a hedge.
+        faq += [
+          ('Is the ' + name + ' annual return covered by the nil T2 fee?',
+           'No. It is a registry filing rather than a tax return, it carries no '
+           'tax, and it is not covered by the $300.00 fee. We tell you if you '
+           'still owe it, and we confirm its date for your corporation.'),
+        ]
+    faq += [
       ('How much does nil T2 filing cost in ' + name + '?', cost),
-      ('How is a ' + name + ' nil T2 signed and filed?',
+      ('How is ' + art(name) + ' ' + name + ' nil T2 signed and filed?',
        'You sign Form T183CORP before we transmit. We are a registered EFILE '
        'electronic filer. Your return is transmitted to the Canada Revenue Agency '
        'electronically. Your CRA confirmation is emailed within 3 business days. '

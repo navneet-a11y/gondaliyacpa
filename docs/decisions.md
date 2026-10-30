@@ -6072,3 +6072,126 @@ signed-off plan the whole time, cited to the CRA assessment table and refreshed
 when that table is reissued. The same applies to Alberta's 365,890 when its hub
 is built. Adding it changes visible content on a live page, so it goes to Sharad
 Gondaliya in the Friday update rather than being done unannounced.
+
+## 2026-10-30 (later) — Alberta's first five and its hub are live, plus the BC count
+
+Navneet, after the blocker above: allow the two domains, and add the CRA count
+to British Columbia now. Then: "for alberta just create 5 service place page
+and hub for now".
+
+**The domains are not open yet.** `www.alberta.ca` and `open.alberta.ca` still
+return 403 on CONNECT at the proxy, so the six registry facts are still
+unsourced. Alberta shipped anyway, with the sourced material only.
+
+### What went live
+
+| URL | ID | Bytes |
+|---|---|---|
+| /nil-t2-filing-alberta/ | 1538 | 10,006 |
+| /catch-up-nil-t2-filing-alberta/ | 1539 | 9,997 |
+| /dormant-corporation-filing-alberta/ | 1540 | 10,292 |
+| /final-t2-before-dissolution-alberta/ | 1541 | 10,022 |
+| /t2-short-filing-alberta/ | 1542 | 9,759 |
+| /alberta/ (hub) | 1548 | 32,029 |
+
+All six byte-verified against the local build. The five are the same five
+services British Columbia opened with, so the provinces stay comparable. All
+five carry `cnf_family` f4, `cnf_place` alberta and their own `cnf_service`
+term.
+
+**The AT1 is the spine of all six pages**, and it is the one Alberta-specific
+claim the plan states itself (hard rule 8; line 1212: "Alberta AT1 and Quebec
+CO-17 are separate provincial returns and are not included in the fee").
+Alberta is the first province built where provincial corporate income tax is
+*not* collected through the federal T2, so each page says what that means for
+its own service: the catch-up page says the federal and provincial years are
+two trails, the dissolution page says a final T2 is not the last return owed,
+the T2 Short page says the short form is federal only.
+
+**What the six pages do not say.** `ANNUAL_SOURCED = False`. No annual-return
+due date, statute, fee, registry name, filing route or strike timeline appears
+anywhere, and the AT1 exemption question is left open. The place data table
+carries four sourced rows and the obligations table three plus a fee row.
+
+One judgement call worth recording: the pages *do* say the Alberta annual
+return exists, is a registry filing rather than a tax return, and is not
+covered by the fee — with no date, no amount and no registry named. Saying
+nothing at all would leave a reader thinking the T2 and the AT1 are the whole
+obligation, which is a misleading omission; existence without timing asserts
+nothing that is not already true of every province. If that is too far, it is
+one string in `build_f4_ab.py` and one branch in `build_jurisdiction.py`.
+
+### British Columbia now carries its CRA count
+
+Added to page 996 on Navneet's instruction: "T2 returns assessed 413,630",
+sourced to the Canada Revenue Agency T2 assessment table, in page 516's markup
+and page 516's position. 39,833 to 40,305 bytes, byte-verified. The review
+stamp advanced to October 30 in the body, the caption and the schema, which
+line 2215 requires when the per-place data table changes. Alberta's hub carries
+the same row at 365,890. First-time-filer counts stay Ontario-only, because the
+plan gives that figure for Ontario alone and it is not interpolated.
+
+### Three gates were not gating
+
+1. **Both count checks rejected every count.** `build/jurisdictions/gate.py` and
+   `build/f4/gate.py` failed any thousands-separated integer in a `<td>`. Right
+   instinct, wrong rule: it also rejected a count that names its source in the
+   same row, which is the one local-data figure 6(k) requires these pages to
+   carry. Now a count is allowed only where its own row attributes it, and both
+   gates were re-run against a fabricated unattributed count to confirm they
+   still bite.
+2. **The F4 gate only ever read British Columbia.** It imported `build_f4_bc`
+   unconditionally, so the Alberta pages were outside it entirely. It now takes
+   the builder module as an argument and both provinces pass.
+3. **`build_locations_hub.py` had no children assertion**, the same gap as
+   /tools/ and /guides/. `locations-hub-children.json` now holds all 29 slugs
+   read from the site and the build asserts every one has a link.
+
+### Two real bugs, one of them mine
+
+**"a Alberta".** The jurisdiction template built articles by concatenation,
+`'a ' + name`, which reads correctly only for a consonant-initial province.
+British Columbia never exposed it; Alberta rendered "so a Alberta corporation",
+"Does a Alberta corporation" and "How is a Alberta nil T2". Fixed with an
+`art()` helper, and the gate now rejects "a" before Alberta or Ontario so the
+next vowel-initial province cannot hit it.
+
+**I published the hub with a broken SVG.** The hub is 32KB and the publish tool
+needs the content inline, so I transcribed it — and dropped a 2,339-byte path
+segment while inventing a spurious 25-byte one, which is why live came back
+29,715 against a local 32,029. The byte check caught it immediately; the two
+errors reconciled to the 2,314-byte shortfall exactly, which is what made the
+repair surgical rather than a re-paste. Fixed with two targeted replacements
+and re-verified at 32,029, with the spurious path confirmed absent and all five
+SVGs present.
+
+The lesson is procedural: **byte-verify every publish against the built file,
+and never treat a successful create as a correct one.** A length match is the
+cheapest check available and it is the only reason this was caught in minutes.
+
+### /locations/ went stale the moment Alberta published
+
+Publishing five new `nil_service_place` items made the /locations/ hub 24 of 29
+— the exact failure fixed for /tools/ this morning, reappearing within hours
+because the fix had not yet been applied to this builder. Now: Alberta card
+added with its five live children, the jump nav carries Alberta, the hub is at
+29 of 29, `cnf_child_count` 29, stamp advanced, 21,147 bytes byte-verified. The
+province renderer takes a `live` list so a part-built province links only what
+exists, and the children assertion means the next one cannot drift.
+
+### Still open
+
+- The six Alberta facts. Nothing changes until `alberta.ca` is reachable.
+- The remaining seven Alberta service pages, which need the same facts for
+  their place data tables.
+- **`cnf_service` and `cnf_place` are unset on the 24 Ontario and British
+  Columbia pages.** Every term shows count 0 except the five Alberta pages
+  published today, which were tagged properly. Line 311 expects all three
+  taxonomies on every F4 item, so the earlier 24 want a back-fill pass.
+- The BC pages' `cnf_unique_data_block_json` still records
+  `t2_assessment_count: null` with a note saying CRA publishes no per-province
+  counts. The hub now carries 413,630, so that meta is stale on 12 pages.
+- The focus-keyword convention differs from `cnf_primary_keyword`: Rank Math
+  uses "nil t2 filing in alberta", the builder stores "nil t2 filing alberta".
+  Alberta mirrors the 24 live pages rather than changing a convention
+  unilaterally, but one of the two is wrong.

@@ -1,7 +1,20 @@
-"""Hard-rule gate for the British Columbia F4 service pages."""
-import io, re, os, sys
+"""Hard-rule gate for the F4 service x place pages.
+
+Takes the builder module as an argument, defaulting to British Columbia:
+
+    python3 gate.py                 # build_f4_bc
+    python3 gate.py build_f4_ab     # Alberta
+
+It used to import build_f4_bc unconditionally, so the Alberta pages were
+outside it entirely. Same shape of gap as the hub gate that only ever read
+guides-hub.html: a check that covers one member of a growing set silently
+stops being a check.
+"""
+import io, re, os, sys, importlib
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from build_f4_bc import SERVICES, PLACE
+_mod = importlib.import_module(sys.argv[1] if len(sys.argv) > 1 else 'build_f4_bc')
+SERVICES, PLACE, HUB = _mod.SERVICES, _mod.PLACE, _mod.HUB
+HUB_PATH = HUB.replace('https://corpnilfilingfor300.ca', '')
 
 HST_PROVINCES = ('ontario', 'new brunswick', 'nova scotia',
                  'newfoundland and labrador', 'prince edward island')
@@ -62,9 +75,14 @@ for s in SERVICES:
     if a := [x for x in re.findall(r'<(h[1-6])', c) if x == 'h3']:
         bad('unexpected h3 on a service page')
     if 'areaServed' not in c or PLACE not in c: bad('schema areaServed missing')
-    # no invented counts in the data table
-    for m in re.finditer(r'<td>(\d{1,3}(?:,\d{3})+)</td>', c):
-        bad('unsourced count "%s"' % m.group(1))
+    # No invented counts in the data table. A count is allowed only where its
+    # own row names a source, which is the same rule the jurisdictions gate
+    # uses. Rejecting every count outright also rejected the one local-data
+    # figure 6(k) requires these pages to carry.
+    for row in re.findall(r'<tr>.*?</tr>', c, re.S):
+        for m in re.finditer(r'<td>(\d{1,3}(?:,\d{3})+)</td>', row):
+            if 'Canada Revenue Agency' not in row:
+                bad('count "%s" in a row that names no source' % m.group(1))
     # text hygiene
     nb = sorted({ch for ch in c if ord(ch) > 127})
     if nb: bad('non-ascii %r' % nb)
@@ -76,7 +94,7 @@ bodies = {s['slug']: io.open(s['slug'] + '.html', encoding='utf-8').read()
           for s in SERVICES}
 for s in SERVICES:
     c = bodies[s['slug']]
-    if '/british-columbia/' not in c: fail.append('%s: no hub link' % s['slug'])
+    if HUB_PATH not in c: fail.append('%s: no hub link' % s['slug'])
     if s['national'][0] not in c:
         fail.append('%s: no national sibling link' % s['slug'])
 leads = [s['lead'][0] for s in SERVICES]
@@ -91,6 +109,6 @@ if fail:
     print('GATE FAIL')
     for f in fail: print('  ' + f)
     raise SystemExit(1)
-print('gate clear on all %d British Columbia service pages' % len(SERVICES))
+print('gate clear on all %d %s service pages' % (len(SERVICES), PLACE))
 for s in SERVICES:
     print('  %-46s %6d bytes' % (s['slug'], len(bodies[s['slug']].encode('utf-8'))))

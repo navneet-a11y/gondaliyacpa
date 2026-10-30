@@ -15,12 +15,12 @@ be patched: without it wpautop inserts a stray close tag after the hero
 eyebrow, an unclosed paragraph around the CTA and a paragraph around the
 JSON-LD. The [cnf_child_count] shortcode still resolves inside the block.
 """
-import io, json, os
+import io, json, os, re as _re
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 SITE = 'https://corpnilfilingfor300.ca'
 FORM = SITE + '/form/'
-TODAY, ISO = 'October 23, 2026', '2026-10-23'
+TODAY, ISO = 'October 30, 2026', '2026-10-30'
 PRICE = '$300.00 plus HST per tax year'
 HUB = SITE + '/locations/'
 TITLE = 'Nil T2 Filing by Province'
@@ -60,6 +60,19 @@ PROVINCES = [
   'British Columbia corporate income tax is collected through the federal T2. '
   'The BC annual report is filed separately with BC Registries and Online '
   'Services.'),
+ # Alberta, 2026-10-30. The first province where the provincial corporate
+ # income tax is NOT collected through the federal T2, which hard rule 8 makes
+ # a required statement. Its registry is deliberately not named: the Alberta
+ # Corporate Registry pages could not be read (the environment denies
+ # alberta.ca), so the exact name and filing route are unsourced. See
+ # build/jurisdictions/build_jurisdiction.py for the full note.
+ ('Alberta', 'alberta', 'alberta',
+  'Registry filing: Alberta annual return',
+  'Alberta administers its own corporate income tax, so the Alberta AT1 is a '
+  'separate return from the federal T2 and is not covered by the fee. The '
+  'Alberta annual return is a separate registry filing again.',
+  ['Nil T2 Filing', 'Catch-Up Nil T2 Filing', 'Dormant Corporation Filing',
+   'Final T2 Before Dissolution', 'T2 Short Filing']),
 ]
 
 ALSO = [
@@ -137,7 +150,7 @@ def card(href, title, desc):
             + '</a></h3><p>' + desc + '</p></div>')
 
 
-def province(name, hub_slug, suffix, badge, note):
+def province(name, hub_slug, suffix, badge, note, live=None):
     """One province as a card: heading, registry badge, note, link grid.
 
     Was a bare <ul> in two CSS columns. Thirteen of those stacked is a wall of
@@ -146,9 +159,19 @@ def province(name, hub_slug, suffix, badge, note):
     fact that actually differs between provinces, and the grid rows get a
     divider and a chevron so they read as a list of destinations.
     """
+    # A province part-way through its twelve links only what exists, so the hub
+    # never points at a page that has not been published yet. live=None means
+    # all twelve, which is what a finished province passes.
+    rows = SERVICES
+    if live is not None:
+        by_label = dict(SERVICES)
+        missing = [x for x in live if x not in by_label]
+        assert not missing, ('%s: live names %d service(s) not in SERVICES: %s'
+                             % (name, len(missing), missing))
+        rows = [(x, by_label[x]) for x in live]
     items = ''.join(
         '<li><a href="%s/%s/">%s in %s</a></li>'
-        % (SITE, slug % suffix, label, name) for label, slug in SERVICES)
+        % (SITE, slug % suffix, label, name) for label, slug in rows)
     return ('<div class="ei-pcard" id="p-' + hub_slug + '">\n'
             '<h3><a href="' + SITE + '/' + hub_slug + '/">Nil T2 Filing in '
             + name + '</a></h3>\n'
@@ -331,10 +354,29 @@ def render():
     return ''.join(p)
 
 
+def _linked_rows(html):
+    """Service-place links actually rendered. The old count multiplied
+    provinces by services, which overstated a province that is part-built."""
+    return _re.findall(r'<li><a href="[^"]+">[^<]+ in [^<]+</a></li>', html)
+
+
 if __name__ == '__main__':
     html = render()
+
+    # Line 1224: every child linked. Nothing was comparing the hub's links to
+    # the live child list, which is how /tools/ sat four batches out of date
+    # and /guides/ sat at twelve of thirty. The file is read from the site.
+    _live = set(json.load(io.open(os.path.join(HERE,
+                'locations-hub-children.json'), encoding='utf-8'))['slugs'])
+    _linked = set(_re.findall(r'href="' + _re.escape(SITE) + r'/([a-z0-9-]+)/"',
+                              html))
+    _missing = sorted(_live - _linked)
+    assert not _missing, (
+        '%d published service-place pages have no link on the hub, which '
+        'breaches line 1224: %s' % (len(_missing), _missing))
+    print('children: %d live, all linked' % len(_live))
+
     io.open(os.path.join(HERE, 'locations-hub.html'), 'w',
             encoding='utf-8').write(html)
     print('locations-hub.html %d bytes, %d provinces, %d service links'
-          % (len(html.encode()), len(PROVINCES),
-             len(PROVINCES) * len(SERVICES)))
+          % (len(html.encode()), len(PROVINCES), len(_linked_rows(html))))

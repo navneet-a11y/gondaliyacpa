@@ -69,13 +69,27 @@ for r in recs:
         fail.append('%s: no Last reviewed line in the position 7.5 rule 1 gives' % s)
     if any(ord(ch) > 0x2100 for ch in c):
         fail.append('%s: non-ASCII symbol that may be an emoji' % s)
-    # no invented statistics: a bare thousands-separated integer in a data cell
-    for m in re.finditer(r'<td>([\d]{1,3}(?:,\d{3})+)</td>', c):
-        fail.append('%s: unsourced count "%s" in a data cell' % (s, m.group(1)))
+    # No invented statistics. This used to reject every thousands-separated
+    # integer in a data cell, which was the right instinct and the wrong rule:
+    # it also rejected a count that names its source in the same row, and so
+    # banned the one local-data figure 6(k) requires these hubs to carry. A
+    # count is allowed only where its own row attributes it.
+    SOURCED = ('Canada Revenue Agency', 'Corporations Canada')
+    for row in re.findall(r'<tr>.*?</tr>', c, re.S):
+        for m in re.finditer(r'<td>([\d]{1,3}(?:,\d{3})+)</td>', row):
+            if not any(src in row for src in SOURCED):
+                fail.append('%s: count "%s" in a data cell whose row names no '
+                            'source' % (s, m.group(1)))
     # no internal references
     for pat in [r'\bthe plan\b', r'appendix a', r'6\([a-k]\)', r'line 1[0-9]{3}']:
         for m in re.finditer(pat, c, re.I):
             fail.append('%s: internal reference "%s"' % (s, m.group(0)))
+    # "a Alberta", "a Ontario": the template built articles by concatenation,
+    # which only ever read correctly for consonant-initial province names.
+    text = re.sub(r'<[^>]+>', ' ', c)
+    for m in re.finditer(r'\ba (?=(?:Alberta|Ontario|Alta)\b)', text):
+        fail.append('%s: "a %s" needs "an"' % (s, text[m.end():m.end() + 7]))
+
     m = re.search(r'<script type="application/ld\+json">(.*?)</script>', c, re.S)
     json.loads(m.group(1))
 
