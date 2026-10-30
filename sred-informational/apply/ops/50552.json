@@ -1,0 +1,14 @@
+{
+ "id": 50552,
+ "editor": "post_content",
+ "sha256_after": "cf8c483dafbdff0e0902701c0658fbfca0edee0515b37f12fc62e5a59296536f",
+ "ops": [
+  {
+   "row": 0,
+   "search": "SR&ED identification and claim support on jig and fixture development, ",
+   "replace": "",
+   "regex": false
+  }
+ ],
+ "skipped": []
+}

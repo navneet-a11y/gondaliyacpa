@@ -1,0 +1,121 @@
+{
+ "id": 56761,
+ "editor": "post_content",
+ "sha256_after": "6114b96e38b9493476410100659265746f9f05d0bf619bb4c703ed82d7ab42d6",
+ "ops": [
+  {
+   "row": 2,
+   "search": "urn.</p>",
+   "replace": "urn.</p>\n<p class=\"sred-notice\"><strong>Gondaliya CPA does not prepare SR&amp;ED claims. This page explains how the SR&amp;ED program works, for general information only.</strong></p>",
+   "regex": false
+  },
+  {
+   "row": 10,
+   "search": "<h2>Gondaliya CPA Support",
+   "replace": "<h2>Professional Support",
+   "regex": false
+  },
+  {
+   "row": 12,
+   "search": "Comprehensive Assistance with SR&amp;ED and R&amp;D Tax Credit Claim",
+   "replace": "What a Complete SR&amp;ED and R&amp;D Tax Credit Claim Involve",
+   "regex": false
+  },
+  {
+   "row": 16,
+   "search": "<h5 style=\"color:#15355c;margin:24px 0 8px;\">Contact Information and Next Steps for Claim Support</h5>\n<p>Reach Gondaliya CPA at <strong>647-212-9559</strong> or <strong>info@gondaliyacpa.ca</strong> for a free consultation with no obligation. We serve Toronto, Etobicoke, Vaughan and Mississauga and work with analytics firms across Canada, with a one-business-day response and a flat annual fee agreed before any work begins.</p>",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 17,
+   "search": " with Gondaliya CPA",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 20,
+   "search": "How Gondaliya CPA Can Help",
+   "replace": "Getting Ready to Claim",
+   "regex": false
+  }
+ ],
+ "skipped": [
+  {
+   "row": 0,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 1,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 3,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 4,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 5,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 6,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 7,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 8,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 9,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 11,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 13,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 14,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 15,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 18,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 19,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 21,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 22,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 23,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 24,
+   "why": "before found 0 times now"
+  }
+ ]
+}

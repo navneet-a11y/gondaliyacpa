@@ -1,0 +1,32 @@
+{
+ "id": 28947,
+ "editor": "post_content",
+ "sha256_after": "03793fa02423ed180d1dcefc901b203f1063e2fb3c383f2936adbd3c4f360ad9",
+ "ops": [
+  {
+   "row": 0,
+   "search": "Help with SR&amp;ED claims fits into advanced planning but demands",
+   "replace": "SR&amp;ED claims fit into advanced planning but demand",
+   "regex": false
+  },
+  {
+   "row": 1,
+   "search": "we assist with Scientific Research &amp; Experimental Development (SR&amp;ED) credit claims. Thi",
+   "replace": "Scientific Research &amp; Experimental Development (SR&amp;ED) credit",
+   "regex": false
+  },
+  {
+   "row": 2,
+   "search": "<tr><td><a href=\"https://gondaliyacpa.ca/sred-tax-credit-claims/\" data-type=\"page\" data-id=\"24687\">SR&amp;ED Credit Claim Support*</a></td><td>Help with R&amp;D tax credit claims</td><td>Eligible innovators/startups</td><td>During claim period</td><td>Project docs; technical summaries</td></tr>",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 3,
+   "search": "Yes. We support",
+   "replace": "No. Gondaliya CPA does not prepare SR&amp;ED claims. Our guide explains",
+   "regex": false
+  }
+ ],
+ "skipped": []
+}

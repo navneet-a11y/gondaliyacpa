@@ -1,0 +1,69 @@
+{
+ "id": 52987,
+ "editor": "post_content",
+ "sha256_after": "c2e66a461d64e6ffe2f56a38c0f64dcafb893288c4e0263c2e957cbaef64d02e",
+ "ops": [
+  {
+   "row": 0,
+   "search": "tor.</p>",
+   "replace": "tor.</p>\n<p class=\"sred-notice\"><strong>Gondaliya CPA does not prepare SR&amp;ED claims. This page explains how the SR&amp;ED program works, for general information only.</strong></p>",
+   "regex": false
+  },
+  {
+   "row": 1,
+   "search": "T661 and Schedule 31 preparation, ",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 3,
+   "search": "How Gondaliya CPA Supports You",
+   "replace": "Getting Ready to Claim",
+   "regex": false
+  },
+  {
+   "row": 5,
+   "search": "T661 and Schedule 31 preparation and CRA review defence, ",
+   "replace": "",
+   "regex": false
+  }
+ ],
+ "skipped": [
+  {
+   "row": 2,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 4,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 6,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 7,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 8,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 9,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 10,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 11,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 12,
+   "why": "before found 0 times now"
+  }
+ ]
+}

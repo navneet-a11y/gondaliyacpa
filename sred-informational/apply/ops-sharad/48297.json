@@ -1,0 +1,195 @@
+{
+ "id": 48297,
+ "editor": "post_content",
+ "sha256_after": "ed602b6125a01816e1e97eadbadc5104d52bdcfc0f94d0b4927b3b79e5fff288",
+ "ops": [
+  {
+   "row": 32,
+   "search": "<div\\ class=\"sb\\-case\\-card\"><h3>Toronto\\ SaaS\\ Scale\\-Up\\ \\&mdash;\\ [\\s\\S]*?mp;ED\\ tracking\\ built\\ into\\ the\\ monthly\\ close</li></ul></div>\\\n",
+   "replace": "",
+   "regex": true
+  }
+ ],
+ "skipped": [
+  {
+   "row": 0,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 1,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 2,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 3,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 4,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 5,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 6,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 7,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 8,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 9,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 10,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 11,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 12,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 13,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 14,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 15,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 16,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 17,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 18,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 19,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 20,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 21,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 22,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 23,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 24,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 25,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 26,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 27,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 28,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 29,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 30,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 31,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 33,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 34,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 35,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 36,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 37,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 38,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 39,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 40,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 41,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 42,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 43,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 44,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 45,
+   "why": "needs_sharad"
+  }
+ ]
+}

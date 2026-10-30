@@ -1,0 +1,14 @@
+{
+ "id": 51083,
+ "editor": "post_content",
+ "sha256_after": "fc6e91f0fe2dee161ba45a3d456ccb82a3424924d76a07b07bf80387a9c34f8f",
+ "ops": [
+  {
+   "row": 0,
+   "search": "SR&ED assessment with Canadian and foreign expenditure separation, ",
+   "replace": "",
+   "regex": false
+  }
+ ],
+ "skipped": []
+}

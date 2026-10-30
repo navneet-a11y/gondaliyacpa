@@ -1,0 +1,167 @@
+{
+ "id": 48794,
+ "editor": "post_content",
+ "sha256_after": "3f099a604bb9bf13b19247024d9c08ce80f85602a2a88934ee93c3491d57b963",
+ "ops": [
+  {
+   "row": 1,
+   "search": "ze benefits.</p>",
+   "replace": "ze benefits.</p>\n<p class=\"sred-notice\"><strong>Gondaliya CPA does not prepare SR&amp;ED claims. This page explains how the SR&amp;ED program works, for general information only.</strong></p>",
+   "regex": false
+  },
+  {
+   "row": 2,
+   "search": "oviding SR&amp;ED claims, corporat",
+   "replace": "oviding corporat",
+   "regex": false
+  },
+  {
+   "row": 8,
+   "search": "How Gondaliya CPA Can Assist",
+   "replace": "What to Look For",
+   "regex": false
+  },
+  {
+   "row": 13,
+   "search": "Contact Information and Additional Resources for SR&amp;ED Assistance",
+   "replace": "Additional Resources for SR&amp;ED",
+   "regex": false
+  },
+  {
+   "row": 18,
+   "search": "How Gondaliya CPA Supports Canadian Innovators",
+   "replace": "What Decides the Outcome",
+   "regex": false
+  },
+  {
+   "row": 22,
+   "search": " with Gondaliya CPA",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 24,
+   "search": "SR&amp;ED claims, ",
+   "replace": "",
+   "regex": false
+  }
+ ],
+ "skipped": [
+  {
+   "row": 0,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 3,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 4,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 5,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 6,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 7,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 9,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 10,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 11,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 12,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 14,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 15,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 16,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 17,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 19,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 20,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 21,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 23,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 25,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 26,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 27,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 28,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 29,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 30,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 31,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 32,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 33,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 34,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 35,
+   "why": "before found 0 times now"
+  }
+ ]
+}

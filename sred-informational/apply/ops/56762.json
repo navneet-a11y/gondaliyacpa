@@ -1,0 +1,14 @@
+{
+ "id": 56762,
+ "editor": "post_content",
+ "sha256_after": "f92c041b8c34a1d7f821fa648d7b217bf811c302a217b5b7bd971205fe4cfdf1",
+ "ops": [
+  {
+   "row": 0,
+   "search": "SR&ED assessment, ",
+   "replace": "",
+   "regex": false
+  }
+ ],
+ "skipped": []
+}

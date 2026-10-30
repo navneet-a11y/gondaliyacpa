@@ -1,0 +1,85 @@
+{
+ "id": 31952,
+ "editor": "post_content",
+ "sha256_after": "8ef4463aaf05b6c15881cb5c0c5bfc64eacceacdb4450532cea1b608fd418c0d",
+ "ops": [
+  {
+   "row": 3,
+   "search": "unting needs.</p>\n<!-- /wp:paragraph -->",
+   "replace": "unting needs.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"sred-notice\"><strong>Gondaliya CPA does not prepare SR&amp;ED claims. This page explains how the SR&amp;ED program works, for general information only.</strong></p>\n<!-- /wp:paragraph -->",
+   "regex": false
+  },
+  {
+   "row": 6,
+   "search": "the Service Works at Gondaliya CPA",
+   "replace": "an SR&amp;ED Accounting Engagement Typically Works",
+   "regex": false
+  }
+ ],
+ "skipped": [
+  {
+   "row": 0,
+   "why": "needs_sharad"
+  },
+  {
+   "row": 1,
+   "why": "needs_sharad"
+  },
+  {
+   "row": 2,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 4,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 5,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 7,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 8,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 9,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 10,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 11,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 12,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 13,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 14,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 15,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 16,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 17,
+   "why": "before found 0 times now"
+  }
+ ]
+}

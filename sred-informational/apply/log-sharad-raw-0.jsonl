@@ -1,0 +1,6 @@
+{"id":48297,"editor":"post_content","ops":1,"applied":1,"shared":[],"failed":[],"check":"MATCH"}
+{"id":48794,"editor":"post_content","ops":7,"applied":6,"shared":[],"failed":[{"row":1,"why":"duplicate notice: row already live from raw batch, plan.py re-planned it because the after text contains the before text; not applied"}],"check":"DIFFERS"}
+{"id":57751,"editor":"post_content","ops":1,"applied":1,"shared":[],"failed":[],"check":"MATCH"}
+{"id":56761,"editor":"post_content","ops":6,"applied":5,"shared":[],"failed":[{"row":2,"why":"duplicate notice: already live, not applied"}],"check":"DIFFERS"}
+{"id":31952,"editor":"post_content","ops":2,"applied":1,"shared":[],"failed":[{"row":3,"why":"duplicate notice: already live, not applied"}],"check":"DIFFERS"}
+{"id":52987,"editor":"post_content","ops":4,"applied":3,"shared":[],"failed":[{"row":0,"why":"duplicate notice: already live, not applied"}],"check":"DIFFERS"}

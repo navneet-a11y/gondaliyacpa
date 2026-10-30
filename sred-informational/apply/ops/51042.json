@@ -1,0 +1,38 @@
+{
+ "id": 51042,
+ "editor": "post_content",
+ "sha256_after": "4baec4d28499c1d0c1af1a00523a83903a5978f113e26df179905f8c2bb59cbf",
+ "ops": [
+  {
+   "row": 0,
+   "search": "SR&amp;ED assessment and documentation, ",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 1,
+   "search": "assessing SR&amp;ED on formulation work and setting up the documentation, ",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 2,
+   "search": "if(rv('p-d')===1) items.push('An SR&amp;ED assessment, before the claim window closes');\n      ",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 3,
+   "search": "assesses SR&amp;ED on formulation work and sets up the documentation, ",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 4,
+   "search": "SR&ED assessment on formulation work with documentation setup, ",
+   "replace": "",
+   "regex": false
+  }
+ ],
+ "skipped": []
+}
