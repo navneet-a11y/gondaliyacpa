@@ -174,7 +174,87 @@ BC = dict(
  cards='british-columbia-cards.json',
 )
 
+# ---------------------------------------------------------------------------
+# Alberta. Held out of the build: six fields could not be sourced.
+#
+# The environment's network policy denies www.alberta.ca and open.alberta.ca
+# (403 on CONNECT at the agent proxy), so the Alberta Corporate Registry pages
+# and Information Circular CT-2 could not be read. Web search returned only
+# law-firm and filing-service pages, and they contradict each other on every
+# figure that matters here:
+#
+#   annual return due   six months after fiscal year-end, or the incorporation
+#                       anniversary month, or 60 days after the anniversary
+#   dissolution after   one year, two years, or three years of non-filing
+#   annual return fee   $45, $82, or no fee at all
+#
+# Three different answers is not a source. Per the BC precedent in this file's
+# docstring, an unsourceable figure is not invented, so each one is held at
+# UNVERIFIED and the guard below refuses to render a jurisdiction holding one.
+#
+# What IS sourced, from the signed-off plan rather than the web:
+#   separate_return   hard rule 8 and line 1212: "Alberta AT1 and Quebec CO-17
+#                     are separate provincial returns and are not included in
+#                     the fee". This is the one Alberta-specific claim the plan
+#                     states itself, and it is the load-bearing one.
+#   quote_tax_total   Alberta levies no HST, so the Ontario pages' "13 per cent
+#                     HST, so $339.00" arithmetic is omitted, as it is for BC.
+#                     This only withholds a computation; it asserts nothing.
+#
+# Also available but not yet placed: line 1743 gives the CRA T2 assessment
+# count for all three hub provinces, 365,890 for Alberta. See decisions.md --
+# the BC hub omitted its own figure as unfindable when the plan states it.
+UNVERIFIED = '<<UNVERIFIED: see the Alberta note in build_jurisdiction.py>>'
+
+AB = dict(
+ slug='alberta',
+ name='Alberta',
+ short='AB',
+ title='Nil T2 Filing for Alberta Corporations',
+ h1='Nil T2 Filing in Alberta',
+ meta=('The nil T2 an Alberta corporation files every year, why the Alberta AT1 '
+       'is a separate return, and how the Alberta annual return differs.'),
+ separate_return='Alberta AT1',
+ registry=UNVERIFIED,
+ annual_filing=UNVERIFIED,
+ annual_due=UNVERIFIED,
+ annual_statute=UNVERIFIED,
+ annual_online=UNVERIFIED,
+ strike_after=UNVERIFIED,
+ quote_tax_total=False,
+ cards='alberta-cards.json',
+)
+
 JURISDICTIONS = [BC]
+
+# Alberta stays here until its six fields are real. To finish it: replace every
+# UNVERIFIED with the sourced value, add the source URL and the date checked to
+# the note above, then move AB into JURISDICTIONS. The second guard below makes
+# that move mandatory rather than optional.
+PENDING = [AB]
+
+
+def _guard(jurisdictions, pending):
+    """Keep an unsourced jurisdiction fact from ever reaching a page.
+
+    Nothing was comparing claims against their sources, which is the same shape
+    of gap that let the /tools/ hub sit four batches out of date: the defect is
+    not the missing fact, it is that nothing refuses to ship without it.
+    """
+    for j in jurisdictions:
+        bad = sorted(k for k, v in j.items() if v == UNVERIFIED)
+        assert not bad, (
+            '%s is in JURISDICTIONS with %d unsourced field(s): %s. '
+            'Line 1212 has Sharad Gondaliya reviewing every jurisdiction claim, '
+            'so an unsourced one does not render.' % (j['slug'], len(bad), bad))
+    for j in pending:
+        if not any(v == UNVERIFIED for v in j.values()):
+            raise AssertionError(
+                '%s has no unsourced fields left, so it belongs in '
+                'JURISDICTIONS rather than PENDING.' % j['slug'])
+
+
+_guard(JURISDICTIONS, PENDING)
 
 def build(j):
     url = '%s/%s/' % (SITE, j['slug'])

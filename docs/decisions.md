@@ -5987,3 +5987,88 @@ The blog is at **2 posts on October 30**. The plan wants 10 every Friday from
 October 16, which would put roughly 30 live by now, and 60 by November 20. The
 hub will track whatever is published, but the publishing schedule itself is
 behind.
+
+## 2026-10-30 — Alberta is next, and it is blocked on six facts I will not invent
+
+Navneet: "now work on next location. we were done with ontario and bc".
+
+**Alberta is the right next place, and the plan says so.** Line 1743 substitutes
+three jurisdiction hubs for the three failing city hubs: /ontario/, /alberta/
+and /british-columbia/. Two are live, so Alberta is the third. Line 1743 also
+names the 6(k) local-data source each one passes on, the CRA T2 assessment
+count, and gives the figure: **365,890 for Alberta** (Ontario 1,108,730, BC
+413,630).
+
+Alberta is also the first jurisdiction where hard rule 8 bites: the AT1 is a
+separate provincial return and is not covered by the fee. Every other province
+built so far reports provincial corporate income tax through the federal T2.
+
+### What is blocked
+
+Six fields of the jurisdiction record could not be sourced:
+
+| Field | What the sources said |
+|---|---|
+| annual return due date | six months after fiscal year-end, **or** the incorporation anniversary month, **or** 60 days after the anniversary |
+| dissolution after non-filing | one year, **or** two years, **or** three years |
+| annual return fee | $45, **or** $82, **or** no fee |
+| registry name and filing route | not settled; Alberta appears to file through authorized registry agents rather than directly online, unconfirmed |
+| statute section for the annual return | no section number found |
+| whether a nil corporation must file an AT1 at all | TRA publishes a Filing Exemption Checklist; its conditions were not readable |
+
+The last one is the most consequential. If a nil Alberta corporation is exempt
+from the AT1, twelve pages should say so plainly; if it is not, those pages must
+say the AT1 is separate and unpriced. Those are opposite pages, and I could not
+establish which is correct.
+
+**Why unsourced: the environment's network policy denies `www.alberta.ca` and
+`open.alberta.ca`** — 403 on CONNECT at the agent proxy, confirmed by curl, so
+the Corporate Registry pages and Information Circular CT-2 could not be read.
+Web search returned only law-firm and filing-service pages, which contradict
+each other on every figure above. Three different answers is not a source.
+
+This follows the precedent already set in `build/jurisdictions/build_jurisdiction.py`
+for British Columbia: an unsourceable figure is not invented. Line 1212 also has
+Sharad Gondaliya reviewing every jurisdiction claim, and line 1212's own gate is
+that no service-and-place page publishes without its own place data row — which
+is exactly what these six fields are.
+
+### What was built anyway
+
+- `build/jurisdictions/alberta-cards.json`, the 12 service cards for the hub's
+  children, derived mechanically from the BC file with slugs and names swapped
+  and asserted free of BC remnants.
+- The `AB` record in `build_jurisdiction.py`, with everything that *is* sourced
+  filled in: the title, H1 and meta; `separate_return='Alberta AT1'` from hard
+  rule 8 and line 1212, the one Alberta-specific claim the plan states itself;
+  and `quote_tax_total=False`, because Alberta levies no HST so the Ontario
+  pages' "13 per cent HST, so $339.00" arithmetic is omitted as it is for BC.
+  That last one only withholds a computation, it asserts nothing.
+- A guard, `_guard()`, that fails the build two ways: a jurisdiction carrying an
+  `UNVERIFIED` field cannot enter `JURISDICTIONS`, and a jurisdiction with no
+  `UNVERIFIED` fields left cannot stay in `PENDING`. Both directions are tested.
+  Alberta therefore cannot be published by accident, and cannot be quietly
+  forgotten once the facts arrive.
+
+BC's output is byte-identical after the change and its gate is clear.
+
+The 12 Alberta F4 child pages are not started. Their central place paragraph and
+place data row are built from the six blocked fields, so writing them now would
+mean rewriting them later.
+
+### Open for Navneet, one of two
+
+1. Add `www.alberta.ca` and `open.alberta.ca` to the environment's allowed
+   domains, and the facts can be sourced and the build finished; or
+2. supply the six values with a source for each, and they go straight into the
+   record.
+
+### Separately: the BC hub omits a figure the plan supplies
+
+`build_jurisdiction.py`'s docstring says the BC T2 assessment count "cannot be
+sourced and [is] NOT invented", and the hub carries no count table as a result.
+But **line 1743 states it: 413,630 for British Columbia.** The figure was in the
+signed-off plan the whole time, cited to the CRA assessment table and refreshed
+when that table is reissued. The same applies to Alberta's 365,890 when its hub
+is built. Adding it changes visible content on a live page, so it goes to Sharad
+Gondaliya in the Friday update rather than being done unannounced.
