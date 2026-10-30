@@ -1,0 +1,20 @@
+{
+ "id": 26791,
+ "editor": "post_content",
+ "sha256_after": "9f42a7670bb36d853edd4d2d54b14b1eb9d1400b73adc00aa46ce9fb2a39b6bd",
+ "ops": [
+  {
+   "row": 0,
+   "search": "<!-- wp:list-item -->\n<li>SR&amp;ED Credit Claims: Help to <a href=\"https://gondaliyacpa.ca/claiming-sred-tax-credits-what-canadian-businesses-need-to-know/\" data-type=\"post\" data-id=\"18000\">claim Scientific Research &amp; Experimental Development credits</a>.</li>\n<!-- /wp:list-item -->\n\n",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 1,
+   "search": "Our experts guide you through <a href=\"https://gondaliyacpa.ca/claiming-sred-tax-credits-what-canadian-businesses-need-to-know/\" data-type=\"post\" data-id=\"18000\">claiming SR&amp;ED credits</a> accurately to maximize tax benefits",
+   "replace": "No. Gondaliya CPA does not prepare SR&amp;ED claims. Our guide explains <a href=\"https://gondaliyacpa.ca/claiming-sred-tax-credits-what-canadian-businesses-need-to-know/\" data-type=\"post\" data-id=\"18000\">claiming SR&amp;ED credits</a>",
+   "regex": false
+  }
+ ],
+ "skipped": []
+}

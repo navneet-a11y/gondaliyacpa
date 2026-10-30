@@ -1,0 +1,20 @@
+{
+ "id": 50576,
+ "editor": "post_content",
+ "sha256_after": "60b867f20de8869432753a0ca20b71637c3f21c676d8f8b0db353b3c4f6da3f8",
+ "ops": [
+  {
+   "row": 0,
+   "search": " We review your technical projects, identify eligible work, and prepare the SR&ED claim with the supporting records CRA requires.<",
+   "replace": "<",
+   "regex": false
+  },
+  {
+   "row": 1,
+   "search": " We review your technical projects, identify eligible work, and prepare the SR&ED claim with the supporting records CRA requires.",
+   "replace": "",
+   "regex": false
+  }
+ ],
+ "skipped": []
+}

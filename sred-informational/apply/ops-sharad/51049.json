@@ -1,0 +1,87 @@
+{
+ "id": 51049,
+ "editor": "post_content",
+ "sha256_after": "d5df69496a6a9bbbc7c5c686895c408f5459e05816594b4fd84006b1bf25b8df",
+ "ops": [
+  {
+   "row": 14,
+   "search": "<div\\ class=\"sb\\-case\\-card\"><h3>Toronto\\ Professional\\-Certifica[\\s\\S]*?wing\\ with\\ a\\ repeatable\\ annual\\ claim\\ process</li></ul></div>\\\n",
+   "replace": "",
+   "regex": true
+  }
+ ],
+ "skipped": [
+  {
+   "row": 0,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 1,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 2,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 3,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 4,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 5,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 6,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 7,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 8,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 9,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 10,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 11,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 12,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 13,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 15,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 16,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 17,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 18,
+   "why": "needs_sharad"
+  }
+ ]
+}

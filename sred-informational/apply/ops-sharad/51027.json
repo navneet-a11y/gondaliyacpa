@@ -1,0 +1,159 @@
+{
+ "id": 51027,
+ "editor": "post_content",
+ "sha256_after": "db46a6ffd8de0bc393ebaa8b0f6bbfd730935d0bfbda75b2766ebf1c0afc90ac",
+ "ops": [
+  {
+   "row": 28,
+   "search": "SR\\&amp;ED\\ \\&amp;\\ Class\\ 53\\ Machinery</h3><p><strong>The\\ proble[\\s\\S]*?/li><li>Lab\\ and\\ batch\\ records\\ now\\ support\\ every\\ future\\ claim",
+   "replace": "Class 53 Machinery</h3><p><strong>The problem:</strong> A Mississauga specialty-coatings manufacturer had its new reactor and filling line depreciated as ordinary Class 8 equipment at 20%.</p><p><strong>What we did:</strong> We reclassified the reactor and filling line, acquired before 2026, to Class 53 at 50%.</p><p><strong>The result:</strong></p><ul class=\"sb-case-res\"><li>Accelerated roughly \\$150,000 of first-year Class 53 CCA on the \\$600,000 line",
+   "regex": true
+  }
+ ],
+ "skipped": [
+  {
+   "row": 0,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 1,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 2,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 3,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 4,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 5,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 6,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 7,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 8,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 9,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 10,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 11,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 12,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 13,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 14,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 15,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 16,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 17,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 18,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 19,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 20,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 21,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 22,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 23,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 24,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 25,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 26,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 27,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 29,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 30,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 31,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 32,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 33,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 34,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 35,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 36,
+   "why": "needs_sharad"
+  }
+ ]
+}

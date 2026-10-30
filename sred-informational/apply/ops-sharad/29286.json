@@ -1,0 +1,79 @@
+{
+ "id": 29286,
+ "editor": "post_content",
+ "sha256_after": "92e19c62651b11e9bb500ad7416708a0acd48440812fea8d47c83d17e716ac7e",
+ "ops": [
+  {
+   "row": 11,
+   "search": " Cost of Corporate Tax Planning and SR&amp;ED Tax Credits in Canada</h2>",
+   "replace": " Cost of Corporate Tax Planning in Canada</h2>",
+   "regex": false
+  }
+ ],
+ "skipped": [
+  {
+   "row": 0,
+   "why": "needs_sharad"
+  },
+  {
+   "row": 1,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 2,
+   "why": "already live (after text present)"
+  },
+  {
+   "row": 3,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 4,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 5,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 6,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 7,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 8,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 9,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 10,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 12,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 13,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 14,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 15,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 16,
+   "why": "before found 0 times now"
+  }
+ ]
+}

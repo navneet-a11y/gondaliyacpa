@@ -1,0 +1,26 @@
+{
+ "id": 40045,
+ "editor": "post_content",
+ "sha256_after": "5c466048ef4856b30cc66b45cdffe343c518abcf18b3fa5ff4aeb35a0d47e2e2",
+ "ops": [
+  {
+   "row": 0,
+   "search": "ings\\ 15\\+\\ years\\ of\\ experience\\ advising\\ incorporated\\ Canadian\\ [\\s\\S]*?ble\\ tax\\ and\\ the\\ capital\\ dividend\\ account,\\ SR\\&amp;ED,\\ GST/HST",
+   "replace": "ings 15+ years of experience advising incorporated Canadian businesses on corporate year-end planning, covering the small business deduction and the taxable capital and passive income grinds, association rules and business limit sharing, income and expense timing across the year-end line, capital cost allowance classification and the reinstated investment incentive, salary against dividend structuring and integration, eligible and non-eligible dividend designation, shareholder loan timing, refundable tax and the capital dividend account, GST/HST",
+   "regex": true
+  },
+  {
+   "row": 1,
+   "search": "SR&amp;ED, ",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 2,
+   "search": "SR&ED assessment, ",
+   "replace": "",
+   "regex": false
+  }
+ ],
+ "skipped": []
+}

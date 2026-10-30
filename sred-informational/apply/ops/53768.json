@@ -1,0 +1,20 @@
+{
+ "id": 53768,
+ "editor": "post_content",
+ "sha256_after": "5d204560b51a874a713c860f4391581b71e015f2835a8ae5466bd3b3b8822b35",
+ "ops": [
+  {
+   "row": 0,
+   "search": ", the T2 and any SR&amp;ED claim to its own 18-month deadline",
+   "replace": " and the T2",
+   "regex": false
+  },
+  {
+   "row": 1,
+   "search": "SR&ED claims, ",
+   "replace": "",
+   "regex": false
+  }
+ ],
+ "skipped": []
+}

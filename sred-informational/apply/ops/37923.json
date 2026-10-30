@@ -1,0 +1,14 @@
+{
+ "id": 37923,
+ "editor": "post_content",
+ "sha256_after": "7bee279eaed4cd305b5370cf1a7d9d5b741c75c4a183ffc7ffd9ac709cdcb1f0",
+ "ops": [
+  {
+   "row": 0,
+   "search": "SR&amp;ED credits and other ",
+   "replace": "",
+   "regex": false
+  }
+ ],
+ "skipped": []
+}

@@ -1,0 +1,151 @@
+{
+ "id": 27594,
+ "editor": "post_content",
+ "sha256_after": "972c69bf688947fcf8209a30611188b24c889cfb6677a4c6d63c77f3379baf7b",
+ "ops": [
+  {
+   "row": 3,
+   "search": "This Service Is For / Not For",
+   "replace": "SR&amp;ED Claims Fit / Don’t Fit",
+   "regex": false
+  },
+  {
+   "row": 16,
+   "search": "the Service Works at Gondaliya CPA",
+   "replace": "an SR&amp;ED Claim Process Works",
+   "regex": false
+  },
+  {
+   "row": 32,
+   "search": "<!\\-\\-\\ wp:heading\\ \\{\"level\":3\\}\\ \\-\\->\\\n<h3\\ class=\"wp\\-block\\-heading\">Essential\\ SR\\&amp;ED\\ Claim\\ Support\\ Servi[\\s\\S]*?tigation\\ strategies\\ to\\ avoid\\ common\\ audit\\ risks</li>\\\n<!\\-\\-\\ /wp:list\\-item\\ \\-\\-></ul>\\\n<!\\-\\-\\ /wp:list\\ \\-\\->\\\n\\\n",
+   "replace": "",
+   "regex": true
+  }
+ ],
+ "skipped": [
+  {
+   "row": 0,
+   "why": "needs_sharad"
+  },
+  {
+   "row": 1,
+   "why": "needs_sharad"
+  },
+  {
+   "row": 2,
+   "why": "already live (after text present)"
+  },
+  {
+   "row": 4,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 5,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 6,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 7,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 8,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 9,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 10,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 11,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 12,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 13,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 14,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 15,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 17,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 18,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 19,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 20,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 21,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 22,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 23,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 24,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 25,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 26,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 27,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 28,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 29,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 30,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 31,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 33,
+   "why": "before found 0 times now"
+  }
+ ]
+}

@@ -1,0 +1,26 @@
+{
+ "id": 52972,
+ "editor": "post_content",
+ "sha256_after": "324cc280dd8c20a7aa48a9ee5f44026c6366435317a30b3ffcca82ca6a0ca61a",
+ "ops": [
+  {
+   "row": 0,
+   "search": "<a class=\"wpil_keyword_link\" href=\"https://gondaliyacpa.ca/sred-tax-credit-claims/\" title=\"SR&ED Tax Credit Claims\">SR&amp;ED claims</a> where the work qualifies, and audit representation",
+   "replace": "and audit representation. For the research credit itself, see <a class=\"wpil_keyword_link\" href=\"https://gondaliyacpa.ca/sred-tax-credit-claims/\" title=\"SR&ED Tax Credit Claims\">how SR&amp;ED credits work</a>",
+   "regex": false
+  },
+  {
+   "row": 1,
+   "search": "review SR&amp;ED against the expanded rules, ",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 2,
+   "search": "SR&ED claims, ",
+   "replace": "",
+   "regex": false
+  }
+ ],
+ "skipped": []
+}

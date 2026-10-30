@@ -1,0 +1,47 @@
+{
+ "id": 48828,
+ "editor": "post_content",
+ "sha256_after": "a51987a32a6d5f4b06953cb92b816629c52a5e9730c3f31f5b95cf85ccacff64",
+ "ops": [
+  {
+   "row": 5,
+   "search": "SR\\&amp;ED\\ \\&amp;\\ Incorporation</h3><p><strong>Problem:</stron[\\s\\S]*?e\\-res\"><li>SR\\&amp;ED\\ credits\\ claimed\\ on\\ development\\ work</li",
+   "replace": "Incorporation</h3><p><strong>Problem:</strong> A microbrewery was still operating as a sole proprietor at high personal tax rates with a valuable brand and equipment exposed.</p><p><strong>Solution:</strong> We incorporated the brewery, used a section 85 rollover to move the equipment and brand in tax-deferred, and set up a clean share structure.</p><p><strong>Results:</strong></p><ul class=\"sb-case-res\"",
+   "regex": true
+  }
+ ],
+ "skipped": [
+  {
+   "row": 0,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 1,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 2,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 3,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 4,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 6,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 7,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 8,
+   "why": "before found 0 times now"
+  }
+ ]
+}

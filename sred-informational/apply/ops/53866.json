@@ -1,0 +1,14 @@
+{
+ "id": 53866,
+ "editor": "post_content",
+ "sha256_after": "82e204fec313a3ed804043f2eb6383ebcff2373cfbc07678114d0838c88498a2",
+ "ops": [
+  {
+   "row": 0,
+   "search": "We handle it inside the engagement and set out the detail on our <a href=\"https://gondaliyacpa.ca/sred-tax-credit-claims/\">SR&amp;ED tax credit claims",
+   "replace": "The detail is set out on our <a href=\"https://gondaliyacpa.ca/sred-tax-credit-claims/\">how SR&amp;ED tax credits work",
+   "regex": false
+  }
+ ],
+ "skipped": []
+}
