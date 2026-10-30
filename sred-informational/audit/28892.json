@@ -1,0 +1,20 @@
+{
+ "id": 28892,
+ "url": "https://gondaliyacpa.ca/it-support-web-development/",
+ "title": "IT Support &amp; Web Development",
+ "type": "page",
+ "elementor": true,
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "Services grid - tax planning card bullet",
+   "editor": "elementor",
+   "action": "delete",
+   "before": "<li>We evaluate whether your web development corporation qualifies for the SR&ED tax credit on experimental development work \\u2014 the 35% refundable ITC on the first $3 million in eligible expenditures can recover a significant portion of your IT company's R&D costs, and the claim must be filed on Form T661 within 18 months of fiscal year-end.<\\/li>\\r\\n",
+   "after": "",
+   "needs_sharad": false,
+   "note": "Bullet where the firm evaluates SR&ED eligibility"
+  }
+ ],
+ "page_note": "IT support & web development industry page (Elementor). Single SR&ED mention: a services-grid bullet offering SR&ED eligibility evaluation. Deleted."
+}

@@ -1,0 +1,50 @@
+{
+ "id": 27532,
+ "url": "https://gondaliyacpa.ca/reviews/brampton/",
+ "title": "Brampton",
+ "type": "page",
+ "elementor": true,
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "Intro text",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "Trust &amp; Estate Tax Returns (T3), and SR&amp;ED Tax Credit Claims, our Brampton clients",
+   "after": "and Trust &amp; Estate Tax Returns (T3), our Brampton clients",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Services text block",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "business advisory services, Trust &amp; Estate Tax Returns (T3), and SR&amp;ED Tax Credit Claims, helping",
+   "after": "business advisory services, and Trust &amp; Estate Tax Returns (T3), helping",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "FAQ answer (tax filing)",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "We also assist with T3 Trust & Estate Tax Returns and SR&ED tax credit claims, ensuring",
+   "after": "We also assist with T3 Trust & Estate Tax Returns, ensuring",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "FAQ answer (tax credits)",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "Yes, we help identify eligible business tax credits, including SR&ED funding, and guide you",
+   "after": "Yes, we help identify eligible business tax credits and guide you",
+   "needs_sharad": false,
+   "note": ""
+  }
+ ],
+ "page_note": "Brampton reviews page (Elementor). SR&ED Tax Credit Claims offered in the intro, a services text block and two FAQ answers. Reviews themselves do not mention SR&ED."
+}

@@ -1,0 +1,40 @@
+{
+ "id": 27382,
+ "url": "https://gondaliyacpa.ca/digital-asset-accounting-and-bookkeeping/",
+ "title": "Digital Asset Accounting and Bookkeeping",
+ "type": "page",
+ "elementor": true,
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "Services grid - tax planning card bullet",
+   "editor": "elementor",
+   "action": "delete",
+   "before": "<li>We evaluate whether your digital asset corporation qualifies for the SR&ED tax credit on experimental software development work \\u2014 the 35% refundable ITC on the first $3 million in eligible expenditures can recover a significant portion of your SaaS product development costs, and the claim must be filed on Form T661 within 18 months of fiscal year-end.<\\/li>\\r\\n",
+   "after": "",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Services grid - catch-up card bullet",
+   "editor": "elementor",
+   "action": "replace",
+   "before": " We prioritize catch-up T2 returns where the 18-month window has not yet closed.",
+   "after": "",
+   "needs_sharad": false,
+   "note": "SR&ED deadline fact stays; offer sentence tied to recovering SR&ED dropped"
+  },
+  {
+   "location": "Visible",
+   "section": "Services grid - CRA audit card bullet",
+   "editor": "elementor",
+   "action": "delete",
+   "before": "<li>We defend SR&ED claims during a CRA audit on your digital asset corporation by presenting Form T661 project descriptions, developer time-tracking records, and documentation of technological uncertainty \\u2014 CRA denies SR&ED when no contemporaneous records support the qualifying experimental development work.<\\/li>\\r\\n",
+   "after": "",
+   "needs_sharad": false,
+   "note": ""
+  }
+ ],
+ "page_note": "Digital asset accounting industry page (Elementor, same template as 32317). Rows remove SR&ED eligibility-evaluation and audit-defence bullets and the catch-up sentence tied to SR&ED. Informational SR&ED lines (deadline fact, NTR receivables, notes on SR&ED credit accounting) stay."
+}

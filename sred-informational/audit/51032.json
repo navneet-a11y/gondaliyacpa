@@ -1,0 +1,170 @@
+{
+ "id": 51032,
+ "url": "https://gondaliyacpa.ca/accountant-for-cannabis-producers/",
+ "title": "Accounting and Tax Services for Cannabis Producers",
+ "type": "page",
+ "elementor": false,
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "Hero intro paragraph",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "cost every lot from mother plant to packaged unit under section 10, and claim SR&amp;ED on your genetics and extraction work.",
+   "after": "and cost every lot from mother plant to packaged unit under section 10.",
+   "needs_sharad": false,
+   "note": "Check preceding comma list reads well: '..., your HVAC ... in Class 8, and cost every lot ...'."
+  },
+  {
+   "location": "Visible",
+   "section": "Card: Lot Inventory, SR&ED & HST",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "destroyed lots written off with destruction records, SR&amp;ED on genetics and extraction, and 13% HST",
+   "after": "destroyed lots written off with destruction records, and 13% HST",
+   "needs_sharad": false,
+   "note": "Card heading 'Lot Inventory, SR&ED & HST' left (informational topic label); change to 'Lot Inventory & HST' if preferred."
+  },
+  {
+   "location": "Visible",
+   "section": "Compliance paragraph (We manage...)",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "payroll source deductions on the PD7A remittance, and SR&amp;ED claims on Form T661 and Schedule 31.",
+   "after": "and payroll source deductions on the PD7A remittance.",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "How we work step heading",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "Tax Planning &mdash; Excise, CCA &amp; SR&amp;ED Expertise</h3>",
+   "after": "Tax Planning &mdash; Excise &amp; CCA Expertise</h3>",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "How we work step text",
+   "editor": "post_content",
+   "action": "replace",
+   "before": " We claim SR&amp;ED on genetics and extraction R&amp;D at the 35% refundable rate and protect the $500,000 Small Business Deduction.",
+   "after": " We protect the $500,000 Small Business Deduction.",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Services grid: Tax planning card",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "protect the Small Business Deduction, claim SR&amp;ED on genetics and extraction, time equipment",
+   "after": "protect the Small Business Deduction, time equipment",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Tailored services expanded: SR&ED bullet",
+   "editor": "post_content",
+   "action": "delete",
+   "before": "<li>We file the T661 and Schedule 31 for SR&amp;ED on genetics, cultivation-method and extraction R&amp;D, claiming the 35% refundable federal credit on the first $3 million plus the 8% Ontario OITC; one claim returned $87,000 in cash.</li>",
+   "after": "",
+   "needs_sharad": false,
+   "note": "Offer to file SR&ED claims with $87,000 result."
+  },
+  {
+   "location": "Visible",
+   "section": "Readiness quiz result (5+ yes, escaped copy)",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "OCS allowances, equipment CCA, lot costing and SR&amp;ED can all be optimized",
+   "after": "OCS allowances, equipment CCA and lot costing can all be optimized",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Readiness quiz result (5+ yes, inline JS)",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "OCS allowances, equipment CCA, lot costing and SR&ED could all be optimized",
+   "after": "OCS allowances, equipment CCA and lot costing could all be optimized",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Case study card: London-Area Standard Processor (SR&ED & Destroyed Lots)",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "<div class=\"sb-case-card\"><h3>London-Area Standard Processor &mdash; SR&amp;ED &amp; Destroyed Lots</h3><p><strong>The problem:</strong> A London-area standard processor had spent three years developing proprietary genetics and refining a solventless extraction method without ever filing an SR&amp;ED claim, so the refundable credit was simply left on the table. At the same time, $80,000 of failed-testing lots that Health Canada had already approved for destruction were still carried in inventory at full cost, overstating both the balance sheet and taxable income.</p><p><strong>What we did:</strong> We documented the genetics and extraction projects, filed the T661 with Schedule 31 for the 35% refundable federal credit plus the 8% Ontario OITC, and wrote off the destroyed lots under section 10 with the Health Canada destruction records as support.</p><p><strong>The result:</strong></p><ul class=\"sb-case-res\"><li>SR&amp;ED refund of roughly $87,000 in cash plus the Ontario OITC</li><li>$80,000 of failed-testing lots written off with destruction records</li><li>Corporate tax bill cut materially; three open years amended</li></ul></div>\n",
+   "after": "<div class=\"sb-case-card\"><h3>London-Area Standard Processor &mdash; Destroyed Lots</h3><p><strong>The problem:</strong> A London-area standard processor had $80,000 of failed-testing lots that Health Canada had already approved for destruction still carried in inventory at full cost, overstating both the balance sheet and taxable income.</p><p><strong>What we did:</strong> We wrote off the destroyed lots under section 10 with the Health Canada destruction records as support.</p><p><strong>The result:</strong></p><ul class=\"sb-case-res\"><li>$80,000 of failed-testing lots written off with destruction records</li><li>Corporate tax bill cut materially; three open years amended</li></ul></div>\n",
+   "needs_sharad": true,
+   "note": "Removes the SR&ED claim the firm filed ($87,000); keeps the destroyed-lots part of the case."
+  },
+  {
+   "location": "Visible",
+   "section": "Onboarding Step 4 Quarterly Planning Review",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "lot inventory and write-offs, SR&amp;ED project tracking, holding-company",
+   "after": "lot inventory and write-offs, holding-company",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Onboarding Step 5 Year-End",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "the OCS receivable, T661 where SR&amp;ED applies, T2 with GIFI",
+   "after": "the OCS receivable, T2 with GIFI",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "FAQ: Does cultivation or extraction R&D qualify for SR&ED? (visible)",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "We identify the eligible projects and document them contemporaneously so the claim holds up.</div>",
+   "after": "Eligible projects need to be documented contemporaneously so the claim holds up.</div>",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "JSON-LD",
+   "section": "FAQPage: Does cultivation or extraction R&D qualify for SR&ED?",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "We identify the eligible projects and document them contemporaneously so the claim holds up.\"}",
+   "after": "Eligible projects need to be documented contemporaneously so the claim holds up.\"}",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Final CTA paragraph",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "lot-level plant and dried-flower inventory with destruction write-offs, SR&amp;ED on genetics and extraction, and security-cleared payroll",
+   "after": "lot-level plant and dried-flower inventory with destruction write-offs, and security-cleared payroll",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "JSON-LD",
+   "section": "AccountingService schema description",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "plant and dried-flower inventory, SR&ED and incorporation advice.",
+   "after": "plant and dried-flower inventory and incorporation advice.",
+   "needs_sharad": false,
+   "note": ""
+  }
+ ],
+ "page_note": "Cannabis producer service page with SR&ED offered throughout. Informational SR&ED kept: quiz subtitle/question, 'We understand how ... SR&ED actually flow' line, FAQ eligibility text, related-industry card 'Class 53 processing lines and SR&ED'."
+}

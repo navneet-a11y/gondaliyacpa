@@ -1,0 +1,40 @@
+{
+ "id": 27275,
+ "url": "https://gondaliyacpa.ca/case-studies/",
+ "title": "Case Studies",
+ "type": "page",
+ "elementor": true,
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "Case study card \"How We Assisted a Toronto Tech Company to Maximize SR&ED Tax Credit\"",
+   "editor": "manual",
+   "action": "manual",
+   "before": "How We Assisted a Toronto Tech Company to Maximize SR&ED Tax Credit",
+   "after": "",
+   "needs_sharad": true,
+   "note": "Case study #10 teaser card: heading widget (links to /case-studies/toronto-sred-tax-credits/, the 28025 case study), text-editor widget (\"A Toronto-based technology company approached Gondaliya CPA for guidance on claiming SR&ED... tax credits...\") and HTML metadata widget (\"Case study #10 ... # SR&ED Tax Credit\"). Sales proof for the SR&ED service; remove the card or align with the decision on 28025."
+  },
+  {
+   "location": "Visible",
+   "section": "Case study card \"Maximize Tax Credits\" text (1 of 2)",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "\":\"7d9eafe\",\"elType\":\"widget\",\"settings\":{\"editor\":\"<p>A\\u00a0<strong data-start=\\\"287\\\" data-end=\\\"312\\\">Toronto-based company<\\/strong>\\u00a0approached Gondaliya\\u202fCPA to optimize their\\u00a0<strong data-start=\\\"356\\\" data-end=\\\"377\\\">taxes and credits<\\/strong>. The business wanted to ensure they were claiming all eligible credits, including R&amp;D, investment, and payroll-related incentives",
+   "after": "\":\"7d9eafe\",\"elType\":\"widget\",\"settings\":{\"editor\":\"<p>A\\u00a0<strong data-start=\\\"287\\\" data-end=\\\"312\\\">Toronto-based company<\\/strong>\\u00a0approached Gondaliya\\u202fCPA to optimize their\\u00a0<strong data-start=\\\"356\\\" data-end=\\\"377\\\">taxes and credits<\\/strong>. The business wanted to ensure they were claiming all eligible credits, including investment and payroll-related incentives",
+   "needs_sharad": true,
+   "note": "Firm case study listing R&D credits among credits it claimed for the client"
+  },
+  {
+   "location": "Visible",
+   "section": "Case study card \"Maximize Tax Credits\" text (2 of 2)",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "\":\"801ed15\",\"elType\":\"widget\",\"settings\":{\"editor\":\"<p>A\\u00a0<strong data-start=\\\"287\\\" data-end=\\\"312\\\">Toronto-based company<\\/strong>\\u00a0approached Gondaliya\\u202fCPA to optimize their\\u00a0<strong data-start=\\\"356\\\" data-end=\\\"377\\\">taxes and credits<\\/strong>. The business wanted to ensure they were claiming all eligible credits, including R&amp;D, investment, and payroll-related incentives",
+   "after": "\":\"801ed15\",\"elType\":\"widget\",\"settings\":{\"editor\":\"<p>A\\u00a0<strong data-start=\\\"287\\\" data-end=\\\"312\\\">Toronto-based company<\\/strong>\\u00a0approached Gondaliya\\u202fCPA to optimize their\\u00a0<strong data-start=\\\"356\\\" data-end=\\\"377\\\">taxes and credits<\\/strong>. The business wanted to ensure they were claiming all eligible credits, including investment and payroll-related incentives",
+   "needs_sharad": true,
+   "note": "Firm case study listing R&D credits among credits it claimed for the client"
+  }
+ ],
+ "page_note": "Case studies index page. One card is the SR&ED case study teaser (manual removal, ties to 28025 which needs Sharad); a tax-credits case card mentions R&D credits claimed for a client (two copies). Both flagged needs_sharad as claims about the firm's own work."
+}

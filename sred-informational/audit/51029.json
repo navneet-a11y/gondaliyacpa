@@ -1,0 +1,310 @@
+{
+ "id": 51029,
+ "url": "https://gondaliyacpa.ca/accountant-for-cosmetics-manufacturers/",
+ "title": "Accounting and Tax Services for Cosmetics Manufacturers",
+ "type": "page",
+ "elementor": false,
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "Hero intro paragraph",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "We claim the SR&amp;ED credit on your emulsion, preservative-system and reformulation trials at the 35% refundable CCPC rate plus Ontario&#8217;s 8% OITC and 3.5% ORDTC, put your mixers",
+   "after": "We put your mixers",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Intro paragraph (we specialize)",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "we specialize in SR&amp;ED, manufacturing CCA, batch inventory bookkeeping",
+   "after": "we specialize in manufacturing CCA, batch inventory bookkeeping",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Compliance intro paragraph",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "while claiming every SR&amp;ED, machinery, inventory and channel-cost dollar",
+   "after": "while claiming every machinery, inventory and channel-cost dollar",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Compliance card (We manage HST...)",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "payroll source deductions on the PD7A remittance, the SR&amp;ED claim on Form T661 and Schedule 31 inside its 18-month deadline, and the chargeback",
+   "after": "payroll source deductions on the PD7A remittance, and the chargeback",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Year-end card",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "plus a T2 with GIFI, Schedule 31 and the SR&amp;ED forms that ties to your HST returns.",
+   "after": "plus a T2 with GIFI that ties to your HST returns.",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "How we work step 1 heading",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "Tax Planning &mdash; SR&amp;ED, Manufacturing &amp; Equipment Expertise</h3>",
+   "after": "Tax Planning &mdash; Manufacturing &amp; Equipment Expertise</h3>",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "How we work step 1 text",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "We know the trade: emulsion and preservative trials on Form T661 at the 35% refundable rate, mixers and filling lines",
+   "after": "We know the trade: mixers and filling lines",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "How we work step 3 heading",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "CRA Representation &mdash; SR&amp;ED &amp; Inventory Audit</h3>",
+   "after": "CRA Representation &mdash; Inventory Audit</h3>",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "How we work step 3 text",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "When CRA reviews your SR&amp;ED project descriptions, your shelf-life write-downs",
+   "after": "When CRA reviews your shelf-life write-downs",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "How we work step 4 text",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "warehouse payroll with WSIB, allocate chemists&#8217; time to the SR&amp;ED claim, code Health Canada",
+   "after": "warehouse payroll with WSIB, code Health Canada",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Services grid: T2 preparation card",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "mixers, the SR&amp;ED claim on Form T661 and Schedule 31, batch-costed",
+   "after": "mixers, batch-costed",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Services grid: Payroll card",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "T4s, and chemist time tracking so salaries flow into your SR&amp;ED claim.",
+   "after": "and T4s.",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Services grid: Tax planning card",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "plan SR&amp;ED projects and the M&amp;P deduction",
+   "after": "plan the M&amp;P deduction",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Services grid: Catch-up card",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "File overdue T2 and HST years, rescue SR&amp;ED claims still inside the 18-month deadline, rebuild",
+   "after": "File overdue T2 and HST years, rebuild",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Services grid: CRA audit card",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "Expert support for SR&amp;ED, inventory, chargeback and HST audits",
+   "after": "Expert support for inventory, chargeback and HST audits",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Services grid: Incorporation card",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "share structure, CCPC status for the 35% SR&amp;ED rate, and the section 85",
+   "after": "share structure, CCPC status, and the section 85",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Tailored services expanded bullet - tax planning: file T661 ($95,000)",
+   "editor": "post_content",
+   "action": "delete",
+   "before": "<li>We file Form T661 and Schedule 31 for the SR&amp;ED credit on your emulsion, preservative-system and reformulation trials, claiming the 35% refundable federal rate on the first $3 million plus Ontario&#8217;s 8% OITC and 3.5% ORDTC; on one lab this recovered $95,000.</li>",
+   "after": "",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Tailored services expanded bullet - payroll: allocate wages to SR&ED ($31,000)",
+   "editor": "post_content",
+   "action": "delete",
+   "before": "<li>We allocate formulation chemists&#8217; and lab technicians&#8217; wages to SR&amp;ED on Form T661 using time records kept in Wagepoint, because salary is the largest eligible expenditure and the proxy method adds 55% overhead on top; on one lab this added $31,000 of qualifying salary.</li>",
+   "after": "",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Tailored services expanded bullet - planning: plan SR&ED projects ($72,000)",
+   "editor": "post_content",
+   "action": "delete",
+   "before": "<li>We plan SR&amp;ED-eligible reformulation and scale-up projects before the year starts so contemporaneous stability-test and batch records kept in Katana support Form T661, because a claim rebuilt from memory is cut back on review; one planned program returned $72,000 of refundable credit.</li>",
+   "after": "",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Tailored services expanded bullet - catch-up: file late SR&ED claims ($48,000)",
+   "editor": "post_content",
+   "action": "delete",
+   "before": "<li>We file late SR&amp;ED claims on Form T661 for any year still inside the 18-month reporting deadline under subsection 37(11), because an eligible reformulation project missed by one day is lost forever; on one catch-up this rescued $48,000 of refundable credit.</li>",
+   "after": "",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Tailored services expanded bullet - CRA audit: defend SR&ED ($88,000)",
+   "editor": "post_content",
+   "action": "delete",
+   "before": "<li>When CRA&#8217;s SR&amp;ED reviewer argues your preservative-system trials were routine quality control rather than technological uncertainty, we defend the Form T661 project description with stability-test data and batch records; on one lab this defended $88,000 of refundable credit.</li>",
+   "after": "",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Tailored services expanded bullet - incorporation (CCPC for SR&ED rate)",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "We confirm the new corporation qualifies as a CCPC so your formulation work earns the 35% refundable SR&amp;ED rate on Form T661 rather than the 15% non-refundable rate, structuring share ownership to keep Canadian control; on one start-up this turned a $30,000 credit into cash.",
+   "after": "We confirm the new corporation qualifies as a CCPC, structuring share ownership to keep Canadian control.",
+   "needs_sharad": false,
+   "note": "Drops the SR&ED-claim result; keeps the CCPC service."
+  },
+  {
+   "location": "Visible",
+   "section": "Tailored services expanded bullet - payroll catch-up",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "so your chemists&#8217; time records support Form T661; on one lab this recovered $9,500 of overlooked SR&amp;ED salary.",
+   "after": "so your payroll records are complete.",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Readiness quiz result (5+ yes, escaped copy)",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "SR&amp;ED on formulation, Class 53 machinery, batch inventory, shelf-life write-downs, chargeback and marketplace fee tracking and the incorporation break-even can all be",
+   "after": "Class 53 machinery, batch inventory, shelf-life write-downs, chargeback and marketplace fee tracking and the incorporation break-even can all be",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Readiness quiz result (5+ yes, inline JS)",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "SR&amp;ED on formulation, Class 53 machinery, batch inventory, shelf-life write-downs, chargeback and marketplace fee tracking and the incorporation break-even could all be",
+   "after": "Class 53 machinery, batch inventory, shelf-life write-downs, chargeback and marketplace fee tracking and the incorporation break-even could all be",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Case study card: Vaughan Skincare Manufacturer (SR&ED & Class 53)",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "<div class=\"sb-case-card\"><h3>Vaughan Skincare Manufacturer &mdash; SR&amp;ED &amp; Class 53 Machinery</h3><p><strong>The problem:</strong> A Vaughan skincare manufacturer had run three years of reformulation and stability trials on a preservative-free moisturizer line and never claimed SR&amp;ED, while a $320,000 filling and capping line installed in 2024 was depreciated as Class 8 equipment at 20%. The chemists&#8217; time was buried in plant wages and no Schedule 31 was ever filed.</p><p><strong>What we did:</strong> We built the Form T661 project descriptions from the lab&#8217;s stability-test and batch records, allocated chemist salaries with the proxy overhead, claimed the 35% refundable federal credit plus Ontario&#8217;s OITC and ORDTC, filed the still-open prior year inside the 18-month deadline, and reclassified the filling line to Class 53 at 50% on Schedule 8.</p><p><strong>The result:</strong></p><ul class=\"sb-case-res\"><li>Recovered roughly $95,000 of refundable SR&amp;ED credit</li><li>Accelerated about $60,000 of first-year Class 53 CCA</li><li>A six-figure swing across two T2 years</li></ul></div>",
+   "after": "<div class=\"sb-case-card\"><h3>Vaughan Skincare Manufacturer &mdash; Class 53 Machinery</h3><p><strong>The problem:</strong> A Vaughan skincare manufacturer had a $320,000 filling and capping line installed in 2024 depreciated as Class 8 equipment at 20%.</p><p><strong>What we did:</strong> We reclassified the filling line to Class 53 at 50% on Schedule 8.</p><p><strong>The result:</strong></p><ul class=\"sb-case-res\"><li>Accelerated about $60,000 of first-year Class 53 CCA</li></ul></div>",
+   "needs_sharad": true,
+   "note": "Removes the SR&ED claim the firm prepared ($95,000); keeps the Class 53 part."
+  },
+  {
+   "location": "Visible",
+   "section": "Onboarding Step 1 setup",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "lab CCA, scope the SR&amp;ED projects, and configure payroll",
+   "after": "lab CCA, and configure payroll",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Onboarding Step 4 Quarterly Planning Review",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "inventory and write-down review, SR&amp;ED project records, M&amp;P deduction",
+   "after": "inventory and write-down review, M&amp;P deduction",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Final CTA paragraph",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "T2 filing, SR&amp;ED on emulsion and reformulation trials, HST on wholesale",
+   "after": "T2 filing, HST on wholesale",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "JSON-LD",
+   "section": "AccountingService schema description",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "T2 filing, SR&ED on formulation R&D, manufacturing (Class 53) CCA",
+   "after": "T2 filing, manufacturing (Class 53) CCA",
+   "needs_sharad": false,
+   "note": ""
+  }
+ ],
+ "page_note": "Cosmetics manufacturer service page with SR&ED offered throughout. Informational SR&ED kept: hero explanation that formulation work is SR&ED, 'You run formulation trials that qualify for SR&ED', quiz subtitle/question, 'We understand how SR&ED on formulation ... flow' line, FAQs incl. CCPC unlocks the 35% SR&ED rate (visible + FAQPage). Ontario OITC/ORDTC (SR&ED-based credits) still mentioned in step 1 text ('We claim the M&P deduction and the Ontario OITC and ORDTC on Schedule 31') - Sharad may want that trimmed too."
+}
