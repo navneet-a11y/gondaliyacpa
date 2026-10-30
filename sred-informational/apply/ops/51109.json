@@ -1,0 +1,32 @@
+{
+ "id": 51109,
+ "editor": "post_content",
+ "sha256_after": "7e48348c4ca6da4d6bfae1a4150b86a96edcea6c6ff2c210c5558d1ccfe4e1d3",
+ "ops": [
+  {
+   "row": 0,
+   "search": "SR&amp;ED assessment, ",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 1,
+   "search": "ssessing SR&amp;ED on technology work only, a",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 2,
+   "search": ", assesses SR&amp;ED on technology work only",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 3,
+   "search": "SR&ED assessment on platform technology with development documentation, ",
+   "replace": "",
+   "regex": false
+  }
+ ],
+ "skipped": []
+}

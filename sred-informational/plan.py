@@ -77,6 +77,9 @@ def main():
         if r["editor"] != editor:
             skipped.append({"row": n, "why": f"row is {r['editor']}, page renders from {editor}"})
             continue
+        if r["before"] in r["after"] and r["after"] in full:
+            skipped.append({"row": n, "why": "already live (after text present)"})
+            continue
         if full.count(r["before"]) != 1:
             skipped.append({"row": n, "why": f"before found {full.count(r['before'])} times now"})
             continue

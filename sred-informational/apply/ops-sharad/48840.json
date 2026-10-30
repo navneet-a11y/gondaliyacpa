@@ -1,0 +1,249 @@
+{
+ "id": 48840,
+ "editor": "post_content",
+ "sha256_after": "265e5a1f15d5e9a724053c9fa32efdafe6fa364e7b142ca9979c78d43d905c2f",
+ "ops": [
+  {
+   "row": 4,
+   "search": "oviding SR&amp;ED planning and claims, corporat",
+   "replace": "oviding corporat",
+   "regex": false
+  },
+  {
+   "row": 5,
+   "search": ">Support, Resources, and Contact Information</a></li",
+   "replace": ">Support and Resources</a></li",
+   "regex": false
+  },
+  {
+   "row": 15,
+   "search": ">Support, Resources, and Contact Information</h2>",
+   "replace": ">Support and Resources</h2>",
+   "regex": false
+  },
+  {
+   "row": 16,
+   "search": ", Resources, and Contact Information",
+   "replace": " and Resources",
+   "regex": false
+  },
+  {
+   "row": 17,
+   "search": "Encouraging Proactive Consultation with Gondaliya CPA SR&amp;ED Expert",
+   "replace": "Why Early Professional Advice Matter",
+   "regex": false
+  },
+  {
+   "row": 20,
+   "search": "ontact Details for SR&amp;ED Tax Planning Consultations and Support",
+   "replace": "hoosing How to File",
+   "regex": false
+  },
+  {
+   "row": 23,
+   "search": "Invitation to Verify Eligibility and Schedule a Complimentary Assessment",
+   "replace": "Verifying Eligibility Early",
+   "regex": false
+  },
+  {
+   "row": 24,
+   "search": "mitment to Compliance, Accuracy, and Maximizing Client Benefits",
+   "replace": "pliance and Accuracy",
+   "regex": false
+  },
+  {
+   "row": 28,
+   "search": " Credits with Gondaliya CPA</h2>",
+   "replace": " Credits</h2>",
+   "regex": false
+  },
+  {
+   "row": 30,
+   "search": "<h4 style=\"margin-top:34px;\">What Deliverables You Get from Gondaliya CPA</h4>\n<ul>\n<li>Comprehensive eligibility assessment based on your projects and corporate status</li>\n<li>Detailed Form T661 preparation aligned with CRA expectations</li>\n<li>Precise Schedule T2SCH31 completion for accurate tax credit reporting</li>\n<li>Documentation review checklist tailored to your business needs</li>\n<li>Ongoing support through CRA reviews or audits until resolution</li>\n</ul>\n",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 32,
+   "search": " We Serve",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 34,
+   "search": "<h4 style=\"margin-top:34px;\">Why Trust Gondaliya CPA?</h4>\n<p>With over a decade assisting Canadian businesses maximize SR&amp;ED claims securely, Gondaliya CPA combines technical know-how with personalized service based in Toronto/Ontario trusted by startups through established corporations alike.</p>\n",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 35,
+   "search": "<h4 style=\"margin-top:34px;\">Next Steps</h4>\n<p>Contact Gondaliya CPA today at 647&#8209;212&#8209;9559 or info@gondaliyacpa.ca for a free eligibility consultation tailored to your business size and industry focus in Canada's innovation sectors.</p>\n",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 36,
+   "search": "How Gondaliya CPA Supports Canadian Innovator",
+   "replace": "What Planning Decide",
+   "regex": false
+  },
+  {
+   "row": 47,
+   "search": "with Gondaliya CPA ",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 50,
+   "search": "SR&amp;ED planning and claims, ",
+   "replace": "",
+   "regex": false
+  }
+ ],
+ "skipped": [
+  {
+   "row": 0,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 1,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 2,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 3,
+   "why": "already live (after text present)"
+  },
+  {
+   "row": 6,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 7,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 8,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 9,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 10,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 11,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 12,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 13,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 14,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 18,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 19,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 21,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 22,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 25,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 26,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 27,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 29,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 31,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 33,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 37,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 38,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 39,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 40,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 41,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 42,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 43,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 44,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 45,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 46,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 48,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 49,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 51,
+   "why": "before found 0 times now"
+  }
+ ]
+}
