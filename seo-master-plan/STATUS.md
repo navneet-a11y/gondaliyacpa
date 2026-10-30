@@ -33,3 +33,4 @@ Plan: Sharad's email, which replaces all earlier SEO change lists. Rules: see th
 - **Change 12 (Best/Top pages, noindex and rewrites): ON HOLD. Do not apply.**
 - **/review-engagement-services/:** keep its current redirect to /cpa-compilation-report-notice-to-reader/.
 - **No staging:** the security updates (change 1) are done live, after a backup. Content edits wait until Navneet confirms the updates are finished.
+- **Change 6 (services we do not offer): ON HOLD in this session.** Navneet is handling it in a different session. Do not edit SR&ED or review/audit content here.
