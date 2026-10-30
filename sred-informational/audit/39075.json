@@ -1,0 +1,40 @@
+{
+ "id": 39075,
+ "url": "https://gondaliyacpa.ca/how-to-start-a-manufacturing-company-in-ontario/",
+ "title": "How to Start a Manufacturing Company in Ontario",
+ "type": "page",
+ "elementor": true,
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "Step 6 SR&ED info box",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "conducted systematic experiments to resolve it. We assess SR&amp;ED eligibility for every manufacturing client. <a href=\\\"https:\\/\\/gondaliyacpa.ca\\/sred-tax-credits\\/\\\">SR&amp;ED Assessment &#8594;",
+   "after": "conducted systematic experiments to resolve it. <a href=\\\"https:\\/\\/gondaliyacpa.ca\\/sred-tax-credits\\/\\\">How SR&amp;ED works &#8594;",
+   "needs_sharad": false,
+   "note": "Explanation stays; offer sentence dropped, anchor neutralized"
+  },
+  {
+   "location": "Visible",
+   "section": "FAQ \"Can manufacturers claim SR&ED?\"",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "35% refundable for CCPCs. We assess SR&amp;ED eligibility for every manufacturing client. <a href=\\\"https:\\/\\/gondaliyacpa.ca\\/sred-tax-credits\\/\\\">SR&amp;ED Assessment &#8594;",
+   "after": "35% refundable for CCPCs. <a href=\\\"https:\\/\\/gondaliyacpa.ca\\/sred-tax-credits\\/\\\">How SR&amp;ED works &#8594;",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Bottom CTA",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "CCA planning, SR&amp;ED assessment and ongoing",
+   "after": "CCA planning and ongoing",
+   "needs_sharad": false,
+   "note": ""
+  }
+ ],
+ "page_note": "How to start a manufacturing company guide (Elementor). SR&ED step, rate table, mistakes table, checklist and FAQs (visible + JSON-LD) are informational and stay. Rows remove two \"We assess SR&ED eligibility for every manufacturing client\" sentences with \"SR&ED Assessment\" anchors, and SR&ED assessment in the bottom CTA."
+}

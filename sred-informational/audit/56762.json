@@ -1,0 +1,20 @@
+{
+ "id": 56762,
+ "url": "https://gondaliyacpa.ca/cybersecurity-company-tax-deductions-canada/",
+ "title": "Cybersecurity Company Tax Deductions in Canada: Software, Salaries, Cloud Costs & Business Expenses",
+ "type": "post",
+ "elementor": false,
+ "rows": [
+  {
+   "location": "JSON-LD",
+   "section": "Service schema description",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "Regulation 105 withholding on non-resident contractors, SR&ED assessment, compilation engagements",
+   "after": "Regulation 105 withholding on non-resident contractors, compilation engagements",
+   "needs_sharad": false,
+   "note": "Service schema listing SR&ED assessment as a firm service."
+  }
+ ],
+ "page_note": "Other mentions informational (Class 50 vs SR&ED expenditure, SR&ED credit section with $6M limit, deadlines, FAQ, glossary, generic CPA-choice tips). Author/reviewer bio (x2) lists SR&ED claims as Sharad experience; kept as an author line per RULES - flag to Sharad if he wants it trimmed."
+}

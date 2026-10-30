@@ -1,0 +1,30 @@
+{
+  "id": 6619,
+  "url": "https://gondaliyacpa.ca/guelph/",
+  "title": "Guelph Business Accounting &amp; Tax Services – Gondaliya CPA",
+  "type": "page",
+  "elementor": true,
+  "rows": [
+    {
+      "location": "Visible",
+      "section": "Services list (tax planning bullets)",
+      "editor": "elementor",
+      "action": "replace",
+      "before": "We plan SR&ED claims for Guelph companies engaged in qualifying experimental development",
+      "after": "SR&ED claims are available to Guelph companies engaged in qualifying experimental development",
+      "needs_sharad": false,
+      "note": ""
+    },
+    {
+      "location": "Visible",
+      "section": "Services list (tax planning bullets)",
+      "editor": "elementor",
+      "action": "replace",
+      "before": "We coordinate the Form T661 submission with your fiscal year-end T2 return within CRA's 18-month filing deadline so the credit is not forfeited.",
+      "after": "The Form T661 submission is filed with the fiscal year-end T2 return within CRA's 18-month filing deadline, or the credit is forfeited.",
+      "needs_sharad": false,
+      "note": ""
+    }
+  ],
+  "page_note": "City page. One tax-planning bullet said the firm plans/coordinates SR&ED claims; rewritten as information. Intro mention of 'SR&amp;ED credits' among general tax-saving strategies is informational, kept."
+}

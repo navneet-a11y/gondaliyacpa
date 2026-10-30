@@ -1,0 +1,530 @@
+{
+ "id": 48840,
+ "url": "https://gondaliyacpa.ca/sred-tax-planning-strategies-maximize-credits-reduce-rd-costs/",
+ "title": "Top SR&ED Tax Planning Strategies to Maximize Tax Credits and Reduce R&D Costs in Canada",
+ "type": "post",
+ "elementor": false,
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "intro paragraph",
+   "editor": "post_content",
+   "action": "replace",
+   "before": ">Gondaliya CPA specializes in SR&amp;ED <a",
+   "after": ">SR&amp;ED <a",
+   "needs_sharad": false,
+   "note": "Sentence now: \"SR&ED tax planning Canada helps businesses implement...\" (with next row)"
+  },
+  {
+   "location": "Visible",
+   "section": "intro paragraph",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "</a> Canada, helping businesses implement effective",
+   "after": "</a> Canada helps businesses implement effective",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "intro paragraph",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "Our approach includes managing documentation strategies",
+   "after": "A sound approach includes managing documentation strategies",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "after intro paragraph",
+   "editor": "post_content",
+   "action": "insert_after",
+   "before": "review readiness for refundable and non-refundable credits.</p>",
+   "after": "review readiness for refundable and non-refundable credits.</p>\n<p class=\"sred-notice\"><strong>Gondaliya CPA does not prepare SR&amp;ED claims. This page explains how the SR&amp;ED program works, for general information only.</strong></p>",
+   "needs_sharad": false,
+   "note": "Informational notice per RULES.md"
+  },
+  {
+   "location": "Visible",
+   "section": "author box (top)",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "He leads a Toronto-based team providing SR&amp;ED planning and claims, corporate tax,",
+   "after": "He leads a Toronto-based team providing corporate tax,",
+   "needs_sharad": true,
+   "note": "Author bio lists SR&ED planning and claims as a firm service"
+  },
+  {
+   "location": "Visible",
+   "section": "table of contents",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "<li><a href=\"#toc-support\">Support, Resources, and Contact Information</a></li>",
+   "after": "<li><a href=\"#toc-support\">Support and Resources</a></li>",
+   "needs_sharad": true,
+   "note": "Matches rewritten section 7 heading"
+  },
+  {
+   "location": "Button",
+   "section": "CTA banner before section 2",
+   "editor": "post_content",
+   "action": "delete",
+   "before": "<div class=\"gcpa-banner\">\n<div class=\"bt\">Planning next year's R&amp;D spend? The earlier we look, the more there is to work with.</div>\n<div class=\"bb\"><a class=\"solid\" href=\"https://gondaliyacpa.ca/consultation/\">Book Free Consultation</a><a href=\"mailto:info@gondaliyacpa.ca\">info@gondaliyacpa.ca</a><a href=\"tel:+16472129559\">647-212-9559</a></div>\n</div>\n",
+   "after": "",
+   "needs_sharad": false,
+   "note": "Book Free Consultation / mailto / tel banner"
+  },
+  {
+   "location": "Visible",
+   "section": "section 2 \"Working with CPA Professionals\" - firm experience line",
+   "editor": "post_content",
+   "action": "delete",
+   "before": "<p>Gondaliya CPA has experience helping clients from startups to manufacturers mainly in Toronto/Ontario.<sup style=\"font-size:11px;color:#5a6b7b;\">28</sup></p>\n",
+   "after": "",
+   "needs_sharad": false,
+   "note": "Firm-experience line incl. footnote marker 28; nothing informational"
+  },
+  {
+   "location": "Visible",
+   "section": "section 2 \"Working with CPA Professionals\" list intro",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "<p>They offer:</p>",
+   "after": "<p>CPA support for an SR&amp;ED claim typically covers:</p>",
+   "needs_sharad": false,
+   "note": "List items kept as a neutral description"
+  },
+  {
+   "location": "Visible",
+   "section": "section 2 closing contact paragraph",
+   "editor": "post_content",
+   "action": "delete",
+   "before": "<p><a class=\"wpil_keyword_link\" href=\"https://gondaliyacpa.ca/contact-us/\"   title=\"Contact Gondaliya CPA\" data-wpil-keyword-link=\"linked\"  data-wpil-monitor-id=\"8911\">Contact Gondaliya CPA</a> at 647&#8209;212&#8209;9559 or info@gondaliyacpa.ca for a chat about improving your next R&amp;D tax credit claim.</p>\n",
+   "after": "",
+   "needs_sharad": false,
+   "note": "contact-us link + phone/email CTA"
+  },
+  {
+   "location": "Visible",
+   "section": "section 4 Coordinating with CPA Representatives",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "<p>Gondaliya CPA offers full help from checking eligibility to scoping projects and putting together documents. They prepare Form T661 under CPA Ontario standards <sup style=\"font-size:11px;color:#5a6b7b;\">3</sup> and represent clients directly before CRA &mdash; guiding through challenges smoothly while getting max tax credits in Toronto/Ontario areas.</p>",
+   "after": "<p>CPA help can run from checking eligibility to scoping projects and putting together documents, including preparing Form T661 under CPA Ontario standards <sup style=\"font-size:11px;color:#5a6b7b;\">3</sup> and representing clients directly before CRA.</p>",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "section 4 closing CTA paragraph",
+   "editor": "post_content",
+   "action": "delete",
+   "before": "<p>Call Gondaliya CPA today at 647&#8209;212&#8209;9559 for a free consultation on how our expert team can help you manage your post-SR&amp;ED claim process effectively &mdash; no surprises guaranteed!</p>\n",
+   "after": "",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "section 5 Our Actual Experience callout",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "Our Experience: We helped a manufacturer in Toronto change its project intake",
+   "after": "Our Experience: A manufacturer in Toronto changed its project intake",
+   "needs_sharad": false,
+   "note": "Removes \"We helped\" sales proof; example kept"
+  },
+  {
+   "location": "Visible",
+   "section": "section 6 provincial credits",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "<p>We help Toronto/Ontario clients file these efficiently using solid expense tracking systems.</p>",
+   "after": "<p>Solid expense tracking systems help file these efficiently.</p>",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "section 6 closing CTA paragraph",
+   "editor": "post_content",
+   "action": "delete",
+   "before": "<p>Free consultation anytime by phone at 647&ndash;212&ndash;9559 or email info@gondaliyacpa.ca &mdash; serving Toronto/Ontario businesses working on SR&amp;ED tax planning Canada.</p>\n",
+   "after": "",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "section 7 H2",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "<h2>Support, Resources, and Contact Information</h2>",
+   "after": "<h2>Support and Resources</h2>",
+   "needs_sharad": true,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "section 7 H4",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "margin:0;\">Support, Resources, and Contact Information</h4>",
+   "after": "margin:0;\">Support and Resources</h4>",
+   "needs_sharad": true,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "section 7 H5",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "Encouraging Proactive Consultation with Gondaliya CPA SR&amp;ED Experts</h5>",
+   "after": "Why Early Professional Advice Matters</h5>",
+   "needs_sharad": true,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "section 7 early advice paragraph",
+   "editor": "post_content",
+   "action": "replace",
+   "before": " Gondaliya CPA works mainly with tech companies in Toronto/Ontario for precise R&amp;D tax planning based on current laws.</p>",
+   "after": "</p>",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "section 7 early advice list intro",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "<p>We help clients with:</p>",
+   "after": "<p>Early advice typically covers:</p>",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "section 7 H5",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "Contact Details for SR&amp;ED Tax Planning Consultations and Support</h5>",
+   "after": "Choosing How to File</h5>",
+   "needs_sharad": true,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "section 7 contact paragraph + phone/email list + no-pressure talks",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "<p>For a personal check on your eligibility including CCPC status affecting the 35% refundable credit,<sup style=\"font-size:11px;color:#5a6b7b;\">15</sup> contact us at:</p>\n<ul>\n<li>Phone: 647-212-9559</li>\n<li>Email: info@gondaliyacpa.ca</li>\n</ul>\n<p>We offer no-pressure talks to find what fits your company size, industry like manufacturing or software,<sup style=\"font-size:11px;color:#5a6b7b;\">16</sup> plus past filing history<sup style=\"font-size:11px;color:#5a6b7b;\">17</sup>.</p>",
+   "after": "<p>An eligibility check should include CCPC status, which affects the 35% refundable credit,<sup style=\"font-size:11px;color:#5a6b7b;\">15</sup> along with company size, industry like manufacturing or software,<sup style=\"font-size:11px;color:#5a6b7b;\">16</sup> plus past filing history<sup style=\"font-size:11px;color:#5a6b7b;\">17</sup>.</p>",
+   "needs_sharad": false,
+   "note": "Replaces contact-us text, phone/email list and \"we offer no-pressure talks\" with the eligibility factors they mention; footnotes 15-17 kept"
+  },
+  {
+   "location": "Visible",
+   "section": "section 7 eligibility paragraph",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "<p>Book a free review today so we can help spot all qualifying costs and suggest timing plans",
+   "after": "<p>A review should spot all qualifying costs and set timing plans",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "section 7 H5",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "Invitation to Verify Eligibility and Schedule a Complimentary Assessment</h5>",
+   "after": "Verifying Eligibility Early</h5>",
+   "needs_sharad": true,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "section 7 H5",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "Commitment to Compliance, Accuracy, and Maximizing Client Benefits</h5>",
+   "after": "Compliance and Accuracy</h5>",
+   "needs_sharad": true,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "section 7 compliance paragraph",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "<p>Gondaliya CPA sticks strictly to all CRA rules",
+   "after": "<p>A compliant claim sticks strictly to all CRA rules",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "section 7 compliance paragraph",
+   "editor": "post_content",
+   "action": "replace",
+   "before": " We also advise on smart company setups aimed at protecting",
+   "after": " Smart company setups can also protect",
+   "needs_sharad": false,
+   "note": "Sentence now: \"Smart company setups can also protect benefits long-term without audit issues.\""
+  },
+  {
+   "location": "Visible",
+   "section": "section 7 fees paragraph",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "<p>Our clear fixed fees cover full support for putting together paperwork that meets six-year retention laws from Corporations Canada.<sup style=\"font-size:11px;color:#5a6b7b;\">27</sup> We reply within one business day&mdash;even weekends&mdash;to keep clients updated through every step of their claim process.</p>",
+   "after": "<p>Paperwork must meet six-year retention laws from Corporations Canada.<sup style=\"font-size:11px;color:#5a6b7b;\">27</sup></p>",
+   "needs_sharad": false,
+   "note": "Drops fixed fees and response-time promise; keeps retention point and footnote 27"
+  },
+  {
+   "location": "Visible",
+   "section": "section 8 H2",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "<h2>Key Strategies for Maximizing SR&amp;ED Credits with Gondaliya CPA</h2>",
+   "after": "<h2>Key Strategies for Maximizing SR&amp;ED Credits</h2>",
+   "needs_sharad": true,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "section 8 comparison table",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "<td>CPA-Led (Gondaliya CPA)</td>",
+   "after": "<td>CPA-Led</td>",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "section 8 \"What Deliverables You Get from Gondaliya CPA\" (H4 + list)",
+   "editor": "post_content",
+   "action": "delete",
+   "before": "<h4 style=\"margin-top:34px;\">What Deliverables You Get from Gondaliya CPA</h4>\n<ul>\n<li>Comprehensive eligibility assessment based on your projects and corporate status</li>\n<li>Detailed Form T661 preparation aligned with CRA expectations</li>\n<li>Precise Schedule T2SCH31 completion for accurate tax credit reporting</li>\n<li>Documentation review checklist tailored to your business needs</li>\n<li>Ongoing support through CRA reviews or audits until resolution</li>\n</ul>\n",
+   "after": "",
+   "needs_sharad": true,
+   "note": "List of SR&ED deliverables the firm sells (T661 preparation, T2SCH31, CRA support); removes an H4"
+  },
+  {
+   "location": "Visible",
+   "section": "section 8 \"How Much Does an SR&ED Claim Cost\" answer",
+   "editor": "post_content",
+   "action": "replace",
+   "before": " Gondaliya CPA offers transparent pricing with no hidden charges tailored to each client's filing needs.</p>",
+   "after": "</p>",
+   "needs_sharad": false,
+   "note": "SR&ED fee/pricing offer removed; general cost sentence kept"
+  },
+  {
+   "location": "Visible",
+   "section": "section 8 H4",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "Across 10 Industries We Serve?</h4>",
+   "after": "Across 10 Industries?</h4>",
+   "needs_sharad": true,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "section 8 industries answer",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "<p>Gondaliya CPA tailors strategies for tech startups",
+   "after": "<p>Planning strategies differ for tech startups",
+   "needs_sharad": false,
+   "note": "Sentence now: \"Planning strategies differ for tech startups, ... medical device makers ensuring sector-specific compliance.\""
+  },
+  {
+   "location": "Visible",
+   "section": "section 8 \"Why Trust Gondaliya CPA?\" (H4 + paragraph)",
+   "editor": "post_content",
+   "action": "delete",
+   "before": "<h4 style=\"margin-top:34px;\">Why Trust Gondaliya CPA?</h4>\n<p>With over a decade assisting Canadian businesses maximize SR&amp;ED claims securely, Gondaliya CPA combines technical know-how with personalized service based in Toronto/Ontario trusted by startups through established corporations alike.</p>\n",
+   "after": "",
+   "needs_sharad": true,
+   "note": "Why-choose-us block for SR&ED claims; removes an H4"
+  },
+  {
+   "location": "Visible",
+   "section": "section 8 \"Next Steps\" (H4 + contact paragraph)",
+   "editor": "post_content",
+   "action": "delete",
+   "before": "<h4 style=\"margin-top:34px;\">Next Steps</h4>\n<p>Contact Gondaliya CPA today at 647&#8209;212&#8209;9559 or info@gondaliyacpa.ca for a free eligibility consultation tailored to your business size and industry focus in Canada's innovation sectors.</p>\n",
+   "after": "",
+   "needs_sharad": true,
+   "note": "Free eligibility consultation CTA; removes an H4"
+  },
+  {
+   "location": "Visible",
+   "section": "Guidance H2",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "<h2>Professional Guidance on SR&amp;ED Planning: How Gondaliya CPA Supports Canadian Innovators</h2>",
+   "after": "<h2>Professional Guidance on SR&amp;ED Planning: What Planning Decides</h2>",
+   "needs_sharad": true,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Guidance paragraph 1",
+   "editor": "post_content",
+   "action": "replace",
+   "before": " Gondaliya CPA does the planning side on a fixed fee.</p>",
+   "after": "</p>",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Guidance paragraph 2",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "<p>We handle what decides the outcome: confirming",
+   "after": "<p>What decides the outcome: confirming",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Guidance paragraph 3",
+   "editor": "post_content",
+   "action": "delete",
+   "before": "<p>Our team works from your own project, payroll and funding records rather than a template, and will tell you plainly which levers are still available this year. Startup or established manufacturer, you get clear advice and a fixed price before we start.</p>\n",
+   "after": "",
+   "needs_sharad": false,
+   "note": "Firm offer + fixed price"
+  },
+  {
+   "location": "Visible",
+   "section": "planning check widget",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "<b>Points to raise with us:</b>",
+   "after": "<b>Points to raise:</b>",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "planning check widget",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "<b>Worth reviewing with us:</b>",
+   "after": "<b>Worth reviewing:</b>",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "planning check widget",
+   "editor": "post_content",
+   "action": "replace",
+   "before": " A free review can confirm nothing is being left unclaimed.</p>",
+   "after": "</p>",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Button",
+   "section": "planning check widget",
+   "editor": "post_content",
+   "action": "delete",
+   "before": "\n        <a class=\"p-cta\" href=\"https://gondaliyacpa.ca/consultation/\">Book a free consultation</a>",
+   "after": "",
+   "needs_sharad": false,
+   "note": "Book a free consultation button"
+  },
+  {
+   "location": "Visible",
+   "section": "planning check widget note",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "For a real review, please book a free consultation.</p>",
+   "after": "For a real review, please consult a licensed CPA.</p>",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "checklist download line",
+   "editor": "post_content",
+   "action": "replace",
+   "before": " before your consultation.</p>",
+   "after": ".</p>",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "\"Why Canadian innovators choose us.\" image before Verdict",
+   "editor": "post_content",
+   "action": "delete",
+   "before": "<figure style=\"margin:18px 0;\"><img src=\"https://gondaliyacpa.ca/wp-content/uploads/2026/08/why-gondaliya-cpa-sred-planning.png\" alt=\"Why Canadian innovators choose Gondaliya CPA for SR&amp;ED planning\" style=\"width:100%;border-radius:12px;border:1px solid #d8e0e8;\" /><figcaption style=\"font-size:13px;color:#5a6b7b;text-align:center;padding:6px;\">Why Canadian innovators choose us.</figcaption></figure>\n",
+   "after": "",
+   "needs_sharad": false,
+   "note": "Sales-proof image"
+  },
+  {
+   "location": "Visible",
+   "section": "closing H2",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "SR&amp;ED credits with Gondaliya CPA including R&amp;D tax planning",
+   "after": "SR&amp;ED credits including R&amp;D tax planning",
+   "needs_sharad": true,
+   "note": ""
+  },
+  {
+   "location": "Button",
+   "section": "closing CTA box",
+   "editor": "post_content",
+   "action": "delete",
+   "before": "<div class=\"gcpa-cta\">\n<h4>Plan the claim, not just file it</h4>\n<p>Gondaliya CPA confirms CCPC status and limit allocation, scopes projects before work starts, sets up time tracking that survives review, compares proxy against traditional annually, structures contractor arrangements, handles assistance reductions, stacks Ontario credits correctly, and prepares Form T661 and Schedule T2SCH31, on a fixed fee with a one-business-day response. Please book a free consultation.</p>\n<div class=\"gcpa-trust\"><span>1450+ 5-star Google reviews</span><span>CPA Ontario Registered Firm</span><span>Fixed-Fee Pricing</span><span>Software, Manufacturing &amp; Engineering</span></div>\n<div class=\"gcpa-btnrow\"><a class=\"solid\" href=\"https://gondaliyacpa.ca/consultation/\">Book Free Consultation</a><a href=\"tel:+16472129559\">647-212-9559</a><a href=\"mailto:info@gondaliyacpa.ca\">info@gondaliyacpa.ca</a></div>\n</div>\n",
+   "after": "",
+   "needs_sharad": false,
+   "note": "Offer paragraph (prepares T661/T2SCH31, fixed fee, book consultation), trust strip, Book/tel/mailto buttons"
+  },
+  {
+   "location": "Visible",
+   "section": "Next Steps paragraph",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "<p>Please book a free consultation with Gondaliya CPA and bring your fiscal year end date, a list of every corporation you control, and details of any grant funding received. Those three show within minutes which planning levers are still open this year. The earlier you call, the more of them there are. You will get a fixed fee before any work begins.",
+   "after": "<p>Before planning, gather your fiscal year end date, a list of every corporation you control, and details of any grant funding received. Those three show which planning levers are still open this year. The earlier you start, the more of them there are.",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "author box (bottom)",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "with SR&amp;ED planning and claims, corporate tax,",
+   "after": "with corporate tax,",
+   "needs_sharad": true,
+   "note": "Author bio lists SR&ED planning and claims as a firm service"
+  },
+  {
+   "location": "JSON-LD",
+   "section": "Service schema node",
+   "editor": "post_content",
+   "action": "delete",
+   "before": ",\n    {\n      \"@type\": \"Service\",\n      \"name\": \"SR and ED Tax Planning Canada\",\n      \"serviceType\": \"CCPC status and expenditure limit planning, project scoping, time tracking system design, proxy and traditional overhead comparison, contractor structuring, government assistance analysis, provincial credit stacking, Form T661 and Schedule T2SCH31 preparation, CRA review representation\",\n      \"provider\": { \"@id\": \"https://gondaliyacpa.ca/#organization\" },\n      \"areaServed\": \"CA\",\n      \"audience\": { \"@type\": \"Audience\", \"audienceType\": \"Canadian incorporated businesses already conducting eligible R and D who want the claim planned during the fiscal year\" }\n    }",
+   "after": "",
+   "needs_sharad": false,
+   "note": "\"SR and ED Tax Planning Canada\" Service with provider = organization"
+  }
+ ],
+ "page_note": "Non-Elementor post. FAQ (visible + JSON-LD) is informational. Industry section heading \"Sectors We Represent\" and the DIY/contingency/CPA comparison table kept (generic). Rank Math title/description informational; no change."
+}

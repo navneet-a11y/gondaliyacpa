@@ -1,0 +1,20 @@
+{
+ "id": 56770,
+ "url": "https://gondaliyacpa.ca/?elementor_library=sharad-bio",
+ "title": "sharad bio",
+ "type": "elementor_library",
+ "elementor": true,
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "Author bio box (template sharad-bio)",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "Trust and Estate Tax Returns (T3), and SR&ED Tax Credit Claims.",
+   "after": "and Trust and Estate Tax Returns (T3).",
+   "needs_sharad": true,
+   "note": "Bio lists SR&ED Tax Credit Claims among services Sharad provides; it is about Sharad himself, so flagged for his OK. Template reused across pages."
+  }
+ ],
+ "page_note": "Elementor template sharad-bio: one service-list mention of SR&ED claims."
+}

@@ -1,0 +1,80 @@
+{
+ "id": 53737,
+ "url": "https://gondaliyacpa.ca/environmental-consultant-tax-planning-canada/",
+ "title": "Environmental Consulting Business Tax Planning in Canada: Managing Projects, Contractors & Business Taxes",
+ "type": "post",
+ "elementor": false,
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "Mid-article CTA box",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "want the accrued pay, SR&amp;ED and payroll dates checked?",
+   "after": "want the accrued pay and payroll dates checked?",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Summary list: How Do We Handle a Firm at Gondaliya CPA",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "compiled statements, the T2 and SR&amp;ED timing on one flat annual fee.",
+   "after": "compiled statements and the T2 on one flat annual fee.",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "How we work paragraph (what we do)",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "allocation on Schedule 5, issuing the <a class=\"wpil_keyword_link\" href=\"https://gondaliyacpa.ca/payroll-tax-remittance-canada/\" title=\"Payroll Tax Remittance\">T4A slips</a> your subcontractor payments require, and keeping the SR&amp;ED documentation contemporaneous so the claim survives a technical review.</p>",
+   "after": "allocation on Schedule 5, and issuing the <a class=\"wpil_keyword_link\" href=\"https://gondaliyacpa.ca/payroll-tax-remittance-canada/\" title=\"Payroll Tax Remittance\">T4A slips</a> your subcontractor payments require.</p>",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Planning quiz result list (inline JS)",
+   "editor": "post_content",
+   "action": "delete",
+   "before": "if(rv('p-b')===1) items.push('An SR&ED eligibility and 18-month deadline review');\n   ",
+   "after": "",
+   "needs_sharad": false,
+   "note": "Removes the SR&ED review offer from quiz results; quiz question 2 (Do you claim SR&ED?) then has no effect - optionally remove question manually."
+  },
+  {
+   "location": "Visible",
+   "section": "Closing paragraph (Gondaliya CPA diarises...)",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "allocation on Schedule 5, issues the T4A slips your subcontractor payments require, and keeps SR&amp;ED documentation contemporaneous &mdash;",
+   "after": "allocation on Schedule 5, and issues the T4A slips your subcontractor payments require &mdash;",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Closing trust badges",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "<span>Fixed-Fee Pricing</span><span>SR&amp;ED &amp; Project Accounting</span>",
+   "after": "<span>Fixed-Fee Pricing</span><span>Project Accounting</span>",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "JSON-LD",
+   "section": "Service schema description",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "accrued remuneration timing, SR&ED claims and deadlines, site and lodging allowances",
+   "after": "accrued remuneration timing, site and lodging allowances",
+   "needs_sharad": false,
+   "note": ""
+  }
+ ],
+ "page_note": "Environmental consulting post. Informational SR&ED mentions kept (18-month deadline section, eligibility, generic best-practice lists, FAQ, HowTo step, glossary, author bio). Rows remove only firm-offer clauses."
+}

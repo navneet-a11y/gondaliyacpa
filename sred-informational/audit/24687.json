@@ -1,0 +1,940 @@
+{
+ "id": 24687,
+ "url": "https://gondaliyacpa.ca/sred-tax-credit-claims/",
+ "title": "SR&ED Tax Credit Claims",
+ "type": "page",
+ "elementor": true,
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "hero subtitle (50eb27f5)",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "Maximize your innovation funding with CPA-led SR&amp;ED claim preparation and",
+   "after": "Learn how SR&amp;ED tax credits fund innovation, from claim preparation to",
+   "needs_sharad": false,
+   "note": "Offer line rewritten; sentence now reads \"...from claim preparation to audit-ready documentation.\""
+  },
+  {
+   "location": "Visible",
+   "section": "hero, notice after intro (50eb27f5)",
+   "editor": "elementor",
+   "action": "insert_after",
+   "before": "audit-ready documentation.<\\/p>",
+   "after": "audit-ready documentation.<\\/p><p class=\\\"sred-notice\\\"><strong>Gondaliya CPA does not prepare SR&amp;ED claims. This page explains how the SR&amp;ED program works, for general information only.<\\/strong><\\/p>",
+   "needs_sharad": false,
+   "note": "Notice placed right after the hero intro paragraph under the H1. Hero text is white; style .sred-notice if needed."
+  },
+  {
+   "location": "Visible",
+   "section": "hero badge (796b50d)",
+   "editor": "manual",
+   "action": "manual",
+   "before": "5-Star Google Reviews",
+   "after": "",
+   "needs_sharad": false,
+   "note": "image-box widget in the hero beside the CTAs (review badge, sales proof). Delete widget."
+  },
+  {
+   "location": "Button",
+   "section": "hero buttons (ff1fb89)",
+   "editor": "manual",
+   "action": "manual",
+   "before": "Book Your Free Consultation",
+   "after": "",
+   "needs_sharad": false,
+   "note": "button widget in hero, links /consultation/. Delete."
+  },
+  {
+   "location": "Button",
+   "section": "hero buttons (531102c)",
+   "editor": "manual",
+   "action": "manual",
+   "before": "Know Exact Fees within 2 Minutes NOW",
+   "after": "",
+   "needs_sharad": false,
+   "note": "button widget in hero, links /pricing-calculation/. Delete."
+  },
+  {
+   "location": "Visible",
+   "section": "intro section heading (394fdb78)",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "AFFORDABLE SR&ED Tax Credit Services",
+   "after": "How the SR&ED Tax Credit Program Works",
+   "needs_sharad": false,
+   "note": "Offer heading (not the H1) rewritten, SR&ED keyword kept."
+  },
+  {
+   "location": "Visible",
+   "section": "intro paragraph 1 (4a92d72d)",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "Gondaliya CPA helps innovative companies identify eligible R&amp;D activities, document expenses accurately, and prepare compliant claims, maximizing potential refunds.",
+   "after": "A compliant claim requires identifying eligible R&amp;D activities and documenting expenses accurately.",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "intro paragraph 2 (4a92d72d)",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "With years of experience working with ",
+   "after": "The program is used by ",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "intro paragraph 2 (4a92d72d)",
+   "editor": "elementor",
+   "action": "replace",
+   "before": ", we guide clients through the complex SR&amp;ED rules, from",
+   "after": ", and the SR&amp;ED rules are complex, from",
+   "needs_sharad": false,
+   "note": "Sentence now: \"The program is used by startups, tech companies, and manufacturing businesses, and the SR&ED rules are complex, from eligible labor and material costs to contractor expenses and overhead allocation.\""
+  },
+  {
+   "location": "Visible",
+   "section": "intro paragraph 2 (4a92d72d)",
+   "editor": "elementor",
+   "action": "delete",
+   "before": " Our affordable, professional approach helps innovators focus on growth while benefiting from every tax credit available.",
+   "after": "",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Button",
+   "section": "intro buttons (12ebe252)",
+   "editor": "manual",
+   "action": "manual",
+   "before": "Book Your Free Tax Consultation",
+   "after": "",
+   "needs_sharad": false,
+   "note": "button widget under intro, links /consultation/. Delete."
+  },
+  {
+   "location": "Button",
+   "section": "intro buttons (5afddb6)",
+   "editor": "manual",
+   "action": "manual",
+   "before": "Know Exact Fees within 2 Minutes NOW",
+   "after": "",
+   "needs_sharad": false,
+   "note": "button widget under intro, links /pricing-calculation/. Delete."
+  },
+  {
+   "location": "Visible",
+   "section": "trust badge row (76c7d57e)",
+   "editor": "manual",
+   "action": "manual",
+   "before": "CPA Ontario Registered Firm, ID 61330051",
+   "after": "",
+   "needs_sharad": false,
+   "note": "icon-box widget 76c7d57e in the 4-badge sales-proof row under the intro CTAs. Delete (whole row/container can go)."
+  },
+  {
+   "location": "Visible",
+   "section": "trust badge row (3128cf73)",
+   "editor": "manual",
+   "action": "manual",
+   "before": "1450+ \\u2605\\u2605\\u2605\\u2605\\u2605 Google Reviews",
+   "after": "",
+   "needs_sharad": false,
+   "note": "icon-box widget 3128cf73 in the 4-badge sales-proof row under the intro CTAs. Delete (whole row/container can go)."
+  },
+  {
+   "location": "Visible",
+   "section": "trust badge row (45ad90fc)",
+   "editor": "manual",
+   "action": "manual",
+   "before": "30-Day Money-Back Guarantee",
+   "after": "",
+   "needs_sharad": false,
+   "note": "icon-box widget 45ad90fc in the 4-badge sales-proof row under the intro CTAs. Delete (whole row/container can go)."
+  },
+  {
+   "location": "Visible",
+   "section": "trust badge row (8040433)",
+   "editor": "manual",
+   "action": "manual",
+   "before": "60-Day Fees-Matching Policy",
+   "after": "",
+   "needs_sharad": false,
+   "note": "icon-box widget 8040433 in the 4-badge sales-proof row under the intro CTAs. Delete (whole row/container can go)."
+  },
+  {
+   "location": "Visible",
+   "section": "\"Actively accepting\" block (7f5f1dc + 6c05065)",
+   "editor": "manual",
+   "action": "manual",
+   "before": "ACTIVELY ACCEPTING Corporate Clients",
+   "after": "",
+   "needs_sharad": false,
+   "note": "heading 7f5f1dc + text-editor 6c05065 (\"Will cover personal tax filing for Directors & Families\"). Sales block next to SR&ED CTAs. Delete."
+  },
+  {
+   "location": "Visible",
+   "section": "\"Convenient Availability\" block (a0775a1 + 29bd21a)",
+   "editor": "manual",
+   "action": "manual",
+   "before": "Convenient Availability",
+   "after": "",
+   "needs_sharad": false,
+   "note": "heading + text \"Weekend and evening support until 9 PM\". Sales block. Delete."
+  },
+  {
+   "location": "Visible",
+   "section": "\"Always Within Reach\" block (c9a6334 + 08783f8)",
+   "editor": "manual",
+   "action": "manual",
+   "before": "Always Within Reach",
+   "after": "",
+   "needs_sharad": false,
+   "note": "heading + text \"Just a call away when you need us\". Sales block. Delete."
+  },
+  {
+   "location": "Button",
+   "section": "availability buttons (3317cc0)",
+   "editor": "manual",
+   "action": "manual",
+   "before": "Book Your Free Consultation",
+   "after": "",
+   "needs_sharad": false,
+   "note": "button widget after availability block, links /consultation/. Delete."
+  },
+  {
+   "location": "Button",
+   "section": "availability buttons (9a9eaf0)",
+   "editor": "manual",
+   "action": "manual",
+   "before": "Know Exact Fees within 2 Minutes NOW",
+   "after": "",
+   "needs_sharad": false,
+   "note": "button widget after availability block, links /pricing-calculation/. Delete."
+  },
+  {
+   "location": "Visible",
+   "section": "experts section heading (6caf8f1)",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "\"title\":\"SR&ED Tax Credit Claims Experts\"",
+   "after": "\"title\":\"About Gondaliya CPA\"",
+   "needs_sharad": false,
+   "note": "Heading next to team photo slides; offer heading rewritten. Slides (images) stay."
+  },
+  {
+   "location": "Visible",
+   "section": "experts icon list (adaabc0)",
+   "editor": "manual",
+   "action": "manual",
+   "before": "AFFORDABLE + CPA Ontario Registered Firm \\/ Business and Corporate Tax Expert \\/ ... \\/ 1450+ 5-stars Google reviews \\/ 30-Day Money-Back Guarantee \\/ 60-Day Fees Matching Policy",
+   "after": "",
+   "needs_sharad": false,
+   "note": "icon-list widget adaabc0 beside the team slides: sales-proof list tied to SR&ED offer. Delete."
+  },
+  {
+   "location": "Button",
+   "section": "experts buttons (14f1849)",
+   "editor": "manual",
+   "action": "manual",
+   "before": "Schedule Free Consultation Call",
+   "after": "",
+   "needs_sharad": false,
+   "note": "button widget, links /consultation/. Delete."
+  },
+  {
+   "location": "Button",
+   "section": "experts buttons (fdf16b1)",
+   "editor": "manual",
+   "action": "manual",
+   "before": "Know Exact Fees within 2 Minutes NOW",
+   "after": "",
+   "needs_sharad": false,
+   "note": "button widget, links /pricing-calculation/. Delete."
+  },
+  {
+   "location": "Visible",
+   "section": "\"Are You Eligible\" (301db485)",
+   "editor": "elementor",
+   "action": "delete",
+   "before": " Gondaliya CPA helps identify eligible activities and ensures claims are fully compliant with CRA requirements.",
+   "after": "",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "\"Are You Eligible\" (301db485)",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "We work closely with innovators to ",
+   "after": "Understanding the program helps ",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "\"Are You Eligible\" (301db485)",
+   "editor": "elementor",
+   "action": "replace",
+   "before": ", helping your business recover eligible costs, maximize credits, and reinvest in growth confidently.",
+   "after": ", so your business can recover eligible costs, maximize credits, and reinvest in growth confidently.",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "\"What Is the SR&ED Program\" (166d4c1)",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "Gondaliya CPA helps document these elements accurately, ensuring that",
+   "after": "Documenting these elements accurately helps ensure that",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "services heading (77d2f2c5)",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "\"title\":\"Our SR&ED Tax Credit Services",
+   "after": "\"title\":\"What an SR&ED Claim Involves",
+   "needs_sharad": false,
+   "note": "Offer heading rewritten. The 6 icon boxes below (Eligibility Assessment ... Filing & CRA Support) then read as the parts of a claim."
+  },
+  {
+   "location": "Visible",
+   "section": "services icon boxes badges",
+   "editor": "manual",
+   "action": "manual",
+   "before": "EXCLUSIVE",
+   "after": "",
+   "needs_sharad": false,
+   "note": "elementskit-icon-box widgets 6a712d4d, 39c2a45a, 4726872d, 1212a6d9, 24998653, 35301df7 each carry badge \"EXCLUSIVE\" (offer framing). Clear the badge title in each box. Their \"Learn more\" links go to other-service pages and can stay."
+  },
+  {
+   "location": "Visible",
+   "section": "case studies heading (e1edb7c)",
+   "editor": "manual",
+   "action": "manual",
+   "before": "Case Studies",
+   "after": "",
+   "needs_sharad": false,
+   "note": "heading e1edb7c over 3 case-study cards about the firm's own SR&ED claims (sales proof tied to the offer). Delete with the cards below."
+  },
+  {
+   "location": "Visible",
+   "section": "case study card (cd2f18c/11a2f98)",
+   "editor": "manual",
+   "action": "manual",
+   "before": "SR&ED Claim for Toronto Tech Startup",
+   "after": "",
+   "needs_sharad": false,
+   "note": "heading + text-editor cd2f18c/11a2f98: \"Our team/We ... submitted the claim ... Secured/Claimed/Received $...K\". Firm sales proof. Delete."
+  },
+  {
+   "location": "Visible",
+   "section": "case study card (ad96579/ebe306e)",
+   "editor": "manual",
+   "action": "manual",
+   "before": "Manufacturing R&D Claim in Hamilton",
+   "after": "",
+   "needs_sharad": false,
+   "note": "heading + text-editor ad96579/ebe306e: \"Our team/We ... submitted the claim ... Secured/Claimed/Received $...K\". Firm sales proof. Delete."
+  },
+  {
+   "location": "Visible",
+   "section": "case study card (d435300/5dd3d67)",
+   "editor": "manual",
+   "action": "manual",
+   "before": "Software Development Claim for Brampton Business",
+   "after": "",
+   "needs_sharad": false,
+   "note": "heading + text-editor d435300/5dd3d67: \"Our team/We ... submitted the claim ... Secured/Claimed/Received $...K\". Firm sales proof. Delete."
+  },
+  {
+   "location": "Visible",
+   "section": "process heading (61e3a996)",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "Your SR&ED Claim in 4 Simple Steps",
+   "after": "The SR&ED Claim Process in 4 Steps",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Button",
+   "section": "process buttons (494fe890)",
+   "editor": "manual",
+   "action": "manual",
+   "before": "GET A QUOTE",
+   "after": "",
+   "needs_sharad": false,
+   "note": "button widget in process section, links /consultation/. Delete."
+  },
+  {
+   "location": "Button",
+   "section": "process buttons (5f7e6ae)",
+   "editor": "manual",
+   "action": "manual",
+   "before": "Know Exact Fees within 2 Minutes NOW",
+   "after": "",
+   "needs_sharad": false,
+   "note": "button widget in process section, links /pricing-calculation/. Delete."
+  },
+  {
+   "location": "Visible",
+   "section": "process step 1 (f8fe3d7)",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "\"title\":\"Discovery & Consultation\"",
+   "after": "\"title\":\"Discovery\"",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "process step 3 (502dbc4a)",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "\"title\":\"CPA Review & Filing",
+   "after": "\"title\":\"Review & Filing",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "process step 4 (6d3b765a)",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "\"title\":\"CRA Support",
+   "after": "\"title\":\"CRA Review",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "process step 4 (287c6ffb)",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "We represent you through any review or audit.",
+   "after": "The CRA may review or audit the claim.",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Why Choose Gondaliya CPA section (2962c7ec ...)",
+   "editor": "manual",
+   "action": "manual",
+   "before": "Why Choose Gondaliya CPA?",
+   "after": "",
+   "needs_sharad": false,
+   "note": "heading 2962c7ec plus 4 numbered items (images 6f92f472/63c54334/ee664e0/1503c6a9, headings 3e28dff \"Accurate and Compliant Filing\", 5dab1af2 \"Affordable, High-Value Service\", 5e56c10f \"Personalized Tax Strategies\", 1b2d2154 \"Year-Round Support and Advice\" and their texts). Why-choose-us for SR&ED. Delete the section."
+  },
+  {
+   "location": "Visible",
+   "section": "Official Partner logo strip (68fa3d09 + 54dbd759)",
+   "editor": "manual",
+   "action": "manual",
+   "before": "Official Partner",
+   "after": "",
+   "needs_sharad": false,
+   "note": "heading + html logo strip (Google Reviews, CPA Ontario, QuickBooks, Xero ... logos). Sales proof on the SR&ED page. Delete."
+  },
+  {
+   "location": "Visible",
+   "section": "Pricing section (7ad00c29, 67dc0de4, 4b017b5f, 6d37c169)",
+   "editor": "manual",
+   "action": "manual",
+   "before": "Transparent Pricing \\u2013 No Hidden Fees \\/ Pricing \\/ From $200 \\/ claim ... \\/ Ready for affordable tax savings?",
+   "after": "",
+   "needs_sharad": false,
+   "note": "SR&ED fee block: text-editor 7ad00c29, heading 67dc0de4, text-editor 4b017b5f (\"From $200 / claim\", guarantees), heading 6d37c169. Delete the section."
+  },
+  {
+   "location": "Button",
+   "section": "Pricing buttons (f0c8ca9)",
+   "editor": "manual",
+   "action": "manual",
+   "before": "Know Exact Fees within 2 Minutes NOW",
+   "after": "",
+   "needs_sharad": false,
+   "note": "button in pricing section, links /pricing-calculation/. Delete."
+  },
+  {
+   "location": "Button",
+   "section": "Pricing buttons (2a9d6bf5)",
+   "editor": "manual",
+   "action": "manual",
+   "before": "Book Your Consultation",
+   "after": "",
+   "needs_sharad": false,
+   "note": "button in pricing section, links /consultation/. Delete."
+  },
+  {
+   "location": "Button",
+   "section": "Pricing buttons (bae2b05)",
+   "editor": "manual",
+   "action": "manual",
+   "before": "Know Exact Fees within 2 Minutes NOW",
+   "after": "",
+   "needs_sharad": false,
+   "note": "button in pricing section, links /pricing-calculation/. Delete."
+  },
+  {
+   "location": "Visible",
+   "section": "coverage heading (42049940)",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "Toronto, GTA & Ontario SR&ED Tax Credit Coverage",
+   "after": "SR&ED Tax Credits in Toronto, the GTA and Ontario",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "coverage text (7fabbd09)",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "Our SR&amp;ED Tax Credit Claims service helps companies identify eligible R&amp;D activities, prepare technical documentation, and maximize their refundable and non-refundable tax credits",
+   "after": "An SR&amp;ED claim involves identifying eligible R&amp;D activities, preparing technical documentation, and calculating refundable and non-refundable tax credits",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "coverage text (7fabbd09)",
+   "editor": "elementor",
+   "action": "delete",
+   "before": "<p data-start=\\\"617\\\" data-end=\\\"729\\\">We guide businesses across Ontario through every step, ensuring accurate submissions and faster claim approvals. SR&amp;ED tax credit claim services are available in-person at our Toronto office and virtually for businesses across Ontario and Canada.<\\/p>",
+   "after": "",
+   "needs_sharad": false,
+   "note": "Whole paragraph is the offer; nothing informational left."
+  },
+  {
+   "location": "Visible",
+   "section": "city cards (toronto)",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "toronto\\/\\\"><span class=\\\"card-sub\\\">SR&ED Tax Credit Claims in ",
+   "after": "toronto\\/\\\"><span class=\\\"card-sub\\\">CPA Services in ",
+   "needs_sharad": false,
+   "note": "Link anchor \"SR&ED Tax Credit Claims in <city>\" offers the service; neutral anchor, URL unchanged."
+  },
+  {
+   "location": "Visible",
+   "section": "city cards (mississauga)",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "mississauga\\/\\\"><span class=\\\"card-sub\\\">SR&ED Tax Credit Claims in ",
+   "after": "mississauga\\/\\\"><span class=\\\"card-sub\\\">CPA Services in ",
+   "needs_sharad": false,
+   "note": "Link anchor \"SR&ED Tax Credit Claims in <city>\" offers the service; neutral anchor, URL unchanged."
+  },
+  {
+   "location": "Visible",
+   "section": "city cards (brampton)",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "brampton\\/\\\"><span class=\\\"card-sub\\\">SR&ED Tax Credit Claims in ",
+   "after": "brampton\\/\\\"><span class=\\\"card-sub\\\">CPA Services in ",
+   "needs_sharad": false,
+   "note": "Link anchor \"SR&ED Tax Credit Claims in <city>\" offers the service; neutral anchor, URL unchanged."
+  },
+  {
+   "location": "Visible",
+   "section": "city cards (etobicoke)",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "etobicoke\\/\\\"><span class=\\\"card-sub\\\">SR&ED Tax Credit Claims in ",
+   "after": "etobicoke\\/\\\"><span class=\\\"card-sub\\\">CPA Services in ",
+   "needs_sharad": false,
+   "note": "Link anchor \"SR&ED Tax Credit Claims in <city>\" offers the service; neutral anchor, URL unchanged."
+  },
+  {
+   "location": "Visible",
+   "section": "city cards (scarborough)",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "scarborough\\/\\\"><span class=\\\"card-sub\\\">SR&ED Tax Credit Claims in ",
+   "after": "scarborough\\/\\\"><span class=\\\"card-sub\\\">CPA Services in ",
+   "needs_sharad": false,
+   "note": "Link anchor \"SR&ED Tax Credit Claims in <city>\" offers the service; neutral anchor, URL unchanged."
+  },
+  {
+   "location": "Visible",
+   "section": "city cards (markham)",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "markham\\/\\\"><span class=\\\"card-sub\\\">SR&ED Tax Credit Claims in ",
+   "after": "markham\\/\\\"><span class=\\\"card-sub\\\">CPA Services in ",
+   "needs_sharad": false,
+   "note": "Link anchor \"SR&ED Tax Credit Claims in <city>\" offers the service; neutral anchor, URL unchanged."
+  },
+  {
+   "location": "Visible",
+   "section": "city cards (vaughan)",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "vaughan\\/\\\"><span class=\\\"card-sub\\\">SR&ED Tax Credit Claims in ",
+   "after": "vaughan\\/\\\"><span class=\\\"card-sub\\\">CPA Services in ",
+   "needs_sharad": false,
+   "note": "Link anchor \"SR&ED Tax Credit Claims in <city>\" offers the service; neutral anchor, URL unchanged."
+  },
+  {
+   "location": "Visible",
+   "section": "city cards (richmond-hill)",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "richmond-hill\\/\\\"><span class=\\\"card-sub\\\">SR&ED Tax Credit Claims in ",
+   "after": "richmond-hill\\/\\\"><span class=\\\"card-sub\\\">CPA Services in ",
+   "needs_sharad": false,
+   "note": "Link anchor \"SR&ED Tax Credit Claims in <city>\" offers the service; neutral anchor, URL unchanged."
+  },
+  {
+   "location": "Visible",
+   "section": "city cards (north-york)",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "north-york\\/\\\"><span class=\\\"card-sub\\\">SR&ED Tax Credit Claims in ",
+   "after": "north-york\\/\\\"><span class=\\\"card-sub\\\">CPA Services in ",
+   "needs_sharad": false,
+   "note": "Link anchor \"SR&ED Tax Credit Claims in <city>\" offers the service; neutral anchor, URL unchanged."
+  },
+  {
+   "location": "Visible",
+   "section": "city cards (oakville)",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "oakville\\/\\\"><span class=\\\"card-sub\\\">SR&ED Tax Credit Claims in ",
+   "after": "oakville\\/\\\"><span class=\\\"card-sub\\\">CPA Services in ",
+   "needs_sharad": false,
+   "note": "Link anchor \"SR&ED Tax Credit Claims in <city>\" offers the service; neutral anchor, URL unchanged."
+  },
+  {
+   "location": "Visible",
+   "section": "city cards (hamilton)",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "hamilton\\/\\\"><span class=\\\"card-sub\\\">SR&ED Tax Credit Claims in ",
+   "after": "hamilton\\/\\\"><span class=\\\"card-sub\\\">CPA Services in ",
+   "needs_sharad": false,
+   "note": "Link anchor \"SR&ED Tax Credit Claims in <city>\" offers the service; neutral anchor, URL unchanged."
+  },
+  {
+   "location": "Visible",
+   "section": "city cards (guelph)",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "guelph\\/\\\"><span class=\\\"card-sub\\\">SR&ED Tax Credit Claims in ",
+   "after": "guelph\\/\\\"><span class=\\\"card-sub\\\">CPA Services in ",
+   "needs_sharad": false,
+   "note": "Link anchor \"SR&ED Tax Credit Claims in <city>\" offers the service; neutral anchor, URL unchanged."
+  },
+  {
+   "location": "Visible",
+   "section": "city cards (oshawa)",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "oshawa\\/\\\"><span class=\\\"card-sub\\\">SR&ED Tax Credit Claims in ",
+   "after": "oshawa\\/\\\"><span class=\\\"card-sub\\\">CPA Services in ",
+   "needs_sharad": false,
+   "note": "Link anchor \"SR&ED Tax Credit Claims in <city>\" offers the service; neutral anchor, URL unchanged."
+  },
+  {
+   "location": "Visible",
+   "section": "city cards (ottawa)",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "ottawa\\/\\\"><span class=\\\"card-sub\\\">SR&ED Tax Credit Claims in ",
+   "after": "ottawa\\/\\\"><span class=\\\"card-sub\\\">CPA Services in ",
+   "needs_sharad": false,
+   "note": "Link anchor \"SR&ED Tax Credit Claims in <city>\" offers the service; neutral anchor, URL unchanged."
+  },
+  {
+   "location": "Visible",
+   "section": "city cards (windsor)",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "windsor\\/\\\"><span class=\\\"card-sub\\\">SR&ED Tax Credit Claims in ",
+   "after": "windsor\\/\\\"><span class=\\\"card-sub\\\">CPA Services in ",
+   "needs_sharad": false,
+   "note": "Link anchor \"SR&ED Tax Credit Claims in <city>\" offers the service; neutral anchor, URL unchanged."
+  },
+  {
+   "location": "Visible",
+   "section": "industries heading (20545aee)",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "Industries We Serve With Our SR&ED Tax Credit Services",
+   "after": "Industries That Commonly Claim SR&ED Tax Credits",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "industry link boxes",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "\"title_text\":\"SR&ED Tax Credit Claims for Startups\"",
+   "after": "\"title_text\":\"SR&ED Tax Credits for Startups\"",
+   "needs_sharad": false,
+   "note": "Linked icon-box title offered SR&ED claims per industry; neutral wording, link unchanged."
+  },
+  {
+   "location": "Visible",
+   "section": "industry link boxes",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "\"title_text\":\"SR&ED Tax Credit Claims  for Healthcare\"",
+   "after": "\"title_text\":\"SR&ED Tax Credits for Healthcare\"",
+   "needs_sharad": false,
+   "note": "Linked icon-box title offered SR&ED claims per industry; neutral wording, link unchanged."
+  },
+  {
+   "location": "Visible",
+   "section": "industry link boxes",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "\"title_text\":\"SR&ED Tax Credit Claims for  Consultants\"",
+   "after": "\"title_text\":\"SR&ED Tax Credits for Consultants\"",
+   "needs_sharad": false,
+   "note": "Linked icon-box title offered SR&ED claims per industry; neutral wording, link unchanged."
+  },
+  {
+   "location": "Visible",
+   "section": "industry link boxes",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "\"title_text\":\"SR&ED Tax Credit Claims for  Small Businesses\"",
+   "after": "\"title_text\":\"SR&ED Tax Credits for Small Businesses\"",
+   "needs_sharad": false,
+   "note": "Linked icon-box title offered SR&ED claims per industry; neutral wording, link unchanged."
+  },
+  {
+   "location": "Visible",
+   "section": "industry link boxes",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "\"title_text\":\"SR&ED Tax Credit Claims for  Restaurants\"",
+   "after": "\"title_text\":\"SR&ED Tax Credits for Restaurants\"",
+   "needs_sharad": false,
+   "note": "Linked icon-box title offered SR&ED claims per industry; neutral wording, link unchanged."
+  },
+  {
+   "location": "Visible",
+   "section": "industry link boxes",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "\"title_text\":\"SR&ED Tax Credit Claims for  Franchises\"",
+   "after": "\"title_text\":\"SR&ED Tax Credits for Franchises\"",
+   "needs_sharad": false,
+   "note": "Linked icon-box title offered SR&ED claims per industry; neutral wording, link unchanged."
+  },
+  {
+   "location": "Visible",
+   "section": "industry link boxes",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "\"title_text\":\"SR&ED Tax Credit Claims for Self-Employed\"",
+   "after": "\"title_text\":\"SR&ED Tax Credits for Self-Employed\"",
+   "needs_sharad": false,
+   "note": "Linked icon-box title offered SR&ED claims per industry; neutral wording, link unchanged."
+  },
+  {
+   "location": "Visible",
+   "section": "industry link boxes",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "\"title_text\":\"SR&ED Tax Credit Claims for Manufacturing\"",
+   "after": "\"title_text\":\"SR&ED Tax Credits for Manufacturing\"",
+   "needs_sharad": false,
+   "note": "Linked icon-box title offered SR&ED claims per industry; neutral wording, link unchanged."
+  },
+  {
+   "location": "Visible",
+   "section": "industry link boxes",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "\"title_text\":\"SR&ED Tax Credit Claims for Grocery Stores\"",
+   "after": "\"title_text\":\"SR&ED Tax Credits for Grocery Stores\"",
+   "needs_sharad": false,
+   "note": "Linked icon-box title offered SR&ED claims per industry; neutral wording, link unchanged."
+  },
+  {
+   "location": "Visible",
+   "section": "industry link boxes",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "\"title_text\":\"SR&ED Tax Credit Claims for Import & Export\"",
+   "after": "\"title_text\":\"SR&ED Tax Credits for Import & Export\"",
+   "needs_sharad": false,
+   "note": "Linked icon-box title offered SR&ED claims per industry; neutral wording, link unchanged."
+  },
+  {
+   "location": "Visible",
+   "section": "FAQ 6 answer \"How does Gondaliya CPA help with SR&ED claims?\" (beaecb2)",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "Our CPA-led team provides eligibility assessment, project identification, documentation review, T661 schedule preparation, electronic filing, and CRA support. We work with your engineers, developers, or product teams to draft technical project descriptions that meet CRA standards.",
+   "after": "Gondaliya CPA does not prepare SR&ED claims. A claim generally involves eligibility assessment, project identification, documentation review, T661 schedule preparation, electronic filing, and CRA support, with your engineers, developers, or product teams drafting technical project descriptions that meet CRA standards.",
+   "needs_sharad": false,
+   "note": "Question kept. Rank Math FAQ schema is generated from this accordion (rank_math_add_faq_schema=yes), so JSON-LD follows."
+  },
+  {
+   "location": "Visible",
+   "section": "FAQ 8 answer (8b2fb06)",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "Gondaliya CPA can review past projects to recover potential credits you may have overlooked.",
+   "after": "A review of past projects can recover potential credits you may have overlooked.",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "FAQ 10 \"Why choose Gondaliya CPA for SR&ED claims?\" (395016a6 item 10 + 18825da)",
+   "editor": "manual",
+   "action": "manual",
+   "before": "Why choose Gondaliya CPA for SR&ED claims?",
+   "after": "",
+   "needs_sharad": false,
+   "note": "nested-accordion 395016a6, item 10; answer text-editor 18825da is all sales (\"Our team maximizes eligible credits...\"). Remove the item (also removes it from the Rank Math FAQ schema)."
+  },
+  {
+   "location": "Visible",
+   "section": "FAQ 11 \"How do I schedule a consultation?\" (395016a6 item 11 + 7dd38fe8)",
+   "editor": "manual",
+   "action": "manual",
+   "before": "How do I schedule a consultation?",
+   "after": "",
+   "needs_sharad": false,
+   "note": "nested-accordion 395016a6, item 11; answer links /consultation/ and /contact-us/. CTA. Remove the item."
+  },
+  {
+   "location": "Visible",
+   "section": "Meet Your SR&ED experts (55da2de)",
+   "editor": "manual",
+   "action": "manual",
+   "before": "Meet Your SR&ED Tax Credits Experts",
+   "after": "",
+   "needs_sharad": false,
+   "note": "heading 55da2de (and empty heading 1446b01f). Delete with the team card below."
+  },
+  {
+   "location": "Visible",
+   "section": "team contact cards (global widget a041051)",
+   "editor": "manual",
+   "action": "manual",
+   "before": "Sharad Gondaliya, CPA ... 647-212-9559 sharad@gondaliyacpa.ca \\/ Vandana Goel, CPA ... 647-250-0242 vandana@gondaliyacpa.ca",
+   "after": "",
+   "needs_sharad": false,
+   "note": "GLOBAL widget a041051 (templateID 35196) with tel: and mailto: links. Remove the widget instance from this page only; do NOT edit global template 35196 (used site-wide)."
+  },
+  {
+   "location": "Form",
+   "section": "free consultation booking (dd0bd5a)",
+   "editor": "manual",
+   "action": "manual",
+   "before": "Free SR&ED Tax Credits Consultation for Businesses",
+   "after": "",
+   "needs_sharad": false,
+   "note": "heading dd0bd5a over the HubSpot booking embed. Delete."
+  },
+  {
+   "location": "Form",
+   "section": "HubSpot meetings embed (2e463c2)",
+   "editor": "manual",
+   "action": "manual",
+   "before": "meetings-na3.hubspot.com\\/meetings\\/sharad",
+   "after": "",
+   "needs_sharad": false,
+   "note": "html widget 2e463c2: HubSpot Meetings booking form. Delete."
+  },
+  {
+   "location": "Visible",
+   "section": "Google Reviews header (6a0e2c17)",
+   "editor": "manual",
+   "action": "manual",
+   "before": "Google Reviews \\/ See all on Google",
+   "after": "",
+   "needs_sharad": false,
+   "note": "heading widget with \"See all on Google\" link. Review sales proof. Delete."
+  },
+  {
+   "location": "Visible",
+   "section": "Trustindex reviews (b180e8c)",
+   "editor": "manual",
+   "action": "manual",
+   "before": "[trustindex data-widget-id=73ef96b6716587930396d477f16]",
+   "after": "",
+   "needs_sharad": false,
+   "note": "shortcode widget b180e8c (Google reviews carousel). Delete."
+  },
+  {
+   "location": "Visible",
+   "section": "\"Browse Our Affordable CPA Services\" list (b51a039)",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "sred-tax-credit-claims\\/\\\">SR&amp;ED Tax Credit Claims<\\/a>",
+   "after": "sred-tax-credit-claims\\/\\\">How SR&amp;ED Tax Credits Work<\\/a>",
+   "needs_sharad": false,
+   "note": "SR&ED claims listed among \"our services\"; neutral anchor, URL unchanged."
+  },
+  {
+   "location": "Visible",
+   "section": "verified firm heading (5c74831)",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "Verified SR&ED Tax Credit CPA Firm in Ontario",
+   "after": "Verified CPA Firm in Ontario",
+   "needs_sharad": false,
+   "note": "Credential table below stays."
+  },
+  {
+   "location": "Visible",
+   "section": "final CTA heading (6e3db950)",
+   "editor": "manual",
+   "action": "manual",
+   "before": "Claim Your SR&ED Tax Credits with Expert CPA Support",
+   "after": "",
+   "needs_sharad": false,
+   "note": "heading of the closing CTA band. Delete with its two buttons."
+  },
+  {
+   "location": "Button",
+   "section": "final CTA buttons (4b4e09e1)",
+   "editor": "manual",
+   "action": "manual",
+   "before": "Book Free Consultation",
+   "after": "",
+   "needs_sharad": false,
+   "note": "button, links /consultation/. Delete."
+  },
+  {
+   "location": "Button",
+   "section": "final CTA buttons (d0c6fe5)",
+   "editor": "manual",
+   "action": "manual",
+   "before": "Know Exact Fees within 2 Minutes NOW",
+   "after": "",
+   "needs_sharad": false,
+   "note": "button, links /pricing-calculation/. Delete."
+  },
+  {
+   "location": "Meta",
+   "section": "Rank Math meta description",
+   "editor": "rank_math",
+   "action": "replace",
+   "before": "Recover eligible R&amp;D expenses with Gondaliya CPA. Expert SR&amp;ED claims for Ontario businesses, maximizing credits and ensuring CRA compliance.",
+   "after": "How SR&amp;ED tax credits work for Ontario businesses: eligible R&amp;D expenses, refundable and non-refundable credits, and CRA compliance.",
+   "needs_sharad": true,
+   "note": "Proposed only; meta description changes need Sharad."
+  }
+ ],
+ "page_note": "Elementor page (renders from _elementor_data; content.raw is a fallback copy, not audited). H1 \"SR&ED Tax Credit Claims in Ontario\" and SEO title kept. Kept as informational: FAQ 1-5, 7, 9, the \"10 Smart SR&ED Tax Credit Strategies\" block, CRA-verification table, related insights, team photo slides, and the 6 claim-component icon boxes (after heading rewrite). Office map/locations widget (5235020/2c36f9b0) lists plain-text phone numbers but no tel: links; left in place, remove too if Sharad wants no contact path. The \"REGISTERED CPA FIRM - VERIFY NOW\" hero link (e7a32d1) is a credential link, left in place."
+}

@@ -1,0 +1,80 @@
+{
+ "id": 39345,
+ "url": "https://gondaliyacpa.ca/incorporation-for-it-consultants/",
+ "title": "Incorporation for IT Consultants",
+ "type": "page",
+ "elementor": true,
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "Hero intro",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "international client zero-rating, SR&amp;ED tax credits, contractor vs. employee",
+   "after": "international client zero-rating, contractor vs. employee",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Process step",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "set the fiscal year-end, assess SR&amp;ED eligibility and project",
+   "after": "set the fiscal year-end and project",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "SR&ED section warning box",
+   "editor": "elementor",
+   "action": "replace",
+   "before": " We assess SR&amp;ED eligibility for every IT consultant at onboarding and prepare the claim documentation if you qualify.",
+   "after": "",
+   "needs_sharad": false,
+   "note": "SR&ED explainer and figures stay"
+  },
+  {
+   "location": "Visible",
+   "section": "Common mistakes table - row 6 fix cell",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "SR&amp;ED eligibility assessed at onboarding. If eligible, technical narrative and claim prepared.",
+   "after": "Review SR&amp;ED eligibility each year.",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Pricing table - SR&ED eligibility assessment row",
+   "editor": "elementor",
+   "action": "delete",
+   "before": "<tr><td>SR&amp;ED eligibility assessment<\\/td><td>FREE<\\/td><td>We assess whether your development work qualifies for SR&amp;ED tax credits at onboarding<\\/td><\\/tr>\\r\\n",
+   "after": "",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "FAQ \"Does my IT work qualify for SR&ED tax credits?\"",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "We assess eligibility at onboarding. If you qualify,",
+   "after": "If you qualify,",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "JSON-LD",
+   "section": "FAQ \"Does my IT work qualify for SR&ED tax credits?\"",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "$200K claim = $86K credits. We assess at onboarding.",
+   "after": "$200K claim = $86K credits.",
+   "needs_sharad": false,
+   "note": ""
+  }
+ ],
+ "page_note": "Incorporation for IT consultants (Elementor). SR&ED explainer section, eligibility table, OITC note, IP/CCPC note and FAQ facts stay. Rows remove the firm offering SR&ED eligibility assessment and claim documentation (hero list, process step, warning box, mistakes table, free assessment pricing row, FAQ + JSON-LD)."
+}

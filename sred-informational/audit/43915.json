@@ -1,0 +1,30 @@
+{
+ "id": 43915,
+ "url": "https://gondaliyacpa.ca/best-accountants-in-brampton-on/",
+ "title": "Best accountants in Brampton, ON",
+ "type": "page",
+ "elementor": true,
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "#1 Gondaliya CPA services list",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "<li>SR&ED & Tax Credits<\\/li>",
+   "after": "<li>Tax Credits<\\/li>",
+   "needs_sharad": true,
+   "note": "Best page listing of the firm's own services"
+  },
+  {
+   "location": "Visible",
+   "section": "What accounting services include - Business Setup & CRA Support",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "Guidance on SR&ED and other credits your business may be eligible for.",
+   "after": "Guidance on tax credits your business may be eligible for.",
+   "needs_sharad": false,
+   "note": ""
+  }
+ ],
+ "page_note": "Best accountants in Brampton listicle. Only two SR&ED mentions, both offering it as a service (Gondaliya services list, and service-scope bullet). Flagged needs_sharad on the firm listing as a Best page."
+}

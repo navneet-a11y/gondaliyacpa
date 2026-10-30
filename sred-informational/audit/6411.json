@@ -1,0 +1,40 @@
+{
+  "id": 6411,
+  "url": "https://gondaliyacpa.ca/markham/",
+  "title": "Markham Business Accounting &amp; Tax Services – Gondaliya CPA",
+  "type": "page",
+  "elementor": true,
+  "rows": [
+    {
+      "location": "Visible",
+      "section": "Services list (corporate tax bullets)",
+      "editor": "elementor",
+      "action": "replace",
+      "before": "We prepare the SR&ED claim on Form T661 alongside your Markham technology corporation T2 return",
+      "after": "The SR&ED claim is filed on Form T661 alongside a Markham technology corporation's T2 return",
+      "needs_sharad": false,
+      "note": ""
+    },
+    {
+      "location": "Visible",
+      "section": "Services list (tax planning bullets)",
+      "editor": "elementor",
+      "action": "replace",
+      "before": "We plan SR&ED claims for Markham technology corporations within CRA's 18-month filing deadline, ensuring the claim captures all eligible developer salaries",
+      "after": "SR&ED claims for Markham technology corporations must be filed within CRA's 18-month filing deadline, and a claim can include eligible developer salaries",
+      "needs_sharad": false,
+      "note": ""
+    },
+    {
+      "location": "Visible",
+      "section": "Incorporation services bullet",
+      "editor": "elementor",
+      "action": "replace",
+      "before": "for Markham technology companies planning to claim SR&ED credits from day one, we ensure the incorporation structure preserves CCPC classification",
+      "after": "for Markham technology companies planning to claim SR&ED credits from day one, the incorporation structure must preserve CCPC classification",
+      "needs_sharad": false,
+      "note": ""
+    }
+  ],
+  "page_note": "City page. Bullets saying the firm prepares/plans SR&ED claims rewritten as information. Mentions of 'SR&ED refund reserves' in holdco bullet and 'SR&ED credit accounting treatment' in compilation-notes bullet are informational, kept."
+}

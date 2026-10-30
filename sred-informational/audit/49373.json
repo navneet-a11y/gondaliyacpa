@@ -1,0 +1,50 @@
+{
+  "id": 49373,
+  "url": "https://gondaliyacpa.ca/manufacturing-reduce-corporate-taxes-maximize-profits/",
+  "title": "How Canadian Manufacturing Companies Can Reduce Corporate Taxes and Maximize After-Tax Profits",
+  "type": "post",
+  "elementor": false,
+  "rows": [
+    {
+      "location": "Visible",
+      "section": "\"What we handle\" paragraph",
+      "editor": "post_content",
+      "action": "replace",
+      "before": "identifying SR&amp;ED on process work, calculating the Schedule 27",
+      "after": "calculating the Schedule 27",
+      "needs_sharad": false,
+      "note": ""
+    },
+    {
+      "location": "Visible",
+      "section": "Bottom CTA box \"Move the date before you move the structure\"",
+      "editor": "post_content",
+      "action": "replace",
+      "before": "identifies SR&amp;ED on process work, calculates the Schedule 27 deduction",
+      "after": "calculates the Schedule 27 deduction",
+      "needs_sharad": false,
+      "note": ""
+    },
+    {
+      "location": "JSON-LD",
+      "section": "Service schema serviceType",
+      "editor": "post_content",
+      "action": "replace",
+      "before": "SR&amp;ED credit identification, Schedule 27",
+      "after": "Schedule 27",
+      "needs_sharad": false,
+      "note": "Service schema listing SR&ED as a firm service; Article/HowTo/DefinedTerm schema kept."
+    },
+    {
+      "location": "Visible",
+      "section": "\"When and Why to Consult a Manufacturing Tax Accountant Like Gondaliya CPA\"",
+      "editor": "post_content",
+      "action": "replace",
+      "before": "when rules get tricky, like Schedule 27 or SR&amp;ED claims. Here",
+      "after": "when rules get tricky, like Schedule 27. Here",
+      "needs_sharad": false,
+      "note": ""
+    }
+  ],
+  "page_note": "Manufacturing tax blog post with a long informational SR&ED section (kept word for word). Offer lines: firm 'identifies SR&ED' in what-we-handle paragraph, CTA box, Service schema, and the 'consult Gondaliya CPA ... SR&ED claims' line. Author bio experience list, HowTo step and glossary entries kept as informational."
+}

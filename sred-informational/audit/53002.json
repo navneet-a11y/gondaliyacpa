@@ -1,0 +1,40 @@
+{
+ "id": 53002,
+ "url": "https://gondaliyacpa.ca/industrial-manufacturing-taxes-accounting-canada/",
+ "title": "The Ultimate Guide to Industrial Manufacturing Taxes and Accounting in Canada",
+ "type": "post",
+ "elementor": false,
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "H5 heading above SR&ED section",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "SR&amp;ED Tax Credit Consulting and Claims Support</h5>",
+   "after": "SR&amp;ED Tax Credits for Manufacturers</h5>",
+   "needs_sharad": false,
+   "note": "H5 subheading (not H1) that names SR&ED consulting/claims support as a service; body text below is informational and stays."
+  },
+  {
+   "location": "Visible",
+   "section": "Flat-fee closing paragraph",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "with a working paper that holds up, prepare the SR&amp;ED claim inside the 18-month window, and handle the T2",
+   "after": "with a working paper that holds up, and handle the T2",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "JSON-LD",
+   "section": "Service schema description",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "profits deduction, SR&ED and provincial investment credit claims, government assistance",
+   "after": "profits deduction, provincial investment credit claims, government assistance",
+   "needs_sharad": false,
+   "note": ""
+  }
+ ],
+ "page_note": "Manufacturing guide. Informational SR&ED kept (Bill C-15 limits, deadlines table and link, eligibility, strategy list, FAQ, HowTo step, glossary, author bio)."
+}

@@ -1,0 +1,20 @@
+{
+  "id": 53866,
+  "url": "https://gondaliyacpa.ca/accountant-for-hardware-startups/",
+  "title": "Accounting and Tax Services for Hardware Startups",
+  "type": "page",
+  "elementor": false,
+  "rows": [
+    {
+      "location": "Visible",
+      "section": "Intro paragraph (research credits note)",
+      "editor": "post_content",
+      "action": "replace",
+      "before": "We handle it inside the engagement and set out the detail on our <a href=\"https://gondaliyacpa.ca/sred-tax-credit-claims/\">SR&amp;ED tax credit claims</a> page.",
+      "after": "The detail is set out on our <a href=\"https://gondaliyacpa.ca/sred-tax-credit-claims/\">how SR&amp;ED tax credits work</a> page.",
+      "needs_sharad": false,
+      "note": "Offer clause dropped; link kept with neutral anchor."
+    }
+  ],
+  "page_note": "Industry page (hardware startups). One sentence said the firm handles SR&ED inside the engagement; rewritten, link kept. Section 37/T661 explanation, R&D case study (bookkeeping of an R&D account) and FAQ on prototype material are informational, kept."
+}

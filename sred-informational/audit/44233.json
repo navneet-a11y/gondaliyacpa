@@ -1,0 +1,290 @@
+{
+ "id": 44233,
+ "url": "https://gondaliyacpa.ca/technology-company-registration-services-in-ontario/",
+ "title": "Technology Company Registration Services in Ontario",
+ "type": "page",
+ "elementor": true,
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "Hero intro",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "minute book, CRA accounts and SR&amp;ED setup, by a licensed CPA firm.",
+   "after": "minute book and CRA accounts, by a licensed CPA firm.",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Hero \"Actively accepting\" badge",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "Registration, share structure, SR&amp;ED and <a",
+   "after": "Registration, share structure and <a",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Intro paragraph",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "We handle the incorporation and, because we are a CPA firm, the SR&amp;ED, bookkeeping and tax setup from the same office.",
+   "after": "We handle the incorporation and, because we are a CPA firm, the bookkeeping and tax setup from the same office.",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Services grid card heading",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "<h3>SR&amp;ED &amp; Bookkeeping Setup<\\/h3>",
+   "after": "<h3>Bookkeeping Setup<\\/h3>",
+   "needs_sharad": false,
+   "note": "Card text about bookkeeping that captures development costs stays"
+  },
+  {
+   "location": "Visible",
+   "section": "Expertise item 3 (SR&ED and Development Costs)",
+   "editor": "elementor",
+   "action": "delete",
+   "before": "<li>Prepare and file the SR&amp;ED claim with your corporate return.<\\/li>",
+   "after": "",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Expertise item 3 (SR&ED and Development Costs)",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "<li>Coordinate SR&amp;ED with your <a",
+   "after": "<li>Coordinate development-cost records with your <a",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "What we deliver list",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "Keep corporate, HST, payroll and SR&amp;ED filings current after registration.",
+   "after": "Keep corporate, HST and payroll filings current after registration.",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Case examples - \"Software Developer, Ottawa (SR&ED Setup)\" card",
+   "editor": "elementor",
+   "action": "delete",
+   "before": "<div class=\\\"tc-case-card\\\"><h3>Software Developer, Ottawa (SR&amp;ED Setup)<\\/h3><p>A software company doing genuine product development wanted to claim SR&amp;ED. We incorporated the company, set up bookkeeping to capture eligible wages and contractor costs, documented the development work, and prepared the SR&amp;ED claim with the corporate return. The figures here are illustrative of the work we do, not a specific client file. <a href=\\\"https:\\/\\/gondaliyacpa.ca\\/technology-companies\\/\\\">Technology Company Accounting &#8594;<\\/a><\\/p><div class=\\\"tc-case-stat\\\">SR&amp;ED claim prepared. Eligible costs captured.<\\/div><\\/div>\\r\\n",
+   "after": "",
+   "needs_sharad": false,
+   "note": "Illustrative case card showing the firm prepared an SR&ED claim (sales proof); whole card div removed"
+  },
+  {
+   "location": "Visible",
+   "section": "\"How we handle it\" table",
+   "editor": "elementor",
+   "action": "delete",
+   "before": "<tr><td>SR&amp;ED assessment<\\/td><td>We assess eligibility and set up records to support the R&amp;D claim.<\\/td><\\/tr>\\r\\n",
+   "after": "",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Why choose us - Technology Focus",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "with share structure, SR&amp;ED and investor-ready books in mind.",
+   "after": "with share structure and investor-ready books in mind.",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Why choose us - CPA Firm, Not a Filer",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "designs the cap table and SR&amp;ED setup, not just files",
+   "after": "designs the cap table, not just files",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Why choose us - One Firm, Whole Setup",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "Incorporation, share structure, SR&amp;ED, bookkeeping and financials all from the same office.",
+   "after": "Incorporation, share structure, bookkeeping and financials all from the same office.",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Pricing table row",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "<td>Incorporation plus SR&amp;ED setup<\\/td>",
+   "after": "<td>Incorporation plus bookkeeping setup<\\/td>",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Process step 4",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "We set up bookkeeping, assess SR&amp;ED, and prepare investor-ready records",
+   "after": "We set up bookkeeping and prepare investor-ready records",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Team bio - Sharad",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "Sharad leads technology incorporations, investable share structure design and SR&amp;ED planning for founders.",
+   "after": "Sharad leads technology incorporations and investable share structure design for founders.",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Final CTA",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "and gets you SR&amp;ED- and investor-ready.",
+   "after": "and gets you investor-ready.",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "FAQ \"Does my tech company qualify for SR&ED?\"",
+   "editor": "elementor",
+   "action": "replace",
+   "before": " We assess SR&ED eligibility and handle the claim where your development qualifies.<\\/div>",
+   "after": "<\\/div>",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "FAQ \"What is SR&ED and how does it help a tech company?\"",
+   "editor": "elementor",
+   "action": "replace",
+   "before": " We assess eligibility, document the work, and prepare the SR&ED claim.<\\/div>",
+   "after": "<\\/div>",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "FAQ \"annual filings\"",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "We keep all of these current so nothing lapses and your credits are claimed.<\\/div>",
+   "after": "We keep the corporate, GST\\/HST and payroll filings current so nothing lapses.<\\/div>",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "FAQ \"Can Gondaliya CPA help my tech company claim SR&ED and R&D credits?\"",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "Yes. We assess SR&ED eligibility, set up bookkeeping to capture eligible development costs, document the work, and prepare the SR&ED claim with your corporate return, so qualifying development is properly credited. This is on top of the incorporation and ongoing filings. We handle the whole picture for a technology company.<\\/div>",
+   "after": "Gondaliya CPA does not prepare SR&ED claims. SR&ED claims are filed with your corporate return. We set up bookkeeping to capture eligible development costs, on top of the incorporation and ongoing filings. We handle the whole picture for a technology company.<\\/div>",
+   "needs_sharad": false,
+   "note": "FAQ question stays; answer no longer offers the service"
+  },
+  {
+   "location": "JSON-LD",
+   "section": "FAQ \"Does my tech company qualify for SR&ED?\"",
+   "editor": "elementor",
+   "action": "replace",
+   "before": " We assess SR&ED eligibility and handle the claim where your development qualifies.\\\"}}",
+   "after": "\\\"}}",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "JSON-LD",
+   "section": "FAQ \"What is SR&ED and how does it help a tech company?\"",
+   "editor": "elementor",
+   "action": "replace",
+   "before": " We assess eligibility, document the work, and prepare the SR&ED claim.\\\"}}",
+   "after": "\\\"}}",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "JSON-LD",
+   "section": "FAQ \"annual filings\"",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "We keep all of these current so nothing lapses and your credits are claimed.\\\"}}",
+   "after": "We keep the corporate, GST\\/HST and payroll filings current so nothing lapses.\\\"}}",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "JSON-LD",
+   "section": "FAQ \"Can Gondaliya CPA help my tech company claim SR&ED and R&D credits?\"",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "Yes. We assess SR&ED eligibility, set up bookkeeping to capture eligible development costs, document the work, and prepare the SR&ED claim with your corporate return, so qualifying development is properly credited. This is on top of the incorporation and ongoing filings. We handle the whole picture for a technology company.\\\"}}",
+   "after": "Gondaliya CPA does not prepare SR&ED claims. SR&ED claims are filed with your corporate return. We set up bookkeeping to capture eligible development costs, on top of the incorporation and ongoing filings. We handle the whole picture for a technology company.\\\"}}",
+   "needs_sharad": false,
+   "note": "FAQ question stays; answer no longer offers the service"
+  },
+  {
+   "location": "Visible",
+   "section": "FAQ \"Can you register my tech company?\"",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "open the CRA accounts, assess SR&ED, and set up bookkeeping, all from a licensed CPA firm. See our <a",
+   "after": "open the CRA accounts, and set up bookkeeping, all from a licensed CPA firm. See our <a",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "JSON-LD",
+   "section": "FAQ \"Can you register my tech company?\"",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "open the CRA accounts, assess SR&ED, and set up bookkeeping, all from a licensed CPA firm. See our technology",
+   "after": "open the CRA accounts, and set up bookkeeping, all from a licensed CPA firm. See our technology",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "FAQ \"How do I get started?\"",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "set up the CRA accounts, SR&ED and bookkeeping. <",
+   "after": "set up the CRA accounts and bookkeeping. <",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "JSON-LD",
+   "section": "FAQ \"How do I get started?\"",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "set up the CRA accounts, SR&ED and bookkeeping. Book Free Consultation",
+   "after": "set up the CRA accounts and bookkeeping. Book Free Consultation",
+   "needs_sharad": false,
+   "note": ""
+  }
+ ],
+ "page_note": "Technology company registration service page. SR&ED appears as part of the firm's service offer throughout (hero, services, expertise steps, case card, why-choose, pricing, process, team bio, CTA, FAQs + FAQPage JSON-LD). Rows strip only the SR&ED offer clauses; informational SR&ED explanations, SR&ED-ready bookkeeping statements, and mistakes/readiness table rows stay. AccountingService schema has no SR&ED."
+}

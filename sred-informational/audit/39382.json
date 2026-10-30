@@ -1,0 +1,420 @@
+{
+ "id": 39382,
+ "url": "https://gondaliyacpa.ca/sred-for-manufacturing-companies/",
+ "title": "sr&amp;ED for manufacturing companies",
+ "type": "page",
+ "elementor": true,
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "hero subtitle",
+   "editor": "elementor",
+   "action": "replace",
+   "before": " We identify the eligible work, prepare the technical narrative, calculate the expenditures and file the claim with CRA.",
+   "after": " An SR&amp;ED claim identifies the eligible work, sets out the technical narrative, calculates the expenditures and is filed with CRA.",
+   "needs_sharad": false,
+   "note": "html widget 923549b"
+  },
+  {
+   "location": "Visible",
+   "section": "hero, notice after intro",
+   "editor": "elementor",
+   "action": "insert_after",
+   "before": "35% refundable for CCPCs.<\\/p>",
+   "after": "35% refundable for CCPCs.<\\/p><p class=\\\"sred-notice\\\"><strong>Gondaliya CPA does not prepare SR&amp;ED claims. This page explains how the SR&amp;ED program works, for general information only.<\\/strong><\\/p>",
+   "needs_sharad": false,
+   "note": "html widget 923549b; notice right after the hero intro paragraph under the H1."
+  },
+  {
+   "location": "Button",
+   "section": "hero buttons",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "<div class=\\\"sm-hero-btns\\\"><a href=\\\"https:\\/\\/gondaliyacpa.ca\\/consultation\\/\\\" class=\\\"sm-btn-blue\\\">Free SR&amp;ED Assessment<\\/a><a href=\\\"https:\\/\\/gondaliyacpa.ca\\/sred-tax-credit-claims\\/\\\" class=\\\"sm-btn-dark\\\">SR&amp;ED Services<\\/a><\\/div>",
+   "after": "<div class=\\\"sm-hero-btns\\\"><a href=\\\"https:\\/\\/gondaliyacpa.ca\\/sred-tax-credit-claims\\/\\\" class=\\\"sm-btn-dark\\\">How SR&amp;ED Credits Work<\\/a><\\/div>",
+   "needs_sharad": false,
+   "note": "html widget 923549b; /consultation/ CTA removed; internal link to the main SR&ED page kept with a neutral anchor."
+  },
+  {
+   "location": "Visible",
+   "section": "\"What Is the SR&ED Tax Credit\" closing paragraph",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "For a complete overview of our SR&amp;ED service across all industries, visit our ",
+   "after": "For a complete overview of how SR&amp;ED works across all industries, visit the ",
+   "needs_sharad": false,
+   "note": "html widget 923549b; link and other-service link kept."
+  },
+  {
+   "location": "Visible",
+   "section": "\"What qualifies\" warning box",
+   "editor": "elementor",
+   "action": "delete",
+   "before": " We identify process improvement projects that most other SR&amp;ED consultants miss.",
+   "after": "",
+   "needs_sharad": false,
+   "note": "html widget 923549b"
+  },
+  {
+   "location": "Visible",
+   "section": "process section heading",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "How Our SR&amp;ED Claim Process Works for Manufacturers",
+   "after": "How the SR&amp;ED Claim Process Works for Manufacturers",
+   "needs_sharad": false,
+   "note": "html widget 923549b (H2)"
+  },
+  {
+   "location": "Visible",
+   "section": "process section subline",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "Four steps. We handle CRA. You keep manufacturing.",
+   "after": "Four steps, from assessment to filing.",
+   "needs_sharad": false,
+   "note": "html widget 923549b"
+  },
+  {
+   "location": "Visible",
+   "section": "process step 1",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "We walk your shop floor, interview your engineers and review your project files to identify all qualifying SR&amp;ED work. Free assessment.",
+   "after": "Walk the shop floor, interview the engineers and review the project files to identify all qualifying SR&amp;ED work.",
+   "needs_sharad": false,
+   "note": "html widget 923549b"
+  },
+  {
+   "location": "Visible",
+   "section": "process step 2",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "<p>We prepare the technical narrative for each project:",
+   "after": "<p>Prepare the technical narrative for each project:",
+   "needs_sharad": false,
+   "note": "html widget 923549b"
+  },
+  {
+   "location": "Visible",
+   "section": "process step 3",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "<p>We calculate eligible expenditures:",
+   "after": "<p>Calculate eligible expenditures:",
+   "needs_sharad": false,
+   "note": "html widget 923549b"
+  },
+  {
+   "location": "Visible",
+   "section": "process step 4",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "We file Form T661 with CRA, respond to any RTA review and defend the claim through to refund deposit.",
+   "after": "File Form T661 with CRA, respond to any RTA review and support the claim through to refund deposit.",
+   "needs_sharad": false,
+   "note": "html widget 923549b"
+  },
+  {
+   "location": "Button",
+   "section": "inline CTA 1 (after process)",
+   "editor": "elementor",
+   "action": "delete",
+   "before": "<div class=\\\"sm-cta-inline\\\"><div><h3>Free SR&amp;ED Eligibility Assessment for Manufacturers<\\/h3><p>We visit your facility, identify qualifying projects and tell you the estimated credit. No obligation. No upfront fee.<\\/p><\\/div><a href=\\\"https:\\/\\/gondaliyacpa.ca\\/consultation\\/\\\" class=\\\"sm-btn-blue\\\">Book Free Assessment<\\/a><\\/div>",
+   "after": "",
+   "needs_sharad": false,
+   "note": "html widget 923549b; free assessment box + /consultation/ button."
+  },
+  {
+   "location": "Visible",
+   "section": "expenditures table header",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "<th>How We Calculate It<\\/th>",
+   "after": "<th>How It Is Calculated<\\/th>",
+   "needs_sharad": false,
+   "note": "html widget 923549b; column contents are already descriptive."
+  },
+  {
+   "location": "Visible",
+   "section": "materials \"Track R&D Scrap\" box",
+   "editor": "elementor",
+   "action": "delete",
+   "before": " We set up a tracking system for every manufacturing client at onboarding.",
+   "after": "",
+   "needs_sharad": false,
+   "note": "html widget 923549b"
+  },
+  {
+   "location": "Visible",
+   "section": "sector table heading",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "Types of Manufacturing Companies We File SR&amp;ED Claims For",
+   "after": "Types of Manufacturing Companies That Claim SR&amp;ED",
+   "needs_sharad": false,
+   "note": "html widget 923549b (H2)"
+  },
+  {
+   "location": "Visible",
+   "section": "sector table closing paragraph",
+   "editor": "elementor",
+   "action": "delete",
+   "before": "We work with manufacturers across all sectors in Ontario. ",
+   "after": "",
+   "needs_sharad": false,
+   "note": "html widget 923549b; other-service link sentence kept."
+  },
+  {
+   "location": "Button",
+   "section": "inline CTA 2 (after sectors)",
+   "editor": "elementor",
+   "action": "delete",
+   "before": "<div class=\\\"sm-cta-inline\\\"><div><h3>Not Sure If Your Manufacturing R&amp;D Qualifies? We Assess for Free.<\\/h3><p>We visit your facility, walk the shop floor with your engineers and identify every qualifying SR&amp;ED project. No cost. No obligation.<\\/p><\\/div><a href=\\\"https:\\/\\/gondaliyacpa.ca\\/consultation\\/\\\" class=\\\"sm-btn-blue\\\">Book Free Assessment<\\/a><\\/div>",
+   "after": "",
+   "needs_sharad": false,
+   "note": "html widget 923549b"
+  },
+  {
+   "location": "Visible",
+   "section": "technical narrative info box",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "<strong>We Write Manufacturing Narratives That Pass CRA Review:<\\/strong> Our team understands both manufacturing processes and CRA's SR&amp;ED evaluation criteria. We interview your engineers, review trial data, examine quality records and translate the shop floor work into a narrative that satisfies",
+   "after": "<strong>Manufacturing Narratives That Pass CRA Review:<\\/strong> A narrative that passes review reflects both manufacturing processes and CRA's SR&amp;ED evaluation criteria. It draws on engineer interviews, trial data and quality records, and translates the shop floor work into terms that satisfy",
+   "needs_sharad": false,
+   "note": "html widget 923549b; rest of the box is informational and stays."
+  },
+  {
+   "location": "Visible",
+   "section": "10 mistakes table header",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "<th>How We Prevent It<\\/th>",
+   "after": "<th>How to Prevent It<\\/th>",
+   "needs_sharad": false,
+   "note": "html widget 923549b"
+  },
+  {
+   "location": "Visible",
+   "section": "10 mistakes row 1",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "Free shop floor assessment. We walk your facility and identify every qualifying project your engineers are already doing.",
+   "after": "A shop floor review that identifies every qualifying project your engineers are already doing.",
+   "needs_sharad": false,
+   "note": "html widget 923549b"
+  },
+  {
+   "location": "Visible",
+   "section": "10 mistakes row 2",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "R&amp;D scrap tracking system set up at onboarding.",
+   "after": "R&amp;D scrap tracking system set up from the start.",
+   "needs_sharad": false,
+   "note": "html widget 923549b"
+  },
+  {
+   "location": "Visible",
+   "section": "10 mistakes row 9",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "Lightweight trial log template provided at onboarding.",
+   "after": "Lightweight trial log kept from the start.",
+   "needs_sharad": false,
+   "note": "html widget 923549b"
+  },
+  {
+   "location": "Visible",
+   "section": "10 mistakes row 10",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "Every claim prepared by our team with manufacturing and SR&amp;ED expertise.",
+   "after": "Claim prepared with manufacturing and SR&amp;ED expertise.",
+   "needs_sharad": false,
+   "note": "html widget 923549b"
+  },
+  {
+   "location": "Visible",
+   "section": "Pricing section (fee table)",
+   "editor": "elementor",
+   "action": "delete",
+   "before": "<h2 class=\\\"sm-h2c\\\">SR&amp;ED Pricing for Manufacturing Companies<\\/h2><p style=\\\"color:#718096;max-width:640px;margin:0 auto 28px;text-align:center;\\\">Contingency-based. You pay only when CRA approves your refund.<\\/p>\\r\\n\\r\\n<table class=\\\"sm-tbl\\\"><thead><tr><th>Service<\\/th><th>Fee<\\/th><th>Includes<\\/th><\\/tr><\\/thead><tbody>\\r\\n<tr class=\\\"sm-hl\\\"><td>SR&amp;ED claim preparation and filing<\\/td><td>15% to 20% of the approved credit (contingency)<\\/td><td>Facility assessment, project identification, technical narrative, expenditure calculation (salaries, labour, materials consumed, subcontractors), Form T661 filing, CRA correspondence<\\/td><\\/tr>\\r\\n<tr><td>Retainer (for large or multi-project claims)<\\/td><td>$1,000 upfront + contingency on approval<\\/td><td>Same as above, plus dedicated SR&amp;ED specialist, multi-project coordination, materials consumed tracking setup and CRA review preparation<\\/td><\\/tr>\\r\\n<tr><td>Free eligibility assessment<\\/td><td>$0<\\/td><td>Shop floor visit. We walk your facility with your engineers, identify qualifying projects and estimate the credit. No obligation.<\\/td><\\/tr>\\r\\n<tr><td>CRA review and audit defence<\\/td><td>Included<\\/td><td>RTA meeting preparation, engineer coaching, financial documentation package, materials consumed evidence, objection filing if claim is reduced<\\/td><\\/tr>\\r\\n<tr class=\\\"sm-hl\\\"><td>R&amp;D scrap tracking setup<\\/td><td>Included<\\/td><td>We configure a tracking system for materials consumed in SR&amp;ED: trial logs, scrap documentation, cost allocation and photo protocols<\\/td><\\/tr>\\r\\n<tr><td>Annual T2 corporate tax return<\\/td><td>FREE<\\/td><td>Included for every SR&amp;ED and bookkeeping client. SR&amp;ED claim filed alongside the T2.<\\/td><\\/tr>\\r\\n<\\/tbody><\\/table>\\r\\n\\r\\n",
+   "after": "",
+   "needs_sharad": false,
+   "note": "html widget 923549b; SR&ED fee heading, contingency subline and fee table. The links paragraph after it stays."
+  },
+  {
+   "location": "Visible",
+   "section": "Pricing section links paragraph",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "For our SR&amp;ED process across all industries, see our ",
+   "after": "For how SR&amp;ED works across all industries, see the ",
+   "needs_sharad": false,
+   "note": "html widget 923549b"
+  },
+  {
+   "location": "Button",
+   "section": "inline CTA 3 (pricing)",
+   "editor": "elementor",
+   "action": "delete",
+   "before": "<div class=\\\"sm-cta-inline\\\"><div><h3>No Upfront Cost. We Get Paid When You Get Paid.<\\/h3><p>Contingency-based SR&amp;ED for manufacturers. 15% to 20% of the approved credit. Free shop floor assessment. CRA defence included.<\\/p><\\/div><a href=\\\"https:\\/\\/gondaliyacpa.ca\\/consultation\\/\\\" class=\\\"sm-btn-blue\\\">Book Free Assessment<\\/a><\\/div>",
+   "after": "",
+   "needs_sharad": false,
+   "note": "html widget 923549b; contingency-fee CTA box."
+  },
+  {
+   "location": "Visible",
+   "section": "cities heading",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "SR&amp;ED Claims for Manufacturers: Cities We Serve",
+   "after": "SR&amp;ED for Manufacturers Across Ontario",
+   "needs_sharad": false,
+   "note": "html widget 923549b (H2); city links stay."
+  },
+  {
+   "location": "Visible",
+   "section": "cities subline",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "We file SR&amp;ED claims for manufacturing companies across every Ontario city and Canada. No distance limits, no extra fees.",
+   "after": "SR&amp;ED credits are available to qualifying manufacturing companies in every Ontario city and across Canada.",
+   "needs_sharad": false,
+   "note": "html widget 923549b"
+  },
+  {
+   "location": "Visible",
+   "section": "FAQ 1 answer",
+   "editor": "elementor",
+   "action": "delete",
+   "before": " We assess eligibility with a free shop floor visit. <a href=\\\"https:\\/\\/gondaliyacpa.ca\\/consultation\\/\\\">Book Free Assessment &#8594;<\\/a>",
+   "after": "",
+   "needs_sharad": false,
+   "note": "html widget 923549b"
+  },
+  {
+   "location": "Visible",
+   "section": "FAQ 3 answer",
+   "editor": "elementor",
+   "action": "replace",
+   "before": " We set up the tracking system at onboarding. <a href=\\\"https:\\/\\/gondaliyacpa.ca\\/sred-tax-credit-claims\\/\\\">SR&amp;ED Services &#8594;<\\/a>",
+   "after": " <a href=\\\"https:\\/\\/gondaliyacpa.ca\\/sred-tax-credit-claims\\/\\\">How SR&amp;ED Credits Work &#8594;<\\/a>",
+   "needs_sharad": false,
+   "note": "html widget 923549b; link kept with neutral anchor."
+  },
+  {
+   "location": "Visible",
+   "section": "FAQ 5 answer",
+   "editor": "elementor",
+   "action": "delete",
+   "before": " We provide a lightweight trial log template at onboarding.",
+   "after": "",
+   "needs_sharad": false,
+   "note": "html widget 923549b"
+  },
+  {
+   "location": "Visible",
+   "section": "FAQ 6 answer (filing cost)",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "15% to 20% of the approved credit on a contingency basis. You pay nothing upfront. We get paid when CRA approves your refund. Free shop floor assessment. CRA review defence included. T2 filed FREE for bookkeeping clients. <a href=\\\"https:\\/\\/gondaliyacpa.ca\\/pricing-calculation\\/\\\">Know Your Exact Fee &#8594;<\\/a>",
+   "after": "Gondaliya CPA does not prepare SR&amp;ED claims. Fees for SR&amp;ED claim preparation vary by provider; many charge a percentage of the approved credit on a contingency basis.",
+   "needs_sharad": false,
+   "note": "html widget 923549b; question kept, firm fee answer replaced."
+  },
+  {
+   "location": "Visible",
+   "section": "FAQ 7 answer",
+   "editor": "elementor",
+   "action": "replace",
+   "before": " We start data collection during the fiscal year so the claim is ready well before the deadline.",
+   "after": " Starting data collection during the fiscal year keeps the claim ready well before the deadline.",
+   "needs_sharad": false,
+   "note": "html widget 923549b"
+  },
+  {
+   "location": "Visible",
+   "section": "FAQ 9 answer",
+   "editor": "elementor",
+   "action": "replace",
+   "before": " We prepare your engineering team, provide a review preparation guide with expected questions, attend the meeting with you and negotiate any proposed reductions. If CRA reduces the claim unreasonably, we file a formal objection.",
+   "after": " The engineering team should be prepared for the expected questions, and any proposed reductions can be discussed with the reviewer. If CRA reduces the claim unreasonably, a formal objection can be filed.",
+   "needs_sharad": false,
+   "note": "html widget 923549b"
+  },
+  {
+   "location": "Visible",
+   "section": "FAQ 10 answer",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "we can file claims for the current year and the prior year",
+   "after": "claims can be filed for the current year and the prior year",
+   "needs_sharad": false,
+   "note": "html widget 923549b"
+  },
+  {
+   "location": "Button",
+   "section": "bottom CTA band",
+   "editor": "elementor",
+   "action": "delete",
+   "before": "<!-- CTA BOTTOM -->\\r\\n<div class=\\\"sm-cta-bottom\\\"><h2>Your Factory Floor Is an R&amp;D Lab. Get Paid for It.<\\/h2><p>Gondaliya CPA files SR&amp;ED claims for manufacturing companies across Canada. 35% refundable credit. Materials consumed included. Contingency pricing. CRA defence included. 1450+ five-star reviews.<\\/p><div class=\\\"sm-cta-feats\\\"><div class=\\\"sm-cta-feat\\\">Licensed CPA Ontario<\\/div><div class=\\\"sm-cta-feat\\\">1450+ Five-Star Reviews<\\/div><div class=\\\"sm-cta-feat\\\">35% Refundable Credit<\\/div><div class=\\\"sm-cta-feat\\\">Materials Consumed Included<\\/div><\\/div><a href=\\\"https:\\/\\/gondaliyacpa.ca\\/consultation\\/\\\" class=\\\"sm-btn-blue\\\" style=\\\"margin:0 6px;\\\">Free SR&amp;ED Assessment<\\/a><a href=\\\"https:\\/\\/gondaliyacpa.ca\\/manufacturing\\/\\\" style=\\\"margin:0 6px;background:transparent;color:#fff !important;padding:11px 24px;border-radius:6px;font-weight:700;font-size:0.95em;text-transform:uppercase;border:2px solid rgba(255,255,255,0.4);text-decoration:none !important;display:inline-block;line-height:1.4;text-align:center;\\\">Manufacturing Accounting<\\/a><\\/div>\\r\\n\\r\\n",
+   "after": "",
+   "needs_sharad": false,
+   "note": "html widget 923549b; \"Get Paid for It\" band with firm claim line, 1450+ reviews badges, /consultation/ button and Manufacturing Accounting button."
+  },
+  {
+   "location": "JSON-LD",
+   "section": "FAQPage JSON-LD Q1",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "likely yes. Free shop floor assessment.",
+   "after": "likely yes.",
+   "needs_sharad": false,
+   "note": "html widget 923549b"
+  },
+  {
+   "location": "JSON-LD",
+   "section": "FAQPage JSON-LD Q6 (filing cost)",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "15-20% contingency on approved credit. Nothing upfront. Free assessment. CRA defence included. T2 filed free.",
+   "after": "Gondaliya CPA does not prepare SR&ED claims. Fees vary by provider; many charge a percentage of the approved credit on a contingency basis.",
+   "needs_sharad": false,
+   "note": "html widget 923549b; mirrors visible FAQ 6."
+  },
+  {
+   "location": "JSON-LD",
+   "section": "FAQPage JSON-LD Q7",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "We start data collection during the fiscal year.",
+   "after": "Start data collection during the fiscal year.",
+   "needs_sharad": false,
+   "note": "html widget 923549b"
+  },
+  {
+   "location": "JSON-LD",
+   "section": "FAQPage JSON-LD Q9",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "We prepare team, attend meeting, negotiate reductions, file objection if needed.",
+   "after": "Prepare the team; a formal objection can be filed if needed.",
+   "needs_sharad": false,
+   "note": "html widget 923549b"
+  },
+  {
+   "location": "JSON-LD",
+   "section": "AccountingService schema",
+   "editor": "elementor",
+   "action": "delete",
+   "before": "<script type=\\\"application\\/ld+json\\\">{\\\"@context\\\":\\\"https:\\/\\/schema.org\\\",\\\"@type\\\":\\\"AccountingService\\\",\\\"name\\\":\\\"Gondaliya CPA, SR&ED Claims for Manufacturing Companies\\\",\\\"url\\\":\\\"https:\\/\\/gondaliyacpa.ca\\/sred-claims-for-manufacturing-companies\\/\\\",\\\"telephone\\\":\\\"+16472129559\\\",\\\"serviceType\\\":\\\"SR&ED Tax Credit Claims for Manufacturing\\\",\\\"priceRange\\\":\\\"$$\\\"}<\\/script>",
+   "after": "",
+   "needs_sharad": false,
+   "note": "html widget 923549b; Service schema with the firm providing SR&ED claims. FAQPage schema stays."
+  }
+ ],
+ "page_note": "Elementor page; whole page is one html widget (923549b) holding the H1, all sections, FAQ and JSON-LD. content.raw is a fallback copy, not audited. H1 \"SR&ED Claims for Manufacturing Companies\" kept. No Rank Math title/description stored. Kept as informational: all qualification, expenditure, worked-example, materials, narrative and mistakes tables, typical claim ranges, city links, other-service links to /manufacturing/."
+}

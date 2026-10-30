@@ -1,0 +1,30 @@
+{
+ "id": 44704,
+ "url": "https://gondaliyacpa.ca/construction-tax-write-offs/",
+ "title": "Construction Tax Write-Offs",
+ "type": "page",
+ "elementor": true,
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "FAQ \"Can I claim SR&ED on construction work?\"",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "See our <a href=\\\"https:\\/\\/gondaliyacpa.ca\\/sred-tax-credit-claims\\/\\\">SR&ED tax credit claims<\\/a>.",
+   "after": "See <a href=\\\"https:\\/\\/gondaliyacpa.ca\\/sred-tax-credit-claims\\/\\\">how SR&ED tax credits work<\\/a>.",
+   "needs_sharad": false,
+   "note": "Anchor offers the service; neutral anchor, URL kept"
+  },
+  {
+   "location": "JSON-LD",
+   "section": "FAQPage answer (same FAQ)",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "See our SR&ED tax credit claims.\\\"}}",
+   "after": "See how SR&ED tax credits work.\\\"}}",
+   "needs_sharad": false,
+   "note": ""
+  }
+ ],
+ "page_note": "Construction tax write-offs page. FAQ on SR&ED for construction is informational and stays; only the \"See our SR&ED tax credit claims\" link anchor (visible + FAQPage JSON-LD) is neutralized."
+}

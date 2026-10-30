@@ -1,0 +1,140 @@
+{
+ "id": 57752,
+ "url": "https://gondaliyacpa.ca/accountant-for-digital-platforms/",
+ "title": "Accounting and Tax Services for Digital Platforms",
+ "type": "page",
+ "elementor": false,
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "CRA and GST/HST obligations card",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "under ITA section 125 against the $500,000 limit, the SR&amp;ED pool under ITA section 37 and credits under ITA section 127, GST/HST registration",
+   "after": "under ITA section 125 against the $500,000 limit, GST/HST registration",
+   "needs_sharad": false,
+   "note": "Removes SR&ED from the list of what we manage."
+  },
+  {
+   "location": "Visible",
+   "section": "Services grid card (SR&ED on Platform Engineering)",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "&#128300;</div><h3><a href=\"https://gondaliyacpa.ca/software-sred-tax-credit-calculator/\">SR&amp;ED on Platform Engineering</a></h3><p>The ITA section 37 pool and ITA section 127 credits for the work where known techniques ran out, kept apart from ordinary feature development.</p>",
+   "after": "&#128300;</div><h3><a href=\"https://gondaliyacpa.ca/software-sred-tax-credit-calculator/\">How SR&amp;ED Credits Work for Platform Engineering</a></h3><p>The ITA section 37 pool and ITA section 127 credits apply only to the work where known techniques ran out, not to ordinary feature development.</p>",
+   "needs_sharad": false,
+   "note": "SR&ED listed as a service card with link; neutral anchor, URL kept. Alternatively remove card from services grid manually."
+  },
+  {
+   "location": "Visible",
+   "section": "Services grid card (CRA Audit Resolution)",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "remittance examinations, Part XX questions and SR&amp;ED technical reviews, from the first letter.",
+   "after": "remittance examinations and Part XX questions, from the first letter.",
+   "needs_sharad": false,
+   "note": "Drops SR&ED technical review support from offered services."
+  },
+  {
+   "location": "Visible",
+   "section": "Tailored services expanded, item 10 heading",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "sred-tax-credit-calculator/\">SR&amp;ED on Platform Engineering</a></h3></div>",
+   "after": "sred-tax-credit-calculator/\">How SR&amp;ED Credits Work for Platform Engineering</a></h3></div>",
+   "needs_sharad": false,
+   "note": "Neutral anchor in the services list; URL kept."
+  },
+  {
+   "location": "Visible",
+   "section": "Tailored services expanded, item 10 last bullet",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "<li>So we set up the project record while the work happens &mdash; what was uncertain, what was tried, what failed &mdash; and you can model the arithmetic with our calculator before we even speak.</li>",
+   "after": "<li>The project record is best kept while the work happens &mdash; what was uncertain, what was tried, what failed &mdash; and you can model the arithmetic with the calculator.</li>",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Tailored services expanded, CRA disputes bullet",
+   "editor": "post_content",
+   "action": "delete",
+   "before": "<li>When an SR&amp;ED claim goes to technical review, we produce the contemporaneous project records and handle the correspondence, including the part where some of the claim was ordinary development.</li>",
+   "after": "",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Process Step 4 Annual Planning Review",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "loss carryforwards, SR&amp;ED timing, take rate reporting",
+   "after": "loss carryforwards, take rate reporting",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "FAQ: Can I claim SR&ED on building my platform? (visible)",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "We document that work while it happens, because reconstructing it afterwards reads like marketing.</div>",
+   "after": "That work is best documented while it happens, because reconstructing it afterwards reads like marketing.</div>",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "JSON-LD",
+   "section": "FAQPage: Can I claim SR&ED on building my platform?",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "We document that work while it happens, because reconstructing it afterwards reads like marketing.\"}}",
+   "after": "That work is best documented while it happens, because reconstructing it afterwards reads like marketing.\"}}",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "FAQ: What do you actually do (visible)",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "handle registration and place of supply, build the SR&amp;ED claim from contemporaneous records, set up payroll",
+   "after": "handle registration and place of supply, set up payroll",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "JSON-LD",
+   "section": "FAQPage: What do you actually do",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "handle registration and place of supply, build the SR&ED claim from contemporaneous records, set up payroll",
+   "after": "handle registration and place of supply, set up payroll",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Final CTA paragraph",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "processor reserves recovered onto the balance sheet, settlement bridged back to gross transaction value, and SR&amp;ED claimed only where the known techniques genuinely ran out.",
+   "after": "processor reserves recovered onto the balance sheet, and settlement bridged back to gross transaction value.",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "JSON-LD",
+   "section": "Service/ProfessionalService schema description",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "held funds shown as a liability, settlement reconciled to gross transaction value, and SR&ED on platform engineering. Book",
+   "after": "held funds shown as a liability, and settlement reconciled to gross transaction value. Book",
+   "needs_sharad": false,
+   "note": ""
+  }
+ ],
+ "page_note": "Industry service page offering SR&ED as part of the firm's services in several spots. Informational SR&ED explanations (item 10 bullets, FAQ eligibility text, 'we state no SR&ED rate or limit', related-industries 'SR&ED and grant interaction') stay."
+}

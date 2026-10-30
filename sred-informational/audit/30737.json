@@ -1,0 +1,60 @@
+{
+  "id": 30737,
+  "url": "https://gondaliyacpa.ca/?elementor_library=sft",
+  "title": "sft",
+  "type": "elementor_library",
+  "elementor": true,
+  "rows": [
+    {
+      "location": "Visible",
+      "section": "Service feature box \"R&D Tax Credit Optimization\"",
+      "editor": "elementor",
+      "action": "replace",
+      "before": "\"title_text\":\"R&D Tax Credit Optimization\",\"description_text\":\"Maximize tax savings by tracking eligible research and development expenses effectively.\"",
+      "after": "\"title_text\":\"R&D Expense Tracking\",\"description_text\":\"Track eligible research and development expenses effectively.\"",
+      "needs_sharad": false,
+      "note": "R&D (SR&ED) credit optimization offered as a service."
+    },
+    {
+      "location": "Visible",
+      "section": "Icon box title (service card)",
+      "editor": "elementor",
+      "action": "replace",
+      "before": "\"ekit_icon_box_title_text\":\"SR&ED Tax Credit Claims for Software Companies\",\"ekit_icon_box_badge_title\":\"EXCLUSIVE\"",
+      "after": "\"ekit_icon_box_title_text\":\"How SR&ED Tax Credits Work for Software Companies\",\"ekit_icon_box_badge_title\":\"\"",
+      "needs_sharad": false,
+      "note": "Service card offering SR&ED claims with EXCLUSIVE badge; neutral title, badge cleared, link to SR&ED page kept."
+    },
+    {
+      "location": "Visible",
+      "section": "Icon box description (service card)",
+      "editor": "elementor",
+      "action": "replace",
+      "before": "\"ekit_icon_box_description_text\":\"Maximize your R&D incentives with accurate Scientific Research & Experimental Development (SR&ED) claims.\"",
+      "after": "\"ekit_icon_box_description_text\":\"How Scientific Research & Experimental Development (SR&ED) credits support R&D spending.\"",
+      "needs_sharad": false,
+      "note": ""
+    },
+    {
+      "location": "Visible",
+      "section": "Case study card",
+      "editor": "elementor",
+      "action": "replace",
+      "before": "Implemented proper accounting and R&amp;D tax credit claims.",
+      "after": "Implemented proper accounting and R&amp;D expense tracking.",
+      "needs_sharad": true,
+      "note": "Client case study claiming the firm made R&D credit claims."
+    },
+    {
+      "location": "Visible",
+      "section": "Case study card results",
+      "editor": "elementor",
+      "action": "delete",
+      "before": "<p>\\u2705 $25K+ tax credits recovered<\\/p>",
+      "after": "",
+      "needs_sharad": true,
+      "note": "Sales proof tied to SR&ED claims."
+    }
+  ],
+  "page_note": "Elementor template 'sft' (software companies). Feature box, EXCLUSIVE SR&ED card and case study offer R&D/SR&ED claims; rewritten. Intro mentions of R&D credits and the FAQ on R&D credits are informational."
+}

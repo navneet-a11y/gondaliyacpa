@@ -1,0 +1,30 @@
+{
+ "id": 43637,
+ "url": "https://gondaliyacpa.ca/corporate-tax-deduction-strategy-guide-for-canadian-businesses/",
+ "title": "Corporate Tax Deduction Strategy Guide for Canadian Businesses Before Year-End Filing ",
+ "type": "post",
+ "elementor": false,
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "Author box (top)",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "serving Ontario corporations with corporate tax, year-end planning, bookkeeping, GST/HST, payroll, SR&amp;ED, and CRA representation.",
+   "after": "serving Ontario corporations with corporate tax, year-end planning, bookkeeping, GST/HST, payroll, and CRA representation.",
+   "needs_sharad": false,
+   "note": "Firm service list in author bio"
+  },
+  {
+   "location": "Visible",
+   "section": "About the author (bottom)",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "serving incorporated businesses across Ontario and Canada with corporate tax, year-end planning, bookkeeping, GST/HST, payroll, SR&amp;ED, and CRA representation.",
+   "after": "serving incorporated businesses across Ontario and Canada with corporate tax, year-end planning, bookkeeping, GST/HST, payroll, and CRA representation.",
+   "needs_sharad": false,
+   "note": "Firm service list in author bio"
+  }
+ ],
+ "page_note": "Corporate tax deduction guide (post). SR&ED section, FAQ and FAQPage JSON-LD are informational and stay; \"SR&ED claim support\" appears only as an example of deductible professional fees. Only the two author-bio service lists naming SR&ED among the firm's services are changed."
+}

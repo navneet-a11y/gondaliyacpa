@@ -1,0 +1,90 @@
+{
+ "id": 50184,
+ "url": "https://gondaliyacpa.ca/software-sred-tax-credit-calculator/",
+ "title": "Software and SaaS SR&amp;ED Tax Credit Calculator",
+ "type": "page",
+ "elementor": false,
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "hero, notice after intro",
+   "editor": "post_content",
+   "action": "insert_after",
+   "before": "and how many days are left to file.</p>",
+   "after": "and how many days are left to file.</p>\n    <p class=\"sred-notice\"><strong>This calculator gives an estimate for general information only. Gondaliya CPA does not prepare SR&amp;ED claims.</strong></p>",
+   "needs_sharad": false,
+   "note": "Calculator notice right after the hero intro paragraph under the H1."
+  },
+  {
+   "location": "Visible",
+   "section": "\"What This Calculator Does Not Cover\" info box",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "Our <a href=\"https://gondaliyacpa.ca/sred-tax-credit-claims/\">SR&amp;ED service</a> covers the technical narrative",
+   "after": "A full claim, explained in <a href=\"https://gondaliyacpa.ca/sred-tax-credit-claims/\">how SR&amp;ED claims work</a>, covers the technical narrative",
+   "needs_sharad": false,
+   "note": "Offer clause and service anchor replaced; URL kept."
+  },
+  {
+   "location": "Button",
+   "section": "closing CTA section",
+   "editor": "post_content",
+   "action": "delete",
+   "before": "<div class=\"svd-cta\">\n  <div class=\"svd-wrap\">\n    <h2>Two Years Are Claimable, and One of Them Is Expiring</h2>\n    <p>Send us your payroll register, your year end and a short description of what the team was building. We will assess what qualifies, prepare the technical narrative and the T661, and file with the T2.</p>\n    <div class=\"svd-cta-feats\">\n      <div class=\"svd-cta-feat\">Registered CPA Ontario &#8212; Firm ID 61330051</div>\n      <div class=\"svd-cta-feat\">Dual CPA Canada and USA</div>\n      <div class=\"svd-cta-feat\">1450+ Five-Star Reviews</div>\n      <div class=\"svd-cta-feat\">Fixed Fee, Including HST</div>\n    </div>\n    <div class=\"svd-btn-row\">\n      <a class=\"svd-btn-blue\" href=\"https://gondaliyacpa.ca/consultation/\">Book Free Consultation</a>\n      <a class=\"svd-btn-outline\" href=\"https://gondaliyacpa.ca/sred-tax-credit-claims/\">SR&amp;ED Claims</a>\n    </div>\n  </div>\n</div>\n",
+   "after": "",
+   "needs_sharad": false,
+   "note": "\"Two Years Are Claimable...\": send-us/we-will-file offer, CPA/1450+ reviews/fixed-fee badges, Book Free Consultation and SR&ED Claims buttons."
+  },
+  {
+   "location": "Button",
+   "section": "footer CTA bar",
+   "editor": "post_content",
+   "action": "delete",
+   "before": "<div class=\"svd-footer-bar\">\n  <h3>SR&amp;ED Claims for Software and SaaS Companies &#8212; Registered CPA Ontario</h3>\n  <div class=\"svd-btn-row\">\n    <a class=\"svd-btn-white\" href=\"https://gondaliyacpa.ca/consultation/\">Book Free Consultation</a>\n    <a class=\"svd-btn-white\" href=\"https://gondaliyacpa.ca/sred-tax-credit-claims/\" style=\"color:#1a2340;\">SR&amp;ED Claims</a>\n  </div>\n</div>\n",
+   "after": "",
+   "needs_sharad": false,
+   "note": "Footer bar \"SR&ED Claims for Software and SaaS Companies - Registered CPA Ontario\" with Book Free Consultation and SR&ED Claims buttons."
+  },
+  {
+   "location": "Visible",
+   "section": "calculator result \"What to Do Next\" (script)",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "it is the part we work through with the technical lead rather than something you need to estimate now.",
+   "after": "it is worked out with the technical lead rather than something you need to estimate now.",
+   "needs_sharad": false,
+   "note": "JS result message."
+  },
+  {
+   "location": "Visible",
+   "section": "calculator result \"What to Do Next\" (script)",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "Send us the payroll register and a short description of what the team built, and we will assess what remains claimable before another year runs out.",
+   "after": "Gather the payroll register and a short description of what the team built, and assess what remains claimable before another year runs out.",
+   "needs_sharad": false,
+   "note": "JS result message (expired year)."
+  },
+  {
+   "location": "Visible",
+   "section": "calculator result \"What to Do Next\" (script)",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "Please send us the payroll register and your repository access this week,",
+   "after": "Please gather the payroll register and repository records this week,",
+   "needs_sharad": false,
+   "note": "JS result message (under 60 days)."
+  },
+  {
+   "location": "Visible",
+   "section": "calculator result \"What to Do Next\" (script)",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "\"Please send us the payroll register, your year end and a short description of what the team was building. We will assess what qualifies, prepare the narrative and the T661, and file it with the T2 for \"",
+   "after": "\"Gather the payroll register, your year end and a short description of what the team was building, then assess what qualifies, prepare the narrative and the T661, and file it with the T2 for \"",
+   "needs_sharad": false,
+   "note": "JS default result message offered the service; the amount concatenation after it stays."
+  }
+ ],
+ "page_note": "Non-Elementor page (post_content is a custom HTML calculator). H1 kept. No Rank Math title/description stored. Calculator, disclaimer, guide sections, FAQ and FAQPage JSON-LD are informational and stay; no Service schema. Related card \"SR&ED Tax Credit Claims\" (page name) to the dedicated page stays."
+}

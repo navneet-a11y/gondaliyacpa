@@ -1,0 +1,80 @@
+{
+ "id": 53499,
+ "url": "https://gondaliyacpa.ca/digital-product-business-taxes-canada/",
+ "title": "The Ultimate Guide to Digital Product Business Taxes and Accounting in Canada",
+ "type": "post",
+ "elementor": false,
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "What you get paragraph",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "available-for-use dates, an SR&amp;ED summary where one applies, compiled financial statements",
+   "after": "available-for-use dates, compiled financial statements",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Our Actual Experience callout",
+   "editor": "post_content",
+   "action": "delete",
+   "before": " The second year was filed with eight weeks to spare.",
+   "after": "",
+   "needs_sharad": false,
+   "note": "Removes the clause where the firm filed the SR&ED claim; the deadline lesson stays."
+  },
+  {
+   "location": "Visible",
+   "section": "Why Trust Gondaliya CPA list",
+   "editor": "post_content",
+   "action": "delete",
+   "before": "<li>SR&amp;ED scheduled from the year-end, because the 18-month deadline cannot be fixed later.</li>\n",
+   "after": "",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Planning quiz result list (inline JS)",
+   "editor": "post_content",
+   "action": "delete",
+   "before": "if(rv('p-c')===0) items.push('An SR&ED eligibility and deadline review');\n   ",
+   "after": "",
+   "needs_sharad": false,
+   "note": "Quiz question on SR&ED then has no effect; optionally remove it manually."
+  },
+  {
+   "location": "Visible",
+   "section": "Flat-fee services paragraph",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "before the tax goes uncollected, schedule any SR&amp;ED claim from the year-end so the 18-month limitation is never the reason it fails, separate",
+   "after": "before the tax goes uncollected, separate",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Next Steps paragraph",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "the provincial registration question, the classification question and the SR&amp;ED question, which is where the money is.",
+   "after": "the provincial registration question and the classification question, which is where the money is.",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "JSON-LD",
+   "section": "Service schema description",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "capital cost allowance, SR&ED claims, non-resident withholding",
+   "after": "capital cost allowance, non-resident withholding",
+   "needs_sharad": false,
+   "note": ""
+  }
+ ],
+ "page_note": "Digital product guide. Informational SR&ED kept (18-month deadline explanations, risk table, FAQ, HowTo step, glossary, author bio)."
+}

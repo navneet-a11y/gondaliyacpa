@@ -1,0 +1,130 @@
+{
+  "id": 36421,
+  "url": "https://gondaliyacpa.ca/how-to-start-a-business-in-markham/",
+  "title": "How to Start a Business in Markham",
+  "type": "page",
+  "elementor": true,
+  "rows": [
+    {
+      "location": "Visible",
+      "section": "About intro paragraph",
+      "editor": "elementor",
+      "action": "replace",
+      "before": "multi-shareholder technology companies preparing their first SR&amp;ED claim",
+      "after": "multi-shareholder technology companies",
+      "needs_sharad": false,
+      "note": ""
+    },
+    {
+      "location": "Visible",
+      "section": "Intro checklist (our offer)",
+      "editor": "elementor",
+      "action": "delete",
+      "before": "<li>SR&amp;ED eligibility assessment &#8212; free with annual tax engagement for Markham tech businesses<\\/li>",
+      "after": "",
+      "needs_sharad": false,
+      "note": ""
+    },
+    {
+      "location": "Visible",
+      "section": "Tax section \"SR&ED Tax Credits - Markham's Most Valuable...\"",
+      "editor": "elementor",
+      "action": "delete",
+      "before": " We assess SR&amp;ED eligibility as part of every Markham technology client engagement at no additional charge.",
+      "after": "",
+      "needs_sharad": false,
+      "note": "Rest of the SR&ED explanation kept."
+    },
+    {
+      "location": "Visible",
+      "section": "\"How we help\" intro line",
+      "editor": "elementor",
+      "action": "replace",
+      "before": "to your first filed T2 with SR&amp;ED claim &#8212; a licensed CPA team",
+      "after": "to your first filed T2 &#8212; a licensed CPA team",
+      "needs_sharad": false,
+      "note": ""
+    },
+    {
+      "location": "Visible",
+      "section": "Help card \"Free Consultation\"",
+      "editor": "elementor",
+      "action": "replace",
+      "before": "structure recommendation, SR&amp;ED eligibility assessment, salary-dividend analysis",
+      "after": "structure recommendation, salary-dividend analysis",
+      "needs_sharad": false,
+      "note": ""
+    },
+    {
+      "location": "Visible",
+      "section": "Help card title \"Records, SR&ED & Support\"",
+      "editor": "elementor",
+      "action": "replace",
+      "before": "biz-help-title\\\">Records, SR&amp;ED &amp; Support",
+      "after": "biz-help-title\\\">Records &amp; Support",
+      "needs_sharad": false,
+      "note": ""
+    },
+    {
+      "location": "Visible",
+      "section": "Help card \"Records, SR&ED & Support\" description",
+      "editor": "elementor",
+      "action": "replace",
+      "before": "T2 corporate return, SR&amp;ED claim preparation, T1134",
+      "after": "T2 corporate return, T1134",
+      "needs_sharad": false,
+      "note": ""
+    },
+    {
+      "location": "Visible",
+      "section": "\"Why choose\" intro",
+      "editor": "elementor",
+      "action": "replace",
+      "before": "trust for startup, SR&amp;ED and ongoing tax planning",
+      "after": "trust for startup and ongoing tax planning",
+      "needs_sharad": false,
+      "note": ""
+    },
+    {
+      "location": "Visible",
+      "section": "\"Why choose\" card 2 \"SR&ED and Tech Tax Expertise\"",
+      "editor": "manual",
+      "action": "manual",
+      "before": "SR&ED and Tech Tax Expertise - We assess SR&ED eligibility for every Markham technology client, prepare T661 claims with supporting technical narratives, and coordinate CRA SR&ED pre-claim reviews to maximise acceptance rates.",
+      "after": "",
+      "needs_sharad": false,
+      "note": "Why-choose-us card (div.biz-why-card #2) inside the HTML widget is entirely an SR&ED offer: delete the card and renumber cards 3+ (or retitle \"Tech Tax Expertise\" with non-SR&ED text)."
+    },
+    {
+      "location": "Visible",
+      "section": "FAQ \"Does my Markham technology business qualify for SR&ED credits?\" (visible)",
+      "editor": "elementor",
+      "action": "delete",
+      "before": " Gondaliya CPA assesses SR&amp;ED eligibility for every Markham technology client at no additional charge as part of the annual engagement.",
+      "after": "",
+      "needs_sharad": false,
+      "note": ""
+    },
+    {
+      "location": "JSON-LD",
+      "section": "FAQPage same question",
+      "editor": "elementor",
+      "action": "delete",
+      "before": " Gondaliya CPA assesses SR&ED eligibility for every Markham technology client at no additional charge.",
+      "after": "",
+      "needs_sharad": false,
+      "note": ""
+    },
+    {
+      "location": "Visible",
+      "section": "Bottom CTA",
+      "editor": "elementor",
+      "action": "delete",
+      "before": " SR&amp;ED eligibility assessment included.",
+      "after": "",
+      "needs_sharad": false,
+      "note": ""
+    }
+  ],
+  "page_note": "How to start a business in Markham guide (Elementor). Extensive informational SR&ED content kept (structure comparisons, CRA card, documentation warning, salary vs dividend interaction, FAQ explanation, meta description). Offer lines (free eligibility assessment, claim preparation, why-choose card, CTA) removed/rewritten. SR&ED project-tracking setup in bookkeeping kept as a bookkeeping item."
+}

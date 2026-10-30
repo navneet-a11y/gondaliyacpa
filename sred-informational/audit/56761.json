@@ -1,0 +1,250 @@
+{
+ "id": 56761,
+ "url": "https://gondaliyacpa.ca/data-analytics-company-tax-credits-canada/",
+ "title": "Data Analytics Company Tax Credits in Canada: SR&ED, R&D & Technology Incentives",
+ "type": "post",
+ "elementor": false,
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "intro paragraph",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "Gondaliya CPA helps <a class=\"wpil_keyword_link\" href=\"https://gondaliyacpa.ca/accountant-for-data-analytics-companies/\"",
+   "after": "In practice, <a class=\"wpil_keyword_link\" href=\"https://gondaliyacpa.ca/accountant-for-data-analytics-companies/\"",
+   "needs_sharad": false,
+   "note": "Drops \"Gondaliya CPA helps\"; sentence now reads \"In practice, data analytics firms claim eligible expenditures ...\""
+  },
+  {
+   "location": "Visible",
+   "section": "intro paragraph",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "capital equipment &mdash; while handling corporate tax filing and the provincial",
+   "after": "capital equipment &mdash; through the corporate tax return, together with the provincial",
+   "needs_sharad": false,
+   "note": "Second half of the same intro sentence; removes the firm handling the claim"
+  },
+  {
+   "location": "Visible",
+   "section": "after intro paragraph",
+   "editor": "post_content",
+   "action": "insert_after",
+   "before": "claimed alongside the federal return.</p>",
+   "after": "claimed alongside the federal return.</p>\n<p class=\"sred-notice\"><strong>Gondaliya CPA does not prepare SR&amp;ED claims. This page explains how the SR&amp;ED program works, for general information only.</strong></p>",
+   "needs_sharad": false,
+   "note": "Informational notice per RULES.md"
+  },
+  {
+   "location": "Button",
+   "section": "mid-article CTA banner after \"Our Actual Experience\" (deadline)",
+   "editor": "post_content",
+   "action": "delete",
+   "before": "<div class=\"gcpa-banner\">\n<div class=\"bt\">Running analytics development and want the eligibility, the expenditure limit and the documentation reviewed before your filing window closes? The first conversation is free.</div>\n<div class=\"bb\"><a class=\"solid\" href=\"https://gondaliyacpa.ca/consultation/\">Book Free Consultation</a><a href=\"mailto:info@gondaliyacpa.ca\">info@gondaliyacpa.ca</a><a href=\"tel:+16472129559\">647-212-9559</a></div>\n</div>\n",
+   "after": "",
+   "needs_sharad": false,
+   "note": "Banner with Book Free Consultation / mailto / tel buttons"
+  },
+  {
+   "location": "Visible",
+   "section": "Claiming process, after route table",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "the T2 with its SR&amp;ED schedules, and",
+   "after": "the T2 corporate return, and",
+   "needs_sharad": false,
+   "note": "Removes SR&ED schedule preparation from list of firm services"
+  },
+  {
+   "location": "Visible",
+   "section": "Data Analytics SR&ED Check widget (result)",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "<b>Points to raise with us:</b>",
+   "after": "<b>Points to raise:</b>",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Data Analytics SR&ED Check widget (result)",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "<b>Worth reviewing with us:</b>",
+   "after": "<b>Worth reviewing:</b>",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Data Analytics SR&ED Check widget (result)",
+   "editor": "post_content",
+   "action": "replace",
+   "before": " the usual gaps do not apply to your business. A free review can confirm nothing is being missed.</p>",
+   "after": " the usual gaps do not apply to your business.</p>",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Button",
+   "section": "Data Analytics SR&ED Check widget (result)",
+   "editor": "post_content",
+   "action": "delete",
+   "before": "\n    <a class=\"p-cta\" href=\"https://gondaliyacpa.ca/consultation/\">Book a free consultation</a>",
+   "after": "",
+   "needs_sharad": false,
+   "note": "Book a free consultation button"
+  },
+  {
+   "location": "Visible",
+   "section": "Data Analytics SR&ED Check widget (note)",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "For a real review, please book a free consultation.</p>",
+   "after": "For a real review, please consult a licensed CPA.</p>",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Guidance section H2",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "<h2>Gondaliya CPA Support for Data Analytics Tax Credits</h2>",
+   "after": "<h2>Professional Support for Data Analytics Tax Credits</h2>",
+   "needs_sharad": true,
+   "note": "Heading offers the firm's SR&ED support; RULES keep headings, so flagged for Sharad"
+  },
+  {
+   "location": "Visible",
+   "section": "Guidance section, first paragraph",
+   "editor": "post_content",
+   "action": "replace",
+   "before": " Gondaliya CPA handles analytics company accounting and tax on a flat annual fee.</p>",
+   "after": "</p>",
+   "needs_sharad": false,
+   "note": "Last sentence of the common-mistakes paragraph; offer line next to SR&ED content"
+  },
+  {
+   "location": "Visible",
+   "section": "Guidance H5",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "Comprehensive Assistance with SR&amp;ED and R&amp;D Tax Credit Claims</h5>",
+   "after": "What a Complete SR&amp;ED and R&amp;D Tax Credit Claim Involves</h5>",
+   "needs_sharad": true,
+   "note": "Heading offers SR&ED claim assistance"
+  },
+  {
+   "location": "Visible",
+   "section": "Guidance: claim assistance paragraph",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "<p>We test each project against the three statutory criteria before anything is written up, draw the project boundary around the experimental work and its commensurate support work, and document the uncertainty, the investigation and the advancement from the records your team already generates. We separate eligible development from client-paid delivery, allocate salaries by project from time records, and model the proxy method against the traditional method rather than defaulting to one.</p>",
+   "after": "<p>A well-prepared claim tests each project against the three statutory criteria before anything is written up, draws the project boundary around the experimental work and its commensurate support work, and documents the uncertainty, the investigation and the advancement from the records the team already generates. It separates eligible development from client-paid delivery, allocates salaries by project from time records, and models the proxy method against the traditional method rather than defaulting to one.</p>",
+   "needs_sharad": false,
+   "note": "Rewritten from \"We ...\" to neutral description"
+  },
+  {
+   "location": "Visible",
+   "section": "Guidance: corporate tax filing paragraph",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "We prepare the <strong>T2</strong> with Form <strong>T661</strong> and Schedule <strong>T2SCH31</strong>, reconcile the claim to the trial balance before filing, and handle <a class=\"wpil_keyword_link\" href=\"https://gondaliyacpa.ca/gst-hst-filing/\" title=\"GST/HST Filing\">GST/HST returns</a>, <a class=\"wpil_keyword_link\" href=\"https://gondaliyacpa.ca/payroll-services/\" title=\"Payroll Services\">payroll</a> remittances, instalments and the provincial credit schedules.",
+   "after": "The <strong>T2</strong> is filed with Form <strong>T661</strong> and Schedule <strong>T2SCH31</strong>, the claim should reconcile to the trial balance before filing, and it runs alongside the <a class=\"wpil_keyword_link\" href=\"https://gondaliyacpa.ca/gst-hst-filing/\" title=\"GST/HST Filing\">GST/HST returns</a>, <a class=\"wpil_keyword_link\" href=\"https://gondaliyacpa.ca/payroll-services/\" title=\"Payroll Services\">payroll</a> remittances, instalments and the provincial credit schedules.",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Guidance: eligible expenses paragraph",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "<p>We separate the salary base from total payroll so bonuses and benefits do not inflate the proxy amount, apply the specified employee caps in Regulations 2900(7) and 2900(8), establish the Canadian portion of contractor work before applying the <strong>80%</strong> inclusion, and test cloud and subscription costs for whether they are genuinely incremental before claiming them.",
+   "after": "<p>The salary base is separated from total payroll so bonuses and benefits do not inflate the proxy amount, the specified employee caps in Regulations 2900(7) and 2900(8) apply, the Canadian portion of contractor work is established before applying the <strong>80%</strong> inclusion, and cloud and subscription costs are tested for whether they are genuinely incremental before they are claimed.",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Guidance: Contact Information and Next Steps for Claim Support (H5 + paragraph)",
+   "editor": "post_content",
+   "action": "delete",
+   "before": "<h5 style=\"color:#15355c;margin:24px 0 8px;\">Contact Information and Next Steps for Claim Support</h5>\n<p>Reach Gondaliya CPA at <strong>647-212-9559</strong> or <strong>info@gondaliyacpa.ca</strong> for a free consultation with no obligation. We serve Toronto, Etobicoke, Vaughan and Mississauga and work with analytics firms across Canada, with a one-business-day response and a flat annual fee agreed before any work begins.</p>",
+   "after": "",
+   "needs_sharad": true,
+   "note": "Pure CTA (phone, email, free consultation, flat fee); nothing informational left. Heading deleted with it; flagged because RULES keep headings"
+  },
+  {
+   "location": "Visible",
+   "section": "Key Considerations H4",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "Key Considerations When Claiming Data Analytics Tax Credits with Gondaliya CPA</h4>",
+   "after": "Key Considerations When Claiming Data Analytics Tax Credits</h4>",
+   "needs_sharad": true,
+   "note": "Heading ties the claim to the firm"
+  },
+  {
+   "location": "Visible",
+   "section": "checklist download line",
+   "editor": "post_content",
+   "action": "replace",
+   "before": " before your consultation.</p>",
+   "after": ".</p>",
+   "needs_sharad": false,
+   "note": "Keeps the checklist link, drops consultation reference"
+  },
+  {
+   "location": "Visible",
+   "section": "\"Why small businesses choose us\" image before Verdict",
+   "editor": "post_content",
+   "action": "delete",
+   "before": "<figure style=\"margin:18px 0;\"><img src=\"https://gondaliyacpa.ca/wp-content/uploads/2026/10/why-gondaliya-cpa-data-analytics.png\" alt=\"Why Canadian data analytics companies choose Gondaliya CPA\" style=\"width:100%;border-radius:12px;border:1px solid #d8e0e8;\" /><figcaption style=\"font-size:13px;color:#5a6b7b;text-align:center;padding:6px;\">Why small businesses choose us.</figcaption></figure>",
+   "after": "",
+   "needs_sharad": false,
+   "note": "Sales-proof image (why choose Gondaliya CPA) on a dedicated SR&ED URL; RULES keep images, so review"
+  },
+  {
+   "location": "Visible",
+   "section": "closing H2",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "<h2>Data Analytics Company Tax Credits Canada: How Gondaliya CPA Can Help</h2>",
+   "after": "<h2>Data Analytics Company Tax Credits Canada: Getting Ready to Claim</h2>",
+   "needs_sharad": true,
+   "note": "Heading offers the firm's help"
+  },
+  {
+   "location": "Button",
+   "section": "closing CTA box",
+   "editor": "post_content",
+   "action": "delete",
+   "before": "<div class=\"gcpa-cta\">\n<h4>Start with your project list, your time records and your last return</h4>\n<p>Gondaliya CPA tests each project against the three statutory criteria, draws the boundary around the experimental work, allocates salaries from your existing technical records, models the proxy method against the traditional method rather than defaulting, establishes the Canadian portion of contractor work, nets off client funding and grants, agrees the expenditure limit allocation across your association group, and files the T661 and Schedule 31 with a T2 that reconciles to your books &mdash; on a flat annual fee including HST with a one-business-day response. Please book a free consultation.</p>\n<div class=\"gcpa-trust\"><span>1450+ 5-star Google reviews</span><span>Registered Ontario CPA Firm since 2013</span><span>Fixed-Fee Pricing</span><span>Technology &amp; SR&amp;ED Experience</span></div>\n<div class=\"gcpa-btnrow\"><a class=\"solid\" href=\"https://gondaliyacpa.ca/consultation/\">Book Free Consultation</a><a href=\"tel:+16472129559\">647-212-9559</a><a href=\"mailto:info@gondaliyacpa.ca\">info@gondaliyacpa.ca</a></div>\n</div>\n",
+   "after": "",
+   "needs_sharad": false,
+   "note": "CTA box: offer paragraph (files T661/Schedule 31, flat fee, book consultation), trust strip (1450+ reviews, Technology & SR&ED Experience), Book/tel/mailto buttons"
+  },
+  {
+   "location": "Visible",
+   "section": "Next Steps paragraph",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "<p>Please book a free consultation with Gondaliya CPA and bring your project list with the technological problem each one addressed, your time records however they are kept, and your last filed return. Those three settle the eligibility question, the quantum and the expenditure limit, which is where almost all of the value and almost all of the risk sits. If any of the work was client-funded, bring the engagement letters too. You will get a flat annual fee including HST before any work begins. We serve Toronto, Mississauga, Vaughan, Brampton, Etobicoke, Scarborough, Ottawa and the rest of Ontario, and work with analytics and technology firms across Canada.",
+   "after": "<p>Before preparing a claim, gather your project list with the technological problem each one addressed, your time records however they are kept, and your last filed return. Those three settle the eligibility question, the quantum and the expenditure limit, which is where almost all of the value and almost all of the risk sits. If any of the work was client-funded, gather the engagement letters too.",
+   "needs_sharad": false,
+   "note": "Keeps the preparation checklist; drops consultation, fee and service-area lines"
+  },
+  {
+   "location": "JSON-LD",
+   "section": "Service schema node",
+   "editor": "post_content",
+   "action": "delete",
+   "before": ",\n    { \"@type\": \"Service\",\n      \"name\": \"SR&ED and Technology Tax Credit Services for Data Analytics Companies\",\n      \"serviceType\": \"SR&ED eligibility assessment against the three statutory criteria, project boundary definition, salary and contractor allocation, proxy versus traditional method modelling, expenditure limit allocation across associated corporations, assistance and contract payment reductions, T661 and Schedule 31 preparation, provincial R&D credit claims, compilation engagements, T2 and GST/HST filing and CRA representation for Canadian data analytics companies.\",\n      \"provider\": { \"@id\": \"https://gondaliyacpa.ca/#organization\" }, \"areaServed\": \"CA\",\n      \"audience\": { \"@type\": \"Audience\", \"audienceType\": \"Incorporated data analytics, machine learning and technology companies across Toronto, Ontario and Canada\" } }",
+   "after": "",
+   "needs_sharad": false,
+   "note": "Service node with provider = organization for SR&ED claim preparation; removed including its leading comma"
+  }
+ ],
+ "page_note": "Non-Elementor post. Author boxes, \"Our Actual Experience\" cases, route comparison table and FAQ (visible + JSON-LD) are informational and kept. Rank Math title/description are informational; no change."
+}

@@ -1,0 +1,110 @@
+{
+  "id": 46124,
+  "url": "https://gondaliyacpa.ca/the-ultimate-guide-to-accounting-and-tax-services-for-startups-in-canada/",
+  "title": "The Ultimate Guide to Accounting and Tax Services for Startups in Canada",
+  "type": "post",
+  "elementor": false,
+  "rows": [
+    {
+      "location": "Visible",
+      "section": "Author intro (top)",
+      "editor": "post_content",
+      "action": "replace",
+      "before": "providing startup accounting, corporate tax, SR&amp;ED support, GST/HST",
+      "after": "providing startup accounting, corporate tax, GST/HST",
+      "needs_sharad": false,
+      "note": "Says the firm's team provides SR&ED support."
+    },
+    {
+      "location": "Visible",
+      "section": "H5 \"Specialized Services: SR&ED Claims, Audit Support, And Tax Cleanup\"",
+      "editor": "post_content",
+      "action": "replace",
+      "before": "Specialized Services: SR&amp;ED Claims, Audit Support, And Tax Cleanup",
+      "after": "SR&amp;ED Claims, Audit Support, And Tax Cleanup",
+      "needs_sharad": false,
+      "note": "H5 (not H1) framing SR&ED claims as a firm service; body text under it is general and kept."
+    },
+    {
+      "location": "Visible",
+      "section": "Testimonials intro",
+      "editor": "post_content",
+      "action": "replace",
+      "before": " while maximizing credits such as SR&amp;ED refunds during product development phases",
+      "after": "",
+      "needs_sharad": false,
+      "note": "Sales proof tying firm testimonials to SR&ED refunds; rest of sentence kept."
+    },
+    {
+      "location": "Visible",
+      "section": "Customized engagement section",
+      "editor": "post_content",
+      "action": "replace",
+      "before": "For example, tech startups may need help with SR&amp;ED claims.",
+      "after": "For example, tech startups may have SR&amp;ED-eligible work.",
+      "needs_sharad": false,
+      "note": ""
+    },
+    {
+      "location": "Visible",
+      "section": "Comparison table DIY vs Bookkeeper vs CPA Firm (e.g., Gondaliya CPA)",
+      "editor": "post_content",
+      "action": "replace",
+      "before": "<tr><td>SR&amp;ED &amp; Credits</td><td>Often Missed</td>",
+      "after": "<tr><td>Tax Credits</td><td>Often Missed</td>",
+      "needs_sharad": false,
+      "note": "Row claimed Gondaliya CPA gives \"Full Maximization\" of SR&ED."
+    },
+    {
+      "location": "Visible",
+      "section": "\"How to work with Gondaliya CPA\" steps table - Ongoing Advisory",
+      "editor": "post_content",
+      "action": "replace",
+      "before": "Support on audits, SR&amp;ED claims &amp; cash flow",
+      "after": "Support on audits &amp; cash flow",
+      "needs_sharad": false,
+      "note": ""
+    },
+    {
+      "location": "Visible",
+      "section": "\"What we handle\" paragraph",
+      "editor": "post_content",
+      "action": "replace",
+      "before": "compilation statements under CSRS 4200, SR&amp;ED claim support, and the T2 filing",
+      "after": "compilation statements under CSRS 4200, and the T2 filing",
+      "needs_sharad": false,
+      "note": ""
+    },
+    {
+      "location": "Visible",
+      "section": "Interactive checker (script, list \"Worth reviewing with us\")",
+      "editor": "post_content",
+      "action": "replace",
+      "before": "items.push('SR and ED eligibility, documented while the work happens');",
+      "after": "items.push('SR and ED eligibility, documented while the work happens (Gondaliya CPA does not prepare SR and ED claims)');",
+      "needs_sharad": false,
+      "note": "Checker lists SR&ED under \"Worth reviewing with us\"; alternative is to drop this item."
+    },
+    {
+      "location": "Visible",
+      "section": "Author box (Sharad bio, bottom)",
+      "editor": "post_content",
+      "action": "replace",
+      "before": "payroll, GST/HST, SR&amp;ED support, and CRA representation",
+      "after": "payroll, GST/HST, and CRA representation",
+      "needs_sharad": false,
+      "note": ""
+    },
+    {
+      "location": "JSON-LD",
+      "section": "Service schema serviceType",
+      "editor": "post_content",
+      "action": "replace",
+      "before": "incorporation support, SR and ED claims and CRA representation",
+      "after": "incorporation support and CRA representation",
+      "needs_sharad": false,
+      "note": ""
+    }
+  ],
+  "page_note": "Startup accounting guide post. Many informational SR&ED mentions kept (rates, FAQ how to claim, glossary, general 'accounting pros help claim credits'). Offer lines rewritten: author intro/bio, 'Specialized Services' H5, testimonials sentence, engagement example, comparison row, steps table, what-we-handle, checker item, Service schema."
+}

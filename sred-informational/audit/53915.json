@@ -1,0 +1,40 @@
+{
+ "id": 53915,
+ "url": "https://gondaliyacpa.ca/manufacturing-processing-deduction-calculator/",
+ "title": "Manufacturing and Processing Profits Deduction Calculator",
+ "type": "page",
+ "elementor": false,
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "Info box under calculator (manufacturing accounting service)",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "and claiming the deduction alongside the investment credit and any SR&amp;ED in the same year.</p>",
+   "after": "and claiming the deduction alongside the investment credit in the same year.</p>",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Final CTA paragraph",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "and claim the deduction alongside the investment credit and any SR&amp;ED in the same year.</p>",
+   "after": "and claim the deduction alongside the investment credit in the same year.</p>",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Calculator result message (inline JS)",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "and check the investment credit and SR&ED at the same time.",
+   "after": "and check the investment credit at the same time.",
+   "needs_sharad": false,
+   "note": ""
+  }
+ ],
+ "page_note": "M&P deduction calculator. Related-card link \"SR&ED for Ontario CCPCs\" to the SR&ED calculator is informational and kept."
+}

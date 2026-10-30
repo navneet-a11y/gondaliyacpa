@@ -1,0 +1,90 @@
+{
+ "id": 52814,
+ "url": "https://gondaliyacpa.ca/sred-tax-credit-calculator/",
+ "title": "SR&ED Refundable Tax Credit Calculator for Ontario CCPCs",
+ "type": "page",
+ "elementor": false,
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "hero, notice after intro",
+   "editor": "post_content",
+   "action": "insert_after",
+   "before": "and how long is left to file.</p>",
+   "after": "and how long is left to file.</p>\n    <p class=\"sred-notice\"><strong>This calculator gives an estimate for general information only. Gondaliya CPA does not prepare SR&amp;ED claims.</strong></p>",
+   "needs_sharad": false,
+   "note": "Calculator notice right after the hero intro paragraph under the H1."
+  },
+  {
+   "location": "Visible",
+   "section": "\"What This Calculator Does Not Cover\" info box",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "Our <a href=\"https://gondaliyacpa.ca/sred-tax-credit-claims/\">SR&amp;ED claim service</a> covers identifying",
+   "after": "A full claim, explained in <a href=\"https://gondaliyacpa.ca/sred-tax-credit-claims/\">how SR&amp;ED claims work</a>, involves identifying",
+   "needs_sharad": false,
+   "note": "Offer clause and service anchor replaced; URL kept."
+  },
+  {
+   "location": "Visible",
+   "section": "Related cards",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "<span class=\"svd-rel-t\">SR&amp;ED Claim Service</span>",
+   "after": "<span class=\"svd-rel-t\">How SR&amp;ED Claims Work</span>",
+   "needs_sharad": false,
+   "note": "Card anchor offered the service; URL to /sred-tax-credit-claims/ kept."
+  },
+  {
+   "location": "Button",
+   "section": "Related cards",
+   "editor": "post_content",
+   "action": "delete",
+   "before": "<a class=\"svd-rel-card\" href=\"https://gondaliyacpa.ca/consultation/\"><span class=\"svd-rel-t\">Book a Consultation</span><span class=\"svd-rel-d\">Tell us what you tried and failed at.</span></a>",
+   "after": "",
+   "needs_sharad": false,
+   "note": "/consultation/ card."
+  },
+  {
+   "location": "Button",
+   "section": "closing CTA section",
+   "editor": "post_content",
+   "action": "delete",
+   "before": "<div class=\"svd-cta\">\n  <div class=\"svd-wrap\">\n    <h2>Eighteen Months Is Less Time Than It Sounds</h2>\n    <p>Tell us what the shop tried to do that it had not done before, what went wrong, and roughly what it cost in time and material. We will tell you whether it qualifies, build the pool, choose the overhead method that serves you and file before the deadline rather than after it.</p>\n    <div class=\"svd-cta-feats\">\n      <div class=\"svd-cta-feat\">Registered CPA Ontario &#8212; Firm ID 61330051</div>\n      <div class=\"svd-cta-feat\">Dual CPA Canada and USA</div>\n      <div class=\"svd-cta-feat\">1450+ Five-Star Reviews</div>\n      <div class=\"svd-cta-feat\">Fixed Fee, Including HST</div>\n    </div>\n    <div class=\"svd-btn-row\">\n      <a class=\"svd-btn-blue\" href=\"https://gondaliyacpa.ca/consultation/\">Book Free Consultation</a>\n      <a class=\"svd-btn-outline\" href=\"https://gondaliyacpa.ca/sred-tax-credit-claims/\">SR&amp;ED Claim Service</a>\n    </div>\n  </div>\n</div>\n",
+   "after": "",
+   "needs_sharad": false,
+   "note": "\"Eighteen Months Is Less Time Than It Sounds\": we-will-file offer, CPA/1450+ reviews/fixed-fee badges, Book Free Consultation and SR&ED Claim Service buttons."
+  },
+  {
+   "location": "Button",
+   "section": "footer CTA bar",
+   "editor": "post_content",
+   "action": "delete",
+   "before": "<div class=\"svd-footer-bar\">\n  <h3>SR&amp;ED Claims, Ontario Innovation Credits and T2 Filing &#8212; Registered CPA Ontario</h3>\n  <div class=\"svd-btn-row\">\n    <a class=\"svd-btn-white\" href=\"https://gondaliyacpa.ca/consultation/\">Book Free Consultation</a>\n    <a class=\"svd-btn-white\" href=\"https://gondaliyacpa.ca/sred-tax-credit-claims/\" style=\"color:#1a2340;\">SR&amp;ED Claim Service</a>\n  </div>\n</div>\n",
+   "after": "",
+   "needs_sharad": false,
+   "note": "Footer bar \"SR&ED Claims, Ontario Innovation Credits and T2 Filing - Registered CPA Ontario\" with Book Free Consultation and SR&ED Claim Service buttons."
+  },
+  {
+   "location": "Visible",
+   "section": "calculator result \"What to Do Next\" (script)",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "\"Please send us what you have now rather than assembling it first. With \"",
+   "after": "\"Please start gathering what you have now rather than assembling it all first. With \"",
+   "needs_sharad": false,
+   "note": "JS message shown in results when under 3 months remain."
+  },
+  {
+   "location": "Visible",
+   "section": "calculator result \"What to Do Next\" (script)",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "\"Send us a description of what the shop tried to do, what went wrong and roughly what it cost in time and material. We will confirm what qualifies, calculate both overhead methods rather than defaulting to the proxy, and file well inside the deadline.\"",
+   "after": "\"Write down what the shop tried to do, what went wrong and roughly what it cost in time and material. Confirm what qualifies, calculate both overhead methods rather than defaulting to the proxy, and file well inside the deadline.\"",
+   "needs_sharad": false,
+   "note": "JS default result message offered the service."
+  }
+ ],
+ "page_note": "Non-Elementor page (post_content is a custom HTML calculator). H1 kept. No Rank Math title/description stored. Calculator, disclaimer, guide sections, FAQ and FAQPage JSON-LD are informational and stay; no Service schema present. Related card to /sred-for-manufacturing-companies/ and the dedicated SR&ED page link stay."
+}

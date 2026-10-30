@@ -1,0 +1,390 @@
+{
+ "id": 42168,
+ "url": "https://gondaliyacpa.ca/corporate-tax-filing-manufacturing-companies/",
+ "title": "Corporate Tax Filing Manufacturing Companies",
+ "type": "page",
+ "elementor": true,
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "Hero subheading",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "T2 returns, SR&amp;ED tax credits, CCA on machinery",
+   "after": "T2 returns, CCA on machinery",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Hero badge \"Actively accepting\"",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "Corporate tax, SR&amp;ED, inventory, payroll",
+   "after": "Corporate tax, inventory, payroll",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Hero badge \"Manufacturing Specialists\"",
+   "editor": "elementor",
+   "action": "replace",
+   "before": ">SR&amp;ED, CCA Class 53, inventory costing<",
+   "after": ">CCA Class 53, inventory costing<",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Intro paragraph",
+   "editor": "elementor",
+   "action": "replace",
+   "before": " Most manufacturers we onboard have never filed an SR&amp;ED claim because their previous accountant did not understand manufacturing processes well enough to identify eligible work.",
+   "after": "",
+   "needs_sharad": false,
+   "note": "SR&ED program explanation and H2 stay; sales sentence dropped"
+  },
+  {
+   "location": "Visible",
+   "section": "Intro paragraph 2",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "T2 filing, SR&amp;ED claims, CCA on machinery",
+   "after": "T2 filing, CCA on machinery",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Services grid card \"SR&ED Tax Credits\"",
+   "editor": "elementor",
+   "action": "delete",
+   "before": "<div class=\\\"mf-svc\\\"><div class=\\\"mf-svc-icon\\\">&#128300;<\\/div><h3>SR&amp;ED Tax Credits<\\/h3><p>Identify eligible R&amp;D. Prepare technical narratives. File T661. Recover up to 43% of qualifying costs.<\\/p><\\/div>\\r\\n",
+   "after": "",
+   "needs_sharad": false,
+   "note": "Service card: identify, prepare narratives, file T661"
+  },
+  {
+   "location": "Visible",
+   "section": "Expertise item 3 heading",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "<h3>SR&amp;ED Tax Credit Identification and Filing<\\/h3>",
+   "after": "<h3>SR&amp;ED Tax Credits<\\/h3>",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Expertise item 3 bullets",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "Qualifying activities identified: process improvement",
+   "after": "Qualifying activities: process improvement",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Expertise item 3 bullets",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "Eligible expenditures calculated: labour",
+   "after": "Eligible expenditures: labour",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Expertise item 3 bullets",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "Technical narrative prepared describing the technological uncertainty",
+   "after": "A technical narrative describes the technological uncertainty",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Expertise item 3 bullets",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "CRA SR&amp;ED review support if the claim is selected for audit. <a href=\\\"https:\\/\\/gondaliyacpa.ca\\/sred-tax-credit-claims\\/\\\">SR&amp;ED Services &#8594;<\\/a>",
+   "after": "CRA may select an SR&amp;ED claim for review. <a href=\\\"https:\\/\\/gondaliyacpa.ca\\/sred-tax-credit-claims\\/\\\">How SR&amp;ED works &#8594;<\\/a>",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Case card \"Plastics Manufacturer, Mississauga\"",
+   "editor": "elementor",
+   "action": "delete",
+   "before": "<div class=\\\"mf-case-card\\\"><h3>Plastics Manufacturer, Mississauga ($1.2M Revenue)<\\/h3><p>Custom plastics manufacturer with 12 employees. Never filed SR&amp;ED despite ongoing mold development and material testing. We identified $180,000 in eligible expenditures across 2 years, filed T661 claims and recovered $64,800 in federal and Ontario credits. Additionally claimed CCA on $220,000 in new injection molding equipment at 50% (Class 53). Total first-year savings: $89,400. <a href=\\\"https:\\/\\/gondaliyacpa.ca\\/consultation\\/\\\">Get Started &#8594;<\\/a><\\/p><div class=\\\"mf-case-stat\\\">$64,800 SR&amp;ED recovered. $89,400 total savings in Year 1.<\\/div><\\/div>\\r\\n",
+   "after": "",
+   "needs_sharad": false,
+   "note": "Sales-proof case built on an SR&ED claim the firm filed ($64,800 recovered)"
+  },
+  {
+   "location": "Visible",
+   "section": "Case card \"Food Processor\"",
+   "editor": "elementor",
+   "action": "replace",
+   "before": ", filed SR&amp;ED on recipe development and packaging testing ($32,000 credit),",
+   "after": ",",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Case card \"Food Processor\"",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "<a href=\\\"https:\\/\\/gondaliyacpa.ca\\/sred-tax-credit-claims\\/\\\">SR&amp;ED Services &#8594;<\\/a><\\/p><div class=\\\"mf-case-stat\\\">$48,000 HST recovered. $32,000 SR&amp;ED credit. Exports zero-rated.",
+   "after": "<a href=\\\"https:\\/\\/gondaliyacpa.ca\\/sred-tax-credit-claims\\/\\\">How SR&amp;ED works &#8594;<\\/a><\\/p><div class=\\\"mf-case-stat\\\">$48,000 HST recovered. Exports zero-rated.",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Case card \"Woodworking Corp\"",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "claimed Class 53 CCA on equipment, filed SR&amp;ED on custom joinery techniques. Annual savings: $7,600. SR&amp;ED credit: $11,200.",
+   "after": "claimed Class 53 CCA on equipment. Annual savings: $7,600.",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Case card \"Woodworking Corp\"",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "$7,600 annual savings. $11,200 SR&amp;ED credit on custom techniques.",
+   "after": "$7,600 annual savings.",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "What our T2 filing includes table",
+   "editor": "elementor",
+   "action": "delete",
+   "before": "<tr><td>SR&amp;ED claim<\\/td><td>T661 prepared. Technical narrative. Financial schedules. CRA review support.<\\/td><\\/tr>\\r\\n",
+   "after": "",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "What our T2 filing includes table",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "SBD threshold, SR&amp;ED preparation.",
+   "after": "SBD threshold.",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Checklist",
+   "editor": "elementor",
+   "action": "delete",
+   "before": "<li>You have never filed an SR&amp;ED claim despite ongoing process improvements<\\/li>",
+   "after": "",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Checklist",
+   "editor": "elementor",
+   "action": "delete",
+   "before": "<li>You want fixed-fee T2 filing that includes SR&amp;ED assessment<\\/li>",
+   "after": "",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Inline CTA",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "NTR statements, CCA optimization, SR&amp;ED assessment included.",
+   "after": "NTR statements and CCA optimization included.",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Why choose - Manufacturing Specialists",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "<p>SR&amp;ED, Class 53 CCA, inventory costing",
+   "after": "<p>Class 53 CCA, inventory costing",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Why choose - \"SR&ED Experts\" card",
+   "editor": "elementor",
+   "action": "delete",
+   "before": "<div class=\\\"mf-why\\\"><div class=\\\"mf-why-icon\\\">&#128300;<\\/div><h3>SR&amp;ED Experts<\\/h3><p>Technical narratives, T661 filing, CRA review support. Up to 43% back.<\\/p><\\/div>\\r\\n",
+   "after": "",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Pricing table",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "NTR statements, GIFI, CCA, SBD, SR&amp;ED assessment",
+   "after": "NTR statements, GIFI, CCA, SBD",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Pricing table - SR&ED claim fee row",
+   "editor": "elementor",
+   "action": "delete",
+   "before": "<tr class=\\\"mf-hl\\\"><td>SR&amp;ED claim<\\/td><td>15-20% contingency + $1,000 retainer<\\/td><td>T661, technical narrative, CRA review support<\\/td><\\/tr>\\r\\n",
+   "after": "",
+   "needs_sharad": false,
+   "note": "SR&ED fee (15-20% contingency + $1,000 retainer)"
+  },
+  {
+   "location": "Visible",
+   "section": "Related industries link card \"Startups\"",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "Incorporation, first T2, SR&amp;ED setup",
+   "after": "Incorporation, first T2",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "FAQ \"What is SR&ED?\"",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "for CCPCs. <a href=\\\"https:\\/\\/gondaliyacpa.ca\\/sred-tax-credit-claims\\/\\\">SR&amp;ED Services &#8594;",
+   "after": "for CCPCs. <a href=\\\"https:\\/\\/gondaliyacpa.ca\\/sred-tax-credit-claims\\/\\\">How SR&amp;ED works &#8594;",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "FAQ \"How does SR&ED filing work?\"",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "supporting documentation. We handle the entire process.",
+   "after": "supporting documentation.",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "FAQ \"What if CRA audits my SR&ED claim?\"",
+   "editor": "elementor",
+   "action": "replace",
+   "before": " We prepare audit-ready documentation and attend the CRA review with you. Our claims are supported by detailed technical narratives and financial records.",
+   "after": "",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "FAQ \"What about government grants?\"",
+   "editor": "elementor",
+   "action": "replace",
+   "before": " We coordinate grant applications with SR&amp;ED claims to maximize the combined benefit.",
+   "after": "",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "FAQ \"What is included in the free consultation?\"",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "current tax structure, SR&amp;ED eligibility, CCA opportunities",
+   "after": "current tax structure, CCA opportunities",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "FAQ \"How do I get started?\"",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "We review your year-end, books and SR&amp;ED potential.",
+   "after": "We review your year-end and books.",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Team bio - Sharad",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "manufacturing T2 engagements, SR&amp;ED claims, CCA optimization",
+   "after": "manufacturing T2 engagements, CCA optimization",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Services accordion link",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "<li><a href=\\\"https:\\/\\/gondaliyacpa.ca\\/sred-tax-credit-claims\\/\\\">SR&amp;ED Tax Credits<\\/a><\\/li>",
+   "after": "<li><a href=\\\"https:\\/\\/gondaliyacpa.ca\\/sred-tax-credit-claims\\/\\\">How SR&amp;ED Tax Credits Work<\\/a><\\/li>",
+   "needs_sharad": false,
+   "note": "SR&ED listed among services with link; neutral anchor, URL kept"
+  },
+  {
+   "location": "Visible",
+   "section": "Final CTA text",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "<p>T2, SR&amp;ED, CCA, inventory costing",
+   "after": "<p>T2, CCA, inventory costing",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Button",
+   "section": "Final CTA button",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "background:rgba(32,135,201,0.7);\\\">SR&amp;ED Tax Credits<\\/a>",
+   "after": "background:rgba(32,135,201,0.7);\\\">How SR&amp;ED Tax Credits Work<\\/a>",
+   "needs_sharad": false,
+   "note": "Button to SR&ED page; neutral label, URL kept (or remove button)"
+  },
+  {
+   "location": "JSON-LD",
+   "section": "FAQPage \"SR&ED audit?\"",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "~20% reviewed. We attend with you.",
+   "after": "~20% reviewed.",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "JSON-LD",
+   "section": "FAQPage \"Consultation?\"",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "Review operations, SR&ED, CCA. No obligation.",
+   "after": "Review operations, CCA. No obligation.",
+   "needs_sharad": false,
+   "note": ""
+  }
+ ],
+ "page_note": "Corporate tax filing for manufacturing (Elementor). SR&ED is sold as a core service (cards, expertise item, case results, included-services and pricing tables incl. contingency fee, why-choose, FAQs, team bio, CTA). Rows strip the offer and fee items; SR&ED explainer H2/paragraph, credit-rate table, \"What qualifies\" box, informational FAQs and \"File SR&ED every year\" tip stay. Note: an HTML comment at the top of the widget holds a draft meta description mentioning SR&ED (not rendered; rank_math fields empty)."
+}

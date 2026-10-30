@@ -1,0 +1,100 @@
+{
+  "id": 46088,
+  "url": "https://gondaliyacpa.ca/how-canadian-startups-can-reduce-taxes/",
+  "title": "How Canadian Startups Can Reduce Taxes and Maximize Cash Flow With Strategic Tax Planning",
+  "type": "post",
+  "elementor": false,
+  "rows": [
+    {
+      "location": "Visible",
+      "section": "FAQ \"What is included in Gondaliya CPA's tax planning?\" (visible)",
+      "editor": "post_content",
+      "action": "replace",
+      "before": "optimized salary/dividend structures, SR&amp;ED claims assistance, quarterly review reports",
+      "after": "optimized salary/dividend structures, quarterly review reports",
+      "needs_sharad": false,
+      "note": ""
+    },
+    {
+      "location": "JSON-LD",
+      "section": "FAQPage answer, same FAQ",
+      "editor": "post_content",
+      "action": "replace",
+      "before": "optimized salary/dividend structures, SRandED claims assistance, quarterly review reports",
+      "after": "optimized salary/dividend structures, quarterly review reports",
+      "needs_sharad": false,
+      "note": ""
+    },
+    {
+      "location": "Visible",
+      "section": "Pricing FAQ (cost of startup tax planning)",
+      "editor": "post_content",
+      "action": "replace",
+      "before": "full corporate tax planning services including SR&amp;ED claims support and compliance checks",
+      "after": "full corporate tax planning services and compliance checks",
+      "needs_sharad": false,
+      "note": "SR&ED listed as part of the firm's fee scope."
+    },
+    {
+      "location": "Visible",
+      "section": "\"How Gondaliya CPA Supports Canadian Founders\" - what we handle",
+      "editor": "post_content",
+      "action": "replace",
+      "before": "identifying and documenting SR&amp;ED-eligible activity, modelling the compensation mix",
+      "after": "modelling the compensation mix",
+      "needs_sharad": false,
+      "note": ""
+    },
+    {
+      "location": "Visible",
+      "section": "\"How Gondaliya CPA Supports Canadian Founders\" - closing sentence",
+      "editor": "post_content",
+      "action": "replace",
+      "before": "Whether you are incorporating, filing a first SR&amp;ED claim, or preparing for a sale, we give clear advice",
+      "after": "Whether you are incorporating or preparing for a sale, we give clear advice",
+      "needs_sharad": false,
+      "note": ""
+    },
+    {
+      "location": "Visible",
+      "section": "Bottom CTA box \"Turn tax planning into cash flow\"",
+      "editor": "post_content",
+      "action": "replace",
+      "before": "Gondaliya CPA identifies SR&amp;ED-eligible work, applies loss carrybacks",
+      "after": "Gondaliya CPA applies loss carrybacks",
+      "needs_sharad": false,
+      "note": ""
+    },
+    {
+      "location": "Visible",
+      "section": "Author box (Sharad bio)",
+      "editor": "post_content",
+      "action": "replace",
+      "before": "corporate tax, SR&amp;ED support, bookkeeping, payroll",
+      "after": "corporate tax, bookkeeping, payroll",
+      "needs_sharad": false,
+      "note": "Bio says the firm helps clients with SR&ED support."
+    },
+    {
+      "location": "JSON-LD",
+      "section": "Service schema serviceType",
+      "editor": "post_content",
+      "action": "replace",
+      "before": "Corporate tax planning, SR and ED claim support, bookkeeping",
+      "after": "Corporate tax planning, bookkeeping",
+      "needs_sharad": false,
+      "note": ""
+    },
+    {
+      "location": "Visible",
+      "section": "Interactive planning-levers checker (script, list \"Worth reviewing with us\")",
+      "editor": "post_content",
+      "action": "replace",
+      "before": "items.push('SR and ED eligibility, with documentation built while the work happens');",
+      "after": "items.push('SR and ED eligibility, with documentation built while the work happens (Gondaliya CPA does not prepare SR and ED claims)');",
+      "needs_sharad": false,
+      "note": "Checker output lists SR&ED under \"Worth reviewing with us\" next to a Book-consultation button; alternative is to drop this item."
+    }
+  ],
+  "page_note": "Startup tax blog post; long informational SR&ED sections kept. Offer lines (FAQ answer + JSON-LD, pricing FAQ, what-we-handle, closing line, CTA box, author bio, Service schema, checker item) rewritten. Experience callouts, glossary, HowTo, knowsAbout and 'tech startups focus on SR&ED credits' kept as informational."
+}

@@ -1,0 +1,20 @@
+{
+  "id": 45615,
+  "url": "https://gondaliyacpa.ca/payroll-services-hamilton/",
+  "title": "Payroll Services Hamilton",
+  "type": "page",
+  "elementor": true,
+  "rows": [
+    {
+      "location": "Visible",
+      "section": "Services accordion \"Advisory & Specialized\"",
+      "editor": "elementor",
+      "action": "replace",
+      "before": "\\\">SR&amp;ED Tax Credits<\\/a>",
+      "after": "\\\">How SR&amp;ED Tax Credits Work<\\/a>",
+      "needs_sharad": false,
+      "note": "SR&ED listed among firm services with link; neutral anchor, URL kept."
+    }
+  ],
+  "page_note": "Payroll Hamilton page. Only mention is SR&ED in the services accordion link list; anchor neutralized."
+}

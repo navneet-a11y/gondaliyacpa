@@ -1,0 +1,20 @@
+{
+  "id": 37923,
+  "url": "https://gondaliyacpa.ca/cpa-corporate-tax-filing-catch-up-tax-services-canada/",
+  "title": "Why Hiring a CPA for Catch-Up Corporate Tax Filing Can Save Your Business Thousands",
+  "type": "post",
+  "elementor": false,
+  "rows": [
+    {
+      "location": "Visible",
+      "section": "List \"Essential Tax & Compliance Services Offered by Gondaliya CPA\"",
+      "editor": "post_content",
+      "action": "replace",
+      "before": "<li>Claiming SR&amp;ED credits and other eligible investment tax credits</li>",
+      "after": "<li>Claiming eligible investment tax credits</li>",
+      "needs_sharad": false,
+      "note": "SR&ED listed among the firm's services."
+    }
+  ],
+  "page_note": "Catch-up corporate filing (CPA) blog post. One firm-services list item offers claiming SR&ED; rewritten. Other mentions (tax planning report ideas, missed-credit mistakes, industry table, FAQ 'What are SR&ED credits') are informational."
+}

@@ -1,0 +1,40 @@
+{
+  "id": 39680,
+  "url": "https://gondaliyacpa.ca/corporate-tax-planning-mississauga/",
+  "title": "Corporate Tax Planning Mississauga",
+  "type": "page",
+  "elementor": true,
+  "rows": [
+    {
+      "location": "Visible",
+      "section": "Industry card \"Corporate Tax Planning for Startups\"",
+      "editor": "elementor",
+      "action": "delete",
+      "before": " SR&amp;ED claims for R&amp;D-stage companies.",
+      "after": "",
+      "needs_sharad": false,
+      "note": ""
+    },
+    {
+      "location": "Visible",
+      "section": "Industry card \"Corporate Tax Planning for Manufacturing\"",
+      "editor": "elementor",
+      "action": "delete",
+      "before": " SR&amp;ED claims for process improvement.",
+      "after": "",
+      "needs_sharad": false,
+      "note": ""
+    },
+    {
+      "location": "Visible",
+      "section": "Strategy 6 \"Maximize SR&ED Tax Credits\"",
+      "editor": "elementor",
+      "action": "delete",
+      "before": " We identify eligible activities and prepare the T661 claim.",
+      "after": "",
+      "needs_sharad": false,
+      "note": "Rest of strategy 6 (H3 and T661 explanation) is informational and kept."
+    }
+  ],
+  "page_note": "Corporate tax planning Mississauga page (Elementor). SR&ED claims listed in two industry service cards and 'we prepare the T661 claim' in strategy 6; removed. Explanatory text kept."
+}

@@ -1,0 +1,540 @@
+{
+ "id": 49366,
+ "url": "https://gondaliyacpa.ca/manufacturing-sred-tax-credits-canada/",
+ "title": "How Manufacturing Companies Can Maximize SR&ED Tax Credits and Recover Eligible R&D Costs in Canada",
+ "type": "post",
+ "elementor": false,
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "intro paragraph",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "Gondaliya CPA assists businesses in navigating CRA SR&amp;ED claims",
+   "after": "This guide covers navigating CRA SR&amp;ED claims",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "after intro paragraph",
+   "editor": "post_content",
+   "action": "insert_after",
+   "before": "to recover manufacturing R&amp;D costs efficiently.</p>",
+   "after": "to recover manufacturing R&amp;D costs efficiently.</p>\n<p class=\"sred-notice\"><strong>Gondaliya CPA does not prepare SR&amp;ED claims. This page explains how the SR&amp;ED program works, for general information only.</strong></p>",
+   "needs_sharad": false,
+   "note": "Informational notice per RULES.md"
+  },
+  {
+   "location": "Visible",
+   "section": "author box (top)",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "brings 15+ years of experience preparing SR&amp;ED claims for Canadian manufacturers, covering",
+   "after": "brings 15+ years of experience with Canadian manufacturers, with SR&amp;ED knowledge covering",
+   "needs_sharad": true,
+   "note": "Author bio says the firm prepares SR&ED claims; RULES keep author lines, so flagged"
+  },
+  {
+   "location": "Visible",
+   "section": "table of contents",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "<li><a href=\"#toc-partnering\">Partnering with Gondaliya CPA</a></li>",
+   "after": "<li><a href=\"#toc-partnering\">Building a Stronger Claim</a></li>",
+   "needs_sharad": true,
+   "note": "TOC label matches the rewritten section 4 heading"
+  },
+  {
+   "location": "Visible",
+   "section": "table of contents",
+   "editor": "post_content",
+   "action": "delete",
+   "before": "<li><a href=\"#toc-contact\">Contact and Further Engagement</a></li>\n",
+   "after": "",
+   "needs_sharad": true,
+   "note": "TOC entry for the deleted Contact section 6"
+  },
+  {
+   "location": "Visible",
+   "section": "table of contents",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "<li><a href=\"#toc-industries\">Manufacturing Sub-Sectors We Serve</a></li>",
+   "after": "<li><a href=\"#toc-industries\">Manufacturing Sub-Sectors and Where SR&amp;ED Sits</a></li>",
+   "needs_sharad": true,
+   "note": "TOC label matches the rewritten industries heading"
+  },
+  {
+   "location": "Visible",
+   "section": "overview H5",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "Brief summary of Gondaliya CPA's expertise in maximizing manufacturing SR&amp;ED claims</h5>",
+   "after": "Brief summary: getting the most from manufacturing SR&amp;ED claims</h5>",
+   "needs_sharad": true,
+   "note": "Heading about the firm's SR&ED expertise"
+  },
+  {
+   "location": "Visible",
+   "section": "overview paragraph under the H5",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "<p>Gondaliya CPA helps Canadian manufacturers figure out and claim their best possible manufacturing R&amp;D taxes. They know the rules well and make sure clients follow CRA guidelines while getting the most from their claims for steady growth.</p>",
+   "after": "<p>Canadian manufacturers get their best possible manufacturing R&amp;D credits by knowing the rules well and following CRA guidelines while getting the most from their claims for steady growth.</p>",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Button",
+   "section": "CTA banner after Risk Warning (section 1)",
+   "editor": "post_content",
+   "action": "delete",
+   "before": "<div class=\"gcpa-banner\">\n<div class=\"bt\">Solving technical problems on the floor? The first conversation is free.</div>\n<div class=\"bb\"><a class=\"solid\" href=\"https://gondaliyacpa.ca/consultation/\">Book Free Consultation</a><a href=\"mailto:info@gondaliyacpa.ca\">info@gondaliyacpa.ca</a><a href=\"tel:+16472129559\">647-212-9559</a></div>\n</div>\n",
+   "after": "",
+   "needs_sharad": false,
+   "note": "Book Free Consultation / mailto / tel banner"
+  },
+  {
+   "location": "Visible",
+   "section": "Preparing and Submitting: documentation",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "<p>Gondaliya CPA helps clients in Ontario organize their tech info well. They don't write engineering opinions but check records before filing.</p>",
+   "after": "<p>Organize your technical information well and check the records before filing.</p>",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Preparing and Submitting: filing",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "<p>Hiring Gondaliya CPA means experts handle data collection through electronic filing",
+   "after": "<p>Data collection should run through to electronic filing",
+   "needs_sharad": false,
+   "note": "Sentence now: \"Data collection should run through to electronic filing across Ontario offices like Toronto or Mississauga while following all deadlines\" - consider also trimming the Ontario offices clause"
+  },
+  {
+   "location": "Visible",
+   "section": "Pre-claim approval considerations",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "before you submit&mdash;services firms like Gondaliya CPA provide this help for manufacturers in Canada.</p>",
+   "after": "before you submit.</p>",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Preparing and Submitting: closing CTA paragraph",
+   "editor": "post_content",
+   "action": "delete",
+   "before": "<p>For personalized advice on making solid SR&amp;ED manufacturing Canada claims that follow current rules <a class=\"wpil_keyword_link\" href=\"https://gondaliyacpa.ca/contact-us/\"   title=\"contact Gondaliya CPA\" data-wpil-keyword-link=\"linked\"  data-wpil-monitor-id=\"9042\">contact Gondaliya CPA</a> at info@gondaliyacpa.ca or call 647&#8209;212&#8209;9559 for a free consultation today.</p>\n",
+   "after": "",
+   "needs_sharad": false,
+   "note": "contact-us link + phone/email free consultation; nothing informational"
+  },
+  {
+   "location": "Visible",
+   "section": "section 4 H2",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "<h2>Benefits of partnering with Gondaliya CPA for manufacturing SR&amp;ED claims</h2>",
+   "after": "<h2>Building a stronger manufacturing SR&amp;ED claim</h2>",
+   "needs_sharad": true,
+   "note": "Heading sells partnering with the firm"
+  },
+  {
+   "location": "Visible",
+   "section": "section 4 H4 + pill",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "margin:0;\">Partnering with Gondaliya CPA</h4>\n<span class=\"gcpa-pill gold\">The Partnership</span>",
+   "after": "margin:0;\">Building a Stronger Claim</h4>\n<span class=\"gcpa-pill gold\">The Approach</span>",
+   "needs_sharad": true,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "section 4 first paragraph",
+   "editor": "post_content",
+   "action": "delete",
+   "before": "<p>When you team up with Gondaliya CPA, Canadian manufacturers get the most from their SR&amp;ED manufacturing Canada tax credits. They know manufacturing tax credits inside and out. With more than 1450 5-star Google reviews, Gondaliya CPA offers licensed, affordable help that fits CRA rules. This cuts audit chances and boosts your eligible expenses.</p>\n",
+   "after": "",
+   "needs_sharad": false,
+   "note": "Pure sales (team up, 1450 reviews, affordable help); nothing informational"
+  },
+  {
+   "location": "Visible",
+   "section": "section 4 second paragraph",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "<p>Gondaliya CPA gets how tricky it is to prove technological uncertainty and systematic investigation in manufacturing R&amp;D tax credits. They spot projects others miss&mdash;like process upgrades or automation tests. Serving Toronto and Ontario manufacturers, they share clear plans to help you claim the highest SR&amp;ED tax credit Canada benefits fast.</p>",
+   "after": "<p>Proving technological uncertainty and systematic investigation is the tricky part of manufacturing R&amp;D tax credits. Eligible projects are often missed&mdash;like process upgrades or automation tests.</p>",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "section 4 methodology",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "<p>Gondaliya CPA uses a step-by-step way to boost SR&amp;ED claims. They mix technical know-how with strict CRA paperwork rules. They team up with engineers and plant controllers to check if projects meet rules like technological uncertainty and progress shown by records kept at the time.</p>",
+   "after": "<p>A step-by-step approach mixes technical know-how with strict CRA paperwork rules: engineers and plant controllers check whether projects meet rules like technological uncertainty and progress shown by records kept at the time.</p>",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "section 4 methodology",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "<p>They dig deep into costs like wages",
+   "after": "<p>The cost review covers wages",
+   "needs_sharad": false,
+   "note": "Sentence now: \"The cost review covers wages for key workers, materials used or changed onsite, ...\""
+  },
+  {
+   "location": "Visible",
+   "section": "section 4 worked example",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "A metal fab client claimed $250K",
+   "after": "A metal fabricator claimed $250K",
+   "needs_sharad": false,
+   "note": "Drops \"client\" (firm sales proof); example kept"
+  },
+  {
+   "location": "Visible",
+   "section": "section 4 CRA audits",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "<p>Gondaliya CPA gets clients ready by gathering strong proof showing:</p>",
+   "after": "<p>Audit readiness means gathering strong proof showing:</p>",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "section 4 CRA audits",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "<p>They meet with clients before audits to explain questions about",
+   "after": "<p>Before an audit, prepare answers to questions about",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "section 4 CRA audits",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "having Gondaliya CPA helps answer right away with facts and rules",
+   "after": "answer right away with facts and rules",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "section 4 provincial incentives",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "<p>Gondaliya CPA finds which local programs apply",
+   "after": "<p>Check which local programs apply",
+   "needs_sharad": false,
+   "note": "Sentence now: \"Check which local programs apply - like Ontario's Innovation Tax Credit - and weaves them...\" ; change \"weaves\" to \"weave\" too (next row)"
+  },
+  {
+   "location": "Visible",
+   "section": "section 4 provincial incentives",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "&mdash;and weaves them into your filings alongside federal claims.",
+   "after": "&mdash;and weave them into your filings alongside federal claims.",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "section 4 provincial incentives",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "<p>Manufacturers get planned help capturing both",
+   "after": "<p>Planning lets manufacturers capture both",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "section 4 post-claim",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "You need ongoing help changing documents each year as tech changes in your plant.",
+   "after": "Documents need updating each year as tech changes in your plant.",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "section 4 post-claim",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "<p>Gondaliya CPA offers post-claim services such as:</p>",
+   "after": "<p>Post-claim follow-up includes:</p>",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "section 4 post-claim",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "<p>Clients get practical tips that smooth teamwork",
+   "after": "<p>Practical habits smooth teamwork",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "section 4 closing CTA paragraph",
+   "editor": "post_content",
+   "action": "delete",
+   "before": "<p>For one-on-one help with SR&amp;ED manufacturing Canada benefits through careful claim prep backed by industry know-how, contact us at info@gondaliyacpa.ca or call 647&#8209;212&#8209;9559 today for a free consult focused on incorporated manufacturers in Toronto/Ontario serving all main sectors listed earlier.</p>\n",
+   "after": "",
+   "needs_sharad": false,
+   "note": "Free consult phone/email CTA"
+  },
+  {
+   "location": "Visible",
+   "section": "section 5 resources paragraph",
+   "editor": "post_content",
+   "action": "replace",
+   "before": " served by Gondaliya CPA Professional Corporation.</p>",
+   "after": ".</p>",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "section 5 closing CTA paragraph",
+   "editor": "post_content",
+   "action": "delete",
+   "before": "<p>If you want expert advice specific to your incorporated manufacturer's needs about using all available supports including provincial additions contact Gondaliya CPA at info@gondaliyacpa.ca or call 647-212-9559 today for a free consult focused on boosting your business growth using Canadian manufacturing R&amp;D tax credits.</p>\n",
+   "after": "",
+   "needs_sharad": false,
+   "note": "Free consult phone/email CTA"
+  },
+  {
+   "location": "Visible",
+   "section": "section 6 Contact and Further Engagement (H2, H4, five H5 sub-sections)",
+   "editor": "post_content",
+   "action": "delete",
+   "before": "<h2>Contact and Further Engagement with Gondaliya CPA for Manufacturing SR&amp;ED Assistance</h2>\n<div class=\"gcpa-numhead\">\n<div class=\"num\">6</div>\n<h4 id=\"toc-contact\" style=\"border:none;padding:0;margin:0;\">Contact and Further Engagement</h4>\n<span class=\"gcpa-pill blue\">The Contact</span>\n</div>\n<p>If you want to get the most from your SR&amp;ED manufacturing Canada tax credits, you need to talk with a firm that knows the ins and outs. Gondaliya CPA helps incorporated manufacturers claim back R&amp;D costs through the SR&amp;ED tax credit Canada program. They make the process easier by guiding you step-by-step.</p>\n<h5 style=\"color:#15355c;margin:24px 0 8px;\">How to Connect with Gondaliya CPA's Experienced SR&amp;ED Consulting Team</h5>\n<p>Gondaliya CPA focuses on manufacturing R&amp;D tax credits. They help you understand eligibility rules and what paperwork you need. You can reach them by phone or email for a free consultation. This chat will identify your projects and expenses that qualify under CRA's rules.</p>\n<p>They work closely with your technical team to outline projects clearly. This ensures claims show real technological uncertainty and follow proper investigation steps. They help prepare Form T661 and all related documents needed for manufacturing tax credits claims.</p>\n<h5 style=\"color:#15355c;margin:24px 0 8px;\">Profiles Highlighting Expertise in Manufacturing R&amp;D Tax Credit Claims</h5>\n<p>Their team has strong experience with Canadian manufacturers in areas like metal fabrication, food processing, automotive parts, electronics, and plastics molding. They know how to:</p>\n<ul>\n<li>Interpret SR&amp;ED eligibility for manufacturing innovation credits</li>\n<li>Suggest claim approaches that match CRA expectations</li>\n<li>Handle documentation needed for audit readiness</li>\n</ul>\n<p>Because of this, clients get accurate advice about what counts as experimental development under Income Tax Act section 248(1). This is key for industrial R&amp;D activities.</p>\n<h5 style=\"color:#15355c;margin:24px 0 8px;\">Multiple Contact Methods: Consultation Requests, Phone, Email, and Online Forms</h5>\n<p>If you want help maximizing manufacturing R&amp;D tax credits, you can contact Gondaliya CPA several ways:</p>\n<ul>\n<li><strong>Phone:</strong> Call 647-212-9559 during regular hours or even evenings/weekends.</li>\n<li><strong>Email:</strong> Write to info@gondaliyacpa.ca with your industry and project details.</li>\n<li><strong>Online Forms:</strong> Use their website form for quick consultation requests.</li>\n</ul>\n<p>These options suit busy managers who need fast answers without interrupting work.</p>\n<h5 style=\"color:#15355c;margin:24px 0 8px;\">Commitment to Client Education, Transparent Communication, and Successful Outcomes</h5>\n<p>Gondaliya CPA makes sure clients understand eligibility based on clear tech progress proof &mdash; not vague descriptions. They share resources about documenting investigations according to CRA rules as they happen.</p>\n<p>Fees are straightforward. They offer flat annual prices covering all claim prep and CRA dealings if needed. There's also a 30-Day Money Back Guarantee plus a 60-Day Fees-Matching Policy. These build trust throughout the claim process focused on real Canadian innovation credits.</p>\n<h5 style=\"color:#15355c;margin:24px 0 8px;\">Call-to-Action Prompts Encouraging Businesses to Maximize Their SR&amp;ED Manufacturing Credits</h5>\n<p>Manufacturers should book a no-pressure consultation soon. Early talks help spot qualifying work before deadlines arrive under new Income Tax Act rules starting 2026.</p>\n<p>Call Gondaliya CPA at 647&#8209;212&#8209;9559 or email info@gondaliyacpa.ca today. Take simple steps toward making the most of your SR&amp;ED manufacturing credits while staying compliant in Ontario and across Canada's jurisdictions supporting manufacturers focused on innovation.</p>\n",
+   "after": "",
+   "needs_sharad": true,
+   "note": "Whole section is a CTA: contact methods, consulting team, fees, 30-day money back guarantee, call-to-action prompts. Nothing informational left. Removes H2/H4/H5 headings, so flagged"
+  },
+  {
+   "location": "Visible",
+   "section": "Our Actual Experience callout after section 6",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "<p>The best time to call is while the work is still being done. Once the year has closed we are reconstructing evidence rather than collecting it.",
+   "after": "<p>The best time to document is while the work is still being done. Once the year has closed, evidence is being reconstructed rather than collected.",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "FAQ H2",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "<h2>Frequently Asked Questions (FAQs) on SR&amp;ED Manufacturing Tax Credits with Gondaliya CPA</h2>",
+   "after": "<h2>Frequently Asked Questions (FAQs) on SR&amp;ED Manufacturing Tax Credits</h2>",
+   "needs_sharad": true,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Key Points: How Gondaliya CPA Supports Your Manufacturing SR&ED Claims (H5 + 6-item list + contact line)",
+   "editor": "post_content",
+   "action": "delete",
+   "before": "<h5 style=\"color:#15355c;margin:24px 0 8px;\">How Gondaliya CPA Supports Your Manufacturing SR&amp;ED Claims</h5>\n<ul>\n<li>We help identify hidden eligible work across manufacturing sub-sectors.</li>\n<li>Our team advises on record retention periods and claim documentation standards.</li>\n<li>We prepare complete claims including Form T661, Schedules 31/32 for smooth CRA processing.</li>\n<li>We guide clients through CRA reviews with strong audit defense strategies.</li>\n<li>Our experts compare proxy vs traditional overhead methods for optimal expense recovery.</li>\n<li>We offer tailored advice on first-time claimant advisory service participation.</li>\n</ul>\n<p>For tailored support on all your SR&amp;ED manufacturing tax credit needs, contact Gondaliya CPA at info@gondaliyacpa.ca or call 647&#8209;212&#8209;9559 today.</p>\n",
+   "after": "",
+   "needs_sharad": true,
+   "note": "Every list item is a firm offer (we prepare complete claims incl. T661, Schedules 31/32 ...); removes an H5"
+  },
+  {
+   "location": "Visible",
+   "section": "industries H4",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "Manufacturing Sub-Sectors We Serve</h4>",
+   "after": "Manufacturing Sub-Sectors and Where SR&amp;ED Sits</h4>",
+   "needs_sharad": true,
+   "note": "\"We Serve\" heading on a dedicated SR&ED URL"
+  },
+  {
+   "location": "Visible",
+   "section": "Guidance H2",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "<h2>Professional Guidance on SR&amp;ED: How Gondaliya CPA Builds Defensible Claims</h2>",
+   "after": "<h2>Professional Guidance on SR&amp;ED: What Makes a Claim Defensible</h2>",
+   "needs_sharad": true,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Guidance paragraph 1",
+   "editor": "post_content",
+   "action": "replace",
+   "before": " Gondaliya CPA prepares claims that hold up under technical review, on a fixed fee agreed before we start.</p>",
+   "after": "</p>",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Guidance paragraph 2",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "<p>We handle what decides the outcome: testing",
+   "after": "<p>What decides the outcome: testing",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Guidance paragraph 3",
+   "editor": "post_content",
+   "action": "delete",
+   "before": "<p>Our team works with your engineers and plant staff rather than around them, and will tell you plainly when a project will not survive review. Whether this is your first claim or your tenth, you get clear advice and a fixed price before we start.</p>\n",
+   "after": "",
+   "needs_sharad": false,
+   "note": "Firm offer + fixed price; nothing informational"
+  },
+  {
+   "location": "Visible",
+   "section": "SR&ED Readiness Check widget",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "<b>Points to raise with us:</b>",
+   "after": "<b>Points to raise:</b>",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "SR&ED Readiness Check widget",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "<b>Worth reviewing with us:</b>",
+   "after": "<b>Worth reviewing:</b>",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "SR&ED Readiness Check widget",
+   "editor": "post_content",
+   "action": "replace",
+   "before": " A free review can confirm nothing is being left unclaimed.</p>",
+   "after": "</p>",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Button",
+   "section": "SR&ED Readiness Check widget",
+   "editor": "post_content",
+   "action": "delete",
+   "before": "\n        <a class=\"p-cta\" href=\"https://gondaliyacpa.ca/consultation/\">Book a free consultation</a>",
+   "after": "",
+   "needs_sharad": false,
+   "note": "Book a free consultation button"
+  },
+  {
+   "location": "Visible",
+   "section": "SR&ED Readiness Check widget note",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "For a real review, please book a free consultation.</p>",
+   "after": "For a real review, please consult a licensed CPA.</p>",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "checklist download line",
+   "editor": "post_content",
+   "action": "replace",
+   "before": " before your consultation.</p>",
+   "after": ".</p>",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "\"Why manufacturers choose us.\" image before Verdict",
+   "editor": "post_content",
+   "action": "delete",
+   "before": "<figure style=\"margin:18px 0;\"><img src=\"https://gondaliyacpa.ca/wp-content/uploads/2026/08/why-gondaliya-cpa-sred.png\" alt=\"Why Canadian manufacturers choose Gondaliya CPA for SR&amp;ED claims\" style=\"width:100%;border-radius:12px;border:1px solid #d8e0e8;\" /><figcaption style=\"font-size:13px;color:#5a6b7b;text-align:center;padding:6px;\">Why manufacturers choose us.</figcaption></figure>\n",
+   "after": "",
+   "needs_sharad": false,
+   "note": "Sales-proof image \"Why Canadian manufacturers choose Gondaliya CPA for SR&ED claims\""
+  },
+  {
+   "location": "Visible",
+   "section": "closing H2",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "<h2>SR&amp;ED manufacturing Canada: Maximizing manufacturing tax credits and R&amp;D tax credit Canada with Gondaliya CPA</h2>",
+   "after": "<h2>SR&amp;ED manufacturing Canada: Maximizing manufacturing tax credits and R&amp;D tax credit Canada</h2>",
+   "needs_sharad": true,
+   "note": ""
+  },
+  {
+   "location": "Button",
+   "section": "closing CTA box",
+   "editor": "post_content",
+   "action": "delete",
+   "before": "<div class=\"gcpa-cta\">\n<h4>Write it down while you are doing it</h4>\n<p>Gondaliya CPA tests each project against the three eligibility rules, groups the work into defensible projects on Form T661, separates experimental work from production in the wage split, compares proxy against traditional overhead, coordinates provincial credits within the stacking rules, and handles the CRA technical review, on a fixed fee with a one-business-day response. Please book a free consultation.</p>\n<div class=\"gcpa-trust\"><span>1450+ 5-star Google reviews</span><span>CPA Ontario Registered Firm</span><span>Fixed-Fee Pricing</span><span>SR&amp;ED Claims, T661 &amp; CRA Review</span></div>\n<div class=\"gcpa-btnrow\"><a class=\"solid\" href=\"https://gondaliyacpa.ca/consultation/\">Book Free Consultation</a><a href=\"tel:+16472129559\">647-212-9559</a><a href=\"mailto:info@gondaliyacpa.ca\">info@gondaliyacpa.ca</a></div>\n</div>\n",
+   "after": "",
+   "needs_sharad": false,
+   "note": "Offer paragraph (handles CRA review, fixed fee, book consultation), trust strip (1450+ reviews, SR&ED Claims T661 & CRA Review), Book/tel/mailto buttons"
+  },
+  {
+   "location": "Visible",
+   "section": "Next Steps paragraph",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "<p>Please book a free consultation with Gondaliya CPA and bring a short description of the technical problems you worked on this year, any notes or test data your team kept, and your payroll records for the staff involved. Those three tell us immediately whether a claim is there and how much of it will survive review. Calling during the year is better than after it. You will get a fixed fee before any work begins.",
+   "after": "<p>Before preparing a claim, gather a short description of the technical problems you worked on this year, any notes or test data your team kept, and your payroll records for the staff involved. Those three show whether a claim is there and how much of it will survive review. Gathering them during the year is better than after it.",
+   "needs_sharad": false,
+   "note": "Keeps the preparation list; drops consultation and fee lines"
+  },
+  {
+   "location": "Visible",
+   "section": "author box (bottom)",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "has over 15 years of experience preparing SR&amp;ED claims for Canadian manufacturers, covering",
+   "after": "has over 15 years of experience with Canadian manufacturers, with SR&amp;ED knowledge covering",
+   "needs_sharad": true,
+   "note": "Author bio says the firm prepares SR&ED claims; RULES keep author lines, so flagged"
+  },
+  {
+   "location": "JSON-LD",
+   "section": "Service schema node",
+   "editor": "post_content",
+   "action": "delete",
+   "before": ",\n    {\n      \"@type\": \"Service\",\n      \"name\": \"SR&amp;ED Claim Preparation for Canadian Manufacturers\",\n      \"serviceType\": \"SR&amp;ED eligibility assessment against the three tests, project identification and grouping, Form T661 preparation, Schedule 31 and Schedule 32 filing, labour and wage allocation, material and contractor cost tracking, proxy versus traditional overhead comparison, provincial credit coordination, contemporaneous documentation systems, CRA technical and financial review representation, post-claim advisory\",\n      \"provider\": { \"@id\": \"https://gondaliyacpa.ca/#organization\" },\n      \"areaServed\": \"CA\",\n      \"audience\": { \"@type\": \"Audience\", \"audienceType\": \"Incorporated Canadian manufacturers carrying out experimental development, first-time or repeat SR&amp;ED claimants\" }\n    }",
+   "after": "",
+   "needs_sharad": false,
+   "note": "\"SR&ED Claim Preparation for Canadian Manufacturers\" Service with provider = organization; removed with its leading comma"
+  }
+ ],
+ "page_note": "Non-Elementor post with heavy SR&ED sales copy. FAQ (visible + JSON-LD) is informational. Reference list item \"Gondaliya CPA internal workflow procedures aligning filings provincially/nationally\" kept (citation, not an offer). Rank Math description is informational; no change."
+}

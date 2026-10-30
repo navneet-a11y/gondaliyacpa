@@ -1,0 +1,160 @@
+{
+ "id": 44726,
+ "url": "https://gondaliyacpa.ca/best-cpa-firms-in-toronto-for-startups/",
+ "title": "Best CPA Firms in Toronto for Startups",
+ "type": "page",
+ "elementor": true,
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "Pricing table (typical costs)",
+   "editor": "elementor",
+   "action": "delete",
+   "before": "<tr>\\n            <td>SR&ED Claim Preparation<\\/td>\\n            <td>CAD 3,390<\\/td>\\n        <\\/tr>\\n        ",
+   "after": "",
+   "needs_sharad": true,
+   "note": "SR&ED fee row; pricing table includes HST-included fees matching the firm's quoting"
+  },
+  {
+   "location": "Visible",
+   "section": "Pricing paragraph",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "a full package with bookkeeping, payroll, and SR&ED carries higher fees.",
+   "after": "a full package with bookkeeping and payroll carries higher fees.",
+   "needs_sharad": true,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "#1 Gondaliya CPA intro",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "structure setup from day one, SR&ED claim capability, cloud bookkeeping on QBO",
+   "after": "structure setup from day one, cloud bookkeeping on QBO",
+   "needs_sharad": true,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "#1 Gondaliya CPA services list",
+   "editor": "elementor",
+   "action": "delete",
+   "before": "<li>SR&ED Claim Preparation<\\/li>\\n                ",
+   "after": "",
+   "needs_sharad": true,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "#1 Gondaliya CPA rating table",
+   "editor": "elementor",
+   "action": "delete",
+   "before": "span> (5\\/5)<\\/td>\\n        <\\/tr>\\n        <tr>\\n            <td>Structure & Incorporation Setup<\\/td>\\n            <td><span class=\\\"stars\\\">\\u2605\\u2605\\u2605\\u2605\\u2605<\\/span> (5\\/5)<\\/td>\\n        <\\/tr>\\n        <tr>\\n            <td>SR&ED & Tax Credit Capability<\\/td>\\n            <td><span class=\\\"stars\\\">\\u2605\\u2605\\u2605\\u2605\\u2605<\\/span> (5\\/5)<\\/td>\\n        <\\/tr>",
+   "after": "span> (5\\/5)<\\/td>\\n        <\\/tr>\\n        <tr>\\n            <td>Structure & Incorporation Setup<\\/td>\\n            <td><span class=\\\"stars\\\">\\u2605\\u2605\\u2605\\u2605\\u2605<\\/span> (5\\/5)<\\/td>\\n        <\\/tr>",
+   "needs_sharad": true,
+   "note": "Removes the \"SR&ED & Tax Credit Capability 5/5\" rating row for Gondaliya CPA only (first rating table)"
+  },
+  {
+   "location": "Visible",
+   "section": "#1 Gondaliya CPA description",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "clean first-year setup, SR&ED and credit knowledge, investor-ready books",
+   "after": "clean first-year setup, investor-ready books",
+   "needs_sharad": true,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "#1 What Makes Them Stand Out",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "combining correct structure setup, SR&ED capability, cloud accounting fluency",
+   "after": "combining correct structure setup, cloud accounting fluency",
+   "needs_sharad": true,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "#1 Best For",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "before a raise, technology companies claiming SR&ED, and any founder",
+   "after": "before a raise, and any founder",
+   "needs_sharad": true,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "#1 Pros list",
+   "editor": "elementor",
+   "action": "delete",
+   "before": "<li>Correct structure from day one<\\/li>\\n                <li>SR&ED capability<\\/li>",
+   "after": "<li>Correct structure from day one<\\/li>",
+   "needs_sharad": true,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Comparison table (Gondaliya row)",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "<td>Correct setup, SR&ED & flat-fee pricing<\\/td>",
+   "after": "<td>Correct setup & flat-fee pricing<\\/td>",
+   "needs_sharad": true,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "What startup accounting includes - Credits",
+   "editor": "elementor",
+   "action": "delete",
+   "before": "<li>SR&ED Claims \\u2013 Eligible development work identified, documented, and claimed so refundable credits reach your bank account.<\\/li>\\n        ",
+   "after": "",
+   "needs_sharad": true,
+   "note": "Service-scope bullet promising SR&ED claims; Founder Remuneration bullet mentioning SR&ED eligibility stays"
+  },
+  {
+   "location": "Visible",
+   "section": "What to prepare list",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "Note any technical development that may qualify for SR&ED so it can be assessed early.",
+   "after": "Note any technical development that may qualify for SR&ED.",
+   "needs_sharad": true,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "FAQ (fees)",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "One-time work such as incorporation or an SR&ED claim is quoted separately.",
+   "after": "One-time work such as incorporation is quoted separately.",
+   "needs_sharad": true,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Conclusion - Gondaliya CPA",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "share structure setup, SR&ED claim capability, cloud bookkeeping on QuickBooks",
+   "after": "share structure setup, cloud bookkeeping on QuickBooks",
+   "needs_sharad": true,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Conclusion - Gondaliya CPA",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "through funded technology businesses claiming SR&ED and preparing for due diligence. Their commitment to startup experience, correct structure setup, SR&ED capability, investor",
+   "after": "through funded technology businesses preparing for due diligence. Their commitment to startup experience, correct structure setup, investor",
+   "needs_sharad": true,
+   "note": ""
+  }
+ ],
+ "page_note": "Best-of listicle (Toronto startup CPA firms) ranking Gondaliya CPA #1. Rows remove SR&ED offer/capability claims about Gondaliya CPA only; SR&ED mentions about other firms (MNP, BDO, etc.), evaluation criteria, and informational FAQ answers stay. Flagged needs_sharad as a Best page making claims about the firm (same treatment as 34598). Pricing-table SR&ED fee row deleted."
+}

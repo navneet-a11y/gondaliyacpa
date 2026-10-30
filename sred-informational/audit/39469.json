@@ -1,0 +1,20 @@
+{
+ "id": 39469,
+ "url": "https://gondaliyacpa.ca/how-proper-bookkeeping-can-reduce-taxes-during-catch-up-corporate-tax-filing/",
+ "title": "How Proper Bookkeeping Can Reduce Taxes During Catch-Up Corporate Tax Filing",
+ "type": "post",
+ "elementor": false,
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "FAQ \"Can Gondaliya CPA help with tax planning?\"",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "</a>, SR&amp;ED credits, tax deferral methods",
+   "after": "</a>, tax deferral methods",
+   "needs_sharad": false,
+   "note": "SR&ED credits listed among what the firm implements"
+  }
+ ],
+ "page_note": "Catch-up corporate filing post. SR&ED deadline paragraph, FAQ \"Can I still claim SR&ED for the years I missed?\" (visible + JSON-LD), \"R&D credits\" startup line and table cell are informational and stay. Only the FAQ answer listing SR&ED credits among what Gondaliya CPA implements is changed."
+}

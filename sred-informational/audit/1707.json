@@ -1,0 +1,60 @@
+{
+  "id": 1707,
+  "url": "https://gondaliyacpa.ca/tax-planning/",
+  "title": "Tax Planning",
+  "type": "page",
+  "elementor": true,
+  "rows": [
+    {
+      "location": "Visible",
+      "section": "Icon box \"Tax Credit & Deduction Maximization\" description",
+      "editor": "elementor",
+      "action": "replace",
+      "before": "\"ekit_icon_box_description_text\":\"SR&ED, ITCs, sector-specific credits\"",
+      "after": "\"ekit_icon_box_description_text\":\"ITCs, sector-specific credits\"",
+      "needs_sharad": false,
+      "note": ""
+    },
+    {
+      "location": "Visible",
+      "section": "Service card 2 \"Tax Credit & Deduction Maximization\" intro",
+      "editor": "elementor",
+      "action": "replace",
+      "before": "SR&ED claims, Investment Tax Credits, and sector-specific credits identified and structured in advance.",
+      "after": "Investment Tax Credits and sector-specific credits identified and structured in advance.",
+      "needs_sharad": false,
+      "note": ""
+    },
+    {
+      "location": "Visible",
+      "section": "Service card 2 bullet",
+      "editor": "elementor",
+      "action": "replace",
+      "before": "We structure SR&ED projects so the eligible work is documented contemporaneously through the year, supporting",
+      "after": "SR&ED claims depend on eligible work being documented contemporaneously through the year, supporting",
+      "needs_sharad": false,
+      "note": ""
+    },
+    {
+      "location": "Visible",
+      "section": "Service card 2 bullet",
+      "editor": "elementor",
+      "action": "replace",
+      "before": "We layer the Ontario Innovation Tax Credit and Ontario Business-Research Institute Tax Credit on top of federal SR&ED, mapping each to the correct provincial schedule for a complete corporate tax planning claim.",
+      "after": "The Ontario Innovation Tax Credit and Ontario Business-Research Institute Tax Credit are claimed on top of federal SR&ED, each on its own provincial schedule.",
+      "needs_sharad": false,
+      "note": ""
+    },
+    {
+      "location": "Visible",
+      "section": "\"Browse Our Affordable CPA Services\" link list (item #3)",
+      "editor": "elementor",
+      "action": "replace",
+      "before": "\\\">SR&amp;ED Tax Credit Claims<\\/a>",
+      "after": "\\\">How SR&amp;ED Tax Credits Work<\\/a>",
+      "needs_sharad": false,
+      "note": "Services list links SR&ED as a firm service; neutral anchor, URL kept."
+    }
+  ],
+  "page_note": "Tax planning service page. SR&ED offered inside the tax-credit service card/icon box and in the services link list; rewritten. Intro mention of missing SR&ED credits, 'Maximize SR&ED Tax Credits' tip (H3 + T661 info) and FAQ R&D mention are informational, kept."
+}

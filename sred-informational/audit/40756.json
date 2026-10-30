@@ -1,0 +1,30 @@
+{
+ "id": 40756,
+ "url": "https://gondaliyacpa.ca/2026-canadian-small-business-tax-guide/",
+ "title": "2026 Canadian Small Business Tax Guide",
+ "type": "page",
+ "elementor": true,
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "Section 11 SR&ED Tax Credits",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "This is a direct cash refund from CRA. <a href=\\\"https:\\/\\/gondaliyacpa.ca\\/sred-tax-credits\\/\\\">SR&amp;ED Services &#8594;",
+   "after": "This is a direct cash refund from CRA. <a href=\\\"https:\\/\\/gondaliyacpa.ca\\/sred-tax-credits\\/\\\">How SR&amp;ED works &#8594;",
+   "needs_sharad": false,
+   "note": "Anchor offers the service; neutral anchor, URL kept"
+  },
+  {
+   "location": "Visible",
+   "section": "FAQ \"What is SR&ED and does my business qualify?\"",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "within 18 months of year-end. <a href=\\\"https:\\/\\/gondaliyacpa.ca\\/sred-tax-credits\\/\\\">SR&amp;ED Services &#8594;",
+   "after": "within 18 months of year-end. <a href=\\\"https:\\/\\/gondaliyacpa.ca\\/sred-tax-credits\\/\\\">How SR&amp;ED works &#8594;",
+   "needs_sharad": false,
+   "note": ""
+  }
+ ],
+ "page_note": "2026 small business tax guide. SR&ED section, deadline table row, FAQ and JSON-LD are informational and stay; only the two \"SR&ED Services\" link anchors are neutralized."
+}

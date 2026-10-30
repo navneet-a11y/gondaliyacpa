@@ -1,0 +1,30 @@
+{
+  "id": 1379,
+  "url": "https://gondaliyacpa.ca/tax-preparation-filing/",
+  "title": "Corporate Tax Filing",
+  "type": "page",
+  "elementor": true,
+  "rows": [
+    {
+      "location": "Visible",
+      "section": "Services list (corporate tax bullets)",
+      "editor": "elementor",
+      "action": "replace",
+      "before": "We identify and document SR&ED (Scientific Research & Experimental Development) eligible expenditures on Form T661, claiming the 35% refundable",
+      "after": "SR&ED (Scientific Research & Experimental Development) eligible expenditures are documented on Form T661 to claim the 35% refundable",
+      "needs_sharad": false,
+      "note": ""
+    },
+    {
+      "location": "Visible",
+      "section": "\"Browse Our Affordable CPA Services\" link list (item #3)",
+      "editor": "elementor",
+      "action": "replace",
+      "before": "\\\">SR&amp;ED Tax Credit Claims<\\/a>",
+      "after": "\\\">How SR&amp;ED Tax Credits Work<\\/a>",
+      "needs_sharad": false,
+      "note": "Services list links SR&ED as a firm service; neutral anchor, URL kept."
+    }
+  ],
+  "page_note": "Corporate tax filing page. One bullet said the firm documents/claims SR&ED; rewritten as information. Services link list anchor neutralized."
+}

@@ -1,0 +1,320 @@
+{
+ "id": 41046,
+ "url": "https://gondaliyacpa.ca/accounting-and-bookkeeping-services-for-startups/",
+ "title": "Accounting and Bookkeeping Services for Startups",
+ "type": "page",
+ "elementor": true,
+ "rows": [
+  {
+   "location": "Meta",
+   "section": "Meta description",
+   "editor": "rank_math",
+   "action": "replace",
+   "before": "SR&amp;ED tax credits, burn rate",
+   "after": "burn rate",
+   "needs_sharad": true,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Hero intro",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "Investor-ready share structure, SR&amp;ED tax credits, burn rate tracking",
+   "after": "Investor-ready share structure, burn rate tracking",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Intro paragraph",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "track every dollar of burn, file every SR&amp;ED claim on time, and produce",
+   "after": "track every dollar of burn, and produce",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "\"What we do\" table - SR&ED row (what we do cell)",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "<td>We identify eligible expenditures (developer salaries, contractor costs, cloud infrastructure for R&amp;D, materials), prepare the T661 technical narrative and financial schedules, and file within the 18-month absolute deadline.<\\/td>",
+   "after": "<td><\\/td>",
+   "needs_sharad": false,
+   "note": "Informational cells (35% credit, deadline) stay; offer cell emptied. Alternatively delete the row."
+  },
+  {
+   "location": "Visible",
+   "section": "\"What we do\" table - CRA audit risk row",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "CRA audit defence FREE for all clients. SR&amp;ED claims prepared with CRA-ready technical narratives and financial documentation. We attend every CRA meeting",
+   "after": "CRA audit defence FREE for all clients. We attend every CRA meeting",
+   "needs_sharad": false,
+   "note": "CRA-risk description cell stays"
+  },
+  {
+   "location": "Visible",
+   "section": "What We Deliver table - SR&ED claim preparation row",
+   "editor": "elementor",
+   "action": "delete",
+   "before": "<tr><td>SR&amp;ED claim preparation<\\/td><td>Eligible expenditures identified: developer salaries, contractor costs, cloud R&amp;D infrastructure, materials. T661 technical narrative prepared. Financial schedules completed. Filed within the 18-month absolute deadline.<\\/td><td>Annual<\\/td><\\/tr>\\r\\n",
+   "after": "",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "What We Deliver table - T2 row",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "Immediate Expensing. SR&amp;ED claim integration. Non-capital",
+   "after": "Immediate Expensing. Non-capital",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "What We Deliver table - CRA audit row",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "FREE for all clients. SR&amp;ED reviews, T2 audits, HST audits.",
+   "after": "FREE for all clients. T2 audits, HST audits.",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "SR&ED deadline box",
+   "editor": "elementor",
+   "action": "replace",
+   "before": " We track the deadline for every client and file every claim on time.",
+   "after": "",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Case card \"SaaS Startup, Toronto\"",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "set up payroll for both founders with EI exemption, filed the first SR&amp;ED claim on $210,000 in developer salaries ($73,500 refundable credit), and prepared",
+   "after": "set up payroll for both founders with EI exemption, and prepared",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Case card \"SaaS Startup, Toronto\"",
+   "editor": "elementor",
+   "action": "replace",
+   "before": " The SR&amp;ED cheque extended runway by 4 months.",
+   "after": "",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Case card \"SaaS Startup, Toronto\"",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "$73,500 SR&amp;ED + investor-ready structure",
+   "after": "Investor-ready structure",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Case card \"Fintech Startup, Waterloo\"",
+   "editor": "elementor",
+   "action": "replace",
+   "before": ", had not filed SR&amp;ED for 2 years (within the 18-month window for the most recent year only),",
+   "after": ",",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Case card \"Fintech Startup, Waterloo\"",
+   "editor": "elementor",
+   "action": "replace",
+   "before": ", filed the SR&amp;ED claim for the eligible year ($89,250 refundable credit, the prior year was forfeited),",
+   "after": ",",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Case card \"Fintech Startup, Waterloo\"",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "$89,250 SR&amp;ED + revenue recognition corrected",
+   "after": "Revenue recognition corrected",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Case card \"AI Startup, Toronto (SR&ED + HST Refunds)\"",
+   "editor": "elementor",
+   "action": "delete",
+   "before": "<div class=\\\"su-case-card\\\"><h3>AI Startup, Toronto (SR&amp;ED + HST Refunds)<\\/h3><p>An AI startup with 4 developers, $520,000 in eligible developer salaries and $180,000 in Canadian operating expenses (100% US revenue) was not claiming SR&amp;ED or HST refunds. We filed the SR&amp;ED claim ($105,000 refundable on first $300,000 + $33,000 non-refundable on the remaining $220,000), registered for monthly HST filing ($23,400\\/year in ITC refunds from zero-rated US revenue), and set up salary-dividend splits for 2 co-founders. Combined annual benefit: $161,400.<\\/p><div class=\\\"su-case-stat\\\">$105,000 SR&amp;ED cash + $23,400\\/year HST refunds + $33,000 non-refundable credits<\\/div><\\/div>\\r\\n",
+   "after": "",
+   "needs_sharad": false,
+   "note": "Sales-proof case built on an SR&ED claim the firm filed"
+  },
+  {
+   "location": "Visible",
+   "section": "Pricing table - SR&ED claim (T661) fee row",
+   "editor": "elementor",
+   "action": "delete",
+   "before": "<tr class=\\\"su-hl\\\"><td>SR&amp;ED claim (T661)<\\/td><td>15% to 20% contingency + $1,000 retainer<\\/td><td>Contingency on the refund received. You pay nothing if the claim is denied. Technical narrative, financial schedules, CRA filing. Retainer applied against the contingency fee.<\\/td><\\/tr>\\r\\n",
+   "after": "",
+   "needs_sharad": false,
+   "note": "SR&ED contingency fee"
+  },
+  {
+   "location": "Visible",
+   "section": "Pricing table - T2 row",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "Immediate Expensing. SR&amp;ED integration. Loss",
+   "after": "Immediate Expensing. Loss",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Pricing table - CRA audit row",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "<td>SR&amp;ED reviews, T2 audits, HST audits.",
+   "after": "<td>T2 audits, HST audits.",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Pricing example",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "SR&amp;ED: contingency (you pay only when you receive the credit). ",
+   "after": "",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Process step 4 \"Fund\"",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "SR&amp;ED filed. ",
+   "after": "",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "FAQ \"How much does startup accounting cost?\"",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "SR&amp;ED: 15% to 20% contingency + $1,000 retainer. ",
+   "after": "",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "JSON-LD",
+   "section": "FAQ \"How much does startup accounting cost?\"",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "SR&ED 15-20% contingency + $1K retainer. ",
+   "after": "",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "FAQ \"What is SR&ED and does my startup qualify?\"",
+   "editor": "elementor",
+   "action": "replace",
+   "before": " We assess eligibility during the free consultation.",
+   "after": "",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "FAQ \"What is the SR&ED filing deadline?\"",
+   "editor": "elementor",
+   "action": "replace",
+   "before": " We track the deadline for every client. We have never missed an SR&amp;ED deadline.",
+   "after": "",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "FAQ \"What if CRA reviews my SR&ED claim?\"",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "FREE for all clients. CRA reviews approximately 20% of SR&amp;ED claims. We prepare every claim with CRA-ready technical narratives and financial documentation. When CRA requests a review, we attend every meeting, provide all documentation and negotiate the outcome.",
+   "after": "CRA reviews approximately 20% of SR&amp;ED claims.",
+   "needs_sharad": false,
+   "note": "Question stays; answer reduced to the informational fact"
+  },
+  {
+   "location": "JSON-LD",
+   "section": "FAQ \"What if CRA reviews my SR&ED claim?\"",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "FREE defence. ~20% of claims reviewed. CRA-ready narratives. We attend, document, negotiate.",
+   "after": "~20% of claims reviewed.",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "FAQ \"Planning a startup?\"",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "first-year cash flow projection and SR&amp;ED eligibility assessment.",
+   "after": "first-year cash flow projection.",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "JSON-LD",
+   "section": "FAQ \"Planning a startup?\"",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "cash flow projection, SR&ED assessment.",
+   "after": "cash flow projection.",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Team bio - Sharad",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "incorporation structuring for investors, SR&amp;ED claims, salary-dividend",
+   "after": "incorporation structuring for investors, salary-dividend",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Bottom CTA text",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "<p>Incorporation, SR&amp;ED, HST refunds",
+   "after": "<p>Incorporation, HST refunds",
+   "needs_sharad": false,
+   "note": ""
+  }
+ ],
+ "page_note": "Accounting for startups (Elementor). SR&ED sold as a service throughout (claim prep, contingency fee, case results, deadline promise, audit defence, CTA, Rank Math description). Rows strip offer/fee clauses; SR&ED deep-dive section, credit calculation table, qualifying-work list, deadline facts and SR&ED-eligible expense tracking in bookkeeping stay. Meta description row flagged needs_sharad."
+}

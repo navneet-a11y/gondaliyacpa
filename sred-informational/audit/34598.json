@@ -1,0 +1,90 @@
+{
+ "id": 34598,
+ "url": "https://gondaliyacpa.ca/the-best-cpas-for-sred-tax-credits-in-toronto/",
+ "title": "The Best CPAs for SR&amp;ED Tax Credits in Toronto ",
+ "type": "page",
+ "elementor": true,
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "intro, notice after first intro paragraph",
+   "editor": "elementor",
+   "action": "insert_after",
+   "before": "Each firm has been reviewed to help you maximize your company's available tax credits.<\\/p>",
+   "after": "Each firm has been reviewed to help you maximize your company's available tax credits.<\\/p><p class=\\\"sred-notice\\\"><strong>Gondaliya CPA does not prepare SR&amp;ED claims. This page explains how the SR&amp;ED program works, for general information only.<\\/strong><\\/p>",
+   "needs_sharad": false,
+   "note": "html widget 06c04c9; notice after the intro paragraph under the H1 (after image and trust statement)."
+  },
+  {
+   "location": "Visible",
+   "section": "Firm 1 card: Gondaliya CPA ranked #1",
+   "editor": "elementor",
+   "action": "delete",
+   "before": "<!-- FIRM 1: GONDALIYA CPA -->\\r\\n    <div class=\\\"firm-card\\\">\\r\\n        <div class=\\\"firm-header\\\">\\r\\n            <div class=\\\"firm-number\\\">1<\\/div>\\r\\n            <div class=\\\"firm-title\\\">\\r\\n                <div class=\\\"firm-name\\\">Gondaliya CPA \\u2013 Toronto<\\/div>\\r\\n            <\\/div>\\r\\n        <\\/div>\\r\\n\\r\\n        <div class=\\\"firm-logo\\\" style=\\\"text-align: center; margin: 15px 0;\\\">\\r\\n                        <img src=\\\"https:\\/\\/gondaliyacpa.ca\\/wp-content\\/uploads\\/2026\\/03\\/481092396_518994124570487_8995083879077401429_n.jpg\\\" alt=\\\"Gondaliya CPA Logo\\\" style=\\\"max-width: 120px; height: auto;\\\">\\r\\n                    <\\/div>\\r\\n\\r\\n        <div class=\\\"firm-details\\\">\\r\\n            <div class=\\\"detail-row\\\">\\r\\n                <div class=\\\"detail-label\\\">Services<\\/div>\\r\\n                <ul class=\\\"services-list\\\">\\r\\n                    <li>SR&ED Eligibility Assessments<\\/li>\\r\\n                    <li>SR&ED Claim Preparation & Filing<\\/li>\\r\\n                    <li>Multi-Year SR&ED Claims<\\/li>\\r\\n                    <li>Time-Tracking & Documentation Systems<\\/li>\\r\\n                    <li>Retroactive SR&ED Claims (Prior Years)<\\/li>\\r\\n                    <li>SR&ED Claim Review & Optimization<\\/li>\\r\\n                    <li>CRA Audit Support & Defense<\\/li>\\r\\n                    <li>Dispute & Objection Representation<\\/li>\\r\\n                    <li>Tech Industry SR&ED Expertise<\\/li>\\r\\n                <\\/ul>\\r\\n            <\\/div>\\r\\n\\r\\n            <div class=\\\"detail-row\\\">\\r\\n                <div class=\\\"detail-label\\\">Website<\\/div>\\r\\n                <div class=\\\"detail-value\\\"><a href=\\\"https:\\/\\/gondaliyacpa.ca\\\">gondaliyacpa.ca<\\/a><\\/div>\\r\\n            <\\/div>\\r\\n\\r\\n            <div class=\\\"detail-row\\\">\\r\\n                <div class=\\\"detail-label\\\">Address<\\/div>\\r\\n                <div class=\\\"detail-value\\\">55 Queen St E Ste 1205, Toronto, ON M5C 1R6, Canada<\\/div>\\r\\n            <\\/div>\\r\\n\\r\\n            <div class=\\\"detail-row\\\">\\r\\n                <div class=\\\"detail-label\\\">Contact<\\/div>\\r\\n                <div class=\\\"detail-value\\\">(647) 212-9559<\\/div>\\r\\n            <\\/div>\\r\\n\\r\\n            <div class=\\\"detail-row\\\">\\r\\n                <div class=\\\"detail-label\\\">Hours<\\/div>\\r\\n                <div class=\\\"detail-value\\\">Monday \\u2013 Sunday: 9:00 AM \\u2013 8:30 PM<\\/div>\\r\\n            <\\/div>\\r\\n        <\\/div>\\r\\n\\r\\n        <table class=\\\"rating-table\\\">\\r\\n            <tr>\\r\\n                <td>SR&ED Technical Expertise<\\/td>\\r\\n                <td><span class=\\\"stars\\\">\\u2605\\u2605\\u2605\\u2605\\u2605<\\/span> (5\\/5)<\\/td>\\r\\n            <\\/tr>\\r\\n            <tr>\\r\\n                <td>Claim Documentation Quality<\\/td>\\r\\n                <td><span class=\\\"stars\\\">\\u2605\\u2605\\u2605\\u2605\\u2605<\\/span> (5\\/5)<\\/td>\\r\\n            <\\/tr>\\r\\n            <tr>\\r\\n                <td>CRA Relationship & Audit Success<\\/td>\\r\\n                <td><span class=\\\"stars\\\">\\u2605\\u2605\\u2605\\u2605\\u2605<\\/span> (5\\/5)<\\/td>\\r\\n            <\\/tr>\\r\\n            <tr>\\r\\n                <td>Tax Credit Maximization<\\/td>\\r\\n                <td><span class=\\\"stars\\\">\\u2605\\u2605\\u2605\\u2605\\u2605<\\/span> (5\\/5)<\\/td>\\r\\n            <\\/tr>\\r\\n            <tr>\\r\\n                <td>Industry Experience<\\/td>\\r\\n                <td><span class=\\\"stars\\\">\\u2605\\u2605\\u2605\\u2605\\u2605<\\/span> (5\\/5)<\\/td>\\r\\n            <\\/tr>\\r\\n        <\\/table>\\r\\n\\r\\n        <div class=\\\"firm-description\\\">\\r\\n            <p><strong>Gondaliya CPA<\\/strong> is a founder-led firm recognized as a top SR&ED expert in Toronto's tech community. With 700+ 5-star Google reviews and deep SR&ED program expertise, the firm specializes in helping technology companies, software firms, and innovation-driven businesses claim and maximize available SR&ED tax credits. The firm is particularly strong for tech startups, scale-up companies, and established tech firms with complex R&D activities.<\\/p>\\r\\n\\r\\n            <p>Clients value the firm's deep SR&ED technical knowledge, ability to identify overlooked eligible activities, professional claim documentation that withstands CRA audit, and strong CRA relationships enabling successful defense. The founder, Sharad Gondaliya, brings extensive SR&ED expertise combined with understanding of technology industry challenges and innovation processes.<\\/p>\\r\\n\\r\\n            <p><strong>What Makes Them Stand Out:<\\/strong> Deep SR&ED program expertise with CPA designation, track record of identifying overlooked eligible activities, professional claim documentation, strong CRA audit defense capability, technology industry specialization, retroactive claim recovery, extended hours for busy tech founders, transparent fee structures, 30-day money-back guarantee on claims.<\\/p>\\r\\n\\r\\n            <p><strong>Best For:<\\/strong> Tech startups and scaleups, software development companies, AI\\/ML firms, hardware manufacturers, biotech companies, established tech firms with complex R&D, companies seeking retroactive claim recovery.<\\/p>\\r\\n        <\\/div>\\r\\n\\r\\n        <div class=\\\"pros-cons\\\">\\r\\n            <div class=\\\"pros\\\">\\r\\n                <h4>Pros<\\/h4>\\r\\n                <ul>\\r\\n                    <li>Deep SR&ED technical expertise<\\/li>\\r\\n                    <li>Track record of identifying additional eligible work<\\/li>\\r\\n                    <li>Professional claim documentation for CRA audit defense<\\/li>\\r\\n                    <li>Strong CRA relationships and audit success<\\/li>\\r\\n                    <li>Technology industry specialization<\\/li>\\r\\n                    <li>700+ 5-star reviews from satisfied tech companies<\\/li>\\r\\n                    <li>Retroactive claim recovery expertise<\\/li>\\r\\n                    <li>Extended hours for busy entrepreneurs<\\/li>\\r\\n                <\\/ul>\\r\\n            <\\/div>\\r\\n            <div class=\\\"cons\\\">\\r\\n                <h4>Cons<\\/h4>\\r\\n                <ul>\\r\\n                    <li>Limited experience in non-technology industries<\\/li>\\r\\n                <\\/ul>\\r\\n            <\\/div>\\r\\n        <\\/div>\\r\\n    <\\/div>\\r\\n\\r\\n    ",
+   "after": "",
+   "needs_sharad": true,
+   "note": "html widget 06c04c9; card lists \"SR&ED Claim Preparation & Filing\" etc., 5/5 SR&ED ratings, \"top SR&ED expert\", pros, address and phone. The firm does not prepare SR&ED claims. Proposal: remove the card; if applied, renumber firm-number 2-7 to 1-6 and change TOC \"Top 7 CPAs\" to \"Top 6 CPAs\". Alternative for Sharad: keep the card with services/ratings/description rewritten. Not applied without Sharad."
+  },
+  {
+   "location": "Visible",
+   "section": "Comparison table row: Gondaliya CPA",
+   "editor": "elementor",
+   "action": "delete",
+   "before": "<tr>\\r\\n                <td><strong>Gondaliya CPA<\\/strong><\\/td>\\r\\n                <td>Tech startups, scale-ups, software firms, AI\\/ML companies<\\/td>\\r\\n                <td>Deep SR&ED expertise, identifies overlooked eligible work, strong CRA defense, tech industry focus<\\/td>\\r\\n                <td>Tech SR&ED specialization<\\/td>\\r\\n            <\\/tr>",
+   "after": "",
+   "needs_sharad": true,
+   "note": "html widget 06c04c9; \"Deep SR&ED expertise ... strong CRA defense ... Tech SR&ED specialization\". Remove if the firm card is removed."
+  },
+  {
+   "location": "Button",
+   "section": "Final Thoughts CTA",
+   "editor": "elementor",
+   "action": "delete",
+   "before": "<a href=\\\"https:\\/\\/gondaliyacpa.ca\\/consultation\\/\\\" class=\\\"cta-button\\\">Get Your Free SR&ED Tax Credit Assessment<\\/a>",
+   "after": "",
+   "needs_sharad": false,
+   "note": "html widget 06c04c9; /consultation/ button."
+  },
+  {
+   "location": "Visible",
+   "section": "About Gondaliya CPA paragraph 1",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "is a Toronto-based accounting firm specializing in SR&ED tax credits and innovation incentives for technology companies, software firms, biotech enterprises, and R&D-intensive businesses. With over 700+ 5-star Google reviews and top rankings on Clutch and GoodFirms, the firm is recognized for deep SR&ED expertise, identification of overlooked eligible activities, professional claim documentation, and strong CRA audit defense.",
+   "after": "is a Toronto-based accounting firm founded by Sharad Gondaliya, CPA (Canada & US). Gondaliya CPA does not prepare SR&ED claims; this guide explains how the SR&ED program works, for general information only.",
+   "needs_sharad": true,
+   "note": "html widget 06c04c9; firm self-description as SR&ED specialist. Proposal."
+  },
+  {
+   "location": "Visible",
+   "section": "About Gondaliya CPA paragraph 2",
+   "editor": "elementor",
+   "action": "delete",
+   "before": "<p>Founded by Sharad Gondaliya, CPA (Canada & US), the firm brings extensive SR&ED program expertise combined with deep understanding of technology industry challenges, innovation processes, and development methodologies. Gondaliya CPA specializes in helping tech companies claim maximum available SR&ED credits while maintaining CRA relationships and audit defensibility.<\\/p>",
+   "after": "",
+   "needs_sharad": true,
+   "note": "html widget 06c04c9; \"specializes in helping tech companies claim maximum available SR&ED credits\". Founder line moved into paragraph 1 proposal."
+  },
+  {
+   "location": "Visible",
+   "section": "About Gondaliya CPA paragraph 3",
+   "editor": "elementor",
+   "action": "delete",
+   "before": "<p>The firm serves tech startups and scale-ups, software development companies, AI\\/ML firms, hardware manufacturers, biotech companies, and established tech enterprises. Their commitment to deep SR&ED technical knowledge, proactive identification of additional eligible work, professional claim documentation, and strong CRA audit defense has made them a trusted partner for Toronto's tech community seeking to maximize available tax credits.<\\/p>",
+   "after": "",
+   "needs_sharad": true,
+   "note": "html widget 06c04c9; \"trusted partner ... seeking to maximize available tax credits\". Nothing informational left."
+  },
+  {
+   "location": "Button",
+   "section": "About section CTA",
+   "editor": "elementor",
+   "action": "delete",
+   "before": "<a href=\\\"https:\\/\\/gondaliyacpa.ca\\/consultation\\/\\\" class=\\\"cta-button\\\">Schedule Your Free SR&ED Consultation Today<\\/a>",
+   "after": "",
+   "needs_sharad": false,
+   "note": "html widget 06c04c9; /consultation/ button."
+  }
+ ],
+ "page_note": "Best page (needs Sharad for anything about the firm). Elementor, one html widget 06c04c9; content.raw is a fallback copy. H1 kept. No Rank Math title/description stored. Market cost table, selection criteria, firms 2-7, guide, how-to-choose, FAQ (18 items, all general) and author box are informational and stay; generic lines like \"professional SR&ED services pay back\" are not about the firm and stay. No JSON-LD or forms. Paragraph rows after the card row are independent of it (non-overlapping)."
+}

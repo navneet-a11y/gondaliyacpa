@@ -1,0 +1,30 @@
+{
+  "id": 7436,
+  "url": "https://gondaliyacpa.ca/ottawa/",
+  "title": "Ottawa Business Accounting &amp; Tax Services",
+  "type": "page",
+  "elementor": true,
+  "rows": [
+    {
+      "location": "Visible",
+      "section": "Services list (corporate tax bullets)",
+      "editor": "elementor",
+      "action": "replace",
+      "before": "We prepare the SR&ED claim on Form T661 alongside your Ottawa technology corporation T2 return for qualifying experimental development",
+      "after": "The SR&ED claim is filed on Form T661 alongside an Ottawa technology corporation's T2 return for qualifying experimental development",
+      "needs_sharad": false,
+      "note": ""
+    },
+    {
+      "location": "Visible",
+      "section": "Services list (tax planning bullets)",
+      "editor": "elementor",
+      "action": "replace",
+      "before": "We plan SR&ED claims for Ottawa technology corporations within CRA's 18-month filing deadline, coordinating the Form T661 submission with your fiscal year-end T2 return",
+      "after": "SR&ED claims for Ottawa technology corporations must be filed within CRA's 18-month filing deadline, with the Form T661 submission coordinated with the fiscal year-end T2 return",
+      "needs_sharad": false,
+      "note": ""
+    }
+  ],
+  "page_note": "City page. Two service bullets said the firm prepares/plans SR&ED claims; rewritten as information. 'SR&ED credit accounting where applicable' in compilation-notes bullet is financial-statement disclosure, kept."
+}

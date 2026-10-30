@@ -1,0 +1,480 @@
+{
+ "id": 39377,
+ "url": "https://gondaliyacpa.ca/sred-claims-for-tech-startups/",
+ "title": "SR&amp;ED claims for tech startups",
+ "type": "page",
+ "elementor": true,
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "hero subtitle",
+   "editor": "elementor",
+   "action": "replace",
+   "before": " We identify the eligible work, prepare the technical narrative, calculate the expenditures and file the SR&amp;ED claim with CRA.",
+   "after": " An SR&amp;ED claim identifies the eligible work, sets out the technical narrative, calculates the expenditures and is filed with CRA.",
+   "needs_sharad": false,
+   "note": "html widget 5ebfaa4"
+  },
+  {
+   "location": "Visible",
+   "section": "hero, notice after intro",
+   "editor": "elementor",
+   "action": "insert_after",
+   "before": "Real cash back.<\\/p>",
+   "after": "Real cash back.<\\/p><p class=\\\"sred-notice\\\"><strong>Gondaliya CPA does not prepare SR&amp;ED claims. This page explains how the SR&amp;ED program works, for general information only.<\\/strong><\\/p>",
+   "needs_sharad": false,
+   "note": "html widget 5ebfaa4; notice right after the hero intro paragraph under the H1."
+  },
+  {
+   "location": "Button",
+   "section": "hero buttons",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "<div class=\\\"sr-hero-btns\\\"><a href=\\\"https:\\/\\/gondaliyacpa.ca\\/consultation\\/\\\" class=\\\"sr-btn-blue\\\">Free SR&amp;ED Assessment<\\/a><a href=\\\"https:\\/\\/gondaliyacpa.ca\\/sred-tax-credit-claims\\/\\\" class=\\\"sr-btn-dark\\\">SR&amp;ED Services<\\/a><\\/div>",
+   "after": "<div class=\\\"sr-hero-btns\\\"><a href=\\\"https:\\/\\/gondaliyacpa.ca\\/sred-tax-credit-claims\\/\\\" class=\\\"sr-btn-dark\\\">How SR&amp;ED Credits Work<\\/a><\\/div>",
+   "needs_sharad": false,
+   "note": "html widget 5ebfaa4; /consultation/ CTA removed; internal link to the main SR&ED page kept with a neutral anchor."
+  },
+  {
+   "location": "Visible",
+   "section": "\"What Is the SR&ED Tax Credit\" closing paragraph",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "For a complete overview of our SR&amp;ED service across all industries, visit our ",
+   "after": "For a complete overview of how SR&amp;ED works across all industries, visit the ",
+   "needs_sharad": false,
+   "note": "html widget 5ebfaa4"
+  },
+  {
+   "location": "Visible",
+   "section": "process section heading",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "How Our SR&amp;ED Claim Process Works for Tech Startups",
+   "after": "How the SR&amp;ED Claim Process Works for Tech Startups",
+   "needs_sharad": false,
+   "note": "html widget 5ebfaa4 (H2)"
+  },
+  {
+   "location": "Visible",
+   "section": "process section subline",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "Four steps. We handle CRA. You keep building.",
+   "after": "Four steps, from assessment to filing.",
+   "needs_sharad": false,
+   "note": "html widget 5ebfaa4"
+  },
+  {
+   "location": "Visible",
+   "section": "process step 1",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "We review your codebase, architecture decisions, sprint logs and technical challenges to identify all qualifying SR&amp;ED projects. Free assessment.",
+   "after": "Review the codebase, architecture decisions, sprint logs and technical challenges to identify all qualifying SR&amp;ED projects.",
+   "needs_sharad": false,
+   "note": "html widget 5ebfaa4"
+  },
+  {
+   "location": "Visible",
+   "section": "process step 2",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "<p>We prepare the technical narrative for each project:",
+   "after": "<p>Prepare the technical narrative for each project:",
+   "needs_sharad": false,
+   "note": "html widget 5ebfaa4"
+  },
+  {
+   "location": "Visible",
+   "section": "process step 3",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "<p>We calculate eligible expenditures:",
+   "after": "<p>Calculate eligible expenditures:",
+   "needs_sharad": false,
+   "note": "html widget 5ebfaa4"
+  },
+  {
+   "location": "Visible",
+   "section": "process step 4",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "We file Form T661 with CRA, respond to any review or audit requests and defend the claim through to refund deposit.",
+   "after": "File Form T661 with CRA, respond to any review or audit requests and support the claim through to refund deposit.",
+   "needs_sharad": false,
+   "note": "html widget 5ebfaa4"
+  },
+  {
+   "location": "Button",
+   "section": "inline CTA 1 (after process)",
+   "editor": "elementor",
+   "action": "delete",
+   "before": "<div class=\\\"sr-cta-inline\\\"><div><h3>Free SR&amp;ED Eligibility Assessment for Tech Startups<\\/h3><p>We review your development work and tell you if you qualify. No obligation. No upfront fee.<\\/p><\\/div><a href=\\\"https:\\/\\/gondaliyacpa.ca\\/consultation\\/\\\" class=\\\"sr-btn-blue\\\">Book Free Assessment<\\/a><\\/div>",
+   "after": "",
+   "needs_sharad": false,
+   "note": "html widget 5ebfaa4; free assessment box + /consultation/ button."
+  },
+  {
+   "location": "Visible",
+   "section": "expenditures table header",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "<th>How We Calculate It<\\/th>",
+   "after": "<th>How It Is Calculated<\\/th>",
+   "needs_sharad": false,
+   "note": "html widget 5ebfaa4"
+  },
+  {
+   "location": "Visible",
+   "section": "expenditures table, salaries row",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "We review sprint logs, commit history, Jira\\/Linear tickets, time tracking and developer interviews to allocate each developer's time.",
+   "after": "Sprint logs, commit history, Jira\\/Linear tickets, time tracking and developer interviews are used to allocate each developer's time.",
+   "needs_sharad": false,
+   "note": "html widget 5ebfaa4"
+  },
+  {
+   "location": "Visible",
+   "section": "technical narrative box",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "<strong>We Write the Technical Narrative With Your Engineering Team:<\\/strong>",
+   "after": "<strong>The Technical Narrative Is Written With the Engineering Team:<\\/strong>",
+   "needs_sharad": false,
+   "note": "html widget 5ebfaa4"
+  },
+  {
+   "location": "Visible",
+   "section": "technical narrative box",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "We interview your developers, review your architecture decisions, examine your commit history and sprint logs, and translate the technical work into a narrative",
+   "after": "It draws on developer interviews, architecture decisions, commit history and sprint logs, and translates the technical work into a narrative",
+   "needs_sharad": false,
+   "note": "html widget 5ebfaa4"
+  },
+  {
+   "location": "Visible",
+   "section": "technical narrative box",
+   "editor": "elementor",
+   "action": "delete",
+   "before": " Our narratives are written by a team that understands both the technology and CRA's evaluation criteria.",
+   "after": "",
+   "needs_sharad": false,
+   "note": "html widget 5ebfaa4"
+  },
+  {
+   "location": "Visible",
+   "section": "startup types heading",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "Types of Tech Startups We File SR&amp;ED Claims For",
+   "after": "Types of Tech Startups That Claim SR&amp;ED",
+   "needs_sharad": false,
+   "note": "html widget 5ebfaa4 (H2)"
+  },
+  {
+   "location": "Visible",
+   "section": "startup types closing paragraph",
+   "editor": "elementor",
+   "action": "delete",
+   "before": "We work with tech startups across all stages, from pre-revenue to growth. ",
+   "after": "",
+   "needs_sharad": false,
+   "note": "html widget 5ebfaa4; other-service link sentence kept."
+  },
+  {
+   "location": "Button",
+   "section": "inline CTA 2 (after startup types)",
+   "editor": "elementor",
+   "action": "delete",
+   "before": "<div class=\\\"sr-cta-inline\\\"><div><h3>Not Sure If Your Startup Qualifies? We Assess for Free.<\\/h3><p>30-minute call. We review your technical work and tell you whether it meets CRA's SR&amp;ED criteria. No cost. No obligation.<\\/p><\\/div><a href=\\\"https:\\/\\/gondaliyacpa.ca\\/consultation\\/\\\" class=\\\"sr-btn-blue\\\">Book Free Assessment<\\/a><\\/div>",
+   "after": "",
+   "needs_sharad": false,
+   "note": "html widget 5ebfaa4"
+  },
+  {
+   "location": "Visible",
+   "section": "CRA review heading",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "What to Expect and How We Defend Your Claim",
+   "after": "What to Expect and How Claims Are Defended",
+   "needs_sharad": false,
+   "note": "html widget 5ebfaa4 (H2)"
+  },
+  {
+   "location": "Visible",
+   "section": "CRA review table header",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "<th>How We Handle It<\\/th>",
+   "after": "<th>How It Is Handled<\\/th>",
+   "needs_sharad": false,
+   "note": "html widget 5ebfaa4"
+  },
+  {
+   "location": "Visible",
+   "section": "CRA review table row 1",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "We prepare a review package with supporting evidence (commit history, architecture diagrams, experiment logs). We attend the RTA meeting with your CTO or lead developer.",
+   "after": "A review package with supporting evidence (commit history, architecture diagrams, experiment logs) is prepared. The CTO or lead developer attends the RTA meeting.",
+   "needs_sharad": false,
+   "note": "html widget 5ebfaa4"
+  },
+  {
+   "location": "Visible",
+   "section": "CRA review table row 2",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "We provide detailed time allocation worksheets, payroll records, subcontractor invoices and the calculation methodology.",
+   "after": "Detailed time allocation worksheets, payroll records, subcontractor invoices and the calculation methodology are provided.",
+   "needs_sharad": false,
+   "note": "html widget 5ebfaa4"
+  },
+  {
+   "location": "Visible",
+   "section": "CRA review table row 3",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "We prepare your engineering team for the RTA meeting. We provide a review preparation guide with expected questions and optimal responses. We attend the meeting alongside your team.",
+   "after": "The engineering team prepares for the RTA meeting using a review preparation guide with expected questions and responses.",
+   "needs_sharad": false,
+   "note": "html widget 5ebfaa4"
+  },
+  {
+   "location": "Visible",
+   "section": "CRA review table row 4",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "We negotiate with the RTA and financial reviewer. If the reduction is unreasonable, we file a formal Notice of Objection with CRA Appeals. We defend every claim through to resolution.",
+   "after": "The reduction can be discussed with the RTA and financial reviewer. If the reduction is unreasonable, a formal Notice of Objection can be filed with CRA Appeals.",
+   "needs_sharad": false,
+   "note": "html widget 5ebfaa4"
+  },
+  {
+   "location": "Visible",
+   "section": "10 mistakes table header",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "<th>How We Prevent It<\\/th>",
+   "after": "<th>How to Prevent It<\\/th>",
+   "needs_sharad": false,
+   "note": "html widget 5ebfaa4"
+  },
+  {
+   "location": "Visible",
+   "section": "10 mistakes row 1",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "Free eligibility assessment at onboarding. Every qualifying project identified and claimed.",
+   "after": "Eligibility review up front. Every qualifying project identified and claimed.",
+   "needs_sharad": false,
+   "note": "html widget 5ebfaa4"
+  },
+  {
+   "location": "Visible",
+   "section": "10 mistakes row 3",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "We set up a lightweight documentation process at onboarding:",
+   "after": "A lightweight documentation process set up from the start:",
+   "needs_sharad": false,
+   "note": "html widget 5ebfaa4"
+  },
+  {
+   "location": "Visible",
+   "section": "10 mistakes row 4",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "We screen every project against CRA's five-question SR&amp;ED eligibility test before including it in the claim.",
+   "after": "Every project screened against CRA's five-question SR&amp;ED eligibility test before it is included in the claim.",
+   "needs_sharad": false,
+   "note": "html widget 5ebfaa4"
+  },
+  {
+   "location": "Visible",
+   "section": "10 mistakes row 10",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "Every claim prepared by our SR&amp;ED team with technical and financial expertise.",
+   "after": "Claim prepared with technical and financial SR&amp;ED expertise.",
+   "needs_sharad": false,
+   "note": "html widget 5ebfaa4"
+  },
+  {
+   "location": "Visible",
+   "section": "Pricing section (fee table)",
+   "editor": "elementor",
+   "action": "delete",
+   "before": "<h2 class=\\\"sr-h2c\\\">SR&amp;ED Pricing for Tech Startups<\\/h2><p style=\\\"color:#718096;max-width:640px;margin:0 auto 28px;text-align:center;\\\">Contingency-based. You pay only when CRA approves your refund.<\\/p>\\r\\n\\r\\n<table class=\\\"sr-tbl\\\"><thead><tr><th>Service<\\/th><th>Fee<\\/th><th>Includes<\\/th><\\/tr><\\/thead><tbody>\\r\\n<tr class=\\\"sr-hl\\\"><td>SR&amp;ED claim preparation and filing<\\/td><td>15% to 20% of the approved credit (contingency)<\\/td><td>Eligibility assessment, project identification, technical narrative preparation, expenditure calculation, Form T661 filing, CRA correspondence<\\/td><\\/tr>\\r\\n<tr><td>Retainer (for complex or large claims)<\\/td><td>$1,000 upfront + contingency on approval<\\/td><td>Same as above, plus dedicated SR&amp;ED specialist, multi-project narrative coordination and CRA review preparation<\\/td><\\/tr>\\r\\n<tr><td>Free eligibility assessment<\\/td><td>$0<\\/td><td>30-minute call. We review your technical work and tell you if you qualify. No obligation.<\\/td><\\/tr>\\r\\n<tr><td>CRA review and audit defence<\\/td><td>Included<\\/td><td>RTA meeting preparation, team coaching, financial documentation package, objection filing if claim is reduced<\\/td><\\/tr>\\r\\n<tr class=\\\"sr-hl\\\"><td>Documentation setup (ongoing support)<\\/td><td>Included for bookkeeping clients<\\/td><td>We configure a lightweight SR&amp;ED documentation process: tagged Jira\\/Linear tickets, architecture decision records, experiment logs<\\/td><\\/tr>\\r\\n<tr><td>Annual T2 corporate tax return<\\/td><td>FREE<\\/td><td>Included for every SR&amp;ED and bookkeeping client. SR&amp;ED claim filed alongside the T2.<\\/td><\\/tr>\\r\\n<\\/tbody><\\/table>\\r\\n\\r\\n",
+   "after": "",
+   "needs_sharad": false,
+   "note": "html widget 5ebfaa4; SR&ED fee heading, contingency subline and fee table. The links paragraph after it stays."
+  },
+  {
+   "location": "Visible",
+   "section": "Pricing section links paragraph",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "For details on our SR&amp;ED process across all industries, visit our ",
+   "after": "For details on how SR&amp;ED works across all industries, visit the ",
+   "needs_sharad": false,
+   "note": "html widget 5ebfaa4"
+  },
+  {
+   "location": "Button",
+   "section": "inline CTA 3 (pricing)",
+   "editor": "elementor",
+   "action": "delete",
+   "before": "<div class=\\\"sr-cta-inline\\\"><div><h3>No Upfront Cost. We Get Paid When You Get Paid.<\\/h3><p>Contingency-based SR&amp;ED. 15% to 20% of the approved credit. Free eligibility assessment. CRA defence included.<\\/p><\\/div><a href=\\\"https:\\/\\/gondaliyacpa.ca\\/consultation\\/\\\" class=\\\"sr-btn-blue\\\">Book Free Assessment<\\/a><\\/div>",
+   "after": "",
+   "needs_sharad": false,
+   "note": "html widget 5ebfaa4; contingency-fee CTA box."
+  },
+  {
+   "location": "Visible",
+   "section": "cities heading",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "SR&amp;ED Claims for Tech Startups: Cities We Serve",
+   "after": "SR&amp;ED for Tech Startups Across Ontario",
+   "needs_sharad": false,
+   "note": "html widget 5ebfaa4 (H2); city links stay."
+  },
+  {
+   "location": "Visible",
+   "section": "cities subline",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "We file SR&amp;ED claims for tech startups across every Ontario city and Canada. No distance limits, no extra fees.",
+   "after": "SR&amp;ED credits are available to qualifying tech startups in every Ontario city and across Canada.",
+   "needs_sharad": false,
+   "note": "html widget 5ebfaa4"
+  },
+  {
+   "location": "Visible",
+   "section": "FAQ 1 answer",
+   "editor": "elementor",
+   "action": "delete",
+   "before": " We assess eligibility for free in a 30-minute call. <a href=\\\"https:\\/\\/gondaliyacpa.ca\\/consultation\\/\\\">Book Free Assessment &#8594;<\\/a>",
+   "after": "",
+   "needs_sharad": false,
+   "note": "html widget 5ebfaa4"
+  },
+  {
+   "location": "Visible",
+   "section": "FAQ 5 answer",
+   "editor": "elementor",
+   "action": "replace",
+   "before": " We set up a lightweight documentation process at onboarding so your team captures what CRA needs without slowing down development.",
+   "after": " A lightweight documentation process set up from the start captures what CRA needs without slowing down development.",
+   "needs_sharad": false,
+   "note": "html widget 5ebfaa4"
+  },
+  {
+   "location": "Visible",
+   "section": "FAQ 6 answer (filing cost)",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "15% to 20% of the approved credit on a contingency basis. You pay nothing upfront. We get paid when CRA approves your refund. Free eligibility assessment. CRA review defence included. T2 filed FREE for bookkeeping clients. <a href=\\\"https:\\/\\/gondaliyacpa.ca\\/pricing-calculation\\/\\\">Know Your Exact Fee &#8594;<\\/a>",
+   "after": "Gondaliya CPA does not prepare SR&amp;ED claims. Fees for SR&amp;ED claim preparation vary by provider; many charge a percentage of the approved credit on a contingency basis.",
+   "needs_sharad": false,
+   "note": "html widget 5ebfaa4; question kept, firm fee answer replaced."
+  },
+  {
+   "location": "Visible",
+   "section": "FAQ 7 answer",
+   "editor": "elementor",
+   "action": "replace",
+   "before": " We track the deadline and file well in advance.",
+   "after": " Track the deadline and file well in advance.",
+   "needs_sharad": false,
+   "note": "html widget 5ebfaa4"
+  },
+  {
+   "location": "Visible",
+   "section": "FAQ 8 answer",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "We advise putting founding CTOs and technical co-founders on payroll specifically to capture SR&amp;ED eligibility.",
+   "after": "Putting founding CTOs and technical co-founders on payroll is a common way to capture SR&amp;ED eligibility.",
+   "needs_sharad": false,
+   "note": "html widget 5ebfaa4; other-service link kept."
+  },
+  {
+   "location": "Visible",
+   "section": "FAQ 9 answer",
+   "editor": "elementor",
+   "action": "replace",
+   "before": " We prepare your team for the RTA meeting, provide a review preparation guide, attend the meeting with you and negotiate any proposed reductions. If CRA reduces the claim unreasonably, we file a formal objection.",
+   "after": " The team should be prepared for the RTA meeting, and any proposed reductions can be discussed with the reviewers. If CRA reduces the claim unreasonably, a formal objection can be filed.",
+   "needs_sharad": false,
+   "note": "html widget 5ebfaa4"
+  },
+  {
+   "location": "Visible",
+   "section": "FAQ 10 answer",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "we can file claims for the current year and the prior year",
+   "after": "claims can be filed for the current year and the prior year",
+   "needs_sharad": false,
+   "note": "html widget 5ebfaa4"
+  },
+  {
+   "location": "Button",
+   "section": "bottom CTA band",
+   "editor": "elementor",
+   "action": "delete",
+   "before": "<!-- CTA BOTTOM -->\\r\\n<div class=\\\"sr-cta-bottom\\\"><h2>Your Startup Is Building Technology. Get Paid for It.<\\/h2><p>Gondaliya CPA files SR&amp;ED claims for tech startups across Canada. 35% refundable credit. Pre-revenue eligible. Contingency pricing. CRA defence included. 1450+ five-star reviews.<\\/p><div class=\\\"sr-cta-feats\\\"><div class=\\\"sr-cta-feat\\\">Licensed CPA Ontario<\\/div><div class=\\\"sr-cta-feat\\\">1450+ Five-Star Reviews<\\/div><div class=\\\"sr-cta-feat\\\">35% Refundable Credit<\\/div><div class=\\\"sr-cta-feat\\\">Contingency Pricing<\\/div><\\/div><a href=\\\"https:\\/\\/gondaliyacpa.ca\\/consultation\\/\\\" class=\\\"sr-btn-blue\\\" style=\\\"margin:0 6px;\\\">Free SR&amp;ED Assessment<\\/a><a href=\\\"https:\\/\\/gondaliyacpa.ca\\/technology-startups-saas-companies\\/\\\" style=\\\"margin:0 6px;background:transparent;color:#fff !important;padding:11px 24px;border-radius:6px;font-weight:700;font-size:0.95em;text-transform:uppercase;border:2px solid rgba(255,255,255,0.4);text-decoration:none !important;display:inline-block;line-height:1.4;text-align:center;\\\">Tech Startup Accounting<\\/a><\\/div>\\r\\n\\r\\n",
+   "after": "",
+   "needs_sharad": false,
+   "note": "html widget 5ebfaa4; \"Get Paid for It\" band with firm claim line, 1450+ reviews badges, /consultation/ button and Tech Startup Accounting button."
+  },
+  {
+   "location": "JSON-LD",
+   "section": "FAQPage JSON-LD Q1",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "Pre-revenue qualifies. Free assessment.",
+   "after": "Pre-revenue qualifies.",
+   "needs_sharad": false,
+   "note": "html widget 5ebfaa4"
+  },
+  {
+   "location": "JSON-LD",
+   "section": "FAQPage JSON-LD Q6 (filing cost)",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "15-20% contingency on approved credit. Nothing upfront. Free assessment. CRA defence included. T2 filed free.",
+   "after": "Gondaliya CPA does not prepare SR&ED claims. Fees vary by provider; many charge a percentage of the approved credit on a contingency basis.",
+   "needs_sharad": false,
+   "note": "html widget 5ebfaa4; mirrors visible FAQ 6."
+  },
+  {
+   "location": "JSON-LD",
+   "section": "FAQPage JSON-LD Q9",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "We prepare team, attend meeting, negotiate reductions, file objection if needed.",
+   "after": "Prepare the team; a formal objection can be filed if needed.",
+   "needs_sharad": false,
+   "note": "html widget 5ebfaa4"
+  },
+  {
+   "location": "JSON-LD",
+   "section": "AccountingService schema",
+   "editor": "elementor",
+   "action": "delete",
+   "before": "<script type=\\\"application\\/ld+json\\\">{\\\"@context\\\":\\\"https:\\/\\/schema.org\\\",\\\"@type\\\":\\\"AccountingService\\\",\\\"name\\\":\\\"Gondaliya CPA, SR&ED Claims for Tech Startups\\\",\\\"url\\\":\\\"https:\\/\\/gondaliyacpa.ca\\/sred-claims-for-tech-startups\\/\\\",\\\"telephone\\\":\\\"+16472129559\\\",\\\"serviceType\\\":\\\"SR&ED Tax Credit Claims for Technology Startups\\\",\\\"priceRange\\\":\\\"$$\\\"}<\\/script>",
+   "after": "",
+   "needs_sharad": false,
+   "note": "html widget 5ebfaa4; Service schema with the firm providing SR&ED claims. FAQPage schema stays."
+  }
+ ],
+ "page_note": "Elementor page; whole page is one html widget (5ebfaa4) holding the H1, all sections, FAQ and JSON-LD. content.raw is a fallback copy, not audited. H1 \"SR&ED Claims for Tech Startups\" kept. No Rank Math title/description stored. Kept as informational: qualification, expenditure, worked example, narrative, CRA review (rewritten to passive), mistakes tables, typical claim ranges, city links, links to /technology-startups-saas-companies/."
+}

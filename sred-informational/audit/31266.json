@@ -1,0 +1,40 @@
+{
+  "id": 31266,
+  "url": "https://gondaliyacpa.ca/?elementor_library=marketing-agencies",
+  "title": "Marketing Agencies",
+  "type": "elementor_library",
+  "elementor": true,
+  "rows": [
+    {
+      "location": "Visible",
+      "section": "Service feature box \"Tax Credits & SR&ED\"",
+      "editor": "elementor",
+      "action": "replace",
+      "before": "\"title_text\":\"Tax Credits & SR&ED\",\"description_text\":\"Identify eligible R&D activities within your MarTech and data projects to claim significant government funding.\"",
+      "after": "\"title_text\":\"Tax Credits\",\"description_text\":\"Eligible R&D activities within MarTech and data projects may qualify for government funding.\"",
+      "needs_sharad": false,
+      "note": "Feature box offering to identify/claim SR&ED."
+    },
+    {
+      "location": "Visible",
+      "section": "Icon box title (service card)",
+      "editor": "elementor",
+      "action": "replace",
+      "before": "\"ekit_icon_box_title_text\":\"SR&ED Tax Credit Claims for Marketing, Advertising & PR Agencies \",\"ekit_icon_box_badge_title\":\"EXCLUSIVE\"",
+      "after": "\"ekit_icon_box_title_text\":\"How SR&ED Tax Credits Work for Marketing, Advertising & PR Agencies\",\"ekit_icon_box_badge_title\":\"\"",
+      "needs_sharad": false,
+      "note": "Service card offering SR&ED claims with EXCLUSIVE badge; neutral title, badge cleared, link to SR&ED page kept."
+    },
+    {
+      "location": "Visible",
+      "section": "Icon box description (service card)",
+      "editor": "elementor",
+      "action": "replace",
+      "before": "\"ekit_icon_box_description_text\":\"Maximize your R&D incentives with accurate Scientific Research & Experimental Development (SR&ED) claims.\"",
+      "after": "\"ekit_icon_box_description_text\":\"How Scientific Research & Experimental Development (SR&ED) credits support R&D spending.\"",
+      "needs_sharad": false,
+      "note": ""
+    }
+  ],
+  "page_note": "Elementor template 'Marketing Agencies'. A service feature box and an EXCLUSIVE icon-box card offer SR&ED claims; rewritten neutrally, link kept."
+}

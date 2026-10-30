@@ -1,0 +1,40 @@
+{
+ "id": 40768,
+ "url": "https://gondaliyacpa.ca/complete-guide-to-cra-deadlines-2026-2027/",
+ "title": "Complete Guide to CRA Deadlines 2026-2027",
+ "type": "page",
+ "elementor": true,
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "Section 6 SR&ED deadline warning box",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "We file every SR&amp;ED claim at least 60 days before the deadline. <a href=\\\"https:\\/\\/gondaliyacpa.ca\\/sred-tax-credits\\/\\\">SR&amp;ED Services &#8594;",
+   "after": "<a href=\\\"https:\\/\\/gondaliyacpa.ca\\/sred-tax-credits\\/\\\">How SR&amp;ED works &#8594;",
+   "needs_sharad": false,
+   "note": "Deadline facts stay; offer sentence dropped, anchor neutralized (URL kept)"
+  },
+  {
+   "location": "Visible",
+   "section": "FAQ \"What is the SR&ED filing deadline?\"",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "We file every SR&amp;ED claim at least 60 days early. <a href=\\\"https:\\/\\/gondaliyacpa.ca\\/sred-tax-credits\\/\\\">SR&amp;ED Services &#8594;",
+   "after": "<a href=\\\"https:\\/\\/gondaliyacpa.ca\\/sred-tax-credits\\/\\\">How SR&amp;ED works &#8594;",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Bottom CTA",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "Corporate tax, HST, payroll, information returns, SR&amp;ED. CRA audit support FREE.",
+   "after": "Corporate tax, HST, payroll, information returns. CRA audit support FREE.",
+   "needs_sharad": false,
+   "note": ""
+  }
+ ],
+ "page_note": "CRA deadlines guide. SR&ED T661 deadline section, table rows, FAQ and JSON-LD are informational and stay. Changed: two \"We file every SR&ED claim...\" sentences with \"SR&ED Services\" link anchors, and SR&ED in the bottom CTA list of what the firm tracks/files."
+}

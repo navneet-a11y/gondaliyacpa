@@ -1,0 +1,50 @@
+{
+ "id": 53805,
+ "url": "https://gondaliyacpa.ca/accountant-for-supplement-brands/",
+ "title": "Accounting and Tax Services for Supplement Brands",
+ "type": "page",
+ "elementor": false,
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "FAQ: Does my product development work qualify for SR&ED? (visible)",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "<div class=\"sb-faq-a\">Sometimes, and we would rather say so plainly than sell you a claim.",
+   "after": "<div class=\"sb-faq-a\">Sometimes, and it is worth saying so plainly.",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "FAQ: Does my product development work qualify for SR&ED? (visible)",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "We do not promise eligibility before we have seen the records.</div>",
+   "after": "Eligibility cannot be confirmed before the records have been reviewed.</div>",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "JSON-LD",
+   "section": "FAQPage: Does my product development work qualify for SR&ED?",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "\"text\":\"Sometimes, and we would rather say so plainly than sell you a claim.",
+   "after": "\"text\":\"Sometimes, and it is worth saying so plainly.",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "JSON-LD",
+   "section": "FAQPage: Does my product development work qualify for SR&ED?",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "We do not promise eligibility before we have seen the records.\"}",
+   "after": "Eligibility cannot be confirmed before the records have been reviewed.\"}",
+   "needs_sharad": false,
+   "note": ""
+  }
+ ],
+ "page_note": "Only SR&ED mention is one FAQ (visible + FAQPage); eligibility text kept, the two clauses implying the firm assesses/sells claims rewritten. Low-risk; could also be left as is."
+}

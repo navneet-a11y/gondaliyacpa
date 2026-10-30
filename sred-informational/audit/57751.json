@@ -1,0 +1,280 @@
+{
+ "id": 57751,
+ "url": "https://gondaliyacpa.ca/accountant-for-healthtech-companies/",
+ "title": "Accounting and Tax Services for Healthtech Companies",
+ "type": "page",
+ "elementor": false,
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "Intro paragraph",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "At Gondaliya CPA we do the work that gap leaves undone: the supply characterisation settled and documented, the credits claimed while you are still pre-revenue, and an SR&amp;ED claim that survives contact with a technical reviewer.",
+   "after": "At Gondaliya CPA we do the work that gap leaves undone: the supply characterisation settled and documented, and the credits claimed while you are still pre-revenue.",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "CRA and GST/HST obligations card",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "under ITA section 125 against the $500,000 limit, the SR&amp;ED pool under ITA section 37 and credits under ITA section 127, GST/HST registration",
+   "after": "under ITA section 125 against the $500,000 limit, GST/HST registration",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "How we work, step 2",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "Consulting &mdash; The SR&amp;ED Record</h3><p>We set up the project record in the first month, because it only works kept contemporaneously and cannot be reconstructed convincingly once the build has moved on.</p>",
+   "after": "The SR&amp;ED Record</h3><p>The project record only works kept contemporaneously and cannot be reconstructed convincingly once the build has moved on.</p>",
+   "needs_sharad": false,
+   "note": "Service step offering SR&ED record setup; made informational. Consider removing the step card manually."
+  },
+  {
+   "location": "Visible",
+   "section": "Services grid card (SR&ED Claims)",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "sred-tax-credit-calculator/\">SR&amp;ED Claims</a></h3><p>The ITA section 37 pool and ITA section 127 credits, built from contemporaneous project records rather than a narrative assembled the month before filing.</p>",
+   "after": "sred-tax-credit-calculator/\">How SR&amp;ED Credits Work</a></h3><p>The ITA section 37 pool and ITA section 127 credits, which hold up when built from contemporaneous project records rather than a narrative assembled the month before filing.</p>",
+   "needs_sharad": false,
+   "note": "SR&ED listed as a service with link; neutral anchor, URL kept."
+  },
+  {
+   "location": "Visible",
+   "section": "Services grid card (Payroll for Developers)",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "the contractor-versus-employee question answered honestly, and time records that support the SR&amp;ED claim.",
+   "after": "and the contractor-versus-employee question answered honestly.",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Services grid card (CRA Audit Resolution)",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "Expert support on SR&amp;ED technical reviews, input tax credit examinations and characterisation challenges",
+   "after": "Expert support on input tax credit examinations and characterisation challenges",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Tailored services expanded, item 4 heading",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "SR&amp;ED Claims for Clinical Software</a>",
+   "after": "How SR&amp;ED Works for Clinical Software</a>",
+   "needs_sharad": false,
+   "note": "Neutral anchor; URL kept."
+  },
+  {
+   "location": "Visible",
+   "section": "Tailored services expanded, item 4 bullet",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "That distinction is where nearly every first healthtech claim we review goes wrong, because",
+   "after": "That distinction is where nearly every first healthtech claim goes wrong, because",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Tailored services expanded, item 4 last bullet",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "<li>So we set up contemporaneous records while the work happens: what was uncertain",
+   "after": "<li>Contemporaneous records need to be kept while the work happens: what was uncertain",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Tailored services expanded, item 5 bullets",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "<li>We read the funding agreements before the claim rather than after, and we model the net benefit of taking a particular grant against the credit it will cost you, which is a conversation worth having early.</li><li>We also keep the claim and the grant reporting consistent with each other, because",
+   "after": "<li>Funding agreements are best read before the claim rather than after, and the net benefit of taking a particular grant is worth modelling against the credit it will cost you, early.</li><li>The claim and the grant reporting need to stay consistent with each other, because",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Tailored services expanded, payroll item bullet",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "We keep the payroll records SR&amp;ED needs, which means time allocated to eligible work as it happens",
+   "after": "Payroll records for SR&amp;ED need time allocated to eligible work as it happens",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Tailored services expanded, CRA disputes bullet",
+   "editor": "post_content",
+   "action": "delete",
+   "before": "<li>When an SR&amp;ED claim goes to technical review, we produce the contemporaneous project records and we handle the correspondence, including the awkward part where some of the claim was clinical validation.</li>",
+   "after": "",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Readiness quiz result (5+ yes)",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "Your supply characterisation, input tax credits, SR&amp;ED records, grant treatment, deferred revenue",
+   "after": "Your supply characterisation, input tax credits, grant treatment, deferred revenue",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Readiness quiz result (3-4 yes)",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "A short review of your characterisation, credits and SR&amp;ED documentation could uncover",
+   "after": "A short review of your characterisation and credits could uncover",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Case study card: Waterloo Remote Monitoring (SR&ED claims)",
+   "editor": "post_content",
+   "action": "delete",
+   "before": "<div class=\"sb-case-card\"><h3>Waterloo Remote Monitoring &mdash; A Grant Nobody Mentioned</h3><p><strong>The problem:</strong> A remote patient monitoring company had filed two SR&amp;ED claims prepared by a contingency-fee firm. Neither claim mentioned the provincial health innovation funding and hospital partnership payments the company had received across the same periods. The claims had been paid, the cash had been spent on payroll, and a review had just opened on the second year.</p><p><strong>What we did:</strong> We read the funding agreements, applied ITA subsection 127(11.1) to work out which payments were assistance and by how much they reduced the qualified expenditures, and put a corrected position forward ourselves rather than waiting to be told. We then rebuilt the project records so the third claim separated the systematic investigation from the clinical validation work.</p><p><strong>The result:</strong></p><ul class=\"sb-case-res\"><li>Assistance reduction quantified and disclosed proactively</li><li>Third claim filed with validation work properly excluded</li><li>Contemporaneous project records in place from that quarter</li></ul></div>\n",
+   "after": "",
+   "needs_sharad": true,
+   "note": "Sales-proof case study of the firm handling SR&ED claims; nothing informational left about the firm. Sharad to confirm."
+  },
+  {
+   "location": "Visible",
+   "section": "Onboarding Step 1 Kickoff",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "prior returns and SR&amp;ED claims, payroll",
+   "after": "prior returns, payroll",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Onboarding Step 2 First 30 Days",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "in writing and start the contemporaneous SR&amp;ED project record, then reconstruct",
+   "after": "in writing, then reconstruct",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Onboarding Step 4 Annual Planning Review",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "loss carryforwards, SR&amp;ED cash flow timing, and the statements",
+   "after": "loss carryforwards, and the statements",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Onboarding Step 5 Year-End Close",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "T2 with the small business deduction, the SR&amp;ED claim filed with its records, credits claimed",
+   "after": "T2 with the small business deduction, credits claimed",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "FAQ: Can I claim SR&ED on clinical software? (visible)",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "claim we review goes wrong.</div>",
+   "after": "claim goes wrong.</div>",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "JSON-LD",
+   "section": "FAQPage: Can I claim SR&ED on clinical software?",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "claim we review goes wrong.\"}}",
+   "after": "claim goes wrong.\"}}",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "FAQ: Does a grant reduce my SR&ED claim? (visible)",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "So we read the funding agreements before the claim rather than after, and where you are choosing whether to take a particular grant, we model the net benefit against the credit it will cost.</div>",
+   "after": "So the funding agreements are best read before the claim rather than after, and where you are choosing whether to take a particular grant, the net benefit is worth modelling against the credit it will cost.</div>",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "JSON-LD",
+   "section": "FAQPage: Does a grant reduce my SR&ED claim?",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "So we read the funding agreements before the claim rather than after, and where you are choosing whether to take a particular grant, we model the net benefit against the credit it will cost.\"}}",
+   "after": "So the funding agreements are best read before the claim rather than after, and where you are choosing whether to take a particular grant, the net benefit is worth modelling against the credit it will cost.\"}}",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "FAQ: What do you actually do (visible)",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "claim and apportion your input tax credits, build and file the SR&amp;ED claim from contemporaneous records under ITA sections 37 and 127, test your grants against ITA subsection 127(11.1), split",
+   "after": "claim and apportion your input tax credits, split",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "JSON-LD",
+   "section": "FAQPage: What do you actually do",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "claim and apportion your input tax credits, build and file the SR&ED claim from contemporaneous records under ITA sections 37 and 127, test your grants against ITA subsection 127(11.1), split",
+   "after": "claim and apportion your input tax credits, split",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Final CTA paragraph",
+   "editor": "post_content",
+   "action": "delete",
+   "before": " An SR&amp;ED claim under ITA sections 37 and 127 built from contemporaneous records, with the systematic investigation separated from the clinical validation that usually does not qualify, and your grants tested against ITA subsection 127(11.1) before the claim rather than after.",
+   "after": "",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "JSON-LD",
+   "section": "Service/ProfessionalService schema description",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "input tax credits claimed and apportioned, SR&ED under ITA sections 37 and 127 built from contemporaneous records with clinical validation separated out, grants tested against ITA subsection 127(11.1), regulatory",
+   "after": "input tax credits claimed and apportioned, regulatory",
+   "needs_sharad": false,
+   "note": ""
+  }
+ ],
+ "page_note": "Healthtech industry service page with SR&ED offered throughout. Informational SR&ED text kept (hero, 'Validation Is Not SR&ED', 'we state no SR&ED rate', two-records advice, item 4/5 eligibility bullets, quiz questions, FAQ eligibility text, 'defensible SR&ED position' for investors). Meta description mentions SR&ED informationally (grants reduce claims); not changed."
+}

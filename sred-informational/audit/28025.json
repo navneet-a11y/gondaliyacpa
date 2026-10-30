@@ -1,0 +1,110 @@
+{
+ "id": 28025,
+ "url": "https://gondaliyacpa.ca/case-studies/toronto-sred-tax-credits/",
+ "title": "How We Assisted a Toronto Tech Company to Maximize SR&amp;ED Tax Credit",
+ "type": "page",
+ "elementor": true,
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "H1 (heading b66b906)",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "\"title\":\"How We Assisted a Toronto Tech Company to Maximize SR&ED Tax Credit\"",
+   "after": "\"title\":\"Case Study: SR&ED Tax Credits for a Toronto Tech Company\"",
+   "needs_sharad": true,
+   "note": "H1 claims the firm assisted with an SR&ED claim. Proposal only (H1 + case study). The WordPress post title has the same wording; change it too if approved. Slug unchanged."
+  },
+  {
+   "location": "Visible",
+   "section": "intro paragraph (24f92b3d)",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "approached Gondaliya\\u202fCPA for guidance on claiming",
+   "after": "sought guidance on claiming",
+   "needs_sharad": true,
+   "note": "Case study about the firm. Proposal."
+  },
+  {
+   "location": "Visible",
+   "section": "intro, notice after intro paragraph",
+   "editor": "elementor",
+   "action": "insert_after",
+   "before": "navigate the complex application process and maximize their eligible credits.<\\/p>",
+   "after": "navigate the complex application process and maximize their eligible credits.<\\/p><p class=\\\"sred-notice\\\"><strong>Gondaliya CPA does not prepare SR&amp;ED claims. This page explains how the SR&amp;ED program works, for general information only.<\\/strong><\\/p>",
+   "needs_sharad": false,
+   "note": "Notice right after the first intro paragraph under the H1."
+  },
+  {
+   "location": "Visible",
+   "section": "\"What We Did\" heading",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "<strong>What We Did<\\/strong>",
+   "after": "<strong>What the Claim Involved<\\/strong>",
+   "needs_sharad": true,
+   "note": "Proposal."
+  },
+  {
+   "location": "Visible",
+   "section": "\"What We Did\" step 1",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "We analyzed the company\\u2019s projects, processes, and expenditures to determine eligibility",
+   "after": "The company\\u2019s projects, processes, and expenditures were analyzed to determine eligibility",
+   "needs_sharad": true,
+   "note": "Proposal: firm-as-preparer wording made neutral."
+  },
+  {
+   "location": "Visible",
+   "section": "\"What We Did\" step 2",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "Our team prepared detailed technical narratives and financial records to support",
+   "after": "Detailed technical narratives and financial records were prepared to support",
+   "needs_sharad": true,
+   "note": "Proposal."
+  },
+  {
+   "location": "Visible",
+   "section": "\"What We Did\" step 3",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "We calculated the maximum eligible credits,",
+   "after": "The maximum eligible credits were calculated,",
+   "needs_sharad": true,
+   "note": "Proposal."
+  },
+  {
+   "location": "Visible",
+   "section": "\"What We Did\" step 4",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "We submitted the claim and provided ongoing support in case of CRA questions or audit requests, ensuring a smooth review process.",
+   "after": "The claim was submitted, with ongoing support in case of CRA questions or audit requests.",
+   "needs_sharad": true,
+   "note": "Proposal."
+  },
+  {
+   "location": "Visible",
+   "section": "Summary paragraph",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "Toronto tech companies trust Gondaliya\\u202fCPA to navigate the SR&amp;ED process, claim all eligible credits, and ensure CRA compliance, enabling them to reinvest",
+   "after": "Toronto tech companies that navigate the SR&amp;ED process, claim all eligible credits, and ensure CRA compliance can reinvest",
+   "needs_sharad": true,
+   "note": "Proposal: \"trust Gondaliya CPA\" sales line made neutral."
+  },
+  {
+   "location": "Meta",
+   "section": "Rank Math meta description",
+   "editor": "rank_math",
+   "action": "replace",
+   "before": "Gondaliya CPA guided a Toronto tech company to maximize SR&ED tax credits, ensuring CRA compliance and increasing cash flow for R&D reinvestment.",
+   "after": "How a Toronto tech company approached SR&ED tax credits, CRA compliance and cash flow for R&D reinvestment.",
+   "needs_sharad": true,
+   "note": "Proposal only; meta description needs Sharad. before contains U+202F (narrow no-break space) between Gondaliya and CPA, as stored."
+  }
+ ],
+ "page_note": "Case study (needs Sharad for anything about the firm). Elementor: H1 heading b66b906 + one text-editor 24f92b3d; content.raw is a fallback copy. No CTAs, forms, phone/email links, fees or schema on the page. The whole page presents the firm as having prepared and filed an SR&ED claim; Sharad should decide whether to keep it as a neutral example (rows proposed) or rewrite further. Client/objectives/results lists stay as written. NOTE: the _elementor_data string for this ID was transcribed from an inline tool result (the response was not saved to a file); before strings were verified against that transcription."
+}

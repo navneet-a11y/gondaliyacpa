@@ -1,0 +1,260 @@
+{
+ "id": 43101,
+ "url": "https://gondaliyacpa.ca/cfo-services-for-tech-startups/",
+ "title": "CFO Services for Tech Startups",
+ "type": "page",
+ "elementor": false,
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "Hero",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "investor-ready reporting, SR&amp;ED and fundraising support of a full-time CFO",
+   "after": "investor-ready reporting and fundraising support of a full-time CFO",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Hero feature line",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "Runway, burn, SR&amp;ED, fundraising, reporting",
+   "after": "Runway, burn, fundraising, reporting",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Services grid card",
+   "editor": "post_content",
+   "action": "delete",
+   "before": "<div class=\"cr-svc\"><div class=\"cr-svc-icon\">&#129516;</div><h3>SR&amp;ED &amp; Tax Credits</h3><p>Identify and support SR&amp;ED claims and other credits so the government funds part of your R&amp;D and extends your runway.</p></div>\n",
+   "after": "",
+   "needs_sharad": false,
+   "note": "Service card offering SR&ED claim support"
+  },
+  {
+   "location": "Visible",
+   "section": "What the CFO does list",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "Identify whether SR&amp;ED or other credits are being left on the table.",
+   "after": "Identify whether tax credits are being left on the table.",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "What the CFO does list",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "Keep SR&amp;ED, bookkeeping and the corporate return tied together.",
+   "after": "Keep bookkeeping and the corporate return tied together.",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Case study card \"Pre-Seed Tech Startup, Ontario\"",
+   "editor": "post_content",
+   "action": "delete",
+   "before": "<div class=\"cr-case-card\"><h3>Pre-Seed Tech Startup, Ontario</h3><p>An early startup had never claimed SR&amp;ED despite significant R&amp;D. We set up the books to capture eligible work and supported the claim, recovering credits that extended the runway by months without raising a dollar.</p><span class=\"cr-case-stat\">SR&amp;ED claimed. Runway extended.</span></div>\n",
+   "after": "",
+   "needs_sharad": false,
+   "note": "Sales-proof case card where the firm supported an SR&ED claim"
+  },
+  {
+   "location": "Visible",
+   "section": "Pricing tier features",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "Clean books, burn and runway tracking, SR&amp;ED setup",
+   "after": "Clean books, burn and runway tracking",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "What is included table",
+   "editor": "post_content",
+   "action": "delete",
+   "before": "<tr><td>SR&amp;ED &amp; tax credits</td><td>Identifying and supporting SR&amp;ED and other credits to extend your runway.</td></tr>\n",
+   "after": "",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "SR&ED info callout",
+   "editor": "post_content",
+   "action": "replace",
+   "before": " We make sure the books capture it and the claim is supported. <a href=\"https://gondaliyacpa.ca/sred-tax-credit-claims/\">SR&amp;ED Claims &#8594;</a></p></div></div></div>",
+   "after": " <a href=\"https://gondaliyacpa.ca/sred-tax-credit-claims/\">How SR&amp;ED works &#8594;</a></p></div></div></div>",
+   "needs_sharad": false,
+   "note": "Callout explanation stays; offer sentence dropped and link anchor neutralized"
+  },
+  {
+   "location": "Visible",
+   "section": "Signs you need a CFO checklist",
+   "editor": "post_content",
+   "action": "delete",
+   "before": "<li>You are developing software or technology and have never claimed SR&amp;ED</li>\n",
+   "after": "",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Who it is for list",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "You want one firm to handle CFO, SR&amp;ED, bookkeeping and tax together",
+   "after": "You want one firm to handle CFO, bookkeeping and tax together",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Why choose us",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "Burn, runway, SaaS metrics, SR&amp;ED and fundraising, not generic accounting.",
+   "after": "Burn, runway, SaaS metrics and fundraising, not generic accounting.",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "FAQ \"What is SR&ED and can you help me claim it?\"",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "We set up the books to capture eligible work and support the claim, which can directly extend your runway. <a href=\"https://gondaliyacpa.ca/sred-tax-credit-claims/\">SR&amp;ED Claims &#8594;</a>",
+   "after": "Gondaliya CPA does not prepare SR&amp;ED claims, but a properly supported claim can directly extend your runway. <a href=\"https://gondaliyacpa.ca/sred-tax-credit-claims/\">How SR&amp;ED works &#8594;</a>",
+   "needs_sharad": false,
+   "note": "Question stays; answer and anchor no longer offer the service"
+  },
+  {
+   "location": "JSON-LD",
+   "section": "FAQ \"What is SR&ED and can you help me claim it?\"",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "We set up the books to capture eligible work and support the claim, which can directly extend your runway. SR&ED Claims\"}}",
+   "after": "Gondaliya CPA does not prepare SR&ED claims, but a properly supported claim can directly extend your runway. How SR&ED works\"}}",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "FAQ \"Can you also handle my bookkeeping and taxes?\"",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "We can run your startup bookkeeping, HST, SR&amp;ED and corporate tax return",
+   "after": "We can run your startup bookkeeping, HST and corporate tax return",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "JSON-LD",
+   "section": "FAQ \"Can you also handle my bookkeeping and taxes?\"",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "We can run your startup bookkeeping, HST, SR&ED and corporate tax return",
+   "after": "We can run your startup bookkeeping, HST and corporate tax return",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "FAQ \"Is a CFO too early for pre-seed?\"",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "clean reporting and SR&amp;ED set up properly from the start",
+   "after": "clean reporting set up properly from the start",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "JSON-LD",
+   "section": "FAQ \"Is a CFO too early for pre-seed?\"",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "clean reporting and SR&ED set up properly from the start",
+   "after": "clean reporting set up properly from the start",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Team bio - Sharad",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "investor-grade models, SR&amp;ED and fundraising support",
+   "after": "investor-grade models and fundraising support",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Tips - Keep CFO, SR&ED and tax under one roof",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "Keep CFO, SR&amp;ED and tax under one roof",
+   "after": "Keep CFO and tax under one roof",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Tips - Keep CFO, SR&ED and tax under one roof",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "When the model, the bookkeeping, the SR&amp;ED claim and the corporate return all sit with one firm",
+   "after": "When the model, the bookkeeping and the corporate return all sit with one firm",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Related services links",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "<a href=\"https://gondaliyacpa.ca/sred-tax-credit-claims/\">SR&amp;ED Tax Credit Claims",
+   "after": "<a href=\"https://gondaliyacpa.ca/sred-tax-credit-claims/\">How SR&amp;ED Tax Credits Work",
+   "needs_sharad": false,
+   "note": "SR&ED listed among related services; neutral anchor, URL kept"
+  },
+  {
+   "location": "Visible",
+   "section": "Final CTA text",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "Runway control, a fundable model, SR&amp;ED and investor-ready reporting",
+   "after": "Runway control, a fundable model and investor-ready reporting",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Button",
+   "section": "Final CTA button",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "class=\"cr-btn-blue\" style=\"margin:0 6px;\">SR&amp;ED Claims</a>",
+   "after": "class=\"cr-btn-blue\" style=\"margin:0 6px;\">How SR&amp;ED Works</a>",
+   "needs_sharad": false,
+   "note": "Button to SR&ED page in final CTA; neutral label, URL kept (or remove the button)"
+  },
+  {
+   "location": "JSON-LD",
+   "section": "AccountingService schema description",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "financial modelling, SaaS metrics, SR&ED, fundraising and investor reporting",
+   "after": "financial modelling, SaaS metrics, fundraising and investor reporting",
+   "needs_sharad": false,
+   "note": ""
+  }
+ ],
+ "page_note": "CFO services for tech startups (non-Elementor page). SR&ED is offered as part of the CFO service throughout. Rows drop the offer clauses, a service card, a case card and a table row; informational SR&ED lines (runway FAQ, \"Claim SR&ED every year\" tip, \"claim your SR&ED credits\" link, bookkeeping capturing R&D spend) stay."
+}

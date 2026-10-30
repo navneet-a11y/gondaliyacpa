@@ -1,0 +1,20 @@
+{
+ "id": 57935,
+ "url": "https://gondaliyacpa.ca/multi-residential-building-taxes-canada/",
+ "title": "The Ultimate Guide to Multi-Residential Building Taxes and Accounting in Canada",
+ "type": "post",
+ "elementor": false,
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "Our Actual Experience callout (SR&ED)",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "a client building their own adaptive delivery system had a defensible claim, and the claim was about the software, not the teaching.</p>\n<p>We would rather tell someone no in October than help them file something that comes apart under review two years later. Figures changed for privacy.</p>",
+   "after": "a business building its own adaptive delivery system can have a defensible claim, and the claim is about the software, not the teaching.</p>",
+   "needs_sharad": false,
+   "note": "Drops the firm-experience/filing-help clause on SR&ED claims; keeps the eligibility explanation."
+  }
+ ],
+ "page_note": "Other SR&ED mentions are informational (eligibility explanation in credits list, Quick Answers, FAQ + FAQPage JSON-LD, glossary + DefinedTerm). Note: post body appears to contain online-education content."
+}

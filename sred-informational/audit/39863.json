@@ -1,0 +1,150 @@
+{
+  "id": 39863,
+  "url": "https://gondaliyacpa.ca/how-to-start-a-saas-tech-startup-in-canada/",
+  "title": "How to Start a SaaS / Tech Startup in Canada",
+  "type": "page",
+  "elementor": true,
+  "rows": [
+    {
+      "location": "Visible",
+      "section": "Bookkeeping services table - SR&ED expense tracking row",
+      "editor": "elementor",
+      "action": "replace",
+      "before": "All data feeds directly into the T661 claim preparation.",
+      "after": "All data feeds directly into the T661 claim.",
+      "needs_sharad": false,
+      "note": ""
+    },
+    {
+      "location": "Visible",
+      "section": "Bookkeeping services table - T2 row",
+      "editor": "elementor",
+      "action": "replace",
+      "before": "Financial statements, T2, GIFI, SR&amp;ED T661, all CRA schedules",
+      "after": "Financial statements, T2, GIFI, all CRA schedules",
+      "needs_sharad": false,
+      "note": "SR&ED T661 offered as part of the firm's package."
+    },
+    {
+      "location": "Visible",
+      "section": "Inline CTA heading",
+      "editor": "elementor",
+      "action": "replace",
+      "before": "T2 + SR&amp;ED Filed FREE.<\\/h3>",
+      "after": "T2 Filed FREE.<\\/h3>",
+      "needs_sharad": false,
+      "note": ""
+    },
+    {
+      "location": "Visible",
+      "section": "Inline CTA text",
+      "editor": "elementor",
+      "action": "replace",
+      "before": "<p>MRR tracking, deferred revenue, SR&amp;ED, HST refunds",
+      "after": "<p>MRR tracking, deferred revenue, HST refunds",
+      "needs_sharad": false,
+      "note": ""
+    },
+    {
+      "location": "Visible",
+      "section": "Case study \"Pre-Revenue SaaS Startup (Toronto)\"",
+      "editor": "elementor",
+      "action": "replace",
+      "before": "We filed the SR&amp;ED T661 claim and recovered $119,000 in refundable credits. HST refund on zero-rated US sales: $4,800. Combined government credits and refunds in year one: $123,800. The startup extended its runway by 4 months without raising additional capital.",
+      "after": "HST refund on zero-rated US sales: $4,800.",
+      "needs_sharad": true,
+      "note": "Client-result case study: firm claims it filed SR&ED. Flagged for Sharad; he may prefer to drop the case card."
+    },
+    {
+      "location": "Visible",
+      "section": "Case study \"Pre-Revenue SaaS Startup (Toronto)\" stat",
+      "editor": "elementor",
+      "action": "replace",
+      "before": "$123,800 in SR&amp;ED credits + HST refunds recovered in year one",
+      "after": "$4,800 in HST refunds recovered in year one",
+      "needs_sharad": true,
+      "note": "Client-result case study: firm claims it filed SR&ED. Flagged for Sharad; he may prefer to drop the case card."
+    },
+    {
+      "location": "Visible",
+      "section": "Case study \"Seed-Stage SaaS, $500K Round (Markham)\"",
+      "editor": "elementor",
+      "action": "delete",
+      "before": " We also identified $84,000 in unclaimed prior-year SR&amp;ED credits and filed amended T661s.",
+      "after": "",
+      "needs_sharad": true,
+      "note": "Client-result case study: firm claims it filed SR&ED. Flagged for Sharad; he may prefer to drop the case card."
+    },
+    {
+      "location": "Visible",
+      "section": "Case study \"Seed-Stage SaaS\" stat",
+      "editor": "elementor",
+      "action": "replace",
+      "before": "$500K round closed + $84,000 in prior-year SR&amp;ED recovered",
+      "after": "$500K round closed",
+      "needs_sharad": true,
+      "note": "Client-result case study: firm claims it filed SR&ED. Flagged for Sharad; he may prefer to drop the case card."
+    },
+    {
+      "location": "Visible",
+      "section": "Mistakes table row 3 \"Not claiming SR&ED tax credits\"",
+      "editor": "elementor",
+      "action": "delete",
+      "before": " We prepare the claim for every tech client.",
+      "after": "",
+      "needs_sharad": false,
+      "note": ""
+    },
+    {
+      "location": "Visible",
+      "section": "Mistakes table row 10 \"Not having a CPA who understands SaaS\"",
+      "editor": "elementor",
+      "action": "replace",
+      "before": "serves SaaS startups, prepares SR&amp;ED claims, configures",
+      "after": "serves SaaS startups, configures",
+      "needs_sharad": false,
+      "note": ""
+    },
+    {
+      "location": "Visible",
+      "section": "FAQ \"How much does SaaS startup bookkeeping cost?\" (visible)",
+      "editor": "elementor",
+      "action": "delete",
+      "before": " SR&amp;ED T661 preparation included for bookkeeping clients.",
+      "after": "",
+      "needs_sharad": false,
+      "note": ""
+    },
+    {
+      "location": "JSON-LD",
+      "section": "FAQPage \"Bookkeeping cost?\" answer",
+      "editor": "elementor",
+      "action": "replace",
+      "before": "SaaS metrics, T2 + T661 FREE.",
+      "after": "SaaS metrics, T2 FREE.",
+      "needs_sharad": false,
+      "note": ""
+    },
+    {
+      "location": "Visible",
+      "section": "Bottom CTA text",
+      "editor": "elementor",
+      "action": "replace",
+      "before": "<p>Incorporation, SR&amp;ED, HST refunds, deferred revenue",
+      "after": "<p>Incorporation, HST refunds, deferred revenue",
+      "needs_sharad": false,
+      "note": ""
+    },
+    {
+      "location": "Button",
+      "section": "Bottom CTA feature badge",
+      "editor": "elementor",
+      "action": "delete",
+      "before": "<div class=\\\"ss-cta-feat\\\">SR&amp;ED T661 Included<\\/div>",
+      "after": "",
+      "needs_sharad": false,
+      "note": "Badge selling SR&ED T661 as included."
+    }
+  ],
+  "page_note": "SaaS/tech startup guide page (Elementor). Informational SR&ED content (step 5, credit tables, FAQ What is SR&ED / When to claim, 'unclaimed because nobody prepared the T661') kept. Offer lines in package tables, CTAs, case studies, mistakes table and pricing FAQ rewritten. Case-study rows flagged needs_sharad."
+}

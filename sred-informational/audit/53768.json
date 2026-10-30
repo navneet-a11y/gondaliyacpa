@@ -1,0 +1,30 @@
+{
+ "id": 53768,
+ "url": "https://gondaliyacpa.ca/engineering-consultant-tax-deductions-canada/",
+ "title": "Engineering Consultant Tax Deductions in Canada: Professional Fees, Software, Equipment & Business Expenses",
+ "type": "post",
+ "elementor": false,
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "Closing paragraph (Gondaliya CPA reviews...)",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "the compiled statements, the T2 and any SR&amp;ED claim to its own 18-month deadline &mdash; on a flat annual fee",
+   "after": "the compiled statements and the T2 &mdash; on a flat annual fee",
+   "needs_sharad": false,
+   "note": "Drops SR&ED filing from the services the firm offers."
+  },
+  {
+   "location": "JSON-LD",
+   "section": "Service schema serviceType",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "subcontractor withholding, SR&ED claims, GST/HST filing",
+   "after": "subcontractor withholding, GST/HST filing",
+   "needs_sharad": false,
+   "note": ""
+  }
+ ],
+ "page_note": "Other mentions informational (SR&ED section, capital exclusion, 18-month deadline, generic scenario, FAQ + FAQPage, glossary). Author bio lists SR&ED experience; kept as author line."
+}

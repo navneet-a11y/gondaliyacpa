@@ -1,0 +1,40 @@
+{
+ "id": 40045,
+ "url": "https://gondaliyacpa.ca/corporate-year-end-tax-planning-strategies-every-business-owner-should-know/",
+ "title": "Corporate Year-End Tax Planning Strategies Every Business Owner Should Know",
+ "type": "post",
+ "elementor": false,
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "Author box (top)",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "Sharad Gondaliya, CPA, brings 15+ years of experience advising incorporated Canadian businesses on corporate year-end planning, covering the small business deduction and the taxable capital and passive income grinds, association rules and business limit sharing, income and expense timing across the year-end line, capital cost allowance classification and the reinstated investment incentive, salary against dividend structuring and integration, eligible and non-eligible dividend designation, shareholder loan timing, refundable tax and the capital dividend account, SR&amp;ED, GST/HST",
+   "after": "Sharad Gondaliya, CPA, brings 15+ years of experience advising incorporated Canadian businesses on corporate year-end planning, covering the small business deduction and the taxable capital and passive income grinds, association rules and business limit sharing, income and expense timing across the year-end line, capital cost allowance classification and the reinstated investment incentive, salary against dividend structuring and integration, eligible and non-eligible dividend designation, shareholder loan timing, refundable tax and the capital dividend account, GST/HST",
+   "needs_sharad": false,
+   "note": "SR&ED listed among the firm's advisory/service areas"
+  },
+  {
+   "location": "Visible",
+   "section": "About the author (bottom)",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "Sharad Gondaliya, CPA, has over 15 years of experience advising incorporated Canadian businesses on corporate year-end planning, covering the small business deduction and the taxable capital and passive income grinds, association rules and business limit sharing, income and expense timing across the year-end line, capital cost allowance classification and the reinstated investment incentive, salary against dividend structuring and integration, eligible and non-eligible dividend designation, shareholder loan timing, refundable tax and the capital dividend account, SR&amp;ED, GST/HST",
+   "after": "Sharad Gondaliya, CPA, has over 15 years of experience advising incorporated Canadian businesses on corporate year-end planning, covering the small business deduction and the taxable capital and passive income grinds, association rules and business limit sharing, income and expense timing across the year-end line, capital cost allowance classification and the reinstated investment incentive, salary against dividend structuring and integration, eligible and non-eligible dividend designation, shareholder loan timing, refundable tax and the capital dividend account, GST/HST",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "JSON-LD",
+   "section": "Service schema serviceType",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "split income considerations, SR&ED assessment, GST/HST",
+   "after": "split income considerations, GST/HST",
+   "needs_sharad": false,
+   "note": "Service schema lists SR&ED assessment as a firm service"
+  }
+ ],
+ "page_note": "Year-end tax planning post. In-body SR&ED paragraph (linked \"SR&ED tax credits\") and FAQs are informational and stay. Changed: SR&ED in the two author-bio service/expertise lists and \"SR&ED assessment\" in the Service schema serviceType."
+}

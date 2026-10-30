@@ -1,0 +1,30 @@
+{
+ "id": 53185,
+ "url": "https://gondaliyacpa.ca/t2-adjustment-request-calculator/",
+ "title": "T2 Adjustment Request Calculator (Amending a Filed Corporate Return)",
+ "type": "page",
+ "elementor": false,
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "Calculator next-step message (SR&ED deadline passed, inline JS)",
+   "editor": "post_content",
+   "action": "delete",
+   "before": " Send us the year ends for the open years and we will make sure the claim information goes in on time for those.",
+   "after": "",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Calculator next-step message (SR&ED selected, inline JS)",
+   "editor": "post_content",
+   "action": "delete",
+   "before": " Send us the project descriptions and the expenditure detail and we will get the claim information in.",
+   "after": "",
+   "needs_sharad": false,
+   "note": ""
+  }
+ ],
+ "page_note": "T2 adjustment calculator. SR&ED 18-month deadline explanations, dropdown option, result logic and related-card link to the SR&ED calculator are informational and kept; only the two 'send us ... we will file the SR&ED claim' result messages are offers."
+}

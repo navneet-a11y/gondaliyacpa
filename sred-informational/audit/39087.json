@@ -1,0 +1,70 @@
+{
+ "id": 39087,
+ "url": "https://gondaliyacpa.ca/how-to-start-a-tech-company-in-ontario/",
+ "title": "How to Start a Tech Company in Ontario",
+ "type": "page",
+ "elementor": true,
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "Step 4 SR&ED info box",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "We assess SR&amp;ED eligibility for every tech client. <a href=\\\"https:\\/\\/gondaliyacpa.ca\\/sred-tax-credits\\/\\\">SR&amp;ED Assessment &#8594;",
+   "after": "<a href=\\\"https:\\/\\/gondaliyacpa.ca\\/sred-tax-credits\\/\\\">How SR&amp;ED works &#8594;",
+   "needs_sharad": false,
+   "note": "Explanation stays; offer sentence dropped, anchor neutralized"
+  },
+  {
+   "location": "Visible",
+   "section": "Step 4 inline CTA \"SR&ED Assessment Included with Every Tech Incorporation\"",
+   "editor": "elementor",
+   "action": "delete",
+   "before": "<div class=\\\"tc-cta-inline\\\"><div><h3>SR&amp;ED Assessment Included with Every Tech Incorporation<\\/h3><p>We assess your R&amp;D eligibility, prepare T661 technical narratives and file your SR&amp;ED claim.<\\/p><\\/div><a href=\\\"https:\\/\\/gondaliyacpa.ca\\/consultation\\/\\\" class=\\\"tc-btn-blue\\\">Book Free Consultation<\\/a><\\/div>",
+   "after": "",
+   "needs_sharad": false,
+   "note": "Inline CTA block (heading, offer text, Book Free Consultation button) selling SR&ED assessment/T661 filing"
+  },
+  {
+   "location": "Visible",
+   "section": "Related services line",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "including incorporation, SR&amp;ED, tax planning and compliance guidance",
+   "after": "including incorporation, tax planning and compliance guidance",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "FAQ \"Can SaaS companies claim SR&ED?\"",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "do not qualify. <a href=\\\"https:\\/\\/gondaliyacpa.ca\\/sred-tax-credits\\/\\\">SR&amp;ED Assessment &#8594;",
+   "after": "do not qualify. <a href=\\\"https:\\/\\/gondaliyacpa.ca\\/sred-tax-credits\\/\\\">How SR&amp;ED works &#8594;",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "FAQ \"Can I claim SR&ED retroactively?\"",
+   "editor": "elementor",
+   "action": "replace",
+   "before": " We review retroactive SR&amp;ED eligibility for every new tech client.",
+   "after": "",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "Visible",
+   "section": "Bottom CTA",
+   "editor": "elementor",
+   "action": "replace",
+   "before": "CRA registration, SR&amp;ED claims and ongoing",
+   "after": "CRA registration and ongoing",
+   "needs_sharad": false,
+   "note": ""
+  }
+ ],
+ "page_note": "How to start a tech company in Ontario guide (Elementor). SR&ED step, rate tables, funding table, time-tracking/bookkeeping guidance, mistakes table and FAQs (visible + JSON-LD) are informational and stay. Rows remove firm SR&ED assessment/claim offers: two \"SR&ED Assessment\" anchors, an inline SR&ED CTA block, an offer sentence, related-services list and bottom CTA."
+}

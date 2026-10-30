@@ -1,0 +1,20 @@
+{
+  "id": 31860,
+  "url": "https://gondaliyacpa.ca/year-end-corporate-tax-planning-checklist-for-canadian-businesses/",
+  "title": "Year-End Corporate Tax Planning Checklist for Canadian Businesses",
+  "type": "post",
+  "elementor": false,
+  "rows": [
+    {
+      "location": "Visible",
+      "section": "Industry section \"Technology Startups & SaaS Companies\"",
+      "editor": "post_content",
+      "action": "replace",
+      "before": "data-id=\"24687\">SR&amp;ED claim support</a>",
+      "after": "data-id=\"24687\">SR&amp;ED tax credits</a>",
+      "needs_sharad": false,
+      "note": "Link anchor offering SR&ED claim support; neutral anchor, URL kept."
+    }
+  ],
+  "page_note": "Year-end corporate tax checklist post. One link anchor ('SR&ED claim support') offers the service; neutralized. Other mentions (credits table, CPAs look for credits, checklist item to assess SR&ED eligibility, industry table) are informational."
+}

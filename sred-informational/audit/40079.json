@@ -1,0 +1,40 @@
+{
+ "id": 40079,
+ "url": "https://gondaliyacpa.ca/maximize-tax-refunds-and-reduce-corporate-taxes/",
+ "title": "How to Maximize Tax Refunds and Reduce Corporate Taxes Through Proper Year-End Filing",
+ "type": "post",
+ "elementor": false,
+ "rows": [
+  {
+   "location": "Visible",
+   "section": "Author box (top)",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "Sharad Gondaliya, CPA, brings 15+ years of experience preparing corporate returns for incorporated Canadian businesses, covering instalment calculation and overpayment recovery, non-capital and capital loss carryback and carryforward elections, refundable tax accounts and the dividend refund, refundable and non-refundable investment tax credits including SR&amp;ED, the small",
+   "after": "Sharad Gondaliya, CPA, brings 15+ years of experience preparing corporate returns for incorporated Canadian businesses, covering instalment calculation and overpayment recovery, non-capital and capital loss carryback and carryforward elections, refundable tax accounts and the dividend refund, refundable and non-refundable investment tax credits, the small",
+   "needs_sharad": false,
+   "note": "SR&ED listed among the return-preparation areas the firm covers"
+  },
+  {
+   "location": "Visible",
+   "section": "About the author (bottom)",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "Sharad Gondaliya, CPA, has over 15 years of experience preparing corporate returns for incorporated Canadian businesses, covering instalment calculation and overpayment recovery, non-capital and capital loss carryback and carryforward elections, refundable tax accounts and the dividend refund, refundable and non-refundable investment tax credits including SR&amp;ED, the small",
+   "after": "Sharad Gondaliya, CPA, has over 15 years of experience preparing corporate returns for incorporated Canadian businesses, covering instalment calculation and overpayment recovery, non-capital and capital loss carryback and carryforward elections, refundable tax accounts and the dividend refund, refundable and non-refundable investment tax credits, the small",
+   "needs_sharad": false,
+   "note": ""
+  },
+  {
+   "location": "JSON-LD",
+   "section": "Service schema serviceType",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "credit determination including SR&ED for qualifying CCPCs and the non-refundable apprenticeship job creation credit",
+   "after": "credit determination including the non-refundable apprenticeship job creation credit",
+   "needs_sharad": false,
+   "note": ""
+  }
+ ],
+ "page_note": "Maximize tax refunds post. SR&ED credit-rate table rows, processing-time note, \"our overview of SR&ED tax credits\" link (informational anchor) and FAQ are informational and stay. Changed: SR&ED in the two author-bio service lists and in the Service schema serviceType."
+}

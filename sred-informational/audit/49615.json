@@ -1,0 +1,20 @@
+{
+  "id": 49615,
+  "url": "https://gondaliyacpa.ca/accounting-tax-services-specialist-physicians-canada/",
+  "title": "The Ultimate Guide to Accounting and Tax Services for Specialist Physicians in Canada",
+  "type": "post",
+  "elementor": false,
+  "rows": [
+    {
+      "location": "JSON-LD",
+      "section": "Service schema serviceType",
+      "editor": "post_content",
+      "action": "replace",
+      "before": "individual pension plan planning, SR and ED claims and CRA audit representation",
+      "after": "individual pension plan planning and CRA audit representation",
+      "needs_sharad": false,
+      "note": "Service schema lists SR&ED claims as a firm service."
+    }
+  ],
+  "page_note": "Specialist physician tax blog post. Visible SR&ED mentions (clinical research may qualify, experience callout, industry table) are informational, kept. Only the Service schema lists 'SR and ED claims' as a service."
+}

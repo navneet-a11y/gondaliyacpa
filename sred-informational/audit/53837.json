@@ -1,0 +1,20 @@
+{
+ "id": 53837,
+ "url": "https://gondaliyacpa.ca/supplement-brand-tax-accounting-canada/",
+ "title": "Supplement Brand Tax Accounting in Canada: Inventory, Product Costs & Cost of Goods Sold",
+ "type": "post",
+ "elementor": false,
+ "rows": [
+  {
+   "location": "JSON-LD",
+   "section": "Service schema description",
+   "editor": "post_content",
+   "action": "replace",
+   "before": "choosing between a Canadian subsidiary and a branch, SR&ED claims within twelve months of the T2 due date, compilation engagements",
+   "after": "choosing between a Canadian subsidiary and a branch, compilation engagements",
+   "needs_sharad": false,
+   "note": "Service schema lists SR&ED claims as a firm service."
+  }
+ ],
+ "page_note": "Visible mentions informational (reformulation may qualify for SR&ED; checklist item on documentation and deadline)."
+}
