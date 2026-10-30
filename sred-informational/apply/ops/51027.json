@@ -1,0 +1,227 @@
+{
+ "id": 51027,
+ "editor": "post_content",
+ "sha256_after": "aa58717d0766a57aedc8afb9577aca8d1689a8a3721045192d6971f7caaed666",
+ "ops": [
+  {
+   "row": 0,
+   "search": "claim the SR&amp;ED credit on your formulation, scale-up and stability trials &mdash; 35% refundable for a CCPC on the first $3 million of qualifying spend, plus Ontario&#8217;s 8% OITC and 3.5% ORDTC on Form T661 and Schedule 31 &mdash; ",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 1,
+   "search": "SR&amp;ED claims, ",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 2,
+   "search": "g every SR&amp;ED, machiner",
+   "replace": "g every machiner",
+   "regex": false
+  },
+  {
+   "row": 3,
+   "search": "the SR&amp;ED claim on Form T661 and Schedule 31 within its 18-month deadline, ",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 4,
+   "search": "cturing and SR&amp;ED files",
+   "replace": "cturing files",
+   "regex": false
+  },
+  {
+   "row": 5,
+   "search": "&mdash; SR&amp;ED, Manufact",
+   "replace": "&mdash; Manufact",
+   "regex": false
+  },
+  {
+   "row": 6,
+   "search": "formulation and scale-up trials on Form T661 at the 35% refundable CCPC rate with Ontario&#8217;s 8% OITC and 3.5% ORDTC, ",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 7,
+   "search": "&mdash; SR&amp;ED &amp; Inventor",
+   "replace": "&mdash; Inventor",
+   "regex": false
+  },
+  {
+   "row": 8,
+   "search": "&#8217;s Research and Technology Advisor challenges your T661,",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 9,
+   "search": "tag the chemist time that supports your SR&amp;ED claim, ",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 10,
+   "search": "the SR&amp;ED claim on Form T661 and Schedule 31, ",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 11,
+   "search": ", T4s, and SR&amp;ED labour tracking for your T661 claim",
+   "replace": " and T4s",
+   "regex": false
+  },
+  {
+   "row": 12,
+   "search": "stack the federal and Ontario SR&amp;ED credits, ",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 13,
+   "search": "scue SR&amp;ED claims still inside the 18-month window, re",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 14,
+   "search": "SR&amp;ED technical reviews, ",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 15,
+   "search": " for the refundable SR&amp;ED rate",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 16,
+   "search": ", SR&amp;ED labour",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 17,
+   "search": "overclaimed SR&amp;ED labour, ",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 18,
+   "search": "<li>We claim the SR&amp;ED investment tax credit on Form T661 and Schedule 31 for your formulation, scale-up and stability trials, at the 35% refundable CCPC rate on the first $3 million of qualifying spend; one two-year claim recovered $180,000.</li>",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 19,
+   "search": "<li>We tag the wages of chemists and technicians who run formulation and scale-up trials in Wagepoint, because salary directly engaged in SR&amp;ED is claimable on Form T661 under the proxy method; on one plant this added $95,000 of eligible labour to the claim.</li>",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 20,
+   "search": "<li>We stack the federal 35% refundable SR&amp;ED credit with Ontario&#8217;s 8% refundable Innovation Tax Credit and the 3.5% Research and Development Tax Credit on your T2, tracked in Xero, so formulation spending returns cash; one $400,000 program recovered $186,000.</li>",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 21,
+   "search": "<li>We file SR&amp;ED claims for the open years, because Form T661 must reach CRA within 18 months of the fiscal year-end or the formulation credit is lost forever; on one late filer we rescued a $62,000 refundable credit on the final eligible year.</li>",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 22,
+   "search": "and SR&amp;ED eligibility ",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 23,
+   "search": ", because only a Canadian-controlled private corporation earns the 35% refundable SR&amp;ED rate on Form T661 rather than the 15% non-refundable credit; on one $300,000 formulation program the structure was worth $60,000 of extra refund",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 24,
+   "search": "tagging chemist and technician time in Wagepoint so the labour supports Form T661; on one plant this recovered $24,000 of overlooked SR&amp;ED labour",
+   "replace": "so your payroll records are complete",
+   "regex": false
+  },
+  {
+   "row": 25,
+   "search": "overclaimed SR&amp;ED labour on Form T661, ",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 26,
+   "search": "SR&amp;ED on formulation trials, Class 53",
+   "replace": "Class 53",
+   "regex": false
+  },
+  {
+   "row": 27,
+   "search": "SR&ED on formulation trials, ",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 29,
+   "search": "SR&amp;ED labour and ",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 30,
+   "search": "SR&amp;ED project documentation, ",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 31,
+   "search": "As your SR&amp;ED, manufact",
+   "replace": "As your manufact",
+   "regex": false
+  },
+  {
+   "row": 32,
+   "search": "rds, so we set up tracking early.<",
+   "replace": "rds, so tracking should start early.<",
+   "regex": false
+  },
+  {
+   "row": 33,
+   "search": "we set up tracking",
+   "replace": "tracking should start",
+   "regex": false
+  },
+  {
+   "row": 34,
+   "search": "SR&amp;ED claims on formulation and scale-up trials, ",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 35,
+   "search": "SR&ED claims on formulation R&D, ",
+   "replace": "",
+   "regex": false
+  }
+ ],
+ "skipped": [
+  {
+   "row": 28,
+   "why": "needs_sharad"
+  },
+  {
+   "row": 36,
+   "why": "needs_sharad"
+  }
+ ]
+}

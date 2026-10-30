@@ -1,0 +1,213 @@
+{
+ "id": 48794,
+ "editor": "post_content",
+ "sha256_after": "83f098eeaa4662b5211f802e8ff7790f76ae79897483f3f3259ef54f8f926fd0",
+ "ops": [
+  {
+   "row": 0,
+   "search": "Gondaliya CPA specializes in identifying SR&amp;ED qualified projects and guiding clients",
+   "replace": "Identifying SR&amp;ED qualified projects means working",
+   "regex": false
+  },
+  {
+   "row": 1,
+   "search": "ze benefits.</p>",
+   "replace": "ze benefits.</p>\n<p class=\"sred-notice\"><strong>Gondaliya CPA does not prepare SR&amp;ED claims. This page explains how the SR&amp;ED program works, for general information only.</strong></p>",
+   "regex": false
+  },
+  {
+   "row": 3,
+   "search": "like Gondaliya CPA ",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 4,
+   "search": "<p>Contact us anytime at info@gondaliyacpa.ca or call 647&#8209;212&#8209;9559 for help with your company's SR&amp;ED eligibility Canada today.</p>\n",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 5,
+   "search": " we prepare",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 6,
+   "search": "&mdash;like Gondaliya CPA&mdash;for advice tailored to Toronto/Ontario incorporated SMBs",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 7,
+   "search": "<p>For clear help sorting exclusion rules that affect your claim&mdash;across software, manufacturing, engineering, and more&mdash;call Gondaliya CPA at 647&#8209;212&#8209;9559 for a free chat about legit technology tax credits while avoiding common mistakes in Ontario &amp; Toronto firms.</p>\n",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 9,
+   "search": " Gondaliya CPA works mainly with incorporated small and medium businesses in software, engineering design, manufacturing, product development, and other tech fields across Toronto/Ontario and Canada-wide.",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 10,
+   "search": "Our firm offers fixed-fee pricing plus",
+   "replace": "Look for",
+   "regex": false
+  },
+  {
+   "row": 11,
+   "search": "We do full CPA-led reviews&mdash;not quick self-checks or pay-only-if-you-win setups&mdash;to ensure claims are strong with clear records suited to your business type. For example, we help",
+   "replace": "A full CPA-led review&mdash;not a quick self-check or a pay-only-if-you-win setup&mdash;helps ensure claims are strong with clear records suited to your business type, for example",
+   "regex": false
+  },
+  {
+   "row": 12,
+   "search": "<p>Over 1450+ five-star Google reviews show our clear communication&mdash;including weekend/evening support&mdash;and fast replies within one business day. We guide clients step-by-step&mdash;from spotting projects through writing Form T661 stories to handling audits if they happen.</p>\n<p>Call us at 647-212-9559 or email info@gondaliyacpa.ca for a free talk about your SR&amp;ED qualified projects.</p>\n",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 14,
+   "search": "<p>If\\ you're\\ looking\\ for\\ expert\\ help\\ with\\ SR\\&amp;ED\\ qualific[\\s\\S]*?\\&\\#8209;9559</li>\\\n<li>Email:\\ info@gondaliyacpa\\.ca</li>\\\n</ul>\\\n",
+   "replace": "",
+   "regex": true
+  },
+  {
+   "row": 15,
+   "search": "Gondaliya CPA suggests new clients check their projects carefully against CRA definitions before spending lots on preparing claims. We offer a free initial consultation giving clear advice based on current law",
+   "replace": "Check your projects carefully against CRA definitions before spending lots on preparing claims",
+   "regex": false
+  },
+  {
+   "row": 16,
+   "search": "Gondaliya CPA provides comprehensive reports including",
+   "replace": "A CPA-prepared claim typically includes",
+   "regex": false
+  },
+  {
+   "row": 17,
+   "search": "<p>For tailored guidance on these topics or help preparing your claim correctly per latest CRA rules contact Gondaliya CPA at 647&#8209;212&#8209;9559 or info@gondaliyacpa.ca today!</p>\n",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 19,
+   "search": " Gondaliya CPA prepares these claims on a fixed fee.",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 20,
+   "search": "e handle w",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 21,
+   "search": "<p>Our team works from your own time logs, commit history and project records rather than a template. Software, manufacturing or engineering, you get clear advice and a fixed price before we start.</p>\n",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 23,
+   "search": "Please book a free consultation with Gondaliya CPA and bring your fiscal year end date, a short description of the hardest technical problem you tackled this year, and whatever time records exist. Those three tell us quickly whether a claim is worth preparing. You will get a fixed fee before any work begins",
+   "replace": "Before preparing a claim, gather your fiscal year end date, a short description of the hardest technical problem you tackled this year, and whatever time records exist. Those three show quickly whether a claim is worth preparing",
+   "regex": false
+  },
+  {
+   "row": 25,
+   "search": " we review",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 26,
+   "search": "<div class=\"gcpa-banner\">\n<div class=\"bt\">Not sure whether your development work qualifies? The first assessment is free.</div>\n<div class=\"bb\"><a class=\"solid\" href=\"https://gondaliyacpa.ca/consultation/\">Book Free Consultation</a><a href=\"mailto:info@gondaliyacpa.ca\">info@gondaliyacpa.ca</a><a href=\"tel:+16472129559\">647-212-9559</a></div>\n</div>\n",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 27,
+   "search": "to raise with us:</b>",
+   "replace": "to raise:</b>",
+   "regex": false
+  },
+  {
+   "row": 28,
+   "search": " with us",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 29,
+   "search": " A free review can confirm nothing is being left unclaimed.",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 30,
+   "search": "\n        <a class=\"p-cta\" href=\"https://gondaliyacpa.ca/consultation/\">Book a free consultation</a>",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 31,
+   "search": " please book a free consultation.</p>",
+   "replace": " please consult a licensed CPA.</p>",
+   "regex": false
+  },
+  {
+   "row": 32,
+   "search": " before your consultation",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 33,
+   "search": "<figure style=\"margin:18px 0;\"><img src=\"https://gondaliyacpa.ca/wp-content/uploads/2026/08/why-gondaliya-cpa-sred.png\" alt=\"Why Canadian innovators choose Gondaliya CPA for SR&amp;ED claims\" style=\"width:100%;border-radius:12px;border:1px solid #d8e0e8;\" /><figcaption style=\"font-size:13px;color:#5a6b7b;text-align:center;padding:6px;\">Why Canadian innovators choose us.</figcaption></figure>\n",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 34,
+   "search": "<div\\ class=\"gcpa\\-cta\">\\\n<h4>Find\\ out\\ whether\\ you\\ qualify</h4>[\\s\\S]*?info@gondaliyacpa\\.ca\">info@gondaliyacpa\\.ca</a></div>\\\n</div>\\\n",
+   "replace": "",
+   "regex": true
+  },
+  {
+   "row": 35,
+   "search": ",\\\n\\ \\ \\ \\ \\{\\\n\\ \\ \\ \\ \\ \\ \"@type\":\\ \"Service\",\\\n\\ \\ \\ \\ \\ \\ \"name\":\\ \"SR\\ and\\ ED\\ C[\\s\\S]*?velopment\\ carrying\\ out\\ research\\ or\\ development\\ work\"\\ \\}\\\n\\ \\ \\ \\ \\}",
+   "replace": "",
+   "regex": true
+  }
+ ],
+ "skipped": [
+  {
+   "row": 2,
+   "why": "needs_sharad"
+  },
+  {
+   "row": 8,
+   "why": "needs_sharad"
+  },
+  {
+   "row": 13,
+   "why": "needs_sharad"
+  },
+  {
+   "row": 18,
+   "why": "needs_sharad"
+  },
+  {
+   "row": 22,
+   "why": "needs_sharad"
+  },
+  {
+   "row": 24,
+   "why": "needs_sharad"
+  }
+ ]
+}

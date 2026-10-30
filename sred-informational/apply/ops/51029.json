@@ -1,0 +1,191 @@
+{
+ "id": 51029,
+ "editor": "post_content",
+ "sha256_after": "b54150d2a8bafa4c60196599b3df528c0d96415ea6c0b1940183daf3c3a748b2",
+ "ops": [
+  {
+   "row": 0,
+   "search": "claim the SR&amp;ED credit on your emulsion, preservative-system and reformulation trials at the 35% refundable CCPC rate plus Ontario&#8217;s 8% OITC and 3.5% ORDTC, ",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 1,
+   "search": "lize in SR&amp;ED, manufact",
+   "replace": "lize in manufact",
+   "regex": false
+  },
+  {
+   "row": 2,
+   "search": "g every SR&amp;ED, machiner",
+   "replace": "g every machiner",
+   "regex": false
+  },
+  {
+   "row": 3,
+   "search": "the SR&amp;ED claim on Form T661 and Schedule 31 inside its 18-month deadline, ",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 4,
+   "search": ", Schedule 31 and the SR&amp;ED forms",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 5,
+   "search": "&mdash; SR&amp;ED, Manufact",
+   "replace": "&mdash; Manufact",
+   "regex": false
+  },
+  {
+   "row": 6,
+   "search": "emulsion and preservative trials on Form T661 at the 35% refundable rate, ",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 7,
+   "search": "&mdash; SR&amp;ED &amp; Inventor",
+   "replace": "&mdash; Inventor",
+   "regex": false
+  },
+  {
+   "row": 8,
+   "search": "SR&amp;ED project descriptions, your ",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 9,
+   "search": "allocate chemists&#8217; time to the SR&amp;ED claim, ",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 10,
+   "search": "the SR&amp;ED claim on Form T661 and Schedule 31, ",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 11,
+   "search": "T4s, and chemist time tracking so salaries flow into your SR&amp;ED claim",
+   "replace": "and T4s",
+   "regex": false
+  },
+  {
+   "row": 12,
+   "search": "SR&amp;ED projects and ",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 13,
+   "search": "scue SR&amp;ED claims still inside the 18-month deadline, re",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 14,
+   "search": "ort for SR&amp;ED, inventor",
+   "replace": "ort for inventor",
+   "regex": false
+  },
+  {
+   "row": 15,
+   "search": " for the 35% SR&amp;ED rate",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 16,
+   "search": "<li>We file Form T661 and Schedule 31 for the SR&amp;ED credit on your emulsion, preservative-system and reformulation trials, claiming the 35% refundable federal rate on the first $3 million plus Ontario&#8217;s 8% OITC and 3.5% ORDTC; on one lab this recovered $95,000.</li>",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 17,
+   "search": "<li>We allocate formulation chemists&#8217; and lab technicians&#8217; wages to SR&amp;ED on Form T661 using time records kept in Wagepoint, because salary is the largest eligible expenditure and the proxy method adds 55% overhead on top; on one lab this added $31,000 of qualifying salary.</li>",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 18,
+   "search": "<li>We plan SR&amp;ED-eligible reformulation and scale-up projects before the year starts so contemporaneous stability-test and batch records kept in Katana support Form T661, because a claim rebuilt from memory is cut back on review; one planned program returned $72,000 of refundable credit.</li>",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 19,
+   "search": "<li>We file late SR&amp;ED claims on Form T661 for any year still inside the 18-month reporting deadline under subsection 37(11), because an eligible reformulation project missed by one day is lost forever; on one catch-up this rescued $48,000 of refundable credit.</li>",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 20,
+   "search": "<li>When CRA&#8217;s SR&amp;ED reviewer argues your preservative-system trials were routine quality control rather than technological uncertainty, we defend the Form T661 project description with stability-test data and batch records; on one lab this defended $88,000 of refundable credit.</li>",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 21,
+   "search": " so your formulation work earns the 35% refundable SR&amp;ED rate on Form T661 rather than the 15% non-refundable rate, structuring share ownership to keep Canadian control; on one start-up this turned a $30,000 credit into cash",
+   "replace": ", structuring share ownership to keep Canadian control",
+   "regex": false
+  },
+  {
+   "row": 22,
+   "search": "chemists&#8217; time records support Form T661; on one lab this recovered $9,500 of overlooked SR&amp;ED salary",
+   "replace": "payroll records are complete",
+   "regex": false
+  },
+  {
+   "row": 23,
+   "search": "SR&amp;ED on formulation, Class 53 machinery, batch inventory, shelf-life write-downs, chargeback and marketplace fee tracking and the incorporation break-even ca",
+   "replace": "Class 53 machinery, batch inventory, shelf-life write-downs, chargeback and marketplace fee tracking and the incorporation break-even ca",
+   "regex": false
+  },
+  {
+   "row": 24,
+   "search": "SR&amp;ED on formulation, Class 53",
+   "replace": "Class 53",
+   "regex": false
+  },
+  {
+   "row": 26,
+   "search": "scope the SR&amp;ED projects, ",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 27,
+   "search": "SR&amp;ED project records, ",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 28,
+   "search": "SR&amp;ED on emulsion and reformulation trials, ",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 29,
+   "search": "SR&ED on formulation R&D, ",
+   "replace": "",
+   "regex": false
+  }
+ ],
+ "skipped": [
+  {
+   "row": 25,
+   "why": "needs_sharad"
+  },
+  {
+   "row": 30,
+   "why": "needs_sharad"
+  }
+ ]
+}

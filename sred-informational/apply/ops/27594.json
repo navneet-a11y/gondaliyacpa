@@ -1,0 +1,203 @@
+{
+ "id": 27594,
+ "editor": "post_content",
+ "sha256_after": "579c6d475e00c37d8309faecbe8fad5bcc8fc718a831f36529cbfa7f66b0e31b",
+ "ops": [
+  {
+   "row": 2,
+   "search": "ntly.</p>\n<!-- /wp:paragraph -->",
+   "replace": "ntly.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p class=\"sred-notice\"><strong>Gondaliya CPA does not prepare SR&amp;ED claims. This page explains how the SR&amp;ED program works, for general information only.</strong></p>\n<!-- /wp:paragraph -->",
+   "regex": false
+  },
+  {
+   "row": 4,
+   "search": "This service fits well",
+   "replace": "SR&amp;ED claims usually fit",
+   "regex": false
+  },
+  {
+   "row": 5,
+   "search": "wanting help with",
+   "replace": "preparing",
+   "regex": false
+  },
+  {
+   "row": 6,
+   "search": "<!-- wp:list-item -->\n<li>Need expert advice to get the most from your R&amp;D tax credits.</li>\n<!-- /wp:list-item -->\n\n",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 7,
+   "search": "<!-- wp:list-item -->\n<li>Want support with <a href=\"https://gondaliyacpa.ca/cra-audit-support-and-representation/\" data-type=\"page\" data-id=\"25585\">CRA audits or representation</a>.</li>\n<!-- /wp:list-item -->\n\n",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 8,
+   "search": "<!-- wp:list-item -->\n<li>Look for combined <a href=\"https://gondaliyacpa.ca/tax-planning/\">corporate tax planning</a> that includes SR&amp;ED claim help.</li>\n<!-- /wp:list-item -->",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 9,
+   "search": "This might not work for you",
+   "replace": "SR&amp;ED claims may not fit",
+   "regex": false
+  },
+  {
+   "row": 10,
+   "search": "This service helps you spot which projects meet the CRA’s rules. It also helps with writing down what you did, figuring out expenses, and filling out the forms properly. Startups working on new products or improving processes get extra help",
+   "replace": "An SR&amp;ED claim starts with spotting which projects meet the CRA’s rules, then writing down what you did, figuring out expenses, and filling out the forms properly. Startups working on new products or improving processes need extra care",
+   "regex": false
+  },
+  {
+   "row": 11,
+   "search": "Gondaliya CPA guides Canadian SMBs through this tricky process. We help clients get the most from startup SR&amp;ED filing by mixing these tax credits into their bigger tax plans",
+   "replace": "Mixing these tax credits into bigger tax plans helps businesses get the most from startup SR&amp;ED filing",
+   "regex": false
+  },
+  {
+   "row": 12,
+   "search": "Included</th><th>Not Included",
+   "replace": "Part of an SR&amp;ED claim</th><th>Not part of it",
+   "regex": false
+  },
+  {
+   "row": 13,
+   "search": "the service",
+   "replace": "a claim",
+   "regex": false
+  },
+  {
+   "row": 14,
+   "search": "ered CPA like Gondaliya CPA, or go ",
+   "replace": "ered CPA, or go ",
+   "regex": false
+  },
+  {
+   "row": 15,
+   "search": "firms like Gondaliya CPA offer clear prices that mix value with full service. They review your claim carefully and support you",
+   "replace": "CPA firms typically offer clear prices that mix value with full service, reviewing the claim carefully and supporting it",
+   "regex": false
+  },
+  {
+   "row": 17,
+   "search": "t Gondaliya CPA, we keep things clear and step-by-step. We help incorporated startups and small businesses all over Canada. Our process fits your business and meets CRA rules. Plus, it",
+   "replace": " clear, step-by-step process that meets CRA rules also",
+   "regex": false
+  },
+  {
+   "row": 18,
+   "search": "we gather basic info about your business and research projects. We check if your work qualifies for SR&amp;ED",
+   "replace": "basic info about your business and research projects is gathered, and the work is checked for SR&amp;ED eligibility",
+   "regex": false
+  },
+  {
+   "row": 19,
+   "search": "We then dig deep into your projects' tech details and costs. We separate",
+   "replace": "Next comes a deep look at your projects' tech details and costs, separating",
+   "regex": false
+  },
+  {
+   "row": 20,
+   "search": "we fill out official claim forms (like Form T661) and write detailed schedules about expenses per project part. We also explain",
+   "replace": "the official claim forms (like Form T661) are filled out with detailed schedules about expenses per project part, explaining",
+   "regex": false
+  },
+  {
+   "row": 21,
+   "search": "We submit it",
+   "replace": "It is submitted",
+   "regex": false
+  },
+  {
+   "row": 22,
+   "search": "We handle all contacts for you by",
+   "replace": "Responding well means",
+   "regex": false
+  },
+  {
+   "row": 23,
+   "search": "We take the stress out of audits by managing talks carefully while keeping your interests safe during these",
+   "replace": "Managing these talks carefully keeps your interests safe during",
+   "regex": false
+  },
+  {
+   "row": 24,
+   "search": "We keep helping by advising startups how to",
+   "replace": "Ongoing advice helps startups",
+   "regex": false
+  },
+  {
+   "row": 25,
+   "search": "Our clear process keeps things fair yet efficient so startups get affordable help that fits their real need",
+   "replace": "A clear process keeps things fair yet efficient for startup",
+   "regex": false
+  },
+  {
+   "row": 26,
+   "search": "like Gondaliya CPA, ",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 27,
+   "search": "firms like Gondaliya CPA",
+   "replace": "a firm",
+   "regex": false
+  },
+  {
+   "row": 28,
+   "search": " You can review our transparent pricing on our <strong><a href=\"https://gondaliyacpa.ca/pricing-calculation/\">Pricing Calculation page</a></strong> to see exactly what to expect.",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 29,
+   "search": "We represent clients during CRA audits. We provide audit support, respond to inquiries promptly, and ensure",
+   "replace": "Gondaliya CPA does not prepare SR&amp;ED claims. In an SR&amp;ED review, respond to inquiries promptly and keep",
+   "regex": false
+  },
+  {
+   "row": 30,
+   "search": "Gondaliya CPA helps manage cross-jurisdictional tax credit coordination to",
+   "replace": "Cross-jurisdictional tax credit coordination helps",
+   "regex": false
+  },
+  {
+   "row": 31,
+   "search": "We align the SR&amp;ED claim",
+   "replace": "The SR&amp;ED claim is aligned",
+   "regex": false
+  },
+  {
+   "row": 33,
+   "search": "<!-- wp:paragraph -->\n<p>Ready to explore your SR&amp;ED tax credit options? <a href=\"https://gondaliyacpa.ca/consultation/\" data-type=\"page\" data-id=\"15736\">Schedule a free consultation</a> and get expert insights—no obligation.</p>\n<!-- /wp:paragraph -->",
+   "replace": "",
+   "regex": false
+  }
+ ],
+ "skipped": [
+  {
+   "row": 0,
+   "why": "needs_sharad"
+  },
+  {
+   "row": 1,
+   "why": "needs_sharad"
+  },
+  {
+   "row": 3,
+   "why": "needs_sharad"
+  },
+  {
+   "row": 16,
+   "why": "needs_sharad"
+  },
+  {
+   "row": 32,
+   "why": "needs_sharad"
+  }
+ ]
+}

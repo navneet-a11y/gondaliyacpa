@@ -1,0 +1,203 @@
+{
+ "id": 46096,
+ "editor": "post_content",
+ "sha256_after": "9b6daa5c9e0b851e91033bde2f7be0cca057a8fd38c785ca140b71c2e422ae31",
+ "ops": [
+  {
+   "row": 0,
+   "search": "Gondaliya CPA specializes in SR&amp;ED tax credit Canada, assisting startups with SR&amp;ED claims by ensuring eligibility through scientific research, technological uncertainty, and systematic investigation documentation. Their expertise",
+   "replace": "SR&amp;ED tax credit Canada claims for startups depend on eligibility through scientific research, technological uncertainty, and systematic investigation documentation. Getting these right",
+   "regex": false
+  },
+  {
+   "row": 1,
+   "search": "ely.</p>",
+   "replace": "ely.</p>\n<p class=\"sred-notice\"><strong>Gondaliya CPA does not prepare SR&amp;ED claims. This page explains how the SR&amp;ED program works, for general information only.</strong></p>",
+   "regex": false
+  },
+  {
+   "row": 4,
+   "search": ". Gondaliya CPA helps startups",
+   "replace": ", for help",
+   "regex": false
+  },
+  {
+   "row": 5,
+   "search": "At Gondaliya CPA, we do intake interviews then keep in touch during the year using QuickBooks and Hubdoc tools.<sup style=\"font-size:11px;color:#5a6b7b;\">2</sup> This keeps data real-time and matches",
+   "replace": "Intake interviews followed by contact during the year using QuickBooks and Hubdoc tools<sup style=\"font-size:11px;color:#5a6b7b;\">2</sup> keep data real-time and match",
+   "regex": false
+  },
+  {
+   "row": 6,
+   "search": "our work with Toronto startups",
+   "replace": "Toronto startup practice",
+   "regex": false
+  },
+  {
+   "row": 7,
+   "search": "Gondaliya CPA helps clients respond quickly and",
+   "replace": "Responding quickly helps",
+   "regex": false
+  },
+  {
+   "row": 8,
+   "search": "<p>Contact us anytime at info@gondaliyacpa.ca or call 647-212-9559 for questions about getting R&amp;D funding through correct startup SR&amp;E claims under Canadian law.</p>\n",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 10,
+   "search": "<p>Gondaliya CPA fits this well. They offer clear pricing and fast answers. They work well with Canadian startups focused on tech innovation.</p>\n",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 11,
+   "search": "<p>For help with your startup's R&amp;D tax credits under Canada's SR&amp;ED program, <a class=\"wpil_keyword_link\" href=\"https://gondaliyacpa.ca/contact-us/\"   title=\"contact Gondaliya CPA\" data-wpil-keyword-link=\"linked\"  data-wpil-monitor-id=\"8653\">contact Gondaliya CPA</a> at 647-212-9559 or info@gondaliyacpa.ca. They offer free consultations for incorporated startups in Toronto and Ontario.</p>\n",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 13,
+   "search": "<p>Gondaliya CPA recommends hiring experienced CPAs for best results.</p>\n",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 17,
+   "search": "<p>Gondaliya CPA matches these criteria well.</p>\n",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 20,
+   "search": " Gondaliya CPA prepares SR&amp;ED claims for Canadian startups.",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 21,
+   "search": "We handle t",
+   "replace": "T",
+   "regex": false
+  },
+  {
+   "row": 22,
+   "search": "<p>Our team follows CRA practice closely and builds the claim around your own facts rather than a template. Whether this is a first claim or a repeat filing after a review, we give clear advice based on the current rules.</p>\n",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 23,
+   "search": "\n<li><strong>Typical service fee range:</strong> $3,000 to $10,000</li>",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 25,
+   "search": "Contact Gondaliya CPA today at info@gondaliyacpa.ca or call 647-212-9559 to discuss your startup's SR&amp;ED eligibility assessment and start maximizing your R&amp;D tax credits now!",
+   "replace": "Assess your startup's SR&amp;ED eligibility early to start maximizing your R&amp;D tax credits.",
+   "regex": false
+  },
+  {
+   "row": 27,
+   "search": "<div class=\"gcpa-banner\">\n<div class=\"bt\">Doing development work? A free call checks whether it qualifies before the deadline.</div>\n<div class=\"bb\"><a class=\"solid\" href=\"https://gondaliyacpa.ca/consultation/\">Book Free Consultation</a><a href=\"mailto:info@gondaliyacpa.ca\">info@gondaliyacpa.ca</a><a href=\"tel:+16472129559\">647-212-9559</a></div>\n</div>\n",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 28,
+   "search": " with us",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 29,
+   "search": " A short call can confirm the position and the scope.",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 30,
+   "search": "\n        <a class=\"r-cta\" href=\"https://gondaliyacpa.ca/consultation/\">Book a free consultation</a>",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 31,
+   "search": " please book a free consultation.</p>",
+   "replace": " please consult a licensed CPA.</p>",
+   "regex": false
+  },
+  {
+   "row": 32,
+   "search": " before your consultation",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 33,
+   "search": "<figure style=\"margin:18px 0;\"><img src=\"https://gondaliyacpa.ca/wp-content/uploads/2026/08/why-gondaliya-cpa-sred.png\" alt=\"Why Canadian startups choose Gondaliya CPA for SR and ED claims\" style=\"width:100%;border-radius:12px;border:1px solid #d8e0e8;\" /><figcaption style=\"font-size:13px;color:#5a6b7b;text-align:center;padding:6px;\">Why Canadian startups choose us.</figcaption></figure>\n",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 34,
+   "search": "<div\\ class=\"gcpa\\-cta\">\\\n<h4>Turn\\ your\\ development\\ work\\ into\\ a[\\s\\S]*?info@gondaliyacpa\\.ca\">info@gondaliyacpa\\.ca</a></div>\\\n</div>\\\n",
+   "replace": "",
+   "regex": true
+  },
+  {
+   "row": 35,
+   "search": ",\\\n\\ \\ \\ \\ \\{\\\n\\ \\ \\ \\ \\ \\ \"@type\":\\ \"Service\",\\\n\\ \\ \\ \\ \\ \\ \"name\":\\ \"SR\\ and\\ ED\\ T[\\s\\S]*?ups\\ and\\ CCPCs\\ carrying\\ out\\ research\\ and\\ development\"\\ \\}\\\n\\ \\ \\ \\ \\}",
+   "replace": "",
+   "regex": true
+  }
+ ],
+ "skipped": [
+  {
+   "row": 2,
+   "why": "needs_sharad"
+  },
+  {
+   "row": 3,
+   "why": "needs_sharad"
+  },
+  {
+   "row": 9,
+   "why": "needs_sharad"
+  },
+  {
+   "row": 12,
+   "why": "needs_sharad"
+  },
+  {
+   "row": 14,
+   "why": "needs_sharad"
+  },
+  {
+   "row": 15,
+   "why": "needs_sharad"
+  },
+  {
+   "row": 16,
+   "why": "needs_sharad"
+  },
+  {
+   "row": 18,
+   "why": "needs_sharad"
+  },
+  {
+   "row": 19,
+   "why": "needs_sharad"
+  },
+  {
+   "row": 24,
+   "why": "needs_sharad"
+  },
+  {
+   "row": 26,
+   "why": "needs_sharad"
+  }
+ ]
+}

@@ -1,0 +1,119 @@
+{
+ "id": 51049,
+ "editor": "post_content",
+ "sha256_after": "9a697fb445f5cbd3876fd411b27fab3d1db80e3a2f49a9c8302c3393b3006372",
+ "ops": [
+  {
+   "row": 0,
+   "search": "35% refundable SR&amp;ED credit on genuine platform R&amp;D and the ",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 1,
+   "search": "credit, SR&amp;ED and OIDMTC d",
+   "replace": "credit, OIDMTC d",
+   "regex": false
+  },
+  {
+   "row": 2,
+   "search": "aim the 35% refundable SR&amp;ED credit and the 40% OIDM",
+   "replace": "aim the 40% OIDM",
+   "regex": false
+  },
+  {
+   "row": 3,
+   "search": ", Reserve &amp; SR&amp;ED",
+   "replace": " &amp; Reserve",
+   "regex": false
+  },
+  {
+   "row": 4,
+   "search": ", your SR&amp;ED project narratives",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 5,
+   "search": "T661 and Schedule 31 where SR&amp;ED applies, ",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 6,
+   "search": ", claim SR&amp;ED and the OIDM",
+   "replace": ", claim the OIDM",
+   "regex": false
+  },
+  {
+   "row": 7,
+   "search": "rescue SR&amp;ED claims still inside the 18-month deadline, ",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 8,
+   "search": " reserve, SR&amp;ED and ins",
+   "replace": " reserve and ins",
+   "regex": false
+  },
+  {
+   "row": 9,
+   "search": "<li>We claim SR&amp;ED on Form T661 and Schedule 31 for genuine platform R&amp;D like adaptive-assessment engines, securing the 35% refundable credit on the first $3,000,000 plus the 8% OITC and 3.5% ORDTC, excluding content and UI work CRA rejects; one claim recovered $95,000.</li>",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 10,
+   "search": "<li>We file the SR&amp;ED claim on Form T661 and Schedule 31 for any unfiled year still inside the 18-month reporting deadline under subsection 37(11), because CRA denies claims filed one day late without exception; on one platform this rescued a $60,000 refundable credit.</li>",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 11,
+   "search": "<li>We defend SR&amp;ED claims under review by walking CRA's research and technology adviser through the Form T661 project narratives, sprint records, commit logs and developer timesheets, because unsupported hours are disallowed under section 37; on one review this preserved a $95,000 refundable credit.</li>",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 12,
+   "search": "withholding compliance, SR&amp;ED and OIDMTC claims and the incorporation break-even can all b",
+   "replace": "withholding compliance, OIDMTC claims and the incorporation break-even can all b",
+   "regex": false
+  },
+  {
+   "row": 13,
+   "search": "ing compliance, SR&amp;ED and OIDMTC claims an",
+   "replace": "ing compliance, OIDMTC claims an",
+   "regex": false
+  },
+  {
+   "row": 15,
+   "search": "nd mix, SR&amp;ED and OIDMTC c",
+   "replace": "nd mix, OIDMTC c",
+   "regex": false
+  },
+  {
+   "row": 16,
+   "search": "liance, SR&amp;ED and OIDMTC c",
+   "replace": "liance, OIDMTC c",
+   "regex": false
+  },
+  {
+   "row": 17,
+   "search": "SR&ED and ",
+   "replace": "",
+   "regex": false
+  }
+ ],
+ "skipped": [
+  {
+   "row": 14,
+   "why": "needs_sharad"
+  },
+  {
+   "row": 18,
+   "why": "needs_sharad"
+  }
+ ]
+}
