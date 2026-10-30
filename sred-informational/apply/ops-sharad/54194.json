@@ -1,0 +1,111 @@
+{
+ "id": 54194,
+ "editor": "post_content",
+ "sha256_after": "830e95b7e012416d3624cab1f36dbdf6dda5884e52a0f5474cf8b2b1788a1784",
+ "ops": [
+  {
+   "row": 4,
+   "search": "<h5\\ style=\"color:\\#15355c;margin:24px\\ 0\\ 8px;\">Further\\ Informa[\\s\\S]*?ississauga,\\ Brampton,\\ Ottawa\\ and\\ clients\\ across\\ Canada\\.</p>\\\n",
+   "replace": "",
+   "regex": true
+  },
+  {
+   "row": 8,
+   "search": "How Gondaliya CPA Handles Your",
+   "replace": "What Decides a",
+   "regex": false
+  },
+  {
+   "row": 12,
+   "search": "How Gondaliya CPA Supports Innovators",
+   "replace": "Getting Ready to Claim",
+   "regex": false
+  }
+ ],
+ "skipped": [
+  {
+   "row": 0,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 1,
+   "why": "already live (after text present)"
+  },
+  {
+   "row": 2,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 3,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 5,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 6,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 7,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 9,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 10,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 11,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 13,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 14,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 15,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 16,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 17,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 18,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 19,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 20,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 21,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 22,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 23,
+   "why": "before found 0 times now"
+  }
+ ]
+}

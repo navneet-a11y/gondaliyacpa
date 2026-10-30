@@ -1,0 +1,67 @@
+{
+ "id": 49356,
+ "editor": "post_content",
+ "sha256_after": "1167c157fdf9c7acd80f2b7f396e047e412eb3019c9507205d53ccba877a4529",
+ "ops": [
+  {
+   "row": 3,
+   "search": "<li><strong>Food\\ Processing\\ Manufacturer\\ \\&ndash;\\ SR\\&amp;ED\\ C[\\s\\S]*?ents\\.\\ We\\ also\\ helped\\ with\\ provincial\\ research\\ credits\\.</li>\\\n",
+   "replace": "",
+   "regex": true
+  },
+  {
+   "row": 6,
+   "search": "<blockquote style=\"border-left:4px solid #0c8f8f;padding:8px 0 8px 18px;margin:18px 0;color:#1d2733;font-style:italic;\"><p>&ldquo;Their hands-on help with SR&amp;ED claims made us feel sure about the process.&rdquo; &mdash; Owner, Food Processor (Mississauga)</p></blockquote>",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 7,
+   "search": "SR&amp;ED claims about process improvements and ",
+   "replace": "",
+   "regex": false
+  }
+ ],
+ "skipped": [
+  {
+   "row": 0,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 1,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 2,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 4,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 5,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 8,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 9,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 10,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 11,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 12,
+   "why": "before found 0 times now"
+  }
+ ]
+}

@@ -1,0 +1,133 @@
+{
+ "id": 56948,
+ "editor": "post_content",
+ "sha256_after": "5844de0f1d65c051d1b90ae0f5b27e50d3710a151f6203522e6650e2a890a084",
+ "ops": [
+  {
+   "row": 0,
+   "search": " with Gondaliya CPA",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 10,
+   "search": "How Gondaliya CPA Supports Product Design Businesses with SR&amp;ED",
+   "replace": "What a Defensible Product Design SR&amp;ED Claim Involves",
+   "regex": false
+  },
+  {
+   "row": 12,
+   "search": "xpert Eligibility Assessments Tailored to",
+   "replace": "ligibility Questions for",
+   "regex": false
+  },
+  {
+   "row": 13,
+   "search": "Comprehensive Claim Preparation, Filing, and Audit Support Service",
+   "replace": "Reconciling the Claim to the Book",
+   "regex": false
+  },
+  {
+   "row": 15,
+   "search": "Encouragement To Contact Gondaliya CPA For Personalized Consultation And Assistance With Maximizing Product Development Tax Credits",
+   "replace": "Watch the Eighteen-Month Deadline",
+   "regex": false
+  },
+  {
+   "row": 17,
+   "search": "How Gondaliya CPA Can Help",
+   "replace": "Getting Ready to Claim",
+   "regex": false
+  }
+ ],
+ "skipped": [
+  {
+   "row": 1,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 2,
+   "why": "already live (after text present)"
+  },
+  {
+   "row": 3,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 4,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 5,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 6,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 7,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 8,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 9,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 11,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 14,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 16,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 18,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 19,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 20,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 21,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 22,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 23,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 24,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 25,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 26,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 27,
+   "why": "before found 0 times now"
+  }
+ ]
+}

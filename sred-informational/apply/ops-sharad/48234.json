@@ -1,0 +1,181 @@
+{
+ "id": 48234,
+ "editor": "post_content",
+ "sha256_after": "ce810eb8618721ffb3fdca97c214e8ce2f6e004e885a4bf841b8868153f8b51e",
+ "ops": [
+  {
+   "row": 2,
+   "search": "te tax, SR&amp;ED claims, bookkeep",
+   "replace": "te tax, bookkeep",
+   "regex": false
+  },
+  {
+   "row": 11,
+   "search": "How Gondaliya CPA Supports Healthcare Clients Through the Entire Claim Proces",
+   "replace": "What Full Claim Support Involve",
+   "regex": false
+  },
+  {
+   "row": 15,
+   "search": "Contact Information and Steps for a Free",
+   "replace": "Steps for an",
+   "regex": false
+  },
+  {
+   "row": 23,
+   "search": "How Gondaliya CPA Supports Canadian Innovators",
+   "replace": "What Decides the Outcome",
+   "regex": false
+  },
+  {
+   "row": 27,
+   "search": " with Gondaliya CPA",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 29,
+   "search": "SR&amp;ED claims, ",
+   "replace": "",
+   "regex": false
+  }
+ ],
+ "skipped": [
+  {
+   "row": 0,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 1,
+   "why": "already live (after text present)"
+  },
+  {
+   "row": 3,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 4,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 5,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 6,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 7,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 8,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 9,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 10,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 12,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 13,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 14,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 16,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 17,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 18,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 19,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 20,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 21,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 22,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 24,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 25,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 26,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 28,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 30,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 31,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 32,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 33,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 34,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 35,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 36,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 37,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 38,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 39,
+   "why": "before found 0 times now"
+  }
+ ]
+}

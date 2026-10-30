@@ -1,0 +1,249 @@
+{
+ "id": 49366,
+ "editor": "post_content",
+ "sha256_after": "22d3de0f6d8564c5d7b49735d6dc3cd1e04ffa63abb449d27df45f2a2276188f",
+ "ops": [
+  {
+   "row": 2,
+   "search": "15+ years of experience preparing SR&amp;ED claims for Canadian manufacturers, covering",
+   "replace": "15+ years of experience with Canadian manufacturers, with SR&amp;ED knowledge covering",
+   "regex": false
+  },
+  {
+   "row": 3,
+   "search": "nering\">Partnering with Gondaliya CPA</a></li",
+   "replace": "nering\">Building a Stronger Claim</a></li",
+   "regex": false
+  },
+  {
+   "row": 4,
+   "search": "<li><a href=\"#toc-contact\">Contact and Further Engagement</a></li>\n",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 5,
+   "search": "Sectors We Serve</a></li",
+   "replace": "Sectors and Where SR&amp;ED Sits</a></li",
+   "regex": false
+  },
+  {
+   "row": 6,
+   "search": " of Gondaliya CPA's expertise in maximizing",
+   "replace": ": getting the most from",
+   "regex": false
+  },
+  {
+   "row": 13,
+   "search": "enefits of partnering with Gondaliya CPA for manufacturing SR&amp;ED claims",
+   "replace": "uilding a stronger manufacturing SR&amp;ED claim",
+   "regex": false
+  },
+  {
+   "row": 14,
+   "search": "Partnering with Gondaliya CPA</h4>\n<span class=\"gcpa-pill gold\">The Partnership",
+   "replace": "Building a Stronger Claim</h4>\n<span class=\"gcpa-pill gold\">The Approach",
+   "regex": false
+  },
+  {
+   "row": 32,
+   "search": "<h2>Contact\\ and\\ Further\\ Engagement\\ with\\ Gondaliya\\ CPA\\ for\\ Ma[\\s\\S]*?ictions\\ supporting\\ manufacturers\\ focused\\ on\\ innovation\\.</p>\\\n",
+   "replace": "",
+   "regex": true
+  },
+  {
+   "row": 34,
+   "search": " Credits with Gondaliya CPA</h2>",
+   "replace": " Credits</h2>",
+   "regex": false
+  },
+  {
+   "row": 35,
+   "search": "<h5\\ style=\"color:\\#15355c;margin:24px\\ 0\\ 8px;\">How\\ Gondaliya\\ C[\\s\\S]*?gondaliyacpa\\.ca\\ or\\ call\\ 647\\&\\#8209;212\\&\\#8209;9559\\ today\\.</p>\\\n",
+   "replace": "",
+   "regex": true
+  },
+  {
+   "row": 36,
+   "search": "We Serve",
+   "replace": "and Where SR&amp;ED Sits",
+   "regex": false
+  },
+  {
+   "row": 37,
+   "search": "How Gondaliya CPA Builds Defensible Claims",
+   "replace": "What Makes a Claim Defensible",
+   "regex": false
+  },
+  {
+   "row": 48,
+   "search": " with Gondaliya CPA",
+   "replace": "",
+   "regex": false
+  },
+  {
+   "row": 51,
+   "search": "preparing SR&amp;ED claims for Canadian manufacturers,",
+   "replace": "with Canadian manufacturers, with SR&amp;ED knowledge",
+   "regex": false
+  }
+ ],
+ "skipped": [
+  {
+   "row": 0,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 1,
+   "why": "already live (after text present)"
+  },
+  {
+   "row": 7,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 8,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 9,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 10,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 11,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 12,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 15,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 16,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 17,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 18,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 19,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 20,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 21,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 22,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 23,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 24,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 25,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 26,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 27,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 28,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 29,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 30,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 31,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 33,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 38,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 39,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 40,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 41,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 42,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 43,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 44,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 45,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 46,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 47,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 49,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 50,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 52,
+   "why": "before found 0 times now"
+  }
+ ]
+}

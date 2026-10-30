@@ -1,0 +1,79 @@
+{
+ "id": 51032,
+ "editor": "post_content",
+ "sha256_after": "2ed76035036f55b8017215566cf5e38f919f9b0c32c3e8283ce49c4675ae406b",
+ "ops": [
+  {
+   "row": 9,
+   "search": "SR\\&amp;ED\\ \\&amp;\\ Destroyed\\ Lots</h3><p><strong>The\\ problem:</[\\s\\S]*?\\ refund\\ of\\ roughly\\ \\$87,000\\ in\\ cash\\ plus\\ the\\ Ontario\\ OITC</li",
+   "replace": "Destroyed Lots</h3><p><strong>The problem:</strong> A London-area standard processor had \\$80,000 of failed-testing lots that Health Canada had already approved for destruction still carried in inventory at full cost, overstating both the balance sheet and taxable income.</p><p><strong>What we did:</strong> We wrote off the destroyed lots under section 10 with the Health Canada destruction records as support.</p><p><strong>The result:</strong></p><ul class=\"sb-case-res\"",
+   "regex": true
+  }
+ ],
+ "skipped": [
+  {
+   "row": 0,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 1,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 2,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 3,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 4,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 5,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 6,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 7,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 8,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 10,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 11,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 12,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 13,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 14,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 15,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 16,
+   "why": "needs_sharad"
+  }
+ ]
+}
