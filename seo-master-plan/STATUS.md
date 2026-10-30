@@ -34,3 +34,4 @@ Plan: Sharad's email, which replaces all earlier SEO change lists. Rules: see th
 - **/review-engagement-services/:** keep its current redirect to /cpa-compilation-report-notice-to-reader/.
 - **No staging:** the security updates (change 1) are done live, after a backup. Content edits wait until Navneet confirms the updates are finished.
 - **Change 6 (services we do not offer): ON HOLD in this session.** Navneet is handling it in a different session. Do not edit SR&ED or review/audit content here.
+- **Rate changes for changes 8 and 9 approved by Navneet (October 30):** the 2026 payroll values, the Ontario 2026 brackets and BPA, the federal BPA, the EI guide totals, the corporate tax rates (Ontario 2.2% from July 1, 2026, and the other provinces from CRA's table), and the calculator logic.
