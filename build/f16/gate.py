@@ -1,12 +1,24 @@
-"""F16 hub gate: line 1224 plus the hard rules."""
+"""F16 hub gate: line 1224 plus the hard rules.
+
+Takes the hub file as an argument and defaults to guides-hub.html, which is
+what it was hardcoded to. It is run over tools-hub.html as well now that that
+hub carries all sixty children.
+"""
 import json, re, sys
-c = open('guides-hub.html', encoding='utf-8').read(); low = c.lower(); fail = []
+NAME = sys.argv[1] if len(sys.argv) > 1 else 'guides-hub.html'
+c = open(NAME, encoding='utf-8').read(); low = c.lower(); fail = []
 
 # line 1224 gate: live child count, never hand-typed, plus links to every child.
 if '[cnf_child_count' not in c:
     fail.append('no live child count shortcode')
-if re.search(r'<b>\s*\d+\s*</b>\s*guides published', c):
-    fail.append('child count appears hand-typed; line 1224 forbids it')
+# The old form of this check looked for "<b>N</b> guides published", which is
+# the reverse of the markup the hubs actually emit ("Guides published:
+# <b>...</b>") and so could never have fired. It now reads the value inside
+# the count line itself, whatever the label says.
+for m in re.finditer(r'published:\s*<b>(.*?)</b>', c, re.S):
+    if not m.group(1).strip().startswith('[cnf_child_count'):
+        fail.append('child count is hand-typed (%r); line 1224 forbids it'
+                    % m.group(1).strip()[:40])
 if 'ei-cards' not in c:
     fail.append('no child list')
 
@@ -36,7 +48,7 @@ if fail:
     print('GATE FAILED')
     for f in fail: print(' -', f)
     sys.exit(1)
-print('gate clear')
+print('gate clear on ' + NAME)
 print('  child count   : live shortcode, not hand-typed')
 print('  outbound      : %d distinct, cap 400' % len(links))
 print('  bytes         : %d' % len(c.encode()))

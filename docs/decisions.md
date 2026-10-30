@@ -5805,3 +5805,55 @@ Gondaliya or a decision to drop them. The plan gives exactly two figures of
 that kind, the $25.00 per day up to $2,500.00 for a non-resident-owned
 corporation and the $12.00 federal annual return fee, and both are already on
 live pages.
+
+---
+
+## 2026-10-30 — The /tools/ hub linked 10 of 60 children, and the other hubs need the same audit
+
+The tools hub (page 1187) shipped on October 23 with the ten tools section
+6(e) names and was never extended as batches 4 to 8 published. On October 30
+it linked **10 of 60** children. Line 1224 requires a hub to link every child
+in its family, so it had been in breach since the fourth batch.
+
+Fixed the same day: all sixty are carded, in ten groups with their own H2
+rather than one grid of sixty. Line 1224 requires every child to be linked and
+says nothing about the shape of the list; the groups also give the page ten
+descriptive headings where it had one. The count line stays the
+`[cnf_child_count]` shortcode, so the number is still never hand-typed.
+
+**The check that was missing is the real fix.** `build/f16/tools-hub-children.json`
+now holds every published slug, read from the site, and `build_tools_hub.py`
+asserts its card list matches that file exactly. A tool published without a
+hub card now fails the build instead of going quietly unlinked. Nothing had
+been comparing the two, which is why the gap opened and stayed open.
+
+`build/f16/gate.py` was hardcoded to `guides-hub.html`; it now takes the hub
+file as an argument and was run over both. Its hand-typed-count check also
+looked for `<b>N</b> guides published`, the reverse of the markup the hubs
+actually emit, so it could never have fired. It now reads the value inside
+the count line whatever the label says.
+
+### Open: the other four hubs, measured on the built files
+
+| Hub | Child links | Children live | Live count shortcode |
+|---|---|---|---|
+| /tools/ | 60 | 60 | yes |
+| /guides/ | 13 | 30 | yes |
+| /locations/ | 26 | 24 service places | yes |
+| /blog/ | 2 | 2 posts | **no** |
+| /deadlines/ | 15 | 23 deadlines | **no** |
+
+Two things to settle, neither of them this batch's work:
+
+1. **/guides/ is short by about half**, which was already logged above as an
+   open item. It is the same fix as this one and wants the same
+   children-from-the-site assertion.
+2. **/blog/ and /deadlines/ carry no `[cnf_child_count]` shortcode at all**,
+   which is a line 1224 breach independent of how many children they link.
+   /deadlines/ also links 15 of 23. /blog/ is complete only because the blog
+   is at two posts; it will fall behind every Friday from the first batch of
+   ten, so it needs the assertion before the blog scales rather than after.
+
+Bringing /guides/ and /deadlines/ up to full changes visible content on two
+live pages, so it goes to Sharad Gondaliya in the Friday update rather than
+being done unannounced.
