@@ -28,3 +28,7 @@ Calculators:
 ## Needs Sharad (flagged, not applied)
 - Any change to an H1, SEO title, slug or meta description.
 - The case study (28025) and the Best page (34598), where the claim is about the firm itself.
+
+## Approval update (Navneet, Oct 30, 2026)
+Navneet approved all items: every row in `SHARAD-REVIEW.md` (needs_sharad rows) and the Elementor widget
+removals in `MANUAL-ELEMENTOR.md`. Work resumes after 5:36 pm.
