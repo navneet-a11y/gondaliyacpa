@@ -107,6 +107,10 @@ GROUPS = [
    'Year-End Change Impact Calculator',
    'Moving a year-end creates a period and a return. The length of it, its '
    'deadline, and the approval needed.'),
+  ('year-end-change-approval-checker',
+   'Year-End Change Approval Checker',
+   'Some year-end changes need approval before they take effect and some do '
+   'not. Which case a change falls in, and where it goes.'),
   ('fiscal-period-length-calculator', 'Fiscal Period Length Calculator',
    'A period in days and weeks, whether it clears the 53-week limit, and the '
    'T2 date that follows it.'),
@@ -114,6 +118,9 @@ GROUPS = [
    'Two T2 Returns in One Year Checker',
    'Two tax years can both come due in one calendar year. Both deadlines and '
    'the gap between them.'),
+  ('stub-period-return-checker', 'Stub Period Return Checker',
+   'A fiscal period that ended early is a tax year in its own right. Its '
+   'deadline, and the fee it carries on its own.'),
  ]),
 
  ('Is a Return Owed, and Is the Year Nil', [
@@ -147,6 +154,12 @@ GROUPS = [
   ('t2-short-eligibility-checker', 'T2 Short Eligibility Checker',
    'All eight T2 Short conditions on one screen. The checker names the condition '
    'that fails, where one does.'),
+  ('t2-short-exclusion-checker', 'T2 Short Exclusion Checker',
+   'Which of the eight conditions is the one keeping a corporation off the '
+   'T2 Short, named rather than implied.'),
+  ('t2-short-ccpc-condition-checker', 'CCPC Condition Checker',
+   'The first T2 Short condition on its own: whether the corporation was a '
+   'Canadian-controlled private corporation throughout the year.'),
   ('required-schedules-checker', 'Required Schedules Checker',
    'The whole schedule set behind one set of answers: the GIFI schedules, '
    'Schedule 24, Schedule 50 and Schedule 8.'),
@@ -198,6 +211,14 @@ GROUPS = [
   ('shareholder-loan-balance-checker', 'Shareholder Loan Balance Checker',
    'A loan balance makes the GIFI schedules required even where it never '
    'moved, and either direction counts.'),
+  ('shareholder-register-completeness-checker',
+   'Shareholder Register Checker',
+   'What Schedule 50 needs about each shareholder, and which gaps in a '
+   'register have to be filled before filing.'),
+  ('due-to-versus-due-from-shareholder-checker',
+   'Due To vs Due From Shareholder Checker',
+   'Which side of the balance sheet a shareholder balance sits on, and what '
+   'either direction means for a nil year.'),
  ]),
 
  ('Unfiled Years and Catching Up', [
@@ -214,6 +235,10 @@ GROUPS = [
   ('nil-return-late-penalty-checker', 'Nil Return Late Penalty Checker',
    'What a late nil return does and does not cost, with the whole '
    'qualification rather than a headline.'),
+  ('arbitrary-assessment-response-checker',
+   'Arbitrary Assessment Response Checker',
+   'An assessment raised on a year nobody filed is displaced by the return '
+   'for that year. The order to file the years in.'),
  ]),
 
  ('CRA Accounts, Payroll and GST/HST', [
@@ -235,6 +260,12 @@ GROUPS = [
   ('t4-nil-filing-requirement-checker', 'T4 Nil Filing Requirement Checker',
    'Whether a T4 information return is expected on an open payroll account '
    'with no wages, and its date.'),
+  ('payroll-account-closure-checker', 'Payroll Account Closure Checker',
+   'What Form RC145 closes, and which payroll filings come first so the '
+   'account can be closed at all.'),
+  ('cra-account-standing-checker', 'CRA Account Standing Checker',
+   'A corporation has a tax record and a registry record. Which of the two '
+   'is behind, and what brings each current.'),
  ]),
 
  ('Annual Returns and the Registry', [
@@ -268,6 +299,9 @@ GROUPS = [
    'Clearance Certificate Requirement Checker',
    'When a clearance certificate is needed before distributing, and what the '
    'request rests on.'),
+  ('dissolution-timeline-calculator', 'Dissolution Timeline Calculator',
+   'The wind-up steps in order with dates, from the final tax year through '
+   'to the clearance certificate request.'),
  ]),
 
  ('Provincial, Non-Resident and Director Exposure', [

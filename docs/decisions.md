@@ -6195,3 +6195,62 @@ exists, and the children assertion means the next one cannot drift.
   uses "nil t2 filing in alberta", the builder stores "nil t2 filing alberta".
   Alberta mirrors the 24 live pages rather than changing a convention
   unilaterally, but one of the two is wrong.
+
+## 2026-11-02 — Family 2 calculators 61 to 70 published, the hub taken to seventy
+
+Batch 9 is live: tools 61 to 70 as `nil_calculator` IDs 1562, 1566, 1570, 1571,
+1572, 1573, 1574, 1575, 1576 and 1577. The gaps in the numbering are duplicate
+drafts (1563 to 1565, 1567 to 1569) that were mangled in transit and deleted
+before publishing — nothing half-built was ever reachable.
+
+Every one of the ten was byte-verified against its built file with a zero-change
+`wp_replace_in_post` probe after publishing: 27,654 · 29,585 · 27,287 · 26,671 ·
+27,410 · 26,898 · 27,096 · 27,623 · 26,947 · 27,348. That check is the one that
+caught the Alberta hub transcription error last week, so it now runs on every
+publish without exception.
+
+### Publishing mechanics, written down because they cost a day
+
+`wp_replace_in_post` strips backslashes in transit (`[\s\S]` arrives as `[sS]`)
+and truncates a pattern at a `<` or a `"`, so a regex containing either matches
+empty at position 0 and the replacement is merely prepended to the post. Large
+replacements fail outright under regex. The recipe that works:
+
+1. `wp_duplicate_post(post_id=1510, status='draft')` — copies content, meta and
+   terms, so the 12,975-byte CSS prefix is never re-transcribed.
+2. Regex `(?s)div class=.ei-hero..*` → `ZZZ`, leaving prefix + `<ZZZ` at 12,980.
+3. Literal `ZZZ` → the body, which is `tail -c +12978 <slug>.html`.
+4. `wp_update_cpt_item` with the slug, `publish` and the meta six plus Rank Math.
+5. Zero-change probe to confirm the byte count.
+
+### /tools/ hub: 60 cards to 70
+
+`tools-hub-children.json` re-read from the site (70 published slugs, diffed both
+ways against the live list before building) and ten cards added to the groups
+they belong in, so no group grew past fifteen. The hub is 26,506 bytes locally
+and 26,506 live, with `<div class="ei-card"><h3><a href=".../tools/` matching 70
+times on the live page — the child-count check that line 1224 requires, measured
+rather than asserted. The seven inserts were made surgically against unique
+anchor cards rather than by replacing 26 KB of content.
+
+### Rank Math ledger
+
+`nil_calculator_batch9` added with the ten real IDs, taken from
+`build/f2/f2i-manifest.json` rather than retyped. `gate_rank_math.py` passes at
+204 items with titles and descriptions unique.
+
+Two corrections made while doing it. First, three of the ten (1575, 1576, 1577)
+had been published with descriptions I typed by hand instead of the gated
+manifest values, and 1575 to 1577 were missing `cnf_last_verified_et`
+altogether; all three were re-applied from the manifest so live, manifest and
+ledger now agree. Second, the ledger's `coverage` line claimed 188 items when
+the sections hold 204: it was written before Alberta added five service places
+and a hub page and was never updated. It is now counted from the file itself and
+says so.
+
+### Still open, unchanged by this batch
+
+Family 2 cannot reach 150 from Appendix A: roughly 30 of the remaining entries
+are renames of tools already built, about 50 need figures the plan does not
+state, and 8 are killed by a zero-mention count. That is a decision for Sharad
+Gondaliya, not a build problem.

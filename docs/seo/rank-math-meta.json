@@ -1,6 +1,6 @@
 {
- "applied": "2026-10-29",
- "coverage": "188 items given meta: 30 pages, 30 questions, 24 service places, 23 deadlines, 20 calculators (tools 1-20), 17 guides (1-17), 1 cost page, the 10 guides 18-27 (IDs 1377-1395), the 10 calculators 31-40 (IDs 1413-1434), the 3 guides 28-30 (IDs 1464-1468) that complete Family 9, and the 10 calculators 41-50 (IDs 1444-1508) that complete the fifty, and the 10 calculators 51-60 (IDs 1510-1528) that take Family 2 to sixty. Calculators 21-30 (IDs 1285-1303) carry meta set at publish time by the build/f2 generator and are not repeated here. Every published item on the site has a Rank Math title and description.",
+ "applied": "2026-11-02",
+ "coverage": "204 items given meta: 31 pages, 30 questions, 29 service places, 23 deadlines, 20 calculators (tools 1-20), 17 guides (1-17), 1 cost page, the 10 guides 18-27 (IDs 1377-1395), the 3 guides 28-30 (IDs 1464-1468) that complete Family 9, and the four Family 2 batches that take the family to seventy: calculators 31-40 (IDs 1413-1434), 41-50 (IDs 1444-1508), 51-60 (IDs 1510-1528) and 61-70 (IDs 1562-1577). Counted from the sections in this file on 2026-11-02: the previous figure of 188 was written before Alberta added five service places and a hub page and was never updated. Calculators 21-30 (IDs 1285-1303) carry meta set at publish time by the build/f2 generator and are not repeated here. Every published item on the site has a Rank Math title and description.",
  "nil_calculator_1_to_20": {
   "items": [
    {
@@ -320,6 +320,72 @@
    }
   ],
   "note": "Published October 30, 2026 as IDs 1510 to 1528. Values taken from build/f2/f2h-manifest.json, not retyped."
+ },
+ "nil_calculator_batch9": {
+  "items": [
+   {
+    "desc": "Whether a fiscal year-end change needs CRA approval, and what you file either way. Nil T2 filing is $300.00 plus HST per tax year.",
+    "id": 1562,
+    "kw": "year-end change approval checker",
+    "title": "Year-End Change Approval Checker"
+   },
+   {
+    "desc": "The eight T2 Short conditions and which one excludes your corporation. The full T2 costs the same, at $300.00 plus HST per tax year.",
+    "id": 1566,
+    "kw": "t2 short exclusion checker",
+    "title": "T2 Short Exclusion Checker"
+   },
+   {
+    "desc": "Whether the corporation is a Canadian-controlled private corporation, which decides a T2 Short condition and nil eligibility here.",
+    "id": 1570,
+    "kw": "t2 short ccpc condition checker",
+    "title": "T2 Short CCPC Condition Checker"
+   },
+   {
+    "desc": "The final T2 deadline from your dissolution date, and the order of the wind-up steps around it, including those outside the fee.",
+    "id": 1571,
+    "kw": "dissolution timeline calculator",
+    "title": "Dissolution Timeline Calculator"
+   },
+   {
+    "desc": "What an open payroll account still expects, and what Form RC145 closes. An inactive T2 does not close a payroll account.",
+    "id": 1572,
+    "kw": "payroll account closure checker",
+    "title": "Payroll Account Closure Checker"
+   },
+   {
+    "desc": "Whether your register holds what Schedule 50 needs for every shareholder at 10 per cent or more. Inside $300.00 plus HST per tax year.",
+    "id": 1573,
+    "kw": "shareholder register completeness checker",
+    "title": "Shareholder Register Completeness Checker"
+   },
+   {
+    "desc": "Which direction a shareholder balance runs, and why either one makes GIFI Schedules 100, 125 and 141 required on a nil return.",
+    "id": 1574,
+    "kw": "due to versus due from shareholder checker",
+    "title": "Due To Versus Due From Shareholder Checker"
+   },
+   {
+    "desc": "An assessment raised on a year nobody filed is displaced by the return for that year. The order to file in, oldest year first.",
+    "id": 1575,
+    "kw": "arbitrary assessment response checker",
+    "title": "Arbitrary Assessment Response Checker"
+   },
+   {
+    "desc": "A fiscal period that ended early is its own tax year with its own return and its own deadline. This dates it from the period end.",
+    "id": 1576,
+    "kw": "stub period return checker",
+    "title": "Stub Period Return Checker"
+   },
+   {
+    "desc": "A corporation has a tax record and a registry record. Which one is behind, what brings it current, and which filings fall outside the fee.",
+    "id": 1577,
+    "kw": "cra account standing checker",
+    "title": "CRA Account Standing Checker"
+   }
+  ],
+  "note": "Published November 2, 2026 as IDs 1562 to 1577 (not contiguous: 1563-1565 and 1567-1569 were duplicate drafts deleted unpublished). Values taken from build/f2/f2i-manifest.json, not retyped.",
+  "rest_base": "nil_calculator"
  },
  "nil_cost": {
   "items": [
