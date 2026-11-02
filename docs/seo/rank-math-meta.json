@@ -1,6 +1,6 @@
 {
  "applied": "2026-11-02",
- "coverage": "204 items given meta: 31 pages, 30 questions, 29 service places, 23 deadlines, 20 calculators (tools 1-20), 17 guides (1-17), 1 cost page, the 10 guides 18-27 (IDs 1377-1395), the 3 guides 28-30 (IDs 1464-1468) that complete Family 9, and the four Family 2 batches that take the family to seventy: calculators 31-40 (IDs 1413-1434), 41-50 (IDs 1444-1508), 51-60 (IDs 1510-1528) and 61-70 (IDs 1562-1577). Counted from the sections in this file on 2026-11-02: the previous figure of 188 was written before Alberta added five service places and a hub page and was never updated. Calculators 21-30 (IDs 1285-1303) carry meta set at publish time by the build/f2 generator and are not repeated here. Every published item on the site has a Rank Math title and description.",
+ "coverage": "211 items given meta: 31 pages, 30 questions, 36 service places, 23 deadlines, 20 calculators (tools 1-20), 17 guides (1-17), 1 cost page, the 10 guides 18-27 (IDs 1377-1395), the 3 guides 28-30 (IDs 1464-1468) that complete Family 9, and the four Family 2 batches that take the family to seventy: calculators 31-40 (IDs 1413-1434), 41-50 (IDs 1444-1508), 51-60 (IDs 1510-1528) and 61-70 (IDs 1562-1577). Counted from the sections in this file on 2026-11-02, when Alberta completed its twelve service places: the figure of 188 it replaced had been written before Alberta opened at all and was never updated. Calculators 21-30 (IDs 1285-1303) carry meta set at publish time by the build/f2 generator and are not repeated here. Every published item on the site has a Rank Math title and description.",
  "nil_calculator_1_to_20": {
   "items": [
    {
@@ -1097,8 +1097,51 @@
     "id": 1542,
     "kw": "t2 short filing in alberta",
     "title": "T2 Short Filing in Alberta | Eligibility"
+   },
+   {
+    "desc": "What a nil T2 costs an Alberta corporation: $300.00 plus HST per tax year, what the fee covers, and why the AT1 is filed separately.",
+    "id": 1603,
+    "kw": "nil t2 filing cost in alberta",
+    "title": "Nil T2 Filing Cost in Alberta"
+   },
+   {
+    "desc": "Every unfiled year for an Alberta corporation is still a return owed. We file them oldest year first at $300.00 plus HST per tax year.",
+    "id": 1605,
+    "kw": "unfiled corporate tax returns in alberta",
+    "title": "Unfiled Corporate Tax Returns in Alberta"
+   },
+   {
+    "desc": "An Alberta corporation that did nothing in a tax year still files a T2 within six months of its year-end, at $300.00 plus HST per tax year.",
+    "id": 1607,
+    "kw": "no activity corporation tax return in alberta",
+    "title": "No Activity Corporation Tax Return in Alberta"
+   },
+   {
+    "desc": "A numbered Alberta corporation files the same T2 a named one does. The nil return is $300.00 plus HST per tax year, oldest year first.",
+    "id": 1609,
+    "kw": "numbered corporation nil filing in alberta",
+    "title": "Numbered Corporation Nil Filing in Alberta"
+   },
+   {
+    "desc": "An Alberta holding corporation is not nil once it receives interest, a dividend or rent. When it is nil, what it files and which schedules apply.",
+    "id": 1611,
+    "kw": "inactive holding corporation t2 filing in alberta",
+    "title": "Inactive Holding Corporation T2 Filing in Alberta"
+   },
+   {
+    "desc": "When the T2 for an Alberta corporation is due: six months after the fiscal year-end, while the AT1 and the annual return keep their own dates.",
+    "id": 1613,
+    "kw": "nil t2 filing deadline in alberta",
+    "title": "Nil T2 Filing Deadline in Alberta"
+   },
+   {
+    "desc": "Nil T2 filing for a non-resident-owned Alberta corporation, including the $25.00 per day charge up to $2,500.00 on an unfiled year.",
+    "id": 1615,
+    "kw": "non-resident-owned corporation nil t2 in alberta",
+    "title": "Non-Resident-Owned Alberta Corporation Nil T2"
    }
   ],
+  "note": "Ontario 12 and British Columbia 12 from October; Alberta 12 complete on 2026-11-02 (IDs 1538-1542 and 1603-1615). Alberta values for the seven added that day come from build/f4/build_f4_ab.py, not retyped.",
   "rest_base": "nil_service_place"
  },
  "note": "Rank Math title/description/focus keyword applied to corpnilfilingfor300.ca. Titles <=60 characters, descriptions 70-160, no price outside the full \"$300.00 plus HST per tax year\" form, no bare T183, no bare EFILE outside \"registered EFILE electronic filer\", no superlatives, no unqualified penalty claim, no emoji, every title and description unique. Run build/f2/gate_rank_math.py to re-check this file against all of that.",

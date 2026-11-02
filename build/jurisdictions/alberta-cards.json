@@ -38,37 +38,37 @@
  {
   "href": "/nil-t2-filing-cost-in-alberta/",
   "title": "Nil T2 Filing Cost in Alberta",
-  "desc": "What the $300.00 plus HST fee covers for a Alberta corporation, and what falls outside a nil return.",
+  "desc": "What the $300.00 plus HST fee covers for an Alberta corporation, and what falls outside a nil return.",
   "svg": "<svg viewBox=\"0 0 32 32\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M16 1.6C8.05 1.6 1.6 8.05 1.6 16S8.05 30.4 16 30.4 30.4 23.95 30.4 16 23.95 1.6 16 1.6zm0 27.2C8.94 28.8 3.2 23.06 3.2 16S8.94 3.2 16 3.2 28.8 8.94 28.8 16 23.06 28.8 16 28.8z\"></path><path d=\"M16.8 15.2h-1.6c-.88 0-1.6-.72-1.6-1.6s.72-1.6 1.6-1.6h3.2c.44 0 .8-.36.8-.8s-.36-.8-.8-.8h-1.6V8.8c0-.44-.36-.8-.8-.8s-.8.36-.8.8v1.6h-.8c-1.77 0-3.2 1.43-3.2 3.2s1.43 3.2 3.2 3.2h1.6c.88 0 1.6.72 1.6 1.6s-.72 1.6-1.6 1.6H12.8c-.44 0-.8.36-.8.8s.36.8.8.8h2.4v1.6c0 .44.36.8.8.8s.8-.36.8-.8v-1.6h.8c1.77 0 3.2-1.43 3.2-3.2s-1.43-3.2-3.2-3.2z\"></path></svg>"
  },
  {
   "href": "/unfiled-corporate-tax-returns-alberta/",
   "title": "Unfiled Corporate Tax Returns in Alberta",
-  "desc": "Every year a Alberta corporation has not filed, brought up to date oldest year first.",
+  "desc": "Every year an Alberta corporation has not filed, brought up to date oldest year first.",
   "svg": "<svg viewBox=\"0 0 32 32\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M23.2 0.8H8.8c-.88 0-1.6.72-1.6 1.6v1.6H5.6c-.88 0-1.6.72-1.6 1.6v24c0 .88.72 1.6 1.6 1.6h17.6c.88 0 1.6-.72 1.6-1.6v-1.6h1.6c.88 0 1.6-.72 1.6-1.6V4.8c0-.88-.72-1.6-1.6-1.6V2.4c0-.88-.72-1.6-1.6-1.6zm-.8 28.8H6.4V5.6h16v24zm3.2-3.2h-1.6V4.8c0-.88-.72-1.6-1.6-1.6H8.8V2.4h14.4v1.6h2.4v22.4z\"></path><path d=\"M9.6 11.2h9.6c.44 0 .8-.36.8-.8s-.36-.8-.8-.8H9.6c-.44 0-.8.36-.8.8s.36.8.8.8zM9.6 16h9.6c.44 0 .8-.36.8-.8s-.36-.8-.8-.8H9.6c-.44 0-.8.36-.8.8s.36.8.8.8zM9.6 20.8h6.4c.44 0 .8-.36.8-.8s-.36-.8-.8-.8H9.6c-.44 0-.8.36-.8.8s.36.8.8.8z\"></path></svg>"
  },
  {
   "href": "/no-activity-corporation-tax-return-alberta/",
   "title": "No Activity Corporation Tax Return in Alberta",
-  "desc": "The T2 a Alberta corporation files for a year in which it carried on no activity at all.",
+  "desc": "The T2 an Alberta corporation files for a year in which it carried on no activity at all.",
   "svg": "<svg viewBox=\"0 0 32 32\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M16 1.6C8.05 1.6 1.6 8.05 1.6 16S8.05 30.4 16 30.4 30.4 23.95 30.4 16 23.95 1.6 16 1.6zm0 27.2C8.94 28.8 3.2 23.06 3.2 16c0-3.2 1.18-6.13 3.12-8.38l19.26 19.26A12.74 12.74 0 0 1 16 28.8zm9.68-4.42L6.42 5.12A12.74 12.74 0 0 1 16 3.2c7.06 0 12.8 5.74 12.8 12.8 0 3.2-1.18 6.13-3.12 8.38z\"></path></svg>"
  },
  {
   "href": "/numbered-corporation-nil-filing-alberta/",
   "title": "Numbered Corporation Nil Filing in Alberta",
-  "desc": "Nil T2 filing for a Alberta numbered corporation, filed under its registered number.",
+  "desc": "Nil T2 filing for an Alberta numbered corporation, filed under its registered number.",
   "svg": "<svg viewBox=\"0 0 32 32\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M27.2 11.2h-6.06l.74-5.17a.8.8 0 1 0-1.58-.23l-.77 5.4h-6.38l.74-5.17a.8.8 0 1 0-1.58-.23l-.77 5.4H4.8a.8.8 0 0 0 0 1.6h6.5l-1.14 8H4.8a.8.8 0 0 0 0 1.6h5.13l-.74 5.17a.8.8 0 0 0 1.58.23l.77-5.4h6.38l-.74 5.17a.8.8 0 0 0 1.58.23l.77-5.4h5.77a.8.8 0 0 0 0-1.6h-5.54l1.14-8h5.3a.8.8 0 0 0 0-1.6zm-8.05 9.6h-6.38l1.14-8h6.38l-1.14 8z\"></path></svg>"
  },
  {
   "href": "/nil-t2-filing-deadline-alberta/",
   "title": "Nil T2 Filing Deadline in Alberta",
-  "desc": "When a Alberta corporation&rsquo;s nil T2 is due, with the six-month rule worked through.",
+  "desc": "When an Alberta corporation&rsquo;s nil T2 is due, with the six-month rule worked through.",
   "svg": "<svg viewBox=\"0 0 32 32\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M26.4 4h-3.2V2.4a.8.8 0 0 0-1.6 0V4H10.4V2.4a.8.8 0 0 0-1.6 0V4H5.6A1.6 1.6 0 0 0 4 5.6v22.4a1.6 1.6 0 0 0 1.6 1.6h20.8a1.6 1.6 0 0 0 1.6-1.6V5.6A1.6 1.6 0 0 0 26.4 4zm0 24H5.6V12h20.8v16zm0-17.6H5.6V5.6h3.2v1.6a.8.8 0 0 0 1.6 0V5.6h11.2v1.6a.8.8 0 0 0 1.6 0V5.6h3.2v4.8z\"></path><path d=\"M11.2 16H8.8a.8.8 0 0 0 0 1.6h2.4a.8.8 0 0 0 0-1.6zM17.2 16h-2.4a.8.8 0 0 0 0 1.6h2.4a.8.8 0 0 0 0-1.6zM23.2 16h-2.4a.8.8 0 0 0 0 1.6h2.4a.8.8 0 0 0 0-1.6zM11.2 21.6H8.8a.8.8 0 0 0 0 1.6h2.4a.8.8 0 0 0 0-1.6zM17.2 21.6h-2.4a.8.8 0 0 0 0 1.6h2.4a.8.8 0 0 0 0-1.6z\"></path></svg>"
  },
  {
   "href": "/nil-t2-filing-for-non-resident-owned-corporations-alberta/",
   "title": "Nil T2 Filing for Non-Resident-Owned Corporations in Alberta",
-  "desc": "What changes for a Alberta corporation whose shares are held outside Canada.",
+  "desc": "What changes for an Alberta corporation whose shares are held outside Canada.",
   "svg": "<svg viewBox=\"0 0 32 32\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M16 1.6C8.05 1.6 1.6 8.05 1.6 16S8.05 30.4 16 30.4 30.4 23.95 30.4 16 23.95 1.6 16 1.6zm11.1 9.6h-4.3a21.6 21.6 0 0 0-2.2-6.74 12.84 12.84 0 0 1 6.5 6.74zM16 3.2c1.4 0 3.4 3.03 4.36 8H11.64C12.6 6.23 14.6 3.2 16 3.2zm-4.6 1.46a21.6 21.6 0 0 0-2.2 6.74H4.9a12.84 12.84 0 0 1 6.5-6.74zM3.2 16c0-1.1.14-2.17.4-3.2h4.72a28 28 0 0 0 0 6.4H3.6A12.9 12.9 0 0 1 3.2 16zm1.7 4.8h4.3a21.6 21.6 0 0 0 2.2 6.74 12.84 12.84 0 0 1-6.5-6.74zM16 28.8c-1.4 0-3.4-3.03-4.36-8h8.72c-.96 4.97-2.96 8-4.36 8zm4.63-9.6h-9.26a26 26 0 0 1 0-6.4h9.26a26 26 0 0 1 0 6.4zm-.03 8.34a21.6 21.6 0 0 0 2.2-6.74h4.3a12.84 12.84 0 0 1-6.5 6.74zm3.08-8.34a28 28 0 0 0 0-6.4h4.72a12.78 12.78 0 0 1 0 6.4h-4.72z\"></path></svg>"
  }
 ]

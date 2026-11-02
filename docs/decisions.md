@@ -6254,3 +6254,114 @@ Family 2 cannot reach 150 from Appendix A: roughly 30 of the remaining entries
 are renames of tools already built, about 50 need figures the plan does not
 state, and 8 are killed by a zero-mention count. That is a decision for Sharad
 Gondaliya, not a build problem.
+
+## 2026-11-02 — Alberta completes its twelve service pages
+
+Navneet: "Create next pages for alberta pending service place pages". The seven
+that were outstanding are live, so Alberta now carries the full twelve from plan
+line 304, level with Ontario and British Columbia:
+
+| Page | ID | Bytes |
+|---|---|---|
+| /nil-t2-filing-cost-in-alberta/ | 1603 | 10,544 |
+| /unfiled-corporate-tax-returns-alberta/ | 1605 | 10,196 |
+| /no-activity-corporation-tax-return-alberta/ | 1607 | 10,211 |
+| /numbered-corporation-nil-filing-alberta/ | 1609 | 9,853 |
+| /inactive-holding-corporation-t2-filing-alberta/ | 1611 | 10,507 |
+| /nil-t2-filing-deadline-alberta/ | 1613 | 10,027 |
+| /nil-t2-filing-for-non-resident-owned-corporations-alberta/ | 1615 | 10,432 |
+
+Every one byte-verified against its built file after publishing. `nil_service_place`
+now reports 36 published, and all twelve `cnf_service` terms read count 1, which
+is the twelve Alberta pages one per service.
+
+### The six Alberta facts are still unsourced, and these pages still do not state them
+
+`alberta.ca` and `open.alberta.ca` are still denied by the environment's network
+policy, so nothing was added to what the first five could say. Where British
+Columbia names its registry, its annual-report deadline, its statute and the two
+years of non-filing that let the registrar dissolve a company, the Alberta pages
+say only that the annual return exists, is a registry filing rather than a tax
+return, carries no tax, has its date set by the registry rather than by the
+Income Tax Act, and is not covered by the fee. Each of those is true by the
+nature of a registry filing. None is a figure.
+
+The deadline page was the one that pushed on this: its British Columbia sibling
+devotes a section to the annual report's date. The Alberta version says instead
+that the AT1 and the annual return each keep their own date, and that a federal
+T2 filed on time says nothing about either. A first draft said the annual return
+"runs on the registry's own schedule rather than on the fiscal year-end", which
+was cut: one of the contradictory sources had it six months after the fiscal
+year-end, so that sentence was an unsourced claim dressed as a structural fact.
+
+### A line 1717 breach that had been live since October 30
+
+Building the seven surfaced it: `final-t2-before-dissolution-alberta` opened
+with the same paragraph as `final-t2-before-dissolution-british-columbia`, word
+for word, because the Alberta dict was seeded from British Columbia's and that
+lead was never rewritten. Line 1717 requires a different first 120 words on
+every page. The per-province asserts compared pages only within one province, so
+nothing could have caught it.
+
+Now: the Alberta lead is rewritten (1541, 10,110 bytes, byte-verified), and
+`build/f4/gate.py` compares the opening paragraph of every page it gates against
+the opening paragraph of every other built F4 page in the directory. It reads
+the first paragraph after the first H2 rather than searching whole bodies,
+because the hard rule 8 not-nil wording is mandatory on each holding page and is
+meant to repeat; a first attempt that matched any paragraph failed British
+Columbia for exactly that. Comparing built HTML rather than importing the other
+builders means it covers Ontario too, whose builder exposes no SERVICES. Verified
+both ways: a decoy file carrying an Alberta opening fails the gate, and both
+provinces pass once it is removed.
+
+### Two more gate gaps, both found by running the gates on something new
+
+**"a Alberta" in the hub cards.** `alberta-cards.json` already held all twelve
+cards, with `cards_live` limiting the hub to the five that existed. Dropping
+that filter put the other seven on the page and the jurisdictions gate failed
+six times on "a Alberta" -- the same article bug fixed in the page template on
+October 30, sitting unnoticed in the card data because those cards had never
+been rendered. Fixed in the JSON; Alberta hub 38,826 bytes, byte-verified.
+
+**The /locations/ hub had never been through the F16 gate.** First run failed on
+"banned schema FAQPage" -- which appears in the page exactly once, inside a CSS
+comment reading "hard rule 6 forbids FAQPage schema". The gate now strips HTML
+and CSS comments before the schema check. A real FAQPage in an ld+json block
+still fails it, tested by swapping CollectionPage for FAQPage. /locations/ is at
+22,117 bytes with 36 service links, byte-verified, and its children manifest is
+re-read at 36.
+
+### Review dates
+
+The eight pages whose text was written or rewritten today carry "Last reviewed:
+November 2, 2026". Both hubs stay at October 30: only links were added to them,
+and on the jurisdiction hubs that same date also labels "Local data pulled
+October 30, 2026", which has not been re-pulled. Advancing it there would have
+claimed a fresh pull that did not happen.
+
+One trap worth recording: "October 30, 2026" and "November 2, 2026" are both
+16 characters, so a page whose only change is that date passes a byte check
+unchanged. The final-T2 page was already byte-identical to its new build before
+its live date line was replaced. Byte equality is a necessary check, not a
+sufficient one.
+
+### Cheap meta reads
+
+`wp_rest_read` takes a top-level `fields` argument, and `fields: "id,slug,
+meta.rank_math_title,..."` returns just those keys. Passing `_fields` inside
+`params` is ignored, which is how two reads of a single calculator returned its
+entire 20 KB body earlier today. Used `fields` to confirm 1615 carries its Rank
+Math title, focus keyword, `cnf_service_slug` and `cnf_last_verified_et`.
+
+### Still open
+
+- The six Alberta facts. Unchanged: nothing moves until `alberta.ca` is
+  reachable, and the AT1 exemption question for a nil corporation with it.
+- **`cnf_service` and `cnf_place` are still unset on the 24 Ontario and British
+  Columbia pages.** All twelve service terms now read count 1, and that one is
+  Alberta's in every case, which makes the gap easy to see.
+- The British Columbia pages' `cnf_unique_data_block_json` still records
+  `t2_assessment_count: null` on 12 pages while the hub carries 413,630.
+- The focus-keyword convention mismatch: the ledger uses "in alberta", the
+  builder stores "alberta". Alberta's twelve follow the existing convention on
+  both sides rather than changing one unilaterally.

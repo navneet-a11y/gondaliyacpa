@@ -245,13 +245,9 @@ AB = dict(
  strike_after=UNVERIFIED,
  quote_tax_total=False,
  cards='alberta-cards.json',
- # The first five, matching the five British Columbia opened with. Extend this
- # list as the remaining seven publish; the assertion above catches a typo.
- cards_live=['/nil-t2-filing-alberta/',
-             '/catch-up-nil-t2-filing-alberta/',
-             '/dormant-corporation-filing-alberta/',
-             '/final-t2-before-dissolution-alberta/',
-             '/t2-short-filing-alberta/'],
+ # All twelve published 2026-11-02, so cards_live is gone and the whole file is
+ # used, exactly as the note at the filter says. It held the first five while
+ # the other seven did not exist, so the hub never linked a dead URL.
 )
 
 # The registry annual-return block. These six always travel together: a table

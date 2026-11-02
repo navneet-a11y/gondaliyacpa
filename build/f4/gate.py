@@ -99,6 +99,46 @@ for s in SERVICES:
         fail.append('%s: no national sibling link' % s['slug'])
 leads = [s['lead'][0] for s in SERVICES]
 if len(set(leads)) != len(leads): fail.append('duplicate lead paragraph')
+# Line 1717 wants a different first 120 words on every page in the family, not
+# just within one province. Compared against the other provinces' built HTML
+# rather than by importing their builders, so it covers Ontario too (whose
+# builder exposes no SERVICES) and writes nothing. Alberta's final-T2 page
+# shipped on 2026-10-30 with British Columbia's lead paragraph word for word,
+# which the per-province asserts could never have caught.
+#
+# It is the OPENING paragraph that must differ, not every paragraph: the hard
+# rule 8 not-nil wording is mandatory on each holding page and is meant to
+# repeat. So this reads the first paragraph after the first H2 of each built
+# page and compares those, which is exactly what "the first 120 words" means.
+import glob
+
+
+def _opening(body):
+    i = body.find('<h2>')
+    if i < 0:
+        return None
+    j = body.find('<p>', i)
+    k = body.find('</p>', j)
+    if j < 0 or k < 0:
+        return None
+    return body[j:k + 4]
+
+
+_openings = {}
+for f in sorted(glob.glob('*.html')):
+    o = _opening(io.open(f, encoding='utf-8').read())
+    if o is None:
+        fail.append('%s: no opening paragraph found, so line 1717 cannot be '
+                    'checked on it' % f)
+    else:
+        _openings[f] = o
+for s in SERVICES:
+    f0 = s['slug'] + '.html'
+    for f, o in _openings.items():
+        if f != f0 and o == _openings.get(f0):
+            fail.append('%s: opening paragraph is identical to %s, which line '
+                        '1717 forbids' % (s['slug'], f))
+
 excs = [s['excerpt'] for s in SERVICES]
 if len(set(excs)) != len(excs): fail.append('duplicate excerpt')
 for s in SERVICES:

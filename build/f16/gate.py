@@ -28,8 +28,15 @@ BANNED = ['complete list of every accountant','cra authorized','cra agent','cra 
           'free consultation','risk free','five-star','money-back','starting from']
 for b in BANNED:
     if b in low: fail.append('banned phrase "%s"' % b)
+# Hard rule 6 is about schema, so the check reads the page with comments
+# stripped. The /locations/ hub carries a CSS comment that says "hard rule 6
+# forbids FAQPage schema", and the plain substring test failed the page for
+# saying so. A banned type in a real ld+json block still fails: comments are
+# the only thing removed.
+_nc = re.sub(r'/\*.*?\*/', '', re.sub(r'<!--.*?-->', '', c, flags=re.S),
+             flags=re.S)
 for bad in ['FAQPage','HowTo','aggregateRating','"Review"']:
-    if bad in c: fail.append('banned schema %s' % bad)
+    if bad in _nc: fail.append('banned schema %s' % bad)
 if re.search(r'T183(?!CORP)', c): fail.append('bare T183')
 if 'including HST' in c: fail.append('"including HST" contradicts the standing correction')
 if c.count('<h1') != 1: fail.append('%d H1' % c.count('<h1'))

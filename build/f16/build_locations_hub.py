@@ -70,9 +70,10 @@ PROVINCES = [
   'Registry filing: Alberta annual return',
   'Alberta administers its own corporate income tax, so the Alberta AT1 is a '
   'separate return from the federal T2 and is not covered by the fee. The '
-  'Alberta annual return is a separate registry filing again.',
-  ['Nil T2 Filing', 'Catch-Up Nil T2 Filing', 'Dormant Corporation Filing',
-   'Final T2 Before Dissolution', 'T2 Short Filing']),
+  'Alberta annual return is a separate registry filing again.'),
+  # All twelve Alberta services published 2026-11-02, so the live filter is
+  # gone and this province links the full set, as Ontario and British Columbia
+  # do. It carried the first five while the other seven did not exist.
 ]
 
 ALSO = [
