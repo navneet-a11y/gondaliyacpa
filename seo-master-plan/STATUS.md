@@ -52,3 +52,19 @@ The three agents applying changes 8 to 11 were stopped partway to avoid per-call
 - **Change 11: started.** Before-copies were taken for 14878, 16, 1707, 17951 and 6621. Check the live pages for the H1 to H2 changes, then do the rest from the prep file. /about-us/ is a manual Elementor edit.
 - **Holds still apply:** changes 6, 7 and 12. /review-engagement-services/ stays as is.
 - **Every edit must:** be dry-run first, be checked to hit only the intended page, run one at a time, keep a before-copy, be logged in `CHANGE-LOG.csv`, and purge the cache.
+
+## Handoff update (Monday, November 2, 2026)
+- **Change 8: DONE** (38443 and 39590). Verified against the backups and logged.
+- **Change 9, calculator 35514: DONE.** Verified, and the live node test passes. Fee wording "flat-fee from $400." is unchanged.
+- **Change 9, rate guide 36029: NOT DONE.** Only the province cards were updated. Still to do:
+  - Province table rows: ON, QC, SK, NS, PEI, NL, YT. They still hold the old values.
+  - The $15M grind row.
+  - The PEI sentence (" A few provinces — Prince Edward Island notably — do not provide a separate small business rate.").
+  - The intro "from 2% (...) to 16% (...)".
+  - The FAQ and JSON-LD text "Saskatchewan and Manitoba" (4 places).
+  - The 12.2% mentions in the FAQ, JSON-LD and planning text.
+  - The example $17,080 → $15,680 and $31,280 → $29,880.
+  - "Updated January 2026" and "as of January 2026" in the rates note → November 2026. Leave the two capital-gains "January 2026" mentions (flag only).
+
+  Exact strings are in the prep file, section 9B.
+- **Changes 10 and 11:** as in the first handoff section.
