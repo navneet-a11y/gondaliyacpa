@@ -15,13 +15,15 @@
       "mcp__gondaliya_cpa__wp_search_posts",
       "mcp__gondaliya_cpa__wp_rest_read",
       "mcp__gondaliya_cpa__wp_rest_routes",
-      "mcp__gondaliya_cpa__wp_clear_cache",
       "mcp__gondaliya_cpa__wp_create_preview_link",
       "mcp__gondaliya_cpa__wp_get_site_health",
       "mcp__gondaliya_cpa__wp_get_error_log",
       "mcp__gondaliya_cpa__wp_list_plugins",
       "mcp__gondaliya_cpa__wp_get_theme_mods",
       "mcp__gondaliya_cpa__wp_list_revisions"
+    ],
+    "deny": [
+      "mcp__gondaliya_cpa__wp_clear_cache"
     ]
   }
 }
