@@ -6365,3 +6365,96 @@ Math title, focus keyword, `cnf_service_slug` and `cnf_last_verified_et`.
 - The focus-keyword convention mismatch: the ledger uses "in alberta", the
   builder stores "alberta". Alberta's twelve follow the existing convention on
   both sides rather than changing one unilaterally.
+
+## 2026-11-03 — Family 2 batch 10 built: tools 71 to 80, and a section contract
+
+Navneet: "next 10 calculators make sure they have all sections tables". Ten
+built, gated and DOM-tested, not yet published:
+
+| # | Tool | Bytes |
+|---|---|---|
+| 71 | /tools/efile-rejection-reason-checker/ | 29,528 |
+| 72 | /tools/expenses-only-year-checker/ | 27,609 |
+| 73 | /tools/never-traded-corporation-checker/ | 27,339 |
+| 74 | /tools/restarting-a-dormant-corporation-checker/ | 27,737 |
+| 75 | /tools/loss-continuity-on-a-nil-return-checker/ | 27,784 |
+| 76 | /tools/multiple-corporation-filing-cost-calculator/ | 27,185 |
+| 77 | /tools/post-dissolution-return-checker/ | 27,345 |
+| 78 | /tools/acquired-corporation-unfiled-years-checker/ | 27,680 |
+| 79 | /tools/sole-shareholder-corporation-checker/ | 27,856 |
+| 80 | /tools/business-number-versus-corporation-number-checker/ | 27,929 |
+
+### "All sections tables" is now a contract, not a habit
+
+`STRUCTURE` in `build_f2j.py` fixes the set: three prose sections with the
+second one carrying a static reference table, a table drawn in the result,
+three FAQ items, six Read Next links, four hero tags, and prose in every
+section. The builder asserts it against the tool dicts; `gate10.py` asserts the
+same list against the rendered HTML, which is the thing that actually ships.
+The two checks are deliberately independent, because a builder can satisfy its
+own contract and still render a page with a piece missing — which is precisely
+how batches 6 and 7 shipped tool pages with no table in the body.
+
+Every one of the new checks was negative-tested by mutating a built page and
+confirming the gate fails: body table removed, result table removed, a FAQ item
+removed, a Read Next link removed, a prose section cut, a hero tag removed. All
+six fired, and the page passes again once restored. A check that has never been
+seen to fail is not yet a check.
+
+Audited across the ten: 5 H2 sections each (3 prose, FAQ, Read Next), 1 static
+body table, at least 1 result table, 3 FAQ items, 6 Read Next links, 4 hero
+tags. Tool 71 draws two result tables, one for the all-clear case and one for
+the causes.
+
+### These ten are outside Appendix A, which is the decision already logged
+
+Batch 9 measured what the appendix had left and built it. Of the three appendix
+tool slugs still unbuilt, `/nil-return-eligibility-quiz/` and
+`/tax-deadline-calculator/` are the live `nil-t2-eligibility-checker` and
+`nil-t2-deadline-calculator` renamed, and `/ontario-annual-return-due-date-
+calculator/` needs the Ontario annual return deadline, which the plan states
+nowhere. Building any of the three would put one page at a second URL, the
+pattern line 1212 exists to prevent.
+
+So this batch takes the second of the three options put to Sharad Gondaliya:
+slugs outside the appendix, each answering a question the plan's own facts
+already settle. No tool here needs a figure the plan does not carry, and the
+builder's docstring names the source for each one. Family 2 stands at 70 live
+and 80 built; reaching 150 still needs the missing figures, slugs outside the
+appendix, or a lower target, and that is still Sharad's call.
+
+### What the ten deliberately do not answer
+
+Tool 78 (an acquired corporation) answers the filing question only: the
+outstanding years belong to the corporation, not to whoever owns it, and they
+are still outstanding after it changes hands. An acquisition of control has an
+effect on a tax year that the plan does not state, so the page says in its own
+words that it does not decide that, rather than leaving the silence to be read
+as "nothing happens". Tool 79 does the same for what a shareholder loan means
+for tax, as tool 67 did in batch 9.
+
+### Two bugs the tests caught before anything shipped
+
+The result table on tool 71 built its all-clear wording by rewriting the
+negative with `.replace('does not match','matches')`, which left the Business
+Number row reading "is not the one on the corporation record" beside the word
+"Matches". Each row now carries its own affirmative wording.
+
+Tool 76 printed "1 nil returns" for a single return, because the heading
+concatenated the count instead of using the existing `plural()` helper. Caught
+by a DOM check written for exactly that case, which also asserts the string "1
+nil returns" is absent.
+
+The DOM suite is `test_f2j_dom.js`, 46 checks, all passing. Every date
+assertion in it was computed independently in Python rather than read off the
+page: 2025-06-10 plus 370 days is June 15, 2026 with a December 15, 2026 due
+date and no business-day shift; 2024-01-02 plus 370 days is January 6, 2025,
+due July 6, 2025, a Sunday, so the shift row must appear with July 7, 2025;
+2026-03-31 is a month end so the final return is due September 30, 2026.
+
+### Not yet published
+
+The ten are built and gated only. Publishing them is the next step and will
+need, as batch 9 did: the ten pages created and byte-verified, the /tools/ hub
+taken from 70 to 80 cards with its children manifest re-read, ten Rank Math
+ledger entries, and the F16 hub gate re-run.
