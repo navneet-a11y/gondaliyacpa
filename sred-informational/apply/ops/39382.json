@@ -4,45 +4,15 @@
  "sha256_after": "10caf05c27b99bba2a26e2fc6e654f77bd8295615d25aab33c6b406e4d5f588a",
  "ops": [
   {
-   "row": 0,
-   "search": "We identify the eligible work, prepare the technical narrative, calculate the expenditures and file the claim",
-   "replace": "An SR&amp;ED claim identifies the eligible work, sets out the technical narrative, calculates the expenditures and is filed",
-   "regex": false
-  },
-  {
    "row": 1,
    "search": "35% refundable for CCPCs.<\\/p>",
    "replace": "35% refundable for CCPCs.<\\/p><p class=\\\"sred-notice\\\"><strong>Gondaliya CPA does not prepare SR&amp;ED claims. This page explains how the SR&amp;ED program works, for general information only.<\\/strong><\\/p>",
    "regex": false
   },
   {
-   "row": 2,
-   "search": "consultation\\/\\\" class=\\\"sm-btn-blue\\\">Free SR&amp;ED Assessment<\\/a><a href=\\\"https:\\/\\/gondaliyacpa.ca\\/sred-tax-credit-claims\\/\\\" class=\\\"sm-btn-dark\\\">SR&amp;ED Services",
-   "replace": "sred-tax-credit-claims\\/\\\" class=\\\"sm-btn-dark\\\">How SR&amp;ED Credits Work",
-   "regex": false
-  },
-  {
    "row": 3,
    "search": "For a complete overview of our SR&amp;ED service across all industries, visit our ",
    "replace": "For a complete overview of how SR&amp;ED works across all industries, visit the ",
-   "regex": false
-  },
-  {
-   "row": 4,
-   "search": " We identify process improvement projects that most other SR&amp;ED consultants miss.",
-   "replace": "",
-   "regex": false
-  },
-  {
-   "row": 6,
-   "search": "Four steps. We handle CRA. You keep manufacturing.",
-   "replace": "Four steps, from assessment to filing.",
-   "regex": false
-  },
-  {
-   "row": 7,
-   "search": "e walk your shop floor, interview your engineers and review your project files to identify all qualifying SR&amp;ED work. Free assessment",
-   "replace": "alk the shop floor, interview the engineers and review the project files to identify all qualifying SR&amp;ED work",
    "regex": false
   },
   {
@@ -58,27 +28,9 @@
    "regex": false
   },
   {
-   "row": 10,
-   "search": "We file Form T661 with CRA, respond to any RTA review and defend the claim throu",
-   "replace": "File Form T661 with CRA, respond to any RTA review and support the claim throu",
-   "regex": false
-  },
-  {
-   "row": 11,
-   "search": "<div class=\\\"sm-cta-inline\\\"><div><h3>Free SR&amp;ED Eligibility Assessment for Manufacturers<\\/h3><p>We visit your facility, identify qualifying projects and tell you the estimated credit. No obligation. No upfront fee.<\\/p><\\/div><a href=\\\"https:\\/\\/gondaliyacpa.ca\\/consultation\\/\\\" class=\\\"sm-btn-blue\\\">Book Free Assessment<\\/a><\\/div>",
-   "replace": "",
-   "regex": false
-  },
-  {
    "row": 12,
    "search": "<th>How We Calculate It<\\/th>",
    "replace": "<th>How It Is Calculated<\\/th>",
-   "regex": false
-  },
-  {
-   "row": 13,
-   "search": " We set up a tracking system for every manufacturing client at onboarding.",
-   "replace": "",
    "regex": false
   },
   {
@@ -246,7 +198,39 @@
  ],
  "skipped": [
   {
+   "row": 0,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 2,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 4,
+   "why": "before found 0 times now"
+  },
+  {
    "row": 5,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 6,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 7,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 10,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 11,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 13,
    "why": "before found 0 times now"
   }
  ]

@@ -1,62 +1,8 @@
 {
  "id": 42168,
  "editor": "elementor",
- "sha256_after": "d7417921d1f9497094da8aa9c763289a64b6844a37720c4a73a56fb00a7eb67f",
+ "sha256_after": "549580a47a385aaaf3a4dfc84ac7069e0665102fa3e07690518c27a6f08740cc",
  "ops": [
-  {
-   "row": 0,
-   "search": "T2 returns, SR&amp;ED tax credits, CCA on machinery",
-   "replace": "T2 returns, CCA on machinery",
-   "regex": false
-  },
-  {
-   "row": 1,
-   "search": "Corporate tax, SR&amp;ED, inventory, payroll",
-   "replace": "Corporate tax, inventory, payroll",
-   "regex": false
-  },
-  {
-   "row": 2,
-   "search": ">SR&amp;ED, CCA Class 53, inventory costing<",
-   "replace": ">CCA Class 53, inventory costing<",
-   "regex": false
-  },
-  {
-   "row": 3,
-   "search": " Most manufacturers we onboard have never filed an SR&amp;ED claim because their previous accountant did not understand manufacturing processes well enough to identify eligible work.",
-   "replace": "",
-   "regex": false
-  },
-  {
-   "row": 4,
-   "search": "T2 filing, SR&amp;ED claims, CCA on machinery",
-   "replace": "T2 filing, CCA on machinery",
-   "regex": false
-  },
-  {
-   "row": 5,
-   "search": "<div class=\\\"mf-svc\\\"><div class=\\\"mf-svc-icon\\\">&#128300;<\\/div><h3>SR&amp;ED Tax Credits<\\/h3><p>Identify eligible R&amp;D. Prepare technical narratives. File T661. Recover up to 43% of qualifying costs.<\\/p><\\/div>\\r\\n",
-   "replace": "",
-   "regex": false
-  },
-  {
-   "row": 6,
-   "search": "<h3>SR&amp;ED Tax Credit Identification and Filing<\\/h3>",
-   "replace": "<h3>SR&amp;ED Tax Credits<\\/h3>",
-   "regex": false
-  },
-  {
-   "row": 7,
-   "search": "Qualifying activities identified: process improvement",
-   "replace": "Qualifying activities: process improvement",
-   "regex": false
-  },
-  {
-   "row": 8,
-   "search": "Eligible expenditures calculated: labour",
-   "replace": "Eligible expenditures: labour",
-   "regex": false
-  },
   {
    "row": 9,
    "search": "Technical narrative prepared describing the technological uncertainty",
@@ -232,5 +178,42 @@
    "regex": false
   }
  ],
- "skipped": []
+ "skipped": [
+  {
+   "row": 0,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 1,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 2,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 3,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 4,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 5,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 6,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 7,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 8,
+   "why": "before found 0 times now"
+  }
+ ]
 }

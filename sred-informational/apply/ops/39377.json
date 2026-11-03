@@ -4,45 +4,9 @@
  "sha256_after": "84a775e77e35c1f6d338126f4aadc0f3c8fd2e658cb8ddd843231500b71a5220",
  "ops": [
   {
-   "row": 0,
-   "search": "We identify the eligible work, prepare the technical narrative, calculate the expenditures and file the SR&amp;ED claim",
-   "replace": "An SR&amp;ED claim identifies the eligible work, sets out the technical narrative, calculates the expenditures and is filed",
-   "regex": false
-  },
-  {
-   "row": 1,
-   "search": "Real cash back.<\\/p>",
-   "replace": "Real cash back.<\\/p><p class=\\\"sred-notice\\\"><strong>Gondaliya CPA does not prepare SR&amp;ED claims. This page explains how the SR&amp;ED program works, for general information only.<\\/strong><\\/p>",
-   "regex": false
-  },
-  {
-   "row": 2,
-   "search": "consultation\\/\\\" class=\\\"sr-btn-blue\\\">Free SR&amp;ED Assessment<\\/a><a href=\\\"https:\\/\\/gondaliyacpa.ca\\/sred-tax-credit-claims\\/\\\" class=\\\"sr-btn-dark\\\">SR&amp;ED Services",
-   "replace": "sred-tax-credit-claims\\/\\\" class=\\\"sr-btn-dark\\\">How SR&amp;ED Credits Work",
-   "regex": false
-  },
-  {
    "row": 3,
    "search": "For a complete overview of our SR&amp;ED service across all industries, visit our ",
    "replace": "For a complete overview of how SR&amp;ED works across all industries, visit the ",
-   "regex": false
-  },
-  {
-   "row": 4,
-   "search": "How Our SR&amp;ED Claim Process Works for Tech Startups",
-   "replace": "How the SR&amp;ED Claim Process Works for Tech Startups",
-   "regex": false
-  },
-  {
-   "row": 5,
-   "search": "Four steps. We handle CRA. You keep building.",
-   "replace": "Four steps, from assessment to filing.",
-   "regex": false
-  },
-  {
-   "row": 6,
-   "search": "We review your codebase, architecture decisions, sprint logs and technical challenges to identify all qualifying SR&amp;ED projects. Free assessment",
-   "replace": "Review the codebase, architecture decisions, sprint logs and technical challenges to identify all qualifying SR&amp;ED projects",
    "regex": false
   },
   {
@@ -55,18 +19,6 @@
    "row": 8,
    "search": "<p>We calculate eligible expenditures:",
    "replace": "<p>Calculate eligible expenditures:",
-   "regex": false
-  },
-  {
-   "row": 9,
-   "search": "We file Form T661 with CRA, respond to any review or audit requests and defend the cla",
-   "replace": "File Form T661 with CRA, respond to any review or audit requests and support the cla",
-   "regex": false
-  },
-  {
-   "row": 10,
-   "search": "<div class=\\\"sr-cta-inline\\\"><div><h3>Free SR&amp;ED Eligibility Assessment for Tech Startups<\\/h3><p>We review your development work and tell you if you qualify. No obligation. No upfront fee.<\\/p><\\/div><a href=\\\"https:\\/\\/gondaliyacpa.ca\\/consultation\\/\\\" class=\\\"sr-btn-blue\\\">Book Free Assessment<\\/a><\\/div>",
-   "replace": "",
    "regex": false
   },
   {
@@ -286,5 +238,38 @@
    "regex": false
   }
  ],
- "skipped": []
+ "skipped": [
+  {
+   "row": 0,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 1,
+   "why": "already live (after text present)"
+  },
+  {
+   "row": 2,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 4,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 5,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 6,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 9,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 10,
+   "why": "before found 0 times now"
+  }
+ ]
 }

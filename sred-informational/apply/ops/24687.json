@@ -1,7 +1,7 @@
 {
  "id": 24687,
  "editor": "elementor",
- "sha256_after": "50cfa64f7fb5e1579a21435dcd8c7b0f356fc1badf0794cac82fc2fd77c18dc2",
+ "sha256_after": "680b570e9e39ddcd379ba66ac8cc529ed9d4e073e7c6d8570e0d2e42272687c5",
  "ops": [
   {
    "row": 0,
@@ -16,51 +16,9 @@
    "regex": false
   },
   {
-   "row": 5,
-   "search": "AFFORDABLE SR&ED Tax Credit Services",
-   "replace": "How the SR&ED Tax Credit Program Works",
-   "regex": false
-  },
-  {
-   "row": 6,
-   "search": "Gondaliya CPA helps innovative companies identify eligible R&amp;D activities, document expenses accurately, and prepare compliant claims, maximizing potential refunds",
-   "replace": "A compliant claim requires identifying eligible R&amp;D activities and documenting expenses accurately",
-   "regex": false
-  },
-  {
    "row": 7,
    "search": "With years of experience working with ",
    "replace": "The program is used by ",
-   "regex": false
-  },
-  {
-   "row": 8,
-   "search": ", we guide clients through the complex SR&amp;ED rules, from",
-   "replace": ", and the SR&amp;ED rules are complex, from",
-   "regex": false
-  },
-  {
-   "row": 9,
-   "search": " Our affordable, professional approach helps innovators focus on growth while benefiting from every tax credit available.",
-   "replace": "",
-   "regex": false
-  },
-  {
-   "row": 21,
-   "search": "\"title\":\"SR&ED Tax Credit Claims Experts\"",
-   "replace": "\"title\":\"About Gondaliya CPA\"",
-   "regex": false
-  },
-  {
-   "row": 25,
-   "search": " Gondaliya CPA helps identify eligible activities and ensures claims are fully compliant with CRA requirements.",
-   "replace": "",
-   "regex": false
-  },
-  {
-   "row": 26,
-   "search": "We work closely with innovators to ",
-   "replace": "Understanding the program helps ",
    "regex": false
   },
   {
@@ -324,6 +282,22 @@
    "why": "manual"
   },
   {
+   "row": 5,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 6,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 8,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 9,
+   "why": "before found 0 times now"
+  },
+  {
    "row": 10,
    "why": "manual"
   },
@@ -368,6 +342,10 @@
    "why": "manual"
   },
   {
+   "row": 21,
+   "why": "before found 0 times now"
+  },
+  {
    "row": 22,
    "why": "manual"
   },
@@ -378,6 +356,14 @@
   {
    "row": 24,
    "why": "manual"
+  },
+  {
+   "row": 25,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 26,
+   "why": "before found 0 times now"
   },
   {
    "row": 30,

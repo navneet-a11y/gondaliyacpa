@@ -1,0 +1,16 @@
+{"id": 24687, "kind": "meta", "status": "applied", "note": "description updated via wp_rm_update_post_seo; re-read confirmed"}
+{"id": 27594, "kind": "meta", "status": "applied", "note": "description updated via wp_rm_update_post_seo; re-read confirmed"}
+{"id": 28025, "kind": "meta", "status": "applied", "note": "description updated via wp_rm_update_post_seo; re-read confirmed"}
+{"id": 31882, "kind": "meta", "status": "applied", "note": "description updated via wp_rm_update_post_seo; re-read confirmed"}
+{"id": 48297, "kind": "meta", "status": "applied", "note": "description updated via wp_rm_update_post_seo; re-read confirmed"}
+{"id": 51027, "kind": "meta", "status": "applied", "note": "description updated via wp_rm_update_post_seo; re-read confirmed"}
+{"id": 51029, "kind": "meta", "status": "applied", "note": "description updated via wp_rm_update_post_seo; re-read confirmed"}
+{"id": 51032, "kind": "meta", "status": "applied", "note": "description updated via wp_rm_update_post_seo; re-read confirmed"}
+{"id": 32317, "kind": "meta", "status": "applied", "note": "'after' text was already a substring but 'before' was still present (not actually done); applied and re-read confirmed"}
+{"id": 41046, "kind": "meta", "status": "applied", "note": "'after' text was already a substring but 'before' was still present (not actually done); applied and re-read confirmed"}
+{"id": 41066, "kind": "meta", "status": "applied", "note": "'after' text was already a substring but 'before' was still present (not actually done); applied and re-read confirmed"}
+{"id": 29286, "kind": "meta", "status": "skipped", "note": "wp_rm_update_post_seo denied by the auto-mode permission classifier; description unchanged"}
+{"id": 31952, "kind": "meta", "status": "skipped", "note": "wp_rm_update_post_seo denied by the auto-mode permission classifier; description unchanged"}
+{"id": 51049, "kind": "meta", "status": "skipped", "note": "wp_rm_update_post_seo denied by the auto-mode permission classifier; description unchanged"}
+{"id": 27594, "kind": "title", "status": "applied", "note": "title set; slug unchanged (affordable-and-efficient-sred-tax-credit-claim-services-for-startups)"}
+{"id": 31952, "kind": "title", "status": "skipped", "note": "wp_update_post denied by the auto-mode permission classifier; title unchanged"}
