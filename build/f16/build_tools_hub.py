@@ -121,6 +121,9 @@ GROUPS = [
   ('stub-period-return-checker', 'Stub Period Return Checker',
    'A fiscal period that ended early is a tax year in its own right. Its '
    'deadline, and the fee it carries on its own.'),
+  ('never-traded-corporation-checker', 'Never Traded Corporation Checker',
+   'A corporation that never started still owes a first return, dated from '
+   'the incorporation date and the 53-week limit.'),
  ]),
 
  ('Is a Return Owed, and Is the Year Nil', [
@@ -148,6 +151,13 @@ GROUPS = [
    'Tax Years Since Incorporation Calculator',
    'How many tax years a corporation has had since it was incorporated, '
    'which is how many returns it owes.'),
+  ('expenses-only-year-checker', 'Expenses Only Year Checker',
+   'A year with costs and no revenue is still nil. What the expenses do to '
+   'the return, and what ends a nil year instead.'),
+  ('restarting-a-dormant-corporation-checker',
+   'Restarting a Dormant Corporation Checker',
+   'Trading again does not change the quiet years behind it. Which of them '
+   'are still nil returns, and which one is not.'),
  ]),
 
  ('The Return Itself: Schedules and GIFI', [
@@ -194,6 +204,13 @@ GROUPS = [
   ('mandatory-t2-efile-checker', 'Mandatory T2 E-Filing Checker',
    'Electronic filing is mandatory for tax years starting after 2023. One '
    'date decides which side a year falls on.'),
+  ('efile-rejection-reason-checker', 'E-Filing Rejection Reason Checker',
+   'A refused transmission is usually one of four identifier mismatches. '
+   'Which one it is, and what clears it.'),
+  ('loss-continuity-on-a-nil-return-checker',
+   'Loss Continuity on a Nil Return Checker',
+   'A nil year claims nothing against a loss and still reports it. What an '
+   'unfiled loss year does to the balance.'),
   ('t183corp-signature-requirement-checker',
    'Form T183CORP Signature Requirement Checker',
    'Who may sign, when it is signed, how long the firm keeps it, and whether '
@@ -219,6 +236,10 @@ GROUPS = [
    'Due To vs Due From Shareholder Checker',
    'Which side of the balance sheet a shareholder balance sits on, and what '
    'either direction means for a nil year.'),
+  ('sole-shareholder-corporation-checker',
+   'Sole Shareholder Corporation Checker',
+   'A single shareholder holds 100 per cent, which is above the Schedule 50 '
+   'threshold, so the schedule always applies.'),
  ]),
 
  ('Unfiled Years and Catching Up', [
@@ -239,6 +260,14 @@ GROUPS = [
    'Arbitrary Assessment Response Checker',
    'An assessment raised on a year nobody filed is displaced by the return '
    'for that year. The order to file the years in.'),
+  ('acquired-corporation-unfiled-years-checker',
+   'Acquired Corporation Unfiled Years Checker',
+   'A tax account belongs to the corporation, not its owner. Which unfiled '
+   'years came with a purchase.'),
+  ('multiple-corporation-filing-cost-calculator',
+   'Multiple Corporation Filing Cost Calculator',
+   'Several quiet corporations, each with its own years. The returns owed and '
+   'the total before tax.'),
  ]),
 
  ('CRA Accounts, Payroll and GST/HST', [
@@ -266,6 +295,10 @@ GROUPS = [
   ('cra-account-standing-checker', 'CRA Account Standing Checker',
    'A corporation has a tax record and a registry record. Which of the two '
    'is behind, and what brings each current.'),
+  ('business-number-versus-corporation-number-checker',
+   'Business Number vs Corporation Number Checker',
+   'Two numbers from two bodies. Which one the T2 needs and which one the '
+   'registry annual return needs.'),
  ]),
 
  ('Annual Returns and the Registry', [
@@ -302,6 +335,9 @@ GROUPS = [
   ('dissolution-timeline-calculator', 'Dissolution Timeline Calculator',
    'The wind-up steps in order with dates, from the final tax year through '
    'to the clearance certificate request.'),
+  ('post-dissolution-return-checker', 'Post-Dissolution Return Checker',
+   'A dissolved corporation stops having tax years. Which periods are owed '
+   'up to the dissolution date, and which never arise.'),
  ]),
 
  ('Provincial, Non-Resident and Director Exposure', [

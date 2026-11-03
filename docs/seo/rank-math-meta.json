@@ -1,6 +1,6 @@
 {
- "applied": "2026-11-02",
- "coverage": "211 items given meta: 31 pages, 30 questions, 36 service places, 23 deadlines, 20 calculators (tools 1-20), 17 guides (1-17), 1 cost page, the 10 guides 18-27 (IDs 1377-1395), the 3 guides 28-30 (IDs 1464-1468) that complete Family 9, and the four Family 2 batches that take the family to seventy: calculators 31-40 (IDs 1413-1434), 41-50 (IDs 1444-1508), 51-60 (IDs 1510-1528) and 61-70 (IDs 1562-1577). Counted from the sections in this file on 2026-11-02, when Alberta completed its twelve service places: the figure of 188 it replaced had been written before Alberta opened at all and was never updated. Calculators 21-30 (IDs 1285-1303) carry meta set at publish time by the build/f2 generator and are not repeated here. Every published item on the site has a Rank Math title and description.",
+ "applied": "2026-11-03",
+ "coverage": "221 items given meta: 31 pages, 30 questions, 36 service places, 23 deadlines, 20 calculators (tools 1-20), 17 guides (1-17), 1 cost page, the 10 guides 18-27 (IDs 1377-1395), the 3 guides 28-30 (IDs 1464-1468) that complete Family 9, and the five Family 2 batches that take the family to eighty: calculators 31-40 (IDs 1413-1434), 41-50 (IDs 1444-1508), 51-60 (IDs 1510-1528), 61-70 (IDs 1562-1577) and 71-80 (IDs 1625-1653). Counted from the sections in this file on 2026-11-02, when Alberta completed its twelve service places: the figure of 188 it replaced had been written before Alberta opened at all and was never updated. Calculators 21-30 (IDs 1285-1303) carry meta set at publish time by the build/f2 generator and are not repeated here. Every published item on the site has a Rank Math title and description.",
  "nil_calculator_1_to_20": {
   "items": [
    {
@@ -124,6 +124,72 @@
     "title": "Due Date Weekend and Holiday Shift Calculator"
    }
   ],
+  "rest_base": "nil_calculator"
+ },
+ "nil_calculator_batch10": {
+  "items": [
+   {
+    "desc": "A refused T2 transmission is usually one of four identifier mismatches. Four answers name the cause and what clears it.",
+    "id": 1625,
+    "kw": "t2 efile rejection checker",
+    "title": "E-Filing Rejection Reason Checker"
+   },
+   {
+    "desc": "A year with costs and no revenue is still nil. What the expenses do to the return, and what ends a nil year instead.",
+    "id": 1629,
+    "kw": "expenses only year checker",
+    "title": "Expenses Only Year Checker"
+   },
+   {
+    "desc": "A corporation that never started still owes a first return. Dated from the incorporation date and the 53-week limit.",
+    "id": 1632,
+    "kw": "never traded corporation checker",
+    "title": "Never Traded Corporation Checker"
+   },
+   {
+    "desc": "Trading again does not change the quiet years behind it. Which years are still nil returns at $300.00 plus HST per tax year.",
+    "id": 1635,
+    "kw": "restarting a dormant corporation checker",
+    "title": "Restarting a Dormant Corporation Checker"
+   },
+   {
+    "desc": "A nil year claims nothing against a loss and still reports it. What an unfiled loss year does to the balance carried forward.",
+    "id": 1638,
+    "kw": "loss continuity on a nil return",
+    "title": "Loss Continuity on a Nil Return"
+   },
+   {
+    "desc": "Several quiet corporations, each with its own years. The returns owed and the total at $300.00 plus HST per tax year.",
+    "id": 1641,
+    "kw": "multiple corporation filing cost calculator",
+    "title": "Multiple Corporation Filing Cost Calculator"
+   },
+   {
+    "desc": "A dissolved corporation stops having tax years. Which periods are owed up to the dissolution date, and which never arise.",
+    "id": 1644,
+    "kw": "post dissolution return checker",
+    "title": "Post-Dissolution Return Checker"
+   },
+   {
+    "desc": "A tax account belongs to the corporation, not its owner. Which unfiled years came with the purchase and which are yours.",
+    "id": 1647,
+    "kw": "acquired corporation unfiled years checker",
+    "title": "Acquired Corporation Unfiled Years Checker"
+   },
+   {
+    "desc": "A single shareholder holds 100 per cent, above the Schedule 50 threshold. What a one-person nil return carries.",
+    "id": 1650,
+    "kw": "sole shareholder corporation checker",
+    "title": "Sole Shareholder Corporation Checker"
+   },
+   {
+    "desc": "Two numbers from two bodies. Which one the T2 needs, which one the registry annual return needs, and what we look up for you.",
+    "id": 1653,
+    "kw": "business number versus corporation number",
+    "title": "Business Number vs Corporation Number"
+   }
+  ],
+  "note": "Published November 3, 2026 as IDs 1625 to 1653. Values taken from build/f2/f2j-manifest.json, not retyped. These ten are outside Appendix A by the decision logged in docs/decisions.md. Tool 1625 was renamed from \"EFILE Rejection Reason Checker\" to \"E-Filing\" on the day it published, because hard rule 1 reserves EFILE for the phrase \"registered EFILE electronic filer\".",
   "rest_base": "nil_calculator"
  },
  "nil_calculator_batch6": {

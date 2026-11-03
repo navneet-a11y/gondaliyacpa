@@ -83,8 +83,24 @@ assert GUIDES_LIVE9 <= GUIDES_LIVE10, 'batch 9 linked a guide no longer listed'
 # point at a tool that was never published.
 _TOOLS_JSON = os.path.join(HERE, '..', 'f16', 'tools-hub-children.json')
 TOOLS_LIVE = set(json.load(io.open(_TOOLS_JSON, encoding='utf-8'))['slugs'])
-assert len(TOOLS_LIVE) == 70, 'expected the seventy live tools, got %d' % len(
-    TOOLS_LIVE)
+# The file holds whatever is live, so this builder has to run correctly both
+# before this batch publishes (seventy live) and after (eighty). Checking the
+# base set rather than the total means a rebuild after publishing still fails
+# if some OTHER tool has gone missing from the hub's children.
+_THIS_BATCH = {
+ 'efile-rejection-reason-checker', 'expenses-only-year-checker',
+ 'never-traded-corporation-checker',
+ 'restarting-a-dormant-corporation-checker',
+ 'loss-continuity-on-a-nil-return-checker',
+ 'multiple-corporation-filing-cost-calculator',
+ 'post-dissolution-return-checker',
+ 'acquired-corporation-unfiled-years-checker',
+ 'sole-shareholder-corporation-checker',
+ 'business-number-versus-corporation-number-checker'}
+assert len(TOOLS_LIVE - _THIS_BATCH) == 70, (
+    'expected the seventy tools live before this batch, got %d'
+    % len(TOOLS_LIVE - _THIS_BATCH))
+PUBLISHED = _THIS_BATCH <= TOOLS_LIVE
 
 
 def _tbl(head, rows):
@@ -97,7 +113,7 @@ def _tbl(head, rows):
             + '\n</tbody></table>')
 
 
-# ------------------------------------------------------- 71. EFILE rejection
+# ----------------------------------------------------- 71. e-filing rejection
 T71_JS = RBASE + r"""
 /* Each row carries its own affirmative wording rather than deriving one by
    rewriting the negative. A first draft built the all-clear table with
@@ -180,9 +196,16 @@ function show(){
 
 T71 = dict(
  slug='efile-rejection-reason-checker',
- title='EFILE Rejection Reason Checker | What Refused the Return',
- h1_pre='EFILE Rejection ', h1_span='Reason Checker',
- h1='EFILE Rejection Reason Checker',
+ # Hard rule 1 reserves EFILE for the phrase "registered EFILE electronic
+ # filer". This page first shipped as "EFILE Rejection Reason Checker",
+ # which gate_rank_math.py refused: the word is a Canada Revenue Agency
+ # mark, and using it as a product name is the thing the rule exists to
+ # stop. The live mandatory-t2-efile-checker already writes "E-Filing" in
+ # its visible wording, so this follows that. The slug keeps efile, as that
+ # one does.
+ title='E-Filing Rejection Reason Checker | What Refused the Return',
+ h1_pre='E-Filing Rejection ', h1_span='Reason Checker',
+ h1='E-Filing Rejection Reason Checker',
  eyebrow='Transmission',
  keyword='t2 efile rejection checker',
  meta=('A refused transmission is usually one of four identifier mismatches. '
@@ -1294,8 +1317,8 @@ function show(){
   if(!r.name){
     h+='<p>A name that does not match the register is one of the common '
      +'causes of a refused transmission, whichever number is on the return. '
-     +'The <a href="/tools/efile-rejection-reason-checker/">EFILE rejection '
-     +'reason checker</a> names the mismatch and what clears it, and one '
+     +'The <a href="/tools/efile-rejection-reason-checker/">e-filing '
+     +'rejection reason checker</a> names the mismatch and what clears it, and one '
      +'corrected transmission is included in '+PRICE_JS+'.</p>';
   }
   h+='<p>'+DISC_JS+'</p>';
@@ -1383,7 +1406,7 @@ TOOLS10 = [T71, T72, T73, T74, T75, T76, T77, T78, T79, T80]
 
 SEO10 = {
  'efile-rejection-reason-checker': (
-  'EFILE Rejection Reason Checker',
+  'E-Filing Rejection Reason Checker',
   'A refused T2 transmission is usually one of four identifier mismatches. '
   'Four answers name the cause and what clears it.'),
  'expenses-only-year-checker': (
@@ -1535,7 +1558,7 @@ for t in TOOLS10:
 ORDER10 = ORDER9 + [t['slug'] for t in TOOLS10]
 assert len(ORDER10) == len(set(ORDER10)), 'a slug is repeated in ORDER10'
 LINK_TITLE10 = dict(LINK_TITLE9, **{
- 'efile-rejection-reason-checker': 'EFILE rejection reason checker',
+ 'efile-rejection-reason-checker': 'E-Filing rejection reason checker',
  'expenses-only-year-checker': 'Expenses only year checker',
  'never-traded-corporation-checker': 'Never traded corporation checker',
  'restarting-a-dormant-corporation-checker':
@@ -1631,8 +1654,16 @@ GUIDES10 = {
 _ORDER = set(ORDER10)
 _NEW = {t['slug'] for t in TOOLS10}
 for t in TOOLS10:
-    assert t['slug'] not in TOOLS_LIVE, (
-        '%s is already live: this batch would duplicate it' % t['slug'])
+    assert t['slug'] in _THIS_BATCH, (
+        '%s is not in _THIS_BATCH, so the live-state check cannot see it'
+        % t['slug'])
+    # Before publishing, none of the ten is live and a slug already in
+    # TOOLS_LIVE would mean this batch duplicates an existing page. After
+    # publishing they are all live, so the check only applies in the first
+    # state.
+    if not PUBLISHED:
+        assert t['slug'] not in TOOLS_LIVE, (
+            '%s is already live: this batch would duplicate it' % t['slug'])
     for s in SIBLINGS10[t['slug']]:
         assert s in _ORDER, '%s lists a sibling that does not exist: %s' % (
             t['slug'], s)

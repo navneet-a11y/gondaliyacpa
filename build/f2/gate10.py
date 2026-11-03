@@ -27,6 +27,16 @@ for t in TOOLS:
               'endorsed by cra', 'cra logo'):
         if w in low1: bad('rule 1 "%s"' % w)
     if re.search(r'\bauthorized\b', low1): bad('rule 1 stray "authorized"')
+    # Hard rule 1 reserves EFILE for "registered EFILE electronic filer". No
+    # F2 gate checked it, so batch 10 built a tool called "EFILE Rejection
+    # Reason Checker" and only gate_rank_math.py refused it, after the page
+    # was already published. The word is a Canada Revenue Agency mark and a
+    # product name is exactly the use the rule forbids.
+    for _m in re.finditer(r'EFILE', c):
+        if not c.startswith('EFILE electronic filer', _m.start()):
+            bad('rule 1 EFILE outside the approved phrase: %r'
+                % c[max(0, _m.start() - 30):_m.start() + 30])
+            break
     # 2 T183CORP never bare
     if re.search(r'\bT183\b(?!CORP)', c): bad('rule 2 bare T183')
     # 3 penalty claims always qualified

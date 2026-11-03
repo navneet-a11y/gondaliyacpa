@@ -6458,3 +6458,74 @@ The ten are built and gated only. Publishing them is the next step and will
 need, as batch 9 did: the ten pages created and byte-verified, the /tools/ hub
 taken from 70 to 80 cards with its children manifest re-read, ten Rank Math
 ledger entries, and the F16 hub gate re-run.
+
+## 2026-11-03 — Batch 10 published, and a hard rule 1 breach caught at the ledger
+
+Tools 71 to 80 are live. Every one byte-verified against its built file:
+
+| Tool | ID | Bytes |
+|---|---|---|
+| /tools/efile-rejection-reason-checker/ | 1625 | 29,537 |
+| /tools/expenses-only-year-checker/ | 1629 | 27,609 |
+| /tools/never-traded-corporation-checker/ | 1632 | 27,339 |
+| /tools/restarting-a-dormant-corporation-checker/ | 1635 | 27,737 |
+| /tools/loss-continuity-on-a-nil-return-checker/ | 1638 | 27,784 |
+| /tools/multiple-corporation-filing-cost-calculator/ | 1641 | 27,185 |
+| /tools/post-dissolution-return-checker/ | 1644 | 27,345 |
+| /tools/acquired-corporation-unfiled-years-checker/ | 1647 | 27,680 |
+| /tools/sole-shareholder-corporation-checker/ | 1650 | 27,856 |
+| /tools/business-number-versus-corporation-number-checker/ | 1653 | 27,935 |
+
+`nil_calculator` reports 80 published, 0 draft, 0 trashed. The /tools/ hub is at
+29,299 bytes with 80 tool cards counted on the live page, its children manifest
+re-read at 80, and the F16 gate clear. Rank Math ledger at 221 items.
+
+### "EFILE Rejection Reason Checker" was a rule 1 breach, and only the last gate caught it
+
+Hard rule 1 permits the word EFILE in exactly one phrase, "registered EFILE
+electronic filer". Tool 71 was built, gated by gate10, DOM-tested, committed,
+pushed and **published** as "EFILE Rejection Reason Checker". Nothing refused it
+until `gate_rank_math.py` ran on the ledger entry, after the page was live:
+
+    FAIL (1)
+     - nil_calculator_batch10:1625 title: EFILE outside the approved phrase
+
+That is the right verdict. EFILE is a Canada Revenue Agency mark and using it as
+a product name is precisely what the rule exists to stop. The live
+`mandatory-t2-efile-checker` already writes "E-Filing" in its visible wording,
+so the convention existed and this batch simply did not follow it.
+
+Fixed the same day: the H1, the page title, the schema name, the breadcrumb, the
+Rank Math title, the hub card and the two link texts on tool 80 now read
+"E-Filing". The slug keeps `efile`, matching `mandatory-t2-efile-checker`. All
+three live pages re-verified byte for byte afterwards (1625 at 29,537, 1653 at
+27,935, the hub at 29,299).
+
+**Why no earlier gate caught it.** gate10 inherited its rule 1 block from
+gate9, which checks the banned CRA relationship words (`cra authorized`, `cra
+agent`, `cra approved`, a stray `authorized`) and the EFILE *number*, but never
+a bare `EFILE`. The check now exists in gate10 and was negative-tested by
+putting `EFILE` in a hero eyebrow and confirming the gate fails. It is the
+fourth time in this project that a rule was enforced in one gate and absent
+from another, and the pattern is always the same: the gate that runs last is
+the only one that knows.
+
+### Two smaller things from the same hour
+
+`build_f2j.py` asserted exactly seventy live tools, which was true before
+publishing and false after, so a rebuild failed on its own sanity check. It now
+checks the base set (`TOOLS_LIVE` minus this batch) and only applies the
+"not already live" test before publishing, so the builder runs correctly in
+both states.
+
+While renaming, a substitution dropped the word "rejection" from tool 80's
+in-module link text, leaving "e-filing reason checker". The DOM suite failed on
+it immediately, which is the second time this batch that `test_f2j_dom.js`
+caught something a gate could not see. 46 checks, all passing.
+
+### Publishing mechanics, unchanged
+
+Same recipe as batch 9, ten times: duplicate 1510, regex the hero away to a
+`ZZZ` sentinel, swap in the body from `tail -c +12978`, publish with slug and
+meta, then a zero-change probe. The CSS prefix is still 12,977 bytes and still
+byte-identical to the source page, checked before the first duplicate.

@@ -227,7 +227,7 @@ check('business-number-versus-corporation-number-checker',
    'confirm the number against the corporation record']);
 check('business-number-versus-corporation-number-checker',
   { bn: 'y', cn: 'y', nm: 'n' },
-  ['Does not match', 'refused transmission', 'EFILE rejection']);
+  ['Does not match', 'refused transmission', 'e-filing rejection']);
 check('business-number-versus-corporation-number-checker',
   { bn: 'y', cn: 'n' },
   ['Answer the three questions above']);
