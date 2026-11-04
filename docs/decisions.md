@@ -6818,3 +6818,23 @@ Elementor, and LiteSpeed page cache. Two consequences worth carrying forward:
   checking in LiteSpeed's settings before the remaining 19 Family 7 pages
   publish.** Holding the width on the elements themselves makes the page
   robust either way.
+
+### Column widened one step (same day)
+
+Navneet: "little more width". The column goes 900 to 1000, so the content box
+is 960 rather than 860, and prose 760 to 800. The answer card, the FAQ list
+and the capped elements follow to 960; the case box is 860 so that its own
+text column lands on 800 and matches the prose exactly. All five numbers moved
+together, because the point of the previous change was that the page sits on
+one column rather than several.
+
+The card grid keeps its 900px stacking breakpoint. Raising it with everything
+else would have stacked three cards into one at 1000px, which is earlier than
+they need: at 960 each card is 305px, and they still read at the 272px they
+had before.
+
+Re-measured at 1280px and 1600px, normally and against the same hostile
+`.si-wrap{max-width:100% !important}`: table 960, prose 800 at about 90
+characters a line, cards 305, one left rail, all four runs identical. Live ID
+1670 is 27,849 bytes, byte-identical to the build, applied as nine targeted
+CSS replacements. Post cache cleared after publishing, per the note above.
