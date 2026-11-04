@@ -6682,3 +6682,24 @@ by default), and the tuple added to tool 2's `related` list in
 The price-cell rule for the other 13 concept pages, the 6 brand pages blocked
 on dated competitor prices, and the adapted disclosure wording all stand as
 logged above. The disclosure goes to Sharad Gondaliya with the family template.
+
+### Rule 10 on a brand-new post type — needs one check in wp-admin
+
+`nil_comparison` had no published item before today, so Rank Math has never
+had a reason to apply a setting to it. Whether the site-wide noindex reaches it
+depends on how that noindex is configured: a global robots directive covers
+every post type, but a per-post-type setting under Titles & Meta does not cover
+one that has just appeared.
+
+**I could not check this from the session.** The Rank Math integration on the
+corpnil connector is switched off (`wp_rm_get_head` and `wp_rm_get_post_seo`
+both read `group_off`), `blog_public` is not exposed through
+`/wp/v2/settings`, and the live domain is blocked at the proxy, so there was no
+way to read the rendered `<head>` of the new URL.
+
+**Navneet to confirm** that
+`https://corpnilfilingfor300.ca/compare/t2-short-vs-full-t2/` serves
+`noindex` — Rank Math under Titles & Meta, the Comparisons post type — before
+the next 19 Family 7 pages publish. Switching the `rank-math` integration on
+under Easy MCP AI > Tools > Abilities would let this be checked from a session
+instead of by hand, for every batch from here on.
