@@ -6529,3 +6529,101 @@ Same recipe as batch 9, ten times: duplicate 1510, regex the hero away to a
 `ZZZ` sentinel, swap in the body from `tail -c +12978`, publish with slug and
 meta, then a zero-change probe. The CSS prefix is still 12,977 bytes and still
 byte-identical to the source page, checked before the first duplicate.
+
+## 2026-11-04 — Family 7 opens: /compare/t2-short-vs-full-t2/, on Navneet's design
+
+Navneet supplied a gondaliyacpa.ca page as the design example and asked for one
+comparison page built to it "if makes sense and plan guidelines". Built, gated,
+13 negative tests passing, **not published**: the plan requires each family
+template to go to Sharad Gondaliya for sign-off before its batch publishes, and
+four questions below are still open.
+
+`build/f7/build_f7.py`, `build/f7/gate.py`, 18,578 bytes, 17 outbound of a cap
+of 20.
+
+### Why this page of the twenty
+
+The 6 brand pages cannot be built here at all: each needs a competitor's
+published price with a dated screenshot, and the network policy denies
+competitor sites. Of the 14 concept pages, the plan's own keyword table (line
+1272) names this comparison the F7 priority at 60 a month and notes the concept
+comparison outranks the brand ones. It is also the only one whose two price
+cells fill truthfully with no external input, because both sides are our own fee
+and the figure is the same. The page the plan ranks first is also the page that
+needs nothing from anyone.
+
+### The URL, which the plan spells three ways
+
+Appendix A line 3266 says `/t2-short-vs-full-t2/`. The family table at line 1145
+gives the base `/compare/<a>-vs-<b>/`. The keyword table at line 1272 says
+`/compare/nil-t2-filing-vs-t2-short-filing/`, a slug in no appendix. Built as
+the appendix slug on the family-table base: **`/compare/t2-short-vs-full-t2/`**.
+The third spelling is not built as a second URL, because two URLs for one
+comparison is the duplication line 1212 exists to prevent. The `/compare/` base
+itself is unconfirmed: nil_cost resolves to `/pricing/<slug>/`, which is the
+same pattern, but the CPT UI registration was never read, so the first publish
+is where it gets checked.
+
+### Eight things removed from the supplied design, with the rule for each
+
+The visual system is taken as given and the `si-` class names are kept
+unchanged, so the two sites can be compared side by side; nothing on
+corpnilfilingfor300.ca used that prefix. What could not come across:
+
+| In the sample | Rule |
+|---|---|
+| FAQPage schema, thirty questions of it | 6 forbids FAQPage outright |
+| "Book Free Consultation" twice, two `/consultation/` links | 7 bars booking anywhere |
+| "30-Day Money-Back Guarantee" | 4 bars guaranteed |
+| "1450+ Five-Star Reviews" | 6 bars review schema; a count in prose is the same claim |
+| "Flat fee, including HST" | 9, plus the standing correction to plus HST |
+| $30,000, 3%, 15 characters, RC/RT/RP/RM/RZ | the plan states none of them |
+| `telephone +16472129559`, AccountingService schema | sister office, sister domain |
+| No byline, no review stamp | 7.5 rules 1 and 3 require both |
+
+The accordion is kept and rebuilt on `<details>`, so it opens without
+JavaScript and carries no schema. The answer card, the hero with its
+highlighted span, the navy band of cards, the case panel, the tick list, the
+table with its navy header and highlighted rows and the closing CTA band are
+all the sample's, unchanged in form.
+
+### What F7 adds that the sample had no slot for
+
+Line 1215 is the publish gate: two published price cells, eight published
+feature cells, every one filled, no negative claim. In a two-column comparison
+that reads as two price rows and eight feature rows, which is what the table
+carries and what the gate counts; `cnf_feature_rows_json` records all ten rows
+with a `differs` flag. Line 1568's dated price line sits above the table, and
+the gate checks that it is above it rather than merely present. Line 1529's
+outbound cap, the link up to the cost page and the home page, and nofollow on
+any external link are all enforced.
+
+Two rows differ and eight do not, which is the page's argument: the form
+changes, the work and the fee do not.
+
+### The disclosure, adapted and flagged
+
+Line 1215's required disclosure is written for a brand page: "Competitor
+comparisons state published prices and features only." This page names no
+competitor, so the sentence as written would describe something absent from it.
+It carries instead: the comparison sets two of our own filing routes against
+each other and names no other provider, and where a comparison on this site
+does name one, it states that provider's published prices and published
+features only. Same promise, true of this page. **A deviation to put to Sharad
+Gondaliya with the template.**
+
+### Open for Navneet and Sharad
+
+- **The price cells on the other 13 concept pages.** Here both sides are our
+  own fee. On `/dissolving-vs-filing-nil-every-year/` the other side is a
+  registry fee the plan does not state, and on `/diy-vs-cpa-nil-t2/` it is
+  software pricing, which is competitor data. Those need a rule, not a guess.
+- **`cnf_our_price_incl_hst` is left empty**, as `cnf_price_incl_hst` is on the
+  Alberta service pages, because writing a plus-HST figure into a field named
+  incl_hst would be a false record. The fee is in `cnf_feature_rows_json`.
+- **The 6 brand pages stay blocked** until dated competitor prices arrive. The
+  plan's captured set is from September 20, 2026 against a monthly re-date
+  requirement, so it is six weeks stale as well as unreachable.
+- **Three inbound links** are required per line 1529 and none exist yet. The
+  natural sources are the T2 Short eligibility, exclusion and CCPC checkers,
+  which would need a link added when this publishes.
