@@ -478,7 +478,6 @@ def render(p):
              '<nav class="si-crumb" aria-label="Breadcrumb">'
              '<a href="' + SITE + '/">Nil T2 filing in Canada</a> &rsaquo; '
              '<a href="' + PRICING + '">Nil T2 filing price</a> &rsaquo; '
-             '<a href="' + COST + '">Nil T2 filing cost</a> &rsaquo; '
              '<span aria-current="page">' + p['h1'] + '</span></nav>\n'
              '<p class="si-by">' + BYLINE + '</p>\n'
              '<p class="si-rev">Last reviewed: ' + TODAY + '</p>\n'
@@ -495,7 +494,8 @@ def render(p):
              '<div class="si-wrap article">\n'
              '<h2 class="si-h2">The Comparison, Row by Row</h2>\n'
              '<p class="si-stamp">Prices checked ' + TODAY + '. '
-             'Both figures are our own published fee.</p>\n'
+             'Both figures are our own '
+             '<a href="' + COST + '">published fee</a>.</p>\n'
              '<table class="si-tbl"><thead><tr><th scope="col">Item</th>'
              '<th scope="col">' + p['col_a'] + '</th>'
              '<th scope="col">' + p['col_b'] + '</th></tr>'
@@ -572,9 +572,7 @@ def render(p):
          "name": "Nil T2 filing in Canada", "item": SITE + "/"},
         {"@type": "ListItem", "position": 2, "name": "Nil T2 filing price",
          "item": PRICING},
-        {"@type": "ListItem", "position": 3, "name": "Nil T2 filing cost",
-         "item": COST},
-        {"@type": "ListItem", "position": 4, "name": p['h1'], "item": url}]}]}
+        {"@type": "ListItem", "position": 3, "name": p['h1'], "item": url}]}]}
     h.append('<script type="application/ld+json">'
              + json.dumps(schema, ensure_ascii=False) + '</script>\n'
              '<!-- /wp:html -->')
