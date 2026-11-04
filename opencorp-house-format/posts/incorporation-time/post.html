@@ -1,0 +1,754 @@
+<style>.gcpa-post{--navy:#0f2a4a;--navy-2:#15355c;--blue:#1c6dd0;--blue-soft:#e8f1fc;--teal:#0c8f8f;--teal-soft:#e3f4f4;--gold:#c9991f;--gold-soft:#fbf3dc;--green:#1f8a4c;--green-soft:#e6f5ec;--red:#c0392b;--red-soft:#fbeae8;--ink:#1d2733;--muted:#5a6b7b;--line:#d8e0e8;--bg:#ffffff;--bg-alt:#f5f8fb;--radius:14px;--shadow:0 6px 22px rgba(15,42,74,.08);--shadow-lg:0 14px 40px rgba(15,42,74,.14);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);line-height:1.7;font-size:17px;max-width:1080px;margin:0 auto;padding:0 18px 60px;} .gcpa-post *{box-sizing:border-box;} .gcpa-hero{background:linear-gradient(135deg,var(--navy) 0%,var(--navy-2) 60%,#1c4a78 100%);color:#fff;border-radius:20px;padding:46px 40px 42px;margin:26px 0 34px;position:relative;overflow:hidden;} .gcpa-hero::after{content:"";position:absolute;right:-80px;top:-80px;width:280px;height:280px;z-index:0;background:radial-gradient(circle,rgba(28,109,208,.45),transparent 70%);} .gcpa-post .gcpa-eyebrow{display:inline-block;font-size:13px;letter-spacing:1.4px;text-transform:uppercase;font-weight:700;color:#cfe2f8 !important;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.3);padding:7px 15px;border-radius:30px;margin-bottom:18px;} .gcpa-post .gcpa-hero h1{font-size:34px;line-height:1.25;margin:0 0 16px;font-weight:800;color:#fff !important;letter-spacing:-.3px;position:relative;z-index:2;} .gcpa-post .gcpa-hero p{font-size:18px;color:#eaf3fc !important;margin:0;max-width:760px;position:relative;z-index:2;} .gcpa-eyebrow{position:relative;z-index:2;} .gcpa-post h2{font-size:27px;font-weight:800;color:var(--navy);line-height:1.3;margin:48px 0 18px;padding-bottom:14px;border-bottom:3px solid var(--blue-soft);letter-spacing:-.2px;position:relative;} .gcpa-post h2::after{content:"";position:absolute;left:0;bottom:-3px;width:70px;height:3px;background:var(--blue);} .gcpa-post h3{font-size:22px;font-weight:800;color:var(--navy-2);margin:40px 0 14px;line-height:1.35;} .gcpa-post h4{font-size:19px;font-weight:700;color:var(--navy-2);margin:36px 0 12px;line-height:1.4;padding-left:16px;border-left:4px solid var(--teal);} .gcpa-post p{margin:0 0 16px;color:#1d2733 !important;} .gcpa-post li{color:#1d2733;} .gcpa-post a{color:var(--blue);text-decoration:none;font-weight:600;} .gcpa-post a:hover{text-decoration:underline;} .gcpa-post ul,.gcpa-post ol{margin:0 0 18px !important;padding-left:0 !important;list-style:none !important;} .gcpa-post ul{list-style-type:none !important;} .gcpa-post ul li{position:relative;padding:8px 0 8px 34px;margin:0;border-bottom:1px solid var(--line);color:var(--ink);list-style:none !important;list-style-type:none !important;} .gcpa-post ul li::marker{content:"" !important;font-size:0 !important;} .gcpa-post ul li:last-child{border-bottom:none;} .gcpa-post ul li::before{content:"";position:absolute;left:6px;top:15px;width:9px;height:9px;border-radius:2px;background:var(--teal);transform:rotate(45deg);} .gcpa-post ol{counter-reset:gcpa;} .gcpa-post ol li{position:relative;padding:10px 0 10px 44px;margin:0 0 10px;counter-increment:gcpa;list-style:none !important;list-style-type:none !important;} .gcpa-post ol li::marker{content:"" !important;font-size:0 !important;} .gcpa-post ol li::before{content:counter(gcpa);position:absolute;left:0;top:9px;width:28px;height:28px;border-radius:8px;background:var(--navy);color:#fff;font-weight:700;font-size:14px;display:flex;align-items:center;justify-content:center;} .gcpa-post .wp-block-table,.gcpa-post figure.wp-block-table{margin:22px 0 26px;overflow-x:auto;} .gcpa-post table{width:100%;border-collapse:collapse;font-size:15.5px;background:#fff;border:1px solid var(--navy);border-radius:10px;overflow:hidden;box-shadow:var(--shadow);} .gcpa-post thead th{background:var(--navy);color:#fff;text-align:left;padding:13px 15px;font-weight:700;font-size:15px;border:1px solid var(--navy-2);} .gcpa-post tbody td{padding:12px 15px;border:1px solid var(--line);vertical-align:top;color:var(--ink);} .gcpa-post tbody tr:nth-child(even){background:var(--bg-alt);} .gcpa-post tbody tr:hover{background:var(--blue-soft);} .gcpa-post tbody td:first-child{font-weight:600;color:var(--navy-2);} .gcpa-metrics{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin:30px 0 36px;clear:both;} .gcpa-metric{background:#fff;border:1px solid var(--line);border-top:4px solid var(--blue);border-radius:var(--radius);padding:22px 18px;box-shadow:var(--shadow);transition:transform .2s,box-shadow .2s;} .gcpa-metric:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg);} .gcpa-metric:nth-child(2){border-top-color:var(--teal);} .gcpa-metric:nth-child(3){border-top-color:var(--gold);} .gcpa-metric:nth-child(4){border-top-color:var(--green);} .gcpa-metric .ic{width:46px;height:46px;border-radius:11px;background:var(--blue-soft);display:flex;align-items:center;justify-content:center;margin-bottom:14px;color:var(--blue);} .gcpa-metric:nth-child(2) .ic{background:var(--teal-soft);color:var(--teal);} .gcpa-metric:nth-child(3) .ic{background:var(--gold-soft);color:var(--gold);} .gcpa-metric:nth-child(4) .ic{background:var(--green-soft);color:var(--green);} .gcpa-metric .big{font-size:22px;font-weight:800;color:var(--navy);line-height:1.2;margin-bottom:4px;} .gcpa-metric .lbl{font-size:14px;color:var(--muted);line-height:1.45;} .gcpa-numhead{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin:46px 0 8px;clear:both;} .gcpa-numhead h4{margin:0 !important;} .gcpa-numhead .gcpa-pill{margin:0 !important;} .gcpa-numhead .num{flex:0 0 auto;width:48px;height:48px;border-radius:12px;background:var(--navy);color:#fff;font-size:22px;font-weight:800;display:flex;align-items:center;justify-content:center;box-shadow:var(--shadow);} .gcpa-callout{border-radius:var(--radius);padding:20px 22px;margin:22px 0;border:1px solid var(--line);background:var(--bg-alt);position:relative;} .gcpa-callout.blue{background:var(--blue-soft);border-color:#bcd9f6;} .gcpa-callout.teal{background:var(--teal-soft);border-color:#b7e3e3;} .gcpa-callout.gold{background:var(--gold-soft);border-color:#ecd79a;} .gcpa-callout.green{background:var(--green-soft);border-color:#b6e2c6;} .gcpa-callout.red{background:var(--red-soft);border-color:#f0c4be;} .gcpa-callout .co-tag{display:inline-block;font-size:12.5px;font-weight:700;letter-spacing:.6px;text-transform:uppercase;padding:4px 11px;border-radius:20px;margin-bottom:10px;color:#fff;} .gcpa-callout.blue .co-tag{background:var(--blue);} .gcpa-callout.teal .co-tag{background:var(--teal);} .gcpa-callout.gold .co-tag{background:var(--gold);} .gcpa-callout.green .co-tag{background:var(--green);} .gcpa-callout.red .co-tag{background:var(--red);} .gcpa-callout p:last-child{margin-bottom:0;} .gcpa-cta{background:linear-gradient(135deg,var(--navy) 0%,#1c4a78 100%);color:#fff;border-radius:18px;padding:34px 32px;margin:38px 0;text-align:center;box-shadow:var(--shadow-lg);position:relative;overflow:hidden;} .gcpa-cta::before{content:"";position:absolute;left:-60px;bottom:-60px;width:220px;height:220px;background:radial-gradient(circle,rgba(12,143,143,.4),transparent 70%);} .gcpa-post .gcpa-cta h4{color:#fff !important;border:none;padding:0;margin:0 0 12px;font-size:22px;font-weight:800;position:relative;z-index:1;} .gcpa-post .gcpa-cta p{color:#eaf3fc !important;max-width:680px;margin:0 auto 22px;position:relative;z-index:1;} .gcpa-post .gcpa-cta .btn{display:inline-block;background:#fff !important;color:var(--navy) !important;font-weight:700;padding:13px 26px;border-radius:30px;margin:6px;font-size:16px;position:relative;z-index:1;transition:transform .15s;text-decoration:none !important;} .gcpa-post .gcpa-cta .btn:hover{transform:translateY(-2px);text-decoration:none !important;} .gcpa-post .gcpa-cta .btn.primary{background:var(--teal) !important;color:#fff !important;} .gcpa-btnrow{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;align-items:center;position:relative;z-index:1;} .gcpa-trust{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-bottom:22px;position:relative;z-index:1;} .gcpa-post .gcpa-trust span{font-size:13px;font-weight:700;background:rgba(255,255,255,.18) !important;border:1px solid rgba(255,255,255,.45);padding:7px 14px;border-radius:20px;color:#ffffff !important;} .gcpa-post svg{display:block;} .gcpa-pill{display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:700;padding:8px 16px;border-radius:30px;margin:10px 0 6px;line-height:1.2;} .gcpa-pill svg{width:16px;height:16px;flex:0 0 auto;} .gcpa-pill.green{background:var(--green-soft);color:var(--green);border:1px solid #b6e2c6;} .gcpa-pill.blue{background:var(--blue-soft);color:var(--blue);border:1px solid #bcd9f6;} .gcpa-pill.teal{background:var(--teal-soft);color:var(--teal);border:1px solid #b7e3e3;} .gcpa-pill.gold{background:var(--gold-soft);color:#9a7416;border:1px solid #ecd79a;} .gcpa-pill.red{background:var(--red-soft);color:var(--red);border:1px solid #f0c4be;} .gcpa-pillhead{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin:38px 0 12px;clear:both;} .gcpa-pillhead h4{margin:0 !important;} .gcpa-pillhead .gcpa-pill{margin:0 !important;} @media(max-width:560px){.gcpa-pillhead{gap:8px;}} .gcpa-toc{background:var(--bg-alt);border:1px solid var(--line);border-left:5px solid var(--blue);border-radius:var(--radius);padding:24px 26px;margin:30px 0 36px;box-shadow:var(--shadow);} .gcpa-toc h5{margin:0 0 14px;font-size:16px;font-weight:800;color:var(--navy);letter-spacing:.4px;text-transform:uppercase;display:flex;align-items:center;gap:9px;} .gcpa-toc h5 svg{width:20px;height:20px;color:var(--blue);} .gcpa-toc ol{counter-reset:toc;margin:0 !important;padding:0 !important;columns:2;column-gap:36px;list-style:none !important;} .gcpa-toc ol li{counter-increment:toc;position:relative;padding:7px 0 7px 30px;margin:0;border-bottom:1px dashed var(--line);break-inside:avoid;list-style:none !important;} .gcpa-toc ol li::before{content:counter(toc);position:absolute;left:0;top:7px;width:21px;height:21px;border-radius:6px;background:var(--blue-soft);color:var(--blue);font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;} .gcpa-toc ol li::marker{content:"" !important;font-size:0 !important;} .gcpa-toc a{color:var(--navy-2);font-weight:600;font-size:15px;} .gcpa-toc a:hover{color:var(--blue);} .gcpa-post [id^="toc-"]{scroll-margin-top:90px;} .gcpa-banner{display:block;background:linear-gradient(135deg,#0d3b66 0%,#0c7a7a 100%);color:#fff;border-radius:16px;padding:30px 32px;margin:36px 0;box-shadow:var(--shadow-lg);} .gcpa-banner .bt{font-size:20px;font-weight:800;line-height:1.45;margin:0 0 20px;max-width:760px;} .gcpa-banner .bb{display:flex;flex-wrap:wrap;gap:14px;align-items:center;} .gcpa-banner a{display:inline-block;background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.6);color:#fff !important;font-weight:700;padding:13px 24px;border-radius:30px;font-size:15px;text-decoration:none !important;} .gcpa-banner a.solid{background:#ffffff !important;color:#0d3b66 !important;border-color:#fff;} .gcpa-disclaimer{background:var(--bg-alt);border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:34px 0 10px;font-size:14.5px;color:var(--muted);line-height:1.6;} .gcpa-disclaimer strong{color:var(--navy-2);} .gcpa-byline{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin:0 0 22px;font-size:15px;} .gcpa-byline .av{width:42px;height:42px;border-radius:50%;background:var(--navy);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:16px;flex:0 0 auto;} .gcpa-byline .nm{font-weight:700;color:var(--navy-2);} .gcpa-byline .rl{color:var(--teal);font-weight:700;} .gcpa-byline .sep{color:var(--line);} .gcpa-author{display:flex;gap:18px;align-items:flex-start;background:var(--bg-alt);border:1px solid var(--line);border-left:5px solid var(--teal);border-radius:14px;padding:24px 26px;margin:34px 0 40px;} .gcpa-author .ava{width:64px;height:64px;border-radius:50%;background:linear-gradient(135deg,var(--navy),var(--teal));color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:22px;flex:0 0 auto;} .gcpa-author .info h5{margin:0 0 6px;font-size:17px;font-weight:800;color:var(--navy);line-height:1.4;} .gcpa-author .info .role{font-size:14px;color:var(--teal);font-weight:700;margin:0 0 12px;} .gcpa-author .info p{font-size:14.5px;color:var(--muted) !important;margin:0;line-height:1.65;} .gcpa-faq{margin:18px 0 26px;border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:var(--shadow);} .gcpa-faq details{border-bottom:1px solid var(--line);background:#fff;} .gcpa-faq details:last-child{border-bottom:none;} .gcpa-faq summary{list-style:none;cursor:pointer;padding:18px 22px;font-weight:700;color:var(--navy-2);font-size:16px;display:flex;justify-content:space-between;align-items:center;gap:14px;transition:background .15s;} .gcpa-faq summary::-webkit-details-marker{display:none;} .gcpa-faq summary:hover{background:var(--bg-alt);} .gcpa-faq summary .pl{flex:0 0 auto;width:24px;height:24px;border-radius:50%;background:var(--blue-soft);color:var(--blue);display:flex;align-items:center;justify-content:center;font-size:18px;font-weight:700;transition:transform .2s;} .gcpa-faq details[open] summary{background:var(--bg-alt);color:var(--navy);} .gcpa-faq details[open] summary .pl{transform:rotate(45deg);background:var(--blue);color:#fff;} .gcpa-faq .ans{padding:0 22px 20px;color:#1d2733;font-size:15.5px;line-height:1.7;} .gcpa-img-right{float:right;max-width:250px;width:32%;margin:6px 0 24px 28px;border-radius:12px;box-shadow:var(--shadow-lg);border:1px solid var(--line);} .gcpa-img-right img{display:block;width:100%;height:auto;border-radius:12px;} @media(max-width:560px){.gcpa-img-right{float:none;width:70%;max-width:260px;margin:14px auto 18px;}} .gcpa-closing{font-size:24px;font-weight:800;color:var(--navy);margin:48px 0 14px;padding-bottom:12px;border-bottom:3px solid var(--teal-soft);position:relative;} .gcpa-closing::after{content:"";position:absolute;left:0;bottom:-3px;width:70px;height:3px;background:var(--teal);} @media(max-width:560px){.gcpa-post{font-size:16px;} .gcpa-hero{padding:32px 22px;} .gcpa-hero h1{font-size:26px;} .gcpa-post h2{font-size:23px;} .gcpa-cta{padding:26px 20px;} .gcpa-banner .bb{width:100%;} .gcpa-banner .bb a{flex:1 1 auto;text-align:center;}}</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"Open Corporation for $35","alternateName":"Open Corporation For $35","url":"https://opencorporationfor35.ca/","description":"Open Corporation for $35 is a department of Gondaliya CPA.","parentOrganization":{"@type":"Organization","name":"Gondaliya CPA Professional Corporation","url":"https://gondaliyacpa.ca","identifier":"CPA Ontario Firm Registration 61330051"},"legalName":"WealthBamboo Inc.","telephone":"+1-647-212-9559","email":"info@gondaliyacpa.ca","areaServed":"CA","openingHours":"Mo-Su 09:00-20:30","award":"Xero Partner Award Winner 2026","aggregateRating":{"@type":"AggregateRating","ratingValue":"5","reviewCount":"1300"}}
+</script>
+<div class="gcpa-post">
+<div class="gcpa-hero" style="background:linear-gradient(135deg,#0f2a4a 0%,#15355c 60%,#1c4a78 100%) !important;">
+<span class="gcpa-eyebrow">Incorporation · Processing Time · Federal · Ontario · 2026</span>
+<h1 style="color:#ffffff !important;position:relative;z-index:2;font-size:34px;line-height:1.25;font-weight:800;margin:0 0 14px;">How Long Does Incorporation Take in Canada?</h1>
+<div class="gcpa-hero-sub" style="margin:0 0 18px;"><span style="color:#eaf3fc !important;font-size:18px;line-height:1.6;display:block;max-width:840px;position:relative;z-index:2;">How long federal and Ontario incorporation really take, what slows a filing down, and what still has to happen after the certificate</span></div>
+<div style="position:relative;z-index:2;font-size:15px;line-height:1.5;"><span style="color:#ffffff;font-weight:bold;">By Sharad Gondaliya, CPA</span><span style="color:#9fd0d0;font-weight:bold;">  |  <a href="https://opencorporationfor35.ca/">Open Corporation For $35</a> and <a href="https://opencorporationfor35.ca/address-service-100/">Address Service</a></span></div>
+<div style="position:relative;z-index:2;font-size:14.5px;line-height:1.5;margin-top:12px;"><span style="color:#cfe2f8 !important;font-weight:600;">Open Corporation for $35 is a department of Gondaliya CPA.</span></div>
+</div>
+<h2>How Long Does Incorporation Take in Canada: Business Incorporation Processing Time and Corporation Registration Time Explained by Open Corporation for $35</h2>
+<p><strong>Open Corporation for $35 is a department of Gondaliya CPA.</strong> <strong>TLDR:</strong> The time it takes for incorporation in Canada varies depending on federal or provincial registration, with business incorporation processing time Canada typically ranging from a few days to several weeks. Open Corporation for $35 offers <a href="https://opencorporationfor35.ca/guides/how-to-incorporate-in-canada/">clear guidance on corporation registration time Canada</a>, helping you understand how long to incorporate a business efficiently and without extra cost.</p>
+<h3 id="toc-summary" style="margin-top:38px;">Quick Summary</h3>
+<p>A complete online filing with Corporations Canada or the Ontario Business Registry is usually processed the same day. What takes longer is the work around it: clearing the name, getting director details right, and setting up CRA accounts and a bank account after the certificate.</p>
+<figure class="wp-block-table">
+<table>
+<thead><tr><th>Aspect</th><th>Details</th></tr></thead>
+<tbody>
+<tr><td>Online filing, federal or Ontario</td><td>Usually the same day, often within minutes, for a complete application.</td></tr>
+<tr><td>Federal mail filing</td><td>Up to 10 business days, plus mail time.</td></tr>
+<tr><td>NUANS report</td><td>Issued online in minutes and valid for 90 days. A <a href="https://opencorporationfor35.ca/nuans-report-20/">NUANS report from us</a> is $25.</td></tr>
+<tr><td>Government fees</td><td>$200 federal or $300 Ontario.</td></tr>
+<tr><td>CRA business number</td><td>Usually within 1 to 3 business days of the certificate.</td></tr>
+<tr><td>Bank account</td><td>Usually 3 to 7 business days once the bank has your documents.</td></tr>
+<tr><td>Our fee</td><td>$35 including HST, plus government fees.</td></tr>
+</tbody>
+</table>
+</figure>
+<div class="gcpa-author">
+<div class="ava" style="background:linear-gradient(135deg,#0f2a4a,#0c8f8f) !important;color:#ffffff !important;">SG</div>
+<div class="info">
+<h5>Author: Sharad Gondaliya, CPA (Canada &amp; USA) — Founder &amp; Managing Director, Gondaliya CPA Professional Corporation, Toronto, Ontario.</h5>
+<div class="role">Reviewed and fact-checked by Sharad Gondaliya, CPA (Canada &amp; USA)</div>
+<p style="font-size:14.5px;color:#15355c !important;font-weight:700;margin:0 0 8px;">Open Corporation for $35 is a department of Gondaliya CPA.</p>
+<p>Gondaliya CPA is a Toronto-based team providing incorporation, CRA registrations, corporate tax, bookkeeping, GST/HST, and payroll for Canadian corporations. Verify our firm on the <a href="https://www.cpaontario.ca/protecting-the-public/directories/firm/gondaliya-5sqvmj">CPA Ontario public firm directory</a>, firm registration 61330051.</p>
+<p style="font-size:13.5px;color:#15355c !important;font-weight:700;margin-top:10px;">CPA Ontario | CPA USA (Washington &amp; Montana) | Xero Partner Award Winner 2026 | 1300+ 5-star Google reviews</p>
+</div>
+</div>
+<p style="font-size:14px;color:#5a6b7b;margin:-26px 0 26px;">Reading time: 31 minutes.</p>
+<div class="gcpa-toc">
+<h5>Table of Contents</h5>
+<ol>
+<li><a href="#toc-overview">Incorporation Time Overview</a></li>
+<li><a href="#toc-steps">The Five Steps and Their Timing</a></li>
+<li><a href="#toc-fees">Fees, Filing Options and Service Standards</a></li>
+<li><a href="#toc-delays">Common Causes of Delay</a></li>
+<li><a href="#toc-after">After the Certificate</a></li>
+<li><a href="#toc-resources">Resources and Support</a></li>
+<li><a href="#toc-faq">Frequently Asked Questions</a></li>
+<li><a href="#toc-points">Key Points and Quick Reference</a></li>
+</ol>
+</div>
+<span class="gcpa-pill green">The Numbers That Matter</span>
+<div class="gcpa-metrics">
+<div class="gcpa-metric">
+<div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+<div class="big">Same day</div>
+<div class="lbl">Usual processing of a complete online filing</div>
+</div>
+<div class="gcpa-metric">
+<div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></div>
+<div class="big">90 days</div>
+<div class="lbl">NUANS report validity</div>
+</div>
+<div class="gcpa-metric">
+<div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
+<div class="big">$200 / $300</div>
+<div class="lbl">Government fee, federal and Ontario</div>
+</div>
+<div class="gcpa-metric">
+<div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+<div class="big">$35</div>
+<div class="lbl">Our incorporation fee, including HST</div>
+</div>
+</div>
+<div class="gcpa-callout blue">
+<span class="co-tag">Scope &amp; Assumptions</span>
+<p>This article covers federal and Ontario incorporation as it stands in 2026, in Canadian dollars. Registry processing times are targets, not promises, and can change with volume. This is educational information only and not tax, legal, or financial advice. Please speak with a CPA before you act.</p>
+</div>
+
+<h2>Business Incorporation Processing Time Canada: General Overview</h2>
+<div class="gcpa-numhead">
+<div class="num" style="background:#0f2a4a !important;color:#ffffff !important;">1</div>
+<h4 id="toc-overview" style="border:none;padding:0;margin:0;">Incorporation Time Overview</h4>
+<span class="gcpa-pill blue">The Basics</span>
+</div>
+<p><a href="https://opencorporationfor35.ca/incorporation-service-35/">Starting a business in Canada</a> means you often need to incorporate. But how long does incorporation take in Canada? Well, it depends. Usually, it takes anywhere from a few days up to several weeks.</p>
+<p>The exact business incorporation processing time Canada depends on things like whether you file federally or provincially. It also depends on how complete your paperwork is and if you need extra steps after filing.</p>
+<p>Knowing how long to incorporate a business helps you plan your next moves without surprises.</p>
+<h3>Typical Steps Involved in the Incorporation Process</h3>
+<p>Incorporating involves a few key steps that affect timing:</p>
+<ul>
+<li><strong>Name Search:</strong> You run a <a href="https://opencorporationfor35.ca/guides/nuans-name-search/">NUANS report</a> to check if your business name is unique.</li>
+<li><strong>Preparation of Articles:</strong> You write articles of incorporation to explain your corporation’s setup.</li>
+<li><strong>Filing with Registry:</strong> You submit your application online or by mail to start processing.</li>
+<li><strong>Registry Review:</strong> The registry checks if everything is filled out correctly and follows rules.</li>
+<li><strong>Issuance of Certificate:</strong> If all is good, they send you an incorporation certificate as proof.</li>
+</ul>
+<p>These steps set the pace for how fast the process goes and make sure your business meets legal rules.</p>
+<h3>Average Incorporation Timeline in Canada</h3>
+<p>Usually, a complete online filing through provincial services like <a href="https://opencorporationfor35.ca/how-to-incorporate-in-ontario/">Ontario’s Business Registry</a> or at the federal level through Corporations Canada is processed the same day, often within minutes. Sometimes it can take longer if there are errors or many applications at once.</p>
+<p>Here’s a simple look at typical times for each step:</p>
+<figure class="wp-block-table">
+<table>
+<thead><tr><th>Step</th><th>Estimated Timeframe</th></tr></thead>
+<tbody>
+<tr><td>Name Search</td><td>Same day (NUANS report online)</td></tr>
+<tr><td>Filing Application</td><td>Same day (online)</td></tr>
+<tr><td>Registry Review</td><td>Same day for most complete online filings</td></tr>
+<tr><td>Issuance of Certificate</td><td>Immediate after approval</td></tr>
+</tbody>
+</table>
+</figure>
+<p>This gives you a rough idea of what to expect for each part of the process.</p>
+<div class="gcpa-callout teal">
+<span class="co-tag">Key Stat</span>
+<p><strong>Same day:</strong> the usual processing time for a complete online incorporation with Corporations Canada or the Ontario Business Registry. Most delays come from the application, not the registry.</p>
+</div>
+<h3>Federal vs Provincial Incorporation: Timeline Differences</h3>
+<p><a href="https://opencorporationfor35.ca/incorporate-federally-in-canada/">Deciding between federal or provincial incorporation</a> changes how fast things go:</p>
+<h4>Federal Incorporation Processing Time</h4>
+<p>Usually quicker with streamlined steps, often done the same day online.</p>
+<h4>Ontario Incorporation Processing Time</h4>
+<p>Also usually done the same day online, although manual reviews can take longer depending on local workloads.</p>
+<p>Knowing these timeline differences helps pick the option that fits your needs best.</p>
+<h3>Province-Specific Incorporation Timelines and Comparisons</h3>
+<p>Different provinces have their own speeds and rules that affect timing:</p>
+<h5>Ontario</h5>
+<p>If you use Ontario’s Business Registry, expect your certificate the same day after submitting, as long as there aren’t any issues during review.</p>
+<h5>Federal</h5>
+<p>Corporations Canada usually processes complete online filings the same day, often immediately, when using their online system properly.</p>
+<p>Comparing these options helps you choose where it makes most sense for your business and deadlines.</p>
+<h3>Factors Influencing Corporation Registration Time Canada</h3>
+<p>Several things can slow down or speed up corporation registration time Canada:</p>
+<ul>
+<li>Missing info in documents causes delays because they ask for fixes.</li>
+<li>NUANS report needs to be current; old reports mean reapplying and waiting more.</li>
+<li>Busy times at registries slow processing at both federal and provincial levels.</li>
+<li>Extra filings for <a href="https://opencorporationfor35.ca/corporate-compliance-subscription/">corporate compliance Canada</a>, like reports on who controls the company, add time.</li>
+</ul>
+<p>Being ready with all papers and knowing these factors will save some stress during your business incorporation process.</p>
+
+<h2>How to Incorporate in Canada, Step by Step</h2>
+<div class="gcpa-numhead">
+<div class="num" style="background:#0f2a4a !important;color:#ffffff !important;">2</div>
+<h4 id="toc-steps" style="border:none;padding:0;margin:0;">The Five Steps and Their Timing</h4>
+<span class="gcpa-pill teal">Process</span>
+</div>
+<h3>Step 1: Deciding Whether to Incorporate a Business</h3>
+<p>Figuring out how long to incorporate a business depends on knowing the steps and being ready. Incorporation times in Canada change based on where you file and how. Planning ahead helps avoid delays.</p>
+<p>When you incorporate, you create a separate legal entity. This gives you liability protection and some tax perks. But it takes time. You need to get your name approved, prepare your articles of incorporation, wait for government review, and finish some tasks after filing.</p>
+<p>If you’re self-employed or a first-time founder in Toronto or anywhere in Ontario, whether you choose federal or provincial incorporation matters. Knowing these steps helps you guess corporation registration time Canada-wide.</p>
+<p>Open Corporation for $35 works with Gondaliya CPA. It’s smart to check your business details with a CPA before starting because <a href="https://opencorporationfor35.ca/guides/share-structure-explained/">decisions about shares</a> may need legal advice. Getting your certificate doesn’t mean your company can start operating right away.</p>
+<h3>Step 2: Choosing and Reserving a Corporation Name</h3>
+<p>Picking the right name affects business incorporation processing time Canada-wide. The registry must check and approve names before you file articles of incorporation.</p>
+<p>If your name conflicts with others or trademarks, corporation registration time Canada will increase. To avoid this:</p>
+<ul>
+<li><a href="https://opencorporationfor35.ca/named-company-incorporation-nuans/">Get an early NUANS report.</a></li>
+<li>Think about using a numbered company to skip detailed name checks.</li>
+<li>File your articles soon after your NUANS report is issued.</li>
+</ul>
+<p>A NUANS report does not reserve the name, so another business can still register a similar name while registries like Corporations Canada or Ontario Business Registry process your filing.</p>
+<div class="gcpa-callout red">
+<span class="co-tag">Risk Warning</span>
+<p><strong>Risk Warning:</strong> A NUANS report does not hold your name for you. Please file your articles soon after the report is issued, and always within its 90-day validity.</p>
+</div>
+<h4>NUANS Name Search Requirements and Timing</h4>
+<p>A NUANS report checks your proposed name against registered businesses and trademarks across provinces. It has to be recent—valid only for 90 days after issuance—to be accepted.<sup>1</sup></p>
+<p>Named corporations must have this valid NUANS report; without it, filings get rejected causing delays that add days to corporation registration time Canada-wide.<sup>2</sup> Numbered corporations don’t need this step because they use assigned numbers instead of custom names.<sup>3</sup></p>
+<p>Which goes faster? Numbered companies usually move quicker since they skip possible naming conflicts that slow things down.<sup>4</sup> Named companies might wait longer if their chosen name needs fixing due to similarities found during registry checks.</p>
+<figure class="wp-block-table">
+<table>
+<thead><tr><th>Factor</th><th>Named Corporation</th><th>Numbered Corporation</th></tr></thead>
+<tbody>
+<tr><td>Requires NUANS Report</td><td>Yes</td><td>No</td></tr>
+<tr><td>Risk of Name Rejection</td><td>Possible</td><td>None</td></tr>
+<tr><td>Processing Time Impact</td><td>Longer if conflict</td><td>Usually shorter</td></tr>
+<tr><td>Flexibility Post-Incorporation</td><td>Can change later (fees apply)</td><td>Can adopt a name later by amendment (fees apply)</td></tr>
+</tbody>
+</table>
+</figure>
+<p><strong>Bottom line:</strong> Numbered corporations speed up registration if you don’t need branding right away but they lack a brand identity from the start.</p>
+<div class="gcpa-callout blue">
+<span class="co-tag">Worth Knowing</span>
+<p>A numbered company is not locked into its number. It can adopt a name later by filing articles of amendment, once a NUANS report clears the name.</p>
+</div>
+<h3>Step 3: Preparing Articles of Incorporation</h3>
+<p><a href="https://opencorporationfor35.ca/guides/articles-of-incorporation-explained/">Articles of Incorporation</a> are the main corporate governance document needed for all Canadian incorporations, including Ontario’s Business Corporations Act rules.<sup>5</sup></p>
+<p>Making these articles carefully affects incorporation certificate processing time. Mistakes cause rejections and slow down registry approval.<sup>6</sup> Important parts include:</p>
+<ul>
+<li>Corporate name</li>
+<li>Registered office address</li>
+<li>Share structure details</li>
+<li>Director info that follows residency rules</li>
+<li>Any limits on share transfers or special rights</li>
+</ul>
+<p>Completing these documents fully helps avoid common problems like missing director residency info or incomplete addresses, which slow government reviews federally and provincially.<sup>7</sup></p>
+<p>Other governance documents like shareholder agreements are usually made after incorporation by lawyers if needed. They don’t affect certificate timing directly but are needed before fully running the company.</p>
+<h3>Step 4: Filing Methods: Online, Mail, and Email Options</h3>
+<p><a href="https://opencorporationfor35.ca/incorporation-form/">Online business incorporation Canada</a> is the fastest way to file compared to mail because systems are automated at places like Corporations Canada’s online portal or Ontario Business Registry’s website.<sup>8</sup><sup>9</sup></p>
+<p>Here are filing options:</p>
+<ul>
+<li><strong>Online Filing:</strong> Fastest; often done within minutes but official processing depends on workload.</li>
+<li><strong>Mail Filing:</strong> Slower due to postal delays; can take days or weeks depending on mail service.</li>
+<li><strong>Email Submission:</strong> Some places accept it; usually slower than online but quicker than mail when allowed.</li>
+</ul>
+<p>Online filings help catch mistakes with built-in checks so forms are less likely rejected—this speeds up overall corporation registration time Canada-wide.</p>
+<p>On average, online incorporations take about 15 minutes to apply plus extra time for government review mentioned next — getting the official certificate depends on registry schedules with no guarantee of same-day results.<sup>10</sup></p>
+<h3>Step 5: Government Processing and Typical Processing Times</h3>
+<p>Federal incorporation processing times differ from provincial ones because Corporations Canada works differently than Ontario Business Registry among others.<sup>11</sup><sup>12</sup></p>
+<p>Current published service standards (2026) show:</p>
+<figure class="wp-block-table">
+<table>
+<thead><tr><th>Jurisdiction</th><th>Online Service Standard</th><th>Mail Service Standard</th></tr></thead>
+<tbody>
+<tr><td>Federal</td><td>Usually immediate*</td><td>Up to 10 business days*</td></tr>
+<tr><td>Ontario</td><td>Same day electronic filing possible†</td><td>Not applicable</td></tr>
+</tbody>
+</table>
+</figure>
+<p style="font-size:13.5px;color:#5a6b7b;">*Times can change depending on volume<sup>13</sup>; †Ontario aims for same-day approval electronically when no issues appear<sup>14</sup>.</p>
+<p>These targets start once your full application passes initial checks including a successful NUANS report where needed<sup>15</sup>. Delays happen if:</p>
+<ul>
+<li>Documents are incomplete</li>
+<li>Errors pop up during manual reviews</li>
+<li>There is high demand during busy times</li>
+</ul>
+<p>The date on your Certificate of Incorporation marks when your company legally starts but doesn’t mean you can operate immediately until other steps finish (like issuing shares). Registries don’t promise exact turnaround times or say when bank accounts open since those depend on CRA accounts issued after incorporating<sup>16</sup>.</p>
+<p><a href="https://opencorporationfor35.ca/services/">Ask Open Corporation for $35 experts for help</a>—they watch changes closely and guide clients so submissions go smoothly without unnecessary waits.</p>
+<div style="font-size:13px;color:#5a6b7b;border-top:1px solid #e3e9f0;padding-top:10px;margin:18px 0 24px;">
+<p style="margin:0 0 4px;">1: NUANS Official Site</p>
+<p style="margin:0 0 4px;">2: Corporations Canada – Naming Rules</p>
+<p style="margin:0 0 4px;">3: Ontario Business Registry Guidelines</p>
+<p style="margin:0 0 4px;">4: Industry experience data internal analysis</p>
+<p style="margin:0 0 4px;">5: Business Corporations Act (Ontario)</p>
+<p style="margin:0 0 4px;">6: Corporations Canada's Form Review Process</p>
+<p style="margin:0 0 4px;">7: Common causes cited in client case studies at Open Corporation for $35</p>
+<p style="margin:0 0 4px;">8: Corporations Canada's Online Services Standards</p>
+<p style="margin:0 0 4px;">9: Ontario e-Laws – Electronic Filings</p>
+<p style="margin:0 0 4px;">10: Internal timing estimates verified Q1–Q2 2026 operations reports</p>
+<p style="margin:0 0 4px;">11: See above references combined with direct inquiries made April-June 2026</p>
+<p style="margin:0 0 4px;">12: Publicly posted updates at https://www.services.gov.on.ca/bso/</p>
+<p style="margin:0 0 4px;">13, 14: As above respective sources dated June 2026 update notices</p>
+<p style="margin:0;">15, 16: CRA guidelines regarding BN issuance following article endorsement</p>
+</div>
+<div class="gcpa-cta" style="background:linear-gradient(135deg,#0f2a4a 0%,#1c4a78 100%) !important;">
+<h4>Incorporate today, with a CPA checking the details first</h4>
+<p>Incorporation from $35 including HST plus government fees, with a free CPA consultation on your name, directors and share structure before anything is filed. Please book a free consultation.</p>
+<div class="gcpa-trust"><span>1300+ 5-star Google reviews</span><span>Xero Partner Award Winner 2026</span><span>CPA Ontario Firm 61330051</span><span>30-Day Money-Back Guarantee</span></div>
+<div class="gcpa-btnrow"><a class="solid" href="https://gondaliyacpa.ca/consultation/">Book Free Consultation</a><a href="https://opencorporationfor35.ca/">Open Corporation For $35</a><a href="tel:+16472129559">647-212-9559</a></div>
+</div>
+
+<h2>Fees and Service Options for Incorporation</h2>
+<div class="gcpa-numhead">
+<div class="num" style="background:#0f2a4a !important;color:#ffffff !important;">3</div>
+<h4 id="toc-fees" style="border:none;padding:0;margin:0;">Fees, Filing Options and Service Standards</h4>
+<span class="gcpa-pill gold">Fees</span>
+</div>
+<p>Starting a business in Canada means dealing with some <a href="https://opencorporationfor35.ca/pricing/">fees and choices</a> that can change how fast you get your incorporation certificate. The time to finish business incorporation processing time Canada-wide and corporation registration time Canada can vary. Knowing these fees and options helps you plan your money and schedule better.</p>
+<h3>Incorporation Costs and Fee Structures</h3>
+<p><a href="https://opencorporationfor35.ca/guides/cost-to-incorporate-in-canada/">The price to incorporate</a> depends on the government fees where you are and any extra charges from services you use. For Ontario, the filing fee online is $300 through the Ontario Business Registry<sup>[1]</sup>. For federal incorporation, Corporations Canada charges $200 for online filings under the Canada Business Corporations Act<sup>[2]</sup>.</p>
+<p>Business incorporation processing time Canada changes based on how busy registries are but often matches these fees. Paying less doesn’t always mean waiting longer; government fees apply no matter how fast you want it done.</p>
+<p>Open Corporation for $35 offers a simple flat-fee online package separate from these government costs. This clear pricing means no surprise fees beyond what the law requires.</p>
+<figure class="wp-block-table">
+<table>
+<thead><tr><th>Jurisdiction</th><th>Government Filing Fee (Online)</th><th>Typical Processing Time*</th><th>Source</th></tr></thead>
+<tbody>
+<tr><td>Ontario</td><td>$300</td><td>Same day (usually immediate)</td><td>ServiceOntario</td></tr>
+<tr><td>Federal</td><td>$200</td><td>Same day (usually immediate)</td><td>Corporations Canada</td></tr>
+</tbody>
+</table>
+</figure>
+<p style="font-size:13.5px;color:#5a6b7b;">*Times depend on how busy the registry is.</p>
+<h3>Filing Options: Digital-First, Express Service, and Standard Processing</h3>
+<p>Most places in Canada want you to file online first to speed things up. Ontario’s Business Registry and Corporations Canada's system let you finish filing in about 15 minutes<sup>[3]</sup>.</p>
+<p>Some providers offer express or same-day service as extras. But remember, the registry sets final times — no one can promise same-day results<sup>[4]</sup>. Federal incorporation processing time is usually the same day if filed online. Ontario usually issues the certificate the same day after receiving your application<sup>[1]</sup> <sup>[2]</sup>.</p>
+<p>If you don’t need it fast, standard processing is an option but might take longer because of manual checks or paper forms.</p>
+<h3>Payment Methods and Accepted Forms of Payment</h3>
+<p>Government offices accept several payment types:</p>
+<ul>
+<li>Ontario takes credit cards (Visa/Mastercard) and Visa Debit or Mastercard Debit when filing digitally.</li>
+<li>Corporations Canada accepts credit cards during online filing.</li>
+<li>For Open Corporation for $35 services, payments come by Interac e-Transfer (auto-deposit enabled) or major credit cards sent to info@gondaliyacpa.ca. No cash or cheques are accepted<sup>[5]</sup>.</li>
+</ul>
+<p>This keeps payments quick so your application starts without hold-ups.</p>
+<h3>Service Standards and Typical Fees by Jurisdiction</h3>
+<p>Each area has service standards that show expected review times:</p>
+<ul>
+<li>Ontario usually processes complete online articles the same day; manual reviews can take longer, not counting weekends or holidays<sup>[1]</sup>.</li>
+<li>Federally, Corporations Canada usually processes complete online applications immediately. Paper filings take about ten calendar days<sup>[2]</sup>.</li>
+</ul>
+<p>These times don’t count delays from name issues or missing info, which can stretch corporation registration time Canada a lot.</p>
+<p>If you <a href="https://opencorporationfor35.ca/extra-provincial-registration/">register outside your main province</a> after federal incorporation, expect extra provincial fees—for example: Alberta ($275), British Columbia ($350), Quebec ($334)<sup>[6]</sup> <sup>[7]</sup> <sup>[8]</sup>. These differ a lot by province rules.</p>
+<div class="gcpa-callout red">
+<span class="co-tag">Risk Warning</span>
+<p><strong>Risk Warning:</strong> A federal certificate does not cover your provincial filings. A federal corporation that carries on business in Ontario must file an initial return within 60 days, and other provinces require extra-provincial registration. Please plan for these before you start trading.</p>
+</div>
+<h3>Additional Services Related to Incorporation and Their Fees (e.g., Preapproval of Corporate Name, Ordering Copies)</h3>
+<p>A NUANS report shows if your company name is already used. It’s usually needed before federal or provincial incorporation outside Quebec. It costs about $13-$30 depending on where you get it<sup>[9]</sup>. Some provinces include it with name reservation; others ask you to order it separately before filing papers.</p>
+<p>Other optional services include:</p>
+<ul>
+<li>Certified copies of your articles</li>
+<li>Extra certificates</li>
+<li>Registered office/address services</li>
+<li><a href="https://opencorporationfor35.ca/minute-book-preparation/">Minute book preparation</a></li>
+</ul>
+<p>Prices change by provider but usually cost between $20-$100 per item after incorporating.</p>
+<p>Open Corporation for $35 gives instant NUANS reports for $25 when you choose a named company. This cuts down delays caused by name conflicts early on.</p>
+<p>Please call us at 647‑212‑9559 or email info@gondaliyacpa.ca if you want help figuring out how these fees affect your timeline. Our free CPA consultation makes all steps clear so you can plan without surprises.</p>
+<h5>Footnotes</h5>
+<ol style="font-size:13px;color:#5a6b7b;">
+<li>ServiceOntario - Business Registry — Verified 2026 figures</li>
+<li>Corporations Canada - Filing Information — Verified 2026 figures</li>
+<li>Open Corporation internal data – average client completion times ~15 minutes online intake</li>
+<li>See disclaimers regarding same-day guarantees – Registries control timing exclusively</li>
+<li>Open Corporation payment policy details – opencorporationfor35.ca/contact-us/</li>
+<li>Alberta Corporate Registry Fees</li>
+<li>BC Registry Services Fee Schedule</li>
+<li>Registraire des entreprises du Québec fee schedule summary</li>
+<li>NUANS Report Pricing Overview – IndustryCanada/Nuans.com</li>
+</ol>
+
+<h2>What Slows Down Incorporation in Canada</h2>
+<div class="gcpa-numhead">
+<div class="num" style="background:#0f2a4a !important;color:#ffffff !important;">4</div>
+<h4 id="toc-delays" style="border:none;padding:0;margin:0;">Common Causes of Delay</h4>
+<span class="gcpa-pill red">Delays</span>
+</div>
+<h3>Name Availability Issues and Impact on Processing Time</h3>
+<p>Name availability plays a big role in how long incorporation takes in Canada. You need to run a NUANS report or similar search first. This checks if your business name is already taken or too close to one that exists. If the name isn’t unique, the process can slow down a lot.</p>
+<p>In Ontario and at the federal level, you must have an approved name before your articles of incorporation get accepted. If the registry rejects your name, you’ll have to pick a new one and start over. That can add days or even weeks to corporation registration time Canada-wide. Numbered companies skip this step but might not be great for branding.</p>
+<p>How fast your business incorporation processes depends partly on how quickly you fix any naming problems. Online NUANS reports help speed things up but don’t guarantee approval. It’s best to pick a clear, compliant name early to <a href="https://opencorporationfor35.ca/five-mistakes-first-time-incorporators-make/">avoid hold-ups during review</a>.</p>
+<p>Here’s what affects delays:</p>
+<ul>
+<li>Duplicate or confusing names</li>
+<li>Waiting for name approval from registries</li>
+<li>Resubmitting after rejection</li>
+</ul>
+<h3>Accuracy of Director and Shareholder Information</h3>
+<p>Getting director and shareholder info right is key for corporate compliance in Canada. Registries check that directors meet <a href="https://opencorporationfor35.ca/guides/director-residency-requirements/">residency rules</a> and all details follow corporate governance documents.</p>
+<p>Mistakes like wrong addresses, missing signatures, or incomplete data often lead to rejected filings. Then you get correction letters, which slows business incorporation processing time Canada-wide because you have to fix and resend paperwork.</p>
+<p>Providing exact info from the start helps get your articles approved faster. Also, keeping records updated supports ongoing legal requirements like Ontario’s Business Corporations Act.</p>
+<p>Common errors include:</p>
+<ul>
+<li>Incorrect personal details</li>
+<li>Missing signatures</li>
+<li>Not meeting residency rules</li>
+</ul>
+<p>Fix these early to avoid delays later.</p>
+<div class="gcpa-callout gold">
+<span class="co-tag">Our Actual Experience</span>
+<p>When one of our filings is held up, it is rarely the registry. It is usually a name that is too close to an existing business, or a director address that is incomplete. We check both before we file.</p>
+</div>
+<h3>Complex Share Structures and Their Effect on Timelines</h3>
+<p>If your company uses complex share structures—like multiple classes or special voting rights—it takes longer before filing. Preparing detailed corporate governance documents takes more time and careful work.</p>
+<p>This complexity adds to corporation registration time Canada-wide because registry staff and advisors must review everything closely. A good <a href="https://opencorporationfor35.ca/first-year-filing-calendar-new-corporation/">business compliance calendar</a> helps keep track of deadlines for share issuances, resolutions, registers, and annual returns.</p>
+<p>Simple share setups usually mean faster incorporations since there’s less paperwork to check.</p>
+<p>Things that slow down timelines here:</p>
+<ul>
+<li>Multiple share classes</li>
+<li>Special restrictions or rights</li>
+<li>Extra documentation reviews</li>
+</ul>
+<h3>Paper Filing vs Online Filing: Processing Speed Considerations</h3>
+<p>Filing online in Canada speeds up business incorporation a lot compared to paper forms. Services like the Ontario Business Registry let you submit electronically, cut errors, and confirm payments right away.</p>
+<p>How long to incorporate a business changes depending on your method. Online filings usually get processed the same day while paper can take weeks at Corporations Canada offices. But even online applications slow down if info is wrong.</p>
+<p>Choosing online filing helps move things faster but doesn’t promise same-day approval since government review depends on workload.</p>
+<p>Here’s a quick comparison:</p>
+<figure class="wp-block-table">
+<table>
+<thead><tr><th>Filing Method</th><th>Typical Processing Time</th><th>Notes</th></tr></thead>
+<tbody>
+<tr><td>Online</td><td>Same day (usually immediate)</td><td>Fast; instant payment confirmed</td></tr>
+<tr><td>Paper</td><td>10+ business days</td><td>Manual entry; higher error risk</td></tr>
+</tbody>
+</table>
+</figure>
+<p>If you want speed, go online—<a href="https://opencorporationfor35.ca/guides/incorporation-documents-checklist/">just double-check your details!</a></p>
+<h3>Incomplete or Missing Information in Applications</h3>
+<p>Applications missing key info cause many delays when registering corporations in Canada. Leaving out things like <a href="https://opencorporationfor35.ca/guides/registered-office-address/">office addresses</a> or support docs leads registries to reject forms and ask for fixes.</p>
+<p>Registries rely on complete forms from applicants or registered intermediaries—agents who file for you. Omissions trigger risks delays prevention controls that try to catch errors before submission.</p>
+<p>Double-check these before sending:</p>
+<ul>
+<li>Full legal names of directors/shareholders</li>
+<li>Correct addresses with postal codes</li>
+<li>Proper signing authority included</li>
+<li>Valid NUANS reports if needed</li>
+</ul>
+<p>Missing these can not only delay approval but mess with start dates that affect contracts tied to official corporate status.</p>
+<h3>Expert Tips to Expedite Incorporation</h3>
+<p>Same-day incorporation Canada-wide isn’t guaranteed because government offices control timing strictly. Still, some tips improve chances for quick results:</p>
+<ul>
+<li>Use services backed by CPAs who know registry rules well</li>
+<li>Pick numbered company names if branding isn’t an issue</li>
+<li>File online with error-free applications</li>
+<li>Get organizational resolutions ready once the certificate arrives</li>
+<li>Check <a href="https://opencorporationfor35.ca/guides/individuals-with-significant-control/">ISC registers</a> early when needed</li>
+<li>Align CRA Business Number applications closely after getting your certificate</li>
+</ul>
+<p>Following these tips cuts down unnecessary waits inside normal corporation registration timeframes across provinces.</p>
+<div class="gcpa-banner" style="background:linear-gradient(135deg,#0d3b66 0%,#0c7a7a 100%) !important;">
+<div class="bt">Want your filing right the first time? Please book a free consultation and we will check your name, directors and share structure before anything is filed.</div>
+<div class="bb"><a class="solid" href="https://gondaliyacpa.ca/consultation/">Book Free Consultation</a><a href="mailto:info@gondaliyacpa.ca">info@gondaliyacpa.ca</a><a href="tel:+16472129559">647-212-9559</a></div>
+</div>
+
+<h2>Actions to Take After Incorporation Completion</h2>
+<div class="gcpa-numhead">
+<div class="num" style="background:#0f2a4a !important;color:#ffffff !important;">5</div>
+<h4 id="toc-after" style="border:none;padding:0;margin:0;">After the Certificate</h4>
+<span class="gcpa-pill green">Next Steps</span>
+</div>
+<p>Once your company is incorporated, it's legally formed. But, that doesn't mean you're ready to start business right away. The date you get your incorporation certificate shows official formation. Still, you need to do more before opening shop.</p>
+<p>Here’s what usually comes next:</p>
+<ul>
+<li><a href="https://opencorporationfor35.ca/business-number-cra-account-registration/">Get a CRA business number</a></li>
+<li>Open a corporate bank account</li>
+<li>Issue shares</li>
+<li>Complete organizational resolutions</li>
+</ul>
+<p>How long does incorporation take in Canada? That depends on the province and how you file. Some places are quicker, some slower. But even after incorporation is done, there’s still work to get your business fully set up.</p>
+<p>The registry tells you how long articles of incorporation take to process. But the extra steps after that add days or weeks before you're fully ready.</p>
+<p>Open Corporation for $35, part of Gondaliya CPA, helps people with these important next steps once they have their incorporation certificate.</p>
+<h3>Typical Timelines for Business Bank Account Setup and GST/HST Registration</h3>
+<p>After incorporation, you’ll get a CRA business number. It comes fast—usually 1 to 3 business days after your corporate registration gets confirmed. This number lets you file taxes and register for accounts like GST/HST (RT), payroll (RP), or import/export (RM).</p>
+<p>Setting up a <a href="https://opencorporationfor35.ca/guides/hst-registration-guide/">GST/HST account</a> takes a little longer because it’s a separate registration through Business Registration Online or by calling the CRA.</p>
+<p>Opening your corporate bank account needs some papers ready:</p>
+<ul>
+<li>Certificate of incorporation</li>
+<li>Corporate minute book with share certificates</li>
+<li>Resolutions naming who can sign on behalf of the company</li>
+</ul>
+<p>Banks usually take 3 to 7 business days once they have everything. If share issuance or minutes aren’t ready, expect delays.</p>
+<p>Here’s a quick look at typical timing:</p>
+<ul>
+<li><strong>Certificate issued:</strong> Same day or few days</li>
+<li><strong>CRA Business Number assigned:</strong> 1–3 business days</li>
+<li><strong>GST/HST Account setup:</strong> Same day online through BRO</li>
+<li><strong>Bank Account Opening:</strong> 3–7 business days</li>
+</ul>
+<div style="font-size:13px;color:#5a6b7b;margin:0 0 20px;">
+<p style="margin:0 0 4px;">1: See CRA - Registering Your Business</p>
+<p style="margin:0;">2: Typical Canadian bank procedures; times may vary</p>
+</div>
+<div class="gcpa-callout red">
+<span class="co-tag">Risk Warning</span>
+<p><strong>Risk Warning:</strong> The date on your certificate is not the date you can bank or invoice. Please do not sign contracts that need a corporate bank account or GST/HST number until both are in place.</p>
+</div>
+<h3>Filing Annual Returns and Other Ongoing Reporting Requirements</h3>
+<p>If you have a corporation federally or provincially incorporated, you must <a href="https://opencorporationfor35.ca/corporate-annual-filing/">file annual returns</a>. These confirm your company info is still up to date in the government records.</p>
+<p>For example:</p>
+<ul>
+<li>Ontario wants returns within six months after fiscal year-end</li>
+<li>Federal corporations must file within 60 days after their anniversary date</li>
+</ul>
+<p>Missing these deadlines can bring penalties or even risk losing your company status. You need good standing for contracts and loans.</p>
+<p>Besides annual returns, keep director info current. Report changes in office addresses or shareholder details too. Not filing these can slow down corporation registration time Canada-wide when you want updates done.</p>
+<p>Stay on top of this stuff so your corporation runs smooth without interruptions from regulators.</p>
+<div style="font-size:13px;color:#5a6b7b;margin:0 0 20px;">
+<p style="margin:0 0 4px;">3: Ontario e-Laws: Business Corporations Act</p>
+<p style="margin:0 0 4px;">4: ServiceOntario Annual Return Guide</p>
+<p style="margin:0;">5: Corporations Canada Annual Return Info</p>
+</div>
+<h3>Corporation Maintenance Services: Changing Director Information, Registered Office Address, and More</h3>
+<p>Corporate governance means keeping public records accurate about directors and office addresses all along the company’s life.<sup>6</sup> You must report changes quickly using online forms at provincial sites or Corporations Canada depending on where you’re incorporated.</p>
+<p>Common updates include:</p>
+<ul>
+<li>Adding/removing/changing directors</li>
+<li><a href="https://opencorporationfor35.ca/corporate-changes-amendments/">Changing registered office address</a></li>
+<li>Amending share structure details</li>
+<li>Reporting under new rules about Individuals with Significant Control (ISC)</li>
+</ul>
+<p>These filings keep things transparent and legal in Canada.<sup>7</sup></p>
+<p>If you don’t update this info on time, regulators may send non-compliance warnings. That can block other filings like extra-provincial registrations or hurt your standing during CRA audits related to corporate governance documents.</p>
+<div style="font-size:13px;color:#5a6b7b;margin:0 0 20px;">
+<p style="margin:0 0 4px;">6: Corporate Governance Guidelines — CPA Ontario Resources</p>
+<p style="margin:0;">7: ISED – ISC Filing Requirements Overview</p>
+</div>
+<h3>Available Services for Corporate Amendments and Dissolutions</h3>
+<p>After incorporation, sometimes you need changes to original filings. You might fix spelling errors in the name,<sup>8</sup> change authorized capital amounts,<sup>9</sup> extend fiscal year ends,<sup>10</sup> merge companies,<sup>11</sup> or wind up voluntarily.<sup>12</sup></p>
+<p>These changes need separate forms and fees. They are not part of initial incorporation timelines but go through their own review process called “incorporation certificate processing time.”</p>
+<p>If a company stops operating, dissolution services help close things properly. This can be voluntary by submitting Articles of Dissolution or forced if legal requirements aren’t met leading to revocation.<sup>13</sup></p>
+<p>Knowing what these services cover helps plan timing since amendments take variable time based on complexity and registry workloads.</p>
+<p style="font-size:13px;color:#5a6b7b;">[8]-[13]: See Corporations Canada Forms &amp; Fees &amp; ServiceOntario Corporate Changes</p>
+<p>Open Corporation for $35 belongs to Gondaliya CPA and offers help from filing through <a href="https://opencorporationfor35.ca/guides/what-happens-after-you-incorporate/">ongoing compliance</a> so you avoid surprises on timing throughout your corporate life cycle.</p>
+
+<h2>Additional Resources and Support</h2>
+<div class="gcpa-numhead">
+<div class="num" style="background:#0f2a4a !important;color:#ffffff !important;">6</div>
+<h4 id="toc-resources" style="border:none;padding:0;margin:0;">Resources and Support</h4>
+<span class="gcpa-pill blue">Support</span>
+</div>
+<p>So, how long does incorporation take in Canada? It’s not just about when you file. Business incorporation processing time Canada depends on a few things. Registries review your documents, check your business name, and handle other steps before you can start operating. Corporation registration time Canada can change depending on where you file and how you do it.</p>
+<p>Here’s what affects timing:</p>
+<ul>
+<li>Name search and approval</li>
+<li>Document review by the registry</li>
+<li>Method of filing (online or paper)</li>
+<li>Provincial vs federal process</li>
+</ul>
+<h3>Most Requested Incorporation-Related Services</h3>
+<p>Many people want online business incorporation Canada services because they’re easy to use. Some places even offer same-day incorporation Canada options. But keep in mind: no one can promise same-day approval or instant certificates. Usually, the incorporation certificate processing time is from a few hours up to several business days after your filing gets accepted.</p>
+<p>Here are some popular services:</p>
+<ul>
+<li>Quick NUANS report creation</li>
+<li>Online preparation of articles of incorporation</li>
+<li><a href="https://opencorporationfor35.ca/address-service-100/">Registered office address setup</a></li>
+<li>Corporate minute book service</li>
+</ul>
+<p>These help speed things up but don’t change official government timelines.</p>
+<h3>Contact Information and Support Channels</h3>
+<p>If you wonder how long to incorporate a business or have questions, <a href="https://opencorporationfor35.ca/contact-us/">Open Corporation for $35 offers free CPA advice</a> fast — usually within one business day. You can call them at 647‑212‑9559 or email info@gondaliyacpa.ca. They work weekdays and weekends from 9:00 AM to 8:30 PM. Gondaliya CPA keeps prices clear with no hidden fees.</p>
+<h3>Related Links to Government Resources and Corporate Acts</h3>
+<p>To check the Ontario incorporation processing time, visit the <a href="https://www.ontario.ca/page/ontario-business-registry">Ontario Business Registry</a>. Their service times update often; the latest info is from 2026.</p>
+<p>For federal filings, look at Corporations Canada’s site under online services at <a href="https://ised-isde.canada.ca/site/corporations-canada/en">Corporations Canada</a>.</p>
+<p>Key laws include:</p>
+<ul>
+<li>Business Corporations Act (Ontario) — for provincial incorporations</li>
+<li>Canada Business Corporations Act — for federal ones</li>
+</ul>
+<p>Always check these sites for exact timing since they set official deadlines.</p>
+<h3>Troubleshooting Common Issues During Incorporation</h3>
+<p>Sometimes things slow down because of problems like an expired NUANS report in Canada or corporate compliance errors caught by registries. Using a registered intermediary helps avoid these by making sure your papers are correct before you send them in.</p>
+<figure class="wp-block-table">
+<table>
+<thead><tr><th>Issue</th><th>Effect</th><th>How To Avoid</th></tr></thead>
+<tbody>
+<tr><td>Expired NUANS Report</td><td>Name gets rejected; filing delayed</td><td>Get a new NUANS within 90 days</td></tr>
+<tr><td>Articles rejected</td><td>You must fix errors; filing returned</td><td>Double-check before submitting</td></tr>
+<tr><td>Missing ISC register entry</td><td>Compliance problem; possible penalties</td><td>Submit ISC forms on time</td></tr>
+</tbody>
+</table>
+</figure>
+<p>Checking documents carefully lowers risks that make corporation registration time Canada longer than normal.</p>
+<h3>Booking Consultations and Next Steps for Ready-to-Launch Businesses</h3>
+<p>Choosing between DIY, an online filing service, or a CPA changes how smooth your incorporation will be. DIY can cause mistakes that slow things down. Online services are handy but differ in support quality. CPAs give expert help but cost more.</p>
+<p>Think about this when moving forward:</p>
+<ul>
+<li>Know your situation—non-residents or special industries often need pros.</li>
+<li><a href="https://gondaliyacpa.ca/consultation/">Book a consultation early</a> to learn about timing based on your case.</li>
+<li>Get all documents ready before filing.</li>
+<li>Use trusted providers who know Ontario and federal rules well.</li>
+<li>Plan what happens after getting your certificate, like issuing shares or opening bank accounts—with help if needed.</li>
+</ul>
+<p>Open Corporation for $35 helps clients step-by-step, but remember final approval is up to government offices.</p>
+<p>Sharad Gondaliya, CPA (Canada &amp; USA), has helped hundreds of Canadian business owners over 10+ years.</p>
+<p style="font-size:13.5px;color:#5a6b7b;">Published: October 27, 2026 — Last updated: October 27, 2026</p>
+
+<h2>Frequently Asked Questions (FAQs)</h2>
+<div class="gcpa-numhead">
+<div class="num" style="background:#0f2a4a !important;color:#ffffff !important;">7</div>
+<h4 id="toc-faq" style="border:none;padding:0;margin:0;">Incorporation Time FAQ</h4>
+<span class="gcpa-pill teal">FAQ</span>
+</div>
+<div class="gcpa-faq" id="faq-main">
+<details><summary>What is same-day incorporation Canada and is it guaranteed?<span class="pl">+</span></summary>
+<div class="ans"><p>Same-day incorporation Canada is a service some providers advertise for fast business setup. However, official government approval and certificate issuance depend on registry processing times. No one can guarantee same-day results.</p></div></details>
+<details><summary>How long does incorporation certificate processing time typically take?<span class="pl">+</span></summary>
+<div class="ans"><p>Incorporation certificate processing time varies, but complete online filings are usually processed the same day and mail filings can take up to 10 business days, depending on federal or provincial registry workloads and accuracy of your application.</p></div></details>
+<details><summary>When will I receive my CRA business number after incorporation?<span class="pl">+</span></summary>
+<div class="ans"><p>The CRA business number usually issues within 1 to 3 business days after your corporation registration is confirmed by the government.</p></div></details>
+<details><summary>Are there specialized incorporation services Canada-wide?<span class="pl">+</span></summary>
+<div class="ans"><p>Yes, services include name reservation, NUANS report provision, online filing, and post-incorporation compliance help to streamline the process.</p></div></details>
+<details><summary>What is the role of the Ontario Business Registry in incorporation?<span class="pl">+</span></summary>
+<div class="ans"><p>Ontario Business Registry handles provincial filings online. It processes applications and issues certificates, usually the same day for complete online filings.</p></div></details>
+<details><summary>How does Corporations Canada affect incorporation timing?<span class="pl">+</span></summary>
+<div class="ans"><p>Corporations Canada manages federal incorporations with complete online filings typically processed the same day, often immediately, depending on workload.</p></div></details>
+<details><summary>What is a NUANS report Canada and why is it important?<span class="pl">+</span></summary>
+<div class="ans"><p>A NUANS report compares your proposed company name against existing names and trademarks. It ensures uniqueness and prevents name conflicts that delay incorporation.</p></div></details>
+<details><summary>How soon is a business number issued in Canada after incorporating?<span class="pl">+</span></summary>
+<div class="ans"><p>A business number issues soon after registration confirmation, generally within three business days, enabling tax and payroll account setup.</p></div></details>
+<details><summary>What corporate compliance Canada requirements affect post-incorporation?<span class="pl">+</span></summary>
+<div class="ans"><p>You must file annual returns, update director information, maintain corporate records, and comply with ISC filing rules to stay compliant.</p></div></details>
+<details><summary>Who is a registered intermediary and how do they help?<span class="pl">+</span></summary>
+<div class="ans"><p>A registered intermediary files documents on your behalf ensuring accuracy and completeness. This reduces errors and speeds up processing.</p></div></details>
+<details><summary>What is ISC filing Canada about?<span class="pl">+</span></summary>
+<div class="ans"><p>ISC (Individuals with Significant Control) filing involves reporting persons who control or influence the corporation. Federal corporations file it at incorporation, with each annual return, and within 15 days of a change; Ontario corporations keep the register at their records office.</p></div></details>
+<details><summary>Why are corporate governance documents crucial for incorporation?<span class="pl">+</span></summary>
+<div class="ans"><p>These documents set rules for company management including share structure, director roles, and voting rights. They ensure legal compliance.</p></div></details>
+<details><summary>How can a business compliance calendar help new corporations?<span class="pl">+</span></summary>
+<div class="ans"><p>A compliance calendar tracks deadlines for filings, reports, and renewals. It prevents missed deadlines that can cause penalties or delays in operations.</p></div></details>
+<details><summary>What licensing should be considered after incorporation in Canada?<span class="pl">+</span></summary>
+<div class="ans"><p>Depending on your industry and location, you may need municipal licenses or permits to operate legally post-incorporation.</p></div></details>
+<details><summary>Is extra-provincial registration Canada mandatory after federal incorporation?<span class="pl">+</span></summary>
+<div class="ans"><p>Yes, in most provinces. If you incorporate federally and operate in a province like Alberta, you must register extra-provincially to legally conduct business there; in Ontario, a federal corporation files an initial return instead.</p></div></details>
+</div>
+<div class="gcpa-callout red">
+<span class="co-tag">Risk Warning</span>
+<p><strong>Risk Warning:</strong> No provider, including us, can promise same-day approval. Please do not book a bank appointment or sign a lease in the corporation's name until you hold the certificate.</p>
+</div>
+
+<h2>Additional Key Points on Incorporation Services &amp; Compliance</h2>
+<div class="gcpa-numhead">
+<div class="num" style="background:#0f2a4a !important;color:#ffffff !important;">8</div>
+<h4 id="toc-points" style="border:none;padding:0;margin:0;">Key Points and Quick Reference</h4>
+<span class="gcpa-pill gold">At a Glance</span>
+</div>
+<ul>
+<li>Same-day incorporation Canada depends solely on government registry timelines; no guaranteed instant approval exists.</li>
+<li>Incorporation certificate processing time varies with filing method: online filings are fastest; mail takes longer.</li>
+<li>CRA business number issuance occurs shortly after successful government registration confirmation.</li>
+<li>Ontario Business Registry offers digital-first service for provincial incorporations with varying review periods based on workload.</li>
+<li>Corporations Canada processes federal incorporations using automated systems aiming for efficient turnaround times.</li>
+<li>NUANS report Canada validity lasts 90 days; expired reports require reapplication delaying name approval steps.</li>
+<li>Corporate compliance Canada requires timely filing of <a href="https://opencorporationfor35.ca/annual-return-filing/">annual returns</a>, director updates, ISC filings, and record keeping.</li>
+<li>Registered intermediaries ensure document accuracy which reduces errors that prolong corporation registration time Canada-wide.</li>
+<li>ISC filing Canada increases transparency by reporting individuals with significant control; it’s a mandatory ongoing requirement.</li>
+<li>Corporate governance documents define company structure ensuring regulatory adherence from day one onward.</li>
+<li>Using a business compliance calendar helps monitor critical dates like return deadlines or fee payments avoiding penalties.</li>
+<li>Business licensing after incorporation depends on your sector; verify required permits before starting operations legally.</li>
+<li>Extra-provincial registration Canada enables federally incorporated businesses to operate provincially under local laws effectively.</li>
+</ul>
+<p>For expert assistance from Open Corporation for $35 with any of these steps or questions, contact us at 647‑212‑9559 or info@gondaliyacpa.ca</p>
+<div class="gcpa-pillhead"><h4 style="border:none;padding:0;margin:0;">Quick Answers: Key Numbers at a Glance</h4><span class="gcpa-pill gold">At a Glance</span></div>
+<ul>
+<li><strong>Complete online filing, federal or Ontario:</strong> Usually the same day</li>
+<li><strong>Federal mail filing:</strong> Up to 10 business days, plus mail time</li>
+<li><strong>NUANS validity:</strong> 90 days</li>
+<li><strong>Government fees:</strong> $200 federal, $300 Ontario</li>
+<li><strong>CRA business number:</strong> Usually 1 to 3 business days</li>
+<li><strong>Bank account:</strong> Usually 3 to 7 business days</li>
+<li><strong>Federal annual return:</strong> Within 60 days after the anniversary date</li>
+<li><strong>Ontario annual return:</strong> Within six months after year-end</li>
+<li><strong>Our fee:</strong> $35 including HST, plus government fees</li>
+</ul>
+<div class="gcpa-pillhead"><h4 style="border:none;padding:0;margin:0;">Who This Is For / Not For</h4><span class="gcpa-pill teal">Fit Check</span></div>
+<ul>
+<li><strong>For:</strong> Founders planning a launch date who want to know how long federal or Ontario incorporation takes, and what has to happen before they can bank and invoice.</li>
+<li><strong>Not For:</strong> Anyone who needs a guaranteed same-day certificate, since only the registry controls approval.</li>
+</ul>
+<div class="gcpa-callout green">
+<span class="co-tag">Verdict</span>
+<p>A complete online filing with Corporations Canada or the Ontario Business Registry usually comes back the same day. What takes longer is everything around it: a name that needs fixing, director details that are incomplete, and the CRA accounts and bank account after the certificate. Get the name and the details right before you file, and plan for the bank account to take about a week after that.</p>
+</div>
+<div class="gcpa-callout blue">
+<span class="co-tag">2026 Update</span>
+<p><strong>2026 Update &mdash; what is current:</strong> This article reflects rules current to 2026. Government fees are $200 federally and $300 in Ontario. Complete online filings through Corporations Canada and the Ontario Business Registry are usually processed the same day, and NUANS reports remain valid for 90 days. Federal corporations file their individuals with significant control information with Corporations Canada at incorporation and with each annual return, and report changes within 15 days. Federal annual returns are due within 60 days after the anniversary date, and Ontario annual returns within six months after year-end. Please confirm current service standards on the registry sites before you plan a launch date around them.</p>
+</div>
+<h5 style="color:#15355c;margin:24px 0 8px;">Incorporation Timing Readiness Check</h5>
+<p>This quick self-check flags what could slow your incorporation down. Please answer the six questions below.</p>
+<div id="ocf-chk">
+  <style>
+    #ocf-chk{--n:#0f2a4a;--n2:#15355c;--bl:#1c6dd0;--tl:#0c8f8f;--gd:#c9991f;--rd:#c0392b;--ink:#1d2733;--mut:#5a6b7b;--ln:#d8e0e8;--alt:#f5f8fb;
+      border:1px solid var(--ln);border-radius:14px;overflow:hidden;background:#fff;box-shadow:0 10px 30px rgba(15,42,74,.08);font-family:inherit;color:var(--ink);margin:24px 0;}
+    #ocf-chk *{box-sizing:border-box;}
+    #ocf-chk .s-head{background:linear-gradient(135deg,var(--n),var(--n2));color:#fff;padding:18px 22px;}
+    #ocf-chk .s-head h5{margin:0;font-size:19px;font-weight:700;color:#fff!important;}
+    #ocf-chk .s-head p{margin:4px 0 0;font-size:13px;color:#cfe2f8!important;}
+    #ocf-chk .s-body{padding:20px 22px;}
+    #ocf-chk .s-q{padding:13px 0;border-bottom:1px solid var(--ln);display:flex;justify-content:space-between;align-items:center;gap:14px;}
+    #ocf-chk .s-q:first-child{padding-top:2px;}
+    #ocf-chk .s-q span.s-lab{font-weight:600;font-size:14.5px;color:var(--n);}
+    #ocf-chk .s-seg{display:inline-flex;border:1px solid var(--ln);border-radius:10px;overflow:hidden;flex:0 0 auto;}
+    #ocf-chk .s-seg label{cursor:pointer;padding:8px 18px;font-size:14px;font-weight:600;color:var(--mut);background:var(--alt);transition:.15s;user-select:none;}
+    #ocf-chk .s-seg label+label{border-left:1px solid var(--ln);}
+    #ocf-chk .s-seg input{position:absolute;opacity:0;width:0;height:0;}
+    #ocf-chk .s-seg input:checked+label{background:var(--n);color:#fff!important;}
+    #ocf-chk .s-go{margin-top:18px;width:100%;border:none;border-radius:11px;padding:14px 18px;font-size:15.5px;font-weight:700;color:#fff!important;cursor:pointer;background:linear-gradient(135deg,var(--bl),var(--tl));font-family:inherit;}
+    #ocf-chk .s-go:hover{filter:brightness(1.05);}
+    #ocf-chk .s-msg{display:none;margin-top:12px;font-size:13.5px;color:var(--rd);font-weight:600;}
+    #ocf-chk .s-out{display:none;margin-top:18px;border-radius:12px;border:1px solid var(--ln);overflow:hidden;}
+    #ocf-chk .s-out .s-status{padding:14px 18px;font-weight:700;font-size:16px;color:#fff!important;background:linear-gradient(135deg,var(--n),var(--n2));}
+    #ocf-chk .s-out .s-inner{padding:16px 18px;background:var(--alt);}
+    #ocf-chk .s-row{font-size:14.5px;margin:0 0 10px;line-height:1.5;}
+    #ocf-chk .s-count{display:inline-block;background:#fff;border:1px solid var(--ln);border-radius:9px;padding:8px 14px;font-weight:700;color:var(--n);font-size:14.5px;}
+    #ocf-chk .s-list{margin:8px 0 0;padding-left:18px;}
+    #ocf-chk .s-list li{font-size:13.5px;color:var(--ink);margin:4px 0;border:none;padding:0 0 0 4px;}
+    #ocf-chk .s-list li::before{display:none;}
+    #ocf-chk .s-cta{display:inline-block;margin-top:14px;background:var(--gd);color:#fff!important;font-weight:700;font-size:14.5px;text-decoration:none;padding:11px 20px;border-radius:10px;}
+    #ocf-chk .s-note{font-size:12.5px;color:var(--mut);margin:12px 0 0;}
+    @media(max-width:560px){#ocf-chk .s-q{flex-direction:column;align-items:flex-start;gap:8px;}}
+  </style>
+  <div class="s-head" style="background:linear-gradient(135deg,#0f2a4a,#15355c) !important;">
+    <h5>Incorporation Timing Readiness Check</h5>
+    <p>Six quick questions. No tax calculation, no figure quoted.</p>
+  </div>
+  <div class="s-body">
+    <div class="s-q" data-flag="0" data-msg="A current NUANS report, or choosing a numbered company, before you file"><span class="s-lab">1. Do you have a NUANS report under 90 days old, or are you using a numbered company?</span>
+      <span class="s-seg"><input type="radio" id="c-a-y" name="c-a" value="1"><label for="c-a-y">Yes</label><input type="radio" id="c-a-n" name="c-a" value="0"><label for="c-a-n">No</label></span></div>
+    <div class="s-q" data-flag="0" data-msg="Choosing federal or Ontario incorporation, since the registry, fees and director rules differ"><span class="s-lab">2. Have you decided between federal and Ontario incorporation?</span>
+      <span class="s-seg"><input type="radio" id="c-b-y" name="c-b" value="1"><label for="c-b-y">Yes</label><input type="radio" id="c-b-n" name="c-b" value="0"><label for="c-b-n">No</label></span></div>
+    <div class="s-q" data-flag="0" data-msg="Full legal names and home addresses for every director, the most common cause of a returned filing"><span class="s-lab">3. Are every director's full legal name and home address ready?</span>
+      <span class="s-seg"><input type="radio" id="c-c-y" name="c-c" value="1"><label for="c-c-y">Yes</label><input type="radio" id="c-c-n" name="c-c" value="0"><label for="c-c-n">No</label></span></div>
+    <div class="s-q" data-flag="1" data-msg="A share structure review, since more than one class of shares takes longer to prepare"><span class="s-lab">4. Do you want more than one class of shares?</span>
+      <span class="s-seg"><input type="radio" id="c-d-y" name="c-d" value="1"><label for="c-d-y">Yes</label><input type="radio" id="c-d-n" name="c-d" value="0"><label for="c-d-n">No</label></span></div>
+    <div class="s-q" data-flag="1" data-msg="An Ontario initial return or extra-provincial registration in each other province where you do business"><span class="s-lab">5. Will the corporation do business in more than one province?</span>
+      <span class="s-seg"><input type="radio" id="c-e-y" name="c-e" value="1"><label for="c-e-y">Yes</label><input type="radio" id="c-e-n" name="c-e" value="0"><label for="c-e-n">No</label></span></div>
+    <div class="s-q" data-flag="1" data-msg="Lining up the CRA business number, GST/HST account and bank appointment right after the certificate"><span class="s-lab">6. Do you need a bank account or GST/HST number within a week of incorporating?</span>
+      <span class="s-seg"><input type="radio" id="c-f-y" name="c-f" value="1"><label for="c-f-y">Yes</label><input type="radio" id="c-f-n" name="c-f" value="0"><label for="c-f-n">No</label></span></div>
+    <button type="button" class="s-go" id="c-go">Check my readiness</button>
+    <div class="s-msg" id="c-msg">Please answer all six questions to continue.</div>
+    <div class="s-out" id="c-out">
+      <div class="s-status" id="c-status" style="background:linear-gradient(135deg,#0f2a4a,#15355c) !important;">Your profile</div>
+      <div class="s-inner">
+        <p class="s-row"><b>Points to work through:</b> <span class="s-count" id="c-count"></span></p>
+        <div id="c-listwrap" style="display:none;"><p class="s-row" style="margin-bottom:4px;"><b>Worth reviewing with us:</b></p><ul class="s-list" id="c-list"></ul></div>
+        <p class="s-row" id="c-clean" style="display:none;"><b>Nothing flagged.</b> The usual complications do not appear to apply to you.</p>
+        <a class="s-cta" href="https://gondaliyacpa.ca/consultation/">Book a free consultation</a>
+        <p class="s-note">This is a general prompt, not tax advice, and it does not calculate your tax. Your outcome depends on your full facts, so please book a free consultation.</p>
+      </div>
+    </div>
+  </div>
+  <script>
+  (function(){
+    var root=document.getElementById('ocf-chk');
+    root.querySelector('#c-go').addEventListener('click',function(){
+      var qs=root.querySelectorAll('.s-q'), items=[], missing=false;
+      qs.forEach(function(q){
+        var x=q.querySelector('input:checked');
+        if(!x){missing=true;return;}
+        if(x.value===q.getAttribute('data-flag')) items.push(q.getAttribute('data-msg'));
+      });
+      var msg=root.querySelector('#c-msg'), out=root.querySelector('#c-out');
+      if(missing){msg.style.display='block';out.style.display='none';return;}
+      msg.style.display='none';
+      var list=root.querySelector('#c-list'), lw=root.querySelector('#c-listwrap'), clean=root.querySelector('#c-clean');
+      root.querySelector('#c-count').textContent=items.length+' to work through';
+      list.innerHTML='';
+      if(items.length){lw.style.display='block';clean.style.display='none';items.forEach(function(t){var li=document.createElement('li');li.textContent=t;list.appendChild(li);});}
+      else{lw.style.display='none';clean.style.display='block';}
+      root.querySelector('#c-status').textContent = items.length>=3 ? 'Several points need attention' : (items.length>=1 ? 'A few points to work through' : 'A straightforward case');
+      out.style.display='block';
+    });
+  })();
+  </script>
+</div>
+<div class="gcpa-cta" style="background:linear-gradient(135deg,#0f2a4a 0%,#1c4a78 100%) !important;">
+<h4>Get your certificate without avoidable delays</h4>
+<p>Incorporation from $35 including HST plus government fees, with a free CPA consultation on your name, directors and jurisdiction before anything is filed. Please book a free consultation.</p>
+<div class="gcpa-trust"><span>1300+ 5-star Google reviews</span><span>Xero Partner Award Winner 2026</span><span>30-Day Money-Back Guarantee</span><span>60-Day Fee Matching</span></div>
+<div class="gcpa-btnrow"><a class="solid" href="https://gondaliyacpa.ca/consultation/">Book Free Consultation</a><a href="https://opencorporationfor35.ca/address-service-100/">Address Service</a><a href="https://opencorporationfor35.ca/contact-us/">Contact Us</a></div>
+</div>
+<h3 class="gcpa-closing" id="toc-closing">What to Send Us</h3>
+<p>Send us your preferred name or tell us you want a numbered company, whether you want federal or Ontario incorporation, each director's full legal name and home address, the share structure you want, and where the business will operate. That is enough for us to prepare your articles and tell you what timeline to expect. Please start on our <a href="https://opencorporationfor35.ca/incorporation-form/">incorporation form</a> or see every fee on our <a href="https://opencorporationfor35.ca/pricing/">pricing page</a>.</p>
+<div class="gcpa-author">
+<div class="ava" style="background:linear-gradient(135deg,#0f2a4a,#0c8f8f) !important;color:#ffffff !important;">SG</div>
+<div class="info">
+<h5>Sharad Gondaliya, CPA (Canada &amp; USA) — Founder &amp; Managing Director, Gondaliya CPA Professional Corporation</h5>
+<div class="role">Reviewed and fact-checked by Sharad Gondaliya, CPA (Canada &amp; USA)</div>
+<p style="font-size:14.5px;color:#15355c !important;font-weight:700;margin:0 0 8px;">Open Corporation for $35 is a department of Gondaliya CPA.</p>
+<p>We incorporate and support companies in all 13 provinces and territories, handling CRA registrations, corporate tax filing, bookkeeping, GST/HST, payroll and audit support. Verify our firm on the <a href="https://www.cpaontario.ca/protecting-the-public/directories/firm/gondaliya-5sqvmj">CPA Ontario public firm directory</a>, firm registration 61330051.</p>
+<p style="font-size:13.5px;color:#15355c !important;font-weight:700;margin-top:10px;">CPA Ontario | CPA USA (Washington &amp; Montana) | Xero Partner Award Winner 2026 | 1300+ 5-star Google reviews</p>
+</div>
+</div>
+<p style="font-size:13px;color:#5a6b7b;border-top:1px solid #e3e9f0;padding-top:16px;margin-top:8px;"><strong>Published:</strong> October 27, 2026 &nbsp;·&nbsp; <strong>Last updated:</strong> October 27, 2026</p>
+<p style="font-size:13px;color:#5a6b7b;"><strong>Editorial policy:</strong> Our content is prepared by our team and reviewed by Sharad Gondaliya, CPA, and we update it as registry fees, service standards and filing rules change.</p>
+<p style="font-size:13px;color:#5a6b7b;"><strong>Disclaimer:</strong> This article is educational information only and is not tax, legal, or financial advice. Gondaliya CPA Professional Corporation is a firm of Chartered Professional Accountants, not a law firm. Please consult a CPA before acting.</p>
+<p style="font-size:14.5px;color:#15355c;font-weight:700;border-top:2px solid #e3e9f0;padding-top:16px;margin-top:20px;">Open Corporation for $35 is a department of Gondaliya CPA.</p>
+<p style="font-size:13px;color:#5a6b7b;">Operated by WealthBamboo Inc. Parent firm Gondaliya CPA Professional Corporation, CPA Ontario firm registration 61330051. Xero Partner Award Winner 2026. 1300+ five-star Google reviews. 30-day money-back guarantee and 60-day fee-matching policy. Phone 647-212-9559, email info@gondaliyacpa.ca, open 9:00 AM to 8:30 PM Monday to Sunday. Payment by Interac e-Transfer to info@gondaliyacpa.ca only, security question "Not Applicable" as auto-deposit is enabled. Card is also accepted.</p>
+</div>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@graph": [{"@type": "BlogPosting", "@id": "https://opencorporationfor35.ca/how-long-does-incorporation-take-canada/#article", "headline": "How Long Does Incorporation Take in Canada?", "description": "How long federal and Ontario incorporation take in 2026, what slows a filing down, and the CRA, bank and annual filing steps that follow the certificate.", "datePublished": "2026-10-27", "dateModified": "2026-10-27", "author": {"@type": "Person", "name": "Sharad Gondaliya, CPA"}, "publisher": {"@type": "Organization", "name": "Open Corporation for $35", "description": "Open Corporation for $35 is a department of Gondaliya CPA.", "parentOrganization": {"@type": "AccountingService", "name": "Gondaliya CPA Professional Corporation", "identifier": "CPA Ontario Firm Registration 61330051"}}, "mainEntityOfPage": "https://opencorporationfor35.ca/how-long-does-incorporation-take-canada/"}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is same-day incorporation Canada and is it guaranteed?", "acceptedAnswer": {"@type": "Answer", "text": "Same-day incorporation Canada is a service some providers advertise for fast business setup. However, official government approval and certificate issuance depend on registry processing times. No one can guarantee same-day results."}}, {"@type": "Question", "name": "How long does incorporation certificate processing time typically take?", "acceptedAnswer": {"@type": "Answer", "text": "Incorporation certificate processing time varies, but complete online filings are usually processed the same day and mail filings can take up to 10 business days, depending on federal or provincial registry workloads and accuracy of your application."}}, {"@type": "Question", "name": "When will I receive my CRA business number after incorporation?", "acceptedAnswer": {"@type": "Answer", "text": "The CRA business number usually issues within 1 to 3 business days after your corporation registration is confirmed by the government."}}, {"@type": "Question", "name": "Are there specialized incorporation services Canada-wide?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, services include name reservation, NUANS report provision, online filing, and post-incorporation compliance help to streamline the process."}}, {"@type": "Question", "name": "What is the role of the Ontario Business Registry in incorporation?", "acceptedAnswer": {"@type": "Answer", "text": "Ontario Business Registry handles provincial filings online. It processes applications and issues certificates, usually the same day for complete online filings."}}, {"@type": "Question", "name": "How does Corporations Canada affect incorporation timing?", "acceptedAnswer": {"@type": "Answer", "text": "Corporations Canada manages federal incorporations with complete online filings typically processed the same day, often immediately, depending on workload."}}, {"@type": "Question", "name": "What is a NUANS report Canada and why is it important?", "acceptedAnswer": {"@type": "Answer", "text": "A NUANS report compares your proposed company name against existing names and trademarks. It ensures uniqueness and prevents name conflicts that delay incorporation."}}, {"@type": "Question", "name": "How soon is a business number issued in Canada after incorporating?", "acceptedAnswer": {"@type": "Answer", "text": "A business number issues soon after registration confirmation, generally within three business days, enabling tax and payroll account setup."}}, {"@type": "Question", "name": "What corporate compliance Canada requirements affect post-incorporation?", "acceptedAnswer": {"@type": "Answer", "text": "You must file annual returns, update director information, maintain corporate records, and comply with ISC filing rules to stay compliant."}}, {"@type": "Question", "name": "Who is a registered intermediary and how do they help?", "acceptedAnswer": {"@type": "Answer", "text": "A registered intermediary files documents on your behalf ensuring accuracy and completeness. This reduces errors and speeds up processing."}}, {"@type": "Question", "name": "What is ISC filing Canada about?", "acceptedAnswer": {"@type": "Answer", "text": "ISC (Individuals with Significant Control) filing involves reporting persons who control or influence the corporation. Federal corporations file it at incorporation, with each annual return, and within 15 days of a change; Ontario corporations keep the register at their records office."}}, {"@type": "Question", "name": "Why are corporate governance documents crucial for incorporation?", "acceptedAnswer": {"@type": "Answer", "text": "These documents set rules for company management including share structure, director roles, and voting rights. They ensure legal compliance."}}, {"@type": "Question", "name": "How can a business compliance calendar help new corporations?", "acceptedAnswer": {"@type": "Answer", "text": "A compliance calendar tracks deadlines for filings, reports, and renewals. It prevents missed deadlines that can cause penalties or delays in operations."}}, {"@type": "Question", "name": "What licensing should be considered after incorporation in Canada?", "acceptedAnswer": {"@type": "Answer", "text": "Depending on your industry and location, you may need municipal licenses or permits to operate legally post-incorporation."}}, {"@type": "Question", "name": "Is extra-provincial registration Canada mandatory after federal incorporation?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, in most provinces. If you incorporate federally and operate in a province like Alberta, you must register extra-provincially to legally conduct business there; in Ontario, a federal corporation files an initial return instead."}}]}]}
+</script>
