@@ -580,6 +580,9 @@ TOOLS = [
             'The complete guide to T2 Short eligibility'),
            (SITE + '/guides/t2-schedules-on-a-nil-return/',
             'T2 schedules on a nil return'),
+           # Family 7, live 2026-11-04. Plan line 1529 sets F7's anchor
+           # convention to the comparison title, so this is its H1 verbatim.
+           (SITE + '/compare/t2-short-vs-full-t2/', 'T2 Short vs Full T2'),
            (SITE + '/pricing/nil-t2-filing-cost/', 'Nil T2 filing cost')]),
 
  dict(

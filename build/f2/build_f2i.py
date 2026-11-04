@@ -78,7 +78,7 @@ import re as _re
 
 from build_f2 import (render, meta, yn, a, SITE, HUB, FORM, PRICE,
                       NOT_NIL, TOOL_DISCLAIMER)
-from build_f2b import tool, num, date, PICK, T, G, COST
+from build_f2b import tool, num, date, PICK, T, G, COST, CMP
 from build_f2c import MONEY_JS, QUAL, PRELUDE
 from build_f2f import BASE, RBASE
 from build_f2h import ORDER8, LINK_TITLE8, GUIDES_LIVE8
@@ -1599,9 +1599,23 @@ for t in TOOLS9:
         assert g in GUIDES_LIVE9, (
             '%s: links to /guides/%s/, which is not live' % (t['slug'], g))
 
+# Family 7 inbound links. Line 1529 of the plan puts F7's inbound minimum at
+# 3 and its anchor convention at the comparison title, so the anchor here is
+# the comparison page's own H1 verbatim, not a paraphrase. Only tools whose
+# subject IS the comparison carry one; a tool gets no F7 link by default.
+COMPARE9 = {
+ 't2-short-exclusion-checker': [(CMP + 't2-short-vs-full-t2/',
+                                 'T2 Short vs Full T2')],
+ 't2-short-ccpc-condition-checker': [(CMP + 't2-short-vs-full-t2/',
+                                      'T2 Short vs Full T2')],
+}
+for _s in COMPARE9:
+    assert _s in {t['slug'] for t in TOOLS9}, 'COMPARE9 names %s, not in batch' % _s
+
 for t in TOOLS9:
     rel = [(T + s + '/', LINK_TITLE9[s]) for s in SIBLINGS9[t['slug']]]
     rel += [(G + g + '/', ttl) for g, ttl in GUIDES9[t['slug']]]
+    rel += COMPARE9.get(t['slug'], [])
     rel.append((COST, 'Nil T2 filing cost'))
     t['related'] = rel
 

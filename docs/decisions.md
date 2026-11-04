@@ -6627,3 +6627,58 @@ Gondaliya with the template.**
 - **Three inbound links** are required per line 1529 and none exist yet. The
   natural sources are the T2 Short eligibility, exclusion and CCPC checkers,
   which would need a link added when this publishes.
+
+## 2026-11-04 — Family 7 opens: `/compare/t2-short-vs-full-t2/` is live
+
+Published as ID 1670, 18,578 bytes, byte-identical to the gated
+`build/f7/t2-short-vs-full-t2.html`. `cnf_family` set to term 20 (f7). No
+`cnf_competitor` term: this page names no competitor, so tagging it with one
+would misfile it.
+
+### The `/compare/` base is confirmed
+
+It was unconfirmed when the page was built — the plan says `/compare/`, but the
+CPT registration had never been read, and Appendix A spells the slug three
+different ways. The create call returned
+`https://corpnilfilingfor300.ca/compare/t2-short-vs-full-t2/`, so the base
+resolves as the plan states and the remaining 19 Family 7 URLs can be built
+against it without a second check.
+
+### `cnf_primary_keyword` does not exist on this post type
+
+The REST API accepted every other meta key and reported
+`cnf_primary_keyword` as not registered with `show_in_rest` for
+`nil_comparison`. It persists on the calculator post type, so the registration
+is per-type rather than site-wide. The focus keyword is carried by
+`rank_math_focus_keyword` alone on comparison pages. **Worth registering for
+`nil_comparison` before the other 19 pages publish, so the family is
+queryable by keyword the way Family 2 is**; nothing on the page depends on it
+today.
+
+### The three inbound links are in place
+
+Line 1529 puts Family 7's inbound minimum at 3 and its anchor convention at
+the comparison title, so all three use the page's H1 verbatim, "T2 Short vs
+Full T2", rather than a paraphrase:
+
+| Tool | ID | Bytes before | Bytes after |
+|---|---|---|---|
+| `t2-short-eligibility-checker` | 1122 | 28,299 | 28,402 |
+| `t2-short-exclusion-checker` | 1566 | 29,585 | 29,688 |
+| `t2-short-ccpc-condition-checker` | 1570 | 27,287 | 27,390 |
+
+Each grew by the same 103 bytes and each live figure matches its local rebuild
+exactly. Outbound counts are now 10, 11 and 11 against the cap of 20.
+
+The builders were changed first, so local still reproduces live: `CMP` added to
+`build/f2/build_f2b.py`, a `COMPARE9` map in `build/f2/build_f2i.py` (which
+asserts every slug it names is in that batch, and gives a tool no Family 7 link
+by default), and the tuple added to tool 2's `related` list in
+`build/f2/build_f2.py`. `gate_f2_all.py` is clear on all 80 tool pages and
+`gate_rank_math.py` passes at 222 items.
+
+### Still open from the build, unchanged by this publish
+
+The price-cell rule for the other 13 concept pages, the 6 brand pages blocked
+on dated competitor prices, and the adapted disclosure wording all stand as
+logged above. The disclosure goes to Sharad Gondaliya with the family template.

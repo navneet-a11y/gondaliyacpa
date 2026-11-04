@@ -30,6 +30,7 @@ from build_f2 import (render, meta, yn, a, DATE_JS, SITE, HUB, FORM, PRICE,
 T = HUB  # tools base
 G = SITE + '/guides/'
 COST = SITE + '/pricing/nil-t2-filing-cost/'
+CMP  = SITE + '/compare/'  # Family 7, live from 2026-11-04
 
 
 def out_box(msg):
