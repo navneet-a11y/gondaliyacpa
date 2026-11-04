@@ -7078,3 +7078,64 @@ Needing a pricing rule first: `/dissolving-vs-filing-nil-every-year/`,
 `/nil-return-vs-final-return/` is done, and
 `/voluntary-disclosure-vs-plain-late-filing/` needs a view on whether the
 disclosure route is described at all.
+
+## 2026-11-04 — Family 7 page 6: `/compare/federal-corporation-vs-ontario-corporation-nil-filing/`
+
+ID 1715, 21,581 bytes, byte-identical to the gated build, `cnf_family` 20,
+fifteen FAQ items. Family 7 is 6 of 20.
+
+Both columns are our own fee because the T2 is the same federal return for
+either corporation, which is the point of the page: what changes is the
+registry and the annual return beside it, and that annual return is not part
+of this service.
+
+### Claims taken from the live guides
+
+`/guides/provincial-and-federal-annual-returns/` supplies the Ontario annual
+return's contents (registered office, directors, officers, no tax and no
+payment), the move to the Ontario Business Registry in October 2021, the
+Corporations Canada annual return, the rule that a federally incorporated
+corporation operating in Ontario files both, and the sentence this page is
+built around: filing the T2 does not satisfy an annual return, and filing an
+annual return does not satisfy the T2.
+`/guides/quebec-co17-and-alberta-at1/` supplies the permanent-establishment
+test and the hard rule 8 statement that CO-17 and AT1 are separate returns
+not covered by the fee, which this page carries because a federal
+corporation operating in Quebec is exactly the case a reader might get wrong.
+
+### The Corporations Canada fee is deliberately not on the page
+
+The annual returns guide states that fee as a dollar amount. It is not
+repeated here, because `gate.py` allows only $300.00 and $350.00 anywhere on
+an F7 page. That allowlist exists so a stray price cannot appear on a
+comparison page, and **widening a safety rule so a page can say what I want
+it to say is the wrong way round**. The page names the registry that sets the
+fee and links to the guide that carries the figure. This is the second time
+the rule has bitten (page 4 and a share capital figure) and both times the
+page was better for working around it rather than through it.
+
+### Inbound links
+
+| Tool | ID | Before | After |
+|---|---|---|---|
+| `annual-return-vs-tax-return-checker` | 1524 | 28,877 | 29,037 |
+| `provincial-return-requirement-checker` | 1502 | 27,590 | 27,750 |
+| `federal-annual-return-anniversary-calculator` | 1180 | 23,760 | 23,920 |
+
+Each matched its local build beforehand and each grew by the same 160 bytes.
+All three builders already carried a `COMPARE_F7` map, so this was three
+entries rather than three patches. `gate_f2_all.py` clear on 80 pages,
+`gate_rank_math.py` passes at 227 items, cache cleared for all four IDs.
+
+### Family 7 position: 6 of 20, and the easy ones are nearly gone
+
+Buildable with no input left: `/nil-t2-vs-zero-return/` and
+`/paper-t2-vs-efile-t2/` (H1 as Electronic Filing, Appendix A slug kept).
+After those two, **every remaining URL needs a decision or data**: the 6
+brand pages wait on dated competitor prices, and
+`/dissolving-vs-filing-nil-every-year/`, `/diy-vs-cpa-nil-t2/`,
+`/nil-t2-vs-nil-gst-hst-return/`, `/ontario-annual-return-vs-t2/`,
+`/nil-t2-vs-ontario-annual-return-vs-federal-annual-return/`,
+`/voluntary-disclosure-vs-plain-late-filing/`, `/nil-t2-vs-loss-t2/` and
+`/accountant-vs-online-nil-t2-filing/` each need a ruling on what goes in the
+second price column for work this service does not sell.
