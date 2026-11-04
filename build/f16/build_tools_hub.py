@@ -29,6 +29,13 @@ never hand-typed, and the groups do not change that.
 The build asserts the cards match it exactly, so the next tool published
 without a card fails this script instead of going quietly unlinked. That is
 the check whose absence let this gap open in the first place.
+
+NOVEMBER 4, 2026: EIGHTY TO EIGHTY-FIVE
+
+Batch 11 added five tools on signing, transmission and the scope of the fee.
+They do not belong in any of the ten groups, so they sit in an eleventh,
+"Signing, Transmission and What the Fee Covers". The assert above is what
+caught that they needed cards at all.
 """
 import io, json, os
 
@@ -36,7 +43,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 SITE = 'https://corpnilfilingfor300.ca'
 HUB = SITE + '/tools/'
 FORM = SITE + '/form/'
-TODAY, ISO = 'October 30, 2026', '2026-10-30'
+TODAY, ISO = 'November 4, 2026', '2026-11-04'
 PRICE = '$300.00 plus HST per tax year'
 TITLE = 'Nil T2 Filing Tools and Calculators'
 PAGE_TITLE = 'Nil T2 Filing Tools and Calculators for Canadian Corporations'
@@ -352,6 +359,25 @@ GROUPS = [
    'Director Liability Exposure Checker',
    'Which amounts can be assessed against a director personally, and which '
    'cannot reach past the corporation.'),
+ ]),
+ ('Signing, Transmission and What the Fee Covers', [
+  ('t183corp-retention-expiry-calculator', 'T183CORP Retention Calculator',
+   'A signed Form T183CORP is kept for six years. Enter the transmission date '
+   'to date the end of that period, year by year.'),
+  ('cra-confirmation-due-date-calculator',
+   'CRA Confirmation Due Date Calculator',
+   'Your CRA confirmation is emailed within 3 business days. Which three days '
+   'those are, with Ontario statutory holidays excluded.'),
+  ('what-the-nil-t2-fee-covers-checker', 'What the Nil T2 Fee Covers',
+   'Six answers name which of the registry, provincial and account filings '
+   'sit outside the fee, and what each one is.'),
+  ('nil-t2-filing-progress-checker', 'Nil T2 Filing Progress Checker',
+   'Where your return has got to in the sequence, and what happens next, from '
+   'payment through to the CRA confirmation.'),
+  ('multi-year-signing-requirement-checker',
+   'Multi-Year Signing Requirement Checker',
+   'Each tax year carries its own Form T183CORP. How many signatures and '
+   'confirmations a run of years produces.'),
  ]),
 ]
 

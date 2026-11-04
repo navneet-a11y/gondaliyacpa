@@ -1109,7 +1109,10 @@ TOOLS7 += [
     'date and the hour, minute and second are recorded on the server in '
     'Eastern Time. It is never backdated. The timestamp is written as you '
     'sign, which is what makes the sequence demonstrable rather than '
-    'asserted.</p>'),
+    'asserted. The '
+    + a(T + 'nil-t2-filing-progress-checker/',
+        'nil T2 filing progress checker')
+    + ' places the signature in the sequence either side of it.</p>'),
    ('kept', 'The Firm Keeps It for Six Years and Does Not Send It',
     '<p>The signed form stays with Gondaliya CPA Professional Corporation for '
     'six years. It is not sent to the Canada Revenue Agency unless the Canada '
@@ -1120,7 +1123,13 @@ TOOLS7 += [
     'asked for. The '
     + a(G + 't183corp-signing-and-transmission/',
         'guide to T183CORP signing and transmission')
-    + ' sets out the whole sequence.</p>'),
+    + ' sets out the whole sequence. The '
+    + a(T + 't183corp-retention-expiry-calculator/',
+        'T183CORP retention calculator')
+    + ' dates the end of that six-year period, and the '
+    + a(T + 'multi-year-signing-requirement-checker/',
+        'multi-year signing requirement checker')
+    + ' counts the forms a run of unfiled years needs.</p>'),
   ],
   faq=[
    ('Who can sign Form T183CORP?',
@@ -1712,6 +1721,15 @@ GUIDES7 = {
 
 _ORDER = set(ORDER7)
 
+# Tools published after this batch are legitimate body-link targets: batch 11
+# wired three inbound links into this page, and ORDER7 ends at batch 7. The
+# live set is read from the file the /tools/ hub builds from, so a typo still
+# fails here rather than shipping a 404.
+_TOOLS_LIVE_G = set(json.load(io.open(
+    os.path.join(HERE, '..', 'f16', 'tools-hub-children.json'),
+    encoding='utf-8'))['slugs'])
+_LINKABLE = _ORDER | _TOOLS_LIVE_G
+
 assert len(TOOLS7) == 10, '%d tools in batch 7' % len(TOOLS7)
 assert len({t['slug'] for t in TOOLS7}) == 10, 'duplicate slug in the batch'
 
@@ -1807,7 +1825,7 @@ assert set(GUIDES7) == {t['slug'] for t in TOOLS7}, 'GUIDES7 mismatch'
 for t in TOOLS7:
     _all = ' '.join(b for _, _, b in t['sections']) + t['form']
     for s in set(_re.findall(r'/tools/([a-z0-9-]+)/', _all)):
-        assert s in _ORDER, (
+        assert s in _LINKABLE, (
             '%s: body links to /tools/%s/, which does not exist'
             % (t['slug'], s))
     for g in set(_re.findall(r'/guides/([a-z0-9-]+)/', _all)):

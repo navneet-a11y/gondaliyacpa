@@ -696,7 +696,10 @@ TOOLS4 = [
     'Business Number and the fiscal year dates for the year being filed, and '
     'it needs Form T183CORP signed before the return is transmitted.</p>\n'
     '<p>Everything else on the list depends on what the corporation holds and '
-    'whether this is its first return.</p>'),
+    'whether this is its first return. The '
+    + a(T + 'nil-t2-filing-progress-checker/',
+        'nil T2 filing progress checker')
+    + ' names what happens either side of the signing.</p>'),
    ('gifiwhy', 'Why GIFI Turns Up on a Nil Return',
     '<p>The most misunderstood part of a nil return is that it still carries '
     'GIFI schedules. Any one of share capital, cash, a shareholder loan, an '
@@ -708,7 +711,10 @@ TOOLS4 = [
     '<p>No audited financial statements. No bookkeeping for a year with no '
     'transactions. No appointment. The whole return is built from the answers '
     'on the form and the schedules the corporation&rsquo;s own position '
-    'requires, and all of it is inside ' + PRICE + '.</p>'),
+    'requires, and all of it is inside ' + PRICE + '. The '
+    + a(T + 'what-the-nil-t2-fee-covers-checker/',
+        'checker for what the nil T2 fee covers')
+    + ' names the registry and provincial filings that sit outside it.</p>'),
    ('carries', 'What Each Item on the Checklist Carries',
     '<p>The list the tool produces is short, and every item on it is there for '
     'a reason. This is what each one is and what puts it on the list.</p>\n'

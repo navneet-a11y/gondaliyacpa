@@ -84,9 +84,10 @@ assert GUIDES_LIVE9 <= GUIDES_LIVE10, 'batch 9 linked a guide no longer listed'
 _TOOLS_JSON = os.path.join(HERE, '..', 'f16', 'tools-hub-children.json')
 TOOLS_LIVE = set(json.load(io.open(_TOOLS_JSON, encoding='utf-8'))['slugs'])
 # The file holds whatever is live, so this builder has to run correctly both
-# before this batch publishes (seventy live) and after (eighty). Checking the
-# base set rather than the total means a rebuild after publishing still fails
-# if some OTHER tool has gone missing from the hub's children.
+# before this batch publishes (seventy live) and after (eighty, and eighty-five
+# once batch 11 landed). So the check is a subset test against the batches 1 to
+# 9 order, not a total: a rebuild still fails if some OTHER tool has gone
+# missing from the hub's children, and later batches do not break it.
 _THIS_BATCH = {
  'efile-rejection-reason-checker', 'expenses-only-year-checker',
  'never-traded-corporation-checker',
@@ -97,9 +98,13 @@ _THIS_BATCH = {
  'acquired-corporation-unfiled-years-checker',
  'sole-shareholder-corporation-checker',
  'business-number-versus-corporation-number-checker'}
-assert len(TOOLS_LIVE - _THIS_BATCH) == 70, (
-    'expected the seventy tools live before this batch, got %d'
-    % len(TOOLS_LIVE - _THIS_BATCH))
+assert len(set(ORDER9)) == 70, (
+    'ORDER9 should be the seventy tools of batches 1 to 9, got %d'
+    % len(set(ORDER9)))
+_gone = set(ORDER9) - TOOLS_LIVE
+assert not _gone, (
+    'tools live before this batch have gone missing from the hub children: %s'
+    % sorted(_gone))
 PUBLISHED = _THIS_BATCH <= TOOLS_LIVE
 
 
@@ -230,7 +235,11 @@ T71 = dict(
    'corporation&rsquo;s account.</p>\n'
    '<p>That is the reason a rejection is worth clearing rather than leaving. '
    'It reads like a setback and it is really an unfiled year with a note '
-   'attached saying which field to fix.</p>'),
+   'attached saying which field to fix. A refused transmission also produces '
+   'no CRA confirmation at all, and the '
+   + a(T + 'cra-confirmation-due-date-calculator/',
+       'CRA confirmation due date calculator')
+   + ' dates the one an accepted transmission does produce.</p>'),
   ('the-four-causes', 'The Four Identifier Mismatches',
    _tbl(['Cause', 'Where the right value comes from', 'What clears it'],
         [['The legal name does not match the register',
@@ -1652,6 +1661,11 @@ GUIDES10 = {
 }
 
 _ORDER = set(ORDER10)
+# ORDER10 ends at batch 10, and batch 11 wired an inbound link into this
+# batch's rejection checker. A tool live on the site is a real target, so the
+# linkable set is ORDER10 plus whatever the hub's children file holds. The
+# published check below is unchanged and still does the real work.
+_LINKABLE = _ORDER | TOOLS_LIVE
 _NEW = {t['slug'] for t in TOOLS10}
 for t in TOOLS10:
     assert t['slug'] in _THIS_BATCH, (
@@ -1688,7 +1702,7 @@ for t in TOOLS10:
     _all = (' '.join(b for _, _, b in t['sections']) + t['form']
             + ' '.join(q + aa for q, aa in t['faq']) + t['js'])
     for s in set(_re.findall(r'/tools/([a-z0-9-]+)/', _all)):
-        assert s in _ORDER, (
+        assert s in _LINKABLE, (
             '%s: links to /tools/%s/, which does not exist' % (t['slug'], s))
         assert s in TOOLS_LIVE or s in _NEW, (
             '%s: links to /tools/%s/, which is not published' % (t['slug'], s))

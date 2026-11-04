@@ -7349,3 +7349,106 @@ live figure matches its build exactly:
 | `federal-corporation-vs-ontario-corporation-nil-filing` | 1715 | 21,784 | 21,618 |
 
 Each -166 bytes. Cache cleared for all six.
+
+## 2026-11-04 -- Family 2 batch 11: calculators 81 to 85
+
+Navneet: "create next calculator pages 5". Five more tools, taking Family 2 to
+**85 of the planned 150**, published as IDs 1757 and 1761 to 1764.
+
+| Tool | ID | Bytes |
+|---|---|---|
+| `t183corp-retention-expiry-calculator` | 1757 | 25,135 |
+| `cra-confirmation-due-date-calculator` | 1761 | 25,202 |
+| `what-the-nil-t2-fee-covers-checker` | 1762 | 29,039 |
+| `nil-t2-filing-progress-checker` | 1763 | 26,863 |
+| `multi-year-signing-requirement-checker` | 1764 | 25,355 |
+
+All five are outside Appendix A, on the same footing as batches 4 to 10. They
+cover signing, transmission and the scope of the fee, which the first eighty
+touched only in passing: how long a signed Form T183CORP is held, when the CRA
+confirmation is due, what the fee does and does not buy, where a return has
+got to, and how many signatures a run of unfiled years needs.
+
+Gates: `gate10.py` clear on each, `gate_f2_all.py` clear across **85** pages,
+`test_f2k_dom.js` **21 passed, 0 failed** (including a leap-day retention
+2024-02-29 to 2030-02-28, a Saturday transmission, and a Christmas and Boxing
+Day 2026 skip). Every live page matches its built file byte for byte.
+
+### Published by duplicating an existing tool, which is why the IDs skip
+
+Each page was created with `wp_duplicate_post` from tool 1510, the duplicate
+stripped back to the shared 12,976-byte CSS prefix, and only the body pasted
+in. The prefix is identical on all 85 pages, so this avoids retyping 13 KB per
+page and makes a mangled prefix impossible rather than merely unlikely. It
+consumes intermediate post IDs, which is why 1757 and 1761 are not adjacent.
+
+### A stale byte count I had recorded, corrected
+
+I had `what-the-nil-t2-fee-covers-checker` noted at 29,027 bytes and treated
+the live 29,039 as a 12-byte paste error. The file on disk is 29,039; the
+29,027 was stale. Nothing was wrong with the page.
+
+### One live edit matched twice, and what that cost
+
+Wiring the inbound links, the anchor `in the order they fell due.</p>` on
+`unfiled-years-cost-calculator` matched **twice**: once in the section HTML and
+once inside a single-quoted string in the page's own JavaScript, which builds
+the same sentence into its result screen. The sentence was inserted in both.
+Caught by `replacements_count: 2` against an expected 1, and removed from the
+JavaScript with an anchor ending `</p>';`, which only the script carries. Page
+back to 22,806 bytes, matching its build.
+
+Every later anchor was counted in the built file first. A search string chosen
+from a paragraph is not unique on these pages: the JavaScript result screens
+restate section prose almost verbatim.
+
+### 6(g) inbound minimum, met by four prose sentences
+
+Line 1529 sets Family 2 at **3 inbound minimum, 20 body outbound maximum**. The
+batch's own cross-links plus the `/tools/` hub card left the five at 3, 2, 1, 1
+and 1. Rather than disturb the related-link lists, four sentences were added to
+existing pages where the link genuinely belongs:
+
+| Host page | Links added |
+|---|---|
+| `t183corp-signature-requirement-checker` | retention calculator, multi-year signing, progress checker |
+| `nil-t2-document-checklist-checker` | progress checker, what the fee covers |
+| `unfiled-years-cost-calculator` | multi-year signing, what the fee covers |
+| `efile-rejection-reason-checker` | CRA confirmation due date |
+
+Inbound now 4, 3, 3, 3, 3. Body outbound on the four hosts is 11, 13, 11 and
+11 against the cap of 20. Builders patched first, rebuilt, gated, then pushed
+live; all four match their builds (29,099 / 26,363 / 22,806 / 29,789).
+
+### Two builder assertions that only held until the next batch
+
+Both encoded a moment rather than a rule, and both failed on rebuild:
+
+- `build_f2j.py` asserted exactly **70** tools live outside its own batch. Its
+  own comment says the intent was that no *earlier* tool has gone missing, so
+  it is now a subset test against `ORDER9` and survives later batches.
+- `build_f2g.py` and `build_f2j.py` refused a body link to any tool outside
+  their batch's `ORDER`, so batch 11's inbound links read as typos. The
+  linkable set is now that order **plus** the live slugs from
+  `f16/tools-hub-children.json`, which keeps the typo guard.
+
+### Hub, ledger and cache
+
+`/tools/` (page 1187) went from 80 cards to 85, in an **eleventh** group,
+"Signing, Transmission and What the Fee Covers" -- the five do not belong in
+any of the ten. The build's assert that cards match
+`tools-hub-children.json` is what caught that they needed cards at all.
+29,299 to 30,861 bytes, matching the build; count line stays the
+`[cnf_child_count]` shortcode, never hand-typed.
+
+`docs/seo/rank-math-meta.json` gains `nil_calculator_batch11`, taking the
+ledger to **232 items**; `gate_rank_math.py` PASS. LiteSpeed page cache and the
+Rank Math sitemap cache cleared site-wide.
+
+### Not verified: the pages in a real browser
+
+The five were exercised in a DOM stub, not in a browser against the live site.
+This session's egress proxy refuses `corpnilfilingfor300.ca`, so Playwright
+cannot reach it. The byte-for-byte match with gated files plus the duplicated,
+already-proven CSS prefix is the evidence; a visual check on the live pages is
+still worth doing from a machine that can reach the site.

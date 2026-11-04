@@ -395,7 +395,10 @@ TOOLS2 = [
     '<p>Tax is added at the rate for your province.</p>'),
    ('order', 'Years Are Filed Oldest First',
     '<p>Unfiled years are filed oldest first, one return per tax year, so the '
-    'Canada Revenue Agency assesses them in the order they fell due.</p>\n'
+    'Canada Revenue Agency assesses them in the order they fell due. The '
+    + a(T + 'multi-year-signing-requirement-checker/',
+        'multi-year signing requirement checker')
+    + ' counts the signatures and confirmations that produces.</p>\n'
     '<div class="ei-danger"><p>A true nil return carries no percentage '
     'late-filing penalty, because that penalty is a percentage of tax owing and '
     'the corporation owes $0.00. The unfiled year still stays open forever, '
@@ -410,7 +413,12 @@ TOOLS2 = [
     'continuity, your Form T183CORP package, single-use secure e-signing, CPA '
     'review, electronic transmission by a registered EFILE electronic filer, '
     'one corrected transmission if the Agency rejects the first one, and your '
-    'CRA confirmation emailed within 3 business days.</p>'),
+    'CRA confirmation emailed within 3 business days.</p>\n'
+    '<p>The '
+    + a(T + 'what-the-nil-t2-fee-covers-checker/',
+        'checker for what the nil T2 fee covers')
+    + ' names the registry, provincial and account filings that fall outside '
+    'it.</p>'),
   ],
   faq=[
    ('Does a Late Year Cost More Than a Current One?',

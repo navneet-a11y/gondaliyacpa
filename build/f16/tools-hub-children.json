@@ -1,7 +1,7 @@
 {
  "note": "Every published nil_calculator slug. The seventy from 2026-11-02 plus the ten published on 2026-11-03, each confirmed live by its own publish result, with wp_count_posts reporting 80 published and 0 draft or trashed. build_tools_hub.py asserts its card list matches this exactly, so a tool published without a hub card fails the build rather than going unlinked.",
  "read_on": "2026-11-03",
- "count": 80,
+ "count": 85,
  "slugs": [
   "53-week-first-tax-year-checker",
   "acquired-corporation-unfiled-years-checker",
@@ -82,6 +82,11 @@
   "unfiled-years-checker",
   "unfiled-years-cost-calculator",
   "year-end-change-approval-checker",
-  "year-end-change-impact-calculator"
+  "year-end-change-impact-calculator",
+  "t183corp-retention-expiry-calculator",
+  "cra-confirmation-due-date-calculator",
+  "what-the-nil-t2-fee-covers-checker",
+  "nil-t2-filing-progress-checker",
+  "multi-year-signing-requirement-checker"
  ]
 }
