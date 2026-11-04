@@ -1,0 +1,764 @@
+<style>.gcpa-post{--navy:#0f2a4a;--navy-2:#15355c;--blue:#1c6dd0;--blue-soft:#e8f1fc;--teal:#0c8f8f;--teal-soft:#e3f4f4;--gold:#c9991f;--gold-soft:#fbf3dc;--green:#1f8a4c;--green-soft:#e6f5ec;--red:#c0392b;--red-soft:#fbeae8;--ink:#1d2733;--muted:#5a6b7b;--line:#d8e0e8;--bg:#ffffff;--bg-alt:#f5f8fb;--radius:14px;--shadow:0 6px 22px rgba(15,42,74,.08);--shadow-lg:0 14px 40px rgba(15,42,74,.14);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);line-height:1.7;font-size:17px;max-width:1080px;margin:0 auto;padding:0 18px 60px;} .gcpa-post *{box-sizing:border-box;} .gcpa-hero{background:linear-gradient(135deg,var(--navy) 0%,var(--navy-2) 60%,#1c4a78 100%);color:#fff;border-radius:20px;padding:46px 40px 42px;margin:26px 0 34px;position:relative;overflow:hidden;} .gcpa-hero::after{content:"";position:absolute;right:-80px;top:-80px;width:280px;height:280px;z-index:0;background:radial-gradient(circle,rgba(28,109,208,.45),transparent 70%);} .gcpa-post .gcpa-eyebrow{display:inline-block;font-size:13px;letter-spacing:1.4px;text-transform:uppercase;font-weight:700;color:#cfe2f8 !important;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.3);padding:7px 15px;border-radius:30px;margin-bottom:18px;} .gcpa-post .gcpa-hero h1{font-size:34px;line-height:1.25;margin:0 0 16px;font-weight:800;color:#fff !important;letter-spacing:-.3px;position:relative;z-index:2;} .gcpa-post .gcpa-hero p{font-size:18px;color:#eaf3fc !important;margin:0;max-width:760px;position:relative;z-index:2;} .gcpa-eyebrow{position:relative;z-index:2;} .gcpa-post h2{font-size:27px;font-weight:800;color:var(--navy);line-height:1.3;margin:48px 0 18px;padding-bottom:14px;border-bottom:3px solid var(--blue-soft);letter-spacing:-.2px;position:relative;} .gcpa-post h2::after{content:"";position:absolute;left:0;bottom:-3px;width:70px;height:3px;background:var(--blue);} .gcpa-post h3{font-size:22px;font-weight:800;color:var(--navy-2);margin:40px 0 14px;line-height:1.35;} .gcpa-post h4{font-size:19px;font-weight:700;color:var(--navy-2);margin:36px 0 12px;line-height:1.4;padding-left:16px;border-left:4px solid var(--teal);} .gcpa-post p{margin:0 0 16px;color:#1d2733 !important;} .gcpa-post li{color:#1d2733;} .gcpa-post a{color:var(--blue);text-decoration:none;font-weight:600;} .gcpa-post a:hover{text-decoration:underline;} .gcpa-post ul,.gcpa-post ol{margin:0 0 18px !important;padding-left:0 !important;list-style:none !important;} .gcpa-post ul{list-style-type:none !important;} .gcpa-post ul li{position:relative;padding:8px 0 8px 34px;margin:0;border-bottom:1px solid var(--line);color:var(--ink);list-style:none !important;list-style-type:none !important;} .gcpa-post ul li::marker{content:"" !important;font-size:0 !important;} .gcpa-post ul li:last-child{border-bottom:none;} .gcpa-post ul li::before{content:"";position:absolute;left:6px;top:15px;width:9px;height:9px;border-radius:2px;background:var(--teal);transform:rotate(45deg);} .gcpa-post ol{counter-reset:gcpa;} .gcpa-post ol li{position:relative;padding:10px 0 10px 44px;margin:0 0 10px;counter-increment:gcpa;list-style:none !important;list-style-type:none !important;} .gcpa-post ol li::marker{content:"" !important;font-size:0 !important;} .gcpa-post ol li::before{content:counter(gcpa);position:absolute;left:0;top:9px;width:28px;height:28px;border-radius:8px;background:var(--navy);color:#fff;font-weight:700;font-size:14px;display:flex;align-items:center;justify-content:center;} .gcpa-post .wp-block-table,.gcpa-post figure.wp-block-table{margin:22px 0 26px;overflow-x:auto;} .gcpa-post table{width:100%;border-collapse:collapse;font-size:15.5px;background:#fff;border:1px solid var(--navy);border-radius:10px;overflow:hidden;box-shadow:var(--shadow);} .gcpa-post thead th{background:var(--navy);color:#fff;text-align:left;padding:13px 15px;font-weight:700;font-size:15px;border:1px solid var(--navy-2);} .gcpa-post tbody td{padding:12px 15px;border:1px solid var(--line);vertical-align:top;color:var(--ink);} .gcpa-post tbody tr:nth-child(even){background:var(--bg-alt);} .gcpa-post tbody tr:hover{background:var(--blue-soft);} .gcpa-post tbody td:first-child{font-weight:600;color:var(--navy-2);} .gcpa-metrics{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin:30px 0 36px;clear:both;} .gcpa-metric{background:#fff;border:1px solid var(--line);border-top:4px solid var(--blue);border-radius:var(--radius);padding:22px 18px;box-shadow:var(--shadow);transition:transform .2s,box-shadow .2s;} .gcpa-metric:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg);} .gcpa-metric:nth-child(2){border-top-color:var(--teal);} .gcpa-metric:nth-child(3){border-top-color:var(--gold);} .gcpa-metric:nth-child(4){border-top-color:var(--green);} .gcpa-metric .ic{width:46px;height:46px;border-radius:11px;background:var(--blue-soft);display:flex;align-items:center;justify-content:center;margin-bottom:14px;color:var(--blue);} .gcpa-metric:nth-child(2) .ic{background:var(--teal-soft);color:var(--teal);} .gcpa-metric:nth-child(3) .ic{background:var(--gold-soft);color:var(--gold);} .gcpa-metric:nth-child(4) .ic{background:var(--green-soft);color:var(--green);} .gcpa-metric .big{font-size:22px;font-weight:800;color:var(--navy);line-height:1.2;margin-bottom:4px;} .gcpa-metric .lbl{font-size:14px;color:var(--muted);line-height:1.45;} .gcpa-numhead{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin:46px 0 8px;clear:both;} .gcpa-numhead h4{margin:0 !important;} .gcpa-numhead .gcpa-pill{margin:0 !important;} .gcpa-numhead .num{flex:0 0 auto;width:48px;height:48px;border-radius:12px;background:var(--navy);color:#fff;font-size:22px;font-weight:800;display:flex;align-items:center;justify-content:center;box-shadow:var(--shadow);} .gcpa-callout{border-radius:var(--radius);padding:20px 22px;margin:22px 0;border:1px solid var(--line);background:var(--bg-alt);position:relative;} .gcpa-callout.blue{background:var(--blue-soft);border-color:#bcd9f6;} .gcpa-callout.teal{background:var(--teal-soft);border-color:#b7e3e3;} .gcpa-callout.gold{background:var(--gold-soft);border-color:#ecd79a;} .gcpa-callout.green{background:var(--green-soft);border-color:#b6e2c6;} .gcpa-callout.red{background:var(--red-soft);border-color:#f0c4be;} .gcpa-callout .co-tag{display:inline-block;font-size:12.5px;font-weight:700;letter-spacing:.6px;text-transform:uppercase;padding:4px 11px;border-radius:20px;margin-bottom:10px;color:#fff;} .gcpa-callout.blue .co-tag{background:var(--blue);} .gcpa-callout.teal .co-tag{background:var(--teal);} .gcpa-callout.gold .co-tag{background:var(--gold);} .gcpa-callout.green .co-tag{background:var(--green);} .gcpa-callout.red .co-tag{background:var(--red);} .gcpa-callout p:last-child{margin-bottom:0;} .gcpa-cta{background:linear-gradient(135deg,var(--navy) 0%,#1c4a78 100%);color:#fff;border-radius:18px;padding:34px 32px;margin:38px 0;text-align:center;box-shadow:var(--shadow-lg);position:relative;overflow:hidden;} .gcpa-cta::before{content:"";position:absolute;left:-60px;bottom:-60px;width:220px;height:220px;background:radial-gradient(circle,rgba(12,143,143,.4),transparent 70%);} .gcpa-post .gcpa-cta h4{color:#fff !important;border:none;padding:0;margin:0 0 12px;font-size:22px;font-weight:800;position:relative;z-index:1;} .gcpa-post .gcpa-cta p{color:#eaf3fc !important;max-width:680px;margin:0 auto 22px;position:relative;z-index:1;} .gcpa-post .gcpa-cta .btn{display:inline-block;background:#fff !important;color:var(--navy) !important;font-weight:700;padding:13px 26px;border-radius:30px;margin:6px;font-size:16px;position:relative;z-index:1;transition:transform .15s;text-decoration:none !important;} .gcpa-post .gcpa-cta .btn:hover{transform:translateY(-2px);text-decoration:none !important;} .gcpa-post .gcpa-cta .btn.primary{background:var(--teal) !important;color:#fff !important;} .gcpa-btnrow{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;align-items:center;position:relative;z-index:1;} .gcpa-trust{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-bottom:22px;position:relative;z-index:1;} .gcpa-post .gcpa-trust span{font-size:13px;font-weight:700;background:rgba(255,255,255,.18) !important;border:1px solid rgba(255,255,255,.45);padding:7px 14px;border-radius:20px;color:#ffffff !important;} .gcpa-post svg{display:block;} .gcpa-pill{display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:700;padding:8px 16px;border-radius:30px;margin:10px 0 6px;line-height:1.2;} .gcpa-pill svg{width:16px;height:16px;flex:0 0 auto;} .gcpa-pill.green{background:var(--green-soft);color:var(--green);border:1px solid #b6e2c6;} .gcpa-pill.blue{background:var(--blue-soft);color:var(--blue);border:1px solid #bcd9f6;} .gcpa-pill.teal{background:var(--teal-soft);color:var(--teal);border:1px solid #b7e3e3;} .gcpa-pill.gold{background:var(--gold-soft);color:#9a7416;border:1px solid #ecd79a;} .gcpa-pill.red{background:var(--red-soft);color:var(--red);border:1px solid #f0c4be;} .gcpa-pillhead{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin:38px 0 12px;clear:both;} .gcpa-pillhead h4{margin:0 !important;} .gcpa-pillhead .gcpa-pill{margin:0 !important;} @media(max-width:560px){.gcpa-pillhead{gap:8px;}} .gcpa-toc{background:var(--bg-alt);border:1px solid var(--line);border-left:5px solid var(--blue);border-radius:var(--radius);padding:24px 26px;margin:30px 0 36px;box-shadow:var(--shadow);} .gcpa-toc h5{margin:0 0 14px;font-size:16px;font-weight:800;color:var(--navy);letter-spacing:.4px;text-transform:uppercase;display:flex;align-items:center;gap:9px;} .gcpa-toc h5 svg{width:20px;height:20px;color:var(--blue);} .gcpa-toc ol{counter-reset:toc;margin:0 !important;padding:0 !important;columns:2;column-gap:36px;list-style:none !important;} .gcpa-toc ol li{counter-increment:toc;position:relative;padding:7px 0 7px 30px;margin:0;border-bottom:1px dashed var(--line);break-inside:avoid;list-style:none !important;} .gcpa-toc ol li::before{content:counter(toc);position:absolute;left:0;top:7px;width:21px;height:21px;border-radius:6px;background:var(--blue-soft);color:var(--blue);font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;} .gcpa-toc ol li::marker{content:"" !important;font-size:0 !important;} .gcpa-toc a{color:var(--navy-2);font-weight:600;font-size:15px;} .gcpa-toc a:hover{color:var(--blue);} .gcpa-post [id^="toc-"]{scroll-margin-top:90px;} .gcpa-banner{display:block;background:linear-gradient(135deg,#0d3b66 0%,#0c7a7a 100%);color:#fff;border-radius:16px;padding:30px 32px;margin:36px 0;box-shadow:var(--shadow-lg);} .gcpa-banner .bt{font-size:20px;font-weight:800;line-height:1.45;margin:0 0 20px;max-width:760px;} .gcpa-banner .bb{display:flex;flex-wrap:wrap;gap:14px;align-items:center;} .gcpa-banner a{display:inline-block;background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.6);color:#fff !important;font-weight:700;padding:13px 24px;border-radius:30px;font-size:15px;text-decoration:none !important;} .gcpa-banner a.solid{background:#ffffff !important;color:#0d3b66 !important;border-color:#fff;} .gcpa-disclaimer{background:var(--bg-alt);border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:34px 0 10px;font-size:14.5px;color:var(--muted);line-height:1.6;} .gcpa-disclaimer strong{color:var(--navy-2);} .gcpa-byline{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin:0 0 22px;font-size:15px;} .gcpa-byline .av{width:42px;height:42px;border-radius:50%;background:var(--navy);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:16px;flex:0 0 auto;} .gcpa-byline .nm{font-weight:700;color:var(--navy-2);} .gcpa-byline .rl{color:var(--teal);font-weight:700;} .gcpa-byline .sep{color:var(--line);} .gcpa-author{display:flex;gap:18px;align-items:flex-start;background:var(--bg-alt);border:1px solid var(--line);border-left:5px solid var(--teal);border-radius:14px;padding:24px 26px;margin:34px 0 40px;} .gcpa-author .ava{width:64px;height:64px;border-radius:50%;background:linear-gradient(135deg,var(--navy),var(--teal));color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:22px;flex:0 0 auto;} .gcpa-author .info h5{margin:0 0 6px;font-size:17px;font-weight:800;color:var(--navy);line-height:1.4;} .gcpa-author .info .role{font-size:14px;color:var(--teal);font-weight:700;margin:0 0 12px;} .gcpa-author .info p{font-size:14.5px;color:var(--muted) !important;margin:0;line-height:1.65;} .gcpa-faq{margin:18px 0 26px;border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:var(--shadow);} .gcpa-faq details{border-bottom:1px solid var(--line);background:#fff;} .gcpa-faq details:last-child{border-bottom:none;} .gcpa-faq summary{list-style:none;cursor:pointer;padding:18px 22px;font-weight:700;color:var(--navy-2);font-size:16px;display:flex;justify-content:space-between;align-items:center;gap:14px;transition:background .15s;} .gcpa-faq summary::-webkit-details-marker{display:none;} .gcpa-faq summary:hover{background:var(--bg-alt);} .gcpa-faq summary .pl{flex:0 0 auto;width:24px;height:24px;border-radius:50%;background:var(--blue-soft);color:var(--blue);display:flex;align-items:center;justify-content:center;font-size:18px;font-weight:700;transition:transform .2s;} .gcpa-faq details[open] summary{background:var(--bg-alt);color:var(--navy);} .gcpa-faq details[open] summary .pl{transform:rotate(45deg);background:var(--blue);color:#fff;} .gcpa-faq .ans{padding:0 22px 20px;color:#1d2733;font-size:15.5px;line-height:1.7;} .gcpa-img-right{float:right;max-width:250px;width:32%;margin:6px 0 24px 28px;border-radius:12px;box-shadow:var(--shadow-lg);border:1px solid var(--line);} .gcpa-img-right img{display:block;width:100%;height:auto;border-radius:12px;} @media(max-width:560px){.gcpa-img-right{float:none;width:70%;max-width:260px;margin:14px auto 18px;}} .gcpa-closing{font-size:24px;font-weight:800;color:var(--navy);margin:48px 0 14px;padding-bottom:12px;border-bottom:3px solid var(--teal-soft);position:relative;} .gcpa-closing::after{content:"";position:absolute;left:0;bottom:-3px;width:70px;height:3px;background:var(--teal);} @media(max-width:560px){.gcpa-post{font-size:16px;} .gcpa-hero{padding:32px 22px;} .gcpa-hero h1{font-size:26px;} .gcpa-post h2{font-size:23px;} .gcpa-cta{padding:26px 20px;} .gcpa-banner .bb{width:100%;} .gcpa-banner .bb a{flex:1 1 auto;text-align:center;}}</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"Open Corporation for $35","alternateName":"Open Corporation For $35","url":"https://opencorporationfor35.ca/","description":"Open Corporation for $35 is a department of Gondaliya CPA.","parentOrganization":{"@type":"Organization","name":"Gondaliya CPA Professional Corporation","url":"https://gondaliyacpa.ca","identifier":"CPA Ontario Firm Registration 61330051"},"legalName":"WealthBamboo Inc.","telephone":"+1-647-212-9559","email":"info@gondaliyacpa.ca","areaServed":"CA","openingHours":"Mo-Su 09:00-20:30","award":"Xero Partner Award Winner 2026","aggregateRating":{"@type":"AggregateRating","ratingValue":"5","reviewCount":"1300"}}
+</script>
+<div class="gcpa-post">
+<div class="gcpa-hero" style="background:linear-gradient(135deg,#0f2a4a 0%,#15355c 60%,#1c4a78 100%) !important;">
+<span class="gcpa-eyebrow">GST/HST · Small Supplier · $30,000 Threshold · Registration · 2026</span>
+<h1 style="color:#ffffff !important;position:relative;z-index:2;font-size:34px;line-height:1.25;font-weight:800;margin:0 0 14px;">HST Registration in Canada: When Does Your Business Need to Register?</h1>
+<div class="gcpa-hero-sub" style="margin:0 0 18px;"><span style="color:#eaf3fc !important;font-size:18px;line-height:1.6;display:block;max-width:840px;position:relative;z-index:2;">The $30,000 test, the 29-day deadline, the date tax starts, and when registering early pays</span></div>
+<div style="position:relative;z-index:2;font-size:15px;line-height:1.5;"><span style="color:#ffffff;font-weight:bold;">By Sharad Gondaliya, CPA</span><span style="color:#9fd0d0;font-weight:bold;">  |  <a href="https://opencorporationfor35.ca/">Open Corporation For $35</a> and <a href="https://opencorporationfor35.ca/address-service-100/">Address Service</a></span></div>
+<div style="position:relative;z-index:2;font-size:14.5px;line-height:1.5;margin-top:12px;"><span style="color:#cfe2f8 !important;font-weight:600;">Open Corporation for $35 is a department of Gondaliya CPA.</span></div>
+</div>
+<h2>HST registration Canada: When to register for HST, GST/HST registration requirements, and threshold details for small suppliers</h2>
+<p><strong>Open Corporation for $35 is a department of Gondaliya CPA.</strong> HST registration Canada is required when your taxable supplies exceed the $30,000 HST threshold Canada, as outlined in the Excise Tax Act and CRA HST registration requirements. Businesses, including corporations and self-employed individuals, must understand mandatory versus voluntary HST registration and filing obligations to comply with GST/HST account registration rules and take advantage of <a href="https://opencorporationfor35.ca/guides/hst-registration-guide/">input tax credits</a>.</p>
+<h3 id="toc-summary" style="margin-top:38px;">Quick Summary</h3>
+<p>Most businesses can wait to register until their taxable sales pass $30,000. The two things that catch people out are the date tax starts, which can be before you register, and the sales that count toward the $30,000, which include associated businesses.</p>
+<figure class="wp-block-table">
+<table>
+<thead><tr><th>Aspect</th><th>Details</th></tr></thead>
+<tbody>
+<tr><td>Who must register</td><td>Anyone whose taxable supplies, with associated businesses, go over $30,000 in one quarter or four straight quarters.</td></tr>
+<tr><td>Taxi and ride-sharing</td><td>From the first fare, whatever the sales.</td></tr>
+<tr><td>Deadline</td><td>Register within 29 days of crossing the threshold.</td></tr>
+<tr><td>When tax starts</td><td>Single quarter: on the sale that takes you over. Four quarters: the first day of the second month after that quarter.</td></tr>
+<tr><td>Voluntary registration</td><td>Allowed below $30,000, and can generally be backdated up to 30 days.</td></tr>
+<tr><td>Rates</td><td>GST 5%; HST 13% in Ontario, 14% in Nova Scotia and 15% in New Brunswick, Newfoundland and Labrador and Prince Edward Island.</td></tr>
+</tbody>
+</table>
+</figure>
+<div class="gcpa-author">
+<div class="ava" style="background:linear-gradient(135deg,#0f2a4a,#0c8f8f) !important;color:#ffffff !important;">SG</div>
+<div class="info">
+<h5>Author: Sharad Gondaliya, CPA (Canada &amp; USA) — Founder &amp; Managing Director, Gondaliya CPA Professional Corporation, Toronto, Ontario.</h5>
+<div class="role">Reviewed and fact-checked by Sharad Gondaliya, CPA (Canada &amp; USA)</div>
+<p style="font-size:14.5px;color:#15355c !important;font-weight:700;margin:0 0 8px;">Open Corporation for $35 is a department of Gondaliya CPA.</p>
+<p>Gondaliya CPA is a Toronto-based team providing incorporation, CRA registrations, corporate tax, bookkeeping, GST/HST, and payroll for Canadian corporations. Verify our firm on the <a href="https://www.cpaontario.ca/protecting-the-public/directories/firm/gondaliya-5sqvmj">CPA Ontario public firm directory</a>, firm registration 61330051.</p>
+<p style="font-size:13.5px;color:#15355c !important;font-weight:700;margin-top:10px;">CPA Ontario | CPA USA (Washington &amp; Montana) | Xero Partner Award Winner 2026 | 1300+ 5-star Google reviews</p>
+</div>
+</div>
+<p style="font-size:14px;color:#5a6b7b;margin:-26px 0 26px;">Reading time: 31 minutes.</p>
+<div class="gcpa-toc">
+<h5>Table of Contents</h5>
+<ol>
+<li><a href="#toc-understanding">Understanding GST/HST Registration</a></li>
+<li><a href="#toc-when">When to Register</a></li>
+<li><a href="#toc-preparing">Preparing to Register</a></li>
+<li><a href="#toc-how">How to Register</a></li>
+<li><a href="#toc-after">After You Register</a></li>
+<li><a href="#toc-numbers">GST/HST and Business Numbers</a></li>
+<li><a href="#toc-rates">Rates and Provinces</a></li>
+<li><a href="#toc-special">Special Rules</a></li>
+<li><a href="#toc-challenges">Common Challenges</a></li>
+<li><a href="#toc-summary-points">Summary and Next Steps</a></li>
+<li><a href="#toc-faq">Frequently Asked Questions</a></li>
+<li><a href="#toc-points">Additional Points and Quick Reference</a></li>
+</ol>
+</div>
+<span class="gcpa-pill green">The Numbers That Matter</span>
+<div class="gcpa-metrics">
+<div class="gcpa-metric">
+<div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+<div class="big">$30,000</div>
+<div class="lbl">Small supplier threshold</div>
+</div>
+<div class="gcpa-metric">
+<div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></div>
+<div class="big">29 days</div>
+<div class="lbl">To register after crossing it</div>
+</div>
+<div class="gcpa-metric">
+<div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="M19 9l-5 5-4-4-3 3"/></svg></div>
+<div class="big">13%</div>
+<div class="lbl">HST rate in Ontario</div>
+</div>
+<div class="gcpa-metric">
+<div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+<div class="big">$400,000</div>
+<div class="lbl">Quick Method eligibility limit</div>
+</div>
+<div class="gcpa-metric">
+<div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
+<div class="big">$35</div>
+<div class="lbl">Our incorporation fee, including HST</div>
+</div>
+</div>
+<div class="gcpa-callout blue">
+<span class="co-tag">Scope &amp; Assumptions</span>
+<p>This article uses federal GST/HST rules under the Excise Tax Act for 2026, with Ontario as the main example, in Canadian dollars. Thresholds, rates and CRA administrative policy change, and your registration date depends on your own sales history. This is educational information only and not tax, legal, or financial advice. Please speak with a CPA about your own situation before registering or charging tax.</p>
+</div>
+
+<h2>Understanding HST and GST/HST Registration in Canada</h2>
+<div class="gcpa-numhead">
+<div class="num" style="background:#0f2a4a !important;color:#ffffff !important;">1</div>
+<h4 id="toc-understanding" style="border:none;padding:0;margin:0;">Understanding GST/HST Registration</h4>
+<span class="gcpa-pill blue">The Basics</span>
+</div>
+<p>In Canada, businesses deal with two main taxes: the Goods and Services Tax (GST) and the Harmonized Sales Tax (HST). These taxes follow federal rules. Getting your HST registration right matters a lot. It tells you when to <a href="https://opencorporationfor35.ca/guides/what-happens-after-you-incorporate/">start charging tax on what you sell</a>.</p>
+<h3>Overview of GST, PST, and HST Taxes Across Canadian Provinces</h3>
+<p>Canada has three main sales taxes: GST, PST, and HST.</p>
+<ul>
+<li>GST is a federal tax at 5% everywhere.</li>
+<li>PST is different in each province; some places don’t have it.</li>
+<li>HST combines GST and some provincial taxes. For example, <a href="https://opencorporationfor35.ca/how-to-incorporate-in-ontario/">Ontario’s HST rate is 13%</a>.</li>
+</ul>
+<p>Knowing these helps your business understand what taxes you must charge.</p>
+<h3>Key Definitions: Small Supplier, Taxable Supplies, and Exempt Supplies</h3>
+<p>Here are some terms that matter for HST registration threshold Canada:</p>
+<ul>
+<li>A Small Supplier makes $30,000 or less in taxable sales over four quarters. Pass this limit? <a href="https://opencorporationfor35.ca/five-mistakes-first-time-incorporators-make/">You must register for HST</a>.</li>
+<li>Taxable Supplies are most goods or services where you add tax. Like things sold in stores or services you offer.</li>
+<li>Exempt Supplies don’t get taxed. Think of some health care or education services.</li>
+</ul>
+<p>These words help you see if your business needs to sign up for HST.</p>
+<div class="gcpa-callout red">
+<span class="co-tag">Risk Warning</span>
+<p><strong>Risk Warning:</strong> The $30,000 test counts the taxable sales of associated businesses as well as your own. Please do not test your own sales alone.</p>
+</div>
+<h3>Importance of Compliance with HST Registration Requirements</h3>
+<p>Following GST/HST registration requirements keeps your business legal in Canada. If you skip registration, CRA might fine you. Also:</p>
+<ul>
+<li>Registered businesses can <a href="https://opencorporationfor35.ca/incorporation-bookkeeping-bundle/">get back money spent on taxes</a> through input tax credits.</li>
+<li>Customers trust invoices from registered companies more.</li>
+<li>Being on time avoids costly fees from late registration or audits.</li>
+</ul>
+<p>Staying on top of this keeps your money safe.</p>
+
+<h2>When to Register for HST in Canada</h2>
+<div class="gcpa-numhead">
+<div class="num" style="background:#0f2a4a !important;color:#ffffff !important;">2</div>
+<h4 id="toc-when" style="border:none;padding:0;margin:0;">When to Register</h4>
+<span class="gcpa-pill teal">Timing</span>
+</div>
+<p>Knowing when to register for HST depends on your sales hitting the $30,000 mark soon. If you think sales will go over that during one quarter or four quarters combined, don’t wait—<a href="https://opencorporationfor35.ca/consultation/">sign up quickly</a>.</p>
+<h3>The $30,000 HST Registration Threshold Explained</h3>
+<p>The $30,000 threshold means if your taxable supplies go over this number in a quarter—or in total over four quarters—you have to register with CRA, and in the single-quarter case you charge tax starting with the sale that takes you over.</p>
+<figure class="wp-block-table">
+<table>
+<thead><tr><th>Test Type</th><th>Measurement Period</th><th>Action Required</th></tr></thead>
+<tbody>
+<tr><td>Single Quarter Test</td><td>One calendar quarter</td><td>Register if exceeded</td></tr>
+<tr><td>Four Consecutive Quarters Test</td><td>Over four quarters</td><td>Register if cumulative exceeds</td></tr>
+</tbody>
+</table>
+</figure>
+<p>This table shows when your business must act once sales cross certain points.</p>
+<div class="gcpa-callout red">
+<span class="co-tag">Risk Warning</span>
+<p><strong>Risk Warning:</strong> If one quarter's sales go over $30,000, tax applies to the very sale that takes you over. Please do not wait for the 29-day registration window to start charging.</p>
+</div>
+<div class="gcpa-callout blue">
+<span class="co-tag">Worth Knowing</span>
+<p>If your last four quarters together go over $30,000, you stop being a small supplier at the end of the month after that quarter, and you charge tax from the first day of the following month.</p>
+</div>
+<h3>Mandatory vs Voluntary HST Registration Criteria</h3>
+<p>There are two kinds of GST/HST registration requirements: mandatory and voluntary.</p>
+<ul>
+<li><strong>Mandatory:</strong> You must register when taxable sales go over $30K in those periods above.</li>
+<li><strong>Voluntary:</strong> Even below $30K, some businesses register early to claim input tax credits faster.</li>
+</ul>
+<p>You decide based on your situation.</p>
+<h3>Special Considerations for Taxi Operators and Commercial Ride-Sharing Drivers</h3>
+<p>Taxi drivers have special rules for GST/HST because they take many fares daily compared to others.</p>
+<p>No matter how much they earn yearly—they must register from their first fare, because a special rule in the Excise Tax Act removes the small supplier exemption for taxi and commercial ride-sharing services.</p>
+<h3>How New Businesses Should Determine Their Registration Timing</h3>
+<p>New businesses should <a href="https://opencorporationfor35.ca/first-year-filing-calendar-new-corporation/">watch their sales closely from the start</a>. Check quarterly numbers often! This helps spot if you’re nearing that $30K mark early on so you can register before it becomes a problem later on after business grows big enough!</p>
+<div class="gcpa-callout gold">
+<span class="co-tag">Our Actual Experience</span>
+<p>The late registration we see most often is a consultant who crosses $30,000 over four quarters without noticing, because no single quarter looked large. We suggest adding up the last four quarters at the end of every quarter, not just checking the latest one.</p>
+</div>
+
+<h2>Preparing for GST/HST Registration</h2>
+<div class="gcpa-numhead">
+<div class="num" style="background:#0f2a4a !important;color:#ffffff !important;">3</div>
+<h4 id="toc-preparing" style="border:none;padding:0;margin:0;">Preparing to Register</h4>
+<span class="gcpa-pill gold">Preparation</span>
+</div>
+<p>Getting ready to register for GST/HST in Canada means knowing what info you need and the rules you must follow. The HST registration threshold Canada sets tells you when your business must sign up based on sales. If you learn the GST/HST registration requirements Canada, you avoid trouble and keep things right.</p>
+<p>Open Corporation for $35 works with Gondaliya CPA. This guide shows <a href="https://opencorporationfor35.ca/services/">what to have ready before registering</a>, how to add up your revenue, and important dates about your account.</p>
+<h3>Essential Business and Personal Information Required for Registration</h3>
+<p>To follow GST/HST registration requirements Canada, have these details:</p>
+<ul>
+<li>Your legal business name and operating name</li>
+<li>Your Canadian business address</li>
+<li>What kind of business you run (<a href="https://opencorporationfor35.ca/sole-proprietorship-registration/">sole proprietor, corporation, partnership</a>)</li>
+<li>The date your business started or plans to start</li>
+<li>Social Insurance Number (SIN) or Business Number (BN), if you have one</li>
+<li>Contact info like phone number and email</li>
+<li>A short description of your main products or services</li>
+</ul>
+<p>Knowing when to register for HST depends on tracking taxable supplies well. Having all this info makes the CRA process faster.</p>
+<h3>Understanding Your Fiscal Year for GST/HST Purposes</h3>
+<p>Your fiscal year shows how you report income and file under GST/HST registration requirements Canada. It can be:</p>
+<ul>
+<li>The calendar year ending December 31; or</li>
+<li><a href="https://opencorporationfor35.ca/guides/fiscal-year-end/">Another fiscal period approved by CRA</a></li>
+</ul>
+<p>This choice affects when you file returns but not when to register based on sales limits. Decide early because it changes deadlines after registration.</p>
+<h3>Total Annual Revenue Calculation Including Associates’ Supplies</h3>
+<p>The HST registration threshold Canada makes businesses count total annual taxable revenue from themselves plus connected people or companies.</p>
+<p>Add together:</p>
+<figure class="wp-block-table">
+<table>
+<thead><tr><th>Source</th><th>Counts Toward Threshold?</th></tr></thead>
+<tbody>
+<tr><td>Taxable supplies made inside or outside Canada</td><td>Yes</td></tr>
+<tr><td><a href="https://opencorporationfor35.ca/guides/holding-company-canada/">Sales by associated businesses</a></td><td>Yes</td></tr>
+<tr><td>Zero-rated supplies</td><td>Yes</td></tr>
+<tr><td>Exempt supplies</td><td>No</td></tr>
+</tbody>
+</table>
+</figure>
+<p>This total shows if you pass the $30,000 small supplier limit over one quarter or four quarters (Excise Tax Act s.148).</p>
+<h3>Effective Dates: Registration Deadline vs Effective Date of GST/HST Account</h3>
+<p>When you register, remember two important dates under GST/HST registration requirements Canada:</p>
+<ul>
+<li><strong>Effective date</strong> – When you must start charging tax; usually right after crossing the limit.</li>
+<li><strong>Registration deadline</strong> – You get 29 days after that to apply with CRA.</li>
+</ul>
+<p>If you miss this window, you might owe tax collected but not sent in (CRA Guide RC4022). These dates are different — late registration does not change when tax is due.</p>
+<div class="gcpa-callout red">
+<span class="co-tag">Risk Warning</span>
+<p><strong>Risk Warning:</strong> Registering late does not move the effective date. Please do not assume tax only applies from the day CRA processes your application.</p>
+</div>
+<div class="gcpa-banner" style="background:linear-gradient(135deg,#0d3b66 0%,#0c7a7a 100%) !important;">
+<div class="bt">Close to $30,000, or already past it? Please book a free consultation and we will work out your effective date with you.</div>
+<div class="bb"><a class="solid" href="https://gondaliyacpa.ca/consultation/">Book Free Consultation</a><a href="mailto:info@gondaliyacpa.ca">info@gondaliyacpa.ca</a><a href="tel:+16472129559">647-212-9559</a></div>
+</div>
+
+<h2>How to Register for a GST/HST Account</h2>
+<div class="gcpa-numhead">
+<div class="num" style="background:#0f2a4a !important;color:#ffffff !important;">4</div>
+<h4 id="toc-how" style="border:none;padding:0;margin:0;">How to Register</h4>
+<span class="gcpa-pill green">Registration</span>
+</div>
+<p>It’s simple to <a href="https://opencorporationfor35.ca/guides/business-number-cra-accounts/">register your GST/HST account</a> once you have all info ready that meets HST registration Canada rules.</p>
+<h3>Using Business Registration Online (BRO) for GST/HST Registration</h3>
+<p>Business Registration Online (BRO) is CRA’s web portal where you can quickly open a new Goods and Services Tax / Harmonized Sales Tax account linked to your Business Number (BN).</p>
+<p>Here’s how:</p>
+<ol>
+<li>Go to BRO at Canada.ca.</li>
+<li>Fill in your legal name, contact info, and fiscal year end.</li>
+<li>Pick “GST/HST” as program type.</li>
+<li>Send it online — usually get confirmation right away.</li>
+</ol>
+<p>Using BRO follows all current GST/HST online registration rules so no paper delays happen.</p>
+<h3>Alternative Registration Methods Beyond BRO</h3>
+<p>If BRO doesn’t work for you or you don’t want to use it:</p>
+<ul>
+<li>Call CRA's Business Enquiries line to register by phone</li>
+<li>Mail in Form RC1 - Request for a Business Number</li>
+</ul>
+<p>Both ways follow the same sales threshold rules but take longer than online (CRA Form RC1 and Guide RC4022).</p>
+<p>You can also choose voluntary HST registration options if your sales are below $30,000 but want input tax credits earlier. Just remember once registered, full filing rules apply.</p>
+<h3>Requirements for Non-Resident GST/HST Registrations</h3>
+<p><a href="https://opencorporationfor35.ca/open-a-corporation-in-canada-as-a-non-resident-step-by-step-guide/">Non-resident businesses</a> doing commercial activities where HST applies in Canada must follow the GST/HST rules for doing business in Canada:</p>
+<ul>
+<li>Get a BN with an RT account before selling taxable goods here</li>
+<li>Might need to post security with CRA if they have no permanent establishment in Canada</li>
+<li>Digital sellers into consumers can use simpler registrations</li>
+</ul>
+<p>HST non-resident registrant rules make sure tax gets collected even without physical offices (CRA Memorandum 19‑6).</p>
+<div class="gcpa-callout blue">
+<span class="co-tag">Worth Knowing</span>
+<p>Non-resident sellers of digital products and services to Canadian consumers can register under a simplified system once those sales pass $30,000 over 12 months. Simplified registrants charge GST/HST but cannot claim input tax credits.</p>
+</div>
+<h3>Process for Opening Separate GST/HST Accounts for Branches or Divisions</h3>
+<p>If your business <a href="https://opencorporationfor35.ca/guides/extra-provincial-registration/">runs many places across provinces</a>, each branch or division can apply for its own GST/HST account. Each can have its own RT program account if it keeps separate records and qualifies under section 239.</p>
+<p>Multiple GST/HST program accounts help track taxes right per place especially where supply places vary between provinces like Ontario vs British Columbia (Excise Tax Act s239).</p>
+<p>Open Corporation for $35 is part of Gondaliya CPA helping with these steps while keeping things right across all Canadian spots including Toronto clients who need clear help.</p>
+
+<h2>Responsibilities After GST/HST Registration</h2>
+<div class="gcpa-numhead">
+<div class="num" style="background:#0f2a4a !important;color:#ffffff !important;">5</div>
+<h4 id="toc-after" style="border:none;padding:0;margin:0;">After You Register</h4>
+<span class="gcpa-pill teal">Obligations</span>
+</div>
+<p>After you register for HST in Canada, you have some new responsibilities. You need to know when to charge GST/HST, how to file your returns, how to claim input tax credits, and <a href="https://opencorporationfor35.ca/corporate-compliance-subscription/">how to stay compliant</a>. The CRA sets rules for GST/HST registration requirements Canada. Following these helps your business run smooth.</p>
+<h3>When to Start Charging GST/HST to Customers</h3>
+<p>You start charging GST or HST from your registration date. This date depends on when you pass the $30,000 HST registration threshold Canada or if you sign up earlier by choice. Your start date could be:</p>
+<ul>
+<li>The day of the sale that takes you over $30,000 in taxable supplies in a single calendar quarter.</li>
+<li>The first day of the second month after the calendar quarter in which your last 4 straight calendar quarters total more than $30,000.</li>
+<li>A voluntary start date if you register before hitting the limit.</li>
+</ul>
+<p>Don’t charge tax before this date—that might cause problems. But if you don’t charge tax after this date, you might owe money and get penalties.<sup>1</sup></p>
+<div class="gcpa-callout red">
+<span class="co-tag">Risk Warning</span>
+<p><strong>Risk Warning:</strong> Tax you should have charged but did not is still owed by your business. Please do not assume you can bill customers for it later.</p>
+</div>
+<h3>Filing Obligations and Tax Remittance Requirements</h3>
+<p>Once you register under GST/HST registration requirements Canada, you must <a href="https://opencorporationfor35.ca/corporate-tax-filing-from-300/">file tax returns regularly</a>. These returns show the taxes you collected and what you owe.</p>
+<p>Here’s what matters:</p>
+<ul>
+<li>How often you file depends on your sales: once a year (up to $1.5 million), every quarter ($1.5 million–$6 million), or monthly (above $6 million).</li>
+<li>Returns show sales with GST/HST and input tax credits you can claim.</li>
+<li>You pay taxes one month after each monthly or quarterly reporting period ends, or three months after the year-end for most annual filers.</li>
+</ul>
+<p>Missing deadlines leads to interest and penalties.<sup>2</sup> Keep track of your filing dates so you don’t miss them.</p>
+<div class="gcpa-callout blue">
+<span class="co-tag">Worth Knowing</span>
+<p>An individual annual filer with business income and a December 31 year-end files by June 15 but must still pay by April 30.</p>
+</div>
+<h3>Claiming Input Tax Credits and Managing Cash Flow</h3>
+<p>If registered, businesses can get back some GST/HST they paid through input tax credits (ITCs). ITCs lower the tax amount you owe by covering eligible business expenses.</p>
+<p>Key points:</p>
+<ul>
+<li>Save all receipts with supplier numbers.</li>
+<li>Claim ITCs only for things used in your business; exempt items don’t count.</li>
+<li>Claiming ITCs on time <a href="https://opencorporationfor35.ca/business-bank-account-setup/">helps cash flow</a> but needs careful record keeping.<sup>3</sup></li>
+</ul>
+<p>Some people register early just to claim ITCs even if sales are low. Talking with a CPA helps decide what’s right for you.</p>
+<div class="gcpa-callout red">
+<span class="co-tag">Risk Warning</span>
+<p><strong>Risk Warning:</strong> An ITC claim on a purchase of $100 or more can be denied if the invoice does not show the supplier's GST/HST registration number. Please do not claim from receipts that lack it.</p>
+</div>
+<h3>Maintaining Compliance and Avoiding Late Registration Penalties</h3>
+<p>You must register within 29 days after crossing the threshold or starting certain services like taxis or digital sales.</p>
+<p>If you delay:</p>
+<ul>
+<li>You may owe taxes for past sales without charging customers.</li>
+<li>Interest and penalties can apply on tax you should have collected; Excise Tax Act section 240 sets the duty to register.<sup>4</sup></li>
+</ul>
+<p>Good records help spot when thresholds are passed. If unsure about timing or types of sales, ask an expert early.</p>
+
+<h2>Understanding GST/HST Numbers and Business Numbers</h2>
+<div class="gcpa-numhead">
+<div class="num" style="background:#0f2a4a !important;color:#ffffff !important;">6</div>
+<h4 id="toc-numbers" style="border:none;padding:0;margin:0;">GST/HST and Business Numbers</h4>
+<span class="gcpa-pill blue">Numbers</span>
+</div>
+<p>Every registered business gets a <a href="https://opencorporationfor35.ca/business-number-cra-account-registration/">unique Business Number (BN)</a>. Your GST/HST number is part of this BN under Canadian GST/HST registration requirements.</p>
+<div class="gcpa-callout blue">
+<span class="co-tag">Worth Knowing</span>
+<p>A corporation incorporated in Ontario, British Columbia or federally usually receives its BN automatically. The GST/HST (RT) account is then added to that BN.</p>
+</div>
+<h3>Structure and Reading of GST/HST Number</h3>
+<p>The usual format is: 123456789 RT0001</p>
+<figure class="wp-block-table">
+<table>
+<thead><tr><th>Part</th><th>Meaning</th></tr></thead>
+<tbody>
+<tr><td>123456789</td><td>Your unique nine-digit BN</td></tr>
+<tr><td>RT</td><td>Program code for GST/HST</td></tr>
+<tr><td>0001</td><td>Account reference number</td></tr>
+</tbody>
+</table>
+</figure>
+<p>This makes it easy to identify your accounts at CRA.<sup>5</sup></p>
+<h3>Difference Between GST/HST Number and Business Number (BN)</h3>
+<p>The BN covers many program accounts like <a href="https://opencorporationfor35.ca/payroll-service/">payroll</a> or income tax besides GST/HST registrations.</p>
+<figure class="wp-block-table">
+<table>
+<thead><tr><th>Identifier</th><th>What It Does</th></tr></thead>
+<tbody>
+<tr><td>Business Number</td><td>ID for all federal accounts</td></tr>
+<tr><td>GST/HST Number</td><td>Account inside BN just for GST/HST</td></tr>
+</tbody>
+</table>
+</figure>
+<p>Knowing this helps when dealing with CRA on HST vs other taxes.<sup>6</sup></p>
+<div class="gcpa-disclaimer">
+<p><sup>1</sup> Excise Tax Act s.148; CRA Guide RC4022</p>
+<p><sup>2</sup> CRA Filing Frequency Rules; Finance Canada Budget Measures 2026</p>
+<p><sup>3</sup> CRA Guide RC4058 Input Tax Credits</p>
+<p><sup>4</sup> Excise Tax Act s.240 - Mandatory Registration Deadline</p>
+<p><sup>5</sup> Canada Revenue Agency – Business Numbers Explained</p>
+<p><sup>6</sup> Government of Canada – BN vs Program Accounts Overview</p>
+</div>
+<p>Open Corporation offers help with these steps. We guide Toronto businesses in Ontario and across Canada so they understand what comes next after registering for HST.</p>
+
+<h2>HST Rates and Provincial Variations</h2>
+<div class="gcpa-numhead">
+<div class="num" style="background:#0f2a4a !important;color:#ffffff !important;">7</div>
+<h4 id="toc-rates" style="border:none;padding:0;margin:0;">Rates and Provinces</h4>
+<span class="gcpa-pill gold">Rates</span>
+</div>
+<h3>Explanation of GST Federal Rate and Participating Provinces’ HST Rates</h3>
+<p>The federal GST rate in Canada is 5%. Some provinces mix their provincial sales tax with the GST to make the HST. In 2026, here are the HST rates: Ontario has 13%, Nova Scotia has 14%, and New Brunswick, Newfoundland and Labrador, and <a href="https://opencorporationfor35.ca/incorporate-in-prince-edward-island/">Prince Edward Island</a> all have 15%. Businesses need to know these rates for HST registration Canada. You must register if your taxable supplies go over $30,000 in four straight quarters or even one quarter.</p>
+<div class="gcpa-callout red">
+<span class="co-tag">Risk Warning</span>
+<p><strong>Risk Warning:</strong> Nova Scotia's HST fell from 15% to 14% on April 1, 2025. Please do not use the old rate on Nova Scotia invoices.</p>
+</div>
+<h3>Sales Tax Collection Based on Customer Location (Place-of-Supply Rules)</h3>
+<p>Businesses collect GST or HST depending on where their customers are. This is called the place-of-supply rule. If you sell to a customer in an HST province, use that province’s HST rate. If your customer lives outside those provinces, only charge federal GST or local provincial sales tax if it applies. This rule helps you decide when to register for HST because you might owe different rates for different places.</p>
+<h3>Impact of the 2026 GST/HST Rates Update on Businesses</h3>
+<p>In 2026, the small supplier threshold stayed at $30,000. Filing rules also stay the same: file annually if you make less than $1.5 million; quarterly if you make between $1.5 million and $6 million; monthly if more than $6 million. The Quick Method remittance rates follow CRA rules too. These rules matter for GST/HST registration requirements Canada, especially if your business is growing or changing how often it files.</p>
+<div class="gcpa-callout teal">
+<span class="co-tag">Key Stat</span>
+<p><strong>Key Stat:</strong> The thresholds to know are $30,000 for small suppliers, $50,000 for public service bodies, $400,000 for the Quick Method, $1,500,000 for annual filing and $6,000,000 for monthly filing.</p>
+</div>
+<h3>GST/HST Application on Imports, Exports, and Zero-Rated Supplies</h3>
+<p>When goods come into Canada, usually GST/HST applies based on where they go unless a rule says otherwise. <a href="https://opencorporationfor35.ca/guides/us-sales-and-canadian-corporations/">Exports are taxed at zero percent</a> — that means no tax charged but these sales count when checking your $30,000 limit. Zero-rated supplies let you claim input tax credits but you don’t charge tax to buyers. This info helps figure your HST registration threshold Canada.</p>
+<div class="gcpa-callout blue">
+<span class="co-tag">Worth Knowing</span>
+<p>GST, or the federal part of HST, on goods imported into Canada is collected by the Canada Border Services Agency at the border, not by the seller.</p>
+</div>
+
+<h2>Special Rules and Considerations</h2>
+<div class="gcpa-numhead">
+<div class="num" style="background:#0f2a4a !important;color:#ffffff !important;">8</div>
+<h4 id="toc-special" style="border:none;padding:0;margin:0;">Special Rules</h4>
+<span class="gcpa-pill red">Special Cases</span>
+</div>
+<h3>Taxi and Ride-Sharing Driver Registration Rules</h3>
+<p>Taxi drivers and ride-share folks must register for GST/HST no matter how much money they make. A special law says they can’t use the small supplier exemption even if they earn less than $30,000. So they have to follow rules on when to register for HST as soon as they start working in Ontario or other provinces.</p>
+<h3>Filing-Frequency Thresholds and Quick Method Remittance Rates</h3>
+<p>How often you file depends on how much taxable supplies you have yearly:</p>
+<ul>
+<li>Under $1,500,000: file once a year</li>
+<li>Between $1,500,000 and $6 million: file every quarter</li>
+<li>Over $6 million: file monthly</li>
+</ul>
+<p>Some registrants with annual taxable supplies of $400,000 or less can use the Quick Method with preset remittance rates that differ by province—like Ontario’s Quick Method rate (check current numbers). This method makes filing easier but be sure you qualify under the $400,000 limit before using it.</p>
+<div class="gcpa-callout red">
+<span class="co-tag">Risk Warning</span>
+<p><strong>Risk Warning:</strong> Under the Quick Method you cannot claim input tax credits on most operating expenses. Please do not elect it before comparing it with the regular method.</p>
+</div>
+<h3>Voluntary Registration Backdating Limits and Conditions</h3>
+<p>If you register voluntarily, CRA may let you backdate your start date up to 30 days before applying. This can help get input tax credits from early expenses. But:</p>
+<ul>
+<li>You can’t backdate before your first sale.</li>
+<li>Once backdated, you must charge tax from that earlier date.</li>
+<li>A CPA should check this carefully because wrong timing causes trouble tied to GST/HST registration requirements Canada.</li>
+</ul>
+<div class="gcpa-callout red">
+<span class="co-tag">Risk Warning</span>
+<p><strong>Risk Warning:</strong> A backdated registration means tax is owed on sales from the earlier date. Please do not backdate unless you can charge or absorb that tax.</p>
+</div>
+<h3>Associated Persons and Their Effect on Registration Thresholds</h3>
+<p>When figuring out if you passed the $30,000 small supplier limit, include taxable supplies from associated persons too—businesses connected by ownership or control.[9] Forgetting these could mean missing mandatory registration deadlines under Canadian law.[10] Talk with a CPA about how this affects your HST registration threshold duties.</p>
+<div class="gcpa-disclaimer">
+<p>Department of Finance Canada – Current GST/HST Rates</p>
+<p>CRA Guide RC4022 – Place-of-Supply Rules</p>
+<p>Budget Implementation Act (Canada) – Small Supplier Threshold Confirmation</p>
+<p>CRA Guide RC4022 – Filing Frequencies &amp; Remittance Methods</p>
+<p>Excise Tax Act s165(3)</p>
+<p>Excise Tax Act s123(1)</p>
+<p>Excise Tax Act s240(1)(b)</p>
+<p>CRA Guide RC4058 – Voluntary Registration Guidelines</p>
+<p>Excise Tax Act s148 - Small Supplier Calculation, Including Associated Persons</p>
+<p>Justice Laws Website - Section References</p>
+</div>
+<div class="gcpa-disclaimer">
+<p><sup>1</sup> Department of Finance Canada – Current GST/HST Rates</p>
+<p><sup>2</sup> CRA Guide RC4022 – Place-of-Supply Rules</p>
+<p><sup>3</sup> Budget Implementation Act (Canada) – Small Supplier Threshold Confirmation</p>
+<p><sup>4</sup> CRA Guide RC4022 – Filing Frequencies &amp; Remittance Methods</p>
+<p><sup>5</sup> Excise Tax Act s165(3)</p>
+<p><sup>6</sup> Excise Tax Act s123(1)</p>
+<p><sup>7</sup> Excise Tax Act s240(1)(b)</p>
+<p><sup>8</sup> CRA Guide RC4058 – Voluntary Registration Guidelines</p>
+<p><sup>9</sup> Excise Tax Act s148 - Small Supplier Calculation, Including Associated Persons</p>
+<p><sup>10</sup> Justice Laws Website - Section References</p>
+</div>
+<div class="gcpa-cta" style="background:linear-gradient(135deg,#0f2a4a 0%,#1c4a78 100%) !important;">
+<h4>Register on the right date, not just before the deadline</h4>
+<p>Incorporation from $35 including HST plus government fees, with a free CPA consultation on your threshold test and effective date. Please book a free consultation.</p>
+<div class="gcpa-trust"><span>1300+ 5-star Google reviews</span><span>Xero Partner Award Winner 2026</span><span>CPA Ontario Firm 61330051</span><span>30-Day Money-Back Guarantee</span></div>
+<div class="gcpa-btnrow"><a class="solid" href="https://gondaliyacpa.ca/consultation/">Book Free Consultation</a><a href="https://opencorporationfor35.ca/">Open Corporation For $35</a><a href="tel:+16472129559">647-212-9559</a></div>
+</div>
+
+<h2>Common Challenges and How to Avoid Them</h2>
+<div class="gcpa-numhead">
+<div class="num" style="background:#0f2a4a !important;color:#ffffff !important;">9</div>
+<h4 id="toc-challenges" style="border:none;padding:0;margin:0;">Common Challenges</h4>
+<span class="gcpa-pill teal">Avoid These</span>
+</div>
+<p>Registering for HST in Canada can be tricky. Many businesses don’t know exactly when to register or what GST/HST registration requirements Canada has. One big problem is tracking sales correctly to see if you passed the $30,000 small supplier threshold. Missing this causes late registration fines.</p>
+<p>Another mix-up happens with which sales count. Taxable and zero-rated supplies count, but exempt ones don’t. Some businesses forget to add taxable sales from worldwide sources or related persons, which changes their duty.</p>
+<p>To avoid trouble:</p>
+<ul>
+<li>Keep clear records of all sales every quarter.</li>
+<li>Check your taxable revenues often.</li>
+<li>Talk to a CPA early if your business grows fast or has many deals.</li>
+</ul>
+<p>Open Corporation for $35 helps with free talks to clear these rules before issues start.</p>
+<h3>Consequences of Missing the Registration Threshold or Late Registration</h3>
+<p>If you don’t register soon after passing the HST registration threshold Canada, you face problems. You have to charge HST from the right date, even if you signed up late. This means paying tax on past sales where you didn’t collect it.</p>
+<p>CRA can charge interest on taxes you didn’t pay and ask you to file old returns. Penalties might come too, but they depend on the situation; voluntary disclosure may help sometimes but isn’t a sure fix.</p>
+<p>Also, input tax credits get delayed since you can only claim them after registering under GST/HST registration requirements Canada.</p>
+<p>Businesses should watch sales closely and register within 29 days after hitting $30,000 in taxable revenue over one calendar quarter or four quarters in a row.</p>
+<h3>Handling Re-Openings of Closed GST/HST Accounts</h3>
+<p>If your GST/HST account closed but you start business again needing registration, reopening it needs steps under GST/HST registration requirements Canada.</p>
+<p>You must reapply via Business Registration Online (BRO) or call CRA directly. The effective date depends on when your new taxable activities start compared to your application date.</p>
+<p>Remember, any old unpaid amounts stay due unless worked out with CRA officers. Open Corporation for $35 helps clients reopen accounts smoothly and apply the right dates following rules now.</p>
+<h3>Restrictions Related to Temporary SINs and Registration Using BRO</h3>
+<p>Using a temporary Social Insurance Number (SIN) can cause trouble when registering via Business Registration Online (BRO). The system needs real ID numbers linked correctly with federal records per GST/HST registration requirements Canada.</p>
+<p>Temporary SIN users might wait longer or get asked for extra papers during setup because BRO checks info automatically with government data.</p>
+<p>People with temporary SINs should have proof ready and think about help from CPAs who know these limits well.</p>
+<h3>Tips for Small Suppliers and Self-Employed Individuals</h3>
+<p>Small suppliers close to the $30,000 HST registration threshold Canada wonder if they should register early before reaching it. Voluntary registration lets you claim input tax credits on start-up costs but means filing returns right away—even if not charging HST yet depending on supply type checked by a CPA.</p>
+<p><a href="https://opencorporationfor35.ca/convert-sole-proprietorship-corporation/">Self-employed people</a> should:</p>
+<ul>
+<li>Watch quarterly revenues carefully.</li>
+<li>Ask about whether to register early or only when needed based on customers — businesses or consumers.</li>
+<li>Know that once registered, regular filings are required no matter income changes later.</li>
+</ul>
+<p>Talk to a skilled accountant like those at Open Corporation for $35 before choosing when is best to sign up.</p>
+<h3>Practical Support Tools for GST/HST Management</h3>
+<p>Handling GST/HST duties gets easier using tools made around the newest 2026 thresholds including tracking small supplier status across provinces with HST rate shifts [Finance Canada].</p>
+<p>Tools like bookkeeping software linked with CRA features help watch taxable sales each quarter against legal limits set by Canadian Excise Tax Act rules today [CRA Guides RC4022].</p>
+<p>Some useful tools are:</p>
+<figure class="wp-block-table">
+<table>
+<thead><tr><th>Tool Type</th><th>Purpose</th></tr></thead>
+<tbody>
+<tr><td>Sales Tracking Software</td><td>Checks quarterly/four-quarter totals</td></tr>
+<tr><td>Filing Reminder Systems</td><td>Sends alerts about return deadlines</td></tr>
+<tr><td>Input Tax Credit Logs</td><td>Keeps track of allowed expenses after registration</td></tr>
+</tbody>
+</table>
+</figure>
+<p>These systems lower risks of missing deadlines or wrong tax amounts while helping stay within rules as your business grows.</p>
+<p>Sharad Gondaliya, CPA (Canada &amp; USA), has over 10 years helping Canadian business owners manage their taxes.</p>
+
+<h2>Summary of Key Points on HST Registration in Canada</h2>
+<div class="gcpa-numhead">
+<div class="num" style="background:#0f2a4a !important;color:#ffffff !important;">10</div>
+<h4 id="toc-summary-points" style="border:none;padding:0;margin:0;">Summary and Next Steps</h4>
+<span class="gcpa-pill green">Summary</span>
+</div>
+<p>You must register for HST in Canada when your taxable sales go over $30,000. This limit is called the small supplier threshold. You check this amount over one calendar quarter or over four quarters in a row. When you meet this, you must follow GST/HST registration requirements Canada has set. The CRA says you include sales from people connected to you. After registering, you need to charge HST from the date it starts and send tax returns on time.</p>
+<ul>
+<li>Register if sales exceed $30,000 in one quarter or four consecutive quarters</li>
+<li>Count worldwide taxable supplies and related persons’ sales</li>
+<li>Charge HST from your registration effective date</li>
+<li>File regular returns as required by CRA</li>
+</ul>
+<h3>Encouragement to Register Timely for Compliance and Financial Benefits</h3>
+<p>It’s smart to register as soon as you cross the HST registration threshold Canada sets. This keeps you following the law and stops fines for late registration or missed taxes. You can also register early on purpose. This lets you get back input tax credits for <a href="https://opencorporationfor35.ca/guides/cost-to-incorporate-in-canada/">start-up costs</a>. Those credits help your cash flow a lot. Knowing when to register for HST helps you meet GST/HST registration requirements Canada expects without any surprises.</p>
+<ul>
+<li>Avoid penalties by registering quickly after crossing the threshold</li>
+<li>Voluntary early registration lets you claim input tax credits</li>
+<li>Helps with cash flow by recovering expenses</li>
+<li>Keeps your business within legal tax rules</li>
+</ul>
+<h3>Contact Information and Next Steps for GST/HST Registration</h3>
+<p>If you want help with HST registration Canada, contact Open Corporation for $35. They are part of Gondaliya CPA and help businesses all over Ontario and Canada online. You can call 647-212-9559 or email info@gondaliyacpa.ca. They offer a free CPA talk to guide you through GST/HST account setup based on your business needs.</p>
+<ul>
+<li>Affordable <a href="https://opencorporationfor35.ca/incorporation-service-35/">$35 incorporation</a>, with GST/HST account registration available as a separate service</li>
+<li><strong>Phone:</strong> 647-212-9559</li>
+<li><strong>Email:</strong> info@gondaliyacpa.ca</li>
+<li>Free consultation with a CPA</li>
+</ul>
+<h3>Legal Disclaimer Regarding Tax Advice and Encouragement to Consult Professionals</h3>
+<p>GST/HST registration requirements Canada change based on details only a pro can fully know. This info here is general and not legal or tax advice for anyone’s specific case. We tell you to speak with a licensed CPA before signing up or charging tax. They check contracts, prices, what you sell, and supply rules that matter for your situation.</p>
+<ul>
+<li>Rules vary per business facts—get expert advice!</li>
+<li>This is general info, not legal advice</li>
+<li>Talk to a CPA before making tax decisions</li>
+</ul>
+<h3>Links to Related Articles on Canadian Tax Compliance and Business Registration</h3>
+<p>Learn more about taxes and business rules in Canada here:</p>
+<ul>
+<li>Ontario Incorporation Services</li>
+<li><a href="https://opencorporationfor35.ca/corporate-annual-filing/">Corporate Annual Filing Requirements</a></li>
+<li><a href="https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/gst-hst-register/register-gst-hst.html" rel="nofollow noopener" target="_blank">Understanding Small Supplier Rules in Canada (CRA)</a></li>
+<li><a href="https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/complete-file-input-tax-credit.html" rel="nofollow noopener" target="_blank">GST/HST Input Tax Credits Explained (CRA)</a></li>
+</ul>
+<p>Feel free to reach out if you want help with these topics or need guidance about the HST registration threshold Canada updates each year.</p>
+<p>— Sharad Gondaliya, CPA (Canada &amp; USA), has over 10 years helping many Canadian business owners.</p>
+<p>Reviewed by Sharad Gondaliya, CPA (Canada &amp; USA).</p>
+<p>Open Corporation for $35 works under Gondaliya CPA Professional Corporation — an Ontario CPA firm serving clients across Canada.</p>
+
+<h2>Frequently Asked Questions (FAQs) on HST Registration Canada</h2>
+<div class="gcpa-numhead">
+<div class="num" style="background:#0f2a4a !important;color:#ffffff !important;">11</div>
+<h4 id="toc-faq" style="border:none;padding:0;margin:0;">HST Registration FAQ</h4>
+<span class="gcpa-pill teal">FAQ</span>
+</div>
+<div class="gcpa-faq" id="faq-main">
+<details><summary>What is the public service body threshold for HST registration?<span class="pl">+</span></summary>
+<div class="ans"><p>The public service body threshold is $50,000 in taxable supplies over four consecutive quarters. Public bodies must register when they exceed this limit.</p></div></details>
+<details><summary>What is the registration deadline after crossing the HST threshold?<span class="pl">+</span></summary>
+<div class="ans"><p>You must register within 29 days after exceeding the $30,000 taxable supply threshold or starting a registrable activity.</p></div></details>
+<details><summary>How does Excise Tax Act s. 148 affect registration?<span class="pl">+</span></summary>
+<div class="ans"><p>Section 148 defines the small supplier threshold and when businesses must register for GST/HST based on taxable revenues.</p></div></details>
+<details><summary>What penalties exist under Excise Tax Act s. 240 for late registration?<span class="pl">+</span></summary>
+<div class="ans"><p>Section 240 sets the duty to register; it does not set the penalty. Tax you should have charged is still owed, with interest, and penalties under other sections such as 280.1 and 285 can apply.</p></div></details>
+<details><summary>What are filing frequency thresholds for GST/HST returns?<span class="pl">+</span></summary>
+<div class="ans"><p>Filing frequency depends on annual taxable supplies: annually up to $1.5M; quarterly between $1.5M and $6M; monthly over $6M.</p></div></details>
+<details><summary>Who qualifies for Quick Method remittance?<span class="pl">+</span></summary>
+<div class="ans"><p>Businesses with taxable supplies under $400,000 generally qualify to use the Quick Method, which simplifies tax remittance calculations.</p></div></details>
+<details><summary>Can I backdate voluntary registration for GST/HST?<span class="pl">+</span></summary>
+<div class="ans"><p>Yes, CRA generally allows backdating up to 30 days before applying if you were eligible and want to claim input tax credits earlier.</p></div></details>
+<details><summary>What are CRA Guide RC4022 and RC4027?<span class="pl">+</span></summary>
+<div class="ans"><p>RC4022 explains registration, filing frequencies, input tax credits and payment methods; RC4027 covers GST/HST for non-residents doing business in Canada.</p></div></details>
+<details><summary>How do digital economy suppliers handle HST registration?<span class="pl">+</span></summary>
+<div class="ans"><p>Digital suppliers selling to Canadian customers must register if their sales exceed thresholds, following place-of-supply rules for proper taxation.</p></div></details>
+<details><summary>What is a Business Number and RT0001 account?<span class="pl">+</span></summary>
+<div class="ans"><p>The Business Number (BN) is your unique federal ID. RT0001 is the GST/HST program account attached to your BN.</p></div></details>
+</div>
+<div class="gcpa-callout red">
+<span class="co-tag">Risk Warning</span>
+<p><strong>Risk Warning:</strong> Taxi and commercial ride-sharing drivers must register before their first fare. Please do not rely on the $30,000 threshold if you drive commercially.</p>
+</div>
+
+<h2>Additional Important Points on HST Registration and Compliance</h2>
+<div class="gcpa-numhead">
+<div class="num" style="background:#0f2a4a !important;color:#ffffff !important;">12</div>
+<h4 id="toc-points" style="border:none;padding:0;margin:0;">Additional Points and Quick Reference</h4>
+<span class="gcpa-pill gold">Checklist</span>
+</div>
+<ul>
+<li><strong>Associated Persons Sales:</strong> Include sales from related businesses when calculating your small supplier threshold under Excise Tax Act s. 148.</li>
+<li><strong>Place-of-Supply Rules:</strong> Charge tax based on where your customer receives goods or services, affecting your HST collection duties.</li>
+<li><strong>Filing Frequency Management:</strong> Monitor revenue levels yearly to adjust your GST/HST return schedule as per CRA guidelines.</li>
+<li><strong>Input Tax Credits (ITCs):</strong> Claim ITCs only on eligible business expenses with valid invoices from registered suppliers.</li>
+<li><strong>Self-Employed vs Corporation vs Partnership:</strong> Registration rules apply similarly, but filing obligations vary by business structure.</li>
+<li><strong>GST/HST Registration and Filing Cost:</strong> Open Corporation for $35 registers GST/HST accounts as part of its CRA Business Number and Account Registration service, quoted before any work starts.</li>
+<li><strong>DIY vs Tax Software vs CPA Tradeoffs:</strong> DIY saves cost but risks errors; software aids accuracy; CPA provides expert guidance and compliance assurance.</li>
+<li><strong>Effective Date Memo:</strong> Your registration effective date determines when you start charging HST and filing returns; missing deadlines causes penalties.</li>
+<li><strong>Threshold Test Worksheet:</strong> Use worksheets to track quarterly sales against thresholds ensuring timely registration decisions.</li>
+<li><strong>Invoice &amp; Filing Review:</strong> Regularly review your invoices and filings to confirm correct HST amounts are charged and reported.</li>
+<li><strong>First Return Filing:</strong> Submit your first GST/HST return by the due date following your chosen filing frequency after registration.</li>
+<li><strong>Risks, Compliance Issues, Prevention Controls:</strong> Avoid late registration penalties by monitoring sales carefully and maintaining clear records.</li>
+<li><strong>What to Prepare Before Registering:</strong> Gather business info like legal name, SIN/BN, fiscal year end, revenue estimates, and product details ahead of time.</li>
+<li><strong>10 Industries GST/HST Registration Differences:</strong> Certain sectors like taxis or real estate have specific rules affecting their registration timing and reporting.</li>
+<li><strong>Realistic Numeric Walkthrough:</strong> Calculate example revenues across quarters to see when you hit thresholds needing mandatory registration.</li>
+<li><strong>Choosing a CPA for GST/HST Registration &amp; Filing:</strong> A good CPA ensures accurate registrations, proper filing frequency selection, and optimal tax credits usage.</li>
+<li><strong>Trust in Open Corporation for $35:</strong> We provide clear guidance at an affordable price with expert support throughout your GST/HST compliance journey.</li>
+</ul>
+<p>Feel free to contact Open Corporation for $35 for expert help with all aspects of your HST registration in Canada.</p>
+<div class="gcpa-pillhead"><h4 style="border:none;padding:0;margin:0;">Quick Answers: Key Numbers at a Glance</h4><span class="gcpa-pill gold">At a Glance</span></div>
+<ul>
+<li><strong>Small supplier threshold:</strong> $30,000 in one calendar quarter or four straight quarters</li>
+<li><strong>Public service bodies:</strong> $50,000</li>
+<li><strong>Registration deadline:</strong> 29 days after crossing the threshold</li>
+<li><strong>Taxi and ride-sharing:</strong> Register from the first fare</li>
+<li><strong>Voluntary backdating:</strong> Generally up to 30 days</li>
+<li><strong>GST rate:</strong> 5%</li>
+<li><strong>HST rates:</strong> 13% Ontario, 14% Nova Scotia, 15% New Brunswick, Newfoundland and Labrador and Prince Edward Island</li>
+<li><strong>Quick Method limit:</strong> $400,000 in annual taxable supplies</li>
+<li><strong>Filing frequency:</strong> Annual up to $1,500,000, quarterly up to $6,000,000, monthly above</li>
+<li><strong>ITC invoice detail:</strong> Supplier's GST/HST number needed on purchases of $100 or more</li>
+</ul>
+<div class="gcpa-pillhead"><h4 style="border:none;padding:0;margin:0;">Who This Is For / Not For</h4><span class="gcpa-pill teal">Fit Check</span></div>
+<ul>
+<li><strong>For:</strong> New businesses tracking their sales, owners close to $30,000, anyone whose customers are mostly GST/HST-registered businesses, and taxi or ride-sharing drivers.</li>
+<li><strong>Not For:</strong> Businesses that only make exempt supplies, such as most residential rent or certain health services, which do not register for those sales.</li>
+</ul>
+<div class="gcpa-callout green">
+<span class="co-tag">Verdict</span>
+<p>Register when your taxable sales, with any associated businesses, pass $30,000 in a quarter or over four quarters, and work out your effective date first, because tax can start before you register. If most of your customers are registered businesses, registering early usually costs them nothing and lets you recover tax on your start-up costs.</p>
+</div>
+<div class="gcpa-callout blue">
+<span class="co-tag">2026 Update</span>
+<p><strong>2026 Update &mdash; what is current:</strong> This article reflects rules current to 2026. The $30,000 small supplier threshold, the $50,000 threshold for public service bodies, the 29-day registration window, the $1,500,000 and $6,000,000 filing-frequency limits, the $400,000 Quick Method limit and the 5% GST rate are unchanged. HST is 13% in Ontario, 14% in Nova Scotia since April 1, 2025, and 15% in New Brunswick, Newfoundland and Labrador and Prince Edward Island. Please note that taxi and commercial ride-sharing drivers must register from their first fare whatever their sales; that the $30,000 test counts worldwide taxable supplies, including zero-rated exports and those of associated persons, and <strong>not</strong> exempt supplies; that a voluntary registration can generally be backdated by no more than 30 days; and that an ITC claim on a purchase of $100 or more needs the supplier's GST/HST registration number on the invoice.</p>
+</div>
+<h5 style="color:#15355c;margin:24px 0 8px;">GST/HST Registration Readiness Check</h5>
+<p>This quick self-check flags what to work through before you register. Please answer the six questions below.</p>
+<div id="ocf-chk">
+  <style>
+    #ocf-chk{--n:#0f2a4a;--n2:#15355c;--bl:#1c6dd0;--tl:#0c8f8f;--gd:#c9991f;--rd:#c0392b;--ink:#1d2733;--mut:#5a6b7b;--ln:#d8e0e8;--alt:#f5f8fb;
+      border:1px solid var(--ln);border-radius:14px;overflow:hidden;background:#fff;box-shadow:0 10px 30px rgba(15,42,74,.08);font-family:inherit;color:var(--ink);margin:24px 0;}
+    #ocf-chk *{box-sizing:border-box;}
+    #ocf-chk .s-head{background:linear-gradient(135deg,var(--n),var(--n2));color:#fff;padding:18px 22px;}
+    #ocf-chk .s-head h5{margin:0;font-size:19px;font-weight:700;color:#fff!important;}
+    #ocf-chk .s-head p{margin:4px 0 0;font-size:13px;color:#cfe2f8!important;}
+    #ocf-chk .s-body{padding:20px 22px;}
+    #ocf-chk .s-q{padding:13px 0;border-bottom:1px solid var(--ln);display:flex;justify-content:space-between;align-items:center;gap:14px;}
+    #ocf-chk .s-q:first-child{padding-top:2px;}
+    #ocf-chk .s-q span.s-lab{font-weight:600;font-size:14.5px;color:var(--n);}
+    #ocf-chk .s-seg{display:inline-flex;border:1px solid var(--ln);border-radius:10px;overflow:hidden;flex:0 0 auto;}
+    #ocf-chk .s-seg label{cursor:pointer;padding:8px 18px;font-size:14px;font-weight:600;color:var(--mut);background:var(--alt);transition:.15s;user-select:none;}
+    #ocf-chk .s-seg label+label{border-left:1px solid var(--ln);}
+    #ocf-chk .s-seg input{position:absolute;opacity:0;width:0;height:0;}
+    #ocf-chk .s-seg input:checked+label{background:var(--n);color:#fff!important;}
+    #ocf-chk .s-go{margin-top:18px;width:100%;border:none;border-radius:11px;padding:14px 18px;font-size:15.5px;font-weight:700;color:#fff!important;cursor:pointer;background:linear-gradient(135deg,var(--bl),var(--tl));font-family:inherit;}
+    #ocf-chk .s-go:hover{filter:brightness(1.05);}
+    #ocf-chk .s-msg{display:none;margin-top:12px;font-size:13.5px;color:var(--rd);font-weight:600;}
+    #ocf-chk .s-out{display:none;margin-top:18px;border-radius:12px;border:1px solid var(--ln);overflow:hidden;}
+    #ocf-chk .s-out .s-status{padding:14px 18px;font-weight:700;font-size:16px;color:#fff!important;background:linear-gradient(135deg,var(--n),var(--n2));}
+    #ocf-chk .s-out .s-inner{padding:16px 18px;background:var(--alt);}
+    #ocf-chk .s-row{font-size:14.5px;margin:0 0 10px;line-height:1.5;}
+    #ocf-chk .s-count{display:inline-block;background:#fff;border:1px solid var(--ln);border-radius:9px;padding:8px 14px;font-weight:700;color:var(--n);font-size:14.5px;}
+    #ocf-chk .s-list{margin:8px 0 0;padding-left:18px;}
+    #ocf-chk .s-list li{font-size:13.5px;color:var(--ink);margin:4px 0;border:none;padding:0 0 0 4px;}
+    #ocf-chk .s-list li::before{display:none;}
+    #ocf-chk .s-cta{display:inline-block;margin-top:14px;background:var(--gd);color:#fff!important;font-weight:700;font-size:14.5px;text-decoration:none;padding:11px 20px;border-radius:10px;}
+    #ocf-chk .s-note{font-size:12.5px;color:var(--mut);margin:12px 0 0;}
+    @media(max-width:560px){#ocf-chk .s-q{flex-direction:column;align-items:flex-start;gap:8px;}}
+  </style>
+  <div class="s-head" style="background:linear-gradient(135deg,#0f2a4a,#15355c) !important;">
+    <h5>GST/HST Registration Readiness Check</h5>
+    <p>Six quick questions. No tax calculation, no figure quoted.</p>
+  </div>
+  <div class="s-body">
+    <div class="s-q" data-flag="1" data-msg="Mandatory registration now, with tax charged from the sale that took you over"><span class="s-lab">1. Have your taxable sales gone over $30,000 in any single calendar quarter?</span>
+      <span class="s-seg"><input type="radio" id="c-a-y" name="c-a" value="1"><label for="c-a-y">Yes</label><input type="radio" id="c-a-n" name="c-a" value="0"><label for="c-a-n">No</label></span></div>
+    <div class="s-q" data-flag="1" data-msg="Mandatory registration within 29 days, with tax from the first day of the second month after that quarter"><span class="s-lab">2. Have your last four quarters together gone over $30,000?</span>
+      <span class="s-seg"><input type="radio" id="c-b-y" name="c-b" value="1"><label for="c-b-y">Yes</label><input type="radio" id="c-b-n" name="c-b" value="0"><label for="c-b-n">No</label></span></div>
+    <div class="s-q" data-flag="1" data-msg="Registration from your first fare, whatever your sales"><span class="s-lab">3. Do you drive a taxi or for a ride-sharing app?</span>
+      <span class="s-seg"><input type="radio" id="c-c-y" name="c-c" value="1"><label for="c-c-y">Yes</label><input type="radio" id="c-c-n" name="c-c" value="0"><label for="c-c-n">No</label></span></div>
+    <div class="s-q" data-flag="1" data-msg="Adding the associated business's taxable sales to your own threshold test"><span class="s-lab">4. Do you own or control another business?</span>
+      <span class="s-seg"><input type="radio" id="c-d-y" name="c-d" value="1"><label for="c-d-y">Yes</label><input type="radio" id="c-d-n" name="c-d" value="0"><label for="c-d-n">No</label></span></div>
+    <div class="s-q" data-flag="1" data-msg="Voluntary registration, since business customers recover the tax you charge and you recover tax on your costs"><span class="s-lab">5. Are most of your customers GST/HST-registered businesses?</span>
+      <span class="s-seg"><input type="radio" id="c-e-y" name="c-e" value="1"><label for="c-e-y">Yes</label><input type="radio" id="c-e-n" name="c-e" value="0"><label for="c-e-n">No</label></span></div>
+    <div class="s-q" data-flag="1" data-msg="Place-of-supply rules, to charge the right GST or HST rate for each customer's province"><span class="s-lab">6. Do you sell to customers in other provinces?</span>
+      <span class="s-seg"><input type="radio" id="c-f-y" name="c-f" value="1"><label for="c-f-y">Yes</label><input type="radio" id="c-f-n" name="c-f" value="0"><label for="c-f-n">No</label></span></div>
+    <button type="button" class="s-go" id="c-go">Check my readiness</button>
+    <div class="s-msg" id="c-msg">Please answer all six questions to continue.</div>
+    <div class="s-out" id="c-out">
+      <div class="s-status" id="c-status" style="background:linear-gradient(135deg,#0f2a4a,#15355c) !important;">Your profile</div>
+      <div class="s-inner">
+        <p class="s-row"><b>Points to work through:</b> <span class="s-count" id="c-count"></span></p>
+        <div id="c-listwrap" style="display:none;"><p class="s-row" style="margin-bottom:4px;"><b>Worth reviewing with us:</b></p><ul class="s-list" id="c-list"></ul></div>
+        <p class="s-row" id="c-clean" style="display:none;"><b>Nothing flagged.</b> The usual complications do not appear to apply to you.</p>
+        <a class="s-cta" href="https://gondaliyacpa.ca/consultation/">Book a free consultation</a>
+        <p class="s-note">This is a general prompt, not tax advice, and it does not calculate your tax. Your outcome depends on your full facts, so please book a free consultation.</p>
+      </div>
+    </div>
+  </div>
+  <script>
+  (function(){
+    var root=document.getElementById('ocf-chk');
+    root.querySelector('#c-go').addEventListener('click',function(){
+      var qs=root.querySelectorAll('.s-q'), items=[], missing=false;
+      qs.forEach(function(q){
+        var x=q.querySelector('input:checked');
+        if(!x){missing=true;return;}
+        if(x.value===q.getAttribute('data-flag')) items.push(q.getAttribute('data-msg'));
+      });
+      var msg=root.querySelector('#c-msg'), out=root.querySelector('#c-out');
+      if(missing){msg.style.display='block';out.style.display='none';return;}
+      msg.style.display='none';
+      var list=root.querySelector('#c-list'), lw=root.querySelector('#c-listwrap'), clean=root.querySelector('#c-clean');
+      root.querySelector('#c-count').textContent=items.length+' to work through';
+      list.innerHTML='';
+      if(items.length){lw.style.display='block';clean.style.display='none';items.forEach(function(t){var li=document.createElement('li');li.textContent=t;list.appendChild(li);});}
+      else{lw.style.display='none';clean.style.display='block';}
+      root.querySelector('#c-status').textContent = items.length>=3 ? 'Several points need attention' : (items.length>=1 ? 'A few points to work through' : 'A straightforward case');
+      out.style.display='block';
+    });
+  })();
+  </script>
+</div>
+<div class="gcpa-cta" style="background:linear-gradient(135deg,#0f2a4a 0%,#1c4a78 100%) !important;">
+<h4>Work out your effective date before you register</h4>
+<p>Incorporation from $35 including HST plus government fees, with a free CPA consultation on your GST/HST registration. Please book a free consultation.</p>
+<div class="gcpa-trust"><span>1300+ 5-star Google reviews</span><span>Xero Partner Award Winner 2026</span><span>30-Day Money-Back Guarantee</span><span>60-Day Fee Matching</span></div>
+<div class="gcpa-btnrow"><a class="solid" href="https://gondaliyacpa.ca/consultation/">Book Free Consultation</a><a href="https://opencorporationfor35.ca/address-service-100/">Address Service</a><a href="https://opencorporationfor35.ca/contact-us/">Contact Us</a></div>
+</div>
+<h3 class="gcpa-closing" id="toc-closing">What to Send Us</h3>
+<p>Send us your taxable sales for each of the last four calendar quarters, the sales of any business you own or control, the provinces your customers are in, and whether they are mostly businesses or consumers. That is enough for us to tell you whether you must register, from what date, and whether registering early makes sense. Please start on our <a href="https://opencorporationfor35.ca/incorporation-form/">incorporation form</a> or see every fee on our <a href="https://opencorporationfor35.ca/pricing/">pricing page</a>.</p>
+<div class="gcpa-author">
+<div class="ava" style="background:linear-gradient(135deg,#0f2a4a,#0c8f8f) !important;color:#ffffff !important;">SG</div>
+<div class="info">
+<h5>Sharad Gondaliya, CPA (Canada &amp; USA) — Founder &amp; Managing Director, Gondaliya CPA Professional Corporation</h5>
+<div class="role">Reviewed and fact-checked by Sharad Gondaliya, CPA (Canada &amp; USA)</div>
+<p style="font-size:14.5px;color:#15355c !important;font-weight:700;margin:0 0 8px;">Open Corporation for $35 is a department of Gondaliya CPA.</p>
+<p>We incorporate and support companies in all 13 provinces and territories, handling CRA registrations, corporate tax filing, bookkeeping, GST/HST, payroll and audit support. Verify our firm on the <a href="https://www.cpaontario.ca/protecting-the-public/directories/firm/gondaliya-5sqvmj">CPA Ontario public firm directory</a>, firm registration 61330051.</p>
+<p style="font-size:13.5px;color:#15355c !important;font-weight:700;margin-top:10px;">CPA Ontario | CPA USA (Washington &amp; Montana) | Xero Partner Award Winner 2026 | 1300+ 5-star Google reviews</p>
+</div>
+</div>
+<p style="font-size:13px;color:#5a6b7b;border-top:1px solid #e3e9f0;padding-top:16px;margin-top:8px;"><strong>Published:</strong> November 4, 2026 &nbsp;·&nbsp; <strong>Last updated:</strong> November 4, 2026</p>
+<p style="font-size:13px;color:#5a6b7b;"><strong>Editorial policy:</strong> Our content is prepared by our team and reviewed by Sharad Gondaliya, CPA, and we update it as GST/HST thresholds, rates and CRA administrative policy change.</p>
+<p style="font-size:13px;color:#5a6b7b;"><strong>Disclaimer:</strong> This article is educational information only and is not tax, legal, or financial advice. Your registration date depends on your own sales history and business facts. Please consult a CPA before acting.</p>
+<p style="font-size:14.5px;color:#15355c;font-weight:700;border-top:2px solid #e3e9f0;padding-top:16px;margin-top:20px;">Open Corporation for $35 is a department of Gondaliya CPA.</p>
+<p style="font-size:13px;color:#5a6b7b;">Operated by WealthBamboo Inc. Parent firm Gondaliya CPA Professional Corporation, CPA Ontario firm registration 61330051. Xero Partner Award Winner 2026. 1300+ five-star Google reviews. 30-day money-back guarantee and 60-day fee-matching policy. Phone 647-212-9559, email info@gondaliyacpa.ca, open 9:00 AM to 8:30 PM Monday to Sunday. Payment by Interac e-Transfer to info@gondaliyacpa.ca only, security question "Not Applicable" as auto-deposit is enabled. Card is also accepted.</p>
+</div>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@graph": [{"@type": "BlogPosting", "@id": "https://opencorporationfor35.ca/hst-registration-canada-when-to-register/#article", "headline": "HST Registration in Canada: When Does Your Business Need to Register?", "description": "When your business must register for GST/HST in Canada: the $30,000 small supplier test, the 29-day deadline, effective dates, rates and voluntary registration.", "datePublished": "2026-11-04", "dateModified": "2026-11-04", "author": {"@type": "Person", "name": "Sharad Gondaliya, CPA"}, "publisher": {"@type": "Organization", "name": "Open Corporation for $35", "description": "Open Corporation for $35 is a department of Gondaliya CPA.", "parentOrganization": {"@type": "AccountingService", "name": "Gondaliya CPA Professional Corporation", "identifier": "CPA Ontario Firm Registration 61330051"}}, "mainEntityOfPage": "https://opencorporationfor35.ca/hst-registration-canada-when-to-register/"}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is the public service body threshold for HST registration?", "acceptedAnswer": {"@type": "Answer", "text": "The public service body threshold is $50,000 in taxable supplies over four consecutive quarters. Public bodies must register when they exceed this limit."}}, {"@type": "Question", "name": "What is the registration deadline after crossing the HST threshold?", "acceptedAnswer": {"@type": "Answer", "text": "You must register within 29 days after exceeding the $30,000 taxable supply threshold or starting a registrable activity."}}, {"@type": "Question", "name": "How does Excise Tax Act s. 148 affect registration?", "acceptedAnswer": {"@type": "Answer", "text": "Section 148 defines the small supplier threshold and when businesses must register for GST/HST based on taxable revenues."}}, {"@type": "Question", "name": "What penalties exist under Excise Tax Act s. 240 for late registration?", "acceptedAnswer": {"@type": "Answer", "text": "Section 240 sets the duty to register; it does not set the penalty. Tax you should have charged is still owed, with interest, and penalties under other sections such as 280.1 and 285 can apply."}}, {"@type": "Question", "name": "What are filing frequency thresholds for GST/HST returns?", "acceptedAnswer": {"@type": "Answer", "text": "Filing frequency depends on annual taxable supplies: annually up to $1.5M; quarterly between $1.5M and $6M; monthly over $6M."}}, {"@type": "Question", "name": "Who qualifies for Quick Method remittance?", "acceptedAnswer": {"@type": "Answer", "text": "Businesses with taxable supplies under $400,000 generally qualify to use the Quick Method, which simplifies tax remittance calculations."}}, {"@type": "Question", "name": "Can I backdate voluntary registration for GST/HST?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, CRA generally allows backdating up to 30 days before applying if you were eligible and want to claim input tax credits earlier."}}, {"@type": "Question", "name": "What are CRA Guide RC4022 and RC4027?", "acceptedAnswer": {"@type": "Answer", "text": "RC4022 explains registration, filing frequencies, input tax credits and payment methods; RC4027 covers GST/HST for non-residents doing business in Canada."}}, {"@type": "Question", "name": "How do digital economy suppliers handle HST registration?", "acceptedAnswer": {"@type": "Answer", "text": "Digital suppliers selling to Canadian customers must register if their sales exceed thresholds, following place-of-supply rules for proper taxation."}}, {"@type": "Question", "name": "What is a Business Number and RT0001 account?", "acceptedAnswer": {"@type": "Answer", "text": "The Business Number (BN) is your unique federal ID. RT0001 is the GST/HST program account attached to your BN."}}]}]}
+</script>

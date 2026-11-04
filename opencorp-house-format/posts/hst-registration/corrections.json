@@ -1,0 +1,177 @@
+[
+ {
+  "from": "The $30,000 threshold means if your taxable supplies reach this number in a quarter—or total it over four quarters—you have to register with CRA before charging more tax.",
+  "to": "The $30,000 threshold means if your taxable supplies go over this number in a quarter—or in total over four quarters—you have to register with CRA, and in the single-quarter case you charge tax starting with the sale that takes you over.",
+  "kind": "fact"
+ },
+ {
+  "from": "No matter how much they earn yearly—they usually must register because their rides count as taxable services wherever they work.",
+  "to": "No matter how much they earn yearly—they must register from their first fare, because a special rule in the Excise Tax Act removes the small supplier exemption for taxi and commercial ride-sharing services.",
+  "kind": "fact"
+ },
+ {
+  "from": "Taxable supplies made in Canada\tYes",
+  "to": "Taxable supplies made inside or outside Canada\tYes",
+  "kind": "fact"
+ },
+ {
+  "from": "but take longer than online (CRA Guide RC4027).",
+  "to": "but take longer than online (CRA Form RC1 and Guide RC4022).",
+  "kind": "fact"
+ },
+ {
+  "from": "Might need local reps depending on province",
+  "to": "Might need to post security with CRA if they have no permanent establishment in Canada",
+  "kind": "fact"
+ },
+ {
+  "from": "If your business runs many places across provinces, each might need its own branch gst/hst accounts canada*. Each location has its own RT program account if it runs different divisions with different rates.",
+  "to": "If your business runs many places across provinces, each branch or division can apply for its own GST/HST account. Each can have its own RT program account if it keeps separate records and qualifies under section 239.",
+  "kind": "fact"
+ },
+ {
+  "from": "like Ontario vs British Columbia (Excise Tax Act s240(1)).",
+  "to": "like Ontario vs British Columbia (Excise Tax Act s239).",
+  "kind": "fact"
+ },
+ {
+  "from": "The first day of the month after a calendar quarter where you go over $30,000 taxable supplies.\nThe day after 4 straight calendar quarters total more than $30,000.",
+  "to": "The day of the sale that takes you over $30,000 in taxable supplies in a single calendar quarter.\nThe first day of the second month after the calendar quarter in which your last 4 straight calendar quarters total more than $30,000.",
+  "kind": "fact"
+ },
+ {
+  "from": "You pay taxes one month after each reporting period ends.",
+  "to": "You pay taxes one month after each monthly or quarterly reporting period ends, or three months after the year-end for most annual filers.",
+  "kind": "fact"
+ },
+ {
+  "from": "Penalties can apply under Excise Tax Act section 240.4",
+  "to": "Interest and penalties can apply on tax you should have collected; Excise Tax Act section 240 sets the duty to register.4",
+  "kind": "fact"
+ },
+ {
+  "from": "Ontario has 13%, Nova Scotia, New Brunswick, Newfoundland and Labrador, and Prince Edward Island all have 15%.",
+  "to": "Ontario has 13%, Nova Scotia has 14%, and New Brunswick, Newfoundland and Labrador, and Prince Edward Island all have 15%.",
+  "kind": "fact"
+ },
+ {
+  "from": "Some small suppliers can use the Quick Method",
+  "to": "Some registrants with annual taxable supplies of $400,000 or less can use the Quick Method",
+  "kind": "fact"
+ },
+ {
+  "from": "This method makes filing easier but be sure you qualify based on HST registration threshold Canada before using it.",
+  "to": "This method makes filing easier but be sure you qualify under the $400,000 limit before using it.",
+  "kind": "fact"
+ },
+ {
+  "from": "CRA may let you backdate your start date up to three months before applying.",
+  "to": "CRA may let you backdate your start date up to 30 days before applying.",
+  "kind": "fact"
+ },
+ {
+  "from": "CRA Publication RC4027 – Filing Frequencies & Remittance Methods\nExcise Tax Act s165(3)",
+  "to": "CRA Guide RC4022 – Filing Frequencies & Remittance Methods\nExcise Tax Act s165(3)",
+  "kind": "fact"
+ },
+ {
+  "from": "[^4]: CRA Publication RC4027 – Filing Frequencies & Remittance Methods",
+  "to": "[^4]: CRA Guide RC4022 – Filing Frequencies & Remittance Methods",
+  "kind": "fact"
+ },
+ {
+  "from": "Excise Tax Act s148 - Definition of Associated Persons\nJustice Laws",
+  "to": "Excise Tax Act s148 - Small Supplier Calculation, Including Associated Persons\nJustice Laws",
+  "kind": "fact"
+ },
+ {
+  "from": "[^9]: Excise Tax Act s148 - Definition of Associated Persons",
+  "to": "[^9]: Excise Tax Act s148 - Small Supplier Calculation, Including Associated Persons",
+  "kind": "fact"
+ },
+ {
+  "from": "Affordable service at $35 to register your business",
+  "to": "Affordable $35 incorporation, with GST/HST account registration available as a separate service",
+  "kind": "fact"
+ },
+ {
+  "from": "Section 240 sets fines and penalties if you fail to register on time or do not charge HST as required.",
+  "to": "Section 240 sets the duty to register; it does not set the penalty. Tax you should have charged is still owed, with interest, and penalties under other sections such as 280.1 and 285 can apply.",
+  "kind": "fact"
+ },
+ {
+  "from": "Yes, CRA allows backdating up to three months before applying if you were eligible and want to claim input tax credits earlier.",
+  "to": "Yes, CRA generally allows backdating up to 30 days before applying if you were eligible and want to claim input tax credits earlier.",
+  "kind": "fact"
+ },
+ {
+  "from": "RC4022 explains input tax credits and registration rules; RC4027 covers filing frequencies and payment methods for GST/HST.",
+  "to": "RC4022 explains registration, filing frequencies, input tax credits and payment methods; RC4027 covers GST/HST for non-residents doing business in Canada.",
+  "kind": "fact"
+ },
+ {
+  "from": "GST/HST Registration and Filing Cost: Registering through Open Corporation for $35 offers affordable setup compared to using a CPA or software services.",
+  "to": "GST/HST Registration and Filing Cost: Open Corporation for $35 registers GST/HST accounts as part of its CRA Business Number and Account Registration service, quoted before any work starts.",
+  "kind": "fact"
+ },
+ {
+  "from": "The $30,000 H ST Registration Threshold Explained",
+  "to": "The $30,000 HST Registration Threshold Explained",
+  "kind": "typo"
+ },
+ {
+  "from": "Using BRO follows all current HGSt/registration online canada* rules so no paper delays happen.",
+  "to": "Using BRO follows all current GST/HST online registration rules so no paper delays happen.",
+  "kind": "typo"
+ },
+ {
+  "from": "Both ways follow gross sales thresholds hst canada* rules",
+  "to": "Both ways follow the same sales threshold rules",
+  "kind": "typo"
+ },
+ {
+  "from": "voluntary hst registartion options",
+  "to": "voluntary HST registration options",
+  "kind": "typo"
+ },
+ {
+  "from": "must follow gst/hst canadian business* rules:",
+  "to": "must follow the GST/HST rules for doing business in Canada:",
+  "kind": "typo"
+ },
+ {
+  "from": "Hst non-resident registrant rules",
+  "to": "HST non-resident registrant rules",
+  "kind": "typo"
+ },
+ {
+  "from": "Multiple gst/hst program accounts help",
+  "to": "Multiple GST/HST program accounts help",
+  "kind": "typo"
+ },
+ {
+  "from": "how this affects your hst_registration_threshold_canada duties.",
+  "to": "how this affects your HST registration threshold duties.",
+  "kind": "typo"
+ },
+ {
+  "from": "under Canadian rules about gst/hst registration requirements canada.",
+  "to": "under Canadian GST/HST registration requirements.",
+  "kind": "typo"
+ },
+ {
+  "from": "besides gst/hst registrations canada needs.",
+  "to": "besides GST/HST registrations.",
+  "kind": "typo"
+ },
+ {
+  "from": "Department of Finance Canada – Current GST/HSTRates\nCRA Guide",
+  "to": "Department of Finance Canada – Current GST/HST Rates\nCRA Guide",
+  "kind": "typo"
+ },
+ {
+  "from": "[^1]: Department of Finance Canada – Current GST/HSTRates",
+  "to": "[^1]: Department of Finance Canada – Current GST/HST Rates",
+  "kind": "typo"
+ }
+]
