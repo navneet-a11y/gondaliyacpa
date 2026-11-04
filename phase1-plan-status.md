@@ -14,10 +14,10 @@ Checked against the live WordPress site on 14 October 2026, updated 16 October 2
 | Pricing | 3 | 3 | 0 | 0 |
 | Compare | 14 | 14 | 0 | 0 |
 | Guides | 34 | 34 | 0 | 0 |
-| Blog | 13 | 4 | 0 | 9 |
+| Blog | 13 | 7 | 0 | 6 |
 | About, Team, Reviews, Contact and Legal | 24 | 24 | 0 | 0 |
 | French Quebec | 10 | 0 | 0 | 10 |
-| **Total** | **201** | **182** | **0** | **19** |
+| **Total** | **201** | **185** | **0** | **16** |
 
 ## Home
 
@@ -219,10 +219,10 @@ Checked against the live WordPress site on 14 October 2026, updated 16 October 2
 |---|---|---|---|
 | /blog/when-does-incorporating-actually-save-tax/ | P1 | Built (different URL) | /when-does-incorporating-save-tax-canada/ |
 | /blog/what-a-cpa-checks-before-you-incorporate/ | P1 | Built (different URL) | /what-cpa-checks-before-incorporating-canada/ |
-| /blog/can-my-spouse-own-shares-in-my-corporation/ | P1 | Not built |  |
-| /blog/hst-registration-when-to-register/ | P1 | Not built |  |
+| /blog/can-my-spouse-own-shares-in-my-corporation/ | P1 | Built (different URL), post 10859 | /spouse-own-shares-corporation-canada/ |
+| /blog/hst-registration-when-to-register/ | P1 | Built (different URL), post 11018 | /hst-registration-canada-when-to-register/ |
 | /blog/why-our-incorporation-fee-is-35-dollars/ | P1 | Not built |  |
-| /blog/first-year-filing-calendar-for-a-new-corporation/ | P1 | Not built |  |
+| /blog/first-year-filing-calendar-for-a-new-corporation/ | P1 | Built (different URL), post 10762 | /first-year-filing-calendar-new-corporation/ |
 | /blog/incorporation-fee-changes-2026/ | P2 | Not built |  |
 | /blog/five-mistakes-first-time-incorporators-make/ | P2 | Built (different URL) | /five-mistakes-first-time-incorporators-make/ |
 | /blog/how-long-does-incorporation-take-in-canada/ | P2 | Not built |  |
