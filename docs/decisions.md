@@ -6754,3 +6754,22 @@ occurrence, not distinct URLs. With 19 links to 9 distinct URLs against a cap
 of 20, that mattered: the number read as "nearly out of destinations" when it
 meant "nearly out of links". The line now prints both. The cap check itself
 was always on the stricter figure and is unchanged.
+
+### Content column narrowed (same day)
+
+Navneet: "width too much body content". The wrap was 1100px, so prose ran
+about 105 characters a line, well past a comfortable measure.
+
+- `.si-wrap` 1100px to 900px. The content box is then 860px, which is exactly
+  the answer card and the FAQ list, so the page sits on one column instead of
+  a wide rail with two narrower elements floating inside it.
+- `.article p` capped at 760px, left-aligned on the same rail rather than
+  centred, so no left edge moves and line length drops to about 90
+  characters.
+- `.si-case` 860px to 820px. The case study is prose as well, but it sits
+  outside `.article`, so the paragraph rule above does not reach it; its text
+  column now matches the body.
+
+Checked in a headless render at 1280px: the three-card grid is 285px a card,
+the comparison table is comfortable at the narrower width, and the crumb,
+heading and body paragraph all start on the same left rail.
