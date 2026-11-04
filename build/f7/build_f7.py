@@ -110,6 +110,11 @@ CSS = r"""<style>
 .si-stamp{font-size:14px;color:#636363;margin:0 0 6px}
 .entry-header{display:none!important}
 .ast-article-single,.ast-article-single .entry-content{margin-top:0;padding-top:0}
+/* width held twice: on the wrap, and on each element that would stretch if the theme overrides the wrap */
+.si-section>.si-wrap,.si-section-alt>.si-wrap,.si-section-dark>.si-wrap{max-width:900px;margin-left:auto;margin-right:auto}
+.si-wrap .si-tbl,.si-wrap .si-info,.si-wrap .si-warn,.si-wrap .si-check,.si-wrap .si-cards,.si-wrap .si-h2,.si-wrap .si-stamp{max-width:860px}
+.si-wrap .si-h2c{max-width:860px;margin-left:auto;margin-right:auto}
+.si-section,.si-section-alt,.si-section-dark{padding-left:max(20px,calc((100% - 900px)/2));padding-right:max(20px,calc((100% - 900px)/2))}
 @media(max-width:900px){.si-cards{grid-template-columns:1fr}}
 @media(max-width:600px){.si-hero h1{font-size:1.6em}.si-answer{padding:20px 22px}}
 </style>"""

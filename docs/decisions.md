@@ -6773,3 +6773,48 @@ about 105 characters a line, well past a comfortable measure.
 Checked in a headless render at 1280px: the three-card grid is 285px a card,
 the comparison table is comfortable at the narrower width, and the crumb,
 heading and body paragraph all start on the same left rail.
+
+### Full-width elements, and a page cache nobody had mentioned
+
+Navneet, after the narrowing: the page still had "too much full width". The
+screenshot showed the pattern exactly: paragraphs obeyed their 760px cap, but
+the comparison table, the info and warning boxes, the tick lists and the card
+grid still ran the whole window.
+
+The diagnosis was in the page itself. **Every element carrying its own
+`max-width` rendered at the right size** (`.si-answer`, `.si-faq-list`,
+`.si-case`), and **only the elements relying on `.si-wrap` did not**. So
+`.si-wrap{max-width:900px}` was losing on the live theme while the rest of the
+same stylesheet applied. The live cascade cannot be read from this session:
+the Rank Math head reader is switched off on the corpnil connector and the
+domain is blocked at the proxy.
+
+Rather than guess at the opponent or reach for `!important`, the width is now
+held three ways:
+
+1. `.si-section>.si-wrap` and siblings, at 0,0,2,0 specificity instead of
+   0,0,1,0.
+2. Each element that would otherwise stretch carries its own `max-width:860px`
+   -- the same treatment that already demonstrably works on this page.
+3. The sections centre the column from their own `padding-left/right`
+   (`max(20px,calc((100% - 900px)/2))`), which no wrapper rule can override.
+   The background still spans the window; only the content is inset.
+
+Tested headless at 1280px and 1600px, both normally and against a hostile
+`body .entry .si-wrap{max-width:100% !important}`. All four runs are
+identical: table 860, paragraph 760, same left rail, section background full
+width. The override no longer changes anything.
+
+**LiteSpeed Cache is active on this site**, which no note here had recorded.
+Clearing post 1670 reported three layers cleared: the Rank Math sitemap cache,
+Elementor, and LiteSpeed page cache. Two consequences worth carrying forward:
+
+- **A review of a just-published page can be of a stale render.** Clear the
+  post's cache after publishing, before asking anyone to look.
+- **LiteSpeed's CSS optimisation (minify, combine, UCSS) can rewrite or drop
+  rules**, and unused-CSS removal is a known hazard for CSS held inside an
+  inline `<style>` block, which is how every page on this site is built. This
+  is a plausible cause of the `.si-wrap` rule going missing and **needs
+  checking in LiteSpeed's settings before the remaining 19 Family 7 pages
+  publish.** Holding the width on the elements themselves makes the page
+  robust either way.
