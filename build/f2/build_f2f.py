@@ -113,7 +113,7 @@ sys.path.insert(0, HERE)
 
 from build_f2 import (render, meta, yn, a, DATE_JS, SITE, HUB, FORM, PRICE,
                       NOT_NIL, TOOL_DISCLAIMER)
-from build_f2b import tool, num, date, out_box, PICK, T, G, COST
+from build_f2b import tool, num, date, out_box, PICK, T, G, COST, CMP
 from build_f2c import DUE_JS, MONEY_JS, PARSE_JS, QUAL, PRELUDE
 from build_f2e import ORDER5, LINK_TITLE5, ADD_YEAR, SPAN_JS
 
@@ -1803,9 +1803,20 @@ for t in TOOLS6:
         assert g in _GUIDES_LIVE, (
             '%s: body links to /guides/%s/, which is not live' % (t['slug'], g))
 
+# Family 7 inbound links. Line 1529 sets F7's inbound minimum at 3 and its
+# anchor convention to the comparison title, so the anchor is the comparison
+# page's own H1 verbatim. A tool gets no F7 link unless it is named here.
+COMPARE_F7 = {
+ 'nil-gifi-balance-sheet-checker': [(CMP + 't2-short-vs-t2-short-plus-gifi/',
+                                            'T2 Short vs T2 Short plus GIFI')],
+}
+for _s in COMPARE_F7:
+    assert _s in {t['slug'] for t in TOOLS6}, 'COMPARE_F7 names %s, not in batch' % _s
+
 for t in TOOLS6:
     rel = [(T + s + '/', LINK_TITLE6[s]) for s in SIBLINGS6[t['slug']]]
     rel += [(G + g + '/', ttl) for g, ttl in GUIDES6[t['slug']]]
+    rel += COMPARE_F7.get(t['slug'], [])
     rel.append((COST, 'Nil T2 filing cost'))
     t['related'] = rel
 

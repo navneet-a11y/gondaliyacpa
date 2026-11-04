@@ -658,6 +658,10 @@ TOOLS = [
             'Schedule 50 shareholder threshold checker'),
            (SITE + '/guides/gifi-schedules-100-125-141/',
             'The complete guide to GIFI Schedules 100, 125 and 141'),
+           # Family 7, live 2026-11-04. Plan line 1529 sets F7's anchor
+           # convention to the comparison title, so this is its H1 verbatim.
+           (SITE + '/compare/t2-short-vs-t2-short-plus-gifi/',
+            'T2 Short vs T2 Short plus GIFI'),
            (SITE + '/guides/t2-schedules-on-a-nil-return/',
             'T2 schedules on a nil return'),
            (SITE + '/pricing/nil-t2-filing-cost/', 'Nil T2 filing cost')]),

@@ -6962,3 +6962,61 @@ bytes. `COMPARE_F7` maps now exist in `build_f2b.py`, `build_f2c.py`,
 `build_f2e.py` and `build_f2g.py`, each asserting its slugs are in that batch.
 `gate_f2_all.py` clear on 80 pages, `gate_rank_math.py` passes at 224 items,
 cache cleared for all six IDs.
+
+## 2026-11-04 — Family 7 page 4: `/compare/t2-short-vs-t2-short-plus-gifi/`
+
+ID 1705, 20,340 bytes, byte-identical to the gated build, `cnf_family` 20,
+fifteen FAQ items. Family 7 is 4 of 20.
+
+Chosen on the same line 1215 test, and the question behind it is a real one
+with a checker already on the site that answers it: whether GIFI Schedules
+100, 125 and 141 attach to a quiet return.
+
+### Said the same way the rest of the site already says it
+
+The position and the five triggers are taken from the live pages rather than
+written fresh, so the comparison cannot drift from the guide and the checker
+it sits next to:
+
+- `/guides/gifi-schedules-100-125-141/`: a corporation inactive all year with
+  nothing at all to report may omit the three, where nothing at all means no
+  assets, no liabilities, no equity balance, no revenue and no expenses, and
+  that is a narrower case than most owners assume.
+- `/tools/gifi-schedule-requirement-checker/`: the five triggers, copied
+  verbatim, and any one yes makes all three required.
+
+**One deliberate change from the guide's wording.** The guide makes its point
+with a share capital figure. That figure cannot appear on an F7 page, because
+`gate.py` allows only $300.00 and $350.00 anywhere and a stray money amount
+is exactly what that rule is for. The page says "share capital of any amount"
+instead, which is the stronger statement anyway.
+
+### Inbound links
+
+| Tool | ID | Before | After |
+|---|---|---|---|
+| `gifi-schedule-requirement-checker` | 1120 | 24,056 | 24,181 |
+| `nil-gifi-balance-sheet-checker` | 1425 | 28,998 | 29,123 |
+| `share-capital-reporting-checker` | 1514 | 29,166 | 29,291 |
+
+Each matched its local build before the edit; each grew by the same 125
+bytes. `build_f2.py` keeps an explicit related list per tool, so that one took
+a direct insertion rather than a `COMPARE_F7` map; `build_f2f.py` and
+`build_f2h.py` got the map. `gate_f2_all.py` clear on 80 pages,
+`gate_rank_math.py` passes at 225 items, cache cleared for all four IDs.
+
+### Where Family 7 stands
+
+Live: 4 of 20. Still buildable on the same test, both columns being our own
+fee: `/federal-corporation-vs-ontario-corporation-nil-filing/`,
+`/december-31-year-end-vs-a-non-calendar-year-end/`,
+`/nil-t2-vs-zero-return/`, and `/paper-t2-vs-efile-t2/` (which needs its H1
+worded as Electronic Filing to stay inside hard rule 1, keeping the Appendix A
+slug, on the `mandatory-t2-efile-checker` precedent).
+
+Still blocked: the 6 brand pages, on dated competitor prices. Still needing a
+rule before they can be built: `/dissolving-vs-filing-nil-every-year/` (a
+registry fee the plan does not state), `/diy-vs-cpa-nil-t2/` (software
+pricing, which is competitor data), `/nil-t2-vs-nil-gst-hst-return/` and the
+annual-return comparisons (a price column for work this service does not
+cover).
