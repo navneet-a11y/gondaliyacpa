@@ -7276,3 +7276,76 @@ So the site states both, and nobody has decided which is true. This is a
 price on a live page and it is **for Sharad Gondaliya to settle**, not me. Not
 changed here. Once settled it needs fixing in both fields, and the same
 sentence should be checked on every page that carries the overflow line.
+
+## 2026-11-04 — Pricing page CTA, and the F7 breadcrumb cut back to three levels
+
+### The CTA on `/pricing/`
+
+Navneet: change the button text to "Start Nil T2 Filing NOW", on the pricing
+page only. Three buttons on page 323 carried "Start now and enter your
+corporation name": the hero (`11605f5`), the one under "What the fee does not
+include" (`73547edb`) and the closing band (`21951e82`).
+
+The page is Elementor-built, so the text lives in `_elementor_data` and not in
+`post_content`. `wp_replace_in_post` refuses the post for exactly that reason,
+which is the right refusal: editing `post_content` would have changed nothing
+a visitor sees.
+
+**The widget IDs are not unique.** The first dry run on `11605f5` matched
+**two** cells: page 323 and the Elementor library template it was built from,
+which carries the same widget IDs. Each search was extended with surrounding
+context until it matched page 323 alone, confirmed by the sample naming cell
+3217 both times. Three replacements, each reported `cells: 1`.
+
+`post_content` still carries the old wording as a stale fallback. Elementor
+regenerates it on the next save in the editor. **The Elementor library
+template (362, and five sibling templates) also still carries the old
+wording** and was deliberately left alone, since the instruction was the
+pricing page only.
+
+### The breadcrumb: three levels, not four
+
+Navneet asked whether the plan requires both `/pricing/` and the cost page in
+the breadcrumb, and said to keep only pricing if not.
+
+**It requires neither.** The only breadcrumb line in the whole plan is 1342,
+a QA checklist item: "Schema: Organization, WebSite, BreadcrumbList
+site-wide". Nothing about levels, order or which URLs appear. The two URLs
+are **link** requirements -- line 1529 for the cost page, 6(b) line 1201 for
+the `/pricing/` pillar -- and the crumb was only the vehicle I chose for both
+earlier today.
+
+So the crumb is now `Nil T2 filing in Canada > Nil T2 filing price > [page]`,
+and line 1529's cost link moved onto the dated price line above the
+comparison table: "Both figures are our own published fee", with the fee
+linked. That reads better than a crumb level and keeps the rule satisfied.
+Schema back to three `ListItem` entries; `gate.py` enforces three and still
+checks both links.
+
+### A false alarm, corrected
+
+The first attempt to publish this used a database-wide replace, and its dry
+run reported **24 cells** rather than 6. I said at the time that 18 other
+pages must already use the four-level crumb, and that the site convention
+therefore disagreed with the change.
+
+**That was wrong.** `wp_posts.post_content` includes revisions, and these six
+pages have been revised repeatedly today. Six live pages plus eighteen
+revisions is the 24. A published-posts search confirms no other page carries
+that crumb, and `nil_cost` has a single published item. The dry run was still
+worth running: it stopped a replace that would have rewritten eighteen
+revision rows and left the history inaccurate.
+
+Published instead as eighteen scoped per-page edits, three per page. Every
+live figure matches its build exactly:
+
+| Page | ID | Before | After |
+|---|---|---|---|
+| `t2-short-vs-full-t2` | 1670 | 27,161 | 26,995 |
+| `nil-return-vs-final-return` | 1689 | 21,602 | 21,436 |
+| `filing-one-year-vs-filing-all-unfiled-years` | 1700 | 20,923 | 20,757 |
+| `t2-short-vs-t2-short-plus-gifi` | 1705 | 20,543 | 20,377 |
+| `december-31-year-end-vs-a-non-calendar-year-end` | 1710 | 21,157 | 20,991 |
+| `federal-corporation-vs-ontario-corporation-nil-filing` | 1715 | 21,784 | 21,618 |
+
+Each -166 bytes. Cache cleared for all six.
