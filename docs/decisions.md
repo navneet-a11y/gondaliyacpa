@@ -6703,3 +6703,54 @@ way to read the rendered `<head>` of the new URL.
 the next 19 Family 7 pages publish. Switching the `rank-math` integration on
 under Easy MCP AI > Tools > Abilities would let this be checked from a session
 instead of by hand, for every batch from here on.
+
+## 2026-11-04 (later) — Navneet's design review of the first F7 page
+
+Two changes to the live page, ID 1670, now 27,247 bytes and byte-identical to
+the rebuilt `build/f7/t2-short-vs-full-t2.html`.
+
+### The gap under the review stamp, and a left-edge jump
+
+Navneet: "this part and gap not looking good. there is too much gap between
+sections." Two separate causes:
+
+1. **Headings carried the theme's default top margin** on top of the section's
+   own padding, so every section boundary was larger than the CSS suggested.
+   `.si-h2`, `.si-h2c`, `.si-card h3`, `.article h3` and `.si-cta-bottom h2`
+   now set `margin:0 0 N` rather than `margin-bottom:N`.
+2. **52px section padding** was generous on top of that. `.si-section`,
+   `.si-section-alt` and `.si-section-dark` are now 40px. The hero and the
+   closing band keep 52px and 56px, since they are meant to be roomier.
+
+The meta block got its own classes rather than an inline style: `.si-meta`
+(no bottom padding) and `.si-lead` (22px top padding). Measured in a headless
+render, the gap between "Last reviewed" and the next heading went from the
+reported eyesore to 22px.
+
+The second arrow in Navneet's screenshot pointed at a **left-edge jump** that
+was not mentioned in words. The crumb, byline and review stamp were boxed to
+`max-width:860px` and centred, matching the answer card, while every heading
+below them sits on the 1100px wrap. The three meta lines now share the body's
+left rail; measured at 90px for both. The answer card stays 860px and centred,
+because it floats over the hero the way the sample does.
+
+### The FAQ went from 6 to 35
+
+Navneet: "faqs are less not as much as my sample." The sample runs a
+thirty-question accordion. **The plan sets no FAQ count for Family 7** — 6(c)
+and Appendix A give the URL count and the two-price-cell rule and nothing
+about question counts — so this was my call to begin with and it was too thin.
+
+Twenty-nine added, grouped the way a reader meets them: the eight conditions
+one at a time, then the schedules, then filing and signing, then more than one
+year. Still no FAQPage markup (hard rule 6); it stays a plain
+`details`/`summary` list that opens without JavaScript. The count is asserted
+in both `build_f7.py` and `gate.py`, so a dropped question fails the build.
+
+### A gate label that was lying
+
+`gate.py` printed "outbound: N distinct" while counting every `href`
+occurrence, not distinct URLs. With 19 links to 9 distinct URLs against a cap
+of 20, that mattered: the number read as "nearly out of destinations" when it
+meant "nearly out of links". The line now prints both. The cap check itself
+was always on the stricter figure and is unchanged.

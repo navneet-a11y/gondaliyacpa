@@ -137,8 +137,8 @@ if c.count('<h1') != 1:
     bad('h1 count %d' % c.count('<h1'))
 if '<details>' not in c:
     bad('the FAQ is not built on details, so it needs JavaScript to open')
-if c.count('<details>') != 6:
-    bad('%d FAQ items, expected 6' % c.count('<details>'))
+if c.count('<details>') != 35:
+    bad('%d FAQ items, expected 35' % c.count('<details>'))
 if 'si-answer' not in c:
     bad('no answer card')
 if 'si-cta-bottom' not in c:
@@ -158,5 +158,6 @@ if fail:
     raise SystemExit(1)
 print('gate clear on ' + NAME)
 print('  comparison rows : 2 price + 8 feature, every cell filled')
-print('  outbound        : %d distinct, cap 20' % outbound)
+print('  outbound        : %d links to %d distinct URLs, cap 20'
+      % (outbound, len(set(re.findall(r'href="(https://corpnilfilingfor300\.ca[^"]*)"', c)))))
 print('  bytes           : %d' % len(c.encode()))

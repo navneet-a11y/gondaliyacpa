@@ -100,10 +100,13 @@ DISCLOSURE = ('This comparison sets two of our own filing routes against each '
 # The sample's stylesheet, class names unchanged. Raw string: the tick and plus
 # markers are CSS escapes and a normal string would read \2713 as octal.
 CSS = r"""<style>
-.si-wrap{max-width:1100px;margin:0 auto;padding:0 20px}.si-btn-blue{background:rgba(32,135,201,1);color:#fff !important;padding:13px 26px;border-radius:6px;font-weight:700;text-transform:uppercase;text-decoration:none !important;display:inline-block}.si-btn-dark{background:#1a2340;color:#fff !important;padding:13px 26px;border-radius:6px;font-weight:700;text-transform:uppercase;text-decoration:none !important;display:inline-block}.si-section{padding:52px 20px}.si-section-alt{background:#f7f9fc;padding:52px 20px}.si-section-dark{background:#1a2340;padding:52px 20px}.si-h2{font-weight:800;color:#1a2340;margin-bottom:10px}.si-h2c{font-weight:800;color:#1a2340;margin-bottom:10px;text-align:center}.si-subc{color:#718096;max-width:640px;margin:0 auto 28px;text-align:center}.article p{color:#4a5568;line-height:1.8}.article a{color:rgba(32,135,201,1)}.article h3{font-weight:700;color:#1a2340;margin-bottom:8px}.si-info{background:#f0f7fd;border-left:4px solid rgba(32,135,201,1);border-radius:0 8px 8px 0;padding:14px 18px;margin:18px 0}.si-info p{margin:0;color:#1a2340;line-height:1.7}.si-warn{background:#fffbf0;border-left:4px solid #f6ad1a;border-radius:0 8px 8px 0;padding:14px 18px;margin:18px 0}.si-warn p{margin:0;color:#7c5800;line-height:1.7}.si-hero{background:linear-gradient(135deg,#0f1624 0%,#1a2340 55%,#1e3a6e 100%);padding:52px 20px}.si-hero-inner{max-width:800px;margin:0 auto;text-align:center}.si-hero-eyebrow{display:inline-block;background:rgba(32,135,201,0.15);border:1px solid rgba(32,135,201,0.4);border-radius:50px;padding:5px 16px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:rgba(32,135,201,1);margin-bottom:16px;font-size:.8em}.si-hero h1{color:#fff;font-weight:800;line-height:1.2;margin:0 0 14px;font-size:2.1em}.si-hero h1 span{color:#f6ad1a}.si-hero-sub{color:rgba(255,255,255,0.78);max-width:660px;margin:0 auto 22px;line-height:1.75}.si-hero-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}.si-answer{background:#fff;border:2px solid rgba(32,135,201,1);border-radius:12px;padding:26px 30px;max-width:860px;margin:-34px auto 0;box-shadow:0 10px 30px rgba(15,22,36,0.10);position:relative;z-index:2}.si-answer h2{font-weight:800;color:#1a2340;margin:0 0 10px;font-size:1.15em}.si-answer p{margin:0;color:#2d3748;line-height:1.75}.si-tbl{width:100%;border-collapse:collapse;margin:18px 0;border:1px solid #d1d5db}.si-tbl th{background:#1a2340;color:#fff;font-weight:700;padding:12px 14px;text-align:left;border:1px solid #374151}.si-tbl td{padding:10px 14px;border:1px solid #d1d5db;color:#2d3748;line-height:1.5}.si-tbl tr:nth-child(even){background:#f7f9fc}.si-tbl tr:hover{background:#edf2f7}.si-tbl .si-hl{background:#fffbf0;font-weight:600}.si-check{list-style:none;padding:0;margin:16px 0}.si-check li{padding:7px 0;border-bottom:1px solid #e2e8f0;display:flex;align-items:flex-start;gap:10px;color:#2d3748;line-height:1.6}.si-check li::before{content:"\2713";color:#2d9c4b;font-weight:700;flex-shrink:0;margin-top:1px}.si-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin:28px 0}.si-card{background:#fff;border:1px solid #e2e8f0;border-radius:10px;padding:24px 20px;border-top:3px solid rgba(32,135,201,1)}.si-card h3{font-weight:700;color:#1a2340;margin-bottom:10px}.si-card p{color:#718096;line-height:1.65}.si-section-dark .si-card{background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.14);border-top:3px solid #f6ad1a}.si-section-dark .si-card h3{color:#fff!important}.si-section-dark .si-card p{color:rgba(255,255,255,0.75)!important}.si-case{background:#f0f7fd;border-radius:12px;padding:26px 30px;max-width:860px;margin:0 auto}.si-case h3{font-weight:800;color:#1a2340;margin:0 0 10px}.si-case p{margin:0;color:#2d3748;line-height:1.75}.si-faq-list{max-width:860px;margin:28px auto 0}.si-faq-list details{border:1px solid #e2e8f0;border-radius:8px;margin-bottom:10px;background:#fff}.si-faq-list summary{padding:17px 20px;font-weight:600;color:#1a2340;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:14px}.si-faq-list summary::-webkit-details-marker{display:none}.si-faq-list summary::after{content:"+";color:rgba(32,135,201,1);font-weight:400;font-size:1.4em;line-height:1;flex-shrink:0;transition:transform .15s ease}.si-faq-list details[open] summary{color:rgba(32,135,201,1)}.si-faq-list details[open] summary::after{transform:rotate(45deg)}.si-faq-a{padding:0 20px 16px;color:#718096;line-height:1.7}.si-faq-a p{margin:0;color:#718096;line-height:1.7}.si-faq-a a{color:rgba(32,135,201,1)}.si-cta-bottom{background:linear-gradient(135deg,#0f1624,#1a2340);padding:56px 20px;text-align:center}.si-cta-bottom h2{color:#fff;font-weight:800;margin-bottom:10px}.si-cta-bottom p{color:rgba(255,255,255,0.72);max-width:540px;margin:0 auto 22px}.si-cta-feats{display:flex;justify-content:center;gap:26px;flex-wrap:wrap;margin-bottom:26px}.si-cta-feat{color:rgba(255,255,255,.72);display:flex;align-items:center;gap:6px}.si-cta-feat::before{content:"\2713";color:#f6ad1a;font-weight:700}
-.si-crumb{font-size:14px;color:#636363;max-width:860px;margin:18px auto 0}.si-crumb a{color:#314d8a;text-decoration:none}
-.si-by{font-size:15px;color:#4a5568;max-width:860px;margin:14px auto 0}.si-by a{color:rgba(32,135,201,1)}
-.si-rev{font-size:15px;color:#718096;max-width:860px;margin:2px auto 0}
+.si-wrap{max-width:1100px;margin:0 auto;padding:0 20px}.si-btn-blue{background:rgba(32,135,201,1);color:#fff !important;padding:13px 26px;border-radius:6px;font-weight:700;text-transform:uppercase;text-decoration:none !important;display:inline-block}.si-btn-dark{background:#1a2340;color:#fff !important;padding:13px 26px;border-radius:6px;font-weight:700;text-transform:uppercase;text-decoration:none !important;display:inline-block}.si-section{padding:40px 20px}.si-section-alt{background:#f7f9fc;padding:40px 20px}.si-section-dark{background:#1a2340;padding:40px 20px}.si-h2{font-weight:800;color:#1a2340;margin:0 0 10px}.si-h2c{font-weight:800;color:#1a2340;margin:0 0 10px;text-align:center}.si-subc{color:#718096;max-width:640px;margin:0 auto 28px;text-align:center}.article p{color:#4a5568;line-height:1.8}.article a{color:rgba(32,135,201,1)}.article h3{font-weight:700;color:#1a2340;margin:0 0 8px}.si-info{background:#f0f7fd;border-left:4px solid rgba(32,135,201,1);border-radius:0 8px 8px 0;padding:14px 18px;margin:18px 0}.si-info p{margin:0;color:#1a2340;line-height:1.7}.si-warn{background:#fffbf0;border-left:4px solid #f6ad1a;border-radius:0 8px 8px 0;padding:14px 18px;margin:18px 0}.si-warn p{margin:0;color:#7c5800;line-height:1.7}.si-hero{background:linear-gradient(135deg,#0f1624 0%,#1a2340 55%,#1e3a6e 100%);padding:52px 20px}.si-hero-inner{max-width:800px;margin:0 auto;text-align:center}.si-hero-eyebrow{display:inline-block;background:rgba(32,135,201,0.15);border:1px solid rgba(32,135,201,0.4);border-radius:50px;padding:5px 16px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:rgba(32,135,201,1);margin-bottom:16px;font-size:.8em}.si-hero h1{color:#fff;font-weight:800;line-height:1.2;margin:0 0 14px;font-size:2.1em}.si-hero h1 span{color:#f6ad1a}.si-hero-sub{color:rgba(255,255,255,0.78);max-width:660px;margin:0 auto 22px;line-height:1.75}.si-hero-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}.si-answer{background:#fff;border:2px solid rgba(32,135,201,1);border-radius:12px;padding:26px 30px;max-width:860px;margin:-34px auto 0;box-shadow:0 10px 30px rgba(15,22,36,0.10);position:relative;z-index:2}.si-answer h2{font-weight:800;color:#1a2340;margin:0 0 10px;font-size:1.15em}.si-answer p{margin:0;color:#2d3748;line-height:1.75}.si-tbl{width:100%;border-collapse:collapse;margin:18px 0;border:1px solid #d1d5db}.si-tbl th{background:#1a2340;color:#fff;font-weight:700;padding:12px 14px;text-align:left;border:1px solid #374151}.si-tbl td{padding:10px 14px;border:1px solid #d1d5db;color:#2d3748;line-height:1.5}.si-tbl tr:nth-child(even){background:#f7f9fc}.si-tbl tr:hover{background:#edf2f7}.si-tbl .si-hl{background:#fffbf0;font-weight:600}.si-check{list-style:none;padding:0;margin:16px 0}.si-check li{padding:7px 0;border-bottom:1px solid #e2e8f0;display:flex;align-items:flex-start;gap:10px;color:#2d3748;line-height:1.6}.si-check li::before{content:"\2713";color:#2d9c4b;font-weight:700;flex-shrink:0;margin-top:1px}.si-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin:28px 0}.si-card{background:#fff;border:1px solid #e2e8f0;border-radius:10px;padding:24px 20px;border-top:3px solid rgba(32,135,201,1)}.si-card h3{font-weight:700;color:#1a2340;margin:0 0 10px}.si-card p{color:#718096;line-height:1.65}.si-section-dark .si-card{background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.14);border-top:3px solid #f6ad1a}.si-section-dark .si-card h3{color:#fff!important}.si-section-dark .si-card p{color:rgba(255,255,255,0.75)!important}.si-case{background:#f0f7fd;border-radius:12px;padding:26px 30px;max-width:860px;margin:0 auto}.si-case h3{font-weight:800;color:#1a2340;margin:0 0 10px}.si-case p{margin:0;color:#2d3748;line-height:1.75}.si-faq-list{max-width:860px;margin:28px auto 0}.si-faq-list details{border:1px solid #e2e8f0;border-radius:8px;margin-bottom:10px;background:#fff}.si-faq-list summary{padding:17px 20px;font-weight:600;color:#1a2340;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:14px}.si-faq-list summary::-webkit-details-marker{display:none}.si-faq-list summary::after{content:"+";color:rgba(32,135,201,1);font-weight:400;font-size:1.4em;line-height:1;flex-shrink:0;transition:transform .15s ease}.si-faq-list details[open] summary{color:rgba(32,135,201,1)}.si-faq-list details[open] summary::after{transform:rotate(45deg)}.si-faq-a{padding:0 20px 16px;color:#718096;line-height:1.7}.si-faq-a p{margin:0;color:#718096;line-height:1.7}.si-faq-a a{color:rgba(32,135,201,1)}.si-cta-bottom{background:linear-gradient(135deg,#0f1624,#1a2340);padding:56px 20px;text-align:center}.si-cta-bottom h2{color:#fff;font-weight:800;margin:0 0 10px}.si-cta-bottom p{color:rgba(255,255,255,0.72);max-width:540px;margin:0 auto 22px}.si-cta-feats{display:flex;justify-content:center;gap:26px;flex-wrap:wrap;margin-bottom:26px}.si-cta-feat{color:rgba(255,255,255,.72);display:flex;align-items:center;gap:6px}.si-cta-feat::before{content:"\2713";color:#f6ad1a;font-weight:700}
+.si-crumb{font-size:14px;color:#636363;margin:20px 0 0}.si-crumb a{color:#314d8a;text-decoration:none}
+.si-by{font-size:15px;color:#4a5568;margin:12px 0 0}.si-by a{color:rgba(32,135,201,1)}
+.si-rev{font-size:15px;color:#718096;margin:2px 0 0}
+.si-meta{padding-bottom:0}
+.si-lead{padding-top:22px}
+.si-section>.si-wrap>:last-child,.si-section-alt>.si-wrap>:last-child{margin-bottom:0}
 .si-stamp{font-size:14px;color:#636363;margin:0 0 6px}
 .entry-header{display:none!important}
 .ast-article-single,.ast-article-single .entry-content{margin-top:0;padding-top:0}
@@ -239,7 +242,140 @@ PAGE = dict(
        'The eight conditions do, tested against your corporation before the '
        'return is prepared. The '
        '<a href="' + T + 't2-short-eligibility-checker/">T2 Short eligibility '
-       'checker</a> runs the same test you can run yourself.')],
+       'checker</a> runs the same test you can run yourself.'),
+
+      # --- the eight conditions, one at a time ---------------------------
+      ('What does CCPC throughout the tax year mean?',
+       'The corporation has to be a Canadian-controlled private corporation '
+       'for every day of the year, not merely on the last day. A change of '
+       'control partway through the year breaks the condition even where the '
+       'corporation looks the same at the year-end.'),
+      ('Does a loss year still qualify for the T2 Short?',
+       'Yes. The condition is nil net income or a loss for income tax '
+       'purposes, so a loss does not fail it. The loss still has to be '
+       'reported and carried forward correctly, which is work the fee '
+       'covers on either form.'),
+      ('What counts as a permanent establishment?',
+       'Broadly, a fixed place of business. The condition is that the '
+       'corporation has one only. A corporation operating in two provinces '
+       'generally has more than one, fails the condition and goes on the '
+       'full return.'),
+      ('Does receiving a dividend disqualify the T2 Short?',
+       'Yes, and it does more than that. A taxable dividend received fails '
+       'the condition outright, and it also means the year is not a nil year '
+       'for this service at all.'),
+      ('Does paying a dividend disqualify it?',
+       'Yes. The condition covers taxable dividends both paid and received, '
+       'so either direction fails it and the full return is used instead.'),
+      ('What if the corporation reports in a currency other than Canadian dollars?',
+       'The condition is that the corporation reports in Canadian currency. '
+       'A corporation that has elected a functional currency fails it and '
+       'files the full return.'),
+      ('What is a refundable credit for this purpose?',
+       'A credit the corporation can be paid out even where it owes no tax. '
+       'Claiming one fails the condition. A genuinely quiet corporation '
+       'usually claims nothing at all, so this condition rarely decides the '
+       'form on its own.'),
+      ('What is the Ontario transitional tax debit?',
+       'A legacy Ontario amount arising from the move to federal '
+       'administration of Ontario corporate tax. Where a corporation has one, '
+       'the short return cannot be used. Most corporations incorporated since '
+       'that transition do not.'),
+      ('What is an amount calculated under section 34.2?',
+       'An income adjustment for a corporation that is a member of a '
+       'partnership with a different fiscal period. Where such an amount '
+       'applies, the short return cannot be used.'),
+      ('Does the number of shareholders affect eligibility?',
+       'Not directly. None of the eight conditions counts shareholders. The '
+       'shareholder list affects Schedule 50, which is required on either '
+       'form for every shareholder holding 10 per cent or more.'),
+      ('Does a corporation with no bank account qualify?',
+       'Having no bank account does not fail any of the eight conditions. '
+       'What the corporation holds affects which schedules are filed, not '
+       'which form carries them.'),
+      ('Can a corporation that has never traded use the T2 Short?',
+       'Yes, where the eight conditions hold. A corporation that never began '
+       'operating still owes a return for each tax year since incorporation, '
+       'and each of those years is '
+       + PRICE + '.'),
+
+      # --- the schedules --------------------------------------------------
+      ('Which schedules does a quiet corporation actually file?',
+       'Commonly GIFI Schedules 100, 125 and 141, Schedule 50 where a '
+       'shareholder holds 10 per cent or more, and Schedule 24 on a first '
+       'return. Loss continuity is added where there is a loss to carry. '
+       'The list is the same on either form.'),
+      ('Why is Schedule 100 required if nothing happened?',
+       'Schedule 100 is the balance sheet. A corporation that issued shares '
+       'at incorporation has share capital sitting on its books whether or '
+       'not it traded, so there is a balance sheet to report even in a year '
+       'with no activity.'),
+      ('When is Schedule 24 required?',
+       'On a first return. It carries the first-time filer information, and '
+       'it is required on the first return whichever form that return '
+       'goes on.'),
+      ('When is Schedule 50 required?',
+       'Where a shareholder holds 10 per cent or more of any class of '
+       'shares. A single-shareholder corporation is over that threshold by '
+       'definition, so it files Schedule 50 on either form.'),
+      ('Does the T2 Short include Schedule 8?',
+       'Schedule 8 is capital cost allowance. It is filed where the '
+       'corporation has depreciable property, on either form. A corporation '
+       'holding nothing but share capital and a bank balance normally has '
+       'none.'),
+      ('Do the schedules cost extra?',
+       'No. Every schedule the corporation needs is inside '
+       + PRICE + ', on whichever form applies.'),
+
+      # --- filing, signing and confirmation -------------------------------
+      ('When is the return due on either form?',
+       'Six months after the fiscal year-end, the same on both. A December '
+       '31 year-end is due the following June 30.'),
+      ('Is the deadline different for the short form?',
+       'No. The form the return goes on does not move the deadline. Only the '
+       'fiscal year-end sets it.'),
+      ('Can the T2 Short be filed on paper?',
+       'We transmit every return electronically as a registered EFILE '
+       'electronic filer, and your confirmation is emailed within 3 business '
+       'days. Whether a particular corporation is permitted to file on paper '
+       'is a separate question and does not change which form its return '
+       'goes on.'),
+      ('How is Form T183CORP signed?',
+       'An authorized signing officer signs Form T183CORP before the return '
+       'is transmitted. That requirement is identical on both forms, and '
+       'nothing is sent to the Canada Revenue Agency until it is signed.'),
+      ('How long until the confirmation arrives?',
+       'Your CRA confirmation is emailed within 3 business days of '
+       'transmission, on either form.'),
+      ('Does the form affect how the return is reviewed?',
+       'No. Either form is prepared and reviewed by a CPA Ontario member '
+       'before transmission. The review follows the corporation&rsquo;s '
+       'facts, not the length of the form.'),
+
+      # --- more than one year ---------------------------------------------
+      ('Can past years be filed on the T2 Short?',
+       'Yes, where the eight conditions held in that year. Eligibility is '
+       'tested year by year against the facts of that year, not against the '
+       'corporation as it stands today.'),
+      ('What if one year qualifies and another does not?',
+       'Each year goes on the form its own facts point to, so a corporation '
+       'can file one year on the short return and the next on the full '
+       'return. Every quiet year is '
+       + PRICE + ' either way.'),
+      ('Does switching forms between years cause a problem?',
+       'No. The returns are filed year by year and the Canada Revenue Agency '
+       'assesses each on its own. A year on the full return does not oblige '
+       'the following year to use it.'),
+      ('Is the price different if several years are filed at once?',
+       'No. The fee is '
+       + PRICE + ', counted per year, however many years are filed together.'),
+      ('Which checker should I run first?',
+       'The '
+       '<a href="' + T + 't2-short-eligibility-checker/">T2 Short eligibility '
+       'checker</a> tests all eight at once. Where it returns not eligible, '
+       'the '
+       '<a href="' + T + 't2-short-exclusion-checker/">exclusion checker</a> '
+       'names the condition that did it.')],
  related=[(T + 't2-short-eligibility-checker/',
            'T2 Short eligibility checker, all eight conditions'),
           (T + 't2-short-exclusion-checker/',
@@ -281,7 +417,7 @@ def render(p):
 
     # Answer card, overlapping the hero as the sample does, then the byline and
     # the review stamp 7.5 requires and the sample had nowhere for.
-    h.append('<div class="si-section" style="padding-bottom:0">'
+    h.append('<div class="si-section si-meta">'
              '<div class="si-wrap">'
              '<div class="si-answer"><h2>Quick Answer</h2><p>'
              + p['answer'] + '</p></div>\n'
@@ -294,7 +430,7 @@ def render(p):
              '</div></div>\n')
 
     for h2, paras in p['lead']:
-        h.append('<div class="si-section"><div class="si-wrap article">\n'
+        h.append('<div class="si-section si-lead"><div class="si-wrap article">\n'
                  '<h2 class="si-h2">' + h2 + '</h2>\n'
                  + '\n'.join(paras) + '\n</div></div>\n')
 
@@ -444,7 +580,7 @@ if __name__ == '__main__':
     for _i, _a, _b, _d in PRICE_ROWS + FEATURE_ROWS:
         assert _a.strip() and _b.strip(), '%s: an empty cell' % _i
     assert len(SHORT8) == 8, 'the eight conditions'
-    assert len(PAGE['faq']) == 6
+    assert len(PAGE['faq']) == 35
     assert len(PAGE['related']) == 6
     assert len(PAGE['cards']) == 3
     assert len(PAGE['seo_title']) <= 60, len(PAGE['seo_title'])
