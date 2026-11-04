@@ -41,7 +41,7 @@ sys.path.insert(0, HERE)
 
 from build_f2 import (render, meta, yn, a, DATE_JS, T1_JS, SITE, HUB, FORM,
                       PRICE, TODAY, ISO, NOT_NIL, TOOL_DISCLAIMER)
-from build_f2b import tool, num, date, out_box, PICK, T, G, COST, ORDER, LINK_TITLE
+from build_f2b import tool, num, date, out_box, PICK, T, G, COST, CMP, ORDER, LINK_TITLE
 
 # --------------------------------------------------------------------------
 # Shared arithmetic, held identical to what is already live.
@@ -740,10 +740,21 @@ for t in TOOLS3:
     assert not _clash, ('%s: section anchor collides with a form id: %s'
                         % (t['slug'], sorted(_clash)))
 
+# Family 7 inbound links. Line 1529 sets F7's inbound minimum at 3 and its
+# anchor convention to the comparison title, so the anchor is the comparison
+# page's own H1 verbatim. A tool gets no F7 link unless it is named here.
+COMPARE_F7 = {
+ 'dissolution-readiness-checker': [(CMP + 'nil-return-vs-final-return/',
+                                           'Nil Return vs Final Return')],
+}
+for _s in COMPARE_F7:
+    assert _s in {t['slug'] for t in TOOLS3}, 'COMPARE_F7 names %s, not in batch' % _s
+
 for t in TOOLS3:
     i = ORDER3.index(t['slug'])
     rel = [(T + ORDER3[j] + '/', LINK_TITLE3[ORDER3[j]]) for j in SIBLINGS3[i]]
     rel += [(G + g + '/', ttl) for g, ttl in GUIDES3[t['slug']]]
+    rel += COMPARE_F7.get(t['slug'], [])
     rel.append((COST, 'Nil T2 filing cost'))
     t['related'] = rel
 

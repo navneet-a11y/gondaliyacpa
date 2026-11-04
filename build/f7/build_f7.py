@@ -74,6 +74,7 @@ true of it rather than the form written for a brand page, which is a deviation
 to put to Sharad Gondaliya with the template.
 """
 import io, json, os
+import re as _re
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 SITE = 'https://corpnilfilingfor300.ca'
@@ -170,6 +171,30 @@ FEATURE_ROWS = [
 ]
 
 PAGE = dict(
+ col_a='T2 Short', col_b='Full T2',
+ price_rows=PRICE_ROWS, feature_rows=FEATURE_ROWS, faq_n=35,
+ table_note=('Two rows differ and eight do not, which is the page&rsquo;s '
+             'whole argument put in a table. The form changes; the work, '
+             'the deadline and the fee do not.'),
+ detail=dict(
+  h2='The Eight Conditions Decide It',
+  intro=('A corporation may use the short return only where every one of '
+         'these holds for the tax year:'),
+  items=SHORT8,
+  warn=('Meeting seven of the eight is not enough. One condition failing '
+        'puts the corporation on the full return, which we file at the same '
+        'fee rather than a different one.'),
+  close=('The <a href="' + T + 't2-short-eligibility-checker/">T2 Short '
+         'eligibility checker</a> tests all eight at once, the '
+         '<a href="' + T + 't2-short-exclusion-checker/">exclusion '
+         'checker</a> names which one excludes you, and the '
+         '<a href="' + T + 't2-short-ccpc-condition-checker/">CCPC '
+         'condition checker</a> takes the first condition on its own.')),
+ band=('The Same Work Either Way',
+       'Whichever form the conditions point to, the return is prepared, '
+       'reviewed and transmitted the same way, at ' + PRICE + '.'),
+ cta2=('Check the Eight Conditions',
+       T + 't2-short-eligibility-checker/'),
  slug='t2-short-vs-full-t2',
  title='T2 Short vs Full T2 | What Actually Changes',
  h1='T2 Short vs Full T2',
@@ -394,6 +419,40 @@ PAGE = dict(
 )
 
 
+def _key(col):
+    """Column header to a JSON key: 'T2 Short' -> 't2_short'."""
+    return _re.sub(r'[^a-z0-9]+', '_', col.lower()).strip('_')
+
+
+def check(p):
+    """Line 1215 and the per-page counts, for every page in this family."""
+    assert len(p['price_rows']) == 2, 'line 1215 wants two price rows'
+    assert len(p['feature_rows']) == 8, 'line 1215 wants eight feature rows'
+    for i, a, b, _d in p['price_rows'] + p['feature_rows']:
+        assert a.strip() and b.strip(), '%s: an empty cell' % i
+    assert len(p['faq']) == p['faq_n'], (
+        '%s: %d FAQ items, expected %d'
+        % (p['slug'], len(p['faq']), p['faq_n']))
+    assert len(p['related']) == 6, p['slug']
+    assert len(p['cards']) == 3, p['slug']
+    assert len(p['seo_title']) <= 60, len(p['seo_title'])
+    assert 70 <= len(p['seo_desc']) <= 160, len(p['seo_desc'])
+
+
+def write(p, manifest):
+    """Render, write the page, and record it with its FAQ count so gate.py
+    can check the count without the number being hard-coded in two places."""
+    html, url = render(p)
+    io.open(os.path.join(HERE, p['slug'] + '.html'), 'w',
+            encoding='utf-8').write(html)
+    json.dump([dict(slug=p['slug'], title=p['title'], url=url, content=html,
+                    faq_count=len(p['faq']), **meta(p))],
+              io.open(os.path.join(HERE, manifest), 'w', encoding='utf-8'),
+              ensure_ascii=False, indent=1)
+    print('%-26s %6d bytes   %s' % (p['slug'], len(html.encode()), url))
+    return html
+
+
 def _rows(rows):
     out = []
     for item, a, b, differs in rows:
@@ -416,8 +475,8 @@ def render(p):
              '<div class="si-hero-btns">'
              '<a class="si-btn-blue" href="' + FORM + '">Start Nil T2 Filing '
              'NOW</a>'
-             '<a class="si-btn-dark" href="' + T
-             + 't2-short-eligibility-checker/">Check the Eight Conditions</a>'
+             '<a class="si-btn-dark" href="' + p['cta2'][1] + '">'
+             + p['cta2'][0] + '</a>'
              '</div></div></div>\n')
 
     # Answer card, overlapping the hero as the sample does, then the byline and
@@ -447,43 +506,31 @@ def render(p):
              '<p class="si-stamp">Prices checked ' + TODAY + '. '
              'Both figures are our own published fee.</p>\n'
              '<table class="si-tbl"><thead><tr><th scope="col">Item</th>'
-             '<th scope="col">T2 Short</th><th scope="col">Full T2</th></tr>'
+             '<th scope="col">' + p['col_a'] + '</th>'
+             '<th scope="col">' + p['col_b'] + '</th></tr>'
              '</thead><tbody>\n'
-             + _rows(PRICE_ROWS) + '\n' + _rows(FEATURE_ROWS) + '\n'
+             + _rows(p['price_rows']) + '\n' + _rows(p['feature_rows']) + '\n'
              '</tbody></table>\n'
-             '<p>Two rows differ and eight do not, which is the page&rsquo;s '
-             'whole argument put in a table. The form changes; the work, the '
-             'deadline and the fee do not.</p>\n'
+             '<p>' + p['table_note'] + '</p>\n'
              '<div class="si-info"><p>' + DISCLOSURE + '</p></div>\n'
              '</div></div>\n')
 
     h.append('<div class="si-section"><div class="si-wrap article">\n'
-             '<h2 class="si-h2">The Eight Conditions Decide It</h2>\n'
-             '<p>A corporation may use the short return only where every one '
-             'of these holds for the tax year:</p>\n'
+             '<h2 class="si-h2">' + p['detail']['h2'] + '</h2>\n'
+             '<p>' + p['detail']['intro'] + '</p>\n'
              '<ul class="si-check">\n'
-             + '\n'.join('<li>%s</li>' % c for c in SHORT8)
+             + '\n'.join('<li>%s</li>' % c for c in p['detail']['items'])
              + '\n</ul>\n'
-             '<div class="si-warn"><p>Meeting seven of the eight is not '
-             'enough. One condition failing puts the corporation on the full '
-             'return, which we file at the same fee rather than a different '
-             'one.</p></div>\n'
-             '<p>The <a href="' + T + 't2-short-eligibility-checker/">T2 Short '
-             'eligibility checker</a> tests all eight at once, the '
-             '<a href="' + T + 't2-short-exclusion-checker/">exclusion '
-             'checker</a> names which one excludes you, and the '
-             '<a href="' + T + 't2-short-ccpc-condition-checker/">CCPC '
-             'condition checker</a> takes the first condition on its own.</p>\n'
+             '<div class="si-warn"><p>' + p['detail']['warn'] + '</p></div>\n'
+             '<p>' + p['detail']['close'] + '</p>\n'
              '<div class="si-info"><p>' + EFILE + '</p></div>\n'
              '</div></div>\n')
 
     h.append('<div class="si-section-dark"><div class="si-wrap">\n'
-             '<h2 class="si-h2c" style="color:#fff;">The Same Work Either '
-             'Way</h2>\n'
+             '<h2 class="si-h2c" style="color:#fff;">'
+             + p['band'][0] + '</h2>\n'
              '<p style="text-align:center;color:rgba(255,255,255,0.65);'
-             'max-width:680px;margin:0 auto;">Whichever form the conditions '
-             'point to, the return is prepared, reviewed and transmitted the '
-             'same way, at ' + PRICE + '.</p>\n'
+             'max-width:680px;margin:0 auto;">' + p['band'][1] + '</p>\n'
              '<div class="si-cards" style="margin-top:28px;">\n'
              + '\n'.join('<div class="si-card"><h3>%s</h3><p>%s</p></div>'
                          % (t, d) for t, d in p['cards'])
@@ -563,10 +610,10 @@ def meta(p):
      # named incl_hst would be a false record. The fee is in the rows below.
      'cnf_our_price_incl_hst': '',
      'cnf_feature_rows_json': json.dumps({
-        'price_rows': [{'item': i, 't2_short': a, 'full_t2': b}
-                       for i, a, b, _d in PRICE_ROWS],
-        'feature_rows': [{'item': i, 't2_short': a, 'full_t2': b,
-                          'differs': d} for i, a, b, d in FEATURE_ROWS],
+        'price_rows': [{'item': i, _key(p['col_a']): a, _key(p['col_b']): b}
+                       for i, a, b, _d in p['price_rows']],
+        'feature_rows': [{'item': i, _key(p['col_a']): a, _key(p['col_b']): b,
+                          'differs': d} for i, a, b, d in p['feature_rows']],
         'our_price': PRICE,
         'competitor_named': False,
         'price_source': 'Our own published fee, not a competitor price'}),
@@ -580,21 +627,6 @@ def meta(p):
 
 
 if __name__ == '__main__':
-    assert len(PRICE_ROWS) == 2, 'line 1215 wants two price rows'
-    assert len(FEATURE_ROWS) == 8, 'line 1215 wants eight feature rows'
-    for _i, _a, _b, _d in PRICE_ROWS + FEATURE_ROWS:
-        assert _a.strip() and _b.strip(), '%s: an empty cell' % _i
     assert len(SHORT8) == 8, 'the eight conditions'
-    assert len(PAGE['faq']) == 35
-    assert len(PAGE['related']) == 6
-    assert len(PAGE['cards']) == 3
-    assert len(PAGE['seo_title']) <= 60, len(PAGE['seo_title'])
-    assert 70 <= len(PAGE['seo_desc']) <= 160, len(PAGE['seo_desc'])
-    html, url = render(PAGE)
-    io.open(os.path.join(HERE, PAGE['slug'] + '.html'), 'w',
-            encoding='utf-8').write(html)
-    json.dump([dict(slug=PAGE['slug'], title=PAGE['title'], url=url,
-                    content=html, **meta(PAGE))],
-              io.open(os.path.join(HERE, 'f7-manifest.json'), 'w',
-                      encoding='utf-8'), ensure_ascii=False, indent=1)
-    print('%-26s %6d bytes   %s' % (PAGE['slug'], len(html.encode()), url))
+    check(PAGE)
+    write(PAGE, 'f7-manifest.json')

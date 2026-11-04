@@ -6838,3 +6838,65 @@ Re-measured at 1280px and 1600px, normally and against the same hostile
 characters a line, cards 305, one left rail, all four runs identical. Live ID
 1670 is 27,849 bytes, byte-identical to the build, applied as nine targeted
 CSS replacements. Post cache cleared after publishing, per the note above.
+
+## 2026-11-04 — Family 7 page 2: `/compare/nil-return-vs-final-return/`
+
+Published as ID 1689, 22,302 bytes, byte-identical to the gated
+`build/f7/nil-return-vs-final-return.html`. `cnf_family` term 20, no
+`cnf_competitor` term. Family 7 now stands at 2 of 20.
+
+### Why this page, of the eighteen left
+
+Line 1215 will not let a comparison page publish unless **both** price columns
+carry published prices. The six brand pages are still blocked on dated
+competitor prices, so the buildable set is the concept pages where both
+columns are our own fee. This is one, and the right-hand column was checked
+rather than assumed: the live Family 4 pages for final T2 before dissolution
+carry "$300.00 Plus HST Per Tax Year", so the final return is the same fee as
+any other quiet year.
+
+The facts about the final return are lifted from those live F4 pages rather
+than written fresh, so the site does not end up saying two different things
+about the same return: the period that ends on the date of dissolution, the
+six-month deadline, unfiled years blocking a clearance certificate and the
+dissolution, and the final T2 not dissolving the corporation on its own.
+
+### Fifteen FAQ items, and the standard going forward
+
+Navneet: "15 faqs are enough." Page 1 ran to 35, which was my own call against
+a sample rather than anything the plan requires -- **the plan sets no FAQ
+count for F7 at all**. Fifteen is the house standard from here. Page 1 was
+left at 35 rather than cut back: the questions on it are sound and deleting
+published content to hit a number nobody asked for would be the wrong trade.
+
+### The builder is now a family builder
+
+`build_f7.py` held page 1's table, headings, list, warning, closing links and
+hero button inside `render()`. All of that now comes from the page dict, and
+`check()` and `write()` are shared, so `build_f7b.py` is data and no markup.
+**Page 1 rebuilds byte-identical at 27,849 after every step of the refactor**,
+which was checked with a diff against a copy taken before it started, not
+assumed from the byte count alone.
+
+`gate.py` no longer hard-codes the FAQ count. Each builder records
+`faq_count` in its manifest and the gate looks the page up by slug, so a third
+page with a different length needs no gate edit. Negative-tested: deleting one
+item from the built page fails with "14 FAQ items, expected 15".
+
+### Inbound links
+
+Line 1529's three, anchored on the comparison title verbatim:
+
+| Tool | ID | Before | After |
+|---|---|---|---|
+| `final-t2-return-due-date-calculator` | 1291 | 28,256 | 28,373 |
+| `dissolution-readiness-checker` | 1268 | 25,175 | 25,292 |
+| `clearance-certificate-requirement-checker` | 1299 | 26,753 | 26,870 |
+
+Each live figure matched its local build before the edit, so the builders and
+live were in step; each grew by the same 117 bytes. `build_f2c.py` and
+`build_f2e.py` carry a `COMPARE_F7` map on the same pattern as `COMPARE9`,
+asserting every slug it names is in that batch. `gate_f2_all.py` is clear on
+all 80 tool pages and `gate_rank_math.py` passes at 223 items.
+
+Post cache cleared for all four IDs after publishing.

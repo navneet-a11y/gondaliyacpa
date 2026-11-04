@@ -14,7 +14,8 @@ page cannot quietly put them back: FAQPage schema, a booking call to action, a
 guarantee, a review count, including-HST wording, the sister office's phone
 number, and a missing byline or review stamp.
 """
-import io, re, sys
+import glob as _glob
+import io, json, re, sys
 
 NAME = sys.argv[1] if len(sys.argv) > 1 else 't2-short-vs-full-t2.html'
 c = io.open(NAME, encoding='utf-8').read()
@@ -137,8 +138,19 @@ if c.count('<h1') != 1:
     bad('h1 count %d' % c.count('<h1'))
 if '<details>' not in c:
     bad('the FAQ is not built on details, so it needs JavaScript to open')
-if c.count('<details>') != 35:
-    bad('%d FAQ items, expected 35' % c.count('<details>'))
+# The expected count is the page's own, recorded by its builder, so a second
+# page with a different FAQ length needs no edit here and a dropped question
+# still fails.
+_slug = NAME[:-5] if NAME.endswith('.html') else NAME
+_want = None
+for _mf in sorted(_glob.glob('f7*-manifest.json')):
+    for _r in json.load(io.open(_mf, encoding='utf-8')):
+        if _r.get('slug') == _slug:
+            _want = _r.get('faq_count')
+if _want is None:
+    bad('no manifest records %s, so its FAQ count cannot be checked' % _slug)
+elif c.count('<details>') != _want:
+    bad('%d FAQ items, expected %d' % (c.count('<details>'), _want))
 if 'si-answer' not in c:
     bad('no answer card')
 if 'si-cta-bottom' not in c:
