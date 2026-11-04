@@ -1,0 +1,182 @@
+[
+ {
+  "from": "Since 2026, federal incorporations no longer require any resident directors at all.",
+  "to": "Federal incorporations still require at least 25% of directors to be resident Canadians, or at least one director if there are four or fewer.",
+  "kind": "fact"
+ },
+ {
+  "from": "Provinces like Ontario still ask for at least one director who lives in Canada [source: CBCA].",
+  "to": "Ontario removed its resident director requirement on July 5, 2021 [source: OBCA].",
+  "kind": "fact"
+ },
+ {
+  "from": "Federal (CBCA)\tNot required anymore\t2026\nOntario (OBCA)\tAt least one resident needed\tOngoing",
+  "to": "Federal (CBCA)\tAt least 25% resident Canadians\tOngoing\nOntario (OBCA)\tNot required anymore\tJuly 5, 2021",
+  "kind": "fact"
+ },
+ {
+  "from": "- Federally incorporated companies don’t have to name resident directors anymore since 2026.\n- But provinces like Ontario still want one resident director on board unless laws change later [source: OBCA].",
+  "to": "- Federally incorporated companies still have to name resident Canadian directors for at least 25% of the board.\n- But Ontario no longer needs a resident director, so a newcomer can be the sole director [source: OBCA].",
+  "kind": "fact"
+ },
+ {
+  "from": "They offer same-day filing and instant NUANS reports with your package—saving time and headaches!",
+  "to": "They offer same-day filing and instant NUANS reports for $25 when you choose a named company—saving time and headaches!",
+  "kind": "fact"
+ },
+ {
+  "from": "Own at least 10% of the Canadian company.",
+  "to": "Own at least 50% of the Canadian company.",
+  "kind": "fact"
+ },
+ {
+  "from": "may get employer-specific work permits by showing there’s no local labour able to fill their role—this differs",
+  "to": "may get employer-specific work permits without having to advertise the job to Canadians first—this differs",
+  "kind": "fact"
+ },
+ {
+  "from": "If you prefer working alone instead of forming a company, the Self-Employed Persons Program is an option.",
+  "to": "If you prefer working alone instead of forming a company, the Self-Employed Persons Program is normally an option, but IRCC paused new applications on April 30, 2024 until at least January 1, 2027.",
+  "kind": "fact"
+ },
+ {
+  "from": "No resident directors needed since Sept 20215",
+  "to": "At least 25% resident Canadian directors5",
+  "kind": "fact"
+ },
+ {
+  "from": "Since September 2021,78 neither CBCA nor OBCA demands directors live in Canada anymore.",
+  "to": "Since July 5, 2021,78 the OBCA no longer demands directors live in Canada, but the CBCA still requires at least 25% resident Canadian directors.",
+  "kind": "fact"
+ },
+ {
+  "from": "Residency Requirement\tNone federally; check provinces\tSome exceptions may remain provincially",
+  "to": "Residency Requirement\t25% federally; none in Ontario\tCheck other provinces",
+  "kind": "fact"
+ },
+ {
+  "from": "Each industry faces unique challenges with bank accounts for non-residents. Open Corporation helps newcomers handle these issues affordably for $35.",
+  "to": "Each industry faces unique challenges with bank accounts for non-residents. Open Corporation helps newcomers handle these issues, with incorporation for $35 and bank account setup as a separate service.",
+  "kind": "fact"
+ },
+ {
+  "from": "[^5]: Finance Budget Update March 2026 re Resident Director Rule Removal [EDITOR: verify exact date/source].",
+  "to": "[^5]: CBCA s105(3) – at least 25% resident Canadian directors.",
+  "kind": "fact"
+ },
+ {
+  "from": "[^6]: OBCA Amendments removing Resident Director Rule effective Jan '22 [EDITOR: confirm source].",
+  "to": "[^6]: OBCA amendments removing the resident director rule, effective July 5, 2021.",
+  "kind": "fact"
+ },
+ {
+  "from": "[^12]: NR4 Filing Instructions CRA Guide RC4400",
+  "to": "[^12]: NR4 Filing Instructions CRA Guide T4061",
+  "kind": "fact"
+ },
+ {
+  "from": "like $200 federally or $360 in Ontario province",
+  "to": "like $200 federally or $300 in Ontario province",
+  "kind": "fact"
+ },
+ {
+  "from": "Director\tMinimum age 18; no bankruptcy\tDepends on province\tFederal & Ontario dropped resident rule",
+  "to": "Director\tMinimum age 18; no bankruptcy\tDepends on province\tOntario dropped resident rule; federal needs 25%",
+  "kind": "fact"
+ },
+ {
+  "from": "Since Sept 2021 under CBCA no Canadian residency required for directors\nOBCA also dropped resident director rule in Jan 2023",
+  "to": "Under CBCA s.105(3), at least 25% of directors must still be resident Canadians\nOBCA dropped its resident director rule on July 5, 2021",
+  "kind": "fact"
+ },
+ {
+  "from": "The T2 corporate tax return deadline is six months after your fiscal year ends — this date sets when taxes are due Income Tax Act s229.",
+  "to": "The T2 corporate tax return deadline is six months after your fiscal year ends — this date is the filing deadline, while taxes are due two or three months after year-end Income Tax Act s150(1).",
+  "kind": "fact"
+ },
+ {
+  "from": "People who are undischarged bankrupts usually can't be directors unless their creditors agree.",
+  "to": "People who are undischarged bankrupts can't be directors.",
+  "kind": "fact"
+ },
+ {
+  "from": "Since 2026, federal rules (CBCA) don’t require directors to live in Canada. But some provinces might still ask for a resident director.",
+  "to": "Federal rules (CBCA) still require at least 25% of directors to be resident Canadians, while Ontario dropped its requirement in 2021. Some other provinces still ask for a resident director.",
+  "kind": "fact"
+ },
+ {
+  "from": "Residency Requirement\tNone (since 2026)\tNone (since 2026)",
+  "to": "Residency Requirement\t25% resident Canadians\tNone (since July 5, 2021)",
+  "kind": "fact"
+ },
+ {
+  "from": "Bankruptcy Status\tNot undischarged bankrupt without approval\tSame",
+  "to": "Bankruptcy Status\tNot an undischarged bankrupt\tSame",
+  "kind": "fact"
+ },
+ {
+  "from": "Non-residents can now incorporate companies in Canada without needing a resident director since early 2026 [EDITOR: verify].",
+  "to": "Non-residents can incorporate companies in Ontario without needing a resident director since July 5, 2021; a federal corporation still needs 25% resident Canadian directors.",
+  "kind": "fact"
+ },
+ {
+  "from": "To claim it, submit forms like NR301 before paying dividends. CRA reviews these case by case.",
+  "to": "To claim it, the shareholder gives the corporation forms like NR301 before dividends are paid. The corporation keeps them on file, and CRA can review them.",
+  "kind": "fact"
+ },
+ {
+  "from": "After incorporating online for $35 including HST [EDITOR: insert exact fee],",
+  "to": "After incorporating online for $35 including HST,",
+  "kind": "fact"
+ },
+ {
+  "from": "This number usually gets assigned automatically during federal incorporation but setting up provincial accounts might need extra steps.",
+  "to": "This number usually gets assigned automatically during federal or Ontario incorporation, but adding program accounts like GST/HST and payroll needs extra steps.",
+  "kind": "fact"
+ },
+ {
+  "from": "The Small Business Deduction (SBD) cuts federal corporate income taxes if your taxable capital stays below this number.2",
+  "to": "The Small Business Deduction (SBD) cuts corporate income tax on the first $500,000 of active business income, and is reduced once taxable capital passes $10 million.2",
+  "kind": "fact"
+ },
+ {
+  "from": "Registered office address service included",
+  "to": "Registered office address service available in downtown Toronto",
+  "kind": "fact"
+ },
+ {
+  "from": "[^4]: CRA Guide RC4110 - NR4 Filing Deadline March 31 [EDITOR: verify current year figure]",
+  "to": "[^4]: CRA Guide T4061 - NR4 Filing Deadline March 31",
+  "kind": "fact"
+ },
+ {
+  "from": "Open Corporation charges $35 CAD plus government fees. This covers same-day filing, NUANS report, and registered office service.",
+  "to": "Open Corporation charges $35 CAD, HST included, plus government fees. This covers preparing and filing your articles the same day; the NUANS report and the registered office address service are separate.",
+  "kind": "fact"
+ },
+ {
+  "from": "Since 2026, federal rules no longer require resident directors, easing incorporation for foreign entrepreneurs.",
+  "to": "Ontario removed its resident director requirement on July 5, 2021, so a newcomer or non-resident can be the sole director of an Ontario corporation; federal corporations still need 25% resident Canadian directors.",
+  "kind": "fact"
+ },
+ {
+  "from": "Tax treaties can lower withholding tax rates on dividends or interest paid to foreign shareholders after CRA approval.",
+  "to": "Tax treaties can lower withholding tax rates on dividends or interest paid to foreign shareholders when the shareholder gives the corporation a completed NR301; no advance CRA approval is needed.",
+  "kind": "fact"
+ },
+ {
+  "from": "T1134 reports control over foreign affiliates;",
+  "to": "T1134 reports foreign affiliates;",
+  "kind": "fact"
+ },
+ {
+  "from": "Your company qualifies as CCPC only if Canadian residents control over 50% voting shares.",
+  "to": "Your company qualifies as CCPC only if it is not controlled by non-residents or public corporations, for example when non-residents hold no more than 50% of the voting shares.",
+  "kind": "fact"
+ },
+ {
+  "from": "same-day processing, included registered office service,",
+  "to": "same-day processing, registered office service available separately,",
+  "kind": "fact"
+ }
+]

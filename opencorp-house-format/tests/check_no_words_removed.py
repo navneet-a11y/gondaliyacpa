@@ -7,7 +7,7 @@ Usage: check_no_words_removed.py SOURCE.md HEADINGS.txt POST.html [CORRECTIONS.j
    (visible text plus image alt text). Words may be added, never removed.
    Only markdown syntax is ignored: "---" rules, "[^n]:" footnote labels,
    inline "[^n]" markers (matched as the plain number n, shown as a superscript),
-   straight double quotes, and the image-brief labels "Alt text suggestion:"
+   straight double quotes, "> " blockquote markers at a line or cell start, and the image-brief labels "Alt text suggestion:"
    and "Caption:" (their text becomes the image alt and caption).
 2. Every line in HEADINGS.txt is the exact text of an h1 to h5 element.
 3. The FAQPage schema matches the visible FAQ word for word.
@@ -86,6 +86,7 @@ def source_tokens(path, corrections=None):
     lines = []
     for line in text.splitlines(keepends=True):
         line = re.sub(r"^(Alt text suggestion:|Caption:)\s*", "", line)
+        line = re.sub(r"(^|\t)> ", r"\1", line)  # markdown blockquote marker at a line or table-cell start
         line = re.sub(r"\[\^(\d+)\](?!:)", r"\1", line)  # inline markdown footnote [^2] shows as a superscript 2
         lines.append(line)
     return tokens("".join(lines))

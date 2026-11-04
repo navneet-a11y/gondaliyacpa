@@ -1,0 +1,804 @@
+<style>.gcpa-post{--navy:#0f2a4a;--navy-2:#15355c;--blue:#1c6dd0;--blue-soft:#e8f1fc;--teal:#0c8f8f;--teal-soft:#e3f4f4;--gold:#c9991f;--gold-soft:#fbf3dc;--green:#1f8a4c;--green-soft:#e6f5ec;--red:#c0392b;--red-soft:#fbeae8;--ink:#1d2733;--muted:#5a6b7b;--line:#d8e0e8;--bg:#ffffff;--bg-alt:#f5f8fb;--radius:14px;--shadow:0 6px 22px rgba(15,42,74,.08);--shadow-lg:0 14px 40px rgba(15,42,74,.14);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);line-height:1.7;font-size:17px;max-width:1080px;margin:0 auto;padding:0 18px 60px;} .gcpa-post *{box-sizing:border-box;} .gcpa-hero{background:linear-gradient(135deg,var(--navy) 0%,var(--navy-2) 60%,#1c4a78 100%);color:#fff;border-radius:20px;padding:46px 40px 42px;margin:26px 0 34px;position:relative;overflow:hidden;} .gcpa-hero::after{content:"";position:absolute;right:-80px;top:-80px;width:280px;height:280px;z-index:0;background:radial-gradient(circle,rgba(28,109,208,.45),transparent 70%);} .gcpa-post .gcpa-eyebrow{display:inline-block;font-size:13px;letter-spacing:1.4px;text-transform:uppercase;font-weight:700;color:#cfe2f8 !important;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.3);padding:7px 15px;border-radius:30px;margin-bottom:18px;} .gcpa-post .gcpa-hero h1{font-size:34px;line-height:1.25;margin:0 0 16px;font-weight:800;color:#fff !important;letter-spacing:-.3px;position:relative;z-index:2;} .gcpa-post .gcpa-hero p{font-size:18px;color:#eaf3fc !important;margin:0;max-width:760px;position:relative;z-index:2;} .gcpa-eyebrow{position:relative;z-index:2;} .gcpa-post h2{font-size:27px;font-weight:800;color:var(--navy);line-height:1.3;margin:48px 0 18px;padding-bottom:14px;border-bottom:3px solid var(--blue-soft);letter-spacing:-.2px;position:relative;} .gcpa-post h2::after{content:"";position:absolute;left:0;bottom:-3px;width:70px;height:3px;background:var(--blue);} .gcpa-post h3{font-size:22px;font-weight:800;color:var(--navy-2);margin:40px 0 14px;line-height:1.35;} .gcpa-post h4{font-size:19px;font-weight:700;color:var(--navy-2);margin:36px 0 12px;line-height:1.4;padding-left:16px;border-left:4px solid var(--teal);} .gcpa-post p{margin:0 0 16px;color:#1d2733 !important;} .gcpa-post li{color:#1d2733;} .gcpa-post a{color:var(--blue);text-decoration:none;font-weight:600;} .gcpa-post a:hover{text-decoration:underline;} .gcpa-post ul,.gcpa-post ol{margin:0 0 18px !important;padding-left:0 !important;list-style:none !important;} .gcpa-post ul{list-style-type:none !important;} .gcpa-post ul li{position:relative;padding:8px 0 8px 34px;margin:0;border-bottom:1px solid var(--line);color:var(--ink);list-style:none !important;list-style-type:none !important;} .gcpa-post ul li::marker{content:"" !important;font-size:0 !important;} .gcpa-post ul li:last-child{border-bottom:none;} .gcpa-post ul li::before{content:"";position:absolute;left:6px;top:15px;width:9px;height:9px;border-radius:2px;background:var(--teal);transform:rotate(45deg);} .gcpa-post ol{counter-reset:gcpa;} .gcpa-post ol li{position:relative;padding:10px 0 10px 44px;margin:0 0 10px;counter-increment:gcpa;list-style:none !important;list-style-type:none !important;} .gcpa-post ol li::marker{content:"" !important;font-size:0 !important;} .gcpa-post ol li::before{content:counter(gcpa);position:absolute;left:0;top:9px;width:28px;height:28px;border-radius:8px;background:var(--navy);color:#fff;font-weight:700;font-size:14px;display:flex;align-items:center;justify-content:center;} .gcpa-post .wp-block-table,.gcpa-post figure.wp-block-table{margin:22px 0 26px;overflow-x:auto;} .gcpa-post table{width:100%;border-collapse:collapse;font-size:15.5px;background:#fff;border:1px solid var(--navy);border-radius:10px;overflow:hidden;box-shadow:var(--shadow);} .gcpa-post thead th{background:var(--navy);color:#fff;text-align:left;padding:13px 15px;font-weight:700;font-size:15px;border:1px solid var(--navy-2);} .gcpa-post tbody td{padding:12px 15px;border:1px solid var(--line);vertical-align:top;color:var(--ink);} .gcpa-post tbody tr:nth-child(even){background:var(--bg-alt);} .gcpa-post tbody tr:hover{background:var(--blue-soft);} .gcpa-post tbody td:first-child{font-weight:600;color:var(--navy-2);} .gcpa-metrics{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin:30px 0 36px;clear:both;} .gcpa-metric{background:#fff;border:1px solid var(--line);border-top:4px solid var(--blue);border-radius:var(--radius);padding:22px 18px;box-shadow:var(--shadow);transition:transform .2s,box-shadow .2s;} .gcpa-metric:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg);} .gcpa-metric:nth-child(2){border-top-color:var(--teal);} .gcpa-metric:nth-child(3){border-top-color:var(--gold);} .gcpa-metric:nth-child(4){border-top-color:var(--green);} .gcpa-metric .ic{width:46px;height:46px;border-radius:11px;background:var(--blue-soft);display:flex;align-items:center;justify-content:center;margin-bottom:14px;color:var(--blue);} .gcpa-metric:nth-child(2) .ic{background:var(--teal-soft);color:var(--teal);} .gcpa-metric:nth-child(3) .ic{background:var(--gold-soft);color:var(--gold);} .gcpa-metric:nth-child(4) .ic{background:var(--green-soft);color:var(--green);} .gcpa-metric .big{font-size:22px;font-weight:800;color:var(--navy);line-height:1.2;margin-bottom:4px;} .gcpa-metric .lbl{font-size:14px;color:var(--muted);line-height:1.45;} .gcpa-numhead{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin:46px 0 8px;clear:both;} .gcpa-numhead h4{margin:0 !important;} .gcpa-numhead .gcpa-pill{margin:0 !important;} .gcpa-numhead .num{flex:0 0 auto;width:48px;height:48px;border-radius:12px;background:var(--navy);color:#fff;font-size:22px;font-weight:800;display:flex;align-items:center;justify-content:center;box-shadow:var(--shadow);} .gcpa-callout{border-radius:var(--radius);padding:20px 22px;margin:22px 0;border:1px solid var(--line);background:var(--bg-alt);position:relative;} .gcpa-callout.blue{background:var(--blue-soft);border-color:#bcd9f6;} .gcpa-callout.teal{background:var(--teal-soft);border-color:#b7e3e3;} .gcpa-callout.gold{background:var(--gold-soft);border-color:#ecd79a;} .gcpa-callout.green{background:var(--green-soft);border-color:#b6e2c6;} .gcpa-callout.red{background:var(--red-soft);border-color:#f0c4be;} .gcpa-callout .co-tag{display:inline-block;font-size:12.5px;font-weight:700;letter-spacing:.6px;text-transform:uppercase;padding:4px 11px;border-radius:20px;margin-bottom:10px;color:#fff;} .gcpa-callout.blue .co-tag{background:var(--blue);} .gcpa-callout.teal .co-tag{background:var(--teal);} .gcpa-callout.gold .co-tag{background:var(--gold);} .gcpa-callout.green .co-tag{background:var(--green);} .gcpa-callout.red .co-tag{background:var(--red);} .gcpa-callout p:last-child{margin-bottom:0;} .gcpa-cta{background:linear-gradient(135deg,var(--navy) 0%,#1c4a78 100%);color:#fff;border-radius:18px;padding:34px 32px;margin:38px 0;text-align:center;box-shadow:var(--shadow-lg);position:relative;overflow:hidden;} .gcpa-cta::before{content:"";position:absolute;left:-60px;bottom:-60px;width:220px;height:220px;background:radial-gradient(circle,rgba(12,143,143,.4),transparent 70%);} .gcpa-post .gcpa-cta h4{color:#fff !important;border:none;padding:0;margin:0 0 12px;font-size:22px;font-weight:800;position:relative;z-index:1;} .gcpa-post .gcpa-cta p{color:#eaf3fc !important;max-width:680px;margin:0 auto 22px;position:relative;z-index:1;} .gcpa-post .gcpa-cta .btn{display:inline-block;background:#fff !important;color:var(--navy) !important;font-weight:700;padding:13px 26px;border-radius:30px;margin:6px;font-size:16px;position:relative;z-index:1;transition:transform .15s;text-decoration:none !important;} .gcpa-post .gcpa-cta .btn:hover{transform:translateY(-2px);text-decoration:none !important;} .gcpa-post .gcpa-cta .btn.primary{background:var(--teal) !important;color:#fff !important;} .gcpa-btnrow{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;align-items:center;position:relative;z-index:1;} .gcpa-trust{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-bottom:22px;position:relative;z-index:1;} .gcpa-post .gcpa-trust span{font-size:13px;font-weight:700;background:rgba(255,255,255,.18) !important;border:1px solid rgba(255,255,255,.45);padding:7px 14px;border-radius:20px;color:#ffffff !important;} .gcpa-post svg{display:block;} .gcpa-pill{display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:700;padding:8px 16px;border-radius:30px;margin:10px 0 6px;line-height:1.2;} .gcpa-pill svg{width:16px;height:16px;flex:0 0 auto;} .gcpa-pill.green{background:var(--green-soft);color:var(--green);border:1px solid #b6e2c6;} .gcpa-pill.blue{background:var(--blue-soft);color:var(--blue);border:1px solid #bcd9f6;} .gcpa-pill.teal{background:var(--teal-soft);color:var(--teal);border:1px solid #b7e3e3;} .gcpa-pill.gold{background:var(--gold-soft);color:#9a7416;border:1px solid #ecd79a;} .gcpa-pill.red{background:var(--red-soft);color:var(--red);border:1px solid #f0c4be;} .gcpa-pillhead{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin:38px 0 12px;clear:both;} .gcpa-pillhead h4{margin:0 !important;} .gcpa-pillhead .gcpa-pill{margin:0 !important;} @media(max-width:560px){.gcpa-pillhead{gap:8px;}} .gcpa-toc{background:var(--bg-alt);border:1px solid var(--line);border-left:5px solid var(--blue);border-radius:var(--radius);padding:24px 26px;margin:30px 0 36px;box-shadow:var(--shadow);} .gcpa-toc h5{margin:0 0 14px;font-size:16px;font-weight:800;color:var(--navy);letter-spacing:.4px;text-transform:uppercase;display:flex;align-items:center;gap:9px;} .gcpa-toc h5 svg{width:20px;height:20px;color:var(--blue);} .gcpa-toc ol{counter-reset:toc;margin:0 !important;padding:0 !important;columns:2;column-gap:36px;list-style:none !important;} .gcpa-toc ol li{counter-increment:toc;position:relative;padding:7px 0 7px 30px;margin:0;border-bottom:1px dashed var(--line);break-inside:avoid;list-style:none !important;} .gcpa-toc ol li::before{content:counter(toc);position:absolute;left:0;top:7px;width:21px;height:21px;border-radius:6px;background:var(--blue-soft);color:var(--blue);font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;} .gcpa-toc ol li::marker{content:"" !important;font-size:0 !important;} .gcpa-toc a{color:var(--navy-2);font-weight:600;font-size:15px;} .gcpa-toc a:hover{color:var(--blue);} .gcpa-post [id^="toc-"]{scroll-margin-top:90px;} .gcpa-banner{display:block;background:linear-gradient(135deg,#0d3b66 0%,#0c7a7a 100%);color:#fff;border-radius:16px;padding:30px 32px;margin:36px 0;box-shadow:var(--shadow-lg);} .gcpa-banner .bt{font-size:20px;font-weight:800;line-height:1.45;margin:0 0 20px;max-width:760px;} .gcpa-banner .bb{display:flex;flex-wrap:wrap;gap:14px;align-items:center;} .gcpa-banner a{display:inline-block;background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.6);color:#fff !important;font-weight:700;padding:13px 24px;border-radius:30px;font-size:15px;text-decoration:none !important;} .gcpa-banner a.solid{background:#ffffff !important;color:#0d3b66 !important;border-color:#fff;} .gcpa-disclaimer{background:var(--bg-alt);border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:34px 0 10px;font-size:14.5px;color:var(--muted);line-height:1.6;} .gcpa-disclaimer strong{color:var(--navy-2);} .gcpa-byline{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin:0 0 22px;font-size:15px;} .gcpa-byline .av{width:42px;height:42px;border-radius:50%;background:var(--navy);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:16px;flex:0 0 auto;} .gcpa-byline .nm{font-weight:700;color:var(--navy-2);} .gcpa-byline .rl{color:var(--teal);font-weight:700;} .gcpa-byline .sep{color:var(--line);} .gcpa-author{display:flex;gap:18px;align-items:flex-start;background:var(--bg-alt);border:1px solid var(--line);border-left:5px solid var(--teal);border-radius:14px;padding:24px 26px;margin:34px 0 40px;} .gcpa-author .ava{width:64px;height:64px;border-radius:50%;background:linear-gradient(135deg,var(--navy),var(--teal));color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:22px;flex:0 0 auto;} .gcpa-author .info h5{margin:0 0 6px;font-size:17px;font-weight:800;color:var(--navy);line-height:1.4;} .gcpa-author .info .role{font-size:14px;color:var(--teal);font-weight:700;margin:0 0 12px;} .gcpa-author .info p{font-size:14.5px;color:var(--muted) !important;margin:0;line-height:1.65;} .gcpa-faq{margin:18px 0 26px;border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:var(--shadow);} .gcpa-faq details{border-bottom:1px solid var(--line);background:#fff;} .gcpa-faq details:last-child{border-bottom:none;} .gcpa-faq summary{list-style:none;cursor:pointer;padding:18px 22px;font-weight:700;color:var(--navy-2);font-size:16px;display:flex;justify-content:space-between;align-items:center;gap:14px;transition:background .15s;} .gcpa-faq summary::-webkit-details-marker{display:none;} .gcpa-faq summary:hover{background:var(--bg-alt);} .gcpa-faq summary .pl{flex:0 0 auto;width:24px;height:24px;border-radius:50%;background:var(--blue-soft);color:var(--blue);display:flex;align-items:center;justify-content:center;font-size:18px;font-weight:700;transition:transform .2s;} .gcpa-faq details[open] summary{background:var(--bg-alt);color:var(--navy);} .gcpa-faq details[open] summary .pl{transform:rotate(45deg);background:var(--blue);color:#fff;} .gcpa-faq .ans{padding:0 22px 20px;color:#1d2733;font-size:15.5px;line-height:1.7;} .gcpa-img-right{float:right;max-width:250px;width:32%;margin:6px 0 24px 28px;border-radius:12px;box-shadow:var(--shadow-lg);border:1px solid var(--line);} .gcpa-img-right img{display:block;width:100%;height:auto;border-radius:12px;} @media(max-width:560px){.gcpa-img-right{float:none;width:70%;max-width:260px;margin:14px auto 18px;}} .gcpa-closing{font-size:24px;font-weight:800;color:var(--navy);margin:48px 0 14px;padding-bottom:12px;border-bottom:3px solid var(--teal-soft);position:relative;} .gcpa-closing::after{content:"";position:absolute;left:0;bottom:-3px;width:70px;height:3px;background:var(--teal);} @media(max-width:560px){.gcpa-post{font-size:16px;} .gcpa-hero{padding:32px 22px;} .gcpa-hero h1{font-size:26px;} .gcpa-post h2{font-size:23px;} .gcpa-cta{padding:26px 20px;} .gcpa-banner .bb{width:100%;} .gcpa-banner .bb a{flex:1 1 auto;text-align:center;}}</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"Open Corporation for $35","alternateName":"Open Corporation For $35","url":"https://opencorporationfor35.ca/","description":"Open Corporation for $35 is a department of Gondaliya CPA.","parentOrganization":{"@type":"Organization","name":"Gondaliya CPA Professional Corporation","url":"https://gondaliyacpa.ca","identifier":"CPA Ontario Firm Registration 61330051"},"legalName":"WealthBamboo Inc.","telephone":"+1-647-212-9559","email":"info@gondaliyacpa.ca","areaServed":"CA","openingHours":"Mo-Su 09:00-20:30","award":"Xero Partner Award Winner 2026","aggregateRating":{"@type":"AggregateRating","ratingValue":"5","reviewCount":"1300"}}
+</script>
+<div class="gcpa-post">
+<div class="gcpa-hero" style="background:linear-gradient(135deg,#0f2a4a 0%,#15355c 60%,#1c4a78 100%) !important;">
+<span class="gcpa-eyebrow">Newcomers · Non-Residents · Directors · Part XIII · 2026</span>
+<h1 style="color:#ffffff !important;position:relative;z-index:2;font-size:34px;line-height:1.25;font-weight:800;margin:0 0 14px;">Incorporating as a Newcomer to Canada</h1>
+<div class="gcpa-hero-sub" style="margin:0 0 18px;"><span style="color:#eaf3fc !important;font-size:18px;line-height:1.6;display:block;max-width:840px;position:relative;z-index:2;">Who can be a director, which jurisdiction fits, what incorporating does not do for your immigration status, and the tax filings that follow</span></div>
+<div style="position:relative;z-index:2;font-size:15px;line-height:1.5;"><span style="color:#ffffff;font-weight:bold;">By Sharad Gondaliya, CPA</span><span style="color:#9fd0d0;font-weight:bold;">  |  <a href="https://opencorporationfor35.ca/">Open Corporation For $35</a> and <a href="https://opencorporationfor35.ca/address-service-100/">Address Service</a></span></div>
+<div style="position:relative;z-index:2;font-size:14.5px;line-height:1.5;margin-top:12px;"><span style="color:#cfe2f8 !important;font-weight:600;">Open Corporation for $35 is a department of Gondaliya CPA.</span></div>
+</div>
+<h2>Newcomer Business Incorporation Canada: How Immigrant Entrepreneurs Can Incorporate a Company in Canada as a Foreigner Including Director and Tax Filing Requirements</h2>
+<p><strong>Open Corporation for $35 is a department of Gondaliya CPA.</strong> Newcomer business incorporation Canada offers immigrant entrepreneurs a clear path to incorporate a company as a foreigner by addressing business ownership requirements, permanent resident business incorporation, and online incorporation options. Using Open Corporation for $35, newcomers can efficiently manage provincial registration, director obligations, tax filings, and <a href="https://opencorporationfor35.ca/guides/extra-provincial-registration/">extra-provincial registration</a> with expert guidance.</p>
+<h3 id="toc-summary" style="margin-top:38px;">Quick Summary</h3>
+<p>A newcomer, or someone still living abroad, can own and direct a Canadian corporation. The two rules that decide most cases are the director residency rule, which differs between federal and Ontario incorporation, and the fact that incorporating gives no right to work in Canada.</p>
+<figure class="wp-block-table">
+<table>
+<thead><tr><th>Aspect</th><th>Details</th></tr></thead>
+<tbody>
+<tr><td>Can a newcomer incorporate</td><td>Yes. Permanent residents, work permit holders and people living abroad can own shares and be directors.</td></tr>
+<tr><td>Resident directors</td><td>Federal: at least 25% resident Canadians. Ontario: none required since July 5, 2021, so a newcomer can be the <a href="https://opencorporationfor35.ca/ontario-resident-director-rule-removed/">sole director of an Ontario corporation</a>.</td></tr>
+<tr><td>Right to work</td><td>Incorporating gives none. Work permits and residence come from IRCC.</td></tr>
+<tr><td>Government fees</td><td>$200 federally or $300 in Ontario, plus our $35 fee including HST.</td></tr>
+<tr><td>Tax status</td><td>A corporation controlled by non-residents is not a CCPC.</td></tr>
+<tr><td>Dividends abroad</td><td>25% Part XIII withholding unless a treaty rate applies; NR4 slips by March 31.</td></tr>
+</tbody>
+</table>
+</figure>
+<div class="gcpa-author">
+<div class="ava" style="background:linear-gradient(135deg,#0f2a4a,#0c8f8f) !important;color:#ffffff !important;">SG</div>
+<div class="info">
+<h5>Author: Sharad Gondaliya, CPA (Canada &amp; USA) — Founder &amp; Managing Director, Gondaliya CPA Professional Corporation, Toronto, Ontario.</h5>
+<div class="role">Reviewed and fact-checked by Sharad Gondaliya, CPA (Canada &amp; USA)</div>
+<p style="font-size:14.5px;color:#15355c !important;font-weight:700;margin:0 0 8px;">Open Corporation for $35 is a department of Gondaliya CPA.</p>
+<p>Gondaliya CPA is a Toronto-based team providing incorporation, CRA registrations, corporate tax, bookkeeping, GST/HST, and payroll for Canadian corporations. Verify our firm on the <a href="https://www.cpaontario.ca/protecting-the-public/directories/firm/gondaliya-5sqvmj">CPA Ontario public firm directory</a>, firm registration 61330051.</p>
+<p style="font-size:13.5px;color:#15355c !important;font-weight:700;margin-top:10px;">CPA Ontario | CPA USA (Washington &amp; Montana) | Xero Partner Award Winner 2026 | 1300+ 5-star Google reviews</p>
+</div>
+</div>
+<p style="font-size:14px;color:#5a6b7b;margin:-26px 0 26px;">Reading time: 35 minutes.</p>
+<div class="gcpa-toc">
+<h5>Table of Contents</h5>
+<ol>
+<li><a href="#toc-overview">Newcomer Incorporation Overview</a></li>
+<li><a href="#toc-immigration">Immigration Options</a></li>
+<li><a href="#toc-structure">Structure and Jurisdiction</a></li>
+<li><a href="#toc-steps">Incorporating Step by Step</a></li>
+<li><a href="#toc-directors">Directors and Tax Filings</a></li>
+<li><a href="#toc-challenges">Challenges and Support</a></li>
+<li><a href="#toc-faq">Frequently Asked Questions</a></li>
+<li><a href="#toc-controls">Risk Controls and Quick Reference</a></li>
+</ol>
+</div>
+<span class="gcpa-pill green">The Numbers That Matter</span>
+<div class="gcpa-metrics">
+<div class="gcpa-metric">
+<div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+<div class="big">25%</div>
+<div class="lbl">Resident Canadian directors for a federal corporation</div>
+</div>
+<div class="gcpa-metric">
+<div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
+<div class="big">0</div>
+<div class="lbl">Resident directors needed in Ontario</div>
+</div>
+<div class="gcpa-metric">
+<div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></div>
+<div class="big">90 days</div>
+<div class="lbl">NUANS report validity</div>
+</div>
+<div class="gcpa-metric">
+<div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="M19 9l-5 5-4-4-3 3"/></svg></div>
+<div class="big">25%</div>
+<div class="lbl">Default Part XIII rate on dividends to non-residents</div>
+</div>
+<div class="gcpa-metric">
+<div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+<div class="big">$35</div>
+<div class="lbl">Our incorporation fee, including HST</div>
+</div>
+</div>
+<div class="gcpa-callout blue">
+<span class="co-tag">Scope &amp; Assumptions</span>
+<p>This article covers federal and Ontario corporate law, federal tax rules and IRCC programs as they stand in 2026, in Canadian dollars. Immigration programs open, close and change often, and director rules differ between provinces. This is educational information only and not tax, legal, immigration, or financial advice. Please speak with a CPA about the corporation and tax, and a licensed immigration consultant or lawyer about your status, before you act.</p>
+</div>
+
+<h2>Newcomer Business Incorporation in Canada: An Overview</h2>
+<div class="gcpa-numhead">
+<div class="num" style="background:#0f2a4a !important;color:#ffffff !important;">1</div>
+<h4 id="toc-overview" style="border:none;padding:0;margin:0;">Newcomer Incorporation Overview</h4>
+<span class="gcpa-pill blue">The Basics</span>
+</div>
+<p>Starting a business as a newcomer to Canada opens up many doors. <a href="https://opencorporationfor35.ca/guides/how-to-incorporate-in-canada/">Immigrant entrepreneurs can set up companies</a> and tap into Canada’s strong economy and diverse customers.</p>
+<p>Newcomer business incorporation in Canada means following some clear steps. You’ll pick the right type of company, register with the government, and stick to local laws. Immigrant entrepreneur incorporation Canada programs help newcomers by giving useful info designed just for them.</p>
+<h3>Benefits of Incorporating a Business as an Immigrant Entrepreneur</h3>
+<p>Here’s why many immigrant entrepreneurs choose to incorporate their businesses in Canada:</p>
+<ul>
+<li><strong>Limited Liability Protection</strong><br>Your business becomes its own legal thing. That keeps your personal money safe if the business runs into trouble.</li>
+<li><strong>Access to Funding</strong><br>Incorporated companies often find it easier to get loans or grants. Investors usually trust corporations more than sole proprietors or partnerships.</li>
+<li><strong>Tax Advantages</strong><br>Companies pay less tax on money they keep inside the business compared to personal income taxes. Plus, they can claim certain deductions not available to individuals.</li>
+<li><strong>Credibility and Professionalism</strong><br>Running a business under a registered name makes you look more serious and trustworthy to clients and suppliers.</li>
+<li><strong><a href="https://opencorporationfor35.ca/share-issuance-transfer/">Easier Transfer of Ownership</a></strong><br>You can sell or transfer shares without shaking up daily operations or management teams.</li>
+</ul>
+<p>These perks make newcomer business incorporation Canada attractive for many who want to grow their ventures here.</p>
+<h3>Understanding Business Ownership Requirements for Newcomers</h3>
+<div class="gcpa-pillhead"><h4 style="border:none;padding:0;margin:0;">Who Can Be a Shareholder or Director of a Canadian Corporation?</h4><span class="gcpa-pill teal">Eligibility</span></div>
+<p>Anyone over 18 years old can <a href="https://opencorporationfor35.ca/guides/director-residency-requirements/">own shares or be a director</a> in a Canadian corporation—even if they don’t live in Canada. But some rules do apply:</p>
+<ul>
+<li>You need a certain number of directors who live in Canada, depending on where you incorporate—federal or provincial laws apply differently.</li>
+<li>Federal incorporations still require at least 25% of directors to be resident Canadians, or at least one director if there are four or fewer.</li>
+<li>Ontario removed its resident director requirement on July 5, 2021 [source: OBCA].</li>
+</ul>
+<p>This means newcomers—whether permanent residents or foreigners—can own and manage companies while figuring out life here.</p>
+<div class="gcpa-callout blue">
+<span class="co-tag">Worth Knowing</span>
+<p>A resident Canadian generally means a Canadian citizen or permanent resident who lives in Canada. A newcomer on a work permit who is not yet a permanent resident does not count toward the federal 25%.</p>
+</div>
+<h3>Do Directors Need To Be Canadian Residents?</h3>
+<p>Rules about this changed recently:</p>
+<figure class="wp-block-table">
+<table>
+<thead><tr><th>Jurisdiction</th><th>Resident Director Rule</th><th>Effective Date</th></tr></thead>
+<tbody>
+<tr><td>Federal (CBCA)</td><td>At least 25% resident Canadians</td><td>Ongoing</td></tr>
+<tr><td>Ontario (OBCA)</td><td>Not required anymore</td><td>July 5, 2021</td></tr>
+</tbody>
+</table>
+</figure>
+<p>So:</p>
+<ul>
+<li><a href="https://opencorporationfor35.ca/incorporate-federally-in-canada/">Federally incorporated companies</a> still have to name resident Canadian directors for at least 25% of the board.</li>
+<li>But Ontario no longer needs a resident director, so a newcomer can be the sole director [source: OBCA].</li>
+</ul>
+<p>Knowing these details helps newcomers pick how and where to form their businesses best.</p>
+<div class="gcpa-callout red">
+<span class="co-tag">Risk Warning</span>
+<p><strong>Risk Warning:</strong> Corporations Canada will not accept federal articles that name too few resident Canadian directors. Please do not choose federal incorporation unless at least 25% of your directors live in Canada as citizens or permanent residents.</p>
+</div>
+<h3>Online Incorporation Options for Foreign Entrepreneurs</h3>
+<p>Foreign entrepreneurs wanting quick entry into Canada's business scene can use <a href="https://opencorporationfor35.ca/incorporation-service-35/">online services like Open Corporation</a>.</p>
+<p>For just $35 CAD plus gov fees, you get fast incorporation without fuss or hidden costs. They offer same-day filing and instant NUANS reports for $25 when you choose a named company—saving time and headaches!</p>
+<p>Open Corporation also guides you through each step, from signing up your company to keeping it compliant with rules afterward. This support fits well with newcomers eager to set up shop smoothly in this diverse country.</p>
+
+<h2>Immigration Options for Starting a Business in Canada</h2>
+<div class="gcpa-numhead">
+<div class="num" style="background:#0f2a4a !important;color:#ffffff !important;">2</div>
+<h4 id="toc-immigration" style="border:none;padding:0;margin:0;">Immigration Options</h4>
+<span class="gcpa-pill teal">Immigration</span>
+</div>
+<p>Starting a business as a newcomer to Canada means knowing your immigration options. You can incorporate a business here, but owning or running a company doesn’t automatically give you <a href="https://opencorporationfor35.ca/open-a-corporation-in-canada-on-a-work-permit/">work rights or immigration status</a>. Immigrant entrepreneur incorporation Canada requires understanding different federal and provincial programs that help foreign nationals set up businesses. If you want to incorporate a company in Canada as a foreigner, you need to know these options and their rules.</p>
+<div class="gcpa-callout red">
+<span class="co-tag">Risk Warning</span>
+<p><strong>Risk Warning:</strong> Owning or directing a Canadian corporation gives no right to work in Canada. Please do not start working in the business before you hold a permit that allows it.</p>
+</div>
+<h3>Entrepreneur Work Permit (C11) and Eligibility Criteria</h3>
+<p>The Entrepreneur Work Permit (C11) lets immigrant entrepreneurs run or buy businesses in Canada temporarily. It also helps with applying for permanent residence through certain programs. To be eligible, you must show a solid business plan, have enough investment money, and actively manage the business.</p>
+<p>Here are the key points:</p>
+<ul>
+<li>Own at least 50% of the Canadian company.</li>
+<li>Take part in daily operations.</li>
+<li>Present a detailed business plan that benefits Canada’s economy.</li>
+</ul>
+<p>This permit helps with immigrant entrepreneur incorporation Canada but doesn’t guarantee permanent residency or work permission beyond its duration. It’s smart to talk to licensed immigration experts for advice.</p>
+<h3>Intra-Company Transfer (ICT) and Treaty Work Permits (CUSMA, CETA)</h3>
+<p>If you want to incorporate a company in Canada as a foreigner, intra-company transfer permits might help. These allow executives or managers from <a href="https://opencorporationfor35.ca/run-canadian-corporation-from-abroad/">related companies abroad</a> to work temporarily at Canadian branches without needing Labour Market Impact Assessment (LMIA).</p>
+<p>Also, treaty permits under deals like CUSMA and CETA offer easier entry for certain professionals linked to multinational firms.</p>
+<p>These paths let foreigners manage their Canadian businesses legally but require an existing connection with an overseas company. They don’t replace normal incorporation rules or give ownership rights.</p>
+<h3>Provincial Nominee Programs for Entrepreneurs</h3>
+<p>Provincial Nominee Programs (PNPs) support newcomers wanting to start businesses that fit local economic goals. Newcomer business incorporation Canada gets a boost from PNPs through nomination certificates. These speed up permanent residence after meeting investment amounts, job creation needs, and milestones set by provinces like Ontario, <a href="https://opencorporationfor35.ca/how-to-incorporate-in-british-columbia/">British Columbia</a>, Alberta, Manitoba, Saskatchewan, and Nova Scotia.</p>
+<p>Each province sets different rules on net worth and industries allowed. So, check the specific program details before applying.</p>
+<h3>Start-Up Visa Program and Current Status</h3>
+<p>The Start-Up Visa Program focuses on <a href="https://opencorporationfor35.ca/open-a-corporation-in-canada-as-a-non-resident-step-by-step-guide/">innovative immigrant entrepreneurs</a> who can launch high-growth startups. These startups need backing from designated groups like venture capital funds or angel investors approved by Innovation Science Economic Development Canada.</p>
+<p>For immigrant entrepreneur incorporation Canada through this program, you must get commitment letters from these endorsers showing your startup’s potential value before applying for permanent residence. The corporation should be set up federally or provincially.</p>
+<p>As of 2026, innovation sectors remain the focus. Processing times can vary because of demand changes.</p>
+<div class="gcpa-callout red">
+<span class="co-tag">Risk Warning</span>
+<p><strong>Risk Warning:</strong> Intake for several business immigration streams has been paused or capped in recent years. Please do not plan around a program before checking that IRCC is accepting applications to it.</p>
+</div>
+<h3>Self-Employed Persons Program and Quebec Investor Program</h3>
+<p>If you prefer <a href="https://opencorporationfor35.ca/sole-proprietorship-registration/">working alone</a> instead of forming a company, the Self-Employed Persons Program is normally an option, but IRCC paused new applications on April 30, 2024 until at least January 1, 2027. It targets cultural workers or athletes who contribute with personal skills rather than corporate structures. This differs from newcomer business incorporation canada focused on formal companies.</p>
+<p>Quebec runs an Investor Program requiring big investments into government funds. However, it has stopped new applications recently. So right now it’s less available than other programs that support entrepreneurial immigrants outside Quebec.</p>
+<h3>Owner-Operator LMIA Considerations</h3>
+<p>Sometimes newcomers want to incorporate a business as owners who also work there. That’s where owner-operator Labour Market Impact Assessments come in. Foreign nationals who own <a href="https://opencorporationfor35.ca/guides/share-structure-explained/">controlling shares</a> may get employer-specific work permits without having to advertise the job to Canadians first—this differs from usual LMIA rules needing priority hiring of Canadians first.</p>
+<p><strong>Key points about owner-operators:</strong></p>
+<ul>
+<li>Usually hold majority shares (over 50%).</li>
+<li>Must actively manage daily operations.</li>
+<li>May get LMIA exemption if they meet specific criteria.</li>
+<li>Need clear proof of actual control to avoid problems.</li>
+</ul>
+<p><strong>Note:</strong> Immigration decisions come from IRCC while corporate filings happen separately through services like Open Corporation for $35 by Gondaliya CPA Professional Corporation.</p>
+<figure class="wp-block-table">
+<table>
+<thead><tr><th>Factor</th><th>Explanation</th></tr></thead>
+<tbody>
+<tr><td>Ownership</td><td>Majority shareholding required</td></tr>
+<tr><td>Control &amp; Management</td><td>Active involvement needed</td></tr>
+<tr><td>LMIA Exemption</td><td>Possible under special rules</td></tr>
+<tr><td>Compliance Risks</td><td>False claims about control can cause trouble</td></tr>
+</tbody>
+</table>
+</figure>
+<h3>Selecting the Right Immigration Pathway to Support Business Incorporation</h3>
+<p>Picking the best immigration path depends on your background, how involved you want to be after setting up your business, how much money you have, and your long-term plans in Canada.</p>
+<p>Here are some factors that matter:</p>
+<ul>
+<li><strong>Business Type:</strong> Start-Up Visa fits new tech ideas; Owner Operator LMIA suits established businesses.</li>
+<li><strong>Residency Goals:</strong> Temporary options like ICT are short term; PNPs link directly with local economies and permanent residence chances.</li>
+<li><strong>Investment Level:</strong> Higher net worth helps with PNPs; smaller ventures might start with Entrepreneur Work Permits.</li>
+<li><strong>Legal Rules:</strong> Director residency laws affect whether federal or provincial incorporation makes more sense.</li>
+<li><strong>Professional Help:</strong> Rules about non-resident shareholders and tax forms like T1134/T1135 are tricky—<a href="https://opencorporationfor35.ca/consultation/">CPA advice prevents costly mistakes</a>.</li>
+</ul>
+<p>Open Corporation for $35 helps newcomers sort these details clearly while giving expert advice included free with their service.</p>
+<p>Sharad Gondaliya, CPA (Canada &amp; USA), has over 10 years helping Canadian business owners figure out their best moves.</p>
+
+<h2>Choosing Business Structures and Jurisdiction</h2>
+<div class="gcpa-numhead">
+<div class="num" style="background:#0f2a4a !important;color:#ffffff !important;">3</div>
+<h4 id="toc-structure" style="border:none;padding:0;margin:0;">Structure and Jurisdiction</h4>
+<span class="gcpa-pill gold">Structure</span>
+</div>
+<p>Starting a business as a newcomer to Canada means picking the <a href="https://opencorporationfor35.ca/convert-sole-proprietorship-corporation/">right business structure</a> and where to register it. Newcomer business incorporation Canada isn’t just about filing papers. You have to think about your goals, where you live, and how you want to run your business. Immigrant entrepreneur incorporation Canada also involves knowing the rules about who can own shares, who can be a director, and what laws apply across provinces or federally.</p>
+<h3>Business Structure Options for Newcomers in Canada</h3>
+<p>If you want to incorporate a company in Canada as a foreigner, there are several choices:</p>
+<ul>
+<li><strong>Sole Proprietorship:</strong> One person owns it and takes all the risks.</li>
+<li><strong>Partnership:</strong> <a href="https://opencorporationfor35.ca/partnership-registration/">Two or more people share ownership</a>, profits, and risks.</li>
+<li><strong>Corporation:</strong> A separate legal entity that protects owners from personal liability.</li>
+</ul>
+<p>For immigrant entrepreneurs incorporation Canada often points toward corporations. They offer limited liability protection, easier access to funding, and last forever no matter who owns shares. Plus, they can give tax benefits under Canadian law.<sup>1</sup></p>
+<p>You can set up corporations federally or provincially depending on where you want your business to operate. Each has different rules about name protection, directors’ residency, office locations, and paperwork.</p>
+<h3>Comparing Sole Proprietorship, Partnership, and Corporation</h3>
+<figure class="wp-block-table">
+<table>
+<thead><tr><th>Factor</th><th>Sole Proprietorship</th><th>Partnership</th><th>Corporation</th></tr></thead>
+<tbody>
+<tr><td>Legal Status</td><td>Same as owner</td><td>Same as partners</td><td>Separate legal entity</td></tr>
+<tr><td>Liability</td><td>Owner responsible personally</td><td>Partners share responsibility</td><td>Owners have limited liability</td></tr>
+<tr><td>Tax Treatment</td><td>Income taxed as personal income</td><td>Income shared among partners</td><td>Corporate tax rates apply</td></tr>
+<tr><td>Ownership Flexibility</td><td>Only one owner</td><td>Multiple owners allowed</td><td>Shares can be transferred</td></tr>
+<tr><td>Raising Capital</td><td>Hard</td><td>Moderate</td><td>Easier by selling shares</td></tr>
+<tr><td>Compliance</td><td>Very simple</td><td>Some paperwork</td><td>More filings and governance</td></tr>
+</tbody>
+</table>
+</figure>
+<p>If you want protection from personal risk or plan to grow bigger than a sole proprietorship, incorporating makes sense.<sup>2</sup></p>
+<div class="gcpa-cta" style="background:linear-gradient(135deg,#0f2a4a 0%,#1c4a78 100%) !important;">
+<h4>Incorporate as a newcomer, with a CPA checking the details</h4>
+<p>Incorporation from $35 including HST plus government fees, with a free CPA consultation on your jurisdiction, directors and share structure before anything is filed. Please book a free consultation.</p>
+<div class="gcpa-trust"><span>1300+ 5-star Google reviews</span><span>Xero Partner Award Winner 2026</span><span>CPA Ontario Firm 61330051</span><span>30-Day Money-Back Guarantee</span></div>
+<div class="gcpa-btnrow"><a class="solid" href="https://gondaliyacpa.ca/consultation/">Book Free Consultation</a><a href="https://opencorporationfor35.ca/">Open Corporation For $35</a><a href="tel:+16472129559">647-212-9559</a></div>
+</div>
+<h3>Federal Incorporation vs. Provincial Incorporation: Pros and Cons</h3>
+<p>Choosing federal incorporation under the Canada Business Corporations Act (CBCA) or provincial incorporation like Ontario’s Business Corporations Act (OBCA) depends on where you want to do business.</p>
+<p><strong>Federal Incorporation Pros:</strong></p>
+<ul>
+<li><a href="https://opencorporationfor35.ca/named-company-incorporation-nuans/">Protects your company name across all of Canada</a>.</li>
+<li>Lets you use the same name in every province without extra steps at first.</li>
+<li>Uses consistent federal rules under CBCA.<sup>3</sup></li>
+</ul>
+<p><strong>Provincial Incorporation Pros:</strong></p>
+<ul>
+<li>Sometimes cheaper fees if working only in one province.</li>
+<li>Simpler forms if you stay local (like Ontario).</li>
+<li>Local rules about directors might differ.<sup>4</sup></li>
+</ul>
+<figure class="wp-block-table">
+<table>
+<thead><tr><th>Feature</th><th>Federal (CBCA)</th><th>Provincial (e.g., OBCA - Ontario)</th></tr></thead>
+<tbody>
+<tr><td>Name Protection</td><td>Nationwide</td><td>Province-specific</td></tr>
+<tr><td>Registered Office Location</td><td>Anywhere in any province</td><td>Must be inside the province</td></tr>
+<tr><td>Director Residency Rules</td><td>At least 25% resident Canadian directors<sup>5</sup></td><td>Used to require resident directors; rule now dropped in ON<sup>6</sup></td></tr>
+<tr><td>Extra-provincial Registration Required?</td><td>Yes – if operating outside home province</td><td>No unless expanding beyond province</td></tr>
+</tbody>
+</table>
+</figure>
+<p>For newcomers planning to work in many provinces or build a national brand, federal is better. If you only plan local operations, provincial works fine.</p>
+<div class="gcpa-callout gold">
+<span class="co-tag">Our Actual Experience</span>
+<p>Most newcomers we incorporate choose Ontario rather than federal. Their business is in Ontario, and Ontario has no resident director rule, so the newcomer can be the only director from day one.</p>
+</div>
+<h3>Director Residency Requirements and Foreign Ownership Rules</h3>
+<p>When thinking about immigrant entrepreneur incorporation Canada, director rules matter.</p>
+<p>Since July 5, 2021,<sup>7</sup><sup>8</sup> the OBCA no longer demands directors live in Canada, but the CBCA still requires at least 25% resident Canadian directors. But some provinces may still have their own rules—so double-check locally.</p>
+<p>Foreigners can own shares freely but being controlled by non-residents affects tax status. For example, if foreign owners control your company it may lose its <a href="https://opencorporationfor35.ca/guides/small-business-deduction/">Canadian-Controlled Private Corporation (CCPC)</a> status. This means losing small business tax breaks.<sup>9</sup></p>
+<div class="gcpa-callout red">
+<span class="co-tag">Risk Warning</span>
+<p><strong>Risk Warning:</strong> A corporation controlled by non-residents is not a CCPC and pays the general corporate rate. Please do not budget on the small business rate until a CPA has confirmed who controls the corporation.</p>
+</div>
+<p>Here are key points about directors:</p>
+<ul>
+<li>Must be at least 18 years old.</li>
+<li>Cannot be bankrupt while serving as director.</li>
+</ul>
+<p>Summary table:</p>
+<figure class="wp-block-table">
+<table>
+<thead><tr><th>Requirement</th><th></th><th></th></tr></thead>
+<tbody>
+<tr><td>Age Minimum</td><td>≥18 years old</td><td>Applies federally/provincially</td></tr>
+<tr><td>Residency Requirement</td><td>25% federally; none in Ontario</td><td>Check other provinces</td></tr>
+<tr><td>Bankruptcy Disqualification</td><td>Not allowed if undischarged bankrupt</td><td>Applies everywhere</td></tr>
+<tr><td>Shareholder Restrictions</td><td>Anyone including foreigners can own</td><td>No limits except certain sectors</td></tr>
+</tbody>
+</table>
+</figure>
+<p>Foreign investors should talk with an accountant about control tests affecting CCPC status,<sup>10</sup> dividend withholding taxes,<sup>11</sup> NR4 tax reporting,<sup>12</sup> and treaty benefits.</p>
+<h3>Industry-Specific Incorporation Considerations (Technology, E-commerce, Professional Services)</h3>
+<p>Newcomer business incorporation Canada varies by sector because of licensing or special rules:</p>
+<p><strong>Tech Startups &amp; SaaS:</strong></p>
+<p>Focus on protecting intellectual property. Flexible shareholder deals are common. Many prefer federal corporations for easier expansion across provinces.<sup>13</sup></p>
+<p><strong>E-commerce &amp; Online Retail:</strong></p>
+<p>Need GST/HST registration early on. Banks often require thorough checks especially with foreign founders.<sup>14</sup></p>
+<p><strong>Professional Services &amp; Consulting:</strong></p>
+<p><a href="https://opencorporationfor35.ca/professional-corporation-incorporation/">Some professions have strict licensing</a> that limits corporate structures even if incorporation is allowed.<sup>15</sup> Check specific rules before moving forward.</p>
+<p>Each industry faces unique challenges with bank accounts for non-residents. Open Corporation helps newcomers handle these issues, with incorporation for $35 and bank account setup as a separate service.</p>
+<h3>Extra-Provincial Registration and Compliance for Operating Across Provinces</h3>
+<p>If you incorporate either federally or provincially but do business outside your registered province, you must <a href="https://opencorporationfor35.ca/extra-provincial-registration/">register extra-provincially</a> with each relevant province’s registry.<sup>16</sup><sup>17</sup></p>
+<p>This means filing extra paperwork proving good standing and appointing local agents where required. Missing this step can cause penalties like not being able to enforce contracts locally.</p>
+<p>Non-resident founders need to know extra-provincial registrations add costs but become necessary when operating in multiple parts of Canada legally.</p>
+<div class="gcpa-disclaimer">
+<p><sup>1</sup> Government of Canada's Innovation Hub — Types of Businesses https://ised-isde.canada.ca/site/innovation-hub/en/businesses/types-businesses</p>
+<p><sup>2</sup> CRA Guide T4002 — Sole proprietors vs corporations https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/t4002.html</p>
+<p><sup>3</sup> Corporations Canada's Overview — Federal vs Provincial https://ised-isde.canada.ca/site/corporations-canada/en/how-corporate-name-federal-incorporated-company</p>
+<p><sup>4</sup> Ontario Ministry e-Laws — OBCA overview https://www.ontario.ca/laws/statute/90b16#BK27</p>
+<p><sup>5</sup> CBCA s105(3) – at least 25% resident Canadian directors.</p>
+<p><sup>6</sup> OBCA amendments removing the resident director rule, effective July 5, 2021.</p>
+<p><sup>7</sup> CBCA s105(1), Justice Laws Website https://laws-lois.justice.gc.ca/eng/acts/C-44/page‑19.html#h‑1046860</p>
+<p><sup>8</sup> OBCA s106(1), Ontario e-Laws https://www.ontario.ca/laws/statute/90b16#BK28</p>
+<p><sup>9</sup> Income Tax Act s125(7), CRA Folio S4-F9-C1 Small Business Deduction Eligibility https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/corporations/small-business-deduction.html</p>
+<p><sup>10</sup> CRA ITA Control Tests Guidance T4083 http://cra.gc.ca/formspubs/pub/t4083-e.pdf</p>
+<p><sup>11</sup> Income Tax Act Part XIII Withholding Taxes Overview https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/non-residents-part-xiii-withholding-tax.html</p>
+<p><sup>12</sup> NR4 Filing Instructions CRA Guide T4061 http://cra.gc.ca/E/pbg/tf/nr4/nr4-fill-instructions-eng.pdf</p>
+<p>[13],[14],[15],[16],[17] Various Industry Regulatory Bodies / Provincial Registries</p>
+</div>
+<p>Sharad Gondaliya CPA has over ten years helping newcomers figure out these choices using simple online services backed by expert CPA advice at Open Corporation for $35—a part of Gondaliya CPA Professional Corporation based in Toronto serving all Canadian areas smoothly.</p>
+
+<h2>How to Incorporate as a Newcomer, Step by Step</h2>
+<div class="gcpa-numhead">
+<div class="num" style="background:#0f2a4a !important;color:#ffffff !important;">4</div>
+<h4 id="toc-steps" style="border:none;padding:0;margin:0;">Incorporating Step by Step</h4>
+<span class="gcpa-pill green">The Steps</span>
+</div>
+<h3>Step 1: Planning Your Business and Meeting Immigration Requirements</h3>
+<p>Starting a business as a newcomer to Canada means planning carefully. You must match your business goals with your immigration status. Incorporating a business as a newcomer to Canada is about creating a legal company under Canadian law. But keep in mind, it does not give you permission to work or stay in Canada.</p>
+<p>Newcomer business incorporation Canada lets you own or start a company here, even if you are not yet a resident. Immigrant entrepreneur incorporation Canada focuses on setting up the company while following all rules.</p>
+<p><a href="https://opencorporationfor35.ca/guides/incorporation-documents-checklist/">Before you begin, think about</a>:</p>
+<ul>
+<li>What kind of business you'll run</li>
+<li>Who will own shares</li>
+<li>Where directors will live</li>
+</ul>
+<p>Owning shares or being a director does not mean you can work in Canada without proper permits. For immigration advice, talk to an RCIC or immigration lawyer.</p>
+<p>You also need to decide where to incorporate—federal or provincial rules apply differently. Check the director requirements and tax duties before moving forward. This first step helps make the process smoother later on.</p>
+<h3>Step 2: Selecting and Registering Your Business Name (Including NUANS Report)</h3>
+<p>Picking the right business name is key when you want to incorporate a company in Canada as a foreigner. Your name must follow rules set by either the federal government under CBCA or provincial laws like Ontario’s OBCA.</p>
+<p><a href="https://opencorporationfor35.ca/nuans-report-20/">You will need a NUANS report</a>. This report checks if your chosen name is already used by others across Canada and some provinces. The NUANS report validity lasts 90 days from the date it’s issued. If you wait too long, you’ll have to order a new one.</p>
+<p>The NUANS search helps avoid conflicts by making sure your name is unique enough for registration approval. But it doesn’t guarantee approval by government offices or banks for sure. Keep that in mind during registration steps.</p>
+<div class="gcpa-callout blue">
+<span class="co-tag">Worth Knowing</span>
+<p>A numbered corporation needs no NUANS report at all. Many newcomers incorporate as a numbered company first and add an operating name later.</p>
+</div>
+<h3>Step 3: Preparing and Filing Incorporation Documents (Articles, Share Structure, Registered Office)</h3>
+<p>You create your corporation by filing documents through services like Open Corporation for $35, which makes online setup easy and quick. These papers include:</p>
+<ul>
+<li><a href="https://opencorporationfor35.ca/guides/articles-of-incorporation-explained/">Articles of Incorporation</a> (rules about shares and company structure)</li>
+<li>Details about share types like common shares</li>
+<li>Registered office address within your jurisdiction</li>
+</ul>
+<p>Directors have to be at least 18 years old according to both CBCA and OBCA rules. They should be capable of managing responsibilities—no bankruptcies allowed in some cases Corporations Canada s.105. Shareholders can be people or companies from anywhere without residency limits federally but check local laws if you incorporate provincially outside Ontario because rules differ there.</p>
+<p>Your registered office address is where official letters get sent. If you don’t have a physical Canadian address, using professional services that provide registered office addresses can help you stay compliant during setup.</p>
+<div class="gcpa-callout red">
+<span class="co-tag">Risk Warning</span>
+<p><strong>Risk Warning:</strong> An Ontario registered office must be a street address in Ontario, and a post office box alone is not accepted. Please do not put a mailbox address on the articles.</p>
+</div>
+<h3>Step 4: Paying Incorporation Fees and Obtaining Certificate of Incorporation</h3>
+<p>Open Corporation for $35 charges an online fee that covers service but does not include <a href="https://opencorporationfor35.ca/guides/cost-to-incorporate-in-canada/">government filing fees</a> like $200 federally or $300 in Ontario province directly paid to authorities. Payment methods accepted are Interac e-Transfer with auto-deposit enabled or credit cards for security and ease.</p>
+<p>Once you submit your forms and payment clears, filings usually happen same day on business days Corporations Canada. Then you'll get your Certificate of Incorporation electronically—the official proof your corporation now exists legally.</p>
+<p>This certificate lets you take next steps like setting up CRA tax accounts but does not mean you’ve got other permits or licenses needed for operations—that’s separate depending on what industry you’re in.</p>
+<h3>Step 5: Establishing Internal Corporate Governance (Shareholders, Directors, By-Laws)</h3>
+<p>Who can own shares or be directors? Here’s how it goes:</p>
+<figure class="wp-block-table">
+<table>
+<thead><tr><th>Role</th><th>Eligibility</th><th>Residency Need</th><th>Notes</th></tr></thead>
+<tbody>
+<tr><td>Shareholder</td><td>Any person or legal entity</td><td>No residency needed</td><td>Foreigners can own shares</td></tr>
+<tr><td>Director</td><td>Minimum age 18; no bankruptcy</td><td>Depends on province</td><td>Ontario dropped resident rule; federal needs 25%</td></tr>
+</tbody>
+</table>
+</figure>
+<p>Federal law lets anyone own shares without limit CBCA s.24. Directors used to need to live in Canada but this changed:</p>
+<ul>
+<li>Under CBCA s.105(3), at least 25% of directors must still be resident Canadians</li>
+<li>OBCA dropped its resident director rule on July 5, 2021</li>
+<li>Some provinces may still ask for resident directors — check current rules!</li>
+</ul>
+<p><a href="https://opencorporationfor35.ca/guides/minute-book-requirements/">By-laws set how meetings work</a> and other governance matters inside the company — they keep things organized early on.</p>
+<h3>Step 6: Registering for Business Number, GST/HST, Payroll, and Other Tax Accounts with CRA</h3>
+<p>After incorporating, <a href="https://opencorporationfor35.ca/business-number-cra-account-registration/">register for CRA accounts</a> starting with your Business Number (BN). BN links all your tax accounts like GST/HST collection, payroll deductions if hiring staff, and import/export numbers if needed CRA BN Guide.</p>
+<p>You register online at CRA’s Business Registration Online portal using info from your Articles of Incorporation plus proof like your certificate given when forming the corporation through services such as Open Corporation for $35. Usually this happens within one business day after applying unless extra checks slow things down.</p>
+<h3>Step 7: Opening Business Bank Accounts and Meeting Banking Requirements</h3>
+<p><a href="https://opencorporationfor35.ca/business-bank-account-setup/">To open bank accounts</a>, bring personal ID plus corporate papers like your Certificate of Incorporation and BN confirmation letter from CRA showing active registration status — banks need these everywhere across Toronto and other Canadian cities.</p>
+<p>Banks require ID that matches directors/shareholders due to anti-money laundering laws so having these ready helps avoid delays newcomers often face who aren’t familiar with Canadian banking systems.</p>
+<div class="gcpa-callout red">
+<span class="co-tag">Risk Warning</span>
+<p><strong>Risk Warning:</strong> Some banks need a director to attend a branch in person before they open a business account. Please do not set a launch date until the account is open.</p>
+</div>
+<h3>Step 8: Applying for Necessary Business Permits and Licences</h3>
+<p>Business permits depend heavily on what type of business you have and where it operates locally or provincially—rules differ widely across sectors.</p>
+<p>Applying usually means contacting city halls or provincial agencies directly since these permissions go beyond incorporation steps covered here.</p>
+<div class="gcpa-banner" style="background:linear-gradient(135deg,#0d3b66 0%,#0c7a7a 100%) !important;">
+<div class="bt">New to Canada and ready to incorporate? Please book a free consultation and we will check your directors and jurisdiction before anything is filed.</div>
+<div class="bb"><a class="solid" href="https://gondaliyacpa.ca/consultation/">Book Free Consultation</a><a href="mailto:info@gondaliyacpa.ca">info@gondaliyacpa.ca</a><a href="tel:+16472129559">647-212-9559</a></div>
+</div>
+<h3>Step 9: Complying with Corporate Annual Filing and Record-Keeping Obligations</h3>
+<p>To stay legal each year, corporations must <a href="https://opencorporationfor35.ca/corporate-annual-filing/">file Annual Returns</a> per CBCA/OBCA deadlines along with financial statements if required by size/status.</p>
+<p>The T2 corporate tax return deadline is six months after your fiscal year ends — this date is the filing deadline, while taxes are due two or three months after year-end Income Tax Act s150(1).</p>
+<p>It helps to work with an accountant early so paperwork is ready on time avoiding penalties which happen frequently nationwide.</p>
+<p>Services like Open Corporation for $35 offer initial free help making tax filing less confusing especially at start-up stage too.</p>
+
+<h2>Understanding Canadian Corporation Director Eligibility and Responsibilities</h2>
+<div class="gcpa-numhead">
+<div class="num" style="background:#0f2a4a !important;color:#ffffff !important;">5</div>
+<h4 id="toc-directors" style="border:none;padding:0;margin:0;">Directors and Tax Filings</h4>
+<span class="gcpa-pill blue">Directors and Tax</span>
+</div>
+<p>Starting a business as a newcomer to Canada means you need to know who can be a director. Directors must be at least 18 years old. There is no maximum age limit. They also have to be legally capable of making decisions. People who are undischarged bankrupts can't be directors.</p>
+<p>Federal rules (CBCA) still require at least 25% of directors to be resident Canadians, while Ontario dropped its requirement in 2021. Some other provinces still ask for a resident director. Directors are responsible for running the company properly. They must follow laws like Ontario’s Business Corporations Act (OBCA). Their job is to protect shareholders and make sure the company follows the rules.</p>
+<p>Immigrant entrepreneur incorporation Canada means picking directors who fit these rules. Remember, some provinces have their own special rules.</p>
+<figure class="wp-block-table">
+<table>
+<thead><tr><th>Director Eligibility Criteria</th><th>Federal (CBCA)</th><th>Ontario (OBCA)</th><th>Notes</th></tr></thead>
+<tbody>
+<tr><td>Minimum Age</td><td>18</td><td>18</td><td>Required by law</td></tr>
+<tr><td>Residency Requirement</td><td>25% resident Canadians</td><td>None (since July 5, 2021)</td><td>Some provinces may differ</td></tr>
+<tr><td>Bankruptcy Status</td><td>Not an undischarged bankrupt</td><td>Same</td><td>Protects creditors</td></tr>
+<tr><td>Legal Capacity</td><td>Must be legally competent</td><td>Same</td><td></td></tr>
+</tbody>
+</table>
+</figure>
+<h3>Tax Filing Obligations: Corporate Income Tax, GST/HST, Payroll Slips, and T4/T5 Reporting</h3>
+<p>When you incorporate a newcomer business in Canada, you must file several tax forms on time:</p>
+<ul>
+<li><strong><a href="https://opencorporationfor35.ca/corporate-tax-filing-from-300/">T2 Corporate Income Tax Return</a>:</strong> File this within six months after your fiscal year ends.</li>
+<li><strong>GST/HST Returns:</strong> File if your annual sales go over $30,000.</li>
+<li><strong>Payroll Slips &amp; T4/T5 Reports:</strong> Employers file T4 slips for employees and T5 slips for dividends paid.</li>
+<li><strong>Part XIII Withholding Tax:</strong> This tax is usually 25% on dividends paid to non-resident shareholders unless reduced by treaties.</li>
+<li><strong>NR4 Filing Deadline:</strong> You must file NR4 returns by March 31 after the calendar year ends.</li>
+</ul>
+<p>Filing these on time keeps you in good standing with the CRA and avoids penalties.</p>
+<h3>CCPC Rules, Small Business Limits, and Part XIII Withholding Tax</h3>
+<p>Your company’s status as a Canadian-Controlled Private Corporation (CCPC) depends on who owns or controls it.</p>
+<ul>
+<li>If non-residents hold or control over 50% of voting shares directly or indirectly, your company loses CCPC status.</li>
+<li>The Small Business Limit (SBD) is fixed at $500,000 federally in 2026.</li>
+<li>CCPCs get lower tax rates on active business income up to that limit.</li>
+<li>The default Part XIII withholding tax rate is 25% on some payments like dividends to non-residents unless treaty relief applies.</li>
+</ul>
+<p>It’s smart for immigrant entrepreneurs to get professional advice when sorting out ownership and tax benefits.</p>
+<div class="gcpa-callout red">
+<span class="co-tag">Risk Warning</span>
+<p><strong>Risk Warning:</strong> The corporation, not the shareholder, is liable when Part XIII tax is not withheld. Please do not pay a dividend to a non-resident without withholding or a valid NR301 on file.</p>
+</div>
+<h3>Reporting Foreign Affiliates and Investments: T1134 and T1135 Forms</h3>
+<p>If your company owns foreign affiliates or foreign property as a newcomer:</p>
+<ul>
+<li>You might need to file the T1134 Form annually if you control foreign affiliates, even if cost is very low.</li>
+<li>The T1135 Form reports foreign property over CAD $100,000 during the year. This includes real estate outside Canada not used in an active business.</li>
+</ul>
+<p>You need accurate records about ownership percentages and asset values each year. Missing these reports can cause fines.</p>
+<div class="gcpa-callout blue">
+<span class="co-tag">Worth Knowing</span>
+<p>An individual does not file Form T1135 for the year they first become resident in Canada. The requirement starts the following year.</p>
+</div>
+<h3>Managing Non-Resident Corporation Incorporation and Treaty Relief Processes</h3>
+<p>Non-residents can incorporate companies in Ontario without needing a resident director since July 5, 2021; a federal corporation still needs 25% resident Canadian directors. This change makes immigrant entrepreneur incorporation Canada easier but doesn’t remove all other requirements like having a <a href="https://opencorporationfor35.ca/guides/registered-office-address/">registered office address</a>.</p>
+<p>Treaty relief can lower Part XIII withholding taxes when your country has an agreement with Canada. To claim it, the shareholder gives the corporation forms like NR301 before dividends are paid. The corporation keeps them on file, and CRA can review them.</p>
+<p>Services like Open Corporation offer incorporation starting at $35 and help with these tricky parts while keeping things legal across provinces.</p>
+<h3>Business Number Registration and CRA Representation for Newcomers</h3>
+<p>After incorporating online for $35 including HST, getting your Business Number from CRA is key. It covers <a href="https://opencorporationfor35.ca/guides/hst-registration-guide/">GST/HST accounts</a>, payroll deductions, and more.</p>
+<p>This number usually gets assigned automatically during federal or Ontario incorporation, but adding program accounts like GST/HST and payroll needs extra steps.</p>
+<p>Opening a bank account needs ID that matches corporate documents plus proof of address. Registered office providers often help here.</p>
+<p>CRA representation helps handle audits or questions quickly. Services like Open Corporation work closely with CPA firms experienced with newcomer businesses across Canada for smooth compliance.</p>
+<h3>Risk Management and Compliance Controls for Immigrant-Owned Businesses</h3>
+<figure class="wp-block-table">
+<table>
+<thead><tr><th>Risk</th><th>Impact</th><th>Prevention Control</th></tr></thead>
+<tbody>
+<tr><td>Thinking incorporation means work permit</td><td>Losses due to immigration confusion</td><td>Refer immigration issues promptly</td></tr>
+<tr><td>Appointing an ineligible director</td><td>Fines or invalid decisions</td><td>Check director eligibility carefully</td></tr>
+<tr><td>Missing registered office address</td><td>Delays or rejection</td><td>Use trusted registered office providers</td></tr>
+<tr><td>Using expired NUANS report</td><td>Name rejection</td><td>Get fresh NUANS within validity period</td></tr>
+<tr><td>Assuming CCPC status incorrectly</td><td>Higher taxes or lost benefits</td><td>Have CPA review ownership facts</td></tr>
+<tr><td>Not withholding Part XIII taxes</td><td>Penalties or fines</td><td>Set up automated withholding procedures</td></tr>
+</tbody>
+</table>
+</figure>
+<p>Good controls include regular CPA reviews focused on cross-border matters plus keeping <a href="https://opencorporationfor35.ca/guides/individuals-with-significant-control/">proper corporate records reflecting those who control the company</a> — now required federally since recent law changes<sup>20</sup>.</p>
+<p>Talk with your CPA regularly after incorporating so you stay on track while growing your business as a newcomer in Canada.</p>
+<p>Sharad Gondaliya, CPA (Canada &amp; USA), has helped hundreds of Canadian business owners over more than 10 years.</p>
+
+<h2>Common Challenges and Support Resources</h2>
+<div class="gcpa-numhead">
+<div class="num" style="background:#0f2a4a !important;color:#ffffff !important;">6</div>
+<h4 id="toc-challenges" style="border:none;padding:0;margin:0;">Challenges and Support</h4>
+<span class="gcpa-pill red">Challenges</span>
+</div>
+<p>Starting a business as a newcomer to Canada isn’t easy. You must deal with tax filing rules, corporate income tax, and Part XIII withholding tax. Plus, you’ll have to handle foreign reporting with forms like T1134 and T1135. Incorporating a non-resident corporation adds more challenges because director residency rules differ between provinces and federal laws.</p>
+<h3>Typical Mistakes by Newcomers When Incorporating a Business in Canada</h3>
+<p>Many newcomers make simple mistakes that slow down their business setup:</p>
+<ul>
+<li>Thinking incorporation gives you the right to work here—it doesn’t.</li>
+<li>Forgetting some provinces require directors to live in Canada.</li>
+<li>Not knowing that foreign control can stop your company from getting CCPC status, which affects tax breaks.</li>
+<li>Skipping foreign reporting forms like T1134 and T1135. That can cause fines.</li>
+<li>Ignoring Part XIII withholding tax on dividends paid to non-residents and missing the NR4 slip deadline on March 31.</li>
+</ul>
+<p>These errors show why immigrant entrepreneur incorporation Canada needs care and sometimes help from experts.</p>
+<h3>Addressing Cross-Border Issues and Immigration Status Impact on Business Ownership</h3>
+<p>You can incorporate a company in Canada as a foreigner, but it doesn’t give you permission to work or stay here. Your immigration status stays separate from owning shares. Only Immigration, Refugees and Citizenship Canada (IRCC) decides who gets visas or permanent residence.</p>
+<p>Cross-border founders also face special tax issues:</p>
+<ul>
+<li><a href="https://opencorporationfor35.ca/guides/salary-vs-dividends/">Dividends sent abroad</a> usually trigger Part XIII withholding taxes unless a tax treaty applies after CPA review.</li>
+<li>If non-residents control the corporation, it won’t qualify as a CCPC, losing small business tax breaks.</li>
+</ul>
+<p>Knowing these details saves money and confusion when doing newcomer business incorporation Canada.</p>
+<h3>Building Credit and Financing Your New Business as a Newcomer</h3>
+<p>Opening a business bank account takes time if you’re new to Canada. Here’s what you need:</p>
+<ul>
+<li><a href="https://opencorporationfor35.ca/guides/business-number-cra-accounts/">Get your Business Number</a> from CRA’s online portal right after incorporating.</li>
+<li>Have your ID ready—passports, proof of address inside or outside Canada, incorporation papers, NUANS report, and director appointment minutes.</li>
+<li>Expect banks to ask for more documents if you don’t live in Canada. Non-resident founders face stricter checks.</li>
+</ul>
+<p>Building banking relationships early helps when applying for loans or credit later.</p>
+<h3>Adapting to Canadian Business Culture and Market Expectations</h3>
+<figure class="wp-block-table">
+<table>
+<thead><tr><th>Factor</th><th>Newcomer Resident</th><th>Permanent Resident</th><th>Non-Resident Founder</th></tr></thead>
+<tbody>
+<tr><td>Access to local networks</td><td>Easier through community</td><td>Strong connections</td><td>Limited; needs outreach</td></tr>
+<tr><td>Understanding regulatory norms</td><td>Learning</td><td>Familiar</td><td>Needs external advice</td></tr>
+<tr><td>Banking &amp; credit availability</td><td>More open access</td><td>Full access</td><td>Restricted</td></tr>
+<tr><td>Eligibility for government programs*</td><td>Eligible</td><td>Eligible</td><td>Often excluded</td></tr>
+</tbody>
+</table>
+</figure>
+<p>*Programs include grants or mentorships aimed at immigrants living in Canada.<sup>1</sup></p>
+<p>Getting used to these differences helps newcomers succeed while following incorporation rules in places like Ontario where Open Corporation for $35 works.</p>
+<h3>Available Mentorship, Networking, and Government Support Programs for Immigrant Entrepreneurs</h3>
+<p>Immigrant entrepreneurs get support based on thresholds like the $500,000 CAD small business limit under the Income Tax Act. Here’s why it matters:</p>
+<ul>
+<li>The Small Business Deduction (SBD) cuts corporate income tax on the first $500,000 of active business income, and is reduced once taxable capital passes $10 million.<sup>2</sup></li>
+<li>Government mentorship programs connect new entrepreneurs with advisors who know about cross-border issues.<sup>3</sup> Also,</li>
+<li>Don’t miss the NR4 filing deadline on March 31 for payments subject to Part XIII withholding tax.<sup>4</sup></li>
+</ul>
+<p>Using these programs keeps your business legal while taking advantage of incentives during immigrant entrepreneur incorporation Canada phases.</p>
+<h3>How Open Corporation for $35 Facilitates Efficient Newcomer Incorporation</h3>
+<p>Open Corporation for $35 makes online incorporation cheap and fast across Ontario and other places. They offer:</p>
+<ul>
+<li><a href="https://opencorporationfor35.ca/guides/nuans-name-search/">Quick NUANS name searches</a></li>
+<li>Registered office address service available in downtown Toronto</li>
+<li>Same-day electronic filing with Corporations Canada or Ontario Registry</li>
+<li>Free CPA advice about shareholder or director rules</li>
+</ul>
+<p>No hidden fees; average online application takes about 15 minutes.<sup>5</sup> Open Corporation for $35 is part of Gondaliya CPA, offering help that fits immigrant entrepreneur needs from start to finish. This support helps avoid common newcomer mistakes during incorporation today.</p>
+<h3>When to Seek Professional Legal and CPA Advice for Incorporation and Tax Matters</h3>
+<p>Choosing between DIY filings, online services, or <a href="https://opencorporationfor35.ca/corporate-compliance-subscription/">hiring a CPA</a> depends on how complex your case is—especially if foreigners or non-residents are involved or if you have foreign reporting like T1134 or T1135 forms.<sup>6</sup> Here’s a quick look:</p>
+<figure class="wp-block-table">
+<table>
+<thead><tr><th>Option</th><th>Best For</th><th>Risks</th></tr></thead>
+<tbody>
+<tr><td>DIY</td><td>Simple domestic filings</td><td>Missing steps; wrong jurisdiction</td></tr>
+<tr><td>Online Filing Service</td><td>Standard incorporations</td><td>Missing residency rules; no tailored advice</td></tr>
+<tr><td>CPA Engagement</td><td>Complex cases with foreigners</td><td>Costly upfront but lowers audit risks</td></tr>
+</tbody>
+</table>
+</figure>
+<p><strong>Bottom line:</strong> Get professional advice if your case involves different countries or unclear residency status affecting CCPC status or tax treaties. A CPA plus sometimes legal help can save trouble down the road.</p>
+<div class="gcpa-disclaimer">
+<p><sup>1</sup> https://www.canada.ca/en/immigration-refugees-citizenship/services/new-comers.html</p>
+<p><sup>2</sup> Income Tax Act s125(7); FinanceCanada Budget Measures 2026</p>
+<p><sup>3</sup> https://ised-isde.canada.ca/site/sme-support/en/support-programs-for-small-businesses-and-startups</p>
+<p><sup>4</sup> CRA Guide T4061 - NR4 Filing Deadline March 31</p>
+<p><sup>5</sup> opencorporationfor35.ca/pricing/</p>
+<p><sup>6</sup> CRA Foreign Reporting Requirements Folio S8-F16-C1</p>
+</div>
+<p>Sharad Gondaliya, CPA (Canada &amp; USA), has helped hundreds of Canadian business owners over 10+ years.</p>
+
+<h2>Frequently Asked Questions on Incorporating as a Newcomer</h2>
+<div class="gcpa-numhead">
+<div class="num" style="background:#0f2a4a !important;color:#ffffff !important;">7</div>
+<h4 id="toc-faq" style="border:none;padding:0;margin:0;">Newcomer Incorporation FAQ</h4>
+<span class="gcpa-pill teal">FAQ</span>
+</div>
+<div class="gcpa-faq" id="faq-main">
+<details><summary>What is the typical online incorporation fee with Open Corporation for $35?<span class="pl">+</span></summary>
+<div class="ans"><p>Open Corporation charges $35 CAD, HST included, plus government fees. This covers preparing and filing your articles the same day; the NUANS report and the registered office address service are separate.</p></div></details>
+<details><summary>How long is a NUANS report valid for when incorporating?<span class="pl">+</span></summary>
+<div class="ans"><p>A NUANS report is valid for 90 days from the issue date. You must file incorporation within this period.</p></div></details>
+<details><summary>What is the minimum age requirement to be a director in Canada?<span class="pl">+</span></summary>
+<div class="ans"><p>Directors must be at least 18 years old to serve under both CBCA and OBCA rules.</p></div></details>
+<details><summary>When is the T2 corporate tax return deadline after incorporation?<span class="pl">+</span></summary>
+<div class="ans"><p>The T2 return is due six months after your fiscal year-end date. File on time to avoid penalties.</p></div></details>
+<details><summary>What is the default Part XIII withholding tax rate on dividends to non-residents?<span class="pl">+</span></summary>
+<div class="ans"><p>The default rate is 25%, but it may be reduced by applicable tax treaty benefits.</p></div></details>
+<details><summary>What does removal of resident director requirement mean for newcomers?<span class="pl">+</span></summary>
+<div class="ans"><p>Ontario removed its resident director requirement on July 5, 2021, so a newcomer or non-resident can be the sole director of an Ontario corporation; federal corporations still need 25% resident Canadian directors.</p></div></details>
+<details><summary>What is extra-provincial registration and when is it required?<span class="pl">+</span></summary>
+<div class="ans"><p>Extra-provincial registration applies if you operate in provinces other than your incorporation jurisdiction. It ensures legal compliance across provinces.</p></div></details>
+<details><summary>Why is having a registered office address important in Canadian incorporation?<span class="pl">+</span></summary>
+<div class="ans"><p>A registered office address is where official communications are sent. It must be within your jurisdiction.</p></div></details>
+<details><summary>How do tax treaty benefits affect Part XIII withholding tax?<span class="pl">+</span></summary>
+<div class="ans"><p>Tax treaties can lower withholding tax rates on dividends or interest paid to foreign shareholders when the shareholder gives the corporation a completed NR301; no advance CRA approval is needed.</p></div></details>
+<details><summary>What are foreign reporting requirements like T1134 and T1135 forms?<span class="pl">+</span></summary>
+<div class="ans"><p>T1134 reports foreign affiliates; T1135 reports foreign property over CAD 100,000. Both must be filed annually if applicable.</p></div></details>
+<details><summary>How does business number registration work after incorporation?<span class="pl">+</span></summary>
+<div class="ans"><p>The CRA assigns a business number linking GST/HST, payroll, and import/export accounts after you register online or automatically during federal incorporation.</p></div></details>
+</div>
+<div class="gcpa-callout red">
+<span class="co-tag">Risk Warning</span>
+<p><strong>Risk Warning:</strong> A NUANS report more than 90 days old will be refused with your articles. Please do not file with an expired report.</p>
+</div>
+
+<h2>Risk Management and Compliance Controls for Newcomer Business Incorporation</h2>
+<div class="gcpa-numhead">
+<div class="num" style="background:#0f2a4a !important;color:#ffffff !important;">8</div>
+<h4 id="toc-controls" style="border:none;padding:0;margin:0;">Risk Controls and Quick Reference</h4>
+<span class="gcpa-pill gold">Controls</span>
+</div>
+<ul>
+<li>Avoid confusing incorporation with work permits to prevent legal issues.</li>
+<li>Verify director eligibility: age, residency rules, bankruptcy status.</li>
+<li>Maintain a valid registered office address within jurisdiction at all times.</li>
+<li>Use a fresh NUANS report within its 90-day validity window.</li>
+<li>Confirm CCPC status correctly to benefit from small business limits and tax breaks.</li>
+<li>Implement withholding of Part XIII taxes properly on dividends paid to non-resident shareholders.</li>
+<li>Keep detailed corporate records showing ownership and control structures accurately.</li>
+<li>Use professional CPA advice to handle complex cross-border compliance matters.</li>
+</ul>
+<div class="gcpa-pillhead"><h4 style="border:none;padding:0;margin:0;">DIY vs Online Filing Service vs CPA for Incorporation</h4><span class="gcpa-pill blue">Options</span></div>
+<figure class="wp-block-table">
+<table>
+<thead><tr><th>Approach</th><th>Best For</th><th>Risks</th></tr></thead>
+<tbody>
+<tr><td>DIY</td><td>Simple domestic incorporations</td><td>Missing key rules or deadlines</td></tr>
+<tr><td>Online Service</td><td>Quick standard filing</td><td>Limited personalized advice</td></tr>
+<tr><td>CPA Engagement</td><td>Complex cases with foreign ties</td><td>Higher upfront cost but fewer risks</td></tr>
+</tbody>
+</table>
+</figure>
+<p>Choose CPA help if dealing with non-resident ownership, foreign reporting (T1134/T1135), or treaty benefits claims.</p>
+<div class="gcpa-pillhead"><h4 style="border:none;padding:0;margin:0;">Key Dates &amp; Filing Deadlines for Newcomer Corporations</h4><span class="gcpa-pill teal">Deadlines</span></div>
+<ul>
+<li>NUANS report expires after 90 days—order fresh before filing if needed.</li>
+<li>Corporate income tax return (T2) due six months post fiscal year-end.</li>
+<li>NR4 filing deadline: March 31 annually for payments subject to Part XIII withholding tax.</li>
+</ul>
+<div class="gcpa-pillhead"><h4 style="border:none;padding:0;margin:0;">Small Business Limit and CCPC Status Impact</h4><span class="gcpa-pill gold">CCPC</span></div>
+<p>Your company qualifies as CCPC only if it is not controlled by non-residents or public corporations, for example when non-residents hold no more than 50% of the voting shares. Loss of CCPC status means losing small business deduction capped at $500,000 CAD federally in 2026.</p>
+<div class="gcpa-pillhead"><h4 style="border:none;padding:0;margin:0;">How Open Corporation for $35 Supports Newcomers’ Compliance</h4><span class="gcpa-pill green">Our Support</span></div>
+<p>Open Corporation offers: quick online filings with government fees transparency, same-day processing, registered office service available separately, and expert CPA guidance on shareholder/director compliance issues vital for immigrant entrepreneurs.</p>
+<p>Sharad Gondaliya, CPA (Canada &amp; USA), specializes in newcomer business incorporation compliance and cross-border taxation strategies ensuring smooth startup journeys in Canada.</p>
+<div class="gcpa-pillhead"><h4 style="border:none;padding:0;margin:0;">Quick Answers: Key Numbers at a Glance</h4><span class="gcpa-pill gold">At a Glance</span></div>
+<ul>
+<li><strong>Federal resident directors:</strong> At least 25% resident Canadians, or one if there are four or fewer directors</li>
+<li><strong>Ontario resident directors:</strong> None required since July 5, 2021</li>
+<li><strong>Minimum director age:</strong> 18</li>
+<li><strong>Government fees:</strong> $200 federal, $300 Ontario</li>
+<li><strong>NUANS validity:</strong> 90 days</li>
+<li><strong>Part XIII default rate on dividends:</strong> 25%</li>
+<li><strong>NR4 deadline:</strong> March 31</li>
+<li><strong>Small business limit:</strong> $500,000</li>
+<li><strong>T2 filing deadline:</strong> Six months after year-end</li>
+<li><strong>Our fee:</strong> $35 including HST, plus government fees</li>
+</ul>
+<div class="gcpa-pillhead"><h4 style="border:none;padding:0;margin:0;">Who This Is For / Not For</h4><span class="gcpa-pill teal">Fit Check</span></div>
+<ul>
+<li><strong>For:</strong> Permanent residents, work permit holders and <a href="https://opencorporationfor35.ca/open-corporation-canada-from-germany/">founders living abroad</a> who want to own and direct a Canadian corporation.</li>
+<li><strong>Not For:</strong> Anyone hoping that incorporating will give them a work permit or permanent residence, which only IRCC can grant.</li>
+</ul>
+<div class="gcpa-callout green">
+<span class="co-tag">Verdict</span>
+<p>A newcomer can own and direct a Canadian corporation from day one. For most, Ontario is the simpler choice, because it has no resident director rule, while a federal corporation needs 25% resident Canadian directors. Keep two things separate: the corporation, which we can file the same day, and your right to work in it, which only IRCC decides.</p>
+</div>
+<div class="gcpa-callout blue">
+<span class="co-tag">2026 Update</span>
+<p><strong>2026 Update &mdash; what is current:</strong> This article reflects rules current to 2026. Ontario's removal of the resident director requirement on July 5, 2021, the federal rule that at least 25% of a CBCA corporation's directors be resident Canadians, the 25% default Part XIII withholding rate, the March 31 NR4 deadline, the $500,000 small business limit, the 90-day NUANS validity and the six-month T2 filing deadline are unchanged. Government fees are $200 federally and $300 in Ontario. Please note that incorporating a company gives <strong>no</strong> right to work or stay in Canada; that intake for some business immigration programs, including the Self-Employed Persons Program, has been paused, so please check IRCC's current status before relying on one; that a corporation controlled by non-residents is not a CCPC; and that treaty-reduced withholding on dividends depends on an NR301 the shareholder gives the corporation, not on advance CRA approval.</p>
+</div>
+<h5 style="color:#15355c;margin:24px 0 8px;">Newcomer Incorporation Readiness Check</h5>
+<p>This quick self-check flags what to work through before you incorporate. Please answer the six questions below.</p>
+<div id="ocf-chk">
+  <style>
+    #ocf-chk{--n:#0f2a4a;--n2:#15355c;--bl:#1c6dd0;--tl:#0c8f8f;--gd:#c9991f;--rd:#c0392b;--ink:#1d2733;--mut:#5a6b7b;--ln:#d8e0e8;--alt:#f5f8fb;
+      border:1px solid var(--ln);border-radius:14px;overflow:hidden;background:#fff;box-shadow:0 10px 30px rgba(15,42,74,.08);font-family:inherit;color:var(--ink);margin:24px 0;}
+    #ocf-chk *{box-sizing:border-box;}
+    #ocf-chk .s-head{background:linear-gradient(135deg,var(--n),var(--n2));color:#fff;padding:18px 22px;}
+    #ocf-chk .s-head h5{margin:0;font-size:19px;font-weight:700;color:#fff!important;}
+    #ocf-chk .s-head p{margin:4px 0 0;font-size:13px;color:#cfe2f8!important;}
+    #ocf-chk .s-body{padding:20px 22px;}
+    #ocf-chk .s-q{padding:13px 0;border-bottom:1px solid var(--ln);display:flex;justify-content:space-between;align-items:center;gap:14px;}
+    #ocf-chk .s-q:first-child{padding-top:2px;}
+    #ocf-chk .s-q span.s-lab{font-weight:600;font-size:14.5px;color:var(--n);}
+    #ocf-chk .s-seg{display:inline-flex;border:1px solid var(--ln);border-radius:10px;overflow:hidden;flex:0 0 auto;}
+    #ocf-chk .s-seg label{cursor:pointer;padding:8px 18px;font-size:14px;font-weight:600;color:var(--mut);background:var(--alt);transition:.15s;user-select:none;}
+    #ocf-chk .s-seg label+label{border-left:1px solid var(--ln);}
+    #ocf-chk .s-seg input{position:absolute;opacity:0;width:0;height:0;}
+    #ocf-chk .s-seg input:checked+label{background:var(--n);color:#fff!important;}
+    #ocf-chk .s-go{margin-top:18px;width:100%;border:none;border-radius:11px;padding:14px 18px;font-size:15.5px;font-weight:700;color:#fff!important;cursor:pointer;background:linear-gradient(135deg,var(--bl),var(--tl));font-family:inherit;}
+    #ocf-chk .s-go:hover{filter:brightness(1.05);}
+    #ocf-chk .s-msg{display:none;margin-top:12px;font-size:13.5px;color:var(--rd);font-weight:600;}
+    #ocf-chk .s-out{display:none;margin-top:18px;border-radius:12px;border:1px solid var(--ln);overflow:hidden;}
+    #ocf-chk .s-out .s-status{padding:14px 18px;font-weight:700;font-size:16px;color:#fff!important;background:linear-gradient(135deg,var(--n),var(--n2));}
+    #ocf-chk .s-out .s-inner{padding:16px 18px;background:var(--alt);}
+    #ocf-chk .s-row{font-size:14.5px;margin:0 0 10px;line-height:1.5;}
+    #ocf-chk .s-count{display:inline-block;background:#fff;border:1px solid var(--ln);border-radius:9px;padding:8px 14px;font-weight:700;color:var(--n);font-size:14.5px;}
+    #ocf-chk .s-list{margin:8px 0 0;padding-left:18px;}
+    #ocf-chk .s-list li{font-size:13.5px;color:var(--ink);margin:4px 0;border:none;padding:0 0 0 4px;}
+    #ocf-chk .s-list li::before{display:none;}
+    #ocf-chk .s-cta{display:inline-block;margin-top:14px;background:var(--gd);color:#fff!important;font-weight:700;font-size:14.5px;text-decoration:none;padding:11px 20px;border-radius:10px;}
+    #ocf-chk .s-note{font-size:12.5px;color:var(--mut);margin:12px 0 0;}
+    @media(max-width:560px){#ocf-chk .s-q{flex-direction:column;align-items:flex-start;gap:8px;}}
+  </style>
+  <div class="s-head" style="background:linear-gradient(135deg,#0f2a4a,#15355c) !important;">
+    <h5>Newcomer Incorporation Readiness Check</h5>
+    <p>Six quick questions. No tax calculation, no figure quoted.</p>
+  </div>
+  <div class="s-body">
+    <div class="s-q" data-flag="0" data-msg="Your immigration status, because a corporation gives no right to work in Canada"><span class="s-lab">1. Do you hold a work permit or permanent residence that lets you work in the business?</span>
+      <span class="s-seg"><input type="radio" id="c-a-y" name="c-a" value="1"><label for="c-a-y">Yes</label><input type="radio" id="c-a-n" name="c-a" value="0"><label for="c-a-n">No</label></span></div>
+    <div class="s-q" data-flag="0" data-msg="Choosing Ontario over federal incorporation, since a federal corporation needs 25% resident Canadian directors"><span class="s-lab">2. Will at least 25% of your directors be resident Canadians?</span>
+      <span class="s-seg"><input type="radio" id="c-b-y" name="c-b" value="1"><label for="c-b-y">Yes</label><input type="radio" id="c-b-n" name="c-b" value="0"><label for="c-b-n">No</label></span></div>
+    <div class="s-q" data-flag="1" data-msg="CCPC status and the small business deduction, which a non-resident-controlled corporation loses"><span class="s-lab">3. Will non-residents own more than 50% of the voting shares?</span>
+      <span class="s-seg"><input type="radio" id="c-c-y" name="c-c" value="1"><label for="c-c-y">Yes</label><input type="radio" id="c-c-n" name="c-c" value="0"><label for="c-c-n">No</label></span></div>
+    <div class="s-q" data-flag="1" data-msg="Part XIII withholding, NR301 forms and NR4 slips by March 31"><span class="s-lab">4. Will the corporation pay dividends to shareholders outside Canada?</span>
+      <span class="s-seg"><input type="radio" id="c-d-y" name="c-d" value="1"><label for="c-d-y">Yes</label><input type="radio" id="c-d-n" name="c-d" value="0"><label for="c-d-n">No</label></span></div>
+    <div class="s-q" data-flag="0" data-msg="A registered office street address, since a post office box is not accepted"><span class="s-lab">5. Do you have a Canadian street address for the registered office?</span>
+      <span class="s-seg"><input type="radio" id="c-e-y" name="c-e" value="1"><label for="c-e-y">Yes</label><input type="radio" id="c-e-n" name="c-e" value="0"><label for="c-e-n">No</label></span></div>
+    <div class="s-q" data-flag="1" data-msg="Extra-provincial registration in each other province where you carry on business"><span class="s-lab">6. Will the business operate in more than one province?</span>
+      <span class="s-seg"><input type="radio" id="c-f-y" name="c-f" value="1"><label for="c-f-y">Yes</label><input type="radio" id="c-f-n" name="c-f" value="0"><label for="c-f-n">No</label></span></div>
+    <button type="button" class="s-go" id="c-go">Check my readiness</button>
+    <div class="s-msg" id="c-msg">Please answer all six questions to continue.</div>
+    <div class="s-out" id="c-out">
+      <div class="s-status" id="c-status" style="background:linear-gradient(135deg,#0f2a4a,#15355c) !important;">Your profile</div>
+      <div class="s-inner">
+        <p class="s-row"><b>Points to work through:</b> <span class="s-count" id="c-count"></span></p>
+        <div id="c-listwrap" style="display:none;"><p class="s-row" style="margin-bottom:4px;"><b>Worth reviewing with us:</b></p><ul class="s-list" id="c-list"></ul></div>
+        <p class="s-row" id="c-clean" style="display:none;"><b>Nothing flagged.</b> The usual complications do not appear to apply to you.</p>
+        <a class="s-cta" href="https://gondaliyacpa.ca/consultation/">Book a free consultation</a>
+        <p class="s-note">This is a general prompt, not tax advice, and it does not calculate your tax. Your outcome depends on your full facts, so please book a free consultation.</p>
+      </div>
+    </div>
+  </div>
+  <script>
+  (function(){
+    var root=document.getElementById('ocf-chk');
+    root.querySelector('#c-go').addEventListener('click',function(){
+      var qs=root.querySelectorAll('.s-q'), items=[], missing=false;
+      qs.forEach(function(q){
+        var x=q.querySelector('input:checked');
+        if(!x){missing=true;return;}
+        if(x.value===q.getAttribute('data-flag')) items.push(q.getAttribute('data-msg'));
+      });
+      var msg=root.querySelector('#c-msg'), out=root.querySelector('#c-out');
+      if(missing){msg.style.display='block';out.style.display='none';return;}
+      msg.style.display='none';
+      var list=root.querySelector('#c-list'), lw=root.querySelector('#c-listwrap'), clean=root.querySelector('#c-clean');
+      root.querySelector('#c-count').textContent=items.length+' to work through';
+      list.innerHTML='';
+      if(items.length){lw.style.display='block';clean.style.display='none';items.forEach(function(t){var li=document.createElement('li');li.textContent=t;list.appendChild(li);});}
+      else{lw.style.display='none';clean.style.display='block';}
+      root.querySelector('#c-status').textContent = items.length>=3 ? 'Several points need attention' : (items.length>=1 ? 'A few points to work through' : 'A straightforward case');
+      out.style.display='block';
+    });
+  })();
+  </script>
+</div>
+<div class="gcpa-cta" style="background:linear-gradient(135deg,#0f2a4a 0%,#1c4a78 100%) !important;">
+<h4>Start your Canadian corporation with the right jurisdiction</h4>
+<p>Incorporation from $35 including HST plus government fees, with a free CPA consultation on directors, jurisdiction and tax before anything is filed. Please book a free consultation.</p>
+<div class="gcpa-trust"><span>1300+ 5-star Google reviews</span><span>Xero Partner Award Winner 2026</span><span>30-Day Money-Back Guarantee</span><span>60-Day Fee Matching</span></div>
+<div class="gcpa-btnrow"><a class="solid" href="https://gondaliyacpa.ca/consultation/">Book Free Consultation</a><a href="https://opencorporationfor35.ca/address-service-100/">Address Service</a><a href="https://opencorporationfor35.ca/contact-us/">Contact Us</a></div>
+</div>
+<h3 class="gcpa-closing" id="toc-closing">What to Send Us</h3>
+<p>Send us where each director and shareholder lives, their immigration status in Canada if any, where the business will operate, whether you want a named or numbered company, and whether dividends will be paid outside Canada. That is enough for us to recommend federal or Ontario incorporation and list your first-year filings. Please start on our <a href="https://opencorporationfor35.ca/incorporation-form/">incorporation form</a> or see every fee on our <a href="https://opencorporationfor35.ca/pricing/">pricing page</a>.</p>
+<div class="gcpa-author">
+<div class="ava" style="background:linear-gradient(135deg,#0f2a4a,#0c8f8f) !important;color:#ffffff !important;">SG</div>
+<div class="info">
+<h5>Sharad Gondaliya, CPA (Canada &amp; USA) — Founder &amp; Managing Director, Gondaliya CPA Professional Corporation</h5>
+<div class="role">Reviewed and fact-checked by Sharad Gondaliya, CPA (Canada &amp; USA)</div>
+<p style="font-size:14.5px;color:#15355c !important;font-weight:700;margin:0 0 8px;">Open Corporation for $35 is a department of Gondaliya CPA.</p>
+<p>We incorporate and support companies in all 13 provinces and territories, handling CRA registrations, corporate tax filing, bookkeeping, GST/HST, payroll and audit support. Verify our firm on the <a href="https://www.cpaontario.ca/protecting-the-public/directories/firm/gondaliya-5sqvmj">CPA Ontario public firm directory</a>, firm registration 61330051.</p>
+<p style="font-size:13.5px;color:#15355c !important;font-weight:700;margin-top:10px;">CPA Ontario | CPA USA (Washington &amp; Montana) | Xero Partner Award Winner 2026 | 1300+ 5-star Google reviews</p>
+</div>
+</div>
+<p style="font-size:13px;color:#5a6b7b;border-top:1px solid #e3e9f0;padding-top:16px;margin-top:8px;"><strong>Published:</strong> November 4, 2026 &nbsp;·&nbsp; <strong>Last updated:</strong> November 4, 2026</p>
+<p style="font-size:13px;color:#5a6b7b;"><strong>Editorial policy:</strong> Our content is prepared by our team and reviewed by Sharad Gondaliya, CPA, and we update it as director residency rules, CRA withholding rules and IRCC programs change.</p>
+<p style="font-size:13px;color:#5a6b7b;"><strong>Disclaimer:</strong> This article is educational information only and is not tax, legal, immigration or financial advice. Gondaliya CPA Professional Corporation is a firm of Chartered Professional Accountants, not a law firm or an immigration consultancy. Please consult a CPA before acting, and a licensed immigration consultant or lawyer about your status.</p>
+<p style="font-size:14.5px;color:#15355c;font-weight:700;border-top:2px solid #e3e9f0;padding-top:16px;margin-top:20px;">Open Corporation for $35 is a department of Gondaliya CPA.</p>
+<p style="font-size:13px;color:#5a6b7b;">Operated by WealthBamboo Inc. Parent firm Gondaliya CPA Professional Corporation, CPA Ontario firm registration 61330051. Xero Partner Award Winner 2026. 1300+ five-star Google reviews. 30-day money-back guarantee and 60-day fee-matching policy. Phone 647-212-9559, email info@gondaliyacpa.ca, open 9:00 AM to 8:30 PM Monday to Sunday. Payment by Interac e-Transfer to info@gondaliyacpa.ca only, security question "Not Applicable" as auto-deposit is enabled. Card is also accepted.</p>
+</div>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@graph": [{"@type": "BlogPosting", "@id": "https://opencorporationfor35.ca/incorporating-newcomer-canada/#article", "headline": "Incorporating as a Newcomer to Canada", "description": "How newcomers and foreigners incorporate in Canada: director residency rules, immigration limits, CRA accounts, Part XIII withholding and the first-year filings.", "datePublished": "2026-11-04", "dateModified": "2026-11-04", "author": {"@type": "Person", "name": "Sharad Gondaliya, CPA"}, "publisher": {"@type": "Organization", "name": "Open Corporation for $35", "description": "Open Corporation for $35 is a department of Gondaliya CPA.", "parentOrganization": {"@type": "AccountingService", "name": "Gondaliya CPA Professional Corporation", "identifier": "CPA Ontario Firm Registration 61330051"}}, "mainEntityOfPage": "https://opencorporationfor35.ca/incorporating-newcomer-canada/"}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is the typical online incorporation fee with Open Corporation for $35?", "acceptedAnswer": {"@type": "Answer", "text": "Open Corporation charges $35 CAD, HST included, plus government fees. This covers preparing and filing your articles the same day; the NUANS report and the registered office address service are separate."}}, {"@type": "Question", "name": "How long is a NUANS report valid for when incorporating?", "acceptedAnswer": {"@type": "Answer", "text": "A NUANS report is valid for 90 days from the issue date. You must file incorporation within this period."}}, {"@type": "Question", "name": "What is the minimum age requirement to be a director in Canada?", "acceptedAnswer": {"@type": "Answer", "text": "Directors must be at least 18 years old to serve under both CBCA and OBCA rules."}}, {"@type": "Question", "name": "When is the T2 corporate tax return deadline after incorporation?", "acceptedAnswer": {"@type": "Answer", "text": "The T2 return is due six months after your fiscal year-end date. File on time to avoid penalties."}}, {"@type": "Question", "name": "What is the default Part XIII withholding tax rate on dividends to non-residents?", "acceptedAnswer": {"@type": "Answer", "text": "The default rate is 25%, but it may be reduced by applicable tax treaty benefits."}}, {"@type": "Question", "name": "What does removal of resident director requirement mean for newcomers?", "acceptedAnswer": {"@type": "Answer", "text": "Ontario removed its resident director requirement on July 5, 2021, so a newcomer or non-resident can be the sole director of an Ontario corporation; federal corporations still need 25% resident Canadian directors."}}, {"@type": "Question", "name": "What is extra-provincial registration and when is it required?", "acceptedAnswer": {"@type": "Answer", "text": "Extra-provincial registration applies if you operate in provinces other than your incorporation jurisdiction. It ensures legal compliance across provinces."}}, {"@type": "Question", "name": "Why is having a registered office address important in Canadian incorporation?", "acceptedAnswer": {"@type": "Answer", "text": "A registered office address is where official communications are sent. It must be within your jurisdiction."}}, {"@type": "Question", "name": "How do tax treaty benefits affect Part XIII withholding tax?", "acceptedAnswer": {"@type": "Answer", "text": "Tax treaties can lower withholding tax rates on dividends or interest paid to foreign shareholders when the shareholder gives the corporation a completed NR301; no advance CRA approval is needed."}}, {"@type": "Question", "name": "What are foreign reporting requirements like T1134 and T1135 forms?", "acceptedAnswer": {"@type": "Answer", "text": "T1134 reports foreign affiliates; T1135 reports foreign property over CAD 100,000. Both must be filed annually if applicable."}}, {"@type": "Question", "name": "How does business number registration work after incorporation?", "acceptedAnswer": {"@type": "Answer", "text": "The CRA assigns a business number linking GST/HST, payroll, and import/export accounts after you register online or automatically during federal incorporation."}}]}]}
+</script>
