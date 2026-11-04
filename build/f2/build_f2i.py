@@ -1604,6 +1604,8 @@ for t in TOOLS9:
 # the comparison page's own H1 verbatim, not a paraphrase. Only tools whose
 # subject IS the comparison carry one; a tool gets no F7 link by default.
 COMPARE9 = {
+ 'year-end-change-approval-checker': [(CMP + 'december-31-year-end-vs-a-non-calendar-year-end/',
+                                              'December 31 Year-End vs a Non-Calendar Year-End')],
  't2-short-exclusion-checker': [(CMP + 't2-short-vs-full-t2/',
                                  'T2 Short vs Full T2')],
  't2-short-ccpc-condition-checker': [(CMP + 't2-short-vs-full-t2/',

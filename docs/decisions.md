@@ -7020,3 +7020,61 @@ registry fee the plan does not state), `/diy-vs-cpa-nil-t2/` (software
 pricing, which is competitor data), `/nil-t2-vs-nil-gst-hst-return/` and the
 annual-return comparisons (a price column for work this service does not
 cover).
+
+## 2026-11-04 — Family 7 page 5: `/compare/december-31-year-end-vs-a-non-calendar-year-end/`
+
+ID 1710, 20,954 bytes, byte-identical to the gated build, `cnf_family` 20,
+fifteen FAQ items. Family 7 is 5 of 20.
+
+### Every claim comes from the two live year-end guides
+
+Nothing on this page is written from memory. `/guides/t2-filing-deadlines/`
+supplies the six-month rule, the counting rule (to the same day number in the
+later month, so August 31 lands on the last day of February) and the 53-week
+limit at 371 days counting the day of incorporation.
+`/guides/choosing-and-changing-a-fiscal-year-end/` supplies the rest: a
+corporation picks its own year-end, there is no default, nothing is allocated
+at incorporation, the articles do not set it, the first T2 filed is what sets
+it, a short year does not get an early deadline, changing it needs written
+approval, and a wrong year-end gets the transmission rejected.
+
+### One differentiating row deliberately not used
+
+The deadline guide also covers the T4 information return and the registry
+annual return, neither of which is measured from the year-end. That would
+have made a neat fourth difference, but payroll obligations are a claim worth
+more care than this page needs on a service for corporations that did
+nothing. The fourth difference is the practical one instead: when in the year
+the records are wanted.
+
+### Inbound links
+
+| Tool | ID | Before | After |
+|---|---|---|---|
+| `nil-t2-deadline-calculator` | 1124 | 25,724 | 25,883 |
+| `53-week-first-tax-year-checker` | 1176 | 24,125 | 24,284 |
+| `year-end-change-approval-checker` | 1562 | 27,654 | 27,813 |
+
+Each matched its local build before the edit and each grew by the same 159
+bytes. `build_f2.py` again took a direct insertion into an explicit per-tool
+list; `build_f2b.py` and `build_f2i.py` had their existing maps extended. The
+byte match on 1124 is also what confirms the `build_f2.py` insertion landed in
+the right tool's list, since that file identifies tools by the shape of their
+related list rather than by slug at that point.
+
+`gate_f2_all.py` clear on 80 pages, `gate_rank_math.py` passes at 226 items,
+cache cleared for all four IDs.
+
+### Family 7 position
+
+Live 5 of 20. Buildable without any input, both columns our own fee:
+`/federal-corporation-vs-ontario-corporation-nil-filing/`,
+`/nil-t2-vs-zero-return/`, `/paper-t2-vs-efile-t2/` (H1 as Electronic Filing,
+Appendix A slug kept). Blocked on dated competitor prices: the 6 brand pages.
+Needing a pricing rule first: `/dissolving-vs-filing-nil-every-year/`,
+`/diy-vs-cpa-nil-t2/`, `/nil-t2-vs-nil-gst-hst-return/`,
+`/ontario-annual-return-vs-t2/`,
+`/nil-t2-vs-ontario-annual-return-vs-federal-annual-return/`,
+`/nil-return-vs-final-return/` is done, and
+`/voluntary-disclosure-vs-plain-late-filing/` needs a view on whether the
+disclosure route is described at all.

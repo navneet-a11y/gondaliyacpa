@@ -813,6 +813,8 @@ GUIDES = {
 # anchor convention to the comparison title, so the anchor is the comparison
 # page's own H1 verbatim. A tool gets no F7 link unless it is named here.
 COMPARE_F7 = {
+ '53-week-first-tax-year-checker': [(CMP + 'december-31-year-end-vs-a-non-calendar-year-end/',
+                                            'December 31 Year-End vs a Non-Calendar Year-End')],
  'unfiled-years-cost-calculator': [(CMP + 'filing-one-year-vs-filing-all-unfiled-years/',
                                            'Filing One Year vs Filing All Unfiled Years')],
 }

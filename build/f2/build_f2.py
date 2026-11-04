@@ -487,7 +487,10 @@ TOOLS = [
     '$2,500.00.</p></div>\n'
     '<p>Unfiled years are filed oldest first, one return per tax year.</p>'),
   ],
-  related=[(HUB + 't2-short-eligibility-checker/',
+  related=[# Family 7, live 2026-11-04. Anchor is the comparison H1 verbatim.
+           (SITE + '/compare/december-31-year-end-vs-a-non-calendar-year-end/',
+            'December 31 Year-End vs a Non-Calendar Year-End'),
+           (HUB + 't2-short-eligibility-checker/',
             'T2 Short eligibility checker, all eight conditions'),
            (HUB + 'gifi-schedule-requirement-checker/',
             'GIFI schedule requirement checker'),
