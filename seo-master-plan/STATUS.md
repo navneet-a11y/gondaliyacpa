@@ -68,3 +68,29 @@ The three agents applying changes 8 to 11 were stopped partway to avoid per-call
 
   Exact strings are in the prep file, section 9B.
 - **Changes 10 and 11:** as in the first handoff section.
+
+## Handoff update (Monday, November 2, 2026, afternoon)
+
+**Change 9: DONE.** Rate guide 36029 is finished: province table (ON, QC, SK, NS, PEI, NL, YT), the $10M–$50M grind row, PEI sentence deleted, intro range, FAQ and JSON-LD (Manitoba and Yukon; 11.2% from July 1, 2026), the 12.2% planning text, the worked example ($15,680 / $29,880) and the "January 2026" dates (now November 2026). The live `_elementor_data` was re-read and is byte-identical to the expected file. Before and after copies are in `backups/36029-_elementor_data-2026-11-02-*`. Cache purged.
+- Flag only (not changed): the 2 capital-gains mentions still say the 66.67% inclusion had "not received Royal Assent as of January 2026". That proposal was cancelled in March 2025, so this needs CPA review. The site-rule flags from prep 9B (fee "including HST", "1450+ Five-Star Reviews", EFILE badge) are also still open.
+
+**Change 10: DONE except 2 manual 301s.** Re-checked live: drafts, noindex, the Oshawa title and the Windsor slug are all in place. Still to do by hand (or switch on the "Rank Math SEO" integration under wp-admin › Easy MCP AI › Tools › Abilities and ask Claude):
+- 301 `catch-up-corporate-tax-filing-windor/` → `/catch-up-corporate-tax-filing-windsor/`. **The old URL 404s until this exists.**
+- 301 `best-bookkeeping-services-for-small-business-in-toronto/accountant-for-retirement-homes/` → `/accountant-for-retirement-homes/`.
+- Waiting on others, not done: the HTML sitemap rebuild (10.3, after change 12); the Section 216 and review-engagement link targets (Sharad; review engagement is on hold); the /sred-tax-credits/ and manufacturing-SR&ED links (change 6 is on hold).
+
+**Change 11: page edits DONE.**
+- One H1 on 21365, 17951, 1707, 6621 and 4026 (/about-us/ was done with the layout tool, no manual edit).
+- H1 added on /restaurants/ (14878) and /services/ (16).
+- "Focus keyword" text removed from the 53759 and 53761 descriptions.
+- Each page's live data was checked for exactly one H1.
+- **Use `wp_update_page_layout` (one page, Elementor's own save, keeps a revision) for widget edits**, not search and replace. The H1 regex dry run showed that the same blocks also exist in Elementor library templates (45786, 57145) and in rendered-cache meta.
+- Still manual (wp-admin settings that the API can't reach):
+  - /blogs/ H1
+  - single-post title: Customizer › Blog › Single Post
+  - Astra breadcrumb: Header Position = None
+  - turn on Rank Math breadcrumbs
+  - FIFU default image option (`%post_title%` share images)
+- After Rank Math breadcrumbs are on, remove the hand-coded breadcrumb HTML and BreadcrumbList JSON-LD as their own batch, with a backup (11.3).
+
+**Permission prompts:** Claude Code runs in Auto mode. The approval cards come from the WordPress connector, mainly for `wp_privileged_search_replace_run`. To stop them, allow that tool in the connector's settings, or in Easy MCP AI's tool settings in wp-admin.

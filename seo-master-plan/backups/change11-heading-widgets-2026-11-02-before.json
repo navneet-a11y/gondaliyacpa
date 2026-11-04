@@ -1,0 +1,12 @@
+{
+  "note": "Before-state of the Elementor heading widgets edited for change 11 on 2026-11-02 (read with wp_get_page_layout). Only header_size changes. Elementor also keeps a revision for each save.",
+  "widgets": [
+    {"post_id": 21365, "element": "de4f057", "title": "Corporate Tax Filing Services", "header_size": "h2", "layout_version": "d5d9470095657b90", "action": "none: already h2 live (done by agent Oct 30)"},
+    {"post_id": 17951, "element": "77b6c38", "title": "Bookkeeping Experts in Toronto", "header_size": "h1", "layout_version": "ddb39854d142bbb4"},
+    {"post_id": 1707,  "element": "c599859", "title": "Corporate Tax Planning Experts", "header_size": "h1", "layout_version": "fb27f8be30440eed"},
+    {"post_id": 6621,  "element": "e6d2500", "title": "Corporate Tax Experts in Toronto", "header_size": "h1", "layout_version": "6945f2392d7b462b"},
+    {"post_id": 4026,  "element": "6d5b9dc", "title": "Registered, AFFORDABLE CPA Firm Serving Toronto & GTA", "header_size": "h1", "layout_version": "faa9f6736bdc1309"},
+    {"post_id": 14878, "element": "8892330", "title": "Tax Accountant for Restaurant Owners", "header_size": "(unset = Elementor default h2)", "layout_version": "866968e6a813aaa9"},
+    {"post_id": 16,    "element": "fccbfac", "title": "Comprehensive Accounting Services", "header_size": "(unset = Elementor default h2)", "layout_version": "e04ec6f6c576e1c9"}
+  ]
+}
