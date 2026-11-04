@@ -7216,3 +7216,63 @@ default and cannot ship without it.
 a 6(b) pillar contract. `/deadlines/` (F14, F2 date tools) and the seven F9
 guide pillars each have a "links up" contract in the same table, and nothing
 has verified those the way this one has now been verified.
+
+## 2026-11-04 — Menu: Pricing now points at the pillar, cost page becomes its child
+
+Navneet: the menu should carry the `/pricing/` hub rather than the cost page,
+with the cost page as a submenu item.
+
+### What the plan says: nothing, as before
+
+There is still no menu or navigation build task anywhere in the plan. The only
+mention of navigation is line 1553, which excludes footer and navigation links
+from the inbound minimum for F1, F4 and F13 only. So the menu is Navneet's to
+set, and this revises his own four-item spec of 2026-10-23, which pointed
+Pricing at the cost page.
+
+### Why the change is right on the plan's own logic
+
+6(b) line 1201 makes `/pricing/` a pillar with **73 cluster URLs** feeding it
+from F6, F7 and F8, and the up-link `/pricing/ to /`. A pillar carrying the
+largest commercial cluster on the site had no navigation link at all, while a
+single child of it did. Page 323 was checked before the change and is a full
+page, not a stub: hero and fee, "What you pay", an eight-item "What the fee
+covers" accordion, the payment, signing and direct-dealing cards, "What the
+fee does not include", the not-nil overflow and three calls to action.
+
+The earlier note that the cost page "matches the Home row's mandatory target
+in 6(g)" still holds, but that row governs **the home page's own links**, not
+the menu. Worth confirming the home page still links `/pricing/nil-t2-filing-cost/`
+in its content now that the nav no longer does.
+
+### The change
+
+| Item | Was | Now |
+|---|---|---|
+| 325 "Pricing" | `/pricing/nil-t2-filing-cost/` (nil_cost 794) | `/pricing/` (page 323) |
+| 1738 "Nil T2 Filing Cost" | did not exist | `/pricing/nil-t2-filing-cost/`, child of 325 |
+
+Page 323 is no longer orphaned from the menu, and the cost page keeps its
+route. Site-wide cache cleared, since the 2026-10-22 entry records menu items
+not rendering until LiteSpeed was purged.
+
+### A contradiction found on page 323 while checking it
+
+The page carries the overflow price **two different ways in two fields**:
+
+- rendered `post_content`: "we move your file to gondaliyacpa.ca at **$350.00
+  including HST** per tax year"
+- `_elementor_data`: "we move your file to gondaliyacpa.ca at **$350.00 plus
+  HST** per tax year"
+
+The page is Elementor-built, so the front end renders from `_elementor_data`
+and the visitor most likely sees "plus HST", while `post_content` keeps a
+stale copy saying "including HST". **CLAUDE.md's targets table says the
+overflow is $350.00 including HST**, and the 2026-09-30 price decision
+explicitly left this open: "The $350.00 overflow to gondaliyacpa.ca is
+unresolved -- including or plus HST."
+
+So the site states both, and nobody has decided which is true. This is a
+price on a live page and it is **for Sharad Gondaliya to settle**, not me. Not
+changed here. Once settled it needs fixing in both fields, and the same
+sentence should be checked on every page that carries the overflow line.
