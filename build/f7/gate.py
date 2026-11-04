@@ -117,6 +117,11 @@ if '/pricing/nil-t2-filing-cost/' not in c:
     bad('line 1529 no link up to the cost page')
 if 'corpnilfilingfor300.ca/">' not in c:
     bad('line 1529 no link up to the home page')
+if 'href="https://corpnilfilingfor300.ca/pricing/"' not in c:
+    bad('6(b) line 1201 no link up to the /pricing/ pillar')
+if c.count('"@type": "ListItem"') != 4:
+    bad('%d breadcrumb levels, expected 4 (home, pricing, cost, page)'
+        % c.count('"@type": "ListItem"'))
 outbound = len(re.findall(r'href="https://corpnilfilingfor300\.ca', c))
 if outbound > 20:
     bad('line 1529 outbound cap exceeded: %d' % outbound)

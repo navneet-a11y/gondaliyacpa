@@ -7139,3 +7139,80 @@ brand pages wait on dated competitor prices, and
 `/voluntary-disclosure-vs-plain-late-filing/`, `/nil-t2-vs-loss-t2/` and
 `/accountant-vs-online-nil-t2-filing/` each need a ruling on what goes in the
 second price column for work this service does not sell.
+
+## 2026-11-04 — The comparison pages had no link to their pillar. Fixed on all six.
+
+Navneet asked whether the plan says anything about a `/compare/` hub, since
+the family has `/compare/` URLs. It does, and not what either of us assumed.
+
+### There is no `/compare/` hub, by design
+
+Every occurrence of `/compare/` in the plan is a child URL:
+`/compare/<a>-vs-<b>/` and five named examples. There is no bare `/compare/`
+anywhere in it, no page with that slug on the site, and Family 16 is fixed at
+five hubs (lines 1154 and 1224): `/services/`, `/tools/`, `/locations/`,
+`/guides/`, `/blog/`.
+
+What the plan does say is in the **6(b) pillar and cluster map**, line 1201:
+
+| Pillar | Family | Clusters feeding it | Contract |
+|---|---|---|---|
+| `/pricing/` | F8 | **F7**, F8, F6 | **All 20 comparison pages link up** |
+
+So `/compare/` is a rewrite base only, and the pillar this family feeds is
+`/pricing/` (page 323, live). That is coherent rather than an oversight:
+comparisons are commercial-intent pages, so they feed the money pillar
+instead of getting a shelf of their own. Several other CPT bases are the same
+-- `/answers/`, `/best/`, `/case-studies/` have no hub either.
+
+**This is worth remembering before anyone builds a `/compare/` hub:** it
+would be a sixth F16 hub, a 969th structural URL against a signed-off 968, and
+a change to the home page and the main menu.
+
+### The defect it uncovered
+
+Two rules name two different targets and only one was satisfied:
+
+| Rule | Target | First six pages |
+|---|---|---|
+| line 1529, internal linking | `/pricing/nil-t2-filing-cost/` | in the breadcrumb |
+| 6(b) line 1201, pillar map | `/pricing/` | **missing** |
+
+The cost page is not the pricing hub. All six published comparison pages
+linked to the first and none to the second, so all six failed the 6(b)
+contract from the day they went live. Removing the Read Next block did not
+cause it; the link had never been there.
+
+### The fix
+
+The breadcrumb gains the pillar level, so one change satisfies both rules and
+the trail reads as the real hierarchy:
+
+`Nil T2 filing in Canada > Nil T2 filing price > Nil T2 filing cost > [page]`
+
+`PRICING` is now a constant beside `COST` in `build_f7.py`, the visible crumb
+and the BreadcrumbList both carry four levels, and `gate.py` gained two
+checks: the page must link to `/pricing/`, and the schema must have exactly
+four `ListItem` entries. Negative-tested by deleting the crumb link from a
+built page, which fails with "6(b) line 1201 no link up to the /pricing/
+pillar".
+
+All six rebuilt and patched live, each +203 bytes and each matching its build
+exactly:
+
+| Page | ID | Before | After |
+|---|---|---|---|
+| `t2-short-vs-full-t2` | 1670 | 26,958 | 27,161 |
+| `nil-return-vs-final-return` | 1689 | 21,399 | 21,602 |
+| `filing-one-year-vs-filing-all-unfiled-years` | 1700 | 20,720 | 20,923 |
+| `t2-short-vs-t2-short-plus-gifi` | 1705 | 20,340 | 20,543 |
+| `december-31-year-end-vs-a-non-calendar-year-end` | 1710 | 20,954 | 21,157 |
+| `federal-corporation-vs-ontario-corporation-nil-filing` | 1715 | 21,581 | 21,784 |
+
+Cache cleared for all six. Every future F7 page gets the pillar link by
+default and cannot ship without it.
+
+**Worth checking across the other families:** F7 was not the only family with
+a 6(b) pillar contract. `/deadlines/` (F14, F2 date tools) and the seven F9
+guide pillars each have a "links up" contract in the same table, and nothing
+has verified those the way this one has now been verified.

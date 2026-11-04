@@ -81,6 +81,7 @@ SITE = 'https://corpnilfilingfor300.ca'
 FORM = SITE + '/form/'
 T = SITE + '/tools/'
 G = SITE + '/guides/'
+PRICING = SITE + '/pricing/'  # the F8 pillar hub, 6(b) line 1201
 COST = SITE + '/pricing/nil-t2-filing-cost/'
 BASE = SITE + '/compare/'
 
@@ -476,6 +477,7 @@ def render(p):
              + p['answer'] + '</p></div>\n'
              '<nav class="si-crumb" aria-label="Breadcrumb">'
              '<a href="' + SITE + '/">Nil T2 filing in Canada</a> &rsaquo; '
+             '<a href="' + PRICING + '">Nil T2 filing price</a> &rsaquo; '
              '<a href="' + COST + '">Nil T2 filing cost</a> &rsaquo; '
              '<span aria-current="page">' + p['h1'] + '</span></nav>\n'
              '<p class="si-by">' + BYLINE + '</p>\n'
@@ -568,9 +570,11 @@ def render(p):
       {"@type": "BreadcrumbList", "itemListElement": [
         {"@type": "ListItem", "position": 1,
          "name": "Nil T2 filing in Canada", "item": SITE + "/"},
-        {"@type": "ListItem", "position": 2, "name": "Nil T2 filing cost",
+        {"@type": "ListItem", "position": 2, "name": "Nil T2 filing price",
+         "item": PRICING},
+        {"@type": "ListItem", "position": 3, "name": "Nil T2 filing cost",
          "item": COST},
-        {"@type": "ListItem", "position": 3, "name": p['h1'], "item": url}]}]}
+        {"@type": "ListItem", "position": 4, "name": p['h1'], "item": url}]}]}
     h.append('<script type="application/ld+json">'
              + json.dumps(schema, ensure_ascii=False) + '</script>\n'
              '<!-- /wp:html -->')
