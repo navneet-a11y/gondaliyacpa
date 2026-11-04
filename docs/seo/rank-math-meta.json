@@ -1,6 +1,6 @@
 {
  "applied": "2026-11-04",
- "coverage": "221 items given meta: 31 pages, 30 questions, 36 service places, 23 deadlines, 20 calculators (tools 1-20), 17 guides (1-17), 1 cost page, the 10 guides 18-27 (IDs 1377-1395), the 3 guides 28-30 (IDs 1464-1468) that complete Family 9, and the five Family 2 batches that take the family to eighty: calculators 31-40 (IDs 1413-1434), 41-50 (IDs 1444-1508), 51-60 (IDs 1510-1528), 61-70 (IDs 1562-1577) and 71-80 (IDs 1625-1653). Counted from the sections in this file on 2026-11-02, when Alberta completed its twelve service places: the figure of 188 it replaced had been written before Alberta opened at all and was never updated. Calculators 21-30 (IDs 1285-1303) carry meta set at publish time by the build/f2 generator and are not repeated here. Added 2026-11-04: the first Family 7 comparison page (ID 1670), and page 2 (ID 1689) the same day, taking the ledger to 223 items. Every published item on the site has a Rank Math title and description.",
+ "coverage": "221 items given meta: 31 pages, 30 questions, 36 service places, 23 deadlines, 20 calculators (tools 1-20), 17 guides (1-17), 1 cost page, the 10 guides 18-27 (IDs 1377-1395), the 3 guides 28-30 (IDs 1464-1468) that complete Family 9, and the five Family 2 batches that take the family to eighty: calculators 31-40 (IDs 1413-1434), 41-50 (IDs 1444-1508), 51-60 (IDs 1510-1528), 61-70 (IDs 1562-1577) and 71-80 (IDs 1625-1653). Counted from the sections in this file on 2026-11-02, when Alberta completed its twelve service places: the figure of 188 it replaced had been written before Alberta opened at all and was never updated. Calculators 21-30 (IDs 1285-1303) carry meta set at publish time by the build/f2 generator and are not repeated here. Added 2026-11-04: the first Family 7 comparison page (ID 1670), with pages 2 and 3 (IDs 1689 and 1700) the same day, taking the ledger to 224 items. Every published item on the site has a Rank Math title and description.",
  "nil_calculator_1_to_20": {
   "items": [
    {
@@ -1223,9 +1223,15 @@
     "id": 1689,
     "kw": "nil return vs final return",
     "title": "Nil Return vs Final Return | What Changes"
+   },
+   {
+    "desc": "Both are $300.00 plus HST per tax year, counted per year. What filing a single year leaves open, and what filing every unfiled year closes.",
+    "id": 1700,
+    "kw": "filing one year vs all unfiled years",
+    "title": "Filing One Year vs All Unfiled Years | What Changes"
    }
   ],
-  "note": "Published November 4, 2026 as ID 1670, the first Family 7 page, at /compare/t2-short-vs-full-t2/ (the permalink base was unconfirmed until this publish and resolved as the plan says). Values taken from build/f7/f7-manifest.json, not retyped. cnf_primary_keyword is not registered with show_in_rest for nil_comparison and was dropped by the REST API; the focus keyword is carried by rank_math_focus_keyword alone on this post type. Page 2, ID 1689, published the same day from build/f7/build_f7b.py: /compare/nil-return-vs-final-return/, fifteen FAQ items by Navneet’s standard. cnf_primary_keyword is still unregistered for this post type and was not sent for 1689.",
+  "note": "Published November 4, 2026 as ID 1670, the first Family 7 page, at /compare/t2-short-vs-full-t2/ (the permalink base was unconfirmed until this publish and resolved as the plan says). Values taken from build/f7/f7-manifest.json, not retyped. cnf_primary_keyword is not registered with show_in_rest for nil_comparison and was dropped by the REST API; the focus keyword is carried by rank_math_focus_keyword alone on this post type. Page 2, ID 1689, published the same day from build/f7/build_f7b.py: /compare/nil-return-vs-final-return/, fifteen FAQ items by Navneet’s standard. cnf_primary_keyword is still unregistered for this post type and was not sent for 1689. Page 3, ID 1700, the same day from build/f7/build_f7c.py: /compare/filing-one-year-vs-filing-all-unfiled-years/, fifteen FAQ items.",
   "rest_base": "nil_comparison"
  },
  "note": "Rank Math title/description/focus keyword applied to corpnilfilingfor300.ca. Titles <=60 characters, descriptions 70-160, no price outside the full \"$300.00 plus HST per tax year\" form, no bare T183, no bare EFILE outside \"registered EFILE electronic filer\", no superlatives, no unqualified penalty claim, no emoji, every title and description unique. Run build/f2/gate_rank_math.py to re-check this file against all of that.",

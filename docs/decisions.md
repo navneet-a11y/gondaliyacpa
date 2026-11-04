@@ -6900,3 +6900,65 @@ asserting every slug it names is in that batch. `gate_f2_all.py` is clear on
 all 80 tool pages and `gate_rank_math.py` passes at 223 items.
 
 Post cache cleared for all four IDs after publishing.
+
+## 2026-11-04 — Read Next removed from Family 7, and page 3 published
+
+### The Read Next block is gone, because the plan never asked for it
+
+Navneet: "remove read next if not in plan". Checked before touching anything:
+**the plan never mentions a Read Next block, a related-links block or further
+reading, for Family 7 or for any family.** What line 1529 actually sets for
+F7 is an inbound minimum of 3, an outbound **cap** of 20 (a ceiling, not a
+floor), and what the page must link up to, `/pricing/nil-t2-filing-cost/` and
+`/`. Both of those are in the breadcrumb, so removing the block keeps the page
+compliant. It was mine, and it is gone from the renderer and from both
+published pages.
+
+What is lost is modest and worth stating: the tools and guides those lists
+pointed at are still linked from the body prose of each page, in context, so
+nothing became unreachable. Outbound fell from 19 links to 13 on both pages.
+
+| Page | ID | Before | After |
+|---|---|---|---|
+| `t2-short-vs-full-t2` | 1670 | 27,849 | 26,958 |
+| `nil-return-vs-final-return` | 1689 | 22,302 | 21,399 |
+
+Both live figures match their rebuilds exactly. The 500-character cap on
+`wp_replace_in_post` searches meant each removal went in three chunks rather
+than one.
+
+### Page 3: `/compare/filing-one-year-vs-filing-all-unfiled-years/`
+
+ID 1700, 20,720 bytes, byte-identical to the gated build, `cnf_family` 20,
+fifteen FAQ items. Family 7 is 3 of 20.
+
+Chosen on the same line 1215 test as page 2 -- both price columns must carry
+published prices -- and it is the most commercially useful of the remaining
+concept pages, since catch-up filing is a core service and this is a question
+people actually weigh.
+
+Two deliberate restraints on this one:
+
+- **No totals anywhere.** A multi-year figure would be a money amount outside
+  the two the gate allows, and it would set a price the plan has never stated.
+  Both price rows carry the per-year fee, and the page says in its first line
+  that the fee is the same on both routes, rather than implying a volume
+  discount that does not exist.
+- **Penalties are not discussed at all.** Hard rule 3 bars the bare phrase and
+  requires the full Section 7.4 qualification wherever the subject comes up.
+  The page makes its argument without needing it, so it leaves the subject out
+  rather than carry a qualification block that would then need checking.
+
+Inbound links per line 1529, anchored on the comparison title:
+
+| Tool | ID | Before | After |
+|---|---|---|---|
+| `unfiled-years-checker` | 1263 | 26,475 | 26,626 |
+| `unfiled-years-cost-calculator` | 1172 | 22,256 | 22,407 |
+| `catch-up-filing-schedule-generator` | 1508 | 28,023 | 28,174 |
+
+Each matched its local build before the edit and each grew by the same 151
+bytes. `COMPARE_F7` maps now exist in `build_f2b.py`, `build_f2c.py`,
+`build_f2e.py` and `build_f2g.py`, each asserting its slugs are in that batch.
+`gate_f2_all.py` clear on 80 pages, `gate_rank_math.py` passes at 224 items,
+cache cleared for all six IDs.

@@ -406,16 +406,6 @@ PAGE = dict(
        'the '
        '<a href="' + T + 't2-short-exclusion-checker/">exclusion checker</a> '
        'names the condition that did it.')],
- related=[(T + 't2-short-eligibility-checker/',
-           'T2 Short eligibility checker, all eight conditions'),
-          (T + 't2-short-exclusion-checker/',
-           'T2 Short exclusion checker, which condition excludes you'),
-          (T + 't2-short-ccpc-condition-checker/',
-           'CCPC condition checker, the first condition on its own'),
-          (G + 't2-short-eligibility/', 'T2 Short eligibility'),
-          (G + 't2-schedules-on-a-nil-return/',
-           'T2 schedules on a nil return'),
-          (COST, 'Nil T2 filing cost')],
 )
 
 
@@ -433,7 +423,6 @@ def check(p):
     assert len(p['faq']) == p['faq_n'], (
         '%s: %d FAQ items, expected %d'
         % (p['slug'], len(p['faq']), p['faq_n']))
-    assert len(p['related']) == 6, p['slug']
     assert len(p['cards']) == 3, p['slug']
     assert len(p['seo_title']) <= 60, len(p['seo_title'])
     assert 70 <= len(p['seo_desc']) <= 160, len(p['seo_desc'])
@@ -554,12 +543,6 @@ def render(p):
                          '<div class="si-faq-a"><p>%s</p></div></details>'
                          % (q, a) for q, a in p['faq'])
              + '\n</div>\n</div></div>\n')
-
-    h.append('<div class="si-section-alt"><div class="si-wrap article">\n'
-             '<h2 class="si-h2">Read Next</h2>\n<ul class="si-check">\n'
-             + '\n'.join('<li><a href="%s">%s</a></li>' % (u, t)
-                         for u, t in p['related'])
-             + '\n</ul>\n</div></div>\n')
 
     h.append('<div class="si-cta-bottom">'
              '<h2>Nil T2 Filing, ' + PRICE + '</h2>'

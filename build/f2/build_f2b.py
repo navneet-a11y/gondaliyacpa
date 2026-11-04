@@ -809,10 +809,21 @@ GUIDES = {
     'Provincial and federal annual returns')],
 }
 
+# Family 7 inbound links. Line 1529 sets F7's inbound minimum at 3 and its
+# anchor convention to the comparison title, so the anchor is the comparison
+# page's own H1 verbatim. A tool gets no F7 link unless it is named here.
+COMPARE_F7 = {
+ 'unfiled-years-cost-calculator': [(CMP + 'filing-one-year-vs-filing-all-unfiled-years/',
+                                           'Filing One Year vs Filing All Unfiled Years')],
+}
+for _s in COMPARE_F7:
+    assert _s in {t['slug'] for t in TOOLS2}, 'COMPARE_F7 names %s, not in batch' % _s
+
 for t in TOOLS2:
     i = ORDER.index(t['slug'])
     rel = [(T + ORDER[j] + '/', LINK_TITLE[ORDER[j]]) for j in SIBLINGS[i]]
     rel += [(G + g + '/', ttl) for g, ttl in GUIDES[t['slug']]]
+    rel += COMPARE_F7.get(t['slug'], [])
     rel.append((COST, 'Nil T2 filing cost'))
     t['related'] = rel
 

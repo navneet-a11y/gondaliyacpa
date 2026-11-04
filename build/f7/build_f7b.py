@@ -225,16 +225,6 @@ PAGE = dict(
    '<a href="' + T + 'final-t2-return-due-date-calculator/">final T2 return '
    'due date calculator</a> then dates the last return.'),
  ],
- related=[(T + 'final-t2-return-due-date-calculator/',
-           'Final T2 return due date calculator'),
-          (T + 'dissolution-readiness-checker/',
-           'Dissolution readiness checker, what is still outstanding'),
-          (T + 'clearance-certificate-requirement-checker/',
-           'Clearance certificate requirement checker'),
-          (G + 'final-t2-and-dissolution/', 'Final T2 and dissolution'),
-          (G + 'winding-up-an-inactive-corporation/',
-           'Winding up an inactive corporation'),
-          (COST, 'Nil T2 filing cost')],
 )
 
 
