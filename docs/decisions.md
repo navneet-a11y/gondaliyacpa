@@ -7951,3 +7951,53 @@ Seven left, none of them available to me:
 So F7 work stops here until one of those two unblocks. The open deadline is
 the blog: 28 posts behind, with the November 6 batch's Thursday sign-off now
 passed.
+
+## 2026-11-05 -- Navneet's two edits to page 13
+
+### The closing paragraph removed
+
+Navneet: remove the paragraph linking the dissolve-or-keep cost calculator, the
+dissolution readiness checker and the winding-up guide. Done, live and in the
+builder. Page 13 is **23,440 to 22,889 bytes**, matching its rebuild.
+
+`render()` now omits that paragraph entirely when a page sets no `close` text,
+rather than emitting an empty `<p></p>`. The slot stays available for the other
+twelve pages, which are **byte-identical** after the change -- only page 13
+moved.
+
+What it cost: outbound on the page drops from 12 links to 9, which is inside
+the line 1529 cap of 20 and has no minimum. Nothing is orphaned -- the cost
+calculator is still the hero's second button, and all three of those tools
+still link **in** to this page, so the 6(g) inbound minimum of 3 is untouched.
+
+The live edit took two steps, because the paragraph is 551 characters and
+`wp_replace_in_post` caps a search at 500. A regex would have been the obvious
+alternative and is not usable here: the tool strips backslashes from a pattern
+and truncates it at `<` or `"`, so no pattern can match this HTML reliably.
+Shortened the tail to a marker, then removed the whole line with the marker in
+it. Worth remembering for any future edit to a long paragraph.
+
+### The "Previous" block at the end was theme output, not content
+
+Navneet also flagged an odd block at the foot of the page: "Previous -- Nil T2
+vs Nil GST/HST Return | Two Accounts". That is **Astra's single-post
+previous/next navigation**, rendered by the theme, so there was nothing in
+`post_content` to delete and no page rebuild could have removed it. Theme mods
+are bare, so it is Astra's default rather than a setting anyone chose.
+
+Hidden with a scoped rule in Additional CSS, now mirrored at
+`build/theme/astra-additional-css.css` so the site CSS is recoverable from the
+repository rather than living only in the database.
+
+**Two things to be straight about.** This hides the block rather than stopping
+it rendering; a child-theme filter on `astra_single_post_navigation_enabled`
+would be the clean fix, and this project has no child theme. And the markup was
+not inspected, because this session's egress proxy refuses the site, so the
+rule names four Astra selector variants to be sure of catching it. If the block
+is still visible, that is why, and the fix is one more selector.
+
+**It is on the other families too.** The same navigation renders on the 85
+`nil_calculator` tool pages and the 30 `nil_guide` pages, where it is wrong for
+the same reason: none of them is a chronological series. Only
+`nil_comparison` was asked for and only `nil_comparison` was changed.
+Extending it is one line per post type and is Navneet's call.

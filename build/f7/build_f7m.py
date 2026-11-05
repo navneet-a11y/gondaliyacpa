@@ -226,15 +226,10 @@ PAGE = dict(
         'good reasons to hold a name, a history or a registration, and this '
         'page is not an argument for either route. It is worth seeing as a '
         'subscription rather than as a formality, and then deciding.'),
-  close=('The <a href="' + T + 'dissolve-or-keep-filing-cost-calculator/">'
-         'dissolve or keep filing cost calculator</a> totals the priced side '
-         'for a given number of years, the '
-         '<a href="' + T + 'dissolution-readiness-checker/">dissolution '
-         'readiness checker</a> tests whether the corporation is ready for '
-         'the last step, and the '
-         '<a href="' + G + 'winding-up-an-inactive-corporation/">complete '
-         'guide to winding up an inactive corporation</a> sets out all six '
-         'steps in order.')),
+  # Removed by Navneet on November 5, 2026. The three links it carried are
+  # not lost: the cost calculator is the hero's second button, and all three
+  # pages still link in to this one, so nothing is orphaned by dropping it.
+  close=''),
  band=('Either Route Starts With the Returns',
        'Every outstanding year is filed first, oldest first, at ' + PRICE
        + '. The decision comes after that rather than instead of it.'),

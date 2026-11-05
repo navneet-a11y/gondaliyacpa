@@ -1,0 +1,39 @@
+/* corpnilfilingfor300.ca -- Appearance > Customize > Additional CSS.
+ *
+ * Mirror of the live custom CSS (Astra, custom_css_post_id 223), kept here so
+ * it is recoverable from the repository. Nothing reads this file: the live
+ * copy is the one that renders. Update both together.
+ *
+ * Last synced: November 5, 2026.
+ */
+.cnf-footer-head {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 14px;
+  color: #2A00C8;
+}
+.cnf-footer-col {
+  font-family: Inter, sans-serif;
+  font-size: 13px;
+  line-height: 1.35;
+  color: #4a5256;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.cnf-footer-col a { color: inherit; text-decoration: none; }
+.cnf-footer-col a:hover, .cnf-footer-col a:focus { text-decoration: underline; }
+.cnf-legal { font-family: Inter, sans-serif; font-size: 11px; line-height: 1.7; color: #4a5256; border-top: 1px solid #d5d5d5; padding-top: 20px; margin-top: 28px; }
+.cnf-legal a { color: #4a5256; }
+
+/* November 5, 2026. Astra renders its single-post previous/next navigation on
+   the comparison pages, which reads as "Previous: <another comparison>". These
+   pages are not a chronological series, so that implies an order that does not
+   exist. Hidden at Navneet's request. Theme output, not page content, so there
+   is nothing in post_content to delete; a child-theme filter on
+   astra_single_post_navigation_enabled would remove it at render instead. */
+.single-nil_comparison .post-navigation,
+.single-nil_comparison nav.navigation.post-navigation,
+.single-nil_comparison .ast-single-post-navigation,
+.single-nil_comparison .ast-post-nav-wrap { display: none; }

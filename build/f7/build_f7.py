@@ -547,8 +547,12 @@ def render(p):
              + '\n'.join('<li>%s</li>' % c for c in p['detail']['items'])
              + '\n</ul>\n'
              '<div class="si-warn"><p>' + p['detail']['warn'] + '</p></div>\n'
-             '<p>' + p['detail']['close'] + '</p>\n'
-             '<div class="si-info"><p>' + EFILE + '</p></div>\n'
+             # Navneet removed this paragraph from page 13 on November 5, 2026.
+             # An empty close emits no paragraph at all rather than an empty
+             # one, so the slot stays available and no page ships a bare <p>.
+             + ('<p>' + p['detail']['close'] + '</p>\n'
+                if p['detail'].get('close') else '')
+             + '<div class="si-info"><p>' + EFILE + '</p></div>\n'
              '</div></div>\n')
 
     h.append('<div class="si-section-dark"><div class="si-wrap">\n'
