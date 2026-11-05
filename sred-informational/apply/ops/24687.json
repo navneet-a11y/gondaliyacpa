@@ -22,18 +22,6 @@
    "regex": false
   },
   {
-   "row": 27,
-   "search": ", helping your business recover eligible costs, maximize credits, and reinvest in growt",
-   "replace": ", so your business can recover eligible costs, maximize credits, and reinvest in growt",
-   "regex": false
-  },
-  {
-   "row": 28,
-   "search": "Gondaliya CPA helps document these elements accurately, ensuring that",
-   "replace": "Documenting these elements accurately helps ensure that",
-   "regex": false
-  },
-  {
    "row": 29,
    "search": "\"title\":\"Our SR&ED Tax Credit Services",
    "replace": "\"title\":\"What an SR&ED Claim Involves",
@@ -363,6 +351,14 @@
   },
   {
    "row": 26,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 27,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 28,
    "why": "before found 0 times now"
   },
   {

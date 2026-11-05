@@ -4,18 +4,6 @@
  "sha256_after": "549580a47a385aaaf3a4dfc84ac7069e0665102fa3e07690518c27a6f08740cc",
  "ops": [
   {
-   "row": 9,
-   "search": "Technical narrative prepared describing the technological uncertainty",
-   "replace": "A technical narrative describes the technological uncertainty",
-   "regex": false
-  },
-  {
-   "row": 10,
-   "search": "SR&amp;ED review support if the claim is selected for audit. <a href=\\\"https:\\/\\/gondaliyacpa.ca\\/sred-tax-credit-claims\\/\\\">SR&amp;ED Service",
-   "replace": "may select an SR&amp;ED claim for review. <a href=\\\"https:\\/\\/gondaliyacpa.ca\\/sred-tax-credit-claims\\/\\\">How SR&amp;ED work",
-   "regex": false
-  },
-  {
    "row": 11,
    "search": "<div class=\\\"mf-case-card\\\"><h3>Plastics Manufacturer, Mississauga ($1.2M Revenue)<\\/h3><p>Custom plastics manufacturer with 12 employees. Never filed SR&amp;ED despite ongoing mold development and material testing. We identified $180,000 in eligible expenditures across 2 years, filed T661 claims and recovered $64,800 in federal and Ontario credits. Additionally claimed CCA on $220,000 in new injection molding equipment at 50% (Class 53). Total first-year savings: $89,400. <a href=\\\"https:\\/\\/gondaliyacpa.ca\\/consultation\\/\\\">Get Started &#8594;<\\/a><\\/p><div class=\\\"mf-case-stat\\\">$64,800 SR&amp;ED recovered. $89,400 total savings in Year 1.<\\/div><\\/div>\\r\\n",
    "replace": "",
@@ -213,6 +201,14 @@
   },
   {
    "row": 8,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 9,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 10,
    "why": "before found 0 times now"
   }
  ]
