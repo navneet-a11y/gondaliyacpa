@@ -8121,3 +8121,77 @@ that bug: **a banned phrase split across a join would have gone through
 unseen.** That hole was open for every batch this gate family has ever run on.
 
 Still not verified in a browser: the egress proxy refuses the site.
+
+## 2026-11-05 -- Blog categories: five, created live
+
+The plan names **no blog categories**. The only mention is the F13 row at line
+320, which lists "native category and post_tag" among the taxonomies and then,
+unlike every other taxonomy in the document, enumerates no terms: line 304
+spells out all 28 cnf_place and 12 cnf_service terms, and line 312 gives F5's
+45 cnf_topic terms, but for `category` there is nothing, no count, and no
+category-archive URL anywhere in Appendix A. So this is a deviation by
+omission and the choice is logged here.
+
+Navneet asked first for a proposal, then for fewer, "just a few main ones
+which has good searches". Ranked on the only search figures in the signed-off
+record, section 6(d) (one head term per family, every row marked "Estimate"):
+t2 filing deadline 2,400; nil t2 return 1,900; t183corp 590; does an inactive
+corporation have to file a t2 480; unfiled corporate tax returns canada 210;
+dormant company tax return canada 170, which 6(d) calls the blog head term.
+
+| ID | Category | Slug | Demand behind it |
+|---|---|---|---|
+| 79 | Nil T2 Returns | `nil-t2-returns` | 1,900, the site head term; also the default category |
+| 80 | T2 Filing Deadlines | `t2-deadlines` | 2,400, the largest term on the site |
+| 81 | Dormant and Inactive Corporations | `dormant-corporations` | 170 plus 480; 6(d)'s named blog head term |
+| 82 | Unfiled Returns and CRA Letters | `unfiled-returns` | 210, "highest revenue per visit" |
+| 83 | Annual Returns and Registries | `annual-returns` | no 6(d) figure; kept on structure, below |
+
+**Why five and not ten.** A first pass had ten, one per pillar cluster in
+section 6(b). Navneet cut it. The five kept are the ones with demand behind
+them in 6(d), with two deliberate merges and one deliberate keep:
+
+- **CRA letters merged into unfiled returns.** A demand to file is what
+  arrives *because* years are unfiled: same reader, same pillar.
+- **Annual Returns and Registries kept despite having no 6(d) figure.**
+  Without it a post on the Ontario annual return has nowhere honest to go: a
+  registry filing is not a T2, which is the thing every page in Family 2
+  batch 12 exists to say. Its pillar carries 179 cluster URLs.
+- **No T2 Short category and no pricing category.** T2 Short has its own
+  pillar on that exact term, so an archive would compete with
+  `/guides/t2-short-eligibility/`. Pricing draws from F7, F8 and F6 with no
+  F13, and a cost-themed archive pulls blog writing toward price claims,
+  where rules 4 and 9 bite hardest.
+
+The cost of five: **Nil T2 Returns is the default bucket** and will hold
+roughly half of the 455 posts. Accepted, because the archives are not meant
+to rank.
+
+**Recommended `noindex, follow` on all five archives.** Crawlable, so link
+equity still flows post to pillar, but not competing with the pillars that
+target these same terms -- sharpest for deadlines, where "t2 filing deadline"
+is the 2,400 term and `/deadlines/` is already the F14 pillar for it. **Not
+yet set:** the Rank Math abilities that would do it
+(`wp_ability_rank_math_set_global_seo_settings`,
+`wp_ability_rank_math_set_post_type_seo_settings`) are not enabled on the
+connector, so this is Navneet's to set in Rank Math, Titles and Meta,
+Categories. Rule 10's site-wide noindex covers it meanwhile.
+
+**One category per post, never two**, so no post appears in two archives.
+Tags and `cnf_topic` carry the long tail. Neither is built: `post_tag` is
+unused and **`cnf_topic` has zero terms**, although the plan attaches it to
+F5, F6, F9 and F13. That is an open item for every one of those families, not
+just the blog. A tag named `efile` must never be created: hard rule 1 reserves
+the word for "registered EFILE electronic filer", and a tag is exactly the
+product-label use it forbids. Use "electronic filing".
+
+**Applied live.** The four posts were assigned with `append: false` so none
+kept Uncategorized: 1867 and 1041 and 1039 to Nil T2 Returns, 1556 to Unfiled
+Returns and CRA Letters. `default_category` repointed from 1 to 79, then
+Uncategorized (term 1) deleted once empty. The leftover WordPress `Hello
+world!` draft (post 1) was trashed under the standing rule that test items
+are deleted from live.
+
+`wp_update_site_settings` is switched off on this connector, so
+`default_category` was set through the `/wp/v2/settings` REST route instead,
+which the disabled-tools note itself points to as the alternative.
