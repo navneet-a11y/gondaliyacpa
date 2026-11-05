@@ -7745,3 +7745,68 @@ and **four concept pages** now unblocked by the ruling and buildable in order:
 `/voluntary-disclosure-vs-plain-late-filing/` is the one to check with Sharad
 before writing: the Voluntary Disclosures Programme is not mentioned anywhere
 in the plan or on the site, so there is no published position to build on.
+
+## 2026-11-05 (later still) -- Family 7 page 11: /compare/nil-t2-vs-loss-t2/
+
+Live as **ID 1816, 22,501 bytes**, matching its build. `nil_comparison`
+reports **11 published**, so Family 7 is **11 of 20**.
+
+Not in Appendix A, which lists 13 of its stated 20 F7 URLs. Line 1242's
+keyword list carries "nil t2 vs loss t2", so this fills part of that gap on
+the same footing as the three off-appendix pages logged earlier.
+
+Page 7 deliberately left this subject alone and said so in its own docstring:
+a year with activity that nets to nothing belongs here, not there. That
+boundary is now honoured rather than just promised.
+
+### The only page so far needing no decline cell
+
+A loss year is not nil, and the plan already publishes where it goes and at
+what price: the sister firm at gondaliyacpa.ca, $350.00 plus HST per year. So
+both columns carry our own published fees and the November 5 ruling does not
+arise. Hard rule 8 is satisfied twice over, in the warning block and the cards.
+
+### The detail this page exists to get right
+
+The site's own guide slug is `schedule-8-and-loss-continuity` and the fee table
+line reads "Schedule 8 and loss continuity", which invites writing that
+Schedule 8 carries the losses. It does not. Schedule 8 is capital cost
+allowance; **Schedule 4, Corporation Loss Continuity and Application**, carries
+the losses. The guide is explicit that they are separate and says why they get
+conflated, so this page states both numbers and keeps them in separate rows.
+
+The substantive point, also from the guide: on a quiet year the usual capital
+cost allowance claim is nil, because claiming against no income creates a
+non-capital loss that expires in twenty years, while claiming nothing keeps the
+undepreciated capital cost in the pool, where it lasts as long as the pool
+does. Capital cost allowance is discretionary and the choice is made each year.
+
+### A contract widened for the right reason, not a host chosen for the wrong one
+
+The two tools that actually bear on a loss year --
+`loss-continuity-on-a-nil-return-checker` and `expenses-only-year-checker` --
+are both in batch 10, and `build_f2j.py` had no `COMPARE_F7` map. Its
+related-link contract also asserted **exactly** six links, so adding one would
+have failed.
+
+Picking weaker hosts from a file that happened to carry a map would have been
+choosing the link by the convenience of the builder rather than by what the
+page is about. So `build_f2j.py` gains the map on the pattern batches 1 to 8
+already use, and its assert becomes six **plus whatever is mapped** -- which is
+what those earlier batches have always effectively done. Third host:
+`schedule-8-cca-requirement-checker` in `build_f2f.py`.
+
+Three inbound at the line 1529 minimum. `gate_f2_all.py` clear on 85 pages,
+all three live pages match their builds. Ledger **237 items**,
+`gate_rank_math.py` PASS. Caches cleared. Not loaded in a browser, same proxy
+reason as every page this week.
+
+### Family 7: 11 of 20
+
+Nine left. Six brand pages still blocked on dated competitor published prices.
+Three concept pages buildable: `/nil-t2-vs-nil-gst-hst-return/` and
+`/dissolving-vs-filing-nil-every-year/` are both well grounded in live guides,
+and `/voluntary-disclosure-vs-plain-late-filing/` is **not**: the Voluntary
+Disclosures Programme appears nowhere in the plan or on the site, so writing it
+would mean stating how a CRA programme works with no published position to
+build on. That one goes to Sharad Gondaliya before it is written.

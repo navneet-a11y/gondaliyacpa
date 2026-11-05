@@ -68,6 +68,8 @@ import re as _re
 from build_f2 import (render, meta, yn, a, SITE, HUB, FORM, PRICE,
                       NOT_NIL, TOOL_DISCLAIMER)
 from build_f2b import tool, num, date, PICK, T, G, COST
+
+CMP = SITE + '/compare/'
 from build_f2c import MONEY_JS, QUAL, PRELUDE
 from build_f2f import BASE, RBASE
 from build_f2i import ORDER9, LINK_TITLE9, GUIDES_LIVE9
@@ -1710,13 +1712,30 @@ for t in TOOLS10:
         assert g in GUIDES_LIVE10, (
             '%s: links to /guides/%s/, which is not live' % (t['slug'], g))
 
+# Family 7 inbound. Line 1529 sets F7's inbound minimum at 3 and its anchor
+# convention to the comparison title. Batch 10 had no map until page 11 of that
+# family needed hosts: the two tools that actually bear on a loss year are both
+# in this batch, and choosing weaker hosts because an earlier file happened to
+# carry a map would be the wrong reason. The related-link contract becomes six
+# plus whatever is mapped, which is what batches 1 to 8 already do.
+COMPARE_F7 = {
+ 'loss-continuity-on-a-nil-return-checker': [(CMP + 'nil-t2-vs-loss-t2/',
+   'Nil T2 vs a Loss T2')],
+ 'expenses-only-year-checker': [(CMP + 'nil-t2-vs-loss-t2/',
+   'Nil T2 vs a Loss T2')],
+}
+for _s in COMPARE_F7:
+    assert _s in _NEW, 'COMPARE_F7 names %s, not in batch' % _s
+
 for t in TOOLS10:
     rel = [(T + s + '/', LINK_TITLE10[s]) for s in SIBLINGS10[t['slug']]]
     rel += [(G + g + '/', ttl) for g, ttl in GUIDES10[t['slug']]]
     rel.append((COST, 'Nil T2 filing cost'))
-    assert len(rel) == STRUCTURE['related'], (
+    rel += COMPARE_F7.get(t['slug'], [])
+    _want = STRUCTURE['related'] + len(COMPARE_F7.get(t['slug'], []))
+    assert len(rel) == _want, (
         '%s: %d Read Next links, the contract is %d'
-        % (t['slug'], len(rel), STRUCTURE['related']))
+        % (t['slug'], len(rel), _want))
     t['related'] = rel
 
 
