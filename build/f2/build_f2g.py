@@ -1837,6 +1837,8 @@ for t in TOOLS7:
 # anchor convention to the comparison title, so the anchor is the comparison
 # page's own H1 verbatim. A tool gets no F7 link unless it is named here.
 COMPARE_F7 = {
+ 'mandatory-t2-efile-checker': [(CMP + 'paper-t2-vs-efile-t2/',
+   'Paper T2 vs Electronic Filing')],
  'provincial-return-requirement-checker': [(CMP + 'federal-corporation-vs-ontario-corporation-nil-filing/',
                                                    'Federal Corporation vs Ontario Corporation')],
  'catch-up-filing-schedule-generator': [(CMP + 'filing-one-year-vs-filing-all-unfiled-years/',

@@ -7452,3 +7452,130 @@ This session's egress proxy refuses `corpnilfilingfor300.ca`, so Playwright
 cannot reach it. The byte-for-byte match with gated files plus the duplicated,
 already-proven CSS prefix is the evidence; a visual check on the live pages is
 still worth doing from a machine that can reach the site.
+
+## 2026-11-05 -- Family 7 pages 7 and 8, and the end of the easy ones
+
+Navneet: "work on next compare pages". The two the November 4 note named as
+buildable with no further input are now live, taking **Family 7 to 8 of 20**.
+
+| Page | ID | Bytes |
+|---|---|---|
+| `/compare/nil-t2-vs-zero-return/` | 1788 | 21,366 |
+| `/compare/paper-t2-vs-efile-t2/` | 1789 | 22,388 |
+
+Both are Appendix A URLs (lines 3264 and 3286). `gate.py` clear on all eight
+F7 pages, and both live pages match their built files byte for byte.
+
+### Page 7 answers its question with a table that mostly does not differ
+
+A searcher typing "zero return" wants to know whether it is a different thing
+from a nil return. It is not: there is no zero-return form, the return is the
+T2 either way, and the test is whether anything happened in the year. So eight
+of the ten rows are identical, and that is the answer rather than a thin table.
+
+The two that differ are the name itself and the trap the word sets. From
+`/guides/zero-activity-corporate-tax-returns/`: "A balance sheet filed as
+entirely zero when share capital was issued is wrong, and it is wrong in a way
+that persists: the next return opens from the closing balances this one
+reports." That sentence is the page's real payload.
+
+`/nil-t2-vs-loss-t2/` is a separate Appendix A URL, so a year with activity
+that nets to nothing is left to it. Line 1212 exists to stop two URLs covering
+one comparison.
+
+### Page 8 fills a price cell for a route we do not sell, and only the plan made that possible
+
+This is the page that shows why the other twelve are blocked. Line 1215 wants
+two filled price cells and no negative claim, and the left column here is a
+route this service does not offer, so there is no fee of ours to put in it.
+
+Plan line 169 settles it in four words: **"We file electronically only."** That
+is a statement about this firm, not a price for anyone else, so the cell is
+filled truthfully and nothing is claimed about any provider. The second price
+row carries what the route itself costs, which is where the plan's two figures
+go.
+
+The twelve remaining URLs have no equivalent sentence to lean on. That is the
+difference between this page and them, not a difference of effort.
+
+### Two renderer strings assumed both columns were ours
+
+`render()` hard-coded "Both figures are our own published fee" under the dated
+price line, and the disclosure said the page "sets two of our own filing routes
+against each other". Neither is true of page 8. Both are now per-page keys
+(`stamp`, `disclosure`) defaulting to the old text, so **the six pages live
+before this change rebuild byte-identically** -- confirmed, not assumed.
+
+`check()` holds any override to what the rules require: the disclosure must
+still carry "published prices and published features only" (line 1215) and the
+stamp must still link the cost page (line 1529). Both decoy-tested.
+
+### gate.py's money allowlist, widened on the plan's authority and not the page's wish
+
+The allowlist was `$300.00` and `$350.00`. Page 8 needs the two paper charges,
+so it is now a dict mapping each permitted figure to the plan line that states
+it: `$0.00` (line 2073), `$1,000.00` and `$100.00` (lines 169, 393, 1755).
+
+Added with it, because a widened allowlist needs a tighter rule beside it:
+line 1819 QA item 9 requires the paper charges stated as "$1,000 plus a $100
+per-return preparer penalty", so **gate.py now refuses a page carrying either
+figure without the other**. Decoy-tested in both directions, plus an unlisted
+figure and a stray `$49.00`. All refused.
+
+The late-filing qualification block is deliberately not on page 8. Reproducing
+it would put $25.00 and $2,500.00 on an F7 page to make a point the comparison
+does not need. The flat nature of the charge is stated directly instead.
+
+### 6(g) inbound, wired through the existing COMPARE_F7 route
+
+Line 1529 sets F7 at 3 inbound minimum. There is no `/compare/` hub, so the
+inbound comes from Family 2 tools via the `COMPARE_F7` maps, anchored on the
+comparison title:
+
+| Page | Linked from |
+|---|---|
+| `nil-t2-vs-zero-return` | dormant corporation test, nil T2 eligibility checker, nil GIFI balance sheet checker |
+| `paper-t2-vs-efile-t2` | mandatory T2 e-filing checker, nil return late penalty checker, dormant corporation obligation checker |
+
+Three each, exactly the minimum. Hosts were chosen for topical fit among the
+builders that already carry a `COMPARE_F7` map, so no new map was needed.
+Builders patched first, rebuilt, `gate_f2_all.py` clear on 85 pages, then the
+six tool pages pushed live; all six match their builds.
+
+### Ledger and cache
+
+`docs/seo/rank-math-meta.json` `nil_comparison` goes from 6 items to 8, ledger
+total **234**; `gate_rank_math.py` PASS. `cnf_primary_keyword` is still
+unregistered for `nil_comparison` and came back as `meta_ignored` on page 7,
+as it does for all eight -- recorded in the section note rather than left to be
+rediscovered. LiteSpeed page cache and the Rank Math sitemap cache cleared.
+
+### Where Family 7 now stands: 8 of 20, and everything left needs a decision
+
+Nothing remains that can be built from published material alone.
+
+- **6 brand pages** wait on dated competitor published prices, which this
+  environment's network policy denies and which need approval before going
+  live in any case.
+- **6 concept pages** wait on one ruling: `/dissolving-vs-filing-nil-every-year/`,
+  `/diy-vs-cpa-nil-t2/`, `/nil-t2-vs-nil-gst-hst-return/`,
+  `/ontario-annual-return-vs-t2/`,
+  `/nil-t2-vs-ontario-annual-return-vs-federal-annual-return/`,
+  `/voluntary-disclosure-vs-plain-late-filing/`, `/nil-t2-vs-loss-t2/` and
+  `/accountant-vs-online-nil-t2-filing/` each put a route this service does not
+  sell in the right-hand column, and line 1215 wants that price cell filled.
+
+**The ruling needed, with a recommendation.** Page 8 fills such a cell with a
+statement about this firm rather than a price, because the plan supplied the
+sentence. The same shape would work for the rest -- "Not offered. We file nil
+T2 returns only", or the registry's own published fee where the plan already
+states it, as it does for the Corporations Canada annual return. What it cannot
+be is a figure nobody published. Put to Navneet; not decided here, because
+inventing a second price column is exactly what line 1215 exists to prevent.
+
+### Not verified: the pages in a real browser
+
+Same limit as batch 11. This session's egress proxy refuses
+`corpnilfilingfor300.ca`, so neither page was loaded. The evidence is the
+byte-for-byte match with gated files and a CSS prefix inherited unchanged from
+page 1 by duplication.

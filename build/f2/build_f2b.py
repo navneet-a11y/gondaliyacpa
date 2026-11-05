@@ -821,6 +821,8 @@ GUIDES = {
 # anchor convention to the comparison title, so the anchor is the comparison
 # page's own H1 verbatim. A tool gets no F7 link unless it is named here.
 COMPARE_F7 = {
+ 'dormant-corporation-test': [(CMP + 'nil-t2-vs-zero-return/',
+   'Nil T2 Return vs Zero Return')],
  'federal-annual-return-anniversary-calculator': [(CMP + 'federal-corporation-vs-ontario-corporation-nil-filing/',
                                                           'Federal Corporation vs Ontario Corporation')],
  '53-week-first-tax-year-checker': [(CMP + 'december-31-year-end-vs-a-non-calendar-year-end/',

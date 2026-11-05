@@ -93,7 +93,15 @@ BYLINE = ('Written and reviewed by <a href="' + SITE
 EFILE = ('Gondaliya CPA Professional Corporation is a registered EFILE '
          'electronic filer. Returns are prepared and transmitted in Canada. '
          'Credentials are never shared and never used offshore.')
+# The sentence after the dated price line. Line 1568 wants the date; what
+# follows it has to be true of the particular page, and on /paper-t2-vs-efile-t2/
+# only one column is a route we sell. Pages override this with a 'stamp' key.
+STAMP = ('Both figures are our own <a href="' + COST + '">published fee</a>.')
+
 # Line 1215's required disclosure, in the form that is true of a concept page.
+# Also overridable: a page whose left column is a route we do not offer cannot
+# say it sets two of our own routes against each other. Any override still has
+# to carry "published prices and published features only", which gate.py checks.
 DISCLOSURE = ('This comparison sets two of our own filing routes against each '
               'other and names no other provider. Where a comparison on this '
               'site does name one, it states that provider&rsquo;s published '
@@ -427,6 +435,11 @@ def check(p):
     assert len(p['cards']) == 3, p['slug']
     assert len(p['seo_title']) <= 60, len(p['seo_title'])
     assert 70 <= len(p['seo_desc']) <= 160, len(p['seo_desc'])
+    assert 'published prices and published features only' in \
+        p.get('disclosure', DISCLOSURE), \
+        '%s: the disclosure override drops the line 1215 wording' % p['slug']
+    assert COST in p.get('stamp', STAMP), (
+        '%s: the stamp override drops the line 1529 cost link' % p['slug'])
 
 
 def write(p, manifest):
@@ -494,8 +507,7 @@ def render(p):
              '<div class="si-wrap article">\n'
              '<h2 class="si-h2">The Comparison, Row by Row</h2>\n'
              '<p class="si-stamp">Prices checked ' + TODAY + '. '
-             'Both figures are our own '
-             '<a href="' + COST + '">published fee</a>.</p>\n'
+             + p.get('stamp', STAMP) + '</p>\n'
              '<table class="si-tbl"><thead><tr><th scope="col">Item</th>'
              '<th scope="col">' + p['col_a'] + '</th>'
              '<th scope="col">' + p['col_b'] + '</th></tr>'
@@ -503,7 +515,8 @@ def render(p):
              + _rows(p['price_rows']) + '\n' + _rows(p['feature_rows']) + '\n'
              '</tbody></table>\n'
              '<p>' + p['table_note'] + '</p>\n'
-             '<div class="si-info"><p>' + DISCLOSURE + '</p></div>\n'
+             '<div class="si-info"><p>'
+             + p.get('disclosure', DISCLOSURE) + '</p></div>\n'
              '</div></div>\n')
 
     h.append('<div class="si-section"><div class="si-wrap article">\n'

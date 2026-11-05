@@ -75,9 +75,25 @@ if 'including HST' in c:
     bad('rule 9 "including HST" contradicts the standing correction')
 if '$300.00 plus HST per tax year' not in c:
     bad('rule 9 price string missing')
+# Every figure that may appear on an F7 page, and the plan line that states
+# it. Nothing goes in here because a page wants to say it; /paper-t2-vs-efile-t2/
+# needs the two paper charges, and the plan states both.
+MONEY = {
+ '300.00': 'our published fee, hard rule 9',
+ '350.00': 'the gondaliyacpa.ca overflow fee, hard rule 8',
+ '0.00': 'what a nil return reports, plan line 2073',
+ '1,000.00': 'the paper T2 charge, plan lines 169, 393 and 1755',
+ '100.00': 'the per-return preparer charge, same lines',
+}
 for m in re.finditer(r'\$(\d{1,3}(?:,\d{3})*\.\d\d)', c):
-    if m.group(1) not in ('300.00', '350.00'):
+    if m.group(1) not in MONEY:
         bad('unexpected money figure $%s' % m.group(1))
+# Line 1819, QA item 9: the paper charges are stated as $1,000 plus a $100
+# per-return preparer penalty. Either figure alone is the plan's own example
+# of a half-stated fact, so neither may appear without the other.
+if ('$1,000.00' in c) != ('$100.00' in c):
+    bad('line 1819 item 9: the paper charges are stated together or not at '
+        'all, and this page has only one of them')
 # ---- 7.5, byline and stamp ----------------------------------------------
 if 'CPA Ontario Membership 61040184' not in c:
     bad('7.5 rule 3 byline missing')

@@ -744,6 +744,8 @@ for t in TOOLS3:
 # anchor convention to the comparison title, so the anchor is the comparison
 # page's own H1 verbatim. A tool gets no F7 link unless it is named here.
 COMPARE_F7 = {
+ 'nil-t2-eligibility-checker': [(CMP + 'nil-t2-vs-zero-return/',
+   'Nil T2 Return vs Zero Return')],
  'unfiled-years-checker': [(CMP + 'filing-one-year-vs-filing-all-unfiled-years/',
                                    'Filing One Year vs Filing All Unfiled Years')],
  'dissolution-readiness-checker': [(CMP + 'nil-return-vs-final-return/',

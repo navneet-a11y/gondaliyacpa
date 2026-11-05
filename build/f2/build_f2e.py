@@ -1822,6 +1822,8 @@ for t in TOOLS5:
 # anchor convention to the comparison title, so the anchor is the comparison
 # page's own H1 verbatim. A tool gets no F7 link unless it is named here.
 COMPARE_F7 = {
+ 'nil-return-late-penalty-checker': [(CMP + 'paper-t2-vs-efile-t2/',
+   'Paper T2 vs Electronic Filing')],
  'final-t2-return-due-date-calculator': [(CMP + 'nil-return-vs-final-return/',
                                                  'Nil Return vs Final Return')],
  'clearance-certificate-requirement-checker': [(CMP + 'nil-return-vs-final-return/',

@@ -1808,7 +1808,9 @@ for t in TOOLS6:
 # page's own H1 verbatim. A tool gets no F7 link unless it is named here.
 COMPARE_F7 = {
  'nil-gifi-balance-sheet-checker': [(CMP + 't2-short-vs-t2-short-plus-gifi/',
-                                            'T2 Short vs T2 Short plus GIFI')],
+                                            'T2 Short vs T2 Short plus GIFI'),
+                                           (CMP + 'nil-t2-vs-zero-return/',
+   'Nil T2 Return vs Zero Return')],
 }
 for _s in COMPARE_F7:
     assert _s in {t['slug'] for t in TOOLS6}, 'COMPARE_F7 names %s, not in batch' % _s
