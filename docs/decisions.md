@@ -7659,3 +7659,89 @@ The concept pages are now unblocked by the ruling and can be built in order:
 `/answers/can-i-file-a-nil-t2-myself-without-an-accountant/` states that CPA
 preparation "is what the fee buys rather than something the rules demand",
 which is the honest frame for that comparison and keeps it clear of Rule 217.
+
+## 2026-11-05 (later still) -- Family 7 page 10: /compare/diy-vs-cpa-nil-t2/
+
+Appendix A line 3272, live as **ID 1809, 22,461 bytes**, matching its build.
+Family 7 is **10 of 20**, and `nil_comparison` reports 10 published.
+
+### The page in this family most exposed to Rule 217
+
+The obvious way to write it is to imply a corporation needs a CPA. It does
+not, and **our own published answer already says so**, at
+`/answers/can-i-file-a-nil-t2-myself-without-an-accountant/`:
+
+  "What a corporation takes on by filing itself is the GIFI coding, the
+   schedule selection and the year-end accuracy. Our fee covers a CPA
+   preparing and reviewing those and transmitting the return, which is what
+   the fee buys rather than something the rules demand."
+
+That last clause is the page's spine. It is quoted verbatim in the warning
+block, the first comparison row reads "No" on **both** sides to whether the
+rules require a CPA, and the lead section says outright that the page is not
+going to suggest otherwise. The test that matters here is not the gate but
+whether the site agrees with itself: a page selling necessity would contradict
+a live page on the same domain.
+
+**Two of the ten rows deliberately do not differ.** Row 1, the rules do not
+require a CPA. Row 6, electronic filing is mandatory either way for a tax year
+beginning after 2023. Burying those two would be the Rule 217 breach, not any
+individual adjective, so the table note points at them first.
+
+Scanned the built page for implied necessity and disparagement beyond the
+gate's banned list -- "you need a", "risky", "costly mistake", "only a CPA"
+and a dozen more. One hit, "requires a CPA", in both places a negation:
+"Nothing in the rules requires a CPA."
+
+### Both price cells decline, which the ruling permits and nothing else would
+
+We do not sell a self-filing route, so there is no fee of ours for the left
+column, and software prices are a third party's: not published by us, not
+approved, and barred from an F7 page by the money allowlist anyway. Both left
+cells read "Not offered. We file nil T2 returns only", and `check()` holds
+them to carrying no figure.
+
+### Two figures deliberately left off
+
+The $1,000.00 paper charge and the $100.00 preparer charge are not on this
+page. Both routes transmit electronically so neither arises, and the preparer
+charge attaches to "a preparer who files a corporate return on paper where
+electronic filing was required" -- whether a self-filer is within that is not
+something the plan or any live page says. Asserting it either way would be
+inventing law to make a comparison land.
+
+Nothing is said about whether Form T183CORP is used on a self-filed return
+either. The form authorizes a third party to transmit, so the answer is
+probably that it is not, but no page here says so. An unsourced row is worse
+than a missing one.
+
+### A wrong inbound host, caught by the builder
+
+The three inbound links were chosen to mirror the page's own three jobs: GIFI
+coding, year-end accuracy, schedule selection. The first attempt named
+`gifi-schedule-requirement-checker` in `build_f2b.py`'s `COMPARE_F7`, and the
+build refused it: that slug belongs to `build_f2.py`, which carries no map.
+Reverted and replaced with `gifi-schedule-125-checker`, which `build_f2h.py`
+does own. The assertion `for _s in COMPARE_F7: assert _s in TOOLS2` is what
+caught it, which is the second time this week a cheap builder-side assert has
+stopped a bad link reaching live.
+
+Final hosts, three at the line 1529 minimum: the corporate fiscal year-end
+calculator (year-end), the GIFI Schedule 125 checker (GIFI coding) and the
+required schedules checker (schedule selection). `gate_f2_all.py` clear on 85
+pages; all three live pages match their builds.
+
+Ledger **236 items**, `gate_rank_math.py` PASS. Caches cleared. Not loaded in
+a browser, for the same proxy reason as every page this week.
+
+### Family 7: 10 of 20, and what the remaining ten need
+
+Ten left: the **six brand pages**, still waiting on dated competitor published
+prices that this environment cannot fetch and that need approval regardless,
+and **four concept pages** now unblocked by the ruling and buildable in order:
+`/nil-t2-vs-loss-t2/`, `/nil-t2-vs-nil-gst-hst-return/`,
+`/dissolving-vs-filing-nil-every-year/` and
+`/voluntary-disclosure-vs-plain-late-filing/`. Of those,
+`/voluntary-disclosure-vs-plain-late-filing/` is the one to check with Sharad
+before writing: the Voluntary Disclosures Programme is not mentioned anywhere
+in the plan or on the site, so there is no published position to build on.

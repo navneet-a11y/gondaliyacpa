@@ -744,6 +744,8 @@ for t in TOOLS3:
 # anchor convention to the comparison title, so the anchor is the comparison
 # page's own H1 verbatim. A tool gets no F7 link unless it is named here.
 COMPARE_F7 = {
+ 'corporate-fiscal-year-end-calculator': [(CMP + 'diy-vs-cpa-nil-t2/',
+   'DIY Filing vs a CPA-Filed Nil T2')],
  'nil-t2-eligibility-checker': [(CMP + 'nil-t2-vs-zero-return/',
    'Nil T2 Return vs Zero Return')],
  'unfiled-years-checker': [(CMP + 'filing-one-year-vs-filing-all-unfiled-years/',
