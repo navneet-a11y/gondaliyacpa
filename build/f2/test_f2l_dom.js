@@ -67,7 +67,9 @@ function check(slug, vals, want, notWant) {
   if (/<tbody>\s*<\/tbody>/.test(h)) {
     console.log('EMPTY TABLE ' + slug + ' ' + JSON.stringify(vals)); ok = false;
   }
-  if (ok) pass++; else fail++;
+  // (the tally is incremented once, after the tag-balance loop. It was done here
+  // as well until 2026-11-05, so every check counted twice and this suite
+  // reported 42 passed for 21 checks.)
   // A result screen that emits unbalanced table markup passes every text
   // assertion, because text() strips tags. A decoy proved it, so the tags are
   // counted too.
