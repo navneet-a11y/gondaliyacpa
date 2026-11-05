@@ -1,0 +1,177 @@
+[
+ {
+  "kind": "fact",
+  "from": "Regulated professions include medicine (CPSO), law (LSO), accounting (CPA Ontario), and engineering (PEO).",
+  "to": "Regulated professions include medicine (CPSO), dentistry (RCDSO), law (LSO), and accounting (CPA Ontario). Engineers (PEO) practise through a regular corporation that holds a PEO certificate of authorization instead."
+ },
+ {
+  "kind": "fact",
+  "from": "You’ll also pay annual renewal fees to keep it active.",
+  "to": "You’ll also file an annual return, which has no government fee, to keep it active."
+ },
+ {
+  "kind": "fact",
+  "from": "Regulators issue certificates of authorization before you incorporate.",
+  "to": "Regulators issue certificates of authorization after you incorporate, and some approve the name first."
+ },
+ {
+  "kind": "fact",
+  "from": "Professional corporations must use “Professional Corporation” or abbreviations like “P.C.” or “Prof’l Corp.” in their name under OBCA section 3.1(2).",
+  "to": "Professional corporations must use “Professional Corporation” or the French “société professionnelle” in their name under the OBCA; abbreviations are not accepted."
+ },
+ {
+  "kind": "fact",
+  "from": "You need approval through a certificate of authorization.",
+  "to": "You need to meet your regulator’s naming rules, and some regulators approve the name first."
+ },
+ {
+  "kind": "fact",
+  "from": "Without this certificate, the corporate registry rejects your filing and regulators might take action later.",
+  "to": "Without a certificate of authorization, the corporation cannot practise the profession, and regulators might take action later."
+ },
+ {
+  "kind": "typo",
+  "from": "a rule unique to professionalcorporationCanada versus",
+  "to": "a rule unique to professional corporation Canada versus"
+ },
+ {
+  "kind": "typo",
+  "from": "To incorporate as a professionalcorporationCanada,",
+  "to": "To incorporate as a professional corporation Canada,"
+ },
+ {
+  "kind": "typo",
+  "from": "overseeing professionalcorporationCanada.",
+  "to": "overseeing professional corporation Canada."
+ },
+ {
+  "kind": "fact",
+  "from": "certificates of authorization before you register with Ontario Business Registry",
+  "to": "certificates of authorization after you register with Ontario Business Registry"
+ },
+ {
+  "kind": "typo",
+  "from": "throughout operation.*",
+  "to": "throughout operation."
+ },
+ {
+  "kind": "typo",
+  "from": "without such oversight.*",
+  "to": "without such oversight."
+ },
+ {
+  "kind": "typo",
+  "from": "For 2026,*",
+  "to": "For 2026,"
+ },
+ {
+  "kind": "typo",
+  "from": "under professionalcorporationrequirementsCanada.",
+  "to": "under professional corporation requirements Canada."
+ },
+ {
+  "kind": "typo",
+  "from": "unregulated ones.*",
+  "to": "unregulated ones."
+ },
+ {
+  "kind": "editor",
+  "from": "[EDITOR: Please check that all fee amounts are correct as per latest official rates starting January 2026.]",
+  "to": ""
+ },
+ {
+  "kind": "fact",
+  "from": "Engineers\tProfessional Engineers Ontario (PEO)\tProfessional Engineers Act",
+  "to": "Engineers\tProfessional Engineers Ontario (PEO)\tProfessional Engineers Act (a regular corporation holds the certificate; no professional corporation)"
+ },
+ {
+  "kind": "typo",
+  "from": "forming their professionalcorporation. Similarly,",
+  "to": "forming their professional corporation. Similarly,"
+ },
+ {
+  "kind": "typo",
+  "from": "following all professionalcorporationrequirementsCanada.",
+  "to": "following all professional corporation requirements Canada."
+ },
+ {
+  "kind": "fact",
+  "from": "General Corporate Income†\t15\t11\t26",
+  "to": "General Corporate Income†\t15\t11.5\t26.5"
+ },
+ {
+  "kind": "fact",
+  "from": "[^3]: CRA Guide T4010 - CCPC Status",
+  "to": "[^3]: CRA Guide T4012 - CCPC Status"
+ },
+ {
+  "kind": "fact",
+  "from": "[^5]: CRA Interpretation Bulletin ITA Section120(4)",
+  "to": "[^5]: Income Tax Act s125(5.1)"
+ },
+ {
+  "kind": "typo",
+  "from": "T2 Filing\t_Standard CRA process",
+  "to": "T2 Filing\tStandard CRA process"
+ },
+ {
+  "kind": "editor",
+  "from": "Reading time: about 5 minutes",
+  "to": ""
+ },
+ {
+  "kind": "fact",
+  "from": "The name must include “Professional Corporation” or “P.C.”",
+  "to": "The name must include “Professional Corporation” or “société professionnelle”."
+ },
+ {
+  "kind": "fact",
+  "from": "Engineers: Follow Professional Engineers Ontario (PEO) guidelines.",
+  "to": "Engineers: Follow Professional Engineers Ontario (PEO) guidelines and practise through a regular corporation holding a PEO certificate of authorization, since engineers cannot form a professional corporation in Ontario."
+ },
+ {
+  "kind": "fact",
+  "from": "Engineers\tPEO\tYes\tLicensed engineers",
+  "to": "Engineers\tPEO\tYes (for a regular corporation)\tNo professional corporation; a licensed engineer must take responsibility for the engineering work"
+ },
+ {
+  "kind": "typo",
+  "from": "*Subject to regulator approval; see details above.*",
+  "to": "*Subject to regulator approval; see details above."
+ },
+ {
+  "kind": "typo",
+  "from": "between “professionalcorporationvsregularcorporation.”",
+  "to": "between “professional corporation vs regular corporation.”"
+ },
+ {
+  "kind": "typo",
+  "from": "Guidance , Official Resources ,And Regulatory Bodies",
+  "to": "Guidance, Official Resources, And Regulatory Bodies"
+ },
+ {
+  "kind": "typo",
+  "from": "OBCA sections 3 .1–3 .4",
+  "to": "OBCA sections 3.1–3.4"
+ },
+ {
+  "kind": "fact",
+  "from": "Yes, professional corporations pay annual renewal fees to both the provincial registry and their regulatory body.",
+  "to": "Yes, professional corporations pay annual renewal fees to their regulatory body; the Ontario annual return itself has no government fee."
+ },
+ {
+  "kind": "fact",
+  "from": "Yes, holding companies face strict limitations or are prohibited from owning shares in professional corporations depending on regulator rules.",
+  "to": "Yes. In Ontario, every share of a professional corporation must be owned by a licensed member, or by a permitted family member for physicians and dentists, so a holding company cannot own shares; other provinces differ."
+ },
+ {
+  "kind": "fact",
+  "from": "Names must include \"Professional Corporation\" or approved abbreviations and receive approval via a NUANS report before incorporation.",
+  "to": "Names must include \"Professional Corporation\" or \"société professionnelle\", follow the regulator's naming rules, and be checked with a NUANS report before incorporation."
+ },
+ {
+  "kind": "fact",
+  "from": "including updated shareholder details.",
+  "to": "including updated director and officer details."
+ }
+]
