@@ -104,9 +104,13 @@ for t in TOOLS:
     _rel = re.search(r'<ul class="ei-qlist">(.*?)</ul>', _body, re.S)
     if not _rel:
         bad('no Read Next list')
-    elif _rel.group(1).count('<li>') != STRUCTURE['related']:
-        bad('%d Read Next links, the contract is %d'
-            % (_rel.group(1).count('<li>'), STRUCTURE['related']))
+    else:
+        _n = _rel.group(1).count('<li>')
+        _cmp = _rel.group(1).count('/compare/')
+        if _n != STRUCTURE['related'] + _cmp:
+            bad('%d Read Next links (%d of them comparisons), the contract is '
+                '%d plus any mapped comparison link'
+                % (_n, _cmp, STRUCTURE['related']))
     if c.count('<span class="ei-hero-tag">') != STRUCTURE['tags']:
         bad('%d hero tags, the contract is %d'
             % (c.count('<span class="ei-hero-tag">'), STRUCTURE['tags']))
