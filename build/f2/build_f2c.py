@@ -751,7 +751,9 @@ COMPARE_F7 = {
  'unfiled-years-checker': [(CMP + 'filing-one-year-vs-filing-all-unfiled-years/',
                                    'Filing One Year vs Filing All Unfiled Years')],
  'dissolution-readiness-checker': [(CMP + 'nil-return-vs-final-return/',
-                                           'Nil Return vs Final Return')],
+                                           'Nil Return vs Final Return'),
+                                          (CMP + 'dissolving-vs-filing-nil-every-year/',
+                                           'Dissolving vs Filing Nil Every Year')],
 }
 for _s in COMPARE_F7:
     assert _s in {t['slug'] for t in TOOLS3}, 'COMPARE_F7 names %s, not in batch' % _s

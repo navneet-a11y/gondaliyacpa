@@ -7873,3 +7873,81 @@ should not be written here. The Voluntary Disclosures Programme appears nowhere
 in the plan and nowhere on the site, so the page would mean stating how a CRA
 programme works from scratch, with no published position to agree with. That
 one is for Sharad Gondaliya to rule on, like the price column before it.
+
+## 2026-11-05 (last of the day) -- F7 page 13, and a silent dict bug caught
+
+Live as **ID 1830, 23,440 bytes**, matching its build. `nil_comparison` reports
+**13 published**, so Family 7 is **13 of 20**. It is the last concept page
+buildable from published material.
+
+### The page where the site's own interest points the wrong way
+
+This service sells a nil return for every year a corporation stays open. A page
+arguing for dissolution argues against its own revenue; a page arguing for
+keeping the corporation sells a subscription. So the page takes neither side,
+and the live `/tools/dissolve-or-keep-filing-cost-calculator/` had already
+worked out how, in its own words:
+
+  "The returns are priced here, so the cost of staying open totals exactly.
+   Winding up involves a clearance certificate request and the registry
+   articles of dissolution, and neither is covered by this fee."
+  "So the comparison names those steps rather than putting a figure on them. A
+   page that invented a total for the dissolution side would be more
+   satisfying to read and less use to rely on."
+
+Both sentences are on the page. The second price row names those two steps
+instead of pricing them, which is the tool's reasoning rather than the November
+5 decline rule being stretched. The warning block carries the other half:
+"Keeping an empty corporation is often the right decision. There are good
+reasons to hold a name, a history or a registration."
+
+Checked after building that no recommendation wording appears -- no "we
+recommend", no "better to dissolve", no "best to keep". The only money figures
+are $300.00 and $350.00, and no registry fee is quoted, because the guide says
+a federal dissolution carries "its own fee" and a provincial one "depends on
+the province" without stating either.
+
+### A duplicate dict key would have silently dropped a link
+
+Wiring the inbound links, I added `'dissolution-readiness-checker'` to
+`build_f2c.py`'s `COMPARE_F7` -- and that key was **already there**. Python
+dict literals let the last duplicate win, silently, so my new entry was
+overwritten and the comparison link would have vanished with no error
+anywhere. The build succeeded. Only a pre-flight key check caught it.
+
+Fixed by merging into the existing entry, so that tool now carries two
+comparison links. And because no runtime assert can ever catch this -- the
+duplicate is gone before the dict exists -- added
+**`build/f2/lint_compare_f7.py`**, which reads the source of every
+`build_f2*.py`, extracts each `COMPARE_F7` block and fails on a repeated key.
+Current state: 7 maps, 28 keys, no duplicates.
+
+This is the third time this week a cheap pre-flight check has stopped a bad
+link reaching live, and the first where the builder itself could not have.
+
+### Inbound and ledger
+
+Three inbound at the line 1529 minimum: the dissolve-or-keep cost calculator,
+the dissolution readiness checker and the involuntary dissolution checker.
+`gate_f2_all.py` clear on 85 pages; all three live pages match their builds.
+Ledger **239 items**, `gate_rank_math.py` PASS. Caches cleared. Not loaded in a
+browser, same proxy reason all week.
+
+### Family 7 is now 13 of 20, and nothing further is buildable here
+
+Seven left, none of them available to me:
+
+- **Six brand pages** (BluePeak, TurboTax, T2inc, TaxDeep, H&R Block,
+  CloudTax). Each needs a dated competitor published price with a screenshot
+  per line 1215. This environment's network policy denies competitor sites, so
+  they cannot be captured here at any effort, and every competitor page needs
+  approval before going live in any case.
+- **`/voluntary-disclosure-vs-plain-late-filing/`**. The Voluntary Disclosures
+  Programme appears nowhere in the plan and nowhere on the site. Writing it
+  would mean stating how a CRA programme works with no published position to
+  agree with, which is the thing every other page this week was careful not to
+  do. For Sharad Gondaliya to rule on.
+
+So F7 work stops here until one of those two unblocks. The open deadline is
+the blog: 28 posts behind, with the November 6 batch's Thursday sign-off now
+passed.
