@@ -1,0 +1,669 @@
+<style>.gcpa-post{--navy:#0f2a4a;--navy-2:#15355c;--blue:#1c6dd0;--blue-soft:#e8f1fc;--teal:#0c8f8f;--teal-soft:#e3f4f4;--gold:#c9991f;--gold-soft:#fbf3dc;--green:#1f8a4c;--green-soft:#e6f5ec;--red:#c0392b;--red-soft:#fbeae8;--ink:#1d2733;--muted:#5a6b7b;--line:#d8e0e8;--bg:#ffffff;--bg-alt:#f5f8fb;--radius:14px;--shadow:0 6px 22px rgba(15,42,74,.08);--shadow-lg:0 14px 40px rgba(15,42,74,.14);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);line-height:1.7;font-size:17px;max-width:1080px;margin:0 auto;padding:0 18px 60px;} .gcpa-post *{box-sizing:border-box;} .gcpa-hero{background:linear-gradient(135deg,var(--navy) 0%,var(--navy-2) 60%,#1c4a78 100%);color:#fff;border-radius:20px;padding:46px 40px 42px;margin:26px 0 34px;position:relative;overflow:hidden;} .gcpa-hero::after{content:"";position:absolute;right:-80px;top:-80px;width:280px;height:280px;z-index:0;background:radial-gradient(circle,rgba(28,109,208,.45),transparent 70%);} .gcpa-post .gcpa-eyebrow{display:inline-block;font-size:13px;letter-spacing:1.4px;text-transform:uppercase;font-weight:700;color:#cfe2f8 !important;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.3);padding:7px 15px;border-radius:30px;margin-bottom:18px;} .gcpa-post .gcpa-hero h1{font-size:34px;line-height:1.25;margin:0 0 16px;font-weight:800;color:#fff !important;letter-spacing:-.3px;position:relative;z-index:2;} .gcpa-post .gcpa-hero p{font-size:18px;color:#eaf3fc !important;margin:0;max-width:760px;position:relative;z-index:2;} .gcpa-eyebrow{position:relative;z-index:2;} .gcpa-post h2{font-size:27px;font-weight:800;color:var(--navy);line-height:1.3;margin:48px 0 18px;padding-bottom:14px;border-bottom:3px solid var(--blue-soft);letter-spacing:-.2px;position:relative;} .gcpa-post h2::after{content:"";position:absolute;left:0;bottom:-3px;width:70px;height:3px;background:var(--blue);} .gcpa-post h3{font-size:22px;font-weight:800;color:var(--navy-2);margin:40px 0 14px;line-height:1.35;} .gcpa-post h4{font-size:19px;font-weight:700;color:var(--navy-2);margin:36px 0 12px;line-height:1.4;padding-left:16px;border-left:4px solid var(--teal);} .gcpa-post p{margin:0 0 16px;color:#1d2733 !important;} .gcpa-post li{color:#1d2733;} .gcpa-post a{color:var(--blue);text-decoration:none;font-weight:600;} .gcpa-post a:hover{text-decoration:underline;} .gcpa-post ul,.gcpa-post ol{margin:0 0 18px !important;padding-left:0 !important;list-style:none !important;} .gcpa-post ul{list-style-type:none !important;} .gcpa-post ul li{position:relative;padding:8px 0 8px 34px;margin:0;border-bottom:1px solid var(--line);color:var(--ink);list-style:none !important;list-style-type:none !important;} .gcpa-post ul li::marker{content:"" !important;font-size:0 !important;} .gcpa-post ul li:last-child{border-bottom:none;} .gcpa-post ul li::before{content:"";position:absolute;left:6px;top:15px;width:9px;height:9px;border-radius:2px;background:var(--teal);transform:rotate(45deg);} .gcpa-post ol{counter-reset:gcpa;} .gcpa-post ol li{position:relative;padding:10px 0 10px 44px;margin:0 0 10px;counter-increment:gcpa;list-style:none !important;list-style-type:none !important;} .gcpa-post ol li::marker{content:"" !important;font-size:0 !important;} .gcpa-post ol li::before{content:counter(gcpa);position:absolute;left:0;top:9px;width:28px;height:28px;border-radius:8px;background:var(--navy);color:#fff;font-weight:700;font-size:14px;display:flex;align-items:center;justify-content:center;} .gcpa-post .wp-block-table,.gcpa-post figure.wp-block-table{margin:22px 0 26px;overflow-x:auto;} .gcpa-post table{width:100%;border-collapse:collapse;font-size:15.5px;background:#fff;border:1px solid var(--navy);border-radius:10px;overflow:hidden;box-shadow:var(--shadow);} .gcpa-post thead th{background:var(--navy);color:#fff;text-align:left;padding:13px 15px;font-weight:700;font-size:15px;border:1px solid var(--navy-2);} .gcpa-post tbody td{padding:12px 15px;border:1px solid var(--line);vertical-align:top;color:var(--ink);} .gcpa-post tbody tr:nth-child(even){background:var(--bg-alt);} .gcpa-post tbody tr:hover{background:var(--blue-soft);} .gcpa-post tbody td:first-child{font-weight:600;color:var(--navy-2);} .gcpa-metrics{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin:30px 0 36px;clear:both;} .gcpa-metric{background:#fff;border:1px solid var(--line);border-top:4px solid var(--blue);border-radius:var(--radius);padding:22px 18px;box-shadow:var(--shadow);transition:transform .2s,box-shadow .2s;} .gcpa-metric:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg);} .gcpa-metric:nth-child(2){border-top-color:var(--teal);} .gcpa-metric:nth-child(3){border-top-color:var(--gold);} .gcpa-metric:nth-child(4){border-top-color:var(--green);} .gcpa-metric .ic{width:46px;height:46px;border-radius:11px;background:var(--blue-soft);display:flex;align-items:center;justify-content:center;margin-bottom:14px;color:var(--blue);} .gcpa-metric:nth-child(2) .ic{background:var(--teal-soft);color:var(--teal);} .gcpa-metric:nth-child(3) .ic{background:var(--gold-soft);color:var(--gold);} .gcpa-metric:nth-child(4) .ic{background:var(--green-soft);color:var(--green);} .gcpa-metric .big{font-size:22px;font-weight:800;color:var(--navy);line-height:1.2;margin-bottom:4px;} .gcpa-metric .lbl{font-size:14px;color:var(--muted);line-height:1.45;} .gcpa-numhead{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin:46px 0 8px;clear:both;} .gcpa-numhead h4{margin:0 !important;} .gcpa-numhead .gcpa-pill{margin:0 !important;} .gcpa-numhead .num{flex:0 0 auto;width:48px;height:48px;border-radius:12px;background:var(--navy);color:#fff;font-size:22px;font-weight:800;display:flex;align-items:center;justify-content:center;box-shadow:var(--shadow);} .gcpa-callout{border-radius:var(--radius);padding:20px 22px;margin:22px 0;border:1px solid var(--line);background:var(--bg-alt);position:relative;} .gcpa-callout.blue{background:var(--blue-soft);border-color:#bcd9f6;} .gcpa-callout.teal{background:var(--teal-soft);border-color:#b7e3e3;} .gcpa-callout.gold{background:var(--gold-soft);border-color:#ecd79a;} .gcpa-callout.green{background:var(--green-soft);border-color:#b6e2c6;} .gcpa-callout.red{background:var(--red-soft);border-color:#f0c4be;} .gcpa-callout .co-tag{display:inline-block;font-size:12.5px;font-weight:700;letter-spacing:.6px;text-transform:uppercase;padding:4px 11px;border-radius:20px;margin-bottom:10px;color:#fff;} .gcpa-callout.blue .co-tag{background:var(--blue);} .gcpa-callout.teal .co-tag{background:var(--teal);} .gcpa-callout.gold .co-tag{background:var(--gold);} .gcpa-callout.green .co-tag{background:var(--green);} .gcpa-callout.red .co-tag{background:var(--red);} .gcpa-callout p:last-child{margin-bottom:0;} .gcpa-cta{background:linear-gradient(135deg,var(--navy) 0%,#1c4a78 100%);color:#fff;border-radius:18px;padding:34px 32px;margin:38px 0;text-align:center;box-shadow:var(--shadow-lg);position:relative;overflow:hidden;} .gcpa-cta::before{content:"";position:absolute;left:-60px;bottom:-60px;width:220px;height:220px;background:radial-gradient(circle,rgba(12,143,143,.4),transparent 70%);} .gcpa-post .gcpa-cta h4{color:#fff !important;border:none;padding:0;margin:0 0 12px;font-size:22px;font-weight:800;position:relative;z-index:1;} .gcpa-post .gcpa-cta p{color:#eaf3fc !important;max-width:680px;margin:0 auto 22px;position:relative;z-index:1;} .gcpa-post .gcpa-cta .btn{display:inline-block;background:#fff !important;color:var(--navy) !important;font-weight:700;padding:13px 26px;border-radius:30px;margin:6px;font-size:16px;position:relative;z-index:1;transition:transform .15s;text-decoration:none !important;} .gcpa-post .gcpa-cta .btn:hover{transform:translateY(-2px);text-decoration:none !important;} .gcpa-post .gcpa-cta .btn.primary{background:var(--teal) !important;color:#fff !important;} .gcpa-btnrow{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;align-items:center;position:relative;z-index:1;} .gcpa-trust{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-bottom:22px;position:relative;z-index:1;} .gcpa-post .gcpa-trust span{font-size:13px;font-weight:700;background:rgba(255,255,255,.18) !important;border:1px solid rgba(255,255,255,.45);padding:7px 14px;border-radius:20px;color:#ffffff !important;} .gcpa-post svg{display:block;} .gcpa-pill{display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:700;padding:8px 16px;border-radius:30px;margin:10px 0 6px;line-height:1.2;} .gcpa-pill svg{width:16px;height:16px;flex:0 0 auto;} .gcpa-pill.green{background:var(--green-soft);color:var(--green);border:1px solid #b6e2c6;} .gcpa-pill.blue{background:var(--blue-soft);color:var(--blue);border:1px solid #bcd9f6;} .gcpa-pill.teal{background:var(--teal-soft);color:var(--teal);border:1px solid #b7e3e3;} .gcpa-pill.gold{background:var(--gold-soft);color:#9a7416;border:1px solid #ecd79a;} .gcpa-pill.red{background:var(--red-soft);color:var(--red);border:1px solid #f0c4be;} .gcpa-pillhead{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin:38px 0 12px;clear:both;} .gcpa-pillhead h4{margin:0 !important;} .gcpa-pillhead .gcpa-pill{margin:0 !important;} @media(max-width:560px){.gcpa-pillhead{gap:8px;}} .gcpa-toc{background:var(--bg-alt);border:1px solid var(--line);border-left:5px solid var(--blue);border-radius:var(--radius);padding:24px 26px;margin:30px 0 36px;box-shadow:var(--shadow);} .gcpa-toc h5{margin:0 0 14px;font-size:16px;font-weight:800;color:var(--navy);letter-spacing:.4px;text-transform:uppercase;display:flex;align-items:center;gap:9px;} .gcpa-toc h5 svg{width:20px;height:20px;color:var(--blue);} .gcpa-toc ol{counter-reset:toc;margin:0 !important;padding:0 !important;columns:2;column-gap:36px;list-style:none !important;} .gcpa-toc ol li{counter-increment:toc;position:relative;padding:7px 0 7px 30px;margin:0;border-bottom:1px dashed var(--line);break-inside:avoid;list-style:none !important;} .gcpa-toc ol li::before{content:counter(toc);position:absolute;left:0;top:7px;width:21px;height:21px;border-radius:6px;background:var(--blue-soft);color:var(--blue);font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;} .gcpa-toc ol li::marker{content:"" !important;font-size:0 !important;} .gcpa-toc a{color:var(--navy-2);font-weight:600;font-size:15px;} .gcpa-toc a:hover{color:var(--blue);} .gcpa-post [id^="toc-"]{scroll-margin-top:90px;} .gcpa-banner{display:block;background:linear-gradient(135deg,#0d3b66 0%,#0c7a7a 100%);color:#fff;border-radius:16px;padding:30px 32px;margin:36px 0;box-shadow:var(--shadow-lg);} .gcpa-banner .bt{font-size:20px;font-weight:800;line-height:1.45;margin:0 0 20px;max-width:760px;} .gcpa-banner .bb{display:flex;flex-wrap:wrap;gap:14px;align-items:center;} .gcpa-banner a{display:inline-block;background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.6);color:#fff !important;font-weight:700;padding:13px 24px;border-radius:30px;font-size:15px;text-decoration:none !important;} .gcpa-banner a.solid{background:#ffffff !important;color:#0d3b66 !important;border-color:#fff;} .gcpa-disclaimer{background:var(--bg-alt);border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:34px 0 10px;font-size:14.5px;color:var(--muted);line-height:1.6;} .gcpa-disclaimer strong{color:var(--navy-2);} .gcpa-byline{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin:0 0 22px;font-size:15px;} .gcpa-byline .av{width:42px;height:42px;border-radius:50%;background:var(--navy);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:16px;flex:0 0 auto;} .gcpa-byline .nm{font-weight:700;color:var(--navy-2);} .gcpa-byline .rl{color:var(--teal);font-weight:700;} .gcpa-byline .sep{color:var(--line);} .gcpa-author{display:flex;gap:18px;align-items:flex-start;background:var(--bg-alt);border:1px solid var(--line);border-left:5px solid var(--teal);border-radius:14px;padding:24px 26px;margin:34px 0 40px;} .gcpa-author .ava{width:64px;height:64px;border-radius:50%;background:linear-gradient(135deg,var(--navy),var(--teal));color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:22px;flex:0 0 auto;} .gcpa-author .info h5{margin:0 0 6px;font-size:17px;font-weight:800;color:var(--navy);line-height:1.4;} .gcpa-author .info .role{font-size:14px;color:var(--teal);font-weight:700;margin:0 0 12px;} .gcpa-author .info p{font-size:14.5px;color:var(--muted) !important;margin:0;line-height:1.65;} .gcpa-faq{margin:18px 0 26px;border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:var(--shadow);} .gcpa-faq details{border-bottom:1px solid var(--line);background:#fff;} .gcpa-faq details:last-child{border-bottom:none;} .gcpa-faq summary{list-style:none;cursor:pointer;padding:18px 22px;font-weight:700;color:var(--navy-2);font-size:16px;display:flex;justify-content:space-between;align-items:center;gap:14px;transition:background .15s;} .gcpa-faq summary::-webkit-details-marker{display:none;} .gcpa-faq summary:hover{background:var(--bg-alt);} .gcpa-faq summary .pl{flex:0 0 auto;width:24px;height:24px;border-radius:50%;background:var(--blue-soft);color:var(--blue);display:flex;align-items:center;justify-content:center;font-size:18px;font-weight:700;transition:transform .2s;} .gcpa-faq details[open] summary{background:var(--bg-alt);color:var(--navy);} .gcpa-faq details[open] summary .pl{transform:rotate(45deg);background:var(--blue);color:#fff;} .gcpa-faq .ans{padding:0 22px 20px;color:#1d2733;font-size:15.5px;line-height:1.7;} .gcpa-img-right{float:right;max-width:250px;width:32%;margin:6px 0 24px 28px;border-radius:12px;box-shadow:var(--shadow-lg);border:1px solid var(--line);} .gcpa-img-right img{display:block;width:100%;height:auto;border-radius:12px;} @media(max-width:560px){.gcpa-img-right{float:none;width:70%;max-width:260px;margin:14px auto 18px;}} .gcpa-closing{font-size:24px;font-weight:800;color:var(--navy);margin:48px 0 14px;padding-bottom:12px;border-bottom:3px solid var(--teal-soft);position:relative;} .gcpa-closing::after{content:"";position:absolute;left:0;bottom:-3px;width:70px;height:3px;background:var(--teal);} @media(max-width:560px){.gcpa-post{font-size:16px;} .gcpa-hero{padding:32px 22px;} .gcpa-hero h1{font-size:26px;} .gcpa-post h2{font-size:23px;} .gcpa-cta{padding:26px 20px;} .gcpa-banner .bb{width:100%;} .gcpa-banner .bb a{flex:1 1 auto;text-align:center;}}</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"Open Corporation for $35","alternateName":"Open Corporation For $35","url":"https://opencorporationfor35.ca/","description":"Open Corporation for $35 is a department of Gondaliya CPA.","parentOrganization":{"@type":"Organization","name":"Gondaliya CPA Professional Corporation","url":"https://gondaliyacpa.ca","identifier":"CPA Ontario Firm Registration 61330051"},"telephone":"+1-647-212-9559","email":"info@gondaliyacpa.ca","areaServed":"CA","openingHours":"Mo-Su 09:00-20:30","award":"Xero Partner Award Winner 2026","aggregateRating":{"@type":"AggregateRating","ratingValue":"5","reviewCount":"1300"}}
+</script>
+<div class="gcpa-post">
+<div class="gcpa-hero" style="background:linear-gradient(135deg,#0f2a4a 0%,#15355c 60%,#1c4a78 100%) !important;">
+<span class="gcpa-eyebrow">Corporate Names · NUANS · Ontario · Federal · 2026</span>
+<h1 style="color:#ffffff !important;position:relative;z-index:2;font-size:34px;line-height:1.25;font-weight:800;margin:0 0 14px;">Numbered Company or Named Company?</h1>
+<div class="gcpa-hero-sub" style="margin:0 0 18px;"><span style="color:#eaf3fc !important;font-size:18px;line-height:1.6;display:block;max-width:840px;position:relative;z-index:2;">How each name type works, what a NUANS report does and does not do, what each one costs, and why a number gives you no extra privacy</span></div>
+<div style="position:relative;z-index:2;font-size:15px;line-height:1.5;"><span style="color:#ffffff;font-weight:bold;">By Sharad Gondaliya, CPA</span><span style="color:#9fd0d0;font-weight:bold;">  |  <a href="https://opencorporationfor35.ca/">Open Corporation For $35</a> and <a href="https://opencorporationfor35.ca/address-service-100/">Address Service</a></span></div>
+<div style="position:relative;z-index:2;font-size:14.5px;line-height:1.5;margin-top:12px;"><span style="color:#cfe2f8 !important;font-weight:600;">Open Corporation for $35 is a department of Gondaliya CPA.</span></div>
+</div>
+<h2>Numbered Company vs Named Company: Understanding Numbered Corporation Canada and Named Corporation Canada for Corporate Name Registration</h2>
+<p><strong>Open Corporation for $35 is a department of Gondaliya CPA.</strong> Numbered company vs named company are common options when registering a corporation in Canada, each with distinct benefits related to corporate name registration Canada and business name approval Canada. Knowing the difference between numbered corporation Canada and named corporation Canada, along with using NUANS name search, helps simplify choosing a corporate name Canada with <a href="https://opencorporationfor35.ca/incorporation-service-35/">Open Corporation for $35</a>.</p>
+<h3 id="toc-summary" style="margin-top:38px;">Quick Summary</h3>
+<p>A numbered company takes the number the registry assigns and needs no NUANS report. A named company needs a NUANS report and a name that passes review. Both pay the same government fee, are taxed the same way, and list their directors publicly.</p>
+<figure class="wp-block-table">
+<table>
+<thead><tr><th>Aspect</th><th>Details</th></tr></thead>
+<tbody>
+<tr><td>Ontario numbered format</td><td>1234567 Ontario Inc.</td></tr>
+<tr><td>Federal numbered format</td><td>12345678 Canada Inc.</td></tr>
+<tr><td>NUANS report</td><td>Needed for a named company only, valid 90 days. A <a href="https://opencorporationfor35.ca/nuans-report-20/">NUANS report from us</a> is $25.</td></tr>
+<tr><td>Government filing fee</td><td>$300 Ontario or $200 federal, the same for numbered and named.</td></tr>
+<tr><td>Privacy</td><td>None gained. Directors are public either way.</td></tr>
+<tr><td>Adding a name later</td><td>Articles of amendment, $150 in Ontario.</td></tr>
+<tr><td>Operating name</td><td>Ontario business name registration, $60 for five years.</td></tr>
+</tbody>
+</table>
+</figure>
+<div class="gcpa-author">
+<div class="ava" style="background:linear-gradient(135deg,#0f2a4a,#0c8f8f) !important;color:#ffffff !important;">SG</div>
+<div class="info">
+<h5>Author: Sharad Gondaliya, CPA (Canada &amp; USA) — Founder &amp; Managing Director, Gondaliya CPA Professional Corporation, Toronto, Ontario.</h5>
+<div class="role">Reviewed and fact-checked by Sharad Gondaliya, CPA (Canada &amp; USA)</div>
+<p style="font-size:14.5px;color:#15355c !important;font-weight:700;margin:0 0 8px;">Open Corporation for $35 is a department of Gondaliya CPA.</p>
+<p>Gondaliya CPA is a Toronto-based team providing incorporation, CRA registrations, corporate tax, bookkeeping, GST/HST, and payroll for Canadian corporations. Verify our firm on the <a href="https://www.cpaontario.ca/protecting-the-public/directories/firm/gondaliya-5sqvmj">CPA Ontario public firm directory</a>, firm registration 61330051.</p>
+<p style="font-size:13.5px;color:#15355c !important;font-weight:700;margin-top:10px;">CPA Ontario | CPA USA (Washington &amp; Montana) | Xero Partner Award Winner 2026 | 1300+ 5-star Google reviews</p>
+</div>
+</div>
+<p style="font-size:14px;color:#5a6b7b;margin:-26px 0 26px;">Reading time: 27 minutes.</p>
+<div class="gcpa-toc">
+<h5>Table of Contents</h5>
+<ol>
+<li><a href="#toc-overview">Naming Overview</a></li>
+<li><a href="#toc-types">Numbered and Named Defined</a></li>
+<li><a href="#toc-process">Process, Costs and Branding</a></li>
+<li><a href="#toc-legal">Legal, Tax and Privacy</a></li>
+<li><a href="#toc-convert">Converting and Protecting Your Name</a></li>
+<li><a href="#toc-resources">Resources and Summary</a></li>
+<li><a href="#toc-faq">Frequently Asked Questions</a></li>
+<li><a href="#toc-points">Essential Points and Quick Reference</a></li>
+</ol>
+</div>
+<span class="gcpa-pill green">The Numbers That Matter</span>
+<div class="gcpa-metrics">
+<div class="gcpa-metric">
+<div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></div>
+<div class="big">90 days</div>
+<div class="lbl">NUANS report validity</div>
+</div>
+<div class="gcpa-metric">
+<div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+<div class="big">$300</div>
+<div class="lbl">Ontario filing fee, numbered or named</div>
+</div>
+<div class="gcpa-metric">
+<div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
+<div class="big">$150</div>
+<div class="lbl">Ontario articles of amendment to add a name later</div>
+</div>
+<div class="gcpa-metric">
+<div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+<div class="big">$60</div>
+<div class="lbl">Ontario business name, valid five years</div>
+</div>
+</div>
+<div class="gcpa-callout blue">
+<span class="co-tag">Scope &amp; Assumptions</span>
+<p>This article covers Ontario and federal corporate names as they stand in 2026, in Canadian dollars. Other provinces have their own name rules and fees. This is educational information only and not tax, legal, or financial advice, and a corporate name is not a trademark. Please speak with a CPA about the corporation and a trademark agent about your brand before you act.</p>
+</div>
+
+<h2>Naming a Corporation in Canada: Overview</h2>
+<div class="gcpa-numhead">
+<div class="num" style="background:#0f2a4a !important;color:#ffffff !important;">1</div>
+<h4 id="toc-overview" style="border:none;padding:0;margin:0;">Naming Overview</h4>
+<span class="gcpa-pill blue">The Basics</span>
+</div>
+<p>Starting a business in Canada means choosing a name for your corporation. You can pick either a numbered company or a named company. This choice matters because it affects how your brand looks, legal rules you follow, and how you run your business. Knowing the difference helps <a href="https://opencorporationfor35.ca/guides/how-to-incorporate-in-canada/">founders and solo owners who want to incorporate</a>.</p>
+<h3>Types of Corporate Names: Numbered vs Named Corporation</h3>
+<p>In Canada, companies mostly have two types of names: numbered corporation Canada and named corporation Canada.</p>
+<ul>
+<li><strong>Numbered Corporations:</strong> These get a number as their official name, like 1234567 Ontario Inc. They are quick to set up since you skip some name approval steps.</li>
+<li><strong>Named Corporations:</strong> These pick a unique name that shows what the business does or its brand, such as “Tech Innovations Inc.” You must check if the name is free using a <a href="https://opencorporationfor35.ca/guides/nuans-name-search/">NUANS report</a> before registering.</li>
+</ul>
+<p>Your choice depends on how fast you want to register, whether you want privacy, and your plans for branding later.</p>
+<h3>Legal Requirements for Corporate Name Registration in Canada</h3>
+<p>Rules for naming differ if you register federally or provincially. In Ontario:</p>
+<ul>
+<li><strong>Numbered Companies:</strong> No NUANS report needed. But they must add “Inc.” or “Ltd.” at the end.</li>
+<li><strong>Named Companies:</strong> Need review for uniqueness and clarity by the registrar. A NUANS search proves no other similar businesses exist.</li>
+</ul>
+<p>Both must follow laws from the <a href="https://opencorporationfor35.ca/how-to-incorporate-in-ontario/">Ontario Business Corporations Act (OBCA)</a> or the Canada Business Corporations Act (CBCA). So, whether you choose a numbered company or named company, legal rules apply.</p>
+<h3>Language Options for Corporate Names: English, French, or Both</h3>
+<p>You can register your corporate name in English, French, or both languages.</p>
+<ul>
+<li>If your market is mainly Quebec or bilingual clients across Canada, consider using both languages.</li>
+<li>If you operate where one language is common—like most of Ontario—you can pick just English.</li>
+</ul>
+<p>Your choice affects legal compliance and how customers see and access your business across <a href="https://opencorporationfor35.ca/guides/extra-provincial-registration/">different parts of Canada</a>.</p>
+<p>Knowing these basics about naming a corporation in Canada—whether it's a numbered company or named company—helps you start off right and stay within legal boundaries.</p>
+
+<h2>What Is a Numbered Company in Canada?</h2>
+<div class="gcpa-numhead">
+<div class="num" style="background:#0f2a4a !important;color:#ffffff !important;">2</div>
+<h4 id="toc-types" style="border:none;padding:0;margin:0;">Numbered and Named Defined</h4>
+<span class="gcpa-pill teal">Definitions</span>
+</div>
+<p>A numbered company in Canada is a corporation that uses a number instead of a regular business name. The government assigns this number when you file the paperwork. For example, in Ontario, you might see "1234567 Ontario Inc." and <a href="https://opencorporationfor35.ca/incorporate-federally-in-canada/">federally</a>, it could be "12345678 Canada Inc."</p>
+<p>Numbered companies don’t need to get their names approved first. The number itself acts as the legal name, so there’s no need for a NUANS report. The numbers get handed out in order when you submit your incorporation papers.</p>
+<p>These companies work the same way as named corporations for taxes and legal stuff. They still have to follow all the rules and use words like “Inc.” or “Ltd.” at the end of their names.</p>
+<p>You’d pick a numbered company or named company depending on your needs — maybe you want fast setup, less hassle, or privacy.</p>
+<div class="gcpa-callout blue">
+<span class="co-tag">Worth Knowing</span>
+<p>A numbered company can still trade under a brand. Register an operating name with Ontario for $60, valid five years, and show the corporation's legal name alongside it on contracts and invoices.</p>
+</div>
+<h3>What Is a Named Corporation in Canada?</h3>
+<p>A named corporation picks its own unique business name. When you incorporate in Ontario or federally, you send your name choice for approval before registering.</p>
+<p>Here are some naming rules:</p>
+<ul>
+<li>You must add legal endings like Inc. or Ltd.</li>
+<li>Some words can’t be used unless you get special permission</li>
+<li>The name has to stand out so it doesn’t confuse people</li>
+</ul>
+<p>Named corporations need a <a href="https://opencorporationfor35.ca/named-company-incorporation-nuans/">NUANS report</a> to check if the name is taken or too close to others. This report is needed for both Ontario and federal setups but doesn’t guarantee approval.</p>
+<p>Starting with a named corporation means your brand is clear from day one. But it takes more steps and time because of the name checks.</p>
+<h3>Key Differences Between Numbered and Named Corporations</h3>
+<figure class="wp-block-table">
+<table>
+<thead><tr><th>Factor</th><th>Numbered Corporation Canada</th><th>Named Corporation Canada</th><th>Practical Effect</th></tr></thead>
+<tbody>
+<tr><td>Name Format</td><td>Number + jurisdiction + legal word (e.g., 1234567 Ontario Inc.)</td><td>Chosen name + legal word</td><td>Simple vs brand identity</td></tr>
+<tr><td>Name Approval</td><td>Automatic; no review needed</td><td>Must be reviewed and approved</td><td>Faster setup vs control over name</td></tr>
+<tr><td>NUANS Report Requirement</td><td>No</td><td>Yes</td><td>Extra step for named corporations</td></tr>
+<tr><td>Branding</td><td>Minimal initially</td><td>Strong brand from start</td><td>Marketing benefit</td></tr>
+<tr><td>Privacy</td><td>Directors’ info public anyway</td><td>Same public disclosure</td><td>No real privacy advantage</td></tr>
+<tr><td>Cost</td><td>Lower upfront fees related to naming</td><td>Higher fees due to NUANS reports</td><td>Budget matters</td></tr>
+</tbody>
+</table>
+</figure>
+<p><strong>Verdict:</strong> If you want quick setup and less cost, go numbered company. If branding early is key, then choose named corporation despite extra steps.</p>
+<h3>Understanding NUANS Name Search for Named Corporations</h3>
+<p>NUANS stands for Newly Upgraded Automated Name Search. It checks your proposed corporate name against existing ones across Canada. This helps avoid copying or confusion.</p>
+<p>Here’s what to know about NUANS:</p>
+<ul>
+<li><strong>Ontario Incorporation:</strong> You must get an Ontario-focused NUANS report unless you’re using a numbered company.<sup>1</sup></li>
+<li><strong>Federal Incorporation:</strong> Requires a national NUANS report covering all provinces.<sup>2</sup></li>
+<li><strong>Validity:</strong> The report lasts 90 calendar days after issue.<sup>3</sup> You’ll need a new one if it expires before filing.</li>
+<li><strong>Limitations:</strong> It checks many corporate and trademark databases,<sup>4</sup> but doesn’t guarantee your name is fully unique or safe from unregistered names.</li>
+</ul>
+<p>Make sure you check the <a href="https://opencorporationfor35.ca/pricing/">current NUANS report fee</a> (for example, in 2026) so you budget right when planning incorporation.</p>
+<p><strong>Verdict:</strong> Get an up-to-date NUANS report if picking a named corporation. Remember though—it just helps identify risks but never guarantees approval.</p>
+<div style="font-size:13px;color:#5a6b7b;border-top:1px solid #e3e9f0;padding-top:10px;margin:18px 0 24px;">
+<p style="margin:0 0 4px;">1 Business Corporations Act (Ontario), R.S.O. 1990 c.B16 s10(2)</p>
+<p style="margin:0 0 4px;">2 Canada Business Corporations Act S.C.1985,c.C44 s12</p>
+<p style="margin:0 0 4px;">3 ISED - National Registration Database Guidelines</p>
+<p style="margin:0;">4 Canadian Intellectual Property Office – Trademark database coverage notes</p>
+</div>
+<div class="gcpa-callout red">
+<span class="co-tag">Risk Warning</span>
+<p><strong>Risk Warning:</strong> A NUANS report does not reserve your name and does not clear it as a trademark. Please run a trademark search before you spend money on signage, a website or packaging.</p>
+</div>
+
+<h2>Incorporating a Numbered Company: Process and Advantages</h2>
+<div class="gcpa-numhead">
+<div class="num" style="background:#0f2a4a !important;color:#ffffff !important;">3</div>
+<h4 id="toc-process" style="border:none;padding:0;margin:0;">Process, Costs and Branding</h4>
+<span class="gcpa-pill gold">Process</span>
+</div>
+<p>When you incorporate a numbered company in Canada, you get a corporation with a unique number instead of a regular name. The process is quick and simple, which many like for privacy or ease.</p>
+<p>A numbered corporation Canada gets its legal name from the Ontario Business Registry or Corporations Canada automatically. For example, an Ontario numbered company might be called “1234567 Ontario Inc.” Federally incorporated ones use formats like “12345678 Canada Inc.” You don’t need to run a NUANS report since the number makes it unique.</p>
+<p>Here are some advantages of incorporating a numbered company:</p>
+<ul>
+<li><strong>Fast setup:</strong> You skip the wait for name approval.</li>
+<li><strong>Cheaper:</strong> No fees for NUANS reports or name conflicts.</li>
+<li><strong>Privacy:</strong> No business name shows on public records, although directors are still listed publicly.</li>
+<li><strong>Simple:</strong> Great for <a href="https://opencorporationfor35.ca/guides/holding-company-canada/">holding companies</a> or businesses not focused on branding.</li>
+</ul>
+<p>But there are some downsides. It’s harder to build brand recognition. Banks or platforms may prefer a known name. Many use registered business names alongside their numbered company for marketing.</p>
+<figure class="wp-block-table">
+<table>
+<thead><tr><th>Factor</th><th>Numbered Company</th></tr></thead>
+<tbody>
+<tr><td>Name Format</td><td>Assigned numeric ID (e.g., 1234567 Ontario Inc.)</td></tr>
+<tr><td>NUANS Report Needed</td><td>No</td></tr>
+<tr><td>Speed of Incorporation</td><td>Same-day filing possible</td></tr>
+<tr><td>Branding Potential</td><td>Limited; needs extra business name registration</td></tr>
+<tr><td>Privacy Level</td><td>Moderate; directors shown publicly</td></tr>
+</tbody>
+</table>
+</figure>
+<p><strong>Verdict:</strong> A numbered company fits founders who want quick setup and lower costs but may need more work for marketing later.</p>
+<h3>Incorporating a Named Company: Process and Advantages</h3>
+<p>When you incorporate a named corporation in Canada, you pick and register your own corporate name. This requires approval from provincial registries like Ontario Business Registry or federal bodies like Corporations Canada.</p>
+<p>Named corporations must have unique, legal names that follow rules — like using “Limited” or “Inc.” properly. Usually, you must get a NUANS report to check if your chosen name conflicts with others across Canada (federally) or just Ontario.</p>
+<p>Advantages of named corporations:</p>
+<ul>
+<li><strong>Brand identity:</strong> You can create a strong market presence.</li>
+<li><strong>Credibility:</strong> Customers, suppliers, <a href="https://opencorporationfor35.ca/business-bank-account-setup/">banks recognize familiar names easier</a>.</li>
+<li><strong>Trademark fit:</strong> Your corporate name can align with trademarks (though trademarks are separate).</li>
+</ul>
+<p>Drawbacks include longer wait times due to manual reviews and extra costs for NUANS reports. Your name might get rejected if it’s too generic or confusing.</p>
+<p>Many founders want brand control and accept these challenges because named corporations help in marketing more than numbered ones do.</p>
+<figure class="wp-block-table">
+<table>
+<thead><tr><th>Step</th><th>Description</th></tr></thead>
+<tbody>
+<tr><td>Name Selection</td><td>Pick distinctive legal elements</td></tr>
+<tr><td>NUANS Report</td><td>Search showing no conflicting names needed</td></tr>
+<tr><td>Registrar Review</td><td>Examiner checks distinctiveness &amp; rules</td></tr>
+<tr><td>Approval Decision</td><td>Registrar approves or rejects your name</td></tr>
+</tbody>
+</table>
+</figure>
+<p><strong>Verdict:</strong> Named corporations work well for entrepreneurs aiming for strong brand presence but require careful naming plans.</p>
+<h3>Cost Comparison: Numbered Company vs Named Corporation (2026)</h3>
+<p>Open Corporation charges a flat fee of $35 including HST plus <a href="https://opencorporationfor35.ca/guides/cost-to-incorporate-in-canada/">government filing fees</a> and any NUANS report costs, which vary by location.</p>
+<p>Here’s a basic fee comparison based on Ontario’s 2026 government rates:</p>
+<figure class="wp-block-table">
+<table>
+<caption style="font-weight:700;color:#15355c;text-align:left;padding:0 0 8px;">Numbered Corporation vs Named Corporation</caption>
+<thead><tr><th>Fee Component</th><th>Numbered Co.</th><th>Named Co.</th><th>Notes</th></tr></thead>
+<tbody>
+<tr><td>Service Fee</td><td>$35</td><td>$35</td><td>Flat online incorporation fee</td></tr>
+<tr><td>Government Filing Fee</td><td>$300</td><td>$300</td><td>OBCA articles filing fee<sup>[1]</sup></td></tr>
+<tr><td>NUANS Report Fee</td><td>N/A</td><td>$13–$75</td><td>Required only for named companies<sup>[2]</sup></td></tr>
+<tr><td>Name Registration Fee</td><td>N/A</td><td>$60</td><td>Needed if using trade/business names<sup>[3]</sup></td></tr>
+</tbody>
+</table>
+</figure>
+<div style="font-size:13px;color:#5a6b7b;margin:0 0 18px;">
+<p style="margin:0 0 4px;">[1]: https://www.ontario.ca/page/fees-incorporate-business</p>
+<p style="margin:0 0 4px;">[2]: https://nuans.com/nuans-report-fees</p>
+<p style="margin:0;">[3]: https://www.app.toronto.ca/businesstax/businessnames.html</p>
+</div>
+<p>Changing from numbered to named later costs about $150 for articles amendment.</p>
+<p><strong>Verdict:</strong> Numbered companies cost less upfront because they skip NUANS fees but lack branding options unless you pay extra.</p>
+<div class="gcpa-callout teal">
+<span class="co-tag">Key Stat</span>
+<p><strong>$0:</strong> the difference in Ontario government filing fees between a numbered and a named company. Both pay $300. The only naming costs are the NUANS report for a named company and $60 for an operating name if you use one.</p>
+</div>
+<h3>Brand Identity and Marketing Considerations for Named Corporations</h3>
+<p>Picking a named corporation helps build strong corporate branding. This is key in Toronto and other parts of Canada where competition is tough. Unlike numbered companies that just have digits, named corporations let you control how customers see your business.</p>
+<p>Some points to keep in mind:</p>
+<ul>
+<li>Your corporate name shows on official documents like contracts and invoices under OBCA rules.</li>
+<li>A good brand name builds trust with suppliers, banks, and helps with platform setups.</li>
+<li>Legal rules require suffixes like “Inc.” or “Ltd.” These should fit nicely with your branding without confusing customers.</li>
+</ul>
+<p>Trademarks are separate from incorporation but matching your corporate and trade names lowers confusion risks during early growth—especially in regulated industries common in Toronto’s professional scene.</p>
+<p>Many businesses register multiple trade names that customers see daily while following legal requirements strictly behind the scenes. This separation helps manage reputation across provinces effectively.</p>
+<p>Sharad Gondaliya, CPA (Canada &amp; USA), has over 10 years experience working with Canadian business owners. Open Corporation for $35 is part of Gondaliya CPA Professional Corporation.</p>
+<div class="gcpa-cta" style="background:linear-gradient(135deg,#0f2a4a 0%,#1c4a78 100%) !important;">
+<h4>Numbered or named, filed with a CPA checking the details</h4>
+<p>Incorporation from $35 including HST plus government fees, with a free CPA consultation on your name, NUANS report and jurisdiction before anything is filed. Please book a free consultation.</p>
+<div class="gcpa-trust"><span>1300+ 5-star Google reviews</span><span>Xero Partner Award Winner 2026</span><span>CPA Ontario Firm 61330051</span><span>30-Day Money-Back Guarantee</span></div>
+<div class="gcpa-btnrow"><a class="solid" href="https://gondaliyacpa.ca/consultation/">Book Free Consultation</a><a href="https://opencorporationfor35.ca/">Open Corporation For $35</a><a href="tel:+16472129559">647-212-9559</a></div>
+</div>
+
+<h2>Legal and Tax Treatment of Numbered and Named Corporations</h2>
+<div class="gcpa-numhead">
+<div class="num" style="background:#0f2a4a !important;color:#ffffff !important;">4</div>
+<h4 id="toc-legal" style="border:none;padding:0;margin:0;">Legal, Tax and Privacy</h4>
+<span class="gcpa-pill green">Legal and Tax</span>
+</div>
+<p>Numbered corporations Canada and named corporations Canada both have the same legal status. They are separate entities under Canadian corporate law. Depending on where you are, they fall under either the Ontario Business Corporations Act (OBCA) or the Canada Business Corporations Act (CBCA). Both types offer limited liability protection. They can own property, enter contracts, sue, be sued, and handle their own taxes.</p>
+<p>From a tax viewpoint, there’s no difference between numbered company vs named company. Each needs a <a href="https://opencorporationfor35.ca/business-number-cra-account-registration/">business number from the Canada Revenue Agency (CRA)</a>. This is for corporate income tax filing (T2), GST/HST registration if needed, payroll deductions, and other federal tax duties. You might also have to file provincially based on your business location.</p>
+<p>Choosing between numbered corporation Canada or named corporation Canada won’t change your eligibility for government programs or compliance rules. But it will affect your branding and how the public sees your company.</p>
+<h3>Privacy and Anonymity: Misconceptions About Numbered Companies</h3>
+<p>People often think that a numbered company hides who owns it better than a named company. That’s not true in Canadian law, including in Ontario.</p>
+<p>Both numbered companies and named companies list their directors publicly. This happens through filings with Corporations Canada or provincial registries like the Ontario Business Registry. The name—whether it’s numbers like “1234567 Ontario Inc.” or words—does not protect privacy.</p>
+<p>Numbered names don’t hide ownership details. They don’t free businesses from transparency laws. If you want privacy, talk to a lawyer instead of relying on a numbered company name alone.</p>
+<div class="gcpa-callout red">
+<span class="co-tag">Risk Warning</span>
+<p><strong>Risk Warning:</strong> A numbered name does not keep you off the public record. Directors' names and addresses are searchable either way, and federal corporations also file individuals with significant control information with Corporations Canada. Please do not choose a numbered company for privacy alone.</p>
+</div>
+<h3>When to Choose a Numbered Company for Your Business</h3>
+<p>The choice between numbered company vs named company depends mostly on what you want for your business. Think about how fast you need to set up, costs, branding goals, and rules you must follow.</p>
+<p>Here’s when a numbered corporation Canada might make sense:</p>
+<ul>
+<li><strong>Fast Setup:</strong> No NUANS report is needed because the number format is pre-approved.</li>
+<li><strong>Lower Cost:</strong> You can save money since you don’t need a name search report.</li>
+<li><strong>Branding Flexibility:</strong> Good if you plan to use different trade names registered separately.</li>
+<li><strong>Less Noticeable:</strong> Some owners prefer numbers at first to stay low-key.</li>
+<li><strong>Banking &amp; Contracts:</strong> Banks may accept numbered companies easily; though branded names might face fewer questions.</li>
+</ul>
+<p>Numbered companies work well for holding companies, short projects that may rebrand later in 2026 [1], <a href="https://opencorporationfor35.ca/open-a-corporation-in-canada-as-a-non-resident-step-by-step-guide/">non-resident entrepreneurs</a> wanting quick setup without name checks [2], or consultants using different operating names besides their official one.</p>
+<div class="gcpa-callout gold">
+<span class="co-tag">Our Actual Experience</span>
+<p>Most clients who choose a numbered company do it to file the same day and register an operating name afterwards. When they later want the brand as the legal name, articles of amendment change the name and keep the same incorporation date and business number.</p>
+</div>
+<h3>When to Choose a Named Corporation for Your Business</h3>
+<p>Named corporation Canada is better when branding matters at every step—from marketing to invoices. It fits businesses focused on building identity and trust.</p>
+<p>Reasons to pick a named company include:</p>
+<ul>
+<li><strong>Clear Branding:</strong> A unique legal name helps customers recognize your business everywhere.</li>
+<li><strong>Trademark Steps:</strong> Incorporating with your chosen name helps when applying for trademark registration later [3].</li>
+<li><strong>Customer Trust:</strong> People often see named corporations as more professional than ones with just numbers.</li>
+<li><strong>Regulated Fields:</strong> Some industries require specific words in their company names that only naming checks confirm [4].</li>
+</ul>
+<p>Businesses selling directly to consumers like stores or restaurants benefit most here. Tech startups aiming nationwide presence under CBCA also need NUANS reports before approval [5].</p>
+<p>So: go with “numbered” if speed and ease matter most. Pick “named” if building brand value over time is your goal. <a href="https://opencorporationfor35.ca/professional-corporation-incorporation/">Regulated professionals</a> have extra naming rules.</p>
+<div style="font-size:13px;color:#5a6b7b;border-top:1px solid #e3e9f0;padding-top:10px;margin:18px 0 24px;">
+<p style="margin:0 0 4px;">[1] OBCA s.10(1); Articles of Amendment fee $150 — see https://www.ontario.ca/laws/statute/90b16</p>
+<p style="margin:0 0 4px;">[2] Corporations Canada processing guidelines 2026 — https://corporationscanada.ic.gc.ca/eic/site/cd-dgc.nsf/eng/h_cs04954.html</p>
+<p style="margin:0 0 4px;">[3] CIPO Trademark FAQ — https://ised-isde.canada.ca/site/canadian-intellectual-property-office/en/trademarks/applying-trademark-registration</p>
+<p style="margin:0 0 4px;">[4] OBCA Name Restrictions Schedule B; Regulated Professions Naming Rules e-Laws ON — https://www.ontario.ca/laws/statute/90b16#BK37</p>
+<p style="margin:0;">[5] Federal NUANS Report validity 90 days per ISED guidance 2026 — https://ised-isde.canada.ca/site/national-unified-search-system-nuans/en</p>
+</div>
+
+<h2>Converting a Numbered Company to a Named Corporation: Steps and Costs</h2>
+<div class="gcpa-numhead">
+<div class="num" style="background:#0f2a4a !important;color:#ffffff !important;">5</div>
+<h4 id="toc-convert" style="border:none;padding:0;margin:0;">Converting and Protecting Your Name</h4>
+<span class="gcpa-pill blue">Name Changes</span>
+</div>
+<p>If you have a numbered company in Canada, like "1234567 Ontario Inc.," you might want to change it to a named corporation. This means picking a proper name instead of just numbers. The process involves filing <a href="https://opencorporationfor35.ca/corporate-changes-amendments/">articles of amendment</a> with the right government office.</p>
+<p>Here’s what you need to do:</p>
+<ol>
+<li>Pick a corporate name that follows the rules.</li>
+<li>Run a NUANS report if your new name requires it.</li>
+<li>File Articles of Amendment with Ontario Business Registry or Corporations Canada.</li>
+<li>Pay fees, including the articles of amendment fee Ontario, which is $150.</li>
+</ol>
+<p>Changing your company name updates public records but does not change your original incorporation date or business number. Online filings are usually processed the same day.</p>
+<figure class="wp-block-table">
+<table>
+<thead><tr><th>Step</th><th>What You Do</th><th>Fee (2026)</th><th>Who Handles It</th></tr></thead>
+<tbody>
+<tr><td>Name Selection</td><td>Pick a legal corporate name</td><td>None</td><td>OBCA / CBCA</td></tr>
+<tr><td>NUANS Report</td><td>Search for similar existing names</td><td>$13.80 + HST</td><td>NUANS/ISED</td></tr>
+<tr><td>Articles of Amendment</td><td>Submit form to change numbered name</td><td>$150</td><td>Ontario Registry / Corporations Canada</td></tr>
+</tbody>
+</table>
+</figure>
+<p>Changing from numbered to named gives you more branding options but you must follow naming rules and pay the fees.</p>
+<h3>Protecting Your Corporate Name: Strategies and Best Practices</h3>
+<p>If you own a named company Canada, protecting your name matters. Registering your corporate name is only part of it. You want real protection.</p>
+<p>Here’s what to know:</p>
+<ul>
+<li><strong>Registering Your Corporate Name</strong> stops others from using the exact same name in your area.</li>
+<li><strong>NUANS Report Validity Period</strong> is 90 days. You must file your paperwork within this time.</li>
+<li><strong>Trademark Registration at CIPO</strong> offers stronger protection across Canada. The trademark application fee at CIPO is charged for the first class plus a lower fee for each additional class, with no HST, and it rises each January.</li>
+</ul>
+<p>To protect your corporate name well:</p>
+<ul>
+<li>Search thoroughly before registering.</li>
+<li><a href="https://opencorporationfor35.ca/corporate-compliance-subscription/">Keep registrations up to date.</a></li>
+<li>Watch for anyone using similar names.</li>
+<li>Talk to trademark agents if expanding your brand.</li>
+</ul>
+<p>Remember, just registering your corporate name doesn’t give full rights. Trademarks cover much more ground legally.</p>
+<h3>Differences Between Corporate Name, Trade Name, Brand Name, and Domain Name</h3>
+<p>It helps to know how these names differ:</p>
+<ul>
+<li><strong>Corporate Name:</strong> The official legal name on documents like tax forms and certificates.</li>
+<li><strong>Trade Name:</strong> Also called business or operating name. If it differs from the corporate name, you register it under Business Names Act Ontario. This costs $60 every five years.</li>
+<li><strong>Brand Name:</strong> This is the marketing name people recognize. Only trademarks protect brand names properly.</li>
+<li><strong>Domain Name:</strong> The website address online; registered separately from any government agency.</li>
+</ul>
+<p>A quick note: Does a corporate name give you trademark rights? No! You get trademark rights by actually using the name in business and registering it with CIPO or through common law protections.</p>
+<h3>Practical Tips for Naming Your Company in Canada</h3>
+<p>Naming a company isn’t just picking something cool — there are rules!</p>
+<p>You’ll need a NUANS name search needed if you incorporate federally or in provinces like Ontario that require it.</p>
+<p>Here’s why some names get rejected:</p>
+<ul>
+<li>Too general or descriptive without unique parts.</li>
+<li>Too close to existing company names.</li>
+<li>Misleading about what you do.</li>
+<li>Using restricted words banned by law.</li>
+</ul>
+<p><strong>Federal vs Ontario where is your corporate name protected?</strong> Federal incorporation covers all Canada but needs extra steps outside where you're based. Provincial protection stays local unless you <a href="https://opencorporationfor35.ca/extra-provincial-registration/">register extra-provincially</a> elsewhere.</p>
+<p>To avoid rejection:</p>
+<ul>
+<li>Use unique parts with descriptive words.</li>
+<li>Avoid banned terms under OBCA/CBCA laws.</li>
+<li>Have backup names ready when applying.</li>
+</ul>
+<p>These tips make approval smoother and keep you within Canadian laws about numbered corporation vs named corporation choices.</p>
+<p>Sharad Gondaliya, CPA (Canada &amp; USA), has 10+ years helping Canadian business owners.</p>
+<p>Open Corporation for $35 is part of Gondaliya CPA.</p>
+<div class="gcpa-banner" style="background:linear-gradient(135deg,#0d3b66 0%,#0c7a7a 100%) !important;">
+<div class="bt">Not sure whether your name will pass? Please book a free consultation and we will check it against the naming rules before you pay for a NUANS report.</div>
+<div class="bb"><a class="solid" href="https://gondaliyacpa.ca/consultation/">Book Free Consultation</a><a href="mailto:info@gondaliyacpa.ca">info@gondaliyacpa.ca</a><a href="tel:+16472129559">647-212-9559</a></div>
+</div>
+
+<h2>Related Resources for Corporate Name Registration in Canada</h2>
+<div class="gcpa-numhead">
+<div class="num" style="background:#0f2a4a !important;color:#ffffff !important;">6</div>
+<h4 id="toc-resources" style="border:none;padding:0;margin:0;">Resources and Summary</h4>
+<span class="gcpa-pill teal">Resources</span>
+</div>
+<p>Knowing the difference between a numbered company vs named company matters when you register a corporation in Canada. Numbered corporations Canada get a number assigned by the government, like "1234567 Ontario Inc." or "12345678 Canada Inc." Named corporations Canada pick a unique name that follows certain rules and needs approval.</p>
+<p>You can find useful info on official sites like the Ontario Business Registry and Corporations Canada. They explain how names are checked, why some get rejected, and what NUANS reports are. Keep in mind, getting your corporate name approved doesn’t mean you own the trademark. You have to apply separately with CIPO for trademark rights.</p>
+<p>Here are some helpful links:</p>
+<ul>
+<li><a href="https://www.ontario.ca/page/ontario-business-registry">Ontario Business Registry – Corporate Name Guidelines</a></li>
+<li><a href="https://ised-isde.canada.ca/site/corporations-canada/en">Corporations Canada – Naming Rules</a></li>
+<li><a href="https://ised-isde.canada.ca/site/national-unified-search-system-nuans/en">NUANS Name Search Information</a></li>
+</ul>
+<p>These sources show you the key differences between numbered corporation versus named corporation in different provinces.</p>
+<h3>Incorporation and Tax Services by Industry</h3>
+<p>Whether you choose a named corporation Canada or a numbered company can depend on your industry’s needs. Some businesses want a strong brand, others prefer privacy or faster setup. Different industries face different rules for incorporation and taxes.</p>
+<p>Here’s a quick look at some industries:</p>
+<ul>
+<li><strong>Tech Startups &amp; SaaS:</strong> Usually want named companies to build their brand; federal incorporation covers all of Canada.</li>
+<li><strong>E-commerce &amp; Online Stores:</strong> Pick named corporations to match their customer-facing names.</li>
+<li><strong>Professional Services &amp; Consultants:</strong> Might choose either based on how clients see them.</li>
+<li><strong>Health Tech &amp; Medical Clinics:</strong> Need to follow strict rules on names for regulated professions.</li>
+<li><strong>Real Estate &amp; Holding Companies:</strong> Often use numbered companies with registered business names for more privacy.</li>
+</ul>
+<p>Each industry handles naming and tax filings differently. <a href="https://opencorporationfor35.ca/services/">Open Corporation for $35 offers packages</a> that include NUANS reports, annual filings, minute books, GST/HST registration, payroll slips like T4/T5, and more to help keep things smooth no matter what you pick.</p>
+<h3>Financial Guidance for Incorporated Businesses</h3>
+<p>Choosing between a numbered corporation Canada or named company affects your finances. It changes how banks see you, how you bill clients, file taxes (like T2 returns), and access government programs.</p>
+<p>Numbered companies set up quickly but might struggle with brand trust if they don’t register a business name. Named corporations have built-in branding but need careful name checks before registering.</p>
+<p>Here are some tips:</p>
+<ul>
+<li>Get your business number right after incorporating to deal with CRA easily.</li>
+<li>Keep clear records that show your corporation’s legal name separate from any trade names.</li>
+<li>Do trademark searches early if your brand’s intellectual property matters.</li>
+<li>Use CPA advice to plan taxes well using industry-specific deductions under Canadian law.</li>
+</ul>
+<p>Open Corporation for $35 helps founders through these steps with <a href="https://gondaliyacpa.ca/consultation/">free CPA consultations</a> plus affordable online incorporation services across provinces including Ontario under OBCA rules.</p>
+<h3>Summary of Key Takeaways on Numbered Company vs Named Company</h3>
+<figure class="wp-block-table">
+<table>
+<thead><tr><th>Aspect</th><th>Numbered Company</th><th>Named Company</th></tr></thead>
+<tbody>
+<tr><td>Naming Format</td><td>Number + province + legal element (e.g., 1234567 Ontario Inc.)</td><td>Custom chosen distinctive + descriptive + legal elements</td></tr>
+<tr><td>NUANS Report Required</td><td>No</td><td>Yes</td></tr>
+<tr><td>Approval Process</td><td>Automatic assignment</td><td>Registrar review required</td></tr>
+<tr><td>Branding</td><td>Limited direct branding</td><td>Stronger public identity</td></tr>
+<tr><td>Privacy</td><td>Directors shown publicly</td><td>Same disclosure</td></tr>
+<tr><td>Operating Under Business Name</td><td>Allowed via separate registration</td><td>Possible but less common</td></tr>
+</tbody>
+</table>
+</figure>
+<p><strong>Verdict:</strong> Numbered companies fit those who want fast setup without worrying about branding now. Named companies suit founders wanting long-term brand presence even if it takes longer.<sup>[1][2]</sup></p>
+<div style="font-size:13px;color:#5a6b7b;margin:0 0 18px;">
+<p style="margin:0 0 4px;">[1]: Ontario Business Registry</p>
+<p style="margin:0;">[2]: Corporations Canada</p>
+</div>
+<h3>Contact Open Corporation for $35: Incorporate Your Business Today</h3>
+<p>Open Corporation for $35 is part of Gondaliya CPA in Toronto. We offer <a href="https://opencorporationfor35.ca/incorporation-form/">online incorporation services</a> all over Canada backed by experienced CPAs.</p>
+<p>Call us at 647‑212‑9559 or email info@gondaliyacpa.ca to start your incorporation today. We guide you from picking between numbered company or named corporation right through filing articles under the latest 2026 rules.</p>
+<p>Sharad Gondaliya, CPA (Canada &amp; USA), has helped hundreds of Canadian business owners over 10+ years.</p>
+<p style="font-size:13.5px;color:#5a6b7b;">[Published: November 5, 2026 — Last updated: November 5, 2026]</p>
+
+<h2>Frequently Asked Questions on Numbered and Named Companies</h2>
+<div class="gcpa-numhead">
+<div class="num" style="background:#0f2a4a !important;color:#ffffff !important;">7</div>
+<h4 id="toc-faq" style="border:none;padding:0;margin:0;">Corporate Name FAQ</h4>
+<span class="gcpa-pill teal">FAQ</span>
+</div>
+<div class="gcpa-faq" id="faq-main">
+<details><summary>What is the Ontario Numbered Name Format for corporations?<span class="pl">+</span></summary>
+<div class="ans"><p>Ontario numbered companies use a format like "1234567 Ontario Inc." The number is assigned by the Ontario Business Registry upon incorporation.</p></div></details>
+<details><summary>How does the Federal Numbered Name Format differ?<span class="pl">+</span></summary>
+<div class="ans"><p>Federal numbered corporations use "12345678 Canada Inc." The number is issued by Corporations Canada during federal incorporation.</p></div></details>
+<details><summary>What is the NUANS Report Validity Period?<span class="pl">+</span></summary>
+<div class="ans"><p>A NUANS report remains valid for 90 calendar days from the issue date. You must file your incorporation within this period.</p></div></details>
+<details><summary>How much is the NUANS Report Fee in 2026?<span class="pl">+</span></summary>
+<div class="ans"><p>The NUANS report fee ranges from $13 to $75 depending on the jurisdiction and type of search requested.</p></div></details>
+<details><summary>What are the Ontario Government Incorporation Fees?<span class="pl">+</span></summary>
+<div class="ans"><p>In Ontario, filing Articles of Incorporation costs $300. Additional fees apply for NUANS reports and business name registration.</p></div></details>
+<details><summary>What are the Federal Government Incorporation Fees?<span class="pl">+</span></summary>
+<div class="ans"><p>Corporations Canada charges $200 for Articles of Incorporation. NUANS reports and other services may add extra fees.</p></div></details>
+<details><summary>How much is the Articles of Amendment Fee in Ontario?<span class="pl">+</span></summary>
+<div class="ans"><p>The fee to file Articles of Amendment in Ontario is $150 as of 2026.</p></div></details>
+<details><summary>What is the Business Name Registration Fee in Ontario?<span class="pl">+</span></summary>
+<div class="ans"><p>Registering a business name under Business Names Act Ontario costs $60 every five years.</p></div></details>
+<details><summary>How much does a Trademark Application Cost at CIPO?<span class="pl">+</span></summary>
+<div class="ans"><p>Applying for a trademark at CIPO costs a fee for the first class plus a lower fee for each additional class, with no HST; the fee rises each January.</p></div></details>
+<details><summary>Where can I find corporate name guidelines in Ontario?<span class="pl">+</span></summary>
+<div class="ans"><p>Visit the Ontario Business Registry website for official corporate name rules and registration steps.</p></div></details>
+<details><summary>Where do I find naming rules for federal corporations?<span class="pl">+</span></summary>
+<div class="ans"><p>Corporations Canada’s official website provides all naming rules and incorporation guidance federally.</p></div></details>
+<details><summary>What does the Business Names Act Ontario regulate?<span class="pl">+</span></summary>
+<div class="ans"><p>This act regulates trade or operating names different from corporate names, requiring separate registration.</p></div></details>
+<details><summary>Which office manages corporate names in Ontario?<span class="pl">+</span></summary>
+<div class="ans"><p>The Ministry of Public and Business Service Delivery and Procurement oversees corporate name registrations and filings through the Ontario Business Registry.</p></div></details>
+<details><summary>What suffixes are legally required in Canadian corporate names?<span class="pl">+</span></summary>
+<div class="ans"><p>Legal element suffixes include "Inc.", "Ltd.", or "Corp." They indicate limited liability status.</p></div></details>
+<details><summary>Are there prohibited or restricted words in corporate names?<span class="pl">+</span></summary>
+<div class="ans"><p>Yes. Certain terms require permission or are banned to avoid misleading or unauthorized use.</p></div></details>
+<details><summary>Can I register an operating name different from my corporation’s legal name?<span class="pl">+</span></summary>
+<div class="ans"><p>Yes, you can register a trade or operating name separately under provincial business name laws.</p></div></details>
+<details><summary>How often must I renew my business name registration in Ontario?<span class="pl">+</span></summary>
+<div class="ans"><p>Business names must be renewed every five years with a $60 fee to remain valid.</p></div></details>
+<details><summary>Does registering a corporate name grant trademark rights automatically?<span class="pl">+</span></summary>
+<div class="ans"><p>No. Trademark rights require separate registration with CIPO or common law use protection.</p></div></details>
+<details><summary>What is the importance of trademark clearance searches before naming?<span class="pl">+</span></summary>
+<div class="ans"><p>These searches reduce risks of trademark infringement by identifying conflicting trademarks early on.</p></div></details>
+<details><summary>Do I need to register extra-provincially if expanding outside my province?<span class="pl">+</span></summary>
+<div class="ans"><p>Yes, you must register extra-provincially to operate legally outside your home jurisdiction.</p></div></details>
+<details><summary>How can I keep track of renewal deadlines and compliance requirements?<span class="pl">+</span></summary>
+<div class="ans"><p>Use compliance calendars and renewal reminders to avoid missed filings or penalties.</p></div></details>
+</div>
+<div class="gcpa-callout red">
+<span class="co-tag">Risk Warning</span>
+<p><strong>Risk Warning:</strong> An Ontario business name registration expires after five years. Please renew it on time, because an expired registration means you are trading under a name that is no longer registered.</p>
+</div>
+
+<h2>Additional Essential Points on Corporate Name Registration in Canada</h2>
+<div class="gcpa-numhead">
+<div class="num" style="background:#0f2a4a !important;color:#ffffff !important;">8</div>
+<h4 id="toc-points" style="border:none;padding:0;margin:0;">Essential Points and Quick Reference</h4>
+<span class="gcpa-pill gold">At a Glance</span>
+</div>
+<ul>
+<li><strong>Corporate Certificate:</strong> This official document confirms your company's legal incorporation status.</li>
+<li><strong><a href="https://opencorporationfor35.ca/minute-book-preparation/">Minute Book</a>:</strong> A record-keeping book that stores key company documents such as resolutions and meeting minutes.</li>
+<li><strong>Business Number (BN) Registration:</strong> Required for tax purposes; obtained from CRA after incorporation.</li>
+<li><strong>Articles of Incorporation Filing Fee:</strong> The government fee charged when submitting incorporation documents; varies by province/federal level.</li>
+<li><strong>Trademark Conflict Screening:</strong> Conducted by trademark agents to assess risk before filing applications.</li>
+<li><strong>Trademark Agent:</strong> A professional who assists with trademark searches, filings, and enforcement actions.</li>
+<li><strong>Bilingual Suffix Options:</strong> Corporate suffixes can be registered in English, French, or both, especially useful in bilingual provinces like Quebec.</li>
+<li><strong>Privacy Level:</strong> Both numbered and named companies disclose directors publicly through government registries; corporate names do not increase privacy.</li>
+<li><strong>Directors Public Record:</strong> Directors’ identities appear on public records regardless of company name type.</li>
+<li><strong>Domain Name Registration:</strong> Separate from corporate naming; secures your online brand identity but does not replace legal naming requirements.</li>
+</ul>
+<div class="gcpa-pillhead"><h4 style="border:none;padding:0;margin:0;">Quick Answers: Key Numbers at a Glance</h4><span class="gcpa-pill gold">At a Glance</span></div>
+<ul>
+<li><strong>Ontario government filing fee:</strong> $300, numbered or named</li>
+<li><strong>Federal government filing fee:</strong> $200, numbered or named</li>
+<li><strong>NUANS validity:</strong> 90 days</li>
+<li><strong>Our NUANS report:</strong> $25</li>
+<li><strong>Ontario articles of amendment:</strong> $150</li>
+<li><strong>Ontario business name:</strong> $60 for five years</li>
+<li><strong>Our fee:</strong> $35 including HST, plus government fees</li>
+</ul>
+<div class="gcpa-pillhead"><h4 style="border:none;padding:0;margin:0;">Who This Is For / Not For</h4><span class="gcpa-pill teal">Fit Check</span></div>
+<ul>
+<li><strong>For:</strong> Founders choosing between a numbered and a named corporation in Ontario or federally, and owners of a numbered company thinking about adding a name.</li>
+<li><strong>Not For:</strong> Anyone choosing a numbered company to keep their identity private, since directors are public either way.</li>
+</ul>
+<div class="gcpa-callout green">
+<span class="co-tag">Verdict</span>
+<p>Pick a numbered company if you need to file today or the corporation will not face customers, such as a holding company. Pick a named company if the legal name is your brand. The government fee, tax treatment and privacy are the same either way, and a numbered company can add a name later for $150 in Ontario.</p>
+</div>
+<div class="gcpa-callout blue">
+<span class="co-tag">2026 Update</span>
+<p><strong>2026 Update &mdash; what is current:</strong> This article reflects rules current to 2026. The government fee to incorporate is $300 in Ontario and $200 federally, whether the company is numbered or named. NUANS reports remain valid for 90 days. Ontario articles of amendment cost $150, and an Ontario business name registration costs $60 for five years. CIPO raises its trademark fees each January, so please check the current fee before you file.</p>
+</div>
+<h5 style="color:#15355c;margin:24px 0 8px;">Corporate Name Readiness Check</h5>
+<p>This quick self-check flags what to sort out before you choose a numbered or named company. Please answer the six questions below.</p>
+<div id="ocf-chk">
+  <style>
+    #ocf-chk{--n:#0f2a4a;--n2:#15355c;--bl:#1c6dd0;--tl:#0c8f8f;--gd:#c9991f;--rd:#c0392b;--ink:#1d2733;--mut:#5a6b7b;--ln:#d8e0e8;--alt:#f5f8fb;
+      border:1px solid var(--ln);border-radius:14px;overflow:hidden;background:#fff;box-shadow:0 10px 30px rgba(15,42,74,.08);font-family:inherit;color:var(--ink);margin:24px 0;}
+    #ocf-chk *{box-sizing:border-box;}
+    #ocf-chk .s-head{background:linear-gradient(135deg,var(--n),var(--n2));color:#fff;padding:18px 22px;}
+    #ocf-chk .s-head h5{margin:0;font-size:19px;font-weight:700;color:#fff!important;}
+    #ocf-chk .s-head p{margin:4px 0 0;font-size:13px;color:#cfe2f8!important;}
+    #ocf-chk .s-body{padding:20px 22px;}
+    #ocf-chk .s-q{padding:13px 0;border-bottom:1px solid var(--ln);display:flex;justify-content:space-between;align-items:center;gap:14px;}
+    #ocf-chk .s-q:first-child{padding-top:2px;}
+    #ocf-chk .s-q span.s-lab{font-weight:600;font-size:14.5px;color:var(--n);}
+    #ocf-chk .s-seg{display:inline-flex;border:1px solid var(--ln);border-radius:10px;overflow:hidden;flex:0 0 auto;}
+    #ocf-chk .s-seg label{cursor:pointer;padding:8px 18px;font-size:14px;font-weight:600;color:var(--mut);background:var(--alt);transition:.15s;user-select:none;}
+    #ocf-chk .s-seg label+label{border-left:1px solid var(--ln);}
+    #ocf-chk .s-seg input{position:absolute;opacity:0;width:0;height:0;}
+    #ocf-chk .s-seg input:checked+label{background:var(--n);color:#fff!important;}
+    #ocf-chk .s-go{margin-top:18px;width:100%;border:none;border-radius:11px;padding:14px 18px;font-size:15.5px;font-weight:700;color:#fff!important;cursor:pointer;background:linear-gradient(135deg,var(--bl),var(--tl));font-family:inherit;}
+    #ocf-chk .s-go:hover{filter:brightness(1.05);}
+    #ocf-chk .s-msg{display:none;margin-top:12px;font-size:13.5px;color:var(--rd);font-weight:600;}
+    #ocf-chk .s-out{display:none;margin-top:18px;border-radius:12px;border:1px solid var(--ln);overflow:hidden;}
+    #ocf-chk .s-out .s-status{padding:14px 18px;font-weight:700;font-size:16px;color:#fff!important;background:linear-gradient(135deg,var(--n),var(--n2));}
+    #ocf-chk .s-out .s-inner{padding:16px 18px;background:var(--alt);}
+    #ocf-chk .s-row{font-size:14.5px;margin:0 0 10px;line-height:1.5;}
+    #ocf-chk .s-count{display:inline-block;background:#fff;border:1px solid var(--ln);border-radius:9px;padding:8px 14px;font-weight:700;color:var(--n);font-size:14.5px;}
+    #ocf-chk .s-list{margin:8px 0 0;padding-left:18px;}
+    #ocf-chk .s-list li{font-size:13.5px;color:var(--ink);margin:4px 0;border:none;padding:0 0 0 4px;}
+    #ocf-chk .s-list li::before{display:none;}
+    #ocf-chk .s-cta{display:inline-block;margin-top:14px;background:var(--gd);color:#fff!important;font-weight:700;font-size:14.5px;text-decoration:none;padding:11px 20px;border-radius:10px;}
+    #ocf-chk .s-note{font-size:12.5px;color:var(--mut);margin:12px 0 0;}
+    @media(max-width:560px){#ocf-chk .s-q{flex-direction:column;align-items:flex-start;gap:8px;}}
+  </style>
+  <div class="s-head" style="background:linear-gradient(135deg,#0f2a4a,#15355c) !important;">
+    <h5>Corporate Name Readiness Check</h5>
+    <p>Six quick questions. No tax calculation, no figure quoted.</p>
+  </div>
+  <div class="s-body">
+    <div class="s-q" data-flag="1" data-msg="A NUANS report under 90 days old, since a named company cannot file without one"><span class="s-lab">1. Do you want your brand as the corporation's legal name?</span>
+      <span class="s-seg"><input type="radio" id="c-a-y" name="c-a" value="1"><label for="c-a-y">Yes</label><input type="radio" id="c-a-n" name="c-a" value="0"><label for="c-a-n">No</label></span></div>
+    <div class="s-q" data-flag="0" data-msg="A trademark search, since a NUANS report does not clear your name as a trademark"><span class="s-lab">2. Have you searched the name for existing trademarks?</span>
+      <span class="s-seg"><input type="radio" id="c-b-y" name="c-b" value="1"><label for="c-b-y">Yes</label><input type="radio" id="c-b-n" name="c-b" value="0"><label for="c-b-n">No</label></span></div>
+    <div class="s-q" data-flag="1" data-msg="A registered operating name, $60 for five years in Ontario, if a numbered company will trade under a brand"><span class="s-lab">3. Will a numbered company trade under a brand name?</span>
+      <span class="s-seg"><input type="radio" id="c-c-y" name="c-c" value="1"><label for="c-c-y">Yes</label><input type="radio" id="c-c-n" name="c-c" value="0"><label for="c-c-n">No</label></span></div>
+    <div class="s-q" data-flag="1" data-msg="Privacy expectations, since directors are public whether the company is numbered or named"><span class="s-lab">4. Are you choosing a numbered company mainly for privacy?</span>
+      <span class="s-seg"><input type="radio" id="c-d-y" name="c-d" value="1"><label for="c-d-y">Yes</label><input type="radio" id="c-d-n" name="c-d" value="0"><label for="c-d-n">No</label></span></div>
+    <div class="s-q" data-flag="1" data-msg="Restricted words and regulator naming rules, such as for professional corporations"><span class="s-lab">5. Does your name use a regulated word or describe a licensed profession?</span>
+      <span class="s-seg"><input type="radio" id="c-e-y" name="c-e" value="1"><label for="c-e-y">Yes</label><input type="radio" id="c-e-n" name="c-e" value="0"><label for="c-e-n">No</label></span></div>
+    <div class="s-q" data-flag="1" data-msg="Name protection outside your home province, through federal incorporation or extra-provincial registration"><span class="s-lab">6. Will you operate in more than one province?</span>
+      <span class="s-seg"><input type="radio" id="c-f-y" name="c-f" value="1"><label for="c-f-y">Yes</label><input type="radio" id="c-f-n" name="c-f" value="0"><label for="c-f-n">No</label></span></div>
+    <button type="button" class="s-go" id="c-go">Check my readiness</button>
+    <div class="s-msg" id="c-msg">Please answer all six questions to continue.</div>
+    <div class="s-out" id="c-out">
+      <div class="s-status" id="c-status" style="background:linear-gradient(135deg,#0f2a4a,#15355c) !important;">Your profile</div>
+      <div class="s-inner">
+        <p class="s-row"><b>Points to work through:</b> <span class="s-count" id="c-count"></span></p>
+        <div id="c-listwrap" style="display:none;"><p class="s-row" style="margin-bottom:4px;"><b>Worth reviewing with us:</b></p><ul class="s-list" id="c-list"></ul></div>
+        <p class="s-row" id="c-clean" style="display:none;"><b>Nothing flagged.</b> The usual complications do not appear to apply to you.</p>
+        <a class="s-cta" href="https://gondaliyacpa.ca/consultation/">Book a free consultation</a>
+        <p class="s-note">This is a general prompt, not tax advice, and it does not calculate your tax. Your outcome depends on your full facts, so please book a free consultation.</p>
+      </div>
+    </div>
+  </div>
+  <script>
+  (function(){
+    var root=document.getElementById('ocf-chk');
+    root.querySelector('#c-go').addEventListener('click',function(){
+      var qs=root.querySelectorAll('.s-q'), items=[], missing=false;
+      qs.forEach(function(q){
+        var x=q.querySelector('input:checked');
+        if(!x){missing=true;return;}
+        if(x.value===q.getAttribute('data-flag')) items.push(q.getAttribute('data-msg'));
+      });
+      var msg=root.querySelector('#c-msg'), out=root.querySelector('#c-out');
+      if(missing){msg.style.display='block';out.style.display='none';return;}
+      msg.style.display='none';
+      var list=root.querySelector('#c-list'), lw=root.querySelector('#c-listwrap'), clean=root.querySelector('#c-clean');
+      root.querySelector('#c-count').textContent=items.length+' to work through';
+      list.innerHTML='';
+      if(items.length){lw.style.display='block';clean.style.display='none';items.forEach(function(t){var li=document.createElement('li');li.textContent=t;list.appendChild(li);});}
+      else{lw.style.display='none';clean.style.display='block';}
+      root.querySelector('#c-status').textContent = items.length>=3 ? 'Several points need attention' : (items.length>=1 ? 'A few points to work through' : 'A straightforward case');
+      out.style.display='block';
+    });
+  })();
+  </script>
+</div>
+<div class="gcpa-cta" style="background:linear-gradient(135deg,#0f2a4a 0%,#1c4a78 100%) !important;">
+<h4>Choose your name type and file the same day</h4>
+<p>Incorporation from $35 including HST plus government fees, numbered or named, with a free CPA consultation on your name and jurisdiction before anything is filed. Please book a free consultation.</p>
+<div class="gcpa-trust"><span>1300+ 5-star Google reviews</span><span>Xero Partner Award Winner 2026</span><span>30-Day Money-Back Guarantee</span><span>60-Day Fee Matching</span></div>
+<div class="gcpa-btnrow"><a class="solid" href="https://gondaliyacpa.ca/consultation/">Book Free Consultation</a><a href="https://opencorporationfor35.ca/address-service-100/">Address Service</a><a href="https://opencorporationfor35.ca/contact-us/">Contact Us</a></div>
+</div>
+<h3 class="gcpa-closing" id="toc-closing">What to Send Us</h3>
+<p>Send us whether you want a numbered or named company, your preferred name and two backups if named, whether you want federal or Ontario incorporation, and any operating name you plan to trade under. That is enough for us to order the right NUANS report, prepare your articles and file. Please start on our <a href="https://opencorporationfor35.ca/incorporation-form/">incorporation form</a> or see every fee on our <a href="https://opencorporationfor35.ca/pricing/">pricing page</a>.</p>
+<div class="gcpa-author">
+<div class="ava" style="background:linear-gradient(135deg,#0f2a4a,#0c8f8f) !important;color:#ffffff !important;">SG</div>
+<div class="info">
+<h5>Sharad Gondaliya, CPA (Canada &amp; USA) — Founder &amp; Managing Director, Gondaliya CPA Professional Corporation</h5>
+<div class="role">Reviewed and fact-checked by Sharad Gondaliya, CPA (Canada &amp; USA)</div>
+<p style="font-size:14.5px;color:#15355c !important;font-weight:700;margin:0 0 8px;">Open Corporation for $35 is a department of Gondaliya CPA.</p>
+<p>We incorporate and support companies in all 13 provinces and territories, handling CRA registrations, corporate tax filing, bookkeeping, GST/HST, payroll and audit support. Verify our firm on the <a href="https://www.cpaontario.ca/protecting-the-public/directories/firm/gondaliya-5sqvmj">CPA Ontario public firm directory</a>, firm registration 61330051.</p>
+<p style="font-size:13.5px;color:#15355c !important;font-weight:700;margin-top:10px;">CPA Ontario | CPA USA (Washington &amp; Montana) | Xero Partner Award Winner 2026 | 1300+ 5-star Google reviews</p>
+</div>
+</div>
+<p style="font-size:13px;color:#5a6b7b;border-top:1px solid #e3e9f0;padding-top:16px;margin-top:8px;"><strong>Published:</strong> November 5, 2026 &nbsp;·&nbsp; <strong>Last updated:</strong> November 5, 2026</p>
+<p style="font-size:13px;color:#5a6b7b;"><strong>Editorial policy:</strong> Our content is prepared by our team and reviewed by Sharad Gondaliya, CPA, and we update it as registry fees, naming rules and NUANS requirements change.</p>
+<p style="font-size:13px;color:#5a6b7b;"><strong>Disclaimer:</strong> This article is educational information only and is not tax, legal, or financial advice. Gondaliya CPA Professional Corporation is a firm of Chartered Professional Accountants, not a law firm or a trademark agency. Please consult a CPA before acting, and a trademark agent about protecting your brand.</p>
+<p style="font-size:14.5px;color:#15355c;font-weight:700;border-top:2px solid #e3e9f0;padding-top:16px;margin-top:20px;">Open Corporation for $35 is a department of Gondaliya CPA.</p>
+<p style="font-size:13px;color:#5a6b7b;">Operated by WealthBamboo Inc. Parent firm Gondaliya CPA Professional Corporation, CPA Ontario firm registration 61330051. Xero Partner Award Winner 2026. 1300+ five-star Google reviews. 30-day money-back guarantee and 60-day fee-matching policy. Phone 647-212-9559, email info@gondaliyacpa.ca, open 9:00 AM to 8:30 PM Monday to Sunday. Payment by Interac e-Transfer to info@gondaliyacpa.ca only, security question "Not Applicable" as auto-deposit is enabled. Card is also accepted.</p>
+</div>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@graph": [{"@type": "BlogPosting", "@id": "https://opencorporationfor35.ca/numbered-company-vs-named-company/#article", "headline": "Numbered Company or Named Company?", "description": "Numbered vs named company in Canada: name formats, NUANS reports, Ontario and federal fees, privacy myths, and how to add a name to a numbered company later.", "datePublished": "2026-11-05", "dateModified": "2026-11-05", "author": {"@type": "Person", "name": "Sharad Gondaliya, CPA"}, "publisher": {"@type": "Organization", "name": "Open Corporation for $35", "description": "Open Corporation for $35 is a department of Gondaliya CPA.", "parentOrganization": {"@type": "AccountingService", "name": "Gondaliya CPA Professional Corporation", "identifier": "CPA Ontario Firm Registration 61330051"}}, "mainEntityOfPage": "https://opencorporationfor35.ca/numbered-company-vs-named-company/"}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is the Ontario Numbered Name Format for corporations?", "acceptedAnswer": {"@type": "Answer", "text": "Ontario numbered companies use a format like \"1234567 Ontario Inc.\" The number is assigned by the Ontario Business Registry upon incorporation."}}, {"@type": "Question", "name": "How does the Federal Numbered Name Format differ?", "acceptedAnswer": {"@type": "Answer", "text": "Federal numbered corporations use \"12345678 Canada Inc.\" The number is issued by Corporations Canada during federal incorporation."}}, {"@type": "Question", "name": "What is the NUANS Report Validity Period?", "acceptedAnswer": {"@type": "Answer", "text": "A NUANS report remains valid for 90 calendar days from the issue date. You must file your incorporation within this period."}}, {"@type": "Question", "name": "How much is the NUANS Report Fee in 2026?", "acceptedAnswer": {"@type": "Answer", "text": "The NUANS report fee ranges from $13 to $75 depending on the jurisdiction and type of search requested."}}, {"@type": "Question", "name": "What are the Ontario Government Incorporation Fees?", "acceptedAnswer": {"@type": "Answer", "text": "In Ontario, filing Articles of Incorporation costs $300. Additional fees apply for NUANS reports and business name registration."}}, {"@type": "Question", "name": "What are the Federal Government Incorporation Fees?", "acceptedAnswer": {"@type": "Answer", "text": "Corporations Canada charges $200 for Articles of Incorporation. NUANS reports and other services may add extra fees."}}, {"@type": "Question", "name": "How much is the Articles of Amendment Fee in Ontario?", "acceptedAnswer": {"@type": "Answer", "text": "The fee to file Articles of Amendment in Ontario is $150 as of 2026."}}, {"@type": "Question", "name": "What is the Business Name Registration Fee in Ontario?", "acceptedAnswer": {"@type": "Answer", "text": "Registering a business name under Business Names Act Ontario costs $60 every five years."}}, {"@type": "Question", "name": "How much does a Trademark Application Cost at CIPO?", "acceptedAnswer": {"@type": "Answer", "text": "Applying for a trademark at CIPO costs a fee for the first class plus a lower fee for each additional class, with no HST; the fee rises each January."}}, {"@type": "Question", "name": "Where can I find corporate name guidelines in Ontario?", "acceptedAnswer": {"@type": "Answer", "text": "Visit the Ontario Business Registry website for official corporate name rules and registration steps."}}, {"@type": "Question", "name": "Where do I find naming rules for federal corporations?", "acceptedAnswer": {"@type": "Answer", "text": "Corporations Canada’s official website provides all naming rules and incorporation guidance federally."}}, {"@type": "Question", "name": "What does the Business Names Act Ontario regulate?", "acceptedAnswer": {"@type": "Answer", "text": "This act regulates trade or operating names different from corporate names, requiring separate registration."}}, {"@type": "Question", "name": "Which office manages corporate names in Ontario?", "acceptedAnswer": {"@type": "Answer", "text": "The Ministry of Public and Business Service Delivery and Procurement oversees corporate name registrations and filings through the Ontario Business Registry."}}, {"@type": "Question", "name": "What suffixes are legally required in Canadian corporate names?", "acceptedAnswer": {"@type": "Answer", "text": "Legal element suffixes include \"Inc.\", \"Ltd.\", or \"Corp.\" They indicate limited liability status."}}, {"@type": "Question", "name": "Are there prohibited or restricted words in corporate names?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Certain terms require permission or are banned to avoid misleading or unauthorized use."}}, {"@type": "Question", "name": "Can I register an operating name different from my corporation’s legal name?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, you can register a trade or operating name separately under provincial business name laws."}}, {"@type": "Question", "name": "How often must I renew my business name registration in Ontario?", "acceptedAnswer": {"@type": "Answer", "text": "Business names must be renewed every five years with a $60 fee to remain valid."}}, {"@type": "Question", "name": "Does registering a corporate name grant trademark rights automatically?", "acceptedAnswer": {"@type": "Answer", "text": "No. Trademark rights require separate registration with CIPO or common law use protection."}}, {"@type": "Question", "name": "What is the importance of trademark clearance searches before naming?", "acceptedAnswer": {"@type": "Answer", "text": "These searches reduce risks of trademark infringement by identifying conflicting trademarks early on."}}, {"@type": "Question", "name": "Do I need to register extra-provincially if expanding outside my province?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, you must register extra-provincially to operate legally outside your home jurisdiction."}}, {"@type": "Question", "name": "How can I keep track of renewal deadlines and compliance requirements?", "acceptedAnswer": {"@type": "Answer", "text": "Use compliance calendars and renewal reminders to avoid missed filings or penalties."}}]}]}
+</script>

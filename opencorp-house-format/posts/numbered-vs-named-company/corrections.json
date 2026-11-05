@@ -1,0 +1,67 @@
+[
+ {
+  "kind": "fact",
+  "from": "Privacy: No business name shows on public records, so it’s more private.",
+  "to": "Privacy: No business name shows on public records, although directors are still listed publicly."
+ },
+ {
+  "kind": "fact",
+  "from": "Cost Comparison: Numbered Company vs Named Corporation (2024)",
+  "to": "Cost Comparison: Numbered Company vs Named Corporation (2026)"
+ },
+ {
+  "kind": "editor",
+  "from": " [EDITOR: insert exact flat service fee incl. HST — e.g., $35]",
+  "to": ""
+ },
+ {
+  "kind": "fact",
+  "from": "Government Filing Fee\t$360\t$360\tOBCA articles filing fee_[1]",
+  "to": "Government Filing Fee\t$300\t$300\tOBCA articles filing fee[1]"
+ },
+ {
+  "kind": "typo",
+  "from": "Required only for named companies_[2]",
+  "to": "Required only for named companies[2]"
+ },
+ {
+  "kind": "typo",
+  "from": "Needed if using trade/business names_[3]",
+  "to": "Needed if using trade/business names[3]"
+ },
+ {
+  "kind": "fact",
+  "from": "It usually takes a few business days.",
+  "to": "Online filings are usually processed the same day."
+ },
+ {
+  "kind": "fact",
+  "from": "The trademark application fee at CIPO is $347 plus HST per class.",
+  "to": "The trademark application fee at CIPO is charged for the first class plus a lower fee for each additional class, with no HST, and it rises each January."
+ },
+ {
+  "kind": "editor",
+  "from": "[Published: June 15, 2026 — Last updated: June 15, 2026]",
+  "to": "[Published: November 5, 2026 — Last updated: November 5, 2026]"
+ },
+ {
+  "kind": "fact",
+  "from": "In Ontario, filing Articles of Incorporation costs $360.",
+  "to": "In Ontario, filing Articles of Incorporation costs $300."
+ },
+ {
+  "kind": "fact",
+  "from": "Corporations Canada charges $360 for Articles of Incorporation.",
+  "to": "Corporations Canada charges $200 for Articles of Incorporation."
+ },
+ {
+  "kind": "fact",
+  "from": "Applying for a trademark at CIPO costs $347 plus applicable HST per class registered.",
+  "to": "Applying for a trademark at CIPO costs a fee for the first class plus a lower fee for each additional class, with no HST; the fee rises each January."
+ },
+ {
+  "kind": "fact",
+  "from": "The Ministry of Government and Consumer Services Ontario oversees corporate name registrations and filings.",
+  "to": "The Ministry of Public and Business Service Delivery and Procurement oversees corporate name registrations and filings through the Ontario Business Registry."
+ }
+]
