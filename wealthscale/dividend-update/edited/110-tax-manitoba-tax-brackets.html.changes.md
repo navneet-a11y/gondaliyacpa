@@ -66,7 +66,7 @@ Source: pages-paste/110-tax-manitoba-tax-brackets.html. 19 replacements (FAQ vis
   - before: `"text": "Manitoba's 2026 dividend tax credit rates are being confirmed. No official 2026 statement had been published when we checked, so this page shows no Manitoba dividend figures and our calculators do not accept Manitoba dividends yet. Eligible dividends are still grossed up by 38% and other than eligible dividends by 15%, and both earn the federal credit. We add the Manitoba rates once they are confirmed."`
   - after: `"text": "Manitoba's dividend tax credit is 8% of the grossed-up amount for eligible dividends and 0.7835% for other than eligible dividends, the rates on CRA's Worksheet MB428 (line 61520). CRA publishes the 2026 worksheet in January 2027; Manitoba's 2026 budget made no change to personal income tax. Eligible dividends are grossed up by 38% and other than eligible dividends by 15%, and both also earn the federal credit."`
 
-## Reproduce-first checks (engine.py, scenario: marginal rate on $1 at each row's midpoint; $500,000 for the open-ended top row)
+## Reproduce-first checks (engine.py, scenario: marginal rate on $1 at each row's midpoint; $450,000 for the open-ended top row)
 
 Ordinary-income column of the same table, recomputed with `rates(x,'MB')` and compared to the published cells: all 11 rows match exactly (0.00, 10.80, 24.80, 26.75, 33.25, 37.90, 43.40, 46.69, 47.55, 51.25, 50.40%). Additional total-tax checks against published page figures: `total(75000,'MB')` = 16,209.49 (page: $16,209.49); `total(60000,'MB')` = 11,221.99 (page: $11,221.99). Matched, so the new dividend cells were filled.
 
