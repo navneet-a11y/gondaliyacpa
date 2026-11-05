@@ -493,7 +493,13 @@ T73 = dict(
    'first trades, and the return for that year is due six months after '
    'whichever year-end it adopts.</p>\n'
    '<p>Nothing arrives to prompt anyone, which is why the first contact is '
-   'often a demand to file covering several years at once.</p>'),
+   'often a demand to file covering several years at once.</p>\n'
+   '<p>One thing a never-traded corporation often does still have is a '
+   'website, bought when the plan was live. The '
+   + a(T + 'schedule-88-internet-activities-checker/',
+       'Schedule 88 internet activities checker')
+   + ' separates a domain that earns nothing, which leaves the year nil, '
+   'from a page that took an order.</p>'),
   ('what-a-first-return-carries', 'What a First Return Carries',
    _tbl(['On the return', 'Needed on a never-traded year?', 'Why'],
         [['Schedule 24, first-time filer information', 'Yes',
@@ -869,7 +875,17 @@ T76 = dict(
    + PRICE + ' on each of those returns.</p>\n'
    '<p>So the arithmetic is corporations multiplied by years, which is the '
    'figure people are usually surprised by when they own three or four '
-   'dormant companies rather than one.</p>'),
+   'dormant companies rather than one.</p>\n'
+   '<p>Owning several does add two questions a single corporation never '
+   'faces. The '
+   + a(T + 'schedule-9-related-corporations-checker/',
+       'Schedule 9 related corporations checker')
+   + ' covers reporting the relationship, which a dormant corporation owes '
+   'and which leaves its year nil, and the '
+   + a(T + 'schedule-23-association-agreement-checker/',
+       'Schedule 23 association agreement checker')
+   + ' covers the business limit the group shares, which a nil year has '
+   'nothing to claim against.</p>'),
   ('the-arithmetic', 'What the Multiplication Looks Like',
    _tbl(['Corporations', 'Quiet years each', 'Returns', 'Before tax'],
         [['1', '2', '2', '$600.00'],

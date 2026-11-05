@@ -37,6 +37,13 @@ They do not belong in any of the ten groups, so they sit in an eleventh,
 "Signing, Transmission and What the Fee Covers". The assert above is what
 caught that they needed cards at all.
 
+NOVEMBER 5, 2026, SECOND PASS: NINETY TO NINETY-FIVE
+
+Batch 13 added five schedule checkers -- Schedule 3, 7, 9, 23 and 88 -- which
+join the existing "The Return Itself: Schedules and GIFI" group, taking it
+from seventeen cards to twenty-two. No new group: the group is exactly this
+subject, and the five are the schedules it did not yet cover.
+
 NOVEMBER 5, 2026: EIGHTY-FIVE TO NINETY
 
 Batch 12 added five tools on the registry side: the Ontario Business
@@ -232,6 +239,25 @@ GROUPS = [
    'Form T183CORP Signature Requirement Checker',
    'Who may sign, when it is signed, how long the firm keeps it, and whether '
    'it goes to the Canada Revenue Agency.'),
+  ('schedule-3-dividends-paid-checker', 'Schedule 3 Dividends Paid Checker',
+   'A dividend paid, received or declared puts the year on Schedule 3, and '
+   'takes it out of nil at the same time.'),
+  ('schedule-7-investment-income-calculator',
+   'Schedule 7 Investment Income Calculator',
+   'Enter the interest, rent and other passive amounts for the total that '
+   'goes on Schedule 7, and what it means for the year.'),
+  ('schedule-9-related-corporations-checker',
+   'Schedule 9 Related Corporations Checker',
+   'Related and associated corporations go here, not on Schedule 50. It '
+   'reaches a dormant corporation and leaves the year nil.'),
+  ('schedule-23-association-agreement-checker',
+   'Schedule 23 Association Agreement Checker',
+   'Associated corporations share one business limit. Whether this one has '
+   'any of it to allocate, which a nil year does not.'),
+  ('schedule-88-internet-activities-checker',
+   'Schedule 88 Internet Activities Checker',
+   'Income earned from a web page is what it reports. A parked domain that '
+   'earns nothing sits outside it.'),
  ]),
 
  ('Shareholders and Share Capital', [

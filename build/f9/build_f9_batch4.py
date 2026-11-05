@@ -35,6 +35,7 @@ HERE  = os.path.dirname(os.path.abspath(__file__))
 SITE  = 'https://corpnilfilingfor300.ca'
 FORM  = SITE + '/form/'
 HUB   = SITE + '/guides/'
+TOOLS = SITE + '/tools/'
 A     = SITE + '/answers/'
 COST  = SITE + '/pricing/nil-t2-filing-cost/'
 TODAY, ISO = 'October 22, 2026', '2026-10-22'
@@ -635,7 +636,26 @@ G16 = dict(
    '34.2 amount.</p>\n'
    '<p>Qualifying for the shorter form does not remove a schedule that is '
    'otherwise required. Eligibility is covered in the guide to '
-   + a(HUB + 't2-short-eligibility/', 'T2 Short eligibility') + '.</p>'),
+   + a(HUB + 't2-short-eligibility/', 'T2 Short eligibility') + '.</p>\n'
+   '<p>Several of those conditions make the same point from the other side: a '
+   'schedule that reports income is a sign the year is not nil at all. The '
+   + a(TOOLS + 'schedule-3-dividends-paid-checker/',
+       'Schedule 3 dividends paid checker')
+   + ' and the '
+   + a(TOOLS + 'schedule-7-investment-income-calculator/',
+       'Schedule 7 investment income calculator')
+   + ' each test that directly, and the '
+   + a(TOOLS + 'schedule-88-internet-activities-checker/',
+       'Schedule 88 internet activities checker')
+   + ' does it for a site that still earns.</p>\n'
+   '<p>Two schedules work the other way, reporting a position rather than '
+   'income, and a nil year stays nil although they apply: the '
+   + a(TOOLS + 'schedule-9-related-corporations-checker/',
+       'Schedule 9 related corporations checker')
+   + ' and the '
+   + a(TOOLS + 'schedule-23-association-agreement-checker/',
+       'Schedule 23 association agreement checker')
+   + '.</p>'),
   ('included', 'Every Schedule Above Is in the Price',
    '<p>There is no per-schedule charge. The fee of ' + PRICE + ' covers one nil T2 '
    'return for one corporation for one tax year, with whichever of these schedules '

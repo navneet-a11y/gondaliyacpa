@@ -8195,3 +8195,105 @@ are deleted from live.
 `wp_update_site_settings` is switched off on this connector, so
 `default_category` was set through the `/wp/v2/settings` REST route instead,
 which the disabled-tools note itself points to as the alternative.
+
+## 2026-11-05 -- Family 2 batch 13: tools 91 to 95, and what Appendix A really holds
+
+Family 2 goes from ninety to **ninety-five**. Five Appendix A schedule
+checkers, published as IDs 1888, 1898, 1903, 1908 and 1913:
+
+| ID | URL | What it answers |
+|---|---|---|
+| 1888 | `/tools/schedule-3-dividends-paid-checker/` | Whether a dividend paid, received or declared puts the year on Schedule 3 |
+| 1898 | `/tools/schedule-7-investment-income-calculator/` | Totals the interest, rent and other passive amounts the visitor enters |
+| 1903 | `/tools/schedule-9-related-corporations-checker/` | Whether the corporation reports a related or associated corporation |
+| 1908 | `/tools/schedule-23-association-agreement-checker/` | Whether this corporation has any of the shared business limit to allocate |
+| 1913 | `/tools/schedule-88-internet-activities-checker/` | Whether a site earned anything, or is a parked domain |
+
+### What Appendix A actually contains, corrected
+
+Appendix A lists Family 2 as root-relative slugs with **no `/tools/` prefix**
+(`/nil-t2-eligibility-checker/`, not `/tools/nil-t2-eligibility-checker/`).
+An extraction looking for the prefixed form finds only the 14 named in the
+plan's prose, which is what made the list look short. Extracted properly:
+
+- **150** Appendix A entries for Family 2, as the heading says.
+- Of the 90 pages live before this batch, **55 were Appendix A URLs and 35
+  were slugs we invented**.
+- **95 Appendix A entries were unbuilt**, and **37 of those 95 are
+  near-duplicates of a live page under another name.** Scored by token
+  overlap against every live slug: `/first-tax-year-53-week-checker/` is the
+  live `53-week-first-tax-year-checker` with the words reordered (1.00);
+  `/t2-filing-deadline-calculator/` and `/t2-six-month-deadline-calculator/`
+  are both the live `nil-t2-deadline-calculator`;
+  `/penalty-on-zero-balance-owing-checker/` is `nil-return-late-penalty-checker`;
+  `/cra-letter-response-deadline-calculator/` is
+  `cra-demand-to-file-deadline-calculator`; `/notional-assessment-risk-checker/`
+  is `arbitrary-assessment-response-checker`. Appendix A holds both members
+  of several of those pairs itself.
+
+**So "build the next five in Appendix A order" would publish thin
+duplicates.** This batch was therefore picked by subject: all five score 0.17
+to 0.20 against their nearest live page, the site having had only GIFI 100,
+125 and 141, Schedule 50, Schedule 24, Schedule 8 and Schedule 546.
+
+**Open for Navneet and Sharad Gondaliya: the 150 cannot be reached honestly
+without a ruling.** Either the 35 invented slugs are renamed to their
+Appendix A equivalents with redirects, or they stand as extra and 150
+Appendix A URLs are built on top, giving 185. `build/f2/build_f2m.py` now
+asserts each slug against the plan file itself, so a future batch cannot
+claim Appendix A membership it does not have.
+
+### Schedule 1 was dropped, and why that is a content question
+
+`/schedule-1-net-income-reconciliation-calculator/` was in this batch and came
+out of it. `/guides/t2-schedules-on-a-nil-return/` answers "which schedules a
+nil return needs" with a closed list -- GIFI 100, 125 and 141, Schedule 50,
+Schedule 24, Schedule 8 -- and says every schedule on it is in the price.
+Schedule 1 is not on that list. A tool asserting a nil return also carries
+Schedule 1 would contradict the published guide. Either the guide's list is
+incomplete or Schedule 1 belongs outside it; that is an editorial ruling, not
+something a tool page settles. **Open item.**
+
+### Schedule 9 is in the batch on purpose
+
+Four of the five answer the nil question as well as the schedule question, and
+four of them answer it the same way. Schedule 9 does not: a relationship is
+reported whether or not either corporation traded, so it reaches a dormant
+corporation and **leaves the year nil**. Without it the batch would read as
+"every schedule means you are not nil", which is false. The site already had
+the sentence that sets it up: "Schedule 50 is not the schedule that reports
+related or associated corporations."
+
+### Gates, and two defects they caught in my own work
+
+- `gate_batch.py` clear on all five. `gate_f2_all.py` clear on 95 pages --
+  **but it failed first**, on all five pages closing with one shared
+  sentence. That is the templated-content defect the gate exists to find.
+  Each page now closes in its own words, asserted per slug in the builder.
+- `test_f2m_dom.js`: 28 passed, 0 failed (24 cases, 4 decoys). Writing it
+  surfaced a counting bug inherited from `test_f2l_dom.js`, which incremented
+  the tally **twice per check**: batch 12's reported "42 passed" was 21
+  checks counted twice. Both suites now count once, and batch 12 re-runs at
+  21 passed, 0 failed. The checks were always sound; the number was not.
+- `gate_batch.py` crashed on `build_f2h`, which predates the STRUCTURE
+  contract. It now skips the section-set block for such a batch and runs the
+  hard rules, saying so, rather than failing. Batches 8, 10, 11, 12 and 13
+  all gate clear.
+
+### Hub, ledger and inbound
+
+The `/tools/` hub goes to **95 cards in 11 groups**, and gets no new group:
+"The Return Itself: Schedules and GIFI" is exactly this subject and goes from
+17 cards to 22. Live page 1187 patched in one insertion, 32,367 -> 33,806
+bytes, `cnf_child_count` to 95. Ledger to **249 items**, `gate_rank_math.py`
+passes.
+
+6(g) inbound, minimum 3: all five reached it through four host-page edits,
+each landing on its built byte count. `/guides/t2-schedules-on-a-nil-return/`
+(1100) takes two paragraphs linking all five, which is the editorially right
+host since it is the pillar for the subject; `required-schedules-checker`
+(1512) takes Schedule 3 and Schedule 7; `multiple-corporation-filing-cost-calculator`
+(1641) takes Schedule 9 and Schedule 23; `never-traded-corporation-checker`
+(1632) takes Schedule 88. Inbound is now 3, 3, 4, 3, 3.
+
+Still not verified in a browser: the egress proxy refuses the site.

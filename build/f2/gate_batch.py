@@ -24,7 +24,15 @@ from build_f2 import PRICE, TOOL_DISCLAIMER
 MODULE = sys.argv[1] if len(sys.argv) > 1 else 'build_f2l'
 ATTR = sys.argv[2] if len(sys.argv) > 2 else 'TOOLS12'
 _m = importlib.import_module(MODULE)
-TOOLS, STRUCTURE = getattr(_m, ATTR), _m.STRUCTURE
+TOOLS = getattr(_m, ATTR)
+# Batches before 10 predate the structure contract and define no STRUCTURE.
+# Their hard-rule checks still apply, so the gate runs them and skips only the
+# structure block rather than crashing, which is what it did on build_f2h.
+STRUCTURE = getattr(_m, 'STRUCTURE', None)
+STRUCTURAL = STRUCTURE is not None
+if not STRUCTURAL:
+    print('note: %s defines no STRUCTURE, so the section-set block is skipped'
+          % MODULE)
 
 fail = []
 for t in TOOLS:
@@ -106,41 +114,42 @@ for t in TOOLS:
     if '<table class="ei-tbl"' not in _body_only:
         bad('no static reference table in the body')
 
-    # ---------------- the section set, checked on the rendered page --------
-    _body = _body_only
-    _h2 = re.findall(r'<h2 class="ei-h2">(.*?)</h2>', _body, re.S)
-    if len(_h2) != STRUCTURE['sections'] + 2:
-        bad('%d H2 sections, the contract is %d prose plus FAQ plus Read Next'
-            % (len(_h2), STRUCTURE['sections']))
-    if _h2[-2:] != ['Frequently Asked Questions', 'Read Next']:
-        bad('the last two sections are not the FAQ and Read Next: %r'
-            % (_h2[-2:],))
-    if len(set(_h2)) != len(_h2): bad('two sections share a heading')
-    _ids = re.findall(r'<div class="ei-section(?:-alt)?" id="([\w-]+)">', c)
-    if len(_ids) != STRUCTURE['sections']:
-        bad('%d anchored prose sections, the contract is %d'
-            % (len(_ids), STRUCTURE['sections']))
-    if c.count('<details>') != STRUCTURE['faq']:
-        bad('%d FAQ items, the contract is %d'
-            % (c.count('<details>'), STRUCTURE['faq']))
-    _rel = re.search(r'<ul class="ei-qlist">(.*?)</ul>', _body, re.S)
-    if not _rel:
-        bad('no Read Next list')
-    else:
-        _n = _rel.group(1).count('<li>')
-        _cmp = _rel.group(1).count('/compare/')
-        if _n != STRUCTURE['related'] + _cmp:
-            bad('%d Read Next links (%d of them comparisons), the contract is '
-                '%d plus any mapped comparison link'
-                % (_n, _cmp, STRUCTURE['related']))
-    if c.count('<span class="ei-hero-tag">') != STRUCTURE['tags']:
-        bad('%d hero tags, the contract is %d'
-            % (c.count('<span class="ei-hero-tag">'), STRUCTURE['tags']))
-    if _body.count('<table class="ei-tbl"') < STRUCTURE['body_tables']:
-        bad('no static reference table in the body')
-    _script = c[c.rindex('<script>'):] if '<script>' in c else ''
-    if _script.count('<table class="ei-tbl"') < STRUCTURE['result_tables']:
-        bad('the result draws no table')
+    if STRUCTURAL:
+        # ---------------- the section set, checked on the rendered page --------
+        _body = _body_only
+        _h2 = re.findall(r'<h2 class="ei-h2">(.*?)</h2>', _body, re.S)
+        if len(_h2) != STRUCTURE['sections'] + 2:
+            bad('%d H2 sections, the contract is %d prose plus FAQ plus Read Next'
+                % (len(_h2), STRUCTURE['sections']))
+        if _h2[-2:] != ['Frequently Asked Questions', 'Read Next']:
+            bad('the last two sections are not the FAQ and Read Next: %r'
+                % (_h2[-2:],))
+        if len(set(_h2)) != len(_h2): bad('two sections share a heading')
+        _ids = re.findall(r'<div class="ei-section(?:-alt)?" id="([\w-]+)">', c)
+        if len(_ids) != STRUCTURE['sections']:
+            bad('%d anchored prose sections, the contract is %d'
+                % (len(_ids), STRUCTURE['sections']))
+        if c.count('<details>') != STRUCTURE['faq']:
+            bad('%d FAQ items, the contract is %d'
+                % (c.count('<details>'), STRUCTURE['faq']))
+        _rel = re.search(r'<ul class="ei-qlist">(.*?)</ul>', _body, re.S)
+        if not _rel:
+            bad('no Read Next list')
+        else:
+            _n = _rel.group(1).count('<li>')
+            _cmp = _rel.group(1).count('/compare/')
+            if _n != STRUCTURE['related'] + _cmp:
+                bad('%d Read Next links (%d of them comparisons), the contract is '
+                    '%d plus any mapped comparison link'
+                    % (_n, _cmp, STRUCTURE['related']))
+        if c.count('<span class="ei-hero-tag">') != STRUCTURE['tags']:
+            bad('%d hero tags, the contract is %d'
+                % (c.count('<span class="ei-hero-tag">'), STRUCTURE['tags']))
+        if _body.count('<table class="ei-tbl"') < STRUCTURE['body_tables']:
+            bad('no static reference table in the body')
+        _script = c[c.rindex('<script>'):] if '<script>' in c else ''
+        if _script.count('<table class="ei-tbl"') < STRUCTURE['result_tables']:
+            bad('the result draws no table')
     for _marker, _what in (
             ('ei-hero-eyebrow', 'hero eyebrow'),
             ('ei-hero-by', 'hero byline'),

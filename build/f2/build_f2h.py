@@ -885,7 +885,15 @@ TOOLS8 = [
     + ' and the '
     + a(T + 'schedule-8-cca-requirement-checker/',
         'Schedule 8 CCA requirement checker')
-    + ' each go further than this page does.</p>'),
+    + ' each go further than this page does.</p>\n'
+    '<p>Two more sit outside the seven answers, because reaching either of '
+    'them settles a different question. The '
+    + a(T + 'schedule-3-dividends-paid-checker/',
+        'Schedule 3 dividends paid checker')
+    + ' and the '
+    + a(T + 'schedule-7-investment-income-calculator/',
+        'Schedule 7 investment income calculator')
+    + ' each test a year that is not nil at all.</p>'),
    ('the-five', 'Five Things Withdraw the GIFI Permission',
     '<p>A corporation inactive all year with nothing to report may omit GIFI '
     'Schedules 100, 125 and 141. Any share capital, cash, shareholder loan, '
