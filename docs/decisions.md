@@ -7557,7 +7557,13 @@ Nothing remains that can be built from published material alone.
 - **6 brand pages** wait on dated competitor published prices, which this
   environment's network policy denies and which need approval before going
   live in any case.
-- **6 concept pages** wait on one ruling: `/dissolving-vs-filing-nil-every-year/`,
+- **The concept pages left** wait on one ruling. How many there are is not
+  clean, and the plan is the reason: Appendix A's F7 heading says 20 URLs and
+  then lists 13. Five of those 13 are now live, three of the eight live pages
+  are off-Appendix-A additions logged earlier, and the other concept names
+  below come from the line 1242 keyword list filling that gap. So 8 live
+  against a stated 20, with 6 named brand pages and the rest concept:
+  `/dissolving-vs-filing-nil-every-year/`,
   `/diy-vs-cpa-nil-t2/`, `/nil-t2-vs-nil-gst-hst-return/`,
   `/ontario-annual-return-vs-t2/`,
   `/nil-t2-vs-ontario-annual-return-vs-federal-annual-return/`,
