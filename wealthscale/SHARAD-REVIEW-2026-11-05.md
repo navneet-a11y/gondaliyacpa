@@ -85,3 +85,26 @@ Rates are a percent of the grossed-up (taxable) dividend. The 2026 CRA 428 forms
 | 5 | CMHC 0.20% surcharge | Keep |
 
 Full research notes: dtc.md, lowincome-quebec.md and cdb-cmhc.md (copied next to this file in wealthscale/research-2026-11-05/).
+
+---
+
+## Update, November 5 (after canada.ca was allowed): official CRA 2025 forms read
+
+The 2025 CRA forms were downloaded from canada.ca and read directly (copies in research-2026-11-05/cra-2025-forms/).
+
+**Item 1, dividend tax credit: CONFIRMED for 2025 from CRA worksheets (line 61520), matching every figure in the table above.** Rate x line 12000 minus line 12010 (eligible, grossed-up) and rate x line 12010 (non-eligible, grossed-up):
+
+| Province | Eligible | Non-eligible | CRA source |
+|---|---|---|---|
+| Alberta | 8.12% | 2.18% | Worksheet AB428 2025 (5009-d-fill-25e.pdf) |
+| Saskatchewan | 11% | 2.519% | Worksheet SK428 2025 (5008-d-fill-25e.pdf) |
+| Manitoba | 8% | 0.7835% | Worksheet MB428 2025 (5007-d-fill-25e.pdf) |
+| Yukon | 12.02% | 0.67% | Worksheet YT428 2025 (5011-d-fill-25e.pdf) |
+| Northwest Territories | 11.5% | 6% | Worksheet NT428 2025 (5012-d-fill-25e.pdf) |
+| Nunavut | 5.51% | 2.61% | Worksheet NU428 2025 (5014-d-fill-25e.pdf) |
+
+These are the 2025 rates. CRA publishes the 2026 worksheets in January 2027; no 2026 change to any of the six was found. For Sharad: confirm they may be shown as the 2026 rates (or as "2025 rates, 2026 not yet published").
+
+**Item 2, low-income reductions: 2025 official, 2026 NOT confirmed.** The 2025 forms give: NB eligibility single net income under $48,653 / family under $75,387; NS $300 basic + $300 spouse or eligible dependant (max $600) + $165 per child; PE $350 basic plus a $250 age reduction (born 1960 or earlier) and further amounts; NL $997 basic + $557 spouse. Several 2026 figures differ (NL basic $842 under NLR 18/26; PE threshold raised; NB indexed), and the 2026 forms are not out, so the 2026 values remain unconfirmed.
+
+**Item 3, Quebec:** revenuquebec.ca still refuses automated access; unchanged (no site change needed).
