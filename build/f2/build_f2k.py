@@ -716,8 +716,13 @@ for _t, _js in zip(TOOLS11, [T81_JS, T82_JS, T83_JS, T84_JS, T85_JS]):
 # ---- the contract, asserted rather than trusted ---------------------------
 _LIVE = {f[:-5] for f in os.listdir(HERE) if f.endswith('.html')}
 _THIS = {t['slug'] for t in TOOLS11}
-assert len(_LIVE - _THIS) == 80, (
-    'expected 80 tools already built, found %d' % len(_LIVE - _THIS))
+# A subset test, not an exact count: the next batch adds files to this
+# directory and an "== 80" here breaks every earlier builder the moment it
+# does. Batch 12 broke this one on 2026-11-05, as batch 11 broke build_f2j's.
+_EARLIER = _LIVE - _THIS
+assert len(_EARLIER) >= 80, (
+    'expected at least the 80 tools of batches 1 to 10, found %d'
+    % len(_EARLIER))
 PUBLISHED = _THIS <= _LIVE
 
 for t in TOOLS11:

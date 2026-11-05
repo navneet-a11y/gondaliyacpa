@@ -36,6 +36,16 @@ Batch 11 added five tools on signing, transmission and the scope of the fee.
 They do not belong in any of the ten groups, so they sit in an eleventh,
 "Signing, Transmission and What the Fee Covers". The assert above is what
 caught that they needed cards at all.
+
+NOVEMBER 5, 2026: EIGHTY-FIVE TO NINETY
+
+Batch 12 added five tools on the registry side: the Ontario Business
+Registry, Schedule 546 and the 2021 cutover, outstanding Ontario annual
+returns, extra-provincial registration and revival after being struck. These
+are the same subject as the four cards already under "Annual Returns and
+the Registry" -- which is where the four host pages batch 12 links from sit
+-- so they join that group rather than opening a twelfth. The provincial
+group stays separate: it is about CO-17 and AT1, which are tax returns.
 """
 import io, json, os
 
@@ -43,7 +53,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 SITE = 'https://corpnilfilingfor300.ca'
 HUB = SITE + '/tools/'
 FORM = SITE + '/form/'
-TODAY, ISO = 'November 4, 2026', '2026-11-04'
+TODAY, ISO = 'November 5, 2026', '2026-11-05'
 PRICE = '$300.00 plus HST per tax year'
 TITLE = 'Nil T2 Filing Tools and Calculators'
 PAGE_TITLE = 'Nil T2 Filing Tools and Calculators for Canadian Corporations'
@@ -325,6 +335,26 @@ GROUPS = [
    'Involuntary Dissolution Risk Checker',
    'A missed annual return gets a corporation struck rather than charged, and '
    'the tax years survive it.'),
+  ('ontario-business-registry-filing-checker',
+   'Ontario Business Registry Filing Checker',
+   'The annual return, address changes and director changes go through the '
+   'Ontario Business Registry. Four answers name which of them you owe.'),
+  ('schedule-546-ontario-annual-return-checker',
+   'Schedule 546 Ontario Annual Return Checker',
+   'The Ontario annual return travelled with the T2 until 2021. Enter a tax '
+   'year-end to see which route applied to that year.'),
+  ('ontario-missed-annual-returns-calculator',
+   'Ontario Missed Annual Returns Calculator',
+   'One annual return falls due for each tax year. Enter the year-end of the '
+   'last one filed to count how many are outstanding since.'),
+  ('extra-provincial-registration-checker',
+   'Extra-Provincial Registration Checker',
+   'A corporation registered in more than one place owes each registry an '
+   'annual return. Four answers name which ones.'),
+  ('corporate-revival-requirement-checker',
+   'Corporate Revival Requirement Checker',
+   'Being struck by a registry is not a wind-up. Three answers show what '
+   'revival restores and which tax years survived the striking.'),
  ]),
 
  ('Winding Up and Dissolution', [

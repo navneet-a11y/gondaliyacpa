@@ -1343,7 +1343,12 @@ TOOLS8 += [
     '<p>Nearly every confusion on this subject comes from the shared noun. '
     'Once they are set beside each other the overlap turns out to be the '
     'word, which is why this page is a comparison rather than an '
-    'explanation.</p>'),
+    'explanation.</p>\n'
+   '<p>Until 2021 the Ontario annual return travelled with the T2, which is '
+   'why so many owners still expect it to. The '
+   + a(T + 'schedule-546-ontario-annual-return-checker/',
+       'Schedule 546 checker')
+   + ' dates that change against a particular tax year.</p>'),
    ('neither-covers-the-other', 'Filing One Does Nothing for the Other',
     '<p>A corporation can be up to date on its annual returns and have six '
     'years of unfiled T2 returns behind it. The registry is satisfied and the '
@@ -1820,6 +1825,14 @@ GUIDES8 = {
 
 _ORDER = set(ORDER8)
 
+# Same widening as build_f2f, build_f2g and build_f2j: a tool published after
+# this batch is a real body-link target, and batch 12 wired one into this
+# batch's annual-return-vs-tax-return checker.
+_TOOLS_LIVE_H = set(json.load(io.open(
+    os.path.join(HERE, '..', 'f16', 'tools-hub-children.json'),
+    encoding='utf-8'))['slugs'])
+_LINKABLE = _ORDER | _TOOLS_LIVE_H
+
 assert len(TOOLS8) == 10, '%d tools in batch 8' % len(TOOLS8)
 assert len({t['slug'] for t in TOOLS8}) == 10, 'duplicate slug in the batch'
 
@@ -1933,7 +1946,7 @@ assert set(GUIDES8) == {t['slug'] for t in TOOLS8}, 'GUIDES8 mismatch'
 for t in TOOLS8:
     _all = ' '.join(b for _, _, b in t['sections']) + t['form']
     for s in set(_re.findall(r'/tools/([a-z0-9-]+)/', _all)):
-        assert s in _ORDER, (
+        assert s in _LINKABLE, (
             '%s: body links to /tools/%s/, which does not exist'
             % (t['slug'], s))
     for g in set(_re.findall(r'/guides/([a-z0-9-]+)/', _all)):

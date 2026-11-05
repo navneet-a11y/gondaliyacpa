@@ -8001,3 +8001,60 @@ is still visible, that is why, and the fix is one more selector.
 the same reason: none of them is a chronological series. Only
 `nil_comparison` was asked for and only `nil_comparison` was changed.
 Extending it is one line per post type and is Navneet's call.
+
+## 2026-11-05 -- Family 2 batch 12: calculators 86 to 90, the registry side
+
+Navneet asked for the next calculators. Family 2 goes from eighty-five to
+**ninety**, back inside Appendix A, with the five tools the registry side of
+the site had no tool for at all:
+
+| ID | URL | What it answers |
+|---|---|---|
+| 1840 | `/tools/ontario-business-registry-filing-checker/` | Which of the annual return, address change and director change you owe, and that none of them is the T2 |
+| 1841 | `/tools/schedule-546-ontario-annual-return-checker/` | Whether a given tax year's Ontario annual return travelled with the T2 or goes through the registry |
+| 1842 | `/tools/ontario-missed-annual-returns-calculator/` | How many Ontario annual returns are outstanding since the last one filed |
+| 1843 | `/tools/extra-provincial-registration-checker/` | Which registries want an annual return from a corporation registered in more than one place |
+| 1844 | `/tools/corporate-revival-requirement-checker/` | What revival restores after a striking, and which tax years survived it |
+
+Every page says, in its own words, that a registry filing is not a tax filing.
+That is the point of the batch: the four tools already on this subject
+(annual return vs tax return, the federal anniversary and fee calculators and
+the involuntary dissolution risk checker) all sit on the federal side or on the
+boundary, and nothing covered Ontario's own registry or a second province.
+
+**Hard rules.** `gate10.py` clear on all five, `gate_f2_all.py` clear on all
+ninety, `test_f2l_dom.js` 42 passed and 0 failed with all four decoys caught.
+The DOM harness gained a tag-balance check this batch: a malformed-table decoy
+passed 42 of 42 before it, because the harness reads text with the tags
+stripped and a broken `<tbody>` leaves the text intact.
+
+**Appendix A.** Established earlier in the week that Appendix A lists all 150
+Family 2 URLs, so batches 4 to 11 going outside it was never forced. These five
+are back inside it. `/ontario-annual-return-deadline-calculator/` was ruled
+out: no Ontario annual-return due window is published anywhere on the site, and
+a tool may not be the first place a figure appears.
+
+**Inbound (6(g), minimum 3).** 86 has 4, 87 has 3, 88 has 4, 89 has 3, 90 has
+3, after four live host-page edits: posts 1524, 1502, 1180 and 1432 each took
+one sentence, landing on the byte counts the rebuilt files predicted
+(29,444 / 28,034 / 24,298 / 29,056).
+
+**The hub did not get a twelfth group.** Batch 11's five needed one, because
+nothing on the hub covered signing and transmission. These five did not: the
+hub already has **"Annual Returns and the Registry"**, holding exactly the four
+host pages above, so the five join it and that group goes from 4 cards to 9.
+The hub is 90 cards in 11 groups, 32,367 bytes, patched live in three surgical
+edits off a rebuild of the previous version from git, which matched the live
+page byte for byte first (30,861). `cnf_child_count` on page 1187 was still
+**60** from October and is now 90; the count line itself is a live shortcode,
+so nothing visible was ever wrong, but the stored figure was.
+
+**A duplicate-key trap, and the lint for it.** Adding inbound links meant
+editing the `COMPARE_F7` map in seven builders, and a key added twice is lost
+silently -- Python keeps the later one and every assert still passes.
+`build/f2/lint_compare_f7.py` now reads each builder's source and fails on a
+repeated key. It caught one real instance in `build_f2c.py`.
+
+**Still not verified in a browser.** The egress proxy refuses
+corpnilfilingfor300.ca, as it has all session, so every claim here is from
+byte counts, the gates and the DOM harness, not from the rendered page.

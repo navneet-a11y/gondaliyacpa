@@ -634,7 +634,12 @@ TOOLS2 = [
     '<p>The federal annual return is not covered by the fee of ' + PRICE +
     '. Nor is an Ontario annual return through the Ontario Business Registry, '
     'an Alberta AT1, a Quebec CO-17, or a nil GST/HST or payroll filing. We '
-    'tell you which of these you still owe.</p>'),
+    'tell you which of these you still owe.</p>\n'
+   '<p>A corporation registered in more than one place owes each registry its '
+   'own annual return. The '
+   + a(T + 'extra-provincial-registration-checker/',
+       'extra-provincial registration checker')
+   + ' works through which ones.</p>'),
   ],
   faq=[
    ('Is the Federal Annual Return the Same as the T2?',

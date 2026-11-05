@@ -1191,7 +1191,12 @@ TOOLS7 += [
     '<p>That is worth being direct about rather than leaving a visitor to '
     'discover it. The '
     + a(COST, 'nil T2 filing cost') + ' page sets out the whole boundary of '
-    'what sits inside the fee and what does not.</p>'),
+    'what sits inside the fee and what does not.</p>\n'
+   '<p>Registration is a separate question from tax. The '
+   + a(T + 'extra-provincial-registration-checker/',
+       'extra-provincial registration checker')
+   + ' names which registries want an annual return from a corporation '
+   'registered in more than one place.</p>'),
    ('not-the-registry', 'The Registry Annual Return Is a Different Thing',
     '<p>Every corporation also owes an annual return to the registry it is '
     'incorporated with, federally or provincially. That is a registry filing '

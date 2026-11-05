@@ -1317,7 +1317,12 @@ TOOLS6 = [
     'owed in 2021.</p>\n'
     '<p>That is why a striking is not a way of closing a corporation. It ends '
     'the legal existence and leaves the tax side exactly as it was, which is '
-    'the opposite of a clean wind-up.</p>'),
+    'the opposite of a clean wind-up.</p>\n'
+   '<p>Being struck is not the end of it either. The '
+   + a(T + 'corporate-revival-requirement-checker/',
+       'corporate revival requirement checker')
+   + ' takes what revival restores and which tax years survived the '
+   'striking.</p>'),
    ('revival', 'Revival Is the Way Back',
     '<p>Registries provide for revival, which restores the corporation so the '
     'outstanding filings can be made and a proper wind-up completed. The open '
@@ -1702,6 +1707,16 @@ GUIDES6 = {
 import re as _re
 
 _ORDER = set(ORDER6)
+
+# A tool published after this batch is a legitimate body-link target: batch 12
+# wired an inbound link into this batch's involuntary dissolution checker, and
+# ORDER6 ends at batch 6. Same widening build_f2g.py and build_f2j.py already
+# carry, and the live set still comes from the file the /tools/ hub builds
+# from, so a typo fails here rather than shipping a 404.
+_TOOLS_LIVE_F = set(json.load(io.open(
+    os.path.join(HERE, '..', 'f16', 'tools-hub-children.json'),
+    encoding='utf-8'))['slugs'])
+_LINKABLE = _ORDER | _TOOLS_LIVE_F
 _GUIDES_LIVE = {
  'nil-t2-return-complete-guide', 'dormant-and-inactive-corporations',
  'catch-up-unfiled-corporate-tax-returns', 'final-t2-and-dissolution',
@@ -1797,7 +1812,7 @@ assert set(GUIDES6) == {t['slug'] for t in TOOLS6}, 'GUIDES6 mismatch'
 for t in TOOLS6:
     _all = ' '.join(b for _, _, b in t['sections']) + t['form']
     for s in set(_re.findall(r'/tools/([a-z0-9-]+)/', _all)):
-        assert s in _ORDER, '%s: body links to /tools/%s/, which does not exist' % (
+        assert s in _LINKABLE, '%s: body links to /tools/%s/, which does not exist' % (
             t['slug'], s)
     for g in set(_re.findall(r'/guides/([a-z0-9-]+)/', _all)):
         assert g in _GUIDES_LIVE, (
