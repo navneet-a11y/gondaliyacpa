@@ -8058,3 +8058,66 @@ repeated key. It caught one real instance in `build_f2c.py`.
 **Still not verified in a browser.** The egress proxy refuses
 corpnilfilingfor300.ca, as it has all session, so every claim here is from
 byte counts, the gates and the DOM harness, not from the rendered page.
+
+## 2026-11-05 -- Batch 12 FAQs: 3 items to 10, and a gate that was never run
+
+Navneet asked for more FAQs, confirmed as **10 per page on the five batch 12
+calculators**. `STRUCTURE['faq']` in `build_f2l.py` goes from 3 to 10 and 35
+new answers were written. Live byte counts match the built files exactly:
+
+| ID | Page | Bytes |
+|---|---|---|
+| 1840 | ontario-business-registry-filing-checker | 27,841 -> 29,796 |
+| 1841 | schedule-546-ontario-annual-return-checker | 26,175 -> 28,126 |
+| 1842 | ontario-missed-annual-returns-calculator | 26,311 -> 28,229 |
+| 1843 | extra-provincial-registration-checker | 28,013 -> 29,950 |
+| 1844 | corporate-revival-requirement-checker | 27,889 -> 29,776 |
+
+**Only batch 12 changed.** The other 85 tool pages stay at 3, so Family 2 is
+now inconsistent on this one contract. That was the explicit choice when the
+scope was put to Navneet: ten on five pages, rather than 630 new answers
+across ninety. If the rest should follow, it is its own piece of work.
+
+**No new facts.** Every answer restates something the site already publishes
+-- the October 2021 cutover, the $12.00 federal annual return, striking and
+what survives it, a clearance certificate being blocked by an open year. Two
+answers were deliberately written *not* to give a figure: the revival window
+("each registry sets its own") and the consequence of missed annual returns,
+which names a striking rather than a sum of money. A tool page is still not
+the first place a number appears on this site.
+
+Rule 3 needed care on the missed-returns page, where the natural phrasing is
+the banned one. "Is there a charge for each missed annual return?" is answered
+with what the registry does instead, and the phrase "no penalty" appears
+nowhere.
+
+### The gate gap: batches 11 and 12 published ungated
+
+`gate10.py` names its batch in an import line (`from build_f2j import
+TOOLS10`). Gating a new batch therefore meant copying the file and editing
+that line, and nobody had: **batches 11 and 12 both published without any
+per-page hard-rule gate being run over their rendered HTML.** "gate10.py
+clear" was true both times and was gating batch 10's pages. `gate_f2_all.py`
+did not cover it -- it only compares pages against each other for duplicates.
+
+Replaced with `build/f2/gate_batch.py`, which takes the builder and the tools
+attribute as arguments, so there is nothing to copy and nothing to forget:
+
+    python3 gate_batch.py build_f2l TOOLS12
+
+Run over batches 10, 11 and 12. All three now pass.
+
+### The gate was also blind to JavaScript string joins
+
+Running it over batch 11 failed rule 1 on
+`nil-t2-filing-progress-checker`: a bare EFILE. The page is **compliant** --
+the text reads "registered EFILE electronic filer" -- but the result screen
+builds that sentence by concatenation, `'...electronic ' + 'filer.'`, and the
+check could not see across the join.
+
+Fixed by gluing adjacent string literals before any text rule runs, rather
+than by excusing this one page. The false positive is the harmless half of
+that bug: **a banned phrase split across a join would have gone through
+unseen.** That hole was open for every batch this gate family has ever run on.
+
+Still not verified in a browser: the egress proxy refuses the site.

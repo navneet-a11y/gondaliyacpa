@@ -266,6 +266,35 @@ T86 = dict(
   ('Is any of this included in nil T2 filing?',
    'No. Registry filings are not part of nil T2 filing at $300.00 plus HST '
    'per tax year, and filing the T2 does not satisfy an annual return.'),
+  ('Does filing the T2 update the registry?',
+   'No. The two go to different bodies and neither carries anything to '
+   'the other. A registry record stays exactly as it was until a '
+   'registry filing changes it.'),
+  ('What goes wrong when the registered office address is stale?',
+   'Mail stops arriving anywhere anyone reads it. That includes the '
+   'notice warning that the corporation is about to be struck for a '
+   'missed annual return, which is the one letter an owner most needs '
+   'to see.'),
+  ('A director has resigned. What do I file?',
+   'A change of directors, through the registry. It is its own filing, '
+   'separate from the annual return, and it is reported nowhere on the '
+   'corporate tax return.'),
+  ('Does a dormant corporation have to keep any of this current?',
+   'Yes. The registry asks who the directors are and where the office '
+   'is, and those answers are owed whether or not the corporation '
+   'traded in the year.'),
+  ('Who is allowed to make these filings?',
+   'Someone with authority to bind the corporation, which in practice '
+   'means a director or an officer. An adviser can file on '
+   'instructions, but the authority still comes from inside the '
+   'corporation.'),
+  ('Does the registry pass anything to the Canada Revenue Agency?',
+   'No. The two keep separate records and neither reports a filing '
+   'status to the other, so being current in one place proves nothing '
+   'about the other.'),
+  ('Is a numbered company treated any differently?',
+   'No. A number instead of a name changes nothing about which filings '
+   'are owed or when they fall due.'),
  ],
  related=[
   (T + 'annual-return-vs-tax-return-checker/',
@@ -390,6 +419,34 @@ T87 = dict(
   ('Does a dormant corporation still owe one?',
    'Yes. An annual return confirms directors and the registered office '
    'rather than income, so having no activity does not excuse it.'),
+  ('What was Schedule 546?',
+   'The Ontario annual return in the form it took while it travelled '
+   'with the T2: a schedule inside the corporate tax return rather '
+   'than a filing of its own.'),
+  ('My tax year straddles the change. Which route applies?',
+   'The calculator reads the year-end, because the year-end is what '
+   'dates the return. Enter it above and it names the route that '
+   'applied to that year.'),
+  ('Did what the annual return asks for change as well?',
+   'No. It confirms the directors and the registered office either '
+   'way. What changed is where it is filed, and that it is no longer '
+   'part of the tax return.'),
+  ('My accountant files the T2. Does that cover it?',
+   'Not for a year ending from October 2021. Once the schedule left '
+   'the return, filing the T2 stopped producing an annual return, and '
+   'nothing in the return now prompts anyone to file one.'),
+  ('Is the Ontario annual return inside the filing fee?',
+   'No. Nil T2 filing at $300.00 plus HST per tax year covers the '
+   'corporate tax return. An annual return is a registry filing and '
+   'sits outside it.'),
+  ('Can an annual return that was missed still be filed?',
+   'An outstanding annual return goes through the registry whichever '
+   'year it belongs to. How many are outstanding is a separate '
+   'question, and the missed annual returns calculator counts them.'),
+  ('Does a skipped year before 2021 matter now?',
+   'It leaves the registry record out of date for that year. An annual '
+   'return that was never filed stays unfiled, and a later one does '
+   'not stand in for it.'),
  ],
  related=[
   (T + 'ontario-business-registry-filing-checker/',
@@ -520,6 +577,32 @@ T88 = dict(
   ('Does this tell me whether my T2 returns are filed?',
    'No. The two trails are independent, so a clean registry record says '
    'nothing about the tax years and the reverse is also true.'),
+  ('What does the registry do after several missed years?',
+   'It can strike the corporation, dissolving it involuntarily. That '
+   'ends the corporation&rsquo;s legal existence and settles nothing '
+   'at all on the tax side.'),
+  ('Is there a charge for each missed annual return?',
+   'The registry&rsquo;s response is to strike the corporation rather '
+   'than to charge it, which is a blunter consequence than a sum of '
+   'money and has a different cure.'),
+  ('Does filing the outstanding ones put it right?',
+   'While the corporation is still on the register, yes: filing what '
+   'is outstanding brings the record up to date. Once it has been '
+   'struck, revival is the step that comes first.'),
+  ('Does this change what the Canada Revenue Agency is owed?',
+   'No. Tax years are counted on their own, and an unfiled T2 stays '
+   'unfiled whatever the registry record happens to show.'),
+  ('I do not know when the last one was filed.',
+   'The registry record settles it, and it is the corporation&rsquo;s '
+   'own record to check. The calculator counts from the date you '
+   'enter, so an uncertain date gives an uncertain count.'),
+  ('Does a change of directors count as one?',
+   'No. They are separate filings, and making one does not discharge '
+   'the other even in the same year.'),
+  ('Is the count the same as the number of unfiled T2 returns?',
+   'Only by coincidence. One of each falls due for a tax year, but '
+   'they are filed in different places, and a corporation is often '
+   'current in one trail and years behind in the other.'),
  ],
  related=[
   (T + 'ontario-business-registry-filing-checker/',
@@ -673,6 +756,34 @@ T89 = dict(
   ('Are any of these inside the nil T2 fee?',
    'No. Registry annual returns, the AT1 and the CO-17 are separate filings. '
    'The fee covers the federal nil T2 corporate tax return.'),
+  ('What is extra-provincial registration?',
+   'Registration in a province other than the one the corporation was '
+   'incorporated in, which is what lets it carry on business there. '
+   'Each registration brings that province&rsquo;s own filings with '
+   'it.'),
+  ('Does each registration mean another annual return?',
+   'Each registry asks for its own. Registration in more than one '
+   'place means more than one annual return, each on its own '
+   'registry&rsquo;s cycle.'),
+  ('Does the Quebec CO-17 replace the T2?',
+   'No. Quebec administers its own corporate income tax, so the CO-17 '
+   'is a separate provincial return filed in addition to the federal '
+   'one.'),
+  ('Is a dormant corporation registered twice still filing twice?',
+   'Yes. An annual return reports who the directors are and where the '
+   'office is rather than what was earned, so being dormant excuses '
+   'neither registry.'),
+  ('What if the corporation no longer operates in the second province?',
+   'The registration stays on that registry, and its filings stay '
+   'owed, until the registration itself is dealt with. Simply stopping '
+   'work there ends nothing.'),
+  ('Does the $12.00 federal annual return cover the provinces?',
+   'No. The $12.00 Corporations Canada annual return is a federal '
+   'filing, and a provincial registry is not a party to it.'),
+  ('Does registering in another province change the T2?',
+   'The federal return still covers the corporation as a whole. What '
+   'changes is that a second province may want a return of its own, '
+   'which is what the checker above names.'),
  ],
  related=[
   (T + 'provincial-return-requirement-checker/',
@@ -828,6 +939,33 @@ T90 = dict(
   ('What does revival do?',
    'It restores the corporation so the outstanding filings can be made and a '
    'proper wind-up completed.'),
+  ('Can a struck corporation be revived at any time?',
+   'Each registry sets its own window and its own requirements, so it '
+   'depends on the registry the corporation was struck from. That is '
+   'the first thing to establish, and the registry is where to '
+   'establish it.'),
+  ('Are the returns filed before revival or after?',
+   'Revival restores the corporation so that the filings can be made, '
+   'so in practice it comes first. A dissolved corporation has no '
+   'standing to put its years right.'),
+  ('Does revival create new tax years?',
+   'It restores the corporation rather than starting another one. The '
+   'years that were open when it was struck are the same years '
+   'afterwards.'),
+  ('Can it simply be left struck?',
+   'It can be left, but leaving it settles nothing. The open years '
+   'stay open, and a clearance certificate cannot be issued while a '
+   'return is outstanding.'),
+  ('Is a revived corporation the same corporation?',
+   'Yes. Revival restores the one that was struck, which is why its '
+   'earlier tax years come back with it rather than falling away.'),
+  ('Does being struck stop the Canada Revenue Agency asking for returns?',
+   'No. The registry acted on its own account. An outstanding return '
+   'stays outstanding, a demand to file one included.'),
+  ('Is revival part of nil T2 filing?',
+   'No. Revival is a registry step. Nil T2 filing at $300.00 plus HST '
+   'per tax year covers the corporate returns, which are usually the '
+   'reason the corporation is being revived at all.'),
  ],
  related=[
   (T + 'involuntary-dissolution-risk-checker/',
@@ -845,7 +983,7 @@ T90 = dict(
 
 TOOLS12 = [T86, T87, T88, T89, T90]
 
-STRUCTURE = dict(sections=3, faq=3, related=6, tags=4,
+STRUCTURE = dict(sections=3, faq=10, related=6, tags=4,
                  body_tables=1, result_tables=1)
 
 
