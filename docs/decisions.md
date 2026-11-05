@@ -7810,3 +7810,66 @@ and `/voluntary-disclosure-vs-plain-late-filing/` is **not**: the Voluntary
 Disclosures Programme appears nowhere in the plan or on the site, so writing it
 would mean stating how a CRA programme works with no published position to
 build on. That one goes to Sharad Gondaliya before it is written.
+
+## 2026-11-05 (later still) -- Family 7 page 12: /compare/nil-t2-vs-nil-gst-hst-return/
+
+Live as **ID 1823, 22,752 bytes**, matching its build. `nil_comparison` reports
+**12 published**, so Family 7 is **12 of 20**.
+
+Not in Appendix A. Line 1254's blog keyword list carries "nil gst hst return",
+so the subject is in the plan's own vocabulary; this fills part of the gap
+Appendix A leaves between its 13 listed URLs and its stated 20.
+
+### The misunderstanding it corrects is the expensive one
+
+Everything else on the site implies a quiet year produces one filing. On an
+open GST/HST account it produces four or twelve, because the reporting period
+is often quarterly or monthly. From
+`/guides/cra-accounts-on-a-dormant-corporation/`, which is this page's spine:
+"The obligation follows the account, not the activity... The Canada Revenue
+Agency expects a return on an open account because the account is open. It does
+not wait to see whether anything happened."
+
+Two of the ten rows deliberately read the same on both sides, and the table
+note says why: neither obligation goes away because nothing happened.
+
+### $350.00 would have been the easy wrong answer
+
+The GST/HST price cell declines under the November 5 ruling. It specifically
+does **not** carry $350.00: that is the sister firm's published fee for a tax
+year that is **not nil**, which is a T2 matter. The guide is precise about
+GST/HST work -- it is "handled by Gondaliya CPA Professional Corporation at
+gondaliyacpa.ca **rather than priced here**" -- so there is no published figure
+to state, and reaching for the nearest one would have invented a price.
+
+Checked after building: the only money figures on the page are $300.00 and
+$0.00.
+
+### Payroll and the T4 left out on purpose
+
+Both are in the same guide and both are tempting. This comparison is two
+accounts, not three, and
+`/compare/nil-t2-vs-ontario-annual-return-vs-federal-annual-return/` is a
+separate planned URL for the multi-way version. Payroll and the T4 appear only
+in the cards, as part of what sits outside the fee, which is a boundary
+statement rather than a comparison.
+
+### Inbound and ledger
+
+Three inbound at the line 1529 minimum, all three the obvious hosts and all
+three in builders that already carried a `COMPARE_F7` map: the GST/HST nil
+filing checker, the GST/HST account closure checker and the CRA account
+closure sequencer. `gate_f2_all.py` clear on 85 pages; all three live pages
+match their builds. Ledger **238 items**, `gate_rank_math.py` PASS. Caches
+cleared. Not loaded in a browser, same proxy reason as all week.
+
+### Family 7: 12 of 20
+
+Eight left. **Six brand pages** still blocked on dated competitor published
+prices. **Two concept pages**: `/dissolving-vs-filing-nil-every-year/`, which
+is well grounded in the winding-up and final-T2 guides and is the next one to
+build, and `/voluntary-disclosure-vs-plain-late-filing/`, which is **not** and
+should not be written here. The Voluntary Disclosures Programme appears nowhere
+in the plan and nowhere on the site, so the page would mean stating how a CRA
+programme works from scratch, with no published position to agree with. That
+one is for Sharad Gondaliya to rule on, like the price column before it.
