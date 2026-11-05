@@ -123,6 +123,15 @@ else:
             bad('a comparison row has %d cells, not 3' % len(cells))
         if any(not x.strip() for x in cells):
             bad('line 1215 an empty cell in the comparison table')
+    # Navneet's November 5, 2026 ruling: a price cell for a route this
+    # service does not sell states that it is not offered and carries no
+    # figure. The builder's check() holds the page dict to it; this holds
+    # the HTML, so a hand edit to a published page cannot slip a price in.
+    for r in body_rows[:2]:
+        for cell in re.findall(r'<td>(.*?)</td>', r, re.S):
+            if cell.strip().startswith('Not offered.') and '$' in cell:
+                bad('the November 5 ruling: a price cell that declines to '
+                    'state a fee carries a figure: %r' % cell.strip()[:80])
     if _tbl.group(0).count('<th scope="col">') != 3:
         bad('the comparison table has no three-column header')
 

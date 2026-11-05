@@ -93,6 +93,20 @@ BYLINE = ('Written and reviewed by <a href="' + SITE
 EFILE = ('Gondaliya CPA Professional Corporation is a registered EFILE '
          'electronic filer. Returns are prepared and transmitted in Canada. '
          'Credentials are never shared and never used offshore.')
+# NAVNEET'S RULING, NOVEMBER 5, 2026
+#
+# Line 1215 will not let a comparison publish with an empty price cell, and on
+# most of the remaining F7 pages the left-hand column is a route this service
+# does not sell: DIY software, dissolving, an Ontario annual return, a nil
+# GST/HST return. There is no fee of ours to put there.
+#
+# Ruled: such a cell carries a statement about this firm and never a figure.
+# /compare/paper-t2-vs-efile-t2/ already does it with the plan's own sentence
+# at line 169, "We file electronically only". check() below holds every page
+# to it: a cell that declines to state a fee may not contain a dollar sign,
+# so no page can quietly turn a decline into an implied price.
+DECLINE = 'Not offered.'
+
 # The sentence after the dated price line. Line 1568 wants the date; what
 # follows it has to be true of the particular page, and on /paper-t2-vs-efile-t2/
 # only one column is a route we sell. Pages override this with a 'stamp' key.
@@ -438,6 +452,13 @@ def check(p):
     assert 'published prices and published features only' in \
         p.get('disclosure', DISCLOSURE), \
         '%s: the disclosure override drops the line 1215 wording' % p['slug']
+    for _item, _a, _b, _differs in p['price_rows']:
+        for _cell in (_a, _b):
+            if _cell.startswith(DECLINE):
+                assert '$' not in _cell, (
+                    '%s: a price cell that declines to state a fee carries a '
+                    'figure, which the November 5 ruling forbids: %r'
+                    % (p['slug'], _cell))
     assert COST in p.get('stamp', STAMP), (
         '%s: the stamp override drops the line 1529 cost link' % p['slug'])
 

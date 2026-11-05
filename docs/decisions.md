@@ -7585,3 +7585,77 @@ Same limit as batch 11. This session's egress proxy refuses
 `corpnilfilingfor300.ca`, so neither page was loaded. The evidence is the
 byte-for-byte match with gated files and a CSS prefix inherited unchanged from
 page 1 by duplication.
+
+## 2026-11-05 (later) -- Navneet's ruling on the second price column, and page 9
+
+Navneet ruled on the question the eight-of-twenty note left open: where a
+comparison column is a route this service does not sell, **the price cell
+carries a statement about this firm and never a figure.**
+
+That unblocks every remaining concept page. `/compare/paper-t2-vs-efile-t2/`
+already did it with the plan's own sentence at line 169, "We file
+electronically only"; the ruling makes that the family's rule rather than one
+page's workaround.
+
+### Enforced on both sides, not just written down
+
+`build_f7.py` gains a `DECLINE` constant and `check()` now refuses any price
+cell that begins "Not offered." and contains a dollar sign. `gate.py` applies
+the same test to the first two body rows of the published table, so a hand
+edit to a live page cannot slip a price into a cell that declines to state
+one. Decoy-tested both sides: a cell reading "Not offered. We file
+electronically only, but DIY is about $89.00" is refused by `check()`, and the
+same thing injected into published HTML is refused by `gate.py`.
+
+All nine F7 pages rebuild clean, and **the eight live before this change
+rebuild byte-identically** -- the ruling added a constraint, not a change.
+
+### Page 9: /compare/ontario-annual-return-vs-t2/
+
+Appendix A line 3268, live as **ID 1802, 22,152 bytes**, matching its build.
+Family 7 is now **9 of 20**.
+
+It is the first page the ruling made possible: the left column is the Ontario
+annual return, which we do not file. The second price row is not a decline,
+because `/guides/provincial-and-federal-annual-returns/` states what that
+filing costs the corporation in its own words -- "It carries no tax and no
+payment" -- so both sides of that row are published fact.
+
+The page's payload is the guide's own sentence: "The two trails are
+independent. A corporation can be fully current on its T2 filings and still be
+struck from its registry, and it can be in good standing at the registry while
+owing ten years of T2 returns." Nine of the ten rows differ; the one that does
+not is the row owners get wrong, that a dormant corporation owes both.
+
+**Why it is not page 6 again.** Page 6 compares two corporations and concludes
+the T2 does not change with the place of incorporation. This compares two
+filings and concludes neither satisfies the other. The boundary was held
+deliberately: page 9 says nothing about which registry a corporation belongs
+to, and page 6 says nothing about what a missed annual return causes. Line
+1212 is about two URLs covering one comparison, not two URLs citing one guide.
+
+The $12.00 Corporations Canada fee is left off, as it was on page 6: this
+comparison is the Ontario annual return against the T2, and a federal registry
+fee on it would be a third subject.
+
+### Inbound and ledger
+
+Three inbound via `COMPARE_F7`, at the line 1529 minimum: the annual return
+versus tax return checker, the federal annual return anniversary calculator
+and the involuntary dissolution checker. Builders first, `gate_f2_all.py`
+clear on 85 pages, then all three pushed live matching their builds.
+
+`cnf_feature_rows_json` was left out of page 9's first publish and set
+separately -- caught by comparing its meta against the eight already live, not
+by anything failing. Ledger now **235 items**, `gate_rank_math.py` PASS.
+Caches cleared.
+
+### What is left in Family 7
+
+Eleven URLs. The six brand pages still wait on dated competitor published
+prices, which this environment cannot fetch and which need approval anyway.
+The concept pages are now unblocked by the ruling and can be built in order:
+`/diy-vs-cpa-nil-t2/` is next and is grounded already --
+`/answers/can-i-file-a-nil-t2-myself-without-an-accountant/` states that CPA
+preparation "is what the fee buys rather than something the rules demand",
+which is the honest frame for that comparison and keeps it clear of Rule 217.

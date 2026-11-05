@@ -1948,7 +1948,9 @@ COMPARE_F7 = {
  'dormant-corporation-obligation-checker': [(CMP + 'paper-t2-vs-efile-t2/',
    'Paper T2 vs Electronic Filing')],
  'annual-return-vs-tax-return-checker': [(CMP + 'federal-corporation-vs-ontario-corporation-nil-filing/',
-                                                 'Federal Corporation vs Ontario Corporation')],
+                                                 'Federal Corporation vs Ontario Corporation'),
+                                                (CMP + 'ontario-annual-return-vs-t2/',
+   'Ontario Annual Return vs the T2')],
  'share-capital-reporting-checker': [(CMP + 't2-short-vs-t2-short-plus-gifi/',
                                              'T2 Short vs T2 Short plus GIFI')],
 }
