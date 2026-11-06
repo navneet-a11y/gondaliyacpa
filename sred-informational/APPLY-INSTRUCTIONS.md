@@ -44,3 +44,10 @@ Navneet approved every needs_sharad row (see RULES.md, "Approval update"). For a
 these changes: run `python3 plan.py <id> <file> --sharad` (ops go to `apply/ops-sharad/<id>.json`; rows already live are
 skipped, and manual and rank_math rows are still skipped), verify with `python3 check.py <id> <file> --sharad`, and log to
 `apply/log-sharad-<batch>.jsonl`. If a page plans 0 ops, log it with ops 0 and move on.
+
+## Shared ops between dedicated pages
+An op recorded as "shared" may still be applied when EVERY matched row belongs to a dedicated page in `A-ids.txt`
+(for example 39377 and 39382 carry the same sections). Check the owner of each `wp_postmeta.meta_value:<meta_id>` row
+(from the dry-run log context, or by matching the meta id against each dedicated page's own meta set found in its own
+dry run) and each `wp_posts.post_content:<id>` row. If any row belongs to a page outside `A-ids.txt`, or there are more than
+6 rows, leave it shared and log it.

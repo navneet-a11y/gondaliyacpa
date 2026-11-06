@@ -4,36 +4,6 @@
  "sha256_after": "549580a47a385aaaf3a4dfc84ac7069e0665102fa3e07690518c27a6f08740cc",
  "ops": [
   {
-   "row": 11,
-   "search": "<div class=\\\"mf-case-card\\\"><h3>Plastics Manufacturer, Mississauga ($1.2M Revenue)<\\/h3><p>Custom plastics manufacturer with 12 employees. Never filed SR&amp;ED despite ongoing mold development and material testing. We identified $180,000 in eligible expenditures across 2 years, filed T661 claims and recovered $64,800 in federal and Ontario credits. Additionally claimed CCA on $220,000 in new injection molding equipment at 50% (Class 53). Total first-year savings: $89,400. <a href=\\\"https:\\/\\/gondaliyacpa.ca\\/consultation\\/\\\">Get Started &#8594;<\\/a><\\/p><div class=\\\"mf-case-stat\\\">$64,800 SR&amp;ED recovered. $89,400 total savings in Year 1.<\\/div><\\/div>\\r\\n",
-   "replace": "",
-   "regex": false
-  },
-  {
-   "row": 12,
-   "search": ", filed SR&amp;ED on recipe development and packaging testing ($32,000 credit),",
-   "replace": ",",
-   "regex": false
-  },
-  {
-   "row": 13,
-   "search": "SR&amp;ED Services &#8594;<\\/a><\\/p><div class=\\\"mf-case-stat\\\">$48,000 HST recovered. $32,000 SR&amp;ED credit",
-   "replace": "How SR&amp;ED works &#8594;<\\/a><\\/p><div class=\\\"mf-case-stat\\\">$48,000 HST recovered",
-   "regex": false
-  },
-  {
-   "row": 14,
-   "search": ", filed SR&amp;ED on custom joinery techniques. Annual savings: $7,600. SR&amp;ED credit: $11,2",
-   "replace": ". Annual savings: $7,6",
-   "regex": false
-  },
-  {
-   "row": 15,
-   "search": "$7,600 annual savings. $11,200 SR&amp;ED credit on custom techniques.",
-   "replace": "$7,600 annual savings.",
-   "regex": false
-  },
-  {
    "row": 16,
    "search": "<tr><td>SR&amp;ED claim<\\/td><td>T661 prepared. Technical narrative. Financial schedules. CRA review support.<\\/td><\\/tr>\\r\\n",
    "replace": "",
@@ -209,6 +179,26 @@
   },
   {
    "row": 10,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 11,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 12,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 13,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 14,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 15,
    "why": "before found 0 times now"
   }
  ]
