@@ -8397,3 +8397,65 @@ against git showed it before anything went live; it was reverted and redone
 against `COMPARE_F7`'s own start offset.
 
 Still not verified in a browser: the egress proxy refuses the site.
+
+## 2026-11-06 -- The competitor prices re-checked, and five of six cannot be built
+
+Navneet asked for the prices to be re-checked before the six Family 7 brand
+pages are built. **Yes, the plan does give them.** Line 1568, verbatim:
+
+> | F7 | Prices checked September 20, 2026 | Above the comparison table |
+> Monthly | Any competitor published price | Navneet | BluePeak $100.00,
+> TurboTax $175.00, T2inc $199.00 and $299.00, TaxDeep $200.00, H&R Block
+> $449.00, CloudTax pay-what-you-want |
+
+and line 1168 carries the worked example for the BluePeak page, including
+"BluePeak $100.00 published price".
+
+Those figures were re-checked on **November 6, 2026** against each provider's
+own site. The result is that hard rule 4 -- "Competitor pages carry only the
+published price and the date it was captured" -- **cannot be met for five of
+the six**, because there is no published price to capture.
+
+| Named in the plan | Plan, Sept 20 | Captured Nov 6, 2026 from the provider's own site |
+|---|---|---|
+| CloudTax | pay-what-you-want | **Capturable.** cloudtax.ca/t2-basic: "T2 Nil Pay What You Want including $0", "Best for eligible corporations with no activity"; T2 Basic DIY $199 per year-end; Review and File $499 per year-end; Done For You from $749 per year-end. cloudtax.ca/corporate-tax: "Nil Return Price $199 /yr", "Nil returns starting at $199", and on the same page "Nil T2 returns start at $250". Economy $749/yr, Full Review & Filing $1,249/yr. |
+| T2inc | $199.00 and $299.00 | **No price published.** No dollar figure appears anywhere in the text of t2inc.ca/en, and t2inc.ca/en/pricing returns 404. |
+| H&R Block | $449.00 | **No price published.** hrblock.ca/ownr-corporate-t2-clients states only "you can save $100* on your T2 corporate tax preparation fee": a discount off a base fee the page never states. |
+| TurboTax | $175.00 | **Not capturable.** The Business Incorporated page 404s, and third-party figures conflict ($375 of unstated currency on one Intuit page, $95/$185/$310 USD and $400 elsewhere). Nothing supports $175.00. |
+| BluePeak | $100.00 | **Provider not findable.** A search of this market returns nothing under that name. |
+| TaxDeep | $200.00 | **Provider not findable.** Same. |
+
+### What follows
+
+**Five of the six brand pages are not buildable, and the reason is not the
+template or the sign-off.** It is that publishing a page headed
+"corpnilfilingfor300.ca vs BluePeak" with "BluePeak $100.00 published price"
+would state a price this site cannot source, for a company that cannot be
+confirmed to exist. That is precisely the unsubstantiated advertising Rule 217
+bars, and line 1215 puts a Rule 217 review on each of these pages for that
+reason. The plan's figures are the only source, they are 47 days past their
+own monthly re-check, and four of the six do not survive contact with the
+providers' sites.
+
+**One is buildable: /compare/corpnilfilingfor300-vs-cloudtax/.** Its prices
+are published, plural and dated, and they come with a fact the September 20
+line understates: CloudTax publishes **Pay What You Want including $0** for
+eligible nil returns. An honest comparison table therefore shows $0 against
+our $300.00 plus HST per tax year. Hard rule 4 bars any "cheapest" claim and
+line 1215 bars any negative claim, so the page cannot soften that, and it
+should not: the fee is defended by what the fee covers, not by the other
+column being worse.
+
+That is a commercial judgement rather than an editorial one, so it goes to
+Navneet and Sharad Gondaliya before the page is built, not after. Nothing was
+published on this today.
+
+### A side effect worth recording
+
+The capture needed four hosts added to the cloud environment's allowed
+domains, which Navneet approved: cloudtax.ca, www.cloudtax.ca, t2inc.ca,
+www.t2inc.ca, hrblock.ca, www.hrblock.ca, turbotax.intuit.ca and
+turbotax.intuit.com. Before that, every fetch failed at DNS. Any future
+monthly re-check from a cloud session needs them, and corpnilfilingfor300.ca
+itself is still refused, which is why no page on this site has been verified
+in a browser all week.
