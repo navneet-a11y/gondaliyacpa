@@ -28,42 +28,6 @@
    "regex": false
   },
   {
-   "row": 12,
-   "search": "We review sprint logs, commit history, Jira\\/Linear tickets, time tracking and developer interviews",
-   "replace": "Sprint logs, commit history, Jira\\/Linear tickets, time tracking and developer interviews are used",
-   "regex": false
-  },
-  {
-   "row": 13,
-   "search": "<strong>We Write the Technical Narrative With Your Engineering Team:<\\/strong>",
-   "replace": "<strong>The Technical Narrative Is Written With the Engineering Team:<\\/strong>",
-   "regex": false
-  },
-  {
-   "row": 14,
-   "search": "We interview your developers, review your architecture decisions, examine your commit history and sprint logs, and translate",
-   "replace": "It draws on developer interviews, architecture decisions, commit history and sprint logs, and translates",
-   "regex": false
-  },
-  {
-   "row": 15,
-   "search": " Our narratives are written by a team that understands both the technology and CRA's evaluation criteria.",
-   "replace": "",
-   "regex": false
-  },
-  {
-   "row": 16,
-   "search": "Types of Tech Startups We File SR&amp;ED Claims For",
-   "replace": "Types of Tech Startups That Claim SR&amp;ED",
-   "regex": false
-  },
-  {
-   "row": 17,
-   "search": "We work with tech startups across all stages, from pre-revenue to growth. ",
-   "replace": "",
-   "regex": false
-  },
-  {
    "row": 18,
    "search": "<div class=\\\"sr-cta-inline\\\"><div><h3>Not Sure If Your Startup Qualifies? We Assess for Free.<\\/h3><p>30-minute call. We review your technical work and tell you whether it meets CRA's SR&amp;ED criteria. No cost. No obligation.<\\/p><\\/div><a href=\\\"https:\\/\\/gondaliyacpa.ca\\/consultation\\/\\\" class=\\\"sr-btn-blue\\\">Book Free Assessment<\\/a><\\/div>",
    "replace": "",
@@ -269,6 +233,30 @@
   },
   {
    "row": 10,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 12,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 13,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 14,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 15,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 16,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 17,
    "why": "before found 0 times now"
   }
  ]

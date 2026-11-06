@@ -22,36 +22,6 @@
    "regex": false
   },
   {
-   "row": 29,
-   "search": "\"title\":\"Our SR&ED Tax Credit Services",
-   "replace": "\"title\":\"What an SR&ED Claim Involves",
-   "regex": false
-  },
-  {
-   "row": 35,
-   "search": "Your SR&ED Claim in 4 Simple Steps",
-   "replace": "The SR&ED Claim Process in 4 Steps",
-   "regex": false
-  },
-  {
-   "row": 38,
-   "search": "\"title\":\"Discovery & Consultation\"",
-   "replace": "\"title\":\"Discovery\"",
-   "regex": false
-  },
-  {
-   "row": 39,
-   "search": "\"title\":\"CPA Review & Filing",
-   "replace": "\"title\":\"Review & Filing",
-   "regex": false
-  },
-  {
-   "row": 40,
-   "search": "\"title\":\"CRA Support",
-   "replace": "\"title\":\"CRA Review",
-   "regex": false
-  },
-  {
    "row": 41,
    "search": "We represent you through any review or audit.",
    "replace": "The CRA may review or audit the claim.",
@@ -362,6 +332,10 @@
    "why": "before found 0 times now"
   },
   {
+   "row": 29,
+   "why": "before found 0 times now"
+  },
+  {
    "row": 30,
    "why": "manual"
   },
@@ -382,12 +356,28 @@
    "why": "manual"
   },
   {
+   "row": 35,
+   "why": "before found 0 times now"
+  },
+  {
    "row": 36,
    "why": "manual"
   },
   {
    "row": 37,
    "why": "manual"
+  },
+  {
+   "row": 38,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 39,
+   "why": "before found 0 times now"
+  },
+  {
+   "row": 40,
+   "why": "before found 0 times now"
   },
   {
    "row": 42,
