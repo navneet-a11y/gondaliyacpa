@@ -44,6 +44,7 @@ SITE  = 'https://corpnilfilingfor300.ca'
 FORM  = SITE + '/form/'
 HUB   = SITE + '/guides/'
 A     = SITE + '/answers/'
+CMP   = SITE + '/compare/'
 PILLAR = HUB + 'nil-t2-return-complete-guide/'
 TODAY, ISO = 'October 19, 2026', '2026-10-19'
 PRICE = '$300.00 plus HST per tax year'
@@ -678,7 +679,13 @@ G5 = dict(
    'corporate status.</p>\n'
    '<div class="ei-info"><p>A federally incorporated corporation operating in Ontario '
    'files both: the $12.00 Corporations Canada annual return and an Ontario filing. '
-   'Federal incorporation does not remove the provincial obligation.</p></div>'),
+   'Federal incorporation does not remove the provincial obligation.</p></div>\n'
+   '<p>Set beside the corporate tax return, that makes three filings to three '
+   'different bodies for one corporation. The comparison of '
+   + a(CMP + 'nil-t2-vs-ontario-annual-return-vs-federal-annual-return/',
+       'the nil T2 against both annual returns')
+   + ' puts them in one table: who receives each one, what dates it, and '
+   'which of the three the fee on this site covers.</p>'),
   ('anniversary', 'The 60-Day Anniversary Window',
    '<p>The Corporations Canada annual return is due within 60 days of the anniversary '
    'date of incorporation, amalgamation or continuance. That date has nothing to do with '

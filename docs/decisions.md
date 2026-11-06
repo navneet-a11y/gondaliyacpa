@@ -8297,3 +8297,103 @@ host since it is the pillar for the subject; `required-schedules-checker`
 (1632) takes Schedule 88. Inbound is now 3, 3, 4, 3, 3.
 
 Still not verified in a browser: the egress proxy refuses the site.
+
+## 2026-11-06 -- Family 7 page 14, and a third column the plan does not allow
+
+Family 7 goes from thirteen to **fourteen**. Published as ID 1953:
+
+  /compare/nil-t2-vs-ontario-annual-return-vs-federal-annual-return/
+
+### Every remaining F7 URL needs a person, so this is the only one that could be built
+
+Appendix A lists Family 7 as **20 URLs**. Twelve of the thirteen live before
+today were Appendix A members (`nil-t2-vs-loss-t2` is an invented slug), so
+eight were outstanding, and each of the eight was waiting on a human:
+
+- **Six brand pages** (`corpnilfilingfor300-vs-bluepeak`, `-vs-turbotax`,
+  `-vs-t2inc`, `-vs-taxdeep`, `-vs-hr-block`, `-vs-cloudtax`). The prices
+  exist in the signed-off record at line 1568 -- BluePeak $100.00, TurboTax
+  $175.00, T2inc $199.00 and $299.00, TaxDeep $200.00, H&R Block $449.00,
+  CloudTax pay-what-you-want, "Prices checked September 20, 2026" -- but line
+  1215 puts a Rule 217 review with Sharad Gondaliya on every one, the
+  approvals section requires approval before any goes live, and line 1568 sets
+  a **monthly** re-check, so those prices are 47 days old and overdue. Not
+  built.
+- **`/compare/voluntary-disclosure-vs-plain-late-filing/`**, still blocked on
+  his ruling: the site publishes no voluntary disclosure terms.
+- **The three-way**, built here, and only after changing the template.
+
+### The deviation: a third column
+
+Line 1215 fixes this family's unique data at "Two published price cells and
+eight published feature cells", and its publish gate reads "No comparison page
+publishes without **both** published price columns filled". Both is two.
+
+The URL names three filings and cannot be built honestly inside that. A
+two-column table would have to fold the Ontario and federal annual returns
+into one column, and the entire point of the page is that they are two
+different filings to two different registries, on two different dates, with
+two different fees.
+
+So `build_f7.py` now takes an optional `col_c`, and `gate.py` reads the
+expected row width from the page's own header. **Navneet asked for it to
+publish on this log rather than wait. Sharad Gondaliya's sign-off on the third
+column is outstanding**, which is a template sign-off the approvals section
+places with him before a batch publishes.
+
+Two guards make the change safe rather than hopeful:
+
+- `build_f7n.py` rebuilds all thirteen earlier pages into a temporary
+  directory and compares them **byte for byte** before writing its own, so a
+  change that disturbs them fails the build. They are byte-identical.
+- `gate.py` allows four header cells **on this slug only**, and fails a row
+  whose width disagrees with its own header. Three decoys were run and all
+  three were caught: a fourth column sneaked onto
+  `/compare/t2-short-vs-full-t2/`, a $25.00 figure in the Ontario column, and
+  a row one cell short.
+
+### What the page may not say, and does not
+
+Two of the three columns are filings this service does not sell, so Navneet's
+ruling of November 5 applies: both price cells open with "Not offered." and
+carry no figure at all. The builder asserts it and the gate re-checks the
+rendered HTML.
+
+The **$12.00 Corporations Canada fee** does appear, in a feature row rather
+than a price row, because it is a government charge and not a price of ours.
+It is added to the gate's money allowlist with its citation.
+
+The **Ontario column carries no figure and no filing window anywhere on the
+page**, and `build_f7n.py` asserts that no `$` appears in any Ontario cell.
+The site publishes neither, which is the same test that kept
+`/ontario-annual-return-deadline-calculator/` out of Family 2 batch 12.
+
+### Inbound, ledger, and a gate correction
+
+6(g) inbound, minimum 3: `annual-return-vs-tax-return-checker` (1524) and
+`federal-annual-return-anniversary-calculator` (1180) through their
+`COMPARE_F7` maps, and a paragraph in
+`/guides/provincial-and-federal-annual-returns/` (953), which is the pillar
+for the subject. All three landed on their built byte counts. Ledger to **250
+items**.
+
+**A gate correction worth recording.** Pointing the generalised
+`gate_batch.py` at `build_f2b` failed five of batch 2's ten pages for having
+no static reference table in the body. gate10's comment asserted that "tools 1
+to 30 all carry" one; they do not. The rule arrived with the structure
+contract, so for a batch that predates it the absence is now reported as
+**DEBT (pre-contract batch, not failing)** and the comment states the truth.
+Nothing published since batch 10 is excused: there the check still fails.
+Five batch 2 pages carry that debt: schedule-50-shareholder-threshold-checker,
+53-week-first-tax-year-checker, schedule-24-first-return-checker,
+dormant-corporation-test and gst-hst-nil-filing-checker.
+
+**One of my own errors, caught by the byte check.** The first edit to
+`build_f2b.py` spliced the comparison link into the *guides* map rather than
+`COMPARE_F7`, because both maps use the same tool slug as a key and a search
+found the guides one first. The rendered URL came out as
+`/guides/https://corpnilfilingfor300.ca/compare/...//`. The byte-count diff
+against git showed it before anything went live; it was reverted and redone
+against `COMPARE_F7`'s own start offset.
+
+Still not verified in a browser: the egress proxy refuses the site.

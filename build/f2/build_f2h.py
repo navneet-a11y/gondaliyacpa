@@ -1977,7 +1977,9 @@ COMPARE_F7 = {
  'annual-return-vs-tax-return-checker': [(CMP + 'federal-corporation-vs-ontario-corporation-nil-filing/',
                                                  'Federal Corporation vs Ontario Corporation'),
                                                 (CMP + 'ontario-annual-return-vs-t2/',
-   'Ontario Annual Return vs the T2')],
+   'Ontario Annual Return vs the T2'),
+                                                (CMP + 'nil-t2-vs-ontario-annual-return-vs-federal-annual-return/',
+   'Nil T2 vs Both Annual Returns')],
  'share-capital-reporting-checker': [(CMP + 't2-short-vs-t2-short-plus-gifi/',
                                              'T2 Short vs T2 Short plus GIFI')],
 }

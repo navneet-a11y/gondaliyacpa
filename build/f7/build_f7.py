@@ -437,12 +437,34 @@ def _key(col):
     return _re.sub(r'[^a-z0-9]+', '_', col.lower()).strip('_')
 
 
+def _row_json(p, row, with_differs):
+    """One table row as the meta record stores it, for two columns or three.
+    The keys are the column headers, so a reader of the stored record can tell
+    which cell belongs to which column without consulting this file."""
+    cols = [p['col_a'], p['col_b']] + ([p['col_c']] if p.get('col_c') else [])
+    out = {'item': row[0]}
+    for col, cell in zip(cols, row[1:-1]):
+        out[_key(col)] = cell
+    if with_differs:
+        out['differs'] = row[-1]
+    return out
+
+
 def check(p):
     """Line 1215 and the per-page counts, for every page in this family."""
     assert len(p['price_rows']) == 2, 'line 1215 wants two price rows'
     assert len(p['feature_rows']) == 8, 'line 1215 wants eight feature rows'
-    for i, a, b, _d in p['price_rows'] + p['feature_rows']:
-        assert a.strip() and b.strip(), '%s: an empty cell' % i
+    # Line 1215 fixes the family at two price columns. The one Appendix A URL
+    # that names three things cannot be built inside that, so col_c opens a
+    # third column for the page that asks for it and for no other. Deviation
+    # logged 2026-11-06; Sharad Gondaliya's sign-off is outstanding.
+    _w = 5 if p.get('col_c') else 4
+    for _row in p['price_rows'] + p['feature_rows']:
+        assert len(_row) == _w, (
+            '%s: a row has %d fields, and this page carries %d columns'
+            % (p['slug'], len(_row), _w - 2))
+        for _cell in _row[1:-1]:
+            assert _cell.strip(), '%s: an empty cell in %r' % (p['slug'], _row[0])
     assert len(p['faq']) == p['faq_n'], (
         '%s: %d FAQ items, expected %d'
         % (p['slug'], len(p['faq']), p['faq_n']))
@@ -452,8 +474,8 @@ def check(p):
     assert 'published prices and published features only' in \
         p.get('disclosure', DISCLOSURE), \
         '%s: the disclosure override drops the line 1215 wording' % p['slug']
-    for _item, _a, _b, _differs in p['price_rows']:
-        for _cell in (_a, _b):
+    for _row in p['price_rows']:
+        for _cell in _row[1:-1]:
             if _cell.startswith(DECLINE):
                 assert '$' not in _cell, (
                     '%s: a price cell that declines to state a fee carries a '
@@ -478,11 +500,21 @@ def write(p, manifest):
 
 
 def _rows(rows):
+    """A row is (item, a, b, differs) for a two-column page, or
+    (item, a, b, c, differs) where a third column is in play. Nothing else
+    changes: a two-column page renders exactly the bytes it did before the
+    third column existed, which build_f7n.py asserts against all thirteen."""
     out = []
-    for item, a, b, differs in rows:
+    for row in rows:
+        if len(row) == 5:
+            item, a, b, c, differs = row
+            cells = (a, b, c)
+        else:
+            item, a, b, differs = row
+            cells = (a, b)
         cls = ' class="si-hl"' if differs else ''
-        out.append('<tr%s><td>%s</td><td>%s</td><td>%s</td></tr>'
-                   % (cls, item, a, b))
+        out.append('<tr%s><td>%s</td>%s</tr>'
+                   % (cls, item, ''.join('<td>%s</td>' % x for x in cells)))
     return '\n'.join(out)
 
 
@@ -531,7 +563,10 @@ def render(p):
              + p.get('stamp', STAMP) + '</p>\n'
              '<table class="si-tbl"><thead><tr><th scope="col">Item</th>'
              '<th scope="col">' + p['col_a'] + '</th>'
-             '<th scope="col">' + p['col_b'] + '</th></tr>'
+             '<th scope="col">' + p['col_b'] + '</th>'
+             + ('<th scope="col">' + p['col_c'] + '</th>'
+                if p.get('col_c') else '')
+             + '</tr>'
              '</thead><tbody>\n'
              + _rows(p['price_rows']) + '\n' + _rows(p['feature_rows']) + '\n'
              '</tbody></table>\n'
@@ -633,10 +668,8 @@ def meta(p):
      # named incl_hst would be a false record. The fee is in the rows below.
      'cnf_our_price_incl_hst': '',
      'cnf_feature_rows_json': json.dumps({
-        'price_rows': [{'item': i, _key(p['col_a']): a, _key(p['col_b']): b}
-                       for i, a, b, _d in p['price_rows']],
-        'feature_rows': [{'item': i, _key(p['col_a']): a, _key(p['col_b']): b,
-                          'differs': d} for i, a, b, d in p['feature_rows']],
+        'price_rows': [_row_json(p, r, False) for r in p['price_rows']],
+        'feature_rows': [_row_json(p, r, True) for r in p['feature_rows']],
         'our_price': PRICE,
         'competitor_named': False,
         'price_source': 'Our own published fee, not a competitor price'}),

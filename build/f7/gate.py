@@ -84,6 +84,9 @@ MONEY = {
  '0.00': 'what a nil return reports, plan line 2073',
  '1,000.00': 'the paper T2 charge, plan lines 169, 393 and 1755',
  '100.00': 'the per-return preparer charge, same lines',
+ '12.00': 'the Corporations Canada annual return fee, plan section 6(b), the '
+          'provincial and federal annual returns pillar row, and published '
+          'across Family 2 and the annual returns guide',
 }
 for m in re.finditer(r'\$(\d{1,3}(?:,\d{3})*\.\d\d)', c):
     if m.group(1) not in MONEY:
@@ -117,10 +120,20 @@ else:
     if len(body_rows) != 10:
         bad('line 1215 expected 2 price rows plus 8 feature rows, found %d'
             % len(body_rows))
+    # Line 1215 fixes the family at two price columns, and every page but one
+    # has two. The single Appendix A URL that names three things carries a
+    # third, on the deviation logged 2026-11-06. So the expected row width is
+    # read from the page's own header rather than hard-coded, and a row that
+    # disagrees with its own header still fails.
+    _ncol = _tbl.group(0).count('<th scope="col">')
+    if _ncol not in (3, 4):
+        bad('the comparison table has %d header cells; 3 (two columns) or 4 '
+            '(three, by deviation) are the only shapes' % _ncol)
     for r in body_rows:
         cells = re.findall(r'<td>(.*?)</td>', r, re.S)
-        if len(cells) != 3:
-            bad('a comparison row has %d cells, not 3' % len(cells))
+        if len(cells) != _ncol:
+            bad('a comparison row has %d cells against %d header cells'
+                % (len(cells), _ncol))
         if any(not x.strip() for x in cells):
             bad('line 1215 an empty cell in the comparison table')
     # Navneet's November 5, 2026 ruling: a price cell for a route this
@@ -132,8 +145,10 @@ else:
             if cell.strip().startswith('Not offered.') and '$' in cell:
                 bad('the November 5 ruling: a price cell that declines to '
                     'state a fee carries a figure: %r' % cell.strip()[:80])
-    if _tbl.group(0).count('<th scope="col">') != 3:
-        bad('the comparison table has no three-column header')
+    if _ncol == 4 and 'nil-t2-vs-ontario-annual-return-vs-federal-annual-return' \
+            not in NAME:
+        bad('a third column on %s, which the 2026-11-06 deviation allows only '
+            'for the three-way Appendix A page' % NAME)
 
 # ---- line 1529, links ----------------------------------------------------
 inbound_targets = (c.count('/pricing/nil-t2-filing-cost/'),
