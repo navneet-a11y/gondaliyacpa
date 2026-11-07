@@ -1,0 +1,67 @@
+{
+ "id": 28025,
+ "editor": "elementor",
+ "sha256_after": "f2edfe4805fdb324cd419db50f7e54be46af73c5f6f4322660a4b67c3ea1458e",
+ "ops": [
+  {
+   "row": 0,
+   "search": "\"title\":\"How We Assisted a Toronto Tech Company to Maximize SR&ED Tax Credit\"",
+   "replace": "\"title\":\"Case Study: SR&ED Tax Credits for a Toronto Tech Company\"",
+   "regex": false
+  },
+  {
+   "row": 1,
+   "search": "approached Gondaliya\\u202fCPA for guidance on claiming",
+   "replace": "sought guidance on claiming",
+   "regex": false
+  },
+  {
+   "row": 2,
+   "search": "vigate the complex application process and maximize their eligible credits.<\\/p>",
+   "replace": "vigate the complex application process and maximize their eligible credits.<\\/p><p class=\\\"sred-notice\\\"><strong>Gondaliya CPA does not prepare SR&amp;ED claims. This page explains how the SR&amp;ED program works, for general information only.<\\/strong><\\/p>",
+   "regex": false
+  },
+  {
+   "row": 3,
+   "search": "<strong>What We Did<\\/strong>",
+   "replace": "<strong>What the Claim Involved<\\/strong>",
+   "regex": false
+  },
+  {
+   "row": 4,
+   "search": "We analyzed the company\\u2019s projects, processes, and expenditures to determine el",
+   "replace": "The company\\u2019s projects, processes, and expenditures were analyzed to determine el",
+   "regex": false
+  },
+  {
+   "row": 5,
+   "search": "Our team prepared detailed technical narratives and financial records to support",
+   "replace": "Detailed technical narratives and financial records were prepared to support",
+   "regex": false
+  },
+  {
+   "row": 6,
+   "search": "We calculated the maximum eligible credits,",
+   "replace": "The maximum eligible credits were calculated,",
+   "regex": false
+  },
+  {
+   "row": 7,
+   "search": "We submitted the claim and provided ongoing support in case of CRA questions or audit requests, ensuring a smooth review proces",
+   "replace": "The claim was submitted, with ongoing support in case of CRA questions or audit request",
+   "regex": false
+  },
+  {
+   "row": 8,
+   "search": "rust Gondaliya\\u202fCPA to navigate the SR&amp;ED process, claim all eligible credits, and ensure CRA compliance, enabling them to",
+   "replace": "hat navigate the SR&amp;ED process, claim all eligible credits, and ensure CRA compliance can",
+   "regex": false
+  }
+ ],
+ "skipped": [
+  {
+   "row": 9,
+   "why": "needs_sharad"
+  }
+ ]
+}

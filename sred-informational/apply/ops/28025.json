@@ -1,0 +1,51 @@
+{
+ "id": 28025,
+ "editor": "elementor",
+ "sha256_after": "70f1a52ed70e76b2475f666a59218d5bc32363a35191e0d4dec53751476c7d92",
+ "ops": [
+  {
+   "row": 2,
+   "search": "vigate the complex application process and maximize their eligible credits.<\\/p>",
+   "replace": "vigate the complex application process and maximize their eligible credits.<\\/p><p class=\\\"sred-notice\\\"><strong>Gondaliya CPA does not prepare SR&amp;ED claims. This page explains how the SR&amp;ED program works, for general information only.<\\/strong><\\/p>",
+   "regex": false
+  }
+ ],
+ "skipped": [
+  {
+   "row": 0,
+   "why": "needs_sharad"
+  },
+  {
+   "row": 1,
+   "why": "needs_sharad"
+  },
+  {
+   "row": 3,
+   "why": "needs_sharad"
+  },
+  {
+   "row": 4,
+   "why": "needs_sharad"
+  },
+  {
+   "row": 5,
+   "why": "needs_sharad"
+  },
+  {
+   "row": 6,
+   "why": "needs_sharad"
+  },
+  {
+   "row": 7,
+   "why": "needs_sharad"
+  },
+  {
+   "row": 8,
+   "why": "needs_sharad"
+  },
+  {
+   "row": 9,
+   "why": "needs_sharad"
+  }
+ ]
+}
