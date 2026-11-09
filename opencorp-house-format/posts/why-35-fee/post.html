@@ -1,0 +1,653 @@
+<style>.gcpa-post{--navy:#0f2a4a;--navy-2:#15355c;--blue:#1c6dd0;--blue-soft:#e8f1fc;--teal:#0c8f8f;--teal-soft:#e3f4f4;--gold:#c9991f;--gold-soft:#fbf3dc;--green:#1f8a4c;--green-soft:#e6f5ec;--red:#c0392b;--red-soft:#fbeae8;--ink:#1d2733;--muted:#5a6b7b;--line:#d8e0e8;--bg:#ffffff;--bg-alt:#f5f8fb;--radius:14px;--shadow:0 6px 22px rgba(15,42,74,.08);--shadow-lg:0 14px 40px rgba(15,42,74,.14);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);line-height:1.7;font-size:17px;max-width:1080px;margin:0 auto;padding:0 18px 60px;} .gcpa-post *{box-sizing:border-box;} .gcpa-hero{background:linear-gradient(135deg,var(--navy) 0%,var(--navy-2) 60%,#1c4a78 100%);color:#fff;border-radius:20px;padding:46px 40px 42px;margin:26px 0 34px;position:relative;overflow:hidden;} .gcpa-hero::after{content:"";position:absolute;right:-80px;top:-80px;width:280px;height:280px;z-index:0;background:radial-gradient(circle,rgba(28,109,208,.45),transparent 70%);} .gcpa-post .gcpa-eyebrow{display:inline-block;font-size:13px;letter-spacing:1.4px;text-transform:uppercase;font-weight:700;color:#cfe2f8 !important;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.3);padding:7px 15px;border-radius:30px;margin-bottom:18px;} .gcpa-post .gcpa-hero h1{font-size:34px;line-height:1.25;margin:0 0 16px;font-weight:800;color:#fff !important;letter-spacing:-.3px;position:relative;z-index:2;} .gcpa-post .gcpa-hero p{font-size:18px;color:#eaf3fc !important;margin:0;max-width:760px;position:relative;z-index:2;} .gcpa-eyebrow{position:relative;z-index:2;} .gcpa-post h2{font-size:27px;font-weight:800;color:var(--navy);line-height:1.3;margin:48px 0 18px;padding-bottom:14px;border-bottom:3px solid var(--blue-soft);letter-spacing:-.2px;position:relative;} .gcpa-post h2::after{content:"";position:absolute;left:0;bottom:-3px;width:70px;height:3px;background:var(--blue);} .gcpa-post h3{font-size:22px;font-weight:800;color:var(--navy-2);margin:40px 0 14px;line-height:1.35;} .gcpa-post h4{font-size:19px;font-weight:700;color:var(--navy-2);margin:36px 0 12px;line-height:1.4;padding-left:16px;border-left:4px solid var(--teal);} .gcpa-post p{margin:0 0 16px;color:#1d2733 !important;} .gcpa-post li{color:#1d2733;} .gcpa-post a{color:var(--blue);text-decoration:none;font-weight:600;} .gcpa-post a:hover{text-decoration:underline;} .gcpa-post ul,.gcpa-post ol{margin:0 0 18px !important;padding-left:0 !important;list-style:none !important;} .gcpa-post ul{list-style-type:none !important;} .gcpa-post ul li{position:relative;padding:8px 0 8px 34px;margin:0;border-bottom:1px solid var(--line);color:var(--ink);list-style:none !important;list-style-type:none !important;} .gcpa-post ul li::marker{content:"" !important;font-size:0 !important;} .gcpa-post ul li:last-child{border-bottom:none;} .gcpa-post ul li::before{content:"";position:absolute;left:6px;top:15px;width:9px;height:9px;border-radius:2px;background:var(--teal);transform:rotate(45deg);} .gcpa-post ol{counter-reset:gcpa;} .gcpa-post ol li{position:relative;padding:10px 0 10px 44px;margin:0 0 10px;counter-increment:gcpa;list-style:none !important;list-style-type:none !important;} .gcpa-post ol li::marker{content:"" !important;font-size:0 !important;} .gcpa-post ol li::before{content:counter(gcpa);position:absolute;left:0;top:9px;width:28px;height:28px;border-radius:8px;background:var(--navy);color:#fff;font-weight:700;font-size:14px;display:flex;align-items:center;justify-content:center;} .gcpa-post .wp-block-table,.gcpa-post figure.wp-block-table{margin:22px 0 26px;overflow-x:auto;} .gcpa-post table{width:100%;border-collapse:collapse;font-size:15.5px;background:#fff;border:1px solid var(--navy);border-radius:10px;overflow:hidden;box-shadow:var(--shadow);} .gcpa-post thead th{background:var(--navy);color:#fff;text-align:left;padding:13px 15px;font-weight:700;font-size:15px;border:1px solid var(--navy-2);} .gcpa-post tbody td{padding:12px 15px;border:1px solid var(--line);vertical-align:top;color:var(--ink);} .gcpa-post tbody tr:nth-child(even){background:var(--bg-alt);} .gcpa-post tbody tr:hover{background:var(--blue-soft);} .gcpa-post tbody td:first-child{font-weight:600;color:var(--navy-2);} .gcpa-metrics{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin:30px 0 36px;clear:both;} .gcpa-metric{background:#fff;border:1px solid var(--line);border-top:4px solid var(--blue);border-radius:var(--radius);padding:22px 18px;box-shadow:var(--shadow);transition:transform .2s,box-shadow .2s;} .gcpa-metric:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg);} .gcpa-metric:nth-child(2){border-top-color:var(--teal);} .gcpa-metric:nth-child(3){border-top-color:var(--gold);} .gcpa-metric:nth-child(4){border-top-color:var(--green);} .gcpa-metric .ic{width:46px;height:46px;border-radius:11px;background:var(--blue-soft);display:flex;align-items:center;justify-content:center;margin-bottom:14px;color:var(--blue);} .gcpa-metric:nth-child(2) .ic{background:var(--teal-soft);color:var(--teal);} .gcpa-metric:nth-child(3) .ic{background:var(--gold-soft);color:var(--gold);} .gcpa-metric:nth-child(4) .ic{background:var(--green-soft);color:var(--green);} .gcpa-metric .big{font-size:22px;font-weight:800;color:var(--navy);line-height:1.2;margin-bottom:4px;} .gcpa-metric .lbl{font-size:14px;color:var(--muted);line-height:1.45;} .gcpa-numhead{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin:46px 0 8px;clear:both;} .gcpa-numhead h4{margin:0 !important;} .gcpa-numhead .gcpa-pill{margin:0 !important;} .gcpa-numhead .num{flex:0 0 auto;width:48px;height:48px;border-radius:12px;background:var(--navy);color:#fff;font-size:22px;font-weight:800;display:flex;align-items:center;justify-content:center;box-shadow:var(--shadow);} .gcpa-callout{border-radius:var(--radius);padding:20px 22px;margin:22px 0;border:1px solid var(--line);background:var(--bg-alt);position:relative;} .gcpa-callout.blue{background:var(--blue-soft);border-color:#bcd9f6;} .gcpa-callout.teal{background:var(--teal-soft);border-color:#b7e3e3;} .gcpa-callout.gold{background:var(--gold-soft);border-color:#ecd79a;} .gcpa-callout.green{background:var(--green-soft);border-color:#b6e2c6;} .gcpa-callout.red{background:var(--red-soft);border-color:#f0c4be;} .gcpa-callout .co-tag{display:inline-block;font-size:12.5px;font-weight:700;letter-spacing:.6px;text-transform:uppercase;padding:4px 11px;border-radius:20px;margin-bottom:10px;color:#fff;} .gcpa-callout.blue .co-tag{background:var(--blue);} .gcpa-callout.teal .co-tag{background:var(--teal);} .gcpa-callout.gold .co-tag{background:var(--gold);} .gcpa-callout.green .co-tag{background:var(--green);} .gcpa-callout.red .co-tag{background:var(--red);} .gcpa-callout p:last-child{margin-bottom:0;} .gcpa-cta{background:linear-gradient(135deg,var(--navy) 0%,#1c4a78 100%);color:#fff;border-radius:18px;padding:34px 32px;margin:38px 0;text-align:center;box-shadow:var(--shadow-lg);position:relative;overflow:hidden;} .gcpa-cta::before{content:"";position:absolute;left:-60px;bottom:-60px;width:220px;height:220px;background:radial-gradient(circle,rgba(12,143,143,.4),transparent 70%);} .gcpa-post .gcpa-cta h4{color:#fff !important;border:none;padding:0;margin:0 0 12px;font-size:22px;font-weight:800;position:relative;z-index:1;} .gcpa-post .gcpa-cta p{color:#eaf3fc !important;max-width:680px;margin:0 auto 22px;position:relative;z-index:1;} .gcpa-post .gcpa-cta .btn{display:inline-block;background:#fff !important;color:var(--navy) !important;font-weight:700;padding:13px 26px;border-radius:30px;margin:6px;font-size:16px;position:relative;z-index:1;transition:transform .15s;text-decoration:none !important;} .gcpa-post .gcpa-cta .btn:hover{transform:translateY(-2px);text-decoration:none !important;} .gcpa-post .gcpa-cta .btn.primary{background:var(--teal) !important;color:#fff !important;} .gcpa-btnrow{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;align-items:center;position:relative;z-index:1;} .gcpa-trust{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-bottom:22px;position:relative;z-index:1;} .gcpa-post .gcpa-trust span{font-size:13px;font-weight:700;background:rgba(255,255,255,.18) !important;border:1px solid rgba(255,255,255,.45);padding:7px 14px;border-radius:20px;color:#ffffff !important;} .gcpa-post svg{display:block;} .gcpa-pill{display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:700;padding:8px 16px;border-radius:30px;margin:10px 0 6px;line-height:1.2;} .gcpa-pill svg{width:16px;height:16px;flex:0 0 auto;} .gcpa-pill.green{background:var(--green-soft);color:var(--green);border:1px solid #b6e2c6;} .gcpa-pill.blue{background:var(--blue-soft);color:var(--blue);border:1px solid #bcd9f6;} .gcpa-pill.teal{background:var(--teal-soft);color:var(--teal);border:1px solid #b7e3e3;} .gcpa-pill.gold{background:var(--gold-soft);color:#9a7416;border:1px solid #ecd79a;} .gcpa-pill.red{background:var(--red-soft);color:var(--red);border:1px solid #f0c4be;} .gcpa-pillhead{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin:38px 0 12px;clear:both;} .gcpa-pillhead h4{margin:0 !important;} .gcpa-pillhead .gcpa-pill{margin:0 !important;} @media(max-width:560px){.gcpa-pillhead{gap:8px;}} .gcpa-toc{background:var(--bg-alt);border:1px solid var(--line);border-left:5px solid var(--blue);border-radius:var(--radius);padding:24px 26px;margin:30px 0 36px;box-shadow:var(--shadow);} .gcpa-toc h5{margin:0 0 14px;font-size:16px;font-weight:800;color:var(--navy);letter-spacing:.4px;text-transform:uppercase;display:flex;align-items:center;gap:9px;} .gcpa-toc h5 svg{width:20px;height:20px;color:var(--blue);} .gcpa-toc ol{counter-reset:toc;margin:0 !important;padding:0 !important;columns:2;column-gap:36px;list-style:none !important;} .gcpa-toc ol li{counter-increment:toc;position:relative;padding:7px 0 7px 30px;margin:0;border-bottom:1px dashed var(--line);break-inside:avoid;list-style:none !important;} .gcpa-toc ol li::before{content:counter(toc);position:absolute;left:0;top:7px;width:21px;height:21px;border-radius:6px;background:var(--blue-soft);color:var(--blue);font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;} .gcpa-toc ol li::marker{content:"" !important;font-size:0 !important;} .gcpa-toc a{color:var(--navy-2);font-weight:600;font-size:15px;} .gcpa-toc a:hover{color:var(--blue);} .gcpa-post [id^="toc-"]{scroll-margin-top:90px;} .gcpa-banner{display:block;background:linear-gradient(135deg,#0d3b66 0%,#0c7a7a 100%);color:#fff;border-radius:16px;padding:30px 32px;margin:36px 0;box-shadow:var(--shadow-lg);} .gcpa-banner .bt{font-size:20px;font-weight:800;line-height:1.45;margin:0 0 20px;max-width:760px;} .gcpa-banner .bb{display:flex;flex-wrap:wrap;gap:14px;align-items:center;} .gcpa-banner a{display:inline-block;background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.6);color:#fff !important;font-weight:700;padding:13px 24px;border-radius:30px;font-size:15px;text-decoration:none !important;} .gcpa-banner a.solid{background:#ffffff !important;color:#0d3b66 !important;border-color:#fff;} .gcpa-disclaimer{background:var(--bg-alt);border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:34px 0 10px;font-size:14.5px;color:var(--muted);line-height:1.6;} .gcpa-disclaimer strong{color:var(--navy-2);} .gcpa-byline{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin:0 0 22px;font-size:15px;} .gcpa-byline .av{width:42px;height:42px;border-radius:50%;background:var(--navy);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:16px;flex:0 0 auto;} .gcpa-byline .nm{font-weight:700;color:var(--navy-2);} .gcpa-byline .rl{color:var(--teal);font-weight:700;} .gcpa-byline .sep{color:var(--line);} .gcpa-author{display:flex;gap:18px;align-items:flex-start;background:var(--bg-alt);border:1px solid var(--line);border-left:5px solid var(--teal);border-radius:14px;padding:24px 26px;margin:34px 0 40px;} .gcpa-author .ava{width:64px;height:64px;border-radius:50%;background:linear-gradient(135deg,var(--navy),var(--teal));color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:22px;flex:0 0 auto;} .gcpa-author .info h5{margin:0 0 6px;font-size:17px;font-weight:800;color:var(--navy);line-height:1.4;} .gcpa-author .info .role{font-size:14px;color:var(--teal);font-weight:700;margin:0 0 12px;} .gcpa-author .info p{font-size:14.5px;color:var(--muted) !important;margin:0;line-height:1.65;} .gcpa-faq{margin:18px 0 26px;border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:var(--shadow);} .gcpa-faq details{border-bottom:1px solid var(--line);background:#fff;} .gcpa-faq details:last-child{border-bottom:none;} .gcpa-faq summary{list-style:none;cursor:pointer;padding:18px 22px;font-weight:700;color:var(--navy-2);font-size:16px;display:flex;justify-content:space-between;align-items:center;gap:14px;transition:background .15s;} .gcpa-faq summary::-webkit-details-marker{display:none;} .gcpa-faq summary:hover{background:var(--bg-alt);} .gcpa-faq summary .pl{flex:0 0 auto;width:24px;height:24px;border-radius:50%;background:var(--blue-soft);color:var(--blue);display:flex;align-items:center;justify-content:center;font-size:18px;font-weight:700;transition:transform .2s;} .gcpa-faq details[open] summary{background:var(--bg-alt);color:var(--navy);} .gcpa-faq details[open] summary .pl{transform:rotate(45deg);background:var(--blue);color:#fff;} .gcpa-faq .ans{padding:0 22px 20px;color:#1d2733;font-size:15.5px;line-height:1.7;} .gcpa-img-right{float:right;max-width:250px;width:32%;margin:6px 0 24px 28px;border-radius:12px;box-shadow:var(--shadow-lg);border:1px solid var(--line);} .gcpa-img-right img{display:block;width:100%;height:auto;border-radius:12px;} @media(max-width:560px){.gcpa-img-right{float:none;width:70%;max-width:260px;margin:14px auto 18px;}} .gcpa-closing{font-size:24px;font-weight:800;color:var(--navy);margin:48px 0 14px;padding-bottom:12px;border-bottom:3px solid var(--teal-soft);position:relative;} .gcpa-closing::after{content:"";position:absolute;left:0;bottom:-3px;width:70px;height:3px;background:var(--teal);} @media(max-width:560px){.gcpa-post{font-size:16px;} .gcpa-hero{padding:32px 22px;} .gcpa-hero h1{font-size:26px;} .gcpa-post h2{font-size:23px;} .gcpa-cta{padding:26px 20px;} .gcpa-banner .bb{width:100%;} .gcpa-banner .bb a{flex:1 1 auto;text-align:center;}}</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"Open Corporation for $35","alternateName":"Open Corporation For $35","url":"https://opencorporationfor35.ca/","description":"Open Corporation for $35 is a department of Gondaliya CPA.","parentOrganization":{"@type":"Organization","name":"Gondaliya CPA Professional Corporation","url":"https://gondaliyacpa.ca","identifier":"CPA Ontario Firm Registration 61330051"},"telephone":"+1-647-212-9559","email":"info@gondaliyacpa.ca","areaServed":"CA","openingHours":"Mo-Su 09:00-20:30","award":"Xero Partner Award Winner 2026","aggregateRating":{"@type":"AggregateRating","ratingValue":"5","reviewCount":"1300"}}
+</script>
+<div class="gcpa-post">
+<div class="gcpa-hero" style="background:linear-gradient(135deg,#0f2a4a 0%,#15355c 60%,#1c4a78 100%) !important;">
+<span class="gcpa-eyebrow">Our Fee · What $35 Covers · Government Fees · 2026</span>
+<h1 style="color:#ffffff !important;position:relative;z-index:2;font-size:34px;line-height:1.25;font-weight:800;margin:0 0 14px;">Why Our Incorporation Fee Is $35</h1>
+<div class="gcpa-hero-sub" style="margin:0 0 18px;"><span style="color:#eaf3fc !important;font-size:18px;line-height:1.6;display:block;max-width:840px;position:relative;z-index:2;">What our $35 covers, what the government charges on top, what costs extra, and how a CPA firm can keep the fee this low</span></div>
+<div style="position:relative;z-index:2;font-size:15px;line-height:1.5;"><span style="color:#ffffff;font-weight:bold;">By Sharad Gondaliya, CPA</span><span style="color:#9fd0d0;font-weight:bold;">  |  <a href="https://opencorporationfor35.ca/">Open Corporation For $35</a> and <a href="https://opencorporationfor35.ca/address-service-100/">Address Service</a></span></div>
+<div style="position:relative;z-index:2;font-size:14.5px;line-height:1.5;margin-top:12px;"><span style="color:#cfe2f8 !important;font-weight:600;">Open Corporation for $35 is a department of Gondaliya CPA.</span></div>
+</div>
+<h2>$35 Incorporation Fee and Business Incorporation Fee Canada: Affordable CPA Incorporation Services with Open Corporation</h2>
+<p><strong>Open Corporation for $35 is a department of Gondaliya CPA.</strong> The $35 incorporation fee offers an affordable way to handle your business incorporation fee in Canada, especially when combined with <a href="https://opencorporationfor35.ca/incorporation-service-35/">expert CPA incorporation services</a>. Open Corporation provides cost-effective solutions to simplify the incorporation process while ensuring compliance and value.</p>
+<h3 id="toc-summary" style="margin-top:38px;">Quick Summary</h3>
+<p>Our $35 includes HST and covers preparing and filing your articles. The government fee is paid on top: $300 in Ontario or $200 federally online. A NUANS report, the address service and a minute book are separate and optional.</p>
+<figure class="wp-block-table">
+<table>
+<thead><tr><th>Aspect</th><th>Details</th></tr></thead>
+<tbody>
+<tr><td>Our incorporation fee</td><td>$35, HST included.</td></tr>
+<tr><td>Ontario government fee</td><td>$300 online.</td></tr>
+<tr><td>Federal government fee</td><td>$200 online.</td></tr>
+<tr><td>NUANS report</td><td>$25, named companies only.</td></tr>
+<tr><td>Free CPA consultation</td><td>Yes, before you pay anything.</td></tr>
+<tr><td>Guarantees</td><td>30-day money-back guarantee and 60-day fee matching.</td></tr>
+<tr><td>Everything else</td><td>Priced separately on our <a href="https://opencorporationfor35.ca/pricing/">pricing page</a>.</td></tr>
+</tbody>
+</table>
+</figure>
+<div class="gcpa-author">
+<div class="ava" style="background:linear-gradient(135deg,#0f2a4a,#0c8f8f) !important;color:#ffffff !important;">SG</div>
+<div class="info">
+<h5>Author: Sharad Gondaliya, CPA (Canada &amp; USA) — Founder &amp; Managing Director, Gondaliya CPA Professional Corporation, Toronto, Ontario.</h5>
+<div class="role">Reviewed and fact-checked by Sharad Gondaliya, CPA (Canada &amp; USA)</div>
+<p style="font-size:14.5px;color:#15355c !important;font-weight:700;margin:0 0 8px;">Open Corporation for $35 is a department of Gondaliya CPA.</p>
+<p>Gondaliya CPA is a Toronto-based team providing incorporation, CRA registrations, corporate tax, bookkeeping, GST/HST, and payroll for Canadian corporations. Verify our firm on the <a href="https://www.cpaontario.ca/protecting-the-public/directories/firm/gondaliya-5sqvmj">CPA Ontario public firm directory</a>, firm registration 61330051.</p>
+<p style="font-size:13.5px;color:#15355c !important;font-weight:700;margin-top:10px;">CPA Ontario | CPA USA (Washington &amp; Montana) | Xero Partner Award Winner 2026 | 1300+ 5-star Google reviews</p>
+</div>
+</div>
+<p style="font-size:14px;color:#5a6b7b;margin:-26px 0 26px;">Reading time: 25 minutes.</p>
+<div class="gcpa-toc">
+<h5>Table of Contents</h5>
+<ol>
+<li><a href="#toc-services">Services and Processing Times</a></li>
+<li><a href="#toc-costs">Cost Components</a></li>
+<li><a href="#toc-pricing">Pricing Summary</a></li>
+<li><a href="#toc-tax">Tax and Timing</a></li>
+<li><a href="#toc-process">The Process and What $35 Includes</a></li>
+<li><a href="#toc-advantages">Why Clients Choose Us</a></li>
+<li><a href="#toc-choose">Federal or Provincial</a></li>
+<li><a href="#toc-faq">Frequently Asked Questions</a></li>
+<li><a href="#toc-points">Benefits and Quick Reference</a></li>
+</ol>
+</div>
+<span class="gcpa-pill green">The Numbers That Matter</span>
+<div class="gcpa-metrics">
+<div class="gcpa-metric">
+<div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+<div class="big">$35</div>
+<div class="lbl">Our incorporation fee, HST included</div>
+</div>
+<div class="gcpa-metric">
+<div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
+<div class="big">$300</div>
+<div class="lbl">Ontario government fee, paid on top</div>
+</div>
+<div class="gcpa-metric">
+<div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+<div class="big">15 min</div>
+<div class="lbl">Typical time to complete our online form</div>
+</div>
+<div class="gcpa-metric">
+<div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></div>
+<div class="big">30 days</div>
+<div class="lbl">Money-back guarantee</div>
+</div>
+</div>
+<div class="gcpa-callout blue">
+<span class="co-tag">Scope &amp; Assumptions</span>
+<p>This article explains our own pricing and the government fees for federal and Ontario incorporation as they stand in November 2026, in Canadian dollars. Government fees carry no HST and can change at any time. This is educational information only and not tax, legal, or financial advice. Please check our pricing page and the registry's fee on your filing date.</p>
+</div>
+
+<h2>Services, Fees, and Processing Times Overview</h2>
+<div class="gcpa-numhead">
+<div class="num" style="background:#0f2a4a !important;color:#ffffff !important;">1</div>
+<h4 id="toc-services" style="border:none;padding:0;margin:0;">Services and Processing Times</h4>
+<span class="gcpa-pill blue">Services</span>
+</div>
+<h3>Services Provided for Various Corporation Types</h3>
+<h4>Business Corporations</h4>
+<p>Business corporations in Canada help people run commercial activities. The business incorporation fee Canada usually stays affordable. Open Corporation offers a simple way to <a href="https://opencorporationfor35.ca/incorporation-form/">start your business with just $35</a>. It helps avoid extra costs.</p>
+<h4>Not-for-Profits</h4>
+<p>If your group works for public good and not profit, forming a not-for-profit corporation fits well. Our services keep the process affordable and make sure you meet legal rules.</p>
+<h4>Cooperatives</h4>
+<p>Cooperatives are groups that work together to help members. Incorporating as a cooperative protects members with limited liability. We give support at fair prices.</p>
+<h4>Boards of Trade and Railway Services</h4>
+<p>These types need special incorporation rules in Canada. We handle the legal parts while keeping the business incorporation fee Canada reasonable.</p>
+<h3>Incorporation and Related Corporate Services</h3>
+<h4>Incorporate a New Corporation</h4>
+<p>You can start your new corporation with a flat $35 incorporation fee. Our CPA-backed service covers what you need for filing in Canada. It keeps things simple and clear.</p>
+<figure class="wp-block-table">
+<table>
+<thead><tr><th>Service</th><th>Fee</th></tr></thead>
+<tbody>
+<tr><td>Incorporation Fee</td><td>$35</td></tr>
+<tr><td>Government Filing Fees</td><td>$300 Ontario or $200 federal online</td></tr>
+</tbody>
+</table>
+</figure>
+<p>Here are other corporate services we provide:</p>
+<ul>
+<li><strong>Amalgamate Corporations:</strong> We combine two or more corporations at fair fees.</li>
+<li><strong><a href="https://opencorporationfor35.ca/corporate-changes-amendments/">Amend Articles of Incorporation</a>:</strong> We fix or update your articles fast.</li>
+<li><strong>Reorganize a Corporation:</strong> Change your company’s structure smoothly.</li>
+<li><strong>Revive a Corporation:</strong> Bring back a dissolved corporation without fuss.</li>
+<li><strong>Submit Restated Articles:</strong> Update or clarify your corporate documents.</li>
+<li><strong>Dissolve or Declare Intent to Dissolve a Corporation:</strong> Close your business properly.</li>
+<li><strong>Revoke Intent to Dissolve:</strong> Change your mind after starting dissolution.</li>
+</ul>
+<p>Each service uses the CPA incorporation services fee or relates to the business incorporation fee Canada, depending on what’s needed.</p>
+<h3>Changes and Requests Management</h3>
+<p>It’s important to <a href="https://opencorporationfor35.ca/corporate-compliance-subscription/">keep your corporation info current</a>:</p>
+<ul>
+<li><strong>Change director’s information:</strong> Keep records correct with our help (CPA incorporation services fee).</li>
+<li><strong>Change registered office address inside the same province or territory:</strong> Quick updates carry no government fee (CPA incorporation services fee).</li>
+<li><strong>Change additional corporation address:</strong> Let us know when locations change (CPA incorporation services fee).</li>
+<li><strong>Ask for cancellation or correction requests:</strong> Fix errors easily (CPA incorporation services fee).</li>
+<li><strong>Apply for exemptions related to rules:</strong> We guide you through tricky parts (business incorporation fee Canada).</li>
+<li><strong>Apply for decision to withhold ISC information:</strong> Handle privacy matters right (CPA Incorporation Service Fee).</li>
+</ul>
+<h3>Filing Annual and Compliance Documents</h3>
+<p>Filing on time avoids problems:</p>
+<ul>
+<li><a href="https://opencorporationfor35.ca/corporate-annual-filing/">File annual returns on schedule</a> ($35 incorporation fees, CPA incorporation service fees).</li>
+<li>File by-laws and financial statements correctly (CPA incorporation service fees).</li>
+<li>File proxy circulars if required (CPA incorporation service fees).</li>
+<li>Order corporate documents, profiles, certificates when needed (CPA incorporation service fees).</li>
+<li>Obtain Letters of Satisfaction for continuance so things run smooth (CPA incorporation services fees).</li>
+</ul>
+<h3>Fee Structure and Processing Times</h3>
+<p>Know where your money goes:</p>
+<ul>
+<li>Government filing fees vary by place but generally include charges from registries ($35 incorporation fee, business incorporation fee Canada).</li>
+<li>Open Corporation keeps its pricing clear—no hidden costs ($35 incorporation fee, CPA incorporation services fee).</li>
+<li>Processing times depend on the type of service:
+<ul>
+<li>Simple filings may take about 15 minutes online.</li>
+<li>Complex cases might take longer ($35 incorporation fee, affordable incorporation Canada).</li>
+</ul></li>
+<li>Express and digital filing options let you get things done faster when needed (affordable incorporation Canada).</li>
+</ul>
+
+<h2>Detailed Incorporation Cost Components</h2>
+<div class="gcpa-numhead">
+<div class="num" style="background:#0f2a4a !important;color:#ffffff !important;">2</div>
+<h4 id="toc-costs" style="border:none;padding:0;margin:0;">Cost Components</h4>
+<span class="gcpa-pill gold">Costs</span>
+</div>
+<p>When you’re planning to start a business, knowing the costs helps you plan better. The $35 incorporation fee is just one part. There are also <a href="https://opencorporationfor35.ca/guides/cost-to-incorporate-in-canada/">government fees and extra services</a> that add up.</p>
+<p>Here’s what you need to know:</p>
+<ul>
+<li>The $35 incorporation fee covers professional help, but</li>
+<li>Government filing fees vary depending on where you incorporate, and</li>
+<li>Other steps like name searches and documents cost extra.</li>
+</ul>
+<h3>Government filing fees (Federal vs. Ontario Provincial)</h3>
+<p>Government filing fees are what you pay to official registries. They handle your application to make your business legal.</p>
+<ul>
+<li><a href="https://opencorporationfor35.ca/how-to-incorporate-in-ontario/">Ontario</a> charges a fee of $300 for Articles of Incorporation filed online.</li>
+<li>Federal incorporations go through Corporations Canada with their own fee of $200 online.</li>
+</ul>
+<p>These fees don’t include the $35 incorporation fee from Open Corporation. You pay them separately to finish the registration.</p>
+<p><strong>Remember:</strong> government fees change by location and you can’t negotiate them. They keep registries running.</p>
+<div class="gcpa-callout teal">
+<span class="co-tag">Key Stat</span>
+<p><strong>$335:</strong> the total for a numbered Ontario corporation through us, made up of our $35 with HST included and the $300 government fee. A named company adds $25 for the NUANS report.</p>
+</div>
+<h3>NUANS name search fees</h3>
+<p>A <a href="https://opencorporationfor35.ca/nuans-report-20/">NUANS report</a> checks if your proposed business name clashes with others. You need it if you want a named corporation, either federally or in Ontario.</p>
+<p><strong>NUANS Report Fee:</strong> $25 through Open Corporation for $35</p>
+<p>This cost isn’t part of the $35 incorporation fee or government fees. Numbered companies skip this step because they use numbers instead of names.</p>
+<h3>Professional CPA services fees and inclusions</h3>
+<p>The $35 incorporation fee covers help from Open Corporation for $35, run by WealthBamboo Inc., including:</p>
+<ul>
+<li>An online intake form that’s quick and simple</li>
+<li>Preparing and filing your articles of incorporation</li>
+<li>Instant or fast filings when possible</li>
+</ul>
+<p>This low flat fee gives CPA-level service without hidden costs, and the $35 includes HST. The low price works thanks to online tools, NUANS membership, and efficient workflows.</p>
+<div class="gcpa-callout gold">
+<span class="co-tag">Our Actual Experience</span>
+<p>Most incorporations we file are routine, and our online form collects everything we need in one pass, so the work behind each filing is short. When a case is not routine, we say so in the free consultation before you pay anything.</p>
+</div>
+<h3>Registered office address service fees</h3>
+<p>Your business needs a registered office address in its jurisdiction. Some people use their own address; others pay for a service.</p>
+<p>Fees vary by provider and are separate from the government filing and $35 service fee. But you might get an affordable package deal.</p>
+<p>Using a <a href="https://opencorporationfor35.ca/address-service-100/">registered office service</a> makes sure official mail reaches you safely. It also helps keep your home address private—good for founders living outside Canada or working from home.</p>
+<h3>Additional costs (minute books, resolutions, share certificates)</h3>
+<p>Once your company exists on paper, it needs records:</p>
+<ul>
+<li><a href="https://opencorporationfor35.ca/minute-book-preparation/">Minute books</a> hold important meeting notes and resolutions</li>
+<li>Share certificates prove who owns shares</li>
+</ul>
+<p>These extras cost more but are usually small amounts. They help keep your company legit with regulators and show clear governance under Canadian law.</p>
+<div class="gcpa-callout red">
+<span class="co-tag">Risk Warning</span>
+<p><strong>Risk Warning:</strong> The $35 does not include the government fee. Please budget $300 for Ontario or $200 for federal incorporation on top, plus $25 if you want a named company.</p>
+</div>
+
+<h2>Transparent Pricing Summary</h2>
+<div class="gcpa-numhead">
+<div class="num" style="background:#0f2a4a !important;color:#ffffff !important;">3</div>
+<h4 id="toc-pricing" style="border:none;padding:0;margin:0;">Pricing Summary</h4>
+<span class="gcpa-pill teal">Pricing</span>
+</div>
+<p>Clear pricing helps avoid surprises during setup. Here’s how costs break down.</p>
+<h3>Complete cost breakdown table showing government fees, professional fees, and total costs</h3>
+<figure class="wp-block-table">
+<table>
+<thead><tr><th>Cost Component</th><th>Charged By</th><th>Typical Amount (2026)</th><th>Included In $35?</th><th>Notes</th></tr></thead>
+<tbody>
+<tr><td>Incorporation Service Fee</td><td>Open Corporation for $35</td><td>CAD 35</td><td>Yes</td><td>Includes HST</td></tr>
+<tr><td>Ontario Articles Filing</td><td>Ontario Business Registry</td><td>CAD 300</td><td>No</td><td>Required provincial charge</td></tr>
+<tr><td>Federal Incorporation Filing</td><td>Corporations Canada</td><td>CAD 200 online</td><td>No</td><td>For federal registrations</td></tr>
+<tr><td>NUANS Name Search</td><td>Third-party / ISED</td><td>CAD 25 through us</td><td>No</td><td>Needed for named corps only</td></tr>
+<tr><td>Registered Office Address</td><td>Service Provider</td><td>Varies</td><td>No</td><td>Optional</td></tr>
+<tr><td>Minute Book &amp; Corporate Docs</td><td>Service Provider</td><td>Varies</td><td>No</td><td>Recommended</td></tr>
+</tbody>
+</table>
+</figure>
+<p style="font-size:13.5px;color:#5a6b7b;"><strong>Note:</strong> These figures may change based on location.</p>
+<p>The table shows that while the $35 flat fee covers professional help well, you still pay other charges directly to authorities or third parties.<sup>[1][2]</sup></p>
+<h3>Clarification on no hidden fees and common additional charges avoided</h3>
+<p>Open Corporation keeps things simple:</p>
+<ul>
+<li>You pay a fixed $35 for standard online processing steps (except government fees).</li>
+<li>Any extra costs like NUANS reports or registry filings come clearly upfront.</li>
+<li>Optional extras like minute books or registered offices have clear prices before you buy.</li>
+</ul>
+<p>No surprise bills later means easier budgeting from the start.</p>
+<h3>Federal Versus Provincial Incorporation Costs and Benefits</h3>
+<p>Choosing <a href="https://opencorporationfor35.ca/incorporate-federally-in-canada/">federal or provincial incorporation</a> affects your costs and how your business operates across Canada.</p>
+<h4>Cost comparison for named and numbered corporations</h4>
+<figure class="wp-block-table">
+<table>
+<thead><tr><th>Factor</th><th>Named Corporation</th><th>Numbered Corporation</th></tr></thead>
+<tbody>
+<tr><td>Needs NUANS Report</td><td>Yes</td><td>No</td></tr>
+<tr><td>Approval Time</td><td>Longer</td><td>Shorter</td></tr>
+<tr><td>Cost</td><td>Higher</td><td>Lower</td></tr>
+</tbody>
+</table>
+</figure>
+<p>So <a href="https://opencorporationfor35.ca/named-company-incorporation-nuans/">numbered companies save money early</a> but have less branding freedom.<sup>[3]</sup></p>
+<h4>Differences in name protection and operational jurisdictions</h4>
+<p>Federal incorporation protects your company name all over Canada. Provincial protection applies only within that province’s borders:</p>
+<ul>
+<li>Choose federal if you want nationwide brand protection.</li>
+<li>Choose provincial if you want simpler local coverage.</li>
+</ul>
+<p>Both types require yearly returns filed with their registries after incorporating.<sup>[4][5]</sup></p>
+<h4>Director residency and filing obligations</h4>
+<p>Residency rules differ between federal and provincial rules:</p>
+<ul>
+<li><a href="https://opencorporationfor35.ca/ontario-resident-director-rule-removed/">Ontario has required no resident Canadian director</a> since July 5, 2021.</li>
+<li>Federal corporations need at least 25% resident Canadian directors and have filed individuals with significant control information with Corporations Canada since January 22, 2024.</li>
+</ul>
+<p>These rules affect who can be a director depending on where founders live or work.</p>
+<h4>Suitability scenarios for federal or provincial Incorporation</h4>
+<p>CPA firms say consider these points when picking jurisdiction:</p>
+<ul>
+<li><a href="https://opencorporationfor35.ca/guides/extra-provincial-registration/">Businesses selling across provinces</a> often prefer federal status, even with extra-provincial registrations to pay, because it offers wider protections.</li>
+<li>Local sole owners might choose provincial setup to keep filings simple even if they accept limits on geography.</li>
+</ul>
+<p>Professional advice helps balance these choices with costs using expert CPA support included in low-cost options like ours.</p>
+<h3>Ongoing Annual and Compliance Costs After Incorporation</h3>
+<p>Incorporating isn’t just a one-time deal — it brings ongoing duties affecting your budget:<sup>[2][5]</sup></p>
+<ul>
+<li>Annual returns filed either provincially (no fee in Ontario) or federally ($12 online)</li>
+<li>Keeping updated records like Individual Significant Control reports when ownership changes happen</li>
+<li>Tax returns preparation starting with <a href="https://opencorporationfor35.ca/corporate-tax-filing-from-300/">T2 filings costing around CAD300+</a> depending on complexity</li>
+<li>Setting up GST/HST accounts plus payroll remittances if needed adds more admin work</li>
+</ul>
+<p>Each item means separate statutory or professional costs outside any single flat-fee structure. Staying compliant keeps things running smooth after starting with affordable Canadian CPA-backed services aimed at supporting long-term growth.</p>
+<div style="font-size:13px;color:#5a6b7b;border-top:1px solid #e3e9f0;padding-top:10px;margin:18px 0 24px;">
+<p style="margin:0 0 4px;">[1]: https://www.serviceontario.ca/en/business_registry_fees/</p>
+<p style="margin:0 0 4px;">[2]: https://ised-isde.canada.ca/site/corporate-registry-services/en/incorporate-federal-corporate-name-searches-and-registration-fees-nuans-reporting-requirements#fees</p>
+<p style="margin:0 0 4px;">[3]: https://nuans.com/what-is-a-nuans-report/</p>
+<p style="margin:0 0 4px;">[4]: https://www.cpaontario.ca/protecting-the-public/directories/firm/gondaliya-5sqvmj</p>
+<p style="margin:0;">[5]: https://laws-lois.justice.gc.ca/eng/acts/C-44/index.html</p>
+</div>
+<div class="gcpa-cta" style="background:linear-gradient(135deg,#0f2a4a 0%,#1c4a78 100%) !important;">
+<h4>$35 with HST included, and every other fee shown upfront</h4>
+<p>Incorporation from $35 including HST plus government fees, with a free CPA consultation on your jurisdiction, name and share structure before anything is filed. Please book a free consultation.</p>
+<div class="gcpa-trust"><span>1300+ 5-star Google reviews</span><span>Xero Partner Award Winner 2026</span><span>CPA Ontario Firm 61330051</span><span>30-Day Money-Back Guarantee</span></div>
+<div class="gcpa-btnrow"><a class="solid" href="https://gondaliyacpa.ca/consultation/">Book Free Consultation</a><a href="https://opencorporationfor35.ca/">Open Corporation For $35</a><a href="tel:+16472129559">647-212-9559</a></div>
+</div>
+
+<h2>Tax Advantages and Strategic Considerations</h2>
+<div class="gcpa-numhead">
+<div class="num" style="background:#0f2a4a !important;color:#ffffff !important;">4</div>
+<h4 id="toc-tax" style="border:none;padding:0;margin:0;">Tax and Timing</h4>
+<span class="gcpa-pill green">Tax</span>
+</div>
+<p>Incorporating a business in Canada can save you money and offer good benefits. The $35 incorporation fee is just the start. Affordable incorporation Canada options, like Open Corporation’s $35 service, make it easy to begin without spending too much. This approach sets your business up for future growth and can help with taxes.</p>
+<h3>Reasons to Incorporate Your Business in Canada</h3>
+<p>Incorporation <a href="https://opencorporationfor35.ca/convert-sole-proprietorship-corporation/">keeps your personal stuff safe from business debts</a>. Sole proprietors don’t get this protection. The business incorporation fee Canada covers some registration steps, but not all government or ongoing costs. Hiring a CPA for incorporation services means experts handle the paperwork. This lowers mistakes and saves time.</p>
+<p>Corporations look more professional to clients and suppliers. They can raise money by selling shares. Plus, a corporation keeps going even if owners change. These points make incorporating a smart choice for those who want steady growth.</p>
+<h3>Tax Savings Analysis for Ontario Incorporations</h3>
+<p>Setting up a corporation in Ontario offers tax benefits that unincorporated businesses don’t have. The CPA incorporation services fee pays for expert advice on how to set things up right. But tax savings depend on your unique situation.</p>
+<p>Corporations pay <a href="https://opencorporationfor35.ca/guides/small-business-deduction/">lower tax rates on active business income</a> up to certain limits<sup>[1]</sup>. This lets owners delay paying personal taxes by leaving money in the company. Dividends might be taxed less than salary in some cases.</p>
+<p>Still, you need proper advice after incorporation to get these benefits. Just paying the $35 fee or filing forms isn’t enough.</p>
+<h5>References:</h5>
+<p style="font-size:13px;color:#5a6b7b;">Government of Ontario – Corporate Income Tax Rates (2026): https://www.fin.gov.on.ca/en/tax/cit/</p>
+<h3>Timing Considerations: When to Incorporate in Ontario</h3>
+<p>When you incorporate changes what you pay and your legal duties. Affordable incorporation Canada services offer online filing that takes about 15 minutes. Open Corporation even files the same day for $35.</p>
+<p>Many people incorporate early to sort out ownership before they get funding or sign contracts. Others wait until their income is high enough that corporate tax is better than personal tax.</p>
+<p>Choosing your <a href="https://opencorporationfor35.ca/guides/fiscal-year-end/">fiscal year-end</a> affects deadlines for returns and T2 filings—things to talk about with your CPA during free consultations.</p>
+<h3>Common Incorporation Mistakes to Avoid</h3>
+<p>Even with CPA incorporation services, mistakes happen:</p>
+<ul>
+<li>Thinking the $35 covers all fees, including government charges — it doesn’t.</li>
+<li>Skipping NUANS name searches when they’re required causes rejections.</li>
+<li>Picking the wrong province without planning extra-provincial registration.</li>
+<li><a href="https://opencorporationfor35.ca/guides/minute-book-requirements/">Forgetting to keep a minute book</a> leads to problems.</li>
+<li>Missing Individual Significant Control (ISC) reports.</li>
+<li>Filing annual returns late brings penalties.</li>
+</ul>
+<p>Avoid these by knowing what fees cover beyond the flat $35 service Open Corporation offers—part of Gondaliya CPA Professional Corporation in Toronto.</p>
+<h5>References:</h5>
+<p style="font-size:13px;color:#5a6b7b;">Government of Ontario – Corporate Income Tax Rates (2026): https://www.fin.gov.on.ca/en/tax/cit/</p>
+
+<h2>Incorporation Process Explained</h2>
+<div class="gcpa-numhead">
+<div class="num" style="background:#0f2a4a !important;color:#ffffff !important;">5</div>
+<h4 id="toc-process" style="border:none;padding:0;margin:0;">The Process and What $35 Includes</h4>
+<span class="gcpa-pill gold">Process</span>
+</div>
+<h3>Step-by-Step Incorporation Procedure</h3>
+<p>Starting a business in Canada means going through a few key steps to get it set up right. The $35 incorporation fee covers the service from Open Corporation for $35. This makes incorporation affordable across Canada.</p>
+<p>Here’s how it works:</p>
+<ol>
+<li><strong>Pick Your Jurisdiction:</strong> Choose either Ontario incorporation using the Ontario Business Registry or federal incorporation with Corporations Canada. Each has different fees and rules.</li>
+<li><strong>Choose a Company Name:</strong> You can pick a numbered corporation or a named one. Named companies need a NUANS report to approve the name.</li>
+<li><strong>Prepare Articles of Incorporation:</strong> Write articles that explain your company’s setup, shares, and directors.</li>
+<li><strong>File Online:</strong> Use <a href="https://opencorporationfor35.ca/incorporation-form/">Open Corporation for $35’s website</a> to submit your application. It usually takes about 15 minutes.</li>
+<li><strong>Pay Government Fees:</strong> These fees are separate from the $35 service charge and depend on the jurisdiction. ($300 in Ontario or $200 federally online in 2026.)</li>
+<li><strong>Get Your Certificate:</strong> When approved, you receive official papers showing your business is legal.</li>
+</ol>
+<p>This process keeps costs low while offering some professional help. It suits new owners or solo entrepreneurs looking for trusted CPA incorporation services at a fair price.</p>
+<h3>What is Included in the $35 Incorporation Fee</h3>
+<p>The $35 incorporation fee from Open Corporation for $35 is just the service charge. It doesn’t include government filing fees. The $35 includes HST. This fee covers help during your online incorporation with support from CPAs.</p>
+<p>Usually, this fee includes:</p>
+<ul>
+<li>Access to an easy online form</li>
+<li>Preparing and reviewing basic articles of incorporation</li>
+<li>Helping with filing at provincial or federal registries</li>
+<li>Ordering NUANS reports when needed, for $25</li>
+<li>Assistance with setting up your registered office/address (optional)</li>
+<li><a href="https://gondaliyacpa.ca/consultation/">A free first meeting with licensed CPAs</a></li>
+</ul>
+<p>This clear pricing means no surprise costs during filing. Plus, you get ongoing support from professionals who know Canadian corporate rules well.</p>
+<div class="gcpa-callout blue">
+<span class="co-tag">Worth Knowing</span>
+<p>The $35 covers our work on the incorporation itself. The government fee, a NUANS report, the registered office address service and a minute book are each priced separately, and we show every one before you pay.</p>
+</div>
+<h3>Post-Incorporation Next Steps</h3>
+<p>After you incorporate your business using our affordable incorporation Canada option, there are some important things to do next beyond paying any business incorporation fee Canada requires:</p>
+<ul>
+<li><a href="https://opencorporationfor35.ca/business-number-cra-account-registration/">Get your Business Number (BN) from CRA</a> if not assigned automatically</li>
+<li>Set up a corporate minute book with bylaws, resolutions, share registers, and an Individual Significant Control (ISC) register as needed</li>
+<li>File annual returns on time based on your jurisdiction; missing deadlines can cause penalties (check 2026 details)</li>
+<li>Register extra-provincially if you work outside your original area; this adds more fees</li>
+<li>Think about registering for GST/HST and setting up payroll if you expect taxable sales or employees—CPA firms offer these services at good rates</li>
+<li>Prepare annual corporate tax filings (T2 Return); expect to budget about $300 but this varies by complexity</li>
+</ul>
+<p>Doing these things keeps you legal after starting up. You can also get expert advice through CPA firm services that grow with your business anywhere in Canada.</p>
+<p>For help with managing these steps or understanding all costs—including our fixed CPA incorporation services fee plus government charges—contact us anytime at 647-212-9559 or info@gondaliyacpa.ca. We’re open Monday to Sunday, 9 AM to 8:30 PM.</p>
+
+<h2>Service Advantages and Professional Support</h2>
+<div class="gcpa-numhead">
+<div class="num" style="background:#0f2a4a !important;color:#ffffff !important;">6</div>
+<h4 id="toc-advantages" style="border:none;padding:0;margin:0;">Why Clients Choose Us</h4>
+<span class="gcpa-pill teal">Support</span>
+</div>
+<h3>Benefits of Using Open Corporation for $35 Incorporation</h3>
+<p>Open Corporation for $35 gives you an affordable incorporation Canada-wide. The $35 incorporation fee is clear and simple—no hidden charges, and HST is included. You can start your business fast. Their online platform lets you file your incorporation in about 15 minutes. They also offer same-day filing and <a href="https://opencorporationfor35.ca/guides/nuans-name-search/">instant NUANS report generation</a>.</p>
+<p>You won't see surprise fees, which makes planning your startup budget easier. This separates the business incorporation fee Canada entrepreneurs often find confusing. Open Corporation handles both Ontario Business Registry incorporations and federal filings under Corporations Canada rules. They focus on keeping costs low but still follow the law carefully.</p>
+<h3>Comprehensive Professional Services Offered</h3>
+<p>The CPA incorporation services fee covers key steps done by pros at a registered Ontario CPA firm. They prepare your articles of incorporation, submit filings to the right registry (Ontario or federal), handle name searches with NUANS reports when needed, and offer initial corporate minute books as a separate service.</p>
+<p>They also offer services like registered office/address support plus free CPA advice on ongoing tasks. These include annual returns and tax filings to keep you legal over time. Their service uses tools like <a href="https://opencorporationfor35.ca/incorporation-bookkeeping-bundle/">QuickBooks and Xero</a> to make admin easier but keeps personal help from real CPAs.</p>
+<h3>Trust Signals and Team Credentials</h3>
+<p>Here’s why clients trust this service:</p>
+<ul>
+<li>Run by Gondaliya CPA Professional Corporation — a registered Ontario CPA firm (Firm Registration Number 61330051)</li>
+<li>Winner of Xero Partner Award 2026</li>
+<li>Over 1300 five-star Google reviews show happy clients</li>
+<li>Clear policies: 30-day money-back guarantee and 60-day fee matching</li>
+<li>Led by Sharadkumar Gondaliya, CPA (Canada &amp; USA), with more than 10 years helping Canadian entrepreneurs</li>
+</ul>
+<p>These facts explain why their CPA incorporation services fee stays low without cutting corners. Being a NUANS member means they follow official naming rules strictly during company registration.</p>
+<h3>Contact and Support Options</h3>
+<p>Open Corporation for $35 offers quick help at every step:</p>
+<ul>
+<li><a href="https://opencorporationfor35.ca/contact-us/">Free first talk with licensed CPAs</a> who know provincial registries including Ontario Business Registry</li>
+<li>Reach them Monday to Sunday, 9 AM – 8:30 PM by phone at 647‑212‑9559 or email info@gondaliyacpa.ca</li>
+<li>Pay securely using Interac e-transfer (auto-deposit ready) or credit card</li>
+</ul>
+<p>Got questions about their affordable online process? Need help with your province’s rules? Just ask. Open Corporation for $35 wants to make setting up your business clear and easy.</p>
+<p>Sharad Gondaliya, CPA (Canada &amp; USA), has over 10 years helping hundreds of Canadian business owners.</p>
+<div class="gcpa-banner" style="background:linear-gradient(135deg,#0d3b66 0%,#0c7a7a 100%) !important;">
+<div class="bt">Not sure what your total will be? Please book a free consultation and we will list our $35, the government fee and any extras before you pay anything.</div>
+<div class="bb"><a class="solid" href="https://gondaliyacpa.ca/consultation/">Book Free Consultation</a><a href="mailto:info@gondaliyacpa.ca">info@gondaliyacpa.ca</a><a href="tel:+16472129559">647-212-9559</a></div>
+</div>
+
+<h2>Federal vs. Provincial Incorporation: Choosing the Best Option</h2>
+<div class="gcpa-numhead">
+<div class="num" style="background:#0f2a4a !important;color:#ffffff !important;">7</div>
+<h4 id="toc-choose" style="border:none;padding:0;margin:0;">Federal or Provincial</h4>
+<span class="gcpa-pill blue">Jurisdiction</span>
+</div>
+<p>Picking between federal and provincial incorporation depends on your business plans and where you want to operate. The $35 incorporation fee covers our service only; government fees differ depending on the province or territory.</p>
+<p>Federal incorporation under the Canada Business Corporations Act (CBCA) protects your business name across all provinces and territories. However, if you work in multiple provinces, you may need <a href="https://opencorporationfor35.ca/extra-provincial-registration/">extra-provincial registration</a> in each one. Provincial incorporation limits your name protection to that province but is simpler if your business stays local.</p>
+<p>The business incorporation fee Canada-wide includes government filing charges, which are separate from our $35 service fee, which includes HST. Affordable incorporation Canada options try to balance these costs with what’s required for compliance.</p>
+<p>Think about whether your business will grow beyond one province or needs national brand recognition. Federal corporations pay a lower government fee at first ($200 online versus $300 in Ontario) but get wider legal protection. Provincial incorporations cost more upfront in Ontario but can be simpler, though they lead to extra expenses if you register in other provinces later.</p>
+<p>Our CPA-backed online service explains these differences clearly and avoids hidden fees. We help founders make smart choices that fit their growth goals.</p>
+<h3>Incorporation Costs Across Canadian Provinces</h3>
+<p>Incorporation fees vary a lot from province to province because each registry sets its own prices. Our $35 incorporation fee covers the professional part of the process, but government filing fees come from provincial or territorial authorities.</p>
+<p>Here’s a quick look at some provinces:</p>
+<ul>
+<li><strong>Ontario:</strong> $300 government filing fee, NUANS report needed</li>
+<li><strong><a href="https://opencorporationfor35.ca/how-to-incorporate-in-british-columbia/">British Columbia</a>:</strong> $350 fee, no NUANS report; BC uses its own name request instead</li>
+<li><strong>Alberta:</strong> $275 fee, Alberta NUANS report needed for a named company</li>
+<li><strong>Quebec:</strong> Around CAD 300 fee, no NUANS report; the Registraire des entreprises checks names</li>
+</ul>
+<p>These numbers show why it’s smart to understand local rules when planning your budget. Besides fees, things like annual returns, registered office services, or minute books can add up and vary by province.</p>
+<h3>Access to Related Corporate Services</h3>
+<p>After incorporating with our CPA firm’s affordable online offer starting at $35 service fee, HST included, clients often need more help for ongoing compliance.</p>
+<p>Our CPA firm can provide:</p>
+<ul>
+<li>Registered office/address services</li>
+<li>Minute book prep</li>
+<li>Annual return filings</li>
+<li>GST/HST account setup</li>
+<li><a href="https://opencorporationfor35.ca/payroll-service/">Payroll account registration</a></li>
+</ul>
+<p>Each service may have separate government fees beyond our fixed CPA incorporation services fee.</p>
+<p>Using a trusted CPA firm helps keep everything connected—from forming your company to handling tax filings and regulatory duties. This prevents missed deadlines and penalties.</p>
+<h3>Navigation and Further Reading Links</h3>
+<p>Want more info on affordable incorporation Canada options or CPA-incorporation-services-fee details? Check out these pages:</p>
+<ul>
+<li>Ontario Incorporation</li>
+<li>Corporate Annual Filing</li>
+<li>Registered Office/Address Service</li>
+<li><a href="https://opencorporationfor35.ca/pricing/">Pricing Details</a></li>
+</ul>
+<p>These resources give clear guidance for different regions while keeping pricing transparent like Open Corporation for $35 promises.</p>
+<h3>Calls to Action</h3>
+<p><a href="https://opencorporationfor35.ca/incorporation-service-35/">Start your company today</a> with a simple flat $35 incorporation fee, HST included, plus any government charges.</p>
+<p>Call us now for a free consultation at 647‑212‑9559 or email info@gondaliyacpa.ca. We’re here every day from 9 AM to 8:30 PM Toronto time.</p>
+<p>Open Corporation for $35 helps you incorporate anywhere in Canada with no hidden costs and clear steps toward building a legal corporate structure.</p>
+
+<h2>Frequently Asked Questions About Our $35 Incorporation Fee</h2>
+<div class="gcpa-numhead">
+<div class="num" style="background:#0f2a4a !important;color:#ffffff !important;">8</div>
+<h4 id="toc-faq" style="border:none;padding:0;margin:0;">$35 Fee FAQ</h4>
+<span class="gcpa-pill teal">FAQ</span>
+</div>
+<div class="gcpa-faq" id="faq-main">
+<details><summary>What is included in the CPA incorporation services fee at Open Corporation for $35?<span class="pl">+</span></summary>
+<div class="ans"><p>The CPA incorporation services fee covers professional help with preparing and filing incorporation documents; NUANS reports ($25) and minute books are separate.</p></div></details>
+<details><summary>Can I get a free CPA consultation before paying the $35 incorporation fee?<span class="pl">+</span></summary>
+<div class="ans"><p>Yes, Open Corporation for $35 offers a free CPA consultation to answer your questions about incorporation and related services.</p></div></details>
+<details><summary>How fast is the incorporation process with Open Corporation’s same-day filing?<span class="pl">+</span></summary>
+<div class="ans"><p>Same-day filing lets you receive your business certificate quickly if you submit your application before cut-off times.</p></div></details>
+<details><summary>What are the government incorporation fees in 2026?<span class="pl">+</span></summary>
+<div class="ans"><p>Government fees vary by jurisdiction and typically range from $200 to $350: $200 federally online, $275 in Alberta, $300 in Ontario and $350 in British Columbia.</p></div></details>
+<details><summary>What is the difference between named and numbered corporations in Canada?<span class="pl">+</span></summary>
+<div class="ans"><p>Named corporations require a NUANS report and have legal name protection. Numbered corporations avoid this but have less brand identity.</p></div></details>
+<details><summary>Does Open Corporation provide registered office service?<span class="pl">+</span></summary>
+<div class="ans"><p>Yes, registered office service is available separately to ensure official mail handling and privacy protection.</p></div></details>
+<details><summary>Is extra-provincial registration required after federal incorporation?<span class="pl">+</span></summary>
+<div class="ans"><p>Yes, if you operate outside your incorporated province, you must pay extra-provincial registration fees in other provinces.</p></div></details>
+<details><summary>What are individual significant control (ISC) reports?<span class="pl">+</span></summary>
+<div class="ans"><p>ISC reports disclose individuals who control a corporation. Federal corporations file them at incorporation, with each annual return and within 15 days of a change; Ontario corporations keep the register at their records office.</p></div></details>
+<details><summary>How does Open Corporation support corporate tax filings like T2 returns?<span class="pl">+</span></summary>
+<div class="ans"><p>CPA professionals assist with T2 corporate tax returns preparation, which usually costs around CAD 300 or more based on complexity.</p></div></details>
+<details><summary>Can Open Corporation help with GST/HST account registrations and payroll setup?<span class="pl">+</span></summary>
+<div class="ans"><p>Yes, they offer guidance on registering GST/HST accounts and setting up payroll remittances for Canadian businesses.</p></div></details>
+</div>
+<div class="gcpa-callout red">
+<span class="co-tag">Risk Warning</span>
+<p><strong>Risk Warning:</strong> No provider can make the registry approve a filing the same day. Please do not book a bank appointment or sign contracts in the corporation's name until you hold the certificate.</p>
+</div>
+
+<h2>Additional Benefits of Using Open Corporation for $35 Incorporation</h2>
+<div class="gcpa-numhead">
+<div class="num" style="background:#0f2a4a !important;color:#ffffff !important;">9</div>
+<h4 id="toc-points" style="border:none;padding:0;margin:0;">Benefits and Quick Reference</h4>
+<span class="gcpa-pill gold">At a Glance</span>
+</div>
+<ul>
+<li>Flat transparent pricing avoids hidden fees during incorporation.</li>
+<li>Access to online NUANS membership speeds up name searches.</li>
+<li>Digital filing options simplify submission with Ontario Business Registry or Corporations Canada.</li>
+<li>Membership in NUANS system ensures valid legal name protection across Canada.</li>
+<li>Integration support for accounting platforms like Xero and QuickBooks.</li>
+<li>30-day money-back guarantee provides risk-free trial of services.</li>
+<li>60-day fee-matching policy ensures competitive pricing guaranteed.</li>
+<li><a href="https://opencorporationfor35.ca/services/">Registered Ontario CPA firm</a> delivers trustworthy professional support.</li>
+<li>High client satisfaction ratings reflect quality service experience.</li>
+<li>Guidance on fiscal year-end choice helps optimize tax planning.</li>
+</ul>
+<div class="gcpa-pillhead"><h4 style="border:none;padding:0;margin:0;">Quick Answers: Key Numbers at a Glance</h4><span class="gcpa-pill gold">At a Glance</span></div>
+<ul>
+<li><strong>Our incorporation fee:</strong> $35, HST included</li>
+<li><strong>Ontario government fee:</strong> $300 online</li>
+<li><strong>Federal government fee:</strong> $200 online</li>
+<li><strong>NUANS report:</strong> $25</li>
+<li><strong>Numbered Ontario company, all in:</strong> $335</li>
+<li><strong>Named Ontario company, all in:</strong> $360</li>
+<li><strong>Money-back guarantee:</strong> 30 days</li>
+<li><strong>Fee matching:</strong> 60 days</li>
+</ul>
+<div class="gcpa-pillhead"><h4 style="border:none;padding:0;margin:0;">Who This Is For / Not For</h4><span class="gcpa-pill teal">Fit Check</span></div>
+<ul>
+<li><strong>For:</strong> Founders with a standard federal or Ontario incorporation who want a CPA firm to prepare and file it for a low, clear fee.</li>
+<li><strong>Not For:</strong> Anyone expecting the $35 to cover the government fee, which is paid to the registry on top.</li>
+</ul>
+<div class="gcpa-callout green">
+<span class="co-tag">Verdict</span>
+<p>Our $35 is a real service fee with HST included, not a teaser. What it does not cover is the government's fee, $300 in Ontario or $200 federally online, and the optional extras you choose. For a numbered Ontario company, that is $335 in total; for a named one with our $25 NUANS report, $360.</p>
+</div>
+<div class="gcpa-callout blue">
+<span class="co-tag">2026 Update</span>
+<p><strong>2026 Update &mdash; what is current:</strong> This article reflects our pricing and government fees as of November 2026. Our incorporation fee is $35 with HST included, and our NUANS report is $25. The government fee is $300 in Ontario and $200 federally online. Ontario annual returns are free, and federal annual returns cost $12 online. Ontario has had no resident director rule since July 5, 2021, while federal corporations need at least 25% resident Canadian directors. Please check our pricing page and the registry's fee on your filing date.</p>
+</div>
+<h5 style="color:#15355c;margin:24px 0 8px;">Incorporation Budget Readiness Check</h5>
+<p>This quick self-check flags which costs beyond our $35 apply to you. Please answer the six questions below.</p>
+<div id="ocf-chk">
+  <style>
+    #ocf-chk{--n:#0f2a4a;--n2:#15355c;--bl:#1c6dd0;--tl:#0c8f8f;--gd:#c9991f;--rd:#c0392b;--ink:#1d2733;--mut:#5a6b7b;--ln:#d8e0e8;--alt:#f5f8fb;
+      border:1px solid var(--ln);border-radius:14px;overflow:hidden;background:#fff;box-shadow:0 10px 30px rgba(15,42,74,.08);font-family:inherit;color:var(--ink);margin:24px 0;}
+    #ocf-chk *{box-sizing:border-box;}
+    #ocf-chk .s-head{background:linear-gradient(135deg,var(--n),var(--n2));color:#fff;padding:18px 22px;}
+    #ocf-chk .s-head h5{margin:0;font-size:19px;font-weight:700;color:#fff!important;}
+    #ocf-chk .s-head p{margin:4px 0 0;font-size:13px;color:#cfe2f8!important;}
+    #ocf-chk .s-body{padding:20px 22px;}
+    #ocf-chk .s-q{padding:13px 0;border-bottom:1px solid var(--ln);display:flex;justify-content:space-between;align-items:center;gap:14px;}
+    #ocf-chk .s-q:first-child{padding-top:2px;}
+    #ocf-chk .s-q span.s-lab{font-weight:600;font-size:14.5px;color:var(--n);}
+    #ocf-chk .s-seg{display:inline-flex;border:1px solid var(--ln);border-radius:10px;overflow:hidden;flex:0 0 auto;}
+    #ocf-chk .s-seg label{cursor:pointer;padding:8px 18px;font-size:14px;font-weight:600;color:var(--mut);background:var(--alt);transition:.15s;user-select:none;}
+    #ocf-chk .s-seg label+label{border-left:1px solid var(--ln);}
+    #ocf-chk .s-seg input{position:absolute;opacity:0;width:0;height:0;}
+    #ocf-chk .s-seg input:checked+label{background:var(--n);color:#fff!important;}
+    #ocf-chk .s-go{margin-top:18px;width:100%;border:none;border-radius:11px;padding:14px 18px;font-size:15.5px;font-weight:700;color:#fff!important;cursor:pointer;background:linear-gradient(135deg,var(--bl),var(--tl));font-family:inherit;}
+    #ocf-chk .s-go:hover{filter:brightness(1.05);}
+    #ocf-chk .s-msg{display:none;margin-top:12px;font-size:13.5px;color:var(--rd);font-weight:600;}
+    #ocf-chk .s-out{display:none;margin-top:18px;border-radius:12px;border:1px solid var(--ln);overflow:hidden;}
+    #ocf-chk .s-out .s-status{padding:14px 18px;font-weight:700;font-size:16px;color:#fff!important;background:linear-gradient(135deg,var(--n),var(--n2));}
+    #ocf-chk .s-out .s-inner{padding:16px 18px;background:var(--alt);}
+    #ocf-chk .s-row{font-size:14.5px;margin:0 0 10px;line-height:1.5;}
+    #ocf-chk .s-count{display:inline-block;background:#fff;border:1px solid var(--ln);border-radius:9px;padding:8px 14px;font-weight:700;color:var(--n);font-size:14.5px;}
+    #ocf-chk .s-list{margin:8px 0 0;padding-left:18px;}
+    #ocf-chk .s-list li{font-size:13.5px;color:var(--ink);margin:4px 0;border:none;padding:0 0 0 4px;}
+    #ocf-chk .s-list li::before{display:none;}
+    #ocf-chk .s-cta{display:inline-block;margin-top:14px;background:var(--gd);color:#fff!important;font-weight:700;font-size:14.5px;text-decoration:none;padding:11px 20px;border-radius:10px;}
+    #ocf-chk .s-note{font-size:12.5px;color:var(--mut);margin:12px 0 0;}
+    @media(max-width:560px){#ocf-chk .s-q{flex-direction:column;align-items:flex-start;gap:8px;}}
+  </style>
+  <div class="s-head" style="background:linear-gradient(135deg,#0f2a4a,#15355c) !important;">
+    <h5>Incorporation Budget Readiness Check</h5>
+    <p>Six quick questions. No tax calculation, no figure quoted.</p>
+  </div>
+  <div class="s-body">
+    <div class="s-q" data-flag="1" data-msg="A NUANS report, $25 through us, since a named company cannot file without one"><span class="s-lab">1. Do you want a named company rather than a numbered one?</span>
+      <span class="s-seg"><input type="radio" id="c-a-y" name="c-a" value="1"><label for="c-a-y">Yes</label><input type="radio" id="c-a-n" name="c-a" value="0"><label for="c-a-n">No</label></span></div>
+    <div class="s-q" data-flag="0" data-msg="Choosing Ontario ($300) or federal ($200 online) incorporation, based on where you will operate"><span class="s-lab">2. Have you decided between Ontario and federal incorporation?</span>
+      <span class="s-seg"><input type="radio" id="c-b-y" name="c-b" value="1"><label for="c-b-y">Yes</label><input type="radio" id="c-b-n" name="c-b" value="0"><label for="c-b-n">No</label></span></div>
+    <div class="s-q" data-flag="1" data-msg="A registered office address service, if you do not want your home address on the public record"><span class="s-lab">3. Do you need an address other than your home for the registered office?</span>
+      <span class="s-seg"><input type="radio" id="c-c-y" name="c-c" value="1"><label for="c-c-y">Yes</label><input type="radio" id="c-c-n" name="c-c" value="0"><label for="c-c-n">No</label></span></div>
+    <div class="s-q" data-flag="0" data-msg="A minute book with bylaws, resolutions and registers, which every corporation must keep"><span class="s-lab">4. Do you have a plan for your minute book?</span>
+      <span class="s-seg"><input type="radio" id="c-d-y" name="c-d" value="1"><label for="c-d-y">Yes</label><input type="radio" id="c-d-n" name="c-d" value="0"><label for="c-d-n">No</label></span></div>
+    <div class="s-q" data-flag="1" data-msg="Extra-provincial registration fees in each other province where you carry on business"><span class="s-lab">5. Will you operate in more than one province?</span>
+      <span class="s-seg"><input type="radio" id="c-e-y" name="c-e" value="1"><label for="c-e-y">Yes</label><input type="radio" id="c-e-n" name="c-e" value="0"><label for="c-e-n">No</label></span></div>
+    <div class="s-q" data-flag="1" data-msg="GST/HST and payroll registration, and the bookkeeping that comes with them"><span class="s-lab">6. Will you need GST/HST or payroll in your first three months?</span>
+      <span class="s-seg"><input type="radio" id="c-f-y" name="c-f" value="1"><label for="c-f-y">Yes</label><input type="radio" id="c-f-n" name="c-f" value="0"><label for="c-f-n">No</label></span></div>
+    <button type="button" class="s-go" id="c-go">Check my readiness</button>
+    <div class="s-msg" id="c-msg">Please answer all six questions to continue.</div>
+    <div class="s-out" id="c-out">
+      <div class="s-status" id="c-status" style="background:linear-gradient(135deg,#0f2a4a,#15355c) !important;">Your profile</div>
+      <div class="s-inner">
+        <p class="s-row"><b>Points to work through:</b> <span class="s-count" id="c-count"></span></p>
+        <div id="c-listwrap" style="display:none;"><p class="s-row" style="margin-bottom:4px;"><b>Worth reviewing with us:</b></p><ul class="s-list" id="c-list"></ul></div>
+        <p class="s-row" id="c-clean" style="display:none;"><b>Nothing flagged.</b> The usual complications do not appear to apply to you.</p>
+        <a class="s-cta" href="https://gondaliyacpa.ca/consultation/">Book a free consultation</a>
+        <p class="s-note">This is a general prompt, not tax advice, and it does not calculate your tax. Your outcome depends on your full facts, so please book a free consultation.</p>
+      </div>
+    </div>
+  </div>
+  <script>
+  (function(){
+    var root=document.getElementById('ocf-chk');
+    root.querySelector('#c-go').addEventListener('click',function(){
+      var qs=root.querySelectorAll('.s-q'), items=[], missing=false;
+      qs.forEach(function(q){
+        var x=q.querySelector('input:checked');
+        if(!x){missing=true;return;}
+        if(x.value===q.getAttribute('data-flag')) items.push(q.getAttribute('data-msg'));
+      });
+      var msg=root.querySelector('#c-msg'), out=root.querySelector('#c-out');
+      if(missing){msg.style.display='block';out.style.display='none';return;}
+      msg.style.display='none';
+      var list=root.querySelector('#c-list'), lw=root.querySelector('#c-listwrap'), clean=root.querySelector('#c-clean');
+      root.querySelector('#c-count').textContent=items.length+' to work through';
+      list.innerHTML='';
+      if(items.length){lw.style.display='block';clean.style.display='none';items.forEach(function(t){var li=document.createElement('li');li.textContent=t;list.appendChild(li);});}
+      else{lw.style.display='none';clean.style.display='block';}
+      root.querySelector('#c-status').textContent = items.length>=3 ? 'Several points need attention' : (items.length>=1 ? 'A few points to work through' : 'A straightforward case');
+      out.style.display='block';
+    });
+  })();
+  </script>
+</div>
+<div class="gcpa-cta" style="background:linear-gradient(135deg,#0f2a4a 0%,#1c4a78 100%) !important;">
+<h4>Incorporate for $35, HST included</h4>
+<p>Incorporation from $35 including HST plus government fees, with a free CPA consultation and every other fee shown before you pay. Please book a free consultation.</p>
+<div class="gcpa-trust"><span>1300+ 5-star Google reviews</span><span>Xero Partner Award Winner 2026</span><span>30-Day Money-Back Guarantee</span><span>60-Day Fee Matching</span></div>
+<div class="gcpa-btnrow"><a class="solid" href="https://gondaliyacpa.ca/consultation/">Book Free Consultation</a><a href="https://opencorporationfor35.ca/address-service-100/">Address Service</a><a href="https://opencorporationfor35.ca/contact-us/">Contact Us</a></div>
+</div>
+<h3 class="gcpa-closing" id="toc-closing">What to Send Us</h3>
+<p>Send us whether you want Ontario or federal incorporation, a numbered or named company, each director's full legal name and address, and whether you need the registered office address service or a minute book. That is enough for us to confirm your total cost and file. Please start on our <a href="https://opencorporationfor35.ca/incorporation-form/">incorporation form</a> or see every fee on our <a href="https://opencorporationfor35.ca/pricing/">pricing page</a>.</p>
+<div class="gcpa-author">
+<div class="ava" style="background:linear-gradient(135deg,#0f2a4a,#0c8f8f) !important;color:#ffffff !important;">SG</div>
+<div class="info">
+<h5>Sharad Gondaliya, CPA (Canada &amp; USA) — Founder &amp; Managing Director, Gondaliya CPA Professional Corporation</h5>
+<div class="role">Reviewed and fact-checked by Sharad Gondaliya, CPA (Canada &amp; USA)</div>
+<p style="font-size:14.5px;color:#15355c !important;font-weight:700;margin:0 0 8px;">Open Corporation for $35 is a department of Gondaliya CPA.</p>
+<p>We incorporate and support companies in all 13 provinces and territories, handling CRA registrations, corporate tax filing, bookkeeping, GST/HST, payroll and audit support. Verify our firm on the <a href="https://www.cpaontario.ca/protecting-the-public/directories/firm/gondaliya-5sqvmj">CPA Ontario public firm directory</a>, firm registration 61330051.</p>
+<p style="font-size:13.5px;color:#15355c !important;font-weight:700;margin-top:10px;">CPA Ontario | CPA USA (Washington &amp; Montana) | Xero Partner Award Winner 2026 | 1300+ 5-star Google reviews</p>
+</div>
+</div>
+<p style="font-size:13px;color:#5a6b7b;border-top:1px solid #e3e9f0;padding-top:16px;margin-top:8px;"><strong>Published:</strong> November 9, 2026 &nbsp;·&nbsp; <strong>Last updated:</strong> November 9, 2026</p>
+<p style="font-size:13px;color:#5a6b7b;"><strong>Editorial policy:</strong> Our content is prepared by our team and reviewed by Sharad Gondaliya, CPA, and we update it whenever our pricing or government fees change.</p>
+<p style="font-size:13px;color:#5a6b7b;"><strong>Disclaimer:</strong> This article is educational information only and is not tax, legal, or financial advice. Gondaliya CPA Professional Corporation is a firm of Chartered Professional Accountants, not a law firm. Please consult a CPA before acting.</p>
+<p style="font-size:14.5px;color:#15355c;font-weight:700;border-top:2px solid #e3e9f0;padding-top:16px;margin-top:20px;">Open Corporation for $35 is a department of Gondaliya CPA.</p>
+<p style="font-size:13px;color:#5a6b7b;">Operated by WealthBamboo Inc. Parent firm Gondaliya CPA Professional Corporation, CPA Ontario firm registration 61330051. Xero Partner Award Winner 2026. 1300+ five-star Google reviews. 30-day money-back guarantee and 60-day fee-matching policy. Phone 647-212-9559, email info@gondaliyacpa.ca, open 9:00 AM to 8:30 PM Monday to Sunday. Payment by Interac e-Transfer to info@gondaliyacpa.ca only, security question "Not Applicable" as auto-deposit is enabled. Card is also accepted.</p>
+</div>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@graph": [{"@type": "BlogPosting", "@id": "https://opencorporationfor35.ca/why-our-incorporation-fee-is-35/#article", "headline": "Why Our Incorporation Fee Is $35", "description": "What our $35 incorporation fee covers, with HST included, what the government charges on top in Ontario and federally, and which extras cost more.", "datePublished": "2026-11-09", "dateModified": "2026-11-09", "author": {"@type": "Person", "name": "Sharad Gondaliya, CPA"}, "publisher": {"@type": "Organization", "name": "Open Corporation for $35", "description": "Open Corporation for $35 is a department of Gondaliya CPA.", "parentOrganization": {"@type": "AccountingService", "name": "Gondaliya CPA Professional Corporation", "identifier": "CPA Ontario Firm Registration 61330051"}}, "mainEntityOfPage": "https://opencorporationfor35.ca/why-our-incorporation-fee-is-35/"}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is included in the CPA incorporation services fee at Open Corporation for $35?", "acceptedAnswer": {"@type": "Answer", "text": "The CPA incorporation services fee covers professional help with preparing and filing incorporation documents; NUANS reports ($25) and minute books are separate."}}, {"@type": "Question", "name": "Can I get a free CPA consultation before paying the $35 incorporation fee?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, Open Corporation for $35 offers a free CPA consultation to answer your questions about incorporation and related services."}}, {"@type": "Question", "name": "How fast is the incorporation process with Open Corporation’s same-day filing?", "acceptedAnswer": {"@type": "Answer", "text": "Same-day filing lets you receive your business certificate quickly if you submit your application before cut-off times."}}, {"@type": "Question", "name": "What are the government incorporation fees in 2026?", "acceptedAnswer": {"@type": "Answer", "text": "Government fees vary by jurisdiction and typically range from $200 to $350: $200 federally online, $275 in Alberta, $300 in Ontario and $350 in British Columbia."}}, {"@type": "Question", "name": "What is the difference between named and numbered corporations in Canada?", "acceptedAnswer": {"@type": "Answer", "text": "Named corporations require a NUANS report and have legal name protection. Numbered corporations avoid this but have less brand identity."}}, {"@type": "Question", "name": "Does Open Corporation provide registered office service?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, registered office service is available separately to ensure official mail handling and privacy protection."}}, {"@type": "Question", "name": "Is extra-provincial registration required after federal incorporation?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, if you operate outside your incorporated province, you must pay extra-provincial registration fees in other provinces."}}, {"@type": "Question", "name": "What are individual significant control (ISC) reports?", "acceptedAnswer": {"@type": "Answer", "text": "ISC reports disclose individuals who control a corporation. Federal corporations file them at incorporation, with each annual return and within 15 days of a change; Ontario corporations keep the register at their records office."}}, {"@type": "Question", "name": "How does Open Corporation support corporate tax filings like T2 returns?", "acceptedAnswer": {"@type": "Answer", "text": "CPA professionals assist with T2 corporate tax returns preparation, which usually costs around CAD 300 or more based on complexity."}}, {"@type": "Question", "name": "Can Open Corporation help with GST/HST account registrations and payroll setup?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, they offer guidance on registering GST/HST accounts and setting up payroll remittances for Canadian businesses."}}]}]}
+</script>
