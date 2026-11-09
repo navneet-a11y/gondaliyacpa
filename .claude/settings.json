@@ -1,0 +1,27 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__gondaliya_cpa__wp_privileged_search_replace_run",
+      "mcp__gondaliya_cpa__wp_get_post_full",
+      "mcp__gondaliya_cpa__wp_get_post_meta",
+      "mcp__gondaliya_cpa__wp_update_post_meta",
+      "mcp__gondaliya_cpa__wp_get_page",
+      "mcp__gondaliya_cpa__wp_update_page",
+      "mcp__gondaliya_cpa__wp_create_page",
+      "mcp__gondaliya_cpa__wp_replace_in_post",
+      "mcp__gondaliya_cpa__wp_list_pages",
+      "mcp__gondaliya_cpa__wp_list_posts",
+      "mcp__gondaliya_cpa__wp_search",
+      "mcp__gondaliya_cpa__wp_search_posts",
+      "mcp__gondaliya_cpa__wp_rest_read",
+      "mcp__gondaliya_cpa__wp_rest_routes",
+      "mcp__gondaliya_cpa__wp_clear_cache",
+      "mcp__gondaliya_cpa__wp_create_preview_link",
+      "mcp__gondaliya_cpa__wp_get_site_health",
+      "mcp__gondaliya_cpa__wp_get_error_log",
+      "mcp__gondaliya_cpa__wp_list_plugins",
+      "mcp__gondaliya_cpa__wp_get_theme_mods",
+      "mcp__gondaliya_cpa__wp_list_revisions"
+    ]
+  }
+}
