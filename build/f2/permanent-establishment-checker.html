@@ -248,8 +248,6 @@
 var PRICE_JS="$300.00 plus HST per tax year";
 var DISC_JS="This tool gives general information and is not a filed return.";
 var NOTNILJS="A holding corporation with investment income, a rental corporation and a corporation that paid or received a dividend are not nil. Those are handled by Gondaliya CPA Professional Corporation at gondaliyacpa.ca at $350.00 plus HST per year.";var QUALJS="A true nil return carries no percentage late-filing penalty, because that penalty is a percentage of tax owing and the corporation owes $0.00. The unfiled year still stays open forever, invites a demand to file and an arbitrary assessment, blocks a clearance certificate and dissolution, and costs a non-resident-owned corporation $25.00 per day up to $2,500.00.";
-var NOTPRICEDJS="A corporation with a Quebec or Alberta permanent establishment needs work this service does not price, and pretending otherwise would be worse than saying so.";
-var NOTNILJS="A holding corporation with investment income, a rental corporation and a corporation that paid or received a dividend are not nil. Those are handled by Gondaliya CPA Professional Corporation at gondaliyacpa.ca at $350.00 plus HST per year.";var QUALJS="A true nil return carries no percentage late-filing penalty, because that penalty is a percentage of tax owing and the corporation owes $0.00. The unfiled year still stays open forever, invites a demand to file and an arbitrary assessment, blocks a clearance certificate and dissolution, and costs a non-resident-owned corporation $25.00 per day up to $2,500.00.";
 
 var MON=['January','February','March','April','May','June','July','August',
          'September','October','November','December'];
@@ -324,6 +322,7 @@ function dayBefore(dt){return new Date(dt.getTime()-86400000);}
 function plural(n,w){return n+' '+w+(n===1?'':'s');}
 function pick(n){var e=document.querySelector('input[name="'+n+'"]:checked');
   return e?e.value:null;}
+var NOTPRICEDJS="A corporation with a Quebec or Alberta permanent establishment needs work this service does not price, and pretending otherwise would be worse than saying so.";
 
 var out=document.getElementById('out');
 function show(){

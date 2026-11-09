@@ -121,7 +121,8 @@ CLOSE = {
 }
 
 # ------------------------------------------- 96. permanent establishment
-T96_JS = RBASE + r"""
+T96_JS = RBASE + 'var NOTPRICEDJS=' + json.dumps(NOT_PRICED) \
+    + ';\n' + r"""
 var out=document.getElementById('out');
 function show(){
   var qc=pick('qc'),ab=pick('ab'),only=pick('only'),wait=0,h;
@@ -963,10 +964,7 @@ def wire(form):
             "el.addEventListener('input',show);});\nshow();\n")
 
 
-# Tool 96 needs the not-priced sentence inside its module.
-_NP = 'var NOTPRICEDJS=' + json.dumps(NOT_PRICED) + ';\n'
-
-for _t, _js in zip(TOOLS14, [_NP + T96_JS, T97_JS, T98_JS, T99_JS, T100_JS]):
+for _t, _js in zip(TOOLS14, [T96_JS, T97_JS, T98_JS, T99_JS, T100_JS]):
     _js = _js + wire(_t['form'])
     _t['js'] = _js if _js.startswith(PRELUDE) else PRELUDE + _js
 
@@ -1000,6 +998,12 @@ for t in TOOLS14:
         '%s: the result draws no table' % s
     assert len(t['seo_title']) <= 60, (s, len(t['seo_title']))
     assert 70 <= len(t['seo_desc']) <= 160, (s, len(t['seo_desc']))
+
+    _vars = _re.findall(r'^var ([A-Za-z_]\w*)=', t['js'], _re.M)
+    _dupe = sorted({v for v in _vars if _vars.count(v) > 1})
+    assert not _dupe, (
+        '%s: the module declares %s more than once, which means PRELUDE was '
+        'prepended on top of a module that already carried it' % (s, _dupe))
 
     _body = ''.join(h for _i, _h2, h in t['sections'])
     assert CLOSE[s] in _body, '%s: its closing sentence is missing' % s
