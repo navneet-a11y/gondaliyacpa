@@ -87,6 +87,20 @@ MONEY = {
  '12.00': 'the Corporations Canada annual return fee, plan section 6(b), the '
           'provincial and federal annual returns pillar row, and published '
           'across Family 2 and the annual returns guide',
+ # The competitor published prices, every one of them from plan line 1568,
+ # "Prices checked September 20, 2026". A brand page may carry the figure for
+ # the provider it names and no other; check_competitor in build_f7.py holds
+ # the page to its own competitor.
+ '175.00': 'TurboTax published price, plan line 1568',
+ '199.00': 'T2inc published price, plan line 1568; also CloudTax nil tier, '
+           'captured 2026-11-06',
+ '200.00': 'TaxDeep published price, plan line 1568',
+ '299.00': 'T2inc second published price, plan line 1568',
+ '449.00': 'H&R Block published price, plan line 1568',
+ '250.00': 'the second nil figure CloudTax publishes on its own corporate '
+           'page, captured 2026-11-06',
+ '499.00': 'CloudTax Review and File tier, captured 2026-11-06',
+ '749.00': 'CloudTax Done For You and Economy tiers, captured 2026-11-06',
 }
 for m in re.finditer(r'\$(\d{1,3}(?:,\d{3})*\.\d\d)', c):
     if m.group(1) not in MONEY:
@@ -94,9 +108,16 @@ for m in re.finditer(r'\$(\d{1,3}(?:,\d{3})*\.\d\d)', c):
 # Line 1819, QA item 9: the paper charges are stated as $1,000 plus a $100
 # per-return preparer penalty. Either figure alone is the plan's own example
 # of a half-stated fact, so neither may appear without the other.
-if ('$1,000.00' in c) != ('$100.00' in c):
-    bad('line 1819 item 9: the paper charges are stated together or not at '
-        'all, and this page has only one of them')
+# The pairing protects against half-stating the PAPER charges. $100.00 also
+# happens to be BluePeak's published price at plan line 1568, where it means
+# something else entirely, so the rule is scoped to the paper subject rather
+# than to the bare figure.
+if '$1,000.00' in c and '$100.00' not in c:
+    bad('line 1819 item 9: $1,000.00 without the $100.00 per-return preparer '
+        'charge is the half-stated fact the plan warns about')
+if '$100.00' in c and '$1,000.00' not in c and 'paper' in NAME:
+    bad('line 1819 item 9: a paper-filing page states $100.00 without the '
+        '$1,000.00 charge')
 # ---- 7.5, byline and stamp ----------------------------------------------
 if 'CPA Ontario Membership 61040184' not in c:
     bad('7.5 rule 3 byline missing')

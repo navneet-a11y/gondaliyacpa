@@ -353,14 +353,20 @@ if __name__ == '__main__':
     import subprocess
     import tempfile
 
+    # Re-entrancy: two builders in this family verify the others by
+    # rebuilding them, so each must not sweep when it is itself the child of
+    # such a sweep. Without this they call each other without end, which is
+    # what happened on 2026-11-09.
+    _verify = not os.environ.get('F7_NO_VERIFY')
     tmp = tempfile.mkdtemp()
     for _f in _OTHERS:
         shutil.copy(os.path.join(HERE, _f), os.path.join(tmp, _f))
+    _env = dict(os.environ, F7_NO_VERIFY='1')
     for _b in sorted(f for f in os.listdir(HERE)
                      if f.startswith('build_f7') and f.endswith('.py')
                      and f != 'build_f7n.py'):
         subprocess.run(['python3', os.path.join(HERE, _b)], cwd=HERE,
-                       capture_output=True)
+                       capture_output=True, env=_env)
     _moved = [f for f in _OTHERS
               if not filecmp.cmp(os.path.join(HERE, f), os.path.join(tmp, f),
                                  shallow=False)]

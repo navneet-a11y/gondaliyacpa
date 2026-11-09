@@ -450,6 +450,29 @@ def _row_json(p, row, with_differs):
     return out
 
 
+def check_competitor(p):
+    """A page that names a competitor carries the three things line 1215 and
+    hard rule 4 require of it: who it is, the price as published, and the date
+    that price was captured. A brand page without all three does not build."""
+    if not p.get('competitor'):
+        return
+    for k in ('competitor', 'competitor_price', 'price_checked',
+              'price_checked_iso'):
+        assert p.get(k), '%s: a brand page needs %s' % (p['slug'], k)
+    assert p['price_checked'] != TODAY or p.get('captured_today'), (
+        '%s: the price-checked stamp is the build date. Either set '
+        'price_checked to the date the price was actually captured, or set '
+        'captured_today when it really was captured today.' % p['slug'])
+    _all = (p['answer'] + p['table_note'] + p.get('stamp', '')
+            + ''.join(c for r in p['price_rows'] + p['feature_rows']
+                      for c in r[1:-1]))
+    for _w in ('cheaper', 'cheapest', 'better than', 'worse', 'inferior',
+               'overpriced', 'rip-off', 'beats'):
+        assert _w not in _all.lower(), (
+            '%s: line 1215 bars a negative or comparative claim: %r'
+            % (p['slug'], _w))
+
+
 def check(p):
     """Line 1215 and the per-page counts, for every page in this family."""
     assert len(p['price_rows']) == 2, 'line 1215 wants two price rows'
@@ -483,6 +506,7 @@ def check(p):
                     % (p['slug'], _cell))
     assert COST in p.get('stamp', STAMP), (
         '%s: the stamp override drops the line 1529 cost link' % p['slug'])
+    check_competitor(p)
 
 
 def write(p, manifest):
@@ -559,7 +583,13 @@ def render(p):
     h.append('<div class="si-section-alt" id="the-comparison">'
              '<div class="si-wrap article">\n'
              '<h2 class="si-h2">The Comparison, Row by Row</h2>\n'
-             '<p class="si-stamp">Prices checked ' + TODAY + '. '
+             # Line 1568 wants the date the prices were checked, which is
+             # not always the day the page is written. A brand page carries
+             # Sharad Gondaliya's own capture date from plan line 1568, or
+             # the date of a later capture; stamping it with TODAY would
+             # claim a competitor's price was re-checked when it was not.
+             '<p class="si-stamp">Prices checked '
+             + p.get('price_checked', TODAY) + '. '
              + p.get('stamp', STAMP) + '</p>\n'
              '<table class="si-tbl"><thead><tr><th scope="col">Item</th>'
              '<th scope="col">' + p['col_a'] + '</th>'
@@ -673,7 +703,7 @@ def meta(p):
         'our_price': PRICE,
         'competitor_named': False,
         'price_source': 'Our own published fee, not a competitor price'}),
-     'cnf_price_checked_on': ISO,
+     'cnf_price_checked_on': p.get('price_checked_iso', ISO),
      'cnf_last_verified_et': ISO,
      'cnf_primary_keyword': p['keyword'],
      'rank_math_title': p['seo_title'],

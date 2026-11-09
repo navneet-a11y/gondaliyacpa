@@ -8459,3 +8459,93 @@ turbotax.intuit.com. Before that, every fetch failed at DNS. Any future
 monthly re-check from a cloud session needs them, and corpnilfilingfor300.ca
 itself is still refused, which is why no page on this site has been verified
 in a browser all week.
+
+## 2026-11-09 -- The first two brand pages, on the plan's own figures
+
+Navneet: "just use what plan has". Family 7 goes to **sixteen**:
+
+| ID | URL | Competitor price | Prices checked |
+|---|---|---|---|
+| 1964 | `/compare/corpnilfilingfor300-vs-cloudtax/` | Pay What You Want including $0 for eligible nil returns; Nil Return tier $199.00/yr; $250.00 stated elsewhere on the same page | **November 6, 2026**, captured from cloudtax.ca |
+| 1970 | `/compare/corpnilfilingfor300-vs-bluepeak/` | $100.00 | **September 20, 2026**, plan line 1568 |
+
+### A correction to what I said on November 6
+
+I reported BluePeak and TaxDeep as "not findable" and treated that as
+evidence against the plan's figures. **The search tool available here is
+US-only**, so it would systematically miss a small Canadian provider. Not
+finding them is a limit of the tooling, not a finding about those firms.
+Sharad Gondaliya captured those prices himself on September 20; my failure to
+re-verify does not make them wrong, and the pages now use them.
+
+### The capture date is the date of the capture, not the build date
+
+This needed a template change before any brand page could be honest.
+`build_f7.py` printed both the "Prices checked" stamp and the "Last reviewed"
+line from TODAY. Building a brand page today would therefore have claimed a
+competitor's price was re-checked today, which is false for five of the six.
+
+`price_checked` and `price_checked_iso` are now separate from TODAY, and
+`cnf_price_checked_on` follows them. BluePeak's page reads "Prices checked
+September 20, 2026"; CloudTax's reads November 6, 2026; both read "Last
+reviewed: November 9, 2026". `check_competitor()` refuses a brand page whose
+stamp is silently the build date, refuses one missing the competitor's name,
+price or capture date, and refuses a comparative or negative word anywhere in
+the answer, the table or the note.
+
+All sixteen earlier pages rebuild byte-identical, asserted in
+`build_f7o.py` rather than assumed.
+
+### What the CloudTax page has to say, and does
+
+CloudTax publishes **Pay What You Want including $0** for eligible nil
+returns. The table states it, which means the lowest published figure on that
+page is not ours, and the page says so in its own lead rather than burying it.
+Hard rule 4 bars a cheapest claim and line 1215 bars a negative one, so the
+page states both prices and then sets out what the fee covers. It does not
+argue. Its own pages also disagree with each other -- $199.00 per year in one
+place and "nil T2 returns start at $250.00" in another -- so both are stated
+rather than one being chosen on its behalf.
+
+### Where a cell has nothing in it
+
+The BluePeak column is one price and eight cells reading "Not stated in the
+published price we hold." That is the honest rendering of a source that is a
+figure rather than a description, and the wording is deliberate: **not
+stated** is a claim about the source, **no** would be a claim about the
+provider. The table note says exactly that. It is a thin page, and the
+thinness is in the source material, not the template.
+
+### Four defects caught before anything went live
+
+1. **Mutual recursion.** `build_f7n.py` and `build_f7o.py` each verify the
+   others by rebuilding them, so each ran the other without end and the build
+   hung past 120 seconds. Both now pass `F7_NO_VERIFY` to their children and
+   skip the sweep when they are themselves a child.
+2. **A spliced cell.** `'... simple startup costs. ' + NS_PAGE + ' for what
+   the filing itself includes'` rendered as "costs. Not stated on the page
+   captured. for what the filing itself includes". A constant ending in a full
+   stop may now only ever be a whole cell, asserted per cell.
+3. **A banned substring, three times.** `gate.py` bans "reviews" as a rule 6
+   review-claim guard, and my prose about who prepares a return kept
+   reintroducing it. Caught at the gate, then moved earlier: the builder now
+   refuses the substring itself.
+4. **A dropped breadcrumb.** The CloudTax page published 120 bytes short
+   because I omitted the middle ListItem from its schema while pasting. The
+   byte-count check against the built file caught it immediately.
+
+### Open
+
+- **Rule 217 review** on both pages, with Sharad Gondaliya, per line 1215.
+- **Four brand pages remain**: TurboTax, T2inc, TaxDeep, H&R Block. They will
+  follow the BluePeak pattern -- the plan's price, its September 20 date, and
+  "not stated" elsewhere -- unless their own sites are captured first. Of
+  those four only H&R Block published anything capturable on November 6, and
+  that was a $100 discount off a base fee it does not state.
+- `cnf_competitor` **had no terms at all**, though plan line 314 specifies
+  six. `cloudtax` (84) and `bluepeak` (85) were created and assigned; the
+  other four are created when their pages are. `cnf_topic` is still empty for
+  every family.
+- `/compare/voluntary-disclosure-vs-plain-late-filing/`, still on his ruling.
+
+Still not verified in a browser: the proxy refuses corpnilfilingfor300.ca.
