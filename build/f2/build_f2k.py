@@ -413,7 +413,18 @@ T83 = dict(
    '<p>Where a year turns out not to be nil we say so before anything '
    'further is charged, and the file moves to Gondaliya CPA Professional '
    'Corporation at gondaliyacpa.ca. Nothing is taken at the higher price '
-   'without you agreeing to it first.</p>'),
+   'without you agreeing to it first.</p>\n'
+   '<p>What other providers charge is a separate question from what this fee '
+   'covers, and six of them publish a price: '
+   + a(SITE + '/compare/corpnilfilingfor300-vs-cloudtax/', 'CloudTax') + ', '
+   + a(SITE + '/compare/corpnilfilingfor300-vs-bluepeak/', 'BluePeak') + ', '
+   + a(SITE + '/compare/corpnilfilingfor300-vs-turbotax/', 'TurboTax') + ', '
+   + a(SITE + '/compare/corpnilfilingfor300-vs-t2inc/', 'T2inc') + ', '
+   + a(SITE + '/compare/corpnilfilingfor300-vs-taxdeep/', 'TaxDeep')
+   + ' and '
+   + a(SITE + '/compare/corpnilfilingfor300-vs-hr-block/', 'H&amp;R Block')
+   + '. Each page states that figure beside ours on the date it was '
+   'recorded, and draws no conclusion from it.</p>'),
  ],
  faq=[
   ('Does the fee cover my annual return?',

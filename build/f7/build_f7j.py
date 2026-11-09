@@ -80,7 +80,7 @@ it is not, but no page on this site says so and the plan does not either. An
 unsourced row is worse than a missing one.
 """
 import build_f7
-from build_f7 import T, G, COST, PRICE, check, write
+from build_f7 import T, G, BASE, COST, PRICE, check, write
 
 build_f7.TODAY, build_f7.ISO = 'November 5, 2026', '2026-11-05'
 
@@ -211,7 +211,16 @@ PAGE = dict(
          'document checklist</a> builds the list of what the return needs, '
          'and the <a href="' + G + 'how-to-file-a-nil-t2-return/">complete '
          'guide to filing a nil T2 return</a> sets out the whole sequence '
-         'either route follows.')),
+         'either route follows. Where the question is what a provider '
+         'charges rather than which route to take, the published-price '
+         'pages set six of them beside our own fee: '
+         '<a href="' + BASE + 'corpnilfilingfor300-vs-cloudtax/">CloudTax</a>, '
+         '<a href="' + BASE + 'corpnilfilingfor300-vs-bluepeak/">BluePeak</a>, '
+         '<a href="' + BASE + 'corpnilfilingfor300-vs-turbotax/">TurboTax</a>, '
+         '<a href="' + BASE + 'corpnilfilingfor300-vs-t2inc/">T2inc</a>, '
+         '<a href="' + BASE + 'corpnilfilingfor300-vs-taxdeep/">TaxDeep</a> '
+         'and <a href="' + BASE + 'corpnilfilingfor300-vs-hr-block/">H&amp;R '
+         'Block</a>.')),
  band=('What the Fee Buys',
        'A CPA preparing and reviewing the return and transmitting it as a '
        'registered EFILE electronic filer, at ' + PRICE + '.'),

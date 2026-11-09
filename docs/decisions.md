@@ -7751,7 +7751,9 @@ in the plan or on the site, so there is no published position to build on.
 Live as **ID 1816, 22,501 bytes**, matching its build. `nil_comparison`
 reports **11 published**, so Family 7 is **11 of 20**.
 
-Not in Appendix A, which lists 13 of its stated 20 F7 URLs. Line 1242's
+Not in Appendix A. (NOTE added 2026-11-09: the claim that Appendix A lists
+only 13 of its 20 F7 URLs, here and in the November 6 entry, is wrong. It
+names all twenty. See the later entry for the roster.) Line 1242's
 keyword list carries "nil t2 vs loss t2", so this fills part of that gap on
 the same footing as the three off-appendix pages logged earlier.
 
@@ -8306,6 +8308,11 @@ Family 7 goes from thirteen to **fourteen**. Published as ID 1953:
 
 ### Every remaining F7 URL needs a person, so this is the only one that could be built
 
+(NOTE added 2026-11-09: this paragraph says Appendix A leaves seven of its
+twenty F7 URLs unnamed. It does not -- it names all twenty, and the four brand
+pages built later that day used its own slugs. The count of eight outstanding
+and the reason each was waiting on a person were both correct.)
+
 Appendix A lists Family 7 as **20 URLs**. Twelve of the thirteen live before
 today were Appendix A members (`nil-t2-vs-loss-t2` is an invented slug), so
 eight were outstanding, and each of the eight was waiting on a human:
@@ -8643,5 +8650,133 @@ line is still the `[cnf_child_count]` shortcode, never a typed number.
 - Rule 217 review on the two brand pages; four brand pages remain; the VDP
   comparison still on Sharad Gondaliya's ruling; `cnf_topic` empty for every
   family.
+
+Still not verified in a browser: the proxy refuses corpnilfilingfor300.ca.
+
+## 2026-11-09 (later) -- Family 7 reaches twenty: the last four brand pages
+
+Published as IDs 2015, 2021, 2026 and 2031, each landing on its built byte
+count exactly:
+
+| Slug | Published price we hold | Bytes |
+|---|---|---|
+| `corpnilfilingfor300-vs-turbotax` | $175.00 | 20,465 |
+| `corpnilfilingfor300-vs-t2inc` | $199.00 and $299.00 | 19,876 |
+| `corpnilfilingfor300-vs-taxdeep` | $200.00 | 20,135 |
+| `corpnilfilingfor300-vs-hr-block` | $449.00 | 20,038 |
+
+`nil_comparison` reports **20 published**. Family 7 is complete against
+Appendix A except for one URL, below.
+
+### Correcting this log: Appendix A names all twenty, not thirteen
+
+The November 5 and November 6 entries both say Appendix A "lists 13 of its
+stated 20 F7 URLs". That is wrong and it mattered, because it implied seven
+URLs had to be invented. Read as a block between the Family 6 "cheapest-way"
+run and the Family 8 "cost" run, Appendix A names exactly twenty:
+
+nil-t2-vs-zero-return, t2-short-vs-full-t2, ontario-annual-return-vs-t2,
+nil-return-vs-final-return, diy-vs-cpa-nil-t2, the six brand pages,
+paper-t2-vs-efile-t2, t2-short-vs-t2-short-plus-gifi,
+federal-corporation-vs-ontario-corporation-nil-filing, the three-way,
+dissolving-vs-filing-nil-every-year, voluntary-disclosure-vs-plain-late-filing,
+filing-one-year-vs-filing-all-unfiled-years, nil-t2-vs-nil-gst-hst-return and
+december-31-year-end-vs-a-non-calendar-year-end.
+
+Nineteen are now live. `nil-t2-vs-loss-t2` is the one live page that is not an
+Appendix A member, so Family 7 stands at 20 live against a roster of 20 with
+one member missing and one extra -- the same off-plan arithmetic as Family 2,
+at a much smaller scale.
+
+### The one that still cannot be built
+
+`/compare/voluntary-disclosure-vs-plain-late-filing/`. The Voluntary
+Disclosures Programme appears nowhere in the plan and nowhere on the site, so
+neither column has a published position to state and the page would have to
+invent its own terms. Unchanged from November 5: Sharad Gondaliya's ruling.
+
+### The slug follows Appendix A, the keyword follows line 1242
+
+Line 1145's illustrative sample says `corpnilfilingfor300-vs-turbotax-business`
+and Appendix A's roster says `corpnilfilingfor300-vs-turbotax`. The roster
+wins, as it did for `/tools/` over `/all-calculators/`. Line 1242's keyword
+list is a separate thing and is followed as written, which is why the TurboTax
+page's focus keyword is "corpnilfilingfor300 vs turbotax business" and the H&R
+Block page's is "corpnilfilingfor300 vs h and r block".
+
+### Four pages from one price each, without four copies
+
+Three of the four figures sit below our fee and one above it. No page reasons
+from either direction: hard rule 4 bars a cheapest claim and line 1215 bars a
+negative one, and the direction of the gap changes nothing about what may be
+said. `build_f7p.py` adds a guard of its own over `check_competitor`, scanning
+the answer, the note, the stamp, the lead prose **and the FAQ** for "cheaper",
+"more expensive", "better value", "costs less" and four more.
+
+It fired twice on the first build, both times correctly flagging wording that
+is already live on pages 15 and 16 and is the opposite of the claim being
+guarded: "Is there a cheaper tier here?", which is about our own price list and
+answers no, and "no claim about which is better value". Both are stripped
+before the scan rather than reworded, so six brand pages answer the same
+question the same way. `gate.py` strips "authorized signing officer" before
+its rule 1 scan for exactly the same reason.
+
+Each page also has a subject of its own rather than a shared shell. Measured
+pairwise over the six brand pages with the stylesheet and scripts removed, the
+first TurboTax draft came out at **0.78 similarity to BluePeak**, which is too
+close: both are the one-figure shape and the FAQs had six items in common. Four
+of its FAQ items were rewritten onto the route question the page actually
+raises, and three of TaxDeep's onto what a bare price can and cannot tell a
+reader. **All fifteen pairs are now below 0.68.**
+
+### One defect, caught by the byte check
+
+The TurboTax page published 32 bytes over. The breadcrumb's second ListItem had
+the page's own URL where `/pricing/` belongs -- 41 characters against 9, which
+is the 32 exactly. Corrected before anything else was touched.
+
+### The inbound gap on the brand pages, now closed
+
+Line 1529 sets Family 7's inbound minimum at 3. **Pages 15 and 16 were
+published on November 9 with zero inbound links**, which this log did not
+record at the time, and pages 17 to 20 would have shipped the same way. Three
+hosts now link all six, so every brand page has three:
+
+- `/pricing/nil-t2-filing-cost/` (ID 794), a new "How the Published Price
+  Compares" section listing all six.
+- `/compare/diy-vs-cpa-nil-t2/` (ID 1809), a sentence at the end of its close.
+- `/tools/what-the-nil-t2-fee-covers-checker/` (ID 1762), a sentence
+  separating what the fee covers from what others charge.
+
+Two notes on those hosts. The cost page has no Python builder, only an
+Elementor template builder, so its HTML file is the source and was edited
+first; the live post is **one byte shorter than the file**, a trailing newline
+that predates this change, and the delta applied was identical on both
+(+1,105). And `/pricing/` (page 323) was considered and rejected as a host:
+it is a pure Elementor page whose content lives in `_elementor_data`, so a
+link cannot be spliced into `post_content` at all. Line 1201's "all 20
+comparison pages link up" is satisfied the other way round, by each
+comparison page's breadcrumb and cost-page link.
+
+`build_f2i.py` was widened earlier today for the same class of reason;
+`build_f2k.py` needed no change, because its link assert already allowed a
+`/compare/` target.
+
+### Open
+
+- **Rule 217 review with Sharad Gondaliya on all six brand pages**, per line
+  1215. None has had it. They are live and noindexed like everything else.
+- **The prices are fifty days old.** Line 1568 sets a monthly re-check and the
+  stamp reads September 20, 2026 on five of the six. A capture attempt on
+  November 6 found nothing publishable for TurboTax, T2inc or TaxDeep, and for
+  H&R Block only a promotional discount published without a base fee, which is
+  not a price. Each page says in its table note how old the figure is. Re-dating
+  is Navneet's monthly task.
+- `cnf_competitor` now has all six of plan line 314's terms: cloudtax (84),
+  bluepeak (85), turbotax (86), t2inc (87), taxdeep (88), hrblock (89). Each
+  new page inherited `bluepeak` from the duplicate and had it replaced; worth
+  remembering that `wp_duplicate_post` copies taxonomy terms.
+- `cnf_topic` is still empty for every family.
+- The third-column sign-off on the three-way page is still outstanding.
 
 Still not verified in a browser: the proxy refuses corpnilfilingfor300.ca.
