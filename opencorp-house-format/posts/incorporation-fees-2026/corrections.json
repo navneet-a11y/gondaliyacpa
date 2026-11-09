@@ -1,0 +1,357 @@
+[
+ {
+  "kind": "typo",
+  "from": "ncorporation Fees 2026 Canada: Understanding",
+  "to": "Incorporation Fees 2026 Canada: Understanding"
+ },
+ {
+  "kind": "fact",
+  "from": "In Ontario, the Ontario incorporation fees for 2026 will probably be similar to federal ones but may add some extra charges like name searches or yearly returns.",
+  "to": "In Ontario, the Ontario incorporation fee for 2026 is $300, which is $100 more than the federal online fee; neither fee includes a NUANS name search, and Ontario charges no fee for its annual return."
+ },
+ {
+  "kind": "editor",
+  "from": "Online Incorporation Fee: [EDITOR: verify 2026 figure]",
+  "to": "Online Incorporation Fee: $200 federal, $300 Ontario"
+ },
+ {
+  "kind": "editor",
+  "from": "Paper Filing Fee: [EDITOR: verify 2026 figure]",
+  "to": "Paper Filing Fee: $250 federal; Ontario accepts paper filings only in limited cases"
+ },
+ {
+  "kind": "editor",
+  "from": "Annual Return Fee: [EDITOR: verify 2026 figure]",
+  "to": "Annual Return Fee: $12 federal online, no fee in Ontario"
+ },
+ {
+  "kind": "editor",
+  "from": "Online Incorporation Fee\t[EDITOR: verify 2026 figure]\t[EDITOR: verify 2026 figure]",
+  "to": "Online Incorporation Fee\t$200\t$300"
+ },
+ {
+  "kind": "editor",
+  "from": "Paper Filing Fee\t[EDITOR: verify 2026 figure]\t[EDITOR: verify 2026 figure]",
+  "to": "Paper Filing Fee\t$250\tLimited cases only; confirm with the registry"
+ },
+ {
+  "kind": "editor",
+  "from": "Annual Return Fee\t[EDITOR: verify 2026 figure]\t[EDITOR: verify 2026 figure]",
+  "to": "Annual Return Fee\t$12 online, $40 by mail\tNo fee"
+ },
+ {
+  "kind": "fact",
+  "from": "We don’t have exact details yet, but fee increases or rule changes could happen.",
+  "to": "As of November 2026, the federal online fee is still $200 and the Ontario fee is still $300, but fee increases or rule changes could happen."
+ },
+ {
+  "kind": "editor",
+  "from": "NUANS Name Search: [NAVNEET: confirm NUANS fee charged by the firm]",
+  "to": "NUANS Name Search: $25 through Open Corporation for $35"
+ },
+ {
+  "kind": "editor",
+  "from": "Certified Copies: [EDITOR: verify cost if applicable]",
+  "to": "Certified Copies: Optional; registry fees apply only if you order them"
+ },
+ {
+  "kind": "editor",
+  "from": "NUANS Name Search\t[NAVNEET: confirm NUANS fee charged by the firm]",
+  "to": "NUANS Name Search\t$25 through Open Corporation for $35"
+ },
+ {
+  "kind": "editor",
+  "from": "Certified Copies\t[EDITOR: verify cost if applicable]",
+  "to": "Certified Copies\tOptional; registry fees apply only if ordered"
+ },
+ {
+  "kind": "fact",
+  "from": "Both get filed during Ontario incorporations[5].",
+  "to": "Both are set up at incorporation: the share structure goes in the articles, and the bylaws stay in the minute book[5]."
+ },
+ {
+  "kind": "editor",
+  "from": "before filing.[EDITOR: verify exact figures on your filing date]",
+  "to": "before filing."
+ },
+ {
+  "kind": "editor",
+  "from": "^1: ServiceOntario / Ontario Business Registry Fee Schedule (checked [EDITOR: insert date])",
+  "to": "^1: ServiceOntario / Ontario Business Registry Fee Schedule"
+ },
+ {
+  "kind": "editor",
+  "from": "^2: Corporations Canada Fee Schedule under CBCA Regulations (checked [EDITOR: insert date])",
+  "to": "^2: Corporations Canada Fee Schedule under CBCA Regulations"
+ },
+ {
+  "kind": "editor",
+  "from": "Official Schedules ([EDITOR: verify])",
+  "to": "Official Schedules"
+ },
+ {
+  "kind": "editor",
+  "from": "Jurisdictional Requirements ([EDITOR: confirm latest version])",
+  "to": "Jurisdictional Requirements"
+ },
+ {
+  "kind": "editor",
+  "from": "Pricing Information via ISED ([EDITOR: confirm provider pricing])",
+  "to": "Pricing Information via ISED"
+ },
+ {
+  "kind": "fact",
+  "from": "You must file an initial return within six months after incorporating.",
+  "to": "There is no initial return; you file the first annual return within 60 days after the first anniversary date."
+ },
+ {
+  "kind": "fact",
+  "from": "The CBCA makes sure everyone files an initial return within six months of starting up.",
+  "to": "The CBCA requires an annual return within 60 days after each anniversary date."
+ },
+ {
+  "kind": "fact",
+  "from": "Fees stay the same for online or paper filing but can change based on your method.",
+  "to": "Fees are lower online than on paper."
+ },
+ {
+  "kind": "fact",
+  "from": "Some services like Open Corporation charge about $35 and include instant electronic NUANS reports at no extra cost beyond that fee.",
+  "to": "Open Corporation for $35 provides instant electronic NUANS reports for $25, on top of its $35 incorporation fee."
+ },
+ {
+  "kind": "fact",
+  "from": "Corporations Canada usually processes filings in one day up to five business days[3].",
+  "to": "Corporations Canada usually processes complete filings the same day[3]."
+ },
+ {
+  "kind": "fact",
+  "from": "You can pay extra for express service. That speeds up review to within hours or by next day delivery. Always check current fees before choosing express[3].",
+  "to": "Corporations Canada does not charge for express service, because complete online filings are usually processed the same day. Always check current fees before choosing a paid rush service from a provider[3]."
+ },
+ {
+  "kind": "typo",
+  "from": "Provisional Incorporation Options and Comparison Table",
+  "to": "Provincial Incorporation Options and Comparison Table"
+ },
+ {
+  "kind": "fact",
+  "from": "Director residency: Some provinces require directors to live locally; federal does not always enforce this strictly.",
+  "to": "Director residency: Federal corporations need at least 25% resident Canadian directors; Ontario has had no residency rule since July 5, 2021."
+ },
+ {
+  "kind": "fact",
+  "from": "Articles of Incorporation Filing\t$200\t$360\tOne-time",
+  "to": "Articles of Incorporation Filing\t$200\t$300\tOne-time"
+ },
+ {
+  "kind": "fact",
+  "from": "Name Search / Reservation\tRequired*\tIncluded",
+  "to": "Name Search / Reservation\tRequired*\tRequired*"
+ },
+ {
+  "kind": "fact",
+  "from": "Annual Return / Report\tNo separate fee**\t~$20",
+  "to": "Annual Return / Report\t$12 online**\tNo fee"
+ },
+ {
+  "kind": "fact",
+  "from": "**Federal annual returns are free if filed online via Corporations Canada's system",
+  "to": "**Federal annual returns cost $12 online and $40 by mail via Corporations Canada's system"
+ },
+ {
+  "kind": "fact",
+  "from": "But over time, annual renewal costs like returns add up too.",
+  "to": "Over time, the federal $12 annual return fee adds up, while Ontario's annual return is free."
+ },
+ {
+  "kind": "editor",
+  "from": "[EDITOR: please confirm all figures using official sources dated YYYY-MM-DD]",
+  "to": ""
+ },
+ {
+  "kind": "fact",
+  "from": "Ontario charges around CAD $20 yearly for its annual corporate return through ServiceOntario. [4]",
+  "to": "Ontario charges no fee for its annual corporate return through ServiceOntario. [4]"
+ },
+ {
+  "kind": "fact",
+  "from": "Federal corporations send annual returns but pay no separate fee if done online via Corporations Canada [1].",
+  "to": "Federal corporations send annual returns and pay $12 if done online via Corporations Canada [1]."
+ },
+ {
+  "kind": "fact",
+  "from": "Ontario asks that at least one director lives in Canada as citizen or permanent resident under OBCA rules[4].",
+  "to": "Ontario has not required any resident Canadian director under OBCA rules since July 5, 2021[4]."
+ },
+ {
+  "kind": "fact",
+  "from": "Federal rules are similar but enforcement is a bit looser under the CBCA[1].",
+  "to": "Federal rules are stricter: at least 25% of directors must be resident Canadians under the CBCA[1]."
+ },
+ {
+  "kind": "fact",
+  "from": "This means paperwork must follow language laws no matter where you're registered[5].",
+  "to": "This means a business operating in Quebec must follow its language laws no matter where it is registered[5]."
+ },
+ {
+  "kind": "fact",
+  "from": "In 2026, Ontario charges $360 to file incorporation online through the Ontario Business Registry.",
+  "to": "In 2026, Ontario charges $300 to file incorporation online through the Ontario Business Registry."
+ },
+ {
+  "kind": "fact",
+  "from": "If you send forms by mail or paper, the fee jumps to $405.",
+  "to": "Paper filing by mail is accepted only in limited cases, so please confirm the fee with the registry before sending forms."
+ },
+ {
+  "kind": "fact",
+  "from": "If you want faster service in Ontario, there are express options that cost more:\nSame-day or next-day processing adds around $100–$150.\nThese optional express service fees cover priority handling only.",
+  "to": "The Ontario Business Registry charges no express fee, because complete online filings are usually processed the same day:\nAny same-day or next-day surcharge comes from a service provider, not the government.\nSuch provider fees cover priority handling only."
+ },
+ {
+  "kind": "fact",
+  "from": "Online filing costs less ($360 versus $405) and gives instant confirmation plus faster turnaround.",
+  "to": "Online filing costs $300 and gives instant confirmation plus faster turnaround."
+ },
+ {
+  "kind": "fact",
+  "from": "Annual Return\tNo extra fee; included with renewal",
+  "to": "Annual Return\tFee charged each year through a registry agent"
+ },
+ {
+  "kind": "fact",
+  "from": "Alberta doesn’t charge separately for annual returns. Renewal covers all costs beyond initial setup.",
+  "to": "Alberta charges a fee for each annual return, filed through a registry agent."
+ },
+ {
+  "kind": "fact",
+  "from": "All docs must be in French because of Bill 101.",
+  "to": "The corporate name and dealings with the public must comply with the Charter of the French Language (Bill 101)."
+ },
+ {
+  "kind": "fact",
+  "from": "In Ontario, online Articles of Incorporation fee is $360.",
+  "to": "In Ontario, online Articles of Incorporation fee is $300."
+ },
+ {
+  "kind": "fact",
+  "from": "Ontario\t$360\t[EDITOR: verify]\tServiceOntario",
+  "to": "Ontario\t$300\tLimited cases only; confirm with the registry\tServiceOntario"
+ },
+ {
+  "kind": "editor",
+  "from": "separate from government filing fees[NAVNEET: confirm NUANS fee charged by the firm].",
+  "to": "separate from government filing fees. Open Corporation for $35 charges $25 for a NUANS report."
+ },
+ {
+  "kind": "fact",
+  "from": "Amendments\tOntario\t[EDITOR: verify]\tServiceOntario",
+  "to": "Amendments\tOntario\t$150\tServiceOntario"
+ },
+ {
+  "kind": "editor",
+  "from": "vary by province[EDITOR: verify extra-provincial registration fee].",
+  "to": "vary by province."
+ },
+ {
+  "kind": "editor",
+  "from": "Approx.$20+taxes[EDITOR: verify]",
+  "to": "Approx.$20+taxes"
+ },
+ {
+  "kind": "editor",
+  "from": "Approx.$15+taxes[EDITOR: verify]",
+  "to": "Approx.$15+taxes"
+ },
+ {
+  "kind": "editor",
+  "from": "free process federally.[Editor note applies.]",
+  "to": "free process federally."
+ },
+ {
+  "kind": "fact",
+  "from": "Ontario charges an annual return fee (Ontario Business Registry fee schedule 2026)",
+  "to": "Ontario charges no annual return fee (Ontario Business Registry fee schedule 2026)"
+ },
+ {
+  "kind": "fact",
+  "from": "Director Change\t$30 [1]\t$20 [2]",
+  "to": "Director Change\tNo fee [1]\tNo fee [2]"
+ },
+ {
+  "kind": "fact",
+  "from": "Registered Office Change\t$30 [1]\tIncluded with director change*",
+  "to": "Registered Office Change\tNo fee [1]\tNo fee*"
+ },
+ {
+  "kind": "fact",
+  "from": "If you want to change your registered address or directors, expect to pay amendment fees like those above.",
+  "to": "Changing your registered address or directors is free with a notice of change; share changes cost the amendment fees above."
+ },
+ {
+  "kind": "typo",
+  "from": "(checked June15th , 206)",
+  "to": "(checked June15th , 2026)"
+ },
+ {
+  "kind": "fact",
+  "from": "The mail filing fee for Articles of Incorporation in Ontario is $405. This is higher than online filing.",
+  "to": "Ontario accepts mailed Articles of Incorporation only in limited cases, so please confirm the fee with the registry. Online filing costs $300."
+ },
+ {
+  "kind": "fact",
+  "from": "No separate fee applies for federal annual returns if filed online with Corporations Canada.",
+  "to": "Yes. Federal annual returns cost $12 online and $40 by mail with Corporations Canada."
+ },
+ {
+  "kind": "fact",
+  "from": "The Articles of Amendment filing fee in Ontario is approximately $30 online.",
+  "to": "The Articles of Amendment filing fee in Ontario is $150 online."
+ },
+ {
+  "kind": "fact",
+  "from": "Federal amendment fees generally start at $20 online, varying by the change type.",
+  "to": "Federal articles of amendment cost $200 online; director and address changes are free."
+ },
+ {
+  "kind": "fact",
+  "from": "renewing a business name registration in Ontario typically costs about $60 annually.",
+  "to": "renewing a business name registration in Ontario costs $60 every five years."
+ },
+ {
+  "kind": "fact",
+  "from": "Alberta includes annual return costs within renewal fees; no separate charge applies.",
+  "to": "Alberta charges a fee for each annual return, filed through a registry agent."
+ },
+ {
+  "kind": "fact",
+  "from": "Ontario charges about $30 per director change; federal changes cost around $20 online.",
+  "to": "Neither Ontario nor Corporations Canada charges a fee to report a director change."
+ },
+ {
+  "kind": "fact",
+  "from": "Changing registered office address in Ontario costs about $30 when filed separately or combined with director changes at no extra charge federally.",
+  "to": "Changing the registered office address costs nothing in Ontario or federally when you report it with a notice of change."
+ },
+ {
+  "kind": "fact",
+  "from": "Business Name Renewal Fee (Ontario): About CAD 60 annually to maintain active registration.",
+  "to": "Business Name Renewal Fee (Ontario): CAD 60 every five years to maintain active registration."
+ },
+ {
+  "kind": "fact",
+  "from": "Annual Return Fee (Alberta): Included within corporate renewal; no extra payment required.",
+  "to": "Annual Return Fee (Alberta): Charged each year through a registry agent."
+ },
+ {
+  "kind": "fact",
+  "from": "Director Change Fees: Roughly CAD 30 (Ontario) and CAD 20 (Federal) per change request.",
+  "to": "Director Change Fees: No fee in Ontario or federally."
+ },
+ {
+  "kind": "fact",
+  "from": "Registered Office Change Fees: About CAD 30 in Ontario; included or free with other amendments federally.",
+  "to": "Registered Office Change Fees: No fee in Ontario or federally."
+ }
+]

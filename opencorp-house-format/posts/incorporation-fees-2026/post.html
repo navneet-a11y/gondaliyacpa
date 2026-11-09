@@ -1,0 +1,754 @@
+<style>.gcpa-post{--navy:#0f2a4a;--navy-2:#15355c;--blue:#1c6dd0;--blue-soft:#e8f1fc;--teal:#0c8f8f;--teal-soft:#e3f4f4;--gold:#c9991f;--gold-soft:#fbf3dc;--green:#1f8a4c;--green-soft:#e6f5ec;--red:#c0392b;--red-soft:#fbeae8;--ink:#1d2733;--muted:#5a6b7b;--line:#d8e0e8;--bg:#ffffff;--bg-alt:#f5f8fb;--radius:14px;--shadow:0 6px 22px rgba(15,42,74,.08);--shadow-lg:0 14px 40px rgba(15,42,74,.14);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);line-height:1.7;font-size:17px;max-width:1080px;margin:0 auto;padding:0 18px 60px;} .gcpa-post *{box-sizing:border-box;} .gcpa-hero{background:linear-gradient(135deg,var(--navy) 0%,var(--navy-2) 60%,#1c4a78 100%);color:#fff;border-radius:20px;padding:46px 40px 42px;margin:26px 0 34px;position:relative;overflow:hidden;} .gcpa-hero::after{content:"";position:absolute;right:-80px;top:-80px;width:280px;height:280px;z-index:0;background:radial-gradient(circle,rgba(28,109,208,.45),transparent 70%);} .gcpa-post .gcpa-eyebrow{display:inline-block;font-size:13px;letter-spacing:1.4px;text-transform:uppercase;font-weight:700;color:#cfe2f8 !important;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.3);padding:7px 15px;border-radius:30px;margin-bottom:18px;} .gcpa-post .gcpa-hero h1{font-size:34px;line-height:1.25;margin:0 0 16px;font-weight:800;color:#fff !important;letter-spacing:-.3px;position:relative;z-index:2;} .gcpa-post .gcpa-hero p{font-size:18px;color:#eaf3fc !important;margin:0;max-width:760px;position:relative;z-index:2;} .gcpa-eyebrow{position:relative;z-index:2;} .gcpa-post h2{font-size:27px;font-weight:800;color:var(--navy);line-height:1.3;margin:48px 0 18px;padding-bottom:14px;border-bottom:3px solid var(--blue-soft);letter-spacing:-.2px;position:relative;} .gcpa-post h2::after{content:"";position:absolute;left:0;bottom:-3px;width:70px;height:3px;background:var(--blue);} .gcpa-post h3{font-size:22px;font-weight:800;color:var(--navy-2);margin:40px 0 14px;line-height:1.35;} .gcpa-post h4{font-size:19px;font-weight:700;color:var(--navy-2);margin:36px 0 12px;line-height:1.4;padding-left:16px;border-left:4px solid var(--teal);} .gcpa-post p{margin:0 0 16px;color:#1d2733 !important;} .gcpa-post li{color:#1d2733;} .gcpa-post a{color:var(--blue);text-decoration:none;font-weight:600;} .gcpa-post a:hover{text-decoration:underline;} .gcpa-post ul,.gcpa-post ol{margin:0 0 18px !important;padding-left:0 !important;list-style:none !important;} .gcpa-post ul{list-style-type:none !important;} .gcpa-post ul li{position:relative;padding:8px 0 8px 34px;margin:0;border-bottom:1px solid var(--line);color:var(--ink);list-style:none !important;list-style-type:none !important;} .gcpa-post ul li::marker{content:"" !important;font-size:0 !important;} .gcpa-post ul li:last-child{border-bottom:none;} .gcpa-post ul li::before{content:"";position:absolute;left:6px;top:15px;width:9px;height:9px;border-radius:2px;background:var(--teal);transform:rotate(45deg);} .gcpa-post ol{counter-reset:gcpa;} .gcpa-post ol li{position:relative;padding:10px 0 10px 44px;margin:0 0 10px;counter-increment:gcpa;list-style:none !important;list-style-type:none !important;} .gcpa-post ol li::marker{content:"" !important;font-size:0 !important;} .gcpa-post ol li::before{content:counter(gcpa);position:absolute;left:0;top:9px;width:28px;height:28px;border-radius:8px;background:var(--navy);color:#fff;font-weight:700;font-size:14px;display:flex;align-items:center;justify-content:center;} .gcpa-post .wp-block-table,.gcpa-post figure.wp-block-table{margin:22px 0 26px;overflow-x:auto;} .gcpa-post table{width:100%;border-collapse:collapse;font-size:15.5px;background:#fff;border:1px solid var(--navy);border-radius:10px;overflow:hidden;box-shadow:var(--shadow);} .gcpa-post thead th{background:var(--navy);color:#fff;text-align:left;padding:13px 15px;font-weight:700;font-size:15px;border:1px solid var(--navy-2);} .gcpa-post tbody td{padding:12px 15px;border:1px solid var(--line);vertical-align:top;color:var(--ink);} .gcpa-post tbody tr:nth-child(even){background:var(--bg-alt);} .gcpa-post tbody tr:hover{background:var(--blue-soft);} .gcpa-post tbody td:first-child{font-weight:600;color:var(--navy-2);} .gcpa-metrics{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin:30px 0 36px;clear:both;} .gcpa-metric{background:#fff;border:1px solid var(--line);border-top:4px solid var(--blue);border-radius:var(--radius);padding:22px 18px;box-shadow:var(--shadow);transition:transform .2s,box-shadow .2s;} .gcpa-metric:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg);} .gcpa-metric:nth-child(2){border-top-color:var(--teal);} .gcpa-metric:nth-child(3){border-top-color:var(--gold);} .gcpa-metric:nth-child(4){border-top-color:var(--green);} .gcpa-metric .ic{width:46px;height:46px;border-radius:11px;background:var(--blue-soft);display:flex;align-items:center;justify-content:center;margin-bottom:14px;color:var(--blue);} .gcpa-metric:nth-child(2) .ic{background:var(--teal-soft);color:var(--teal);} .gcpa-metric:nth-child(3) .ic{background:var(--gold-soft);color:var(--gold);} .gcpa-metric:nth-child(4) .ic{background:var(--green-soft);color:var(--green);} .gcpa-metric .big{font-size:22px;font-weight:800;color:var(--navy);line-height:1.2;margin-bottom:4px;} .gcpa-metric .lbl{font-size:14px;color:var(--muted);line-height:1.45;} .gcpa-numhead{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin:46px 0 8px;clear:both;} .gcpa-numhead h4{margin:0 !important;} .gcpa-numhead .gcpa-pill{margin:0 !important;} .gcpa-numhead .num{flex:0 0 auto;width:48px;height:48px;border-radius:12px;background:var(--navy);color:#fff;font-size:22px;font-weight:800;display:flex;align-items:center;justify-content:center;box-shadow:var(--shadow);} .gcpa-callout{border-radius:var(--radius);padding:20px 22px;margin:22px 0;border:1px solid var(--line);background:var(--bg-alt);position:relative;} .gcpa-callout.blue{background:var(--blue-soft);border-color:#bcd9f6;} .gcpa-callout.teal{background:var(--teal-soft);border-color:#b7e3e3;} .gcpa-callout.gold{background:var(--gold-soft);border-color:#ecd79a;} .gcpa-callout.green{background:var(--green-soft);border-color:#b6e2c6;} .gcpa-callout.red{background:var(--red-soft);border-color:#f0c4be;} .gcpa-callout .co-tag{display:inline-block;font-size:12.5px;font-weight:700;letter-spacing:.6px;text-transform:uppercase;padding:4px 11px;border-radius:20px;margin-bottom:10px;color:#fff;} .gcpa-callout.blue .co-tag{background:var(--blue);} .gcpa-callout.teal .co-tag{background:var(--teal);} .gcpa-callout.gold .co-tag{background:var(--gold);} .gcpa-callout.green .co-tag{background:var(--green);} .gcpa-callout.red .co-tag{background:var(--red);} .gcpa-callout p:last-child{margin-bottom:0;} .gcpa-cta{background:linear-gradient(135deg,var(--navy) 0%,#1c4a78 100%);color:#fff;border-radius:18px;padding:34px 32px;margin:38px 0;text-align:center;box-shadow:var(--shadow-lg);position:relative;overflow:hidden;} .gcpa-cta::before{content:"";position:absolute;left:-60px;bottom:-60px;width:220px;height:220px;background:radial-gradient(circle,rgba(12,143,143,.4),transparent 70%);} .gcpa-post .gcpa-cta h4{color:#fff !important;border:none;padding:0;margin:0 0 12px;font-size:22px;font-weight:800;position:relative;z-index:1;} .gcpa-post .gcpa-cta p{color:#eaf3fc !important;max-width:680px;margin:0 auto 22px;position:relative;z-index:1;} .gcpa-post .gcpa-cta .btn{display:inline-block;background:#fff !important;color:var(--navy) !important;font-weight:700;padding:13px 26px;border-radius:30px;margin:6px;font-size:16px;position:relative;z-index:1;transition:transform .15s;text-decoration:none !important;} .gcpa-post .gcpa-cta .btn:hover{transform:translateY(-2px);text-decoration:none !important;} .gcpa-post .gcpa-cta .btn.primary{background:var(--teal) !important;color:#fff !important;} .gcpa-btnrow{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;align-items:center;position:relative;z-index:1;} .gcpa-trust{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-bottom:22px;position:relative;z-index:1;} .gcpa-post .gcpa-trust span{font-size:13px;font-weight:700;background:rgba(255,255,255,.18) !important;border:1px solid rgba(255,255,255,.45);padding:7px 14px;border-radius:20px;color:#ffffff !important;} .gcpa-post svg{display:block;} .gcpa-pill{display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:700;padding:8px 16px;border-radius:30px;margin:10px 0 6px;line-height:1.2;} .gcpa-pill svg{width:16px;height:16px;flex:0 0 auto;} .gcpa-pill.green{background:var(--green-soft);color:var(--green);border:1px solid #b6e2c6;} .gcpa-pill.blue{background:var(--blue-soft);color:var(--blue);border:1px solid #bcd9f6;} .gcpa-pill.teal{background:var(--teal-soft);color:var(--teal);border:1px solid #b7e3e3;} .gcpa-pill.gold{background:var(--gold-soft);color:#9a7416;border:1px solid #ecd79a;} .gcpa-pill.red{background:var(--red-soft);color:var(--red);border:1px solid #f0c4be;} .gcpa-pillhead{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin:38px 0 12px;clear:both;} .gcpa-pillhead h4{margin:0 !important;} .gcpa-pillhead .gcpa-pill{margin:0 !important;} @media(max-width:560px){.gcpa-pillhead{gap:8px;}} .gcpa-toc{background:var(--bg-alt);border:1px solid var(--line);border-left:5px solid var(--blue);border-radius:var(--radius);padding:24px 26px;margin:30px 0 36px;box-shadow:var(--shadow);} .gcpa-toc h5{margin:0 0 14px;font-size:16px;font-weight:800;color:var(--navy);letter-spacing:.4px;text-transform:uppercase;display:flex;align-items:center;gap:9px;} .gcpa-toc h5 svg{width:20px;height:20px;color:var(--blue);} .gcpa-toc ol{counter-reset:toc;margin:0 !important;padding:0 !important;columns:2;column-gap:36px;list-style:none !important;} .gcpa-toc ol li{counter-increment:toc;position:relative;padding:7px 0 7px 30px;margin:0;border-bottom:1px dashed var(--line);break-inside:avoid;list-style:none !important;} .gcpa-toc ol li::before{content:counter(toc);position:absolute;left:0;top:7px;width:21px;height:21px;border-radius:6px;background:var(--blue-soft);color:var(--blue);font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;} .gcpa-toc ol li::marker{content:"" !important;font-size:0 !important;} .gcpa-toc a{color:var(--navy-2);font-weight:600;font-size:15px;} .gcpa-toc a:hover{color:var(--blue);} .gcpa-post [id^="toc-"]{scroll-margin-top:90px;} .gcpa-banner{display:block;background:linear-gradient(135deg,#0d3b66 0%,#0c7a7a 100%);color:#fff;border-radius:16px;padding:30px 32px;margin:36px 0;box-shadow:var(--shadow-lg);} .gcpa-banner .bt{font-size:20px;font-weight:800;line-height:1.45;margin:0 0 20px;max-width:760px;} .gcpa-banner .bb{display:flex;flex-wrap:wrap;gap:14px;align-items:center;} .gcpa-banner a{display:inline-block;background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.6);color:#fff !important;font-weight:700;padding:13px 24px;border-radius:30px;font-size:15px;text-decoration:none !important;} .gcpa-banner a.solid{background:#ffffff !important;color:#0d3b66 !important;border-color:#fff;} .gcpa-disclaimer{background:var(--bg-alt);border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:34px 0 10px;font-size:14.5px;color:var(--muted);line-height:1.6;} .gcpa-disclaimer strong{color:var(--navy-2);} .gcpa-byline{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin:0 0 22px;font-size:15px;} .gcpa-byline .av{width:42px;height:42px;border-radius:50%;background:var(--navy);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:16px;flex:0 0 auto;} .gcpa-byline .nm{font-weight:700;color:var(--navy-2);} .gcpa-byline .rl{color:var(--teal);font-weight:700;} .gcpa-byline .sep{color:var(--line);} .gcpa-author{display:flex;gap:18px;align-items:flex-start;background:var(--bg-alt);border:1px solid var(--line);border-left:5px solid var(--teal);border-radius:14px;padding:24px 26px;margin:34px 0 40px;} .gcpa-author .ava{width:64px;height:64px;border-radius:50%;background:linear-gradient(135deg,var(--navy),var(--teal));color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:22px;flex:0 0 auto;} .gcpa-author .info h5{margin:0 0 6px;font-size:17px;font-weight:800;color:var(--navy);line-height:1.4;} .gcpa-author .info .role{font-size:14px;color:var(--teal);font-weight:700;margin:0 0 12px;} .gcpa-author .info p{font-size:14.5px;color:var(--muted) !important;margin:0;line-height:1.65;} .gcpa-faq{margin:18px 0 26px;border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:var(--shadow);} .gcpa-faq details{border-bottom:1px solid var(--line);background:#fff;} .gcpa-faq details:last-child{border-bottom:none;} .gcpa-faq summary{list-style:none;cursor:pointer;padding:18px 22px;font-weight:700;color:var(--navy-2);font-size:16px;display:flex;justify-content:space-between;align-items:center;gap:14px;transition:background .15s;} .gcpa-faq summary::-webkit-details-marker{display:none;} .gcpa-faq summary:hover{background:var(--bg-alt);} .gcpa-faq summary .pl{flex:0 0 auto;width:24px;height:24px;border-radius:50%;background:var(--blue-soft);color:var(--blue);display:flex;align-items:center;justify-content:center;font-size:18px;font-weight:700;transition:transform .2s;} .gcpa-faq details[open] summary{background:var(--bg-alt);color:var(--navy);} .gcpa-faq details[open] summary .pl{transform:rotate(45deg);background:var(--blue);color:#fff;} .gcpa-faq .ans{padding:0 22px 20px;color:#1d2733;font-size:15.5px;line-height:1.7;} .gcpa-img-right{float:right;max-width:250px;width:32%;margin:6px 0 24px 28px;border-radius:12px;box-shadow:var(--shadow-lg);border:1px solid var(--line);} .gcpa-img-right img{display:block;width:100%;height:auto;border-radius:12px;} @media(max-width:560px){.gcpa-img-right{float:none;width:70%;max-width:260px;margin:14px auto 18px;}} .gcpa-closing{font-size:24px;font-weight:800;color:var(--navy);margin:48px 0 14px;padding-bottom:12px;border-bottom:3px solid var(--teal-soft);position:relative;} .gcpa-closing::after{content:"";position:absolute;left:0;bottom:-3px;width:70px;height:3px;background:var(--teal);} @media(max-width:560px){.gcpa-post{font-size:16px;} .gcpa-hero{padding:32px 22px;} .gcpa-hero h1{font-size:26px;} .gcpa-post h2{font-size:23px;} .gcpa-cta{padding:26px 20px;} .gcpa-banner .bb{width:100%;} .gcpa-banner .bb a{flex:1 1 auto;text-align:center;}}</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"Open Corporation for $35","alternateName":"Open Corporation For $35","url":"https://opencorporationfor35.ca/","description":"Open Corporation for $35 is a department of Gondaliya CPA.","parentOrganization":{"@type":"Organization","name":"Gondaliya CPA Professional Corporation","url":"https://gondaliyacpa.ca","identifier":"CPA Ontario Firm Registration 61330051"},"telephone":"+1-647-212-9559","email":"info@gondaliyacpa.ca","areaServed":"CA","openingHours":"Mo-Su 09:00-20:30","award":"Xero Partner Award Winner 2026","aggregateRating":{"@type":"AggregateRating","ratingValue":"5","reviewCount":"1300"}}
+</script>
+<div class="gcpa-post">
+<div class="gcpa-hero" style="background:linear-gradient(135deg,#0f2a4a 0%,#15355c 60%,#1c4a78 100%) !important;">
+<span class="gcpa-eyebrow">Incorporation Fees · Federal · Ontario · BC · Alberta · 2026</span>
+<h1 style="color:#ffffff !important;position:relative;z-index:2;font-size:34px;line-height:1.25;font-weight:800;margin:0 0 14px;">Incorporation Fee Changes in 2026</h1>
+<div class="gcpa-hero-sub" style="margin:0 0 18px;"><span style="color:#eaf3fc !important;font-size:18px;line-height:1.6;display:block;max-width:840px;position:relative;z-index:2;">What the government charges to incorporate and maintain a corporation in 2026, federally and in Ontario, and which filings cost nothing at all</span></div>
+<div style="position:relative;z-index:2;font-size:15px;line-height:1.5;"><span style="color:#ffffff;font-weight:bold;">By Sharad Gondaliya, CPA</span><span style="color:#9fd0d0;font-weight:bold;">  |  <a href="https://opencorporationfor35.ca/">Open Corporation For $35</a> and <a href="https://opencorporationfor35.ca/address-service-100/">Address Service</a></span></div>
+<div style="position:relative;z-index:2;font-size:14.5px;line-height:1.5;margin-top:12px;"><span style="color:#cfe2f8 !important;font-weight:600;">Open Corporation for $35 is a department of Gondaliya CPA.</span></div>
+</div>
+<h2>Incorporation Fees 2026 Canada: Understanding Business Incorporation Cost 2026, Government Incorporation Fees 2026, and Ontario Incorporation Fees 2026</h2>
+<p><strong>Open Corporation for $35 is a department of Gondaliya CPA.</strong> <strong>TLDR:</strong> Incorporation fees 2026 Canada include federal incorporation fee 2026 and specific Ontario incorporation fees 2026, covering government incorporation fees and registry filing fees 2026. Knowing these costs alongside NUANS name search fee and CRA business registration fees helps estimate the <a href="https://opencorporationfor35.ca/guides/cost-to-incorporate-in-canada/">total corporation registration cost Canada</a> for your business.</p>
+<h3 id="toc-summary" style="margin-top:38px;">Quick Summary</h3>
+<p>In 2026 the government charges $200 to incorporate federally online and $300 in Ontario. A named company adds a NUANS report. Annual returns cost $12 federally online and nothing in Ontario, and director or address changes are free in both.</p>
+<figure class="wp-block-table">
+<table>
+<thead><tr><th>Aspect</th><th>Details</th></tr></thead>
+<tbody>
+<tr><td>Federal incorporation</td><td>$200 online, $250 on paper.</td></tr>
+<tr><td>Ontario incorporation</td><td>$300 online.</td></tr>
+<tr><td>NUANS report</td><td>Named companies only. $25 through us.</td></tr>
+<tr><td>Annual return</td><td>$12 federal online, $40 by mail. Ontario has no fee.</td></tr>
+<tr><td>Articles of amendment</td><td>$150 Ontario, $200 federal.</td></tr>
+<tr><td>Director or address change</td><td>No fee in Ontario or federally.</td></tr>
+<tr><td>CRA business number</td><td>Free.</td></tr>
+<tr><td>Our fee</td><td>$35 including HST, plus government fees. See our <a href="https://opencorporationfor35.ca/pricing/">pricing page</a>.</td></tr>
+</tbody>
+</table>
+</figure>
+<div class="gcpa-author">
+<div class="ava" style="background:linear-gradient(135deg,#0f2a4a,#0c8f8f) !important;color:#ffffff !important;">SG</div>
+<div class="info">
+<h5>Author: Sharad Gondaliya, CPA (Canada &amp; USA) — Founder &amp; Managing Director, Gondaliya CPA Professional Corporation, Toronto, Ontario.</h5>
+<div class="role">Reviewed and fact-checked by Sharad Gondaliya, CPA (Canada &amp; USA)</div>
+<p style="font-size:14.5px;color:#15355c !important;font-weight:700;margin:0 0 8px;">Open Corporation for $35 is a department of Gondaliya CPA.</p>
+<p>Gondaliya CPA is a Toronto-based team providing incorporation, CRA registrations, corporate tax, bookkeeping, GST/HST, and payroll for Canadian corporations. Verify our firm on the <a href="https://www.cpaontario.ca/protecting-the-public/directories/firm/gondaliya-5sqvmj">CPA Ontario public firm directory</a>, firm registration 61330051.</p>
+<p style="font-size:13.5px;color:#15355c !important;font-weight:700;margin-top:10px;">CPA Ontario | CPA USA (Washington &amp; Montana) | Xero Partner Award Winner 2026 | 1300+ 5-star Google reviews</p>
+</div>
+</div>
+<p style="font-size:14px;color:#5a6b7b;margin:-26px 0 26px;">Reading time: 29 minutes.</p>
+<div class="gcpa-toc">
+<h5>Table of Contents</h5>
+<ol>
+<li><a href="#toc-summary-fees">Fee Summary</a></li>
+<li><a href="#toc-why">Why Incorporate and What to Decide</a></li>
+<li><a href="#toc-federal">Federal Fees</a></li>
+<li><a href="#toc-provincial">Federal vs Provincial</a></li>
+<li><a href="#toc-ontario">Ontario Fees</a></li>
+<li><a href="#toc-other">BC, Alberta and Quebec</a></li>
+<li><a href="#toc-process">Filing Steps and Their Fees</a></li>
+<li><a href="#toc-after">Fees After Incorporation</a></li>
+<li><a href="#toc-faq">Frequently Asked Questions</a></li>
+<li><a href="#toc-points">Cost Details and Quick Reference</a></li>
+</ol>
+</div>
+<span class="gcpa-pill green">The Numbers That Matter</span>
+<div class="gcpa-metrics">
+<div class="gcpa-metric">
+<div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+<div class="big">$200</div>
+<div class="lbl">Federal online incorporation fee</div>
+</div>
+<div class="gcpa-metric">
+<div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
+<div class="big">$300</div>
+<div class="lbl">Ontario online incorporation fee</div>
+</div>
+<div class="gcpa-metric">
+<div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></div>
+<div class="big">$12</div>
+<div class="lbl">Federal annual return, online. Ontario charges nothing</div>
+</div>
+<div class="gcpa-metric">
+<div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+<div class="big">$35</div>
+<div class="lbl">Our incorporation fee, including HST</div>
+</div>
+</div>
+<div class="gcpa-callout blue">
+<span class="co-tag">Scope &amp; Assumptions</span>
+<p>This article covers federal and Ontario government fees as they stand in November 2026, in Canadian dollars, with notes on British Columbia, Alberta and Quebec. Government fees carry no HST. Registries can change fees at any time. This is educational information only and not tax, legal, or financial advice. Please confirm the fee on the registry's site on your filing date.</p>
+</div>
+
+<h2>Executive Summary of Incorporation Fees in Canada 2026</h2>
+<div class="gcpa-numhead">
+<div class="num" style="background:#0f2a4a !important;color:#ffffff !important;">1</div>
+<h4 id="toc-summary-fees" style="border:none;padding:0;margin:0;">Fee Summary</h4>
+<span class="gcpa-pill blue">Summary</span>
+</div>
+<h3>Overview of Current and Projected Incorporation Fees</h3>
+<p>Incorporating a business in Canada costs different amounts depending on where you are. The incorporation fees for 2026 will include charges from both federal and provincial governments. These fees affect the overall business incorporation costs you'll face.</p>
+<p>The government decides these fees, and they might change anytime. So, keep an eye on official info when you <a href="https://opencorporationfor35.ca/incorporation-service-35/">plan to incorporate your business</a>.</p>
+<h3>Federal and Provincial Costs at a Glance</h3>
+<p>For the <a href="https://opencorporationfor35.ca/incorporate-federally-in-canada/">federal incorporation cost</a> for 2026, the price depends on how you file—online or on paper—and the type of registration. In Ontario, the Ontario incorporation fee for 2026 is $300, which is $100 more than the federal online fee; neither fee includes a NUANS name search, and Ontario charges no fee for its annual return.</p>
+<p>Here’s a quick look:</p>
+<ul>
+<li><strong>Online Incorporation Fee:</strong> $200 federal, $300 Ontario</li>
+<li><strong>Paper Filing Fee:</strong> $250 federal; Ontario accepts paper filings only in limited cases</li>
+<li><strong>Annual Return Fee:</strong> $12 federal online, no fee in Ontario</li>
+</ul>
+<figure class="wp-block-table">
+<table>
+<thead><tr><th>Fee Item</th><th>Federal Cost (Corporations Canada)</th><th>Ontario Cost (OBR)</th></tr></thead>
+<tbody>
+<tr><td>Online Incorporation Fee</td><td>$200</td><td>$300</td></tr>
+<tr><td>Paper Filing Fee</td><td>$250</td><td>Limited cases only; confirm with the registry</td></tr>
+<tr><td>Annual Return Fee</td><td>$12 online, $40 by mail</td><td>No fee</td></tr>
+</tbody>
+</table>
+</figure>
+<div class="gcpa-callout teal">
+<span class="co-tag">Key Stat</span>
+<p><strong>$100:</strong> the difference between Ontario's $300 incorporation fee and the $200 federal online fee. Ontario wins it back over time, because its annual return is free while the federal one costs $12 a year online.</p>
+</div>
+<h3>Key Changes Expected for 2026</h3>
+<p>The government incorporation fees might change in 2026. As of November 2026, the federal online fee is still $200 and the Ontario fee is still $300, but fee increases or rule changes could happen. It’s smart to watch for updates from ServiceOntario or Corporations Canada.</p>
+<p>Check their sites often so you don’t miss new rules that could affect your costs.</p>
+<h3>Summary Table of Standard Incorporation Expenses</h3>
+<p>It helps to know what usual costs come with starting a corporation. Here’s an example list showing typical expenses:</p>
+<ul>
+<li><strong><a href="https://opencorporationfor35.ca/nuans-report-20/">NUANS Name Search</a>:</strong> $25 through Open Corporation for $35</li>
+<li><strong>Articles of Incorporation:</strong> Usually included in service fees</li>
+<li><strong>Certified Copies:</strong> Optional; registry fees apply only if you order them</li>
+</ul>
+<figure class="wp-block-table">
+<table>
+<thead><tr><th>Expense Type</th><th>Estimated Cost</th></tr></thead>
+<tbody>
+<tr><td>NUANS Name Search</td><td>$25 through Open Corporation for $35</td></tr>
+<tr><td>Articles of Incorporation</td><td>Included within service fee</td></tr>
+<tr><td>Certified Copies</td><td>Optional; registry fees apply only if ordered</td></tr>
+</tbody>
+</table>
+</figure>
+<p>These numbers are just examples. You should always check current prices before filing anything. Official sites give the most accurate info on your filing day.</p>
+<div class="gcpa-callout red">
+<span class="co-tag">Risk Warning</span>
+<p><strong>Risk Warning:</strong> The incorporation fee is not the whole cost. Please budget for the NUANS report if you want a named company, extra-provincial registration in any other province where you operate, and the federal annual return every year.</p>
+</div>
+
+<h2>Why Incorporate a Business in Canada?</h2>
+<div class="gcpa-numhead">
+<div class="num" style="background:#0f2a4a !important;color:#ffffff !important;">2</div>
+<h4 id="toc-why" style="border:none;padding:0;margin:0;">Why Incorporate and What to Decide</h4>
+<span class="gcpa-pill teal">Planning</span>
+</div>
+<p>Incorporating a business in Canada has some clear perks, even when you think about the government incorporation fees 2026 Canada. Knowing these benefits helps you see if the <a href="https://opencorporationfor35.ca/guides/how-to-incorporate-in-canada/">business incorporation cost 2026</a> makes sense for your future.</p>
+<h3>Asset Protection and Limited Liability</h3>
+<p>One big reason to incorporate is to <a href="https://opencorporationfor35.ca/convert-sole-proprietorship-corporation/">protect your personal stuff</a>. Incorporation separates what you own from what the business owes. Ontario incorporation fees 2026 pay for paperwork that makes this official. This means your house or car usually stay safe if the business hits money trouble or legal issues. It’s good to keep this in mind when you plan for business incorporation cost 2026.</p>
+<h3>Tax Advantages and Financial Management</h3>
+<p>Corporations get taxed differently than sole proprietors or partnerships. Yes, government incorporation fees 2026 come first, but corporations can pay <a href="https://opencorporationfor35.ca/guides/small-business-deduction/">lower tax rates</a> and use income splitting to save money. They also have better ways to save for retirement. These points help you handle money better but might need advice from an expert.</p>
+<h3>Credibility with Customers and Investors</h3>
+<p>When you incorporate, customers see your business as real and steady. Lots of people prefer buying from registered companies instead of small unincorporated ones. Investors often want a formal corporation before they give money. Paying incorporation fees 2026 Canada can open up chances to grow your business.</p>
+<h3>Decisions to Make Before Incorporation</h3>
+<p>Before you start incorporating, there are some important choices that affect costs like government incorporation fees 2026 and how you run the business later.</p>
+<h4>Choosing Between Federal and Provincial Incorporation</h4>
+<p>You must pick federal or provincial incorporation first. This changes rules and fees like Ontario incorporation fees 2026 versus federal ones<sup>[1][2]</sup>. Federal lets you work in every province but might cost more later because you <a href="https://opencorporationfor35.ca/guides/extra-provincial-registration/">register in each province</a> too<sup>[3]</sup>. Provincial means you only work in one area but have simpler rules<sup>[4]</sup>. Check the official fee lists before filing.</p>
+<h4>Selecting Named vs Numbered Corporations</h4>
+<p>In Ontario, you can choose a named corporation with a special business name or a numbered one that just uses numbers. Named companies usually pay extra for <a href="https://opencorporationfor35.ca/guides/nuans-name-search/">NUANS name searches</a> on top of Ontario incorporation fees 2026<sup>[5]</sup>. Numbered companies skip this but don’t have a brand name at first. This choice affects your branding and some setup costs.</p>
+<h4>Determining Share Structure and Corporate Bylaws</h4>
+<p>Your <a href="https://opencorporationfor35.ca/guides/share-structure-explained/">share structure</a> shows who owns what part of the company. Corporate bylaws set rules on how things run inside the company. Both are set up at incorporation: the share structure goes in the articles, and the bylaws stay in the minute book<sup>[5]</sup>. These don’t add much to filing fees but complex shares or changes later will cost more<sup>[1][2]</sup>. Planning well here helps avoid extra charges after starting.</p>
+<p>Always double-check current fees from ServiceOntario’s Ontario Business Registry fee schedule or Corporations Canada’s CBCA regulations before filing.</p>
+<div style="font-size:13px;color:#5a6b7b;border-top:1px solid #e3e9f0;padding-top:10px;margin:18px 0 24px;">
+<p style="margin:0 0 4px;">^1: ServiceOntario / Ontario Business Registry Fee Schedule</p>
+<p style="margin:0 0 4px;">^2: Corporations Canada Fee Schedule under CBCA Regulations</p>
+<p style="margin:0 0 4px;">^3: Extra-Provincial Registration Fees per Province/Territory Official Schedules</p>
+<p style="margin:0 0 4px;">^4: OBCA &amp; Business Names Act - Jurisdictional Requirements</p>
+<p style="margin:0;">^5: NUANS Name Search Requirement &amp; Pricing Information via ISED</p>
+</div>
+
+<h2>Federal Incorporation (CBCA): Fees, Services, and Processing Times</h2>
+<div class="gcpa-numhead">
+<div class="num" style="background:#0f2a4a !important;color:#ffffff !important;">3</div>
+<h4 id="toc-federal" style="border:none;padding:0;margin:0;">Federal Fees</h4>
+<span class="gcpa-pill gold">Federal</span>
+</div>
+<p>Federal incorporation under the Canada Business Corporations Act (CBCA) gives you a business structure that works all over Canada. It has set rules everyone follows. Knowing about federal incorporation fees 2026 Canada, government incorporation fees 2026, and federal incorporation cost 2026 helps you plan your money right.</p>
+<p>Here’s what you need to know:</p>
+<ul>
+<li>The CBCA applies to federal corporations.</li>
+<li>It covers rules for things like articles of incorporation and directors.</li>
+<li>There is no initial return; you file the first annual return within 60 days after the first anniversary date.</li>
+<li>Fees for federal incorporation in 2026 are set by Corporations Canada.</li>
+<li>These fees depend on whether you file online or on paper.</li>
+</ul>
+<h3>Governing Legislation and Requirements</h3>
+<p>Federal corporations follow the CBCA. This law tells you how to set up your company, <a href="https://opencorporationfor35.ca/guides/director-residency-requirements/">who can be a director</a>, and what reports you must file. The CBCA requires an annual return within 60 days after each anniversary date. Federal incorporation fees 2026 are fixed by Corporations Canada under ISED rules<sup>[1]</sup>. Fees are lower online than on paper.</p>
+<h3>2026 Application and Registration Fees</h3>
+<p>To officially start a federal corporation in 2026, you pay a government fee. This fee depends on how you send your documents—online or paper.</p>
+<figure class="wp-block-table">
+<table>
+<thead><tr><th>Filing Method</th><th>Government Fee (CAD)</th><th>Source</th></tr></thead>
+<tbody>
+<tr><td>Online</td><td>$200</td><td>Corporations Canada Fee Schedule</td></tr>
+<tr><td>Paper</td><td>$250</td><td>Corporations Canada Fee Schedule</td></tr>
+</tbody>
+</table>
+</figure>
+<p>Check the official fees when you file. They might change without warning<sup>[1]</sup>.</p>
+<p>You might pay extra if you want to reserve a name that’s not just numbers. But usually, the NUANS report covers that part separately.</p>
+<h3>NUANS Name Search: Cost and Process</h3>
+<p>A NUANS report shows if your company name is unique across Canada. If you want a special name (not just numbers), this report is required.</p>
+<p>The NUANS name search fee changes by provider but usually costs between CAD $13 and $75 plus taxes<sup>[2]</sup>. <a href="https://opencorporationfor35.ca/named-company-incorporation-nuans/">Open Corporation for $35 provides instant electronic NUANS reports</a> for $25, on top of its $35 incorporation fee.</p>
+<p>If you pick a numbered company name, you skip this step since numbers are assigned and unique.</p>
+<h3>Processing Timelines and Optional Express Services</h3>
+<p>If you file online, Corporations Canada usually processes complete filings the same day<sup>[3]</sup>. Paper filings take longer—often two weeks or more because they handle them manually.</p>
+<p>Corporations Canada does not charge for express service, because complete online filings are usually processed the same day. Always check current fees before choosing a paid rush service from a provider<sup>[3]</sup>.</p>
+<div class="gcpa-callout blue">
+<span class="co-tag">Worth Knowing</span>
+<p>The CRA business number costs nothing. Federal corporations usually receive it with the certificate, and Ontario corporations shortly after, so no one should charge you a government fee for it.</p>
+</div>
+
+<h2>Provincial Incorporation Options and Comparison Table</h2>
+<div class="gcpa-numhead">
+<div class="num" style="background:#0f2a4a !important;color:#ffffff !important;">4</div>
+<h4 id="toc-provincial" style="border:none;padding:0;margin:0;">Federal vs Provincial</h4>
+<span class="gcpa-pill teal">Compare</span>
+</div>
+<p>Incorporating provincially means following rules for one province only. For example, <a href="https://opencorporationfor35.ca/how-to-incorporate-in-ontario/">Ontario has its own Business Corporations Act (OBCA)</a>. Knowing Ontario incorporation fees 2026 and other provincial business registration costs in Canada helps businesses choose what fits best.</p>
+<p>Here’s what stands out:</p>
+<ul>
+<li>Provinces have their own laws.</li>
+<li>Fees differ by province.</li>
+<li>Provincial companies mostly work within one province.</li>
+<li>You might need extra registrations if operating outside that province.</li>
+</ul>
+<h3>Differences in Legislation and Compliance</h3>
+<p>Provincial incorporations follow local laws while federal ones answer to the CBCA nationwide. The big differences include:</p>
+<ul>
+<li><strong>Where they operate:</strong> Provincial companies mainly work inside their own province unless they <a href="https://opencorporationfor35.ca/extra-provincial-registration/">register elsewhere</a>.</li>
+<li><strong>Name rules:</strong> Provinces have separate registries with different naming policies.</li>
+<li><strong>Director residency:</strong> Federal corporations need at least 25% resident Canadian directors; Ontario has had no residency rule since July 5, 2021.</li>
+<li><strong>Language rules:</strong> Quebec demands French language use for corporations.</li>
+</ul>
+<p>These differences affect how often and what paperwork companies file beyond just paying fees<sup>[4]</sup> 5.</p>
+<h3>Table of Federal vs Provincial Incorporation Fees for 2026</h3>
+<figure class="wp-block-table">
+<table>
+<thead><tr><th>Fee Item</th><th>Federal (CBCA) Online</th><th>Ontario Online</th><th>Recurring?</th><th>Source</th></tr></thead>
+<tbody>
+<tr><td>Articles of Incorporation Filing</td><td>$200</td><td>$300</td><td>One-time</td><td>ISED, ServiceOntario</td></tr>
+<tr><td>Name Search / Reservation</td><td>Required*</td><td>Required*</td><td>One-time</td><td>See notes below</td></tr>
+<tr><td>Annual Return / Report</td><td>$12 online**</td><td>No fee</td><td>Annual</td><td>See below</td></tr>
+</tbody>
+</table>
+</figure>
+<p style="font-size:13.5px;color:#5a6b7b;margin:0 0 4px;">*You must get NUANS federally except for numbered companies; provincial systems may include it differently</p>
+<p style="font-size:13.5px;color:#5a6b7b;">**Federal annual returns cost $12 online and $40 by mail via Corporations Canada's system</p>
+<p><strong>Quick note:</strong> Ontario charges more upfront than federal online fees. Over time, the federal $12 annual return fee adds up, while Ontario's annual return is free.</p>
+<h3>Ongoing Annual Filing Fee Variations</h3>
+<p>Both federal and provincial companies must file yearly updates to keep good standing:</p>
+<ul>
+<li>Ontario charges no fee for its <a href="https://opencorporationfor35.ca/corporate-annual-filing/">annual corporate return</a> through ServiceOntario. [4]</li>
+<li>Federal corporations send annual returns and pay $12 if done online via Corporations Canada [1].</li>
+</ul>
+<p>Plan your budget with these differences in mind depending on where your company is incorporated.</p>
+<h3>Director Residency and Language Considerations</h3>
+<p>Where you incorporate affects who can be a director:</p>
+<ul>
+<li><a href="https://opencorporationfor35.ca/ontario-resident-director-rule-removed/">Ontario has not required any resident Canadian director</a> under OBCA rules since July 5, 2021<sup>[4]</sup>.</li>
+<li>Federal rules are stricter: at least 25% of directors must be resident Canadians under the CBCA<sup>[1]</sup>.</li>
+</ul>
+<p>Quebec requires French in corporate communications. This means a business operating in Quebec must follow its language laws no matter where it is registered<sup>[5]</sup>.</p>
+<p>Open Corporation offers guidance at around $35 to help with these choices while showing all government fees clearly as explained above.</p>
+<h5>References</h5>
+<div style="font-size:13px;color:#5a6b7b;margin:0 0 24px;">
+<p style="margin:0 0 4px;">1. https://ised-isde.canada.ca/site/corporations-canada/en/corporation-fees</p>
+<p style="margin:0 0 4px;">2. https://nuans.com/what-is-nuans/</p>
+<p style="margin:0 0 4px;">3. https://ised-isde.canada.ca/site/corporate-services/how-to-incorporate-online</p>
+<p style="margin:0 0 4px;">4. https://www.services.gov.on.ca/obr/fcs.html</p>
+<p style="margin:0;">5. https://ontario-ca.lexum.com/legis/statutes/english/elaws_statutes_90b16_e.htm</p>
+</div>
+<div class="gcpa-cta" style="background:linear-gradient(135deg,#0f2a4a 0%,#1c4a78 100%) !important;">
+<h4>Pay only the government fee, plus our $35</h4>
+<p>Incorporation from $35 including HST plus government fees, with a free CPA consultation on federal or Ontario incorporation before anything is filed. Please book a free consultation.</p>
+<div class="gcpa-trust"><span>1300+ 5-star Google reviews</span><span>Xero Partner Award Winner 2026</span><span>CPA Ontario Firm 61330051</span><span>30-Day Money-Back Guarantee</span></div>
+<div class="gcpa-btnrow"><a class="solid" href="https://gondaliyacpa.ca/consultation/">Book Free Consultation</a><a href="https://opencorporationfor35.ca/">Open Corporation For $35</a><a href="tel:+16472129559">647-212-9559</a></div>
+</div>
+
+<h2>Ontario Business Incorporation Fees and Regulatory Details</h2>
+<div class="gcpa-numhead">
+<div class="num" style="background:#0f2a4a !important;color:#ffffff !important;">5</div>
+<h4 id="toc-ontario" style="border:none;padding:0;margin:0;">Ontario Fees</h4>
+<span class="gcpa-pill green">Ontario</span>
+</div>
+<h3>Incorporation Filing Fee (2026)</h3>
+<p>In 2026, Ontario charges $300 to <a href="https://opencorporationfor35.ca/incorporation-form/">file incorporation online</a> through the Ontario Business Registry. This fee covers your Articles of Incorporation under the Business Corporations Act (OBCA). Paper filing by mail is accepted only in limited cases, so please confirm the fee with the registry before sending forms. These government incorporation fees 2026 only cover registry costs — service providers might add extra charges.</p>
+<p>You should always check the current fees on ServiceOntario. They can change without warning.</p>
+<h3>Registry Charges and NUANS Search Fee</h3>
+<p>Before incorporating, you must get a NUANS name search report in Ontario to see if your business name is free — unless you pick a numbered company. The NUANS name search cost usually runs between $13 and $75 plus tax. This is separate from government incorporation fees 2026.</p>
+<p>Registry fees include more than just incorporation. You’ll pay for annual returns, <a href="https://opencorporationfor35.ca/corporate-changes-amendments/">amendments</a>, extra-provincial registrations, certified copies, and certificates of status. ServiceOntario sets these fees separately.</p>
+<p>Your total business incorporation cost 2026 depends on things like how you file, whether you need a NUANS report, any extras you want, and ongoing rules to follow.</p>
+<h3>Optional Express Service Fees</h3>
+<p>The Ontario Business Registry charges no express fee, because complete online filings are usually processed the same day:</p>
+<ul>
+<li>Any same-day or next-day surcharge comes from a service provider, not the government.</li>
+<li>Such provider fees cover priority handling only.</li>
+<li>The base government incorporation fees stay the same.</li>
+</ul>
+<p>Express services speed up certificate delivery but don’t guarantee instant acceptance by the registry.</p>
+<div class="gcpa-callout red">
+<span class="co-tag">Risk Warning</span>
+<p><strong>Risk Warning:</strong> Ontario charges no rush fee. Please check any "express" or "priority" line on a quote, because it is a provider's charge, not a government one.</p>
+</div>
+<h3>Step-by-Step Payment and Filing Methods</h3>
+<p>You can pay online with credit or debit cards through the secure Ontario Business Registry portal. If mailing paperwork, use a cheque or money order made out to “Minister of Finance.”</p>
+<p>Online filing costs $300 and gives instant confirmation plus faster turnaround. Mail filings usually take longer and cost more.</p>
+<p>Check payment details carefully on official sites before sending money because fees may change during 2026.</p>
+
+<h2>British Columbia, Alberta, Quebec: Comparative Costs and Requirements</h2>
+<div class="gcpa-numhead">
+<div class="num" style="background:#0f2a4a !important;color:#ffffff !important;">6</div>
+<h4 id="toc-other" style="border:none;padding:0;margin:0;">BC, Alberta and Quebec</h4>
+<span class="gcpa-pill blue">Other Provinces</span>
+</div>
+<h3>BC Incorporation Fees and Registration Process</h3>
+<p><a href="https://opencorporationfor35.ca/how-to-incorporate-in-british-columbia/">British Columbia</a> sets its own government incorporation fees for provincial companies:</p>
+<ul>
+<li>Online application fee: CAD $350</li>
+<li>Name request fee (like NUANS): CAD $31</li>
+<li>Annual report fee: CAD $30 per year</li>
+</ul>
+<p>These come from BC Registries’ official 2026 schedules.</p>
+<p>BC wants approved name reservation before filing articles — unless you use a numbered company option like elsewhere.</p>
+<h3>Alberta Government Fees and Filing Options</h3>
+<figure class="wp-block-table">
+<table>
+<thead><tr><th>Filing Type</th><th>Fee (CAD)</th><th>Source</th></tr></thead>
+<tbody>
+<tr><td>Online Incorporation</td><td>$275</td><td>Alberta Corporate Registry</td></tr>
+<tr><td>Name Reservation</td><td>Included*</td><td>Check if it's separate</td></tr>
+<tr><td>Annual Return</td><td>Fee charged each year through a registry agent</td><td></td></tr>
+</tbody>
+</table>
+</figure>
+<p>Alberta charges a fee for each annual return, filed through a registry agent.</p>
+<p>Paper filings cost more than online submissions usually.</p>
+<h3>Quebec Incorporation Costs and French Language Requirements</h3>
+<p>Quebec has different rules including language laws:</p>
+<ul>
+<li>Basic corporation registration runs about CAD $300–$350 depending on form type.</li>
+<li>The corporate name and dealings with the public must comply with the Charter of the French Language (Bill 101).</li>
+</ul>
+<p>This can add to your total business incorporation cost Canada-wide if you pick Quebec over other provinces.</p>
+<h3>Impact of NUANS Name Search, CRA Registration, and Registry Filing Fees</h3>
+<p>The NUANS name search is key when incorporating federally or provincially — it helps confirm unique names except for numbered companies which skip this step.</p>
+<p>Costs vary widely because private providers set prices on their own — these aren’t part of fixed government filing charges.</p>
+<p>Here’s what else matters:</p>
+<ul>
+<li>The Canada Revenue Agency (CRA) gives <a href="https://opencorporationfor35.ca/business-number-cra-account-registration/">free business numbers</a> once your registration goes through—no charge here no matter where you file.</li>
+<li>Registry filing charges differ across provinces. They reflect local expenses for things like annual returns or amendments after your initial incorporation.</li>
+</ul>
+<p>Always check official sources for exact costs since these fees can change over time.</p>
+<div style="font-size:13px;color:#5a6b7b;border-top:1px solid #e3e9f0;padding-top:10px;margin:18px 0 24px;">
+<p style="margin:0 0 4px;">1: ServiceOntario - Official Fee Schedule for Business Filings (checked January 15th 2026).</p>
+<p style="margin:0 0 4px;">2: ISED Canada - NUANS Report Providers Pricing Overview (verified February 10th 2026).</p>
+<p style="margin:0 0 4px;">3: BC Registries - Corporation Application &amp; Annual Report Fees Schedule (accessed March 5th 2026).</p>
+<p style="margin:0 0 4px;">4: Alberta Corporate Registry - Government Fee List For Corporations (confirmed April 12th 2026).</p>
+<p style="margin:0 0 4px;">5: Registraire des entreprises du Québec – Corporation Registration Cost Guide (consulted May 8th 2026).</p>
+<p style="margin:0;">6: Canada Revenue Agency – Business Number Program Accounts Information Page (canada.ca) accessed June 20th 2025.</p>
+</div>
+
+<h2>Process Guide – Steps to Incorporate and Associated Filing Fees</h2>
+<div class="gcpa-numhead">
+<div class="num" style="background:#0f2a4a !important;color:#ffffff !important;">7</div>
+<h4 id="toc-process" style="border:none;padding:0;margin:0;">Filing Steps and Their Fees</h4>
+<span class="gcpa-pill gold">Process</span>
+</div>
+<p>Starting a corporation in Canada means following a few important steps. Each step comes with some fees called government incorporation fees 2026 Canada. Knowing these steps helps you figure out the total business incorporation cost 2026. This guide walks you through how to file, <a href="https://opencorporationfor35.ca/guides/articles-of-incorporation-explained/">prepare articles of incorporation</a>, reserve a name, handle amalgamation costs, and get certificates.</p>
+<h3>Online vs Email or Mail Filing Methods</h3>
+<p>You can submit Articles of Incorporation online or by mail/email depending on where you file. In Ontario, online filing through the Ontario Business Registry usually costs less in Ontario incorporation fees 2026 than paper forms<sup>[1]</sup>. At the federal level, Corporations Canada charges different fees for electronic versus paper filings<sup>[2]</sup>.</p>
+<p>Online filing is quicker and easier but needs internet and some digital know-how. Paper filing fits those who like old-fashioned ways but can be pricier and slower.</p>
+<p>Fees vary by method, so check official info on your filing date.<sup>[1][2]</sup></p>
+<h4>Advantages of Each Submission Method</h4>
+<p>Here’s how the two methods stack up:</p>
+<ul>
+<li><strong>Online:</strong> You get instant receipt confirmation. Some places process same-day. Fees are often lower at provincial (Ontario) and federal levels<sup>[1][2]</sup>.</li>
+<li><strong>Mail/Email:</strong> Good if you don’t have reliable internet. But it takes longer since staff handle paperwork by hand. Some registries add extra charges for mailed docs<sup>[1]</sup>.</li>
+</ul>
+<p>Pick what fits you best, but keep in mind government incorporation fees 2026 may differ.</p>
+<h4>Digital-First Options and Their Pricing Implications</h4>
+<p>Federal incorporation cost 2026 favors online filings with a $200 fee. Paper forms cost $250 at Corporations Canada<sup>[2]</sup>. The cheaper online price reflects automation savings.</p>
+<p>In Ontario, online Articles of Incorporation fee is $300. Mailed forms usually cost more—check ServiceOntario for exact rates<sup>[1]</sup>.</p>
+<p>Digital-first filing saves time and some cash on government fees 2026. These savings add up when planning your overall business incorporation cost 2026.</p>
+<h3>Articles of Incorporation, Named vs Numbered Corporations, and Amalgamation</h3>
+<p>Articles of Incorporation make your corporation official. You can choose between named or numbered corporations:</p>
+<ul>
+<li>Named corporations need a NUANS report to prove the name isn’t taken.</li>
+<li>Numbered corporations get assigned numbers instead of names; no NUANS needed.</li>
+</ul>
+<p>Amalgamation means joining two or more corporations into one. This requires amendments filings with separate government amendment fees.</p>
+<p>Both types must follow laws like OBCA (Ontario) or CBCA (federal). Getting articles right lowers risks during registration and affects your total business incorporation cost 2026<sup>[3]</sup>.</p>
+<h4>Articles Preparation and Filing Fees</h4>
+<p>Writing your articles sets up your company structure like shares or directors. This doesn’t cost extra to the government but can add legal complexity.</p>
+<p>Filing your articles triggers government-incorporated fees:</p>
+<figure class="wp-block-table">
+<table>
+<thead><tr><th>Jurisdiction</th><th>Online Fee</th><th>Paper/Mail Fee</th><th>Source</th></tr></thead>
+<tbody>
+<tr><td>Federal</td><td>$200</td><td>$250</td><td>Corporations Canada</td></tr>
+<tr><td>Ontario</td><td>$300</td><td>Limited cases only; confirm with the registry</td><td>ServiceOntario</td></tr>
+</tbody>
+</table>
+</figure>
+<p>These don’t include service provider fees like <a href="https://opencorporationfor35.ca/services/">Open Corporation’s $35 flat rate</a>.</p>
+<p>Always double-check current fees before submitting.<sup>[1][2]</sup></p>
+<div class="gcpa-callout gold">
+<span class="co-tag">Our Actual Experience</span>
+<p>For most of our Ontario clients, the full government cost is the $300 filing fee, plus a $25 NUANS report if they want a named company. We show the government fee, the NUANS report and our $35 as separate lines on every quote.</p>
+</div>
+<h4>Name Reservation (Named Corporation) and Numbered Corporation Process</h4>
+<p>If you pick a name for your corporation (named corporation), you usually need a <a href="https://opencorporationfor35.ca/nuans-report-20/">NUANS report</a> to check if it’s unique<sup>[4]</sup>. NUANS search costs vary but often run between CAD$13–$75 plus taxes; this is separate from government filing fees. Open Corporation for $35 charges $25 for a NUANS report.</p>
+<p>Numbered corporations skip this step because they use assigned numbers instead of custom names. This saves money upfront but limits branding options.</p>
+<p>Reserving your name helps avoid rejected filings due to duplicates—a key part of business incorporation cost 2026 when dealing with multiple provinces.[NUANS providers set pricing independently.]</p>
+<h4>Amalgamation or Continuance: Extra Costs Involved</h4>
+<p>If you merge corporations (amalgamation), expect extra amendment filing fees:</p>
+<figure class="wp-block-table">
+<table>
+<thead><tr><th>Amendment Type</th><th>Jurisdiction</th><th>Fee</th><th>Source</th></tr></thead>
+<tbody>
+<tr><td>Amalgamation</td><td>Federal</td><td>$200</td><td>Corporations Canada</td></tr>
+<tr><td>Amendments</td><td>Ontario</td><td>$150</td><td>ServiceOntario</td></tr>
+</tbody>
+</table>
+</figure>
+<p>After amalgamation, extra-provincial registrations bring more license renewal fees that vary by province. These costs add up beyond initial business incorporation cost 2026.[See respective provincial registries.]</p>
+<p>Plan for these ongoing expenses after incorporating.[Registries decide acceptance.]</p>
+<h3>Obtaining the Certificate of Incorporation</h3>
+<p>Once registered successfully, you get an official Certificate proving your company exists. If needed later for banks or regulators, certified copies come with extra certified copy fees:</p>
+<figure class="wp-block-table">
+<table>
+<thead><tr><th>Document Type</th><th>Jurisdiction</th><th>Fee</th><th>Source</th></tr></thead>
+<tbody>
+<tr><td>Certificate Of Incorporation</td><td>Federal</td><td>No charge*</td><td>Corporations Canada</td></tr>
+<tr><td>Certified Copy</td><td>Federal</td><td>Approx.$40+taxes*</td><td></td></tr>
+<tr><td>Certificate Of Status</td><td>Ontario</td><td>Approx.$20+taxes</td><td></td></tr>
+<tr><td>Certified Copy</td><td>Ontario</td><td>Approx.$15+taxes</td><td></td></tr>
+</tbody>
+</table>
+</figure>
+<p style="font-size:13.5px;color:#5a6b7b;">*Fees change sometimes; always check latest official info before ordering.</p>
+<p>Certified copies back up original certificates for banks or regulators but aren’t part of the initial free process federally.</p>
+<p>Open Corporation charges $35 flat fee as part of Gondaliya CPA to help clients through these steps while being clear about all Canadian government incorporating costs in 2026.</p>
+<h5>References:</h5>
+<ul style="font-size:13px;color:#5a6b7b;">
+<li>ServiceOntario / Ontario Business Registry Official Fee Schedule accessed June 10, 2026</li>
+<li>Corporations Canada / ISED Official Fees Schedule accessed June 12, 2026</li>
+<li>OBCA &amp; CBCA Statutes via Government e-Laws &amp; Justice Laws websites</li>
+<li>NUANS Report Requirements — Innovation Science Economic Development Canada</li>
+<li>Certificates &amp; Copies Fees — Provincial/Federal Registries Official Schedules</li>
+</ul>
+<div class="gcpa-banner" style="background:linear-gradient(135deg,#0d3b66 0%,#0c7a7a 100%) !important;">
+<div class="bt">Want a quote with every government fee shown on its own line? Please book a free consultation and we will price your incorporation before anything is filed.</div>
+<div class="bb"><a class="solid" href="https://gondaliyacpa.ca/consultation/">Book Free Consultation</a><a href="mailto:info@gondaliyacpa.ca">info@gondaliyacpa.ca</a><a href="tel:+16472129559">647-212-9559</a></div>
+</div>
+
+<h2>Additional Filing Requirements and Post-Incorporation Considerations</h2>
+<div class="gcpa-numhead">
+<div class="num" style="background:#0f2a4a !important;color:#ffffff !important;">8</div>
+<h4 id="toc-after" style="border:none;padding:0;margin:0;">Fees After Incorporation</h4>
+<span class="gcpa-pill red">Ongoing</span>
+</div>
+<p>Starting a business in Canada means paying the incorporation fees 2026 Canada, but there’s more to it than that. You also have to handle other filings and keep up with government rules after you register. Knowing these extra steps helps you avoid surprises with business incorporation cost 2026 and <a href="https://opencorporationfor35.ca/corporate-compliance-subscription/">ongoing government incorporation fees 2026</a>.</p>
+<ul>
+<li>Initial fees aren’t the whole story.</li>
+<li>Ongoing filings and updates matter.</li>
+<li>Staying in good standing with the government costs time and money.</li>
+</ul>
+<p>You should keep track of all these requirements as your company grows.</p>
+<h3>Ongoing Obligations: Annual Return, By-laws, Financial Statements, Amendments</h3>
+<p>Every year, companies must file an <a href="https://opencorporationfor35.ca/guides/corporate-annual-return/">annual return</a>. This confirms or updates company info in the registry. The annual return fee varies by place. For example:</p>
+<ul>
+<li>Ontario charges no annual return fee (Ontario Business Registry fee schedule 2026)</li>
+<li>Federally, Corporations Canada handles it under CBCA rules (Corporations Canada Fee Schedule 2026)</li>
+</ul>
+<p>By-laws control how your company runs internally. You don’t send them to the registry unless you change your articles. Financial statements usually don’t have filing fees but are needed for taxes or shareholders.</p>
+<p>Changing things like directors, shares, or address costs money too. Here’s a quick look at amendment costs for Ontario and federal filings:</p>
+<figure class="wp-block-table">
+<table>
+<thead><tr><th>Amendment Type</th><th>Ontario Fee (Online)</th><th>Federal Fee (Online)</th><th>Source</th></tr></thead>
+<tbody>
+<tr><td>Director Change</td><td>No fee [1]</td><td>No fee [2]</td><td>ServiceOntario / Corporations Canada</td></tr>
+<tr><td>Registered Office Change</td><td>No fee [1]</td><td>No fee*</td><td>ServiceOntario / Corporations Canada</td></tr>
+<tr><td>Share Structure Change</td><td>$150 [1]</td><td>$200 [2]</td><td>ServiceOntario / Corporations Canada</td></tr>
+</tbody>
+</table>
+</figure>
+<p style="font-size:13.5px;color:#5a6b7b;">*Federal fees sometimes combine charges.</p>
+<p>Always check official sources before you file because fees can change anytime.</p>
+<h3>Address and Director Changes, Continuance, Dissolution, and Revival Procedures</h3>
+<p>Changing your registered address or directors is free with a notice of change; share changes cost the amendment fees above. Also:</p>
+<ul>
+<li>Moving from federal to provincial registration or vice versa is called continuance.</li>
+<li>Continuance requires special forms and fees (OBCA Continuance Fees, CBCA Continuance Fees).</li>
+<li>Dissolution happens when a corporation ends—either by choice or due to missing filings like annual returns.</li>
+</ul>
+<p>You can bring a dissolved corporation back through revival. But revival often costs more than regular filings:</p>
+<figure class="wp-block-table">
+<table>
+<thead><tr><th>Procedure</th><th>Ontario Fee</th><th>Federal Fee</th><th>Source</th></tr></thead>
+<tbody>
+<tr><td>Extra-provincial Registration (New Licence)</td><td>$300 online [3]</td><td>N/A</td><td>ServiceOntario [3], Alberta Corporate Registry [4]</td></tr>
+<tr><td>Revival of Corporation</td><td>$250 online [5]</td><td>$200 paper + service fee [2]</td><td>ServiceOntario [5], Corporations Canada [2]</td></tr>
+</tbody>
+</table>
+</figure>
+<p>Extra-provincial registration fees vary a lot between provinces (Alberta Corporate Registry Fees 2026). Always double-check numbers before budgeting.</p>
+<div class="gcpa-callout red">
+<span class="co-tag">Risk Warning</span>
+<p><strong>Risk Warning:</strong> A corporation that stops filing annual returns can be dissolved, and reviving it costs far more than the returns would have. Please put every annual return deadline in your calendar the day you incorporate.</p>
+</div>
+<h3>Common Errors, Liability Protections, and Legal Consultation Recommendations</h3>
+<p>Many businesses mess up by <a href="https://opencorporationfor35.ca/first-year-filing-calendar-new-corporation/">missing deadlines for their annual returns</a>. This can lead to dissolution risk. Some forget to register extra-provincially when they do business outside their home province.</p>
+<p>Other errors include skipping NUANS name searches when needed or confusing service provider charges with actual government incorporation fees 2026.</p>
+<p><strong>Remember:</strong> Liability protection depends on following the rules closely—not just paying the initial business incorporation cost 2026.</p>
+<p>If your company plans big changes or works across different provinces, talking to a lawyer is smart. They help prevent costly mistakes that can stall your paperwork or cause legal trouble beyond just registry fees.</p>
+<h3>Key Takeaways for Effective Incorporation Planning</h3>
+<p>Planning ahead helps you avoid surprise costs related to government incorporation fees 2026:</p>
+<ul>
+<li>Separate one-time vs recurring registry filing fees (like annual returns).</li>
+<li>Check amendment costs based on what changes you might make.</li>
+<li>Think about extra-provincial registrations if expanding.</li>
+<li>Use official sites such as Ontario Business Registry and Corporations Canada for current prices.</li>
+<li>Total business incorporation cost 2026 includes service provider prices plus government charges.</li>
+<li><a href="https://opencorporationfor35.ca/incorporation-corporate-tax-return-bundle/">Open Corporation offers simple flat-fee services</a> with clear guidance so you won’t face unexpected bills along the way.</li>
+</ul>
+<h5>References:</h5>
+<div style="font-size:13px;color:#5a6b7b;margin:0 0 18px;">
+<p style="margin:0 0 4px;">1. Ontario Business Registry Fees Schedule (checked June 15th , 2026)</p>
+<p style="margin:0 0 4px;">2. Corporations Canada Fee Schedule (checked June15th , 2026)</p>
+<p style="margin:0 0 4px;">3. Extra Provincial License Fees Ontario (checked June15th , 2026)</p>
+<p style="margin:0 0 4px;">4. Alberta Corporate Registry Fees (checked June15th , 2026)</p>
+<p style="margin:0;">5. Revival Fees Ontario Business Registry (checked June15th , 2026)</p>
+</div>
+<p>Sharad Gondaliya, CPA (Canada &amp; USA), has helped hundreds of Canadian businesses over more than ten years.</p>
+
+<h2>FAQs on Incorporation Fees and Related Costs 2026 Canada</h2>
+<div class="gcpa-numhead">
+<div class="num" style="background:#0f2a4a !important;color:#ffffff !important;">9</div>
+<h4 id="toc-faq" style="border:none;padding:0;margin:0;">Incorporation Fees FAQ</h4>
+<span class="gcpa-pill teal">FAQ</span>
+</div>
+<div class="gcpa-faq" id="faq-main">
+<details><summary>What is the Articles of Incorporation fee for mail filing in Ontario?<span class="pl">+</span></summary>
+<div class="ans"><p>Ontario accepts mailed Articles of Incorporation only in limited cases, so please confirm the fee with the registry. Online filing costs $300.</p></div></details>
+<details><summary>Is there an Annual Return Fee for federal corporations?<span class="pl">+</span></summary>
+<div class="ans"><p>Yes. Federal annual returns cost $12 online and $40 by mail with Corporations Canada.</p></div></details>
+<details><summary>What is the Articles of Amendment fee in Ontario?<span class="pl">+</span></summary>
+<div class="ans"><p>The Articles of Amendment filing fee in Ontario is $150 online.</p></div></details>
+<details><summary>How much does an amendment cost federally?<span class="pl">+</span></summary>
+<div class="ans"><p>Federal articles of amendment cost $200 online; director and address changes are free.</p></div></details>
+<details><summary>What are Extra-Provincial Registration fees in British Columbia?<span class="pl">+</span></summary>
+<div class="ans"><p>Extra-provincial registration fees in BC can be around $300 or more, depending on the registry requirements.</p></div></details>
+<details><summary>What are Certified Copy fees in Ontario and federally?<span class="pl">+</span></summary>
+<div class="ans"><p>Certified copies cost about $15 per document in Ontario and approximately $40 per document federally.</p></div></details>
+<details><summary>Is there a Business Name Registration fee in Ontario?<span class="pl">+</span></summary>
+<div class="ans"><p>Yes, registering a business name in Ontario costs around $60 to $80 depending on service method.</p></div></details>
+<details><summary>Does Ontario charge for Business Name Renewal?<span class="pl">+</span></summary>
+<div class="ans"><p>Yes, renewing a business name registration in Ontario costs $60 every five years.</p></div></details>
+<details><summary>Is there a fee for CRA Business Number registration?<span class="pl">+</span></summary>
+<div class="ans"><p>No, the CRA issues business numbers free of charge once your incorporation is complete.</p></div></details>
+<details><summary>What is Open Corporation’s service fee?<span class="pl">+</span></summary>
+<div class="ans"><p>Open Corporation charges a flat fee of $35 for incorporation support services excluding government fees.</p></div></details>
+<details><summary>Do NUANS Name Search fees vary by provider?<span class="pl">+</span></summary>
+<div class="ans"><p>Yes, NUANS report prices range between CAD $13 and $75 plus taxes based on the provider chosen.</p></div></details>
+<details><summary>What is the Extra-provincial Licence fee in Ontario?<span class="pl">+</span></summary>
+<div class="ans"><p>Ontario’s extra-provincial licence fee is about $300 for companies registered outside Ontario but doing business inside.</p></div></details>
+<details><summary>How much is the Annual Report Fee in British Columbia?<span class="pl">+</span></summary>
+<div class="ans"><p>BC charges an annual report filing fee of roughly $30 per year.</p></div></details>
+<details><summary>Does Alberta have an Annual Return Fee?<span class="pl">+</span></summary>
+<div class="ans"><p>Alberta charges a fee for each annual return, filed through a registry agent.</p></div></details>
+<details><summary>What is the federal Amalgamation fee?<span class="pl">+</span></summary>
+<div class="ans"><p>Federal amalgamation filings cost about $200 to process under Corporations Canada rules.</p></div></details>
+<details><summary>How much does Revival cost in Ontario and federally?<span class="pl">+</span></summary>
+<div class="ans"><p>Revival fees are around $250 online in Ontario and about $200 plus service fees federally.</p></div></details>
+<details><summary>What is the Director Change fee in Ontario and federally?<span class="pl">+</span></summary>
+<div class="ans"><p>Neither Ontario nor Corporations Canada charges a fee to report a director change.</p></div></details>
+<details><summary>Are there Registered Office Change fees in Ontario?<span class="pl">+</span></summary>
+<div class="ans"><p>Changing the registered office address costs nothing in Ontario or federally when you report it with a notice of change.</p></div></details>
+<details><summary>How much does Share Structure Change cost in Ontario and federally?<span class="pl">+</span></summary>
+<div class="ans"><p>Share structure amendments cost roughly $150 online in Ontario and about $200 with Corporations Canada.</p></div></details>
+</div>
+<div class="gcpa-callout red">
+<span class="co-tag">Risk Warning</span>
+<p><strong>Risk Warning:</strong> Fees in this article are the government's, as of November 2026. Please confirm the fee on the registry's site on your filing date, because registries can change them without notice.</p>
+</div>
+
+<h2>Additional Incorporation Cost Details You Should Know</h2>
+<div class="gcpa-numhead">
+<div class="num" style="background:#0f2a4a !important;color:#ffffff !important;">10</div>
+<h4 id="toc-points" style="border:none;padding:0;margin:0;">Cost Details and Quick Reference</h4>
+<span class="gcpa-pill gold">At a Glance</span>
+</div>
+<ul>
+<li><strong>Certified Copy Fee (Ontario):</strong> Approximately $15 per document requested through ServiceOntario.</li>
+<li><strong>Certified Copy Fee (Federal):</strong> Around $40 per document obtained from Corporations Canada.</li>
+<li><strong>Business Name Registration Fee (Ontario):</strong> Generally between CAD 60 to 80 depending on application type.</li>
+<li><strong>Business Name Renewal Fee (Ontario):</strong> CAD 60 every five years to maintain active registration.</li>
+<li><strong>CRA Business Number Fee:</strong> No charge; assigned automatically after incorporation.</li>
+<li><strong><a href="https://opencorporationfor35.ca/incorporation-service-35/">Open Corporation Service Fee</a>:</strong> Flat rate at $35 covering assistance but excluding government payments.</li>
+<li><strong>NUANS Name Search Fee Variation:</strong> Pricing depends on selected NUANS provider; expect CAD 13–75 plus taxes.</li>
+<li><strong>Extra-provincial Licence Fee (Ontario):</strong> CAD 300 for out-of-province companies conducting business.</li>
+<li><strong>Annual Report Fee (British Columbia):</strong> Typically CAD 30 yearly to file required updates.</li>
+<li><strong>Annual Return Fee (Alberta):</strong> Charged each year through a registry agent.</li>
+<li><strong>Amalgamation Fee (Federal):</strong> Set at approximately CAD 200 for merging corporations.</li>
+<li><strong>Revival Fees:</strong> Ontario charges near CAD 250; federal revival costs include additional service fees.</li>
+<li><strong>Director Change Fees:</strong> No fee in Ontario or federally.</li>
+<li><strong>Registered Office Change Fees:</strong> No fee in Ontario or federally.</li>
+<li><strong>Share Structure Change Fees:</strong> Around CAD 150 for provincial updates; near CAD 200 federally.</li>
+</ul>
+<p>These detailed costs help you budget your business incorporation expenses accurately for Canada’s 2026 filings.</p>
+<p>Open Corporation for $35 ensures transparent guidance while clearly listing all government-incorporated charges nationwide.</p>
+<div class="gcpa-pillhead"><h4 style="border:none;padding:0;margin:0;">Quick Answers: Key Numbers at a Glance</h4><span class="gcpa-pill gold">At a Glance</span></div>
+<ul>
+<li><strong>Federal incorporation:</strong> $200 online, $250 on paper</li>
+<li><strong>Ontario incorporation:</strong> $300 online</li>
+<li><strong>Federal annual return:</strong> $12 online, $40 by mail</li>
+<li><strong>Ontario annual return:</strong> No fee</li>
+<li><strong>Articles of amendment:</strong> $150 Ontario, $200 federal</li>
+<li><strong>Director or address change:</strong> No fee</li>
+<li><strong>Ontario business name:</strong> $60 for five years</li>
+<li><strong>CRA business number:</strong> Free</li>
+<li><strong>Our fee:</strong> $35 including HST, plus government fees</li>
+</ul>
+<div class="gcpa-pillhead"><h4 style="border:none;padding:0;margin:0;">Who This Is For / Not For</h4><span class="gcpa-pill teal">Fit Check</span></div>
+<ul>
+<li><strong>For:</strong> Founders budgeting for a federal or Ontario incorporation in 2026, and owners checking what later filings will cost.</li>
+<li><strong>Not For:</strong> Anyone looking for exact Quebec, BC or Alberta fees, which should be confirmed with that province's registry.</li>
+</ul>
+<div class="gcpa-callout green">
+<span class="co-tag">Verdict</span>
+<p>For most founders the government cost is simple: $300 to incorporate in Ontario or $200 federally online, plus a NUANS report for a named company. After that, Ontario charges nothing a year at the registry, while a federal corporation pays $12 a year online. Choose the jurisdiction for where you will operate, not for the $100 difference.</p>
+</div>
+<div class="gcpa-callout blue">
+<span class="co-tag">2026 Update</span>
+<p><strong>2026 Update &mdash; what is current:</strong> This article reflects fees current to November 2026. The federal government charges $200 to incorporate online and $250 on paper, and Ontario charges $300 online. Federal annual returns cost $12 online and $40 by mail, Ontario annual returns are free, and director or address changes are free in both. Articles of amendment cost $150 in Ontario and $200 federally. Federal corporations need at least 25% resident Canadian directors, while Ontario has had no residency rule since July 5, 2021. Please confirm the fee on the registry's site on your filing date.</p>
+</div>
+<h5 style="color:#15355c;margin:24px 0 8px;">Incorporation Cost Readiness Check</h5>
+<p>This quick self-check flags which fees apply to you before you incorporate. Please answer the six questions below.</p>
+<div id="ocf-chk">
+  <style>
+    #ocf-chk{--n:#0f2a4a;--n2:#15355c;--bl:#1c6dd0;--tl:#0c8f8f;--gd:#c9991f;--rd:#c0392b;--ink:#1d2733;--mut:#5a6b7b;--ln:#d8e0e8;--alt:#f5f8fb;
+      border:1px solid var(--ln);border-radius:14px;overflow:hidden;background:#fff;box-shadow:0 10px 30px rgba(15,42,74,.08);font-family:inherit;color:var(--ink);margin:24px 0;}
+    #ocf-chk *{box-sizing:border-box;}
+    #ocf-chk .s-head{background:linear-gradient(135deg,var(--n),var(--n2));color:#fff;padding:18px 22px;}
+    #ocf-chk .s-head h5{margin:0;font-size:19px;font-weight:700;color:#fff!important;}
+    #ocf-chk .s-head p{margin:4px 0 0;font-size:13px;color:#cfe2f8!important;}
+    #ocf-chk .s-body{padding:20px 22px;}
+    #ocf-chk .s-q{padding:13px 0;border-bottom:1px solid var(--ln);display:flex;justify-content:space-between;align-items:center;gap:14px;}
+    #ocf-chk .s-q:first-child{padding-top:2px;}
+    #ocf-chk .s-q span.s-lab{font-weight:600;font-size:14.5px;color:var(--n);}
+    #ocf-chk .s-seg{display:inline-flex;border:1px solid var(--ln);border-radius:10px;overflow:hidden;flex:0 0 auto;}
+    #ocf-chk .s-seg label{cursor:pointer;padding:8px 18px;font-size:14px;font-weight:600;color:var(--mut);background:var(--alt);transition:.15s;user-select:none;}
+    #ocf-chk .s-seg label+label{border-left:1px solid var(--ln);}
+    #ocf-chk .s-seg input{position:absolute;opacity:0;width:0;height:0;}
+    #ocf-chk .s-seg input:checked+label{background:var(--n);color:#fff!important;}
+    #ocf-chk .s-go{margin-top:18px;width:100%;border:none;border-radius:11px;padding:14px 18px;font-size:15.5px;font-weight:700;color:#fff!important;cursor:pointer;background:linear-gradient(135deg,var(--bl),var(--tl));font-family:inherit;}
+    #ocf-chk .s-go:hover{filter:brightness(1.05);}
+    #ocf-chk .s-msg{display:none;margin-top:12px;font-size:13.5px;color:var(--rd);font-weight:600;}
+    #ocf-chk .s-out{display:none;margin-top:18px;border-radius:12px;border:1px solid var(--ln);overflow:hidden;}
+    #ocf-chk .s-out .s-status{padding:14px 18px;font-weight:700;font-size:16px;color:#fff!important;background:linear-gradient(135deg,var(--n),var(--n2));}
+    #ocf-chk .s-out .s-inner{padding:16px 18px;background:var(--alt);}
+    #ocf-chk .s-row{font-size:14.5px;margin:0 0 10px;line-height:1.5;}
+    #ocf-chk .s-count{display:inline-block;background:#fff;border:1px solid var(--ln);border-radius:9px;padding:8px 14px;font-weight:700;color:var(--n);font-size:14.5px;}
+    #ocf-chk .s-list{margin:8px 0 0;padding-left:18px;}
+    #ocf-chk .s-list li{font-size:13.5px;color:var(--ink);margin:4px 0;border:none;padding:0 0 0 4px;}
+    #ocf-chk .s-list li::before{display:none;}
+    #ocf-chk .s-cta{display:inline-block;margin-top:14px;background:var(--gd);color:#fff!important;font-weight:700;font-size:14.5px;text-decoration:none;padding:11px 20px;border-radius:10px;}
+    #ocf-chk .s-note{font-size:12.5px;color:var(--mut);margin:12px 0 0;}
+    @media(max-width:560px){#ocf-chk .s-q{flex-direction:column;align-items:flex-start;gap:8px;}}
+  </style>
+  <div class="s-head" style="background:linear-gradient(135deg,#0f2a4a,#15355c) !important;">
+    <h5>Incorporation Cost Readiness Check</h5>
+    <p>Six quick questions. No tax calculation, no figure quoted.</p>
+  </div>
+  <div class="s-body">
+    <div class="s-q" data-flag="1" data-msg="A NUANS report, $25 through us, since a named company cannot file without one"><span class="s-lab">1. Do you want a named company rather than a numbered one?</span>
+      <span class="s-seg"><input type="radio" id="c-a-y" name="c-a" value="1"><label for="c-a-y">Yes</label><input type="radio" id="c-a-n" name="c-a" value="0"><label for="c-a-n">No</label></span></div>
+    <div class="s-q" data-flag="0" data-msg="Choosing federal ($200 online) or Ontario ($300), based on where you will operate"><span class="s-lab">2. Have you decided between federal and Ontario incorporation?</span>
+      <span class="s-seg"><input type="radio" id="c-b-y" name="c-b" value="1"><label for="c-b-y">Yes</label><input type="radio" id="c-b-n" name="c-b" value="0"><label for="c-b-n">No</label></span></div>
+    <div class="s-q" data-flag="1" data-msg="Extra-provincial registration fees in each other province where you carry on business"><span class="s-lab">3. Will you operate in more than one province?</span>
+      <span class="s-seg"><input type="radio" id="c-c-y" name="c-c" value="1"><label for="c-c-y">Yes</label><input type="radio" id="c-c-n" name="c-c" value="0"><label for="c-c-n">No</label></span></div>
+    <div class="s-q" data-flag="1" data-msg="Filing online instead, which is cheaper federally and faster everywhere"><span class="s-lab">4. Were you planning to file on paper?</span>
+      <span class="s-seg"><input type="radio" id="c-d-y" name="c-d" value="1"><label for="c-d-y">Yes</label><input type="radio" id="c-d-n" name="c-d" value="0"><label for="c-d-n">No</label></span></div>
+    <div class="s-q" data-flag="1" data-msg="Getting the share structure right now, since articles of amendment cost $150 in Ontario and $200 federally"><span class="s-lab">5. Might you change your share structure in the first year?</span>
+      <span class="s-seg"><input type="radio" id="c-e-y" name="c-e" value="1"><label for="c-e-y">Yes</label><input type="radio" id="c-e-n" name="c-e" value="0"><label for="c-e-n">No</label></span></div>
+    <div class="s-q" data-flag="0" data-msg="Annual return deadlines, since missed returns can lead to dissolution and a costly revival"><span class="s-lab">6. Do you know when your first annual return is due?</span>
+      <span class="s-seg"><input type="radio" id="c-f-y" name="c-f" value="1"><label for="c-f-y">Yes</label><input type="radio" id="c-f-n" name="c-f" value="0"><label for="c-f-n">No</label></span></div>
+    <button type="button" class="s-go" id="c-go">Check my readiness</button>
+    <div class="s-msg" id="c-msg">Please answer all six questions to continue.</div>
+    <div class="s-out" id="c-out">
+      <div class="s-status" id="c-status" style="background:linear-gradient(135deg,#0f2a4a,#15355c) !important;">Your profile</div>
+      <div class="s-inner">
+        <p class="s-row"><b>Points to work through:</b> <span class="s-count" id="c-count"></span></p>
+        <div id="c-listwrap" style="display:none;"><p class="s-row" style="margin-bottom:4px;"><b>Worth reviewing with us:</b></p><ul class="s-list" id="c-list"></ul></div>
+        <p class="s-row" id="c-clean" style="display:none;"><b>Nothing flagged.</b> The usual complications do not appear to apply to you.</p>
+        <a class="s-cta" href="https://gondaliyacpa.ca/consultation/">Book a free consultation</a>
+        <p class="s-note">This is a general prompt, not tax advice, and it does not calculate your tax. Your outcome depends on your full facts, so please book a free consultation.</p>
+      </div>
+    </div>
+  </div>
+  <script>
+  (function(){
+    var root=document.getElementById('ocf-chk');
+    root.querySelector('#c-go').addEventListener('click',function(){
+      var qs=root.querySelectorAll('.s-q'), items=[], missing=false;
+      qs.forEach(function(q){
+        var x=q.querySelector('input:checked');
+        if(!x){missing=true;return;}
+        if(x.value===q.getAttribute('data-flag')) items.push(q.getAttribute('data-msg'));
+      });
+      var msg=root.querySelector('#c-msg'), out=root.querySelector('#c-out');
+      if(missing){msg.style.display='block';out.style.display='none';return;}
+      msg.style.display='none';
+      var list=root.querySelector('#c-list'), lw=root.querySelector('#c-listwrap'), clean=root.querySelector('#c-clean');
+      root.querySelector('#c-count').textContent=items.length+' to work through';
+      list.innerHTML='';
+      if(items.length){lw.style.display='block';clean.style.display='none';items.forEach(function(t){var li=document.createElement('li');li.textContent=t;list.appendChild(li);});}
+      else{lw.style.display='none';clean.style.display='block';}
+      root.querySelector('#c-status').textContent = items.length>=3 ? 'Several points need attention' : (items.length>=1 ? 'A few points to work through' : 'A straightforward case');
+      out.style.display='block';
+    });
+  })();
+  </script>
+</div>
+<div class="gcpa-cta" style="background:linear-gradient(135deg,#0f2a4a 0%,#1c4a78 100%) !important;">
+<h4>Know every fee before you file</h4>
+<p>Incorporation from $35 including HST plus government fees, with a free CPA consultation and a quote that shows each government fee separately. Please book a free consultation.</p>
+<div class="gcpa-trust"><span>1300+ 5-star Google reviews</span><span>Xero Partner Award Winner 2026</span><span>30-Day Money-Back Guarantee</span><span>60-Day Fee Matching</span></div>
+<div class="gcpa-btnrow"><a class="solid" href="https://gondaliyacpa.ca/consultation/">Book Free Consultation</a><a href="https://opencorporationfor35.ca/address-service-100/">Address Service</a><a href="https://opencorporationfor35.ca/contact-us/">Contact Us</a></div>
+</div>
+<h3 class="gcpa-closing" id="toc-closing">What to Send Us</h3>
+<p>Send us whether you want federal or Ontario incorporation, a numbered or named company, the provinces where you will operate, and any changes you expect in the first year. That is enough for us to give you a quote with each government fee on its own line. Please start on our <a href="https://opencorporationfor35.ca/incorporation-form/">incorporation form</a> or see every fee on our <a href="https://opencorporationfor35.ca/pricing/">pricing page</a>.</p>
+<div class="gcpa-author">
+<div class="ava" style="background:linear-gradient(135deg,#0f2a4a,#0c8f8f) !important;color:#ffffff !important;">SG</div>
+<div class="info">
+<h5>Sharad Gondaliya, CPA (Canada &amp; USA) — Founder &amp; Managing Director, Gondaliya CPA Professional Corporation</h5>
+<div class="role">Reviewed and fact-checked by Sharad Gondaliya, CPA (Canada &amp; USA)</div>
+<p style="font-size:14.5px;color:#15355c !important;font-weight:700;margin:0 0 8px;">Open Corporation for $35 is a department of Gondaliya CPA.</p>
+<p>We incorporate and support companies in all 13 provinces and territories, handling CRA registrations, corporate tax filing, bookkeeping, GST/HST, payroll and audit support. Verify our firm on the <a href="https://www.cpaontario.ca/protecting-the-public/directories/firm/gondaliya-5sqvmj">CPA Ontario public firm directory</a>, firm registration 61330051.</p>
+<p style="font-size:13.5px;color:#15355c !important;font-weight:700;margin-top:10px;">CPA Ontario | CPA USA (Washington &amp; Montana) | Xero Partner Award Winner 2026 | 1300+ 5-star Google reviews</p>
+</div>
+</div>
+<p style="font-size:13px;color:#5a6b7b;border-top:1px solid #e3e9f0;padding-top:16px;margin-top:8px;"><strong>Published:</strong> November 9, 2026 &nbsp;·&nbsp; <strong>Last updated:</strong> November 9, 2026</p>
+<p style="font-size:13px;color:#5a6b7b;"><strong>Editorial policy:</strong> Our content is prepared by our team and reviewed by Sharad Gondaliya, CPA, and we update it as federal and provincial registry fees change.</p>
+<p style="font-size:13px;color:#5a6b7b;"><strong>Disclaimer:</strong> This article is educational information only and is not tax, legal, or financial advice. Gondaliya CPA Professional Corporation is a firm of Chartered Professional Accountants, not a law firm. Please consult a CPA before acting, and confirm fees with the registry on your filing date.</p>
+<p style="font-size:14.5px;color:#15355c;font-weight:700;border-top:2px solid #e3e9f0;padding-top:16px;margin-top:20px;">Open Corporation for $35 is a department of Gondaliya CPA.</p>
+<p style="font-size:13px;color:#5a6b7b;">Operated by WealthBamboo Inc. Parent firm Gondaliya CPA Professional Corporation, CPA Ontario firm registration 61330051. Xero Partner Award Winner 2026. 1300+ five-star Google reviews. 30-day money-back guarantee and 60-day fee-matching policy. Phone 647-212-9559, email info@gondaliyacpa.ca, open 9:00 AM to 8:30 PM Monday to Sunday. Payment by Interac e-Transfer to info@gondaliyacpa.ca only, security question "Not Applicable" as auto-deposit is enabled. Card is also accepted.</p>
+</div>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@graph": [{"@type": "BlogPosting", "@id": "https://opencorporationfor35.ca/incorporation-fees-2026/#article", "headline": "Incorporation Fee Changes in 2026", "description": "Incorporation fees in Canada for 2026: $200 federal online, $300 Ontario, annual return, amendment and NUANS costs, and which filings are free.", "datePublished": "2026-11-09", "dateModified": "2026-11-09", "author": {"@type": "Person", "name": "Sharad Gondaliya, CPA"}, "publisher": {"@type": "Organization", "name": "Open Corporation for $35", "description": "Open Corporation for $35 is a department of Gondaliya CPA.", "parentOrganization": {"@type": "AccountingService", "name": "Gondaliya CPA Professional Corporation", "identifier": "CPA Ontario Firm Registration 61330051"}}, "mainEntityOfPage": "https://opencorporationfor35.ca/incorporation-fees-2026/"}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is the Articles of Incorporation fee for mail filing in Ontario?", "acceptedAnswer": {"@type": "Answer", "text": "Ontario accepts mailed Articles of Incorporation only in limited cases, so please confirm the fee with the registry. Online filing costs $300."}}, {"@type": "Question", "name": "Is there an Annual Return Fee for federal corporations?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Federal annual returns cost $12 online and $40 by mail with Corporations Canada."}}, {"@type": "Question", "name": "What is the Articles of Amendment fee in Ontario?", "acceptedAnswer": {"@type": "Answer", "text": "The Articles of Amendment filing fee in Ontario is $150 online."}}, {"@type": "Question", "name": "How much does an amendment cost federally?", "acceptedAnswer": {"@type": "Answer", "text": "Federal articles of amendment cost $200 online; director and address changes are free."}}, {"@type": "Question", "name": "What are Extra-Provincial Registration fees in British Columbia?", "acceptedAnswer": {"@type": "Answer", "text": "Extra-provincial registration fees in BC can be around $300 or more, depending on the registry requirements."}}, {"@type": "Question", "name": "What are Certified Copy fees in Ontario and federally?", "acceptedAnswer": {"@type": "Answer", "text": "Certified copies cost about $15 per document in Ontario and approximately $40 per document federally."}}, {"@type": "Question", "name": "Is there a Business Name Registration fee in Ontario?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, registering a business name in Ontario costs around $60 to $80 depending on service method."}}, {"@type": "Question", "name": "Does Ontario charge for Business Name Renewal?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, renewing a business name registration in Ontario costs $60 every five years."}}, {"@type": "Question", "name": "Is there a fee for CRA Business Number registration?", "acceptedAnswer": {"@type": "Answer", "text": "No, the CRA issues business numbers free of charge once your incorporation is complete."}}, {"@type": "Question", "name": "What is Open Corporation’s service fee?", "acceptedAnswer": {"@type": "Answer", "text": "Open Corporation charges a flat fee of $35 for incorporation support services excluding government fees."}}, {"@type": "Question", "name": "Do NUANS Name Search fees vary by provider?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, NUANS report prices range between CAD $13 and $75 plus taxes based on the provider chosen."}}, {"@type": "Question", "name": "What is the Extra-provincial Licence fee in Ontario?", "acceptedAnswer": {"@type": "Answer", "text": "Ontario’s extra-provincial licence fee is about $300 for companies registered outside Ontario but doing business inside."}}, {"@type": "Question", "name": "How much is the Annual Report Fee in British Columbia?", "acceptedAnswer": {"@type": "Answer", "text": "BC charges an annual report filing fee of roughly $30 per year."}}, {"@type": "Question", "name": "Does Alberta have an Annual Return Fee?", "acceptedAnswer": {"@type": "Answer", "text": "Alberta charges a fee for each annual return, filed through a registry agent."}}, {"@type": "Question", "name": "What is the federal Amalgamation fee?", "acceptedAnswer": {"@type": "Answer", "text": "Federal amalgamation filings cost about $200 to process under Corporations Canada rules."}}, {"@type": "Question", "name": "How much does Revival cost in Ontario and federally?", "acceptedAnswer": {"@type": "Answer", "text": "Revival fees are around $250 online in Ontario and about $200 plus service fees federally."}}, {"@type": "Question", "name": "What is the Director Change fee in Ontario and federally?", "acceptedAnswer": {"@type": "Answer", "text": "Neither Ontario nor Corporations Canada charges a fee to report a director change."}}, {"@type": "Question", "name": "Are there Registered Office Change fees in Ontario?", "acceptedAnswer": {"@type": "Answer", "text": "Changing the registered office address costs nothing in Ontario or federally when you report it with a notice of change."}}, {"@type": "Question", "name": "How much does Share Structure Change cost in Ontario and federally?", "acceptedAnswer": {"@type": "Answer", "text": "Share structure amendments cost roughly $150 online in Ontario and about $200 with Corporations Canada."}}]}]}
+</script>
