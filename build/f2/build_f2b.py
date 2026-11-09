@@ -398,7 +398,10 @@ TOOLS2 = [
     'Canada Revenue Agency assesses them in the order they fell due. The '
     + a(T + 'multi-year-signing-requirement-checker/',
         'multi-year signing requirement checker')
-    + ' counts the signatures and confirmations that produces.</p>\n'
+    + ' counts the signatures and confirmations that produces, and the '
+    + a(T + 'outstanding-returns-count-checker/',
+        'outstanding returns count checker')
+    + ' works out how many years there are from the last one filed.</p>\n'
     '<div class="ei-danger"><p>A true nil return carries no percentage '
     'late-filing penalty, because that penalty is a percentage of tax owing and '
     'the corporation owes $0.00. The unfiled year still stays open forever, '
@@ -694,7 +697,13 @@ TOOLS2 = [
     '<p>A dormant corporation files a T2 within six months of each fiscal '
     'year-end, every year, until it is formally dissolved. There is no dormancy '
     'form, no status to elect and no threshold below which the obligation '
-    'stops.</p>'),
+    'stops.</p>\n'
+    '<p>Nor does what the corporation still owns end the dormancy. A bank '
+    'account, an asset and a live registration are things it has rather than '
+    'things it did, which is the distinction the '
+    + a(T + 'carrying-on-business-in-canada-checker/',
+        'carrying on business in Canada checker')
+    + ' puts a question to.</p>'),
   ],
   faq=[
    ('Does Bank Interest Make a Year Not Nil?',

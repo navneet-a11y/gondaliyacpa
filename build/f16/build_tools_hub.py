@@ -53,6 +53,14 @@ are the same subject as the four cards already under "Annual Returns and
 the Registry" -- which is where the four host pages batch 12 links from sit
 -- so they join that group rather than opening a twelfth. The provincial
 group stays separate: it is about CO-17 and AT1, which are tax returns.
+NOVEMBER 9, 2026: NINETY-FIVE TO ONE HUNDRED
+
+Batch 14 added five tools. Four join existing groups by subject: the carrying
+on business checker goes with the nil question, the outstanding returns count
+with unfiled years, and Schedule 11 with the schedules. The two non-resident
+tools -- permanent establishment and non-resident corporation filing -- join
+"Provincial, Non-Resident and Director Exposure", which is the group that
+already holds the non-resident penalty calculator.
 """
 import io, json, os
 
@@ -60,7 +68,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 SITE = 'https://corpnilfilingfor300.ca'
 HUB = SITE + '/tools/'
 FORM = SITE + '/form/'
-TODAY, ISO = 'November 5, 2026', '2026-11-05'
+TODAY, ISO = 'November 9, 2026', '2026-11-09'
 PRICE = '$300.00 plus HST per tax year'
 TITLE = 'Nil T2 Filing Tools and Calculators'
 PAGE_TITLE = 'Nil T2 Filing Tools and Calculators for Canadian Corporations'
@@ -182,6 +190,10 @@ GROUPS = [
    'Restarting a Dormant Corporation Checker',
    'Trading again does not change the quiet years behind it. Which of them '
    'are still nil returns, and which one is not.'),
+  ('carrying-on-business-in-canada-checker',
+   'Carrying On Business in Canada Checker',
+   'Holding a bank account, owning assets and staying registered are not '
+   'carrying on business, and every one of those years is nil.'),
  ]),
 
  ('The Return Itself: Schedules and GIFI', [
@@ -258,6 +270,10 @@ GROUPS = [
    'Schedule 88 Internet Activities Checker',
    'Income earned from a web page is what it reports. A parked domain that '
    'earns nothing sits outside it.'),
+  ('schedule-11-shareholder-transactions-checker',
+   'Schedule 11 Shareholder Transactions Checker',
+   'Transactions with shareholders, officers and employees are what it '
+   'reports. A balance that did not move in the year is not one.'),
  ]),
 
  ('Shareholders and Share Capital', [
@@ -311,6 +327,9 @@ GROUPS = [
    'Multiple Corporation Filing Cost Calculator',
    'Several quiet corporations, each with its own years. The returns owed and '
    'the total before tax.'),
+  ('outstanding-returns-count-checker', 'Outstanding Returns Count Checker',
+   'One T2 falls due for each tax year. Enter the year-end of the last one '
+   'filed to count how many have passed their filing date since.'),
  ]),
 
  ('CRA Accounts, Payroll and GST/HST', [
@@ -415,6 +434,13 @@ GROUPS = [
    'Director Liability Exposure Checker',
    'Which amounts can be assessed against a director personally, and which '
    'cannot reach past the corporation.'),
+  ('permanent-establishment-checker', 'Permanent Establishment Checker',
+   'Which province a corporation has a permanent establishment in decides '
+   'where its return is allocated, and a quiet year still has one.'),
+  ('non-resident-corporation-filing-checker',
+   'Non-Resident Corporation Filing Checker',
+   'A corporation incorporated in Canada files a T2 whoever owns it. '
+   'Non-resident ownership changes what a late return costs.'),
  ]),
  ('Signing, Transmission and What the Fee Covers', [
   ('t183corp-retention-expiry-calculator', 'T183CORP Retention Calculator',

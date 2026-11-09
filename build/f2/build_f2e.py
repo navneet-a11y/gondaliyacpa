@@ -1373,7 +1373,11 @@ TOOLS5 += [
     '<p>The '
     + a(T + 'non-resident-t2-penalty-calculator/',
         'non-resident T2 penalty calculator')
-    + ' works that figure out from the dates.</p>'),
+    + ' works that figure out from the dates, and the '
+    + a(T + 'non-resident-corporation-filing-checker/',
+        'non-resident corporation filing checker')
+    + ' sets out why ownership changes what a late return costs without '
+    'changing whether one is owed.</p>'),
    ('side', 'A Nil Year and a Year With Tax Owing, Side by Side',
     '<p>The difference is not in the form, the deadline or the fee. It is in '
     'whether there is a figure for a percentage to apply to.</p>\n'

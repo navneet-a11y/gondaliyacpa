@@ -1063,7 +1063,12 @@ TOOLS8 += [
     + PRICE + ', with the GIFI schedules on it.</p>\n'
     '<p>The thing to separate is the balance from the movement. A balance is '
     'reported. Money moving in a year is activity, and activity is where the '
-    'question of whether the year is nil starts to need a real answer.</p>'),
+    'question of whether the year is nil starts to need a real answer.</p>\n'
+    '<p>Movement has its own schedule, and the '
+    + a(T + 'schedule-11-shareholder-transactions-checker/',
+        'Schedule 11 shareholder transactions checker')
+    + ' is where that question goes: a balance that did not move in the year '
+    'is not a transaction.</p>'),
    ('what-this-does-not-answer', 'What This Page Deliberately Does Not Say',
     '<p>It answers a reporting question: whether the schedules go on the '
     'return. It says nothing about how a shareholder loan is taxed, what '

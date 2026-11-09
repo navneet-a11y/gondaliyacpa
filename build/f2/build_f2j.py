@@ -528,7 +528,13 @@ T73 = dict(
    'first, because a T2 carries figures forward from the year before it. The '
    + a(T + 'catch-up-filing-schedule-generator/',
        'catch-up filing schedule generator')
-   + ' lays them out in order.</p>'),
+   + ' lays them out in order.</p>\n'
+   '<p>Holding a name, a structure or an asset is not carrying on business, '
+   'which is the point the '
+   + a(T + 'carrying-on-business-in-canada-checker/',
+       'carrying on business in Canada checker')
+   + ' settles: every one of those years is nil, and every one is still '
+   'filed.</p>'),
  ],
  faq=[
   ('Does a corporation that never traded have to file?',

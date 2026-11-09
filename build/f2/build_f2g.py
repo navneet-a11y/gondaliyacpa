@@ -1183,7 +1183,12 @@ TOOLS7 += [
     '<p>Being nil does not make it optional. It is a separate return, filed '
     'separately, on its own deadline, and the obligation follows from the '
     'permanent establishment rather than from there being anything to '
-    'report.</p>'),
+    'report.</p>\n'
+    '<p>Which province a corporation has a permanent establishment in is a '
+    'question in its own right, and the '
+    + a(T + 'permanent-establishment-checker/',
+        'permanent establishment checker')
+    + ' works through what makes one.</p>'),
    ('not-covered', 'What the Fee Covers, Said Plainly',
     '<p>The fee of ' + PRICE + ' covers one nil federal T2 return for one '
     'corporation for one tax year. CO-17 is not covered by it, and neither '

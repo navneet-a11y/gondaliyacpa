@@ -8549,3 +8549,99 @@ thinness is in the source material, not the template.
 - `/compare/voluntary-disclosure-vs-plain-late-filing/`, still on his ruling.
 
 Still not verified in a browser: the proxy refuses corpnilfilingfor300.ca.
+
+## 2026-11-09 -- Family 2 batch 14: tools 96 to 100, and Family 2 reaches one hundred
+
+Five tools published as IDs 1975, 1980, 1985, 1990 and 1995, taking Family 2
+from ninety-five to one hundred. All five are Appendix A URLs.
+
+| Slug | What it answers | Bytes |
+|---|---|---|
+| `permanent-establishment-checker` | What makes a permanent establishment, and which province a return is allocated to | 29,697 |
+| `carrying-on-business-in-canada-checker` | Holding a bank account, owning assets and staying registered are not carrying on business | 29,511 |
+| `non-resident-corporation-filing-checker` | A corporation incorporated in Canada files a T2 whoever owns it; ownership changes what a late return costs | 29,193 |
+| `outstanding-returns-count-checker` | How many T2 years have passed their filing date since the last return filed | 28,581 |
+| `schedule-11-shareholder-transactions-checker` | Transactions with shareholders, officers and employees; a balance that did not move is not one | 29,643 |
+
+Every page landed on its built byte count exactly, checked against the file
+on each publish.
+
+### Schedule 11 admitted where Schedule 1 was refused
+
+Batch 13 dropped Schedule 1 because the nil-return schedules guide gives a
+closed list that excludes it, and claiming it would have put a tool page
+against a live guide. Schedule 11 is the opposite case. For a nil year the
+honest answer on it is that nothing moved, and that agrees with the guide's
+closed list rather than contradicting it. The page says so and says why: a
+transaction is movement, a balance is not, and a balance belongs on the GIFI
+schedules, which the same five-trigger rule already governs.
+
+### Two defects caught before publishing
+
+1. **A doubled prelude.** Prefixing the tool 96 module with `_NP +` broke the
+   `startswith(PRELUDE)` test, so PRELUDE was prepended on top of a module
+   that already carried it -- 632 wasted bytes and every shared function
+   declared twice. The builder now asserts that no `var` name is declared
+   more than once in a module, which is the symptom that doubling produces.
+2. **One byte over on tool 97.** An extra blank line before the module put
+   the page at 29,512 against a built 29,511. Corrected on the live post, and
+   the rule is now explicit: exactly one blank line between the shared JS
+   base and the module.
+
+### A wrong post ID, harmless
+
+An inbound edit was aimed at 1100, the schedules guide, instead of 953, the
+annual-returns guide. `replacements_count: 0` came back, so nothing was
+changed on either. The lesson is that the count is the check, not the call
+succeeding.
+
+### `build_f2i.py` widened like its four siblings
+
+`build_f2i.py` asserted body links against `ORDER9`, a point-in-time list
+that stops at batch 9, so the Schedule 11 link into its due-to versus
+due-from page failed the build. `build_f2f`, `build_f2g`, `build_f2h` and
+`build_f2j` had already been widened to read the live slugs from
+`f16/tools-hub-children.json`; `build_f2i` now does the same, under
+`_LINKABLE_I`. The sibling assert stays on `ORDER9`, because a Read Next list
+is the batch's own and a forward link there would be a different decision.
+
+### Inbound wiring, contextual rather than Read Next
+
+Section 6(g) sets the inbound minimum at three. Each new tool now has three
+or more, and the links are in-body sentences on eight existing pages rather
+than extra Read Next items: a contextual link carries more than a list entry,
+and the hosts each had a sentence the new tool actually belongs to.
+
+| New tool | Inbound (excluding the hub) |
+|---|---|
+| `permanent-establishment-checker` | provincial return requirement, non-resident T2 penalty, plus both batch siblings |
+| `carrying-on-business-in-canada-checker` | dormant corporation test, never traded corporation, plus both batch siblings |
+| `non-resident-corporation-filing-checker` | non-resident T2 penalty, nil return late penalty |
+| `outstanding-returns-count-checker` | unfiled years checker, unfiled years cost calculator |
+| `schedule-11-shareholder-transactions-checker` | shareholder loan balance, due to versus due from shareholder |
+
+Every host edit was made in its build script first, rebuilt, diffed, and only
+then applied live, with the live byte count checked before and after. All
+eight matched on both numbers.
+
+### The hub
+
+`/tools/` (page 1187) went from 95 cards to 100, 33,806 bytes to 35,299,
+matching the built file. Four of the five join existing groups by subject;
+the two non-resident tools join "Provincial, Non-Resident and Director
+Exposure", which already held the non-resident penalty calculator. The count
+line is still the `[cnf_child_count]` shortcode, never a typed number.
+
+### Open
+
+- Family 2 stands at **100 live**, against Appendix A's 150. The ruling on the
+  35 off-plan slugs already live -- rename and redirect, or treat them as
+  extra and land at about 185 -- is still Navneet's, and nothing after this
+  batch should be built until it is made.
+- The blog is the binding problem: **4 of section 7.8's 40 titles are live**,
+  against a target of 60 posts by November 20.
+- Rule 217 review on the two brand pages; four brand pages remain; the VDP
+  comparison still on Sharad Gondaliya's ruling; `cnf_topic` empty for every
+  family.
+
+Still not verified in a browser: the proxy refuses corpnilfilingfor300.ca.

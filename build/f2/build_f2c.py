@@ -532,7 +532,12 @@ TOOLS3 = [
     'date six months after that year-end.</p>\n'
     '<p>They are filed oldest first, because each year&rsquo;s closing '
     'position carries into the next return. Filing out of order means going '
-    'back over earlier years.</p>'),
+    'back over earlier years.</p>\n'
+    '<p>Where only the last return filed is known rather than the first '
+    'year-end, the '
+    + a(T + 'outstanding-returns-count-checker/',
+        'outstanding returns count checker')
+    + ' counts forward from that one date instead.</p>'),
    ('why', 'Why an Open Year Matters When Nothing Was Owed',
     '<div class="ei-danger"><p>' + QUAL + '</p></div>\n'
     '<p>That is the whole reason to catch up a nil year: not a bill, but a '
@@ -585,7 +590,15 @@ TOOLS3 = [
     'grow after it.</p>\n'
     '<p>A corporation owned by residents of Canada filing a true nil return is '
     'in a different position, and the block below is the whole of it.</p>\n'
-    '<div class="ei-danger"><p>' + QUAL + '</p></div>'),
+    '<div class="ei-danger"><p>' + QUAL + '</p></div>\n'
+    '<p>Whether a return is owed at all is the prior question, and the '
+    + a(T + 'non-resident-corporation-filing-checker/',
+        'non-resident corporation filing checker')
+    + ' answers it: a corporation incorporated in Canada files a T2 whoever '
+    'owns it. Where a corporation incorporated elsewhere is concerned, the '
+    + a(T + 'permanent-establishment-checker/',
+        'permanent establishment checker')
+    + ' is the one to start with.</p>'),
    ('duedate', 'Working Out the Due Date First',
     '<p>The figure depends entirely on the due date, which is six months after '
     'the fiscal year-end, shifted to the next business day where it lands on a '

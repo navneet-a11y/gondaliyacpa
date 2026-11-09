@@ -953,7 +953,12 @@ T67 = dict(
    + ' answers whether a balance exists at all, and the '
    + a(T + 'nil-gifi-balance-sheet-checker/',
        'nil GIFI balance sheet checker')
-   + ' runs the whole set of five.</p>'),
+   + ' runs the whole set of five.</p>\n'
+   '<p>A balance is not a transaction, and the '
+   + a(T + 'schedule-11-shareholder-transactions-checker/',
+       'Schedule 11 shareholder transactions checker')
+   + ' takes the other question: whether anything moved between the '
+   'corporation and its shareholder during the year.</p>'),
   ('netting', 'Two Balances Are Not One Balance',
    '<p>An amount due to a shareholder and an amount due from the same person '
    'are two balances. They are reported as two, not netted into whichever is '
@@ -1573,6 +1578,17 @@ GUIDES9 = {
 }
 
 _ORDER = set(ORDER9)
+
+# Same widening as build_f2f, build_f2g, build_f2h and build_f2j: a tool
+# published after this batch is a real body-link target, and batch 14 wired
+# the Schedule 11 checker into this batch's due-to versus due-from page.
+# The sibling assert below stays on _ORDER, because a Read Next list is the
+# batch's own, and only the body assert is widened.
+_TOOLS_LIVE_I = set(json.load(io.open(
+    os.path.join(HERE, '..', 'f16', 'tools-hub-children.json'),
+    encoding='utf-8'))['slugs'])
+_LINKABLE_I = _ORDER | _TOOLS_LIVE_I
+
 for t in TOOLS9:
     for s in SIBLINGS9[t['slug']]:
         assert s in _ORDER, '%s lists a sibling that does not exist: %s' % (
@@ -1592,7 +1608,7 @@ for t in TOOLS9:
     _all = (' '.join(b for _, _, b in t['sections']) + t['form']
             + ' '.join(q + aa for q, aa in t['faq']) + t['js'])
     for s in set(_re.findall(r'/tools/([a-z0-9-]+)/', _all)):
-        assert s in _ORDER, (
+        assert s in _LINKABLE_I, (
             '%s: links to /tools/%s/, which does not exist'
             % (t['slug'], s))
     for g in set(_re.findall(r'/guides/([a-z0-9-]+)/', _all)):
