@@ -8780,3 +8780,68 @@ comparison page's breadcrumb and cost-page link.
 - The third-column sign-off on the three-way page is still outstanding.
 
 Still not verified in a browser: the proxy refuses corpnilfilingfor300.ca.
+
+## 2026-11-09 (later still) -- Indexing all 20 comparison pages, and why /pricing/ was left alone
+
+All 20 Family 7 pages are confirmed published (`nil_comparison` reports 20).
+The cost page (ID 794) now indexes **every one of them**, not just the six
+brand pages added earlier today: a new "What a Nil T2 Is Compared With"
+section lists the 14 concept comparisons, above the existing "How the
+Published Price Compares" section with the 6 brand ones. 8,925 to 12,049
+bytes live, against 12,050 in the file.
+
+The cost page is the right home for that index. Line 1529 names
+`/pricing/nil-t2-filing-cost/` as Family 7's own inbound target, so this is
+the page the plan already points the family at.
+
+### The one-byte offset on the cost page, recorded
+
+`build/f8/nil-t2-filing-cost.html` is the source for this page and there is
+no Python builder for it, only `build_single_cost.py`, which builds the
+Elementor template rather than the content. The live post is consistently
+**one byte shorter than the file** -- a trailing newline that predates today
+-- so the check on each edit is that the delta matches, not the absolute
+number. It did on both edits: +1,105 and +2,019 on each side.
+
+### /pricing/ (page 323) was deliberately not edited
+
+It is built entirely in Elementor. Its content lives in `_elementor_data`,
+and `post_content` holds only a flattened fallback copy that does not render,
+so a link spliced into `post_content` would appear nowhere.
+
+A safe splice was prepared and dry-run: append the block to the existing HTML
+widget's `html` string (widget 335b7c94), which cannot malform the element
+tree because it adds no elements and no IDs. The block is committed at
+`docs/snippets/pricing-hub-comparisons-widget.html`, 3,919 bytes, 21 links,
+styled with the page's own values (#314D8A, Poppins 30px centred for the H2)
+and scoped under `.cnf-cmp`. It is written with single-quoted HTML attributes
+and no newlines, so it needs no JSON escaping to go into `_elementor_data`.
+
+**It was not applied.** The dry run reported the anchor in **two**
+`wp_postmeta` cells (meta_id 3122 and 3217), not one. The second is probably
+a revision of 323, but it was not identified, and a database-wide write
+whose second target is unknown is not something to fire at the site's pricing
+pillar. There is also no way to see the result: the proxy refuses the domain.
+
+So this is Navneet's to paste, in the Elementor editor, where it can be seen:
+an HTML widget below the "What the fee covers" accordion. Thirty seconds with
+visual feedback beats a blind write.
+
+### A stale fallback copy found on page 323, worth fixing
+
+While reading it: `post_content` on page 323 says the overflow is "$350.00
+**including** HST per tax year". The rendered Elementor content says "plus
+HST", which is the standing correction and what hard rule 9 requires. The
+`post_content` copy is a pre-correction fallback that Elementor has not
+refreshed. It does not render, but it is in the database and could surface in
+a feed, a search excerpt or an export. Fixing it means re-saving the page in
+Elementor, which rewrites the fallback. Flagged rather than patched, because
+patching `post_content` alone would leave the two copies disagreeing again at
+the next Elementor save.
+
+### Inbound, after this pass
+
+Every brand page has three inbound links; the 14 concept pages each gain the
+cost page on top of whatever they already had. The three hosts are the cost
+page, `/compare/diy-vs-cpa-nil-t2/` and
+`/tools/what-the-nil-t2-fee-covers-checker/`.
