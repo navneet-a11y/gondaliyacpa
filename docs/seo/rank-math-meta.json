@@ -1850,5 +1850,70 @@
     "title": "What a New Newfoundland and Labrador Corporation Files"
    }
   ]
+ },
+ "nil_calculator_batch_oct27": {
+  "note": "The October 27 batch, IDs 1285 to 1303. These were live but absent from this file until 2026-11-11, which is why it read 90 against 100 live calculators. Recovered from the pages own rank_math meta.",
+  "items": [
+   {
+    "desc": "List every tax year since incorporation, each T2 filing date and which returns are overdue. A nil T2 is $300.00 plus HST per tax year.",
+    "id": 1285,
+    "kw": "tax years since incorporation calculator",
+    "title": "Tax Years Since Incorporation Calculator | Nil T2"
+   },
+   {
+    "desc": "See how many calendar days and business days a T2 is overdue, counted on the same holiday calendar as the deadline itself.",
+    "id": 1287,
+    "kw": "days overdue calculator",
+    "title": "Days Overdue Calculator for a Late T2 Return"
+   },
+   {
+    "desc": "Enter any past fiscal year-end to see which T2 filing date comes next, how far away it is, and whether the return can be transmitted already.",
+    "id": 1289,
+    "kw": "next t2 due date checker",
+    "title": "Next T2 Due Date Checker | Which Date Comes Next"
+   },
+   {
+    "desc": "Dissolution ends the tax year on its own date. Enter the last year-end and the dissolution date for the final T2 period and when it is due.",
+    "id": 1291,
+    "kw": "final t2 return due date calculator",
+    "title": "Final T2 Return Due Date Calculator | Dissolution"
+   },
+   {
+    "desc": "A predecessor tax year ends the day before the amalgamation. Get the final return period, its due date and the new first-year window.",
+    "id": 1293,
+    "kw": "amalgamation t2 due date calculator",
+    "title": "Amalgamation T2 Due Date Calculator | Final Returns"
+   },
+   {
+    "desc": "A short tax year still gets six months from its year-end. Enter the first and last day for the period length and the filing date.",
+    "id": 1295,
+    "kw": "short tax year deadline calculator",
+    "title": "Short Tax Year Deadline Calculator | Stub Period"
+   },
+   {
+    "desc": "What applies to a late nil T2: why the percentage has nothing to apply to, and what still follows from leaving the year unfiled.",
+    "id": 1297,
+    "kw": "nil return late penalty checker",
+    "title": "Nil Return Late Penalty Checker | Late Nil T2"
+   },
+   {
+    "desc": "Three questions on whether a clearance certificate belongs in your wind-down, what must be filed first, and why an unfiled year blocks it.",
+    "id": 1299,
+    "kw": "clearance certificate requirement checker",
+    "title": "Clearance Certificate Requirement Checker | T2"
+   },
+   {
+    "desc": "An open payroll account still needs nil remittances. What is owed, what the nil T2 fee does not cover, and how Form RC145 closes it.",
+    "id": 1301,
+    "kw": "payroll nil remittance checker",
+    "title": "Payroll Nil Remittance Checker | Open Account"
+   },
+   {
+    "desc": "Is the GST/HST account ready to close with Form RC145? What must be filed first, and why closing it does nothing about the T2.",
+    "id": 1303,
+    "kw": "gst hst account closure checker",
+    "title": "GST/HST Account Closure Checker | Form RC145"
+   }
+  ]
  }
 }
