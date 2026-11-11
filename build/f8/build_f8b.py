@@ -298,9 +298,8 @@ def not_included_page():
     b.append('<p>The final return itself is a nil T2 where the last year had '
              'no activity, and that one is in the fee. The rest of the '
              'wind-up is not. The '
-             '<a href="' + G + 'winding-up-an-inactive-corporation/">'
-             'winding up an inactive corporation guide</a> sets out the '
-             'sequence.</p>')
+             '<a href="' + G + 'final-t2-and-dissolution/">final T2 and '
+             'dissolution guide</a> sets out the sequence.</p>')
 
     b.append('<h2>The Whole List, and Why</h2>')
     b.append('<table class="cnf-tbl"><thead><tr>'

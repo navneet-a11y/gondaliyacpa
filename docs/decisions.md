@@ -9214,16 +9214,54 @@ caught them should be part of every batch from here:
 |---|---|---|
 | `/best/order-to-file-six-unfiled-t2-years/` | Family 6 is **0 of 38 live**. Nothing under `/best/` exists at all | `/answers/how-do-i-catch-up-on-years-of-unfiled-t2-returns/` |
 | `/answers/how-many-unfiled-t2-years-can-i-file-at-once/` | Appendix A's wording, not the slug that shipped | `/answers/how-many-years-of-unfiled-t2-returns-can-i-catch-up/` (2119) |
-| `/guides/final-t2-and-dissolution/` | Named in Appendix A and in 6(k), never built | `/guides/winding-up-an-inactive-corporation/` (1383) |
+| `/guides/final-t2-and-dissolution/` | ~~Never built~~ **WRONG, see the correction below** | ~~`/guides/winding-up-an-inactive-corporation/`~~ reverted to the original |
 
 Two of the three were written from Appendix A rather than from what is live.
 Appendix A is the plan's intent; it is not a list of URLs that resolve today.
 Any link taken from it needs checking against the site first.
 
-`/guides/final-t2-and-dissolution/` is worth noting separately: 6(k) names it
-as a canonical target in the cross-site collision table, so it is a guide the
-plan expects to exist and Family 9 has not built. That is a gap in Family 9,
-not in Family 8.
+### Correction, same day: the third link was never broken
+
+`/guides/final-t2-and-dissolution/` **is live, and has been since October 19.**
+It is ID 949. The entry above said it had never been built and replaced it with
+`/guides/winding-up-an-inactive-corporation/`. That was wrong on both counts,
+and the substitution has been reverted on page 2153 and in the builder.
+
+Two false claims were committed in the entry above and are withdrawn here:
+
+1. That the guide does not exist. It does.
+2. That 6(k) names it as a canonical target. **It does not.** 6(k)'s cross-site
+   collision table never mentions it. It is named in line 1147's family sample
+   list and in line 1199 of the internal linking table.
+
+Line 1199 is the one that matters, and it makes the page more important than
+the withdrawn claim did: it sets 66 inbound links on that guide, with "28
+final-return place URLs link up" to it, and makes it the pillar for the
+`final t2 before dissolution` term. Pointing a new page at the winding-up
+guide instead was a downgrade, not a repair.
+
+**How the error happened, because it is a repeatable one.** The check was a
+search of `nil_guide` for "dissolution". That returned `"total": 27` across two
+pages and only page 1 was read. The slug was on page 2. A search total was read
+as if it were the whole result set.
+
+The guide was also already recorded in this very file, at the Family 9 internal
+linking table above, as ID 949 with 66 inbound. The repo knew. The check did
+not consult it.
+
+Two rules follow, and the Family 8 builder now relies on both:
+
+- Verify a slug with an exact `slug` query, which returns 0 or 1 and cannot be
+  half-read. Never with a keyword search, and never from page 1 of a paginated
+  search.
+- A `total` higher than the number of items returned means the answer is
+  incomplete, not absent.
+
+The other two substitutions in that table were re-checked by exact slug query
+after this was found, and both stand: `nil_listicle` holds **0 items of any
+status**, so nothing under `/best/` exists; and
+`how-many-unfiled-t2-years-can-i-file-at-once` returns 0 for an exact slug
+query at any status.
 
 ### A second record found empty while publishing
 
@@ -9243,3 +9281,109 @@ per Family 8 page. The two new pages have 2 each (the hub and one another);
 the six from this morning have 1 each. The hub now links both new pages, and
 the 20 comparison pages that line 1201 requires to link up to `/pricing/`
 remain the obvious untapped source. None of the nine passes the gate yet.
+
+---
+
+## November 11, 2026 -- a guide page, an answer page and a best page: what the data supported
+
+Asked for one of each, with the condition "if you have data for them". The
+honest answer differed per family, and two of the three were not built.
+
+### Family 9, guides: nothing to build
+
+**30 of 30 live, and all seven slugs Appendix A names are among them**
+(867, 945, 947, 949, 951, 953, 955). The family is genuinely complete, not
+complete-by-substitution the way Family 5 was. No guide was built, because
+the next one would be the 31st against a planned 30 with no named gap to fill.
+
+### Family 5, answers: one real gap, built
+
+Family 5 reads 45 of 45, but it reached that number with 45 questions of its
+own and **not one of the three slugs Appendix A names is live.** Checked by
+exact slug query, not by search:
+
+| Appendix A slug | Verdict |
+|---|---|
+| `does-an-inactive-corporation-have-to-file-a-t2` | **Covered.** ID 928 asks the same question; ID 858 overlaps it. Building it would cannibalise 928, which 6(k)'s internal Family 4 rule and the cross-site rule both bar. Not built |
+| `how-many-unfiled-t2-years-can-i-file-at-once` | **Covered.** ID 2119 is the same question; ID 929 overlaps it. Not built |
+| `can-i-e-sign-a-t183corp` | **Not covered by anything.** Built |
+
+The third is a genuine hole. Nothing in the 45 asks about signing, e-signing
+or Form T183CORP, in a family that reads complete, while a pillar guide on
+exactly that subject (955) sits with no answer page feeding it.
+
+`/answers/can-i-e-sign-a-t183corp/` is ID **2159**, 9,413 bytes, byte-identical
+to the built file. Family 5 now reads **46 against a planned 45**. The
+over-count is deliberate and is logged rather than resolved: dropping one of
+the live 45 to make room is Sharad Gondaliya's call, not this session's.
+
+**The facts were checked against the Canada Revenue Agency, not written from
+memory**, because the entire page is an assertion about what the Agency
+accepts. The acceptance dates to June 22, 2023; the form is kept rather than
+filed; a signing officer signs it; it is kept at least six years, with the
+certificate of completion where the signature is electronic.
+
+The point that earned the page its place: **the acceptance is an
+administrative measure, not enacted law.** The 2021 budget measure was never
+passed, so the Agency extended its administrative position and is still
+pursuing a permanent one. A reader deciding whether to sign electronically
+should know the position is settled for filing today and is not entrenched.
+
+One gate detail worth recording: the Family 5 gate bans the bare word
+"authorized" with no carve-out, unlike `build_f8_cost.py`, which exempts
+"authorized signing officer". So this page says "a signing officer of the
+corporation" throughout. That is also the Agency's own phrasing, so no
+accuracy was traded for the gate.
+
+Measured against all 45 live siblings: **worst pair 0.20.** Inbound was 0 on
+publication and is now 3, from 1234, 930 and 2079, which is the Family 5
+minimum. All three host pages were at 14 outbound against a cap of 15, so each
+had exactly one slot and now sits at the cap. There is no room for a fourth
+inbound link from any of them.
+
+### Family 6, best and route listicles: blocked on data, not built
+
+**0 of 38 live. `nil_listicle` holds no items of any status.** The family has
+never been started, and it stays unstarted, because its own gate cannot be met
+with what is on hand.
+
+Line 1214: *"No listicle publishes without published prices and published
+features for every entry and no negative claim."* Line 1215 puts a Rule 217
+review with Sharad Gondaliya on every one.
+
+The published prices exist. All six are held from the Family 7 brand pages,
+all recorded September 20, 2026: BluePeak $100.00, TurboTax $175.00, TaxDeep
+$200.00, H&R Block $449.00, and tiered figures for CloudTax and T2inc.
+
+**The published features do not.** The brand pages state repeatedly and
+deliberately that the published price "does not state what it includes", and
+that where a record is silent that means silent, not no. That wording was
+chosen to keep those pages clear of Rule 217. A listicle needs a published
+feature column for every entry, and the record is silent for most of them.
+
+So the gate fails on the feature column before the Rule 217 review is even
+reached -- and that review is itself still outstanding on all six brand pages
+from the earlier entry. Two blockers, either one sufficient.
+
+Inventing a feature column would be precisely the unsubstantiated advertising
+Rule 217 bars, on the family where the plan names that rule twice.
+
+**What would unblock it:** a screenshot-dated capture of what each provider
+publishes about inclusions, which line 1214 assigns to Navneet monthly, plus
+the Rule 217 review. With those, the six brand pages already supply the price
+half.
+
+### The hard rule 4 question this surfaced, for Sharad Gondaliya
+
+Hard rule 4 says never claim **best**. Family 6 is 38 URLs under `/best/`, and
+line 1167 gives one of them the title "Best Ways to Catch Up Unfiled Corporate
+Tax Returns".
+
+The earlier entry of this file already resolved the narrower case: what Rule
+217 bars is an unsubstantiated claim, and the word itself is not banned. That
+reasoning covers "affordable" attached to a published price. It does not
+obviously cover a `/best/` URL and an H1 beginning "Best", which is a
+superlative attached to a ranking.
+
+This needs a ruling before any of the 38 is built, and it is a larger decision
+than the feature-column gap: it governs a whole family and its URL pattern.

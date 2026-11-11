@@ -1722,5 +1722,15 @@
    }
   ],
   "rest_base": "pages"
+ },
+ "nil_question_appendix_a_gap": {
+  "items": [
+   {
+    "desc": "The CRA accepts an electronic signature on Form T183CORP, and has since June 22, 2023. A signing officer signs it; the form is kept, not filed.",
+    "id": 2159,
+    "kw": "can i e-sign a t183corp",
+    "title": "Can I E-Sign a T183CORP? What the CRA Accepts"
+   }
+  ]
  }
 }
