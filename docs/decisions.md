@@ -9663,3 +9663,121 @@ for the batch, which is why Families 5, 7 and 8 came out clean. The two
 failures are both in Family 2 "Read Next" lists, which are hand-written per
 page rather than generated from the live slug list, and that is the one place
 in the pipeline with no check behind it.
+
+---
+
+## November 11, 2026 -- Family 10 started, after a year series measured at 0.99 and was deleted
+
+### The link work, completed with a guard
+
+The two broken links found earlier were fixed in place. What was still open
+was the reason they existed: the batch builders assert body links against the
+live slug list, but Family 2 "Read Next" lists are hand-written per page and
+had nothing checking them.
+
+Two things now close that:
+
+- `docs/seo/live-slugs.json`, the live slug list pulled with `_fields=slug`.
+- `build/check_links.py`, which extracts every internal href from
+  `build/**/*.html` and fails with exit status 1 on any that does not resolve.
+
+It reports **283 targets across 9 groups, all resolving.** Run it before any
+publish batch. Its own failure mode is written into the file: the manifest is
+a snapshot, and a stale one reports live pages as broken, so it is
+regenerated after every batch.
+
+### The year series: built, measured, deleted
+
+Family 10 was 0 of 25. The first attempt was the hub plus nine
+`/start/first-t2-after-incorporating-in-<year>/` pages for 2018 to 2026, on
+the theory that the year changes the answer.
+
+**Worst pair 0.99. Fifteen of 45 pairs at or above 0.90. Six pages came out
+at identical byte counts.** Worse than the four Atlantic cost pages at 0.94
+to 0.96 that this file already holds up as the example not to repeat.
+
+The differentiation was cosmetic: the same prose with a digit substituted.
+For a nil return the incorporation year does not change the answer, because a
+dormant year is dormant whenever the corporation was registered. The
+mandatory e-filing rule split the set into two buckets rather than nine, so
+2018 through 2023 were the same page.
+
+They were deleted rather than published.
+
+**The general point, which is now twice-proven:** Appendix A contains year
+series and place series whose axis does not change the answer. Where that is
+true the roster count is not reachable without producing what 6(k) itself
+calls the pattern the March 2026 updates removed. That is a scoping decision
+for Sharad Gondaliya, not something to build around.
+
+### What shipped instead
+
+The hub plus nine jurisdictions, because jurisdiction is an axis that does
+change the answer -- the same axis that took the Family 8 cost pages from
+0.96 to 0.73 this morning.
+
+| ID | URL | Bytes |
+|---|---|---|
+| 2205 | `/start/first-t2-return-after-incorporation/` | 10,248 |
+| 2206 | `/start/what-a-new-ontario-corporation-must-file/` | 10,884 |
+| 2210 | `/start/what-a-new-quebec-corporation-must-file/` | 10,635 |
+| 2214 | `/start/what-a-new-british-columbia-corporation-must-file/` | 11,078 |
+| 2218 | `/start/what-a-new-alberta-corporation-must-file/` | 10,607 |
+| 2222 | `/start/what-a-new-manitoba-corporation-must-file/` | 10,762 |
+| 2226 | `/start/what-a-new-saskatchewan-corporation-must-file/` | 11,002 |
+| 2230 | `/start/what-a-new-nova-scotia-corporation-must-file/` | 10,785 |
+| 2234 | `/start/what-a-new-new-brunswick-corporation-must-file/` | 10,754 |
+| 2238 | `/start/what-a-new-newfoundland-and-labrador-corporation-must-file/` | 10,825 |
+
+Every one byte-identical to its build file. `cnf_family` f10 reads **10**,
+each jurisdiction page carries its `cnf_place` term.
+
+**0.76 worst, nothing at or above 0.80**, after two rounds:
+
+| Version | Worst pair | Pairs >= 0.80 |
+|---|---|---|
+| Year series | 0.99 | 21 |
+| Jurisdictions, one distinct section each | 0.84 | 19 |
+| Jurisdictions, two distinct sections each | **0.76** | **0** |
+
+The second section was what moved it, and it had to be a different TOPIC per
+page rather than the same topic reworded: federal versus provincial
+incorporation (Ontario), the third filing (Quebec), extra-provincial
+registration (British Columbia), the AT1's own deadline (Alberta), what
+counts as activity (Manitoba), Schedule 24 filed once (Saskatchewan), the
+GST/HST account decision (Nova Scotia), what happens if the first return is
+not filed (New Brunswick), signing the first return (Newfoundland and
+Labrador).
+
+### The hub is not on Appendix A's roster, and had to be built anyway
+
+`/start/first-t2-return-after-incorporation/` is absent from Appendix A's 25,
+yet 6(k) names it as a canonical target for the cross-site collision, line
+1275 makes it the target for the family's head term at 260 searches a month,
+and **line 1532 makes it the inbound link target for every Family 10 page.**
+A family whose own linking rule points at a URL that does not exist cannot be
+built without it. Family 10 will therefore finish at 26 against a planned 25,
+the same off-roster drift as Family 5 at 46 and Family 8 at 18.
+
+### Smaller things worth recording
+
+- `cnf_tax_year` held 2019 to 2026 only, against an Appendix A roster running
+  from 2015. 2018 was created before the year series was abandoned; 2015 to
+  2017 were deliberately not created, because extending a taxonomy to reach a
+  roster it was never scaffolded for is a decision rather than a build step.
+- The Family 8 style block carries no `.cnf-qual` or `.cnf-steps` rules, so
+  the three-rules box and the ordered list line 344 requires would both have
+  rendered unstyled. Both rules are appended by the Family 10 builder.
+- The fee line is "plus applicable sales tax", as approved today, because
+  five of these nine jurisdictions do not charge HST.
+- Line 1218 puts a Sharad Gondaliya review on this family, and CLAUDE.md puts
+  a template sign-off on every family's first batch. **This is a new family
+  template that went live without that sign-off**, on the same standing
+  authority as today's other batches. It is the thing to put in front of him
+  first, because it sets the pattern for the remaining 16 pages.
+
+### Still pending in Family 10
+
+Prince Edward Island, Yukon, the Northwest Territories and Nunavut complete
+the jurisdiction series. The twelve year pages remain unbuilt and should not
+be built as written.

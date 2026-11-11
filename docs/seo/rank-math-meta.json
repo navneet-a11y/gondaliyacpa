@@ -1785,5 +1785,70 @@
     "title": "Nil T2 Return Cost in Nunavut | $300.00 Plus GST"
    }
   ]
+ },
+ "nil_first_filing_batch1": {
+  "note": "Family 10, the first ten. Hub plus nine jurisdictions. The year series was built, measured at 0.99 similarity and deleted; see decisions.md for 2026-11-11.",
+  "items": [
+   {
+    "desc": "Your first tax year cannot exceed 53 weeks, Schedule 24 is required, and the year-end must match CRA's record. What a new corporation files first.",
+    "id": 2205,
+    "kw": "first t2 return after incorporation",
+    "title": "First T2 Return After Incorporation | What to File"
+   },
+   {
+    "desc": "A new Ontario corporation files one T2, plus a separate annual return to the Ontario Business Registry. Schedule 24 and the 53-week limit explained.",
+    "id": 2206,
+    "kw": "what a new ontario corporation must file",
+    "title": "What a New Ontario Corporation Must File"
+   },
+   {
+    "desc": "A new Quebec corporation files three things: the federal T2, the CO-17 with Revenu Quebec, and a registry declaration. Only the first is in the fee.",
+    "id": 2210,
+    "kw": "what a new quebec corporation must file",
+    "title": "What a New Quebec Corporation Must File"
+   },
+   {
+    "desc": "A new BC corporation files one T2 that settles both the federal and provincial side. The registry filing is separate, and so is operating elsewhere.",
+    "id": 2214,
+    "kw": "what a new british columbia corporation must file",
+    "title": "What a New British Columbia Corporation Must File"
+   },
+   {
+    "desc": "Alberta has no provincial sales tax but does have a second corporate return. A new Alberta corporation files both the federal T2 and the AT1.",
+    "id": 2218,
+    "kw": "what a new alberta corporation must file",
+    "title": "What a New Alberta Corporation Must File"
+   },
+   {
+    "desc": "A new Manitoba corporation files one T2 carrying Schedule 24. What counts as activity in a first year, and what the registry wants separately.",
+    "id": 2222,
+    "kw": "what a new manitoba corporation must file",
+    "title": "What a New Manitoba Corporation Must File"
+   },
+   {
+    "desc": "A new Saskatchewan corporation files one T2. The year-end choice binds every return after it, and Schedule 24 is filed once and never again.",
+    "id": 2226,
+    "kw": "what a new saskatchewan corporation must file",
+    "title": "What a New Saskatchewan Corporation Must File"
+   },
+   {
+    "desc": "A new Nova Scotia corporation files one T2 carrying Schedule 24. The registry filing is separate, and a GST/HST account is its own decision.",
+    "id": 2230,
+    "kw": "what a new nova scotia corporation must file",
+    "title": "What a New Nova Scotia Corporation Must File"
+   },
+   {
+    "desc": "A new New Brunswick corporation files one T2 carrying Schedule 24. A dormant first year is still a filed year, and what happens if it is not.",
+    "id": 2234,
+    "kw": "what a new new brunswick corporation must file",
+    "title": "What a New New Brunswick Corporation Must File"
+   },
+   {
+    "desc": "A new Newfoundland and Labrador corporation files one T2 carrying Schedule 24, electronically, with Form T183CORP signed before it is transmitted.",
+    "id": 2238,
+    "kw": "what a new newfoundland and labrador corporation must file",
+    "title": "What a New Newfoundland and Labrador Corporation Files"
+   }
+  ]
  }
 }
