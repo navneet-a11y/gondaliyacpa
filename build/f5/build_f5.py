@@ -905,6 +905,400 @@ for i, rec in enumerate(Q4):
                               'cnf_primary_keyword': rec['keyword'],
                               'cnf_last_verified_et': ISO4}))
 
+
+# ----------------------------------------------------------------------
+# Batch 5, November 11, 2026: the last fifteen of Appendix A's forty-five.
+#
+# The diff that produced this list is clean in both directions -- fifteen
+# Appendix A slugs were unbuilt and nothing live was off-roster, which is not
+# true of Family 2 or Family 7. So this batch completes the family exactly as
+# the plan specifies it, with no ruling needed.
+#
+# Three of the fifteen ask "how long" about something this site does not
+# publish, and none of them invents a figure:
+#
+#   how-long-does-cra-take-to-assess-a-nil-t2-return
+#       The site publishes its own timing -- the CRA confirmation emailed
+#       within 3 business days -- and that is the transmission confirmation,
+#       not the notice of assessment. No assessment service standard is
+#       published here, so the page says what is known and names the rest as
+#       the Agency's own.
+#   how-long-does-it-take-to-dissolve-a-corporation-in-canada
+#       The registry's own timing is not ours to state and varies by
+#       jurisdiction. What the page answers instead is the part the
+#       corporation controls: the returns have to be filed first, so the tax
+#       side is the critical path.
+#   how-long-can-a-corporation-stay-dormant-before-cra-acts
+#       There is no published period, and saying one would be an invention.
+#       The honest answer is that a demand can arrive at any time, which is
+#       what every other page here already says about an unfiled year.
+# ----------------------------------------------------------------------
+EARLIER3 = Q + Q2 + Q3 + Q4
+DATE5, ISO5 = 'November 11, 2026', '2026-11-11'
+
+Q5 = [
+ dict(
+  slug='how-long-do-i-have-to-file-a-t2-after-my-year-end',
+  h1='How Long Do I Have to File a T2 After My Year-End?',
+  anchor='How long do I have after my year-end',
+  keyword='how long to file t2 after year end',
+  related=[28, 29, 13],
+  answer=('Six months. A T2 is due within six months of the fiscal year-end, '
+          'and the date moves to the next business day where it falls on a '
+          'weekend or a public holiday. That deadline is the same whether the '
+          'year was busy or completely nil, and it runs from the year-end '
+          'rather than from the calendar year.'),
+  head=('What applies', 'Figure'),
+  rows=[('Months after the fiscal year-end to file', '6'),
+        ('Where the date falls on a weekend or holiday',
+         'It moves to the next business day'),
+        ('Does a nil year get longer', 'No, the same six months'),
+        ('Balance of tax, where any is owing',
+         'Due before the return, at two or three months'),
+        ('Fee to file', '$300.00 plus HST per tax year')],
+  qual=False,
+  body=('The six months run from the year-end the corporation actually has, '
+        'which is not always the one it meant to adopt. A first tax year ends '
+        'on the date of the first return filed, and every year after it runs '
+        'to the same month-end.')),
+ dict(
+  slug='how-long-does-it-take-to-file-a-nil-t2-return',
+  h1='How Long Does It Take to File a Nil T2 Return?',
+  anchor='How long does filing take',
+  keyword='how long does it take to file a nil t2 return',
+  related=[21, 15, 11],
+  answer=('The part you do takes minutes. You type the corporation name, pick '
+          'the tax years, pay, and sign Form T183CORP on a secure screen. '
+          'After that the return is prepared, reviewed by a CPA Ontario '
+          'member and transmitted, and your CRA confirmation is emailed '
+          'within 3 business days.'),
+  head=('Step', 'What it takes'),
+  rows=[('Entering the corporation and the years', 'Minutes, on one screen'),
+        ('Paying', 'The same screen, before anything is prepared'),
+        ('Signing Form T183CORP', 'One signature for each tax year'),
+        ('Your CRA confirmation', 'Emailed within 3 business days'),
+        ('Fee to file', '$300.00 plus HST per tax year')],
+  qual=False,
+  body=('Several years do not take several times as long at your end. The '
+        'years are entered together and transmitted oldest first, and each '
+        'one carries its own Form T183CORP to sign and its own '
+        'confirmation.')),
+ dict(
+  slug='how-long-does-cra-take-to-assess-a-nil-t2-return',
+  h1='How Long Does CRA Take to Assess a Nil T2 Return?',
+  anchor='How long does assessment take',
+  keyword='how long does cra take to assess a nil t2 return',
+  related=[21, 27, 20],
+  answer=('That is the Canada Revenue Agency&rsquo;s own timing and this site '
+          'does not state it. What is published here is the confirmation that '
+          'the return was transmitted and accepted, which is emailed within 3 '
+          'business days. The notice of assessment arrives separately and on '
+          'the Agency&rsquo;s schedule rather than ours.'),
+  head=('Point', 'Position'),
+  rows=[('Confirmation that the return was transmitted',
+         'Emailed within 3 business days'),
+        ('Notice of assessment',
+         'Issued by the Canada Revenue Agency on its own timing'),
+        ('Are they the same thing', 'No, and this page does not conflate them'),
+        ('What closes the tax year', 'The return being filed'),
+        ('Fee to file', '$300.00 plus HST per tax year')],
+  qual=False,
+  body=('The distinction matters when several years are filed at once. The '
+        'confirmations arrive together because the returns were transmitted '
+        'together; the assessments are issued per year and need not arrive in '
+        'the same order or on the same day.')),
+ dict(
+  slug='how-long-do-i-have-to-keep-records-for-a-dormant-corporation',
+  h1='How Long Do I Have to Keep Records for a Dormant Corporation?',
+  anchor='How long do I keep records',
+  keyword='how long to keep records for a dormant corporation',
+  related=[9, 23, 13],
+  answer=('Six years, and being dormant does not shorten it. A corporation '
+          'with no activity still has records worth keeping: the incorporation '
+          'documents, the share register, any bank statements and each signed '
+          'Form T183CORP. We keep your signed Form T183CORP for six years '
+          'as part of the filing.'),
+  head=('Record', 'Position'),
+  rows=[('Signed Form T183CORP', 'Kept for six years'),
+        ('Is it sent to the Canada Revenue Agency',
+         'Only if the Agency asks for it'),
+        ('Does a dormant year shorten the period', 'No'),
+        ('Incorporation documents and share register',
+         'Kept for as long as the corporation exists'),
+        ('Fee to file', '$300.00 plus HST per tax year')],
+  qual=False,
+  body=('A dormant corporation is the one most likely to lose its records, '
+        'because nobody is looking at them. The year a demand to file arrives '
+        'is the year they matter, and that is usually several years after the '
+        'last person thought about them.')),
+ dict(
+  slug='how-long-can-a-corporation-stay-dormant-before-cra-acts',
+  h1='How Long Can a Corporation Stay Dormant Before CRA Acts?',
+  anchor='How long before CRA acts',
+  keyword='how long can a corporation stay dormant before cra acts',
+  related=[3, 4, 23],
+  answer=('There is no published period and no one can say in advance. A '
+          'corporation may stay dormant indefinitely, but the returns are '
+          'still due every year, and an unfiled year invites a demand to file '
+          'and an arbitrary assessment at any time. Dormancy is a state of '
+          'business, not a filing status.'),
+  head=('Point', 'Position'),
+  rows=[('Published period before the Agency acts', 'None'),
+        ('Are returns still due while dormant', 'Yes, every year'),
+        ('What an unfiled year invites',
+         'A demand to file and an arbitrary assessment'),
+        ('Is there a form that registers dormancy', 'No'),
+        ('Fee to file', '$300.00 plus HST per tax year')],
+  qual=False,
+  body=('The question usually comes from hoping a quiet corporation goes '
+        'unnoticed. It can, for years, and then a demand arrives covering all '
+        'of them at once. Filing each year as it falls due is the only way to '
+        'keep the file closed.')),
+ dict(
+  slug='how-long-does-it-take-to-dissolve-a-corporation-in-canada',
+  h1='How Long Does It Take to Dissolve a Corporation in Canada?',
+  anchor='How long does dissolution take',
+  keyword='how long does it take to dissolve a corporation in canada',
+  related=[16, 25, 26],
+  answer=('The registry step varies by jurisdiction and this site does not '
+          'state its timing. What is predictable is the part before it: every '
+          'outstanding return has to be filed, including the final one, and '
+          'a clearance certificate rests on a complete filing record. The tax '
+          'side is the critical path.'),
+  head=('Step', 'Position'),
+  rows=[('Outstanding returns', 'All of them filed, oldest first'),
+        ('The final T2', 'Runs to the dissolution date'),
+        ('Clearance certificate', 'Rests on a complete filing record'),
+        ('The registry step',
+         'Its own timing, which varies by jurisdiction'),
+        ('Fee to file', '$300.00 plus HST per tax year')],
+  qual=False,
+  body=('Dissolving with returns still outstanding does not close them. The '
+        'tax years stay open behind the corporation, which is why the filing '
+        'comes first and why a corporation that has never filed cannot be '
+        'wound up quickly.')),
+ dict(
+  slug='how-many-years-back-can-cra-ask-for-a-t2-return',
+  h1='How Many Years Back Can CRA Ask for a T2 Return?',
+  anchor='How many years back can CRA ask',
+  keyword='how many years back can cra ask for a t2 return',
+  related=[4, 22, 24],
+  answer=('Every year the corporation has existed. An unfiled year does not '
+          'expire, so there is no point at which an old return stops being '
+          'owed. A demand to file can name several years at once, and each '
+          'one is a separate T2 that has to be prepared and transmitted on '
+          'its own.'),
+  head=('Point', 'Position'),
+  rows=[('Does an unfiled year expire', 'No'),
+        ('How far back a demand can reach',
+         'Any year for which no return was filed'),
+        ('Returns needed per outstanding year', 'One T2 each'),
+        ('Order they are filed in', 'Oldest first'),
+        ('Fee to file', '$300.00 plus HST per tax year')],
+  qual=False,
+  body=('The six-year record-keeping period is a different thing and is often '
+        'mistaken for a limit on how far back returns are owed. It governs '
+        'how long records are kept, not how long a return stays '
+        'outstanding.')),
+ dict(
+  slug='how-many-years-can-a-corporation-go-without-filing-a-t2',
+  h1='How Many Years Can a Corporation Go Without Filing a T2?',
+  anchor='How many years without filing',
+  keyword='how many years can a corporation go without filing a t2',
+  related=[1, 3, 13],
+  answer=('None, as a matter of obligation. A T2 is due for every tax year '
+          'within six months of the year-end, so each year that passes adds a '
+          'return rather than using up an allowance. A corporation can go '
+          'years in practice, and every one of those years is still owed when '
+          'it catches up.'),
+  head=('Point', 'Position'),
+  rows=[('Years a corporation may skip', 'None'),
+        ('Returns owed after five missed year-ends', 'Five'),
+        ('Do the older ones lapse', 'No'),
+        ('What they invite while open',
+         'A demand to file and an arbitrary assessment'),
+        ('Fee to file', '$300.00 plus HST per tax year')],
+  qual=False,
+  body=('The practical answer and the correct answer differ here, and the gap '
+        'is where the trouble sits. Nothing arrives to prompt a quiet '
+        'corporation, so the count builds silently until something needs a '
+        'clean filing record.')),
+ dict(
+  slug='how-many-years-of-penalties-apply-to-late-nil-t2-returns',
+  h1='How Many Years of Penalties Apply to Late Nil T2 Returns?',
+  anchor='How many years of penalties',
+  keyword='how many years of penalties on late nil t2 returns',
+  related=[17, 0, 5],
+  answer=('On a true nil return the percentage late-filing penalty is a '
+          'percentage of tax owing, and the corporation owes nothing, so it '
+          'produces nothing in any year. The block below is the whole '
+          'position, and it includes the one charge that does not depend on '
+          'tax owing at all.'),
+  head=('Point', 'Position'),
+  rows=[('Percentage late-filing penalty on a true nil year', '$0.00'),
+        ('Why', 'It is a percentage of tax owing, which is $0.00'),
+        ('Does it compound across years', 'There is nothing to compound'),
+        ('Non-resident-owned corporation',
+         '$25.00 per day, to a maximum of $2,500.00, per late return'),
+        ('Fee to file', '$300.00 plus HST per tax year')],
+  qual=True,
+  body=('The daily charge on a non-resident-owned corporation is the row that '
+        'catches people out, because it runs on the lateness itself rather '
+        'than on a balance. It applies per late return, so several unfiled '
+        'years each carry their own.')),
+ dict(
+  slug='how-many-years-of-unfiled-t2-returns-can-i-catch-up',
+  h1='How Many Years of Unfiled T2 Returns Can I Catch Up?',
+  anchor='How many years can I catch up',
+  keyword='how many years of unfiled t2 returns can i catch up',
+  related=[14, 22, 18],
+  answer=('All of them, and there is no limit. Each outstanding year is '
+          'prepared as its own T2 and they are transmitted oldest first, '
+          'because each year&rsquo;s closing position carries into the next '
+          'return. Filing several at once is routine and closes the whole run '
+          'in a single pass.'),
+  head=('Tax years outstanding', 'What it takes'),
+  rows=[('Limit on how many can be caught up', 'None'),
+        ('Returns prepared', 'One T2 for each year'),
+        ('Order', 'Oldest first'),
+        ('Forms to sign', 'One Form T183CORP for each year'),
+        ('Fee to file', '$300.00 plus HST per tax year')],
+  qual=False,
+  body=('Filing out of order is the one thing that creates extra work, '
+        'because a later year assessed before an earlier one may have to be '
+        'revisited once the earlier figures land. Oldest first avoids going '
+        'back over years already filed.')),
+ dict(
+  slug='how-many-years-of-t2-returns-do-i-need-before-dissolving',
+  h1='How Many Years of T2 Returns Do I Need Before Dissolving?',
+  anchor='How many returns before dissolving',
+  keyword='how many years of t2 returns before dissolving',
+  related=[16, 2, 10],
+  answer=('Every year up to and including the final one. A corporation cannot '
+          'leave tax years open behind it, so each outstanding return is '
+          'filed first and the final T2 runs to the dissolution date. A '
+          'clearance certificate rests on that record being complete.'),
+  head=('Return', 'Position'),
+  rows=[('Outstanding years before the last one', 'All filed'),
+        ('The final T2', 'Runs to the dissolution date'),
+        ('Order', 'Oldest first, final return last'),
+        ('Clearance certificate',
+         'Rests on a complete filing record'),
+        ('Fee to file', '$300.00 plus HST per tax year')],
+  qual=False,
+  body=('Dissolving first and filing afterwards is the sequence that causes '
+        'trouble, because the years stay open and the corporation that owed '
+        'them no longer exists in the ordinary way. The returns come '
+        'first.')),
+ dict(
+  slug='when-should-i-start-catching-up-on-unfiled-t2-returns',
+  h1='When Should I Start Catching Up on Unfiled T2 Returns?',
+  anchor='When should I start catching up',
+  keyword='when should i start catching up on unfiled t2 returns',
+  related=[22, 4, 20],
+  answer=('Before a demand to file arrives rather than after. An unfiled year '
+          'stays open and invites a demand and an arbitrary assessment, and '
+          'the returns are the same returns either way. Starting first means '
+          'the figures filed are the corporation&rsquo;s own rather than ones '
+          'set for it.'),
+  head=('Point', 'Position'),
+  rows=[('Best time to start', 'Before a demand arrives'),
+        ('Does waiting reduce what is owed', 'No, the returns are the same'),
+        ('What an open year invites',
+         'A demand to file and an arbitrary assessment'),
+        ('What filing does to an arbitrary assessment',
+         'The real return displaces it'),
+        ('Fee to file', '$300.00 plus HST per tax year')],
+  qual=False,
+  body=('There is no advantage in waiting and one clear disadvantage. A '
+        'corporation that files before being asked is doing ordinary catch-up '
+        'filing; one that files after a demand is answering a deadline '
+        'somebody else set.')),
+ dict(
+  slug='when-should-i-tell-cra-my-corporation-is-inactive',
+  h1='When Should I Tell CRA My Corporation Is Inactive?',
+  anchor='When do I tell CRA it is inactive',
+  keyword='when should i tell cra my corporation is inactive',
+  related=[3, 23, 13],
+  answer=('There is nothing to tell and no form to send. Inactivity is not a '
+          'status the Canada Revenue Agency records, and no filing registers '
+          'it. What the corporation does instead is keep filing: a nil T2 for '
+          'each tax year is how an inactive corporation stays in good '
+          'standing.'),
+  head=('Point', 'Position'),
+  rows=[('Form that registers dormancy', 'There is none'),
+        ('Status to elect', 'There is none'),
+        ('What to do instead', 'File a nil T2 for each tax year'),
+        ('When the filing stops', 'When the corporation is formally dissolved'),
+        ('Fee to file', '$300.00 plus HST per tax year')],
+  qual=False,
+  body=('The belief that a corporation can be registered as inactive and left '
+        'alone is the single most expensive misunderstanding on this subject, '
+        'because the years keep falling due while nobody files them.')),
+ dict(
+  slug='when-should-i-dissolve-a-dormant-corporation',
+  h1='When Should I Dissolve a Dormant Corporation?',
+  anchor='When should I dissolve a dormant corporation',
+  keyword='when should i dissolve a dormant corporation',
+  related=[16, 23, 6],
+  answer=('When you are sure it will not be used again, because the filings '
+          'continue until it is formally dissolved. A dormant corporation '
+          'costs a return every year it stays open, and dissolving stops that '
+          'at the cost of the structure being gone. The decision is a '
+          'business one.'),
+  head=('Point', 'Position'),
+  rows=[('Cost of keeping it open', 'One return for each tax year'),
+        ('Cost of dissolving',
+         'The outstanding returns, the final T2 and the registry step'),
+        ('Can it be reversed', 'Only by reviving it, which is its own filing'),
+        ('Do the filings stop before dissolution', 'No'),
+        ('Fee to file', '$300.00 plus HST per tax year')],
+  qual=False,
+  body=('A corporation kept for a name, a structure or a single asset is on '
+        'the same filing footing as one that trades, so the question is '
+        'whether the structure is worth a return a year. Nobody but the owner '
+        'can answer that.')),
+ dict(
+  slug='when-should-i-file-the-final-t2-for-a-dissolving-corporation',
+  h1='When Should I File the Final T2 for a Dissolving Corporation?',
+  anchor='When do I file the final T2',
+  keyword='when should i file the final t2 for a dissolving corporation',
+  related=[10, 19, 25],
+  answer=('After the dissolution date, because the final tax year runs to it. '
+          'The last return covers the period from the start of the year to '
+          'the day the corporation is dissolved, and it is due within six '
+          'months of that date like any other year-end.'),
+  head=('Point', 'Position'),
+  rows=[('What the final tax year runs to', 'The dissolution date'),
+        ('When the final T2 is due', 'Within six months of that date'),
+        ('Returns before it', 'All filed, oldest first'),
+        ('Filing after dissolution', 'Still possible and still required'),
+        ('Fee to file', '$300.00 plus HST per tax year')],
+  qual=False,
+  body=('The final return is the one most often missed, because the '
+        'corporation feels finished once the registry paperwork is in. The '
+        'tax year it created still has to be reported, and the clearance '
+        'certificate rests on it.')),
+]
+
+for rec in Q5:
+    rec['date'], rec['iso'] = DATE5, ISO5
+    rec['wrap'] = True
+
+for i, rec in enumerate(Q5):
+    sibs = ([Q5[(i + k) % len(Q5)] for k in range(1, 6)]
+            + [EARLIER3[k] for k in rec['related']])
+    html, url = build(rec, sibs)
+    records.append(dict(slug=rec['slug'], title=rec.get('title', rec['h1']),
+                        meta_description=rec['answer'], url=url, content=html,
+                        answer=rec['answer'], keyword=rec['keyword'],
+                        anchor=rec['anchor'],
+                        terms={'cnf_family': ['f5']},
+                        meta={'cnf_question_text': rec['h1'],
+                              'cnf_short_answer': rec['answer'],
+                              'cnf_primary_keyword': rec['keyword'],
+                              'cnf_last_verified_et': ISO5}))
+
 out = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'f5-manifest.json')
 json.dump(records, open(out, 'w'), ensure_ascii=False, indent=1)
 for r in records:

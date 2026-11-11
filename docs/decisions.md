@@ -8987,3 +8987,59 @@ a CPA firm's pricing section.
 
 The five remaining jurisdiction URLs plus the eight non-HST ones still wait
 on hard rule 9.
+
+## 2026-11-11 (later) -- Family 5 complete: the last fifteen questions
+
+`nil_question` reports **45 published**, which is Appendix A's number exactly.
+Family 5 is the first family to finish, and it finished clean.
+
+### The diff was clean in both directions
+
+Fifteen Appendix A slugs were unbuilt and **nothing live was off-roster**.
+That is not true of Family 2 (35 invented slugs) or Family 7 (one), so this
+batch needed no ruling and invented no URLs. The fifteen are six "how long",
+five "how many years" and four "when should I".
+
+Published as IDs 2074 to 2144, every one byte-exact against its built file,
+and `git diff` confirmed the thirty earlier pages did not move.
+
+### Three questions ask about things this site does not publish
+
+None of them invents a figure, which is the whole reason to write them
+carefully rather than quickly:
+
+- **`how-long-does-cra-take-to-assess-a-nil-t2-return`.** The site publishes
+  its own timing, the CRA confirmation emailed within 3 business days, and
+  that is the transmission confirmation rather than the notice of assessment.
+  The page states what is known, names the assessment as the Agency's own,
+  and makes the distinction the point of the page.
+- **`how-long-does-it-take-to-dissolve-a-corporation-in-canada`.** The
+  registry's timing varies by jurisdiction and is not ours to state. The page
+  answers the part the corporation controls instead: the returns come first,
+  so the tax side is the critical path.
+- **`how-long-can-a-corporation-stay-dormant-before-cra-acts`.** There is no
+  published period. Saying one would be an invention, and the honest answer is
+  the one every other page here already gives about an unfiled year.
+
+### The gate did its job
+
+Clear on all 45 on the first run after the batch was written: 43 to 57 words
+per answer against the 40 to 60 the gate enforces, one table each, five or
+more inbound sibling links against the minimum of three, and 14 outbound
+against the cap of 15.
+
+Measured for duplication the way Family 7 and Family 8 were: **105 pairs, the
+worst at 0.59, none above 0.70.** These pages are genuinely distinct because
+each question has a different answer, which is exactly what the four held
+province cost pages could not manage.
+
+### A data gap found and fixed while publishing
+
+The `f5` family term showed a count of **20 against 30 live pages**. Ten
+pages, IDs 925 to 934, had no `cnf_family` term at all -- a contiguous block,
+so one batch shipped untagged and nobody noticed. All ten are now tagged and
+the term reads **45**.
+
+Worth checking the other families for the same thing: the term is what the
+hub and sitemap grouping run on, so a page without it is invisible to both
+while looking perfectly fine on its own.
