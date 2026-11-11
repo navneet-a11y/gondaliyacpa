@@ -2,6 +2,12 @@
 # -*- coding: utf-8 -*-
 """Family 8, the two pages Appendix A names outright and nobody built.
 
+NOTE on the style block: it is concatenated with the hero, not joined by a
+newline, because the live template has no newline between </style> and the
+hero div. An earlier version joined them and was 1 byte longer than what
+WordPress holds, which masked a doubled "<" on both pages: the extra
+bracket and the extra newline cancelled in the byte total.
+
     /pricing/cost-to-file-six-unfiled-nil-years/
     /pricing/what-is-not-included/
 
@@ -76,13 +82,12 @@ def six_years_page():
     desc = ('Six unfiled nil years are six separate returns at ' + PRICE
             + ', so $1,800.00 in fees. The order they are filed in and what '
               'that does not cover.')
-    b = [F8.STYLE]
-    b.append(F8.hero(
+    b = [F8.STYLE + F8.hero(
         'Cost to File Six Unfiled Nil Years',
         '$1,800.00 Plus HST for Six Tax Years',
         'Six unfiled years are six separate returns at the same published '
         'fee. Here is the arithmetic, the order they are filed in, and what '
-        'happens if one of the six turns out not to be nil.'))
+        'happens if one of the six turns out not to be nil.')]
     b.append('<div class="cnf-w" style="max-width:1000px!important;'
              'margin:0 auto!important;padding:36px 20px 56px!important;'
              'box-sizing:border-box">')
@@ -202,13 +207,12 @@ def not_included_page():
     desc = ('The nil T2 fee covers one corporate return for one tax year. '
             'Registry annual returns, CO-17, AT1 and other CRA accounts sit '
             'outside it.')
-    b = [F8.STYLE]
-    b.append(F8.hero(
+    b = [F8.STYLE + F8.hero(
         'What Is Not Included in the Nil T2 Fee',
         '$300.00 Plus HST Per Tax Year, and What Sits Outside It',
         'The fee covers one nil T2 corporation income tax return for one '
         'tax year, prepared, CPA reviewed and transmitted. Everything below '
-        'is a separate filing to a separate body.'))
+        'is a separate filing to a separate body.')]
     b.append('<div class="cnf-w" style="max-width:1000px!important;'
              'margin:0 auto!important;padding:36px 20px 56px!important;'
              'box-sizing:border-box">')

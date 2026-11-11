@@ -271,10 +271,14 @@ def page(p):
     desc = ('Nil T2 return cost in ' + name + ': ' + PRICE
             + '. What the fee covers and what it does not.')
     assert 70 <= len(desc) <= 160, '%s meta %d chars' % (slug, len(desc))
-    b = [F8.STYLE]
-    b.append(F8.hero(
+    # The live template has NO newline between </style> and the hero div, so
+    # the style block and the hero are concatenated rather than joined. With a
+    # newline here the build file is 1 byte longer than what WordPress holds,
+    # and that 1 byte masked a doubled "<" on two pages published earlier
+    # today: the extra bracket and the extra newline cancelled in the total.
+    b = [F8.STYLE + F8.hero(
         title, '$300.00 Plus Applicable Sales Tax Per Tax Year',
-        p['lead'][0]))
+        p['lead'][0])]
     b.append('<div class="cnf-w" style="max-width:1000px!important;'
              'margin:0 auto!important;padding:36px 20px 56px!important;'
              'box-sizing:border-box">')

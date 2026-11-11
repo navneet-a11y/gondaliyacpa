@@ -1732,5 +1732,58 @@
     "title": "Can I E-Sign a T183CORP? What the CRA Accepts"
    }
   ]
+ },
+ "nil_cost_non_hst_jurisdictions": {
+  "note": "The eight non-HST jurisdiction cost pages. Fee line reads \"plus applicable sales tax\", a logged deviation from hard rule 9 taken on Navneet's decision; see decisions.md for 2026-11-11.",
+  "items": [
+   {
+    "desc": "Nil T2 return cost in Quebec: $300.00 plus applicable sales tax per tax year. The CO-17 is a separate return and is not in the fee.",
+    "id": 2170,
+    "kw": "nil t2 return cost quebec",
+    "title": "Nil T2 Return Cost in Quebec | $300.00 Plus Sales Tax"
+   },
+   {
+    "desc": "Nil T2 return cost in Alberta: $300.00 plus applicable sales tax per tax year. The AT1 is a separate return and is not in the fee.",
+    "id": 2174,
+    "kw": "nil t2 return cost alberta",
+    "title": "Nil T2 Return Cost in Alberta | $300.00 Plus GST"
+   },
+   {
+    "desc": "Nil T2 return cost in British Columbia: $300.00 plus applicable sales tax per tax year. One T2 settles the federal and provincial side.",
+    "id": 2178,
+    "kw": "nil t2 return cost british columbia",
+    "title": "Nil T2 Return Cost in British Columbia | $300.00"
+   },
+   {
+    "desc": "Nil T2 return cost in Manitoba: $300.00 plus applicable sales tax per tax year. One T2 settles the corporate tax; the registry filing does not.",
+    "id": 2182,
+    "kw": "nil t2 return cost manitoba",
+    "title": "Nil T2 Return Cost in Manitoba | $300.00 Per Tax Year"
+   },
+   {
+    "desc": "Nil T2 return cost in Saskatchewan: $300.00 plus applicable sales tax per tax year. Several outstanding years are filed oldest first.",
+    "id": 2186,
+    "kw": "nil t2 return cost saskatchewan",
+    "title": "Nil T2 Return Cost in Saskatchewan | $300.00 a Year"
+   },
+   {
+    "desc": "Nil T2 return cost in Yukon: $300.00 plus applicable sales tax per tax year. No territorial sales tax, and one T2 settles the corporate tax.",
+    "id": 2190,
+    "kw": "nil t2 return cost yukon",
+    "title": "Nil T2 Return Cost in Yukon | $300.00 Plus GST"
+   },
+   {
+    "desc": "Nil T2 return cost in the Northwest Territories: $300.00 plus applicable sales tax per tax year. Filed electronically from anywhere.",
+    "id": 2194,
+    "kw": "nil t2 return cost northwest territories",
+    "title": "Nil T2 Return Cost in Northwest Territories"
+   },
+   {
+    "desc": "Nil T2 return cost in Nunavut: $300.00 plus applicable sales tax per tax year. Nil is decided year by year, wherever the office is.",
+    "id": 2198,
+    "kw": "nil t2 return cost nunavut",
+    "title": "Nil T2 Return Cost in Nunavut | $300.00 Plus GST"
+   }
+  ]
  }
 }

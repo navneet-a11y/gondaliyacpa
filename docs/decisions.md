@@ -9489,3 +9489,91 @@ Both were in checks written for this batch, caught before any page shipped:
 - A blanket ban on "HST" failed the British Columbia page on the phrase
   "GST/HST account", which is correct usage. Carve-out added for that string
   only.
+
+---
+
+## November 11, 2026 -- the eight published, on Navneet's decision, and a byte check that was lying
+
+### Published
+
+All eight are live. Family 8's `cnf_family` term reads **18**, and each page
+carries its own `cnf_place` term.
+
+| ID | URL | Bytes |
+|---|---|---|
+| 2170 | `/pricing/nil-t2-return-cost-quebec/` | 8,349 |
+| 2174 | `/pricing/nil-t2-return-cost-alberta/` | 8,167 |
+| 2178 | `/pricing/nil-t2-return-cost-british-columbia/` | 8,455 |
+| 2182 | `/pricing/nil-t2-return-cost-manitoba/` | 8,299 |
+| 2186 | `/pricing/nil-t2-return-cost-saskatchewan/` | 8,383 |
+| 2190 | `/pricing/nil-t2-return-cost-yukon/` | 8,223 |
+| 2194 | `/pricing/nil-t2-return-cost-northwest-territories/` | 8,340 |
+| 2198 | `/pricing/nil-t2-return-cost-nunavut/` | 8,225 |
+
+**Appendix A's Family 8 roster is now complete: all 13 jurisdiction cost
+pages, `/pricing/` and `/price-transparency-promise/`.**
+
+### Who decided the price line
+
+Asked directly, Navneet chose **"$300.00 plus applicable sales tax per tax
+year"** and chose to publish now rather than hold for Sharad Gondaliya,
+on the basis that he owns delivery end to end.
+
+So this is **Navneet's decision, recorded as his and not as Sharad
+Gondaliya's.** It remains a deviation from hard rule 9 and from the standing
+correction, and it still deserves Sharad Gondaliya's ratification at the next
+review, because CLAUDE.md puts every price change through him. Nothing about
+the pages needs to change if he ratifies it; if he does not, the fee line is
+one string in `build_f8c.py` and a single replace per page.
+
+The alternative of naming the tax per jurisdiction was put to him and
+rejected for the reason in the previous entry: whether a provincial sales tax
+reaches a professional accounting fee varies between British Columbia,
+Manitoba and Saskatchewan and could not be verified from this session.
+
+### A byte check that was passing while the markup was wrong
+
+This is the more important entry of the two, because the verification method
+used all session had a hole in it.
+
+`wp_replace_in_post` with the regex `(?s)div class=.cnf-hero..*` matches at
+`div`, so the `<` before it **stays in the content.** The stripped page ends
+`...</style>\n<` and then `ZZZ`. Pasting a body that itself begins `<div`
+therefore produces `<<div class="cnf-hero"`.
+
+That is what happened to both pages published earlier today. And the byte
+check did not catch it, because **two errors cancelled exactly**:
+
+- the builder joined the style block and the hero with a newline, while the
+  live template has none, making every build file 1 byte **longer** than what
+  WordPress holds;
+- the doubled `<` made the published content 1 byte **longer** than it should
+  have been.
+
+Net difference: zero. The byte totals matched perfectly, twice, and the
+markup was broken both times. A check that compares one number to another
+number cannot see two compensating faults.
+
+Found by noticing that the Family 5 strip left a visible `\n<ZZZ` in the raw
+content and asking why Family 8's arithmetic had not shown the same thing.
+Probed by duplicating page 2047 and replacing everything before the hero,
+which put the true prefix length at 2,811 bytes with no newline.
+
+Fixed:
+
+- Page 2149 `10,490 -> 10,489`, page 2153 `11,906 -> 11,905`, each one
+  doubled `<` removed.
+- `build_f8b.py` and `build_f8c.py` now concatenate the style block and the
+  hero instead of joining them, so a build file equals what WordPress stores.
+- All eight pages in this batch were pasted **without** the leading `<` and
+  every one landed on its predicted byte count exactly.
+
+**The rule for every future batch:** after the strip, the kept prefix ends
+with `<`. Paste the body starting at `div class=`, never at `<div class=`.
+And a matching byte count is necessary, not sufficient -- it is one number
+against one number, and compensating errors pass it.
+
+Worth noting what the 1-byte build/live difference means for the earlier
+Family 8 pages: the five jurisdiction pages and the promise page published
+before today were pasted the same way, so they may carry the same doubled
+`<`. That is checked next rather than assumed either way.
