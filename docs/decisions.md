@@ -8845,3 +8845,116 @@ Every brand page has three inbound links; the 14 concept pages each gain the
 cost page on top of whatever they already had. The three hosts are the cost
 page, `/compare/diy-vs-cpa-nil-t2/` and
 `/tools/what-the-nil-t2-fee-covers-checker/`.
+
+## 2026-11-11 -- Family 8: two pages live, four built and held, eight blocked
+
+Appendix A gives Family 8 as **15 URLs**: thirteen jurisdiction cost pages,
+`/pricing/` and `/price-transparency-promise/`. Line 1145's samples
+(`/pricing/nil-t2-filing-cost/`, `/pricing/cost-to-file-six-unfiled-nil-years/`,
+`/pricing/what-is-not-included/`) are illustrations, not the roster -- the same
+reading that resolved `-vs-turbotax` over line 1145's `-vs-turbotax-business`.
+
+The URL base comes from the family table and the `nil_cost` rewrite, not from
+Appendix A, which lists the slugs bare. Family 2 was resolved the same way.
+
+Live now, both byte-exact against their built files (less the standing
+one-byte trailing-newline offset on this family's hand-maintained HTML):
+
+| ID | URL | Bytes |
+|---|---|---|
+| 2045 | `/pricing/nil-t2-return-cost-ontario/` | 10,240 |
+| 2047 | `/pricing/price-transparency-promise/` | 9,128 |
+
+`/pricing/` was already live, so Family 8 is **4 of 15** counting the
+off-roster `/pricing/nil-t2-filing-cost/`.
+
+### Eight of the thirteen are blocked, and it is the open item from October 30
+
+The entry of 2026-10-30, "The price string is factually wrong for eight of
+thirteen jurisdictions", is exactly what these pages run into. Hard rule 9
+mandates "$300.00 plus HST per tax year" and HST does not exist in Alberta,
+Saskatchewan, Manitoba, Quebec, British Columbia, Yukon, the Northwest
+Territories or Nunavut. On a service page the price is a detail and page 996
+handled it by keeping the string and dropping the computation. **On a page
+whose entire subject is what a nil return costs in that jurisdiction, a
+headline naming the wrong tax is the page.** Those eight are not built.
+
+That decision is still Sharad Gondaliya's, and it is now blocking F8 as well
+as the eleven jurisdiction hubs and the 144 remaining F4 pages. A wording
+that works everywhere -- "$300.00 plus applicable sales tax per tax year" --
+needs hard rule 9 amended.
+
+### No tax rate is stated on any page in this family, including Ontario's
+
+The live cost page computes Ontario's 13 per cent to $339.00 and that figure
+is right. The same October 30 entry records "New Brunswick, Nova Scotia,
+Newfoundland and Labrador and Prince Edward Island at 15 per cent", and
+**Nova Scotia's rate is no longer 15 per cent.** Rather than propagate a rate
+from this project's own record onto a CPA firm's pricing pages, every page
+built here says tax is added at the rate for the province and names no
+figure. `build_f8_cost.py` fails the build if a rate appears, in either
+"per cent" or "%" form. The October 30 entry's Nova Scotia figure should be
+corrected or sourced before it is used anywhere.
+
+### Four pages are built, gate-clear and deliberately NOT published
+
+New Brunswick, Nova Scotia, Newfoundland and Labrador and Prince Edward
+Island. HST is the correct tax in all four, so hard rule 9 is honest there
+and they passed every check. They are held for one reason, measured rather
+than assumed:
+
+| Pair | Similarity |
+|---|---|
+| New Brunswick / Nova Scotia | 0.96 |
+| Newfoundland and Labrador / Nova Scotia | 0.96 |
+| Nova Scotia / Prince Edward Island | 0.95 |
+| New Brunswick / Prince Edward Island | 0.95 |
+| New Brunswick / Newfoundland and Labrador | 0.94 |
+
+Measured over the rendered text with the stylesheet and scripts stripped, the
+same method that held the Family 7 brand pages to below 0.68. **Four pages at
+0.94 to 0.96 are doorway pages**, and publishing them to move a count from 2
+to 6 would put duplicate content under a CPA firm's pricing section.
+
+The cause is not the writing. The fee genuinely does not vary by province,
+and all four collect corporate tax through the federal T2, so the only true
+difference between them is the name of the registry. Ontario is the one that
+earns its own page: the site publishes three Ontario-specific tools
+(Schedule 546, the Ontario Business Registry filing checker, the missed
+annual returns calculator) and the 2021 cutover is a real trap that applies
+nowhere else. With that section Ontario sits at **0.87 to 0.88** against the
+other four, and the promise page at **0.23 to 0.25**.
+
+**What would unblock the four:** per-province registry facts worth a page --
+what each registry's annual return confirms, when it is due, what it costs.
+Gondaliya CPA holds those; this generator does not, and inventing them is the
+one thing a tax page must not do. Supply them and the four publish the same
+day.
+
+### Two defects caught by the new gate
+
+1. **Hard rule 8, on the promise page.** Its table named Quebec CO-17 and
+   Alberta AT1 without stating either is a separate return. The gate refuses
+   `CO-17` or `AT1` on a page that does not also carry "separate return", and
+   it fired. A paragraph now states it.
+2. **"a Ontario corporation."** The article was hardcoded. It is now chosen
+   from the first letter, and the gate refuses `a ` before a capital vowel so
+   it cannot come back on Alberta.
+
+### Schema
+
+WebPage plus BreadcrumbList, not the Service-with-Offer graph the live cost
+page carries. An `Offer` node states a price, and a priced Offer on a
+per-jurisdiction page is the same accuracy problem in a machine-readable
+form.
+
+### Open
+
+- Hard rule 9 for the eight non-HST jurisdictions. **Blocking F8, the eleven
+  jurisdiction hubs and 144 F4 pages.**
+- The October 30 Nova Scotia rate.
+- Per-province registry facts for the four held pages.
+- `/pricing/nil-t2-filing-cost/` is not an Appendix A URL. It is live, and
+  every one of the 20 Family 7 pages links to it, so it is not a candidate
+  for quiet removal; it belongs with the 35 off-plan Family 2 slugs in one
+  ruling about off-roster URLs.
