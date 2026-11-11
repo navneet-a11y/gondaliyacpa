@@ -9600,3 +9600,66 @@ One of the newly published pages was then tested positively rather than by
 arithmetic: page 2170 returns 0 replacements for `<<div`. The direct test is
 the one to use from now on, because it looks at the markup instead of at a
 total.
+
+---
+
+## November 11, 2026 -- a full internal link audit, and the two broken links it found
+
+Asked whether anything is broken, the answer was produced by scanning rather
+than from memory, after getting a broken-link call wrong in both directions
+earlier today.
+
+### Method
+
+Every `href` to `corpnilfilingfor300.ca` was extracted from all 260 HTML
+files in `build/`: **277 distinct link targets.** Each was then diffed against
+the live slug list for its post type, pulled from the REST API with
+`_fields=slug` so the lists are complete and compact rather than read off a
+paginated page of search results.
+
+| Group | Linked targets | Live | Broken |
+|---|---|---|---|
+| `/tools/` | 102 | 100 | **2** |
+| `/compare/` | 20 | 20 | 0 |
+| `/answers/` | 46 | 46 | 0 |
+| `/guides/` | 30 | 30 | 0 |
+| `/deadlines/` | 13 | 23 | 0 |
+| `/pricing/` | 9 | 17 | 0 |
+| `/blog/` | 2 | 7 | 0 |
+| Root-level | 54 | 68 | 0 |
+
+**Two broken links out of 277.** Both in Family 2, both in a "Read Next"
+list, both pointing at tools that were described in a sibling page's link list
+but never built under those slugs:
+
+| Broken URL | On | Fixed to |
+|---|---|---|
+| `/tools/nil-return-eligibility-checker/` | 1898 Schedule 7, 1975 permanent establishment | `/tools/nil-t2-eligibility-checker/` |
+| `/tools/holding-corporation-nil-checker/` | 1898 Schedule 7 | `/tools/dormant-corporation-test/` |
+
+Anchor text was corrected with the targets, so the lists now read "Nil T2
+eligibility checker" and "Dormant corporation test". Neither destination was
+already in either list, so no duplicate entry was created.
+
+Both pages now match their build files byte for byte: 1898 at 28,917 and 1975
+at 29,689. Live was then searched for both broken slugs to catch any page not
+in the local corpus, since the corpus covers about 260 of roughly 370 live
+URLs. Both searches returned nothing.
+
+### What the audit also shows
+
+No live page is orphaned within Family 2: all 100 tools are linked from
+somewhere in the corpus. The gaps in the table above are the other direction
+and are expected -- 10 deadline pages, 8 pricing pages and 5 blog posts exist
+without being linked from any page in the corpus, which is an internal
+linking gap rather than a broken link, and the pricing figure will close as
+the new cost pages get wired in.
+
+### Why the count was low
+
+Worth recording, because the two earlier link errors today suggested
+otherwise. The builders assert their body links against a list of live slugs
+for the batch, which is why Families 5, 7 and 8 came out clean. The two
+failures are both in Family 2 "Read Next" lists, which are hand-written per
+page rather than generated from the live slug list, and that is the one place
+in the pipeline with no check behind it.
