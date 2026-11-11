@@ -124,7 +124,22 @@ _EXTRA = ('\n.cnf-qual{background:#f5f8fc;border-left:5px solid #314d8a;'
           'border-radius:0 8px 8px 0;padding:18px 22px;margin:18px 0}'
           '\n.cnf-qual strong{color:#314d8a}'
           '\n.cnf-steps{margin:16px 0 16px 22px;padding:0}'
-          '\n.cnf-steps li{margin:0 0 10px}')
+          '\n.cnf-steps li{margin:0 0 10px}'
+          # Full-bleed hero and no gap above it. The theme puts the article in
+          # a padded, boxed container, so the hero was inset on both sides and
+          # sat below that container's top padding. The calc(50% - 50vw) pair
+          # pulls the band out to the viewport edges from inside any centred
+          # ancestor; the rules under it zero the container's own top padding.
+          # .cnf-w keeps its own max-width and padding inline, so stripping
+          # the article padding does not touch the body text.
+          '\n.cnf-hero{margin-left:calc(50% - 50vw);'
+          'margin-right:calc(50% - 50vw);width:100vw;max-width:100vw}'
+          '\n.ast-separate-container .ast-article-single{padding:0!important;'
+          'margin:0!important;border-radius:0}'
+          '\n.site-content>.ast-container{padding-top:0!important}'
+          '\n.ast-separate-container .site-main>.ast-row{margin-top:0!important}'
+          '\n.entry-content>:first-child{margin-top:0!important}'
+          '\n#primary{padding-top:0!important;margin-top:0!important}')
 STYLE = io.open(os.path.join(HERE, '..', 'f8', '_f8_style.txt'),
                 encoding='utf-8').read()
 assert STYLE.rstrip().endswith('</style>')
