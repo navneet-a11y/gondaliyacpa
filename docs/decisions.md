@@ -9573,7 +9573,30 @@ with `<`. Paste the body starting at `div class=`, never at `<div class=`.
 And a matching byte count is necessary, not sufficient -- it is one number
 against one number, and compensating errors pass it.
 
-Worth noting what the 1-byte build/live difference means for the earlier
-Family 8 pages: the five jurisdiction pages and the promise page published
-before today were pasted the same way, so they may carry the same doubled
-`<`. That is checked next rather than assumed either way.
+### The earlier Family 8 pages were checked, and are clean
+
+The five jurisdiction pages and the promise page published before today were
+each tested for the doubled `<` directly, by attempting the same replacement
+and reading the count. All six returned **0 replacements**:
+
+| ID | Live bytes | Build file | Doubled `<` |
+|---|---|---|---|
+| 2045 Ontario | 10,239 | 10,240 | None |
+| 2047 promise | 9,127 | 9,128 | None |
+| 2053 New Brunswick | 9,272 | 9,273 | None |
+| 2058 Nova Scotia | 9,259 | 9,260 | None |
+| 2063 Newfoundland and Labrador | 9,443 | 9,444 | None |
+| 2068 Prince Edward Island | 9,370 | 9,371 | None |
+
+Every one is exactly 1 byte shorter than its build file, which is the
+style-block newline and nothing else. So the defect was confined to the two
+pages published today, and both are fixed.
+
+That also shows the 1-byte gap was visible in the record the whole time and
+was read as expected noise rather than as a discrepancy worth explaining. It
+was the thing that made the broken pages look correct.
+
+One of the newly published pages was then tested positively rather than by
+arithmetic: page 2170 returns 0 replacements for `<<div`. The direct test is
+the one to use from now on, because it looks at the markup instead of at a
+total.
