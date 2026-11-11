@@ -8958,3 +8958,32 @@ form.
   every one of the 20 Family 7 pages links to it, so it is not a candidate
   for quiet removal; it belongs with the 35 off-plan Family 2 slugs in one
   ruling about off-roster URLs.
+
+### 2026-11-11, later: the four held pages published on Navneet's instruction
+
+The duplication finding above was put to Navneet with the pairwise numbers
+(0.94 to 0.96) and the reason -- the fee does not vary by province, all four
+collect corporate tax federally, so only the registry name differs. He
+instructed "publish and start next". Published:
+
+| ID | URL | Bytes |
+|---|---|---|
+| 2053 | `/pricing/nil-t2-return-cost-new-brunswick/` | 9,273 |
+| 2058 | `/pricing/nil-t2-return-cost-nova-scotia/` | 9,260 |
+| 2063 | `/pricing/nil-t2-return-cost-newfoundland-and-labrador/` | 9,444 |
+| 2068 | `/pricing/nil-t2-return-cost-prince-edward-island/` | 9,371 |
+
+All four byte-exact, all four linked from the cost page, which is now 13,395.
+Family 8 stands at **8 of 15** counting the off-roster
+`/pricing/nil-t2-filing-cost/`.
+
+**This is recorded as a decision, not a resolution.** The four are live and
+still 0.94 to 0.96 alike, and the site is noindexed under hard rule 10, so
+nothing is exposed to a search engine yet. Before Sharad Gondaliya confirms
+launch, either the per-province registry facts land and the four earn their
+pages, or the four collapse into the one cost page with a province table.
+Leaving them as they are at launch would put four near-identical pages under
+a CPA firm's pricing section.
+
+The five remaining jurisdiction URLs plus the eight non-HST ones still wait
+on hard rule 9.
