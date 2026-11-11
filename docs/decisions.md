@@ -9387,3 +9387,105 @@ superlative attached to a ranking.
 
 This needs a ruling before any of the 38 is built, and it is a larger decision
 than the feature-column gap: it governs a whole family and its URL pattern.
+
+---
+
+## November 11, 2026 -- the last eight Family 8 pages are built and NOT published
+
+Appendix A's Family 8 roster is at plan line 3304 and is unambiguous: thirteen
+jurisdiction cost pages, `/pricing/`, `/price-transparency-promise/`. Fifteen.
+
+Seven are live. The eight that are not are **Quebec, British Columbia,
+Alberta, Manitoba, Saskatchewan, Yukon, Northwest Territories and Nunavut** --
+every jurisdiction in Canada where HST does not exist. The five already built
+are the five genuine HST jurisdictions, so every page remaining in this family
+is one the hard rule 9 wording cannot describe correctly. The blocker is not
+adjacent to the remaining work; it is the remaining work.
+
+All eight are **built, gate-clear, measured, and held as drafts.** None is
+published. The reason is one line of text.
+
+### The price line, checked rather than assumed
+
+Hard rule 9 says "$300 including HST per tax year"; the standing correction
+makes it "plus HST"; the Family 5 and Family 8 gates enforce that exact
+string. Checked against the Canada Revenue Agency this session:
+
+| Jurisdiction | Sales tax actually charged |
+|---|---|
+| Alberta, Yukon, Northwest Territories, Nunavut | GST only. **No provincial or territorial sales tax at all** |
+| British Columbia, Manitoba, Saskatchewan | GST plus a provincial sales tax |
+| Quebec | GST plus QST |
+
+"Plus HST" names a tax charged in none of the eight.
+
+The same check produced a second finding that settles how these pages treat
+rates: **Nova Scotia's HST moved to 14 per cent on April 1, 2025.** This
+file's own 2026-10-30 entry still records the Atlantic provinces "at 15 per
+cent". A project record that is stale on a live rate is not a source to build
+eight pricing pages on, and that is now confirmed rather than suspected.
+
+Naming the tax per jurisdiction was considered and rejected. Whether a
+provincial sales tax reaches a professional accounting fee is a different
+question from whether the province has one, it varies between British
+Columbia, Manitoba and Saskatchewan, and this session cannot verify it.
+Writing "plus GST and PST" on the British Columbia page would be the same
+class of error as writing "plus HST".
+
+What the eight are built with:
+
+> **$300.00 plus applicable sales tax per tax year**
+
+Accurate in all thirteen jurisdictions, names no tax that may not apply,
+states no rate. The gate for this batch enforces it positively and **fails any
+page that mentions HST at all**, with one carve-out: "GST/HST" is the Canada
+Revenue Agency's own name for the account, so it is allowed as an account
+name and nowhere else.
+
+**This is a deviation from hard rule 9 and from the standing correction, and
+it is Sharad Gondaliya's to approve.** Hence drafts. Flipping them to publish
+is one status change per page; nothing else about them depends on it.
+
+### Duplication: far better than the four published this morning
+
+| Set | Worst pair | Above 0.80 | Above 0.90 |
+|---|---|---|---|
+| These eight | **0.73** (Yukon / Nunavut) | 0 of 28 | 0 of 28 |
+| The four published this morning | 0.96 | 6 of 6 | 6 of 6 |
+
+All 28 pairs do sit above 0.60. That is inherent rather than lazy: only Quebec
+and Alberta differ structurally, each filing a separate provincial return
+(CO-17, AT1), while the other six all have one T2 settling federal and
+provincial or territorial corporate income tax. Yukon, the Northwest
+Territories and Nunavut are identical on every axis this site can speak to.
+
+Each page was given a different angle and a different second half rather than
+one page with a placename swapped -- two returns not one (Quebec), no sales
+tax but still a second return (Alberta), one T2 settles it (British
+Columbia), what the fee is not (Manitoba), the order outstanding years go in
+(Saskatchewan), a territory with no sales tax of its own (Yukon), filing from
+anywhere (Northwest Territories), nil means nil wherever the office is
+(Nunavut). That is what moved the worst pair from 0.96 to 0.73.
+
+Note the cross-measure: these eight against the four live province pages come
+out at **0.19**, because the fee sentence and the tax paragraphs differ
+completely. The 0.60-and-up clustering is within this batch only.
+
+### The count, stated plainly
+
+Seven roster URLs are live, plus three line 1146 sample slugs that are not on
+the roster. Family 8 reads 10. Publishing these eight takes it to **18 against
+a planned 15**, the same off-roster drift Family 2 has with 35 slugs and
+Family 5 now has with 46 against 45. Logged, not resolved.
+
+### Two gate bugs found and fixed in this batch's own gate
+
+Both were in checks written for this batch, caught before any page shipped:
+
+- `\d\s*%` as a rate check matched the shared CSS block, where `width:100%`
+  and similar appear throughout. Rate checks now run on the body with the
+  style block stripped. The original Family 8 gate avoided this by accident,
+  by looking only for the specific rates 13, 14, 15 and 5.
+- A blanket ban on "HST" failed the British Columbia page on the phrase
+  "GST/HST account", which is correct usage. Carve-out added for that string
+  only.
