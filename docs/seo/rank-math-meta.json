@@ -732,6 +732,54 @@
     "id": 794,
     "kw": "nil t2 filing cost",
     "title": "Nil T2 Filing Cost | $300.00 plus HST per tax year"
+   },
+   {
+    "desc": "A nil T2 return for an Ontario corporation is $300.00 plus HST per tax year. One price for every tax year, and the annual return is separate.",
+    "id": 2045,
+    "kw": "nil t2 return cost ontario",
+    "title": "Nil T2 Return Cost in Ontario"
+   },
+   {
+    "desc": "One price, stated in full before you pay. Nil T2 filing is $300.00 plus HST per tax year, with everything outside the fee named rather than discovered later.",
+    "id": 2047,
+    "kw": "price transparency promise",
+    "title": "Price Transparency Promise"
+   },
+   {
+    "desc": "A nil T2 return for a New Brunswick corporation is $300.00 plus HST per tax year. One price for every tax year, and the annual return is separate.",
+    "id": 2053,
+    "kw": "nil t2 return cost new brunswick",
+    "title": "Nil T2 Return Cost in New Brunswick"
+   },
+   {
+    "desc": "A nil T2 return for a Nova Scotia corporation is $300.00 plus HST per tax year. One price for every tax year, and the annual return is separate.",
+    "id": 2058,
+    "kw": "nil t2 return cost nova scotia",
+    "title": "Nil T2 Return Cost in Nova Scotia"
+   },
+   {
+    "desc": "A nil T2 return for a Newfoundland and Labrador corporation is $300.00 plus HST per tax year. One price for every tax year, and the annual return is separate.",
+    "id": 2063,
+    "kw": "nil t2 return cost newfoundland",
+    "title": "Nil T2 Return Cost in Newfoundland and Labrador"
+   },
+   {
+    "desc": "A nil T2 return for a Prince Edward Island corporation is $300.00 plus HST per tax year. One price for every tax year, and the annual return is separate.",
+    "id": 2068,
+    "kw": "nil t2 return cost prince edward island",
+    "title": "Nil T2 Return Cost in Prince Edward Island"
+   },
+   {
+    "desc": "Six unfiled nil years are six separate returns at $300.00 plus HST per tax year, so $1,800.00 in fees. The order they are filed in and what that does not cover.",
+    "id": 2149,
+    "kw": "cost to file six unfiled nil years",
+    "title": "Cost to File Six Unfiled Nil Years"
+   },
+   {
+    "desc": "The nil T2 fee covers one corporate return for one tax year. Registry annual returns, CO-17, AT1 and other CRA accounts sit outside it.",
+    "id": 2153,
+    "kw": "what is not included nil t2 fee",
+    "title": "What Is Not Included in the Nil T2 Fee"
    }
   ],
   "rest_base": "nil_cost"

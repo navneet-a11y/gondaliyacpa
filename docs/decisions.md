@@ -9162,3 +9162,84 @@ and have no separate value, so they cannot be published as hubs at all.
 Without that file, 180 city pages would be 180 templates differing by a
 placename, which 6(k) describes as what the March 2026 updates removed.
 Hence the environment above, and hence no city pages today.
+
+---
+
+## November 11, 2026 -- the two Appendix A pricing pages, built
+
+`/pricing/cost-to-file-six-unfiled-nil-years/` (ID 2149) and
+`/pricing/what-is-not-included/` (ID 2153) are live. Family 8 is now **10 of
+15**: `/pricing/`, the hub, the five jurisdiction pages, the promise page and
+these two.
+
+Both are named in line 1146 and neither had been built. Neither is a
+jurisdiction page, so hard rule 9 does not reach them.
+
+### The duplication question these two had to answer
+
+Both are, on their face, expansions of something already live. The hub
+carries a "Several Unfiled Years" table and a "What the Fee Does Not Include"
+list; the promise page carries a six-row table of what sits outside the fee.
+Writing either page as a longer version of those sections would have produced
+exactly what the four province cost pages produced.
+
+They are differentiated on substance instead:
+
+- The six-years page is about the **scenario**, not the arithmetic. The hub
+  gives the running total and stops. This page covers why six years are six
+  returns rather than one, the order they are filed in and why a later year
+  cannot be assessed before an earlier one, what a nil year actually costs by
+  sitting unfiled, and the point no other page on the site makes: nil is
+  decided year by year, so one non-nil year among six moves that year alone
+  and leaves the other five here at the published fee.
+- The not-included page groups the exclusions **by the reason the T2 does not
+  reach them** -- registry filings are not tax returns, two provinces collect
+  corporate tax on their own return, other CRA accounts are their own
+  accounts -- because the reason is what tells a reader whether they owe the
+  filing. It also adds exclusions neither live page names: bookkeeping for a
+  year with activity, incorporation and dissolution filings, and the
+  clearance certificate.
+
+Measured against all seven live Family 8 pages and each other, the same way
+Family 7 and the Family 5 batch were: **worst pair 0.19**, against the 6(k)
+rewrite threshold of 0.60. Compare the four province cost pages at 0.94 to
+0.96.
+
+### Three broken links caught before publishing, not after
+
+The first draft linked three URLs that do not exist. The link check that
+caught them should be part of every batch from here:
+
+| Written | Problem | Published instead |
+|---|---|---|
+| `/best/order-to-file-six-unfiled-t2-years/` | Family 6 is **0 of 38 live**. Nothing under `/best/` exists at all | `/answers/how-do-i-catch-up-on-years-of-unfiled-t2-returns/` |
+| `/answers/how-many-unfiled-t2-years-can-i-file-at-once/` | Appendix A's wording, not the slug that shipped | `/answers/how-many-years-of-unfiled-t2-returns-can-i-catch-up/` (2119) |
+| `/guides/final-t2-and-dissolution/` | Named in Appendix A and in 6(k), never built | `/guides/winding-up-an-inactive-corporation/` (1383) |
+
+Two of the three were written from Appendix A rather than from what is live.
+Appendix A is the plan's intent; it is not a list of URLs that resolve today.
+Any link taken from it needs checking against the site first.
+
+`/guides/final-t2-and-dissolution/` is worth noting separately: 6(k) names it
+as a canonical target in the cross-site collision table, so it is a guide the
+plan expects to exist and Family 9 has not built. That is a gap in Family 9,
+not in Family 8.
+
+### A second record found empty while publishing
+
+`docs/seo/rank-math-meta.json` held **one** `nil_cost` record, for the hub.
+None of the six pages published earlier today had been added. All eight are
+now recorded, every description inside the 160-character limit. The file now
+holds 269 records.
+
+This is the third record-keeping gap found today, after the Family 5 and
+Family 4 family-term gaps. All three share a shape: the page ships, the
+supporting record does not, and nothing fails visibly.
+
+### Still open on this family
+
+The inbound gate. Line 1530 requires **10 inbound internal links minimum**
+per Family 8 page. The two new pages have 2 each (the hub and one another);
+the six from this morning have 1 each. The hub now links both new pages, and
+the 20 comparison pages that line 1201 requires to link up to `/pricing/`
+remain the obvious untapped source. None of the nine passes the gate yet.
