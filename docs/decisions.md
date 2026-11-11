@@ -9043,3 +9043,122 @@ the term reads **45**.
 Worth checking the other families for the same thing: the term is what the
 hub and sitemap grouping run on, so a page without it is invisible to both
 while looking perfectly fine on its own.
+
+---
+
+## November 11, 2026 -- Family 4 taxonomy gap, and two defects found in the live Family 8 pages
+
+### The same untagged-batch bug, found again in Family 4
+
+The previous entry ended by saying the other families were worth checking for
+the `cnf_family` gap found in Family 5. They were.
+
+`nil_service_place` had **36 live pages against a term count of 18**. The 18
+untagged pages were the 6 Ontario pages (IDs 512, 715 to 719) and all 12
+British Columbia pages (IDs 1025 to 1116) -- again contiguous blocks, again
+whole batches shipped without the term. All 18 are now tagged and the term
+reads **36**.
+
+Two families have now shipped batches with no family term. The tagging step
+is not reliably part of the publish routine, and it should become part of the
+duplicate-and-replace sequence rather than a thing remembered afterwards.
+`wp_duplicate_post` copies the source's terms, which is what masks the bug:
+a duplicate looks tagged because it inherits something, so the missing
+family term is invisible unless the count is compared against the post total.
+
+### Family 8 is 8 of 15, not complete
+
+Line 1146 sets Family 8 at 15 URLs. Live: `/pricing/` plus seven `nil_cost`
+items = **8**. Seven still to build.
+
+Two of the seven are named outright in Appendix A and have never been built:
+
+- `/pricing/cost-to-file-six-unfiled-nil-years/`
+- `/pricing/what-is-not-included/`
+
+Neither is a jurisdiction page, so neither is blocked by the hard rule 9
+question that holds the other eight jurisdictions, and neither carries the
+near-duplicate problem the four province pages have. They are the correct
+next build in this family.
+
+### The six pages published today fail the family's own inbound minimum
+
+Line 1530 sets Family 8's inbound internal link requirement at **10 minimum,
+25 maximum** -- the highest of any family on the site, where Family 5 and
+Family 7 need only 3.
+
+Measured today, every one of the six pages published this session has
+**exactly 1 inbound link**, from the cost hub at ID 794:
+
+| ID | URL | Inbound | Required |
+|---|---|---|---|
+| 2045 | `/pricing/nil-t2-return-cost-ontario/` | 1 | 10 |
+| 2047 | `/pricing/price-transparency-promise/` | 1 | 10 |
+| 2053 | `/pricing/nil-t2-return-cost-new-brunswick/` | 1 | 10 |
+| 2058 | `/pricing/nil-t2-return-cost-nova-scotia/` | 1 | 10 |
+| 2063 | `/pricing/nil-t2-return-cost-newfoundland-and-labrador/` | 1 | 10 |
+| 2068 | `/pricing/nil-t2-return-cost-prince-edward-island/` | 1 | 10 |
+
+This is a gate failure on pages that are already live, and -- if the site is
+now indexed as reported -- already crawlable. It is the same class of miss as
+the Family 7 brand pages that shipped with zero inbound links, caught then by
+reading line 1529. Line 1530 was not read before this batch published.
+
+Building the remaining seven Family 8 pages on top of this would compound it.
+The inbound structure is the thing to fix first. Line 1201 names the
+available hosts: all 20 comparison pages are required to link up to
+`/pricing/`, and the anchor standard for Family 8 is a price phrase carrying
+the amount.
+
+### What the four province pages still are
+
+Unchanged from this morning's entry and worth restating now the site is
+reportedly indexed: 2053, 2058, 2063 and 2068 measure **0.94 to 0.96 similar**
+to each other. They were published on Navneet's instruction after being held,
+and that was logged as a decision rather than a resolution. It is still a
+decision rather than a resolution. The honest fix is either real per-province
+registry facts or consolidation into one page; padding them would not help.
+
+Those facts cannot be sourced from this session -- the egress proxy refuses
+every government host that would supply them.
+
+### Environment created for the next session
+
+A personal cloud environment named `gondaliyacpa` now exists for this
+repository, adding to the allowlist:
+
+- `corpnilfilingfor300.ca` and `www.corpnilfilingfor300.ca`, so a session can
+  finally fetch a live page, confirm what Rank Math is emitting, and settle
+  the hard rule 10 indexing question that four separate routes failed to
+  answer today
+- `open.canada.ca` and `ised-isde.canada.ca`, the Corporations Canada
+  open-data hosts named in the 6(k) local-data test
+
+**This session could not be moved onto it** -- a running session cannot change
+environments. A new session started on `gondaliyacpa` gets both.
+
+### Why Family 4's city half did not start today
+
+6(k) sets the internal rule for Family 4: the 12 service slugs for one place
+are permitted only where each carries a different H1, a different first 120
+words, and a different primary keyword. The 36 live pages pass -- measured at
+**0.78 maximum, nothing above 0.80** -- but they are Ontario, British Columbia
+and Alberta, the three jurisdictions that genuinely differ.
+
+The remaining 300 do not split evenly:
+
+| Bucket | Count | Status |
+|---|---|---|
+| 15 Ontario cities x 12 services | 180 | Same province, registry, tax and fee. Needs the local-data source to differentiate |
+| 4 HST jurisdictions x 12 services | 48 | Buildable, but carries the 2053-2068 near-duplicate problem |
+| 6 non-HST jurisdictions x 12 services | 72 | Blocked by hard rule 9 |
+
+6(k) names the source that makes a Toronto page differ from a Markham page:
+the Corporations Canada open-data bulk file, registered-office city field,
+pulled monthly. It also fails three cities outright -- `scarborough`,
+`etobicoke` and `north-york` all record as Toronto in the registry city field
+and have no separate value, so they cannot be published as hubs at all.
+
+Without that file, 180 city pages would be 180 templates differing by a
+placename, which 6(k) describes as what the March 2026 updates removed.
+Hence the environment above, and hence no city pages today.
