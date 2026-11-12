@@ -1,6 +1,6 @@
 {
  "_note": "Live slug manifest, pulled from the REST API with _fields=slug on 2026-11-11. build/check_links.py validates every internal href in build/**/*.html against this. Regenerate after any publish batch: a stale manifest makes the checker lie, which is the failure mode it exists to prevent.",
- "_pulled": "2026-11-11 (start/ added after the Family 10 batch)",
+ "_pulled": "2026-11-12 (start/ now 14)",
  "tools": [
   "53-week-first-tax-year-checker",
   "acquired-corporation-unfiled-years-checker",
@@ -265,10 +265,14 @@
   "what-a-new-manitoba-corporation-must-file",
   "what-a-new-new-brunswick-corporation-must-file",
   "what-a-new-newfoundland-and-labrador-corporation-must-file",
+  "what-a-new-northwest-territories-corporation-must-file",
   "what-a-new-nova-scotia-corporation-must-file",
+  "what-a-new-nunavut-corporation-must-file",
   "what-a-new-ontario-corporation-must-file",
+  "what-a-new-prince-edward-island-corporation-must-file",
   "what-a-new-quebec-corporation-must-file",
-  "what-a-new-saskatchewan-corporation-must-file"
+  "what-a-new-saskatchewan-corporation-must-file",
+  "what-a-new-yukon-corporation-must-file"
  ],
  "root": [
   "about",

@@ -114,6 +114,11 @@ PRICE = '$300.00 plus applicable sales tax per tax year'
 OVERFLOW = ('Overflow work moves to gondaliyacpa.ca at $350.00 plus '
             'applicable sales tax per year.')
 TODAY, ISO = 'November 11, 2026', '2026-11-11'
+# The last four jurisdictions were written on the 12th. Line 1572: no date is
+# moved without a content change, so the ten published on the 11th keep their
+# date and only these four carry the later one.
+LATER, LATER_ISO = 'November 12, 2026', '2026-11-12'
+BATCH2 = {'prince-edward-island', 'yukon', 'northwest-territories', 'nunavut'}
 NOW_YEAR = 2026
 BYLINE = ('Written and reviewed by Sharad Gondaliya, CPA (Ontario), '
           'CPA Ontario Membership 61040184.')
@@ -272,6 +277,50 @@ PLACES = [
              'Mandatory T2 electronic filing reaches tax years beginning '
              'after 2023, so a corporation registered now is inside it from '
              'its very first return.']),
+ dict(slug='prince-edward-island', name='Prince Edward Island',
+      sales='the HST', route='t2',
+      angle='The Smallest Province, the Same Federal Return',
+      lede=('A new Prince Edward Island corporation files one T2, which '
+            'settles federal and provincial corporate income tax together. '
+            'Size changes nothing about what is owed.'),
+      paras=['Prince Edward Island levies its corporate income tax through '
+             'the federal return, so there is no provincial corporate return '
+             'to find, and a dormant first year means one nil T2 carrying '
+             'Schedule 24.',
+             'The registry filing is the separate obligation, and it is owed '
+             'from the first year like everywhere else.']),
+ dict(slug='yukon', name='Yukon', sales='the GST', route='t2',
+      angle='A Territory With No Sales Tax of Its Own',
+      lede=('Yukon levies no territorial sales tax, so the only tax added to '
+            'this fee is the GST. Yukon also collects its corporate income '
+            'tax through the federal return, so one T2 settles both sides.'),
+      paras=['That makes a new Yukon corporation one of the simpler filing '
+             'positions in Canada: one return, one fee, and no second '
+             'corporate return to track down.',
+             'The territorial registry still expects its own annual filing, '
+             'and that is not a tax return and not in this fee.']),
+ dict(slug='northwest-territories', name='Northwest Territories', the='the ',
+      sales='the GST', route='t2',
+      angle='Filing From Anywhere',
+      lede=('The Northwest Territories levies no territorial sales tax, so '
+            'the GST is the only tax added to this fee, and territorial '
+            'corporate income tax runs through the federal return.'),
+      paras=['Everything about the filing happens electronically, which '
+             'matters more here than in most places. There is no office to '
+             'attend and no document to post.',
+             'A registered office in the Northwest Territories changes none '
+             'of the fee and none of the process.']),
+ dict(slug='nunavut', name='Nunavut', sales='the GST', route='t2',
+      angle='Nil Means Nil, Wherever the Office Is',
+      lede=('Nunavut levies no territorial sales tax, so the GST is the only '
+            'tax added to this fee. Nunavut collects its corporate income '
+            'tax through the federal return, so one T2 settles both sides.'),
+      paras=['The test for whether a first year is nil is the same in '
+             'Nunavut as everywhere else, and it is a test about what the '
+             'corporation did rather than about where it is registered.',
+             'A corporation with investment income, with rental income, or '
+             'that paid or received a dividend is not nil in that year, and '
+             'no registered office changes that.']),
 ]
 
 
@@ -352,6 +401,36 @@ SECOND = {
    'It is signed once per tax year and per return, so catching up several '
    'years means one form for each. It is kept rather than filed, and produced '
    'if the Canada Revenue Agency asks.']),
+ 'prince-edward-island': ('Keeping the Record Current Between Returns', [
+   'A registry annual filing is a yearly snapshot. What it does not cover is '
+   'a change partway through the year: a new director, a resignation, or a '
+   'change of registered office address.',
+   'Those are reported when they happen rather than saved for the annual '
+   'filing, and a corporation whose registry record is out of date can find '
+   'its annual filing rejected until the record is corrected.']),
+ 'yukon': ('The Territorial Rate Does Not Come Into It', [
+   'Yukon sets its own corporate income tax rates, and on a nil return they '
+   'make no difference at all. A rate applies to income, and a year with '
+   'none has nothing for it to apply to, so the tax payable is $0.00 '
+   'whatever the rate happens to be.',
+   'What the year does need is the return itself. That is true of a first '
+   'year as much as any other, and it is why a nil return is a filing '
+   'question rather than a tax one.']),
+ 'northwest-territories': ('Incorporating Does Not Open CRA Accounts', [
+   'A corporation gets a business number, but the program accounts under it '
+   'are opened separately and only when they are needed. Incorporating does '
+   'not open a GST/HST account or a payroll account by itself.',
+   'That matters in the first year because an account opened early brings '
+   'its own filing cycle with it, and those returns fall due whether or not '
+   'anything happened. The corporate income tax account is the one that '
+   'exists from the start.']),
+ 'nunavut': ('How Long the First Return Has to Be Kept', [
+   'Records supporting a return are kept for six years from the end of the '
+   'tax year they relate to, and a nil year is no exception. There is less '
+   'to keep, not less time to keep it.',
+   'For a first return that includes whatever establishes the opening '
+   'position: the incorporation documents, the share register, and the '
+   'signed Form T183CORP for that year.']),
 }
 
 def crumb(title, hub=False):
@@ -373,7 +452,7 @@ def hero(h1, sub, lede):
             'Start Nil T2 Filing NOW</a></p></div></div>')
 
 
-def schema(url, name, desc):
+def schema(url, name, desc, iso=ISO):
     crumbs = [{'@type': 'ListItem', 'position': 1,
                'name': 'Nil T2 filing in Canada', 'item': SITE + '/'}]
     if not url.endswith(HUB + '/'):
@@ -385,7 +464,7 @@ def schema(url, name, desc):
     g = {'@context': 'https://schema.org', '@graph': [
         {'@type': 'WebPage', '@id': url + '#webpage', 'url': url,
          'name': name, 'description': desc, 'inLanguage': 'en-CA',
-         'dateModified': ISO,
+         'dateModified': iso,
          'author': {'@type': 'Person', 'name': 'Sharad Gondaliya',
                     'honorificSuffix': 'CPA',
                     'url': SITE + '/sharad-gondaliya-cpa/'}},
@@ -447,7 +526,8 @@ def tail(extra_links):
             + 'schedule-24-first-return-checker/">Check Schedule 24</a></p>')
 
 
-def wrap(title, sub, lede, body, slug, desc, hub=False):
+def wrap(title, sub, lede, body, slug, desc, hub=False, rev=None):
+    rev_txt, rev_iso = (LATER, LATER_ISO) if rev else (TODAY, ISO)
     url = START + slug + '/'
     h = [STYLE + hero(title, sub, lede)]
     h.append('<div class="cnf-w" style="max-width:1000px!important;'
@@ -455,11 +535,11 @@ def wrap(title, sub, lede, body, slug, desc, hub=False):
              'box-sizing:border-box">')
     h.append(crumb(title, hub))
     h.append('<p class="cnf-by">' + BYLINE + '</p>')
-    h.append('<p class="cnf-rev">Last reviewed: ' + TODAY + '</p>')
+    h.append('<p class="cnf-rev">Last reviewed: ' + rev_txt + '</p>')
     h.append(body)
     h.append(FOOT)
     h.append('</div>')
-    h.append(schema(url, title, desc))
+    h.append(schema(url, title, desc, rev_iso))
     return slug, title, desc, '\n'.join(h)
 
 
@@ -525,8 +605,9 @@ def place_page(p, idx):
     body = []
     body.append('<div class="cnf-fee"><p><strong>' + PRICE + '.</strong> '
                 'A first year with no activity is a nil T2 and is filed here '
-                'at the published fee. In ' + name + ' the tax added to it is '
-                + p['sales'] + '.</p><p>' + OVERFLOW + '</p></div>')
+                'at the published fee. In ' + p.get('the', '') + name
+                + ' the tax added to it is ' + p['sales'] + '.</p><p>'
+                + OVERFLOW + '</p></div>')
     body.append('<h2>' + p['angle'] + '</h2>')
     for para in p['paras']:
         body.append('<p>' + para + '</p>')
@@ -547,7 +628,8 @@ def place_page(p, idx):
         ('Sales tax added to the fee', p['sales'][0].upper() + p['sales'][1:]),
         ('Fee per tax year', '$300.00 plus applicable sales tax')]
     body.append('<table class="cnf-tbl"><thead><tr><th scope="col">Item</th>'
-                '<th scope="col">Position in ' + name + '</th></tr></thead>'
+                '<th scope="col">Position in ' + p.get('the', '') + name
+                + '</th></tr></thead>'
                 '<tbody>'
                 + ''.join('<tr><td>%s</td><td>%s</td></tr>' % r for r in rows)
                 + '</tbody></table>')
@@ -557,7 +639,8 @@ def place_page(p, idx):
                 'pay.</p>')
     body.append(steps_block(
         'Confirm whether %s wants a corporate return of its own, because that '
-        'decides how many returns the first year needs.' % name))
+        'decides how many returns the first year needs.'
+        % (p.get('the', '') + name)))
     sibs = [PLACES[(idx + k) % len(PLACES)] for k in (1, 2, 3)]
     body.append('<h2>Other Jurisdictions</h2>')
     body.append('<ul><li><a href="' + START + HUB + '/">What every first T2 '
@@ -570,8 +653,11 @@ def place_page(p, idx):
                      'own is answered by the '
                      '<a href="' + T + 'provincial-return-requirement-checker/'
                      '">provincial return requirement checker</a>.'))
-    return wrap(title, 'The First Return, and What Else ' + name + ' Wants',
-                p['lede'], '\n'.join(body), slug, desc)
+    _the = p.get('the', '')
+    return wrap(title, 'The First Return, and What Else ' + _the + name
+                + ' Wants',
+                p['lede'], '\n'.join(body), slug, desc,
+                rev=p['slug'] in BATCH2)
 
 
 # ------------------------------------------------------------------ the gate
@@ -581,8 +667,10 @@ BANNED = ('instant filing', 'cheapest', 'lowest price', 'best price',
           'zero penalty', 'cra agent', 'cra approved', 'cra partner',
           'cra endorsed', 'book a call', 'calendly', 'starting from')
 # 12.00 is the published Corporations Canada annual return fee, which the
-# Ontario page names because federal incorporation adds that filing.
-MONEY_OK = {'300.00', '350.00', '12.00'}
+# Ontario page names because federal incorporation adds that filing. 0.00 is
+# the tax payable on a nil year, which the Yukon page uses to make the point
+# that a territorial rate has nothing to apply to.
+MONEY_OK = {'0.00', '300.00', '350.00', '12.00'}
 
 
 def gate(slug, html):
@@ -634,8 +722,11 @@ def gate(slug, html):
                    % (OPEN, x))
     links = set(re.findall(
         r'href="(https://corpnilfilingfor300\.ca[^"]*)"', html))
-    if len(links) > 15:
-        bad.append('%d outbound internal links, cap is 15' % len(links))
+    # Line 1532 sets this family's maximum body outbound internal links at 25.
+    # An earlier version used the generic 15, which is Family 5's figure, and
+    # that forced a link off the hub for no reason.
+    if len(links) > 25:
+        bad.append('%d outbound internal links, cap is 25' % len(links))
     if any(ord(c) > 0x2100 for c in html):
         bad.append('non-ASCII symbol that may be an emoji')
     json.loads(re.search(r'<script type="application/ld\+json">(.*?)</script>',

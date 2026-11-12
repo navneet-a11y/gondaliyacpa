@@ -1915,5 +1915,34 @@
     "title": "GST/HST Account Closure Checker | Form RC145"
    }
   ]
+ },
+ "nil_first_filing_batch2": {
+  "note": "Family 10 batch 2, the last four jurisdictions, published 2026-11-12. Completes the jurisdiction series at 13.",
+  "items": [
+   {
+    "desc": "A new PEI corporation files one T2 carrying Schedule 24. The registry filing is separate, and changes mid-year are reported when they happen.",
+    "id": 2265,
+    "kw": "what a new prince edward island corporation must file",
+    "title": "What a New Prince Edward Island Corporation Files"
+   },
+   {
+    "desc": "Yukon has no territorial sales tax and one T2 settles both sides. On a nil first year the territorial rate has nothing to apply to.",
+    "id": 2269,
+    "kw": "what a new yukon corporation must file",
+    "title": "What a New Yukon Corporation Must File"
+   },
+   {
+    "desc": "No territorial sales tax and one T2 settles both sides. Filed electronically from anywhere, and incorporating does not open CRA program accounts.",
+    "id": 2273,
+    "kw": "what a new northwest territories corporation must file",
+    "title": "What a New Northwest Territories Corporation Files"
+   },
+   {
+    "desc": "Nunavut has no territorial sales tax and one T2 settles both sides. Nil is about what the corporation did, not where it is registered.",
+    "id": 2277,
+    "kw": "what a new nunavut corporation must file",
+    "title": "What a New Nunavut Corporation Must File"
+   }
+  ]
  }
 }

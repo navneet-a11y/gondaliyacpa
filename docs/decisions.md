@@ -9781,3 +9781,69 @@ the same off-roster drift as Family 5 at 46 and Family 8 at 18.
 Prince Edward Island, Yukon, the Northwest Territories and Nunavut complete
 the jurisdiction series. The twelve year pages remain unbuilt and should not
 be built as written.
+
+---
+
+## November 12, 2026 -- Family 10's jurisdiction series finished
+
+The last four jurisdictions are live, completing the 13:
+
+| ID | URL | Bytes |
+|---|---|---|
+| 2265 | `/start/what-a-new-prince-edward-island-corporation-must-file/` | 11,210 |
+| 2269 | `/start/what-a-new-yukon-corporation-must-file/` | 11,025 |
+| 2273 | `/start/what-a-new-northwest-territories-corporation-must-file/` | 11,201 |
+| 2277 | `/start/what-a-new-nunavut-corporation-must-file/` | 11,043 |
+
+`cnf_family` f10 reads **14**. All 14 build files match live byte for byte,
+checked individually. Duplication across all 91 pairs: **worst 0.77, nothing
+at or above 0.80**, so the measure held as the set grew from 10 to 14.
+
+### A gate of my own that was wrong, found while making room
+
+The hub lists every jurisdiction, so adding four pushed it from 15 outbound
+links to 19. That looked like it breached the cap -- until the cap was
+checked. **Line 1532 gives Family 10 a maximum of 25 outbound body links.**
+The gate had been using 15, which is Family 5's figure from line 1527, picked
+up as though it were general.
+
+It is not general. Line 1521's table sets the maximum per family, and it
+varies: Family 5 has 15, Family 7 has 20, Family 10 has 25, Family 9 has 40
+because "pillars carry the highest outbound cap".
+
+That wrong cap had already cost something. When the hub first hit 16 links
+yesterday, a link to the eligibility checker was dropped to get under a limit
+that did not apply. Corrected in the builder, and the hub now carries all 13
+jurisdiction links at 19 of its 25.
+
+### Dates, and line 1572
+
+These four were written on the 12th, the first ten on the 11th. Line 1572
+says no date is moved without a content change, so the builder now carries
+two dates and only the new four read "Last reviewed: November 12, 2026". The
+ten published yesterday keep theirs, and their files are untouched.
+
+### Three existing pages changed, and why only three
+
+Each page lists three sibling jurisdictions, picked by rotating through the
+list. Growing the list from 9 to 13 only moves the window for the pages near
+its end: Nova Scotia, New Brunswick and Newfoundland and Labrador. The other
+six rotate within the first nine either way and were not touched. All three
+were updated live so their lists match their build files.
+
+### A wording fix the Northwest Territories needed
+
+"What Else Northwest Territories Wants", "Confirm whether Northwest
+Territories wants", "Position in Northwest Territories". The territory takes
+a definite article and three places in the template did not give it one. The
+builder now carries an optional `the` per jurisdiction, used in the
+sub-heading, the table header, the first step and the fee line.
+
+### Still pending in Family 10
+
+The twelve `/start/first-t2-after-incorporating-in-<year>/` pages. They were
+built yesterday, measured at **0.99**, and deleted rather than published.
+Nothing has changed about why: for a nil return the incorporation year does
+not change the answer. Family 10 therefore stands at 14 of a planned 25, and
+closing that gap needs a different idea or a decision to drop the series,
+not another attempt at the same pages.
