@@ -10031,14 +10031,38 @@ Refund Policy if you have data for it", then "we already have about check other
 
 `/about/` is live at page 319 and was not rebuilt.
 
-**Refund Policy was not built.** CLAUDE.md puts legal page text out of scope
-("supplied by Sharad Gondaliya and published as supplied") and Section 7.9 makes
-him Family 15's owner. The only refund wording anywhere on the site is one
-sentence inside the not-nil block: "If we find it after you pay, we refund you in
-full." A refund policy needs what that sentence does not say -- the window, what
-stops being refundable once a return is transmitted to the CRA, how a refund is
-paid back, and how it meets `/complaints-and-resolution/`. Writing those would be
-inventing the firm's contractual terms. It is his to supply.
+**Refund Policy was not built.** Plan line 24 names it directly in what the plan
+excludes: "legal page text (privacy, terms, refund and engagement terms, which
+Sharad Gondaliya supplies and Navneet publishes as supplied)". Section 7.9 makes
+him Family 15's owner, and line 1258 still sets the page a target keyword
+("refund policy online tax filing"), so the page is expected but its text is not
+this build's to write.
+
+**Correcting what was first written here:** this entry said the only refund
+wording on the site was one sentence in the not-nil block. That is wrong, and
+line 1560 of this same log already said so. Three distinct commitments are
+already published:
+
+- A year that turns out not to be nil is refunded in full if that is found after
+  payment -- in the not-nil block on roughly 40 pages, and in
+  `/pricing/what-is-not-included/` (2153).
+- `/pricing/price-transparency-promise/` (2047): "No charge is taken at the
+  higher price without you agreeing to it first. If we find it after you have
+  paid, you are refunded in full."
+- Pages 523 and 524 carry "If a return turns out not to be nil, you get a full
+  refund", logged on 2026-10-15 as a refund commitment sitting in front of an
+  unbuilt `/refund-policy/`.
+
+So a `/refund-policy/` page that only consolidated those three, and linked them,
+would restate what the firm has already published rather than invent anything.
+What is genuinely missing, and would be invention: the refund window, what stops
+being refundable once a return has been transmitted to the Canada Revenue Agency,
+whether sales tax is refunded with the fee, how a multi-year order is treated
+when only one year is not nil, how the money is returned, and how this meets
+`/complaints-and-resolution/`. A refund policy implies completeness, so a page
+answering three of nine questions could read worse than no page. Offered to
+Navneet as a consolidation draft with the gaps marked for Sharad Gondaliya,
+rather than published.
 
 **Both are Appendix A slugs and appear nowhere in 6(a).** decisions.md 2026-09-28
 records that the two Family 15 lists are disjoint but for three slugs and that
@@ -10062,6 +10086,24 @@ hit.** Both pages import the Family 4 style block, which defines neither
 every question on `/faq/` would have rendered unstyled. The missing rules are
 appended from the ones already live on the jurisdiction hubs, and the builder now
 fails if any `cnf-` class is used without a CSS rule.
+
+### The two Family 15 pages shipped full width, and were fixed
+
+Navneet, within the hour: "they are going full width fix them". Both pages were
+published with `site-content-layout: page-builder`, lifted from the Family 4 meta
+block. That value removes Astra's content container, so the body copy ran edge to
+edge instead of sitting in the normal container. `/about/` (page 319) and the
+other live trust pages leave that key EMPTY while still setting
+`ast-site-content-layout: full-width-container`, which keeps the hero spanning
+and the text contained.
+
+Set to empty on 2291 and 2292 to match `/about/` exactly, and corrected in
+`build_f15b.py`. Checked before changing anything that the five Quebec service
+pages and the hub were not affected: 2285 and the live Alberta page 1538 both
+read `page-builder`, and 2290 matches the live Alberta hub 1548, so Family 4 and
+the hubs are page-builder by design and were left alone. The defect was copying a
+Family 4 meta block onto a Family 15 page without checking what the live Family
+15 pages use.
 
 **Sharad Gondaliya's sign-off is outstanding on all eight pages published today**,
 as it is on every one of the 302 already live. Family 4's jurisdiction template

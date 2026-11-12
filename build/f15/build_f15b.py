@@ -367,7 +367,16 @@ PAGES = [
 
 def meta(p):
     return {
-     'site-sidebar-layout': 'no-sidebar', 'site-content-layout': 'page-builder',
+     'site-sidebar-layout': 'no-sidebar',
+     # Navneet, 2026-11-12: "they are going full width fix them". These two
+     # shipped with site-content-layout page-builder, copied from the Family 4
+     # meta block, which removes Astra's content container and runs the page
+     # edge to edge. /about/ (page 319) and the other live trust pages leave
+     # this EMPTY and keep ast-site-content-layout full-width-container, so the
+     # hero still spans and the body sits in the normal container. Matched to
+     # /about/ exactly. The Family 4 pages and the jurisdiction hubs are
+     # page-builder by design and were not touched.
+     'site-content-layout': '',
      'ast-site-content-layout': 'full-width-container',
      'site-post-title': 'disabled', 'ast-breadcrumbs-content': 'disabled',
      'ast-featured-img': 'disabled',
