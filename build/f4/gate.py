@@ -47,12 +47,27 @@ for s in SERVICES:
     # 6 forbidden schema
     for w in ('faqpage', 'howto', 'aggregaterating', '"review"'):
         if w in low: bad('rule 6 schema "%s"' % w)
-    # 9 price wording
+    # 9 price wording. Navneet, 2026-11-12: "Plus hst where application dont
+    # write hst where its not". The gate asserts the string that is correct for
+    # this place rather than one string everywhere: until today it REQUIRED
+    # "$300.00 plus HST" on every page, which is why the British Columbia and
+    # Alberta pages name a tax neither province charges and why nothing caught
+    # it. PLACE_SLUG comes from the builder module.
+    PLACE_SLUG = getattr(_mod, 'PLACE_SLUG', PLACE.lower())
     if 'including HST' in c: bad('rule 9 "including HST"')
-    if '$300.00 plus HST' not in c: bad('rule 9 price string missing')
-    # BC is not an HST province: no HST arithmetic anywhere
+    if PLACE_SLUG.replace('-', ' ') in HST_PROVINCES:
+        if '$300.00 plus HST' not in c: bad('rule 9 price string missing (HST)')
+    else:
+        if '$300.00 plus applicable sales tax' not in c:
+            bad('rule 9 price string missing (non-HST place)')
+        # The substantive check: HST is not named at all where it is not
+        # charged. "GST/HST" as the name of the CRA account is not a price
+        # claim, so it is removed before the test.
+        if 'HST' in c.replace('GST/HST', ''):
+            bad('HST named on a non-HST place')
+    # No rate and no tax-inclusive total anywhere, in either group.
     if re.search(r'\d+\s*per cent HST', c) or re.search(r'\$3[0-9]{2}\.\d\d\s*in total', c):
-        bad('HST computation on a non-HST province')
+        bad('HST computation on the page')
     ALLOWED_MONEY = {
       '300.00':   'the price',
       '350.00':   'the gondaliyacpa.ca overflow price',

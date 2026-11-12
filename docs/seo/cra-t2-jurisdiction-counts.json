@@ -1,0 +1,327 @@
+{
+ "source": "CRA T2 Corporate Statistical Tables, Table 1, Number of Corporations by Jurisdiction, 2018 to 2023",
+ "url": "https://www.canada.ca/content/dam/cra-arc/prog-policy/stats/t2-corp-stats/2018-2023/t2-crp-sttstcs-tbl01-e.pdf",
+ "retrieved": "2026-11-12",
+ "notes": [
+  "All counts are rounded to the nearest ten.",
+  "Data are presented on a tax-year basis.",
+  "Data are as of June 30, 2025 and are subject to change.",
+  "Counts include all income tax returns that were assessed or reassessed.",
+  "Jurisdiction is determined using the jurisdiction code on the T2 return (line 750).",
+  "Counts include tax-exempt and inactive corporations."
+ ],
+ "jurisdictions": {
+  "newfoundland-and-labrador": {
+   "years": [
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023
+   ],
+   "counts": [
+    19560,
+    19380,
+    19180,
+    19000,
+    18610,
+    17800
+   ],
+   "count_2023": 17800,
+   "change_2018_2023": -1760,
+   "pct_change": -9.0,
+   "direction": "fell",
+   "peak_year": 2018,
+   "peak": 19560
+  },
+  "prince-edward-island": {
+   "years": [
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023
+   ],
+   "counts": [
+    8140,
+    8450,
+    8700,
+    9050,
+    9240,
+    9220
+   ],
+   "count_2023": 9220,
+   "change_2018_2023": 1080,
+   "pct_change": 13.3,
+   "direction": "grew",
+   "peak_year": 2022,
+   "peak": 9240
+  },
+  "nova-scotia": {
+   "years": [
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023
+   ],
+   "counts": [
+    43740,
+    44480,
+    45330,
+    46610,
+    47680,
+    47490
+   ],
+   "count_2023": 47490,
+   "change_2018_2023": 3750,
+   "pct_change": 8.6,
+   "direction": "grew",
+   "peak_year": 2022,
+   "peak": 47680
+  },
+  "new-brunswick": {
+   "years": [
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023
+   ],
+   "counts": [
+    33050,
+    33400,
+    33930,
+    34880,
+    35370,
+    34960
+   ],
+   "count_2023": 34960,
+   "change_2018_2023": 1910,
+   "pct_change": 5.8,
+   "direction": "grew",
+   "peak_year": 2022,
+   "peak": 35370
+  },
+  "quebec": {
+   "years": [
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023
+   ],
+   "counts": [
+    488750,
+    501310,
+    513530,
+    534640,
+    551340,
+    553570
+   ],
+   "count_2023": 553570,
+   "change_2018_2023": 64820,
+   "pct_change": 13.3,
+   "direction": "grew",
+   "peak_year": 2023,
+   "peak": 553570
+  },
+  "ontario": {
+   "years": [
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023
+   ],
+   "counts": [
+    961090,
+    998590,
+    1027910,
+    1081830,
+    1118610,
+    1108730
+   ],
+   "count_2023": 1108730,
+   "change_2018_2023": 147640,
+   "pct_change": 15.4,
+   "direction": "grew",
+   "peak_year": 2022,
+   "peak": 1118610
+  },
+  "manitoba": {
+   "years": [
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023
+   ],
+   "counts": [
+    62320,
+    63630,
+    65110,
+    67500,
+    69130,
+    69180
+   ],
+   "count_2023": 69180,
+   "change_2018_2023": 6860,
+   "pct_change": 11.0,
+   "direction": "grew",
+   "peak_year": 2023,
+   "peak": 69180
+  },
+  "saskatchewan": {
+   "years": [
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023
+   ],
+   "counts": [
+    70550,
+    71730,
+    72300,
+    73190,
+    73770,
+    73110
+   ],
+   "count_2023": 73110,
+   "change_2018_2023": 2560,
+   "pct_change": 3.6,
+   "direction": "grew",
+   "peak_year": 2022,
+   "peak": 73770
+  },
+  "alberta": {
+   "years": [
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023
+   ],
+   "counts": [
+    362520,
+    364150,
+    363680,
+    368170,
+    369730,
+    365890
+   ],
+   "count_2023": 365890,
+   "change_2018_2023": 3370,
+   "pct_change": 0.9,
+   "direction": "grew",
+   "peak_year": 2022,
+   "peak": 369730
+  },
+  "british-columbia": {
+   "years": [
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023
+   ],
+   "counts": [
+    368520,
+    380860,
+    389950,
+    407030,
+    417900,
+    413630
+   ],
+   "count_2023": 413630,
+   "change_2018_2023": 45110,
+   "pct_change": 12.2,
+   "direction": "grew",
+   "peak_year": 2022,
+   "peak": 417900
+  },
+  "yukon": {
+   "years": [
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023
+   ],
+   "counts": [
+    2270,
+    2330,
+    2390,
+    2430,
+    2460,
+    2430
+   ],
+   "count_2023": 2430,
+   "change_2018_2023": 160,
+   "pct_change": 7.0,
+   "direction": "grew",
+   "peak_year": 2022,
+   "peak": 2460
+  },
+  "northwest-territories": {
+   "years": [
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023
+   ],
+   "counts": [
+    1770,
+    1730,
+    1710,
+    1690,
+    1670,
+    1590
+   ],
+   "count_2023": 1590,
+   "change_2018_2023": -180,
+   "pct_change": -10.2,
+   "direction": "fell",
+   "peak_year": 2018,
+   "peak": 1770
+  },
+  "nunavut": {
+   "years": [
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023
+   ],
+   "counts": [
+    630,
+    630,
+    640,
+    660,
+    660,
+    630
+   ],
+   "count_2023": 630,
+   "change_2018_2023": 0,
+   "pct_change": 0.0,
+   "direction": "held level",
+   "peak_year": 2021,
+   "peak": 660
+  }
+ }
+}

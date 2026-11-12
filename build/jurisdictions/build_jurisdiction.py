@@ -61,7 +61,44 @@ import json, os, re
 SITE  = 'https://corpnilfilingfor300.ca'
 FORM  = SITE + '/form/'
 TODAY, ISO = 'October 30, 2026', '2026-10-30'
+
+
+def reviewed(j):
+    """(date, iso) for this jurisdiction. TODAY was module-level, so a
+    jurisdiction added later inherited the review date of the ones built
+    before it. The date on a page is the date its own text was checked."""
+    return j.get('reviewed', TODAY), j.get('reviewed_iso', ISO)
 PRICE = '$300.00 plus HST per tax year'
+# Navneet, 2026-11-12: "Plus hst where application dont write hst where
+# its not". HST is charged in five jurisdictions only: Ontario, Nova
+# Scotia, New Brunswick, Newfoundland and Labrador and Prince Edward
+# Island. Everywhere else naming HST states the wrong tax, which
+# decisions.md 2026-10-21 called a tax-accuracy problem rather than a
+# style one. No rate and no tax-inclusive total appears either way.
+PRICE_NO_HST = '$300.00 plus applicable sales tax per tax year'
+HST_JURISDICTIONS = frozenset(('ontario', 'nova-scotia', 'new-brunswick',
+                               'newfoundland-and-labrador',
+                               'prince-edward-island'))
+
+
+def price(j):
+    """The fee string for one jurisdiction."""
+    return PRICE if j['slug'] in HST_JURISDICTIONS else PRICE_NO_HST
+
+
+def price_title(j):
+    """Title-case fee string for the hero subtitle."""
+    return ('$300.00 Plus HST Per Tax Year'
+            if j['slug'] in HST_JURISDICTIONS else
+            '$300.00 Plus Applicable Sales Tax Per Tax Year')
+
+
+def tax_line(j):
+    """How the page refers to tax added at checkout. Never a rate."""
+    return ('Tax is added at the rate for your province.'
+            if j['slug'] in HST_JURISDICTIONS else
+            'The sales tax that applies where your corporation is '
+            'resident is added at checkout.')
 HERO_IMG = (SITE + '/wp-content/uploads/2026/09/'
             'business-executives-having-meeting_1098-18316.jpg')
 
@@ -72,6 +109,12 @@ NOT_NIL = ('This service is for a corporation with no activity in the tax year. 
            'or a corporation already dissolved or struck. We route you to our sister '
            'office at gondaliyacpa.ca at $350.00 plus HST per tax year before you '
            'pay. If we find it after you pay, we refund you in full.')
+NOT_NIL_NO_HST = NOT_NIL.replace('$350.00 plus HST per tax year',
+                                 '$350.00 plus applicable sales tax per year')
+
+
+def not_nil(j):
+    return (NOT_NIL if j['slug'] in HST_JURISDICTIONS else NOT_NIL_NO_HST)
 
 # The six live root service pages, plus the three live hubs. Replaced per
 # jurisdiction by the real F4 children once they exist.
@@ -262,7 +305,74 @@ def has_annual(j):
     return all(j.get(k) != UNVERIFIED for k in ANNUAL_FIELDS)
 
 
-JURISDICTIONS = [BC, AB]
+# ---------------------------------------------------------------------------
+# Quebec, built 2026-11-12 on Navneet's instruction to open the jurisdiction
+# half with one province's hub plus five of its service pages, which is the
+# same shape British Columbia opened with on 2026-10-21 and Alberta on
+# 2026-10-30.
+#
+# WHAT IS SOURCED, AND FROM WHERE.
+#   separate_return  Hard rule 8 and plan line 1212: "Alberta AT1 and Quebec
+#                    CO-17 are separate provincial returns and are not included
+#                    in the fee." Sourced to the signed-off plan, not the web,
+#                    exactly as Alberta's AT1 claim is. It is the spine of all
+#                    of these pages, because Quebec and Alberta are the only
+#                    two provinces that administer their own corporate income
+#                    tax.
+#   t2_assessed      553,570, the 2023 tax year, from the CRA's own count
+#                    table: "T2 Corporate Statistical Tables, Table 1, Number
+#                    of Corporations by Jurisdiction, 2018 to 2023", fetched
+#                    2026-11-12 from www.canada.ca and extracted with
+#                    pdftotext. decisions.md 2026-10-21 recorded that this
+#                    figure could not be found because "the CRA T2 statistics
+#                    tables report dollar amounts by jurisdiction, not counts
+#                    of returns". That was wrong: Table 1 is a count table, and
+#                    its 2023 column reproduces the three figures the plan
+#                    states for itself at line 1743 exactly. See
+#                    docs/seo/cra-t2-jurisdiction-counts.json.
+#
+# WHAT IS WITHHELD, AND WHY.
+# Revenu Quebec returns 403 to automated clients, so the two corporation income
+# tax pages could not be read. No CO-17 deadline, no nil-corporation exemption,
+# no CO-17 penalty and no CO-17.SP eligibility is stated anywhere. The
+# Registraire des entreprises pages were not read either, so all six
+# annual-return fields are UNVERIFIED and the guard drops that block whole
+# rather than letting a sourced row sit beside a guessed one. The one claim
+# made about the CO-17 is the one the plan makes.
+#
+# Quebec charges GST plus QST, not HST, so price() gives it the
+# applicable-sales-tax string and no rate or tax-inclusive total appears.
+QC = dict(
+ slug='quebec',
+ name='Quebec',
+ short='QC',
+ title='Nil T2 Filing for Quebec Corporations',
+ h1='Nil T2 Filing in Quebec',
+ meta=('The nil T2 a Quebec corporation files every year, why the Quebec CO-17 '
+       'is a separate return filed with Revenu Quebec, and what the fee covers.'),
+ separate_return='Quebec CO-17',
+ t2_assessed='553,570',
+ registry=UNVERIFIED,
+ annual_filing=UNVERIFIED,
+ annual_due=UNVERIFIED,
+ annual_statute=UNVERIFIED,
+ annual_online=UNVERIFIED,
+ strike_after=UNVERIFIED,
+ quote_tax_total=False,
+ cards='quebec-cards.json',
+ # The five live on 2026-11-12. The other seven cards stay in the file and out
+ # of the hub until they are published, so the hub never links a dead URL.
+ reviewed='November 12, 2026',
+ reviewed_iso='2026-11-12',
+ cards_live=['/nil-t2-filing-quebec/',
+             '/catch-up-nil-t2-filing-quebec/',
+             '/dormant-corporation-filing-quebec/',
+             '/final-t2-before-dissolution-quebec/',
+             '/t2-short-filing-quebec/'],
+)
+
+
+JURISDICTIONS = [BC, AB, QC]
 
 
 def _guard(jurisdictions):
@@ -298,7 +408,7 @@ def build(j):
     name, short = j['name'], j['short']
 
     hero = ('<div class="cnf-hero"><div class="cnf-hero-in"><h1>' + j['h1'] + '</h1>'
-            '<p class="cnf-hero-sub">$300.00 Plus HST Per Tax Year</p>'
+            '<p class="cnf-hero-sub">' + price_title(j) + '</p>'
             '<p class="cnf-hero-lede">We are a registered EFILE electronic filer. Your '
             'return is transmitted to the Canada Revenue Agency electronically.</p>'
             '<p><a class="cnf-hero-btn" href="' + FORM + '">Start Nil T2 Filing NOW</a>'
@@ -317,13 +427,14 @@ def build(j):
     b.append('<p class="cnf-by">Written and reviewed by '
              + a(SITE + '/sharad-gondaliya-cpa/', 'Sharad Gondaliya, CPA (Ontario)')
              + ', CPA Ontario Membership 61040184.</p>')
-    b.append('<p class="cnf-rev">Last reviewed: ' + TODAY + '</p>')
+    b.append('<p class="cnf-rev">Last reviewed: ' + reviewed(j)[0]
+             + '</p>')
 
     # Three-up trust strip, reproducing verbatim the wording already approved
     # and live on /services/. Not a trust-strip wording change.
     b.append('<ul class="cnf-trust"><li>Registered EFILE electronic filer</li>'
              '<li>CRA confirmation within 3 business days</li>'
-             '<li>$300.00 plus HST per tax year</li></ul>')
+             '<li>' + price(j) + '</li></ul>')
 
     b.append('<p>Nil T2 filing in ' + name + ' is the annual T2 return a corporation '
              'with no activity in the tax year still files with the Canada Revenue '
@@ -341,7 +452,8 @@ def build(j):
         b.append('<tr><td>T2 returns assessed</td><td>Canada Revenue Agency T2 '
                  'assessment table</td><td>' + j['t2_assessed'] + '</td></tr>')
         b.append('</tbody></table>')
-        b.append('<p class="cnf-cap">Local data pulled ' + TODAY + '. The T2 '
+        b.append('<p class="cnf-cap">Local data pulled ' + reviewed(j)[0]
+                 + '. The T2 '
                  'assessment count is refreshed when the Canada Revenue Agency '
                  'reissues its annual table.</p>')
 
@@ -371,7 +483,7 @@ def build(j):
                      'A registry filing, not a tax return',
                      'Required, and not covered by the fee'))
     rows.append(('Our fee', 'One nil T2 for one corporation for one tax year',
-                 '$300.00 plus HST'))
+                 price(j).replace(' per tax year', '')))
     b.append(tbl(('Obligation', 'Detail', name), rows))
     if has_annual(j):
         b.append('<p class="cnf-cap">' + name + ' registry rules confirmed '
@@ -452,9 +564,10 @@ def build(j):
                  'T2 return filed with the Canada Revenue Agency, so a nil T2 covers '
                  'both.')
 
-    cost = (PRICE[0].upper() + PRICE[1:] + '. One price for every year and '
-            'every province. No hourly billing and no add-on fees.'
-            ' Tax is added at the rate for your province.')
+    _p = price(j)
+    cost = (_p[0].upper() + _p[1:] + '. One price for every year and '
+            'every province. No hourly billing and no add-on fees. '
+            + tax_line(j))
 
     faq = [
       ('Does ' + art(name) + ' ' + name + ' corporation file a separate '
@@ -495,7 +608,7 @@ def build(j):
        'electronically. Your CRA confirmation is emailed within 3 business days. '
        'Business days are Monday to Friday and exclude ' + name
        + ' statutory holidays.'),
-      ('What if my ' + name + ' corporation is not nil?', NOT_NIL),
+      ('What if my ' + name + ' corporation is not nil?', not_nil(j)),
     ]
     b.append('<h2>Nil T2 Filing in ' + name + ': Frequently Asked Questions</h2>')
     b.append('<div class="cnf-faq">')
@@ -523,7 +636,7 @@ def build(j):
       {"@type": "WebPage", "@id": url + "#page", "url": url, "name": j['title'],
        "description": j['meta'], "inLanguage": "en-CA",
        "about": {"@type": "State", "name": name},
-       "dateModified": ISO,
+       "dateModified": reviewed(j)[1],
        "author": {"@type": "Person", "name": "Sharad Gondaliya",
                   "honorificSuffix": "CPA",
                   "url": SITE + "/sharad-gondaliya-cpa/"}}]}

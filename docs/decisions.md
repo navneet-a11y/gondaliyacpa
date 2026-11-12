@@ -9847,3 +9847,224 @@ Nothing has changed about why: for a nil return the incorporation year does
 not change the answer. Family 10 therefore stands at 14 of a planned 25, and
 closing that gap needs a different idea or a decision to drop the series,
 not another attempt at the same pages.
+
+---
+
+## November 12, 2026 -- Family 4's jurisdiction half opens with Quebec
+
+**Decided by:** Navneet -- "continue with jurisdiction then follow plan for it",
+then "just build main province page and 5 of its pages firsy". The shape is the
+one British Columbia opened with on 2026-10-21 and Alberta on 2026-10-30: the
+hub plus the same first five services.
+
+| ID | URL | Bytes |
+|---|---|---|
+| 2290 | https://corpnilfilingfor300.ca/quebec/ | 32,145 |
+| 2285 | https://corpnilfilingfor300.ca/nil-t2-filing-quebec/ | 11,188 |
+| 2286 | https://corpnilfilingfor300.ca/catch-up-nil-t2-filing-quebec/ | 11,467 |
+| 2287 | https://corpnilfilingfor300.ca/dormant-corporation-filing-quebec/ | 11,164 |
+| 2288 | https://corpnilfilingfor300.ca/final-t2-before-dissolution-quebec/ | 11,177 |
+| 2289 | https://corpnilfilingfor300.ca/t2-short-filing-quebec/ | 10,736 |
+
+`cnf_family` f4 is now 41. Link checker clean: 296 targets across 9 groups, all
+resolving.
+
+### The per-jurisdiction data blocker is cleared, and the earlier finding was wrong
+
+decisions.md 2026-10-21 recorded that the per-province corporation count "could
+not be found: the CRA T2 statistics tables report dollar amounts by
+jurisdiction, not counts of returns", which is why the British Columbia data row
+has no count in it and why plan line 1212's mandatory place data row had nothing
+place-specific to carry outside the three provinces whose figures the plan states
+at line 1743.
+
+**That was wrong.** The CRA publishes "T2 Corporate Statistical Tables, Table 1,
+Number of Corporations by Jurisdiction, 2018 to 2023", which is a count table
+covering all thirteen jurisdictions for six tax years. Fetched 2026-11-12 from
+www.canada.ca, which the environment already allows, and extracted with
+pdftotext. Its 2023 column reproduces the plan's own three figures exactly --
+Ontario 1,108,730, Alberta 365,890, British Columbia 413,630 -- so the plan's
+numbers and these come from one source. Saved as
+[`docs/seo/cra-t2-jurisdiction-counts.json`](seo/cra-t2-jurisdiction-counts.json).
+
+The six-year series is what keeps these pages apart under 6(k): Newfoundland and
+Labrador and the Northwest Territories have fewer corporations than in 2018,
+Nunavut has the same 630 it started with, and Quebec and Manitoba are the only
+two still at their 2023 peak. Each jurisdiction's place paragraph is written
+around its own trajectory. A first pass generated them from the direction of
+travel and produced word-identical sentences for Quebec and Manitoba plus one
+shared sentence across five others; they were rewritten by hand per jurisdiction,
+and `jur_data.py` now asserts no two share a sentence.
+
+Three comparative claims in that first pass were false and were corrected before
+anything was built: Saskatchewan's six-year rise is not the smallest of any
+province (Yukon's and Prince Edward Island's are smaller -- it is the slowest
+*proportionally* except Alberta's), Nova Scotia is not larger than the other
+three Atlantic provinces combined (47,490 against 61,980 -- it is larger than
+Newfoundland and Labrador and Prince Edward Island combined), and the Northwest
+Territories fell in every year of the series, not all but one. The build now
+re-asserts each surviving comparative claim against the table.
+
+### The price string: HST is named only where HST is charged
+
+**Decided by:** Navneet, asked directly -- "Plus hst where application dont write
+hst where its not", and on the live pages "if hst work in these provinces then
+let it be as it is. if not then chaneg also look at plan".
+
+decisions.md 2026-10-21 flagged this as needing a decision **before** these pages
+were built, because the standing "$300.00 plus HST per tax year" "names the wrong
+tax for eight of the thirteen jurisdictions" and called that "a tax-accuracy
+problem, not a style one". Resolved as:
+
+- Five HST jurisdictions (Ontario, Nova Scotia, New Brunswick, Newfoundland and
+  Labrador, Prince Edward Island) keep "$300.00 plus HST per tax year".
+- The other eight read "$300.00 plus applicable sales tax per tax year", the
+  wording approved on 2026-11-11 for the Family 8 non-HST cost pages and already
+  live on the Family 10 pages.
+- No tax rate and no tax-inclusive total appears in either group, per the
+  2026-10-21 ruling that dropped the computation rather than localising it.
+
+Hard rule 9 reads "$300 including HST per tax year" and has not held since the
+2026-09-30 price decision; this narrows the deviation rather than widening it.
+
+**Three gates were requiring the wrong string and so prevented the fix.**
+`build/f4/gate.py` and `build/jurisdictions/gate.py` both asserted `$300.00 plus
+HST` on every page, which is why nothing caught the Alberta and British Columbia
+pages naming a tax neither province charges. Both are now place-aware: they
+assert the string correct for that place, and on a non-HST place they fail if
+HST is named at all (`GST/HST`, the CRA account name, is exempted).
+
+**Corrected in the builders, NOT YET ON THE LIVE PAGES.** Navneet approved the
+fix ("if not then chaneg"), and `british-columbia-cards.json` and
+`alberta-cards.json` now carry the corrected wording in four card descriptions
+each, so `build_jurisdiction.py` regenerates both hubs clean and the hub gate
+passes all three. **Pages 996 and 1548 on the live site still say "plus HST"**:
+only the build files changed today. Ontario is an HST province and was left
+exactly as it is, in the builder and live.
+
+**Still outstanding, as one batch:** the two live hubs above, plus the 24 Family
+4 service pages for British Columbia and Alberta, which still say "plus HST" in
+their body copy -- the gate now flags all 24 and all 12 British Columbia pages
+were seen failing it. That is 26 live pages to republish, and it is the next
+thing to do on this family. The
+national pages do too: `/pricing/` and the home page carry "plus HST" for a
+national audience, and `/how-it-works/` published today reads "plus applicable
+sales tax" because a national page cannot name HST accurately. That split is for
+Sharad Gondaliya, since decisions.md 2026-10-21 records that changing a pricing
+string site-wide is his decision.
+
+### What these pages do not say
+
+Revenu Quebec returns 403 to automated clients, so neither corporation income tax
+page could be read. No CO-17 deadline, no nil-corporation exemption, no CO-17
+penalty and no CO-17.SP eligibility appears anywhere, and the Registraire des
+entreprises pages were not read either, so all six annual-return fields are
+UNVERIFIED and the hub guard drops that block whole. The one CO-17 claim made is
+the one the signed-off plan makes itself at line 1212 and in hard rule 8: it is a
+separate provincial return, filed with Revenu Quebec, not covered by the fee.
+Same treatment Alberta's registry facts got on 2026-10-30.
+
+### 6(k) similarity, and a measurement error that was understating it
+
+Quebec's worst pair anywhere is **0.77**; the 30 pre-existing pages' worst is
+**0.83**. Both are above 6(k)'s 0.60 rewrite threshold, as every live Family 4
+page has been.
+
+The first draft measured 0.83 against the Alberta page, because it mirrored
+Alberta's structure -- an H2 reading "Why Quebec Is Not Like Most Provinces"
+against Alberta's "Why Alberta Is Not Like Most Provinces", and a catch-up
+section differing by a placename. Quebec's sections were rewritten to its own
+angle: Alberta's pages are built around two returns rather than one, Quebec's
+around two assessing authorities with separate records and separate
+correspondence. That took the Quebec-to-Alberta pairs out of the top five
+entirely.
+
+**The 0.78 maximum recorded on 2026-10-21 was measured with a flawed method.**
+difflib's autojunk heuristic means `SequenceMatcher(None, a, b).ratio()` does not
+equal `ratio(b, a)`: the same pair measured 0.64 one way round and 0.76 the
+other, so the figure depended on alphabetical accident and the lower reading
+understated duplication. `build/f4/similarity.py` now measures word tokens with
+autojunk off, in both orders, and takes the higher. On that basis the live pages
+are 0.83, not 0.78. No page moved; the number was wrong, not the pages.
+
+### /quebec/ is an off-plan URL
+
+The plan has no `/quebec/`. Family 3 is 15 city hubs, three of which 6(k)
+replaces with jurisdiction hubs at `/ontario/`, `/alberta/` and
+`/british-columbia/`. Quebec is a fourth jurisdiction hub and appears in neither
+6(a) nor Appendix A, but the Family 4 Quebec pages need a parent for their
+breadcrumb and for line 1526's "parent city hub or jurisdiction pillar". It is
+built as a necessary off-plan hub and takes the site one URL past 1,423. It
+carries no `cnf_family` term, matching `/alberta/` and `/british-columbia/`,
+which carry none either -- a reporting gap against line 325 that covers all three.
+
+Also noted: `/alberta/` records `cnf_child_count` 0 while linking twelve
+children. `/quebec/` records 5.
+
+### A per-jurisdiction review date, and two meta fields with nowhere to live
+
+`TODAY` was module-level in `build_jurisdiction.py`, so the Quebec hub first
+rendered with British Columbia and Alberta's October 30 review date and
+`dateModified`. The date on a page is the date its own text was checked, so it is
+now per jurisdiction. Alberta keeps October 30.
+
+`cnf_price` and `cnf_overflow_price` were refused by the REST API: plan line 311
+registers `cnf_price_incl_hst` and `cnf_overflow_price_incl_hst`, and there is no
+registered field for a price that is not HST-inclusive. Both HST fields are left
+empty on the Quebec pages rather than filled with a figure that would be wrong,
+and the non-HST price lives only in the body and in
+`cnf_unique_data_block_json`. The schema needs a field that is not named after
+one province's tax.
+
+---
+
+## November 12, 2026 -- /how-it-works/ and /faq/
+
+**Decided by:** Navneet -- "also, create these 28. How It Works, FAQ, About,
+Refund Policy if you have data for it", then "we already have about check other
+3".
+
+| ID | URL | Bytes |
+|---|---|---|
+| 2291 | https://corpnilfilingfor300.ca/how-it-works/ | 9,660 |
+| 2292 | https://corpnilfilingfor300.ca/faq/ | 11,139 |
+
+`/about/` is live at page 319 and was not rebuilt.
+
+**Refund Policy was not built.** CLAUDE.md puts legal page text out of scope
+("supplied by Sharad Gondaliya and published as supplied") and Section 7.9 makes
+him Family 15's owner. The only refund wording anywhere on the site is one
+sentence inside the not-nil block: "If we find it after you pay, we refund you in
+full." A refund policy needs what that sentence does not say -- the window, what
+stops being refundable once a return is transmitted to the CRA, how a refund is
+paid back, and how it meets `/complaints-and-resolution/`. Writing those would be
+inventing the firm's contractual terms. It is his to supply.
+
+**Both are Appendix A slugs and appear nowhere in 6(a).** decisions.md 2026-09-28
+records that the two Family 15 lists are disjoint but for three slugs and that
+Sharad Gondaliya picks the set. These two lean it toward Appendix A, which is
+worth his attention when he rules -- and `/faq/`'s presence in Appendix A sits
+oddly beside hard rule 6, which is handled by keeping the question format and
+emitting no FAQPage markup, per line 1582.
+
+`/how-it-works/` reproduces Section 2.8's ten-step strip verbatim and in order,
+because line 1225 makes the home page the single source and says it is never
+reordered. The one departure is the fee line, as above.
+
+`/faq/` answers eight questions in two or three sentences each and links to the
+Family 5 answer page carrying the full version. It deliberately does not restate
+those answers: 46 are live, and a page that reproduced them would be the
+duplicate pattern 6(k) exists to catch.
+
+**A styling defect was caught before publishing, the same one the Family 10 build
+hit.** Both pages import the Family 4 style block, which defines neither
+`.cnf-steps` nor any of the `.cnf-faq` disclosure rules, so the ten-step list and
+every question on `/faq/` would have rendered unstyled. The missing rules are
+appended from the ones already live on the jurisdiction hubs, and the builder now
+fails if any `cnf-` class is used without a CSS rule.
+
+**Sharad Gondaliya's sign-off is outstanding on all eight pages published today**,
+as it is on every one of the 302 already live. Family 4's jurisdiction template
+and the two Family 15 pages are the items to put in front of him first: the
+template sets the pattern for the remaining 115 jurisdiction pages, and the
+Family 15 pair pre-empts a list decision that is his.

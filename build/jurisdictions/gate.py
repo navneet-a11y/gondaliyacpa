@@ -34,21 +34,34 @@ for r in recs:
     for bad in ['FAQPage', 'HowTo', 'aggregateRating', '"Review"']:
         if bad in c:
             fail.append('%s: banned schema %s' % (s, bad))
-    # hard rule 9 and the standing correction
-    if '$300.00 plus HST' not in c:
-        fail.append('%s: price line missing' % s)
+    # The price line. Navneet, 2026-11-12: name HST only where HST is charged.
+    # So the gate asserts the string that is CORRECT for this jurisdiction, and
+    # the two are not interchangeable: a missing price line still fails, and so
+    # does the wrong tax for the place.
+    if s in HST_JURISDICTIONS:
+        if '$300.00 plus HST' not in c:
+            fail.append('%s: price line missing (HST jurisdiction)' % s)
+        if 'gondaliyacpa.ca at $350.00 plus HST' not in c:
+            fail.append('%s: missing the overflow routing line' % s)
+    else:
+        if '$300.00 plus applicable sales tax' not in c:
+            fail.append('%s: price line missing (non-HST jurisdiction)' % s)
+        if 'gondaliyacpa.ca at $350.00 plus applicable sales tax' not in c:
+            fail.append('%s: missing the overflow routing line' % s)
+        # The real protection: HST must not be named at all where it is not
+        # charged. This is what the old hardcoded assertion was preventing
+        # anyone from fixing, because it REQUIRED the wrong string.
+        if 'HST' in c.replace('GST/HST', ''):
+            fail.append('%s: HST named on a non-HST jurisdiction' % s)
     if 'including HST' in c:
         fail.append('%s: "including HST" contradicts the standing correction' % s)
-    # HST accuracy: no HST rate or HST-inclusive total outside an HST province
-    if s not in HST_JURISDICTIONS:
-        for m in re.finditer(r'(\d+)\s*per cent HST|HST[^.]{0,30}\$[\d,]+\.\d\d', c):
-            fail.append('%s: HST computation on a non-HST jurisdiction: "%s"'
-                        % (s, m.group(0)))
+    # No tax rate and no tax-inclusive total anywhere, in either group: the
+    # 2026-10-21 ruling dropped the computation rather than localising it.
+    for m in re.finditer(r'(\d+)\s*per cent HST|HST[^.]{0,30}\$[\d,]+\.\d\d', c):
+        fail.append('%s: HST computation on the page: "%s"' % (s, m.group(0)))
     # hard rule 8: the not-nil routing block
     if 'is not nil' not in c:
         fail.append('%s: missing the not-nil statement' % s)
-    if 'gondaliyacpa.ca at $350.00 plus HST' not in c:
-        fail.append('%s: missing the overflow routing line' % s)
     # structure
     if c.count('<h1>') != 1:
         fail.append('%s: %d H1' % (s, c.count('<h1>')))
