@@ -10193,3 +10193,37 @@ hub lists five of its twelve children until that is finished.** Nothing is
 broken on the seven new pages themselves; they are published, linked from their
 own breadcrumbs, and reachable. The lesson for next time is not to send
 concurrent writes to one post.
+
+### How to finish the Quebec hub
+
+Three attempts to reach the site failed. The first was the WordPress REST API
+returning 500 then 503; the next two were the `corpnil` MCP server itself
+failing to connect, with the same error against api.anthropic.com that
+Google Drive, Claude Docs, `opencorp`, `gondaliya_cpa` and
+`wealthscale_ca_WordPress` returned at the same time. Six unrelated services
+failing together points at the MCP gateway rather than at
+corpnilfilingfor300.ca, so the earlier note in this log suggesting the site
+itself was down should be read with that in mind. It was not confirmed either
+way: this session cannot fetch the site, because the egress proxy refuses the
+domain.
+
+**State:** page 2290 lists 5 of its 12 children. Its review date reads
+November 13; its `dateModified` still reads 2026-11-12.
+
+**To finish**, from `build/jurisdictions/quebec.html` (which is correct and
+complete at 38,907 bytes), apply three edits to post 2290 **one at a time**.
+Sending them concurrently is what collided the first time.
+
+1. Insert lines 77 to 83 of that file (the seven `<li class="cnf-box">` cards,
+   about 6.7 KB) immediately before the closing `</ul>`. Anchor the replace on
+   `/t2-short-filing-quebec/">Learn more</a></li>`, which occurs exactly once.
+2. `Local data pulled November 12, 2026` becomes `November 13, 2026`.
+3. `"dateModified": "2026-11-12"` becomes `"2026-11-13"`.
+
+Then purge the cache for post 2290 only and confirm the result matches
+`build/jurisdictions/quebec.html`. Alternatively the seven cards can be pasted
+into the page in WordPress by hand: they are self-contained list items.
+
+Nothing depends on this being done. The twelve service pages are live, correct
+and reachable, and each links back to the hub; only the hub's own card list
+under-reports what exists.
