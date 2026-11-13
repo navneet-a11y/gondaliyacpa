@@ -360,15 +360,11 @@ QC = dict(
  strike_after=UNVERIFIED,
  quote_tax_total=False,
  cards='quebec-cards.json',
- # The five live on 2026-11-12. The other seven cards stay in the file and out
- # of the hub until they are published, so the hub never links a dead URL.
- reviewed='November 12, 2026',
- reviewed_iso='2026-11-12',
- cards_live=['/nil-t2-filing-quebec/',
-             '/catch-up-nil-t2-filing-quebec/',
-             '/dormant-corporation-filing-quebec/',
-             '/final-t2-before-dissolution-quebec/',
-             '/t2-short-filing-quebec/'],
+ # All twelve published: five on 2026-11-12 and the remaining seven on
+ # 2026-11-13, so cards_live is gone and the whole card file is used,
+ # exactly as it is for Alberta and British Columbia.
+ reviewed='November 13, 2026',
+ reviewed_iso='2026-11-13',
 )
 
 

@@ -10110,3 +10110,86 @@ as it is on every one of the 302 already live. Family 4's jurisdiction template
 and the two Family 15 pages are the items to put in front of him first: the
 template sets the pattern for the remaining 115 jurisdiction pages, and the
 Family 15 pair pre-empts a list decision that is his.
+
+---
+
+## November 13, 2026 -- Quebec completed: the remaining seven service pages
+
+**Decided by:** Navneet -- "continue next pages for quebec". Quebec is now the
+full twelve-service set from plan line 304, matching Ontario, British Columbia
+and Alberta.
+
+| ID | URL |
+|---|---|
+| 2345 | /nil-t2-filing-cost-in-quebec/ |
+| 2347 | /unfiled-corporate-tax-returns-quebec/ |
+| 2348 | /no-activity-corporation-tax-return-quebec/ |
+| 2349 | /numbered-corporation-nil-filing-quebec/ |
+| 2350 | /inactive-holding-corporation-t2-filing-quebec/ |
+| 2351 | /nil-t2-filing-deadline-quebec/ |
+| 2352 | /nil-t2-filing-for-non-resident-owned-corporations-quebec/ |
+
+These seven carry their own review date, November 13, as Alberta's later seven
+carry November 2: the date on a page is the date its text was checked, not the
+date the province opened.
+
+### Two gates caught two of my own errors before anything published
+
+- **HST named on a non-HST page.** The cost page read "Quebec charges GST and
+  QST rather than HST". True, but it names HST on a page for a province that
+  does not charge it, which is exactly what the 2026-11-12 gate was built to
+  stop. Reworded to "Quebec charges GST and QST", and the H2 above it from
+  "Tax, and the One Thing Quebec Adds" to "Sales Tax, ...".
+- **An unapproved money figure.** The non-resident page stated the $100.00
+  minimum late-filing penalty alongside the $25.00 per day and $2,500.00
+  maximum. The figure is right, but it is not in the Section 7.4 qualification
+  block and the Ontario, British Columbia and Alberta non-resident pages do not
+  carry it. Dropped rather than widening ALLOWED_MONEY, so all four provinces
+  state the penalty identically.
+
+### Hard rule 8 on the holding page
+
+`/inactive-holding-corporation-t2-filing-quebec/` states in its first paragraph
+that a holding corporation with investment income, rental income, or dividends
+paid or received is not nil, and the page then works through what counts as
+income to a holding corporation specifically. `cnf_unique_data_block_json`
+carries `holding_corporation_with_income_is_not_nil: true`.
+
+### 6(k) similarity
+
+Quebec's worst pair across all twelve is **0.79**, against **0.83** for the 30
+pages built before it. The three highest Quebec pairs all involve the
+non-resident page, which shares the Section 7.4 qualification block with the
+catch-up, final-return and deadline pages; that block is mandatory and fixed
+wording, so the overlap is not removable without breaking rule 3.
+
+### A card description contradicted the page it linked to
+
+The Quebec card set was derived from Alberta's, and the numbered-corporation
+card read "filed under its registered number" while the page it links to says
+the T2 is filed under the Business Number and that the two numbers are not
+interchangeable. Corrected in `quebec-cards.json` to "filed under its Business
+Number". **The same wording is live on the Alberta and British Columbia hubs
+and should be corrected there too.**
+
+### The container fix from 2026-11-12 is now in the Family 4 builder
+
+`build_f4_qc.py` appends the `.cnf-w` and `.cnf-hero-in` width overrides that
+`/how-it-works/` and `/faq/` needed, so these seven shipped with them. The five
+Quebec pages published on 2026-11-12, the 30 earlier Family 4 pages and all
+three jurisdiction hubs do NOT have them. Whether they need them depends on
+whether Astra's full-width container overrides the wrapper on a page-builder
+layout as well, which has not been confirmed on a Family 4 page -- Navneet was
+asked to check one and the answer is outstanding.
+
+### The site returned 500s partway through the hub update
+
+After the seven pages published, three edits to the hub (2290) were sent close
+together; the first applied, the second timed out and the third failed, and the
+REST API then returned Internal Server Error to every call. The hub is
+therefore part-updated: its review date reads November 13 but the seven new
+cards are NOT yet inserted and `dateModified` still reads 2026-11-12. **The
+hub lists five of its twelve children until that is finished.** Nothing is
+broken on the seven new pages themselves; they are published, linked from their
+own breadcrumbs, and reachable. The lesson for next time is not to send
+concurrent writes to one post.
