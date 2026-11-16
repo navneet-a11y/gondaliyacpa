@@ -5,11 +5,12 @@ stylesheet, same section order, same schema shape, same closing furniture.
 
 Two deliberate differences from the Ontario siblings, both logged:
 
- 1. No HST computation. Ontario's pages carry "plus $39.00 HST at 13 per cent,
-    so $339.00". British Columbia is not an HST province, so the arithmetic
-    would be wrong. These pages carry the price string only and say tax is
-    added at the rate for the province. The underlying "plus HST" wording
-    question is still open with Sharad Gondaliya.
+ 1. No tax computation, and no HST named. Ontario's pages carry "plus $39.00
+    HST at 13 per cent, so $339.00". British Columbia charges no HST, so both
+    the arithmetic and the word would be wrong. Per Navneet, 2026-11-12, these
+    pages read "$300.00 plus applicable sales tax per tax year" and name no
+    rate and no tax-inclusive total. They shipped on 2026-10-21 naming HST
+    anyway; that was corrected across all twelve on 2026-11-16.
  2. The 7.5 rule 3 byline, with the membership number. The Ontario siblings
     carry the shorter "By Sharad Gondaliya, CPA", which does not satisfy that
     rule. New pages are written to the rule rather than to the defect.
@@ -26,6 +27,8 @@ SITE = 'https://corpnilfilingfor300.ca'
 FORM = SITE + '/form/'
 HUB  = SITE + '/british-columbia/'
 PLACE, SHORT = 'British Columbia', 'BC'
+# Read by gate.py to pick the price string this place must carry.
+PLACE_SLUG = 'british-columbia'
 TODAY, ISO = 'October 21, 2026', '2026-10-21'
 
 REGISTRY = 'BC Registries and Online Services'
@@ -61,7 +64,7 @@ NOT_NIL_1 = ('This service is for a corporation with no activity in the tax year
 NOT_NIL_2 = ('Other cases that are not nil include a corporation that is not a '
              'Canadian-controlled private corporation, an amalgamation, or a '
              'corporation already dissolved or struck. We route you to our sister '
-             'office at gondaliyacpa.ca at $350.00 plus HST per tax year before you '
+             'office at gondaliyacpa.ca at $350.00 plus applicable sales tax per year before you '
              'pay. If we find it after you pay, we refund you in full.')
 
 def a(h, t):
@@ -84,7 +87,7 @@ SERVICES = [
         'income tax is reported on the federal T2, so there is no separate British '
         'Columbia corporate income tax return to file alongside it. We prepare the '
         'return, a CPA reviews it, and we transmit it electronically for $300.00 '
-        'plus HST per tax year.'],
+        'plus applicable sales tax per tax year.'],
   extra=[('What Makes a Return Nil',
           ['A nil return reports no income and no expenses for the tax year. The '
            'corporation still exists, still has a Business Number, and still has a '
@@ -95,7 +98,7 @@ SERVICES = [
            + REGISTRY + '. It confirms the company&rsquo;s directors and registered '
            'office, carries no tax, and is not covered by the $300.00 fee.'])],
   excerpt='Nil T2 filing for British Columbia corporations with no activity in the '
-          'tax year. $300.00 plus HST per tax year.'),
+          'tax year. $300.00 plus applicable sales tax per tax year.'),
 
  dict(
   slug='catch-up-nil-t2-filing-british-columbia',
@@ -107,7 +110,7 @@ SERVICES = [
   lead=['If a British Columbia corporation has not filed for several years, each of '
         'those years is still outstanding and each one is a separate return. We file '
         'them together, oldest year first, so the Canada Revenue Agency processes '
-        'them in the order they fell due. Each tax year is $300.00 plus HST, because '
+        'them in the order they fell due. Each tax year is $300.00 plus applicable sales tax, because '
         'each tax year is its own T2.'],
   extra=[('Why the Oldest Year Goes First',
           ['A T2 carries forward figures from the year before it, so the years have '
@@ -118,7 +121,7 @@ SERVICES = [
            'activity in each of them. If any year turns out not to be nil, we tell '
            'you before you pay for that year.'])],
   excerpt='Catch up every unfiled year for a British Columbia corporation, oldest '
-          'year first. $300.00 plus HST per tax year.'),
+          'year first. $300.00 plus applicable sales tax per tax year.'),
 
  dict(
   slug='dormant-corporation-filing-british-columbia',
@@ -133,7 +136,7 @@ SERVICES = [
         'Agency within six months of each fiscal year-end, and still files its '
         'British Columbia annual report with ' + REGISTRY + ', every year until it '
         'is formally dissolved. If the dormant corporation had no activity in the '
-        'tax year, we file its nil T2 for $300.00 plus HST. Filing does not dissolve '
+        'tax year, we file its nil T2 for $300.00 plus applicable sales tax. Filing does not dissolve '
         'the corporation. It keeps the corporation&rsquo;s tax record clean while you '
         'decide whether to restart it or close it.'],
   extra=[('Dormant Is Not the Same as Dissolved',
@@ -148,7 +151,7 @@ SERVICES = [
            + a(SITE + '/final-t2-before-dissolution-british-columbia/',
                'final T2 before dissolution in British Columbia') + '.'])],
   excerpt='Nil T2 filing for dormant British Columbia corporations with no activity '
-          'in the tax year. $300.00 plus HST per tax year.'),
+          'in the tax year. $300.00 plus applicable sales tax per tax year.'),
 
  dict(
   slug='final-t2-before-dissolution-british-columbia',
@@ -160,7 +163,7 @@ SERVICES = [
   lead=['A corporation being wound up files one last T2, covering the period that '
         'ends on the date of dissolution. It is due within six months of that date. '
         'If the corporation had no activity in that final period, we file it as a '
-        'nil return for $300.00 plus HST.'],
+        'nil return for $300.00 plus applicable sales tax.'],
   extra=[('Clear the Earlier Years First',
           ['Unfiled years block a clearance certificate, and they block the '
            'dissolution itself, so the final return is rarely the only one '
@@ -170,7 +173,7 @@ SERVICES = [
            '. It is not covered by the $300.00 fee, and filing the final T2 does not '
            'dissolve the corporation on its own.'])],
   excerpt='The final T2 for a British Columbia corporation being wound up, due '
-          'within six months of dissolution. $300.00 plus HST per tax year.'),
+          'within six months of dissolution. $300.00 plus applicable sales tax per tax year.'),
 
  dict(
   slug='t2-short-filing-british-columbia',
@@ -182,7 +185,7 @@ SERVICES = [
   lead=['The T2 Short is a two-page version of the T2 return. A British Columbia '
         'corporation may use it only where it meets every one of the Canada Revenue '
         'Agency&rsquo;s conditions for the short return. Where it qualifies, we file '
-        'it, and it is included in the $300.00 plus HST fee rather than charged '
+        'it, and it is included in the $300.00 plus applicable sales tax fee rather than charged '
         'separately.'],
   extra=[('We Check Before We File',
           ['Meeting most of the conditions is not enough, so we check every one of '
@@ -192,7 +195,7 @@ SERVICES = [
            'Either way the return is reviewed by a CPA and transmitted '
            'electronically to the Canada Revenue Agency.'])],
   excerpt='T2 Short filing for British Columbia corporations that meet every CRA '
-          'condition for the short return. $300.00 plus HST per tax year.'),
+          'condition for the short return. $300.00 plus applicable sales tax per tax year.'),
  dict(
   slug='unfiled-corporate-tax-returns-british-columbia',
   reviewed='October 23, 2026', reviewed_iso='2026-10-23',
@@ -204,7 +207,7 @@ SERVICES = [
   lead=['An unfiled T2 year does not close itself. It stays open on the '
         'corporation&rsquo;s record indefinitely, and no number of later filings '
         'settles it. A British Columbia corporation with four unfiled years owes '
-        'four returns, each for its own tax year, at $300.00 plus HST per tax '
+        'four returns, each for its own tax year, at $300.00 plus applicable sales tax per tax '
         'year.'],
   extra=[('What an Unfiled Year Costs',
           ['A true nil return carries no percentage late-filing penalty, because '
@@ -223,7 +226,7 @@ SERVICES = [
            'unfiled T2. A corporation can be fully current with the Canada Revenue '
            'Agency and still be struck from the register.'])],
   excerpt='Bring every unfiled year up to date for a British Columbia corporation. '
-          '$300.00 plus HST per tax year.'),
+          '$300.00 plus applicable sales tax per tax year.'),
 
  dict(
   slug='no-activity-corporation-tax-return-british-columbia',
@@ -237,7 +240,7 @@ SERVICES = [
         'files a T2 for that year, within six months of its fiscal year-end. There '
         'is no status to elect that pauses the obligation, and no threshold below '
         'which it stops. The return reports no income and no expenses, and it costs '
-        '$300.00 plus HST per tax year.'],
+        '$300.00 plus applicable sales tax per tax year.'],
   extra=[('What Counts as No Activity',
           ['No revenue of any kind, no expense claimed, no payroll, no asset bought '
            'or sold, no dividend paid or received, and no inter-company '
@@ -249,7 +252,7 @@ SERVICES = [
            'Schedules 100, 125 and 141 required, and those are included in the '
            'fee.'])],
   excerpt='File a no-activity T2 for a British Columbia corporation. $300.00 plus '
-          'HST per tax year.'),
+          'applicable sales tax per tax year.'),
 
  dict(
   slug='numbered-corporation-nil-filing-british-columbia',
@@ -262,7 +265,7 @@ SERVICES = [
   lead=['A numbered British Columbia company files exactly as a named one does. The '
         'absence of a trading name changes nothing about the obligation: the T2 is '
         'due within six months of the fiscal year-end, every year, until the '
-        'company is formally dissolved. The fee is $300.00 plus HST per tax '
+        'company is formally dissolved. The fee is $300.00 plus applicable sales tax per tax '
         'year.'],
   extra=[('Why Numbered Companies Fall Behind',
           ['A numbered company is often incorporated to hold a name, a future '
@@ -276,7 +279,7 @@ SERVICES = [
            'including the company number and the suffix. A name that does not match '
            'the register is one of the common causes of a rejected transmission, '
            'and one corrected transmission is included in the fee.'])],
-  excerpt='Nil T2 filing for a numbered British Columbia company. $300.00 plus HST '
+  excerpt='Nil T2 filing for a numbered British Columbia company. $300.00 plus applicable sales tax '
           'per tax year.'),
 
  dict(
@@ -305,7 +308,7 @@ SERVICES = [
            'fiscal year-end, so the two deadlines rarely fall together and missing '
            'one does not show up in the other.'])],
   excerpt='When a nil T2 is due for a British Columbia corporation, and how it '
-          'differs from the annual report. $300.00 plus HST per tax year.'),
+          'differs from the annual report. $300.00 plus applicable sales tax per tax year.'),
 
  dict(
   slug='nil-t2-filing-cost-in-british-columbia',
@@ -316,15 +319,15 @@ SERVICES = [
   keyword='nil t2 filing cost british columbia',
   national=('/pricing/nil-t2-filing-cost/', 'nil T2 filing cost'),
   lead_h2='What a Nil T2 Return Costs a British Columbia Corporation',
-  lead=['$300.00 plus HST per tax year. Two years is $600.00, three is $900.00 and '
+  lead=['$300.00 plus applicable sales tax per tax year. Two years is $600.00, three is $900.00 and '
         'five is $1,500.00, each before tax, because each tax year is a separate '
         'return carrying the same preparation and the same CPA review. There is no '
         'reduced rate for filing several years together.',
-        'British Columbia is not an HST province, so tax is added at the rate that '
-        'applies to your province rather than at a single harmonised rate. British '
-        'Columbia corporate income tax is reported on the federal T2, so there is '
-        'no second provincial filing fee of the kind an Alberta or Quebec '
-        'corporation faces.'],
+        'The sales tax added at checkout is the tax that applies where your '
+        'corporation is resident, so the figure you pay depends on your province '
+        'rather than on ours. British Columbia corporate income tax is reported on '
+        'the federal T2, so there is no second provincial filing fee of the kind an '
+        'Alberta or Quebec corporation faces.'],
   extra=[('What the Fee Includes',
           ['One nil T2 for one corporation for one tax year, including the T2 Short '
            'where the corporation qualifies, GIFI Schedules 100, 125 and 141 where '
@@ -337,7 +340,7 @@ SERVICES = [
            'The price does not change with the age of the year, the size of the '
            'corporation or the number of shareholders.'])],
   excerpt='What a nil T2 return costs a British Columbia corporation. $300.00 plus '
-          'HST per tax year.'),
+          'applicable sales tax per tax year.'),
 
  dict(
   slug='nil-t2-filing-for-non-resident-owned-corporations-british-columbia',
@@ -349,7 +352,7 @@ SERVICES = [
   lead_h2='Non-Resident-Owned British Columbia Corporations',
   lead=['A British Columbia corporation owned from outside Canada files a T2 on the '
         'same timetable as any other: within six months of its fiscal year-end, '
-        'every year, until it is formally dissolved. The fee is $300.00 plus HST '
+        'every year, until it is formally dissolved. The fee is $300.00 plus applicable sales tax '
         'per tax year, and the whole process is completed online.'],
   extra=[('The Penalty That Does Not Depend on Tax Owing',
           ['A true nil return carries no percentage late-filing penalty, because '
@@ -368,7 +371,7 @@ SERVICES = [
            'portal. There is no requirement to be in Canada, and no meeting is '
            'needed at any point.'])],
   excerpt='Nil T2 filing for a non-resident-owned British Columbia corporation, and '
-          'the $25.00 a day exposure. $300.00 plus HST per tax year.'),
+          'the $25.00 a day exposure. $300.00 plus applicable sales tax per tax year.'),
 
  dict(
   slug='inactive-holding-corporation-t2-filing-british-columbia',
@@ -382,12 +385,12 @@ SERVICES = [
   lead=['A holding corporation with investment income, a rental corporation and a '
         'corporation that paid or received a dividend are not nil. Those are '
         'handled by Gondaliya CPA Professional Corporation at gondaliyacpa.ca at '
-        '$350.00 plus HST per year.',
+        '$350.00 plus applicable sales tax per year.',
         'A British Columbia holding corporation is nil for this service only where '
         'it held its assets through the whole tax year and they earned nothing at '
         'all: no dividend received, no dividend paid, no rent, no interest and no '
         'inter-company transaction. That corporation still files a T2 within six '
-        'months of its fiscal year-end, at $300.00 plus HST per tax year.'],
+        'months of its fiscal year-end, at $300.00 plus applicable sales tax per tax year.'],
   extra=[('The Interest a Holding Corporation Forgets',
           ['The most common reason a holding corporation believed to be nil is not '
            'nil is a few dollars of interest credited on a bank balance nobody '
@@ -403,7 +406,7 @@ SERVICES = [
            'per cent or more, and holding structures concentrate ownership, so it '
            'is almost always needed.'])],
   excerpt='When a British Columbia holding corporation is nil and when it is not. '
-          '$300.00 plus HST per tax year.'),
+          '$300.00 plus applicable sales tax per tax year.'),
 
 ]
 
@@ -411,8 +414,8 @@ SERVICES = [
 def build(s):
     url = SITE + '/' + s['slug'] + '/'
     b = ['<!-- wp:html -->', CSS + '<div class="cnf-hero"><div class="cnf-hero-in">'
-         '<h1>' + s['title'] + '</h1><p class="cnf-hero-sub">$300.00 Plus HST Per Tax '
-         'Year</p><p class="cnf-hero-lede">We are a registered EFILE electronic filer. '
+         '<h1>' + s['title'] + '</h1><p class="cnf-hero-sub">$300.00 Plus Applicable '
+         'Sales Tax Per Tax Year</p><p class="cnf-hero-lede">We are a registered EFILE electronic filer. '
          'Your return is transmitted to the Canada Revenue Agency electronically.</p>'
          '<p><a class="cnf-hero-btn" href="' + FORM + '">Start Nil T2 Filing NOW</a>'
          '</p></div></div>']
@@ -465,7 +468,7 @@ def build(s):
     b.append('<ol><li>Type your corporation name. We fill the Business Number and '
              'incorporation date.</li><li>Pick the tax years to file and confirm the '
              'corporation had no activity in each of them.</li><li>Complete the '
-             'attestation and identity check, then pay $300.00 plus HST per tax '
+             'attestation and identity check, then pay $300.00 plus applicable sales tax per tax '
              'year.</li><li>Sign Form T183CORP. We transmit your return '
              'electronically.</li></ol>')
     b.append('<p>Your CRA confirmation is emailed within 3 business days. Business '
@@ -477,7 +480,7 @@ def build(s):
     # word is simply dropped. Those pages name their own heading instead.
     b.append('<h2>' + s.get('cost_h2', s['title'].replace(' in ' + PLACE, '')
                             + ' Cost in ' + PLACE) + '</h2>')
-    b.append('<p>$300.00 plus HST per tax year. Each tax year is a separate return '
+    b.append('<p>$300.00 plus applicable sales tax per tax year. Each tax year is a separate return '
              'and carries the same fee. Tax is added at the rate for your province. '
              'See the full ' + a(SITE + '/pricing/nil-t2-filing-cost/',
                                  'nil T2 filing cost') + '.</p>')
@@ -510,7 +513,7 @@ def build(s):
        "provider": {"@id": SITE + "/#accountingservice"},
        "offers": {"@type": "Offer", "name": s['title'], "price": "300.00",
                   "priceCurrency": "CAD",
-                  "description": "$300.00 plus HST per tax year", "url": FORM,
+                  "description": "$300.00 plus applicable sales tax per tax year", "url": FORM,
                   "areaServed": {"@type": "State", "name": PLACE}}},
       {"@type": "BreadcrumbList", "itemListElement": [
         {"@type": "ListItem", "position": 1, "name": "Nil T2 filing in Canada",
@@ -535,8 +538,9 @@ def meta(s):
      'cnf_provincial_return_name':
         'None. British Columbia corporate income tax is reported on the federal T2 '
         'return.',
-     # left empty on purpose: BC is not an HST province, so an HST-inclusive
-     # figure would be wrong, and the "plus HST" wording is still open
+     # left empty on purpose: BC charges no HST, so an HST-inclusive figure
+     # would be wrong, and the schema has no field for a non-HST price. The
+     # gap is open with Sharad Gondaliya.
      'cnf_price_incl_hst': '', 'cnf_overflow_price_incl_hst': '',
      'cnf_deadline_rule':
         "The T2 is due within six months of the corporation's fiscal year-end, every "

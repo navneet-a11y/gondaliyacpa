@@ -59,6 +59,8 @@ from build_f4_bc import CSS, NOT_NIL_1, NOT_NIL_2, a, SITE, FORM
 HERE = os.path.dirname(os.path.abspath(__file__))
 HUB = SITE + '/alberta/'
 PLACE, SHORT = 'Alberta', 'AB'
+# Read by gate.py to pick the price string this place must carry.
+PLACE_SLUG = 'alberta'
 TODAY, ISO = 'October 30, 2026', '2026-10-30'
 # The seven pages added on 2026-11-02, and the final-T2 page whose lead was
 # rewritten that day, carry their own review date: the date on the page is
@@ -129,7 +131,7 @@ SERVICES = [
         'files a T2 with the Canada Revenue Agency within six months of its fiscal '
         'year-end, every year until it is formally dissolved, whether or not it '
         'earned anything. We prepare the return, a CPA reviews it, and we transmit '
-        'it electronically for $300.00 plus HST per tax year.',
+        'it electronically for $300.00 plus applicable sales tax per tax year.',
         AT1_SENTENCE],
   extra=[('What Makes a Return Nil',
           ['A nil return reports no income and no expenses for the tax year. The '
@@ -147,7 +149,7 @@ SERVICES = [
            'return and is not covered by the $300.00 fee, and we tell you that '
            'before you pay rather than after.'])],
   excerpt='Nil T2 filing for Alberta corporations with no activity in the tax '
-          'year. $300.00 plus HST per tax year.'),
+          'year. $300.00 plus applicable sales tax per tax year.'),
 
  dict(
   slug='catch-up-nil-t2-filing-alberta',
@@ -159,7 +161,7 @@ SERVICES = [
   lead=['If an Alberta corporation has not filed for several years, each of those '
         'years is still outstanding and each one is a separate return. We file them '
         'together, oldest year first, so the Canada Revenue Agency processes them in '
-        'the order they fell due. Each tax year is $300.00 plus HST, because each '
+        'the order they fell due. Each tax year is $300.00 plus applicable sales tax, because each '
         'tax year is its own T2.'],
   extra=[('Why the Oldest Year Goes First',
           ['A T2 carries forward figures from the year before it, so the years have '
@@ -180,7 +182,7 @@ SERVICES = [
            'We tell you how many federal years we found outstanding, so you know '
            'the shape of what is left.'])],
   excerpt='Catch up every unfiled year for an Alberta corporation, oldest year '
-          'first. $300.00 plus HST per tax year.'),
+          'first. $300.00 plus applicable sales tax per tax year.'),
 
  dict(
   slug='dormant-corporation-filing-alberta',
@@ -194,7 +196,7 @@ SERVICES = [
         'anything. The corporation still files a T2 with the Canada Revenue Agency '
         'within six months of each fiscal year-end, every year until it is formally '
         'dissolved. If the dormant corporation had no activity in the tax year, we '
-        'file its nil T2 for $300.00 plus HST. Filing does not dissolve the '
+        'file its nil T2 for $300.00 plus applicable sales tax. Filing does not dissolve the '
         'corporation. It keeps the corporation&rsquo;s tax record clean while you '
         'decide whether to restart it or close it.'],
   extra=[('Dormant Is Not the Same as Dissolved',
@@ -213,7 +215,7 @@ SERVICES = [
            'outstanding, that is a separate filing, and we say so plainly rather '
            'than leaving you to find out later.'])],
   excerpt='Nil T2 filing for dormant Alberta corporations with no activity in the '
-          'tax year. $300.00 plus HST per tax year.'),
+          'tax year. $300.00 plus applicable sales tax per tax year.'),
 
  dict(
   slug='final-t2-before-dissolution-alberta',
@@ -231,7 +233,7 @@ SERVICES = [
         'period that ends on the date of dissolution. That period is dated from '
         'the dissolution rather than from the usual year-end, and the return is '
         'due within six months of it. Where the final period had no activity we '
-        'file it as a nil return, at $300.00 plus HST per tax year.'],
+        'file it as a nil return, at $300.00 plus applicable sales tax per tax year.'],
   extra=[('Clear the Earlier Years First',
           ['Unfiled years block a clearance certificate, and they block the '
            'dissolution itself, so the final return is rarely the only one '
@@ -250,7 +252,7 @@ SERVICES = [
            'stage, which is the most expensive time to find it, so it is worth '
            'settling in the same pass as the federal years.'])],
   excerpt='The final T2 for an Alberta corporation being wound up, due within six '
-          'months of dissolution. $300.00 plus HST per tax year.'),
+          'months of dissolution. $300.00 plus applicable sales tax per tax year.'),
 
  dict(
   slug='t2-short-filing-alberta',
@@ -262,7 +264,7 @@ SERVICES = [
   lead=['The T2 Short is a two-page version of the T2 return. An Alberta '
         'corporation may use it only where it meets every one of the Canada Revenue '
         'Agency&rsquo;s conditions for the short return. Where it qualifies, we file '
-        'it, and it is included in the $300.00 plus HST fee rather than charged '
+        'it, and it is included in the $300.00 plus applicable sales tax fee rather than charged '
         'separately.'],
   extra=[('We Check Before We File',
           ['Meeting most of the conditions is not enough, so we check every one of '
@@ -279,7 +281,7 @@ SERVICES = [
            AT1_SENTENCE + ' There is no Alberta equivalent of the T2 Short in what '
            'we file, because the ' + PROV_RETURN + ' is not ours to file.'])],
   excerpt='T2 Short filing for Alberta corporations that meet every CRA condition '
-          'for the short return. $300.00 plus HST per tax year.'),
+          'for the short return. $300.00 plus applicable sales tax per tax year.'),
 
  dict(
   slug='nil-t2-filing-cost-in-alberta',
@@ -290,14 +292,14 @@ SERVICES = [
   national=('/pricing/nil-t2-filing-cost/', 'nil T2 filing cost'),
   lead_h2='What a Nil T2 Return Costs an Alberta Corporation',
   cost_h2='What You Pay in Alberta',
-  lead=['$300.00 plus HST per tax year, charged per tax year rather than per '
+  lead=['$300.00 plus applicable sales tax per tax year, charged per tax year rather than per '
         'filing. Two years is $600.00, three is $900.00 and five is $1,500.00, '
         'each before tax, because every year is its own return with its own '
         'preparation, its own CPA review and its own transmission. Filing '
         'several years in one pass does not reduce the figure.',
-        'Alberta is not an HST province and levies no provincial sales tax, so '
-        'tax is added at the rate that applies to your province rather than at '
-        'a single harmonised rate. ' + AT1_SENTENCE],
+        'Alberta levies no provincial sales tax, so the tax added at checkout '
+        'is the tax that applies where your corporation is resident rather '
+        'than where we are. ' + AT1_SENTENCE],
   extra=[('What the Fee Includes',
           ['One nil T2 for one corporation for one tax year: the T2 Short where '
            'the corporation qualifies, GIFI Schedules 100, 125 and 141 where '
@@ -321,7 +323,7 @@ SERVICES = [
            'by the $300.00 fee, which is worth knowing before you set this '
            'figure against a quote that covers both.'])],
   excerpt='What a nil T2 return costs an Alberta corporation, and why the AT1 '
-          'sits outside it. $300.00 plus HST per tax year.'),
+          'sits outside it. $300.00 plus applicable sales tax per tax year.'),
 
  dict(
   slug='unfiled-corporate-tax-returns-alberta',
@@ -335,7 +337,7 @@ SERVICES = [
         'later settles it: a current year filed on time sits on the record '
         'beside the gap rather than closing it. An Alberta corporation with '
         'five unfiled years owes five returns, one for each tax year, at '
-        '$300.00 plus HST per tax year.'],
+        '$300.00 plus applicable sales tax per tax year.'],
   extra=[('What an Unfiled Year Costs',
           [QUAL,
            'So the cost of leaving a quiet Alberta year unfiled is rarely a '
@@ -353,7 +355,7 @@ SERVICES = [
            'current with the Canada Revenue Agency and still be behind at the '
            'provincial registry, and the registry acts on its own record.'])],
   excerpt='Bring every unfiled year up to date for an Alberta corporation, '
-          'oldest year first. $300.00 plus HST per tax year.'),
+          'oldest year first. $300.00 plus applicable sales tax per tax year.'),
 
  dict(
   slug='no-activity-corporation-tax-return-alberta',
@@ -367,7 +369,7 @@ SERVICES = [
         'files a T2 for it, within six months of the fiscal year-end. There is '
         'no dormant status to elect, no threshold below which the return stops '
         'being due, and no year that can be skipped because nothing happened in '
-        'it. The return reports no income and no expenses, at $300.00 plus HST '
+        'it. The return reports no income and no expenses, at $300.00 plus applicable sales tax '
         'per tax year.'],
   extra=[('What Counts as No Activity',
           ['No revenue of any kind, no expense claimed, no payroll, no asset '
@@ -386,7 +388,7 @@ SERVICES = [
            + PROV_RETURN + ' is outstanding for the same year, that is a '
            'separate filing with a separate authority, and we say so rather '
            'than leaving it to be found later.'])],
-  excerpt='File a no-activity T2 for an Alberta corporation. $300.00 plus HST '
+  excerpt='File a no-activity T2 for an Alberta corporation. $300.00 plus applicable sales tax '
           'per tax year.'),
 
  dict(
@@ -401,7 +403,7 @@ SERVICES = [
         'Having no trading name changes nothing about the obligation: the T2 is '
         'due within six months of the fiscal year-end, every year, until the '
         'corporation is formally dissolved, and a year with no activity is a '
-        'nil return at $300.00 plus HST per tax year.'],
+        'nil return at $300.00 plus applicable sales tax per tax year.'],
   extra=[('Why Numbered Corporations Fall Behind',
           ['A numbered corporation is often set up to hold a name, a future '
            'structure or a single asset, and then left alone. Nothing arrives '
@@ -418,7 +420,7 @@ SERVICES = [
            'That same legal name sits on the ' + PROV_RETURN + ', which is '
            'filed separately with a separate authority and is not covered by '
            'the $300.00 fee.'])],
-  excerpt='Nil T2 filing for a numbered Alberta corporation. $300.00 plus HST '
+  excerpt='Nil T2 filing for a numbered Alberta corporation. $300.00 plus applicable sales tax '
           'per tax year.'),
 
  dict(
@@ -434,11 +436,11 @@ SERVICES = [
         'held its assets through the whole tax year and they earned nothing at '
         'all: no dividend received, no dividend paid, no rent, no interest and '
         'no inter-company transaction. That corporation still files a T2 within '
-        'six months of its fiscal year-end, at $300.00 plus HST per tax year.',
+        'six months of its fiscal year-end, at $300.00 plus applicable sales tax per tax year.',
         'A holding corporation with investment income, a rental corporation and '
         'a corporation that paid or received a dividend are not nil. Those are '
         'handled by Gondaliya CPA Professional Corporation at gondaliyacpa.ca '
-        'at $350.00 plus HST per year.'],
+        'at $350.00 plus applicable sales tax per year.'],
   extra=[('The Interest a Holding Corporation Forgets',
           ['The most common reason a holding corporation believed to be nil is '
            'not nil is a few dollars of interest credited on a balance nobody '
@@ -456,7 +458,7 @@ SERVICES = [
            AT1_SENTENCE + ' A holding corporation is no exception to that, and '
            'the ' + PROV_RETURN + ' is not ours to file.'])],
   excerpt='When an Alberta holding corporation is nil and when it is not. '
-          '$300.00 plus HST per tax year.'),
+          '$300.00 plus applicable sales tax per tax year.'),
 
  dict(
   slug='nil-t2-filing-deadline-alberta',
@@ -488,7 +490,7 @@ SERVICES = [
            'by the provincial corporate registry rather than by the Income Tax '
            'Act, and it is not covered by the $300.00 fee.'])],
   excerpt='When a nil T2 is due for an Alberta corporation, and the Alberta '
-          'filings that keep their own dates. $300.00 plus HST per tax year.'),
+          'filings that keep their own dates. $300.00 plus applicable sales tax per tax year.'),
 
  dict(
   slug='nil-t2-filing-for-non-resident-owned-corporations-alberta',
@@ -501,7 +503,7 @@ SERVICES = [
   lead=['An Alberta corporation owned from outside Canada files a T2 on the '
         'same timetable as any other: within six months of its fiscal '
         'year-end, every year, until it is formally dissolved. The fee is '
-        '$300.00 plus HST per tax year, the whole process is completed online, '
+        '$300.00 plus applicable sales tax per tax year, the whole process is completed online, '
         'and there is no requirement to be in Canada at any stage.'],
   extra=[('The Charge That Does Not Depend on Tax Owing',
           [QUAL,
@@ -517,15 +519,15 @@ SERVICES = [
            'so a corporation filing from abroad has the same two corporate '
            'income tax returns to account for as one owned in Calgary.'])],
   excerpt='Nil T2 filing for a non-resident-owned Alberta corporation, and the '
-          '$25.00 a day exposure. $300.00 plus HST per tax year.'),
+          '$25.00 a day exposure. $300.00 plus applicable sales tax per tax year.'),
 ]
 
 
 def build(s):
     url = SITE + '/' + s['slug'] + '/'
     b = ['<!-- wp:html -->', CSS + '<div class="cnf-hero"><div class="cnf-hero-in">'
-         '<h1>' + s['title'] + '</h1><p class="cnf-hero-sub">$300.00 Plus HST Per Tax '
-         'Year</p><p class="cnf-hero-lede">We are a registered EFILE electronic filer. '
+         '<h1>' + s['title'] + '</h1><p class="cnf-hero-sub">$300.00 Plus Applicable '
+         'Sales Tax Per Tax Year</p><p class="cnf-hero-lede">We are a registered EFILE electronic filer. '
          'Your return is transmitted to the Canada Revenue Agency electronically.</p>'
          '<p><a class="cnf-hero-btn" href="' + FORM + '">Start Nil T2 Filing NOW</a>'
          '</p></div></div>']
@@ -567,7 +569,7 @@ def build(s):
     b.append('<ol><li>Type your corporation name. We fill the Business Number and '
              'incorporation date.</li><li>Pick the tax years to file and confirm the '
              'corporation had no activity in each of them.</li><li>Complete the '
-             'attestation and identity check, then pay $300.00 plus HST per tax '
+             'attestation and identity check, then pay $300.00 plus applicable sales tax per tax '
              'year.</li><li>Sign Form T183CORP. We transmit your return '
              'electronically.</li></ol>')
     b.append('<p>Your CRA confirmation is emailed within 3 business days. Business '
@@ -576,7 +578,7 @@ def build(s):
 
     b.append('<h2>' + s.get('cost_h2', s['title'].replace(' in ' + PLACE, '')
                             + ' Cost in ' + PLACE) + '</h2>')
-    b.append('<p>$300.00 plus HST per tax year. Each tax year is a separate return '
+    b.append('<p>$300.00 plus applicable sales tax per tax year. Each tax year is a separate return '
              'and carries the same fee. Tax is added at the rate for your province. '
              'See the full ' + a(SITE + '/pricing/nil-t2-filing-cost/',
                                  'nil T2 filing cost') + '.</p>')
@@ -618,7 +620,7 @@ def build(s):
        "provider": {"@id": SITE + "/#accountingservice"},
        "offers": {"@type": "Offer", "name": s['title'], "price": "300.00",
                   "priceCurrency": "CAD",
-                  "description": "$300.00 plus HST per tax year", "url": FORM,
+                  "description": "$300.00 plus applicable sales tax per tax year", "url": FORM,
                   "areaServed": {"@type": "State", "name": PLACE}}},
       {"@type": "BreadcrumbList", "itemListElement": [
         {"@type": "ListItem", "position": 1, "name": "Nil T2 filing in Canada",
@@ -643,8 +645,9 @@ def meta(s):
      'cnf_provincial_return_name':
         'Alberta AT1. Alberta administers its own corporate income tax, so the AT1 '
         'is a separate provincial return and is not covered by the fee.',
-     # Alberta levies no HST, so an HST-inclusive figure would be wrong here, and
-     # the "plus HST" wording itself is still open with Sharad Gondaliya.
+     # Alberta charges no HST, so an HST-inclusive figure would be wrong here,
+     # and the schema has no field for a non-HST price. That gap is open with
+     # Sharad Gondaliya.
      'cnf_price_incl_hst': '', 'cnf_overflow_price_incl_hst': '',
      'cnf_deadline_rule':
         "The T2 is due within six months of the corporation's fiscal year-end, every "

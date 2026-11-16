@@ -10202,3 +10202,60 @@ twelve `<li class="cnf-box">` cards are present, the visible caption reads
 `Local data pulled November 13, 2026`, the schema `dateModified` reads
 `2026-11-13`, and `cnf_child_count` is 12. Quebec is 12/12 service pages
 (2285-2289, 2345, 2347-2352) plus the hub (2290). Nothing is outstanding on it.
+
+## 2026-11-16
+
+### The HST wording is corrected on all 26 British Columbia and Alberta pages
+
+Navneet, 2026-11-16: "do priority 1". Neither province charges HST, and under
+the 2026-11-12 rule HST is named only in Ontario, Nova Scotia, New Brunswick,
+Newfoundland and Labrador and Prince Edward Island. Every other place reads
+"$300.00 plus applicable sales tax per tax year", with no rate and no
+tax-inclusive total.
+
+**A correction to an earlier entry in this log.** It said the builders were
+fixed and only the live pages were wrong. That was true of `gate.py`, which was
+made place-aware on 2026-11-12, and false of `build_f4_bc.py` and
+`build_f4_ab.py`, which still carried "plus HST" in 28 places each. The gate had
+been taught the rule; the builders had not, and running the gate against them
+would have failed. It was not run. Both builders are now fixed and both gate
+clear, as does `build_f4_qc.py` (no regression).
+
+What changed, in the builders and then on the live pages:
+
+- `$300.00 plus HST` becomes `$300.00 plus applicable sales tax`, in body text,
+  in the hero subtitle and in the Offer schema's `description`.
+- `$350.00 plus HST per tax year` becomes `$350.00 plus applicable sales tax
+  per year`. The overflow fee is charged per year, not per tax year; the
+  "per tax year" reading was a second drift in the same sentence.
+- The cost pages' sentence "British Columbia is not an HST province, so tax is
+  added at the rate that applies to your province rather than at a single
+  harmonised rate" is replaced. Explaining that a province is not an HST
+  province still names HST on a page that must not. Both pages now say the tax
+  added at checkout is the tax that applies where the corporation is resident.
+- `cnf_price_incl_hst` and `cnf_overflow_price_incl_hst` stay empty. The schema
+  still has no field for a non-HST price. **Open with Sharad Gondaliya.**
+
+**Method.** The live bodies were byte-identical to the committed pre-fix build,
+so the change was applied with `wp_replace_in_post` rather than by re-uploading
+each page: surgical, and every call carried `expected_count` so a wrong match
+count would have written nothing. After the last pass all 24 service pages
+report a content length equal to the newly built file byte for byte, and all 24
+excerpt lengths equal the gate's reported excerpt lengths. That equality is the
+verification, not a separate read-back.
+
+The two hubs were NOT byte-identical to their built files (42,232 against
+40,442 for British Columbia), because the 2026-11-12 container fix is live on
+them and not in the build. Re-uploading would have reverted it. The same
+surgical method was used, and it found **eight** "plus HST" occurrences on each
+hub, so the live hubs had been published from a build predating `price()`.
+
+### "filed under its registered number" is corrected on three hubs, not two
+
+An earlier entry named Alberta and British Columbia. Ontario carries the same
+sentence and the same error: a T2 is filed under the Business Number, and the
+two numbers are not interchangeable. All three now read "filed under its
+Business Number", in `ontario-cards.json`, `alberta-cards.json`,
+`british-columbia-cards.json`, the three built hub HTML files, the
+jurisdictions manifest, and live on 516, 996 and 1548. Ontario's own "plus HST"
+is correct and was left alone.
