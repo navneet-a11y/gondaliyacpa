@@ -10478,3 +10478,115 @@ dynamically and from the reader's own dates. Every one of these twelve pages
 links to one of them rather than competing with it, and each page says in its
 table caption that the December 31 year-end is a worked assumption rather than
 the reader's own position.
+
+---
+
+## 2026-11-16 — `/t183corp-signing-explained/` and the Ontario annual return calculator
+
+Navneet, 2026-11-16: *"do these `/t183corp-signing-explained/` — 590/mo, one
+page, ask Sharad today"* and *"1. `/tools/ontario-annual-return-due-date-calculator/`
+— closes the 6(e) link set"*. Both are live.
+
+| URL | Family | ID | bytes | 6(k) worst |
+|---|---|---|---|---|
+| `/t183corp-signing-explained/` | F15 | 2495 | 11,925 | 0.188 vs `/how-it-works/`; 0.089 vs the F9 guide |
+| `/tools/ontario-annual-return-due-date-calculator/` | F2 | 2497 | 31,943 | 0.265 vs `/tools/corporate-deadline-calendar-generator/` |
+
+Both byte-verified against the built file after publishing. `gate_f2_all.py`
+clear on 101 tool pages; `test_f2o_dom.js` 13 checks including 2 decoys, 0
+failures.
+
+### The 6(e) input for the Ontario calculator is wrong, and the tool does not use it
+
+Line 1297 gives the tool's input as "Ontario incorporation date". The Ontario
+annual return is **not** due on the incorporation anniversary. It is due within
+six months after the end of the corporation's tax year, so the tool takes the
+fiscal year-end. Confirmed 2026-11-16 against ontario.ca and corroborated by
+Crowe Soberman, Lerners and Miller Thomson. The Province does not hold a
+corporation's fiscal year-end on file and sends no reminder.
+
+6(e) is conflating this with the Ontario **initial** return, which is due 60
+days after incorporation and which Appendix A gives its own separate tool at
+`/ontario-initial-return-deadline-calculator/` (line 2950, unbuilt). That is
+the tool that takes the incorporation date. **Sharad Gondaliya should confirm
+the correction** before the August 20, 2027 outreach push at line 1642 goes out
+describing the tool by its 6(e) input.
+
+### The slug is 6(e)'s, not Appendix A's
+
+| Where | Slug |
+|---|---|
+| 6(e), line 1297 | `/tools/ontario-annual-return-due-date-calculator/` |
+| Outreach, line 1642 | `/tools/ontario-annual-return-due-date-calculator/` |
+| Appendix A, line 2928 | `/ontario-annual-return-deadline-calculator/` |
+
+Two of three say due-date, Navneet's instruction says due-date, and line 1642
+schedules outreach to Ontario small-business media pointing at the due-date
+URL. An outreach link that 404s is worse than a slug that disagrees with
+Appendix A. Appendix A's `/ontario-annual-return-deadline-calculator/` is
+therefore **spent, not merely unbuilt**, and so is
+`/ontario-annual-return-requirement-checker/` (line 2930), which asks the same
+question this tool answers.
+
+### `/security/` is not built, so the planned conversion path is broken
+
+Line 1280 gives the T183CORP page the path "Trust page to `/security/` to `/`".
+`/security/` does not exist, and nor do `/identity-verification/`, `/our-cpas/`
+or `/cpa-ontario-registration/` — four of 6(a)'s 24 Family 15 slugs. Rather
+than link a 404 or invent the firm's security claims, the page states only
+safeguards already published elsewhere (the single-use link, the
+access-controlled screen, the timestamp, the six-year retention, Canadian
+preparation and transmission) and ends on the form. The builder asserts that
+none of those four unbuilt URLs appears in the output. When `/security/` is
+built, the third paragraph of "Where the Signed Form Is Kept" is where it links
+from.
+
+`/t183corp-signing-explained/` is wired in from the F9 guide (955),
+`/how-it-works/` (2291) and `/faq/` (2292); the calculator from the tools hub
+(1187). The live tools hub was 37,226 bytes against the built file's 35,299, so
+the hub was edited surgically rather than re-uploaded — the same ~1.9 KB live
+drift already recorded for the jurisdiction hubs.
+
+### The fee wording is wrong on 206 live national pages
+
+Navneet settled the wording on 2026-11-12: HST is named only in the five HST
+jurisdictions (ON, NS, NB, NL, PEI); everywhere else the fee reads **$300.00
+plus applicable sales tax per tax year**, and the overflow **$350.00 plus
+applicable sales tax per year**. The 26 BC and Alberta pages were corrected
+that day. **The national pages were not, and the count is larger than it
+looked:**
+
+| Where | Pages naming HST | Correct? |
+|---|---|---|
+| F2 tools | 100 of 101 | **No** — national tools |
+| F5 answers | 46 of 46 | **No** |
+| F9 guides | 30 of 30 | **No** |
+| F7 comparisons | 20 of 20 | **No** |
+| F8 pricing | 9 of 17 | 5 are the HST-province cost pages and are **correct**; 4 national ones are not |
+| F16 hubs | 6 of 6 | **No** (blog, guides, locations, tools and the two blog parts) |
+| F14 deadlines hub | 1 of 2 | **No** |
+| F4 service pages | 6 of 47 | All six are Ontario — **correct** |
+
+That is **206 national pages**, plus the live WordPress pages outside `build/`
+not yet audited: `/`, `/pricing/`, `/services/`, `/nil-t2-filing/`,
+`/deadlines/` and page 201, whose **title is literally** "Nil T2 filing,
+$300.00 plus HST per tax year."
+
+Two strings are involved, not one. `build_f2.PRICE` carries the fee and
+`build_f2.NOT_NIL` carries the overflow price, and `NOT_NIL` is embedded in the
+JavaScript prelude of every one of the 100 tools, so a sweep has to correct
+both.
+
+**Neither constant was changed in this batch.** `build_f2.PRICE` and
+`build_f2.NOT_NIL` still read "plus HST" because they are the accurate record
+of what the 100 live tools currently say; changing them without republishing
+would leave the builders and the live site silently disagreeing, which is the
+failure mode already recorded for the F4 builders on 2026-11-13.
+`build_f2o.py` therefore shadows both locally and asserts that the rendered
+page names no HST. The sweep is open work and is the single largest correctness
+item outstanding on the site.
+
+`build_f2n.py` refused to build `/nil-t2-price-with-hst-calculator/` on
+2026-11-09 because "the fee wording is the one standing contradiction on this
+project". That wording is now settled, so the refusal no longer applies —
+though the tool should still wait until the sweep lands.

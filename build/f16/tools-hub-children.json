@@ -59,6 +59,7 @@
   "nil-t2-filing-progress-checker",
   "non-resident-corporation-filing-checker",
   "non-resident-t2-penalty-calculator",
+  "ontario-annual-return-due-date-calculator",
   "ontario-business-registry-filing-checker",
   "ontario-missed-annual-returns-calculator",
   "outstanding-returns-count-checker",
