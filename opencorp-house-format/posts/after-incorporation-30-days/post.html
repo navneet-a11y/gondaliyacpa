@@ -1,0 +1,797 @@
+<style>.gcpa-post{--navy:#0f2a4a;--navy-2:#15355c;--blue:#1c6dd0;--blue-soft:#e8f1fc;--teal:#0c8f8f;--teal-soft:#e3f4f4;--gold:#c9991f;--gold-soft:#fbf3dc;--green:#1f8a4c;--green-soft:#e6f5ec;--red:#c0392b;--red-soft:#fbeae8;--ink:#1d2733;--muted:#5a6b7b;--line:#d8e0e8;--bg:#ffffff;--bg-alt:#f5f8fb;--radius:14px;--shadow:0 6px 22px rgba(15,42,74,.08);--shadow-lg:0 14px 40px rgba(15,42,74,.14);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);line-height:1.7;font-size:17px;max-width:1080px;margin:0 auto;padding:0 18px 60px;} .gcpa-post *{box-sizing:border-box;} .gcpa-hero{background:linear-gradient(135deg,var(--navy) 0%,var(--navy-2) 60%,#1c4a78 100%);color:#fff;border-radius:20px;padding:46px 40px 42px;margin:26px 0 34px;position:relative;overflow:hidden;} .gcpa-hero::after{content:"";position:absolute;right:-80px;top:-80px;width:280px;height:280px;z-index:0;background:radial-gradient(circle,rgba(28,109,208,.45),transparent 70%);} .gcpa-post .gcpa-eyebrow{display:inline-block;font-size:13px;letter-spacing:1.4px;text-transform:uppercase;font-weight:700;color:#cfe2f8 !important;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.3);padding:7px 15px;border-radius:30px;margin-bottom:18px;} .gcpa-post .gcpa-hero h1{font-size:34px;line-height:1.25;margin:0 0 16px;font-weight:800;color:#fff !important;letter-spacing:-.3px;position:relative;z-index:2;} .gcpa-post .gcpa-hero p{font-size:18px;color:#eaf3fc !important;margin:0;max-width:760px;position:relative;z-index:2;} .gcpa-eyebrow{position:relative;z-index:2;} .gcpa-post h2{font-size:27px;font-weight:800;color:var(--navy);line-height:1.3;margin:48px 0 18px;padding-bottom:14px;border-bottom:3px solid var(--blue-soft);letter-spacing:-.2px;position:relative;} .gcpa-post h2::after{content:"";position:absolute;left:0;bottom:-3px;width:70px;height:3px;background:var(--blue);} .gcpa-post h3{font-size:22px;font-weight:800;color:var(--navy-2);margin:40px 0 14px;line-height:1.35;} .gcpa-post h4{font-size:19px;font-weight:700;color:var(--navy-2);margin:36px 0 12px;line-height:1.4;padding-left:16px;border-left:4px solid var(--teal);} .gcpa-post p{margin:0 0 16px;color:#1d2733 !important;} .gcpa-post li{color:#1d2733;} .gcpa-post a{color:var(--blue);text-decoration:none;font-weight:600;} .gcpa-post a:hover{text-decoration:underline;} .gcpa-post ul,.gcpa-post ol{margin:0 0 18px !important;padding-left:0 !important;list-style:none !important;} .gcpa-post ul{list-style-type:none !important;} .gcpa-post ul li{position:relative;padding:8px 0 8px 34px;margin:0;border-bottom:1px solid var(--line);color:var(--ink);list-style:none !important;list-style-type:none !important;} .gcpa-post ul li::marker{content:"" !important;font-size:0 !important;} .gcpa-post ul li:last-child{border-bottom:none;} .gcpa-post ul li::before{content:"";position:absolute;left:6px;top:15px;width:9px;height:9px;border-radius:2px;background:var(--teal);transform:rotate(45deg);} .gcpa-post ol{counter-reset:gcpa;} .gcpa-post ol li{position:relative;padding:10px 0 10px 44px;margin:0 0 10px;counter-increment:gcpa;list-style:none !important;list-style-type:none !important;} .gcpa-post ol li::marker{content:"" !important;font-size:0 !important;} .gcpa-post ol li::before{content:counter(gcpa);position:absolute;left:0;top:9px;width:28px;height:28px;border-radius:8px;background:var(--navy);color:#fff;font-weight:700;font-size:14px;display:flex;align-items:center;justify-content:center;} .gcpa-post .wp-block-table,.gcpa-post figure.wp-block-table{margin:22px 0 26px;overflow-x:auto;} .gcpa-post table{width:100%;border-collapse:collapse;font-size:15.5px;background:#fff;border:1px solid var(--navy);border-radius:10px;overflow:hidden;box-shadow:var(--shadow);} .gcpa-post thead th{background:var(--navy);color:#fff;text-align:left;padding:13px 15px;font-weight:700;font-size:15px;border:1px solid var(--navy-2);} .gcpa-post tbody td{padding:12px 15px;border:1px solid var(--line);vertical-align:top;color:var(--ink);} .gcpa-post tbody tr:nth-child(even){background:var(--bg-alt);} .gcpa-post tbody tr:hover{background:var(--blue-soft);} .gcpa-post tbody td:first-child{font-weight:600;color:var(--navy-2);} .gcpa-metrics{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin:30px 0 36px;clear:both;} .gcpa-metric{background:#fff;border:1px solid var(--line);border-top:4px solid var(--blue);border-radius:var(--radius);padding:22px 18px;box-shadow:var(--shadow);transition:transform .2s,box-shadow .2s;} .gcpa-metric:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg);} .gcpa-metric:nth-child(2){border-top-color:var(--teal);} .gcpa-metric:nth-child(3){border-top-color:var(--gold);} .gcpa-metric:nth-child(4){border-top-color:var(--green);} .gcpa-metric .ic{width:46px;height:46px;border-radius:11px;background:var(--blue-soft);display:flex;align-items:center;justify-content:center;margin-bottom:14px;color:var(--blue);} .gcpa-metric:nth-child(2) .ic{background:var(--teal-soft);color:var(--teal);} .gcpa-metric:nth-child(3) .ic{background:var(--gold-soft);color:var(--gold);} .gcpa-metric:nth-child(4) .ic{background:var(--green-soft);color:var(--green);} .gcpa-metric .big{font-size:22px;font-weight:800;color:var(--navy);line-height:1.2;margin-bottom:4px;} .gcpa-metric .lbl{font-size:14px;color:var(--muted);line-height:1.45;} .gcpa-numhead{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin:46px 0 8px;clear:both;} .gcpa-numhead h4{margin:0 !important;} .gcpa-numhead .gcpa-pill{margin:0 !important;} .gcpa-numhead .num{flex:0 0 auto;width:48px;height:48px;border-radius:12px;background:var(--navy);color:#fff;font-size:22px;font-weight:800;display:flex;align-items:center;justify-content:center;box-shadow:var(--shadow);} .gcpa-callout{border-radius:var(--radius);padding:20px 22px;margin:22px 0;border:1px solid var(--line);background:var(--bg-alt);position:relative;} .gcpa-callout.blue{background:var(--blue-soft);border-color:#bcd9f6;} .gcpa-callout.teal{background:var(--teal-soft);border-color:#b7e3e3;} .gcpa-callout.gold{background:var(--gold-soft);border-color:#ecd79a;} .gcpa-callout.green{background:var(--green-soft);border-color:#b6e2c6;} .gcpa-callout.red{background:var(--red-soft);border-color:#f0c4be;} .gcpa-callout .co-tag{display:inline-block;font-size:12.5px;font-weight:700;letter-spacing:.6px;text-transform:uppercase;padding:4px 11px;border-radius:20px;margin-bottom:10px;color:#fff;} .gcpa-callout.blue .co-tag{background:var(--blue);} .gcpa-callout.teal .co-tag{background:var(--teal);} .gcpa-callout.gold .co-tag{background:var(--gold);} .gcpa-callout.green .co-tag{background:var(--green);} .gcpa-callout.red .co-tag{background:var(--red);} .gcpa-callout p:last-child{margin-bottom:0;} .gcpa-cta{background:linear-gradient(135deg,var(--navy) 0%,#1c4a78 100%);color:#fff;border-radius:18px;padding:34px 32px;margin:38px 0;text-align:center;box-shadow:var(--shadow-lg);position:relative;overflow:hidden;} .gcpa-cta::before{content:"";position:absolute;left:-60px;bottom:-60px;width:220px;height:220px;background:radial-gradient(circle,rgba(12,143,143,.4),transparent 70%);} .gcpa-post .gcpa-cta h4{color:#fff !important;border:none;padding:0;margin:0 0 12px;font-size:22px;font-weight:800;position:relative;z-index:1;} .gcpa-post .gcpa-cta p{color:#eaf3fc !important;max-width:680px;margin:0 auto 22px;position:relative;z-index:1;} .gcpa-post .gcpa-cta .btn{display:inline-block;background:#fff !important;color:var(--navy) !important;font-weight:700;padding:13px 26px;border-radius:30px;margin:6px;font-size:16px;position:relative;z-index:1;transition:transform .15s;text-decoration:none !important;} .gcpa-post .gcpa-cta .btn:hover{transform:translateY(-2px);text-decoration:none !important;} .gcpa-post .gcpa-cta .btn.primary{background:var(--teal) !important;color:#fff !important;} .gcpa-btnrow{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;align-items:center;position:relative;z-index:1;} .gcpa-trust{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-bottom:22px;position:relative;z-index:1;} .gcpa-post .gcpa-trust span{font-size:13px;font-weight:700;background:rgba(255,255,255,.18) !important;border:1px solid rgba(255,255,255,.45);padding:7px 14px;border-radius:20px;color:#ffffff !important;} .gcpa-post svg{display:block;} .gcpa-pill{display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:700;padding:8px 16px;border-radius:30px;margin:10px 0 6px;line-height:1.2;} .gcpa-pill svg{width:16px;height:16px;flex:0 0 auto;} .gcpa-pill.green{background:var(--green-soft);color:var(--green);border:1px solid #b6e2c6;} .gcpa-pill.blue{background:var(--blue-soft);color:var(--blue);border:1px solid #bcd9f6;} .gcpa-pill.teal{background:var(--teal-soft);color:var(--teal);border:1px solid #b7e3e3;} .gcpa-pill.gold{background:var(--gold-soft);color:#9a7416;border:1px solid #ecd79a;} .gcpa-pill.red{background:var(--red-soft);color:var(--red);border:1px solid #f0c4be;} .gcpa-pillhead{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin:38px 0 12px;clear:both;} .gcpa-pillhead h4{margin:0 !important;} .gcpa-pillhead .gcpa-pill{margin:0 !important;} @media(max-width:560px){.gcpa-pillhead{gap:8px;}} .gcpa-toc{background:var(--bg-alt);border:1px solid var(--line);border-left:5px solid var(--blue);border-radius:var(--radius);padding:24px 26px;margin:30px 0 36px;box-shadow:var(--shadow);} .gcpa-toc h5{margin:0 0 14px;font-size:16px;font-weight:800;color:var(--navy);letter-spacing:.4px;text-transform:uppercase;display:flex;align-items:center;gap:9px;} .gcpa-toc h5 svg{width:20px;height:20px;color:var(--blue);} .gcpa-toc ol{counter-reset:toc;margin:0 !important;padding:0 !important;columns:2;column-gap:36px;list-style:none !important;} .gcpa-toc ol li{counter-increment:toc;position:relative;padding:7px 0 7px 30px;margin:0;border-bottom:1px dashed var(--line);break-inside:avoid;list-style:none !important;} .gcpa-toc ol li::before{content:counter(toc);position:absolute;left:0;top:7px;width:21px;height:21px;border-radius:6px;background:var(--blue-soft);color:var(--blue);font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;} .gcpa-toc ol li::marker{content:"" !important;font-size:0 !important;} .gcpa-toc a{color:var(--navy-2);font-weight:600;font-size:15px;} .gcpa-toc a:hover{color:var(--blue);} .gcpa-post [id^="toc-"]{scroll-margin-top:90px;} .gcpa-banner{display:block;background:linear-gradient(135deg,#0d3b66 0%,#0c7a7a 100%);color:#fff;border-radius:16px;padding:30px 32px;margin:36px 0;box-shadow:var(--shadow-lg);} .gcpa-banner .bt{font-size:20px;font-weight:800;line-height:1.45;margin:0 0 20px;max-width:760px;} .gcpa-banner .bb{display:flex;flex-wrap:wrap;gap:14px;align-items:center;} .gcpa-banner a{display:inline-block;background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.6);color:#fff !important;font-weight:700;padding:13px 24px;border-radius:30px;font-size:15px;text-decoration:none !important;} .gcpa-banner a.solid{background:#ffffff !important;color:#0d3b66 !important;border-color:#fff;} .gcpa-disclaimer{background:var(--bg-alt);border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:34px 0 10px;font-size:14.5px;color:var(--muted);line-height:1.6;} .gcpa-disclaimer strong{color:var(--navy-2);} .gcpa-byline{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin:0 0 22px;font-size:15px;} .gcpa-byline .av{width:42px;height:42px;border-radius:50%;background:var(--navy);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:16px;flex:0 0 auto;} .gcpa-byline .nm{font-weight:700;color:var(--navy-2);} .gcpa-byline .rl{color:var(--teal);font-weight:700;} .gcpa-byline .sep{color:var(--line);} .gcpa-author{display:flex;gap:18px;align-items:flex-start;background:var(--bg-alt);border:1px solid var(--line);border-left:5px solid var(--teal);border-radius:14px;padding:24px 26px;margin:34px 0 40px;} .gcpa-author .ava{width:64px;height:64px;border-radius:50%;background:linear-gradient(135deg,var(--navy),var(--teal));color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:22px;flex:0 0 auto;} .gcpa-author .info h5{margin:0 0 6px;font-size:17px;font-weight:800;color:var(--navy);line-height:1.4;} .gcpa-author .info .role{font-size:14px;color:var(--teal);font-weight:700;margin:0 0 12px;} .gcpa-author .info p{font-size:14.5px;color:var(--muted) !important;margin:0;line-height:1.65;} .gcpa-faq{margin:18px 0 26px;border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:var(--shadow);} .gcpa-faq details{border-bottom:1px solid var(--line);background:#fff;} .gcpa-faq details:last-child{border-bottom:none;} .gcpa-faq summary{list-style:none;cursor:pointer;padding:18px 22px;font-weight:700;color:var(--navy-2);font-size:16px;display:flex;justify-content:space-between;align-items:center;gap:14px;transition:background .15s;} .gcpa-faq summary::-webkit-details-marker{display:none;} .gcpa-faq summary:hover{background:var(--bg-alt);} .gcpa-faq summary .pl{flex:0 0 auto;width:24px;height:24px;border-radius:50%;background:var(--blue-soft);color:var(--blue);display:flex;align-items:center;justify-content:center;font-size:18px;font-weight:700;transition:transform .2s;} .gcpa-faq details[open] summary{background:var(--bg-alt);color:var(--navy);} .gcpa-faq details[open] summary .pl{transform:rotate(45deg);background:var(--blue);color:#fff;} .gcpa-faq .ans{padding:0 22px 20px;color:#1d2733;font-size:15.5px;line-height:1.7;} .gcpa-img-right{float:right;max-width:250px;width:32%;margin:6px 0 24px 28px;border-radius:12px;box-shadow:var(--shadow-lg);border:1px solid var(--line);} .gcpa-img-right img{display:block;width:100%;height:auto;border-radius:12px;} @media(max-width:560px){.gcpa-img-right{float:none;width:70%;max-width:260px;margin:14px auto 18px;}} .gcpa-closing{font-size:24px;font-weight:800;color:var(--navy);margin:48px 0 14px;padding-bottom:12px;border-bottom:3px solid var(--teal-soft);position:relative;} .gcpa-closing::after{content:"";position:absolute;left:0;bottom:-3px;width:70px;height:3px;background:var(--teal);} @media(max-width:560px){.gcpa-post{font-size:16px;} .gcpa-hero{padding:32px 22px;} .gcpa-hero h1{font-size:26px;} .gcpa-post h2{font-size:23px;} .gcpa-cta{padding:26px 20px;} .gcpa-banner .bb{width:100%;} .gcpa-banner .bb a{flex:1 1 auto;text-align:center;}}</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"Open Corporation for $35","alternateName":"Open Corporation For $35","url":"https://opencorporationfor35.ca/","description":"Open Corporation for $35 is a department of Gondaliya CPA.","parentOrganization":{"@type":"Organization","name":"Gondaliya CPA Professional Corporation","url":"https://gondaliyacpa.ca","identifier":"CPA Ontario Firm Registration 61330051"},"telephone":"+1-647-212-9559","email":"info@gondaliyacpa.ca","areaServed":"CA","openingHours":"Mo-Su 09:00-20:30","award":"Xero Partner Award Winner 2026","aggregateRating":{"@type":"AggregateRating","ratingValue":"5","reviewCount":"1300"}}
+</script>
+<div class="gcpa-post">
+<div class="gcpa-hero" style="background:linear-gradient(135deg,#0f2a4a 0%,#15355c 60%,#1c4a78 100%) !important;">
+<span class="gcpa-eyebrow">After Incorporation · First 30 Days · CRA · Minute Book · 2026</span>
+<h1 style="color:#ffffff !important;position:relative;z-index:2;font-size:34px;line-height:1.25;font-weight:800;margin:0 0 14px;">What Happens After You Incorporate in Canada? The First 30 Days: A Business Owner's Checklist</h1>
+<div class="gcpa-hero-sub" style="margin:0 0 18px;"><span style="color:#eaf3fc !important;font-size:18px;line-height:1.6;display:block;max-width:840px;position:relative;z-index:2;">The resolutions, shares, minute book, filings, CRA accounts and bank account to sort out in the month after your certificate arrives</span></div>
+<div style="position:relative;z-index:2;font-size:15px;line-height:1.5;"><span style="color:#ffffff;font-weight:bold;">By Sharad Gondaliya, CPA</span><span style="color:#9fd0d0;font-weight:bold;">  |  <a href="https://opencorporationfor35.ca/">Open Corporation For $35</a> and <a href="https://opencorporationfor35.ca/address-service-100/">Address Service</a></span></div>
+<div style="position:relative;z-index:2;font-size:14.5px;line-height:1.5;margin-top:12px;"><span style="color:#cfe2f8 !important;font-weight:600;">Open Corporation for $35 is a department of Gondaliya CPA.</span></div>
+</div>
+<h2>What Happens After Incorporating a Business: First 30 Days After Incorporation Canada Checklist by Open Corporation</h2>
+<p><strong>Open Corporation for $35 is a department of Gondaliya CPA.</strong> What happens after incorporating a business in Canada involves important steps like obtaining necessary permits, setting up corporate records, and understanding tax obligations. This <a href="https://opencorporationfor35.ca/guides/what-happens-after-you-incorporate/">first 30 days after incorporation Canada checklist</a> by Open Corporation for $35 helps new company owners manage compliance and plan their next moves effectively.</p>
+<h3 id="toc-summary" style="margin-top:38px;">Quick Summary</h3>
+<p>The certificate makes the corporation exist; the next 30 days make it work. Sign the organizational resolutions, issue the shares, start the minute book, confirm your CRA accounts and open a corporate bank account, then diarize the filing deadlines that follow.</p>
+<figure class="wp-block-table">
+<table>
+<thead><tr><th>Aspect</th><th>Details</th></tr></thead>
+<tbody>
+<tr><td>First week</td><td>Organizational resolutions, by-laws, directors, officers and share issuance.</td></tr>
+<tr><td>Minute book</td><td>Articles, by-laws, resolutions, registers and the ISC register.</td></tr>
+<tr><td>Ontario initial return</td><td>Within 60 days of incorporation.</td></tr>
+<tr><td>Notice of change</td><td>Within 15 days of a director or address change.</td></tr>
+<tr><td>CRA accounts</td><td>Business number is automatic; GST/HST once sales pass $30,000; payroll before the first pay.</td></tr>
+<tr><td>Annual return</td><td>Federal: within 60 days after the anniversary. Ontario: within six months after year-end.</td></tr>
+<tr><td>Our fee</td><td>$35 including HST, plus government fees.</td></tr>
+</tbody>
+</table>
+</figure>
+<div class="gcpa-author">
+<div class="ava" style="background:linear-gradient(135deg,#0f2a4a,#0c8f8f) !important;color:#ffffff !important;">SG</div>
+<div class="info">
+<h5>Author: Sharad Gondaliya, CPA (Canada &amp; USA) — Founder &amp; Managing Director, Gondaliya CPA Professional Corporation, Toronto, Ontario.</h5>
+<div class="role">Reviewed and fact-checked by Sharad Gondaliya, CPA (Canada &amp; USA)</div>
+<p style="font-size:14.5px;color:#15355c !important;font-weight:700;margin:0 0 8px;">Open Corporation for $35 is a department of Gondaliya CPA.</p>
+<p>Gondaliya CPA is a Toronto-based team providing incorporation, CRA registrations, corporate tax, bookkeeping, GST/HST, and payroll for Canadian corporations. Verify our firm on the <a href="https://www.cpaontario.ca/protecting-the-public/directories/firm/gondaliya-5sqvmj">CPA Ontario public firm directory</a>, firm registration 61330051.</p>
+<p style="font-size:13.5px;color:#15355c !important;font-weight:700;margin-top:10px;">CPA Ontario | CPA USA (Washington &amp; Montana) | Xero Partner Award Winner 2026 | 1300+ 5-star Google reviews</p>
+</div>
+</div>
+<p style="font-size:14px;color:#5a6b7b;margin:-26px 0 26px;">Reading time: 33 minutes.</p>
+<div class="gcpa-toc">
+<h5>Table of Contents</h5>
+<ol>
+<li><a href="#toc-meaning">What Incorporation Means</a></li>
+<li><a href="#toc-organize">Organizing the Corporation</a></li>
+<li><a href="#toc-filings">Filings and CRA Accounts</a></li>
+<li><a href="#toc-records">Agreements and Records</a></li>
+<li><a href="#toc-challenges">Challenges and Fixes</a></li>
+<li><a href="#toc-checklist">The 30-Day Checklist</a></li>
+<li><a href="#toc-faq">Frequently Asked Questions</a></li>
+<li><a href="#toc-costs">Costs and Quick Reference</a></li>
+</ol>
+</div>
+<span class="gcpa-pill green">The Numbers That Matter</span>
+<div class="gcpa-metrics">
+<div class="gcpa-metric">
+<div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></div>
+<div class="big">60 days</div>
+<div class="lbl">Ontario initial return deadline</div>
+</div>
+<div class="gcpa-metric">
+<div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+<div class="big">15 days</div>
+<div class="lbl">To report a director or address change</div>
+</div>
+<div class="gcpa-metric">
+<div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+<div class="big">$30,000</div>
+<div class="lbl">GST/HST small supplier threshold</div>
+</div>
+<div class="gcpa-metric">
+<div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
+<div class="big">15th</div>
+<div class="lbl">Payroll remittance due the month after you pay</div>
+</div>
+</div>
+<div class="gcpa-callout blue">
+<span class="co-tag">Scope &amp; Assumptions</span>
+<p>This article covers Ontario and federal corporations and CRA rules as they stand in November 2026. Deadlines differ in other provinces. This is educational information only and not tax, legal, or financial advice. Please speak with a CPA, and a lawyer for a shareholders' agreement, before you act.</p>
+</div>
+
+<h2>What Incorporation Means for Your Business in Canada</h2>
+<div class="gcpa-numhead">
+<div class="num" style="background:#0f2a4a !important;color:#ffffff !important;">1</div>
+<h4 id="toc-meaning" style="border:none;padding:0;margin:0;">What Incorporation Means</h4>
+<span class="gcpa-pill blue">The Basics</span>
+</div>
+<p>Incorporating a business in Canada means your company becomes its own legal entity. This change gives you benefits like <a href="https://opencorporationfor35.ca/convert-sole-proprietorship-corporation/">limited liability</a> and some tax breaks. After you incorporate, you’ll want to act fast during the first 30 days. Taking the right steps early helps your corporation follow rules and run smoothly.</p>
+<h3>Benefits and Legal Implications of Incorporation</h3>
+<p><strong>Incorporation comes with some important perks:</strong></p>
+<ul>
+<li><strong>Limited Liability Protection:</strong> You usually don’t owe money personally if the business owes debts.</li>
+<li><strong>Corporate Compliance:</strong> Following provincial or federal rules keeps your company legit.</li>
+<li><strong>Tax Advantages:</strong> <a href="https://opencorporationfor35.ca/guides/small-business-deduction/">Corporations often pay less tax</a> on earnings they keep than individuals do.</li>
+</ul>
+<p>Knowing these facts helps you handle your duties well.</p>
+<h3>How Incorporation Separates Personal and Business Liabilities</h3>
+<p>A corporation stands apart as a separate legal entity. This means debts belong to the company, not to its owners. Your personal stuff stays safe if the business runs into money trouble. Shareholder liability protection limits what investors lose, which encourages people to put money in without risking their own savings.</p>
+<h3>Choosing the Right Type of Corporation for Your Needs</h3>
+<p>Picking <a href="https://opencorporationfor35.ca/incorporate-federally-in-canada/">federal or provincial incorporation</a> depends on your situation:</p>
+<ul>
+<li><strong>Business Scope:</strong> Federal lets you work all over Canada; provincial limits you to one area.</li>
+<li><strong>Regulatory Requirements:</strong> Different places have different rules and reports.</li>
+</ul>
+<p>Think about these points so you pick what fits your goals best.</p>
+<h4>Federal vs Provincial Corporations</h4>
+<p>Ontario uses the <a href="https://opencorporationfor35.ca/how-to-incorporate-in-ontario/">Ontario Business Corporations Act (OBCA)</a>. The federal government uses the Canada Business Corporations Act (CBCA). Here’s a quick look:</p>
+<figure class="wp-block-table">
+<table>
+<thead><tr><th>Factor</th><th>OBCA</th><th>CBCA</th></tr></thead>
+<tbody>
+<tr><td>Jurisdiction</td><td>Provincial</td><td>National</td></tr>
+<tr><td>Filing Fees</td><td>$300 online</td><td>$200 online</td></tr>
+<tr><td>Reporting Obligations</td><td>Ontario-specific</td><td>Same across all provinces</td></tr>
+</tbody>
+</table>
+</figure>
+<p>Both need post-incorporation tasks done but differ in rules and reach.</p>
+<h4>Factors To Consider When Deciding The Structure</h4>
+<p><strong>Ask yourself:</strong></p>
+<ul>
+<li>Will I have many shareholders?</li>
+<li>Will I work just locally or all across Canada?</li>
+<li>Can I handle more complex rules?</li>
+</ul>
+<p>These help you pick the right setup.</p>
+<h3>Overview of Federal Versus Provincial Incorporation</h3>
+<p>Federal and provincial setups share some things:</p>
+<ul>
+<li>You must file articles of incorporation.</li>
+<li>Both keep records properly.</li>
+<li>Each files annual reports, but timelines differ.</li>
+</ul>
+<p>Knowing this helps keep your company in good standing.</p>
+<h4>Key Differences And Similarities</h4>
+<p>Ontario’s OBCA and federal CBCA vary when it comes to post-incorporation rules:</p>
+<ul>
+<li>Annual returns have different deadlines.</li>
+<li>You may need <a href="https://opencorporationfor35.ca/guides/extra-provincial-registration/">extra-provincial registration</a> if working outside home area, especially for BC or Alberta.</li>
+</ul>
+<p>Learn these details so you don’t get fined later.</p>
+<h4>How To Choose Which Jurisdiction Is Best</h4>
+<p><strong>Think about:</strong></p>
+<ul>
+<li>Tax registration rules from CRA.</li>
+<li>How easy it is to reach customers locally.</li>
+<li>Rules where your business runs.</li>
+</ul>
+<p>These affect how smooth business runs after incorporation.</p>
+<h3>Incorporation Timeline Across Canadian Jurisdictions</h3>
+<h4>Typical Processing Times</h4>
+<p>Complete online filings are usually processed the same day; problem filings can take weeks:</p>
+<ul>
+<li><strong>Federal:</strong> Usually the same day online</li>
+<li><strong>Provincial (Ontario):</strong> Usually the same day online, longer if a filing needs manual review</li>
+</ul>
+<p>Knowing this helps plan your start date better.</p>
+<h4>Province-Specific Requirements</h4>
+<p>Some provinces want initial filings fast after incorporating. These include returns or notices about changes made since filing papers. Missing these can cause fines or issues later on.</p>
+<div class="gcpa-callout teal">
+<span class="co-tag">Key Stat</span>
+<p><strong>Same day:</strong> the usual processing time for a complete online incorporation with Corporations Canada or the Ontario Business Registry. The 30-day clock in this checklist starts when you receive the certificate.</p>
+</div>
+<h3>Common Causes For Delays During The Incorporation Process</h3>
+<p>Delays happen mostly because papers aren’t complete or because names checked through NUANS searches hit snags like rejection or an expired report causing hold-ups.</p>
+<h4>Incomplete Documents</h4>
+<p>Leaving out articles or forms slows down certificate issuance big time. Missing info means waiting longer than expected, messing up startup plans badly!</p>
+<h4>Name Issues And Other Pitfalls</h4>
+<p>Name refusals or letting the <a href="https://opencorporationfor35.ca/nuans-report-20/">NUANS report</a> expire after 90 days causes lots of delays here. Always check carefully before sending anything in!</p>
+<h4>Realistic Expectations For Processing Times</h4>
+<p>Government offices get backed up sometimes so waits grow longer than usual. Knowing typical wait times and preparing upfront can help speed things up a bit!</p>
+<h2>Organizing your corporation after incorporation</h2>
+<div class="gcpa-numhead">
+<div class="num" style="background:#0f2a4a !important;color:#ffffff !important;">2</div>
+<h4 id="toc-organize" style="border:none;padding:0;margin:0;">Organizing the Corporation</h4>
+<span class="gcpa-pill teal">Setup</span>
+</div>
+<p>After you incorporate a business in Canada, you need to get it organized fast. The first 30 days are pretty busy. You set up the basics, like directors, officers, and official documents. You also issue shares and <a href="https://opencorporationfor35.ca/guides/minute-book-requirements/">keep records</a>. Doing this right helps you follow the law and run smoothly.</p>
+<h3>What is organizational setup?</h3>
+<p>Organizational setup means putting your corporation’s rules and people in place after incorporation. It includes choosing directors and officers, adopting by-laws to guide how things work, issuing shares to owners, holding meetings, and gathering important documents. These steps are part of an after incorporation checklist Canada companies follow under laws like OBCA or CBCA.</p>
+<h4>Required legal documents</h4>
+<p>Right after incorporation, you need some key papers:</p>
+<ul>
+<li><strong>Organizational resolutions:</strong> Official decisions by directors or founders.</li>
+<li><strong>By-laws:</strong> Rules about how the company runs.</li>
+<li><strong>Share issuance records:</strong> Proof of who owns what shares.</li>
+</ul>
+<p>These documents must be ready within your first 30 days as part of the after incorporation checklist Canada requires.</p>
+<h3>Roles and responsibilities of first directors</h3>
+<p>Directors chosen right after incorporation hold a big job. They watch over the company and protect shareholder interests according to Canadian law.</p>
+<h4>Duties, powers, and limitations</h4>
+<p>First directors must act honestly and focus on what’s best for the company (see OBCA s.134; CBCA s.122). They can’t overstep their powers or break rules. They have to avoid conflicts of interest and keep everything legal during post-incorporation compliance in Ontario or federally.</p>
+<h4>Selecting initial directors</h4>
+<p>You pick your first directors when you file incorporation papers or soon after at an organizational meeting. Ontario’s OBCA and the federal CBCA both allow a <a href="https://opencorporationfor35.ca/guides/director-residency-requirements/">single director</a> for a private corporation. Either way, you need to record these choices properly in minutes or filings—often within 15 days.</p>
+<div class="gcpa-callout blue">
+<span class="co-tag">Worth Knowing</span>
+<p>Ontario has had no resident director rule since July 5, 2021, so a single director living anywhere can run an Ontario corporation. A federal corporation still needs at least 25% resident Canadian directors.</p>
+</div>
+<h3>Conducting the initial organizational meeting</h3>
+<p>Your first organizational meeting sets up how your corporation will work under OBCA or CBCA rules.</p>
+<h4>Mandatory agenda items</h4>
+<p><strong>At this meeting, you usually cover:</strong></p>
+<ul>
+<li>Adopting by-laws</li>
+<li>Choosing officers</li>
+<li>Approving share issuances</li>
+<li>Setting banking powers</li>
+<li>Agreeing on record keeping for the minute book</li>
+</ul>
+<p>This matches what happens after you incorporate a business in Canada when setting up governance.</p>
+<h4>Resolutions to adopt</h4>
+<p>Here are common resolutions passed at that meeting:</p>
+<figure class="wp-block-table">
+<table>
+<thead><tr><th>Resolution Type</th><th>Purpose</th></tr></thead>
+<tbody>
+<tr><td>By-law adoption</td><td>Sets rules for running the company</td></tr>
+<tr><td>Share issuance</td><td>Approves shares given to owners</td></tr>
+<tr><td>Officer appointments</td><td>Assigns daily managers</td></tr>
+<tr><td>Banking authorization</td><td>Lets company open bank accounts</td></tr>
+</tbody>
+</table>
+</figure>
+<p>These become official once signed. Some might need a lawyer’s review depending on details.</p>
+<h3>Adopting corporate by-laws and their importance</h3>
+<p>By-laws spell out how your company operates inside beyond just what law says at incorporation time. They matter for clear governance under OBCA &amp; CBCA rules.</p>
+<h4>Why by-laws matter</h4>
+<p><strong>By-laws clarify who does what:</strong> meetings rules, voting rights, director duties—all important for smooth operation. They help avoid confusion or fights later on. New corporations in Ontario or federally should have them early on.</p>
+<h4>Typical contents of by-laws</h4>
+<p><strong>By-laws usually include:</strong></p>
+<ul>
+<li>How to elect or remove directors/officers</li>
+<li><strong>How meetings happen:</strong> notices, quorum, votes</li>
+<li>Shareholder rights and transfer limits</li>
+<li>Rules for keeping records</li>
+</ul>
+<p>Good by-laws fit the post-incorporation checklist Canada expects so things run without confusion.</p>
+<h3>Issuing shares: procedures and legal requirements</h3>
+<p>Shares show who owns the company. Issuing them correctly is key right after incorporating under Canadian law.</p>
+<h4>How to issue shares</h4>
+<p>The board or shareholders approve share sales through resolutions. Then you prepare <a href="https://opencorporationfor35.ca/share-issuance-transfer/">share certificates</a> showing class, type, number of shares based on articles of incorporation. Securities registers in minute books must be updated too.</p>
+<h4>Documenting share issuance</h4>
+<p>Keep detailed records with shareholder names, share classes, dates issued inside securities registers. Store share certificates carefully in your minute book as proof if needed later during audits or disputes over ownership.</p>
+<h3>Appointment of officers and delegation of duties</h3>
+<p>Officers run day-to-day tasks picked by directors through formal resolutions recorded properly as part of corporate minutes under Canadian laws like OBCA or CBCA.</p>
+<h4>Designating roles and responsibilities</h4>
+<p>Typical officer roles are President (or CEO), Treasurer (or CFO), Secretary—each handles specific jobs like contracts, finances, mail etc. Clear roles stop overlap and confusion especially early on when systems settle down during first 30 days.</p>
+<h4>Legal documentation required</h4>
+<p>Officer appointments must be recorded with board resolutions naming each officer’s title and start date plus details about their duties. Update minute books immediately so all official records stay current for regulators like CRA or provincial registries.</p>
+<div class="gcpa-callout gold">
+<span class="co-tag">Our Actual Experience</span>
+<p>The step we see missed most often is issuing the shares. A corporation with no issued shares has no shareholders on paper, which causes trouble at the bank and at tax time, so we prepare the share issuance together with the organizational resolutions.</p>
+</div>
+<h3>Holding the first shareholders’ meeting and key decisions</h3>
+<p>The first shareholders’ meeting finalizes big choices about your new company whether it’s under Ontario OBCA or federal CBCA rules.</p>
+<h4>What must be decided</h4>
+<p>Common topics include confirming earlier director/officer choices, approving by-laws, confirming share issues, setting up bank accounts—all found in typical after incorporation checklist Canada guides use.</p>
+<h4>How to record meeting minutes</h4>
+<p>Minutes keep track of what was said and decided—like votes or discussions—and go into permanent minute books required by law to prevent future trouble with regulators or disputes among owners.</p>
+<h3>Setting up and maintaining the corporate minute book</h3>
+<p>Start building your <a href="https://opencorporationfor35.ca/minute-book-preparation/">minute book</a> right after organizing meetings end. It holds important stuff like articles, by-laws, minutes from meetings; lists of shareholders &amp; directors; securities registers; plus copies of filed notices. Keeping this updated all year helps with annual reports and staying legal across Ontario or federally registered companies alike.</p>
+<h2>Filing the Initial Return with the Appropriate Authorities</h2>
+<div class="gcpa-numhead">
+<div class="num" style="background:#0f2a4a !important;color:#ffffff !important;">3</div>
+<h4 id="toc-filings" style="border:none;padding:0;margin:0;">Filings and CRA Accounts</h4>
+<span class="gcpa-pill gold">Filings</span>
+</div>
+<p>After you incorporate a business in Canada, you have to <a href="https://opencorporationfor35.ca/initial-return-filing-ontario-form-1/">file the initial return within 60 days</a>. This step tells the government your corporation is active and shares current info. For Ontario companies under OBCA or federal ones under CBCA, you send specific forms to Corporations Canada or Ontario Business Registry.</p>
+<p>The return includes details like directors’ names and addresses, registered office address, and share structure. Some provinces, including Ontario, give you a Business Number (BN) automatically when you incorporate. Still, you should check if it was issued by logging into CRA’s My Business Account.</p>
+<p>Filing on time helps you follow corporate laws and avoid late fees. It also prepares your company for future filings like annual returns and tax reports.</p>
+<p><strong>Key points:</strong></p>
+<ul>
+<li>File initial return within 60 days of incorporation.</li>
+<li>Verify BN issuance through CRA’s portal.</li>
+<li>Give accurate director and office info.</li>
+<li>Use Ontario Business Registry or Corporations Canada websites.[1][2]</li>
+</ul>
+<p><strong>References:</strong></p>
+<ul>
+<li><a href="https://www.ontario.ca/page/ontario-business-registry">Ontario Business Registry</a></li>
+<li><a href="https://ised-isde.canada.ca/site/corporations-canada/en">Corporations Canada - Initial Return</a></li>
+</ul>
+<h3>Understanding Differences Between Annual Returns and Tax Filings</h3>
+<p>Annual returns update your company’s records with registries like Ontario’s OBCA or Corporations Canada (CBCA). They confirm who the directors are, the registered office, share capital, and other official info. These keep your company in good standing but don’t replace taxes.</p>
+<p>Tax filings report your income to CRA using the <a href="https://opencorporationfor35.ca/corporate-tax-filing-from-300/">T2 form</a> every year based on your fiscal year results. Annual returns must be filed within 60 days after your incorporation anniversary federally, and within six months after year-end in Ontario. Tax filings follow different deadlines—usually six months after fiscal year-end.</p>
+<p><strong>Here’s a simple chart:</strong></p>
+<figure class="wp-block-table">
+<table>
+<thead><tr><th>Filing Type</th><th>Purpose</th><th>Filed With</th><th>Deadline</th></tr></thead>
+<tbody>
+<tr><td>Annual Return</td><td>Update registry info</td><td>Ontario Registry/Corporations Canada</td><td>Within 60 days of anniversary date (federal); six months after year-end (Ontario)</td></tr>
+<tr><td>Corporate Tax</td><td>Report income &amp; pay taxes</td><td>CRA</td><td>Six months after fiscal year-end</td></tr>
+</tbody>
+</table>
+</figure>
+<p>Not filing annual returns might lead to losing your corporate status. Missing tax deadlines can cause fines from CRA.[3][4]</p>
+<p><strong>References:</strong></p>
+<ul>
+<li><a href="https://www.ontario.ca/laws/statute/90o38#BK48">OBCA Annual Returns</a></li>
+<li><a href="https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/corporations.html">CRA Corporate Income Tax Filing Deadlines</a></li>
+</ul>
+<h3>Registering for CRA Business Accounts (GST/HST, Payroll, Corporate Income Tax)</h3>
+<p>When a new corporation starts in Canada—especially in Ontario—it gets a Business Number (BN) from CRA automatically for corporate income tax (the RC account).</p>
+<p>You may need extra accounts depending on what you do:</p>
+<ul>
+<li><strong>GST/HST Account:</strong> Needed if you expect more than $30,000 in taxable sales over four calendar quarters (small supplier threshold 2026). You can register early if you want.</li>
+<li><strong>Payroll Account:</strong> Required before paying employees. You must register before your first payroll remittance; this is called the RP account deadline.[5]</li>
+<li><strong>Import/Export Account:</strong> Needed if your business trades goods across borders (RM account).</li>
+</ul>
+<p>Register these online using Business Registration Online or My Business Account. Each has different rules for reporting and paying taxes that affect cash flow early on.[6]</p>
+<p><strong>Common Program Accounts After Incorporation:</strong></p>
+<ul>
+<li><strong>RC – Corporate Tax:</strong> Automatic at incorporation</li>
+<li><strong>RT – GST/HST:</strong> If revenue &gt; $30K or voluntary</li>
+<li><strong>RP – Payroll:</strong> Before first employee pay</li>
+<li><strong>RM – Import/Export:</strong> As needed</li>
+</ul>
+<p>Don’t wait too long to register accounts to avoid trouble later.[7]</p>
+<p><strong>References:</strong></p>
+<ul>
+<li><a href="https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/employers-guide/statutory-deductions-remittances.html">CRA Payroll Remittance Due Dates</a></li>
+<li><a href="https://opencorporationfor35.ca/business-number-cra-account-registration/">Which Program Accounts Does A New Corporation Need? - Open Corporation For $35</a></li>
+<li><a href="https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/registering-your-business/bro-online-service.html">Business Registration Online Service - Government of Canada</a></li>
+</ul>
+<h3>Corporate Bank Account Setup and Its Significance</h3>
+<p>Opening a corporate bank account right after incorporating keeps your business money separate from personal funds. This protects limited liability under Canadian law like OBCA.</p>
+<p>Banks will ask for documents such as:</p>
+<ul>
+<li>Certificate of Incorporation</li>
+<li>Articles of Incorporation</li>
+<li>Meeting minutes showing authorized signatories</li>
+<li>Share certificates proving ownership</li>
+<li>IDs of signing officers/directors</li>
+</ul>
+<p>Each bank handles this differently; approval depends on them even if paperwork is perfect.</p>
+<p>Mixing personal and business funds can cause tax problems under ITA section 15(2). If you moved assets from a sole proprietorship into your corporation, talk to an expert before just putting money in the bank.[8][9]</p>
+<p><strong>Bottom line:</strong></p>
+<ul>
+<li>Set up the account quickly but prepare all documents carefully first.</li>
+</ul>
+<p><strong>References:</strong></p>
+<ul>
+<li><a href="https://opencorporationfor35.ca/business-bank-account-setup/">How To Open A Corporate Bank Account Post-Incorporation - Open Corporation For $35</a></li>
+<li><a href="https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-15.html">ITA Section 15(2): Shareholder Loans Rules</a></li>
+</ul>
+<div class="gcpa-callout red">
+<span class="co-tag">Risk Warning</span>
+<p><strong>Risk Warning:</strong> Money you take out of the corporation before the books are set up can be treated as a shareholder loan under section 15(2) of the Income Tax Act. Please do not pay personal costs from the corporate account, or business costs from your own, without recording them.</p>
+</div>
+<h3>Requirements for Ongoing Filings and Reporting in Ontario and Federally</h3>
+<p>After setting up, corporations must keep up with several filings:</p>
+<ul>
+<li><strong>Annual Returns:</strong> <a href="https://opencorporationfor35.ca/corporate-annual-filing/">File each year on time</a> to stay active.</li>
+<li><strong>Notices of Change:</strong> Report changes to directors, officers, shareholders, or office address within 15 calendar days as required by CBCA s113 &amp; Ontario's Corporations Information Act s4.</li>
+<li><strong>Corporate Taxes:</strong> Submit T2 tax returns every fiscal year regardless of activity.</li>
+<li><strong>Other Rules:</strong> Depending on your area—for example, WSIB registration when hiring workers in Ontario—you’ll need to keep licenses updated and claim exemptions properly.[10][11]</li>
+</ul>
+<p>Missing these steps risks losing legal protections and paying fines from regulators including workplace safety offices.[12]</p>
+<h3>Procedures for Updating Registered Office Address and Director Changes</h3>
+<p>You have to file notices for any changes like new directors or a <a href="https://opencorporationfor35.ca/corporate-changes-amendments/">new registered office address</a> within fifteen calendar days federally (CBCA) or provincially (OBCA):</p>
+<ul>
+<li><strong>Corporations Information Act s4:</strong> Notify Ontario Business Registry about director changes quickly.</li>
+<li><strong>CBCA s113:</strong> Use Corporations Canada's online platform for filings.</li>
+</ul>
+<p>Keeping records current ensures legal transparency during audits or when dealing with shareholders, banks, or lawyers.[14] Late updates can cause suspensions or even dissolutions which disrupt operations.[15]</p>
+<h3>Maintaining Good Corporate Standing to Avoid Penalties</h3>
+<p>Filing annual returns regularly helps keep your corporation in good standing across Canada—including Toronto-based businesses working provincially or federally.[16]</p>
+<p>Ignoring annual return deadlines can lead to warnings then forced dissolution. This means losing rights given at incorporation until fixed—and paying higher fees compared to staying current.[17]</p>
+<p>Good standing helps with banking access plus grants, contracts, licenses requiring proof of compliance. It also smooths audits done by internal staff or outside accountants during business growth stages.[18]</p>
+<p>Open Corporation for $35 supports owners through this process affordably <a href="https://opencorporationfor35.ca/corporate-compliance-subscription/">with reminders</a> so they avoid trouble right from day one.</p>
+<div class="gcpa-cta" style="background:linear-gradient(135deg,#0f2a4a 0%,#1c4a78 100%) !important;">
+<h4>Get your first 30 days done with a CPA</h4>
+<p>Incorporation from $35 including HST plus government fees, with a free CPA consultation on your resolutions, shares and CRA accounts after the certificate. Please book a free consultation.</p>
+<div class="gcpa-trust"><span>1300+ 5-star Google reviews</span><span>Xero Partner Award Winner 2026</span><span>CPA Ontario Firm 61330051</span><span>30-Day Money-Back Guarantee</span></div>
+<div class="gcpa-btnrow"><a class="solid" href="https://gondaliyacpa.ca/consultation/">Book Free Consultation</a><a href="https://opencorporationfor35.ca/">Open Corporation For $35</a><a href="tel:+16472129559">647-212-9559</a></div>
+</div>
+<h2>Establishing a shareholders’ agreement: when and why it matters</h2>
+<div class="gcpa-numhead">
+<div class="num" style="background:#0f2a4a !important;color:#ffffff !important;">4</div>
+<h4 id="toc-records" style="border:none;padding:0;margin:0;">Agreements and Records</h4>
+<span class="gcpa-pill green">Records</span>
+</div>
+<p><a href="https://opencorporationfor35.ca/guides/shareholder-agreement-what-a-cpa-checks/">A shareholders’ agreement</a> is a private contract among the company’s owners. It sets out their rights, duties, and ways to solve problems. You don’t have to make one by law in Canada, but it’s smart to do it soon after you incorporate.</p>
+<p>This agreement helps clear up how decisions get made, how shares can be sold or passed on, how dividends work, and how owners can leave the company.</p>
+<p>If you wonder what to do after incorporating a company in Canada—whether in Ontario or under federal CBCA rules—making a shareholders’ agreement should be on your after incorporation checklist Canada. It stops fights before they start by setting clear rules early.</p>
+<p>The agreement works with legal requirements like issuing shares and keeping registers. But it focuses more on the relationships between owners instead of public filings. Every business is different, so you should ask a CPA or lawyer for help before signing anything.</p>
+<h3>Differentiating roles of directors versus officers</h3>
+<p>Directors set the big goals and watch over how the company is run. Officers handle day-to-day tasks. After you incorporate in Canada (in Ontario under OBCA or federally under CBCA), you must appoint directors first. Appointing officers comes next but depends on your company rules.</p>
+<p>You have to record these appointments with organizational resolutions within 30 days after incorporation Canada to follow corporate compliance laws. Directors say yes or no to big moves like issuing shares or borrowing money. Officers carry out those decisions every day.</p>
+<p>Knowing who does what keeps things clear and legal. If roles aren’t defined well, you could face problems with following laws or confusion inside the company about who’s responsible for what.</p>
+<h3>Keeping accurate corporate records and legal documentation</h3>
+<p>You need good records all the time to follow post-incorporation requirements Canada. Your minute book must hold articles of incorporation, bylaws, meeting minutes from directors and shareholders, securities registers showing who owns shares, and if needed, an <a href="https://opencorporationfor35.ca/guides/individuals-with-significant-control/">Individuals with Significant Control (ISC) register</a> under CBCA s. 21.1 or OBCA s. 140.2.</p>
+<p>Keep these papers at your registered office—the address you gave when registering through Ontario Business Registry or Corporations Canada if federal. When something changes, like new directors, file notices within 15 calendar days as law says [Corporations Information Act].</p>
+<p>Good records make audits easier and keep your company transparent. They also help avoid trouble with regulators and keep your good standing status intact.</p>
+<figure class="wp-block-table">
+<table>
+<thead><tr><th>Record</th><th>Requirement</th><th>Where Kept</th><th>When Updated</th><th>Authority</th></tr></thead>
+<tbody>
+<tr><td>Articles of Incorporation</td><td>Required under OBCA/CBCA</td><td>Kept at Registered Office</td><td>Updated when incorporated</td><td>Authority: Ontario Business Registry / ISED</td></tr>
+<tr><td>By-laws</td><td>Required under OBCA/CBCA</td><td>Kept in Minute Book</td><td>Updated when changed</td><td>Authority: Corporate Law</td></tr>
+<tr><td>Minutes &amp; Resolutions</td><td>Required under OBCA/CBCA</td><td>Kept in Minute Book</td><td>Updated after meetings</td><td>Authority: Corporate Law</td></tr>
+<tr><td>Securities Register</td><td>Required under OBCA/CBCA</td><td>Kept in Minute Book</td><td>Updated when shares issued or transferred</td><td>Authority: Securities Legislation</td></tr>
+<tr><td>ISC Register (if &gt;25% control)</td><td>CBCA and OBCA</td><td>Kept at Registered Office</td><td>Updated within 15 days of change</td><td>Authority: CBCA s21.1 / OBCA s140.2</td></tr>
+</tbody>
+</table>
+</figure>
+<h3>Preparing for annual general meetings and reports</h3>
+<p>Annual General Meetings (AGMs) let shareholders see financial reports and vote for directors if the law requires it [OBCA s98]. <a href="https://opencorporationfor35.ca/guides/corporate-annual-return/">Filing annual returns</a> proves your corporation still exists legally. Miss deadlines and risk losing good standing or even getting dissolved by regulators.</p>
+<p>In Ontario under OBCA—or federally—the first return deadline varies but usually comes within six months after your fiscal year ends [Ontario Business Registry]. Then you must file yearly returns on time to stay legal.</p>
+<p>Keep track of all these dates using calendars linked to your business’s fiscal period made right after incorporation steps explained earlier here.</p>
+<div class="gcpa-callout red">
+<span class="co-tag">Risk Warning</span>
+<p><strong>Risk Warning:</strong> A change of director or registered office must be reported within 15 days. Please file the notice of change as soon as the change happens, because a late or missing notice leaves the public record wrong.</p>
+</div>
+<h3>Handling corporate amendments and name changes</h3>
+<p>When something important changes—like adding new directors or moving your registered office—you have just 15 calendar days to file a notice of change with authorities [Ontario Corporations Information Act] [s4]. This rule applies both in Ontario and federally.</p>
+<p>Changes about share capital that affect registry info also need this filing fast.</p>
+<p>Changing your company’s name needs an official application too after shareholders approve it at a special meeting by resolution. Do this right away to avoid losing rights tied to original registration dates.</p>
+<h3>Best practices for filing corporate documents and tracking deadlines</h3>
+<p>Keeping up with filing deadlines keeps your corporation active in all places where it’s registered—even if it works outside Ontario into places like BC or Alberta.</p>
+<p><strong>Here are some tips:</strong></p>
+<ul>
+<li>Set digital reminders using portals like My Business Account from CRA.</li>
+<li><a href="https://opencorporationfor35.ca/first-year-filing-calendar-new-corporation/">Use checklists</a> that show specific due dates such as initial returns which differ by province.</li>
+<li>Keep copies of all filings plus receipts from government websites.</li>
+<li>Check official sites regularly (<a href="https://www.ontario.ca/page/ontario-laws">Ontario e-Laws</a>) to stay updated on changing timelines.</li>
+</ul>
+<p>Follow these rules closely because late filings can cause penalties that pile up fast during your first year on the after incorporation checklist Canada.</p>
+<p>Sharad Gondaliya, CPA (Canada &amp; USA), has over ten years helping many Canadian business owners manage their companies well.</p>
+<h2>Common Challenges and Solutions</h2>
+<div class="gcpa-numhead">
+<div class="num" style="background:#0f2a4a !important;color:#ffffff !important;">5</div>
+<h4 id="toc-challenges" style="border:none;padding:0;margin:0;">Challenges and Fixes</h4>
+<span class="gcpa-pill red">Challenges</span>
+</div>
+<h3>Frequent mistakes new corporations make in the first 30 days</h3>
+<p>Many new corporations mess up in their first month. They often miss important filings like organizational resolutions or notices of change that must be done within 15 days. Some owners wait too long to issue shares or forget to start a corporate minute book right away. Others skip registering for CRA accounts, like payroll (RP) or <a href="https://opencorporationfor35.ca/guides/hst-registration-guide/">GST/HST (RT)</a>, which can lead to fines.</p>
+<p>Skipping early meetings with directors and officers happens too. This causes trouble under Ontario’s Business Corporations Act (OBCA) or Canada Business Corporations Act (CBCA). Mixing personal and company money too soon makes shareholder loans tricky to track.</p>
+<p>These mistakes show why using an after incorporation checklist Canada helps keep things on track in the first 30 days after incorporation Canada.</p>
+<h3>Risks of incomplete organization and non-compliance</h3>
+<p>If you don’t finish setting up your corporation properly, you face big risks. Not having resolutions, adopted by-laws, share documents, or keeping registers at your office means you could lose your good standing with the province.</p>
+<p>Not signing up for CRA accounts delays taxes and may cause interest charges or audits. Late filing of director changes can bring penalties under Ontario's Corporations Information Act and CBCA rules.</p>
+<p>Ignoring WSIB registration when hiring workers can lead to fines from safety boards. Also, running without proper municipal licenses or extra-provincial registrations can cause legal trouble.</p>
+<p>Knowing what to do after incorporating a company helps you avoid these problems by following deadlines across provinces including Ontario’s updated registry services for 2026 [1] [2].</p>
+<h3>Remedies and corrective steps for delayed post-incorporation tasks</h3>
+<p>If you fall behind on tasks during the first 30 days after incorporation Canada, fix things fast:</p>
+<ul>
+<li>File overdue director/officer change notices using Ontario Business Registry or Corporations Canada portals.</li>
+<li>Finish missing resolutions that approve by-laws, banking powers, or share issuance.</li>
+<li><a href="https://opencorporationfor35.ca/business-number-cra-account-registration/">Register all needed CRA program accounts</a> on My Business Account before starting taxable work.</li>
+<li>Create your corporate minute book now; add past meeting minutes if you missed them.</li>
+<li>Separate personal funds from corporate accounts right away; talk to a CPA if you mixed money causing shareholder loans.</li>
+</ul>
+<p>Doing this quickly lowers late-filing penalties and brings your corporation back into compliance [3]. Open Corporation offers free CPA advice for this process.</p>
+<h3>Weighing DIY incorporation setup versus professional assistance</h3>
+<figure class="wp-block-table">
+<table>
+<thead><tr><th>Factor</th><th>DIY Setup</th><th>Tax Software</th><th>CPA Assistance</th></tr></thead>
+<tbody>
+<tr><td>Compliance Accuracy</td><td>High chance of missing items</td><td>Some support</td><td>Expert checks &amp; help</td></tr>
+<tr><td>Organizational Documents</td><td>Often unfinished</td><td>Template-based</td><td>Customized &amp; reviewed</td></tr>
+<tr><td>Program Account Registration</td><td>Manual, error-prone</td><td>Semi-automatic</td><td>Direct filing &amp; follow-up</td></tr>
+<tr><td>Share Structure Complexity</td><td>Limited knowledge</td><td>Basic setups only</td><td>Complex cases handled</td></tr>
+<tr><td>Time Efficiency</td><td>Takes long</td><td>Faster than DIY</td><td>Fastest with experts</td></tr>
+<tr><td>Cost</td><td>Cheapest upfront</td><td>Moderate</td><td>Costly but worth it</td></tr>
+</tbody>
+</table>
+</figure>
+<p><strong>Bold Verdict:</strong> Hiring a pro lowers costly mistakes related to what happens after incorporating a business while making sure your after incorporation checklist Canada gets done right in the first 30-day period [4].</p>
+<h3>Tips to expedite incorporation and subsequent filings</h3>
+<p><strong>To speed up your setup:</strong></p>
+<ul>
+<li>Check you get your certificate right after filing.</li>
+<li>Use My Business Account portal for quick CRA service access including BN confirmation.</li>
+<li>Prepare signed organizational resolutions ahead using pro-reviewed templates.</li>
+<li>Issue shares quickly as directors approve subscription agreements in early meetings.</li>
+<li>Start your minute book digitally plus keep physical copies; don’t wait for paper only.</li>
+</ul>
+<p>Don’t try other tasks until core compliance is complete; focusing stops common delays seen among new incorporators figuring out what happens after incorporating a business [5].</p>
+<h3>Managing complex share structures and director appointments</h3>
+<p>Things get tricky with <a href="https://opencorporationfor35.ca/guides/share-structure-explained/">multiple share classes</a> or many directors/officers soon after starting:</p>
+<ul>
+<li>Resolutions must clearly authorize each share class’s rights per OBCA/CBCA articles filed initially. Get directors’ consent forms fast along with eligibility declarations per laws.</li>
+</ul>
+<p>Adopt by-laws that fit multi-shareholder rules including voting methods matching the securities register kept at your office [6].</p>
+<p>Issue share certificates properly to prove ownership stakes; this helps avoid future control disputes especially since federal reports on individuals-with-significant-control started on January 22, 2024 [7].</p>
+<p><strong>Bold Verdict:</strong> Use CPAs who know complex share issues plus legal advice before finalizing tough director appointments — this shields against later compliance problems tied to corporation rules.</p>
+<h5>References</h5>
+<ul>
+<li><strong>Ontario Business Registry:</strong> Notices Filing Deadlines</li>
+<li><strong>Corporations Canada:</strong> Director Change Requirements</li>
+<li><strong>CRA:</strong> Program Accounts Registration Guidelines</li>
+<li>CPA Ontario Guidance on Incorporation Compliance</li>
+<li>My Business Account Portal User Guide - CRA</li>
+<li>OBCA By-Laws Adoption Procedures Update 2026</li>
+<li>CBCA ISC Reporting Obligations Effective Date</li>
+</ul>
+<div class="gcpa-banner" style="background:linear-gradient(135deg,#0d3b66 0%,#0c7a7a 100%) !important;">
+<div class="bt">Just incorporated? Please book a free consultation and we will go through your first 30 days with you, one item at a time.</div>
+<div class="bb"><a class="solid" href="https://gondaliyacpa.ca/consultation/">Book Free Consultation</a><a href="mailto:info@gondaliyacpa.ca">info@gondaliyacpa.ca</a><a href="tel:+16472129559">647-212-9559</a></div>
+</div>
+<h2>Summary of Critical First 30 Days Checklist After Incorporation</h2>
+<div class="gcpa-numhead">
+<div class="num" style="background:#0f2a4a !important;color:#ffffff !important;">6</div>
+<h4 id="toc-checklist" style="border:none;padding:0;margin:0;">The 30-Day Checklist</h4>
+<span class="gcpa-pill gold">Checklist</span>
+</div>
+<p>After you incorporate a business in Canada, the first 30 days are super important. This time sets the stage for everything that follows. You need to get your CRA Business Number (BN) confirmed. Also, register for any program accounts you might need like GST/HST or payroll. Don’t forget to issue shares properly and make sure you have the right resolutions in place. Set up your corporate records, like a minute book, so you’re ready.</p>
+<p><a href="https://opencorporationfor35.ca/business-bank-account-setup/">Opening a corporate bank account</a> is key—use all the right documents. Depending on what your business does, you may want to register for some voluntary programs too. This after incorporation checklist Canada helps you stay on track with Ontario’s OBCA or federal CBCA rules.</p>
+<p>Make sure you file your initial returns and notices on time. That keeps your corporation in good standing and avoids headaches later.</p>
+<h3>Key Takeaways to Maintain Compliance and Operational Efficiency</h3>
+<p>What happens right after incorporating affects how well your company runs. To stay compliant:</p>
+<ul>
+<li>Know that CRA automatically issues your Business Number but you’ll need to sign up for GST/HST (RT) or <a href="https://opencorporationfor35.ca/payroll-service/">payroll (RP) accounts</a> if needed.</li>
+<li>Prepare resolutions for director appointments, share issuances, banking permissions, and by-law adoption.</li>
+<li>Keep all corporate records current at the registered office—this includes minutes and securities registers.</li>
+<li>Open a corporate bank account quickly so personal and business money don’t mix.</li>
+<li><strong>Understand post-incorporation setup costs:</strong> flat fees cover stuff like minute books and registered office services; government fees come separately.</li>
+</ul>
+<p>Following these steps lowers risks from missed filings or bad record keeping. That means no penalties or delays messing with your Ontario corporation.</p>
+<h3>Where to Find Official Forms, Templates, and Checklists for Corporation Management</h3>
+<p>Here are some official forms you'll want during those first 30 days:</p>
+<ul>
+<li><strong>Initial Return Filing (Ontario):</strong> Required by the Corporations Information Act; file within 60 days through the Ontario Business Registry <a href="https://www.ontario.ca/page/filing-corporations-information-act">source</a>.</li>
+<li><strong>CRA Business Number Issuance:</strong> Given automatically at incorporation; check it via My Business Account portal <a href="https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/registering-your-business.html">source</a>.</li>
+</ul>
+<p>For templates like organizational resolutions or minute book checklists:</p>
+<ul>
+<li>Look at provincial registry websites—they often have downloadable samples that fit OBCA/CBCA rules.</li>
+<li>The CRA website shows how to fill out program account registration forms like RC1.</li>
+</ul>
+<p>Using official sources helps avoid errors early on when managing corporation documents.</p>
+<h3>Accessing Expert Guidance and Legal Support When Needed</h3>
+<p>You can get help from <a href="https://opencorporationfor35.ca/incorporation-service-35/">Open Corporation for $35</a>—a service backed by CPAs—to guide new business owners through their first month after incorporating in Canada. CPAs assist with tricky topics like share structures or tax issues that pop up during setup.</p>
+<figure class="wp-block-table">
+<table>
+<thead><tr><th>Factor</th><th>DIY</th><th>Tax Software</th><th>CPA Assistance</th></tr></thead>
+<tbody>
+<tr><td>Accuracy</td><td>High chance of errors</td><td>Moderate</td><td>Very reliable</td></tr>
+<tr><td>Compliance Assurance</td><td>Low</td><td>Medium</td><td>Strong</td></tr>
+<tr><td>Record Keeping</td><td>Manual</td><td>Automated</td><td>Customized &amp; Checked</td></tr>
+<tr><td>Cost</td><td>Cheapest</td><td>Mid-range</td><td>Higher but worth it</td></tr>
+</tbody>
+</table>
+</figure>
+<p><strong>Bottom line:</strong> A CPA helps avoid mistakes like unsigned resolutions or missing filings that could cause trouble down the road.</p>
+<h3>Encouraging Proactive Management for Long-Term Corporate Success</h3>
+<p>Keeping corporate records accurate all year helps you meet legal rules across Canada. Be sure to update directors’ lists when they change and keep meeting minutes safe in your minute book at the registered office.</p>
+<p>Don’t forget ongoing annual filings too—like annual returns filed through Ontario Business Registry—and file T2 tax returns on time to dodge penalties. <a href="https://opencorporationfor35.ca/incorporation-bookkeeping-bundle/">Setting up bookkeeping</a> aligned with your fiscal year-end makes future reporting easier.</p>
+<p>Being proactive builds trust with shareholders and smooths audits if they happen later.</p>
+<h3>Contact and Support Options for Further Assistance With Incorporation and Filings</h3>
+<p>Need help figuring out what to do after incorporating a company in Canada? Reach out to Open Corporation for $35—a part of Gondaliya CPA. We offer <a href="https://gondaliyacpa.ca/consultation/">free consultations</a> every day from 9 AM to 8:30 PM at 647‑212‑9559 or info@gondaliyacpa.ca.</p>
+<p>We handle things like checking your BN, setting up CRA My Business Account access, preparing minute books, issuing share certificates, and more. Everything fits your unique needs without guessing about bank or regulator decisions.</p>
+<p>Sharad Gondaliya, CPA (Canada &amp; USA), has over 10 years helping Canadian business owners get through their first months after incorporation without hassle.</p>
+<p>Open Corporation for $35 is a department of Gondaliya CPA.</p>
+<h2>Frequently Asked Questions About the First 30 Days</h2>
+<div class="gcpa-numhead">
+<div class="num" style="background:#0f2a4a !important;color:#ffffff !important;">7</div>
+<h4 id="toc-faq" style="border:none;padding:0;margin:0;">First 30 Days FAQ</h4>
+<span class="gcpa-pill teal">FAQ</span>
+</div>
+<div class="gcpa-faq" id="faq-main">
+<details><summary>What is the CRA payroll remittance due date for new corporations?<span class="pl">+</span></summary>
+<div class="ans"><p>New corporations must remit payroll deductions by the 15th of the month after paying employees. Missing this can cause penalties and interest.</p></div></details>
+<details><summary>When must the ISC register be filed and what is its threshold?<span class="pl">+</span></summary>
+<div class="ans"><p>Corporations under CBCA must file an ISC register if any individual holds over 25% control. Updates are required within 15 days of changes.</p></div></details>
+<details><summary>What is the WSIB registration deadline for Ontario businesses?<span class="pl">+</span></summary>
+<div class="ans"><p>You must register with WSIB within 10 days of hiring your first employee in a covered industry to avoid fines and comply with workplace safety rules.</p></div></details>
+<details><summary>How does the Employer Health Tax exemption work in Ontario?<span class="pl">+</span></summary>
+<div class="ans"><p>Employers with annual payroll below $1 million are exempt from Employer Health Tax, saving on costs during early growth.</p></div></details>
+<details><summary>What is the maximum fiscal year length for a Canadian corporation?<span class="pl">+</span></summary>
+<div class="ans"><p>A corporation's tax year cannot be longer than 53 weeks, and the first one must end within 53 weeks of incorporation.</p></div></details>
+<details><summary>What is the notice of change deadline after incorporation?<span class="pl">+</span></summary>
+<div class="ans"><p>Any changes to directors, officers, or registered office must be filed within 15 calendar days federally or provincially.</p></div></details>
+<details><summary>When do extra-provincial registrations become necessary?<span class="pl">+</span></summary>
+<div class="ans"><p>If operating outside your incorporation province, you need extra-provincial registration in those provinces before conducting business there.</p></div></details>
+<details><summary>Why is obtaining a municipal business licence important post-incorporation?<span class="pl">+</span></summary>
+<div class="ans"><p>A municipal licence ensures legal operation within your city or town. Operating without one risks fines or closure.</p></div></details>
+<details><summary>How does the Business Names Act affect incorporated companies in Ontario?<span class="pl">+</span></summary>
+<div class="ans"><p>Corporations using trade names different from their legal name must register under this act to ensure legal protection and transparency.</p></div></details>
+<details><summary>What role do subscription agreements play after incorporation?<span class="pl">+</span></summary>
+<div class="ans"><p>Subscription agreements formalize share purchases by investors, clarifying ownership and preventing disputes later.</p></div></details>
+<details><summary>Why is passing a banking resolution crucial for opening a corporate bank account?<span class="pl">+</span></summary>
+<div class="ans"><p>A banking resolution authorizes officers to open accounts and transact banking on behalf of the corporation legally.</p></div></details>
+<details><summary>What information must share certificates include?<span class="pl">+</span></summary>
+<div class="ans"><p>Certificates state shareholder names, share class, number issued, and issue date as proof of ownership under corporate law.</p></div></details>
+<details><summary>When are certified copies of incorporation documents needed?<span class="pl">+</span></summary>
+<div class="ans"><p>Banks and regulators may request certified copies of articles and certificates to verify your corporation’s legitimacy.</p></div></details>
+<details><summary>What are KYC requirements when opening a corporate bank account?<span class="pl">+</span></summary>
+<div class="ans"><p>Banks require Know Your Customer info like IDs of directors/officers, proof of address, and corporate documents for compliance.</p></div></details>
+<details><summary>How do shareholder loan risks impact new corporations?<span class="pl">+</span></summary>
+<div class="ans"><p>Improper loans to shareholders can trigger tax issues under ITA section 15(2) and complicate finances if not documented properly.</p></div></details>
+</div>
+<div class="gcpa-callout red">
+<span class="co-tag">Risk Warning</span>
+<p><strong>Risk Warning:</strong> An Ontario corporation, or a federal corporation operating in Ontario, that misses its initial return or annual returns can lose good standing and eventually be dissolved. Please put each deadline in your calendar the day you receive your certificate.</p>
+</div>
+<h2>Post-Incorporation Setup Costs: What To Expect</h2>
+<div class="gcpa-numhead">
+<div class="num" style="background:#0f2a4a !important;color:#ffffff !important;">8</div>
+<h4 id="toc-costs" style="border:none;padding:0;margin:0;">Costs and Quick Reference</h4>
+<span class="gcpa-pill blue">Costs</span>
+</div>
+<ul>
+<li><a href="https://opencorporationfor35.ca/guides/cost-to-incorporate-in-canada/">Government fees</a> vary by federal or provincial incorporation.</li>
+<li>CPA services often charge flat fees covering minute books and filings.</li>
+<li>Additional costs include corporate bank setup and CRA program registrations.</li>
+</ul>
+<h3>How Open Corporation for $35 Handles Your First 30 Days</h3>
+<ul>
+<li>We prepare all organizational resolutions and minute books.</li>
+<li>Assist with share issuance, director appointments, and by-law adoption.</li>
+<li>Guide CRA program account registration including GST/HST and payroll.</li>
+<li>Help set up corporate bank accounts with required resolutions.</li>
+</ul>
+<h3>Essential Deliverables You Receive With Our Service</h3>
+<ul>
+<li>Customized minute book with official documents.</li>
+<li>Completed initial return filings as per jurisdiction rules.</li>
+<li>Share certificates prepared accurately for issuance.</li>
+<li>Step-by-step checklist tailored for your industry needs.</li>
+</ul>
+<h3>Risks, Compliance Issues, and Prevention Controls</h3>
+<ul>
+<li>Late filings risk losing good standing or incurring penalties.</li>
+<li>Mixing personal and company funds can trigger shareholder loan problems.</li>
+<li>Incomplete records delay audits and raise regulatory scrutiny.</li>
+<li>Prevent these by following timelines strictly with professional help.</li>
+</ul>
+<h3>Preparing Before Your First 30 Days Start</h3>
+<ul>
+<li>Collect director eligibility declarations promptly.</li>
+<li>Gather IDs for KYC banking requirements early on.</li>
+<li>Review your articles for share structure clarity.</li>
+<li>Plan meetings for by-law adoption and officer appointments ahead.</li>
+</ul>
+<h3>Numeric Walkthrough: A Realistic Timeline Post-Incorporation</h3>
+<ul>
+<li><strong>Day 1–3:</strong> Confirm Business Number; prepare organizational documents.</li>
+<li><strong>Day 5–10:</strong> Hold initial meetings; pass resolutions; issue shares.</li>
+<li><strong>Day 10–20:</strong> Register CRA program accounts; start corporate minute book.</li>
+<li><strong>Day 20–30:</strong> File initial returns; open bank account; notify authorities of changes.</li>
+</ul>
+<h3>Choosing a CPA For Post-Incorporation Setup: Key Factors</h3>
+<ul>
+<li>Expertise in federal &amp; provincial corporation laws matters most.</li>
+<li>Transparent fees aligned with deliverables help budget planning.</li>
+<li>Responsiveness ensures timely filings avoiding penalties.</li>
+<li>Experience with your specific industry can add value.</li>
+</ul>
+<h3>Why Trust Open Corporation for $35?</h3>
+<p>We combine affordable pricing with CPA expertise to ensure compliance from day one. Our team handles complex filings accurately so you avoid costly errors early on.</p>
+<h3>Sources &amp; References</h3>
+<p>Refer to official sites like Ontario Business Registry, Corporations Canada, CRA’s My Business Account portal, WSIB Ontario website, and relevant statutes (OBCA &amp; CBCA) for authoritative guidance.</p>
+<div class="gcpa-pillhead"><h4 style="border:none;padding:0;margin:0;">Quick Answers: Key Numbers at a Glance</h4><span class="gcpa-pill gold">At a Glance</span></div>
+<ul>
+<li><strong>Ontario initial return:</strong> Within 60 days of incorporation</li>
+<li><strong>Notice of change:</strong> Within 15 days</li>
+<li><strong>GST/HST registration:</strong> Once taxable sales pass $30,000 in four calendar quarters</li>
+<li><strong>Payroll remittance:</strong> By the 15th of the month after you pay</li>
+<li><strong>WSIB registration:</strong> Within 10 days of hiring your first worker in a covered industry</li>
+<li><strong>Federal annual return:</strong> Within 60 days after the anniversary date</li>
+<li><strong>Ontario annual return:</strong> Within six months after year-end</li>
+<li><strong>T2 return:</strong> Six months after year-end</li>
+<li><strong>Our fee:</strong> $35 including HST, plus government fees</li>
+</ul>
+<div class="gcpa-pillhead"><h4 style="border:none;padding:0;margin:0;">Who This Is For / Not For</h4><span class="gcpa-pill teal">Fit Check</span></div>
+<ul>
+<li><strong>For:</strong> Owners of a newly incorporated Ontario or federal corporation who want a clear list of what to do in the first month.</li>
+<li><strong>Not For:</strong> Corporations moving an existing business or assets in, which need tax advice on the transfer before anything else.</li>
+</ul>
+<div class="gcpa-callout green">
+<span class="co-tag">Verdict</span>
+<p>The certificate is the start, not the finish. In the first 30 days, sign the organizational resolutions, issue the shares, start the minute book, confirm your CRA accounts and open a corporate bank account. Then diarize three dates: the Ontario initial return within 60 days, any notice of change within 15 days, and your first annual return.</p>
+</div>
+<div class="gcpa-callout blue">
+<span class="co-tag">2026 Update</span>
+<p><strong>2026 Update &mdash; what is current:</strong> This article reflects rules current to November 2026. Ontario corporations, and federal corporations operating in Ontario, file an initial return within 60 days. Changes of directors or registered office are reported within 15 days. Federal annual returns are due within 60 days after the anniversary date, Ontario annual returns within six months after year-end, and T2 returns six months after year-end. The GST/HST small supplier threshold remains $30,000. Federal corporations have filed individuals with significant control information with Corporations Canada since January 22, 2024, and Ontario corporations keep an ISC register under OBCA s.140.2.</p>
+</div>
+<h5 style="color:#15355c;margin:24px 0 8px;">First 30 Days Readiness Check</h5>
+<p>This quick self-check flags what is still open in your first month. Please answer the six questions below.</p>
+
+<div id="ocf-chk">
+  <style>
+    #ocf-chk{--n:#0f2a4a;--n2:#15355c;--bl:#1c6dd0;--tl:#0c8f8f;--gd:#c9991f;--rd:#c0392b;--ink:#1d2733;--mut:#5a6b7b;--ln:#d8e0e8;--alt:#f5f8fb;
+      border:1px solid var(--ln);border-radius:14px;overflow:hidden;background:#fff;box-shadow:0 10px 30px rgba(15,42,74,.08);font-family:inherit;color:var(--ink);margin:24px 0;}
+    #ocf-chk *{box-sizing:border-box;}
+    #ocf-chk .s-head{background:linear-gradient(135deg,var(--n),var(--n2));color:#fff;padding:18px 22px;}
+    #ocf-chk .s-head h5{margin:0;font-size:19px;font-weight:700;color:#fff!important;}
+    #ocf-chk .s-head p{margin:4px 0 0;font-size:13px;color:#cfe2f8!important;}
+    #ocf-chk .s-body{padding:20px 22px;}
+    #ocf-chk .s-q{padding:13px 0;border-bottom:1px solid var(--ln);display:flex;justify-content:space-between;align-items:center;gap:14px;}
+    #ocf-chk .s-q:first-child{padding-top:2px;}
+    #ocf-chk .s-q span.s-lab{font-weight:600;font-size:14.5px;color:var(--n);}
+    #ocf-chk .s-seg{display:inline-flex;border:1px solid var(--ln);border-radius:10px;overflow:hidden;flex:0 0 auto;}
+    #ocf-chk .s-seg label{cursor:pointer;padding:8px 18px;font-size:14px;font-weight:600;color:var(--mut);background:var(--alt);transition:.15s;user-select:none;}
+    #ocf-chk .s-seg label+label{border-left:1px solid var(--ln);}
+    #ocf-chk .s-seg input{position:absolute;opacity:0;width:0;height:0;}
+    #ocf-chk .s-seg input:checked+label{background:var(--n);color:#fff!important;}
+    #ocf-chk .s-go{margin-top:18px;width:100%;border:none;border-radius:11px;padding:14px 18px;font-size:15.5px;font-weight:700;color:#fff!important;cursor:pointer;background:linear-gradient(135deg,var(--bl),var(--tl));font-family:inherit;}
+    #ocf-chk .s-go:hover{filter:brightness(1.05);}
+    #ocf-chk .s-msg{display:none;margin-top:12px;font-size:13.5px;color:var(--rd);font-weight:600;}
+    #ocf-chk .s-out{display:none;margin-top:18px;border-radius:12px;border:1px solid var(--ln);overflow:hidden;}
+    #ocf-chk .s-out .s-status{padding:14px 18px;font-weight:700;font-size:16px;color:#fff!important;background:linear-gradient(135deg,var(--n),var(--n2));}
+    #ocf-chk .s-out .s-inner{padding:16px 18px;background:var(--alt);}
+    #ocf-chk .s-row{font-size:14.5px;margin:0 0 10px;line-height:1.5;}
+    #ocf-chk .s-count{display:inline-block;background:#fff;border:1px solid var(--ln);border-radius:9px;padding:8px 14px;font-weight:700;color:var(--n);font-size:14.5px;}
+    #ocf-chk .s-list{margin:8px 0 0;padding-left:18px;}
+    #ocf-chk .s-list li{font-size:13.5px;color:var(--ink);margin:4px 0;border:none;padding:0 0 0 4px;}
+    #ocf-chk .s-list li::before{display:none;}
+    #ocf-chk .s-cta{display:inline-block;margin-top:14px;background:var(--gd);color:#fff!important;font-weight:700;font-size:14.5px;text-decoration:none;padding:11px 20px;border-radius:10px;}
+    #ocf-chk .s-note{font-size:12.5px;color:var(--mut);margin:12px 0 0;}
+    @media(max-width:560px){#ocf-chk .s-q{flex-direction:column;align-items:flex-start;gap:8px;}}
+  </style>
+  <div class="s-head" style="background:linear-gradient(135deg,#0f2a4a,#15355c) !important;">
+    <h5>First 30 Days Readiness Check</h5>
+    <p>Six quick questions. No tax calculation, no figure quoted.</p>
+  </div>
+  <div class="s-body">
+    <div class="s-q" data-flag="0" data-msg="Organizational resolutions and by-laws, signed by the directors"><span class="s-lab">1. Have the organizational resolutions been signed?</span>
+      <span class="s-seg"><input type="radio" id="c-a-y" name="c-a" value="1"><label for="c-a-y">Yes</label><input type="radio" id="c-a-n" name="c-a" value="0"><label for="c-a-n">No</label></span></div>
+    <div class="s-q" data-flag="0" data-msg="Issuing the shares, so the corporation has shareholders on paper"><span class="s-lab">2. Have shares been issued to the owners?</span>
+      <span class="s-seg"><input type="radio" id="c-b-y" name="c-b" value="1"><label for="c-b-y">Yes</label><input type="radio" id="c-b-n" name="c-b" value="0"><label for="c-b-n">No</label></span></div>
+    <div class="s-q" data-flag="0" data-msg="A minute book with articles, by-laws, resolutions and registers, including the ISC register"><span class="s-lab">3. Do you have a minute book?</span>
+      <span class="s-seg"><input type="radio" id="c-c-y" name="c-c" value="1"><label for="c-c-y">Yes</label><input type="radio" id="c-c-n" name="c-c" value="0"><label for="c-c-n">No</label></span></div>
+    <div class="s-q" data-flag="1" data-msg="A CRA payroll account before the first pay, and WSIB registration within 10 days of hiring"><span class="s-lab">4. Will you pay employees in the next 30 days?</span>
+      <span class="s-seg"><input type="radio" id="c-d-y" name="c-d" value="1"><label for="c-d-y">Yes</label><input type="radio" id="c-d-n" name="c-d" value="0"><label for="c-d-n">No</label></span></div>
+    <div class="s-q" data-flag="1" data-msg="GST/HST registration once taxable sales pass $30,000 in four calendar quarters"><span class="s-lab">5. Do you expect more than $30,000 in taxable sales within a year?</span>
+      <span class="s-seg"><input type="radio" id="c-e-y" name="c-e" value="1"><label for="c-e-y">Yes</label><input type="radio" id="c-e-n" name="c-e" value="0"><label for="c-e-n">No</label></span></div>
+    <div class="s-q" data-flag="0" data-msg="A corporate bank account, so business and personal money stay separate"><span class="s-lab">6. Is the corporate bank account open?</span>
+      <span class="s-seg"><input type="radio" id="c-f-y" name="c-f" value="1"><label for="c-f-y">Yes</label><input type="radio" id="c-f-n" name="c-f" value="0"><label for="c-f-n">No</label></span></div>
+    
+<button type="button" class="s-go" id="c-go">Check my readiness</button>
+    <div class="s-msg" id="c-msg">Please answer all six questions to continue.</div>
+    <div class="s-out" id="c-out">
+      <div class="s-status" id="c-status" style="background:linear-gradient(135deg,#0f2a4a,#15355c) !important;">Your profile</div>
+      <div class="s-inner">
+        <p class="s-row"><b>Points to work through:</b> <span class="s-count" id="c-count"></span></p>
+        <div id="c-listwrap" style="display:none;"><p class="s-row" style="margin-bottom:4px;"><b>Worth reviewing with us:</b></p><ul class="s-list" id="c-list"></ul></div>
+        <p class="s-row" id="c-clean" style="display:none;"><b>Nothing flagged.</b> The usual complications do not appear to apply to you.</p>
+        <a class="s-cta" href="https://gondaliyacpa.ca/consultation/">Book a free consultation</a>
+        <p class="s-note">This is a general prompt, not tax advice, and it does not calculate your tax. Your outcome depends on your full facts, so please book a free consultation.</p>
+      </div>
+    </div>
+  </div>
+  <script>
+  (function(){
+    var root=document.getElementById('ocf-chk');
+    root.querySelector('#c-go').addEventListener('click',function(){
+      var qs=root.querySelectorAll('.s-q'), items=[], missing=false;
+      qs.forEach(function(q){
+        var x=q.querySelector('input:checked');
+        if(!x){missing=true;return;}
+        if(x.value===q.getAttribute('data-flag')) items.push(q.getAttribute('data-msg'));
+      });
+      var msg=root.querySelector('#c-msg'), out=root.querySelector('#c-out');
+      if(missing){msg.style.display='block';out.style.display='none';return;}
+      msg.style.display='none';
+      var list=root.querySelector('#c-list'), lw=root.querySelector('#c-listwrap'), clean=root.querySelector('#c-clean');
+      root.querySelector('#c-count').textContent=items.length+' to work through';
+      list.innerHTML='';
+      if(items.length){lw.style.display='block';clean.style.display='none';items.forEach(function(t){var li=document.createElement('li');li.textContent=t;list.appendChild(li);});}
+      else{lw.style.display='none';clean.style.display='block';}
+      root.querySelector('#c-status').textContent = items.length>=3 ? 'Several points need attention' : (items.length>=1 ? 'A few points to work through' : 'A straightforward case');
+      out.style.display='block';
+    });
+  })();
+  </script>
+</div>
+<div class="gcpa-cta" style="background:linear-gradient(135deg,#0f2a4a 0%,#1c4a78 100%) !important;">
+<h4>Finish your first 30 days with a CPA</h4>
+<p>Incorporation from $35 including HST plus government fees, with a free CPA consultation on everything that follows the certificate. Please book a free consultation.</p>
+<div class="gcpa-trust"><span>1300+ 5-star Google reviews</span><span>Xero Partner Award Winner 2026</span><span>30-Day Money-Back Guarantee</span><span>60-Day Fee Matching</span></div>
+<div class="gcpa-btnrow"><a class="solid" href="https://gondaliyacpa.ca/consultation/">Book Free Consultation</a><a href="https://opencorporationfor35.ca/address-service-100/">Address Service</a><a href="https://opencorporationfor35.ca/contact-us/">Contact Us</a></div>
+</div>
+<h3 class="gcpa-closing" id="toc-closing">What to Send Us</h3>
+<p>Send us your certificate and articles, each director's and shareholder's name, the shares you want issued, and whether you plan to hire staff or charge GST/HST in the first year. That is enough for us to prepare your resolutions and share issuance and list your CRA accounts and deadlines. Please start on our <a href="https://opencorporationfor35.ca/incorporation-form/">incorporation form</a> or see every fee on our <a href="https://opencorporationfor35.ca/pricing/">pricing page</a>.</p>
+<div class="gcpa-author">
+<div class="ava" style="background:linear-gradient(135deg,#0f2a4a,#0c8f8f) !important;color:#ffffff !important;">SG</div>
+<div class="info">
+<h5>Sharad Gondaliya, CPA (Canada &amp; USA) — Founder &amp; Managing Director, Gondaliya CPA Professional Corporation</h5>
+<div class="role">Reviewed and fact-checked by Sharad Gondaliya, CPA (Canada &amp; USA)</div>
+<p style="font-size:14.5px;color:#15355c !important;font-weight:700;margin:0 0 8px;">Open Corporation for $35 is a department of Gondaliya CPA.</p>
+<p>We incorporate and support companies in all 13 provinces and territories, handling CRA registrations, corporate tax filing, bookkeeping, GST/HST, payroll and audit support. Verify our firm on the <a href="https://www.cpaontario.ca/protecting-the-public/directories/firm/gondaliya-5sqvmj">CPA Ontario public firm directory</a>, firm registration 61330051.</p>
+<p style="font-size:13.5px;color:#15355c !important;font-weight:700;margin-top:10px;">CPA Ontario | CPA USA (Washington &amp; Montana) | Xero Partner Award Winner 2026 | 1300+ 5-star Google reviews</p>
+</div>
+</div>
+<p style="font-size:13px;color:#5a6b7b;border-top:1px solid #e3e9f0;padding-top:16px;margin-top:8px;"><strong>Published:</strong> November 16, 2026 &nbsp;·&nbsp; <strong>Last updated:</strong> November 16, 2026</p>
+<p style="font-size:13px;color:#5a6b7b;"><strong>Editorial policy:</strong> Our content is prepared by our team and reviewed by Sharad Gondaliya, CPA, and we update it as corporate filing deadlines and CRA rules change.</p>
+<p style="font-size:13px;color:#5a6b7b;"><strong>Disclaimer:</strong> This article is educational information only and is not tax, legal, or financial advice. Gondaliya CPA Professional Corporation is a firm of Chartered Professional Accountants, not a law firm. Please consult a CPA before acting.</p>
+<p style="font-size:14.5px;color:#15355c;font-weight:700;border-top:2px solid #e3e9f0;padding-top:16px;margin-top:20px;">Open Corporation for $35 is a department of Gondaliya CPA.</p>
+<p style="font-size:13px;color:#5a6b7b;">Operated by WealthBamboo Inc. Parent firm Gondaliya CPA Professional Corporation, CPA Ontario firm registration 61330051. Xero Partner Award Winner 2026. 1300+ five-star Google reviews. 30-day money-back guarantee and 60-day fee-matching policy. Phone 647-212-9559, email info@gondaliyacpa.ca, open 9:00 AM to 8:30 PM Monday to Sunday. Payment by Interac e-Transfer to info@gondaliyacpa.ca only, security question "Not Applicable" as auto-deposit is enabled. Card is also accepted.</p>
+</div>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@graph": [{"@type": "BlogPosting", "@id": "https://opencorporationfor35.ca/what-happens-after-you-incorporate-canada-first-30-days/#article", "headline": "What Happens After You Incorporate in Canada? The First 30 Days: A Business Owner's Checklist", "description": "The first 30 days after incorporating in Canada: organizational resolutions, shares, minute book, initial return, CRA accounts, bank account and the deadlines that follow.", "datePublished": "2026-11-16", "dateModified": "2026-11-16", "author": {"@type": "Person", "name": "Sharad Gondaliya, CPA"}, "publisher": {"@type": "Organization", "name": "Open Corporation for $35", "description": "Open Corporation for $35 is a department of Gondaliya CPA.", "parentOrganization": {"@type": "AccountingService", "name": "Gondaliya CPA Professional Corporation", "identifier": "CPA Ontario Firm Registration 61330051"}}, "mainEntityOfPage": "https://opencorporationfor35.ca/what-happens-after-you-incorporate-canada-first-30-days/"}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is the CRA payroll remittance due date for new corporations?", "acceptedAnswer": {"@type": "Answer", "text": "New corporations must remit payroll deductions by the 15th of the month after paying employees. Missing this can cause penalties and interest."}}, {"@type": "Question", "name": "When must the ISC register be filed and what is its threshold?", "acceptedAnswer": {"@type": "Answer", "text": "Corporations under CBCA must file an ISC register if any individual holds over 25% control. Updates are required within 15 days of changes."}}, {"@type": "Question", "name": "What is the WSIB registration deadline for Ontario businesses?", "acceptedAnswer": {"@type": "Answer", "text": "You must register with WSIB within 10 days of hiring your first employee in a covered industry to avoid fines and comply with workplace safety rules."}}, {"@type": "Question", "name": "How does the Employer Health Tax exemption work in Ontario?", "acceptedAnswer": {"@type": "Answer", "text": "Employers with annual payroll below $1 million are exempt from Employer Health Tax, saving on costs during early growth."}}, {"@type": "Question", "name": "What is the maximum fiscal year length for a Canadian corporation?", "acceptedAnswer": {"@type": "Answer", "text": "A corporation's tax year cannot be longer than 53 weeks, and the first one must end within 53 weeks of incorporation."}}, {"@type": "Question", "name": "What is the notice of change deadline after incorporation?", "acceptedAnswer": {"@type": "Answer", "text": "Any changes to directors, officers, or registered office must be filed within 15 calendar days federally or provincially."}}, {"@type": "Question", "name": "When do extra-provincial registrations become necessary?", "acceptedAnswer": {"@type": "Answer", "text": "If operating outside your incorporation province, you need extra-provincial registration in those provinces before conducting business there."}}, {"@type": "Question", "name": "Why is obtaining a municipal business licence important post-incorporation?", "acceptedAnswer": {"@type": "Answer", "text": "A municipal licence ensures legal operation within your city or town. Operating without one risks fines or closure."}}, {"@type": "Question", "name": "How does the Business Names Act affect incorporated companies in Ontario?", "acceptedAnswer": {"@type": "Answer", "text": "Corporations using trade names different from their legal name must register under this act to ensure legal protection and transparency."}}, {"@type": "Question", "name": "What role do subscription agreements play after incorporation?", "acceptedAnswer": {"@type": "Answer", "text": "Subscription agreements formalize share purchases by investors, clarifying ownership and preventing disputes later."}}, {"@type": "Question", "name": "Why is passing a banking resolution crucial for opening a corporate bank account?", "acceptedAnswer": {"@type": "Answer", "text": "A banking resolution authorizes officers to open accounts and transact banking on behalf of the corporation legally."}}, {"@type": "Question", "name": "What information must share certificates include?", "acceptedAnswer": {"@type": "Answer", "text": "Certificates state shareholder names, share class, number issued, and issue date as proof of ownership under corporate law."}}, {"@type": "Question", "name": "When are certified copies of incorporation documents needed?", "acceptedAnswer": {"@type": "Answer", "text": "Banks and regulators may request certified copies of articles and certificates to verify your corporation’s legitimacy."}}, {"@type": "Question", "name": "What are KYC requirements when opening a corporate bank account?", "acceptedAnswer": {"@type": "Answer", "text": "Banks require Know Your Customer info like IDs of directors/officers, proof of address, and corporate documents for compliance."}}, {"@type": "Question", "name": "How do shareholder loan risks impact new corporations?", "acceptedAnswer": {"@type": "Answer", "text": "Improper loans to shareholders can trigger tax issues under ITA section 15(2) and complicate finances if not documented properly."}}]}]}
+</script>
