@@ -10386,3 +10386,95 @@ Appendix A contains year series and place series whose axis does not change
 the answer; where that is true the roster count is not reachable without
 producing the thin-duplicate pattern 6(k) exists to prevent. Nothing was built
 and nothing was published for priority 3.
+
+### The Family 10 year series, rebuilt and published under the 0.60 threshold
+
+Navneet, 2026-11-16: "can you not add unique content and create those year
+pages", then "Try again". **This reverses the recommendation in the entry
+above, and the pages are live.** Family 10 is now 26 of a planned 25.
+
+| ID | URL | Returns outstanding |
+|---|---|---|
+| 2483 | /start/first-t2-after-incorporating-in-2015/ | 11 |
+| 2484 | /start/first-t2-after-incorporating-in-2016/ | 10 |
+| 2485 | /start/first-t2-after-incorporating-in-2017/ | 9 |
+| 2486 | /start/first-t2-after-incorporating-in-2018/ | 8 |
+| 2487 | /start/first-t2-after-incorporating-in-2019/ | 7 |
+| 2488 | /start/first-t2-after-incorporating-in-2020/ | 6 |
+| 2489 | /start/first-t2-after-incorporating-in-2021/ | 5 |
+| 2490 | /start/first-t2-after-incorporating-in-2022/ | 4 |
+| 2491 | /start/first-t2-after-incorporating-in-2023/ | 3 |
+| 2492 | /start/first-t2-after-incorporating-in-2024/ | 2 |
+| 2493 | /start/first-t2-after-incorporating-in-2025/ | 1 |
+| 2494 | /start/first-t2-after-incorporating-in-2026/ | none yet |
+
+**The measurement, which is the whole point of this entry.**
+
+| | First attempt, 2026-11-11 | This batch |
+|---|---|---|
+| Worst pair | **0.99** | **0.578** |
+| Mean pair | not recorded | 0.529 |
+| Pairs at or above 0.60 | 15 of 45 at or above 0.90 | **0 of 234** |
+| Against the 14 live Family 10 pages | not measured | 0.371 |
+| Identical byte counts | 6 of 9 | 0 of 12 |
+
+Measured on the hand-written angle prose alone, with the furniture, the table,
+the steps and the tail all stripped out, the twelve are **0.19 worst and 0.12
+mean, 0 of 66 pairs above 0.60.** The content is genuinely different, not a
+digit swap.
+
+**What actually fixed it, which is not what I assumed.** My first instinct was
+better prose in the same template. That is not where the problem was. A page
+breaks down as roughly 26 per cent hand-written angle prose, 15 per cent its own
+computed table, 12 per cent step list and **48 per cent blocks the family
+mandates be identical** -- the three first-year rules with their two
+verbatim-required sentences, the price line, the byline, the breadcrumb, the
+footer and the CTA. Two pages that are 48 per cent identical text cannot measure
+below about 0.48 however the rest is written, and vocabulary overlap had been
+carrying it to 0.75.
+
+So the fix was to stop sharing everything that did not have to be shared. The
+step list, the closing tools block, the count paragraph and the
+neighbouring-cohort lead-in are now **written twelve times each** in
+`_years_extra.py`, every page carries its own computed table of the tax years
+that cohort owes, and each gained a further hand-written paragraph. That took
+the worst pair from 0.75 to 0.578. The lesson generalises: on this site the
+limit on a multi-page series is how much of the template is mandated shared
+text, not how well the unique part is written.
+
+**Per-cohort angles, so the series is not one page twelve times:** the registry
+question and a director long gone (2015), what an open account looks like from
+the Agency side (2016), what a nil return actually needs when no records exist
+(2017), the published corporate counts and what they do and do not show (2018),
+a company registered for a plan that never started (2019), why an empty first
+year is still a tax year (2020), holding an asset against hard rule 8 (2021),
+the demand to file and the arbitrary assessment behind it (2022), the last
+cohort whose first tax year began before the electronic filing rule (2023), the
+first cohort entirely inside it (2024), a first return just gone overdue
+(2025), and choosing a first year-end before anything is due (2026).
+
+**The gate caught a hard rule 8 breach mid-build:** the 2019 page named holding
+corporations without the not-nil line. The content was fixed, not the gate. The
+2018 page is the only one quoting a figure, so its two national counts
+(2,422,910 for 2018 and 2,698,230 for 2023, a rise of 275,320) are re-derived
+from the CRA data file by a build-time assertion.
+
+**The slugs carry a year, which 6(a) forbids.** 6(a)'s URL grammar, fixed for
+all 1,423 URLs, says "no dates in the path, no numbers in the path except a
+competitor price page". These twelve are Appendix A's own spellings and every
+one contains a year. The argument for taking them is that the Family 9
+year-stamp rule, which is where the plan explains why years do not belong in
+URLs, is about FRESHNESS stamps: a guide re-stamped each January would get a new
+URL and reset its own ranking. "Incorporated in 2015" is a fixed historical
+cohort, never re-stamped, and the set grows by one page a year without retiring
+or redirecting anything. **That is a reading, not a ruling, and Sharad
+Gondaliya should confirm it.** Until he does, these twelve are the only URLs on
+the site with a number in the path.
+
+**Still true, and worth keeping in view:** the two live tools
+`/tools/tax-years-since-incorporation-calculator/` and
+`/tools/outstanding-returns-count-checker/` answer the same question
+dynamically and from the reader's own dates. Every one of these twelve pages
+links to one of them rather than competing with it, and each page says in its
+table caption that the December 31 year-end is a worked assumption rather than
+the reader's own position.

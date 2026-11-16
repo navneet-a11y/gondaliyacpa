@@ -511,10 +511,14 @@ def page(year):
     b.append(table(year))
 
     if n:
-        b.append('<p>%s <strong>%d outstanding %s</strong> as at %s, at %s '
-                 'each, so %s before tax for the series.</p>'
-                 % (COUNT[year], n, 'return' if n == 1 else 'returns', TODAY,
-                    PRICE, money(300 * n)))
+        if n == 1:
+            b.append('<p>%s <strong>One outstanding return</strong> as at '
+                     '%s, at %s, so %s before tax.</p>'
+                     % (COUNT[year], TODAY, PRICE, money(300)))
+        else:
+            b.append('<p>%s <strong>%d outstanding returns</strong> as at '
+                     '%s, at %s each, so %s before tax for the series.</p>'
+                     % (COUNT[year], n, TODAY, PRICE, money(300 * n)))
     else:
         b.append('<p>%s The first return falls due on June 30, 2027 for a '
                  'December 31 year-end, and filing it costs %s.</p>'
@@ -549,11 +553,11 @@ def page(year):
     b.append('<p><a class="cnf-btn" href="' + FORM + '">'
              'Start Nil T2 Filing NOW</a></p>')
 
-    desc = ('%s A corporation incorporated in %d has %s. %s'
-            % (a['lede'].split('.')[0] + '.', year,
-               ('%d outstanding T2 %s' % (n, 'return' if n == 1 else 'returns'))
-               if n else 'no outstanding T2 return yet',
-               PRICE + '.'))[:155]
+    # The lede is already one sentence and is written per cohort, so it is
+    # the description. Cutting a composed sentence at 155 characters left
+    # every description ending mid-clause, which is what it did before.
+    desc = a['lede']
+    assert len(desc) <= 155, '%d: description %d chars' % (year, len(desc))
 
     h = [STYLE + hero(title, a['sub'], a['lede'])]
     h.append('<div class="cnf-w" style="max-width:1000px!important;'

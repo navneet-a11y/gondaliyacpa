@@ -1,6 +1,6 @@
 {
  "_note": "Live slug manifest, pulled from the REST API with _fields=slug on 2026-11-11. build/check_links.py validates every internal href in build/**/*.html against this. Regenerate after any publish batch: a stale manifest makes the checker lie, which is the failure mode it exists to prevent.",
- "_pulled": "2026-11-16 (Saskatchewan opened: hub plus five of twelve service pages; root now 89)",
+ "_pulled": "2026-11-16 (Saskatchewan opened: hub plus five of twelve service pages; the twelve Family 10 year pages published, so start now 26)",
  "tools": [
   "53-week-first-tax-year-checker",
   "acquired-corporation-unfiled-years-checker",
@@ -259,6 +259,18 @@
   "what-is-a-nil-t2-return"
  ],
  "start": [
+  "first-t2-after-incorporating-in-2015",
+  "first-t2-after-incorporating-in-2016",
+  "first-t2-after-incorporating-in-2017",
+  "first-t2-after-incorporating-in-2018",
+  "first-t2-after-incorporating-in-2019",
+  "first-t2-after-incorporating-in-2020",
+  "first-t2-after-incorporating-in-2021",
+  "first-t2-after-incorporating-in-2022",
+  "first-t2-after-incorporating-in-2023",
+  "first-t2-after-incorporating-in-2024",
+  "first-t2-after-incorporating-in-2025",
+  "first-t2-after-incorporating-in-2026",
   "first-t2-return-after-incorporation",
   "what-a-new-alberta-corporation-must-file",
   "what-a-new-british-columbia-corporation-must-file",
