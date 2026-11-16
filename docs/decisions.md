@@ -10346,3 +10346,43 @@ per tax year". **Other national pages have not been swept.** `/`, `/pricing/`,
 `/services/`, `/nil-t2-filing/` and the other national service pages were not
 checked in this pass and may carry the same wording. **That sweep is still
 open.**
+
+### Priority 3 stopped: the twelve Family 10 year pages should be dropped, not built
+
+Navneet, 2026-11-16: "then start priority 3", priority 3 being the twelve
+`/start/first-t2-after-incorporating-in-<year>/` pages. **I listed those as a
+clean, unblocked twelve. That was wrong, and the record in this file says so.**
+
+On 2026-11-11 nine of these pages were built, measured at **0.99 worst pair,
+with fifteen of 45 pairs at or above 0.90 and six pages at identical byte
+counts**, and deleted rather than published. The entry above closes with: the
+gap "needs a different idea or a decision to drop the series, not another
+attempt at the same pages". Building them now would be exactly that second
+attempt.
+
+The reason has not changed. For a nil return the incorporation year does not
+change the answer, because a dormant year is dormant whenever the corporation
+was registered. Everything that genuinely varies by cohort is either a digit
+(how many years are outstanding, what they total at $300.00 each) or splits the
+set into two buckets rather than twelve (mandatory electronic filing reaches
+tax years starting after 2023).
+
+**What is new, and what settles it:** the question those twelve pages would
+answer is already answered on this site, dynamically and for every year,
+by two Family 2 tools that are live:
+
+- `/tools/tax-years-since-incorporation-calculator/`
+- `/tools/outstanding-returns-count-checker/`
+
+A reader who incorporated in 2015 types the date and gets the count and the
+total. Twelve static pages would serve that worse than the two calculators
+already do, and would compete with them. The right disposition is to **drop
+the series** and let the tools carry the intent, which leaves Family 10 at
+14 of a planned 25 by decision rather than by omission.
+
+**This is a scoping decision for Sharad Gondaliya**, and it is the second
+Appendix A series to reach it, after the thirteen jurisdiction cost pages.
+Appendix A contains year series and place series whose axis does not change
+the answer; where that is true the roster count is not reachable without
+producing the thin-duplicate pattern 6(k) exists to prevent. Nothing was built
+and nothing was published for priority 3.
