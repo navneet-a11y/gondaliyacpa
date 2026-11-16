@@ -20,8 +20,12 @@ import io, json, os, re as _re
 HERE = os.path.dirname(os.path.abspath(__file__))
 SITE = 'https://corpnilfilingfor300.ca'
 FORM = SITE + '/form/'
-TODAY, ISO = 'October 30, 2026', '2026-10-30'
-PRICE = '$300.00 plus HST per tax year'
+TODAY, ISO = 'November 16, 2026', '2026-11-16'
+# Navneet, 2026-11-12: "Plus hst where application dont write hst
+# where its not". This index covers all thirteen jurisdictions and
+# only five charge HST, so the national string cannot name it. The
+# per-province pages still say HST where HST is what is charged.
+PRICE = '$300.00 plus applicable sales tax per tax year'
 HUB = SITE + '/locations/'
 TITLE = 'Nil T2 Filing by Province'
 # No "and City" in the title: zero Family 3 city hubs are built, and a
@@ -74,6 +78,28 @@ PROVINCES = [
   # All twelve Alberta services published 2026-11-02, so the live filter is
   # gone and this province links the full set, as Ontario and British Columbia
   # do. It carried the first five while the other seven did not exist.
+ #
+ # Quebec, all twelve published 2026-11-12 and 2026-11-13. The second province
+ # that administers its own corporate income tax, which hard rule 8 and plan
+ # line 1212 make a required statement. Its registry is not named: Revenu
+ # Quebec returns 403 to automated clients, so the enterprise register's name,
+ # route and deadlines are unsourced.
+ ('Quebec', 'quebec', 'quebec',
+  'Registry filing: Quebec annual filing',
+  'Quebec administers its own corporate income tax, so the Quebec CO-17 is a '
+  'separate return filed with Revenu Quebec and is not covered by the fee. '
+  'The Quebec annual filing with the provincial enterprise register is a '
+  'separate registry filing again.'),
+ # Saskatchewan, opened 2026-11-16 with five of twelve, so it passes live and
+ # links only what exists. Corporate income tax is collected through the
+ # federal T2, as it is everywhere except Quebec and Alberta.
+ ('Saskatchewan', 'saskatchewan', 'saskatchewan',
+  'Registry filing: Saskatchewan annual return',
+  'Saskatchewan corporate income tax is collected through the federal T2, so '
+  'the return we file settles both levels. The Saskatchewan annual return is '
+  'a separate registry filing and is not covered by the fee.',
+  ['Nil T2 Filing', 'Catch-Up Nil T2 Filing', 'Dormant Corporation Filing',
+   'Final T2 Before Dissolution', 'T2 Short Filing']),
 ]
 
 ALSO = [

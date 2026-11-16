@@ -10259,3 +10259,90 @@ Business Number", in `ontario-cards.json`, `alberta-cards.json`,
 `british-columbia-cards.json`, the three built hub HTML files, the
 jurisdictions manifest, and live on 516, 996 and 1548. Ontario's own "plus HST"
 is correct and was left alone.
+
+### Saskatchewan opens: the hub and five of twelve service pages
+
+Navneet, 2026-11-16: "start next jurisdiction with 5 of its pages and hub".
+Saskatchewan is next by corporate population among the nine that remained after
+Quebec closed. Live: 2474 `/saskatchewan/`, and 2469 to 2473 for nil-t2-filing,
+catch-up, dormant, final-t2-before-dissolution and t2-short-filing, the same
+five every province has opened with.
+
+**The claim these pages are built on** is that Saskatchewan has no separate
+provincial corporate income tax return: it is collected through the federal T2,
+so one return settles both levels. Only Quebec and Alberta are otherwise. Plan
+line 1212 wants this stated rather than left out, and the builder asserts the
+sentence is present on every page before writing it.
+
+**A false comparative claim was caught before it shipped.** `PLACE_PARA` for
+Saskatchewan said the 2018-to-2023 rise was "the slowest proportional growth of
+any province except Alberta". Newfoundland and Labrador fell 9.0 per cent over
+the same six years, which is slower than any growth, so the claim was false as
+written. It now reads "Among the provinces that grew at all over those six
+years, only Alberta grew more slowly", and `build_f4_sk.py` re-derives that from
+the table at build time rather than trusting the sentence. The same check
+rejected a second claim in the module docstring, that Saskatchewan was one of
+only two provinces under three per cent growth; it is at 3.6 per cent. Both
+were found by the check, not by reading.
+
+This is the third batch in which a hand-written comparative claim turned out
+not to hold. The rule that works is the one applied here: a sentence that
+compares jurisdictions is re-derived from the data file by an assertion in the
+builder, so it cannot drift from the table or survive a table refresh unexamined.
+
+**Registry facts are UNVERIFIED, as Alberta's and Quebec's are.** The network
+policy denies www.saskatchewan.ca, corporateregistry.isc.ca and www.isc.ca, so
+nothing is asserted about the Saskatchewan annual return's due date, fee,
+statute, filing route or dissolution threshold. The pages say it exists, is a
+registry filing rather than a tax return, carries no tax and is not covered by
+the fee.
+
+**6(k) similarity.** Saskatchewan's worst pair is 0.73 within the place and
+0.70 against the same service in another province, against a family worst of
+0.83 and Quebec's 0.77. It is the best-performing place in Family 4 and is
+still above the 0.60 rewrite threshold, which every live Family 4 page exceeds.
+The shared furniture the template mandates -- hero, trust strip, the hard rule 8
+not-nil block, the four-step strip, the filings-not-covered box, the footer and
+the schema -- is most of each page by word count, so no amount of rewriting the
+prose brings a page under 0.60 while the template stays as it is. **That is a
+template question for Sharad Gondaliya, not a writing question.**
+
+### Three builder defects fixed while opening Saskatchewan
+
+1. **The jurisdiction hub builder had no container fix.** The `.cnf-w` and
+   `.cnf-hero-in` width overrides that Navneet asked for on 2026-11-12 were
+   applied by hand to the three hubs live at the time and never put in
+   `build_jurisdiction.py`, so Saskatchewan and the eight hubs after it would
+   each have shipped with the bug and needed the same manual repair. Now in the
+   builder.
+
+2. **The hub builder emitted a three-field author node** while the live hubs
+   carry the full credential block with the CPA Ontario membership number, the
+   two US licences and the `sameAs` list. Every hub built from here would have
+   shipped thinner schema than the ones already published. The builder now
+   emits `AUTHOR` and `reviewedBy`, matching live.
+
+3. **The Family 16 gate checked one file.** `gate.py` defaulted to
+   `guides-hub.html`, so running it after changing a different hub printed
+   "gate clear" having checked nothing relevant. Same defect as the Family 4
+   gate importing one province. It now checks every `*-hub.html` by default;
+   all four pass.
+
+### /locations/ had been out of date since 2026-11-02, and its guard did not notice
+
+`locations-hub-children.json` is read by the builder to assert every live
+service-place page is linked. It was last read from the site on 2026-11-02, so
+when Quebec's twelve published on 2026-11-12 and 2026-11-13 the guard compared
+the hub against a 36-slug list that did not contain them and passed. **Quebec
+was live and unlinked from the place index for four days.** A guard that reads
+a stale list checks nothing. The file now holds 53 slugs read on 2026-11-16,
+and the hub links Quebec's twelve and Saskatchewan's five.
+
+**The national price string on /locations/ is corrected too.** It read "$300.00
+plus HST per tax year" in six places. A national index covers all thirteen
+jurisdictions and only five charge HST, so under Navneet's 2026-11-12 rule the
+national string cannot name it; it now reads "$300.00 plus applicable sales tax
+per tax year". **Other national pages have not been swept.** `/`, `/pricing/`,
+`/services/`, `/nil-t2-filing/` and the other national service pages were not
+checked in this pass and may carry the same wording. **That sweep is still
+open.**

@@ -178,7 +178,15 @@ CSS = """<style>.cnf-hero{background-image:linear-gradient(rgba(11,26,51,.82),rg
 .cnf-faq details[open] summary::after{transform:rotate(45deg)}
 .cnf-faq .cnf-faq-a{padding:0 28px 24px}
 .cnf-faq .cnf-faq-a p{margin:0;line-height:1.7}
-@media(max-width:900px){.cnf-trust{grid-template-columns:1fr}}</style>
+@media(max-width:900px){.cnf-trust{grid-template-columns:1fr}}
+/* Astra's full-width container mode overrides the wrapper's own
+   max-width, so .cnf-w and .cnf-hero-in lose their centring and run
+   hard against the left edge. Navneet reported it on 2026-11-12; it
+   was fixed by hand on the three hubs live at the time and is carried
+   here so no later hub ships with the bug. */
+.cnf-w{max-width:1000px!important;margin-left:auto!important;margin-right:auto!important;float:none!important}
+.entry-content>.cnf-w,.ast-container>.cnf-w{max-width:1000px!important}
+.cnf-hero-in{max-width:1140px!important;margin-left:auto!important;margin-right:auto!important;float:none!important}</style>
 """
 
 def art(word):
@@ -199,6 +207,56 @@ def tbl(head, rows):
         out.append('<tr>' + ''.join('<td>%s</td>' % c for c in r) + '</tr>')
     out.append('</tbody></table>')
     return '\n'.join(out)
+
+# The author/reviewer node, as it is live on the three hubs published before
+# Saskatchewan. 7.5 rule 3 wants the membership number on the page and the
+# credentials in the schema; the short Person node this builder used carried
+# neither.
+AUTHOR = {
+ "@type": "Person",
+ "@id": "https://gondaliyacpa.ca/team/sharad-gondaliya-cpa/#person",
+ "name": "Sharad Gondaliya",
+ "honorificSuffix": "CPA",
+ "jobTitle": "Chartered Professional Accountant",
+ "url": SITE + "/sharad-gondaliya-cpa/",
+ "image": SITE + "/wp-content/uploads/2026/09/sharad-gondaliya-cpa.png",
+ "worksFor": {"@type": "Organization",
+              "@id": "https://gondaliyacpa.ca/#organization",
+              "name": "Gondaliya CPA Professional Corporation",
+              "url": "https://gondaliyacpa.ca/"},
+ "knowsAbout": ["T2 corporate tax returns",
+                "Nil and dormant corporation filings",
+                "T2 Short return eligibility", "Form T183CORP",
+                "Corporate dissolution and final returns"],
+ "hasCredential": [
+   {"@type": "EducationalOccupationalCredential",
+    "credentialCategory": "Professional designation",
+    "name": "Chartered Professional Accountant, Ontario",
+    "recognizedBy": {"@type": "Organization",
+                     "name": "Chartered Professional Accountants of Ontario"},
+    "identifier": {"@type": "PropertyValue",
+                   "name": "CPA Ontario Membership", "value": "61040184"}},
+   {"@type": "EducationalOccupationalCredential",
+    "credentialCategory": "Professional licence",
+    "name": "Certified Public Accountant, Washington",
+    "recognizedBy": {"@type": "Organization",
+                     "name": "Washington State Board of Accountancy"},
+    "identifier": {"@type": "PropertyValue",
+                   "name": "Washington CPA Licence", "value": "57629"}},
+   {"@type": "EducationalOccupationalCredential",
+    "credentialCategory": "Professional licence",
+    "name": "Certified Public Accountant, Montana",
+    "recognizedBy": {"@type": "Organization",
+                     "name": "Montana Board of Public Accountants"},
+    "identifier": {"@type": "PropertyValue",
+                   "name": "Montana CPA Licence",
+                   "value": "PAC-CPAP-LIC-033176"}}],
+ "sameAs": ["https://gondaliyacpa.ca/team/sharad-gondaliya-cpa/",
+            "https://www.linkedin.com/in/sharadcpa/",
+            "https://www.cpaontario.ca/protecting-the-public/directories/member/gondaliya-3gme05",
+            "https://ald.nasba.org/search/cpa/525782903?jurisdictionId=123",
+            "https://ebizws.mt.gov/PUBLICPORTAL/licensedetail?altid=PAC-CPAP-LIC-033176"],
+}
 
 # ---------------------------------------------------------------------------
 # Jurisdiction data. Everything province-specific lives here, so the remaining
@@ -368,7 +426,56 @@ QC = dict(
 )
 
 
-JURISDICTIONS = [BC, AB, QC]
+# ---------------------------------------------------------------------------
+# Saskatchewan, opened 2026-11-16. Fourth jurisdiction by corporate population
+# after Ontario, British Columbia and Alberta are counted alongside Quebec;
+# first of the nine that remained after Quebec closed.
+#
+# separate_return is None, and that is the substantive claim: Saskatchewan
+# corporate income tax is collected through the federal T2, so the return we
+# file settles the provincial side too. Only Quebec and Alberta are otherwise.
+#
+# Registry facts are held at UNVERIFIED, exactly as Alberta's and Quebec's are.
+# The environment's network policy denies www.saskatchewan.ca,
+# corporateregistry.isc.ca and www.isc.ca (no CONNECT at the agent proxy), so
+# the Corporate Registry pages and The Business Corporations Act could not be
+# read, and nothing about the Saskatchewan annual return is asserted here. The
+# guard below refuses a half-filled block, so the hub simply omits the subject.
+# ---------------------------------------------------------------------------
+SK = dict(
+ slug='saskatchewan',
+ name='Saskatchewan',
+ short='SK',
+ title='Nil T2 Filing for Saskatchewan Corporations',
+ h1='Nil T2 Filing in Saskatchewan',
+ meta=('The nil T2 a Saskatchewan corporation files every year, why there is no '
+       'separate Saskatchewan corporate return, and what the fee covers.'),
+ separate_return=None,
+ # Canada Revenue Agency T2 Corporate Statistical Tables, Table 1, 2023.
+ t2_assessed='73,110',
+ registry=UNVERIFIED,
+ annual_filing=UNVERIFIED,
+ annual_due=UNVERIFIED,
+ annual_statute=UNVERIFIED,
+ annual_online=UNVERIFIED,
+ strike_after=UNVERIFIED,
+ # Saskatchewan charges GST and PST, not HST, so no tax total is computed.
+ quote_tax_total=False,
+ cards='saskatchewan-cards.json',
+ # Five of twelve published on 2026-11-16. cards_live holds the hub to the
+ # five that exist, so no card points at a page that is not there yet; it is
+ # removed once the remaining seven publish, as it was for the other three.
+ cards_live=['/nil-t2-filing-saskatchewan/',
+             '/catch-up-nil-t2-filing-saskatchewan/',
+             '/dormant-corporation-filing-saskatchewan/',
+             '/final-t2-before-dissolution-saskatchewan/',
+             '/t2-short-filing-saskatchewan/'],
+ reviewed='November 16, 2026',
+ reviewed_iso='2026-11-16',
+)
+
+
+JURISDICTIONS = [BC, AB, QC, SK]
 
 
 def _guard(jurisdictions):
@@ -633,9 +740,11 @@ def build(j):
        "description": j['meta'], "inLanguage": "en-CA",
        "about": {"@type": "State", "name": name},
        "dateModified": reviewed(j)[1],
-       "author": {"@type": "Person", "name": "Sharad Gondaliya",
-                  "honorificSuffix": "CPA",
-                  "url": SITE + "/sharad-gondaliya-cpa/"}}]}
+       # The full credential block, matching what is live on the Quebec,
+       # Alberta and British Columbia hubs. The builder emitted a three-field
+       # Person while live carried this, so every hub built from here was
+       # going to ship thinner schema than the ones already published.
+       "author": AUTHOR, "reviewedBy": {"@id": AUTHOR["@id"]}}]}
 
     html = (CSS + hero + '\n'.join(b) + '\n<script type="application/ld+json">'
             # No trailing newline: WordPress strips it, so emitting one makes

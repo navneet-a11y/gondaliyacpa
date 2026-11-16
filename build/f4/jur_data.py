@@ -127,12 +127,12 @@ PLACE_PARA = {
 
  'saskatchewan':
    'The Canada Revenue Agency assessed returns from 73,110 Saskatchewan '
-   'corporations for the 2023 tax year, up from 70,550 in 2018. That rise of '
-   '2,560 is about one corporation for every twenty-eight that existed in '
-   '2018, the slowest proportional growth of any province except Alberta, and '
-   'the 2023 figure is 660 below the 73,770 Saskatchewan reached in 2022. A '
-   'count that turns down is dissolutions completing, and a dissolution '
-   'cannot complete while a tax year is still unfiled.',
+   'corporations for the 2023 tax year, up from 70,550 in 2018. Among the '
+   'provinces that grew at all over those six years, only Alberta grew more '
+   'slowly. Saskatchewan also peaked before the series ended: it reached '
+   '73,770 in 2022 and gave back 660 of that in 2023. A count that turns down '
+   'is dissolutions completing, and a dissolution cannot complete while a tax '
+   'year is still unfiled.',
 
  'nova-scotia':
    'The Canada Revenue Agency assessed returns from 47,490 Nova Scotia '
@@ -259,13 +259,13 @@ def unique_block(slug, name, ptype):
       'annual_return_statute': None,
       'annual_return_fee': None,
       'dissolution_after': None,
-      'unsourced_note':
+      'unsourced_note': ' '.join(filter(None, [
         'Provincial registry facts were not sourceable when this page was '
-        'built and are recorded as null rather than estimated. '
-        + ('Revenu Quebec returns 403 to automated clients, so no CO-17 '
-           'deadline, exemption or penalty is stated; the only CO-17 claim '
-           'made is the one plan line 1212 and hard rule 8 make.'
-           if slug == 'quebec' else ''),
+        'built and are recorded as null rather than estimated.',
+        ('Revenu Quebec returns 403 to automated clients, so no CO-17 '
+         'deadline, exemption or penalty is stated; the only CO-17 claim '
+         'made is the one plan line 1212 and hard rule 8 make.'
+         if slug == 'quebec' else '')])),
     }
 
 
