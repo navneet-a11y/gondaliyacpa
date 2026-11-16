@@ -10734,3 +10734,37 @@ The site is indexed (see the indexing note below). The homepage title is
 unchanged at Navneet's instruction. The write-up for Sharad Gondaliya covering
 the indexing question, the brand decision and the query cannibalisation is a
 separate document, not part of this repository.
+
+### 2026-11-16 — `/dormant-corporation-filing/` now uses the searcher's word
+
+Navneet: *"is this about tax filing for dormant company. if yes its showing on
+gsc can we add it as well in title"*. Yes, it is, and it now does.
+
+| | |
+|---|---|
+| Title was | Dormant Corporation Filing \| Nil T2 Return (42) |
+| Title now | Dormant Company Tax Return \| Nil T2 for Corporations (52) |
+| Focus keyword | `dormant company tax return` |
+| Description | no longer names HST on a national page |
+
+**Why it was stuck at position 62 to 77.** The page uses "corporation" 83
+times and **"company" not once**, while all three queries it surfaces for are
+"dormant company tax return", "tax return for dormant company" and "tax filing
+for dormant company". The subject matched; the vocabulary did not.
+
+"Company" is already site vocabulary (the Family 9 guide
+`numbered-company-maintenance`, and "a numbered company holding nothing"), so
+this introduces no new term and breaks no hard rule.
+
+**The title alone is unlikely to be sufficient.** A page that never once uses
+the phrase it is trying to rank for has little to support the title. Working
+"dormant company" into the body naturally would do more, but page 438 is an
+early hand-built Elementor page of about 85 KB whose body is not in this
+repository, so it was left alone rather than edited blind. Open work.
+
+**The cluster is less tangled than first reported.** The three provincial pages
+(1540 Alberta, 1029 British Columbia, 716 Ontario) are already province-
+qualified in their titles, and the guide (945) is "Dormant Corporations |
+Complete Filing Guide for Canada". None competes with the national page on the
+unqualified phrase by title; they merely surface weakly for it. So nominating
+438 as the target for the generic query needs no retitling of the other four.
