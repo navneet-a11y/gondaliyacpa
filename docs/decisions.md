@@ -10634,3 +10634,103 @@ node `build_jurisdiction.py` emits — which `build_f15b.shell()` still writes i
 its short form. **Neither page was re-uploaded**, because doing so would
 silently strip that schema, and the new page carries the short node for now.
 Bringing `shell()` up to the full node and republishing all three is open work.
+
+---
+
+## 2026-11-16, later still — SEO titles on the pages earning impressions
+
+Navneet asked whether the brand name belongs in the title tags, then: *"leave
+homepage, update others"*. Five titles changed, one meta description corrected,
+homepage untouched.
+
+| ID | URL | Title now | Chars |
+|---|---|---|---|
+| 1391 | `/guides/mandatory-t2-electronic-filing/` | Is It Mandatory to File T2 Electronically? \| Yes | 48 |
+| 955 | `/guides/t183corp-signing-and-transmission/` | What Is Form T183CORP? \| Signing and Transmission | 49 |
+| 2159 | `/answers/can-i-e-sign-a-t183corp/` | Can I E-Sign Form T183CORP? \| Yes, Since June 2023 | 50 |
+| 1041 | `/blog/schedule-50-and-the-10-percent-shareholder-rule/` | What Is Schedule 50? \| The 10% Shareholder Rule | 47 |
+| 1538 | `/nil-t2-filing-alberta/` | title unchanged; description no longer names HST | — |
+
+Each is under the 60-character limit of plan lines 1895 and 2167, names no
+HST, keeps T183CORP unshortened, and makes no superlative claim.
+
+Both titles answering "Yes" were verified against their own page first. The
+e-filing guide says electronic filing is "mandatory for virtually all
+corporations" for tax years beginning after 2023 with narrow exceptions that
+exclude nil returns. The answer page says "Yes. The Canada Revenue Agency
+accepts an electronic signature on Form T183CORP, and has done since June 22,
+2023" — which is why the qualifier is that date and not a claim about
+timestamps, which that page does not make.
+
+### A title was changed on a false premise and put back
+
+`/guides/final-t2-and-dissolution/` (949) was reported as a 67-character title
+that truncates, and changed to "Final T2 Return Before Dissolution | Canadian
+Guide". **That was wrong.** 67 characters is the WordPress post title. The SEO
+title that renders is "Final T2 and Dissolution | Guide for Canadian
+Corporations", 58 characters, already compliant, and set by
+`build/f5/rank_math_sheet.py`.
+
+The cause: the Family 9 build manifests store `title`, `h1` and
+`meta_description` but **no SEO title** — those are applied by a separate pass
+(`f5/rank_math_sheet.py`, `f9/f9_batch5_seo.py`). Reading the manifest and
+falling back to `title` produced the post title, which was then reported as the
+live SEO title without checking. The live value was overwritten before it was
+read, so the original was recovered from `rank_math_sheet.py` rather than from
+the site. **949 has been restored.** It is the best-performing page on the site
+and had no defect.
+
+The lesson is the one already recorded twice today: read the live value before
+overwriting it, and do not treat a build manifest as a record of what is live.
+
+### The blog already carries a brand suffix, and it does not fit
+
+Checking the above turned up something that contradicts what was reported
+earlier in the day. It is not true that every page carries an explicit SEO
+title and that Rank Math's `%sitename%` template therefore never fires.
+
+Of the ten live blog posts: **seven carry a hand-added "| CorpNilFiling"**, and
+two (1039, 1556) have an empty `rank_math_title`, so the template appends
+"Corporation Nil Filing for $300". Nine of ten show a brand in search results,
+in two wordings, neither of them the plan's.
+
+All seven of the "| CorpNilFiling" titles are **over the 60-character limit**,
+by 1 to 13 characters — roughly the length of the suffix in every case:
+
+| Chars | Title |
+|---|---|
+| 73 | Does an Inactive Corporation Have to File a T2 in Canada? \| CorpNilFiling |
+| 69 | Why an Unfiled Year Blocks Your Clearance Certificate \| CorpNilFiling |
+| 69 | T2 Short vs Full T2: Which Can a Nil Corporation Use? \| CorpNilFiling |
+| 68 | Unfiled T2 Returns: What Happens to Your Corporation \| CorpNilFiling |
+| 65 | Nil T2 Filing Deadline: Six Months After Year-End \| CorpNilFiling |
+| 64 | Paper T2 Filing Penalty and the Preparer Penalty \| CorpNilFiling |
+| 61 | What a Nil T2 Return Is and Who Must File One \| CorpNilFiling |
+
+So the brand is paid for and then truncated away. This is the strongest
+available argument for the plan's no-brand title pattern, and it needs a
+ruling: either the blog drops the suffix, or 6(d) changes for every family.
+
+**Five brand strings are now in use**: "Corp Nil Filing for $300" (the plan's
+Organization schema), "Corporation Nil Filing for $300" (Rank Math site name
+and knowledge graph), "Corporation Nil Filing for $300 Only" (the WordPress
+site title), "CorpNilFiling" (blog titles) and "corpnilfilingfor300.ca" (6(d)'s
+`/services/` exemplar). Google takes the rendered site name from schema, so
+settling these is the brand-in-search fix that costs no title characters.
+
+### These titles are not in the builders
+
+The five changed values live only in the database. `f5/rank_math_sheet.py` and
+`f9/f9_batch5_seo.py` still hold the old ones, so re-running either reverts
+this work — the same drift that hid the Family 15 width fix. They are left
+as they are for now rather than edited blind, because those sheets drive many
+pages and the live values of the rest have not been audited. **Reconciling the
+SEO sheets against live is open work**, and nothing should re-run them until
+it is done.
+
+### Not done, and why
+
+The site is indexed (see the indexing note below). The homepage title is
+unchanged at Navneet's instruction. The write-up for Sharad Gondaliya covering
+the indexing question, the brand decision and the query cannibalisation is a
+separate document, not part of this repository.
