@@ -71,7 +71,39 @@ _EXTRA = (
  "line-height:1;color:#2087c9;flex-shrink:0;transition:transform .15s ease}"
  "\n.cnf-faq details[open] summary::after{transform:rotate(45deg)}"
  "\n.cnf-faq .cnf-faq-a{padding:0 28px 24px}"
- "\n.cnf-faq .cnf-faq-a p{margin:0;line-height:1.7}")
+ "\n.cnf-faq .cnf-faq-a p{margin:0;line-height:1.7}"
+ # 2026-11-16, Navneet: "width is incorrect" on /t183corp-signing-explained/.
+ # The body was running edge to edge while .cnf-w h2 and the rest of the
+ # .cnf-w descendant rules were plainly applying, so the stylesheet had
+ # loaded and only max-width was being lost.
+ #
+ # The 2026-11-12 meta change below (page-builder -> empty) was made because
+ # these pages ran full width under page-builder. It was reasoned from
+ # /about/, which carries the empty value and reads correctly -- but /about/
+ # does not use .cnf-w and gets its measure elsewhere, so matching its meta
+ # gave these pages no working constraint either way. Both meta values have
+ # now produced a full-width body, which is the point at which the meta
+ # stops being worth another guess.
+ #
+ # These three rules are NOT new. They were already live on /how-it-works/
+ # (2291) and /faq/ (2292), applied directly to those two pages on
+ # 2026-11-12 and never written back here, so the builder has been emitting
+ # pages without the fix ever since and /t183corp-signing-explained/
+ # inherited that gap. Copied back verbatim from page 2291 so the three
+ # pages cannot drift apart again.
+ #
+ # float:none matters: Astra floats the container, and a floated box
+ # shrink-wraps rather than honouring max-width, which is why the plain
+ # .cnf-w rule above loses even though every other .cnf-w descendant rule
+ # on the page plainly applies.
+ #
+ # The hero band itself is not in the selector and still spans; only
+ # .cnf-hero-in, which caps the hero's text, is pinned.
+ "\n.cnf-w{max-width:1000px!important;margin-left:auto!important;"
+ "margin-right:auto!important;float:none!important}"
+ "\n.entry-content>.cnf-w,.ast-container>.cnf-w{max-width:1000px!important}"
+ "\n.cnf-hero-in{max-width:1140px!important;margin-left:auto!important;"
+ "margin-right:auto!important;float:none!important}")
 
 assert _CSS.rstrip().endswith('</style>')
 CSS = _CSS.rstrip()[:-len('</style>')] + _EXTRA + '</style>'
@@ -134,7 +166,8 @@ FAQ = [
   ['Yes. You sign on a secure access-controlled screen reached through a '
    'single-use link, and the signature carries a date and a timestamp. The '
    'form has to be signed by a signing officer of the corporation before the '
-   'return is transmitted.'],
+   'return is transmitted. <a href="' + SITE + '/t183corp-signing-explained/">'
+   'How T183CORP signing works</a> walks through the signing screen itself.'],
   '/answers/can-i-e-sign-a-t183corp/',
   'how T183CORP signing works'),
 
@@ -252,7 +285,10 @@ def how_it_works():
                 'that return&rsquo;s figures, which is why it cannot be signed '
                 'in advance. Step eight is a secure access-controlled screen '
                 'reached by a single-use link, and your signature carries a '
-                'date and a timestamp.</p>')
+                'date and a timestamp. '
+                + a(SITE + '/t183corp-signing-explained/',
+                    'How T183CORP signing works')
+                + ' covers that step on its own.</p>')
     body.append('<p>Step nine is the CPA review, and step ten is the Canada '
                 'Revenue Agency&rsquo;s confirmation, which arrives by email '
                 'within 3 business days. Business days are Monday to '

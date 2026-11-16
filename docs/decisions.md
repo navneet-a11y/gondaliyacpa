@@ -10590,3 +10590,47 @@ item outstanding on the site.
 2026-11-09 because "the fee wording is the one standing contradiction on this
 project". That wording is now settled, so the refusal no longer applies —
 though the tool should still wait until the sweep lands.
+
+### 2026-11-16, later — the Family 15 width fix existed only on live
+
+Navneet, on seeing `/t183corp-signing-explained/`: *"width is incorrect"*. The
+body ran edge to edge while every other `.cnf-w` descendant rule on the page
+was plainly applying, so the stylesheet had loaded and only the measure was
+lost.
+
+**The cause was not the page and not the meta.** Page 2495's Astra meta is
+byte-identical to `/how-it-works/` (2291). What differed was the stylesheet:
+2291 and 2292 carry three rules that `build_f15b.py` has never emitted —
+
+```
+.cnf-w{max-width:1000px!important;margin-left:auto!important;margin-right:auto!important;float:none!important}
+.entry-content>.cnf-w,.ast-container>.cnf-w{max-width:1000px!important}
+.cnf-hero-in{max-width:1140px!important;margin-left:auto!important;margin-right:auto!important;float:none!important}
+```
+
+— applied directly to those two pages on 2026-11-12 and never written back.
+Every Family 15 page built since has shipped without the fix. `float:none` is
+the operative part: Astra floats the container, and a floated box shrink-wraps
+instead of honouring `max-width`, which is why the plain `.cnf-w` rule loses.
+
+Copied back into `build_f15b._EXTRA` verbatim from page 2291 and applied to
+2495, which is now 12,225 bytes and matches its rebuilt file. The two inbound
+links added earlier today were written into the builder at the same time, so
+re-running it can no longer drop them.
+
+**This corrects the table above:** `/t183corp-signing-explained/` is 12,225
+bytes, not 11,925.
+
+**The 2026-11-12 meta note in `build_f15b.meta()` is misleading and is left in
+place with this correction beside it.** It reasons from `/about/`, which
+carries the empty `site-content-layout` and reads correctly — but `/about/`
+does not use `.cnf-w` and takes its measure elsewhere, so matching its meta was
+never what fixed those two pages. The CSS above was.
+
+**Still drifted, deliberately not touched:** live 2291 and 2292 are 12,016 and
+13,507 bytes against rebuilt files of 10,089 and 11,580. The remaining ~2 KB is
+a richer `AUTHOR` schema node — credentials, licences and `sameAs`, the same
+node `build_jurisdiction.py` emits — which `build_f15b.shell()` still writes in
+its short form. **Neither page was re-uploaded**, because doing so would
+silently strip that schema, and the new page carries the short node for now.
+Bringing `shell()` up to the full node and republishing all three is open work.
