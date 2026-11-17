@@ -10768,3 +10768,27 @@ qualified in their titles, and the guide (945) is "Dormant Corporations |
 Complete Filing Guide for Canada". None competes with the national page on the
 unqualified phrase by title; they merely surface weakly for it. So nominating
 438 as the target for the generic query needs no retitling of the other four.
+
+**Refined the same day.** Navneet proposed "Nil T2 Tax Filing for Dormant
+Company" and asked for a pick. Final title:
+**Dormant Company Tax Return | Nil T2 Filing in Canada** (52).
+
+Navneet's version was not taken as written, for three reasons: "T2 Tax Filing"
+is redundant, since a T2 is a tax return and the site's established term is
+"Nil T2 Filing"; "for Dormant Company" wants an article to read as English,
+which matters in a search result on a CPA site; and the tokens it adds were
+already present.
+
+But it correctly identified the weak half. "Nil T2 for Corporations" earned
+nothing: every T2 filer is a corporation, and it repeated the word this page
+already uses 83 times.
+
+**"in Canada" replaces it, and is the substantive part of this change.**
+"Dormant company" is predominantly British usage: in the UK a dormant company
+files dormant company accounts with Companies House, which is a high-volume
+established term. Canadian usage is "dormant corporation". So a Canadian
+typing "dormant company tax return" is using UK-influenced phrasing, and the
+results Google weighs for it skew accordingly. Naming the country tells Google
+which filing regime the page covers and keeps UK searchers from clicking into
+a page about the T2, whose immediate bounce would teach Google the page is a
+poor answer.
