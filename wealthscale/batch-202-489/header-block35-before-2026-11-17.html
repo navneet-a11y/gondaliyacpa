@@ -1,0 +1,121 @@
+<!-- wp:html -->
+<style>
+.wsh{--ink:#2B1A45;--copper:#B5602A;--copper-l:#E08A4F;--paper:#FAF7F2;--line:#E7DFD3;--muted:#5E5670;font-family:Manrope,Inter,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:999;margin:0!important;max-width:none!important;width:100%}
+.admin-bar .wsh{top:32px}
+.wsh *{box-sizing:border-box}
+.wsh-bar{max-width:1208px;margin:0 auto;padding:0 24px;height:76px;display:flex;align-items:center;gap:28px}
+.wsh-brand{display:flex;flex-direction:column;justify-content:center;text-decoration:none!important;flex:0 0 auto;line-height:1}
+.wsh-brand img{height:46px;width:auto;display:block}
+.wsh-logo-mark{display:none!important}
+@media (max-width:600px){.wsh-logo-full{display:none!important}.wsh-logo-mark{display:block!important;height:32px!important}}
+.wsh,.wsh *{font-family:Manrope,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif}
+.wsh-nav{flex:1 1 auto}
+.wsh-menu{list-style:none;margin:0;padding:0;display:flex;align-items:center;justify-content:center;gap:2px}
+.wsh-menu>li{position:relative;margin:0}
+.wsh-menu>li>a{display:flex;align-items:center;gap:6px;padding:10px 12px;border-radius:8px;color:var(--ink)!important;font-weight:700;font-size:.95rem;text-decoration:none!important;white-space:nowrap}
+.wsh-menu>li.has-dd>a::after{content:"";width:6px;height:6px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:rotate(45deg) translateY(-2px);opacity:.55}
+.wsh-menu>li>a:hover,.wsh-menu>li:focus-within>a{background:var(--paper);color:var(--copper)!important}
+.wsh-dd{position:absolute;top:calc(100% + 6px);left:0;min-width:270px;background:#fff;border:1px solid var(--line);border-radius:14px;box-shadow:0 18px 40px rgba(43,26,69,.14);padding:10px;list-style:none;margin:0;opacity:0;visibility:hidden;transform:translateY(6px);transition:opacity .15s,transform .15s,visibility .15s}
+.wsh-menu>li:hover>.wsh-dd,.wsh-menu>li:focus-within>.wsh-dd{opacity:1;visibility:visible;transform:none}
+.wsh-dd::before{content:"";position:absolute;left:0;right:0;top:-12px;height:12px}
+.wsh-dd li{margin:0}
+.wsh-dd a{display:block;padding:9px 12px;border-radius:8px;color:var(--ink)!important;text-decoration:none!important;font-size:.93rem;font-weight:500}
+.wsh-dd a:hover,.wsh-dd a:focus{background:var(--paper);color:var(--copper)!important}
+.wsh-dd .wsh-all a{color:var(--copper)!important;font-weight:700;border-top:1px solid var(--line);border-radius:0 0 8px 8px;margin-top:6px;padding-top:12px}
+.wsh-cta{flex:0 0 auto;background:var(--copper);color:#fff!important;font-weight:700;font-size:.92rem;padding:11px 18px;border-radius:10px;text-decoration:none!important;transition:background .15s}
+.wsh-cta:hover{background:var(--ink)}
+.wsh-toggle{position:absolute;opacity:0;pointer-events:none}
+.wsh-burger{display:none;margin-left:auto;cursor:pointer;width:44px;height:44px;border-radius:10px;border:1px solid var(--line);align-items:center;justify-content:center}
+.wsh-burger span,.wsh-burger span::before,.wsh-burger span::after{display:block;width:20px;height:2px;background:var(--ink);border-radius:2px;position:relative;content:""}
+.wsh-burger span::before{position:absolute;top:-6px}.wsh-burger span::after{position:absolute;top:6px}
+.wsh-toggle:focus-visible+.wsh-burger{outline:2px solid var(--copper);outline-offset:2px}
+@media (max-width:1100px){
+.wsh-bar{height:66px;gap:12px}
+.wsh-burger{display:flex}
+.wsh-cta{display:none}
+.wsh-nav{display:none;position:absolute;top:100%;left:0;right:0;background:#fff;border-bottom:1px solid var(--line);box-shadow:0 18px 30px rgba(43,26,69,.10);max-height:calc(100vh - 66px);overflow:auto;padding:8px 16px 20px}
+.wsh-toggle:checked~.wsh-nav{display:block}
+.wsh-menu{flex-direction:column;align-items:stretch;gap:0}
+.wsh-menu>li{border-bottom:1px solid var(--line)}
+.wsh-menu>li>a{padding:14px 4px;font-size:1rem}
+.wsh-menu>li.has-dd>a::after{display:none}
+.wsh-dd{position:static;opacity:1;visibility:visible;transform:none;box-shadow:none;border:0;padding:0 0 10px 8px;min-width:0;display:grid;grid-template-columns:1fr 1fr}
+.wsh-dd a{padding:7px 8px;font-size:.9rem;color:var(--muted)!important}
+.wsh-dd .wsh-all{grid-column:1/-1}
+.wsh-dd .wsh-all a{border-top:0;margin-top:0;padding-top:7px}
+.wsh-mcta{display:block!important;margin-top:16px;text-align:center}
+}
+@media (max-width:600px){.wsh-bar{padding:0 16px}.wsh-brand img{height:26px}.wsh-tag{padding-left:33px;font-size:.62rem}.wsh-dd{grid-template-columns:1fr}}
+.wsh-mcta{display:none}
+@media (max-width:782px){.admin-bar .wsh{top:46px}}
+</style>
+<header class="wsh" role="banner">
+<div class="wsh-bar">
+<a class="wsh-brand" href="/" aria-label="WealthScale home"><img class="wsh-logo-full" src="https://wealthscale.ca/wp-content/uploads/2026/10/WealthScale-Logo-Tagline-Primary.svg" alt="WealthScale. Compare. Choose. Grow." width="320" height="72"><img class="wsh-logo-mark" src="https://wealthscale.ca/wp-content/uploads/2026/10/WealthScale-Logo-Primary.svg" alt="WealthScale" width="312" height="72"></a>
+<input type="checkbox" id="wsh-toggle" class="wsh-toggle" aria-label="Open menu">
+<label for="wsh-toggle" class="wsh-burger" aria-hidden="true"><span></span></label>
+<nav class="wsh-nav" aria-label="Main">
+<ul class="wsh-menu">
+<li class="has-dd"><a href="/accounts/">Accounts</a>
+<ul class="wsh-dd">
+<li><a href="/accounts/tfsa/">TFSA</a></li>
+<li><a href="/accounts/rrsp/">RRSP</a></li>
+<li><a href="/accounts/fhsa/">FHSA</a></li>
+<li><a href="/accounts/resp/">RESP</a></li>
+<li><a href="/accounts/home-buyers-plan/">Home Buyers' Plan</a></li>
+<li><a href="/accounts/rrif-minimum-withdrawal/">RRIF minimum withdrawal</a></li>
+<li><a href="/accounts/us-stocks-in-tfsa/">US stocks in a TFSA</a></li>
+<li class="wsh-all"><a href="/accounts/">All accounts</a></li>
+</ul></li>
+<li class="has-dd"><a href="/compare/">Compare</a>
+<ul class="wsh-dd">
+<li><a href="/compare/best-online-brokers/">Online brokers</a></li>
+<li><a href="/compare/best-robo-advisors/">Robo-advisors</a></li>
+<li><a href="/compare/best-investing-apps/">Investing apps</a></li>
+<li><a href="/compare/best-brokers-for-us-stocks/">Brokers for US stocks</a></li>
+<li><a href="/reviews/">Reviews</a></li>
+<li><a href="/vs/">Broker vs broker</a></li>
+<li class="wsh-all"><a href="/compare/">All comparisons</a></li>
+</ul></li>
+<li class="has-dd"><a href="/savings/">Savings</a>
+<ul class="wsh-dd">
+<li><a href="/savings/high-interest-savings-accounts/">High-interest savings</a></li>
+<li><a href="/savings/usd-savings-accounts/">USD savings accounts</a></li>
+<li><a href="/savings/gic-rates/">GIC rates</a></li>
+<li><a href="/banking/best-no-fee-chequing-accounts/">No-fee chequing</a></li>
+<li><a href="/banking/">Bank accounts</a></li>
+<li class="wsh-all"><a href="/savings/">All savings and GICs</a></li>
+</ul></li>
+<li class="has-dd"><a href="/calculators/">Calculators</a>
+<ul class="wsh-dd">
+<li><a href="/calculators/tfsa-calculator/">TFSA room</a></li>
+<li><a href="/calculators/rrsp-calculator/">RRSP tax refund</a></li>
+<li><a href="/calculators/fhsa-calculator/">FHSA</a></li>
+<li><a href="/calculators/resp-calculator/">RESP grants</a></li>
+<li><a href="/calculators/compound-interest-calculator/">Compound interest</a></li>
+<li><a href="/calculators/capital-gains-tax-calculator/">Capital gains tax</a></li>
+<li class="wsh-all"><a href="/calculators/">All calculators</a></li>
+</ul></li>
+<li class="has-dd"><a href="/benefits/">Tax and Benefits</a>
+<ul class="wsh-dd">
+<li><a href="/benefits/cpp-oas-payment-dates/">CPP and OAS dates</a></li>
+<li><a href="/benefits/gst-hst-credit/">GST/HST credit</a></li>
+<li><a href="/calculators/capital-gains-tax-calculator/">Capital gains tax calculator</a></li>
+<li><a href="/compare/best-tax-software/">Best tax software</a></li>
+<li class="wsh-all"><a href="/benefits/">All payment dates</a></li>
+</ul></li>
+<li class="has-dd"><a href="/learn/">Learn</a>
+<ul class="wsh-dd">
+<li><a href="/learn/how-to-invest/">How to invest</a></li>
+<li><a href="/markets/how-to-buy-us-stocks/">How to buy US stocks</a></li>
+<li><a href="/learn/transfer-investment-account/">Transfer an account</a></li>
+<li><a href="/learn/norberts-gambit/">Norbert's gambit</a></li>
+<li class="wsh-all"><a href="/learn/">All guides</a></li>
+</ul></li>
+</ul>
+<a class="wsh-cta wsh-mcta" href="/compare/">Compare platforms</a>
+</nav>
+<a class="wsh-cta" href="/compare/">Compare platforms</a>
+</div>
+</header>
+<!-- /wp:html -->
