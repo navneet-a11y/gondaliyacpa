@@ -10792,3 +10792,53 @@ results Google weighs for it skew accordingly. Naming the country tells Google
 which filing regime the page covers and keeps UK searchers from clicking into
 a page about the T2, whose immediate bounce would teach Google the page is a
 poor answer.
+
+### 2026-11-17 — "dormant company" worked into the body of page 438
+
+Navneet: *"do it"*. The title promised a phrase the page never used; the body
+now uses it.
+
+**The page is a true Elementor page.** `post_content` is empty and all 1,554
+words of body text live in `_elementor_data`, a 70 KB JSON string in postmeta.
+`wp_replace_in_post` only reaches post_content, post_excerpt and post_title, so
+it could not be used. The body is not in this repository either, which is why
+this was left alone when the title changed.
+
+Applied with `wp_privileged_search_replace_run`, scoped to `*postmeta` and the
+`meta_value` column, rather than round-tripping the blob through a meta write.
+Each replacement was checked against the local builds first and dry-run before
+applying.
+
+| Element | Change |
+|---|---|
+| `ab02002` lead paragraph | "A dormant **corporation** still has to file a T2…" → "A dormant **company** still has to file a T2…" |
+| `sv0004d` FAQ answer | now ends "Dormant company and dormant corporation mean the same thing here. In Canada the entity that files the return is a corporation, so a dormant company tax return is a nil T2." |
+| `ab02006` section lead | "Any **corporation** can go dormant…" → "Any **company** can go dormant…" |
+
+**Every replacement reported 2 cells, not 1.** The second is page 438's single
+revision (439), which Elementor gives its own `_elementor_data`. That was
+confirmed before writing, not assumed: the first dry run returned two cells,
+and the work stopped until `wp_list_revisions` accounted for the second. None
+of the three strings appears in any build file, so the provincial dormant pages
+(1540, 1029, 716) and the guide (945) were not touched.
+
+Verified afterwards by a dry run counting `dormant company`: 8 occurrences
+across 4 cells — three in the live body, three in the revision, one in the
+Rank Math description and one in the focus keyword. With the capitalised
+"Dormant company" and "Any company", that is five uses of the word in about
+1,560 words, which is ordinary prose density rather than stuffing.
+
+Caches cleared for post 438: Rank Math sitemap, **Elementor CSS and element
+cache** (which a plain page-cache purge would have missed on an Elementor
+page), and LiteSpeed.
+
+**The FAQ sentence is not only for search.** "Dormant company" is
+predominantly British usage — in the UK a dormant company files dormant
+company accounts with Companies House. A Canadian arriving on that phrase
+genuinely may not know whether this page covers their situation, so saying the
+two terms mean the same thing and that the Canadian filing is the T2 answers a
+real question.
+
+**Still true: page 438's body is not in this repository.** These three edits
+exist only in the database. Nothing regenerates the page, so there is no drift
+risk today, but there is also no source to rebuild it from.
