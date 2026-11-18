@@ -11376,3 +11376,51 @@ inconsistency across roughly twenty buttons, not a banner fix, so it is left
 alone rather than changed silently. Section 24 of the source (a "meet the
 team" heading) and the page-434 heading sizes (40px/50px against the hub's
 32px) differ too; the ask was the background, so only the background moved.
+
+
+## 2026-11-18 — Toronto city hub: FAQ written, and the banner date hidden
+
+### FAQ
+
+The source template's FAQ (sections 33 and 34) was dropped in the earlier
+build. Section 34 is a raw `html` widget holding **nineteen Mississauga
+municipal-licensing questions** -- City business licences, By-law 0001-2006,
+business-name registration, home-based business rules, "Do you meet
+Mississauga clients in person?" -- none of which this site answers. It also
+carries a `<script>` and **no `<style>`**, so its appearance came from the
+other page's stylesheet and it would have rendered unstyled here.
+
+So the shell is reused but the content is new: eight questions written for nil
+T2 filing, in `faq_html()`, each answered in a sentence or two and linking on
+to the page that answers it in full rather than restating it (6(k)).
+
+`FAQ_CSS` is inline and scoped to `.cnf-faq`, so the accordion carries its own
+appearance. Native `<details>` opens and closes without JavaScript, so no
+script is ported.
+
+**Hard rule 6 bans FAQPage schema.** Native `<details>` emits none and no
+JSON-LD is added. Verified on the built file: `FAQPage` does not occur and no
+`<script>` survives.
+
+Three of the eight links are live now (the inactive-corporation answer page,
+the T183CORP guide, the Ontario annual return calculator -- all verified 200).
+The other four point at Toronto Family 4 pages that do not exist yet, the same
+set already blocking publication.
+
+### The banner date
+
+Astra renders its single-post meta row on the city hub template, so the banner
+read "By Sharad Gondaliya, CPA / November 18, 2026". A city hub is a landing
+page, not a dated article, and a visible publish date on an evergreen service
+page ages it for the reader. Hidden in Additional CSS (revision 2555).
+
+`display:none` keeps the markup in the DOM, so the `itemprop="author"` and
+`itemprop="datePublished"` microdata Astra emits is still there to be parsed;
+only the visible row goes. The separator "/" and the word "By" are bare text
+nodes inside `.entry-meta` with no element of their own, so they are collapsed
+with `font-size:0` and the author name restored on its own span. The byline
+therefore still shows, without the "By" prefix; hiding the whole row instead
+is one rule (`.single-nil_city_hub .entry-meta{display:none}`) if Navneet
+prefers.
+
+Result: 119,040 bytes, 17 sections, audit 0 failures.

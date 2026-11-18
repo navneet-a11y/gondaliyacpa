@@ -191,6 +191,87 @@ def desource(n, hero_done=[False]):
         for v in n:
             desource(v)
 
+# Family 3 FAQ. The source template's FAQ (section 34) is a raw html widget
+# holding nineteen Mississauga municipal-licensing questions -- City business
+# licences, By-law 0001-2006, home-based business rules -- none of which this
+# site answers. It also carries a <script> and no <style>, so its styling came
+# from the other page's stylesheet and it would have rendered unstyled here.
+# It is replaced outright with this self-contained block.
+#
+# Hard rule 6 bans FAQPage schema. Native <details> emits none and no JSON-LD
+# is added, so the accordion is plain content. No <script>: <details> opens and
+# closes without JavaScript.
+FAQ_CSS = (
+ '<style>'
+ '.cnf-faq{max-width:1140px;margin:0 auto;padding:0 20px}'
+ '.cnf-faq details{background:#f5f8fc;border-radius:12px;margin:0 0 12px;'
+ 'padding:16px 20px}'
+ '.cnf-faq summary{cursor:pointer;font-family:Poppins,sans-serif;'
+ 'font-weight:600;font-size:17px;line-height:1.45;color:#0B1A33;'
+ 'list-style:none}'
+ '.cnf-faq summary::-webkit-details-marker{display:none}'
+ '.cnf-faq summary:after{content:"+";float:right;margin-left:12px;'
+ 'font-weight:700;color:#314D8A}'
+ '.cnf-faq details[open] summary:after{content:"\\2013"}'
+ '.cnf-faq .cnf-a{margin:12px 0 0;font-family:Lato,sans-serif;font-size:16px;'
+ 'line-height:1.6;color:#4a5568}'
+ '.cnf-faq .cnf-a p{margin:0 0 10px}'
+ '.cnf-faq .cnf-a p:last-child{margin:0}'
+ '.cnf-faq .cnf-a a{color:#314D8A}'
+ '</style>'
+)
+
+def faq_html(name, slug):
+    """Eight questions, each answered in a sentence or two, linking on to the
+    page that answers it in full rather than restating it (6(k))."""
+    B = 'https://corpnilfilingfor300.ca'
+    qa = [
+     (f'Does a {name} corporation with no activity still have to file a T2?',
+      f'<p>Yes. A corporation files a T2 for every tax year it exists, whether or '
+      f'not it earned anything. The obligation ends when the corporation is '
+      f'dissolved, not when it stops trading. '
+      f'<a href="{B}/answers/does-an-inactive-corporation-have-to-file-a-t2/">'
+      f'Read the full answer</a>.</p>'),
+     ('What counts as a nil year?',
+      '<p>No revenue, no expenses, no bank activity and no employees in the tax '
+      'year. A corporation with investment income, rental income, or dividends '
+      'paid or received is not nil, and we tell you before any further charge.</p>'),
+     (f'When is the nil T2 due for a {name} corporation?',
+      f'<p>Within six months of the fiscal year end, the same deadline as any '
+      f'other T2. The year end is your corporation\u2019s own, not December 31. '
+      f'<a href="{B}/nil-t2-filing-deadline-{slug}/">See the deadline page</a>.</p>'),
+     ('I have several unfiled years. Can they be filed together?',
+      f'<p>Yes. They are filed oldest year first, each as its own return at '
+      f'$300.00 plus HST per tax year. '
+      f'<a href="{B}/catch-up-nil-t2-filing-{slug}/">See catch-up filing</a>.</p>'),
+     ('Do I have to sign anything?',
+      f'<p>One T183CORP for each tax year, signed electronically. Nothing is '
+      f'printed or mailed. '
+      f'<a href="{B}/guides/t183corp-signing-and-transmission/">How signing '
+      f'works</a>.</p>'),
+     ('Does this cover my Ontario annual return?',
+      f'<p>No. The Ontario annual return goes through the Ontario Business '
+      f'Registry and is separate from the T2. We tell you if you still owe one. '
+      f'<a href="{B}/tools/ontario-annual-return-due-date-calculator/">Check when '
+      f'yours is due</a>.</p>'),
+     ('My corporation only holds shares or property. Is that nil?',
+      f'<p>Usually not. A holding corporation with investment income, rental '
+      f'income or dividends paid or received is not nil, and the return is not a '
+      f'$300.00 nil filing. '
+      f'<a href="{B}/inactive-holding-corporation-t2-filing-{slug}/">What applies '
+      f'instead</a>.</p>'),
+     (f'I live outside Canada and my corporation is registered in {name}. Can you '
+      f'still file?',
+      f'<p>Yes. The T183CORP is signed electronically, so a director outside '
+      f'Canada can sign it. '
+      f'<a href="{B}/nil-t2-filing-for-non-resident-owned-corporations-{slug}/">'
+      f'Non-resident owned corporations</a>.</p>'),
+    ]
+    rows = ''.join(
+        f'<details><summary>{q}</summary><div class="cnf-a">{a}</div></details>'
+        for q, a in qa)
+    return (FAQ_CSS + '<div class="cnf-faq">' + rows + '</div>')
+
 def build(slug,name,kind,jkey,supplied):
     jt,jb = JNOTE[jkey]  # jt unused in this map; the shell has one heading
     if supplied:
@@ -338,6 +419,8 @@ def build(slug,name,kind,jkey,supplied):
           'or received is not nil. If your corporation is not nil, we move your '
           'file to gondaliyacpa.ca at $350.00 plus applicable sales tax per year '
           'and tell you before any further charge.'))],{}),
+     (33,[('title',f'Nil T2 Filing in {name}: Common Questions')],{}),
+     (34,[('html',faq_html(name,slug))],{}),
      (35,[('title',f'File your {name} nil T2 return'),
           ('text',CTA),('text','See the price')],{1:FORM,2:PRICE}),
     ]
