@@ -11159,3 +11159,83 @@ with one for this template and the reason recorded in the file.
   accepts either, like the Family 2, 5 and 7 gates.
 
 `audit_visible.py` reports **0 failures** on the finished template.
+
+## 2026-11-18 — Toronto city hub: real local data value pulled
+
+Plan line 1211 gates publishing a city hub on "a named repeatable local data
+source and a current data value", with the pull date in the visible caption.
+The Toronto template previously carried `[[PULL CORPORATION COUNT]]` and
+`[[PULL DATE]]`. Both are now filled from a real pull.
+
+### Source
+
+Corporations Canada open data, dataset `0032ce54-c5dd-4b66-99a0-320a7b5e99f2`
+("Federal Corporations"), resource `corporations-active-cbca-en.csv`. Resource
+URLs are resolved at run time from the CKAN `package_show` API rather than
+hardcoded, because the files have already moved once to a CloudFront host
+(`d4bf66bykfyaf.cloudfront.net`) and are no longer served from
+`ised-isde.canada.ca` as the dataset description implies.
+
+The registered-office city **is** in the bulk file: fields `City/town`,
+`Province/territory`, `Country`, `Status`. This was verified against the file
+itself, not taken from the third-party blog posts that assert it. All 646,004
+rows of the active CBCA file carry Status "Active", so the status filter is a
+no-op but is kept in case the file's scope changes.
+
+`build/f3/pull_corp_counts.py` is the named repeatable source. It holds the
+alias table for all 12 plan cities and prints both the literal and the
+amalgamated figure for each.
+
+### The number, and why it is the wider one
+
+Counted on Active + Province ON + Country CA:
+
+| Population | Count |
+|---|---|
+| City/town exactly "Toronto" | 81,327 |
+| plus Scarborough, North York, Etobicoke, York, East York | **106,120** |
+| non-CBCA (NFP, co-op, boards of trade), Toronto only | 8,952 |
+
+The **amalgamated 106,120** is used. The sentence claims a registered office
+*in Toronto*, and the five former municipalities have been in the City of
+Toronto since the 1998 amalgamation, so the literal field undercounts the
+claim by 23%. The source line names the method, so the figure is reproducible.
+Case variants in the data (`SCARBOROUGH`, `North york`, `sCARBOROUGH`) are
+matched case-insensitively.
+
+Only business corporations are counted, and the sentence says so: "active
+federal **business** corporations". The plan's draft wording said "federal
+corporations", which would have had to include the 8,952 non-CBCA not-for-
+profits, co-ops and boards of trade — not the T2 nil-filing population this
+page is for.
+
+### "Refreshed monthly" dropped
+
+The caption previously promised a monthly refresh. Navneet removed that on
+2026-11-18: the pull date stays, which is what line 1211 actually requires,
+and nothing commits to a refresh cadence that would have to be honoured.
+
+### Gate change
+
+`audit_visible.py`'s `local data value` rule recognised only two states, the
+placeholder or the jurisdiction wording, so a hub carrying a real pulled count
+**failed**. It now accepts three states. The rule still accepts the
+placeholder, so unbuilt city hubs behave as before.
+
+### Not yet resolvable
+
+The hub links to 12 Family 4 Toronto service pages
+(`/nil-t2-filing-toronto/` and the rest). **None of the 12 exist** — a slug
+query on `nil_service_place` returns 0. `/form/` (201) and `/pricing/` (323)
+are both live, so the two primary CTAs work, but the 12 service cards are dead
+links until that batch is built. The hub should not publish before them.
+
+`_elementor_data` cannot be written through `wp_create_cpt_item` (the key is
+not registered with `show_in_rest`). It **is** writable through
+`wp_update_post_meta`, which writes underscore keys as text for a
+`manage_options` user, and escaping survives byte-for-byte. The template is
+nonetheless handed over for import rather than written directly: at 63,019
+bytes across 53 elements, a transcription slip could alter a styling value
+without breaking the JSON, and the gate only checks visible text and
+parseability. Draft 2533 carries the SEO fields, both taxonomy terms and the
+five `cnf_*` fields; the layout is imported.

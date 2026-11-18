@@ -1,2 +1,3 @@
 __pycache__/
 *.pyc
+build/f3/_corpdata/

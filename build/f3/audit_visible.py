@@ -39,7 +39,11 @@ REQ_ALL=[('EFILE wording',r'[Rr]egistered EFILE electronic filer'),
 # 2026-11-12: the overflow fee reads "plus applicable sales tax per year".
 # Either wording passes until the sweep in docs/decisions.md lands.
 REQ_CITYHUB=[('overflow price',r'\$350\.00 (including HST|plus applicable sales tax)'),
-     ('local data value',r'PULL CORPORATION COUNT|T2 returns were assessed'),
+     # Three valid states: a pulled city count, the jurisdiction wording, or
+     # the loud placeholder on a hub whose data has not been pulled yet.
+     ('local data value',
+      r'\d{1,3}(,\d{3})+ active federal business corporations have a '
+      r'registered office|T2 returns were assessed|PULL CORPORATION COUNT'),
      ('pull date caption',r'PULL DATE|Pulled ')]
 
 fail=0

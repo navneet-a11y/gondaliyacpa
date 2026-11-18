@@ -29,6 +29,28 @@ CTA   = 'Start Nil T2 Filing NOW'
 NEEDS_DATA = '[[PULL CORPORATION COUNT]]'
 NEEDS_DATE = '[[PULL DATE]]'
 
+# Local data values, pulled by build/f3/pull_corp_counts.py from the
+# Corporations Canada open data "Federal Corporations" dataset
+# (open.canada.ca dataset 0032ce54-c5dd-4b66-99a0-320a7b5e99f2, refreshed
+# daily at source). Counted over corporations-active-cbca-en.csv, every row
+# of which carries Status "Active", on the registered-office City/town field
+# with Province/territory "ON" and Country "CA".
+#
+# Toronto's figure includes the five former municipalities amalgamated into
+# the City of Toronto in 1998: a registered office in Scarborough or North
+# York is a registered office in Toronto. The literal "Toronto" city value
+# alone is 81,327; the six-municipality total is 106,120. The wider figure is
+# used because the sentence claims a registered office *in Toronto*, and the
+# source line names the method so the pull stays reproducible.
+CITY_DATA = {
+ 'toronto': {
+   'count':    '106,120',
+   'includes': 'including the former municipalities of Scarborough, '
+               'North York, Etobicoke, York and East York',
+   'pulled':   'November 18, 2026',
+ },
+}
+
 # 6(k): 12 cities pass the local-data test; 3 fail and are replaced by
 # jurisdiction hubs carrying CRA T2 assessment counts the plan supplies.
 PLACES = [
@@ -141,9 +163,18 @@ def build(slug,name,kind,jkey,supplied):
         source = ('Source: CRA corporation income tax statistics, refreshed when the annual table is reissued, '
                   f'plus the Corporations Canada open-data bulk file filtered by province. Pulled {NEEDS_DATE}.')
     else:
-        datum = (f'{NEEDS_DATA} active federal corporations have a registered office in {name}.')
-        source = ('Source: Corporations Canada open-data bulk file, registered-office city field. '
-                  f'Pulled {NEEDS_DATE}, refreshed monthly.')
+        cd = CITY_DATA.get(slug)
+        if cd:
+            inc = (', ' + cd['includes']) if cd.get('includes') else ''
+            datum = (f"{cd['count']} active federal business corporations have a "
+                     f"registered office in {name}{inc}.")
+            source = ('Source: Corporations Canada open data, active CBCA corporations '
+                      'file, registered-office city and province fields. '
+                      f"Pulled {cd['pulled']}.")
+        else:
+            datum = (f'{NEEDS_DATA} active federal corporations have a registered office in {name}.')
+            source = ('Source: Corporations Canada open-data bulk file, registered-office city field. '
+                      f'Pulled {NEEDS_DATE}, refreshed monthly.')
 
     # SECTION MAP FOR THE SUPPLIED TEMPLATE, 2026-11-18.
     #
@@ -242,7 +273,8 @@ for slug,name,kind,jkey,supplied in PLACES:
          'content':content,'page_settings':[]}
     path=os.path.join(OUTDIR,f'corpnil-cityhub-{slug}.json')
     json.dump(tpl,open(path,'w'),ensure_ascii=False,separators=(',',':'))
-    made.append((slug,name,kind,os.path.getsize(path),supplied is not None))
+    made.append((slug,name,kind,os.path.getsize(path),
+                 supplied is not None or slug in CITY_DATA))
 for slug,name,kind,size,hasdata in made:
     print(f'  {name:18s} {kind:12s} {size:>7,} b  data: {"supplied" if hasdata else "TO PULL"}')
 print(f'{len(made)} templates written to {OUTDIR}')
