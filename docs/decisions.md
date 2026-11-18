@@ -10842,3 +10842,98 @@ real question.
 **Still true: page 438's body is not in this repository.** These three edits
 exist only in the database. Nothing regenerates the page, so there is no drift
 risk today, but there is also no source to rebuild it from.
+
+---
+
+## 2026-11-18 — SEO metadata on the pages earning impressions, and the unbuilt head terms
+
+Navneet: *"Now work on next priority pages which can bring traffic"* and
+*"also, find new pages in plan pending which can send more traffic."*
+
+Impressions reached a new high of **70 on November 16** (51 on the 13th).
+
+### Nine metadata fixes
+
+| ID | Page | Change |
+|---|---|---|
+| 1039 | `/blog/mandatory-t2-e-filing-after-2023/` | had **no SEO title and no description**; now "T2 Electronic Filing Mandatory for Tax Years After 2023" with a description and a distinct focus keyword |
+| 1556 | `/blog/cra-demand-to-file-letter/` | had **no SEO title**; now "CRA Demand to File Letter \| What It Says and Means" |
+| 2337, 2258, 2041, 1944, 1936, 1883, 1867 | seven blog posts | dropped the `\| CorpNilFiling` suffix |
+
+**The suffix removal needed no rewriting.** All seven titles exceeded the
+60-character limit of plan lines 1895 and 2167 by roughly the length of the
+suffix, so deleting it alone brought every one inside the limit with no
+wording lost: 73→57, 69→53, 69→53, 68→52, 65→49, 64→48, 61→45. The suffix was
+being truncated away by Google in every case, so it cost characters and
+delivered no brand impression. This also restores the blog to 6(d)'s no-brand
+title pattern, which the rest of the site follows. **Whether the brand belongs
+in titles at all remains Sharad Gondaliya's to rule on**; this change moves
+the blog toward the signed plan rather than away from it.
+
+### The site's biggest query is split between two pages
+
+`is it mandatory to file t2 electronically?` and its variants draw **24
+impressions, more than any other query, with zero clicks**:
+
+| Page | Impressions | Position |
+|---|---|---|
+| `/guides/mandatory-t2-electronic-filing/` | 18 | 7.6 |
+| `/blog/mandatory-t2-e-filing-after-2023/` | 5 | 7.5 to 8 |
+| `/compare/paper-t2-vs-efile-t2/` | 1 | 10 |
+
+Two pages at effectively the same position is textbook cannibalisation. The
+blog post is now pointed at the transition rule rather than the question, and
+the guide keeps the question. **Consolidating the blog post into the guide
+would be cleaner still, but that removes a published post from a blog whose
+cadence is a contractual deliverable, so it is Navneet's and Sharad
+Gondaliya's call, not this session's.**
+
+### Nine PDFs are indexed and compete with their own posts
+
+`CorpNilFiling-Schedule-50-Checklist.pdf` is the **third most-seen URL on the
+site**: 17 impressions, average position 24, as high as **position 5 for
+"schedule 50 cra"**, and **zero clicks**. It outranks most of the site's
+pages while offering no navigation, no call to action and no route to the
+filing form.
+
+It is not one file. There are **nine checklist PDFs, one per blog post**, each
+linked from its post as a lead magnet. Only this one is old enough (October 26)
+to have accumulated impressions; the other eight are all from November and will
+follow. Every future post adds another.
+
+**No fix was applied, deliberately.** Deindexing a PDF needs an
+`X-Robots-Tag: noindex` HTTP header, which requires server or `.htaccess`
+access these tools do not reach. Rank Math governs the attachment *page*, not
+the file. A `robots.txt` `Disallow` would make it worse: it blocks crawling, so
+Google never sees a noindex directive and the URL stays indexed without a
+snippet. Redirecting the file would break the download link on five posts.
+This needs whoever controls the server.
+
+### Unbuilt head terms from 6(d), checked against what is live
+
+| Family | Head term | Monthly | Target URL | Status |
+|---|---|---|---|---|
+| F5 | does an inactive corporation have to file a t2 | 480 | `/answers/does-an-inactive-corporation-have-to-file-a-t2/` | **Not a gap** — covered by two live answers |
+| F12 | unfiled corporate tax returns canada | 210 | `/case-studies/six-unfiled-nil-years…/` | Unbuilt, blocked on client consent |
+| F13 | dormant company tax return canada | 170 | `/blog/dormant-company-tax-return-canada/` | **Unbuilt, and the best candidate** |
+| F3 | nil t2 filing toronto | 140 | `/toronto/` | Unbuilt; whole family, builder exists |
+| F6 | how to choose a nil t2 filing service canada | 90 | `/best/nil-t2-filing-services-in-canada/` | Unbuilt, blocked on competitor approval |
+| F1 | nil t2 filing for holding company | 70 | `/nil-t2-filing-for-numbered-holding-corporations/` | Unbuilt; whole family |
+| F7 | nil t2 filing vs t2 short | 60 | `/compare/nil-t2-filing-vs-t2-short-filing/` | Unbuilt; 20 other F7 pages live |
+
+**F5 is a slug mismatch, not a gap.** The exact 6(d) slug is unbuilt, but
+`/answers/do-i-need-to-file-a-t2-every-year-if-my-corporation-is-inactive/`
+and `/answers/do-i-need-to-file-a-t2-if-my-corporation-had-no-activity/` are
+both live and answer the same question. Building the 6(d) slug would create a
+near-duplicate that 6(k) exists to catch. Worth recording so the 480 figure is
+not chased twice.
+
+**F13 is the real one.** It is the designated blog head term; line 1694 also
+makes it the canonical target for a cross-domain consolidation, with
+gondaliyacpa.ca's `/blog/dormant-company-tax-return/` to be 301'd into it. And
+the demand is already visible: four dormant-company queries drew 9 impressions
+at positions 62 to 77 this period. **It needs care, because
+`/dormant-corporation-filing/` was pointed at "dormant company tax return" on
+November 17 and the F9 guide covers the same subject**, so the post has to take
+the informational "do you need to" angle and link down to the service page
+rather than compete with it.
