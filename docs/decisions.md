@@ -11346,3 +11346,33 @@ failures.
 Page 434 renders "$300 + HST per Tax Year" in one trust cell. Hard rule 9 wants
 "$300.00 plus HST per tax year" after the 2026-11-12 ruling. Not touched here;
 it belongs with the HST sweep already open in this file.
+
+
+## 2026-11-18 — Toronto city hub: hero banner matched to the service page
+
+Navneet asked for the banner to match the service page's. Read from the live
+page rather than guessed: `/nil-t2-filing/` is post 434, an Elementor page
+whose banner is container `sv00001`, and its generated stylesheet
+(`/wp-content/uploads/elementor/css/post-434.css`) gives the spec.
+
+| | Service page sv00001 | Hub hero, as supplied |
+|---|---|---|
+| Background image | business-executives-having-meeting | same image |
+| Background position | center center | top center |
+| Overlay colour | #0B1A33 | #000000 |
+| **Overlay opacity** | **0.82** | **0.03** |
+| Min height | 340px | 387px |
+
+The opacity is the real defect. At 0.03 there is effectively no overlay, so
+the photograph rendered at full brightness beneath white headings. The hub now
+carries the service page's values as a `HERO` dict applied to section 0, so
+every later city build inherits them.
+
+### Not changed, worth a decision
+
+The service page's banner button is **#314D8A**; every button in the supplied
+template, and so on this hub, is **#2087C9**. That is a site-wide brand
+inconsistency across roughly twenty buttons, not a banner fix, so it is left
+alone rather than changed silently. Section 24 of the source (a "meet the
+team" heading) and the page-434 heading sizes (40px/50px against the hub's
+32px) differ too; the ask was the background, so only the background moved.

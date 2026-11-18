@@ -141,6 +141,19 @@ INTRO_IMG_ID = 273
 INTRO_IMG = ('https://corpnilfilingfor300.ca/wp-content/uploads/2026/09/'
              '169A7423-1-scaled-2.jpg')
 
+# Hero banner, matched to the service page /nil-t2-filing/ (post 434,
+# container sv00001) read from its generated Elementor stylesheet on
+# 2026-11-18. The template arrived with a #000000 overlay at 0.03 opacity,
+# which is no overlay at all: the photograph rendered at full brightness
+# under white headings. The service page darkens the same photograph with
+# #0B1A33 at 0.82 and centres it.
+HERO = {
+    'background_position':       'center center',
+    'background_overlay_color':  '#0B1A33',
+    'background_overlay_opacity': {'unit':'px','size':0.82,'sizes':[]},
+    'custom_height':             {'unit':'px','size':340,'sizes':[]},
+}
+
 
 def desource(n, hero_done=[False]):
     """Remove every gondaliyacpa.ca asset and link target from a section."""
@@ -348,6 +361,8 @@ def build(slug,name,kind,jkey,supplied):
                             s[q[0][0]]=q[0][1]; q.pop(0)
                         break
                     else: break
+        if idx==0:
+            sec['settings'].update(copy.deepcopy(HERO))
         if idx==1:
             # The image widget carries a gondaliyacpa.ca URL that desource()
             # would blank, leaving an empty frame. Point it at this site's own
