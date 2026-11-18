@@ -10937,3 +10937,71 @@ at positions 62 to 77 this period. **It needs care, because
 November 17 and the F9 guide covers the same subject**, so the post has to take
 the informational "do you need to" angle and link down to the service page
 rather than compete with it.
+
+---
+
+## 2026-11-18 — Family 7 page 21: `/compare/nil-t2-filing-vs-t2-short-filing/`
+
+Navneet: *"build compare page first using same template as other compare
+pages. make it seo friendly detailed. follow plan"*. Live as item **2520**,
+22,890 bytes, byte-verified after publishing.
+
+6(d) line 1272 makes it a head term: 60 monthly searches, commercial intent,
+conversion path "Comparison to `/tools/t2-short-eligibility-checker/` to `/`",
+which the page's second hero button follows exactly. It was the only unbuilt
+F7 URL with a 6(d) head term behind it.
+
+### The angle, and why the page is not a tenth entry in a crowded cluster
+
+The T2 Short material on this site already includes
+`/compare/t2-short-vs-full-t2/`, `/compare/t2-short-vs-t2-short-plus-gifi/`,
+the blog post "T2 Short vs Full T2: Which Can a Nil Corporation Use?", three
+service pages and three tools. Search Console shows that cluster at **positions
+61 to 87** — nothing in it ranks. A third page arguing form-against-form would
+have made that worse.
+
+So this page argues the category error the query itself implies: **nil T2
+filing names the tax year, T2 Short filing names the form.** They answer
+different questions, which is why "which should I choose" has no answer. The
+eight conditions are deliberately not restated — `/compare/t2-short-vs-full-t2/`
+lists them in full, and repeating them is what 6(k) exists to catch. This page
+links there instead.
+
+6(k) measured **0.375 worst** across every F7 page and all T2 Short material
+elsewhere, and **0.332 against `t2-short-vs-full-t2`** specifically.
+
+### Two template defects found and fixed
+
+**The closing CTA hard-coded the fee.** `render()` wrote `build_f7.PRICE`
+directly into the `si-cta-bottom` heading and into the schema's `our_price`,
+so the first draft of this national page shipped nine instances of the
+corrected wording and one of "plus HST" in its own footer. `render()` and
+`meta()` now read `p.get('price', PRICE)`, the same override pattern the family
+already uses for `stamp` and `disclosure`. **All twenty existing pages were
+rebuilt and are byte-identical**, so the override changes nothing that was
+already live.
+
+**`gate.py` required the old wording.** It tested for the literal string
+"$300.00 plus HST per tax year", so a page following Navneet's 2026-11-12
+ruling could not pass. It now accepts either form and **fails a page carrying
+both**, which is what caught the defect above.
+
+The twenty siblings still say "plus HST" and remain part of the sweep.
+
+### Dates
+
+`build_f7` carries November 4 for the twenty pages built that day. Both price
+columns here are our own published fee rather than a competitor's, so "Prices
+checked" is the date our own fee was confirmed; the builder sets it to the
+build date, November 18.
+
+### Linked in, and the builder kept in step
+
+`/compare/t2-short-vs-full-t2/` (1670) now links here from its warning block.
+That edit was made live **and** written back into `build_f7.py`, and the
+rebuilt file matches live at 27,215 bytes exactly — the drift that hid the
+Family 15 width fix does not repeat here. Gate clear on all 21 F7 pages.
+
+Line 1528 has the Family 6 listicles linking to this page as well. F6 is
+unbuilt and blocked on competitor approval, so that inbound link is still
+outstanding.

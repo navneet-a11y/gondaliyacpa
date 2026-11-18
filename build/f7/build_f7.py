@@ -85,6 +85,13 @@ PRICING = SITE + '/pricing/'  # the F8 pillar hub, 6(b) line 1201
 COST = SITE + '/pricing/nil-t2-filing-cost/'
 BASE = SITE + '/compare/'
 
+# The twenty pages built before 2026-11-18 all carry this string, so it stays
+# as the accurate record of what is live. Navneet settled the wording on
+# 2026-11-12: HST is named only in the five HST jurisdictions, and an F7
+# concept page is national. A page may therefore override it with a 'price'
+# key, which render() and meta() both read; a page that passes nothing renders
+# exactly the bytes it did before the key existed. The twenty still need the
+# sweep recorded in docs/decisions.md.
 PRICE = '$300.00 plus HST per tax year'
 TODAY, ISO = 'November 4, 2026', '2026-11-04'
 BYLINE = ('Written and reviewed by <a href="' + SITE
@@ -206,7 +213,10 @@ PAGE = dict(
   items=SHORT8,
   warn=('Meeting seven of the eight is not enough. One condition failing '
         'puts the corporation on the full return, which we file at the same '
-        'fee rather than a different one.'),
+        'fee rather than a different one. Which form carries the year is a '
+        'separate question from whether the year is nil at all, set out in '
+        '<a href="' + BASE + 'nil-t2-filing-vs-t2-short-filing/">Nil T2 '
+        'Filing vs T2 Short Filing</a>.'),
   close=('The <a href="' + T + 't2-short-eligibility-checker/">T2 Short '
          'eligibility checker</a> tests all eight at once, the '
          '<a href="' + T + 't2-short-exclusion-checker/">exclusion '
@@ -650,7 +660,7 @@ def render(p):
              + '\n</div>\n</div></div>\n')
 
     h.append('<div class="si-cta-bottom">'
-             '<h2>Nil T2 Filing, ' + PRICE + '</h2>'
+             '<h2>Nil T2 Filing, ' + p.get('price', PRICE) + '</h2>'
              '<p>Type your corporation name, pick your unfiled years, pay, and '
              'sign Form T183CORP on a secure screen. Your CRA confirmation is '
              'emailed within 3 business days.</p>'
@@ -700,7 +710,7 @@ def meta(p):
      'cnf_feature_rows_json': json.dumps({
         'price_rows': [_row_json(p, r, False) for r in p['price_rows']],
         'feature_rows': [_row_json(p, r, True) for r in p['feature_rows']],
-        'our_price': PRICE,
+        'our_price': p.get('price', PRICE),
         'competitor_named': False,
         'price_source': 'Our own published fee, not a competitor price'}),
      'cnf_price_checked_on': p.get('price_checked_iso', ISO),

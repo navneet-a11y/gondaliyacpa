@@ -73,8 +73,17 @@ for w in ('book a call', 'book free', 'book a free', 'schedule a meeting',
 # ---- rule 9, price wording -----------------------------------------------
 if 'including HST' in c:
     bad('rule 9 "including HST" contradicts the standing correction')
-if '$300.00 plus HST per tax year' not in c:
+# Navneet settled the wording on 2026-11-12: HST is named only in the five HST
+# jurisdictions, and an F7 concept page is national. The twenty pages built
+# before 2026-11-18 carry the HST form and still need the sweep recorded in
+# docs/decisions.md, so both are accepted here and exactly one must be used.
+_PRICES = ('$300.00 plus applicable sales tax per tax year',
+           '$300.00 plus HST per tax year')
+_used = [x for x in _PRICES if x in c]
+if not _used:
     bad('rule 9 price string missing')
+elif len(_used) > 1:
+    bad('rule 9 the page carries both the old and the corrected price wording')
 # Every figure that may appear on an F7 page, and the plan line that states
 # it. Nothing goes in here because a page wants to say it; /paper-t2-vs-efile-t2/
 # needs the two paper charges, and the plan states both.
