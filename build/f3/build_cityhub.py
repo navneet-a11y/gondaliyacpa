@@ -266,6 +266,18 @@ def faq_html(name, slug):
       f'Canada can sign it. '
       f'<a href="{B}/nil-t2-filing-for-non-resident-owned-corporations-{slug}/">'
       f'Non-resident owned corporations</a>.</p>'),
+     ('I am not sure whether my year is nil. Can you check before I pay?',
+      f'<p>Yes. Send the year end and what the corporation did, if anything, and '
+      f'we confirm whether the year is nil before any charge. If it is not, we '
+      f'say so and what it would cost instead. '
+      f'<a href="{B}/no-activity-corporation-tax-return-{slug}/">What counts as '
+      f'no activity</a>.</p>'),
+     ('I am closing the corporation. Do I still need a return?',
+      f'<p>Yes. A final T2 covers the period up to dissolution and is due within '
+      f'six months of it. Filing it is what closes the corporation\u2019s account '
+      f'with the Canada Revenue Agency. '
+      f'<a href="{B}/final-t2-before-dissolution-{slug}/">Final T2 before '
+      f'dissolution</a>.</p>'),
     ]
     rows = ''.join(
         f'<details><summary>{q}</summary><div class="cnf-a">{a}</div></details>'
@@ -419,10 +431,12 @@ def build(slug,name,kind,jkey,supplied):
           'or received is not nil. If your corporation is not nil, we move your '
           'file to gondaliyacpa.ca at $350.00 plus applicable sales tax per year '
           'and tell you before any further charge.'))],{}),
-     (33,[('title',f'Nil T2 Filing in {name}: Common Questions')],{}),
-     (34,[('html',faq_html(name,slug))],{}),
      (35,[('title',f'File your {name} nil T2 return'),
           ('text',CTA),('text','See the price')],{1:FORM,2:PRICE}),
+     # 2026-11-18: the FAQ closes the page, after the final call to action,
+     # at Navneet's request.
+     (33,[('title',f'Nil T2 Filing in {name}: Common Questions')],{}),
+     (34,[('html',faq_html(name,slug))],{}),
     ]
     TRUST=['CPA Ontario registered firm, Firm Registration 61330051',
            'Registered EFILE electronic filer',

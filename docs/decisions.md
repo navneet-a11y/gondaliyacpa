@@ -11424,3 +11424,29 @@ is one rule (`.single-nil_city_hub .entry-meta{display:none}`) if Navneet
 prefers.
 
 Result: 119,040 bytes, 17 sections, audit 0 failures.
+
+
+## 2026-11-18 — Toronto city hub: FAQ extended to ten and moved to the end
+
+At Navneet's request the FAQ grows from eight questions to ten and closes the
+page, after the final call to action rather than before it.
+
+The two added questions were chosen to cover the gaps the first eight left and
+to reach two more Family 4 pages:
+
+- "I am not sure whether my year is nil. Can you check before I pay?" ->
+  `/no-activity-corporation-tax-return-{slug}/`
+- "I am closing the corporation. Do I still need a return?" ->
+  `/final-t2-before-dissolution-{slug}/`
+
+Section order is now 0, 1, 2, 3, 6, 7, 8, 9, 16, 21, 22, 23, 6, 7, 35, 33, 34
+-- the CTA at 35 before the FAQ pair.
+
+Of the FAQ's nine distinct link targets, **three are live** (the
+inactive-corporation answer page, the T183CORP guide, the Ontario annual
+return calculator, all verified 200) and **six point at Toronto Family 4
+pages that do not exist yet**. That is the same blocker already recorded: the
+hub must not publish before that batch is built.
+
+119,887 bytes, 17 sections, audit 0 failures, no FAQPage schema and no
+`<script>` in the built file.
