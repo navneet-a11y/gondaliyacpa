@@ -11832,16 +11832,50 @@ under the 50-per-call cap. 44 ops for Ottawa, as for Brampton.
 
 Left as a draft.
 
-## 2026-11-18 — Title convention: primary keyword first
+## 2026-11-18 — Schedule 50 guide title; keyword-first was already the pattern
 
-Navneet set a standing rule: **every SEO title leads with the page's primary
-(focus) keyword.** No brand prefix, no modifier, no category word ahead of it.
-The brand or category suffix stays at the end after a pipe.
+### What was actually wrong
 
-This came out of the GSC title review below and applies from here on, to every
-family template and every page already live.
+Navneet pulled me up on a title I proposed, and he was right. Reviewing GSC I
+recommended changing post 1393 to `T2 Schedule 50: The 10% Shareholder Rule
+Explained` -- which pushes the focus keyword (`schedule 50`) out of first
+position behind a modifier. The site's titles are already built keyword-first.
+I proposed breaking an existing convention and called it an improvement.
 
-### Why the review happened
+Checked against the live guides (30 in the family, first 20 by title) and they
+are keyword-first throughout: `Corporate Tax Arrears and Interest |`,
+`Dormant Corporations |`, `Final T2 and Dissolution |`,
+`GIFI Schedules 100, 125 and 141 |`, `Mandatory T2 Electronic Filing |`,
+`Nil T2 Return |`, `Quebec CO-17 and Alberta AT1 |`. Post 976's SEO title is
+`How to File a Nil T2 Return | Step by Step for Canada` against focus keyword
+`how to file a nil t2 return` -- an exact keyword-first match, not a
+"How to" prefix as the post title suggests.
+
+**No retro-fix job exists.** I had proposed sweeping 400-600 live titles for
+keyword-first compliance. They already comply. That sweep is withdrawn, and
+the generators do not need changing either.
+
+### The one near-exception found
+
+Post 955, focus keyword `form t183corp`, SEO title
+`What Is Form T183CORP? | Signing and Transmission`. The keyword sits third,
+behind a two-word question prefix. Left as it is: the question format matches
+how the term is searched, and the page draws 18 impressions at position 8.8,
+which is not a title problem. Noted rather than changed.
+
+### The title that did change
+
+Post 1393. The original was already keyword-first, so the change is to the
+back half only:
+
+- was: `Schedule 50 and Shareholder Reporting | Nil T2` (46)
+- now: `Schedule 50: The 10% Shareholder Rule Explained | Nil T2` (56)
+
+`Schedule 50` still leads. What is added is the 10% threshold, which is the
+fact the queries ask for (`what is a schedule 50`, `schedule 50 cra`,
+`t2 schedule 50`). The description was already right and was left alone.
+
+### Why this page and no other
 
 90 days of data (2026-08-20 to 2026-11-18, 683 impressions, 8 clicks). Only
 three live URLs clear 40 impressions, so only three can support a CTR
@@ -11853,24 +11887,11 @@ judgement at all:
 | `/guides/final-t2-and-dissolution/` | 46 | 3 (6.5%) | 6.1 |
 | `/contact-us/` | 41 | 0 | 133.3 |
 
-The homepage has 23 impressions, which is why its title was left alone (logged
-separately). `/contact-us/` at position 133 is not a title problem. The
-dissolution guide is the best performer on the site and was not touched.
-
-### The one title changed
-
-Post 1393, focus keyword `schedule 50`:
-
-- was: `Schedule 50 and Shareholder Reporting | Nil T2` (46)
-- now: `Schedule 50: The 10% Shareholder Rule Explained | Nil T2` (56)
-
-Keyword first, and the 10% threshold now shows in the SERP -- that number is
-the fact the queries are asking for (`what is a schedule 50`,
-`schedule 50 cra`, `t2 schedule 50`). The description was already right and
-was left as it was.
-
-A first draft led with `T2 Schedule 50:`, which pushed the keyword to second
-position. Rejected under the rule above.
+The dissolution guide is the only page on the site earning clicks and its CTR
+is normal for position 6, so it was not touched. `/contact-us/` at position
+133 is not a title problem. The homepage, at 23 impressions, was left alone
+for the same reason everything else was: below roughly 40 impressions a title
+change is a guess, not a test.
 
 ### Still open, and bigger than any title
 
@@ -11885,5 +11906,4 @@ per topic, not a title rewrite.
 
 Separately: the query `t183corp` draws 15 impressions at position 14.1. An
 exact-match query with no competition should not sit on page two. Internal
-linking and content on `/guides/t183corp-signing-and-transmission/`, not a
-title job.
+linking and content on post 955, not a title job.
