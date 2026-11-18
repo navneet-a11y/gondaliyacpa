@@ -1,0 +1,104 @@
+<!-- ══════════════════════════════════
+     CALCULATOR JAVASCRIPT (multi-province)
+     ══════════════════════════════════ -->
+<script>
+var HST_PROV = {
+  ON: { name: 'Ontario', tax: 'HST', prov: 8, provLabel: 'Ontario portion' },
+  NB: { name: 'New Brunswick', tax: 'HST', prov: 10, provLabel: 'New Brunswick portion' },
+  NL: { name: 'Newfoundland and Labrador', tax: 'HST', prov: 10, provLabel: 'Newfoundland and Labrador portion' },
+  PE: { name: 'Prince Edward Island', tax: 'HST', prov: 10, provLabel: 'Prince Edward Island portion' },
+  NS: { name: 'Nova Scotia', tax: 'HST', prov: 9, provLabel: 'Nova Scotia portion' },
+  BC: { name: 'British Columbia', tax: 'GST + PST', prov: 7, provLabel: 'BC PST' },
+  SK: { name: 'Saskatchewan', tax: 'GST + PST', prov: 6, provLabel: 'Saskatchewan PST' },
+  MB: { name: 'Manitoba', tax: 'GST + RST', prov: 7, provLabel: 'Manitoba RST' },
+  QC: { name: 'Quebec', tax: 'GST + QST', prov: 9.975, provLabel: 'Quebec QST' },
+  AB: { name: 'Alberta', tax: 'GST', prov: 0, provLabel: '' },
+  YT: { name: 'Yukon', tax: 'GST', prov: 0, provLabel: '' },
+  NT: { name: 'Northwest Territories', tax: 'GST', prov: 0, provLabel: '' },
+  NU: { name: 'Nunavut', tax: 'GST', prov: 0, provLabel: '' }
+};
+var currentMode = 'add';
+var currentProv = 'ON';
+
+function hstRate(p) { return 5 + HST_PROV[p].prov; }
+function pct(n) { return (Math.round(n * 1000) / 1000) + '%'; }
+function shortTax(p) { var t = HST_PROV[p].tax; return t === 'HST' ? 'HST' : (t === 'GST' ? 'GST' : 'Tax'); }
+
+function fmt(n) {
+  return '$' + n.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+}
+
+function updateLabels() {
+  var p = HST_PROV[currentProv], s = shortTax(currentProv), r = hstRate(currentProv);
+  document.getElementById('hst-calc-title').textContent = p.name + ' ' + (p.tax === 'HST' ? 'HST' : p.tax) + ' Calculator — ' + pct(r) + ' Rate 2026';
+  document.getElementById('hst-tab-add').textContent = 'Add ' + s;
+  document.getElementById('hst-tab-remove').textContent = 'Remove ' + s + ' (Reverse)';
+  document.getElementById('hst-calc-btn').textContent = 'Calculate ' + s;
+  document.getElementById('hst-input-label').textContent = currentMode === 'add' ? 'Amount Before Tax (CAD)' : 'Total Amount Including ' + s + ' (CAD)';
+  document.getElementById('res-label-tax').textContent = (p.tax === 'HST' ? 'HST' : (p.tax === 'GST' ? 'GST' : 'Total tax')) + ' (' + pct(r) + ')';
+  var row = document.getElementById('res-row-pst');
+  if (p.prov > 0) {
+    row.classList.remove('hst-hide');
+    document.getElementById('res-label-pst').textContent = p.provLabel + ' (' + pct(p.prov) + ')';
+  } else {
+    row.classList.add('hst-hide');
+  }
+}
+
+function switchTab(mode) {
+  currentMode = mode;
+  document.getElementById('hst-tab-add').classList.toggle('active', mode === 'add');
+  document.getElementById('hst-tab-remove').classList.toggle('active', mode === 'remove');
+  document.getElementById('hst-result').classList.remove('show');
+  document.getElementById('hst-amount').value = '';
+  updateLabels();
+}
+
+function changeProvince() {
+  currentProv = document.getElementById('hst-province').value;
+  updateLabels();
+  calculateHST();
+}
+
+function hstCalc(raw, mode, prov) {
+  var rate = hstRate(prov) / 100;
+  var pretax, total, tax, gst, pst;
+  if (mode === 'add') {
+    pretax = Math.round(raw * 100) / 100;
+    tax = Math.round(pretax * rate * 100) / 100;
+    total = Math.round((pretax + tax) * 100) / 100;
+  } else {
+    total = Math.round(raw * 100) / 100;
+    pretax = Math.round(total / (1 + rate) * 100) / 100;
+    tax = Math.round((total - pretax) * 100) / 100;
+  }
+  gst = HST_PROV[prov].prov > 0 ? Math.round(pretax * 0.05 * 100) / 100 : tax;
+  pst = Math.round((tax - gst) * 100) / 100;
+  return { pretax: pretax, tax: tax, gst: gst, pst: pst, total: total, rate: rate };
+}
+
+function calculateHST() {
+  var raw = parseFloat(document.getElementById('hst-amount').value);
+  if (isNaN(raw) || raw <= 0) { document.getElementById('hst-result').classList.remove('show'); return; }
+  var c = hstCalc(raw, currentMode, currentProv), s = shortTax(currentProv);
+  var factor = (1 + c.rate).toFixed(5).replace(/0+$/, '');
+  document.getElementById('res-label-pretax').textContent = 'Pre-Tax Amount';
+  if (currentMode === 'add') {
+    document.getElementById('res-label-total').textContent = 'Total with ' + s;
+    document.getElementById('res-formula').textContent = fmt(c.pretax) + ' × ' + factor + ' = ' + fmt(c.total);
+  } else {
+    document.getElementById('res-label-total').textContent = 'Total (Entered)';
+    document.getElementById('res-formula').textContent = fmt(c.total) + ' ÷ ' + factor + ' = ' + fmt(c.pretax) + ' pre-tax';
+  }
+  document.getElementById('res-pretax').textContent = fmt(c.pretax);
+  document.getElementById('res-hst').textContent = fmt(c.tax);
+  document.getElementById('res-gst').textContent = fmt(c.gst);
+  document.getElementById('res-pst').textContent = fmt(c.pst);
+  document.getElementById('res-total').textContent = fmt(c.total);
+  document.getElementById('hst-result').classList.add('show');
+}
+
+document.getElementById('hst-amount').addEventListener('keydown', function(e) {
+  if (e.key === 'Enter') calculateHST();
+});
+</script>

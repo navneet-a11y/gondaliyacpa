@@ -1,0 +1,75 @@
+<!-- ══════════════════════════════════
+     CALCULATOR CARD (multi-province, Ontario default)
+     ══════════════════════════════════ -->
+<style>
+.hst-prov-row { margin: 0 0 14px; }
+.hst-prov-row label { display: block; font-size: 12px; font-weight: 600; color: rgba(255,255,255,0.7); margin-bottom: 6px; }
+.hst-prov-select { width: 100%; padding: 10px 12px; border-radius: 6px; border: 2px solid rgba(255,255,255,0.15); background: #fff; color: #1a2340; font-size: 14px; font-weight: 600; box-sizing: border-box; }
+.hst-result-row.hst-hide { display: none; }
+</style>
+<div class="hst-calc-section" id="hst-calculator">
+  <div class="hst-calc-card">
+    <div class="hst-calc-header">
+      <h2 id="hst-calc-title">Ontario HST Calculator — 13% Rate 2026</h2>
+      <div class="hst-prov-row">
+        <label for="hst-province">Province or territory</label>
+        <select id="hst-province" class="hst-prov-select" onchange="changeProvince()">
+          <option value="ON" selected>Ontario: 13% HST</option>
+          <option value="NB">New Brunswick: 15% HST</option>
+          <option value="NL">Newfoundland and Labrador: 15% HST</option>
+          <option value="PE">Prince Edward Island: 15% HST</option>
+          <option value="NS">Nova Scotia: 14% HST</option>
+          <option value="BC">British Columbia: 5% GST + 7% PST</option>
+          <option value="SK">Saskatchewan: 5% GST + 6% PST</option>
+          <option value="MB">Manitoba: 5% GST + 7% RST</option>
+          <option value="QC">Quebec: 5% GST + 9.975% QST</option>
+          <option value="AB">Alberta: 5% GST</option>
+          <option value="YT">Yukon: 5% GST</option>
+          <option value="NT">Northwest Territories: 5% GST</option>
+          <option value="NU">Nunavut: 5% GST</option>
+        </select>
+      </div>
+      <div class="hst-tab-row">
+        <div class="hst-tab active" id="hst-tab-add" onclick="switchTab('add')">Add HST</div>
+        <div class="hst-tab" id="hst-tab-remove" onclick="switchTab('remove')">Remove HST (Reverse)</div>
+      </div>
+    </div>
+    <div class="hst-calc-body">
+      <div class="hst-input-group">
+        <label id="hst-input-label">Amount Before Tax (CAD)</label>
+        <div class="hst-input-wrap">
+          <span>$</span>
+          <input type="number" class="hst-input" id="hst-amount" placeholder="0.00" min="0" step="0.01" oninput="calculateHST()">
+        </div>
+      </div>
+      <button class="hst-calc-btn" id="hst-calc-btn" onclick="calculateHST()">Calculate HST</button>
+      <div class="hst-result-box" id="hst-result">
+        <div class="hst-result-row">
+          <span class="hst-result-label" id="res-label-pretax">Pre-Tax Amount</span>
+          <span class="hst-result-value" id="res-pretax">$0.00</span>
+        </div>
+        <div class="hst-result-row">
+          <span class="hst-result-label" id="res-label-tax">HST (13%)</span>
+          <span class="hst-result-value" style="color:rgba(32,135,201,1);" id="res-hst">$0.00</span>
+        </div>
+        <div class="hst-result-row">
+          <span class="hst-result-label" style="font-size:11px;color:#718096;">Federal GST (5%)</span>
+          <span class="hst-result-value" style="font-size:13px;" id="res-gst">$0.00</span>
+        </div>
+        <div class="hst-result-row" id="res-row-pst">
+          <span class="hst-result-label" style="font-size:11px;color:#718096;" id="res-label-pst">Ontario portion (8%)</span>
+          <span class="hst-result-value" style="font-size:13px;" id="res-pst">$0.00</span>
+        </div>
+        <div class="hst-result-row hst-result-total">
+          <span class="hst-result-label" id="res-label-total">Total with HST</span>
+          <span class="hst-result-value" id="res-total">$0.00</span>
+        </div>
+        <div class="hst-formula-note" id="res-formula"></div>
+      </div>
+    </div>
+    <div class="hst-calc-cta">
+      <p>Need help with HST registration, filing or CRA compliance? Our licensed CPA team handles it all — virtually across Ontario.</p>
+      <a href="https://gondaliyacpa.ca/gst-hst-return-filing/">HST Filing Services &#8594;</a>
+    </div>
+  </div>
+</div>
