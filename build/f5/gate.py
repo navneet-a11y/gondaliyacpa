@@ -57,8 +57,16 @@ for r in recs:
             fail.append('%s: banned schema %s' % (s, bad))
 
     # Hard rule 9 / standing correction: price wording.
-    if '$300.00 plus HST per tax year' not in c:
+    # Navneet settled the wording on 2026-11-12: HST is named only in the five
+    # HST jurisdictions, and an answer page is national. The forty-five built
+    # before 2026-11-18 carry the HST form and still need the sweep recorded in
+    # docs/decisions.md, so both are accepted and exactly one must be used.
+    _prices = [x for x in ('$300.00 plus applicable sales tax per tax year',
+                           '$300.00 plus HST per tax year') if x in c]
+    if not _prices:
         fail.append('%s: price line missing' % s)
+    elif len(_prices) > 1:
+        fail.append('%s: carries both the old and the corrected price wording' % s)
     if 'including HST' in c:
         fail.append('%s: "including HST" contradicts the standing correction' % s)
 

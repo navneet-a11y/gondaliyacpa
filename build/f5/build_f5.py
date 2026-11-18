@@ -203,8 +203,16 @@ MONEY = [SITE + '/pricing/nil-t2-filing-cost/', SITE + '/deadlines/',
 
 def build(rec, siblings):
     url = '%s/answers/%s/' % (SITE, rec['slug'])
+    # 2026-11-18. The forty-six pages built before that date all carry the HST
+    # wording and stay as the record of what is live. Navneet settled it on
+    # 2026-11-12: HST is named only in the five HST jurisdictions, and an
+    # answer page is national. A record may override both forms of the fee; a
+    # record that passes neither renders exactly the bytes it did before these
+    # keys existed, which build_f5_inactive.py asserts against all forty-six.
+    _price = rec.get('price', PRICE)
+    _price_title = rec.get('price_title', '$300.00 Plus HST Per Tax Year')
     hero = ('<div class="cnf-hero"><div class="cnf-hero-in"><h1>' + rec['h1'] + '</h1>'
-            '<p class="cnf-hero-sub">$300.00 Plus HST Per Tax Year</p>'
+            '<p class="cnf-hero-sub">' + _price_title + '</p>'
             '<p class="cnf-hero-lede">' + EFILE_SHORT + '</p>'
             '<p class="cnf-hero-by">' + BYLINE + '</p>'
             '<p><a class="cnf-hero-btn" href="' + FORM + '">' + CTA + '</a></p>'
@@ -226,12 +234,19 @@ def build(rec, siblings):
     if rec['qual']:
         body.append('<div class="cnf-qual"><p>' + LATE_QUAL + '</p></div>')
     body.append('<p>' + rec['body'] + '</p>')
+    # Optional depth, for a record that needs more than the answer-first block.
+    # Line 1213 fixes the ANSWER at 40 to 60 words; it does not cap the page.
+    # A record passing nothing renders unchanged.
+    for _h2, _paras in rec.get('extra', []):
+        body.append('<h2>' + _h2 + '</h2>')
+        for _para in _paras:
+            body.append('<p>' + _para + '</p>')
     body.append('<h2>Filing a Nil Return</h2>')
     body.append('<p>' + SCOPE + '</p>')
     body.append('<p>We are a registered EFILE electronic filer. Your return is '
                 'transmitted to the Canada Revenue Agency electronically, and your '
                 'CRA confirmation is emailed within 3 business days. You sign Form '
-                'T183CORP before we transmit. The fee is ' + PRICE + '. See the full '
+                'T183CORP before we transmit. The fee is ' + _price + '. See the full '
                 + a(MONEY[0], 'nil T2 filing cost') + ', every '
                 + a(MONEY[1], 'T2 filing deadline') + ', and '
                 + a(MONEY[2], 'catch-up nil T2 filing') + ' for outstanding years.</p>')
@@ -240,7 +255,14 @@ def build(rec, siblings):
     body.append('<p>For the whole subject in one place, see the complete guide '
                 'to the ' + a(PILLAR, 'nil T2 return') + '.</p>')
     body.append('<h2>Related Questions</h2>')
-    body.append('<ul>' + sib + '</ul>')
+    # /answers/can-i-e-sign-a-t183corp/ was built by build_f5_esign.py, which
+    # writes only its own page. Its three inbound links were added to these
+    # files by hand afterwards, so re-running this builder silently removed
+    # them. Reproduced here instead, appended exactly as the hand edit left
+    # them: straight after the last </li>, with no newline.
+    body.append('<ul>' + sib + ''.join(
+        '<li>%s</li>' % a(SITE + '/answers/' + _sl + '/', _an)
+        for _sl, _an in rec.get('extra_siblings', [])) + '</ul>')
     body.append('<p><a class="cnf-btn" href="' + FORM + '">' + CTA + '</a></p>')
     # 7.9 line 1570: for F1, F2, F5, F8, F10, F11, F12, F15 and F16 the visible
     # date sits in the footer of the article body, not under the H1 as 7.5 rule 1
@@ -338,10 +360,15 @@ Q2 = [
   anchor='Do I need to file with no activity',
   keyword='file t2 corporation no activity',
   related=[0, 3],
-  answer=('Yes. Every resident corporation must file a T2 return within six months of '
-          'its fiscal year-end, every year, until it is formally dissolved. Having no '
-          'revenue, no bank activity and no employees does not remove the obligation, '
-          'although a corporation with investment or rental income is not nil.'),
+  # Re-scoped 2026-11-18. This answer measured 0.707 against the one line 1584
+  # fixes for /answers/does-an-inactive-corporation-have-to-file-a-t2/, and on
+  # a Family 5 page the answer IS the meta description, so the two pages would
+  # have shipped near-identical descriptions. It now leads on its own question,
+  # no activity, and keeps the not-nil caveat that is this page's real job.
+  answer=('Yes. No activity in the year changes what the return says, not whether it '
+          'is due. The T2 falls due six months after that fiscal year-end like any '
+          'other year. A corporation with investment or rental income had activity, '
+          'so its year is not nil even if the bank account never moved.'),
   head=('Point', 'Figure'),
   rows=[('Months after the fiscal year-end to file', '6'),
         ('Revenue threshold below which no return is needed', 'None'),
@@ -350,7 +377,10 @@ Q2 = [
   qual=False,
   body=('There is no minimum income below which the return can be skipped. The '
         'obligation comes from being an incorporated resident corporation, not from '
-        'earning anything in the year.')),
+        'earning anything in the year. The full answer to '
+        + a(SITE + '/answers/does-an-inactive-corporation-have-to-file-a-t2/',
+            'does an inactive corporation have to file a T2')
+        + ' sets out the rule, the exceptions and how the obligation ends.')),
  dict(
   slug='do-i-need-to-file-a-nil-t2-if-my-corporation-has-no-bank-account',
   h1='Do I Need to File a Nil T2 if My Corporation Has No Bank Account?',
@@ -505,7 +535,11 @@ Q3 = [
   qual=False,
   body=('There is no form that pauses the T2 while a corporation sits idle. The '
         'return is filed each year with nil amounts, which keeps the corporate tax '
-        'account current and keeps dissolution available when the owner wants it.')),
+        'account current and keeps dissolution available when the owner wants it. '
+        'See '
+        + a(SITE + '/answers/does-an-inactive-corporation-have-to-file-a-t2/',
+            'does an inactive corporation have to file a T2')
+        + ' for the rule in full.')),
  dict(
   slug='can-i-file-five-years-of-nil-t2-returns-at-once',
   h1='Can I File Five Years of Nil T2 Returns at Once?',
@@ -527,6 +561,7 @@ Q3 = [
         'the corporation ends the process with every year assessed.')),
  dict(
   slug='can-i-file-a-nil-t2-myself-without-an-accountant',
+  extra_siblings=[('can-i-e-sign-a-t183corp', 'Can I e-sign a T183CORP')],
   h1='Can I File a Nil T2 Myself Without an Accountant?',
   anchor='Can I file it myself',
   keyword='file a nil t2 without an accountant',
@@ -695,6 +730,7 @@ Q4 = [
         "corporation's own numbers.")),
  dict(
   slug='how-do-i-file-a-nil-t2-return-in-canada',
+  extra_siblings=[('can-i-e-sign-a-t183corp', 'Can I e-sign a T183CORP')],
   h1='How Do I File a Nil T2 Return in Canada?',
   anchor='How do I file a nil T2',
   keyword='how do i file a nil t2 return in canada',
@@ -756,7 +792,11 @@ Q4 = [
   qual=True,
   body=("Dormant is decided year by year, not once for the corporation's life. A "
         'corporation can be nil for several years, operate for one, and be nil '
-        'again, and each year is judged on what happened inside it.')),
+        'again, and each year is judged on what happened inside it. Whether the '
+        'return is owed at all is answered at '
+        + a(SITE + '/answers/does-an-inactive-corporation-have-to-file-a-t2/',
+            'does an inactive corporation have to file a T2')
+        + '.')),
  dict(
   slug='how-do-i-find-out-which-t2-years-are-outstanding',
   h1='How Do I Find Out Which T2 Years Are Outstanding?',
@@ -963,6 +1003,7 @@ Q5 = [
         'to the same month-end.')),
  dict(
   slug='how-long-does-it-take-to-file-a-nil-t2-return',
+  extra_siblings=[('can-i-e-sign-a-t183corp', 'Can I e-sign a T183CORP')],
   h1='How Long Does It Take to File a Nil T2 Return?',
   anchor='How long does filing take',
   keyword='how long does it take to file a nil t2 return',

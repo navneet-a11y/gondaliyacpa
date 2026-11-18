@@ -11005,3 +11005,79 @@ Family 15 width fix does not repeat here. Gate clear on all 21 F7 pages.
 Line 1528 has the Family 6 listicles linking to this page as well. F6 is
 unbuilt and blocked on competitor approval, so that inbound link is still
 outstanding.
+
+---
+
+## 2026-11-18 — `/answers/does-an-inactive-corporation-have-to-file-a-t2/`
+
+Navneet: *"now create answer page detailed same way does an inactive
+corporation have to file a t2 beat top ranking"*, supplying the canada.ca T2
+guide, the H&R Block post and the live AI Overview as the targets. Live as
+item **2523**, 11,076 bytes, byte-verified after publishing.
+
+### This reverses a decision recorded in build_f5_esign.py
+
+That file says of this exact slug: *"Covered. ID 928 ... is the same question,
+and ID 858 ... overlaps it. Building it would cannibalise 928, which 6(k)'s
+internal rule forbids. NOT BUILT."* Reversed on Navneet's instruction. What
+makes it defensible, recorded rather than assumed:
+
+- 6(d) line 1270 names this URL as the Family 5 head term at 480 monthly
+  searches and calls it the **"top AI Overviews candidate"**. Line 1166 fixes
+  its title, H1 and answer. Line 1584 gives the answer paragraph filled for
+  this very URL. Appendix A names the slug.
+- 928 and 858 drew **zero impressions** between October 1 and November 17, so
+  nothing that works was displaced.
+- The cannibalisation was measured, not assumed, and then fixed.
+
+### The near-duplicate was real, and it was in the meta descriptions
+
+Page 6(k) came out at **0.489 worst**, comfortably clear. But on a Family 5
+page the answer paragraph IS the meta description, so the answers were checked
+against each other separately. That found **0.707 between this page's answer
+and 858's** — the two would have shipped near-identical descriptions.
+
+858's answer has been re-scoped to lead on its own question, no activity, and
+to keep the not-nil caveat that is its real job. The overlap fell to **0.194**,
+and the worst answer pair anywhere in the family is now 0.583. Its Rank Math
+description was updated to match, because it still held the old text.
+
+858, 928 and `/answers/how-do-i-know-if-my-corporation-counts-as-dormant/`
+(1238) now link up to this page as the full answer. All three match their
+built files byte for byte: 8,344, 8,606 and 9,172.
+
+### Two template keys, and a drift closed on the way
+
+`build_f5.build()` gained `extra` (optional H2 sections after the body
+paragraph) and `price` / `price_title`. The answer-first template alone could
+not carry the depth the AI Overview answers. Line 1213 fixes the ANSWER at 40
+to 60 words; it does not cap the page. A record passing neither key renders
+byte-identical, which `build_f5_inactive.py` asserts before it writes.
+
+**Re-running `build_f5.py` silently deleted three inbound links.**
+`/answers/can-i-e-sign-a-t183corp/` was built by `build_f5_esign.py`, which
+writes only its own page; its three inbound links had been added to the other
+files by hand. The builder knew nothing about them, so the first rebuild
+removed them. They are now reproduced by an `extra_siblings` key, appended
+exactly as the hand edit left them, and those three files rebuild identical to
+what was committed. Without that the e-sign page would have dropped to zero
+inbound links and failed its own gate.
+
+`gate.py` required the literal HST price string, so a page following the
+2026-11-12 ruling could not pass. It now accepts either wording and fails a
+page carrying both. The other forty-five remain part of the sweep.
+
+### FOR SHARAD GONDALIYA: three facts this page publishes first
+
+The exceptions — **a tax-exempt Crown corporation, a Hutterite colony and a
+registered charity** — appear nowhere else on this site. They are the Canada
+Revenue Agency's own list from the T2 guide Navneet supplied, and a page whose
+whole job is "does this apply to me" cannot answer honestly without them. The
+house rule is that a page should not be the first place a fact appears here,
+so **this needs sign-off**.
+
+What the page deliberately does NOT copy is the AI Overview's penalty
+sentence, which states $25 per day to $2,500 under subsection 162(7) as
+applying generally. Section 7.4's qualification block scopes that figure to a
+non-resident-owned corporation. The block is used unchanged and the broader
+claim is not made.
