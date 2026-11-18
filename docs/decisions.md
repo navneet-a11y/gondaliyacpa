@@ -11450,3 +11450,35 @@ hub must not publish before that batch is built.
 
 119,887 bytes, 17 sections, audit 0 failures, no FAQPage schema and no
 `<script>` in the built file.
+
+
+## 2026-11-18 — FAQ written straight into draft 2533, no re-import
+
+Navneet had already imported the template (the draft read 117 elements, 15
+sections: the v5 build, before the FAQ existed) and asked whether the FAQ
+could be added without another import. It can, and this supersedes the
+hand-over reasoning recorded earlier in this file.
+
+Once `nil_city_hub` was ticked in Elementor's post types, the draft became an
+Elementor document, so **`wp_update_page_layout`** applies: it edits through
+Elementor's own save path, validates the ops, and keeps a revision. That is a
+different thing from writing `_elementor_data` as raw text, which the earlier
+entry declined because a 63 KB hand transcription could alter a styling value
+without breaking the JSON. A single `insert` op carries no such risk: the rest
+of the document is untouched and the server reports exactly what it created.
+
+One op inserted a container at top-level index 15 with two children, a heading
+and the FAQ html widget. Dry run first, then applied: revision **2556**,
+element count 117 to 120, FAQ last on the page, after the final call to
+action. Read back to confirm the markup survived, including the `\2013` CSS
+escape in the accordion's open-state marker.
+
+Caches cleared for the post: Rank Math sitemap, Elementor CSS and element
+cache, LiteSpeed page cache.
+
+### Consequence for the remaining eleven city hubs
+
+They need no import either. Build the template, create the CPT item, then
+insert sections with `wp_update_page_layout`, or import once and patch after.
+The generator stays the source of truth: `build/f3/corpnil-cityhub-toronto.json`
+is the v7 build and matches what is now on 2533.
