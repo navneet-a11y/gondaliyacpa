@@ -1,45 +1,73 @@
-<style>.gcpa-post{--navy:#0f2a4a;--navy-2:#15355c;--blue:#1c6dd0;--blue-soft:#e8f1fc;--teal:#0c8f8f;--teal-soft:#e3f4f4;--gold:#c9991f;--gold-soft:#fbf3dc;--green:#1f8a4c;--green-soft:#e6f5ec;--red:#c0392b;--red-soft:#fbeae8;--ink:#1d2733;--muted:#5a6b7b;--line:#d8e0e8;--bg:#ffffff;--bg-alt:#f5f8fb;--radius:14px;--shadow:0 6px 22px rgba(15,42,74,.08);--shadow-lg:0 14px 40px rgba(15,42,74,.14);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);line-height:1.7;font-size:17px;max-width:1080px;margin:0 auto;padding:0 18px 60px;} .gcpa-post *{box-sizing:border-box;} .gcpa-hero{background:linear-gradient(135deg,var(--navy) 0%,var(--navy-2) 60%,#1c4a78 100%);color:#fff;border-radius:20px;padding:46px 40px 42px;margin:26px 0 34px;position:relative;overflow:hidden;} .gcpa-hero::after{content:"";position:absolute;right:-80px;top:-80px;width:280px;height:280px;z-index:0;background:radial-gradient(circle,rgba(28,109,208,.45),transparent 70%);} .gcpa-post .gcpa-eyebrow{display:inline-block;font-size:13px;letter-spacing:1.4px;text-transform:uppercase;font-weight:700;color:#cfe2f8 !important;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.3);padding:7px 15px;border-radius:30px;margin-bottom:18px;} .gcpa-post .gcpa-hero h1{font-size:34px;line-height:1.25;margin:0 0 16px;font-weight:800;color:#fff !important;letter-spacing:-.3px;position:relative;z-index:2;} .gcpa-post .gcpa-hero p{font-size:18px;color:#eaf3fc !important;margin:0;max-width:760px;position:relative;z-index:2;} .gcpa-eyebrow{position:relative;z-index:2;} .gcpa-post h2{font-size:27px;font-weight:800;color:var(--navy);line-height:1.3;margin:48px 0 18px;padding-bottom:14px;border-bottom:3px solid var(--blue-soft);letter-spacing:-.2px;position:relative;} .gcpa-post h2::after{content:"";position:absolute;left:0;bottom:-3px;width:70px;height:3px;background:var(--blue);} .gcpa-post h3{font-size:22px;font-weight:800;color:var(--navy-2);margin:40px 0 14px;line-height:1.35;} .gcpa-post h4{font-size:19px;font-weight:700;color:var(--navy-2);margin:36px 0 12px;line-height:1.4;padding-left:16px;border-left:4px solid var(--teal);} .gcpa-post p{margin:0 0 16px;color:#1d2733 !important;} .gcpa-post li{color:#1d2733;} .gcpa-post a{color:var(--blue);text-decoration:none;font-weight:600;} .gcpa-post a:hover{text-decoration:underline;} .gcpa-post ul,.gcpa-post ol{margin:0 0 18px !important;padding-left:0 !important;list-style:none !important;} .gcpa-post ul{list-style-type:none !important;} .gcpa-post ul li{position:relative;padding:8px 0 8px 34px;margin:0;border-bottom:1px solid var(--line);color:var(--ink);list-style:none !important;list-style-type:none !important;} .gcpa-post ul li::marker{content:"" !important;font-size:0 !important;} .gcpa-post ul li:last-child{border-bottom:none;} .gcpa-post ul li::before{content:"";position:absolute;left:6px;top:15px;width:9px;height:9px;border-radius:2px;background:var(--teal);transform:rotate(45deg);} .gcpa-post ol{counter-reset:gcpa;} .gcpa-post ol li{position:relative;padding:10px 0 10px 44px;margin:0 0 10px;counter-increment:gcpa;list-style:none !important;list-style-type:none !important;} .gcpa-post ol li::marker{content:"" !important;font-size:0 !important;} .gcpa-post ol li::before{content:counter(gcpa);position:absolute;left:0;top:9px;width:28px;height:28px;border-radius:8px;background:var(--navy);color:#fff;font-weight:700;font-size:14px;display:flex;align-items:center;justify-content:center;} .gcpa-post .wp-block-table,.gcpa-post figure.wp-block-table{margin:22px 0 26px;overflow-x:auto;} .gcpa-post table{width:100%;border-collapse:collapse;font-size:15.5px;background:#fff;border:1px solid var(--navy);border-radius:10px;overflow:hidden;box-shadow:var(--shadow);} .gcpa-post thead th{background:var(--navy);color:#fff;text-align:left;padding:13px 15px;font-weight:700;font-size:15px;border:1px solid var(--navy-2);} .gcpa-post tbody td{padding:12px 15px;border:1px solid var(--line);vertical-align:top;color:var(--ink);} .gcpa-post tbody tr:nth-child(even){background:var(--bg-alt);} .gcpa-post tbody tr:hover{background:var(--blue-soft);} .gcpa-post tbody td:first-child{font-weight:600;color:var(--navy-2);} .gcpa-metrics{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin:30px 0 36px;clear:both;} .gcpa-metric{background:#fff;border:1px solid var(--line);border-top:4px solid var(--blue);border-radius:var(--radius);padding:22px 18px;box-shadow:var(--shadow);transition:transform .2s,box-shadow .2s;} .gcpa-metric:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg);} .gcpa-metric:nth-child(2){border-top-color:var(--teal);} .gcpa-metric:nth-child(3){border-top-color:var(--gold);} .gcpa-metric:nth-child(4){border-top-color:var(--green);} .gcpa-metric .ic{width:46px;height:46px;border-radius:11px;background:var(--blue-soft);display:flex;align-items:center;justify-content:center;margin-bottom:14px;color:var(--blue);} .gcpa-metric:nth-child(2) .ic{background:var(--teal-soft);color:var(--teal);} .gcpa-metric:nth-child(3) .ic{background:var(--gold-soft);color:var(--gold);} .gcpa-metric:nth-child(4) .ic{background:var(--green-soft);color:var(--green);} .gcpa-metric .big{font-size:22px;font-weight:800;color:var(--navy);line-height:1.2;margin-bottom:4px;} .gcpa-metric .lbl{font-size:14px;color:var(--muted);line-height:1.45;} .gcpa-numhead{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin:46px 0 8px;clear:both;} .gcpa-numhead h4{margin:0 !important;} .gcpa-numhead .gcpa-pill{margin:0 !important;} .gcpa-numhead .num{flex:0 0 auto;width:48px;height:48px;border-radius:12px;background:var(--navy);color:#fff;font-size:22px;font-weight:800;display:flex;align-items:center;justify-content:center;box-shadow:var(--shadow);} .gcpa-callout{border-radius:var(--radius);padding:20px 22px;margin:22px 0;border:1px solid var(--line);background:var(--bg-alt);position:relative;} .gcpa-callout.blue{background:var(--blue-soft);border-color:#bcd9f6;} .gcpa-callout.teal{background:var(--teal-soft);border-color:#b7e3e3;} .gcpa-callout.gold{background:var(--gold-soft);border-color:#ecd79a;} .gcpa-callout.green{background:var(--green-soft);border-color:#b6e2c6;} .gcpa-callout.red{background:var(--red-soft);border-color:#f0c4be;} .gcpa-callout .co-tag{display:inline-block;font-size:12.5px;font-weight:700;letter-spacing:.6px;text-transform:uppercase;padding:4px 11px;border-radius:20px;margin-bottom:10px;color:#fff;} .gcpa-callout.blue .co-tag{background:var(--blue);} .gcpa-callout.teal .co-tag{background:var(--teal);} .gcpa-callout.gold .co-tag{background:var(--gold);} .gcpa-callout.green .co-tag{background:var(--green);} .gcpa-callout.red .co-tag{background:var(--red);} .gcpa-callout p:last-child{margin-bottom:0;} .gcpa-cta{background:linear-gradient(135deg,var(--navy) 0%,#1c4a78 100%);color:#fff;border-radius:18px;padding:34px 32px;margin:38px 0;text-align:center;box-shadow:var(--shadow-lg);position:relative;overflow:hidden;} .gcpa-cta::before{content:"";position:absolute;left:-60px;bottom:-60px;width:220px;height:220px;background:radial-gradient(circle,rgba(12,143,143,.4),transparent 70%);} .gcpa-post .gcpa-cta h4{color:#fff !important;border:none;padding:0;margin:0 0 12px;font-size:22px;font-weight:800;position:relative;z-index:1;} .gcpa-post .gcpa-cta p{color:#eaf3fc !important;max-width:680px;margin:0 auto 22px;position:relative;z-index:1;} .gcpa-post .gcpa-cta .btn{display:inline-block;background:#fff !important;color:var(--navy) !important;font-weight:700;padding:13px 26px;border-radius:30px;margin:6px;font-size:16px;position:relative;z-index:1;transition:transform .15s;text-decoration:none !important;} .gcpa-post .gcpa-cta .btn:hover{transform:translateY(-2px);text-decoration:none !important;} .gcpa-post .gcpa-cta .btn.primary{background:var(--teal) !important;color:#fff !important;} .gcpa-btnrow{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;align-items:center;position:relative;z-index:1;} .gcpa-trust{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-bottom:22px;position:relative;z-index:1;} .gcpa-post .gcpa-trust span{font-size:13px;font-weight:700;background:rgba(255,255,255,.18) !important;border:1px solid rgba(255,255,255,.45);padding:7px 14px;border-radius:20px;color:#ffffff !important;} .gcpa-post svg{display:block;} .gcpa-pill{display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:700;padding:8px 16px;border-radius:30px;margin:10px 0 6px;line-height:1.2;} .gcpa-pill svg{width:16px;height:16px;flex:0 0 auto;} .gcpa-pill.green{background:var(--green-soft);color:var(--green);border:1px solid #b6e2c6;} .gcpa-pill.blue{background:var(--blue-soft);color:var(--blue);border:1px solid #bcd9f6;} .gcpa-pill.teal{background:var(--teal-soft);color:var(--teal);border:1px solid #b7e3e3;} .gcpa-pill.gold{background:var(--gold-soft);color:#9a7416;border:1px solid #ecd79a;} .gcpa-pill.red{background:var(--red-soft);color:var(--red);border:1px solid #f0c4be;} .gcpa-pillhead{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin:38px 0 12px;clear:both;} .gcpa-pillhead h4{margin:0 !important;} .gcpa-pillhead .gcpa-pill{margin:0 !important;} @media(max-width:560px){.gcpa-pillhead{gap:8px;}} .gcpa-toc{background:var(--bg-alt);border:1px solid var(--line);border-left:5px solid var(--blue);border-radius:var(--radius);padding:24px 26px;margin:30px 0 36px;box-shadow:var(--shadow);} .gcpa-toc h5{margin:0 0 14px;font-size:16px;font-weight:800;color:var(--navy);letter-spacing:.4px;text-transform:uppercase;display:flex;align-items:center;gap:9px;} .gcpa-toc h5 svg{width:20px;height:20px;color:var(--blue);} .gcpa-toc ol{counter-reset:toc;margin:0 !important;padding:0 !important;columns:2;column-gap:36px;list-style:none !important;} .gcpa-toc ol li{counter-increment:toc;position:relative;padding:7px 0 7px 30px;margin:0;border-bottom:1px dashed var(--line);break-inside:avoid;list-style:none !important;} .gcpa-toc ol li::before{content:counter(toc);position:absolute;left:0;top:7px;width:21px;height:21px;border-radius:6px;background:var(--blue-soft);color:var(--blue);font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;} .gcpa-toc ol li::marker{content:"" !important;font-size:0 !important;} .gcpa-toc a{color:var(--navy-2);font-weight:600;font-size:15px;} .gcpa-toc a:hover{color:var(--blue);} .gcpa-post [id^="toc-"]{scroll-margin-top:90px;} .gcpa-banner{display:block;background:linear-gradient(135deg,#0d3b66 0%,#0c7a7a 100%);color:#fff;border-radius:16px;padding:30px 32px;margin:36px 0;box-shadow:var(--shadow-lg);} .gcpa-banner .bt{font-size:20px;font-weight:800;line-height:1.45;margin:0 0 20px;max-width:760px;} .gcpa-banner .bb{display:flex;flex-wrap:wrap;gap:14px;align-items:center;} .gcpa-banner a{display:inline-block;background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.6);color:#fff !important;font-weight:700;padding:13px 24px;border-radius:30px;font-size:15px;text-decoration:none !important;} .gcpa-banner a.solid{background:#ffffff !important;color:#0d3b66 !important;border-color:#fff;} .gcpa-disclaimer{background:var(--bg-alt);border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:34px 0 10px;font-size:14.5px;color:var(--muted);line-height:1.6;} .gcpa-disclaimer strong{color:var(--navy-2);} .gcpa-byline{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin:0 0 22px;font-size:15px;} .gcpa-byline .av{width:42px;height:42px;border-radius:50%;background:var(--navy);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:16px;flex:0 0 auto;} .gcpa-byline .nm{font-weight:700;color:var(--navy-2);} .gcpa-byline .rl{color:var(--teal);font-weight:700;} .gcpa-byline .sep{color:var(--line);} .gcpa-author{display:flex;gap:18px;align-items:flex-start;background:var(--bg-alt);border:1px solid var(--line);border-left:5px solid var(--teal);border-radius:14px;padding:24px 26px;margin:34px 0 40px;} .gcpa-author .ava{width:64px;height:64px;border-radius:50%;background:linear-gradient(135deg,var(--navy),var(--teal));color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:22px;flex:0 0 auto;} .gcpa-author .info h5{margin:0 0 6px;font-size:17px;font-weight:800;color:var(--navy);line-height:1.4;} .gcpa-author .info .role{font-size:14px;color:var(--teal);font-weight:700;margin:0 0 12px;} .gcpa-author .info p{font-size:14.5px;color:var(--muted) !important;margin:0;line-height:1.65;} .gcpa-faq{margin:18px 0 26px;border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:var(--shadow);} .gcpa-faq details{border-bottom:1px solid var(--line);background:#fff;} .gcpa-faq details:last-child{border-bottom:none;} .gcpa-faq summary{list-style:none;cursor:pointer;padding:18px 22px;font-weight:700;color:var(--navy-2);font-size:16px;display:flex;justify-content:space-between;align-items:center;gap:14px;transition:background .15s;} .gcpa-faq summary::-webkit-details-marker{display:none;} .gcpa-faq summary:hover{background:var(--bg-alt);} .gcpa-faq summary .pl{flex:0 0 auto;width:24px;height:24px;border-radius:50%;background:var(--blue-soft);color:var(--blue);display:flex;align-items:center;justify-content:center;font-size:18px;font-weight:700;transition:transform .2s;} .gcpa-faq details[open] summary{background:var(--bg-alt);color:var(--navy);} .gcpa-faq details[open] summary .pl{transform:rotate(45deg);background:var(--blue);color:#fff;} .gcpa-faq .ans{padding:0 22px 20px;color:#1d2733;font-size:15.5px;line-height:1.7;} .gcpa-img-right{float:right;max-width:250px;width:32%;margin:6px 0 24px 28px;border-radius:12px;box-shadow:var(--shadow-lg);border:1px solid var(--line);} .gcpa-img-right img{display:block;width:100%;height:auto;border-radius:12px;} @media(max-width:560px){.gcpa-img-right{float:none;width:70%;max-width:260px;margin:14px auto 18px;}} .gcpa-closing{font-size:24px;font-weight:800;color:var(--navy);margin:48px 0 14px;padding-bottom:12px;border-bottom:3px solid var(--teal-soft);position:relative;} .gcpa-closing::after{content:"";position:absolute;left:0;bottom:-3px;width:70px;height:3px;background:var(--teal);} @media(max-width:560px){.gcpa-post{font-size:16px;} .gcpa-hero{padding:32px 22px;} .gcpa-hero h1{font-size:26px;} .gcpa-post h2{font-size:23px;} .gcpa-cta{padding:26px 20px;} .gcpa-banner .bb{width:100%;} .gcpa-banner .bb a{flex:1 1 auto;text-align:center;}}</style>
-<script type="application/ld+json">
+
+<p><style>.gcpa-post{--navy:#0f2a4a;--navy-2:#15355c;--blue:#1c6dd0;--blue-soft:#e8f1fc;--teal:#0c8f8f;--teal-soft:#e3f4f4;--gold:#c9991f;--gold-soft:#fbf3dc;--green:#1f8a4c;--green-soft:#e6f5ec;--red:#c0392b;--red-soft:#fbeae8;--ink:#1d2733;--muted:#5a6b7b;--line:#d8e0e8;--bg:#ffffff;--bg-alt:#f5f8fb;--radius:14px;--shadow:0 6px 22px rgba(15,42,74,.08);--shadow-lg:0 14px 40px rgba(15,42,74,.14);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);line-height:1.7;font-size:17px;max-width:1080px;margin:0 auto;padding:0 18px 60px;} .gcpa-post *{box-sizing:border-box;} .gcpa-hero{background:linear-gradient(135deg,var(--navy) 0%,var(--navy-2) 60%,#1c4a78 100%);color:#fff;border-radius:20px;padding:46px 40px 42px;margin:26px 0 34px;position:relative;overflow:hidden;} .gcpa-hero::after{content:"";position:absolute;right:-80px;top:-80px;width:280px;height:280px;z-index:0;background:radial-gradient(circle,rgba(28,109,208,.45),transparent 70%);} .gcpa-post .gcpa-eyebrow{display:inline-block;font-size:13px;letter-spacing:1.4px;text-transform:uppercase;font-weight:700;color:#cfe2f8 !important;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.3);padding:7px 15px;border-radius:30px;margin-bottom:18px;} .gcpa-post .gcpa-hero h1{font-size:34px;line-height:1.25;margin:0 0 16px;font-weight:800;color:#fff !important;letter-spacing:-.3px;position:relative;z-index:2;} .gcpa-post .gcpa-hero p{font-size:18px;color:#eaf3fc !important;margin:0;max-width:760px;position:relative;z-index:2;} .gcpa-eyebrow{position:relative;z-index:2;} .gcpa-post h2{font-size:27px;font-weight:800;color:var(--navy);line-height:1.3;margin:48px 0 18px;padding-bottom:14px;border-bottom:3px solid var(--blue-soft);letter-spacing:-.2px;position:relative;} .gcpa-post h2::after{content:"";position:absolute;left:0;bottom:-3px;width:70px;height:3px;background:var(--blue);} .gcpa-post h3{font-size:22px;font-weight:800;color:var(--navy-2);margin:40px 0 14px;line-height:1.35;} .gcpa-post h4{font-size:19px;font-weight:700;color:var(--navy-2);margin:36px 0 12px;line-height:1.4;padding-left:16px;border-left:4px solid var(--teal);} .gcpa-post p{margin:0 0 16px;color:#1d2733 !important;} .gcpa-post li{color:#1d2733;} .gcpa-post a{color:var(--blue);text-decoration:none;font-weight:600;} .gcpa-post a:hover{text-decoration:underline;} .gcpa-post ul,.gcpa-post ol{margin:0 0 18px !important;padding-left:0 !important;list-style:none !important;} .gcpa-post ul{list-style-type:none !important;} .gcpa-post ul li{position:relative;padding:8px 0 8px 34px;margin:0;border-bottom:1px solid var(--line);color:var(--ink);list-style:none !important;list-style-type:none !important;} .gcpa-post ul li::marker{content:"" !important;font-size:0 !important;} .gcpa-post ul li:last-child{border-bottom:none;} .gcpa-post ul li::before{content:"";position:absolute;left:6px;top:15px;width:9px;height:9px;border-radius:2px;background:var(--teal);transform:rotate(45deg);} .gcpa-post ol{counter-reset:gcpa;} .gcpa-post ol li{position:relative;padding:10px 0 10px 44px;margin:0 0 10px;counter-increment:gcpa;list-style:none !important;list-style-type:none !important;} .gcpa-post ol li::marker{content:"" !important;font-size:0 !important;} .gcpa-post ol li::before{content:counter(gcpa);position:absolute;left:0;top:9px;width:28px;height:28px;border-radius:8px;background:var(--navy);color:#fff;font-weight:700;font-size:14px;display:flex;align-items:center;justify-content:center;} .gcpa-post .wp-block-table,.gcpa-post figure.wp-block-table{margin:22px 0 26px;overflow-x:auto;} .gcpa-post table{width:100%;border-collapse:collapse;font-size:15.5px;background:#fff;border:1px solid var(--navy);border-radius:10px;overflow:hidden;box-shadow:var(--shadow);} .gcpa-post thead th{background:var(--navy);color:#fff;text-align:left;padding:13px 15px;font-weight:700;font-size:15px;border:1px solid var(--navy-2);} .gcpa-post tbody td{padding:12px 15px;border:1px solid var(--line);vertical-align:top;color:var(--ink);} .gcpa-post tbody tr:nth-child(even){background:var(--bg-alt);} .gcpa-post tbody tr:hover{background:var(--blue-soft);} .gcpa-post tbody td:first-child{font-weight:600;color:var(--navy-2);} .gcpa-metrics{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin:30px 0 36px;clear:both;} .gcpa-metric{background:#fff;border:1px solid var(--line);border-top:4px solid var(--blue);border-radius:var(--radius);padding:22px 18px;box-shadow:var(--shadow);transition:transform .2s,box-shadow .2s;} .gcpa-metric:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg);} .gcpa-metric:nth-child(2){border-top-color:var(--teal);} .gcpa-metric:nth-child(3){border-top-color:var(--gold);} .gcpa-metric:nth-child(4){border-top-color:var(--green);} .gcpa-metric .ic{width:46px;height:46px;border-radius:11px;background:var(--blue-soft);display:flex;align-items:center;justify-content:center;margin-bottom:14px;color:var(--blue);} .gcpa-metric:nth-child(2) .ic{background:var(--teal-soft);color:var(--teal);} .gcpa-metric:nth-child(3) .ic{background:var(--gold-soft);color:var(--gold);} .gcpa-metric:nth-child(4) .ic{background:var(--green-soft);color:var(--green);} .gcpa-metric .big{font-size:22px;font-weight:800;color:var(--navy);line-height:1.2;margin-bottom:4px;} .gcpa-metric .lbl{font-size:14px;color:var(--muted);line-height:1.45;} .gcpa-numhead{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin:46px 0 8px;clear:both;} .gcpa-numhead h4{margin:0 !important;} .gcpa-numhead .gcpa-pill{margin:0 !important;} .gcpa-numhead .num{flex:0 0 auto;width:48px;height:48px;border-radius:12px;background:var(--navy);color:#fff;font-size:22px;font-weight:800;display:flex;align-items:center;justify-content:center;box-shadow:var(--shadow);} .gcpa-callout{border-radius:var(--radius);padding:20px 22px;margin:22px 0;border:1px solid var(--line);background:var(--bg-alt);position:relative;} .gcpa-callout.blue{background:var(--blue-soft);border-color:#bcd9f6;} .gcpa-callout.teal{background:var(--teal-soft);border-color:#b7e3e3;} .gcpa-callout.gold{background:var(--gold-soft);border-color:#ecd79a;} .gcpa-callout.green{background:var(--green-soft);border-color:#b6e2c6;} .gcpa-callout.red{background:var(--red-soft);border-color:#f0c4be;} .gcpa-callout .co-tag{display:inline-block;font-size:12.5px;font-weight:700;letter-spacing:.6px;text-transform:uppercase;padding:4px 11px;border-radius:20px;margin-bottom:10px;color:#fff;} .gcpa-callout.blue .co-tag{background:var(--blue);} .gcpa-callout.teal .co-tag{background:var(--teal);} .gcpa-callout.gold .co-tag{background:var(--gold);} .gcpa-callout.green .co-tag{background:var(--green);} .gcpa-callout.red .co-tag{background:var(--red);} .gcpa-callout p:last-child{margin-bottom:0;} .gcpa-cta{background:linear-gradient(135deg,var(--navy) 0%,#1c4a78 100%);color:#fff;border-radius:18px;padding:34px 32px;margin:38px 0;text-align:center;box-shadow:var(--shadow-lg);position:relative;overflow:hidden;} .gcpa-cta::before{content:"";position:absolute;left:-60px;bottom:-60px;width:220px;height:220px;background:radial-gradient(circle,rgba(12,143,143,.4),transparent 70%);} .gcpa-post .gcpa-cta h4{color:#fff !important;border:none;padding:0;margin:0 0 12px;font-size:22px;font-weight:800;position:relative;z-index:1;} .gcpa-post .gcpa-cta p{color:#eaf3fc !important;max-width:680px;margin:0 auto 22px;position:relative;z-index:1;} .gcpa-post .gcpa-cta .btn{display:inline-block;background:#fff !important;color:var(--navy) !important;font-weight:700;padding:13px 26px;border-radius:30px;margin:6px;font-size:16px;position:relative;z-index:1;transition:transform .15s;text-decoration:none !important;} .gcpa-post .gcpa-cta .btn:hover{transform:translateY(-2px);text-decoration:none !important;} .gcpa-post .gcpa-cta .btn.primary{background:var(--teal) !important;color:#fff !important;} .gcpa-btnrow{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;align-items:center;position:relative;z-index:1;} .gcpa-trust{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-bottom:22px;position:relative;z-index:1;} .gcpa-post .gcpa-trust span{font-size:13px;font-weight:700;background:rgba(255,255,255,.18) !important;border:1px solid rgba(255,255,255,.45);padding:7px 14px;border-radius:20px;color:#ffffff !important;} .gcpa-post svg{display:block;} .gcpa-pill{display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:700;padding:8px 16px;border-radius:30px;margin:10px 0 6px;line-height:1.2;} .gcpa-pill svg{width:16px;height:16px;flex:0 0 auto;} .gcpa-pill.green{background:var(--green-soft);color:var(--green);border:1px solid #b6e2c6;} .gcpa-pill.blue{background:var(--blue-soft);color:var(--blue);border:1px solid #bcd9f6;} .gcpa-pill.teal{background:var(--teal-soft);color:var(--teal);border:1px solid #b7e3e3;} .gcpa-pill.gold{background:var(--gold-soft);color:#9a7416;border:1px solid #ecd79a;} .gcpa-pill.red{background:var(--red-soft);color:var(--red);border:1px solid #f0c4be;} .gcpa-pillhead{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin:38px 0 12px;clear:both;} .gcpa-pillhead h4{margin:0 !important;} .gcpa-pillhead .gcpa-pill{margin:0 !important;} @media(max-width:560px){.gcpa-pillhead{gap:8px;}} .gcpa-toc{background:var(--bg-alt);border:1px solid var(--line);border-left:5px solid var(--blue);border-radius:var(--radius);padding:24px 26px;margin:30px 0 36px;box-shadow:var(--shadow);} .gcpa-toc h5{margin:0 0 14px;font-size:16px;font-weight:800;color:var(--navy);letter-spacing:.4px;text-transform:uppercase;display:flex;align-items:center;gap:9px;} .gcpa-toc h5 svg{width:20px;height:20px;color:var(--blue);} .gcpa-toc ol{counter-reset:toc;margin:0 !important;padding:0 !important;columns:2;column-gap:36px;list-style:none !important;} .gcpa-toc ol li{counter-increment:toc;position:relative;padding:7px 0 7px 30px;margin:0;border-bottom:1px dashed var(--line);break-inside:avoid;list-style:none !important;} .gcpa-toc ol li::before{content:counter(toc);position:absolute;left:0;top:7px;width:21px;height:21px;border-radius:6px;background:var(--blue-soft);color:var(--blue);font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;} .gcpa-toc ol li::marker{content:"" !important;font-size:0 !important;} .gcpa-toc a{color:var(--navy-2);font-weight:600;font-size:15px;} .gcpa-toc a:hover{color:var(--blue);} .gcpa-post [id^="toc-"]{scroll-margin-top:90px;} .gcpa-banner{display:block;background:linear-gradient(135deg,#0d3b66 0%,#0c7a7a 100%);color:#fff;border-radius:16px;padding:30px 32px;margin:36px 0;box-shadow:var(--shadow-lg);} .gcpa-banner .bt{font-size:20px;font-weight:800;line-height:1.45;margin:0 0 20px;max-width:760px;} .gcpa-banner .bb{display:flex;flex-wrap:wrap;gap:14px;align-items:center;} .gcpa-banner a{display:inline-block;background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.6);color:#fff !important;font-weight:700;padding:13px 24px;border-radius:30px;font-size:15px;text-decoration:none !important;} .gcpa-banner a.solid{background:#ffffff !important;color:#0d3b66 !important;border-color:#fff;} .gcpa-disclaimer{background:var(--bg-alt);border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:34px 0 10px;font-size:14.5px;color:var(--muted);line-height:1.6;} .gcpa-disclaimer strong{color:var(--navy-2);} .gcpa-byline{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin:0 0 22px;font-size:15px;} .gcpa-byline .av{width:42px;height:42px;border-radius:50%;background:var(--navy);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:16px;flex:0 0 auto;} .gcpa-byline .nm{font-weight:700;color:var(--navy-2);} .gcpa-byline .rl{color:var(--teal);font-weight:700;} .gcpa-byline .sep{color:var(--line);} .gcpa-author{display:flex;gap:18px;align-items:flex-start;background:var(--bg-alt);border:1px solid var(--line);border-left:5px solid var(--teal);border-radius:14px;padding:24px 26px;margin:34px 0 40px;} .gcpa-author .ava{width:64px;height:64px;border-radius:50%;background:linear-gradient(135deg,var(--navy),var(--teal));color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:22px;flex:0 0 auto;} .gcpa-author .info h5{margin:0 0 6px;font-size:17px;font-weight:800;color:var(--navy);line-height:1.4;} .gcpa-author .info .role{font-size:14px;color:var(--teal);font-weight:700;margin:0 0 12px;} .gcpa-author .info p{font-size:14.5px;color:var(--muted) !important;margin:0;line-height:1.65;} .gcpa-faq{margin:18px 0 26px;border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:var(--shadow);} .gcpa-faq details{border-bottom:1px solid var(--line);background:#fff;} .gcpa-faq details:last-child{border-bottom:none;} .gcpa-faq summary{list-style:none;cursor:pointer;padding:18px 22px;font-weight:700;color:var(--navy-2);font-size:16px;display:flex;justify-content:space-between;align-items:center;gap:14px;transition:background .15s;} .gcpa-faq summary::-webkit-details-marker{display:none;} .gcpa-faq summary:hover{background:var(--bg-alt);} .gcpa-faq summary .pl{flex:0 0 auto;width:24px;height:24px;border-radius:50%;background:var(--blue-soft);color:var(--blue);display:flex;align-items:center;justify-content:center;font-size:18px;font-weight:700;transition:transform .2s;} .gcpa-faq details[open] summary{background:var(--bg-alt);color:var(--navy);} .gcpa-faq details[open] summary .pl{transform:rotate(45deg);background:var(--blue);color:#fff;} .gcpa-faq .ans{padding:0 22px 20px;color:#1d2733;font-size:15.5px;line-height:1.7;} .gcpa-img-right{float:right;max-width:250px;width:32%;margin:6px 0 24px 28px;border-radius:12px;box-shadow:var(--shadow-lg);border:1px solid var(--line);} .gcpa-img-right img{display:block;width:100%;height:auto;border-radius:12px;} @media(max-width:560px){.gcpa-img-right{float:none;width:70%;max-width:260px;margin:14px auto 18px;}} .gcpa-closing{font-size:24px;font-weight:800;color:var(--navy);margin:48px 0 14px;padding-bottom:12px;border-bottom:3px solid var(--teal-soft);position:relative;} .gcpa-closing::after{content:"";position:absolute;left:0;bottom:-3px;width:70px;height:3px;background:var(--teal);} @media(max-width:560px){.gcpa-post{font-size:16px;} .gcpa-hero{padding:32px 22px;} .gcpa-hero h1{font-size:26px;} .gcpa-post h2{font-size:23px;} .gcpa-cta{padding:26px 20px;} .gcpa-banner .bb{width:100%;} .gcpa-banner .bb a{flex:1 1 auto;text-align:center;}}</style> <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Organization","name":"Open Corporation for $35","alternateName":"Open Corporation For $35","url":"https://opencorporationfor35.ca/","description":"Open Corporation for $35 is a department of Gondaliya CPA.","parentOrganization":{"@type":"Organization","name":"Gondaliya CPA Professional Corporation","url":"https://gondaliyacpa.ca","identifier":"CPA Ontario Firm Registration 61330051"},"legalName":"WealthBamboo Inc.","telephone":"+1-647-212-9559","email":"info@gondaliyacpa.ca","areaServed":"CA","openingHours":"Mo-Su 09:00-20:30","award":"Xero Partner Award Winner 2026","aggregateRating":{"@type":"AggregateRating","ratingValue":"5","reviewCount":"1300"}}
-</script>
+</script></p>
 <div class="gcpa-post">
-<div class="gcpa-hero" style="background:linear-gradient(135deg,#0f2a4a 0%,#15355c 60%,#1c4a78 100%) !important;">
-<span class="gcpa-eyebrow">Non-Residents · GST/HST · Form RC1 · Digital Sellers · 2026</span>
-<h1 style="color:#ffffff !important;position:relative;z-index:2;font-size:34px;line-height:1.25;font-weight:800;margin:0 0 14px;">GST/HST Registration for Foreign Businesses Selling into Canada</h1>
-<div class="gcpa-hero-sub" style="margin:0 0 18px;"><span style="color:#eaf3fc !important;font-size:18px;line-height:1.6;display:block;max-width:840px;position:relative;z-index:2;">When a foreign business must register, regular versus simplified registration, security deposits, and what you file once you have a Canadian GST/HST number</span></div>
-<div style="position:relative;z-index:2;font-size:15px;line-height:1.5;"><span style="color:#ffffff;font-weight:bold;">By Sharad Gondaliya, CPA</span><span style="color:#9fd0d0;font-weight:bold;">  |  <a href="https://opencorporationfor35.ca/">Open Corporation For $35</a> and <a href="https://opencorporationfor35.ca/address-service-100/">Address Service</a></span></div>
-<div style="position:relative;z-index:2;font-size:14.5px;line-height:1.5;margin-top:12px;"><span style="color:#cfe2f8 !important;font-weight:600;">Open Corporation for $35 is a department of Gondaliya CPA.</span></div>
+<div class="gcpa-hero" style="background: linear-gradient(135deg,#0f2a4a 0%,#15355c 60%,#1c4a78 100%) !important;"><span class="gcpa-eyebrow">Non-Residents · GST/HST · Form RC1 · Digital Sellers · 2026</span>
+<h1 style="color: #ffffff !important; position: relative; z-index: 2; font-size: 34px; line-height: 1.25; font-weight: 800; margin: 0 0 14px;">GST/HST Registration for Foreign Businesses Selling into Canada</h1>
+<div class="gcpa-hero-sub" style="margin: 0 0 18px;"><span style="color: #eaf3fc !important; font-size: 18px; line-height: 1.6; display: block; max-width: 840px; position: relative; z-index: 2;">When a foreign business must register, regular versus simplified registration, security deposits, and what you file once you have a Canadian GST/HST number</span></div>
+<div style="position: relative; z-index: 2; font-size: 15px; line-height: 1.5;"><span style="color: #ffffff; font-weight: bold;">By Sharad Gondaliya, CPA</span><span style="color: #9fd0d0; font-weight: bold;"> | <a href="https://opencorporationfor35.ca/">Open Corporation For $35</a> and <a href="https://opencorporationfor35.ca/address-service-100/">Address Service</a></span></div>
+<div style="position: relative; z-index: 2; font-size: 14.5px; line-height: 1.5; margin-top: 12px;"><span style="color: #cfe2f8 !important; font-weight: 600;">Open Corporation for $35 is a department of Gondaliya CPA.</span></div>
 </div>
 <h2>Foreign Business GST Registration Canada: Simplified Non-Resident GST/HST Registration with Open Corporation for $35</h2>
 <p><strong>Open Corporation for $35 is a department of Gondaliya CPA.</strong> Foreign business GST registration Canada is straightforward with Open Corporation for $35, offering efficient <a href="https://opencorporationfor35.ca/guides/hst-registration-guide/">non-resident GST/HST registration</a> services. Our process supports foreign companies in meeting Canadian tax requirements quickly through simplified GST/HST registration options tailored for international businesses.</p>
-<h3 id="toc-summary" style="margin-top:38px;">Quick Summary</h3>
+<h3 id="toc-summary" style="margin-top: 38px;">Quick Summary</h3>
 <p>A foreign business that carries on business in Canada registers under the regular regime once its taxable supplies pass $30,000. A foreign digital seller with no Canadian business registers under the simplified regime once its sales to Canadian consumers pass $30,000 in 12 months. Regular registrants without a permanent establishment usually post security.</p>
 <figure class="wp-block-table">
 <table>
-<thead><tr><th>Aspect</th><th>Details</th></tr></thead>
+<thead>
+<tr>
+<th>Aspect</th>
+<th>Details</th>
+</tr>
+</thead>
 <tbody>
-<tr><td>Registration threshold</td><td>$30,000 of taxable supplies, regular or simplified.</td></tr>
-<tr><td>Regular regime</td><td>Form RC1 by mail or fax. Input tax credits allowed.</td></tr>
-<tr><td>Simplified regime</td><td>Online portal, quarterly returns, no input tax credits.</td></tr>
-<tr><td>Security deposit</td><td>Generally 50% of first-year net tax, minimum $5,000, maximum $1,000,000.</td></tr>
-<tr><td>Rates</td><td>5% GST, 13% HST in Ontario, 9.975% QST in Quebec on top of GST.</td></tr>
-<tr><td>Voluntary backdating</td><td>Up to 30 days.</td></tr>
-<tr><td>Records</td><td>Keep for six years.</td></tr>
-<tr><td>Our fees</td><td>See our <a href="https://opencorporationfor35.ca/pricing/">pricing page</a>; the first consultation is free.</td></tr>
+<tr>
+<td>Registration threshold</td>
+<td>$30,000 of taxable supplies, regular or simplified.</td>
+</tr>
+<tr>
+<td>Regular regime</td>
+<td>Form RC1 by mail or fax. Input tax credits allowed.</td>
+</tr>
+<tr>
+<td>Simplified regime</td>
+<td>Online portal, quarterly returns, no input tax credits.</td>
+</tr>
+<tr>
+<td>Security deposit</td>
+<td>Generally 50% of first-year net tax, minimum $5,000, maximum $1,000,000.</td>
+</tr>
+<tr>
+<td>Rates</td>
+<td>5% GST, 13% HST in Ontario, 9.975% QST in Quebec on top of GST.</td>
+</tr>
+<tr>
+<td>Voluntary backdating</td>
+<td>Up to 30 days.</td>
+</tr>
+<tr>
+<td>Records</td>
+<td>Keep for six years.</td>
+</tr>
+<tr>
+<td>Our fees</td>
+<td>See our <a href="https://opencorporationfor35.ca/pricing/">pricing page</a>; the first consultation is free.</td>
+</tr>
 </tbody>
 </table>
 </figure>
 <div class="gcpa-author">
-<div class="ava" style="background:linear-gradient(135deg,#0f2a4a,#0c8f8f) !important;color:#ffffff !important;">SG</div>
+<div class="ava" style="background: linear-gradient(135deg,#0f2a4a,#0c8f8f) !important; color: #ffffff !important;">SG</div>
 <div class="info">
 <h5>Author: Sharad Gondaliya, CPA (Canada &amp; USA) — Founder &amp; Managing Director, Gondaliya CPA Professional Corporation, Toronto, Ontario.</h5>
 <div class="role">Reviewed and fact-checked by Sharad Gondaliya, CPA (Canada &amp; USA)</div>
-<p style="font-size:14.5px;color:#15355c !important;font-weight:700;margin:0 0 8px;">Open Corporation for $35 is a department of Gondaliya CPA.</p>
+<p style="font-size: 14.5px; color: #15355c !important; font-weight: bold; margin: 0 0 8px;">Open Corporation for $35 is a department of Gondaliya CPA.</p>
 <p>Gondaliya CPA is a Toronto-based team providing incorporation, CRA registrations, corporate tax, bookkeeping, GST/HST, and payroll for Canadian corporations. Verify our firm on the <a href="https://www.cpaontario.ca/protecting-the-public/directories/firm/gondaliya-5sqvmj">CPA Ontario public firm directory</a>, firm registration 61330051.</p>
-<p style="font-size:13.5px;color:#15355c !important;font-weight:700;margin-top:10px;">CPA Ontario | CPA USA (Washington &amp; Montana) | Xero Partner Award Winner 2026 | 1300+ 5-star Google reviews</p>
+<p style="font-size: 13.5px; color: #15355c !important; font-weight: bold; margin-top: 10px;">CPA Ontario | CPA USA (Washington &amp; Montana) | Xero Partner Award Winner 2026 | 1300+ 5-star Google reviews</p>
 </div>
 </div>
-<p style="font-size:14px;color:#5a6b7b;margin:-26px 0 26px;">Reading time: 31 minutes.</p>
+<p style="font-size: 14px; color: #5a6b7b; margin: -26px 0 26px;">Reading time: 31 minutes.</p>
 <div class="gcpa-toc">
 <h5>Table of Contents</h5>
 <ol>
@@ -56,37 +84,34 @@
 <span class="gcpa-pill green">The Numbers That Matter</span>
 <div class="gcpa-metrics">
 <div class="gcpa-metric">
-<div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+<div class="ic"> </div>
 <div class="big">$30,000</div>
 <div class="lbl">Registration threshold, regular or simplified</div>
 </div>
 <div class="gcpa-metric">
-<div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
+<div class="ic"> </div>
 <div class="big">$5,000</div>
 <div class="lbl">Minimum security deposit for a non-resident</div>
 </div>
 <div class="gcpa-metric">
-<div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="M19 9l-5 5-4-4-3 3"/></svg></div>
+<div class="ic"> </div>
 <div class="big">13%</div>
 <div class="lbl">HST on sales to Ontario customers</div>
 </div>
 <div class="gcpa-metric">
-<div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></div>
+<div class="ic"> </div>
 <div class="big">6 years</div>
 <div class="lbl">How long to keep GST/HST records</div>
 </div>
 </div>
-<div class="gcpa-callout blue">
-<span class="co-tag">Scope &amp; Assumptions</span>
+<div class="gcpa-callout blue"><span class="co-tag">Scope &amp; Assumptions</span>
 <p>This article covers federal GST/HST rules for non-residents as they stand in November 2026, in Canadian dollars. Quebec's QST is administered separately by Revenu Québec, and customs rules belong to the CBSA. This is educational information only and not tax, legal, or financial advice. Please speak with a CPA about your facts before you register.</p>
 </div>
-
 <h2>Register for a GST/HST Account as a Foreign Business</h2>
 <div class="gcpa-numhead">
-<div class="num" style="background:#0f2a4a !important;color:#ffffff !important;">1</div>
-<h4 id="toc-basics" style="border:none;padding:0;margin:0;">GST/HST for Foreign Businesses</h4>
-<span class="gcpa-pill blue">The Basics</span>
-</div>
+<div class="num" style="background: #0f2a4a !important; color: #ffffff !important;">1</div>
+<h4 id="toc-basics" style="border: none; padding: 0; margin: 0;">GST/HST for Foreign Businesses</h4>
+<span class="gcpa-pill blue">The Basics</span></div>
 <p>If you run a foreign business and want to sell stuff in Canada, you need to understand GST and HST registration. The rules for <a href="https://opencorporationfor35.ca/open-a-corporation-in-canada-as-a-non-resident-step-by-step-guide/">foreign business GST registration in Canada</a> can be tricky but knowing them helps you avoid problems.</p>
 <h3>Understanding GST/HST and Its Application to Non-Resident Businesses</h3>
 <p>GST is a federal tax. It adds 5% to most goods and services sold in Canada. In Ontario, GST joins with provincial tax to make HST, which totals 13%. Quebec has its own tax called QST, set at 9.975%, which makes 14.975% together with the 5% GST. These taxes work differently depending on who you sell to — customers or other registered businesses.</p>
@@ -100,8 +125,7 @@
 <p>These rules tell you if you must sign up under Canadian laws.</p>
 <h3>The Small Supplier Threshold and Its Impact on Registration Requirements</h3>
 <p>The small supplier threshold is key. If your taxable revenue goes above $30,000 in any 12-month span, you can’t stay exempt. You have to register either under the regular system or use simplified options made for digital sellers.</p>
-<div class="gcpa-callout teal">
-<span class="co-tag">Key Stat</span>
+<div class="gcpa-callout teal"><span class="co-tag">Key Stat</span>
 <p><strong>$30,000:</strong> the same threshold triggers both regimes. Under the regular regime it counts all your taxable supplies, including zero-rated ones; under the simplified regime it counts sales to Canadian consumers over 12 months.</p>
 </div>
 <h3>Simplified GST/HST Registration Options for Foreign Companies</h3>
@@ -109,23 +133,39 @@
 <h3>Differences Between GST, HST, PST, and QST for Foreign Sellers</h3>
 <figure class="wp-block-table">
 <table>
-<thead><tr><th>Type of Tax</th><th>Rate</th><th>Where It Applies</th></tr></thead>
+<thead>
+<tr>
+<th>Type of Tax</th>
+<th>Rate</th>
+<th>Where It Applies</th>
+</tr>
+</thead>
 <tbody>
-<tr><td>Federal GST</td><td>5%</td><td>Applies across Canada on most goods</td></tr>
-<tr><td>Ontario HST</td><td>13%</td><td>Combines federal plus provincial tax</td></tr>
-<tr><td>Quebec QST</td><td>9.975% (14.975% with GST)</td><td>Added charge only inside Quebec</td></tr>
+<tr>
+<td>Federal GST</td>
+<td>5%</td>
+<td>Applies across Canada on most goods</td>
+</tr>
+<tr>
+<td>Ontario HST</td>
+<td>13%</td>
+<td>Combines federal plus provincial tax</td>
+</tr>
+<tr>
+<td>Quebec QST</td>
+<td>9.975% (14.975% with GST)</td>
+<td>Added charge only inside Quebec</td>
+</tr>
 </tbody>
 </table>
 </figure>
 <p>Every province handles these taxes differently. Knowing where your customers live helps figure out which rate applies.</p>
 <p>If foreign businesses get these basics right about non-resident GST/HST registration, they’ll be ready before entering Canada’s market and won’t break local tax rules.</p>
-
 <h2>Before You Register for GST/HST in Canada</h2>
 <div class="gcpa-numhead">
-<div class="num" style="background:#0f2a4a !important;color:#ffffff !important;">2</div>
-<h4 id="toc-before" style="border:none;padding:0;margin:0;">Before You Register</h4>
-<span class="gcpa-pill teal">Eligibility</span>
-</div>
+<div class="num" style="background: #0f2a4a !important; color: #ffffff !important;">2</div>
+<h4 id="toc-before" style="border: none; padding: 0; margin: 0;">Before You Register</h4>
+<span class="gcpa-pill teal">Eligibility</span></div>
 <h3>Determining If You Are Carrying On Business in Canada</h3>
 <p>If you're a foreign business, you need to figure out if you're carrying on business in Canada. This helps decide if you must register for non-resident GST/HST registration. The Canada Revenue Agency (CRA) looks at many things like having contracts with Canadian customers, owning inventory or staff in Canada, or using agents inside the country. No single thing proves you're carrying on business; it’s about a mix of activities.</p>
 <p>Here’s what to check:</p>
@@ -147,10 +187,27 @@
 <p>You calculate by adding all taxable supply revenue, including zero-rated sales, and skipping exempt sales.</p>
 <figure class="wp-block-table">
 <table>
-<thead><tr><th>Threshold Type</th><th>Amount (CAD)</th><th>Period Covered</th><th>Source</th></tr></thead>
+<thead>
+<tr>
+<th>Threshold Type</th>
+<th>Amount (CAD)</th>
+<th>Period Covered</th>
+<th>Source</th>
+</tr>
+</thead>
 <tbody>
-<tr><td>Small Supplier Threshold</td><td>30,000</td><td>Four consecutive quarters</td><td>Excise Tax Act s.148(1)(a)</td></tr>
-<tr><td>Simplified Regime Threshold</td><td>30,000</td><td>Twelve-month rolling period</td><td>CRA Digital Economy Notices</td></tr>
+<tr>
+<td>Small Supplier Threshold</td>
+<td>30,000</td>
+<td>Four consecutive quarters</td>
+<td>Excise Tax Act s.148(1)(a)</td>
+</tr>
+<tr>
+<td>Simplified Regime Threshold</td>
+<td>30,000</td>
+<td>Twelve-month rolling period</td>
+<td>CRA Digital Economy Notices</td>
+</tr>
 </tbody>
 </table>
 </figure>
@@ -159,6 +216,7 @@
 <p>Voluntary registrants must file fully even with lower revenue[6]. This option is good if you expect growth beyond thresholds or want formal recognition by CRA now.</p>
 <p>Voluntary non-resident GST/HST registration allows claiming input tax credits not available under simplified rules but requires more complex filings and security deposits unless exempt.</p>
 <h3>Security Deposit Requirements and Exceptions for Non-Residents</h3>
+<figure style="margin:22px 0;"><img src="https://opencorporationfor35.ca/wp-content/uploads/2026/11/foreign-gst-security-deposit.png" alt="Non-resident GST/HST security deposit: generally 50% of first-year net tax, minimum $5,000, maximum $1,000,000; none if taxable supplies are $1,500,000 or less and net tax $3,000 or less, or under the simplified regime." style="width:100%;border-radius:12px;border:1px solid #d8e0e8;" /><figcaption style="font-size:13px;color:#5a6b7b;text-align:center;padding:6px;">Budget for the deposit before you send Form RC1.</figcaption></figure>
 <p>Non-residents who register under regular rules usually need to post security deposits to cover possible unpaid taxes plus interest under section 240(6) of the Excise Tax Act[7]. The deposit is generally 50% of the estimated net tax for the first year, with a minimum of $5,000 and a maximum of $1,000,000.</p>
 <p>There are exceptions:</p>
 <ul>
@@ -169,30 +227,49 @@
 <p>These deposits protect the government since it’s harder to collect from overseas businesses that don’t comply.</p>
 <figure class="wp-block-table">
 <table>
-<thead><tr><th>Situation</th><th>Security Deposit Required?</th><th>Basis/Calculation</th><th>Authority</th></tr></thead>
+<thead>
+<tr>
+<th>Situation</th>
+<th>Security Deposit Required?</th>
+<th>Basis/Calculation</th>
+<th>Authority</th>
+</tr>
+</thead>
 <tbody>
-<tr><td>Regular regime non-resident</td><td>Yes</td><td>Estimated net annual taxes</td><td>Excise Tax Act s.240(6)</td></tr>
-<tr><td>Simplified regime registrant</td><td>No</td><td>N/A</td><td>CRA Digital Economy Notices</td></tr>
-<tr><td>Small non-resident (supplies up to $1,500,000, net tax up to $3,000)</td><td>No</td><td>Size of supplies and net tax</td><td>Excise Tax Act s.240(6)</td></tr>
+<tr>
+<td>Regular regime non-resident</td>
+<td>Yes</td>
+<td>Estimated net annual taxes</td>
+<td>Excise Tax Act s.240(6)</td>
+</tr>
+<tr>
+<td>Simplified regime registrant</td>
+<td>No</td>
+<td>N/A</td>
+<td>CRA Digital Economy Notices</td>
+</tr>
+<tr>
+<td>Small non-resident (supplies up to $1,500,000, net tax up to $3,000)</td>
+<td>No</td>
+<td>Size of supplies and net tax</td>
+<td>Excise Tax Act s.240(6)</td>
+</tr>
 </tbody>
 </table>
 </figure>
 <p>Most foreign businesses registering normally will face deposit rules unless they qualify for exceptions—check with experts first.</p>
-<div class="gcpa-callout red">
-<span class="co-tag">Risk Warning</span>
+<div class="gcpa-callout red"><span class="co-tag">Risk Warning</span>
 <p><strong>Risk Warning:</strong> The CRA will not finish a regular non-resident registration until the security is posted. Please budget for the deposit, generally at least $5,000, before you apply, so your registration and first invoices are not held up.</p>
 </div>
 <h3>Business Number (BN) and Its Role in GST/HST Registration</h3>
 <p>A Business Number (BN) from CRA identifies your company’s federal accounts like GST/HST across provinces[9]. When registering for GST/HST as a foreign business using Form RC1, you get an RT account suffix (“RT0001”) linked to your BN specifically for Canadian GST/HST[10].</p>
 <p>With this BN, you file returns and pay taxes properly based on each province’s rate—for example, Ontario’s HST is 13%[11].</p>
 <p>Open Corporation for $35 is part of Gondaliya CPA and can help <a href="https://opencorporationfor35.ca/business-number-cra-account-registration/">get BNs fast</a> plus guide ongoing compliance steps.</p>
-
 <h2>How to Register for GST/HST as a Foreign Business</h2>
 <div class="gcpa-numhead">
-<div class="num" style="background:#0f2a4a !important;color:#ffffff !important;">3</div>
-<h4 id="toc-how" style="border:none;padding:0;margin:0;">How to Register</h4>
-<span class="gcpa-pill gold">Registration</span>
-</div>
+<div class="num" style="background: #0f2a4a !important; color: #ffffff !important;">3</div>
+<h4 id="toc-how" style="border: none; padding: 0; margin: 0;">How to Register</h4>
+<span class="gcpa-pill gold">Registration</span></div>
 <p>If your business is outside Canada but sells goods or services there, you need to think about non-resident GST/HST registration. This registration makes sure you follow Canadian tax rules and charge the right taxes on your sales in Canada. Open Corporation for $35 helps foreign companies with GST registration Canada, offering <a href="https://opencorporationfor35.ca/services/">affordable advice</a> through Gondaliya CPA.</p>
 <h3>Registration Methods for Non-Resident GST/HST Accounts</h3>
 <p>Non-resident businesses have two main ways to register: the regular GST/HST registration or the simplified GST/HST registration Canada program.</p>
@@ -235,21 +312,47 @@
 <p>Backdating a voluntary registration can go back up to 30 days if you have good reasons, like not knowing about the need sooner. You must include proof when applying for this.</p>
 <p>Registering on time keeps you safe from penalties for taxes owed since your first taxable sale that went over thresholds.</p>
 <h3>Differences Between Regular and Simplified Registration Processes</h3>
+<figure style="margin:22px 0;"><img src="https://opencorporationfor35.ca/wp-content/uploads/2026/11/foreign-gst-regular-vs-simplified.png" alt="Regular versus simplified GST/HST registration: regular for businesses carrying on business in Canada, Form RC1 by mail or fax, input tax credits allowed, security usually required; simplified for digital sellers to consumers, online, quarterly, no input tax credits, no security; both at $30,000." style="width:100%;border-radius:12px;border:1px solid #d8e0e8;" /><figcaption style="font-size:13px;color:#5a6b7b;text-align:center;padding:6px;">Stock in a Canadian warehouse points to the regular regime.</figcaption></figure>
 <figure class="wp-block-table">
 <table>
-<thead><tr><th>Feature</th><th>Regular Regime</th><th>Simplified Regime</th></tr></thead>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Regular Regime</th>
+<th>Simplified Regime</th>
+</tr>
+</thead>
 <tbody>
-<tr><td>Eligibility</td><td>Doing business &gt; $30K</td><td>Digital sellers &gt; $30K consumer sales</td></tr>
-<tr><td>Input Tax Credits</td><td>Allowed</td><td>Not allowed</td></tr>
-<tr><td>Filing Frequency</td><td>Monthly/Quarterly/Yearly</td><td>Quarterly only</td></tr>
-<tr><td>Security Deposit Requirement</td><td>Sometimes required</td><td>Usually not required</td></tr>
-<tr><td>Customer Type</td><td>Businesses &amp; Consumers</td><td>Consumers only</td></tr>
+<tr>
+<td>Eligibility</td>
+<td>Doing business &gt; $30K</td>
+<td>Digital sellers &gt; $30K consumer sales</td>
+</tr>
+<tr>
+<td>Input Tax Credits</td>
+<td>Allowed</td>
+<td>Not allowed</td>
+</tr>
+<tr>
+<td>Filing Frequency</td>
+<td>Monthly/Quarterly/Yearly</td>
+<td>Quarterly only</td>
+</tr>
+<tr>
+<td>Security Deposit Requirement</td>
+<td>Sometimes required</td>
+<td>Usually not required</td>
+</tr>
+<tr>
+<td>Customer Type</td>
+<td>Businesses &amp; Consumers</td>
+<td>Consumers only</td>
+</tr>
 </tbody>
 </table>
 </figure>
 <p>You pick based on what kind of supplies you offer; it’s not just up to choice.</p>
-<div class="gcpa-callout gold">
-<span class="co-tag">Our Actual Experience</span>
+<div class="gcpa-callout gold"><span class="co-tag">Our Actual Experience</span>
 <p>The first question we settle with most foreign sellers is which regime applies. The answer usually turns on one fact: whether the business keeps stock, staff or an office in Canada. Goods held in a Canadian warehouse point to the regular regime; purely digital sales to consumers point to the simplified one.</p>
 </div>
 <h3>How Non-Resident Businesses Can Obtain a GST/HST Number</h3>
@@ -264,19 +367,17 @@
 <li>Getting help from tax pros early on</li>
 </ul>
 <p>Another issue is missing info on forms which causes delays; double-check everything before sending it in prevents problems later.</p>
-<div class="gcpa-cta" style="background:linear-gradient(135deg,#0f2a4a 0%,#1c4a78 100%) !important;">
+<div class="gcpa-cta" style="background: linear-gradient(135deg,#0f2a4a 0%,#1c4a78 100%) !important;">
 <h4>Selling into Canada from abroad? Get the registration right first</h4>
 <p>A free CPA consultation on whether you must register, which regime applies, and what security deposit to expect, before you send Form RC1. Please book a free consultation.</p>
-<div class="gcpa-trust"><span>1300+ 5-star Google reviews</span><span>Xero Partner Award Winner 2026</span><span>CPA Ontario Firm 61330051</span><span>30-Day Money-Back Guarantee</span></div>
+<div class="gcpa-trust">1300+ 5-star Google reviewsXero Partner Award Winner 2026CPA Ontario Firm 6133005130-Day Money-Back Guarantee</div>
 <div class="gcpa-btnrow"><a class="solid" href="https://gondaliyacpa.ca/consultation/">Book Free Consultation</a><a href="https://opencorporationfor35.ca/">Open Corporation For $35</a><a href="tel:+16472129559">647-212-9559</a></div>
 </div>
-
 <h2>Post-Registration Responsibilities for Foreign Businesses</h2>
 <div class="gcpa-numhead">
-<div class="num" style="background:#0f2a4a !important;color:#ffffff !important;">4</div>
-<h4 id="toc-after" style="border:none;padding:0;margin:0;">After You Register</h4>
-<span class="gcpa-pill green">Compliance</span>
-</div>
+<div class="num" style="background: #0f2a4a !important; color: #ffffff !important;">4</div>
+<h4 id="toc-after" style="border: none; padding: 0; margin: 0;">After You Register</h4>
+<span class="gcpa-pill green">Compliance</span></div>
 <p>When foreign businesses complete their GST registration in Canada, they face several ongoing duties. Non-resident GST/HST registration means you must follow Canadian tax rules closely. You’ll have to file returns, make payments, keep records, and report accurately. Open Corporation for $35, part of Gondaliya CPA, <a href="https://opencorporationfor35.ca/corporate-compliance-subscription/">helps non-residents handle these tasks</a>.</p>
 <h3>Filing GST/HST Returns: Reporting Periods and Due Dates</h3>
 <p>Non-residents file GST/HST returns based on their reporting period set by CRA. Most foreign businesses registered regularly file monthly or quarterly returns depending on annual sales in Canada. The CRA wants your return by the last day of the month after your reporting period ends.</p>
@@ -320,12 +421,34 @@
 <p>Your registration type decides if you qualify for streamlined methods—get advice first because it affects cash flow management big time.</p>
 <figure class="wp-block-table">
 <table>
-<thead><tr><th>Feature</th><th>Regular Registration</th><th>Simplified Registration</th></tr></thead>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Regular Registration</th>
+<th>Simplified Registration</th>
+</tr>
+</thead>
 <tbody>
-<tr><td>Eligible For Quick Method</td><td>Yes</td><td>No</td></tr>
-<tr><td>Input Tax Credit Claims</td><td>Allowed</td><td>Not allowed</td></tr>
-<tr><td>Filing Frequency</td><td>Monthly/Quarterly</td><td>Quarterly</td></tr>
-<tr><td>Accounting Complexity</td><td>Higher</td><td>Lower</td></tr>
+<tr>
+<td>Eligible For Quick Method</td>
+<td>Yes</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Input Tax Credit Claims</td>
+<td>Allowed</td>
+<td>Not allowed</td>
+</tr>
+<tr>
+<td>Filing Frequency</td>
+<td>Monthly/Quarterly</td>
+<td>Quarterly</td>
+</tr>
+<tr>
+<td>Accounting Complexity</td>
+<td>Higher</td>
+<td>Lower</td>
+</tr>
 </tbody>
 </table>
 </figure>
@@ -334,8 +457,7 @@
 <p>If your non-resident GST/HST registration details change — like your address or ownership — tell CRA fast using Form RC1 amendments online or by mail.[5]</p>
 <p>If you stop doing business in Canada above thresholds needing registration, request cancellation similarly.[6] Don’t delay; otherwise, CRA might still expect filings and payments for inactive periods.</p>
 <p>Reporting changes on time avoids extra assessments beyond your actual business activity.</p>
-<div class="gcpa-callout blue">
-<span class="co-tag">Worth Knowing</span>
+<div class="gcpa-callout blue"><span class="co-tag">Worth Knowing</span>
 <p>A Canadian GST/HST number is a tax account only. It does not create a Canadian company, and it gives no one the right to work in Canada.</p>
 </div>
 <h3>Penalties, Interest, and Compliance Risks for Non-Resident Businesses</h3>
@@ -349,31 +471,29 @@
 </ul>
 <p>Common problems include missing deadlines,[7] picking wrong regime ignoring small supplier limits,[8] mixing consumer versus business customer classifications,[9] forgetting warehouse sale rules[10], skipping security deposits[11], applying wrong provincial rates[12], ignoring QST in Quebec[13], errors converting currencies during filing,[14] thinking tax registration equals immigration permission[15].</p>
 <p>Avoid troubles by consulting experts early—Open Corporation for $35 offers <a href="https://gondaliyacpa.ca/consultation/">free CPA advice</a>—keep good books aligned with rules; watch thresholds closely; communicate changes quickly.</p>
-<div style="font-size:13px;color:#5a6b7b;border-top:1px solid #e3e9f0;padding-top:10px;margin:18px 0 24px;">
-<p style="margin:0 0 4px;">[1] Excise Tax Act s286; https://laws-lois.justice.gc.ca/eng/acts/E‑15/</p>
-<p style="margin:0 0 4px;">[2] CRA Guide RC4027 – Doing Business in Canada: GST/HST Information for Non-Residents https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/rc4027.html</p>
-<p style="margin:0 0 4px;">[3] Quick Method details - https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/accounting-methods/gst-hst-accounting-methods.html#quickmethod</p>
-<p style="margin:0 0 4px;">[4] Simplified Regime Rules - https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/simplified-gsthst-registration-nonresidents.html</p>
-<p style="margin:0 0 4px;">[5] Form RC1 amendment instructions - https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/register-a-business/change-your-registration-information.html</p>
-<p style="margin:0 0 4px;">[6] Cancellation guidance - https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/register-a-business/cancel-gsthst-account.html</p>
-<p style="margin:0 0 4px;">[7] Penalty overview - Excise Tax Act s280.1</p>
-<p style="margin:0 0 4px;">[8] Small Supplier Threshold test – ETA s148(1) &amp; P051R2 policy statement</p>
-<p style="margin:0 0 4px;">[9] Consumer vs Business distinction – Place-of-Supply rules</p>
-<p style="margin:0 0 4px;">[10] Fulfilment Warehouse Rules – Finance Canada Budget 2021 measures</p>
-<p style="margin:0 0 4px;">[11] Security Deposit provisions – ETA s240(6)</p>
-<p style="margin:0 0 4px;">[12] Provincial Rate Application references – Finance Ministry websites</p>
-<p style="margin:0 0 4px;">[13] QST brief note–Revenu Québec publications</p>
-<p style="margin:0 0 4px;">[14] Currency Conversion Guidelines–CRA Notices</p>
-<p style="margin:0;">[15] Immigration disclaimer–CRA official notices</p>
+<div style="font-size: 13px; color: #5a6b7b; border-top: 1px solid #e3e9f0; padding-top: 10px; margin: 18px 0 24px;">
+<p style="margin: 0 0 4px;">[1] Excise Tax Act s286; https://laws-lois.justice.gc.ca/eng/acts/E‑15/</p>
+<p style="margin: 0 0 4px;">[2] CRA Guide RC4027 – Doing Business in Canada: GST/HST Information for Non-Residents https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/rc4027.html</p>
+<p style="margin: 0 0 4px;">[3] Quick Method details - https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/accounting-methods/gst-hst-accounting-methods.html#quickmethod</p>
+<p style="margin: 0 0 4px;">[4] Simplified Regime Rules - https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/simplified-gsthst-registration-nonresidents.html</p>
+<p style="margin: 0 0 4px;">[5] Form RC1 amendment instructions - https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/register-a-business/change-your-registration-information.html</p>
+<p style="margin: 0 0 4px;">[6] Cancellation guidance - https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/register-a-business/cancel-gsthst-account.html</p>
+<p style="margin: 0 0 4px;">[7] Penalty overview - Excise Tax Act s280.1</p>
+<p style="margin: 0 0 4px;">[8] Small Supplier Threshold test – ETA s148(1) &amp; P051R2 policy statement</p>
+<p style="margin: 0 0 4px;">[9] Consumer vs Business distinction – Place-of-Supply rules</p>
+<p style="margin: 0 0 4px;">[10] Fulfilment Warehouse Rules – Finance Canada Budget 2021 measures</p>
+<p style="margin: 0 0 4px;">[11] Security Deposit provisions – ETA s240(6)</p>
+<p style="margin: 0 0 4px;">[12] Provincial Rate Application references – Finance Ministry websites</p>
+<p style="margin: 0 0 4px;">[13] QST brief note–Revenu Québec publications</p>
+<p style="margin: 0 0 4px;">[14] Currency Conversion Guidelines–CRA Notices</p>
+<p style="margin: 0;">[15] Immigration disclaimer–CRA official notices</p>
 </div>
 <p>Open Corporation for $35 is part of Gondaliya CPA helping non-resident businesses handle complex post-registration duties without extra risks across Canada's federal system including Ontario's HST setup.</p>
-
 <h2>Special Considerations for Foreign Businesses and Digital Economy Sellers</h2>
 <div class="gcpa-numhead">
-<div class="num" style="background:#0f2a4a !important;color:#ffffff !important;">5</div>
-<h4 id="toc-digital" style="border:none;padding:0;margin:0;">Digital Sellers, Imports and Platforms</h4>
-<span class="gcpa-pill red">Special Rules</span>
-</div>
+<div class="num" style="background: #0f2a4a !important; color: #ffffff !important;">5</div>
+<h4 id="toc-digital" style="border: none; padding: 0; margin: 0;">Digital Sellers, Imports and Platforms</h4>
+<span class="gcpa-pill red">Special Rules</span></div>
 <p>If you’re a foreign business selling to Canada, you need to know some special GST/HST registration rules. Non-resident GST/HST registration depends on what you sell, who your customers are, and if you use Canadian platforms or warehouses. Open Corporation for $35 is part of Gondaliya CPA. This section explains the key rules about foreign business GST registration Canada, especially for digital economy sellers.</p>
 <h3>GST/HST Obligations for Digital Services and Marketplace Sales</h3>
 <p>Non-resident suppliers offering digital services to Canadians might have to register under <a href="https://opencorporationfor35.ca/guides/hst-registration-guide/">simplified GST/HST registration Canada</a> if their sales go over $30,000 CAD in 12 months[1]. Here’s what happens then:</p>
@@ -392,8 +512,7 @@
 </ul>
 <p>The CBSA’s CARM Client Portal has managed imports since October 21, 2024[4]. Courier shipments from the United States or Mexico are duty-free up to $150 CAD and tax-free up to $40 CAD; from other countries the limit is $20 CAD[5].</p>
 <p>Foreign businesses should track where their inventory is. Stock in fulfillment centres can mean doing more than just simplified compliance.</p>
-<div class="gcpa-callout red">
-<span class="co-tag">Risk Warning</span>
+<div class="gcpa-callout red"><span class="co-tag">Risk Warning</span>
 <p><strong>Risk Warning:</strong> Moving stock into a Canadian fulfilment warehouse usually takes a seller out of the simplified regime and into regular registration. Please check your registration before your first shipment arrives, not after the first sale.</p>
 </div>
 <h3>Treatment of Imports, Exports, and Drop-Shipments under GST/HST</h3>
@@ -427,7 +546,7 @@
 <p><a href="https://opencorporationfor35.ca/contact-us/">Open Corporation for $35 offers help with objections</a> against CRA decisions about business status or classification errors mostly linked to digital economy trades[11]. Expert reps manage communication well, reducing risks while keeping you compliant across areas including Ontario’s HST and sometimes Quebec’s QST[12].</p>
 <p>If you want help sorting out your foreign business gst registration canada needs or non-resident gst/hst registration, especially after recent changes affecting digital sellers using fulfillment warehouses or marketplace platforms, contact us at info@gondaliyacpa.ca or call 647‑212‑9559 any day between 9 AM – 8:30 PM Toronto time.</p>
 <h5>Footnotes:</h5>
-<ol style="font-size:13px;color:#5a6b7b;">
+<ol style="font-size: 13px; color: #5a6b7b;">
 <li>Excise Tax Act s.240(1), CRA Memo GI–1999–004R2 (Simplified Registration).</li>
 <li>Dept of Finance Budget Act 2023; CRA Notice DGE–22–01 Marketplace Rules Update.</li>
 <li>Excise Tax Act s.148 Small Supplier &amp; Inventory Location Rules; Ontario Finance Rate Tables.</li>
@@ -441,13 +560,11 @@
 <li>Internal firm records Open Corporation For $35 client files June 2026 update</li>
 <li>Internal firm records Open Corporation For $35 client files June 2026 update</li>
 </ol>
-
 <h2>Resources and Support for Foreign Business GST/HST Registration</h2>
 <div class="gcpa-numhead">
-<div class="num" style="background:#0f2a4a !important;color:#ffffff !important;">6</div>
-<h4 id="toc-resources" style="border:none;padding:0;margin:0;">Resources and Next Steps</h4>
-<span class="gcpa-pill teal">Resources</span>
-</div>
+<div class="num" style="background: #0f2a4a !important; color: #ffffff !important;">6</div>
+<h4 id="toc-resources" style="border: none; padding: 0; margin: 0;">Resources and Next Steps</h4>
+<span class="gcpa-pill teal">Resources</span></div>
 <h3>Accessing Official Forms, Applications, and Elections for GST/HST</h3>
 <p>If your business is foreign and wants GST/HST registration in Canada, you need to fill out certain official forms. The main one is CRA’s Form RC1. This form asks for your business number request with an RT account. Non-resident businesses using simplified GST/HST registration Canada apply through CRA’s online portals.</p>
 <p>Sometimes, you must submit extra papers when making elections about place of supply or how often you file returns. You can find all these documents on Canada.ca or the CRA’s My Business Account portal.</p>
@@ -494,58 +611,79 @@
 <li>Contact trusted advisors like Open Corporation for $35 early in this process.</li>
 </ul>
 <p>Taking these steps helps your business join Canada's tax system right—and avoids fines from missed registrations.</p>
-<div style="font-size:13px;color:#5a6b7b;border-top:1px solid #e3e9f0;padding-top:10px;margin:18px 0 24px;">
-<p style="margin:0 0 4px;">1: Excise Tax Act s240; CRA Guide RC4027</p>
-<p style="margin:0 0 4px;">2: CRA My Business Account Portal - https://www.canada.ca/en/revenue-agency/services/e-services/e-services-businesses/business-account.html</p>
-<p style="margin:0 0 4px;">3: Open Corporation contact page - opencorporationfor35.ca/contact-us/</p>
-<p style="margin:0 0 4px;">4: Privacy Act R.S.C., 1985 c.P‑21; CRA Confidentiality Policies</p>
-<p style="margin:0 0 4px;">5: Department of Finance Budget Measures 2026 - https://www.canada.ca/en/department-finance/news/2026/budget.html</p>
-<p style="margin:0 0 4px;">6: CBSA CARM Client Portal Overview - https://www.cbsa-asfc.gc.ca/prog/carm-gcra/menu-eng.html</p>
-<p style="margin:0 0 4px;">7: Gondaliya CPA Services Overview - gondaliyacpa.ca/nonresident-compliance/</p>
-<p style="margin:0;">8: Small Supplier Threshold &amp; Simplified Regime Rules – Excise Tax Act s148(1); CRA Memorandum Series</p>
+<div style="font-size: 13px; color: #5a6b7b; border-top: 1px solid #e3e9f0; padding-top: 10px; margin: 18px 0 24px;">
+<p style="margin: 0 0 4px;">1: Excise Tax Act s240; CRA Guide RC4027</p>
+<p style="margin: 0 0 4px;">2: CRA My Business Account Portal - https://www.canada.ca/en/revenue-agency/services/e-services/e-services-businesses/business-account.html</p>
+<p style="margin: 0 0 4px;">3: Open Corporation contact page - opencorporationfor35.ca/contact-us/</p>
+<p style="margin: 0 0 4px;">4: Privacy Act R.S.C., 1985 c.P‑21; CRA Confidentiality Policies</p>
+<p style="margin: 0 0 4px;">5: Department of Finance Budget Measures 2026 - https://www.canada.ca/en/department-finance/news/2026/budget.html</p>
+<p style="margin: 0 0 4px;">6: CBSA CARM Client Portal Overview - https://www.cbsa-asfc.gc.ca/prog/carm-gcra/menu-eng.html</p>
+<p style="margin: 0 0 4px;">7: Gondaliya CPA Services Overview - gondaliyacpa.ca/nonresident-compliance/</p>
+<p style="margin: 0;">8: Small Supplier Threshold &amp; Simplified Regime Rules – Excise Tax Act s148(1); CRA Memorandum Series</p>
 </div>
-<div class="gcpa-banner" style="background:linear-gradient(135deg,#0d3b66 0%,#0c7a7a 100%) !important;">
+<div class="gcpa-banner" style="background: linear-gradient(135deg,#0d3b66 0%,#0c7a7a 100%) !important;">
 <div class="bt">Not sure whether your business must register in Canada? Please book a free consultation and we will check the threshold, the regime and any security deposit before you apply.</div>
 <div class="bb"><a class="solid" href="https://gondaliyacpa.ca/consultation/">Book Free Consultation</a><a href="mailto:info@gondaliyacpa.ca">info@gondaliyacpa.ca</a><a href="tel:+16472129559">647-212-9559</a></div>
 </div>
-
 <h2>Frequently Asked Questions on Foreign Business GST Registration Canada</h2>
 <div class="gcpa-numhead">
-<div class="num" style="background:#0f2a4a !important;color:#ffffff !important;">7</div>
-<h4 id="toc-faq" style="border:none;padding:0;margin:0;">Non-Resident GST/HST FAQ</h4>
-<span class="gcpa-pill teal">FAQ</span>
+<div class="num" style="background: #0f2a4a !important; color: #ffffff !important;">7</div>
+<h4 id="toc-faq" style="border: none; padding: 0; margin: 0;">Non-Resident GST/HST FAQ</h4>
+<span class="gcpa-pill teal">FAQ</span></div>
+<div id="faq-main" class="gcpa-faq"><details>
+<summary>What is the Security Deposit Minimum for non-resident GST/HST registration?<span class="pl">+</span></summary>
+<div class="ans">
+<p>The CRA sets a security deposit minimum based on estimated net annual taxes. The deposit is generally 50% of estimated net tax for the first year, with a minimum of $5,000; small non-residents and simplified regime registrants do not post one.</p>
 </div>
-<div class="gcpa-faq" id="faq-main">
-<details><summary>What is the Security Deposit Minimum for non-resident GST/HST registration?<span class="pl">+</span></summary>
-<div class="ans"><p>The CRA sets a security deposit minimum based on estimated net annual taxes. The deposit is generally 50% of estimated net tax for the first year, with a minimum of $5,000; small non-residents and simplified regime registrants do not post one.</p></div></details>
-<details><summary>How do platform and fulfilment warehouse rules affect GST/HST registration?<span class="pl">+</span></summary>
-<div class="ans"><p>Holding inventory in Canadian warehouses usually triggers regular GST/HST registration. Marketplace platforms have collected GST/HST for non-registered sellers since July 1, 2021.</p></div></details>
-<details><summary>What are the key 2026 updates impacting foreign business GST registration?<span class="pl">+</span></summary>
-<div class="ans"><p>The main recent changes are the platform operator and fulfilment warehouse rules in force since July 1, 2021, and the CBSA's CARM import system since October 21, 2024.</p></div></details>
-<details><summary>What is the Courier Low-Value Threshold for GST/HST on imports?<span class="pl">+</span></summary>
-<div class="ans"><p>Courier shipments from the United States or Mexico are duty-free up to $150 CAD and free of GST/HST up to $40 CAD; from other countries the limit is $20 CAD, easing compliance for small parcel imports.</p></div></details>
-<details><summary>How does the CRA simplified GST/HST registration Canada process work?<span class="pl">+</span></summary>
-<div class="ans"><p>It requires digital sellers whose sales to Canadian consumers pass $30,000 CAD to register quickly online, file quarterly returns, but not claim input tax credits.</p></div></details>
-<details><summary>What filing frequency options exist under regular and simplified GST/HST registration?<span class="pl">+</span></summary>
-<div class="ans"><p>Regular registrants may file monthly or quarterly. Simplified regime registrants file quarterly only with simpler forms.</p></div></details>
-<details><summary>How do I apply for a Canadian GST Number through Form RC1?<span class="pl">+</span></summary>
-<div class="ans"><p>Complete Form RC1 with company details and submit it by mail or fax. CRA processes it to assign a Business Number with RT account suffix.</p></div></details>
-<details><summary>When should a foreign business consider extra-provincial registration besides GST/HST?<span class="pl">+</span></summary>
-<div class="ans"><p>If physically operating or having significant presence in provinces like Quebec, extra-provincial business registrations may be required alongside federal GST/HST accounts.</p></div></details>
-<details><summary>Can a foreign business use tax software or DIY methods for GST/HST compliance?<span class="pl">+</span></summary>
-<div class="ans"><p>Yes, but complex cases often need CPA help. Open Corporation for $35 offers expert CPA guidance to avoid costly mistakes and penalties.</p></div></details>
+</details><details>
+<summary>How do platform and fulfilment warehouse rules affect GST/HST registration?<span class="pl">+</span></summary>
+<div class="ans">
+<p>Holding inventory in Canadian warehouses usually triggers regular GST/HST registration. Marketplace platforms have collected GST/HST for non-registered sellers since July 1, 2021.</p>
 </div>
-<div class="gcpa-callout red">
-<span class="co-tag">Risk Warning</span>
+</details><details>
+<summary>What are the key 2026 updates impacting foreign business GST registration?<span class="pl">+</span></summary>
+<div class="ans">
+<p>The main recent changes are the platform operator and fulfilment warehouse rules in force since July 1, 2021, and the CBSA's CARM import system since October 21, 2024.</p>
+</div>
+</details><details>
+<summary>What is the Courier Low-Value Threshold for GST/HST on imports?<span class="pl">+</span></summary>
+<div class="ans">
+<p>Courier shipments from the United States or Mexico are duty-free up to $150 CAD and free of GST/HST up to $40 CAD; from other countries the limit is $20 CAD, easing compliance for small parcel imports.</p>
+</div>
+</details><details>
+<summary>How does the CRA simplified GST/HST registration Canada process work?<span class="pl">+</span></summary>
+<div class="ans">
+<p>It requires digital sellers whose sales to Canadian consumers pass $30,000 CAD to register quickly online, file quarterly returns, but not claim input tax credits.</p>
+</div>
+</details><details>
+<summary>What filing frequency options exist under regular and simplified GST/HST registration?<span class="pl">+</span></summary>
+<div class="ans">
+<p>Regular registrants may file monthly or quarterly. Simplified regime registrants file quarterly only with simpler forms.</p>
+</div>
+</details><details>
+<summary>How do I apply for a Canadian GST Number through Form RC1?<span class="pl">+</span></summary>
+<div class="ans">
+<p>Complete Form RC1 with company details and submit it by mail or fax. CRA processes it to assign a Business Number with RT account suffix.</p>
+</div>
+</details><details>
+<summary>When should a foreign business consider extra-provincial registration besides GST/HST?<span class="pl">+</span></summary>
+<div class="ans">
+<p>If physically operating or having significant presence in provinces like Quebec, extra-provincial business registrations may be required alongside federal GST/HST accounts.</p>
+</div>
+</details><details>
+<summary>Can a foreign business use tax software or DIY methods for GST/HST compliance?<span class="pl">+</span></summary>
+<div class="ans">
+<p>Yes, but complex cases often need CPA help. Open Corporation for $35 offers expert CPA guidance to avoid costly mistakes and penalties.</p>
+</div>
+</details></div>
+<div class="gcpa-callout red"><span class="co-tag">Risk Warning</span>
 <p><strong>Risk Warning:</strong> A business that should have registered but did not still owes the GST/HST it should have charged, from the day it crossed the threshold. Please register as soon as your Canadian taxable supplies pass $30,000, rather than waiting for the CRA to contact you.</p>
 </div>
-
 <h2>Key Points on Non-Resident GST/HST Compliance and Risks</h2>
 <div class="gcpa-numhead">
-<div class="num" style="background:#0f2a4a !important;color:#ffffff !important;">8</div>
-<h4 id="toc-points" style="border:none;padding:0;margin:0;">Key Points and Quick Reference</h4>
-<span class="gcpa-pill gold">At a Glance</span>
-</div>
+<div class="num" style="background: #0f2a4a !important; color: #ffffff !important;">8</div>
+<h4 id="toc-points" style="border: none; padding: 0; margin: 0;">Key Points and Quick Reference</h4>
+<span class="gcpa-pill gold">At a Glance</span></div>
 <ul>
 <li>Non-resident security deposits protect CRA against unpaid taxes but may be waived in some cases.</li>
 <li>Selecting the correct GST/HST regime prevents compliance issues and penalties.</li>
@@ -567,7 +705,9 @@
 <li>Security deposit exemptions depend on the size of your taxable supplies and net tax.</li>
 <li><a href="https://opencorporationfor35.ca/pricing/">Contact Open Corporation for $35</a> for tailored assistance navigating these requirements efficiently and cost-effectively.</li>
 </ul>
-<div class="gcpa-pillhead"><h4 style="border:none;padding:0;margin:0;">Quick Answers: Key Numbers at a Glance</h4><span class="gcpa-pill gold">At a Glance</span></div>
+<div class="gcpa-pillhead">
+<h4 style="border: none; padding: 0; margin: 0;">Quick Answers: Key Numbers at a Glance</h4>
+<span class="gcpa-pill gold">At a Glance</span></div>
 <ul>
 <li><strong>Registration threshold:</strong> $30,000, regular or simplified</li>
 <li><strong>Security deposit:</strong> Generally 50% of first-year net tax, $5,000 minimum, $1,000,000 maximum</li>
@@ -579,23 +719,22 @@
 <li><strong>Return due date:</strong> Last day of the month after the reporting period</li>
 <li><strong>Records:</strong> Keep for six years</li>
 </ul>
-<div class="gcpa-pillhead"><h4 style="border:none;padding:0;margin:0;">Who This Is For / Not For</h4><span class="gcpa-pill teal">Fit Check</span></div>
+<div class="gcpa-pillhead">
+<h4 style="border: none; padding: 0; margin: 0;">Who This Is For / Not For</h4>
+<span class="gcpa-pill teal">Fit Check</span></div>
 <ul>
 <li><strong>For:</strong> Foreign businesses selling goods or digital services to Canadian customers that need to know whether, and how, to register for GST/HST.</li>
 <li><strong>Not For:</strong> Founders who want a Canadian company of their own, which is a separate step; please see our <a href="https://opencorporationfor35.ca/incorporation-service-35/">incorporation service</a>.</li>
 </ul>
-<div class="gcpa-callout green">
-<span class="co-tag">Verdict</span>
+<div class="gcpa-callout green"><span class="co-tag">Verdict</span>
 <p>Work out first whether you carry on business in Canada. If you do, or you keep stock here, register under the regular regime once your taxable supplies pass $30,000 and expect to post security. If you only sell digital products or services to Canadian consumers, register under the simplified regime once those sales pass $30,000 in 12 months. Either way, register on time; late registration does not cancel the tax you should have charged.</p>
 </div>
-<div class="gcpa-callout blue">
-<span class="co-tag">2026 Update</span>
-<p><strong>2026 Update &mdash; what is current:</strong> This article reflects rules current to November 2026. The registration threshold remains $30,000 under both the regular and simplified regimes. Non-residents registering under the regular regime generally post security of 50% of first-year net tax, minimum $5,000. The platform operator and fulfilment warehouse rules have applied since July 1, 2021, and the CBSA's CARM system since October 21, 2024. GST is 5%, Ontario HST is 13% and Quebec QST is 9.975% on top of GST. Please confirm current CRA guidance before you register.</p>
+<div class="gcpa-callout blue"><span class="co-tag">2026 Update</span>
+<p><strong>2026 Update — what is current:</strong> This article reflects rules current to November 2026. The registration threshold remains $30,000 under both the regular and simplified regimes. Non-residents registering under the regular regime generally post security of 50% of first-year net tax, minimum $5,000. The platform operator and fulfilment warehouse rules have applied since July 1, 2021, and the CBSA's CARM system since October 21, 2024. GST is 5%, Ontario HST is 13% and Quebec QST is 9.975% on top of GST. Please confirm current CRA guidance before you register.</p>
 </div>
-<h5 style="color:#15355c;margin:24px 0 8px;">Non-Resident GST/HST Readiness Check</h5>
+<h5 style="color: #15355c; margin: 24px 0 8px;">Non-Resident GST/HST Readiness Check</h5>
 <p>This quick self-check flags what to sort out before you register for GST/HST in Canada. Please answer the six questions below.</p>
-<div id="ocf-chk">
-  <style>
+<div id="ocf-chk"><style>
     #ocf-chk{--n:#0f2a4a;--n2:#15355c;--bl:#1c6dd0;--tl:#0c8f8f;--gd:#c9991f;--rd:#c0392b;--ink:#1d2733;--mut:#5a6b7b;--ln:#d8e0e8;--alt:#f5f8fb;
       border:1px solid var(--ln);border-radius:14px;overflow:hidden;background:#fff;box-shadow:0 10px 30px rgba(15,42,74,.08);font-family:inherit;color:var(--ink);margin:24px 0;}
     #ocf-chk *{box-sizing:border-box;}
@@ -626,37 +765,34 @@
     #ocf-chk .s-note{font-size:12.5px;color:var(--mut);margin:12px 0 0;}
     @media(max-width:560px){#ocf-chk .s-q{flex-direction:column;align-items:flex-start;gap:8px;}}
   </style>
-  <div class="s-head" style="background:linear-gradient(135deg,#0f2a4a,#15355c) !important;">
-    <h5>Non-Resident GST/HST Readiness Check</h5>
-    <p>Six quick questions. No tax calculation, no figure quoted.</p>
-  </div>
-  <div class="s-body">
-    <div class="s-q" data-flag="1" data-msg="Whether you carry on business in Canada, which points to the regular regime"><span class="s-lab">1. Do you have staff, an office or agents in Canada?</span>
-      <span class="s-seg"><input type="radio" id="c-a-y" name="c-a" value="1"><label for="c-a-y">Yes</label><input type="radio" id="c-a-n" name="c-a" value="0"><label for="c-a-n">No</label></span></div>
-    <div class="s-q" data-flag="1" data-msg="Regular registration, since stock in a Canadian fulfilment warehouse usually rules out the simplified regime"><span class="s-lab">2. Will you keep stock in a Canadian warehouse?</span>
-      <span class="s-seg"><input type="radio" id="c-b-y" name="c-b" value="1"><label for="c-b-y">Yes</label><input type="radio" id="c-b-n" name="c-b" value="0"><label for="c-b-n">No</label></span></div>
-    <div class="s-q" data-flag="1" data-msg="Registration once your taxable supplies pass $30,000, under the regime that fits"><span class="s-lab">3. Do you expect more than $30,000 in Canadian sales within a year?</span>
-      <span class="s-seg"><input type="radio" id="c-c-y" name="c-c" value="1"><label for="c-c-y">Yes</label><input type="radio" id="c-c-n" name="c-c" value="0"><label for="c-c-n">No</label></span></div>
-    <div class="s-q" data-flag="1" data-msg="Input tax credits, which the simplified regime does not allow"><span class="s-lab">4. Do you pay Canadian GST/HST on your own costs?</span>
-      <span class="s-seg"><input type="radio" id="c-d-y" name="c-d" value="1"><label for="c-d-y">Yes</label><input type="radio" id="c-d-n" name="c-d" value="0"><label for="c-d-n">No</label></span></div>
-    <div class="s-q" data-flag="0" data-msg="Budgeting for a security deposit, generally at least $5,000, before you apply"><span class="s-lab">5. Have you budgeted for a possible security deposit?</span>
-      <span class="s-seg"><input type="radio" id="c-e-y" name="c-e" value="1"><label for="c-e-y">Yes</label><input type="radio" id="c-e-n" name="c-e" value="0"><label for="c-e-n">No</label></span></div>
-    <div class="s-q" data-flag="1" data-msg="Quebec QST, which is registered and filed separately with Revenu Québec"><span class="s-lab">6. Will you sell to customers in Quebec?</span>
-      <span class="s-seg"><input type="radio" id="c-f-y" name="c-f" value="1"><label for="c-f-y">Yes</label><input type="radio" id="c-f-n" name="c-f" value="0"><label for="c-f-n">No</label></span></div>
-    <button type="button" class="s-go" id="c-go">Check my readiness</button>
-    <div class="s-msg" id="c-msg">Please answer all six questions to continue.</div>
-    <div class="s-out" id="c-out">
-      <div class="s-status" id="c-status" style="background:linear-gradient(135deg,#0f2a4a,#15355c) !important;">Your profile</div>
-      <div class="s-inner">
-        <p class="s-row"><b>Points to work through:</b> <span class="s-count" id="c-count"></span></p>
-        <div id="c-listwrap" style="display:none;"><p class="s-row" style="margin-bottom:4px;"><b>Worth reviewing with us:</b></p><ul class="s-list" id="c-list"></ul></div>
-        <p class="s-row" id="c-clean" style="display:none;"><b>Nothing flagged.</b> The usual complications do not appear to apply to you.</p>
-        <a class="s-cta" href="https://gondaliyacpa.ca/consultation/">Book a free consultation</a>
-        <p class="s-note">This is a general prompt, not tax advice, and it does not calculate your tax. Your outcome depends on your full facts, so please book a free consultation.</p>
-      </div>
-    </div>
-  </div>
-  <script>
+<div class="s-head" style="background: linear-gradient(135deg,#0f2a4a,#15355c) !important;">
+<h5>Non-Resident GST/HST Readiness Check</h5>
+<p>Six quick questions. No tax calculation, no figure quoted.</p>
+</div>
+<div class="s-body">
+<div class="s-q" data-flag="1" data-msg="Whether you carry on business in Canada, which points to the regular regime"><span class="s-lab">1. Do you have staff, an office or agents in Canada?</span> <span class="s-seg"><input id="c-a-y" name="c-a" type="radio" value="1" /><label for="c-a-y">Yes</label><input id="c-a-n" name="c-a" type="radio" value="0" /><label for="c-a-n">No</label></span></div>
+<div class="s-q" data-flag="1" data-msg="Regular registration, since stock in a Canadian fulfilment warehouse usually rules out the simplified regime"><span class="s-lab">2. Will you keep stock in a Canadian warehouse?</span> <span class="s-seg"><input id="c-b-y" name="c-b" type="radio" value="1" /><label for="c-b-y">Yes</label><input id="c-b-n" name="c-b" type="radio" value="0" /><label for="c-b-n">No</label></span></div>
+<div class="s-q" data-flag="1" data-msg="Registration once your taxable supplies pass $30,000, under the regime that fits"><span class="s-lab">3. Do you expect more than $30,000 in Canadian sales within a year?</span> <span class="s-seg"><input id="c-c-y" name="c-c" type="radio" value="1" /><label for="c-c-y">Yes</label><input id="c-c-n" name="c-c" type="radio" value="0" /><label for="c-c-n">No</label></span></div>
+<div class="s-q" data-flag="1" data-msg="Input tax credits, which the simplified regime does not allow"><span class="s-lab">4. Do you pay Canadian GST/HST on your own costs?</span> <span class="s-seg"><input id="c-d-y" name="c-d" type="radio" value="1" /><label for="c-d-y">Yes</label><input id="c-d-n" name="c-d" type="radio" value="0" /><label for="c-d-n">No</label></span></div>
+<div class="s-q" data-flag="0" data-msg="Budgeting for a security deposit, generally at least $5,000, before you apply"><span class="s-lab">5. Have you budgeted for a possible security deposit?</span> <span class="s-seg"><input id="c-e-y" name="c-e" type="radio" value="1" /><label for="c-e-y">Yes</label><input id="c-e-n" name="c-e" type="radio" value="0" /><label for="c-e-n">No</label></span></div>
+<div class="s-q" data-flag="1" data-msg="Quebec QST, which is registered and filed separately with Revenu Québec"><span class="s-lab">6. Will you sell to customers in Quebec?</span> <span class="s-seg"><input id="c-f-y" name="c-f" type="radio" value="1" /><label for="c-f-y">Yes</label><input id="c-f-n" name="c-f" type="radio" value="0" /><label for="c-f-n">No</label></span></div>
+<button id="c-go" class="s-go" type="button">Check my readiness</button>
+<div id="c-msg" class="s-msg">Please answer all six questions to continue.</div>
+<div id="c-out" class="s-out">
+<div id="c-status" class="s-status" style="background: linear-gradient(135deg,#0f2a4a,#15355c) !important;">Your profile</div>
+<div class="s-inner">
+<p class="s-row"><b>Points to work through:</b> <span id="c-count" class="s-count"></span></p>
+<div id="c-listwrap" style="display: none;">
+<p class="s-row" style="margin-bottom: 4px;"><b>Worth reviewing with us:</b></p>
+<ul id="c-list" class="s-list"></ul>
+</div>
+<p id="c-clean" class="s-row" style="display: none;"><b>Nothing flagged.</b> The usual complications do not appear to apply to you.</p>
+<a class="s-cta" href="https://gondaliyacpa.ca/consultation/">Book a free consultation</a>
+<p class="s-note">This is a general prompt, not tax advice, and it does not calculate your tax. Your outcome depends on your full facts, so please book a free consultation.</p>
+</div>
+</div>
+</div>
+<script>
   (function(){
     var root=document.getElementById('ocf-chk');
     root.querySelector('#c-go').addEventListener('click',function(){
@@ -678,32 +814,33 @@
       out.style.display='block';
     });
   })();
-  </script>
-</div>
-<div class="gcpa-cta" style="background:linear-gradient(135deg,#0f2a4a 0%,#1c4a78 100%) !important;">
+  </script></div>
+<div class="gcpa-cta" style="background: linear-gradient(135deg,#0f2a4a 0%,#1c4a78 100%) !important;">
 <h4>Register for Canadian GST/HST with a CPA firm</h4>
 <p>A free CPA consultation on your threshold, the right regime and any security deposit, then help preparing Form RC1 and your first returns. Please book a free consultation.</p>
-<div class="gcpa-trust"><span>1300+ 5-star Google reviews</span><span>Xero Partner Award Winner 2026</span><span>30-Day Money-Back Guarantee</span><span>60-Day Fee Matching</span></div>
+<div class="gcpa-trust">1300+ 5-star Google reviewsXero Partner Award Winner 202630-Day Money-Back Guarantee60-Day Fee Matching</div>
 <div class="gcpa-btnrow"><a class="solid" href="https://gondaliyacpa.ca/consultation/">Book Free Consultation</a><a href="https://opencorporationfor35.ca/address-service-100/">Address Service</a><a href="https://opencorporationfor35.ca/contact-us/">Contact Us</a></div>
 </div>
-<h3 class="gcpa-closing" id="toc-closing">What to Send Us</h3>
+<p>Want a checklist to work from? Please <a href="https://opencorporationfor35.ca/wp-content/uploads/2026/11/OpenCorp35-Non-Resident-GST-HST-Registration-Checklist.pdf">download our free non-resident GST/HST checklist</a> before your consultation.</p>
+<figure style="margin:26px 0;"><img src="https://opencorporationfor35.ca/wp-content/uploads/2026/11/why-choose-us-foreign-gst.png" alt="Why Canadian business owners choose Open Corporation For $35 for non-resident GST/HST" style="width:100%;border-radius:12px;border:1px solid #d8e0e8;" /><figcaption style="font-size:13px;color:#5a6b7b;text-align:center;padding:6px;">Why business owners choose us.</figcaption></figure>
+<h3 id="toc-closing" class="gcpa-closing">What to Send Us</h3>
 <p>Send us your company's legal name and country, what you sell into Canada, your expected Canadian sales for the next 12 months, whether you hold stock, staff or an office in Canada, and which provinces your customers are in. That is enough for us to confirm whether you must register, under which regime, and what security to expect. Please start with our <a href="https://opencorporationfor35.ca/contact-us/">contact form</a> or see our fees on our <a href="https://opencorporationfor35.ca/pricing/">pricing page</a>.</p>
 <div class="gcpa-author">
-<div class="ava" style="background:linear-gradient(135deg,#0f2a4a,#0c8f8f) !important;color:#ffffff !important;">SG</div>
+<div class="ava" style="background: linear-gradient(135deg,#0f2a4a,#0c8f8f) !important; color: #ffffff !important;">SG</div>
 <div class="info">
 <h5>Sharad Gondaliya, CPA (Canada &amp; USA) — Founder &amp; Managing Director, Gondaliya CPA Professional Corporation</h5>
 <div class="role">Reviewed and fact-checked by Sharad Gondaliya, CPA (Canada &amp; USA)</div>
-<p style="font-size:14.5px;color:#15355c !important;font-weight:700;margin:0 0 8px;">Open Corporation for $35 is a department of Gondaliya CPA.</p>
+<p style="font-size: 14.5px; color: #15355c !important; font-weight: bold; margin: 0 0 8px;">Open Corporation for $35 is a department of Gondaliya CPA.</p>
 <p>We incorporate and support companies in all 13 provinces and territories, handling CRA registrations, corporate tax filing, bookkeeping, GST/HST, payroll and audit support. Verify our firm on the <a href="https://www.cpaontario.ca/protecting-the-public/directories/firm/gondaliya-5sqvmj">CPA Ontario public firm directory</a>, firm registration 61330051.</p>
-<p style="font-size:13.5px;color:#15355c !important;font-weight:700;margin-top:10px;">CPA Ontario | CPA USA (Washington &amp; Montana) | Xero Partner Award Winner 2026 | 1300+ 5-star Google reviews</p>
+<p style="font-size: 13.5px; color: #15355c !important; font-weight: bold; margin-top: 10px;">CPA Ontario | CPA USA (Washington &amp; Montana) | Xero Partner Award Winner 2026 | 1300+ 5-star Google reviews</p>
 </div>
 </div>
-<p style="font-size:13px;color:#5a6b7b;border-top:1px solid #e3e9f0;padding-top:16px;margin-top:8px;"><strong>Published:</strong> November 18, 2026 &nbsp;·&nbsp; <strong>Last updated:</strong> November 18, 2026</p>
-<p style="font-size:13px;color:#5a6b7b;"><strong>Editorial policy:</strong> Our content is prepared by our team and reviewed by Sharad Gondaliya, CPA, and we update it as CRA, CBSA and Revenu Québec rules for non-residents change.</p>
-<p style="font-size:13px;color:#5a6b7b;"><strong>Disclaimer:</strong> This article is educational information only and is not tax, legal, customs or financial advice. Gondaliya CPA Professional Corporation is a firm of Chartered Professional Accountants, not a law firm or a customs broker. Please consult a CPA before acting.</p>
-<p style="font-size:14.5px;color:#15355c;font-weight:700;border-top:2px solid #e3e9f0;padding-top:16px;margin-top:20px;">Open Corporation for $35 is a department of Gondaliya CPA.</p>
-<p style="font-size:13px;color:#5a6b7b;">Operated by WealthBamboo Inc. Parent firm Gondaliya CPA Professional Corporation, CPA Ontario firm registration 61330051. Xero Partner Award Winner 2026. 1300+ five-star Google reviews. 30-day money-back guarantee and 60-day fee-matching policy. Phone 647-212-9559, email info@gondaliyacpa.ca, open 9:00 AM to 8:30 PM Monday to Sunday. Payment by Interac e-Transfer to info@gondaliyacpa.ca only, security question "Not Applicable" as auto-deposit is enabled. Card is also accepted.</p>
+<p style="font-size: 13px; color: #5a6b7b; border-top: 1px solid #e3e9f0; padding-top: 16px; margin-top: 8px;"><strong>Published:</strong> November 18, 2026  ·  <strong>Last updated:</strong> November 18, 2026</p>
+<p style="font-size: 13px; color: #5a6b7b;"><strong>Editorial policy:</strong> Our content is prepared by our team and reviewed by Sharad Gondaliya, CPA, and we update it as CRA, CBSA and Revenu Québec rules for non-residents change.</p>
+<p style="font-size: 13px; color: #5a6b7b;"><strong>Disclaimer:</strong> This article is educational information only and is not tax, legal, customs or financial advice. Gondaliya CPA Professional Corporation is a firm of Chartered Professional Accountants, not a law firm or a customs broker. Please consult a CPA before acting.</p>
+<p style="font-size: 14.5px; color: #15355c; font-weight: bold; border-top: 2px solid #e3e9f0; padding-top: 16px; margin-top: 20px;">Open Corporation for $35 is a department of Gondaliya CPA.</p>
+<p style="font-size: 13px; color: #5a6b7b;">Operated by WealthBamboo Inc. Parent firm Gondaliya CPA Professional Corporation, CPA Ontario firm registration 61330051. Xero Partner Award Winner 2026. 1300+ five-star Google reviews. 30-day money-back guarantee and 60-day fee-matching policy. Phone 647-212-9559, email info@gondaliyacpa.ca, open 9:00 AM to 8:30 PM Monday to Sunday. Payment by Interac e-Transfer to info@gondaliyacpa.ca only, security question "Not Applicable" as auto-deposit is enabled. Card is also accepted.</p>
 </div>
-<script type="application/ld+json">
+<p><script type="application/ld+json">
 {"@context": "https://schema.org", "@graph": [{"@type": "BlogPosting", "@id": "https://opencorporationfor35.ca/gst-hst-registration-foreign-businesses-canada/#article", "headline": "GST/HST Registration for Foreign Businesses Selling into Canada", "description": "How foreign businesses register for GST/HST in Canada: the $30,000 threshold, regular vs simplified registration, security deposits, Form RC1, filing and platform rules.", "datePublished": "2026-11-18", "dateModified": "2026-11-18", "author": {"@type": "Person", "name": "Sharad Gondaliya, CPA"}, "publisher": {"@type": "Organization", "name": "Open Corporation for $35", "description": "Open Corporation for $35 is a department of Gondaliya CPA.", "parentOrganization": {"@type": "AccountingService", "name": "Gondaliya CPA Professional Corporation", "identifier": "CPA Ontario Firm Registration 61330051"}}, "mainEntityOfPage": "https://opencorporationfor35.ca/gst-hst-registration-foreign-businesses-canada/"}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is the Security Deposit Minimum for non-resident GST/HST registration?", "acceptedAnswer": {"@type": "Answer", "text": "The CRA sets a security deposit minimum based on estimated net annual taxes. The deposit is generally 50% of estimated net tax for the first year, with a minimum of $5,000; small non-residents and simplified regime registrants do not post one."}}, {"@type": "Question", "name": "How do platform and fulfilment warehouse rules affect GST/HST registration?", "acceptedAnswer": {"@type": "Answer", "text": "Holding inventory in Canadian warehouses usually triggers regular GST/HST registration. Marketplace platforms have collected GST/HST for non-registered sellers since July 1, 2021."}}, {"@type": "Question", "name": "What are the key 2026 updates impacting foreign business GST registration?", "acceptedAnswer": {"@type": "Answer", "text": "The main recent changes are the platform operator and fulfilment warehouse rules in force since July 1, 2021, and the CBSA's CARM import system since October 21, 2024."}}, {"@type": "Question", "name": "What is the Courier Low-Value Threshold for GST/HST on imports?", "acceptedAnswer": {"@type": "Answer", "text": "Courier shipments from the United States or Mexico are duty-free up to $150 CAD and free of GST/HST up to $40 CAD; from other countries the limit is $20 CAD, easing compliance for small parcel imports."}}, {"@type": "Question", "name": "How does the CRA simplified GST/HST registration Canada process work?", "acceptedAnswer": {"@type": "Answer", "text": "It requires digital sellers whose sales to Canadian consumers pass $30,000 CAD to register quickly online, file quarterly returns, but not claim input tax credits."}}, {"@type": "Question", "name": "What filing frequency options exist under regular and simplified GST/HST registration?", "acceptedAnswer": {"@type": "Answer", "text": "Regular registrants may file monthly or quarterly. Simplified regime registrants file quarterly only with simpler forms."}}, {"@type": "Question", "name": "How do I apply for a Canadian GST Number through Form RC1?", "acceptedAnswer": {"@type": "Answer", "text": "Complete Form RC1 with company details and submit it by mail or fax. CRA processes it to assign a Business Number with RT account suffix."}}, {"@type": "Question", "name": "When should a foreign business consider extra-provincial registration besides GST/HST?", "acceptedAnswer": {"@type": "Answer", "text": "If physically operating or having significant presence in provinces like Quebec, extra-provincial business registrations may be required alongside federal GST/HST accounts."}}, {"@type": "Question", "name": "Can a foreign business use tax software or DIY methods for GST/HST compliance?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, but complex cases often need CPA help. Open Corporation for $35 offers expert CPA guidance to avoid costly mistakes and penalties."}}]}]}
-</script>
+</script></p>

@@ -1,0 +1,146 @@
+[
+ {
+  "id": 11022,
+  "dir": "newcomer-incorporation",
+  "search": "<h3>Federal Incorporation vs. Provincial Incorporation: Pros and Cons</h3>",
+  "replace": "<h3>Federal Incorporation vs. Provincial Incorporation: Pros and Cons</h3>\n<figure style=\"margin:22px 0;\"><img src=\"https://opencorporationfor35.ca/wp-content/uploads/2026/11/newcomer-federal-vs-ontario.png\" alt=\"Comparison of federal and Ontario incorporation for newcomers: federal needs 25% resident Canadian directors and costs $200 online; Ontario needs no resident director since July 5, 2021 and costs $300.\" style=\"width:100%;border-radius:12px;border:1px solid #d8e0e8;\" /><figcaption style=\"font-size:13px;color:#5a6b7b;text-align:center;padding:6px;\">Ontario is usually the simpler choice for a newcomer director; federal needs 25% resident Canadian directors.</figcaption></figure>"
+ },
+ {
+  "id": 11022,
+  "dir": "newcomer-incorporation",
+  "search": "<h3>Tax Filing Obligations: Corporate Income Tax, GST/HST, Payroll Slips, and T4/T5 Reporting</h3>",
+  "replace": "<h3>Tax Filing Obligations: Corporate Income Tax, GST/HST, Payroll Slips, and T4/T5 Reporting</h3>\n<figure style=\"margin:22px 0;\"><img src=\"https://opencorporationfor35.ca/wp-content/uploads/2026/11/newcomer-tax-filings.png\" alt=\"Tax rules for a newcomer&#x27;s corporation: no right to work from incorporating, CCPC status lost if non-residents control, 25% Part XIII withholding, NR4 slips by March 31, T2 six months after year-end, GST/HST at $30,000.\" style=\"width:100%;border-radius:12px;border:1px solid #d8e0e8;\" /><figcaption style=\"font-size:13px;color:#5a6b7b;text-align:center;padding:6px;\">The tax points that most often catch newcomer-owned corporations.</figcaption></figure>"
+ },
+ {
+  "id": 11022,
+  "dir": "newcomer-incorporation",
+  "search": "<h3 class=\"gcpa-closing\" id=\"toc-closing\">What to Send Us</h3>",
+  "replace": "<p>Want a checklist to work from? Please <a href=\"https://opencorporationfor35.ca/wp-content/uploads/2026/11/OpenCorp35-Newcomer-Incorporation-Checklist.pdf\">download our free newcomer incorporation checklist</a> before your consultation.</p>\n<figure style=\"margin:26px 0;\"><img src=\"https://opencorporationfor35.ca/wp-content/uploads/2026/11/why-choose-us-newcomer.png\" alt=\"Why Canadian business owners choose Open Corporation For $35 for newcomer incorporation\" style=\"width:100%;border-radius:12px;border:1px solid #d8e0e8;\" /><figcaption style=\"font-size:13px;color:#5a6b7b;text-align:center;padding:6px;\">Why business owners choose us.</figcaption></figure>\n<h3 class=\"gcpa-closing\" id=\"toc-closing\">What to Send Us</h3>"
+ },
+ {
+  "id": 11025,
+  "dir": "incorporation-time",
+  "search": "<h3>Average Incorporation Timeline in Canada</h3>",
+  "replace": "<h3>Average Incorporation Timeline in Canada</h3>\n<figure style=\"margin:22px 0;\"><img src=\"https://opencorporationfor35.ca/wp-content/uploads/2026/10/incorporation-time-processing-times.png\" alt=\"Processing times: federal and Ontario online incorporation usually the same day, federal mail up to 10 business days, NUANS report in minutes, business number in 1 to 3 business days.\" style=\"width:100%;border-radius:12px;border:1px solid #d8e0e8;\" /><figcaption style=\"font-size:13px;color:#5a6b7b;text-align:center;padding:6px;\">Most delays come from the application, not the registry.</figcaption></figure>"
+ },
+ {
+  "id": 11025,
+  "dir": "incorporation-time",
+  "search": "<h3>Typical Timelines for Business Bank Account Setup and GST/HST Registration</h3>",
+  "replace": "<h3>Typical Timelines for Business Bank Account Setup and GST/HST Registration</h3>\n<figure style=\"margin:22px 0;\"><img src=\"https://opencorporationfor35.ca/wp-content/uploads/2026/10/incorporation-time-filing-to-operating.png\" alt=\"Timeline from filing to operating: certificate usually day 1, business number in 1 to 3 business days, GST/HST account same day online, bank account in 3 to 7 business days, Ontario initial return within 60 days, NUANS valid 90 days.\" style=\"width:100%;border-radius:12px;border:1px solid #d8e0e8;\" /><figcaption style=\"font-size:13px;color:#5a6b7b;text-align:center;padding:6px;\">Plan for about a week from certificate to a working bank account.</figcaption></figure>"
+ },
+ {
+  "id": 11025,
+  "dir": "incorporation-time",
+  "search": "<h3 class=\"gcpa-closing\" id=\"toc-closing\">What to Send Us</h3>",
+  "replace": "<p>Want a checklist to work from? Please <a href=\"https://opencorporationfor35.ca/wp-content/uploads/2026/10/OpenCorp35-Incorporation-Timing-Checklist.pdf\">download our free incorporation timing checklist</a> before your consultation.</p>\n<figure style=\"margin:26px 0;\"><img src=\"https://opencorporationfor35.ca/wp-content/uploads/2026/10/why-choose-us-incorporation-time.png\" alt=\"Why Canadian business owners choose Open Corporation For $35 for incorporation timing\" style=\"width:100%;border-radius:12px;border:1px solid #d8e0e8;\" /><figcaption style=\"font-size:13px;color:#5a6b7b;text-align:center;padding:6px;\">Why business owners choose us.</figcaption></figure>\n<h3 class=\"gcpa-closing\" id=\"toc-closing\">What to Send Us</h3>"
+ },
+ {
+  "id": 11040,
+  "dir": "professional-vs-regular-corporation",
+  "search": "<h3>Distinct Legal Structures</h3>",
+  "replace": "<h3>Distinct Legal Structures</h3>\n<figure style=\"margin:22px 0;\"><img src=\"https://opencorporationfor35.ca/wp-content/uploads/2026/11/professional-corporation-pc-vs-regular.png\" alt=\"Professional versus regular corporation in Ontario: different shareholder, name and certificate rules, but the same $500,000 small business limit and the same 12.2% and 26.5% Ontario tax rates.\" style=\"width:100%;border-radius:12px;border:1px solid #d8e0e8;\" /><figcaption style=\"font-size:13px;color:#5a6b7b;text-align:center;padding:6px;\">The structure differs; the tax rules are the same.</figcaption></figure>"
+ },
+ {
+  "id": 11040,
+  "dir": "professional-vs-regular-corporation",
+  "search": "<h3>Passive Income Rules and Impacts</h3>",
+  "replace": "<h3>Passive Income Rules and Impacts</h3>\n<figure style=\"margin:22px 0;\"><img src=\"https://opencorporationfor35.ca/wp-content/uploads/2026/11/professional-corporation-passive-income.png\" alt=\"Passive income rules: $500,000 small business limit, reduced by $5 for every $1 of passive income above $50,000, eliminated at $150,000; Ontario rates 12.2% and 26.5%.\" style=\"width:100%;border-radius:12px;border:1px solid #d8e0e8;\" /><figcaption style=\"font-size:13px;color:#5a6b7b;text-align:center;padding:6px;\">Watch passive income once it nears $50,000 a year.</figcaption></figure>"
+ },
+ {
+  "id": 11040,
+  "dir": "professional-vs-regular-corporation",
+  "search": "<h3 class=\"gcpa-closing\" id=\"toc-closing\">What to Send Us</h3>",
+  "replace": "<p>Want a checklist to work from? Please <a href=\"https://opencorporationfor35.ca/wp-content/uploads/2026/11/OpenCorp35-Professional-Corporation-Checklist.pdf\">download our free professional corporation checklist</a> before your consultation.</p>\n<figure style=\"margin:26px 0;\"><img src=\"https://opencorporationfor35.ca/wp-content/uploads/2026/11/why-choose-us-professional-corporation.png\" alt=\"Why Canadian business owners choose Open Corporation For $35 for professional corporation\" style=\"width:100%;border-radius:12px;border:1px solid #d8e0e8;\" /><figcaption style=\"font-size:13px;color:#5a6b7b;text-align:center;padding:6px;\">Why business owners choose us.</figcaption></figure>\n<h3 class=\"gcpa-closing\" id=\"toc-closing\">What to Send Us</h3>"
+ },
+ {
+  "id": 11280,
+  "dir": "numbered-vs-named-company",
+  "search": "<h3>Key Differences Between Numbered and Named Corporations</h3>",
+  "replace": "<h3>Key Differences Between Numbered and Named Corporations</h3>\n<figure style=\"margin:22px 0;\"><img src=\"https://opencorporationfor35.ca/wp-content/uploads/2026/11/numbered-vs-named-comparison.png\" alt=\"Numbered versus named company in Ontario: same $300 government fee, same tax and same public director record; a named company needs a NUANS report, and either can change its name later for $150.\" style=\"width:100%;border-radius:12px;border:1px solid #d8e0e8;\" /><figcaption style=\"font-size:13px;color:#5a6b7b;text-align:center;padding:6px;\">A numbered name gives speed, not privacy.</figcaption></figure>"
+ },
+ {
+  "id": 11280,
+  "dir": "numbered-vs-named-company",
+  "search": "<h3>Differences Between Corporate Name, Trade Name, Brand Name, and Domain Name</h3>",
+  "replace": "<h3>Differences Between Corporate Name, Trade Name, Brand Name, and Domain Name</h3>\n<figure style=\"margin:22px 0;\"><img src=\"https://opencorporationfor35.ca/wp-content/uploads/2026/11/numbered-vs-named-four-names.png\" alt=\"Four kinds of name: corporate name on legal documents, trade name registered in Ontario for $60 for five years, brand name protected by a CIPO trademark, domain name registered separately; NUANS valid 90 days; Ontario amendment $150.\" style=\"width:100%;border-radius:12px;border:1px solid #d8e0e8;\" /><figcaption style=\"font-size:13px;color:#5a6b7b;text-align:center;padding:6px;\">Registering a corporate name does not give trademark rights.</figcaption></figure>"
+ },
+ {
+  "id": 11280,
+  "dir": "numbered-vs-named-company",
+  "search": "<h3 class=\"gcpa-closing\" id=\"toc-closing\">What to Send Us</h3>",
+  "replace": "<p>Want a checklist to work from? Please <a href=\"https://opencorporationfor35.ca/wp-content/uploads/2026/11/OpenCorp35-Corporate-Name-Checklist.pdf\">download our free corporate name checklist</a> before your consultation.</p>\n<figure style=\"margin:26px 0;\"><img src=\"https://opencorporationfor35.ca/wp-content/uploads/2026/11/why-choose-us-numbered-vs-named.png\" alt=\"Why Canadian business owners choose Open Corporation For $35 for corporate name\" style=\"width:100%;border-radius:12px;border:1px solid #d8e0e8;\" /><figcaption style=\"font-size:13px;color:#5a6b7b;text-align:center;padding:6px;\">Why business owners choose us.</figcaption></figure>\n<h3 class=\"gcpa-closing\" id=\"toc-closing\">What to Send Us</h3>"
+ },
+ {
+  "id": 11390,
+  "dir": "incorporation-fees-2026",
+  "search": "<h3>Federal and Provincial Costs at a Glance</h3>",
+  "replace": "<h3>Federal and Provincial Costs at a Glance</h3>\n<figure style=\"margin:22px 0;\"><img src=\"https://opencorporationfor35.ca/wp-content/uploads/2026/11/incorporation-fees-2026-federal-vs-ontario-fees.png\" alt=\"Government fees in 2026: federal incorporation $200 online, Ontario $300; annual return $12 federal online, free in Ontario; amendments $200 federal and $150 Ontario; director and address changes and the business number are free.\" style=\"width:100%;border-radius:12px;border:1px solid #d8e0e8;\" /><figcaption style=\"font-size:13px;color:#5a6b7b;text-align:center;padding:6px;\">Ontario costs $100 more upfront but has no annual return fee.</figcaption></figure>"
+ },
+ {
+  "id": 11390,
+  "dir": "incorporation-fees-2026",
+  "search": "<h3>Summary Table of Standard Incorporation Expenses</h3>",
+  "replace": "<h3>Summary Table of Standard Incorporation Expenses</h3>\n<figure style=\"margin:22px 0;\"><img src=\"https://opencorporationfor35.ca/wp-content/uploads/2026/11/incorporation-fees-2026-total-cost.png\" alt=\"Total cost with Open Corporation for $35: our $35 fee including HST, $300 Ontario or $200 federal government fee, $25 NUANS for a named company; $335 for a numbered Ontario company, $360 for a named one.\" style=\"width:100%;border-radius:12px;border:1px solid #d8e0e8;\" /><figcaption style=\"font-size:13px;color:#5a6b7b;text-align:center;padding:6px;\">A numbered Ontario company costs $335 in total.</figcaption></figure>"
+ },
+ {
+  "id": 11390,
+  "dir": "incorporation-fees-2026",
+  "search": "<h3 class=\"gcpa-closing\" id=\"toc-closing\">What to Send Us</h3>",
+  "replace": "<p>Want a checklist to work from? Please <a href=\"https://opencorporationfor35.ca/wp-content/uploads/2026/11/OpenCorp35-Incorporation-Fees-2026-Checklist.pdf\">download our free incorporation fee checklist</a> before your consultation.</p>\n<figure style=\"margin:26px 0;\"><img src=\"https://opencorporationfor35.ca/wp-content/uploads/2026/11/why-choose-us-incorporation-fees-2026.png\" alt=\"Why Canadian business owners choose Open Corporation For $35 for incorporation fee\" style=\"width:100%;border-radius:12px;border:1px solid #d8e0e8;\" /><figcaption style=\"font-size:13px;color:#5a6b7b;text-align:center;padding:6px;\">Why business owners choose us.</figcaption></figure>\n<h3 class=\"gcpa-closing\" id=\"toc-closing\">What to Send Us</h3>"
+ },
+ {
+  "id": 11405,
+  "dir": "why-35-fee",
+  "search": "<h3>What is Included in the $35 Incorporation Fee</h3>",
+  "replace": "<h3>What is Included in the $35 Incorporation Fee</h3>\n<figure style=\"margin:22px 0;\"><img src=\"https://opencorporationfor35.ca/wp-content/uploads/2026/11/why-35-fee-included.png\" alt=\"What the $35 covers: online form, articles prepared and filed, free CPA consultation and HST; priced separately: $300 Ontario or $200 federal government fee, $25 NUANS report, address service and minute book.\" style=\"width:100%;border-radius:12px;border:1px solid #d8e0e8;\" /><figcaption style=\"font-size:13px;color:#5a6b7b;text-align:center;padding:6px;\">Everything outside the $35 is shown before you pay.</figcaption></figure>"
+ },
+ {
+  "id": 11405,
+  "dir": "why-35-fee",
+  "search": "<h3>Complete cost breakdown table showing government fees, professional fees, and total costs</h3>",
+  "replace": "<h3>Complete cost breakdown table showing government fees, professional fees, and total costs</h3>\n<figure style=\"margin:22px 0;\"><img src=\"https://opencorporationfor35.ca/wp-content/uploads/2026/11/why-35-fee-totals.png\" alt=\"Total cost all in: $335 numbered Ontario, $360 named Ontario, $235 numbered federal, $260 named federal; 30-day money-back guarantee and 60-day fee matching.\" style=\"width:100%;border-radius:12px;border:1px solid #d8e0e8;\" /><figcaption style=\"font-size:13px;color:#5a6b7b;text-align:center;padding:6px;\">Numbered Ontario: $335 in total.</figcaption></figure>"
+ },
+ {
+  "id": 11405,
+  "dir": "why-35-fee",
+  "search": "<h3 class=\"gcpa-closing\" id=\"toc-closing\">What to Send Us</h3>",
+  "replace": "<p>Want a checklist to work from? Please <a href=\"https://opencorporationfor35.ca/wp-content/uploads/2026/11/OpenCorp35-Incorporation-Budget-Checklist.pdf\">download our free incorporation checklist</a> before your consultation.</p>\n<figure style=\"margin:26px 0;\"><img src=\"https://opencorporationfor35.ca/wp-content/uploads/2026/11/why-choose-us-why-35-fee.png\" alt=\"Why Canadian business owners choose Open Corporation For $35 for incorporation\" style=\"width:100%;border-radius:12px;border:1px solid #d8e0e8;\" /><figcaption style=\"font-size:13px;color:#5a6b7b;text-align:center;padding:6px;\">Why business owners choose us.</figcaption></figure>\n<h3 class=\"gcpa-closing\" id=\"toc-closing\">What to Send Us</h3>"
+ },
+ {
+  "id": 11449,
+  "dir": "after-incorporation-30-days",
+  "search": "<h3>What is organizational setup?</h3>",
+  "replace": "<h3>What is organizational setup?</h3>\n<figure style=\"margin:22px 0;\"><img src=\"https://opencorporationfor35.ca/wp-content/uploads/2026/11/first-30-days-timeline.png\" alt=\"First 30 days after incorporation: days 1 to 3 confirm the business number, days 5 to 10 resolutions, by-laws and shares, days 10 to 20 CRA accounts and minute book, days 20 to 30 bank account; Ontario initial return within 60 days; notice of change within 15 days.\" style=\"width:100%;border-radius:12px;border:1px solid #d8e0e8;\" /><figcaption style=\"font-size:13px;color:#5a6b7b;text-align:center;padding:6px;\">Most of the first month is organizing, not filing.</figcaption></figure>"
+ },
+ {
+  "id": 11449,
+  "dir": "after-incorporation-30-days",
+  "search": "<h3>Requirements for Ongoing Filings and Reporting in Ontario and Federally</h3>",
+  "replace": "<h3>Requirements for Ongoing Filings and Reporting in Ontario and Federally</h3>\n<figure style=\"margin:22px 0;\"><img src=\"https://opencorporationfor35.ca/wp-content/uploads/2026/11/first-30-days-deadlines.png\" alt=\"Deadlines after incorporation: Ontario initial return within 60 days, notice of change within 15 days, payroll remittance by the 15th, WSIB within 10 days of hiring, GST/HST at $30,000, T2 six months after year-end.\" style=\"width:100%;border-radius:12px;border:1px solid #d8e0e8;\" /><figcaption style=\"font-size:13px;color:#5a6b7b;text-align:center;padding:6px;\">Diarize these the day your certificate arrives.</figcaption></figure>"
+ },
+ {
+  "id": 11449,
+  "dir": "after-incorporation-30-days",
+  "search": "<h3 class=\"gcpa-closing\" id=\"toc-closing\">What to Send Us</h3>",
+  "replace": "<p>Want a checklist to work from? Please <a href=\"https://opencorporationfor35.ca/wp-content/uploads/2026/11/OpenCorp35-First-30-Days-After-Incorporation-Checklist.pdf\">download our free first 30 days checklist</a> before your consultation.</p>\n<figure style=\"margin:26px 0;\"><img src=\"https://opencorporationfor35.ca/wp-content/uploads/2026/11/why-choose-us-first-30-days.png\" alt=\"Why Canadian business owners choose Open Corporation For $35 for first 30 days\" style=\"width:100%;border-radius:12px;border:1px solid #d8e0e8;\" /><figcaption style=\"font-size:13px;color:#5a6b7b;text-align:center;padding:6px;\">Why business owners choose us.</figcaption></figure>\n<h3 class=\"gcpa-closing\" id=\"toc-closing\">What to Send Us</h3>"
+ },
+ {
+  "id": 11478,
+  "dir": "foreign-gst-registration",
+  "search": "<h3>Differences Between Regular and Simplified Registration Processes</h3>",
+  "replace": "<h3>Differences Between Regular and Simplified Registration Processes</h3>\n<figure style=\"margin:22px 0;\"><img src=\"https://opencorporationfor35.ca/wp-content/uploads/2026/11/foreign-gst-regular-vs-simplified.png\" alt=\"Regular versus simplified GST/HST registration: regular for businesses carrying on business in Canada, Form RC1 by mail or fax, input tax credits allowed, security usually required; simplified for digital sellers to consumers, online, quarterly, no input tax credits, no security; both at $30,000.\" style=\"width:100%;border-radius:12px;border:1px solid #d8e0e8;\" /><figcaption style=\"font-size:13px;color:#5a6b7b;text-align:center;padding:6px;\">Stock in a Canadian warehouse points to the regular regime.</figcaption></figure>"
+ },
+ {
+  "id": 11478,
+  "dir": "foreign-gst-registration",
+  "search": "<h3>Security Deposit Requirements and Exceptions for Non-Residents</h3>",
+  "replace": "<h3>Security Deposit Requirements and Exceptions for Non-Residents</h3>\n<figure style=\"margin:22px 0;\"><img src=\"https://opencorporationfor35.ca/wp-content/uploads/2026/11/foreign-gst-security-deposit.png\" alt=\"Non-resident GST/HST security deposit: generally 50% of first-year net tax, minimum $5,000, maximum $1,000,000; none if taxable supplies are $1,500,000 or less and net tax $3,000 or less, or under the simplified regime.\" style=\"width:100%;border-radius:12px;border:1px solid #d8e0e8;\" /><figcaption style=\"font-size:13px;color:#5a6b7b;text-align:center;padding:6px;\">Budget for the deposit before you send Form RC1.</figcaption></figure>"
+ },
+ {
+  "id": 11478,
+  "dir": "foreign-gst-registration",
+  "search": "<h3 class=\"gcpa-closing\" id=\"toc-closing\">What to Send Us</h3>",
+  "replace": "<p>Want a checklist to work from? Please <a href=\"https://opencorporationfor35.ca/wp-content/uploads/2026/11/OpenCorp35-Non-Resident-GST-HST-Registration-Checklist.pdf\">download our free non-resident GST/HST checklist</a> before your consultation.</p>\n<figure style=\"margin:26px 0;\"><img src=\"https://opencorporationfor35.ca/wp-content/uploads/2026/11/why-choose-us-foreign-gst.png\" alt=\"Why Canadian business owners choose Open Corporation For $35 for non-resident GST/HST\" style=\"width:100%;border-radius:12px;border:1px solid #d8e0e8;\" /><figcaption style=\"font-size:13px;color:#5a6b7b;text-align:center;padding:6px;\">Why business owners choose us.</figcaption></figure>\n<h3 class=\"gcpa-closing\" id=\"toc-closing\">What to Send Us</h3>"
+ }
+]

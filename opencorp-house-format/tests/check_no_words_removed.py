@@ -123,9 +123,9 @@ def main(src, heads, post, corrections=None):
     else:
         print(f"PASS all {len(expected)} draft headings present as headings")
 
-    faq_html = re.search(r'<div class="gcpa-faq" id="faq-main">(.*?)</div>\s*(?=<div class="gcpa-callout|<h2)',
+    faq_html = re.search(r'<div (?=[^>]*class="gcpa-faq")(?=[^>]*id="faq-main")[^>]*>(.*?)</div>\s*(?=<div class="gcpa-callout|<h2)',
                          open(post, encoding="utf-8").read(), re.S)
-    pairs = re.findall(r"<summary>(.*?)<span class=\"pl\">.*?<div class=\"ans\"><p>(.*?)</p>", faq_html.group(1), re.S)
+    pairs = re.findall(r"<summary>(.*?)<span class=\"pl\">.*?<div class=\"ans\">\s*<p>(.*?)</p>", faq_html.group(1) if faq_html else "", re.S)
     visible = [(html.unescape(q).strip(), html.unescape(a).strip()) for q, a in pairs]
     schema = []
     for s in page.scripts:
