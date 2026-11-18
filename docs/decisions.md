@@ -11532,3 +11532,73 @@ The image-box title is sized for a short price (45px). A CSS rule scoped to
 the first top-level Elementor section drops it to 26px on the live page, and
 the generator now writes the typography into the template so later cities need
 no CSS.
+
+
+## 2026-11-18 — Mississauga city hub, and per-city prose for Family 3
+
+### The problem a second city exposed
+
+Building Mississauga from the existing generator and swapping only the place
+name scored **0.976** against Toronto on the 6(k) body-similarity measure,
+against a 0.60 threshold. Plan line 1721 is explicit about why that matters:
+"template city pages with no unique per-page data are what the March 2026 spam
+and core updates removed."
+
+So `build/f3/city_copy.py` now holds per-city prose. `COPY[slug]['text']` is a
+list of (old, new) substring pairs applied to every string setting after the
+default template has been composed, and `COPY[slug]['faq']` replaces the whole
+question list. A city with no entry renders the default wording, which is what
+/toronto/ carries, so Toronto is untouched by any of it.
+
+The generator **fails the build** if any replacement pair matches nothing,
+because a silently unmatched pair would ship Toronto's wording on another
+city's page.
+
+What deliberately does not vary: the price wording, "registered EFILE
+electronic filer", T183CORP, the "is not nil" sentence and the CRA
+confirmation window. Those are fact or hard rule, and varying them to chase a
+similarity score would be the wrong trade.
+
+Toronto vs Mississauga now measures **0.467**.
+
+### Mississauga's local data
+
+**36,448** active federal business corporations, literal city value, no
+"including" clause. Toronto needed one because its five former municipalities
+carry 24,793 registered offices, 23% of the figure. Mississauga absorbed Port
+Credit, Streetsville, Malton, Erin Mills and Dixie in 1974, and between them
+they account for **18 rows**, 0.05%. Adding a clause for 18 rows would be
+noise, so the literal value stands alone, which also makes the sentence differ
+from Toronto's naturally rather than by paraphrase.
+
+### A gate that had to be loosened, carefully
+
+`audit_visible.py`'s `local data value` rule required the exact phrase "N
+active federal business corporations **have a registered office**".
+Mississauga's sentence is "Mississauga is the registered office of N active
+federal business corporations", so it failed. The rule was dictating sentence
+structure, which is the one thing 6(k) forces to vary. It now requires a
+comma-grouped figure immediately before "active federal business
+corporations", so a hub with no data, or with the placeholder replaced by
+prose, still fails.
+
+### Slug
+
+Appendix A lists these as `/nil-corporate-tax-filing-<city>/`; 6(c) line 1141
+lists them as `/<city>/` and names `/toronto/`, `/mississauga/` and the rest.
+6(c) is the operative specification table, carrying the gate, the counts and
+the dates, and Toronto already shipped at `/toronto/`, so **6(c) wins and the
+slug is `/mississauga/`**. Same precedent as the Family 2 calculator, where
+6(e) beat Appendix A.
+
+### Built
+
+Draft **2563** at `/mississauga/`, with SEO fields, `cnf_family` f3,
+`cnf_place` mississauga and the five `cnf_*` fields. 120,208 bytes, 17
+sections, 121 elements, audit 0 failures.
+
+### Note on determinism
+
+`reid()` regenerates element ids with `random` on every run, so two builds of
+the same city are never byte-identical. Compare visible text, not file hashes,
+when checking a rebuild changed nothing.

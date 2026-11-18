@@ -41,9 +41,13 @@ REQ_ALL=[('EFILE wording',r'[Rr]egistered EFILE electronic filer'),
 REQ_CITYHUB=[('overflow price',r'\$350\.00 (including HST|plus applicable sales tax)'),
      # Three valid states: a pulled city count, the jurisdiction wording, or
      # the loud placeholder on a hub whose data has not been pulled yet.
+     # The sentence around the figure has to differ city by city under 6(k),
+     # so the rule checks that a pulled figure is present, not how it is
+     # worded. It still demands a comma-grouped number next to the phrase, so
+     # a hub with no data, or with the placeholder swapped for prose, fails.
      ('local data value',
-      r'\d{1,3}(,\d{3})+ active federal business corporations have a '
-      r'registered office|T2 returns were assessed|PULL CORPORATION COUNT'),
+      r'\d{1,3}(,\d{3})+ active federal business corporations'
+      r'|T2 returns were assessed|PULL CORPORATION COUNT'),
      ('pull date caption',r'PULL DATE|Pulled ')]
 
 fail=0

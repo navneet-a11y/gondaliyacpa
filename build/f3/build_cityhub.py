@@ -13,6 +13,8 @@ pulled from the Corporations Canada open-data bulk file, the generator writes a
 loud placeholder that cannot be mistaken for a number.
 """
 import json, copy, random, sys, os
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from city_copy import COPY
 
 SRC, OUTDIR = sys.argv[1], sys.argv[2]
 WANT = sys.argv[3:] or None
@@ -43,6 +45,15 @@ NEEDS_DATE = '[[PULL DATE]]'
 # used because the sentence claims a registered office *in Toronto*, and the
 # source line names the method so the pull stays reproducible.
 CITY_DATA = {
+ 'mississauga': {
+   # Port Credit, Streetsville, Malton, Erin Mills and Dixie were absorbed in
+   # 1974 but survive in only 18 registered-office rows between them, against
+   # Toronto's 24,793, so the literal city value stands alone here and the
+   # sentence carries no "including" clause.
+   'count':    '36,448',
+   'includes': '',
+   'pulled':   'November 18, 2026',
+ },
  'toronto': {
    'count':    '106,120',
    'includes': 'including the former municipalities of Scarborough, '
@@ -221,11 +232,11 @@ FAQ_CSS = (
  '</style>'
 )
 
-def faq_html(name, slug):
+def faq_html(name, slug, qa=None):
     """Eight questions, each answered in a sentence or two, linking on to the
     page that answers it in full rather than restating it (6(k))."""
     B = 'https://corpnilfilingfor300.ca'
-    qa = [
+    default = [
      (f'Does a {name} corporation with no activity still have to file a T2?',
       f'<p>Yes. A corporation files a T2 for every tax year it exists, whether or '
       f'not it earned anything. The obligation ends when the corporation is '
@@ -279,12 +290,14 @@ def faq_html(name, slug):
       f'<a href="{B}/final-t2-before-dissolution-{slug}/">Final T2 before '
       f'dissolution</a>.</p>'),
     ]
+    qa = qa or default
     rows = ''.join(
         f'<details><summary>{q}</summary><div class="cnf-a">{a}</div></details>'
         for q, a in qa)
     return (FAQ_CSS + '<div class="cnf-faq">' + rows + '</div>')
 
 def build(slug,name,kind,jkey,supplied):
+    C = COPY.get(slug, {})
     jt,jb = JNOTE[jkey]  # jt unused in this map; the shell has one heading
     if supplied:
         datum = (f'{supplied} T2 returns were assessed by the Canada Revenue Agency for corporations in {name}.')
@@ -442,7 +455,7 @@ def build(slug,name,kind,jkey,supplied):
      # 2026-11-18: the FAQ closes the page, after the final call to action,
      # at Navneet's request.
      (33,[('title',f'Nil T2 Filing in {name}: Common Questions')],{}),
-     (34,[('html',faq_html(name,slug))],{}),
+     (34,[('html',faq_html(name,slug,C.get('faq')))],{}),
     ]
     TRUST=['CPA Ontario registered firm, Firm Registration 61330051',
            'Registered EFILE electronic filer',
@@ -518,6 +531,36 @@ def build(slug,name,kind,jkey,supplied):
             if pos<len(ws): setlink(ws[pos],url)
         desource(sec)
         out.append(sec)
+
+    # Per-city prose (city_copy.COPY). A name swap alone scores 0.976 against
+    # Toronto on the 6(k) measure, so each city rewrites the shared wording
+    # rather than only its place name. Applied last, over the composed
+    # template, so the section map stays one thing and the writing another.
+    pairs = C.get('text') or []
+    if pairs:
+        hits = {}
+        def sub(n):
+            if isinstance(n, dict):
+                st = n.get('settings')
+                if isinstance(st, dict):
+                    for k, v in list(st.items()):
+                        if isinstance(v, str) and v:
+                            for i, (a, b) in enumerate(pairs):
+                                if a in v:
+                                    v = v.replace(a, b)
+                                    hits[i] = hits.get(i, 0) + 1
+                            st[k] = v
+                for v in (n.get('elements') or []):
+                    sub(v)
+            elif isinstance(n, list):
+                for v in n:
+                    sub(v)
+        sub(out)
+        missed = [a for i, (a, b) in enumerate(pairs) if i not in hits]
+        if missed:
+            raise SystemExit(
+                f'{slug}: {len(missed)} replacement(s) matched nothing, so the '
+                f'default wording would ship. First: {missed[0][:90]!r}')
     return out
 
 made=[]
