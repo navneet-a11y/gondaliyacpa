@@ -446,7 +446,204 @@ BRAMPTON_TEXT = [
   'Catching Up in Brampton: What People Ask'),
 ]
 
+OTTAWA_FAQ = [
+ ('The corporation traded last year but not this one. Does that still count?',
+  '<p>Yes. The test is applied year by year, not to the corporation as a whole. '
+  'A quiet year between two active ones is filed as nil on its own. '
+  '<a href="https://corpnilfilingfor300.ca/no-activity-corporation-tax-return-ottawa/">'
+  'What no activity means</a>.</p>'),
+ ('Can you file only the nil years and leave the rest to my own accountant?',
+  '<p>Yes. We file the years that qualify and hand the others back untouched, '
+  'so nothing is done twice and nothing is billed twice.</p>'),
+ ('Where exactly is the line between nil and not nil?',
+  '<p>Any revenue, any expense claimed, any payroll, any movement through the '
+  'bank account puts a year on the other side of it. Investment income, rent '
+  'and dividends do the same. '
+  '<a href="https://corpnilfilingfor300.ca/inactive-holding-corporation-t2-filing-ottawa/">'
+  'When a year is not nil</a>.</p>'),
+ ('I invoiced once in the year, for a small amount. Is it still nil?',
+  '<p>No. One invoice is revenue, so the year is a regular T2 rather than a '
+  'nil filing. We tell you that before anything is charged.</p>'),
+ ('What is the deadline when the year end is not December?',
+  '<p>Six months after whatever your year end is. A March 31 year end is due '
+  'September 30. '
+  '<a href="https://corpnilfilingfor300.ca/nil-t2-filing-deadline-ottawa/">'
+  'Work out your date</a>.</p>'),
+ ('How is the return authorised?',
+  '<p>With a T183CORP for that tax year, signed on screen. One year, one form. '
+  '<a href="https://corpnilfilingfor300.ca/guides/t183corp-signing-and-transmission/">'
+  'How signing works</a>.</p>'),
+ ('Several quiet years in a row. Are they priced any differently?',
+  '<p>No. Each is its own return at $300.00 plus HST per tax year, filed oldest '
+  'first. '
+  '<a href="https://corpnilfilingfor300.ca/catch-up-nil-t2-filing-ottawa/">'
+  'Catch-up filing</a>.</p>'),
+ ('Is my Ontario annual return handled at the same time?',
+  '<p>No. That one goes to the Ontario Business Registry and sits outside this '
+  'service, though we check whether it is outstanding. '
+  '<a href="https://corpnilfilingfor300.ca/tools/ontario-annual-return-due-date-calculator/">'
+  'Check your date</a>.</p>'),
+ ('I am winding the corporation down after a quiet year. What is left to do?',
+  '<p>A final T2 covering the period to dissolution, due six months after it. '
+  'That is what closes the account. '
+  '<a href="https://corpnilfilingfor300.ca/final-t2-before-dissolution-ottawa/">'
+  'Final T2 before dissolution</a>.</p>'),
+ ('Do I have to be in Canada to sign?',
+  '<p>No. The signature is electronic, so a director can authorise the return '
+  'from anywhere. '
+  '<a href="https://corpnilfilingfor300.ca/nil-t2-filing-for-non-resident-owned-corporations-ottawa/">'
+  'Non-resident owned corporations</a>.</p>'),
+]
+
+OTTAWA_TEXT = [
+ ('Nil T2 filing for Ottawa corporations. One price for every tax year, '
+  'with no hourly billing and no add-on fees.',
+  'A quiet year for your Ottawa corporation still needs a T2. One flat fee for '
+  'that year, filed online.'),
+
+ ('Nil T2 Filing for Ottawa Corporations',
+  'Nil T2 Filing in Ottawa for a Year With No Activity'),
+ ('A nil T2 is the corporate return an Ottawa corporation files for a tax '
+  'year in which it had no revenue, no expenses and no bank activity. The '
+  'corporation still exists, so the return is still due. Incorporating and '
+  'then going quiet does not end the obligation, and a year left unfiled stays '
+  'open until the return is transmitted.',
+  'A corporation does not have to be finished to have a nil year. Plenty of '
+  'Ottawa companies work steadily, then spend a full tax year without '
+  'invoicing anything at all, and pick up again afterwards. That middle year '
+  'is still a filing year. It is filed as nil, separately from the years on '
+  'either side of it.'),
+ ('Nil T2 filing in Ottawa covers the year end to end. The return is '
+  'prepared and reviewed, you sign a T183CORP for each tax year, and the '
+  'return is transmitted to the Canada Revenue Agency electronically. It is '
+  'done online from start to finish, so there is nothing to print, mail or '
+  'sign in person, wherever in the city your registered office sits.',
+  'Which is why the first thing we do is check the year rather than assume it. '
+  'One invoice, one expense claimed or one movement through the bank account '
+  'and the year is not nil, and we say so before charging for it. Where it '
+  'does qualify, the return is prepared, reviewed by a CPA, signed with a '
+  'T183CORP and transmitted. Nepean, Kanata or downtown, the work is the same '
+  'and none of it is done in person.'),
+
+ ('One Fee Per Tax Year', 'A Year at a Time'),
+ ('No hourly billing and no add-on charges for schedules or transmission.',
+  'Each nil year is priced on its own. Active years are not part of this and '
+  'are not charged for.'),
+ ('Every Unfiled Year Counts', 'Quiet Does Not Mean Exempt'),
+ ('Each year is a separate T2 return at $300.00 plus HST per tax year.',
+  'A year with nothing in it is still owed, at $300.00 plus HST per tax year.'),
+ ('Signed and Filed Online', 'Checked Before It Is Charged'),
+ ('Nothing to print. You sign the T183CORP electronically for each tax year.',
+  'We confirm the year really was nil first, then send the T183CORP to sign.'),
+
+ ('Corporations in Ottawa', 'Federal Corporations Based in Ottawa', 'exact'),
+ ('42,154 active federal business corporations have a registered office in '
+  'Ottawa, including the former municipalities of Nepean, Kanata, Gloucester, '
+  'Orleans and Stittsville.',
+  'Ottawa holds 42,154 active federal business corporations, counting Nepean, '
+  'Kanata, Gloucester, Orleans and Stittsville, which became part of the city '
+  'in 2001.'),
+
+ ('Nil T2 Filing Services in Ottawa', 'What We File in Ottawa'),
+
+ ('A T2 return for a corporation with no activity in the tax year, CPA '
+  'reviewed and transmitted electronically.',
+  'One tax year with nothing in it, checked, prepared and sent to the CRA.'),
+ ('Several unfiled nil years filed together, oldest year first.',
+  'More than one quiet year, filed in date order.'),
+ ('For a corporation that has stopped trading but has not been dissolved.',
+  'Work has stopped for now; the company and its filings have not.'),
+ ('The last return for a corporation being wound up, due within six months of '
+  'dissolution.',
+  'The closing return, six months from the dissolution date.'),
+ ('The two-page T2 Short return, where every CRA condition for using it is met.',
+  'The short form, where the CRA\u2019s conditions for it are all met.'),
+ ('What the $300.00 fee covers and what it does not.',
+  'What sits inside the fee, and what does not.'),
+ ('Returns for years already past their due date. An unfiled year stays open '
+  'until it is filed.',
+  'Years whose date has passed and which remain open.'),
+ ('No revenue, no bank activity and no employees. The filing obligation still '
+  'applies.',
+  'Nothing invoiced, nothing paid, nothing banked, and still a return to file.'),
+ ('For a numbered corporation that was incorporated and never traded, or has '
+  'gone quiet.',
+  'A numbered company between projects, or one that never got going.'),
+ ('A holding corporation with investment income, rental income or dividends '
+  'paid or received is not nil.',
+  'Investment income, rent or dividends take the year out of nil territory.'),
+ ('Due within six months of the fiscal year-end, every year, until the '
+  'corporation is dissolved.',
+  'Six months from your year end, whichever month that falls in.'),
+ ('Nil filing where the shareholders are outside Canada.',
+  'Where the people behind the corporation are outside Canada.'),
+
+ ('What You Get for $300.00 in Ottawa', 'What the Fee Buys'),
+ ('CPA Prepared and Reviewed', 'The Year Is Checked First'),
+ ('Your T2 is prepared and reviewed by a CPA Ontario registered firm, Firm '
+  'Registration 61330051, before it is transmitted.',
+  'Before anything is prepared, a CPA Ontario registered firm, Firm '
+  'Registration 61330051, confirms the year qualifies.'),
+ ('Registered EFILE Electronic Filer', 'Transmitted, Not Posted'),
+ ('The return goes to the Canada Revenue Agency electronically, not by mail.',
+  'As a registered EFILE electronic filer we send it straight to the CRA.'),
+ ('One Price Per Tax Year', 'One Figure, One Year'),
+ ('$300.00 plus HST per tax year, quoted before any work starts. No hourly '
+  'billing and no add-on charges.',
+  '$300.00 plus HST per tax year, settled at the start and not added to.'),
+ ('T183CORP Signed Online', 'Authorised With a T183CORP'),
+ ('You receive a T183CORP for each tax year and sign it electronically. One '
+  'form per year.',
+  'A T183CORP covers one tax year and is signed on screen.'),
+ ('CRA Confirmation in Writing', 'Confirmation You Can Keep'),
+ ('Your CRA confirmation is emailed within 3 business days of transmission.',
+  'The CRA confirmation is emailed within 3 business days of transmission.'),
+ ('We Tell You If You Are Not Nil', 'Told Early If the Year Does Not Qualify'),
+ ('A corporation with investment income, rental income, or dividends paid or '
+  'received is not nil. We tell you before any further charge.',
+  'Investment income, rent or dividends received or paid mean the year is not '
+  'nil. You hear that before any further charge.'),
+
+ ('How it works', 'The steps'),
+ ('How Nil T2 Filing Works in Ottawa', 'Check the Year, Then File It'),
+ ('Four steps, all online. You send the corporation details, a CPA prepares '
+  'and reviews the return, you sign the T183CORP, and the return is '
+  'transmitted to the Canada Revenue Agency.',
+  'The order matters: the year is tested before it is prepared, so nothing is '
+  'charged for a year that turns out not to be nil.'),
+ ('Send Details', 'Tell Us the Year'),
+ ('Corporation number, tax year end, and which years are unfiled. Online, with '
+  'no appointment.',
+  'The corporation number, the year end, and the year you believe was quiet.'),
+ ('CPA Review', 'We Test It'),
+ ('A CPA checks that the year is nil and prepares the T2 return.',
+  'A CPA confirms the year meets the nil test, then prepares the return.'),
+ ('Sign T183CORP', 'You Authorise'),
+ ('You sign one T183CORP for each tax year, electronically.',
+  'A T183CORP for that year, signed on screen.'),
+ ('CRA Confirmation', 'It Goes to the CRA'),
+ ('The return is transmitted and your CRA confirmation is emailed within 3 '
+  'business days.',
+  'Transmitted electronically, with confirmation emailed within 3 business '
+  'days.'),
+
+ ('Nil T2 filing price', 'Price'),
+ ('Nil T2 Filing Price in Ottawa', 'What a Quiet Year Costs in Ottawa'),
+ ('$300.00 plus HST per tax year. The fee covers preparation, CPA review, the '
+  'T183CORP for signature, and electronic transmission to the Canada Revenue '
+  'Agency. Each unfiled tax year is a separate return at the same price.',
+  '$300.00 plus HST per tax year covers the check, the preparation, the CPA '
+  'review, the T183CORP and transmission to the Canada Revenue Agency. Only '
+  'years that are genuinely nil are filed under it, and only those are '
+  'charged for.'),
+
+ ('File your Ottawa nil T2 return', 'File your Ottawa corporation\u2019s quiet year'),
+ ('Nil T2 Filing in Ottawa: Common Questions',
+  'Nil Years in Ottawa: Questions We Get'),
+]
+
 COPY = {
  'mississauga': {'text': MISSISSAUGA_TEXT, 'faq': MISSISSAUGA_FAQ},
  'brampton':    {'text': BRAMPTON_TEXT,    'faq': BRAMPTON_FAQ},
+ 'ottawa':      {'text': OTTAWA_TEXT,      'faq': OTTAWA_FAQ},
 }

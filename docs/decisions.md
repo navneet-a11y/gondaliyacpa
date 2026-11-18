@@ -11762,3 +11762,72 @@ arrangement as the other two.
 Toronto and Mississauga were both published by Navneet, each time while their
 service links were still 404. Brampton is complete and its links resolve, but
 publishing is an outward-facing step and is left to him.
+
+
+## 2026-11-18 — Ottawa city hub, chosen on the data
+
+Navneet asked for whichever pending city brings the most traffic. The plan
+estimates only one Family 3 term (`nil t2 filing toronto`, 140/mo) and none for
+the other cities, and no city hub has GSC history yet, so the best proxy
+available is the addressable market from our own pull: active federal business
+corporations per city.
+
+| City | Corporations |
+|---|---|
+| **Ottawa** | **42,154** |
+| Vaughan | 14,862 |
+| Markham | 13,280 |
+| Hamilton | 10,168 |
+| Richmond Hill | 10,128 |
+| Oakville | 10,060 |
+| Oshawa | 4,922 |
+| Windsor | 4,704 |
+| Guelph | 2,512 |
+
+Ottawa is nearly three times the next city and the only one left with a large
+metro's own search demand. Draft **2573** at `/ottawa/`.
+
+### Second city to need the amalgamation clause
+
+Nepean, Kanata, Gloucester, Orleans and Stittsville joined Ottawa in 2001 and
+carry **7,718** registered offices between them, 22% of the figure. That is
+Toronto's situation, not Mississauga's or Brampton's, so Ottawa's sentence
+names them.
+
+### Its own angle
+
+Toronto is definitional, Mississauga is about corporations that never started,
+Brampton is about catching up on missed years. Ottawa's is the **intermittent**
+case: a corporation that trades, goes quiet for a full tax year, and starts
+again. That leads naturally to the nil boundary, so the page checks the year
+before charging for it and says so throughout.
+
+Pairwise 6(k) across all four, every pair under 0.60:
+
+| | Toronto | Mississauga | Brampton |
+|---|---|---|---|
+| Mississauga | 0.468 | | |
+| Brampton | 0.440 | 0.459 | |
+| Ottawa | 0.438 | 0.478 | 0.423 |
+
+### A grammar bug the validator caught
+
+The Ottawa build failed with "1 replacement(s) matched nothing". The cause was
+in the generator, not the copy: the default intro hardcoded "a", so it rendered
+**"a Ottawa corporation"**, and would have done the same for Oakville and
+Oshawa. An `art()` helper now picks "a" or "an", used in the intro and the two
+default FAQ questions that name the city. Verified: "an Oakville", "an Oshawa",
+"a Markham".
+
+A city with its own copy entry rewrites those sentences anyway, so this only
+shows on a city built before its copy is written -- which is exactly when
+nobody would be looking closely.
+
+### Generation script kept
+
+`build/f3/genops.py` turns a built template into the
+`wp_update_page_layout` ops for a city duplicated from a sibling, repointing
+the FAQ's links to the Ontario service pages and asserting the op count stays
+under the 50-per-call cap. 44 ops for Ottawa, as for Brampton.
+
+Left as a draft.

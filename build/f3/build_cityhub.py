@@ -45,6 +45,15 @@ NEEDS_DATE = '[[PULL DATE]]'
 # used because the sentence claims a registered office *in Toronto*, and the
 # source line names the method so the pull stays reproducible.
 CITY_DATA = {
+ 'ottawa': {
+   # Nepean, Kanata, Gloucester, Orleans and Stittsville joined Ottawa in the
+   # 2001 amalgamation and carry 7,718 registered offices between them, 22% of
+   # the figure, so Ottawa takes the clause as Toronto does.
+   'count':    '42,154',
+   'includes': 'including the former municipalities of Nepean, Kanata, '
+               'Gloucester, Orleans and Stittsville',
+   'pulled':   'November 18, 2026',
+ },
  'brampton': {
    # Bramalea, Churchville and Mount Pleasant were absorbed in 1974 and carry
    # 7 registered offices between them, so the literal city value stands alone.
@@ -142,6 +151,16 @@ def setlink(w,url):
     if not any(isinstance(s.get(k),dict) for k in ('link','button_link')) and w['widgetType']=='button':
         s['link']={'url':url,'is_external':'','nofollow':'','custom_attributes':''}
 def P(*p): return ''.join('<p>%s</p>'%x for x in p)
+
+def art(name):
+    """'a' or 'an' before a place name.
+
+    The default wording hardcoded 'a', which reads 'a Ottawa corporation' and
+    would do the same for Oakville and Oshawa. A city with its own entry in
+    city_copy rewrites these sentences anyway, but a city built before its
+    copy is written should still be grammatical.
+    """
+    return 'an' if name[:1].upper() in 'AEIOU' else 'a'
 
 # The supplied template is a gondaliyacpa.ca page, so it carries that domain's
 # assets and links: a hero background, decorative staff photos behind the
@@ -244,7 +263,8 @@ def faq_html(name, slug, qa=None):
     page that answers it in full rather than restating it (6(k))."""
     B = 'https://corpnilfilingfor300.ca'
     default = [
-     (f'Does a {name} corporation with no activity still have to file a T2?',
+     (f'Does {art(name)} {name} corporation with no activity still have to '
+      f'file a T2?',
       f'<p>Yes. A corporation files a T2 for every tax year it exists, whether or '
       f'not it earned anything. The obligation ends when the corporation is '
       f'dissolved, not when it stops trading. '
@@ -254,7 +274,7 @@ def faq_html(name, slug, qa=None):
       '<p>No revenue, no expenses, no bank activity and no employees in the tax '
       'year. A corporation with investment income, rental income, or dividends '
       'paid or received is not nil, and we tell you before any further charge.</p>'),
-     (f'When is the nil T2 due for a {name} corporation?',
+     (f'When is the nil T2 due for {art(name)} {name} corporation?',
       f'<p>Within six months of the fiscal year end, the same deadline as any '
       f'other T2. The year end is your corporation\u2019s own, not December 31. '
       f'<a href="{B}/nil-t2-filing-deadline-{slug}/">See the deadline page</a>.</p>'),
@@ -362,7 +382,8 @@ def build(slug,name,kind,jkey,supplied):
      # ones /nil-t2-filing/ already publishes.
      (1,[('ekit_heading_title',f'Nil T2 Filing for {name} Corporations'),
          ('ekit_heading_extra_title',
-          P(f'A nil T2 is the corporate return a {name} corporation files for a '
+          P(f'A nil T2 is the corporate return {art(name)} {name} corporation '
+            f'files for a '
             'tax year in which it had no revenue, no expenses and no bank '
             'activity. The corporation still exists, so the return is still due. '
             'Incorporating and then going quiet does not end the obligation, and '
