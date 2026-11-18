@@ -11296,3 +11296,44 @@ Both scrubs are in `desource()`, so every later city build gets them.
 The reused cards had their images stripped as gondaliyacpa.ca assets, so
 sections 16 and 22 render as text-only cards until images are added. The
 layout holds; only the artwork is missing.
+
+
+## 2026-11-18 — Toronto city hub: source section 1 (intro and photograph) added
+
+Navneet asked why the intro block and team photograph at the top of the
+Mississauga page were missing. Section 1 was dropped because every part of it
+breached a rule: the heading read "AFFORDABLE Business Tax Accountant" (hard
+rule 4), the body described the other firm's full service list, and both
+buttons pointed at gondaliyacpa.ca consultation and pricing-calculator pages
+(hard rule 7). All five fields are replaced rather than the section dropped.
+
+The copy is not invented. It restates what `/nil-t2-filing/` (page 434)
+already publishes, including the firm's registered address, which is useful on
+a Toronto page specifically:
+
+> Gondaliya CPA Professional Corporation is a CPA Ontario registered firm at
+> 55 Queen St E, Toronto, Firm Registration 61330051.
+
+### The photograph
+
+The source hotlinked `169A7423-1-scaled.jpg` from gondaliyacpa.ca, so
+`desource()` would have emptied it and left a blank frame. The same photograph
+is **already in this site's media library** as attachment 273
+(`169A7423-1-scaled-2.jpg`), so the image widget points there, with the
+attachment id set so Elementor resolves srcset.
+
+Its stored alt text reads "Gondaliya CPA accountants who file nil T2 returns",
+which `desource()`'s new alt rule would strip for naming the other firm. That
+rule is right for the assets it removes, so rather than weaken it, section 1
+sets its own alt: "CPA Ontario registered firm filing nil T2 returns for
+Toronto corporations". The firm name is not banned -- it is the actual filer,
+and page 434 says so -- but the alt does not need to repeat it.
+
+Result: 114,289 bytes, 15 sections, 117 elements, 79 visible strings, audit 0
+failures.
+
+### Noted, not changed
+
+Page 434 renders "$300 + HST per Tax Year" in one trust cell. Hard rule 9 wants
+"$300.00 plus HST per tax year" after the 2026-11-12 ruling. Not touched here;
+it belongs with the HST sweep already open in this file.

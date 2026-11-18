@@ -134,6 +134,13 @@ def P(*p): return ''.join('<p>%s</p>'%x for x in p)
 HERO_IMG = ('https://corpnilfilingfor300.ca/wp-content/uploads/2026/09/'
             'business-executives-having-meeting_1098-18316.jpg')
 
+# Attachment 273 on corpnilfilingfor300.ca: the same team photograph the
+# source template hotlinked from gondaliyacpa.ca, already uploaded to this
+# site. Used so section 1 carries its image instead of an empty frame.
+INTRO_IMG_ID = 273
+INTRO_IMG = ('https://corpnilfilingfor300.ca/wp-content/uploads/2026/09/'
+             '169A7423-1-scaled-2.jpg')
+
 
 def desource(n, hero_done=[False]):
     """Remove every gondaliyacpa.ca asset and link target from a section."""
@@ -215,6 +222,24 @@ def build(slug,name,kind,jkey,supplied):
          ('editor',P('Registered EFILE electronic filer. Your CRA confirmation is '
                      'emailed within 3 business days.')),
          ('text',CTA),('text','See the price')],{4:FORM,5:PRICE}),
+     # 2026-11-18: intro block with the team photograph. The original led
+     # with "AFFORDABLE Business Tax Accountant" (hard rule 4) over copy for
+     # the other firm's full service list, and both buttons pointed at
+     # gondaliyacpa.ca consultation and pricing pages (hard rule 7). Heading,
+     # body, both buttons and the image are all replaced. The facts are the
+     # ones /nil-t2-filing/ already publishes.
+     (1,[('ekit_heading_title',f'Nil T2 Filing for Inactive {name} Corporations'),
+         ('ekit_heading_extra_title',
+          P('Gondaliya CPA Professional Corporation is a CPA Ontario registered '
+            'firm at 55 Queen St E, Toronto, Firm Registration 61330051. We file '
+            f'nil T2 returns for {name} corporations that had no activity in the '
+            'tax year.',
+            '$300.00 plus HST per tax year. One price for every year, with no '
+            'hourly billing and no add-on fees. We are a registered EFILE '
+            'electronic filer, so the return is transmitted to the Canada Revenue '
+            'Agency electronically and your CRA confirmation is emailed within 3 '
+            'business days.')),
+         ('text',CTA),('text','See the price')],{1:FORM,2:PRICE}),
      # trust strip: all four cells overwritten, see TRUST below
      (2,None,{}),
      # 2026-11-18: three-cell strip. The original made availability claims
@@ -321,6 +346,18 @@ def build(slug,name,kind,jkey,supplied):
                             s[q[0][0]]=q[0][1]; q.pop(0)
                         break
                     else: break
+        if idx==1:
+            # The image widget carries a gondaliyacpa.ca URL that desource()
+            # would blank, leaving an empty frame. Point it at this site's own
+            # copy of the same photograph instead, with alt text that does not
+            # repeat the firm name (desource() strips alt naming the other
+            # firm, which is correct for the assets it removes).
+            for w in ws:
+                if w['widgetType']=='image' and isinstance(w['settings'].get('image'),dict):
+                    w['settings']['image']={
+                        'url':INTRO_IMG,'id':INTRO_IMG_ID,'source':'library','size':'',
+                        'alt':f'CPA Ontario registered firm filing nil T2 returns '
+                              f'for {name} corporations'}
         if idx==2:
             # Every cell is overwritten. The originals are a review count and
             # two guarantees, so leaving any of them is a hard-rule breach.
