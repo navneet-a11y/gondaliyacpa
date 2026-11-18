@@ -228,17 +228,19 @@ def build(slug,name,kind,jkey,supplied):
      # gondaliyacpa.ca consultation and pricing pages (hard rule 7). Heading,
      # body, both buttons and the image are all replaced. The facts are the
      # ones /nil-t2-filing/ already publishes.
-     (1,[('ekit_heading_title',f'Nil T2 Filing for Inactive {name} Corporations'),
+     (1,[('ekit_heading_title',f'Nil T2 Filing for {name} Corporations'),
          ('ekit_heading_extra_title',
-          P('Gondaliya CPA Professional Corporation is a CPA Ontario registered '
-            'firm at 55 Queen St E, Toronto, Firm Registration 61330051. We file '
-            f'nil T2 returns for {name} corporations that had no activity in the '
-            'tax year.',
-            '$300.00 plus HST per tax year. One price for every year, with no '
-            'hourly billing and no add-on fees. We are a registered EFILE '
-            'electronic filer, so the return is transmitted to the Canada Revenue '
-            'Agency electronically and your CRA confirmation is emailed within 3 '
-            'business days.')),
+          P(f'A nil T2 is the corporate return a {name} corporation files for a '
+            'tax year in which it had no revenue, no expenses and no bank '
+            'activity. The corporation still exists, so the return is still due. '
+            'Incorporating and then going quiet does not end the obligation, and '
+            'a year left unfiled stays open until the return is transmitted.',
+            f'Nil T2 filing in {name} covers the year end to end. The return is '
+            'prepared and reviewed, you sign a T183CORP for each tax year, and '
+            'the return is transmitted to the Canada Revenue Agency '
+            'electronically. It is done online from start to finish, so there is '
+            'nothing to print, mail or sign in person, wherever in the city your '
+            'registered office sits.')),
          ('text',CTA),('text','See the price')],{1:FORM,2:PRICE}),
      # trust strip: all four cells overwritten, see TRUST below
      (2,None,{}),

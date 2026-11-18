@@ -11307,12 +11307,21 @@ rule 4), the body described the other firm's full service list, and both
 buttons pointed at gondaliyacpa.ca consultation and pricing-calculator pages
 (hard rule 7). All five fields are replaced rather than the section dropped.
 
-The copy is not invented. It restates what `/nil-t2-filing/` (page 434)
-already publishes, including the firm's registered address, which is useful on
-a Toronto page specifically:
+**Revised same day.** The first attempt restated what `/nil-t2-filing/`
+(page 434) already publishes, including the firm's registered address and the
+price. Navneet asked for unique copy instead, carrying the page's own keyword
+and explaining what the service is, with no address, registration number or
+price -- all three already appear elsewhere on the page, in the trust strip
+and the price block, so repeating them in the intro wasted the one block that
+could rank.
 
-> Gondaliya CPA Professional Corporation is a CPA Ontario registered firm at
-> 55 Queen St E, Toronto, Firm Registration 61330051.
+The intro now defines a nil T2 for a reader who does not know the term, states
+that incorporating and going quiet does not end the filing obligation, and
+describes the T183CORP and electronic transmission. Measured against page 434's
+intro with the 6(k) method (word tokens, `autojunk=False`, both orders, max)
+it scores **0.105** against a 0.60 threshold, so it is new writing rather than
+a reword. Primary keyword "nil t2 filing toronto" appears as the H2 and again
+in the body.
 
 ### The photograph
 
