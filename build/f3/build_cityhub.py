@@ -150,6 +150,21 @@ def desource(n, hero_done=[False]):
                     else:
                         v['url'] = ''
                         v.pop('id', None)
+                # An emptied image keeps its alt text, which still named the
+                # other firm and its principal ("Sharad Gondaliya, CPA") on an
+                # image box with no image left. Alt text is not visible text,
+                # so the audit cannot see it, but it ships in the HTML.
+                if isinstance(v, dict) and 'alt' in v and isinstance(v['alt'], str):
+                    if not v.get('url') or 'Gondaliya' in v['alt']:
+                        v['alt'] = ''
+            # ElementsKit decoration carried over from the source page: a
+            # watermark word rendered behind the heading (the original reads
+            # "bussiness", misspelled), and the inert Read More label on image
+            # boxes whose button is switched off. Neither belongs on this site.
+            if st.get('shadow_text_content'):
+                st['shadow_text_content'] = ''
+            if st.get('ekit_image_box_btn_text') and not st.get('ekit_image_box_enable_btn'):
+                st['ekit_image_box_btn_text'] = ''
         for v in (n.get('elements') or []):
             desource(v)
     elif isinstance(n, list):
@@ -202,10 +217,77 @@ def build(slug,name,kind,jkey,supplied):
          ('text',CTA),('text','See the price')],{4:FORM,5:PRICE}),
      # trust strip: all four cells overwritten, see TRUST below
      (2,None,{}),
+     # 2026-11-18: three-cell strip. The original made availability claims
+     # ("Weekend and evening support until 9 PM"), which this site does not
+     # make, so all six fields are overwritten.
+     (3,[('title','One Fee Per Tax Year'),
+         ('editor',P('No hourly billing and no add-on charges for schedules '
+                     'or transmission.')),
+         ('title','Every Unfiled Year Counts'),
+         ('editor',P('Each year is a separate T2 return at $300.00 plus HST '
+                     'per tax year.')),
+         ('title','Signed and Filed Online'),
+         ('editor',P('Nothing to print. You sign the T183CORP electronically '
+                     'for each tax year.'))],{}),
      (6,[('title',f'Corporations in {name}')],{}),
      (7,[('editor',P(datum, source))],{}),
+     # 2026-11-18: section 8 heads the service grid.
+     (8,[('ekit_heading_title',f'Nil T2 Filing Services in {name}')],{}),
      # the twelve Family 4 service pages for this place
      (9,None,{}),
+     # What the fee buys. Six cards, every claim one this site already makes.
+     (16,[('ekit_heading_title',f'What You Get for $300.00 in {name}'),
+          ('ekit_image_box_title_text','CPA Prepared and Reviewed'),
+          ('ekit_image_box_description_text',
+           'Your T2 is prepared and reviewed by a CPA Ontario registered firm, '
+           'Firm Registration 61330051, before it is transmitted.'),
+          ('ekit_image_box_title_text','Registered EFILE Electronic Filer'),
+          ('ekit_image_box_description_text',
+           'The return goes to the Canada Revenue Agency electronically, not by mail.'),
+          ('ekit_image_box_title_text','One Price Per Tax Year'),
+          ('ekit_image_box_description_text',
+           '$300.00 plus HST per tax year, quoted before any work starts. '
+           'No hourly billing and no add-on charges.'),
+          ('ekit_image_box_title_text','T183CORP Signed Online'),
+          ('ekit_image_box_description_text',
+           'You receive a T183CORP for each tax year and sign it electronically. '
+           'One form per year.'),
+          ('ekit_image_box_title_text','CRA Confirmation in Writing'),
+          ('ekit_image_box_description_text',
+           'Your CRA confirmation is emailed within 3 business days of transmission.'),
+          ('ekit_image_box_title_text','We Tell You If You Are Not Nil'),
+          ('ekit_image_box_description_text',
+           'A corporation with investment income, rental income, or dividends paid '
+           'or received is not nil. We tell you before any further charge.')],{}),
+     # Process: intro shell, then the four steps.
+     (21,[('editor',P('How it works')),
+          ('title',f'How Nil T2 Filing Works in {name}'),
+          ('text',CTA),('text','See the price'),
+          ('editor',P('Four steps, all online. You send the corporation details, a '
+                      'CPA prepares and reviews the return, you sign the T183CORP, '
+                      'and the return is transmitted to the Canada Revenue Agency.'))],
+      {2:FORM,3:PRICE}),
+     (22,[('title_text','Send Details'),
+          ('description_text','Corporation number, tax year end, and which years are '
+                              'unfiled. Online, with no appointment.'),
+          ('title_text','CPA Review'),
+          ('description_text','A CPA checks that the year is nil and prepares the '
+                              'T2 return.'),
+          ('title_text','Sign T183CORP'),
+          ('description_text','You sign one T183CORP for each tax year, '
+                              'electronically.'),
+          ('title_text','CRA Confirmation'),
+          ('description_text','The return is transmitted and your CRA confirmation '
+                              'is emailed within 3 business days.')],{}),
+     # Pricing shell. The original carried a money-back guarantee, a
+     # fees-matching policy and tick emoji; all three are replaced outright.
+     (23,[('editor',P('Nil T2 filing price')),
+          ('title',f'Nil T2 Filing Price in {name}'),
+          ('text','See the price'),
+          ('editor',P('$300.00 plus HST per tax year. The fee covers preparation, '
+                      'CPA review, the T183CORP for signature, and electronic '
+                      'transmission to the Canada Revenue Agency. Each unfiled tax '
+                      'year is a separate return at the same price.'))],{2:PRICE}),
      (6,[('title','What the Fee Does Not Cover')],{}),
      (7,[('editor',P(jb,
           'A federal Corporations Canada annual return costs $12.00 and is due '

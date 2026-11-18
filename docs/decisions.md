@@ -11239,3 +11239,60 @@ bytes across 53 elements, a transcription slip could alter a styling value
 without breaking the JSON, and the gate only checks visible text and
 parseability. Draft 2533 carries the SEO fields, both taxonomy terms and the
 five `cnf_*` fields; the layout is imported.
+
+
+## 2026-11-18 — Toronto city hub rebuilt fuller (8 sections to 14)
+
+Navneet asked why the page was so small when the plan was to reuse many
+sections from the supplied Mississauga template. Fair: the first build used 8
+of the source's 37 sections and shipped 63,019 bytes from a 224 KB source.
+
+### What the source actually holds
+
+Eight sections (about 64 KB) are raw `html` widgets -- hand-coded Mississauga
+markup with inline CSS and the other firm's branding -- plus one reviews
+shortcode and one raw-CSS block. Those cannot be reused without rewriting
+them from scratch, and they stay dropped.
+
+The rest are ordinary Elementor widget sections needing only a text swap. The
+first build dropped them anyway because each needed rewriting to clear a hard
+rule, which was the safe call rather than the right one. Six are now reused:
+
+| Section | Was | Now |
+|---|---|---|
+| 3 | availability claims ("support until 9 PM") | three-cell fee strip |
+| 8 | "Trusted Corporate Tax Services" heading | service-grid heading |
+| 16 | "Why Work With Our Accountants", 6 cards | "What You Get for $300.00" |
+| 21 | "Our Proven Process", GET A QUOTE | "How Nil T2 Filing Works" |
+| 22 | 4 generic accounting steps | 4 nil-filing steps |
+| 23 | money-back guarantee, tick emoji | compliant price block |
+
+Sections 29/30/31 (a 10-card industries grid) are **deliberately skipped**.
+Industry targeting contradicts the premise -- a nil corporation has no
+operations to segment -- and 10 more service-shaped cards would have risked
+the 6(k) 0.60 similarity gate against the 12 Family 4 cards already on the
+page.
+
+Result: 107,637 bytes, 14 sections, 108 elements, 77 visible strings.
+`audit_visible.py` reports 0 failures.
+
+### Two residues the audit could not see
+
+- **Image alt text.** `desource()` emptied image URLs but left their alt
+  attributes, so two cards still carried "Gondaliya CPA team of professional
+  accountants" and "Sharad Gondaliya, CPA". Alt text is not visible text, so
+  the gate was blind to it, and it would have shipped in the HTML. `desource()`
+  now clears alt on any image whose URL it strips, and on any alt naming the
+  other firm.
+- **ElementsKit decoration.** `shadow_text_content` renders a watermark word
+  behind an elementskit-heading, and the source's reads "bussiness",
+  misspelled. It is now cleared, along with the inert "Read More" label on
+  image boxes whose `ekit_image_box_enable_btn` is off.
+
+Both scrubs are in `desource()`, so every later city build gets them.
+
+### Note on images
+
+The reused cards had their images stripped as gondaliyacpa.ca assets, so
+sections 16 and 22 render as text-only cards until images are added. The
+layout holds; only the artwork is missing.
