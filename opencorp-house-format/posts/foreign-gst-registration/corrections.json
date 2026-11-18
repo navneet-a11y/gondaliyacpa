@@ -1,0 +1,202 @@
+[
+ {
+  "kind": "fact",
+  "from": "Quebec has its own tax called QST, set at 14.975%.",
+  "to": "Quebec has its own tax called QST, set at 9.975%, which makes 14.975% together with the 5% GST."
+ },
+ {
+  "kind": "fact",
+  "from": "This suits vendors who expect sales under $30,000 yearly from Canadian buyers.",
+  "to": "It applies once their sales to Canadian consumers pass $30,000 in 12 months."
+ },
+ {
+  "kind": "fact",
+  "from": "Quebec QST\t14.975%\tAdded charge only inside Quebec",
+  "to": "Quebec QST\t9.975% (14.975% with GST)\tAdded charge only inside Quebec"
+ },
+ {
+  "kind": "fact",
+  "from": "You calculate by adding all taxable supply revenue but skip zero-rated and exempt sales as needed.",
+  "to": "You calculate by adding all taxable supply revenue, including zero-rated sales, and skipping exempt sales."
+ },
+ {
+  "kind": "fact",
+  "from": "The minimum deposit varies but often starts around several thousand CAD decided by CRA after reviewing your application.",
+  "to": "The deposit is generally 50% of the estimated net tax for the first year, with a minimum of $5,000 and a maximum of $1,000,000."
+ },
+ {
+  "kind": "fact",
+  "from": "Residents of some countries may get waivers through treaties.",
+  "to": "Non-residents whose annual taxable supplies are $1,500,000 or less and whose net tax is $3,000 or less do not post security."
+ },
+ {
+  "kind": "fact",
+  "from": "Eligible treaty country resident\tPossible exemption\tDepends on agreement terms",
+  "to": "Small non-resident (supplies up to $1,500,000, net tax up to $3,000)\tNo\tSize of supplies and net tax\tExcise Tax Act s.240(6)"
+ },
+ {
+  "kind": "fact",
+  "from": "Sales to consumers must be under $30,000 in 12 months.",
+  "to": "Registration is required once sales to consumers pass $30,000 in 12 months."
+ },
+ {
+  "kind": "fact",
+  "from": "Fill out Form RC1 online at CRA’s portal or send it by mail.",
+  "to": "Fill out Form RC1 and send it to the CRA by mail or fax, since non-residents cannot use Business Registration Online."
+ },
+ {
+  "kind": "fact",
+  "from": "Backdating can go back up to 90 days if you have good reasons,",
+  "to": "Backdating a voluntary registration can go back up to 30 days if you have good reasons,"
+ },
+ {
+  "kind": "fact",
+  "from": "Eligibility\tDoing business > $30K\tDigital sellers < $30K consumer sales",
+  "to": "Eligibility\tDoing business > $30K\tDigital sellers > $30K consumer sales"
+ },
+ {
+  "kind": "fact",
+  "from": "sending Form RC1 with all details through CRA’s online system or via agents",
+  "to": "sending Form RC1 with all details to the CRA by mail or fax, or via agents"
+ },
+ {
+  "kind": "fact",
+  "from": "often digital sellers with sales under $30,000 over 12 months",
+  "to": "often digital sellers with sales over $30,000 over 12 months"
+ },
+ {
+  "kind": "fact",
+  "from": "You can pay by Interac e-Transfer (best), online banking, wire transfer, or cheque payable to the Receiver General for Canada.",
+  "to": "You can pay by online banking, wire transfer, the CRA's My Payment service, or cheque payable to the Receiver General for Canada."
+ },
+ {
+  "kind": "editor",
+  "from": "\n—\n",
+  "to": "\n\n"
+ },
+ {
+  "kind": "fact",
+  "from": "[1] Excise Tax Act s148(3);",
+  "to": "[1] Excise Tax Act s286;"
+ },
+ {
+  "kind": "fact",
+  "from": "[2] CRA Guide RC4027 – Record Keeping Requirements",
+  "to": "[2] CRA Guide RC4027 – Doing Business in Canada: GST/HST Information for Non-Residents"
+ },
+ {
+  "kind": "fact",
+  "from": "[7] Penalty overview - Excise Tax Act s323 & s324",
+  "to": "[7] Penalty overview - Excise Tax Act s280.1"
+ },
+ {
+  "kind": "fact",
+  "from": "[10] Fulfilment Warehouse Rules – Finance Canada Budget 2026 measures",
+  "to": "[10] Fulfilment Warehouse Rules – Finance Canada Budget 2021 measures"
+ },
+ {
+  "kind": "fact",
+  "from": "The CBSA’s CARM Client Portal manages imports now with new customs rules from 2026[4]. Courier shipments under $150 CAD don’t face duties or taxes, which helps small e-commerce sellers[5].",
+  "to": "The CBSA’s CARM Client Portal has managed imports since October 21, 2024[4]. Courier shipments from the United States or Mexico are duty-free up to $150 CAD and tax-free up to $40 CAD; from other countries the limit is $20 CAD[5]."
+ },
+ {
+  "kind": "fact",
+  "from": "From 2026, platform operators helping non-residents sell must collect and pay taxes[7]:",
+  "to": "Since July 1, 2021, platform operators helping non-residents sell must collect and pay taxes[7]:"
+ },
+ {
+  "kind": "fact",
+  "from": "Shipments valued $150 CAD or less sent by courier skip duty and most taxes according to CBSA rules[8].",
+  "to": "Courier shipments from the United States or Mexico skip duty up to $150 CAD and taxes up to $40 CAD; from other countries both stop at $20 CAD, according to CBSA rules[8]."
+ },
+ {
+  "kind": "typo",
+  "from": "contracts that define responsibilitiesCRA Guide RC4027.",
+  "to": "contracts that define responsibilities (CRA Guide RC4027)."
+ },
+ {
+  "kind": "fact",
+  "from": "Ongoing checks keep up with law changes like those in 2026 involving CARM.",
+  "to": "Ongoing checks keep up with law changes like those in 2024 involving CARM."
+ },
+ {
+  "kind": "editor",
+  "from": "Marketplace Rules Update [VERIFY YEAR].",
+  "to": "Marketplace Rules Update."
+ },
+ {
+  "kind": "editor",
+  "from": "Ontario Finance Rate Tables [CHECK FIGURES].",
+  "to": "Ontario Finance Rate Tables."
+ },
+ {
+  "kind": "editor",
+  "from": "Revenu Québec QGST Notes [CHECK UPDATES 2026]",
+  "to": "Revenu Québec QST Notes"
+ },
+ {
+  "kind": "editor",
+  "from": "Bill C‑32 Summary [VERIFY TEXT]",
+  "to": "Bill C‑32 Summary"
+ },
+ {
+  "kind": "fact",
+  "from": "customs adjustments after CARM starts in 20266.",
+  "to": "customs adjustments after CARM started in October 20246."
+ },
+ {
+  "kind": "fact",
+  "from": "3: Open Corporation contact page - opencorporationfor35.ca/contact/",
+  "to": "3: Open Corporation contact page - opencorporationfor35.ca/contact-us/"
+ },
+ {
+  "kind": "fact",
+  "from": "Most non-residents pay deposits unless exempt under treaties or simplified regimes.",
+  "to": "The deposit is generally 50% of estimated net tax for the first year, with a minimum of $5,000; small non-residents and simplified regime registrants do not post one."
+ },
+ {
+  "kind": "fact",
+  "from": "Marketplace platforms must collect GST/HST for non-registered sellers starting 2026.",
+  "to": "Marketplace platforms have collected GST/HST for non-registered sellers since July 1, 2021."
+ },
+ {
+  "kind": "fact",
+  "from": "New rules include stricter platform operator responsibilities, CARM import procedures, and adjustments to courier low-value shipment thresholds.",
+  "to": "The main recent changes are the platform operator and fulfilment warehouse rules in force since July 1, 2021, and the CBSA's CARM import system since October 21, 2024."
+ },
+ {
+  "kind": "fact",
+  "from": "Shipments valued under $150 CAD sent by courier generally do not attract customs duties or GST/HST, easing compliance for small parcel imports.",
+  "to": "Courier shipments from the United States or Mexico are duty-free up to $150 CAD and free of GST/HST up to $40 CAD; from other countries the limit is $20 CAD, easing compliance for small parcel imports."
+ },
+ {
+  "kind": "fact",
+  "from": "It allows small digital sellers with sales under $30,000 CAD to register quickly online,",
+  "to": "It requires digital sellers whose sales to Canadian consumers pass $30,000 CAD to register quickly online,"
+ },
+ {
+  "kind": "fact",
+  "from": "Complete Form RC1 with company details and submit online or by mail.",
+  "to": "Complete Form RC1 with company details and submit it by mail or fax."
+ },
+ {
+  "kind": "fact",
+  "from": "Ontario charges 13% HST while Quebec applies 14.975% QST separately.",
+  "to": "Ontario charges 13% HST while Quebec applies 9.975% QST separately, or 14.975% with GST."
+ },
+ {
+  "kind": "fact",
+  "from": "Register for simplified GST/HST if sales are under $30,000 CAD annually to Canadian consumers only.",
+  "to": "Register for simplified GST/HST once sales to Canadian consumers pass $30,000 CAD in 12 months."
+ },
+ {
+  "kind": "fact",
+  "from": "Marketplace operators must comply with new collection rules from 2026 onward.",
+  "to": "Marketplace operators have had to follow the collection rules since July 1, 2021."
+ },
+ {
+  "kind": "fact",
+  "from": "Security deposit exemptions depend on treaty status or risk assessments by CRA officials.",
+  "to": "Security deposit exemptions depend on the size of your taxable supplies and net tax."
+ }
+]
