@@ -1,0 +1,706 @@
+<style>
+/* ── Scoped to hst- prefix — no font declarations, inherits site theme ── */
+.hst-wrap { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+
+/* Hero */
+.hst-hero { background: linear-gradient(135deg, #0f1624 0%, #1a2340 55%, #1e3a6e 100%); padding: 60px 20px 50px; text-align: center; }
+.hst-hero-badge { display: inline-flex; align-items: center; gap: 8px; background: rgba(32,135,201,0.15); border: 1px solid rgba(32,135,201,0.4); border-radius: 50px; padding: 6px 18px; font-size: 12px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: rgba(32,135,201,1); margin-bottom: 18px; }
+.hst-hero h1 { color: #fff; font-size: 38px; font-weight: 800; line-height: 1.2; margin: 0 auto 14px; max-width: 800px; }
+.hst-hero h1 span { color: #f6ad1a; }
+.hst-hero-sub { color: rgba(255,255,255,0.8); font-size: 16px; max-width: 620px; margin: 0 auto 28px; }
+.hst-rate-strip { display: flex; justify-content: center; align-items: center; gap: 0; margin: 0 auto 30px; max-width: 480px; border-radius: 10px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1); }
+.hst-rate-item { flex: 1; padding: 16px 12px; text-align: center; background: rgba(255,255,255,0.06); border-right: 1px solid rgba(255,255,255,0.1); }
+.hst-rate-item:last-child { border-right: none; background: rgba(32,135,201,0.25); }
+.hst-rate-num { font-size: 26px; font-weight: 800; color: #f6ad1a; display: block; line-height: 1; }
+.hst-rate-item:last-child .hst-rate-num { color: rgba(32,135,201,1); font-size: 30px; }
+.hst-rate-label { font-size: 11px; color: rgba(255,255,255,0.55); margin-top: 4px; display: block; }
+.hst-plus { font-size: 22px; color: rgba(255,255,255,0.3); padding: 0 2px; align-self: center; }
+.hst-quick-answer { display: inline-block; background: rgba(246,173,26,0.12); border: 1px solid rgba(246,173,26,0.3); border-radius: 8px; padding: 10px 22px; color: rgba(255,255,255,0.9); font-size: 14px; margin-bottom: 28px; }
+.hst-quick-answer strong { color: #f6ad1a; }
+.hst-scroll-btn { display: inline-block; background: rgba(32,135,201,1); color: #fff; padding: 13px 28px; border-radius: 6px; font-weight: 700; font-size: 14px; text-transform: uppercase; letter-spacing: 0.5px; text-decoration: none; }
+
+/* Calculator Card */
+.hst-calc-section { padding: 0 20px; margin-top: -36px; }
+.hst-calc-card { background: #fff; border-radius: 14px; box-shadow: 0 20px 60px rgba(0,0,0,0.15); max-width: 680px; margin: 0 auto; overflow: hidden; }
+.hst-calc-header { background: #1a2340; padding: 20px 28px; }
+.hst-calc-header h2 { color: #fff; font-size: 17px; font-weight: 700; margin: 0 0 14px; }
+.hst-prov-row { margin: 0 0 14px; }
+.hst-prov-row label { display: block; font-size: 12px; font-weight: 600; color: rgba(255,255,255,0.7); margin-bottom: 6px; }
+.hst-prov-select { width: 100%; padding: 10px 12px; border-radius: 6px; border: 2px solid rgba(255,255,255,0.15); background: #fff; color: #1a2340; font-size: 14px; font-weight: 600; box-sizing: border-box; }
+.hst-tab-row { display: flex; gap: 6px; }
+.hst-tab { padding: 8px 20px; border-radius: 6px; font-size: 13px; font-weight: 600; cursor: pointer; border: 2px solid transparent; color: rgba(255,255,255,0.6); background: rgba(255,255,255,0.08); transition: all 0.15s; }
+.hst-tab.active { background: rgba(32,135,201,1); color: #fff; border-color: rgba(32,135,201,1); }
+.hst-calc-body { padding: 28px; }
+.hst-input-group { margin-bottom: 20px; }
+.hst-input-group label { display: block; font-size: 13px; font-weight: 600; color: #1a2340; margin-bottom: 7px; }
+.hst-input-wrap { position: relative; }
+.hst-input-wrap span { position: absolute; left: 14px; top: 50%; transform: translateY(-50%); font-size: 16px; font-weight: 700; color: #718096; }
+.hst-input { width: 100%; padding: 13px 14px 13px 32px; border: 2px solid #e2e8f0; border-radius: 8px; font-size: 18px; font-weight: 700; color: #1a2340; outline: none; transition: border-color 0.15s; box-sizing: border-box; }
+.hst-input:focus { border-color: rgba(32,135,201,1); }
+.hst-calc-btn { width: 100%; background: rgba(32,135,201,1); color: #fff; border: none; padding: 14px; border-radius: 8px; font-size: 15px; font-weight: 700; cursor: pointer; text-transform: uppercase; letter-spacing: 0.5px; transition: background 0.15s; }
+.hst-calc-btn:hover { background: #1a6fa8; }
+.hst-result-box { background: #f0f7fd; border: 1px solid rgba(32,135,201,0.2); border-radius: 10px; padding: 20px 22px; margin-top: 20px; display: none; }
+.hst-result-box.show { display: block; }
+.hst-result-row { display: flex; justify-content: space-between; align-items: center; padding: 8px 0; border-bottom: 1px solid rgba(32,135,201,0.1); font-size: 14px; }
+.hst-result-row:last-child { border-bottom: none; padding-top: 12px; }
+.hst-result-row.hst-hide { display: none; }
+.hst-result-label { color: #718096; font-weight: 500; }
+.hst-result-value { font-weight: 700; color: #1a2340; font-size: 15px; }
+.hst-result-total .hst-result-label { color: #1a2340; font-weight: 700; font-size: 15px; }
+.hst-result-total .hst-result-value { color: rgba(32,135,201,1); font-size: 20px; }
+.hst-formula-note { font-size: 12px; color: #718096; margin-top: 12px; text-align: center; background: rgba(255,255,255,0.7); padding: 8px; border-radius: 6px; }
+.hst-calc-cta { border-top: 1px solid #e2e8f0; padding: 18px 28px; background: #f7f9fc; text-align: center; }
+.hst-calc-cta p { font-size: 13px; color: #718096; margin-bottom: 10px; }
+.hst-calc-cta a { display: inline-block; background: rgba(32,135,201,1); color: #fff; padding: 11px 24px; border-radius: 6px; font-weight: 700; font-size: 13px; text-transform: uppercase; text-decoration: none; }
+
+/* Sections */
+.hst-section { padding: 58px 20px; }
+.hst-section-alt { background: #f7f9fc; padding: 58px 20px; }
+.hst-h2 { font-size: 28px; font-weight: 800; color: #1a2340; margin-bottom: 8px; text-align: center; }
+.hst-h2-left { font-size: 24px; font-weight: 800; color: #1a2340; margin-bottom: 12px; }
+.hst-sub { text-align: center; color: #718096; font-size: 15px; max-width: 600px; margin: 0 auto 36px; }
+
+/* Quick Reference Table */
+.hst-table { width: 100%; border-collapse: collapse; border-radius: 10px; overflow: hidden; border: 1px solid #e2e8f0; }
+.hst-table thead th { background: #1a2340; color: #fff; padding: 13px 18px; font-size: 13px; font-weight: 700; text-align: left; border: 1px solid rgba(255,255,255,0.1); }
+.hst-table tbody td { padding: 12px 18px; font-size: 14px; border: 1px solid #e2e8f0; }
+.hst-table tbody tr:nth-child(even) td { background: #f7f9fc; }
+.hst-table tbody td:first-child { font-weight: 600; color: #1a2340; }
+.hst-table td.hst-hst-col { color: rgba(32,135,201,1); font-weight: 700; }
+.hst-table td.hst-total-col { font-weight: 800; color: #1a2340; }
+
+/* Info Cards Grid */
+.hst-info-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+.hst-info-card { background: #fff; border: 1px solid #e2e8f0; border-radius: 10px; padding: 26px 22px; }
+.hst-info-card-icon { font-size: 30px; margin-bottom: 12px; }
+.hst-info-card h3 { font-size: 15px; font-weight: 700; color: #1a2340; margin-bottom: 10px; }
+.hst-info-card p { font-size: 13px; color: #718096; line-height: 1.65; }
+.hst-info-card ul { list-style: none; padding: 0; margin: 10px 0 0; }
+.hst-info-card ul li { font-size: 13px; color: #718096; padding: 5px 0; border-bottom: 1px solid #f0f0f0; display: flex; gap: 8px; }
+.hst-info-card ul li::before { content: "✓"; color: #2d9c4b; font-weight: 700; flex-shrink: 0; }
+
+/* Formula Box */
+.hst-formula-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; margin-top: 30px; }
+.hst-formula-box { background: #1a2340; border-radius: 10px; padding: 26px; }
+.hst-formula-box h3 { color: #f6ad1a; font-size: 15px; font-weight: 700; margin-bottom: 14px; }
+.hst-formula-code { background: rgba(255,255,255,0.08); border-radius: 6px; padding: 12px 16px; font-size: 13px; color: rgba(32,135,201,1); font-family: monospace; margin-bottom: 12px; font-weight: 600; }
+.hst-formula-example { font-size: 13px; color: rgba(255,255,255,0.65); line-height: 1.6; }
+.hst-formula-example strong { color: #fff; }
+
+/* Filing Deadlines Table */
+.hst-deadline-table { width: 100%; border-collapse: collapse; margin-top: 24px; border: 1px solid #e2e8f0; border-radius: 10px; overflow: hidden; }
+.hst-deadline-table th { background: #1a2340; color: #fff; padding: 12px 18px; font-size: 13px; font-weight: 700; border: 1px solid rgba(255,255,255,0.1); text-align: left; }
+.hst-deadline-table td { padding: 12px 18px; font-size: 13px; border: 1px solid #e2e8f0; }
+.hst-deadline-table tr:nth-child(even) td { background: #f7f9fc; }
+.hst-deadline-table td:first-child { font-weight: 600; color: #1a2340; }
+.hst-highlight { color: rgba(32,135,201,1); font-weight: 700; }
+
+/* Industry Examples */
+.hst-example-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 30px; }
+.hst-example-card { background: #fff; border: 1px solid #e2e8f0; border-radius: 10px; padding: 22px 20px; border-top: 3px solid rgba(32,135,201,1); }
+.hst-example-industry { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: rgba(32,135,201,1); margin-bottom: 8px; }
+.hst-example-card h4 { font-size: 14px; font-weight: 700; color: #1a2340; margin-bottom: 10px; }
+.hst-example-card p { font-size: 13px; color: #718096; line-height: 1.6; }
+.hst-example-amount { display: flex; justify-content: space-between; margin-top: 14px; padding-top: 12px; border-top: 1px solid #e2e8f0; font-size: 13px; }
+.hst-example-amount span:last-child { font-weight: 700; color: rgba(32,135,201,1); }
+
+/* FAQ */
+.hst-faq { max-width: 820px; margin: 30px auto 0; }
+.hst-faq-item { border: 1px solid #e2e8f0; border-radius: 8px; margin-bottom: 10px; overflow: hidden; background: #fff; }
+.hst-faq-q { padding: 16px 20px; font-weight: 600; font-size: 14px; color: #1a2340; cursor: pointer; display: flex; justify-content: space-between; align-items: center; }
+.hst-faq-q::after { content: "+"; font-size: 20px; color: rgba(32,135,201,1); font-weight: 300; flex-shrink: 0; }
+.hst-faq-a { padding: 0 20px 16px; font-size: 13px; color: #718096; line-height: 1.7; }
+
+/* CTA Banner */
+.hst-cta { background: linear-gradient(135deg, #0f1624, #1a2340); padding: 52px 20px; text-align: center; }
+.hst-cta h2 { color: #fff; font-size: 26px; font-weight: 800; margin-bottom: 10px; }
+.hst-cta p { color: rgba(255,255,255,0.72); max-width: 520px; margin: 0 auto 24px; font-size: 15px; }
+.hst-cta-feats { display: flex; justify-content: center; gap: 26px; flex-wrap: wrap; margin-bottom: 24px; }
+.hst-cta-feat { font-size: 13px; color: rgba(255,255,255,0.7); display: flex; align-items: center; gap: 6px; }
+.hst-cta-feat::before { content: "✓"; color: #f6ad1a; font-weight: 700; }
+.hst-btn-blue { display: inline-block; background: rgba(32,135,201,1); color: #fff; padding: 13px 28px; border-radius: 6px; font-weight: 700; font-size: 14px; text-transform: uppercase; text-decoration: none; margin: 0 6px; }
+.hst-btn-dark { display: inline-block; background: transparent; color: #fff; padding: 13px 28px; border-radius: 6px; font-weight: 700; font-size: 14px; text-transform: uppercase; text-decoration: none; border: 2px solid rgba(255,255,255,0.35); margin: 0 6px; }
+
+/* Related Links */
+.hst-related-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 30px; }
+.hst-related-card { background: #fff; border: 1px solid #e2e8f0; border-radius: 8px; padding: 18px 16px; text-decoration: none; display: block; transition: all 0.15s; }
+.hst-related-card:hover { border-color: rgba(32,135,201,1); box-shadow: 0 4px 16px rgba(32,135,201,0.1); }
+.hst-related-card h4 { font-size: 14px; font-weight: 700; color: #1a2340; margin-bottom: 6px; }
+.hst-related-card p { font-size: 12px; color: #718096; }
+
+@media (max-width: 860px) {
+  .hst-hero h1 { font-size: 26px; }
+  .hst-info-grid { grid-template-columns: 1fr; }
+  .hst-formula-grid { grid-template-columns: 1fr; }
+  .hst-example-grid { grid-template-columns: 1fr; }
+  .hst-related-grid { grid-template-columns: repeat(2, 1fr); }
+  .hst-rate-strip { max-width: 360px; }
+}
+</style>
+
+
+<!-- ══════════════════════════════════
+     HERO
+     ══════════════════════════════════ -->
+<div class="hst-hero" id="top">
+  <div class="hst-wrap">
+    <div class="hst-hero-badge">Free Tool &nbsp;·&nbsp; Ontario 2026 &nbsp;·&nbsp; Instant Results</div>
+    <h1>HST Calculator Ontario <span>2026</span></h1>
+    <p class="hst-hero-sub">Add or remove 13% Ontario HST instantly. Includes reverse HST calculator, filing deadlines, ITC rules and a full quick-reference table.</p>
+    <div class="hst-rate-strip">
+      <div class="hst-rate-item">
+        <span class="hst-rate-num">5%</span>
+        <span class="hst-rate-label">Federal GST</span>
+      </div>
+      <div style="display:flex;align-items:center;padding:0 8px;color:rgba(255,255,255,0.3);font-size:20px;">+</div>
+      <div class="hst-rate-item">
+        <span class="hst-rate-num">8%</span>
+        <span class="hst-rate-label">Ontario PST</span>
+      </div>
+      <div style="display:flex;align-items:center;padding:0 8px;color:rgba(255,255,255,0.3);font-size:20px;">=</div>
+      <div class="hst-rate-item">
+        <span class="hst-rate-num">13%</span>
+        <span class="hst-rate-label">Ontario HST</span>
+      </div>
+    </div>
+    <div class="hst-quick-answer">
+      Quick answer: $100 + 13% HST = <strong>$113.00</strong> &nbsp;|&nbsp; Reverse: $113 ÷ 1.13 = <strong>$100.00 pre-tax</strong>
+    </div>
+    <a href="#hst-calculator" class="hst-scroll-btn">Calculate Now &#8595;</a>
+  </div>
+</div>
+
+
+<!-- ══════════════════════════════════
+     CALCULATOR CARD (all provinces, Ontario default)
+     ══════════════════════════════════ -->
+<div class="hst-calc-section" id="hst-calculator">
+  <div class="hst-calc-card">
+    <div class="hst-calc-header">
+      <h2 id="hst-calc-title">Ontario HST Calculator — 13% Rate 2026</h2>
+      <div class="hst-prov-row">
+        <label for="hst-province">Province or territory</label>
+        <select id="hst-province" class="hst-prov-select" onchange="changeProvince()">
+          <option value="ON" selected>Ontario: 13% HST</option>
+          <option value="NB">New Brunswick: 15% HST</option>
+          <option value="NL">Newfoundland and Labrador: 15% HST</option>
+          <option value="PE">Prince Edward Island: 15% HST</option>
+          <option value="NS">Nova Scotia: 14% HST</option>
+          <option value="BC">British Columbia: 5% GST + 7% PST</option>
+          <option value="SK">Saskatchewan: 5% GST + 6% PST</option>
+          <option value="MB">Manitoba: 5% GST + 7% RST</option>
+          <option value="QC">Quebec: 5% GST + 9.975% QST</option>
+          <option value="AB">Alberta: 5% GST</option>
+          <option value="YT">Yukon: 5% GST</option>
+          <option value="NT">Northwest Territories: 5% GST</option>
+          <option value="NU">Nunavut: 5% GST</option>
+        </select>
+      </div>
+      <div class="hst-tab-row">
+        <div class="hst-tab active" id="hst-tab-add" onclick="switchTab('add')">Add HST</div>
+        <div class="hst-tab" id="hst-tab-remove" onclick="switchTab('remove')">Remove HST (Reverse)</div>
+      </div>
+    </div>
+    <div class="hst-calc-body">
+      <div class="hst-input-group">
+        <label id="hst-input-label">Amount Before Tax (CAD)</label>
+        <div class="hst-input-wrap">
+          <span>$</span>
+          <input type="number" class="hst-input" id="hst-amount" placeholder="0.00" min="0" step="0.01" oninput="calculateHST()">
+        </div>
+      </div>
+      <button class="hst-calc-btn" id="hst-calc-btn" onclick="calculateHST()">Calculate HST</button>
+      <div class="hst-result-box" id="hst-result">
+        <div class="hst-result-row">
+          <span class="hst-result-label" id="res-label-pretax">Pre-Tax Amount</span>
+          <span class="hst-result-value" id="res-pretax">$0.00</span>
+        </div>
+        <div class="hst-result-row">
+          <span class="hst-result-label" id="res-label-tax">HST (13%)</span>
+          <span class="hst-result-value" style="color:rgba(32,135,201,1);" id="res-hst">$0.00</span>
+        </div>
+        <div class="hst-result-row">
+          <span class="hst-result-label" style="font-size:11px;color:#718096;">Federal GST (5%)</span>
+          <span class="hst-result-value" style="font-size:13px;" id="res-gst">$0.00</span>
+        </div>
+        <div class="hst-result-row" id="res-row-pst">
+          <span class="hst-result-label" style="font-size:11px;color:#718096;" id="res-label-pst">Ontario portion (8%)</span>
+          <span class="hst-result-value" style="font-size:13px;" id="res-pst">$0.00</span>
+        </div>
+        <div class="hst-result-row hst-result-total">
+          <span class="hst-result-label" id="res-label-total">Total with HST</span>
+          <span class="hst-result-value" id="res-total">$0.00</span>
+        </div>
+        <div class="hst-formula-note" id="res-formula"></div>
+      </div>
+    </div>
+    <div class="hst-calc-cta">
+      <p>Need help with HST registration, filing or CRA compliance? Our licensed CPA team handles it all — virtually across Ontario.</p>
+      <a href="https://gondaliyacpa.ca/gst-hst-return-filing/">HST Filing Services &#8594;</a>
+    </div>
+  </div>
+</div>
+
+
+<!-- ══════════════════════════════════
+     QUICK REFERENCE TABLE
+     ══════════════════════════════════ -->
+<div class="hst-section">
+  <div class="hst-wrap">
+    <h2 class="hst-h2">Ontario HST Quick Reference Table 2026</h2>
+    <p class="hst-sub">13% HST applies uniformly across all Ontario cities — Toronto, Ottawa, Mississauga, Hamilton, Brampton, London and beyond.</p>
+    <table class="hst-table">
+      <thead>
+        <tr>
+          <th>Pre-Tax Amount</th>
+          <th>Federal GST (5%)</th>
+          <th>Ontario PST (8%)</th>
+          <th>HST Total (13%)</th>
+          <th>Total Amount</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>$50.00</td><td>$2.50</td><td>$4.00</td><td class="hst-hst-col">$6.50</td><td class="hst-total-col">$56.50</td></tr>
+        <tr><td>$100.00</td><td>$5.00</td><td>$8.00</td><td class="hst-hst-col">$13.00</td><td class="hst-total-col">$113.00</td></tr>
+        <tr><td>$250.00</td><td>$12.50</td><td>$20.00</td><td class="hst-hst-col">$32.50</td><td class="hst-total-col">$282.50</td></tr>
+        <tr><td>$500.00</td><td>$25.00</td><td>$40.00</td><td class="hst-hst-col">$65.00</td><td class="hst-total-col">$565.00</td></tr>
+        <tr><td>$1,000.00</td><td>$50.00</td><td>$80.00</td><td class="hst-hst-col">$130.00</td><td class="hst-total-col">$1,130.00</td></tr>
+        <tr><td>$2,500.00</td><td>$125.00</td><td>$200.00</td><td class="hst-hst-col">$325.00</td><td class="hst-total-col">$2,825.00</td></tr>
+        <tr><td>$5,000.00</td><td>$250.00</td><td>$400.00</td><td class="hst-hst-col">$650.00</td><td class="hst-total-col">$5,650.00</td></tr>
+        <tr><td>$10,000.00</td><td>$500.00</td><td>$800.00</td><td class="hst-hst-col">$1,300.00</td><td class="hst-total-col">$11,300.00</td></tr>
+        <tr><td>$25,000.00</td><td>$1,250.00</td><td>$2,000.00</td><td class="hst-hst-col">$3,250.00</td><td class="hst-total-col">$28,250.00</td></tr>
+        <tr><td>$50,000.00</td><td>$2,500.00</td><td>$4,000.00</td><td class="hst-hst-col">$6,500.00</td><td class="hst-total-col">$56,500.00</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+
+<!-- ══════════════════════════════════
+     HST FORMULAS
+     ══════════════════════════════════ -->
+<div class="hst-section-alt">
+  <div class="hst-wrap">
+    <h2 class="hst-h2">Ontario HST Calculation Formulas</h2>
+    <p class="hst-sub">Two formulas every Ontario business owner needs — adding HST to a price and removing HST from a total.</p>
+    <div class="hst-formula-grid">
+      <div class="hst-formula-box">
+        <h3>Adding HST to a Price</h3>
+        <div class="hst-formula-code">HST = Amount × 0.13<br>Total = Amount × 1.13</div>
+        <div class="hst-formula-example">
+          <strong>Example:</strong> Invoice amount is $2,400.<br><br>
+          HST = $2,400 × 0.13 = <strong>$312.00</strong><br>
+          Total = $2,400 × 1.13 = <strong>$2,712.00</strong><br><br>
+          Breakdown: $120 GST + $192 PST = $312 HST
+        </div>
+      </div>
+      <div class="hst-formula-box">
+        <h3>Removing HST from a Total (Reverse)</h3>
+        <div class="hst-formula-code">Pre-tax = Total ÷ 1.13<br>HST = Total × 0.115044</div>
+        <div class="hst-formula-example">
+          <strong>Example:</strong> Receipt shows $2,712 total.<br><br>
+          Pre-tax = $2,712 ÷ 1.13 = <strong>$2,400.00</strong><br>
+          HST = $2,712 × 0.115044 = <strong>$312.00</strong><br><br>
+          Shortcut: multiply total by 0.115044 for HST portion.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ══════════════════════════════════
+     KEY HST RULES FOR ONTARIO BUSINESSES
+     ══════════════════════════════════ -->
+<div class="hst-section">
+  <div class="hst-wrap">
+    <h2 class="hst-h2">Key HST Rules for Ontario Businesses</h2>
+    <p class="hst-sub">What every Ontario business owner needs to know about registration, filing, and recovering HST costs.</p>
+    <div class="hst-info-grid">
+
+      <div class="hst-info-card">
+        <div class="hst-info-card-icon">&#x1F4CB;</div>
+        <h3>HST Registration Threshold</h3>
+        <p>Ontario businesses with taxable revenues exceeding $30,000 in any single calendar quarter or over four consecutive quarters must register for HST with CRA and begin collecting 13% on taxable sales.</p>
+        <p style="margin-top:10px;font-size:13px;color:#718096;">Voluntary registration is available under $30,000 — beneficial during startup years when HST paid on expenses can be recovered through Input Tax Credits.</p>
+      </div>
+
+      <div class="hst-info-card">
+        <div class="hst-info-card-icon">&#x1F4C5;</div>
+        <h3>HST Filing Deadlines Ontario</h3>
+        <table style="width:100%;font-size:12px;border-collapse:collapse;margin-top:8px;">
+          <thead><tr><th style="background:#1a2340;color:#fff;padding:7px 10px;text-align:left;">Revenue</th><th style="background:#1a2340;color:#fff;padding:7px 10px;text-align:left;">Frequency</th><th style="background:#1a2340;color:#fff;padding:7px 10px;text-align:left;">Due</th></tr></thead>
+          <tbody>
+            <tr><td style="padding:7px 10px;border:1px solid #e2e8f0;">Under $1.5M</td><td style="padding:7px 10px;border:1px solid #e2e8f0;">Annual</td><td style="padding:7px 10px;border:1px solid #e2e8f0;">3 months after year-end</td></tr>
+            <tr style="background:#f7f9fc;"><td style="padding:7px 10px;border:1px solid #e2e8f0;">$1.5M–$6M</td><td style="padding:7px 10px;border:1px solid #e2e8f0;">Quarterly</td><td style="padding:7px 10px;border:1px solid #e2e8f0;">1 month after quarter</td></tr>
+            <tr><td style="padding:7px 10px;border:1px solid #e2e8f0;">Over $6M</td><td style="padding:7px 10px;border:1px solid #e2e8f0;">Monthly</td><td style="padding:7px 10px;border:1px solid #e2e8f0;">1 month after month-end</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="hst-info-card">
+        <div class="hst-info-card-icon">&#x1F4B0;</div>
+        <h3>Input Tax Credits (ITCs)</h3>
+        <p>HST-registered Ontario businesses can recover the 13% HST paid on eligible business expenses by claiming ITCs on their HST return — reducing the net amount remitted to CRA.</p>
+        <ul>
+          <li>Office rent and utilities</li>
+          <li>Equipment and technology</li>
+          <li>Professional and legal fees</li>
+          <li>Vehicle expenses (business use)</li>
+          <li>Advertising and marketing</li>
+          <li>Business insurance</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<!-- ══════════════════════════════════
+     ONTARIO HST EXEMPTIONS
+     ══════════════════════════════════ -->
+<div class="hst-section-alt">
+  <div class="hst-wrap">
+    <h2 class="hst-h2">What Is HST-Exempt in Ontario?</h2>
+    <p class="hst-sub">Not all goods and services attract the full 13% Ontario HST. Some are zero-rated, some are exempt, and some qualify for a Point-of-Sale rebate.</p>
+    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:20px;margin-top:10px;">
+      <div style="background:#fff;border:1px solid #e2e8f0;border-radius:10px;padding:22px 20px;border-top:3px solid #2d9c4b;">
+        <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#2d9c4b;margin-bottom:8px;">Zero-Rated (0% HST)</div>
+        <ul style="list-style:none;padding:0;font-size:13px;color:#718096;">
+          <li style="padding:5px 0;border-bottom:1px solid #f0f0f0;">Basic groceries and food</li>
+          <li style="padding:5px 0;border-bottom:1px solid #f0f0f0;">Prescription drugs</li>
+          <li style="padding:5px 0;border-bottom:1px solid #f0f0f0;">Most medical devices</li>
+          <li style="padding:5px 0;border-bottom:1px solid #f0f0f0;">International exports</li>
+          <li style="padding:5px 0;">Agricultural products</li>
+        </ul>
+      </div>
+      <div style="background:#fff;border:1px solid #e2e8f0;border-radius:10px;padding:22px 20px;border-top:3px solid rgba(32,135,201,1);">
+        <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:rgba(32,135,201,1);margin-bottom:8px;">HST-Exempt</div>
+        <ul style="list-style:none;padding:0;font-size:13px;color:#718096;">
+          <li style="padding:5px 0;border-bottom:1px solid #f0f0f0;">Residential rent</li>
+          <li style="padding:5px 0;border-bottom:1px solid #f0f0f0;">Most health care services</li>
+          <li style="padding:5px 0;border-bottom:1px solid #f0f0f0;">Most childcare services</li>
+          <li style="padding:5px 0;border-bottom:1px solid #f0f0f0;">Most educational services</li>
+          <li style="padding:5px 0;">Used residential housing</li>
+        </ul>
+      </div>
+      <div style="background:#fff;border:1px solid #e2e8f0;border-radius:10px;padding:22px 20px;border-top:3px solid #f6ad1a;">
+        <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#c47d00;margin-bottom:8px;">Point-of-Sale Rebate (5% Only)</div>
+        <ul style="list-style:none;padding:0;font-size:13px;color:#718096;">
+          <li style="padding:5px 0;border-bottom:1px solid #f0f0f0;">Children's clothing &amp; footwear</li>
+          <li style="padding:5px 0;border-bottom:1px solid #f0f0f0;">Children's car seats</li>
+          <li style="padding:5px 0;border-bottom:1px solid #f0f0f0;">Diapers</li>
+          <li style="padding:5px 0;border-bottom:1px solid #f0f0f0;">Feminine hygiene products</li>
+          <li style="padding:5px 0;">Print books and newspapers</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ══════════════════════════════════
+     INDUSTRY EXAMPLES
+     ══════════════════════════════════ -->
+<div class="hst-section">
+  <div class="hst-wrap">
+    <h2 class="hst-h2">Ontario HST Examples by Industry</h2>
+    <p class="hst-sub">Real-world HST calculations for common Ontario business scenarios.</p>
+    <div class="hst-example-grid">
+      <div class="hst-example-card">
+        <div class="hst-example-industry">Consulting — Toronto</div>
+        <h4>IT Consultant Invoice</h4>
+        <p>A Toronto-based IT consultant invoices a client $8,000 for a software project. HST of 13% is added and collected from the client, then remitted to CRA minus any ITCs on business expenses.</p>
+        <div class="hst-example-amount">
+          <span>$8,000 + 13% HST</span>
+          <span>$9,040.00 total</span>
+        </div>
+      </div>
+      <div class="hst-example-card">
+        <div class="hst-example-industry">Construction — Hamilton</div>
+        <h4>Contractor Invoice</h4>
+        <p>A Hamilton renovation contractor invoices $22,000 for a commercial fit-out. HST applies in full. The contractor can claim ITCs on materials, equipment rentals and subcontractor costs.</p>
+        <div class="hst-example-amount">
+          <span>$22,000 + 13% HST</span>
+          <span>$24,860.00 total</span>
+        </div>
+      </div>
+      <div class="hst-example-card">
+        <div class="hst-example-industry">Retail — Mississauga</div>
+        <h4>Mixed-Rate Retail Sale</h4>
+        <p>A Mississauga retailer sells $300 in adult clothing (13% HST) and $150 in children's clothing (5% only — POS rebate applies). Two separate HST calculations apply on the same receipt.</p>
+        <div class="hst-example-amount">
+          <span>$300 × 13% + $150 × 5%</span>
+          <span>$46.50 total HST</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ══════════════════════════════════
+     FAQ
+     ══════════════════════════════════ -->
+<div class="hst-section-alt">
+  <div class="hst-wrap">
+    <h2 class="hst-h2">Ontario HST Frequently Asked Questions</h2>
+    <p class="hst-sub">Answers to the most common Ontario HST questions from business owners across Ontario.</p>
+    <div class="hst-faq">
+
+      <div class="hst-faq-item">
+        <div class="hst-faq-q">How much is HST in Ontario in 2026?</div>
+        <div class="hst-faq-a">Ontario HST is 13% in 2026 — unchanged since it was introduced on July 1, 2010. The 13% rate combines the 5% federal GST and 8% Ontario provincial portion into a single harmonized tax. On a $100 purchase, HST is $13.00 for a total of $113.00. The rate applies uniformly across all Ontario cities including Toronto, Ottawa, Mississauga, Hamilton, Brampton and London.</div>
+      </div>
+
+      <div class="hst-faq-item">
+        <div class="hst-faq-q">How do I calculate HST on an invoice in Ontario?</div>
+        <div class="hst-faq-a">To add HST to an invoice amount, multiply the pre-tax amount by 0.13 to get the HST, then add it to the original amount. Formula: Total = Amount × 1.13. Example: $3,500 invoice × 1.13 = $3,955.00 total. The HST portion is $455.00 — made up of $175.00 GST and $280.00 Ontario PST.</div>
+      </div>
+
+      <div class="hst-faq-item">
+        <div class="hst-faq-q">How do I remove HST from a total amount (reverse HST)?</div>
+        <div class="hst-faq-a">To find the pre-tax price from a HST-included total, divide the total by 1.13. Formula: Pre-tax = Total ÷ 1.13. Then HST = Total − Pre-tax. Quick shortcut: multiply the total by 0.115044 to extract just the HST portion. Example: $1,356 ÷ 1.13 = $1,200 pre-tax. HST = $1,356 − $1,200 = $156.00.</div>
+      </div>
+
+      <div class="hst-faq-item">
+        <div class="hst-faq-q">When does a small business in Ontario need to register for HST?</div>
+        <div class="hst-faq-a">Ontario businesses must register for HST once their taxable revenues exceed $30,000 in a single calendar quarter or over any four consecutive quarters. Once you exceed this threshold, you must register within 29 days and begin collecting 13% HST on all taxable sales. Voluntary registration is allowed below $30,000 and is often beneficial as it lets you claim Input Tax Credits on business expenses.</div>
+      </div>
+
+      <div class="hst-faq-item">
+        <div class="hst-faq-q">What is an Input Tax Credit and how does it reduce my HST owing?</div>
+        <div class="hst-faq-a">An Input Tax Credit (ITC) lets HST-registered Ontario businesses recover the 13% HST paid on business expenses. ITCs are claimed on your HST return and reduce the net HST you remit to CRA. For example, if you collected $2,600 in HST from clients but paid $800 in HST on business expenses, you remit only $1,800 to CRA. Eligible expenses include office rent, equipment, professional services, advertising and vehicle costs.</div>
+      </div>
+
+      <div class="hst-faq-item">
+        <div class="hst-faq-q">Does HST apply to commercial rent in Ontario?</div>
+        <div class="hst-faq-a">Yes — commercial rent in Ontario is subject to 13% HST. Landlords renting to businesses must collect and remit HST on commercial lease payments. Tenants who are HST-registered can claim the HST paid on commercial rent as an Input Tax Credit. Residential rent, however, is HST-exempt.</div>
+      </div>
+
+      <div class="hst-faq-item">
+        <div class="hst-faq-q">What is the Ontario new housing HST rebate?</div>
+        <div class="hst-faq-a">Buyers of newly built homes in Ontario can claim a rebate of 75% of the 8% provincial HST portion, up to a maximum of $24,000. The full rebate applies to homes priced at $400,000 or under. Between $400,000 and $450,000 the rebate is proportionally reduced, and homes over $450,000 receive no provincial rebate. A separate federal GST new housing rebate of up to $6,300 is also available for qualifying homes.</div>
+      </div>
+
+      <div class="hst-faq-item">
+        <div class="hst-faq-q">Can Gondaliya CPA help with HST filing and CRA compliance in Ontario?</div>
+        <div class="hst-faq-a">Yes — Gondaliya CPA handles HST registration, return preparation, filing and CRA audit representation for Ontario businesses of all sizes. Services are available in-person in Toronto and virtually to businesses across Ontario and Canada, including evenings and weekends to 9 PM. Flat-fee pricing with no hourly billing. Please visit our <a href="https://gondaliyacpa.ca/gst-hst-return-filing/" style="color:rgba(32,135,201,1);">GST/HST filing service page</a> to learn more.</div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<!-- ══════════════════════════════════
+     CTA BANNER
+     ══════════════════════════════════ -->
+<div class="hst-cta">
+  <div class="hst-wrap">
+    <h2>Need Help with HST Filing or CRA Compliance?</h2>
+    <p>Gondaliya CPA handles HST registration, filing, audit representation and ITCs for Ontario businesses — virtually across Ontario and Canada. Flat-fee pricing, 1450+ Google reviews.</p>
+    <div class="hst-cta-feats">
+      <div class="hst-cta-feat">Licensed CPA Ontario</div>
+      <div class="hst-cta-feat">Virtual Across Ontario</div>
+      <div class="hst-cta-feat">Flat-Fee Pricing</div>
+      <div class="hst-cta-feat">Evenings &amp; Weekends to 9 PM</div>
+    </div>
+    <a href="https://gondaliyacpa.ca/consultation/" class="hst-btn-blue">Book Free HST Consultation</a>
+    <a href="https://gondaliyacpa.ca/gst-hst-return-filing/" class="hst-btn-dark">HST Filing Services</a>
+  </div>
+</div>
+
+
+<!-- ══════════════════════════════════
+     RELATED TOOLS & RESOURCES
+     ══════════════════════════════════ -->
+<div class="hst-section">
+  <div class="hst-wrap">
+    <h2 class="hst-h2">Related CPA Resources</h2>
+    <p class="hst-sub">Helpful guides and services from Gondaliya CPA for Ontario businesses.</p>
+    <div class="hst-related-grid">
+      <a href="https://gondaliyacpa.ca/tax-preparation-filing/" class="hst-related-card">
+        <h4>Corporate Tax Filing</h4>
+        <p>T2 corporate tax return preparation and filing for Ontario corporations — from $400.</p>
+      </a>
+      <a href="https://gondaliyacpa.ca/accounting-bookkeeping-services/" class="hst-related-card">
+        <h4>Accounting &amp; Bookkeeping</h4>
+        <p>Monthly bookkeeping with proper HST tracking so your ITC claims are always audit-ready.</p>
+      </a>
+      <a href="https://gondaliyacpa.ca/tax-planning/" class="hst-related-card">
+        <h4>Corporate Tax Planning</h4>
+        <p>Proactive tax planning to reduce corporate tax liabilities and optimise year-end outcomes.</p>
+      </a>
+      <a href="https://gondaliyacpa.ca/gst-hst-return-filing/" class="hst-related-card">
+        <h4>GST/HST Filing</h4>
+        <p>Professional HST return preparation, filing and CRA compliance — flat-fee, no surprises.</p>
+      </a>
+      <a href="https://gondaliyacpa.ca/trust-and-estate-tax-returns-t3/" class="hst-related-card">
+        <h4>Trust and Estate Tax Returns (T3)</h4>
+        <p>Expert T3 return preparation to ensure compliance and minimise taxes for trusts and estates.</p>
+      </a>
+      <a href="https://gondaliyacpa.ca/corporate-tax-cleanup/" class="hst-related-card">
+        <h4>Corporate Tax Cleanup</h4>
+        <p>Resolve past corporate tax issues and bring your filings fully compliant and up to date.</p>
+      </a>
+      <a href="https://gondaliyacpa.ca/cra-audit-resolution-services/" class="hst-related-card">
+        <h4>CRA Audit Resolution Services</h4>
+        <p>Facing a CRA audit? We represent you directly and handle all correspondence on your behalf.</p>
+      </a>
+      <a href="https://gondaliyacpa.ca/nominee-director/" class="hst-related-card">
+        <h4>Resident Director (Nominee Director) Services</h4>
+        <p>Qualified nominee director services to help companies meet Canadian compliance requirements.</p>
+      </a>
+      <a href="https://gondaliyacpa.ca/incorporation-services/" class="hst-related-card">
+        <h4>Incorporation Services</h4>
+        <p>Incorporate your Ontario business from $35 — lowest in Canada, done fully online.</p>
+      </a>
+    </div>
+  </div>
+</div>
+
+
+<!-- ══════════════════════════════════
+     CALCULATOR JAVASCRIPT (all provinces)
+     ══════════════════════════════════ -->
+<script>
+var HST_PROV = {
+  ON: { name: 'Ontario', tax: 'HST', prov: 8, provLabel: 'Ontario portion' },
+  NB: { name: 'New Brunswick', tax: 'HST', prov: 10, provLabel: 'New Brunswick portion' },
+  NL: { name: 'Newfoundland and Labrador', tax: 'HST', prov: 10, provLabel: 'Newfoundland and Labrador portion' },
+  PE: { name: 'Prince Edward Island', tax: 'HST', prov: 10, provLabel: 'Prince Edward Island portion' },
+  NS: { name: 'Nova Scotia', tax: 'HST', prov: 9, provLabel: 'Nova Scotia portion' },
+  BC: { name: 'British Columbia', tax: 'GST + PST', prov: 7, provLabel: 'BC PST' },
+  SK: { name: 'Saskatchewan', tax: 'GST + PST', prov: 6, provLabel: 'Saskatchewan PST' },
+  MB: { name: 'Manitoba', tax: 'GST + RST', prov: 7, provLabel: 'Manitoba RST' },
+  QC: { name: 'Quebec', tax: 'GST + QST', prov: 9.975, provLabel: 'Quebec QST' },
+  AB: { name: 'Alberta', tax: 'GST', prov: 0, provLabel: '' },
+  YT: { name: 'Yukon', tax: 'GST', prov: 0, provLabel: '' },
+  NT: { name: 'Northwest Territories', tax: 'GST', prov: 0, provLabel: '' },
+  NU: { name: 'Nunavut', tax: 'GST', prov: 0, provLabel: '' }
+};
+var currentMode = 'add';
+var currentProv = 'ON';
+
+function hstRate(p) { return 5 + HST_PROV[p].prov; }
+function pct(n) { return (Math.round(n * 1000) / 1000) + '%'; }
+function shortTax(p) { var t = HST_PROV[p].tax; return t === 'HST' ? 'HST' : (t === 'GST' ? 'GST' : 'Tax'); }
+
+function fmt(n) {
+  return '$' + n.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+}
+
+function updateLabels() {
+  var p = HST_PROV[currentProv], s = shortTax(currentProv), r = hstRate(currentProv);
+  document.getElementById('hst-calc-title').textContent = p.name + ' ' + p.tax + ' Calculator — ' + pct(r) + ' Rate 2026';
+  document.getElementById('hst-tab-add').textContent = 'Add ' + s;
+  document.getElementById('hst-tab-remove').textContent = 'Remove ' + s + ' (Reverse)';
+  document.getElementById('hst-calc-btn').textContent = 'Calculate ' + s;
+  document.getElementById('hst-input-label').textContent = currentMode === 'add' ? 'Amount Before Tax (CAD)' : 'Total Amount Including ' + s + ' (CAD)';
+  document.getElementById('res-label-tax').textContent = (p.tax === 'HST' ? 'HST' : (p.tax === 'GST' ? 'GST' : 'Total tax')) + ' (' + pct(r) + ')';
+  var row = document.getElementById('res-row-pst');
+  if (p.prov > 0) {
+    row.classList.remove('hst-hide');
+    document.getElementById('res-label-pst').textContent = p.provLabel + ' (' + pct(p.prov) + ')';
+  } else {
+    row.classList.add('hst-hide');
+  }
+}
+
+function switchTab(mode) {
+  currentMode = mode;
+  document.getElementById('hst-tab-add').classList.toggle('active', mode === 'add');
+  document.getElementById('hst-tab-remove').classList.toggle('active', mode === 'remove');
+  document.getElementById('hst-result').classList.remove('show');
+  document.getElementById('hst-amount').value = '';
+  updateLabels();
+}
+
+function changeProvince() {
+  currentProv = document.getElementById('hst-province').value;
+  updateLabels();
+  calculateHST();
+}
+
+function hstCalc(raw, mode, prov) {
+  var rate = hstRate(prov) / 100;
+  var pretax, total, tax, gst, pst;
+  if (mode === 'add') {
+    pretax = Math.round(raw * 100) / 100;
+    tax = Math.round(pretax * rate * 100) / 100;
+    total = Math.round((pretax + tax) * 100) / 100;
+  } else {
+    total = Math.round(raw * 100) / 100;
+    pretax = Math.round(total / (1 + rate) * 100) / 100;
+    tax = Math.round((total - pretax) * 100) / 100;
+  }
+  gst = HST_PROV[prov].prov > 0 ? Math.round(pretax * 0.05 * 100) / 100 : tax;
+  pst = Math.round((tax - gst) * 100) / 100;
+  return { pretax: pretax, tax: tax, gst: gst, pst: pst, total: total, rate: rate };
+}
+
+function calculateHST() {
+  var raw = parseFloat(document.getElementById('hst-amount').value);
+  if (isNaN(raw) || raw <= 0) { document.getElementById('hst-result').classList.remove('show'); return; }
+  var c = hstCalc(raw, currentMode, currentProv), s = shortTax(currentProv);
+  var factor = (1 + c.rate).toFixed(5).replace(/0+$/, '');
+  document.getElementById('res-label-pretax').textContent = 'Pre-Tax Amount';
+  if (currentMode === 'add') {
+    document.getElementById('res-label-total').textContent = 'Total with ' + s;
+    document.getElementById('res-formula').textContent = fmt(c.pretax) + ' × ' + factor + ' = ' + fmt(c.total);
+  } else {
+    document.getElementById('res-label-total').textContent = 'Total (Entered)';
+    document.getElementById('res-formula').textContent = fmt(c.total) + ' ÷ ' + factor + ' = ' + fmt(c.pretax) + ' pre-tax';
+  }
+  document.getElementById('res-pretax').textContent = fmt(c.pretax);
+  document.getElementById('res-hst').textContent = fmt(c.tax);
+  document.getElementById('res-gst').textContent = fmt(c.gst);
+  document.getElementById('res-pst').textContent = fmt(c.pst);
+  document.getElementById('res-total').textContent = fmt(c.total);
+  document.getElementById('hst-result').classList.add('show');
+}
+
+document.getElementById('hst-amount').addEventListener('keydown', function(e) {
+  if (e.key === 'Enter') calculateHST();
+});
+</script>
+
+
+<!-- ══════════════════════════════════
+     FAQ SCHEMA — PASTE INTO RANK MATH PRO > SCHEMA > CUSTOM
+     ══════════════════════════════════ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much is HST in Ontario in 2026?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Ontario HST is 13% in 2026, combining the 5% federal GST and 8% Ontario provincial portion. On a $100 purchase, HST is $13.00 for a total of $113.00." }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I calculate HST on an invoice in Ontario?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Multiply the pre-tax amount by 1.13 to get the total including HST. Example: $3,500 × 1.13 = $3,955.00. The HST portion is $455.00." }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I remove HST from a total amount?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Divide the total by 1.13 to get the pre-tax amount. Example: $1,356 ÷ 1.13 = $1,200 pre-tax. HST = $156.00." }
+    },
+    {
+      "@type": "Question",
+      "name": "When does a small business in Ontario need to register for HST?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Ontario businesses must register for HST once taxable revenues exceed $30,000 in a single calendar quarter or over four consecutive quarters." }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the Ontario new housing HST rebate?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Buyers of newly built homes in Ontario can claim a rebate of 75% of the 8% provincial HST portion, up to a maximum of $24,000, on homes priced at $400,000 or under." }
+    }
+  ]
+}
+</script>
