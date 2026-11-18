@@ -258,7 +258,7 @@ POSTS = [
    ["Invoices", ["Print the full BN + RT0001", "Never use the incorporation number for tax", "Check the number in the CRA GST/HST Registry"]],
    ["Changes", ["Sole proprietor to corporation: new BN", "Amalgamation: new BN", "Update owners and addresses in My Business Account"]],
    ["Access", ["Register for My Business Account", "Authorize your CPA as a representative", "Keep CRA letters for six years"]]]},
- {"dir": "medical-practice-incorporation-cost", "id": None, "short": "medical-pc-cost",
+ {"dir": "medical-practice-incorporation-cost", "id": 11567, "short": "medical-pc-cost",
   "topic": "medical professional corporations", "pdf_title": "Medical Professional Corporation",
   "why": ("Medical PC setup", "College certificate, articles and CRA accounts lined up in the right order."),
   "info": [
