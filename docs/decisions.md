@@ -11081,3 +11081,81 @@ sentence, which states $25 per day to $2,500 under subsection 162(7) as
 applying generally. Section 7.4's qualification block scopes that figure to a
 non-resident-owned corporation. The block is used unchanged and the broader
 claim is not made.
+
+---
+
+## 2026-11-18 — Toronto city hub built, NOT published: the local data gate
+
+Navneet supplied an Elementor export and asked for the Toronto city hub built
+from it. The template is built, audits clean and is committed at
+`build/f3/corpnil-cityhub-toronto.json`. **It is not published, and cannot be
+until one number arrives.**
+
+### The blocker
+
+Plan line 1211 is a hard publish gate for Family 3: *"No city hub publishes
+without a named repeatable local data source and a current data value."* The
+named source is the **Corporations Canada open-data bulk file, registered-office
+city field, pulled monthly**, and the value is the **active federal corporation
+count with a registered office in Toronto**. Line 1570 adds that the caption
+carries the pull date.
+
+That source is unreachable from this session: `open.canada.ca` and
+`ised-isde.canada.ca` both return `000` through the egress proxy, as every
+government domain does. The count was not invented. The page carries
+`[[PULL CORPORATION COUNT]]` and `[[PULL DATE]]`, which is what
+`build_cityhub.py` was already written to do.
+
+**Needed to publish: the Toronto figure and its pull date.** Line 1743 supplies
+province figures (Ontario 1,108,730) but no city figure for any of the twelve.
+
+### The supplied template is a gondaliyacpa.ca page, and most of it cannot be used
+
+It is a full-service CPA city page for Mississauga, 37 sections. Used as-is it
+would have breached several hard rules at once:
+
+| In the template | Rule |
+|---|---|
+| "Book Your Free Consultation", "Schedule Free Consultation Call", "Free CPA Consultation", "Book Free Consultation" | **Rule 7**, no booking anywhere |
+| "1450+ Google Reviews", a Google Reviews widget and a Trustindex shortcode | **Rule 6**, and line 1584 keeps the review count unpublished until reconciled |
+| "30-Day Money-Back Guarantee", "60-Day Fees-Matching Policy", and two links to those pages | **Rule 4** |
+| Twelve services this site does not sell: bookkeeping, payroll, GST/HST filing, CRA audit resolution, incorporation, Voluntary Disclosure Programme | Out of scope |
+| Case studies with client outcomes | Family 12, blocked on client consent |
+| A Mississauga office address and Board of Trade membership | Entity consistency, one address only |
+| Emoji and star glyphs | No emoji anywhere |
+
+**Seven of the thirty-seven sections are used**, as empty shells with every text
+field overwritten: the hero, the four-cell trust strip, a heading and a text
+block used twice each, the twelve-card service grid, and the closing call to
+action. The rest are dropped rather than rewritten.
+
+### The old section map was wrong for this file
+
+`build_cityhub.py` carried a map (sections 0, 4, 5, 6, 7, 9, 10, 12, 14, 15, 16)
+written for an export that is not in this repository. Run against the supplied
+template it filled **only the hero** and left every other section reading
+"Mississauga", with the gondaliyacpa.ca service list intact. The map is replaced
+with one for this template and the reason recorded in the file.
+
+### Other corrections made to the generator
+
+- **Pricing.** It still produced "$300.00 per tax year, plus $39.00 HST, so
+  $339.00 in total" and "$350.00 including HST per tax year", both of which the
+  2026-11-12 ruling removed: no tax rate and no tax-inclusive total. Toronto is
+  an HST jurisdiction, so "plus HST per tax year" stays correct here; the rate,
+  the total and the overflow wording are fixed. The Alberta and Quebec notes
+  also named HST and were corrected, so a later non-HST build cannot
+  reintroduce the error fixed on 2026-11-13.
+- **Cross-domain assets.** The template hotlinked a hero background, a badge
+  image and nine decorative staff photos from gondaliyacpa.ca, and two trust
+  cells linked to that site's guarantee pages. A `desource()` pass now strips
+  every gondaliyacpa.ca asset and link target from any city build and restores
+  this site's own hero image. The only mention of that domain left on the page
+  is the overflow sentence, which the plan requires.
+- **Anchor text.** Line 1525 wants "City name plus service, never city name
+  alone". Only the first of the twelve cards carried the place; all twelve do
+  now.
+- `audit_visible.py` required the old `$350.00 including HST` wording and now
+  accepts either, like the Family 2, 5 and 7 gates.
+
+`audit_visible.py` reports **0 failures** on the finished template.

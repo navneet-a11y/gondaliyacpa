@@ -36,7 +36,9 @@ BAN=[('CRA wording',r'CRA[- ](authorized|agent|approved|partner|endorsed)|author
 REQ_ALL=[('EFILE wording',r'[Rr]egistered EFILE electronic filer'),
      ('price',r'\$300\.00 plus HST'),
      ('not-nil scope',r'is not nil'),('CTA',r'Start Nil T2 Filing NOW')]
-REQ_CITYHUB=[('overflow price',r'\$350\.00 including HST'),
+# 2026-11-12: the overflow fee reads "plus applicable sales tax per year".
+# Either wording passes until the sweep in docs/decisions.md lands.
+REQ_CITYHUB=[('overflow price',r'\$350\.00 (including HST|plus applicable sales tax)'),
      ('local data value',r'PULL CORPORATION COUNT|T2 returns were assessed'),
      ('pull date caption',r'PULL DATE|Pulled ')]
 
