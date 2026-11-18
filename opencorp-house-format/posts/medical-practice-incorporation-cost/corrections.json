@@ -1,0 +1,252 @@
+[
+ {
+  "kind": "fact",
+  "from": "Shareholders must be licensed doctors.\nDirectors",
+  "to": "Voting shareholders must be licensed doctors.\nDirectors"
+ },
+ {
+  "kind": "fact",
+  "from": "Officers handle admin tasks but don’t have to be shareholders.",
+  "to": "Officers handle admin tasks; in Ontario every officer and director must also be a physician shareholder."
+ },
+ {
+  "kind": "fact",
+  "from": "like Ontario’s 11% small business rate in 2026.",
+  "to": "like Ontario’s 12.2% combined small business rate in 2026."
+ },
+ {
+  "kind": "fact",
+  "from": "Ontario\t$1,200 initial¹\t$360 articles²\tProvincial required",
+  "to": "Ontario\t$400 initial¹\t$300 articles²\tProvincial required"
+ },
+ {
+  "kind": "fact",
+  "from": "British Columbia\t$900 initial⁴\t$350 filing⁵\tProvincial preferred",
+  "to": "British Columbia\t$350 initial⁴\t$350 filing⁵\tProvincial required"
+ },
+ {
+  "kind": "fact",
+  "from": "Alberta\t$850 initial⁶\t$275 registry⁷",
+  "to": "Alberta\t$500 + GST initial⁶\t$275 registry⁷"
+ },
+ {
+  "kind": "fact",
+  "from": "Renewal periods range from yearly up to every three years depending on where you live.",
+  "to": "Renewals are yearly in Ontario, British Columbia and Alberta."
+ },
+ {
+  "kind": "fact",
+  "from": "CRA Interpretation Bulletin IT-533R4 – Income Sprinkling Rules Update June 2024",
+  "to": "CRA guidance – Tax on split income (TOSI)"
+ },
+ {
+  "kind": "fact",
+  "from": "Ontario: Ontario Business Registry charges $360 for this",
+  "to": "Ontario: Ontario Business Registry charges $300 for this"
+ },
+ {
+  "kind": "fact",
+  "from": "CPSO Certificate of Authorization\t$500\t$250",
+  "to": "CPSO Certificate of Authorization\t$400\t$175"
+ },
+ {
+  "kind": "fact",
+  "from": "CPSBC Permit\t$600\t$300",
+  "to": "CPSBC Permit\t$350\t$135"
+ },
+ {
+  "kind": "fact",
+  "from": "CPSA Permit\t$450\t$225",
+  "to": "CPSA Permit\t$500 + GST\t$200 + GST"
+ },
+ {
+  "kind": "fact",
+  "from": "NUANS Report Fee: This federally required name search report checks",
+  "to": "NUANS Report Fee: This name search report, required in Ontario, Alberta and federally, checks"
+ },
+ {
+  "kind": "fact",
+  "from": "Ontario\t$1,200 initial / $600 annual\t$360\t$26\t$20–$40",
+  "to": "Ontario\t$400 initial / $175 annual\t$300\t$25\t$0 annual return"
+ },
+ {
+  "kind": "fact",
+  "from": "British Columbia\t$1,100 initial / $550 annual\t$350\tIncluded\t~$30",
+  "to": "British Columbia\t$350 initial / $135 annual\t$350\t$30 Name Request (BC does not use NUANS)\t$43.39 annual report"
+ },
+ {
+  "kind": "fact",
+  "from": "Alberta\t$1,300 initial / $650 annual\t~$450\tIncluded\t~$35",
+  "to": "Alberta\t$500 + GST initial / $200 + GST annual\t$275\tAlberta NUANS report\tGovernment fee plus registry agent charge"
+ },
+ {
+  "kind": "editor",
+  "from": "Quebec\t[EDITOR: verify 2026 figure]\t[EDITOR: verify 2026 figure]\t[EDITOR: verify 2026 figure]\t[EDITOR: verify 2026 figure]",
+  "to": "Quebec\tPlease ask us\tPlease ask us\tPlease ask us\tPlease ask us\tCollège des médecins du Québec + Registraire des entreprises"
+ },
+ {
+  "kind": "fact",
+  "from": "This table shows that first-year costs usually range between $2,000 and $3,000 across provinces.",
+  "to": "This table shows that first-year government and college fees come to $725 in Ontario, $730 in British Columbia and $800 in Alberta plus its NUANS report, before professional fees."
+ },
+ {
+  "kind": "typo",
+  "from": "passive income limits (&dollar;50,000 federal threshold",
+  "to": "passive income limits ($50,000 federal threshold"
+ },
+ {
+  "kind": "fact",
+  "from": "Forgetting renewal fees from colleges (&dollar;1,200–&dollar;1,800 yearly) plus government filings.",
+  "to": "Forgetting renewal fees from colleges ($175 CPSO, $135 CPSBC, $200 + GST CPSA yearly) plus government filings."
+ },
+ {
+  "kind": "fact",
+  "from": "patient care usually exempt but medico-legal consulting may be taxable without input credit.",
+  "to": "patient care usually exempt but medico-legal reports are usually taxable and may require GST/HST registration."
+ },
+ {
+  "kind": "typo",
+  "from": "once investment earnings pass &dollar;50K federally.",
+  "to": "once investment earnings pass $50K federally."
+ },
+ {
+  "kind": "fact",
+  "from": "https://laws-lois.justice.gc.ca/eng/acts/I‑3/index.html.",
+  "to": "https://laws-lois.justice.gc.ca/eng/acts/I-3.3/index.html."
+ },
+ {
+  "kind": "fact",
+  "from": "CPSO\tOntario\t$1,500 CAD [CPSO 2026]\t$750 CAD [CPSO 2026]",
+  "to": "CPSO\tOntario\t$400 CAD [CPSO 2026]\t$175 CAD [CPSO 2026]"
+ },
+ {
+  "kind": "fact",
+  "from": "CPSBC\tBritish Columbia\t$1,200 CAD [CPSBC 2026]\t$600 CAD [CPSBC 2026]",
+  "to": "CPSBC\tBritish Columbia\t$350 CAD [CPSBC 2026]\t$135 CAD [CPSBC 2026]"
+ },
+ {
+  "kind": "fact",
+  "from": "CPSA\tAlberta\t$1,000 CAD [CPSA 2026]\t$500 CAD [CPSA 2026]",
+  "to": "CPSA\tAlberta\t$500 CAD + GST [CPSA 2026]\t$200 CAD + GST [CPSA 2026]"
+ },
+ {
+  "kind": "editor",
+  "from": "separate from government charges—so no hidden costs (<NAVNEET: confirm exact flat service fee incl. HST>).",
+  "to": "separate from government charges—so no hidden costs ($35 including HST, plus government fees)."
+ },
+ {
+  "kind": "editor",
+  "from": "Also try our corporate tax calculator (<NAVNEET: build topic widget>) which guesses costs based on your province, license status, and income.",
+  "to": "Also try our readiness check on this page, which flags the costs and steps that apply based on your province, license status, and income."
+ },
+ {
+  "kind": "fact",
+  "from": "The CPSO Certificate of Authorization Fee is $1,200 initially and $600 annually.",
+  "to": "The CPSO Certificate of Authorization Fee is $400 initially and $175 annually."
+ },
+ {
+  "kind": "fact",
+  "from": "Ontario charges $360 to file Articles of Incorporation",
+  "to": "Ontario charges $300 to file Articles of Incorporation"
+ },
+ {
+  "kind": "fact",
+  "from": "The initial CPSBC permit fee is $1,100 with an annual renewal fee around $550.",
+  "to": "The initial CPSBC permit fee is $350 with an annual renewal fee of $135."
+ },
+ {
+  "kind": "fact",
+  "from": "Alberta’s Corporate Registry charges approximately $450 to incorporate a physician professional corporation.",
+  "to": "Alberta’s Corporate Registry charges $275 in government fees to incorporate a physician professional corporation, plus the registry agent’s service charge."
+ },
+ {
+  "kind": "fact",
+  "from": "CPSA requires an initial permit fee of about $1,300 and annual renewal fees near $650.",
+  "to": "CPSA requires an initial registration fee of $500 plus GST and annual renewal fees of $200 plus GST per physician shareholder."
+ },
+ {
+  "kind": "fact",
+  "from": "Rates vary by province but generally range from 11% to 15% on qualifying active business income.",
+  "to": "Rates vary by province but generally range from 9% to 12.2% on qualifying active business income."
+ },
+ {
+  "kind": "editor",
+  "from": "(https://www.obr.gov.on.ca/)",
+  "to": "(https://www.ontario.ca/page/ontario-business-registry)"
+ },
+ {
+  "kind": "editor",
+  "from": "(https://www.canlii.org/en/on/laws/stat/rso-1990-c-b16/latest/rso-1990-c-b16.html#sec3_2)",
+  "to": "(https://www.ontario.ca/laws/statute/90b16)"
+ },
+ {
+  "kind": "editor",
+  "from": "(https://www.cpsbc.ca/)",
+  "to": "(https://www.cpsbc.ca/licensees/hpc/fees)"
+ },
+ {
+  "kind": "editor",
+  "from": "(https://www.bcregistryservices.gov.bc.ca/)",
+  "to": "(https://www2.gov.bc.ca/gov/content/employment-business/business/managing-a-business/permits-licences/businesses-incorporated-companies/corporate-forms)"
+ },
+ {
+  "kind": "editor",
+  "from": "(https://cpsa.ca/)",
+  "to": "(https://cpsa.ca/physicians/physician-fees/)"
+ },
+ {
+  "kind": "editor",
+  "from": "(https://alta.registries.gov.ab.ca/)",
+  "to": "(https://www.alberta.ca/)"
+ },
+ {
+  "kind": "editor",
+  "from": "(https://www.onbiz.ca/articles-incorporation-fees)",
+  "to": "(https://www.ontario.ca/page/ontario-business-registry)"
+ },
+ {
+  "kind": "editor",
+  "from": "(https://www.bcregistryservices.gov.bc.ca/incorporate-fees)",
+  "to": "(https://www2.gov.bc.ca/gov/content/employment-business/business/managing-a-business/permits-licences/businesses-incorporated-companies/incorporated-companies)"
+ },
+ {
+  "kind": "editor",
+  "from": "(https://www.alberta.ca/corporate-registry-fees.aspx)",
+  "to": "(https://www.alberta.ca/)"
+ },
+ {
+  "kind": "editor",
+  "from": "(https://www.cpso.on.ca/licensing-services/professional-corporations#fees)",
+  "to": "(https://www.cpso.on.ca/Physicians/Your-Practice/Registration-Renewals-and-Incorporation/Incorporation-Issuance-and-Renewal/Frequently-Asked-Questions-about-Incorporation)"
+ },
+ {
+  "kind": "editor",
+  "from": "(https://cpsbc.ca/files/pdf/forms-permits.pdf#page=12)",
+  "to": "(https://www.cpsbc.ca/registrants/current-registrants/pmc/new-corporation)"
+ },
+ {
+  "kind": "editor",
+  "from": "(https://cpsa.ca/wp-content/uploads/2026-Permit-Fee-Schedule.pdf)",
+  "to": "(https://cpsa.ca/physicians/registration/incorporate-your-medical-practice/)"
+ },
+ {
+  "kind": "editor",
+  "from": "(https://www.ontario.ca/laws/regulation/900193)",
+  "to": "(https://www.ontario.ca/laws/regulation/050665)"
+ },
+ {
+  "kind": "editor",
+  "from": "(https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/sole-proprietorships-partnerships/closing-down-business.html)",
+  "to": "(https://www.canada.ca/en/revenue-agency.html)"
+ },
+ {
+  "kind": "editor",
+  "from": "(https://provincialregulators.ca/revival)",
+  "to": "(https://www.ontario.ca/page/ontario-business-registry)"
+ },
+ {
+  "kind": "editor",
+  "from": "(https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/sole-proprietorships-partnerships/reviving-dormant-business.html)",
+  "to": "(https://www.canada.ca/en/revenue-agency.html)"
+ }
+]
