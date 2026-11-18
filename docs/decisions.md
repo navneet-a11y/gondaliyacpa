@@ -11482,3 +11482,53 @@ They need no import either. Build the template, create the CPT item, then
 insert sections with `wp_update_page_layout`, or import once and patch after.
 The generator stays the source of truth: `build/f3/corpnil-cityhub-toronto.json`
 is the v7 build and matches what is now on 2533.
+
+
+## 2026-11-18 — Toronto hero: price out, CPA proof in; grey text fixed
+
+Three changes Navneet asked for from the rendered banner.
+
+### The meta row goes entirely
+
+The earlier rule hid only the date and kept the byline, which left
+"Sharad Gondaliya, CPA" floating above the banner. Navneet asked for the whole
+row. `.single-nil_city_hub .entry-meta` is now `display:none`, which still
+keeps the `itemprop="author"` and `itemprop="datePublished"` microdata in the
+DOM for parsing.
+
+### The grey line on the dark banner
+
+The hero's EFILE line is a text-editor widget that carried **no colour setting
+at all**, so it inherited the theme's grey and rendered dim against the 0.82
+overlay. The lede beside it sets `#FFFFFFF2`; this one set nothing.
+
+`wp_update_page_layout` refuses styling fields -- it writes content fields only
+-- so on the live draft the colour goes inline in the `editor` field, which is
+a content field. The generator sets `text_color` properly for every later city.
+
+### The price comes out of the hero
+
+The hero's right cell showed "$300.00 / plus HST per tax year". The price
+already appears in the trust strip directly below and again in the price block,
+so the hero was spending its strongest position on a third repeat.
+
+It now reads **"CPA Ontario Registered Firm / Firm Registration 61330051"**.
+
+Navneet asked for something like the source page had, "reviews and registered
+cpa firm". **The reviews half cannot be used.** Hard rule 6 bars review and
+aggregateRating schema and keeps Trustindex rich snippets off, and
+`audit_visible.py`'s `review or year count` pattern fails any page carrying a
+star rating or an `n+` count. The source page's "1450+ (star) Google Reviews"
+cell is exactly what that rule exists to stop. The registered-firm half is
+both allowed and the strongest claim this site has, so it carries the cell
+alone.
+
+This repeats the trust strip's first cell verbatim. On a landing page the
+hero's claim and the strip beneath it reinforcing each other is normal, but if
+Navneet would rather vary it, the strip's first cell is the one to change, not
+the hero.
+
+The image-box title is sized for a short price (45px). A CSS rule scoped to
+the first top-level Elementor section drops it to 26px on the live page, and
+the generator now writes the typography into the template so later cities need
+no CSS.

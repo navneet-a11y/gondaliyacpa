@@ -324,7 +324,13 @@ def build(slug,name,kind,jkey,supplied):
      (0,[('title',f'Nil T2 Filing in {name}'),
          ('editor',P(f'Nil T2 filing for {name} corporations. One price for every '
                      'tax year, with no hourly billing and no add-on fees.')),
-         ('title_text','$300.00'),('description_text','plus HST per tax year'),
+         # 2026-11-18: the hero's right cell carried the price, which the
+         # price block further down already states twice. It now carries
+         # the strongest proof this site may make. Reviews and star
+         # ratings, which the source page used here, are barred by hard
+         # rule 6 and by audit_visible's 'review or year count' pattern.
+         ('title_text','CPA Ontario Registered Firm'),
+         ('description_text','Firm Registration 61330051'),
          ('editor',P('Registered EFILE electronic filer. Your CRA confirmation is '
                      'emailed within 3 business days.')),
          ('text',CTA),('text','See the price')],{4:FORM,5:PRICE}),
@@ -460,6 +466,22 @@ def build(slug,name,kind,jkey,supplied):
                     else: break
         if idx==0:
             sec['settings'].update(copy.deepcopy(HERO))
+            for w in ws:
+                st = w['settings']
+                if w['widgetType']=='image-box':
+                    # Sized for "$300.00"; the replacement text needs less.
+                    st['title_typography_typography']='custom'
+                    st['title_typography_font_family']='Poppins'
+                    st['title_typography_font_size']={'unit':'px','size':26,'sizes':[]}
+                    st['title_typography_font_weight']='600'
+                if w['widgetType']=='text-editor' and 'text_color' not in st:
+                    # The EFILE line carried no colour at all, so it inherited
+                    # the theme's grey and rendered dim on the dark banner.
+                    st['text_color']='#FFFFFF'
+                    st['typography_typography']='custom'
+                    st['typography_font_family']='Poppins'
+                    st['typography_font_size']={'unit':'px','size':16,'sizes':[]}
+                    st['typography_font_weight']='400'
         if idx==1:
             # The image widget carries a gondaliyacpa.ca URL that desource()
             # would blank, leaving an empty frame. Point it at this site's own
