@@ -11831,3 +11831,59 @@ the FAQ's links to the Ontario service pages and asserting the op count stays
 under the 50-per-call cap. 44 ops for Ottawa, as for Brampton.
 
 Left as a draft.
+
+## 2026-11-18 — Title convention: primary keyword first
+
+Navneet set a standing rule: **every SEO title leads with the page's primary
+(focus) keyword.** No brand prefix, no modifier, no category word ahead of it.
+The brand or category suffix stays at the end after a pipe.
+
+This came out of the GSC title review below and applies from here on, to every
+family template and every page already live.
+
+### Why the review happened
+
+90 days of data (2026-08-20 to 2026-11-18, 683 impressions, 8 clicks). Only
+three live URLs clear 40 impressions, so only three can support a CTR
+judgement at all:
+
+| Page | Impr | Clicks | Pos |
+|---|---|---|---|
+| `/guides/schedule-50-and-shareholder-reporting/` | 64 | 0 | 8.5 |
+| `/guides/final-t2-and-dissolution/` | 46 | 3 (6.5%) | 6.1 |
+| `/contact-us/` | 41 | 0 | 133.3 |
+
+The homepage has 23 impressions, which is why its title was left alone (logged
+separately). `/contact-us/` at position 133 is not a title problem. The
+dissolution guide is the best performer on the site and was not touched.
+
+### The one title changed
+
+Post 1393, focus keyword `schedule 50`:
+
+- was: `Schedule 50 and Shareholder Reporting | Nil T2` (46)
+- now: `Schedule 50: The 10% Shareholder Rule Explained | Nil T2` (56)
+
+Keyword first, and the 10% threshold now shows in the SERP -- that number is
+the fact the queries are asking for (`what is a schedule 50`,
+`schedule 50 cra`, `t2 schedule 50`). The description was already right and
+was left as it was.
+
+A first draft led with `T2 Schedule 50:`, which pushed the keyword to second
+position. Rejected under the rule above.
+
+### Still open, and bigger than any title
+
+Two topics each have a guide and a blog post competing for the same queries,
+so Google rotates between them and neither accumulates authority:
+
+- **Schedule 50** -- guide 64 + `/blog/schedule-50-and-the-10-percent-shareholder-rule/` 26 + the indexed PDF 17 = 107 impressions, 0 clicks across all three.
+- **Mandatory e-filing** -- `/blog/mandatory-t2-e-filing-after-2023/` 28 + `/guides/mandatory-t2-electronic-filing/` 23 = 51 impressions, 0 clicks. One query drives it: `is it mandatory to file t2 electronically?` and variants, 24 impressions at position 7.6.
+
+This ties into the nine indexed PDFs already flagged. Needs one canonical page
+per topic, not a title rewrite.
+
+Separately: the query `t183corp` draws 15 impressions at position 14.1. An
+exact-match query with no competition should not sit on page two. Internal
+linking and content on `/guides/t183corp-signing-and-transmission/`, not a
+title job.
