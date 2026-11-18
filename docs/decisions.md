@@ -11602,3 +11602,50 @@ sections, 121 elements, audit 0 failures.
 `reid()` regenerates element ids with `random` on every run, so two builds of
 the same city are never byte-identical. Compare visible text, not file hashes,
 when checking a rebuild changed nothing.
+
+
+## 2026-11-18 — Mississauga built on the site by duplicate-and-patch, no import
+
+Navneet asked whether a new city could go on the site without an import step.
+It can, and the route is better than either of the two considered before.
+
+`wp_duplicate_post` copies an Elementor layout **server side**, so Toronto's
+full 120 KB design reached the new post without crossing the wire at all. Only
+the text then had to be sent: 68 `wp_update_page_layout` ops carrying roughly
+19 KB. That is the answer to the problem recorded earlier, where writing
+`_elementor_data` by hand risked silently altering a styling value.
+
+Draft **2564** at `/mississauga/`. The earlier empty shell 2563 was deleted
+first so the slug was free. Terms, `cnf_*` meta and Rank Math fields set on the
+copy, `cnf_place` **replaced** rather than appended so it did not keep
+Toronto's term.
+
+The ops are generated from the built template by a script rather than written
+by hand, so what goes on the site is what the generator produced.
+`wp_update_page_layout` caps a call at 50 ops, so it went in two: 48 then 20.
+
+### Two defects this caught
+
+**A substring collision in the per-city copy mechanism.** The pair
+`Corporations in Mississauga -> Federal Corporations Registered in
+Mississauga`, meant for the local-data heading, also matched inside the
+non-resident service card, which became "Non-Resident Owned Federal
+Corporations Registered in Mississauga". Pairs may now be 3-tuples ending
+`'exact'`, which replace only a whole setting value, and the data heading uses
+that. Caught by reading the generated ops before sending them, not by the
+gate: `audit_visible.py` has no rule that would notice a mangled card title.
+
+**The intro image had no alt text at all.** The generator sets alt in the
+layout, but Elementor's template import dropped it and uploaded the file as a
+new attachment (2547) with an empty `alt_text`, so both city pages rendered
+the photograph with no alt. Fixed on the attachment, which both pages share,
+so the text is city-neutral: "CPA Ontario registered firm that files nil T2
+corporate returns".
+
+### Toronto's FAQ moved
+
+The FAQ container on 2533 is now at index 14, **before** the closing call to
+action, with a new element id (`8986de6`, was `ed702e8`). It was placed last
+on 2026-11-18 and the id changed, so it was moved in the editor afterwards.
+Left as it is rather than moved back, and Mississauga inherited the same order
+through the duplicate, so the two cities match.

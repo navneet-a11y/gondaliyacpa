@@ -545,8 +545,18 @@ def build(slug,name,kind,jkey,supplied):
                 if isinstance(st, dict):
                     for k, v in list(st.items()):
                         if isinstance(v, str) and v:
-                            for i, (a, b) in enumerate(pairs):
-                                if a in v:
+                            for i, pair in enumerate(pairs):
+                                a, b = pair[0], pair[1]
+                                # 'exact' replaces only a whole setting value.
+                                # Needed where the default text is a substring
+                                # of another string on the page: "Corporations
+                                # in <city>" is the local-data heading and also
+                                # sits inside the non-resident service card.
+                                if len(pair) > 2 and pair[2] == 'exact':
+                                    if v == a:
+                                        v = b
+                                        hits[i] = hits.get(i, 0) + 1
+                                elif a in v:
                                     v = v.replace(a, b)
                                     hits[i] = hits.get(i, 0) + 1
                             st[k] = v
@@ -556,7 +566,7 @@ def build(slug,name,kind,jkey,supplied):
                 for v in n:
                     sub(v)
         sub(out)
-        missed = [a for i, (a, b) in enumerate(pairs) if i not in hits]
+        missed = [p[0] for i, p in enumerate(pairs) if i not in hits]
         if missed:
             raise SystemExit(
                 f'{slug}: {len(missed)} replacement(s) matched nothing, so the '

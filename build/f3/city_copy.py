@@ -120,7 +120,10 @@ MISSISSAUGA_TEXT = [
   'The T183CORP is signed on screen, one for each tax year.'),
 
  # --- local data block
- ('Corporations in Mississauga', 'Federal Corporations Registered in Mississauga'),
+ # 'exact': this is also a substring of the non-resident service card's
+ # title, which must keep its own wording.
+ ('Corporations in Mississauga',
+  'Federal Corporations Registered in Mississauga', 'exact'),
  ('36,448 active federal business corporations have a registered office in '
   'Mississauga.',
   'Mississauga is the registered office of 36,448 active federal business '
