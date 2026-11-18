@@ -11649,3 +11649,49 @@ action, with a new element id (`8986de6`, was `ed702e8`). It was placed last
 on 2026-11-18 and the id changed, so it was moved in the editor afterwards.
 Left as it is rather than moved back, and Mississauga inherited the same order
 through the duplicate, so the two cities match.
+
+
+## 2026-11-18 — City hub links repointed to the Ontario service pages
+
+Both city hubs were published while their twelve Family 4 service pages did
+not exist, so every card and six FAQ links returned 404. Confirmed live:
+`/nil-t2-filing-toronto/` and `/catch-up-nil-t2-filing-mississauga/` both 404
+while `/toronto/` and `/mississauga/` returned 200.
+
+Navneet's first instruction was to strip the links and keep the text; the
+second, better one was to point them at the main service pages instead. That
+is what was done.
+
+### Why Ontario rather than the national pages
+
+Only 6 of the 12 services have a national page (`/nil-t2-filing/`,
+`/catch-up-nil-t2-filing/`, `/dormant-corporation-filing/`,
+`/final-t2-before-dissolution/`, `/t2-short-filing/`,
+`/inactive-holding-corporation-t2-filing/`). All **12 exist for Ontario**, and
+both cities are in Ontario, so the jurisdiction set gives a complete 1:1
+mapping with no mixed logic. Plan line 1526 also names the jurisdiction pillar
+as the parent for a Family 4 page, so this is the designated fallback rather
+than an improvised one.
+
+Every link reverts to its city target when the Family 4 city batch is built.
+
+### Applied
+
+Toronto 2533: 24 card link fields (`ekit_icon_box_global_link` and
+`ekit_icon_box_btn_url` on each of the twelve) plus the FAQ's six dead
+anchors. Revision 2568. Verified on the live page: 54 internal links, **0**
+still pointing at a `-toronto/` page, all twelve Ontario targets present.
+
+Mississauga 2564: the same 25 ops, **not yet applied** -- the post is open in
+the editor. Navneet is adding card images there: a read showed
+`ekit_icon_box_header_image` and `ekit_icon_box_show_image` newly set to
+`placeholder.png` on the service cards, with the text and element count
+unchanged. Those fields do not collide with the link fields, so the edit can
+be applied over them once the editor is closed.
+
+### The generator still carries the city links
+
+`build_cityhub.py` is unchanged: it produces the city URLs, which are correct
+once Family 4 exists. The Ontario fallback is a live-page measure only, so a
+rebuild or re-import would restore the city links. Worth remembering if either
+hub is rebuilt before that batch lands.
