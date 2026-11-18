@@ -1,0 +1,42 @@
+[
+ {
+  "kind": "fact",
+  "from": "It’s made up of nine digits plus two letters that show the type of tax account.",
+  "to": "It’s made up of nine digits. Each program account adds two letters that show the type of tax account, plus a four-digit reference number."
+ },
+ {
+  "kind": "fact",
+  "from": "Ontario gives nine-digit numbers called “Ontario corporation numbers.” For example: 012345678 (fictional)",
+  "to": "Ontario gives 10-digit numbers called “Ontario corporation numbers” to corporations formed on the Ontario Business Registry since October 19, 2021. Older Ontario corporations have seven-digit numbers. For example: 1000123456 (fictional)"
+ },
+ {
+  "kind": "fact",
+  "from": "RM\tImport/Export\tBusinesses trading goods\tRM0001\tCBSA & Revenu Québec",
+  "to": "RM\tImport/Export\tBusinesses trading goods\tRM0001\tCBSA"
+ },
+ {
+  "kind": "typo",
+  "from": "Each code fits rules by different agencies but shares one main 9-digit CN called “the” CRA business registration numbers system in Canada.[9]",
+  "to": "Each code fits rules by different agencies but shares one main 9-digit BN under the CRA business number system in Canada."
+ },
+ {
+  "kind": "editor",
+  "from": "with clear pricing [EDITOR: insert exact flat service fee incl. HST].",
+  "to": "with clear pricing: $35 including HST, plus government fees."
+ },
+ {
+  "kind": "typo",
+  "from": "Import/Export\nZ\tInformation Returns",
+  "to": "Import/Export\nRZ\tInformation Returns"
+ },
+ {
+  "kind": "fact",
+  "from": "Ontario Corporation Numbers: Usually start with “0” and have six digits after it (like 0123456).",
+  "to": "Ontario Corporation Numbers: New ones have 10 digits and start with “1000” (like 1000123456); corporations formed before October 19, 2021 have seven-digit numbers."
+ },
+ {
+  "kind": "fact",
+  "from": "Federal Corporation Numbers: Seven-digit numbers given by Corporations Canada when you incorporate federally.",
+  "to": "Federal Corporation Numbers: Numeric numbers, usually eight digits for newer corporations, given by Corporations Canada when you incorporate federally."
+ }
+]

@@ -57,6 +57,8 @@ def cards(i):
 .c .w{{font-size:24px;font-weight:800;margin-bottom:4px;line-height:1.2}}
 .c .t{{font-size:18px;font-weight:700;color:#0f2a4a;margin-bottom:6px;line-height:1.3}}
 .c .x{{font-size:15px;line-height:1.45;color:#1d2733}}"""
+    if n <= 3:  # few cards: fill the frame
+        css += ".c{min-height:370px;padding:28px 26px} .c .w{font-size:44px;margin-bottom:14px} .c .t{font-size:24px;margin-bottom:12px} .c .x{font-size:19px;line-height:1.55}"
     out = []
     for k, (w, t, x) in enumerate(i["cards"]):
         bg, bd, tx = COLORS[k % len(COLORS)]
@@ -122,7 +124,10 @@ def main():
     build = os.path.join(HERE, "build")
     os.makedirs(build, exist_ok=True)
     jobs = []
+    only = sys.argv[1:]
     for p in POSTS:
+        if only and p["dir"] not in only:
+            continue
         out = os.path.join(HERE, "..", "posts", p["dir"], "images")
         os.makedirs(out, exist_ok=True)
         for i in p["info"]:
