@@ -11682,12 +11682,29 @@ Toronto 2533: 24 card link fields (`ekit_icon_box_global_link` and
 anchors. Revision 2568. Verified on the live page: 54 internal links, **0**
 still pointing at a `-toronto/` page, all twelve Ontario targets present.
 
-Mississauga 2564: the same 25 ops, **not yet applied** -- the post is open in
-the editor. Navneet is adding card images there: a read showed
-`ekit_icon_box_header_image` and `ekit_icon_box_show_image` newly set to
-`placeholder.png` on the service cards, with the text and element count
-unchanged. Those fields do not collide with the link fields, so the edit can
-be applied over them once the editor is closed.
+Mississauga 2564: the same 25 ops, revision 2569. Navneet had added card images there first
+(`ekit_icon_box_header_image` and `ekit_icon_box_show_image` set to
+`placeholder.png`), which do not collide with the link fields and are
+untouched.
+
+**Verified on both live pages:** 54 internal links each, **0** pointing at a
+non-existent city page, 12 Ontario targets on each, and the Ontario targets
+themselves confirmed 200.
+
+### The stale-lock bug cost four refusals here too
+
+`wp_update_page_layout` refused the Mississauga edit four times over about
+fifteen minutes with "Navneet Singh has post 2564 open in the editor", after
+Navneet confirmed it was closed. A full meta read showed **no `_edit_lock` key
+at all**, so nothing was holding the post. It then applied on the next attempt
+with no other change. Same pattern as post 2533 earlier today. The report
+queued with wp_send_feedback covers it; approve it at the link in that entry
+if it should reach the plugin's authors.
+
+A database-level search and replace was prepared as a way around the lock and
+**not used**: the proper path came back, and it keeps the Elementor save
+hooks, the revision and the cache purge that a raw `postmeta` rewrite would
+have skipped.
 
 ### The generator still carries the city links
 
