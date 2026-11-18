@@ -45,6 +45,13 @@ NEEDS_DATE = '[[PULL DATE]]'
 # used because the sentence claims a registered office *in Toronto*, and the
 # source line names the method so the pull stays reproducible.
 CITY_DATA = {
+ 'brampton': {
+   # Bramalea, Churchville and Mount Pleasant were absorbed in 1974 and carry
+   # 7 registered offices between them, so the literal city value stands alone.
+   'count':    '67,667',
+   'includes': '',
+   'pulled':   'November 18, 2026',
+ },
  'mississauga': {
    # Port Credit, Streetsville, Malton, Erin Mills and Dixie were absorbed in
    # 1974 but survive in only 18 registered-office rows between them, against

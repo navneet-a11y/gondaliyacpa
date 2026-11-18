@@ -11712,3 +11712,53 @@ have skipped.
 once Family 4 exists. The Ontario fallback is a live-page measure only, so a
 rebuild or re-import would restore the city links. Worth remembering if either
 hub is rebuilt before that batch lands.
+
+
+## 2026-11-18 — Brampton city hub, and the pattern settling down
+
+Draft **2570** at `/brampton/`. Third city, and the first where the method was
+routine rather than invented.
+
+### Data
+
+**67,667** active federal business corporations, literal city value, no
+"including" clause: Bramalea, Churchville and Mount Pleasant carry 7
+registered offices between them, 0.01%. Brampton is nearly double Mississauga
+on this measure despite being the smaller city by population. That comparison
+is **not** on the page: the pull covers the 12 plan cities, not every city in
+Ontario, so "second only to Toronto" or similar would be a claim the data does
+not support.
+
+### Its own angle
+
+Toronto's copy is definitional (what a nil T2 is, the obligation ending only
+at dissolution). Mississauga's is about how corporations end up dormant.
+Brampton's is **catching up**: the page opens on people who are three or five
+years behind, and the process, price block and all ten questions follow that
+through. Different frame, not different synonyms.
+
+Pairwise 6(k) similarity, all three under the 0.60 threshold:
+
+| | |
+|---|---|
+| Toronto vs Mississauga | 0.468 |
+| Toronto vs Brampton | 0.440 |
+| Mississauga vs Brampton | 0.459 |
+
+### Built by duplicating Mississauga, not Toronto
+
+Mississauga already carried the Ontario service links and Navneet's card
+images, so duplicating it meant **no link ops at all**: 44 text ops against
+Mississauga's 68. The FAQ's own links were rewritten to Ontario at
+op-generation time rather than in a second pass, so the page has never held a
+broken link.
+
+The generator still emits `-brampton/` URLs, which are correct once Family 4
+exists; the Ontario targets are applied when the ops are generated. Same
+arrangement as the other two.
+
+### Left as a draft
+
+Toronto and Mississauga were both published by Navneet, each time while their
+service links were still 404. Brampton is complete and its links resolve, but
+publishing is an outward-facing step and is left to him.
