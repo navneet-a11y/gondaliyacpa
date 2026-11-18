@@ -227,7 +227,7 @@ POSTS = [
    ["Rates", ["GST 5%", "Ontario HST 13%", "Quebec QST 9.975%, registered separately"]],
    ["After registering", ["File by the end of the month after each period", "Pay by online banking, wire or cheque", "Keep records six years"]],
    ["Imports and platforms", ["CARM since October 21, 2024", "Courier: US/Mexico duty-free to $150, tax-free to $40", "Platform rules since July 1, 2021"]]]},
- {"dir": "business-number-vs-incorporation-number", "id": None, "short": "bn-vs-incorporation-number",
+ {"dir": "business-number-vs-incorporation-number", "id": 11551, "short": "bn-vs-incorporation-number",
   "topic": "business numbers and CRA accounts", "pdf_title": "Business Number and CRA Accounts",
   "why": ("CRA accounts set up right", "Business number, RT, RP and RC accounts confirmed after you incorporate."),
   "info": [

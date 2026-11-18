@@ -1,0 +1,660 @@
+<style>.gcpa-post{--navy:#0f2a4a;--navy-2:#15355c;--blue:#1c6dd0;--blue-soft:#e8f1fc;--teal:#0c8f8f;--teal-soft:#e3f4f4;--gold:#c9991f;--gold-soft:#fbf3dc;--green:#1f8a4c;--green-soft:#e6f5ec;--red:#c0392b;--red-soft:#fbeae8;--ink:#1d2733;--muted:#5a6b7b;--line:#d8e0e8;--bg:#ffffff;--bg-alt:#f5f8fb;--radius:14px;--shadow:0 6px 22px rgba(15,42,74,.08);--shadow-lg:0 14px 40px rgba(15,42,74,.14);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);line-height:1.7;font-size:17px;max-width:1080px;margin:0 auto;padding:0 18px 60px;} .gcpa-post *{box-sizing:border-box;} .gcpa-hero{background:linear-gradient(135deg,var(--navy) 0%,var(--navy-2) 60%,#1c4a78 100%);color:#fff;border-radius:20px;padding:46px 40px 42px;margin:26px 0 34px;position:relative;overflow:hidden;} .gcpa-hero::after{content:"";position:absolute;right:-80px;top:-80px;width:280px;height:280px;z-index:0;background:radial-gradient(circle,rgba(28,109,208,.45),transparent 70%);} .gcpa-post .gcpa-eyebrow{display:inline-block;font-size:13px;letter-spacing:1.4px;text-transform:uppercase;font-weight:700;color:#cfe2f8 !important;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.3);padding:7px 15px;border-radius:30px;margin-bottom:18px;} .gcpa-post .gcpa-hero h1{font-size:34px;line-height:1.25;margin:0 0 16px;font-weight:800;color:#fff !important;letter-spacing:-.3px;position:relative;z-index:2;} .gcpa-post .gcpa-hero p{font-size:18px;color:#eaf3fc !important;margin:0;max-width:760px;position:relative;z-index:2;} .gcpa-eyebrow{position:relative;z-index:2;} .gcpa-post h2{font-size:27px;font-weight:800;color:var(--navy);line-height:1.3;margin:48px 0 18px;padding-bottom:14px;border-bottom:3px solid var(--blue-soft);letter-spacing:-.2px;position:relative;} .gcpa-post h2::after{content:"";position:absolute;left:0;bottom:-3px;width:70px;height:3px;background:var(--blue);} .gcpa-post h3{font-size:22px;font-weight:800;color:var(--navy-2);margin:40px 0 14px;line-height:1.35;} .gcpa-post h4{font-size:19px;font-weight:700;color:var(--navy-2);margin:36px 0 12px;line-height:1.4;padding-left:16px;border-left:4px solid var(--teal);} .gcpa-post p{margin:0 0 16px;color:#1d2733 !important;} .gcpa-post li{color:#1d2733;} .gcpa-post a{color:var(--blue);text-decoration:none;font-weight:600;} .gcpa-post a:hover{text-decoration:underline;} .gcpa-post ul,.gcpa-post ol{margin:0 0 18px !important;padding-left:0 !important;list-style:none !important;} .gcpa-post ul{list-style-type:none !important;} .gcpa-post ul li{position:relative;padding:8px 0 8px 34px;margin:0;border-bottom:1px solid var(--line);color:var(--ink);list-style:none !important;list-style-type:none !important;} .gcpa-post ul li::marker{content:"" !important;font-size:0 !important;} .gcpa-post ul li:last-child{border-bottom:none;} .gcpa-post ul li::before{content:"";position:absolute;left:6px;top:15px;width:9px;height:9px;border-radius:2px;background:var(--teal);transform:rotate(45deg);} .gcpa-post ol{counter-reset:gcpa;} .gcpa-post ol li{position:relative;padding:10px 0 10px 44px;margin:0 0 10px;counter-increment:gcpa;list-style:none !important;list-style-type:none !important;} .gcpa-post ol li::marker{content:"" !important;font-size:0 !important;} .gcpa-post ol li::before{content:counter(gcpa);position:absolute;left:0;top:9px;width:28px;height:28px;border-radius:8px;background:var(--navy);color:#fff;font-weight:700;font-size:14px;display:flex;align-items:center;justify-content:center;} .gcpa-post .wp-block-table,.gcpa-post figure.wp-block-table{margin:22px 0 26px;overflow-x:auto;} .gcpa-post table{width:100%;border-collapse:collapse;font-size:15.5px;background:#fff;border:1px solid var(--navy);border-radius:10px;overflow:hidden;box-shadow:var(--shadow);} .gcpa-post thead th{background:var(--navy);color:#fff;text-align:left;padding:13px 15px;font-weight:700;font-size:15px;border:1px solid var(--navy-2);} .gcpa-post tbody td{padding:12px 15px;border:1px solid var(--line);vertical-align:top;color:var(--ink);} .gcpa-post tbody tr:nth-child(even){background:var(--bg-alt);} .gcpa-post tbody tr:hover{background:var(--blue-soft);} .gcpa-post tbody td:first-child{font-weight:600;color:var(--navy-2);} .gcpa-metrics{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin:30px 0 36px;clear:both;} .gcpa-metric{background:#fff;border:1px solid var(--line);border-top:4px solid var(--blue);border-radius:var(--radius);padding:22px 18px;box-shadow:var(--shadow);transition:transform .2s,box-shadow .2s;} .gcpa-metric:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg);} .gcpa-metric:nth-child(2){border-top-color:var(--teal);} .gcpa-metric:nth-child(3){border-top-color:var(--gold);} .gcpa-metric:nth-child(4){border-top-color:var(--green);} .gcpa-metric .ic{width:46px;height:46px;border-radius:11px;background:var(--blue-soft);display:flex;align-items:center;justify-content:center;margin-bottom:14px;color:var(--blue);} .gcpa-metric:nth-child(2) .ic{background:var(--teal-soft);color:var(--teal);} .gcpa-metric:nth-child(3) .ic{background:var(--gold-soft);color:var(--gold);} .gcpa-metric:nth-child(4) .ic{background:var(--green-soft);color:var(--green);} .gcpa-metric .big{font-size:22px;font-weight:800;color:var(--navy);line-height:1.2;margin-bottom:4px;} .gcpa-metric .lbl{font-size:14px;color:var(--muted);line-height:1.45;} .gcpa-numhead{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin:46px 0 8px;clear:both;} .gcpa-numhead h4{margin:0 !important;} .gcpa-numhead .gcpa-pill{margin:0 !important;} .gcpa-numhead .num{flex:0 0 auto;width:48px;height:48px;border-radius:12px;background:var(--navy);color:#fff;font-size:22px;font-weight:800;display:flex;align-items:center;justify-content:center;box-shadow:var(--shadow);} .gcpa-callout{border-radius:var(--radius);padding:20px 22px;margin:22px 0;border:1px solid var(--line);background:var(--bg-alt);position:relative;} .gcpa-callout.blue{background:var(--blue-soft);border-color:#bcd9f6;} .gcpa-callout.teal{background:var(--teal-soft);border-color:#b7e3e3;} .gcpa-callout.gold{background:var(--gold-soft);border-color:#ecd79a;} .gcpa-callout.green{background:var(--green-soft);border-color:#b6e2c6;} .gcpa-callout.red{background:var(--red-soft);border-color:#f0c4be;} .gcpa-callout .co-tag{display:inline-block;font-size:12.5px;font-weight:700;letter-spacing:.6px;text-transform:uppercase;padding:4px 11px;border-radius:20px;margin-bottom:10px;color:#fff;} .gcpa-callout.blue .co-tag{background:var(--blue);} .gcpa-callout.teal .co-tag{background:var(--teal);} .gcpa-callout.gold .co-tag{background:var(--gold);} .gcpa-callout.green .co-tag{background:var(--green);} .gcpa-callout.red .co-tag{background:var(--red);} .gcpa-callout p:last-child{margin-bottom:0;} .gcpa-cta{background:linear-gradient(135deg,var(--navy) 0%,#1c4a78 100%);color:#fff;border-radius:18px;padding:34px 32px;margin:38px 0;text-align:center;box-shadow:var(--shadow-lg);position:relative;overflow:hidden;} .gcpa-cta::before{content:"";position:absolute;left:-60px;bottom:-60px;width:220px;height:220px;background:radial-gradient(circle,rgba(12,143,143,.4),transparent 70%);} .gcpa-post .gcpa-cta h4{color:#fff !important;border:none;padding:0;margin:0 0 12px;font-size:22px;font-weight:800;position:relative;z-index:1;} .gcpa-post .gcpa-cta p{color:#eaf3fc !important;max-width:680px;margin:0 auto 22px;position:relative;z-index:1;} .gcpa-post .gcpa-cta .btn{display:inline-block;background:#fff !important;color:var(--navy) !important;font-weight:700;padding:13px 26px;border-radius:30px;margin:6px;font-size:16px;position:relative;z-index:1;transition:transform .15s;text-decoration:none !important;} .gcpa-post .gcpa-cta .btn:hover{transform:translateY(-2px);text-decoration:none !important;} .gcpa-post .gcpa-cta .btn.primary{background:var(--teal) !important;color:#fff !important;} .gcpa-btnrow{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;align-items:center;position:relative;z-index:1;} .gcpa-trust{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-bottom:22px;position:relative;z-index:1;} .gcpa-post .gcpa-trust span{font-size:13px;font-weight:700;background:rgba(255,255,255,.18) !important;border:1px solid rgba(255,255,255,.45);padding:7px 14px;border-radius:20px;color:#ffffff !important;} .gcpa-post svg{display:block;} .gcpa-pill{display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:700;padding:8px 16px;border-radius:30px;margin:10px 0 6px;line-height:1.2;} .gcpa-pill svg{width:16px;height:16px;flex:0 0 auto;} .gcpa-pill.green{background:var(--green-soft);color:var(--green);border:1px solid #b6e2c6;} .gcpa-pill.blue{background:var(--blue-soft);color:var(--blue);border:1px solid #bcd9f6;} .gcpa-pill.teal{background:var(--teal-soft);color:var(--teal);border:1px solid #b7e3e3;} .gcpa-pill.gold{background:var(--gold-soft);color:#9a7416;border:1px solid #ecd79a;} .gcpa-pill.red{background:var(--red-soft);color:var(--red);border:1px solid #f0c4be;} .gcpa-pillhead{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin:38px 0 12px;clear:both;} .gcpa-pillhead h4{margin:0 !important;} .gcpa-pillhead .gcpa-pill{margin:0 !important;} @media(max-width:560px){.gcpa-pillhead{gap:8px;}} .gcpa-toc{background:var(--bg-alt);border:1px solid var(--line);border-left:5px solid var(--blue);border-radius:var(--radius);padding:24px 26px;margin:30px 0 36px;box-shadow:var(--shadow);} .gcpa-toc h5{margin:0 0 14px;font-size:16px;font-weight:800;color:var(--navy);letter-spacing:.4px;text-transform:uppercase;display:flex;align-items:center;gap:9px;} .gcpa-toc h5 svg{width:20px;height:20px;color:var(--blue);} .gcpa-toc ol{counter-reset:toc;margin:0 !important;padding:0 !important;columns:2;column-gap:36px;list-style:none !important;} .gcpa-toc ol li{counter-increment:toc;position:relative;padding:7px 0 7px 30px;margin:0;border-bottom:1px dashed var(--line);break-inside:avoid;list-style:none !important;} .gcpa-toc ol li::before{content:counter(toc);position:absolute;left:0;top:7px;width:21px;height:21px;border-radius:6px;background:var(--blue-soft);color:var(--blue);font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;} .gcpa-toc ol li::marker{content:"" !important;font-size:0 !important;} .gcpa-toc a{color:var(--navy-2);font-weight:600;font-size:15px;} .gcpa-toc a:hover{color:var(--blue);} .gcpa-post [id^="toc-"]{scroll-margin-top:90px;} .gcpa-banner{display:block;background:linear-gradient(135deg,#0d3b66 0%,#0c7a7a 100%);color:#fff;border-radius:16px;padding:30px 32px;margin:36px 0;box-shadow:var(--shadow-lg);} .gcpa-banner .bt{font-size:20px;font-weight:800;line-height:1.45;margin:0 0 20px;max-width:760px;} .gcpa-banner .bb{display:flex;flex-wrap:wrap;gap:14px;align-items:center;} .gcpa-banner a{display:inline-block;background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.6);color:#fff !important;font-weight:700;padding:13px 24px;border-radius:30px;font-size:15px;text-decoration:none !important;} .gcpa-banner a.solid{background:#ffffff !important;color:#0d3b66 !important;border-color:#fff;} .gcpa-disclaimer{background:var(--bg-alt);border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:34px 0 10px;font-size:14.5px;color:var(--muted);line-height:1.6;} .gcpa-disclaimer strong{color:var(--navy-2);} .gcpa-byline{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin:0 0 22px;font-size:15px;} .gcpa-byline .av{width:42px;height:42px;border-radius:50%;background:var(--navy);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:16px;flex:0 0 auto;} .gcpa-byline .nm{font-weight:700;color:var(--navy-2);} .gcpa-byline .rl{color:var(--teal);font-weight:700;} .gcpa-byline .sep{color:var(--line);} .gcpa-author{display:flex;gap:18px;align-items:flex-start;background:var(--bg-alt);border:1px solid var(--line);border-left:5px solid var(--teal);border-radius:14px;padding:24px 26px;margin:34px 0 40px;} .gcpa-author .ava{width:64px;height:64px;border-radius:50%;background:linear-gradient(135deg,var(--navy),var(--teal));color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:22px;flex:0 0 auto;} .gcpa-author .info h5{margin:0 0 6px;font-size:17px;font-weight:800;color:var(--navy);line-height:1.4;} .gcpa-author .info .role{font-size:14px;color:var(--teal);font-weight:700;margin:0 0 12px;} .gcpa-author .info p{font-size:14.5px;color:var(--muted) !important;margin:0;line-height:1.65;} .gcpa-faq{margin:18px 0 26px;border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:var(--shadow);} .gcpa-faq details{border-bottom:1px solid var(--line);background:#fff;} .gcpa-faq details:last-child{border-bottom:none;} .gcpa-faq summary{list-style:none;cursor:pointer;padding:18px 22px;font-weight:700;color:var(--navy-2);font-size:16px;display:flex;justify-content:space-between;align-items:center;gap:14px;transition:background .15s;} .gcpa-faq summary::-webkit-details-marker{display:none;} .gcpa-faq summary:hover{background:var(--bg-alt);} .gcpa-faq summary .pl{flex:0 0 auto;width:24px;height:24px;border-radius:50%;background:var(--blue-soft);color:var(--blue);display:flex;align-items:center;justify-content:center;font-size:18px;font-weight:700;transition:transform .2s;} .gcpa-faq details[open] summary{background:var(--bg-alt);color:var(--navy);} .gcpa-faq details[open] summary .pl{transform:rotate(45deg);background:var(--blue);color:#fff;} .gcpa-faq .ans{padding:0 22px 20px;color:#1d2733;font-size:15.5px;line-height:1.7;} .gcpa-img-right{float:right;max-width:250px;width:32%;margin:6px 0 24px 28px;border-radius:12px;box-shadow:var(--shadow-lg);border:1px solid var(--line);} .gcpa-img-right img{display:block;width:100%;height:auto;border-radius:12px;} @media(max-width:560px){.gcpa-img-right{float:none;width:70%;max-width:260px;margin:14px auto 18px;}} .gcpa-closing{font-size:24px;font-weight:800;color:var(--navy);margin:48px 0 14px;padding-bottom:12px;border-bottom:3px solid var(--teal-soft);position:relative;} .gcpa-closing::after{content:"";position:absolute;left:0;bottom:-3px;width:70px;height:3px;background:var(--teal);} @media(max-width:560px){.gcpa-post{font-size:16px;} .gcpa-hero{padding:32px 22px;} .gcpa-hero h1{font-size:26px;} .gcpa-post h2{font-size:23px;} .gcpa-cta{padding:26px 20px;} .gcpa-banner .bb{width:100%;} .gcpa-banner .bb a{flex:1 1 auto;text-align:center;}}</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"Open Corporation for $35","alternateName":"Open Corporation For $35","url":"https://opencorporationfor35.ca/","description":"Open Corporation for $35 is a department of Gondaliya CPA.","parentOrganization":{"@type":"Organization","name":"Gondaliya CPA Professional Corporation","url":"https://gondaliyacpa.ca","identifier":"CPA Ontario Firm Registration 61330051"},"telephone":"+1-647-212-9559","email":"info@gondaliyacpa.ca","areaServed":"CA","openingHours":"Mo-Su 09:00-20:30","award":"Xero Partner Award Winner 2026","aggregateRating":{"@type":"AggregateRating","ratingValue":"5","reviewCount":"1300"}}
+</script>
+<div class="gcpa-post">
+<div class="gcpa-hero" style="background:linear-gradient(135deg,#0f2a4a 0%,#15355c 60%,#1c4a78 100%) !important;">
+<span class="gcpa-eyebrow">Business Number · Incorporation Number · GST/HST · CRA · 2026</span>
+<h1 style="color:#ffffff !important;position:relative;z-index:2;font-size:34px;line-height:1.25;font-weight:800;margin:0 0 14px;">Business Number vs Incorporation Number vs HST Number: What Each One Means</h1>
+<div class="gcpa-hero-sub" style="margin:0 0 18px;"><span style="color:#eaf3fc !important;font-size:18px;line-height:1.6;display:block;max-width:840px;position:relative;z-index:2;">Who issues each number, what it looks like, where you find it and which one goes on your invoices</span></div>
+<div style="position:relative;z-index:2;font-size:15px;line-height:1.5;"><span style="color:#ffffff;font-weight:bold;">By Sharad Gondaliya, CPA</span><span style="color:#9fd0d0;font-weight:bold;">  |  <a href="https://opencorporationfor35.ca/">Open Corporation For $35</a> and <a href="https://opencorporationfor35.ca/address-service-100/">Address Service</a></span></div>
+<div style="position:relative;z-index:2;font-size:14.5px;line-height:1.5;margin-top:12px;"><span style="color:#cfe2f8 !important;font-weight:600;">Open Corporation for $35 is a department of Gondaliya CPA.</span></div>
+</div>
+<h2>Business number vs incorporation number: Understanding CRA business number Canada, incorporation number Canada, and HST number differences</h2>
+<p><strong>Open Corporation for $35 is a department of Gondaliya CPA.</strong> <strong>TLDR:</strong> The difference between a business number and an incorporation number is key for anyone dealing with <a href="https://opencorporationfor35.ca/guides/business-number-cra-accounts/">CRA business number Canada</a> and incorporation number Canada processes. While the incorporation number identifies your corporation federally or provincially, the business number includes GST/HST numbers and program account numbers like RT, RC, and RP accounts used for taxes and payroll.</p>
+<h3 id="toc-summary" style="margin-top:38px;">Quick Summary</h3>
+<p>A corporation has two separate identifiers. The incorporation number comes from Corporations Canada or the provincial registry and proves the corporation exists. The 9-digit business number comes from the CRA and anchors every tax account. Your GST/HST number is not a third number: it is the business number plus RT0001.</p>
+<figure class="wp-block-table">
+<table>
+<thead><tr><th>Aspect</th><th>Details</th></tr></thead>
+<tbody>
+<tr><td>Business number (BN)</td><td>9 digits from the CRA, for example 123456789.</td></tr>
+<tr><td>Program accounts</td><td>BN + two letters + four digits: RC corporate tax, RT GST/HST, RP payroll, RM import/export, RZ information returns, RR charities.</td></tr>
+<tr><td>GST/HST number</td><td>BN + RT0001, for example 123456789 RT0001.</td></tr>
+<tr><td>Incorporation number</td><td>From Corporations Canada or the provincial registry. Ontario: 10 digits since October 19, 2021.</td></tr>
+<tr><td>On invoices</td><td>The full GST/HST number, never the incorporation number.</td></tr>
+<tr><td>When you get them</td><td>Both on the day a complete Ontario or federal incorporation is approved.</td></tr>
+<tr><td>Our fee</td><td>$35 including HST, plus government fees.</td></tr>
+</tbody>
+</table>
+</figure>
+<div class="gcpa-author">
+<div class="ava" style="background:linear-gradient(135deg,#0f2a4a,#0c8f8f) !important;color:#ffffff !important;">SG</div>
+<div class="info">
+<h5>Author: Sharad Gondaliya, CPA (Canada &amp; USA) — Founder &amp; Managing Director, Gondaliya CPA Professional Corporation, Toronto, Ontario.</h5>
+<div class="role">Reviewed and fact-checked by Sharad Gondaliya, CPA (Canada &amp; USA)</div>
+<p style="font-size:14.5px;color:#15355c !important;font-weight:700;margin:0 0 8px;">Open Corporation for $35 is a department of Gondaliya CPA.</p>
+<p>Gondaliya CPA is a Toronto-based team providing incorporation, CRA registrations, corporate tax, bookkeeping, GST/HST, and payroll for Canadian corporations. Verify our firm on the <a href="https://www.cpaontario.ca/protecting-the-public/directories/firm/gondaliya-5sqvmj">CPA Ontario public firm directory</a>, firm registration 61330051.</p>
+<p style="font-size:13.5px;color:#15355c !important;font-weight:700;margin-top:10px;">CPA Ontario | CPA USA (Washington &amp; Montana) | Xero Partner Award Winner 2026 | 1300+ 5-star Google reviews</p>
+</div>
+</div>
+<p style="font-size:14px;color:#5a6b7b;margin:-26px 0 26px;">Reading time: 24 minutes.</p>
+<div class="gcpa-toc">
+<h5>Table of Contents</h5>
+<ol>
+<li><a href="#toc-basics">The Three Numbers</a></li>
+<li><a href="#toc-differences">BN vs Incorporation Number</a></li>
+<li><a href="#toc-gst">The GST/HST Number</a></li>
+<li><a href="#toc-obtain">Getting Your BN and Accounts</a></li>
+<li><a href="#toc-maintain">Finding and Updating Numbers</a></li>
+<li><a href="#toc-updated">Quick Answers by Question</a></li>
+<li><a href="#toc-faq">Frequently Asked Questions</a></li>
+<li><a href="#toc-checklist">Checklist and Options</a></li>
+</ol>
+</div>
+<span class="gcpa-pill green">The Numbers That Matter</span>
+<div class="gcpa-metrics">
+<div class="gcpa-metric">
+<div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 9h16M4 15h16M10 3L8 21M16 3l-2 18"/></svg></div>
+<div class="big">9 digits</div>
+<div class="lbl">Every CRA business number</div>
+</div>
+<div class="gcpa-metric">
+<div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 9h10M7 13h6"/></svg></div>
+<div class="big">RT0001</div>
+<div class="lbl">Suffix on your first GST/HST account</div>
+</div>
+<div class="gcpa-metric">
+<div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+<div class="big">$30,000</div>
+<div class="lbl">GST/HST small supplier threshold</div>
+</div>
+<div class="gcpa-metric">
+<div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
+<div class="big">10 digits</div>
+<div class="lbl">Ontario corporation numbers since October 19, 2021</div>
+</div>
+</div>
+<div class="gcpa-callout blue">
+<span class="co-tag">Scope &amp; Assumptions</span>
+<p>This article covers Ontario and federal corporations and CRA business numbers as they stand in November 2026. Other provinces number their corporations differently. This is educational information only and not tax, legal, or financial advice. Please speak with a CPA before you register, close or change a CRA account.</p>
+</div>
+
+<h2>Business Registration and Identification Numbers in Canada</h2>
+<div class="gcpa-numhead">
+<div class="num" style="background:#0f2a4a !important;color:#ffffff !important;">1</div>
+<h4 id="toc-basics" style="border:none;padding:0;margin:0;">The Three Numbers</h4>
+<span class="gcpa-pill blue">The Basics</span>
+</div>
+<h3>Understanding the CRA Business Number (BN) and Its Purpose</h3>
+<p>In Canada, the Canada Revenue Agency (CRA) gives each business a Business Number (BN). This is a unique 9-digit code that helps track tax stuff and other government dealings.</p>
+<p>The BN makes things easier by linking all tax accounts under one number. So, if you have to pay corporate taxes, GST/HST, or <a href="https://opencorporationfor35.ca/payroll-service/">payroll taxes</a>, they all connect back to your BN.</p>
+<p>Here’s what you need to know about the CRA Business Number:</p>
+<ul>
+<li>It’s made up of nine digits. Each program account adds two letters that show the type of tax account, plus a four-digit reference number.</li>
+<li>You get your BN when you incorporate your company or register as a sole proprietor.</li>
+<li>Use it anytime you file taxes or apply for government permits.</li>
+</ul>
+<p>If you incorporate federally or in a province like Ontario, you’ll usually get this number automatically when you register your business.</p>
+<div class="gcpa-callout teal">
+<span class="co-tag">Key Stat</span>
+<p><strong>9 digits:</strong> every CRA business number. A full program account adds two letters and four digits, so a GST/HST number such as 123456789 RT0001 has 15 characters.</p>
+</div>
+<h3>Distinguishing Between Business Number and Incorporation Number</h3>
+<p>These two numbers sound similar but mean different things. Here’s how they differ:</p>
+<p><strong>Business Number (BN):</strong></p>
+<ul>
+<li>Issued by CRA.</li>
+<li>Used mainly for taxes and related programs like GST/HST.</li>
+</ul>
+<p><strong>Incorporation Number:</strong></p>
+<ul>
+<li>Given when you officially form your corporation.</li>
+<li>Comes from <a href="https://opencorporationfor35.ca/incorporate-federally-in-canada/">Corporations Canada</a> if federal, or a provincial registry like Ontario's if local.</li>
+<li>Identifies your company legally but isn’t for taxes directly.</li>
+</ul>
+<p>Mixing these up can cause problems later, so it pays to know which is which!</p>
+<h3>HST Number vs. Business Number</h3>
+<p>Lots of new business owners confuse their HST number with the business number, but they’re not the same thing:</p>
+<ul>
+<li>The HST number comes from your BN but has an extra suffix showing it relates to GST/HST taxes (like 123456789 RT0001).</li>
+<li>You need this number <a href="https://opencorporationfor35.ca/guides/hst-registration-guide/">on invoices</a> when charging customers sales tax. This helps follow Canadian sales tax rules properly.</li>
+</ul>
+<p>Knowing the difference keeps your invoicing clear and legal when collecting sales tax from clients.</p>
+<p>Getting these basics right—what a BN is versus an incorporation number—gives you a solid start in handling your business ID numbers correctly in Canada.</p>
+<h2>Differentiating Business Number and Incorporation Number</h2>
+<div class="gcpa-numhead">
+<div class="num" style="background:#0f2a4a !important;color:#ffffff !important;">2</div>
+<h4 id="toc-differences" style="border:none;padding:0;margin:0;">BN vs Incorporation Number</h4>
+<span class="gcpa-pill teal">Comparison</span>
+</div>
+<p>It’s important to know the difference between a business number and an incorporation number if you’re <a href="https://opencorporationfor35.ca/guides/how-to-incorporate-in-canada/">starting a company in Canada</a>. These two numbers play different roles. The business number vs incorporation number difference affects how you register your company, pay taxes, and follow rules. Let’s break down what each number means, who gives them out, their formats, and when you get them.</p>
+<h3>What Is an Incorporation Number and How Is It Assigned?</h3>
+<p>An incorporation number is a special ID your company gets when it officially becomes a <a href="https://opencorporationfor35.ca/incorporation-service-35/">legal entity</a>. It shows your business exists under Canadian law.</p>
+<h4>Federal vs Provincial Incorporation Numbers</h4>
+<p>Federal incorporation numbers come from Corporations Canada under the Canada Business Corporations Act (CBCA). They apply if you register at the federal level.</p>
+<p>Provincial incorporation numbers, like those from the <a href="https://opencorporationfor35.ca/how-to-incorporate-in-ontario/">Ontario Business Registry</a> under the Ontario Business Corporations Act (OBCA), are for companies registered within that province only.</p>
+<p>Each place has its own system with different numbering styles. For example, Ontario uses its own numeric codes.</p>
+<h4>When You Receive an Incorporation Number</h4>
+<p>You get your incorporation number right after your <a href="https://opencorporationfor35.ca/guides/articles-of-incorporation-explained/">incorporation papers are approved</a>:</p>
+<ul>
+<li>If federally incorporated, Corporations Canada issues your federal incorporation number.</li>
+<li>If provincially incorporated, like in Ontario, you get it from that province’s registry after approval.</li>
+</ul>
+<p>This number proves your company exists but doesn’t replace other registrations like tax accounts with the CRA.</p>
+<h3>Format and Use of Corporation Numbers Across Provinces and Federally</h3>
+<p>Corporation numbers look different depending on who issues them but all identify your company clearly.</p>
+<h4>Formats for Federal Corporation Numbers</h4>
+<p>Federal corporation numbers usually have eight digits with no letters or symbols. For example: 12345678 (just a made-up number)</p>
+<p>You’ll see this number on official papers from Corporations Canada about your corporation’s status.<sup>1</sup></p>
+<h4>Provincial Corporation Number Examples</h4>
+<p>Ontario gives 10-digit numbers called “Ontario corporation numbers” to corporations formed on the Ontario Business Registry since October 19, 2021. Older Ontario corporations have seven-digit numbers. For example: 1000123456 (fictional)</p>
+<p><a href="https://opencorporationfor35.ca/guides/extra-provincial-registration/">Other provinces</a> use different formats, but they all serve to identify companies registered there.<sup>2</sup></p>
+<h3>Business Number Format and Its Associated Program Accounts</h3>
+<p>The Canada Revenue Agency (CRA) gives business numbers separately. These help with tax stuff rather than legal ID.</p>
+<h4>Standard 9-Digit Business Number</h4>
+<p>Every business in Canada gets one standard 9-digit business number from the CRA when they register for taxes. It looks like this: 123456789 (example)</p>
+<p>This number stays the same across different program accounts connected to your business.<sup>3</sup></p>
+<figure class="wp-block-table">
+<table>
+<thead><tr><th>Part</th><th>What It Means</th><th>Example</th></tr></thead>
+<tbody>
+<tr><td>9-digit BN</td><td>Unique ID for your business</td><td>123456789</td></tr>
+</tbody>
+</table>
+</figure>
+<p style="font-size:13.5px;color:#5a6b7b;margin:-6px 0 14px;">3: Source: CRA Guide RC2</p>
+<div class="gcpa-callout blue">
+<span class="co-tag">Worth Knowing</span>
+<p>Customers can check your GST/HST number in the CRA's GST/HST Registry before they claim input tax credits, so please print the full number, with RT0001, exactly as the CRA issued it.</p>
+</div>
+<h4>Program Account Identifiers Explained</h4>
+<p>Your 9-digit BN can be extended to track different tax accounts by adding parts:</p>
+<ul>
+<li>The 9-digit BN</li>
+</ul>
+<p><strong>Two-letter code for type of account:</strong></p>
+<ul>
+<li><strong>RC:</strong> Corporate income tax</li>
+<li><strong>RT:</strong> GST/HST account</li>
+<li><strong>RP:</strong> <a href="https://opencorporationfor35.ca/guides/payroll-setup-new-corporation/">Payroll deductions</a></li>
+<li><strong>RM:</strong> Import-export</li>
+<li><strong>RZ:</strong> Information returns</li>
+<li><strong>RR:</strong> Charities</li>
+<li>A four-digit reference starting at 0001</li>
+</ul>
+<p><strong>Example full account:</strong> 123456789 RT0001</p>
+<p>This setup lets CRA track separate tax duties while linking them to one business.<sup>4</sup></p>
+<p style="font-size:13.5px;color:#5a6b7b;margin:-6px 0 14px;">4: Source: CRA Program Accounts</p>
+<div class="gcpa-callout gold">
+<span class="co-tag">Our Actual Experience</span>
+<p>The mix-up we see most often is a new owner printing the Ontario corporation number on an invoice where the GST/HST number belongs. We check invoice templates during setup so the full business number and RT0001 appear instead.</p>
+</div>
+<h3>Key Differences Between Business Number and Incorporation Number</h3>
+<figure style="margin:22px 0;"><img src="https://opencorporationfor35.ca/wp-content/uploads/2026/11/bn-vs-incorporation-number-bn-vs-incorporation.png" alt="Business number versus incorporation number: the business number is 9 digits from the CRA and used for tax accounts and GST/HST invoices; the incorporation number comes from Corporations Canada or the provincial registry, is 10 digits in Ontario since October 19, 2021, and proves the corporation exists." style="width:100%;border-radius:12px;border:1px solid #d8e0e8;" /><figcaption style="font-size:13px;color:#5a6b7b;text-align:center;padding:6px;">Only the business number, with RT0001, goes on a GST/HST invoice.</figcaption></figure>
+<figure class="wp-block-table">
+<table>
+<thead><tr><th>Feature</th><th>Business Number</th><th>Incorporation Number</th></tr></thead>
+<tbody>
+<tr><td>Who Issues</td><td>Canada Revenue Agency</td><td>Federal or Provincial Registries</td></tr>
+<tr><td>Why It Exists</td><td>Tax reporting and management</td><td>Legal identity of corporation</td></tr>
+<tr><td>Format</td><td>9 digits + program + reference</td><td>Varies; numeric string</td></tr>
+<tr><td>When Assigned</td><td>When registering with CRA</td><td>Upon legal incorporation</td></tr>
+<tr><td>Used On Invoices</td><td>Yes (especially for GST/HST)</td><td>No</td></tr>
+<tr><td>What It Shows</td><td>Your tax ID</td><td>Your company’s existence</td></tr>
+</tbody>
+</table>
+</figure>
+<p><strong>HST versus BN differences:</strong> The HST or GST registration is part of your CRA business number as an RT program account (BN + RT0001). But don’t mix this up with just the nine-digit BN or your separate corporate incorporation number.<sup>5</sup></p>
+<p>Each has its own role depending on what you’re doing—like sending invoices or filing reports.</p>
+<p>Sharad Gondaliya, CPA (Canada &amp; USA), has helped many Canadian business owners over 10 years.</p>
+<p style="font-size:13.5px;color:#5a6b7b;margin:-6px 0 14px;">1: Source: Corporations Canada – Identification Numbers</p>
+<p style="font-size:13.5px;color:#5a6b7b;margin:-6px 0 14px;">2: Source: Ontario Business Registry</p>
+<p style="font-size:13.5px;color:#5a6b7b;margin:-6px 0 14px;">5: See Excise Tax Act rules about invoices.</p>
+<p><a href="https://opencorporationfor35.ca/">Open Corporation for $35 is part of Gondaliya CPA</a>.</p>
+<div class="gcpa-cta" style="background:linear-gradient(135deg,#0f2a4a 0%,#1c4a78 100%) !important;">
+<h4>Not sure which CRA accounts you need?</h4>
+<p>Incorporation from $35 including HST plus government fees, with a free CPA consultation on your business number, your GST/HST, payroll and corporate tax accounts, and what goes on your invoices. Please book a free consultation.</p>
+<div class="gcpa-trust"><span>1300+ 5-star Google reviews</span><span>Xero Partner Award Winner 2026</span><span>CPA Ontario Firm 61330051</span><span>30-Day Money-Back Guarantee</span></div>
+<div class="gcpa-btnrow"><a class="solid" href="https://gondaliyacpa.ca/consultation/">Book Free Consultation</a><a href="https://opencorporationfor35.ca/">Open Corporation For $35</a><a href="tel:+16472129559">647-212-9559</a></div>
+</div>
+<h2>What Is a GST/HST Number and When Is It Required?</h2>
+<div class="gcpa-numhead">
+<div class="num" style="background:#0f2a4a !important;color:#ffffff !important;">3</div>
+<h4 id="toc-gst" style="border:none;padding:0;margin:0;">The GST/HST Number</h4>
+<span class="gcpa-pill gold">GST/HST</span>
+</div>
+<p>A GST/HST number is an ID the Canada Revenue Agency (CRA) uses to track businesses that collect Goods and Services Tax (GST) or Harmonized Sales Tax (HST). This number lets businesses report, collect, and pay these taxes. The GST/HST number isn’t separate from the business number; it’s actually a program account linked to it.</p>
+<p>You have to register for a GST/HST number if your taxable sales go over $30,000 in four straight calendar quarters. Some businesses can register even if they don’t reach that amount. This applies to sole proprietors, corporations, partnerships, and even <a href="https://opencorporationfor35.ca/open-a-corporation-in-canada-as-a-non-resident-step-by-step-guide/">some non-residents</a> who do business in Canada.</p>
+<p><strong>Here’s a key thing:</strong> the "GST number" or "HST number" means your business number plus an RT program account suffix. It doesn’t replace your main CRA business number Canada.</p>
+<h3>How the GST/HST Number Relates to the Business Number</h3>
+<p>The CRA gives each legal business one unique nine-digit business number (BN) in Canada. This BN acts as the base ID for many tax programs. When you register for GST/HST, CRA adds an RT program account suffix with four digits starting at 0001. For example: 123456789 RT0001 (just an example).</p>
+<p>So, your GST/HST “number” always has your main BN, followed by “RT” and some digits. That means:</p>
+<ul>
+<li>Your business number identifies your whole legal entity.</li>
+<li>Your GST/HST program account shows you’re registered to collect sales tax under that BN.</li>
+</ul>
+<p>Other program accounts use different two-letter codes like RC for <a href="https://opencorporationfor35.ca/corporate-tax-filing-from-300/">corporate income tax</a> or RP for payroll deductions. But they all share that same nine-digit BN.</p>
+<p>This setup means you don’t get separate BNs for each tax type—just program accounts tied to one central BN issued when you register with CRA.</p>
+<h3>Common CRA Program Account Identifiers Linked to the Business Number</h3>
+<p>The CRA uses specific two-letter codes attached to your nine-digit BN when registering various tax accounts:</p>
+<figure class="wp-block-table">
+<table>
+<thead><tr><th>Identifier</th><th>Program Account</th><th>Typical Use Case</th></tr></thead>
+<tbody>
+<tr><td>RC</td><td>Corporate Income Tax</td><td>Corporations filing T2 returns</td></tr>
+<tr><td>RT</td><td>GST/HST</td><td>Businesses registered for sales tax</td></tr>
+<tr><td>RP</td><td>Payroll Deductions</td><td>Employers remitting employee source deductions</td></tr>
+<tr><td>RM</td><td>Import/Export</td><td>Businesses doing cross-border trade</td></tr>
+<tr><td>RZ</td><td>Information Returns</td><td>Filing info slips like T4/T5</td></tr>
+<tr><td>RR</td><td>Charities</td><td>Registered charities reporting donations</td></tr>
+</tbody>
+</table>
+</figure>
+<p><strong>Each looks like this:</strong> 123456789 XX0001 where XX is the identifier and 0001 shows primary location or division.</p>
+<p><strong>Keep in mind:</strong> incorporation numbers come from provincial or federal registries (like Ontario’s OBCA or Corporations Canada). They are not the same as BNs or CRA program accounts.</p>
+<p>Which accounts you need depends on your situation. <a href="https://opencorporationfor35.ca/business-number-cra-account-registration/">A CPA can help set things up right</a> so you follow rules properly.</p>
+<h2>How to Obtain and Manage Your CRA Business Number and Program Accounts</h2>
+<div class="gcpa-numhead">
+<div class="num" style="background:#0f2a4a !important;color:#ffffff !important;">4</div>
+<h4 id="toc-obtain" style="border:none;padding:0;margin:0;">Getting Your BN and Accounts</h4>
+<span class="gcpa-pill green">Registration</span>
+</div>
+<p>If you run a business in Canada, knowing how to get and handle your CRA business number and program accounts is key. The CRA business number (BN) isn’t the same as your incorporation number. The BN helps the government identify your business for taxes. The incorporation number shows your business’s legal identity in provincial or federal registries.</p>
+<p><a href="https://opencorporationfor35.ca/services/">Open Corporation for $35 is part of Gondaliya CPA</a>. Here, we explain how to get your BN, what happens after incorporation, how to add or close program accounts, and give details on important CRA accounts like income tax, payroll, GST/HST, and import/export.</p>
+<h3>Registering for a Business Number via Business Registration Online</h3>
+<p>You get one 9-digit business number from the CRA for each legal business entity in Canada. You can sign up online using Business Registration Online (BRO). It makes getting your BN easy and fast.</p>
+<p><strong>When you register:</strong></p>
+<ul>
+<li>Give clear info about your business type.</li>
+<li>Pick which CRA programs fit your work (like payroll or sales tax).</li>
+<li>You’ll get your 9-digit BN right away if all info is correct.</li>
+</ul>
+<p>Just so you know, the HST number isn’t different from the BN. It’s part of it—a special RT account linked to your BN plus extra digits (like 123456789 RT0001). So understanding HST number vs business number means seeing that HST uses the BN system under one number.<sup>[1]</sup></p>
+<h3>Automatic Business Number Issuance Upon Incorporation</h3>
+<p>If you incorporate federally with Corporations Canada or provincially through Ontario’s Business Registry, the CRA gives you a business number automatically. They connect the dots between incorporation records and tax registration. No need to apply twice unless you want extra program accounts.</p>
+<p><strong><a href="https://opencorporationfor35.ca/guides/what-happens-after-you-incorporate/">After incorporation, you will have</a>:</strong></p>
+<ul>
+<li>An incorporation number from Ontario or Corporations Canada that proves your legal status.</li>
+<li>A separate business number from the CRA used for taxes only.</li>
+</ul>
+<p>This clears up confusion about business number vs incorporation number. Different offices issue them: corporate registries handle incorporation numbers; CRA issues BNs.<sup>[2]</sup> Both exist but do different jobs under Canadian law.</p>
+<div class="gcpa-callout red">
+<span class="co-tag">Risk Warning</span>
+<p><strong>Risk Warning:</strong> Please do not show GST/HST on an invoice until the CRA has confirmed your RT account. Collecting tax without a valid GST/HST number, or under someone else's number, is not allowed and the tax can still be owed.</p>
+</div>
+<h3>Adding or Closing CRA Program Accounts Linked to the Business Number</h3>
+<p>Once you have a main BN, you can open or close specific program accounts depending on what your business needs:</p>
+<ul>
+<li>Open an RT account if you charge GST/HST.</li>
+<li>Add an RP account if you hire employees and must handle payroll deductions.</li>
+<li>Use an RM account if you <a href="https://opencorporationfor35.ca/guides/us-sales-and-canadian-corporations/">import or export goods</a>.</li>
+</ul>
+<p>To close accounts, use the My Business Account portal or contact CRA directly. Be sure before opening accounts—you don’t want extra registrations making things messy.<sup>[3]</sup></p>
+<p>Each account has its own two-letter code plus four numbers after your 9-digit BN. For example: 123456789 RP0001 means payroll account #1 linked to that BN.<sup>[4]</sup></p>
+<h3>Program Accounts: Income Tax (RC), Payroll (RP), GST/HST (RT), Import/Export (RM)</h3>
+<figure class="wp-block-table">
+<table>
+<thead><tr><th>Identifier</th><th>Program</th><th>Who Uses It</th><th>Format</th><th>Source</th></tr></thead>
+<tbody>
+<tr><td>RC</td><td>Corporate Income Tax</td><td>Incorporated businesses</td><td>RC0001</td><td>CRA Guide RC2</td></tr>
+<tr><td>RT</td><td>GST/HST</td><td>Businesses charging sales tax</td><td>RT0001</td><td>Excise Tax Act</td></tr>
+<tr><td>RP</td><td>Payroll Deductions</td><td>Employers</td><td>RP0001</td><td>CRA Payroll Guide</td></tr>
+<tr><td>RM</td><td>Import/Export</td><td>Businesses trading goods</td><td>RM0001</td><td>CBSA</td></tr>
+</tbody>
+</table>
+</figure>
+<p>Each code fits rules by different agencies but shares one main 9-digit BN under the CRA business number system in Canada.</p>
+<h2>Finding, Maintaining, and Updating Your Business Number Information</h2>
+<div class="gcpa-numhead">
+<div class="num" style="background:#0f2a4a !important;color:#ffffff !important;">5</div>
+<h4 id="toc-maintain" style="border:none;padding:0;margin:0;">Finding and Updating Numbers</h4>
+<span class="gcpa-pill red">Upkeep</span>
+</div>
+<p>Knowing the difference between your business number and incorporation number helps keep things straight. The business number vs incorporation number is about who issues them and what they are for. The Canada Revenue Agency gives out the 9-digit CRA business number Canada. On the other hand, your incorporation number Canada comes from <a href="https://opencorporationfor35.ca/guides/incorporation-documents-checklist/">provincial or federal registries</a>. Keeping these numbers correct makes dealing with taxes and legal stuff easier.</p>
+<h3>Ways to Locate an Existing Business Number</h3>
+<p>You can find your CRA business number in Canada by looking at official papers like:</p>
+<ul>
+<li>Letters from the CRA</li>
+<li>Notice of Assessment</li>
+<li>GST/HST return forms</li>
+<li>Payroll remittance slips</li>
+</ul>
+<p>Your BN is always a 9-digit code unique to you. It’s different from your corporation’s incorporation number.</p>
+<p>If you incorporated federally or in a province like Ontario, find your incorporation number on:</p>
+<ul>
+<li>Certificate of Incorporation from Corporations Canada or Ontario Business Registry</li>
+<li>Annual return documents</li>
+<li><a href="https://opencorporationfor35.ca/minute-book-preparation/">Corporate minute books</a></li>
+</ul>
+<p>Mixing up these numbers can cause mistakes. Always check if you need the BN or incorporation number before sending anything.</p>
+<div class="gcpa-callout red">
+<span class="co-tag">Risk Warning</span>
+<p><strong>Risk Warning:</strong> When a sole proprietor incorporates, the corporation gets its own business number. Please stop using the sole proprietorship's GST/HST number for corporate sales, and close or update the old accounts once the corporation's accounts are open.</p>
+</div>
+<h3>Requirements for Registering a New Business Number After Ownership or Structure Changes</h3>
+<p>Changing ownership or business type may mean registering a new business number with the CRA. Here’s a quick guide:</p>
+<figure class="wp-block-table">
+<table>
+<thead><tr><th>Event</th><th>New BN Needed?</th><th>New Program Accounts Needed?</th></tr></thead>
+<tbody>
+<tr><td><a href="https://opencorporationfor35.ca/convert-sole-proprietorship-corporation/">Sole proprietor becomes corporation</a></td><td>Yes</td><td>Usually yes</td></tr>
+<tr><td>Partnership changes partners</td><td>Maybe</td><td>Depends on situation</td></tr>
+<tr><td>Corporation merges (amalgamation)</td><td>Yes</td><td>Often yes</td></tr>
+<tr><td>Ownership percentage changes</td><td>No</td><td>May need updates</td></tr>
+</tbody>
+</table>
+</figure>
+<p>Sole proprietors often use their SIN unless they need special program accounts that require a BN. Corporations must have both an incorporation number and a separate CRA business number.</p>
+<p>Talk to a CPA before making changes. Wrong assumptions might cause extra BNs or missed accounts.</p>
+<h3>Maintaining Accurate Business and Program Account Records with the CRA</h3>
+<p>Your HST registration links to your BN but isn’t exactly the same thing. The HST account uses “RT” plus four digits (like RT0001). So, an HST number vs business number shows one is part of the other but not identical.</p>
+<p><strong>Keep records accurate by:</strong></p>
+<ul>
+<li><a href="https://opencorporationfor35.ca/corporate-changes-amendments/">Updating ownership changes quickly</a> via My Business Account</li>
+<li>Checking active program accounts every year</li>
+<li>Using correct reference numbers for each account</li>
+</ul>
+<p>Open Corporation for $35 provides online incorporation services plus initial CRA account setup with clear pricing: $35 including HST, plus government fees. This helps avoid errors like wrong invoice numbers or missing payroll registrations.</p>
+<h3>Resources for Support and Contacting Relevant Agencies</h3>
+<p>Need help with Canadian business numbers? Try these:</p>
+<ul>
+<li>Visit Canada Revenue Agency for all BN questions.</li>
+<li>Use My Business Account to manage existing BNs safely.</li>
+<li>Check provincial registries like Ontario Business Registry (<a href="https://www.ontario.ca/page/ontario-business-registry">https://www.ontario.ca/page/ontario-business-registry</a>) for corporation details.</li>
+</ul>
+<p>You can also contact Open Corporation for $35 — part of Gondaliya CPA — at 647‑212‑9559 or info@gondaliyacpa.ca any day from 9:00 AM to 8:30 PM. They offer guidance on incorporating right and setting up CRA accounts properly across provinces including Ontario and federally under CBCA rules.</p>
+<div class="gcpa-banner" style="background:linear-gradient(135deg,#0d3b66 0%,#0c7a7a 100%) !important;">
+<div class="bt">Confused about which number goes where? Please book a free consultation and we will check your incorporation number, business number and CRA accounts with you.</div>
+<div class="bb"><a class="solid" href="https://gondaliyacpa.ca/consultation/">Book Free Consultation</a><a href="mailto:info@gondaliyacpa.ca">info@gondaliyacpa.ca</a><a href="tel:+16472129559">647-212-9559</a></div>
+</div>
+<h2>Updated Information on Business Number vs Incorporation Number and HST Number</h2>
+<div class="gcpa-numhead">
+<div class="num" style="background:#0f2a4a !important;color:#ffffff !important;">6</div>
+<h4 id="toc-updated" style="border:none;padding:0;margin:0;">Quick Answers by Question</h4>
+<span class="gcpa-pill blue">Updated</span>
+</div>
+<p>Getting the differences between a business number, incorporation number, and HST number can be confusing at first. But if you’re starting a business or <a href="https://opencorporationfor35.ca/sole-proprietorship-registration/">working for yourself</a> in Canada, it helps to know what each one means. They each have a different role with the government.</p>
+<h3>What Is the Difference Between a Business Number and an Incorporation Number?</h3>
+<p>A business number (BN) comes from the Canada Revenue Agency (CRA). It’s used mainly for tax stuff. If your business signs up for programs like GST/HST, payroll, or income tax accounts, you’ll get this number.</p>
+<p>An incorporation number is something else. You get it when you legally form your corporation through Corporations Canada or the Ontario Business Registry. This number shows your company is registered but isn’t used for taxes.</p>
+<p><strong>So here’s the main difference:</strong></p>
+<ul>
+<li>The BN is for taxes and CRA accounts.</li>
+<li>The incorporation number is for legal registration with the government.</li>
+</ul>
+<p>Both numbers are needed if you have an incorporated business. But they work in different ways.<sup>[1]</sup><sup>[2]</sup></p>
+<h3>How Is a CRA Business Number Structured?</h3>
+<p>The CRA gives one 9-digit business number to each legal business in Canada. For example:</p>
+<figure class="wp-block-table">
+<table>
+<thead><tr><th>Part</th><th>Digits</th><th>Example</th><th>What It Means</th></tr></thead>
+<tbody>
+<tr><td>Base BN</td><td>9 digits</td><td>123456789</td><td>Identifies your business</td></tr>
+</tbody>
+</table>
+</figure>
+<p>This base number is the main ID for all other program numbers connected to your business.<sup>[3]</sup></p>
+<h3>What Are Program Account Numbers Under Your Business Number?</h3>
+<figure style="margin:22px 0;"><img src="https://opencorporationfor35.ca/wp-content/uploads/2026/11/bn-vs-incorporation-number-program-account.png" alt="How to read a CRA program account number such as 123456789 RT0001: 123456789 is the nine-digit business number, RT is the program code for GST/HST, and 0001 is the reference number for the first account of that type." style="width:100%;border-radius:12px;border:1px solid #d8e0e8;" /><figcaption style="font-size:13px;color:#5a6b7b;text-align:center;padding:6px;">Your GST/HST number is the business number plus RT0001.</figcaption></figure>
+<p>Your base BN can have extra program account numbers. They look like this:</p>
+<ul>
+<li>123456789 XX0001</li>
+</ul>
+<p><strong>Here:</strong></p>
+<ul>
+<li>XX is two letters showing the program (like RC, RT, RP).</li>
+<li>0001 tells which branch or division.</li>
+</ul>
+<p><strong>Some common codes:</strong></p>
+<figure class="wp-block-table">
+<table>
+<thead><tr><th>Code</th><th>Program</th></tr></thead>
+<tbody>
+<tr><td>RC</td><td>Corporate Income Tax</td></tr>
+<tr><td>RT</td><td>GST/HST</td></tr>
+<tr><td>RP</td><td>Payroll</td></tr>
+<tr><td>RM</td><td>Import/Export</td></tr>
+<tr><td>RZ</td><td>Information Returns</td></tr>
+<tr><td>RR</td><td>Charities</td></tr>
+</tbody>
+</table>
+</figure>
+<p>Each program account lets you handle tax stuff separately but under one BN.<sup>[4]</sup></p>
+<p><strong>In short:</strong> Your CRA business registration has different linked program accounts based on what your company does. This doesn’t change your corporation number or incorporation status.</p>
+<div class="gcpa-callout red">
+<span class="co-tag">Risk Warning</span>
+<p><strong>Risk Warning:</strong> Please do not share your own CRA sign-in with an accountant or bookkeeper. Authorize them as your representative through My Business Account instead, so each person's access can be limited and removed.</p>
+</div>
+<h3>Is My HST Number the Same as My Business Number?</h3>
+<p>Nope! Your HST/GST number includes your 9-digit BN plus an RT code and reference like 0001. For example:</p>
+<ul>
+<li>123456789 RT0001</li>
+<li>This shows you’ve signed up to <a href="https://opencorporationfor35.ca/first-year-filing-calendar-new-corporation/">collect GST/HST</a> for that part of your business.<sup>[5]</sup></li>
+</ul>
+<p>People often say “HST number,” but it’s just one type of CRA program account tied to your main BN — not a separate ID.</p>
+<h3>What Does an Incorporation Number Look Like in Ontario and Federally?</h3>
+<p>Incorporation numbers look different depending on where you register:</p>
+<ul>
+<li><strong>Ontario Corporation Numbers:</strong> New ones have 10 digits and start with “1000” (like 1000123456); corporations formed before October 19, 2021 have seven-digit numbers. You get this from the Ontario Business Registry under their rules.</li>
+<li><strong>Federal Corporation Numbers:</strong> Numeric numbers, usually eight digits for newer corporations, given by Corporations Canada when you incorporate federally.</li>
+</ul>
+<p>You’ll see these numbers on your <a href="https://opencorporationfor35.ca/guides/minute-book-requirements/">certificate of incorporation</a>. They don’t relate to taxes or GST/HST registrations.<sup>[6]</sup><sup>[7]</sup></p>
+<p style="font-size:14px;margin:18px 0 6px;"><strong>Sources</strong></p>
+<ol style="font-size:14px;">
+<li>Canada.ca - Understanding Your Business Identification</li>
+<li>Ontario.ca - Registering Your Corporation</li>
+<li>CRA Guide RC2 – General Information</li>
+<li>CRA Program Accounts Overview</li>
+<li>Excise Tax Act – Invoice Requirements</li>
+<li>Corporations Canada – Federal Incorporation Process</li>
+<li>Ontario Business Registry – Corporation Numbers Explained</li>
+</ol>
+<h2>Frequently Asked Questions (FAQs)</h2>
+<div class="gcpa-numhead">
+<div class="num" style="background:#0f2a4a !important;color:#ffffff !important;">7</div>
+<h4 id="toc-faq" style="border:none;padding:0;margin:0;">Frequently Asked Questions</h4>
+<span class="gcpa-pill teal">FAQ</span>
+</div>
+<div class="gcpa-faq" id="faq-main">
+<details><summary>What is a Program Account Number linked to the Business Number?<span class="pl">+</span></summary>
+<div class="ans"><p>A program account number extends your 9-digit BN with a two-letter suffix and four digits. It identifies specific tax accounts like GST/HST or payroll.</p></div></details>
+<details><summary>What do the program account suffixes RC, RT, RP, RM, RZ, and RR represent?<span class="pl">+</span></summary>
+<div class="ans"><p>RC is for corporate income tax. RT covers GST/HST. RP handles payroll deductions. RM relates to import/export. RZ is for information returns. RR is for charities.</p></div></details>
+<details><summary>How quickly are incorporation and business numbers issued in Canada?<span class="pl">+</span></summary>
+<div class="ans"><p>Incorporation numbers are assigned immediately after approval by Corporations Canada or provincial registries. The CRA business number is usually given automatically or within days after registration.</p></div></details>
+<details><summary>What are the risks of mixing up business number and incorporation number?<span class="pl">+</span></summary>
+<div class="ans"><p>Confusing them can cause tax filing errors, compliance issues, or delayed government processing.</p></div></details>
+<details><summary>How can I prevent compliance issues with CRA program accounts?<span class="pl">+</span></summary>
+<div class="ans"><p>Maintain accurate records, update ownership changes promptly, and register only necessary program accounts.</p></div></details>
+<details><summary>Is it required to update business numbers after ownership changes?<span class="pl">+</span></summary>
+<div class="ans"><p>Yes, some changes need new BNs or updated program accounts. Consult a CPA to confirm requirements.</p></div></details>
+<details><summary>What steps are involved in intake and document review for incorporation filing?<span class="pl">+</span></summary>
+<div class="ans"><p>Collect personal info, verify company details, review NUANS reports if needed, and check all forms before submission.</p></div></details>
+<details><summary>How do I confirm my Business Number (BN) after incorporation?<span class="pl">+</span></summary>
+<div class="ans"><p>You receive BN confirmation via CRA letters or online through My Business Account after registration.</p></div></details>
+<details><summary>What is representative authorization in relation to CRA numbers?<span class="pl">+</span></summary>
+<div class="ans"><p>It allows a third party like a CPA to manage your CRA accounts on your behalf.</p></div></details>
+<details><summary>Why is maintaining an accurate numbers register important for invoices?<span class="pl">+</span></summary>
+<div class="ans"><p>It ensures correct BN and program account numbers appear on invoices to comply with Excise Tax Act rules.</p></div></details>
+</div>
+<div class="gcpa-callout teal">
+<span class="co-tag">Worth Knowing</span>
+<p>A program account number is only as useful as the records behind it. Please keep the CRA letter that confirms each account with your minute book, so the number is easy to find at tax time.</p>
+</div>
+<h2>Key Checklist for Managing Business Numbers and Program Accounts</h2>
+<div class="gcpa-numhead">
+<div class="num" style="background:#0f2a4a !important;color:#ffffff !important;">8</div>
+<h4 id="toc-checklist" style="border:none;padding:0;margin:0;">Checklist and Options</h4>
+<span class="gcpa-pill gold">Checklist</span>
+</div>
+<ul>
+<li>Confirm incorporation number on official certificates and minute books</li>
+<li>Obtain CRA business number during or soon after incorporation filing</li>
+<li>Register appropriate program accounts based on business activities (e.g., RT for HST)</li>
+<li><strong>Use correct format:</strong> 9-digit BN + 2-letter code + 4-digit reference (e.g., 123456789 RT0001)</li>
+<li>Update CRA records after ownership or structure changes through My Business Account</li>
+<li>Avoid registering duplicate BNs unless legally required by ownership changes</li>
+<li>Keep track of all corporate filings and <a href="https://opencorporationfor35.ca/annual-return-filing/">annual returns</a> with provincial/federal registries</li>
+<li>Use authorized representatives to manage filings if preferred</li>
+<li>Ensure correct numbers appear on bank forms and official correspondence</li>
+<li>Review invoice templates for proper placement of BN and HST/RT numbers</li>
+</ul>
+<h3>Comparing DIY Incorporation vs Tax Software vs CPA Services</h3>
+<ul>
+<li><strong>DIY:</strong> Low cost but risk of missing critical registrations or errors</li>
+<li><strong>Tax Software:</strong> Streamlines process but may lack personalized advice on program accounts</li>
+<li><strong>CPA Services:</strong> Provide expert guidance on incorporation filings, BN registrations, compliance controls, plus <a href="https://opencorporationfor35.ca/pricing/">flat fees from providers like Open Corporation for $35</a></li>
+</ul>
+<h3>Additional Notes on Canadian Business Identification Numbers</h3>
+<ul>
+<li>Sole proprietors usually use SIN unless they require a BN for payroll or GST/HST programs.</li>
+<li>Quebec businesses must also register for QST through Revenu Québec when applicable.</li>
+<li>Annual return documents often show corporation numbers needed for compliance reviews.</li>
+<li><a href="https://opencorporationfor35.ca/guides/registered-office-address/">Registered office addresses</a> should be consistent across incorporation and CRA filings.</li>
+</ul>
+<p>For expert assistance with your incorporation filing and CRA account setup at flat fees, contact Open Corporation for $35—part of Gondaliya CPA—for a free consultation today.</p>
+<div class="gcpa-pillhead"><h4 style="border:none;padding:0;margin:0;">Quick Answers: Key Numbers at a Glance</h4><span class="gcpa-pill gold">At a Glance</span></div>
+<ul>
+<li><strong>Business number:</strong> 9 digits, issued by the CRA</li>
+<li><strong>GST/HST number:</strong> BN + RT0001</li>
+<li><strong>Corporate income tax account:</strong> BN + RC0001</li>
+<li><strong>Payroll account:</strong> BN + RP0001</li>
+<li><strong>Import/export account:</strong> BN + RM0001</li>
+<li><strong>GST/HST registration:</strong> Once taxable sales pass $30,000 in four consecutive calendar quarters</li>
+<li><strong>Ontario corporation number:</strong> 10 digits for corporations formed since October 19, 2021</li>
+<li><strong>Which number goes on invoices:</strong> The GST/HST number, never the incorporation number</li>
+<li><strong>Our fee:</strong> $35 including HST, plus government fees</li>
+</ul>
+<div class="gcpa-pillhead"><h4 style="border:none;padding:0;margin:0;">Who This Is For / Not For</h4><span class="gcpa-pill teal">Fit Check</span></div>
+<ul>
+<li><strong>For:</strong> New Ontario or federal corporation owners, and sole proprietors about to incorporate, who want to know which number to use where.</li>
+<li><strong>Not For:</strong> Registered charities and Quebec QST registrants, who have extra rules not covered in depth here.</li>
+</ul>
+<div class="gcpa-callout green">
+<span class="co-tag">Verdict</span>
+<p>Keep the two numbers apart. Your incorporation number proves the corporation exists and belongs in the minute book and on registry filings. Your 9-digit business number belongs on everything the CRA sees, and with RT0001 added it is the GST/HST number that goes on your invoices.</p>
+</div>
+<div class="gcpa-callout blue">
+<span class="co-tag">2026 Update</span>
+<p><strong>2026 Update &mdash; what is current:</strong> This article reflects rules current to November 2026. The CRA business number is still 9 digits, with program accounts RC, RT, RP, RM, RZ and RR added as two letters and four digits. Ontario and federal incorporations still receive a business number automatically. The GST/HST small supplier threshold remains $30,000 over four consecutive calendar quarters. The Ontario Business Registry has issued 10-digit Ontario corporation numbers since October 19, 2021.</p>
+</div>
+<h5 style="color:#15355c;margin:24px 0 8px;">Business Number Readiness Check</h5>
+<p>This quick self-check shows which CRA numbers and accounts you still need to sort out. Please answer the six questions below.</p>
+
+<div id="ocf-chk">
+  <style>
+    #ocf-chk{--n:#0f2a4a;--n2:#15355c;--bl:#1c6dd0;--tl:#0c8f8f;--gd:#c9991f;--rd:#c0392b;--ink:#1d2733;--mut:#5a6b7b;--ln:#d8e0e8;--alt:#f5f8fb;
+      border:1px solid var(--ln);border-radius:14px;overflow:hidden;background:#fff;box-shadow:0 10px 30px rgba(15,42,74,.08);font-family:inherit;color:var(--ink);margin:24px 0;}
+    #ocf-chk *{box-sizing:border-box;}
+    #ocf-chk .s-head{background:linear-gradient(135deg,var(--n),var(--n2));color:#fff;padding:18px 22px;}
+    #ocf-chk .s-head h5{margin:0;font-size:19px;font-weight:700;color:#fff!important;}
+    #ocf-chk .s-head p{margin:4px 0 0;font-size:13px;color:#cfe2f8!important;}
+    #ocf-chk .s-body{padding:20px 22px;}
+    #ocf-chk .s-q{padding:13px 0;border-bottom:1px solid var(--ln);display:flex;justify-content:space-between;align-items:center;gap:14px;}
+    #ocf-chk .s-q:first-child{padding-top:2px;}
+    #ocf-chk .s-q span.s-lab{font-weight:600;font-size:14.5px;color:var(--n);}
+    #ocf-chk .s-seg{display:inline-flex;border:1px solid var(--ln);border-radius:10px;overflow:hidden;flex:0 0 auto;}
+    #ocf-chk .s-seg label{cursor:pointer;padding:8px 18px;font-size:14px;font-weight:600;color:var(--mut);background:var(--alt);transition:.15s;user-select:none;}
+    #ocf-chk .s-seg label+label{border-left:1px solid var(--ln);}
+    #ocf-chk .s-seg input{position:absolute;opacity:0;width:0;height:0;}
+    #ocf-chk .s-seg input:checked+label{background:var(--n);color:#fff!important;}
+    #ocf-chk .s-go{margin-top:18px;width:100%;border:none;border-radius:11px;padding:14px 18px;font-size:15.5px;font-weight:700;color:#fff!important;cursor:pointer;background:linear-gradient(135deg,var(--bl),var(--tl));font-family:inherit;}
+    #ocf-chk .s-go:hover{filter:brightness(1.05);}
+    #ocf-chk .s-msg{display:none;margin-top:12px;font-size:13.5px;color:var(--rd);font-weight:600;}
+    #ocf-chk .s-out{display:none;margin-top:18px;border-radius:12px;border:1px solid var(--ln);overflow:hidden;}
+    #ocf-chk .s-out .s-status{padding:14px 18px;font-weight:700;font-size:16px;color:#fff!important;background:linear-gradient(135deg,var(--n),var(--n2));}
+    #ocf-chk .s-out .s-inner{padding:16px 18px;background:var(--alt);}
+    #ocf-chk .s-row{font-size:14.5px;margin:0 0 10px;line-height:1.5;}
+    #ocf-chk .s-count{display:inline-block;background:#fff;border:1px solid var(--ln);border-radius:9px;padding:8px 14px;font-weight:700;color:var(--n);font-size:14.5px;}
+    #ocf-chk .s-list{margin:8px 0 0;padding-left:18px;}
+    #ocf-chk .s-list li{font-size:13.5px;color:var(--ink);margin:4px 0;border:none;padding:0 0 0 4px;}
+    #ocf-chk .s-list li::before{display:none;}
+    #ocf-chk .s-cta{display:inline-block;margin-top:14px;background:var(--gd);color:#fff!important;font-weight:700;font-size:14.5px;text-decoration:none;padding:11px 20px;border-radius:10px;}
+    #ocf-chk .s-note{font-size:12.5px;color:var(--mut);margin:12px 0 0;}
+    @media(max-width:560px){#ocf-chk .s-q{flex-direction:column;align-items:flex-start;gap:8px;}}
+  </style>
+  <div class="s-head" style="background:linear-gradient(135deg,#0f2a4a,#15355c) !important;">
+    <h5>Business Number Readiness Check</h5>
+    <p>Six quick questions. No tax calculation, no figure quoted.</p>
+  </div>
+  <div class="s-body">
+    <div class="s-q" data-flag="0" data-msg="Your incorporation number, from the certificate of incorporation, filed in the minute book"><span class="s-lab">1. Do you know your incorporation number?</span>
+      <span class="s-seg"><input type="radio" id="c-a-y" name="c-a" value="1"><label for="c-a-y">Yes</label><input type="radio" id="c-a-n" name="c-a" value="0"><label for="c-a-n">No</label></span></div>
+    <div class="s-q" data-flag="0" data-msg="Your 9-digit CRA business number, from CRA letters or My Business Account"><span class="s-lab">2. Do you know your 9-digit business number?</span>
+      <span class="s-seg"><input type="radio" id="c-b-y" name="c-b" value="1"><label for="c-b-y">Yes</label><input type="radio" id="c-b-n" name="c-b" value="0"><label for="c-b-n">No</label></span></div>
+    <div class="s-q" data-flag="1" data-msg="A GST/HST (RT) account once taxable sales pass $30,000 in four calendar quarters"><span class="s-lab">3. Do you expect more than $30,000 in taxable sales within a year?</span>
+      <span class="s-seg"><input type="radio" id="c-c-y" name="c-c" value="1"><label for="c-c-y">Yes</label><input type="radio" id="c-c-n" name="c-c" value="0"><label for="c-c-n">No</label></span></div>
+    <div class="s-q" data-flag="1" data-msg="A payroll (RP) account before the first pay"><span class="s-lab">4. Will you pay employees, including yourself by salary?</span>
+      <span class="s-seg"><input type="radio" id="c-d-y" name="c-d" value="1"><label for="c-d-y">Yes</label><input type="radio" id="c-d-n" name="c-d" value="0"><label for="c-d-n">No</label></span></div>
+    <div class="s-q" data-flag="1" data-msg="An import/export (RM) account before goods cross the border"><span class="s-lab">5. Will you import or export goods?</span>
+      <span class="s-seg"><input type="radio" id="c-e-y" name="c-e" value="1"><label for="c-e-y">Yes</label><input type="radio" id="c-e-n" name="c-e" value="0"><label for="c-e-n">No</label></span></div>
+    <div class="s-q" data-flag="0" data-msg="Invoice templates that show the full BN + RT0001, not the incorporation number"><span class="s-lab">6. Do your invoices show the right number?</span>
+      <span class="s-seg"><input type="radio" id="c-f-y" name="c-f" value="1"><label for="c-f-y">Yes</label><input type="radio" id="c-f-n" name="c-f" value="0"><label for="c-f-n">No</label></span></div>
+
+<button type="button" class="s-go" id="c-go">Check my readiness</button>
+    <div class="s-msg" id="c-msg">Please answer all six questions to continue.</div>
+    <div class="s-out" id="c-out">
+      <div class="s-status" id="c-status" style="background:linear-gradient(135deg,#0f2a4a,#15355c) !important;">Your profile</div>
+      <div class="s-inner">
+        <p class="s-row"><b>Points to work through:</b> <span class="s-count" id="c-count"></span></p>
+        <div id="c-listwrap" style="display:none;"><p class="s-row" style="margin-bottom:4px;"><b>Worth reviewing with us:</b></p><ul class="s-list" id="c-list"></ul></div>
+        <p class="s-row" id="c-clean" style="display:none;"><b>Nothing flagged.</b> The usual complications do not appear to apply to you.</p>
+        <a class="s-cta" href="https://gondaliyacpa.ca/consultation/">Book a free consultation</a>
+        <p class="s-note">This is a general prompt, not tax advice, and it does not calculate your tax. Your outcome depends on your full facts, so please book a free consultation.</p>
+      </div>
+    </div>
+  </div>
+  <script>
+  (function(){
+    var root=document.getElementById('ocf-chk');
+    root.querySelector('#c-go').addEventListener('click',function(){
+      var qs=root.querySelectorAll('.s-q'), items=[], missing=false;
+      qs.forEach(function(q){
+        var x=q.querySelector('input:checked');
+        if(!x){missing=true;return;}
+        if(x.value===q.getAttribute('data-flag')) items.push(q.getAttribute('data-msg'));
+      });
+      var msg=root.querySelector('#c-msg'), out=root.querySelector('#c-out');
+      if(missing){msg.style.display='block';out.style.display='none';return;}
+      msg.style.display='none';
+      var list=root.querySelector('#c-list'), lw=root.querySelector('#c-listwrap'), clean=root.querySelector('#c-clean');
+      root.querySelector('#c-count').textContent=items.length+' to work through';
+      list.innerHTML='';
+      if(items.length){lw.style.display='block';clean.style.display='none';items.forEach(function(t){var li=document.createElement('li');li.textContent=t;list.appendChild(li);});}
+      else{lw.style.display='none';clean.style.display='block';}
+      root.querySelector('#c-status').textContent = items.length>=3 ? 'Several points need attention' : (items.length>=1 ? 'A few points to work through' : 'A straightforward case');
+      out.style.display='block';
+    });
+  })();
+  </script>
+</div>
+<div class="gcpa-cta" style="background:linear-gradient(135deg,#0f2a4a 0%,#1c4a78 100%) !important;">
+<h4>Get your business number and CRA accounts set up right</h4>
+<p>Incorporation from $35 including HST plus government fees, with a free CPA consultation on which CRA accounts you need and what goes on your invoices. Please book a free consultation.</p>
+<div class="gcpa-trust"><span>1300+ 5-star Google reviews</span><span>Xero Partner Award Winner 2026</span><span>30-Day Money-Back Guarantee</span><span>60-Day Fee Matching</span></div>
+<div class="gcpa-btnrow"><a class="solid" href="https://gondaliyacpa.ca/consultation/">Book Free Consultation</a><a href="https://opencorporationfor35.ca/address-service-100/">Address Service</a><a href="https://opencorporationfor35.ca/contact-us/">Contact Us</a></div>
+</div>
+<p>Want a checklist to work from? Please <a href="https://opencorporationfor35.ca/wp-content/uploads/2026/11/OpenCorp35-Business-Number-and-CRA-Accounts-Checklist.pdf">download our free business numbers and CRA accounts checklist</a> before your consultation.</p>
+<figure style="margin:26px 0;"><img src="https://opencorporationfor35.ca/wp-content/uploads/2026/11/why-choose-us-bn-vs-incorporation-number.png" alt="Why Canadian business owners choose Open Corporation For $35 for business numbers and CRA accounts" style="width:100%;border-radius:12px;border:1px solid #d8e0e8;" /><figcaption style="font-size:13px;color:#5a6b7b;text-align:center;padding:6px;">Why business owners choose us.</figcaption></figure>
+<h3 class="gcpa-closing" id="toc-closing">What to Send Us</h3>
+<p>Send us your certificate of incorporation, your business number if you already have one, and whether you plan to charge GST/HST, pay employees or import goods in the first year. That is enough for us to confirm your incorporation number and BN, list the RT, RP and RM accounts you need, and check that your invoices show the right number. Please start on our <a href="https://opencorporationfor35.ca/incorporation-form/">incorporation form</a> or see every fee on our <a href="https://opencorporationfor35.ca/pricing/">pricing page</a>.</p>
+<div class="gcpa-author">
+<div class="ava" style="background:linear-gradient(135deg,#0f2a4a,#0c8f8f) !important;color:#ffffff !important;">SG</div>
+<div class="info">
+<h5>Sharad Gondaliya, CPA (Canada &amp; USA) — Founder &amp; Managing Director, Gondaliya CPA Professional Corporation</h5>
+<div class="role">Reviewed and fact-checked by Sharad Gondaliya, CPA (Canada &amp; USA)</div>
+<p style="font-size:14.5px;color:#15355c !important;font-weight:700;margin:0 0 8px;">Open Corporation for $35 is a department of Gondaliya CPA.</p>
+<p>We incorporate and support companies in all 13 provinces and territories, handling CRA registrations, corporate tax filing, bookkeeping, GST/HST, payroll and audit support. Verify our firm on the <a href="https://www.cpaontario.ca/protecting-the-public/directories/firm/gondaliya-5sqvmj">CPA Ontario public firm directory</a>, firm registration 61330051.</p>
+<p style="font-size:13.5px;color:#15355c !important;font-weight:700;margin-top:10px;">CPA Ontario | CPA USA (Washington &amp; Montana) | Xero Partner Award Winner 2026 | 1300+ 5-star Google reviews</p>
+</div>
+</div>
+<p style="font-size:13px;color:#5a6b7b;border-top:1px solid #e3e9f0;padding-top:16px;margin-top:8px;"><strong>Published:</strong> November 18, 2026 &nbsp;·&nbsp; <strong>Last updated:</strong> November 18, 2026</p>
+<p style="font-size:13px;color:#5a6b7b;"><strong>Editorial policy:</strong> Our content is prepared by our team and reviewed by Sharad Gondaliya, CPA, and we update it as CRA business number and registry rules change.</p>
+<p style="font-size:13px;color:#5a6b7b;"><strong>Disclaimer:</strong> This article is educational information only and is not tax, legal, or financial advice. Gondaliya CPA Professional Corporation is a firm of Chartered Professional Accountants, not a law firm. Please consult a CPA before acting.</p>
+<p style="font-size:14.5px;color:#15355c;font-weight:700;border-top:2px solid #e3e9f0;padding-top:16px;margin-top:20px;">Open Corporation for $35 is a department of Gondaliya CPA.</p>
+<p style="font-size:13px;color:#5a6b7b;">Operated by WealthBamboo Inc. Parent firm Gondaliya CPA Professional Corporation, CPA Ontario firm registration 61330051. Xero Partner Award Winner 2026. 1300+ five-star Google reviews. 30-day money-back guarantee and 60-day fee-matching policy. Phone 647-212-9559, email info@gondaliyacpa.ca, open 9:00 AM to 8:30 PM Monday to Sunday. Payment by Interac e-Transfer to info@gondaliyacpa.ca only, security question "Not Applicable" as auto-deposit is enabled. Card is also accepted.</p>
+</div>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@graph": [{"@type": "BlogPosting", "@id": "https://opencorporationfor35.ca/business-number-vs-incorporation-number-vs-hst-number/#article", "headline": "Business Number vs Incorporation Number vs HST Number: What Each One Means", "description": "Business number vs incorporation number vs HST number in Canada: who issues each one, what it looks like, the CRA program accounts RC, RT, RP and RM, and which number goes on invoices.", "datePublished": "2026-11-18", "dateModified": "2026-11-18", "author": {"@type": "Person", "name": "Sharad Gondaliya, CPA"}, "image": "https://opencorporationfor35.ca/wp-content/uploads/2026/11/Business-Number-vs-Incorporation-Number-Featured.jpg", "publisher": {"@type": "Organization", "name": "Open Corporation for $35", "description": "Open Corporation for $35 is a department of Gondaliya CPA.", "parentOrganization": {"@type": "AccountingService", "name": "Gondaliya CPA Professional Corporation", "identifier": "CPA Ontario Firm Registration 61330051"}}, "mainEntityOfPage": "https://opencorporationfor35.ca/business-number-vs-incorporation-number-vs-hst-number/"}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is a Program Account Number linked to the Business Number?", "acceptedAnswer": {"@type": "Answer", "text": "A program account number extends your 9-digit BN with a two-letter suffix and four digits. It identifies specific tax accounts like GST/HST or payroll."}}, {"@type": "Question", "name": "What do the program account suffixes RC, RT, RP, RM, RZ, and RR represent?", "acceptedAnswer": {"@type": "Answer", "text": "RC is for corporate income tax. RT covers GST/HST. RP handles payroll deductions. RM relates to import/export. RZ is for information returns. RR is for charities."}}, {"@type": "Question", "name": "How quickly are incorporation and business numbers issued in Canada?", "acceptedAnswer": {"@type": "Answer", "text": "Incorporation numbers are assigned immediately after approval by Corporations Canada or provincial registries. The CRA business number is usually given automatically or within days after registration."}}, {"@type": "Question", "name": "What are the risks of mixing up business number and incorporation number?", "acceptedAnswer": {"@type": "Answer", "text": "Confusing them can cause tax filing errors, compliance issues, or delayed government processing."}}, {"@type": "Question", "name": "How can I prevent compliance issues with CRA program accounts?", "acceptedAnswer": {"@type": "Answer", "text": "Maintain accurate records, update ownership changes promptly, and register only necessary program accounts."}}, {"@type": "Question", "name": "Is it required to update business numbers after ownership changes?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, some changes need new BNs or updated program accounts. Consult a CPA to confirm requirements."}}, {"@type": "Question", "name": "What steps are involved in intake and document review for incorporation filing?", "acceptedAnswer": {"@type": "Answer", "text": "Collect personal info, verify company details, review NUANS reports if needed, and check all forms before submission."}}, {"@type": "Question", "name": "How do I confirm my Business Number (BN) after incorporation?", "acceptedAnswer": {"@type": "Answer", "text": "You receive BN confirmation via CRA letters or online through My Business Account after registration."}}, {"@type": "Question", "name": "What is representative authorization in relation to CRA numbers?", "acceptedAnswer": {"@type": "Answer", "text": "It allows a third party like a CPA to manage your CRA accounts on your behalf."}}, {"@type": "Question", "name": "Why is maintaining an accurate numbers register important for invoices?", "acceptedAnswer": {"@type": "Answer", "text": "It ensures correct BN and program account numbers appear on invoices to comply with Excise Tax Act rules."}}]}]}
+</script>
