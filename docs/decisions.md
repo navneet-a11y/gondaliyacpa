@@ -12147,3 +12147,80 @@ Navneet or an approval.
 
 The other three have their copy written, audited and similarity-checked, and
 their ops generated. Each needs a duplicate, two ops calls and a publish.
+
+## 2026-11-19 — F1 batch 2 published: four verticals live, and a FAQPage breach traced to the template
+
+### The four pages
+
+All four are `nil_vertical`, family term f1 (id 14), built as `wp_duplicate_post`
+copies of page 2682 and patched with `build/f1/genops.py` (71 ops, two calls).
+
+| ID | URL | Focus keyword | Title |
+|---|---|---|---|
+| 2696 | `/nil-t2-filing-for-dormant-consulting-corporations/` | inactive consulting corporation t2 | Inactive Consulting Corporation T2 \| Nil Filing |
+| 2702 | `/nil-t2-filing-for-shelf-corporations/` | shelf corporation tax return canada | Shelf Corporation Tax Return Canada \| Nil T2 Filing |
+| 2706 | `/nil-t2-filing-for-inactive-trucking-corporations/` | inactive trucking corporation t2 filing | Inactive Trucking Corporation T2 Filing \| Nil Returns |
+| 2710 | `/nil-t2-filing-for-closed-restaurant-corporations/` | closed restaurant corporation tax return | Closed Restaurant Corporation Tax Return \| Nil T2 |
+
+Every title puts the primary keyword first, per the rule confirmed earlier this
+week. Pairwise 6(k) similarity across the five F1 verticals peaks at **0.572**
+(restaurant vs consulting), under the 0.60 threshold.
+
+Audited live after publish: no banned 7.4 phrase, no superlative, no bare T183,
+no unqualified "no penalty", no EFILE number, no emoji, no source-template leak,
+one H1 each, two valid JSON-LD blocks each, `$300.00 plus HST per tax year`
+throughout, and the "registered EFILE electronic filer" wording intact.
+
+### Hard rule 6 was being breached by the source template
+
+The Elementor nested-accordion widget carries a Rank Math field,
+**`rank_math_add_faq_schema`**, which the imported source template had set to
+`yes`. It makes Rank Math emit a `FAQPage` object into the page's
+`rank-math-schema-pro` graph. Hard rule 6 bars FAQPage outright, plan line 37
+repeats it, and launch gate 6 at line 1901 tests for it.
+
+It was live on page **2682** from the day that page published, and it came
+through every duplicate, so all five F1 verticals carried it.
+
+Fixed by setting `rank_math_add_faq_schema` and `faq_schema` to false on element
+`6ff36baa` of each of the five pages, then by a `wp_postmeta`-scoped
+search-replace of `"rank_math_add_faq_schema":"yes"` to `""` (26 cells) so no
+revision can restore it. Verified by refetching all five: zero `FAQPage`.
+
+**Any future Elementor accordion must have this switch off.** It defaults to
+`no` in Elementor; it was the imported template that turned it on.
+
+### Still open — found during the sweep, not fixed here
+
+A crawl of all 380 sitemap URLs found **13 blog posts** that each carry a
+hand-written `application/ld+json` block in `post_content` whose `@graph`
+includes both a **`FAQPage`** and a **`HowTo`** node. Both are barred by hard
+rule 6. This is unrelated to the Elementor field above and predates this batch:
+
+`/blog/` + `clearance-certificate-unfiled-year`, `cra-demand-to-file-letter`,
+`dormant-company-tax-return`, `inactive-corporation-t2-filing`,
+`mandatory-t2-e-filing-after-2023`, `nil-t2-filing-deadline`,
+`nil-t2-late-filing-penalty`, `non-resident-25-a-day-penalty`,
+`paper-t2-filing-penalty-and-preparer-penalty`,
+`schedule-50-and-the-10-percent-shareholder-rule`,
+`t2-short-vs-full-t2-nil-corporation`, `unfiled-t2-returns`,
+`what-is-a-nil-t2-return`.
+
+The graph in each also holds legitimate Organization, Person, BlogPosting,
+Service, BreadcrumbList and DefinedTermSet nodes, so the fix is to drop the two
+banned nodes from the graph, not to delete the block. The visible Q&A copy stays,
+per line 1582: *the question format stays, the markup goes*. Not done in this
+batch because it edits 13 published posts and is its own piece of work.
+
+Two further standing items the same crawl surfaced, both site-wide and
+pre-existing, neither caused by this batch:
+
+- The footer links `/community-commitment/` and `/engagement-terms/` both 404
+  on every page of the site.
+- The live site is **fully indexable**: `<meta name="robots">` reads
+  `follow, index` on every URL, there is no `X-Robots-Tag`, and `robots.txt`
+  allows all crawlers and publishes the sitemap. Hard rule 10 and the
+  2026-09-21 decision both call for a Rank Math site-wide noindex until Sharad
+  confirms launch, and `robots_global` is `["index"]`. Recorded here as a fact
+  of the live site; whether rule 10 still applies is Sharad's call, not a
+  setting to flip unasked.
