@@ -335,8 +335,12 @@ def schema(v, slug):
              'item': SITE + '/services/'},
             {'@type': 'ListItem', 'position': 3,
              'name': f'Nil T2 Filing for {v["name"]}', 'item': url}]}]}
+    # The JSON stays double-quoted. An earlier pass swapped its quotes for
+    # single ones to cut escaping in the stored Elementor payload, which is
+    # not valid JSON-LD: single-quoted keys and values parse as nothing. Only
+    # the script tag's own attribute is single-quoted.
     return ("<script type='application/ld+json'>"
-            + json.dumps(g, ensure_ascii=False).replace('"', chr(39)) + '</script>')
+            + json.dumps(g, ensure_ascii=False) + '</script>')
 
 
 def build(slug):
