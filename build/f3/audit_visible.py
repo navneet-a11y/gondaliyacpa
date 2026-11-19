@@ -18,6 +18,16 @@ def visible(node,out,links):
                 if isinstance(v,str) and v.strip() and k in TEXT_KEYS:
                     out.append(re.sub(r'\s+',' ',re.sub(r'<[^>]+>',' ',v)).strip())
                 if isinstance(v,dict) and v.get('url'): links.append(v['url'])
+                # Repeater settings (accordion items, icon lists, slides) hold
+                # their visible text one level down. Without this the scan
+                # missed every FAQ question on a nested-accordion.
+                if isinstance(v,list):
+                    for it in v:
+                        if not isinstance(it,dict): continue
+                        for k2,v2 in it.items():
+                            if isinstance(v2,str) and v2.strip() and k2 in TEXT_KEYS:
+                                out.append(re.sub(r'\s+',' ',re.sub(r'<[^>]+>',' ',v2)).strip())
+                            if isinstance(v2,dict) and v2.get('url'): links.append(v2['url'])
         for v in (node.get('elements') or []): visible(v,out,links)
     elif isinstance(node,list):
         for v in node: visible(v,out,links)
@@ -50,6 +60,18 @@ REQ_CITYHUB=[('overflow price',r'\$350\.00 (including HST|plus applicable sales 
       r'|T2 returns were assessed|PULL CORPORATION COUNT'),
      ('pull date caption',r'PULL DATE|Pulled ')]
 
+# Source-template leakage. A converted template can pass every banned-phrase
+# rule and still ship the originating page's industry: the Family 1 source was
+# a 39-section OnlyFans-creator page whose section 17 turned out to be a
+# 22 KB html widget, not the CSS-only widget it looked like, carrying 73
+# mentions of that industry. Visible-text rules did not catch it because none
+# of them names a brand. This does.
+LEAK=[('source template brand',
+       r'OnlyFans|Fansly|adult (industry|content)|camming|escort'
+       r'|gcpa-|Know Exact Fees|Book (Your|Free) Consultation'
+       r'|Money-Back|Fees[- ]Matching|Official Partner|Trustindex'),
+      ]
+
 fail=0
 for f in sorted(glob.glob(sys.argv[1])):
     doc=json.load(open(f)); out=[];links=[]
@@ -57,6 +79,7 @@ for f in sorted(glob.glob(sys.argv[1])):
     blob=' || '.join(out)
     name=os.path.basename(f)
     probs=[n for n,p in BAN if re.search(p,blob,re.I)]
+    probs+=[n for n,p in LEAK if re.search(p,blob)]
     req=REQ_ALL+(REQ_CITYHUB if 'cityhub' in name else [])
     miss=[n for n,p in req if not re.search(p,blob)]
     ext=[l for l in links if 'gondaliyacpa.ca' in l]
