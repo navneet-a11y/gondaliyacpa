@@ -11907,3 +11907,75 @@ per topic, not a title rewrite.
 Separately: the query `t183corp` draws 15 impressions at position 14.1. An
 exact-match query with no competition should not sit on page two. Internal
 linking and content on post 955, not a title job.
+
+## 2026-11-19 — Family 1 template built; why the layout is imported, not written
+
+### What was built
+
+`build/f1/build_vertical.py` plus `build/f1/vertical_copy.py`, converting the
+"industry pages template" Navneet supplied on 2026-11-19 (39 sections, written
+for an OnlyFans-creator service page on gondaliyacpa.ca) into a Family 1
+vertical. 25 sections carry over, each rewritten end to end.
+
+Dropped with the rule that drops them: the review count and Google Reviews
+widget and the Trustindex shortcode (hard rule 6), the money-back and
+fees-matching guarantees (hard rule 4), every consultation CTA (hard rule 7),
+the "Official Partner" logo rail (hard rule 1), the HubSpot lead-magnet PDF,
+the case studies, and the other site's location JavaScript.
+
+First vertical: numbered holding corporations, the plan's own example at line
+1162 and its highest-volume seed, `nil t2 filing for holding company` at an
+estimated 70 a month. Draft **2682**,
+`/nil-t2-filing-for-numbered-holding-corporations/`, cnf_family f1, Rank Math
+title, description, focus keyword and breadcrumb title all set.
+
+### Two bugs the audit forced, both now fixed
+
+Source section 17 looked like a CSS-only html widget in the outline. It was
+22,883 bytes holding a second services grid with **73 mentions of the source
+industry**, and it would have shipped. It now carries an original three-card
+checklist, the plan's second unique-data option at line 1209.
+
+Sections 11 and 13 were emitted twice, once for the headings and once for the
+bodies, which shipped each section twice and left the source copy standing in
+the first copy.
+
+`build/f3/audit_visible.py` now walks repeater settings, so accordion
+questions are scanned where before they were invisible to it, and carries a
+source-leak rule. A converted template can pass every banned-phrase check and
+still ship the originating page's industry; nothing in the rule set named a
+brand until now.
+
+### Why the layout is imported rather than written through the API
+
+The built layout is **131,348 bytes**. `_elementor_data` is not exposed to the
+REST API, so the only write path is `wp_update_post_meta`, which takes the
+whole value as one parameter. There is no append, no chunking and no
+server-side import route (checked: `wp_rest_routes` has no Elementor import
+endpoint).
+
+Writing it means reproducing 131 KB of dense JSON verbatim, where a single
+mis-escaped character silently corrupts the layout. Elementor's own Import
+Templates does the same job losslessly in about thirty seconds, and it is the
+route the source file arrived by. So the generator's output is handed over as
+a file and imported, and the API write is not attempted.
+
+The cost is one-time. `wp_duplicate_post` copies Elementor layouts
+server-side, which is how the four city hubs were built, so verticals 2 to 215
+duplicate from this one at roughly 44 operations each rather than 131 KB.
+
+Worth recording for the family: section 13, the twelve ElementsKit cards, is
+46,660 bytes, 35% of the page. 43 of each card's 51 settings keys are
+**identical across all twelve**, which is 34,236 bytes of duplicated styling
+on every page in a 215-page family. Elementor has no inheritance for widget
+settings, so it cannot be deduplicated in stored data. If the family is ever
+rebuilt, moving that styling into Additional CSS and stripping it from the
+widgets is the single biggest win available.
+
+### Still open before this publishes
+
+The six-field schedule row is a compliance statement and the plan puts F1
+review with Sharad Gondaliya. And the plan's F1 meta pattern at line 1162
+specifies `$300.00 Including HST`; the page uses `plus HST` to match every
+other live page, keeping it inside the pending HST sweep rather than creating
+a 215-page exception.
