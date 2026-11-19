@@ -12070,3 +12070,33 @@ source. The rules live in a generated per-post stylesheet, and whether a
 selector wins depends on the inner-wrapper structure. Playwright is already
 installed; measuring computed styles in the browser found both faults in one
 pass after a source-level check had missed them.
+
+### 2026-11-19, later still — the CSS broke the header, and why
+
+Navneet reported the site header broken on the vertical page. It was my CSS.
+
+`.single-nil_vertical` is a **body class**, so a selector scoped with it still
+reaches the ElementsKit header and footer templates, which are rendered
+inside the same document. The site logo is an image widget alone in its
+container, so
+
+    .single-nil_vertical .e-con > .elementor-widget-image:only-child img
+      { width:100%; height:100%; min-height:420px; object-fit:cover }
+
+matched the logo and stretched it from 204x78 to 305x420, cropped. The whole
+header collapsed around it.
+
+Every layout rule in the Family 1 block is now scoped to `#content`, the
+Astra wrapper around the post itself, which excludes both templates. The
+date-hiding rule stays unscoped because it targets Astra's own markup rather
+than Elementor's.
+
+Verified after a site-wide cache clear: the logo is 204x78 with
+`object-fit: fill` on the vertical, on the home page and on a city hub; the
+vertical still has its two-row card grid and its 720px intro photograph.
+
+**The rule to carry forward:** a body class is not a scope. Anything that
+styles Elementor structure (`.e-con`, `.e-con-inner`, widget classes) has to
+be scoped to the content wrapper as well, or it reaches the header and footer
+templates. The same mistake would have hit the city hub rules had they
+touched containers rather than theme markup.
