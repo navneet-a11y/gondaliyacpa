@@ -27,7 +27,7 @@ VERTICALS = {
           'genuinely nil, that return is $300.00 plus HST per tax year.',
 
   # Section 1, the two-paragraph fact pattern the plan requires at line 1209
-  'intro_h': 'AFFORDABLE Nil T2 Filing for Numbered Holding Corporations',
+  'intro_h': 'Flat-Fee Nil T2 Filing for Numbered Holding Corporations',
   'intro': (
     'Filing for a numbered holding corporation can feel pointless, '
     'especially when the entity has a number instead of a name, holds '
@@ -267,7 +267,7 @@ VERTICALS = {
           'stayed registered. That year is still a filing year, and where it '
           'is genuinely nil the return is $300.00 plus HST per tax year.',
 
-  'intro_h': 'AFFORDABLE Nil T2 Filing for Dormant Consulting Corporations',
+  'intro_h': 'Flat-Fee Nil T2 Filing for Dormant Consulting Corporations',
   'intro': (
     'Filing for a consulting corporation you stopped using can feel like '
     'paperwork for nothing, especially when no invoices went out, the '
@@ -484,7 +484,7 @@ VERTICALS = {
           'owes a return for every year since. Each of those years is '
           '$300.00 plus HST per tax year.',
 
-  'intro_h': 'AFFORDABLE Nil T2 Filing for Shelf Corporations',
+  'intro_h': 'Flat-Fee Nil T2 Filing for Shelf Corporations',
   'intro': (
     'A corporation that has never traded still owes returns, especially '
     'one incorporated years ago with no first transaction to point at. '
@@ -703,7 +703,7 @@ VERTICALS = {
           'is still registered. A year with no loads and no disposals is nil, '
           'at $300.00 plus HST per tax year.',
 
-  'intro_h': 'AFFORDABLE Nil T2 Filing for Inactive Trucking Corporations',
+  'intro_h': 'Flat-Fee Nil T2 Filing for Inactive Trucking Corporations',
   'intro': (
     'Keeping an owner-operator corporation filed while you are off the '
     'road can feel like money for nothing, especially with a business '
@@ -917,7 +917,7 @@ VERTICALS = {
           'the last service still need returns, and a year with nothing left '
           'moving is $300.00 plus HST per tax year.',
 
-  'intro_h': 'AFFORDABLE Nil T2 Filing for Closed Restaurant Corporations',
+  'intro_h': 'Flat-Fee Nil T2 Filing for Closed Restaurant Corporations',
   'intro': (
     'Closing a restaurant rarely ends tidily. The lease is assigned or '
     'run out, the equipment goes to an auctioneer or sits in a unit '
@@ -1128,7 +1128,7 @@ VERTICALS = {
           'year. Where nothing was earned and nothing was held, the return is '
           '$300.00 plus HST per tax year.',
 
-  'intro_h': 'AFFORDABLE Nil T2 Filing for Medicine Professional Corporations',
+  'intro_h': 'Flat-Fee Nil T2 Filing for Medicine Professional Corporations',
   'intro': (
     'A professional corporation you are not billing through still files, '
     'especially while the certificate of authorization is held, the '
@@ -1341,7 +1341,7 @@ VERTICALS = {
           'invoiced and no holdback was released, the return is $300.00 plus '
           'HST per tax year.',
 
-  'intro_h': 'AFFORDABLE Nil T2 Filing for Dormant Construction Corporations',
+  'intro_h': 'Flat-Fee Nil T2 Filing for Dormant Construction Corporations',
   'intro': (
     'A trades corporation between phases still owes a return each year, '
     'with tools and a trailer that may still be owned, a workers '
@@ -1556,7 +1556,7 @@ VERTICALS = {
           'A year with nothing sold and nothing paid out is $300.00 plus HST '
           'per tax year.',
 
-  'intro_h': 'AFFORDABLE Nil T2 Filing for E-Commerce Corporations',
+  'intro_h': 'Flat-Fee Nil T2 Filing for E-Commerce Corporations',
   'intro': (
     'Switching off a storefront does not switch off the corporation '
     'behind it. The seller account is deactivated, the last stock is '
@@ -1767,7 +1767,7 @@ VERTICALS = {
           'held property that earned nothing and cost it nothing, the return '
           'is $300.00 plus HST per tax year.',
 
-  'intro_h': 'AFFORDABLE Nil T2 Filing for Real Estate Holding Corporations',
+  'intro_h': 'Flat-Fee Nil T2 Filing for Real Estate Holding Corporations',
   'intro': (
     'Property sitting in a corporation still generates a filing '
     'obligation every year: title in the corporation name, a property tax '
@@ -1982,7 +1982,7 @@ VERTICALS = {
           'the corporation neither billed nor paid, the return is $300.00 '
           'plus HST per tax year.',
 
-  'intro_h': 'AFFORDABLE Nil T2 Filing for Dormant IT Consulting Corporations',
+  'intro_h': 'Flat-Fee Nil T2 Filing for Dormant IT Consulting Corporations',
   'intro': (
     'An IT corporation between contracts still files, with a closed '
     'statement of work behind it, a workstation still on the books, and a '
