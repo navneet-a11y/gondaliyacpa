@@ -12038,3 +12038,35 @@ the price reads `$300.00 plus HST` in all ten places.
 
 Dropping the six cards also took the generated template from 131 KB to
 109 KB.
+
+### 2026-11-19, later — the gap under the cards, and the intro photograph
+
+Two faults Navneet spotted on the published page, both now fixed and both
+caused by the same misunderstanding of Elementor's DOM.
+
+**A boxed Elementor container renders an inner wrapper**, and the grid
+properties land on `.e-con-inner`, not on `.e-con`. The first CSS pass
+targeted `.e-con`, so it did nothing useful: the card grid kept
+`grid-template-rows: 340px 340px 340px` from its original twelve-card layout
+while holding six cards in two rows, and the reserved third row was the 340px
+of empty space under the cards. Measured in a real browser rather than
+guessed: 1,082px tall before, 721px after, six children, two rows.
+
+**The intro photograph** sat at its natural size inside a 720px cell whose
+grey background overlay showed below it. The source carries that image as a
+container background, and the layout API refuses `set_image` on a container,
+so it went in as an image widget. It now fills the cell at
+`object-fit: cover`, 720px of image in a 720px cell.
+
+`:only-child` is what separates it from the four "why" cards, whose image
+widgets sit beside a heading and a paragraph.
+
+The generator now inserts the same image widget rather than setting a
+container background, so a re-import and the published page have the same
+structure and the same CSS reaches both.
+
+**Lesson worth keeping:** Elementor styling cannot be verified from the HTML
+source. The rules live in a generated per-post stylesheet, and whether a
+selector wins depends on the inner-wrapper structure. Playwright is already
+installed; measuring computed styles in the browser found both faults in one
+pass after a source-level check had missed them.

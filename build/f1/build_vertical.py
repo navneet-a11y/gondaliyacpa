@@ -521,31 +521,42 @@ def build(slug):
         desource(sec)
 
         if idx == 1:
-            # desource() blanks the intro cell's background image because it is
-            # a gondaliyacpa.ca asset. Put this site's own copy of the same
-            # photograph back, so the left half of the intro is not an empty
-            # frame. Runs after desource, or it would be blanked again.
-            def put(n):
+            # The source carries the intro photograph as a container
+            # background, which desource() blanks because it is a
+            # gondaliyacpa.ca asset. The layout API cannot write a container
+            # background at all (set_image is refused on containers), so the
+            # live page carries it as an image widget instead. The generator
+            # does the same, so a re-import and the published page have the
+            # same structure and the same CSS applies to both.
+            # Sizing is in Additional CSS, keyed on
+            # ".e-con > .elementor-widget-image:only-child".
+            def fill(n):
                 if isinstance(n, dict):
                     st = n.get('settings')
                     if isinstance(st, dict) and isinstance(
                             st.get('background_image'), dict) \
-                            and not st['background_image'].get('url'):
-                        st['background_image'] = {
-                            'url': INTRO_IMG, 'id': INTRO_IMG_ID,
-                            'source': 'library', 'size': '',
-                            'alt': 'CPA Ontario registered firm preparing nil '
-                                   'T2 returns'}
+                            and not st['background_image'].get('url') \
+                            and not (n.get('elements') or []):
+                        n['elements'] = [{
+                            'id': '%08x' % random.randrange(16 ** 8),
+                            'elType': 'widget', 'widgetType': 'image',
+                            'isInner': False, 'elements': [],
+                            'settings': {
+                                'image': {'url': INTRO_IMG, 'id': INTRO_IMG_ID,
+                                          'source': 'library', 'size': '',
+                                          'alt': 'CPA Ontario registered firm '
+                                                 'preparing nil T2 returns'},
+                                'image_size': 'full'}}]
                         return True
                     for k in (n.get('elements') or []):
-                        if put(k):
+                        if fill(k):
                             return True
                 elif isinstance(n, list):
                     for k in n:
-                        if put(k):
+                        if fill(k):
                             return True
                 return False
-            put(sec)
+            fill(sec)
 
         out.append(sec)
     return out
