@@ -281,33 +281,29 @@ VERTICALS = {
     'prepare the return with its schedules, and have you sign one '
     'T183CORP for each year online. Nothing is printed and nothing is '
     'posted.'),
-  'notnil_h': 'When a Dormant Consulting Corporation Is Not Nil',
+  'notnil_h': 'What an Unfiled Year Costs a Dormant Consulting Corporation',
   'notnil_boxes': [
-    ('A Final Invoice Landed',
-     'Work billed in a previous year but paid in this one is still revenue '
-     'for the year it was earned. Check the year it was invoiced, not banked.'),
-    ('Subscriptions Kept Running',
-     'Software, a phone line, accounting fees or a registered-office service '
-     'billed to the corporation is an expense. That year is not nil.'),
-    ('The Corporation Paid Anyone',
-     'A salary, a dividend or a management fee out of the corporation makes '
-     'the year active, however small the amount.'),
-    ('A Retainer Was Held',
-     'Money held on account for a client is a liability that moves. A year '
-     'with a retainer taken or released is not nil.'),
+    ('The Year Stays Open',
+     'Nothing closes an unfiled year except the return. It is still '
+     'outstanding years later.'),
+    ('A Letter Can Land Instead',
+     'The Agency can write and require the return, which turns a quiet '
+     'obligation into a dated one.'),
+    ('The Figures Can Be Invented',
+     'Where no return arrives the Agency can assess on numbers of its '
+     'own, and only the real return replaces them.'),
+    ('Winding Up Is Blocked',
+     'No clearance certificate is issued while a year is missing, so the '
+     'corporation cannot be dissolved.'),
   ],
   'notnil_text': (
-    'The catch for consultants is almost always the expense side rather than '
-    'the income side. A corporation that invoiced nothing all year can still '
-    'be paying twelve dollars a month for a cloud subscription or a phone '
-    'number nobody answers, and a single claimed expense turns a nil year '
-    'into an ordinary one with a loss to report.',
-    'A loss year is worth filing properly, because a non-capital loss carries '
-    'forward and can shelter income if the consulting work starts again. That '
-    'return is prepared by Gondaliya CPA Professional Corporation at '
-    'gondaliyacpa.ca for $350.00 plus HST per year. The nil service here is '
-    'for the years where genuinely nothing moved.'),
-
+    'The usual reason a consulting corporation goes unfiled is that '
+    'nothing happened in it, which feels like nothing is owed. The return '
+    'is owed anyway, and the gap is what a future accountant, buyer or '
+    'registrar sees first.',
+    'Catching up is ordinary work here rather than an exception. Each '
+    'quiet year is $300.00 plus HST per tax year, filed oldest first, '
+    'with one T183CORP signed online for each of them.'),
   'sched_h': 'Which T2 Schedules a Dormant Consulting Corporation Files',
   'sched_rows': [
     ('Schedule 100', 'Balance sheet information', 'Usually required',
@@ -497,32 +493,30 @@ VERTICALS = {
     'that changed, or because the company was bought ready-made, we file '
     'oldest first, attach Schedule 24 to the earliest return, and sign '
     'one T183CORP per year. You get the CRA confirmation for each.'),
-  'notnil_h': 'When a Shelf Corporation Stops Being Nil',
+  'notnil_h': 'What the Unfiled Years Cost a Shelf Corporation',
   'notnil_boxes': [
-    ('The Bank Account Opened',
-     'An account opened in the corporation name that earns any interest puts '
-     'income in the year. The year is not nil.'),
-    ('The First Invoice Went Out',
-     'One invoice ends the shelf period. From that tax year the corporation '
-     'is trading and files an ordinary T2.'),
-    ('An Asset Was Transferred In',
-     'Property rolled into the corporation, often on a section 85 transfer, '
-     'is a transaction with its own reporting.'),
-    ('Incorporation Costs Were Claimed',
-     'The registration fee and legal costs are expenses. Claiming them makes '
-     'that year active rather than nil.'),
+    ('The Years Do Not Age Out',
+     'An unfiled year stays outstanding indefinitely. A 2019 '
+     'incorporation still owes its 2019 return today.'),
+    ('A Demand to File Can Arrive',
+     'The Canada Revenue Agency can require the return in writing, with a '
+     'deadline of its own attached.'),
+    ('Banks and Tenders Ask',
+     'An incorporation date is only worth holding with the filing history '
+     'behind it, and that is what gets requested.'),
+    ('Nothing Can Be Done With It',
+     'Selling the shell, using it for a tender and dissolving it all wait '
+     'on the outstanding returns.'),
   ],
   'notnil_text': (
-    'The usual complication is the incorporation year itself. Articles, name '
-    'search and registry fees were paid by somebody, and where the '
-    'corporation claimed them, its first year is an expense year with a loss '
-    'rather than a nil year. Where the owner paid them personally and never '
-    'put them through, the first year is nil like the rest.',
-    'A first year with costs in it is prepared by Gondaliya CPA Professional '
-    'Corporation at gondaliyacpa.ca for $350.00 plus HST per year, and the '
-    'remaining shelf years are filed here. Mixing the two in one catch-up is '
-    'normal and the price applies year by year.'),
-
+    'A shelf corporation is the easiest kind of filing to postpone, '
+    'because nothing is happening and nothing is owed in cash. What '
+    'accumulates instead is the count of years, and that count only '
+    'grows.',
+    'Clearing it is the whole point of this service. The run is filed '
+    'oldest first at $300.00 plus HST per tax year, Schedule 24 goes with '
+    'the earliest return, and the corporation comes out of it with an '
+    'unbroken record ready for whatever it was incorporated for.'),
   'sched_h': 'Which T2 Schedules a Shelf Corporation Files',
   'sched_rows': [
     ('Schedule 100', 'Balance sheet information', 'Depends on share capital',
@@ -717,31 +711,28 @@ VERTICALS = {
     'plate, insurance or storage costs, then prepare and transmit the '
     'return. Any year with a disposal in it is sent to the right service '
     'instead.'),
-  'notnil_h': 'When an Inactive Trucking Corporation Is Not Nil',
+  'notnil_h': 'What an Unfiled Year Costs an Owner-Operator Corporation',
   'notnil_boxes': [
-    ('The Truck Was Sold',
-     'A disposal is the single most common thing that ends a nil run. Selling '
-     'the tractor or a trailer triggers recapture or a terminal loss.'),
-    ('A Load Was Hauled',
-     'One settlement from a carrier, even a part month at the start of the '
-     'year, is revenue. The year is not nil.'),
-    ('Plates, Insurance or Storage Were Paid',
-     'Keeping a truck insured or stored costs money, and a claimed cost makes '
-     'the year active with a loss to report.'),
-    ('A Rebate or Refund Arrived',
-     'A fuel tax refund, an insurance rebate or a returned deposit is income '
-     'to the corporation in the year it is received.'),
+    ('The Year Does Not Close Itself',
+     'Parking the truck does not end the tax year. Only the filed return '
+     'does.'),
+    ('The Agency Can Ask In Writing',
+     'A written requirement to file turns an open year into one with a '
+     'date attached to it.'),
+    ('The Truck Sale Gets Messy',
+     'Capital cost allowance that never carried forward is harder to '
+     'compute on the day the rig finally goes.'),
+    ('Going Back to Hauling Gets Harder',
+     'Carriers and brokers want a corporation in good standing before '
+     'they put you back on the board.'),
   ],
   'notnil_text': (
-    'Trucking corporations differ from most dormant corporations because they '
-    'usually own something substantial. A tractor sitting in the yard is '
-    'depreciable property, and the year it is sold is never nil: the proceeds '
-    'are measured against the undepreciated balance and the difference is '
-    'recapture or a terminal loss, either of which has to be reported.',
-    'That year is prepared by Gondaliya CPA Professional Corporation at '
-    'gondaliyacpa.ca for $350.00 plus HST per year. The quiet years either '
-    'side of it, where the truck simply sat, are filed here.'),
-
+    'Most owner-operators mean to go back to it, and the corporation is '
+    'kept for exactly that reason. A filing gap is the thing that makes '
+    'going back awkward later.',
+    'Each year off the road is $300.00 plus HST per tax year. Filing them '
+    'in order keeps the capital cost allowance on the truck carrying '
+    'forward, which is what matters on the day it is finally sold.'),
   'sched_h': 'Which T2 Schedules an Inactive Trucking Corporation Files',
   'sched_rows': [
     ('Schedule 100', 'Balance sheet information', 'Required',
@@ -929,32 +920,28 @@ VERTICALS = {
     'separate the closing year from the quiet ones, prepare the nil years '
     'with Schedules 100, 125, 141 and 50, and sign a T183CORP for each. '
     'Dissolution needs every one of them filed first.'),
-  'notnil_h': 'When a Closed Restaurant Corporation Is Not Nil',
+  'notnil_h': 'What an Unfiled Year Costs a Closed Restaurant Corporation',
   'notnil_boxes': [
-    ('Equipment or Fixtures Were Sold',
-     'An auction, a private sale or a transfer of the kitchen to the next '
-     'tenant is a disposal with a gain or loss to report.'),
-    ('The Lease Was Settled',
-     'A returned deposit, an assignment payment or a negotiated exit from the '
-     'landlord is money moving through the corporation.'),
-    ('Gift Cards Were Redeemed',
-     'Outstanding gift cards honoured elsewhere, or written off, change the '
-     'liability on the books.'),
-    ('A Licence Refund Arrived',
-     'A refunded liquor, food premises or municipal licence fee is income in '
-     'the year it is received.'),
+    ('The Year Stays Outstanding',
+     'Closing the doors does not close the tax year. The return is still '
+     'owed for it.'),
+    ('A Written Requirement Can Follow',
+     'The Agency can demand the return, and a demand carries a date the '
+     'quiet years never had.'),
+    ('The Clearance Certificate Is Blocked',
+     'None is issued while a year is missing, so the corporation cannot '
+     'be dissolved.'),
+    ('The Registry Keeps the Entity',
+     'It stays listed, with its filings outstanding, until the returns '
+     'are in and it is formally wound up.'),
   ],
   'notnil_text': (
-    'The closing year is the complicated one and it is worth getting right. '
-    'Equipment sold for less than its depreciated value produces a terminal '
-    'loss, which is a deduction, and a corporation that simply stops filing '
-    'never claims it. Staff final pay, the GST/HST on an asset sale and the '
-    'lease settlement all land in that same year.',
-    'That return is prepared by Gondaliya CPA Professional Corporation at '
-    'gondaliyacpa.ca for $350.00 plus HST per year. The years afterwards, '
-    'once the unit is empty and the accounts are still, are filed here as nil '
-    'returns at $300.00 plus HST per tax year.'),
-
+    'A closed restaurant is usually meant to be finished with, and '
+    'dissolution is what finishes it. Every outstanding year sits between '
+    'the owner and that.',
+    'The quiet years after the closure are $300.00 plus HST per tax year. '
+    'Filed oldest first, with the closing year sent to the right service, '
+    'they clear the way for a clearance certificate and a wind-up.'),
   'sched_h': 'Which T2 Schedules a Closed Restaurant Corporation Files',
   'sched_rows': [
     ('Schedule 100', 'Balance sheet information', 'Required',
@@ -1142,33 +1129,28 @@ VERTICALS = {
     'the corporation, prepare the return with Schedule 50 naming every '
     'shareholder at 10% or more, and transmit it electronically. A year '
     'the portfolio paid in goes to the full service.'),
-  'notnil_h': 'When a Medicine Professional Corporation Is Not Nil',
+  'notnil_h': 'What an Unfiled Year Costs a Medicine Professional Corporation',
   'notnil_boxes': [
-    ('A Portfolio Sits Inside the Corporation',
-     'Interest, dividends or a realised gain on investments the corporation '
-     'owns is income to it, whoever manages them.'),
-    ('Billings Settled Late',
-     'A year-end reconciliation from the provincial plan, or a shadow '
-     'billing payment, counts in the year it arrives.'),
-    ('A Family Shareholder Was Paid',
-     'Salary or a dividend to a spouse or adult child holding non-voting '
-     'shares is activity.'),
-    ('The Practice Changed Hands',
-     'Goodwill, a patient list or examination equipment transferred to a '
-     'buyer is a disposal.'),
+    ('The Year Remains Due',
+     'Not billing through the corporation does not end its tax year. Only '
+     'the return does.'),
+    ('The Agency Can Require It',
+     'A written demand replaces an open-ended obligation with one that '
+     'has a date on it.'),
+    ('Restarting Practice Gets Complicated',
+     'A corporation with missing years is awkward to bill through again.'),
+    ('A Buy-In or Sale Looks At It',
+     'Partners, lenders and purchasers read the corporate filings before '
+     'anything is signed.'),
   ],
   'notnil_text': (
-    'The portfolio is what catches physicians out. Retained earnings left '
-    'inside a professional corporation are very often invested, and the '
-    'moment those holdings pay interest or a dividend the corporation has '
-    'income, even in a year its physician saw no patients through it. '
-    'Passive investment income also carries treatment of its own, which a '
-    'nil return does not provide.',
-    'Such a year is an ordinary corporate return. Gondaliya CPA Professional '
-    'Corporation takes it at gondaliyacpa.ca, where the fee is $350.00 plus '
-    'HST per year. Only a year in which the corporation neither earned nor '
-    'paid anything belongs on this page, at $300.00 plus HST per tax year.'),
-
+    'Most physicians keep the corporation because the plan is to use it '
+    'again, whether after a leave, a fellowship or a move. A gap in the '
+    'filings is what gets raised later, by an accountant, a lender or a '
+    'purchaser.',
+    'Each year the corporation billed nothing is $300.00 plus HST per tax '
+    'year, filed in order, with Schedule 50 naming every shareholder at '
+    '10% or more and one T183CORP signed for each.'),
   'sched_h': 'Which T2 Schedules a Medicine Professional Corporation Files',
   'sched_rows': [
     ('Schedule 100', 'Balance sheet information', 'Required',
@@ -1354,32 +1336,29 @@ VERTICALS = {
     'subcontractor payments and equipment disposals, then prepare and '
     'transmit the return. An unbroken filing history is what bonding and '
     'prequalification ask for later.'),
-  'notnil_h': 'When a Dormant Construction Corporation Is Not Nil',
+  'notnil_h': (
+    'What an Unfiled Season Costs a Dormant Construction Corporation'),
   'notnil_boxes': [
-    ('A Holdback Was Released',
-     'Statutory holdback from a job finished years earlier counts as revenue '
-     'the year the owner finally pays it out.'),
-    ('Equipment or a Vehicle Was Sold',
-     'A truck, an excavator, scaffolding or a trailer sold or traded is a '
-     'disposal with a gain or a terminal loss.'),
-    ('A Subcontractor Was Paid',
-     'Any payment to a subcontractor is activity, and it brings a T5018 '
-     'contract payment information return with it.'),
-    ('A Deficiency Claim Was Settled',
-     'Money paid or received over warranty work on a finished project moves '
-     'through the corporation.'),
+    ('The Season Stays Open',
+     'No work does not mean no return. The year is outstanding until it '
+     'is filed.'),
+    ('A Written Demand Can Come',
+     'The Agency can require the season be filed, on a timetable that it '
+     'sets rather than you.'),
+    ('Bonding and Prequalification Ask',
+     'Sureties and general contractors want filing history before they '
+     'take a trade on.'),
+    ('Closing the Company Waits',
+     'Dissolution needs every season filed first, so the entity cannot '
+     'simply be abandoned.'),
   ],
   'notnil_text': (
-    'Holdbacks are the usual reason a season a contractor thought was empty '
-    'turns out not to be. Statutory holdback on a substantial project can be '
-    'released long after the last crew left the site, and it belongs to '
-    'whichever year the cheque clears rather than the year the work was '
-    'done.',
-    'Any of those makes the year an ordinary corporate return, taken by '
-    'Gondaliya CPA Professional Corporation at gondaliyacpa.ca for $350.00 '
-    'plus HST per year. The empty seasons in between belong on this page at '
-    '$300.00 plus HST per tax year.'),
-
+    'A dormant trades corporation is almost always kept on purpose, '
+    'because the next job might need it. What makes it usable is the '
+    'record behind it, and a gap is what damages the record.',
+    'Each empty season is $300.00 plus HST per tax year. Filing them in '
+    'order keeps the capital cost allowance on the trucks and tools '
+    'carrying forward, and leaves the company ready to bid.'),
   'sched_h': 'Which T2 Schedules a Dormant Construction Corporation Files',
   'sched_rows': [
     ('Schedule 100', 'Balance sheet information', 'Required',
@@ -1568,32 +1547,27 @@ VERTICALS = {
     'before treating a year as nil, carry any remaining stock or held '
     'processor balance on Schedule 100, and sign one T183CORP per year. A '
     'released balance makes that year a full return instead.'),
-  'notnil_h': 'When an E-Commerce Corporation Is Not Nil',
+  'notnil_h': 'What an Unfiled Year Costs an E-Commerce Corporation',
   'notnil_boxes': [
-    ('A Processor Paid Out',
-     'A residual transfer from a payment processor or a marketplace, months '
-     'after the last order, counts in the year it lands.'),
-    ('Remaining Stock Was Cleared',
-     'Liquidating inventory, selling it to another seller or writing it off '
-     'changes the books.'),
-    ('A Refund or Chargeback Settled',
-     'Money going back to a customer, or a chargeback resolved either way, '
-     'moves through the corporation.'),
-    ('The Store or Domain Was Sold',
-     'Selling the brand, the domain, the customer list or the seller account '
-     'is a disposal.'),
+    ('A Dark Year Is Still a Tax Year',
+     'Switching the store off ends the trading, not the filing. The '
+     'return is what ends that.'),
+    ('A Notice Can Arrive Instead',
+     'The Agency can require the return in writing, and the notice sets a '
+     'date of its own.'),
+    ('Selling the Brand Gets Harder',
+     'A buyer looking at the store, the domain or the customer list will '
+     'want clean corporate filings.'),
+    ('Dissolution Waits on the Run',
+     'Every dark year goes in before the entity can be formally closed.'),
   ],
   'notnil_text': (
-    'Payment processors are the usual complication. A balance can sit with a '
-    'processor or a marketplace for months after the storefront goes dark, '
-    'held back against refunds and chargebacks, and its release is revenue to '
-    'the corporation in that year. A foreign currency balance converted on '
-    'the way out behaves the same.',
-    'Where a year holds one of those it stops being nil and becomes a full '
-    'return. Gondaliya CPA Professional Corporation deals with it from '
-    'gondaliyacpa.ca, charged at $350.00 plus HST per year. Anything '
-    'quieter than that is priced on this page.'),
-
+    'Most sellers either come back to it or sell what is left of it. Both '
+    'depend on a corporation whose filings are current, and neither is '
+    'helped by a run of dark years nobody dealt with.',
+    'Each dark year is $300.00 plus HST per tax year, filed oldest first, '
+    'with any remaining stock or held processor balance carried on '
+    'Schedule 100 so the figures reconcile across the run.'),
   'sched_h': 'Which T2 Schedules an E-Commerce Corporation Files',
   'sched_rows': [
     ('Schedule 100', 'Balance sheet information', 'Required',
@@ -1995,32 +1969,28 @@ VERTICALS = {
     'read the corporate card before treating a year as nil, keep '
     'equipment on Schedule 8 while it is owned, and sign one T183CORP per '
     'year online. Agencies ask for the filing history at onboarding.'),
-  'notnil_h': 'When a Dormant IT Consulting Corporation Is Not Nil',
+  'notnil_h': 'What an Unfiled Bench Year Costs an IT Corporation',
   'notnil_boxes': [
-    ('A Milestone or Change Request Paid',
-     'A closing milestone, a change request or a holdback on a finished '
-     'statement of work is revenue in the year it is billed.'),
-    ('Cloud or Hosting Kept Charging',
-     'A compute account, a domain or a certificate still billed to the '
-     'corporation is an expense, so the year is not nil.'),
-    ('Equipment Was Sold or Written Off',
-     'A workstation, server or test device disposed of produces a gain or a '
-     'terminal loss on Schedule 8.'),
-    ('A Vendor Commission Arrived',
-     'A referral fee or a partner programme rebate is income to the '
-     'corporation like anything else.'),
+    ('The Year Does Not Lapse',
+     'Being between contracts does not end the tax year. Only the filed '
+     'return does.'),
+    ('The Agency Can Put a Date On It',
+     'A written requirement to file converts an open-ended obligation '
+     'into a deadline.'),
+    ('Supplier Onboarding Checks It',
+     'Agencies and enterprise clients ask for corporate filing history '
+     'before putting you on a contract.'),
+    ('Closing It Down Waits',
+     'Winding the corporation up needs the bench years filed first.'),
   ],
   'notnil_text': (
-    'Cloud billing is what catches IT corporations out. A compute account '
-    'left running on a corporate card costs very little and is easy to miss, '
-    'but it is an expense the corporation incurred, and an expense is '
-    'activity whatever its size. A domain renewal, a code-signing certificate '
-    'or a developer programme membership does the same thing.',
-    'Where a year carries any of that it is a full return, prepared by '
-    'Gondaliya CPA Professional Corporation at gondaliyacpa.ca for $350.00 '
-    'plus HST per year. A year in which the corporate card was never touched '
-    'is filed on this page at $300.00 plus HST per tax year.'),
-
+    'The corporation is usually kept for the next engagement. What gets '
+    'looked at when that engagement arrives is whether the entity is '
+    'current, and a filing gap is an awkward thing to explain '
+    'mid-onboarding.',
+    'Each bench year is $300.00 plus HST per tax year. There is no '
+    'engagement letter, no discovery call and nothing to post, and '
+    'several years can be signed off in one sitting.'),
   'sched_h': 'Which T2 Schedules a Dormant IT Consulting Corporation Files',
   'sched_rows': [
     ('Schedule 100', 'Balance sheet information', 'Required',
@@ -2081,8 +2051,8 @@ VERTICALS = {
   'why_h': 'Why Dormant IT Consulting Corporations Use This Service',
   'why': [
     ('Built for Bench Years',
-     'The gap between one contract closing and the next starting is exactly '
-     'the year this service files.'),
+     'The stretch between one engagement ending and the next beginning is '
+     'precisely what gets filed here.'),
     ('The Card Is Read First',
      'Each year is read against cloud, domain and subscription charges before '
      'it is treated as nil.'),
@@ -2149,9 +2119,9 @@ VERTICALS = {
     'so that year is a full return. The amount changes the figures, not the '
     'test.'),
    ('Can I keep the corporation dormant and use it for the next contract?',
-    'Yes, and that is the usual reason to file rather than dissolve. Agencies '
-    'and enterprise clients ask for filing history at supplier onboarding, '
-    'and a gap in it is awkward to explain.'),
+    'Yes. That is usually why a contractor files instead of dissolving: '
+    'agencies and enterprise clients want corporate filing history at '
+    'supplier onboarding, and a gap in it takes explaining.'),
    ('I had a single client for three years. Does that change anything?',
     'Not the nil years. A single-client arrangement raises questions about '
     'how the income is taxed in the years it was earned, and those belong to '

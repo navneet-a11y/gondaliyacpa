@@ -12468,3 +12468,92 @@ ceiling. `audit_visible.py`: 117 strings per template, 0 failures. Live on all
 ten: no banned 7.4 phrase, no superlative, no bare T183, no FAQPage or HowTo,
 valid JSON-LD, and the only `$300` without decimals anywhere on the pages is
 the site header tagline, which is template furniture rather than page copy.
+
+## 2026-11-19 — The not-nil block moved off the top of the eight nil-capable F1 pages
+
+Navneet, looking at the real estate page: *"why are we adding this at top. should
+not we add which convince people visiting to file nil"*, quoting the four
+not-nil cards.
+
+### He was right, and so was the plan
+
+Section 3 of every F1 page, immediately under the intro, was four cards
+explaining ways the visitor does not qualify. Before they had read what filing
+gets them, what it costs, or what an unfiled year does to them, the page opened
+with exclusion. The same ground was then covered a second time further down, in
+the three-card nil / not-nil / due-either-way checklist.
+
+The sister site never does this. `gondaliyacpa.ca/accountant-for-<industry>/`
+runs H1, intro, partners, *"Investment Corporations We Understand"*, then
+*"The Problems Investment Corporations Bring Us"*. Inclusion, then the reader's
+problem. Exclusion appears nowhere near the top.
+
+And the plan's own F1 template spec, **line 335**, says the block is
+conditional:
+
+> Shows the not-nil warning block only when `cnf_entity_is_nil` is 0
+
+It was designed for entity types that are inherently not nil, which the 7.4
+table and line 1209 name as holding corporations with investment income, rental
+corporations and dividend recipients. Building it unconditionally into all ten
+verticals was a deviation from the template spec that had not been noticed.
+
+### What was applied
+
+The two holding verticals keep the warning, because hard rule 8 requires it of
+them: `/nil-t2-filing-for-numbered-holding-corporations/` and
+`/nil-t2-filing-for-real-estate-holding-corporations/`.
+
+On the other eight the same section slot now carries the cost of **not** filing,
+with a vertical-specific angle each:
+
+| Vertical | New section-3 heading | Its own fourth card |
+|---|---|---|
+| Shelf | What the Unfiled Years Cost a Shelf Corporation | Nothing Can Be Done With It |
+| Dormant consulting | What an Unfiled Year Costs a Dormant Consulting Corporation | Winding Up Is Blocked |
+| Inactive trucking | What an Unfiled Year Costs an Owner-Operator Corporation | Going Back to Hauling Gets Harder |
+| Closed restaurant | What an Unfiled Year Costs a Closed Restaurant Corporation | The Registry Keeps the Entity |
+| Medicine PC | What an Unfiled Year Costs a Medicine Professional Corporation | A Buy-In or Sale Looks At It |
+| Dormant construction | What an Unfiled Season Costs a Dormant Construction Corporation | Closing the Company Waits |
+| E-commerce | What an Unfiled Year Costs an E-Commerce Corporation | Dissolution Waits on the Run |
+| Dormant IT consulting | What an Unfiled Bench Year Costs an IT Corporation | Closing It Down Waits |
+
+The slot was **repurposed rather than moved**. Reordering Elementor sections
+across eight live pages is a far riskier operation than rewriting six elements
+in place, and the visible result is identical.
+
+### No penalty wording was used, deliberately
+
+The new block says nothing about penalties anywhere. That keeps the Section 7.4
+qualification block out of play entirely, so there is no risk of splitting it
+across sections, which 7.4 forbids. The persuasion rests on four things that
+need no qualification: the year stays open, a written demand can follow, the
+Agency can assess on figures of its own, and dissolution is blocked without a
+clearance certificate.
+
+### Nothing was lost
+
+Each replaced card was checked against the page's own three-card checklist
+before shipping. All thirty-two disqualifiers still appear on their page; only
+their position changed. The $350.00 referral to gondaliyacpa.ca also survives
+in the price paragraph, the why-cards and the checklist.
+
+### The gate needed three passes, and the margin is now thin
+
+First build **0.612** (construction vs IT), because the "demand to file" and
+"cannot be dissolved" cards were near-identical across all eight. After
+diverging cards one, two and four per vertical: **0.602**. After rewording one
+FAQ answer that construction and IT shared verbatim: **0.599**. Pass, but with
+0.001 of headroom.
+
+**Construction and IT are now the structurally closest pair in the family and
+sit against the ceiling.** Measured directly: 961 of their roughly 2,350 visible
+tokens are template furniture shared by every F1 page — services shelf, geography
+paragraph, two stylesheets, price paragraph, JSON-LD, trust strip, CTA band.
+That is a floor of about 0.41 before a word of vertical copy is written, and
+both pages tell the same underlying story of a trade kept dormant for future
+work. **Any future edit to either page must re-run the 6(k) gate**, and new
+verticals in the trades or contracting space should be written against both.
+
+Live audit after publishing: no 7.4 banned phrase, no superlative, no bare
+T183, no FAQPage or HowTo, valid JSON-LD, correct price wording, on all ten.
