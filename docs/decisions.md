@@ -12252,3 +12252,85 @@ a natural 1439x549) to confirm the `:only-child` rule is still confined to
 Appended rather than edited in place: the superseded block is left above it
 with its own comment, since rewriting 5KB of live Additional CSS by hand to
 delete nine lines is how the header broke the first time.
+
+## 2026-11-19 — F1 batch 3: three more verticals, chosen from the plan's own keyword list
+
+### Where the three came from
+
+The plan names only five F1 example URLs at line 1139, and those are the five
+already live. The 215 vertical tokens it refers to live in a `cnf_entity`
+taxonomy that has **0 terms**, so there is no canonical list to work from.
+
+Plan **line 1230** is the next best source, and it is the plan's own: fourteen
+Family 1 keywords. Seven are not yet built:
+
+`nil t2 for real estate holding corporation`, `dormant it consulting
+corporation t2`, **`nil t2 for medicine professional corporation`**,
+`inactive law professional corporation t2`, `nil t2 for dentistry
+professional corporation`, **`dormant construction corporation t2 return`**,
+**`nil t2 for e-commerce corporation`**.
+
+The three in bold were taken. The reasoning for the four left:
+
+- **Law and dentistry professional corporations** are close neighbours of the
+  medicine one. Building all three in a single batch would have meant three
+  pages with the same structure and the same professional-corporation facts,
+  which the 6(k) gate would have punished. They are better written later, with
+  the medicine page in front of the writer to diverge from.
+- **IT consulting** overlaps the live `/nil-t2-filing-for-dormant-consulting-corporations/`
+  directly. Building it now is cannibalisation, not coverage.
+- **Real estate holding** is a hard rule 8 page (such a corporation is not nil)
+  and so largely restates `/nil-t2-filing-for-numbered-holding-corporations/`.
+
+### The three pages
+
+| ID | URL | Focus keyword | Distinguishing facts |
+|---|---|---|---|
+| 2720 | `/nil-t2-filing-for-medicine-professional-corporations/` | nil t2 for medicine professional corporation | Certificate of authorization, non-voting family shares, plan reconciliation, portfolio inside the corporation |
+| 2721 | `/nil-t2-filing-for-dormant-construction-corporations/` | dormant construction corporation t2 return | Statutory holdback, T5018, workers compensation account, equipment on Schedule 8 |
+| 2722 | `/nil-t2-filing-for-e-commerce-corporations/` | nil t2 for e-commerce corporation | Processor and marketplace balances, unsold stock, chargebacks, foreign buyers |
+
+Built the same way as batch 2: duplicates of 2682 patched by
+`build/f1/genops.py`, 71 ops in two calls each. All three inherited the
+`rank_math_add_faq_schema` fix, so none emitted FAQPage; confirmed on the live
+pages.
+
+### The similarity gate took three passes
+
+First build: **0.660** peak (e-commerce vs construction), five pairs over 0.60.
+The cause was mine — the three entries reused each other's boilerplate rather
+than only the template's. The repeated strings were the step bodies ("Confirm
+the Year-End", "Sign and Transmit"), the trust strip, the `chk_both` list, the
+"ordinary corporate return, taken by Gondaliya CPA…" sentence, the RC145 answer
+and the "no cap, each is its own T2…" answer.
+
+Second pass, after rewriting those per vertical: **0.602**, one pair left.
+Third pass, after diverging e-commerce's `chk_both`, step 4, strip item 2 and
+GST/HST answer: **0.581**. Full matrix across all eight F1 pages now peaks at
+0.581, against the 0.60 ceiling.
+
+Worth recording for the next batch: roughly 800 of each page's ~2,300 visible
+tokens are template furniture shared by every F1 page — the services shelf, the
+geography paragraph, the schedule-table and FAQ stylesheets, the price
+paragraph and the JSON-LD. That is a **floor of about 0.50** before a word of
+vertical copy is written. The budget for shared phrasing between two verticals
+is therefore much smaller than it looks, and copy for a new batch should be
+written against the other entries, not adapted from one of them.
+
+### Audited before publishing and again live
+
+`build/f3/audit_visible.py` on all three templates: 117 strings each, 0
+failures. Live: no 7.4 banned phrase, no superlative, no bare T183, no
+unqualified "no penalty", no FAQPage, HowTo or aggregateRating, two valid
+JSON-LD blocks each, one H1 each, ten FAQ items each, `$300.00 plus HST per tax
+year` throughout, overflow at `$350.00 plus HST per year`.
+
+Measured at 1440px on all three: intro photograph 570x428 at its natural 4:3,
+cell matching, header logo 204x78 — the same checks the image fix earlier today
+introduced.
+
+Internal links: 40 distinct, all 200 except `/community-commitment/` and
+`/engagement-terms/`, the two site-wide footer 404s already logged.
+
+F1 is now **8 of 215**, which is 8 of the 10-page test batch the
+remaining-pages file recommends before committing to the other 205.

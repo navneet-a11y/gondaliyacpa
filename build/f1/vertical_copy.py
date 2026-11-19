@@ -1117,4 +1117,642 @@ VERTICALS = {
   ],
  },
 
+
+
+'medicine-professional-corporations': {
+  'name':   'Medicine Professional Corporations',
+  'short':  'medicine professional corporation',
+  'plural': 'medicine professional corporations',
+  'kw':     'nil t2 for medicine professional corporation',
+  'title':  'Medicine Professional Corporation Nil T2 | Inactive Years',
+  'desc':   'A physician professional corporation files for every year it '
+            'exists. When a year with no billings is nil, and when a portfolio '
+            'inside it is not.',
+
+  'h1':   'Nil T2 Filing for Medicine Professional Corporations',
+  'lede': 'A year with nothing billed through the corporation is still a tax '
+          'year. Where nothing was earned and nothing was held, the return is '
+          '$300.00 plus HST per tax year.',
+
+  'intro_h': 'The Year a Physician Stops Billing Through the Corporation',
+  'intro': (
+    'Medicine professional corporations go quiet for ordinary reasons. A '
+    'parental leave runs across a fiscal year. A fellowship abroad takes a '
+    'physician off the provincial plan. A locum practice winds down into a '
+    'salaried hospital appointment, and the billings that used to route '
+    'through the corporation now land on a personal T4 instead.',
+    'The corporation notices none of that. It holds a certificate of '
+    'authorization from the provincial college, it keeps its own fiscal year '
+    'end, and it owes a T2 for every one of those years. Where the '
+    'corporation billed nothing, paid nobody and held nothing that earned, '
+    'that is a nil year, filed here at $300.00 plus HST per tax year.'),
+
+  'notnil_h': 'When a Medicine Professional Corporation Is Not Nil',
+  'notnil_boxes': [
+    ('A Portfolio Sits Inside the Corporation',
+     'Interest, dividends or a realised gain on investments the corporation '
+     'owns is income to it, whoever manages them.'),
+    ('Billings Settled Late',
+     'A year-end reconciliation from the provincial plan, or a shadow '
+     'billing payment, counts in the year it arrives.'),
+    ('A Family Shareholder Was Paid',
+     'Salary or a dividend to a spouse or adult child holding non-voting '
+     'shares is activity.'),
+    ('The Practice Changed Hands',
+     'Goodwill, a patient list or examination equipment transferred to a '
+     'buyer is a disposal.'),
+  ],
+  'notnil_text': (
+    'The portfolio is what catches physicians out. Retained earnings left '
+    'inside a professional corporation are very often invested, and the '
+    'moment those holdings pay interest or a dividend the corporation has '
+    'income, even in a year its physician saw no patients through it. '
+    'Passive investment income also carries treatment of its own, which a '
+    'nil return does not provide.',
+    'Such a year is an ordinary corporate return. Gondaliya CPA Professional '
+    'Corporation takes it at gondaliyacpa.ca, where the fee is $350.00 plus '
+    'HST per year. Only a year in which the corporation neither earned nor '
+    'paid anything belongs on this page, at $300.00 plus HST per tax year.'),
+
+  'sched_h': 'Which T2 Schedules a Medicine Professional Corporation Files',
+  'sched_rows': [
+    ('Schedule 100', 'Balance sheet information', 'Required',
+     'Share capital and retained earnings from practising years stay on the '
+     'balance sheet whether or not the year was active.'),
+    ('Schedule 125', 'Income statement information', 'Required',
+     'Reports nil professional income and nil expenses where no clinical '
+     'work was billed through the corporation.'),
+    ('Schedule 141', 'Notes checklist', 'Required',
+     'Travels with Schedules 100 and 125 and names whoever compiled them.'),
+    ('Schedule 50', 'Shareholder information', 'Required',
+     'Medicine professional corporations commonly issue non-voting shares to '
+     'a spouse or adult children. Every holder at 10% or more appears here.'),
+    ('Schedule 24', 'First-time filer information', 'First return only',
+     'Attached to the very first T2, filed after incorporation and the issue '
+     'of the certificate of authorization.'),
+    ('Schedule 8', 'Capital cost allowance', 'While equipment remains',
+     'Examination equipment, office furniture and leasehold improvements are '
+     'depreciable property until disposed of.'),
+  ],
+  'sched_note': 'Source: the schedule requirements the Canada Revenue Agency '
+                'sets for a T2 return, applied to a professional corporation '
+                'that billed nothing through itself in the tax year. Last '
+                'reviewed November 19, 2026.',
+  'sched_boxes': [
+    ('Investment Income Ends a Nil Year',
+     'One dividend or interest credit inside the corporation puts a figure on '
+     'Schedule 125 and makes the year an ordinary return.'),
+    ('The College Certificate Is Separate',
+     'A certificate of authorization renews on the college cycle. The T2 does '
+     'not renew it and the college does not file it.'),
+    ('Retained Earnings Are Not Activity',
+     'A balance carried forward from practising years sits on Schedule 100 '
+     'without making the year active, provided it earned nothing.'),
+  ],
+  'chk_yes': [
+    'Nothing was billed to the provincial plan through the corporation',
+    'No private, insurance or third-party fee was invoiced by it',
+    'No investment it owns paid interest, a dividend or a gain',
+    'No salary or dividend went to any shareholder',
+    'No equipment, goodwill or patient list was sold or transferred',
+  ],
+  'chk_no': [
+    'A reconciliation or shadow billing payment arrived from the plan',
+    'A portfolio inside the corporation paid interest, dividends or a gain',
+    'A spouse or adult child shareholder drew salary or a dividend',
+    'The practice, its goodwill or its patient list was sold',
+    'The corporation paid rent, staff or an association fee',
+  ],
+  'chk_both': [
+    'A T2 for every tax year the corporation exists',
+    'A T183CORP signed by an authorised signing officer, per tax year',
+    'Schedule 50, naming every shareholder at 10% or more',
+    'The certificate of authorization, renewed with the college separately',
+    'A record of what was billed, which decides the year either way',
+  ],
+
+  'why_h': 'Why Medicine Professional Corporations Use This Service',
+  'why': [
+    ('Built for the Years Off',
+     'Leave, a fellowship or a salaried appointment leaves the corporation '
+     'intact and owing returns. Those are the years this service covers.'),
+    ('The Portfolio Test Comes First',
+     'Every year is measured against investment income before anything is '
+     'charged, since that is what usually ends a nil year here.'),
+    ('A Flat Fee Per Year',
+     'Each quiet year is $300.00 plus HST per tax year. No retainer, no '
+     'hourly billing, no minimum engagement.'),
+    ('Earning Years Are Referred On',
+     'Where billings or portfolio income appear, the year goes to the full '
+     'corporate service.'),
+  ],
+  'strip': [
+    ('A Quiet Year Still Files',
+     'The obligation follows the corporation, not the practice.'),
+    ('Filed in Sequence',
+     'Earlier years are transmitted before later ones so retained earnings '
+     'reconcile.'),
+    ('No Paper, No Courier',
+     'T183CORP signatures are captured online through an access-controlled '
+     'portal.'),
+  ],
+
+  'svc_h': 'What a Medicine Professional Corporation Usually Needs Next',
+  'proc_h': 'How a Medicine Professional Corporation Files',
+  'proc_lede': 'Four steps, taken from the filing form, with the investment '
+               'test first.',
+  'proc_note': 'Most physicians complete this between clinics:',
+  'steps': [
+    ('Test the Year for Income',
+     'Billings, private fees and anything a portfolio inside the corporation '
+     'paid are measured before the year is treated as nil.'),
+    ('Agree the Fiscal Year End',
+     'Professional corporations frequently run a non-calendar year end. It '
+     'has to agree with the Agency record or the return will not transmit.'),
+    ('Assemble the Return',
+     'Schedules 100, 125, 141 and 50 go on the T2, with Schedule 24 added '
+     'where this is the first one.'),
+    ('Sign and File',
+     'A T183CORP is signed for each year, the returns go across, and the CRA '
+     'confirmation reaches you within 3 business days.'),
+  ],
+
+  'price_h': 'Nil T2 Filing Cost for a Medicine Professional Corporation',
+  'price_eyebrow': 'One Fee Per Tax Year',
+  'price_text': (
+    'Nil T2 filing is $300.00 plus HST per tax year. The fee covers the T2, '
+    'the GIFI schedules where required, Schedule 50, Schedule 24 on a first '
+    'return, the T183CORP package with secure e-signing, CPA review before '
+    'transmission, electronic transmission by a registered EFILE electronic '
+    'filer, one corrected transmission where the Agency rejects the first, '
+    'and the CRA confirmation emailed within 3 business days. A year with '
+    'billings or investment income inside the corporation is $350.00 plus HST '
+    'per year at gondaliyacpa.ca.'),
+
+  'geo_h': 'Professional Corporation Filing Across Canada',
+  'cta_h': 'File the Quiet Years and Keep the Corporation Current',
+
+  'faq': [
+   ('I was on parental leave all year. Is the corporation nil?',
+    'It can be, provided nothing was billed through it and nothing it owns '
+    'earned. Leave interrupts the practice, not the filing obligation, so the '
+    'T2 is still due.'),
+   ('My corporation holds investments. Does that end the nil year?',
+    'Yes, as soon as they pay. Interest, a dividend or a realised gain is '
+    'income to the corporation, which makes the year a full T2 at $350.00 '
+    'plus HST per year at gondaliyacpa.ca.'),
+   ('I took a salaried hospital job. Do I still file?',
+    'Yes, every year the corporation exists. Employment income is yours '
+    'personally and has no bearing on the corporate return, which runs until '
+    'the corporation is dissolved.'),
+   ('Does the college certificate of authorization affect the T2?',
+    'No. The certificate renews on the college cycle and the T2 runs on the '
+    'fiscal year. Neither filing substitutes for the other.'),
+   ('My spouse holds non-voting shares. Does that change anything?',
+    'Only on Schedule 50, which names every shareholder at 10% or more. '
+    'Holding shares is not activity. Being paid during the year is.'),
+   ('What if I only did a few locum shifts, billed personally?',
+    'Where the billings went to you rather than through the corporation, the '
+    'corporate year can still be nil. What decides it is which entity earned, '
+    'not which person worked.'),
+   ('A plan reconciliation arrived two years after I stopped. Which year?',
+    'The year of receipt. That year becomes an ordinary return, and the years '
+    'on either side of it can still be nil.'),
+   ('How many quiet years can be filed at once?',
+    'As many as are outstanding. One T2 and one T183CORP per year, each at '
+    '$300.00 plus HST per tax year, sent in date order from the oldest.'),
+   ('Can I wind the corporation up instead of filing?',
+    'Winding up does not replace the outstanding years. No clearance '
+    'certificate is issued while a year is missing, and the wind-up itself '
+    'adds a final T2 due six months after the dissolution date.'),
+   ('Who signs when I am the only physician and shareholder?',
+    'You do, as authorised signing officer, once per tax year. Several years '
+    'can be signed in a single sitting.'),
+  ],
+ },
+
+ 'dormant-construction-corporations': {
+  'name':   'Dormant Construction Corporations',
+  'short':  'dormant construction corporation',
+  'plural': 'dormant construction corporations',
+  'kw':     'dormant construction corporation t2 return',
+  'title':  'Dormant Construction Corporation T2 Return | Nil Filing',
+  'desc':   'A trades corporation with no jobs in the year still files a T2. '
+            'Which years are nil, why a released holdback is not, and what '
+            'filing costs.',
+
+  'h1':   'Nil T2 Filing for Dormant Construction Corporations',
+  'lede': 'A season with no contracts is still a tax year. Where no work was '
+          'invoiced and no holdback was released, the return is $300.00 plus '
+          'HST per tax year.',
+
+  'intro_h': 'The Trades Corporation That Stopped Taking Jobs',
+  'intro': (
+    'Construction corporations go dormant between phases of a working life. '
+    'A contractor takes a payroll job with a larger builder. A partnership '
+    'splits and one side keeps bidding while the other stops. A general '
+    'contractor sells the trailer and the tools and never formally closes '
+    'the entity that invoiced for them.',
+    'The corporation carries on existing, and the Canada Revenue Agency '
+    'expects a T2 for each year it does. A season with no contracts invoiced, '
+    'no subcontractors paid and no holdback released is a nil year at $300.00 '
+    'plus HST per tax year. The entity stays on the registry, ready to bid '
+    'again, with its filing history unbroken.'),
+
+  'notnil_h': 'When a Dormant Construction Corporation Is Not Nil',
+  'notnil_boxes': [
+    ('A Holdback Was Released',
+     'Statutory holdback from a job finished years earlier counts as revenue '
+     'the year the owner finally pays it out.'),
+    ('Equipment or a Vehicle Was Sold',
+     'A truck, an excavator, scaffolding or a trailer sold or traded is a '
+     'disposal with a gain or a terminal loss.'),
+    ('A Subcontractor Was Paid',
+     'Any payment to a subcontractor is activity, and it brings a T5018 '
+     'contract payment information return with it.'),
+    ('A Deficiency Claim Was Settled',
+     'Money paid or received over warranty work on a finished project moves '
+     'through the corporation.'),
+  ],
+  'notnil_text': (
+    'Holdbacks are the usual reason a season a contractor thought was empty '
+    'turns out not to be. Statutory holdback on a substantial project can be '
+    'released long after the last crew left the site, and it belongs to '
+    'whichever year the cheque clears rather than the year the work was '
+    'done.',
+    'Any of those makes the year an ordinary corporate return, taken by '
+    'Gondaliya CPA Professional Corporation at gondaliyacpa.ca for $350.00 '
+    'plus HST per year. The empty seasons in between belong on this page at '
+    '$300.00 plus HST per tax year.'),
+
+  'sched_h': 'Which T2 Schedules a Dormant Construction Corporation Files',
+  'sched_rows': [
+    ('Schedule 100', 'Balance sheet information', 'Required',
+     'A dormant trades corporation usually still shows equipment, a '
+     'shareholder loan or an unpaid supplier on its books.'),
+    ('Schedule 125', 'Income statement information', 'Required',
+     'Reports nil contract revenue and nil job costs across a season with no '
+     'work invoiced.'),
+    ('Schedule 141', 'Notes checklist', 'Required',
+     'Accompanies Schedules 100 and 125 and records who compiled the '
+     'figures.'),
+    ('Schedule 50', 'Shareholder information', 'Required',
+     'Trades corporations are often held by two or three partners, and each '
+     'at 10% or more appears here.'),
+    ('Schedule 24', 'First-time filer information', 'First return only',
+     'Goes with the first T2 after incorporation, which for a long-dormant '
+     'contractor is well in the past.'),
+    ('Schedule 8', 'Capital cost allowance', 'While equipment is owned',
+     'Trucks, excavators, trailers and tools stay depreciable property until '
+     'sold or scrapped.'),
+  ],
+  'sched_note': 'Source: the schedule requirements the Canada Revenue Agency '
+                'sets for a T2 return, applied to a construction corporation '
+                'that invoiced no contracts in the tax year. Last reviewed '
+                'November 19, 2026.',
+  'sched_boxes': [
+    ('A Released Holdback Is Revenue',
+     'It belongs to the year of receipt, not the year the work finished, and '
+     'it takes that year out of nil.'),
+    ('T5018 Follows Subcontractor Payments',
+     'Paying a subcontractor brings an information return of its own, due six '
+     'months after the reporting period ends.'),
+    ('Workers Compensation Reports Separately',
+     'A provincial board account expects its own reporting until closed with '
+     'the board. The T2 does not close it.'),
+  ],
+  'chk_yes': [
+    'No contract, progress draw or change order was invoiced',
+    'No holdback from any earlier project was released to the corporation',
+    'No subcontractor, labourer or supplier was paid by it',
+    'No truck, machine, trailer or tool was sold, traded or scrapped',
+    'No warranty or deficiency claim was settled either way',
+  ],
+  'chk_no': [
+    'A statutory holdback was released, however old the project',
+    'Any subcontractor payment was made, which also brings a T5018',
+    'Equipment or a vehicle was sold, traded in or written off',
+    'A progress draw or final invoice went out on an old job',
+    'A deficiency or warranty settlement moved money',
+  ],
+  'chk_both': [
+    'A T2 for every tax year until the corporation is dissolved',
+    'A T183CORP signed by an authorised signing officer, per tax year',
+    'The GST/HST account, which expects returns until it is closed',
+    'The workers compensation account, closed with the provincial board',
+    'Schedule 8, for as long as any equipment is still owned',
+  ],
+
+  'why_h': 'Why Dormant Construction Corporations Use This Service',
+  'why': [
+    ('Built for Seasons With No Work',
+     'A year between contracts is the kind of year this service files, and it '
+     'keeps the entity ready to bid again.'),
+    ('Holdbacks Are Settled First',
+     'Every season is measured against released holdback before it is treated '
+     'as nil, because that is the usual surprise.'),
+    ('A Flat Fee Per Season',
+     'Each dormant year is $300.00 plus HST per tax year. Four of them is '
+     'four fees, with nothing billed by the hour.'),
+    ('Working Years Are Referred On',
+     'Invoicing, a disposal or subcontractor payments route the year to the '
+     'full corporate service.'),
+  ],
+  'strip': [
+    ('Dormant Is Not Closed',
+     'The filing obligation runs until the registry says the corporation is '
+     'gone.'),
+    ('Earliest Season First',
+     'Years are transmitted in sequence so capital cost allowance carries '
+     'forward intact.'),
+    ('Signed From the Truck',
+     'T183CORP signatures are captured online, with no printing and no office '
+     'visit.'),
+  ],
+
+  'svc_h': 'What a Dormant Construction Corporation Usually Needs Next',
+  'proc_h': 'How a Dormant Construction Corporation Files',
+  'proc_lede': 'Four steps from the filing form. The holdback question is '
+               'settled before anything else.',
+  'proc_note': 'Most contractors finish this from a phone on a lunch break:',
+  'steps': [
+    ('Check for Released Holdback',
+     'Holdback paid out during the year, from any project however old, takes '
+     'that year out of nil.'),
+    ('Match the Year-End on File',
+     'The fiscal year-end the Agency holds has to agree with the return, or '
+     'the transmission comes back rejected.'),
+    ('Prepare the Return and Schedules',
+     'The T2 with Schedules 100, 125, 141 and 50, plus Schedule 8 while '
+     'equipment is still owned.'),
+    ('Sign Each Year and File',
+     'A T183CORP goes with every year. Once transmitted, the CRA confirmation '
+     'arrives by email inside 3 business days.'),
+  ],
+
+  'price_h': 'Nil T2 Filing Cost for a Dormant Construction Corporation',
+  'price_eyebrow': 'One Fee Per Tax Year',
+  'price_text': (
+    'Nil T2 filing is $300.00 plus HST per tax year. The fee covers the T2, '
+    'the GIFI schedules where required, Schedule 50, Schedule 24 on a first '
+    'return, the T183CORP package with secure e-signing, CPA review before '
+    'transmission, electronic transmission by a registered EFILE electronic '
+    'filer, one corrected transmission where the Agency rejects the first, '
+    'and the CRA confirmation emailed within 3 business days. A year with a '
+    'released holdback, an equipment sale or subcontractor payments is '
+    '$350.00 plus HST per year at gondaliyacpa.ca.'),
+
+  'geo_h': 'Construction Corporation Filing Across Canada',
+  'cta_h': 'File the Dormant Seasons and Keep the Corporation Bid-Ready',
+
+  'faq': [
+   ('I took a payroll job and parked the company. Does it still file?',
+    'Yes, every year it exists. Your T4 income is personal. The corporation '
+    'owes its own T2 until dissolution, and a season with no contracts in it '
+    'is nil.'),
+   ('A holdback from an old job was finally released. Is that year nil?',
+    'No. Released holdback is contract revenue in the year of receipt, '
+    'whatever year the work was done, which makes that one an ordinary '
+    'return.'),
+   ('I sold the truck and the trailer. What does that do?',
+    'It is a disposal. Against the depreciated value it produces either a '
+    'recapture or a terminal loss, the year stops being nil, and the figures '
+    'belong on Schedule 8.'),
+   ('I paid one subcontractor for a small favour. Does that matter?',
+    'Twice over. The payment is activity, so the year is not nil, and it also '
+    'brings a T5018 contract payment information return of its own.'),
+   ('Does my workers compensation account close with the T2?',
+    'No. A provincial board account keeps expecting its own reporting until '
+    'you close it with the board. The corporate return has no effect on it.'),
+   ('What about the GST/HST number on a dormant company?',
+    'That account is separate and keeps expecting returns until it is closed '
+    'on Form RC145. A dormant corporation with an open number still has '
+    'obligations of its own.'),
+   ('There is still a shareholder loan on the books. Is the year nil?',
+    'Usually yes. A loan balance that neither grew nor shrank is a balance '
+    'sheet figure on Schedule 100, not activity. An advance or a repayment '
+    'during the year is.'),
+   ('My partner and I each own half. Who signs?',
+    'One authorised signing officer signs per tax year. Both of you still '
+    'appear on Schedule 50 at 50% each.'),
+   ('Can I keep the company dormant and bid again in a few years?',
+    'Yes, and that is the usual reason to file rather than dissolve. An '
+    'unbroken filing history is what keeps the entity usable for bonding and '
+    'prequalification later.'),
+   ('How far back can unfiled seasons be filed?',
+    'As far back as they go. Each is its own T2 at $300.00 plus HST per tax '
+    'year with its own T183CORP, transmitted earliest first so equipment '
+    'balances reconcile.'),
+  ],
+ },
+
+ 'e-commerce-corporations': {
+  'name':   'E-Commerce Corporations',
+  'short':  'e-commerce corporation',
+  'plural': 'e-commerce corporations',
+  'kw':     'nil t2 for e-commerce corporation',
+  'title':  'E-Commerce Corporation Nil T2 | Closed Online Stores',
+  'desc':   'The store is switched off but the corporation is not. Which years '
+            'are nil, why a processor payout is not, and what each year costs '
+            'to file.',
+
+  'h1':   'Nil T2 Filing for E-Commerce Corporations',
+  'lede': 'Switching off a storefront does not end the corporation behind it. '
+          'A year with nothing sold and nothing paid out is $300.00 plus HST '
+          'per tax year.',
+
+  'intro_h': 'The Storefront Went Dark, the Corporation Did Not',
+  'intro': (
+    'Online stores stop quietly. A seller account is deactivated, a '
+    'subscription lapses, the last of the stock is cleared at cost, and the '
+    'domain renews on its own for another year or two. Nothing is filed to '
+    'mark the end, because shutting a storefront asks for no filing.',
+    'The corporation that held the seller account remains registered, and it '
+    'owes a T2 for every year it does. Where nothing sold, no processor paid '
+    'out and no stock moved, that is a nil year at $300.00 plus HST per tax '
+    'year.'),
+
+  'notnil_h': 'When an E-Commerce Corporation Is Not Nil',
+  'notnil_boxes': [
+    ('A Processor Paid Out',
+     'A residual transfer from a payment processor or a marketplace, months '
+     'after the last order, counts in the year it lands.'),
+    ('Remaining Stock Was Cleared',
+     'Liquidating inventory, selling it to another seller or writing it off '
+     'changes the books.'),
+    ('A Refund or Chargeback Settled',
+     'Money going back to a customer, or a chargeback resolved either way, '
+     'moves through the corporation.'),
+    ('The Store or Domain Was Sold',
+     'Selling the brand, the domain, the customer list or the seller account '
+     'is a disposal.'),
+  ],
+  'notnil_text': (
+    'Payment processors are the usual complication. A balance can sit with a '
+    'processor or a marketplace for months after the storefront goes dark, '
+    'held back against refunds and chargebacks, and its release is revenue to '
+    'the corporation in that year. A foreign currency balance converted on '
+    'the way out behaves the same.',
+    'Where a year holds one of those it stops being nil and becomes a full '
+    'return. Gondaliya CPA Professional Corporation deals with it from '
+    'gondaliyacpa.ca, charged at $350.00 plus HST per year. Anything '
+    'quieter than that is priced on this page.'),
+
+  'sched_h': 'Which T2 Schedules an E-Commerce Corporation Files',
+  'sched_rows': [
+    ('Schedule 100', 'Balance sheet information', 'Required',
+     'Remaining stock, a processor balance or a shareholder loan sits on the '
+     'balance sheet after the store closes.'),
+    ('Schedule 125', 'Income statement information', 'Required',
+     'Reports nil sales and nil cost of goods across a year in which no order '
+     'shipped.'),
+    ('Schedule 141', 'Notes checklist', 'Required',
+     'Sits alongside Schedules 100 and 125 and identifies the preparer.'),
+    ('Schedule 50', 'Shareholder information', 'Required',
+     'An online store often has two or three founders. Anyone holding 10% or '
+     'more of the shares is named on it.'),
+    ('Schedule 24', 'First-time filer information', 'First return only',
+     'Attached to the very first T2 the corporation ever files, usually the '
+     'year the seller account opened.'),
+    ('Schedule 8', 'Capital cost allowance', 'While assets remain',
+     'Photography gear, packing equipment and a purchased platform licence '
+     'stay depreciable property until disposed of.'),
+  ],
+  'sched_note': 'Source: what the Canada Revenue Agency requires on a T2, '
+                'read against a seller account that shipped nothing all '
+                'year. Last reviewed November 19, 2026.',
+  'sched_boxes': [
+    ('A Processor Balance Is Still Money',
+     'Funds held by a processor belong to the corporation and show on '
+     'Schedule 100 until released.'),
+    ('Unsold Stock Stays on the Books',
+     'Inventory nobody has cleared is an asset. Holding it is not activity. '
+     'Selling or writing it off is.'),
+    ('Foreign Sales Do Not Change the T2',
+     'Where the buyers were does not decide the return. What the corporation '
+     'earned decides it.'),
+  ],
+  'chk_yes': [
+    'No order was sold, shipped or fulfilled',
+    'No payment processor or marketplace released funds to the corporation',
+    'No remaining stock was sold, liquidated or written off',
+    'No refund, chargeback or dispute was settled',
+    'The store, domain, brand or seller account was not sold',
+  ],
+  'chk_no': [
+    'A processor or marketplace transferred a residual balance out',
+    'Leftover inventory was cleared, sold on or written down',
+    'A customer refund or a chargeback was settled either way',
+    'The domain, brand or customer list changed hands',
+    'An advertising rebate or platform credit reached the corporation',
+  ],
+  'chk_both': [
+    'One T2 per tax year, right up to the day the corporation is struck',
+    'A signed T183CORP covering each of those years',
+    'A closed GST/HST number, which shutting the storefront did not close',
+    'Any processor balance, shown on Schedule 100 until it is released',
+    'Proof of the last shipped order, which fixes the first dark year',
+  ],
+
+  'why_h': 'Why E-Commerce Corporations Use This Service',
+  'why': [
+    ('Built for Stores That Stopped',
+     'The years between the last order and dissolution are what this service '
+     'covers.'),
+    ('Payout Channels Are Read First',
+     'Every year is measured against marketplace and processor transfers '
+     'before it is treated as nil.'),
+    ('A Flat Fee Per Year',
+     'Each dark year costs $300.00 plus HST per tax year. Nothing is billed '
+     'by the hour and nothing is held on retainer.'),
+    ('Trading Years Are Referred On',
+     'Sales, a payout or a stock clearance route the year to the full '
+     'corporate service.'),
+  ],
+  'strip': [
+    ('Dark Is Not Dissolved',
+     'Until the registry removes the corporation, the returns keep coming '
+     'due.'),
+    ('Oldest Dark Year Leads',
+     'Filing in date order keeps stock and held balances reconciling across '
+     'the run.'),
+    ('Filed From Anywhere',
+     'T183CORP signatures are captured online, wherever the seller happens to '
+     'be.'),
+  ],
+
+  'svc_h': 'What an E-Commerce Corporation Usually Needs Next',
+  'proc_h': 'How an E-Commerce Corporation Files',
+  'proc_lede': 'The filing form runs in four steps, and reading the payout '
+               'channels is the first of them.',
+  'proc_note': 'Most sellers finish this in a single sitting:',
+  'steps': [
+    ('Read Every Payout Channel',
+     'Processor, marketplace and advertising accounts are read for transfers '
+     'before the year is treated as nil.'),
+    ('Match the Fiscal Year End',
+     'A year end that disagrees with the Agency record will bounce the '
+     'transmission straight back.'),
+    ('Build the Return',
+     'A T2 carrying Schedules 100, 125, 141 and 50, together with any stock '
+     'or processor balance still outstanding.'),
+    ('Sign and Send',
+     'One signature per year on the T183CORP. Confirmation from the Agency '
+     'reaches your inbox inside 3 business days.'),
+  ],
+
+  'price_h': 'Nil T2 Filing Cost for an E-Commerce Corporation',
+  'price_eyebrow': 'One Fee Per Tax Year',
+  'price_text': (
+    'Nil T2 filing is $300.00 plus HST per tax year. The fee covers the T2, '
+    'the GIFI schedules where required, Schedule 50, Schedule 24 on a first '
+    'return, the T183CORP package with secure e-signing, CPA review before '
+    'transmission, electronic transmission by a registered EFILE electronic '
+    'filer, one corrected transmission where the Agency rejects the first, '
+    'and the CRA confirmation emailed within 3 business days. A year with '
+    'sales, a processor payout or a stock clearance is $350.00 plus HST per '
+    'year at gondaliyacpa.ca.'),
+
+  'geo_h': 'Online Store Corporation Filing Across Canada',
+  'cta_h': 'File the Dark Years and Close the Store Properly',
+
+  'faq': [
+   ('My Shopify store closed two years ago. What do I owe?',
+    'A T2 for each of those years and for every year since, until the '
+    'corporation is dissolved. A year with nothing sold and nothing paid out '
+    'is nil at $300.00 plus HST per tax year.'),
+   ('Stripe released a held balance last year. Is that year nil?',
+    'No. A released balance is the corporation receiving its own money as '
+    'revenue in that year, which makes it an ordinary return.'),
+   ('I still have stock in a spare room. Does that stop a nil year?',
+    'No. Holding inventory is not activity. It sits on Schedule 100 as an '
+    'asset. Selling it, clearing it or writing it off is what ends the nil '
+    'year.'),
+   ('All my customers were in the United States. Does that change the T2?',
+    'No. Where the buyers were does not decide the corporate return. A '
+    'Canadian corporation files a T2 on what it earned, wherever it earned '
+    'it.'),
+   ('The domain renews automatically. Does that count as activity?',
+    'A cost the corporation pays is activity and takes the year out of nil. A '
+    'renewal a shareholder pays personally does not.'),
+   ('What happens to the GST/HST number?',
+    'It is a separate account with obligations of its own, and Form RC145 '
+    'is what closes it. Taking the storefront offline does nothing to it.'),
+   ('I sold the brand and the customer list. Which year is that?',
+    'The year of the sale, which is a disposal and so a full return. The '
+    'years on either side of it can still be nil.'),
+   ('There are two of us who founded it. Who signs?',
+    'One authorised signing officer signs per tax year. Both founders still '
+    'appear on Schedule 50 where each holds 10% or more.'),
+   ('Can I dissolve without filing the dark years?',
+    'Dissolution does not clear them. No clearance certificate is issued '
+    'while a year is missing, and winding up adds one more T2, due six months '
+    'after the dissolution date.'),
+   ('How many unfiled years can go in at once?',
+    'There is no limit. Every outstanding year gets a T2 of its own and a '
+    'T183CORP of its own, priced at $300.00 plus HST per tax year, and they '
+    'go across oldest to newest.'),
+  ],
+ },
+
 }
