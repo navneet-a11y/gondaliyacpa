@@ -11979,3 +11979,62 @@ review with Sharad Gondaliya. And the plan's F1 meta pattern at line 1162
 specifies `$300.00 Including HST`; the page uses `plus HST` to match every
 other live page, keeping it inside the pending HST sweep rather than creating
 a 215-page exception.
+
+## 2026-11-19 — F1 published, and Navneet's five fixes applied live
+
+Navneet imported the template into draft 2682 and published it. Five issues
+off the live page, all now fixed on it and in the generator.
+
+### Fixed in Additional CSS, for every vertical
+
+**The published date under the H1.** Astra prints its single-post meta there.
+Hidden with `.single-nil_vertical .entry-meta`, the same way the city hubs
+hide theirs. The body class is `single-nil_vertical`, checked on the rendered
+page rather than assumed. The only date left in visible text is the
+last-reviewed stamp under the schedule table, which the plan requires.
+
+**The button pairs.** They sat in two-column grids, so in a narrow cell they
+wrapped to two rows and each button sized to its own text, which read as two
+misaligned buttons. Any container holding buttons directly is now a wrapping
+flex row with a 14px gap and the buttons size to content.
+
+### Fixed on the page, in 26 layout operations
+
+**Twelve service cards cut to six**, with Navneet's copy. Every target is a
+national service page the home page already links to, read off the live home
+page rather than guessed: `/nil-t2-filing/`, `/catch-up-nil-t2-filing/`,
+`/dormant-corporation-filing/`, `/final-t2-before-dissolution/`,
+`/t2-short-filing/`, `/inactive-holding-corporation-t2-filing/`.
+
+The six kept are the six that sat bare in the grid; the three wrapped in
+containers were removed along with the last three. Mixing wrapped and bare
+cards would have given two different paddings in one grid.
+
+**The team photograph** is back in the left of the intro. The source carries
+it as a container background, and `set_image` is refused on a container, so
+it goes in as an image widget pointing at attachment 273.
+
+**The geography section** read as a link dump: "Jurisdiction pages: a, b, c.
+City pages: d, e, f". Rewritten as three paragraphs where each link sits in a
+sentence that says something -- that incorporation changes the registry and
+not the return, that the T2 is federal and identical, and that Quebec and
+Alberta add a provincial return the fee does not cover.
+
+### The stale lock, again
+
+The first two attempts were refused with "Navneet Singh has post 2682 open in
+the editor", once while he had it open and once after he closed it. Deleting
+the post's `_edit_lock` meta cleared it and the write went through
+immediately. That is faster than the 10 to 15 minutes of retries the city
+hubs needed, and worth doing first next time.
+
+### Verified on the live page
+
+Six cards with the right titles, all six national links present, all seven
+removed card titles gone, the photograph served, the new geography copy in
+place and the old link dump gone. Banned-phrase sweep over the rendered text
+is clean, the EFILE wording and the not-nil statement are both present, and
+the price reads `$300.00 plus HST` in all ten places.
+
+Dropping the six cards also took the generated template from 131 KB to
+109 KB.
