@@ -12409,3 +12409,62 @@ professional corporations, dentistry professional corporations, and the two
 that were never on line 1230 in the first place. Law and dentistry should be
 written with the medicine page open alongside, and separately rather than in
 one batch, for the reason the batch-3 entry gives.
+
+## 2026-11-19 — F1 intro sections rewritten in the gondaliyacpa.ca register
+
+Navneet: *"intro headings are so bad. learn from gondaliyacpa industry intro's
+and description in intro"*, with the OnlyFans page quoted as the model, and
+then: *"yes agreed those too yours are riddles"*.
+
+### What was wrong
+
+All ten F1 intro headings were literary, not commercial. "Holding Property Is
+Not the Same as Earning From It", "The Storefront Went Dark, the Corporation
+Did Not", "The Years Between Closing and Dissolving". They read as aphorisms,
+carried no keyword, named no audience and asked the reader to decode them
+before learning anything. The bodies followed suit: third-person description
+of a situation rather than second-person address with an offer in it.
+
+### The model, read off the live sister site
+
+`gondaliyacpa.ca/accountant-for-<industry>/` runs the same section on every
+industry page:
+
+- **H2:** `AFFORDABLE <service> for <audience>` — "AFFORDABLE Tax & Accounting
+  Services for OnlyFans Creators", "AFFORDABLE Plumber Tax Accountant".
+- **Paragraph one:** the reader's own situation in concrete nouns, the pain
+  named plainly, then the firm and what it provides.
+- **Paragraph two:** `Whether you <A>, <B>, <C> or <D>` — four sub-segments —
+  then the named deliverables (GST/HST, T5018, Class 10, CRA compliance) and
+  a closing line about the outcome.
+
+### What was applied
+
+Every F1 vertical now carries `AFFORDABLE Nil T2 Filing for <Plural>` as its
+intro H2, which also puts the primary keyword in an H2 on every page for the
+first time. Paragraph one names the entity's real state and the price;
+paragraph two runs the "Whether ..." four-way list, the test applied before a
+year is treated as nil, the schedules or forms actually filed, and a closing
+fact.
+
+### "AFFORDABLE" was checked, not assumed
+
+The word is not in the plan's Section 7.4 table and not in CLAUDE.md rule 4,
+which bars cheapest, best, fastest, guaranteed and risk-free. The 2026-10-07
+entry above already cleared it for `/services/` and `/reviews/` on the
+condition that it attaches to a provable fact rather than a comparison.
+Verified on all ten live pages: each intro states `$300.00 plus HST per tax
+year` in the same paragraph, no competitor is named or implied, and no
+superlative appears. It remains a deviation Sharad Gondaliya reviews, on the
+same footing as the services and reviews copy.
+
+### Gate and audit
+
+The shared "AFFORDABLE ... for" formula and the "Whether ..." scaffolding add
+perhaps thirty tokens in common across ten pages, so the opening clause of
+each paragraph one was deliberately varied rather than templated. Peak
+pairwise 6(k) similarity went from 0.592 to **0.595**, still under the 0.60
+ceiling. `audit_visible.py`: 117 strings per template, 0 failures. Live on all
+ten: no banned 7.4 phrase, no superlative, no bare T183, no FAQPage or HowTo,
+valid JSON-LD, and the only `$300` without decimals anywhere on the pages is
+the site header tagline, which is template furniture rather than page copy.

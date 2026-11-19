@@ -27,25 +27,20 @@ VERTICALS = {
           'genuinely nil, that return is $300.00 plus HST per tax year.',
 
   # Section 1, the two-paragraph fact pattern the plan requires at line 1209
-  'intro_h': 'Nil T2 Filing for Numbered Holding Corporations',
+  'intro_h': 'AFFORDABLE Nil T2 Filing for Numbered Holding Corporations',
   'intro': (
-    'A numbered holding corporation is incorporated to hold something rather '
-    'than to trade: shares in an operating company, a parcel of land, a '
-    'portfolio, or nothing at all while the owner decides what comes next. It '
-    'has a number for a name because it was never given one, which is why so '
-    'many sit quiet for years. Quiet is not the same as closed. The '
-    'corporation exists until it is dissolved, and paragraph 150(1)(a) makes '
-    'the T2 due every year it exists.',
-    'The question is never whether the return is due. It is whether the year '
-    'was nil. A holding corporation that received no dividend, earned no '
-    'interest, collected no rent and disposed of nothing has a nil year, and '
-    'that return is prepared, CPA reviewed, signed on a T183CORP and '
-    'transmitted electronically for $300.00 plus HST per tax year. A holding '
-    'corporation that received any of those has income, and this is not the '
-    'service for it.'),
-
-  # Rule 8. This family is the one the rule was written for, so it leads
-  # rather than sitting in a footnote.
+    'Filing for a numbered holding corporation can feel pointless, '
+    'especially when the entity has a number instead of a name, holds '
+    'something rather than trades, and did nothing at all last year. We '
+    'file nil T2 returns built for exactly that situation, for owners who '
+    'want the years closed off, the record clean, and the cost known in '
+    'advance at $300.00 plus HST per tax year.',
+    'Whether the corporation holds shares in your operating company, a '
+    'parcel of land, a portfolio, or nothing while you decide what comes '
+    'next, we test the year against dividends, interest, rent and '
+    'dispositions, prepare the T2 with its GIFI schedules and Schedule '
+    '50, and transmit it as a registered EFILE electronic filer. The CRA '
+    'confirmation reaches you within 3 business days.'),
   'notnil_h': 'When a Numbered Holding Corporation Is Not Nil',
   'notnil_boxes': [
     ('A Dividend Was Received',
@@ -272,20 +267,20 @@ VERTICALS = {
           'stayed registered. That year is still a filing year, and where it '
           'is genuinely nil the return is $300.00 plus HST per tax year.',
 
-  'intro_h': 'The Consulting Corporation That Went Quiet',
+  'intro_h': 'AFFORDABLE Nil T2 Filing for Dormant Consulting Corporations',
   'intro': (
-    'Consulting corporations go dormant more often than almost any other '
-    'kind, and usually for the same reason: the owner took a salaried job, '
-    'went on leave, moved abroad, or simply stopped looking for the next '
-    'engagement. Nothing is wound up because nothing feels finished. The '
-    'corporation sits there with a name, a business number and no work going '
-    'through it.',
-    'None of that ends the filing obligation. A corporation files a T2 for '
-    'every tax year it exists, and the year a consultant bills nothing is '
-    'still a tax year. What changes is the content of the return, not whether '
-    'it is owed. A year with no invoices raised, no expenses claimed and no '
-    'money moving is a nil year, filed here at $300.00 plus HST per tax year.'),
-
+    'Filing for a consulting corporation you stopped using can feel like '
+    'paperwork for nothing, especially when no invoices went out, the '
+    'business number is still open, and the obligation did not stop when '
+    'the engagements did. We file nil T2 returns made for quiet years, '
+    'for consultants who want the backlog cleared without an engagement '
+    'letter or an hourly bill, at $300.00 plus HST per tax year.',
+    'Whether you took a salaried job, went on leave, moved abroad, or '
+    'simply stopped looking for the next contract, we check the year '
+    'against invoices raised, expenses claimed and retainers held, '
+    'prepare the return with its schedules, and have you sign one '
+    'T183CORP for each year online. Nothing is printed and nothing is '
+    'posted.'),
   'notnil_h': 'When a Dormant Consulting Corporation Is Not Nil',
   'notnil_boxes': [
     ('A Final Invoice Landed',
@@ -489,20 +484,19 @@ VERTICALS = {
           'owes a return for every year since. Each of those years is '
           '$300.00 plus HST per tax year.',
 
-  'intro_h': 'The Corporation That Never Started',
+  'intro_h': 'AFFORDABLE Nil T2 Filing for Shelf Corporations',
   'intro': (
-    'A shelf corporation is one that exists on paper and has never done '
-    'anything. Some are incorporated to reserve a name, some to have an '
-    'incorporation date ready for a bank or a tender, some because a plan '
-    'changed the week after the articles were filed. The common thread is '
-    'that there is no first transaction to point at.',
-    'That makes shelf corporations the clearest nil case there is, and the '
-    'one with the most years outstanding. The obligation starts at '
-    'incorporation, not at first revenue, so a corporation registered in 2019 '
-    'and never used owes seven returns and has never filed one. Each is a '
-    'separate T2 at $300.00 plus HST per tax year, and the first of them '
-    'carries Schedule 24.'),
-
+    'A corporation that has never traded still owes returns, especially '
+    'one incorporated years ago with no first transaction to point at. '
+    'The obligation starts at incorporation rather than at first revenue, '
+    'so a company registered in 2019 and never used owes seven returns. '
+    'We file the whole run at $300.00 plus HST per tax year, with no '
+    'surcharge for how far back it goes.',
+    'Whether the articles were filed to reserve a name, to hold an '
+    'incorporation date ready for a bank or a tender, to carry a plan '
+    'that changed, or because the company was bought ready-made, we file '
+    'oldest first, attach Schedule 24 to the earliest return, and sign '
+    'one T183CORP per year. You get the CRA confirmation for each.'),
   'notnil_h': 'When a Shelf Corporation Stops Being Nil',
   'notnil_boxes': [
     ('The Bank Account Opened',
@@ -709,19 +703,20 @@ VERTICALS = {
           'is still registered. A year with no loads and no disposals is nil, '
           'at $300.00 plus HST per tax year.',
 
-  'intro_h': 'The Owner-Operator Corporation That Stopped Hauling',
+  'intro_h': 'AFFORDABLE Nil T2 Filing for Inactive Trucking Corporations',
   'intro': (
-    'Owner-operators incorporate because the carriers they haul for ask them '
-    'to. When the driving stops, for a back injury, a licence issue, a move '
-    'to company driving or simply a market that turned, the corporation '
-    'rarely gets wound up. It sits with a business number, maybe a fuel tax '
-    'account, and a truck that may or may not still be in the yard.',
-    'The return is due for every one of those years. What decides whether a '
-    'year is nil is not whether the truck moved but whether anything was '
-    'bought, sold, claimed or earned. A year with no loads, no expenses '
-    'claimed and the truck sitting exactly where it was is a nil year at '
-    '$300.00 plus HST per tax year.'),
-
+    'Keeping an owner-operator corporation filed while you are off the '
+    'road can feel like money for nothing, especially with a business '
+    'number still open, often a fuel tax account beside it, and a truck '
+    'that may or may not still be in the yard. We file nil T2 returns for '
+    'exactly those years at $300.00 plus HST per tax year, so the entity '
+    'stays clean for whenever you go back.',
+    'Whether you are off with a back injury, held up by a licence issue, '
+    'driving for a carrier on payroll, or waiting out a market that '
+    'turned, we test the year against loads hauled, equipment sold and '
+    'plate, insurance or storage costs, then prepare and transmit the '
+    'return. Any year with a disposal in it is sent to the right service '
+    'instead.'),
   'notnil_h': 'When an Inactive Trucking Corporation Is Not Nil',
   'notnil_boxes': [
     ('The Truck Was Sold',
@@ -922,19 +917,18 @@ VERTICALS = {
           'the last service still need returns, and a year with nothing left '
           'moving is $300.00 plus HST per tax year.',
 
-  'intro_h': 'The Years Between Closing and Dissolving',
+  'intro_h': 'AFFORDABLE Nil T2 Filing for Closed Restaurant Corporations',
   'intro': (
-    'A restaurant closing is rarely tidy. The lease ends or gets assigned, '
-    'the equipment goes to an auctioneer or stays in a unit nobody has '
-    'emptied, the staff are paid out, and the corporation that held it all '
-    'is quietly left alone. Owners move on to the next thing and the entity '
-    'stays on the registry, accumulating filing years nobody is watching.',
-    'Those years matter, because the corporation cannot be dissolved while '
-    'any of them is unfiled. The year the restaurant actually closed is '
-    'almost never nil, since equipment is sold and accounts are settled. The '
-    'years after it, once everything has gone, usually are, and each of those '
-    'is $300.00 plus HST per tax year.'),
-
+    'Closing a restaurant rarely ends tidily. The lease is assigned or '
+    'run out, the equipment goes to an auctioneer or sits in a unit '
+    'nobody has emptied, and the corporation stays on the registry '
+    'collecting filing years nobody is watching. We file those years at '
+    '$300.00 plus HST per tax year so the entity can finally be wound up.',
+    'Whether the space was handed back, sold to the next tenant, closed '
+    'after a partnership split, or simply shut when the lease ran out, we '
+    'separate the closing year from the quiet ones, prepare the nil years '
+    'with Schedules 100, 125, 141 and 50, and sign a T183CORP for each. '
+    'Dissolution needs every one of them filed first.'),
   'notnil_h': 'When a Closed Restaurant Corporation Is Not Nil',
   'notnil_boxes': [
     ('Equipment or Fixtures Were Sold',
@@ -1134,19 +1128,20 @@ VERTICALS = {
           'year. Where nothing was earned and nothing was held, the return is '
           '$300.00 plus HST per tax year.',
 
-  'intro_h': 'The Year a Physician Stops Billing Through the Corporation',
+  'intro_h': 'AFFORDABLE Nil T2 Filing for Medicine Professional Corporations',
   'intro': (
-    'Medicine professional corporations go quiet for ordinary reasons. A '
-    'parental leave runs across a fiscal year. A fellowship abroad takes a '
-    'physician off the provincial plan. A locum practice winds down into a '
-    'salaried hospital appointment, and the billings that used to route '
-    'through the corporation now land on a personal T4 instead.',
-    'The corporation notices none of that. It holds a certificate of '
-    'authorization from the provincial college, it keeps its own fiscal year '
-    'end, and it owes a T2 for every one of those years. Where the '
-    'corporation billed nothing, paid nobody and held nothing that earned, '
-    'that is a nil year, filed here at $300.00 plus HST per tax year.'),
-
+    'A professional corporation you are not billing through still files, '
+    'especially while the certificate of authorization is held, the '
+    'fiscal year end keeps running, and the entity stays on the college '
+    'register. We file those years at $300.00 plus HST per tax year, for '
+    'physicians who want the corporation current without a full '
+    'engagement.',
+    'Whether you are on parental leave, away on a fellowship, moved to a '
+    'salaried hospital appointment, or winding a locum practice down, we '
+    'measure the year against billings and any investment income inside '
+    'the corporation, prepare the return with Schedule 50 naming every '
+    'shareholder at 10% or more, and transmit it electronically. A year '
+    'the portfolio paid in goes to the full service.'),
   'notnil_h': 'When a Medicine Professional Corporation Is Not Nil',
   'notnil_boxes': [
     ('A Portfolio Sits Inside the Corporation',
@@ -1346,19 +1341,19 @@ VERTICALS = {
           'invoiced and no holdback was released, the return is $300.00 plus '
           'HST per tax year.',
 
-  'intro_h': 'The Trades Corporation That Stopped Taking Jobs',
+  'intro_h': 'AFFORDABLE Nil T2 Filing for Dormant Construction Corporations',
   'intro': (
-    'Construction corporations go dormant between phases of a working life. '
-    'A contractor takes a payroll job with a larger builder. A partnership '
-    'splits and one side keeps bidding while the other stops. A general '
-    'contractor sells the trailer and the tools and never formally closes '
-    'the entity that invoiced for them.',
-    'The corporation carries on existing, and the Canada Revenue Agency '
-    'expects a T2 for each year it does. A season with no contracts invoiced, '
-    'no subcontractors paid and no holdback released is a nil year at $300.00 '
-    'plus HST per tax year. The entity stays on the registry, ready to bid '
-    'again, with its filing history unbroken.'),
-
+    'A trades corporation between phases still owes a return each year, '
+    'with tools and a trailer that may still be owned, a workers '
+    'compensation account still open, and the entity sitting on the '
+    'registry waiting for the next job. We file those seasons at $300.00 '
+    'plus HST per tax year so the company stays ready to bid.',
+    'Whether you took a payroll job with a larger builder, split a '
+    'partnership and stopped bidding, sold the trailer, or are simply '
+    'between contracts, we test the season against released holdback, '
+    'subcontractor payments and equipment disposals, then prepare and '
+    'transmit the return. An unbroken filing history is what bonding and '
+    'prequalification ask for later.'),
   'notnil_h': 'When a Dormant Construction Corporation Is Not Nil',
   'notnil_boxes': [
     ('A Holdback Was Released',
@@ -1561,17 +1556,18 @@ VERTICALS = {
           'A year with nothing sold and nothing paid out is $300.00 plus HST '
           'per tax year.',
 
-  'intro_h': 'The Storefront Went Dark, the Corporation Did Not',
+  'intro_h': 'AFFORDABLE Nil T2 Filing for E-Commerce Corporations',
   'intro': (
-    'Online stores stop quietly. A seller account is deactivated, a '
-    'subscription lapses, the last of the stock is cleared at cost, and the '
-    'domain renews on its own for another year or two. Nothing is filed to '
-    'mark the end, because shutting a storefront asks for no filing.',
-    'The corporation that held the seller account remains registered, and it '
-    'owes a T2 for every year it does. Where nothing sold, no processor paid '
-    'out and no stock moved, that is a nil year at $300.00 plus HST per tax '
-    'year.'),
-
+    'Switching off a storefront does not switch off the corporation '
+    'behind it. The seller account is deactivated, the last stock is '
+    'cleared at cost or left in a spare room, and the domain renews on '
+    'its own while the entity stays registered. We file the dark years at '
+    '$300.00 plus HST per tax year.',
+    'Whether you sold on a marketplace, ran a direct-to-consumer brand, '
+    'dropshipped, or printed on demand, we read every payout channel '
+    'before treating a year as nil, carry any remaining stock or held '
+    'processor balance on Schedule 100, and sign one T183CORP per year. A '
+    'released balance makes that year a full return instead.'),
   'notnil_h': 'When an E-Commerce Corporation Is Not Nil',
   'notnil_boxes': [
     ('A Processor Paid Out',
@@ -1771,20 +1767,20 @@ VERTICALS = {
           'held property that earned nothing and cost it nothing, the return '
           'is $300.00 plus HST per tax year.',
 
-  'intro_h': 'Holding Property Is Not the Same as Earning From It',
+  'intro_h': 'AFFORDABLE Nil T2 Filing for Real Estate Holding Corporations',
   'intro': (
-    'Property ends up inside a corporation for all sorts of reasons. A lot is '
-    'bought and banked against a build that has not started. A parcel is '
-    'rolled in before a plan changes. A family puts a future cottage or a '
-    'development site in an entity of its own and then leaves it alone for '
-    'years while nothing happens on the ground.',
-    'A holding, rental or investment corporation is not nil in any year it '
-    'earns. That is worth stating plainly, because it is where most owners '
-    'get this wrong: a corporation that collected rent for any part of a '
-    'year is a rental corporation for that year and files a full T2. Only a '
-    'year in which the corporation itself neither received nor paid anything '
-    'is nil, and that year is $300.00 plus HST per tax year.'),
-
+    'Property sitting in a corporation still generates a filing '
+    'obligation every year: title in the corporation name, a property tax '
+    'bill whether or not anything is built, and a return owed for as long '
+    'as the entity exists. A holding, rental or investment corporation is '
+    'not nil in any year it earns, so we test each year before charging '
+    'for it, and the idle ones are $300.00 plus HST per tax year.',
+    'Whether the corporation holds land banked against a build that has '
+    'not started, a parcel rolled in before a plan changed, a future '
+    'cottage, or a development site left untouched for years, we check '
+    'rent and carrying costs first, add Schedule 8 where a building '
+    'stands on the land, and transmit the return electronically. Any year '
+    'with rent in it goes to the full service.'),
   'notnil_h': 'When a Real Estate Holding Corporation Is Not Nil',
   'notnil_boxes': [
     ('Rent Was Collected',
@@ -1986,20 +1982,19 @@ VERTICALS = {
           'the corporation neither billed nor paid, the return is $300.00 '
           'plus HST per tax year.',
 
-  'intro_h': 'The Corporation Behind a Contract That Ended',
+  'intro_h': 'AFFORDABLE Nil T2 Filing for Dormant IT Consulting Corporations',
   'intro': (
-    'Plenty of IT corporations exist for one engagement. A developer or an '
-    'architect incorporates because the client or the agency requires it, '
-    'runs a statement of work through the entity for two or three years, and '
-    'then the project closes. The next role arrives through an agency payroll '
-    'or as ordinary employment, and the corporation is left on the register '
-    'with nothing flowing through it.',
-    'It keeps its business number and its filing obligation all the same. A '
-    'year in which no statement of work was billed, no cloud account charged '
-    'the corporate card and no equipment changed hands is a nil year at '
-    '$300.00 plus HST per tax year. Filing it is what keeps the entity '
-    'usable for the next contract.'),
-
+    'An IT corporation between contracts still files, with a closed '
+    'statement of work behind it, a workstation still on the books, and a '
+    'business number that stays open until somebody closes it. We file '
+    'bench years at $300.00 plus HST per tax year, so the entity is ready '
+    'when the next contract needs it.',
+    'Whether you incorporated because a client or an agency required it, '
+    'moved to agency payroll when the project closed, took ordinary '
+    'employment, or are simply waiting for the next statement of work, we '
+    'read the corporate card before treating a year as nil, keep '
+    'equipment on Schedule 8 while it is owned, and sign one T183CORP per '
+    'year online. Agencies ask for the filing history at onboarding.'),
   'notnil_h': 'When a Dormant IT Consulting Corporation Is Not Nil',
   'notnil_boxes': [
     ('A Milestone or Change Request Paid',
