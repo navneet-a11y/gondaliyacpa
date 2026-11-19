@@ -1755,4 +1755,432 @@ VERTICALS = {
   ],
  },
 
+
+ 'real-estate-holding-corporations': {
+  'name':   'Real Estate Holding Corporations',
+  'short':  'real estate holding corporation',
+  'plural': 'real estate holding corporations',
+  'kw':     'nil t2 for real estate holding corporation',
+  'title':  'Real Estate Holding Corporation Nil T2 | Unrented Years',
+  'desc':   'A corporation that collects rent is not nil. Where it holds land '
+            'that earned nothing and cost it nothing, the year can be. What '
+            'that costs to file.',
+
+  'h1':   'Nil T2 Filing for Real Estate Holding Corporations',
+  'lede': 'A corporation that collected rent in the year is not nil. Where it '
+          'held property that earned nothing and cost it nothing, the return '
+          'is $300.00 plus HST per tax year.',
+
+  'intro_h': 'Holding Property Is Not the Same as Earning From It',
+  'intro': (
+    'Property ends up inside a corporation for all sorts of reasons. A lot is '
+    'bought and banked against a build that has not started. A parcel is '
+    'rolled in before a plan changes. A family puts a future cottage or a '
+    'development site in an entity of its own and then leaves it alone for '
+    'years while nothing happens on the ground.',
+    'A holding, rental or investment corporation is not nil in any year it '
+    'earns. That is worth stating plainly, because it is where most owners '
+    'get this wrong: a corporation that collected rent for any part of a '
+    'year is a rental corporation for that year and files a full T2. Only a '
+    'year in which the corporation itself neither received nor paid anything '
+    'is nil, and that year is $300.00 plus HST per tax year.'),
+
+  'notnil_h': 'When a Real Estate Holding Corporation Is Not Nil',
+  'notnil_boxes': [
+    ('Rent Was Collected',
+     'A corporation receiving rent for any part of the year is a rental '
+     'corporation for that year, and a rental corporation is not nil.'),
+    ('The Corporation Carried the Costs',
+     'Property tax, insurance or mortgage interest paid out of the '
+     'corporation is an expense, and an expense is activity.'),
+    ('Property Changed Hands',
+     'A sale, a transfer to a shareholder or a partial disposition puts a '
+     'capital gain or loss in that year.'),
+    ('A Deposit or Option Fee Arrived',
+     'Money taken on a future sale is received by the corporation, whether or '
+     'not the deal ever closes.'),
+  ],
+  'notnil_text': (
+    'Carrying costs defeat more of these years than rent does. Property tax '
+    'falls due annually whether or not anything is built, and the question is '
+    'only which entity paid it. Where the corporation paid, the year has an '
+    'expense on Schedule 125 and is an ordinary return. Where the shareholder '
+    'paid personally, the corporation may genuinely have had a year with '
+    'nothing in it at all.',
+    'An earning or spending year is a full T2, prepared by Gondaliya CPA '
+    'Professional Corporation at gondaliyacpa.ca for $350.00 plus HST per '
+    'year. A year in which the land simply sat, costing the corporation '
+    'nothing, is filed on this page at $300.00 plus HST per tax year.'),
+
+  'sched_h': 'Which T2 Schedules a Real Estate Holding Corporation Files',
+  'sched_rows': [
+    ('Schedule 100', 'Balance sheet information', 'Required',
+     'Land and buildings sit on the balance sheet at cost, with any mortgage '
+     'against them, so it is never an empty schedule.'),
+    ('Schedule 125', 'Income statement information', 'Required',
+     'Reports nil rental revenue and nil carrying costs for a year the '
+     'corporation neither collected nor paid.'),
+    ('Schedule 141', 'Notes checklist', 'Required',
+     'Goes with Schedules 100 and 125 and names whoever compiled them.'),
+    ('Schedule 50', 'Shareholder information', 'Required',
+     'Property is often held by two or more family members or partners. '
+     'Anyone at 10% or more of a class is named.'),
+    ('Schedule 24', 'First-time filer information', 'First return only',
+     'Filed with the first T2 after incorporation, which is often the year '
+     'the property was bought.'),
+    ('Schedule 8', 'Capital cost allowance', 'Only with a building',
+     'Land is not depreciable property. A building standing on it is, in '
+     'Class 1, so Schedule 8 can apply in a year with no rent at all.'),
+  ],
+  'sched_note': 'Source: the schedule requirements the Canada Revenue Agency '
+                'sets for a T2 return, applied to a corporation holding real '
+                'property that produced no income in the tax year. Last '
+                'reviewed November 19, 2026.',
+  'sched_boxes': [
+    ('Land Is Not Depreciable',
+     'Land carries no capital cost allowance. A building on it does, which is '
+     'why Schedule 8 can apply to a corporation with no tenant.'),
+    ('Rent Makes It a Rental Corporation',
+     'One month of rent on one unit is enough. That year is a full return '
+     'rather than a nil one.'),
+    ('Carrying Costs Count as Activity',
+     'Property tax or insurance paid by the corporation is an expense on '
+     'Schedule 125, and that ends the nil year.'),
+  ],
+  'chk_yes': [
+    'No rent, lease payment or licence fee reached the corporation',
+    'No property tax, insurance or mortgage payment was made by it',
+    'No property, lot or interest in one was sold or transferred',
+    'No deposit, option fee or holding payment was received',
+    'No interest was credited on any account it holds',
+  ],
+  'chk_no': [
+    'Rent was collected for any part of the year, from any tenant',
+    'The corporation paid property tax, insurance or mortgage interest',
+    'Land, a building or part of one was sold or transferred out',
+    'An option fee or a deposit on a future sale was taken in',
+    'A development, servicing or survey cost was paid by the corporation',
+  ],
+  'chk_both': [
+    'A T2 for every tax year the corporation exists',
+    'A T183CORP signed by an authorised signing officer, per tax year',
+    'Schedule 8, for as long as a building stands on the land',
+    'The provincial land registry record, which the T2 does not touch',
+    'A clearance certificate, before the property can be distributed out',
+  ],
+
+  'why_h': 'Why Real Estate Holding Corporations Use This Service',
+  'why': [
+    ('For the Years Before It Earns',
+     'Land held and not yet built on or rented is the case this service was '
+     'written for.'),
+    ('The Rent Question Is Settled First',
+     'Any rent at all makes the year a full return, so that is tested before '
+     'anything is charged.'),
+    ('A Flat Fee Per Idle Year',
+     'Each year the property sat still is $300.00 plus HST per tax year, with '
+     'nothing billed by the hour.'),
+    ('Earning Years Are Referred On',
+     'A year with rent, a disposition or carrying costs goes to the full '
+     'corporate service.'),
+  ],
+  'strip': [
+    ('Owning Is Not Earning',
+     'Title in the corporation name does not by itself make a year active.'),
+    ('In Date Order',
+     'Years go across earliest first so the property cost base carries '
+     'forward.'),
+    ('Signed Online',
+     'Each T183CORP is signed through a secure portal, with no appointment.'),
+  ],
+
+  'svc_h': 'What a Real Estate Holding Corporation Usually Needs Next',
+  'proc_h': 'How a Real Estate Holding Corporation Files',
+  'proc_lede': 'Four steps through the filing form, beginning with rent and '
+               'carrying costs.',
+  'proc_note': 'Most owners work through this in one sitting:',
+  'steps': [
+    ('Test for Rent and Carrying Costs',
+     'Rent received, and property tax, insurance or mortgage interest paid by '
+     'the corporation, each take the year out of nil.'),
+    ('Confirm the Year-End on Record',
+     'The fiscal year-end the Agency holds has to agree with the return, or '
+     'the transmission is refused.'),
+    ('Prepare the Return and Schedules',
+     'The T2 with Schedules 100, 125, 141 and 50, plus Schedule 8 where a '
+     'building stands on the land.'),
+    ('Sign Each Year, Then File',
+     'One T183CORP per year, signed online, and the Agency confirmation lands '
+     'by email within 3 business days.'),
+  ],
+
+  'price_h': 'Nil T2 Filing Cost for a Real Estate Holding Corporation',
+  'price_eyebrow': 'One Fee Per Tax Year',
+  'price_text': (
+    'Nil T2 filing is $300.00 plus HST per tax year. The fee covers the T2, '
+    'the GIFI schedules where required, Schedule 50, Schedule 24 on a first '
+    'return, the T183CORP package with secure e-signing, CPA review before '
+    'transmission, electronic transmission by a registered EFILE electronic '
+    'filer, one corrected transmission where the Agency rejects the first, '
+    'and the CRA confirmation emailed within 3 business days. A year with '
+    'rent, carrying costs or a disposition is $350.00 plus HST per year at '
+    'gondaliyacpa.ca.'),
+
+  'geo_h': 'Property Holding Corporation Filing Across Canada',
+  'cta_h': 'File the Idle Years Before the Property Moves',
+
+  'faq': [
+   ('My corporation owns a rental property. Is any year nil?',
+    'Not a year it collected rent. A corporation receiving rent is a rental '
+    'corporation for that year and files a full T2. A year before the first '
+    'tenant, or after the last one left with nothing paid or received, can '
+    'be nil.'),
+   ('We bought a lot and have not built on it. Is that nil?',
+    'It can be, provided the corporation itself neither received nor paid '
+    'anything during the year. Land sitting still earns nothing, so the usual '
+    'obstacle is property tax rather than income.'),
+   ('I pay the property tax personally. Does that help?',
+    'It can. A cost a shareholder pays personally is not the corporation’s '
+    'expense. What decides it is which entity paid, and the bank record is '
+    'what shows that.'),
+   ('Does the corporation file Schedule 8 with no rent?',
+    'Where a building stands on the land, yes. A building is depreciable '
+    'property in Class 1 whether or not it earned. Bare land is not '
+    'depreciable and carries no Schedule 8.'),
+   ('We sold the property last year. What does that year look like?',
+    'A full return. A disposition puts a capital gain or loss in the year, '
+    'and any recapture on a building goes with it, so that year is not nil.'),
+   ('A buyer paid a deposit we later returned. Is the year nil?',
+    'No. The deposit moving in and out is money through the corporation, so '
+    'the year is active even though nothing was kept.'),
+   ('My spouse and I hold it together. Who is listed?',
+    'Each shareholder at 10% or more of a class is named on Schedule 50, '
+    'whatever the split, and one authorised signing officer signs the '
+    'T183CORP.'),
+   ('Can I transfer the property out and then dissolve?',
+    'The transfer is a disposition in its own year, and a clearance '
+    'certificate will not be issued while any year is unfiled. The '
+    'outstanding returns come first.'),
+   ('Does the land registry filing count as the corporate return?',
+    'No. The registry records title and the T2 reports the tax year. Neither '
+    'one does the other’s job.'),
+   ('How many idle years can be filed together?',
+    'All of them. One T2 and one T183CORP per year, each at $300.00 plus HST '
+    'per tax year, sent earliest first so the property cost base carries '
+    'forward.'),
+  ],
+ },
+
+ 'dormant-it-consulting-corporations': {
+  'name':   'Dormant IT Consulting Corporations',
+  'short':  'dormant IT consulting corporation',
+  'plural': 'dormant IT consulting corporations',
+  'kw':     'dormant it consulting corporation t2',
+  'title':  'Dormant IT Consulting Corporation T2 | Between Contracts',
+  'desc':   'The contract ended and the corporation stayed on the register. '
+            'Which bench years are nil, what a cloud charge does to one, and '
+            'what each costs.',
+
+  'h1':   'Nil T2 Filing for Dormant IT Consulting Corporations',
+  'lede': 'A year on the bench between contracts is still a tax year. Where '
+          'the corporation neither billed nor paid, the return is $300.00 '
+          'plus HST per tax year.',
+
+  'intro_h': 'The Corporation Behind a Contract That Ended',
+  'intro': (
+    'Plenty of IT corporations exist for one engagement. A developer or an '
+    'architect incorporates because the client or the agency requires it, '
+    'runs a statement of work through the entity for two or three years, and '
+    'then the project closes. The next role arrives through an agency payroll '
+    'or as ordinary employment, and the corporation is left on the register '
+    'with nothing flowing through it.',
+    'It keeps its business number and its filing obligation all the same. A '
+    'year in which no statement of work was billed, no cloud account charged '
+    'the corporate card and no equipment changed hands is a nil year at '
+    '$300.00 plus HST per tax year. Filing it is what keeps the entity '
+    'usable for the next contract.'),
+
+  'notnil_h': 'When a Dormant IT Consulting Corporation Is Not Nil',
+  'notnil_boxes': [
+    ('A Milestone or Change Request Paid',
+     'A closing milestone, a change request or a holdback on a finished '
+     'statement of work is revenue in the year it is billed.'),
+    ('Cloud or Hosting Kept Charging',
+     'A compute account, a domain or a certificate still billed to the '
+     'corporation is an expense, so the year is not nil.'),
+    ('Equipment Was Sold or Written Off',
+     'A workstation, server or test device disposed of produces a gain or a '
+     'terminal loss on Schedule 8.'),
+    ('A Vendor Commission Arrived',
+     'A referral fee or a partner programme rebate is income to the '
+     'corporation like anything else.'),
+  ],
+  'notnil_text': (
+    'Cloud billing is what catches IT corporations out. A compute account '
+    'left running on a corporate card costs very little and is easy to miss, '
+    'but it is an expense the corporation incurred, and an expense is '
+    'activity whatever its size. A domain renewal, a code-signing certificate '
+    'or a developer programme membership does the same thing.',
+    'Where a year carries any of that it is a full return, prepared by '
+    'Gondaliya CPA Professional Corporation at gondaliyacpa.ca for $350.00 '
+    'plus HST per year. A year in which the corporate card was never touched '
+    'is filed on this page at $300.00 plus HST per tax year.'),
+
+  'sched_h': 'Which T2 Schedules a Dormant IT Consulting Corporation Files',
+  'sched_rows': [
+    ('Schedule 100', 'Balance sheet information', 'Required',
+     'A bank balance, a shareholder loan or equipment at written-down value '
+     'keeps the balance sheet populated between contracts.'),
+    ('Schedule 125', 'Income statement information', 'Required',
+     'Reports nil professional fees and nil costs across a year with no '
+     'statement of work billed.'),
+    ('Schedule 141', 'Notes checklist', 'Required',
+     'Filed beside Schedules 100 and 125, recording who compiled them.'),
+    ('Schedule 50', 'Shareholder information', 'Required',
+     'Most IT corporations have one shareholder, sometimes two. Anyone at '
+     '10% or more of a class is named.'),
+    ('Schedule 24', 'First-time filer information', 'First return only',
+     'Filed with the first T2 after incorporation, usually the year the first '
+     'contract started.'),
+    ('Schedule 8', 'Capital cost allowance', 'While equipment is held',
+     'Workstations, servers, monitors and test devices carry capital cost '
+     'allowance for as long as the corporation owns them.'),
+  ],
+  'sched_note': 'Source: the schedule requirements the Canada Revenue Agency '
+                'sets for a T2 return, applied to an IT corporation that '
+                'billed no statement of work in the tax year. Last reviewed '
+                'November 19, 2026.',
+  'sched_boxes': [
+    ('A Small Charge Is Still a Charge',
+     'A few dollars of cloud compute on the corporate card puts a figure on '
+     'Schedule 125 and ends the nil year.'),
+    ('Agency Payroll Is Personal',
+     'Income earned through an agency or as an employee is yours, not the '
+     'corporation’s, and does not make its year active.'),
+    ('Equipment Keeps Depreciating',
+     'A workstation stays on Schedule 8 while it is owned, whether or not it '
+     'was used for any work.'),
+  ],
+  'chk_yes': [
+    'No statement of work, milestone or change request was billed',
+    'No cloud, hosting, domain or certificate charge hit the corporation',
+    'No equipment or licence was bought, sold or written off by it',
+    'No referral, affiliate or vendor commission was received',
+    'It paid no salary, dividend or management fee to anyone',
+  ],
+  'chk_no': [
+    'A closing milestone or holdback on an old contract was billed',
+    'A compute, hosting or domain account charged the corporate card',
+    'A workstation, server or device was sold, traded or written off',
+    'A vendor or partner programme paid a commission or a rebate',
+    'The corporation reimbursed the owner for anything at all',
+  ],
+  'chk_both': [
+    'A T2 for every tax year the corporation exists',
+    'One signed T183CORP covering each of those years',
+    'An equipment list, because what is on the books decides Schedule 8',
+    'The business number, which stays open until it is closed',
+    'A clean filing record, which agencies ask for at onboarding',
+  ],
+
+  'why_h': 'Why Dormant IT Consulting Corporations Use This Service',
+  'why': [
+    ('Built for Bench Years',
+     'The gap between one contract closing and the next starting is exactly '
+     'the year this service files.'),
+    ('The Card Is Read First',
+     'Each year is read against cloud, domain and subscription charges before '
+     'it is treated as nil.'),
+    ('A Flat Fee Per Bench Year',
+     'Every bench year is priced the same, $300.00 plus HST per tax year, '
+     'with no retainer and nothing on the clock.'),
+    ('Billing Years Are Referred On',
+     'A year with a milestone, a commission or a disposal goes to the full '
+     'corporate service.'),
+  ],
+  'strip': [
+    ('The Entity Outlives the Contract',
+     'A closed statement of work does not close the corporation or its '
+     'filings.'),
+    ('Earliest Year Leads',
+     'Returns go across in date order so the equipment schedule carries '
+     'forward.'),
+    ('No Printer Needed',
+     'Each T183CORP is signed in the browser through a secure portal.'),
+  ],
+
+  'svc_h': 'What a Dormant IT Consulting Corporation Usually Needs Next',
+  'proc_h': 'How a Dormant IT Consulting Corporation Files',
+  'proc_lede': 'Four steps through the filing form, starting with what the '
+               'corporate card did.',
+  'proc_note': 'Most contractors get through it between standups:',
+  'steps': [
+    ('Read the Corporate Card',
+     'Cloud, hosting, domain and subscription charges are read before the '
+     'year is treated as nil.'),
+    ('Check the Year-End on File',
+     'The fiscal year end on the Agency record has to match the return, or '
+     'the transmission is refused.'),
+    ('Assemble the Filing',
+     'The T2 plus its GIFI schedules and Schedule 50, with Schedule 8 for any '
+     'equipment still on the books.'),
+    ('Sign, Then Transmit',
+     'One T183CORP signed in the browser per year. Confirmation from the '
+     'Agency lands by email inside 3 business days.'),
+  ],
+
+  'price_h': 'Nil T2 Filing Cost for a Dormant IT Consulting Corporation',
+  'price_eyebrow': 'One Fee Per Tax Year',
+  'price_text': (
+    'Nil T2 filing is $300.00 plus HST per tax year. The fee covers the T2, '
+    'the GIFI schedules where required, Schedule 50, Schedule 24 on a first '
+    'return, the T183CORP package with secure e-signing, CPA review before '
+    'transmission, electronic transmission by a registered EFILE electronic '
+    'filer, one corrected transmission where the Agency rejects the first, '
+    'and the CRA confirmation emailed within 3 business days. A year with a '
+    'milestone, a commission or cloud charges on the books is $350.00 plus '
+    'HST per year at gondaliyacpa.ca.'),
+
+  'geo_h': 'IT Corporation Filing Across Canada',
+  'cta_h': 'File the Bench Years and Keep the Entity Contract-Ready',
+
+  'faq': [
+   ('My contract ended and I joined an agency payroll. Does it still file?',
+    'Yes, every year it exists. Agency or employment income is yours '
+    'personally. The corporation owes its own T2 until it is dissolved, and a '
+    'year with nothing billed through it is nil.'),
+   ('I left a cloud account running for about six dollars a month. Nil?',
+    'No. An expense the corporation incurred is activity whatever its size, '
+    'so that year is a full return. The amount changes the figures, not the '
+    'test.'),
+   ('Can I keep the corporation dormant and use it for the next contract?',
+    'Yes, and that is the usual reason to file rather than dissolve. Agencies '
+    'and enterprise clients ask for filing history at supplier onboarding, '
+    'and a gap in it is awkward to explain.'),
+   ('I had a single client for three years. Does that change anything?',
+    'Not the nil years. A single-client arrangement raises questions about '
+    'how the income is taxed in the years it was earned, and those belong to '
+    'the active returns rather than to a year with no billing in it.'),
+   ('My workstation is still on the books. Does that stop a nil year?',
+    'No. Owning equipment is not activity. It sits on Schedule 8 at its '
+    'written-down value. Selling it or writing it off is what makes the year '
+    'active.'),
+   ('A final milestone was invoiced after the project closed. Which year?',
+    'The year it was billed rather than the year it was paid. That one is a '
+    'full return, and the years after it can still be nil.'),
+   ('Do I need to close the business number before filing?',
+    'No. It stays open and expects whatever it is registered for until you '
+    'close it, and the T2 neither opens nor closes it.'),
+   ('What if I am working abroad while the corporation sits here?',
+    'The corporation is Canadian and files where it is resident. Where you '
+    'are working changes your own position, not its filing obligation.'),
+   ('Who signs if I am the only shareholder?',
+    'You do, as authorised signing officer, once per tax year. Several years '
+    'can be signed in one go.'),
+   ('How far back can bench years be filed?',
+    'As far back as they run. One return and one signature per year, each '
+    'priced at $300.00 plus HST per tax year, and they go in date order.'),
+  ],
+ },
+
 }

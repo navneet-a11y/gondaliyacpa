@@ -12334,3 +12334,78 @@ Internal links: 40 distinct, all 200 except `/community-commitment/` and
 
 F1 is now **8 of 215**, which is 8 of the 10-page test batch the
 remaining-pages file recommends before committing to the other 205.
+
+## 2026-11-19 — F1 batch 4: the test batch of ten is complete
+
+Navneet asked for the next two by plan priority. Plan line 1230 lists the
+Family 1 keywords in order, and the next two unbuilt were numbers 6 and 9:
+`nil t2 for real estate holding corporation` and `dormant it consulting
+corporation t2`.
+
+Both are ones the previous entry deferred as cannibalisation risks, against
+`/nil-t2-filing-for-numbered-holding-corporations/` and
+`/nil-t2-filing-for-dormant-consulting-corporations/` respectively. Navneet's
+instruction to follow plan priority settles that, and the 6(k) gate was used
+as the objective check rather than the earlier judgement call.
+
+**The worry did not show up in the measurement.** IT consulting against the
+live consulting page scored **0.551**, and real estate holding against
+numbered holding **0.524**. Both are nearer the family floor than the family
+peak. Written against genuinely different fact patterns, two verticals in the
+same broad trade do not collide.
+
+| ID | URL | Focus keyword | Distinguishing facts |
+|---|---|---|---|
+| 2740 | `/nil-t2-filing-for-real-estate-holding-corporations/` | nil t2 for real estate holding corporation | Rule 8 spine; land vs building on Schedule 8; carrying costs as the usual disqualifier; option fees and deposits |
+| 2741 | `/nil-t2-filing-for-dormant-it-consulting-corporations/` | dormant it consulting corporation t2 | Bench years between statements of work; cloud and domain charges; agency payroll as personal income; vendor commissions; supplier-onboarding filing history |
+
+### Hard rule 8 on the real estate page
+
+The rule requires holding, rental and investment pages to state that such a
+corporation is not nil. The page says so in the second intro paragraph, in a
+not-nil card, in a schedule box and in the first FAQ answer: a corporation
+that collected rent for any part of a year is a rental corporation for that
+year and files a full T2. The page's actual nil case is narrower and honest —
+land that earned nothing **and** cost the corporation nothing, which in
+practice means a year in which the shareholder carried the property tax
+personally.
+
+### A capitalisation bug the batch exposed
+
+`build_vertical.py` line 265 built the geography sentence as
+`name[:1] + name[1:].lower()`, which is sentence case for every vertical so
+far but ate the initialism: *"Dormant it consulting corporations are filed
+the same way..."*.
+
+Fixed to raise the first letter of `plural`, which is already stored in
+sentence case. Verified across all ten: every other vertical's sentence is
+byte-identical to what the old code produced, and only the IT one changes.
+No live page needed re-patching except the IT page, which had not been
+applied yet.
+
+### Gate and audit
+
+Two passes. First build peaked at **0.601**, one pair over (IT consulting vs
+construction) by a thousandth, on shared `chk_both` lines, the Schedule 8 row
+and the sign-and-transmit step. After diverging those six strings on the IT
+entry: **0.592** across all ten, against the 0.60 ceiling.
+
+`audit_visible.py`: 117 strings each, 0 failures. Live: no 7.4 banned phrase,
+no superlative, no bare T183, no FAQPage, HowTo or aggregateRating, two valid
+JSON-LD blocks each, one H1 each, ten FAQ items each, correct price wording,
+intro photo 570x428 at its natural ratio and header logo 204x78 at 1440px.
+38 distinct internal links, all 200 but the two known footer 404s.
+
+### Where F1 stands
+
+**10 of 215.** That completes the test batch the remaining-pages file
+recommends before committing to the other 205, so the next decision is
+Sharad's and Navneet's rather than a build one: let these ten gather Search
+Console data and read their positions before the remaining 205 are
+scheduled.
+
+Four of the plan's fourteen named F1 keywords are still unbuilt: law
+professional corporations, dentistry professional corporations, and the two
+that were never on line 1230 in the first place. Law and dentistry should be
+written with the medicine page open alongside, and separately rather than in
+one batch, for the reason the batch-3 entry gives.

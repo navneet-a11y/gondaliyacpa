@@ -262,7 +262,10 @@ def geo_html(v):
     def a(name, path):
         return f"<a href='{SITE}{path}'>{name}</a>"
     return P(
-        f'{v["name"][:1]}{v["name"][1:].lower()} are filed the same way '
+        # `plural` is already written in sentence case, so only the first
+        # letter is raised. Lowercasing the title-cased `name` instead ate
+        # the initialism in "dormant IT consulting corporations".
+        f'{v["plural"][:1].upper()}{v["plural"][1:]} are filed the same way '
         f'wherever the registered office sits, because the return is prepared '
         f'and transmitted electronically from end to end. There is nothing to '
         f'print, nothing to post and nothing to sign in person.',
