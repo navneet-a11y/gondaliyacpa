@@ -407,7 +407,11 @@ def build(slug):
      (31, {0: {'title': v['geo_h']}}, {}),
      (5,  {0: {'editor': geo_html(v)}}, {}),
      # ---- FAQ ---------------------------------------------------------------
-     (35, {0: {'title': f'{v["name"]} and Nil T2 Filing: Questions'}}, {}),
+     # 2026-11-19: Navneet asked for "FAQs" in this heading. The literal
+     # "Numbered Holding Corporations Nil T2 Filing FAQs" stacks five nouns,
+     # so the words are reordered to read as English while keeping both the
+     # term and the vertical name.
+     (35, {0: {'title': f'Nil T2 Filing FAQs for {v["name"]}'}}, {}),
      (36, None, {}),
      (37, {0: {'title': v['cta_h']},
            1: {'text': CTA}, 2: {'text': 'See the price'}},
