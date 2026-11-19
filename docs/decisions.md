@@ -12557,3 +12557,46 @@ verticals in the trades or contracting space should be written against both.
 
 Live audit after publishing: no 7.4 banned phrase, no superlative, no bare
 T183, no FAQPage or HowTo, valid JSON-LD, correct price wording, on all ten.
+
+### Follow-up the same day: numbered holding also converted, real estate did not
+
+Navneet: *"why we didn't do real estate and numbered?"*
+
+The reason given in the entry above was partly over-cautious. **Hard rule 8
+requires those pages to state that such a corporation is not nil. It does not
+require that statement to be a four-card block at position 3.** Checked on the
+live pages before changing anything: real estate holding states it in the
+intro, five checklist items and two FAQ answers; numbered holding stated it in
+five checklist items and one FAQ answer. Rule 8 was satisfied on both without
+the block.
+
+So the question was editorial rather than compliance, and the two pages differ
+on the one thing that matters, which is how often the visitor actually
+qualifies.
+
+**Numbered holding now carries the cost block.** A numbered holdco whose shares
+paid nothing is a common and genuinely nil case, so the visitor arriving on
+that page is usually eligible. Opening with disqualification wasted the slot
+there for the same reason it did on the other eight. Its four cards are its
+own: the year never closes itself, a demand can name several years, the group
+below it is affected, unwinding the structure waits.
+
+**Real estate holding keeps the warning.** The base rate is the other way
+round. A corporation holding property either rents it, which is not nil, or
+pays the property tax and insurance through itself, which is also not nil. The
+genuinely nil case, bare land with the carrying costs paid personally by the
+shareholder, is the minority. Warning early is honest there and saves both
+sides the enquiry, which is exactly the situation plan line 335 means by
+`cnf_entity_is_nil` being 0.
+
+To keep rule 8 unambiguous on numbered holding now that its block has gone, the
+statement was added to the intro as well, matching how the real estate page
+reads: *"A holding or investment corporation is not nil in any year it earns,
+so the year is tested first."* Live count afterwards: four such statements on
+numbered holding, ten on real estate holding.
+
+Gate held at **0.599** across all ten through both changes, and the live
+hard-rule audit is clean on all ten.
+
+**Nine of the ten pages now open on why filing matters. The tenth opens on who
+should not bother, on purpose.**

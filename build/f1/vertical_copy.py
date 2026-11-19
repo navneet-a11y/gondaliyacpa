@@ -31,44 +31,40 @@ VERTICALS = {
   'intro': (
     'Filing for a numbered holding corporation can feel pointless, '
     'especially when the entity has a number instead of a name, holds '
-    'something rather than trades, and did nothing at all last year. We '
-    'file nil T2 returns built for exactly that situation, for owners who '
-    'want the years closed off, the record clean, and the cost known in '
-    'advance at $300.00 plus HST per tax year.',
+    'something rather than trades, and did nothing at all last year. A '
+    'holding or investment corporation is not nil in any year it earns, '
+    'so the year is tested first. Where it genuinely earned nothing we '
+    'file it at $300.00 plus HST per tax year, for owners who want the '
+    'years closed off and the record clean.',
     'Whether the corporation holds shares in your operating company, a '
     'parcel of land, a portfolio, or nothing while you decide what comes '
     'next, we test the year against dividends, interest, rent and '
     'dispositions, prepare the T2 with its GIFI schedules and Schedule '
     '50, and transmit it as a registered EFILE electronic filer. The CRA '
     'confirmation reaches you within 3 business days.'),
-  'notnil_h': 'When a Numbered Holding Corporation Is Not Nil',
+  'notnil_h': 'What an Unfiled Year Costs a Numbered Holding Corporation',
   'notnil_boxes': [
-    ('A Dividend Was Received',
-     'A dividend from the operating company is income to the holding '
-     'corporation. The year is not nil, whatever was done with the money.'),
-    ('Interest Was Earned',
-     'Interest on a balance, a term deposit or a loan to a related company is '
-     'income. A few dollars of it still makes the year not nil.'),
-    ('Rent Was Collected',
-     'A corporation holding property that collects rent is a rental '
-     'corporation for the year. It is not nil and files a full T2.'),
-    ('Something Was Disposed Of',
-     'A sale of shares, land or any capital property puts a gain or loss in '
-     'the year. The year is not nil even where the gain is zero.'),
+    ('The Year Never Closes Itself',
+     'Doing nothing does not end a tax year. Only the filed return ends '
+     'it.'),
+    ('A Demand Can Name Several Years',
+     'The Agency can require them in writing, and a holdco with a long '
+     'gap is usually asked for all of them at once.'),
+    ('The Group Below It Is Affected',
+     'A holdco with missing years complicates a sale, a refinancing or a '
+     'reorganisation of the companies under it.'),
+    ('Unwinding the Structure Waits',
+     'No clearance certificate is issued while a year is outstanding, so '
+     'the holdco cannot be collapsed.'),
   ],
   'notnil_text': (
-    'This matters more for holding corporations than for any other kind, '
-    'because the thing a holding corporation holds tends to pay something. A '
-    'single dividend cheque, one interest posting on a bank statement or one '
-    'month of rent moves the year out of nil and into an ordinary corporate '
-    'return with income to report.',
-    'Where that is the year you have, Gondaliya CPA Professional Corporation '
-    'prepares it at gondaliyacpa.ca for $350.00 plus HST per year. The nil '
-    'service here is for the years in which the holding corporation genuinely '
-    'did nothing, and those are usually the unfiled ones.'),
-
-  # Plan line 1209: "No vertical page publishes without its own six-field
-  # schedule requirement row". S100, S125, S141, S50, S24, S8.
+    'A numbered holding corporation is the easiest entity in a group to '
+    'forget, because nothing visibly happens inside it. It is also the '
+    'first one a lender, a buyer or a new accountant pulls the filings '
+    'for.',
+    'Each quiet year is $300.00 plus HST per tax year, filed oldest first '
+    'so the balance sheet carries forward, with one T183CORP signed '
+    'online for each of them.'),
   'sched_h': 'Which T2 Schedules a Numbered Holding Corporation Files',
   'sched_rows': [
     ('Schedule 100', 'Balance sheet information',
