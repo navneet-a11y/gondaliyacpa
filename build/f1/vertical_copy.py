@@ -1751,33 +1751,30 @@ VERTICALS = {
     'rent and carrying costs first, add Schedule 8 where a building '
     'stands on the land, and transmit the return electronically. Any year '
     'with rent in it goes to the full service.'),
-  'notnil_h': 'When a Real Estate Holding Corporation Is Not Nil',
+  'notnil_h': (
+    'What an Unfiled Year Costs a Real Estate Holding Corporation'),
   'notnil_boxes': [
-    ('Rent Was Collected',
-     'A corporation receiving rent for any part of the year is a rental '
-     'corporation for that year, and a rental corporation is not nil.'),
-    ('The Corporation Carried the Costs',
-     'Property tax, insurance or mortgage interest paid out of the '
-     'corporation is an expense, and an expense is activity.'),
-    ('Property Changed Hands',
-     'A sale, a transfer to a shareholder or a partial disposition puts a '
-     'capital gain or loss in that year.'),
-    ('A Deposit or Option Fee Arrived',
-     'Money taken on a future sale is received by the corporation, whether or '
-     'not the deal ever closes.'),
+    ('The Year Runs With the Title',
+     'Holding the property through a year does not file for it. Only the '
+     'return does that.'),
+    ('A Demand Can Reach the Corporation',
+     'The Agency can require the outstanding returns in writing, on dates '
+     'it chooses.'),
+    ('A Sale or Refinancing Stalls',
+     'A lender or a buyer looking at the property wants the corporate '
+     'filings current before closing.'),
+    ('The Property Cannot Be Moved Out',
+     'Without a clearance certificate the land cannot be distributed out '
+     'and the entity wound up.'),
   ],
   'notnil_text': (
-    'Carrying costs defeat more of these years than rent does. Property tax '
-    'falls due annually whether or not anything is built, and the question is '
-    'only which entity paid it. Where the corporation paid, the year has an '
-    'expense on Schedule 125 and is an ordinary return. Where the shareholder '
-    'paid personally, the corporation may genuinely have had a year with '
-    'nothing in it at all.',
-    'An earning or spending year is a full T2, prepared by Gondaliya CPA '
-    'Professional Corporation at gondaliyacpa.ca for $350.00 plus HST per '
-    'year. A year in which the land simply sat, costing the corporation '
-    'nothing, is filed on this page at $300.00 plus HST per tax year.'),
-
+    'A property corporation is almost always holding for a reason, '
+    'whether that is a build, a sale or a transfer to the next '
+    'generation. All three run through the corporation, and all three get '
+    'held up by filings that are not current.',
+    'Each idle year is $300.00 plus HST per tax year, filed oldest first '
+    'so the property cost base carries forward, with Schedule 8 added '
+    'where a building stands on the land.'),
   'sched_h': 'Which T2 Schedules a Real Estate Holding Corporation Files',
   'sched_rows': [
     ('Schedule 100', 'Balance sheet information', 'Required',

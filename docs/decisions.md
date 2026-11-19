@@ -12600,3 +12600,35 @@ hard-rule audit is clean on all ten.
 
 **Nine of the ten pages now open on why filing matters. The tenth opens on who
 should not bother, on purpose.**
+
+### And then real estate too, for consistency
+
+Navneet, asked whether he wanted the real estate page left as the one exception:
+*"consistency"*.
+
+Applied. **All ten F1 pages now open on the cost of not filing.** The real
+estate section 3 reads *"What an Unfiled Year Costs a Real Estate Holding
+Corporation"*, with four cards of its own: the year runs with the title, a
+demand can reach the corporation, a sale or refinancing stalls, the property
+cannot be moved out.
+
+The editorial argument in the entry above, that a property corporation
+disqualifies more visitors than it qualifies, was real but it was mine rather
+than the plan's, and a page that reads differently from its nine siblings costs
+more in confusion than it saves in filtered enquiries. Consistency wins.
+
+**Hard rule 8 is unaffected and was re-counted on the live pages afterwards.**
+Six statements remain on real estate holding and four on numbered holding, in
+the intro, the three-card checklist and the FAQ answers. The real estate intro
+still carries it in the plainest form on the page: *"A holding, rental or
+investment corporation is not nil in any year it earns, so we test each year
+before charging for it."*
+
+Gate held at **0.599** across all ten, audit clean on all ten templates and
+clean again live.
+
+What this leaves for Sharad, when the F1 template goes to him: the not-nil
+warning block that plan line 335 describes is now carried by the checklist on
+every vertical rather than by a dedicated block on any of them. If he wants the
+dedicated block back on the holding and rental verticals, it is one ops call
+per page to restore.
