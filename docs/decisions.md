@@ -12224,3 +12224,31 @@ pre-existing, neither caused by this batch:
   confirms launch, and `robots_global` is `["index"]`. Recorded here as a fact
   of the live site; whether rule 10 still applies is Sharad's call, not a
   setting to flip unasked.
+
+### Intro photograph was cropping a person out of the frame
+
+Reported by Navneet with a screenshot: the rightmost man in the team photo was
+sliced in half on the F1 vertical pages.
+
+The rules added earlier the same day forced the photo to `height:100%` with
+`object-fit:cover`, so it would cover the dark `::before` overlay on its cell.
+That cell is a flex item stretching to the height of the text column beside it,
+so at a 1440px viewport the photo was painted into a **570x668 portrait box**.
+The source, `169A7423-1-scaled-2`, is **1024x768** — 4:3 landscape. `cover`
+scaled it to 891px wide and cut **160px off each side**. Four people stand
+nearly edge to edge in that photo, so any horizontal crop cuts somebody; no
+`object-position` rescues it.
+
+Fixed by stopping the cell stretching rather than by stretching the photo:
+`align-self:flex-start` sizes the cell to its content, which removes the
+overlay band the forced height existed to hide, and the photo keeps its own
+4:3 ratio at the cell's full width. Measured on all five F1 pages at 1440px:
+image and cell both 570x428, ratio 1.333 against a natural 1.333.
+
+The header logo was measured in the same pass on all five pages (204x78 against
+a natural 1439x549) to confirm the `:only-child` rule is still confined to
+`#content` and has not reached the ElementsKit header a second time.
+
+Appended rather than edited in place: the superseded block is left above it
+with its own comment, since rewriting 5KB of live Additional CSS by hand to
+delete nine lines is how the header broke the first time.
