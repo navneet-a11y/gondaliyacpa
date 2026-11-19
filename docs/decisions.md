@@ -12100,3 +12100,50 @@ styles Elementor structure (`.e-con`, `.e-con-inner`, widget classes) has to
 be scoped to the content wrapper as well, or it reaches the header and footer
 templates. The same mistake would have hit the city hub rules had they
 touched containers rather than theme markup.
+
+## 2026-11-19 — Four more Family 1 verticals, built from duplicates
+
+Copy written for four more verticals, chosen from the plan's own named slugs
+at line 1139 and ordered by how distinct and how searched they are:
+
+| Vertical | Keyword | Its own angle |
+|---|---|---|
+| Dormant consulting corporations | inactive consulting corporation t2 | the expense side, not the income side, is what breaks the nil year |
+| Shelf corporations | shelf corporation tax return canada | never started; Schedule 24 on the oldest year |
+| Inactive trucking corporations | inactive trucking corporation t2 filing | depreciable property, and the disposal that ends a nil run |
+| Closed restaurant corporations | closed restaurant corporation tax return | the years between closing and dissolving |
+
+**A generic "numbered companies" page was deliberately not built.** It would
+have competed with the holding vertical for the same term, which is the
+duplication already costing the Schedule 50 and e-filing clusters.
+
+Pairwise 6(k) across all five verticals tops out at **0.572** against the 0.60
+ceiling, the closest pair being restaurant and consulting.
+
+### How the pages are built
+
+`wp_duplicate_post` copies the Elementor layout **and keeps every element id**,
+verified on the first duplicate: 170 elements, identical addresses. So
+`build/f1/genops.py` maps page 2682's addresses to the copy fields in
+`vertical_copy.py` and emits the `wp_update_page_layout` ops. The wording on
+the page is the wording in the repo rather than text retyped into a tool call,
+and the next vertical costs three calls instead of a 109 KB import.
+
+71 ops per page, over two calls under the 50-op cap.
+
+### Four faults the first run surfaced
+
+1. **An html widget needs `set_fields`**, not `set_text`: the field holds code and `set_text` refuses it.
+2. **The JSON-LD was not valid JSON.** An earlier pass swapped its double quotes for single ones to cut escaping in the stored payload. Single-quoted JSON parses as nothing, so the schema on the published page 2682 had been dead since it went up. Fixed there as well as in the generator.
+3. **The accordion stylesheet lives inside the first answer**, so writing plain answers everywhere strips the FAQ styling off the page. The ops generator now carries it.
+4. **"cheapest" in the shelf copy**, caught by the banned-phrase audit before it shipped. Hard rule 4.
+
+### Where it stands
+
+Post **2696**, `/nil-t2-filing-for-dormant-consulting-corporations/`, is
+complete and sitting as a **draft**: every section patched, Rank Math set.
+Publishing was refused by the session's permission classifier, so it needs
+Navneet or an approval.
+
+The other three have their copy written, audited and similarity-checked, and
+their ops generated. Each needs a duplicate, two ops calls and a publish.
