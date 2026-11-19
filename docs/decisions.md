@@ -12632,3 +12632,75 @@ warning block that plan line 335 describes is now carried by the checklist on
 every vertical rather than by a dedicated block on any of them. If he wants the
 dedicated block back on the holding and rental verticals, it is one ops call
 per page to restore.
+
+## 2026-11-19 — A Section 7.4 row the audit script never checked
+
+Navneet asked whether the F1 pages should carry something like gondaliyacpa's
+*"Nil T2 Filing Made Simple"*. Checking whether that wording was permitted
+turned up a gap that mattered more than the question.
+
+### The gap
+
+Section 7.4 contains this row:
+
+> `Conservatively, easily, simply, just` | Output rule | **Delete the word** |
+> Gate one item 34 | Never used about a forecast
+
+`build/f3/audit_visible.py` has never checked it. It checks the CRA wording,
+T183, the penalty qualification, superlatives, schema types, booking language,
+source-template leaks and emoji, but not this row. **Nine occurrences had
+therefore reached live F1 pages**, most of them written in this session:
+
+| Page | Where | Was |
+|---|---|---|
+| Dormant consulting | intro | "or simply stopped looking for the next contract" |
+| Dormant consulting | FAQ 3 | "Should I just dissolve the corporation instead?" |
+| Shelf | FAQ 6 | "Can I just dissolve it and forget the returns?" |
+| Inactive trucking | why card 3 | "Every year the equipment simply sits" |
+| Closed restaurant | intro | "or simply shut when the lease ran out" |
+| Closed restaurant | FAQ 9 | "Can several partners sign, or just one?" |
+| Dormant construction | intro | "or are simply between contracts" |
+| Dormant construction | not-nil card 4 | "the entity cannot simply be abandoned" |
+| Dormant IT consulting | intro | "or are simply waiting for the next statement of work" |
+
+All nine are the ordinary English senses of the words rather than the hedging
+the rule is aimed at, and the note scopes the concern to forecasts. That is an
+argument for raising the row with Sharad, not for leaving nine live hits in
+place when the approved replacement is literally "Delete the word" and gate one
+runs the whole table. They are gone; every deletion either improved the
+sentence or was neutral.
+
+**The rule is now in the audit script** as `OUTPUT_RULE`, wired into the same
+pass as `LEAK`, so this cannot recur silently. All ten templates and all ten
+live pages are clean against it.
+
+### On "Made Simple" itself
+
+It is not on the plumber, investment, condo, physician or sole-proprietor
+pages, nor on the gondaliyacpa home page. Navneet pointed to where it does
+live: `/onlyfans-creators-taxes-for-canadians/`, as **"CRA Compliance Made
+Simple"**, an H2 over three cards — Income Reporting Accuracy, GST/HST
+Registration and Filing, Recordkeeping Support. The plumber page runs the same
+slot as "Stay Compliant and Minimize Your Plumbing Business Tax". It is their
+**compliance-obligations section**: the things the client must do beyond the
+return itself.
+
+Not adopted yet, and the reasoning is recorded for Sharad rather than decided
+here:
+
+- **The phrase is survivable but awkward.** "Simple" is not the banned
+  "simply", so a gate one search for the table's words would not hit it. It is
+  still the same family of minimising language that row exists to discourage,
+  and it is a soft claim of the same class as "affordable", which was pulled
+  off these pages earlier today precisely because its permission is scoped to
+  two pages and unsigned.
+- **The content largely exists already.** The obligations beyond the T2 are on
+  every F1 page, in the "Due either way" column of the three-card checklist:
+  the GST/HST account and Form RC145, the payroll or workers compensation
+  account, Schedule 50, the provincial annual return, the clearance
+  certificate. The four-step "How a X Files" section plus the trust strip
+  covers the simplicity message.
+- **What would genuinely be new** is promoting that third column into a section
+  of its own with a heading, the way gondaliyacpa does. That is a new Elementor
+  section on ten live pages rather than a copy change, so it belongs in the same
+  conversation as the F1 template sign-off.

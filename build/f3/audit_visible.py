@@ -66,6 +66,12 @@ REQ_CITYHUB=[('overflow price',r'\$350\.00 (including HST|plus applicable sales 
 # 22 KB html widget, not the CSS-only widget it looked like, carrying 73
 # mentions of that industry. Visible-text rules did not catch it because none
 # of them names a brand. This does.
+# Section 7.4 output-rule row: "Conservatively, easily, simply, just |
+# Output rule | Delete the word | Gate one item 34". Was not checked here
+# until 2026-11-19, by which time nine had reached live F1 pages.
+OUTPUT_RULE=[('7.4 output rule: delete the word',
+              r'\b(conservatively|easily|simply|just)\b')]
+
 LEAK=[('source template brand',
        r'OnlyFans|Fansly|adult (industry|content)|camming|escort'
        r'|gcpa-|Know Exact Fees|Book (Your|Free) Consultation'
@@ -79,7 +85,7 @@ for f in sorted(glob.glob(sys.argv[1])):
     blob=' || '.join(out)
     name=os.path.basename(f)
     probs=[n for n,p in BAN if re.search(p,blob,re.I)]
-    probs+=[n for n,p in LEAK if re.search(p,blob)]
+    probs+=[n for n,p in LEAK+OUTPUT_RULE if re.search(p,blob)]
     req=REQ_ALL+(REQ_CITYHUB if 'cityhub' in name else [])
     miss=[n for n,p in req if not re.search(p,blob)]
     ext=[l for l in links if 'gondaliyacpa.ca' in l]

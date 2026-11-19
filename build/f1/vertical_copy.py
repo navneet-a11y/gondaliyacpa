@@ -272,7 +272,7 @@ VERTICALS = {
     'for consultants who want the backlog cleared without an engagement '
     'letter or an hourly bill, at $300.00 plus HST per tax year.',
     'Whether you took a salaried job, went on leave, moved abroad, or '
-    'simply stopped looking for the next contract, we check the year '
+    'stopped looking for the next contract, we check the year '
     'against invoices raised, expenses claimed and retainers held, '
     'prepare the return with its schedules, and have you sign one '
     'T183CORP for each year online. Nothing is printed and nothing is '
@@ -426,7 +426,7 @@ VERTICALS = {
     'No. A claimed expense makes the year active, with a loss to report '
     'rather than nil amounts. It is worth filing properly, because a '
     'non-capital loss carries forward against future consulting income.'),
-   ('Should I just dissolve the corporation instead?',
+   ('Should I dissolve the corporation instead?',
     'That is often the right answer, but dissolution does not skip the '
     'filings. Every outstanding year has to be filed before a clearance '
     'certificate is issued, and a final T2 is due within six months of '
@@ -655,7 +655,7 @@ VERTICALS = {
     'It can. Where the corporation claimed the registration and legal costs, '
     'that year has expenses and is not nil. Where the owner paid personally '
     'and never charged them through, the year stays nil.'),
-   ('Can I just dissolve it and forget the returns?',
+   ('Can I dissolve it and forget the returns?',
     'No. A clearance certificate will not be issued while a year is unfiled, '
     'and dissolution adds a final T2 due within six months. Filing first is '
     'what makes dissolution possible.'),
@@ -796,7 +796,7 @@ VERTICALS = {
      'The undepreciated balance carries forward correctly, so the figures are '
      'right when the truck is eventually sold.'),
     ('One Price While the Truck Sits',
-     'Every year the equipment simply sits is $300.00 plus HST, with no '
+     'Every year the equipment sits unused is $300.00 plus HST, with no '
      'hourly billing.'),
     ('Reviewed by a CPA',
      'A CPA Ontario member reviews the return before it is transmitted '
@@ -912,7 +912,7 @@ VERTICALS = {
     'collecting filing years nobody is watching. We file those years at '
     '$300.00 plus HST per tax year so the entity can finally be wound up.',
     'Whether the space was handed back, sold to the next tenant, closed '
-    'after a partnership split, or simply shut when the lease ran out, we '
+    'after a partnership split, or shut when the lease ran out, we '
     'separate the closing year from the quiet ones, prepare the nil years '
     'with Schedules 100, 125, 141 and 50, and sign a T183CORP for each. '
     'Dissolution needs every one of them filed first.'),
@@ -1084,7 +1084,7 @@ VERTICALS = {
    ('What about gift cards people never used?',
     'The outstanding balance is a liability. Writing it off or honouring it '
     'changes the books and takes that year out of nil.'),
-   ('Can several partners sign, or just one?',
+   ('Can several partners sign, or only one?',
     'One authorised signing officer signs the T183CORP for each tax year. '
     'Every shareholder at 10% or more is still listed on Schedule 50.'),
    ('The CRA sent a demand to file. What now?',
@@ -1327,7 +1327,7 @@ VERTICALS = {
     'registry waiting for the next job. We file those seasons at $300.00 '
     'plus HST per tax year so the company stays ready to bid.',
     'Whether you took a payroll job with a larger builder, split a '
-    'partnership and stopped bidding, sold the trailer, or are simply '
+    'partnership and stopped bidding, sold the trailer, or are '
     'between contracts, we test the season against released holdback, '
     'subcontractor payments and equipment disposals, then prepare and '
     'transmit the return. An unbroken filing history is what bonding and '
@@ -1346,7 +1346,7 @@ VERTICALS = {
      'take a trade on.'),
     ('Closing the Company Waits',
      'Dissolution needs every season filed first, so the entity cannot '
-     'simply be abandoned.'),
+     'be abandoned.'),
   ],
   'notnil_text': (
     'A dormant trades corporation is almost always kept on purpose, '
@@ -1958,7 +1958,7 @@ VERTICALS = {
     'when the next contract needs it.',
     'Whether you incorporated because a client or an agency required it, '
     'moved to agency payroll when the project closed, took ordinary '
-    'employment, or are simply waiting for the next statement of work, we '
+    'employment, or are waiting for the next statement of work, we '
     'read the corporate card before treating a year as nil, keep '
     'equipment on Schedule 8 while it is owned, and sign one T183CORP per '
     'year online. Agencies ask for the filing history at onboarding.'),
