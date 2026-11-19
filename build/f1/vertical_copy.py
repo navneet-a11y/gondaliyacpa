@@ -95,7 +95,7 @@ VERTICALS = {
      'single-shareholder numbered corporation still files it.'),
     ('Schedule 24', 'First-time filer information',
      'First return only',
-     'Filed on the corporation’s first T2 after incorporation, then not '
+     'Filed on the corporation&rsquo;s first T2 after incorporation, then not '
      'again.'),
     ('Schedule 8', 'Capital cost allowance',
      'Only with depreciable property',
@@ -169,7 +169,7 @@ VERTICALS = {
   ],
 
   'svc_h': 'What a Numbered Holding Corporation Usually Needs Next',
-  'proc_h': 'How a Holding Corporation’s Nil T2 Gets Filed',
+  'proc_h': 'How a Holding Corporation&rsquo;s Nil T2 Gets Filed',
   'proc_lede': 'Four steps, no meeting, and no document to post. The whole '
                'engagement runs from the filing form.',
   'proc_note': 'The sequence is the same whether the corporation has one '

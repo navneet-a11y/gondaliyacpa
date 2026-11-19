@@ -203,9 +203,9 @@ def checklist(v):
     """
     def card(cls, head, items):
         lis = ''.join('<li>%s</li>' % i for i in items)
-        return (f'<div class="cnf-card {cls}"><h3>{head}</h3>'
-                f'<ul>{lis}</ul></div>')
-    return (CHECK_CSS + '<div class="cnf-grid">'
+        return (f"<div class='cnf-card {cls}'><h3>{head}</h3>"
+                f"<ul>{lis}</ul></div>")
+    return (CHECK_CSS + "<div class='cnf-grid'>"
             + card('', 'The year is nil', v['chk_yes'])
             + card('cnf-no', 'The year is not nil', v['chk_no'])
             + card('', 'Due either way', v['chk_both'])
@@ -236,19 +236,19 @@ SCHED_CSS = (
 def sched_table(v):
     rows = ''.join(
         f'<tr><td><strong>{a}</strong></td><td>{b}</td>'
-        f'<td class="cnf-req">{c}</td><td>{d}</td></tr>'
+        f"<td class='cnf-req'>{c}</td><td>{d}</td></tr>"
         for a, b, c, d in v['sched_rows'])
     return (SCHED_CSS +
-            '<table class="cnf-sched"><thead><tr>'
-            '<th scope="col">Schedule</th><th scope="col">What it reports</th>'
-            '<th scope="col">On a nil year</th><th scope="col">Why</th>'
+            "<table class='cnf-sched'><thead><tr>"
+            "<th scope='col'>Schedule</th><th scope='col'>What it reports</th>"
+            "<th scope='col'>On a nil year</th><th scope='col'>Why</th>"
             '</tr></thead><tbody>' + rows + '</tbody></table>'
-            f'<p class="cnf-src">{v["sched_note"]}</p>')
+            f"<p class='cnf-src'>{v['sched_note']}</p>")
 
 
 def geo_html(v):
-    j = ', '.join(f'<a href="{SITE}{u}">{n}</a>' for n, u in GEO)
-    c = ', '.join(f'<a href="{SITE}{u}">{n}</a>' for n, u in CITIES)
+    j = ', '.join(f"<a href='{SITE}{u}'>{n}</a>" for n, u in GEO)
+    c = ', '.join(f"<a href='{SITE}{u}'>{n}</a>" for n, u in CITIES)
     return P(
         f'The return is prepared and transmitted electronically, so a '
         f'{v["short"]} is filed the same way wherever its registered office '
@@ -308,8 +308,8 @@ def schema(v, slug):
              'item': SITE + '/services/'},
             {'@type': 'ListItem', 'position': 3,
              'name': f'Nil T2 Filing for {v["name"]}', 'item': url}]}]}
-    return ('<script type="application/ld+json">'
-            + json.dumps(g, ensure_ascii=False) + '</script>')
+    return ("<script type='application/ld+json'>"
+            + json.dumps(g, ensure_ascii=False).replace('"', chr(39)) + '</script>')
 
 
 def build(slug):
