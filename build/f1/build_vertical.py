@@ -53,34 +53,38 @@ HERO = {
     'custom_height':              {'unit': 'px', 'size': 360, 'sizes': []},
 }
 
-# Twelve cards in source section 16. Every target verified live in Search
-# Console's page report on 2026-11-19, so none of these is a guess.
+# Six cards in source section 16. The template ships twelve; Navneet cut it to
+# six on 2026-11-19 and supplied the copy. Every target is a national service
+# page the home page already links to, checked against the live home page on
+# 2026-11-19, so none of these is a guess.
 SERVICES = [
- ('/nil-t2-filing/',                               'Nil T2 Filing',
-  'The service itself: one T2 for one corporation for one tax year.'),
- ('/guides/inactive-holding-company-filing/',      'Inactive Holding Company Filing',
-  'The full guide to filing for a holding corporation that did nothing.'),
- ('/guides/dormant-and-inactive-corporations/',    'Dormant and Inactive Corporations',
-  'What dormant means to the Canada Revenue Agency and what still falls due.'),
- ('/guides/gifi-schedules-100-125-141/',           'GIFI Schedules 100, 125 and 141',
-  'When the GIFI trio is required and the narrow case for omitting it.'),
- ('/guides/schedule-50-and-shareholder-reporting/', 'Schedule 50 and Shareholders',
-  'The 10% rule, what each row records, and why a nil return still files it.'),
- ('/guides/catch-up-unfiled-corporate-tax-returns/', 'Catching Up Unfiled Returns',
-  'The order to file several outstanding years in, and why order matters.'),
- ('/guides/final-t2-and-dissolution/',             'Final T2 and Dissolution',
-  'Winding the corporation up and the return due within six months.'),
- ('/compare/t2-short-vs-full-t2/',                 'T2 Short or Full T2',
-  'The eight conditions, and which form a nil year actually qualifies for.'),
- ('/guides/t2-filing-deadlines/',                  'T2 Filing Deadlines',
-  'Six months after the fiscal year-end, and how the date moves.'),
- ('/pricing/nil-t2-filing-cost/',                  'Nil T2 Filing Cost',
-  'What $300.00 plus HST per tax year covers, line by line.'),
- ('/tools/nil-return-vs-full-return-checker/',     'Nil or Full Return Checker',
-  'Answer five questions and find out which return the year needs.'),
- ('/tools/shareholder-loan-balance-checker/',      'Shareholder Loan Checker',
-  'What a loan sitting on the books does to a return that looks nil.'),
+ ('/nil-t2-filing/', 'Nil T2 Filing',
+  "Your corporation's nil T2 return prepared, reviewed by a CPA and filed "
+  'electronically for $300.00 plus HST per tax year.'),
+ ('/catch-up-nil-t2-filing/', 'Catch-Up Nil T2 Filing',
+  'Several years unfiled? Pick every tax year you have not filed. Each year '
+  'is $300.00 plus HST.'),
+ ('/dormant-corporation-filing/', 'Dormant Corporation Filing',
+  'A corporation that did nothing in the year still has to file a T2 every '
+  'year until it is formally dissolved.'),
+ ('/final-t2-before-dissolution/', 'Final T2 Before Dissolution',
+  'A final T2 is due within six months of dissolution. Unfiled years block a '
+  'clearance certificate and dissolution.'),
+ ('/t2-short-filing/', 'T2 Short Filing',
+  'The T2 Short is used where the corporation qualifies. It is included in '
+  'the $300.00 plus HST fee.'),
+ ('/inactive-holding-corporation-t2-filing/',
+  'Inactive Holding Corporation T2 Filing',
+  'A holding corporation with no investment income and no dividends paid or '
+  'received in the year files a nil T2.'),
 ]
+
+# The team photograph already on this site (attachment 273). The source
+# template's intro cell carries the image as a container background, which
+# desource() blanks because it is a gondaliyacpa.ca asset; without this the
+# cell renders empty.
+INTRO_IMG_ID = 273
+INTRO_IMG = (f'{SITE}/wp-content/uploads/2026/09/169A7423-1-scaled-2.jpg')
 
 # Jurisdiction and city links for the geography section. All live.
 GEO = [('Ontario', '/nil-t2-filing-ontario/'),
@@ -247,15 +251,38 @@ def sched_table(v):
 
 
 def geo_html(v):
-    j = ', '.join(f"<a href='{SITE}{u}'>{n}</a>" for n, u in GEO)
-    c = ', '.join(f"<a href='{SITE}{u}'>{n}</a>" for n, u in CITIES)
+    """Jurisdictions and cities woven into prose.
+
+    The first version listed them as "Jurisdiction pages: a, b, c. City pages:
+    d, e, f", which reads as a link dump rather than a paragraph. Navneet
+    asked for them placed naturally, so the links now sit inside sentences
+    that say something: where incorporation happens, what it changes, and what
+    it does not.
+    """
+    def a(name, path):
+        return f"<a href='{SITE}{path}'>{name}</a>"
     return P(
-        f'The return is prepared and transmitted electronically, so a '
-        f'{v["short"]} is filed the same way wherever its registered office '
-        f'sits. Jurisdiction pages: {j}.',
-        f'City pages: {c}. A Quebec corporation also files the CO-17 and an '
-        f'Alberta corporation also files the AT1. Both are separate '
-        f'provincial returns and neither is included in the fee.')
+        f'{v["name"][:1]}{v["name"][1:].lower()} are filed the same way '
+        f'wherever the registered office sits, because the return is prepared '
+        f'and transmitted electronically from end to end. There is nothing to '
+        f'print, nothing to post and nothing to sign in person.',
+        'Where the corporation was incorporated changes the registry, not the '
+        'return. An ' + a('Ontario', '/nil-t2-filing-ontario/') +
+        ' corporation answers to the Ontario Business Registry, and '
+        'corporations in ' + a('British Columbia', '/nil-t2-filing-british-columbia/') +
+        ', ' + a('Alberta', '/nil-t2-filing-alberta/') +
+        ', ' + a('Quebec', '/nil-t2-filing-quebec/') +
+        ' and ' + a('Saskatchewan', '/nil-t2-filing-saskatchewan/') +
+        ' each answer to their own. The T2 itself is federal and identical in '
+        'all of them. Within Ontario, a corporation registered in ' +
+        a('Toronto', '/toronto/') + ', ' + a('Mississauga', '/mississauga/') +
+        ', ' + a('Brampton', '/brampton/') + ' or ' + a('Ottawa', '/ottawa/') +
+        ' is filed on the same terms and at the same price as one anywhere '
+        'else in the country.',
+        'Two provinces add a return the federal T2 does not cover. A Quebec '
+        'corporation also files the CO-17 and an Alberta corporation also '
+        'files the AT1. Both are separate provincial returns, and neither is '
+        'included in the $300.00 plus HST fee.')
 
 
 FAQ_CSS = (
@@ -423,6 +450,31 @@ def build(slug):
                     st['text_color'] = '#FFFFFF'
 
         if idx == 16:
+            # The source grid holds twelve wrapper containers, one card each.
+            # Navneet cut the section to six on 2026-11-19, so the surplus
+            # wrappers are dropped before the cards are filled; leaving them
+            # in would ship six empty cells.
+            def trim(n):
+                if isinstance(n, dict):
+                    kids = n.get('elements')
+                    if isinstance(kids, list) and len(kids) > len(SERVICES):
+                        cards = sum(1 for k in kids
+                                    if widgets(k) and all(
+                                        w.get('widgetType') == 'elementskit-icon-box'
+                                        for w in widgets(k)))
+                        if cards == len(kids):
+                            del kids[len(SERVICES):]
+                            return True
+                    for k in (kids or []):
+                        if trim(k):
+                            return True
+                elif isinstance(n, list):
+                    for k in n:
+                        if trim(k):
+                            return True
+                return False
+            trim(sec)
+            ws = widgets(sec)
             boxes = [w for w in ws if w.get('widgetType') == 'elementskit-icon-box']
             if len(boxes) != len(SERVICES):
                 raise SystemExit(f'{slug}: section 16 has {len(boxes)} cards, '
@@ -467,6 +519,34 @@ def build(slug):
             sec['settings']['css_classes'] = (cls + ' cnf-faq').strip()
 
         desource(sec)
+
+        if idx == 1:
+            # desource() blanks the intro cell's background image because it is
+            # a gondaliyacpa.ca asset. Put this site's own copy of the same
+            # photograph back, so the left half of the intro is not an empty
+            # frame. Runs after desource, or it would be blanked again.
+            def put(n):
+                if isinstance(n, dict):
+                    st = n.get('settings')
+                    if isinstance(st, dict) and isinstance(
+                            st.get('background_image'), dict) \
+                            and not st['background_image'].get('url'):
+                        st['background_image'] = {
+                            'url': INTRO_IMG, 'id': INTRO_IMG_ID,
+                            'source': 'library', 'size': '',
+                            'alt': 'CPA Ontario registered firm preparing nil '
+                                   'T2 returns'}
+                        return True
+                    for k in (n.get('elements') or []):
+                        if put(k):
+                            return True
+                elif isinstance(n, list):
+                    for k in n:
+                        if put(k):
+                            return True
+                return False
+            put(sec)
+
         out.append(sec)
     return out
 
