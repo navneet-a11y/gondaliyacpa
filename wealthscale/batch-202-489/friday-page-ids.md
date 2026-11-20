@@ -1,0 +1,42 @@
+# Friday new pages: plan number to WordPress page ID
+
+| Plan no | WP id | URL |
+| --- | --- | --- |
+| 452 | 1020 | /compare/best-fhsa-for-etfs/ |
+| 453 | 1028 | /compare/best-self-directed-rrsp/ |
+| 454 | 1038 | /compare/best-fhsa-robo-advisors/ |
+| 455 | 1019 | /compare/best-brokerage-promotions/ |
+| 456 | 1027 | /compare/best-brokers-for-newcomers/ |
+| 457 | 1037 | /accounts/fhsa-deduction/ |
+| 458 | 1018 | /accounts/rdsp/ |
+| 459 | 1024 | /accounts/unlocking-lira-ontario/ |
+| 460 | 1036 | /accounts/tfsa-savings-vs-investing/ |
+| 461 | 1016 | /vs/resp-vs-tfsa/ |
+| 462 | 1025 | /retirement/cpp-maximum/ |
+| 463 | 1034 | /tax/t1135-foreign-property/ |
+| 464 | 1015 | /calculators/tfsa-growth-calculator/ |
+| 465 | 1021 | /calculators/gis-calculator/ |
+| 466 | 1026 | /calculators/margin-interest-calculator/ |
+| 467 | 1014 | /calculators/home-buyers-plan-calculator/ |
+| 468 | 1022 | /calculators/lif-calculator/ |
+| 469 | 1033 | /calculators/rdsp-calculator/ |
+| 470 | 1017 | /calculators/cash-back-calculator/ |
+| 471 | 1013 | /research/ |
+| 472 | 1023 | /research/tfsa-statistics/ |
+| 473 | 1035 | /research/rrsp-statistics/ |
+| 474 | 1046 | /research/brokerage-fee-index/ |
+| 475 | 1029 | /credit-cards/best-lounge-access-credit-cards/ |
+| 476 | 1040 | /business-owners/best-business-credit-cards/ |
+| 477 | 1039 | /business-owners/best-business-savings-accounts/ |
+| 478 | 1042 | /business-owners/best-business-gic-rates/ |
+| 479 | 1048 | /banking/best-bank-promotions/ |
+| 480 | 1045 | /banking/best-prepaid-cards/ |
+| 481 | 1051 | /banking/best-senior-bank-accounts/ |
+| 482 | 1053 | /banking/best-credit-unions/ |
+| 483 | 1044 | /retirement/average-retirement-income/ |
+| 484 | 1049 | /learn/open-a-brokerage-account/ |
+| 485 | 1052 | /learn/how-to-invest-100000/ |
+| 486 | 1041 | /learn/dollar-cost-averaging/ |
+| 487 | 1047 | /learn/asset-allocation/ |
+| 488 | 1050 | /markets/how-to-buy-etfs/ |
+| 489 | 1043 | /markets/all-in-one-etfs/ |
