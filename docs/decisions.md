@@ -12897,3 +12897,34 @@ the local scan now reports 0 of 106 at risk.
    cosmetic or stale rather than broken, but they mean a byte-for-byte
    repo-equals-live check does not currently pass family-wide. Worth one pass
    to establish which side is right.
+
+## 2026-11-20 — the tools hub was linking 100 of 106
+
+Navneet: "are new 5 calculator also done and added in hub". They were not.
+
+`/tools/` (page 1187) linked 100 children. Missing were batch 16's five **and
+batch 15's `/tools/ontario-annual-return-due-date-calculator/`**, published
+November 16 — so the hub had been breaching plan line 1224, "a hub links every
+child in its family", since before this batch. `build_tools_hub.py` has an
+assert for exactly this and it fired on the Ontario one the moment the script
+was run; the gap existed because nobody had run it since batch 14. **Publishing
+a tool and carding it on the hub are two steps, and the second is easy to
+forget: the per-batch procedure in the PUBLISH notes does not mention it.**
+
+Placement. The GST/HST nil return deadline joins "CRA Accounts, Payroll and
+GST/HST"; the Ontario annual return due date joins "Annual Returns and the
+Registry", which already holds Schedule 546 and the missed-returns calculator.
+The four penalty and relief tools are a twelfth group, "Penalties, Interest and
+Relief" — "Unfiled Years and Catching Up" is about establishing how many years
+are open and closing them, while these four are about what the open years cost
+and what can be waived. Existing cards were not reshuffled, so that group keeps
+the nil return late penalty checker its host pages link to.
+
+Applied live as three targeted inserts rather than a 37 KB content replacement.
+Verified: 106 distinct tool links on the hub, every live tool linked, no link
+pointing at a page that is not a live tool, and the twelve group headings
+render in order.
+
+Repo and live still differ in size on this page (the built file is about 2.2 KB
+smaller than `post_content`), which is the same pre-existing drift recorded in
+the previous entry, not something this change introduced.

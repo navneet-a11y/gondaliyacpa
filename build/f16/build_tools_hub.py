@@ -61,6 +61,26 @@ with unfiled years, and Schedule 11 with the schedules. The two non-resident
 tools -- permanent establishment and non-resident corporation filing -- join
 "Provincial, Non-Resident and Director Exposure", which is the group that
 already holds the non-resident penalty calculator.
+
+NOVEMBER 20, 2026: ONE HUNDRED TO ONE HUNDRED AND SIX
+
+Navneet asked whether batch 16's five tools were linked from the hub. They
+were not, and neither was batch 15's Ontario annual return due date
+calculator, published on November 16 -- so the hub was linking 100 of 106 and
+had been breaching line 1224 since then. The assert below is what caught the
+Ontario one; nobody had run this script since batch 14.
+
+Two join existing groups by subject: the GST/HST nil return deadline with the
+other GST/HST account tools, and the Ontario annual return due date with the
+registry group that already holds Schedule 546 and the missed-returns
+calculator.
+
+The remaining four are a twelfth group, "Penalties, Interest and Relief".
+They do not belong under "Unfiled Years and Catching Up", which is about
+establishing how many years are open and closing them; these four are about
+what the open years cost and what can be waived. Existing cards were left
+where they are rather than reshuffled, so "Unfiled Years and Catching Up"
+keeps the nil return late penalty checker that host pages link to from there.
 """
 import io, json, os
 
@@ -68,7 +88,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 SITE = 'https://corpnilfilingfor300.ca'
 HUB = SITE + '/tools/'
 FORM = SITE + '/form/'
-TODAY, ISO = 'November 9, 2026', '2026-11-09'
+TODAY, ISO = 'November 20, 2026', '2026-11-20'
 PRICE = '$300.00 plus HST per tax year'
 TITLE = 'Nil T2 Filing Tools and Calculators'
 PAGE_TITLE = 'Nil T2 Filing Tools and Calculators for Canadian Corporations'
@@ -361,6 +381,10 @@ GROUPS = [
    'Business Number vs Corporation Number Checker',
    'Two numbers from two bodies. Which one the T2 needs and which one the '
    'registry annual return needs.'),
+  ('gst-hst-nil-return-deadline-calculator',
+   'GST/HST Nil Return Deadline Calculator',
+   'An annual filer reports three months after the fiscal year end, a monthly '
+   'or quarterly filer one month after the period ends.'),
  ]),
 
  ('Annual Returns and the Registry', [
@@ -400,6 +424,10 @@ GROUPS = [
    'Corporate Revival Requirement Checker',
    'Being struck by a registry is not a wind-up. Three answers show what '
    'revival restores and which tax years survived the striking.'),
+  ('ontario-annual-return-due-date-calculator',
+   'Ontario Annual Return Due Date Calculator',
+   'Six months after the fiscal year-end, not the incorporation date, and '
+   'filed through the Ontario Business Registry rather than with the T2.'),
  ]),
 
  ('Winding Up and Dissolution', [
@@ -460,6 +488,24 @@ GROUPS = [
    'Multi-Year Signing Requirement Checker',
    'Each tax year carries its own Form T183CORP. How many signatures and '
    'confirmations a run of years produces.'),
+ ]),
+
+ ('Penalties, Interest and Relief', [
+  ('t2-late-filing-penalty-calculator', 'T2 Late Filing Penalty Calculator',
+   'Five per cent of the tax unpaid at the due date plus one per cent for '
+   'each complete month late, to twelve months.'),
+  ('repeated-failure-to-file-penalty-calculator',
+   'Repeated Failure to File Penalty Calculator',
+   'The larger provision, ten per cent plus two per cent a month to twenty '
+   'months, and the two conditions that both have to be met first.'),
+  ('taxpayer-relief-eligibility-checker',
+   'Taxpayer Relief Eligibility Checker',
+   'Whether the year sits inside the ten-year window and whether a ground is '
+   'identified. Relief reaches penalties and interest, never the tax.'),
+  ('voluntary-disclosure-eligibility-checker',
+   'Voluntary Disclosure Eligibility Checker',
+   'The conditions an application has to meet, and why a year that was '
+   'charged nothing has little for the programme to relieve.'),
  ]),
 ]
 
