@@ -13128,3 +13128,154 @@ deliberately rather than diverging alone.
 **11 of 215.** The ten-page test batch is complete and this is the first page
 past it. Of the plan's fourteen named F1 keywords, **dentistry professional
 corporations** is now the only named one unbuilt.
+
+## 2026-11-20 — F1 batch 6, and the Appendix A vertical list that had been missed
+
+Navneet asked for the next four. The answer to *which* four turned on a
+correction from Navneet: *"no but plan must have what other f1 verticles
+pending."*
+
+### The 215 verticals are enumerated, and nothing had been built against them
+
+They are in **Appendix A at line 2292**, one per line, and they were missed
+until now because Appendix A writes them as `/nil-t2-return-for-<token>/`
+while every live page and 6(a) line 1139 use `/nil-t2-filing-for-<token>/`.
+A grep for the live pattern finds eight hits in the whole plan and none of
+them is the list.
+
+This is the **eighth Appendix A conflict** and it is resolved the way the
+other seven were: follow 6(a), because that matches the CPT rewrite base and
+the live URLs. Only the tokens are taken from Appendix A. The list is now in
+the repo at `docs/seo/f1-appendix-a-verticals.txt` so this cannot happen
+again.
+
+`cnf_entity`, which plan line 308 says holds the 215 terms, has **0 terms on
+the live site**. The taxonomy is registered and empty.
+
+### Eight of the eleven live F1 pages are off-plan slugs
+
+Measured against the list:
+
+| Live slug | In Appendix A |
+|---|---|
+| `dormant-consulting-corporations` | yes, #1 |
+| `inactive-law-professional-corporations` | yes, #113 |
+| `numbered-holding-corporations` | yes, #184 |
+| `shelf-corporations` | no (Appendix A has `shell-corporations`, plus three `shelf-` compounds) |
+| `inactive-trucking-corporations` | no (has `trucking-` and six compounds) |
+| `closed-restaurant-corporations` | no (has `restaurant-` and three compounds) |
+| `medicine-professional-corporations` | no (has `medical-professional-corporations`) |
+| `dormant-construction-corporations` | no — **Appendix A has no construction token at all** |
+| `e-commerce-corporations` | no (has `ecommerce-corporations`, unhyphenated) |
+| `real-estate-holding-corporations` | no (has `real-estate-numbered-corporations`) |
+| `dormant-it-consulting-corporations` | no (has `it-consulting-` and three compounds) |
+
+Those eight were built from the Section 6(d) keyword list at line 1230, which
+is the stated priority order and which this session had been following. They
+are good pages on the right topics; their slugs are simply not the plan's.
+**This needs Navneet's and Sharad Gondaliya's call and is not a build
+decision**: either the eight are re-slugged to Appendix A with 301s, or they
+are accepted as extras and the count becomes 215 plus 8. Nothing has been
+changed either way.
+
+Counting topics rather than slugs, **166 of the 215 are genuinely pending**.
+
+### The four built
+
+Line 1230's fourteen keywords are now exhausted (dentistry was the last), so
+the order from here is Appendix A's, skipping tokens whose topic a live page
+already covers.
+
+| ID | URL | Appendix A | Focus keyword | Distinguishing facts |
+|---|---|---|---|---|
+| 2847 | `/nil-t2-filing-for-dental-professional-corporations/` | #4 | nil t2 for dentistry professional corporation | Orthodontic and implant instalments paid after closing; operatory equipment on Schedule 8; a promissory note from the buyer, principal against interest |
+| 2850 | `/nil-t2-filing-for-landscaping-corporations/` | #6 | nil t2 for landscaping corporation | Condo and municipal contracts not renewed; trailer and mower fleet parked but on the books; selling one ends the nil year; jobs done personally |
+| 2854 | `/nil-t2-filing-for-staffing-agency-corporations/` | #9 | nil t2 for staffing agency corporation | A margin business with no assets at all; late permanent placement fees; an open payroll account owing nil remittances beside a nil T2; a credited-back placement |
+| 2859 | `/nil-t2-filing-for-hair-salon-corporations/` | #11 | nil t2 for hair salon corporation | Chair rent received makes it a rental corporation for the year; unredeemed gift certificates as a liability; a payment for surrendering the lease |
+
+Dental is double-grounded: Appendix A #4 and line 1230 item 12.
+
+**#2 `real-estate-numbered-corporations`, #3 `trucking-corporations`, #5
+`shell-corporations`, #7 `medical-professional-corporations`, #8
+`it-consulting-corporations` and #10 `restaurant-corporations` were skipped**
+because a live page covers each topic. `shell-corporations` is the one worth
+raising: a shell corporation and a shelf corporation are different things, and
+the live page is `shelf-corporations`. Whether the plan meant shelf, or wants
+both, is Navneet's call.
+
+Published the usual way: duplicates of 2682 patched by `genops.py`, 71 ops in
+two calls each. Every fresh duplicate of 2682 reads back the same layout
+version, `f6d0fc672e20ae75`, so only the first of the four needed a layout
+read. `cnf_family` f1 (term 14) came across with each duplicate. The
+`nil_vertical` sitemap is at **15 of 15**.
+
+### The similarity gate failed, three times, and the cause was mine again
+
+First build **0.661**, with seven pairs over 0.60 — every one of them
+involving the new four. Exactly the batch-3 failure: four pages written back
+to back reuse each other's phrasing rather than only the template's.
+
+Measured field by field, 176 string pairs sat at 0.78 or above. The
+`sched_rows` schedule name, description and status columns are fixed by plan
+line 1209 and are family furniture, as are the section headings, the
+geography paragraph, the two stylesheets and the price deliverables list —
+together the ~0.41 to 0.50 floor the earlier entries recorded. The excess was
+in `chk_both`, `chk_yes`, the step headings, the trust strip, `sched_note`,
+and the "A year with X is $300.00 plus HST per tax year" opening I had used
+four times.
+
+- Pass 2, after re-architecting those fields per vertical with a different
+  grammatical frame for each: **0.636**.
+- Pass 3, after re-voicing landscaping — which sat in all three remaining
+  failing pairs — to open on the equipment rather than on the year:
+  **0.604**, one pair left by 0.004.
+- Pass 4, after diverging six more landscaping strings from hair salon, the
+  structurally closest pair in the family: **0.599 PASS**, and that peak is
+  the pre-existing construction/IT pair, not any of the new four.
+
+Per-page peaks: dental 0.591 against medicine, hair salon 0.590 against
+dental, staffing 0.585 against dental, landscaping 0.580 against hair salon.
+
+**Landscaping and hair salon are the new closest pair to watch.** Both are
+owner-operated trades whose premises or equipment went quiet, so the overlap
+is substance rather than wording, and either one being edited needs the gate
+re-run.
+
+### The audit caught two more
+
+`audit_visible.py` failed staffing on **`guarantee`** (rule 4) in a schedule
+box titled "A Replacement Guarantee Can Reverse Revenue", and failed staffing
+and hair salon on the **7.4 output rule** word *simply*, both introduced by
+the pass-2 rewrite rather than the first draft. Worth noting that the rewrite
+to fix one gate broke another; both gates were re-run after fixing, not just
+the one that had failed.
+
+After fixing: 117 strings each, 0 failures, on all four.
+
+### Live audit
+
+All four: HTTP 200, one H1, 27 H2s, ten FAQ items, one JSON-LD block holding
+Service and BreadcrumbList and nothing else, no FAQPage, HowTo, Review or
+aggregateRating, no 7.4 banned phrase, no superlative, no bare T183, no
+unqualified "no penalty", no EFILE number or GroupID, no booking widget, no
+emoji, CO-17 and AT1 both named as separate returns, `$300.00 plus HST per
+tax year` 7 times and `$350.00 plus HST per year` present. **115 of 115 copy
+strings verbatim on each page.**
+
+### Two finished drafts parked rather than published
+
+`build/f1/parked_copy.py` holds copy for `rental-property-corporations`
+(Appendix A #82) and `farming-corporations` (#75), both written before the
+Appendix A list was found and both lower in the order than the four above.
+They are outside `VERTICALS` so they stay out of the gates until they are
+moved across, and neither has been gated yet. A third draft, for dormant
+personal real estate corporations, was discarded: Appendix A has no such
+token, only `real-estate-brokerage-corporations` (#53).
+
+### Where F1 stands
+
+**15 built.** Of the 215 Appendix A tokens, 3 live slugs match exactly, 8 live
+pages cover a token's topic under an off-plan slug, 4 were added today at
+Appendix A #4, #6, #9 and #11, and **166 are pending**. Still open from the
+previous entry: every F1 page is an orphan, and the family says `plus HST` on
+national pages.

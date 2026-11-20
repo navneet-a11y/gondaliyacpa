@@ -2037,5 +2037,46 @@
         "breadcrumb": "Inactive Law Professional Corporations"
       }
     ]
+  },
+  "nil_vertical_f1_batch6": {
+    "note": "Family 1 batch 6, the next four pending verticals (Navneet, 2026-11-20). First batch chosen from the Appendix A list of 215 vertical tokens, found this session at plan line 2292 and now kept in docs/seo/f1-appendix-a-verticals.txt. Line 1230’s fourteen keywords are exhausted, so the order is Appendix A’s, skipping tokens a live page already covers topically. URL pattern follows 6(a) line 1139, not Appendix A’s /nil-t2-return-for-/: eighth conflict, resolved as the other seven. IDs 2847, 2850, 2854 and 2859, all live, cnf_family f1, sitemap at 15 of 15.",
+    "items": [
+      {
+        "id": 2847,
+        "slug": "nil-t2-filing-for-dental-professional-corporations",
+        "appendix_a_rank": 4,
+        "kw": "nil t2 for dentistry professional corporation",
+        "title": "Dental Professional Corporation Nil T2 | Quiet Years",
+        "desc": "A dental professional corporation files for every tax year it exists, including a year it treated nobody. What makes such a year nil, and what ends it.",
+        "breadcrumb": "Dental Professional Corporations"
+      },
+      {
+        "id": 2850,
+        "slug": "nil-t2-filing-for-landscaping-corporations",
+        "appendix_a_rank": 6,
+        "kw": "nil t2 for landscaping corporation",
+        "title": "Landscaping Corporation Nil T2 | Years With No Contracts",
+        "desc": "A landscaping corporation with no contracts in a year still files a T2. Why selling the mowers or the trailer ends the nil year, and what the filing costs.",
+        "breadcrumb": "Landscaping Corporations"
+      },
+      {
+        "id": 2854,
+        "slug": "nil-t2-filing-for-staffing-agency-corporations",
+        "appendix_a_rank": 9,
+        "kw": "nil t2 for staffing agency corporation",
+        "title": "Staffing Agency Corporation Nil T2 | No-Placement Years",
+        "desc": "A staffing corporation with no placements in a year still files a T2. Why an open payroll account is a separate problem, and what the nil filing costs.",
+        "breadcrumb": "Staffing Agency Corporations"
+      },
+      {
+        "id": 2859,
+        "slug": "nil-t2-filing-for-hair-salon-corporations",
+        "appendix_a_rank": 11,
+        "kw": "nil t2 for hair salon corporation",
+        "title": "Hair Salon Corporation Nil T2 | Years After Closing",
+        "desc": "A salon corporation files for every tax year it exists. Why chair rent ends the nil year, where outstanding gift certificates sit, and what the filing costs.",
+        "breadcrumb": "Hair Salon Corporations"
+      }
+    ]
   }
 }

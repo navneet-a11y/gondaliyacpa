@@ -2369,4 +2369,866 @@ VERTICALS = {
   ],
  },
 
+ 'dental-professional-corporations': {
+  'name':   'Dental Professional Corporations',
+  'short':  'dental professional corporation',
+  'plural': 'dental professional corporations',
+  'kw':     'nil t2 for dentistry professional corporation',
+  'title':  'Dental Professional Corporation Nil T2 | Quiet Years',
+  'desc':   'A dental professional corporation files for every tax year it '
+            'exists, including a year it treated nobody. What makes such a '
+            'year nil, and what ends it.',
+
+  'h1':   'Nil T2 Filing for Dental Professional Corporations',
+  'lede': 'A year in which the corporation treated nobody is still a tax '
+          'year. Where nothing was billed through it and nothing it holds '
+          'earned, the return is $300.00 plus HST per tax year.',
+
+  'intro_h': 'Flat-Fee Nil T2 Filing for Dental Professional Corporations',
+  'intro': (
+    'A dental corporation can stop treating and carry on existing. The '
+    'certificate of authorization is held, the operatory may be packed up or '
+    'standing idle, and the fiscal year end keeps arriving with a return '
+    'behind it. Those years are $300.00 plus HST per tax year.',
+    'Whether you took a year out, moved to associating at someone else\u2019s '
+    'clinic, closed on retirement, or sold the practice and kept the '
+    'corporation, the year is tested against treatment billed through it, '
+    'instalments still arriving on long treatment plans, plan and insurer '
+    'payments, and anything the corporation holds that earns. The return is '
+    'prepared with Schedules 100, 125, 141 and 50 and transmitted '
+    'electronically. A year with any of those in it goes to the full '
+    'service.'),
+
+  'notnil_h': 'What an Unfiled Year Costs a Dental Professional Corporation',
+  'notnil_boxes': [
+  ('A Chair That Does Not Turn Still Files',
+     'Treating nobody changes what the return says. It does not remove the '
+     'return or stop the tax years arriving.'),
+    ('Whatever Is Held Inside Is Exposed',
+     'A corporation holding retained earnings or sale money is the one '
+     'nobody wants questions about years later.'),
+    ('The Agency Can Put a Date On It',
+     'A written demand converts an open obligation into one with a stated '
+     'deadline.'),
+    ('The Wind-Up Stalls Without Them',
+     'No clearance certificate is issued while a year is missing, so the '
+     'money cannot be taken out and the corporation closed.'),
+  ],
+  'notnil_text': (
+    'The corporation is normally kept on purpose: to hold what is in it, to '
+    'keep the option of practising through it again, or because dissolving it '
+    'was never got round to. Each of those reasons produces tax years, and '
+    'each of those years is owed a return.',
+    'A year the corporation treated nobody and earned nothing is $300.00 plus '
+    'HST per tax year. Where several are outstanding they are prepared '
+    'together and filed in the order they arose.'),
+
+  'sched_h': 'Which T2 Schedules a Dental Professional Corporation Files',
+  'sched_rows': [
+    ('Schedule 100', 'Balance sheet information', 'Required',
+     'Retained earnings from practising years, share capital and any balance '
+     'owing to a shareholder keep the balance sheet populated long after the '
+     'last appointment.'),
+    ('Schedule 125', 'Income statement information', 'Required',
+     'Shows nil treatment income and nil practice expenses for a year in '
+     'which nothing was billed.'),
+    ('Schedule 141', 'Notes checklist', 'Required',
+     'Filed alongside the two GIFI schedules and states on what basis the '
+     'figures were put together.'),
+    ('Schedule 50', 'Shareholder information', 'Required',
+     'Each holder of 10% or more appears, including a spouse or adult child '
+     'holding non-voting shares issued while the practice was running.'),
+    ('Schedule 24', 'First-time filer information', 'First return only',
+     'Filed with the corporation’s very first T2 and not again '
+     'afterwards.'),
+    ('Schedule 8', 'Capital cost allowance', 'While equipment is still owned',
+     'Chairs, an imaging unit, sterilisation equipment and leasehold '
+     'improvements stay on the schedule until they are sold with the practice '
+     'or written off.'),
+  ],
+  'sched_note': 'Source: the schedule requirements the Canada Revenue Agency '
+                'sets for a T2 return, read against a dental corporation '
+                'that treated nobody during the year. Reviewed '
+                '20 November 2026.',
+  'sched_boxes': [
+    ('A Long Treatment Plan Can Pay Late',
+     'Orthodontic and implant cases are often paid by instalment. An '
+     'instalment arriving after the practice closed is income in the year it '
+     'is received.'),
+    ('Proceeds That Earn End the Nil Year',
+     'Sale money left in a corporate account or investment pays interest or '
+     'dividends, and either one puts a figure on Schedule 125.'),
+    ('The College Registration Is Its Own Matter',
+     'Registration and the certificate of authorization renew with the '
+     'regulator on its own cycle. The T2 has no bearing on either.'),
+  ],
+  'chk_yes': [
+    'No treatment was billed through the corporation in the year',
+    'No instalment on an earlier treatment plan was received by it',
+    'No payment arrived from a public or insurance plan',
+    'Nothing it holds paid interest, dividends or a gain',
+    'No part of the practice or its equipment was sold during the year',
+  ],
+  'chk_no': [
+    'An instalment on an orthodontic or implant case came in',
+    'A plan or insurer paid for treatment delivered earlier',
+    'The proceeds of sale earned interest or dividends inside it',
+    'Equipment, goodwill or the patient records were sold or transferred',
+    'A shareholder was paid salary or a dividend out of it',
+  ],
+  'chk_both': [
+    'A return for each year end that falls while the corporation exists',
+    'A signing officer\u2019s authorisation attached to each one',
+    'Shareholder details wherever a tenth of the shares is held',
+    'Regulator registration, renewed quite separately from any of this',
+    'Clearance, which is what finally lets the corporation close',
+  ],
+
+  'why_h': 'Why Dental Professional Corporations Use This Service',
+  'why': [
+    ('Built for the Years Without Patients',
+     'A year out, a year associating elsewhere, or the years after the '
+     'practice closed. Those are the ones this fee is written for.'),
+    ('What the Corporation Holds Is Checked First',
+     'Interest or dividends on money kept inside it is the usual reason one '
+     'of these years turns out not to be nil, so it is tested before '
+     'anything is charged.'),
+    ('A Fixed Amount Per Year',
+     'Each quiet year is $300.00 plus HST per tax year, however far back the '
+     'chairs stopped turning.'),
+    ('Earning Years Go to the Full Return',
+     'A year with an instalment or investment income in it is prepared as an '
+     'ordinary corporate return at the higher fee.'),
+  ],
+  'strip': [
+    ('Quiet Is Not Closed',
+     'A corporation that treats nobody is still a corporation with a year '
+     'end.'),
+    ('Earliest Year Leads the Set',
+     'Balances only line up down the run if the returns go in that way.'),
+    ('No Chair Time Lost',
+     'The filing form and the signing portal between them are the whole '
+     'engagement.'),
+  ],
+
+  'svc_h': 'What a Dental Professional Corporation Usually Needs Next',
+  'proc_h': 'How a Dental Professional Corporation Files',
+  'proc_lede': 'Four steps from the filing form, with the income test ahead '
+               'of everything else.',
+  'proc_note': 'Most of this is answered from one set of statements:',
+  'steps': [
+    ('Put the Year Through the Income Test',
+     'Treatment billed, late instalments, plan and insurer payments and '
+     'whatever the corporation holds are each checked before the year is '
+     'called nil.'),
+    ('Settle the Fiscal Year End',
+     'Dental corporations often keep a year end set years ago. It must agree '
+     'with the Agency record for the return to go through.'),
+    ('Prepare the Return',
+     'The T2 carries Schedules 100, 125, 141 and 50, with Schedule 24 where '
+     'it is the first one and Schedule 8 while equipment is still owned.'),
+    ('Authorise Each One, Then File',
+     'Every year in the set carries its own T183CORP. The returns go across '
+     'together and the Agency confirms by email inside 3 business days.'),
+  ],
+
+  'price_h': 'Nil T2 Filing Cost for a Dental Professional Corporation',
+  'price_eyebrow': 'One Fee Per Tax Year',
+  'price_text': (
+    'Every quiet year is charged the same: $300.00 plus HST per tax year. '
+    'Sitting behind that are the T2, the GIFI schedules where required, '
+    'Schedule 50, Schedule 24 on a first '
+    'return, the T183CORP package with secure e-signing, CPA review before '
+    'transmission, electronic transmission by a registered EFILE electronic '
+    'filer, one corrected transmission where the Agency rejects the first, '
+    'and the CRA confirmation emailed within 3 business days. A year with '
+    'treatment income, a late instalment or investment income in it is '
+    '$350.00 plus HST per year at gondaliyacpa.ca.'),
+
+  'geo_h': 'Dental Corporation Filing Across Canada',
+  'cta_h': 'File the Years the Chairs Stood Still',
+
+  'faq': [
+   ('I treated nobody through the corporation last year. Does it still file?',
+    'Yes, for every year it continues to exist. Stopping treatment changes '
+    'what the return reports, and the returns run until the corporation is '
+    'dissolved and a clearance certificate is issued.'),
+   ('There is money sitting in the corporation. Is the year nil?',
+    'Only if it earned nothing. Cash in a chequing account that pays no '
+    'interest leaves the year nil. The moment it is in anything paying '
+    'interest or dividends, the year is an ordinary return at $350.00 plus '
+    'HST per year at gondaliyacpa.ca.'),
+   ('An orthodontic instalment arrived after I closed. Which year does it hit?',
+    'The year it was received. That one year becomes an ordinary return and '
+    'the quiet years around it are unaffected.'),
+   ('I work as an associate now and bill through the clinic. Am I nil?',
+    'The corporation can be, where the clinic pays you personally and nothing '
+    'goes through it. What matters is which entity was paid for the '
+    'treatment.'),
+   ('Does my college registration have anything to do with the T2?',
+    'No. Registration and the certificate of authorization are handled by the '
+    'regulator on its own cycle, and neither replaces a corporate return.'),
+   ('My spouse holds non-voting shares from when the practice ran. Does that matter?',
+    'It matters on Schedule 50, where every holding of 10% or more is listed. '
+    'Holding the shares is not activity; being paid during the year would be.'),
+   ('The buyer still owes me on a promissory note. Is that income?',
+    'The principal repayments are not. Interest charged on the note is, and '
+    'interest received in a year makes that year an ordinary return.'),
+   ('Can the equipment stay on the books if the practice is gone?',
+    'It can, and Schedule 8 keeps reporting it until it is sold or written '
+    'off. Owning it does not make the year active; selling it does.'),
+   ('How far back can the outstanding years be filed?',
+    'As far back as they go. Each is its own T2 and T183CORP at $300.00 plus '
+    'HST per tax year, prepared together and filed from the earliest.'),
+   ('I want to take what is in it out and close the corporation. What first?',
+    'The outstanding returns. A clearance certificate will not be issued '
+    'while a year is unfiled, and the final T2 is due six months after the '
+    'dissolution date.'),
+  ],
+ },
+
+ 'landscaping-corporations': {
+  'name':   'Landscaping Corporations',
+  'short':  'landscaping corporation',
+  'plural': 'landscaping corporations',
+  'kw':     'nil t2 for landscaping corporation',
+  'title':  'Landscaping Corporation Nil T2 | Years With No Contracts',
+  'desc':   'A landscaping corporation with no contracts in a year still '
+            'files a T2. Why selling the mowers or the trailer ends the nil '
+            'year, and what the filing costs.',
+
+  'h1':   'Nil T2 Filing for Landscaping Corporations',
+  'lede': 'Mowers in a locked trailer earn nothing, and the corporation that '
+          'owns them keeps reaching year ends anyway. Where no job was '
+          'invoiced and nothing was sold, that year costs $300.00 plus HST '
+          'per tax year.',
+
+  'intro_h': 'Flat-Fee Nil T2 Filing for Landscaping Corporations',
+  'intro': (
+    'A landscaping corporation that stops taking work does not stop having '
+    'tax years. The trailer is parked, the maintenance contracts were not '
+    'renewed, nobody was invoiced, and the fiscal year end still arrives with '
+    'a return behind it. Those years are $300.00 plus HST per tax year.',
+    'Whether the crew was let go, the condo and municipal contracts went to '
+    'someone else, the work moved to a new corporation, or you are doing the '
+    'odd job in your own name instead, the year is tested against what the '
+    'corporation invoiced and against any equipment it sold. The return is '
+    'prepared with Schedules 100, 125, 141 and 50 and transmitted '
+    'electronically. A year with an invoice or a sale in it goes to the full '
+    'service.'),
+
+  'notnil_h': 'What an Unfiled Year Costs a Landscaping Corporation',
+  'notnil_boxes': [
+    ('An Empty Order Book Is Still a Year',
+     'What the return reports changes. That one is owed does not.'),
+    ('A Demand Brings a Deadline With It',
+     'Until one is issued the filing has no date attached. Afterwards it '
+     'does, and the date is the Agency\u2019s to pick.'),
+    ('Bidding Again Needs a Clean Record',
+     'Property managers and municipalities ask for the corporate standing '
+     'before awarding work, and a filing gap shows up there.'),
+    ('The Equipment Is Still on the Books',
+     'A trailer, a mower fleet and a truck sit on the schedule whether or not '
+     'they were used, and they have to be accounted for eventually.'),
+  ],
+  'notnil_text': (
+    'The corporation is usually kept because the equipment is in it, or '
+    'because the plan is to take work again when it suits. Both of those '
+    'produce tax years, and the gap is what surfaces when the equipment is '
+    'finally sold or the corporation wound up.',
+    'Each of those years costs $300.00 plus HST per tax year. They are worked '
+    'from the oldest forward, because the equipment values closing one return '
+    'are the values that open the next.'),
+
+  'sched_h': 'Which T2 Schedules a Landscaping Corporation Files',
+  'sched_rows': [
+    ('Schedule 100', 'Balance sheet information', 'Required',
+     'The truck, trailer, mowers and any amount still owing to a shareholder '
+     'keep the balance sheet occupied through a year with no work.'),
+    ('Schedule 125', 'Income statement information', 'Required',
+     'Zero on both sides for a year in which no contract was billed and '
+     'nothing was claimed against one.'),
+    ('Schedule 141', 'Notes checklist', 'Required',
+     'Sits with Schedules 100 and 125 and sets out how the figures were '
+     'arrived at and by whom.'),
+    ('Schedule 50', 'Shareholder information', 'Required',
+     'Names anyone at 10% or more, usually the one or two owners who were on '
+     'the crew themselves.'),
+    ('Schedule 24', 'First-time filer information', 'First return only',
+     'Goes in with the very first T2 and never afterwards.'),
+    ('Schedule 8', 'Capital cost allowance', 'While the equipment is owned',
+     'Mowers, blowers, a trailer and a truck remain depreciable property '
+     'until they are sold or taken out, used or not.'),
+  ],
+  'sched_note': 'Source: the Canada Revenue Agency\u2019s schedule '
+                'requirements for a T2 return, applied here to a landscaping '
+                'corporation that raised no invoice during the year. '
+                'Reviewed 20 November 2026.',
+  'sched_boxes': [
+    ('Selling the Equipment Ends the Nil Year',
+     'A trailer or a mower sold is a disposition, reported whether it made '
+     'money or lost it, and that puts the year into an ordinary return.'),
+    ('Work Done in Your Own Name Is Personal',
+     'Where a customer paid you rather than the corporation, the income is '
+     'yours to report and the corporate year can still be nil.'),
+    ('Plant Stock on Hand Is Not Revenue',
+     'Nursery material and materials left in the yard sit on Schedule 100 '
+     'until they are used on a job or sold.'),
+  ],
+  'chk_yes': [
+    'No contract or job was invoiced by the corporation in the year',
+    'No maintenance or seasonal retainer was billed by it',
+    'No piece of equipment or vehicle of its was sold',
+    'No account of the corporation was credited with interest',
+    'No money left it for an owner, as pay or as a dividend',
+  ],
+  'chk_no': [
+    'An invoice went out, even for a job finished the year before',
+    'A mower, trailer or truck was sold or traded in',
+    'A retainer or deposit was applied to work in the year',
+    'Interest was credited on an account the corporation holds',
+    'A customer paid the corporation for materials it had bought',
+  ],
+  'chk_both': [
+    'The return itself, once for every year end the corporation reaches',
+    'Authorisation to transmit it, on its own T183CORP',
+    'A shareholder listing wherever someone holds a tenth of the shares',
+    'The registry filing, which runs on its own calendar',
+    'A clearance certificate, before the trailer and mowers come out',
+  ],
+
+  'why_h': 'Why Landscaping Corporations Use This Service',
+  'why': [
+    ('Written for the Year the Trailer Stayed Parked',
+     'A year with no contracts, a year the work moved elsewhere, or a year '
+     'you worked in your own name. Those are what this fee covers.'),
+    ('Dispositions Come Up First',
+     'More of these years fail on a mower or a trailer having been sold than '
+     'on anything else, which is why that question is asked before a price '
+     'is quoted.'),
+    ('The Same Price Each Quiet Year',
+     'A year with no invoices is $300.00 plus HST per tax year, whether one '
+     'year is outstanding or five.'),
+    ('Invoicing Years Are Quoted Properly',
+     'A year with contract revenue in it is prepared as an ordinary '
+     'corporate return rather than squeezed into a nil filing.'),
+  ],
+  'strip': [
+    ('Parked Equipment, Live Obligation',
+     'The trailer sitting still has no bearing on the year end arriving.'),
+    ('In Date Order, Always',
+     'Each return opens on the balances the one before it closed with.'),
+    ('From the Truck, If Need Be',
+     'Authorising a year takes a phone and a portal, not an office.'),
+  ],
+
+  'svc_h': 'What a Landscaping Corporation Usually Needs Next',
+  'proc_h': 'How a Landscaping Corporation Files a Nil Year',
+  'proc_lede': 'The filing form asks four things, and the first one decides '
+               'whether the year qualifies at all.',
+  'proc_note': 'One year of bank statements usually settles it:',
+  'steps': [
+    ('Check What Was Invoiced and What Was Sold',
+     'Contracts billed, deposits applied and any equipment disposed of are '
+     'all measured before the year is treated as nil.'),
+    ('Separate the Corporation From the Person',
+     'Jobs paid to you personally are reported on your own return, which can '
+     'leave the corporate year with nothing in it.'),
+    ('Build Out the T2',
+     'Schedules 100, 125 and 141 carry the figures, Schedule 50 the '
+     'ownership, Schedule 24 if this is the first return, and Schedule 8 for '
+     'as long as the equipment is on the books.'),
+    ('Get It Authorised and Away',
+     'Nothing transmits without a T183CORP behind it. Once the run is '
+     'signed off the returns go together, and confirmation lands by email '
+     'inside 3 business days.'),
+  ],
+
+  'price_h': 'Nil T2 Filing Cost for a Landscaping Corporation',
+  'price_eyebrow': 'One Fee Per Tax Year',
+  'price_text': (
+    'Charged by the year end rather than the hour: $300.00 plus HST per tax '
+    'year, for a year holding neither an invoice nor a disposition. Included '
+    'are the T2, the GIFI schedules where required, '
+    'Schedule 50, Schedule 24 on a first return, the T183CORP package with '
+    'secure e-signing, CPA review before transmission, electronic '
+    'transmission by a registered EFILE electronic filer, one corrected '
+    'transmission where the Agency rejects the first, and the CRA '
+    'confirmation emailed within 3 business days. Where contract revenue or '
+    'a disposition turns up, that year is an ordinary corporate return '
+    'instead, at $350.00 plus HST per year at gondaliyacpa.ca.'),
+
+  'geo_h': 'Landscaping Corporation Filing Across Canada',
+  'cta_h': 'File the Years With No Contracts in Them',
+
+  'faq': [
+   ('No contracts came in all year. Is a return still due?',
+    'It is. A corporation produces a tax year for as long as it stays '
+    'registered, and a year with no work goes in showing no revenue rather '
+    'than being left out.'),
+   ('I sold the trailer during the year. Is it still nil?',
+    'No. A sale is a disposition and goes on the return whether it produced '
+    'a gain or a loss, which makes that year an ordinary T2 at $350.00 plus '
+    'HST per year at gondaliyacpa.ca.'),
+   ('I did a few jobs for cash in my own name. Does that affect the corporation?',
+    'Not the corporate year, where the customers paid you rather than the '
+    'corporation. That income belongs on your personal return instead.'),
+   ('An invoice for last autumn’s work was paid in the new year. Which year?',
+    'The year the corporation invoiced and earned it is normally the year it '
+    'belongs to. Either way, a year with that invoice in it is not nil.'),
+   ('Does idle machinery have to come out of the corporation?',
+    'Not at all. It carries on down Schedule 8 at its existing cost for as '
+    'long as the corporation owns it, with no effect on whether the year was '
+    'nil. Moving it out is what has an effect.'),
+   ('The crew was laid off but the payroll account is still open. Does that matter?',
+    'Not for whether the T2 is nil, but an open payroll account keeps '
+    'producing its own filing obligations alongside the corporate return.'),
+   ('We moved the work into a new corporation. Does the old one still file?',
+    'Yes, until it is dissolved. Moving the business does not end the old '
+    'corporation’s tax years, and anything transferred between them is '
+    'reportable in the year it moved.'),
+   ('Four years were never filed. Can they go in together?',
+    'Yes. Each is its own T2 with its own T183CORP at $300.00 plus HST per '
+    'tax year, prepared as a set and transmitted from the oldest.'),
+   ('Is the registry annual return the same thing as the T2?',
+    'No. The registry filing keeps the corporation in good standing and the '
+    'T2 reports its tax year. Both are owed and neither covers the other.'),
+   ('What has to happen before the corporation can be wound up?',
+    'Every outstanding year goes in, and a final return follows six months '
+    'after the dissolution date. Any machinery still owned is treated as '
+    'disposed of on the way out, which lands in the year it leaves.'),
+  ],
+ },
+
+ 'staffing-agency-corporations': {
+  'name':   'Staffing Agency Corporations',
+  'short':  'staffing agency corporation',
+  'plural': 'staffing agency corporations',
+  'kw':     'nil t2 for staffing agency corporation',
+  'title':  'Staffing Agency Corporation Nil T2 | No-Placement Years',
+  'desc':   'A staffing corporation with no placements in a year still files '
+            'a T2. Why an open payroll account is a separate problem, and '
+            'what the nil filing costs.',
+
+  'h1':   'Nil T2 Filing for Staffing Agency Corporations',
+  'lede': 'There are no assets to prompt anyone and no crew to pay, but the '
+          'year end still arrives. Where no client was invoiced and nothing '
+          'inside the corporation earned, the return is $300.00 plus HST per '
+          'tax year.',
+
+  'intro_h': 'Flat-Fee Nil T2 Filing for Staffing Agency Corporations',
+  'intro': (
+    'A staffing corporation has almost nothing in it once the placements '
+    'stop. No crew, no equipment, no inventory, and a margin business with '
+    'nobody on assignment produces no revenue at all. The tax year still '
+    'arrives, and the return behind it is $300.00 plus HST per tax year.',
+    'Whether the client list went quiet, the contract-staffing book was wound '
+    'down, the recruiters left, or you moved to working as an employee '
+    'yourself, the year is tested against client invoices, permanent '
+    'placement fees arriving late, and anything retained profit inside the '
+    'corporation earned. The return is prepared with Schedules 100, 125, 141 '
+    'and 50 and transmitted electronically. A year with a fee in it goes to '
+    'the full service.'),
+
+  'notnil_h': 'What an Unfiled Year Costs a Staffing Agency Corporation',
+  'notnil_boxes': [
+    ('Nobody Placed, Return Still Owed',
+     'An empty desk decides the figures in the return. It does not decide '
+     'whether there is one.'),
+    ('The Payroll Account Is a Separate Trail',
+     'An agency that ran payroll usually left the account open, and that '
+     'account keeps generating obligations of its own next to the T2.'),
+    ('A Demand Names the Day',
+     'Left alone the filing has no date on it. A written demand supplies '
+     'one, chosen by the Agency rather than by you.'),
+    ('Clients Check Standing Before Signing',
+     'A master services agreement or a vendor onboarding pack asks for '
+     'corporate standing, and an unfiled year shows there.'),
+  ],
+  'notnil_text': (
+    'These corporations are cheap to keep and easy to forget, because there '
+    'are no assets to prompt anyone. That is exactly why the unfiled years '
+    'accumulate, and why they are usually found during a vendor onboarding '
+    'or a wind-up rather than at filing time.',
+    'Put a figure on it and each of those years is $300.00 plus HST per tax '
+    'year. The retained earnings only reconcile if the set is transmitted '
+    'oldest first, so that is how it is done.'),
+
+  'sched_h': 'Which T2 Schedules a Staffing Agency Corporation Files',
+  'sched_rows': [
+    ('Schedule 100', 'Balance sheet information', 'Required',
+     'Retained profit from the trading years, share capital and any balance '
+     'owing to a shareholder keep the balance sheet populated even with no '
+     'assets to speak of.'),
+    ('Schedule 125', 'Income statement information', 'Required',
+     'Reports nil placement revenue and nil wage cost for a year in which '
+     'nobody was on assignment.'),
+    ('Schedule 141', 'Notes checklist', 'Required',
+     'Goes with the two GIFI schedules and states who assembled the figures '
+     'and on what basis.'),
+    ('Schedule 50', 'Shareholder information', 'Required',
+     'Every holding of 10% or more appears, including a co-founder who has '
+     'long since stopped working in the business.'),
+    ('Schedule 24', 'First-time filer information', 'First return only',
+     'Filed with the corporation’s first T2, covering the stub period '
+     'from incorporation to its first year end.'),
+    ('Schedule 8', 'Capital cost allowance', 'Only where assets are held',
+     'An agency with nothing but laptops and a subscription stack may have '
+     'no depreciable property left to report at all.'),
+  ],
+  'sched_note': 'Source: the schedule requirements the Canada Revenue Agency '
+                'sets for a T2 return, read against a staffing corporation '
+                'that placed nobody during the year. Reviewed '
+                '20 November 2026.',
+  'sched_boxes': [
+    ('A Late Placement Fee Lands in Its Own Year',
+     'A permanent placement invoiced last year and paid this year still makes '
+     'a year active. Which year depends on when the corporation earned it.'),
+    ('Nil Payroll Remittances Are Not the T2',
+     'An open payroll account can owe nil remittances and information returns '
+     'in a year the corporation itself has no income. Those are separate '
+     'filings from the T2.'),
+    ('A Credited-Back Placement Reduces Revenue',
+     'A hire that did not stick and was credited back comes off revenue in '
+     'the year of the credit. It does not turn that year into a nil one.'),
+  ],
+  'chk_yes': [
+    'Not one client invoice was raised by the corporation all year',
+    'No permanent placement fee came in, for this year or an earlier one',
+    'Nobody drew wages or assignment pay through its payroll',
+    'Retained profit inside it was credited with neither interest nor a '
+    'dividend',
+    'Not a dollar went out to an owner, as pay or as a dividend',
+  ],
+  'chk_no': [
+    'A client paid a placement or margin invoice in the year',
+    'A permanent placement fee arrived for a hire made earlier',
+    'Wages or assignment pay went out through its payroll',
+    'Interest was credited on retained profit held inside it',
+    'A client list, contract or goodwill was sold or transferred',
+  ],
+  'chk_both': [
+    'Every year end the corporation reaches produces a return to file',
+    'Each of those returns waits on a T183CORP before it can go',
+    'Anyone at a tenth of the shares or more is named on Schedule 50',
+    'Payroll and sales tax accounts keep their own obligations running',
+    'Dissolution waits on a clearance certificate, which waits on the years',
+  ],
+
+  'why_h': 'Why Staffing Agency Corporations Use This Service',
+  'why': [
+    ('Built for the Year With Nobody on Assignment',
+     'A quiet client list, a wound-down contract book, or a year you worked '
+     'as an employee instead. Those are the years this fee covers.'),
+    ('Late Placement Fees Are Checked First',
+     'A fee arriving after the work stopped is the usual reason one of these '
+     'years is not nil, so it is tested before anything is charged.'),
+    ('One Amount Per Quiet Year',
+     'A year with no client invoices is $300.00 plus HST per tax year, '
+     'however long the run of unfiled years.'),
+    ('Trading Years Go to the Full Return',
+     'A year with placement revenue in it is prepared as an ordinary '
+     'corporate return at the higher fee.'),
+  ],
+  'strip': [
+    ('A Margin Business Owns Nothing',
+     'Which is no help at all: the filing follows the entity, not its '
+     'assets.'),
+    ('Oldest to Newest',
+     'Retained earnings only reconcile if the years go in the order they '
+     'happened.'),
+    ('One Sitting, Every Year',
+     'The whole run of authorisations can be dealt with in a single '
+     'session.'),
+  ],
+
+  'svc_h': 'What a Staffing Agency Corporation Usually Needs Next',
+  'proc_h': 'How a Staffing Agency Corporation Files',
+  'proc_lede': 'Four steps from the filing form, starting with what the '
+               'clients paid.',
+  'proc_note': 'The first step is usually answered from one bank feed:',
+  'steps': [
+    ('Check What Clients Paid It',
+     'Margin invoices, permanent placement fees, credits and anything '
+     'retained profit earned are all measured before the year is called '
+     'nil.'),
+    ('Deal With the Payroll Account Separately',
+     'An open payroll account is noted so its own obligations are not '
+     'mistaken for the corporate return, which stays nil either way.'),
+    ('Prepare the Return',
+     'Schedules 100, 125, 141 and 50 for the year, with Schedule 24 where '
+     'this is the first return.'),
+    ('Authorise the Run and Send It',
+     'Each year gets its own T183CORP, the set is transmitted, and the '
+     'Agency confirms by email inside 3 business days.'),
+  ],
+
+  'price_h': 'Nil T2 Filing Cost for a Staffing Agency Corporation',
+  'price_eyebrow': 'One Fee Per Tax Year',
+  'price_text': (
+    'One year end, one fee: $300.00 plus HST per tax year for a year with no '
+    'client invoice in it. What that buys is the T2, the GIFI schedules '
+    'where required, Schedule 50, '
+    'Schedule 24 on a first return, the T183CORP package with secure '
+    'e-signing, CPA review before transmission, electronic transmission by a '
+    'registered EFILE electronic filer, one corrected transmission where the '
+    'Agency rejects the first, and the CRA confirmation emailed within 3 '
+    'business days. A year with placement revenue or investment income in it '
+    'is $350.00 plus HST per year at gondaliyacpa.ca.'),
+
+  'geo_h': 'Staffing Corporation Filing Across Canada',
+  'cta_h': 'File the Years With Nobody Placed',
+
+  'faq': [
+   ('Nobody was placed in the whole year. Is there still a return?',
+    'There is. The corporation keeps reaching year ends while it stays in '
+    'existence, and the return for an empty year reports no revenue rather '
+    'than being left out.'),
+   ('A placement fee was invoiced last year and paid this year. Which year?',
+    'The year the corporation earned it is normally the year it belongs in. '
+    'What is certain is that a year carrying that fee is not nil.'),
+   ('Our payroll account is still open. Does that stop the T2 being nil?',
+    'No. The corporate return can still be nil while the payroll account '
+    'owes nil remittances or information returns. They are separate filings '
+    'to separate programs.'),
+   ('I took a salaried recruiting job. Does the corporation keep filing?',
+    'Yes, until it is dissolved. Your employment income is personal and has '
+    'no effect on whether the corporate year is nil.'),
+   ('There is retained profit in the corporation. Is the year still nil?',
+    'Only where it earned nothing. Cash that pays no interest leaves the '
+    'year nil; interest or dividends on it make the year an ordinary return '
+    'at $350.00 plus HST per year at gondaliyacpa.ca.'),
+   ('A client credited back a placement that did not work out. What happens?',
+    'The credit reduces revenue in the year it was given. It does not turn '
+    'that year into a nil year, because there was revenue to reduce.'),
+   ('We sold the client list to another agency. Is that year nil?',
+    'No. Selling a client list or goodwill is a disposition and is reported '
+    'in the year it happened, which makes that year a full return.'),
+   ('Nobody is left in the company but me. Who signs?',
+    'You do, as the authorised signing officer, once for each tax year. '
+    'Several years can be signed in one sitting.'),
+   ('Five years were never filed. Can they all go in now?',
+    'Yes. Each is a separate T2 with its own T183CORP at $300.00 plus HST '
+    'per tax year, prepared together and filed from the earliest forward.'),
+   ('We want to close the corporation. What has to happen first?',
+    'The outstanding returns, then the final T2 within six months of the '
+    'dissolution date. No clearance certificate is issued while a year '
+    'remains unfiled.'),
+  ],
+ },
+
+ 'hair-salon-corporations': {
+  'name':   'Hair Salon Corporations',
+  'short':  'hair salon corporation',
+  'plural': 'hair salon corporations',
+  'kw':     'nil t2 for hair salon corporation',
+  'title':  'Hair Salon Corporation Nil T2 | Years After Closing',
+  'desc':   'A salon corporation files for every tax year it exists. Why '
+            'chair rent ends the nil year, where outstanding gift '
+            'certificates sit, and what the filing costs.',
+
+  'h1':   'Nil T2 Filing for Hair Salon Corporations',
+  'lede': 'A year with the doors shut is still a tax year. Where no service '
+          'was rung through and no chair was rented out, the return is '
+          '$300.00 plus HST per tax year.',
+
+  'intro_h': 'Flat-Fee Nil T2 Filing for Hair Salon Corporations',
+  'intro': (
+    'A salon closes faster than its corporation does. The lease ends or is '
+    'assigned, the stylists move on, the chairs and basins go into storage or '
+    'to a buyer, and the corporation stays on the register with a year end '
+    'that keeps arriving. Those years are $300.00 plus HST per tax year.',
+    'Whether the shop closed for good, the lease was given up, the business '
+    'moved into a new corporation, or you now rent a chair somewhere else in '
+    'your own name, the year is tested against services rung through the '
+    'corporation, retail product sold, rent collected from stylists, and any '
+    'equipment disposed of. The return carries Schedules 100, 125, 141 and 50 '
+    'and is transmitted electronically. A year with any of those goes to the '
+    'full service.'),
+
+  'notnil_h': 'What an Unfiled Year Costs a Hair Salon Corporation',
+  'notnil_boxes': [
+    ('Doors Shut, Year Ends Anyway',
+     'Closing decides what goes in the return. Dissolving is what stops '
+     'there being one.'),
+    ('A Demand Supplies the Deadline',
+     'Before one arrives the filing is overdue with no date attached. After '
+     'it, there is a date, and it is not yours to choose.'),
+    ('The Sales Tax Account Is Its Own Thread',
+     'A salon that charged sales tax usually left that account open, and it '
+     'keeps asking for returns beside the T2.'),
+    ('Gift Certificates Were Never Settled',
+     'Certificates sold and never redeemed sit as a liability, and nobody '
+     'wants to work that out years later with no filings to read.'),
+  ],
+  'notnil_text': (
+    'The corporation tends to be kept because the equipment is in it, because '
+    'there may be another shop one day, or because closing it properly never '
+    'reached the top of the list. Each year it is kept is a tax year.',
+    'Those years run at $300.00 plus HST per tax year. A whole run of them '
+    'can be dealt with at once, provided they go across in the order the '
+    'shop lived through them.'),
+
+  'sched_h': 'Which T2 Schedules a Hair Salon Corporation Files',
+  'sched_rows': [
+    ('Schedule 100', 'Balance sheet information', 'Required',
+     'Chairs, basins and dryers, retail stock still in boxes, unredeemed gift '
+     'certificates and any shareholder balance all sit on the balance sheet.'),
+    ('Schedule 125', 'Income statement information', 'Required',
+     'Reports nil service revenue and nil expenses for a year in which the '
+     'till never opened.'),
+    ('Schedule 141', 'Notes checklist', 'Required',
+     'Rides along with the two GIFI schedules, naming whoever put the '
+     'figures together.'),
+    ('Schedule 50', 'Shareholder information', 'Required',
+     'Names every holder of 10% or more, which for a salon is often two '
+     'partners who opened it together.'),
+    ('Schedule 24', 'First-time filer information', 'First return only',
+     'Filed with the first T2 after incorporation and not again.'),
+    ('Schedule 8', 'Capital cost allowance', 'While the fit-out is owned',
+     'Styling chairs, wash units, dryers and the leasehold improvements stay '
+     'depreciable property until they are sold, scrapped or left behind.'),
+  ],
+  'sched_note': 'Source: the schedule requirements the Canada Revenue Agency '
+                'sets for a T2 return, read against a salon corporation '
+                'whose till stayed shut for the year. Reviewed '
+                '20 November 2026.',
+  'sched_boxes': [
+    ('Renting Chairs Out Is Income',
+     'Where stylists pay the corporation for a chair, that is rent received '
+     'and the corporation is not nil for that year. A corporation collecting '
+     'chair rent files a full return.'),
+    ('Renting a Chair Yourself Is Personal',
+     'Where you pay another salon for a chair and are paid directly, the '
+     'money is yours to report and the corporate year can be nil.'),
+    ('Unredeemed Certificates Are a Liability',
+     'A gift certificate sold in an earlier year sits on Schedule 100 until '
+     'it is redeemed or written off. Carrying it does not make the year '
+     'active.'),
+  ],
+  'chk_yes': [
+    'No service was rung through the corporation during the year',
+    'No retail product was sold by it',
+    'No stylist or tenant paid it for the use of a chair or room',
+    'No chair, dryer or fixture of its was sold',
+    'Nothing it holds was credited with interest or a dividend',
+  ],
+  'chk_no': [
+    'A stylist paid the corporation chair rent for any part of the year',
+    'A gift certificate was redeemed for a service in the year',
+    'Retail stock was sold off, in the shop or online',
+    'The fit-out, the equipment or the client list was sold',
+    'The lease was assigned for a payment to the corporation',
+  ],
+  'chk_both': [
+    'One return per year end, for as long as the corporation is on the '
+    'register',
+    'A signature authorising each return before it can be transmitted',
+    'A listing of anyone holding a tenth of the shares or more',
+    'The sales tax account either filed or properly closed',
+    'Clearance first, then the chairs come out and the corporation goes',
+  ],
+
+  'why_h': 'Why Hair Salon Corporations Use This Service',
+  'why': [
+    ('Written for the Years After the Doors Shut',
+     'A closed shop, an assigned lease, or a year you worked out of someone '
+     'else’s chair. Those are the years this fee covers.'),
+    ('Chair Rent Is the First Thing Checked',
+     'Rent from a stylist is the most common reason a quiet salon year turns '
+     'out not to be nil, so it is tested before anything is charged.'),
+    ('One Amount, Each Quiet Year',
+     'A year with nothing rung through is $300.00 plus HST per tax year, '
+     'however far back the shop closed.'),
+    ('Trading Years Are Quoted as Trading Years',
+     'A year with service revenue, retail sales or chair rent in it is '
+     'prepared as an ordinary corporate return at the higher fee.'),
+  ],
+  'strip': [
+    ('Shut Is Not Struck Off',
+     'The doors closing and the corporation ending are different days.'),
+    ('In the Order They Happened',
+     'Stock and fit-out values only carry through if the years do.'),
+    ('No Envelope, No Stamp',
+     'Authorising a year happens in a browser.'),
+  ],
+
+  'svc_h': 'What a Hair Salon Corporation Usually Needs Next',
+  'proc_h': 'How a Hair Salon Corporation Files a Nil Year',
+  'proc_lede': 'Four steps from the filing form, with the chair rent and '
+               'takings test first.',
+  'proc_note': 'The first step rules out most of the doubt:',
+  'steps': [
+    ('Check the Takings and Any Chair Rent',
+     'Service revenue, retail sales, chair or room rent and any equipment '
+     'sold are measured before the year is treated as nil.'),
+    ('Separate What Was Yours From the Corporation’s',
+     'Where you were paid directly for working elsewhere, that is personal '
+     'income and the corporate year can still be nil.'),
+    ('Prepare the Return',
+     'Schedules 100, 125, 141 and 50 for the year, with Schedule 24 on a '
+     'first return and Schedule 8 while the fit-out is owned.'),
+    ('Authorise and Send',
+     'Each year is authorised on its own T183CORP, the returns are '
+     'transmitted, and the Agency confirms by email inside 3 business '
+     'days.'),
+  ],
+
+  'price_h': 'Nil T2 Filing Cost for a Hair Salon Corporation',
+  'price_eyebrow': 'One Fee Per Tax Year',
+  'price_text': (
+    'Nothing rung through and no chair rent makes the year a $300.00 plus '
+    'HST per tax year filing. Against that fee sit the T2, the GIFI '
+    'schedules where required, '
+    'Schedule 50, Schedule 24 on a first return, the T183CORP package with '
+    'secure e-signing, CPA review before transmission, electronic '
+    'transmission by a registered EFILE electronic filer, one corrected '
+    'transmission where the Agency rejects the first, and the CRA '
+    'confirmation emailed within 3 business days. A year with takings, retail '
+    'sales or chair rent in it is $350.00 plus HST per year at '
+    'gondaliyacpa.ca.'),
+
+  'geo_h': 'Salon Corporation Filing Across Canada',
+  'cta_h': 'File the Years Since the Shop Closed',
+
+  'faq': [
+   ('The salon closed two years ago. Does the corporation still file?',
+    'Yes, for every tax year it continues to exist. Closing the shop ends the '
+    'trading, not the corporation, and the returns run until it is '
+    'dissolved.'),
+   ('I rent chairs to two stylists. Is the corporation nil?',
+    'No. Chair rent paid to the corporation is income to it, so it is a '
+    'rental corporation for that year and files a full T2 at $350.00 plus '
+    'HST per year at gondaliyacpa.ca.'),
+   ('I rent a chair at someone else’s salon now. Is my corporation nil?',
+    'It can be, where the clients pay you directly and nothing goes through '
+    'the corporation. The test is which one was paid.'),
+   ('We still have unredeemed gift certificates out there. Does that matter?',
+    'Not for whether the year is nil. They sit as a liability on the balance '
+    'sheet until redeemed or written off. A certificate redeemed for a '
+    'service makes that year active.'),
+   ('The chairs and dryers are in storage. Does holding them count?',
+    'No. Schedule 8 keeps reporting them while they are owned, and holding '
+    'them is not activity. Selling one is.'),
+   ('We sold off the leftover retail stock online. Is the year nil?',
+    'No. Those are sales by the corporation, however small, and they put a '
+    'figure on Schedule 125.'),
+   ('The landlord paid us to take the lease back. What is that?',
+    'A payment received by the corporation for giving up the lease, which is '
+    'reportable in the year it was received and makes that year a full '
+    'return.'),
+   ('Our sales tax account is still open. Does that make the T2 non-nil?',
+    'No. The corporate return can be nil while the sales tax account owes '
+    'its own returns. They are separate filings and both have to be dealt '
+    'with.'),
+   ('Three years were never filed. Can they all go in?',
+    'Yes. Each is its own T2 and T183CORP at $300.00 plus HST per tax year, '
+    'prepared as a set and filed from the earliest.'),
+   ('We want the equipment out and the corporation closed. What order?',
+    'Outstanding returns first. Taking the equipment out is a disposition to '
+    'report, and no clearance certificate is issued while a year is '
+    'missing.'),
+  ],
+ },
+
 }
