@@ -1,0 +1,14 @@
+Date,Time (Toronto),Change,Row,Run,Post ID,URL,Location,Old text,New text,Cells,Occurrences,Result
+2026-11-20,14:45,19,1,Dry run,,,wp_posts + wp_postmeta,revoke your business number,(sentence deleted),223,223,No write
+2026-11-20,14:45,19,2,Dry run,,,wp_posts + wp_postmeta,$1.5M,(immediate expensing mention deleted),596,1241,No write
+2026-11-20,14:45,19,3,Dry run,,,wp_posts + wp_postmeta,Class 53 (50% straight-line),Class 53 (50% declining balance),0,0,No write; 18 variant cells
+2026-11-20,14:45,19,4,Dry run,,,wp_posts + wp_postmeta,"$1,016,836","$1,275,000",77,110,No write
+2026-11-20,14:45,19,5,Dry run,,,wp_posts + wp_postmeta,Atlantic HST,NS 14% from April 1 2025; NB NL PEI 15%,11,19,No write
+2026-11-20,14:45,19,6,Dry run,,,wp_posts + wp_postmeta,Ontario PST 8%,Ontario has no separate PST. Ontario HST is 13%.,3,3,No write
+2026-11-20,14:45,19,7,Dry run,,,wp_posts + wp_postmeta,must e-file,T2 e-file rule (tax years starting after 2023),33,33,No write
+2026-11-20,14:45,19,8,Dry run,,,wp_posts + wp_postmeta,1.64%,1.63% for 2026,29,54,No write
+2026-11-20,14:45,19,9,Dry run,,,wp_posts + wp_postmeta,$17.20,"$17.95 from October 1, 2026",21,58,No write
+2026-11-20,14:45,19,10,Dry run,,,wp_posts + wp_postmeta,over $150,$100 and $500 thresholds,36,60,No write
+2026-11-20,14:45,19,11,Dry run,,,wp_posts + wp_postmeta,"$490,000","$1,000,000",23,45,No write
+2026-11-20,14:45,19,12,Dry run,,,wp_posts + wp_postmeta,dollar for dollar,"$5 lost per $1 over $50,000",321,858,No write
+2026-11-20,14:45,19,13,Dry run,,,wp_posts + wp_postmeta,late remittance / T4 late-filing penalty,Approved penalty schedule,310,396,No write
