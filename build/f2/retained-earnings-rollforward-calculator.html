@@ -281,8 +281,8 @@ function nextBusiness(dt){
   return d;
 }
 function businessBetween(from,to){
-  var n=0,d=new Date(from.getTime()+86400000);
-  while(d.getTime()<=to.getTime()){if(isBusiness(d)){n++;}d=new Date(d.getTime()+86400000);}
+  var n=0,d=new Date(from.getTime()+86400000),lim=to.getTime();
+  while(!(d.getTime() > lim)){if(isBusiness(d)){n++;}d=new Date(d.getTime()+86400000);}
   return n;
 }
 function today(){var n=new Date();return u(n.getFullYear(),n.getMonth(),n.getDate());}
@@ -330,7 +330,7 @@ function rollforward(ro,ni,dv){
   if(ro===undefined||ni===undefined||dv===undefined){return {err:'read'};}
   var close=ro+ni-dv;
   return {ro:ro,ni:ni,dv:dv,close:close,
-          deficit:close<0,quiet:ni===0&&dv===0};
+          deficit:(0 > close),quiet:ni===0&&dv===0};
 }
 var out=document.getElementById('out');
 function show(){

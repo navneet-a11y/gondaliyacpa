@@ -180,6 +180,28 @@ def a(h, t):
 # Shared date module. Ontario's nine Employment Standards Act public holidays.
 # Good Friday is derived from Easter so no year needs a lookup table.
 # ---------------------------------------------------------------------------
+# 2026-11-20. businessBetween() used to read
+#
+#     while(d.getTime()<=to.getTime()){ ... }
+#
+# and that "<=" broke three live calculators. WordPress's output filters read a
+# bare "<" as the start of a tag and run to the next ">", entity-encoding every
+# "&" in between; inside a <script> a "&#038;" is not decoded, so a downstream
+# "a&&b" became a syntax error and the whole module died. The pages affected
+# were the ones where no ">" happened to arrive before the next "&&":
+# /tools/due-to-versus-due-from-shareholder-checker/,
+# /tools/retained-earnings-rollforward-calculator/ and
+# /tools/tax-years-since-incorporation-calculator/. The other 86 pages carrying
+# this function were lucky, not safe.
+#
+# Proved on the live site before the sweep: rewriting this one line on post
+# 1574 took it from 4 encoded ampersands and "Invalid or unexpected token" to
+# zero and a working calculator, with nothing else changed.
+#
+# The ">" form is the fix rather than a space after the "<", because the filter
+# does not require a letter after "<": "< =" would open a span just the same. A
+# ">" closes any span and opens none, so the comparison is inverted instead.
+# build_f2p.script_entity_risk() fails a build that reintroduces the shape.
 DATE_JS = r"""
 var MON=['January','February','March','April','May','June','July','August',
          'September','October','November','December'];
@@ -218,8 +240,8 @@ function nextBusiness(dt){
   return d;
 }
 function businessBetween(from,to){
-  var n=0,d=new Date(from.getTime()+86400000);
-  while(d.getTime()<=to.getTime()){if(isBusiness(d)){n++;}d=new Date(d.getTime()+86400000);}
+  var n=0,d=new Date(from.getTime()+86400000),lim=to.getTime();
+  while(!(d.getTime() > lim)){if(isBusiness(d)){n++;}d=new Date(d.getTime()+86400000);}
   return n;
 }
 function today(){var n=new Date();return u(n.getFullYear(),n.getMonth(),n.getDate());}

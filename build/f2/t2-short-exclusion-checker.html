@@ -283,8 +283,8 @@ function nextBusiness(dt){
   return d;
 }
 function businessBetween(from,to){
-  var n=0,d=new Date(from.getTime()+86400000);
-  while(d.getTime()<=to.getTime()){if(isBusiness(d)){n++;}d=new Date(d.getTime()+86400000);}
+  var n=0,d=new Date(from.getTime()+86400000),lim=to.getTime();
+  while(!(d.getTime() > lim)){if(isBusiness(d)){n++;}d=new Date(d.getTime()+86400000);}
   return n;
 }
 function today(){var n=new Date();return u(n.getFullYear(),n.getMonth(),n.getDate());}

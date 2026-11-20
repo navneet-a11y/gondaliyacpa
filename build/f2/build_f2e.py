@@ -109,12 +109,12 @@ L21 = r"""
 function taxYears(inc,fye,now){
   if(inc===null||fye===null){return null;}
   if(inc===undefined||fye===undefined){return {err:'read'};}
-  if(fye.getTime()<=inc.getTime()){return {err:'order'};}
-  var first=spanDays(inc,fye);
+  if(!(fye.getTime() > inc.getTime())){return {err:'order'};}
+  var first=spanDays(inc,fye),lim=now.getTime();
   var rows=[],ye=fye,n=0;
-  while(ye.getTime()<=now.getTime()&&n<60){
+  while(!(ye.getTime() > lim) && 60 > n){
     var fd=filingDate(ye);
-    rows.push({ye:ye,due:fd,late:fd.getTime()<now.getTime()});
+    rows.push({ye:ye,due:fd,late:(lim > fd.getTime())});
     ye=addYear(ye,1);n++;
   }
   return {first:first,over53:first>371,rows:rows,

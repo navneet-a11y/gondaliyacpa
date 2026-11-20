@@ -12817,3 +12817,83 @@ costs topical focus that 6(e)'s own rationale does not pay for. **Raised with
 Navneet 2026-11-20; a question for Sharad Gondaliya, not decided here.** Dropping
 them and building the ~40 that are nil-adjacent lands Family 2 near 140 on-topic
 tools rather than 150 with a weak tail.
+
+## 2026-11-20 — the entity defect is fixed, root cause and all
+
+Navneet: "fix with best way you know", then "just fix calculators fast".
+
+The previous entry left this open because the root fix touches a shared helper
+and so every page carrying it. It is now done, at the source and on live.
+
+### The root cause, proved before it was swept
+
+`build_f2.DATE_JS`'s `businessBetween()` read `while(d.getTime()<=to.getTime())`.
+WordPress's output filters treat a bare `<` as the start of a tag and run to the
+next `>`, entity-encoding every `&` in between; inside a `<script>` a `&#038;`
+is not decoded, so any downstream `a&&b` became a syntax error and the module
+died. 89 of the 106 pages carried that line. Three were broken, the other 86
+were lucky: a `>` happened to arrive before their next `&`.
+
+**A space after the `<` is not the fix.** The filter does not require a letter
+after `<`, so `< =` opens a span just the same. The comparison is inverted to
+use `>` instead, which closes a span and opens none:
+
+    var n=0,d=new Date(from.getTime()+86400000),lim=to.getTime();
+    while(!(d.getTime() > lim)){ ... }
+
+Tested on post 1574 alone before anything else was touched: 4 encoded
+ampersands and "Invalid or unexpected token" became zero and a working
+calculator, with nothing else changed. That is what licensed the sweep.
+
+### Two more, found only because the scan was repeated after the fix
+
+Fixing the shared line left two pages still exposed, each with its own `<`
+swallowing its own `&&`:
+
+- `build_f2f.py` `deficit:close<0,quiet:ni===0&&dv===0` → `deficit:(0 > close)`
+- `build_f2e.py` `taxYears()`, three comparisons → `>` form, with `60 > n`
+  in place of `n<60`
+
+### How it was applied
+
+Source fixed, all 16 batches regenerated, then **89 pages** changed in the repo
+with the diff containing nothing but those lines. Live was swept with one
+`wp_privileged_search_replace_run` over `wp_posts.post_content` (302 cells, 303
+occurrences — the published posts and their revisions), then three targeted
+`wp_replace_in_post` calls: post 1574 to normalise the interim shape of the
+proving fix to the canonical one, and posts 1421 and 1285 for the two
+page-specific spans.
+
+**Verified after:** all 106 calculators carry zero entities in their inline
+scripts and throw no JavaScript error, and the three that were dead now compute
+(`due-to-versus-due-from` returns a direction, `retained-earnings` closes at
+$10,000.00 on a quiet year, `tax-years-since-incorporation` reports 6 years
+ended and 6 overdue). A 390-page scan of the whole site before the sweep found
+only these three plus `/contact-us/`, whose `hbspt is not defined` is a HubSpot
+embed and nothing to do with this.
+
+`build_f2p.script_entity_risk()` fails a build that reintroduces the shape, and
+the local scan now reports 0 of 106 at risk.
+
+### Two things found on the way, not fixed
+
+1. **`permanent-establishment-checker` and `schedule-7-investment-income-calculator`
+   regenerate with two 404 links.** Their "Read Next" lists are computed from
+   the set of built tool files, so adding batch 16's five files changed the
+   selection to `/tools/nil-return-eligibility-checker/` and
+   `/tools/holding-corporation-nil-checker/`, neither of which exists (both
+   404). The regeneration was reverted on those two files and only the entity
+   fix applied by hand, so live is unaffected and the repo still matches it.
+   **Open: those builders pick link targets from a set that moves, which means
+   any future batch can silently repoint their links at pages that do not
+   exist.** A fixed list, or a build-time assertion that every "Read Next"
+   target is a built file, would close it.
+
+2. **Repo and live have drifted on some earlier pages**, independently of this
+   work: `retained-earnings-rollforward-calculator` carries `&#8217;` locally
+   and `&rsquo;` live, `t2-short-eligibility-checker` has straight quotes
+   locally and `&#8220;` live, and `nil-t2-deadline-calculator`'s live "Read
+   Next" points at a tool where the repo points at a comparison page. These are
+   cosmetic or stale rather than broken, but they mean a byte-for-byte
+   repo-equals-live check does not currently pass family-wide. Worth one pass
+   to establish which side is right.

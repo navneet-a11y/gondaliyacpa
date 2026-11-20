@@ -369,7 +369,7 @@ function rollforward(ro,ni,dv){
   if(ro===undefined||ni===undefined||dv===undefined){return {err:'read'};}
   var close=ro+ni-dv;
   return {ro:ro,ni:ni,dv:dv,close:close,
-          deficit:close<0,quiet:ni===0&&dv===0};
+          deficit:(0 > close),quiet:ni===0&&dv===0};
 }
 var out=document.getElementById('out');
 function show(){
