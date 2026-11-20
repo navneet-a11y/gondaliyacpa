@@ -30,10 +30,20 @@ from vertical_copy import VERTICALS
 
 SRC, OUTDIR = sys.argv[1], sys.argv[2]
 WANT = sys.argv[3:] or None
-src = json.load(open(SRC))
-if isinstance(src, dict):
-    src = src['content']
-os.makedirs(OUTDIR, exist_ok=True)
+# The 2026-11-19 source export is not in the repo, so genops.py imports this
+# module for its helpers (P, sched_table, checklist, schema, FAQ_CSS) with no
+# source to build from. An empty SRC therefore defines the helpers and skips
+# the template build rather than failing the import. Publishing a vertical
+# goes through genops.py against a duplicate of page 2682 and does not need
+# the templates; only similarity.py and audit_visible.py read out/.
+HAVE_SRC = bool(SRC) and os.path.exists(SRC)
+if HAVE_SRC:
+    src = json.load(open(SRC))
+    if isinstance(src, dict):
+        src = src['content']
+    os.makedirs(OUTDIR, exist_ok=True)
+else:
+    src = []
 
 SITE  = 'https://corpnilfilingfor300.ca'
 FORM  = f'{SITE}/form/'
@@ -574,7 +584,7 @@ def build(slug):
 
 
 made = []
-for slug in (WANT or list(VERTICALS)):
+for slug in ((WANT or list(VERTICALS)) if HAVE_SRC else []):
     v = VERTICALS[slug]
     content = build(slug)
     tpl = {'version': '0.4', 'title': f'CorpNil Vertical — {v["name"]}',
@@ -586,4 +596,5 @@ for slug in (WANT or list(VERTICALS)):
 
 for slug, name, nsec, size in made:
     print(f'  {name:34s} {nsec:>2} sections  {size:>8,} b')
-print(f'{len(made)} template(s) written to {OUTDIR}')
+if HAVE_SRC:
+    print(f'{len(made)} template(s) written to {OUTDIR}')

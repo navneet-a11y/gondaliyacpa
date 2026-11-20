@@ -13020,3 +13020,111 @@ site's own money pages. Line 1221's requirement that every post carry one
 original table or checklist, and that every penalty reference carry the Section
 7.4 qualification, is worth auditing across the 16 live posts before 44 more
 are added; the 13 posts carrying FAQPage and HowTo schema are in that same set.
+
+## 2026-11-20 — F1 batch 5: inactive law professional corporations
+
+Navneet: *"create next priority vertical."* Plan line 1230 lists the Family 1
+keywords in priority order and item 11, `inactive law professional corporation
+t2`, was the first unbuilt one. The 2026-11-19 entry had already called it:
+law and dentistry written against the medicine page, and **separately rather
+than in one batch**. This is the law page; dentistry stays unbuilt.
+
+| ID | URL | Focus keyword | Distinguishing facts |
+|---|---|---|---|
+| 2840 | `/nil-t2-filing-for-inactive-law-professional-corporations/` | inactive law professional corporation t2 | Trust money is the client's, not corporate income; a fee drawn out of trust is what makes the year active; contingency files settling years later; referral fees from other firms; the law society annual report as a separate filing; library and leaseholds on Schedule 8 |
+
+Built the same way as the earlier batches: a duplicate of 2682 patched by
+`build/f1/genops.py`, 71 ops in two calls. `cnf_family` f1 came across with
+the duplicate (term 14, `changed: false`). In `nil_vertical-sitemap.xml` at
+**11 of 11**.
+
+### The share-ownership rule was not asserted, because it could not be verified
+
+The obvious differentiator against the medicine page is share ownership: the
+health-profession regulation (O. Reg. 665/05) lets a family member hold
+non-voting shares, and the medicine page uses that. A search for the
+equivalent Law Society of Ontario rule returned the Law Society Act and the
+CPSO's health-profession material but **not the operative text of By-Law 7**,
+so whether a non-licensee family member may hold shares in a law corporation
+is unconfirmed here.
+
+Schedule 50's row therefore reads *"whoever the law society share-ownership
+rules permit those holders to be"* rather than naming the rule. Same choice as
+dropping the GIFI code lookup and the Ontario corporate key checker from
+batch 17: on a CPA site an unverified regulatory fact is worse than a
+narrower sentence. *Certificate of authorization* is used, which the Law
+Society Act's own definition of a professional corporation confirms.
+
+### The source template is gone, so the builder was guarded
+
+`build_vertical.py` loaded the 2026-11-19 source export at import time and
+`genops.py` imports it for `P`, `sched_table`, `checklist`, `schema` and
+`FAQ_CSS`. That export is not in the repo, so the import failed and the
+publish path was dead.
+
+Guarded: an empty or missing `SRC` now defines the helpers and skips the
+template build. Publishing never needed the templates — only `similarity.py`
+and `audit_visible.py` read `out/`.
+
+The law template in `out/` was produced instead by substituting its copy into
+medicine's, longest string first, then asserting that nothing
+medicine-specific survived. That is sound because the live page is a duplicate
+of 2682 carrying the same copy through the same ops, and the out/ templates
+differ from each other only in their strings. Verified the other way round too:
+**115 of 115 body copy strings in `vertical_copy.py` appear verbatim on the
+live page.**
+
+### Two gates, and what they caught
+
+`audit_visible.py` failed the first build on the **7.4 output rule** — two
+uses of *simply*, one in the intro's "Whether ..." list and one in a why-card.
+Reworded. 117 strings, 0 failures after.
+
+6(k) similarity first came out at **0.595 law against medicine**, passing but
+with 0.005 of headroom, and medicine was the closest sibling exactly as the
+previous entry predicted. Seven strings had echoed medicine's phrasing rather
+than only the template's: the flat-fee why-card, the no-courier strip item,
+two `chk_both` lines, the sign-and-transmit step and the ordering sentence in
+the cost block. After diverging those: **law against medicine 0.582**, law's
+own peak **0.540** against IT consulting, and the family matrix still peaks at
+the pre-existing **0.599** construction/IT pair. Law is one of the least
+similar pages in the family.
+
+### Live audit
+
+HTTP 200, one H1, 27 H2s, ten FAQ items, two valid JSON-LD blocks
+(Service + BreadcrumbList, no FAQPage, HowTo, Review or aggregateRating), no
+7.4 banned phrase, no superlative, no bare T183, no unqualified "no penalty",
+no EFILE number or GroupID, no booking widget, no emoji, no medicine wording
+leaked, CO-17 and AT1 both named as separate returns, `$300.00 plus HST per
+tax year` 7 times and `$350.00 plus HST per year` twice.
+
+39 internal links, all 200 except `/community-commitment/` and
+`/engagement-terms/`, the two site-wide footer 404s already logged.
+
+### Open: every F1 vertical is an orphan
+
+Checked while verifying the new page's links. **No page on this site links to
+any of the eleven F1 verticals.** `/services/` (their own breadcrumb parent),
+the home page, `/sitemap/`, `/nil-t2-filing/`, `/tools/`, `/blog/`,
+`/guides/dormant-and-inactive-corporations/` and
+`/pricing/nil-t2-filing-cost/` return zero vertical links between them. They
+are reachable only through `nil_vertical-sitemap.xml`.
+
+Plan line 1523 requires each F1 page to have **inbound from 3 blog posts plus
+1 pillar**, with the anchor being the exact vertical name and never the bare
+brand. That has not been done for any of them, including the ten published
+before today. It is the same class of defect as the `/tools/` hub breach found
+on 2026-11-19, and it is not this page's to fix alone: it means editing the
+guide, the pillar and the blog posts for all eleven. Logged, not fixed.
+
+Also still open from the F1 entries above: the family's price wording was
+never swept for Navneet's 2026-11-12 ruling and all eleven pages say
+`plus HST` on what are national pages. This page matches its siblings
+deliberately rather than diverging alone.
+
+### Where F1 stands
+
+**11 of 215.** The ten-page test batch is complete and this is the first page
+past it. Of the plan's fourteen named F1 keywords, **dentistry professional
+corporations** is now the only named one unbuilt.

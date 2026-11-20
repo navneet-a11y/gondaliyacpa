@@ -2141,4 +2141,232 @@ VERTICALS = {
   ],
  },
 
+ 'inactive-law-professional-corporations': {
+  'name':   'Inactive Law Professional Corporations',
+  'short':  'inactive law professional corporation',
+  'plural': 'inactive law professional corporations',
+  'kw':     'inactive law professional corporation t2',
+  'title':  'Inactive Law Professional Corporation T2 | Nil Returns',
+  'desc':   'A law corporation owes a T2 for every year it stays in '
+            'existence. When a year with no account issued is nil, and why '
+            'trust money does not change that.',
+
+  'h1':   'Nil T2 Filing for Inactive Law Professional Corporations',
+  'lede': 'A year in which the corporation issued no account is still a tax '
+          'year on the Agency record. Where no fee was billed through it and '
+          'nothing it owns paid out, the return is $300.00 plus HST per tax '
+          'year.',
+
+  'intro_h': 'Flat-Fee Nil T2 Filing for Inactive Law Professional '
+             'Corporations',
+  'intro': (
+    'A law corporation that has stopped issuing accounts is still an existing '
+    'corporation. The certificate of authorization sits with the law society, '
+    'the fiscal year end keeps turning over, and the Agency expects a return '
+    'for each period whether a docket was opened in it or not. Those years '
+    'are $300.00 plus HST per tax year.',
+    'Whether you moved in-house, took a government or tribunal appointment, '
+    'went to non-practising status, or stopped accepting new retainers '
+    'altogether, the year is measured against accounts actually issued by the '
+    'corporation and against anything its own accounts or investments paid. '
+    'The return is prepared with Schedules 100, 125, 141 and 50 and '
+    'transmitted electronically. A year in which a settlement or a referral '
+    'fee reached the corporation goes to the full service instead.'),
+
+  'notnil_h': 'What an Unfiled Year Costs an Inactive Law Professional '
+              'Corporation',
+  'notnil_boxes': [
+    ('The Fiscal Year Turns Over Anyway',
+     'Closing a practice does not close the corporation. It keeps producing '
+     'tax years until it is dissolved.'),
+    ('The Agency Can Set the Clock',
+     'An obligation with no date on it becomes one with a deadline the moment '
+     'a written demand is issued.'),
+    ('Going Back Into Practice Means Catching Up',
+     'Accounts cannot sensibly be issued again through a corporation whose '
+     'filing record has holes in it.'),
+    ('A Merger or Retirement Deal Reads the Record',
+     'Firms absorbing a practice, and the insurers behind them, look at the '
+     'corporate filings before terms are settled.'),
+  ],
+  'notnil_text': (
+    'Counsel usually keep the corporation because they may practise through '
+    'it again, or because files remain open under its name. The gap in the '
+    'filings is what surfaces later, when a firm, an insurer or a purchaser '
+    'asks for the corporate record.',
+    'A year in which the corporation issued no account is $300.00 plus HST '
+    'per tax year. Outstanding years are worked oldest first so that every '
+    'opening balance agrees with the year that closed before it.'),
+
+  'sched_h': 'Which T2 Schedules an Inactive Law Professional Corporation '
+             'Files',
+  'sched_rows': [
+    ('Schedule 100', 'Balance sheet information', 'Required',
+     'Share capital, retained earnings and any amount still owing to a '
+     'shareholder stay on the balance sheet through the quiet years.'),
+    ('Schedule 125', 'Income statement information', 'Required',
+     'Carries nil fee income and nil disbursements where no account went out '
+     'in the period.'),
+    ('Schedule 141', 'Notes checklist', 'Required',
+     'Accompanies the two GIFI schedules and records who compiled them and on '
+     'what basis.'),
+    ('Schedule 50', 'Shareholder information', 'Required',
+     'Lists every holder of 10% or more of the shares, whoever the law '
+     'society share-ownership rules permit those holders to be.'),
+    ('Schedule 24', 'First-time filer information', 'First return only',
+     'Goes on the first T2 only, covering the period that begins the day the '
+     'corporation came into existence.'),
+    ('Schedule 8', 'Capital cost allowance', 'While depreciable property '
+     'remains',
+     'A library, office furniture and leasehold improvements stay depreciable '
+     'property until they are sold, scrapped or taken out of the '
+     'corporation.'),
+  ],
+  'sched_note': 'Source: the schedule requirements the Canada Revenue Agency '
+                'sets for a T2 return, read against a law corporation that '
+                'issued no account in the tax year. Last reviewed '
+                'November 20, 2026.',
+  'sched_boxes': [
+    ('Trust Money Is Not Corporate Income',
+     'Funds held for a client in a mixed trust account are the client’s. '
+     'The corporation holds them rather than earning them, so they put no '
+     'figure on Schedule 125.'),
+    ('The Law Society Filing Is a Different One',
+     'The annual report and the annual fee go to the law society on its own '
+     'cycle. Neither is a T2, and a T2 does not answer either.'),
+    ('Interest on the General Account Does Count',
+     'Where the corporation’s own account or a portfolio it holds is '
+     'credited with interest or a dividend, that is income to it and the year '
+     'becomes an ordinary return.'),
+  ],
+  'chk_yes': [
+    'No account for fees was issued by the corporation during the year',
+    'No contingency file in its name settled or was paid out',
+    'No referral fee or fee split was received by it',
+    'No interest or dividend was credited to anything it owns',
+    'Nothing left it as salary, dividend or shareholder draw',
+  ],
+  'chk_no': [
+    'An account went out, even for work docketed in an earlier year',
+    'A fee was drawn from trust into the general account',
+    'A referral fee arrived from another firm',
+    'Interest was credited on the corporation’s own general account',
+    'The practice, its open files or its goodwill changed hands for value',
+  ],
+  'chk_both': [
+    'One T2 for every tax year that ends while the corporation exists',
+    'A separate T183CORP authorisation for each of those years',
+    'Schedule 50, wherever a 10% holding exists',
+    'The law society annual report and fee, dealt with on their own cycle',
+    'Trust records and client files kept for as long as the law society '
+    'requires',
+  ],
+
+  'why_h': 'Why Inactive Law Professional Corporations Use This Service',
+  'why': [
+    ('Written for the Years Off the Roll',
+     'In-house, on an appointment, non-practising, or no longer taking '
+     'retainers. Those are the years this fee is for.'),
+    ('The Fee Test Runs Before the Charge',
+     'Each year is checked against accounts issued and against interest or '
+     'dividends inside the corporation before it is treated as nil.'),
+    ('One Price, One Year',
+     'A year with no account issued costs $300.00 plus HST per tax year, '
+     'whether it is the only outstanding one or the fourth in a row.'),
+    ('Years With Fees Are Handled Elsewhere',
+     'Where a settlement, a referral fee or an account appears, that year is '
+     'prepared as an ordinary corporate return at the higher fee.'),
+  ],
+  'strip': [
+    ('The Duty Follows the Entity',
+     'It attaches to the corporation on the register, not to whether anyone '
+     'is practising through it.'),
+    ('Earliest Year First',
+     'Returns go across in date order so every opening balance matches the '
+     'year that closed before it.'),
+    ('Nothing Goes in the Post',
+     'The signing package opens in an access-controlled portal, so no part of '
+     'this needs printing, scanning or a courier.'),
+  ],
+
+  'svc_h': 'What an Inactive Law Professional Corporation Usually Needs Next',
+  'proc_h': 'How an Inactive Law Professional Corporation Files',
+  'proc_lede': 'Four steps, taken from the filing form, starting with the '
+               'test that decides the year.',
+  'proc_note': 'Counsel generally finish this in one sitting:',
+  'steps': [
+    ('Check What the Corporation Billed',
+     'Accounts issued, contingency fees received, referral fees and interest '
+     'credited to its accounts are all measured before a year is called '
+     'nil.'),
+    ('Match the Year End to the Agency Record',
+     'A law corporation often runs a year end that is not December 31. It has '
+     'to agree with what the Agency holds or the transmission is rejected.'),
+    ('Build the Return',
+     'Schedules 100, 125, 141 and 50 are prepared for the year, with '
+     'Schedule 24 added where this is the corporation’s first T2.'),
+    ('Authorise Each Year and Transmit',
+     'One T183CORP covers one year, so the whole set is authorised in a '
+     'single sitting. The returns are then transmitted and the Agency '
+     'confirmation follows by email inside 3 business days.'),
+  ],
+
+  'price_h': 'Nil T2 Filing Cost for an Inactive Law Professional '
+             'Corporation',
+  'price_eyebrow': 'One Fee Per Tax Year',
+  'price_text': (
+    'Nil T2 filing is $300.00 plus HST per tax year. That covers the T2 '
+    'itself, the GIFI schedules where they are required, Schedule 50, '
+    'Schedule 24 on a first return, the T183CORP package with secure '
+    'e-signing, CPA review before anything is sent, electronic transmission '
+    'by a registered EFILE electronic filer, one corrected transmission where '
+    'the Agency rejects the first, and the CRA confirmation emailed within 3 '
+    'business days. A year in which the corporation billed a fee or earned '
+    'investment income is $350.00 plus HST per year at gondaliyacpa.ca.'),
+
+  'geo_h': 'Law Corporation Filing Across Canada',
+  'cta_h': 'File the Years Off the Roll and Keep the Entity in Order',
+
+  'faq': [
+   ('I moved in-house and stopped billing. Does the corporation still file?',
+    'Yes. It is a separate taxpayer and keeps producing tax years for as long '
+    'as it is in existence. What an employer pays you is yours rather than '
+    'the corporation’s, so it neither makes the corporate year active '
+    'nor excuses the return.'),
+   ('Does money in my trust account make the year active?',
+    'No. Trust funds are the clients’ and the corporation only holds '
+    'them. What would make the year active is a fee drawn out of trust into '
+    'the general account, because at that point the corporation has billed.'),
+   ('A contingency file settled three years after I closed. Which year?',
+    'The year the fee was received by the corporation. That year is prepared '
+    'as an ordinary return at $350.00 plus HST per year at gondaliyacpa.ca, '
+    'and the years on either side of it can still be nil.'),
+   ('I am on non-practising status. Is the corporation nil?',
+    'It can be, provided it issued no account and nothing it owns was '
+    'credited with interest or a dividend. Your status governs practice; the '
+    'corporation’s filing duty runs on its own.'),
+   ('Can the law society annual report stand in for the T2?',
+    'No. They go to different bodies on different cycles, and neither is '
+    'accepted in place of the other.'),
+   ('A referral fee came in from another firm. Does that end the nil year?',
+    'For that year, yes. A referral fee received by the corporation is income '
+    'to it, which puts a figure on Schedule 125 and makes the return an '
+    'ordinary one.'),
+   ('I still practise, but as an employee of a firm. Is my corporation nil?',
+    'It can be. Where the firm paid you personally and the corporation issued '
+    'no account, nothing was earned inside it. The test is whose name the '
+    'account went out under.'),
+   ('Can several outstanding years be filed together?',
+    'Yes. Each is its own T2 with its own T183CORP at $300.00 plus HST per '
+    'tax year, and the set goes across from the earliest year forward.'),
+   ('I want to dissolve the corporation. Can the missing years be skipped?',
+    'No. They still have to be filed, and a final return falls due six months '
+    'after the dissolution date. No clearance certificate is issued while a '
+    'year is outstanding.'),
+   ('Who signs the T183CORP when I am the only shareholder and director?',
+    'You sign it in that capacity, once for each tax year in the set. No '
+    'second signatory is needed where you are the only officer.'),
+  ],
+ },
+
 }
