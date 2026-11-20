@@ -12704,3 +12704,116 @@ here:
   of its own with a heading, the way gondaliyacpa does. That is a new Elementor
   section on ten live pages rather than a copy change, so it belongs in the same
   conversation as the F1 template sign-off.
+
+## 2026-11-20 — Family 2 batch 16: five Appendix A tools, and a live-only defect
+
+Navneet: "create pending 5 calculators which can bring good traffic from plan."
+
+### What went live
+
+| # | slug | ID | bytes |
+|---|---|---|---|
+| 102 | `/tools/t2-late-filing-penalty-calculator/` | 2818 | 30,315 |
+| 103 | `/tools/repeated-failure-to-file-penalty-calculator/` | 2820 | 31,107 |
+| 104 | `/tools/gst-hst-nil-return-deadline-calculator/` | 2821 | 30,031 |
+| 105 | `/tools/voluntary-disclosure-eligibility-checker/` | 2822 | 31,200 |
+| 106 | `/tools/taxpayer-relief-eligibility-checker/` | 2823 | 31,090 |
+
+All five are Appendix A entries (plan lines 2786, 2788, 2954, 2802, 2804).
+`nil_calculator` now reads **106 published**, matching the 106 built files, and
+every one carries `cnf_family` f2 (term_taxonomy_id 15).
+
+Built by `build/f2/build_f2p.py` (`TOOLS16`). Gates: `gate_batch.py build_f2p
+TOOLS16` clear, `gate_f2_all.py` clear on 106 pages (5 known pre-existing),
+`test_f2p_dom.js` 33 checks 0 failures including 4 decoys, `gate_rank_math.py`
+unchanged at its 15 pre-existing failures. Ledger entry
+`nil_calculator_batch16`.
+
+Each page was verified against its local file after publishing: the shipped
+body is byte-identical on all five, with zero entity substitution, and each
+calculator was exercised in a real browser and produced the figure worked out
+by hand from the statute.
+
+### Why these five, and the eight that were dropped
+
+`/penalty-on-zero-balance-owing-checker/`, `/ontario-annual-return-requirement-checker/`,
+`/t2-six-month-deadline-calculator/`, `/fiscal-year-end-calculator/`,
+`/first-tax-year-53-week-checker/`, `/zero-activity-corporation-checker/` and
+`/still-required-to-file-checker/` are **spent**, not unbuilt: a live tool
+already answers each. `/instalment-interest-calculator/` was dropped on
+relevance (a nil corporation owes no instalments). Reasoning per slug is in the
+`build_f2p.py` docstring.
+
+### A live-only defect that four pages shipped with, three of them pre-existing
+
+`t2-late-filing-penalty-calculator` first published with
+
+    while(n<12&&addMonths(due,n+1).getTime()<=filed.getTime()){n++;}
+
+and the live page threw `Invalid or unexpected token` with the calculator dead.
+WordPress serves that `&&` as `&#038;&#038;`, and inside a `<script>` element
+character references are not decoded, so the entity is a syntax error.
+
+The cause is the `<12&&`: a `<` followed by anything the output filters read as
+the start of a tag swallows text to the next `>`, and an `&` inside that span is
+entity-encoded. The content stored in the database is correct — a length probe
+returned exactly the local byte count — so this is an **output-time** transform
+that no local gate can see. The builder's contract, `gate_batch.py`,
+`gate_f2_all.py` and `test_f2p_dom.js` all read the correct `&&`.
+
+Fixed by rewriting the loop so no `&` falls inside a tag-like span, and
+`build_f2p.script_entity_risk()` now fails the build on the shape that provokes
+it.
+
+**Then a live scan of all 102 tool pages found three more, already live:**
+
+| page | inline entities | state |
+|---|---|---|
+| `/tools/due-to-versus-due-from-shareholder-checker/` | 4 | calculator dead |
+| `/tools/retained-earnings-rollforward-calculator/` | 2 | calculator dead |
+| `/tools/tax-years-since-incorporation-calculator/` | 2 | calculator dead |
+
+All three have the same root cause, and it is not in their own code. It is
+`build_f2.DATE_JS`:
+
+    while(d.getTime()<=to.getTime()){if(isBusiness(d)){n++;}d=new Date(...);}
+
+`<=to.getTime()...` opens a pseudo-tag on **every one of the 106 pages**. It is
+harmless wherever a `>` arrives before the next `&`, which is why 103 pages are
+fine and these three are not.
+
+**Not fixed, and why.** The root fix is one character — a space after the `<` in
+`DATE_JS`, since `< ` cannot open a tag. But `DATE_JS` is in every page, so
+applying it changes all 106 files and needs all 106 republished to keep the repo
+and the live site byte-identical, which is the property every verification in
+this family depends on. That is a sweep to schedule, not something to half-apply:
+fixing three pages from a shared source would leave 103 where the repo and live
+disagree. **Open for Navneet: three live calculators are dead and the sweep is
+the fix.** Scan to reproduce: `scanall.js` pattern in the session, or fetch each
+`/tools/` URL and count `&#038;` inside `script:not([src])`.
+
+### Also corrected
+
+`gate_batch.py` failed all five pages on "rule 9 price string missing" because it
+hardcoded `build_f2.PRICE`, which still carries HST, while a national batch
+shadows it with the sales-tax form under the 2026-11-12 decision. It now checks
+the string the batch itself ships, with `SANCTIONED` keeping that from becoming a
+licence to invent a third wording. Batch 15 never hit this because `build_f2o`
+exposes `TOOL`, not a `TOOLS` list, so `gate_batch.py` was never run over it.
+
+Hard rule 3 also caught one of this batch's own lines, "so no late-filing penalty
+arises". No live page uses that phrasing; the house convention is QUAL's "no
+percentage late-filing penalty". The builder's rule-3 check now enumerates the
+permitted phrasings instead of matching only the bare two-word form, and covers
+the Rank Math fields, which are not part of the page body.
+
+### Still open on Family 2
+
+106 of the plan's 150. Of the 80 Appendix A slugs left, eleven are non-resident
+withholding tools (branch tax, Part XIII, Regulation 105, section 116, T1134,
+T1135, T106, treaty-based return). Those are gondaliyacpa.ca work at $350.00 per
+year, not nil T2 work, and eleven off-topic tool pages on a single-service domain
+costs topical focus that 6(e)'s own rationale does not pay for. **Raised with
+Navneet 2026-11-20; a question for Sharad Gondaliya, not decided here.** Dropping
+them and building the ~40 that are nil-adjacent lands Family 2 near 140 on-topic
+tools rather than 150 with a weak tail.

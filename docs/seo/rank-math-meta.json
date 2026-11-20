@@ -1944,5 +1944,45 @@
     "title": "What a New Nunavut Corporation Must File"
    }
   ]
+ },
+ "nil_calculator_batch16": {
+  "note": "Family 2 batch 16, five Appendix A tools chosen for search volume (Navneet, 2026-11-20). IDs 2818, 2820 to 2823. See build/f2/build_f2p.py for why these five and not the other 80, and for the WordPress entity defect that batch found on three pre-existing live pages.",
+  "items": [
+   {
+    "desc": "Five per cent of the tax owing plus one per cent for each complete month late, to twelve months. A nil return computes to $0.00.",
+    "id": 2818,
+    "kw": "t2 late filing penalty",
+    "slug": "t2-late-filing-penalty-calculator",
+    "title": "T2 Late Filing Penalty Calculator"
+   },
+   {
+    "desc": "Subsection 162(2) charges ten per cent plus two per cent a month to twenty months, but only after a demand to file and a prior penalty.",
+    "id": 2820,
+    "kw": "repeated failure to file penalty",
+    "slug": "repeated-failure-to-file-penalty-calculator",
+    "title": "Repeated Failure to File Penalty Calculator"
+   },
+   {
+    "desc": "An annual filer reports three months after the fiscal year end and a monthly or quarterly filer one month after the period ends.",
+    "id": 2821,
+    "kw": "gst hst nil return deadline",
+    "slug": "gst-hst-nil-return-deadline-calculator",
+    "title": "GST/HST Nil Return Deadline Calculator"
+   },
+   {
+    "desc": "A disclosure has to be voluntary, complete and at least a year past due. A nil year carries nothing for the programme to relieve.",
+    "id": 2822,
+    "kw": "voluntary disclosure eligibility",
+    "slug": "voluntary-disclosure-eligibility-checker",
+    "title": "Voluntary Disclosure Eligibility Checker"
+   },
+   {
+    "desc": "Relief reaches a tax year ending within the ten calendar years before the request, and it cancels penalties and interest, never tax.",
+    "id": 2823,
+    "kw": "taxpayer relief eligibility",
+    "slug": "taxpayer-relief-eligibility-checker",
+    "title": "Taxpayer Relief Eligibility Checker"
+   }
+  ]
  }
 }

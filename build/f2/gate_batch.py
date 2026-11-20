@@ -28,6 +28,20 @@ TOOLS = getattr(_m, ATTR)
 # Batches before 10 predate the structure contract and define no STRUCTURE.
 # Their hard-rule checks still apply, so the gate runs them and skips only the
 # structure block rather than crashing, which is what it did on build_f2h.
+
+# Rule 9 price wording. build_f2.PRICE is what the first 101 pages say, and
+# was the only accepted string until 2026-11-12, when Navneet settled that HST
+# is named only in the five HST jurisdictions. A national batch therefore
+# shadows PRICE with the sales-tax form (build_f2o.py was the first), and this
+# gate failed all five pages of batch 16 for using it. The gate now checks the
+# string the batch itself ships, and SANCTIONED keeps that from becoming a
+# licence to invent a third wording.
+SANCTIONED = {PRICE, '$300.00 plus applicable sales tax per tax year'}
+BATCH_PRICE = getattr(_m, 'PRICE', PRICE)
+assert BATCH_PRICE in SANCTIONED, (
+    '%s defines an unsanctioned price string %r. Rule 9 allows only %r'
+    % (MODULE, BATCH_PRICE, sorted(SANCTIONED)))
+
 STRUCTURE = getattr(_m, 'STRUCTURE', None)
 STRUCTURAL = STRUCTURE is not None
 if not STRUCTURAL:
@@ -92,7 +106,7 @@ for t in TOOLS:
         if w in low: bad('rule 7 "%s"' % w)
     # 9 price wording
     if 'including HST' in c: bad('rule 9 "including HST"')
-    if PRICE not in c: bad('rule 9 price string missing')
+    if BATCH_PRICE not in c: bad('rule 9 price string missing')
     # 7.5 byline and stamp
     if 'CPA Ontario Membership 61040184' not in c: bad('7.5 rule 3 byline missing')
     if 'Last reviewed:' not in c: bad('7.5 last-reviewed line missing')

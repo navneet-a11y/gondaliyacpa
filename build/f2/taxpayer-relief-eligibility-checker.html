@@ -1,0 +1,407 @@
+<!-- wp:html -->
+<style>
+.ei-wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+.ei-btn-blue{background:rgba(32,135,201,1);color:#fff !important;padding:13px 26px;border-radius:6px;font-weight:700;font-size:0.95em;text-transform:uppercase;text-decoration:none !important;display:inline-block;line-height:1.4;text-align:center;min-width:120px}
+.ei-section{padding:26px 20px}
+.ei-section-alt{background:#f7f9fc;padding:26px 20px}
+.ei-art .ei-h2{font-weight:800;color:#1a2340;margin:0 0 10px;font-size:1.45em;line-height:1.3}
+.ei-art > *:last-child{margin-bottom:0}
+.ei-art p{color:#4a5568;line-height:1.8}
+.ei-art a{color:rgba(32,135,201,1)}
+.ei-art ul{color:#4a5568;line-height:1.8}
+.ei-info{background:#f0f7fd;border-left:4px solid rgba(32,135,201,1);border-radius:0 8px 8px 0;padding:14px 18px;margin:18px 0}
+.ei-info p{margin:0;color:#1a2340;line-height:1.7}
+.ei-warn{background:#fffbf0;border-left:4px solid #f6ad1a;border-radius:0 8px 8px 0;padding:14px 18px;margin:18px 0}
+.ei-warn p{margin:0;color:#7c5800;line-height:1.7}
+.ei-danger{background:#fff5f5;border-left:4px solid #e53e3e;border-radius:0 8px 8px 0;padding:14px 18px;margin:18px 0}
+.ei-danger p{margin:0;color:#742a2a;line-height:1.7}
+.ei-hero{background:linear-gradient(135deg,#0f1624 0%,#1a2340 55%,#1e3a6e 100%);padding:40px 20px}
+.ei-hero-inner{max-width:860px;margin:0 auto;text-align:center}
+.ei-hero-eyebrow{display:inline-block;background:rgba(32,135,201,0.15);border:1px solid rgba(32,135,201,0.4);border-radius:50px;padding:5px 16px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:rgba(32,135,201,1);margin-bottom:16px;font-size:.8em}
+.ei-hero h1{color:#fff;font-weight:800;line-height:1.2;margin:0 0 14px;font-size:2.1em}
+.ei-hero h1 span{color:#f6ad1a}
+.ei-hero-sub{color:rgba(255,255,255,0.78);max-width:720px;margin:0 auto 10px;line-height:1.75}
+.ei-hero-by{color:rgba(255,255,255,0.6);max-width:720px;margin:0 auto 22px;line-height:1.6;font-size:.86em}
+.ei-hero-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.ei-tbl{width:100%;border-collapse:collapse;margin:18px 0;border:1px solid #d1d5db}
+.ei-tbl th{background:#1a2340;color:#fff;font-weight:700;padding:12px 14px;text-align:left;border:1px solid #374151}
+.ei-tbl td{padding:10px 14px;border:1px solid #d1d5db;color:#2d3748;line-height:1.5}
+.ei-tbl tr:nth-child(even){background:#f7f9fc}
+.ei-tbl tr:hover{background:#edf2f7}
+.ei-updated{color:#718096;font-size:.9em;margin:0 0 18px}
+.ei-toc{background:linear-gradient(180deg,#ffffff,#f7f9fc);border:1px solid #e2e8f0;border-radius:12px;padding:18px 22px;margin:0 0 10px;box-shadow:0 1px 2px rgba(26,35,64,.05)}
+.ei-toc h2{font-size:.76em;font-weight:800;color:#8795ab;margin:0 0 10px;text-transform:uppercase;letter-spacing:1.3px}
+.ei-toc ol{margin:0;padding:0;list-style:none;counter-reset:toc;columns:2;column-gap:30px}
+.ei-toc li{break-inside:avoid;counter-increment:toc;margin:0}
+.ei-toc a{display:flex;gap:10px;align-items:baseline;padding:6px 9px;border-radius:6px;color:#1a2340;text-decoration:none;line-height:1.45}
+.ei-toc a::before{content:counter(toc);color:rgba(32,135,201,1);font-weight:800;font-size:.82em;min-width:15px;flex-shrink:0}
+.ei-toc a:hover{background:#eaf3fb;color:rgba(32,135,201,1);text-decoration:none}
+.ei-cta-inline{background:#1a2340;border-radius:10px;padding:24px 28px;margin:28px 0;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px}
+.ei-cta-inline h3{color:#fff;margin:0 0 4px;font-weight:700}
+.ei-cta-inline p{color:rgba(255,255,255,0.65);margin:0}
+.ei-cta-inline a,.ei-cta-inline a:visited,.ei-cta-inline a:hover,.ei-cta-bottom a,.ei-cta-bottom a:visited,.ei-cta-bottom a:hover,.ei-hero-btns a,.ei-hero-btns a:visited,.ei-hero-btns a:hover{color:#fff !important;text-decoration:none !important}
+.ei-faq{max-width:900px;margin:16px auto 0}
+.ei-faq details{border:1px solid #e2e8f0;border-radius:8px;margin-bottom:9px;background:#fff}
+.ei-faq summary{padding:14px 18px;font-weight:600;color:#1a2340;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:14px;line-height:1.5}
+.ei-faq summary::-webkit-details-marker{display:none}
+.ei-faq summary::after{content:'+';color:rgba(32,135,201,1);font-weight:400;font-size:1.4em;line-height:1;flex-shrink:0;transition:transform .15s ease}
+.ei-faq details[open] summary{color:rgba(32,135,201,1)}
+.ei-faq details[open] summary::after{transform:rotate(45deg)}
+.ei-faq .ei-faq-a{padding:0 18px 15px}
+.ei-faq .ei-faq-a p{margin:0;color:#4a5568;line-height:1.75}
+.ei-art h3{font-weight:700;color:#1a2340;margin:26px 0 8px;font-size:1.15em}
+.ei-qlist{max-width:900px;margin:12px auto 0;padding:0;list-style:none}
+.ei-qlist li{border:1px solid #e2e8f0;border-radius:8px;margin-bottom:10px;background:#fff}
+.ei-qlist a{display:block;padding:16px 20px;font-weight:600;color:#1a2340 !important;text-decoration:none !important}
+.ei-qlist a:hover{background:#f7f9fc;color:rgba(32,135,201,1) !important}
+.ei-cta-bottom{background:linear-gradient(135deg,#0f1624,#1a2340);padding:40px 20px;text-align:center}
+.ei-cta-bottom h2{color:#fff;font-weight:800;margin:0 0 10px;font-size:1.5em}
+.ei-cta-bottom p{color:rgba(255,255,255,0.72);max-width:600px;margin:0 auto 22px;line-height:1.75}
+.entry-header{display:none!important}
+.ast-article-single,.ast-article-single .entry-content{margin-top:0;padding-top:0}
+@media(max-width:900px){.ei-cta-inline{flex-direction:column;text-align:center}.ei-hero h1{font-size:1.6em}.ei-art .ei-h2{font-size:1.3em}.ei-toc ol{columns:1}}
+
+/* Narrower than the guides' 1100px, at Navneet's request. 1000px is the
+   measure the Family 4 service pages already use, so this is a house value
+   rather than a new one. The hero band stays full-bleed: it is .ei-hero that
+   spans, and .ei-hero-inner caps its text at 860px, so neither is touched.
+
+   A service page has exactly one band that spans the viewport, the hero. The
+   guides alternate white and grey .ei-section bands, which span whatever the
+   window is and make the body read full width even with the text capped at
+   1000px. Dropping the grey leaves one continuous column, which is what a
+   service page looks like. The hero still spans. */
+.ei-wrap{max-width:1000px}
+.ei-section-alt{background:none}
+/* The FAQ and Read Next lists come from the guides capped at 900px and
+   centred with auto margins. In the guides' 1100px column that reads as a
+   deliberate inset; in this 1000px one it just leaves them narrower than,
+   and off-axis from, their own H2 and the body copy above. Run them the
+   full measure of the column instead. */
+.ei-faq,.ei-qlist{max-width:none;margin-left:0;margin-right:0}
+/* 1000px, the same measure as .cnf-w on the Family 4 service pages, which
+   Navneet confirmed read correctly.
+
+   !important, which is not decoration here. Measured against a service
+   page screenshot at the same window, the tool body was rendering around
+   1250px: wider than the 1100px base AND wider than the 1000px override,
+   so neither .ei-wrap rule was binding. Two successive specificity levels
+   (0,1,0 then 0,2,0) changed nothing on the front end. Whatever sets the
+   width wins on specificity or carries !important itself, so this does
+   too. The margins are forced with it so the column still centres if the
+   same rule also set a margin.
+
+   The hero is not in the selector and does not move. */
+.ei-wrap.ei-art,.ei-cta-bottom .ei-wrap{max-width:1000px!important;margin-left:auto!important;margin-right:auto!important}
+/* Dark navy calculator panel, after the gondaliyacpa.ca sample Navneet sent.
+
+   The panel is the only thing on the page that asks for input, and as a white
+   card on a white body it read as more body copy. Navy separates the thing you
+   do from the thing you read, which is the whole point of the sample's design.
+
+   Every selector below carries one class more than the base rule it replaces,
+   because the base rules sit earlier in this same stylesheet and some of them
+   (.ei-yn label) are already two-class. The result box is deliberately left
+   light: on navy it reads as the answer card, and its green and red variants
+   still carry the eligible / not eligible meaning. */
+.ei-art .ei-tool{background:#1a2340;border:0;border-radius:14px;
+  padding:28px 30px;box-shadow:0 10px 30px rgba(15,22,36,.18)}
+.ei-art .ei-tool legend{color:#f6ad1a;font-size:1.15em;padding:0 0 14px}
+.ei-art .ei-f label{color:rgba(255,255,255,.82)}
+.ei-art .ei-f input[type=date]{background:rgba(255,255,255,.09);
+  border:1.5px solid rgba(255,255,255,.28);color:#fff;font-weight:700;
+  color-scheme:dark;padding:11px 13px}
+.ei-art .ei-f input[type=date]:focus{border-color:rgba(32,135,201,1);
+  background:rgba(32,135,201,.2);outline:none}
+/* No filter here. color-scheme:dark above already makes Chrome draw the
+   picker glyph light; inverting it on top turned it black again, which is
+   what Navneet's screenshot showed. Opacity only. */
+.ei-art .ei-f input[type=date]::-webkit-calendar-picker-indicator{
+  opacity:.9;cursor:pointer}
+.ei-art .ei-yn{border:1.5px solid rgba(255,255,255,.28)}
+.ei-art .ei-yn label{background:transparent;color:rgba(255,255,255,.75)}
+/* #1a7ab5, not the #2087c9 the base rule uses. White on #2087c9 is 3.91:1,
+   under the 4.5 that bold text at this size needs, and it was already that
+   way on the white card. #1a7ab5 is 4.67:1 and is not a new colour, it is
+   the hover shade .ei-btn-blue already uses. */
+.ei-art .ei-yn input:checked+span{background:#1a7ab5;color:#fff}
+.ei-art .ei-yn label:focus-within span{outline:2px solid #fff;outline-offset:-2px}
+.ei-art .ei-tool .ei-err{color:#ffb4ab}
+.ei-art .ei-tool .ei-out{box-shadow:0 2px 10px rgba(15,22,36,.22)}
+
+/* Hero tags, summary stats and the two-column compare, all after the
+   gondaliyacpa.ca sample. */
+.ei-hero-tags{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;
+  margin:0 0 16px}
+.ei-hero-tag{background:rgba(255,255,255,.08);
+  border:1px solid rgba(255,255,255,.18);border-radius:50px;padding:5px 14px;
+  color:rgba(255,255,255,.78);font-size:.85em;line-height:1.5}
+/* Stat cards sit inside .ei-out, which stays light, so these are white cards
+   on a pale result box rather than on the navy panel. */
+.ei-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;
+  margin:0 0 14px}
+.ei-stat{background:#fff;border:1px solid #e2e8f0;border-radius:10px;
+  padding:13px 15px}
+.ei-stat-l{display:block;color:#718096;font-size:.8em;margin:0 0 5px;
+  line-height:1.4}
+.ei-stat-v{display:block;font-weight:800;color:#1a2340;font-size:1.12em;
+  line-height:1.3}
+.ei-cmp{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:18px 0}
+.ei-cmp-col{border:1px solid #e2e8f0;border-radius:12px;overflow:hidden;
+  background:#fff}
+.ei-cmp-col.a{border-top:3px solid rgba(32,135,201,1)}
+.ei-cmp-col.b{border-top:3px solid #f6ad1a}
+.ei-cmp-hdr{padding:14px 18px;font-weight:800;color:#1a2340}
+.ei-cmp-col.a .ei-cmp-hdr{background:rgba(32,135,201,.07)}
+.ei-cmp-col.b .ei-cmp-hdr{background:rgba(246,173,26,.07)}
+.ei-cmp-row{padding:11px 18px;border-top:1px solid #f0f0f0}
+.ei-cmp-l{display:block;color:#718096;font-size:.84em;margin:0 0 2px}
+.ei-cmp-v{display:block;color:#1a2340;line-height:1.55}
+@media(max-width:700px){.ei-stats{grid-template-columns:1fr}
+  .ei-cmp{grid-template-columns:1fr}}
+.ei-tool{background:#fff;border:1px solid #e2e8f0;border-radius:12px;padding:22px 24px;margin:18px 0;box-shadow:0 1px 2px rgba(26,35,64,.05)}
+.ei-tool legend{font-weight:800;color:#1a2340;font-size:1.05em;padding:0 0 6px}
+.ei-tool fieldset{border:0;margin:0;padding:0}
+.ei-f{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:0 0 14px}
+.ei-f label{font-weight:600;color:#1a2340;flex:1 1 320px;line-height:1.5}
+.ei-f input[type=date]{font:inherit;padding:9px 11px;border:1px solid #cbd5e0;border-radius:7px;color:#1a2340;background:#fff}
+.ei-yn{display:inline-flex;border:1px solid #cbd5e0;border-radius:7px;overflow:hidden;flex:0 0 auto}
+.ei-yn label{flex:0 0 auto;margin:0;padding:8px 16px;cursor:pointer;font-weight:700;color:#4a5568;background:#fff;line-height:1.2}
+.ei-yn input{position:absolute;opacity:0;width:0;height:0}
+.ei-yn input:checked+span{background:rgba(32,135,201,1);color:#fff}
+.ei-yn span{display:block;padding:8px 16px;margin:-8px -16px}
+.ei-yn label:focus-within span{outline:2px solid #1a2340;outline-offset:-2px}
+.ei-out{margin:16px 0 0;padding:16px 18px;border-radius:9px;border-left:5px solid #cbd5e0;background:#f7f9fc}
+.ei-out.ok{border-left-color:#2f855a;background:#f0fff4}
+.ei-out.no{border-left-color:#c53030;background:#fff5f5}
+.ei-out h3{margin:0 0 6px;font-size:1.1em;color:#1a2340}
+.ei-out p{margin:0 0 8px;color:#4a5568;line-height:1.7}
+.ei-out ul{margin:6px 0 8px 20px;color:#4a5568;line-height:1.7}
+.ei-out .ei-note{font-size:.88em;color:#718096;margin:10px 0 0}
+.ei-big{font-size:1.5em;font-weight:800;color:rgba(32,135,201,1);display:block;margin:2px 0 6px}
+.ei-tool .ei-err{color:#c53030;font-weight:600;margin:6px 0 0}
+</style>
+<div class="ei-hero"><div class="ei-hero-inner"><span class="ei-hero-eyebrow">Relief</span><h1>Taxpayer Relief <span>Eligibility Checker</span></h1><p class="ei-hero-sub">The Minister may cancel penalties and interest on specified grounds, but only for a tax year inside the ten-year window.</p><div class="ei-hero-tags"><span class="ei-hero-tag">Ten-year window</span><span class="ei-hero-tag">Penalties and interest only</span><span class="ei-hero-tag">Discretionary, on grounds</span><span class="ei-hero-tag">Form RC4288</span></div><p class="ei-hero-by">Written and reviewed by Sharad Gondaliya, CPA (Ontario), CPA Ontario Membership 61040184.</p><div class="ei-hero-btns"><a class="ei-btn-blue" href="https://corpnilfilingfor300.ca/form/">Start Nil T2 Filing NOW</a></div></div></div>
+<div class="ei-section"><div class="ei-wrap ei-art">
+<p class="ei-updated">Last reviewed: November 20, 2026</p>
+<div class="ei-tool">
+<fieldset><legend>The year and the grounds</legend>
+<div class="ei-f"><label for="yr">The tax year the penalty or interest relates to</label><input type="number" id="yr" min="1970" max="2026" step="1" placeholder="2019" inputmode="numeric"></div>
+<div class="ei-f"><label id="lground">Extraordinary circumstances, an Agency action, or an inability to pay?</label><span class="ei-yn" role="radiogroup" aria-labelledby="lground"><label><input type="radio" name="ground" value="y"><span>Yes</span></label><label><input type="radio" name="ground" value="n"><span>No</span></label></span></div>
+<div class="ei-f"><label id="lfiled">Have the returns for that year been filed?</label><span class="ei-yn" role="radiogroup" aria-labelledby="lfiled"><label><input type="radio" name="filed" value="y"><span>Yes</span></label><label><input type="radio" name="filed" value="n"><span>No</span></label></span></div>
+<div class="ei-f"><label id="lnil">Was the year a nil year?</label><span class="ei-yn" role="radiogroup" aria-labelledby="lnil"><label><input type="radio" name="nil" value="y"><span>Yes</span></label><label><input type="radio" name="nil" value="n"><span>No</span></label></span></div>
+</fieldset>
+<div class="ei-out" id="out" role="status" aria-live="polite"><p>Enter the year and answer the three questions.</p></div>
+</div>
+<div class="ei-info"><p>Gondaliya CPA Professional Corporation is a registered EFILE electronic filer. Returns are prepared and transmitted in Canada. Credentials are never shared and never used offshore.</p></div>
+</div></div>
+<div class="ei-section-alt" id="window"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">The Ten-Year Window Is the First Test</h2>
+<p>Subsection 220(3.1) of the Income Tax Act lets the Minister waive or cancel a penalty or interest. The discretion is bounded: a request may only reach a tax year that ended within the ten calendar years before the calendar year in which the request is made. A request made during 2026 therefore reaches tax years ending in 2016 or later.</p>
+<p>The window moves every January, which cuts both ways: waiting a year to ask does not improve a request and can put the oldest year it covers permanently out of reach.</p>
+</div></div>
+<div class="ei-section" id="what-it-reaches"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">It Cancels Charges, Not Tax</h2>
+<table class="ei-tbl"><thead><tr><th scope="col">What was assessed</th><th scope="col">Can relief reach it</th></tr></thead><tbody>
+<tr><td>Late-filing penalty</td><td>Yes, on grounds and inside the window</td></tr>
+<tr><td>Arrears interest</td><td>Yes, on the same basis</td></tr>
+<tr><td>The tax itself</td><td>No. Relief never touches the tax</td></tr>
+<tr><td>A charge on a nil year</td><td>There is none to reach</td></tr>
+</tbody></table>
+<p>That last row is where most corporate enquiries about relief actually land. A true nil year carried no percentage penalty and no interest, so a request has nothing to cancel, and the thing that closes the year is the return. The <a href="https://corpnilfilingfor300.ca/tools/t2-late-filing-penalty-calculator/">T2 late filing penalty calculator</a> shows the arithmetic that produces $0.00, and the <a href="https://corpnilfilingfor300.ca/tools/nil-return-late-penalty-checker/">nil return late penalty checker</a> sets out what an open year costs instead of a percentage.</p>
+<p>Relief reaches the penalty and the interest, never the tax, and on a nil year there was never any of the three.</p>
+</div></div>
+<div class="ei-section-alt" id="grounds"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">The Grounds, and the Order of Operations</h2>
+<p>Three groups of circumstances are recognised: extraordinary circumstances outside the taxpayer&rsquo;s control, such as a natural disaster, a serious illness or a death; actions of the Canada Revenue Agency itself, such as processing delays or incorrect information; and an inability to pay or financial hardship. Form RC4288 is the request, and it is decided case by case.</p>
+<p>Outstanding returns are filed before the request or with it. Asking for charges to be cancelled on a year that has not been filed leaves the year open, so <a href="https://corpnilfilingfor300.ca/pricing/nil-t2-filing-cost/">nil T2 filing at $300.00 plus applicable sales tax per tax year</a> or the <a href="https://corpnilfilingfor300.ca/tools/catch-up-filing-schedule-generator/">catch-up filing schedule generator</a> comes first. A correction made before the Agency acts is a different route again, and the <a href="https://corpnilfilingfor300.ca/tools/voluntary-disclosure-eligibility-checker/">voluntary disclosure eligibility checker</a> covers it. The <a href="https://corpnilfilingfor300.ca/guides/corporate-tax-arrears-and-interest/">guide to corporate tax arrears and interest</a> covers what the charges are before any request to cancel them.</p>
+</div></div>
+<div class="ei-section"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">Frequently Asked Questions</h2>
+<div class="ei-faq">
+<details><summary>What is taxpayer relief?</summary><div class="ei-faq-a"><p>A discretionary cancellation or waiver of penalties and interest by the Minister under subsection 220(3.1) of the Income Tax Act.</p></div></details>
+<details><summary>How far back can a request go?</summary><div class="ei-faq-a"><p>To a tax year that ended within the ten calendar years before the calendar year the request is made in.</p></div></details>
+<details><summary>Can relief cancel the tax owing?</summary><div class="ei-faq-a"><p>No. It reaches penalties and interest only. The tax itself stands.</p></div></details>
+<details><summary>What grounds are recognised?</summary><div class="ei-faq-a"><p>Extraordinary circumstances outside your control, actions of the Canada Revenue Agency, and an inability to pay or financial hardship.</p></div></details>
+<details><summary>Which form is used?</summary><div class="ei-faq-a"><p>Form RC4288, the request for taxpayer relief.</p></div></details>
+<details><summary>Is relief automatic once a ground applies?</summary><div class="ei-faq-a"><p>No. It is discretionary and each request is decided on its own facts.</p></div></details>
+<details><summary>Does a nil year qualify for relief?</summary><div class="ei-faq-a"><p>There is nothing to relieve. A true nil year carries no percentage penalty and no interest, so filing the return is what resolves it.</p></div></details>
+<details><summary>Do the returns have to be filed first?</summary><div class="ei-faq-a"><p>They are normally filed before the request or with it. An unfiled year stays open regardless of the request.</p></div></details>
+<details><summary>Is this the same as a voluntary disclosure?</summary><div class="ei-faq-a"><p>No. A disclosure corrects a position before the Agency acts; relief asks for charges already assessed to be cancelled.</p></div></details>
+<details><summary>Does the window move?</summary><div class="ei-faq-a"><p>Yes, every calendar year, so the oldest year a request can reach moves forward each January.</p></div></details>
+</div>
+</div></div>
+<div class="ei-section"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">Read Next</h2>
+<ul class="ei-qlist">
+<li><a href="https://corpnilfilingfor300.ca/tools/voluntary-disclosure-eligibility-checker/">Voluntary disclosure eligibility checker</a></li>
+<li><a href="https://corpnilfilingfor300.ca/tools/t2-late-filing-penalty-calculator/">T2 late filing penalty calculator</a></li>
+<li><a href="https://corpnilfilingfor300.ca/tools/repeated-failure-to-file-penalty-calculator/">Repeated failure to file penalty calculator</a></li>
+<li><a href="https://corpnilfilingfor300.ca/tools/nil-return-late-penalty-checker/">Nil return late penalty checker</a></li>
+<li><a href="https://corpnilfilingfor300.ca/tools/catch-up-filing-schedule-generator/">Catch-up filing schedule generator</a></li>
+<li><a href="https://corpnilfilingfor300.ca/tools/arbitrary-assessment-response-checker/">Arbitrary assessment response checker</a></li>
+</ul>
+</div></div>
+<div class="ei-cta-bottom"><div class="ei-wrap"><h2>Nil T2 Filing, $300.00 plus applicable sales tax per tax year</h2><p>Type your corporation name, pick your unfiled years, pay, and sign Form T183CORP on a secure screen. Your CRA confirmation is emailed within 3 business days.</p><a class="ei-btn-blue" href="https://corpnilfilingfor300.ca/form/">Start Nil T2 Filing NOW</a></div></div>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebPage", "@id": "https://corpnilfilingfor300.ca/tools/taxpayer-relief-eligibility-checker/#webpage", "url": "https://corpnilfilingfor300.ca/tools/taxpayer-relief-eligibility-checker/", "name": "Taxpayer Relief Eligibility Checker | Ten-Year Window", "description": "The Minister may cancel penalties and interest on specified grounds, but only for a tax year inside the ten-year window.", "inLanguage": "en-CA", "dateModified": "2026-11-20", "author": {"@type": "Person", "name": "Sharad Gondaliya", "honorificSuffix": "CPA", "url": "https://corpnilfilingfor300.ca/sharad-gondaliya-cpa/"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Nil T2 filing in Canada", "item": "https://corpnilfilingfor300.ca/"}, {"@type": "ListItem", "position": 2, "name": "Tools", "item": "https://corpnilfilingfor300.ca/tools/"}, {"@type": "ListItem", "position": 3, "name": "Taxpayer Relief Eligibility Checker", "item": "https://corpnilfilingfor300.ca/tools/taxpayer-relief-eligibility-checker/"}]}]}</script>
+<script>
+(function(){
+var PRICE_JS="$300.00 plus applicable sales tax per tax year";
+var DISC_JS="This tool gives general information and is not a filed return.";
+var NOTNILJS="A holding corporation with investment income, a rental corporation and a corporation that paid or received a dividend are not nil. Those are handled by Gondaliya CPA Professional Corporation at gondaliyacpa.ca at $350.00 plus applicable sales tax per year.";var QUALJS="A true nil return carries no percentage late-filing penalty, because that penalty is a percentage of tax owing and the corporation owes $0.00. The unfiled year still stays open forever, invites a demand to file and an arbitrary assessment, blocks a clearance certificate and dissolution, and costs a non-resident-owned corporation $25.00 per day up to $2,500.00.";
+
+var MON=['January','February','March','April','May','June','July','August',
+         'September','October','November','December'];
+var DAY=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+function u(y,m,d){return new Date(Date.UTC(y,m,d));}
+function lastDay(y,m){return new Date(Date.UTC(y,m+1,0)).getUTCDate();}
+function fmt(dt){return MON[dt.getUTCMonth()]+' '+dt.getUTCDate()+', '+dt.getUTCFullYear();}
+function nthMon(y,m,n){var d=u(y,m,1);return u(y,m,1+((1-d.getUTCDay()+7)%7)+7*(n-1));}
+function monOnOrBefore(y,m,day){var d=u(y,m,day);return u(y,m,day-((d.getUTCDay()+6)%7));}
+function easter(y){
+  var a=y%19,b=Math.floor(y/100),c=y%100,d=Math.floor(b/4),e=b%4,
+      f=Math.floor((b+8)/25),g=Math.floor((b-f+1)/3),h=(19*a+b-d-g+15)%30,
+      i=Math.floor(c/4),k=c%4,l=(32+2*e+2*i-h-k)%7,
+      m=Math.floor((a+11*h+22*l)/451),
+      mo=Math.floor((h+l-7*m+114)/31),da=((h+l-7*m+114)%31)+1;
+  return u(y,mo-1,da);
+}
+function holidays(y){
+  var e=easter(y),gf=new Date(e.getTime()-2*86400000);
+  return [u(y,0,1),nthMon(y,1,3),gf,monOnOrBefore(y,4,24),u(y,6,1),
+          nthMon(y,8,1),nthMon(y,9,2),u(y,11,25),u(y,11,26)];
+}
+var HCACHE={};
+function isHoliday(dt){
+  var y=dt.getUTCFullYear();
+  if(!HCACHE[y]){HCACHE[y]={};holidays(y).forEach(function(h){HCACHE[y][h.getTime()]=1;});}
+  return !!HCACHE[y][dt.getTime()];
+}
+function isBusiness(dt){
+  var w=dt.getUTCDay();
+  return w!==0&&w!==6&&!isHoliday(dt);
+}
+function nextBusiness(dt){
+  var d=new Date(dt.getTime());
+  while(!isBusiness(d)){d=new Date(d.getTime()+86400000);}
+  return d;
+}
+function businessBetween(from,to){
+  var n=0,d=new Date(from.getTime()+86400000);
+  while(d.getTime()<=to.getTime()){if(isBusiness(d)){n++;}d=new Date(d.getTime()+86400000);}
+  return n;
+}
+function today(){var n=new Date();return u(n.getFullYear(),n.getMonth(),n.getDate());}
+function dueDate(ye){
+  var y=ye.getUTCFullYear(),m=ye.getUTCMonth(),d=ye.getUTCDate();
+  var endOfMonth=(d===lastDay(y,m));
+  var tm=m+6,ty=y+Math.floor(tm/12);tm=((tm%12)+12)%12;
+  if(endOfMonth){return u(ty,tm+1,0);}
+  return u(ty,tm,Math.min(d,lastDay(ty,tm)));
+}
+function addYear(dt,k){
+  var y=dt.getUTCFullYear(),m=dt.getUTCMonth(),d=dt.getUTCDate();
+  if(d===lastDay(y,m)){return u(y+k,m+1,0);}
+  return u(y+k,m,Math.min(d,lastDay(y+k,m)));
+}
+function addMonths(dt,n){
+  var y=dt.getUTCFullYear(),m=dt.getUTCMonth(),d=dt.getUTCDate();
+  var endOfMonth=(d===lastDay(y,m));
+  var tm=m+n,ty=y+Math.floor(tm/12);tm=((tm%12)+12)%12;
+  if(endOfMonth){return u(ty,tm+1,0);}
+  return u(ty,tm,Math.min(d,lastDay(ty,tm)));
+}
+function parse(id){var v=document.getElementById(id).value;
+  if(!v){return null;}var p=v.split('-');var d=u(+p[0],+p[1]-1,+p[2]);
+  return isNaN(d.getTime())?undefined:d;}
+function spanDays(a,b){
+  return Math.round((b.getTime()-a.getTime())/86400000)+1;
+}
+function filingDate(ye){return nextBusiness(dueDate(ye));}
+function dayAfter(dt){return new Date(dt.getTime()+86400000);}
+function dayBefore(dt){return new Date(dt.getTime()-86400000);}
+function plural(n,w){return n+' '+w+(n===1?'':'s');}
+function pick(n){var e=document.querySelector('input[name="'+n+'"]:checked');
+  return e?e.value:null;}
+
+var out=document.getElementById('out');
+var WFIRST=2016;
+function show(){
+  var ground=pick('ground'),filed=pick('filed'),nil=pick('nil'),
+      raw=document.getElementById('yr').value.trim(),h,wait=0;
+  if(raw===''){wait++;}
+  if(ground===null){wait++;}
+  if(filed===null){wait++;}
+  if(nil===null){wait++;}
+  if(wait>0){
+    out.innerHTML='<p>'+wait+' of the four entries '
+     +(wait===1?'is':'are')+' still to come.</p>';return;
+  }
+  var yr=parseInt(raw,10);
+  if(isNaN(yr)||yr<1970||yr>WFIRST+10){
+    out.innerHTML='<p>Enter the tax year as a four-digit year.</p>';return;
+  }
+  var inWindow=(yr>=WFIRST);
+  if(nil==='y'){
+    h='<h3>A nil year has nothing for relief to reach</h3>';
+    h+='<p>'+QUALJS+' Relief under subsection 220(3.1) reaches penalties and '
+     +'interest and never the tax, so on a year that carried none of the '
+     +'three there is nothing for a request to cancel. Filing the year is '
+     +'what closes it.</p>';
+  }else if(!inWindow){
+    h='<h3>'+yr+' is outside the ten-year window</h3>';
+    h+='<p>A request may only reach a tax year ending within the ten '
+     +'calendar years before the year the request is made. A request made '
+     +'during '+(WFIRST+10)+' reaches tax years ending in '+WFIRST
+     +' or later, so '+yr+' is out of reach however strong the grounds.</p>';
+  }else if(ground==='n'){
+    h='<h3>No ground is identified on these answers</h3>';
+    h+='<p>The year is inside the window, but relief is discretionary and '
+     +'granted on specified grounds. Without extraordinary circumstances, an '
+     +'action of the Canada Revenue Agency, or an inability to pay, a '
+     +'request has nothing to rest on.</p>';
+  }else{
+    h='<h3>'+yr+' is in the window and a ground is identified</h3>';
+    h+='<p>Form RC4288 is the request, and the Minister may waive or cancel '
+     +'the penalty and the interest. It stays discretionary, and the '
+     +'outstanding returns are normally filed either before the request or '
+     +'with it.</p>';
+  }
+  h+='<table class="ei-tbl"><thead><tr><th scope="col">Test</th>'
+   +'<th scope="col">What it asks</th><th scope="col">On these answers</th>'
+   +'</tr></thead><tbody>';
+  h+='<tr><td>The ten-year window</td><td>Tax year ending '+WFIRST
+   +' or later</td><td>'+(inWindow?'Met, '+yr:'Not met, '+yr)+'</td></tr>';
+  h+='<tr><td>A ground</td>'
+   +'<td>Extraordinary circumstances, an Agency action, or inability to pay'
+   +'</td><td>'+(ground==='y'?'Identified':'None identified')+'</td></tr>';
+  h+='<tr><td>The returns are filed</td>'
+   +'<td>The years the request covers have been filed</td><td>'
+   +(filed==='y'?'Yes':'Not yet')+'</td></tr>';
+  h+='<tr><td>Something to relieve</td>'
+   +'<td>A penalty or interest was actually charged</td><td>'
+   +(nil==='y'?'No, the years were nil':'Yes')+'</td></tr>';
+  h+='</tbody></table>';
+  if(filed==='n'){
+    h+='<p>The returns themselves come first. A request to cancel the '
+     +'charges on a year that has still not been filed leaves the year open '
+     +'and the charges running, and the '
+     +'<a href="https://corpnilfilingfor300.ca/tools/catch-up-filing-schedule-generator/">catch-up filing schedule generator</a> puts '
+     +'them in order.</p>';
+  }
+  if(nil==='y'){
+    h+='<p>Nil T2 filing at '+PRICE_JS+' closes one tax year per return. '
+     +NOTNILJS+'</p>';
+  }
+  h+='<p>'+DISC_JS+'</p>';
+  out.innerHTML=h;
+}
+
+Array.prototype.forEach.call(
+  document.querySelectorAll('#yr,input[name="ground"],input[name="filed"],input[name="nil"]'),
+  function(el){el.addEventListener('change',show);el.addEventListener('input',show);});
+show();
+
+})();
+</script>
+<!-- /wp:html -->
