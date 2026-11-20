@@ -12,3 +12,16 @@ Date,Time (Toronto),Change,Row,Run,Post ID,URL,Location,Old text,New text,Cells,
 2026-11-20,14:45,19,11,Dry run,,,wp_posts + wp_postmeta,"$490,000","$1,000,000",23,45,No write
 2026-11-20,14:45,19,12,Dry run,,,wp_posts + wp_postmeta,dollar for dollar,"$5 lost per $1 over $50,000",321,858,No write
 2026-11-20,14:45,19,13,Dry run,,,wp_posts + wp_postmeta,late remittance / T4 late-filing penalty,Approved penalty schedule,310,396,No write
+2026-11-20,15:05,19,6,Live,36407,https://gondaliyacpa.ca/gst-hst-guide-canada/,Rate strip (Elementor + HTML),GST 5% + Ontario PST 8%,Ontario has no separate PST,3,3,Done
+2026-11-20,15:05,19,5,Live,36407,https://gondaliyacpa.ca/gst-hst-guide-canada/,Rate strip,"NS, NB, PEI, NL","NB, NL, PEI. NS 14% since April 1, 2025",3,3,Done
+2026-11-20,15:05,19,5,Live,36407,https://gondaliyacpa.ca/gst-hst-guide-canada/,Rate table,Nova Scotia 15% HST CRA,"Nova Scotia 14% (since April 1, 2025)",3,3,Done
+2026-11-20,15:05,19,5,Live,36407,https://gondaliyacpa.ca/gst-hst-guide-canada/,What is GST/HST answer,"Nova Scotia, New Brunswick, Prince Edward Island and Newfoundland and Labrador (all 15%)","New Brunswick, Newfoundland and Labrador and Prince Edward Island (15%), and Nova Scotia (14% since April 1, 2025)",3,3,Done
+2026-11-20,15:05,19,5,Live,36407,https://gondaliyacpa.ca/gst-hst-guide-canada/,FAQ JSON-LD,"Nova Scotia, New Brunswick, PEI and Newfoundland and Labrador (all 15%)","New Brunswick, Newfoundland and Labrador and PEI (15%), and Nova Scotia (14% since April 1, 2025)",2,2,Done
+2026-11-20,15:05,19,5,Live,36407,https://gondaliyacpa.ca/gst-hst-guide-canada/,Place of supply table,Nova Scotia property - charge 15% HST,Nova Scotia property - charge 14% HST,3,3,Done
+2026-11-20,15:05,19,5,Live,36407,https://gondaliyacpa.ca/gst-hst-guide-canada/,FAQ answer,Nova Scotia client charges 15% HST,Nova Scotia client charges 14% HST,3,3,Done
+2026-11-20,15:10,19,5,Live,41978,https://gondaliyacpa.ca/hst-vs-gst/,Rate table,Nova Scotia HST 5% 10% 15%,"Nova Scotia HST 5% 9% 14% (since April 1, 2025)",3,3,Done
+2026-11-20,15:10,19,5,Live,41978,https://gondaliyacpa.ca/hst-vs-gst/,Which rate table,Selling in Nova Scotia HST 15%,Selling in Nova Scotia HST 14%,3,3,Done
+2026-11-20,15:10,19,5,Live,41978,https://gondaliyacpa.ca/hst-vs-gst/,FAQ,"Ontario (13%), Nova Scotia (15%), New Brunswick (15%), Newfoundland and Labrador (15%), and Prince Edward Island (15%)","Ontario (13%), New Brunswick (15%), Newfoundland and Labrador (15%), Prince Edward Island (15%), and Nova Scotia (14% since April 1, 2025)",3,3,Done
+2026-11-20,15:10,19,5,Live,41978,https://gondaliyacpa.ca/hst-vs-gst/,FAQ JSON-LD,"Ontario 13%, Nova Scotia 15%, New Brunswick 15%, Newfoundland 15%, PEI 15%.","Ontario 13%, New Brunswick 15%, Newfoundland and Labrador 15%, PEI 15%, Nova Scotia 14% since April 1, 2025.",2,2,Done
+2026-11-20,15:15,19,3,Live,36728,https://gondaliyacpa.ca/corporate-tax-filing-etobicoke/,Body,Class 53 M&amp;P machinery (50% straight-line),Class 53 M&amp;P machinery (50% declining balance),3,3,Done
+2026-11-20,15:15,19,3,Live,"36846, 37749, 37785","/how-to-start-a-business-in-guelph/, /how-to-start-a-business-in-vaughan/, /how-to-start-business-in-scarborough/",Body,Class 53 (50% straight-line for M&amp;P machinery,Class 53 (50% declining balance for M&amp;P machinery,9,9,Done
