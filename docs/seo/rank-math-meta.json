@@ -1984,5 +1984,45 @@
     "title": "Taxpayer Relief Eligibility Checker"
    }
   ]
+ },
+ "nil_calculator_batch17": {
+  "note": "Family 2 batch 17, five Appendix A tools (Navneet, 2026-11-20). PARTLY PUBLISHED: t4-late-filing-penalty-calculator is live as 2831; the other four are built, gated and tested but not yet published, and none of the five is carded on the /tools/ hub yet. build_f2q.py records what each adds over the 106 live tools, and why the GIFI code lookup and the Ontario corporate key checker were dropped rather than guessed.",
+  "items": [
+   {
+    "desc": "The slip count sets the daily rate and the ceiling. Enter slips and days late for the figure under subsection 162(7.01).",
+    "id": 2831,
+    "kw": "t4 late filing penalty",
+    "slug": "t4-late-filing-penalty-calculator",
+    "title": "T4 Late Filing Penalty Calculator"
+   },
+   {
+    "desc": "One year after the end of the corporate tax year the loan was made in. Miss it and subsection 15(2) taxes the shareholder, not the company.",
+    "id": null,
+    "kw": "shareholder loan repayment deadline",
+    "slug": "shareholder-loan-repayment-deadline-calculator",
+    "title": "Shareholder Loan Repayment Deadline Calculator"
+   },
+   {
+    "desc": "Sixty days after incorporation, amalgamation or continuance, filed once through the Ontario Business Registry rather than with the T2.",
+    "id": null,
+    "kw": "ontario initial return deadline",
+    "slug": "ontario-initial-return-deadline-calculator",
+    "title": "Ontario Initial Return Deadline Calculator"
+   },
+   {
+    "desc": "Subsection 163(2) is half the tax understated, at least $100.00, and only where the statement was made knowingly or recklessly.",
+    "id": null,
+    "kw": "gross negligence penalty",
+    "slug": "gross-negligence-penalty-checker",
+    "title": "Gross Negligence Penalty Checker"
+   },
+   {
+    "desc": "Small-supplier status ends above $30,000.00 over four consecutive calendar quarters, or in any single quarter that goes over.",
+    "id": null,
+    "kw": "gst hst registration requirement",
+    "slug": "gst-hst-registration-requirement-checker",
+    "title": "GST/HST Registration Requirement Checker"
+   }
+  ]
  }
 }

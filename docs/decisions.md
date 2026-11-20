@@ -12928,3 +12928,80 @@ render in order.
 Repo and live still differ in size on this page (the built file is about 2.2 KB
 smaller than `post_content`), which is the same pre-existing drift recorded in
 the previous entry, not something this change introduced.
+
+## 2026-11-20 — Family 2 batch 17 built; one of five published
+
+Navneet: "NOW create next 5 calculators also meanwhile share next blog topics".
+
+Built, gated and tested by `build/f2/build_f2q.py` (`TOOLS17`):
+
+| # | slug | state |
+|---|---|---|
+| 107 | `/tools/t4-late-filing-penalty-calculator/` | **live, 2831**, cnf_family f2 |
+| 108 | `/tools/shareholder-loan-repayment-deadline-calculator/` | built, not published |
+| 109 | `/tools/ontario-initial-return-deadline-calculator/` | built, not published |
+| 110 | `/tools/gross-negligence-penalty-checker/` | built, not published |
+| 111 | `/tools/gst-hst-registration-requirement-checker/` | built, not published |
+
+All five are Appendix A entries (plan lines 2792, 2866, 2950, 2800, 2944).
+Gates: `gate_batch.py build_f2q TOOLS17` clear, `gate_f2_all.py` clear on 111
+pages (5 known pre-existing), `test_f2q_dom.js` 35 checks 0 failures including
+5 decoys, `gate_rank_math.py` unchanged at its 15 pre-existing failures.
+
+**Open, and the reason this entry exists:** four of the five are not live and
+**none of the five is carded on the `/tools/` hub**, so publishing them without
+also running `build_tools_hub.py` would repeat exactly the breach of line 1224
+that the entry above this one records. The hub children JSON and the card
+groups both need the four remaining slugs before the hub is rebuilt.
+
+### Why these five, and the two that were dropped rather than guessed
+
+Each was checked against all 106 live slugs, because batch 16 found seven
+Appendix A entries a live tool already answered. The per-slug reasoning is in
+the `build_f2q.py` docstring; in short, 107 is the amount where the live tool
+is the requirement, 108 is the only part of the shareholder-loan subject with a
+date in it, 109 takes the incorporation date that 6(e) wrongly assigns to the
+annual return, 110 is a different provision from the 162 pair, and 111 asks
+whether an account has to exist where the other three assume one does.
+
+**`/tools/gifi-code-lookup-checker/` and `/tools/ontario-corporate-key-checker/`
+were dropped on accuracy, not on scope.** The first would have to publish
+specific GIFI code numbers, which plan line 1221 says come from the TaxCycle
+mapping rather than from anyone's memory. The second turns on what the Registry
+does when a company key is lost and the registered office address is stale, and
+that process needs checking against ontario.ca first. Both stay available to
+whoever has those sources to hand.
+
+### A bug the suite caught, and why its assertions are exact figures
+
+The first build of 107 had the band array columns in the wrong order, so it
+computed a $100.00 daily rate with the minimum and the maximum both $1,000.00.
+Every sentence on the page read correctly; only the arithmetic was wrong. That
+is why every money assertion in `test_f2q_dom.js` is an exact dollar string
+worked out by hand from subsection 162(7.01) — $300.00 at ten slips and thirty
+days, the $100.00 floor at one slip and five days, the $1,000.00 ceiling at two
+hundred days, and both sides of the fifty-slip boundary.
+
+### The subsection 15(2) attribution, which 108 exists to get right
+
+A loan that misses the 15(2.6) deadline is included in the **shareholder's**
+income, not the corporation's. The corporate year can still be perfectly nil.
+Writing that the other way round is the obvious way to get this page wrong, so
+the result screen names the two taxpayers in separate columns and a decoy in
+the suite fails if the "can still be nil" row ever disappears.
+
+### Blog, for the record
+
+Navneet also asked for blog topics. 16 posts are live against the plan's 60 for
+today (line 56), so the blog is 44 short — a larger gap than Family 2 ever had.
+Eight of the sixteen Family 13 seed topics at line 1254 are unbuilt: arbitrary
+assessment, the Ontario Business Registry annual return, shareholder loan on a
+nil return, share capital on a nil return, nil payroll remittance, the $12.00
+Corporations Canada annual return, the Quebec CO-17 and the Alberta AT1. Those
+were recommended over the high-volume head terms, because `t2 filing deadline`
+(2,400), `nil t2 return` (1,900) and `t183corp` (590) are already assigned to
+F14, F9 and F15 structural pages and a post aimed at them competes with the
+site's own money pages. Line 1221's requirement that every post carry one
+original table or checklist, and that every penalty reference carry the Section
+7.4 qualification, is worth auditing across the 16 live posts before 44 more
+are added; the 13 posts carrying FAQPage and HowTo schema are in that same set.

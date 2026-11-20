@@ -1,0 +1,409 @@
+<!-- wp:html -->
+<style>
+.ei-wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+.ei-btn-blue{background:rgba(32,135,201,1);color:#fff !important;padding:13px 26px;border-radius:6px;font-weight:700;font-size:0.95em;text-transform:uppercase;text-decoration:none !important;display:inline-block;line-height:1.4;text-align:center;min-width:120px}
+.ei-section{padding:26px 20px}
+.ei-section-alt{background:#f7f9fc;padding:26px 20px}
+.ei-art .ei-h2{font-weight:800;color:#1a2340;margin:0 0 10px;font-size:1.45em;line-height:1.3}
+.ei-art > *:last-child{margin-bottom:0}
+.ei-art p{color:#4a5568;line-height:1.8}
+.ei-art a{color:rgba(32,135,201,1)}
+.ei-art ul{color:#4a5568;line-height:1.8}
+.ei-info{background:#f0f7fd;border-left:4px solid rgba(32,135,201,1);border-radius:0 8px 8px 0;padding:14px 18px;margin:18px 0}
+.ei-info p{margin:0;color:#1a2340;line-height:1.7}
+.ei-warn{background:#fffbf0;border-left:4px solid #f6ad1a;border-radius:0 8px 8px 0;padding:14px 18px;margin:18px 0}
+.ei-warn p{margin:0;color:#7c5800;line-height:1.7}
+.ei-danger{background:#fff5f5;border-left:4px solid #e53e3e;border-radius:0 8px 8px 0;padding:14px 18px;margin:18px 0}
+.ei-danger p{margin:0;color:#742a2a;line-height:1.7}
+.ei-hero{background:linear-gradient(135deg,#0f1624 0%,#1a2340 55%,#1e3a6e 100%);padding:40px 20px}
+.ei-hero-inner{max-width:860px;margin:0 auto;text-align:center}
+.ei-hero-eyebrow{display:inline-block;background:rgba(32,135,201,0.15);border:1px solid rgba(32,135,201,0.4);border-radius:50px;padding:5px 16px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:rgba(32,135,201,1);margin-bottom:16px;font-size:.8em}
+.ei-hero h1{color:#fff;font-weight:800;line-height:1.2;margin:0 0 14px;font-size:2.1em}
+.ei-hero h1 span{color:#f6ad1a}
+.ei-hero-sub{color:rgba(255,255,255,0.78);max-width:720px;margin:0 auto 10px;line-height:1.75}
+.ei-hero-by{color:rgba(255,255,255,0.6);max-width:720px;margin:0 auto 22px;line-height:1.6;font-size:.86em}
+.ei-hero-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.ei-tbl{width:100%;border-collapse:collapse;margin:18px 0;border:1px solid #d1d5db}
+.ei-tbl th{background:#1a2340;color:#fff;font-weight:700;padding:12px 14px;text-align:left;border:1px solid #374151}
+.ei-tbl td{padding:10px 14px;border:1px solid #d1d5db;color:#2d3748;line-height:1.5}
+.ei-tbl tr:nth-child(even){background:#f7f9fc}
+.ei-tbl tr:hover{background:#edf2f7}
+.ei-updated{color:#718096;font-size:.9em;margin:0 0 18px}
+.ei-toc{background:linear-gradient(180deg,#ffffff,#f7f9fc);border:1px solid #e2e8f0;border-radius:12px;padding:18px 22px;margin:0 0 10px;box-shadow:0 1px 2px rgba(26,35,64,.05)}
+.ei-toc h2{font-size:.76em;font-weight:800;color:#8795ab;margin:0 0 10px;text-transform:uppercase;letter-spacing:1.3px}
+.ei-toc ol{margin:0;padding:0;list-style:none;counter-reset:toc;columns:2;column-gap:30px}
+.ei-toc li{break-inside:avoid;counter-increment:toc;margin:0}
+.ei-toc a{display:flex;gap:10px;align-items:baseline;padding:6px 9px;border-radius:6px;color:#1a2340;text-decoration:none;line-height:1.45}
+.ei-toc a::before{content:counter(toc);color:rgba(32,135,201,1);font-weight:800;font-size:.82em;min-width:15px;flex-shrink:0}
+.ei-toc a:hover{background:#eaf3fb;color:rgba(32,135,201,1);text-decoration:none}
+.ei-cta-inline{background:#1a2340;border-radius:10px;padding:24px 28px;margin:28px 0;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px}
+.ei-cta-inline h3{color:#fff;margin:0 0 4px;font-weight:700}
+.ei-cta-inline p{color:rgba(255,255,255,0.65);margin:0}
+.ei-cta-inline a,.ei-cta-inline a:visited,.ei-cta-inline a:hover,.ei-cta-bottom a,.ei-cta-bottom a:visited,.ei-cta-bottom a:hover,.ei-hero-btns a,.ei-hero-btns a:visited,.ei-hero-btns a:hover{color:#fff !important;text-decoration:none !important}
+.ei-faq{max-width:900px;margin:16px auto 0}
+.ei-faq details{border:1px solid #e2e8f0;border-radius:8px;margin-bottom:9px;background:#fff}
+.ei-faq summary{padding:14px 18px;font-weight:600;color:#1a2340;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:14px;line-height:1.5}
+.ei-faq summary::-webkit-details-marker{display:none}
+.ei-faq summary::after{content:'+';color:rgba(32,135,201,1);font-weight:400;font-size:1.4em;line-height:1;flex-shrink:0;transition:transform .15s ease}
+.ei-faq details[open] summary{color:rgba(32,135,201,1)}
+.ei-faq details[open] summary::after{transform:rotate(45deg)}
+.ei-faq .ei-faq-a{padding:0 18px 15px}
+.ei-faq .ei-faq-a p{margin:0;color:#4a5568;line-height:1.75}
+.ei-art h3{font-weight:700;color:#1a2340;margin:26px 0 8px;font-size:1.15em}
+.ei-qlist{max-width:900px;margin:12px auto 0;padding:0;list-style:none}
+.ei-qlist li{border:1px solid #e2e8f0;border-radius:8px;margin-bottom:10px;background:#fff}
+.ei-qlist a{display:block;padding:16px 20px;font-weight:600;color:#1a2340 !important;text-decoration:none !important}
+.ei-qlist a:hover{background:#f7f9fc;color:rgba(32,135,201,1) !important}
+.ei-cta-bottom{background:linear-gradient(135deg,#0f1624,#1a2340);padding:40px 20px;text-align:center}
+.ei-cta-bottom h2{color:#fff;font-weight:800;margin:0 0 10px;font-size:1.5em}
+.ei-cta-bottom p{color:rgba(255,255,255,0.72);max-width:600px;margin:0 auto 22px;line-height:1.75}
+.entry-header{display:none!important}
+.ast-article-single,.ast-article-single .entry-content{margin-top:0;padding-top:0}
+@media(max-width:900px){.ei-cta-inline{flex-direction:column;text-align:center}.ei-hero h1{font-size:1.6em}.ei-art .ei-h2{font-size:1.3em}.ei-toc ol{columns:1}}
+
+/* Narrower than the guides' 1100px, at Navneet's request. 1000px is the
+   measure the Family 4 service pages already use, so this is a house value
+   rather than a new one. The hero band stays full-bleed: it is .ei-hero that
+   spans, and .ei-hero-inner caps its text at 860px, so neither is touched.
+
+   A service page has exactly one band that spans the viewport, the hero. The
+   guides alternate white and grey .ei-section bands, which span whatever the
+   window is and make the body read full width even with the text capped at
+   1000px. Dropping the grey leaves one continuous column, which is what a
+   service page looks like. The hero still spans. */
+.ei-wrap{max-width:1000px}
+.ei-section-alt{background:none}
+/* The FAQ and Read Next lists come from the guides capped at 900px and
+   centred with auto margins. In the guides' 1100px column that reads as a
+   deliberate inset; in this 1000px one it just leaves them narrower than,
+   and off-axis from, their own H2 and the body copy above. Run them the
+   full measure of the column instead. */
+.ei-faq,.ei-qlist{max-width:none;margin-left:0;margin-right:0}
+/* 1000px, the same measure as .cnf-w on the Family 4 service pages, which
+   Navneet confirmed read correctly.
+
+   !important, which is not decoration here. Measured against a service
+   page screenshot at the same window, the tool body was rendering around
+   1250px: wider than the 1100px base AND wider than the 1000px override,
+   so neither .ei-wrap rule was binding. Two successive specificity levels
+   (0,1,0 then 0,2,0) changed nothing on the front end. Whatever sets the
+   width wins on specificity or carries !important itself, so this does
+   too. The margins are forced with it so the column still centres if the
+   same rule also set a margin.
+
+   The hero is not in the selector and does not move. */
+.ei-wrap.ei-art,.ei-cta-bottom .ei-wrap{max-width:1000px!important;margin-left:auto!important;margin-right:auto!important}
+/* Dark navy calculator panel, after the gondaliyacpa.ca sample Navneet sent.
+
+   The panel is the only thing on the page that asks for input, and as a white
+   card on a white body it read as more body copy. Navy separates the thing you
+   do from the thing you read, which is the whole point of the sample's design.
+
+   Every selector below carries one class more than the base rule it replaces,
+   because the base rules sit earlier in this same stylesheet and some of them
+   (.ei-yn label) are already two-class. The result box is deliberately left
+   light: on navy it reads as the answer card, and its green and red variants
+   still carry the eligible / not eligible meaning. */
+.ei-art .ei-tool{background:#1a2340;border:0;border-radius:14px;
+  padding:28px 30px;box-shadow:0 10px 30px rgba(15,22,36,.18)}
+.ei-art .ei-tool legend{color:#f6ad1a;font-size:1.15em;padding:0 0 14px}
+.ei-art .ei-f label{color:rgba(255,255,255,.82)}
+.ei-art .ei-f input[type=date]{background:rgba(255,255,255,.09);
+  border:1.5px solid rgba(255,255,255,.28);color:#fff;font-weight:700;
+  color-scheme:dark;padding:11px 13px}
+.ei-art .ei-f input[type=date]:focus{border-color:rgba(32,135,201,1);
+  background:rgba(32,135,201,.2);outline:none}
+/* No filter here. color-scheme:dark above already makes Chrome draw the
+   picker glyph light; inverting it on top turned it black again, which is
+   what Navneet's screenshot showed. Opacity only. */
+.ei-art .ei-f input[type=date]::-webkit-calendar-picker-indicator{
+  opacity:.9;cursor:pointer}
+.ei-art .ei-yn{border:1.5px solid rgba(255,255,255,.28)}
+.ei-art .ei-yn label{background:transparent;color:rgba(255,255,255,.75)}
+/* #1a7ab5, not the #2087c9 the base rule uses. White on #2087c9 is 3.91:1,
+   under the 4.5 that bold text at this size needs, and it was already that
+   way on the white card. #1a7ab5 is 4.67:1 and is not a new colour, it is
+   the hover shade .ei-btn-blue already uses. */
+.ei-art .ei-yn input:checked+span{background:#1a7ab5;color:#fff}
+.ei-art .ei-yn label:focus-within span{outline:2px solid #fff;outline-offset:-2px}
+.ei-art .ei-tool .ei-err{color:#ffb4ab}
+.ei-art .ei-tool .ei-out{box-shadow:0 2px 10px rgba(15,22,36,.22)}
+
+/* Hero tags, summary stats and the two-column compare, all after the
+   gondaliyacpa.ca sample. */
+.ei-hero-tags{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;
+  margin:0 0 16px}
+.ei-hero-tag{background:rgba(255,255,255,.08);
+  border:1px solid rgba(255,255,255,.18);border-radius:50px;padding:5px 14px;
+  color:rgba(255,255,255,.78);font-size:.85em;line-height:1.5}
+/* Stat cards sit inside .ei-out, which stays light, so these are white cards
+   on a pale result box rather than on the navy panel. */
+.ei-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;
+  margin:0 0 14px}
+.ei-stat{background:#fff;border:1px solid #e2e8f0;border-radius:10px;
+  padding:13px 15px}
+.ei-stat-l{display:block;color:#718096;font-size:.8em;margin:0 0 5px;
+  line-height:1.4}
+.ei-stat-v{display:block;font-weight:800;color:#1a2340;font-size:1.12em;
+  line-height:1.3}
+.ei-cmp{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:18px 0}
+.ei-cmp-col{border:1px solid #e2e8f0;border-radius:12px;overflow:hidden;
+  background:#fff}
+.ei-cmp-col.a{border-top:3px solid rgba(32,135,201,1)}
+.ei-cmp-col.b{border-top:3px solid #f6ad1a}
+.ei-cmp-hdr{padding:14px 18px;font-weight:800;color:#1a2340}
+.ei-cmp-col.a .ei-cmp-hdr{background:rgba(32,135,201,.07)}
+.ei-cmp-col.b .ei-cmp-hdr{background:rgba(246,173,26,.07)}
+.ei-cmp-row{padding:11px 18px;border-top:1px solid #f0f0f0}
+.ei-cmp-l{display:block;color:#718096;font-size:.84em;margin:0 0 2px}
+.ei-cmp-v{display:block;color:#1a2340;line-height:1.55}
+@media(max-width:700px){.ei-stats{grid-template-columns:1fr}
+  .ei-cmp{grid-template-columns:1fr}}
+.ei-tool{background:#fff;border:1px solid #e2e8f0;border-radius:12px;padding:22px 24px;margin:18px 0;box-shadow:0 1px 2px rgba(26,35,64,.05)}
+.ei-tool legend{font-weight:800;color:#1a2340;font-size:1.05em;padding:0 0 6px}
+.ei-tool fieldset{border:0;margin:0;padding:0}
+.ei-f{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:0 0 14px}
+.ei-f label{font-weight:600;color:#1a2340;flex:1 1 320px;line-height:1.5}
+.ei-f input[type=date]{font:inherit;padding:9px 11px;border:1px solid #cbd5e0;border-radius:7px;color:#1a2340;background:#fff}
+.ei-yn{display:inline-flex;border:1px solid #cbd5e0;border-radius:7px;overflow:hidden;flex:0 0 auto}
+.ei-yn label{flex:0 0 auto;margin:0;padding:8px 16px;cursor:pointer;font-weight:700;color:#4a5568;background:#fff;line-height:1.2}
+.ei-yn input{position:absolute;opacity:0;width:0;height:0}
+.ei-yn input:checked+span{background:rgba(32,135,201,1);color:#fff}
+.ei-yn span{display:block;padding:8px 16px;margin:-8px -16px}
+.ei-yn label:focus-within span{outline:2px solid #1a2340;outline-offset:-2px}
+.ei-out{margin:16px 0 0;padding:16px 18px;border-radius:9px;border-left:5px solid #cbd5e0;background:#f7f9fc}
+.ei-out.ok{border-left-color:#2f855a;background:#f0fff4}
+.ei-out.no{border-left-color:#c53030;background:#fff5f5}
+.ei-out h3{margin:0 0 6px;font-size:1.1em;color:#1a2340}
+.ei-out p{margin:0 0 8px;color:#4a5568;line-height:1.7}
+.ei-out ul{margin:6px 0 8px 20px;color:#4a5568;line-height:1.7}
+.ei-out .ei-note{font-size:.88em;color:#718096;margin:10px 0 0}
+.ei-big{font-size:1.5em;font-weight:800;color:rgba(32,135,201,1);display:block;margin:2px 0 6px}
+.ei-tool .ei-err{color:#c53030;font-weight:600;margin:6px 0 0}
+</style>
+<div class="ei-hero"><div class="ei-hero-inner"><span class="ei-hero-eyebrow">Payroll</span><h1>T4 Late Filing <span>Penalty Calculator</span></h1><p class="ei-hero-sub">The information-return penalty runs on a sliding scale set by how many slips the return carries, with a floor and a ceiling for each band.</p><div class="ei-hero-tags"><span class="ei-hero-tag">Five bands by slip count</span><span class="ei-hero-tag">A floor and a ceiling each</span><span class="ei-hero-tag">Due the last day of February</span><span class="ei-hero-tag">Separate from the T2</span></div><p class="ei-hero-by">Written and reviewed by Sharad Gondaliya, CPA (Ontario), CPA Ontario Membership 61040184.</p><div class="ei-hero-btns"><a class="ei-btn-blue" href="https://corpnilfilingfor300.ca/form/">Start Nil T2 Filing NOW</a></div></div></div>
+<div class="ei-section"><div class="ei-wrap ei-art">
+<p class="ei-updated">Last reviewed: November 20, 2026</p>
+<div class="ei-tool">
+<fieldset><legend>Your T4 return</legend>
+<div class="ei-f"><label for="slips">Number of T4 slips on the return</label><input type="number" id="slips" min="0" max="100000" step="1" placeholder="0" inputmode="numeric"></div>
+<div class="ei-f"><label for="days">Days the return is late</label><input type="number" id="days" min="0" max="3650" step="1" placeholder="0" inputmode="numeric"></div>
+</fieldset>
+<div class="ei-out" id="out" role="status" aria-live="polite"><p>Enter the slip count and how many days late the return is.</p></div>
+</div>
+<div class="ei-info"><p>Gondaliya CPA Professional Corporation is a registered EFILE electronic filer. Returns are prepared and transmitted in Canada. Credentials are never shared and never used offshore.</p></div>
+</div></div>
+<div class="ei-section-alt" id="the-scale"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">The Slip Count Sets the Rate, Not the Lateness</h2>
+<p>Subsection 162(7.01) charges a daily amount for filing an information return late, and the amount per day depends on how many slips the return carries. A return with fifty slips or fewer runs at $10.00 a day with a floor of $100.00 and a ceiling of $1,000.00. Each band above it doubles or more.</p>
+<p>Two consequences follow. A small payroll cannot be charged more than $1,000.00 however long the return sits unfiled, and a return only one or two days late still meets the floor, so there is no cheap window for being slightly late.</p>
+</div></div>
+<div class="ei-section" id="bands"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">The Five Bands, and the Two Figures That Bound Each</h2>
+<table class="ei-tbl"><thead><tr><th scope="col">Slips on the return</th><th scope="col">Each day late</th><th scope="col">Least</th><th scope="col">Most</th></tr></thead><tbody>
+<tr><td>1 to 50</td><td>$10.00</td><td>$100.00</td><td>$1,000.00</td></tr>
+<tr><td>51 to 500</td><td>$15.00</td><td>$150.00</td><td>$1,500.00</td></tr>
+<tr><td>501 to 2,500</td><td>$25.00</td><td>$250.00</td><td>$2,500.00</td></tr>
+<tr><td>2,501 to 10,000</td><td>$50.00</td><td>$500.00</td><td>$5,000.00</td></tr>
+<tr><td>10,001 or more</td><td>$75.00</td><td>$750.00</td><td>$7,500.00</td></tr>
+</tbody></table>
+<p>A dormant corporation is almost always in the first band or has no return at all. Where no remuneration was paid in the year there are no slips, so there is no T4 return to be late with, and the question becomes whether the open account still owes a nil remittance. The <a href="https://corpnilfilingfor300.ca/tools/t4-nil-filing-requirement-checker/">T4 nil filing requirement checker</a> settles that, and the <a href="https://corpnilfilingfor300.ca/tools/payroll-nil-remittance-checker/">payroll nil remittance checker</a> covers the remittance side.</p>
+<p>The slip count sets the rate and the ceiling, so two corporations the same number of days late can owe very different amounts.</p>
+</div></div>
+<div class="ei-section-alt" id="not-the-t2"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">A Payroll Filing Is Not the Corporate Return</h2>
+<p>The T4 return is due the last day of February for the calendar year before it, which has nothing to do with the six months that governs the T2. The two filings sit on different calendars, go to different parts of the Canada Revenue Agency and carry different penalties.</p>
+<p><a href="https://corpnilfilingfor300.ca/pricing/nil-t2-filing-cost/">Nil T2 filing at $300.00 plus applicable sales tax per tax year</a> covers the federal corporate income tax return. A payroll account and its slips are not part of that fee. Where the account is being wound down, the <a href="https://corpnilfilingfor300.ca/tools/payroll-account-closure-checker/">payroll account closure checker</a> and the <a href="https://corpnilfilingfor300.ca/tools/cra-account-closure-sequencer/">CRA account closure sequencer</a> set out the order, and the <a href="https://corpnilfilingfor300.ca/guides/cra-accounts-on-a-dormant-corporation/">guide to CRA accounts on a dormant corporation</a> covers every account a quiet corporation still carries.</p>
+</div></div>
+<div class="ei-section"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">Frequently Asked Questions</h2>
+<div class="ei-faq">
+<details><summary>How much is the penalty for filing T4 slips late?</summary><div class="ei-faq-a"><p>It depends on the slip count. One to fifty slips is $10.00 a day, with a minimum of $100.00 and a maximum of $1,000.00.</p></div></details>
+<details><summary>When is the T4 return due?</summary><div class="ei-faq-a"><p>The last day of February for the preceding calendar year.</p></div></details>
+<details><summary>Is there a minimum penalty?</summary><div class="ei-faq-a"><p>Yes. Each band has a floor, so a return even one day late reaches at least that amount.</p></div></details>
+<details><summary>Is there a maximum?</summary><div class="ei-faq-a"><p>Yes, per band. The first band caps at $1,000.00 however long the return stays unfiled.</p></div></details>
+<details><summary>What if the corporation paid no wages?</summary><div class="ei-faq-a"><p>Then there are no slips and no T4 return to file late. Whether the open payroll account still owes a nil remittance is a separate question.</p></div></details>
+<details><summary>Does this penalty apply to the T2?</summary><div class="ei-faq-a"><p>No. The T2 has its own late-filing provisions, which are percentages of tax owing rather than a daily amount.</p></div></details>
+<details><summary>Is the penalty per slip or per return?</summary><div class="ei-faq-a"><p>Per return. The slip count selects which band the return falls in.</p></div></details>
+<details><summary>Does a nil T2 fee cover T4 slips?</summary><div class="ei-faq-a"><p>No. The fee covers the federal corporate income tax return. Payroll filings sit outside it.</p></div></details>
+<details><summary>Can the penalty be cancelled?</summary><div class="ei-faq-a"><p>It can be the subject of a taxpayer relief request on specified grounds, within the ten-year window those requests carry.</p></div></details>
+<details><summary>Do weekends count in the days late?</summary><div class="ei-faq-a"><p>The charge is a daily one and runs on calendar days once the return is past its due date.</p></div></details>
+</div>
+</div></div>
+<div class="ei-section"><div class="ei-wrap ei-art">
+<h2 class="ei-h2">Read Next</h2>
+<ul class="ei-qlist">
+<li><a href="https://corpnilfilingfor300.ca/tools/t4-nil-filing-requirement-checker/">T4 nil filing requirement checker</a></li>
+<li><a href="https://corpnilfilingfor300.ca/tools/payroll-nil-remittance-checker/">Payroll nil remittance checker</a></li>
+<li><a href="https://corpnilfilingfor300.ca/tools/payroll-account-closure-checker/">Payroll account closure checker</a></li>
+<li><a href="https://corpnilfilingfor300.ca/tools/t2-late-filing-penalty-calculator/">T2 late filing penalty calculator</a></li>
+<li><a href="https://corpnilfilingfor300.ca/tools/taxpayer-relief-eligibility-checker/">Taxpayer relief eligibility checker</a></li>
+<li><a href="https://corpnilfilingfor300.ca/tools/cra-account-closure-sequencer/">CRA account closure sequencer</a></li>
+</ul>
+</div></div>
+<div class="ei-cta-bottom"><div class="ei-wrap"><h2>Nil T2 Filing, $300.00 plus applicable sales tax per tax year</h2><p>Type your corporation name, pick your unfiled years, pay, and sign Form T183CORP on a secure screen. Your CRA confirmation is emailed within 3 business days.</p><a class="ei-btn-blue" href="https://corpnilfilingfor300.ca/form/">Start Nil T2 Filing NOW</a></div></div>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebPage", "@id": "https://corpnilfilingfor300.ca/tools/t4-late-filing-penalty-calculator/#webpage", "url": "https://corpnilfilingfor300.ca/tools/t4-late-filing-penalty-calculator/", "name": "T4 Late Filing Penalty Calculator | Subsection 162(7.01)", "description": "The information-return penalty runs on a sliding scale set by how many slips the return carries, with a floor and a ceiling for each band.", "inLanguage": "en-CA", "dateModified": "2026-11-20", "author": {"@type": "Person", "name": "Sharad Gondaliya", "honorificSuffix": "CPA", "url": "https://corpnilfilingfor300.ca/sharad-gondaliya-cpa/"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Nil T2 filing in Canada", "item": "https://corpnilfilingfor300.ca/"}, {"@type": "ListItem", "position": 2, "name": "Tools", "item": "https://corpnilfilingfor300.ca/tools/"}, {"@type": "ListItem", "position": 3, "name": "T4 Late Filing Penalty Calculator", "item": "https://corpnilfilingfor300.ca/tools/t4-late-filing-penalty-calculator/"}]}]}</script>
+<script>
+(function(){
+var PRICE_JS="$300.00 plus applicable sales tax per tax year";
+var DISC_JS="This tool gives general information and is not a filed return.";
+var NOTNILJS="A holding corporation with investment income, a rental corporation and a corporation that paid or received a dividend are not nil. Those are handled by Gondaliya CPA Professional Corporation at gondaliyacpa.ca at $350.00 plus applicable sales tax per year.";var QUALJS="A true nil return carries no percentage late-filing penalty, because that penalty is a percentage of tax owing and the corporation owes $0.00. The unfiled year still stays open forever, invites a demand to file and an arbitrary assessment, blocks a clearance certificate and dissolution, and costs a non-resident-owned corporation $25.00 per day up to $2,500.00.";
+
+var MON=['January','February','March','April','May','June','July','August',
+         'September','October','November','December'];
+var DAY=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+function u(y,m,d){return new Date(Date.UTC(y,m,d));}
+function lastDay(y,m){return new Date(Date.UTC(y,m+1,0)).getUTCDate();}
+function fmt(dt){return MON[dt.getUTCMonth()]+' '+dt.getUTCDate()+', '+dt.getUTCFullYear();}
+function nthMon(y,m,n){var d=u(y,m,1);return u(y,m,1+((1-d.getUTCDay()+7)%7)+7*(n-1));}
+function monOnOrBefore(y,m,day){var d=u(y,m,day);return u(y,m,day-((d.getUTCDay()+6)%7));}
+function easter(y){
+  var a=y%19,b=Math.floor(y/100),c=y%100,d=Math.floor(b/4),e=b%4,
+      f=Math.floor((b+8)/25),g=Math.floor((b-f+1)/3),h=(19*a+b-d-g+15)%30,
+      i=Math.floor(c/4),k=c%4,l=(32+2*e+2*i-h-k)%7,
+      m=Math.floor((a+11*h+22*l)/451),
+      mo=Math.floor((h+l-7*m+114)/31),da=((h+l-7*m+114)%31)+1;
+  return u(y,mo-1,da);
+}
+function holidays(y){
+  var e=easter(y),gf=new Date(e.getTime()-2*86400000);
+  return [u(y,0,1),nthMon(y,1,3),gf,monOnOrBefore(y,4,24),u(y,6,1),
+          nthMon(y,8,1),nthMon(y,9,2),u(y,11,25),u(y,11,26)];
+}
+var HCACHE={};
+function isHoliday(dt){
+  var y=dt.getUTCFullYear();
+  if(!HCACHE[y]){HCACHE[y]={};holidays(y).forEach(function(h){HCACHE[y][h.getTime()]=1;});}
+  return !!HCACHE[y][dt.getTime()];
+}
+function isBusiness(dt){
+  var w=dt.getUTCDay();
+  return w!==0&&w!==6&&!isHoliday(dt);
+}
+function nextBusiness(dt){
+  var d=new Date(dt.getTime());
+  while(!isBusiness(d)){d=new Date(d.getTime()+86400000);}
+  return d;
+}
+function businessBetween(from,to){
+  var n=0,d=new Date(from.getTime()+86400000),lim=to.getTime();
+  while(!(d.getTime() > lim)){if(isBusiness(d)){n++;}d=new Date(d.getTime()+86400000);}
+  return n;
+}
+function today(){var n=new Date();return u(n.getFullYear(),n.getMonth(),n.getDate());}
+function dueDate(ye){
+  var y=ye.getUTCFullYear(),m=ye.getUTCMonth(),d=ye.getUTCDate();
+  var endOfMonth=(d===lastDay(y,m));
+  var tm=m+6,ty=y+Math.floor(tm/12);tm=((tm%12)+12)%12;
+  if(endOfMonth){return u(ty,tm+1,0);}
+  return u(ty,tm,Math.min(d,lastDay(ty,tm)));
+}
+function addYear(dt,k){
+  var y=dt.getUTCFullYear(),m=dt.getUTCMonth(),d=dt.getUTCDate();
+  if(d===lastDay(y,m)){return u(y+k,m+1,0);}
+  return u(y+k,m,Math.min(d,lastDay(y+k,m)));
+}
+function addMonths(dt,n){
+  var y=dt.getUTCFullYear(),m=dt.getUTCMonth(),d=dt.getUTCDate();
+  var endOfMonth=(d===lastDay(y,m));
+  var tm=m+n,ty=y+Math.floor(tm/12);tm=((tm%12)+12)%12;
+  if(endOfMonth){return u(ty,tm+1,0);}
+  return u(ty,tm,Math.min(d,lastDay(ty,tm)));
+}
+function parse(id){var v=document.getElementById(id).value;
+  if(!v){return null;}var p=v.split('-');var d=u(+p[0],+p[1]-1,+p[2]);
+  return isNaN(d.getTime())?undefined:d;}
+function spanDays(a,b){
+  return Math.round((b.getTime()-a.getTime())/86400000)+1;
+}
+function filingDate(ye){return nextBusiness(dueDate(ye));}
+function dayAfter(dt){return new Date(dt.getTime()+86400000);}
+function dayBefore(dt){return new Date(dt.getTime()-86400000);}
+function plural(n,w){return n+' '+w+(n===1?'':'s');}
+function pick(n){var e=document.querySelector('input[name="'+n+'"]:checked');
+  return e?e.value:null;}
+function money(c){var s=(c/100).toFixed(2),p=s.split('.');
+  return '$'+p[0].replace(/\B(?=(\d{3})+(?!\d))/g,',')+'.'+p[1];}
+
+/* [slip ceiling, minimum, each day, maximum], the last three in cents.
+   Subsection 162(7.01): 1-50 slips is $10.00 a day, at least $100.00 and at
+   most $1,000.00, and each band above it steps up. A slip ceiling of 0 means
+   the open-ended top band. */
+var BANDS=[[50,10000,1000,100000],[500,15000,1500,150000],
+           [2500,25000,2500,250000],[10000,50000,5000,500000],
+           [0,75000,7500,750000]];
+var out=document.getElementById('out');
+function band(n){
+  for(var i=0;i<BANDS.length;i++){
+    if(BANDS[i][0]===0){return i;}
+    if(!(n > BANDS[i][0])){return i;}
+  }
+  return BANDS.length-1;
+}
+function show(){
+  var rawS=document.getElementById('slips').value.trim(),
+      rawD=document.getElementById('days').value.trim(),h,wait=0;
+  if(rawS===''){wait++;}
+  if(rawD===''){wait++;}
+  if(wait>0){
+    out.innerHTML='<p>'+wait+' of the two figures '
+     +(wait===1?'is':'are')+' still to come.</p>';return;
+  }
+  var slips=parseInt(rawS,10),days=parseInt(rawD,10);
+  if(isNaN(slips)||isNaN(days)||0 > slips||0 > days){
+    out.innerHTML='<p>Enter the slip count and the days late as whole '
+     +'numbers.</p>';return;
+  }
+  if(slips===0){
+    h='<h3>No slips means no T4 return, so this penalty does not arise</h3>';
+    h+='<p>Subsection 162(7.01) charges for filing an information return '
+     +'late. A corporation that paid no remuneration in the year has no slips '
+     +'to issue and so no T4 return to be late with. Whether the open payroll '
+     +'account still owes a nil remittance is a different question, and the '
+     +'<a href="https://corpnilfilingfor300.ca/tools/t4-nil-filing-requirement-checker/">T4 nil filing requirement checker</a> answers '
+     +'it.</p>';
+    h+='<p>'+DISC_JS+'</p>';out.innerHTML=h;return;
+  }
+  var i=band(slips),rate=BANDS[i][2],mn=BANDS[i][1],mx=BANDS[i][3];
+  var raw=rate*days,amt=raw;
+  if(mn > amt){amt=mn;}
+  if(amt > mx){amt=mx;}
+  h='<h3>'+money(amt)+' under subsection 162(7.01)</h3>';
+  h+='<p>'+slips+' slip'+(slips===1?'':'s')+' puts the return in the '
+   +money(rate)+' a day band, with a floor of '+money(mn)+' and a ceiling of '
+   +money(mx)+'. At '+days+' day'+(days===1?'':'s')+' late the daily figure '
+   +'is '+money(raw)
+   +(mn > raw?', below the floor, so the floor applies'
+     :(raw > mx?', above the ceiling, so the ceiling applies':''))
+   +'.</p>';
+  h+='<table class="ei-tbl"><thead><tr><th scope="col">Slips</th>'
+   +'<th scope="col">Each day late</th><th scope="col">Least</th>'
+   +'<th scope="col">Most</th><th scope="col">Your band</th>'
+   +'</tr></thead><tbody>';
+  var LAB=['1 to 50','51 to 500','501 to 2,500','2,501 to 10,000',
+           '10,001 or more'];
+  for(var k=0;k<BANDS.length;k++){
+    h+='<tr><td>'+LAB[k]+'</td><td>'+money(BANDS[k][2])+'</td><td>'
+     +money(BANDS[k][1])+'</td><td>'+money(BANDS[k][3])+'</td><td>'
+     +(k===i?'Yes':'')+'</td></tr>';
+  }
+  h+='</tbody></table>';
+  h+='<p>The T4 return is due the last day of February for the preceding '
+   +'calendar year. This figure is the information-return penalty and is '
+   +'separate from anything owed on the T2: nil T2 filing at '+PRICE_JS
+   +' covers the corporate income tax return and not a payroll filing. The '
+   +'<a href="https://corpnilfilingfor300.ca/tools/payroll-nil-remittance-checker/">payroll nil remittance checker</a> and the '
+   +'<a href="https://corpnilfilingfor300.ca/tools/payroll-account-closure-checker/">payroll account closure checker</a> cover the '
+   +'account itself.</p>';
+  h+='<p>'+DISC_JS+'</p>';
+  out.innerHTML=h;
+}
+
+Array.prototype.forEach.call(
+  document.querySelectorAll('#slips,#days'),
+  function(el){el.addEventListener('change',show);el.addEventListener('input',show);});
+show();
+
+})();
+</script>
+<!-- /wp:html -->
