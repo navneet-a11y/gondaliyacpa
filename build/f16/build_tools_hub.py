@@ -319,6 +319,10 @@ GROUPS = [
    'Sole Shareholder Corporation Checker',
    'A single shareholder holds 100 per cent, which is above the Schedule 50 '
    'threshold, so the schedule always applies.'),
+  ('shareholder-loan-repayment-deadline-calculator',
+   'Shareholder Loan Repayment Deadline Calculator',
+   'One year after the year end the loan was advanced in. Missing it taxes '
+   'the shareholder, not the corporation.'),
  ]),
 
  ('Unfiled Years and Catching Up', [
@@ -385,6 +389,14 @@ GROUPS = [
    'GST/HST Nil Return Deadline Calculator',
    'An annual filer reports three months after the fiscal year end, a monthly '
    'or quarterly filer one month after the period ends.'),
+  ('gst-hst-registration-requirement-checker',
+   'GST/HST Registration Requirement Checker',
+   'The $30,000.00 threshold, tested over four consecutive calendar quarters '
+   'and over any single one of them.'),
+  ('t4-late-filing-penalty-calculator',
+   'T4 Late Filing Penalty Calculator',
+   'Five bands set by slip count, each with its own daily rate, floor and '
+   'ceiling under subsection 162(7.01).'),
  ]),
 
  ('Annual Returns and the Registry', [
@@ -428,6 +440,10 @@ GROUPS = [
    'Ontario Annual Return Due Date Calculator',
    'Six months after the fiscal year-end, not the incorporation date, and '
    'filed through the Ontario Business Registry rather than with the T2.'),
+  ('ontario-initial-return-deadline-calculator',
+   'Ontario Initial Return Deadline Calculator',
+   'Sixty days after incorporation, filed once. Not the annual return that '
+   'comes back every year on the fiscal year end.'),
  ]),
 
  ('Winding Up and Dissolution', [
@@ -506,6 +522,9 @@ GROUPS = [
    'Voluntary Disclosure Eligibility Checker',
    'The conditions an application has to meet, and why a year that was '
    'charged nothing has little for the programme to relieve.'),
+  ('gross-negligence-penalty-checker', 'Gross Negligence Penalty Checker',
+   'Subsection 163(2) is half the tax understated, and it needs a knowledge '
+   'element the late-filing provisions do not.'),
  ]),
 ]
 

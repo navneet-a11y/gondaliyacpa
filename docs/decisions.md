@@ -12937,22 +12937,37 @@ Built, gated and tested by `build/f2/build_f2q.py` (`TOOLS17`):
 
 | # | slug | state |
 |---|---|---|
-| 107 | `/tools/t4-late-filing-penalty-calculator/` | **live, 2831**, cnf_family f2 |
-| 108 | `/tools/shareholder-loan-repayment-deadline-calculator/` | built, not published |
-| 109 | `/tools/ontario-initial-return-deadline-calculator/` | built, not published |
-| 110 | `/tools/gross-negligence-penalty-checker/` | built, not published |
-| 111 | `/tools/gst-hst-registration-requirement-checker/` | built, not published |
+| 107 | `/tools/t4-late-filing-penalty-calculator/` | live, 2831 |
+| 108 | `/tools/shareholder-loan-repayment-deadline-calculator/` | live, 2832 |
+| 109 | `/tools/ontario-initial-return-deadline-calculator/` | live, 2833 |
+| 110 | `/tools/gross-negligence-penalty-checker/` | live, 2834 |
+| 111 | `/tools/gst-hst-registration-requirement-checker/` | live, 2835 |
+
+All five carry `cnf_family` f2 (term_taxonomy_id 15).
 
 All five are Appendix A entries (plan lines 2792, 2866, 2950, 2800, 2944).
 Gates: `gate_batch.py build_f2q TOOLS17` clear, `gate_f2_all.py` clear on 111
 pages (5 known pre-existing), `test_f2q_dom.js` 35 checks 0 failures including
 5 decoys, `gate_rank_math.py` unchanged at its 15 pre-existing failures.
 
-**Open, and the reason this entry exists:** four of the five are not live and
-**none of the five is carded on the `/tools/` hub**, so publishing them without
-also running `build_tools_hub.py` would repeat exactly the breach of line 1224
-that the entry above this one records. The hub children JSON and the card
-groups both need the four remaining slugs before the hub is rebuilt.
+**Closed 2026-11-20, same day:** all five published and all five carded on the
+hub in the same pass, so line 1224 was never breached for this batch. `/tools/`
+now links **111 of 111**, with no link pointing at anything that is not a live
+tool. The GST/HST registration checker and the T4 penalty calculator joined
+"CRA Accounts, Payroll and GST/HST", the Ontario initial return joined "Annual
+Returns and the Registry", the gross negligence checker joined batch 16's
+"Penalties, Interest and Relief", and the shareholder loan deadline joined
+"Shareholders and Share Capital" — the last after first landing in the
+schedules group by mistake, because the anchor used to place it sat next to
+Schedule 11 rather than inside the shareholder group.
+
+Verified live: every one of the five shipped byte-identical to its local file
+with zero entity substitution, and each was exercised in a browser against a
+figure worked out by hand — $300.00 at ten slips and thirty days, a December 31,
+2026 repayment deadline from a December 31, 2025 year end, March 16, 2030 from a
+January 15, 2030 incorporation, $4,500.00 on $9,000.00 understated, and
+registration required on a single quarter over $30,000.00 with only $28,000.00
+across four.
 
 ### Why these five, and the two that were dropped rather than guessed
 
