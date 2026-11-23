@@ -13371,3 +13371,90 @@ they should be written against those two as well as each other.
 
 Still open: every F1 page is an orphan with no inbound internal links, and
 the family says `plus HST` on national pages.
+
+---
+
+## 2026-11-23 — Family 1 batch 8: Appendix A verticals #18 to #22
+
+Five more F1 verticals live, taken in Appendix A order after batch 7:
+
+| # | Slug | ID |
+|---|---|---|
+| 18 | `/nil-t2-filing-for-taxi-corporations/` | 2889 |
+| 19 | `/nil-t2-filing-for-moving-corporations/` | 2890 |
+| 20 | `/nil-t2-filing-for-cleaning-corporations/` | 2891 |
+| 21 | `/nil-t2-filing-for-hvac-corporations/` | 2892 |
+| 22 | `/nil-t2-filing-for-plumbing-corporations/` | 2893 |
+
+Built the usual way: duplicate of page 2682 (which inherits `cnf_family` f1),
+71 layout ops in two calls, slug and publish, then Rank Math title,
+description, focus keyword, canonical and breadcrumb. Every fresh duplicate of
+2682 still reads back layout version `f6d0fc672e20ae75`, so only the first
+needed a layout read.
+
+### A different disqualifier per page, not a different opening line
+
+Four of the five are trades, and the dormant-construction and dormant-IT pair
+already sat at the 0.60 ceiling, so writing them against a shared spine was
+never going to pass 6(k). Each page was instead built on its own reason a
+quiet year turns out not to be nil:
+
+- **taxi** — the plate leased out to another driver, or a platform payout
+- **moving** — a deposit taken earlier, applied to a job that ran
+- **cleaning** — one janitorial contract still invoicing monthly
+- **HVAC** — an annual maintenance agreement renewing on its own
+- **plumbing** — a trailing rental or referral commission arriving unasked
+
+### What the similarity gate actually cost
+
+First build came in at **0.655** (HVAC against plumbing), with **22 pairs over
+0.60** — all five new pages, and against the published gym, photography,
+amazon-fba and hair-salon pages as well as each other.
+
+Diagnosing it by matched-token runs rather than by pair score was the thing
+that helped. Of 1541 matched tokens between HVAC and plumbing, **about 898 sat
+in runs of pure family furniture** — the service-cards block, the geography
+paragraph, the two stylesheets, the JSON-LD, the price deliverables list, the
+trust line. That is a **0.38 floor that cannot be moved**. The remaining ~640
+tokens were the only thing in play.
+
+So the work was a named rewrite of every string echoing a sibling at 0.62 or
+more: **about 120 strings across the five pages**, with each page given its own
+register for the recurring slots (`why[3]`, `faq[1]`, `faq[8]`, `price_text`
+opener and closer, `sched_note`, `sched_rows[1]`, `sched_rows[2]`,
+`sched_rows[4]`, `steps[2]`, `steps[3]`, `chk_both[0]`, `chk_yes[4]`,
+`proc_lede`, `notnil_boxes[3]`). That took 0.655 to **0.623**, two pairs still
+over. A second pass on plumbing alone — intro, price_text, proc_lede, six FAQ
+entries and four checklist lines — closed it at **0.599, PASS**.
+
+Three strings in the first build were **verbatim duplicates** of published
+siblings (`cleaning.why[3]` and `cleaning.faq[7]` against landscaping,
+`plumbing.faq[5]` against photography). Worth noting as the failure mode to
+watch: writing five pages in one sitting reuses phrasing without it feeling
+like reuse.
+
+### Gates
+
+`similarity.py` over 25 templates: **0.599**, ceiling 0.60.
+`audit_visible.py`: 117 strings each, **0 failures** on all five.
+
+Both gates were re-run after every rewrite pass, not only the one that failed
+— the batch 6 lesson. One 7.4 word (*simply*, in taxi's `intro[1]`) was caught
+by the pre-build rule scan and reworded before any template was generated.
+
+Hard rules verified on the copy and again in the 71 op responses per page:
+CRA wording, T183CORP, no unqualified "no penalty", no superlative and no
+*guarantee*, no EFILE number or GroupID, Service plus BreadcrumbList schema
+only, no booking widget, CO-17 and AT1 both named, `$300.00 plus HST per tax
+year` six times and `$350.00 plus HST per year` twice on each page with no
+other price string, no emoji.
+
+### Where F1 stands
+
+**25 built.** Of the 215 Appendix A tokens, 13 live slugs now match exactly,
+8 live pages cover a token's topic under an off-plan slug, and **144 are
+pending**. Next in order: #23 onward.
+
+Still open and unchanged: every F1 page is an orphan with no inbound internal
+links (plan line 1523), and the family says `plus HST` on national pages,
+never swept for the 2026-11-12 ruling.

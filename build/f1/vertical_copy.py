@@ -4277,4 +4277,1084 @@ VERTICALS = {
   ],
  },
 
+ 'taxi-corporations': {
+  'name': 'Taxi Corporations',
+  'short': 'taxi corporation',
+  'plural': 'taxi corporations',
+  'kw': 'nil t2 for taxi corporation',
+  'title': 'Taxi Corporation Nil T2 | Years Off the Road',
+  'desc': 'A taxi corporation files a T2 for every year it exists. Why a leased-out plate ends the nil year, and what the return costs per year.',
+  'h1': 'Nil T2 Filing for Taxi Corporations',
+  'lede': 'The plate is worth something whether or not anyone is driving. Where nobody drove and nobody paid to use it, the year is $300.00 plus HST per tax year.',
+  'intro_h': 'Flat-Fee Nil T2 Filing for Taxi Corporations',
+  'intro': (
+    'Most of these corporations hold two things: a vehicle and a plate or licence. Either can be parked for a year without the corporation going anywhere, and the year end still arrives with a return behind it. Those years are $300.00 plus HST per tax year.',
+    'Whether the car was sold or taken off the road, you moved to driving for someone else, the licence was suspended or allowed to sit, or the plate is held as it stands while the market is watched, the year is tested against fares taken, platform payouts, anything another driver paid to use the plate, and whether the vehicle was sold. Schedules 100, 125, 141 and 50 are prepared and the return is transmitted electronically. A year with any of that in it goes to the full service.',
+  ),
+  'notnil_h': 'What an Unfiled Year Costs a Taxi Corporation',
+  'notnil_boxes': [
+    (
+      'The Plate Outlasts the Driving',
+      'A licence held in the corporation keeps it alive, and alive means a tax year every twelve months.',
+    ),
+    (
+      'Transfers Get Held Up',
+      'Selling or transferring a plate is where the corporate record is examined, and a gap in it stalls the deal.',
+    ),
+    (
+      'Platform Records Exist Either Way',
+      'Where driving was done through an app, the payouts are documented whether the corporation reported them or not.',
+    ),
+    (
+      'The Vehicle Is Still on the Schedule',
+      'The car has to be accounted for when it finally leaves the corporation, and that accounting rests on filed years.',
+    ),
+  ],
+  'notnil_text': (
+    'The corporation is kept because the plate is in it, and plates are not given up lightly. Keeping it is a reasonable decision that happens to produce a tax year each time the year end comes round.',
+    'A year with nobody driving and nobody paying for the plate is $300.00 plus HST per tax year. Where there is a run of them they are prepared together, oldest first, so the vehicle value carries through.',
+  ),
+  'sched_h': 'Which T2 Schedules a Taxi Corporation Files',
+  'sched_rows': [
+    (
+      'Schedule 100',
+      'Balance sheet information',
+      'Required',
+      'The plate or licence, the vehicle, any loan on it and the shareholder balance all sit on the balance sheet in a quiet year.',
+    ),
+    (
+      'Schedule 125',
+      'Income statement information',
+      'Required',
+      'Fares and running costs both nil, which is what a year the car did not work looks like.',
+    ),
+    (
+      'Schedule 141',
+      'Notes checklist',
+      'Required',
+      'Named preparer and basis of preparation, filed next to the two GIFI schedules.',
+    ),
+    (
+      'Schedule 50',
+      'Shareholder information',
+      'Required',
+      'Anyone holding a tenth of the shares or more. For an owner-driver that is a single line.',
+    ),
+    (
+      'Schedule 24',
+      'First-time filer information',
+      'First return only',
+      'Attaches to the corporation’s opening return, covering the period from incorporation forward.',
+    ),
+    (
+      'Schedule 8',
+      'Capital cost allowance',
+      'While the vehicle is owned',
+      'The car, a meter, a camera and a roof light are depreciable property until sold or taken out, driven or not.',
+    ),
+  ],
+  'sched_note': 'Source: Canada Revenue Agency guidance on which schedules a T2 carries, applied to a taxi corporation whose meter did not run in the tax year. Reviewed 23 November 2026.',
+  'sched_boxes': [
+    (
+      'Leasing the Plate Out Is Income',
+      'A driver paying the corporation for the use of its plate is paying rent to it, which is revenue in that year.',
+    ),
+    (
+      'A Platform Payout Is Revenue',
+      'Money settled by a rideshare or dispatch app into the corporate account is its income, however few trips it covers.',
+    ),
+    (
+      'Driving for Someone Else Is Personal',
+      'Driving a fleet car for wages puts the money on your personal return, and the corporate year can be nil.',
+    ),
+  ],
+  'chk_yes': [
+    'No fare or trip was taken for the corporation during the year',
+    'No platform or dispatch payout reached its account',
+    'No driver paid it for the use of the plate or the car',
+    'The car it owns stayed in its name all year',
+    'Nothing it banked earned interest',
+  ],
+  'chk_no': [
+    'A payout arrived from a rideshare or dispatch platform',
+    'Another driver paid to use the plate or the vehicle',
+    'The car was sold, traded in or disposed of to the insurer',
+    'The plate or licence itself was sold or transferred for value',
+    'An owner drew pay or a dividend out of it',
+  ],
+  'chk_both': [
+    'A T2 is owed for each year end, active or not',
+    'One authorising T183CORP behind each of those returns',
+    'A tenth of the shares or more is disclosed on Schedule 50',
+    'The plate or licence renewed with the municipality, separately',
+    'Clearance before the plate moves and the corporation closes',
+  ],
+  'why_h': 'Why Taxi Corporations Use This Service',
+  'why': [
+    (
+      'Written for the Parked Year',
+      'A car off the road, a suspended licence, a plate held while you decide. Those are the years this fee covers.',
+    ),
+    (
+      'The Plate Question Comes First',
+      'Whether anyone paid to use the plate is settled before a price is given, because that is what usually ends one of these years.',
+    ),
+    (
+      'A Flat Amount Per Year',
+      'Every parked year carries the same $300.00 plus HST per tax year, one outstanding or six.',
+    ),
+    (
+      'Driving Years Are Priced Properly',
+      'Any year that took a fare or a payout goes to the full corporate service instead, at the higher fee.',
+    ),
+  ],
+  'strip': [
+    (
+      'Parked, Not Dissolved',
+      'A car under a cover does not stop the year end arriving.',
+    ),
+    (
+      'Oldest Year First',
+      'The vehicle value in one return opens the next.',
+    ),
+    (
+      'No Office, No Paper',
+      'A phone and a few minutes closes a year.',
+    ),
+  ],
+  'svc_h': 'What a Taxi Corporation Usually Needs Next',
+  'proc_h': 'How a Taxi Corporation Files a Nil Year',
+  'proc_lede': 'Four steps from the filing form, and the first one asks who paid the corporation anything.',
+  'proc_note': 'A year of bank statements answers most of this:',
+  'steps': [
+    (
+      'Ask Who Paid the Corporation',
+      'Fares, platform payouts, plate rent and anything from another driver are all checked before a year is treated as nil.',
+    ),
+    (
+      'Settle What Happened to the Car',
+      'A vehicle sold, traded or written off is a disposition and belongs in its own year, which rules that year out.',
+    ),
+    (
+      'Make Up the Return',
+      "The year's return carries Schedules 100, 125, 141 and 50. Schedule 24 shows up only on a first filing, and Schedule 8 runs as long as the car is on the books.",
+    ),
+    (
+      'Authorise the Set and Send',
+      'Each year is authorised with its own T183CORP; the run is transmitted and the Agency emails confirmation inside 3 business days.',
+    ),
+  ],
+  'price_h': 'Nil T2 Filing Cost for a Taxi Corporation',
+  'price_eyebrow': 'One Fee Per Tax Year',
+  'price_text': 'No fare, no payout and no plate rent puts the year at $300.00 plus HST per tax year. The fee covers the T2, the GIFI schedules where required, Schedule 50, Schedule 24 on a first return, the T183CORP package with secure e-signing, CPA review before transmission, electronic transmission by a registered EFILE electronic filer, one corrected transmission where the Agency rejects the first, and the CRA confirmation emailed within 3 business days. Where a payout landed, the plate earned rent or the car was sold, that year is $350.00 plus HST per year at gondaliyacpa.ca.',
+  'geo_h': 'Taxi Corporation Filing Across Canada',
+  'cta_h': 'File the Years the Car Stayed Parked',
+  'faq': [
+    (
+      'The car has been off the road for two years. Do returns still apply?',
+      'They do, for every year the corporation exists. A parked vehicle changes what the return reports rather than whether one is owed.',
+    ),
+    (
+      'Another driver uses our plate and pays us monthly. Nil or not?',
+      'Not nil. Rent for the plate is the corporation’s income, which makes it a full return at $350.00 plus HST per year at gondaliyacpa.ca.',
+    ),
+    (
+      'I drive for a rideshare app in my own name now. Does that affect it?',
+      'Not the corporate year, where the app pays you personally. That income goes on your own return and the corporation can be nil.',
+    ),
+    (
+      'We sold the car during the year. Which return does that go in?',
+      'The year it changed hands. That one reports a disposition, and the quiet years on either side are unaffected.',
+    ),
+    (
+      'The insurer wrote the vehicle off. Is that a disposition?',
+      'Yes. An insurance settlement for a written-off vehicle is treated as proceeds, so that year is reported as an ordinary return.',
+    ),
+    (
+      'Does holding the plate count as activity?',
+      'No. A licence held and not used sits on the balance sheet and earns nothing. Renting it out or selling it is what changes the year.',
+    ),
+    (
+      'My licence was suspended for the whole year. What then?',
+      'The corporate return is still due. A suspension stops the driving, not the tax years, and a year with no fares in it can be nil.',
+    ),
+    (
+      'The dispatch board billed me a fee while the car sat. Does that make the year active?',
+      'It can be. A fee charged to the corporation is a cost, not income, so a year of charges and no receipts still reports nil.',
+    ),
+    (
+      'Six years are unfiled. Can they all be done?',
+      'Yes. One return and one T183CORP per year, each at $300.00 plus HST per tax year, and the run goes in date order.',
+    ),
+    (
+      'We want to sell the plate and close the corporation. In what order?',
+      'The returns go in first. Selling the plate is a disposition in its own year, and clearance is withheld while any year is missing.',
+    ),
+  ],
+ },
+
+ 'moving-corporations': {
+  'name': 'Moving Corporations',
+  'short': 'moving corporation',
+  'plural': 'moving corporations',
+  'kw': 'nil t2 for moving corporation',
+  'title': 'Moving Corporation Nil T2 | Years With No Jobs',
+  'desc': 'A moving corporation files for every tax year it exists. Why a deposit applied to a job ends the nil year, and what the filing costs.',
+  'h1': 'Nil T2 Filing for Moving Corporations',
+  'lede': 'Deposits are what catch this one out. A booking taken last year and moved this year puts revenue in this year. Where no job ran at all, the return is $300.00 plus HST per tax year.',
+  'intro_h': 'Flat-Fee Nil T2 Filing for Moving Corporations',
+  'intro': (
+    'A moving corporation can stop taking bookings and still be sitting on money. Deposits held against jobs that never happened, a truck in a yard, and a year end that comes round regardless: each of those years owes a return, and an empty one is $300.00 plus HST per tax year.',
+    'Whether the crew was let go, the truck was parked or sold, the work went to a competitor, or the business was folded into another corporation, the year is tested against jobs performed, deposits applied to them, any storage collected and whether a vehicle left. Schedules 100, 125, 141 and 50 are prepared and the return goes electronically. A year with a job in it goes to the full service.',
+  ),
+  'notnil_h': 'What an Unfiled Year Costs a Moving Corporation',
+  'notnil_boxes': [
+    (
+      'An Empty Season Is Still a Year',
+      'An empty diary changes the numbers in the return, not the fact of it.',
+    ),
+    (
+      'Deposits Complicate the Picture',
+      'Money taken for jobs that never ran has to be accounted for, and that is harder years later with nothing filed.',
+    ),
+    (
+      'Insurers and Brokers Check Standing',
+      'Cargo cover and broker onboarding both look at the corporate record, and gaps draw questions.',
+    ),
+    (
+      'The Truck Has to Be Reckoned With',
+      'Nothing about the truck is settled until it leaves the corporation, and settling it means the years are filed.',
+    ),
+  ],
+  'notnil_text': (
+    'These corporations usually stay alive because the truck is in them, or because the plan is to run again in the spring. Both are fair reasons and neither stops the year end arriving.',
+    'A year in which no job ran is $300.00 plus HST per tax year. Several outstanding years are worked as one piece and sent in date order, so the deposit and truck figures line up.',
+  ),
+  'sched_h': 'Which T2 Schedules a Moving Corporation Files',
+  'sched_rows': [
+    (
+      'Schedule 100',
+      'Balance sheet information',
+      'Required',
+      'The truck, dollies and blankets, deposits still held against future jobs and any shareholder balance all appear here.',
+    ),
+    (
+      'Schedule 125',
+      'Income statement information',
+      'Required',
+      'Revenue nil, costs nil: the shape of a year in which the truck did not leave the yard.',
+    ),
+    (
+      'Schedule 141',
+      'Notes checklist',
+      'Required',
+      'A short checklist recording how the figures were arrived at and by whom.',
+    ),
+    (
+      'Schedule 50',
+      'Shareholder information',
+      'Required',
+      'Every holding of 10% or more, often two partners who bought the truck together.',
+    ),
+    (
+      'Schedule 24',
+      'First-time filer information',
+      'First return only',
+      'A first-filing schedule only; it never repeats.',
+    ),
+    (
+      'Schedule 8',
+      'Capital cost allowance',
+      'While the truck is owned',
+      'While the truck, trailer and dollies are owned they run down Schedule 8, used or idle.',
+    ),
+  ],
+  'sched_note': 'Source: the T2 filing requirements published by the Canada Revenue Agency, read against a moving corporation with no job in the tax year. Reviewed 23 November 2026.',
+  'sched_boxes': [
+    (
+      'A Deposit Earns When the Job Runs',
+      'Money held against a move that has not happened sits on Schedule 100 as an amount owed. The year the move happens is the year it is revenue.',
+    ),
+    (
+      'Storage Collected Is Rent',
+      'Where the corporation charges to keep someone’s goods, that is rent received and the year is not nil.',
+    ),
+    (
+      'Helping on Someone Else’s Job Is Personal',
+      'A day’s work for another mover, paid to you, is personal income and leaves the corporate year empty.',
+    ),
+  ],
+  'chk_yes': [
+    'The corporation performed no move, delivery or storage in the year',
+    'No deposit held from an earlier booking was applied to a job',
+    'No storage or holding fee was collected by it',
+    'No truck, trailer or dolly of its was sold',
+    'No interest arrived on anything it banked',
+  ],
+  'chk_no': [
+    'A move ran, even one booked and paid for the year before',
+    'Money held from an earlier booking was earned when the move happened',
+    'Storage was charged on goods held for a customer',
+    'A truck, trailer or dolly set left by sale or write-off',
+    'A cancellation fee was kept out of a customer deposit',
+  ],
+  'chk_both': [
+    'Twelve months on, another return falls due',
+    'No return goes without a signed T183CORP behind it',
+    'Schedule 50 names anyone holding ten per cent or more',
+    'Vehicle registration and plates are renewed separately',
+    'Dissolution waits on a clearance certificate',
+  ],
+  'why_h': 'Why Moving Corporations Use This Service',
+  'why': [
+    (
+      'Built for the Year Nothing Moved',
+      'A parked truck, a wound-down crew, a season given to someone else. Those are the years this fee is for.',
+    ),
+    (
+      'Deposits Are Checked Before the Price',
+      'Whether money held earlier was applied to a job in the year is the usual reason one of these is not nil, so it is tested first.',
+    ),
+    (
+      'One Figure Each Empty Year',
+      'One price for a quiet year, $300.00 plus HST per tax year, with no hourly billing.',
+    ),
+    (
+      'Working Years Go to the Full Return',
+      'Once a job ran, the year belongs to the full corporate service at the higher fee.',
+    ),
+  ],
+  'strip': [
+    (
+      'A Truck in a Yard Still Files',
+      'Dispatch stopping does not stop the year end.',
+    ),
+    (
+      'In the Order They Fell',
+      'Deposits only line up when the years go in order.',
+    ),
+    (
+      'Signed Without a Visit',
+      'The authorisations are handled online, one per year.',
+    ),
+  ],
+  'svc_h': 'What a Moving Corporation Usually Needs Next',
+  'proc_h': 'How a Moving Corporation Files',
+  'proc_lede': 'Four steps from the filing form. Deposits are dealt with first because they decide the year.',
+  'proc_note': 'The deposit question is usually the only awkward one:',
+  'steps': [
+    (
+      'Trace the Deposits',
+      'Money held from earlier bookings, and whether any of it was applied to a job in the year, is settled before the year is called nil.',
+    ),
+    (
+      'Confirm No Job Ran',
+      'Moves performed, deliveries made and storage collected are all measured, however small the invoice.',
+    ),
+    (
+      'Compile the Return',
+      'The return itself: Schedules 100, 125, 141 and 50, Schedule 24 if it is the first, and Schedule 8 for as long as the truck is on the books.',
+    ),
+    (
+      'Sign Per Year, Then Transmit',
+      'One T183CORP per year. Once they are signed the returns leave together, and the Agency confirms inside 3 business days.',
+    ),
+  ],
+  'price_h': 'Nil T2 Filing Cost for a Moving Corporation',
+  'price_eyebrow': 'One Fee Per Tax Year',
+  'price_text': 'No job run and no deposit applied makes the year $300.00 plus HST per tax year. That price buys the T2, the GIFI schedules where required, Schedule 50, Schedule 24 on a first return, the T183CORP package with secure e-signing, CPA review before transmission, electronic transmission by a registered EFILE electronic filer, one corrected transmission where the Agency rejects the first, and the CRA confirmation emailed within 3 business days. A year in which a move was billed, storage was collected or the truck was sold is $350.00 plus HST per year at gondaliyacpa.ca.',
+  'geo_h': 'Moving Corporation Filing Across Canada',
+  'cta_h': 'File the Years the Truck Did Not Leave the Yard',
+  'faq': [
+    (
+      'We took no bookings last year. Is a return still required?',
+      'It is. The corporation reaches a year end whether or not anything was booked, and the return for an empty year reports no revenue.',
+    ),
+    (
+      'A deposit from two years ago paid for a move last spring. Which year?',
+      'The year the move ran, because that is when it was earned. The year the deposit was taken held a liability rather than revenue.',
+    ),
+    (
+      'We still hold deposits for jobs that never happened. Does that matter?',
+      'Not for whether the year is nil. They sit on the balance sheet as amounts owed until the job runs or the money is returned.',
+    ),
+    (
+      'We charge a customer to store their things. Is the corporation nil?',
+      'No. Storage collected is rent received, which makes the corporation not nil for that year and the return an ordinary one at $350.00 plus HST per year at gondaliyacpa.ca.',
+    ),
+    (
+      'The truck was sold mid-year. What happens to that year?',
+      'It is reported as a disposition, at a gain, a loss or neither. That one year is a full return and the rest can be nil.',
+    ),
+    (
+      'I helped another mover for cash on a few weekends. Does that count?',
+      'Not against the corporation, where they paid you rather than it. That income is reported personally.',
+    ),
+    (
+      'We kept a cancellation fee from a deposit. Nil or not?',
+      'Not nil. A fee kept by the corporation is its revenue in the year it was kept.',
+    ),
+    (
+      'The truck is parked but insured and plated. Does that create income?',
+      'No. Costs carried on an idle vehicle do not make a year active, and the truck carries on down Schedule 8 while it is owned.',
+    ),
+    (
+      'Five years were never filed. Is that recoverable?',
+      'Yes. A return and an authorisation for each year, $300.00 plus HST per tax year, worked through in date order.',
+    ),
+    (
+      'How does winding this corporation up actually run?',
+      'Outstanding returns, then dissolution, then a final T2 within six months. Any truck still owned is disposed of on the way out, in the year it leaves.',
+    ),
+  ],
+ },
+
+ 'cleaning-corporations': {
+  'name': 'Cleaning Corporations',
+  'short': 'cleaning corporation',
+  'plural': 'cleaning corporations',
+  'kw': 'nil t2 for cleaning corporation',
+  'title': 'Cleaning Corporation Nil T2 | Years Without Contracts',
+  'desc': 'A cleaning corporation files a T2 for every year it exists. Why one janitorial contract still invoicing ends the nil year, and the cost per year.',
+  'h1': 'Nil T2 Filing for Cleaning Corporations',
+  'lede': 'One site still on a monthly contract is enough to decide the year. Where every contract had ended and nothing was invoiced, the return is $300.00 plus HST per tax year.',
+  'intro_h': 'Flat-Fee Nil T2 Filing for Cleaning Corporations',
+  'intro': (
+    'Cleaning corporations wind down one contract at a time, which is why the last one tends to outlive the business. A single office still invoiced monthly makes the whole year an earning year. Where the contracts had genuinely all ended, the year is $300.00 plus HST per tax year.',
+    'Whether the staff were let go, the contracts went to another company, the work moved into a new corporation, or you clean a few houses in your own name now, the year is tested against what the corporation invoiced, anything a subcontractor was paid through it, and whether equipment left. Schedules 100, 125, 141 and 50 are prepared and the return is transmitted electronically. An invoicing year goes to the full service.',
+  ),
+  'notnil_h': 'What an Unfiled Year Costs a Cleaning Corporation',
+  'notnil_boxes': [
+    (
+      'Losing the Contracts Is Not Closing',
+      'An empty client list changes what goes in the return. The corporation keeps reaching year ends until it is dissolved.',
+    ),
+    (
+      'There Is Nothing to Prompt You',
+      'No premises, no lease and few assets means nothing arrives in the post to remind anyone, and the years pile up unnoticed.',
+    ),
+    (
+      'Tenders Ask for the Record',
+      'A facilities buyer or property manager will pull the corporate record before awarding a contract, and gaps are visible there.',
+    ),
+    (
+      'An Open Payroll Account Keeps Running',
+      'A company that employed cleaners usually left the account open, and it has obligations of its own alongside the T2.',
+    ),
+  ],
+  'notnil_text': (
+    'What keeps these corporations alive is usually the hope of bidding again, or an open payroll account nobody has closed. Each year of waiting is a tax year with a return behind it.',
+    'A year with nothing invoiced is $300.00 plus HST per tax year. Outstanding years are worked as a set from the earliest forward so each opening balance agrees with the one before.',
+  ),
+  'sched_h': 'Which T2 Schedules a Cleaning Corporation Files',
+  'sched_rows': [
+    (
+      'Schedule 100',
+      'Balance sheet information',
+      'Required',
+      'Machines and vacuums, supplies still in a store room, any amount owing to a shareholder and retained profit all sit here.',
+    ),
+    (
+      'Schedule 125',
+      'Income statement information',
+      'Required',
+      'Contract revenue nil, wages nil, which is what a year without a live site reports.',
+    ),
+    (
+      'Schedule 141',
+      'Notes checklist',
+      'Required',
+      'Filed with the two GIFI schedules and records who assembled them.',
+    ),
+    (
+      'Schedule 50',
+      'Shareholder information',
+      'Required',
+      'Holders of 10% or more, commonly a husband and wife who ran the rounds themselves.',
+    ),
+    (
+      'Schedule 24',
+      'First-time filer information',
+      'First return only',
+      'Required on the first return the corporation ever files, and on no other.',
+    ),
+    (
+      'Schedule 8',
+      'Capital cost allowance',
+      'Only where equipment is held',
+      'Floor machines, a pressure washer and a van are depreciable property. A corporation with only mops and buckets may have none.',
+    ),
+  ],
+  'sched_note': 'Source: the Canada Revenue Agency, on what accompanies a T2, measured against a cleaning corporation holding no live contract. Reviewed 23 November 2026.',
+  'sched_boxes': [
+    (
+      'One Monthly Invoice Decides It',
+      'A single site still billed makes the whole tax year an earning year. There is no threshold below which it stops counting.',
+    ),
+    (
+      'Supplies on a Shelf Are an Asset',
+      'Chemicals and consumables on the shelf are an asset on Schedule 100 until a job uses them up.',
+    ),
+    (
+      'Houses Cleaned Personally Stay Personal',
+      'Money a householder pays you directly belongs on your personal return, leaving the corporate year empty.',
+    ),
+  ],
+  'chk_yes': [
+    'Not one contract or one-off clean was invoiced by the corporation',
+    'No subcontract cleaner was paid through it',
+    'No equipment, van or machine belonging to it was sold',
+    'No supplies were sold on to another operator',
+    'No interest was credited to it during the year',
+  ],
+  'chk_no': [
+    'A site was invoiced, even for a single month',
+    'A one-off or move-out clean was billed by it',
+    'A machine, a van or a floor polisher was disposed of',
+    'Leftover supplies were sold to another cleaning company',
+    'A client list or contract was transferred for value',
+  ],
+  'chk_both': [
+    'There is a return for each tax year the corporation stays registered',
+    'There is a T183CORP behind each of those returns before it moves',
+    'There is Schedule 50 disclosure once a holding reaches 10%',
+    'There are payroll and sales tax accounts running on their own cycles',
+    'There is a clearance certificate to get before dissolving',
+  ],
+  'why_h': 'Why Cleaning Corporations Use This Service',
+  'why': [
+    (
+      'For the Year After the Last Contract',
+      'The contracts gone, the staff gone, the corporation still there. That is the year this fee is written for.',
+    ),
+    (
+      'Contracts Are Checked Before Anything Else',
+      'One site still invoicing monthly is the usual culprit, and it is checked before any price is given.',
+    ),
+    (
+      'The Same Amount Per Quiet Year',
+      'The price per quiet year holds at $300.00 plus HST per tax year, one year or seven.',
+    ),
+    (
+      'Invoicing Years Are Quoted as They Are',
+      'Where a site was invoiced, the year goes to the full corporate return at the higher fee.',
+    ),
+  ],
+  'strip': [
+    (
+      'No Premises, Same Duty',
+      'A corporation with nowhere to be still reaches a year end.',
+    ),
+    (
+      'Earliest to Latest',
+      'Retained profit only reconciles if the returns go in that order.',
+    ),
+    (
+      'Authorised in One Session',
+      'Signing a run of years takes one sitting.',
+    ),
+  ],
+  'svc_h': 'What a Cleaning Corporation Usually Needs Next',
+  'proc_h': 'How a Cleaning Corporation Files a Nil Year',
+  'proc_lede': 'Four steps from the filing form. Step one is a list of who was invoiced.',
+  'proc_note': 'Invoicing software usually answers step one in a minute:',
+  'steps': [
+    (
+      'List What Was Invoiced',
+      'Contracts, one-off cleans and anything billed to another operator are measured before the year is treated as nil.',
+    ),
+    (
+      'Note the Payroll Account',
+      'Any payroll or supplier account still open is noted, so its own obligations are not mixed up with the corporate return.',
+    ),
+    (
+      'Produce the Return',
+      'Schedules 100, 125, 141 and 50 are drawn for the year, Schedule 24 if the corporation has not filed before, and Schedule 8 where equipment remains.',
+    ),
+    (
+      'Authorise and File the Set',
+      'A T183CORP per year is signed in the portal, after which the returns are sent and confirmed inside 3 business days.',
+    ),
+  ],
+  'price_h': 'Nil T2 Filing Cost for a Cleaning Corporation',
+  'price_eyebrow': 'One Fee Per Tax Year',
+  'price_text': 'With no site invoiced, the year is $300.00 plus HST per tax year. The price takes in the T2, the GIFI schedules where required, Schedule 50, Schedule 24 on a first return, the T183CORP package with secure e-signing, CPA review before transmission, electronic transmission by a registered EFILE electronic filer, one corrected transmission where the Agency rejects the first, and the CRA confirmation emailed within 3 business days. Where a contract billed or a machine was sold, that year is $350.00 plus HST per year at gondaliyacpa.ca.',
+  'geo_h': 'Cleaning Corporation Filing Across Canada',
+  'cta_h': 'File the Years With No Sites on the Books',
+  'faq': [
+    (
+      'The last contract ended two years ago. Are returns still owed?',
+      'Yes, for every year the corporation remains registered. Losing the contracts ends the trading rather than the tax years.',
+    ),
+    (
+      'One small office was still billed monthly. Is the year nil?',
+      'No. A single site invoiced makes the whole year an earning year, so it is an ordinary return at $350.00 plus HST per year at gondaliyacpa.ca.',
+    ),
+    (
+      'I clean a handful of houses under my own name now. Is that the corporation’s income?',
+      'Not where the householders pay you and not the corporation. That is income on your own return.',
+    ),
+    (
+      'Our payroll account is still open with no employees. Nil T2 or not?',
+      'The T2 can still be nil. The payroll account has its own filings to deal with, separately from the corporate return.',
+    ),
+    (
+      'We sold the floor machines to another company. Which year?',
+      'That year reports a disposition, at a gain or a loss. It becomes a full return rather than a nil one.',
+    ),
+    (
+      'There are boxes of chemicals in a storage unit. Does that count?',
+      'Holding them does not. Unused supplies are an asset on the balance sheet until they are used or written off.',
+    ),
+    (
+      'A client paid an invoice from an earlier year during this one. What then?',
+      'Which year the revenue belongs to depends on when it was earned rather than paid. Either way, a year carrying that invoice is not nil.',
+    ),
+    (
+      'The work moved into a new corporation. Does the old one keep filing?',
+      'It does, until it is dissolved. Anything moved between the two corporations is reportable in the year it moved.',
+    ),
+    (
+      'Four years are outstanding. How does that work?',
+      'Each outstanding year is its own return and its own authorisation at $300.00 plus HST per tax year, worked oldest first.',
+    ),
+    (
+      'How do we close the corporation properly?',
+      'The unfiled years go in first, then the dissolution, then a final T2 inside six months of it. Clearance is held back while any year is missing.',
+    ),
+  ],
+ },
+
+ 'hvac-corporations': {
+  'name': 'HVAC Corporations',
+  'short': 'HVAC corporation',
+  'plural': 'HVAC corporations',
+  'kw': 'nil t2 for hvac corporation',
+  'title': 'HVAC Corporation Nil T2 | Years With No Calls',
+  'desc': 'An HVAC corporation files for every tax year it exists. Why a maintenance agreement still renewing ends the nil year, and what it costs.',
+  'h1': 'Nil T2 Filing for HVAC Corporations',
+  'lede': 'Look at the maintenance agreements first. One still renewing is revenue, and the year is not nil. With none renewed and no call attended, the return is $300.00 plus HST per tax year.',
+  'intro_h': 'Flat-Fee Nil T2 Filing for HVAC Corporations',
+  'intro': (
+    'An HVAC corporation rarely stops all at once. Annual maintenance agreements renew on their own, a warranty callback or two comes in, and the corporation reaches a year end with a return due behind it. Where the year holds none of that, it is $300.00 plus HST per tax year.',
+    'Whether you went to work for a larger shop, the van was sold, the licence is held while you decide, or the business was continued in another corporation, the year is tested against service calls and installations billed, maintenance agreements renewed, parts sold on and whether a vehicle left. Schedules 100, 125, 141 and 50 are prepared and the return goes electronically. A year with revenue goes to the full service.',
+  ),
+  'notnil_h': 'What an Unfiled Year Costs an HVAC Corporation',
+  'notnil_boxes': [
+    (
+      'A Quiet Year Is Still a Year',
+      'No calls attended changes the figures on the return, not whether the corporation reached a year end.',
+    ),
+    (
+      'Warranty Work Costs and Earns Nothing',
+      'A callback under warranty takes a day and bills nobody, which is exactly the kind of year people assume needs no return.',
+    ),
+    (
+      'Distributors and Insurers Look',
+      'Opening a supply account again, or renewing liability cover, puts the corporate standing in front of someone.',
+    ),
+    (
+      'The Van and Tools Remain',
+      'A vehicle and gauges in the corporation stay on the schedules until they are sold or taken out.',
+    ),
+  ],
+  'notnil_text': (
+    'Most of these corporations are kept because the licence and the tools are in them and the trade is worth returning to. That is sound, and each year of it is a tax year.',
+    'A year with no calls and no agreement renewals is $300.00 plus HST per tax year. A run of them is prepared together and sent oldest first so the van and parts balances carry through.',
+  ),
+  'sched_h': 'Which T2 Schedules an HVAC Corporation Files',
+  'sched_rows': [
+    (
+      'Schedule 100',
+      'Balance sheet information',
+      'Required',
+      'The van, gauges and recovery equipment, parts still on the shelf and any shareholder balance all sit on the balance sheet.',
+    ),
+    (
+      'Schedule 125',
+      'Income statement information',
+      'Required',
+      'Both GIFI figures at nil: no service or install billed, nothing claimed against it.',
+    ),
+    (
+      'Schedule 141',
+      'Notes checklist',
+      'Required',
+      'Required alongside them; it records the preparer and the basis.',
+    ),
+    (
+      'Schedule 50',
+      'Shareholder information',
+      'Required',
+      'Anyone at 10% or more of the shares, usually the licensed technician who owns the company.',
+    ),
+    (
+      'Schedule 24',
+      'First-time filer information',
+      'First return only',
+      'Goes in once, when the corporation files for the first time.',
+    ),
+    (
+      'Schedule 8',
+      'Capital cost allowance',
+      'While the van is owned',
+      'Van, gauges, pumps and recovery machines stay on Schedule 8 while owned, whether or not they were used.',
+    ),
+  ],
+  'sched_note': 'Source: Canada Revenue Agency requirements for the T2 and its schedules, taken against an HVAC corporation that attended no call. Reviewed 23 November 2026.',
+  'sched_boxes': [
+    (
+      'An Agreement That Renews Is Revenue',
+      'A maintenance plan billed annually keeps charging without anyone arranging it. One renewal in the year and the return is an ordinary one.',
+    ),
+    (
+      'Parts on the Shelf Are an Asset',
+      'Filters and motors bought for a job that never happened are stock, carried on Schedule 100 until fitted.',
+    ),
+    (
+      'Working for Another Shop Is Personal',
+      'Wages or a day rate from a larger shop are taxed in your hands, which leaves the corporate year at nil.',
+    ),
+  ],
+  'chk_yes': [
+    'No service call or installation was billed by the corporation',
+    'No maintenance agreement renewed or was charged in the year',
+    'No parts or equipment were sold on to anyone',
+    'Nothing it owned, van, gauges or recovery machine, was sold',
+    'No account in its name earned interest',
+  ],
+  'chk_no': [
+    'A maintenance agreement renewed and was charged',
+    'A service call, repair or install was invoiced',
+    'Parts were sold on to another contractor or a homeowner',
+    'The van or a set of equipment was sold or traded in',
+    'A manufacturer paid a rebate or a warranty allowance',
+  ],
+  'chk_both': [
+    'No year the corporation lives through is exempt from a return',
+    'A T183CORP authorisation is needed for each return before it goes',
+    'Schedule 50 is required wherever someone holds 10% or more',
+    'The trade licence and liability cover renew on their own cycles',
+    'A clearance certificate is required before the corporation closes',
+  ],
+  'why_h': 'Why HVAC Corporations Use This Service',
+  'why': [
+    (
+      'Written for the Year Off the Tools',
+      'A year working for a larger shop, a year with the van parked, a year deciding. Those are what this fee covers.',
+    ),
+    (
+      'Agreements Are Checked Before the Price',
+      'An agreement that renews itself is what most often ends one of these years, so it is settled first.',
+    ),
+    (
+      'One Rate, Each Quiet Year',
+      'A quiet year costs $300.00 plus HST per tax year, with nothing billed by the hour.',
+    ),
+    (
+      'Working Years Are Priced as Such',
+      'A year that attended calls or renewed an agreement is handled as a full corporate return at the higher fee.',
+    ),
+  ],
+  'strip': [
+    (
+      'A Parked Van, a Live Company',
+      'Nothing about an idle vehicle stops the year end.',
+    ),
+    (
+      'Oldest Return Leads',
+      'Parts and van values only reconcile in date order.',
+    ),
+    (
+      'Nothing to Drop Off',
+      'Each year is authorised in a portal, not at a counter.',
+    ),
+  ],
+  'svc_h': 'What an HVAC Corporation Usually Needs Next',
+  'proc_h': 'How an HVAC Corporation Files',
+  'proc_lede': 'Four steps, beginning and mostly ending with the maintenance agreements.',
+  'proc_note': 'Agreement billing is where to start:',
+  'steps': [
+    (
+      'Check the Maintenance Agreements',
+      'Plans that renewed, calls attended and installs billed are all measured before the year is treated as nil.',
+    ),
+    (
+      'Account for Parts and Equipment',
+      'Stock sold on and any van or machine disposed of belong to their own year, which rules that year out of the nil price.',
+    ),
+    (
+      'Assemble the Schedules',
+      'Schedules 100, 125 and 141 with Schedule 50, plus Schedule 24 where no return has gone before, and Schedule 8 for as long as the van is owned.',
+    ),
+    (
+      'Authorise Year by Year',
+      'Sign the T183CORP for each year; the set then goes electronically, with confirmation inside 3 business days.',
+    ),
+  ],
+  'price_h': 'Nil T2 Filing Cost for an HVAC Corporation',
+  'price_eyebrow': 'One Fee Per Tax Year',
+  'price_text': 'No call attended and no agreement renewed puts the year at $300.00 plus HST per tax year. That fee carries the T2, the GIFI schedules where required, Schedule 50, Schedule 24 on a first return, the T183CORP package with secure e-signing, CPA review before transmission, electronic transmission by a registered EFILE electronic filer, one corrected transmission where the Agency rejects the first, and the CRA confirmation emailed within 3 business days. Where a call was billed, an agreement renewed or equipment was sold, the year is $350.00 plus HST per year at gondaliyacpa.ca.',
+  'geo_h': 'HVAC Corporation Filing Across Canada',
+  'cta_h': 'File the Years the Van Stayed Home',
+  'faq': [
+    (
+      'I worked for another contractor all year. Does my corporation file?',
+      'Yes, until it is dissolved. Being paid by someone else is personal income and does not make the corporate year active.',
+    ),
+    (
+      'Two maintenance agreements renewed automatically. Is the year nil?',
+      'No. A renewal billed by the corporation is revenue, which puts that year at $350.00 plus HST per year at gondaliyacpa.ca.',
+    ),
+    (
+      'I attended a warranty callback and charged nobody. Nil or not?',
+      'It can still be nil. Work done without billing produces no revenue, so the year reports none, provided nothing else came in.',
+    ),
+    (
+      'There are parts on the shelf from the last job. Do they matter?',
+      'Only on the balance sheet. Unfitted stock is an asset until it goes into a job or is written off.',
+    ),
+    (
+      'We sold the van and the gauges. Which year is affected?',
+      'In the year of the sale, as a disposition. What it fetched against its remaining cost decides the figure.',
+    ),
+    (
+      'A manufacturer sent a rebate cheque. Does that end the nil year?',
+      'Yes. A rebate or allowance received by the corporation is income to it in the year it arrived.',
+    ),
+    (
+      'My trade licence is current but unused. Does holding it count?',
+      'No. A licence held is not activity. It renews on its own cycle and has no bearing on whether the corporate year was nil.',
+    ),
+    (
+      'I sold a few leftover parts to a friend in the trade. Is the year nil?',
+      'Not if the corporation was paid. A sale of stock is revenue to it, however small.',
+    ),
+    (
+      'There are five unfiled years. Can they go in as one job?',
+      'Yes. Five unfiled years are five returns at $300.00 plus HST per tax year, authorised one by one and filed in sequence.',
+    ),
+    (
+      'What order do the van, the dissolution and the final return come in?',
+      'The returns, then the van out as a disposition in its year, then dissolution and a final T2 within six months. Clearance waits on all of it.',
+    ),
+  ],
+ },
+
+ 'plumbing-corporations': {
+  'name': 'Plumbing Corporations',
+  'short': 'plumbing corporation',
+  'plural': 'plumbing corporations',
+  'kw': 'nil t2 for plumbing corporation',
+  'title': 'Plumbing Corporation Nil T2 | Years With No Work',
+  'desc': 'A plumbing corporation files a T2 for every year it exists. Why a trailing rental commission ends the nil year, and the cost per year.',
+  'h1': 'Nil T2 Filing for Plumbing Corporations',
+  'lede': 'Trailing commissions are what trip this one up. A water heater rental signed years ago can still be paying the corporation. Where nothing arrived at all, the year is $300.00 plus HST per tax year.',
+  'intro_h': 'Flat-Fee Nil T2 Filing for Plumbing Corporations',
+  'intro': (
+    'A plumbing corporation can put down the tools and still be taking money in. Commissions on rentals or referrals set up years ago keep arriving on their own schedule, so another year end comes round with a return owing behind it. Where none of that happened, the price is $300.00 plus HST per tax year.',
+    'Took a job with a bigger outfit, retired the van, held the licence while you decided, or carried the trade on through a different corporation: in each case the test is the same, against work invoiced, callouts billed, commissions and referral money received, and anything that left the corporation. The two GIFI schedules go in with Schedule 141 and Schedule 50, and the whole return is transmitted electronically. Any year holding money is priced as a full return instead.',
+  ),
+  'notnil_h': 'What an Unfiled Year Costs a Plumbing Corporation',
+  'notnil_boxes': [
+    (
+      'Down Tools Is Not Dissolved',
+      'Putting the tools away does not end the filing year. Only dissolution does.',
+    ),
+    (
+      'Commissions Arrive Unannounced',
+      'A payment on something arranged years ago can land in a year nobody was watching, and it makes that year an earning one.',
+    ),
+    (
+      'Permits and Supply Accounts Check Standing',
+      'Pull a permit again, or reopen an account at the wholesaler, and somebody reads the corporate record.',
+    ),
+    (
+      'Tools and the Van Are on the Books',
+      'Tools and a van inside the corporation are its property until sold or taken out, and that shows on the schedules.',
+    ),
+  ],
+  'notnil_text': (
+    'The licence and the tools are usually why the corporation is kept, and both are good reasons. Neither of them changes the fact that a year end arrives every twelve months with a return attached.',
+    'A year with nothing received is $300.00 plus HST per tax year. Where several are outstanding they are prepared as one job and transmitted from the earliest, so the tool and van values follow correctly.',
+  ),
+  'sched_h': 'Which T2 Schedules a Plumbing Corporation Files',
+  'sched_rows': [
+    (
+      'Schedule 100',
+      'Balance sheet information',
+      'Required',
+      'The van, the tools, fittings still in stock and any balance owing to a shareholder stay on the balance sheet through a quiet year.',
+    ),
+    (
+      'Schedule 125',
+      'Income statement information',
+      'Required',
+      'Work revenue nil, costs nil, which is the whole of a year with no callouts.',
+    ),
+    (
+      'Schedule 141',
+      'Notes checklist',
+      'Required',
+      'The checklist that says who drew the figures up and on what basis.',
+    ),
+    (
+      'Schedule 50',
+      'Shareholder information',
+      'Required',
+      'Each holder of 10% or more, in most cases the licensed plumber alone.',
+    ),
+    (
+      'Schedule 24',
+      'First-time filer information',
+      'First return only',
+      'One filing only, the corporation’s first, and never again.',
+    ),
+    (
+      'Schedule 8',
+      'Capital cost allowance',
+      'While the tools are owned',
+      'Owned tools and the van carry capital cost allowance until they are gone.',
+    ),
+  ],
+  'sched_note': 'Source: the Canada Revenue Agency’s published T2 requirements, weighed against a plumbing corporation that invoiced nothing in the year. Reviewed 23 November 2026.',
+  'sched_boxes': [
+    (
+      'A Trailing Commission Is Income',
+      'A payment on a rental or a referral arranged in an earlier year is revenue in the year it is received, and it makes that year an ordinary return.',
+    ),
+    (
+      'Stock in the Van Is Not Revenue',
+      'Fittings in the van that never got installed are stock, not revenue.',
+    ),
+    (
+      'Side Work in Your Own Name Is Yours',
+      'A homeowner paying you and not the corporation puts that money on your own return.',
+    ),
+  ],
+  'chk_yes': [
+    'The corporation raised no invoice for work in the year',
+    'No commission on a rental or referral was received by it',
+    'It sold no fittings, fixtures or materials to anyone',
+    'No van, camera or power tool of its changed hands',
+    'No account of its paid any interest',
+  ],
+  'chk_no': [
+    'A commission or referral payment arrived from an earlier arrangement',
+    'A job, callout or emergency visit was invoiced',
+    'Stock or fixtures were sold on to another trade',
+    'A van, tool set or camera went out by sale or write-off',
+    'A holdback released on a job finished in an earlier year',
+  ],
+  'chk_both': [
+    'Each tax year the corporation reaches calls for a return of its own',
+    'Every return calls for an authorised T183CORP before transmission',
+    'Any 10% shareholding calls for Schedule 50 disclosure',
+    'The trade licence and the insurance run on cycles of their own',
+    'Dissolution calls for a clearance certificate first',
+  ],
+  'why_h': 'Why Plumbing Corporations Use This Service',
+  'why': [
+    (
+      'For the Years the Tools Were Down',
+      'A year employed elsewhere, a year retired from the trade, a year holding the licence. Those are what this fee is for.',
+    ),
+    (
+      'Trailing Payments Are Looked For First',
+      'A commission landing unannounced is what most often takes one of these years out of nil, so it is looked for before any price.',
+    ),
+    (
+      'A Single Amount Per Year',
+      'Nothing received means $300.00 plus HST per tax year, however many years are outstanding.',
+    ),
+    (
+      'Earning Years Are Handled Elsewhere',
+      'Invoice something, take a commission, and the year moves to the full corporate service at the higher fee.',
+    ),
+  ],
+  'strip': [
+    (
+      'Tools Down, Year End Up',
+      'The calendar does not wait on the trade.',
+    ),
+    (
+      'Earliest Year, Then the Rest',
+      'Tool and stock values only carry if the order holds.',
+    ),
+    (
+      'No Trip Required',
+      'Authorising a year is a browser and a few minutes.',
+    ),
+  ],
+  'svc_h': 'What a Plumbing Corporation Usually Needs Next',
+  'proc_h': 'How a Plumbing Corporation Files a Nil Year',
+  'proc_lede': 'The filing form runs to four questions. Money that showed up unasked is the one that matters.',
+  'proc_note': 'Step one is a look down a year of deposits:',
+  'steps': [
+    (
+      'Look for Money That Arrived',
+      'Invoices raised, callouts billed, commissions, referral payments and released holdbacks are all measured before the year is called nil.',
+    ),
+    (
+      'Deal With Stock and Tools',
+      'Stock passed on, and a van or tool gone, are events of their own year, and that year prices as an ordinary return.',
+    ),
+    (
+      'Draw Up the Return',
+      'Schedules 100, 125, 141 and 50, with Schedule 24 where it is the first return and Schedule 8 while the tools are owned.',
+    ),
+    (
+      'Sign Each Year and Transmit',
+      'Every year needs its own signed T183CORP. The filings then go, and confirmation follows inside 3 business days.',
+    ),
+  ],
+  'price_h': 'Nil T2 Filing Cost for a Plumbing Corporation',
+  'price_eyebrow': 'One Fee Per Tax Year',
+  'price_text': 'Nothing invoiced and nothing received leaves a $300.00 plus HST per tax year filing. Behind the figure sit the T2, the GIFI schedules where required, Schedule 50, Schedule 24 on a first return, the T183CORP package with secure e-signing, CPA review before transmission, electronic transmission by a registered EFILE electronic filer, one corrected transmission where the Agency rejects the first, and the CRA confirmation emailed within 3 business days. Any year with billed work, a commission landing or a tool going out is priced at gondaliyacpa.ca, where the rate is $350.00 plus HST per year.',
+  'geo_h': 'Plumbing Corporation Filing Across Canada',
+  'cta_h': 'File the Years Nothing Was Invoiced',
+  'faq': [
+    (
+      'I have been employed by another plumber all year. Do I still file?',
+      'The corporation does, for as long as it exists. Your wages are personal and leave the corporate year untouched.',
+    ),
+    (
+      'A rental commission still pays us each quarter. Is the year nil?',
+      'No. A commission belongs to the corporation in the year it lands, which prices that year at gondaliyacpa.ca, at $350.00 plus HST per year.',
+    ),
+    (
+      'Homeowners pay me directly for small jobs now. Is that the corporation’s?',
+      'Not when the householder pays you and not the company. It is your own income, on your own return.',
+    ),
+    (
+      'A holdback from an old job was released during the year. What happens?',
+      'Money received by the corporation is reported in the year it arrived, which makes that year a full return rather than a nil one.',
+    ),
+    (
+      'The van and tools are sitting in a garage. Does owning them count?',
+      'No. Ownership alone keeps them on Schedule 8 and nothing more. A figure appears in a year only when one goes.',
+    ),
+    (
+      'The drain camera went to another plumber. Does that spoil the year?',
+      'That year, no. Disposing of a tool puts a gain or a loss on the return, whichever way it fell.',
+    ),
+    (
+      'My licence is current but I pulled no permits. Is the year nil?',
+      'It can be. A licence held and unused earns nothing, and renewal is a separate matter from the corporate return.',
+    ),
+    (
+      'There are fittings in the van worth a few thousand dollars. Does that matter?',
+      'Only as an asset. Unused stock sits on the balance sheet until it is installed or sold.',
+    ),
+    (
+      'Can seven unfiled years all be dealt with?',
+      'They can. Seven years means seven returns, each at $300.00 plus HST per tax year, filed from the earliest.',
+    ),
+    (
+      'What has to happen before the corporation is dissolved?',
+      'Returns first, the van and tools out as a disposition in their year, then a final T2 six months after dissolution. Nothing clears until the years are in.',
+    ),
+  ],
+ },
+
 }
