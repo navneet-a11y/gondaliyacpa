@@ -49,3 +49,4 @@ Date,Time (Toronto),Change,Row,Run,Post ID,URL,Location,Old text,New text,Cells,
 2026-11-23,,19,8,Live,"41020, 40756 and copies",EI summary cells,Tables,"Employee max: $1,077. Employer max: $1,508. Max insurable (earnings): $65,700.","Employee max: $1,123.07. Employer max: $1,572.30. Max insurable earnings: $68,900. (2026)",6,6,Done
 2026-11-23,,19,8,Live,39316 and copies,Payroll guide EI row,Table,"$1,077.48","$1,123.07",3,3,Done
 2026-11-23,,19,8,Live,"41020, 40762, 474191 page and copies",EI maximum insurable earnings (2026 lines only),Body/tables/JSON-LD,"$65,700","$68,900",8,17,Done; 2025 comparison columns left as is
+2026-11-24,,19,4,Live,"39328, 39333, 39338, 39345, 39350 and copies",LCGE owner and spouse lines,Body/tables/JSON-LD,"$2,033,672","$2,550,000 (2 x $1,275,000)",15,38,Done
