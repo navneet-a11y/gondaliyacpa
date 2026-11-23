@@ -1,0 +1,584 @@
+
+<style>.gcpa-post{--navy:#0f2a4a;--navy-2:#15355c;--blue:#1c6dd0;--blue-soft:#e8f1fc;--teal:#0c8f8f;--teal-soft:#e3f4f4;--gold:#c9991f;--gold-soft:#fbf3dc;--green:#1f8a4c;--green-soft:#e6f5ec;--red:#c0392b;--red-soft:#fbeae8;--ink:#1d2733;--muted:#5a6b7b;--line:#d8e0e8;--bg:#ffffff;--bg-alt:#f5f8fb;--radius:14px;--shadow:0 6px 22px rgba(15,42,74,.08);--shadow-lg:0 14px 40px rgba(15,42,74,.14);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);line-height:1.7;font-size:17px;max-width:1080px;margin:0 auto;padding:0 18px 60px;} .gcpa-post *{box-sizing:border-box;} .gcpa-hero{background:linear-gradient(135deg,var(--navy) 0%,var(--navy-2) 60%,#1c4a78 100%);color:#fff;border-radius:20px;padding:46px 40px 42px;margin:26px 0 34px;position:relative;overflow:hidden;} .gcpa-hero::after{content:"";position:absolute;right:-80px;top:-80px;width:280px;height:280px;z-index:0;background:radial-gradient(circle,rgba(28,109,208,.45),transparent 70%);} .gcpa-post .gcpa-eyebrow{display:inline-block;font-size:13px;letter-spacing:1.4px;text-transform:uppercase;font-weight:700;color:#cfe2f8 !important;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.3);padding:7px 15px;border-radius:30px;margin-bottom:18px;} .gcpa-post .gcpa-hero h1{font-size:34px;line-height:1.25;margin:0 0 16px;font-weight:800;color:#fff !important;letter-spacing:-.3px;position:relative;z-index:2;} .gcpa-post .gcpa-hero p{font-size:18px;color:#eaf3fc !important;margin:0;max-width:760px;position:relative;z-index:2;} .gcpa-eyebrow{position:relative;z-index:2;} .gcpa-post h2{font-size:27px;font-weight:800;color:var(--navy);line-height:1.3;margin:48px 0 18px;padding-bottom:14px;border-bottom:3px solid var(--blue-soft);letter-spacing:-.2px;position:relative;} .gcpa-post h2::after{content:"";position:absolute;left:0;bottom:-3px;width:70px;height:3px;background:var(--blue);} .gcpa-post h3{font-size:22px;font-weight:800;color:var(--navy-2);margin:40px 0 14px;line-height:1.35;} .gcpa-post h4{font-size:19px;font-weight:700;color:var(--navy-2);margin:36px 0 12px;line-height:1.4;padding-left:16px;border-left:4px solid var(--teal);} .gcpa-post p{margin:0 0 16px;color:#1d2733 !important;} .gcpa-post li{color:#1d2733;} .gcpa-post a{color:var(--blue);text-decoration:none;font-weight:600;} .gcpa-post a:hover{text-decoration:underline;} .gcpa-post ul,.gcpa-post ol{margin:0 0 18px !important;padding-left:0 !important;list-style:none !important;} .gcpa-post ul{list-style-type:none !important;} .gcpa-post ul li{position:relative;padding:8px 0 8px 34px;margin:0;border-bottom:1px solid var(--line);color:var(--ink);list-style:none !important;list-style-type:none !important;} .gcpa-post ul li::marker{content:"" !important;font-size:0 !important;} .gcpa-post ul li:last-child{border-bottom:none;} .gcpa-post ul li::before{content:"";position:absolute;left:6px;top:15px;width:9px;height:9px;border-radius:2px;background:var(--teal);transform:rotate(45deg);} .gcpa-post ol{counter-reset:gcpa;} .gcpa-post ol li{position:relative;padding:10px 0 10px 44px;margin:0 0 10px;counter-increment:gcpa;list-style:none !important;list-style-type:none !important;} .gcpa-post ol li::marker{content:"" !important;font-size:0 !important;} .gcpa-post ol li::before{content:counter(gcpa);position:absolute;left:0;top:9px;width:28px;height:28px;border-radius:8px;background:var(--navy);color:#fff;font-weight:700;font-size:14px;display:flex;align-items:center;justify-content:center;} .gcpa-post .wp-block-table,.gcpa-post figure.wp-block-table{margin:22px 0 26px;overflow-x:auto;} .gcpa-post table{width:100%;border-collapse:collapse;font-size:15.5px;background:#fff;border:1px solid var(--navy);border-radius:10px;overflow:hidden;box-shadow:var(--shadow);} .gcpa-post thead th{background:var(--navy);color:#fff;text-align:left;padding:13px 15px;font-weight:700;font-size:15px;border:1px solid var(--navy-2);} .gcpa-post tbody td{padding:12px 15px;border:1px solid var(--line);vertical-align:top;color:var(--ink);} .gcpa-post tbody tr:nth-child(even){background:var(--bg-alt);} .gcpa-post tbody tr:hover{background:var(--blue-soft);} .gcpa-post tbody td:first-child{font-weight:600;color:var(--navy-2);} .gcpa-metrics{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin:30px 0 36px;clear:both;} .gcpa-metric{background:#fff;border:1px solid var(--line);border-top:4px solid var(--blue);border-radius:var(--radius);padding:22px 18px;box-shadow:var(--shadow);transition:transform .2s,box-shadow .2s;} .gcpa-metric:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg);} .gcpa-metric:nth-child(2){border-top-color:var(--teal);} .gcpa-metric:nth-child(3){border-top-color:var(--gold);} .gcpa-metric:nth-child(4){border-top-color:var(--green);} .gcpa-metric .ic{width:46px;height:46px;border-radius:11px;background:var(--blue-soft);display:flex;align-items:center;justify-content:center;margin-bottom:14px;color:var(--blue);} .gcpa-metric:nth-child(2) .ic{background:var(--teal-soft);color:var(--teal);} .gcpa-metric:nth-child(3) .ic{background:var(--gold-soft);color:var(--gold);} .gcpa-metric:nth-child(4) .ic{background:var(--green-soft);color:var(--green);} .gcpa-metric .big{font-size:22px;font-weight:800;color:var(--navy);line-height:1.2;margin-bottom:4px;} .gcpa-metric .lbl{font-size:14px;color:var(--muted);line-height:1.45;} .gcpa-numhead{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin:46px 0 8px;clear:both;} .gcpa-numhead h4{margin:0 !important;} .gcpa-numhead .gcpa-pill{margin:0 !important;} .gcpa-numhead .num{flex:0 0 auto;width:48px;height:48px;border-radius:12px;background:var(--navy);color:#fff;font-size:22px;font-weight:800;display:flex;align-items:center;justify-content:center;box-shadow:var(--shadow);} .gcpa-callout{border-radius:var(--radius);padding:20px 22px;margin:22px 0;border:1px solid var(--line);background:var(--bg-alt);position:relative;} .gcpa-callout.blue{background:var(--blue-soft);border-color:#bcd9f6;} .gcpa-callout.teal{background:var(--teal-soft);border-color:#b7e3e3;} .gcpa-callout.gold{background:var(--gold-soft);border-color:#ecd79a;} .gcpa-callout.green{background:var(--green-soft);border-color:#b6e2c6;} .gcpa-callout.red{background:var(--red-soft);border-color:#f0c4be;} .gcpa-callout .co-tag{display:inline-block;font-size:12.5px;font-weight:700;letter-spacing:.6px;text-transform:uppercase;padding:4px 11px;border-radius:20px;margin-bottom:10px;color:#fff;} .gcpa-callout.blue .co-tag{background:var(--blue);} .gcpa-callout.teal .co-tag{background:var(--teal);} .gcpa-callout.gold .co-tag{background:var(--gold);} .gcpa-callout.green .co-tag{background:var(--green);} .gcpa-callout.red .co-tag{background:var(--red);} .gcpa-callout p:last-child{margin-bottom:0;} .gcpa-cta{background:linear-gradient(135deg,var(--navy) 0%,#1c4a78 100%);color:#fff;border-radius:18px;padding:34px 32px;margin:38px 0;text-align:center;box-shadow:var(--shadow-lg);position:relative;overflow:hidden;} .gcpa-cta::before{content:"";position:absolute;left:-60px;bottom:-60px;width:220px;height:220px;background:radial-gradient(circle,rgba(12,143,143,.4),transparent 70%);} .gcpa-post .gcpa-cta h4{color:#fff !important;border:none;padding:0;margin:0 0 12px;font-size:22px;font-weight:800;position:relative;z-index:1;} .gcpa-post .gcpa-cta p{color:#eaf3fc !important;max-width:680px;margin:0 auto 22px;position:relative;z-index:1;} .gcpa-post .gcpa-cta .btn{display:inline-block;background:#fff !important;color:var(--navy) !important;font-weight:700;padding:13px 26px;border-radius:30px;margin:6px;font-size:16px;position:relative;z-index:1;transition:transform .15s;text-decoration:none !important;} .gcpa-post .gcpa-cta .btn:hover{transform:translateY(-2px);text-decoration:none !important;} .gcpa-post .gcpa-cta .btn.primary{background:var(--teal) !important;color:#fff !important;} .gcpa-btnrow{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;align-items:center;position:relative;z-index:1;} .gcpa-trust{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-bottom:22px;position:relative;z-index:1;} .gcpa-post .gcpa-trust span{font-size:13px;font-weight:700;background:rgba(255,255,255,.18) !important;border:1px solid rgba(255,255,255,.45);padding:7px 14px;border-radius:20px;color:#ffffff !important;} .gcpa-post svg{display:block;} .gcpa-pill{display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:700;padding:8px 16px;border-radius:30px;margin:10px 0 6px;line-height:1.2;} .gcpa-pill svg{width:16px;height:16px;flex:0 0 auto;} .gcpa-pill.green{background:var(--green-soft);color:var(--green);border:1px solid #b6e2c6;} .gcpa-pill.blue{background:var(--blue-soft);color:var(--blue);border:1px solid #bcd9f6;} .gcpa-pill.teal{background:var(--teal-soft);color:var(--teal);border:1px solid #b7e3e3;} .gcpa-pill.gold{background:var(--gold-soft);color:#9a7416;border:1px solid #ecd79a;} .gcpa-pill.red{background:var(--red-soft);color:var(--red);border:1px solid #f0c4be;} .gcpa-pillhead{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin:38px 0 12px;clear:both;} .gcpa-pillhead h4{margin:0 !important;} .gcpa-pillhead .gcpa-pill{margin:0 !important;} @media(max-width:560px){.gcpa-pillhead{gap:8px;}} .gcpa-toc{background:var(--bg-alt);border:1px solid var(--line);border-left:5px solid var(--blue);border-radius:var(--radius);padding:24px 26px;margin:30px 0 36px;box-shadow:var(--shadow);} .gcpa-toc h5{margin:0 0 14px;font-size:16px;font-weight:800;color:var(--navy);letter-spacing:.4px;text-transform:uppercase;display:flex;align-items:center;gap:9px;} .gcpa-toc h5 svg{width:20px;height:20px;color:var(--blue);} .gcpa-toc ol{counter-reset:toc;margin:0 !important;padding:0 !important;columns:2;column-gap:36px;list-style:none !important;} .gcpa-toc ol li{counter-increment:toc;position:relative;padding:7px 0 7px 30px;margin:0;border-bottom:1px dashed var(--line);break-inside:avoid;list-style:none !important;} .gcpa-toc ol li::before{content:counter(toc);position:absolute;left:0;top:7px;width:21px;height:21px;border-radius:6px;background:var(--blue-soft);color:var(--blue);font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;} .gcpa-toc ol li::marker{content:"" !important;font-size:0 !important;} .gcpa-toc a{color:var(--navy-2);font-weight:600;font-size:15px;} .gcpa-toc a:hover{color:var(--blue);} .gcpa-post [id^="toc-"]{scroll-margin-top:90px;} .gcpa-banner{display:block;background:linear-gradient(135deg,#0d3b66 0%,#0c7a7a 100%);color:#fff;border-radius:16px;padding:30px 32px;margin:36px 0;box-shadow:var(--shadow-lg);} .gcpa-banner .bt{font-size:20px;font-weight:800;line-height:1.45;margin:0 0 20px;max-width:760px;} .gcpa-banner .bb{display:flex;flex-wrap:wrap;gap:14px;align-items:center;} .gcpa-banner a{display:inline-block;background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.6);color:#fff !important;font-weight:700;padding:13px 24px;border-radius:30px;font-size:15px;text-decoration:none !important;} .gcpa-banner a.solid{background:#ffffff !important;color:#0d3b66 !important;border-color:#fff;} .gcpa-disclaimer{background:var(--bg-alt);border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:34px 0 10px;font-size:14.5px;color:var(--muted);line-height:1.6;} .gcpa-disclaimer strong{color:var(--navy-2);} .gcpa-byline{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin:0 0 22px;font-size:15px;} .gcpa-byline .av{width:42px;height:42px;border-radius:50%;background:var(--navy);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:16px;flex:0 0 auto;} .gcpa-byline .nm{font-weight:700;color:var(--navy-2);} .gcpa-byline .rl{color:var(--teal);font-weight:700;} .gcpa-byline .sep{color:var(--line);} .gcpa-author{display:flex;gap:18px;align-items:flex-start;background:var(--bg-alt);border:1px solid var(--line);border-left:5px solid var(--teal);border-radius:14px;padding:24px 26px;margin:34px 0 40px;} .gcpa-author .ava{width:64px;height:64px;border-radius:50%;background:linear-gradient(135deg,var(--navy),var(--teal));color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:22px;flex:0 0 auto;} .gcpa-author .info h5{margin:0 0 6px;font-size:17px;font-weight:800;color:var(--navy);line-height:1.4;} .gcpa-author .info .role{font-size:14px;color:var(--teal);font-weight:700;margin:0 0 12px;} .gcpa-author .info p{font-size:14.5px;color:var(--muted) !important;margin:0;line-height:1.65;} .gcpa-faq{margin:18px 0 26px;border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:var(--shadow);} .gcpa-faq details{border-bottom:1px solid var(--line);background:#fff;} .gcpa-faq details:last-child{border-bottom:none;} .gcpa-faq summary{list-style:none;cursor:pointer;padding:18px 22px;font-weight:700;color:var(--navy-2);font-size:16px;display:flex;justify-content:space-between;align-items:center;gap:14px;transition:background .15s;} .gcpa-faq summary::-webkit-details-marker{display:none;} .gcpa-faq summary:hover{background:var(--bg-alt);} .gcpa-faq summary .pl{flex:0 0 auto;width:24px;height:24px;border-radius:50%;background:var(--blue-soft);color:var(--blue);display:flex;align-items:center;justify-content:center;font-size:18px;font-weight:700;transition:transform .2s;} .gcpa-faq details[open] summary{background:var(--bg-alt);color:var(--navy);} .gcpa-faq details[open] summary .pl{transform:rotate(45deg);background:var(--blue);color:#fff;} .gcpa-faq .ans{padding:0 22px 20px;color:#1d2733;font-size:15.5px;line-height:1.7;} .gcpa-img-right{float:right;max-width:250px;width:32%;margin:6px 0 24px 28px;border-radius:12px;box-shadow:var(--shadow-lg);border:1px solid var(--line);} .gcpa-img-right img{display:block;width:100%;height:auto;border-radius:12px;} @media(max-width:560px){.gcpa-img-right{float:none;width:70%;max-width:260px;margin:14px auto 18px;}} .gcpa-closing{font-size:24px;font-weight:800;color:var(--navy);margin:48px 0 14px;padding-bottom:12px;border-bottom:3px solid var(--teal-soft);position:relative;} .gcpa-closing::after{content:"";position:absolute;left:0;bottom:-3px;width:70px;height:3px;background:var(--teal);} @media(max-width:560px){.gcpa-post{font-size:16px;} .gcpa-hero{padding:32px 22px;} .gcpa-hero h1{font-size:26px;} .gcpa-post h2{font-size:23px;} .gcpa-cta{padding:26px 20px;} .gcpa-banner .bb{width:100%;} .gcpa-banner .bb a{flex:1 1 auto;text-align:center;}}</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"Open Corporation for $35","alternateName":"Open Corporation For $35","url":"https://opencorporationfor35.ca/","description":"Open Corporation for $35 is a department of Gondaliya CPA.","parentOrganization":{"@type":"Organization","name":"Gondaliya CPA Professional Corporation","url":"https://gondaliyacpa.ca","identifier":"CPA Ontario Firm Registration 61330051"},"telephone":"+1-647-212-9559","email":"info@gondaliyacpa.ca","areaServed":"CA","openingHours":"Mo-Su 09:00-20:30","award":"Xero Partner Award Winner 2026","aggregateRating":{"@type":"AggregateRating","ratingValue":"5","reviewCount":"1300"}}
+</script>
+<div class="gcpa-post">
+<div class="gcpa-hero" style="background:linear-gradient(135deg,#0f2a4a 0%,#15355c 60%,#1c4a78 100%) !important;">
+<span class="gcpa-eyebrow">Corporate Bank Account · Documents · FINTRAC · ISC Register · 2026</span>
+<h1 style="color:#ffffff !important;position:relative;z-index:2;font-size:34px;line-height:1.25;font-weight:800;margin:0 0 14px;">Business Bank Account Opening Checklist for a New Corporation</h1>
+<div class="gcpa-hero-sub" style="margin:0 0 18px;"><span style="color:#eaf3fc !important;font-size:18px;line-height:1.6;display:block;max-width:840px;position:relative;z-index:2;">Every document a Canadian bank asks for, who needs ID, how to fund the account and how to avoid the delays that stall a new corporation</span></div>
+<div style="position:relative;z-index:2;font-size:15px;line-height:1.5;"><span style="color:#ffffff;font-weight:bold;">By Sharad Gondaliya, CPA</span><span style="color:#9fd0d0;font-weight:bold;">  |  <a href="https://opencorporationfor35.ca/">Open Corporation For $35</a> and <a href="https://opencorporationfor35.ca/address-service-100/">Address Service</a></span></div>
+<div style="position:relative;z-index:2;font-size:14.5px;line-height:1.5;margin-top:12px;"><span style="color:#cfe2f8 !important;font-weight:600;">Open Corporation for $35 is a department of Gondaliya CPA.</span></div>
+</div>
+<h2>Business Account Checklist and Documents Needed to Open a Corporate Bank Account in Canada | Open Corporation for $35</h2>
+<p><strong>Open Corporation for $35 is a department of Gondaliya CPA.</strong> Opening a corporate bank account in Canada requires a clear business account checklist including <a href="https://opencorporationfor35.ca/business-bank-account-setup/">corporate banking checklist</a>, articles of incorporation for bank account, and shareholder information for business banking. Understanding the documents needed to open a corporate bank account, such as CRA business number and new corporation bank account forms, helps simplify business banking requirements for your new corporation.</p>
+<h3 id="toc-summary" style="margin-top:38px;">Quick Summary</h3>
+<p>Banks open a corporate account once they can see that the corporation exists, who may sign for it and who owns it. Bring the certificate and articles, a current corporate profile, a banking resolution, your three registers, photo ID for every signer and every 25% owner, and proof of the registered office. Names must match the registry exactly.</p>
+<figure class="wp-block-table">
+<table>
+<thead><tr><th>Aspect</th><th>Details</th></tr></thead>
+<tbody>
+<tr><td>Proof the corporation exists</td><td>Certificate and articles of incorporation, corporate profile report.</td></tr>
+<tr><td>Authority to sign</td><td>Directors' banking resolution or by-laws naming signing officers.</td></tr>
+<tr><td>Who owns it</td><td>Shareholders register and ISC register.</td></tr>
+<tr><td>Identity</td><td>Photo ID for every signer and every owner of 25% or more.</td></tr>
+<tr><td>Business number</td><td>Not legally required, but issued automatically on Ontario and federal incorporation.</td></tr>
+<tr><td>First deposit</td><td>A share subscription or a documented shareholder loan.</td></tr>
+<tr><td>Our fee</td><td>$35 including HST, plus government fees.</td></tr>
+</tbody>
+</table>
+</figure>
+<div class="gcpa-author">
+<div class="ava" style="background:linear-gradient(135deg,#0f2a4a,#0c8f8f) !important;color:#ffffff !important;">SG</div>
+<div class="info">
+<h5>Author: Sharad Gondaliya, CPA (Canada &amp; USA) — Founder &amp; Managing Director, Gondaliya CPA Professional Corporation, Toronto, Ontario.</h5>
+<div class="role">Reviewed and fact-checked by Sharad Gondaliya, CPA (Canada &amp; USA)</div>
+<p style="font-size:14.5px;color:#15355c !important;font-weight:700;margin:0 0 8px;">Open Corporation for $35 is a department of Gondaliya CPA.</p>
+<p>Gondaliya CPA is a Toronto-based team providing incorporation, CRA registrations, corporate tax, bookkeeping, GST/HST, and payroll for Canadian corporations. Verify our firm on the <a href="https://www.cpaontario.ca/protecting-the-public/directories/firm/gondaliya-5sqvmj">CPA Ontario public firm directory</a>, firm registration 61330051.</p>
+<p style="font-size:13.5px;color:#15355c !important;font-weight:700;margin-top:10px;">CPA Ontario | CPA USA (Washington &amp; Montana) | Xero Partner Award Winner 2026 | 1300+ 5-star Google reviews</p>
+</div>
+</div>
+<p style="font-size:14px;color:#5a6b7b;margin:-26px 0 26px;">Reading time: 25 minutes.</p>
+<div class="gcpa-toc">
+<h5>Table of Contents</h5>
+<ol>
+<li><a href="#toc-intro">Why a Corporate Account</a></li>
+<li><a href="#toc-checklist">The Document Checklist</a></li>
+<li><a href="#toc-steps">Step-by-Step Opening</a></li>
+<li><a href="#toc-types">Types of Accounts</a></li>
+<li><a href="#toc-managing">Managing the Account</a></li>
+<li><a href="#toc-support">Fees, Rules and Support</a></li>
+<li><a href="#toc-faq">Frequently Asked Questions</a></li>
+<li><a href="#toc-keypoints">Key Points and Delays</a></li>
+</ol>
+</div>
+<span class="gcpa-pill green">The Numbers That Matter</span>
+<div class="gcpa-metrics">
+<div class="gcpa-metric">
+<div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg></div>
+<div class="big">6</div>
+<div class="lbl">Core document groups the bank will ask for</div>
+</div>
+<div class="gcpa-metric">
+<div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21v-2a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v2"/></svg></div>
+<div class="big">25%</div>
+<div class="lbl">Ownership that makes someone a beneficial owner</div>
+</div>
+<div class="gcpa-metric">
+<div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></div>
+<div class="big">Same day</div>
+<div class="lbl">Business number issued with Ontario and federal incorporation</div>
+</div>
+<div class="gcpa-metric">
+<div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+<div class="big">$35</div>
+<div class="lbl">Our incorporation fee, including HST</div>
+</div>
+</div>
+<div class="gcpa-callout blue">
+<span class="co-tag">Scope &amp; Assumptions</span>
+<p>This article covers opening a business bank account for a newly incorporated Ontario or federal corporation, under the federal anti-money laundering rules and corporate registers in force in November 2026. Each bank sets its own document list. This is educational information only and not tax, legal, or financial advice. Please confirm the list with your bank before your appointment.</p>
+</div>
+
+<h2>Introduction to Business Bank Accounts in Canada</h2>
+<div class="gcpa-numhead">
+<div class="num" style="background:#0f2a4a !important;color:#ffffff !important;">1</div>
+<h4 id="toc-intro" style="border:none;padding:0;margin:0;">Why a Corporate Account</h4>
+<span class="gcpa-pill blue">The Basics</span>
+</div>
+<p><a href="https://opencorporationfor35.ca/guides/how-to-incorporate-in-canada/">Starting a corporation in Canada</a> means you need to open a corporate bank account. This is one of the first steps you should take. It helps you keep your money organized and shows you mean business. This guide covers why having a business bank account matters, its perks, and what’s needed to get one.</p>
+<h3>Importance of Opening a Business Bank Account for Your Corporation</h3>
+<h4>Professional image and credibility</h4>
+<p>Having a business bank account makes your company look more professional. Clients and suppliers trust you more when you use a separate account just for your corporation. When opening a corporate bank account in Canada, banks ask for documents like your <a href="https://opencorporationfor35.ca/guides/articles-of-incorporation-explained/">articles of incorporation</a> and ID from the people who will manage the account.</p>
+<h4>Separation of personal and business finances</h4>
+<p>Keeping personal money separate from business funds is smart. It helps avoid mix-ups and legal trouble later. Banks have specific requirements for this. Your business account checklist should include all the documents they ask for, so you can open the right kind of account without issues.</p>
+<h3>Key Benefits of Having a Dedicated Corporate Bank Account</h3>
+<h4>Easier accounting and bookkeeping</h4>
+<p>Using one bank account just for your corporation <a href="https://opencorporationfor35.ca/incorporation-bookkeeping-bundle/">makes tracking money easier</a>. You can see exactly what comes in and what goes out without guessing. To do this right, have all the documents needed to open a corporate bank account ready. This way, banks can give you statements that fit your business needs.</p>
+<h4>Streamlined tax preparation</h4>
+<p>When tax time comes, having everything in one place saves headaches. It’s simpler to report income and expenses without mixing personal stuff with business money. Opening a corporate bank account in Canada means your <a href="https://opencorporationfor35.ca/corporate-tax-filing-from-300/">taxes get clearer</a> and faster to prepare.</p>
+<h3>Overview of Business Banking Requirements in Canada</h3>
+<h4>General requirements for corporations</h4>
+<p>Banks ask for certain papers before opening an account. These usually include government-issued ID, <a href="https://opencorporationfor35.ca/guides/registered-office-address/">proof of where your company’s office is</a>, articles or certificate of incorporation, and info about who really owns the company. Meeting these requirements helps banks approve your application faster.</p>
+<h4>Regulatory guidelines and compliance</h4>
+<p>Banks must follow rules from groups like FINTRAC (Financial Transactions and Reports Analysis Centre of Canada). These rules make sure banks know who they’re working with and stop illegal activities like money laundering. That’s why banks want specific documents needed to open a corporate bank account—they have to follow these laws strictly while helping your corporation start banking right.</p>
+<h2>Business Account Checklist for Canadian Corporations</h2>
+<div class="gcpa-numhead">
+<div class="num" style="background:#0f2a4a !important;color:#ffffff !important;">2</div>
+<h4 id="toc-checklist" style="border:none;padding:0;margin:0;">The Document Checklist</h4>
+<span class="gcpa-pill teal">Checklist</span>
+</div>
+<p>If you want to open a corporate bank account in Canada, you’ll need to gather some key documents first. This <a href="https://opencorporationfor35.ca/guides/business-bank-account/">business account checklist</a> helps new business owners figure out what to prepare. Different banks might ask for different things, but this list covers the basics.</p>
+<h3>Essential Documents Needed to Open a Corporate Bank Account</h3>
+<figure style="margin:22px 0;"><img src="https://opencorporationfor35.ca/wp-content/uploads/2026/11/bank-account-documents.png" alt="Documents the bank will ask for when a new Canadian corporation opens an account: certificate and articles of incorporation, corporate profile report, banking resolution naming signers, directors, shareholders and ISC registers, photo ID for signing officers and 25% owners, and proof of the registered office address." style="width:100%;border-radius:12px;border:1px solid #d8e0e8;" /><figcaption style="font-size:13px;color:#5a6b7b;text-align:center;padding:6px;">Names and addresses must match the registry exactly.</figcaption></figure>
+<p>To get started, you usually need these important papers:</p>
+<ul>
+<li><strong><a href="https://opencorporationfor35.ca/incorporation-service-35/">Certificate of Incorporation</a>:</strong> This shows your corporation is legally registered, either federally or provincially.</li>
+<li><strong>Articles of Incorporation:</strong> This document lays out how your company is set up and what it does.</li>
+<li><strong>CRA Business Number (BN):</strong> The Canada Revenue Agency gives this number to identify your business for taxes.</li>
+<li><strong>Government-Issued Identification:</strong> You’ll need valid photo ID like a driver’s license or passport for all owners and anyone who can sign on the account.</li>
+</ul>
+<p>Keep in mind, each bank may have its own specific list because of rules from PCMLTFA and FINTRAC. Always check with your bank before applying.</p>
+<div class="gcpa-callout teal">
+<span class="co-tag">Key Stat</span>
+<p><strong>25%:</strong> the ownership level at which banks must identify a person as a beneficial owner under FINTRAC rules, and the same level that puts a person on your ISC register under the CBCA and OBCA.</p>
+</div>
+<h3>Corporate Banking Checklist: What You Should Prepare Before Applying</h3>
+<p>Besides incorporation papers, banks want extra info about who runs the company and where it operates. Here’s what you should have ready:</p>
+<ul>
+<li><strong>Directors’ Register:</strong> A current list of people who manage the corporation.</li>
+<li><strong>Shareholders’ Register:</strong> Records showing who owns shares and how much.</li>
+<li><a href="https://opencorporationfor35.ca/guides/individuals-with-significant-control/">Individual with Significant Control (ISC)</a> or Beneficial Ownership Information: Info about anyone owning 25% or more, as per FINTRAC rules.</li>
+<li><strong>Proof of Registered Office Address:</strong> Paperwork that confirms your official business address filed with Corporations Canada or provincial registry.</li>
+</ul>
+<p>Having these ready helps avoid delays when banks check identities for anti-money laundering laws.</p>
+<h3>CRA Business Number and Its Role in Business Banking</h3>
+<p>Your CRA business number isn’t just for taxes. It also shows banks that the government officially recognizes your business. Here’s why it matters:</p>
+<ul>
+<li>It lets you register for <a href="https://opencorporationfor35.ca/business-number-cra-account-registration/">program accounts like GST/HST</a>, payroll deductions, or import/export accounts banks might ask about.</li>
+<li>Banks see having an active BN as a sign you're set up for tax reporting.</li>
+</ul>
+<p>Some banks may open accounts without a BN, but having one speeds things up when dealing with government programs.<sup>1</sup></p>
+<h3>Articles of Incorporation and Shareholder Information Requirements</h3>
+<p>Banks want clear articles of incorporation because they show who has legal power in your company. Along with shareholder info, this helps them understand control and ownership.</p>
+<p>Articles explain <a href="https://opencorporationfor35.ca/guides/share-structure-explained/">share classes</a> if there are different types.</p>
+<p>They outline director powers which affect who can sign banking documents.</p>
+<p>Keeping shareholder registers updated ensures clear ownership details. This supports proper disclosure under CBCA/OBCA rules about individuals with significant control.<sup>2</sup></p>
+<p style="font-size:13.5px;color:#5a6b7b;margin:-6px 0 14px;">1: See Canada Revenue Agency - Business Number</p>
+<p style="font-size:13.5px;color:#5a6b7b;margin:-6px 0 14px;">2: Refer to Corporations Canada - ISC Register</p>
+<p>Open Corporation for $35 is a department of Gondaliya CPA.</p>
+<h2>Step-by-Step Guide to Opening a Corporate Bank Account in Canada</h2>
+<div class="gcpa-numhead">
+<div class="num" style="background:#0f2a4a !important;color:#ffffff !important;">3</div>
+<h4 id="toc-steps" style="border:none;padding:0;margin:0;">Step-by-Step Opening</h4>
+<span class="gcpa-pill gold">Steps</span>
+</div>
+<p>Opening a corporate bank account in Canada means you have to prepare well. You need to know the <a href="https://opencorporationfor35.ca/guides/what-happens-after-you-incorporate/">business bank account requirements Canada</a> before you start. This guide shows you each step and what documents you’ll need. It’s like your own business account checklist.</p>
+<h3>Eligibility Criteria for Opening a Corporate Bank Account</h3>
+<p>To open a corporate bank account Canada banks want to see some proof first. Your company needs to meet certain rules, which follow Canadian law and FINTRAC regulations. Here’s what most banks ask for:</p>
+<ul>
+<li>Your business must be <a href="https://opencorporationfor35.ca/incorporate-federally-in-canada/">officially incorporated either federally or provincially</a>.</li>
+<li>You must have valid Articles of Incorporation as proof.</li>
+<li>The company needs a real registered office address in Canada.</li>
+<li>Banks want ID details for the directors or signing officers who will use the account.</li>
+<li>They ask for info about people who own 25% or more of shares, because of PCMLTFA/FINTRAC rules.</li>
+</ul>
+<p>Every bank has its own slight differences but they all follow these legal standards. So, check with your chosen bank about their specific requirements.</p>
+<div class="gcpa-callout red">
+<span class="co-tag">Risk Warning</span>
+<p><strong>Risk Warning:</strong> Please do not deposit business income into your personal account while the corporate account is being opened. Mixed funds make the corporation's records harder to prove and can be treated as a shareholder loan or benefit.</p>
+</div>
+<h3>Procedure for Opening a Business Banking Account After Incorporation</h3>
+<p>Once your company is incorporated, here’s what you do next:</p>
+<p><strong>Collect these key documents:</strong></p>
+<ul>
+<li>Certificate of Incorporation</li>
+<li>Articles of Incorporation</li>
+<li>Corporate Profile Report from Corporations Canada or your province</li>
+<li><a href="https://opencorporationfor35.ca/minute-book-preparation/">By-laws or banking resolution</a> that names authorized signers</li>
+<li>Lists of directors and shareholders showing who owns what</li>
+<li>Register of Individuals with Significant Control (ISC) if needed</li>
+<li>CRA Business Number confirmation</li>
+<li><strong>Verify identity:</strong> All signing officers must give government photo ID following FINTRAC rules.</li>
+<li><strong>Prepare ownership records:</strong> Show owners with at least 25% shares per regulations.</li>
+<li><strong>Provide proof of office address:</strong> Bills or lease papers usually work.</li>
+</ul>
+<p>This list matches common business bank account requirements Canada but may change depending on the bank.</p>
+<div class="gcpa-callout blue">
+<span class="co-tag">Worth Knowing</span>
+<p>A CRA business number is not legally required to open a corporate account, but Ontario and federal incorporations receive one automatically, so please bring the business number confirmation to the bank.</p>
+</div>
+<h3>How to Apply for a Business Bank Account Online</h3>
+<p>Applying online makes things faster but you still need good documents:</p>
+<ul>
+<li>Go to the bank’s website for corporate accounts.</li>
+<li>Fill out the forms carefully with info that matches your incorporation papers.</li>
+<li>Upload clear scans of all required documents.</li>
+<li>Authorized signers should give digital signatures if asked.</li>
+</ul>
+<p>Banks check all this under PCMLTFA rules. They verify owners and IDs remotely when allowed. Keep in mind, each bank decides whether to approve based on their own policies.</p>
+<h3>What to Expect During the Account Opening Process</h3>
+<p>Here’s what usually happens after you send in your application:</p>
+<ul>
+<li>The bank checks your papers against their compliance list based on Canadian laws like PCMLTFA/FINTRAC.</li>
+<li>Sometimes, they ask for an interview by video call or in person with directors or signers to confirm identity.</li>
+<li>When approved, they send you confirmation and instructions on how to use your new account online.</li>
+</ul>
+<p>The time it takes can vary a lot since each bank works differently. No one can promise how fast it will go.</p>
+<p>Delays happen mostly because names don’t match across documents, <a href="https://opencorporationfor35.ca/guides/incorporation-documents-checklist/">ownership info is missing</a>, IDs are expired, ISC registers are absent, or public business names aren’t registered.</p>
+<p>Open Corporation for $35 is part of Gondaliya CPA Professional Corporation offering support made just for new corporations in Toronto and nearby areas.</p>
+<div class="gcpa-cta" style="background:linear-gradient(135deg,#0f2a4a 0%,#1c4a78 100%) !important;">
+<h4>Walk into the bank once</h4>
+<p>Incorporation from $35 including HST plus government fees, with a free CPA consultation on your banking resolution, registers, ISC register and how to fund the account. Please book a free consultation.</p>
+<div class="gcpa-trust"><span>1300+ 5-star Google reviews</span><span>Xero Partner Award Winner 2026</span><span>CPA Ontario Firm 61330051</span><span>30-Day Money-Back Guarantee</span></div>
+<div class="gcpa-btnrow"><a class="solid" href="https://gondaliyacpa.ca/consultation/">Book Free Consultation</a><a href="https://opencorporationfor35.ca/">Open Corporation For $35</a><a href="tel:+16472129559">647-212-9559</a></div>
+</div>
+<h2>Understanding Different Types of Business Bank Accounts</h2>
+<div class="gcpa-numhead">
+<div class="num" style="background:#0f2a4a !important;color:#ffffff !important;">4</div>
+<h4 id="toc-types" style="border:none;padding:0;margin:0;">Types of Accounts</h4>
+<span class="gcpa-pill green">Accounts</span>
+</div>
+<p>Opening a corporate bank account in Canada means you need to know what types of accounts exist. Each has its own requirements. A business account checklist can help you get your documents ready. This way, you can open your account without any problems. Knowing what’s needed makes the process faster and smoother.</p>
+<div class="gcpa-callout gold">
+<span class="co-tag">Our Actual Experience</span>
+<p>The most common reason we see a bank meeting rescheduled is a name mismatch. The legal name on the certificate, the corporate profile and the banking resolution must match exactly, including punctuation and Inc. versus Incorporated.</p>
+</div>
+<h3>Types of Business Bank Accounts Available for Canadian Corporations</h3>
+<p>Canadian corporations usually pick from these main account types:</p>
+<ul>
+<li><strong>Operating Account:</strong> Used every day for paying bills, <a href="https://opencorporationfor35.ca/payroll-service/">handling payroll</a>, and getting payments from clients.</li>
+<li><strong>Savings Account:</strong> Keeps extra money safe and earns some interest. Good for future costs or taxes.</li>
+<li><strong>Merchant Account:</strong> Lets businesses accept credit cards in stores or online.</li>
+<li><strong>Trust Account:</strong> Used by some companies, like law firms, to hold client money separately.</li>
+</ul>
+<p>To open these accounts, banks ask for documents like:</p>
+<ul>
+<li>Certificate and articles of incorporation</li>
+<li>Corporate profile report</li>
+<li>Photo ID of signing officers</li>
+<li>Proof of registered office address</li>
+<li>Shareholder info showing who owns 25% or more</li>
+<li>Any registration of operating names</li>
+</ul>
+<p>These papers prove your company is legal in Canada. Banks also need them to follow rules about money laundering (PCMLTFA/FINTRAC).</p>
+<h3>Choosing the Right Bank Account Based on Business Needs</h3>
+<p>Picking the right account depends on your business size, industry, and how much you transact. Think about these points with typical business bank account requirements in Canada:</p>
+<figure class="wp-block-table">
+<table>
+<thead><tr><th>Factor</th><th>What To Think About</th></tr></thead>
+<tbody>
+<tr><td>Transaction Volume</td><td>Businesses with many transactions need strong operating accounts.</td></tr>
+<tr><td>Payment Options</td><td>If you want to take credit cards, a merchant account is needed.</td></tr>
+<tr><td>Cash Management</td><td>Savings accounts help keep cash for later use separate.</td></tr>
+<tr><td>Industry Rules</td><td>Some fields require trust or escrow accounts by law.</td></tr>
+</tbody>
+</table>
+</figure>
+<p>A good business account checklist makes sure your bank matches your needs. Don’t pick an account that costs too much or adds complexity you don’t need.</p>
+<p><strong>Bold Verdict:</strong></p>
+<p>Pick based on how your business works, not just on what looks standard.</p>
+<h3>Features and Benefits of Various Business Account Options</h3>
+<p>Business accounts come with useful features like:</p>
+<ul>
+<li><strong>Online Banking:</strong> Check balances and transactions anytime.</li>
+<li><strong>Multiple Signatures:</strong> Let several officers access the account safely.</li>
+<li><strong>Software Integration:</strong> <a href="https://opencorporationfor35.ca/incorporation-bookkeeping-bundle/">Works with tools like QuickBooks</a> to make bookkeeping easier.</li>
+<li><strong>Fraud Protection:</strong> Keeps your money safe; banks also watch for suspicious transactions under FINTRAC rules.</li>
+</ul>
+<p>Knowing these helps new businesses find banks that fit their goals and meet all document needs when opening a corporate bank account Canada-wide.</p>
+<h3>Managing Sub-Accounts, Bill Payments, and Money Transfers</h3>
+<p>Good banking tools can help control cash flow better:</p>
+<ul>
+<li>Sub-accounts split money by projects or teams without extra main accounts.</li>
+<li>Automatic bill payments stop mistakes on regular bills like rent or utilities.</li>
+<li>Electronic transfers pay vendors fast within provinces like Ontario and leave a clear record for your books and the CRA.</li>
+</ul>
+<p>Banks use identity checks from PCMLTFA rules before letting you use these services. Having the right documents ready speeds up this step after you incorporate.</p>
+<p>Open Corporation for $35 is a part of Gondaliya CPA. They help new Canadian businesses get all documents ready to open their first corporate bank account in Toronto and beyond. They follow federal and provincial rules for 2026 including FINTRAC beneficial ownership rules. Always check exact document lists with your chosen bank before booking appointments.</p>
+<h2>Managing Your Business Bank Account Effectively</h2>
+<div class="gcpa-numhead">
+<div class="num" style="background:#0f2a4a !important;color:#ffffff !important;">5</div>
+<h4 id="toc-managing" style="border:none;padding:0;margin:0;">Managing the Account</h4>
+<span class="gcpa-pill red">Managing</span>
+</div>
+<p>Managing your business bank account well is key to keeping your money organized. It helps you follow business bank account requirements Canada banks ask for. When you set up your account, use a business account checklist. This way, you won’t miss any important documents or steps. Keeping good records makes it easier to see where your money comes and goes. It also keeps you on the right side of rules and regulations.</p>
+<h3>Tips for Organizing Finances Using a Business Account</h3>
+<p>Opening a corporate bank account Canada means you’ll need certain documents ready. Here’s what usually helps once your account is open:</p>
+<ul>
+<li>Keep personal and business money separate at all times.</li>
+<li>Use different accounts for payroll, bills, and savings.</li>
+<li><a href="https://opencorporationfor35.ca/services/">Update your bookkeeping regularly</a> with info from your business bank account.</li>
+<li>Check your monthly statements against your records to spot mistakes.</li>
+<li>Save digital copies of receipts linked to each payment or deposit.</li>
+</ul>
+<p>Following these tips fits with what most banks expect after you open an account.</p>
+<h3>How to Use Overdraft Protection and Access Loans or Credit</h3>
+<p>Many Canadian banks offer overdraft protection with business accounts. This lets you borrow a bit extra if cash is tight. But watch out—using overdrafts can cost fees or interest.</p>
+<p><strong>Here’s what to know:</strong></p>
+<ul>
+<li>Your overdraft limit depends on the bank and your credit history.</li>
+<li>Overdrafts help avoid bounced payments but don’t rely on them too much.</li>
+</ul>
+<p>If you want loans or credit lines, banks will ask for proof that your business is solid. This means showing <a href="https://opencorporationfor35.ca/corporate-compliance-subscription/">updated financial statements</a> and giving them your CRA business number. These show you run things by the book.</p>
+<p>Check all terms carefully before using overdraft or credit options. Banks follow Canadian rules like PCMLTFA when setting their policies.</p>
+<h3>Making Payments Easy with Interac e-Transfers® and EFTs</h3>
+<p>Interac e-Transfers® and EFTs make paying bills and people easier for your new corporation’s bank account. They work fast and are safe — Canadian banks love these methods because every payment leaves an electronic record.</p>
+<p><strong>Some quick tips:</strong></p>
+<p>Set who can approve payments in online banking.</p>
+<p>Make sure all documents needed to open a corporate bank account are in before turning on these payment features.</p>
+<p>Using Interac e-Transfers® cuts down on cheque risks. EFTs help when paying many employees at once, like payroll. Both meet what business banking requirements Canada expects after incorporation.</p>
+<div class="gcpa-callout red">
+<span class="co-tag">Risk Warning</span>
+<p><strong>Risk Warning:</strong> Please do not pay personal expenses from the corporate account. Unless they are recorded as salary, dividends or a shareholder loan that is repaid on time, the CRA can tax them as a shareholder benefit.</p>
+</div>
+<h3>Planning for Tax Time Using Your Business Bank Account</h3>
+<figure style="margin:22px 0;"><img src="https://opencorporationfor35.ca/wp-content/uploads/2026/11/bank-account-subscription-vs-loan.png" alt="Share subscription versus shareholder loan for the first deposit into a corporate bank account: a subscription pays for shares and shows as share capital, returned only through a formal capital reduction; a shareholder loan is money lent to the corporation, shown as a loan payable and repaid tax-free, with no change to ownership." style="width:100%;border-radius:12px;border:1px solid #d8e0e8;" /><figcaption style="font-size:13px;color:#5a6b7b;text-align:center;padding:6px;">Most owners fund small start-up costs as a documented shareholder loan.</figcaption></figure>
+<p>Your CRA business number connects directly to how you file taxes for your corporation. Using this number right makes tax time easier by linking banking info with government reports.</p>
+<p><strong>To get ready:</strong></p>
+<ul>
+<li>Keep detailed lists of income and expenses separate.</li>
+<li>Don’t mix shareholder loan payments with normal operations — ask a CPA if unsure.</li>
+<li>Keep proof of your registered office address along with CRA-issued BN documents from when you incorporated.</li>
+</ul>
+<p>Doing this helps avoid delays when <a href="https://opencorporationfor35.ca/guides/first-t2-return/">filing T2 returns</a> caused by missing info about your corporation’s finances.</p>
+<p>Open Corporation for $35 is part of Gondaliya CPA Professional Corporation. They offer affordable CPA-backed incorporation help for new corporations that want expert advice managing their first corporate accounts under Canadian law. Always check document lists with the bank before meetings since each institution decides final approval following PCMLTFA rules.</p>
+<h2>Contact and Support Resources for Business Banking Customers</h2>
+<div class="gcpa-numhead">
+<div class="num" style="background:#0f2a4a !important;color:#ffffff !important;">6</div>
+<h4 id="toc-support" style="border:none;padding:0;margin:0;">Fees, Rules and Support</h4>
+<span class="gcpa-pill blue">Support</span>
+</div>
+<p>Opening a corporate bank account Canada means you need to get your paperwork right. The documents needed to open a corporate bank account can be confusing at first. Lots of new business owners want clear help while sorting this out.</p>
+<p>Check the business bank account requirements Canada with your bank. Each bank has its own rules, based on PCMLTFA and FINTRAC laws. If you have questions about your document checklist or incorporation steps, call Open Corporation for $35 at 647-212-9559 or email info@gondaliyacpa.ca. They offer free CPA advice to help you set things up.</p>
+<p>You can also visit government sites like Corporations Canada, <a href="https://opencorporationfor35.ca/how-to-incorporate-in-ontario/">Ontario Business Registry</a>, and CRA’s business number pages. These sites have official forms and guides that match legal rules for opening a corporate bank account in Canada.</p>
+<h3>Common Business Bank Account Fees and How to Avoid Them</h3>
+<p>Banks charge fees for business accounts in Canada. These fees vary but usually include monthly charges, transaction costs, wire transfer fees, and extras like merchant services or overdraft protection.</p>
+<p><strong>To avoid paying too much:</strong></p>
+<ul>
+<li>Check fee schedules before picking a bank.</li>
+<li>Keep minimum balances if needed.</li>
+<li>Cut down on unnecessary transactions.</li>
+<li>Use service bundles when possible.</li>
+</ul>
+<p>Every bank sets its own fees. So, ask them directly before signing up. Knowing these fees helps you plan your cash flow better after you incorporate.</p>
+<div class="gcpa-banner" style="background:linear-gradient(135deg,#0d3b66 0%,#0c7a7a 100%) !important;">
+<div class="bt">Bank appointment coming up? Please book a free consultation and we will check your documents and registers before you go.</div>
+<div class="bb"><a class="solid" href="https://gondaliyacpa.ca/consultation/">Book Free Consultation</a><a href="mailto:info@gondaliyacpa.ca">info@gondaliyacpa.ca</a><a href="tel:+16472129559">647-212-9559</a></div>
+</div>
+<h3>Legal Disclaimers and Terms Related to Corporate Bank Accounts</h3>
+<p>You must have the right documents needed to open a corporate bank account. Banks follow federal rules like the Proceeds of Crime (Money Laundering) and Terrorist Financing Act (PCMLTFA). FINTRAC enforces these rules. Banks check IDs of signing officers, ask for director info, and need ownership details if someone owns 25% or more, per CBCA/OBCA ISC registers. They also want proof of the registered office address.</p>
+<p>Good practice for business bank accounts in Canada says personal money shouldn’t mix with corporate funds. This keeps tax records clean under the Income Tax Act (ITA). <a href="https://gondaliyacpa.ca/consultation/">A CPA should review loans vs subscriptions</a> by shareholders. Some banking rules might need a lawyer’s help too.</p>
+<p>Open Corporation for $35 tries to give good info but can’t promise approval or timing. Each bank makes its own choice based on compliance needs. Always check documentation lists with your chosen bank before your meeting.</p>
+<h3>Encouragement to Apply and Start Your Business Banking Journey with Open Corporation for $35</h3>
+<p>After you incorporate in Toronto or anywhere in Canada, opening a business bank account is a key step. Open Corporation for $35 offers <a href="https://opencorporationfor35.ca/incorporation-form/">simple online incorporation</a> plus advice on what comes next—like making your business account checklist right.</p>
+<p>Their flat fee includes same-day filing support and free CPA calls. They focus on helping new corporations avoid common mistakes about shareholder info or ownership rules.</p>
+<p>Call 647‑212‑9559 or email info@gondaliyacpa.ca from Monday to Sunday between 9:00 AM and 8:30 PM. Get your documents ready using their checklists so they can help speed up opening your corporate bank account under current Canadian laws.</p>
+<p>Sharad Gondaliya, CPA (Canada &amp; USA), has over 10 years helping Canadian business owners get started.</p>
+<p>Open Corporation for $35 is part of Gondaliya CPA Professional Corporation — a registered CPA firm in Toronto, Ontario.</p>
+<h2>FAQs on Corporate Bank Account Setup and Compliance</h2>
+<div class="gcpa-numhead">
+<div class="num" style="background:#0f2a4a !important;color:#ffffff !important;">7</div>
+<h4 id="toc-faq" style="border:none;padding:0;margin:0;">Frequently Asked Questions</h4>
+<span class="gcpa-pill teal">FAQ</span>
+</div>
+<div class="gcpa-faq" id="faq-main">
+<details><summary>What is a corporate profile report and why do banks require it?<span class="pl">+</span></summary>
+<div class="ans"><p>A corporate profile report shows your company’s official details. Banks use it to verify incorporation status and director information.</p></div></details>
+<details><summary>What are by-laws or banking resolutions in relation to bank accounts?<span class="pl">+</span></summary>
+<div class="ans"><p>By-laws or banking resolutions authorize who can open and operate the bank account. Banks require these documents to confirm signers’ authority.</p></div></details>
+<details><summary>How important are shareholder registers for corporate banking?<span class="pl">+</span></summary>
+<div class="ans"><p>Shareholder registers list owners and share distribution. Banks review them to identify beneficial owners and comply with FINTRAC rules.</p></div></details>
+<details><summary>What is an ISC register and who must be included?<span class="pl">+</span></summary>
+<div class="ans"><p>An ISC (Individuals with Significant Control) register tracks people owning 25% or more shares or voting rights. It is required under corporate law, the CBCA federally and the OBCA in Ontario, and banks often ask to see it.</p></div></details>
+<details><summary>Can non-resident directors open a corporate bank account in Canada?<span class="pl">+</span></summary>
+<div class="ans"><p>Yes, but banks may ask for notarized ID or apostilled foreign documents to verify identity under FINTRAC guidelines.</p></div></details>
+<details><summary>What role does a share subscription agreement play in banking?<span class="pl">+</span></summary>
+<div class="ans"><p>This agreement confirms how shares were issued and paid for. Banks may request it to verify ownership legitimacy.</p></div></details>
+<details><summary>Why do banks ask for a shareholder loan agreement?<span class="pl">+</span></summary>
+<div class="ans"><p>It clarifies loans from shareholders to the corporation. Banks use this to assess financial obligations and compliance with tax rules.</p></div></details>
+<details><summary>What is a minute book, and do banks require it?<span class="pl">+</span></summary>
+<div class="ans"><p>A minute book stores all corporate records, including resolutions. Some banks request it as proof of proper governance.</p></div></details>
+<details><summary>How does banking resolution drafting help in account setup?<span class="pl">+</span></summary>
+<div class="ans"><p>Properly drafted resolutions ensure authorized persons can transact. It avoids delays during bank approval processes.</p></div></details>
+<details><summary>What is post-incorporation setup CPA support?<span class="pl">+</span></summary>
+<div class="ans"><p>CPA support helps organize documents, register accounts, and advise on compliance after incorporation for smooth banking relations.</p></div></details>
+<details><summary>How does legal drafting of resolutions affect banking approvals?<span class="pl">+</span></summary>
+<div class="ans"><p>Well-drafted resolutions meet bank policies for authorization. Poorly prepared documents cause rejections or delays.</p></div></details>
+<details><summary>What are business account funding entries?<span class="pl">+</span></summary>
+<div class="ans"><p>These are initial deposits made when opening the account. Banks record them to confirm active business operations.</p></div></details>
+</div>
+<div class="gcpa-callout teal">
+<span class="co-tag">Worth Knowing</span>
+<p>Canada joined the Apostille Convention on January 11, 2024, so many foreign documents for non-resident directors can now be apostilled instead of going through consular legalization. Please ask your bank which format it accepts.</p>
+</div>
+<h2>Additional Key Points on Corporate Banking Compliance</h2>
+<div class="gcpa-numhead">
+<div class="num" style="background:#0f2a4a !important;color:#ffffff !important;">8</div>
+<h4 id="toc-keypoints" style="border:none;padding:0;margin:0;">Key Points and Delays</h4>
+<span class="gcpa-pill gold">Summary</span>
+</div>
+<ul>
+<li><strong>Corporate Document Pack:</strong> A complete set of legal papers needed by banks including incorporation certificates, registers, and agreements.</li>
+<li><strong>Bank Appointment Preparation:</strong> Gather all necessary documents ahead of meetings to avoid last-minute issues during bank interviews or video calls.</li>
+<li><strong>Bookkeeping Connection:</strong> Linking your bank account with digital bookkeeping software streamlines accounting and audit trails.</li>
+<li><strong>Financial Institution Policies:</strong> Each bank has unique rules; always confirm their specific document lists before applying.</li>
+<li><strong>PCMLTFA Compliance:</strong> Ensure all ownership and identity data meet anti-money laundering laws enforced by FINTRAC.</li>
+<li><strong>FINTRAC Identity Verification Methods:</strong> Can include notarized IDs, video calls, or in-person verification for signing officers.</li>
+<li><strong>Operating Name Registration:</strong> Register any trade names used by the corporation; banks often require proof during account setup.</li>
+<li><strong><a href="https://opencorporationfor35.ca/corporate-changes-amendments/">Registered Office Proof Matching Registry</a>:</strong> Provide address documentation that exactly matches public corporate records to prevent delays.</li>
+</ul>
+<h3>Beneficial Ownership and Reporting Essentials</h3>
+<ul>
+<li><strong>Beneficial Ownership Threshold Detailed Reporting:</strong> Disclose all individuals owning 25%+ shares per federal rules for transparency.</li>
+<li><strong><a href="https://opencorporationfor35.ca/guides/holding-company-canada/">Layered Holding Company Ownership Tracing</a>:</strong> Identify ultimate beneficial owners if multiple companies own shares in your corporation.</li>
+<li><strong>Signing Officers Identity Verification:</strong> Banks verify IDs of all authorized signers under FINTRAC policies before account activation.</li>
+</ul>
+<div class="gcpa-callout red">
+<span class="co-tag">Risk Warning</span>
+<p><strong>Risk Warning:</strong> Please keep your ISC register and corporate profile current. An outdated register, or a former director still on file, is a common reason banks pause onboarding and ask for full re-verification.</p>
+</div>
+<h3>Tips on Avoiding Common Corporate Bank Account Delays</h3>
+<ul>
+<li>Double-check all document names match exactly across forms and registries.</li>
+<li>Update shareholders’ and directors’ records regularly.</li>
+<li>Provide notarized ID for non-resident beneficial owners or directors.</li>
+<li><a href="https://opencorporationfor35.ca/guides/minute-book-requirements/">Prepare a clear minute book</a> with recent board resolutions.</li>
+<li>Respond promptly to bank requests during interviews or calls.</li>
+<li>Keep your corporate profile report current with government registries.</li>
+</ul>
+<h3>Comparing Professional Support Options</h3>
+<figure class="wp-block-table">
+<table>
+<thead><tr><th>Service Type</th><th>Benefits</th><th>When to Choose</th></tr></thead>
+<tbody>
+<tr><td>CPA Consultation</td><td>Tax compliance, bookkeeping integration</td><td>For ongoing financial advice</td></tr>
+<tr><td>Lawyer Legal Drafting</td><td>Resolutions, agreements, complex filings</td><td>For intricate governance needs</td></tr>
+<tr><td>DIY Setup</td><td>Cost-effective, faster</td><td>For simple incorporations</td></tr>
+</tbody>
+</table>
+</figure>
+<p><a href="https://opencorporationfor35.ca/pricing/">Open Corporation for $35 offers expert CPA-backed support</a> for document preparation, banking resolution drafting, and timely corporate bank account approvals tailored for Canadian startups under current PCMLTFA regulations.</p>
+<div class="gcpa-pillhead"><h4 style="border:none;padding:0;margin:0;">Quick Answers: Key Numbers at a Glance</h4><span class="gcpa-pill gold">At a Glance</span></div>
+<ul>
+<li><strong>Beneficial owner threshold:</strong> 25% or more of shares or votes</li>
+<li><strong>ISC register:</strong> Required under the CBCA and OBCA</li>
+<li><strong>Photo ID:</strong> Every signing officer and every 25% owner</li>
+<li><strong>Business number:</strong> Issued with Ontario and federal incorporation</li>
+<li><strong>Apostille:</strong> Accepted for many foreign documents since January 11, 2024</li>
+<li><strong>Corporate profile report:</strong> From the Ontario Business Registry or Corporations Canada</li>
+<li><strong>Our fee:</strong> $35 including HST, plus government fees</li>
+</ul>
+<div class="gcpa-pillhead"><h4 style="border:none;padding:0;margin:0;">Who This Is For / Not For</h4><span class="gcpa-pill teal">Fit Check</span></div>
+<ul>
+<li><strong>For:</strong> Owners of a newly incorporated Ontario or federal corporation who want to walk into the bank once with everything in hand.</li>
+<li><strong>Not For:</strong> Businesses that need regulated trust accounts, such as law firms, which follow extra rules from their regulator.</li>
+</ul>
+<div class="gcpa-callout green">
+<span class="co-tag">Verdict</span>
+<p>Most account delays come from paperwork, not the bank. Bring the certificate, articles, corporate profile, a signed banking resolution, current registers including the ISC register, and ID for every signer and 25% owner, with names matching the registry exactly. Then fund the account with a documented share subscription or shareholder loan.</p>
+</div>
+<div class="gcpa-callout blue">
+<span class="co-tag">2026 Update</span>
+<p><strong>2026 Update &mdash; what is current:</strong> This article reflects rules current to November 2026. Banks must identify anyone who owns or controls 25% or more of a corporation under FINTRAC's beneficial ownership rules. Federal and Ontario corporations must keep an ISC register, and federal corporations also file ISC information with Corporations Canada. Canada has accepted apostilles since January 11, 2024. Ontario and federal incorporations still receive a business number automatically.</p>
+</div>
+<h5 style="color:#15355c;margin:24px 0 8px;">Corporate Bank Account Readiness Check</h5>
+<p>This quick self-check shows which documents you still need before your bank appointment. Please answer the six questions below.</p>
+
+<div id="ocf-chk">
+  <style>
+    #ocf-chk{--n:#0f2a4a;--n2:#15355c;--bl:#1c6dd0;--tl:#0c8f8f;--gd:#c9991f;--rd:#c0392b;--ink:#1d2733;--mut:#5a6b7b;--ln:#d8e0e8;--alt:#f5f8fb;
+      border:1px solid var(--ln);border-radius:14px;overflow:hidden;background:#fff;box-shadow:0 10px 30px rgba(15,42,74,.08);font-family:inherit;color:var(--ink);margin:24px 0;}
+    #ocf-chk *{box-sizing:border-box;}
+    #ocf-chk .s-head{background:linear-gradient(135deg,var(--n),var(--n2));color:#fff;padding:18px 22px;}
+    #ocf-chk .s-head h5{margin:0;font-size:19px;font-weight:700;color:#fff!important;}
+    #ocf-chk .s-head p{margin:4px 0 0;font-size:13px;color:#cfe2f8!important;}
+    #ocf-chk .s-body{padding:20px 22px;}
+    #ocf-chk .s-q{padding:13px 0;border-bottom:1px solid var(--ln);display:flex;justify-content:space-between;align-items:center;gap:14px;}
+    #ocf-chk .s-q:first-child{padding-top:2px;}
+    #ocf-chk .s-q span.s-lab{font-weight:600;font-size:14.5px;color:var(--n);}
+    #ocf-chk .s-seg{display:inline-flex;border:1px solid var(--ln);border-radius:10px;overflow:hidden;flex:0 0 auto;}
+    #ocf-chk .s-seg label{cursor:pointer;padding:8px 18px;font-size:14px;font-weight:600;color:var(--mut);background:var(--alt);transition:.15s;user-select:none;}
+    #ocf-chk .s-seg label+label{border-left:1px solid var(--ln);}
+    #ocf-chk .s-seg input{position:absolute;opacity:0;width:0;height:0;}
+    #ocf-chk .s-seg input:checked+label{background:var(--n);color:#fff!important;}
+    #ocf-chk .s-go{margin-top:18px;width:100%;border:none;border-radius:11px;padding:14px 18px;font-size:15.5px;font-weight:700;color:#fff!important;cursor:pointer;background:linear-gradient(135deg,var(--bl),var(--tl));font-family:inherit;}
+    #ocf-chk .s-go:hover{filter:brightness(1.05);}
+    #ocf-chk .s-msg{display:none;margin-top:12px;font-size:13.5px;color:var(--rd);font-weight:600;}
+    #ocf-chk .s-out{display:none;margin-top:18px;border-radius:12px;border:1px solid var(--ln);overflow:hidden;}
+    #ocf-chk .s-out .s-status{padding:14px 18px;font-weight:700;font-size:16px;color:#fff!important;background:linear-gradient(135deg,var(--n),var(--n2));}
+    #ocf-chk .s-out .s-inner{padding:16px 18px;background:var(--alt);}
+    #ocf-chk .s-row{font-size:14.5px;margin:0 0 10px;line-height:1.5;}
+    #ocf-chk .s-count{display:inline-block;background:#fff;border:1px solid var(--ln);border-radius:9px;padding:8px 14px;font-weight:700;color:var(--n);font-size:14.5px;}
+    #ocf-chk .s-list{margin:8px 0 0;padding-left:18px;}
+    #ocf-chk .s-list li{font-size:13.5px;color:var(--ink);margin:4px 0;border:none;padding:0 0 0 4px;}
+    #ocf-chk .s-list li::before{display:none;}
+    #ocf-chk .s-cta{display:inline-block;margin-top:14px;background:var(--gd);color:#fff!important;font-weight:700;font-size:14.5px;text-decoration:none;padding:11px 20px;border-radius:10px;}
+    #ocf-chk .s-note{font-size:12.5px;color:var(--mut);margin:12px 0 0;}
+    @media(max-width:560px){#ocf-chk .s-q{flex-direction:column;align-items:flex-start;gap:8px;}}
+  </style>
+  <div class="s-head" style="background:linear-gradient(135deg,#0f2a4a,#15355c) !important;">
+    <h5>Corporate Bank Account Readiness Check</h5>
+    <p>Six quick questions. No tax calculation, no figure quoted.</p>
+  </div>
+  <div class="s-body">
+    <div class="s-q" data-flag="0" data-msg="Your certificate, articles and a current corporate profile report"><span class="s-lab">1. Do you have your certificate, articles and corporate profile?</span>
+      <span class="s-seg"><input type="radio" id="c-a-y" name="c-a" value="1"><label for="c-a-y">Yes</label><input type="radio" id="c-a-n" name="c-a" value="0"><label for="c-a-n">No</label></span></div>
+    <div class="s-q" data-flag="0" data-msg="A directors' banking resolution naming who can sign"><span class="s-lab">2. Is a banking resolution signed?</span>
+      <span class="s-seg"><input type="radio" id="c-b-y" name="c-b" value="1"><label for="c-b-y">Yes</label><input type="radio" id="c-b-n" name="c-b" value="0"><label for="c-b-n">No</label></span></div>
+    <div class="s-q" data-flag="0" data-msg="Up-to-date directors, shareholders and ISC registers"><span class="s-lab">3. Are your registers, including the ISC register, up to date?</span>
+      <span class="s-seg"><input type="radio" id="c-c-y" name="c-c" value="1"><label for="c-c-y">Yes</label><input type="radio" id="c-c-n" name="c-c" value="0"><label for="c-c-n">No</label></span></div>
+    <div class="s-q" data-flag="1" data-msg="Notarized or apostilled ID for any director or owner who lives outside Canada"><span class="s-lab">4. Does any director or 25% owner live outside Canada?</span>
+      <span class="s-seg"><input type="radio" id="c-d-y" name="c-d" value="1"><label for="c-d-y">Yes</label><input type="radio" id="c-d-n" name="c-d" value="0"><label for="c-d-n">No</label></span></div>
+    <div class="s-q" data-flag="1" data-msg="Ownership tracing through each holding company to the people at the top"><span class="s-lab">5. Is any shareholder another corporation?</span>
+      <span class="s-seg"><input type="radio" id="c-e-y" name="c-e" value="1"><label for="c-e-y">Yes</label><input type="radio" id="c-e-n" name="c-e" value="0"><label for="c-e-n">No</label></span></div>
+    <div class="s-q" data-flag="0" data-msg="A documented share subscription or shareholder loan for the first deposit"><span class="s-lab">6. Do you know how you will fund the account?</span>
+      <span class="s-seg"><input type="radio" id="c-f-y" name="c-f" value="1"><label for="c-f-y">Yes</label><input type="radio" id="c-f-n" name="c-f" value="0"><label for="c-f-n">No</label></span></div>
+    
+<button type="button" class="s-go" id="c-go">Check my readiness</button>
+    <div class="s-msg" id="c-msg">Please answer all six questions to continue.</div>
+    <div class="s-out" id="c-out">
+      <div class="s-status" id="c-status" style="background:linear-gradient(135deg,#0f2a4a,#15355c) !important;">Your profile</div>
+      <div class="s-inner">
+        <p class="s-row"><b>Points to work through:</b> <span class="s-count" id="c-count"></span></p>
+        <div id="c-listwrap" style="display:none;"><p class="s-row" style="margin-bottom:4px;"><b>Worth reviewing with us:</b></p><ul class="s-list" id="c-list"></ul></div>
+        <p class="s-row" id="c-clean" style="display:none;"><b>Nothing flagged.</b> The usual complications do not appear to apply to you.</p>
+        <a class="s-cta" href="https://gondaliyacpa.ca/consultation/">Book a free consultation</a>
+        <p class="s-note">This is a general prompt, not tax advice, and it does not calculate your tax. Your outcome depends on your full facts, so please book a free consultation.</p>
+      </div>
+    </div>
+  </div>
+  <script>
+  (function(){
+    var root=document.getElementById('ocf-chk');
+    root.querySelector('#c-go').addEventListener('click',function(){
+      var qs=root.querySelectorAll('.s-q'), items=[], missing=false;
+      qs.forEach(function(q){
+        var x=q.querySelector('input:checked');
+        if(!x){missing=true;return;}
+        if(x.value===q.getAttribute('data-flag')) items.push(q.getAttribute('data-msg'));
+      });
+      var msg=root.querySelector('#c-msg'), out=root.querySelector('#c-out');
+      if(missing){msg.style.display='block';out.style.display='none';return;}
+      msg.style.display='none';
+      var list=root.querySelector('#c-list'), lw=root.querySelector('#c-listwrap'), clean=root.querySelector('#c-clean');
+      root.querySelector('#c-count').textContent=items.length+' to work through';
+      list.innerHTML='';
+      if(items.length){lw.style.display='block';clean.style.display='none';items.forEach(function(t){var li=document.createElement('li');li.textContent=t;list.appendChild(li);});}
+      else{lw.style.display='none';clean.style.display='block';}
+      root.querySelector('#c-status').textContent = items.length>=3 ? 'Several points need attention' : (items.length>=1 ? 'A few points to work through' : 'A straightforward case');
+      out.style.display='block';
+    });
+  })();
+  </script>
+</div>
+<div class="gcpa-cta" style="background:linear-gradient(135deg,#0f2a4a 0%,#1c4a78 100%) !important;">
+<h4>Get bank-ready with a CPA</h4>
+<p>Incorporation from $35 including HST plus government fees, with a free CPA consultation on your banking resolution, registers and how to fund the account. Please book a free consultation.</p>
+<div class="gcpa-trust"><span>1300+ 5-star Google reviews</span><span>Xero Partner Award Winner 2026</span><span>30-Day Money-Back Guarantee</span><span>60-Day Fee Matching</span></div>
+<div class="gcpa-btnrow"><a class="solid" href="https://gondaliyacpa.ca/consultation/">Book Free Consultation</a><a href="https://opencorporationfor35.ca/address-service-100/">Address Service</a><a href="https://opencorporationfor35.ca/contact-us/">Contact Us</a></div>
+</div>
+<p>Want a checklist to work from? Please <a href="https://opencorporationfor35.ca/wp-content/uploads/2026/11/OpenCorp35-Corporate-Bank-Account-Checklist.pdf">download our free corporate bank account checklist</a> before your consultation.</p>
+<figure style="margin:26px 0;"><img src="https://opencorporationfor35.ca/wp-content/uploads/2026/11/why-choose-us-bank-account.png" alt="Why Canadian business owners choose Open Corporation For $35 for corporate bank accounts" style="width:100%;border-radius:12px;border:1px solid #d8e0e8;" /><figcaption style="font-size:13px;color:#5a6b7b;text-align:center;padding:6px;">Why business owners choose us.</figcaption></figure>
+<h3 class="gcpa-closing" id="toc-closing">What to Send Us</h3>
+<p>Send us your certificate and articles, the names of everyone who will sign on the account, each shareholder's percentage, and the bank you plan to use. That is enough for us to prepare your banking resolution and registers, check your ISC register, and tell you how to fund the account. Please start on our <a href="https://opencorporationfor35.ca/incorporation-form/">incorporation form</a> or see every fee on our <a href="https://opencorporationfor35.ca/pricing/">pricing page</a>.</p>
+<div class="gcpa-author">
+<div class="ava" style="background:linear-gradient(135deg,#0f2a4a,#0c8f8f) !important;color:#ffffff !important;">SG</div>
+<div class="info">
+<h5>Sharad Gondaliya, CPA (Canada &amp; USA) — Founder &amp; Managing Director, Gondaliya CPA Professional Corporation</h5>
+<div class="role">Reviewed and fact-checked by Sharad Gondaliya, CPA (Canada &amp; USA)</div>
+<p style="font-size:14.5px;color:#15355c !important;font-weight:700;margin:0 0 8px;">Open Corporation for $35 is a department of Gondaliya CPA.</p>
+<p>We incorporate and support companies in all 13 provinces and territories, handling CRA registrations, corporate tax filing, bookkeeping, GST/HST, payroll and audit support. Verify our firm on the <a href="https://www.cpaontario.ca/protecting-the-public/directories/firm/gondaliya-5sqvmj">CPA Ontario public firm directory</a>, firm registration 61330051.</p>
+<p style="font-size:13.5px;color:#15355c !important;font-weight:700;margin-top:10px;">CPA Ontario | CPA USA (Washington &amp; Montana) | Xero Partner Award Winner 2026 | 1300+ 5-star Google reviews</p>
+</div>
+</div>
+<p style="font-size:13px;color:#5a6b7b;border-top:1px solid #e3e9f0;padding-top:16px;margin-top:8px;"><strong>Published:</strong> November 23, 2026 &nbsp;·&nbsp; <strong>Last updated:</strong> November 23, 2026</p>
+<p style="font-size:13px;color:#5a6b7b;"><strong>Editorial policy:</strong> Our content is prepared by our team and reviewed by Sharad Gondaliya, CPA, and we update it as bank, FINTRAC and registry requirements change.</p>
+<p style="font-size:13px;color:#5a6b7b;"><strong>Disclaimer:</strong> This article is educational information only and is not tax, legal, or financial advice. Gondaliya CPA Professional Corporation is a firm of Chartered Professional Accountants, not a law firm. Please consult a CPA before acting.</p>
+<p style="font-size:14.5px;color:#15355c;font-weight:700;border-top:2px solid #e3e9f0;padding-top:16px;margin-top:20px;">Open Corporation for $35 is a department of Gondaliya CPA.</p>
+<p style="font-size:13px;color:#5a6b7b;">Operated by WealthBamboo Inc. Parent firm Gondaliya CPA Professional Corporation, CPA Ontario firm registration 61330051. Xero Partner Award Winner 2026. 1300+ five-star Google reviews. 30-day money-back guarantee and 60-day fee-matching policy. Phone 647-212-9559, email info@gondaliyacpa.ca, open 9:00 AM to 8:30 PM Monday to Sunday. Payment by Interac e-Transfer to info@gondaliyacpa.ca only, security question "Not Applicable" as auto-deposit is enabled. Card is also accepted.</p>
+</div>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@graph": [{"@type": "BlogPosting", "@id": "https://opencorporationfor35.ca/business-bank-account-opening-checklist-new-corporation/#article", "headline": "Business Bank Account Opening Checklist for a New Corporation", "description": "Business bank account opening checklist for a new Canadian corporation: certificate and articles, corporate profile, banking resolution, registers and ISC, ID for signers and 25% owners, and how to fund the account.", "datePublished": "2026-11-23", "dateModified": "2026-11-23", "author": {"@type": "Person", "name": "Sharad Gondaliya, CPA"}, "image": "https://opencorporationfor35.ca/wp-content/uploads/2026/11/Corporate-Bank-Account-Checklist-Featured.jpg", "publisher": {"@type": "Organization", "name": "Open Corporation for $35", "description": "Open Corporation for $35 is a department of Gondaliya CPA.", "parentOrganization": {"@type": "AccountingService", "name": "Gondaliya CPA Professional Corporation", "identifier": "CPA Ontario Firm Registration 61330051"}}, "mainEntityOfPage": "https://opencorporationfor35.ca/business-bank-account-opening-checklist-new-corporation/"}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is a corporate profile report and why do banks require it?", "acceptedAnswer": {"@type": "Answer", "text": "A corporate profile report shows your company’s official details. Banks use it to verify incorporation status and director information."}}, {"@type": "Question", "name": "What are by-laws or banking resolutions in relation to bank accounts?", "acceptedAnswer": {"@type": "Answer", "text": "By-laws or banking resolutions authorize who can open and operate the bank account. Banks require these documents to confirm signers’ authority."}}, {"@type": "Question", "name": "How important are shareholder registers for corporate banking?", "acceptedAnswer": {"@type": "Answer", "text": "Shareholder registers list owners and share distribution. Banks review them to identify beneficial owners and comply with FINTRAC rules."}}, {"@type": "Question", "name": "What is an ISC register and who must be included?", "acceptedAnswer": {"@type": "Answer", "text": "An ISC (Individuals with Significant Control) register tracks people owning 25% or more shares or voting rights. It is required under corporate law, the CBCA federally and the OBCA in Ontario, and banks often ask to see it."}}, {"@type": "Question", "name": "Can non-resident directors open a corporate bank account in Canada?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, but banks may ask for notarized ID or apostilled foreign documents to verify identity under FINTRAC guidelines."}}, {"@type": "Question", "name": "What role does a share subscription agreement play in banking?", "acceptedAnswer": {"@type": "Answer", "text": "This agreement confirms how shares were issued and paid for. Banks may request it to verify ownership legitimacy."}}, {"@type": "Question", "name": "Why do banks ask for a shareholder loan agreement?", "acceptedAnswer": {"@type": "Answer", "text": "It clarifies loans from shareholders to the corporation. Banks use this to assess financial obligations and compliance with tax rules."}}, {"@type": "Question", "name": "What is a minute book, and do banks require it?", "acceptedAnswer": {"@type": "Answer", "text": "A minute book stores all corporate records, including resolutions. Some banks request it as proof of proper governance."}}, {"@type": "Question", "name": "How does banking resolution drafting help in account setup?", "acceptedAnswer": {"@type": "Answer", "text": "Properly drafted resolutions ensure authorized persons can transact. It avoids delays during bank approval processes."}}, {"@type": "Question", "name": "What is post-incorporation setup CPA support?", "acceptedAnswer": {"@type": "Answer", "text": "CPA support helps organize documents, register accounts, and advise on compliance after incorporation for smooth banking relations."}}, {"@type": "Question", "name": "How does legal drafting of resolutions affect banking approvals?", "acceptedAnswer": {"@type": "Answer", "text": "Well-drafted resolutions meet bank policies for authorization. Poorly prepared documents cause rejections or delays."}}, {"@type": "Question", "name": "What are business account funding entries?", "acceptedAnswer": {"@type": "Answer", "text": "These are initial deposits made when opening the account. Banks record them to confirm active business operations."}}]}]}
+</script>

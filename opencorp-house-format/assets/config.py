@@ -355,7 +355,7 @@ POSTS = [
    ["Capital purchases", ["Asset available for use by December 31", "Keep invoices and dates", "Confirm the current CCA incentive"]],
    ["Tax payments", ["Last instalment December 31", "Balance of tax March 31, 2027", "Interest 7% on late amounts in Q1 2026"]],
    ["After year-end", ["T2 return by June 30, 2027", "Ontario annual return, no fee", "Shareholder loan repaid by December 31, 2027"]]]},
- {"dir": "business-bank-account-checklist", "id": None, "short": "bank-account",
+ {"dir": "business-bank-account-checklist", "id": 11601, "short": "bank-account",
   "topic": "corporate bank accounts", "pdf_title": "Corporate Bank Account",
   "why": ("Bank-ready documents", "Resolutions, registers and ISC filed so the bank meeting goes once."),
   "info": [
