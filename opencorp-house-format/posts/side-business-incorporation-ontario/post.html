@@ -1,0 +1,811 @@
+
+<style>.gcpa-post{--navy:#0f2a4a;--navy-2:#15355c;--blue:#1c6dd0;--blue-soft:#e8f1fc;--teal:#0c8f8f;--teal-soft:#e3f4f4;--gold:#c9991f;--gold-soft:#fbf3dc;--green:#1f8a4c;--green-soft:#e6f5ec;--red:#c0392b;--red-soft:#fbeae8;--ink:#1d2733;--muted:#5a6b7b;--line:#d8e0e8;--bg:#ffffff;--bg-alt:#f5f8fb;--radius:14px;--shadow:0 6px 22px rgba(15,42,74,.08);--shadow-lg:0 14px 40px rgba(15,42,74,.14);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);line-height:1.7;font-size:17px;max-width:1080px;margin:0 auto;padding:0 18px 60px;} .gcpa-post *{box-sizing:border-box;} .gcpa-hero{background:linear-gradient(135deg,var(--navy) 0%,var(--navy-2) 60%,#1c4a78 100%);color:#fff;border-radius:20px;padding:46px 40px 42px;margin:26px 0 34px;position:relative;overflow:hidden;} .gcpa-hero::after{content:"";position:absolute;right:-80px;top:-80px;width:280px;height:280px;z-index:0;background:radial-gradient(circle,rgba(28,109,208,.45),transparent 70%);} .gcpa-post .gcpa-eyebrow{display:inline-block;font-size:13px;letter-spacing:1.4px;text-transform:uppercase;font-weight:700;color:#cfe2f8 !important;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.3);padding:7px 15px;border-radius:30px;margin-bottom:18px;} .gcpa-post .gcpa-hero h1{font-size:34px;line-height:1.25;margin:0 0 16px;font-weight:800;color:#fff !important;letter-spacing:-.3px;position:relative;z-index:2;} .gcpa-post .gcpa-hero p{font-size:18px;color:#eaf3fc !important;margin:0;max-width:760px;position:relative;z-index:2;} .gcpa-eyebrow{position:relative;z-index:2;} .gcpa-post h2{font-size:27px;font-weight:800;color:var(--navy);line-height:1.3;margin:48px 0 18px;padding-bottom:14px;border-bottom:3px solid var(--blue-soft);letter-spacing:-.2px;position:relative;} .gcpa-post h2::after{content:"";position:absolute;left:0;bottom:-3px;width:70px;height:3px;background:var(--blue);} .gcpa-post h3{font-size:22px;font-weight:800;color:var(--navy-2);margin:40px 0 14px;line-height:1.35;} .gcpa-post h4{font-size:19px;font-weight:700;color:var(--navy-2);margin:36px 0 12px;line-height:1.4;padding-left:16px;border-left:4px solid var(--teal);} .gcpa-post p{margin:0 0 16px;color:#1d2733 !important;} .gcpa-post li{color:#1d2733;} .gcpa-post a{color:var(--blue);text-decoration:none;font-weight:600;} .gcpa-post a:hover{text-decoration:underline;} .gcpa-post ul,.gcpa-post ol{margin:0 0 18px !important;padding-left:0 !important;list-style:none !important;} .gcpa-post ul{list-style-type:none !important;} .gcpa-post ul li{position:relative;padding:8px 0 8px 34px;margin:0;border-bottom:1px solid var(--line);color:var(--ink);list-style:none !important;list-style-type:none !important;} .gcpa-post ul li::marker{content:"" !important;font-size:0 !important;} .gcpa-post ul li:last-child{border-bottom:none;} .gcpa-post ul li::before{content:"";position:absolute;left:6px;top:15px;width:9px;height:9px;border-radius:2px;background:var(--teal);transform:rotate(45deg);} .gcpa-post ol{counter-reset:gcpa;} .gcpa-post ol li{position:relative;padding:10px 0 10px 44px;margin:0 0 10px;counter-increment:gcpa;list-style:none !important;list-style-type:none !important;} .gcpa-post ol li::marker{content:"" !important;font-size:0 !important;} .gcpa-post ol li::before{content:counter(gcpa);position:absolute;left:0;top:9px;width:28px;height:28px;border-radius:8px;background:var(--navy);color:#fff;font-weight:700;font-size:14px;display:flex;align-items:center;justify-content:center;} .gcpa-post .wp-block-table,.gcpa-post figure.wp-block-table{margin:22px 0 26px;overflow-x:auto;} .gcpa-post table{width:100%;border-collapse:collapse;font-size:15.5px;background:#fff;border:1px solid var(--navy);border-radius:10px;overflow:hidden;box-shadow:var(--shadow);} .gcpa-post thead th{background:var(--navy);color:#fff;text-align:left;padding:13px 15px;font-weight:700;font-size:15px;border:1px solid var(--navy-2);} .gcpa-post tbody td{padding:12px 15px;border:1px solid var(--line);vertical-align:top;color:var(--ink);} .gcpa-post tbody tr:nth-child(even){background:var(--bg-alt);} .gcpa-post tbody tr:hover{background:var(--blue-soft);} .gcpa-post tbody td:first-child{font-weight:600;color:var(--navy-2);} .gcpa-metrics{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin:30px 0 36px;clear:both;} .gcpa-metric{background:#fff;border:1px solid var(--line);border-top:4px solid var(--blue);border-radius:var(--radius);padding:22px 18px;box-shadow:var(--shadow);transition:transform .2s,box-shadow .2s;} .gcpa-metric:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg);} .gcpa-metric:nth-child(2){border-top-color:var(--teal);} .gcpa-metric:nth-child(3){border-top-color:var(--gold);} .gcpa-metric:nth-child(4){border-top-color:var(--green);} .gcpa-metric .ic{width:46px;height:46px;border-radius:11px;background:var(--blue-soft);display:flex;align-items:center;justify-content:center;margin-bottom:14px;color:var(--blue);} .gcpa-metric:nth-child(2) .ic{background:var(--teal-soft);color:var(--teal);} .gcpa-metric:nth-child(3) .ic{background:var(--gold-soft);color:var(--gold);} .gcpa-metric:nth-child(4) .ic{background:var(--green-soft);color:var(--green);} .gcpa-metric .big{font-size:22px;font-weight:800;color:var(--navy);line-height:1.2;margin-bottom:4px;} .gcpa-metric .lbl{font-size:14px;color:var(--muted);line-height:1.45;} .gcpa-numhead{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin:46px 0 8px;clear:both;} .gcpa-numhead h4{margin:0 !important;} .gcpa-numhead .gcpa-pill{margin:0 !important;} .gcpa-numhead .num{flex:0 0 auto;width:48px;height:48px;border-radius:12px;background:var(--navy);color:#fff;font-size:22px;font-weight:800;display:flex;align-items:center;justify-content:center;box-shadow:var(--shadow);} .gcpa-callout{border-radius:var(--radius);padding:20px 22px;margin:22px 0;border:1px solid var(--line);background:var(--bg-alt);position:relative;} .gcpa-callout.blue{background:var(--blue-soft);border-color:#bcd9f6;} .gcpa-callout.teal{background:var(--teal-soft);border-color:#b7e3e3;} .gcpa-callout.gold{background:var(--gold-soft);border-color:#ecd79a;} .gcpa-callout.green{background:var(--green-soft);border-color:#b6e2c6;} .gcpa-callout.red{background:var(--red-soft);border-color:#f0c4be;} .gcpa-callout .co-tag{display:inline-block;font-size:12.5px;font-weight:700;letter-spacing:.6px;text-transform:uppercase;padding:4px 11px;border-radius:20px;margin-bottom:10px;color:#fff;} .gcpa-callout.blue .co-tag{background:var(--blue);} .gcpa-callout.teal .co-tag{background:var(--teal);} .gcpa-callout.gold .co-tag{background:var(--gold);} .gcpa-callout.green .co-tag{background:var(--green);} .gcpa-callout.red .co-tag{background:var(--red);} .gcpa-callout p:last-child{margin-bottom:0;} .gcpa-cta{background:linear-gradient(135deg,var(--navy) 0%,#1c4a78 100%);color:#fff;border-radius:18px;padding:34px 32px;margin:38px 0;text-align:center;box-shadow:var(--shadow-lg);position:relative;overflow:hidden;} .gcpa-cta::before{content:"";position:absolute;left:-60px;bottom:-60px;width:220px;height:220px;background:radial-gradient(circle,rgba(12,143,143,.4),transparent 70%);} .gcpa-post .gcpa-cta h4{color:#fff !important;border:none;padding:0;margin:0 0 12px;font-size:22px;font-weight:800;position:relative;z-index:1;} .gcpa-post .gcpa-cta p{color:#eaf3fc !important;max-width:680px;margin:0 auto 22px;position:relative;z-index:1;} .gcpa-post .gcpa-cta .btn{display:inline-block;background:#fff !important;color:var(--navy) !important;font-weight:700;padding:13px 26px;border-radius:30px;margin:6px;font-size:16px;position:relative;z-index:1;transition:transform .15s;text-decoration:none !important;} .gcpa-post .gcpa-cta .btn:hover{transform:translateY(-2px);text-decoration:none !important;} .gcpa-post .gcpa-cta .btn.primary{background:var(--teal) !important;color:#fff !important;} .gcpa-btnrow{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;align-items:center;position:relative;z-index:1;} .gcpa-trust{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-bottom:22px;position:relative;z-index:1;} .gcpa-post .gcpa-trust span{font-size:13px;font-weight:700;background:rgba(255,255,255,.18) !important;border:1px solid rgba(255,255,255,.45);padding:7px 14px;border-radius:20px;color:#ffffff !important;} .gcpa-post svg{display:block;} .gcpa-pill{display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:700;padding:8px 16px;border-radius:30px;margin:10px 0 6px;line-height:1.2;} .gcpa-pill svg{width:16px;height:16px;flex:0 0 auto;} .gcpa-pill.green{background:var(--green-soft);color:var(--green);border:1px solid #b6e2c6;} .gcpa-pill.blue{background:var(--blue-soft);color:var(--blue);border:1px solid #bcd9f6;} .gcpa-pill.teal{background:var(--teal-soft);color:var(--teal);border:1px solid #b7e3e3;} .gcpa-pill.gold{background:var(--gold-soft);color:#9a7416;border:1px solid #ecd79a;} .gcpa-pill.red{background:var(--red-soft);color:var(--red);border:1px solid #f0c4be;} .gcpa-pillhead{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin:38px 0 12px;clear:both;} .gcpa-pillhead h4{margin:0 !important;} .gcpa-pillhead .gcpa-pill{margin:0 !important;} @media(max-width:560px){.gcpa-pillhead{gap:8px;}} .gcpa-toc{background:var(--bg-alt);border:1px solid var(--line);border-left:5px solid var(--blue);border-radius:var(--radius);padding:24px 26px;margin:30px 0 36px;box-shadow:var(--shadow);} .gcpa-toc h5{margin:0 0 14px;font-size:16px;font-weight:800;color:var(--navy);letter-spacing:.4px;text-transform:uppercase;display:flex;align-items:center;gap:9px;} .gcpa-toc h5 svg{width:20px;height:20px;color:var(--blue);} .gcpa-toc ol{counter-reset:toc;margin:0 !important;padding:0 !important;columns:2;column-gap:36px;list-style:none !important;} .gcpa-toc ol li{counter-increment:toc;position:relative;padding:7px 0 7px 30px;margin:0;border-bottom:1px dashed var(--line);break-inside:avoid;list-style:none !important;} .gcpa-toc ol li::before{content:counter(toc);position:absolute;left:0;top:7px;width:21px;height:21px;border-radius:6px;background:var(--blue-soft);color:var(--blue);font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;} .gcpa-toc ol li::marker{content:"" !important;font-size:0 !important;} .gcpa-toc a{color:var(--navy-2);font-weight:600;font-size:15px;} .gcpa-toc a:hover{color:var(--blue);} .gcpa-post [id^="toc-"]{scroll-margin-top:90px;} .gcpa-banner{display:block;background:linear-gradient(135deg,#0d3b66 0%,#0c7a7a 100%);color:#fff;border-radius:16px;padding:30px 32px;margin:36px 0;box-shadow:var(--shadow-lg);} .gcpa-banner .bt{font-size:20px;font-weight:800;line-height:1.45;margin:0 0 20px;max-width:760px;} .gcpa-banner .bb{display:flex;flex-wrap:wrap;gap:14px;align-items:center;} .gcpa-banner a{display:inline-block;background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.6);color:#fff !important;font-weight:700;padding:13px 24px;border-radius:30px;font-size:15px;text-decoration:none !important;} .gcpa-banner a.solid{background:#ffffff !important;color:#0d3b66 !important;border-color:#fff;} .gcpa-disclaimer{background:var(--bg-alt);border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:34px 0 10px;font-size:14.5px;color:var(--muted);line-height:1.6;} .gcpa-disclaimer strong{color:var(--navy-2);} .gcpa-byline{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin:0 0 22px;font-size:15px;} .gcpa-byline .av{width:42px;height:42px;border-radius:50%;background:var(--navy);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:16px;flex:0 0 auto;} .gcpa-byline .nm{font-weight:700;color:var(--navy-2);} .gcpa-byline .rl{color:var(--teal);font-weight:700;} .gcpa-byline .sep{color:var(--line);} .gcpa-author{display:flex;gap:18px;align-items:flex-start;background:var(--bg-alt);border:1px solid var(--line);border-left:5px solid var(--teal);border-radius:14px;padding:24px 26px;margin:34px 0 40px;} .gcpa-author .ava{width:64px;height:64px;border-radius:50%;background:linear-gradient(135deg,var(--navy),var(--teal));color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:22px;flex:0 0 auto;} .gcpa-author .info h5{margin:0 0 6px;font-size:17px;font-weight:800;color:var(--navy);line-height:1.4;} .gcpa-author .info .role{font-size:14px;color:var(--teal);font-weight:700;margin:0 0 12px;} .gcpa-author .info p{font-size:14.5px;color:var(--muted) !important;margin:0;line-height:1.65;} .gcpa-faq{margin:18px 0 26px;border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:var(--shadow);} .gcpa-faq details{border-bottom:1px solid var(--line);background:#fff;} .gcpa-faq details:last-child{border-bottom:none;} .gcpa-faq summary{list-style:none;cursor:pointer;padding:18px 22px;font-weight:700;color:var(--navy-2);font-size:16px;display:flex;justify-content:space-between;align-items:center;gap:14px;transition:background .15s;} .gcpa-faq summary::-webkit-details-marker{display:none;} .gcpa-faq summary:hover{background:var(--bg-alt);} .gcpa-faq summary .pl{flex:0 0 auto;width:24px;height:24px;border-radius:50%;background:var(--blue-soft);color:var(--blue);display:flex;align-items:center;justify-content:center;font-size:18px;font-weight:700;transition:transform .2s;} .gcpa-faq details[open] summary{background:var(--bg-alt);color:var(--navy);} .gcpa-faq details[open] summary .pl{transform:rotate(45deg);background:var(--blue);color:#fff;} .gcpa-faq .ans{padding:0 22px 20px;color:#1d2733;font-size:15.5px;line-height:1.7;} .gcpa-img-right{float:right;max-width:250px;width:32%;margin:6px 0 24px 28px;border-radius:12px;box-shadow:var(--shadow-lg);border:1px solid var(--line);} .gcpa-img-right img{display:block;width:100%;height:auto;border-radius:12px;} @media(max-width:560px){.gcpa-img-right{float:none;width:70%;max-width:260px;margin:14px auto 18px;}} .gcpa-closing{font-size:24px;font-weight:800;color:var(--navy);margin:48px 0 14px;padding-bottom:12px;border-bottom:3px solid var(--teal-soft);position:relative;} .gcpa-closing::after{content:"";position:absolute;left:0;bottom:-3px;width:70px;height:3px;background:var(--teal);} @media(max-width:560px){.gcpa-post{font-size:16px;} .gcpa-hero{padding:32px 22px;} .gcpa-hero h1{font-size:26px;} .gcpa-post h2{font-size:23px;} .gcpa-cta{padding:26px 20px;} .gcpa-banner .bb{width:100%;} .gcpa-banner .bb a{flex:1 1 auto;text-align:center;}}</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"Open Corporation for $35","alternateName":"Open Corporation For $35","url":"https://opencorporationfor35.ca/","description":"Open Corporation for $35 is a department of Gondaliya CPA.","parentOrganization":{"@type":"Organization","name":"Gondaliya CPA Professional Corporation","url":"https://gondaliyacpa.ca","identifier":"CPA Ontario Firm Registration 61330051"},"telephone":"+1-647-212-9559","email":"info@gondaliyacpa.ca","areaServed":"CA","openingHours":"Mo-Su 09:00-20:30","award":"Xero Partner Award Winner 2026","aggregateRating":{"@type":"AggregateRating","ratingValue":"5","reviewCount":"1300"}}
+</script>
+<div class="gcpa-post">
+<div class="gcpa-hero" style="background:linear-gradient(135deg,#0f2a4a 0%,#15355c 60%,#1c4a78 100%) !important;">
+<span class="gcpa-eyebrow">Side Business · Employees · CPP · Personal Services Business · 2026</span>
+<h1 style="color:#ffffff !important;position:relative;z-index:2;font-size:34px;line-height:1.25;font-weight:800;margin:0 0 14px;">Incorporating a Side Business While Employed in Ontario: Tax Benefits, Costs &amp; CRA Rules</h1>
+<div class="gcpa-hero-sub" style="margin:0 0 18px;"><span style="color:#eaf3fc !important;font-size:18px;line-height:1.6;display:block;max-width:840px;position:relative;z-index:2;">When a side corporation pays for an employee, what it costs, how CPP and losses work, and what to check in your job contract first</span></div>
+<div style="position:relative;z-index:2;font-size:15px;line-height:1.5;"><span style="color:#ffffff;font-weight:bold;">By Sharad Gondaliya, CPA</span><span style="color:#9fd0d0;font-weight:bold;">  |  <a href="https://opencorporationfor35.ca/">Open Corporation For $35</a> and <a href="https://opencorporationfor35.ca/address-service-100/">Address Service</a></span></div>
+<div style="position:relative;z-index:2;font-size:14.5px;line-height:1.5;margin-top:12px;"><span style="color:#cfe2f8 !important;font-weight:600;">Open Corporation for $35 is a department of Gondaliya CPA.</span></div>
+</div>
+<h2>Incorporating a Side Business While Employed in Ontario: Tax Implications, Costs, and CRA Rules Explained by Open Corporation for $35</h2>
+<p><strong>Open Corporation for $35 is a department of Gondaliya CPA.</strong> <strong>TLDR:</strong> Incorporating a side business while employed in Ontario requires careful consideration of tax implications, CRA rules, and <a href="https://opencorporationfor35.ca/guides/cost-to-incorporate-in-canada/">incorporation costs</a>. Open Corporation for $35 provides insights on how to manage personal services business rules, report side business income in Canada, and benefit from tax planning strategies for a part-time business.</p>
+<h3 id="toc-summary" style="margin-top:38px;">Quick Summary</h3>
+<p>You can incorporate a side business while you keep your job, once your employment contract allows it. A corporation pays 12.2% on profit it keeps, but early losses stay trapped inside it and CPP is still due on any salary it pays you. For most employees it pays once steady profit passes about $50,000 a year that you can leave in the company.</p>
+<figure class="wp-block-table">
+<table>
+<thead><tr><th>Aspect</th><th>Details</th></tr></thead>
+<tbody>
+<tr><td>Ontario incorporation fee</td><td>$300 online, plus NUANS and our $35 fee including HST.</td></tr>
+<tr><td>Small business rate</td><td>12.2% combined on the first $500,000 of active business income.</td></tr>
+<tr><td>Top personal rate</td><td>53.53% on income over $258,482 in 2026.</td></tr>
+<tr><td>Personal services business</td><td>44.5% combined if your corporation works like an employee of one client.</td></tr>
+<tr><td>CPP on corporate salary</td><td>Still due even if your job already maxed CPP; extra employee share refunded on your T1.</td></tr>
+<tr><td>Start-up losses</td><td>Reduce tax on your salary as a sole proprietor; stay in the corporation once incorporated.</td></tr>
+<tr><td>Our fee</td><td>$35 including HST, plus government fees.</td></tr>
+</tbody>
+</table>
+</figure>
+<div class="gcpa-author">
+<div class="ava" style="background:linear-gradient(135deg,#0f2a4a,#0c8f8f) !important;color:#ffffff !important;">SG</div>
+<div class="info">
+<h5>Author: Sharad Gondaliya, CPA (Canada &amp; USA) — Founder &amp; Managing Director, Gondaliya CPA Professional Corporation, Toronto, Ontario.</h5>
+<div class="role">Reviewed and fact-checked by Sharad Gondaliya, CPA (Canada &amp; USA)</div>
+<p style="font-size:14.5px;color:#15355c !important;font-weight:700;margin:0 0 8px;">Open Corporation for $35 is a department of Gondaliya CPA.</p>
+<p>Gondaliya CPA is a Toronto-based team providing incorporation, CRA registrations, corporate tax, bookkeeping, GST/HST, and payroll for Canadian corporations. Verify our firm on the <a href="https://www.cpaontario.ca/protecting-the-public/directories/firm/gondaliya-5sqvmj">CPA Ontario public firm directory</a>, firm registration 61330051.</p>
+<p style="font-size:13.5px;color:#15355c !important;font-weight:700;margin-top:10px;">CPA Ontario | CPA USA (Washington &amp; Montana) | Xero Partner Award Winner 2026 | 1300+ 5-star Google reviews</p>
+</div>
+</div>
+<p style="font-size:14px;color:#5a6b7b;margin:-26px 0 26px;">Reading time: 36 minutes.</p>
+<div class="gcpa-toc">
+<h5>Table of Contents</h5>
+<ol>
+<li><a href="#toc-who">Who Should Consider It</a></li>
+<li><a href="#toc-law">How It Works in Ontario</a></li>
+<li><a href="#toc-tax">Tax Implications</a></li>
+<li><a href="#toc-costs">Cost Comparison</a></li>
+<li><a href="#toc-steps">Step-by-Step Process</a></li>
+<li><a href="#toc-reporting">Reporting, Losses and Risks</a></li>
+<li><a href="#toc-faq">Frequently Asked Questions</a></li>
+<li><a href="#toc-quick">Quick Answers and Next Steps</a></li>
+</ol>
+</div>
+<span class="gcpa-pill green">The Numbers That Matter</span>
+<div class="gcpa-metrics">
+<div class="gcpa-metric">
+<div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="M7 14l4-4 4 4 5-5"/></svg></div>
+<div class="big">12.2%</div>
+<div class="lbl">Ontario small business rate on the first $500,000</div>
+</div>
+<div class="gcpa-metric">
+<div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+<div class="big">$300</div>
+<div class="lbl">Ontario government fee to incorporate online</div>
+</div>
+<div class="gcpa-metric">
+<div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+<div class="big">$74,600</div>
+<div class="lbl">2026 CPP maximum pensionable earnings</div>
+</div>
+<div class="gcpa-metric">
+<div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
+<div class="big">$30,000</div>
+<div class="lbl">GST/HST small supplier threshold</div>
+</div>
+</div>
+<div class="gcpa-callout blue">
+<span class="co-tag">Scope &amp; Assumptions</span>
+<p>This article covers Ontario employees who run, or plan to run, a side business through an Ontario corporation, with tax rates and CPP limits for 2026. It does not cover employment law in depth. This is educational information only and not tax, legal, or financial advice. Please speak with a CPA, and a lawyer about your employment contract, before you incorporate.</p>
+</div>
+
+<h2>Who Should Consider Incorporating a Side Business While Employed in Ontario</h2>
+<div class="gcpa-numhead">
+<div class="num" style="background:#0f2a4a !important;color:#ffffff !important;">1</div>
+<h4 id="toc-who" style="border:none;padding:0;margin:0;">Who Should Consider It</h4>
+<span class="gcpa-pill blue">Fit</span>
+</div>
+<p>Incorporating a side business while employed in Ontario makes sense for many people. It helps formalize your work and protect your personal stuff if something goes wrong. Plus, there can be tax perks. Here are some folks who might want to think about it:</p>
+<ul>
+<li><strong>Freelancers and Consultants:</strong> If you work on your own for different clients, incorporation shields your personal assets from business risks.</li>
+<li><strong><a href="https://opencorporationfor35.ca/incorporation-service-35/">E-commerce Entrepreneurs</a>:</strong> Running an online store? A corporation can make operations smoother and possibly lower taxes.</li>
+<li><strong>Professionals with Growing Client Bases:</strong> If your side gigs bring in steady cash, incorporating might help manage income and liability.</li>
+<li><strong>People Planning Long-Term Growth:</strong> If you want to turn your side hustle into a full-time thing someday, starting as a corporation can set you up well.</li>
+</ul>
+<p>Every situation is different. Before starting a corporation while employed, consider how it fits with your goals and comfort with risk.</p>
+<h3>Understanding Your Default Status: Sole Proprietorship for Side Businesses</h3>
+<p>Most side businesses start as <a href="https://opencorporationfor35.ca/sole-proprietorship-registration/">sole proprietorships by default</a>. This means the business and owner are the same legally. Setting up this way is quick and cheap, but it has downsides.</p>
+<p>Here’s a simple comparison between sole proprietorships and corporations for side businesses in Ontario:</p>
+<figure class="wp-block-table">
+<table>
+<thead><tr><th>Factor</th><th>Sole Proprietor</th><th>Corporation</th></tr></thead>
+<tbody>
+<tr><td>Liability</td><td>You’re personally on the hook</td><td>Personal assets get protection</td></tr>
+<tr><td>Taxation</td><td>You pay personal income tax</td><td>Corporate tax rates apply</td></tr>
+<tr><td>Compliance</td><td>Very little paperwork</td><td>Annual reports like T2 returns needed</td></tr>
+<tr><td>Profit Retention</td><td>You keep all profits</td><td>Profits stay inside the corporation</td></tr>
+</tbody>
+</table>
+</figure>
+<p>Running as a sole proprietor is easy, but it leaves you open to more risk. So, think about the tax implications of incorporating a side business before deciding.</p>
+<h3>When Incorporation Becomes Advantageous for Your Side Business</h3>
+<p>Incorporation starts making sense when certain conditions arise. Here are some key reasons:</p>
+<ul>
+<li><strong>Tax Implications:</strong> Corporations often pay less tax than individuals once income gets higher.</li>
+<li><strong><a href="https://opencorporationfor35.ca/guides/small-business-deduction/">Small Business Deduction (SBD)</a>:</strong> A Canadian-controlled private corporation (CCPC) can claim up to $500,000 in eligible income at a lower rate.</li>
+<li><strong>Personal Services Business Risk:</strong> If a client treats you like an employee, your corporation could be a personal services business, which loses the small business deduction.</li>
+</ul>
+<p>Look closely at these points to decide if switching from sole proprietor to corporation benefits your long-term plans.</p>
+<div class="gcpa-callout teal">
+<span class="co-tag">Key Stat</span>
+<p><strong>12.2%:</strong> Ontario's combined small business rate on the first $500,000 of active business income in 2026, against a top personal rate of 53.53% on income over $258,482.</p>
+</div>
+<h3>Reviewing Employment Contracts: Conflicts, Moonlighting, and Non-Compete Clauses</h3>
+<p>Wondering if you can incorporate a side business while employed in Ontario? First, check your employment contract carefully.</p>
+<p>Many employers include rules about outside work such as:</p>
+<ul>
+<li>Conflict-of-interest policies that stop employees from working on competing businesses.</li>
+<li>Moonlighting rules that limit doing other paid work during your job hours.</li>
+<li>Non-compete clauses that restrict what you do during or after employment.</li>
+</ul>
+<p>Don’t just skim these sections. If things seem unclear, talk to a lawyer before starting any business on the side.</p>
+<h3>Separating Personal and Business Finances for Liability and Compliance</h3>
+<p>One big reason people choose to incorporate is to keep money matters separate.</p>
+<p><strong>Here’s why this separation matters:</strong></p>
+<ul>
+<li><a href="https://opencorporationfor35.ca/business-bank-account-setup/">Open separate bank accounts</a> for the business only.</li>
+<li>Keep detailed records of income and expenses.</li>
+<li>Shield personal assets from legal trouble linked to the business.</li>
+</ul>
+<p>Doing this helps meet Ontario’s rules for corporations while protecting what’s yours personally. It also makes managing your side hustle easier overall!</p>
+<h2>How Incorporating a Side Business Works Under Ontario Law</h2>
+<div class="gcpa-numhead">
+<div class="num" style="background:#0f2a4a !important;color:#ffffff !important;">2</div>
+<h4 id="toc-law" style="border:none;padding:0;margin:0;">How It Works in Ontario</h4>
+<span class="gcpa-pill teal">The Law</span>
+</div>
+<p>If you want to incorporate a side business while employed in Ontario, you create a separate legal entity. The Ontario Business Corporations Act (OBCA) governs this process. Starting a corporation while employed means you file articles of incorporation with the <a href="https://opencorporationfor35.ca/how-to-incorporate-in-ontario/">Ontario Business Registry</a>. You’ll also need a NUANS name search and to appoint directors.</p>
+<p>Side business incorporation Ontario requires meeting some rules. For example, your corporation must have a registered office address in Ontario. You must also submit annual returns on time. If your revenue passes CRA thresholds, you have to register for GST/HST accounts.</p>
+<p>Incorporation changes how you report income. Corporate profits get taxed at corporate rates, not personal tax rates like sole proprietorships do. But incorporating does not change your employment status or duties unless your contract or employer says so.</p>
+<p>Open Corporation for $35 is part of Gondaliya CPA. It offers affordable online services for people looking to incorporate side businesses in Toronto or anywhere in Ontario.</p>
+<h3>Key Differences Between Sole Proprietorship and Incorporation for Side Businesses</h3>
+<figure style="margin:22px 0;"><img src="https://opencorporationfor35.ca/wp-content/uploads/2026/11/side-business-sole-prop-vs-corp.png" alt="Sole proprietor versus corporation for a side business in Ontario: liability is personal versus limited; profit taxed at up to 53.53% versus 12.2% on the first $500,000; losses reduce tax on salary versus stay in the corporation; no more CPP once your job maxes it versus CPP still due on corporate salary; setup $0 or $60 versus $300 government fee plus $35 and NUANS." style="width:100%;border-radius:12px;border:1px solid #d8e0e8;" /><figcaption style="font-size:13px;color:#5a6b7b;text-align:center;padding:6px;">Early losses and CPP often favour staying a sole proprietor at first.</figcaption></figure>
+<p>Choosing between <a href="https://opencorporationfor35.ca/convert-sole-proprietorship-corporation/">sole proprietorship vs corporation for a side business</a> affects many things: liability, taxes, costs, and reporting.</p>
+<p><strong>Here’s a quick comparison:</strong></p>
+<h4>Legal Status</h4>
+<p>Sole proprietorship isn’t separate from you personally. A corporation is its own legal entity. Incorporation separates your personal assets from the business.</p>
+<h4>Tax Treatment</h4>
+<p>Sole proprietorship income is taxed at your personal rate. Corporations pay corporate tax rates and may defer some taxes on retained earnings.</p>
+<h4>Liability</h4>
+<p>Sole proprietors face unlimited personal liability. Corporations offer limited liability protection, which can protect your personal assets.</p>
+<h4>Compliance</h4>
+<p>Sole proprietors file very little paperwork. Corporations must submit annual returns and keep detailed records.</p>
+<h4>Losses</h4>
+<p>Losses from sole proprietorships can offset other income on your tax return. Corporate losses stay inside the company and can’t reduce your salary income.</p>
+<p>For many employees with small side projects, sole proprietorship might be simpler at first. Incorporation makes sense if you want liability protection or plan to keep profits in the company—but it comes with more work and cost.</p>
+<h3>Liability Protection: Unlimited Personal Liability vs. Limited Corporate Liability</h3>
+<p>When you choose side business incorporation Ontario, your personal assets stay separate from business debts because of limited liability protection.</p>
+<p>If you run a sole proprietorship, all your assets — like your house or savings — are at risk if something goes wrong.</p>
+<p>Limited liability only works if you follow rules properly:</p>
+<ul>
+<li>Keep personal and company money apart.</li>
+<li>Don’t mix up transactions.</li>
+<li>Keep records as OBCA requires.</li>
+</ul>
+<p>If you don’t do these things, courts might “<a href="https://opencorporationfor35.ca/guides/minute-book-requirements/">pierce the veil</a>” and make you personally liable anyway.</p>
+<p>Employees thinking about incorporating should decide if shielding themselves from lawsuits is worth the extra steps involved in starting a corporation while employed.</p>
+<div class="gcpa-callout blue">
+<span class="co-tag">Worth Knowing</span>
+<p>An Ontario corporation's annual return has no fee and is filed through the Ontario Business Registry within six months after year-end. The T2 return is due on the same six-month timeline, even in a year with no income.</p>
+</div>
+<h3>Maintaining the Corporate Veil: Compliance and Record-Keeping Requirements</h3>
+<p>Starting a corporation while employed means staying on top of compliance to protect the “corporate veil” — that legal shield separating you from the business.</p>
+<p><strong>You need to:</strong></p>
+<ul>
+<li>File annual returns with ServiceOntario.</li>
+<li>Keep minutes from shareholder and director meetings.</li>
+<li>Maintain accurate share registers.</li>
+<li>Pass regular board resolutions on important decisions.</li>
+<li>Retain financial records that meet CRA standards.</li>
+</ul>
+<p>Missing these tasks could mean losing limited liability protections through court action or penalties.</p>
+<p>Open Corporation for $35 helps by offering <a href="https://opencorporationfor35.ca/address-service-100/">registered office service</a> and advice on record keeping after incorporation.</p>
+<p>Following these rules keeps your incorporated side business legally distinct while you’re still employed in Toronto or anywhere else in Ontario.</p>
+<h3>Impact of Incorporation on Your Employment Status and Obligations</h3>
+<p>Incorporating a side business while employed in Ontario doesn’t automatically change your job status but raises some issues:</p>
+<p><strong>Employment Contracts:</strong></p>
+<p>Your employer might have rules about conflicts of interest, non-competes, moonlighting limits, or intellectual property ownership. These can affect what your corporation can do without permission.</p>
+<p><strong>Disclosure:</strong></p>
+<p>Some employers want to know if you set up an outside corporation, especially if it overlaps with their industry.</p>
+<p><strong>Tax Reporting:</strong></p>
+<p>You’ll keep getting T4 slips for your salary from employment. Your corporation files separate T2 tax returns for its income. If paying yourself wages through the corporation, <a href="https://opencorporationfor35.ca/payroll-service/">payroll remittances</a> apply too.</p>
+<p><strong>CPP Contributions:</strong></p>
+<p>Maxing out CPP at your job does not stop CPP on salary from your own corporation (CRA source): the corporation still deducts and remits CPP, you get any extra employee share back when you file your T1, and the employer share is not refunded. Dividends carry no CPP. Talk to an expert before deciding how to handle this part.*</p>
+<p>Make sure to read your employment contract carefully and consider legal advice before going ahead—breaching terms could cause serious trouble beyond taxes alone.</p>
+<p>Open Corporation for $35 is a department of Gondaliya CPA.</p>
+<h2>Tax Implications of Operating a Side Business as Sole Proprietor or Corporation in Ontario</h2>
+<div class="gcpa-numhead">
+<div class="num" style="background:#0f2a4a !important;color:#ffffff !important;">3</div>
+<h4 id="toc-tax" style="border:none;padding:0;margin:0;">Tax Implications</h4>
+<span class="gcpa-pill gold">Tax</span>
+</div>
+<p>If you run a side business while working in Ontario, taxes can get tricky depending on how you set it up. You can either operate as a sole proprietor or create a corporation. Each choice affects your taxes differently.</p>
+<p>As a sole proprietor, you report your side business income along with your regular job salary on your personal tax return (Form T2125). That means the profit is taxed at your personal tax rate. If your side business loses money, those losses can reduce the tax on your other income.</p>
+<p>Starting a corporation separates your side business income from your personal earnings. The corporation files <a href="https://opencorporationfor35.ca/corporate-tax-filing-from-300/">its own tax return (T2)</a> and pays corporate taxes on profits. When you take money out as salary or dividends, you pay personal tax on that amount separately. Any losses stay with the company and can’t reduce your employment income.</p>
+<p>Incorporation comes with extra paperwork like annual filings and bookkeeping rules. You may also need payroll records if you pay yourself wages. One benefit is you might defer some taxes by keeping earnings inside the corporation, but that doesn’t mean you save money forever.</p>
+<p>Open Corporation for $35 is part of Gondaliya CPA. They help employees think through incorporating without promising specific results.</p>
+<h3>Personal Tax Rates Compared to Corporate Small Business Tax Rates</h3>
+<figure style="margin:22px 0;"><img src="https://opencorporationfor35.ca/wp-content/uploads/2026/11/side-business-tax-rates.png" alt="Ontario combined tax rates for 2026: 12.2% small business rate on the first $500,000, 26.5% general corporate rate, 44.5% personal services business rate, and a 53.53% top personal rate on income over $258,482." style="width:100%;border-radius:12px;border:1px solid #d8e0e8;" /><figcaption style="font-size:13px;color:#5a6b7b;text-align:center;padding:6px;">The lower rate is a deferral; personal tax applies when you take the money out.</figcaption></figure>
+<p>Knowing how personal and corporate tax rates compare helps decide if incorporating makes sense for your side hustle in Ontario.</p>
+<p>Ontario’s top combined federal and provincial personal tax rate hits about 53.53%. This kicks in when income goes over $258,482 per year in 2026.</p>
+<p>On the other hand, Canadian-controlled private corporations (CCPCs) get a <a href="https://opencorporationfor35.ca/guides/small-business-deduction/">small business deduction (SBD)</a>. This lowers tax on active business income up to $500,000 each year.</p>
+<p>Here’s how rates stack up for 2026:</p>
+<ul>
+<li><strong>Combined federal &amp; Ontario SBD rate:</strong> 12.2% on first $500K active CCPC business income</li>
+<li><strong>General corporate rate above $500K:</strong> about 26.5%</li>
+<li><strong>Top marginal personal income rate:</strong> 53.53% over high-income levels</li>
+</ul>
+<p>Because corporate rates are lower, you might hold profits in the company to pay less tax now. But this depends on things like when and how you take money out.</p>
+<div class="gcpa-callout gold">
+<span class="co-tag">Our Actual Experience</span>
+<p>The question we hear most from employees is whether their corporation can skip CPP because their job already maxed it. It cannot: salary from your own corporation attracts CPP again, so for employees who already max out CPP at work we usually look at dividends first.</p>
+</div>
+<h3>Benefits and Limitations of the Small Business Deduction for Incorporated Side Businesses</h3>
+<p>The small business deduction cuts federal and provincial taxes on active business income up to $500,000 for CCPCs in Ontario.</p>
+<p><strong>Benefits:</strong></p>
+<ul>
+<li>Cuts combined corporate tax from around 26–27% down to about 12%</li>
+<li>Lets you keep more after-tax profits inside the corporation</li>
+<li>Helps reinvest or delay taking money personally</li>
+</ul>
+<p><strong>Limitations:</strong></p>
+<ul>
+<li>Only applies if your business is “active” – no passive or investment income</li>
+<li><a href="https://opencorporationfor35.ca/guides/holding-company-canada/">Associated corporations</a> share one $500K limit together</li>
+<li>If labeled a Personal Services Business (PSB), you lose this deduction</li>
+</ul>
+<p><strong>About GST/HST:</strong></p>
+<p>If your revenue passes CAD$30,000 over four straight quarters (including related parties), you must register for GST/HST even if incorporated. Below that, registration is optional but brings filing rules.</p>
+<h3>Understanding Personal Services Business Rules and Their Effect on Taxation</h3>
+<p>Personal Services Businesses (PSBs) happen when an incorporated company works like an employee under contract with one client — often controlled by that client like a boss would be.</p>
+<p>If you start a corporation but basically do employee-like work for one client:</p>
+<ul>
+<li>Your company might be called a PSB by tax authorities</li>
+<li>PSBs don’t get the small business deduction; they pay a higher corporate rate (44.5% combined in Ontario)</li>
+<li>They also face limits on what expenses they can deduct</li>
+</ul>
+<p><strong>What raises PSB risk? Think:</strong></p>
+<ul>
+<li>Working for just one client who controls how/when/where you work</li>
+<li>Client provides tools or equipment instead of you having them yourself</li>
+<li>Your work looks like traditional employment</li>
+</ul>
+<p>If your side client seems close to an employer, <a href="https://gondaliyacpa.ca/consultation/">check with a CPA</a> before incorporating. Wrong classification means higher taxes later.</p>
+<div class="gcpa-callout red">
+<span class="co-tag">Risk Warning</span>
+<p><strong>Risk Warning:</strong> If your side corporation works mainly for one client who controls your hours and tools, the CRA can treat it as a personal services business and tax its income at 44.5% in Ontario. Please have the client relationship reviewed before you incorporate.</p>
+</div>
+<h3>Tax Planning Strategies: Salary, Dividends, and CPP Contributions from Your Corporation</h3>
+<p><strong>When running a corporation while employed:</strong></p>
+<p><strong>Salary:</strong></p>
+<p><a href="https://opencorporationfor35.ca/guides/salary-vs-dividends/">Paying yourself wages</a> boosts RRSP contribution room because it counts as earned income. But watch CPP contributions—they apply even if you already maxed out through your job paycheques, and only the extra employee share comes back when you file. In 2026, max pensionable earnings hit $74,600 with max employee CPP contribution of $4,230.45, plus up to $416 of CPP2 on earnings up to $85,000.</p>
+<p><strong>Dividends:</strong></p>
+<p>These don’t create RRSP room nor require CPP payments. They get taxed differently based on whether they are eligible or non‑eligible dividends reflecting underlying corporate taxes paid.</p>
+<p>Choosing between salary and dividends depends on things like:</p>
+<ul>
+<li>How much CPP you've contributed via regular job paycheques</li>
+<li>Cash flow needs from your corporation</li>
+</ul>
+<p>Mixing salary and dividends right takes planning since wrong moves can cost more taxes or lost benefits federally and provincially.</p>
+<p>Sharad Gondaliya, CPA (Canada &amp; USA), has helped hundreds of Canadian business owners over 10+ years.</p>
+<h5>References</h5>
+<ul>
+<li>Canada Revenue Agency – Corporation tax rates — <a href="https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/corporations/corporate-tax-rates.html#ontario_rates">https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/corporations/corporate-tax-rates.html#ontario_rates</a></li>
+<li>Income Tax Act RSC — Sections relevant: ITA s125(1), s125(7)</li>
+<li>CRA Guide T4002 – Self-employed individuals</li>
+<li>Ministry Of Finance - Ontario Corporate And Personal Income Taxes — <a href="https://www.fin.gov.on.ca/en/tax/">https://www.fin.gov.on.ca/en/tax/</a></li>
+<li>CRA GST/HST Registration Threshold — <a href="https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/register-a-gst-hst-account.html">https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/register-a-gst-hst-account.html</a></li>
+</ul>
+<p>Open Corporation for $35 is a department of Gondaliya CPA.</p>
+<div class="gcpa-cta" style="background:linear-gradient(135deg,#0f2a4a 0%,#1c4a78 100%) !important;">
+<h4>Does incorporating your side business pay yet?</h4>
+<p>Incorporation from $35 including HST plus government fees, with a free CPA consultation on your contract, the personal services business test, CPP on salary, and whether your profit is high enough. Please book a free consultation.</p>
+<div class="gcpa-trust"><span>1300+ 5-star Google reviews</span><span>Xero Partner Award Winner 2026</span><span>CPA Ontario Firm 61330051</span><span>30-Day Money-Back Guarantee</span></div>
+<div class="gcpa-btnrow"><a class="solid" href="https://gondaliyacpa.ca/consultation/">Book Free Consultation</a><a href="https://opencorporationfor35.ca/">Open Corporation For $35</a><a href="tel:+16472129559">647-212-9559</a></div>
+</div>
+<h2>Cost Comparison: Running a Sole Proprietorship vs. Incorporated Side Business in Ontario</h2>
+<div class="gcpa-numhead">
+<div class="num" style="background:#0f2a4a !important;color:#ffffff !important;">4</div>
+<h4 id="toc-costs" style="border:none;padding:0;margin:0;">Cost Comparison</h4>
+<span class="gcpa-pill green">Costs</span>
+</div>
+<p>Picking between a sole proprietorship and incorporating your side business in Ontario means looking at costs, rules, and taxes. Incorporating usually costs more up front and each year. But for some employees, those costs might pay off.</p>
+<p>A sole proprietorship costs little to start. Usually, you just pay for business licenses. You don’t pay incorporation fees or file corporate returns. You report income on personal tax forms like the T2125.</p>
+<p>Incorporation means paying Ontario’s government filing fee plus service fees from providers like Open Corporation, which charges about $35. After that, you must file a corporate tax return (T2), keep detailed minutes, and <a href="https://opencorporationfor35.ca/annual-return-filing/">send annual returns to the Ontario Business Registry</a>.</p>
+<p>Corporations face tougher rules on record keeping and payroll if you draw a salary. This can boost accounting costs compared to sole proprietors who only file simple personal tax forms.</p>
+<p>You can do incorporation yourself to save money but risk mistakes that cost more later. Lawyers charge more since they review contracts and shareholder agreements—important when your employer has rules about side work. CPAs focus on tax advice and usually cost less than lawyers but offer good oversight.</p>
+<figure class="wp-block-table">
+<table>
+<thead><tr><th>Factor</th><th>Sole Proprietorship</th><th>Corporation</th><th>Employee Considerations</th></tr></thead>
+<tbody>
+<tr><td>Start-up Costs</td><td>Low; usually just licenses</td><td>$300 gov’t + $35 service fee*</td><td>Incorporation adds fixed upfront cost</td></tr>
+<tr><td>Annual Compliance</td><td>Personal T1 + T2125</td><td>Corporate T2 + annual returns</td><td>More complex filings may need pros</td></tr>
+<tr><td>Record-Keeping Burden</td><td>Simple</td><td>Detailed minutes &amp; resolutions</td><td>More admin work involved</td></tr>
+<tr><td>Payroll Requirements</td><td>Optional</td><td>Required if paying salary</td><td>CPP affected by employment status</td></tr>
+<tr><td>Professional Fees</td><td>Low</td><td>Moderate to high</td><td>Depends on complexity and risk</td></tr>
+</tbody>
+</table>
+</figure>
+<p><strong>Verdict:</strong> For small side businesses making modest profits, sole proprietorships often cost less due to simple rules and low overhead.</p>
+<h3>Ontario Incorporation Costs, Government Filing Fees, and Annual Compliance Expenses</h3>
+<p>To incorporate in Ontario, you pay specific fees through ServiceOntario plus optional extra charges.</p>
+<p>The government charges a flat $300 fee for filing articles of incorporation online under OBCA [ServiceOntario 2026]. The NUANS name search is extra (online providers like Open Corporation charge about $35 for the incorporation service).</p>
+<p>If you plan to operate outside Ontario or add registrations, expect more fees.</p>
+<p><strong>Annual expenses include:</strong></p>
+<ul>
+<li><strong>Annual Return Filing:</strong> No direct fee from ServiceOntario but submission is mandatory.</li>
+<li><strong>Corporate Tax Return (T2):</strong> Must be filed every year whether you make money or not.</li>
+<li><strong><a href="https://opencorporationfor35.ca/guides/registered-office-address/">Registered Office Fees</a>:</strong> Optional services cost about $100/year.</li>
+<li>These costs add up over time as your business runs.</li>
+</ul>
+<p>Employees wanting to incorporate should budget for the initial fee plus yearly compliance expenses.</p>
+<h3>Ongoing Corporate Filings and Reporting Requirements Including T2, Payroll, and GST/HST</h3>
+<p>After incorporating, your side business must follow CRA reporting rules that differ from sole proprietors:</p>
+<p><strong>T2 Corporate Tax Return:</strong> Corporations file this annually within six months of their fiscal year-end regardless of profit [CRA].</p>
+<p>Payroll Reporting: If you pay yourself wages:</p>
+<ul>
+<li>You need to <a href="https://opencorporationfor35.ca/guides/payroll-setup-new-corporation/">register for payroll accounts</a>.</li>
+<li>Deduct source taxes monthly or quarterly.</li>
+<li>Issue T4 slips at year-end.</li>
+</ul>
+<p>This payroll income interacts differently with CPP limits compared to salaried jobs.</p>
+<p><strong>GST/HST Registration Threshold:</strong> The small supplier limit is $30,000 revenue over four quarters [CRA]. Exceeding this means mandatory GST/HST registration even after incorporating.</p>
+<p>Registering voluntarily before hitting the limit can let you claim input tax credits on purchases — something to think about when switching business types.</p>
+<h3>Accounting, Legal, and Professional Review Costs for Incorporated Side Businesses</h3>
+<p><strong>Costs vary by help level:</strong></p>
+<ul>
+<li>DIY platforms handle documents for around $35–$100 but give little advice.</li>
+<li>Lawyers charge roughly $800–$1,500+ for contract reviews related to side businesses alongside employment.</li>
+<li><a href="https://opencorporationfor35.ca/services/">CPAs offer tax-focused advice</a> costing about $500+, depending on how deep the service goes.</li>
+</ul>
+<p>Each choice comes with trade-offs between cost and risk:</p>
+<figure class="wp-block-table">
+<table>
+<thead><tr><th>Option</th><th>Description</th></tr></thead>
+<tbody>
+<tr><td>DIY</td><td>Cheap but risky<br>Limited guidance<br>Good only if situation is simple</td></tr>
+<tr><td>Lawyer</td><td>Expensive; legal expertise needed<br>Important if employer restrictions apply<br>Good before signing contracts</td></tr>
+<tr><td>CPA</td><td>Mid-cost; tax focused advice<br>No legal opinions but solid oversight<br>Best mix unless IP or contract issues complex</td></tr>
+</tbody>
+</table>
+</figure>
+<p><strong>Verdict:</strong> Employees benefit most from CPA advice with lawyer help when contracts get tricky or employer policies matter.</p>
+<div class="gcpa-callout red">
+<span class="co-tag">Risk Warning</span>
+<p><strong>Risk Warning:</strong> Please do not pay personal costs from the corporate account. Money taken out without being recorded as salary, dividends or a repaid loan can be taxed as a shareholder benefit or loan under the Income Tax Act.</p>
+</div>
+<h3>Financial Considerations When Transitioning from Sole Proprietorship to Corporation</h3>
+<p>Losses affect taxes differently in each setup — this matters when switching structures:</p>
+<p>As a sole proprietor using Form T2125 on your personal return (T1), losses directly reduce other income like salaries that year [ITA].</p>
+<p>Incorporated companies keep losses inside the corporation. They can carry them forward against future profits but can’t reduce your personal salary income earned elsewhere [CRA].</p>
+<p>This means early losses won’t lower your personal taxes once incorporated. That might mean paying more taxes until the corporation makes money.</p>
+<p>It helps to plan carefully if waiting until steady profits show before incorporating works better financially than switching too soon with unused losses.</p>
+<p><a href="https://opencorporationfor35.ca/pricing/">Open Corporation charges about $35</a> for online incorporation backed by Registered Ontario CPAs who understand employee side-business situations well.</p>
+<p style="font-size:14px;margin:18px 0 6px;"><strong>[References]</strong></p>
+<ul style="font-size:14px;">
+<li>ServiceOntario – Articles of Incorporation Fee Schedule (2026)</li>
+<li>Canada Revenue Agency – Guide T4012: T2 Corporation Income Tax Guide</li>
+<li>Canada Revenue Agency – Small Supplier Threshold Factsheet</li>
+<li>Income Tax Act RSC 1985 c1(5th Supp)</li>
+</ul>
+<h2>Step-by-Step Process to Incorporate a Side Business in Ontario</h2>
+<div class="gcpa-numhead">
+<div class="num" style="background:#0f2a4a !important;color:#ffffff !important;">5</div>
+<h4 id="toc-steps" style="border:none;padding:0;margin:0;">Step-by-Step Process</h4>
+<span class="gcpa-pill red">Setup</span>
+</div>
+<p>If you want to incorporate a side business while employed in Ontario, there are several steps you need to follow. You start by preparing the right paperwork and finish by <a href="https://opencorporationfor35.ca/guides/incorporation-documents-checklist/">keeping up with legal requirements</a>. This process helps your corporation run legally and smoothly within Ontario’s rules.</p>
+<h3>Preparing and Filing the Articles of Incorporation and NUANS Name Search</h3>
+<p>When you start a corporation while employed, you first file Articles of Incorporation through the Ontario Business Registry. You also have to pick a corporate name that’s unique and not used by others. To check this, you get a <a href="https://opencorporationfor35.ca/nuans-report-20/">NUANS report</a>. It compares your chosen name with existing ones across Canada.</p>
+<p>The government charges a $300 filing fee when you file online. You’ll also pay about $20–$30 for the NUANS report. Services like Open Corporation for $35 bundle this all: they handle paperwork, filing, instant NUANS reports, and even offer registered office service.</p>
+<p>Here’s a quick look at the costs:</p>
+<ul>
+<li><strong>Government Filing Fee:</strong> $300</li>
+<li><strong>NUANS Name Search:</strong> around $25</li>
+<li><strong>Open Corporation Service Fee:</strong> $35</li>
+</ul>
+<p>Keep in mind, your employer’s contract or rules might affect your ability to start the corporation. Check those before moving forward.</p>
+<h3>Registering for GST/HST and Other Required Business Accounts</h3>
+<p>You need to think about GST/HST registration for your side business. The CRA says you must register once your taxable revenue goes over $30,000 in four straight calendar quarters. That’s called the <a href="https://opencorporationfor35.ca/guides/hst-registration-guide/">small supplier threshold</a>.</p>
+<p>If your side business makes less than $30K during its first year or as you switch from sole proprietor to corporation, you don’t have to register yet. But some people choose to register early to get input tax credits or better cash flow.</p>
+<p>Besides GST/HST, other accounts might be necessary:</p>
+<ul>
+<li>Payroll account if you hire employees</li>
+<li>Import/export account if you deal with cross-border goods</li>
+<li>Corporate income tax account after incorporation</li>
+</ul>
+<p>You set up these accounts via CRA’s My Business Account after incorporation is done.</p>
+<p><strong>Summary of accounts:</strong></p>
+<ul>
+<li><strong>GST/HST Program:</strong> Revenue over $30,000 in 4 quarters</li>
+<li><strong>Payroll Program:</strong> If hiring staff</li>
+<li><strong>Corporate Income Tax:</strong> Right after incorporation</li>
+</ul>
+<h3>Setting Up Corporate Governance: Registered Office, Directors, and Share Structure</h3>
+<p>Ontario law requires some key items when setting up your corporation:</p>
+<ul>
+<li><strong>Registered Office:</strong> Must be an official address in Ontario where legal papers can be sent.</li>
+<li><strong>Directors:</strong> At least one director who is an individual 18 or older; sometimes residency rules apply.</li>
+<li><strong><a href="https://opencorporationfor35.ca/guides/share-structure-explained/">Share Structure</a>:</strong> Decide on types of shares (usually common shares). This affects control and dividend rights later on.</li>
+</ul>
+<p>These details go into the Articles of Incorporation filed under OBCA rules. Getting these right helps avoid delays or rejection.</p>
+<p>After incorporation, corporations need bylaws to guide internal management. These stay private—no public filing needed—and should be kept with corporate records or trusted providers like Open Corporation for $35.</p>
+<p>Corporations also appoint officers under the bylaws or shareholder agreements—even if it’s just one person handling everything at first.</p>
+<h3>Managing Corporate Records and Meeting Annual Filing Deadlines</h3>
+<p>Once your side business incorporation in Ontario is done, keep up with these ongoing duties:</p>
+<ul>
+<li><a href="https://opencorporationfor35.ca/minute-book-preparation/">Maintain minute books</a> that record directors’ and shareholders’ meetings.</li>
+<li>Keep financial statements that follow accounting standards.</li>
+<li>File an annual return through the Ontario Business Registry every year within six months after your fiscal year-end (there is no fee).</li>
+<li>Submit T2 corporate income tax returns annually within six months after fiscal year-end.</li>
+</ul>
+<p>Missing deadlines can cause late fees or even risk losing your corporation status due to administrative dissolution.</p>
+<p>Compared to sole proprietorships, corporations have more compliance work but gain limited liability protection. This matters when balancing employment with running a side business.</p>
+<p><strong>Here’s a summary of key requirements:</strong></p>
+<figure class="wp-block-table">
+<table>
+<thead><tr><th>Requirement</th><th>Frequency</th><th>Who’s Responsible</th></tr></thead>
+<tbody>
+<tr><td>Annual Return Filing</td><td>Yearly</td><td>Corporation</td></tr>
+<tr><td>T2 Corporate Tax Return</td><td>Yearly</td><td>CPA / Accountant</td></tr>
+<tr><td>Minuting Meetings</td><td>As needed</td><td>Director(s)</td></tr>
+</tbody>
+</table>
+</figure>
+<p>Open Corporation for $35 helps clients meet these requirements on time so nothing gets missed.</p>
+<p>Sharad Gondaliya, CPA (Canada &amp; USA), has over 10 years helping Canadian business owners set up their companies.</p>
+<p>Open Corporation for $35 is part of Gondaliya CPA Professional Corporation. We offer simple online incorporation services for employees starting corporations while still working in Toronto and across Canada.</p>
+<ul style="font-size:14px;">
+<li><a href="https://www.ontario.ca/page/start-business-ontario#section-3">https://www.ontario.ca/page/start-business-ontario#section-3</a></li>
+<li><a href="https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/small-supplier-threshold.html">https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/small-supplier-threshold.html</a></li>
+<li><a href="https://www.ontario.ca/laws/statute/90b16">https://www.ontario.ca/laws/statute/90b16</a></li>
+<li><a href="https://www.ontario.ca/page/ontario-business-registry">https://www.ontario.ca/page/ontario-business-registry</a></li>
+</ul>
+<h2>Comparing Reporting Side Business Income Personally Versus Through a Corporation</h2>
+<div class="gcpa-numhead">
+<div class="num" style="background:#0f2a4a !important;color:#ffffff !important;">6</div>
+<h4 id="toc-reporting" style="border:none;padding:0;margin:0;">Reporting, Losses and Risks</h4>
+<span class="gcpa-pill blue">Reporting</span>
+</div>
+<p>When you have a side business while employed in Ontario, you can report income personally or through a corporation. Both ways have different tax and compliance effects.</p>
+<p>If you run your side business as a sole proprietor, you report income on Form T2125 with your personal T1 tax return. Your business profit adds to your salary and is taxed at your regular personal rate. So, the money flows straight to you without any corporate layer.</p>
+<p>If you start a corporation while employed, the company files its <a href="https://opencorporationfor35.ca/guides/first-t2-return/">own T2 tax return</a>. The corporation pays taxes on profits at corporate rates. You might keep some earnings inside the company to delay taxes. But any salary or dividends paid to you are taxed personally.</p>
+<p>Here are key points about tax implications when incorporating a side business:</p>
+<ul>
+<li>Corporate earnings can be kept inside to delay personal taxes.</li>
+<li>Corporations file separate returns from your personal taxes.</li>
+<li>Incorporation brings more paperwork like bookkeeping and payroll.</li>
+<li>Your salary plus dividends increase your personal taxable income.</li>
+</ul>
+<p>Choosing how to report depends on profits, cash needs, risk, and how much admin work you want. Both ways have pros and cons around tax timing and complexity.</p>
+<h3>Handling Start-Up Losses, Home Office, and Vehicle Expenses for Tax Purposes</h3>
+<p>Start-up losses happen often with new businesses. How you handle them depends on whether you’re incorporated or not.</p>
+<p>As a sole proprietor using Form T2125 on your T1 return, losses can reduce other income like your job wages right away.<sup>[1]</sup> This lowers the taxes due in that year.</p>
+<p>Corporations keep losses inside the company. These can only offset future profits within the corporation.<sup>[2]</sup> You can’t use these losses against your personal employment income outside the company.</p>
+<p>For <a href="https://opencorporationfor35.ca/incorporation-bookkeeping-bundle/">home office expenses</a> when incorporating a side business in Ontario:</p>
+<ul>
+<li>Sole proprietors claim parts of utilities, rent (or mortgage interest), and property taxes based on workspace size.</li>
+<li>Corporations can reimburse you for home office costs under a written arrangement; otherwise claiming those expenses needs good records.<sup>[3]</sup></li>
+</ul>
+<p>Vehicle costs need careful logs showing how much is for business versus personal use.<sup>[4]</sup> Deductible amounts depend on kilometres driven strictly for work related to either sole proprietorship or incorporated side hustle.</p>
+<p>Do you need a GST/HST number for your side business? If combined revenues go over $30,000 in four straight calendar quarters across all businesses—even incorporated ones—you must register.<sup>[5]</sup> This affects collecting GST/HST and input credit claims.</p>
+<p style="font-size:14px;margin:18px 0 6px;"><strong>Sources</strong></p>
+<ol start="1" style="font-size:14px;">
+<li>Canada Revenue Agency – Guide T4002</li>
+<li>Income Tax Act Section 111(1)</li>
+<li>CRA Guide T4002 – Business-use-of-home expenses</li>
+<li>CRA Guide T4002 – Motor vehicle expenses</li>
+<li>CRA GST/HST Info Sheet GI17</li>
+</ol>
+<div class="gcpa-callout red">
+<span class="co-tag">Risk Warning</span>
+<p><strong>Risk Warning:</strong> Losses inside a corporation cannot reduce the tax on your salary. If your side business will lose money in its first year or two, please consider staying a sole proprietor until it turns a profit, so the losses reduce your employment income instead.</p>
+</div>
+<h3>When a Side Hustle is Large Enough to Justify Incorporation</h3>
+<p>Knowing when to incorporate means checking if profits outweigh costs and hassle. Here’s a rough guide:</p>
+<figure class="wp-block-table">
+<table>
+<thead><tr><th>Sign</th><th>Ready To Incorporate</th><th>Not Yet</th><th>What To Watch For</th></tr></thead>
+<tbody>
+<tr><td>Annual Net Profit</td><td>Above $50K after expenses</td><td>Below $20K</td><td>Consistent profits</td></tr>
+<tr><td>Personal Cash Needs</td><td>Can leave money inside company</td><td>Need all cash now</td><td>Willingness to keep funds corporate</td></tr>
+<tr><td>Compliance Cost</td><td>Can spend about $1000+ per year</td><td>Costs more than benefits</td><td>Willingness for extra admin</td></tr>
+<tr><td>Risk &amp; Liability Exposure</td><td>Higher risk in business</td><td>Low risk</td><td>Industry-specific concerns</td></tr>
+</tbody>
+</table>
+</figure>
+<p>For many Ontario employees running part-time businesses under $20K net each year with little risk, staying as sole proprietors is simpler. Incorporating may cost more than it saves unless there’s strong reason.</p>
+<p>Sole proprietorship vs corporation depends on liability protection versus ongoing fees.<sup>[6]</sup></p>
+<p>Starting incorporation in Ontario usually costs about $300 government fee plus extras. Services like Open Corporation charge around $35 flat fee including HST but exclude government fees.<sup>[7]</sup></p>
+<h3>Risks and Audit Considerations Regarding Side Business Incorporation and CRA Assessments</h3>
+<p>Personal services business (PSB) rules cause big audit risks if an incorporated worker has one main client acting like an employer.<sup>[8]</sup> PSB status removes small-business deductions and limits expense claims. Taxes jump up fast then.</p>
+<p>Before starting any corporation while employed, check employer rules about conflicts of interest,<sup>[9]</sup> intellectual property,[10] non-compete clauses,[11] moonlighting,[12] and equipment use. Legal advice may be needed first.</p>
+<p><strong>Common risks include:</strong></p>
+<ul>
+<li>Thinking tax deferral equals permanent savings (it doesn’t)</li>
+<li>Losing start-up losses if stuck inside corporation</li>
+<li>Getting fined for not registering GST/HST</li>
+<li>Mixing personal and corporate money creates loan issues</li>
+<li>Late filings trigger penalties</li>
+</ul>
+<p>To avoid trouble, get thorough reviews from CPAs familiar with Canadian small biz tax plus legal help if contracts affect your work.</p>
+<p style="font-size:14px;margin:18px 0 6px;"><strong>Sources</strong></p>
+<ol start="8" style="font-size:14px;">
+<li>Income Tax Act Section 125(7) PSB Rules</li>
+<li>Employer Conflict-of-interest Policy Examples</li>
+<li>Intellectual Property Ownership Law - Ontario Ministry</li>
+<li>Non-compete Clauses Enforcement - Legal Review Recommended</li>
+<li>Moonlighting Policies HR Best Practices</li>
+</ol>
+<div class="gcpa-banner" style="background:linear-gradient(135deg,#0d3b66 0%,#0c7a7a 100%) !important;">
+<div class="bt">Running a side business next to your job? Please book a free consultation and we will tell you whether to incorporate now or wait.</div>
+<div class="bb"><a class="solid" href="https://gondaliyacpa.ca/consultation/">Book Free Consultation</a><a href="mailto:info@gondaliyacpa.ca">info@gondaliyacpa.ca</a><a href="tel:+16472129559">647-212-9559</a></div>
+</div>
+<h3>Guidance on Working with Professionals for Incorporation and Tax Planning in Ontario</h3>
+<p>Doing it yourself might save money at first but risks wrong setup or missing tricky PSB rules that could lead to costly audits later.[13] Lawyers mainly cover contracts but CPAs handle payroll, corporate tax returns, and pay strategies tailored for employees starting corporations.[14]</p>
+<p>We review clients by asking about expected incomes and losses,[15] screening for PSB,[16] spotting employer policies,[17] checking names through NUANS,[18] drafting articles of incorporation,[19] <a href="https://opencorporationfor35.ca/business-number-cra-account-registration/">setting up BN/GST accounts</a>,[20] recommending pay plans based only on facts without guarantees.[21]</p>
+<p>When choosing a CPA, ask about experience with employee incorporations. They should know CPP impact, RRSP room changes, salary vs dividend mix, federal/provincial rules, and explain things clearly without making promises.[22]</p>
+<h5>References</h5>
+<ul>
+<li>^[13]^ CPA Canada – DIY Risks Summary</li>
+<li>^[14]^ Gondaliya CPA Professional Corp Services Overview</li>
+<li>^[15–21]^ Open Corporation Intake Process Documentation</li>
+<li>^[22]^ Selecting Your Small Business Accountant Checklist</li>
+</ul>
+<p>Call 647‑212‑9559 or email info@gondaliyacpa.ca Monday-Sunday 9:00 AM–8:30 PM for free advice about incorporating your side hustle legally under current Ontario rules.</p>
+<h2>Frequently Asked Questions (FAQs)</h2>
+<div class="gcpa-numhead">
+<div class="num" style="background:#0f2a4a !important;color:#ffffff !important;">7</div>
+<h4 id="toc-faq" style="border:none;padding:0;margin:0;">Frequently Asked Questions</h4>
+<span class="gcpa-pill teal">FAQ</span>
+</div>
+<div class="gcpa-faq" id="faq-main">
+<details><summary>What is the Ontario Small Business Deduction and how does it help incorporated side businesses?<span class="pl">+</span></summary>
+<div class="ans"><p>The Ontario Small Business Deduction reduces corporate tax rates on active business income up to $500,000. This lowers taxes and allows corporations to retain more profits.</p></div></details>
+<details><summary>How does the Ontario Combined Small Business Rate compare to general corporate tax rates?<span class="pl">+</span></summary>
+<div class="ans"><p>The combined small business rate in Ontario is about 12.2% on the first $500,000 of active business income. The general corporate rate above that is approximately 26.5%.</p></div></details>
+<details><summary>What is the Top Combined Marginal Personal Tax Rate in Ontario?<span class="pl">+</span></summary>
+<div class="ans"><p>The top personal tax rate in Ontario reaches about 53.53%, applying to income over $258,482 annually in 2026.</p></div></details>
+<details><summary>What are the CPP Maximum Pensionable Earnings and Employee Contribution limits?<span class="pl">+</span></summary>
+<div class="ans"><p>For 2026, CPP maximum pensionable earnings are $74,600, with a max employee contribution of $4,230.45, plus up to $416 of CPP2 on earnings up to $85,000.</p></div></details>
+<details><summary>What is the RRSP Dollar Limit and how does paying yourself salary impact it?<span class="pl">+</span></summary>
+<div class="ans"><p>RRSP contribution room depends on earned income. Salary paid from your corporation increases your RRSP limit, unlike dividends.</p></div></details>
+<details><summary>When do you need to register for GST/HST as a side business?<span class="pl">+</span></summary>
+<div class="ans"><p>You must register if your total taxable revenues exceed $30,000 in four consecutive calendar quarters.</p></div></details>
+<details><summary>What is the Ontario Business Registry Filing Fee for incorporation?<span class="pl">+</span></summary>
+<div class="ans"><p>The fee for filing articles of incorporation in Ontario is $300 when filed online.</p></div></details>
+</div>
+<div class="gcpa-callout teal">
+<span class="co-tag">Worth Knowing</span>
+<p>The $30,000 GST/HST threshold counts the taxable sales of associated businesses together. Please add up every business you and your corporation run before deciding you are under it.</p>
+</div>
+<h2>Quick Answers — TL;DR</h2>
+<div class="gcpa-numhead">
+<div class="num" style="background:#0f2a4a !important;color:#ffffff !important;">8</div>
+<h4 id="toc-quick" style="border:none;padding:0;margin:0;">Quick Answers and Next Steps</h4>
+<span class="gcpa-pill gold">Summary</span>
+</div>
+<p><strong>Sole Proprietorship vs Corporation for a Side Business: Which fits?</strong></p>
+<p>Sole proprietorship suits small side gigs with low risk; incorporation benefits those needing <a href="https://opencorporationfor35.ca/guides/what-happens-after-you-incorporate/">liability protection or tax deferral</a>.</p>
+<p><strong>Does the Small Business Deduction create a deferral or a saving?</strong></p>
+<p>It creates tax deferral by lowering corporate taxes but personal taxes apply when withdrawing funds.</p>
+<p><strong>What is the Personal Services Business risk for a side client?</strong></p>
+<p>If your corporation acts like an employee of one client, PSB rules apply, raising taxes and limiting deductions.</p>
+<p><strong>How should you pay yourself when you already earn a salary?</strong></p>
+<p>A mix of salary and dividends often works; salary creates RRSP room but attracts CPP even if your job already maxed it, while dividends avoid payroll costs.</p>
+<p><strong>What happens to start-up losses in each structure?</strong></p>
+<p>Sole proprietors can deduct losses against other income immediately; corporations carry losses forward but can’t offset personal wages.</p>
+<p><strong>Do you need a GST/HST number for a side business?</strong></p>
+<p>Yes, if combined revenues cross $30K over four quarters; otherwise registration is optional but beneficial.</p>
+<p><strong>What do you file with the CRA: T1, T2 or both?</strong></p>
+<p>You file T1 for personal income including sole proprietorship earnings; corporations file T2 for business profits separately.</p>
+<p><strong>What should you check with your employer first?</strong></p>
+<p>Review contracts for conflicts of interest, moonlighting rules, non-compete clauses and IP ownership before starting a side corporation.</p>
+<h3>DIY vs Lawyer vs CPA: Choosing Professional Help</h3>
+<ul>
+<li>DIY services cost less but offer limited advice and risk mistakes.</li>
+<li>Lawyers handle complex contracts and employer-related restrictions well.</li>
+<li><a href="https://opencorporationfor35.ca/corporate-compliance-subscription/">CPAs specialize in tax planning</a>, payroll setups, and ongoing compliance at moderate costs.</li>
+</ul>
+<p>For employees incorporating a side business in Ontario, CPAs provide balanced expertise without legal overhead unless contract issues arise.</p>
+<h3>How We Review a Side Business Incorporation for Clients</h3>
+<p>We assess expected incomes and risks thoroughly. We screen for Personal Services Business status to avoid surprises. We check employer policies that could block or restrict incorporation. <a href="https://opencorporationfor35.ca/named-company-incorporation-nuans/">We handle NUANS name searches</a> and draft articles swiftly. We help set up GST/HST accounts and advise on pay strategies customized for employees with side businesses.</p>
+<h3>What Deliverables Do You Get?</h3>
+<p><strong>Clients receive:</strong></p>
+<ul>
+<li>Complete articles of incorporation filed online.</li>
+<li>Registered office service options available.</li>
+<li><a href="https://opencorporationfor35.ca/minute-book-preparation/">Corporate minute book templates</a> or hosting.</li>
+<li>Guidance on tax planning including salary vs dividend choices.</li>
+<li>Ongoing support on compliance deadlines and reporting requirements.</li>
+</ul>
+<h3>What Are the Risks, Compliance Issues and Prevention Controls?</h3>
+<p>Risks include losing liability protection by mixing funds or missing filings. PSB classification can cause unexpected higher taxes. Non-disclosure to employers may breach contracts leading to job loss or legal issues. To prevent these: maintain clear records separating personal and corporate transactions; consult experts before incorporating; comply with all CRA rules timely; review employment contracts carefully before proceeding.</p>
+<h3>What Should You Prepare Before Meeting a CPA?</h3>
+<p>Bring copies of your employment contract highlighting moonlighting or conflict clauses. Have financial details ready: expected side income, expenses forecasts, existing losses from sole proprietorship if any. Prepare questions about CPP contributions impact and pay structure preferences (salary/dividends). Gather information on clients you serve to assess PSB risk properly.</p>
+<h3>How Do Side Businesses Differ Across the 10 Industries We Serve?</h3>
+<p>Industries vary in liability exposure and PSB risks: consulting faces higher scrutiny due to service nature; e-commerce sees lower risk but has GST/HST considerations; creative professions may have unique IP clauses affecting incorporation suitability. Each sector requires tailored advice balancing compliance with growth potential under Ontario laws.</p>
+<h3>A Realistic Numeric Walkthrough</h3>
+<p>Imagine earning $75K annually from your side hustle:</p>
+<ul>
+<li>As sole proprietor taxed at ~35%, you pay about $26K in personal tax combined.</li>
+<li><strong>Incorporate:</strong> pay ~12% corporate tax ($9K), retain profits inside company lowering immediate tax burden but pay personal taxes when withdrawing funds as salary or dividends later.</li>
+</ul>
+<p>This shows possible tax deferral but also highlights extra paperwork costs involved.</p>
+<h3>How Should You Choose a CPA for a Side Business?</h3>
+<p>Select CPAs experienced with employee incorporations who understand Ontario employment law nuances, CRA rules on PSBs, CPP effects from dual incomes, RRSP impacts of salary versus dividends, and who offer clear communication without guaranteeing specific results or outcomes.</p>
+<h3>Why Trust Open Corporation for $35 (a department of Gondaliya CPA)?</h3>
+<p>We combine affordable flat fees with expert knowledge specific to employees incorporating side businesses in Ontario. Our services cover fast online filing backed by registered CPAs familiar with employer contract complexities and CRA regulations ensuring legal compliance while minimizing costs.</p>
+<h3>People Also Ask</h3>
+<ul>
+<li>Can I incorporate my side business while still employed full-time in Ontario? Yes, after reviewing employment terms and employer policies carefully.</li>
+<li>Is there an annual cost difference between sole proprietorships and corporations? Corporations have higher compliance costs due to mandatory filings like T2 returns and minute books.</li>
+<li>Will incorporating protect my personal assets from lawsuits related to my side work? Yes, limited liability protects personal assets if proper corporate formalities are observed consistently.</li>
+</ul>
+<h3>Glossary</h3>
+<ul>
+<li><strong>PSB (Personal Services Business):</strong> A corporation that resembles employment relationships triggering higher taxes.</li>
+<li><strong>NUANS:</strong> A report that ensures your chosen corporate name is unique across Canada.</li>
+<li><strong>T2125:</strong> Form used by sole proprietors to report business income.</li>
+<li><strong>T2 Return:</strong> Corporate income tax return filed annually.</li>
+<li><strong>SBD (Small Business Deduction):</strong> Tax reduction benefit available only to active CCPCs under certain conditions.</li>
+<li><strong>GST/HST Small Supplier Threshold:</strong> Revenue level above which mandatory GST/HST registration applies ($30K).</li>
+</ul>
+<h3>Next Steps</h3>
+<ul>
+<li>Review your employment contract carefully regarding outside work restrictions.</li>
+<li>Consult an experienced CPA specializing in employee incorporations.</li>
+<li>Decide if incorporation benefits outweigh costs based on projected profits.</li>
+<li><a href="https://opencorporationfor35.ca/incorporation-form/">Use services like Open Corporation for $35</a> to streamline filing.</li>
+<li>Maintain proper records separating personal finances from corporation.</li>
+<li>Keep up with annual filings including T2 returns and ServiceOntario submissions.</li>
+<li>Plan your pay strategy balancing salary versus dividends considering CPP contributions.</li>
+<li>Monitor revenue thresholds requiring GST/HST registration promptly.</li>
+<li>Reassess annually as your side business grows or changes industry focus.</li>
+<li>Seek professional advice regularly to avoid audit risks linked to PSB classification or non-compliance issues.</li>
+</ul>
+<h3>Sources &amp; References</h3>
+<ul>
+<li>Canada Revenue Agency – Corporate Tax Rates &amp; SBD Details</li>
+<li>Income Tax Act Sections Relevant to PSB Rules</li>
+<li>ServiceOntario Filing Fee Schedule</li>
+<li>CRA GST/HST Registration Rules</li>
+<li>Employment Standards &amp; Contract Law Guidelines – Ontario Ministry</li>
+<li>Gondaliya CPA Professional Corporation Resources &amp; Services Information</li>
+</ul>
+<div class="gcpa-pillhead"><h4 style="border:none;padding:0;margin:0;">Quick Answers: Key Numbers at a Glance</h4><span class="gcpa-pill gold">At a Glance</span></div>
+<ul>
+<li><strong>Ontario incorporation:</strong> $300 online government fee</li>
+<li><strong>Our fee:</strong> $35 including HST, plus government fees</li>
+<li><strong>Small business rate:</strong> 12.2% on the first $500,000 of active business income</li>
+<li><strong>General corporate rate:</strong> 26.5%</li>
+<li><strong>Personal services business rate:</strong> 44.5%</li>
+<li><strong>Top personal rate:</strong> 53.53% over $258,482</li>
+<li><strong>CPP 2026:</strong> $74,600 maximum pensionable earnings, $4,230.45 maximum employee contribution</li>
+<li><strong>GST/HST registration:</strong> Once taxable sales pass $30,000 in four calendar quarters</li>
+<li><strong>Ontario annual return:</strong> No fee, within six months after year-end</li>
+</ul>
+<div class="gcpa-pillhead"><h4 style="border:none;padding:0;margin:0;">Who This Is For / Not For</h4><span class="gcpa-pill teal">Fit Check</span></div>
+<ul>
+<li><strong>For:</strong> Ontario employees with a profitable side business, several clients, and money they can leave in a corporation.</li>
+<li><strong>Not For:</strong> Side businesses still losing money, and contractors who work mainly for one client who controls their hours, where personal services business rules apply.</li>
+</ul>
+<div class="gcpa-callout green">
+<span class="co-tag">Verdict</span>
+<p>Stay a sole proprietor while your side business is small or losing money: the losses reduce the tax on your salary and CPP stops once your job maxes it. Incorporate once profit is steady, comes from more than one client, and you can leave money in the company, so the 12.2% rate works for you. Check your employment contract before either step.</p>
+</div>
+<div class="gcpa-callout blue">
+<span class="co-tag">2026 Update</span>
+<p><strong>2026 Update &mdash; what is current:</strong> This article reflects rules current to November 2026. Ontario's combined small business rate is 12.2% on the first $500,000 and the general rate is 26.5%. The top personal rate of 53.53% starts at $258,482. CPP maximum pensionable earnings are $74,600, with a maximum employee contribution of $4,230.45 plus up to $416 of CPP2 on earnings up to $85,000. Ontario charges $300 to incorporate online and no fee for the annual return. The GST/HST small supplier threshold remains $30,000.</p>
+</div>
+<h5 style="color:#15355c;margin:24px 0 8px;">Side Business Incorporation Readiness Check</h5>
+<p>This quick self-check flags what to sort out before you incorporate a side business while employed. Please answer the six questions below.</p>
+
+<div id="ocf-chk">
+  <style>
+    #ocf-chk{--n:#0f2a4a;--n2:#15355c;--bl:#1c6dd0;--tl:#0c8f8f;--gd:#c9991f;--rd:#c0392b;--ink:#1d2733;--mut:#5a6b7b;--ln:#d8e0e8;--alt:#f5f8fb;
+      border:1px solid var(--ln);border-radius:14px;overflow:hidden;background:#fff;box-shadow:0 10px 30px rgba(15,42,74,.08);font-family:inherit;color:var(--ink);margin:24px 0;}
+    #ocf-chk *{box-sizing:border-box;}
+    #ocf-chk .s-head{background:linear-gradient(135deg,var(--n),var(--n2));color:#fff;padding:18px 22px;}
+    #ocf-chk .s-head h5{margin:0;font-size:19px;font-weight:700;color:#fff!important;}
+    #ocf-chk .s-head p{margin:4px 0 0;font-size:13px;color:#cfe2f8!important;}
+    #ocf-chk .s-body{padding:20px 22px;}
+    #ocf-chk .s-q{padding:13px 0;border-bottom:1px solid var(--ln);display:flex;justify-content:space-between;align-items:center;gap:14px;}
+    #ocf-chk .s-q:first-child{padding-top:2px;}
+    #ocf-chk .s-q span.s-lab{font-weight:600;font-size:14.5px;color:var(--n);}
+    #ocf-chk .s-seg{display:inline-flex;border:1px solid var(--ln);border-radius:10px;overflow:hidden;flex:0 0 auto;}
+    #ocf-chk .s-seg label{cursor:pointer;padding:8px 18px;font-size:14px;font-weight:600;color:var(--mut);background:var(--alt);transition:.15s;user-select:none;}
+    #ocf-chk .s-seg label+label{border-left:1px solid var(--ln);}
+    #ocf-chk .s-seg input{position:absolute;opacity:0;width:0;height:0;}
+    #ocf-chk .s-seg input:checked+label{background:var(--n);color:#fff!important;}
+    #ocf-chk .s-go{margin-top:18px;width:100%;border:none;border-radius:11px;padding:14px 18px;font-size:15.5px;font-weight:700;color:#fff!important;cursor:pointer;background:linear-gradient(135deg,var(--bl),var(--tl));font-family:inherit;}
+    #ocf-chk .s-go:hover{filter:brightness(1.05);}
+    #ocf-chk .s-msg{display:none;margin-top:12px;font-size:13.5px;color:var(--rd);font-weight:600;}
+    #ocf-chk .s-out{display:none;margin-top:18px;border-radius:12px;border:1px solid var(--ln);overflow:hidden;}
+    #ocf-chk .s-out .s-status{padding:14px 18px;font-weight:700;font-size:16px;color:#fff!important;background:linear-gradient(135deg,var(--n),var(--n2));}
+    #ocf-chk .s-out .s-inner{padding:16px 18px;background:var(--alt);}
+    #ocf-chk .s-row{font-size:14.5px;margin:0 0 10px;line-height:1.5;}
+    #ocf-chk .s-count{display:inline-block;background:#fff;border:1px solid var(--ln);border-radius:9px;padding:8px 14px;font-weight:700;color:var(--n);font-size:14.5px;}
+    #ocf-chk .s-list{margin:8px 0 0;padding-left:18px;}
+    #ocf-chk .s-list li{font-size:13.5px;color:var(--ink);margin:4px 0;border:none;padding:0 0 0 4px;}
+    #ocf-chk .s-list li::before{display:none;}
+    #ocf-chk .s-cta{display:inline-block;margin-top:14px;background:var(--gd);color:#fff!important;font-weight:700;font-size:14.5px;text-decoration:none;padding:11px 20px;border-radius:10px;}
+    #ocf-chk .s-note{font-size:12.5px;color:var(--mut);margin:12px 0 0;}
+    @media(max-width:560px){#ocf-chk .s-q{flex-direction:column;align-items:flex-start;gap:8px;}}
+  </style>
+  <div class="s-head" style="background:linear-gradient(135deg,#0f2a4a,#15355c) !important;">
+    <h5>Side Business Incorporation Readiness Check</h5>
+    <p>Six quick questions. No tax calculation, no figure quoted.</p>
+  </div>
+  <div class="s-body">
+    <div class="s-q" data-flag="0" data-msg="A read of your employment contract for conflict, IP and non-compete clauses before you start"><span class="s-lab">1. Have you checked your employment contract?</span>
+      <span class="s-seg"><input type="radio" id="c-a-y" name="c-a" value="1"><label for="c-a-y">Yes</label><input type="radio" id="c-a-n" name="c-a" value="0"><label for="c-a-n">No</label></span></div>
+    <div class="s-q" data-flag="0" data-msg="Steady profit first: losses help more on your personal return while you are a sole proprietor"><span class="s-lab">2. Is the side business already profitable?</span>
+      <span class="s-seg"><input type="radio" id="c-b-y" name="c-b" value="1"><label for="c-b-y">Yes</label><input type="radio" id="c-b-n" name="c-b" value="0"><label for="c-b-n">No</label></span></div>
+    <div class="s-q" data-flag="1" data-msg="A personal services business review, because one controlling client can push the rate to 44.5%"><span class="s-lab">3. Does most of the work come from one client?</span>
+      <span class="s-seg"><input type="radio" id="c-c-y" name="c-c" value="1"><label for="c-c-y">Yes</label><input type="radio" id="c-c-n" name="c-c" value="0"><label for="c-c-n">No</label></span></div>
+    <div class="s-q" data-flag="0" data-msg="Money you can leave in the corporation, which is where the tax deferral comes from"><span class="s-lab">4. Can you leave some profit in the company?</span>
+      <span class="s-seg"><input type="radio" id="c-d-y" name="c-d" value="1"><label for="c-d-y">Yes</label><input type="radio" id="c-d-n" name="c-d" value="0"><label for="c-d-n">No</label></span></div>
+    <div class="s-q" data-flag="1" data-msg="A salary and dividend plan, since CPP is still due on corporate salary even when your job maxes it"><span class="s-lab">5. Do you plan to pay yourself a salary from the corporation?</span>
+      <span class="s-seg"><input type="radio" id="c-e-y" name="c-e" value="1"><label for="c-e-y">Yes</label><input type="radio" id="c-e-n" name="c-e" value="0"><label for="c-e-n">No</label></span></div>
+    <div class="s-q" data-flag="1" data-msg="GST/HST registration once taxable sales pass $30,000 in four calendar quarters"><span class="s-lab">6. Will sales pass $30,000 within a year?</span>
+      <span class="s-seg"><input type="radio" id="c-f-y" name="c-f" value="1"><label for="c-f-y">Yes</label><input type="radio" id="c-f-n" name="c-f" value="0"><label for="c-f-n">No</label></span></div>
+    
+<button type="button" class="s-go" id="c-go">Check my readiness</button>
+    <div class="s-msg" id="c-msg">Please answer all six questions to continue.</div>
+    <div class="s-out" id="c-out">
+      <div class="s-status" id="c-status" style="background:linear-gradient(135deg,#0f2a4a,#15355c) !important;">Your profile</div>
+      <div class="s-inner">
+        <p class="s-row"><b>Points to work through:</b> <span class="s-count" id="c-count"></span></p>
+        <div id="c-listwrap" style="display:none;"><p class="s-row" style="margin-bottom:4px;"><b>Worth reviewing with us:</b></p><ul class="s-list" id="c-list"></ul></div>
+        <p class="s-row" id="c-clean" style="display:none;"><b>Nothing flagged.</b> The usual complications do not appear to apply to you.</p>
+        <a class="s-cta" href="https://gondaliyacpa.ca/consultation/">Book a free consultation</a>
+        <p class="s-note">This is a general prompt, not tax advice, and it does not calculate your tax. Your outcome depends on your full facts, so please book a free consultation.</p>
+      </div>
+    </div>
+  </div>
+  <script>
+  (function(){
+    var root=document.getElementById('ocf-chk');
+    root.querySelector('#c-go').addEventListener('click',function(){
+      var qs=root.querySelectorAll('.s-q'), items=[], missing=false;
+      qs.forEach(function(q){
+        var x=q.querySelector('input:checked');
+        if(!x){missing=true;return;}
+        if(x.value===q.getAttribute('data-flag')) items.push(q.getAttribute('data-msg'));
+      });
+      var msg=root.querySelector('#c-msg'), out=root.querySelector('#c-out');
+      if(missing){msg.style.display='block';out.style.display='none';return;}
+      msg.style.display='none';
+      var list=root.querySelector('#c-list'), lw=root.querySelector('#c-listwrap'), clean=root.querySelector('#c-clean');
+      root.querySelector('#c-count').textContent=items.length+' to work through';
+      list.innerHTML='';
+      if(items.length){lw.style.display='block';clean.style.display='none';items.forEach(function(t){var li=document.createElement('li');li.textContent=t;list.appendChild(li);});}
+      else{lw.style.display='none';clean.style.display='block';}
+      root.querySelector('#c-status').textContent = items.length>=3 ? 'Several points need attention' : (items.length>=1 ? 'A few points to work through' : 'A straightforward case');
+      out.style.display='block';
+    });
+  })();
+  </script>
+</div>
+<div class="gcpa-cta" style="background:linear-gradient(135deg,#0f2a4a 0%,#1c4a78 100%) !important;">
+<h4>Incorporate your side business with a CPA</h4>
+<p>Incorporation from $35 including HST plus government fees, with a free CPA consultation on your contract, the personal services business test, and whether incorporating pays at your profit. Please book a free consultation.</p>
+<div class="gcpa-trust"><span>1300+ 5-star Google reviews</span><span>Xero Partner Award Winner 2026</span><span>30-Day Money-Back Guarantee</span><span>60-Day Fee Matching</span></div>
+<div class="gcpa-btnrow"><a class="solid" href="https://gondaliyacpa.ca/consultation/">Book Free Consultation</a><a href="https://opencorporationfor35.ca/address-service-100/">Address Service</a><a href="https://opencorporationfor35.ca/contact-us/">Contact Us</a></div>
+</div>
+<p>Want a checklist to work from? Please <a href="https://opencorporationfor35.ca/wp-content/uploads/2026/11/OpenCorp35-Side-Business-Incorporation-Checklist.pdf">download our free side business incorporation checklist</a> before your consultation.</p>
+<figure style="margin:26px 0;"><img src="https://opencorporationfor35.ca/wp-content/uploads/2026/11/why-choose-us-side-business.png" alt="Why Canadian business owners choose Open Corporation For $35 for side business incorporation" style="width:100%;border-radius:12px;border:1px solid #d8e0e8;" /><figcaption style="font-size:13px;color:#5a6b7b;text-align:center;padding:6px;">Why business owners choose us.</figcaption></figure>
+<h3 class="gcpa-closing" id="toc-closing">What to Send Us</h3>
+<p>Send us the parts of your employment contract that cover outside work, a list of your side business clients, last year's side business profit or loss, and whether you want to pay yourself a salary. That is enough for us to screen for personal services business risk, tell you whether incorporating pays now, and prepare the articles. Please start on our <a href="https://opencorporationfor35.ca/incorporation-form/">incorporation form</a> or see every fee on our <a href="https://opencorporationfor35.ca/pricing/">pricing page</a>.</p>
+<div class="gcpa-author">
+<div class="ava" style="background:linear-gradient(135deg,#0f2a4a,#0c8f8f) !important;color:#ffffff !important;">SG</div>
+<div class="info">
+<h5>Sharad Gondaliya, CPA (Canada &amp; USA) — Founder &amp; Managing Director, Gondaliya CPA Professional Corporation</h5>
+<div class="role">Reviewed and fact-checked by Sharad Gondaliya, CPA (Canada &amp; USA)</div>
+<p style="font-size:14.5px;color:#15355c !important;font-weight:700;margin:0 0 8px;">Open Corporation for $35 is a department of Gondaliya CPA.</p>
+<p>We incorporate and support companies in all 13 provinces and territories, handling CRA registrations, corporate tax filing, bookkeeping, GST/HST, payroll and audit support. Verify our firm on the <a href="https://www.cpaontario.ca/protecting-the-public/directories/firm/gondaliya-5sqvmj">CPA Ontario public firm directory</a>, firm registration 61330051.</p>
+<p style="font-size:13.5px;color:#15355c !important;font-weight:700;margin-top:10px;">CPA Ontario | CPA USA (Washington &amp; Montana) | Xero Partner Award Winner 2026 | 1300+ 5-star Google reviews</p>
+</div>
+</div>
+<p style="font-size:13px;color:#5a6b7b;border-top:1px solid #e3e9f0;padding-top:16px;margin-top:8px;"><strong>Published:</strong> November 23, 2026 &nbsp;·&nbsp; <strong>Last updated:</strong> November 23, 2026</p>
+<p style="font-size:13px;color:#5a6b7b;"><strong>Editorial policy:</strong> Our content is prepared by our team and reviewed by Sharad Gondaliya, CPA, and we update it as tax rates, CPP limits and CRA rules change.</p>
+<p style="font-size:13px;color:#5a6b7b;"><strong>Disclaimer:</strong> This article is educational information only and is not tax, legal, or financial advice. Gondaliya CPA Professional Corporation is a firm of Chartered Professional Accountants, not a law firm. Please consult a CPA before acting.</p>
+<p style="font-size:14.5px;color:#15355c;font-weight:700;border-top:2px solid #e3e9f0;padding-top:16px;margin-top:20px;">Open Corporation for $35 is a department of Gondaliya CPA.</p>
+<p style="font-size:13px;color:#5a6b7b;">Operated by WealthBamboo Inc. Parent firm Gondaliya CPA Professional Corporation, CPA Ontario firm registration 61330051. Xero Partner Award Winner 2026. 1300+ five-star Google reviews. 30-day money-back guarantee and 60-day fee-matching policy. Phone 647-212-9559, email info@gondaliyacpa.ca, open 9:00 AM to 8:30 PM Monday to Sunday. Payment by Interac e-Transfer to info@gondaliyacpa.ca only, security question "Not Applicable" as auto-deposit is enabled. Card is also accepted.</p>
+</div>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@graph": [{"@type": "BlogPosting", "@id": "https://opencorporationfor35.ca/incorporating-side-business-while-employed-ontario/#article", "headline": "Incorporating a Side Business While Employed in Ontario: Tax Benefits, Costs & CRA Rules", "description": "Incorporating a side business while employed in Ontario: when it pays, the $300 filing fee, 12.2% small business rate, CPP on corporate salary, start-up losses, personal services business risk and your employment contract.", "datePublished": "2026-11-23", "dateModified": "2026-11-23", "author": {"@type": "Person", "name": "Sharad Gondaliya, CPA"}, "image": "https://opencorporationfor35.ca/wp-content/uploads/2026/11/Side-Business-Incorporation-Ontario-Featured.jpg", "publisher": {"@type": "Organization", "name": "Open Corporation for $35", "description": "Open Corporation for $35 is a department of Gondaliya CPA.", "parentOrganization": {"@type": "AccountingService", "name": "Gondaliya CPA Professional Corporation", "identifier": "CPA Ontario Firm Registration 61330051"}}, "mainEntityOfPage": "https://opencorporationfor35.ca/incorporating-side-business-while-employed-ontario/"}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is the Ontario Small Business Deduction and how does it help incorporated side businesses?", "acceptedAnswer": {"@type": "Answer", "text": "The Ontario Small Business Deduction reduces corporate tax rates on active business income up to $500,000. This lowers taxes and allows corporations to retain more profits."}}, {"@type": "Question", "name": "How does the Ontario Combined Small Business Rate compare to general corporate tax rates?", "acceptedAnswer": {"@type": "Answer", "text": "The combined small business rate in Ontario is about 12.2% on the first $500,000 of active business income. The general corporate rate above that is approximately 26.5%."}}, {"@type": "Question", "name": "What is the Top Combined Marginal Personal Tax Rate in Ontario?", "acceptedAnswer": {"@type": "Answer", "text": "The top personal tax rate in Ontario reaches about 53.53%, applying to income over $258,482 annually in 2026."}}, {"@type": "Question", "name": "What are the CPP Maximum Pensionable Earnings and Employee Contribution limits?", "acceptedAnswer": {"@type": "Answer", "text": "For 2026, CPP maximum pensionable earnings are $74,600, with a max employee contribution of $4,230.45, plus up to $416 of CPP2 on earnings up to $85,000."}}, {"@type": "Question", "name": "What is the RRSP Dollar Limit and how does paying yourself salary impact it?", "acceptedAnswer": {"@type": "Answer", "text": "RRSP contribution room depends on earned income. Salary paid from your corporation increases your RRSP limit, unlike dividends."}}, {"@type": "Question", "name": "When do you need to register for GST/HST as a side business?", "acceptedAnswer": {"@type": "Answer", "text": "You must register if your total taxable revenues exceed $30,000 in four consecutive calendar quarters."}}, {"@type": "Question", "name": "What is the Ontario Business Registry Filing Fee for incorporation?", "acceptedAnswer": {"@type": "Answer", "text": "The fee for filing articles of incorporation in Ontario is $300 when filed online."}}]}]}
+</script>
