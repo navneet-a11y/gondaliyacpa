@@ -1,0 +1,172 @@
+[
+ {
+  "kind": "fact",
+  "from": "You might also prepay some operating costs like insurance covering periods after December 31. Sometimes you can deduct these right away if they follow ITA rules. But sometimes the CRA wants you to spread the deduction over time depending on coverage length.",
+  "to": "You might also prepay some operating costs like insurance covering periods after December 31. Under ITA section 18(9), the part that covers periods after year-end is generally not deductible right away. The CRA wants you to spread the deduction over the years the coverage relates to."
+ },
+ {
+  "kind": "fact",
+  "from": "You may claim higher first-year CCA rates—up to three times normal—on eligible property placed in service from November 20, 2018 onwards.",
+  "to": "You may claim higher first-year CCA rates—up to three times the normal first-year amount—on eligible property acquired after 2024, under the incentive first introduced for property acquired after November 20, 2018 and reinstated by the Budget 2025 measures. A September 2026 proposal would allow immediate expensing of most property acquired on or after September 15, 2026, so please confirm the current status before you buy."
+ },
+ {
+  "kind": "typo",
+  "from": "Income Tax Act (ITA), Section B – Deductible Business Expenses",
+  "to": "Income Tax Act (ITA), Subdivision b of Division B – Deductible Business Expenses"
+ },
+ {
+  "kind": "fact",
+  "from": "CRA Guide T4002 – Accounting Periods & Reserves",
+  "to": "CRA Guide T4012 – T2 Corporation Income Tax Guide"
+ },
+ {
+  "kind": "fact",
+  "from": "Prepaid Expense Rules - ITA Interpretation Bulletin IT-339R3",
+  "to": "Prepaid Expense Rules - ITA section 18(9) and archived Interpretation Bulletin IT-417R2"
+ },
+ {
+  "kind": "fact",
+  "from": "Then you have three months after year-end—until March 31, 2027—to actually pay it.",
+  "to": "Then you have 180 days after year-end—until June 29, 2027—to actually pay it."
+ },
+ {
+  "kind": "fact",
+  "from": "Deadline is usually February 28 or March 15 of next year.\nElectronic filers have slightly different deadlines.",
+  "to": "Deadline is the last day of February of next year (March 1, 2027 for 2026 slips, because February 28 falls on a Sunday).\nElectronic filing is mandatory if you file more than five slips."
+ },
+ {
+  "kind": "fact",
+  "from": "Pay bonuses by March 31.",
+  "to": "Pay bonuses by June 29, 2027."
+ },
+ {
+  "kind": "fact",
+  "from": "Under ITA section 15(2), if you borrow money from your company (or vice versa), you generally need to repay it within one full taxation year plus thirty days after fiscal year-end—that's usually April 30 for a December year end.",
+  "to": "Under ITA section 15(2), if you borrow money from your company, you generally need to repay it by the end of the corporation's next taxation year—December 31, 2027 for a loan made in a 2026 calendar year."
+ },
+ {
+  "kind": "fact",
+  "from": "Shareholder Loans\tMust repay by April 30 after fiscal year; document well",
+  "to": "Shareholder Loans\tMust repay by the end of the next fiscal year; document well"
+ },
+ {
+  "kind": "fact",
+  "from": "[1] Income Tax Act s.78(4); CRA Interpretation Bulletin IT-511R",
+  "to": "[1] Income Tax Act s.78(4); CRA Interpretation Bulletin IT-109R2"
+ },
+ {
+  "kind": "fact",
+  "from": "[2] CRA Guide RC4120 – Filing Information Returns Electronically",
+  "to": "[2] CRA Guide RC4120 – Employers' Guide: Filing the T4 Slip and Summary"
+ },
+ {
+  "kind": "fact",
+  "from": "CPP rates changed slightly in 2026. Employees and employers each contribute 5.95% on earnings between $3,500 and $66,600.",
+  "to": "CPP earnings limits changed in 2026. Employees and employers each contribute 5.95% on earnings between $3,500 and $74,600, plus 4% CPP2 on earnings from $74,600 to $85,000."
+ },
+ {
+  "kind": "fact",
+  "from": "says you can’t claim the bonus expense unless it’s paid within three months after year-end.",
+  "to": "says you can’t claim the bonus expense unless it’s paid within 180 days after year-end."
+ },
+ {
+  "kind": "fact",
+  "from": "Monthly filers: return due by January 30 after month-end.\nQuarterly filers: return due by February 28 after quarter-end.",
+  "to": "Monthly filers: return due by January 31 after month-end.\nQuarterly filers: return due by January 31 after the October-to-December quarter."
+ },
+ {
+  "kind": "fact",
+  "from": "September Instalment\tSeptember 15\tThird-quarter estimate\nOctober Instalment\tOctober 15\tFourth-quarter estimate\nNovember Instalment\tNovember 15\tOptional depending on balance\nDecember Instalment\tDecember 15\tImportant payment before year-end\nThe CRA wants any unpaid instalments for income earned up to December 31 paid by June 30 next year to avoid interest charges.",
+  "to": "Monthly instalments\tLast day of each month\tMost corporations\nQuarterly instalments\tMarch 31, June 30, September 30, December 31\tEligible small CCPCs\nFinal instalment\tDecember 31\tLast one for a December year-end\nBalance of tax\tMarch 31, 2027\tMost CCPCs claiming the small business deduction\nThe CRA wants any unpaid balance of tax for the year paid by March 31 next year (three months after year-end for most CCPCs claiming the small business deduction, otherwise two months) to avoid interest charges."
+ },
+ {
+  "kind": "fact",
+  "from": "This rate is about 8% per year starting January 1, 2026.",
+  "to": "This rate was 7% per year for the first quarter of 2026, and the CRA resets it every quarter."
+ },
+ {
+  "kind": "fact",
+  "from": "This is required under Ontario Business Registry rules3.",
+  "to": "This is required under the Ontario Business Corporations Act3."
+ },
+ {
+  "kind": "fact",
+  "from": "The max RRSP limit is $30,780.",
+  "to": "The max RRSP limit is $33,810."
+ },
+ {
+  "kind": "fact",
+  "from": "Payroll remittances for December must be sent on time or CRA penalties apply starting at $100 plus daily charges6.",
+  "to": "Payroll remittances for December must be sent on time or CRA penalties of 3% to 10% of the amount apply, plus interest6."
+ },
+ {
+  "kind": "editor",
+  "from": "Combined Federal-Ontario SBD Rate*\tAbout 12%",
+  "to": "Combined Federal-Ontario SBD Rate*\t12.2%"
+ },
+ {
+  "kind": "editor",
+  "from": "General Corporate Income Tax Rate*\tAbout 26%",
+  "to": "General Corporate Income Tax Rate*\t26.5%"
+ },
+ {
+  "kind": "fact",
+  "from": "Maximum CPP Contribution\t$3,754\tCRA 7\nRRSP Dollar Limit\t$30,780\tCRA 4",
+  "to": "Maximum CPP Contribution\t$4,230.45\tCRA 7\nRRSP Dollar Limit\t$33,810\tCRA 4"
+ },
+ {
+  "kind": "fact",
+  "from": "3 Ontario Business Registry – Annual Return Filing Guidelines",
+  "to": "3 Ontario Business Corporations Act – Corporate Records (s.140)"
+ },
+ {
+  "kind": "fact",
+  "from": "T4 and T5 slips must be filed with the CRA by February 28, 2027, for the 2026 tax year.",
+  "to": "T4 and T5 slips must be filed with the CRA by March 1, 2027, for the 2026 tax year, because February 28 falls on a Sunday."
+ },
+ {
+  "kind": "fact",
+  "from": "ITA section 78(4) requires bonuses to be declared by December 31 and paid within three months after year-end to be deductible.",
+  "to": "ITA section 78(4) requires bonuses to be declared by December 31 and paid within 180 days after year-end to be deductible."
+ },
+ {
+  "kind": "fact",
+  "from": "Shareholder loans must be repaid within one year plus thirty days after fiscal year-end, typically by April 30, or they become taxable income.",
+  "to": "Shareholder loans must be repaid within one year after the end of the corporation's taxation year in which they were made—December 31, 2027 for a loan made in a 2026 calendar year—or they become taxable income."
+ },
+ {
+  "kind": "fact",
+  "from": "The maximum CPP contribution for both employee and employer in 2026 is $3,754.45 each.",
+  "to": "The maximum CPP contribution for both employee and employer in 2026 is $4,230.45 each, plus up to $416 each of CPP2."
+ },
+ {
+  "kind": "fact",
+  "from": "It allows claiming up to three times the normal first-year Capital Cost Allowance on qualifying assets acquired after November 20, 2018.",
+  "to": "It allows claiming up to three times the normal first-year Capital Cost Allowance on qualifying assets acquired after 2024 under the reinstated incentive, first introduced for assets acquired after November 20, 2018."
+ },
+ {
+  "kind": "fact",
+  "from": "Ontario incorporated businesses must file their annual return through the Ontario Business Registry every year to stay compliant.",
+  "to": "Ontario incorporated businesses must file their annual return through the Ontario Business Registry every year, within six months after fiscal year-end and with no fee, to stay compliant."
+ },
+ {
+  "kind": "fact",
+  "from": "CRA charges interest and penalties starting at $100 plus daily charges if payroll or GST/HST remittances are late or missing.",
+  "to": "CRA charges penalties of 3% to 10% on late payroll remittances, and 1% plus 0.25% a month for up to 12 months on late GST/HST returns, plus interest on both."
+ },
+ {
+  "kind": "fact",
+  "from": "File your last GST/HST return covering December sales by January 30 (monthly) or February 28 (quarterly).",
+  "to": "File your last GST/HST return covering December sales by January 31 (monthly or quarterly)."
+ },
+ {
+  "kind": "fact",
+  "from": "Payroll Remittance Final Deadline: Ensure all source deductions including CPP ($3,754.45 max in 2026)",
+  "to": "Payroll Remittance Final Deadline: Ensure all source deductions including CPP ($4,230.45 max in 2026)"
+ },
+ {
+  "kind": "fact",
+  "from": "Prepare payroll remittances including final CPP contributions ($3,754.45 max) by January 15 deadline without fail.",
+  "to": "Prepare payroll remittances including final CPP contributions ($4,230.45 max) by January 15 deadline without fail."
+ }
+]
