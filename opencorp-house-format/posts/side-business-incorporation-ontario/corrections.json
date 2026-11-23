@@ -1,0 +1,117 @@
+[
+ {
+  "kind": "fact",
+  "from": "Personal Services Business Risk: If clients treat you like an employee, you might face restrictions unless incorporated properly.",
+  "to": "Personal Services Business Risk: If a client treats you like an employee, your corporation could be a personal services business, which loses the small business deduction."
+ },
+ {
+  "kind": "fact",
+  "from": "If you maxed out CPP contributions via employment already this year (CRA source), further CPP deductions may not apply depending on how you pay yourself (salary vs dividends).",
+  "to": "Maxing out CPP at your job does not stop CPP on salary from your own corporation (CRA source): the corporation still deducts and remits CPP, you get any extra employee share back when you file your T1, and the employer share is not refunded. Dividends carry no CPP."
+ },
+ {
+  "kind": "fact",
+  "from": "This kicks in when income goes over roughly $235,675 per year.",
+  "to": "This kicks in when income goes over $258,482 per year in 2026."
+ },
+ {
+  "kind": "fact",
+  "from": "PSBs don’t get the small business deduction; they pay full corporate rates (~26%)",
+  "to": "PSBs don’t get the small business deduction; they pay a higher corporate rate (44.5% combined in Ontario)"
+ },
+ {
+  "kind": "fact",
+  "from": "But watch CPP contributions—they apply unless maxed out already through your job paycheques. In 2026, max pensionable earnings hit $66,600 with max employee CPP contribution around $3,754.",
+  "to": "But watch CPP contributions—they apply even if you already maxed out through your job paycheques, and only the extra employee share comes back when you file. In 2026, max pensionable earnings hit $74,600 with max employee CPP contribution of $4,230.45, plus up to $416 of CPP2 on earnings up to $85,000."
+ },
+ {
+  "kind": "fact",
+  "from": "Canada Revenue Agency – Marginal Effective Tax Rates Tables —",
+  "to": "Canada Revenue Agency – Corporation tax rates —"
+ },
+ {
+  "kind": "fact",
+  "from": "$360 gov’t + $35 service fee*",
+  "to": "$300 gov’t + $35 service fee*"
+ },
+ {
+  "kind": "fact",
+  "from": "The government charges a flat $360 fee including HST for filing articles of incorporation under OBCA [ServiceOntario 2026]. This covers the NUANS name search too (online providers like Open Corporation charge about $35).",
+  "to": "The government charges a flat $300 fee for filing articles of incorporation online under OBCA [ServiceOntario 2026]. The NUANS name search is extra (online providers like Open Corporation charge about $35 for the incorporation service)."
+ },
+ {
+  "kind": "fact",
+  "from": "Canada Revenue Agency – Guide RC4110: General Information About Corporations",
+  "to": "Canada Revenue Agency – Guide T4012: T2 Corporation Income Tax Guide"
+ },
+ {
+  "kind": "fact",
+  "from": "The government charges a $360 filing fee when you file online.",
+  "to": "The government charges a $300 filing fee when you file online."
+ },
+ {
+  "kind": "fact",
+  "from": "Government Filing Fee: $360",
+  "to": "Government Filing Fee: $300"
+ },
+ {
+  "kind": "fact",
+  "from": "Corporations also must appoint officers each year following shareholder agreements or bylaws—even if it’s just one person handling everything at first.",
+  "to": "Corporations also appoint officers under the bylaws or shareholder agreements—even if it’s just one person handling everything at first."
+ },
+ {
+  "kind": "fact",
+  "from": "File an annual return with ServiceOntario every year by your anniversary date (fee is $25).",
+  "to": "File an annual return through the Ontario Business Registry every year within six months after your fiscal year-end (there is no fee)."
+ },
+ {
+  "kind": "editor",
+  "from": "https://www.ontario.ca/laws/statute/90o38#BK6",
+  "to": "https://www.ontario.ca/laws/statute/90b16"
+ },
+ {
+  "kind": "editor",
+  "from": "https://www.serviceontario.ca/annual-return-filing",
+  "to": "https://www.ontario.ca/page/ontario-business-registry"
+ },
+ {
+  "kind": "fact",
+  "from": "Corporations reimburse employees for home office costs through accountable plans; otherwise claiming those expenses needs good records.[3]",
+  "to": "Corporations can reimburse you for home office costs under a written arrangement; otherwise claiming those expenses needs good records.[3]"
+ },
+ {
+  "kind": "fact",
+  "from": "[^3]: CRA ITA Interpretation Bulletin IT-339R4",
+  "to": "[^3]: CRA Guide T4002 – Business-use-of-home expenses"
+ },
+ {
+  "kind": "fact",
+  "from": "[^4]: CRA Guide RC4022 Motor Vehicle Expenses",
+  "to": "[^4]: CRA Guide T4002 – Motor vehicle expenses"
+ },
+ {
+  "kind": "fact",
+  "from": "Starting incorporation in Ontario usually costs about $360 government fee plus extras. Services like Open Corporation charge around $35 flat fee plus HST but exclude government fees.[7]",
+  "to": "Starting incorporation in Ontario usually costs about $300 government fee plus extras. Services like Open Corporation charge around $35 flat fee including HST but exclude government fees.[7]"
+ },
+ {
+  "kind": "fact",
+  "from": "The top personal tax rate in Ontario reaches about 53.53%, applying to income over roughly $235,675 annually.",
+  "to": "The top personal tax rate in Ontario reaches about 53.53%, applying to income over $258,482 annually in 2026."
+ },
+ {
+  "kind": "fact",
+  "from": "For 2026, CPP maximum pensionable earnings are $66,600, with a max employee contribution near $3,754.",
+  "to": "For 2026, CPP maximum pensionable earnings are $74,600, with a max employee contribution of $4,230.45, plus up to $416 of CPP2 on earnings up to $85,000."
+ },
+ {
+  "kind": "fact",
+  "from": "The fee for filing articles of incorporation in Ontario is $360 including HST.",
+  "to": "The fee for filing articles of incorporation in Ontario is $300 when filed online."
+ },
+ {
+  "kind": "fact",
+  "from": "A mix of salary and dividends works best; salary boosts CPP and RRSP room while dividends reduce payroll costs.",
+  "to": "A mix of salary and dividends often works; salary creates RRSP room but attracts CPP even if your job already maxed it, while dividends avoid payroll costs."
+ }
+]
