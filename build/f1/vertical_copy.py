@@ -3231,4 +3231,1050 @@ VERTICALS = {
   ],
  },
 
+ 'gym-corporations': {
+  'name':   'Gym Corporations',
+  'short':  'gym corporation',
+  'plural': 'gym corporations',
+  'kw':     'nil t2 for gym corporation',
+  'title':  'Gym Corporation Nil T2 | Years After the Doors Closed',
+  'desc':   'A gym corporation files for every tax year it exists. Why one '
+            'membership still billing ends the nil year, and what the filing '
+            'costs per year.',
+
+  'h1':   'Nil T2 Filing for Gym Corporations',
+  'lede': 'The thing that catches people out is the billing. One membership '
+          'still renewing on its own is revenue, and the year is not nil. '
+          'Where the billing truly stopped, the return is $300.00 plus HST '
+          'per tax year.',
+
+  'intro_h': 'Flat-Fee Nil T2 Filing for Gym Corporations',
+  'intro': (
+    'A gym can be shut and the corporation still be collecting. Recurring '
+    'membership billing has a habit of running on past the closing date, and '
+    'any year it ran is a year with revenue in it. Where the billing was '
+    'genuinely switched off and nothing else came in, the return is $300.00 '
+    'plus HST per tax year.',
+    'Whether the lease ended, the location was handed to a new operator, the '
+    'business was moved into another corporation, or the equipment went into '
+    'storage while you decide, the year is tested against membership and drop-'
+    'in revenue, anything a trainer paid for use of the floor, and any '
+    'equipment sold off. The return is prepared with Schedules 100, 125, 141 '
+    'and 50 and transmitted electronically. A year with revenue in it goes to '
+    'the full service.'),
+
+  'notnil_h': 'What an Unfiled Year Costs a Gym Corporation',
+  'notnil_boxes': [
+    ('The Corporation Outlasts the Location',
+     'Losing the premises ends the gym. The corporation goes on producing tax '
+     'years until it is dissolved.'),
+    ('The Longer the Gap, the Bigger the Catch-Up',
+     'Nothing prompts a quiet corporation, so these gaps tend to be found at '
+     'four or five years rather than one.'),
+    ('Memberships May Still Be Running',
+     'Billing that nobody switched off puts revenue in a year everyone '
+     'assumed was empty, which is worse than a nil year filed late.'),
+    ('Equipment Has to Be Accounted For',
+     'Racks, treadmills and the fit-out sit on the schedules until they are '
+     'sold or written off, and that reckoning needs the years filed.'),
+  ],
+  'notnil_text': (
+    'Most of these corporations are kept because the equipment is in them, or '
+    'because the plan is a second location one day. Either way the year ends '
+    'arrive, and the catch-up is usually triggered by selling the racks or '
+    'trying to close the company.',
+    'Where the year holds nothing, it is $300.00 plus HST per tax year. '
+    'Several years can be prepared at once, and they go across oldest first '
+    'so each equipment balance opens where the last one closed.'),
+
+  'sched_h': 'Which T2 Schedules a Gym Corporation Files',
+  'sched_rows': [
+    ('Schedule 100', 'Balance sheet information', 'Required',
+     'Equipment, leasehold improvements, unused memberships still owed and '
+     'any shareholder balance are all on the balance sheet in a quiet year.'),
+    ('Schedule 125', 'Income statement information', 'Required',
+     'Nil membership revenue and nil expenses, for a year in which nothing '
+     'was billed and nothing claimed.'),
+    ('Schedule 141', 'Notes checklist', 'Required',
+     'Attached to the two GIFI schedules; it says who put the figures '
+     'together and how.'),
+    ('Schedule 50', 'Shareholder information', 'Required',
+     'Anyone holding 10% or more of the shares, which in a gym is often two '
+     'or three founding partners.'),
+    ('Schedule 24', 'First-time filer information', 'First return only',
+     'On the very first T2 after incorporation, covering the period up to '
+     'that first year end.'),
+    ('Schedule 8', 'Capital cost allowance', 'While the equipment is held',
+     'Racks, cardio machines, mats and the fit-out are depreciable property '
+     'until they are sold, scrapped or taken out of the corporation.'),
+  ],
+  'sched_note': 'Source: the T2 schedule requirements set by the Canada '
+                'Revenue Agency, applied to a gym corporation that billed no '
+                'member during the tax year. Reviewed 23 November 2026.',
+  'sched_boxes': [
+    ('One Live Membership Ends It',
+     'Recurring billing does not need a staffed gym to keep charging. A '
+     'single membership collected in the year puts revenue on Schedule 125.'),
+    ('Unused Memberships Are a Liability',
+     'Months paid for and never used sit on Schedule 100 as something owed, '
+     'not as income, until they are used or written off.'),
+    ('Training Income May Be Personal',
+     'Where a client paid you directly for a session, that is yours to '
+     'report. The corporate year can still be nil.'),
+  ],
+  'chk_yes': [
+    'No membership, drop-in or class fee reached the corporation',
+    'No trainer or tenant paid it to use the floor or a room',
+    'No merchandise, supplement or drink was sold through it',
+    'No piece of equipment belonging to it was sold',
+    'No interest or dividend was credited to anything it holds',
+  ],
+  'chk_no': [
+    'A recurring membership charge went through in the year',
+    'A trainer paid rent for use of the space',
+    'Leftover stock or equipment was sold off',
+    'A member was charged a cancellation or freeze fee',
+    'The location, its lease or its member list changed hands for value',
+  ],
+  'chk_both': [
+    'File one T2 for each year end that falls while the company exists',
+    'Sign a T183CORP for every one of those returns',
+    'Report any 10% shareholding on Schedule 50',
+    'Keep the registry annual return going on its own schedule',
+    'Obtain clearance before the equipment leaves and the company closes',
+  ],
+
+  'why_h': 'Why Gym Corporations Use This Service',
+  'why': [
+    ('Meant for the Post-Closure Years',
+     'A shut location, a handed-over lease, equipment in storage: those years '
+     'are what this fee is for.'),
+    ('The Billing Is Checked Before the Price',
+     'Whether any membership was still collecting is settled first, because '
+     'it is the most common reason one of these years is not nil.'),
+    ('A Set Amount, Year by Year',
+     'Each empty year is $300.00 plus HST per tax year. Five of them cost '
+     'five times that and nothing more.'),
+    ('Collecting Years Are Priced as Such',
+     'A year with membership revenue in it is prepared as an ordinary '
+     'corporate return rather than filed as nil.'),
+  ],
+  'strip': [
+    ('Closed Premises, Open Obligation',
+     'The landlord has the keys. The Agency still expects the return.'),
+    ('Sequence Matters',
+     'Equipment values only reconcile if the years are filed in order.'),
+    ('Signed From Anywhere',
+     'The authorisation for each year is handled in a secure portal.'),
+  ],
+
+  'svc_h': 'What a Gym Corporation Usually Needs Next',
+  'proc_h': 'How a Gym Corporation Files a Nil Year',
+  'proc_lede': 'Four steps. The first is a question about the billing, and it '
+               'decides everything after it.',
+  'proc_note': 'A merchant statement usually answers step one:',
+  'steps': [
+    ('Confirm the Billing Was Off',
+     'Membership runs, drop-in takings, cancellation fees and floor rent are '
+     'all checked for the year before it is treated as nil.'),
+    ('Account for Anything Sold',
+     'Equipment sold or traded is a disposition and belongs in its year, '
+     'which rules that year out of the nil price.'),
+    ('Assemble the T2',
+     'Schedules 100, 125, 141 and 50, plus Schedule 24 on a first return and '
+     'Schedule 8 while the equipment is still owned.'),
+    ('Authorise, Then Transmit',
+     'A T183CORP covers one year. Once the set is authorised the returns go '
+     'across and the Agency confirms by email inside 3 business days.'),
+  ],
+
+  'price_h': 'Nil T2 Filing Cost for a Gym Corporation',
+  'price_eyebrow': 'One Fee Per Tax Year',
+  'price_text': (
+    'Where the billing was off and nothing was sold, the year costs $300.00 '
+    'plus HST per tax year. That figure covers the T2, the GIFI schedules '
+    'where required, Schedule 50, Schedule 24 on a first return, the '
+    'T183CORP package with secure e-signing, CPA review before transmission, '
+    'electronic transmission by a registered EFILE electronic filer, one '
+    'corrected transmission where the Agency rejects the first, and the CRA '
+    'confirmation emailed within 3 business days. Find a membership run or a '
+    'sale in the year and it becomes an ordinary corporate return at $350.00 '
+    'plus HST per year at gondaliyacpa.ca.'),
+
+  'geo_h': 'Gym Corporation Filing Across Canada',
+  'cta_h': 'File the Years the Lights Were Off',
+
+  'faq': [
+   ('The gym closed last year. Is the corporation finished with returns?',
+    'Not until it is dissolved. Closing the location ends the business, and '
+    'the corporation keeps reaching year ends and owing a return for each '
+    'one.'),
+   ('Two memberships were still being charged. Does that matter?',
+    'It does. Any membership collected in the year is revenue to the '
+    'corporation, so that year is an ordinary return at $350.00 plus HST per '
+    'year at gondaliyacpa.ca rather than a nil filing.'),
+   ('I train a few clients privately now. Does that affect the corporation?',
+    'Not where the clients pay you rather than the corporation. That income '
+    'is reported on your personal return and the corporate year can be nil.'),
+   ('We sold the treadmills and racks. Which year does that land in?',
+    'The year of the sale, as a disposition, whether it produced a gain or a '
+    'loss. The years before and after can still be nil.'),
+   ('People paid for a year of membership they never used. Is that income?',
+    'It was income when it was earned, and what is left unused sits on the '
+    'balance sheet as an amount owed. Carrying that balance does not make a '
+    'later year active.'),
+   ('A member was charged a cancellation fee after we closed. Nil or not?',
+    'Not nil for that year. A cancellation or freeze fee collected by the '
+    'corporation is its revenue, however small the amount.'),
+   ('The equipment is in a storage unit we pay for personally. Does that count?',
+    'A cost you carried yourself and the corporation did not claim leaves the '
+    'corporate year with nothing in it either way.'),
+   ('The lease was taken over by another operator. Is the year nil?',
+    'Only if nothing was paid to the corporation for it. A payment to assume '
+    'the lease, or for the equipment that came with it, is reportable in the '
+    'year received.'),
+   ('There are five unfiled years. How is that handled?',
+    'As a set. Each year is its own T2 and T183CORP at $300.00 plus HST per '
+    'tax year, transmitted from the earliest year forward.'),
+   ('Can the corporation be dissolved with years outstanding?',
+    'No. They go in first, a final return follows six months after the '
+    'dissolution date, and no clearance certificate is issued while a year is '
+    'missing.'),
+  ],
+ },
+
+ 'daycare-corporations': {
+  'name':   'Daycare Corporations',
+  'short':  'daycare corporation',
+  'plural': 'daycare corporations',
+  'kw':     'nil t2 for daycare corporation',
+  'title':  'Daycare Corporation Nil T2 | Years With No Children',
+  'desc':   'A daycare corporation owes a T2 for every year it exists, '
+            'licence or no licence. When a year with no enrolment is nil, and '
+            'what funding payments do to it.',
+
+  'h1':   'Nil T2 Filing for Daycare Corporations',
+  'lede': 'Holding the licence is not the same as running the centre. In a '
+          'year with no children enrolled and no funding received, the '
+          'return is $300.00 plus HST per tax year.',
+
+  'intro_h': 'Flat-Fee Nil T2 Filing for Daycare Corporations',
+  'intro': (
+    'A childcare corporation can sit between operating periods for a long '
+    'while. The licence may be held or surrendered, the rooms may be leased '
+    'or empty, and the corporation keeps arriving at year ends that each owe '
+    'a return. Those years are $300.00 plus HST per tax year.',
+    'Whether the centre closed, enrolment never restarted after a move, the '
+    'operation was transferred to another corporation, or the licence lapsed '
+    'while the premises sat, the year is tested against parent fees, any '
+    'government childcare funding received, and anything sold out of the '
+    'rooms. The return carries Schedules 100, 125, 141 and 50 and is '
+    'transmitted electronically. A year with fees or funding in it goes to '
+    'the full service.'),
+
+  'notnil_h': 'What an Unfiled Year Costs a Daycare Corporation',
+  'notnil_boxes': [
+    ('The Licence and the Return Are Separate',
+     'Surrendering a licence stops the childcare. It does nothing at all to '
+     'the corporate tax years.'),
+    ('A Demand Can Reach Back Years',
+     'Where several years are outstanding the Agency can call for all of them '
+     'in one written demand.'),
+    ('Reopening Means Filing First',
+     'A corporation with holes in its filing record is a poor vehicle for a '
+     'new licence application or a new lease.'),
+    ('Funding Bodies Read the Record',
+     'Where public money was involved, the corporate filings tend to be '
+     'looked at, and gaps draw questions.'),
+  ],
+  'notnil_text': (
+    'These corporations are often kept deliberately, because the licence took '
+    'years to obtain or because another site is being looked for. Each year '
+    'of waiting is a tax year with a return behind it.',
+    'A year with no enrolment and no funding is $300.00 plus HST per tax '
+    'year. Outstanding years are worked as one job and sent from the oldest, '
+    'so the balances follow through correctly.'),
+
+  'sched_h': 'Which T2 Schedules a Daycare Corporation Files',
+  'sched_rows': [
+    ('Schedule 100', 'Balance sheet information', 'Required',
+     'Classroom and playground equipment, leasehold improvements, deposits '
+     'held and any shareholder balance stay on the balance sheet.'),
+    ('Schedule 125', 'Income statement information', 'Required',
+     'Nil fee income and nil wage cost, for a year in which no child was '
+     'enrolled.'),
+    ('Schedule 141', 'Notes checklist', 'Required',
+     'Goes in with the two GIFI schedules and records the basis the figures '
+     'were prepared on.'),
+    ('Schedule 50', 'Shareholder information', 'Required',
+     'Each holder of 10% or more, which for a centre is frequently a couple '
+     'or two operating families.'),
+    ('Schedule 24', 'First-time filer information', 'First return only',
+     'With the first T2 only, covering the stub period from incorporation.'),
+    ('Schedule 8', 'Capital cost allowance', 'While the fit-out is owned',
+     'Playground structures, cots, shelving and leasehold improvements are '
+     'depreciable property until disposed of.'),
+  ],
+  'sched_note': 'Source: what the Canada Revenue Agency requires on a T2 '
+                'return, taken here against a childcare corporation that '
+                'enrolled nobody for the whole of the tax year. Reviewed '
+                '23 November 2026.',
+  'sched_boxes': [
+    ('Funding Received Is Revenue',
+     'A government childcare funding or wage-enhancement payment received by '
+     'the corporation is its income for the year it arrives, and the year is '
+     'not nil.'),
+    ('A Held Licence Is Not Activity',
+     'Keeping a licence while the rooms are empty puts nothing on Schedule '
+     '125. Enrolling one child does.'),
+    ('Subletting the Rooms Is Rent',
+     'Where another operator pays the corporation for the space, that is '
+     'rent received and the corporation is not nil for that year.'),
+  ],
+  'chk_yes': [
+    'No parent fee was received by the corporation in the year',
+    'No government childcare funding or subsidy reached it',
+    'No other operator paid it for use of the rooms',
+    'No equipment or furnishing of its was sold',
+    'No interest or dividend was posted to an account in its name',
+  ],
+  'chk_no': [
+    'A parent fee or deposit was applied to care given in the year',
+    'A funding, subsidy or wage-enhancement payment arrived',
+    'Rent was collected from another operator using the space',
+    'Playground or classroom equipment was sold off',
+    'The centre, its licence capacity or its goodwill changed hands',
+  ],
+  'chk_both': [
+    'A T2 return for every tax year ending while the corporation lives',
+    'One T183CORP authorisation per return, before it can be sent',
+    'Schedule 50 disclosure at the 10% threshold',
+    'The corporate registry filing, which is not the tax return',
+    'A clearance certificate, as the last step before dissolution',
+  ],
+
+  'why_h': 'Why Daycare Corporations Use This Service',
+  'why': [
+    ('For the Years Between Centres',
+     'A closed site, a lapsed licence, a search for new premises. Those are '
+     'the years this fee covers.'),
+    ('Funding Is the First Question Asked',
+     'Public childcare money arriving in a quiet year is the usual reason one '
+     'is not nil, so it is checked before a price is given.'),
+    ('The Same Fee Each Empty Year',
+     'A year with no enrolment and no funding is $300.00 plus HST per tax '
+     'year, whatever the length of the run.'),
+    ('Operating Years Leave This Page',
+     'Find a fee or a funding payment and the year belongs to the full '
+     'corporate service, priced on what it actually contains.'),
+  ],
+  'strip': [
+    ('Licence Down, Returns Up',
+     'Giving up the licence leaves the filing obligation exactly where it '
+     'was.'),
+    ('From the Oldest Forward',
+     'The set is transmitted in date order so each opening balance agrees.'),
+    ('Signed in a Browser',
+     'Nothing in this needs an envelope or a scanner.'),
+  ],
+
+  'svc_h': 'What a Daycare Corporation Usually Needs Next',
+  'proc_h': 'How a Daycare Corporation Files',
+  'proc_lede': 'The filing form asks four things. Fees and funding are asked '
+               'about first, because they settle the rest.',
+  'proc_note': 'Step one is usually a short answer:',
+  'steps': [
+    ('Test for Fees and Funding',
+     'Parent fees, subsidies, wage-enhancement money and rent from another '
+     'operator are all measured before the year is called nil.'),
+    ('Fix the Year End on Record',
+     'A childcare corporation often runs a year end set around the programme '
+     'year. It has to agree with the Agency record to transmit.'),
+    ('Build the Return Out',
+     'Two GIFI schedules and the notes checklist carry the figures. '
+     'Schedule 50 carries the ownership, Schedule 24 joins a first filing, '
+     'and Schedule 8 stays on while the rooms are still fitted out.'),
+    ('Authorise, Then Let Them Go',
+     'Nothing leaves without a signed T183CORP behind it. Once the run is '
+     'authorised the Agency comes back by email, usually well inside 3 '
+     'business days.'),
+  ],
+
+  'price_h': 'Nil T2 Filing Cost for a Daycare Corporation',
+  'price_eyebrow': 'One Fee Per Tax Year',
+  'price_text': (
+    'Count the programme years with nobody enrolled and multiply: each one '
+    'is $300.00 plus HST per tax year. Each of those fees carries the T2, '
+    'the GIFI schedules where required, Schedule 50, '
+    'Schedule 24 on a first return, the T183CORP package with secure '
+    'e-signing, CPA review before transmission, electronic transmission by a '
+    'registered EFILE electronic filer, one corrected transmission where the '
+    'Agency rejects the first, and the CRA confirmation emailed within 3 '
+    'business days. Where parent fees, funding or rent turn up in the year, '
+    'it is an ordinary corporate return at $350.00 plus HST per year at '
+    'gondaliyacpa.ca.'),
+
+  'geo_h': 'Childcare Corporation Filing Across Canada',
+  'cta_h': 'File the Years the Rooms Were Empty',
+
+  'faq': [
+   ('We surrendered the licence. Does the corporation stop filing?',
+    'No. The licence governs childcare and the T2 governs the corporation. '
+    'Returns keep falling due until the corporation itself is dissolved.'),
+   ('A funding payment came through after we closed. Is the year nil?',
+    'No. Money received by the corporation is its income in the year it '
+    'arrives, so that year is an ordinary return at $350.00 plus HST per year '
+    'at gondaliyacpa.ca.'),
+   ('Another operator rents the rooms from us now. What does that make us?',
+    'A corporation collecting rent, which is not nil for any year it '
+    'collected. That year is a full T2 with income to report.'),
+   ('I now work as an employee at someone else’s centre. Does that change it?',
+    'Not the corporate year. Your wages are personal income and have no '
+    'bearing on whether the corporation had a nil year.'),
+   ('The playground equipment is still in the yard. Does holding it count?',
+    'No. It carries on down Schedule 8 while the corporation owns it. '
+    'Selling it is what puts a figure in a year.'),
+   ('Parents left deposits we never used. Where do those sit?',
+    'On the balance sheet as an amount owed, until they are applied to care '
+    'or refunded. Holding them is not activity.'),
+   ('We transferred the operation to a new corporation. Does the old one file?',
+    'Yes, for as long as it exists, and anything transferred between the two '
+    'is reportable in the year it moved.'),
+   ('Our fiscal year end is in August, not December. Is that a problem?',
+    'Not if it matches what the Agency holds. A mismatch is the usual cause '
+    'of a rejected transmission.'),
+   ('Three years were missed. Can they be dealt with together?',
+    'They can. Every year stands on its own at $300.00 plus HST per tax year '
+    'with its own authorisation, and the set is worked from the oldest so the '
+    'balances follow through.'),
+   ('In what order does winding the corporation up happen?',
+    'Returns, then dissolution, then a final T2 within six months of that '
+    'date. The certificate that releases the corporation is withheld for as '
+    'long as any year is still unfiled.'),
+  ],
+ },
+
+ 'amazon-fba-corporations': {
+  'name':   'Amazon FBA Corporations',
+  'short':  'Amazon FBA corporation',
+  'plural': 'Amazon FBA corporations',
+  'kw':     'nil t2 for amazon fba corporation',
+  'title':  'Amazon FBA Corporation Nil T2 | Dormant Seller Years',
+  'desc':   'An FBA corporation files a T2 for every year it exists. Why '
+            'stock left in a fulfilment centre keeps selling, and what a nil '
+            'year costs.',
+
+  'h1':   'Nil T2 Filing for Amazon FBA Corporations',
+  'lede': 'Stock left in a fulfilment centre does not stop selling because '
+          'you stopped looking. Where nothing sold and nothing was '
+          'disbursed, the year is $300.00 plus HST per tax year.',
+
+  'intro_h': 'Flat-Fee Nil T2 Filing for Amazon FBA Corporations',
+  'intro': (
+    'An FBA seller goes quiet differently from a shop. There is no lease to '
+    'end and nobody to let go, so the corporation carries on with a '
+    'marketplace account attached to it and a year end arriving every twelve '
+    'months. Where the year holds nothing, it is $300.00 plus HST per tax '
+    'year.',
+    'Whether the listings were taken down, the account was deactivated, the '
+    'remaining units were removed or disposed of, or the brand was moved into '
+    'a different corporation, the year is tested against marketplace sales, '
+    'disbursements received, reimbursements for lost units and anything the '
+    'held funds earned. Schedules 100, 125, 141 and 50 are prepared and the '
+    'return is transmitted electronically. A year with a disbursement in it '
+    'goes to the full service.'),
+
+  'notnil_h': 'What an Unfiled Year Costs an Amazon FBA Corporation',
+  'notnil_boxes': [
+    ('No Storefront, Same Obligation',
+     'Nothing physical closes when an FBA business stops. The corporation '
+     'keeps producing tax years regardless.'),
+    ('An Unfiled Year Does Not Expire',
+     'There is no point at which an outstanding return stops being '
+     'outstanding. It waits, and a written demand puts a date on it.'),
+    ('The Marketplace Keeps Its Own Records',
+     'Sales and disbursements are documented by the platform whether or not '
+     'the corporation reported them.'),
+    ('Reopening or Selling Needs the Years',
+     'Anyone buying a brand, or a lender behind them, reads the corporate '
+     'filings before terms are agreed.'),
+  ],
+  'notnil_text': (
+    'The pattern here is a seller who stopped paying attention rather than '
+    'one who closed anything. The corporation stays, the account stays '
+    'attached to it, and the unfiled years build up quietly.',
+    'Each genuinely empty year is $300.00 plus HST per tax year. Where there '
+    'are several, they are prepared together and transmitted oldest first so '
+    'the inventory and retained earnings carry through.'),
+
+  'sched_h': 'Which T2 Schedules an Amazon FBA Corporation Files',
+  'sched_rows': [
+    ('Schedule 100', 'Balance sheet information', 'Required',
+     'Unsold units still at the fulfilment centre, any balance held by the '
+     'marketplace, share capital and shareholder loans all appear here.'),
+    ('Schedule 125', 'Income statement information', 'Required',
+     'Nil sales and nil fees, for a year in which no order was fulfilled and '
+     'nothing was claimed.'),
+    ('Schedule 141', 'Notes checklist', 'Required',
+     'Filed with the two GIFI schedules; it names who compiled them and on '
+     'what basis.'),
+    ('Schedule 50', 'Shareholder information', 'Required',
+     'Any holder of 10% or more, which for a single-operator seller is one '
+     'name.'),
+    ('Schedule 24', 'First-time filer information', 'First return only',
+     'Attached to the corporation’s first T2 and never repeated.'),
+    ('Schedule 8', 'Capital cost allowance', 'Only where assets are held',
+     'A photography setup, a laptop or packing equipment, where the '
+     'corporation owns any. Many FBA sellers own none at all.'),
+  ],
+  'sched_note': 'Source: the Canada Revenue Agency’s T2 schedule '
+                'requirements, read against a marketplace seller corporation '
+                'that fulfilled no order in the tax year. Reviewed '
+                '23 November 2026.',
+  'sched_boxes': [
+    ('Units in a Warehouse Still Sell',
+     'An active listing against remaining stock can fulfil an order without '
+     'anyone touching the account. One sale makes the year an ordinary '
+     'return.'),
+    ('Unsold Stock Is Not Income',
+     'Inventory sitting at a fulfilment centre is an asset on Schedule 100. '
+     'It produces nothing until it is sold or written off.'),
+    ('A Reimbursement Is Still Receipt',
+     'Money credited for units lost or damaged in the warehouse is received '
+     'by the corporation, and it lands in the year it was credited.'),
+  ],
+  'chk_yes': [
+    'No order was fulfilled for the corporation in the year',
+    'No disbursement was paid out to it from the marketplace',
+    'No reimbursement for lost or damaged units was credited',
+    'No remaining stock was sold off or liquidated elsewhere',
+    'Nothing the corporation holds was credited with interest',
+  ],
+  'chk_no': [
+    'An order shipped from remaining stock, however few units',
+    'A disbursement landed in the corporate bank account',
+    'The platform credited a reimbursement or a refund adjustment',
+    'Leftover inventory was sold in bulk to a liquidator',
+    'The brand, the listings or the account itself was sold',
+  ],
+  'chk_both': [
+    'One return per tax year, for as long as the corporation is registered',
+    'A T183CORP signed off before each of those returns can be transmitted',
+    'Schedule 50 wherever a shareholding reaches one tenth',
+    'Any sales tax registration dealt with on its own cycle',
+    'Clearance ahead of dissolving, which the unfiled years block',
+  ],
+
+  'why_h': 'Why Amazon FBA Corporations Use This Service',
+  'why': [
+    ('Written for the Dormant Seller',
+     'Delisted, deactivated, or left running with nothing moving. Those are '
+     'the years this fee is for.'),
+    ('Disbursements Are Checked First',
+     'A trickle of sales from leftover stock is the usual reason one of these '
+     'years is not nil, so it is settled before a price is quoted.'),
+    ('A Single Figure Per Year',
+     'An empty year is $300.00 plus HST per tax year, with no hourly billing '
+     'and no minimum number of years.'),
+    ('Selling Years Are Routed On',
+     'A year with disbursements in it is prepared as an ordinary corporate '
+     'return at the higher fee.'),
+  ],
+  'strip': [
+    ('Dormant Is Not Closed',
+     'An account nobody logs into is still attached to a live corporation.'),
+    ('Earliest First, Always',
+     'Inventory values only reconcile when the years go in date order.'),
+    ('Entirely Online',
+     'Authorising each year takes a browser and nothing else.'),
+  ],
+
+  'svc_h': 'What an Amazon FBA Corporation Usually Needs Next',
+  'proc_h': 'How an Amazon FBA Corporation Files',
+  'proc_lede': 'Four steps from the filing form. The first one is a look at '
+               'the payout history.',
+  'proc_note': 'One year of settlement reports covers most of it:',
+  'steps': [
+    ('Pull the Disbursement History',
+     'Sales, payouts, reimbursements and refund adjustments for the year are '
+     'all measured before it is treated as nil.'),
+    ('Value What Is Still in the Warehouse',
+     'Remaining units are an asset rather than income, and they belong on the '
+     'balance sheet at cost.'),
+    ('Draft the Return',
+     'Schedules 100, 125, 141 and 50, with Schedule 24 where it is the first '
+     'return and Schedule 8 only if the corporation owns assets.'),
+    ('Sign Off and Submit',
+     'Each year carries its own T183CORP. The set is submitted '
+     'electronically and the Agency confirms by email inside 3 business '
+     'days.'),
+  ],
+
+  'price_h': 'Nil T2 Filing Cost for an Amazon FBA Corporation',
+  'price_eyebrow': 'One Fee Per Tax Year',
+  'price_text': (
+    'A year with no disbursement in it is $300.00 plus HST per tax year. '
+    'Behind that figure sit the T2, the GIFI schedules where required, '
+    'Schedule 50, Schedule 24 on a first return, the T183CORP package with '
+    'secure e-signing, CPA review before transmission, electronic '
+    'transmission by a registered EFILE electronic filer, one corrected '
+    'transmission where the Agency rejects the first, and the CRA '
+    'confirmation emailed within 3 business days. A year with marketplace '
+    'sales or investment income in it is $350.00 plus HST per year at '
+    'gondaliyacpa.ca.'),
+
+  'geo_h': 'Marketplace Seller Corporation Filing Across Canada',
+  'cta_h': 'File the Years Nothing Shipped',
+
+  'faq': [
+   ('I stopped selling two years ago but never closed the company. What now?',
+    'The returns for those years are still due, and they can be prepared as a '
+    'set. The corporation goes on producing tax years until it is dissolved.'),
+   ('A few units sold from leftover stock. Is the year still nil?',
+    'No. Any sale is revenue to the corporation, so that year is an ordinary '
+    'return at $350.00 plus HST per year at gondaliyacpa.ca.'),
+   ('There is stock sitting in a fulfilment centre. Does holding it count?',
+    'Holding it does not. It is an asset on the balance sheet at cost until '
+    'it is sold, written off or removed.'),
+   ('The platform reimbursed us for units it lost. Where does that go?',
+    'Into the year it was credited, as money received by the corporation. '
+    'That year is not nil.'),
+   ('Our account was deactivated. Does that end the obligation?',
+    'No. A deactivated marketplace account has no effect on the corporate '
+    'tax years, which keep arriving.'),
+   ('I moved the brand into a new corporation. Does the old one still file?',
+    'Yes, until it is dissolved, and the transfer itself is reportable in the '
+    'year it happened.'),
+   ('A storage fee was charged while nothing sold. Is the year nil?',
+    'It can be, provided the corporation claimed nothing and received '
+    'nothing. A fee charged against a zero balance does not create income.'),
+   ('I sell on my own account now, not the corporation’s. Does that matter?',
+    'Not to the corporate year. What the corporation did not receive is not '
+    'its income, and the year can be nil.'),
+   ('Four years were never filed. Is there a limit?',
+    'No limit. Each is its own T2 with its own T183CORP at $300.00 plus HST '
+    'per tax year, sent from the earliest forward.'),
+   ('How do we close the corporation for good?',
+    'File the outstanding years, then a final T2 within six months of '
+    'dissolution. A clearance certificate is not issued while a year is '
+    'outstanding.'),
+  ],
+ },
+
+ 'crypto-trading-corporations': {
+  'name':   'Crypto Trading Corporations',
+  'short':  'crypto trading corporation',
+  'plural': 'crypto trading corporations',
+  'kw':     'nil t2 for crypto trading corporation',
+  'title':  'Crypto Trading Corporation T2 | When a Year Is Not Nil',
+  'desc':   'A corporation that traded, swapped or staked crypto in a year is '
+            'not nil. The narrow case where a holding year is, and what the '
+            'return costs.',
+
+  'h1':   'Nil T2 Filing for Crypto Trading Corporations',
+  'lede': 'A corporation that traded, swapped or staked in the tax year is '
+          'not nil for that year. Where the wallet only sat there, the '
+          'return is $300.00 plus HST per tax year.',
+
+  'intro_h': 'Flat-Fee Nil T2 Filing for Crypto Trading Corporations',
+  'intro': (
+    'The part that decides it comes first. A trading or investment '
+    'corporation is not a nil corporation in any year it earned, and with '
+    'crypto that bar is low: a swap of one coin for another is a disposition, '
+    'and staking or lending pays without any trade at all. Any of those makes '
+    'the year a full T2 with income to report, at $350.00 plus HST per year '
+    'at gondaliyacpa.ca.',
+    'The nil case is real but narrow. It is a complete tax year in which the '
+    'corporation bought nothing, sold nothing, swapped nothing, staked '
+    'nothing and was paid nothing, with the holdings sitting untouched in a '
+    'wallet from one year end to the next. Where the year genuinely looks '
+    'like that, it is $300.00 plus HST per tax year, prepared with Schedules '
+    '100, 125, 141 and 50 and transmitted electronically.'),
+
+  'notnil_h': 'What an Unfiled Year Costs a Crypto Trading Corporation',
+  'notnil_boxes': [
+    ('A Trading Year Is Never Nil',
+     'One swap, one sale or one staking reward and the year is an ordinary '
+     'return. This is tested first and it is not a matter of judgement.'),
+    ('Every Disposition Is Reportable',
+     'Crypto traded for crypto counts, as does crypto spent on goods. No cash '
+     'has to be involved for a year to have a disposition in it.'),
+    ('Records Get Harder With Time',
+     'Exchange histories and wallet records are hard to reconstruct years '
+     'later, and a run of unfiled years makes that worse.'),
+    ('Cashing Out Draws the Questions',
+     'A conversion to dollars through a regulated exchange is where an '
+     'unfiled history tends to surface.'),
+  ],
+  'notnil_text': (
+    'Most of these corporations were set up to trade, which means most of '
+    'their years are ordinary returns rather than nil ones. What this page '
+    'covers is the year in between: the one where a position was held and '
+    'nothing was done with it.',
+    'That year is $300.00 plus HST per tax year, and it is priced only after '
+    'the trading test. A trading year is quoted as an ordinary corporate '
+    'return rather than squeezed in here.'),
+
+  'sched_h': 'Which T2 Schedules a Crypto Trading Corporation Files',
+  'sched_rows': [
+    ('Schedule 100', 'Balance sheet information', 'Required',
+     'The holdings themselves, at cost, plus share capital and any '
+     'shareholder loan, keep the balance sheet occupied in every year.'),
+    ('Schedule 125', 'Income statement information', 'Required',
+     'Nil in a holding year. In any year with a trade, a swap or a reward it '
+     'carries figures and the return is not nil.'),
+    ('Schedule 141', 'Notes checklist', 'Required',
+     'Travels with the two GIFI schedules and states who prepared the '
+     'figures.'),
+    ('Schedule 50', 'Shareholder information', 'Required',
+     'Any holder of 10% or more of the shares is named.'),
+    ('Schedule 24', 'First-time filer information', 'First return only',
+     'Filed with the first T2 after incorporation, then not again.'),
+    ('Schedule 8', 'Capital cost allowance', 'Rarely',
+     'Crypto holdings are not depreciable property. A mining rig or hardware '
+     'the corporation owns would be.'),
+  ],
+  'sched_note': 'Source: the T2 schedule requirements the Canada Revenue '
+                'Agency sets, applied to a corporation holding crypto assets '
+                'with no transactions in the tax year. Reviewed '
+                '23 November 2026.',
+  'sched_boxes': [
+    ('A Swap Is a Disposition',
+     'Exchanging one crypto asset for another is a disposition of the first, '
+     'reportable in the year it happened, with no cash involved.'),
+    ('Staking and Lending Pay Without a Trade',
+     'Rewards or interest credited to the corporation are income to it, and '
+     'they arrive in years when nothing was traded at all.'),
+    ('Unrealised Movement Is Not Income',
+     'Holdings rising or falling in value while untouched put nothing on '
+     'Schedule 125. The position carries forward at cost.'),
+  ],
+  'chk_yes': [
+    'Nothing was bought, sold or swapped by the corporation in the year',
+    'No staking, lending or liquidity reward was credited to it',
+    'No holding was spent on goods, services or fees',
+    'No transfer out was made to anyone, including a shareholder',
+    'No cash account of the corporation earned interest',
+  ],
+  'chk_no': [
+    'One asset was exchanged for another, at any size',
+    'A position was closed, in whole or in part',
+    'A staking, lending or airdrop reward was received',
+    'Crypto was used to pay for something',
+    'Holdings were moved out to a shareholder or a related party',
+  ],
+  'chk_both': [
+    'A return covering each tax year the corporation remains in existence',
+    'An authorised T183CORP accompanying every return filed',
+    'Shareholder disclosure on Schedule 50 at the 10% level',
+    'A transaction record kept for each year, nil or otherwise',
+    'Clearance before the corporation can be wound up',
+  ],
+
+  'why_h': 'Why Crypto Trading Corporations Use This Service',
+  'why': [
+    ('The Trading Test Comes Before the Fee',
+     'Every year is checked for trades, swaps and rewards first. A year that '
+     'fails is not taken at this price.'),
+    ('For Holding Years Only',
+     'A year in which a position was held and nothing done with it is what '
+     'this fee is written for.'),
+    ('One Price Where the Year Qualifies',
+     'A clean holding year is $300.00 plus HST per tax year, however many are '
+     'outstanding.'),
+    ('Trading Years Are Quoted as Trading Years',
+     'A year with dispositions in it is prepared as an ordinary corporate '
+     'return, priced on what it actually involves.'),
+  ],
+  'strip': [
+    ('Holding Can Be Nil, Trading Cannot',
+     'The distinction is the whole of it.'),
+    ('In Date Order',
+     'Cost base only carries forward correctly if the years do.'),
+    ('Authorised Electronically',
+     'Each year is signed off in a secure portal.'),
+  ],
+
+  'svc_h': 'What a Crypto Trading Corporation Usually Needs Next',
+  'proc_h': 'How a Crypto Trading Corporation Files a Holding Year',
+  'proc_lede': 'Four steps. The first one rules out most years, which is the '
+               'point of doing it first.',
+  'proc_note': 'Expect the transaction check to disqualify some years:',
+  'steps': [
+    ('Run the Transaction Check',
+     'Every buy, sell, swap, reward and transfer in the year is looked for. '
+     'One of any of them and the year is not filed at the nil price.'),
+    ('Carry the Cost Base Forward',
+     'Holdings untouched through the year keep their existing cost, which '
+     'becomes the opening figure for the next return.'),
+    ('Prepare the Return',
+     'Schedules 100, 125, 141 and 50 for the year, with Schedule 24 where '
+     'this is the first return.'),
+    ('Authorise and Transmit',
+     'One T183CORP for each qualifying year, transmitted electronically, with '
+     'the Agency confirmation emailed inside 3 business days.'),
+  ],
+
+  'price_h': 'Nil T2 Filing Cost for a Crypto Trading Corporation',
+  'price_eyebrow': 'One Fee Per Qualifying Year',
+  'price_text': (
+    'A year that passes the transaction check is $300.00 plus HST per tax '
+    'year. That covers the T2, the GIFI schedules where required, Schedule '
+    '50, Schedule 24 on a first return, the T183CORP package with secure '
+    'e-signing, CPA review before transmission, electronic transmission by a '
+    'registered EFILE electronic filer, one corrected transmission where the '
+    'Agency rejects the first, and the CRA confirmation emailed within 3 '
+    'business days. Any year with a trade, a swap, a reward or a disposal in '
+    'it is a full T2 at $350.00 plus HST per year at gondaliyacpa.ca.'),
+
+  'geo_h': 'Crypto Corporation Filing Across Canada',
+  'cta_h': 'Test the Holding Years and File the Ones That Qualify',
+
+  'faq': [
+   ('Can a crypto corporation ever file a nil return?',
+    'Only for a year in which it transacted nothing at all: no buy, no sale, '
+    'no swap, no reward and no transfer out, with the holdings untouched. Any '
+    'year with one of those is a full T2 with income to report at $350.00 '
+    'plus HST per year at gondaliyacpa.ca.'),
+   ('I swapped one coin for another but never cashed out. Is that a year?',
+    'Yes. A swap is a disposition of the asset given up, reportable in that '
+    'year whether or not any dollars changed hands.'),
+   ('The holdings doubled in value. Does that make the year active?',
+    'No. An unrealised change in value is not income. The position carries '
+    'forward at its existing cost and the year can still be nil.'),
+   ('We received staking rewards and nothing else. Nil or not?',
+    'Not nil. Rewards credited to the corporation are income to it in the '
+    'year received, even in a year with no trading.'),
+   ('An airdrop arrived unasked. Does that count?',
+    'It is something received by the corporation, so the year is one to treat '
+    'as an ordinary return rather than a nil filing.'),
+   ('The wallet is self-custodied with no exchange account. Does that change anything?',
+    'No. Where the assets are held makes no difference to whether a return is '
+    'due or to what has to be reported.'),
+   ('I traded in my own name, not the corporation’s. Is the company nil?',
+    'It can be, where nothing moved through the corporation. The test is '
+    'which holder transacted, not who gave the instruction.'),
+   ('We paid a supplier in crypto. Is that year nil?',
+    'No. Spending a holding is disposing of it, and the disposition is '
+    'reported in the year it was spent.'),
+   ('Several years were never filed. How are they handled?',
+    'Each is tested on its own. Qualifying years are $300.00 plus HST per tax '
+    'year, trading years are quoted as ordinary returns, and the whole set is '
+    'filed from the earliest forward.'),
+   ('We want to move the holdings out and close the company. What order?',
+    'The outstanding returns first. Moving holdings to a shareholder is '
+    'itself a disposition to report, and no clearance certificate is issued '
+    'while a year is missing.'),
+  ],
+ },
+
+ 'photography-corporations': {
+  'name':   'Photography Corporations',
+  'short':  'photography corporation',
+  'plural': 'photography corporations',
+  'kw':     'nil t2 for photography corporation',
+  'title':  'Photography Corporation Nil T2 | Years Without Shoots',
+  'desc':   'A photography corporation files for every tax year it exists. '
+            'Why a stock licence fee years later ends the nil year, and what '
+            'the return costs.',
+
+  'h1':   'Nil T2 Filing for Photography Corporations',
+  'lede': 'The bodies and lenses are in a bag and the corporation that owns '
+          'them keeps arriving at year ends. Where no shoot was billed and '
+          'no licence fee came in, the return is $300.00 plus HST per tax '
+          'year.',
+
+  'intro_h': 'Flat-Fee Nil T2 Filing for Photography Corporations',
+  'intro': (
+    'Photography corporations go quiet without closing. There is usually no '
+    'studio lease and no staff, so what remains is a corporation holding some '
+    'gear and a back catalogue, with a return falling due every year. An '
+    'empty year is $300.00 plus HST per tax year.',
+    'Whether you went in-house, took salaried work, stopped taking bookings, '
+    'or shoot occasionally in your own name now, the year is tested against '
+    'shoots invoiced, print and album sales, licence or stock royalties '
+    'arriving from earlier work, and any gear sold. Schedules 100, 125, 141 '
+    'and 50 are prepared and the return goes across electronically. A year '
+    'with any of that in it goes to the full service.'),
+
+  'notnil_h': 'What an Unfiled Year Costs a Photography Corporation',
+  'notnil_boxes': [
+    ('Putting the Camera Down Changes Nothing',
+     'The corporation reaches a year end whether or not a shutter was '
+     'pressed, and each one owes a return.'),
+    ('Nothing About This Lapses',
+     'An outstanding year stays outstanding until it is filed. A written '
+     'demand is what attaches a deadline to it.'),
+    ('The Back Catalogue Can Still Earn',
+     'Images licensed years ago can pay again, putting revenue into a year '
+     'nobody was watching.'),
+    ('Gear Is on the Books',
+     'Bodies, lenses and lighting sit on the schedules until they are sold or '
+     'written off, and that needs the years filed.'),
+  ],
+  'notnil_text': (
+    'The corporation usually stays because the gear is in it and because '
+    'another commission might come. Those are good reasons to keep it and '
+    'they do not change the fact that each year of keeping it is a tax year.',
+    'An empty year costs $300.00 plus HST per tax year. A run of them is '
+    'prepared as one job and sent from the earliest year so the gear values '
+    'follow through.'),
+
+  'sched_h': 'Which T2 Schedules a Photography Corporation Files',
+  'sched_rows': [
+    ('Schedule 100', 'Balance sheet information', 'Required',
+     'Camera bodies, lenses, lighting, any deposit held against a future '
+     'booking and the shareholder balance all sit here.'),
+    ('Schedule 125', 'Income statement information', 'Required',
+     'Nil shoot revenue and nil expenses, for a year with nothing invoiced '
+     'and nothing claimed.'),
+    ('Schedule 141', 'Notes checklist', 'Required',
+     'Accompanies the two GIFI schedules, recording who prepared them and '
+     'how.'),
+    ('Schedule 50', 'Shareholder information', 'Required',
+     'Holders of 10% or more, usually the single photographer who owns it '
+     'outright.'),
+    ('Schedule 24', 'First-time filer information', 'First return only',
+     'Attached to the first return the corporation ever files, and to no '
+     'other.'),
+    ('Schedule 8', 'Capital cost allowance', 'While the gear is owned',
+     'Bodies, lenses, lighting and computers are depreciable property until '
+     'sold or taken out, used or not.'),
+  ],
+  'sched_note': 'Source: the schedule requirements for a T2 return set by the '
+                'Canada Revenue Agency, read against a photography '
+                'corporation that invoiced no shoot in the tax year. '
+                'Reviewed 23 November 2026.',
+  'sched_boxes': [
+    ('A Licence Fee Years Later Still Counts',
+     'A stock sale or a usage licence on old work is revenue to the '
+     'corporation in the year it is paid, which makes that year an ordinary '
+     'return.'),
+    ('A Booking Deposit Is Not Yet Earned',
+     'A retainer held against a shoot that has not happened sits on '
+     'Schedule 100 as an amount owed, not as income.'),
+    ('Shooting Personally Keeps the Year Clean',
+     'Where a client paid you rather than the corporation, that income is '
+     'yours to report and the corporate year can be nil.'),
+  ],
+  'chk_yes': [
+    'No shoot or session was invoiced by the corporation in the year',
+    'No print, album or digital file sale went through it',
+    'No licence, usage or stock royalty was paid to it',
+    'No camera body, lens or light of its was sold',
+    'No bank or investment account in its name paid it anything',
+  ],
+  'chk_no': [
+    'A shoot was invoiced, even one booked the year before',
+    'A stock agency or publisher paid a royalty or licence fee',
+    'A deposit held earlier was applied to a shoot in the year',
+    'Gear was sold, traded in or passed to a shareholder',
+    'The back catalogue, the brand or the client list was sold',
+  ],
+  'chk_both': [
+    'Each year end the corporation reaches needs its own T2',
+    'Each of those returns needs a T183CORP before it goes',
+    'Schedule 50 applies once anyone holds a tenth of the shares',
+    'The registry annual return runs on a separate calendar',
+    'Clearance comes before the gear leaves and the company closes',
+  ],
+
+  'why_h': 'Why Photography Corporations Use This Service',
+  'why': [
+    ('For the Years Between Commissions',
+     'A year in-house, a year on salary, a year with no bookings. Those are '
+     'what this fee covers.'),
+    ('Royalties Are the First Thing Looked For',
+     'Licence income on old work arriving unannounced is the usual reason one '
+     'of these years is not nil, so it is checked before a price is given.'),
+    ('One Rate Per Quiet Year',
+     'A year with nothing invoiced is $300.00 plus HST per tax year, with no '
+     'retainer and no minimum.'),
+    ('Earning Years Go Elsewhere',
+     'A year with shoot revenue or a royalty in it is prepared as an ordinary '
+     'corporate return at the higher fee.'),
+  ],
+  'strip': [
+    ('Idle Gear, Live Company',
+     'A bag in a cupboard has no bearing on the year end arriving.'),
+    ('Oldest Year Leads',
+     'Gear values only carry forward if the returns are filed in order.'),
+    ('A Browser Is the Whole Tool',
+     'The run of authorisations takes minutes and no paper at all.'),
+  ],
+
+  'svc_h': 'What a Photography Corporation Usually Needs Next',
+  'proc_h': 'How a Photography Corporation Files',
+  'proc_lede': 'Four steps from the filing form, beginning with everything '
+               'that might have paid in.',
+  'proc_note': 'Most of this comes off a year of statements:',
+  'steps': [
+    ('Look for Anything That Paid In',
+     'Shoots invoiced, print sales, licence fees, stock royalties and gear '
+     'sales are all measured before the year is treated as nil.'),
+    ('Split the Personal From the Corporate',
+     'Work paid to you directly is on your own return, which can leave the '
+     'corporate year holding nothing.'),
+    ('Put the Return Together',
+     'Figures on Schedules 100, 125 and 141, ownership on Schedule 50, '
+     'Schedule 24 if this is the corporation\u2019s first filing, and '
+     'Schedule 8 for as long as the gear belongs to it.'),
+    ('Authorise Each Year, Then Send',
+     'A T183CORP per year, transmitted as a set, with the Agency '
+     'confirmation emailed inside 3 business days.'),
+  ],
+
+  'price_h': 'Nil T2 Filing Cost for a Photography Corporation',
+  'price_eyebrow': 'One Fee Per Tax Year',
+  'price_text': (
+    'Quiet years are charged one at a time, at $300.00 plus HST per tax year '
+    'where nothing was invoiced and no royalty arrived. The fee takes in the '
+    'T2, the GIFI schedules where '
+    'required, Schedule 50, Schedule 24 on a first return, the T183CORP '
+    'package with secure e-signing, CPA review before transmission, '
+    'electronic transmission by a registered EFILE electronic filer, one '
+    'corrected transmission where the Agency rejects the first, and the CRA '
+    'confirmation emailed within 3 business days. A year with shoot revenue, '
+    'a licence fee or a gear sale in it is $350.00 plus HST per year at '
+    'gondaliyacpa.ca.'),
+
+  'geo_h': 'Photography Corporation Filing Across Canada',
+  'cta_h': 'File the Years the Shutter Stayed Closed',
+
+  'faq': [
+   ('I have not taken a paid booking in two years. Are returns still due?',
+    'They are, for every year the corporation exists. A year with no shoots '
+    'is reported as a year with no revenue rather than left unfiled.'),
+   ('A stock agency paid a licence fee for an old image. Which year?',
+    'The year the corporation was paid. That year becomes an ordinary return '
+    'at $350.00 plus HST per year at gondaliyacpa.ca and the years around it '
+    'can still be nil.'),
+   ('I shoot the odd wedding in my own name now. Does that affect the company?',
+    'Not where the couple paid you rather than the corporation. That is '
+    'personal income and the corporate year can be nil.'),
+   ('I took a salaried job at a studio. Does the corporation keep filing?',
+    'Yes, until it is dissolved. Employment income is yours and has no '
+    'bearing on the corporate year.'),
+   ('A client left a deposit for a shoot that never happened. Is that income?',
+    'Not while it is unearned. It sits as an amount owed on the balance sheet '
+    'until the shoot happens or it is refunded.'),
+   ('The gear is insured and stored but unused. Does owning it count?',
+    'No. Schedule 8 keeps reporting it while the corporation owns it. '
+    'Selling a lens is what puts a figure in a year.'),
+   ('I sold two lenses to another photographer. Nil or not?',
+    'Not for that year. A sale is a disposition and goes on the return '
+    'whether it produced a gain or a loss.'),
+   ('Do the images themselves have to be valued every year?',
+    'No. A back catalogue created in the business is not revalued annually. '
+    'What matters is whether it earned anything in the year.'),
+   ('Six years are outstanding. Is that a problem?',
+    'Six returns, is all. They are priced at $300.00 plus HST per tax year '
+    'apiece, authorised in one sitting, and transmitted in the order the '
+    'years fell.'),
+   ('I want to take the gear personally and close the company. What order?',
+    'Outstanding returns first. Taking the gear out is a disposition to '
+    'report in its year, and clearance is not issued while a year is '
+    'missing.'),
+  ],
+ },
+
 }

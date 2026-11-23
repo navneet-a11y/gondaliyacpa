@@ -2078,5 +2078,55 @@
         "breadcrumb": "Hair Salon Corporations"
       }
     ]
+  },
+  "nil_vertical_f1_batch7": {
+    "note": "Family 1 batch 7, the next five pending Appendix A verticals (Navneet, 2026-11-23). Appendix A order continued from batch 6, skipping tokens a live page already covers topically (#14 ecommerce). IDs 2874, 2877, 2880, 2883 and 2886, all live, cnf_family f1, nil_vertical sitemap at 20 of 20. The crypto page carries the hard rule 8 statement above the fold: a corporation that traded, swapped or staked in the year is not nil.",
+    "items": [
+      {
+        "id": 2874,
+        "slug": "nil-t2-filing-for-gym-corporations",
+        "appendix_a_rank": 12,
+        "kw": "nil t2 for gym corporation",
+        "title": "Gym Corporation Nil T2 | Years After the Doors Closed",
+        "desc": "A gym corporation files for every tax year it exists. Why one membership still billing ends the nil year, and what the filing costs per year.",
+        "breadcrumb": "Gym Corporations"
+      },
+      {
+        "id": 2877,
+        "slug": "nil-t2-filing-for-daycare-corporations",
+        "appendix_a_rank": 13,
+        "kw": "nil t2 for daycare corporation",
+        "title": "Daycare Corporation Nil T2 | Years With No Children",
+        "desc": "A daycare corporation owes a T2 for every year it exists, licence or no licence. When a year with no enrolment is nil, and what funding payments do to it.",
+        "breadcrumb": "Daycare Corporations"
+      },
+      {
+        "id": 2880,
+        "slug": "nil-t2-filing-for-amazon-fba-corporations",
+        "appendix_a_rank": 15,
+        "kw": "nil t2 for amazon fba corporation",
+        "title": "Amazon FBA Corporation Nil T2 | Dormant Seller Years",
+        "desc": "An FBA corporation files a T2 for every year it exists. Why stock left in a fulfilment centre keeps selling, and what a nil year costs.",
+        "breadcrumb": "Amazon FBA Corporations"
+      },
+      {
+        "id": 2883,
+        "slug": "nil-t2-filing-for-crypto-trading-corporations",
+        "appendix_a_rank": 16,
+        "kw": "nil t2 for crypto trading corporation",
+        "title": "Crypto Trading Corporation T2 | When a Year Is Not Nil",
+        "desc": "A corporation that traded, swapped or staked crypto in a year is not nil. The narrow case where a holding year is, and what the return costs.",
+        "breadcrumb": "Crypto Trading Corporations"
+      },
+      {
+        "id": 2886,
+        "slug": "nil-t2-filing-for-photography-corporations",
+        "appendix_a_rank": 17,
+        "kw": "nil t2 for photography corporation",
+        "title": "Photography Corporation Nil T2 | Years Without Shoots",
+        "desc": "A photography corporation files for every tax year it exists. Why a stock licence fee years later ends the nil year, and what the return costs.",
+        "breadcrumb": "Photography Corporations"
+      }
+    ]
   }
 }

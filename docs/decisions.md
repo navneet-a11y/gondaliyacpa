@@ -13279,3 +13279,95 @@ pages cover a token's topic under an off-plan slug, 4 were added today at
 Appendix A #4, #6, #9 and #11, and **166 are pending**. Still open from the
 previous entry: every F1 page is an orphan, and the family says `plus HST` on
 national pages.
+
+## 2026-11-23 — F1 batch 7: the next five Appendix A verticals
+
+Continuing in Appendix A order from batch 6, skipping tokens whose topic a
+live page already covers. #14 `ecommerce-corporations` was skipped for the
+live e-commerce page.
+
+| ID | URL | Appendix A | Focus keyword | Distinguishing facts |
+|---|---|---|---|---|
+| 2874 | `/nil-t2-filing-for-gym-corporations/` | #12 | nil t2 for gym corporation | Recurring membership billing running on past the closing date; unused memberships as a liability; cancellation and freeze fees; a trainer paying for floor time |
+| 2877 | `/nil-t2-filing-for-daycare-corporations/` | #13 | nil t2 for daycare corporation | A licence held or surrendered while rooms sit empty; government childcare funding and wage-enhancement payments as revenue; subletting the rooms to another operator as rent |
+| 2880 | `/nil-t2-filing-for-amazon-fba-corporations/` | #15 | nil t2 for amazon fba corporation | Stock left at a fulfilment centre still fulfilling orders unattended; disbursements as the test; reimbursements for units the warehouse lost; a deactivated account |
+| 2883 | `/nil-t2-filing-for-crypto-trading-corporations/` | #16 | nil t2 for crypto trading corporation | A crypto-for-crypto swap is a disposition with no cash involved; staking and lending pay with no trade at all; unrealised movement is not income |
+| 2886 | `/nil-t2-filing-for-photography-corporations/` | #17 | nil t2 for photography corporation | A stock or usage licence on old work paying years later; booking deposits held but unearned; gear on Schedule 8 while idle |
+
+Published as before: duplicates of 2682 patched by `genops.py`, 71 ops in two
+calls each, `cnf_family` f1 inherited. The `nil_vertical` sitemap is at
+**20 of 20**.
+
+### The crypto page is written against hard rule 8
+
+A crypto trading corporation is an investment entity, so the page states
+plainly, above the fold, that a corporation that traded, swapped or staked in
+the year is **not** nil, and that a crypto-for-crypto swap is a disposition
+even with no cash involved. Its nil case is deliberately narrow: a complete
+year with no buy, sale, swap, reward or transfer out, holdings untouched from
+one year end to the next. Same treatment the rental page got in the parked
+copy, for the same reason.
+
+### Writing the five against each other from the start helped, but not enough
+
+The batch-6 entry's lesson was applied before drafting: each page was given a
+different opening frame (gym on the billing, daycare on the licence, FBA on
+the warehouse, crypto on the wallet, photography on the gear) and the fields
+that collided last time were deliberately varied.
+
+It cut the first-build peak from batch 6's 0.661 to **0.614**, but four pairs
+were still over: photography against daycare, hair salon and gym, and hair
+salon against daycare. **Photography and daycare were each in three of the
+four**, which makes them the generic ones rather than the collision being
+between any particular pair.
+
+- Pass 2, after rewriting ten strings on those two — the shared `chk_yes[4]`,
+  the Schedule 24 row, the prepare-the-return step, the portal strip item, the
+  price-text opener and the several-years FAQ: **0.604**, two pairs left, both
+  involving daycare.
+- Pass 3, after seven more on daycare alone: **0.599 PASS**, and the peak is
+  again the pre-existing construction/IT pair.
+
+Per-page peaks: gym 0.593 against photography, photography 0.593 against gym,
+daycare 0.584, FBA 0.587, crypto 0.547.
+
+**Worth recording for the next batch:** of the fields that collide, the ones
+that can actually be moved are `chk_yes`, `chk_both`, `sched_note`, the step
+bodies, the trust strip, `faq[0]`, `faq[8]`, `faq[9]` and the price-text
+opening and closing clauses. The section headings cannot: `intro_h`,
+`notnil_h`, `sched_h`, `why_h`, `svc_h`, `proc_h`, `price_h`, `geo_h` and
+`h1` are all the same pattern with the vertical's name swapped in, which is
+what makes the family coherent, and they measure at 0.75 to 0.91 against
+every sibling by construction. Together with the geography paragraph, the two
+stylesheets, the JSON-LD and the price deliverables list they are the ~0.41
+to 0.50 floor. **Writing a sixth page in the same batch would be tight; five
+is close to the practical limit per batch at a 0.60 ceiling.**
+
+### Gates
+
+`audit_visible.py`: 117 strings each, 0 failures, first pass this time — the
+7.4 and rule 4 words that caught batch 6 were checked before building rather
+than after. Re-run after the similarity rewrites as well, since that is how
+batch 6 introduced them.
+
+Hard rules checked on the copy before publishing and again live on all five:
+CRA wording, T183CORP, no unqualified "no penalty", no superlative or
+guarantee, no EFILE number or GroupID, Service + BreadcrumbList schema only,
+no booking widget, CO-17 and AT1 named, both price strings, no 7.4 word, no
+emoji. One H1, ten FAQ items, **115 of 115 copy strings verbatim** on each
+live page.
+
+### Where F1 stands
+
+**20 built.** Of the 215 Appendix A tokens: 8 live slugs now match exactly
+(3 from before plus the 5 of batch 6 and 7 that were taken straight from the
+list — dental, landscaping, staffing, hair salon, gym, daycare, FBA, crypto
+and photography), 8 live pages cover a token's topic under an off-plan slug,
+and **149 are pending**. The next five in order are `taxi-corporations` (#18),
+`moving-corporations` (#19), `cleaning-corporations` (#20),
+`hvac-corporations` (#21) and `plumbing-corporations` (#22) — four of those
+five are trades, and the construction/IT pair already sits at the ceiling, so
+they should be written against those two as well as each other.
+
+Still open: every F1 page is an orphan with no inbound internal links, and
+the family says `plus HST` on national pages.
