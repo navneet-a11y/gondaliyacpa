@@ -1,0 +1,37 @@
+[
+ {
+  "kind": "fact",
+  "from": "FINTRAC (Financial Transactions Reports Analysis Centre)",
+  "to": "FINTRAC (Financial Transactions and Reports Analysis Centre of Canada)"
+ },
+ {
+  "kind": "fact",
+  "from": "Fraud Protection: Keeps your money safe and follows FINTRAC rules.",
+  "to": "Fraud Protection: Keeps your money safe; banks also watch for suspicious transactions under FINTRAC rules."
+ },
+ {
+  "kind": "fact",
+  "from": "Electronic transfers pay vendors fast within provinces like Ontario while following CRA rules.",
+  "to": "Electronic transfers pay vendors fast within provinces like Ontario and leave a clear record for your books and the CRA."
+ },
+ {
+  "kind": "fact",
+  "from": "They work fast and are safe — Canadian banks love these methods because they follow FINTRAC rules.",
+  "to": "They work fast and are safe — Canadian banks love these methods because every payment leaves an electronic record."
+ },
+ {
+  "kind": "fact",
+  "from": "and need ownership details if someone owns over 25%, per CBCA/OBCA ISC registers.",
+  "to": "and need ownership details if someone owns 25% or more, per CBCA/OBCA ISC registers."
+ },
+ {
+  "kind": "fact",
+  "from": "Business bank account requirements Canada say personal money can’t mix with corporate funds.",
+  "to": "Good practice for business bank accounts in Canada says personal money shouldn’t mix with corporate funds."
+ },
+ {
+  "kind": "fact",
+  "from": "It ensures transparency under PCMLTFA laws.",
+  "to": "It is required under corporate law, the CBCA federally and the OBCA in Ontario, and banks often ask to see it."
+ }
+]
