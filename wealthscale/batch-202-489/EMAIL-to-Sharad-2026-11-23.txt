@@ -1,0 +1,25 @@
+Hi Sharad,
+
+All tasks till yesterday are done. PFA the progress report.
+
+Sunday: replace 146 live pages	Done	All 146 replaced. Nov 17 check: content, length, SEO fields and status match for all 146.
+Monday: new pages	Done	3 hubs (626, 637, 647) + /credit-cards/reviews/ (657) + 75 pages. Content, SEO, status, slug and parent match for all.
+Tuesday: new pages	Done	76 pages (accounts, GIC/savings, mortgages, benefits, markets, calculators). Content, SEO, status, slug and parent match for all 76.
+Wednesday: new pages	Done	2 hubs: /business-owners/ (911) and /newcomers/ (918) + 56 pages. All 58 match. On 296 and 413, Rank Math stores "&" as "&amp;"; it displays correctly.
+Thursday: new pages	Done	37 pages (credit card reviews, bank reviews, city mortgage rates, GIC pages). /credit-cards/reviews/ (657) was made Monday; pages 312-315 now sit under it. All 38 match.
+Friday: new pages	Done	Hub /research/ (1013) + 37 pages. All 38 match.
+Saturday: pages 490-514	Done	25 pages (24 under /accounts/, 1 under /vs/). All 25 match.
+Browser check	Pass	12-14 sample pages a day, plus a phone check (390px) on all 313 new pages: widgets load (v1.5.0), no script errors. Only 475 and 476 scroll sideways (see below).
+Sitemap and schema	Pass	All 313 new pages are in the page sitemap. Valid JSON-LD on every page: FAQPage on all, ItemList and Review where expected.
+IndexNow	Done	522 URLs submitted (146 replaced + 376 new); every batch accepted.
+Header menu	Done	Added Retirement, Mortgages, Credit cards (Nov 17), Business owners and Newcomers (Nov 18), and Research after Learn (Nov 20), each with a dropdown. To fit 12 items, the full menu bar shows from 1440px (phone menu below that) and the 'Compare platforms' button from 2100px. Old headers saved in header-block35-before-2026-11-17/18/20.html.
+
+For you to look at:
+1. Pages 475 (lounge-access cards) and 476 (business credit cards): the supplied files are missing the </div> that closes the top hero box, so the whole page sits inside the shaded box and scrolls sideways on phones. Published as supplied; a one-tag fix is ready if you approve.
+2. Pages 100 and 101: meta says 4.3 while the content says 4.4/57. Page 549: meta and SEO title say "7 brokers" and Questrade 4.3/5, but the page has 8 brokers and Questrade 4.4. Page 268 says other provincial supplements "are being confirmed". All published as written.
+3. Offers: the end dates on all new pages are listed in the report (Offers sheet). Next removals: RBC Avion (Nov 25, also page 421), Wealthsimple Monthly Millionaire (Nov 26), Nov 30 group (Tangerine cards, CIBC business $400, Coast Capital, RBC Avion Business incl. page 476, Simplii card on 418), Disnat (Dec 4, also pages 452 and 455).
+
+Next: Sunday's package, pages 515-539 (15 Wealthsimple reviews and 10 comparisons).
+
+Thanks,
+Navneet
