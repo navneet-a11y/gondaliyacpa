@@ -1,0 +1,618 @@
+<style>.gcpa-post{--navy:#0f2a4a;--navy-2:#15355c;--blue:#1c6dd0;--blue-soft:#e8f1fc;--teal:#0c8f8f;--teal-soft:#e3f4f4;--gold:#c9991f;--gold-soft:#fbf3dc;--green:#1f8a4c;--green-soft:#e6f5ec;--red:#c0392b;--red-soft:#fbeae8;--ink:#1d2733;--muted:#5a6b7b;--line:#d8e0e8;--bg:#ffffff;--bg-alt:#f5f8fb;--radius:14px;--shadow:0 6px 22px rgba(15,42,74,.08);--shadow-lg:0 14px 40px rgba(15,42,74,.14);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);line-height:1.7;font-size:17px;max-width:1080px;margin:0 auto;padding:0 18px 60px;} .gcpa-post *{box-sizing:border-box;} .gcpa-hero{background:linear-gradient(135deg,var(--navy) 0%,var(--navy-2) 60%,#1c4a78 100%);color:#fff;border-radius:20px;padding:46px 40px 42px;margin:26px 0 34px;position:relative;overflow:hidden;} .gcpa-hero::after{content:"";position:absolute;right:-80px;top:-80px;width:280px;height:280px;z-index:0;background:radial-gradient(circle,rgba(28,109,208,.45),transparent 70%);} .gcpa-post .gcpa-eyebrow{display:inline-block;font-size:13px;letter-spacing:1.4px;text-transform:uppercase;font-weight:700;color:#cfe2f8 !important;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.3);padding:7px 15px;border-radius:30px;margin-bottom:18px;} .gcpa-post .gcpa-hero h1{font-size:34px;line-height:1.25;margin:0 0 16px;font-weight:800;color:#fff !important;letter-spacing:-.3px;position:relative;z-index:2;} .gcpa-post .gcpa-hero p{font-size:18px;color:#eaf3fc !important;margin:0;max-width:760px;position:relative;z-index:2;} .gcpa-eyebrow{position:relative;z-index:2;} .gcpa-post h2{font-size:27px;font-weight:800;color:var(--navy);line-height:1.3;margin:48px 0 18px;padding-bottom:14px;border-bottom:3px solid var(--blue-soft);letter-spacing:-.2px;position:relative;} .gcpa-post h2::after{content:"";position:absolute;left:0;bottom:-3px;width:70px;height:3px;background:var(--blue);} .gcpa-post h3{font-size:22px;font-weight:800;color:var(--navy-2);margin:40px 0 14px;line-height:1.35;} .gcpa-post h4{font-size:19px;font-weight:700;color:var(--navy-2);margin:36px 0 12px;line-height:1.4;padding-left:16px;border-left:4px solid var(--teal);} .gcpa-post p{margin:0 0 16px;color:#1d2733 !important;} .gcpa-post li{color:#1d2733;} .gcpa-post a{color:var(--blue);text-decoration:none;font-weight:600;} .gcpa-post a:hover{text-decoration:underline;} .gcpa-post ul,.gcpa-post ol{margin:0 0 18px !important;padding-left:0 !important;list-style:none !important;} .gcpa-post ul{list-style-type:none !important;} .gcpa-post ul li{position:relative;padding:8px 0 8px 34px;margin:0;border-bottom:1px solid var(--line);color:var(--ink);list-style:none !important;list-style-type:none !important;} .gcpa-post ul li::marker{content:"" !important;font-size:0 !important;} .gcpa-post ul li:last-child{border-bottom:none;} .gcpa-post ul li::before{content:"";position:absolute;left:6px;top:15px;width:9px;height:9px;border-radius:2px;background:var(--teal);transform:rotate(45deg);} .gcpa-post ol{counter-reset:gcpa;} .gcpa-post ol li{position:relative;padding:10px 0 10px 44px;margin:0 0 10px;counter-increment:gcpa;list-style:none !important;list-style-type:none !important;} .gcpa-post ol li::marker{content:"" !important;font-size:0 !important;} .gcpa-post ol li::before{content:counter(gcpa);position:absolute;left:0;top:9px;width:28px;height:28px;border-radius:8px;background:var(--navy);color:#fff;font-weight:700;font-size:14px;display:flex;align-items:center;justify-content:center;} .gcpa-post .wp-block-table,.gcpa-post figure.wp-block-table{margin:22px 0 26px;overflow-x:auto;} .gcpa-post table{width:100%;border-collapse:collapse;font-size:15.5px;background:#fff;border:1px solid var(--navy);border-radius:10px;overflow:hidden;box-shadow:var(--shadow);} .gcpa-post thead th{background:var(--navy);color:#fff;text-align:left;padding:13px 15px;font-weight:700;font-size:15px;border:1px solid var(--navy-2);} .gcpa-post tbody td{padding:12px 15px;border:1px solid var(--line);vertical-align:top;color:var(--ink);} .gcpa-post tbody tr:nth-child(even){background:var(--bg-alt);} .gcpa-post tbody tr:hover{background:var(--blue-soft);} .gcpa-post tbody td:first-child{font-weight:600;color:var(--navy-2);} .gcpa-metrics{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin:30px 0 36px;clear:both;} .gcpa-metric{background:#fff;border:1px solid var(--line);border-top:4px solid var(--blue);border-radius:var(--radius);padding:22px 18px;box-shadow:var(--shadow);transition:transform .2s,box-shadow .2s;} .gcpa-metric:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg);} .gcpa-metric:nth-child(2){border-top-color:var(--teal);} .gcpa-metric:nth-child(3){border-top-color:var(--gold);} .gcpa-metric:nth-child(4){border-top-color:var(--green);} .gcpa-metric .ic{width:46px;height:46px;border-radius:11px;background:var(--blue-soft);display:flex;align-items:center;justify-content:center;margin-bottom:14px;color:var(--blue);} .gcpa-metric:nth-child(2) .ic{background:var(--teal-soft);color:var(--teal);} .gcpa-metric:nth-child(3) .ic{background:var(--gold-soft);color:var(--gold);} .gcpa-metric:nth-child(4) .ic{background:var(--green-soft);color:var(--green);} .gcpa-metric .big{font-size:22px;font-weight:800;color:var(--navy);line-height:1.2;margin-bottom:4px;} .gcpa-metric .lbl{font-size:14px;color:var(--muted);line-height:1.45;} .gcpa-numhead{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin:46px 0 8px;clear:both;} .gcpa-numhead h4{margin:0 !important;} .gcpa-numhead .gcpa-pill{margin:0 !important;} .gcpa-numhead .num{flex:0 0 auto;width:48px;height:48px;border-radius:12px;background:var(--navy);color:#fff;font-size:22px;font-weight:800;display:flex;align-items:center;justify-content:center;box-shadow:var(--shadow);} .gcpa-callout{border-radius:var(--radius);padding:20px 22px;margin:22px 0;border:1px solid var(--line);background:var(--bg-alt);position:relative;} .gcpa-callout.blue{background:var(--blue-soft);border-color:#bcd9f6;} .gcpa-callout.teal{background:var(--teal-soft);border-color:#b7e3e3;} .gcpa-callout.gold{background:var(--gold-soft);border-color:#ecd79a;} .gcpa-callout.green{background:var(--green-soft);border-color:#b6e2c6;} .gcpa-callout.red{background:var(--red-soft);border-color:#f0c4be;} .gcpa-callout .co-tag{display:inline-block;font-size:12.5px;font-weight:700;letter-spacing:.6px;text-transform:uppercase;padding:4px 11px;border-radius:20px;margin-bottom:10px;color:#fff;} .gcpa-callout.blue .co-tag{background:var(--blue);} .gcpa-callout.teal .co-tag{background:var(--teal);} .gcpa-callout.gold .co-tag{background:var(--gold);} .gcpa-callout.green .co-tag{background:var(--green);} .gcpa-callout.red .co-tag{background:var(--red);} .gcpa-callout p:last-child{margin-bottom:0;} .gcpa-cta{background:linear-gradient(135deg,var(--navy) 0%,#1c4a78 100%);color:#fff;border-radius:18px;padding:34px 32px;margin:38px 0;text-align:center;box-shadow:var(--shadow-lg);position:relative;overflow:hidden;} .gcpa-cta::before{content:"";position:absolute;left:-60px;bottom:-60px;width:220px;height:220px;background:radial-gradient(circle,rgba(12,143,143,.4),transparent 70%);} .gcpa-post .gcpa-cta h4{color:#fff !important;border:none;padding:0;margin:0 0 12px;font-size:22px;font-weight:800;position:relative;z-index:1;} .gcpa-post .gcpa-cta p{color:#eaf3fc !important;max-width:680px;margin:0 auto 22px;position:relative;z-index:1;} .gcpa-post .gcpa-cta .btn{display:inline-block;background:#fff !important;color:var(--navy) !important;font-weight:700;padding:13px 26px;border-radius:30px;margin:6px;font-size:16px;position:relative;z-index:1;transition:transform .15s;text-decoration:none !important;} .gcpa-post .gcpa-cta .btn:hover{transform:translateY(-2px);text-decoration:none !important;} .gcpa-post .gcpa-cta .btn.primary{background:var(--teal) !important;color:#fff !important;} .gcpa-btnrow{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;align-items:center;position:relative;z-index:1;} .gcpa-trust{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-bottom:22px;position:relative;z-index:1;} .gcpa-post .gcpa-trust span{font-size:13px;font-weight:700;background:rgba(255,255,255,.18) !important;border:1px solid rgba(255,255,255,.45);padding:7px 14px;border-radius:20px;color:#ffffff !important;} .gcpa-post svg{display:block;} .gcpa-pill{display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:700;padding:8px 16px;border-radius:30px;margin:10px 0 6px;line-height:1.2;} .gcpa-pill svg{width:16px;height:16px;flex:0 0 auto;} .gcpa-pill.green{background:var(--green-soft);color:var(--green);border:1px solid #b6e2c6;} .gcpa-pill.blue{background:var(--blue-soft);color:var(--blue);border:1px solid #bcd9f6;} .gcpa-pill.teal{background:var(--teal-soft);color:var(--teal);border:1px solid #b7e3e3;} .gcpa-pill.gold{background:var(--gold-soft);color:#9a7416;border:1px solid #ecd79a;} .gcpa-pill.red{background:var(--red-soft);color:var(--red);border:1px solid #f0c4be;} .gcpa-pillhead{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin:38px 0 12px;clear:both;} .gcpa-pillhead h4{margin:0 !important;} .gcpa-pillhead .gcpa-pill{margin:0 !important;} @media(max-width:560px){.gcpa-pillhead{gap:8px;}} .gcpa-toc{background:var(--bg-alt);border:1px solid var(--line);border-left:5px solid var(--blue);border-radius:var(--radius);padding:24px 26px;margin:30px 0 36px;box-shadow:var(--shadow);} .gcpa-toc h5{margin:0 0 14px;font-size:16px;font-weight:800;color:var(--navy);letter-spacing:.4px;text-transform:uppercase;display:flex;align-items:center;gap:9px;} .gcpa-toc h5 svg{width:20px;height:20px;color:var(--blue);} .gcpa-toc ol{counter-reset:toc;margin:0 !important;padding:0 !important;columns:2;column-gap:36px;list-style:none !important;} .gcpa-toc ol li{counter-increment:toc;position:relative;padding:7px 0 7px 30px;margin:0;border-bottom:1px dashed var(--line);break-inside:avoid;list-style:none !important;} .gcpa-toc ol li::before{content:counter(toc);position:absolute;left:0;top:7px;width:21px;height:21px;border-radius:6px;background:var(--blue-soft);color:var(--blue);font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;} .gcpa-toc ol li::marker{content:"" !important;font-size:0 !important;} .gcpa-toc a{color:var(--navy-2);font-weight:600;font-size:15px;} .gcpa-toc a:hover{color:var(--blue);} .gcpa-post [id^="toc-"]{scroll-margin-top:90px;} .gcpa-banner{display:block;background:linear-gradient(135deg,#0d3b66 0%,#0c7a7a 100%);color:#fff;border-radius:16px;padding:30px 32px;margin:36px 0;box-shadow:var(--shadow-lg);} .gcpa-banner .bt{font-size:20px;font-weight:800;line-height:1.45;margin:0 0 20px;max-width:760px;} .gcpa-banner .bb{display:flex;flex-wrap:wrap;gap:14px;align-items:center;} .gcpa-banner a{display:inline-block;background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.6);color:#fff !important;font-weight:700;padding:13px 24px;border-radius:30px;font-size:15px;text-decoration:none !important;} .gcpa-banner a.solid{background:#ffffff !important;color:#0d3b66 !important;border-color:#fff;} .gcpa-disclaimer{background:var(--bg-alt);border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:34px 0 10px;font-size:14.5px;color:var(--muted);line-height:1.6;} .gcpa-disclaimer strong{color:var(--navy-2);} .gcpa-byline{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin:0 0 22px;font-size:15px;} .gcpa-byline .av{width:42px;height:42px;border-radius:50%;background:var(--navy);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:16px;flex:0 0 auto;} .gcpa-byline .nm{font-weight:700;color:var(--navy-2);} .gcpa-byline .rl{color:var(--teal);font-weight:700;} .gcpa-byline .sep{color:var(--line);} .gcpa-author{display:flex;gap:18px;align-items:flex-start;background:var(--bg-alt);border:1px solid var(--line);border-left:5px solid var(--teal);border-radius:14px;padding:24px 26px;margin:34px 0 40px;} .gcpa-author .ava{width:64px;height:64px;border-radius:50%;background:linear-gradient(135deg,var(--navy),var(--teal));color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:22px;flex:0 0 auto;} .gcpa-author .info h5{margin:0 0 6px;font-size:17px;font-weight:800;color:var(--navy);line-height:1.4;} .gcpa-author .info .role{font-size:14px;color:var(--teal);font-weight:700;margin:0 0 12px;} .gcpa-author .info p{font-size:14.5px;color:var(--muted) !important;margin:0;line-height:1.65;} .gcpa-faq{margin:18px 0 26px;border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:var(--shadow);} .gcpa-faq details{border-bottom:1px solid var(--line);background:#fff;} .gcpa-faq details:last-child{border-bottom:none;} .gcpa-faq summary{list-style:none;cursor:pointer;padding:18px 22px;font-weight:700;color:var(--navy-2);font-size:16px;display:flex;justify-content:space-between;align-items:center;gap:14px;transition:background .15s;} .gcpa-faq summary::-webkit-details-marker{display:none;} .gcpa-faq summary:hover{background:var(--bg-alt);} .gcpa-faq summary .pl{flex:0 0 auto;width:24px;height:24px;border-radius:50%;background:var(--blue-soft);color:var(--blue);display:flex;align-items:center;justify-content:center;font-size:18px;font-weight:700;transition:transform .2s;} .gcpa-faq details[open] summary{background:var(--bg-alt);color:var(--navy);} .gcpa-faq details[open] summary .pl{transform:rotate(45deg);background:var(--blue);color:#fff;} .gcpa-faq .ans{padding:0 22px 20px;color:#1d2733;font-size:15.5px;line-height:1.7;} .gcpa-img-right{float:right;max-width:250px;width:32%;margin:6px 0 24px 28px;border-radius:12px;box-shadow:var(--shadow-lg);border:1px solid var(--line);} .gcpa-img-right img{display:block;width:100%;height:auto;border-radius:12px;} @media(max-width:560px){.gcpa-img-right{float:none;width:70%;max-width:260px;margin:14px auto 18px;}} .gcpa-closing{font-size:24px;font-weight:800;color:var(--navy);margin:48px 0 14px;padding-bottom:12px;border-bottom:3px solid var(--teal-soft);position:relative;} .gcpa-closing::after{content:"";position:absolute;left:0;bottom:-3px;width:70px;height:3px;background:var(--teal);} @media(max-width:560px){.gcpa-post{font-size:16px;} .gcpa-hero{padding:32px 22px;} .gcpa-hero h1{font-size:26px;} .gcpa-post h2{font-size:23px;} .gcpa-cta{padding:26px 20px;} .gcpa-banner .bb{width:100%;} .gcpa-banner .bb a{flex:1 1 auto;text-align:center;}}</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"Open Corporation for $35","alternateName":"Open Corporation For $35","url":"https://opencorporationfor35.ca/","description":"Open Corporation for $35 is a department of Gondaliya CPA.","parentOrganization":{"@type":"Organization","name":"Gondaliya CPA Professional Corporation","url":"https://gondaliyacpa.ca","identifier":"CPA Ontario Firm Registration 61330051"},"telephone":"+1-647-212-9559","email":"info@gondaliyacpa.ca","areaServed":"CA","openingHours":"Mo-Su 09:00-20:30","award":"Xero Partner Award Winner 2026","aggregateRating":{"@type":"AggregateRating","ratingValue":"5","reviewCount":"1300"}}
+</script>
+<div class="gcpa-post">
+<div class="gcpa-hero" style="background:linear-gradient(135deg,#0f2a4a 0%,#15355c 60%,#1c4a78 100%) !important;">
+<span class="gcpa-eyebrow">Year-End · Salary vs Dividends · RRSP · Payroll · December 2026</span>
+<h1 style="color:#ffffff !important;position:relative;z-index:2;font-size:34px;line-height:1.25;font-weight:800;margin:0 0 14px;">Year-End Tax Checklist for Incorporated Business Owners (December 2026)</h1>
+<div class="gcpa-hero-sub" style="margin:0 0 18px;"><span style="color:#eaf3fc !important;font-size:18px;line-height:1.6;display:block;max-width:840px;position:relative;z-index:2;">What to do before December 31, 2026, and the CRA dates that follow in 2027, for a corporation with a calendar year-end</span></div>
+<div style="position:relative;z-index:2;font-size:15px;line-height:1.5;"><span style="color:#ffffff;font-weight:bold;">By Sharad Gondaliya, CPA</span><span style="color:#9fd0d0;font-weight:bold;">  |  <a href="https://opencorporationfor35.ca/">Open Corporation For $35</a> and <a href="https://opencorporationfor35.ca/address-service-100/">Address Service</a></span></div>
+<div style="position:relative;z-index:2;font-size:14.5px;line-height:1.5;margin-top:12px;"><span style="color:#cfe2f8 !important;font-weight:600;">Open Corporation for $35 is a department of Gondaliya CPA.</span></div>
+</div>
+<h2>Corporate Year-End Tax Checklist 2026: Year-End Tax Planning for Incorporated Business Owners with Salary vs Dividends, RRSP Room, and December Tax Planning Canada</h2>
+<p><strong>Open Corporation for $35 is a department of Gondaliya CPA.</strong> For incorporated business owners, the corporate year-end tax checklist 2026 highlights key areas such as year-end bonus planning, <a href="https://opencorporationfor35.ca/guides/salary-vs-dividends/">salary vs dividends strategies</a>, RRSP contribution room planning, and corporate income tax planning to optimize December tax planning in Canada. Understanding rules like TOSI screening, accrued-bonus payment, and meeting payroll source deductions along with T4 slip deadlines ensures smooth year-end tax preparation.</p>
+<h3 id="toc-summary" style="margin-top:38px;">Quick Summary</h3>
+<p>For a December 31, 2026 year-end, pay any dividends and declare any bonus before December 31. Then work through the 2027 dates: payroll on January 15, T4 and T5 slips and RRSP contributions on March 1, the balance of tax on March 31 for most CCPCs, an accrued bonus by June 29, and the T2 and Ontario annual return by June 30.</p>
+<figure class="wp-block-table">
+<table>
+<thead><tr><th>Aspect</th><th>Details</th></tr></thead>
+<tbody>
+<tr><td>Dividends</td><td>Paid by December 31, 2026 to count for 2026.</td></tr>
+<tr><td>Accrued bonus</td><td>Declared by December 31, 2026, paid by June 29, 2027 (180 days).</td></tr>
+<tr><td>Final payroll remittance</td><td>January 15, 2027.</td></tr>
+<tr><td>T4 and T5 slips</td><td>March 1, 2027.</td></tr>
+<tr><td>RRSP</td><td>2026 limit $33,810; contribute by March 1, 2027.</td></tr>
+<tr><td>Balance of tax</td><td>March 31, 2027 for most CCPCs claiming the small business deduction.</td></tr>
+<tr><td>T2 and Ontario annual return</td><td>June 30, 2027.</td></tr>
+</tbody>
+</table>
+</figure>
+<div class="gcpa-author">
+<div class="ava" style="background:linear-gradient(135deg,#0f2a4a,#0c8f8f) !important;color:#ffffff !important;">SG</div>
+<div class="info">
+<h5>Author: Sharad Gondaliya, CPA (Canada &amp; USA) — Founder &amp; Managing Director, Gondaliya CPA Professional Corporation, Toronto, Ontario.</h5>
+<div class="role">Reviewed and fact-checked by Sharad Gondaliya, CPA (Canada &amp; USA)</div>
+<p style="font-size:14.5px;color:#15355c !important;font-weight:700;margin:0 0 8px;">Open Corporation for $35 is a department of Gondaliya CPA.</p>
+<p>Gondaliya CPA is a Toronto-based team providing incorporation, CRA registrations, corporate tax, bookkeeping, GST/HST, and payroll for Canadian corporations. Verify our firm on the <a href="https://www.cpaontario.ca/protecting-the-public/directories/firm/gondaliya-5sqvmj">CPA Ontario public firm directory</a>, firm registration 61330051.</p>
+<p style="font-size:13.5px;color:#15355c !important;font-weight:700;margin-top:10px;">CPA Ontario | CPA USA (Washington &amp; Montana) | Xero Partner Award Winner 2026 | 1300+ 5-star Google reviews</p>
+</div>
+</div>
+<p style="font-size:14px;color:#5a6b7b;margin:-26px 0 26px;">Reading time: 27 minutes.</p>
+<div class="gcpa-toc">
+<h5>Table of Contents</h5>
+<ol>
+<li><a href="#toc-deadlines">Year-End and Deadlines</a></li>
+<li><a href="#toc-records">Records and Bookkeeping</a></li>
+<li><a href="#toc-income">Income, Expenses and CCA</a></li>
+<li><a href="#toc-pay">Salary, Dividends and Bonus</a></li>
+<li><a href="#toc-payments">Payroll, GST/HST and Instalments</a></li>
+<li><a href="#toc-strategy">Strategic Year-End Moves</a></li>
+<li><a href="#toc-faq">Frequently Asked Questions</a></li>
+<li><a href="#toc-reminders">Reminders and Next Steps</a></li>
+</ol>
+</div>
+<span class="gcpa-pill green">The Numbers That Matter</span>
+<div class="gcpa-metrics">
+<div class="gcpa-metric">
+<div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></div>
+<div class="big">Dec 31</div>
+<div class="lbl">Last day to pay 2026 dividends</div>
+</div>
+<div class="gcpa-metric">
+<div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+<div class="big">180 days</div>
+<div class="lbl">To pay an accrued bonus after year-end</div>
+</div>
+<div class="gcpa-metric">
+<div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+<div class="big">$33,810</div>
+<div class="lbl">2026 RRSP dollar limit</div>
+</div>
+<div class="gcpa-metric">
+<div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
+<div class="big">$4,230.45</div>
+<div class="lbl">2026 maximum CPP contribution, each side</div>
+</div>
+</div>
+<div class="gcpa-callout blue">
+<span class="co-tag">Scope &amp; Assumptions</span>
+<p>This article covers Canadian-controlled private corporations in Ontario with a December 31, 2026 year-end, using CRA limits for 2026. Corporations with a different year-end move every date by the same number of months. This is educational information only and not tax, legal, or financial advice. Please speak with a CPA before you declare a bonus, pay a dividend or buy assets.</p>
+</div>
+
+<h2>Understanding Your Business Year-End and Tax Deadlines in Canada</h2>
+<div class="gcpa-numhead">
+<div class="num" style="background:#0f2a4a !important;color:#ffffff !important;">1</div>
+<h4 id="toc-deadlines" style="border:none;padding:0;margin:0;">Year-End and Deadlines</h4>
+<span class="gcpa-pill blue">Deadlines</span>
+</div>
+<h3>Defining Your Corporation’s Fiscal Year-End</h3>
+<p>If you own an incorporated business, knowing your corporation’s <a href="https://opencorporationfor35.ca/guides/fiscal-year-end/">fiscal year-end is really important</a>. This date marks when your accounting period ends. It might not be the same as the calendar year. Most Canadian-controlled private corporations pick December 31 as their year-end. This choice matches personal tax deadlines, making things easier.</p>
+<p>Your corporate year-end affects how you report income and expenses. Before that day comes, double-check your financial records. Make sure they are correct and ready. That way, switching to the next fiscal period goes smoothly.</p>
+<h3>Key CRA Deadlines for Filing and Payments by December 31, 2026 and Early 2027</h3>
+<p>You must know some important CRA deadlines to avoid penalties:</p>
+<ul>
+<li><strong><a href="https://opencorporationfor35.ca/corporate-tax-filing-from-300/">T2 Corporate Return Filing Deadline</a>:</strong> File this six months after your fiscal year-end.</li>
+<li><strong>T4 Slip Submission Deadline:</strong> Due by February 28 after the tax year ends.</li>
+<li><strong>T5 Slip Submission Deadline:</strong> Also due February 28.</li>
+<li><strong>Final Payroll Remittances Due Date:</strong> Pay by January 15 after your corporate year ends.</li>
+</ul>
+<p>Missing these can cost you extra fees or interest. So, mark these dates clearly on your calendar.</p>
+<div class="gcpa-callout teal">
+<span class="co-tag">Key Stat</span>
+<p><strong>March 1, 2027:</strong> the due date for 2026 T4 and T5 slips and for 2026 RRSP contributions, because February 28, 2027 falls on a Sunday.</p>
+</div>
+<h3>Overview of T2 Filing, T4 Slip Submission, and Annual Return Requirements</h3>
+<p>Here’s a quick look at what you need to file each year:</p>
+<h4>T2 Corporate Return</h4>
+<p>Must be sent in within six months of your fiscal year-end.</p>
+<p><a href="https://opencorporationfor35.ca/guides/first-t2-return/">Shows all income</a> during that period.</p>
+<h4>T4/T5 Slips</h4>
+<p><a href="https://opencorporationfor35.ca/payroll-service/">T4 reports employee income</a>; T5 reports dividends paid out.</p>
+<p>Both slips must reach CRA by February 28 yearly.</p>
+<h4>Ontario Business Registry Annual Return</h4>
+<p>Corporations in Ontario need to <a href="https://opencorporationfor35.ca/annual-return-filing/">file this yearly with ServiceOntario</a> to stay active.</p>
+<h4>Corporate Instalments Due Dates</h4>
+<p>You may have to pay instalments based on last year's taxable income.</p>
+<p>These help spread out payments during the tax cycle.</p>
+<p>Following these rules carefully keeps your business in good standing with federal laws for CCPCs in Ontario and across Canada.</p>
+<h2>Preparing and Organizing Financial Records for Year-End Tax Filing</h2>
+<div class="gcpa-numhead">
+<div class="num" style="background:#0f2a4a !important;color:#ffffff !important;">2</div>
+<h4 id="toc-records" style="border:none;padding:0;margin:0;">Records and Bookkeeping</h4>
+<span class="gcpa-pill teal">Records</span>
+</div>
+<p>Getting your financial records in order helps make corporate year-end tax filing easier. You need to gather documents, <a href="https://opencorporationfor35.ca/incorporation-bookkeeping-bundle/">finish bookkeeping</a>, and use accounting software. Doing these things right helps you follow Canadian tax rules without stress. This part covers important steps from the corporate year-end tax checklist 2026 that owners of incorporated businesses should know for December tax planning Canada.</p>
+<h3>Gathering Necessary Documentation and Financial Statements</h3>
+<p>First, collect all the papers you need. This step is key for year-end tax planning for incorporated business owners. Make sure you have:</p>
+<ul>
+<li><strong>Financial statements:</strong> Income statement, balance sheet, and cash flow statement up to December 31.</li>
+<li><strong>Bank statements:</strong> Every account your corporation used during the year.</li>
+<li><strong>Invoices and receipts:</strong> Both those you sent out and those you received.</li>
+<li><strong>Payroll records:</strong> Salary details, bonuses paid or owed before year-end, including CPP contributions.</li>
+<li><strong>Shareholder loan balances:</strong> Papers showing loans given or repaid as per ITA 15(2).</li>
+<li><strong><a href="https://opencorporationfor35.ca/guides/hst-registration-guide/">GST/HST filings</a>:</strong> Past returns and any supporting schedules if needed.</li>
+</ul>
+<p>Having all these ready fits well with a small business year-end tax checklist. It helps report income, expenses, assets, liabilities, payroll deductions, and instalments accurately on T2 returns.</p>
+<p>Missing or wrong papers often cause delays or mistakes with CRA deadlines <sup>[1]</sup>. Business owners should check their files well before December 31 following the corporate year-end tax checklist 2026.</p>
+<h3>Completing Year-End Bookkeeping and Reconciliation Steps</h3>
+<p>Good bookkeeping is the base of honest financial reports at year-end. You should:</p>
+<ul>
+<li>Match bank statements to your records to find mistakes</li>
+<li>Check accounts receivable amounts to make sure debts are real</li>
+<li>Count inventory to match what’s actually in stock</li>
+<li>Review prepaid expenses and accruals for correct yearly cut-offs</li>
+<li>Reconcile shareholder loans following ITA rules</li>
+<li>Confirm payroll source deductions like CPP are correct through last payments</li>
+</ul>
+<p>Doing this cuts down errors like wrong income or missed deductions that CRA might flag <sup>[2]</sup>. It also helps finish GST/HST returns that cover periods near December.</p>
+<p>Finish these reconciliations early so you can fix problems before final reports go in. These reports are needed for federal T2 filing (due six months after December 31) <sup>[3]</sup> and <a href="https://opencorporationfor35.ca/guides/corporate-annual-return/">Ontario Business Registry annual returns</a>.</p>
+<div class="gcpa-callout blue">
+<span class="co-tag">Worth Knowing</span>
+<p>A dividend counts for the year it is paid, not the year it is declared. Please make sure the money actually leaves the corporate account by December 31 if you want the dividend on your 2026 return.</p>
+</div>
+<h3>Using Accounting Software to Streamline Bookkeeping Tasks</h3>
+<p>Accounting software can make bookkeeping tasks much easier for December tax planning Canada. It can:</p>
+<ul>
+<li>Bring in bank data automatically to avoid typing errors</li>
+<li>Show income and expenses live to help predict profits</li>
+<li>Calculate CPP contributions automatically from payroll info</li>
+<li>Manage inventory so counts match physical checks</li>
+<li>Create early financial reports for review</li>
+</ul>
+<p>Popular tools like QuickBooks Online or Xero work well with <a href="https://opencorporationfor35.ca/services/">CPA firms that help incorporated businesses</a> <sup>[4]</sup>. Using software keeps books neat throughout the year instead of rushing at the end.</p>
+<p>Still, software won’t replace a CPA’s review before decisions on bonuses or buying assets. Those affect capital cost allowance claims under 2026’s accelerated investment incentive rules <sup>[5]</sup>.</p>
+<h2>Reviewing Income, Deductions, and Expenses Before Year-End</h2>
+<div class="gcpa-numhead">
+<div class="num" style="background:#0f2a4a !important;color:#ffffff !important;">3</div>
+<h4 id="toc-income" style="border:none;padding:0;margin:0;">Income, Expenses and CCA</h4>
+<span class="gcpa-pill gold">Deductions</span>
+</div>
+<p>If you run an incorporated business, you need to look closely at your income, deductions, and expenses before year-end. This is part of the corporate year-end tax checklist 2026. Doing this helps you report correctly and plan your taxes smartly. Checking carefully makes sure you don’t miss any eligible deductions and that all income gets counted before December 31.</p>
+<p><strong>Here’s why this matters:</strong></p>
+<ul>
+<li>It keeps your books accurate for your T2 return.</li>
+<li>It prevents surprises when filing your taxes.</li>
+<li>It spots <a href="https://opencorporationfor35.ca/guides/small-business-deduction/">missed opportunities for tax savings</a>.</li>
+</ul>
+<h3>Assessing Corporate Income and Eligible Deductions</h3>
+<p>Start by checking all income earned during your fiscal year ending December 31, 2026. Make sure every sale or service is recorded properly. That means confirming invoices went out and payments came in or are expected. Getting this right avoids mistakes on your tax return.</p>
+<p>Next, review what expenses you can deduct. Common deductible costs include:</p>
+<ul>
+<li><a href="https://opencorporationfor35.ca/guides/payroll-setup-new-corporation/">Employee salaries (including owner-managers)</a></li>
+<li>Rent for office space</li>
+<li>Utilities like electricity and internet</li>
+<li>Office supplies</li>
+<li>Professional fees (accountants, lawyers)</li>
+<li>Advertising directly tied to business</li>
+</ul>
+<p>Make sure you keep receipts for everything. The CRA wants proof if they ask.</p>
+<p>Also, consider reserves like allowances for doubtful accounts if some money owed might not get paid by year-end. This shows realistic income without overstating losses.</p>
+<p>Watch out for non-deductible stuff such as personal expenses charged through the corporation or capital items wrongly claimed as regular expenses. These can cause penalties or reassessments later.</p>
+<div class="gcpa-callout red">
+<span class="co-tag">Risk Warning</span>
+<p><strong>Risk Warning:</strong> Please do not buy assets in December only for the deduction. The asset must be available for use by December 31, and a purchase the business does not need still costs more than the tax it saves.</p>
+</div>
+<h3>Timing Purchases and Capital Asset Acquisitions for Tax Benefits</h3>
+<p>December tax planning Canada often means timing buys carefully. When buying equipment or assets before year-end:</p>
+<ul>
+<li>The item must be mainly for business use.</li>
+<li>It needs to be ready to use by December 31 to count for 2026 depreciation.</li>
+<li>Avoid buying just to get a deduction; the purchase should fit real business needs.</li>
+</ul>
+<p>Getting necessary equipment before year-end lets you start claiming Capital Cost Allowance (CCA) sooner.</p>
+<p>You might also prepay some operating costs like insurance covering periods after December 31. Under ITA section 18(9), the part that covers periods after year-end is generally not deductible right away. The CRA wants you to spread the deduction over the years the coverage relates to.</p>
+<h3>Applying the Capital Cost Allowance, Half-Year Rule, and Accelerated Investment Incentive in 2026</h3>
+<p>The Capital Cost Allowance system lets companies write off part of their capital asset costs each year. CRA sets classes with specific rates for depreciation.</p>
+<p>Keep these in mind when claiming CCA:</p>
+<ul>
+<li>The half-year rule limits CCA claims in the first year of an asset by letting you claim only half the usual amount.</li>
+<li>Assets bought late in the year usually fall under this rule unless exceptions apply.</li>
+</ul>
+<p>For assets put into use in 2026 qualifying under accelerated investment incentive rules:</p>
+<ul>
+<li>You may claim higher first-year CCA rates—up to three times the normal first-year amount—on eligible property acquired after 2024, under the incentive first introduced for property acquired after November 20, 2018 and reinstated by the Budget 2025 measures. A September 2026 proposal would allow immediate expensing of most property acquired on or after September 15, 2026, so please confirm the current status before you buy.</li>
+<li>This incentive encourages businesses to invest promptly but assets must meet CRA rules exactly.</li>
+</ul>
+<p>Make sure you keep clear records of purchase dates and when assets were ready by December 31. Mistakes here could lead to denied claims during an audit.</p>
+<p><a href="https://opencorporationfor35.ca/">Open Corporation for $35 is a part of Gondaliya CPA</a> giving straightforward advice based on Canadian law just for Ontario incorporated businesses that close their books at calendar-year end.</p>
+<ul style="font-size:14px;">
+<li>Income Tax Act (ITA), Subdivision b of Division B – Deductible Business Expenses</li>
+<li>CRA Guide T4012 – T2 Corporation Income Tax Guide</li>
+<li>ITA Section on bona fide asset purchases; see <a href="https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/corporations.html">CRA</a></li>
+<li>Prepaid Expense Rules - ITA section 18(9) and archived Interpretation Bulletin IT-417R2</li>
+<li>Schedule II - Classes of Property &amp; Rates per <a href="https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/capital-cost-allowance.html">CRA</a></li>
+<li>Accelerated Investment Incentive details: Budget docs &amp; CRA notices (check latest updates).</li>
+</ul>
+<div class="gcpa-cta" style="background:linear-gradient(135deg,#0f2a4a 0%,#1c4a78 100%) !important;">
+<h4>Plan your 2026 year-end before December 31</h4>
+<p>Incorporation from $35 including HST plus government fees, and a free CPA consultation on your salary, bonus, dividends, shareholder loan and equipment purchases before the year closes. Please book a free consultation.</p>
+<div class="gcpa-trust"><span>1300+ 5-star Google reviews</span><span>Xero Partner Award Winner 2026</span><span>CPA Ontario Firm 61330051</span><span>30-Day Money-Back Guarantee</span></div>
+<div class="gcpa-btnrow"><a class="solid" href="https://gondaliyacpa.ca/consultation/">Book Free Consultation</a><a href="https://opencorporationfor35.ca/">Open Corporation For $35</a><a href="tel:+16472129559">647-212-9559</a></div>
+</div>
+<h2>Salary, Dividends, and Bonus Planning for Incorporated Business Owners</h2>
+<div class="gcpa-numhead">
+<div class="num" style="background:#0f2a4a !important;color:#ffffff !important;">4</div>
+<h4 id="toc-pay" style="border:none;padding:0;margin:0;">Salary, Dividends and Bonus</h4>
+<span class="gcpa-pill green">Pay Yourself</span>
+</div>
+<p>If you own an incorporated business, you need to check your salary, dividends, and bonuses before the year ends. This is part of your <a href="https://opencorporationfor35.ca/first-year-filing-calendar-new-corporation/">corporate year-end tax checklist 2026</a>. These decisions affect both your company's taxes and your personal income taxes. Year-end tax planning for incorporated business owners means knowing the rules about timing and what the law requires. It’s not a sure way to save money but helps avoid surprises.</p>
+<h3>Evaluating Salary vs Dividends to Optimize Tax Outcomes</h3>
+<figure style="margin:22px 0;"><img src="https://opencorporationfor35.ca/wp-content/uploads/2026/11/year-end-2026-salary-vs-dividend.png" alt="Salary or bonus versus dividend at year-end 2026: salary is deductible, declared by December 31 and paid by June 29, 2027, creates RRSP room up to $33,810 and attracts 5.95% CPP to $74,600, reported on a T4; a dividend is not deductible, must be paid by December 31, 2026, creates no RRSP room or CPP, is reported on a T5 and needs TOSI screening for family." style="width:100%;border-radius:12px;border:1px solid #d8e0e8;" /><figcaption style="font-size:13px;color:#5a6b7b;text-align:center;padding:6px;">Both slips are due March 1, 2027, because February 28 falls on a Sunday.</figcaption></figure>
+<p>Paying yourself a salary costs your corporation money, but it lowers its taxable income. You must report that salary as personal income. Also, a salary adds to your <a href="https://opencorporationfor35.ca/guides/salary-vs-dividends/">RRSP contribution room</a> because it counts as earned income. Dividends come from profits after tax. They don’t create RRSP room but may give you some dividend tax credits.</p>
+<p>What matters most is when you pay these amounts before December 31. Salaries or bonuses must be declared by then and paid in a specific time frame (see next section). Dividends have to be actually paid by December 31 to count for that year’s taxes; otherwise, they count for next year.</p>
+<p><strong>You should think about:</strong></p>
+<ul>
+<li>How much cash you have on hand</li>
+<li>CPP contributions that come with salaries</li>
+<li>If family shareholders are involved and TOSI rules apply (explained later)</li>
+<li>Your company’s profit level</li>
+</ul>
+<p><strong>Here’s a quick table to help:</strong></p>
+<figure class="wp-block-table">
+<table>
+<thead><tr><th>Factor</th><th>Salary</th><th>Dividend</th></tr></thead>
+<tbody>
+<tr><td>Deductible by Corporation</td><td>Yes</td><td>No</td></tr>
+<tr><td>Creates RRSP Contribution Room</td><td>Yes</td><td>No</td></tr>
+<tr><td>Payroll Deductions Required</td><td>Yes</td><td>No</td></tr>
+<tr><td>Timing Requirements</td><td>Declare &amp; Pay per ITA 78(4)</td><td>Must pay by Dec 31</td></tr>
+<tr><td>Taxed As</td><td>Employment Income</td><td>Eligible or Non-Eligible Dividend</td></tr>
+</tbody>
+</table>
+</figure>
+<p>In short, pick what fits your situation best. Talk to your CPA before December 31 to get it right.</p>
+<h3>Accrued Bonus Rules and Payment Deadlines for Deductibility</h3>
+<p>If you want to pay yourself a bonus from your corporation, there are rules you have to follow. The bonus must be declared by December 31, 2026. Then you have 180 days after year-end—until June 29, 2027—to actually pay it. If you miss that payment window, the bonus won’t reduce your company’s taxable income for 2026.</p>
+<p>This rule comes from ITA subsection 78(4). It makes sure bonuses are real payments, not just numbers on paper at the end of the year.</p>
+<p><strong>Remember:</strong> when you pay a bonus through payroll, you must also deduct <a href="https://opencorporationfor35.ca/payroll-service/">Canada Pension Plan (CPP) amounts</a> and other required deductions on time.</p>
+<p>Don’t forget about filing T4 slips reporting these payments:</p>
+<ul>
+<li>Deadline is the last day of February of next year (March 1, 2027 for 2026 slips, because February 28 falls on a Sunday).</li>
+<li>Electronic filing is mandatory if you file more than five slips.</li>
+<li>Missing deadlines can cause penalties or interest from CRA.</li>
+</ul>
+<p><strong>To recap:</strong></p>
+<ul>
+<li>Declare bonuses before December 31.</li>
+<li>Pay bonuses by June 29, 2027.</li>
+<li>Submit payroll deductions quickly.</li>
+<li>File T4 slips on time.</li>
+</ul>
+<p>Wondering if paying yourself a salary or bonus is better? Get advice early—deferring payments doesn’t always mean permanent savings or CRA approval.</p>
+<div class="gcpa-callout gold">
+<span class="co-tag">Our Actual Experience</span>
+<p>The year-end item we fix most often is a bonus booked at December 31 and never paid. If it is not paid within 180 days, the deduction moves to the year it is paid, so we diarize the June 29, 2027 payment date when we prepare the resolution.</p>
+</div>
+<h3>Understanding TOSI Screening and Shareholder Loan Implications</h3>
+<p><a href="https://opencorporationfor35.ca/guides/tax-on-split-income/">TOSI (Tax on Split Income) rules</a> affect family shareholders getting dividends from private companies. If family members receive dividends but don’t meet certain tests—like being actively involved in the business or passing age limits—they might get hit with higher taxes on those dividends.</p>
+<p>Before paying dividends near year-end, check if they pass TOSI rules under your small business setup in this corporate year-end tax checklist 2026.</p>
+<p>Also watch out for shareholder loans. Under ITA section 15(2), if you borrow money from your company, you generally need to repay it by the end of the corporation's next taxation year—December 31, 2027 for a loan made in a 2026 calendar year. If not repaid, the loan may count as income and get taxed personally.</p>
+<p>Keep good records showing loan advances and repayments during the year. This helps avoid surprise tax bills on “benefits” instead of deferring funds inside the corporation.</p>
+<p><strong>Here’s a summary:</strong></p>
+<figure class="wp-block-table">
+<table>
+<thead><tr><th>Topic</th><th>Important Notes</th></tr></thead>
+<tbody>
+<tr><td>TOSI Screening</td><td>Check family shareholder eligibility; affects dividend taxes</td></tr>
+<tr><td>Shareholder Loans</td><td>Must repay by the end of the next fiscal year; document well</td></tr>
+</tbody>
+</table>
+</figure>
+<p>Talk with your CPA ahead of time about planned dividends involving family or any shareholder loans needing attention during your yearly review.</p>
+<p>Sharad Gondaliya, CPA (Canada &amp; USA), has over ten years helping Canadian business owners with tax matters.</p>
+<p style="font-size:13.5px;color:#5a6b7b;margin:-6px 0 14px;"><sup>[1]</sup> Income Tax Act s.78(4); CRA Interpretation Bulletin IT-109R2</p>
+<p style="font-size:13.5px;color:#5a6b7b;margin:-6px 0 14px;"><sup>[2]</sup> CRA Guide RC4120 – Employers' Guide: Filing the T4 Slip and Summary</p>
+<p style="font-size:13.5px;color:#5a6b7b;margin:-6px 0 14px;"><sup>[3]</sup> Budget Implementation Act amendments re: TOSI - Finance Canada</p>
+<p style="font-size:13.5px;color:#5a6b7b;margin:-6px 0 14px;"><sup>[4]</sup> Income Tax Act s.15(2); CRA Technical Interpretation #2018-0613451C6</p>
+<h2>Managing Payroll, GST/HST, and Instalment Payments</h2>
+<div class="gcpa-numhead">
+<div class="num" style="background:#0f2a4a !important;color:#ffffff !important;">5</div>
+<h4 id="toc-payments" style="border:none;padding:0;margin:0;">Payroll, GST/HST and Instalments</h4>
+<span class="gcpa-pill red">Payments</span>
+</div>
+<p>Handling payroll, GST/HST, and <a href="https://opencorporationfor35.ca/corporate-compliance-subscription/">corporate instalments</a> is a must for business owners as part of the corporate year-end tax checklist 2026. Staying on top of these payments helps avoid penalties and interest. Plus, it makes year-end tax planning in Canada much smoother.</p>
+<h3>Ensuring Accurate Payroll Source Deductions and CPP Contributions</h3>
+<p>Payroll source deductions cover income tax, Employment Insurance (EI) premiums, and Canada Pension Plan (CPP) contributions. If your corporation pays salaries or bonuses before December 31, you must send these deductions by the last payroll remittance deadline.</p>
+<p>Final payroll remittance for 2026 is due January 15, 2027.</p>
+<p>This includes all pay periods ending in December.</p>
+<p>Missing this date means penalties from CRA.</p>
+<p>CPP earnings limits changed in 2026. Employees and employers each contribute 5.95% on earnings between $3,500 and $74,600, plus 4% CPP2 on earnings from $74,600 to $85,000. Owner-managers need to check their payroll reflects these new rates.</p>
+<p>Bonuses declared but unpaid by December 31 need special care. The tax law (ITA section 78(4)) says you can’t claim the bonus expense unless it’s paid within 180 days after year-end. It’s smart to get a CPA to review this timing.</p>
+<h3>Final GST/HST Remittance and Reporting Obligations</h3>
+<p>If your company is <a href="https://opencorporationfor35.ca/business-number-cra-account-registration/">registered for GST/HST</a>, you must file your last return for the period including December 31. The due date depends on your filing schedule:</p>
+<ul>
+<li><strong>Monthly filers:</strong> return due by January 31 after month-end.</li>
+<li><strong>Quarterly filers:</strong> return due by January 31 after the October-to-December quarter.</li>
+</ul>
+<p>Make sure you report all sales with GST/HST correctly. Also include input tax credits claimed during this time. Mistakes here can delay refunds or invite audits.</p>
+<p>Small businesses using Quick Method Accounting should confirm they still qualify at year-end with proper records.</p>
+<div class="gcpa-callout red">
+<span class="co-tag">Risk Warning</span>
+<p><strong>Risk Warning:</strong> If you pay yourself through payroll, please remit December's source deductions by January 15, 2027. Late remittances attract a penalty of 3% to 10% of the amount plus interest, even when the tax is paid in full later.</p>
+</div>
+<h3>Reviewing Corporate Instalments Due Dates and Amounts</h3>
+<p>Corporate instalments help spread out your tax payments based on what you estimate you owe during the year. For companies with a December year-end:</p>
+<figure class="wp-block-table">
+<table>
+<thead><tr><th>Instalment Date</th><th>Due Date</th><th>Notes</th></tr></thead>
+<tbody>
+<tr><td>Monthly instalments</td><td>Last day of each month</td><td>Most corporations</td></tr>
+<tr><td>Quarterly instalments</td><td>March 31, June 30, September 30, December 31</td><td>Eligible small CCPCs</td></tr>
+<tr><td>Final instalment</td><td>December 31</td><td>Last one for a December year-end</td></tr>
+<tr><td>Balance of tax</td><td>March 31, 2027</td><td>Most CCPCs claiming the small business deduction</td></tr>
+</tbody>
+</table>
+</figure>
+<p>The CRA wants any unpaid balance of tax for the year paid by March 31 next year (three months after year-end for most CCPCs claiming the small business deduction, otherwise two months) to avoid interest charges.</p>
+<p>Missing deadlines costs interest that piles up daily until full payment happens. This rate was 7% per year for the first quarter of 2026, and the CRA resets it every quarter.</p>
+<p>Owner-managers should compare actual taxable income with instalments paid during their December tax planning in Canada. This way they can adjust future payments if needed.</p>
+<p>This part covers key steps from your small business year-end tax checklist about managing important payments before closing your books for fiscal-year end in Ontario or Toronto. It’s a good idea to <a href="https://gondaliyacpa.ca/consultation/">check with a CPA</a> if bonus timing or dividends complicate payroll near year’s close.</p>
+<h2>Strategic Year-End Moves and Planning for the Coming Year</h2>
+<div class="gcpa-numhead">
+<div class="num" style="background:#0f2a4a !important;color:#ffffff !important;">6</div>
+<h4 id="toc-strategy" style="border:none;padding:0;margin:0;">Strategic Year-End Moves</h4>
+<span class="gcpa-pill blue">Strategy</span>
+</div>
+<p>If you own an incorporated business, year-end tax planning matters a lot. It helps you manage your corporate finances better and get ready for the next year. The corporate year-end tax checklist 2026 points out key steps to take. These include <a href="https://opencorporationfor35.ca/guides/holding-company-canada/">checking passive income</a>, handling shareholder loans, boosting registered account contributions, avoiding common mistakes, and knowing important tax rates. Following this plan makes it easier to make smart choices that fit Canadian tax rules.</p>
+<h3>Monitoring Passive Income Levels and Small Business Deduction Impact</h3>
+<p>Passive income can affect your <a href="https://opencorporationfor35.ca/guides/small-business-deduction/">small business deduction limit</a>. For 2026, if your Canadian-controlled private corporation (CCPC) has over $50,000 in adjusted investment income, the $500,000 small business limit starts to shrink1. This means more passive income means less access to lower tax rates on active business profits.</p>
+<p>Keep track of all passive income sources like interest, dividends from other corporations, and rent from inactive properties. Check how these affect your small business deduction before December 31. This step is important in any small business year-end tax checklist or corporate year-end tax checklist 2026.</p>
+<p>Missing this can lead to paying higher corporate taxes at general rates instead of lower small business rates. Catching it early lets you talk with a CPA about legal ways to handle your situation without promises of savings.</p>
+<h3>Clearing Shareholder Loans and Updating Minute Book Resolutions</h3>
+<p>Shareholder loans still unpaid by year-end need close attention under ITA section 15(2). If you don’t repay them within one year after the fiscal year ends or document them properly, they might be taxed as personal income2.</p>
+<p>Before December 31, review all shareholder loans and plan repayments if possible. Also <a href="https://opencorporationfor35.ca/minute-book-preparation/">update minute book resolutions</a> to record decisions about bonuses, dividends, or loan dealings properly. This is required under the Ontario Business Corporations Act3. Good records help with annual filings like Ontario corporate annual returns.</p>
+<p>Skipping these steps can cause audit problems or fines due to poor documentation or wrongly reported shareholder amounts.</p>
+<div class="gcpa-callout red">
+<span class="co-tag">Risk Warning</span>
+<p><strong>Risk Warning:</strong> A shareholder loan made in 2026 that is not repaid by December 31, 2027 is added to your 2026 income. Please do not repay it with a new loan just before the deadline; the CRA treats a series of loans and repayments as no repayment at all.</p>
+</div>
+<h3>Considering RRSP Contribution Room, TFSA, FHSA, and Other Registered Accounts</h3>
+<p>Getting paid salary before December 31 creates RRSP contribution room based on CRA limits for each year4. In 2026:</p>
+<ul>
+<li>The max RRSP limit is $33,810.</li>
+<li>You can contribute until March 1 of next year for the previous year's room5.</li>
+</ul>
+<p>Besides RRSPs (Registered Retirement Savings Plans), think about TFSAs (Tax-Free Savings Accounts) and FHSAs (First Home Savings Accounts) during December tax planning Canada. These accounts offer benefits but don’t change your RRSP room.</p>
+<p>Planning salary payments carefully matters because timing affects deductions for both your company and yourself. But this needs a professional’s eye since there’s no guarantee of permanent savings.</p>
+<div class="gcpa-banner" style="background:linear-gradient(135deg,#0d3b66 0%,#0c7a7a 100%) !important;">
+<div class="bt">Closing your books on December 31? Please book a free consultation and we will go through your year-end checklist with you, one date at a time.</div>
+<div class="bb"><a class="solid" href="https://gondaliyacpa.ca/consultation/">Book Free Consultation</a><a href="mailto:info@gondaliyacpa.ca">info@gondaliyacpa.ca</a><a href="tel:+16472129559">647-212-9559</a></div>
+</div>
+<h3>Addressing Common Year-End Tax Errors and Edge Cases</h3>
+<p>Year-end deadlines bring rules that are easy to miss but costly:</p>
+<ul>
+<li>Payroll remittances for December must be sent on time or CRA penalties of 3% to 10% of the amount apply, plus interest6.</li>
+<li>GST/HST returns due for December filing periods need prompt submission; missing these invites interest charges.</li>
+</ul>
+<p>Common mistakes include not following accrued bonus payment rules under ITA subsection 78(4), wrong payroll source deductions including CPP changes in 20267, missed installment payments that hurt cash flow or cause penalties.</p>
+<p>Owners should check each item well before January deadlines and keep good records inside their control systems.</p>
+<h3>Summary of Critical 2026 Tax Rates and Thresholds Affecting Year-End Decisions</h3>
+<figure style="margin:22px 0;"><img src="https://opencorporationfor35.ca/wp-content/uploads/2026/11/year-end-2026-deadlines.png" alt="Key dates for a December 31, 2026 year-end: dividends and bonus declarations by December 31, 2026; payroll remittance January 15, 2027; T4, T5 and RRSP March 1, 2027; balance of tax March 31, 2027; accrued bonus paid by June 29, 2027; T2 and Ontario annual return June 30, 2027." style="width:100%;border-radius:12px;border:1px solid #d8e0e8;" /><figcaption style="font-size:13px;color:#5a6b7b;text-align:center;padding:6px;">Please diarize these dates before you close the year.</figcaption></figure>
+<figure class="wp-block-table">
+<table>
+<thead><tr><th>Item</th><th>Amount / Rate</th><th>Source</th></tr></thead>
+<tbody>
+<tr><td>Small Business Deduction Limit</td><td>$500,000</td><td>CRA 1</td></tr>
+<tr><td>Combined Federal-Ontario SBD Rate*</td><td>12.2%</td><td>Ontario Ministry Finance 8</td></tr>
+<tr><td>General Corporate Income Tax Rate*</td><td>26.5%</td><td>CRA 9</td></tr>
+<tr><td>Maximum CPP Contribution</td><td>$4,230.45</td><td>CRA 7</td></tr>
+<tr><td>RRSP Dollar Limit</td><td>$33,810</td><td>CRA 4</td></tr>
+</tbody>
+</table>
+</figure>
+<p style="font-size:13.5px;color:#5a6b7b;margin:-6px 0 14px;">*Rates can vary a bit based on exact taxable incomes. Check with a CPA for numbers that fit your case.</p>
+<p>These figures help owners balance deferring taxes against costs while following rules in year-end tax planning for incorporated business owners.</p>
+<p>Sharad Gondaliya CPA (Canada &amp; USA) has over ten years’ experience helping Canadian businesses handle complex corporate taxes.</p>
+<p style="font-size:13.5px;color:#5a6b7b;margin:-6px 0 14px;">1 Canada Revenue Agency - Passive Investment Income Rules</p>
+<p style="font-size:13.5px;color:#5a6b7b;margin:-6px 0 14px;">2 Income Tax Act Section15(2) – Shareholder Loan Repayment Requirements</p>
+<p style="font-size:13.5px;color:#5a6b7b;margin:-6px 0 14px;">3 Ontario Business Corporations Act – Corporate Records (s.140)</p>
+<p style="font-size:13.5px;color:#5a6b7b;margin:-6px 0 14px;">4 Canada Revenue Agency - RRSP Limits &amp; Deadlines</p>
+<p style="font-size:13.5px;color:#5a6b7b;margin:-6px 0 14px;">5 Canada Revenue Agency - Deadline Dates FAQ</p>
+<p style="font-size:13.5px;color:#5a6b7b;margin:-6px 0 14px;">6 Canada Revenue Agency - Payroll Remittance Penalties</p>
+<p style="font-size:13.5px;color:#5a6b7b;margin:-6px 0 14px;">7 Canada Pension Plan Changes Effective Jan-Dec 2026</p>
+<p style="font-size:13.5px;color:#5a6b7b;margin:-6px 0 14px;">8 Ontario Ministry of Finance – Corporate Tax Rates Overview</p>
+<p style="font-size:13.5px;color:#5a6b7b;margin:-6px 0 14px;">9 Canada Revenue Agency – Federal Corporate Tax Rates</p>
+<h2>Frequently Asked Questions (FAQs)</h2>
+<div class="gcpa-numhead">
+<div class="num" style="background:#0f2a4a !important;color:#ffffff !important;">7</div>
+<h4 id="toc-faq" style="border:none;padding:0;margin:0;">Frequently Asked Questions</h4>
+<span class="gcpa-pill teal">FAQ</span>
+</div>
+<div class="gcpa-faq" id="faq-main">
+<details><summary>What is the exact T2 Corporate Return filing deadline for 2026 year-end corporations?<span class="pl">+</span></summary>
+<div class="ans"><p>The T2 Corporate Return for corporations with a December 31, 2026 year-end is due by June 30, 2027. Late filings may face CRA penalties.</p></div></details>
+<details><summary>When must T4 and T5 slips be submitted to CRA?<span class="pl">+</span></summary>
+<div class="ans"><p>T4 and T5 slips must be filed with the CRA by March 1, 2027, for the 2026 tax year, because February 28 falls on a Sunday. Timely filing avoids penalties.</p></div></details>
+<details><summary>What is the payroll remittance deadline for December 2026 source deductions?<span class="pl">+</span></summary>
+<div class="ans"><p>The final payroll remittance for December 2026 is due on January 15, 2027. Missing this date can trigger CRA penalties.</p></div></details>
+<details><summary>How does ITA section 78(4) affect bonus payments at year-end?<span class="pl">+</span></summary>
+<div class="ans"><p>ITA section 78(4) requires bonuses to be declared by December 31 and paid within 180 days after year-end to be deductible.</p></div></details>
+<details><summary>What are the repayment rules under ITA section 15(2) for shareholder loans?<span class="pl">+</span></summary>
+<div class="ans"><p>Shareholder loans must be repaid within one year after the end of the corporation's taxation year in which they were made—December 31, 2027 for a loan made in a 2026 calendar year—or they become taxable income.</p></div></details>
+<details><summary>What is the CPP maximum contribution amount for 2026?<span class="pl">+</span></summary>
+<div class="ans"><p>The maximum CPP contribution for both employee and employer in 2026 is $4,230.45 each, plus up to $416 each of CPP2.</p></div></details>
+<details><summary>How does the Accelerated Investment Incentive benefit capital asset purchases?<span class="pl">+</span></summary>
+<div class="ans"><p>It allows claiming up to three times the normal first-year Capital Cost Allowance on qualifying assets acquired after 2024 under the reinstated incentive, first introduced for assets acquired after November 20, 2018.</p></div></details>
+<details><summary>What is the half-year rule regarding Capital Cost Allowance (CCA)?<span class="pl">+</span></summary>
+<div class="ans"><p>The half-year rule limits CCA claims in an asset’s first year to half the normal rate, except when accelerated incentives apply.</p></div></details>
+<details><summary>When is the Ontario Business Registry annual return due?<span class="pl">+</span></summary>
+<div class="ans"><p>Ontario incorporated businesses must file their annual return through the Ontario Business Registry every year, within six months after fiscal year-end and with no fee, to stay compliant.</p></div></details>
+<details><summary>What are penalties for late payroll and GST/HST remittances?<span class="pl">+</span></summary>
+<div class="ans"><p>CRA charges penalties of 3% to 10% on late payroll remittances, and 1% plus 0.25% a month for up to 12 months on late GST/HST returns, plus interest on both.</p></div></details>
+</div>
+<div class="gcpa-callout teal">
+<span class="co-tag">Worth Knowing</span>
+<p>A corporation with a non-calendar year-end still runs payroll, T4 slips and RRSP room on the calendar year. Please keep both calendars in mind when you plan bonuses and dividends.</p>
+</div>
+<h2>Key Corporate Year-End Reminders from Open Corporation for $35</h2>
+<div class="gcpa-numhead">
+<div class="num" style="background:#0f2a4a !important;color:#ffffff !important;">8</div>
+<h4 id="toc-reminders" style="border:none;padding:0;margin:0;">Reminders and Next Steps</h4>
+<span class="gcpa-pill gold">Summary</span>
+</div>
+<ul>
+<li><strong><a href="https://opencorporationfor35.ca/incorporate-federally-in-canada/">CBCA vs OBCA Compliance</a>:</strong> Know if your corporation follows CBCA or OBCA rules for filing and governance. This affects your annual return requirements.</li>
+<li><strong>Corporate Instalments Schedule:</strong> Pay instalments monthly or quarterly based on taxable income estimates to avoid interest charges.</li>
+<li><strong>TOSI Rules:</strong> Review family shareholders’ dividend eligibility carefully under Tax on Split Income rules before declaring dividends.</li>
+<li><strong>GST/HST Final Filing:</strong> File your last GST/HST return covering December sales by January 31 (monthly or quarterly). Check eligibility if using Quick Method Accounting.</li>
+<li><strong>Payroll Remittance Final Deadline:</strong> Ensure all source deductions including CPP ($4,230.45 max in 2026) are remitted by January 15 following your fiscal year-end.</li>
+<li><strong>Shareholder Loan Documentation:</strong> Keep detailed records of all shareholder loan advances and repayments to meet ITA section 15(2) requirements and avoid unexpected income inclusions.</li>
+<li><strong>Minute Book Updates:</strong> Record all bonus declarations, dividend approvals, and loan transactions properly in minute books before year-end as per Ontario corporate law.</li>
+</ul>
+<p>For expert guidance tailored to Ontario incorporated businesses with a calendar-year fiscal period, contact Open Corporation for $35.</p>
+<h3>Next Steps</h3>
+<ul>
+<li>Confirm your corporation’s fiscal year-end and important CRA deadlines like June 30, 2027 for T2 filing.</li>
+<li>Review salary and dividend plans with your CPA considering TOSI impacts and RRSP room creation.</li>
+<li>Complete bookkeeping reconciliations early using accounting software recommended by Gondaliya CPA experts.</li>
+<li><a href="https://opencorporationfor35.ca/corporate-annual-filing/">File Ontario Business Registry annual returns promptly</a> to maintain good standing under OBCA or CBCA as applicable.</li>
+<li>Prepare payroll remittances including final CPP contributions ($4,230.45 max) by January 15 deadline without fail.</li>
+<li>Check corporate instalment payments and adjust estimates to avoid CRA interest charges starting January 1, 2027.</li>
+<li>Evaluate passive income levels to protect your small business deduction limit before year-end closes.</li>
+</ul>
+<p>Reach out today to simplify corporate tax compliance with trusted advice from Open Corporation for $35!</p>
+<div class="gcpa-pillhead"><h4 style="border:none;padding:0;margin:0;">Quick Answers: Key Numbers at a Glance</h4><span class="gcpa-pill gold">At a Glance</span></div>
+<ul>
+<li><strong>Dividends for 2026:</strong> Paid by December 31, 2026</li>
+<li><strong>Accrued bonus:</strong> Declared by December 31, 2026, paid by June 29, 2027</li>
+<li><strong>Final payroll remittance:</strong> January 15, 2027</li>
+<li><strong>T4 and T5 slips:</strong> March 1, 2027</li>
+<li><strong>RRSP:</strong> $33,810 limit, contributions by March 1, 2027</li>
+<li><strong>CPP 2026:</strong> 5.95% each side to $74,600, maximum $4,230.45</li>
+<li><strong>Balance of tax:</strong> March 31, 2027 for most CCPCs claiming the small business deduction</li>
+<li><strong>T2 and Ontario annual return:</strong> June 30, 2027</li>
+<li><strong>Shareholder loan:</strong> Repaid by December 31, 2027 for a 2026 loan</li>
+</ul>
+<div class="gcpa-pillhead"><h4 style="border:none;padding:0;margin:0;">Who This Is For / Not For</h4><span class="gcpa-pill teal">Fit Check</span></div>
+<ul>
+<li><strong>For:</strong> Owner-managers of Ontario corporations with a December 31 year-end who decide their own salary, bonus and dividends.</li>
+<li><strong>Not For:</strong> Corporations with a non-calendar year-end, which shift each date, and corporations with associated companies or large passive portfolios, which need a full review.</li>
+</ul>
+<div class="gcpa-callout green">
+<span class="co-tag">Verdict</span>
+<p>Do three things before December 31: pay any 2026 dividends, put any bonus in a signed resolution, and make sure new equipment is available for use. Then diarize the 2027 dates, because most year-end penalties come from missed January and March deadlines rather than from the December decisions themselves.</p>
+</div>
+<div class="gcpa-callout blue">
+<span class="co-tag">2026 Update</span>
+<p><strong>2026 Update &mdash; what is current:</strong> This article reflects rules current to November 2026. CPP maximum pensionable earnings are $74,600 with a maximum contribution of $4,230.45 on each side, plus CPP2 on earnings up to $85,000. The 2026 RRSP dollar limit is $33,810. T4 and T5 slips for 2026 are due March 1, 2027, because February 28 falls on a Sunday. The CRA charged 7% interest on overdue tax in the first quarter of 2026. A September 2026 federal proposal would allow immediate expensing of most property acquired on or after September 15, 2026; please confirm its status before you buy.</p>
+</div>
+<h5 style="color:#15355c;margin:24px 0 8px;">Corporate Year-End Readiness Check</h5>
+<p>This quick self-check flags what is still open before you close your 2026 books. Please answer the six questions below.</p>
+
+<div id="ocf-chk">
+  <style>
+    #ocf-chk{--n:#0f2a4a;--n2:#15355c;--bl:#1c6dd0;--tl:#0c8f8f;--gd:#c9991f;--rd:#c0392b;--ink:#1d2733;--mut:#5a6b7b;--ln:#d8e0e8;--alt:#f5f8fb;
+      border:1px solid var(--ln);border-radius:14px;overflow:hidden;background:#fff;box-shadow:0 10px 30px rgba(15,42,74,.08);font-family:inherit;color:var(--ink);margin:24px 0;}
+    #ocf-chk *{box-sizing:border-box;}
+    #ocf-chk .s-head{background:linear-gradient(135deg,var(--n),var(--n2));color:#fff;padding:18px 22px;}
+    #ocf-chk .s-head h5{margin:0;font-size:19px;font-weight:700;color:#fff!important;}
+    #ocf-chk .s-head p{margin:4px 0 0;font-size:13px;color:#cfe2f8!important;}
+    #ocf-chk .s-body{padding:20px 22px;}
+    #ocf-chk .s-q{padding:13px 0;border-bottom:1px solid var(--ln);display:flex;justify-content:space-between;align-items:center;gap:14px;}
+    #ocf-chk .s-q:first-child{padding-top:2px;}
+    #ocf-chk .s-q span.s-lab{font-weight:600;font-size:14.5px;color:var(--n);}
+    #ocf-chk .s-seg{display:inline-flex;border:1px solid var(--ln);border-radius:10px;overflow:hidden;flex:0 0 auto;}
+    #ocf-chk .s-seg label{cursor:pointer;padding:8px 18px;font-size:14px;font-weight:600;color:var(--mut);background:var(--alt);transition:.15s;user-select:none;}
+    #ocf-chk .s-seg label+label{border-left:1px solid var(--ln);}
+    #ocf-chk .s-seg input{position:absolute;opacity:0;width:0;height:0;}
+    #ocf-chk .s-seg input:checked+label{background:var(--n);color:#fff!important;}
+    #ocf-chk .s-go{margin-top:18px;width:100%;border:none;border-radius:11px;padding:14px 18px;font-size:15.5px;font-weight:700;color:#fff!important;cursor:pointer;background:linear-gradient(135deg,var(--bl),var(--tl));font-family:inherit;}
+    #ocf-chk .s-go:hover{filter:brightness(1.05);}
+    #ocf-chk .s-msg{display:none;margin-top:12px;font-size:13.5px;color:var(--rd);font-weight:600;}
+    #ocf-chk .s-out{display:none;margin-top:18px;border-radius:12px;border:1px solid var(--ln);overflow:hidden;}
+    #ocf-chk .s-out .s-status{padding:14px 18px;font-weight:700;font-size:16px;color:#fff!important;background:linear-gradient(135deg,var(--n),var(--n2));}
+    #ocf-chk .s-out .s-inner{padding:16px 18px;background:var(--alt);}
+    #ocf-chk .s-row{font-size:14.5px;margin:0 0 10px;line-height:1.5;}
+    #ocf-chk .s-count{display:inline-block;background:#fff;border:1px solid var(--ln);border-radius:9px;padding:8px 14px;font-weight:700;color:var(--n);font-size:14.5px;}
+    #ocf-chk .s-list{margin:8px 0 0;padding-left:18px;}
+    #ocf-chk .s-list li{font-size:13.5px;color:var(--ink);margin:4px 0;border:none;padding:0 0 0 4px;}
+    #ocf-chk .s-list li::before{display:none;}
+    #ocf-chk .s-cta{display:inline-block;margin-top:14px;background:var(--gd);color:#fff!important;font-weight:700;font-size:14.5px;text-decoration:none;padding:11px 20px;border-radius:10px;}
+    #ocf-chk .s-note{font-size:12.5px;color:var(--mut);margin:12px 0 0;}
+    @media(max-width:560px){#ocf-chk .s-q{flex-direction:column;align-items:flex-start;gap:8px;}}
+  </style>
+  <div class="s-head" style="background:linear-gradient(135deg,#0f2a4a,#15355c) !important;">
+    <h5>Corporate Year-End Readiness Check</h5>
+    <p>Six quick questions. No tax calculation, no figure quoted.</p>
+  </div>
+  <div class="s-body">
+    <div class="s-q" data-flag="0" data-msg="Bank, receivables and shareholder loan reconciliations before December 31"><span class="s-lab">1. Are your 2026 books reconciled to date?</span>
+      <span class="s-seg"><input type="radio" id="c-a-y" name="c-a" value="1"><label for="c-a-y">Yes</label><input type="radio" id="c-a-n" name="c-a" value="0"><label for="c-a-n">No</label></span></div>
+    <div class="s-q" data-flag="1" data-msg="A signed bonus resolution by December 31 and payment by June 29, 2027"><span class="s-lab">2. Do you plan to declare a year-end bonus?</span>
+      <span class="s-seg"><input type="radio" id="c-b-y" name="c-b" value="1"><label for="c-b-y">Yes</label><input type="radio" id="c-b-n" name="c-b" value="0"><label for="c-b-n">No</label></span></div>
+    <div class="s-q" data-flag="1" data-msg="TOSI screening before any dividend to a spouse, child or other family shareholder"><span class="s-lab">3. Will family members receive dividends?</span>
+      <span class="s-seg"><input type="radio" id="c-c-y" name="c-c" value="1"><label for="c-c-y">Yes</label><input type="radio" id="c-c-n" name="c-c" value="0"><label for="c-c-n">No</label></span></div>
+    <div class="s-q" data-flag="1" data-msg="A repayment plan, since a 2026 shareholder loan must be repaid by December 31, 2027"><span class="s-lab">4. Do you owe the corporation money?</span>
+      <span class="s-seg"><input type="radio" id="c-d-y" name="c-d" value="1"><label for="c-d-y">Yes</label><input type="radio" id="c-d-n" name="c-d" value="0"><label for="c-d-n">No</label></span></div>
+    <div class="s-q" data-flag="1" data-msg="An asset available for use by December 31, and a check of the current CCA incentive"><span class="s-lab">5. Are you buying equipment before year-end?</span>
+      <span class="s-seg"><input type="radio" id="c-e-y" name="c-e" value="1"><label for="c-e-y">Yes</label><input type="radio" id="c-e-n" name="c-e" value="0"><label for="c-e-n">No</label></span></div>
+    <div class="s-q" data-flag="0" data-msg="Your 2026 instalments compared with the tax you now expect to owe"><span class="s-lab">6. Are your corporate instalments up to date?</span>
+      <span class="s-seg"><input type="radio" id="c-f-y" name="c-f" value="1"><label for="c-f-y">Yes</label><input type="radio" id="c-f-n" name="c-f" value="0"><label for="c-f-n">No</label></span></div>
+
+<button type="button" class="s-go" id="c-go">Check my readiness</button>
+    <div class="s-msg" id="c-msg">Please answer all six questions to continue.</div>
+    <div class="s-out" id="c-out">
+      <div class="s-status" id="c-status" style="background:linear-gradient(135deg,#0f2a4a,#15355c) !important;">Your profile</div>
+      <div class="s-inner">
+        <p class="s-row"><b>Points to work through:</b> <span class="s-count" id="c-count"></span></p>
+        <div id="c-listwrap" style="display:none;"><p class="s-row" style="margin-bottom:4px;"><b>Worth reviewing with us:</b></p><ul class="s-list" id="c-list"></ul></div>
+        <p class="s-row" id="c-clean" style="display:none;"><b>Nothing flagged.</b> The usual complications do not appear to apply to you.</p>
+        <a class="s-cta" href="https://gondaliyacpa.ca/consultation/">Book a free consultation</a>
+        <p class="s-note">This is a general prompt, not tax advice, and it does not calculate your tax. Your outcome depends on your full facts, so please book a free consultation.</p>
+      </div>
+    </div>
+  </div>
+  <script>
+  (function(){
+    var root=document.getElementById('ocf-chk');
+    root.querySelector('#c-go').addEventListener('click',function(){
+      var qs=root.querySelectorAll('.s-q'), items=[], missing=false;
+      qs.forEach(function(q){
+        var x=q.querySelector('input:checked');
+        if(!x){missing=true;return;}
+        if(x.value===q.getAttribute('data-flag')) items.push(q.getAttribute('data-msg'));
+      });
+      var msg=root.querySelector('#c-msg'), out=root.querySelector('#c-out');
+      if(missing){msg.style.display='block';out.style.display='none';return;}
+      msg.style.display='none';
+      var list=root.querySelector('#c-list'), lw=root.querySelector('#c-listwrap'), clean=root.querySelector('#c-clean');
+      root.querySelector('#c-count').textContent=items.length+' to work through';
+      list.innerHTML='';
+      if(items.length){lw.style.display='block';clean.style.display='none';items.forEach(function(t){var li=document.createElement('li');li.textContent=t;list.appendChild(li);});}
+      else{lw.style.display='none';clean.style.display='block';}
+      root.querySelector('#c-status').textContent = items.length>=3 ? 'Several points need attention' : (items.length>=1 ? 'A few points to work through' : 'A straightforward case');
+      out.style.display='block';
+    });
+  })();
+  </script>
+</div>
+<div class="gcpa-cta" style="background:linear-gradient(135deg,#0f2a4a 0%,#1c4a78 100%) !important;">
+<h4>Close your 2026 year-end with a CPA</h4>
+<p>Incorporation from $35 including HST plus government fees, and a free CPA consultation on your salary, bonus, dividend and shareholder loan decisions before December 31. Please book a free consultation.</p>
+<div class="gcpa-trust"><span>1300+ 5-star Google reviews</span><span>Xero Partner Award Winner 2026</span><span>30-Day Money-Back Guarantee</span><span>60-Day Fee Matching</span></div>
+<div class="gcpa-btnrow"><a class="solid" href="https://gondaliyacpa.ca/consultation/">Book Free Consultation</a><a href="https://opencorporationfor35.ca/address-service-100/">Address Service</a><a href="https://opencorporationfor35.ca/contact-us/">Contact Us</a></div>
+</div>
+<p>Want a checklist to work from? Please <a href="https://opencorporationfor35.ca/wp-content/uploads/2026/11/OpenCorp35-Corporate-Year-End-Tax-2026-Checklist.pdf">download our free corporate year-end tax planning checklist</a> before your consultation.</p>
+<figure style="margin:26px 0;"><img src="https://opencorporationfor35.ca/wp-content/uploads/2026/11/why-choose-us-year-end-2026.png" alt="Why Canadian business owners choose Open Corporation For $35 for corporate year-end tax planning" style="width:100%;border-radius:12px;border:1px solid #d8e0e8;" /><figcaption style="font-size:13px;color:#5a6b7b;text-align:center;padding:6px;">Why business owners choose us.</figcaption></figure>
+<h3 class="gcpa-closing" id="toc-closing">What to Send Us</h3>
+<p>Send us your 2026 bookkeeping file or trial balance, your bank statements to December 31, the shareholder loan balance, and the salary, bonus or dividends you want to take. That is enough for us to tell you what to do before December 31, prepare the resolutions, and list your 2027 dates. Please start with a <a href="https://opencorporationfor35.ca/corporate-tax-filing-from-300/">corporate tax filing</a> request or see every fee on our <a href="https://opencorporationfor35.ca/pricing/">pricing page</a>.</p>
+<div class="gcpa-author">
+<div class="ava" style="background:linear-gradient(135deg,#0f2a4a,#0c8f8f) !important;color:#ffffff !important;">SG</div>
+<div class="info">
+<h5>Sharad Gondaliya, CPA (Canada &amp; USA) — Founder &amp; Managing Director, Gondaliya CPA Professional Corporation</h5>
+<div class="role">Reviewed and fact-checked by Sharad Gondaliya, CPA (Canada &amp; USA)</div>
+<p style="font-size:14.5px;color:#15355c !important;font-weight:700;margin:0 0 8px;">Open Corporation for $35 is a department of Gondaliya CPA.</p>
+<p>We incorporate and support companies in all 13 provinces and territories, handling CRA registrations, corporate tax filing, bookkeeping, GST/HST, payroll and audit support. Verify our firm on the <a href="https://www.cpaontario.ca/protecting-the-public/directories/firm/gondaliya-5sqvmj">CPA Ontario public firm directory</a>, firm registration 61330051.</p>
+<p style="font-size:13.5px;color:#15355c !important;font-weight:700;margin-top:10px;">CPA Ontario | CPA USA (Washington &amp; Montana) | Xero Partner Award Winner 2026 | 1300+ 5-star Google reviews</p>
+</div>
+</div>
+<p style="font-size:13px;color:#5a6b7b;border-top:1px solid #e3e9f0;padding-top:16px;margin-top:8px;"><strong>Published:</strong> November 23, 2026 &nbsp;·&nbsp; <strong>Last updated:</strong> November 23, 2026</p>
+<p style="font-size:13px;color:#5a6b7b;"><strong>Editorial policy:</strong> Our content is prepared by our team and reviewed by Sharad Gondaliya, CPA, and we update it as CRA limits, deadlines and tax rules change.</p>
+<p style="font-size:13px;color:#5a6b7b;"><strong>Disclaimer:</strong> This article is educational information only and is not tax, legal, or financial advice. Gondaliya CPA Professional Corporation is a firm of Chartered Professional Accountants, not a law firm. Please consult a CPA before acting.</p>
+<p style="font-size:14.5px;color:#15355c;font-weight:700;border-top:2px solid #e3e9f0;padding-top:16px;margin-top:20px;">Open Corporation for $35 is a department of Gondaliya CPA.</p>
+<p style="font-size:13px;color:#5a6b7b;">Operated by WealthBamboo Inc. Parent firm Gondaliya CPA Professional Corporation, CPA Ontario firm registration 61330051. Xero Partner Award Winner 2026. 1300+ five-star Google reviews. 30-day money-back guarantee and 60-day fee-matching policy. Phone 647-212-9559, email info@gondaliyacpa.ca, open 9:00 AM to 8:30 PM Monday to Sunday. Payment by Interac e-Transfer to info@gondaliyacpa.ca only, security question "Not Applicable" as auto-deposit is enabled. Card is also accepted.</p>
+</div>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@graph": [{"@type": "BlogPosting", "@id": "https://opencorporationfor35.ca/year-end-tax-checklist-incorporated-business-owners-2026/#article", "headline": "Year-End Tax Checklist for Incorporated Business Owners (December 2026)", "description": "Corporate year-end tax checklist for December 2026: dividends by December 31, accrued bonus within 180 days, CPP and RRSP limits, T4 and T5 slips by March 1, 2027, instalments, shareholder loans and the T2.", "datePublished": "2026-11-23", "dateModified": "2026-11-23", "author": {"@type": "Person", "name": "Sharad Gondaliya, CPA"}, "image": "https://opencorporationfor35.ca/wp-content/uploads/2026/11/Year-End-Tax-Checklist-2026-Featured.jpg", "publisher": {"@type": "Organization", "name": "Open Corporation for $35", "description": "Open Corporation for $35 is a department of Gondaliya CPA.", "parentOrganization": {"@type": "AccountingService", "name": "Gondaliya CPA Professional Corporation", "identifier": "CPA Ontario Firm Registration 61330051"}}, "mainEntityOfPage": "https://opencorporationfor35.ca/year-end-tax-checklist-incorporated-business-owners-2026/"}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is the exact T2 Corporate Return filing deadline for 2026 year-end corporations?", "acceptedAnswer": {"@type": "Answer", "text": "The T2 Corporate Return for corporations with a December 31, 2026 year-end is due by June 30, 2027. Late filings may face CRA penalties."}}, {"@type": "Question", "name": "When must T4 and T5 slips be submitted to CRA?", "acceptedAnswer": {"@type": "Answer", "text": "T4 and T5 slips must be filed with the CRA by March 1, 2027, for the 2026 tax year, because February 28 falls on a Sunday. Timely filing avoids penalties."}}, {"@type": "Question", "name": "What is the payroll remittance deadline for December 2026 source deductions?", "acceptedAnswer": {"@type": "Answer", "text": "The final payroll remittance for December 2026 is due on January 15, 2027. Missing this date can trigger CRA penalties."}}, {"@type": "Question", "name": "How does ITA section 78(4) affect bonus payments at year-end?", "acceptedAnswer": {"@type": "Answer", "text": "ITA section 78(4) requires bonuses to be declared by December 31 and paid within 180 days after year-end to be deductible."}}, {"@type": "Question", "name": "What are the repayment rules under ITA section 15(2) for shareholder loans?", "acceptedAnswer": {"@type": "Answer", "text": "Shareholder loans must be repaid within one year after the end of the corporation's taxation year in which they were made—December 31, 2027 for a loan made in a 2026 calendar year—or they become taxable income."}}, {"@type": "Question", "name": "What is the CPP maximum contribution amount for 2026?", "acceptedAnswer": {"@type": "Answer", "text": "The maximum CPP contribution for both employee and employer in 2026 is $4,230.45 each, plus up to $416 each of CPP2."}}, {"@type": "Question", "name": "How does the Accelerated Investment Incentive benefit capital asset purchases?", "acceptedAnswer": {"@type": "Answer", "text": "It allows claiming up to three times the normal first-year Capital Cost Allowance on qualifying assets acquired after 2024 under the reinstated incentive, first introduced for assets acquired after November 20, 2018."}}, {"@type": "Question", "name": "What is the half-year rule regarding Capital Cost Allowance (CCA)?", "acceptedAnswer": {"@type": "Answer", "text": "The half-year rule limits CCA claims in an asset’s first year to half the normal rate, except when accelerated incentives apply."}}, {"@type": "Question", "name": "When is the Ontario Business Registry annual return due?", "acceptedAnswer": {"@type": "Answer", "text": "Ontario incorporated businesses must file their annual return through the Ontario Business Registry every year, within six months after fiscal year-end and with no fee, to stay compliant."}}, {"@type": "Question", "name": "What are penalties for late payroll and GST/HST remittances?", "acceptedAnswer": {"@type": "Answer", "text": "CRA charges penalties of 3% to 10% on late payroll remittances, and 1% plus 0.25% a month for up to 12 months on late GST/HST returns, plus interest on both."}}]}]}
+</script>
