@@ -52,3 +52,6 @@ Date,Time (Toronto),Change,Row,Run,Post ID,URL,Location,Old text,New text,Cells,
 2026-11-24,,19,4,Live,"39328, 39333, 39338, 39345, 39350 and copies",LCGE owner and spouse lines,Body/tables/JSON-LD,"$2,033,672","$2,550,000 (2 x $1,275,000)",15,38,Done
 2026-11-24,,19,5,Live,37367 and copies,/gst-hst-quick-method-canada/ rate table,Nova Scotia row,"15% | 10% | 5%","14% | 9.4% | 4.7% (quick method service / goods rates at 14%; canada.ca not reachable from session, rates from secondary sources)",3,3,Done
 2026-11-24,,19,5,Live,"40756, 469491 page and copies",Province rate tables,Nova Scotia row,15% HST,"14% (since April 1, 2025)",3,3,Done
+2026-11-24,,19,8,Live,41020 and copies,EI exemption savings line,Body,"employee saves $1,077 and employer saves $1,508. Total savings: $2,585/year.","employee saves $1,123 and employer saves $1,572. Total savings: $2,695/year.",3,3,Done
+2026-11-24,,19,8,Live,41020 and copies,Salary cost table,EI employer column + total,"$1,508.00 | $5,810.00 and $1,508.00 | $5,938.00","$1,572.30 | $5,874.30 and $1,572.30 | $6,002.30",6,6,Done
+2026-11-24,,19,8,Live,474191 page (Elementor),Payroll infographic,Max employee premium,"$1,077","$1,123.07",2,2,Done
