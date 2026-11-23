@@ -321,7 +321,7 @@ POSTS = [
    ["Pay yourself", ["Salary creates RRSP room", "CPP still due on corporate salary", "Dividends carry no CPP"]],
    ["Keep the corporate veil", ["Separate business bank account", "Minute book and share register", "No personal costs from the corporation"]],
    ["Every year", ["Ontario annual return, no fee", "T2 six months after year-end", "T4 and T5 slips by end of February"]]]},
- {"dir": "year-end-tax-checklist-2026", "id": None, "short": "year-end-2026",
+ {"dir": "year-end-tax-checklist-2026", "id": 11590, "short": "year-end-2026",
   "topic": "corporate year-end tax planning", "pdf_title": "Corporate Year-End Tax 2026",
   "why": ("Year-end handled by CPAs", "Bonus, dividend, loan and payroll deadlines checked before December 31."),
   "info": [
