@@ -10,17 +10,18 @@ Thursday: new pages	Done	37 pages (credit card reviews, bank reviews, city mortg
 Friday: new pages	Done	Hub /research/ (1013) + 37 pages. All 38 match.
 Saturday: pages 490-514	Done	25 pages (24 under /accounts/, 1 under /vs/). All 25 match.
 Sunday: pages 515-539	Done	25 pages (15 Wealthsimple reviews, 10 comparisons under /vs/). All 25 match.
-Browser check	Pass	12-14 sample pages a day, plus a phone check (390px) on all 338 new pages: widgets load (v1.5.0), no script errors. Only 475 and 476 scroll sideways (see below).
-Sitemap and schema	Pass	All 338 new pages are in the page sitemap. Valid JSON-LD on every page: FAQPage on all, ItemList and Review where expected.
-IndexNow	Done	547 URLs submitted (146 replaced + 401 new); every batch accepted.
+Monday: pages 540-564	Done	25 pages (18 under /compare/, 6 under /business-owners/, 1 under /banking/). All 25 match.
+Browser check	Pass	12-14 sample pages a day, plus a phone check (390px) on all 363 new pages: widgets load (v1.5.0), no script errors. Only 475 and 476 scroll sideways (see below).
+Sitemap and schema	Pass	All 363 new pages are in the page sitemap. Valid JSON-LD on every page: FAQPage on all, ItemList and Review where expected.
+IndexNow	Done	572 URLs submitted (146 replaced + 426 new); every batch accepted.
 Header menu	Done	Added Retirement, Mortgages, Credit cards (Nov 17), Business owners and Newcomers (Nov 18), and Research after Learn (Nov 20), each with a dropdown. To fit 12 items, the full menu bar shows from 1440px (phone menu below that) and the 'Compare platforms' button from 2100px. Old headers saved in header-block35-before-2026-11-17/18/20.html.
 
 For you to look at:
 1. Pages 475 (lounge-access cards) and 476 (business credit cards): the supplied files are missing the </div> that closes the top hero box, so the whole page sits inside the shaded box and scrolls sideways on phones. Published as supplied; a one-tag fix is ready if you approve.
 2. Pages 100 and 101: meta says 4.3 while the content says 4.4/57. Page 549: meta and SEO title say "7 brokers" and Questrade 4.3/5, but the page has 8 brokers and Questrade 4.4. Page 268 says other provincial supplements "are being confirmed". All published as written.
-3. Offers: the end dates on all new pages are listed in the report (Offers sheet). Next removals: RBC Avion (Nov 25, also page 421), Wealthsimple Monthly Millionaire (Nov 26), Nov 30 group (Tangerine cards, CIBC business $400, Coast Capital, RBC Avion Business incl. page 476, Simplii card on 418, Shakepay card on 534), Disnat (Dec 4, also pages 452, 455 and 538).
+3. Offers: the end dates on all new pages are listed in the report (Offers sheet). Next removals: RBC Avion (Nov 25, also page 421), Wealthsimple Monthly Millionaire (Nov 26), Nov 30 group (Tangerine cards, CIBC business $400, Coast Capital, RBC Avion Business incl. page 476, Simplii card on 418, Shakepay card on 534, RBC business card points on 561), Disnat (Dec 4, also pages 452, 455 and 538).
 
-All packages received so far (pages 202-539) are now live.
+All packages received so far (pages 202-564) are now live. Page 543 also has a promotional 6% APY that ends Dec 31.
 
 Thanks,
 Navneet
