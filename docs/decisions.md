@@ -13591,3 +13591,118 @@ table lists all four remitter rows on every answer.
 unbuilt, in the sense batch 16 established: a live tool under a different slug
 already answers them. The four dropped above stay available to whoever has the
 prescribed rates and the current business-limit rules to hand.
+
+---
+
+## 2026-11-25 — Family 1 batch 9: Appendix A verticals #23, #24, #32–#34
+
+Five vertical pages built and published on the live domain. IDs 2914–2918,
+`cnf_family` f1 inherited from template page 2682, `nil_vertical` now at
+**30 published**.
+
+| Appendix A # | Slug | ID | What disqualifies the year |
+|---|---|---|---|
+| 23 | `nil-t2-filing-for-electrical-contracting-corporations` | 2914 | a utility or efficiency-program incentive |
+| 24 | `nil-t2-filing-for-roofing-corporations` | 2915 | scrap weighed in at a metal yard |
+| 32 | `nil-t2-filing-for-tutoring-corporations` | 2916 | a prepaid lesson package drawn down |
+| 33 | `nil-t2-filing-for-translation-corporations` | 2917 | a standing agency retainer or minimum |
+| 34 | `nil-t2-filing-for-travel-agency-corporations` | 2918 | trust money versus commission |
+
+### Deviation: Appendix A order
+
+The batch was taken out of Appendix A order. #23 and #24 are construction
+trades and so are #25, #26 and #27; five trades in one batch fights the
+Section 6(k) similarity gate hard, because the trades share their vocabulary
+and their disqualifying events. Batch 8 needed three full rewrite passes with
+only two trades in it.
+
+Splitting batch 9 across two subject clusters — two trades plus three services
+— cut the failing-pair count on the first build from 22 to 13 at the same page
+count. **#25 to #31 remain unbuilt and are next.** Nothing is skipped; the
+order changed, not the set.
+
+### The deliverables-list reorder
+
+Batch 9 found a new lever for the 6(k) gate, and it is worth recording because
+the structural floor leaves so little room. Of roughly 1,500 matched tokens
+between any two F1 pages, about 898 sit in family furniture that cannot be
+changed — the service-cards block, the geography paragraph, two stylesheets,
+the JSON-LD, the price deliverables list and the trust line. That is a 0.38
+floor before a word of page copy is written.
+
+Electrical and roofing sat at 0.602 with nothing left in common but the
+price-deliverables sentence. **Reordering that list** — not removing an item
+from it — broke the 52-token common run and took the pair under the ceiling.
+Every deliverable still appears on every page. The gate closed at **0.599
+against a 0.60 ceiling**, with `audit_visible` clear at 117 strings on all
+five.
+
+### Two content defects the gates do not look for
+
+Both were caught by hand before the pages were finished, and both are the kind
+of thing a gate should catch:
+
+1. **Translation's FAQ 8 answered FAQ 7's question.** The answer to "we sold our
+   translation memory licences to a colleague" repeated the schedules answer
+   from the question above it, word for word. The 6(k) gate compares pages
+   against each other and never within a page, so a page that repeats itself
+   passes. Rewritten to answer the disposition.
+2. **Roofing's FAQ 10 duplicated cleaning's exactly** ("How do we close the
+   corporation properly?"). Same blind spot in reverse: an exact-duplicate
+   *question* carries too few tokens to move a page-level score. Rewritten.
+
+A cross-corpus FAQ check now exists as a throwaway script but is **not** a
+committed gate. Two pre-existing exact-duplicate questions it found are left
+alone rather than edited silently: `closed-restaurant-corporations` 4 against
+`e-commerce-corporations` 6 ("What happens to the GST/HST number?"), and
+`closed-restaurant-corporations` 6 against `dormant-construction-corporations`
+7 ("There is still a shareholder loan on the books. Is the year nil?").
+
+**Open for Navneet:** fold a within-page and cross-page FAQ duplicate check
+into `similarity.py`, and decide whether the two pre-existing duplicates are
+worth rewriting on pages already signed off.
+
+### The excerpt leak — fixed on these five, open on the other 25
+
+Every F1 page is duplicated from template page 2682, and the duplicate
+inherits the template's **excerpt**: "A numbered holding corporation files a T2
+for every tax year it exists…". The excerpt is not body text, so
+`audit_visible` never sees it — but the theme writes it into the social-share
+link on the rendered page, so it is live, and it is the wrong page's copy.
+
+Batch 9's five now carry their own excerpt, set to the page's meta description.
+**Open for Navneet: the 25 F1 pages from batches 1–8 all still carry template
+2682's excerpt.** The fix is one `wp_update_cpt_item` per page with the
+excerpt set from `rank-math-meta.json`, and no page content changes.
+
+### Rule 10 — live is indexable, and that remains unresolved
+
+The five new pages render `<meta name="robots" content="follow, index, …">`.
+So does the rest of the site. CLAUDE.md Rule 10 says live stays noindexed until
+Sharad Gondaliya confirms launch, and with no staging site that meta tag is
+the only thing keeping a half-built site out of the index.
+
+This is not new to batch 9 and was **not** changed here: flipping Rank Math's
+site-wide setting is a site-wide SEO decision, not a page build. It is the same
+unresolved item already recorded in this file — the decision to keep the site
+indexed was taken but never logged, and the rule it contradicts is still
+written as a hard rule.
+
+**Open for Navneet and Sharad Gondaliya: either Rule 10 is in force and Rank
+Math goes to site-wide noindex, or Rule 10 is amended in writing.** The two
+cannot both stand, and every page published in the meantime is published into
+the index.
+
+### Verification
+
+Each page was fetched from the live domain after publishing and checked on the
+rendered HTML rather than on the stored post: two JSON-LD blocks and no third;
+no FAQPage, HowTo or aggregateRating; 80 accordion-item markers, which is the
+ten FAQ rows the template carries; eight occurrences of `$300.00 plus HST per
+tax year` and two of `$350.00 plus HST per year`; `registered EFILE electronic
+filer` present and no other CRA wording; no bare `T183`; CO-17 and AT1 each
+named once; no `&#038;&#038;` entity damage; and, after the excerpt fix, no
+trace of template 2682's wording anywhere in the page.
+
+`?cnf_family=f1` came back in the cache purge for all five, which confirms the
+f1 term on each.

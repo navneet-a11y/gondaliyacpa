@@ -2223,5 +2223,50 @@
     "desc": "Subsection 15(2) includes the loan in the shareholder income, not the corporation. Enter the year end and the amount."
    }
   ]
+ },
+ "nil_vertical_f1_batch9": {
+  "note": "Family 1 batch 9, Appendix A verticals #23, #24 and #32 to #34 (Navneet, 2026-11-25). IDs 2914 to 2918, all live, cnf_family f1 (term id 14) inherited from template page 2682, nil_vertical at 30 published. Taken out of Appendix A order: #23 and #24 are construction trades and #25 to #27 are three more, and five trades in one batch fights the 6(k) gate hard (batch 8 needed three rewrite passes with only two trades in it). Splitting the batch across two subject clusters, two trades plus three services, cut the failing-pair count on the first build from 22 to 13 at the same page count. #25 to #31 remain unbuilt and come next. SEO titles and descriptions below are also the post excerpts, which batch 9 is the first batch to set: every earlier F1 page still carries template 2682's excerpt.",
+  "items": [
+   {
+    "id": 2914,
+    "slug": "nil-t2-filing-for-electrical-contracting-corporations",
+    "appendix_a_number": 23,
+    "kw": "nil t2 for electrical contracting corporation",
+    "title": "Electrical Contractor Nil T2 | Years With No Permits",
+    "desc": "An electrical contracting corporation files for every tax year it exists. Why a utility incentive ends the nil year, and what the return costs."
+   },
+   {
+    "id": 2915,
+    "slug": "nil-t2-filing-for-roofing-corporations",
+    "appendix_a_number": 24,
+    "kw": "nil t2 for roofing corporation",
+    "title": "Roofing Corporation Nil T2 | Years With No Roofs",
+    "desc": "A roofing corporation files a T2 for every year it exists. Why selling scrap ends the nil year, and what the return costs per year."
+   },
+   {
+    "id": 2916,
+    "slug": "nil-t2-filing-for-tutoring-corporations",
+    "appendix_a_number": 32,
+    "kw": "nil t2 for tutoring corporation",
+    "title": "Tutoring Corporation Nil T2 | Years With No Lessons",
+    "desc": "A tutoring corporation files for every tax year it exists. Why a prepaid lesson package ends the nil year, and what the return costs."
+   },
+   {
+    "id": 2917,
+    "slug": "nil-t2-filing-for-translation-corporations",
+    "appendix_a_number": 33,
+    "kw": "nil t2 for translation corporation",
+    "title": "Translation Corporation Nil T2 | Years With No Work",
+    "desc": "A translation corporation files a T2 for every year it exists. Why a standing agency minimum ends the nil year, and the cost per year."
+   },
+   {
+    "id": 2918,
+    "slug": "nil-t2-filing-for-travel-agency-corporations",
+    "appendix_a_number": 34,
+    "kw": "nil t2 for travel agency corporation",
+    "title": "Travel Agency Nil T2 | Years With No Bookings",
+    "desc": "A travel agency corporation files for every tax year it exists. Why client money in trust is not revenue, and what the return costs."
+   }
+  ]
  }
 }

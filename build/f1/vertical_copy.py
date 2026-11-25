@@ -5357,4 +5357,1084 @@ VERTICALS = {
   ],
  },
 
+ 'electrical-contracting-corporations': {
+  'name': 'Electrical Contracting Corporations',
+  'short': 'electrical contracting corporation',
+  'plural': 'electrical contracting corporations',
+  'kw': 'nil t2 for electrical contracting corporation',
+  'title': 'Electrical Contractor Nil T2 | Years With No Permits',
+  'desc': 'An electrical contracting corporation files for every tax year it exists. Why a utility incentive ends the nil year, and what the return costs.',
+  'h1': 'Nil T2 Filing for Electrical Contracting Corporations',
+  'lede': 'Incentive money is the thing that catches this one. An efficiency rebate on a job finished long ago can arrive in a year nothing else did. With nothing received at all, the year is $300.00 plus HST per tax year.',
+  'intro_h': 'Flat-Fee Nil T2 Filing for Electrical Contracting Corporations',
+  'intro': (
+    'An electrical contracting corporation can pull no permit for a whole year and still take money in. Utility and efficiency-program incentives are paid on their own timetable, long after the work was energised, and the corporation reaches a year end with a return owing behind it. A year that received none of it is $300.00 plus HST per tax year.',
+    'The reason hardly matters. A move to a larger shop as an employee, a licence held while the market is watched, a van sold, the work carried on through another corporation: the test does not change. What is read is the permit record, the service billing, any incentive or rebate banked, and whether anything owned left the company. The two GIFI schedules, the notes checklist and the shareholder schedule go in together and the whole thing is transmitted. A year that took money in is priced as a full return instead.',
+  ),
+  'notnil_h': 'What an Unfiled Year Costs an Electrical Contracting Corporation',
+  'notnil_boxes': [
+    (
+      'A Licence Held Is a Company Alive',
+      'The contractor licence sits in the corporation, and a corporation that exists reaches a year end every twelve months.',
+    ),
+    (
+      'Incentives Arrive Years Later',
+      'Efficiency money can be approved two seasons after the work was energised, and it lands in whatever year it lands in.',
+    ),
+    (
+      'The Safety Authority and the Insurer Look',
+      'Renewing the licence, or taking out liability cover again, puts the corporate standing in front of someone who reads it.',
+    ),
+    (
+      'Benders and Testers Stay on the Books',
+      'A van, a bender, meters and testers are carried as the corporation’s property until the day they go.',
+    ),
+  ],
+  'notnil_text': (
+    'The licence and the testers are what keep these companies registered, and a trade licence is not given up lightly. Neither fact moves a year end.',
+    'Where no permit was pulled and no incentive banked, that year is $300.00 plus HST per tax year. A run of them is sent earliest first so the equipment figures line up from one to the next.',
+  ),
+  'sched_h': 'Which T2 Schedules an Electrical Contracting Corporation Files',
+  'sched_rows': [
+    (
+      'Schedule 100',
+      'Balance sheet information',
+      'Required',
+      'Share capital, retained profit, the van and the testers, cable not yet installed, and anything owed to a shareholder.',
+    ),
+    (
+      'Schedule 125',
+      'Income statement information',
+      'Required',
+      'Contract and service revenue at nil against nil costs, which is what a year without a permit reports.',
+    ),
+    (
+      'Schedule 141',
+      'Notes checklist',
+      'Required',
+      'Goes alongside the two GIFI schedules and names who compiled them.',
+    ),
+    (
+      'Schedule 50',
+      'Shareholder information',
+      'Required',
+      'Anyone holding a tenth of the shares or more, which on these is usually the master electrician alone.',
+    ),
+    (
+      'Schedule 24',
+      'First-time filer information',
+      'First return only',
+      'Carried by the very first return the corporation files, and by no other.',
+    ),
+    (
+      'Schedule 8',
+      'Capital cost allowance',
+      'While the tools are owned',
+      'The van, benders, meters and testers run down Schedule 8 for as long as the corporation owns them, used or not.',
+    ),
+  ],
+  'sched_note': 'Source: Canada Revenue Agency guidance on what a T2 return carries, applied to an electrical contracting corporation that pulled no permit in the tax year. Reviewed 25 November 2026.',
+  'sched_boxes': [
+    (
+      'An Incentive Payment Is Revenue',
+      'Efficiency money banked by the company is its revenue, whenever the circuit was actually run.',
+    ),
+    (
+      'Wire on the Shelf Is an Asset',
+      'Cable, devices and panels bought and never installed sit on Schedule 100 until they go into a job or are written off.',
+    ),
+    (
+      'Wages From a Larger Shop Are Yours',
+      'Where a bigger contractor paid you as an employee, that money is taxed in your hands and the corporate year can be nil.',
+    ),
+  ],
+  'chk_yes': [
+    'No permit was pulled and no work energised for it',
+    'Not a dollar of incentive, rebate or allowance was banked by it',
+    'No inspection attendance or callout was charged',
+    'Nothing it owns was sold, traded or written off',
+    'No interest reached any account of its',
+  ],
+  'chk_no': [
+    'A utility or efficiency-program incentive was received',
+    'A permit was pulled and the work invoiced',
+    'A service call or an inspection attendance was billed',
+    'Cable, devices or a panel went to another trade for money',
+    'A van, a bender or a test set left the corporation',
+  ],
+  'chk_both': [
+    'A return falls due at every year end, permits or none',
+    'There is an authorised T183CORP behind each of those returns',
+    'A tenth-share holding is reported on Schedule 50',
+    'A contractor licence and a liability policy run on their own renewal dates',
+    'Clearance has to be in hand before dissolution',
+  ],
+  'why_h': 'Why Electrical Contracting Corporations Use This Service',
+  'why': [
+    (
+      'For the Year Without a Permit',
+      'A year on another firm’s payroll. A year with the licence held and nothing booked. Those are the years the fee is written around.',
+    ),
+    (
+      'Incentive Money Is Looked For First',
+      'Rebate money arriving on its own schedule is what most often ends one of these years, so the deposits are read first.',
+    ),
+    (
+      'The Same Figure Each Quiet Year',
+      'Quiet years are $300.00 plus HST per tax year each. The count of them changes nothing.',
+    ),
+    (
+      'Earning Years Go to the Full Return',
+      'Energise a job or bank an incentive and the year goes to the full service at the higher fee.',
+    ),
+  ],
+  'strip': [
+    (
+      'A Parked Van, a Live Licence',
+      'Neither of them stops the year end.',
+    ),
+    (
+      'Earliest Year Leads',
+      'Equipment figures only agree in date order.',
+    ),
+    (
+      'Signed in a Browser',
+      'One authorisation per year, none of them on paper.',
+    ),
+  ],
+  'svc_h': 'What an Electrical Contracting Corporation Usually Needs Next',
+  'proc_h': 'How an Electrical Contracting Corporation Files',
+  'proc_lede': 'Four questions on the filing form, and the first one is about money that arrived rather than work that was done.',
+  'proc_note': 'A year of deposits answers most of the first question:',
+  'steps': [
+    (
+      'Read the Year of Deposits',
+      'Permits pulled, callouts billed, incentives banked and holdbacks released are counted first of all.',
+    ),
+    (
+      'Account for Stock and Equipment',
+      'Cable passed to another trade, or a tool sold, belongs to its own year, and that year prices as a full return.',
+    ),
+    (
+      'Build the Return',
+      'The T2 with its GIFI schedules and Schedule 50; Schedule 24 on a first filing; Schedule 8 while the van and the testers are owned.',
+    ),
+    (
+      'Authorise and Transmit',
+      'Sign one T183CORP per year. Confirmation follows inside 3 business days.',
+    ),
+  ],
+  'price_h': 'Nil T2 Filing Cost for an Electrical Contracting Corporation',
+  'price_eyebrow': 'One Fee Per Tax Year',
+  'price_text': 'A year with no permit, no callout and no incentive prices at $300.00 plus HST per tax year. For that figure the return is reviewed by a CPA before it moves, transmitted electronically by a registered EFILE electronic filer, and confirmed by the CRA in an email within 3 business days. The same fee covers the T2 itself, the GIFI schedules where required, Schedule 50, Schedule 24 on a first return, the T183CORP package with secure e-signing, and one corrected transmission where the Agency rejects the first. Any year that took money in belongs to the full service at $350.00 plus HST per year, at gondaliyacpa.ca.',
+  'geo_h': 'Electrical Contracting Corporation Filing Across Canada',
+  'cta_h': 'File the Years No Permit Was Pulled',
+  'faq': [
+    (
+      'I spent the year on a larger contractor’s payroll. Does my corporation file?',
+      'It files, every year until it is dissolved. A wage is yours rather than the company’s.',
+    ),
+    (
+      'An efficiency rebate came in on a job from two years ago. Is the year nil?',
+      'No. An incentive is the corporation’s money in the year it lands, which prices that year at gondaliyacpa.ca, at $350.00 plus HST per year.',
+    ),
+    (
+      'I did a small job for a neighbour and he paid me directly. Does that count?',
+      'Not against the corporation. Where the customer paid you rather than it, that income belongs on your personal return.',
+    ),
+    (
+      'The licence is current and I pulled nothing. Does that make the year active?',
+      'It can be nil. Holding a licence earns nothing; renewing it is its own matter and says nothing about the corporate year.',
+    ),
+    (
+      'The van and the testers were sold off. Which return shows that?',
+      'The one for the year they went. Proceeds against what was left of the cost give the figure.',
+    ),
+    (
+      'There is a reel of cable and a box of devices in the shop. Do they matter?',
+      'On the balance sheet only. Cable and devices stay an asset until they are installed.',
+    ),
+    (
+      'A general contractor released a holdback on an old job. What then?',
+      'Then that year is not nil. Released holdback money is the corporation’s, in the year the cheque cleared.',
+    ),
+    (
+      'Some leftover panels went to another electrician. Does that end the nil year?',
+      'If the company took the money, yes. Selling stock is revenue to it at any size.',
+    ),
+    (
+      'Eight years were never filed. Can they all be dealt with?',
+      'Yes, all eight. One T2 and one T183CORP each, at $300.00 plus HST per tax year, oldest first.',
+    ),
+    (
+      'We want to close the company. Where does that start?',
+      'Open years in, equipment out as dispositions in their year, dissolution, then a final T2 within six months. Clearance comes last.',
+    ),
+  ],
+ },
+
+ 'roofing-corporations': {
+  'name': 'Roofing Corporations',
+  'short': 'roofing corporation',
+  'plural': 'roofing corporations',
+  'kw': 'nil t2 for roofing corporation',
+  'title': 'Roofing Corporation Nil T2 | Years With No Roofs',
+  'desc': 'A roofing corporation files a T2 for every year it exists. Why selling scrap ends the nil year, and what the return costs per year.',
+  'h1': 'Nil T2 Filing for Roofing Corporations',
+  'lede': 'Scrap is what usually ends one of these years. A trailer of old flashing weighed in at a metal yard is a sale. Where nothing was roofed and nothing weighed in, the year is $300.00 plus HST per tax year.',
+  'intro_h': 'Flat-Fee Nil T2 Filing for Roofing Corporations',
+  'intro': (
+    'Roofing stops and starts with the weather, and a corporation can go a full year without a roof on it. What tends to happen in that year is small and easy to forget: a load of torn-off metal weighed in, a warranty callback that bills nobody, a few bundles sold to another crew. A year with none of it is $300.00 plus HST per tax year.',
+    'Whether the crew was paid off, the season was given to a competitor, the truck was sold, or the work went into a newer corporation, the year is measured against roofs installed or repaired and invoiced, scrap or material sold on, any warranty allowance received and whether a vehicle or a hoist left. Schedules 100, 125, 141 and 50 are prepared and the return is transmitted electronically. A year with revenue in it goes to the full service.',
+  ),
+  'notnil_h': 'What an Unfiled Year Costs a Roofing Corporation',
+  'notnil_boxes': [
+    (
+      'A Season Missed Is Not a Year Skipped',
+      'No roofs changes the figures the return reports. Dissolution is the only thing that stops there being a return.',
+    ),
+    (
+      'Warranty Work Earns Nothing and Still Happens',
+      'A workmanship promise can pull a crew back onto a finished roof years later. The day costs money and raises no invoice.',
+    ),
+    (
+      'Suppliers and Insurers Read the Record',
+      'A supply account reopened, or roofing liability cover renewed, is read by somebody who looks at the filings.',
+    ),
+    (
+      'The Truck and the Hoist Are Property',
+      'A truck, a hoist and a compressor belong to the corporation until they are sold or taken out of it.',
+    ),
+  ],
+  'notnil_text': (
+    'What keeps these corporations alive is usually the plan to go again in the spring, or a workmanship warranty with years left to run on it. Both are good reasons to hold the company, and neither of them is a reason the return stops being due.',
+    'A year with no roof and no scrap sale is $300.00 plus HST per tax year. Outstanding years go in date order so the stock and truck figures agree.',
+  ),
+  'sched_h': 'Which T2 Schedules a Roofing Corporation Files',
+  'sched_rows': [
+    (
+      'Schedule 100',
+      'Balance sheet information',
+      'Required',
+      'The truck, the hoist and compressor, bundles and rolls still in the yard and any balance owing to a shareholder all appear here.',
+    ),
+    (
+      'Schedule 125',
+      'Income statement information',
+      'Required',
+      'Revenue nil, costs nil: a year in which no roof was touched.',
+    ),
+    (
+      'Schedule 141',
+      'Notes checklist',
+      'Required',
+      'A short checklist that records how the two GIFI schedules were put together and by whom.',
+    ),
+    (
+      'Schedule 50',
+      'Shareholder information',
+      'Required',
+      'Every holding at a tenth or more. On a two-partner roofing company that is two lines.',
+    ),
+    (
+      'Schedule 24',
+      'First-time filer information',
+      'First return only',
+      'Appears on the opening return and never repeats.',
+    ),
+    (
+      'Schedule 8',
+      'Capital cost allowance',
+      'While the truck is owned',
+      'Truck, hoist, compressor and nail guns are depreciable property for as long as the corporation holds them.',
+    ),
+  ],
+  'sched_note': 'Source: the Canada Revenue Agency, on what accompanies a T2, weighed against a roofing corporation that laid no roof in the year. Reviewed 25 November 2026.',
+  'sched_boxes': [
+    (
+      'Scrap Weighed In Is a Sale',
+      'A trailer of torn-off metal taken to a yard is a sale of material by the corporation, and the cheque is revenue in that year.',
+    ),
+    (
+      'Bundles in the Yard Are Stock',
+      'Shingles, rolls and flashing bought and never laid are an asset on Schedule 100 until they go on a roof or are written off.',
+    ),
+    (
+      'Labouring for Another Crew Is Personal',
+      'Days worked on another roofer’s job and paid to you are yours, which leaves the corporate year empty.',
+    ),
+  ],
+  'chk_yes': [
+    'No roof was installed, repaired or invoiced by the corporation',
+    'No scrap metal or leftover material was sold by it',
+    'No warranty allowance or supplier credit was received',
+    'No truck, hoist or compressor left by sale',
+    'Nothing in its name paid interest',
+  ],
+  'chk_no': [
+    'Scrap metal or torn-off material was weighed in and paid for',
+    'A roof went on, or a repair was billed to somebody',
+    'Shingles or rolls went to another crew for money',
+    'A manufacturer credit or warranty allowance arrived',
+    'The truck, the hoist or a gun changed hands',
+  ],
+  'chk_both': [
+    'No season off excuses a year end',
+    'Each return waits on a signed T183CORP',
+    'Schedule 50 lists holdings at a tenth or more',
+    'The liability policy and any trade registration renew separately',
+    'A clearance certificate comes before dissolution',
+  ],
+  'why_h': 'Why Roofing Corporations Use This Service',
+  'why': [
+    (
+      'Built for the Season That Did Not Happen',
+      'A year with the crew paid off, a year with the truck parked, a year spent working for somebody else. That is the year this fee is for.',
+    ),
+    (
+      'The Scrap Question Comes Before the Price',
+      'Whether anything was weighed in is settled first, because that is what most often turns one of these years into an earning one.',
+    ),
+    (
+      'One Amount, However Many Years',
+      'Each quiet season costs the same $300.00 plus HST per tax year.',
+    ),
+    (
+      'Working Seasons Are Quoted as Such',
+      'Lay a roof, weigh in scrap, and the year becomes an ordinary corporate return at the higher fee.',
+    ),
+  ],
+  'strip': [
+    (
+      'No Roofs, Same Year End',
+      'Weather stops the work, not the year end.',
+    ),
+    (
+      'Oldest First, Always',
+      'Stock and truck values only carry in that order.',
+    ),
+    (
+      'Nothing to Post',
+      'Each year is authorised on a screen.',
+    ),
+  ],
+  'svc_h': 'What a Roofing Corporation Usually Needs Next',
+  'proc_h': 'How a Roofing Corporation Files a Nil Year',
+  'proc_lede': 'Four steps. Scrap and leftover material come first, because they are what usually end the year.',
+  'proc_note': 'Weigh tickets and supplier credits are the awkward part:',
+  'steps': [
+    (
+      'Check What Was Sold as Well as What Was Roofed',
+      'Roofs invoiced, scrap weighed in, material passed to another crew and any warranty allowance are all measured before the year is called nil.',
+    ),
+    (
+      'Settle the Truck and the Hoist',
+      'A vehicle or a hoist sold, traded or written off belongs in the year it went, and that year is priced as a full return.',
+    ),
+    (
+      'Assemble the Return',
+      'The return itself, with the two GIFI schedules, the notes checklist and the shareholder schedule, plus capital cost allowance while the truck is held.',
+    ),
+    (
+      'Sign Each Year, Then File',
+      'A T183CORP a year, signed online. The Agency confirms inside 3 business days.',
+    ),
+  ],
+  'price_h': 'Nil T2 Filing Cost for a Roofing Corporation',
+  'price_eyebrow': 'One Fee Per Tax Year',
+  'price_text': 'Nothing roofed and nothing weighed in leaves the year at $300.00 plus HST per tax year. Against that fee sit the T2, the GIFI schedules where required, Schedule 50, Schedule 24 on a first return, the T183CORP package with secure e-signing, CPA review before transmission, electronic transmission by a registered EFILE electronic filer, one corrected transmission where the Agency rejects the first, and the CRA confirmation emailed within 3 business days. Bill a roof, sell scrap or part with the truck and that year belongs at gondaliyacpa.ca, at $350.00 plus HST per year.',
+  'geo_h': 'Roofing Corporation Filing Across Canada',
+  'cta_h': 'File the Seasons That Never Started',
+  'faq': [
+    (
+      'We did not put a roof on all year. Is a return still owed?',
+      'Yes, for every year the corporation stays registered. An empty season changes what the return says, not whether it is due.',
+    ),
+    (
+      'We weighed in a trailer of old flashing. Does that spoil the year?',
+      'It does. Scrap paid for by a metal yard is a sale by the corporation, so the year is an ordinary return at $350.00 plus HST per year at gondaliyacpa.ca.',
+    ),
+    (
+      'I went on another roofer’s crew for the season. Does that count?',
+      'Not for the corporation. Wages or day rates paid to you are personal income and leave the corporate year empty.',
+    ),
+    (
+      'There are bundles sitting in the yard. Are they income?',
+      'No. Unlaid material is an asset on the balance sheet until it goes on a roof or is written off.',
+    ),
+    (
+      'We went back under warranty and billed nobody. Does that year stay nil?',
+      'It can. A callback that bills nobody adds no revenue, so a year of warranty work alone still reports nil, provided nothing was sold.',
+    ),
+    (
+      'A manufacturer paid us a warranty allowance. What happens?',
+      'An allowance paid to the corporation is its income in the year of the cheque, which makes that year a full return.',
+    ),
+    (
+      'The truck was sold in the middle of the year. Which return?',
+      'The one for the year it was sold, as a disposition. The years either side of it can still be nil.',
+    ),
+    (
+      'Our workmanship warranty still has years to run. Does holding it matter?',
+      'Not to whether the year was nil. A promise to come back is not revenue until something is billed under it.',
+    ),
+    (
+      'Six seasons went unfiled. What now?',
+      'Six returns and six authorisations, $300.00 plus HST per tax year each, filed in the order the years fell.',
+    ),
+    (
+      'We want to wind the company up. What comes first?',
+      'Returns first, then the truck and hoist out as dispositions in their year, then a final T2 within six months of dissolution. No clearance is issued while a year is missing.',
+    ),
+  ],
+ },
+
+ 'tutoring-corporations': {
+  'name': 'Tutoring Corporations',
+  'short': 'tutoring corporation',
+  'plural': 'tutoring corporations',
+  'kw': 'nil t2 for tutoring corporation',
+  'title': 'Tutoring Corporation Nil T2 | Years With No Lessons',
+  'desc': 'A tutoring corporation files for every tax year it exists. Why a prepaid lesson package ends the nil year, and what the return costs.',
+  'h1': 'Nil T2 Filing for Tutoring Corporations',
+  'lede': 'Prepaid packages are what decide these years. A block of lessons sold two years ago earns its revenue as the lessons are taught. Where none were taught, the year is $300.00 plus HST per tax year.',
+  'intro_h': 'Flat-Fee Nil T2 Filing for Tutoring Corporations',
+  'intro': (
+    'A tutoring corporation can take no new money for a year and still have revenue, because the money it took earlier is earned lesson by lesson. A family that bought twenty sessions and used four of them leaves sixteen on the books, and each one taught in a later year is revenue in that later year. A year in which none were taught is $300.00 plus HST per tax year.',
+    'The circumstances vary and the test does not. A move into teaching for a school or a franchise, a year off, a practice handed to another tutor, or the work carried on personally rather than through the company: each year is measured against lessons taught, packages drawn down, anything sold on and whether a balance was refunded. Schedules 100, 125, 141 and 50 are prepared and the return goes electronically. A year with lessons in it is priced as a full return.',
+  ),
+  'notnil_h': 'What an Unfiled Year Costs a Tutoring Corporation',
+  'notnil_boxes': [
+    (
+      'Nobody Taught, Year Still Ended',
+      'No lessons settles what the figures say. The corporation keeps reaching year ends until it is dissolved.',
+    ),
+    (
+      'Unused Packages Have to Be Accounted For',
+      'Sessions paid for and never taught sit as a liability, and working that out years later with nothing filed is far harder than it sounds.',
+    ),
+    (
+      'There Is Nothing to Remind You',
+      'There is no lease and no vehicle, so nothing lands on a doormat to mark the end of a year.',
+    ),
+    (
+      'Schools and Boards Ask for Standing',
+      'A contract with a school, a board or a franchisor is where the corporate record gets read, and a gap in it shows there.',
+    ),
+  ],
+  'notnil_text': (
+    'These corporations usually stay registered because tutoring is seasonal and the plan is to teach again, or because a family still has sessions in hand. Both are ordinary reasons, and each year of either is a tax year with a return behind it.',
+    'A year with no lessons taught is $300.00 plus HST per tax year. Several outstanding years are prepared as one piece and sent in date order, so the package balance carries forward correctly from each year to the next.',
+  ),
+  'sched_h': 'Which T2 Schedules a Tutoring Corporation Files',
+  'sched_rows': [
+    (
+      'Schedule 100',
+      'Balance sheet information',
+      'Required',
+      'Unused sessions are a liability here. Share capital, retained profit and any shareholder balance sit with them.',
+    ),
+    (
+      'Schedule 125',
+      'Income statement information',
+      'Required',
+      'Tuition at nil, costs at nil: an empty timetable in two lines.',
+    ),
+    (
+      'Schedule 141',
+      'Notes checklist',
+      'Required',
+      'A checklist naming the preparer and the basis of the two GIFI schedules.',
+    ),
+    (
+      'Schedule 50',
+      'Shareholder information',
+      'Required',
+      'A single name on most of these, since one tutor usually owns the lot.',
+    ),
+    (
+      'Schedule 24',
+      'First-time filer information',
+      'First return only',
+      'On the opening return alone.',
+    ),
+    (
+      'Schedule 8',
+      'Capital cost allowance',
+      'Only where equipment is held',
+      'A laptop, a tablet or a whiteboard are depreciable property. A tutor teaching on a borrowed machine may own nothing at all.',
+    ),
+  ],
+  'sched_note': 'Source: Canada Revenue Agency guidance on the schedules a T2 carries, read against a tutoring corporation with an empty timetable. Reviewed 25 November 2026.',
+  'sched_boxes': [
+    (
+      'A Package Is Earned as It Is Taught',
+      'Money for twenty sessions is a liability when it arrives and revenue as each session is delivered, so a year that taught four of them has four sessions of revenue.',
+    ),
+    (
+      'An Unused Balance Is Not Revenue',
+      'Sessions still in hand sit on Schedule 100 as an amount owed until they are taught, refunded or allowed to expire.',
+    ),
+    (
+      'Teaching in Your Own Name Is Personal',
+      'Where a family pays you directly rather than the company, that money belongs on your own return and the corporate year can be nil.',
+    ),
+  ],
+  'chk_yes': [
+    'It taught no lesson, course or assessment in the year',
+    'No prepaid package was drawn down by a lesson being delivered',
+    'No new package, course or assessment was sold by it',
+    'No laptop or tablet of its was sold',
+    'No bank interest was credited to it',
+  ],
+  'chk_no': [
+    'A prepaid session was taught, however long ago it was paid for',
+    'A lesson, a course or an assessment was invoiced',
+    'An unused package balance was forfeited and kept by the corporation',
+    'A school, board or franchisor paid it for a placement',
+    'Equipment or teaching material was sold on',
+  ],
+  'chk_both': [
+    'A return for each year end the company reaches',
+    'A signed T183CORP behind each return',
+    'Schedule 50 reports a tenth of the shares or more',
+    'Any registry annual return runs on its own separate cycle',
+    'Dissolution needs a clearance certificate ahead of it',
+  ],
+  'why_h': 'Why Tutoring Corporations Use This Service',
+  'why': [
+    (
+      'Written for the Year Off the Timetable',
+      'A year teaching for a school, a year away from it altogether, a year with the company held and nothing booked.',
+    ),
+    (
+      'Packages Are Read Before a Price',
+      'A prepaid session taught in the year is the usual reason one of these is not nil, so the calendar is read first.',
+    ),
+    (
+      'One Figure Per Quiet Year',
+      'An empty timetable prices at $300.00 plus HST per tax year.',
+    ),
+    (
+      'Teaching Years Are Priced Properly',
+      'Deliver a lesson and that year leaves this fee for the full service.',
+    ),
+  ],
+  'strip': [
+    (
+      'An Empty Term, a Live Company',
+      'A quiet timetable does not pause the year end.',
+    ),
+    (
+      'Earliest Year Forward',
+      'The package balance only reconciles in order.',
+    ),
+    (
+      'No Appointment Needed',
+      'The whole run is authorised in one sitting.',
+    ),
+  ],
+  'svc_h': 'What a Tutoring Corporation Usually Needs Next',
+  'proc_h': 'How a Tutoring Corporation Files a Nil Year',
+  'proc_lede': 'Four steps from the filing form, and the first is a count of lessons actually delivered.',
+  'proc_note': 'A booking calendar usually answers step one:',
+  'steps': [
+    (
+      'Count the Lessons Delivered',
+      'Sessions taught, courses run and assessments done are what matter, including sessions a family paid for in an earlier year.',
+    ),
+    (
+      'Measure the Package Balance',
+      'Sessions still in hand are carried as an amount owed, and a balance forfeited and kept becomes revenue in the year it was kept.',
+    ),
+    (
+      'Draw Up the Return',
+      'Four schedules for the year, a fifth on a first filing, and a sixth only if the company owns a machine.',
+    ),
+    (
+      'Authorise Each Year and Send',
+      'Authorise each year in the portal. The Agency emails confirmation within 3 business days.',
+    ),
+  ],
+  'price_h': 'Nil T2 Filing Cost for a Tutoring Corporation',
+  'price_eyebrow': 'One Fee Per Tax Year',
+  'price_text': 'No lesson taught and no package touched puts the year at $300.00 plus HST per tax year. Behind that fee a CPA reviews the return before transmission, a registered EFILE electronic filer transmits it, and the CRA confirmation is emailed within 3 business days. The fee also takes in the T2, the GIFI schedules where required, Schedule 50, Schedule 24 on a first return, the T183CORP package with secure e-signing, and one corrected transmission where the Agency rejects the first. Teach a prepaid session, or keep a forfeited balance, and that year goes to gondaliyacpa.ca at $350.00 plus HST per year.',
+  'geo_h': 'Tutoring Corporation Filing Across Canada',
+  'cta_h': 'File the Years Nothing Was Taught',
+  'faq': [
+    (
+      'An entire year with no students. Does the company still file?',
+      'They are, every year until dissolution. An empty timetable changes the figures only.',
+    ),
+    (
+      'A family used sessions they paid for two years ago. Which year is that?',
+      'The year the teaching happened. Revenue follows delivery rather than payment, so that year files at gondaliyacpa.ca, at $350.00 plus HST per year.',
+    ),
+    (
+      'We still hold money for packages nobody has used. Is that income?',
+      'Not yet. An unused balance sits on the balance sheet as an amount owed until the sessions are taught, refunded or forfeited.',
+    ),
+    (
+      'A package expired unused and we kept the money. What then?',
+      'Keeping it earns it. The amount is revenue to the corporation in the year the balance was forfeited.',
+    ),
+    (
+      'I tutor privately now and the families pay me. Does the company report it?',
+      'Not when the family pays you instead of the company. That is yours to report.',
+    ),
+    (
+      'I teach at a school on salary now. Does that make the year active?',
+      'No. Salary is yours, not the corporation’s, so the corporate year can still be nil.',
+    ),
+    (
+      'We refunded a parent during the year. Does a refund create a figure?',
+      'A refund reduces the amount owed rather than creating revenue. It does not by itself make the year an earning one.',
+    ),
+    (
+      'The company owns a laptop and a tablet. Does owning them count?',
+      'No. They run down Schedule 8 while the company owns them, and only a sale puts a figure in a year.',
+    ),
+    (
+      'Five years were never filed. Can that be put right?',
+      'Five returns, five authorisations, $300.00 plus HST per tax year apiece, oldest first.',
+    ),
+    (
+      'In what order does closing the company happen?',
+      'Returns first. Any unused package balance has to be settled or refunded, then the company is dissolved and a final T2 goes in within six months.',
+    ),
+  ],
+ },
+
+ 'translation-corporations': {
+  'name': 'Translation Corporations',
+  'short': 'translation corporation',
+  'plural': 'translation corporations',
+  'kw': 'nil t2 for translation corporation',
+  'title': 'Translation Corporation Nil T2 | Years With No Work',
+  'desc': 'A translation corporation files a T2 for every year it exists. Why a standing agency minimum ends the nil year, and the cost per year.',
+  'h1': 'Nil T2 Filing for Translation Corporations',
+  'lede': 'A standing arrangement with an agency is the thing to check. Some pay a minimum whether or not they send work. Where nothing was delivered and nothing was paid, the year is $300.00 plus HST per tax year.',
+  'intro_h': 'Flat-Fee Nil T2 Filing for Translation Corporations',
+  'intro': (
+    'A translation corporation can deliver nothing for a year and still be paid, because a framework arrangement with an agency sometimes carries a retainer or a minimum that runs whether or not a single word is sent. That payment is revenue and the year is not nil. A year with no delivery and no payment is $300.00 plus HST per tax year.',
+    'The circumstance makes no difference to the test: a staff post taken at an agency or a government body, a certification kept current while the work is paused, clients moved to a colleague, or jobs now invoiced in your own name. Each year is measured against words delivered and invoiced, any retainer or minimum received, reuse or royalty payments, and whether equipment or a software licence was sold on. Schedules 100, 125, 141 and 50 are prepared and the return goes electronically. A year that was paid is priced as a full return.',
+  ),
+  'notnil_h': 'What an Unfiled Year Costs a Translation Corporation',
+  'notnil_boxes': [
+    (
+      'A Paused Practice Is Not a Closed One',
+      'Stopping work settles what the return reports. Only dissolution ends the fact of a return being due.',
+    ),
+    (
+      'A Minimum Can Be Paid for Nothing',
+      'Where a framework arrangement carries a retainer, money arrives in a year with no delivery in it, and that year has revenue in it.',
+    ),
+    (
+      'Agencies and Tenders Read the Record',
+      'Being added to an agency’s roster, or bidding on a public contract, is where the corporate standing is checked.',
+    ),
+    (
+      'There Is Almost Nothing to Prompt You',
+      'No premises, no vehicle and perhaps no assets at all means nothing arrives to remind anyone a year has closed.',
+    ),
+  ],
+  'notnil_text': (
+    'These corporations tend to be kept because the certification is held personally and the company is the invoicing vehicle, so there is nothing to wind up and no pressure to do it. That is reasonable, and each year of it is a tax year.',
+    'A year with nothing delivered and nothing banked is $300.00 plus HST per tax year. Open years are worked together, earliest first.',
+  ),
+  'sched_h': 'Which T2 Schedules a Translation Corporation Files',
+  'sched_rows': [
+    (
+      'Schedule 100',
+      'Balance sheet information',
+      'Required',
+      'Share capital, any amount owing to a shareholder, retained profit and a computer or software licence if one is owned.',
+    ),
+    (
+      'Schedule 125',
+      'Income statement information',
+      'Required',
+      'Fee revenue nil and costs nil, which is what a year with nothing delivered reports.',
+    ),
+    (
+      'Schedule 141',
+      'Notes checklist',
+      'Required',
+      'Accompanies the two GIFI schedules and states the basis they were drawn on.',
+    ),
+    (
+      'Schedule 50',
+      'Shareholder information',
+      'Required',
+      'Holders of ten per cent or more, a single line on a sole practice.',
+    ),
+    (
+      'Schedule 24',
+      'First-time filer information',
+      'First return only',
+      'Goes in with the corporation’s opening return and never again.',
+    ),
+    (
+      'Schedule 8',
+      'Capital cost allowance',
+      'Only where property is held',
+      'A computer or a purchased software licence is depreciable property. A translator working on a personal machine may own none.',
+    ),
+  ],
+  'sched_note': 'Source: what the Canada Revenue Agency requires a T2 to carry, read against a translation corporation that delivered nothing in the year. Reviewed 25 November 2026.',
+  'sched_boxes': [
+    (
+      'A Retainer Is Revenue Whether Work Came or Not',
+      'A minimum paid under a framework arrangement is income to the corporation in the year it is received, and no delivery is needed for that to be true.',
+    ),
+    (
+      'A Reuse Fee Is Income Too',
+      'Where a client pays again to reuse a translation delivered years ago, the payment lands in the year it arrives.',
+    ),
+    (
+      'Invoicing Personally Keeps It Personal',
+      'A client who paid you rather than the company has paid you, and the corporate year can be nil.',
+    ),
+  ],
+  'chk_yes': [
+    'It delivered no words and raised no invoice',
+    'No retainer, minimum or standby payment was received by it',
+    'No reuse, royalty or licence fee reached it',
+    'No computer or licence of its changed hands',
+    'No interest was posted to anything it holds',
+  ],
+  'chk_no': [
+    'A retainer or contractual minimum was paid to the corporation',
+    'Words, pages or a certified document were delivered and invoiced',
+    'A reuse or royalty payment arrived on earlier work',
+    'An agency settled an invoice raised in an earlier year',
+    'A computer, licence or glossary was sold on',
+  ],
+  'chk_both': [
+    'No year end passes without a return behind it',
+    'Every return carries a signed T183CORP before transmission',
+    'Schedule 50 carries anyone at 10% or more of the shares',
+    'The certification and its membership carry their own renewals',
+    'Dissolution carries a clearance certificate requirement',
+  ],
+  'why_h': 'Why Translation Corporations Use This Service',
+  'why': [
+    (
+      'For the Year With Nothing Delivered',
+      'A year in a staff post, a year with the certification held and the practice paused, a year deciding whether to go on.',
+    ),
+    (
+      'Standing Payments Are Checked First',
+      'A retainer or a minimum running under an old framework is the usual reason one of these years is not nil, so it is read before a price.',
+    ),
+    (
+      'A Single Rate Per Quiet Year',
+      'A year with nothing banked costs $300.00 plus HST per tax year.',
+    ),
+    (
+      'Paid Years Go Elsewhere',
+      'Take a retainer or deliver a page and the year is a full corporate return at the higher fee.',
+    ),
+  ],
+  'strip': [
+    (
+      'A Paused Practice Still Files',
+      'The year end arrives with or without work.',
+    ),
+    (
+      'In the Order the Years Fell',
+      'Opening balances only agree that way.',
+    ),
+    (
+      'No Office Visit',
+      'Signed on a screen, year by year.',
+    ),
+  ],
+  'svc_h': 'What a Translation Corporation Usually Needs Next',
+  'proc_h': 'How a Translation Corporation Files',
+  'proc_lede': 'Four steps from the filing form. The first looks for money the corporation was paid without delivering anything.',
+  'proc_note': 'A year of statements settles the first step:',
+  'steps': [
+    (
+      'Look for Standing Payments',
+      'Retainers, minimums, standby fees, reuse payments and invoices settled late are all measured before the year is treated as nil.',
+    ),
+    (
+      'Separate Personal Invoicing',
+      'Work invoiced in your own name sits on your own return, which can leave the company holding nothing.',
+    ),
+    (
+      'Prepare the Return',
+      'Schedules 100, 125 and 141 with Schedule 50, Schedule 24 on a first filing, and Schedule 8 only where the corporation owns property.',
+    ),
+    (
+      'Sign Per Year and Transmit',
+      'Each year signed separately, then sent. Confirmation inside 3 business days.',
+    ),
+  ],
+  'price_h': 'Nil T2 Filing Cost for a Translation Corporation',
+  'price_eyebrow': 'One Fee Per Tax Year',
+  'price_text': 'Nothing delivered and nothing banked leaves the year at $300.00 plus HST per tax year. Included in that are the T2, the GIFI schedules where required, Schedule 50, Schedule 24 on a first return, the T183CORP package with secure e-signing, CPA review before transmission, electronic transmission by a registered EFILE electronic filer, one corrected transmission where the Agency rejects the first, and the CRA confirmation emailed within 3 business days. A retainer, a reuse fee or fee revenue puts the year at gondaliyacpa.ca, at $350.00 plus HST per year.',
+  'geo_h': 'Translation Corporation Filing Across Canada',
+  'cta_h': 'File the Years Nothing Was Delivered',
+  'faq': [
+    (
+      'I took a staff job at an agency. Does my corporation still file?',
+      'It does, every year until dissolution. Salary is yours and leaves the corporate year alone.',
+    ),
+    (
+      'An agency pays us a minimum even in months with no work. Is the year nil?',
+      'No. A minimum is the company’s revenue in the year it is paid, so that year files at gondaliyacpa.ca, at $350.00 plus HST per year.',
+    ),
+    (
+      'A client paid again to reuse a translation from years ago. Which year?',
+      'The year the payment arrived. Earlier delivery does not move revenue back to the year the work was done.',
+    ),
+    (
+      'Some clients pay me directly now. Does the company report that?',
+      'Not where they pay you. That money is on your personal return.',
+    ),
+    (
+      'The certification is current and I took no work. Does holding it count?',
+      'No. A certification held is not activity, and its renewal is separate from the corporate return.',
+    ),
+    (
+      'An agency settled an old invoice during the year. What happens then?',
+      'It depends when the work was earned rather than when the money moved, and a year carrying it is not nil on either reading.',
+    ),
+    (
+      'The company owns no equipment at all. Which schedules apply?',
+      'Schedules 100, 125, 141 and 50 still do. Schedule 8 is only filed where the corporation owns depreciable property.',
+    ),
+    (
+      'We sold our translation memory licences to a colleague. Nil or not?',
+      'Not nil. A licence sold on is a disposition by the corporation, and the proceeds belong to the year the colleague paid for it.',
+    ),
+    (
+      'Seven years are open. Can they be filed together?',
+      'Seven returns, each with its own authorisation, at $300.00 plus HST per tax year, from the earliest.',
+    ),
+    (
+      'How is the corporation wound up?',
+      'The open years go in, the corporation is dissolved, and a final T2 follows within six months of that date. Nothing clears before then.',
+    ),
+  ],
+ },
+
+ 'travel-agency-corporations': {
+  'name': 'Travel Agency Corporations',
+  'short': 'travel agency corporation',
+  'plural': 'travel agency corporations',
+  'kw': 'nil t2 for travel agency corporation',
+  'title': 'Travel Agency Nil T2 | Years With No Bookings',
+  'desc': 'A travel agency corporation files for every tax year it exists. Why client money in trust is not revenue, and what the return costs.',
+  'h1': 'Nil T2 Filing for Travel Agency Corporations',
+  'lede': 'Money passing through is not money earned. Funds held for travellers belong to them; the commission belongs to the agency. A year with no commission is $300.00 plus HST per tax year.',
+  'intro_h': 'Flat-Fee Nil T2 Filing for Travel Agency Corporations',
+  'intro': (
+    'A travel agency corporation can look busy on a bank statement and have earned nothing at all. Deposits taken for a tour are the traveller’s money until the supplier is paid; what the agency earns is the commission, and that is usually paid after the travel happens. A year in which no commission was received is $300.00 plus HST per tax year.',
+    'Whatever the reason the agency went quiet, a licence or registration held while the market recovered, a book of clients handed to a host agency, a move to a staff role, the test is the same. The year is measured against commissions received, service and booking fees charged, override or volume payments, and whether anything the corporation owns was sold. Schedules 100, 125, 141 and 50 are prepared and the return is transmitted electronically. A year with commission in it goes to the full service.',
+  ),
+  'notnil_h': 'What an Unfiled Year Costs a Travel Agency Corporation',
+  'notnil_boxes': [
+    (
+      'No Bookings, Same Year End',
+      'No bookings decides what the return reports, not whether the corporation reached a year end.',
+    ),
+    (
+      'Client Money Has to Be Shown Correctly',
+      'Funds held for travellers are an amount owed and not revenue, and a balance sheet that treats them as income overstates everything.',
+    ),
+    (
+      'Commissions Arrive After the Travel',
+      'A booking made in one year can pay the agency in the next, which puts revenue in a year that felt empty at the time.',
+    ),
+    (
+      'Registrations and Suppliers Check Standing',
+      'Renewing a travel registration, or being taken on by a host agency or a supplier, is where the corporate record is read.',
+    ),
+  ],
+  'notnil_text': (
+    'Agencies are often held open because a registration took effort to get and travel comes back, or because clients still have deposits in hand. Both are fair reasons, and neither stops a year end arriving with a return attached to it.',
+    'A year with no commission received is $300.00 plus HST per tax year. A run of outstanding years is worked as one job and filed from the earliest, so the balance held for clients carries forward correctly.',
+  ),
+  'sched_h': 'Which T2 Schedules a Travel Agency Corporation Files',
+  'sched_rows': [
+    (
+      'Schedule 100',
+      'Balance sheet information',
+      'Required',
+      'Money held for travellers appears as an amount owed, alongside share capital, any shareholder balance and retained profit.',
+    ),
+    (
+      'Schedule 125',
+      'Income statement information',
+      'Required',
+      'Commission at nil against costs at nil, for a year in which nothing travelled.',
+    ),
+    (
+      'Schedule 141',
+      'Notes checklist',
+      'Required',
+      'Travels with the two GIFI schedules and records how they were put together.',
+    ),
+    (
+      'Schedule 50',
+      'Shareholder information',
+      'Required',
+      'Anyone at a tenth of the shares or more, usually the registered agent.',
+    ),
+    (
+      'Schedule 24',
+      'First-time filer information',
+      'First return only',
+      'With the opening return, once.',
+    ),
+    (
+      'Schedule 8',
+      'Capital cost allowance',
+      'Only where property is held',
+      'Office furniture, a computer or a sign are depreciable property. A home-based agent may own nothing the schedule reaches.',
+    ),
+  ],
+  'sched_note': 'Source: the Canada Revenue Agency on what a T2 must carry, applied to a travel agency corporation that earned no commission in the year. Reviewed 25 November 2026.',
+  'sched_boxes': [
+    (
+      'Trust Money Is Not Turnover',
+      'A deposit taken for a cruise is the traveller’s money held by the agency. It is an amount owed on Schedule 100 and it is not revenue at any point.',
+    ),
+    (
+      'The Commission Is the Revenue',
+      'What the agency earns is the commission, and it is earned when the supplier pays it, which is usually after the travel has happened.',
+    ),
+    (
+      'A Cancellation Fee Kept Is Earned',
+      'Where a booking falls through and the agency keeps a fee out of the deposit, that amount is revenue in the year it was kept.',
+    ),
+  ],
+  'chk_yes': [
+    'No commission reached the corporation in the year',
+    'No booking, service or consultation fee was charged by it',
+    'No override, bonus or volume payment reached it',
+    'No cancellation fee was held back out of a deposit',
+    'Nothing it holds in its own right earned interest',
+  ],
+  'chk_no': [
+    'A supplier paid a commission, on travel booked in any year',
+    'A booking fee or a service charge was billed to a client',
+    'An override or volume bonus was received',
+    'A fee was kept from a deposit when a trip was cancelled',
+    'Furniture, a computer or a client list was sold on',
+  ],
+  'chk_both': [
+    'Bookings or not, the year end brings a return',
+    'A T183CORP signed for each year before it goes',
+    'One Schedule 50 line for each holding of 10% or more',
+    'One renewal cycle for any travel registration, run separately',
+    'One clearance certificate before the corporation is dissolved',
+  ],
+  'why_h': 'Why Travel Agency Corporations Use This Service',
+  'why': [
+    (
+      'For the Year Nothing Travelled',
+      'A year with the registration held and nothing booked, a year in a staff role, a year with the book handed to a host agency.',
+    ),
+    (
+      'Trust Money Is Separated First',
+      'Deposits held for clients are taken out of the picture before anything is called revenue, because treating them as turnover is the usual error.',
+    ),
+    (
+      'One Rate for a Quiet Year',
+      'A year with no commission is $300.00 plus HST per tax year, whatever the account turned over.',
+    ),
+    (
+      'Earning Years Are Handled as Such',
+      'Receive a commission and the year is prepared as a full corporate return at the higher fee.',
+    ),
+  ],
+  'strip': [
+    (
+      'Money Through Is Not Money Earned',
+      'The commission is the only part the agency owns.',
+    ),
+    (
+      'From the Earliest Year',
+      'The client balance only carries that way.',
+    ),
+    (
+      'Authorised Online',
+      'One signature a year, none of it posted.',
+    ),
+  ],
+  'svc_h': 'What a Travel Agency Corporation Usually Needs Next',
+  'proc_h': 'How a Travel Agency Corporation Files a Nil Year',
+  'proc_lede': 'Four steps from the filing form, beginning by separating client money from the agency’s own.',
+  'proc_note': 'Supplier statements settle the commission question:',
+  'steps': [
+    (
+      'Separate the Client Money',
+      'Deposits held for travellers are set aside as an amount owed. What remains to be tested is the commission and the fees.',
+    ),
+    (
+      'Trace the Commissions Received',
+      'Commissions, booking fees, overrides and any fee kept on a cancellation are measured before the year is treated as nil.',
+    ),
+    (
+      'Draw the Return',
+      'Schedules 100, 125, 141 and 50, with Schedule 24 where it is the first return. Schedule 8 appears only if the agency owns property.',
+    ),
+    (
+      'Sign and File Each Year',
+      'One T183CORP a year, signed online, with confirmation inside 3 business days.',
+    ),
+  ],
+  'price_h': 'Nil T2 Filing Cost for a Travel Agency Corporation',
+  'price_eyebrow': 'One Fee Per Tax Year',
+  'price_text': 'No commission and no fee kept makes the year $300.00 plus HST per tax year. That price carries the T2, the GIFI schedules where required, Schedule 50, Schedule 24 on a first return, the T183CORP package with secure e-signing, CPA review before transmission, electronic transmission by a registered EFILE electronic filer, one corrected transmission where the Agency rejects the first, and the CRA confirmation emailed within 3 business days. A commission, a booking fee or a kept cancellation puts the year at gondaliyacpa.ca, at $350.00 plus HST per year.',
+  'geo_h': 'Travel Agency Corporation Filing Across Canada',
+  'cta_h': 'File the Years No Commission Arrived',
+  'faq': [
+    (
+      'Not a single booking all year. Is a return owed?',
+      'It is, for every year the corporation stays registered. An empty year changes the figures and nothing else.',
+    ),
+    (
+      'Client deposits went through our account. Does that make the year active?',
+      'No. Money held for travellers is an amount owed and never revenue to the agency. Only the commission and the fees are.',
+    ),
+    (
+      'A commission arrived for a trip booked the year before. Which year?',
+      'The year the supplier paid it, because that is when the agency earned it. That year files at gondaliyacpa.ca, at $350.00 plus HST per year.',
+    ),
+    (
+      'A trip was cancelled and we kept part of the deposit. Nil or not?',
+      'Not nil. A fee the agency keeps is its revenue in the year it was kept.',
+    ),
+    (
+      'I now work as an employee of another agency. Does my company file?',
+      'It does, until dissolution. Your wages are personal and leave the corporate year alone.',
+    ),
+    (
+      'Our travel registration is current but unused. Does that count?',
+      'No. A registration held and unused earns nothing, and its renewal is its own matter.',
+    ),
+    (
+      'How should the money held for clients appear on the return?',
+      'As an amount owed on Schedule 100. Treating it as turnover overstates both the revenue and the assets.',
+    ),
+    (
+      'We sold the office furniture and the computer. What happens?',
+      'That year reports a disposition, at a gain or a loss. The years around it can still be nil.',
+    ),
+    (
+      'Four years are open. How does that get handled?',
+      'Four returns, four authorisations, at $300.00 plus HST per tax year, taken from the earliest.',
+    ),
+    (
+      'What is the order for shutting the agency?',
+      'The outstanding returns, then client money settled or returned, then dissolution and a final T2 within six months. Clearance follows all of it.',
+    ),
+  ],
+ },
+
 }
