@@ -13458,3 +13458,136 @@ pending**. Next in order: #23 onward.
 Still open and unchanged: every F1 page is an orphan with no inbound internal
 links (plan line 1523), and the family says `plus HST` on national pages,
 never swept for the 2026-11-12 ruling.
+
+---
+
+## 2026-11-25 — Family 2 batch 18: Appendix A tools #112 to #116
+
+Navneet, 2026-11-23: "next 5 calculators next ones". Built by
+`build/f2/build_f2r.py` (`TOOLS18`), published and carded on November 25.
+
+| # | slug | ID |
+|---|---|---|
+| 112 | `/tools/failure-to-comply-penalty-calculator/` | 2904 |
+| 113 | `/tools/schedule-1-net-income-reconciliation-calculator/` | 2905 |
+| 114 | `/tools/gst-hst-filing-frequency-calculator/` | 2906 |
+| 115 | `/tools/payroll-remittance-due-date-calculator/` | 2907 |
+| 116 | `/tools/shareholder-loan-income-inclusion-calculator/` | 2908 |
+
+All five are Appendix A entries (plan lines 2796, 2878, 2960, 2976 and 2998)
+and all five carry `cnf_family` f2. `nil_calculator` reads **116 published**
+and the f2 term count is **116**, both matching the 116 built files.
+
+Full publish record in `build/f2/PUBLISH-f2r.md`.
+
+### One tool per hub group, chosen deliberately
+
+Batch 17 put two penalty tools in one batch and both landed in the same
+tools-hub group. This batch takes one from each of five groups instead:
+penalties, schedules, GST/HST, payroll and shareholders. It also spreads the
+cross-linking, because a batch whose five pages all link the same neighbours
+is a batch whose five pages all look alike to the duplicate gate.
+
+Each was checked against all 111 live slugs, because batch 16 found seven
+Appendix A entries a live tool already answered. The per-slug reasoning is in
+the `build_f2r.py` docstring. In short: 112 is the only provision in the
+penalty set whose base is nothing at all, so it is the one that reaches a
+corporation owing $0.00; 113 is the single arithmetic step between Schedule
+125 and line 300 that no live tool performs; 114 decides which reporting
+period applies, which the live GST/HST deadline tool assumes the visitor
+already knows; 115 is the only payroll tool on the site with a date in it; and
+116 is the consequence half of batch 17's deadline tool.
+
+### Four dropped, and why the reason matters
+
+Two went on the same ground batch 17 dropped the GIFI code lookup:
+`/tools/cra-arrears-interest-calculator/` and
+`/tools/shareholder-loan-prescribed-interest-calculator/` each need the
+prescribed interest rate for a quarter, and those are published quarterly.
+This repository does not assert a rate from memory on a CPA firm's site.
+
+`/tools/small-business-deduction-limit-calculator/` was dropped on a sharper
+version of the same point. The business limit grind now runs on two tests, a
+taxable capital one whose upper bound moved and a passive income one, and
+getting the effective date of that change wrong would be worse than not
+building the page at all.
+
+`/tools/paid-up-capital-calculator/` and
+`/tools/capital-dividend-account-calculator/` were dropped on scope: both are
+multi-year running balances rather than a single computation, and neither
+touches whether a quiet year is nil.
+
+### The 15(2) attribution, stated twice now
+
+Batch 17 built the deadline tool to get the attribution right: a shareholder
+loan that misses the subsection 15(2.6) window is included in the
+**shareholder's** income, not the corporation's. 116 is the arithmetic half.
+It names the amount, puts the two taxpayers in separate rows, says the
+inclusion lands in the year the loan was *received* rather than the year the
+deadline passed, and says in its own row that the corporation's year can still
+be nil. A decoy in the suite fails if that row ever disappears.
+
+Subsection 80.4(2) is named and never computed, for the prescribed-rate reason
+above.
+
+### The live-verification method changed, and it is a real improvement
+
+Batches 8 to 17 confirmed each publish with a zero-change `wp_replace_in_post`
+probe on the stored `content_length`. That checks the **database**, and the
+defect batch 16 found was not in the database: the stored bytes were perfect
+and the output filters turned `&&` inside a `<script>` into `&#038;&#038;`,
+killing the module on the live page while every byte in the database was
+correct.
+
+Batch 18 fetches each published URL instead and diffs the rendered module,
+from `<div class="ei-hero">` to the closing `</script>`, against the local
+file. All five came back byte-identical, with no entity substitution in the
+module script and the stylesheet intact. **That is the probe later batches
+should use**, because it tests the thing the visitor receives rather than the
+thing the database holds.
+
+### The hub was patched, not republished, and that surfaced a drift
+
+`/tools/` now links **116 of 116**, verified by fetching the live page and
+diffing its tool links against the local build. The two sets match exactly.
+
+The cards went in as five anchored `wp_replace_in_post` calls rather than a
+republish, and that choice turned up something. The live `post_content`
+measured 40,930 bytes before the edits; the local build *with all five new
+cards* measures 40,247. So the live page carries about 1.4 KB that
+`build_tools_hub.py` does not generate, and a wholesale republish would have
+thrown it away unexamined.
+
+**Open for Navneet: page 1187 has roughly 1.4 KB of content the committed
+builder does not produce.** The link set is correct and complete, so nothing is
+broken and line 1224 is met. But the builder is supposed to be the source of
+truth for that page and currently is not, and nobody should republish it from
+the builder until the difference has been read. This is a third instance of
+the repo/live drift already recorded for three older pages.
+
+### Gates
+
+`gate_batch.py build_f2r TOOLS18` clear on all five.
+`gate_f2_all.py` clear across 116 pages (5 known pre-existing).
+`test_f2r_dom.js` **36 checks, 0 failures**, including 6 decoys all caught.
+`gate_rank_math.py` unchanged at its 15 pre-existing failures.
+
+Three real defects were caught before publishing: 112 exceeded the 6(g)
+outbound cap at 22 links against a limit of 20; its taxpayer-relief answer
+duplicated the T4 penalty tool's word for word; and 116's first H2 collided
+with batch 17's deadline tool. All three fixed, all three found by a gate
+rather than by reading.
+
+Two further failures were **test** defects, not page defects, and the
+distinction is worth keeping: the harness copied from batch 17 folded only the
+numeric apostrophe entity and not the named one, so correct pages failed; and
+a `notWant` of "threshold 1" could never pass, because the payroll result
+table lists all four remitter rows on every answer.
+
+### Where Family 2 stands
+
+**116 of the plan's 150.** Of the 150 Appendix A entries, 116 files are built;
+34 Appendix A slugs remain, of which a meaningful share are spent rather than
+unbuilt, in the sense batch 16 established: a live tool under a different slug
+already answers them. The four dropped above stay available to whoever has the
+prescribed rates and the current business-limit rules to hand.

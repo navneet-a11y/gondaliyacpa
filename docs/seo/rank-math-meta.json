@@ -2178,5 +2178,50 @@
     "breadcrumb": "Plumbing Corporations"
    }
   ]
+ },
+ "nil_calculator_batch18": {
+  "note": "Family 2 batch 18, Appendix A tools #112 to #116 (Navneet, 2026-11-23, published 2026-11-25). IDs 2904 to 2908, all live, cnf_family f2 (term_taxonomy_id 15), nil_calculator at 116 published. One tool per tools-hub group this time -- penalties, schedules, GST/HST, payroll and shareholders -- because batch 17 put two penalty tools in one batch and both landed in the same group. All five carded on /tools/ in the same pass, which now links 116 of 116.",
+  "items": [
+   {
+    "id": 2904,
+    "slug": "failure-to-comply-penalty-calculator",
+    "appendix_a_line": 2796,
+    "kw": "failure to comply penalty",
+    "title": "Failure to Comply Penalty Calculator",
+    "desc": "Subsection 162(7) charges the greater of $100.00 and $25.00 a day, counted to 100 days. Enter the days to see the figure."
+   },
+   {
+    "id": 2905,
+    "slug": "schedule-1-net-income-reconciliation-calculator",
+    "appendix_a_line": 2878,
+    "kw": "schedule 1 net income reconciliation",
+    "title": "Schedule 1 Net Income Reconciliation Calculator",
+    "desc": "Schedule 1 runs from line 9999 of Schedule 125 to line 300 of the T2. Enter the accounting figure and the add-backs."
+   },
+   {
+    "id": 2906,
+    "slug": "gst-hst-filing-frequency-calculator",
+    "appendix_a_line": 2960,
+    "kw": "gst hst filing frequency",
+    "title": "GST/HST Filing Frequency Calculator",
+    "desc": "Annual taxable supplies set the reporting period. Enter the figure for the assigned frequency and the filing deadline."
+   },
+   {
+    "id": 2907,
+    "slug": "payroll-remittance-due-date-calculator",
+    "appendix_a_line": 2976,
+    "kw": "payroll remittance due date",
+    "title": "Payroll Remittance Due Date Calculator",
+    "desc": "The remitter type sets the date, and a figure from two years ago sets the type. Enter it with the pay date for the deadline."
+   },
+   {
+    "id": 2908,
+    "slug": "shareholder-loan-income-inclusion-calculator",
+    "appendix_a_line": 2998,
+    "kw": "shareholder loan income inclusion",
+    "title": "Shareholder Loan Income Inclusion Calculator",
+    "desc": "Subsection 15(2) includes the loan in the shareholder income, not the corporation. Enter the year end and the amount."
+   }
+  ]
  }
 }

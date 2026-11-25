@@ -229,6 +229,11 @@ GROUPS = [
   ('required-schedules-checker', 'Required Schedules Checker',
    'The whole schedule set behind one set of answers: the GIFI schedules, '
    'Schedule 24, Schedule 50 and Schedule 8.'),
+  ('schedule-1-net-income-reconciliation-calculator',
+   'Schedule 1 Net Income Reconciliation Calculator',
+   'The one step between line 9999 of Schedule 125 and line 300 of the '
+   'return, item by item, with amortisation out and capital cost allowance '
+   'in.'),
   ('gifi-schedule-requirement-checker', 'GIFI Schedule Requirement Checker',
    'Five questions decide whether a nil T2 needs GIFI Schedules 100, 125 and '
    '141. Any one yes makes all three required.'),
@@ -307,6 +312,11 @@ GROUPS = [
   ('shareholder-loan-balance-checker', 'Shareholder Loan Balance Checker',
    'A loan balance makes the GIFI schedules required even where it never '
    'moved, and either direction counts.'),
+  ('shareholder-loan-income-inclusion-calculator',
+   'Shareholder Loan Income Inclusion Calculator',
+   'Miss the one-year deadline and the whole loan is income, in the '
+   'shareholder hands and in the year it was taken. The corporate year can '
+   'still be nil.'),
   ('shareholder-register-completeness-checker',
    'Shareholder Register Checker',
    'What Schedule 50 needs about each shareholder, and which gaps in a '
@@ -363,12 +373,20 @@ GROUPS = [
   ('cra-account-closure-sequencer', 'CRA Account Closure Sequencer',
    'The order for closing payroll and GST/HST accounts, and what each step '
    'costs.'),
+  ('gst-hst-filing-frequency-calculator',
+   'GST/HST Filing Frequency Calculator',
+   'Annual taxable supplies decide whether the returns are annual, quarterly '
+   'or monthly, and the deadline moves with the answer.'),
   ('gst-hst-nil-filing-checker', 'GST/HST Nil Filing Checker',
    'Three questions decide whether an open GST/HST or payroll account still '
    'needs nil filings, or whether Form RC145 closes it.'),
   ('gst-hst-account-closure-checker', 'GST/HST Account Closure Checker',
    'What it takes to close a GST/HST account, and what stays due until it is '
    'closed.'),
+  ('payroll-remittance-due-date-calculator',
+   'Payroll Remittance Due Date Calculator',
+   'Four remitter types and two thresholds, set by a withholding figure from '
+   'two calendar years ago rather than by the payroll as it is now.'),
   ('payroll-nil-remittance-checker', 'Payroll Nil Remittance Checker',
    'An open payroll account expects remittances even where nobody was paid. '
    'What is owed and when.'),
@@ -525,6 +543,10 @@ GROUPS = [
   ('gross-negligence-penalty-checker', 'Gross Negligence Penalty Checker',
    'Subsection 163(2) is half the tax understated, and it needs a knowledge '
    'element the late-filing provisions do not.'),
+  ('failure-to-comply-penalty-calculator',
+   'Failure to Comply Penalty Calculator',
+   'The greater of $100.00 and $25.00 a day to a hundred days. The one '
+   'provision in the set that does not ask how much tax is owing.'),
  ]),
 ]
 
